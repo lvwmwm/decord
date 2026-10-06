@@ -1,16 +1,18 @@
-// Module ID: 17833
-// Function ID: 17834
+// Module ID: 17194
+// Function ID: 17195
 // Name: setupLoadFromMessageManagerHandlers
-// Dependencies: [7554, 2095, 1091, 2]
+// Dependencies: [6699, 2102, 1103, 2]
 // Exports: default
 
-// Module 17833 (setupLoadFromMessageManagerHandlers)
-import DurationsDefault from "Durations" /* 1091 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7554 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 17194 (setupLoadFromMessageManagerHandlers)
+import DurationsDefault from "Durations" /* 1103 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6699 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import size from "module_2" /* 2 */;
+
+let map, map1, set;
 
 let closure_2 = 5 * DurationsDefault.Millis.SECOND;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/setupLoadFromMessageManagerHandlers.tsx");
 
 export default function setupLoadFromMessageManagerHandlers(actions, arg1) {
@@ -23,13 +25,16 @@ export default function setupLoadFromMessageManagerHandlers(actions, arg1) {
     channelId = channelId.channelId;
     if (null != channelId) {
       set.add(channelId);
-      value = map1.get(channelId);
+      const value = map1.get(channelId);
+      const obj2 = set;
+      const obj3 = map1;
       if (null != value) {
         const _clearTimeout = clearTimeout;
         clearTimeout(value);
         obj3.delete(channelId);
       }
-      value2 = map.get(channelId);
+      const value2 = map.get(channelId);
+      const obj = map;
       if (null != value2) {
         obj.delete(channelId);
         if (obj2.has(channelId)) {
@@ -39,56 +44,59 @@ export default function setupLoadFromMessageManagerHandlers(actions, arg1) {
           const item = value2.forEach((item) => channel_id(item));
         }
       }
-      obj = map;
-      obj2 = set;
-      obj3 = map1;
     }
   }
   function handleMessage(message) {
+    let channel_id;
+    let id;
     message = message.message;
     ({ id, channel_id } = message);
     if (null != id) {
       if (null != channel_id) {
         if (set.has(channel_id)) {
+          const tmp = onBeforeBatch;
           const channelId = onBeforeBatch.getChannelId();
           let tmp3 = null != channelId;
           if (tmp3) {
-            let tmp4 = channelId === channel_id;
-            if (!tmp4) {
-              tmp4 = currentSidebarChannelId.getCurrentSidebarChannelId(channelId) === channel_id;
-            }
-            tmp3 = tmp4;
+            tmp3 = channelId === channel_id || currentSidebarChannelId.getCurrentSidebarChannelId(channelId) === channel_id;
+            const tmp4 = channelId === channel_id || currentSidebarChannelId.getCurrentSidebarChannelId(channelId) === channel_id;
           }
           if (tmp3) {
             if (onBeforeBatch != null) {
-              tmp16();
+              tmp14();
             }
             channel_id(message);
           } else {
-            value = map.get(channel_id);
+            let obj = map;
+            let value = map.get(channel_id);
             if (null == value) {
               const _Map = Map;
+              const self = this;
+              const self2 = this;
               map = new Map();
               const result = obj.set(channel_id, map);
               value = map;
             }
             const result1 = value.set(id, message);
+            const obj3 = map1;
             if (!map1.has(channel_id)) {
               const _Math = Math;
               const _Math2 = Math;
               const _setTimeout = setTimeout;
               const result2 = obj3.set(channel_id, setTimeout(() => {
                 map1.delete(channel_id);
-                value = map1.get(channel_id);
+                const value = map1.get(channel_id);
+                const obj = map1;
                 if (null != value) {
                   const _clearTimeout = clearTimeout;
                   clearTimeout(value);
-                  map1.delete(tmp);
+                  obj.delete(channel_id);
                 }
-                value2 = map.get(tmp);
+                const value2 = map.get(tmp);
+                const obj2 = map;
                 if (null != value2) {
-                  map.delete(tmp);
-                  if (set.has(tmp)) {
+                  obj2.delete(channel_id);
+                  if (set.has(channel_id)) {
                     if (onBeforeBatch != null) {
                       tmp9();
                     }
@@ -97,8 +105,6 @@ export default function setupLoadFromMessageManagerHandlers(actions, arg1) {
                 }
               }, Math.floor(Math.random() * set)));
             }
-            obj = map;
-            obj3 = map1;
           }
         }
       }
@@ -111,10 +117,7 @@ export default function setupLoadFromMessageManagerHandlers(actions, arg1) {
       tmp2();
     }
     const item = messages.forEach((channel_id) => {
-      let hasItem = null != channel_id.channel_id;
-      if (hasItem) {
-        hasItem = set.has(channel_id.channel_id);
-      }
+      const hasItem = null != channel_id.channel_id && set.has(channel_id.channel_id);
       if (hasItem) {
         currentSidebarChannelId(channel_id);
       }
@@ -133,38 +136,39 @@ export default function setupLoadFromMessageManagerHandlers(actions, arg1) {
     });
   }
   const onBeforeBatch = obj.onBeforeBatch;
-  const set = new Set();
-  let map = new Map();
+  set = new Set();
+  map = new Map();
   map1 = new Map();
-  let obj2 = {};
+  let obj2 = {
+    POST_CONNECTION_OPEN() {
+      set.clear();
+      const item = map1.forEach((item) => clearTimeout(item));
+      map1.clear();
+      map.clear();
+    },
+    MESSAGE_CREATE: { callback: handleMessage, autoSubscribe: false },
+    MESSAGE_UPDATE: handleMessage,
+    LOAD_MESSAGES_SUCCESS: handleLoadMessages,
+    LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
+    LOAD_RECENT_MENTIONS_SUCCESS(messages) {
+      messages = messages.messages;
+      if (onBeforeBatch != null) {
+        tmp();
+      }
+      const item = messages.forEach((item) => currentSidebarChannelId(item));
+    },
+    LOAD_PINNED_MESSAGES_SUCCESS(pins) {
+      pins = pins.pins;
+      if (onBeforeBatch != null) {
+        tmp();
+      }
+      const item = pins.forEach((message) => currentSidebarChannelId(message.message));
+    },
+    SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
+    MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
+    CHANNEL_SELECT: { callback: handleChannelSelect, autoSubscribe: false },
+    SIDEBAR_VIEW_CHANNEL: { callback: handleChannelSelect, autoSubscribe: false }
+  };
   const merged = Object.assign(actions.actions);
-  obj2.POST_CONNECTION_OPEN = function POST_CONNECTION_OPEN() {
-    set.clear();
-    const item = map1.forEach((item) => clearTimeout(item));
-    map1.clear();
-    map.clear();
-  };
-  obj2.MESSAGE_CREATE = { callback: handleMessage, autoSubscribe: false };
-  obj2.MESSAGE_UPDATE = handleMessage;
-  obj2.LOAD_MESSAGES_SUCCESS = handleLoadMessages;
-  obj2.LOAD_MESSAGES_AROUND_SUCCESS = handleLoadMessages;
-  obj2.LOAD_RECENT_MENTIONS_SUCCESS = function LOAD_RECENT_MENTIONS_SUCCESS(messages) {
-    messages = messages.messages;
-    if (onBeforeBatch != null) {
-      tmp();
-    }
-    const item = messages.forEach((item) => currentSidebarChannelId(item));
-  };
-  obj2.LOAD_PINNED_MESSAGES_SUCCESS = function LOAD_PINNED_MESSAGES_SUCCESS(pins) {
-    pins = pins.pins;
-    if (onBeforeBatch != null) {
-      tmp();
-    }
-    const item = pins.forEach((message) => currentSidebarChannelId(message.message));
-  };
-  obj2.SEARCH_MESSAGES_SUCCESS = handleSearchMessagesSuccess;
-  obj2.MOD_VIEW_SEARCH_MESSAGES_SUCCESS = handleSearchMessagesSuccess;
-  obj2.CHANNEL_SELECT = { callback: handleChannelSelect, autoSubscribe: false };
-  obj2.SIDEBAR_VIEW_CHANNEL = { callback: handleChannelSelect, autoSubscribe: false };
   actions.actions = obj2;
 };

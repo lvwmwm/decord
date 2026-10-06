@@ -1,69 +1,79 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 7517
+// Function ID: 7518
 // Name: VoiceSessionSystemMessage
-// Dependencies: [2041, 8270, 8250, 8361, 1115, 8252, 8254, 2]
+// Dependencies: [2051, 7426, 7406, 7518, 1127, 7408, 7410, 2]
 // Exports: createVoiceSessionSystemMessage
 
-// Module 8360 (VoiceSessionSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8250 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8270 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 7517 (VoiceSessionSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7406 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7408 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7426 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/VoiceSessionSystemMessage.tsx");
 
 export const createVoiceSessionSystemMessage = function createVoiceSessionSystemMessage(message) {
+  let closure_0;
+  let formatToPartsResult;
+  let nick;
+  let nick1;
+  let obj4;
+  let obj6;
+  let roleStyle;
+  let tmp10;
+  let tmp7;
   ({ message, roleStyle } = message);
   _require = ChannelStore.getChannel(message.channel_id);
   const tmp3 = getHumanizedCallDurationDefault(message);
-  const messageAuthorWithProcessedColor = require("useAuthorWithProcessedColor").getMessageAuthorWithProcessedColor(message);
   let obj = require("useAuthorWithProcessedColor");
-  const sortedVoiceSessionParticipants = require("VoiceSessionUtils").getSortedVoiceSessionParticipants(message);
+  const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
+  let obj2 = require("VoiceSessionUtils");
+  const sortedVoiceSessionParticipants = obj2.getSortedVoiceSessionParticipants(message);
   const mapped = sortedVoiceSessionParticipants.map((user) => {
-    const obj = { user, messageAuthor: useAuthorWithProcessedColor.getUserAuthorWithProcessedColor(user, closure_0) };
+    let obj2;
+    const obj = { user, messageAuthor: obj2.getUserAuthorWithProcessedColor(user, closure_0) };
+    obj2 = useAuthorWithProcessedColor;
     return obj;
   });
   if (null == tmp3) {
-    const intl = tmp4(1115).intl;
-    const obj3 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null };
-    const obj4 = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj3.usernameOnClick = tmp(8252)(obj4);
-    let formatToPartsResult = intl.formatToParts(tmp4(1115).t.HzBfIN, obj3);
+    const intl = tmp4(1127).intl;
+    const formatToParts = intl.formatToParts;
+    const obj3 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault(obj4) };
+    const HzBfIN = tmp4(1127).t.HzBfIN;
+    obj4 = { message, author: messageAuthorWithProcessedColor, roleStyle };
+    formatToPartsResult = formatToParts(HzBfIN, obj3);
   } else {
-    const intl2 = tmp4(1115).intl;
-    const obj5 = { userCount: mapped.length + 1, username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, username2: null, username2OnClick: null, username3: null, username3OnClick: null, otherCount: null, duration: null };
-    const obj6 = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj5.usernameOnClick = tmp(8252)(obj6);
+    const intl2 = tmp4(1127).intl;
+    const formatToParts2 = intl2.formatToParts;
+    const obj5 = { userCount: mapped.length + 1, username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault(obj6), username2: nick, username2OnClick: tmp7, username3: nick1, username3OnClick: tmp10, otherCount: mapped.length - 1, duration: tmp3 };
+    const atbXuX = tmp4(1127).t.atbXuX;
     const first = mapped[0];
-    let nick;
+    nick = undefined;
+    obj6 = { message, author: messageAuthorWithProcessedColor, roleStyle };
     if (first != null) {
       nick = first.messageAuthor.nick;
     }
-    obj5.username2 = nick;
-    let tmp7;
+    tmp7 = undefined;
     if (null != mapped[0]) {
       const obj7 = { userId: mapped[0].user.id, message, author: mapped[0].messageAuthor, roleStyle };
-      tmp7 = tmp(8252)(obj7);
+      tmp7 = tmp(7408)(obj7);
     }
-    obj5.username2OnClick = tmp7;
-    let nick1;
+    nick1 = undefined;
     if (mapped[1] != null) {
       nick1 = tmp8.messageAuthor.nick;
     }
-    obj5.username3 = nick1;
-    let tmp10;
+    tmp10 = undefined;
     if (null != mapped[1]) {
       const obj8 = { userId: mapped[1].user.id, message, author: mapped[1].messageAuthor, roleStyle };
-      tmp10 = tmp(8252)(obj8);
+      tmp10 = tmp(7408)(obj8);
     }
-    obj5.username3OnClick = tmp10;
-    obj5.otherCount = mapped.length - 1;
-    obj5.duration = tmp3;
-    formatToPartsResult = intl2.formatToParts(tmp4(1115).t.atbXuX, obj5);
+    formatToPartsResult = formatToParts2(atbXuX, obj5);
   }
-  const merged = Object.assign(tmp(8254)(message));
-  return { content: formatToPartsResult };
+  const obj9 = { content: formatToPartsResult };
+  const merged = Object.assign(tmp(7410)(message));
+  return obj9;
 };

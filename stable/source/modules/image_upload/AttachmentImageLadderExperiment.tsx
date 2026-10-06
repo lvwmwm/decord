@@ -1,26 +1,27 @@
-// Module ID: 1432
-// Function ID: 1433
+// Module ID: 1439
+// Function ID: 1440
 // Name: AttachmentImageLadderExperiment
-// Dependencies: [1433, 1434, 2]
+// Dependencies: [1440, 1441, 2]
 // Exports: getAttachmentImageLadderConfig
 
-// Module 1432 (AttachmentImageLadderExperiment)
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1433 */;
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 1439 (AttachmentImageLadderExperiment)
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { enabled: false, maxUpscale: AttachmentImageLadder.ATTACHMENT_LADDER_MAX_UPSCALE, minSnapDownDpr: 2 };
-const obj2 = { name: "2026-07-attachment-image-ladder", kind: "user", defaultConfig: obj, variations: null };
-const obj3 = { 0: obj, 1: null };
-const obj4 = {};
+let obj3;
+let obj = { enabled: false, maxUpscale: AttachmentImageLadder.ATTACHMENT_LADDER_MAX_UPSCALE, minSnapDownDpr: 2 };
+const obj2 = { name: "2026-07-attachment-image-ladder", kind: "user", defaultConfig: obj, variations: obj3 };
+obj3 = { 0: obj, 1: null };
+const createApexExperiment = ApexExperiment.createApexExperiment;
+const obj4 = { enabled: true };
 const merged = Object.assign(obj);
-obj4.enabled = true;
 obj3[1] = obj4;
-obj2.variations = obj3;
-const apexExperiment = ApexExperiment.createApexExperiment(obj2);
+const apexExperiment = createApexExperiment(obj2);
 const result = size.fileFinishedImporting("modules/image_upload/AttachmentImageLadderExperiment.tsx");
 
 export default apexExperiment;
 export const getAttachmentImageLadderConfig = function getAttachmentImageLadderConfig(location) {
-  return apexExperiment.getConfig({ location: location.location });
+  const obj = { location: location.location };
+  return apexExperiment.getConfig(obj);
 };

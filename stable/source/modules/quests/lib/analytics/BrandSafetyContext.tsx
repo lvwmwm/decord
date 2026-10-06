@@ -1,30 +1,35 @@
-// Module ID: 8000
-// Function ID: 8001
+// Module ID: 7148
+// Function ID: 7149
 // Name: BrandSafetyContext
-// Dependencies: [8001, 2041, 2063, 4437, 4609, 1372, 8002, 7967, 1397, 4941, 2]
+// Dependencies: [7149, 2051, 2073, 4482, 4657, 1378, 7150, 7116, 1403, 4990, 2]
 // Exports: getBrandSafetyContext
 
-// Module 8000 (BrandSafetyContext)
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 8002 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 8001 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7148 (BrandSafetyContext)
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 7150 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 7149 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import UserStore from "UserStore" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, channel;
 
+let c3;
+let closure_4;
 ({ getVisibleChannelIdsMethod: c3, getVisibleGuildIdsMethod: closure_4 } = SidebarVisibilityMethodStore);
 let closure_10 = ContentImpressionTrackerConstants.MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN;
 let result = size.fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
 
 export const getBrandSafetyContext = function getBrandSafetyContext(questContent) {
-  const result = require("QuestDataUtils").isBillableQuestContent(questContent);
+  let closure_0;
   let obj = require("QuestDataUtils");
-  const adContext = require("QuestDataUtils").getAdContext(questContent);
+  const result = obj.isBillableQuestContent(questContent);
+  let obj2 = require("QuestDataUtils");
+  const adContext = obj2.getAdContext(questContent);
   const tmp4 = closure_4();
   const tmp5 = closure_3();
   let prop;
@@ -35,33 +40,36 @@ export const getBrandSafetyContext = function getBrandSafetyContext(questContent
     if (result) {
       if (undefined !== tmp4) {
         if (undefined !== tmp5) {
+          let items;
           const guildId = SelectedGuildStore.getGuildId();
           let guild = null;
           if (null != guildId) {
             guild = GuildStore.getGuild(guildId);
           }
-          if (tmp7) {
-            let items = [];
+          if (undefined === tmp4) {
+            items = [];
           } else {
+            const tmp4Result = tmp4();
             _require = GuildStore.getGuilds();
-            const mapped = tmp4().map((item) => {
-              if (undefined === dependencyMap[item]) {
+            const mapped = tmp4Result.map((item) => {
+              if (undefined === closure_0[item]) {
                 return null;
               } else {
                 const obj5 = { id: null, name: null };
-                ({ id: obj3.id, name: obj3.name } = tmp);
-                if (null !== tmp.description) {
-                  obj5.description = tmp.description;
+                ({ id: obj3.id, name: obj3.name } = closure_0[item]);
+                if (null !== closure_0[item].description) {
+                  obj5.description = closure_0[item].description;
                 }
                 let tmp2 = null;
-                if (null !== tmp.icon) {
-                  ({ id: obj2.id, icon: obj2.icon } = tmp);
-                  let guildIconURL = AvatarUtilsDefault.getGuildIconURL({ id: null, icon: null, size: 44, canAnimate: true });
+                if (null !== closure_0[item].icon) {
+                  const obj6 = { id: null, icon: null, size: 44, canAnimate: true };
+                  ({ id: obj2.id, icon: obj2.icon } = closure_0[item]);
+                  const obj = AvatarUtilsDefault;
+                  let guildIconURL = obj.getGuildIconURL(obj6);
                   if (guildIconURL == null) {
                     guildIconURL = null;
                   }
                   tmp2 = guildIconURL;
-                  const obj6 = { id: null, icon: null, size: 44, canAnimate: true };
                 }
                 if (null !== tmp2) {
                   obj5.icon_url = tmp2;
@@ -70,25 +78,27 @@ export const getBrandSafetyContext = function getBrandSafetyContext(questContent
               }
             });
             items = mapped.filter((item) => null !== item);
-            const tmp4Result = tmp4();
           }
           const obj3 = { guilds: items, channels: null };
-          if (!tmp8) {
+          if (undefined !== tmp5) {
+            let found;
             if (null != guild) {
-              const mapped1 = tmp5().map((item) => {
+              const tmp5Result = tmp5();
+              const mapped1 = tmp5Result.map((item) => {
+                let obj2;
                 channel = channel.getChannel(item);
                 if (undefined === channel) {
                   return null;
                 } else {
-                  const obj = { id: channel.id, name: dependencyMap(closure_1_2[9]).computeChannelName(channel, UserStore, RelationshipStore) };
+                  const obj = { id: channel.id, name: obj2.computeChannelName(channel, UserStore, RelationshipStore) };
+                  obj2 = closure_0(dependencyMap[9]);
                   if (channel.topic.length > 0) {
                     obj.channel_topic = channel.topic;
                   }
                   return obj;
                 }
               });
-              let found = mapped1.filter((item) => null !== item);
-              const tmp5Result = tmp5();
+              found = mapped1.filter((item) => null !== item);
             }
             obj3.channels = found;
             if (null != guildId) {
@@ -100,30 +110,30 @@ export const getBrandSafetyContext = function getBrandSafetyContext(questContent
             }
             let tmp15 = null;
             if (null != banner) {
+              let obj6 = { id: null, banner: null };
               ({ id: obj5.id, banner: obj5.banner } = guild);
-              let guildBannerURL = AvatarUtilsDefault.getGuildBannerURL({ id: null, banner: null }, true);
+              const obj4 = AvatarUtilsDefault;
+              let guildBannerURL = obj4.getGuildBannerURL(obj6, true);
               if (guildBannerURL == null) {
                 guildBannerURL = null;
               }
               tmp15 = guildBannerURL;
-              let obj6 = { id: null, banner: null };
             }
             if (null !== tmp15) {
               obj3.selected_guild_banner_url = tmp15;
             }
             if (obj3.guilds.length > closure_10) {
               const guilds = obj3.guilds;
-              obj3.guilds = guilds.slice(0, tmp18);
+              obj3.guilds = guilds.slice(0, closure_10);
               obj3.truncated = true;
             }
             if (obj3.channels.length > closure_10) {
               const channels = obj3.channels;
-              obj3.channels = channels.slice(0, tmp18);
+              obj3.channels = channels.slice(0, closure_10);
               obj3.truncated = true;
             }
-            const obj9 = { brand_safety_context: null };
             const _JSON = JSON;
-            obj9.brand_safety_context = JSON.stringify(obj3);
+            const obj9 = { brand_safety_context: JSON.stringify(obj3) };
             return obj9;
           }
           found = [];

@@ -1,64 +1,51 @@
-// Module ID: 18087
-// Function ID: 18088
+// Module ID: 17450
+// Function ID: 17451
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 10376, 8683, 2041, 2063, 9888, 1074, 21, 4788, 1115, 2108, 5853, 4784, 5860, 5846, 12654, 504, 12, 8307, 8305, 4755, 12112, 1980, 4486, 11225, 7316, 1177, 18088, 7317, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 10906, 7832, 2051, 2073, 9026, 1086, 21, 4837, 558, 576, 1127, 2114, 4833, 5922, 5906, 5913, 11753, 504, 12, 7464, 7462, 4801, 11181, 1987, 4531, 10435, 6460, 1189, 17451, 6461, 2]
 
-// Module 18087 (GuildSettingsModalInstantInvites)
+// Module 17450 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import _modDef5846 from "module_5846" /* 5846 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5853 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8305 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8307 */;
-import InstantInvite from "InstantInvite" /* 11225 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10376 */;
-import InviteRecord from "InviteRecord" /* 8683 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9888 */;
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5906 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 5913 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7462 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 7464 */;
+import InstantInvite from "InstantInvite" /* 10435 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10906 */;
+import InviteRecord from "InviteRecord" /* 7832 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
+import Constants from "Constants" /* 1086 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class InvitesDisabledRow {
-  constructor(arg0) {
-    invitesDisabled = global.invitesDisabled;
-    tmp = closure_0;
-    tmp2 = closure_2;
-    intl = closure_0(closure_2[11]).intl;
-    stringResult = intl.string(closure_0(closure_2[11]).t.Uwsjn6);
-    intl2 = closure_0(closure_2[11]).intl;
-    if (invitesDisabled) {
-      stringResult1 = intl2.string(tmp(tmp2[11]).t["2LLbj9"]);
-    } else {
-      obj = { helpArticleUrl: null };
-      tmp4 = closure_1;
-      obj2 = closure_1(tmp2[12]);
-      tmp5 = HelpdeskArticles;
-      obj.helpArticleUrl = obj2.getArticleURL(HelpdeskArticles.INVITE_DISABLED);
-      stringResult1 = intl2.format(tmp(tmp2[11]).t.IFBHag, obj);
-    }
-    tmp7 = jsx;
-    obj1 = { label: stringResult, subLabel: jsx(tmp(tmp2[14]).Text, { variant: "text-xs/medium", children: stringResult1 }), icon: null, checked: null, onPress: null, start: true, end: true };
-    tmp7Result = null;
-    if (invitesDisabled) {
-      obj5 = { source: null };
-      tmp9 = closure_1;
-      obj5.source = closure_1(tmp2[16]);
-      tmp7Result = tmp7(tmp(tmp2[15]).TableRowIcon, obj5);
-    }
-    obj1.icon = tmp7Result;
-    obj1.checked = invitesDisabled;
-    obj1.onPress = global.onPauseInvites;
-    return tmp7(tmp(tmp2[13]).TableCheckboxRow, obj1);
-  }
-}
+let channel, guildId;
+
+let Platform;
+let c10;
+let closure_12;
+let closure_14;
+let hasOwnProperty;
+let map1;
+let unpackModuleId;
 function GuildSettingsModalInstantInvites(invites) {
+  let intl;
+  let intl2;
+  let items6;
+  let items7;
+  let items8;
+  let tmp25;
   invites = invites.invites;
   const guild = invites.guild;
   let flag = invites.showChannel;
@@ -66,16 +53,19 @@ function GuildSettingsModalInstantInvites(invites) {
     flag = false;
   }
   let invitesDisabledLoading;
-  closure_7 = undefined;
-  closure_8 = undefined;
+  let closure_7;
+  let closure_8;
   let memo;
   let stateFromStoresArray;
   let callback1;
-  const tmp = closure_15();
-  const invitesDisabledPermission = invites(flag[17]).useInvitesDisabledPermission(guild);
-  let obj = invites(flag[17]);
+  const contentContainerStyle = invites.contentContainerStyle;
+  let tmp = closure_15();
+  const tmp2 = invites;
+  let obj = invites(flag[19]);
+  const invitesDisabledPermission = obj.useInvitesDisabledPermission(guild);
+  let obj2 = invites(flag[20]);
   let items = [invitesDisabledLoading];
-  const stateFromStores = invites(flag[18]).useStateFromStores(items, () => GuildIncidentsStore.getGuildIncident(guild.id));
+  const stateFromStores = obj2.useStateFromStores(items, () => GuildIncidentsStore.getGuildIncident(guild.id));
   const features = guild.features;
   let hasItem = features.has(stateFromStoresArray.INVITES_DISABLED);
   if (!hasItem) {
@@ -87,28 +77,37 @@ function GuildSettingsModalInstantInvites(invites) {
     if (BooleanResult) {
       const _Boolean = Boolean;
       const _Date = Date;
+      const self = this;
+      const self2 = this;
       const date = new Date(stateFromStores.invitesDisabledUntil);
       const _Date2 = Date;
+      const self3 = this;
+      const self4 = this;
       const date1 = new Date();
       BooleanResult = Boolean(date > date1);
     }
     hasItem = BooleanResult;
   }
-  const tmp19 = invitesDisabledPermission(stateFromStores.useState(false), 2);
-  invitesDisabledLoading = tmp19[0];
-  closure_7 = tmp19[1];
-  const tmp21 = invitesDisabledPermission(stateFromStores.useState(21), 2);
-  closure_8 = tmp21[1];
+  const tmp15 = invitesDisabledPermission(stateFromStores.useState(false), 2);
+  invitesDisabledLoading = tmp15[0];
+  closure_7 = tmp15[1];
+  const tmp17 = invitesDisabledPermission(stateFromStores.useState(21), 2);
+  closure_8 = tmp17[1];
   const items1 = [invites, invitesDisabledPermission, flag];
+  const first1 = tmp17[0];
   memo = stateFromStores.useMemo(() => {
-    const sortByResult = _modDef12.sortBy(invites, (channel) => {
-      if (flag) {
+    const obj = _modDef12;
+    const sortByResult = obj.sortBy(invites, (channel) => {
+      let str;
+      const tmp = flag;
+      if (tmp) {
         channel = channel.channel;
         let formatted;
         if (channel != null) {
-          formatted = channel.name.toLowerCase();
+          const str3 = channel.name;
+          formatted = str3.toLowerCase();
         }
-        let str = formatted;
+        str = formatted;
       } else {
         const inviter = channel.inviter;
         str = undefined;
@@ -123,14 +122,15 @@ function GuildSettingsModalInstantInvites(invites) {
       }
       return str;
     });
-    if (invitesDisabledPermission) {
+    let tmp = invitesDisabledPermission;
+    if (tmp) {
       sortByResult.unshift(importDefaultResult1);
     }
     return sortByResult;
   }, items1);
-  let obj2 = invites(flag[18]);
   const items2 = [closure_7];
-  stateFromStoresArray = invites(flag[18]).useStateFromStoresArray(items2, () => ChannelStore.getSortedLinkedChannelsForGuild(guild.id));
+  const tmp2Result = tmp2(flag[20]);
+  stateFromStoresArray = tmp2Result.useStateFromStoresArray(items2, () => ChannelStore.getSortedLinkedChannelsForGuild(guild.id));
   const items3 = [memo, stateFromStoresArray];
   const memo1 = stateFromStores.useMemo(() => {
     const items = [...memo.map((data) => ({ type: "invite", data })), ...stateFromStoresArray.map((data) => ({ type: "channel", data }))];
@@ -141,85 +141,270 @@ function GuildSettingsModalInstantInvites(invites) {
   }, []);
   const items4 = [invitesDisabledLoading, stateFromStores, guild];
   const callback = stateFromStores.useCallback((type) => {
+    let id;
     if ("invite" === type.type) {
-      let id = type.data.code;
+      id = type.data.code;
     } else {
       id = type.data.id;
     }
     return id;
   }, []);
   callback1 = stateFromStores.useCallback(() => {
-    if (!first) {
+    let obj2;
+    const tmp = first;
+    if (!tmp) {
       closure_7(true);
       try {
-        const obj = { source: GuildAntiRaidTypes.GuildIncidentActionSources.MESSAGE, alertType: GuildAntiRaidUtils.getIncidentAlertType(stateFromStores) };
+        const obj = { source: GuildAntiRaidTypes.GuildIncidentActionSources.MESSAGE, alertType: obj2.getIncidentAlertType(stateFromStores) };
+        obj2 = GuildAntiRaidUtils;
         const obj4 = { guild, analyticsData: obj };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12112, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
-        tmp3(false);
-      } catch (tmp17) {
-        tmp2(false);
-        throw tmp17;
+        const obj3 = ActionSheetActionCreatorsDefault;
+        obj3.openLazy(asyncRequire(11181, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+        closure_7(false);
+      } catch (tmp16) {
+        closure_7(false);
+        throw tmp16;
       }
-      tmp3 = closure_7;
     }
   }, items4);
   const items5 = [hasItem, callback1, invitesDisabledLoading];
   if (null == invites) {
-    let tmp28 = closure_12(tmp2(tmp3[27]).SceneLoadingIndicator, {});
+    tmp25 = closure_12(tmp2(tmp3[29]).SceneLoadingIndicator, {});
   } else if (0 === memo1.length) {
-    let obj3 = { children: null };
+    let obj3 = { children: items6 };
     let obj4 = { onPauseInvites: callback1, invitesDisabled: hasItem, invitesDisabledLoading };
-    const items6 = [closure_12(InvitesDisabledRow, obj4), ];
-    const obj5 = { Illustration: tmp2(tmp3[29]).InviteEmpty, title: null, body: null };
-    const intl = tmp2(tmp3[11]).intl;
-    obj5.title = intl.string(tmp2(tmp3[11]).t["+nLJkZ"]);
-    const intl2 = tmp2(tmp3[11]).intl;
-    obj5.body = intl2.string(tmp2(tmp3[11]).t.F53CAc);
-    items6[1] = closure_12(tmp2(tmp3[28]).EmptyState, obj5);
-    obj3.children = items6;
-    tmp28 = closure_14(closure_13, obj3);
+    items6 = [closure_12(closure_19, obj4), ];
+    const obj5 = { Illustration: tmp2(flag[31]).InviteEmpty, title: intl.string(tmp2(flag[13]).t["+nLJkZ"]), body: intl2.string(tmp2(flag[13]).t.F53CAc) };
+    const EmptyState = tmp2(tmp3[30]).EmptyState;
+    intl = tmp2(tmp3[13]).intl;
+    intl2 = tmp2(tmp3[13]).intl;
+    items6[1] = closure_12(EmptyState, obj5);
+    tmp25 = closure_14(closure_13, obj3);
   } else {
-    const obj6 = { style: null, data: null, keyExtractor: null, renderItem: null, initialNumToRender: 10, windowSize: null, contentContainerStyle: null };
-    const items7 = [invitesDisabledPermission ? tmp.listWithPause : tmp.list];
-    obj6.style = items7;
-    obj6.data = memo1;
-    obj6.keyExtractor = callback;
-    obj6.renderItem = tmp27;
-    obj6.windowSize = tmp21[0];
-    const items8 = [invites.contentContainerStyle, tmp.content];
-    obj6.contentContainerStyle = items8;
-    tmp28 = closure_12(hasItem, obj6);
+    const obj6 = { style: items7, data: memo1, keyExtractor: callback, renderItem: tmp24, initialNumToRender: 10, windowSize: first1, contentContainerStyle: items8 };
+    items7 = [invitesDisabledPermission ? tmp.listWithPause : tmp.list];
+    items8 = [contentContainerStyle, tmp.content];
+    tmp25 = closure_12(hasItem, obj6);
   }
-  return tmp28;
+  return tmp25;
 }
-get_ActivityIndicator = fn(17);
-({ Platform, FlatList: hasOwnProperty } = get_ActivityIndicator);
-const Constants = fn(1074);
-({ GuildFeatures: c10, HelpdeskArticles: closure_11 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4788);
+({ Platform, FlatList: hasOwnProperty } = react_native);
+({ GuildFeatures: c10, HelpdeskArticles: unpackModuleId } = Constants);
+({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = Fragment);
 let closure_15 = createStyles.createStyles({ list: { paddingTop: 8 }, content: { padding: 16, gap: 24 }, listWithPause: { paddingTop: 0 } });
 const pause_invites = "pause_invites";
 const importDefaultResult1 = new InviteRecord({ code: "pause_invites" });
 let closure_18 = {};
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalInstantInvites.tsx");
-
-export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let invitesDisabled;
+  let obj3;
+  let onPauseInvites;
+  let tmp10;
+  let tmp13;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(12);
+  ({ onPauseInvites, invitesDisabled } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl3.t.Uwsjn6);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== invitesDisabled) {
+    let stringResult1;
+    const intl2 = tmp(1127).intl;
+    if (invitesDisabled) {
+      stringResult1 = intl2.string(tmp(1127).t["2LLbj9"]);
+    } else {
+      const format = intl2.format;
+      const obj2 = { helpArticleUrl: obj3.getArticleURL(unpackModuleId.INVITE_DISABLED) };
+      const IFBHag = tmp(1127).t.IFBHag;
+      obj3 = HelpdeskUtilsDefault;
+      stringResult1 = format(IFBHag, obj2);
+    }
+    cResult[1] = invitesDisabled;
+    cResult[2] = stringResult1;
+    tmp6 = stringResult1;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] !== tmp6) {
+    const obj4 = { variant: "text-xs/medium", children: tmp6 };
+    const tmp12 = closure_12(Text_Text.Text, obj4);
+    cResult[3] = tmp6;
+    cResult[4] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] !== invitesDisabled) {
+    let tmp14 = null;
+    if (invitesDisabled) {
+      const obj5 = { source: AssetRegistryDefault };
+      const TableRowIcon = tmp(5922).TableRowIcon;
+      tmp14 = closure_12(TableRowIcon, obj5);
+    }
+    cResult[5] = invitesDisabled;
+    cResult[6] = tmp14;
+    tmp13 = tmp14;
+  } else {
+    tmp13 = cResult[6];
+  }
+  if (cResult[7] === invitesDisabled) {
+    if (cResult[8] === onPauseInvites) {
+      if (cResult[9] === tmp10) {
+        let tmp17;
+        if (cResult[10] === tmp13) {
+          tmp17 = cResult[11];
+        }
+        return tmp17;
+      }
+    }
+  }
+  const tmp18 = closure_12(TableCheckboxRow2.TableCheckboxRow, { label: first, subLabel: tmp10, icon: tmp13, checked: invitesDisabled, onPress: onPauseInvites, start: true, end: true });
+  cResult[7] = invitesDisabled;
+  cResult[8] = onPauseInvites;
+  cResult[9] = tmp10;
+  cResult[10] = tmp13;
+  cResult[11] = tmp18;
+  tmp17 = tmp18;
+}) : ((invitesDisabled) => {
+  let obj2;
+  let stringResult1;
+  let tmp7Result;
+  invitesDisabled = invitesDisabled.invitesDisabled;
+  const onPauseInvites = invitesDisabled.onPauseInvites;
+  const intl = intl3.intl;
+  const stringResult = intl.string(intl3.t.Uwsjn6);
+  const intl2 = intl3.intl;
+  if (invitesDisabled) {
+    stringResult1 = intl2.string(tmp(1127).t["2LLbj9"]);
+  } else {
+    const format = intl2.format;
+    const obj = { helpArticleUrl: obj2.getArticleURL(unpackModuleId.INVITE_DISABLED) };
+    const IFBHag = tmp(1127).t.IFBHag;
+    obj2 = HelpdeskUtilsDefault;
+    stringResult1 = format(IFBHag, obj);
+  }
+  const obj3 = { label: stringResult, subLabel: closure_12(Text_Text.Text, { variant: "text-xs/medium", children: stringResult1 }), icon: tmp7Result, checked: invitesDisabled, onPress: onPauseInvites, start: true, end: true };
+  const TableCheckboxRow = tmp(5913).TableCheckboxRow;
+  tmp7Result = null;
+  if (invitesDisabled) {
+    const obj4 = { source: AssetRegistryDefault };
+    const TableRowIcon = tmp(5922).TableRowIcon;
+    tmp7Result = tmp7(TableRowIcon, obj4);
+  }
+  return closure_12(TableCheckboxRow, obj3);
+});
+let closure_19 = tmp7;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let first;
+  let items2;
+  let props;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  const obj = guildId(576);
+  const cResult = obj.c(9);
   guildId = guildId.guildId;
+  const contentContainerStyle = guildId.contentContainerStyle;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function n() {
+      return GuildStore.getGuild(guildId);
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = guildId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GuildSettingsStore];
+    class S {
+      constructor() {
+        invites = props.getProps().invites;
+        if (invites == null) {
+          invites = closure_1_18;
+        }
+        return invites;
+      }
+    }
+    cResult[3] = items1;
+    cResult[4] = S;
+    tmp9 = S;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
+  }
+  const tmpResult2 = guildId(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
+  if (cResult[5] === contentContainerStyle) {
+    if (cResult[6] === stateFromStores) {
+      let tmp12;
+      if (cResult[7] === stateFromStores1) {
+        tmp12 = cResult[8];
+      }
+      return tmp12;
+    }
+  }
+  let tmp13 = null;
+  if (null != stateFromStores) {
+    const obj2 = { children: items2 };
+    class S {
+      constructor() {
+        invites = props.getProps().invites;
+        if (invites == null) {
+          invites = closure_1_18;
+        }
+        return invites;
+      }
+    }
+    const obj3 = { guild: stateFromStores, invites: stateFromStores1, contentContainerStyle, showChannel: true };
+    items2 = [closure_12(GuildSettingsModalInstantInvites, obj3), closure_12(guildId(6461).NavScrim, {})];
+    tmp13 = closure_14(closure_13, obj2);
+  }
+  cResult[5] = contentContainerStyle;
+  cResult[6] = stateFromStores;
+  cResult[7] = stateFromStores1;
+  cResult[8] = tmp13;
+  tmp12 = tmp13;
+}) : ((guildId) => {
+  let items1;
+  let props;
+  guildId = guildId.guildId;
+  const contentContainerStyle = guildId.contentContainerStyle;
   const items = [GuildStore];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => GuildStore.getGuild(guildId));
+  const obj = guildId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
   guildId(504);
   [][0] = GuildSettingsStore;
   let tmp6 = null;
+  const tmp = guildId;
   if (null != stateFromStores) {
-    const obj2 = { children: null };
-    const obj3 = { guild: stateFromStores, invites: tmp5, contentContainerStyle: guildId.contentContainerStyle, showChannel: true };
-    const items1 = [closure_12(GuildSettingsModalInstantInvites, obj3), closure_12(guildId(7317).NavScrim, {})];
-    obj2.children = items1;
+    const obj2 = { children: items1 };
+    const obj3 = { guild: stateFromStores, invites: tmp5, contentContainerStyle, showChannel: true };
+    items1 = [closure_12(GuildSettingsModalInstantInvites, obj3), closure_12(tmp(6461).NavScrim, {})];
     tmp6 = closure_14(closure_13, obj2);
   }
   return tmp6;
-};
-export { InvitesDisabledRow };
+});
+const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalInstantInvites.tsx");
+
+export default tmp8;
+export const InvitesDisabledRow = tmp7;

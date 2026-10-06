@@ -1,48 +1,51 @@
-// Module ID: 16219
-// Function ID: 16220
+// Module ID: 15496
+// Function ID: 15497
 // Name: DoubleTapToReactSetting
-// Dependencies: [8265, 11754, 1115, 2019, 2]
+// Dependencies: [7421, 10874, 1127, 2027, 2]
 
-// Module 16219 (DoubleTapToReactSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15496 (DoubleTapToReactSetting)
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["4qhAjx"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["4qhAjx"]);
   },
-  parent: SettingsConstants.MobileUserSettings.CHAT,
+  parent: MobileUserSettings.CHAT,
   useValue() {
     const DoubleTapReactionEmoji = UserSettings.DoubleTapReactionEmoji;
     return !DoubleTapReactionEmoji.useSetting().disableDoubleTap;
   },
   onValueChange(disableDoubleTap) {
+    let animated;
+    let emojiId;
+    let emojiName;
     const DoubleTapReactionEmoji = UserSettings.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
     const DoubleTapReactionEmoji2 = UserSettings.DoubleTapReactionEmoji;
-    const obj = { disableDoubleTap: !disableDoubleTap, emojiId: null, emojiName: null, animated: null };
-    let emojiId;
+    const obj = { disableDoubleTap: !disableDoubleTap, emojiId, emojiName, animated };
+    emojiId = undefined;
+    const updateSetting = DoubleTapReactionEmoji2.updateSetting;
     if (setting != null) {
       emojiId = setting.emojiId;
     }
-    obj.emojiId = emojiId;
-    let emojiName;
+    emojiName = undefined;
     if (setting != null) {
       emojiName = setting.emojiName;
     }
-    obj.emojiName = emojiName;
-    let animated;
+    animated = undefined;
     if (setting != null) {
       animated = setting.animated;
     }
-    obj.animated = animated;
-    DoubleTapReactionEmoji2.updateSetting(obj);
+    updateSetting(obj);
   }
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DoubleTapToReactSetting.tsx");
 
 export default toggle;

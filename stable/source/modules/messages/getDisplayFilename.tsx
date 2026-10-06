@@ -1,10 +1,10 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 7718
+// Function ID: 7719
 // Name: getDisplayFilename
 // Dependencies: [2]
 // Exports: default
 
-// Module 8569 (getDisplayFilename)
+// Module 7718 (getDisplayFilename)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/getDisplayFilename.tsx");
@@ -16,7 +16,8 @@ export default function getDisplayFilename(title) {
       const lastIndexOfResult = filename.lastIndexOf(".");
       let str2 = "";
       if (lastIndexOfResult > 0) {
-        str2 = title.filename.substr(lastIndexOfResult);
+        const str3 = title.filename;
+        str2 = str3.substr(lastIndexOfResult);
       }
       return title.title + str2;
     }

@@ -1,347 +1,363 @@
-// Module ID: 7698
-// Function ID: 7699
+// Module ID: 6845
+// Function ID: 6846
 // Name: NativeCheckoutStore
-// Dependencies: [5, 32, 19, 7699, 4770, 7702, 4411, 1243, 7703, 12, 7520, 4461, 7704, 2]
-// Exports: createNativeStore, useNativeCheckoutStore, useNativeCheckoutStoreOrNull
+// Dependencies: [5, 32, 19, 6846, 4816, 6849, 558, 4455, 1255, 6850, 12, 6665, 4506, 6851, 2]
+// Exports: createNativeStore, useNativeCheckoutStoreOrNull
 
-// Module 7698 (NativeCheckoutStore)
-import _mod1243 from "module_1243" /* 1243 */;
-import _mod4411 from "module_4411" /* 4411 */;
-import OrderActionCreators from "OrderActionCreators" /* 7520 */;
-import ContextUtilsDefault from "ContextUtils" /* 7702 */;
-import payments_OrderActionCreators from "payments/OrderActionCreators" /* 7703 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import OrderRecord from "OrderRecord" /* 7699 */;
+// Module 6845 (NativeCheckoutStore)
+import _mod1255 from "module_1255" /* 1255 */;
+import _slicedToArray2 from "_slicedToArray" /* 4455 */;
+import PaymentConstants from "PaymentConstants" /* 4816 */;
+import ContextUtilsDefault from "ContextUtils" /* 6849 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import OrderRecord from "OrderRecord" /* 6846 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let c6, c7, checkoutInitParameters, closure_1, country, paymentGateway;
 
-require = fn;
-const OrderStatus = fn(4770).OrderStatus;
-[exports.NativeCheckoutStoreContext, closure_7] = ContextUtilsDefault();
-let context = noop.createContext("unset_context");
-const size = fn(2);
+let closure_7;
+let first;
+const OrderStatus = PaymentConstants.OrderStatus;
+[first, closure_7] = ContextUtilsDefault();
+let context = react.createContext("unset_context");
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, shallow) => {
+  if (undefined === shallow) {
+    shallow = _slicedToArray2.shallow;
+  }
+  const tmp3 = closure_7();
+  const obj = _mod1255;
+  return obj.useStoreWithEqualityFn(tmp3, cResult, shallow);
+}) : ((cResult, shallow) => {
+  if (shallow === undefined) {
+    shallow = _slicedToArray2.shallow;
+  }
+  const tmp3 = closure_7();
+  const obj = _mod1255;
+  return obj.useStoreWithEqualityFn(tmp3, cResult, shallow);
+});
 let result = size.fileFinishedImporting("modules/checkout/native/NativeCheckoutStore.tsx");
 
 export const NativeCheckoutStoreContextOrNull = context;
-export const useNativeCheckoutStore = function useNativeCheckoutStore(arg0, shallow) {
+export const useNativeCheckoutStore = tmp6;
+export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNull(cResult, shallow) {
   if (shallow === undefined) {
-    shallow = _mod4411.shallow;
+    shallow = _slicedToArray2.shallow;
   }
-  const tmp3 = closure_7();
-  return _mod1243.useStoreWithEqualityFn(tmp3, arg0, shallow);
-};
-export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNull(arg0, shallow) {
-  if (shallow === undefined) {
-    shallow = _mod4411.shallow;
-  }
-  context = noop.useContext(context);
+  context = react.useContext(context);
   let storeWithEqualityFn = null;
   if ("unset_context" !== context) {
-    storeWithEqualityFn = _mod1243.useStoreWithEqualityFn(context, arg0, shallow);
+    const obj = _mod1255;
+    storeWithEqualityFn = obj.useStoreWithEqualityFn(context, cResult, shallow);
   }
   return storeWithEqualityFn;
 };
 export const createNativeStore = function createNativeStore(arg0) {
-  ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, analyticsFields: asyncGeneratorStep, paymentGateway: noop, orderRequired: OrderRecord, onOrderRetryCancellation: OrderStatus, initialSubscriptionFacet: closure_7 } = arg0);
-  return _mod1243.createWithEqualityFn((arg0, arg1) => {
-    closure_0 = arg0;
+  ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, analyticsFields: _asyncToGenerator, paymentGateway: react, orderRequired: OrderRecord, onOrderRetryCancellation: OrderStatus, initialSubscriptionFacet: closure_7 } = arg0);
+  let obj = _mod1255;
+  return obj.createWithEqualityFn((arg0, arg1) => {
+    let tmp;
+    let closure_0 = arg0;
     checkoutInitParameters = arg1;
     function runPatchOrderLineItems() {
-      const self = this;
-      const apply = closure_3.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+      return obj(...arguments);
     }
-    analyticsFields = async function _runPatchOrderLineItems(arg0, value) {
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c5 = 2;
-          if (0 === c4) {
+    let obj = function _runPatchOrderLineItems() {
+      obj = _asyncToGenerator(async (value, arg1) => {
+        closure_1 = arg1;
+        let c4 = 0;
+        let c5 = 0;
+        return (async function(arg0, value) {
+          let obj4;
+          if (c5 === 2) {
+            c5 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
             if (arg0 === 1) {
-              c5 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
+              return { value, done: true };
             } else {
-              closure_3 = tmp5;
-              closure_2 = tmp2;
-              closure_130_0 = undefined;
-              const orderRecord = checkoutInitParameters().orderRecord;
-              if (null == orderRecord) {
-                const _Error = Error;
-                const error = new Error("Patch being called in a missing order state");
-                throw error;
-              } else {
-                const obj6 = { orderId: null, expectedRevision: null, orderLineItems: null, externalGatewayFacet: null };
-                ({ id: obj5.orderId, revision: obj5.expectedRevision } = orderRecord);
-                obj6.orderLineItems = tmp24;
-                obj6.externalGatewayFacet = tmp25;
-                c4 = 1;
-                c5 = 1;
-                const obj7 = { value: require("payments/OrderActionCreators").patchOrder(obj6), done: false };
-                return obj7;
-              }
-              tmp24 = closure_0;
-              tmp25 = closure_1;
+              return { value: "IconComponent", done: null };
             }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
           } else {
-            closure_130_0 = value;
-            const obj = { orderRecord: orderRequired.createFromServer(closure_130_0) };
-            closure_131_0(obj);
-            c5 = 3;
-            const obj14 = { value: closure_130_0, done: true };
-            return obj14;
+            try {
+              c5 = 2;
+              if (0 === c4) {
+                if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 3;
+                  return { value, done: true };
+                } else {
+                  closure_3 = tmp4;
+                  closure_2 = tmp;
+                  value = undefined;
+                  const orderRecord = closure_2_1().orderRecord;
+                  const tmp20 = value;
+                  const tmp21 = closure_1;
+                  if (null == orderRecord) {
+                    const _Error = Error;
+                    const self = this;
+                    const self2 = this;
+                    const error = new Error("Patch being called in a missing order state");
+                    throw error;
+                  } else {
+                    const obj6 = { orderId: null, expectedRevision: null, orderLineItems: tmp20, externalGatewayFacet: tmp21 };
+                    ({ id: obj5.orderId, revision: obj5.expectedRevision } = orderRecord);
+                    c4 = 1;
+                    c5 = 1;
+                    const obj7 = { value: obj4.patchOrder(obj6), done: false };
+                    obj4 = closure_2_0(runPatchOrderLineItems[9]);
+                    return obj7;
+                  }
+                }
+              } else if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                return { value, done: true };
+              } else {
+                obj = { orderRecord: closure_2_5.createFromServer(value) };
+                closure_131_0(obj);
+                c5 = 3;
+                return { value, done: true };
+              }
+            } catch (tmp16) {
+              c5 = 3;
+              throw tmp16;
+            }
           }
-        } catch (tmp19) {
-          c5 = tmp;
-          throw tmp19;
-        }
-      }
+        })();
+      });
+      return obj(...arguments);
     };
     function runRecreateOrder() {
-      const self = this;
-      const apply = closure_5.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+      return obj(...arguments);
     }
-    orderRequired = async function _runRecreateOrder(arg0, value) {
-      if (paymentGateway === 2) {
-        paymentGateway = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+    obj = function _runRecreateOrder() {
+      let subscription_preview;
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let line_items;
+        let obj7;
+        let obj8;
+        country = arg0;
+        if (paymentGateway === 2) {
+          paymentGateway = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
         } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          paymentGateway = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
+          try {
+            paymentGateway = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                paymentGateway = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                paymentGateway = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                let closure_2 = tmp;
+                country = undefined;
+                const orderRecord = closure_2_1().orderRecord;
+                if (null != orderRecord) {
+                  const orderLineItems = orderRecord.orderLineItems;
+                  const mapped = orderLineItems.map((sku_id) => ({ sku_id: sku_id.sku_id, quantity: sku_id.quantity, purchase_type: sku_id.purchase_type, subscription_plan_id: sku_id.subscription_plan_id }));
+                  let tmp14;
+                  const obj3 = closure_2_1(runPatchOrderLineItems[10]);
+                  const tmp13 = runPatchOrderLineItems;
+                  if (obj3.some(mapped, (subscription_plan_id) => null != subscription_plan_id.subscription_plan_id)) {
+                    const obj6 = { subscription_preview: obj8 };
+                    obj8 = { currency: null, country_code: null };
+                    ({ currency: obj5.currency, country: obj5.country_code } = country);
+                    if (null != tmp4.activeSubscription) {
+                      obj6.subscription_id = tmp4.activeSubscription.id;
+                    }
+                    const tmp18 = null != subscription_preview && null != tmp17.subscription_preview.subscription_trial_id;
+                    tmp14 = obj6;
+                    if (tmp18) {
+                      obj6.subscription_preview.subscription_trial_id = subscription_preview.subscription_preview.subscription_trial_id;
+                      tmp14 = obj6;
+                    }
+                  }
+                  let tmp19;
+                  if (null != orderRecord.externalGatewayFacet) {
+                    const obj9 = { line_items: line_items.map((external_product_id) => ({ external_product_id: external_product_id.external_product_id })) };
+                    line_items = orderRecord.externalGatewayFacet.line_items;
+                    tmp19 = obj9;
+                  }
+                  const obj10 = { orderLineItems: mapped, paymentGateway, isGift: tmp4.isGift, subscriptionFacet: tmp14, externalGatewayFacet: tmp19, countryCode: country.country };
+                  c3 = 1;
+                  paymentGateway = 1;
+                  const obj11 = { value: obj7.createOrder(obj10), done: false };
+                  obj7 = closure_2_0(tmp13[9]);
+                  return obj11;
+                }
+              }
+            } else if (arg0 === 1) {
               paymentGateway = 3;
               throw value;
             } else if (arg0 === 2) {
               paymentGateway = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              const obj19 = { value, done: true };
+              return obj19;
             } else {
-              closure_2 = tmp2;
-              closure_129_0 = undefined;
-              const orderRecord = checkoutInitParameters().orderRecord;
-              if (null != orderRecord) {
-                const orderLineItems = orderRecord.orderLineItems;
-                const mapped = orderLineItems.map((sku_id) => ({ sku_id: sku_id.sku_id, quantity: sku_id.quantity, purchase_type: sku_id.purchase_type, subscription_plan_id: sku_id.subscription_plan_id }));
-                let tmp15;
-                if (obj3.some(mapped, (subscription_plan_id) => null != subscription_plan_id.subscription_plan_id)) {
-                  const obj6 = { subscription_preview: null };
-                  ({ currency: obj5.currency, country: obj5.country_code } = tmp29);
-                  obj6.subscription_preview = { currency: null, country_code: null };
-                  if (null != tmp5.activeSubscription) {
-                    obj6.subscription_id = tmp5.activeSubscription.id;
-                  }
-                  let tmp19 = null != closure_1_7;
-                  if (tmp19) {
-                    tmp19 = null != tmp18.subscription_preview.subscription_trial_id;
-                  }
-                  tmp15 = obj6;
-                  if (tmp19) {
-                    obj6.subscription_preview.subscription_trial_id = tmp18.subscription_preview.subscription_trial_id;
-                    tmp15 = obj6;
-                  }
-                  const obj8 = { currency: null, country_code: null };
-                }
-                let tmp20;
-                if (null != orderRecord.externalGatewayFacet) {
-                  const obj9 = { line_items: null };
-                  const line_items = orderRecord.externalGatewayFacet.line_items;
-                  obj9.line_items = line_items.map((external_product_id) => ({ external_product_id: external_product_id.external_product_id }));
-                  tmp20 = obj9;
-                }
-                obj3 = checkoutInitParameters(runPatchOrderLineItems[9]);
-                const obj10 = { orderLineItems: mapped, paymentGateway, isGift: tmp5.isGift, subscriptionFacet: tmp15, externalGatewayFacet: tmp20, countryCode: tmp29.country };
-                c3 = 1;
-                paymentGateway = 1;
-                const obj11 = { value: require("payments/OrderActionCreators").createOrder(obj10), done: false };
-                return obj11;
-              } else {
-                paymentGateway = 3;
-              }
+              country = value;
+              obj = { orderRecord: closure_2_5.createFromServer(country) };
+              closure_130_0(obj);
             }
-          } else if (arg0 === 1) {
             paymentGateway = 3;
-            throw value;
-          } else if (arg0 !== 2) {
-            closure_129_0 = value;
-            const obj = { orderRecord: orderRequired.createFromServer(closure_129_0) };
-            closure_130_0(obj);
+            return { value: "IconComponent", done: null };
+          } catch (tmp23) {
+            paymentGateway = 3;
+            throw tmp23;
           }
-          paymentGateway = 3;
-          const obj19 = { value, done: true };
-          return obj19;
-        } catch (tmp24) {
-          paymentGateway = tmp;
-          throw tmp24;
         }
-      }
+      });
+      return obj(...arguments);
     };
     function runRevertOrderToDraft() {
-      const self = this;
-      const apply = closure_7.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+      return obj(...arguments);
     }
-    closure_7 = async function _runRevertOrderToDraft(arg0, value) {
-      if (c7 === 2) {
-        c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_2 = tmp5;
-              closure_3 = tmp2;
-              closure_131_0 = undefined;
-              closure_131_1 = undefined;
-              const orderRecord = checkoutInitParameters().orderRecord;
-              if (null != orderRecord) {
-                const id = orderRecord.id;
-                closure_131_0 = id;
-                c6 = 1;
-                c7 = 1;
-                const obj5 = { value: OrderActionCreators.getOrder(id), done: false };
-                return obj5;
-              } else {
-                c7 = 3;
-              }
-            }
-          } else if (1 === tmp5) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
-            } else {
-              closure_131_1 = value;
-              if (null == closure_131_1) {
-                const _Error2 = Error;
-                const _HermesInternal2 = HermesInternal;
-                const error = new Error("Order " + closure_131_0 + " could not be read");
-                throw error;
-              } else if (closure_131_1.status !== constants.DRAFT) {
-                if (closure_131_1.status !== constants.SIGNING_IN_PROGRESS) {
-                  const _Error = Error;
-                  const _HermesInternal = HermesInternal;
-                  const error1 = new Error("Order " + closure_131_0 + " is no longer editable (status " + closure_131_1.status + ")");
-                  throw error1;
-                } else {
-                  closure_4 = closure_130_0;
-                  closure_5 = {};
-                  closure_1 = orderRequired;
-                  const createFromServer = orderRequired.createFromServer;
-                  c6 = 2;
-                  c7 = 1;
-                  const obj8 = { value: payments_OrderActionCreators.cancelOrderSigning(closure_131_0), done: false };
-                  return obj8;
-                }
-              } else {
-                const obj9 = { orderRecord: orderRequired.createFromServer(closure_131_1) };
-                closure_130_0(obj9);
-              }
-            }
-          } else if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 !== 2) {
-            closure_5.orderRecord = createFromServer(value);
-            closure_4(closure_5);
-          }
+    obj = function _runRevertOrderToDraft() {
+      obj = _asyncToGenerator(async function(arg0, value) {
+        let obj3;
+        let obj6;
+        if (c7 === 2) {
           c7 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } catch (tmp45) {
-          c7 = tmp;
-          throw tmp45;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            let id;
+            c7 = 2;
+            if (0 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                let closure_2 = tmp4;
+                let closure_3 = tmp;
+                id = undefined;
+                closure_1 = undefined;
+                const orderRecord = closure_2_1().orderRecord;
+                if (null != orderRecord) {
+                  id = orderRecord.id;
+                  c6 = 1;
+                  c7 = 1;
+                  const obj5 = { value: obj6.getOrder(id), done: false };
+                  obj6 = closure_2_0(runPatchOrderLineItems[11]);
+                  return obj5;
+                }
+              }
+            } else {
+              let closure_4;
+              let closure_5;
+              let createFromServer;
+              if (1 === c6) {
+                if (arg0 === 1) {
+                  c7 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c7 = 3;
+                  const obj7 = { value, done: true };
+                  return obj7;
+                } else {
+                  closure_1 = value;
+                  if (null == closure_1) {
+                    const _Error2 = Error;
+                    const _HermesInternal2 = HermesInternal;
+                    const self3 = this;
+                    const self4 = this;
+                    const error = new Error("Order " + id + " could not be read");
+                    throw error;
+                  } else if (closure_1.status !== constants.DRAFT) {
+                    if (closure_1.status !== constants.SIGNING_IN_PROGRESS) {
+                      const _Error = Error;
+                      const _HermesInternal = HermesInternal;
+                      const self = this;
+                      const self2 = this;
+                      const error1 = new Error("Order " + id + " is no longer editable (status " + closure_1.status + ")");
+                      throw error1;
+                    } else {
+                      closure_4 = closure_130_0;
+                      closure_5 = {};
+                      closure_1 = closure_2_5;
+                      createFromServer = closure_2_5.createFromServer;
+                      c6 = 2;
+                      c7 = 1;
+                      const obj8 = { value: obj3.cancelOrderSigning(id), done: false };
+                      obj3 = closure_2_0(runPatchOrderLineItems[9]);
+                      return obj8;
+                    }
+                  } else {
+                    const obj9 = { orderRecord: closure_2_5.createFromServer(closure_1) };
+                    closure_130_0(obj9);
+                  }
+                }
+              } else if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                obj = { value, done: true };
+                return obj;
+              } else {
+                closure_5.orderRecord = createFromServer(value);
+                closure_4(closure_5);
+              }
+            }
+            c7 = 3;
+            return { value: "IconComponent", done: null };
+          } catch (tmp40) {
+            c7 = 3;
+            throw tmp40;
+          }
         }
-      }
+      });
+      return obj(...arguments);
     };
     let fromServer = null;
     if (null != closure_0) {
-      fromServer = orderRequired.createFromServer(tmp);
+      const tmp3 = OrderRecord;
+      fromServer = OrderRecord.createFromServer(tmp);
     }
-    let obj = {
+    obj = {
       orderRecord: fromServer,
       setOrder(order) {
-        return closure_0({ orderRecord: OrderRecord.createFromServer(order) });
+        obj = { orderRecord: OrderRecord.createFromServer(order) };
+        return closure_0(obj);
       },
       setOrderRevision(arg0, arg1) {
         const orderRecord = closure_1().orderRecord;
-        let tmp = null == orderRecord;
+        const tmp = null == orderRecord || orderRecord.id !== arg0 || arg1 <= orderRecord.revision;
         if (!tmp) {
-          tmp = orderRecord.id !== arg0;
-        }
-        if (!tmp) {
-          tmp = arg1 <= orderRecord.revision;
-        }
-        if (!tmp) {
-          const obj = { orderRecord: orderRecord.set("revision", arg1) };
+          obj = { orderRecord: orderRecord.set("revision", arg1) };
           closure_0(obj);
         }
       },
@@ -354,38 +370,59 @@ export const createNativeStore = function createNativeStore(arg0) {
         return prop;
       },
       isPatchOrderLoading: false,
-      patchOrderLineItems: null,
+      patchOrderLineItems: function() {
+        return closure_10(...arguments);
+      },
       isCreateOrderLoading: false,
-      recreateOrder: null,
-      revertOrderToDraft: null,
-      checkoutInitParameters: null,
-      contextMetadata: null,
-      analyticsFields: null,
+      recreateOrder: function() {
+        return closure_9(...arguments);
+      },
+      revertOrderToDraft: function() {
+        return closure_8(...arguments);
+      },
+      checkoutInitParameters,
+      contextMetadata: runPatchOrderLineItems,
+      analyticsFields: obj,
       purchaseInFlight: false,
-      getPurchaseInFlight: null,
-      setPurchaseInFlight: null,
-      orderRequired: null,
+      getPurchaseInFlight() {
+        return closure_1().purchaseInFlight;
+      },
+      setPurchaseInFlight(purchaseInFlight) {
+        obj = { purchaseInFlight };
+        return closure_0(obj);
+      },
+      orderRequired: obj,
       checkoutSucceeded: false,
-      setCheckoutSucceeded: null,
+      setCheckoutSucceeded() {
+        return closure_0({ checkoutSucceeded: true });
+      },
       checkoutFailed: false,
-      setCheckoutFailed: null,
-      onOrderRetryCancellation: null
+      setCheckoutFailed() {
+        return closure_0({ checkoutFailed: true });
+      },
+      onOrderRetryCancellation: runRevertOrderToDraft
     };
-    closure_10 = analyticsFields(function*(arg0, value) {
+    let closure_10 = _asyncToGenerator(async (arg0, value) => {
+      let obj6;
+      let obj7;
+      closure_0 = arg0;
+      closure_1 = value;
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp7 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
+        let c5;
         try {
+          let closure_2;
           c7 = 2;
           if (0 === c6) {
             if (arg0 === 1) {
@@ -396,10 +433,8 @@ export const createNativeStore = function createNativeStore(arg0) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_3 = tmp4;
-              closure_2 = tmp8;
-              closure_130_0 = closure_0;
-              closure_130_1 = closure_1;
+              let closure_3 = tmp;
+              closure_2 = tmp4;
               c5 = 2;
               closure_0({ isPatchOrderLoading: true });
               c6 = 3;
@@ -407,28 +442,30 @@ export const createNativeStore = function createNativeStore(arg0) {
               const obj4 = { value: runPatchOrderLineItems(closure_0, closure_1), done: false };
               return obj4;
             }
-          } else if (1 === tmp8) {
+          } else if (1 === c6) {
             c5 = 0;
             closure_131_0({ isPatchOrderLoading: false });
             throw closure_4;
-          } else if (2 === tmp8) {
+          } else if (2 === c6) {
             c5 = 1;
-            closure_130_2 = closure_4;
-            const obj6 = { tags: { source: "NativeCheckoutStore_patchOrderLineItems" }, extra: null };
+            closure_2 = closure_4;
+            const obj5 = { tags: { source: "NativeCheckoutStore_patchOrderLineItems" }, extra: obj6 };
+            const captureBillingException = closure_0(runPatchOrderLineItems[12]).captureBillingException;
+            const tmp23 = closure_0(runPatchOrderLineItems[12]);
             const orderRecord = closure_131_1().orderRecord;
             let id;
+            const tmp24 = closure_2;
             if (orderRecord != null) {
               id = orderRecord.id;
             }
-            const obj7 = { orderId: id };
-            obj6.extra = obj7;
-            const result = closure_0(runPatchOrderLineItems[11]).captureBillingException(closure_130_2, obj6);
-            const obj5 = closure_0(runPatchOrderLineItems[11]);
+            obj6 = { orderId: id };
+            const result = captureBillingException(tmp24, obj5);
             c6 = 4;
             c7 = 1;
-            const obj9 = { value: closure_0(runPatchOrderLineItems[12]).showCheckoutOrderErrorModal(() => closure_2(closure_1_0, closure_1_1)), done: false };
-            return obj9;
-          } else if (3 === tmp8) {
+            const obj8 = { value: obj7.showCheckoutOrderErrorModal(() => closure_2(closure_1_0, closure_1_1)), done: false };
+            obj7 = closure_0(runPatchOrderLineItems[13]);
+            return obj8;
+          } else if (3 === c6) {
             if (arg0 === 1) {
               c7 = 3;
               throw value;
@@ -436,14 +473,14 @@ export const createNativeStore = function createNativeStore(arg0) {
               c5 = 0;
               closure_131_0({ isPatchOrderLoading: false });
               c7 = 3;
-              const obj10 = { value, done: true };
-              return obj10;
+              const obj9 = { value, done: true };
+              return obj9;
             } else {
               c5 = 0;
               closure_131_0({ isPatchOrderLoading: false });
               c7 = 3;
-              const obj11 = { value, done: true };
-              return obj11;
+              const obj10 = { value, done: true };
+              return obj10;
             }
           } else if (arg0 === 1) {
             c7 = 3;
@@ -452,52 +489,46 @@ export const createNativeStore = function createNativeStore(arg0) {
             c5 = 0;
             closure_131_0({ isPatchOrderLoading: false });
             c7 = 3;
-            const obj12 = { value, done: true };
-            return obj12;
+            const obj11 = { value, done: true };
+            return obj11;
           } else {
             c5 = 0;
             closure_131_0({ isPatchOrderLoading: false });
             c7 = 3;
-            const obj = { value, done: true };
+            obj = { value, done: true };
             return obj;
           }
-        } catch (tmp45) {
-          closure_4 = tmp45;
-          if (tmp5 === c5) {
-            c7 = tmp3;
-            throw tmp45;
-          } else if (tmp2 === tmp47) {
-            c6 = tmp2;
+        } catch (tmp42) {
+          closure_4 = tmp42;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp42;
+          } else if (1 === tmp44) {
+            c6 = 1;
           } else {
-            c6 = tmp;
+            c6 = 2;
           }
         }
       }
     });
-    obj.patchOrderLineItems = function() {
-      const self = this;
-      const apply = closure_10.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    };
-    closure_9 = analyticsFields(function*(arg0, value) {
+    let closure_9 = _asyncToGenerator(async (arg0, value) => {
+      let obj5;
+      let obj7;
+      closure_0 = arg0;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp7 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
+        let c4;
         try {
           c6 = 2;
           if (0 === c5) {
@@ -506,42 +537,43 @@ export const createNativeStore = function createNativeStore(arg0) {
               throw value;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              const obj3 = { value, done: true };
+              return obj3;
             } else {
-              closure_2 = tmp4;
-              closure_1 = tmp8;
-              closure_129_0 = closure_0;
+              let closure_2 = tmp;
+              closure_1 = tmp4;
               c4 = 2;
               closure_0({ isCreateOrderLoading: true });
               c5 = 3;
               c6 = 1;
-              const obj5 = { value: runRecreateOrder(closure_0), done: false };
-              return obj5;
+              const obj4 = { value: runRecreateOrder(closure_0), done: false };
+              return obj4;
             }
-          } else if (1 === tmp8) {
+          } else if (1 === c5) {
             c4 = 0;
             closure_130_0({ isCreateOrderLoading: false });
             throw closure_3;
-          } else if (2 === tmp8) {
+          } else if (2 === c5) {
             c4 = 1;
-            closure_129_1 = closure_3;
-            const obj7 = { tags: { source: "NativeCheckoutStore_recreateOrder" }, extra: null };
+            closure_1 = closure_3;
+            const obj6 = { tags: { source: "NativeCheckoutStore_recreateOrder" }, extra: obj7 };
+            const captureBillingException = closure_0(runPatchOrderLineItems[12]).captureBillingException;
+            const tmp20 = closure_0(runPatchOrderLineItems[12]);
             const orderRecord = closure_130_1().orderRecord;
             let id;
+            const tmp21 = closure_1;
             if (orderRecord != null) {
               id = orderRecord.id;
             }
-            const obj8 = { orderId: id };
-            obj7.extra = obj8;
-            const result = closure_0(runPatchOrderLineItems[11]).captureBillingException(closure_129_1, obj7);
-            const obj3 = closure_0(runPatchOrderLineItems[11]);
+            obj7 = { orderId: id };
+            const result = captureBillingException(tmp21, obj6);
             c5 = 4;
             c6 = 1;
-            const obj9 = { value: closure_0(runPatchOrderLineItems[12]).showCheckoutOrderErrorModal(() => c4(closure_1_0), c6), done: false };
-            return obj9;
+            const obj8 = { value: obj5.showCheckoutOrderErrorModal(() => c4(closure_1_0), c6), done: false };
+            obj5 = closure_0(runPatchOrderLineItems[13]);
+            return obj8;
           } else {
-            if (3 === tmp8) {
+            if (3 === c5) {
               if (arg0 === 1) {
                 c6 = 3;
                 throw value;
@@ -549,8 +581,8 @@ export const createNativeStore = function createNativeStore(arg0) {
                 c4 = 0;
                 closure_130_0({ isCreateOrderLoading: false });
                 c6 = 3;
-                const obj10 = { value, done: true };
-                return obj10;
+                const obj9 = { value, done: true };
+                return obj9;
               } else {
                 c4 = 1;
               }
@@ -561,51 +593,44 @@ export const createNativeStore = function createNativeStore(arg0) {
               c4 = 0;
               closure_130_0({ isCreateOrderLoading: false });
               c6 = 3;
-              const obj = { value, done: true };
+              obj = { value, done: true };
               return obj;
             }
             c4 = 0;
             closure_130_0({ isCreateOrderLoading: false });
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
-        } catch (tmp42) {
-          closure_3 = tmp42;
-          if (tmp5 === c4) {
-            c6 = tmp3;
-            throw tmp42;
-          } else if (tmp2 === tmp44) {
-            c5 = tmp2;
+        } catch (tmp39) {
+          closure_3 = tmp39;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp39;
+          } else if (1 === tmp41) {
+            c5 = 1;
           } else {
-            c5 = tmp;
+            c5 = 2;
           }
         }
       }
     });
-    obj.recreateOrder = function() {
-      const self = this;
-      const apply = closure_9.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    };
-    closure_8 = analyticsFields(function*(arg0, value) {
+    let closure_8 = _asyncToGenerator(async (arg0, value) => {
+      let obj5;
+      let obj7;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp7 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
+        let c3;
         try {
           c5 = 2;
           if (0 === c4) {
@@ -614,41 +639,43 @@ export const createNativeStore = function createNativeStore(arg0) {
               throw value;
             } else if (arg0 === 2) {
               c5 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              const obj3 = { value, done: true };
+              return obj3;
             } else {
-              closure_1 = tmp4;
-              closure_0 = tmp8;
+              closure_1 = tmp;
+              closure_0 = tmp4;
               c3 = 2;
               closure_0({ isCreateOrderLoading: true });
               c4 = 3;
               c5 = 1;
-              const obj5 = { value: runRevertOrderToDraft(), done: false };
-              return obj5;
+              const obj4 = { value: runRevertOrderToDraft(), done: false };
+              return obj4;
             }
-          } else if (1 === tmp8) {
+          } else if (1 === c4) {
             c3 = 0;
             closure_129_0({ isCreateOrderLoading: false });
             throw closure_2;
-          } else if (2 === tmp8) {
+          } else if (2 === c4) {
             c3 = 1;
-            closure_128_0 = closure_2;
-            const obj7 = { tags: { source: "NativeCheckoutStore_revertOrderToDraft" }, extra: null };
+            closure_0 = closure_2;
+            const obj6 = { tags: { source: "NativeCheckoutStore_revertOrderToDraft" }, extra: obj7 };
+            const captureBillingException = closure_0(runPatchOrderLineItems[12]).captureBillingException;
+            const tmp20 = closure_0(runPatchOrderLineItems[12]);
             const orderRecord = closure_129_1().orderRecord;
             let id;
+            const tmp21 = closure_0;
             if (orderRecord != null) {
               id = orderRecord.id;
             }
-            const obj8 = { orderId: id };
-            obj7.extra = obj8;
-            const result = closure_0(runPatchOrderLineItems[11]).captureBillingException(closure_128_0, obj7);
-            const obj3 = closure_0(runPatchOrderLineItems[11]);
+            obj7 = { orderId: id };
+            const result = captureBillingException(tmp21, obj6);
             c4 = 4;
             c5 = 1;
-            const obj9 = { value: closure_0(runPatchOrderLineItems[12]).showCheckoutOrderErrorModal(() => closure_1_6(), closure_1_6), done: false };
-            return obj9;
+            const obj8 = { value: obj5.showCheckoutOrderErrorModal(() => closure_1_6(), closure_1_6), done: false };
+            obj5 = closure_0(runPatchOrderLineItems[13]);
+            return obj8;
           } else {
-            if (3 === tmp8) {
+            if (3 === c4) {
               if (arg0 === 1) {
                 c5 = 3;
                 throw value;
@@ -656,8 +683,8 @@ export const createNativeStore = function createNativeStore(arg0) {
                 c3 = 0;
                 closure_129_0({ isCreateOrderLoading: false });
                 c5 = 3;
-                const obj10 = { value, done: true };
-                return obj10;
+                const obj9 = { value, done: true };
+                return obj9;
               } else {
                 c3 = 1;
               }
@@ -668,54 +695,28 @@ export const createNativeStore = function createNativeStore(arg0) {
               c3 = 0;
               closure_129_0({ isCreateOrderLoading: false });
               c5 = 3;
-              const obj = { value, done: true };
+              obj = { value, done: true };
               return obj;
             }
             c3 = 0;
             closure_129_0({ isCreateOrderLoading: false });
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
-        } catch (tmp41) {
-          closure_2 = tmp41;
-          if (tmp5 === c3) {
-            c5 = tmp3;
-            throw tmp41;
-          } else if (tmp2 === tmp43) {
-            c4 = tmp2;
+        } catch (tmp38) {
+          closure_2 = tmp38;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp38;
+          } else if (1 === tmp40) {
+            c4 = 1;
           } else {
-            c4 = tmp;
+            c4 = 2;
           }
         }
       }
     });
-    obj.revertOrderToDraft = function() {
-      const self = this;
-      const apply = closure_8.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    };
-    obj.checkoutInitParameters = checkoutInitParameters;
-    obj.contextMetadata = runPatchOrderLineItems;
-    obj.analyticsFields = analyticsFields;
-    obj.getPurchaseInFlight = function getPurchaseInFlight() {
-      return closure_1().purchaseInFlight;
-    };
-    obj.setPurchaseInFlight = function setPurchaseInFlight(purchaseInFlight) {
-      return closure_0({ purchaseInFlight });
-    };
-    obj.orderRequired = orderRequired;
-    obj.setCheckoutSucceeded = function setCheckoutSucceeded() {
-      return closure_0({ checkoutSucceeded: true });
-    };
-    obj.setCheckoutFailed = function setCheckoutFailed() {
-      return closure_0({ checkoutFailed: true });
-    };
-    obj.onOrderRetryCancellation = runRevertOrderToDraft;
     return obj;
-  }, _mod4411.shallow);
+  }, _slicedToArray2.shallow);
 };
+export const NativeCheckoutStoreContext = first;

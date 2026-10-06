@@ -1,13 +1,13 @@
-// Module ID: 4753
-// Function ID: 4754
-// Name: NativeBrowserManagerModule
+// Module ID: 4799
+// Function ID: 4800
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 4753 (NativeBrowserManagerModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 4799 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeBrowserManagerModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeBrowserManagerModule.tsx");
 

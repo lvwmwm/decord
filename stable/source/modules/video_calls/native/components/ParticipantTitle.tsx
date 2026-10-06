@@ -1,27 +1,77 @@
-// Module ID: 10362
-// Function ID: 10363
+// Module ID: 9522
+// Function ID: 9523
 // Name: ParticipantTitle
-// Dependencies: [19, 21, 4788, 576, 1177, 10344, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 9504, 1189, 2]
 
-// Module 10362 (ParticipantTitle)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import getParticipantTitleDefault from "getParticipantTitle" /* 10344 */;
-import noop from "module_19" /* 19 */;
+// Module 9522 (ParticipantTitle)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import getParticipantTitleDefault from "getParticipantTitle" /* 9504 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { usernameText: { fontSize: 14, color: nativeDefault.colors.WHITE } };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+let tmp;
+const native = tmp(1189);
+const jsx = Fragment.jsx;
+let obj = { usernameText: obj2 };
+obj2 = { fontSize: 14, color: nativeDefault.colors.WHITE };
+let closure_4 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channel;
+  let participant;
+  let style;
+  const obj = react2;
+  const cResult = obj.c(9);
+  ({ channel, participant, style } = arg0);
+  const tmp4 = closure_4();
+  if (cResult[0] === style) {
+    let tmp5;
+    if (cResult[1] === tmp4.usernameText) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === channel) {
+      let tmp6;
+      if (cResult[4] === participant) {
+        tmp6 = cResult[5];
+      }
+      if (cResult[6] === tmp5) {
+        let tmp9;
+        if (cResult[7] === tmp6) {
+          tmp9 = cResult[8];
+        }
+        return tmp9;
+      }
+      const tmp11 = jsx(native.LegacyText, { style: tmp5, numberOfLines: 1, children: tmp6 });
+      cResult[6] = tmp5;
+      cResult[7] = tmp6;
+      cResult[8] = tmp11;
+      tmp9 = tmp11;
+    }
+    const tmp8 = getParticipantTitleDefault(channel, participant);
+    cResult[3] = channel;
+    cResult[4] = participant;
+    cResult[5] = tmp8;
+    tmp6 = tmp8;
+  }
+  const items = [tmp4.usernameText, style];
+  cResult[0] = style;
+  cResult[1] = tmp4.usernameText;
+  cResult[2] = items;
+  tmp5 = items;
+}) : ((arg0) => {
+  let channel;
+  let participant;
+  let style;
+  ({ channel, participant, style } = arg0);
+  const items = [closure_4().usernameText, style];
+  closure_4();
+  const LegacyText = native.LegacyText;
+  return <LegacyText style={items} numberOfLines={1}>{getParticipantTitleDefault(channel, participant)}</LegacyText>;
+});
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ParticipantTitle.tsx");
 
-export default function ParticipantTitle(arg0) {
-  ({ channel, participant, style } = arg0);
-  const obj = { style: null, numberOfLines: 1, children: getParticipantTitleDefault(channel, participant) };
-  const items = [closure_4().usernameText, style];
-  obj.style = items;
-  return jsx(native.LegacyText, { style: null, numberOfLines: 1, children: getParticipantTitleDefault(channel, participant) });
-};
+export default tmp3;

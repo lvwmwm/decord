@@ -1,33 +1,37 @@
-// Module ID: 5304
-// Function ID: 5305
+// Module ID: 5369
+// Function ID: 5370
 // Name: getVibegrationsChannelIcon
-// Dependencies: [5305, 5310, 5311, 5276, 5312, 2]
+// Dependencies: [5370, 5375, 5376, 5341, 5377, 2]
 // Exports: getVibegrationsChannelIconComponent, getVibegrationsChannelIconSource
 
-// Module 5304 (getVibegrationsChannelIcon)
-import _modDef5276 from "module_5276" /* 5276 */;
-import vibegrationsChannelIconKind from "vibegrationsChannelIconKind" /* 5305 */;
-import _modDef5312 from "module_5312" /* 5312 */;
+// Module 5369 (getVibegrationsChannelIcon)
+import AssetRegistryDefault from "AssetRegistry" /* 5341 */;
+import vibegrationsChannelIconKind from "vibegrationsChannelIconKind" /* 5370 */;
+import AppsIcon from "AppsIcon" /* 5375 */;
+import AppsLockIcon from "AppsLockIcon" /* 5376 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 5377 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/native/getVibegrationsChannelIcon.tsx");
 
 export const getVibegrationsChannelIconComponent = function getVibegrationsChannelIconComponent(channel, getChannelIconComponent) {
-  const result = vibegrationsChannelIconKind.vibegrationsChannelIconKind(channel, getChannelIconComponent);
+  const obj = vibegrationsChannelIconKind;
+  const result = obj.vibegrationsChannelIconKind(channel, getChannelIconComponent);
   if ("apps" === result) {
-    return tmp(5310).AppsIcon;
+    return AppsIcon.AppsIcon;
   } else if ("apps-lock" === result) {
-    return tmp(5311).AppsLockIcon;
+    return AppsLockIcon.AppsLockIcon;
   } else {
     return null;
   }
 };
 export const getVibegrationsChannelIconSource = function getVibegrationsChannelIconSource(channel, getChannelIcon) {
-  const result = vibegrationsChannelIconKind.vibegrationsChannelIconKind(channel, getChannelIcon);
+  const obj = vibegrationsChannelIconKind;
+  const result = obj.vibegrationsChannelIconKind(channel, getChannelIcon);
   if ("apps" === result) {
-    return _modDef5276;
+    return AssetRegistryDefault;
   } else if ("apps-lock" === result) {
-    return _modDef5312;
+    return AssetRegistryDefault2;
   } else {
     return null;
   }

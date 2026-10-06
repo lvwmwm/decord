@@ -1,31 +1,38 @@
-// Module ID: 15154
-// Function ID: 15155
+// Module ID: 14397
+// Function ID: 14398
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4788, 576, 15146, 15147, 4483, 4784, 15155, 1115, 2482, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 14389, 14390, 4528, 4833, 1127, 2490, 14398, 2]
 
-// Module 15154 (FamilyCenterParentalConsentNotice)
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15155 */;
-import noop from "module_19" /* 19 */;
+// Module 14397 (FamilyCenterParentalConsentNotice)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 14398 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { container: { marginTop: nativeDefault.space.PX_16 }, link: { textDecorationLine: "underline" } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalConsentNotice.tsx");
-
-export default function FamilyCenterParentalConsentNotice() {
-  const tmp = closure_5();
-  _require = tmp;
-  const isParentalConsentBannerActive = require("useIsParentalConsentBannerActive").useIsParentalConsentBannerActive();
-  const obj = require("useIsParentalConsentBannerActive");
-  const parentalConsentWarning = require("useParentalConsentWarning").useParentalConsentWarning();
+let obj2;
+const jsx = Fragment.jsx;
+let c5 = "https://support.discord.com/hc/articles/14155060633623";
+let obj = { container: obj2, link: { textDecorationLine: "underline" } };
+obj2 = { marginTop: nativeDefault.space.PX_16 };
+let closure_6 = createStyles.createStyles(obj);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let link;
+  let onPress;
+  let obj = require("react");
+  const cResult = obj.c(9);
+  const tmp4 = closure_6();
+  _require = tmp4;
+  const obj2 = require("useIsParentalConsentBannerActive");
+  const isParentalConsentBannerActive = obj2.useIsParentalConsentBannerActive();
+  const obj3 = require("useParentalConsentWarning");
+  const parentalConsentWarning = obj3.useParentalConsentWarning();
   let daysRemaining;
   if (parentalConsentWarning != null) {
     daysRemaining = parentalConsentWarning.daysRemaining;
@@ -33,8 +40,86 @@ export default function FamilyCenterParentalConsentNotice() {
   if (daysRemaining == null) {
     daysRemaining = null;
   }
-  importDefault = noop.useCallback(() => {
-    onPress(dependencyMap[6]).openURL("https://support.discord.com/hc/articles/14155060633623");
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      const obj = first(dependencyMap[8]);
+      obj.openURL(closure_1_5);
+    };
+    cResult[0] = fn;
+    onPress = fn;
+  } else {
+    onPress = cResult[0];
+  }
+  if (isParentalConsentBannerActive) {
+    if (null != daysRemaining) {
+      if (daysRemaining >= 0) {
+        let tmp9;
+        let formatResult;
+        if (cResult[1] !== tmp4.link) {
+          const fn2 = function y(children, arg1) {
+            return jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress, children }, arg1);
+          };
+          cResult[1] = tmp4.link;
+          cResult[2] = fn2;
+          tmp9 = fn2;
+        } else {
+          tmp9 = cResult[2];
+        }
+        if (cResult[3] === daysRemaining) {
+          let tmp10;
+          if (cResult[4] === tmp9) {
+            tmp10 = cResult[5];
+          }
+          if (cResult[6] === tmp4.container) {
+            let tmp14;
+            if (cResult[7] === tmp10) {
+              tmp14 = cResult[8];
+            }
+            return tmp14;
+          }
+          const tmp17 = jsx(onPress(14398), { style: tmp4.container, text: tmp10 });
+          cResult[6] = tmp4.container;
+          cResult[7] = tmp10;
+          cResult[8] = tmp17;
+          tmp14 = tmp17;
+        }
+        if (0 === daysRemaining) {
+          const intl2 = tmp(1127).intl;
+          const obj5 = { learnMoreHook: tmp9 };
+          formatResult = intl2.format(onPress(2490).S5kmfO, obj5);
+        } else {
+          const intl = tmp(1127).intl;
+          const obj6 = { count: daysRemaining, learnMoreHook: tmp9 };
+          formatResult = intl.format(onPress(2490)["5jm+T3"], obj6);
+        }
+        cResult[3] = daysRemaining;
+        cResult[4] = tmp9;
+        cResult[5] = formatResult;
+        tmp10 = formatResult;
+      }
+    }
+  }
+  return null;
+}) : (() => {
+  let formatResult;
+  let link;
+  let onPress;
+  const tmp = closure_6();
+  _require = tmp;
+  let obj = require("useIsParentalConsentBannerActive");
+  const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
+  const obj2 = require("useParentalConsentWarning");
+  const parentalConsentWarning = obj2.useParentalConsentWarning();
+  let daysRemaining;
+  if (parentalConsentWarning != null) {
+    daysRemaining = parentalConsentWarning.daysRemaining;
+  }
+  if (daysRemaining == null) {
+    daysRemaining = null;
+  }
+  importDefault = react.useCallback(() => {
+    const obj = onPress(dependencyMap[8]);
+    obj.openURL(closure_1_5);
   }, []);
   if (isParentalConsentBannerActive) {
     if (null != daysRemaining) {
@@ -42,20 +127,24 @@ export default function FamilyCenterParentalConsentNotice() {
         function learnMoreHook(children, arg1) {
           return jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress, children }, arg1);
         }
-        const obj3 = { style: tmp.container, text: null };
+        const obj3 = { style: tmp.container, text: formatResult };
+        const tmp10 = FamilyCenterInlineWarningNoticeDefault;
+        const tmp8 = jsx;
         if (0 === daysRemaining) {
-          const intl2 = tmp2(1115).intl;
+          const intl2 = tmp2(1127).intl;
           const obj4 = { learnMoreHook };
-          let formatResult = intl2.format(tmp9(2482).S5kmfO, obj4);
+          formatResult = intl2.format(tmp9(2490).S5kmfO, obj4);
         } else {
-          const intl = tmp2(1115).intl;
+          const intl = tmp2(1127).intl;
           const obj5 = { count: daysRemaining, learnMoreHook };
-          formatResult = intl.format(tmp9(2482)["5jm+T3"], obj5);
+          formatResult = intl.format(tmp9(2490)["5jm+T3"], obj5);
         }
-        obj3.text = formatResult;
-        return jsx(FamilyCenterInlineWarningNoticeDefault, { style: tmp.container, text: null });
+        return tmp8(tmp10, obj3);
       }
     }
   }
   return null;
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalConsentNotice.tsx");
+
+export default tmp2;

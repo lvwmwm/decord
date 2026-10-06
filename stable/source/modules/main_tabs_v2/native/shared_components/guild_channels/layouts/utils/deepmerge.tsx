@@ -1,83 +1,86 @@
-// Module ID: 10418
-// Function ID: 10419
+// Module ID: 11444
+// Function ID: 11445
 // Name: deepmerge
 // Dependencies: [2]
 
-// Module 10418 (deepmerge)
+// Module 11444 (deepmerge)
 import size from "module_2" /* 2 */;
+
+let set;
 
 function merge() {
   let items = [...arguments];
-  return items.reduce((acc, item) => {
+  return items.reduce(function(acc, item) {
     if (Array.isArray(item)) {
       const _TypeError = TypeError;
+      let self = this;
+      let self2 = this;
       const typeError = new TypeError("Arguments provided to ts-deepmerge must be objects, not arrays.");
+      const tmp3 = typeError;
       throw typeError;
     } else {
       let _Object = Object;
       const keys = Object.keys(item);
-      item = keys.forEach((item) => {
+      item = keys.forEach(function(item) {
         const items = ["__proto__", "constructor", "prototype"];
         if (!items.includes(item)) {
-          let tmp = globalThis;
           const _Array = Array;
           if (Array.isArray(acc[item])) {
             const _Array2 = Array;
-            let tmp3 = item;
             if (Array.isArray(item[item])) {
+              let fromResult;
               if (merge.options.mergeArrays) {
-                const _Array3 = tmp.Array;
-                tmp = new.target;
-                const set = new tmp.Set(tmp2[item].concat(tmp3[item]));
-                tmp3 = set;
-                let fromResult = _Array3.from(set);
+                const _Array3 = Array;
+                const _Set = Set;
+                const self = this;
+                const self2 = this;
+                const obj = acc[item];
+                set = new Set(obj.concat(item[item]));
+                fromResult = from(set);
               } else {
                 fromResult = tmp3[item];
               }
-              tmp2[item] = fromResult;
+              acc[item] = fromResult;
             }
           }
           let flag = false;
           if (typeof acc[item] === "object") {
             flag = false;
-            if (null !== tmp4) {
+            if (null !== acc[item]) {
               const _Object = Object;
               if (typeof Object.getPrototypeOf === "function") {
                 const _Object2 = Object;
                 const prototypeOf = Object.getPrototypeOf(tmp4);
                 const _Object3 = Object;
                 flag = prototypeOf === Object.prototype || null === prototypeOf;
-                const tmp6 = prototypeOf === Object.prototype || null === prototypeOf;
               } else {
                 const _Object7 = Object;
-                const call = toString.call;
-                flag = "[object Object]" === (typeof call === "unknown" ? toString() : call(tmp4));
+                flag = "[object Object]" === toString.call(tmp4);
               }
             }
           }
           if (flag) {
             let flag2 = false;
+            const tmp7 = item;
             if (typeof item[item] === "object") {
               flag2 = false;
-              if (null !== tmp8) {
+              if (null !== item[item]) {
                 const _Object4 = Object;
                 if (typeof Object.getPrototypeOf === "function") {
                   const _Object5 = Object;
                   const prototypeOf1 = Object.getPrototypeOf(tmp8);
                   const _Object6 = Object;
                   flag2 = prototypeOf1 === Object.prototype || null === prototypeOf1;
-                  const tmp10 = prototypeOf1 === Object.prototype || null === prototypeOf1;
                 } else {
                   const _Object8 = Object;
-                  const call2 = toString2.call;
-                  flag2 = "[object Object]" === (typeof call2 === "unknown" ? toString2() : call2(tmp8));
+                  const toString2 = Object.prototype.toString;
+                  flag2 = "[object Object]" === toString2.call(tmp8);
                 }
               }
             }
             if (flag2) {
-              tmp2[item] = merge(tmp2[item], tmp7[item]);
+              acc[item] = merge(acc[item], tmp7[item]);
             }
-            tmp7 = item;
           }
           acc[item] = item[item];
         }

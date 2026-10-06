@@ -1,11 +1,13 @@
-// Module ID: 10994
-// Function ID: 10995
+// Module ID: 10200
+// Function ID: 10201
 // Name: selectActiveMarketingComponent
 // Dependencies: [2]
 // Exports: default
 
-// Module 10994 (selectActiveMarketingComponent)
+// Module 10200 (selectActiveMarketingComponent)
 import size from "module_2" /* 2 */;
+
+let isTimed;
 
 function comparePriorityDescending(effectiveStartDate, effectiveStartDate2) {
   effectiveStartDate = effectiveStartDate.effectiveStartDate;
@@ -65,7 +67,7 @@ function comparePriorityDescending(effectiveStartDate, effectiveStartDate2) {
 const result = size.fileFinishedImporting("modules/premium/promotions/selectActiveMarketingComponent.tsx");
 
 export default function selectActiveMarketingComponent(arr, arg1) {
-  closure_0 = arg1;
+  let closure_0 = arg1;
   let fn = arg2;
   if (arg2 === undefined) {
     fn = function f() {
@@ -73,6 +75,8 @@ export default function selectActiveMarketingComponent(arr, arg1) {
     };
   }
   const found = arr.filter((isTimed) => {
+    let effectiveEndDate;
+    let effectiveStartDate;
     ({ effectiveStartDate, effectiveEndDate } = isTimed);
     let tmp = null != effectiveStartDate;
     if (tmp) {
@@ -98,15 +102,17 @@ export default function selectActiveMarketingComponent(arr, arg1) {
     }
     return tmp5;
   });
-  let tmp = null;
+  let tmp2 = null;
   if (0 !== found.length) {
     const items = [];
-    HermesBuiltin.arraySpread(found, 0);
+    let tmp3 = items;
+    HermesBuiltin.arraySpread(items, found, 0);
+    let tmp6 = comparePriorityDescending;
     let first = items.sort(comparePriorityDescending)[0];
     if (first == null) {
       first = null;
     }
-    tmp = first;
+    tmp2 = first;
   }
-  return tmp;
+  return tmp2;
 };

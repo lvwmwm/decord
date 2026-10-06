@@ -1,34 +1,35 @@
-// Module ID: 18313
-// Function ID: 18314
+// Module ID: 17680
+// Function ID: 17681
 // Name: AVErrorVideoStreamReceiverReadyTimeoutNoStream
-// Dependencies: [502, 9649, 9718, 2]
+// Dependencies: [502, 8801, 8869, 2]
 
-// Module 18313 (AVErrorVideoStreamReceiverReadyTimeoutNoStream)
-import AVError from "AVError" /* 9718 */;
+// Module 17680 (AVErrorVideoStreamReceiverReadyTimeoutNoStream)
+import AVError from "AVError" /* 8869 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VideoStreamStore from "VideoStreamStore" /* 9649 */;
+import VideoStreamStore from "VideoStreamStore" /* 8801 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamReceiverReadyTimeoutNoStream.tsx");
-
-export const AVErrorVideoStreamReceiverReadyTimeoutNoStreamDefinition = {
+let obj = {
   getActiveErrors() {
+    let id;
     const values = Object.values(VideoStreamStore.getTimedoutVideos());
     const found = values.filter((item) => {
+      let userId;
+      let videoStreamId;
       ({ userId, videoStreamId } = item);
-      let tmp = id.getId() !== userId;
-      if (tmp) {
-        tmp = null == videoStreamId;
-      }
+      const tmp = id.getId() !== userId && null == videoStreamId;
       return tmp;
     });
     return found.map((item) => {
+      const obj = { type: AVError.AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM };
       const merged = Object.assign(item);
-      return { type: AVError.AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM };
+      return obj;
     });
   },
   makeErrorContextKey(mediaContext) {
     return "" + mediaContext.mediaContext + ":" + mediaContext.userId;
   }
 };
+const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamReceiverReadyTimeoutNoStream.tsx");
+
+export const AVErrorVideoStreamReceiverReadyTimeoutNoStreamDefinition = obj;

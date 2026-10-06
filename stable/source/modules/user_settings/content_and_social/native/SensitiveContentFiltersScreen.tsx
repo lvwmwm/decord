@@ -1,52 +1,100 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 14336
+// Function ID: 14337
 // Name: SensitiveContentFiltersScreen
-// Dependencies: [19, 8265, 21, 1115, 15094, 11754, 14992, 2]
-// Exports: default
+// Dependencies: [19, 7421, 21, 1127, 558, 576, 14337, 10874, 14235, 2]
 
-// Module 15093 (SensitiveContentFiltersScreen)
-import util from "util" /* 1115 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
-import SettingLayoutDefault from "SettingLayout" /* 14992 */;
-import SettingsScreenNotices from "SettingsScreenNotices" /* 15094 */;
-import noop from "module_19" /* 19 */;
+// Module 14336 (SensitiveContentFiltersScreen)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl5 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingLayoutDefault from "SettingLayout" /* 14235 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 14337 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const SettingsScreenNoticesDefault = SettingsScreenNotices;
-
-require = fn;
-function SensitiveContentFiltersNotices() {
-  const obj = { isListHeader: true, screen: SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS };
-  return jsx(SettingsScreenNoticesDefault, { isListHeader: true, screen: SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS });
+let tmp;
+const SettingsScreenNotices = tmp(14337);
+function getContentCategory() {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let items2;
+  const obj = { label: intl.string(intl5.t.GYpoAq), settings: items, subLabel: intl2.string(intl5.t.Wnojv1) };
+  intl = intl5.intl;
+  items = [, , ];
+  ({ EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1], EXPLICIT_MEDIA_FILTERS_GUILDS: arr[2] } = MobileUserSettings);
+  intl2 = intl5.intl;
+  const items1 = [obj, ];
+  const obj2 = { label: intl3.string(intl5.t["16/3Bi"]), settings: items2, subLabel: intl4.string(intl5.t.XgH9eh) };
+  intl3 = intl5.intl;
+  items2 = [, , ];
+  ({ GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1], GORE_MEDIA_FILTERS_GUILDS: arr3[2] } = MobileUserSettings);
+  intl4 = intl5.intl;
+  items1[1] = obj2;
+  return items1;
 }
-const MobileUserSettings = fn(8265).MobileUserSettings;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersScreen.tsx");
-
-export default function UserSettingsSensitiveContentFilters() {
-  const node = noop.useMemo(() => {
-    const obj2 = { sections: null, ListHeaderComponent: null };
-    const obj3 = { label: null, settings: null, subLabel: null };
-    const intl = util.intl;
-    obj3.label = intl.string(util.t.GYpoAq);
-    const items = [, , ];
-    ({ EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1], EXPLICIT_MEDIA_FILTERS_GUILDS: arr[2] } = MobileUserSettings);
-    obj3.settings = items;
-    const intl2 = util.intl;
-    obj3.subLabel = intl2.string(util.t.Wnojv1);
-    const items1 = [obj3, ];
-    const obj4 = { label: null, settings: null, subLabel: null };
-    const intl3 = util.intl;
-    obj4.label = intl3.string(util.t["16/3Bi"]);
-    const items2 = [, , ];
-    ({ GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1], GORE_MEDIA_FILTERS_GUILDS: arr3[2] } = MobileUserSettings);
-    obj4.settings = items2;
-    const intl4 = util.intl;
-    obj4.subLabel = intl4.string(util.t.XgH9eh);
-    items1[1] = obj4;
-    obj2.sections = items1;
-    obj2.ListHeaderComponent = ListHeaderComponent;
-    return SettingBuilders.createList(obj2);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const ListHeaderComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    SettingsScreenNoticesDefault;
+    const tmp8 = <tmp7 isListHeader screen={SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS} />;
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  SettingsScreenNoticesDefault;
+  return <tmp isListHeader screen={SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS} />;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  let tmp12;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { sections: items, ListHeaderComponent };
+    const createList = tmp2(10874).createList;
+    items = [];
+    SettingBuilders;
+    HermesBuiltin.arraySpread(items, getContentCategory(), 0);
+    const list = createList(obj2);
+    cResult[0] = list;
+    first = list;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp15 = jsx(SettingLayoutDefault, { node: first });
+    cResult[1] = tmp15;
+    tmp12 = tmp15;
+  } else {
+    tmp12 = cResult[1];
+  }
+  return tmp12;
+}) : (() => {
+  const node = react.useMemo(() => {
+    let items;
+    const obj2 = { sections: items, ListHeaderComponent };
+    items = [...closure_1_6()];
+    const obj = SettingBuilders;
+    return obj.createList(obj2);
   }, []);
   return jsx(SettingLayoutDefault, { node });
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersScreen.tsx");
+
+export default tmp2;

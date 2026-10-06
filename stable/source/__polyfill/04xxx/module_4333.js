@@ -1,47 +1,118 @@
 // Module ID: 4333
 // Function ID: 4334
-// Dependencies: [2117]
+// Dependencies: [3921, 4334, 3925, 3922]
+// Exports: default
 
 // Module 4333
-import module_2117 from "module_2117" /* 2117 */;
+import toDate_mod from "toDate" /* 3921 */;
+import setMonth_mod from "setMonth" /* 4334 */;
+import toInteger_mod from "toInteger" /* 3925 */;
+import requiredArgs_mod from "requiredArgs" /* 3922 */;
 
-if (!module_2117) {
-  const obj2 = { default: module_2117 };
-  let obj = obj2;
-} else {
-  obj = module_2117;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+function _typeof(arg0) {
+  if (typeof Symbol === "function") {
+    let _Symbol = Symbol;
+    if (typeof Symbol.iterator === "symbol") {
+      _typeof = function _typeof(arg0) {
+        return typeof arg0;
+      };
+    }
+    let tmp = arg0;
+    return _typeof(arg0);
+  }
+  _typeof = function _typeof(arg0) {
+    const tmp = arg0;
+    if (tmp) {
+      const _Symbol = Symbol;
+      if (typeof Symbol === "function") {
+        let str;
+        const _Symbol3 = Symbol;
+        if (arg0.constructor === Symbol) {
+          const _Symbol2 = Symbol;
+          str = "symbol";
+        }
+        return str;
+      }
+    }
+    str = typeof arg0;
+  };
 }
-const date = {
-  ordinalNumber(arg0, unit) {
-    const str = Number(arg0);
-    unit = undefined;
-    if (null != unit) {
-      unit = unit.unit;
-    }
-    if ("date" === unit) {
-      return str.toString() + "\u65E5";
-    } else if ("hour" === unit) {
-      return str.toString() + "\u65F6";
-    } else if ("minute" === unit) {
-      return str.toString() + "\u5206";
-    } else if ("second" === unit) {
-      return str.toString() + "\u79D2";
-    } else {
-      return "\u7B2C " + str.toString();
-    }
-  },
-  era: obj.default({ values: { narrow: ["\u524D", "\u516C\u5143"], abbreviated: ["\u524D", "\u516C\u5143"], wide: ["\u516C\u5143\u524D", "\u516C\u5143"] }, defaultWidth: "wide" }),
-  quarter: obj.default({
-    values: { narrow: ["1", "2", "3", "4"], abbreviated: ["\u7B2C\u4E00\u5B63", "\u7B2C\u4E8C\u5B63", "\u7B2C\u4E09\u5B63", "\u7B2C\u56DB\u5B63"], wide: ["\u7B2C\u4E00\u5B63\u5EA6", "\u7B2C\u4E8C\u5B63\u5EA6", "\u7B2C\u4E09\u5B63\u5EA6", "\u7B2C\u56DB\u5B63\u5EA6"] },
-    defaultWidth: "wide",
-    argumentCallback(arg0) {
-      return arg0 - 1;
-    }
-  }),
-  month: obj.default({ values: { narrow: ["\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u5341\u4E00", "\u5341\u4E8C"], abbreviated: ["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], wide: ["\u4E00\u6708", "\u4E8C\u6708", "\u4E09\u6708", "\u56DB\u6708", "\u4E94\u6708", "\u516D\u6708", "\u4E03\u6708", "\u516B\u6708", "\u4E5D\u6708", "\u5341\u6708", "\u5341\u4E00\u6708", "\u5341\u4E8C\u6708"] }, defaultWidth: "wide" }),
-  day: obj.default({ values: { narrow: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D"], short: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D"], abbreviated: ["\u5468\u65E5", "\u5468\u4E00", "\u5468\u4E8C", "\u5468\u4E09", "\u5468\u56DB", "\u5468\u4E94", "\u5468\u516D"], wide: ["\u661F\u671F\u65E5", "\u661F\u671F\u4E00", "\u661F\u671F\u4E8C", "\u661F\u671F\u4E09", "\u661F\u671F\u56DB", "\u661F\u671F\u4E94", "\u661F\u671F\u516D"] }, defaultWidth: "wide" }),
-  dayPeriod: obj.default({ values: { narrow: { am: "\u4E0A", pm: "\u4E0B", midnight: "\u51CC\u6668", noon: "\u5348", morning: "\u65E9", afternoon: "\u4E0B\u5348", evening: "\u665A", night: "\u591C" }, abbreviated: { am: "\u4E0A\u5348", pm: "\u4E0B\u5348", midnight: "\u51CC\u6668", noon: "\u4E2D\u5348", morning: "\u65E9\u6668", afternoon: "\u4E2D\u5348", evening: "\u665A\u4E0A", night: "\u591C\u95F4" }, wide: { am: "\u4E0A\u5348", pm: "\u4E0B\u5348", midnight: "\u51CC\u6668", noon: "\u4E2D\u5348", morning: "\u65E9\u6668", afternoon: "\u4E2D\u5348", evening: "\u665A\u4E0A", night: "\u591C\u95F4" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "\u4E0A", pm: "\u4E0B", midnight: "\u51CC\u6668", noon: "\u5348", morning: "\u65E9", afternoon: "\u4E0B\u5348", evening: "\u665A", night: "\u591C" }, abbreviated: { am: "\u4E0A\u5348", pm: "\u4E0B\u5348", midnight: "\u51CC\u6668", noon: "\u4E2D\u5348", morning: "\u65E9\u6668", afternoon: "\u4E2D\u5348", evening: "\u665A\u4E0A", night: "\u591C\u95F4" }, wide: { am: "\u4E0A\u5348", pm: "\u4E0B\u5348", midnight: "\u51CC\u6668", noon: "\u4E2D\u5348", morning: "\u65E9\u6668", afternoon: "\u4E2D\u5348", evening: "\u665A\u4E0A", night: "\u591C\u95F4" } }, defaultFormattingWidth: "wide" })
-};
+let toDate = toDate_mod;
+if (!toDate) {
+  tmp3 = { default: toDate };
+  const obj = { default: toDate };
+} else {
+  tmp3 = toDate;
+}
+toDate = tmp3;
+let setMonth = setMonth_mod;
+if (!setMonth) {
+  tmp5 = { default: setMonth };
+  const obj2 = { default: setMonth };
+} else {
+  tmp5 = setMonth;
+}
+setMonth = tmp5;
+let toInteger = toInteger_mod;
+if (!toInteger) {
+  tmp7 = { default: toInteger };
+  const obj3 = { default: toInteger };
+} else {
+  tmp7 = toInteger;
+}
+toInteger = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  tmp9 = { default: requiredArgs };
+  const obj4 = { default: requiredArgs };
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
 
-export default date;
-export default exports.default;
+export default function set(arg0, year) {
+  requiredArgs.default(2, arguments);
+  if ("object" === _typeof(year)) {
+    if (null !== year) {
+      const defaultResult1 = toDate.default(arg0);
+      const _isNaN = isNaN;
+      if (isNaN(defaultResult1.getTime())) {
+        const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const date = new Date(NaN);
+        return date;
+      } else {
+        if (null != year.year) {
+          defaultResult1.setFullYear(year.year);
+        }
+        let defaultResult2 = defaultResult1;
+        if (null != year.month) {
+          defaultResult2 = setMonth.default(defaultResult1, year.month);
+        }
+        if (null != year.date) {
+          defaultResult2.setDate(toInteger.default(year.date));
+        }
+        if (null != year.hours) {
+          defaultResult2.setHours(toInteger.default(year.hours));
+        }
+        if (null != year.minutes) {
+          defaultResult2.setMinutes(toInteger.default(year.minutes));
+        }
+        if (null != year.seconds) {
+          defaultResult2.setSeconds(toInteger.default(year.seconds));
+        }
+        if (null != year.milliseconds) {
+          defaultResult2.setMilliseconds(toInteger.default(year.milliseconds));
+        }
+        return defaultResult2;
+      }
+    }
+  }
+  const rangeError = new RangeError("values parameter must be an object");
+  throw rangeError;
+};

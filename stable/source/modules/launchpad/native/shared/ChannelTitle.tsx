@@ -1,51 +1,114 @@
-// Module ID: 17141
-// Function ID: 17142
+// Module ID: 16485
+// Function ID: 16486
 // Name: ChannelTitle
-// Dependencies: [19, 4970, 21, 4788, 576, 17137, 4784, 2]
+// Dependencies: [19, 5019, 21, 4837, 588, 558, 576, 16481, 4833, 2]
 
-// Module 17141 (ChannelTitle)
-import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+// Module 16485 (ChannelTitle)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16481 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const UnreadSetting = fn(4970).UnreadSetting;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-let closure_6 = createStyles.createStyleProperties({ muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT });
+let tmp;
+const Text_Text = tmp(4833);
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const jsx = Fragment.jsx;
 let obj = { muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/launchpad/native/shared/ChannelTitle.tsx");
-
-export default noop.memo(function ChannelTitle(unread) {
+let closure_6 = createStyles.createStyleProperties(obj);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let connected;
+  let first;
+  let muted;
+  let resolvedUnreadSetting;
+  let title;
+  let tmp9;
+  let unread;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ title, unread } = arg0);
+  ({ muted, resolvedUnreadSetting, connected } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = getLayoutStylesDefault();
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  const tmp7 = closure_6();
+  let unreadOrConnected = tmp7.normal;
+  if (muted) {
+    unreadOrConnected = tmp7.muted;
+  } else {
+    if (unread) {
+      unread = resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES;
+    }
+    if (!unread) {
+      unread = connected;
+    }
+    if (unread) {
+      unreadOrConnected = tmp7.unreadOrConnected;
+    }
+  }
+  if (cResult[1] !== unreadOrConnected) {
+    const obj2 = { color: unreadOrConnected, paddingRight: 4, flexShrink: 1 };
+    cResult[1] = unreadOrConnected;
+    cResult[2] = obj2;
+    tmp9 = obj2;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (title == null) {
+    title = "";
+  }
+  if (cResult[3] === tmp9) {
+    let tmp10;
+    if (cResult[4] === title) {
+      tmp10 = cResult[5];
+    }
+    return tmp10;
+  }
+  const tmp11 = jsx(Text_Text.Text, { variant: first.channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: tmp9, children: title });
+  cResult[3] = tmp9;
+  cResult[4] = title;
+  cResult[5] = tmp11;
+  tmp10 = tmp11;
+}) : ((unread) => {
+  let muted;
+  let title;
   ({ title, muted } = unread);
   unread = unread.unread;
   const resolvedUnreadSetting = unread.resolvedUnreadSetting;
   const connected = unread.connected;
+  const tmp = unread(resolvedUnreadSetting[7])();
   let tmp2 = closure_6();
   const normal = tmp2;
   const items = [unread, tmp2, connected, muted, resolvedUnreadSetting];
   const memo = connected.useMemo(() => {
     let color = normal.normal;
-    if (muted) {
+    const tmp2 = muted;
+    if (tmp2) {
       color = tmp.muted;
     } else {
-      let tmp2 = unread;
-      if (unread) {
-        tmp2 = resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES;
-      }
-      if (!tmp2) {
-        tmp2 = connected;
-      }
-      if (tmp2) {
+      const tmp3 = unread && resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES || connected;
+      if (tmp3) {
         color = tmp.unreadOrConnected;
       }
     }
     return { color, paddingRight: 4, flexShrink: 1 };
   }, items);
-  const obj = { variant: unread(resolvedUnreadSetting[5])().channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo, children: null };
+  const obj = { variant: tmp.channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo, children: title };
+  const Text = muted(resolvedUnreadSetting[8]).Text;
+  const tmp4 = jsx;
   if (title == null) {
     title = "";
   }
-  obj.children = title;
-  return jsx(muted(resolvedUnreadSetting[6]).Text, { variant: unread(resolvedUnreadSetting[5])().channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo, children: null });
-});
+  return tmp4(Text, obj);
+}));
+const result = size.fileFinishedImporting("modules/launchpad/native/shared/ChannelTitle.tsx");
+
+export default memoResult;

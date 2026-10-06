@@ -1,17 +1,28 @@
-// Module ID: 7963
-// Function ID: 7964
+// Module ID: 7112
+// Function ID: 7113
 // Name: appMessageEmbedTrackingConfig
-// Dependencies: [502, 7957, 2]
+// Dependencies: [502, 7106, 2]
 // Exports: trackingConfigWithDefaults
 
-// Module 7963 (appMessageEmbedTrackingConfig)
+// Module 7112 (appMessageEmbedTrackingConfig)
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7106 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
-const LinkType = fn(7957).LinkType;
-const size = fn(2);
+const LinkType = MessageEmbedConstants.LinkType;
 const result = size.fileFinishedImporting("modules/applications/message_embed/web/appMessageEmbedTrackingConfig.tsx");
 
 export const trackingConfigWithDefaults = function trackingConfigWithDefaults(id) {
+  let activityCustomId;
+  let appEmbedState;
+  let channelId;
+  let flag;
+  let guildId;
+  let linkType;
+  let messageId;
+  let onLinkCopied;
+  let onView;
+  let referrerId;
   let str;
   if (id != null) {
     str = id.id;
@@ -19,65 +30,55 @@ export const trackingConfigWithDefaults = function trackingConfigWithDefaults(id
   if (str == null) {
     str = "0";
   }
-  const obj = { id: str, linkType: null, referrerId: null, activityCustomId: null, onView: null, onLinkCopied: null, guildId: null, channelId: null, messageId: null, isDeadEnd: null, appEmbedState: null };
-  let linkType;
+  const obj = { id: str, linkType, referrerId, activityCustomId, onView, onLinkCopied, guildId, channelId, messageId, isDeadEnd: flag, appEmbedState };
+  linkType = undefined;
   if (id != null) {
     linkType = id.linkType;
   }
   if (linkType == null) {
     linkType = LinkType.UNKNOWN;
   }
-  obj.linkType = linkType;
-  let referrerId;
+  referrerId = undefined;
   if (id != null) {
     referrerId = id.referrerId;
   }
   if (referrerId == null) {
     referrerId = AuthenticationStore.getId();
   }
-  obj.referrerId = referrerId;
-  let activityCustomId;
+  activityCustomId = undefined;
   if (id != null) {
     activityCustomId = id.activityCustomId;
   }
-  obj.activityCustomId = activityCustomId;
-  let onView;
+  onView = undefined;
   if (id != null) {
     onView = id.onView;
   }
-  obj.onView = onView;
-  let onLinkCopied;
+  onLinkCopied = undefined;
   if (id != null) {
     onLinkCopied = id.onLinkCopied;
   }
-  obj.onLinkCopied = onLinkCopied;
-  let guildId;
+  guildId = undefined;
   if (id != null) {
     guildId = id.guildId;
   }
-  obj.guildId = guildId;
-  let channelId;
+  channelId = undefined;
   if (id != null) {
     channelId = id.channelId;
   }
-  obj.channelId = channelId;
-  let messageId;
+  messageId = undefined;
   if (id != null) {
     messageId = id.messageId;
   }
-  obj.messageId = messageId;
-  let flag;
+  flag = undefined;
   if (id != null) {
     flag = id.isDeadEnd;
   }
   if (flag == null) {
     flag = false;
   }
-  obj.isDeadEnd = flag;
-  let appEmbedState;
+  appEmbedState = undefined;
   if (id != null) {
     appEmbedState = id.appEmbedState;
   }
-  obj.appEmbedState = appEmbedState;
   return obj;
 };

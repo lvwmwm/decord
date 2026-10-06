@@ -1,9 +1,11 @@
 // Module ID: 13788
 // Function ID: 13789
-// Dependencies: [1121]
+// Dependencies: [13789, 13854]
 
 // Module 13788
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13854 from "module_13854" /* 13854 */;
+import module_13789 from "module_13789" /* 13789 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 98, height: 88, scales: [2, 3], hash: "e786e2db9ac41808374260a48d3a5876", name: "img_marketing_frog", type: "png" });
+const obj = { target: "Object", stat: true, arity: 2, forced: Object.assign !== _mod13854 };
+const obj2 = { assign: _mod13854 };
+module_13789(obj, obj2);

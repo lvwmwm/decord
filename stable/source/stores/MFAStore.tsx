@@ -1,37 +1,39 @@
-// Module ID: 14044
-// Function ID: 14045
+// Module ID: 13292
+// Function ID: 13293
 // Name: MFAStore
-// Dependencies: [1100, 12, 504, 573, 2]
+// Dependencies: [1112, 12, 504, 585, 2]
 
-// Module 14044 (MFAStore)
+// Module 13292 (MFAStore)
 import _modDef12 from "module_12" /* 12 */;
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import TokenManagerAll from "TokenManager" /* 1100 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import TokenManagerAll from "TokenManager" /* 1112 */;
+import size from "module_2" /* 2 */;
 
 let c3 = false;
-let closure_4 = [];
+let codes = [];
+const key = "";
 let c6 = false;
 let nonces = { viewNonce: "", regenerateNonce: "" };
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class MFAStore extends Store {
+  getVerificationKey() {
+    return key;
+  }
+  getBackupCodes() {
+    return codes;
+  }
+  getNonces() {
+    return nonces;
+  }
 }
 const prototype = MFAStore.prototype;
-prototype["getVerificationKey"] = function getVerificationKey() {
-  return key;
-};
-prototype["getBackupCodes"] = function getBackupCodes() {
-  return closure_4;
-};
 Object.defineProperty(prototype, "togglingSMS", {
   get: function togglingSMS() {
     return c3;
   },
   set: undefined
 });
-prototype["getNonces"] = function getNonces() {
-  return nonces;
-};
 Object.defineProperty(prototype, "hasSeenBackupPrompt", {
   get: function hasSeenBackupPrompt() {
     return c6;
@@ -39,16 +41,19 @@ Object.defineProperty(prototype, "hasSeenBackupPrompt", {
   set: undefined
 });
 MFAStore.displayName = "MFAStore";
-const mFAStore = new MFAStore(DispatcherDefault, {
+let obj = {
   MFA_ENABLE_SUCCESS: function handleEnableSuccess(token) {
     token = token.token;
+    codes = token.codes;
     if (undefined !== token) {
-      TokenManagerAll.setToken(token);
+      const obj = TokenManagerAll;
+      obj.setToken(token);
     }
-    const codes = token.codes;
   },
   MFA_DISABLE_SUCCESS: function handleDisableSuccess(token) {
-    TokenManagerAll.setToken(token.token);
+    token = token.token;
+    const obj = TokenManagerAll;
+    obj.setToken(token);
   },
   MFA_SMS_TOGGLE: function handleSMSToggle() {
     c3 = true;
@@ -57,11 +62,12 @@ const mFAStore = new MFAStore(DispatcherDefault, {
     c3 = false;
   },
   MFA_CLEAR_BACKUP_CODES: function handleClearBackupCodes() {
-    closure_4 = [];
+    codes = [];
   },
   MFA_VIEW_BACKUP_CODES: function handleGetBackupCodes(arg0) {
     ({ codes, key } = arg0);
-    closure_4 = _modDef12.sortBy(codes, "code");
+    const obj = _modDef12;
+    codes = obj.sortBy(codes, "code");
   },
   MFA_SEND_VERIFICATION_KEY: function handleSendVerificationEmail(nonces) {
     nonces = nonces.nonces;
@@ -72,8 +78,8 @@ const mFAStore = new MFAStore(DispatcherDefault, {
   CONNECTION_OPEN() {
 
   }
-});
-const size = fn(2);
+};
+const mFAStore = new MFAStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/MFAStore.tsx");
 
 export default mFAStore;

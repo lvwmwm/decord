@@ -1,17 +1,18 @@
-// Module ID: 7738
-// Function ID: 7739
+// Module ID: 6888
+// Function ID: 6889
 // Name: MonotonicClock
-// Dependencies: [1353, 2]
+// Dependencies: [565, 2]
 // Exports: monotonicNowMs
 
-// Module 7738 (MonotonicClock)
-import clock from "clock" /* 1353 */;
+// Module 6888 (MonotonicClock)
+import clock from "clock" /* 565 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/monotonic_clock/MonotonicClock.native.tsx");
 
 export const monotonicNowMs = function monotonicNowMs() {
-  let monotonicNowMsResult = clock.monotonicNowMs();
+  const obj = clock;
+  let monotonicNowMsResult = obj.monotonicNowMs();
   if (monotonicNowMsResult == null) {
     const _performance = performance;
     monotonicNowMsResult = performance.now();

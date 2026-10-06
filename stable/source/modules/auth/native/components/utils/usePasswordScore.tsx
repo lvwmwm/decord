@@ -1,41 +1,206 @@
-// Module ID: 16304
-// Function ID: 16305
+// Module ID: 15595
+// Function ID: 15596
 // Name: usePasswordScore
-// Dependencies: [5, 32, 19, 12, 16291, 2]
-// Exports: usePasswordScore
+// Dependencies: [5, 32, 19, 558, 576, 12, 15583, 2]
 
-// Module 16304 (usePasswordScore)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 15595 (usePasswordScore)
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/auth/native/components/utils/usePasswordScore.tsx");
+const require = globalThis.__r;
+let _require, c5, c6;
 
-export const PasswordScore = { WEAK: 2, [2]: "WEAK", MEDIUM: 3, [3]: "MEDIUM", STRONG: 4, [4]: "STRONG" };
-export const usePasswordScore = function usePasswordScore(arg0) {
-  closure_0 = arg0;
-  [tmp2, dependencyMap] = noop.useState(null);
-  let tmp = _slicedToArray(noop.useState(null), 2);
-  [tmp4, asyncGeneratorStep] = noop.useState(null);
-  _slicedToArray = noop.useRef(null);
-  const effect = noop.useEffect(() => {
-    closure_0 = asyncGeneratorStep(async (arg0, value) => {
+let _slicedToArray = _slicedToArray_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let ref;
+  let tmp10;
+  let tmp3;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(8);
+  let obj2 = react;
+  [tmp3, dependencyMap] = _slicedToArray(react.useState(null), 2);
+  const tmp2 = _slicedToArray(react.useState(null), 2);
+  const tmp4 = _slicedToArray(react.useState(null), 2);
+  [tmp5, _asyncToGenerator] = tmp4;
+  _slicedToArray = react.useRef(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      let tmp = closure_0(dependencyMap[5]);
+      const throttle = tmp.throttle;
+      closure_0 = _asyncToGenerator(async (arg0, value) => {
+        let closure_2;
+        let obj2;
+        closure_0 = arg0;
+        if (c6 === 2) {
+          c6 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          let c4;
+          try {
+            let closure_1;
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                closure_1 = tmp4;
+                closure_0 = undefined;
+                if (null != closure_0) {
+                  if (closure_0.length > 0) {
+                    c4 = 1;
+                    c5 = 2;
+                    c6 = 1;
+                    const obj5 = { value: obj2.scorePassword(closure_0), done: false };
+                    obj2 = closure_0(dependencyMap[6]);
+                    return obj5;
+                  }
+                }
+              }
+            } else if (1 === c5) {
+              c4 = 0;
+              closure_1(null);
+              tmp(null);
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_0 = value;
+              closure_1(closure_0.password_strength);
+              tmp(closure_0.valid);
+              c4 = 0;
+            }
+            c6 = 3;
+            return { value: "IconComponent", done: null };
+          } catch (tmp21) {
+            let closure_3 = tmp21;
+            if (0 === c4) {
+              c6 = 3;
+              throw tmp21;
+            } else {
+              c5 = 1;
+            }
+          }
+        }
+      });
+      ref.current = throttle(function() {
+        return closure_0(...arguments);
+      }, 250);
+      return () => {
+        const current = ref.current;
+        let cancel;
+        const tmp = ref;
+        if (current != null) {
+          cancel = current.cancel;
+        }
+        if (null != cancel) {
+          const current2 = tmp.current;
+          current2.cancel();
+        }
+      };
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp6 = fn;
+    tmp7 = items;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const effect = obj2.useEffect(tmp6, tmp7);
+  if (cResult[2] !== arg0) {
+    const fn2 = function o() {
+      let tmp = null != ref.current;
+      const obj = ref;
+      if (tmp) {
+        tmp = closure_0.length > 0;
+      }
+      if (tmp) {
+        obj.current(closure_0);
+      }
+    };
+    const items1 = [arg0];
+    cResult[2] = arg0;
+    cResult[3] = fn2;
+    cResult[4] = items1;
+    tmp10 = items1;
+    tmp9 = fn2;
+  } else {
+    tmp9 = cResult[3];
+    tmp10 = cResult[4];
+  }
+  const effect1 = obj2.useEffect(tmp9, tmp10);
+  if (cResult[5] === tmp3) {
+    let tmp12;
+    if (cResult[6] === tmp5) {
+      tmp12 = cResult[7];
+    }
+    return tmp12;
+  }
+  let obj3 = { passwordScore: tmp3, passwordValid: tmp5 };
+  cResult[5] = tmp3;
+  cResult[6] = tmp5;
+  cResult[7] = obj3;
+  tmp12 = obj3;
+}) : ((arg0) => {
+  let ref;
+  let tmp2;
+  let tmp4;
+  let closure_0 = arg0;
+  let tmp = _slicedToArray(react.useState(null), 2);
+  [tmp2, dependencyMap] = tmp;
+  const tmp3 = _slicedToArray(react.useState(null), 2);
+  [tmp4, _asyncToGenerator] = tmp3;
+  _slicedToArray = react.useRef(null);
+  const effect = react.useEffect(() => {
+    let tmp = closure_0(dependencyMap[5]);
+    const throttle = tmp.throttle;
+    closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let closure_2;
+      let obj2;
+      closure_0 = arg0;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
+        let c4;
         try {
+          let closure_1;
           c6 = 2;
           if (0 === c5) {
             if (arg0 === 1) {
@@ -46,80 +211,80 @@ export const usePasswordScore = function usePasswordScore(arg0) {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              closure_1 = tmp7;
-              closure_129_0 = undefined;
+              closure_1 = tmp4;
+              closure_0 = undefined;
               if (null != closure_0) {
-                if (arr.length > 0) {
+                if (closure_0.length > 0) {
                   c4 = 1;
                   c5 = 2;
                   c6 = 1;
-                  const obj5 = { value: closure_0(dependencyMap[4]).scorePassword(arr), done: false };
+                  const obj5 = { value: obj2.scorePassword(closure_0), done: false };
+                  obj2 = closure_0(dependencyMap[6]);
                   return obj5;
                 }
               }
             }
-          } else {
-            if (1 === tmp7) {
-              c4 = 0;
-              closure_1(null);
-              tmp3(null);
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              closure_129_0 = value;
-              closure_1(closure_129_0.password_strength);
-              tmp3(closure_129_0.valid);
-              c4 = 0;
-            }
+          } else if (1 === c5) {
+            c4 = 0;
+            closure_1(null);
+            tmp(null);
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
             c4 = 0;
             c6 = 3;
             const obj = { value, done: true };
             return obj;
+          } else {
+            closure_0 = value;
+            closure_1(closure_0.password_strength);
+            tmp(closure_0.valid);
+            c4 = 0;
           }
           c6 = 3;
-        } catch (tmp24) {
-          closure_3 = tmp24;
-          if (tmp4 === c4) {
-            c6 = tmp2;
-            throw tmp24;
+          return { value: "IconComponent", done: null };
+        } catch (tmp21) {
+          let closure_3 = tmp21;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp21;
           } else {
-            c5 = tmp;
+            c5 = 1;
           }
         }
       }
     });
-    ref.current = closure_0(dependencyMap[3]).throttle(function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+    ref.current = throttle(function() {
+      return closure_0(...arguments);
     }, 250);
     return () => {
       const current = ref.current;
       let cancel;
+      const tmp = ref;
       if (current != null) {
         cancel = current.cancel;
       }
       if (null != cancel) {
-        const current2 = ref.current;
+        const current2 = tmp.current;
         current2.cancel();
       }
     };
   }, []);
   const items = [arg0];
-  const effect1 = noop.useEffect(() => {
+  const effect1 = react.useEffect(() => {
     let tmp = null != ref.current;
+    const obj = ref;
     if (tmp) {
       tmp = closure_0.length > 0;
     }
     if (tmp) {
-      ref.current(closure_0);
+      obj.current(closure_0);
     }
   }, items);
   return { passwordScore, passwordValid };
-};
+});
+const result = size.fileFinishedImporting("modules/auth/native/components/utils/usePasswordScore.tsx");
+
+export const PasswordScore = { WEAK: 2, [2]: "WEAK", MEDIUM: 3, [3]: "MEDIUM", STRONG: 4, [4]: "STRONG" };
+export const usePasswordScore = tmp2;

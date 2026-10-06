@@ -1,20 +1,21 @@
-// Module ID: 8168
-// Function ID: 8169
+// Module ID: 7322
+// Function ID: 7323
 // Name: ExperimentDevToolsUtils
-// Dependencies: [8169, 4708, 2]
+// Dependencies: [7323, 4757, 2]
 // Exports: getExperimentVariantsForDevTools
 
-// Module 8168 (ExperimentDevToolsUtils)
-import ExperimentManager from "ExperimentManager" /* 4708 */;
-import experiment2 from "experiment" /* 8169 */;
+// Module 7322 (ExperimentDevToolsUtils)
+import ExperimentManager from "ExperimentManager" /* 4757 */;
+import experiment2 from "experiment" /* 7323 */;
 import size from "module_2" /* 2 */;
 
 const obj = { id: -1, label: "Not Eligible", shortLabel: "Not Eligible", type: experiment2.Variation_Type.OVERRIDE };
 const result = size.fileFinishedImporting("modules/experiments/devtools/ExperimentDevToolsUtils.tsx");
 
 export const getExperimentVariantsForDevTools = function getExperimentVariantsForDevTools(experiment) {
+  let variants;
   if (experiment.system !== ExperimentManager.ExperimentSystem.APEX) {
-    let variants = experiment.variants;
+    variants = experiment.variants;
   } else {
     const items = [obj];
     variants = items.concat(experiment.variants);

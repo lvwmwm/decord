@@ -1,12 +1,13 @@
-// Module ID: 2092
-// Function ID: 2093
+// Module ID: 2099
+// Function ID: 2100
 // Name: deserializeChannels
-// Dependencies: [32, 1086, 2]
+// Dependencies: [32, 1098, 2]
 // Exports: deserializeChannel, deserializeChannelEntries
 
-// Module 2092 (deserializeChannels)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import _slicedToArray from "module_32" /* 32 */;
+// Module 2099 (deserializeChannels)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
 function deserializeChannels(arg0) {
   const iter = arg0[Symbol.iterator]();
@@ -26,11 +27,11 @@ function deserializeChannels(arg0) {
     continue;
   }
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/cache/deserializeChannels.tsx");
 
 export default deserializeChannels;
 export const deserializeChannelEntries = function deserializeChannelEntries(guildChannels) {
+  const tmp = guildChannels[Symbol.iterator]();
   while (tmp !== undefined) {
     let tmp4 = _slicedToArray(tmp2, 2);
     let first = tmp4[0];

@@ -1,14 +1,16 @@
-// Module ID: 12089
-// Function ID: 12090
+// Module ID: 11158
+// Function ID: 11159
 // Name: ExperimentEmbedPlatformUtils
-// Dependencies: [4755, 12090, 1980, 11764, 11765, 8166, 4708, 2]
+// Dependencies: [4801, 11159, 1987, 10884, 10885, 7320, 4757, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 12089 (ExperimentEmbedPlatformUtils)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11764 */;
-import useApexExperiments from "useApexExperiments" /* 11765 */;
+// Module 11158 (ExperimentEmbedPlatformUtils)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ExperimentManager from "ExperimentManager" /* 4757 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 7320 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 10884 */;
+import useApexExperiments from "useApexExperiments" /* 10885 */;
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
@@ -16,40 +18,47 @@ const result = size.fileFinishedImporting("modules/experiments/native/Experiment
 
 export const EXPERIMENT_EMBED_URL_REGEX = regExp;
 export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperimentEmbedTap(experimentFromEmbedURL, experimentTreatmentFromEmbedURL) {
-  closure_0 = experimentTreatmentFromEmbedURL;
+  let experiments;
+  let overridesInfo;
+  let closure_0 = experimentTreatmentFromEmbedURL;
   if (null != experimentTreatmentFromEmbedURL) {
     const _Number = Number;
     if (!Number.isNaN(experimentTreatmentFromEmbedURL)) {
-      const legacyExperiments = useLegacyExperiments.getLegacyExperiments();
+      const obj = useLegacyExperiments;
+      const legacyExperiments = obj.getLegacyExperiments();
       ({ experiments, overridesInfo } = legacyExperiments);
-      const apexExperiments = useApexExperiments.getApexExperiments();
+      const obj2 = useApexExperiments;
+      const apexExperiments = obj2.getApexExperiments();
       let tmp5 = experiments[experimentFromEmbedURL];
+      const overridesInfo2 = apexExperiments.overridesInfo;
       if (tmp5 == null) {
         tmp5 = apexExperiments.experiments[experimentFromEmbedURL];
       }
       if (null != tmp5) {
         let tmp6 = overridesInfo[experimentFromEmbedURL];
         if (tmp6 == null) {
-          tmp6 = apexExperiments.overridesInfo[experimentFromEmbedURL];
+          tmp6 = overridesInfo2[experimentFromEmbedURL];
         }
         if (tmp6 == null) {
           tmp6 = null;
         }
-        const experimentBuckets = tmp(8166).getExperimentBuckets(tmp5);
+        const tmpResult = ExperimentEmbedUtils;
+        const experimentBuckets = tmpResult.getExperimentBuckets(tmp5);
         const iter = experimentBuckets.find((value) => value.value === closure_0);
         if (null != iter) {
           if (null != tmp6) {
             if (tmp6.variantId === iter.value) {
-              tmp(4708).overrideBucket(tmp5.system, experimentFromEmbedURL, null);
-              const tmpResult3 = tmp(4708);
+              const tmpResult3 = ExperimentManager;
+              tmpResult3.overrideBucket(tmp5.system, experimentFromEmbedURL, null);
             }
           }
-          tmp(4708).overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
-          const tmpResult4 = tmp(4708);
+          const tmpResult4 = ExperimentManager;
+          tmpResult4.overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
         }
-        const tmpResult = tmp(8166);
       }
     }
   }
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12090, dependencyMap.paths), "ExperimentOverrideSheet", { id: experimentFromEmbedURL });
+  const obj3 = { id: experimentFromEmbedURL };
+  const obj6 = ActionSheetActionCreatorsDefault;
+  obj6.openLazy(asyncRequire(11159, dependencyMap.paths), "ExperimentOverrideSheet", obj3);
 };

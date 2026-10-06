@@ -1,36 +1,21 @@
-// Module ID: 12796
-// Function ID: 12797
+// Module ID: 11917
+// Function ID: 11918
 // Name: useHasAllocateBoostPermission
-// Dependencies: [2063, 4427, 1085, 504, 2]
-// Exports: default, getHasAllocateBoostPermission
+// Dependencies: [2073, 4472, 1097, 558, 576, 504, 2]
+// Exports: getHasAllocateBoostPermission
 
-// Module 12796 (useHasAllocateBoostPermission)
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+// Module 11917 (useHasAllocateBoostPermission)
+import Constants from "Constants" /* 1097 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Permissions = fn(1085).Permissions;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useHasAllocateBoostPermission.tsx");
-
-export default function useHasAllocateBoostPermission(arg0) {
-  _require = arg0;
-  const items = [PermissionStore, GuildStore];
-  return require("initialize").useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
-    let canResult = null;
-    if (null != guild) {
-      canResult = null;
-      if (null != obj.getGuildPermissions(guild)) {
-        canResult = obj.can(Permissions.ADMINISTRATOR, guild);
-      }
-    }
-    return canResult;
-  });
-};
-export const getHasAllocateBoostPermission = function getHasAllocateBoostPermission(PermissionStore, guild) {
+const Permissions = Constants.Permissions;
+function getHasAllocateBoostPermission(PermissionStore, guild) {
   let canResult = null;
   if (null != guild) {
     canResult = null;
@@ -39,4 +24,60 @@ export const getHasAllocateBoostPermission = function getHasAllocateBoostPermiss
     }
   }
   return canResult;
-};
+}
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore, GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      const guild = GuildStore.getGuild(closure_0);
+      let canResult = null;
+      if (null != guild) {
+        canResult = null;
+        if (null != PermissionStore.getGuildPermissions(guild)) {
+          canResult = obj.can(Permissions.ADMINISTRATOR, guild);
+        }
+      }
+      return canResult;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const obj = require("get initialized");
+  const items = [PermissionStore, GuildStore];
+  return obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(closure_0);
+    let canResult = null;
+    if (null != guild) {
+      canResult = null;
+      if (null != PermissionStore.getGuildPermissions(guild)) {
+        canResult = obj.can(Permissions.ADMINISTRATOR, guild);
+      }
+    }
+    return canResult;
+  });
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useHasAllocateBoostPermission.tsx");
+
+export default tmp2;
+export { getHasAllocateBoostPermission };

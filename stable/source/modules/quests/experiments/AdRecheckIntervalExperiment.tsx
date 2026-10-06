@@ -1,16 +1,16 @@
-// Module ID: 15387
-// Function ID: 15388
+// Module ID: 14636
+// Function ID: 14637
 // Name: AdRecheckIntervalExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 15387 (AdRecheckIntervalExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14636 (AdRecheckIntervalExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-07-ad-recheck-interval-experiment", kind: "user", defaultConfig: { enableFastAdRecheck: false }, variations: null };
-const obj2 = { 1: null, 2: { enableFastAdRecheck: false }, 3: { enableFastAdRecheck: true }, 4: { enableFastAdRecheck: true }, 5: { enableFastAdRecheck: true } };
+let obj2;
+const obj = { name: "2026-07-ad-recheck-interval-experiment", kind: "user", defaultConfig: { enableFastAdRecheck: false }, variations: obj2 };
+obj2 = { 1: null, 2: { enableFastAdRecheck: false }, 3: { enableFastAdRecheck: true }, 4: { enableFastAdRecheck: true }, 5: { enableFastAdRecheck: true } };
 obj2[5] = { enableFastAdRecheck: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/quests/experiments/AdRecheckIntervalExperiment.tsx");
 

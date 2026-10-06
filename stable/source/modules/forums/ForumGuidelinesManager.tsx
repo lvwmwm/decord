@@ -1,49 +1,52 @@
-// Module ID: 10566
-// Function ID: 10567
+// Module ID: 9849
+// Function ID: 9850
 // Name: ForumGuidelinesManager
-// Dependencies: [7395, 510, 2]
+// Dependencies: [6540, 510, 2]
 
-// Module 10566 (ForumGuidelinesManager)
+// Module 9849 (ForumGuidelinesManager)
 import Storage2 from "Storage" /* 510 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let set;
+
 const formGuidelinesStorageKey = "formGuidelinesStorageKey";
-class ForumGuidelinesManager extends tmp2 {
+class ForumGuidelinesManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    set = new Set();
-    applyArgumentsResult.seenForumGuidelines = set;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    applyArgumentsResult.seenForumGuidelines = new Set();
+    new Set();
     return applyArgumentsResult;
+  }
+  _initialize() {
+    const Storage = Storage2.Storage;
+    const value = Storage.get(formGuidelinesStorageKey);
+    if (null != value) {
+      const self = this;
+      const _Set = Set;
+      const self2 = this;
+      const self3 = this;
+      this.seenForumGuidelines = new Set(value);
+      set = new Set(value);
+    }
+  }
+  _terminate() {
+    const Storage = Storage2.Storage;
+    const result = Storage.set(formGuidelinesStorageKey, this.seenForumGuidelines);
+  }
+  markAsSeen(arg0) {
+    const seenForumGuidelines = this.seenForumGuidelines;
+    seenForumGuidelines.add(arg0);
+    const Storage = Storage2.Storage;
+    const result = Storage.set(formGuidelinesStorageKey, this.seenForumGuidelines);
+  }
+  hasSeen(arg0) {
+    const seenForumGuidelines = this.seenForumGuidelines;
+    return seenForumGuidelines.has(arg0);
   }
 }
 const prototype = ForumGuidelinesManager.prototype;
-prototype["_initialize"] = function _initialize() {
-  const Storage = Storage2.Storage;
-  value = Storage.get(formGuidelinesStorageKey);
-  if (null != value) {
-    const self = this;
-    const _Set = Set;
-    const set = new Set(value);
-    this.seenForumGuidelines = set;
-  }
-};
-prototype["_terminate"] = function _terminate() {
-  const Storage = Storage2.Storage;
-  const result = Storage.set(formGuidelinesStorageKey, this.seenForumGuidelines);
-};
-prototype["markAsSeen"] = function markAsSeen(arg0) {
-  const seenForumGuidelines = this.seenForumGuidelines;
-  seenForumGuidelines.add(arg0);
-  const Storage = Storage2.Storage;
-  const result = Storage.set(formGuidelinesStorageKey, this.seenForumGuidelines);
-};
-prototype["hasSeen"] = function hasSeen(arg0) {
-  const seenForumGuidelines = this.seenForumGuidelines;
-  return seenForumGuidelines.has(arg0);
-};
 const forumGuidelinesManager = new ForumGuidelinesManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/forums/ForumGuidelinesManager.tsx");
 
 export default forumGuidelinesManager;

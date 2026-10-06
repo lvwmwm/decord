@@ -1,13 +1,13 @@
-// Module ID: 10379
-// Function ID: 10380
+// Module ID: 12212
+// Function ID: 12213
 // Name: FamilyCenterRestrictedHoursUtils
-// Dependencies: [1380, 1115, 2482, 2]
+// Dependencies: [1386, 1127, 2490, 2]
 // Exports: computeOverlappingInfo, formatDuration, formatRestrictedScheduleInAppSubtitle, formatTime, getShortDayLabels, sortRulesByStartTime, timeToMinutes, toTimeProto
 
-// Module 10379 (FamilyCenterRestrictedHoursUtils)
-import util from "util" /* 1115 */;
-import user from "user" /* 1380 */;
-import _modDef2482 from "module_2482" /* 2482 */;
+// Module 12212 (FamilyCenterRestrictedHoursUtils)
+import intl4 from "intl" /* 1127 */;
+import user from "user" /* 1386 */;
+import _modDef2490 from "module_2490" /* 2490 */;
 import size from "module_2" /* 2 */;
 
 function setsEqual(set, set2) {
@@ -30,23 +30,28 @@ function setsEqual(set, set2) {
 function formatDays(days) {
   set = new Set(days);
   if (setsEqual(set, set2)) {
-    const intl3 = util.intl;
-    return intl3.string(_modDef2482.bPjqd1);
-  } else if (tmp2(set, set)) {
-    const intl2 = util.intl;
-    return intl2.string(_modDef2482["4dr9L9"]);
-  } else if (tmp2(set, set1)) {
-    const intl = util.intl;
-    return intl.string(_modDef2482["6lTTJ+"]);
+    const intl3 = intl4.intl;
+    return intl3.string(_modDef2490.bPjqd1);
+  } else if (setsEqual(set, set)) {
+    const intl2 = intl4.intl;
+    return intl2.string(_modDef2490["4dr9L9"]);
+  } else if (setsEqual(set, set1)) {
+    const intl = intl4.intl;
+    return intl.string(_modDef2490["6lTTJ+"]);
   } else {
     const _Intl = Intl;
-    const dateTimeFormat = new Intl.DateTimeFormat(util.intl.currentLocale, { weekday: "short" });
-    const mapped = items.map((item, index) => {
+    let self = this;
+    let self2 = this;
+    const dateTimeFormat = new Intl.DateTimeFormat(intl4.intl.currentLocale, { weekday: "short" });
+    const mapped = items.map(function(item, index) {
       let formatResult = null;
       if (set.has(item)) {
         const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const format = dateTimeFormat.format;
         const date = new Date(2025, 0, 5 + index);
-        formatResult = dateTimeFormat.format(date);
+        formatResult = format(date);
       }
       return formatResult;
     });
@@ -61,17 +66,27 @@ function getScheduleRuleDateRange(rule) {
     if (null != rule.endTime) {
       const startTime = rule.startTime;
       const _Intl = Intl;
-      const dateTimeFormat = new Intl.DateTimeFormat(util.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+      const self = this;
+      const self2 = this;
+      const dateTimeFormat = new Intl.DateTimeFormat(intl4.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
       const _Date = Date;
-      const date = new Date(2025, 0, 1, startTime.hours, startTime.minutes);
+      const self3 = this;
+      const self4 = this;
+      const format = dateTimeFormat.format;
       const endTime = rule.endTime;
       const _Intl2 = Intl;
-      const dateTimeFormat1 = new Intl.DateTimeFormat(util.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+      const self5 = this;
+      const self6 = this;
+      const date = new Date(2025, 0, 1, startTime.hours, startTime.minutes);
+      const formatResult = format(date);
+      const dateTimeFormat1 = new Intl.DateTimeFormat(intl4.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
       const _Date2 = Date;
-      const date1 = new Date(2025, 0, 1, endTime.hours, endTime.minutes);
+      const self7 = this;
+      const self8 = this;
+      const format2 = dateTimeFormat1.format;
       const _HermesInternal = HermesInternal;
-      str = "" + dateTimeFormat.format(date) + " \u2013 " + dateTimeFormat1.format(date1);
-      const formatResult = dateTimeFormat.format(date);
+      const date1 = new Date(2025, 0, 1, endTime.hours, endTime.minutes);
+      str = "" + formatResult + " \u2013 " + format2(date1);
     }
   }
   return str;
@@ -85,30 +100,39 @@ let result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterRestri
 
 export const DAYS_ORDERED = items;
 export const getShortDayLabels = function getShortDayLabels(narrow) {
-  const dateTimeFormat = new Intl.DateTimeFormat(util.intl.currentLocale, { weekday: narrow });
-  return items.map((item, index) => dateTimeFormat.format(new Date(2025, 0, 5 + index)));
+  const obj = { weekday: narrow };
+  const dateTimeFormat = new Intl.DateTimeFormat(intl4.intl.currentLocale, obj);
+  return items.map((item, index) => {
+    const format = dateTimeFormat.format;
+    const date = new Date(2025, 0, 5 + index);
+    return format(date);
+  });
 };
 export const formatTime = function formatTime(hours) {
-  const dateTimeFormat = new Intl.DateTimeFormat(util.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
-  return dateTimeFormat.format(new Date(2025, 0, 1, hours.hours, hours.minutes));
+  const dateTimeFormat = new Intl.DateTimeFormat(intl4.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+  const format = dateTimeFormat.format;
+  const date = new Date(2025, 0, 1, hours.hours, hours.minutes);
+  return format(date);
 };
 export { formatDays };
 export const timeToMinutes = function timeToMinutes(first1) {
   return 60 * first1.hours + first1.minutes;
 };
 export const formatDuration = function formatDuration(arg0) {
+  let formatToPlainStringResult;
   const result = arg0 / 60;
-  const intl = util.intl;
+  const isIntegerResult = Number.isInteger(result);
+  const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const tmp3 = _modDef2482;
+  const tmp3 = _modDef2490;
   if (isIntegerResult) {
     const obj2 = { hours: result };
-    let formatToPlainStringResult = formatToPlainString(tmp3.hFDcmZ, obj2);
+    formatToPlainStringResult = formatToPlainString(tmp3.hFDcmZ, obj2);
   } else {
-    const obj = { hours: null };
     const _Math = Math;
-    obj.hours = Math.floor(result);
-    formatToPlainStringResult = formatToPlainString(tmp3.wcrXLM, obj);
+    const wcrXLM = tmp3.wcrXLM;
+    const obj = { hours: Math.floor(result) };
+    formatToPlainStringResult = formatToPlainString(wcrXLM, obj);
   }
   return formatToPlainStringResult;
 };
@@ -116,28 +140,40 @@ export { getScheduleRuleDateRange };
 export const formatRestrictedScheduleInAppSubtitle = function formatRestrictedScheduleInAppSubtitle(startTime) {
   if (null != startTime.startTime) {
     if (null != startTime.endTime) {
+      let OxveI8;
       startTime = startTime.startTime;
       const _Intl = Intl;
-      const dateTimeFormat = new Intl.DateTimeFormat(util.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+      const self = this;
+      const self2 = this;
+      const tmp5 = formatDays(startTime.days);
+      const dateTimeFormat = new Intl.DateTimeFormat(intl4.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
       const _Date = Date;
-      const date = new Date(2025, 0, 1, startTime.hours, startTime.minutes);
+      const self3 = this;
+      const self4 = this;
+      const format = dateTimeFormat.format;
       const endTime = startTime.endTime;
       const _Intl2 = Intl;
-      const tmp5 = formatDays(startTime.days);
-      const tmp7 = require;
-      const dateTimeFormat1 = new Intl.DateTimeFormat(util.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+      const self5 = this;
+      const self6 = this;
+      const date = new Date(2025, 0, 1, startTime.hours, startTime.minutes);
+      const formatResult = format(date);
+      const dateTimeFormat1 = new Intl.DateTimeFormat(intl4.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
       const _Date2 = Date;
-      const date1 = new Date(2025, 0, 1, endTime.hours, endTime.minutes);
+      const self7 = this;
+      const self8 = this;
+      const format2 = dateTimeFormat1.format;
       const startTime2 = startTime.startTime;
       const endTime2 = startTime.endTime;
-      const formatResult = dateTimeFormat.format(date);
+      const date1 = new Date(2025, 0, 1, endTime.hours, endTime.minutes);
+      const format2Result = format2(date1);
+      const tmp7 = require;
       if (60 * startTime2.hours + startTime2.minutes > 60 * endTime2.hours + endTime2.minutes) {
-        let OxveI8 = _modDef2482.OxveI8;
+        OxveI8 = _modDef2490.OxveI8;
       } else {
-        OxveI8 = _modDef2482["ERTn+E"];
+        OxveI8 = _modDef2490["ERTn+E"];
       }
-      const intl = tmp7(1115).intl;
-      const obj = { days: tmp5, startTime: formatResult, endTime: dateTimeFormat1.format(date1) };
+      const intl = tmp7(1127).intl;
+      const obj = { days: tmp5, startTime: formatResult, endTime: format2Result };
       return intl.formatToPlainString(OxveI8, obj);
     }
   }
@@ -191,14 +227,16 @@ export const toTimeProto = function toTimeProto(hours) {
 export const computeOverlappingInfo = function computeOverlappingInfo(first3, memo1, memo) {
   const conflictingEntries = [];
   const item = conflictingEntries.forEach((item, index) => {
-    if (item.has(item)) {
+    first3 = item;
+    if (first3.has(item)) {
       const found = memo1.find((days) => {
         days = days.days;
         return days.includes(closure_0);
       });
       if (null != found) {
+        const push = conflictingEntries.push;
         const obj = { dayLabel: memo[index], timeRange: getScheduleRuleDateRange(found) };
-        conflictingEntries.push(obj);
+        push(obj);
       }
     }
   });

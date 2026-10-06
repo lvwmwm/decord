@@ -1,53 +1,156 @@
-// Module ID: 10318
-// Function ID: 10319
+// Module ID: 9478
+// Function ID: 9479
 // Name: ChannelCallSingleController
-// Dependencies: [19, 4810, 502, 1074, 4809, 21, 1241, 4968, 504, 10319, 10321, 10322, 2]
-// Exports: ChannelCallSingleController
+// Dependencies: [19, 4859, 502, 1086, 4858, 21, 558, 576, 1253, 5017, 504, 9479, 9481, 9482, 2]
 
-// Module 10318 (ChannelCallSingleController)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
-import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
+// Module 9478 (ChannelCallSingleController)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import CallConstants from "CallConstants" /* 4858 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import react from "react" /* 19 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const ParticipantTypes = fn(4809).ParticipantTypes;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallSingleController.tsx");
-
-export const ChannelCallSingleController = function ChannelCallSingleController(selectedParticipant) {
+const AnalyticEvents = Constants.AnalyticEvents;
+const ParticipantTypes = CallConstants.ParticipantTypes;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedParticipant) => {
+  let tmp4;
+  let tmp5;
+  const tmp = selectedParticipant;
+  let obj = selectedParticipant(576);
+  const cResult = obj.c(14);
+  selectedParticipant = selectedParticipant.selectedParticipant;
+  const channel = selectedParticipant.channel;
+  if (cResult[0] !== channel.id) {
+    const fn = function p() {
+      const track = AnalyticsUtilsDefault.track;
+      const VIDEO_LAYOUT_TOGGLED = AnalyticEvents.VIDEO_LAYOUT_TOGGLED;
+      const obj = { video_layout: "focus" };
+      AnalyticsUtilsDefault;
+      const obj2 = AppAnalyticsUtils;
+      const merged = Object.assign(obj2.collectVoiceAnalyticsMetadata(channel.id));
+      track(VIDEO_LAYOUT_TOGGLED, obj);
+    };
+    const items = [channel.id];
+    cResult[0] = channel.id;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp5 = items;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  const effect = react.useEffect(tmp4, tmp5);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ApplicationStreamingStore];
+    cResult[3] = items1;
+  }
+  if (cResult[4] !== selectedParticipant.id) {
+    class S {
+      constructor() {
+        return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
+      }
+    }
+    cResult[4] = selectedParticipant.id;
+    cResult[5] = S;
+  } else {
+    class S {
+      constructor() {
+        return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
+      }
+    }
+  }
+  tmp(504);
+  if (ParticipantTypes.STREAM === selectedParticipant.type) {
+    class S {
+      constructor() {
+        return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
+      }
+    }
+    const id = selectedParticipant.user.id;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor() {
+          return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
+        }
+      }
+      const id1 = AuthenticationStore.getId();
+      cResult[6] = id1;
+    } else {
+      class S {
+        constructor() {
+          return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
+        }
+      }
+    }
+    if (null != tmp11) {
+      class S {
+        constructor() {
+          return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
+        }
+      }
+      if (cResult[7] === channel) {
+        class S {
+          constructor() {
+            return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
+          }
+        }
+      }
+      cResult[7] = channel;
+      cResult[8] = tmp15;
+      cResult[9] = selectedParticipant;
+      cResult[10] = jsx(channel(tmp15 ? 9479 : 9481), { participant: selectedParticipant, channel });
+      const tmp17Result = jsx(channel(tmp15 ? 9479 : 9481), { participant: selectedParticipant, channel });
+    }
+    return null;
+  } else {
+    class S {
+      constructor() {
+        return ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipant.id);
+      }
+    }
+  }
+}) : (function(selectedParticipant) {
   selectedParticipant = selectedParticipant.selectedParticipant;
   const channel = selectedParticipant.channel;
   const items = [channel.id];
-  const effect = noop.useEffect(() => {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { video_layout: "focus" };
-    const merged = Object.assign(AppAnalyticsUtils.collectVoiceAnalyticsMetadata(channel.id));
-    obj.track(AnalyticEvents.VIDEO_LAYOUT_TOGGLED, obj2);
+  const effect = react.useEffect(() => {
+    const track = AnalyticsUtilsDefault.track;
+    const VIDEO_LAYOUT_TOGGLED = AnalyticEvents.VIDEO_LAYOUT_TOGGLED;
+    const obj = { video_layout: "focus" };
+    AnalyticsUtilsDefault;
+    const obj2 = AppAnalyticsUtils;
+    const merged = Object.assign(obj2.collectVoiceAnalyticsMetadata(channel.id));
+    track(VIDEO_LAYOUT_TOGGLED, obj);
   }, items);
   selectedParticipant(504);
   [][0] = ApplicationStreamingStore;
   const type = selectedParticipant.type;
   if (ParticipantTypes.STREAM === type) {
-    if (null == tmp4) {
-      return null;
-    } else {
-      let tmp18 = channel;
-      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10319 : 10321);
-      let obj2 = { participant: selectedParticipant, channel };
-      <tmp18 participant={selectedParticipant} channel={channel} />;
+    const id = selectedParticipant.user.id;
+    let tmp15Result = null;
+    if (null != tmp4) {
+      tmp15Result = jsx(channel(id === tmp13 ? 9479 : 9481), { participant: selectedParticipant, channel });
     }
-  } else if (tmp5.USER === type) {
-    let obj = { participant: selectedParticipant, channel };
-    return jsx(channel(10322), { participant: selectedParticipant, channel });
-  } else if (tmp5.HIDDEN_STREAM === type) {
+    return tmp15Result;
+  } else if (ParticipantTypes.USER === type) {
+    return jsx(channel(9482), { participant: selectedParticipant, channel });
+  } else if (ParticipantTypes.HIDDEN_STREAM === type) {
     return null;
-  } else if (tmp5.ACTIVITY === type) {
+  } else if (ParticipantTypes.ACTIVITY === type) {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error("Activities are not supported on old voice UI");
     throw error;
   }
-};
+});
+const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallSingleController.tsx");
+
+export const ChannelCallSingleController = tmp2;

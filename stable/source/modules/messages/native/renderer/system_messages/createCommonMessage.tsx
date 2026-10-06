@@ -1,47 +1,57 @@
-// Module ID: 8254
-// Function ID: 8255
+// Module ID: 7410
+// Function ID: 7411
 // Name: createCommonMessage
-// Dependencies: [2041, 4788, 4639, 4637, 576, 4470, 8236, 8255, 8256, 8257, 2]
+// Dependencies: [2051, 4837, 4687, 4685, 588, 4515, 7392, 7411, 7412, 7413, 2]
 // Exports: default
 
-// Module 8254 (createCommonMessage)
-import nativeDefault from "native" /* 576 */;
-import DateUtils from "DateUtils" /* 4470 */;
-import ColorUtils from "ColorUtils" /* 4637 */;
-import shared from "shared" /* 4639 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8236 */;
-import _modDef8255 from "module_8255" /* 8255 */;
-import _modDef8256 from "module_8256" /* 8256 */;
-import MessageAccessibilityActions from "MessageAccessibilityActions" /* 8257 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 7410 (createCommonMessage)
+import nativeDefault from "native" /* 588 */;
+import DateUtils from "DateUtils" /* 4515 */;
+import shared from "shared" /* 4687 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7392 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7411 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7412 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7413 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let createStyles = fn(4788);
+let tmp;
+const ColorUtils = tmp(4685);
+let createStyles = createStyles_mod;
 const result = createStyles.experimental_createToken((theme) => {
+  theme = theme.theme;
   let str = "rgba(201,210,240,0.6)";
-  if (obj.isThemeDark(theme.theme)) {
-    str = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.1);
+  const obj = shared;
+  if (obj.isThemeDark(theme)) {
     const tmpResult = ColorUtils;
+    str = tmpResult.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.1);
   }
   return str;
 });
-createStyles = fn(4788);
-let closure_4 = createStyles.createNativeStyleProperties({ timestampColor: nativeDefault.colors.TEXT_MUTED, highlightColor: result });
-const size = fn(2);
+createStyles = createStyles_mod;
+let obj = { timestampColor: nativeDefault.colors.TEXT_MUTED, highlightColor: result };
+let closure_4 = createStyles.createNativeStyleProperties(obj);
 const result1 = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/createCommonMessage.tsx");
 
 export default function createCommonMessage(reactions) {
+  let channel;
+  let message;
+  let obj2;
+  let obj3;
+  let obj4;
+  let obj5;
+  let obj6;
+  let theme;
   ({ message, theme } = reactions);
+  reactions = reactions.reactions;
   const tmp = closure_4(theme);
-  const obj = { id: message.id, channelId: message.channel_id, type: message.type, mentioned: message.mentioned, timestamp: null, timestampColor: null, dark: null, highlightColor: null, reactions: null, swipeToReplyIconUrl: null, swipeToEditIconUrl: null, accessibilityActions: null };
-  const channel = ChannelStore.getChannel(message.channel_id);
-  obj.timestamp = DateUtils.calendarFormat(message.timestamp, true);
-  obj.timestampColor = tmp.timestampColor;
-  obj.dark = shared.isThemeDark(theme);
-  obj.highlightColor = tmp.highlightColor;
-  obj.reactions = reactions.reactions;
-  obj.swipeToReplyIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef8255);
-  obj.swipeToEditIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef8256);
-  obj.accessibilityActions = MessageAccessibilityActions.createMessageAccessibilityActions(message, channel);
+  const obj = { id: message.id, channelId: message.channel_id, type: message.type, mentioned: message.mentioned, timestamp: obj2.calendarFormat(message.timestamp, true), timestampColor: tmp.timestampColor, dark: obj3.isThemeDark(theme), highlightColor: tmp.highlightColor, reactions, swipeToReplyIconUrl: obj4.getAssetUriForEmbed(AssetRegistryDefault), swipeToEditIconUrl: obj5.getAssetUriForEmbed(AssetRegistryDefault2), accessibilityActions: obj6.createMessageAccessibilityActions(message, channel) };
+  channel = ChannelStore.getChannel(message.channel_id);
+  obj2 = DateUtils;
+  obj3 = shared;
+  obj4 = renderer_EmbedUtils;
+  obj5 = renderer_EmbedUtils;
+  obj6 = MessageAccessibilityActions;
   return obj;
 };

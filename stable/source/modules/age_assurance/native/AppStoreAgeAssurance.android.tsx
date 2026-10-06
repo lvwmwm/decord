@@ -1,46 +1,97 @@
-// Module ID: 8878
-// Function ID: 8879
+// Module ID: 8032
+// Function ID: 8033
 // Name: AppStoreAgeAssurance
-// Dependencies: [5, 8879, 2]
+// Dependencies: [5, 8033, 2]
 
-// Module 8878 (AppStoreAgeAssurance)
-import PlayAgeSignals from "PlayAgeSignals" /* 8879 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 8032 (AppStoreAgeAssurance)
+import PlayAgeSignals from "PlayAgeSignals" /* 8033 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_3 = { [fn(8879).AgeSignalsStatus.SHARED]: "SHARED", [fn(8879).AgeSignalsStatus.NOT_SHARED]: "NOT_SHARED", [fn(8879).AgeSignalsStatus.VERIFICATION_REQUIRED]: "VERIFICATION_REQUIRED" };
-let closure_4 = { [fn(8879).AgeRangeSource.TIER_A]: "TIER_A", [fn(8879).AgeRangeSource.TIER_B]: "TIER_B", [fn(8879).AgeRangeSource.TIER_C]: "TIER_C", [fn(8879).AgeRangeSource.TIER_D]: "TIER_D" };
-let closure_5 = { [fn(8879).SignificantChangeStatus.APPROVED]: "APPROVED", [fn(8879).SignificantChangeStatus.PENDING]: "PENDING", [fn(8879).SignificantChangeStatus.DECLINED]: "DECLINED" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAgeAssurance.android.tsx");
+let c1, c2;
 
-export default {
+let closure_3 = { [PlayAgeSignals.AgeSignalsStatus.SHARED]: "SHARED", [PlayAgeSignals.AgeSignalsStatus.NOT_SHARED]: "NOT_SHARED", [PlayAgeSignals.AgeSignalsStatus.VERIFICATION_REQUIRED]: "VERIFICATION_REQUIRED" };
+let closure_4 = { [PlayAgeSignals.AgeRangeSource.TIER_A]: "TIER_A", [PlayAgeSignals.AgeRangeSource.TIER_B]: "TIER_B", [PlayAgeSignals.AgeRangeSource.TIER_C]: "TIER_C", [PlayAgeSignals.AgeRangeSource.TIER_D]: "TIER_D" };
+let closure_5 = { [PlayAgeSignals.SignificantChangeStatus.APPROVED]: "APPROVED", [PlayAgeSignals.SignificantChangeStatus.PENDING]: "PENDING", [PlayAgeSignals.SignificantChangeStatus.DECLINED]: "DECLINED" };
+let obj = {
   getAgeSignals() {
-    return (async () => {
-      function toAppStoreAgeCheck(ageLower) {
-        const obj = { platform: "android", ageLower: ageLower.ageLower, ageUpper: ageLower.ageUpper, googleAgeSignalsStatus: null, googleAgeRangeSource: null, googleSignificantChangeStatus: null };
-        const ageSignalsStatus = ageLower.ageSignalsStatus;
-        let tmp;
-        if (null != ageSignalsStatus) {
-          tmp = closure_1_3[ageSignalsStatus];
+    return (async (arg0, value) => {
+      let obj3;
+      let tmp2;
+      if (c2 === 2) {
+        c2 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
         }
-        obj.googleAgeSignalsStatus = tmp;
-        const ageRangeSource = ageLower.ageRangeSource;
-        let tmp2;
-        if (null != ageRangeSource) {
-          tmp2 = closure_1_4[ageRangeSource];
+      } else {
+        try {
+          let toAppStoreAgeCheck;
+          c2 = 2;
+          let tmp3 = c1;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              toAppStoreAgeCheck = function toAppStoreAgeCheck(ageLower) {
+                let tmp;
+                let tmp2;
+                let tmp3;
+                const ageSignalsStatus = ageLower.ageSignalsStatus;
+                const obj = { platform: "android", ageLower: ageLower.ageLower, ageUpper: ageLower.ageUpper, googleAgeSignalsStatus: tmp, googleAgeRangeSource: tmp2, googleSignificantChangeStatus: tmp3 };
+                tmp = undefined;
+                if (null != ageSignalsStatus) {
+                  tmp = closure_1_3[ageSignalsStatus];
+                }
+                const ageRangeSource = ageLower.ageRangeSource;
+                tmp2 = undefined;
+                if (null != ageRangeSource) {
+                  tmp2 = closure_1_4[ageRangeSource];
+                }
+                const significantChangeStatus = ageLower.significantChangeStatus;
+                tmp3 = undefined;
+                if (null != significantChangeStatus) {
+                  tmp3 = closure_1_5[significantChangeStatus];
+                }
+                return obj;
+              };
+              c1 = 1;
+              c2 = 1;
+              const obj5 = { value: obj3.getAgeSignals(), done: false };
+              obj3 = PlayAgeSignals;
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            c2 = 3;
+            let obj = { value: toAppStoreAgeCheck(value), done: true };
+            return obj;
+          }
+        } catch (tmp7) {
+          c2 = 3;
+          throw tmp7;
         }
-        obj.googleAgeRangeSource = tmp2;
-        const significantChangeStatus = ageLower.significantChangeStatus;
-        let tmp3;
-        if (null != significantChangeStatus) {
-          tmp3 = closure_1_5[significantChangeStatus];
-        }
-        obj.googleSignificantChangeStatus = tmp3;
-        return obj;
       }
-      await PlayAgeSignals.getAgeSignals();
-      return toAppStoreAgeCheck(arg1);
     })();
   }
 };
+const result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAgeAssurance.android.tsx");
+
+export default obj;

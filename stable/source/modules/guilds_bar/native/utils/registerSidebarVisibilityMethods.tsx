@@ -1,55 +1,62 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 15811
+// Function ID: 15812
 // Name: registerSidebarVisibilityMethods
-// Dependencies: [8001, 2063, 5687, 2]
+// Dependencies: [7149, 2073, 5751, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 16522 (registerSidebarVisibilityMethods)
-import SortedGuildStore2 from "SortedGuildStore" /* 5687 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 8001 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 15811 (registerSidebarVisibilityMethods)
+import SortedGuildStore2 from "SortedGuildStore" /* 5751 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 7149 */;
+import GuildStore from "GuildStore" /* 2073 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
+let set;
 
-({ setGetVisibleChannelIds: closure_0, setGetVisibleGuildIds: closure_1 } = SidebarVisibilityMethodStore);
+let _window;
+let map;
+({ setGetVisibleChannelIds: _window, setGetVisibleGuildIds: map } = SidebarVisibilityMethodStore);
 const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/registerSidebarVisibilityMethods.tsx");
 
 export const registerGuildVisibilityMethod = function registerGuildVisibilityMethod(fastListRef) {
   const current = fastListRef.current;
   if (null != current) {
-    closure_1(() => {
+    let tmp = closure_1;
+    let tmp2 = closure_1(function() {
       if (null == current) {
         return [];
       } else {
         const items = obj.getItems();
         const scrollPosition = obj.getScrollPosition();
         const containerSize = obj.containerSize;
+        let tmp = GuildStore;
         const guilds = GuildStore.getGuilds();
-        const node = SortedGuildStore.getGuildsTree();
+        let tmp2 = SortedGuildStore;
+        const guildsTree = SortedGuildStore.getGuildsTree();
+        const tmp3 = globalThis;
         const _Set = Set;
-        const set = new Set();
+        const self = this;
+        const self2 = this;
+        set = new Set();
         let item = items.forEach((recyclerKey) => {
-          let forEach = node.getNode(recyclerKey.recyclerKey);
-          if (undefined !== forEach) {
+          let tmp;
+          const element = node.getNode(recyclerKey.recyclerKey);
+          if (undefined !== element) {
             const layoutStart = recyclerKey.layoutStart;
             let tmp2 = layoutStart + recyclerKey.layoutSize >= closure_0;
             if (tmp2) {
               tmp2 = layoutStart <= tmp + containerSize;
             }
             if (tmp2) {
-              if (forEach.type === constants.FOLDER) {
-                let children = forEach.children;
+              let children;
+              if (element.type === constants.FOLDER) {
+                children = element.children;
               } else {
-                children = [forEach];
+                children = [element];
               }
-              forEach = children.forEach;
-              const item = forEach((type) => {
-                let tmp = type.type === set.GUILD;
-                if (tmp) {
-                  tmp = type.id in closure_1_2;
-                }
+              const item = children.forEach((type) => {
+                const tmp = type.type === set.GUILD && type.id in closure_1_2;
                 if (tmp) {
                   set.add(type.id);
                 }
@@ -64,10 +71,12 @@ export const registerGuildVisibilityMethod = function registerGuildVisibilityMet
   }
 };
 export const registerFastListChannelVisibilityMethod = function registerFastListChannelVisibilityMethod(ref, guildChannels) {
-  closure_0 = guildChannels;
+  const _window = guildChannels;
   const current = ref.current;
   if (null != current) {
+    const tmp = React;
     React(() => {
+      let containerSize;
       if (null == containerSize) {
         return [];
       } else {
@@ -83,23 +92,18 @@ export const registerFastListChannelVisibilityMethod = function registerFastList
               if (channelFromSectionRow != null) {
                 channel = channelFromSectionRow.channel;
               }
-              if (null != channel) {
-                const layoutStart = section.layoutStart;
-                let tmp12 = layoutStart + section.layoutSize >= channelFromSectionRow;
-                if (tmp12) {
-                  tmp12 = layoutStart <= tmp11 + containerSize;
-                }
-                if (tmp12) {
-                  items1.push(tmp8.id);
-                }
-              }
             } catch (err) {
             }
-          } catch (tmp17) {
-            if (null == tmp2) {
-              return tmp;
-            } else {
-              throw tmp17;
+            if (null != tmp) {
+              const layoutStart = section.layoutStart;
+              const tmp10 = layoutStart + section.layoutSize >= channelFromSectionRow && layoutStart <= tmp9 + containerSize;
+              if (tmp10) {
+                items1.push(tmp.id);
+              }
+            }
+          } catch (tmp15) {
+            if (null != tmp) {
+              throw tmp15;
             }
           }
         });

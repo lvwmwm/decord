@@ -1,47 +1,56 @@
-// Module ID: 12437
-// Function ID: 12438
+// Module ID: 11523
+// Function ID: 11524
 // Name: ApplicationCommandValidationUtils
-// Dependencies: [5242, 7797, 9558, 1115, 12438, 2]
+// Dependencies: [5306, 6947, 8710, 1127, 11524, 2]
 // Exports: getValidationResults
 
-// Module 12437 (ApplicationCommandValidationUtils)
-import util from "util" /* 1115 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5242 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7797 */;
-import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 9558 */;
-import ApplicationCommandValidatorsDefault from "ApplicationCommandValidators" /* 12438 */;
+// Module 11523 (ApplicationCommandValidationUtils)
+import intl3 from "intl" /* 1127 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
+import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 8710 */;
+import ApplicationCommandValidatorsDefault from "ApplicationCommandValidators" /* 11524 */;
 import size from "module_2" /* 2 */;
 
 function validateOptionContent(allowEmptyValues) {
+  let channelId;
+  let commandOrigin;
+  let content;
+  let guildId;
+  let intl2;
+  let option;
   ({ option, content, guildId, channelId, commandOrigin } = allowEmptyValues);
+  allowEmptyValues = allowEmptyValues.allowEmptyValues;
   if (commandOrigin === undefined) {
     commandOrigin = ApplicationCommandTypes.CommandOrigin.CHAT;
   }
   let str = "";
   if (null != content) {
     const obj2 = { content };
-    str = ApplicationCommandOptionUtils.getString(obj2, "content").trim();
-    const str3 = ApplicationCommandOptionUtils.getString(obj2, "content");
+    const obj = ApplicationCommandOptionUtils;
+    const str3 = obj.getString(obj2, "content");
+    str = str3.trim();
   }
   const required = option.required;
   if (null == content) {
+    let obj4;
     if (required) {
-      const obj3 = { success: false, error: null };
-      const intl2 = util.intl;
-      obj3.error = intl2.string(util.t.JZJQL2);
-      let obj4 = obj3;
+      const obj3 = { success: false, error: intl2.string(intl3.t.JZJQL2) };
+      intl2 = intl3.intl;
+      obj4 = obj3;
     } else {
       obj4 = { success: true };
     }
     return obj4;
   } else if ("" === str) {
-    if (allowEmptyValues.allowEmptyValues) {
-      let obj5 = { success: true };
+    let obj5;
+    if (allowEmptyValues) {
+      obj5 = { success: true };
     } else {
       const obj6 = { success: false, error: null };
       if (required) {
-        const intl = util.intl;
-        obj6.error = intl.string(util.t.JZJQL2);
+        const intl = intl3.intl;
+        obj6.error = intl.string(intl3.t.JZJQL2);
         obj5 = obj6;
       } else {
         obj6.error = getValidationErrorText(option);
@@ -50,14 +59,16 @@ function validateOptionContent(allowEmptyValues) {
     }
     return obj5;
   } else {
+    let first;
     if (content.length > 1) {
+      first = { type: "text", text: str };
       const obj7 = { type: "text", text: str };
-      let first = obj7;
     } else {
       first = content[0];
     }
     const tmp8 = ApplicationCommandValidatorsDefault;
     const tmp15 = tmp8[option.type](first, option, channelId, guildId, commandOrigin);
+    const tmp16 = tmp15.success || null != tmp15.error;
     if (!tmp16) {
       tmp15.error = getValidationErrorText(option);
     }
@@ -74,7 +85,7 @@ export const getValidationResults = function getValidationResults(activeCommand,
     return obj;
   } else {
     for (const item10012 of options) {
-      let obj2 = { option: item10012, content: arg1[item10012.name], guildId: arg2, channelId: arg3, allowEmptyValues: arg4 };
+      let obj2 = { option: item10012, content: optionValues[item10012.name], guildId: guild_id, channelId: id, allowEmptyValues };
       obj[item10012.name] = validateOptionContent(obj2);
       continue;
     }

@@ -1,48 +1,131 @@
-// Module ID: 12921
-// Function ID: 12922
+// Module ID: 12046
+// Function ID: 12047
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [4780, 1177, 504, 4524, 4789, 4792, 2]
-// Exports: default
+// Dependencies: [4826, 1189, 558, 576, 504, 4570, 4838, 4841, 2]
 
-// Module 12921 (useChatPlaceholderAnimatedStyles)
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
-import timingPresets from "timingPresets" /* 4792 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+// Module 12046 (useChatPlaceholderAnimatedStyles)
+import native from "native" /* 1189 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import timingPresets from "timingPresets" /* 4841 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let TIMING_CONFIG = { duration: 1300, easing: fn(1177).STANDARD_EASING };
-const __initData = { code: "function useChatPlaceholderAnimatedStylesTsx1(){const{visible,animated,useReducedMotion,withRepeat,withSequence,withTiming,timingNone,TIMING_CONFIG}=this.__closure;if(!visible){return{opacity:0};}else if(!animated||useReducedMotion){return{opacity:0.7};}return{opacity:withRepeat(withSequence(withTiming(0.3,timingNone),withTiming(0.7,TIMING_CONFIG),withTiming(0.3,TIMING_CONFIG)),-1)};}" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/chat/native/placeholder/useChatPlaceholderAnimatedStyles.tsx");
-
-export default function useChatPlaceholderAnimatedStyles(visible) {
+let TIMING_CONFIG = { duration: 1300, easing: native.STANDARD_EASING };
+const __initData = { code: "function useChatPlaceholderAnimatedStylesTsx1(){const{visible,animated,useReducedMotion,withRepeat,withSequence,withTiming,timingNone,TIMING_CONFIG}=this.__closure;if(!visible){return{opacity:0};}else{if(!animated||useReducedMotion){return{opacity:0.7};}}return{opacity:withRepeat(withSequence(withTiming(0.3,timingNone),withTiming(0.7,TIMING_CONFIG),withTiming(0.3,TIMING_CONFIG)),-1)};}" };
+const __initData2 = { code: "function useChatPlaceholderAnimatedStylesTsx2(){const{visible,animated,useReducedMotion,withRepeat,withSequence,withTiming,timingNone,TIMING_CONFIG}=this.__closure;if(!visible){return{opacity:0};}else if(!animated||useReducedMotion){return{opacity:0.7};}return{opacity:withRepeat(withSequence(withTiming(0.3,timingNone),withTiming(0.7,TIMING_CONFIG),withTiming(0.3,TIMING_CONFIG)),-1)};}" };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+  let animated;
+  let stateFromStores;
+  let tmp4;
+  let tmp5;
+  let tmp = visible;
+  let tmp2 = animated;
+  TIMING_CONFIG = visible(animated[3]);
+  const cResult = TIMING_CONFIG.c(2);
+  visible = visible.visible;
+  animated = visible.animated;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [stateFromStores];
+    const fn = function h() {
+      return stateFromStores.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(tmp2[4]);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const fn2 = function _() {
+    let obj;
+    let obj5;
+    let withRepeat;
+    let withSequence;
+    let withTimingResult;
+    let withTimingResult1;
+    const tmp = visible;
+    if (tmp) {
+      const tmp2 = animated;
+      if (tmp2) {
+        let obj2;
+        const tmp3 = stateFromStores;
+        if (!tmp3) {
+          obj2 = { opacity: withRepeat(withSequence(withTimingResult, withTimingResult1, obj5.withTiming(0.3, obj)), -1) };
+          withRepeat = ReanimatedRexport.withRepeat;
+          ReanimatedRexport;
+          withSequence = ReanimatedRexport.withSequence;
+          ReanimatedRexport;
+          const obj3 = timing;
+          withTimingResult = obj3.withTiming(0.3, timingPresets.timingNone);
+          const obj4 = timing;
+          withTimingResult1 = obj4.withTiming(0.7, obj);
+          obj5 = timing;
+        }
+        obj = obj2;
+      }
+      obj2 = { opacity: 0.7 };
+    } else {
+      obj = { opacity: 0 };
+    }
+    return obj;
+  };
+  const tmpResult2 = tmp(tmp2[5]);
+  let obj2 = { visible, animated, useReducedMotion: stateFromStores, withRepeat: tmp(tmp2[5]).withRepeat, withSequence: tmp(tmp2[5]).withSequence, withTiming: tmp(tmp2[6]).withTiming, timingNone: tmp(tmp2[7]).timingNone, TIMING_CONFIG };
+  fn2.__closure = obj2;
+  fn2.__workletHash = 7324174224540;
+  fn2.__initData = __initData;
+  return tmpResult2.useAnimatedStyle(fn2);
+}) : ((visible) => {
   visible = visible.visible;
   const animated = visible.animated;
   let stateFromStores;
-  TIMING_CONFIG = visible(animated[2]);
+  TIMING_CONFIG = visible(animated[4]);
   const items = [stateFromStores];
   stateFromStores = TIMING_CONFIG.useStateFromStores(items, () => stateFromStores.useReducedMotion);
-  const fn = function c() {
-    if (visible) {
-      if (animated) {
-        if (!stateFromStores) {
-          let obj = { opacity: null };
-          const obj2 = ReanimatedRexport;
-          const obj3 = ReanimatedRexport;
-          const withTimingResult = timing.withTiming(0.3, timingPresets.timingNone);
-          const withTimingResult1 = timing.withTiming(0.7, obj);
-          obj.opacity = obj2.withRepeat(obj3.withSequence(withTimingResult, withTimingResult1, timing.withTiming(0.3, obj)), -1);
+  let obj2 = visible(animated[5]);
+  const fn = function h() {
+    let obj;
+    let obj5;
+    let withRepeat;
+    let withSequence;
+    let withTimingResult;
+    let withTimingResult1;
+    const tmp = visible;
+    if (tmp) {
+      const tmp2 = animated;
+      if (tmp2) {
+        let obj2;
+        const tmp3 = stateFromStores;
+        if (!tmp3) {
+          obj2 = { opacity: withRepeat(withSequence(withTimingResult, withTimingResult1, obj5.withTiming(0.3, obj)), -1) };
+          withRepeat = ReanimatedRexport.withRepeat;
+          ReanimatedRexport;
+          withSequence = ReanimatedRexport.withSequence;
+          ReanimatedRexport;
+          const obj3 = timing;
+          withTimingResult = obj3.withTiming(0.3, timingPresets.timingNone);
+          const obj4 = timing;
+          withTimingResult1 = obj4.withTiming(0.7, obj);
+          obj5 = timing;
         }
+        obj = obj2;
       }
-      obj = { opacity: 0.7 };
+      obj2 = { opacity: 0.7 };
     } else {
-      return { opacity: 0 };
+      obj = { opacity: 0 };
     }
+    return obj;
   };
-  let obj2 = visible(animated[3]);
-  fn.__closure = { visible, animated, useReducedMotion: stateFromStores, withRepeat: visible(animated[3]).withRepeat, withSequence: visible(animated[3]).withSequence, withTiming: visible(animated[4]).withTiming, timingNone: visible(animated[5]).timingNone, TIMING_CONFIG };
-  fn.__workletHash = 3375288363194;
-  fn.__initData = __initData;
+  let obj3 = { visible, animated, useReducedMotion: stateFromStores, withRepeat: visible(animated[5]).withRepeat, withSequence: visible(animated[5]).withSequence, withTiming: visible(animated[6]).withTiming, timingNone: visible(animated[7]).timingNone, TIMING_CONFIG };
+  fn.__closure = obj3;
+  fn.__workletHash = 4078218656505;
+  fn.__initData = __initData2;
   return obj2.useAnimatedStyle(fn);
-};
+});
+const result = size.fileFinishedImporting("modules/chat/native/placeholder/useChatPlaceholderAnimatedStyles.tsx");
+
+export default tmp2;

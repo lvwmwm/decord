@@ -1,61 +1,72 @@
-// Module ID: 15759
-// Function ID: 15760
+// Module ID: 15020
+// Function ID: 15021
 // Name: AndroidNotificationSettingsStore
-// Dependencies: [5, 1243, 1364, 9589, 1248, 4411, 2]
-// Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
+// Dependencies: [5, 1255, 1370, 8741, 1260, 558, 576, 4455, 2]
+// Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled
 
-// Module 15759 (AndroidNotificationSettingsStore)
-import _mod4411 from "module_4411" /* 4411 */;
-import PushNotificationDefault from "PushNotification" /* 9589 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 15020 (AndroidNotificationSettingsStore)
+import react from "react" /* 576 */;
+import PushNotificationDefault from "PushNotification" /* 8741 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import module_1255 from "module_1255" /* 1255 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c3, c4;
 
-require = fn;
-let closure_5 = async function _initializeAndroidNotificationSettingsStore(arg0, value) {
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
-        } else {
-          const isVibrationsEnabled = tmp3;
-          const isLightsEnabled = tmp7;
-          closure_128_0 = undefined;
-          closure_128_1 = undefined;
-          closure_128_2 = undefined;
-          closure_128_3 = undefined;
-          if (obj16.isAndroid()) {
-            c2 = 1;
-            c3 = 2;
-            c4 = 1;
-            const obj5 = { value: PushNotificationDefault.getLightsEnabled(), done: false };
-            return obj5;
-          }
-          obj16 = require("PlatformUtils");
-        }
+let tmp;
+const _slicedToArray = tmp(4455);
+let obj = function _initializeAndroidNotificationSettingsStore() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    let closure_1;
+    let obj12;
+    let obj3;
+    let obj6;
+    let obj9;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        if (1 === tmp7) {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c2;
+      try {
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let isLightsEnabled;
+            let isVibrationsEnabled;
+            let isSoundsEnabled;
+            let isNotifyEveryTime;
+            const obj16 = require("PlatformUtils");
+            if (obj16.isAndroid()) {
+              c2 = 1;
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { value: obj12.getLightsEnabled(), done: false };
+              obj12 = PushNotificationDefault;
+              return obj5;
+            }
+          }
+        } else if (1 === c3) {
           c2 = 0;
-        } else if (2 === tmp7) {
+        } else if (2 === c3) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -65,13 +76,14 @@ let closure_5 = async function _initializeAndroidNotificationSettingsStore(arg0,
             const obj7 = { value, done: true };
             return obj7;
           } else {
-            closure_128_0 = value;
+            isLightsEnabled = value;
             c3 = 3;
             c4 = 1;
-            const obj8 = { value: closure_129_1(closure_129_2[3]).getVibrationsEnabled(), done: false };
+            const obj8 = { value: obj9.getVibrationsEnabled(), done: false };
+            obj9 = closure_129_1(closure_129_2[3]);
             return obj8;
           }
-        } else if (3 === tmp7) {
+        } else if (3 === c3) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -81,13 +93,14 @@ let closure_5 = async function _initializeAndroidNotificationSettingsStore(arg0,
             const obj10 = { value, done: true };
             return obj10;
           } else {
-            closure_128_1 = value;
+            isVibrationsEnabled = value;
             c3 = 4;
             c4 = 1;
-            const obj11 = { value: closure_129_1(closure_129_2[3]).getSoundsEnabled(), done: false };
+            const obj11 = { value: obj6.getSoundsEnabled(), done: false };
+            obj6 = closure_129_1(closure_129_2[3]);
             return obj11;
           }
-        } else if (4 === tmp7) {
+        } else if (4 === c3) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -97,87 +110,159 @@ let closure_5 = async function _initializeAndroidNotificationSettingsStore(arg0,
             const obj13 = { value, done: true };
             return obj13;
           } else {
-            closure_128_2 = value;
+            isSoundsEnabled = value;
             c3 = 5;
             c4 = 1;
-            const obj14 = { value: closure_129_1(closure_129_2[3]).shouldAndroidNotifyEveryTime(), done: false };
+            const obj14 = { value: obj3.shouldAndroidNotifyEveryTime(), done: false };
+            obj3 = closure_129_1(closure_129_2[3]);
             return obj14;
           }
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
-        } else if (arg0 !== 2) {
-          closure_128_3 = value;
-          closure_129_0(closure_129_2[4]).batchUpdates(() => {
-            state.setState({ isLightsEnabled, isVibrationsEnabled, isSoundsEnabled, isNotifyEveryTime });
+        } else if (arg0 === 2) {
+          c2 = 0;
+          c4 = 3;
+          const obj15 = { value, done: true };
+          return obj15;
+        } else {
+          isNotifyEveryTime = value;
+          obj = closure_129_0(closure_129_2[4]);
+          obj.batchUpdates(() => {
+            obj = { isLightsEnabled, isVibrationsEnabled, isSoundsEnabled, isNotifyEveryTime };
+            state.setState(obj);
           });
           c2 = 0;
-          const obj = closure_129_0(closure_129_2[4]);
         }
-        c2 = 0;
         c4 = 3;
-        const obj15 = { value, done: true };
-        return obj15;
-      }
-      c4 = 3;
-    } catch (tmp27) {
-      if (tmp4 === c2) {
-        c4 = tmp2;
-        throw tmp27;
-      } else {
-        c3 = tmp;
+        return { value: "IconComponent", done: null };
+      } catch (tmp24) {
+        if (0 === c2) {
+          c4 = 3;
+          throw tmp24;
+        } else {
+          c3 = 1;
+        }
       }
     }
-  }
+  });
+  return obj(...arguments);
 };
-const identity = fn(1243);
-let closure_4 = identity.createWithEqualityFn(() => ({ isLightsEnabled: "call", isVibrationsEnabled: "PX_16", isSoundsEnabled: "__d", isNotifyEveryTime: "Array" }));
-const size = fn(2);
+let closure_4 = module_1255.createWithEqualityFn(() => ({ isLightsEnabled: "status", isVibrationsEnabled: "construct", isSoundsEnabled: "type", isNotifyEveryTime: "to" }));
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(isLightsEnabled) {
+      return isLightsEnabled.isLightsEnabled;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(first, _slicedToArray.shallow);
+}) : (() => closure_4((isLightsEnabled) => isLightsEnabled.isLightsEnabled, _slicedToArray.shallow));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(isVibrationsEnabled) {
+      return isVibrationsEnabled.isVibrationsEnabled;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(first, _slicedToArray.shallow);
+}) : (() => closure_4((isVibrationsEnabled) => isVibrationsEnabled.isVibrationsEnabled, _slicedToArray.shallow));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(isSoundsEnabled) {
+      return isSoundsEnabled.isSoundsEnabled;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(first, _slicedToArray.shallow);
+}) : (() => closure_4((isSoundsEnabled) => isSoundsEnabled.isSoundsEnabled, _slicedToArray.shallow));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(isNotifyEveryTime) {
+      return isNotifyEveryTime.isNotifyEveryTime;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(first, _slicedToArray.shallow);
+}) : (() => closure_4((isNotifyEveryTime) => isNotifyEveryTime.isNotifyEveryTime, _slicedToArray.shallow));
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx");
 
 export const initializeAndroidNotificationSettingsStore = function initializeAndroidNotificationSettingsStore() {
-  const self = this;
-  const apply = closure_5.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
-export const useAndroidNotificationLightsEnabled = function useAndroidNotificationLightsEnabled() {
-  return closure_4((isLightsEnabled) => isLightsEnabled.isLightsEnabled, _mod4411.shallow);
-};
+export const useAndroidNotificationLightsEnabled = tmp2;
 export const setAndroidNotificationLightsEnabled = function setAndroidNotificationLightsEnabled(isLightsEnabled) {
+  let state;
   _require = isLightsEnabled;
-  require("ReactBatchUpdates").batchUpdates(() => state.setState({ isLightsEnabled }));
-  const obj = require("ReactBatchUpdates");
-  PushNotificationDefault.setLightsEnabled(isLightsEnabled);
+  obj = require("react-native");
+  obj.batchUpdates(() => {
+    obj = { isLightsEnabled };
+    return state.setState(obj);
+  });
+  const obj2 = PushNotificationDefault;
+  obj2.setLightsEnabled(isLightsEnabled);
 };
-export const useAndroidNotificationVibrationsEnabled = function useAndroidNotificationVibrationsEnabled() {
-  return closure_4((isVibrationsEnabled) => isVibrationsEnabled.isVibrationsEnabled, _mod4411.shallow);
-};
+export const useAndroidNotificationVibrationsEnabled = tmp3;
 export const setAndroidNotificationVibrationsEnabled = function setAndroidNotificationVibrationsEnabled(isVibrationsEnabled) {
+  let state;
   _require = isVibrationsEnabled;
-  require("ReactBatchUpdates").batchUpdates(() => state.setState({ isVibrationsEnabled }));
-  const obj = require("ReactBatchUpdates");
-  PushNotificationDefault.setVibrationsEnabled(isVibrationsEnabled);
+  obj = require("react-native");
+  obj.batchUpdates(() => {
+    obj = { isVibrationsEnabled };
+    return state.setState(obj);
+  });
+  const obj2 = PushNotificationDefault;
+  obj2.setVibrationsEnabled(isVibrationsEnabled);
 };
-export const useAndroidNotificationSoundsEnabled = function useAndroidNotificationSoundsEnabled() {
-  return closure_4((isSoundsEnabled) => isSoundsEnabled.isSoundsEnabled, _mod4411.shallow);
-};
+export const useAndroidNotificationSoundsEnabled = tmp4;
 export const setAndroidNotificationSoundsEnabled = function setAndroidNotificationSoundsEnabled(isSoundsEnabled) {
+  let state;
   _require = isSoundsEnabled;
-  require("ReactBatchUpdates").batchUpdates(() => state.setState({ isSoundsEnabled }));
-  const obj = require("ReactBatchUpdates");
-  PushNotificationDefault.setSoundsEnabled(isSoundsEnabled);
+  obj = require("react-native");
+  obj.batchUpdates(() => {
+    obj = { isSoundsEnabled };
+    return state.setState(obj);
+  });
+  const obj2 = PushNotificationDefault;
+  obj2.setSoundsEnabled(isSoundsEnabled);
 };
-export const useAndroidMessageNotificationsEnabled = function useAndroidMessageNotificationsEnabled() {
-  return closure_4((isNotifyEveryTime) => isNotifyEveryTime.isNotifyEveryTime, _mod4411.shallow);
-};
+export const useAndroidMessageNotificationsEnabled = tmp5;
 export const setAndroidMessageNotificationsEnabled = function setAndroidMessageNotificationsEnabled(isNotifyEveryTime) {
+  let state;
   _require = isNotifyEveryTime;
-  require("ReactBatchUpdates").batchUpdates(() => state.setState({ isNotifyEveryTime }));
-  const obj = require("ReactBatchUpdates");
-  const result = PushNotificationDefault.setAndroidNotifyEveryTime(isNotifyEveryTime);
+  obj = require("react-native");
+  obj.batchUpdates(() => {
+    obj = { isNotifyEveryTime };
+    return state.setState(obj);
+  });
+  const obj2 = PushNotificationDefault;
+  const result = obj2.setAndroidNotifyEveryTime(isNotifyEveryTime);
 };

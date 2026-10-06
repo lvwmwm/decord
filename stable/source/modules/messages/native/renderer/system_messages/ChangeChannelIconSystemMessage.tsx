@@ -1,26 +1,35 @@
-// Module ID: 8273
-// Function ID: 8274
+// Module ID: 7429
+// Function ID: 7430
 // Name: ChangeChannelIconSystemMessage
-// Dependencies: [2041, 8243, 8250, 8252, 8254, 1115, 8257, 2]
+// Dependencies: [2051, 7399, 7406, 7408, 7410, 1127, 7413, 2]
 // Exports: createChangeChannelIconSystemMessage
 
-// Module 8273 (ChangeChannelIconSystemMessage)
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8243 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8250 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8252 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8254 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 7429 (ChangeChannelIconSystemMessage)
+import intl3 from "intl" /* 1127 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7399 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7406 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7408 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7413 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let tmp2;
+const createCommonMessageDefault = tmp2(7410);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelIconSystemMessage.tsx");
 
 export const createChangeChannelIconSystemMessage = function createChangeChannelIconSystemMessage(message) {
+  let formatToPartsResult;
+  let intl2;
+  let items;
+  let obj3;
+  let roleStyle;
+  let theme;
   message = message.message;
   ({ theme, roleStyle } = message);
-  const tmp3 = resolveMessageContentColorsDefault(theme);
-  const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
-  const tmp6 = formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle });
+  const tmp4 = resolveMessageContentColorsDefault(theme);
+  const obj = useAuthorWithProcessedColor;
+  const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
+  const tmp7 = formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle });
   const channel = ChannelStore.getChannel(message.channel_id);
   let flag;
   if (channel != null) {
@@ -32,41 +41,39 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
   if (flag == null) {
     flag = false;
   }
-  const tmp8 = createCommonMessageDefault(message);
-  const intl = tmp4(1115).intl;
+  const tmp9 = createCommonMessageDefault(message);
+  const intl = tmp5(1127).intl;
   const formatToParts = intl.formatToParts;
-  const t = tmp4(1115).t;
+  const t = tmp5(1127).t;
   if (flag) {
-    const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6, onEditGroup: null };
     let linkColor;
-    if (tmp3 != null) {
-      linkColor = tmp3.linkColor;
+    const hfeYXC = t.hfeYXC;
+    const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp7, onEditGroup: obj3 };
+    if (tmp4 != null) {
+      linkColor = tmp4.linkColor;
     }
-    const obj3 = { action: "bindOpenGdmCustomizeActionSheet", linkColor, messageChannelId: message.channel_id, medium: true };
-    obj2.onEditGroup = obj3;
-    let formatToPartsResult = formatToParts(t.hfeYXC, obj2);
+    obj3 = { action: "bindOpenGdmCustomizeActionSheet", linkColor, messageChannelId: message.channel_id, medium: true };
+    formatToPartsResult = formatToParts(hfeYXC, obj2);
   } else {
-    const obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6 };
+    const obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp7 };
     formatToPartsResult = formatToParts(t.wypJZ0, obj4);
   }
-  const merged = Object.assign(tmp8);
-  let tmp12;
+  const obj5 = { content: formatToPartsResult };
+  const merged = Object.assign(tmp9);
+  let tmp13;
   if (flag) {
-    let accessibilityActions = tmp8.accessibilityActions;
+    let accessibilityActions = tmp9.accessibilityActions;
     if (accessibilityActions == null) {
       accessibilityActions = [];
     }
-    const obj6 = { accessibilityActions: null };
-    const items = [];
-    const obj7 = { label: null, name: null };
-    const intl2 = tmp4(1115).intl;
-    obj7.label = intl2.string(tmp4(1115).t["5Q9+/L"]);
-    obj7.name = tmp4(8257).MessageAccessibilityAction.EDIT_GDM;
-    items[HermesBuiltin.arraySpread(accessibilityActions, 0)] = obj7;
-    obj6.accessibilityActions = items;
-    tmp12 = obj6;
-    const arraySpreadResult = HermesBuiltin.arraySpread(accessibilityActions, 0);
+    const obj6 = { accessibilityActions: items };
+    items = [];
+    const obj7 = { label: intl2.string(intl3.t["5Q9+/L"]), name: MessageAccessibilityActions.MessageAccessibilityAction.EDIT_GDM };
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, accessibilityActions, 0);
+    intl2 = tmp5(1127).intl;
+    items[arraySpreadResult] = obj7;
+    tmp13 = obj6;
   }
-  const merged1 = Object.assign(tmp12);
-  return { content: formatToPartsResult };
+  const merged1 = Object.assign(tmp13);
+  return obj5;
 };

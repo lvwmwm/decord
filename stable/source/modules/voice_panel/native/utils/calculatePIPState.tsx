@@ -1,19 +1,22 @@
-// Module ID: 17556
-// Function ID: 17557
+// Module ID: 17010
+// Function ID: 17011
 // Name: calculatePIPState
-// Dependencies: [4804, 4810, 12555, 4809, 4840, 17557, 2]
+// Dependencies: [4853, 4859, 11648, 4858, 4889, 16845, 2]
 // Exports: default
 
-// Module 17556 (calculatePIPState)
-import StreamKeyUtils from "StreamKeyUtils" /* 4840 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17557 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
+// Module 17010 (calculatePIPState)
+import CallConstants from "CallConstants" /* 4858 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4889 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 16845 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const VoicePanelModes = fn(12555).VoicePanelModes;
-const ParticipantTypes = fn(4809).ParticipantTypes;
-const size = fn(2);
+let set;
+
+const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
+const ParticipantTypes = CallConstants.ParticipantTypes;
 const result = size.fileFinishedImporting("modules/voice_panel/native/utils/calculatePIPState.tsx");
 
 export default function calculatePIPState(channelId, getTargetDimensions, lastParticipantId, speakingUserId, focusedId) {
@@ -26,16 +29,21 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
     }
     tmp = type === ParticipantTypes.ACTIVITY;
   }
-  const set = new Set();
+  set = new Set();
   const currentUserActiveStream = ApplicationStreamingStore.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    set.add(StreamKeyUtils.encodeStreamKey(currentUserActiveStream));
+    const add = set.add;
+    const obj2 = StreamKeyUtils;
+    add(obj2.encodeStreamKey(currentUserActiveStream));
   }
   let tmp10 = focusedId.mode === VoicePanelModes.PANEL;
+  const tmp11 = null != focusedId.focusedId && tmp10;
   if (tmp11) {
     set.add(focusedId.focusedId);
   }
-  const pIPParticipantToShow = VoicePanelPIPUtils.computePIPParticipantToShow({ channelId, lastParticipantId, speakingUserId, focusedParticipantId: focusedId.focusedId, blockList: set, panelMode: focusedId.mode, showSecondaryPIP: focusedId.showSecondaryPIP });
+  const obj = { channelId, lastParticipantId, speakingUserId, focusedParticipantId: focusedId.focusedId, blockList: set, panelMode: focusedId.mode, showSecondaryPIP: focusedId.showSecondaryPIP };
+  const obj3 = VoicePanelPIPUtils;
+  const pIPParticipantToShow = obj3.computePIPParticipantToShow(obj);
   let type1;
   if (pIPParticipantToShow != null) {
     type1 = pIPParticipantToShow.type;
@@ -59,19 +67,20 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
     }
     tmp18 = tmp20;
   }
-  const obj = { channelId, lastParticipantId, speakingUserId, focusedParticipantId: focusedId.focusedId, blockList: set, panelMode: focusedId.mode, showSecondaryPIP: focusedId.showSecondaryPIP };
-  tmp11 = null != focusedId.focusedId && tmp10;
   let id1;
+  const computePIPSize = VoicePanelPIPUtils.computePIPSize;
+  getTargetDimensions = getTargetDimensions.getTargetDimensions;
+  VoicePanelPIPUtils;
   if (pIPParticipantToShow != null) {
     id1 = pIPParticipantToShow.id;
   }
-  let SquarePIPReferenceDimensions = getTargetDimensions.getTargetDimensions(id1);
+  let SquarePIPReferenceDimensions = getTargetDimensions(id1);
   if (SquarePIPReferenceDimensions == null) {
-    SquarePIPReferenceDimensions = tmp13(17557).SquarePIPReferenceDimensions;
+    SquarePIPReferenceDimensions = tmp13(16845).SquarePIPReferenceDimensions;
   }
   if (tmp10) {
     tmp10 = tmp;
   }
-  const tmp13Result = VoicePanelPIPUtils;
-  return { participant: pIPParticipantToShow, dimensions: VoicePanelPIPUtils.computePIPSize(SquarePIPReferenceDimensions, tmp18, tmp10, focusedId.showSecondaryPIP) };
+  const obj4 = { participant: pIPParticipantToShow, dimensions: computePIPSize(SquarePIPReferenceDimensions, tmp18, tmp10, focusedId.showSecondaryPIP) };
+  return obj4;
 };

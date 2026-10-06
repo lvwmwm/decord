@@ -1,24 +1,32 @@
-// Module ID: 15517
-// Function ID: 15518
+// Module ID: 14777
+// Function ID: 14778
 // Name: PremiumRestorationAlert
-// Dependencies: [19, 7514, 21, 15518, 504, 2]
+// Dependencies: [19, 6659, 21, 14778, 504, 2]
 
-// Module 15517 (PremiumRestorationAlert)
-import UntouchableAlertDefault from "UntouchableAlert" /* 15518 */;
-import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7514 */;
-import initialize from "initialize" /* 504 */;
+// Module 14777 (PremiumRestorationAlert)
+import Fragment from "Fragment" /* 21 */;
+import UntouchableAlertDefault from "UntouchableAlert" /* 14778 */;
+import react from "react" /* 19 */;
+import IAPStore from "IAPStore" /* 6659 */;
+import get_initialized from "get initialized" /* 504 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const PureComponent = noop.PureComponent;
+const jsx = Fragment.jsx;
+const PureComponent = react.PureComponent;
 class PremiumRestorationAlert extends PureComponent {
+  render() {
+    let isBusy;
+    let onClose;
+    ({ isBusy, onClose } = this.props);
+    return jsx(UntouchableAlertDefault, { loading, onClose });
+  }
 }
-PremiumRestorationAlert.prototype["render"] = function render() {
-  ({ isBusy, onClose } = this.props);
-  return jsx(UntouchableAlertDefault, { loading, onClose });
-};
+const prototype = PremiumRestorationAlert.prototype;
 const items = [IAPStore];
-const size = fn(2);
+const tmp4 = get_initialized.connectStores(items, () => {
+  const obj = { isBusy: IAPStore.isBusy() };
+  return obj;
+})(PremiumRestorationAlert);
 const result = size.fileFinishedImporting("components_native/premium/PremiumRestorationAlert.tsx");
 
-export default initialize.connectStores(items, () => ({ isBusy: IAPStore.isBusy() }))(PremiumRestorationAlert);
+export default tmp4;

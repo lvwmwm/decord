@@ -1,15 +1,17 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 6740
+// Function ID: 6741
 // Name: LoginHandoffSource
-// Dependencies: [2048, 1084, 4942, 5703, 2]
+// Dependencies: [2058, 1096, 4991, 5767, 2]
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 7594 (LoginHandoffSource)
-import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
-import ChannelConstants from "ChannelConstants" /* 2048 */;
-import LinkUtils from "LinkUtils" /* 4942 */;
+// Module 6740 (LoginHandoffSource)
+import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import LinkUtils from "LinkUtils" /* 4991 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const UserSettingsURLUtils = tmp(5767);
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 const UserSettingsPath = UserSettingsConstants.UserSettingsPath;
 const LoginHandoffSource = { ROLE_SUBSCRIPTION: "role_subscription", ROLE_SUBSCRIPTION_SETTING: "role_subscription_setting", GUILD_ANALYTICS_SETTING: "guild_analytics_setting", GAME_CLAIM: "game_claim" };
@@ -17,16 +19,18 @@ const result = size.fileFinishedImporting("modules/auth/LoginHandoffSource.tsx")
 
 export { LoginHandoffSource };
 export const getLoginHandoffSourceFromRedirectTo = function getLoginHandoffSourceFromRedirectTo(arg0) {
+  let ROLE_SUBSCRIPTION_SETTING;
   const str = decodeURIComponent(arg0);
   const obj = LinkUtils;
   const tryParseChannelPathResult = obj.tryParseChannelPath(str);
   if (null != tryParseChannelPathResult) {
     if (tryParseChannelPathResult.channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
-      let ROLE_SUBSCRIPTION_SETTING = obj.ROLE_SUBSCRIPTION;
+      ROLE_SUBSCRIPTION_SETTING = obj.ROLE_SUBSCRIPTION;
     }
     return ROLE_SUBSCRIPTION_SETTING;
   }
   const formatted = str.toLowerCase();
+  const tmpResult = UserSettingsURLUtils;
   if (formatted === tmpResult.settingsPathToRoute(UserSettingsPath.SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS)) {
     ROLE_SUBSCRIPTION_SETTING = obj.ROLE_SUBSCRIPTION_SETTING;
   }

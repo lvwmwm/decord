@@ -1,30 +1,37 @@
-// Module ID: 13314
-// Function ID: 13315
+// Module ID: 12565
+// Function ID: 12566
 // Name: openUserContextMenuCommands
-// Dependencies: [8492, 4755, 4645, 1978, 2]
+// Dependencies: [7640, 4801, 4694, 1985, 2]
 // Exports: default
 
-// Module 13314 (openUserContextMenuCommands)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8492 */;
+// Module 12565 (openUserContextMenuCommands)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7640 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/user_profile/native/openUserContextMenuCommands.tsx");
 
 export default function openUserContextMenuCommands(analyticsLocations) {
+  let selectedChannel;
+  let showUserProfile;
+  let userId;
   analyticsLocations = analyticsLocations.analyticsLocations;
   ({ userId, selectedChannel, showUserProfile } = analyticsLocations);
-  const result = analyticsLocations(8492).trackUserProfileAction({ action: "PRESS_VIEW_APP_COMMANDS", analyticsLocations });
-  const obj = analyticsLocations(8492);
-  ActionSheetActionCreatorsDefault.hideAllActionSheets();
-  const obj3 = analyticsLocations(4645);
-  const result1 = obj3.navigateToContextMenuCommands({
+  let obj = analyticsLocations(7640);
+  const result = obj.trackUserProfileAction({ action: "PRESS_VIEW_APP_COMMANDS", analyticsLocations });
+  let obj2 = ActionSheetActionCreatorsDefault;
+  obj2.hideAllActionSheets();
+  const obj3 = analyticsLocations(4694);
+  const obj4 = {
     channel: selectedChannel,
-    commandType: analyticsLocations(1978).ApplicationCommandType.USER,
+    commandType: analyticsLocations(1985).ApplicationCommandType.USER,
     commandTargetId: userId,
     onClose: showUserProfile,
     onPressAppCommand() {
-      return UserProfileAnalyticsUtils.trackUserProfileAction({ action: "PRESS_APP_COMMAND", analyticsLocations });
+      const obj = UserProfileAnalyticsUtils;
+      const obj2 = { action: "PRESS_APP_COMMAND", analyticsLocations };
+      return obj.trackUserProfileAction(obj2);
     }
-  });
+  };
+  const result1 = obj3.navigateToContextMenuCommands(obj4);
 };

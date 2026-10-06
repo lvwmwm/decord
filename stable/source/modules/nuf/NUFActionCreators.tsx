@@ -1,19 +1,31 @@
-// Module ID: 13028
-// Function ID: 13029
+// Module ID: 12157
+// Function ID: 12158
 // Name: nuf/NUFActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: setNewUser, setNewUserFlowCompleted
 
-// Module 13028 (nuf/NUFActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 12157 (nuf/NUFActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
+
+let importDefault;
 
 const result = size.fileFinishedImporting("modules/nuf/NUFActionCreators.tsx");
 
 export const setNewUser = function setNewUser(ORGANIC_REGISTERED) {
+  let newUserType;
   importDefault = ORGANIC_REGISTERED;
-  DispatcherDefault.wait(() => DispatcherDefault.dispatch({ type: "NUF_NEW_USER", newUserType }));
+  let obj = DispatcherDefault;
+  obj.wait(() => {
+    const obj = DispatcherDefault;
+    const obj2 = { type: "NUF_NEW_USER", newUserType };
+    return obj.dispatch(obj2);
+  });
 };
 export const setNewUserFlowCompleted = function setNewUserFlowCompleted() {
-  DispatcherDefault.wait(() => DispatcherDefault.dispatch({ type: "NUF_COMPLETE" }));
+  let obj = DispatcherDefault;
+  obj.wait(() => {
+    const obj = DispatcherDefault;
+    return obj.dispatch({ type: "NUF_COMPLETE" });
+  });
 };

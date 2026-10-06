@@ -1,92 +1,135 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 11473
+// Function ID: 11474
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12310, 9435, 12275, 7797, 5861, 5218, 1115, 4732, 2]
-// Exports: default, useCommandRowSend
+// Dependencies: [5, 32, 19, 21, 11386, 8587, 11351, 6947, 558, 576, 5923, 5282, 1127, 4778, 2]
+// Exports: useCommandRowSend
 
-// Module 12387 (CommandRowButton)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 11473 (CommandRowButton)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/CommandRowButton.tsx");
+let c4, closure_2;
 
-export default function CommandRowIcon(hasOptions) {
-  if (hasOptions.hasOptions) {
-    let tmp3Result = tmp3(tmp4(5861).TableRowArrow, {});
+const jsx = Fragment.jsx;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let hasOptions;
+  let intl;
+  let onPressSend;
+  let sending;
+  let tmp5Result;
+  const obj = react2;
+  const cResult = obj.c(4);
+  ({ hasOptions, sending, onPressSend } = arg0);
+  if (cResult[0] === hasOptions) {
+    if (cResult[1] === onPressSend) {
+      let tmp4;
+      if (cResult[2] === sending) {
+        tmp4 = cResult[3];
+      }
+      return tmp4;
+    }
+  }
+  if (hasOptions) {
+    tmp5Result = tmp5(tmp(5923).TableRowArrow, {});
   } else {
-    const obj = { size: "sm", text: null, onPress: null, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: null };
-    const intl = tmp4(1115).intl;
-    obj.text = intl.string(tmp4(1115).t.TXNS7S);
-    obj.onPress = tmp2;
-    obj.icon = tmp3(tmp4(4732).SendMessageIcon, { size: "sm" });
-    obj.disabled = tmp;
-    tmp3Result = tmp3(tmp4(5218).Button, obj);
+    const obj2 = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: onPressSend, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: sending };
+    const Button = tmp(5282).Button;
+    intl = tmp(1127).intl;
+    tmp5Result = tmp5(Button, obj2);
+  }
+  cResult[0] = hasOptions;
+  cResult[1] = onPressSend;
+  cResult[2] = sending;
+  cResult[3] = tmp5Result;
+  tmp4 = tmp5Result;
+}) : ((hasOptions) => {
+  let intl;
+  let tmp3Result;
+  if (hasOptions.hasOptions) {
+    tmp3Result = tmp3(tmp4(5923).TableRowArrow, {});
+  } else {
+    const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
+    const Button = tmp4(5282).Button;
+    intl = tmp4(1127).intl;
+    tmp3Result = tmp3(Button, obj);
   }
   return tmp3Result;
-};
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/CommandRowButton.tsx");
+
+export default tmp2;
 export const useCommandRowSend = function useCommandRowSend(command) {
+  let items1;
   command = command.command;
-  const beforeExecuteCommand = command.beforeExecuteCommand;
+  let beforeExecuteCommand = command.beforeExecuteCommand;
   const onExecuteCommand = command.onExecuteCommand;
   const tryExecuteCommand = command.tryExecuteCommand;
   const sectionName = command.sectionName;
-  closure_5 = undefined;
+  let closure_5;
   let commandContext;
   let callback;
   let options = command.options;
+  const context = command.context;
   if (options == null) {
     options = [];
   }
+  const tmp = options.length > 0;
   const tmp2 = tryExecuteCommand(sectionName.useState(false), 2);
   closure_5 = tmp2[1];
-  commandContext = command(beforeExecuteCommand[4]).useCommandContext(command.context);
+  const first = tmp2[0];
+  let obj = command(beforeExecuteCommand[4]);
+  commandContext = obj.useCommandContext(context);
   const items = [onExecuteCommand, command, commandContext, beforeExecuteCommand, sectionName];
   callback = sectionName.useCallback(onExecuteCommand(function*(arg0, value) {
+    let c1;
+    let closure_0;
+    let obj3;
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
+      let c3;
       try {
         c4 = 2;
-        if (0 === dependencyMap) {
+        if (0 === beforeExecuteCommand) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
             closure_5(true);
             if (beforeExecuteCommand != null) {
               beforeExecuteCommand();
             }
             c3 = 1;
-            const obj6 = { command, optionValues: null, context: null, sectionName: null, commandOrigin: null };
-            const obj2 = tmp3(9435);
-            obj6.optionValues = tmp3(12275).parseOptionValuesForSend(commandContext.channel, command, {});
-            obj6.context = commandContext;
-            obj6.sectionName = sectionName;
-            obj6.commandOrigin = tmp3(7797).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
-            dependencyMap = 2;
+            const obj5 = { command, optionValues: obj3.parseOptionValuesForSend(commandContext.channel, command, {}), context: commandContext, sectionName, commandOrigin: tmp(beforeExecuteCommand[7]).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW };
+            const executeAppLauncherCommand = tmp(beforeExecuteCommand[5]).executeAppLauncherCommand;
+            const tmp21 = tmp(beforeExecuteCommand[5]);
+            obj3 = tmp(beforeExecuteCommand[6]);
+            beforeExecuteCommand = 2;
             c4 = 1;
-            const obj7 = { value: obj2.executeAppLauncherCommand(obj6), done: false };
-            return obj7;
+            const obj6 = { value: executeAppLauncherCommand(obj5), done: false };
+            return obj6;
           }
-        } else if (1 === tmp7) {
+        } else if (1 === tmp4) {
           c3 = 0;
           closure_128_5(false);
           throw closure_2;
@@ -106,27 +149,30 @@ export const useCommandRowSend = function useCommandRowSend(command) {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
-      } catch (tmp27) {
-        closure_2 = tmp27;
-        if (tmp4 === c3) {
-          c4 = tmp2;
-          throw tmp27;
+      } catch (tmp25) {
+        closure_2 = tmp25;
+        if (0 === c3) {
+          c4 = 3;
+          throw tmp25;
         } else {
-          dependencyMap = tmp;
+          beforeExecuteCommand = 1;
         }
       }
     }
   }), items);
-  let obj2 = { hasOptions: options.length > 0, sending: tmp2[0], onPressSend: null };
-  const items1 = [tryExecuteCommand, callback];
-  obj2.onPressSend = sectionName.useCallback(() => {
-    if (null != tryExecuteCommand) {
-      tmp(callback);
-    } else {
-      callback();
-    }
-  }, items1);
+  let obj2 = {
+    hasOptions: tmp,
+    sending: first,
+    onPressSend: sectionName.useCallback(() => {
+      if (null != tryExecuteCommand) {
+        tmp(callback);
+      } else {
+        callback();
+      }
+    }, items1)
+  };
+  items1 = [tryExecuteCommand, callback];
   return obj2;
 };

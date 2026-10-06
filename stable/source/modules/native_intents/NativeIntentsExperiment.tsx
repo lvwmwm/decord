@@ -1,15 +1,15 @@
-// Module ID: 18322
-// Function ID: 18323
+// Module ID: 17689
+// Function ID: 17690
 // Name: NativeIntentsExperiment
-// Dependencies: [4701, 2]
+// Dependencies: [4750, 2]
 
-// Module 18322 (NativeIntentsExperiment)
-import createExperiment from "module_4701" /* 4701 */;
+// Module 17689 (NativeIntentsExperiment)
+import createExperiment from "module_4750" /* 4750 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", id: "2025-06_native_intents", label: "Native Intents", defaultConfig: { searchEnabled: false, clearEnabled: false, activityEnabled: false }, treatments: null };
-const items = [{ id: 1, label: "All enabled", config: { searchEnabled: true, clearEnabled: true, activityEnabled: true } }, { id: 2, label: "Clear Only", config: { searchEnabled: false, clearEnabled: true, activityEnabled: false } }, { id: 3, label: "Activities Only", config: { searchEnabled: false, clearEnabled: false, activityEnabled: true } }, { id: 4, label: "Activities and Clear", config: { searchEnabled: false, clearEnabled: true, activityEnabled: true } }];
-obj.treatments = items;
+let items;
+const obj = { kind: "user", id: "2025-06_native_intents", label: "Native Intents", defaultConfig: { searchEnabled: false, clearEnabled: false, activityEnabled: false }, treatments: items };
+items = [{ id: 1, label: "All enabled", config: { searchEnabled: true, clearEnabled: true, activityEnabled: true } }, { id: 2, label: "Clear Only", config: { searchEnabled: false, clearEnabled: true, activityEnabled: false } }, { id: 3, label: "Activities Only", config: { searchEnabled: false, clearEnabled: false, activityEnabled: true } }, { id: 4, label: "Activities and Clear", config: { searchEnabled: false, clearEnabled: true, activityEnabled: true } }];
 const experiment = createExperiment.createExperiment(obj);
 const result = size.fileFinishedImporting("modules/native_intents/NativeIntentsExperiment.tsx");
 

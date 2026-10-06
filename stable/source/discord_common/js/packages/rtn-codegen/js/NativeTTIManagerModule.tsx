@@ -1,13 +1,13 @@
-// Module ID: 4652
-// Function ID: 4653
-// Name: NativeTTIManagerModule
+// Module ID: 4701
+// Function ID: 4702
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 4652 (NativeTTIManagerModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 4701 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTTIManagerModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeTTIManagerModule.tsx");
 

@@ -1,89 +1,311 @@
-// Module ID: 16886
-// Function ID: 16887
+// Module ID: 16186
+// Function ID: 16187
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 5526, 4613, 2063, 21, 4784, 16887, 1115, 9512, 15486, 16888, 563, 7525, 5748, 5141, 1101, 2]
-// Exports: default
+// Dependencies: [19, 5590, 4661, 2073, 21, 4833, 558, 576, 1127, 16187, 8664, 16188, 14746, 573, 6670, 5812, 5205, 1113, 2]
 
-// Module 16886 (GuildRoleSubscriptionsOverview)
-import router_utils from "router_utils" /* 1101 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9512 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15486 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16887 */;
-import GuildRoleSubscriptionPurchasePageDefault from "GuildRoleSubscriptionPurchasePage" /* 16888 */;
-import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4613 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 16186 (GuildRoleSubscriptionsOverview)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import router_utils from "router_utils" /* 1113 */;
+import intl4 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 8664 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16187 */;
+import react_mod from "react" /* 19 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4661 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let serverName;
+
+let tmp;
+let tmp4;
+const GroupListingsFetchContext = tmp(14746);
+const GuildRoleSubscriptionPurchasePageDefault = tmp4(16188);
 function serverNameHook(children) {
   return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }
-class RoleSubscriptionsUnavailableNotice {
-  constructor(arg0) {
-    obj = { title: null, description: null };
-    tmp = closure_1(closure_2[6]);
-    intl = closure_0(closure_2[7]).intl;
-    obj1 = { serverName: global.serverName, serverNameHook };
-    obj.title = intl.format(closure_0(closure_2[7]).t.uEqG1M, obj1);
-    intl2 = closure_0(closure_2[7]).intl;
-    obj.description = intl2.string(closure_0(closure_2[7]).t["+3DKTf"]);
-    return jsx(tmp, obj);
+let react = react_mod;
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((serverName) => {
+  let tmp4;
+  let tmp7;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(5);
+  serverName = serverName.serverName;
+  if (cResult[0] !== serverName) {
+    const intl = tmp(1127).intl;
+    const obj2 = { serverName, serverNameHook };
+    const formatResult = intl.format(intl4.t.uEqG1M, obj2);
+    cResult[0] = serverName;
+    cResult[1] = formatResult;
+    tmp4 = formatResult;
+  } else {
+    tmp4 = cResult[1];
   }
-}
-function PurchasePage(arg0) {
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1127).intl;
+    const stringResult = intl2.string(intl4.t["+3DKTf"]);
+    cResult[2] = stringResult;
+    tmp7 = stringResult;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    const tmp12 = jsx(UnavailableNoticeDefault, { title: tmp4, description: tmp7 });
+    cResult[3] = tmp4;
+    cResult[4] = tmp12;
+    tmp9 = tmp12;
+  } else {
+    tmp9 = cResult[4];
+  }
+  return tmp9;
+}) : ((serverName) => {
+  serverName = serverName.serverName;
+  UnavailableNoticeDefault;
+  const intl = intl4.intl;
+  const obj2 = { serverName, serverNameHook };
+  const intl2 = intl4.intl;
+  return <tmp title={intl.format(intl4.t.uEqG1M, obj2)} description={intl2.string(intl4.t["+3DKTf"])} />;
+});
+let closure_9 = tmp2;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let gatedChannelId;
+  let guildId;
+  const obj = react2;
+  const cResult = obj.c(9);
   ({ guildId, gatedChannelId } = arg0);
-  const mobileStoreFront = NativePaymentHooksDefault.useMobileStoreFront();
+  const obj2 = NativePaymentHooksDefault;
+  const mobileStoreFront = obj2.useMobileStoreFront();
   let country;
   if (mobileStoreFront != null) {
     country = mobileStoreFront.country;
   }
-  return jsx(GroupListingsFetchContext.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(GuildRoleSubscriptionPurchasePageDefault, { guildId, gatedChannelId }) });
-}
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
-
-export default function GuildRoleSubscriptionsOverview(guildId) {
+  if (cResult[0] === gatedChannelId) {
+    let tmp9;
+    if (cResult[1] === guildId) {
+      tmp9 = cResult[2];
+    }
+    if (cResult[3] === guildId) {
+      if (cResult[4] === country) {
+        if (cResult[5] === null == gatedChannelId) {
+          if (cResult[6] === null == country) {
+            let tmp11;
+            if (cResult[7] === tmp9) {
+              tmp11 = cResult[8];
+            }
+            return tmp11;
+          }
+        }
+      }
+    }
+    const tmp13 = jsx(GroupListingsFetchContext.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: tmp9 });
+    cResult[3] = guildId;
+    cResult[4] = country;
+    cResult[5] = null == gatedChannelId;
+    cResult[6] = null == country;
+    cResult[7] = tmp9;
+    cResult[8] = tmp13;
+    tmp11 = tmp13;
+  }
+  const tmp10 = jsx(GuildRoleSubscriptionPurchasePageDefault, { guildId, gatedChannelId });
+  cResult[0] = gatedChannelId;
+  cResult[1] = guildId;
+  cResult[2] = tmp10;
+  tmp9 = tmp10;
+}) : ((arg0) => {
+  let gatedChannelId;
+  let guildId;
+  ({ guildId, gatedChannelId } = arg0);
+  const obj = NativePaymentHooksDefault;
+  const mobileStoreFront = obj.useMobileStoreFront();
+  let country;
+  if (mobileStoreFront != null) {
+    country = mobileStoreFront.country;
+  }
+  const GroupListingsFetchContextProvider = GroupListingsFetchContext.GroupListingsFetchContextProvider;
+  return <GroupListingsFetchContextProvider guildId={guildId} refetchOnMount={null == gatedChannelId} countryCode={country} dontFetchWhileTrue={null == country}>{null}</GroupListingsFetchContextProvider>;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let closure_3;
+  let connected;
+  let first;
+  let stateFromStores1;
+  let tmp10;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  let tmp = guildId;
+  let obj = guildId(stateFromStores1[7]);
+  const cResult = obj.c(16);
+  guildId = guildId.guildId;
+  const gatedChannelId = guildId.gatedChannelId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function h() {
+      return GuildStore.getGuild(guildId);
+    };
+    const items1 = [guildId];
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(stateFromStores1[13]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [GatewayConnectionStore];
+    const fn2 = function p() {
+      return connected.isConnected();
+    };
+    cResult[4] = items2;
+    cResult[5] = fn2;
+    tmp10 = fn2;
+    tmp9 = items2;
+  } else {
+    tmp9 = cResult[4];
+    tmp10 = cResult[5];
+  }
+  const tmpResult3 = tmp(stateFromStores1[13]);
+  stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
+  const tmp13 = stateFromStores(stateFromStores1[14])(guildId);
+  react = tmp13;
+  tmp(stateFromStores1[15]);
+  if (cResult[6] === stateFromStores) {
+    if (cResult[7] === stateFromStores1) {
+      let tmp16;
+      let tmp17;
+      if (cResult[8] === tmp13) {
+        tmp16 = cResult[9];
+        tmp17 = cResult[10];
+      }
+      const effect = react.useEffect(tmp16, tmp17);
+      if (tmp15) {
+        if (cResult[11] === gatedChannelId) {
+          let tmp25;
+          if (cResult[12] === guildId) {
+            tmp25 = cResult[13];
+          }
+          return tmp25;
+        }
+        const tmp28 = <closure_10 guildId={guildId} gatedChannelId={gatedChannelId} />;
+        cResult[11] = gatedChannelId;
+        cResult[12] = guildId;
+        cResult[13] = tmp28;
+        tmp25 = tmp28;
+      } else {
+        let tmp21;
+        let str;
+        if (stateFromStores != null) {
+          str = stateFromStores.name;
+        }
+        if (str == null) {
+          str = "";
+        }
+        if (cResult[14] !== str) {
+          const tmp24 = <closure_9 serverName={str} />;
+          cResult[14] = str;
+          cResult[15] = tmp24;
+          tmp21 = tmp24;
+        } else {
+          tmp21 = cResult[15];
+        }
+        return tmp21;
+      }
+    }
+  }
+  class F {
+    constructor() {
+      let intl;
+      let intl2;
+      let intl3;
+      let tmp = !stateFromStores1;
+      if (stateFromStores1) {
+        tmp = null != stateFromStores && closure_3;
+      }
+      if (!tmp) {
+        const obj = { title: intl.string(intl4.t.r0DLNm), body: intl2.string(intl4.t["6Y0JlN"]), confirmText: intl3.string(intl4.t.BddRzS) };
+        const show = actions_AlertActionCreatorsDefault.show;
+        actions_AlertActionCreatorsDefault;
+        intl = intl4.intl;
+        intl2 = intl4.intl;
+        intl3 = intl4.intl;
+        show(obj);
+        const obj2 = router_utils;
+        obj2.replaceWith(DefaultRouteStore.defaultRoute);
+      }
+    }
+  }
+  const items3 = [stateFromStores, stateFromStores1, tmp13];
+  cResult[6] = stateFromStores;
+  cResult[7] = stateFromStores1;
+  cResult[8] = tmp13;
+  cResult[9] = F;
+  cResult[10] = items3;
+  tmp17 = items3;
+  tmp16 = F;
+}) : ((guildId) => {
+  let closure_3;
+  let connected;
+  let tmp6Result;
   guildId = guildId.guildId;
   let stateFromStores1;
+  const gatedChannelId = guildId.gatedChannelId;
+  let obj = guildId(stateFromStores1[13]);
   const items = [GuildStore];
   const items1 = [guildId];
-  const stateFromStores = guildId(stateFromStores1[11]).useStateFromStores(items, () => GuildStore.getGuild(guildId), items1);
-  let obj = guildId(stateFromStores1[11]);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId), items1);
+  let obj2 = guildId(stateFromStores1[13]);
   const items2 = [GatewayConnectionStore];
-  stateFromStores1 = guildId(stateFromStores1[11]).useStateFromStores(items2, () => connected.isConnected());
-  const tmp3 = stateFromStores(stateFromStores1[12])(guildId);
-  noop = tmp3;
-  let obj2 = guildId(stateFromStores1[11]);
+  stateFromStores1 = obj2.useStateFromStores(items2, () => connected.isConnected());
+  const tmp3 = stateFromStores(stateFromStores1[14])(guildId);
+  react = tmp3;
   const items3 = [stateFromStores, stateFromStores1, tmp3];
-  const canUseRoleSubscriptionIAP = guildId(stateFromStores1[13]).useCanUseRoleSubscriptionIAP(guildId);
-  const effect = noop.useEffect(() => {
+  const obj3 = guildId(stateFromStores1[15]);
+  const canUseRoleSubscriptionIAP = obj3.useCanUseRoleSubscriptionIAP(guildId);
+  const effect = react.useEffect(() => {
+    let intl;
+    let intl2;
+    let intl3;
     let tmp = !stateFromStores1;
     if (stateFromStores1) {
       tmp = null != stateFromStores && closure_3;
-      const tmp4 = null != stateFromStores && closure_3;
     }
     if (!tmp) {
-      const obj2 = { title: null, body: null, confirmText: null };
-      const intl = util.intl;
-      obj2.title = intl.string(util.t.r0DLNm);
-      const intl2 = util.intl;
-      obj2.body = intl2.string(util.t["6Y0JlN"]);
-      const intl3 = util.intl;
-      obj2.confirmText = intl3.string(util.t.BddRzS);
-      actions_AlertActionCreatorsDefault.show(obj2);
-      router_utils.replaceWith(DefaultRouteStore.defaultRoute);
+      const obj = { title: intl.string(intl4.t.r0DLNm), body: intl2.string(intl4.t["6Y0JlN"]), confirmText: intl3.string(intl4.t.BddRzS) };
+      const show = actions_AlertActionCreatorsDefault.show;
+      actions_AlertActionCreatorsDefault;
+      intl = intl4.intl;
+      intl2 = intl4.intl;
+      intl3 = intl4.intl;
+      show(obj);
+      const obj2 = router_utils;
+      obj2.replaceWith(DefaultRouteStore.defaultRoute);
     }
   }, items3);
   if (canUseRoleSubscriptionIAP) {
-    const obj4 = { guildId, gatedChannelId: guildId.gatedChannelId };
-    let tmp6Result = tmp6(PurchasePage, obj4);
+    const obj4 = { guildId, gatedChannelId };
+    tmp6Result = tmp6(closure_10, obj4);
   } else {
     let str;
+    const tmp7 = closure_9;
     if (stateFromStores != null) {
       str = stateFromStores.name;
     }
@@ -91,9 +313,12 @@ export default function GuildRoleSubscriptionsOverview(guildId) {
       str = "";
     }
     const obj5 = { serverName: str };
-    tmp6Result = tmp6(RoleSubscriptionsUnavailableNotice, obj5);
+    tmp6Result = tmp6(tmp7, obj5);
   }
   return tmp6Result;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
+
+export default tmp3;
 export { serverNameHook };
-export { RoleSubscriptionsUnavailableNotice };
+export const RoleSubscriptionsUnavailableNotice = tmp2;

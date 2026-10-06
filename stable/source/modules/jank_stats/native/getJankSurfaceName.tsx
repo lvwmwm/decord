@@ -1,60 +1,65 @@
-// Module ID: 16352
-// Function ID: 16353
+// Module ID: 15644
+// Function ID: 15645
 // Name: getJankSurfaceName
-// Dependencies: [16348, 16347, 4648, 16351, 2]
+// Dependencies: [15640, 15639, 4697, 15643, 2]
 // Exports: composeJankSurfaceName, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen
 
-// Module 16352 (getJankSurfaceName)
-import getJankScreenName from "getJankScreenName" /* 16347 */;
-import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16351 */;
-import JankScreenConstants from "JankScreenConstants" /* 16348 */;
+// Module 15644 (getJankSurfaceName)
+import useChatLayout from "useChatLayout" /* 4697 */;
+import getJankScreenName from "getJankScreenName" /* 15639 */;
+import react_nativeDefault from "react-native" /* 15643 */;
+import JankScreenConstants from "JankScreenConstants" /* 15640 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 ({ CHANNEL_DETAILS_SCREEN: c3, INTERACTION_NONE: closure_4 } = JankScreenConstants);
 const set = new Set();
 const result = size.fileFinishedImporting("modules/jank_stats/native/getJankSurfaceName.tsx");
 
 export const composeJankSurfaceName = function composeJankSurfaceName(resolveClosedName) {
   const tmp = resolveClosedName();
+  const obj = getJankScreenName;
   if (obj.isModalScreenName(tmp)) {
     return tmp;
   } else {
     let tmp6 = null;
     if (set.size > 0) {
-      tmp6 = React3;
+      tmp6 = _false;
     }
+    const tmp2Result = useChatLayout;
     if (tmp2Result.getChatLayout().isChatBesideChannelList) {
-      const wideViewScreenName = tmp2(16347).getWideViewScreenName(tmp6);
+      const tmp2Result2 = getJankScreenName;
+      const wideViewScreenName = tmp2Result2.getWideViewScreenName(tmp6);
       if (null != wideViewScreenName) {
         return wideViewScreenName;
       }
-      const tmp2Result2 = tmp2(16347);
     }
     if (tmp6 == null) {
       tmp6 = tmp;
     }
     return tmp6;
   }
-  obj = getJankScreenName;
 };
 export const getJankSurfaceName = function getJankSurfaceName() {
   const baseScreenName = getJankScreenName.getBaseScreenName();
   let wideViewScreenName = baseScreenName;
+  const obj = getJankScreenName;
   if (!obj.isModalScreenName(baseScreenName)) {
     let tmp7 = null;
     if (set.size > 0) {
-      tmp7 = React3;
+      tmp7 = _false;
     }
+    const tmpResult = useChatLayout;
     if (!tmpResult.getChatLayout().isChatBesideChannelList) {
       if (tmp7 == null) {
         tmp7 = baseScreenName;
       }
       wideViewScreenName = tmp7;
     } else {
-      wideViewScreenName = tmp(16347).getWideViewScreenName(tmp7);
-      const tmpResult2 = tmp(16347);
+      const tmpResult2 = getJankScreenName;
+      wideViewScreenName = tmpResult2.getWideViewScreenName(tmp7);
     }
-    tmpResult = tmp(4648);
   }
   return wideViewScreenName;
 };
@@ -62,10 +67,10 @@ export const recordJankChannelDetailsOpen = function recordJankChannelDetailsOpe
   let flag = arg1 !== set.has(memo1);
   if (flag) {
     if (arg1) {
-      obj.add(memo1);
+      set.add(memo1);
       flag = true;
     } else {
-      obj.delete(memo1);
+      set.delete(memo1);
       flag = true;
     }
   }
@@ -75,36 +80,37 @@ export const setJankChannelDetailsOpen = function setJankChannelDetailsOpen(arg0
   let flag = arg1 !== set.has(arg0);
   if (flag) {
     if (arg1) {
-      obj.add(arg0);
+      set.add(arg0);
       flag = true;
     } else {
-      obj.delete(arg0);
+      set.delete(arg0);
       flag = true;
     }
   }
   if (flag) {
-    const obj2 = NativeJankStatsModuleDefault;
-    if (obj2 != null) {
+    const tmp5 = react_nativeDefault;
+    if (tmp5 != null) {
+      const setScreenContext = tmp5.setScreenContext;
       const baseScreenName = getJankScreenName.getBaseScreenName();
       let wideViewScreenName = baseScreenName;
-      if (!obj5.isModalScreenName(baseScreenName)) {
-        let tmp6 = null;
-        if (obj.size > 0) {
-          tmp6 = React3;
+      const obj4 = getJankScreenName;
+      if (!obj4.isModalScreenName(baseScreenName)) {
+        let tmp7 = null;
+        if (set.size > 0) {
+          tmp7 = _false;
         }
-        if (!tmp10Result.getChatLayout().isChatBesideChannelList) {
-          if (tmp6 == null) {
-            tmp6 = baseScreenName;
+        const tmp11Result = useChatLayout;
+        if (!tmp11Result.getChatLayout().isChatBesideChannelList) {
+          if (tmp7 == null) {
+            tmp7 = baseScreenName;
           }
-          wideViewScreenName = tmp6;
+          wideViewScreenName = tmp7;
         } else {
-          wideViewScreenName = tmp10(16347).getWideViewScreenName(tmp6);
-          const tmp10Result2 = tmp10(16347);
+          const tmp11Result2 = getJankScreenName;
+          wideViewScreenName = tmp11Result2.getWideViewScreenName(tmp7);
         }
-        tmp10Result = tmp10(4648);
       }
-      obj2.setScreenContext(wideViewScreenName, React4);
-      obj5 = getJankScreenName;
+      setScreenContext(wideViewScreenName, React3);
     }
   }
 };

@@ -1,25 +1,27 @@
-// Module ID: 4434
-// Function ID: 4435
+// Module ID: 4479
+// Function ID: 4480
 // Name: AppChannelPermissions
-// Dependencies: [1074, 1086, 2]
+// Dependencies: [1086, 1098, 2]
 
-// Module 4434 (AppChannelPermissions)
-import Constants from "Constants" /* 1074 */;
-import "BigFlagUtils";
-import BigFlagUtils from "BigFlagUtils" /* 1086 */;
+// Module 4479 (AppChannelPermissions)
+import Constants from "Constants" /* 1086 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1098 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
 const items = [, , , , , , ];
 ({ VIEW_CHANNEL: arr[0], SEND_MESSAGES: arr[1], EMBED_LINKS: arr[2], ATTACH_FILES: arr[3], READ_MESSAGE_HISTORY: arr[4], ADD_REACTIONS: arr[5], USE_EXTERNAL_EMOJIS: arr[6] } = Permissions);
+let BigFlagUtils = BigFlagUtils_mod;
 const items1 = [...items];
 const items2 = [, ];
 ({ MANAGE_CHANNELS: arr3[0], MANAGE_ROLES: arr3[1] } = Permissions);
-HermesBuiltin.arraySpread(items, 2);
-const items3 = [...items2];
 const applyResult = BigFlagUtils.combine.apply(items1);
+HermesBuiltin.arraySpread(items2, items, 2);
+BigFlagUtils = BigFlagUtils_mod;
+const items3 = [...items2];
+const applyResult1 = BigFlagUtils.combine.apply(items3);
 const result = size.fileFinishedImporting("modules/app_channels/AppChannelPermissions.tsx");
 
 export const APP_CHANNEL_MINIMUM_BOT_PERMISSIONS = applyResult;
 export const SWAP_APP_CHANNEL_APPLICATION_PERMISSION_LIST = items2;
-export const SWAP_APP_CHANNEL_APPLICATION_PERMISSIONS = BigFlagUtils.combine.apply(items3);
+export const SWAP_APP_CHANNEL_APPLICATION_PERMISSIONS = applyResult1;

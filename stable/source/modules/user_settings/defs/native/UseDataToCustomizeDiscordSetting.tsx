@@ -1,59 +1,105 @@
-// Module ID: 15138
-// Function ID: 15139
+// Module ID: 14381
+// Function ID: 14382
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [6868, 8265, 1074, 15098, 504, 5140, 1115, 5237, 15136, 15137, 11754, 2]
+// Dependencies: [6007, 7421, 1086, 558, 14341, 576, 504, 5204, 1127, 5301, 14379, 14380, 10874, 2]
 
-// Module 15138 (UseDataToCustomizeDiscordSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15098 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 15136 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 15137 */;
-import ConsentStore from "ConsentStore" /* 6868 */;
+// Module 14381 (UseDataToCustomizeDiscordSetting)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl5 from "intl" /* 1127 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import AlertDefault from "Alert" /* 5301 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14341 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 14379 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 14380 */;
+import ConsentStore from "ConsentStore" /* 6007 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Consents = fn(1074).Consents;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.MNKzyg);
-  },
-  parent: fn(8265).MobileUserSettings.DATA_AND_PRIVACY,
-  useValue: function useDataToCustomizeDiscordSettingValue() {
+let tmp;
+const get_initialized = tmp(504);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const Consents = Constants.Consents;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+let fn = () => {
+  const obj = useParentalControlSettings;
+  return obj.useIsParentallyControlled();
+};
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConsentStore];
-    return initialize.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
+    const fn = function o() {
+      return ConsentStore.hasConsented(constants.PERSONALIZATION);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [ConsentStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
+});
+let obj = {
+  useTitle() {
+    const intl = intl5.intl;
+    return intl.string(intl5.t.MNKzyg);
   },
+  parent: MobileUserSettings.DATA_AND_PRIVACY,
+  useValue: tmp3,
   onValueChange: function handlePersonalizationChange(arg0) {
-    if (arg0) {
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    const tmp = arg0;
+    if (tmp) {
       let items = [Consents.PERSONALIZATION];
-      ConsentActionCreators.setConsents(items, []).catch((error) => showDataPrivacyRateLimitAlert.showDataPrivacyRateLimitAlert(error.message));
-      const setConsentsResult = ConsentActionCreators.setConsents(items, []);
+      const obj2 = ConsentActionCreators;
+      const setConsentsResult = obj2.setConsents(items, []);
+      setConsentsResult.catch((error) => {
+        const message = error.message;
+        const obj = showDataPrivacyRateLimitAlert;
+        return obj.showDataPrivacyRateLimitAlert(message);
+      });
     } else {
-      const obj2 = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null };
-      const intl = util.intl;
-      obj2.title = intl.string(util.t["9SNpzv"]);
-      const intl2 = util.intl;
-      obj2.body = intl2.string(util.t.gJvDDh);
-      const intl3 = util.intl;
-      obj2.confirmText = intl3.string(util.t["9g5UGw"]);
-      const intl4 = util.intl;
-      obj2.cancelText = intl4.string(util.t["+ZLPw9"]);
-      obj2.confirmColor = common_AlertDefault.Colors.RED;
-      obj2.onConfirm = function onConfirm() {
-        const items = [constants.PERSONALIZATION];
-        return ConsentActionCreators.setConsents([], items);
+      let obj = {
+        title: intl.string(intl5.t["9SNpzv"]),
+        body: intl2.string(intl5.t.gJvDDh),
+        confirmText: intl3.string(intl5.t["9g5UGw"]),
+        cancelText: intl4.string(intl5.t["+ZLPw9"]),
+        confirmColor: AlertDefault.Colors.RED,
+        onConfirm() {
+            const items = [constants.PERSONALIZATION];
+            const obj = ConsentActionCreators;
+            return obj.setConsents([], items);
+          }
       };
-      AlertActionCreatorsDefault.show(obj2);
+      const show = AlertActionCreatorsDefault.show;
+      AlertActionCreatorsDefault;
+      intl = intl5.intl;
+      intl2 = intl5.intl;
+      intl3 = intl5.intl;
+      intl4 = intl5.intl;
+      show(obj);
     }
   },
-  useIsDisabled() {
-    return useParentalControlSettings.useIsParentallyControlled();
-  }
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/UseDataToCustomizeDiscordSetting.tsx");
+  useIsDisabled: fn
+};
+const toggle = SettingBuilders.createToggle(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/UseDataToCustomizeDiscordSetting.tsx");
 
 export default toggle;

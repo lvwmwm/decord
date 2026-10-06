@@ -1,21 +1,22 @@
-// Module ID: 17753
-// Function ID: 17754
-// Name: AppInfoUtils
-// Dependencies: [1363, 2]
+// Module ID: 17112
+// Function ID: 17113
+// Name: react-native
+// Dependencies: [1369, 2]
 // Exports: getAppMajorVersion
 
-// Module 17753 (AppInfoUtils)
-import ClientInfoUtils from "ClientInfoUtils" /* 1363 */;
+// Module 17112 (react-native)
+import react_native from "react-native" /* 1369 */;
 import size from "module_2" /* 2 */;
 
-const constants = ClientInfoUtils.getConstants();
+const constants = react_native.getConstants();
 const result = size.fileFinishedImporting("utils/native/AppInfoUtils.tsx");
 
 export const getAppMajorVersion = function getAppMajorVersion() {
   if (undefined === closure_0) {
     return -1;
   } else {
-    const parts = tmp.Version.split(".");
+    const str = tmp.Version;
+    const parts = str.split(".");
     let num = -1;
     if (2 === parts.length) {
       const _Number = Number;

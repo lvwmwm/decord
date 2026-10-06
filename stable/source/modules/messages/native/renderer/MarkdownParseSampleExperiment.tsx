@@ -1,14 +1,15 @@
-// Module ID: 8394
-// Function ID: 8395
+// Module ID: 7554
+// Function ID: 7555
 // Name: MarkdownParseSampleExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 // Exports: getMarkdownParseSampleRate
 
-// Module 8394 (MarkdownParseSampleExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 7554 (MarkdownParseSampleExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-09-markdown-parse-sample", defaultConfig: { sampleRate: 0 }, variations: { 0: { sampleRate: 0.001 }, 1: { sampleRate: 0.0001 }, 2: { sampleRate: 0.01 } } });
+const obj = { kind: "user", name: "2026-09-markdown-parse-sample", defaultConfig: { sampleRate: 0 }, variations: { 0: { sampleRate: 0.001 }, 1: { sampleRate: 0.0001 }, 2: { sampleRate: 0.01 } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/MarkdownParseSampleExperiment.tsx");
 
 export default apexExperiment;

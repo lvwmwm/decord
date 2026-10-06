@@ -1,7 +1,0 @@
-// Module ID: 1452
-// Function ID: 1453
-// Dependencies: []
-
-// Module 1452
-
-export default ["Float16Array", "Float32Array", "Float64Array", "Int8Array", "Int16Array", "Int32Array", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "BigInt64Array", "BigUint64Array"];

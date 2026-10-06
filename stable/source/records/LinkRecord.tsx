@@ -1,44 +1,49 @@
-// Module ID: 10133
-// Function ID: 10134
+// Module ID: 9271
+// Function ID: 9272
 // Name: LinkRecord
-// Dependencies: [1387, 1074, 2]
+// Dependencies: [1393, 1086, 2]
 
-// Module 10133 (LinkRecord)
-import Record from "Record" /* 1387 */;
+// Module 9271 (LinkRecord)
+import Constants from "Constants" /* 1086 */;
+import Record from "Record" /* 1393 */;
+import size from "module_2" /* 2 */;
 
-const Routes = fn(1074).Routes;
-const prototype = function LinkRecord(arg0) {
-  const tmp = new prototype(new.target, new.target);
-  ({ id: tmp.id, path: tmp.path, inviteCode: tmp.inviteCode } = arg0);
-  return tmp;
-}.prototype;
-class prototype extends tmp2 {
+const Routes = Constants.Routes;
+class LinkRecord extends Record {
+  constructor(arg0) {
+    const tmp = new LinkRecord(new.target, this);
+    ({ id: tmp.id, path: tmp.path, inviteCode: tmp.inviteCode } = arg0);
+    return tmp;
+  }
+  static fromPath(pathname) {
+    const obj = { id: pathname, path: pathname };
+    if (typeof LinkRecord === "function") {
+      const self = this;
+      const self2 = this;
+      const tmp4 = new LinkRecord(tmp, tmp2);
+      ({ id: tmp4.id, path: tmp4.path, inviteCode: tmp4.inviteCode } = obj);
+      return tmp4;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+  static fromInviteCode(code) {
+    const combined = "invite:" + code;
+    const tmp2 = LinkRecord;
+    if (typeof LinkRecord === "function") {
+      const self = this;
+      const self2 = this;
+      const tmp6 = new LinkRecord(tmp, tmp2, this, combined);
+      tmp6.id = combined;
+      tmp6.path = tmp4;
+      tmp6.inviteCode = code;
+      return tmp6;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
 }
-prototype["fromPath"] = function fromPath(pathname) {
-  if (typeof prototype === "function") {
-    const tmp6 = new prototype(tmp, tmp2);
-    ({ id: tmp6.id, path: tmp6.path, inviteCode: tmp6.inviteCode } = obj);
-    return tmp6;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-  obj = { id: pathname, path: pathname };
-};
-prototype["fromInviteCode"] = function fromInviteCode(code) {
-  const combined = "invite:" + code;
-  if (typeof prototype === "function") {
-    const tmp8 = new prototype(tmp, tmp2, new.target, combined);
-    tmp8.id = combined;
-    tmp8.path = tmp4;
-    tmp8.inviteCode = code;
-    return tmp8;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-  tmp2 = prototype;
-};
-const size = fn(2);
 const result = size.fileFinishedImporting("records/LinkRecord.tsx");
 
-export default prototype;
-export const LinkRecord = prototype;
+export default LinkRecord;
+export { LinkRecord };

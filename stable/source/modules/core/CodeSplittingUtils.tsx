@@ -1,18 +1,16 @@
-// Module ID: 4464
-// Function ID: 4465
+// Module ID: 4509
+// Function ID: 4510
 // Name: core/CodeSplittingUtils
-// Dependencies: [4465, 1462, 2]
+// Dependencies: [4510, 1469, 2]
 
-// Module 4464 (core/CodeSplittingUtils)
-import NetworkUtilsDefault from "NetworkUtils" /* 1462 */;
-import CodeSplittingUtils from "CodeSplittingUtils" /* 4465 */;
+// Module 4509 (core/CodeSplittingUtils)
+import NetworkUtilsDefault from "NetworkUtils" /* 1469 */;
+import CodeSplittingUtils from "CodeSplittingUtils" /* 4510 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
 
 CodeSplittingUtils.setAwaitOnline(NetworkUtilsDefault.awaitOnline);
 const result = size.fileFinishedImporting("modules/core/CodeSplittingUtils.tsx");
-for (const key10026 in require("CodeSplittingUtils")) {
-  arg5[key10026] = require("CodeSplittingUtils")[key10026];
+for (const key10026 in CodeSplittingUtils) {
+  exports[key10026] = CodeSplittingUtils[key10026];
   continue;
 }

@@ -1,42 +1,42 @@
-// Module ID: 2099
-// Function ID: 2100
+// Module ID: 2105
+// Function ID: 2106
 // Name: GuildRoleStore
-// Dependencies: [2056, 2064, 2059, 2100, 1086, 2101, 2103, 2067, 2]
+// Dependencies: [2066, 2074, 2069, 2106, 1098, 2107, 2109, 559, 2]
 
-// Module 2099 (GuildRoleStore)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import PlainRecord from "PlainRecord" /* 2056 */;
-import GuildRecord from "GuildRecord" /* 2059 */;
-import LibdiscoreStore2 from "LibdiscoreStore" /* 2064 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 2067 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2100 */;
-import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 2101 */;
-import GuildRoleUtilsAll from "GuildRoleUtils" /* 2103 */;
+// Module 2105 (GuildRoleStore)
+import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import PlainRecord from "PlainRecord" /* 2066 */;
+import GuildRecord from "GuildRecord" /* 2069 */;
+import LibdiscoreStore2 from "LibdiscoreStore" /* 2074 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2106 */;
+import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 2107 */;
+import GuildRoleUtilsAll from "GuildRoleUtils" /* 2109 */;
 import size from "module_2" /* 2 */;
 
+let set;
+
 function createGuildRoleRecordFromRust(permissions) {
-  const obj = {};
+  let deserializer;
+  const obj = { permissions: deserializer.deserialize(permissions.permissions) };
   const merged = Object.assign(permissions);
-  const deserializer = BigFlagUtilsAll;
-  obj.permissions = deserializer.deserialize(permissions.permissions);
+  deserializer = BigFlagUtilsAll;
   return constructInPlace(GuildRoleRecordTypeTag, obj);
 }
 function syncRoles(id, roles, setPartition) {
-  let tmp = "update" === roles.op;
-  if (tmp) {
-    tmp = 0 === roles.writes.length;
-  }
-  if (tmp) {
-    tmp = 0 === roles.deletes.length;
-  }
+  const tmp = "update" === roles.op && 0 === roles.writes.length && 0 === roles.deletes.length;
   if (!tmp) {
-    setPartition.setPartition(id, GuildRoleRecordUtilsAll.fromSyncOperation(id, roles, setPartition.getPartition(id)));
+    setPartition = setPartition.setPartition;
+    const obj = GuildRoleRecordUtilsAll;
+    setPartition(id, obj.fromSyncOperation(id, roles, setPartition.getPartition(id)));
   }
 }
 function checkGuildRolesExist(cache_loaded, id, partitionLength) {
   if (0 === partitionLength.partitionLength(id)) {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
     const error = new Error("Guild data was missing from store for guild " + id + ": missing roles. (phase: " + cache_loaded + ")");
     throw error;
   }
@@ -47,60 +47,65 @@ const getGuildEveryoneRoleId = GuildRecord.getGuildEveryoneRoleId;
 const GuildRoleRecordTypeTag = GuildRoleRecord.GuildRoleRecordTypeTag;
 class GuildRoleStore extends LibdiscoreStore {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.database = applyArgumentsResult.addKKVDatabase("guild_roles", createGuildRoleRecordFromRust);
-    database = applyArgumentsResult.database;
-    applyArgumentsResult.getSortedRoles = database.memoizedPartition((arg0, arg1) => GuildRoleUtilsAll.sortGuildRoleRecords(Object.values(arg1)));
-    database2 = applyArgumentsResult.database;
+    const database = applyArgumentsResult.database;
+    applyArgumentsResult.getSortedRoles = database.memoizedPartition((arg0, arg1) => {
+      const obj = GuildRoleUtilsAll;
+      return obj.sortGuildRoleRecords(Object.values(arg1));
+    });
+    const database2 = applyArgumentsResult.database;
     applyArgumentsResult.getRolesSnapshot = database2.memoizedPartition((arg0, arg1) => {
+      const obj = {};
       const merged = Object.assign(arg1);
-      return {};
+      return obj;
     });
     return applyArgumentsResult;
   }
+  stateWrapper() {
+    return this.database;
+  }
+  serializeAllGuildRoles() {
+    const database = this.database;
+    return database.mapPartitions(GuildRoleRecordUtilsAll.toSerializedPartition);
+  }
+  getUnsafeMutableRoles(id) {
+    const database = this.database;
+    return database.getPartition(id);
+  }
+  getManyRoles(guildId, selectedRoleIds) {
+    const database = this.database;
+    return database.getManyRecords(guildId, selectedRoleIds);
+  }
+  getRole(id, guildEveryoneRoleId) {
+    const database = this.database;
+    return database.getRecord(id, guildEveryoneRoleId);
+  }
+  getNumRoles(id) {
+    const database = this.database;
+    return database.partitionLength(id);
+  }
+  getEveryoneRole(guild) {
+    const database = this.database;
+    const record = database.getRecord(guild.id, getGuildEveryoneRoleId(guild));
+    if (null == record) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Guild does not have an @everyone role");
+      throw error;
+    } else {
+      return record;
+    }
+  }
+  partitionVersion(arg0) {
+    const database = this.database;
+    return database.partitionVersion(arg0);
+  }
 }
 const prototype = GuildRoleStore.prototype;
-prototype["stateWrapper"] = function stateWrapper() {
-  return this.database;
-};
-prototype["serializeAllGuildRoles"] = function serializeAllGuildRoles() {
-  const database = this.database;
-  return database.mapPartitions(GuildRoleRecordUtilsAll.toSerializedPartition);
-};
-prototype["getUnsafeMutableRoles"] = function getUnsafeMutableRoles(id) {
-  const database = this.database;
-  return database.getPartition(id);
-};
-prototype["getManyRoles"] = function getManyRoles(guildId, selectedRoleIds) {
-  const database = this.database;
-  return database.getManyRecords(guildId, selectedRoleIds);
-};
-prototype["getRole"] = function getRole(id, guildEveryoneRoleId) {
-  const database = this.database;
-  return database.getRecord(id, guildEveryoneRoleId);
-};
-prototype["getNumRoles"] = function getNumRoles(id) {
-  const database = this.database;
-  return database.partitionLength(id);
-};
-prototype["getEveryoneRole"] = function getEveryoneRole(guild) {
-  const database = this.database;
-  const record = database.getRecord(guild.id, getGuildEveryoneRoleId(guild));
-  if (null == record) {
-    const _Error = Error;
-    const error = new Error("Guild does not have an @everyone role");
-    throw error;
-  } else {
-    return record;
-  }
-};
-prototype["partitionVersion"] = function partitionVersion(arg0) {
-  const database = this.database;
-  return database.partitionVersion(arg0);
-};
 GuildRoleStore.displayName = "GuildRoleStore";
-const LibdiscoreBatchStoreRefactorExperiment = libdiscoreExperiments.LibdiscoreBatchStoreRefactorExperiment;
-const guildRoleStore = new GuildRoleStore({
+let obj = {
   BACKGROUND_SYNC(arg0, getNullablePartition) {
     const iter = arg0.guilds[Symbol.iterator]();
     const nextResult = iter.next();
@@ -112,26 +117,31 @@ const guildRoleStore = new GuildRoleStore({
       if (tmp5) {
         tmp5 = "unavailable" !== tmp2.data_mode;
       }
-      if (!tmp5) {
-        continue;
-      } else {
+      if (tmp5) {
+        let filterRoleDeletesResult;
+        let setPartition = getNullablePartition.setPartition;
+        let id = tmp2.id;
         if ("partial" === tmp2.data_mode) {
           let obj2 = GuildRoleUtilsAll;
-          let filterRoleDeletesResult = obj2.filterRoleDeletes(tmp2.id, tmp4, tmp2.partial_updates.roles, tmp2.partial_updates.deleted_role_ids);
+          filterRoleDeletesResult = obj2.filterRoleDeletes(tmp2.id, tmp4, tmp2.partial_updates.roles, tmp2.partial_updates.deleted_role_ids);
         } else {
           let obj = GuildRoleRecordUtilsAll;
           filterRoleDeletesResult = obj.fromServerArray(tmp2.id, tmp2.roles);
         }
-        let setPartitionResult = getNullablePartition.setPartition(tmp2.id, filterRoleDeletesResult);
+        let setPartitionResult = setPartition(id, filterRoleDeletesResult);
       }
+      continue;
     }
   },
-  OVERLAY_INITIALIZE(arg0, clear) {
+  OVERLAY_INITIALIZE(serializedGuildRoles, clear) {
     clear.clear();
-    for (const item10009 of tmp2) {
+    serializedGuildRoles = serializedGuildRoles.serializedGuildRoles;
+    for (const item10009 of serializedGuildRoles) {
       let partitionKey = item10009.partitionKey;
+      let values = item10009.values;
+      let setPartition = clear.setPartition;
       let obj = GuildRoleRecordUtilsAll;
-      let setPartitionResult = arg1.setPartition(partitionKey, obj.fromSerializedPartition(partitionKey, item10009.values));
+      let setPartitionResult = setPartition(partitionKey, obj.fromSerializedPartition(partitionKey, values));
       continue;
     }
   },
@@ -142,8 +152,10 @@ const guildRoleStore = new GuildRoleStore({
     clear.clear();
   },
   CONNECTION_OPEN(arg0, getPartitionKeys) {
+    let guilds;
+    let unavailableGuilds;
     ({ guilds, unavailableGuilds } = arg0);
-    const set = new Set(guilds.map((id) => id.id));
+    set = new Set(guilds.map((id) => id.id));
     for (const item10017 of unavailableGuilds) {
       let addResult = set.add(item10017);
       continue;
@@ -152,7 +164,7 @@ const guildRoleStore = new GuildRoleStore({
     for (const item10028 of partitionKeys) {
       let tmp3 = item10028;
       if (!set.has(item10028)) {
-        let removePartitionResult = arg1.removePartition(tmp3);
+        let removePartitionResult = getPartitionKeys.removePartition(tmp3);
       }
       continue;
     }
@@ -165,14 +177,17 @@ const guildRoleStore = new GuildRoleStore({
       continue;
     }
   },
-  CACHE_LOADED(arg0, clear) {
+  CACHE_LOADED(guilds, clear) {
+    guilds = guilds.guilds;
     clear.clear();
-    const iter = arg0.guilds[Symbol.iterator]();
+    const iter = guilds[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let id = nextResult.id;
+      let roles = nextResult.roles;
+      let setPartition = clear.setPartition;
       let obj = GuildRoleRecordUtilsAll;
-      let setPartitionResult = clear.setPartition(id, obj.fromSerializedPartition(id, nextResult.roles));
+      let setPartitionResult = setPartition(id, obj.fromSerializedPartition(id, roles));
       let tmp7 = checkGuildRolesExist("cache_loaded", id, clear);
       continue;
     }
@@ -185,28 +200,30 @@ const guildRoleStore = new GuildRoleStore({
       const nextResult = iter.next();
       while (iter !== undefined) {
         let id = nextResult.id;
+        let roles = nextResult.roles;
+        let setPartition = clear.setPartition;
         let obj = GuildRoleRecordUtilsAll;
-        let setPartitionResult = clear.setPartition(id, obj.fromSerializedPartition(id, nextResult.roles));
+        let setPartitionResult = setPartition(id, obj.fromSerializedPartition(id, roles));
         let tmp11 = checkGuildRolesExist("cache_loaded_lazy", id, clear);
         continue;
       }
     }
   },
   GUILD_CREATE(guild, setPartition) {
+    let id;
+    let roles;
     ({ id, roles } = guild.guild);
-    let tmp = "update" === roles.op;
-    if (tmp) {
-      tmp = 0 === roles.writes.length;
-    }
-    if (tmp) {
-      tmp = 0 === roles.deletes.length;
-    }
+    const tmp = "update" === roles.op && 0 === roles.writes.length && 0 === roles.deletes.length;
     if (!tmp) {
-      setPartition.setPartition(id, GuildRoleRecordUtilsAll.fromSyncOperation(id, roles, setPartition.getPartition(id)));
+      setPartition = setPartition.setPartition;
+      const obj = GuildRoleRecordUtilsAll;
+      setPartition(id, obj.fromSyncOperation(id, roles, setPartition.getPartition(id)));
     }
     if (0 === setPartition.partitionLength(id)) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
       const error = new Error("Guild data was missing from store for guild " + id + ": missing roles. (phase: " + "guild_create" + ")");
       throw error;
     }
@@ -214,7 +231,10 @@ const guildRoleStore = new GuildRoleStore({
   GUILD_UPDATE(guild, setPartition) {
     guild = guild.guild;
     const id = guild.id;
-    setPartition.setPartition(id, GuildRoleRecordUtilsAll.fromServerArray(id, guild.roles));
+    const roles = guild.roles;
+    setPartition = setPartition.setPartition;
+    const obj = GuildRoleRecordUtilsAll;
+    setPartition(id, obj.fromServerArray(id, roles));
   },
   GUILD_DELETE(guild, removePartition) {
     if (!guild.guild.unavailable) {
@@ -222,15 +242,25 @@ const guildRoleStore = new GuildRoleStore({
     }
   },
   GUILD_ROLE_CREATE(guildId, setRecord) {
-    setRecord.setRecord(guildId.guildId, guildId.role.id, GuildRoleRecordUtilsAll.fromServer(guildId.guildId, guildId.role));
+    setRecord = setRecord.setRecord;
+    guildId = guildId.guildId;
+    const id = guildId.role.id;
+    const obj = GuildRoleRecordUtilsAll;
+    setRecord(guildId, id, obj.fromServer(guildId.guildId, guildId.role));
   },
   GUILD_ROLE_UPDATE(guildId, setRecord) {
-    setRecord.setRecord(guildId.guildId, guildId.role.id, GuildRoleRecordUtilsAll.fromServer(guildId.guildId, guildId.role));
+    setRecord = setRecord.setRecord;
+    guildId = guildId.guildId;
+    const id = guildId.role.id;
+    const obj = GuildRoleRecordUtilsAll;
+    setRecord(guildId, id, obj.fromServer(guildId.guildId, guildId.role));
   },
   GUILD_ROLE_DELETE(guildId, removeRecord) {
     removeRecord.removeRecord(guildId.guildId, guildId.roleId);
   }
-}, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
+};
+const LibdiscoreBatchStoreRefactorExperiment = libdiscoreExperiments.LibdiscoreBatchStoreRefactorExperiment;
+const guildRoleStore = new GuildRoleStore(obj, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
 const result = size.fileFinishedImporting("stores/GuildRoleStore.tsx");
 
 export default guildRoleStore;

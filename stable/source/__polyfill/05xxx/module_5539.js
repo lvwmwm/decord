@@ -1,9 +1,31 @@
 // Module ID: 5539
 // Function ID: 5540
-// Dependencies: [1121]
+// Dependencies: [5536]
 
 // Module 5539
-import registerAsset from "module_1121" /* 1121 */;
+import _mod5536 from "module_5536" /* 5536 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "8b42912ce44ddbe707d5a6f54419c49d", name: "img_account_sync_youtube_light_and_dark", type: "svg" });
+export default {
+  isAvifFile(getUint32) {
+    if (getUint32) {
+      try {
+        const obj = _mod5536;
+        let parseBoxResult = obj.parseBox(getUint32, 0);
+        const tmp4 = parseBoxResult;
+        if (tmp4) {
+          parseBoxResult = "avif" === parseBoxResult.majorBrand;
+        }
+        return parseBoxResult;
+      } catch (err) {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  },
+  findAvifOffsets(byteLength) {
+    const obj = _mod5536;
+    return obj.findOffsets(byteLength);
+  }
+};

@@ -1,15 +1,16 @@
-// Module ID: 5145
-// Function ID: 5146
-// Name: markAccessibilityFocus
-// Dependencies: [5144, 2]
+// Module ID: 5209
+// Function ID: 5210
+// Name: react-native
+// Dependencies: [5208, 2]
 // Exports: default
 
-// Module 5145 (markAccessibilityFocus)
-import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5144 */;
+// Module 5209 (react-native)
+import react_nativeDefault from "react-native" /* 5208 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/a11y/native/markAccessibilityFocus.tsx");
 
 export default function markAccessibilityFocus() {
-  NativeDeviceAccessibilityModuleDefault.markCurrentFocus();
+  const obj = react_nativeDefault;
+  obj.markCurrentFocus();
 };

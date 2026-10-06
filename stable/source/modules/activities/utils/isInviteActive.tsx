@@ -1,16 +1,16 @@
-// Module ID: 12036
-// Function ID: 12037
+// Module ID: 11128
+// Function ID: 11129
 // Name: isInviteActive
-// Dependencies: [1091, 11, 2]
+// Dependencies: [1103, 11, 2]
 // Exports: default
 
-// Module 12036 (isInviteActive)
+// Module 11128 (isInviteActive)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1091 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import size from "module_2" /* 2 */;
 
 const result = 2 * DurationsDefault.Millis.HOUR;
 let c2 = result;
-const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/activities/utils/isInviteActive.tsx");
 
 export default function isInviteActive(party, activity, arg2) {
@@ -31,19 +31,14 @@ export default function isInviteActive(party, activity, arg2) {
       tmp2 = id !== party_id;
     }
     const _Date = Date;
-    const sum = SnowflakeUtilsDefault.extractTimestamp(activity.id) + result;
+    const obj = SnowflakeUtilsDefault;
+    const sum = obj.extractTimestamp(activity.id) + c2;
     let tmp10 = null != party.application_id;
+    const tmp9 = sum < Date.now();
     if (tmp10) {
       tmp10 = party.application_id !== arg2;
     }
-    let tmp12 = !tmp2;
-    if (!tmp2) {
-      tmp12 = !tmp9;
-    }
-    if (tmp12) {
-      tmp12 = !tmp10;
-    }
-    return tmp12;
+    return !tmp2 && !tmp9 && !tmp10;
   }
 };
 export const EMBED_LIFETIME = result;

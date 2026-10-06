@@ -1,18 +1,20 @@
-// Module ID: 17641
-// Function ID: 17642
+// Module ID: 16955
+// Function ID: 16956
 // Name: VoicePanelControlUtils
-// Dependencies: [11288, 2]
+// Dependencies: [10491, 2]
 // Exports: getDrawerSpec
 
-// Module 17641 (VoicePanelControlUtils)
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11288 */;
+// Module 16955 (VoicePanelControlUtils)
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10491 */;
 import size from "module_2" /* 2 */;
 
 function getDrawerSpec(height, top) {
   const diff = height - top;
-  return { minHeight: roundToNearestPixelDefault(0.65 * diff), maxHeight: diff };
+  const obj = { minHeight: roundToNearestPixelDefault(0.65 * diff), maxHeight: diff };
+  return obj;
 }
-getDrawerSpec.__closure = { roundToNearestPixel: roundToNearestPixelDefault };
+let obj = { roundToNearestPixel: roundToNearestPixelDefault };
+getDrawerSpec.__closure = obj;
 getDrawerSpec.__workletHash = 3647675988513;
 getDrawerSpec.__initData = { code: "function getDrawerSpec_VoicePanelControlUtilsTsx1(height,top){const{roundToNearestPixel}=this.__closure;const maxHeight=height-top;return{minHeight:roundToNearestPixel(maxHeight*0.65),maxHeight:maxHeight};}" };
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/utils/VoicePanelControlUtils.tsx");

@@ -1,27 +1,402 @@
-// Module ID: 12617
-// Function ID: 12618
+// Module ID: 11710
+// Function ID: 11711
 // Name: CreateGuild
-// Dependencies: [19, 17, 1372, 1074, 21, 4788, 576, 5203, 5212, 5216, 4784, 1115, 12081, 6880, 7477, 5218, 7216, 2]
-// Exports: default
+// Dependencies: [19, 17, 1378, 1086, 21, 4837, 588, 558, 576, 5267, 5276, 1127, 4833, 11151, 6021, 6621, 5282, 6357, 5280, 2]
 
-// Module 12617 (CreateGuild)
-import nativeDefault from "native" /* 576 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5212 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 11710 (CreateGuild)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import react_native2 from "react-native" /* 5276 */;
+import react from "react" /* 19 */;
+import UserStore from "UserStore" /* 1378 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ScrollView = fn(17).ScrollView;
-const MarketingURLs = fn(1074).MarketingURLs;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { flex: { flex: 1 }, contentContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16, paddingBottom: 16 }, header: { textAlign: "center" }, description: { lineHeight: 18, textAlign: "center", marginBottom: 24 }, iconUploader: { alignSelf: "center", marginBottom: 4 }, hint: { marginBottom: 8 } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/create_guild/native/CreateGuild.tsx");
+let obj1, tmp2, tmp5, tmp6;
 
-export default function CreateGuild(arg0) {
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+const ScrollView = react_native.ScrollView;
+const MarketingURLs = Constants.MarketingURLs;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { flex: { flex: 1 }, contentContainer: obj2, header: { textAlign: "center" }, description: { lineHeight: 18, textAlign: "center", marginBottom: 24 }, iconUploader: { alignSelf: "center", marginBottom: 4 }, hint: { marginBottom: 8 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16, paddingBottom: 16 };
+let closure_9 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let autoFocus;
+  let customButtonLabel;
+  let customDescription;
+  let customTitle;
+  let error;
+  let guild;
+  let isScreenReaderEnabled;
+  let onCreate;
+  let onIconPress;
+  let onNameChange;
+  let onStaffOnlyChange;
+  let submitting;
+  let tmp11;
+  let tmp12;
+  let tmp = isScreenReaderEnabled;
+  let obj = isScreenReaderEnabled(576);
+  const cResult = obj.c(56);
+  ({ guild, onIconPress, onNameChange, onStaffOnlyChange, onCreate, submitting, error, customTitle, customDescription, customButtonLabel, autoFocus } = arg0);
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const currentUser = UserStore.getCurrentUser();
+    let isStaffResult;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    cResult[0] = isStaffResult;
+    let first = isStaffResult;
+  } else {
+    first = cResult[0];
+  }
+  const tmpResult = tmp(5267);
+  isScreenReaderEnabled = tmpResult.useIsScreenReaderEnabled();
+  const ref = react.useRef(null);
+  const obj4 = react;
+  if (cResult[1] !== isScreenReaderEnabled) {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1;
+          tmp3 = null;
+          tmp = null != closure_1.current;
+        }
+        if (tmp) {
+          tmp4 = closure_0;
+          tmp5 = closure_2;
+          obj = closure_0(closure_2[10]);
+          obj1 = { ref: null, delay: 100 };
+          tmp6 = closure_1;
+          obj1.ref = closure_1;
+          result = obj.setAccessibilityFocus(obj1);
+        }
+        return;
+      }
+    }
+    const items = [isScreenReaderEnabled];
+    cResult[1] = isScreenReaderEnabled;
+    cResult[2] = R;
+    cResult[3] = items;
+    tmp12 = items;
+    tmp11 = R;
+  } else {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1;
+          tmp3 = null;
+          tmp = null != closure_1.current;
+        }
+        if (tmp) {
+          tmp4 = closure_0;
+          tmp5 = closure_2;
+          obj = closure_0(closure_2[10]);
+          obj1 = { ref: null, delay: 100 };
+          tmp6 = closure_1;
+          obj1.ref = closure_1;
+          result = obj.setAccessibilityFocus(obj1);
+        }
+        return;
+      }
+    }
+    tmp12 = cResult[3];
+  }
+  const effect = obj4.useEffect(tmp11, tmp12);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1;
+          tmp3 = null;
+          tmp = null != closure_1.current;
+        }
+        if (tmp) {
+          tmp4 = closure_0;
+          tmp5 = closure_2;
+          obj = closure_0(closure_2[10]);
+          obj1 = { ref: null, delay: 100 };
+          tmp6 = closure_1;
+          obj1.ref = closure_1;
+          result = obj.setAccessibilityFocus(obj1);
+        }
+        return;
+      }
+    }
+    cResult[4] = tmp15;
+  } else {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1;
+          tmp3 = null;
+          tmp = null != closure_1.current;
+        }
+        if (tmp) {
+          tmp4 = closure_0;
+          tmp5 = closure_2;
+          obj = closure_0(closure_2[10]);
+          obj1 = { ref: null, delay: 100 };
+          tmp6 = closure_1;
+          obj1.ref = closure_1;
+          result = obj.setAccessibilityFocus(obj1);
+        }
+        return;
+      }
+    }
+  }
+  if (cResult[5] !== customTitle) {
+    let stringResult;
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1;
+          tmp3 = null;
+          tmp = null != closure_1.current;
+        }
+        if (tmp) {
+          tmp4 = closure_0;
+          tmp5 = closure_2;
+          obj = closure_0(closure_2[10]);
+          obj1 = { ref: null, delay: 100 };
+          tmp6 = closure_1;
+          obj1.ref = closure_1;
+          result = obj.setAccessibilityFocus(obj1);
+        }
+        return;
+      }
+    }
+    if (customTitle == null) {
+      class R {
+        constructor() {
+          tmp = closure_0;
+          if (tmp) {
+            tmp2 = closure_1;
+            tmp3 = null;
+            tmp = null != closure_1.current;
+          }
+          if (tmp) {
+            tmp4 = closure_0;
+            tmp5 = closure_2;
+            obj = closure_0(closure_2[10]);
+            obj1 = { ref: null, delay: 100 };
+            tmp6 = closure_1;
+            obj1.ref = closure_1;
+            result = obj.setAccessibilityFocus(obj1);
+          }
+          return;
+        }
+      }
+      stringResult = obj5.string(tmp(1127).t.XioBx6);
+    }
+    cResult[5] = customTitle;
+    cResult[6] = stringResult;
+  } else {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1;
+          tmp3 = null;
+          tmp = null != closure_1.current;
+        }
+        if (tmp) {
+          tmp4 = closure_0;
+          tmp5 = closure_2;
+          obj = closure_0(closure_2[10]);
+          obj1 = { ref: null, delay: 100 };
+          tmp6 = closure_1;
+          obj1.ref = closure_1;
+          result = obj.setAccessibilityFocus(obj1);
+        }
+        return;
+      }
+    }
+  }
+  if (cResult[7] === tmp4.header) {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (tmp) {
+          tmp2 = closure_1;
+          tmp3 = null;
+          tmp = null != closure_1.current;
+        }
+        if (tmp) {
+          tmp4 = closure_0;
+          tmp5 = closure_2;
+          obj = closure_0(closure_2[10]);
+          obj1 = { ref: null, delay: 100 };
+          tmp6 = closure_1;
+          obj1.ref = closure_1;
+          result = obj.setAccessibilityFocus(obj1);
+        }
+        return;
+      }
+    }
+    if (cResult[10] !== customDescription) {
+      let stringResult1;
+      class R {
+        constructor() {
+          tmp = closure_0;
+          if (tmp) {
+            tmp2 = closure_1;
+            tmp3 = null;
+            tmp = null != closure_1.current;
+          }
+          if (tmp) {
+            tmp4 = closure_0;
+            tmp5 = closure_2;
+            obj = closure_0(closure_2[10]);
+            obj1 = { ref: null, delay: 100 };
+            tmp6 = closure_1;
+            obj1.ref = closure_1;
+            result = obj.setAccessibilityFocus(obj1);
+          }
+          return;
+        }
+      }
+      if (customDescription == null) {
+        class R {
+          constructor() {
+            tmp = closure_0;
+            if (tmp) {
+              tmp2 = closure_1;
+              tmp3 = null;
+              tmp = null != closure_1.current;
+            }
+            if (tmp) {
+              tmp4 = closure_0;
+              tmp5 = closure_2;
+              obj = closure_0(closure_2[10]);
+              obj1 = { ref: null, delay: 100 };
+              tmp6 = closure_1;
+              obj1.ref = closure_1;
+              result = obj.setAccessibilityFocus(obj1);
+            }
+            return;
+          }
+        }
+        stringResult1 = obj7.string(tmp(1127).t["/k/L/j"]);
+      }
+      cResult[10] = customDescription;
+      cResult[11] = stringResult1;
+    } else {
+      class R {
+        constructor() {
+          tmp = closure_0;
+          if (tmp) {
+            tmp2 = closure_1;
+            tmp3 = null;
+            tmp = null != closure_1.current;
+          }
+          if (tmp) {
+            tmp4 = closure_0;
+            tmp5 = closure_2;
+            obj = closure_0(closure_2[10]);
+            obj1 = { ref: null, delay: 100 };
+            tmp6 = closure_1;
+            obj1.ref = closure_1;
+            result = obj.setAccessibilityFocus(obj1);
+          }
+          return;
+        }
+      }
+    }
+    if (cResult[12] === tmp4.description) {
+      class R {
+        constructor() {
+          tmp = closure_0;
+          if (tmp) {
+            tmp2 = closure_1;
+            tmp3 = null;
+            tmp = null != closure_1.current;
+          }
+          if (tmp) {
+            tmp4 = closure_0;
+            tmp5 = closure_2;
+            obj = closure_0(closure_2[10]);
+            obj1 = { ref: null, delay: 100 };
+            tmp6 = closure_1;
+            obj1.ref = closure_1;
+            result = obj.setAccessibilityFocus(obj1);
+          }
+          return;
+        }
+      }
+      if (cResult[15] === guild.icon) {
+        class R {
+          constructor() {
+            tmp = closure_0;
+            if (tmp) {
+              tmp2 = closure_1;
+              tmp3 = null;
+              tmp = null != closure_1.current;
+            }
+            if (tmp) {
+              tmp4 = closure_0;
+              tmp5 = closure_2;
+              obj = closure_0(closure_2[10]);
+              obj1 = { ref: null, delay: 100 };
+              tmp6 = closure_1;
+              obj1.ref = closure_1;
+              result = obj.setAccessibilityFocus(obj1);
+            }
+            return;
+          }
+        }
+      }
+      let obj2 = { iconBackgroundColor: tmp4.contentContainer.backgroundColor, style: tmp4.iconUploader, onPress: onIconPress, icon: guild.icon };
+      cResult[15] = guild.icon;
+      cResult[16] = onIconPress;
+      cResult[17] = tmp4.contentContainer.backgroundColor;
+      cResult[18] = tmp4.iconUploader;
+      cResult[19] = closure_7(ref(11151), obj2);
+      const tmp27 = closure_7(ref(11151), obj2);
+    }
+    const obj3 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp19 };
+    cResult[12] = tmp4.description;
+    cResult[13] = tmp19;
+    cResult[14] = closure_7(tmp(4833).Text, obj3);
+    const tmp23 = closure_7(tmp(4833).Text, obj3);
+  }
+  const obj6 = { ref, style: tmp4.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp16 };
+  cResult[7] = tmp4.header;
+  cResult[8] = tmp16;
+  cResult[9] = closure_7(tmp(4833).Text, obj6);
+  closure_7(tmp(4833).Text, obj6);
+}) : ((arg0) => {
+  let Stack;
+  let autoFocus;
+  let customButtonLabel;
+  let customDescription;
+  let customTitle;
+  let error;
+  let firstFieldErrorMessage;
+  let guild;
+  let intl3;
+  let intl4;
+  let intl5;
+  let items1;
+  let obj9;
+  let onCreate;
+  let onIconPress;
+  let onNameChange;
+  let onStaffOnlyChange;
+  let submitting;
+  let tmp11;
   ({ guild, error, customTitle, customDescription, customButtonLabel, autoFocus } = arg0);
   ({ onIconPress, onNameChange, onStaffOnlyChange, onCreate, submitting } = arg0);
   if (autoFocus === undefined) {
@@ -35,71 +410,71 @@ export default function CreateGuild(arg0) {
   if (currentUser != null) {
     isStaffResult = currentUser.isStaff();
   }
-  isScreenReaderEnabled = isScreenReaderEnabled(5203).useIsScreenReaderEnabled();
-  ref = noop.useRef(null);
+  const tmp3 = !isStaffResult;
+  let obj2 = isScreenReaderEnabled(5267);
+  isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
+  ref = react.useRef(null);
   const items = [isScreenReaderEnabled];
-  const effect = noop.useEffect(() => {
-    let tmp = isScreenReaderEnabled;
-    if (isScreenReaderEnabled) {
-      tmp = null != ref.current;
-    }
+  const effect = react.useEffect(() => {
+    const tmp = isScreenReaderEnabled && null != ref.current;
     if (tmp) {
       const obj2 = { ref, delay: 100 };
-      const result = setAccessibilityFocus.setAccessibilityFocus(obj2);
+      const obj = react_native2;
+      const result = obj.setAccessibilityFocus(obj2);
     }
   }, items);
-  let obj = { style: tmp.flex, contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: null };
-  const obj3 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  let obj = { style: tmp.flex, contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: tmp11(Stack, { children: items1 }) };
+  Stack = isScreenReaderEnabled(5280).Stack;
+  const obj3 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: customTitle };
+  const Text = isScreenReaderEnabled(4833).Text;
+  const tmp10 = ScrollView;
+  tmp11 = closure_8;
   if (customTitle == null) {
-    const intl = tmp4(1115).intl;
-    customTitle = intl.string(tmp4(1115).t.XioBx6);
+    const intl = tmp4(1127).intl;
+    customTitle = intl.string(tmp4(1127).t.XioBx6);
   }
-  obj3.children = customTitle;
-  const items1 = [closure_7(isScreenReaderEnabled(4784).Text, obj3), , , , , , , ];
-  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
+  items1 = [closure_7(Text, obj3), , , , , , , ];
+  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: customDescription };
+  const Text2 = tmp4(4833).Text;
   if (customDescription == null) {
-    const intl2 = tmp4(1115).intl;
-    customDescription = intl2.string(tmp4(1115).t["/k/L/j"]);
+    const intl2 = tmp4(1127).intl;
+    customDescription = intl2.string(tmp4(1127).t["/k/L/j"]);
   }
-  obj4.children = customDescription;
-  items1[1] = closure_7(isScreenReaderEnabled(4784).Text, obj4);
-  items1[2] = closure_7(ref(12081), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
-  const obj6 = { clearable: true, label: null, errorMessage: null, value: null, onChange: null, autoFocus: null, autoCorrect: false, returnKeyType: "done" };
-  const intl3 = tmp4(1115).intl;
-  obj6.label = intl3.string(isScreenReaderEnabled(1115).t.dBih7e);
-  let firstFieldErrorMessage;
+  items1[1] = closure_7(Text2, obj4);
+  const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
+  items1[2] = closure_7(ref(11151), obj5);
+  const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1127).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
+  const TextInput = tmp4(6021).TextInput;
+  intl3 = tmp4(1127).intl;
+  firstFieldErrorMessage = undefined;
+  const tmp12 = ref;
   if (error != null) {
     firstFieldErrorMessage = error.getFirstFieldErrorMessage("name");
   }
-  obj6.errorMessage = firstFieldErrorMessage;
-  obj6.value = guild.name;
-  obj6.onChange = onNameChange;
   if (autoFocus) {
     autoFocus = !isScreenReaderEnabled;
   }
-  let tmp9Result = !!isStaffResult;
-  obj6.autoFocus = autoFocus;
-  items1[3] = closure_7(isScreenReaderEnabled(6880).TextInput, obj6);
+  let tmp9Result = !tmp3;
+  items1[3] = closure_7(TextInput, obj6);
   if (tmp9Result) {
-    const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: null };
-    const intl4 = tmp4(1115).intl;
-    obj7.subLabel = intl4.string(tmp4(1115).t.edQ5va);
-    tmp9Result = tmp9(tmp4(7477).TableSwitchRow, obj7);
+    const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: intl4.string(isScreenReaderEnabled(1127).t.edQ5va) };
+    const TableSwitchRow = tmp4(6621).TableSwitchRow;
+    intl4 = tmp4(1127).intl;
+    tmp9Result = tmp9(TableSwitchRow, obj7);
   }
   items1[4] = tmp9Result;
-  const obj8 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted", children: null };
-  const intl5 = tmp4(1115).intl;
-  obj8.children = intl5.format(isScreenReaderEnabled(1115).t["2bprXx"], { guidelinesURL: MarketingURLs.GUIDELINES });
-  items1[5] = closure_7(isScreenReaderEnabled(4784).Text, obj8);
-  const obj10 = { disabled: "" === guild.name, size: "md", grow: true, text: null, onPress: null, loading: null };
+  const obj8 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted", children: intl5.format(isScreenReaderEnabled(1127).t["2bprXx"], obj9) };
+  const Text3 = tmp4(4833).Text;
+  intl5 = tmp4(1127).intl;
+  obj9 = { guidelinesURL: MarketingURLs.GUIDELINES };
+  items1[5] = closure_7(Text3, obj8);
+  const obj10 = { disabled: "" === guild.name, size: "md", grow: true, text: customButtonLabel, onPress: onCreate, loading: submitting };
+  const Button = tmp4(5282).Button;
   if (customButtonLabel == null) {
-    const intl6 = tmp4(1115).intl;
-    customButtonLabel = intl6.string(tmp4(1115).t["O0p/lS"]);
+    const intl6 = tmp4(1127).intl;
+    customButtonLabel = intl6.string(tmp4(1127).t["O0p/lS"]);
   }
-  obj10.text = customButtonLabel;
-  obj10.onPress = onCreate;
-  obj10.loading = submitting;
-  items1[6] = closure_7(isScreenReaderEnabled(5218).Button, obj10);
+  items1[6] = closure_7(Button, obj10);
   let firstFieldErrorMessage1;
   if (error != null) {
     firstFieldErrorMessage1 = error.getFirstFieldErrorMessage("name");
@@ -119,16 +494,18 @@ export default function CreateGuild(arg0) {
       tmp9Result2 = null;
       if ("" !== message1) {
         let message2;
+        const tmp12Result = tmp12(6357);
         if (error != null) {
           message2 = error.message;
         }
         const obj11 = { children: message2 };
-        tmp9Result2 = tmp9(ref(7216), obj11);
-        const tmp12Result = ref(7216);
+        tmp9Result2 = tmp9(tmp12Result, obj11);
       }
     }
   }
   items1[7] = tmp9Result2;
-  obj.children = closure_8(isScreenReaderEnabled(5216).Stack, { children: items1 });
-  return closure_7(ScrollView, obj);
-};
+  return closure_7(tmp10, obj);
+});
+let result = size.fileFinishedImporting("modules/create_guild/native/CreateGuild.tsx");
+
+export default tmp3;

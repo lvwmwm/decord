@@ -1,25 +1,31 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 16316
+// Function ID: 16317
 // Name: vibegrationsFeedback
-// Dependencies: [13391, 9341, 1074, 11906, 510, 1115, 3710, 1241, 11909, 2]
+// Dependencies: [12645, 8492, 1086, 10991, 510, 1127, 3718, 1253, 10994, 2]
 // Exports: countSettledTurns, hasShownFeedbackForProject, markFeedbackShownForProject, submitVibegrationsFeedback, trackVibegrationsFeedbackOpened, vibegrationsFeedbackSection
 
-// Module 17003 (vibegrationsFeedback)
+// Module 16316 (vibegrationsFeedback)
 import Storage3 from "Storage" /* 510 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef3710 from "module_3710" /* 3710 */;
-import FeedbackUtils from "FeedbackUtils" /* 11909 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 13391 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9341 */;
+import Constants2 from "Constants" /* 1086 */;
+import intl7 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import FeedbackUtils from "FeedbackUtils" /* 10994 */;
+import VibegrationsChatStore2 from "VibegrationsChatStore" /* 12645 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8492 */;
+import Constants from "Constants" /* 10991 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const turnSettled = fn(13391).turnSettled;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const Constants = fn(11906);
-({ FeedbackCategory: closure_7, FeedbackOptionVariant: closure_8, FeedbackType: closure_9, VibegrationsFeedbackOption: c10 } = Constants);
+const VibegrationsChatStore = VibegrationsChatStore2;
+
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+const turnSettled = VibegrationsChatStore2.turnSettled;
+const AnalyticEvents = Constants2.AnalyticEvents;
+({ FeedbackCategory: metroImportDefault, FeedbackOptionVariant: metroImportAll, FeedbackType: c9, VibegrationsFeedbackOption: c10 } = Constants);
 const shownVibegrationsFeedbackProjectIds = "shownVibegrationsFeedbackProjectIds";
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsFeedback.tsx");
 
 export const MINIMUM_SETTLED_TURNS_FOR_FEEDBACK = 3;
@@ -34,77 +40,80 @@ export const hasShownFeedbackForProject = function hasShownFeedbackForProject(ar
 export const markFeedbackShownForProject = function markFeedbackShownForProject(arg0) {
   const Storage = Storage3.Storage;
   let items1 = Storage.get(shownVibegrationsFeedbackProjectIds);
+  const tmp4 = shownVibegrationsFeedbackProjectIds;
   if (items1 == null) {
     items1 = [];
   }
   if (!items1.includes(arg0)) {
     const Storage2 = Storage3.Storage;
     const items = [];
-    items[HermesBuiltin.arraySpread(items1, 0)] = arg0;
-    const result = Storage2.set(shownVibegrationsFeedbackProjectIds, items);
+    items[HermesBuiltin.arraySpread(items, items1, 0)] = arg0;
+    const result = Storage2.set(tmp4, items);
   }
 };
 export const countSettledTurns = function countSettledTurns(arg0) {
   const messages = VibegrationsChatStore.getMessages(arg0);
   return messages.filter((role) => {
-    let tmp = "assistant" === role.role;
-    if (tmp) {
-      tmp = "side_reply" !== role.kind;
-    }
-    if (tmp) {
-      tmp = turnSettled(role);
-    }
+    const tmp = "assistant" === role.role && "side_reply" !== role.kind && turnSettled(role);
     return tmp;
   }).length;
 };
 export const vibegrationsFeedbackSection = function vibegrationsFeedbackSection() {
-  const obj = { value: constants.VIBEGRATIONS, label: "", problemsHeader: null, problemOptions: null, freeformConfig: null };
-  const intl = util.intl;
-  obj.problemsHeader = intl.string(_modDef3710.kLHFxL);
-  const obj2 = { value: constants4.NOT_WHAT_I_WANTED, variant: constants2.UNSPECIFIED, label: null };
-  const intl2 = util.intl;
-  obj2.label = intl2.string(_modDef3710.UJLIUY);
-  const items = [obj2, , , ];
-  const obj3 = { value: constants4.TOO_SLOW, variant: constants2.UNSPECIFIED, label: null };
-  const intl3 = util.intl;
-  obj3.label = intl3.string(_modDef3710.FVQz1w);
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let items;
+  let obj6;
+  const obj = { value: metroImportDefault.VIBEGRATIONS, label: "", problemsHeader: intl.string(_modDef3718.kLHFxL), problemOptions: items, freeformConfig: obj6 };
+  intl = intl7.intl;
+  const obj2 = { value: constants4.NOT_WHAT_I_WANTED, variant: metroImportAll.UNSPECIFIED, label: intl2.string(_modDef3718.UJLIUY) };
+  intl2 = intl7.intl;
+  items = [obj2, , , ];
+  const obj3 = { value: constants4.TOO_SLOW, variant: metroImportAll.UNSPECIFIED, label: intl3.string(_modDef3718.FVQz1w) };
+  intl3 = intl7.intl;
   items[1] = obj3;
-  const obj4 = { value: constants4.APP_DIDNT_WORK, variant: constants2.UNSPECIFIED, label: null };
-  const intl4 = util.intl;
-  obj4.label = intl4.string(_modDef3710["4AdY23"]);
+  const obj4 = { value: constants4.APP_DIDNT_WORK, variant: metroImportAll.UNSPECIFIED, label: intl4.string(_modDef3718["4AdY23"]) };
+  intl4 = intl7.intl;
   items[2] = obj4;
-  const obj5 = { value: constants4.DIDNT_KNOW_WHAT_TO_ASK_FOR, variant: constants2.UNSPECIFIED, label: null };
-  const intl5 = util.intl;
-  obj5.label = intl5.string(_modDef3710["u/juX1"]);
+  const obj5 = { value: constants4.DIDNT_KNOW_WHAT_TO_ASK_FOR, variant: metroImportAll.UNSPECIFIED, label: intl5.string(_modDef3718["u/juX1"]) };
+  intl5 = intl7.intl;
   items[3] = obj5;
-  obj.problemOptions = items;
-  const obj6 = { value: constants4.FREEFORM, label: null };
-  const intl6 = util.intl;
-  obj6.label = intl6.string(_modDef3710["8Ee6yW"]);
-  obj.freeformConfig = obj6;
+  obj6 = { value: constants4.FREEFORM, label: intl6.string(_modDef3718["8Ee6yW"]) };
+  intl6 = intl7.intl;
   return obj;
 };
 export const trackVibegrationsFeedbackOpened = function trackVibegrationsFeedbackOpened() {
-  AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_MODAL, { type: "vibegrations", source: "Feedback Modal" });
+  const obj = AnalyticsUtilsDefault;
+  obj.track(AnalyticEvents.OPEN_MODAL, { type: "vibegrations", source: "Feedback Modal" });
 };
-export const submitVibegrationsFeedback = function submitVibegrationsFeedback(projectId, promptCount, dontShowAgain, VibegrationsFeedbackSheet) {
-  ({ rating, reason } = dontShowAgain);
-  if (true === dontShowAgain.dontShowAgain) {
+export const submitVibegrationsFeedback = function submitVibegrationsFeedback(projectId, promptCount, feedback, VibegrationsFeedbackSheet) {
+  let application_id;
+  let rating;
+  let reason;
+  let value;
+  ({ rating, reason } = feedback);
+  feedback = feedback.feedback;
+  if (true === feedback.dontShowAgain) {
     const obj2 = { feedbackType: constants3.VIBEGRATIONS, location: VibegrationsFeedbackSheet };
-    FeedbackUtils.processOptOut(obj2);
+    const obj = FeedbackUtils;
+    obj.processOptOut(obj2);
   }
   if (null != rating) {
-    const obj4 = { project_id: projectId, application_id: null, rating: null, reason: null, feedback: null, prompt_count: null, location: "Vibegrations Prompt" };
+    const obj3 = { project_id: projectId, application_id, rating, reason: value, feedback, prompt_count: promptCount, location: "Vibegrations Prompt" };
+    const track = AnalyticsUtilsDefault.track;
+    const VIBEGRATIONS_FEEDBACK = AnalyticEvents.VIBEGRATIONS_FEEDBACK;
+    AnalyticsUtilsDefault;
     const project = VibegrationsProjectStore.getProject(projectId);
-    let application_id;
+    application_id = undefined;
     if (project != null) {
       application_id = project.application_id;
     }
     if (application_id == null) {
       application_id = null;
     }
-    obj4.application_id = application_id;
-    obj4.rating = rating;
     value = undefined;
     if (reason != null) {
       value = reason.value;
@@ -112,9 +121,6 @@ export const submitVibegrationsFeedback = function submitVibegrationsFeedback(pr
     if (value == null) {
       value = null;
     }
-    obj4.reason = value;
-    obj4.feedback = dontShowAgain.feedback;
-    obj4.prompt_count = promptCount;
-    AnalyticsUtilsDefault.track(AnalyticEvents.VIBEGRATIONS_FEEDBACK, obj4);
+    track(VIBEGRATIONS_FEEDBACK, obj3);
   }
 };

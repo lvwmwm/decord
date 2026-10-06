@@ -1,26 +1,26 @@
-// Module ID: 13214
-// Function ID: 13215
+// Module ID: 12446
+// Function ID: 12447
 // Name: RpcCommandInterception
 // Dependencies: [2]
 // Exports: interceptRpcCommand, setRpcCommandInterceptor
 
-// Module 13214 (RpcCommandInterception)
+// Module 12446 (RpcCommandInterception)
 import size from "module_2" /* 2 */;
 
-let global = null;
+let c0 = null;
 const result = size.fileFinishedImporting("modules/rpc/RpcCommandInterception.tsx");
 
 export function setRpcCommandInterceptor(answerFor) {
-  global = answerFor;
+  let c0 = answerFor;
 }
-export const interceptRpcCommand = function interceptRpcCommand(framebus) {
-  if (null == global) {
+export const interceptRpcCommand = function interceptRpcCommand(arg0) {
+  if (null == _null) {
     return null;
   } else {
     try {
-      return global(framebus);
+      return _null(arg0);
     } catch (err) {
-      return tmp;
+      return null;
     }
   }
 };

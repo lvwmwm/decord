@@ -1,8 +1,8 @@
-// Module ID: 6103
-// Function ID: 6104
+// Module ID: 16366
+// Function ID: 16367
 // Dependencies: [2]
 
-// Module 6103
+// Module 16366
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CaterpillarIllocon-2x.png.js");

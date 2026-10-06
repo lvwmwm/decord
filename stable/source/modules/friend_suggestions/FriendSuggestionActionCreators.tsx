@@ -1,42 +1,97 @@
-// Module ID: 7931
-// Function ID: 7932
+// Module ID: 7080
+// Function ID: 7081
 // Name: FriendSuggestionActionCreators
-// Dependencies: [5, 1074, 1271, 573, 2]
+// Dependencies: [5, 1086, 1283, 585, 2]
 
-// Module 7931 (FriendSuggestionActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 7080 (FriendSuggestionActionCreators)
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Endpoints = fn(1074).Endpoints;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/friend_suggestions/FriendSuggestionActionCreators.tsx");
+let c4, c5;
 
-export default {
+const Endpoints = Constants.Endpoints;
+let obj = {
   fetch() {
-    return (async () => {
-      closure_1 = tmp3;
-      const HTTP = HTTPUtils.HTTP;
-      await HTTP.get({ url: constants.FRIEND_SUGGESTIONS, rejectWithError: true });
-      if (1 === tmp7) {
-        c3 = 0;
-        closure_129_1(closure_129_2[3]).dispatch({ type: "LOAD_FRIEND_SUGGESTIONS_FAILURE" });
+    return (async (arg0, value) => {
+      if (c5 === 2) {
         c5 = 3;
-        closure_129_1(closure_129_2[3]);
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        closure_128_0 = arg1;
-        closure_129_1(closure_129_2[3]).dispatch({ type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: closure_128_0.body });
-        c3 = 0;
-        closure_129_1(closure_129_2[3]);
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          let body;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_1 = tmp;
+              body = undefined;
+              c3 = 1;
+              const HTTP = HTTPUtils.HTTP;
+              const obj5 = { url: constants.FRIEND_SUGGESTIONS, rejectWithError: true };
+              c4 = 2;
+              c5 = 1;
+              const obj6 = { value: HTTP.get(obj5), done: false };
+              return obj6;
+            }
+          } else {
+            if (1 === c4) {
+              c3 = 0;
+              const obj4 = closure_129_1(closure_129_2[3]);
+              obj4.dispatch({ type: "LOAD_FRIEND_SUGGESTIONS_FAILURE" });
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            } else {
+              body = value;
+              const obj8 = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: body.body };
+              const obj = closure_129_1(closure_129_2[3]);
+              obj.dispatch(obj8);
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp19) {
+          let closure_2 = tmp19;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp19;
+          } else {
+            c4 = 1;
+          }
+        }
       }
-      return arg1;
     })();
   },
   ignore(id) {
     const HTTP = HTTPUtils.HTTP;
-    HTTP.del({ url: Endpoints.FRIEND_SUGGESTION(id), rejectWithError: true });
+    const obj = { url: Endpoints.FRIEND_SUGGESTION(id), rejectWithError: true };
+    HTTP.del(obj);
   }
 };
+const result = size.fileFinishedImporting("modules/friend_suggestions/FriendSuggestionActionCreators.tsx");
+
+export default obj;

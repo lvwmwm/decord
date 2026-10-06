@@ -1,16 +1,16 @@
-// Module ID: 5522
-// Function ID: 5523
+// Module ID: 5586
+// Function ID: 5587
 // Name: EnsureReceivedMessagesAddedInOrderExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 5522 (EnsureReceivedMessagesAddedInOrderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 5586 (EnsureReceivedMessagesAddedInOrderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-04-ensure-received-messages-added-in-order", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-04-ensure-received-messages-added-in-order", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("lib/EnsureReceivedMessagesAddedInOrderExperiment.tsx");
 

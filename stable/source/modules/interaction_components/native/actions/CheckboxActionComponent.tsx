@@ -1,34 +1,36 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 17169
+// Function ID: 17170
 // Name: CheckboxActionComponent
-// Dependencies: [19, 21, 8413, 38, 1978, 9575, 2]
+// Dependencies: [19, 21, 7573, 38, 1985, 8727, 2]
 
-// Module 17810 (CheckboxActionComponent)
+// Module 17169 (CheckboxActionComponent)
+import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 1978 */;
-import ComponentStateContext from "ComponentStateContext" /* 8413 */;
-import Checkbox from "Checkbox" /* 9575 */;
-import noop from "module_19" /* 19 */;
+import Server from "Server" /* 1985 */;
+import ComponentStateContext from "ComponentStateContext" /* 7573 */;
+import Checkbox from "Checkbox" /* 8727 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/interaction_components/native/actions/CheckboxActionComponent.tsx");
+let type;
 
-export default noop.memo((type) => {
+const jsx = Fragment.jsx;
+const memoResult = react.memo((type) => {
   type = type.type;
-  const componentStateContext = ComponentStateContext.useComponentStateContext();
+  let obj = ComponentStateContext;
+  const componentStateContext = obj.useComponentStateContext();
   _modDef38(null != componentStateContext, "CheckboxActionComponent must be rendered inside a ComponentStateContext");
   let tmp5;
+  const useComponentState = componentStateContext.useComponentState;
   if (null != type.default) {
-    const obj2 = { type, value: _default };
-    tmp5 = obj2;
+    tmp5 = { type, value: type.default };
+    const obj2 = { type, value: type.default };
   }
-  const componentState = componentStateContext.useComponentState(type, tmp5);
+  const componentState = useComponentState(type, tmp5);
   const state = componentState.state;
   const executeStateUpdate = componentState.executeStateUpdate;
   const items = [state, type];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     type = undefined;
     if (state != null) {
       type = iter.type;
@@ -54,7 +56,11 @@ export default noop.memo((type) => {
     description: tmp11.description,
     checked: memo,
     onToggle(value) {
-      executeStateUpdate({ type, value });
+      const obj = { type, value };
+      executeStateUpdate(obj);
     }
   });
 });
+const result = size.fileFinishedImporting("modules/interaction_components/native/actions/CheckboxActionComponent.tsx");
+
+export default memoResult;

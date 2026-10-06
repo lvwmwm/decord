@@ -1,12 +1,14 @@
-// Module ID: 13215
-// Function ID: 13216
+// Module ID: 12447
+// Function ID: 12448
 // Name: vibegrationsPreviewOperationSurfaces
-// Dependencies: [13212, 2]
+// Dependencies: [12444, 2]
 // Exports: createPreviewOperationSurfaces
 
-// Module 13215 (vibegrationsPreviewOperationSurfaces)
-import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 13212 */;
+// Module 12447 (vibegrationsPreviewOperationSurfaces)
+import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 12444 */;
 import size from "module_2" /* 2 */;
+
+let closure_1, map;
 
 function bestEffort(arg0, fn) {
   try {
@@ -17,36 +19,40 @@ function bestEffort(arg0, fn) {
 let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPreviewOperationSurfaces.tsx");
 
 export const createPreviewOperationSurfaces = function createPreviewOperationSurfaces(arg0) {
-  closure_0 = arg0;
-  const map = new Map();
-  return {
-    begin(TableRowGroup) {
-      let result = TableRowGroup(map[0]).beginVibegrationsControlOperation(TableRowGroup);
-      const tmp2 = TableRowGroup(TableRowGroup);
+  let closure_0 = arg0;
+  map = new Map();
+  let obj = {
+    begin(Stack2) {
+      let obj = Stack2(map[0]);
+      let result = obj.beginVibegrationsControlOperation(Stack2);
+      const tmp2 = Stack2(Stack2);
+      map = tmp2;
       if (null != tmp2) {
-        value = map.get(TableRowGroup);
-        closure_2 = value;
+        let obj2 = map;
+        let value = map.get(Stack2);
         if (null != value) {
-          obj2.delete(TableRowGroup);
+          obj2.delete(Stack2);
           bestEffort(0, () => value.end());
         }
         bestEffort(0, () => closure_1.dismiss());
         bestEffort(0, () => {
           const openResult = closure_1.open();
-          TableRowGroup = openResult;
-          closure_1 = TableRowGroup(map[0]).subscribeVibegrationsControl(() => {
+          Stack2 = openResult;
+          let obj = Stack2(map[0]);
+          closure_1 = obj.subscribeVibegrationsControl(() => {
+            const obj = openResult(map[0]);
             if (!obj.isVibegrationsControlActive(openResult)) {
               value = closure_1.get(tmp);
+              const obj2 = closure_1;
               if (null != value) {
-                obj2.delete(tmp);
+                obj2.delete(openResult);
                 closure_1_2(0, () => value.end());
               }
-              const result = value(closure_1[0]).endVibegrationsControlOperation(tmp);
-              obj2 = closure_1;
-              const obj3 = value(closure_1[0]);
+              const obj3 = openResult(closure_1[0]);
+              const result = obj3.endVibegrationsControlOperation(tmp);
             }
           });
-          let result = closure_1.set(TableRowGroup, {
+          let obj2 = {
             iframeId: openResult.iframeId,
             drain() {
               return openResult.drain();
@@ -55,22 +61,23 @@ export const createPreviewOperationSurfaces = function createPreviewOperationSur
               closure_1();
               openResult.end();
             }
-          });
+          };
+          let result = closure_1.set(Stack2, obj2);
         });
-        obj2 = map;
       }
     },
     end(openResult) {
-      value = map.get(openResult);
-      closure_0 = value;
+      const value = map.get(openResult);
+      const obj = map;
       if (null != value) {
-        map.delete(openResult);
+        obj.delete(openResult);
         bestEffort(0, () => value.end());
       }
-      const result = vibegrationsPreviewControlLease.endVibegrationsControlOperation(openResult);
+      const obj2 = vibegrationsPreviewControlLease;
+      const result = obj2.endVibegrationsControlOperation(openResult);
     },
     drain(arg0) {
-      value = map.get(arg0);
+      const value = map.get(arg0);
       let drainResult;
       if (value != null) {
         drainResult = value.drain();
@@ -81,4 +88,5 @@ export const createPreviewOperationSurfaces = function createPreviewOperationSur
       return drainResult;
     }
   };
+  return obj;
 };

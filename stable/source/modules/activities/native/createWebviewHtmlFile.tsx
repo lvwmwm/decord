@@ -1,132 +1,146 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 8924
+// Function ID: 8925
 // Name: createWebviewHtmlFile
-// Dependencies: [5, 1364, 1151, 1231, 2]
+// Dependencies: [5, 1370, 1163, 1243, 2]
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 9768 (createWebviewHtmlFile)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 8924 (createWebviewHtmlFile)
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_4 = async function _createWebviewHtmlFile(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      if (0 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
-        } else {
-          closure_2 = tmp3;
-          closure_1 = tmp7;
-          closure_129_0 = undefined;
-          closure_129_1 = undefined;
-          closure_129_2 = undefined;
-          closure_129_3 = undefined;
-          closure_129_4 = undefined;
-          ({ iFrameUri: closure_129_0, iFrameSandboxAttributes: closure_129_1, referrerPolicy: closure_129_2, insets: closure_129_3, messageForDisallowedNavigationError: closure_129_4 } = closure_0);
-          closure_129_5 = undefined;
-          c5 = 1;
-          c6 = 1;
-          return { value: "PX_16", done: true };
+let closure_3, iFrameAllowAttributes, iFrameSandboxAttributes, iFrameUri, messageForDisallowedNavigationError, referrerPolicy;
+
+let obj = function _createWebviewHtmlFile() {
+  obj = _asyncToGenerator(async (iFrameUri) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (async (arg0, value) => {
+      let c0;
+      let c1;
+      let c2;
+      let c3;
+      let c4;
+      let c5;
+      function generateWebviewHtml(arg0) {
+        ({ iFrameUri, iFrameAllowAttributes, iFrameSandboxAttributes, referrerPolicy, insets, messageForDisallowedNavigationError } = arg0);
+        let str = "";
+        let str2 = "";
+        obj = closure_1_0(closure_1_2[1]);
+        if (obj.isAndroid()) {
+          if (insets == null) {
+            insets = { top: 0, bottom: 0, left: 0, right: 0 };
+          }
+          const _HermesInternal = HermesInternal;
+          const combined = "\n  " + "iframeWindow" + ".addEventListener(\"load\", () => {\n    var iframeDoc = " + "iframeWindow" + ".document;\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-left', '" + insets.left + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-right', '" + insets.right + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-top', '" + insets.top + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-bottom', '" + insets.bottom + "px');\n    " + "isIframeLoaded" + " = true;\n  });\n";
+          const _HermesInternal2 = HermesInternal;
+          const _HermesInternal3 = HermesInternal;
+          str2 = "\n      <script type=\"text/javascript\">\n        var iframe = document.getElementById(\"activityFrame\");\n        var iframeWindow = iframe.contentWindow;\n        var isIframeLoaded = false;\n        " + combined + "\n        " + "\n  function updateSafeAreaVars(insets) {\n    var iframeDoc = " + "iframeWindow" + ".document;\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-left', `${insets.left}px`);\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-right', `${insets.right}px`);\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-top', `${insets.top}px`);\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-bottom', `${insets.bottom}px`);\n    " + "iframeWindow" + ".dispatchEvent(new Event('resize'));\n    // Force redraw\n    iframeDoc.documentElement.offsetHeight;\n  }\n  " + "iframeWindow" + ".addEventListener('message', function (e) {\n    const messageData = e.data;\n    const {type, data} = messageData;\n    if (type === 'safeAreaUpdateEvent') {\n      const {insets} = data;\n      if (" + "isIframeLoaded" + ") {\n        updateSafeAreaVars(insets);\n      } else {\n        " + "iframeWindow" + ".addEventListener(\"load\", () => {\n          updateSafeAreaVars(insets);\n        });\n      }\n    }\n  });\n" + "\n      </script>\n      ";
         }
-      } else if (1 === tmp7) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
+        if (null != messageForDisallowedNavigationError) {
+          const _HermesInternal4 = HermesInternal;
+          const _HermesInternal5 = HermesInternal;
+          str = "\n      <script type=\"text/javascript\">\n        var iframe = document.getElementById(\"activityFrame\");\n        var iframeWindow = iframe.contentWindow;\n        " + "\n  " + "iframeWindow" + ".addEventListener('beforeunload', function (e) {\n    window.ReactNativeWebView.postMessage('" + messageForDisallowedNavigationError + "');\n    e.preventDefault();\n  });\n" + "\n      </script>\n      ";
+        }
+        return "\n  <html>\n  <head>\n      <style>\n      body {\n          padding: 0;\n          margin: 0;\n          width: 100vw;\n          min-height: 100vh; /* This keeps a small white gap at the bottom of the screen, the options below help prevent this. */\n          min-height: -moz-available; /* See: https://ilxanlar.medium.com/you-shouldnt-rely-on-css-100vh-and-here-s-why-1b4721e74487 for more info */\n          min-height: -webkit-fill-available;\n          min-height: fill-available;\n      }\n      </style>\n      <meta\n      name=\"viewport\"\n      content=\"width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover\"\n      />\n  </head>\n  <body>\n      <script type=\"text/javascript\">\n          window.addEventListener('message', e => {\n            window.ReactNativeWebView.postMessage(JSON.stringify(e.data));\n          });\n      </script>\n      <iframe id=\"activityFrame\" width=\"100%\" height=\"100%\" src=\"" + iFrameUri + "\" frameborder=\"0\" allow=\"" + iFrameAllowAttributes + "\" allowfullscreen sandbox=\"" + iFrameSandboxAttributes + "\" referrerPolicy=\"" + referrerPolicy + "\">\n      </iframe>\n      " + str2 + "\n      " + str + "\n  </body>\n  </html>\n";
+      }
+      if (c6 === 2) {
+        c6 = 3;
+        let str = "Generator functions may not be called on executing generators";
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else {
+        let str2 = "utf8";
+        if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            return { value, done: true };
+          } else {
+            return { value: "IconComponent", done: null };
+          }
         } else {
-          const obj6 = { iFrameUri: closure_129_0, iFrameSandboxAttributes: closure_129_1, referrerPolicy: closure_129_2, insets: closure_129_3, messageForDisallowedNavigationError: closure_129_4 };
-          closure_129_5 = (function generateWebviewHtml(arg0) {
-            ({ iFrameUri, iFrameSandboxAttributes, referrerPolicy, insets, messageForDisallowedNavigationError } = arg0);
-            let str = "";
-            let str2 = "";
-            if (obj.isAndroid()) {
-              if (insets == null) {
-                insets = { top: 0, bottom: 0, left: 0, right: 0 };
+          try {
+            let closure_6;
+            c6 = 2;
+            if (0 === messageForDisallowedNavigationError) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                let closure_2 = tmp;
+                let closure_1 = tmp4;
+                iFrameUri = undefined;
+                iFrameAllowAttributes = undefined;
+                iFrameSandboxAttributes = undefined;
+                referrerPolicy = undefined;
+                insets = undefined;
+                ({ iFrameUri: c0, iFrameAllowAttributes: c1, iFrameSandboxAttributes: c2, referrerPolicy: c3, insets: c4, messageForDisallowedNavigationError: c5 } = closure_0);
+                closure_6 = undefined;
+                messageForDisallowedNavigationError = 1;
+                c6 = 1;
+                return { value: "Reflect", done: true };
               }
-              const _HermesInternal = HermesInternal;
-              const combined = "\n  " + "iframeWindow" + ".addEventListener(\"load\", () => {\n    var iframeDoc = " + "iframeWindow" + ".document;\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-left', '" + insets.left + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-right', '" + insets.right + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-top', '" + insets.top + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-bottom', '" + insets.bottom + "px');\n    " + "isIframeLoaded" + " = true;\n  });\n";
-              const _HermesInternal2 = HermesInternal;
-              const _HermesInternal3 = HermesInternal;
-              str2 = "\n      <script type=\"text/javascript\">\n        var iframe = document.getElementById(\"activityFrame\");\n        var iframeWindow = iframe.contentWindow;\n        var isIframeLoaded = false;\n        " + combined + "\n        " + "\n  function updateSafeAreaVars(insets) {\n    var iframeDoc = " + "iframeWindow" + ".document;\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-left', `${insets.left}px`);\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-right', `${insets.right}px`);\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-top', `${insets.top}px`);\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-bottom', `${insets.bottom}px`);\n    " + "iframeWindow" + ".dispatchEvent(new Event('resize'));\n    // Force redraw\n    iframeDoc.documentElement.offsetHeight;\n  }\n  " + "iframeWindow" + ".addEventListener('message', function (e) {\n    const messageData = e.data;\n    const {type, data} = messageData;\n    if (type === 'safeAreaUpdateEvent') {\n      const {insets} = data;\n      if (" + "isIframeLoaded" + ") {\n        updateSafeAreaVars(insets);\n      } else {\n        " + "iframeWindow" + ".addEventListener(\"load\", () => {\n          updateSafeAreaVars(insets);\n        });\n      }\n    }\n  });\n" + "\n      </script>\n      ";
+            } else if (1 === messageForDisallowedNavigationError) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                const obj6 = { iFrameUri, iFrameAllowAttributes, iFrameSandboxAttributes, referrerPolicy, insets, messageForDisallowedNavigationError };
+                closure_6 = generateWebviewHtml(obj6);
+                insets = 1;
+                messageForDisallowedNavigationError = 3;
+                c6 = 1;
+                const obj9 = closure_130_1(closure_130_2[2]);
+                const obj7 = { value: obj9.writeFile("cache", "discord_activity_data/activity.html", closure_6, "utf8"), done: false };
+                return obj7;
+              }
+            } else if (2 === messageForDisallowedNavigationError) {
+              insets = 0;
+              let closure_7 = closure_3;
+              const obj3 = closure_130_1(closure_130_2[3]);
+              obj3.captureException(closure_7);
+              c6 = 3;
+              return { value: null, done: true };
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              insets = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              insets = 0;
+              c6 = 3;
+              obj = { value, done: true };
+              return obj;
             }
-            if (null != messageForDisallowedNavigationError) {
-              const _HermesInternal4 = HermesInternal;
-              const _HermesInternal5 = HermesInternal;
-              str = "\n      <script type=\"text/javascript\">\n        var iframe = document.getElementById(\"activityFrame\");\n        var iframeWindow = iframe.contentWindow;\n        " + "\n  " + "iframeWindow" + ".addEventListener('beforeunload', function (e) {\n    window.ReactNativeWebView.postMessage('" + messageForDisallowedNavigationError + "');\n    e.preventDefault();\n  });\n" + "\n      </script>\n      ";
+          } catch (tmp13) {
+            closure_3 = tmp13;
+            if (0 === insets) {
+              c6 = 3;
+              throw tmp13;
+            } else {
+              messageForDisallowedNavigationError = 2;
             }
-            return "\n  <html>\n  <head>\n      <style>\n      body {\n          padding: 0;\n          margin: 0;\n          width: 100vw;\n          min-height: 100vh; /* This keeps a small white gap at the bottom of the screen, the options below help prevent this. */\n          min-height: -moz-available; /* See: https://ilxanlar.medium.com/you-shouldnt-rely-on-css-100vh-and-here-s-why-1b4721e74487 for more info */\n          min-height: -webkit-fill-available;\n          min-height: fill-available;\n      }\n      </style>\n      <meta\n      name=\"viewport\"\n      content=\"width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover\"\n      />\n  </head>\n  <body>\n      <script type=\"text/javascript\">\n          window.addEventListener('message', e => {\n            window.ReactNativeWebView.postMessage(JSON.stringify(e.data));\n          });\n      </script>\n      <iframe id=\"activityFrame\" width=\"100%\" height=\"100%\" src=\"" + iFrameUri + "\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen sandbox=\"" + iFrameSandboxAttributes + "\" referrerPolicy=\"" + referrerPolicy + "\">\n      </iframe>\n      " + str2 + "\n      " + str + "\n  </body>\n  </html>\n";
-          })(obj6);
-          c4 = 1;
-          const obj9 = closure_130_1(closure_130_2[2]);
-          c5 = 3;
-          c6 = 1;
-          const obj7 = { value: obj9.writeFile("cache", "discord_activity_data/activity.html", closure_129_5, "utf8"), done: false };
-          return obj7;
+          }
         }
-      } else if (2 === tmp7) {
-        c4 = 0;
-        closure_129_6 = closure_3;
-        closure_130_1(closure_130_2[3]).captureException(closure_129_6);
-        c6 = 3;
-        return { value: null, done: true };
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        const obj8 = { value, done: true };
-        return obj8;
-      } else {
-        c4 = 0;
-        c6 = 3;
-        const obj = { value, done: true };
-        return obj;
       }
-    } catch (tmp17) {
-      closure_3 = tmp17;
-      if (tmp4 === c4) {
-        c6 = tmp2;
-        throw tmp17;
-      } else {
-        c5 = tmp;
-      }
-    }
-  }
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/native/createWebviewHtmlFile.tsx");
 
 export default function createWebviewHtmlFile() {
-  const self = this;
-  const apply = closure_4.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const createInjectedJavascriptForIOS = function createInjectedJavascriptForIOS(rect1) {
   let rect = rect1;

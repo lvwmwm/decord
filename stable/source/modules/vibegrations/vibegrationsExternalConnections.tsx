@@ -1,10 +1,10 @@
-// Module ID: 13397
-// Function ID: 13398
+// Module ID: 12651
+// Function ID: 12652
 // Name: vibegrationsExternalConnections
 // Dependencies: [2]
 // Exports: beginExternalAuthorization, endExternalAuthorization, externalAuthErrorCode, externalAuthErrorCopy, externalAuthErrorFor, externalConnectionOffers
 
-// Module 13397 (vibegrationsExternalConnections)
+// Module 12651 (vibegrationsExternalConnections)
 import size from "module_2" /* 2 */;
 
 function externalConnectionOffer(nextResult) {
@@ -15,6 +15,7 @@ function externalConnectionOffer(nextResult) {
       tmp = null;
       if (typeof nextResult.label === "string") {
         tmp = null;
+        const str3 = nextResult.label;
         if ("" !== str3.trim()) {
           let str = "finish-setup";
           if (nextResult.configured) {
@@ -22,7 +23,6 @@ function externalConnectionOffer(nextResult) {
           }
           tmp = str;
         }
-        str3 = nextResult.label;
       }
     }
   }
@@ -47,8 +47,7 @@ export const externalConnectionOffers = function externalConnectionOffers(stateF
     }
     if (!hasItem) {
       let addResult = set.add(tmp2.type);
-      let obj = { connection: tmp2, offer: null };
-      obj.offer = tmp5;
+      let obj = { connection: tmp2, offer: tmp5 };
       let arr = items.push(obj);
     }
     continue;
@@ -60,6 +59,8 @@ export const beginExternalAuthorization = function beginExternalAuthorization(cu
     return null;
   } else {
     const _Set = Set;
+    const self = this;
+    const self2 = this;
     set = new Set(current);
     set.add(type);
     return set;
@@ -68,6 +69,8 @@ export const beginExternalAuthorization = function beginExternalAuthorization(cu
 export const endExternalAuthorization = function endExternalAuthorization(current, arg1) {
   if (current.has(arg1)) {
     const _Set = Set;
+    const self = this;
+    const self2 = this;
     set = new Set(current);
     set.delete(arg1);
     return set;

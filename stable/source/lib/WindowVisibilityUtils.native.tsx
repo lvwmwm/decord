@@ -1,19 +1,22 @@
-// Module ID: 9730
-// Function ID: 9731
+// Module ID: 8885
+// Function ID: 8886
 // Name: WindowVisibilityUtils
-// Dependencies: [1979, 1074, 9729, 2]
+// Dependencies: [1986, 1086, 8884, 2]
 // Exports: default
 
-// Module 9730 (WindowVisibilityUtils)
-import AppStateStore from "AppStateStore" /* 1979 */;
+// Module 8885 (WindowVisibilityUtils)
+import Constants from "Constants" /* 1086 */;
+import ExternalPipDefault from "ExternalPip" /* 8884 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import size from "module_2" /* 2 */;
 
-const AppStates = fn(1074).AppStates;
-const size = fn(2);
+const AppStates = Constants.AppStates;
 const result = size.fileFinishedImporting("lib/WindowVisibilityUtils.native.tsx");
 
 export default function isDiscordVisible() {
   const tmp = AppStateStore.getState() === AppStates.BACKGROUND;
   let isInPipModeResult = !tmp;
+  const obj = ExternalPipDefault;
   if (tmp) {
     isInPipModeResult = obj.isInPipMode();
   }

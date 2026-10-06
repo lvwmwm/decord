@@ -1,165 +1,434 @@
-// Module ID: 11889
-// Function ID: 11890
+// Module ID: 10972
+// Function ID: 10973
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 2041, 2105, 2099, 2063, 4427, 1074, 21, 4788, 576, 1612, 504, 1484, 4941, 11890, 9855, 1115, 7427, 7426, 5371, 4755, 8935, 11892, 7654, 8905, 11888, 10328, 1177, 6901, 9871, 4784, 2]
-// Exports: default
+// Dependencies: [19, 17, 2051, 2111, 2105, 2073, 4472, 1086, 21, 4837, 588, 558, 576, 1619, 504, 1491, 4990, 10973, 8993, 4801, 9833, 10975, 4833, 1127, 9009, 5436, 6799, 6571, 8059, 10971, 9488, 1189, 6038, 6572, 2]
 
-// Module 11889 (ChannelMembersActionSheet)
-import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import useNavigation from "useNavigation" /* 1484 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8935 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9871 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11888 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11890 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11892 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+// Module 10972 (ChannelMembersActionSheet)
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
+import nativeDefault from "native" /* 588 */;
+import intl7 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import useNavigation from "useNavigation" /* 1491 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import useChannelNameDefault from "useChannelName" /* 4990 */;
+import SettingsIcon from "SettingsIcon" /* 6799 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8993 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9009 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 9488 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9833 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10971 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 10973 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 10975 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
-({ ChannelSettingsSections: closure_9, Permissions: c10 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { paddingHorizontal: 16, flex: 1 }, sectionRowWrapper: { paddingVertical: nativeDefault.space.PX_12 }, warning: { margin: 16, marginBottom: 0 } };
-let closure_13 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
+let BottomSheet, dependencyMap, navigation, obj1;
 
-export default function ChannelMembersActionSheet(arg0) {
-  ({ channelId: require, guildId: importDefault } = arg0);
-  closure_4 = undefined;
-  c5 = undefined;
-  const tmp = closure_13();
-  dependencyMap = tmp;
-  const tmp4 = useSafeAreaInsetsDefault();
-  const items = [closure_4];
-  const stateFromStores = initialize.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const items1 = [GuildStore, GuildRoleStore];
-  const items2 = [stateFromStores];
-  const stateFromStoresObject = initialize.useStateFromStoresObject(items1, () => {
-    guildId = undefined;
-    if (stateFromStores != null) {
-      guildId = stateFromStores.getGuildId();
+let c10;
+let c9;
+let closure_12;
+let obj2;
+let unpackModuleId;
+const View = react_native.View;
+({ ChannelSettingsSections: c9, Permissions: c10 } = Constants);
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+let obj = { container: { paddingHorizontal: 16, flex: 1 }, sectionRowWrapper: obj2, warning: { margin: 16, marginBottom: 0 } };
+obj2 = { paddingVertical: nativeDefault.space.PX_12 };
+let closure_13 = createStyles.createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let guild;
+  let sectionRowWrapper;
+  let showRemove;
+  let sortedGuildRoles;
+  let tmp11;
+  let tmp13;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp9;
+  let obj = channelId(576);
+  const cResult = obj.c(65);
+  channelId = channelId.channelId;
+  let guildId = channelId.guildId;
+  dependencyMap = closure_13();
+  closure_13();
+  guildId(1619)();
+  const tmp5 = guildId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [navigation];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    class I {
+      constructor() {
+        return closure_4.getChannel(channelId);
+      }
     }
-    const guild = GuildStore.getGuild(guildId);
-    const obj2 = { guild, sortedGuildRoles: null };
-    let sortedRoles;
-    if (null != guild) {
-      sortedRoles = GuildRoleStore.getSortedRoles(guild.id);
+    cResult[1] = channelId;
+    cResult[2] = I;
+    tmp9 = I;
+  } else {
+    class I {
+      constructor() {
+        return closure_4.getChannel(channelId);
+      }
     }
-    obj2.sortedGuildRoles = sortedRoles;
-    return obj2;
-  }, items2);
+  }
+  const tmpResult = channelId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        return closure_4.getChannel(channelId);
+      }
+    }
+    const items1 = [GuildStore, GuildRoleStore];
+    cResult[3] = items1;
+    tmp11 = items1;
+  } else {
+    class I {
+      constructor() {
+        return closure_4.getChannel(channelId);
+      }
+    }
+  }
+  if (cResult[4] !== stateFromStores) {
+    class M {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_7;
+        getGuild = closure_7.getGuild;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        guild = getGuild(guildId);
+        obj1 = { guild, sortedGuildRoles: null };
+        sortedRoles = undefined;
+        if (null != guild) {
+          tmp5 = closure_6;
+          sortedRoles = closure_6.getSortedRoles(guild.id);
+        }
+        obj1.sortedGuildRoles = sortedRoles;
+        return obj1;
+      }
+    }
+    const items2 = [stateFromStores];
+    cResult[4] = stateFromStores;
+    cResult[5] = M;
+    cResult[6] = items2;
+    tmp14 = items2;
+    tmp13 = M;
+  } else {
+    class M {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_7;
+        getGuild = closure_7.getGuild;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        guild = getGuild(guildId);
+        obj1 = { guild, sortedGuildRoles: null };
+        sortedRoles = undefined;
+        if (null != guild) {
+          tmp5 = closure_6;
+          sortedRoles = closure_6.getSortedRoles(guild.id);
+        }
+        obj1.sortedGuildRoles = sortedRoles;
+        return obj1;
+      }
+    }
+    tmp14 = cResult[6];
+  }
+  const tmpResult5 = channelId(504);
+  const stateFromStoresObject = tmpResult5.useStateFromStoresObject(tmp11, tmp13, tmp14);
   ({ guild, sortedGuildRoles } = stateFromStoresObject);
-  const items3 = [c5];
-  const items4 = [stateFromStores];
-  const stateFromStoresArray = initialize.useStateFromStoresArray(items3, () => {
-    guildId = undefined;
-    if (stateFromStores != null) {
-      guildId = stateFromStores.getGuildId();
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_7;
+        getGuild = closure_7.getGuild;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        guild = getGuild(guildId);
+        obj1 = { guild, sortedGuildRoles: null };
+        sortedRoles = undefined;
+        if (null != guild) {
+          tmp5 = closure_6;
+          sortedRoles = closure_6.getSortedRoles(guild.id);
+        }
+        obj1.sortedGuildRoles = sortedRoles;
+        return obj1;
+      }
     }
-    return GuildMemberStore.getMemberIds(guildId);
-  }, items4);
-  closure_4 = useNavigation.useNavigation();
-  AppChannelPermissionUtils;
+    const items3 = [GuildMemberStore];
+    cResult[7] = items3;
+    tmp16 = items3;
+  } else {
+    class M {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_7;
+        getGuild = closure_7.getGuild;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        guild = getGuild(guildId);
+        obj1 = { guild, sortedGuildRoles: null };
+        sortedRoles = undefined;
+        if (null != guild) {
+          tmp5 = closure_6;
+          sortedRoles = closure_6.getSortedRoles(guild.id);
+        }
+        obj1.sortedGuildRoles = sortedRoles;
+        return obj1;
+      }
+    }
+  }
+  if (cResult[8] !== stateFromStores) {
+    class A {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_5;
+        getMemberIds = closure_5.getMemberIds;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        return getMemberIds(guildId);
+      }
+    }
+    const items4 = [stateFromStores];
+    cResult[8] = stateFromStores;
+    cResult[9] = A;
+    cResult[10] = items4;
+    tmp18 = items4;
+    tmp17 = A;
+  } else {
+    class A {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_5;
+        getMemberIds = closure_5.getMemberIds;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
+        }
+        return getMemberIds(guildId);
+      }
+    }
+    tmp18 = cResult[10];
+  }
+  const tmpResult6 = channelId(504);
+  const stateFromStoresArray = tmpResult6.useStateFromStoresArray(tmp16, tmp17, tmp18);
+  const tmpResult7 = channelId(1491);
+  navigation = tmpResult7.useNavigation();
+  tmp5(4990)(stateFromStores);
+  const tmpResult8 = channelId(10973);
+  const appChannelBotUserId = tmpResult8.useAppChannelBotUserId(stateFromStores);
   if (null != stateFromStores) {
-    if (null != guild) {
-      if (null != sortedGuildRoles) {
-        const canResult = PermissionStore.can(constants2.MANAGE_ROLES, stateFromStores);
-        c5 = canResult;
-        const tmp5Result = tmp5(9855);
-        const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        const tmp5Result2 = tmp5(9855);
-        const obj5 = { appChannelBotUserId: tmp11 };
-        const items5 = [];
-        const obj6 = { title: null, data: null };
-        const existingMembersRows = tmp5Result2.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions, obj5);
-        const intl4 = tmp5(1115).intl;
-        obj6.title = intl4.string(tmp5(1115).t["LPJmL/"]);
-        obj6.data = existingRolesRows;
-        items5.push(obj6);
-        const obj7 = { title: null, data: null };
-        const intl5 = tmp5(1115).intl;
-        obj7.title = intl5.string(tmp5(1115).t["9Oq93m"]);
-        obj7.data = existingMembersRows;
-        items5.push(obj7);
-        const obj8 = { title: null, subtitle: null, trailing: null };
-        const intl6 = tmp5(1115).intl;
-        obj8.title = intl6.string(tmp5(1115).t.ES4CC6);
-        const _HermesInternal = HermesInternal;
-        obj8.subtitle = "#" + tmp9;
-        let tmp32Result = canResult;
-        if (canResult) {
-          const obj9 = {
-            onPress() {
-                      ActionSheetActionCreatorsDefault.hideActionSheet();
-                      ChannelSettingsActionCreatorsDefault.init(channelId);
-                      const result = ChannelDetailsUtils.navigateToChannelDetailsScreen(closure_4, constants.PERMISSIONS, channelId, "channel-members-action-sheet");
-                    },
-            accessibilityRole: "button",
-            accessibilityLabel: null,
-            children: null
-          };
-          let intl = tmp5(1115).intl;
-          obj9.accessibilityLabel = intl.string(tmp5(1115).t.XPDhcc);
-          obj9.children = tmp32(tmp5(7654).SettingsIcon, {});
-          tmp32Result = tmp32(tmp5(5371).PressableOpacity, obj9);
+    class A {
+      constructor() {
+        obj = closure_3;
+        guildId = undefined;
+        tmp = closure_5;
+        getMemberIds = closure_5.getMemberIds;
+        if (closure_3 != null) {
+          guildId = obj.getGuildId();
         }
-        const obj10 = { scrollable: true, header: null, startExpanded: true, children: null };
-        obj8.trailing = tmp32Result;
-        obj10.header = closure_11(tmp5(7426).BottomSheetTitleHeader, obj8);
-        const obj11 = { style: tmp.container, children: null };
-        if (canResult) {
-          const obj12 = { label: null, onPress: null, icon: null };
-          const intl3 = tmp5(1115).intl;
-          obj12.label = intl3.string(tmp5(1115).t.dMJ3Y6);
-          obj12.onPress = function onPress() {
-            return channel_permissions_ChannelPermissionsUtils.openAddMembersActionSheet(stateFromStores);
-          };
-          obj12.icon = tmp32(tmp5(10328).GroupPlusIcon, {});
-          let tmp32Result2 = tmp32(tmp5(8905).RowButton, obj12);
-        } else {
-          const obj13 = { style: tmp.warning, children: null };
-          const obj14 = { messageType: tmp5(1177).HelpMessageTypes.INFO, children: null };
-          const intl2 = tmp5(1115).intl;
-          obj14.children = intl2.string(tmp5(1115).t.VOuiSj);
-          obj13.children = tmp32(tmp5(1177).HelpMessage, obj14);
-          tmp32Result2 = tmp32(tmp14, obj13);
-        }
-        const items6 = [tmp32Result2, ];
-        const obj15 = { contentContainerStyle: null, renderItem: null, renderSectionHeader: null, sections: null, stickySectionHeadersEnabled: false };
-        const obj16 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-        obj15.contentContainerStyle = obj16;
-        obj15.renderItem = function renderItem(index) {
-          index = index.index;
-          ({ item, section } = index);
-          return closure_2_11(ChannelOverwritesItemDefault, { start: 0 === index, end: index === section.data.length - 1, guildId, item, channelId, showType: true, showRemove });
-        };
-        obj15.renderSectionHeader = function renderSectionHeader(section) {
-          ({ title, data } = section.section);
-          const obj = { style: sectionRowWrapper.sectionRowWrapper, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: null };
-          const intl = util.intl;
-          obj.children = intl.format(util.t.u8CWLl, { numberOfItems: data.length, sectionTitle: title });
-          return closure_2_11(Text_Text.Text, obj);
-        };
-        obj15.sections = items5;
-        items6[1] = closure_11(tmp5(6901).BottomSheetSectionList, obj15);
-        obj11.children = items6;
-        obj10.children = closure_12(stateFromStores, obj11);
-        return closure_11(tmp5(7427).BottomSheet, obj10);
+        return getMemberIds(guildId);
       }
     }
   }
   return null;
-};
+}) : ((arg0) => {
+  let HelpMessage;
+  let channelId;
+  let guild;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let items6;
+  let obj11;
+  let obj14;
+  let obj16;
+  let sectionRowWrapper;
+  let showRemove;
+  let sortedGuildRoles;
+  let tmp13;
+  let tmp32Result;
+  ({ channelId: require, guildId: importDefault } = arg0);
+  let closure_4;
+  let c5;
+  const tmp = closure_13();
+  dependencyMap = tmp;
+  const tmp4 = useSafeAreaInsetsDefault();
+  let obj = get_initialized;
+  const items = [closure_4];
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(require));
+  let obj2 = get_initialized;
+  const items1 = [GuildStore, GuildRoleStore];
+  const items2 = [stateFromStores];
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => {
+    let sortedRoles;
+    guildId = undefined;
+    const getGuild = GuildStore.getGuild;
+    const obj = stateFromStores;
+    if (stateFromStores != null) {
+      guildId = obj.getGuildId();
+    }
+    const guild = getGuild(guildId);
+    const obj2 = { guild, sortedGuildRoles: sortedRoles };
+    sortedRoles = undefined;
+    if (null != guild) {
+      sortedRoles = GuildRoleStore.getSortedRoles(guild.id);
+    }
+    return obj2;
+  }, items2);
+  ({ guild, sortedGuildRoles } = stateFromStoresObject);
+  let obj3 = get_initialized;
+  const items3 = [c5];
+  const items4 = [stateFromStores];
+  const stateFromStoresArray = obj3.useStateFromStoresArray(items3, () => {
+    guildId = undefined;
+    const getMemberIds = GuildMemberStore.getMemberIds;
+    const obj = stateFromStores;
+    if (stateFromStores != null) {
+      guildId = obj.getGuildId();
+    }
+    return getMemberIds(guildId);
+  }, items4);
+  const obj4 = useNavigation;
+  closure_4 = obj4.useNavigation();
+  const tmp9 = useChannelNameDefault(stateFromStores);
+  AppChannelPermissionUtils;
+  if (null != stateFromStores) {
+    if (null != guild) {
+      if (null != sortedGuildRoles) {
+        let tmp32Result2;
+        const canResult = PermissionStore.can(constants2.MANAGE_ROLES, stateFromStores);
+        c5 = canResult;
+        const tmp5Result = ChannelPermissionsUtils;
+        const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
+        const items5 = [];
+        const obj5 = { appChannelBotUserId: tmp11 };
+        const tmp5Result2 = ChannelPermissionsUtils;
+        const obj6 = { title: intl4.string(intl7.t["LPJmL/"]), data: existingRolesRows };
+        const existingMembersRows = tmp5Result2.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions, obj5);
+        const push = items5.push;
+        intl4 = tmp5(1127).intl;
+        push(obj6);
+        const push2 = items5.push;
+        const obj7 = { title: intl5.string(intl7.t["9Oq93m"]), data: existingMembersRows };
+        intl5 = tmp5(1127).intl;
+        push2(obj7);
+        BottomSheet = tmp5(6572).BottomSheet;
+        const obj8 = { title: intl6.string(intl7.t.ES4CC6), subtitle: "#" + tmp9, trailing: tmp32Result };
+        const BottomSheetTitleHeader = tmp5(6571).BottomSheetTitleHeader;
+        intl6 = tmp5(1127).intl;
+        const _HermesInternal = HermesInternal;
+        tmp32Result = canResult;
+        if (tmp32Result) {
+          const obj9 = {
+            onPress() {
+                      const obj = ActionSheetActionCreatorsDefault;
+                      obj.hideActionSheet();
+                      const obj2 = ChannelSettingsActionCreatorsDefault;
+                      obj2.init(require);
+                      const obj3 = ChannelDetailsUtils;
+                      const result = obj3.navigateToChannelDetailsScreen(closure_4, constants.PERMISSIONS, require, "channel-members-action-sheet");
+                    },
+            accessibilityRole: "button",
+            accessibilityLabel: intl.string(intl7.t.XPDhcc),
+            children: closure_11(SettingsIcon.SettingsIcon, {})
+          };
+          const PressableOpacity = tmp5(5436).PressableOpacity;
+          intl = tmp5(1127).intl;
+          tmp32Result = tmp32(PressableOpacity, obj9);
+        }
+        const obj10 = { scrollable: true, header: closure_11(BottomSheetTitleHeader, obj8), startExpanded: true, children: tmp13(stateFromStores, obj11) };
+        obj11 = { style: tmp.container, children: items6 };
+        tmp13 = closure_12;
+        if (canResult) {
+          const obj12 = {
+            label: intl3.string(intl7.t.dMJ3Y6),
+            onPress() {
+                      const obj = channel_permissions_ChannelPermissionsUtils;
+                      return obj.openAddMembersActionSheet(stateFromStores);
+                    },
+            icon: closure_11(GroupPlusIcon.GroupPlusIcon, {})
+          };
+          const RowButton = tmp5(8059).RowButton;
+          intl3 = tmp5(1127).intl;
+          tmp32Result2 = tmp32(RowButton, obj12);
+        } else {
+          const obj13 = { style: tmp.warning, children: closure_11(HelpMessage, obj14) };
+          obj14 = { messageType: native.HelpMessageTypes.INFO, children: intl2.string(intl7.t.VOuiSj) };
+          HelpMessage = tmp5(1189).HelpMessage;
+          intl2 = tmp5(1127).intl;
+          tmp32Result2 = tmp32(tmp14, obj13);
+        }
+        items6 = [tmp32Result2, ];
+        const obj15 = {
+          contentContainerStyle: obj16,
+          renderItem(index) {
+                  let item;
+                  let section;
+                  index = index.index;
+                  ({ item, section } = index);
+                  const obj = { start: 0 === index, end: index === section.data.length - 1, guildId: importDefault, item, channelId: require, showType: true, showRemove };
+                  return unpackModuleId(ChannelOverwritesItemDefault, obj);
+                },
+          renderSectionHeader(section) {
+                  let data;
+                  let intl;
+                  let obj2;
+                  let title;
+                  ({ title, data } = section.section);
+                  const obj = { style: sectionRowWrapper.sectionRowWrapper, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: intl.format(intl7.t.u8CWLl, obj2) };
+                  const Text = Text_Text.Text;
+                  intl = intl7.intl;
+                  obj2 = { numberOfItems: data.length, sectionTitle: title };
+                  return unpackModuleId(Text, obj);
+                },
+          sections: items5,
+          stickySectionHeadersEnabled: false
+        };
+        obj16 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
+        const BottomSheetSectionList = tmp5(6038).BottomSheetSectionList;
+        items6[1] = closure_11(BottomSheetSectionList, obj15);
+        return closure_11(BottomSheet, obj10);
+      }
+    }
+  }
+  return null;
+});
+let result = size.fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
+
+export default tmp5;

@@ -1,28 +1,62 @@
-// Module ID: 7256
-// Function ID: 7257
+// Module ID: 6397
+// Function ID: 6398
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [7257, 2]
-// Exports: useTypeConsolidationEyebrow, useTypeConsolidationTextTransform
+// Dependencies: [558, 6398, 576, 2]
+// Exports: useTypeConsolidationTextTransform
 
-// Module 7256 (useTypeConsolidationTextTransform)
+// Module 6397 (useTypeConsolidationTextTransform)
+import react from "react" /* 576 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6398 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const style = { textTransform: "none" };
-const result = size.fileFinishedImporting("modules/design/useTypeConsolidationTextTransform.tsx");
-
-export const useTypeConsolidationTextTransform = function useTypeConsolidationTextTransform(AcceptGuildTemplate) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, variant) => {
+  let obj4;
+  const obj = react;
+  const cResult = obj.c(3);
+  const obj2 = ManaTypeConsolidationExperiment;
+  const manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment(arg0);
+  if (cResult[0] === variant) {
+    let tmp3;
+    if (cResult[1] === manaTypeConsolidationExperiment) {
+      tmp3 = cResult[2];
+    }
+    return tmp3;
+  }
+  if (manaTypeConsolidationExperiment) {
+    obj4 = { variant: "experimental/body-sm/medium", style };
+    const obj3 = { variant: "experimental/body-sm/medium", style };
+  } else {
+    obj4 = { variant, style: "y" };
+  }
+  cResult[0] = variant;
+  cResult[1] = manaTypeConsolidationExperiment;
+  cResult[2] = obj4;
+  tmp3 = obj4;
+}) : ((arg0, variant) => {
+  let obj3;
+  const obj = ManaTypeConsolidationExperiment;
+  if (obj.useManaTypeConsolidationExperiment(arg0)) {
+    obj3 = { variant: "experimental/body-sm/medium", style };
+    const obj2 = { variant: "experimental/body-sm/medium", style };
+  } else {
+    obj3 = { variant, style: "y" };
+  }
+  return obj3;
+});
+const fn = (arg0) => {
   let tmp;
-  if (obj.useManaTypeConsolidationExperiment(AcceptGuildTemplate)) {
-    tmp = closure_2;
+  const obj = ManaTypeConsolidationExperiment;
+  if (obj.useManaTypeConsolidationExperiment(arg0)) {
+    tmp = style;
   }
   return tmp;
 };
-export const useTypeConsolidationEyebrow = function useTypeConsolidationEyebrow(BountiesScrollRecapFooter, variant) {
-  if (obj.useManaTypeConsolidationExperiment(BountiesScrollRecapFooter)) {
-    const obj2 = { variant: "experimental/body-sm/medium", style };
-    let obj3 = obj2;
-  } else {
-    obj3 = { variant, style: "Array" };
-  }
-  return obj3;
-};
+const result1 = size.fileFinishedImporting("modules/design/useTypeConsolidationTextTransform.tsx");
+
+export const useTypeConsolidationTextTransform = fn;
+export const useTypeConsolidationEyebrow = tmp3;

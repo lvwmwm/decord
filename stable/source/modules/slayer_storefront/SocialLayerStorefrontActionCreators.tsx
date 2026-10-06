@@ -1,775 +1,755 @@
-// Module ID: 11094
-// Function ID: 11095
+// Module ID: 10301
+// Function ID: 10302
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 9098, 7505, 1074, 1091, 573, 7503, 9165, 1271, 2009, 559, 2]
+// Dependencies: [5, 8245, 6650, 1086, 1103, 585, 6648, 8316, 1283, 2017, 569, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 11094 (SocialLayerStorefrontActionCreators)
-import BackoffDefault from "Backoff" /* 559 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9098 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7505 */;
+// Module 10301 (SocialLayerStorefrontActionCreators)
+import BackoffDefault from "Backoff" /* 569 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8245 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6650 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c12, c13, closure_1, closure_4, closure_6, configFetchState, eager, promotionIdOverride, promotion_id_override, query, storeListings, storefront, storefrontById, storefrontEntries;
 
-const require = fn;
 function _fetchSocialLayerStorefront() {
-  const self = this;
-  const apply = closure_13.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_13 = async function _fetchSocialLayerStorefront2(arg0, value) {
-  if (c9 === 2) {
-    c9 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c9 = 2;
-      if (0 === c8) {
+let obj = function _fetchSocialLayerStorefront2() {
+  obj = _asyncToGenerator(async (guildOrApplicationId, url) => {
+    let closure_5;
+    let closure_2 = arg2;
+    let c8 = 0;
+    let c9 = 0;
+    let c7 = 0;
+    const iter = (async (arg0, value) => {
+      let obj20;
+      let obj6;
+      let obj8;
+      let result1;
+      if (1 === c8) {
         if (arg0 === 1) {
           c9 = 3;
           throw value;
         } else if (arg0 === 2) {
           c9 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
+          return { value, done: true };
         } else {
-          closure_5 = tmp3;
-          closure_4 = tmp7;
-          closure_132_2 = undefined;
-          closure_132_0 = closure_0;
-          closure_132_1 = closure_1;
-          let obj6 = closure_2;
-          if (closure_2 === undefined) {
-            obj6 = {};
+          eager = obj6.eager;
+          const tmp54 = undefined !== eager && eager;
+          eager = tmp54;
+          const forceFetch = obj6.forceFetch;
+          closure_6 = undefined !== forceFetch && forceFetch;
+          const tmp58 = undefined !== forceFetch && forceFetch;
+          const storefrontFetchState = closure_133_5.getStorefrontFetchState(guildOrApplicationId);
+          let state;
+          if (storefrontFetchState != null) {
+            state = storefrontFetchState.state;
           }
-          closure_132_2 = obj6;
-          let eager;
-          closure_132_4 = undefined;
-          let forceFetch;
-          closure_132_6 = undefined;
-          let storefrontFetchState;
-          closure_132_8 = undefined;
-          closure_132_9 = undefined;
-          closure_132_10 = undefined;
-          closure_132_11 = undefined;
-          closure_132_12 = undefined;
-          let promotionIdOverride;
-          closure_132_14 = undefined;
-          closure_132_15 = undefined;
-          let body;
-          closure_132_17 = undefined;
-          c8 = 1;
-          c9 = 1;
-          return { value: "PX_16", done: true };
-        }
-      } else {
-        if (1 === tmp7) {
-          if (arg0 === 1) {
-            c9 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c9 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
-          } else {
-            eager = closure_132_2.eager;
-            let tmp55 = undefined !== eager;
-            if (tmp55) {
-              tmp55 = eager;
-            }
-            closure_132_4 = tmp55;
-            forceFetch = closure_132_2.forceFetch;
-            let tmp59 = undefined !== forceFetch;
-            if (tmp59) {
-              tmp59 = forceFetch;
-            }
-            closure_132_6 = tmp59;
-            storefrontFetchState = closure_133_5.getStorefrontFetchState(closure_132_0);
-            let state;
-            if (storefrontFetchState != null) {
-              state = storefrontFetchState.state;
-            }
-            closure_132_8 = "loading" === state;
-            let state1;
-            if (storefrontFetchState != null) {
-              state1 = storefrontFetchState.state;
-            }
-            let tmp68 = "error" === state1;
-            if (tmp68) {
-              tmp68 = null != storefrontFetchState.fetchedAt;
-            }
-            if (tmp68) {
-              const _Date = Date;
-              tmp68 = Date.now() - storefrontFetchState.fetchedAt < closure_133_7;
-            }
-            closure_132_9 = tmp68;
-            let state2;
-            if (storefrontFetchState != null) {
-              state2 = storefrontFetchState.state;
-            }
-            let tmp77 = "fetched" === state2;
-            if (tmp77) {
-              tmp77 = null != storefrontFetchState.fetchedAt;
-            }
-            if (tmp77) {
-              const _Date2 = Date;
-              tmp77 = Date.now() - storefrontFetchState.fetchedAt < closure_133_8;
-            }
-            closure_132_10 = tmp77;
-            if (!closure_132_8) {
-              c7 = 1;
-              const obj11 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD", guildOrApplicationId: closure_132_0 };
-              closure_133_1(closure_133_2[5]).dispatch(obj11);
-              if ("application" === closure_132_0.type) {
-                let applicationId = closure_132_0.applicationId;
-              } else {
-                applicationId = closure_133_0(closure_133_2[6]).getSocialLayerStorefrontApplicationId(closure_132_0.guildId);
-                const obj19 = closure_133_0(closure_133_2[6]);
-              }
-              closure_132_11 = applicationId;
-              closure_132_12 = {};
-              let result = null != closure_132_11;
-              if (result) {
-                result = closure_133_0(closure_133_2[7]).isTestModeForApplication(closure_132_11);
-                const obj20 = closure_133_0(closure_133_2[7]);
-              }
-              if (result) {
-                closure_132_12.test_mode = true;
-              }
-              promotionIdOverride = closure_133_4.getPromotionIdOverride();
-              if (null != promotionIdOverride) {
-                closure_132_12.promotion_id_override = promotionIdOverride;
-              }
-              let result1 = "guild" === closure_132_0.type;
-              if (result1) {
-                result1 = null == closure_132_11;
-              }
-              if (result1) {
-                result1 = closure_133_0(closure_133_2[7]).isAnyApplicationInTestMode();
-                const obj21 = closure_133_0(closure_133_2[7]);
-              }
-              closure_132_14 = result1;
-              const HTTP = closure_133_0(closure_133_2[8]).HTTP;
-              const request = { url: closure_132_1, query: closure_132_12, rejectWithError: true, retries: 3 };
-              c8 = 3;
-              c9 = 1;
-              const obj13 = { value: HTTP.get(request), done: false };
-              return obj13;
-            }
+          closure_8 = "loading" === state;
+          let state1;
+          if (storefrontFetchState != null) {
+            state1 = storefrontFetchState.state;
           }
-        } else if (2 === tmp7) {
-          c7 = 0;
-          const obj14 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE", guildOrApplicationId: closure_132_0, eager: closure_132_4 };
-          closure_133_1(closure_133_2[5]).dispatch(obj14);
-          const obj15 = closure_133_1(closure_133_2[5]);
-        } else {
-          if (3 === tmp7) {
-            if (arg0 === 1) {
-              c9 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 0;
-              c9 = 3;
-              const obj16 = { value, done: true };
-              return obj16;
+          let tmp67 = "error" === state1 && null != storefrontFetchState.fetchedAt;
+          if (tmp67) {
+            const _Date = Date;
+            tmp67 = Date.now() - storefrontFetchState.fetchedAt < closure_133_7;
+          }
+          closure_9 = tmp67;
+          let state2;
+          if (storefrontFetchState != null) {
+            state2 = storefrontFetchState.state;
+          }
+          let tmp76 = "fetched" === state2 && null != storefrontFetchState.fetchedAt;
+          if (tmp76) {
+            const _Date2 = Date;
+            tmp76 = Date.now() - storefrontFetchState.fetchedAt < closure_133_8;
+          }
+          closure_10 = tmp76;
+          const tmp84 = closure_8;
+          if (!tmp84) {
+            let applicationId;
+            c7 = 1;
+            const obj9 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD", guildOrApplicationId };
+            const obj15 = closure_133_1(closure_133_2[5]);
+            obj15.dispatch(obj9);
+            if ("application" === guildOrApplicationId.type) {
+              applicationId = guildOrApplicationId.applicationId;
             } else {
-              closure_132_15 = value;
-              body = closure_132_15.body;
-              closure_132_17 = closure_133_0(closure_133_2[6]).transformSlayerApplicationStorefrontServer(body);
-              if (null != closure_132_17.storefrontPricing) {
-                const obj18 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: null, data: null };
-                const obj22 = { type: "application", applicationId: closure_132_17.applicationId };
-                obj18.priceId = obj22;
-                obj18.data = closure_132_17.storefrontPricing;
-                closure_133_1(closure_133_2[5]).dispatch(obj18);
-                const obj2 = closure_133_1(closure_133_2[5]);
-              }
-              const obj28 = closure_133_0(closure_133_2[6]);
-              const obj23 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS", guildOrApplicationId: closure_132_0, storefront: closure_132_17 };
-              closure_133_1(closure_133_2[5]).dispatch(obj23);
-              const obj5 = closure_133_1(closure_133_2[5]);
-              const obj24 = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: closure_132_17.applicationId, storefrontMetadata: null };
-              const obj7 = closure_133_1(closure_133_2[5]);
-              obj24.storefrontMetadata = closure_133_0(closure_133_2[6]).transformStorefrontMetadataServer(body);
-              obj7.dispatch(obj24);
-              const obj9 = closure_133_0(closure_133_2[6]);
-              const store_listings = closure_132_15.body.store_listings;
-              let storeListings = store_listings;
-              if (store_listings == null) {
-                storeListings = [];
-              }
-              const obj25 = { type: "STORE_LISTINGS_FETCH_SUCCESS", storeListings };
-              closure_133_1(closure_133_2[5]).dispatch(obj25);
-              let result2 = closure_132_14;
-              if (closure_132_14) {
-                result2 = closure_133_0(closure_133_2[7]).isTestModeForApplication(closure_132_17.applicationId);
-                const obj12 = closure_133_0(closure_133_2[7]);
-              }
-              c8 = 4;
-              c9 = 1;
-              const obj26 = { value: closure_133_12(closure_132_0, closure_132_1, { forceFetch: true }), done: false };
-              return obj26;
+              const obj17 = closure_133_0(closure_133_2[6]);
+              applicationId = obj17.getSocialLayerStorefrontApplicationId(guildOrApplicationId.guildId);
             }
-          } else if (arg0 === 1) {
+            query = {};
+            let result = null != applicationId;
+            if (result) {
+              const obj18 = closure_133_0(closure_133_2[7]);
+              result = obj18.isTestModeForApplication(applicationId);
+            }
+            if (result) {
+              query.test_mode = true;
+            }
+            promotion_id_override = closure_133_4.getPromotionIdOverride();
+            if (null != promotion_id_override) {
+              query.promotion_id_override = promotion_id_override;
+            }
+            result1 = "guild" === guildOrApplicationId.type && null == applicationId;
+            if (result1) {
+              const obj19 = closure_133_0(closure_133_2[7]);
+              result1 = obj19.isAnyApplicationInTestMode();
+            }
+            const HTTP = closure_133_0(closure_133_2[8]).HTTP;
+            const request = { url, query, rejectWithError: true, retries: 3 };
+            c8 = 3;
+            c9 = 1;
+            const obj11 = { value: HTTP.get(request), done: false };
+            return obj11;
+          }
+        }
+      } else if (2 === c8) {
+        c7 = 0;
+        const obj12 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE", guildOrApplicationId, eager };
+        const obj13 = closure_133_1(closure_133_2[5]);
+        obj13.dispatch(obj12);
+      } else {
+        if (3 === c8) {
+          if (arg0 === 1) {
             c9 = 3;
             throw value;
           } else if (arg0 === 2) {
             c7 = 0;
             c9 = 3;
-            const obj = { value, done: true };
-            return obj;
+            return { value, done: true };
+          } else {
+            let closure_15 = value;
+            const body = closure_15.body;
+            const obj26 = closure_133_0(closure_133_2[6]);
+            storefront = obj26.transformSlayerApplicationStorefrontServer(body);
+            if (null != storefront.storefrontPricing) {
+              const obj16 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj20, data: storefront.storefrontPricing };
+              obj20 = { type: "application", applicationId: storefront.applicationId };
+              const obj2 = closure_133_1(closure_133_2[5]);
+              obj2.dispatch(obj16);
+            }
+            const obj21 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS", guildOrApplicationId, storefront };
+            const obj5 = closure_133_1(closure_133_2[5]);
+            obj5.dispatch(obj21);
+            const obj22 = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: storefront.applicationId, storefrontMetadata: obj8.transformStorefrontMetadataServer(body) };
+            const dispatch = closure_133_1(closure_133_2[5]).dispatch;
+            closure_133_1(closure_133_2[5]);
+            obj8 = closure_133_0(closure_133_2[6]);
+            dispatch(obj22);
+            const store_listings = closure_15.body.store_listings;
+            storeListings = store_listings;
+            const dispatch2 = closure_133_1(closure_133_2[5]).dispatch;
+            closure_133_1(closure_133_2[5]);
+            if (store_listings == null) {
+              storeListings = [];
+            }
+            const obj23 = { type: "STORE_LISTINGS_FETCH_SUCCESS", storeListings };
+            dispatch2(obj23);
+            let result2 = result1;
+            if (result2) {
+              const obj10 = closure_133_0(closure_133_2[7]);
+              result2 = obj10.isTestModeForApplication(storefront.applicationId);
+            }
+            if (result2) {
+              c8 = 4;
+              c9 = 1;
+              const obj24 = { value: closure_133_12(guildOrApplicationId, url, { forceFetch: true }), done: false };
+              return obj24;
+            }
           }
+        } else if (arg0 === 1) {
+          c9 = 3;
+          throw value;
+        } else if (arg0 === 2) {
           c7 = 0;
+          c9 = 3;
+          return { value, done: true };
         }
-        c9 = 3;
+        c7 = 0;
       }
-    } catch (tmp133) {
-      closure_6 = tmp133;
-      if (tmp4 === c7) {
-        c9 = tmp2;
-        throw tmp133;
-      } else {
-        c8 = tmp;
+      await "IconComponent";
+      eager = tmp4;
+      obj6 = closure_2;
+      if (closure_2 === undefined) {
+        obj6 = {};
       }
-    }
-  }
+      return "Reflect";
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
 function _fetchSocialLayerStorefrontSkuWithUrl() {
-  const self = this;
-  const apply = closure_15.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_15 = async function _fetchSocialLayerStorefrontSkuWithUrl2(arg0, value) {
-  if (c8 === 2) {
-    c8 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c8 = 2;
-      if (0 === c7) {
-        if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c8 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          closure_4 = tmp3;
-          closure_3 = tmp7;
-          closure_131_2 = undefined;
-          closure_131_0 = closure_0;
-          closure_131_1 = closure_1;
-          let obj6 = closure_2;
-          if (closure_2 === undefined) {
-            obj6 = {};
-          }
-          closure_131_2 = obj6;
-          let withGoogleSkuIds;
-          closure_131_4 = undefined;
-          let countryCode;
-          let paymentGateway;
-          closure_131_7 = undefined;
-          let promotionIdOverride;
-          closure_131_9 = undefined;
-          let store_listing;
-          let storefront_metadata;
-          c7 = 1;
-          c8 = 1;
-          return { value: "PX_16", done: true };
-        }
-      } else if (1 === tmp7) {
-        if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c8 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          withGoogleSkuIds = closure_131_2.withGoogleSkuIds;
-          let tmp35 = undefined !== withGoogleSkuIds;
-          if (tmp35) {
-            tmp35 = withGoogleSkuIds;
-          }
-          closure_131_4 = tmp35;
-          countryCode = closure_131_2.countryCode;
-          paymentGateway = closure_131_2.paymentGateway;
-          c6 = 1;
-          const obj10 = { type: "STORE_LISTINGS_FETCH_START", skuId: closure_131_0 };
-          closure_132_1(closure_132_2[5]).dispatch(obj10);
-          closure_131_7 = {};
-          if (closure_131_4) {
-            closure_131_7.with_google_sku_ids = true;
-          }
-          const obj9 = closure_132_1(closure_132_2[5]);
-          if (!obj11.isNullOrEmpty(countryCode)) {
-            closure_131_7.country_code = countryCode;
-          }
-          if (null != paymentGateway) {
-            closure_131_7.payment_gateway = paymentGateway;
-          }
-          promotionIdOverride = closure_132_4.getPromotionIdOverride();
-          if (null != promotionIdOverride) {
-            closure_131_7.promotion_id_override = promotionIdOverride;
-          }
-          const HTTP = closure_132_0(closure_132_2[8]).HTTP;
-          const request = { url: closure_131_1, query: closure_131_7, rejectWithError: true };
-          c7 = 3;
-          c8 = 1;
-          const obj12 = { value: HTTP.get(request), done: false };
-          return obj12;
-        }
-      } else {
-        if (2 === tmp7) {
-          c6 = 0;
-          const obj13 = { type: "STORE_LISTINGS_FETCH_FAIL", skuId: closure_131_0 };
-          closure_132_1(closure_132_2[5]).dispatch(obj13);
-          c8 = 3;
-          const obj7 = closure_132_1(closure_132_2[5]);
-        } else if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 0;
-          c8 = 3;
-          const obj14 = { value, done: true };
-          return obj14;
-        } else {
-          closure_131_9 = value;
-          if (null != closure_131_9.body) {
-            store_listing = closure_131_9.body.store_listing;
-            storefront_metadata = closure_131_9.body.storefront_metadata;
-            const obj15 = { type: "SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS", assets: null };
-            const _Object = Object;
-            const assets = closure_131_9.body.assets;
-            obj15.assets = Object.fromEntries(assets.map((id) => {
-              const items = [id.id, id];
-              return items;
-            }));
-            closure_132_1(closure_132_2[5]).dispatch(obj15);
-            if (null != storefront_metadata) {
-              const obj16 = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: store_listing.sku.application_id, storefrontMetadata: null };
-              const obj = closure_132_1(closure_132_2[5]);
-              obj16.storefrontMetadata = closure_132_0(closure_132_2[6]).transformStorefrontMetadataServer(storefront_metadata);
-              obj.dispatch(obj16);
-              const obj3 = closure_132_0(closure_132_2[6]);
-            }
-            const obj18 = closure_132_1(closure_132_2[5]);
-            const obj17 = { type: "STORE_LISTING_FETCH_SUCCESS", storeListing: store_listing };
-            closure_132_1(closure_132_2[5]).dispatch(obj17);
-            c6 = 0;
-            const obj4 = closure_132_1(closure_132_2[5]);
-          }
-        }
-        const _Error = Error;
-        const error = new Error("Failed to fetch social layer storefront SKU");
-        throw error;
+obj = function _fetchSocialLayerStorefrontSkuWithUrl2() {
+  obj = _asyncToGenerator(async (skuId, url) => {
+    let closure_3;
+    let closure_5;
+    let closure_2 = arg2;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    const iter = (async function(arg0, value) {
+      let assets;
+      let obj2;
+      let obj7;
+      const withGoogleSkuIds = obj7.withGoogleSkuIds;
+      closure_4 = undefined !== withGoogleSkuIds && withGoogleSkuIds;
+      const countryCode = obj7.countryCode;
+      const paymentGateway = obj7.paymentGateway;
+      const obj11 = { type: "STORE_LISTINGS_FETCH_START", skuId };
+      const tmp31 = undefined !== withGoogleSkuIds && withGoogleSkuIds;
+      const obj8 = closure_132_1(closure_132_2[5]);
+      obj8.dispatch(obj11);
+      query = {};
+      const tmp41 = closure_4;
+      if (tmp41) {
+        query.with_google_sku_ids = true;
       }
-    } catch (tmp76) {
-      closure_5 = tmp76;
-      if (tmp4 === c6) {
-        c8 = tmp2;
-        throw tmp76;
-      } else {
-        c7 = tmp;
+      const obj10 = closure_132_0(closure_132_2[9]);
+      if (!obj10.isNullOrEmpty(countryCode)) {
+        query.country_code = countryCode;
       }
-    }
-  }
+      if (null != paymentGateway) {
+        query.payment_gateway = paymentGateway;
+      }
+      promotion_id_override = closure_132_4.getPromotionIdOverride();
+      if (null != promotion_id_override) {
+        query.promotion_id_override = promotion_id_override;
+      }
+      const HTTP = closure_132_0(closure_132_2[8]).HTTP;
+      const request = { url, query, rejectWithError: true };
+      await HTTP.get(request);
+      if (2 === c7) {
+        c6 = 0;
+        const obj13 = { type: "STORE_LISTINGS_FETCH_FAIL", skuId };
+        const obj6 = closure_132_1(closure_132_2[5]);
+        obj6.dispatch(obj13);
+      } else if (arg0 === 1) {
+        let c8 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 0;
+        c8 = 3;
+        return { value, done: true };
+      } else {
+        closure_9 = value;
+        if (null == closure_9.body) {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error("Failed to fetch social layer storefront SKU");
+          throw error;
+        } else {
+          const store_listing = closure_9.body.store_listing;
+          const storefront_metadata = closure_9.body.storefront_metadata;
+          const _Object = Object;
+          const obj15 = {
+            type: "SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS",
+            assets: Object.fromEntries(assets.map((id) => {
+                  const items = [id.id, id];
+                  return items;
+                }))
+          };
+          assets = closure_9.body.assets;
+          const dispatch2 = closure_132_1(closure_132_2[5]).dispatch;
+          closure_132_1(closure_132_2[5]);
+          dispatch2(obj15);
+          if (null != storefront_metadata) {
+            obj = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: store_listing.sku.application_id, storefrontMetadata: obj2.transformStorefrontMetadataServer(storefront_metadata) };
+            const dispatch = closure_132_1(closure_132_2[5]).dispatch;
+            closure_132_1(closure_132_2[5]);
+            obj2 = closure_132_0(closure_132_2[6]);
+            dispatch(obj);
+          }
+          const obj16 = { type: "STORE_LISTING_FETCH_SUCCESS", storeListing: store_listing };
+          const obj3 = closure_132_1(closure_132_2[5]);
+          obj3.dispatch(obj16);
+          c6 = 0;
+        }
+      }
+      await "IconComponent";
+      closure_4 = tmp;
+      obj7 = closure_2;
+      if (closure_2 === undefined) {
+        obj7 = {};
+      }
+      return "Reflect";
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
 function getOrCreateBackoff(get, arg1) {
-  value = get.get(arg1);
+  let value = get.get(arg1);
   if (null == value) {
-    const tmp8 = new BackoffDefault(closure_17, closure_18);
-    const result = get.set(arg1, tmp8);
-    value = tmp8;
+    const self = this;
+    const self2 = this;
+    const tmp6 = new BackoffDefault(closure_17, closure_18);
+    const result = get.set(arg1, tmp6);
+    value = tmp6;
   }
   return value;
 }
-let closure_22 = async function _fetchSocialLayerStorefrontEntries(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp7 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      if (0 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          closure_2 = tmp3;
-          closure_1 = tmp5;
-          closure_129_0 = closure_0;
-          closure_129_1 = undefined;
-          let body;
-          storefrontEntries = storefrontEntries.getStorefrontEntries(closure_0);
-          let state;
-          if (storefrontEntries != null) {
-            state = storefrontEntries.state;
-          }
-          if ("loading" !== state) {
-            const tmp53 = getOrCreateBackoff(map, tmp48);
-            closure_129_1 = tmp53;
-            let state1;
-            if (storefrontEntries != null) {
-              state1 = storefrontEntries.state;
-            }
-            if ("error" !== state1) {
-              let state2;
-              if (storefrontEntries != null) {
-                state2 = storefrontEntries.state;
-              }
-              if ("fetched" === state2) {
-                const _Date2 = Date;
-              }
-              c4 = 1;
-              const obj6 = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD", applicationId: tmp48 };
-              DispatcherDefault.dispatch(obj6);
-              const HTTP = require("HTTPUtils").HTTP;
-              const obj7 = { url: Endpoints.SOCIAL_LAYER_STOREFRONTS_ALL(tmp48), rejectWithError: true, retries: 3 };
-              c5 = 2;
-              c6 = 1;
-              const obj8 = { value: HTTP.get(obj7), done: false };
-              return obj8;
-            } else {
-              const _Date = Date;
-            }
-          }
-        }
-      } else {
-        if (1 === tmp8) {
-          c4 = 0;
-          closure_129_1.fail();
-          const obj9 = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD_FAILURE", applicationId: closure_129_0 };
-          closure_130_1(closure_130_2[5]).dispatch(obj9);
-          const obj2 = closure_130_1(closure_130_2[5]);
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 !== 2) {
-          body = value.body;
-          closure_129_1.succeed();
-          const obj11 = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD_SUCCESS", applicationId: closure_129_0, entries: body.map(closure_130_0(closure_130_2[6]).transformSlayerApplicationStorefrontSummaryServer) };
-          closure_130_1(closure_130_2[5]).dispatch(obj11);
-          c4 = 0;
-          const obj10 = closure_130_1(closure_130_2[5]);
-        }
-        c4 = 0;
+obj = function _fetchSocialLayerStorefrontEntries() {
+  obj = _asyncToGenerator(async (applicationId) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      if (c6 === 2) {
         c6 = 3;
-        const obj = { value, done: true };
-        return obj;
-      }
-      c6 = 3;
-    } catch (tmp28) {
-      closure_3 = tmp28;
-      if (tmp4 === c4) {
-        c6 = tmp2;
-        throw tmp28;
-      } else {
-        c5 = tmp;
-      }
-    }
-  }
-};
-let closure_23 = async function _fetchSocialLayerStorefrontById(arg0, value) {
-  if (c8 === 2) {
-    c8 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp7 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c8 = 2;
-      if (0 === c7) {
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c8 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c8 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          return { value, done: true };
         } else {
-          closure_4 = tmp3;
-          closure_3 = tmp5;
-          closure_131_0 = closure_0;
-          closure_131_1 = closure_1;
-          closure_131_2 = undefined;
-          closure_131_3 = undefined;
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
           let body;
-          closure_131_5 = undefined;
-          storefrontById = storefrontById.getStorefrontById(closure_1);
-          let state;
-          if (storefrontById != null) {
-            state = storefrontById.state;
-          }
-          if ("loading" !== state) {
-            const tmp91 = getOrCreateBackoff(map1, tmp86);
-            closure_131_2 = tmp91;
-            let state1;
-            if (storefrontById != null) {
-              state1 = storefrontById.state;
-            }
-            if ("error" === state1) {
-              if (null != storefrontById.fetchedAt) {
-                const _Date = Date;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              state1 = undefined;
+              body = undefined;
+              storefrontEntries = storefrontEntries.getStorefrontEntries(applicationId);
+              let state;
+              if (storefrontEntries != null) {
+                state = storefrontEntries.state;
+              }
+              if ("loading" !== state) {
+                getOrCreateBackoff(map, applicationId);
+                state1 = undefined;
+                const tmp48 = getOrCreateBackoff(map, applicationId);
+                if (storefrontEntries != null) {
+                  state1 = storefrontEntries.state;
+                }
+                if ("error" !== state1) {
+                  state1 = storefrontEntries == null;
+                  let state2;
+                  if (!state1) {
+                    state2 = storefrontEntries.state;
+                  }
+                  if ("fetched" === state2) {
+                    state1 = Date;
+                  }
+                  c4 = 1;
+                  const obj5 = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD", applicationId };
+                  const obj3 = DispatcherDefault;
+                  obj3.dispatch(obj5);
+                  state1 = require("HTTPUtils").HTTP;
+                  const get = state1.get;
+                  c5 = 2;
+                  c6 = 1;
+                  const obj6 = { url: Endpoints.SOCIAL_LAYER_STOREFRONTS_ALL(applicationId), rejectWithError: true, retries: 3 };
+                  const obj7 = { value: get(obj6), done: false };
+                  return obj7;
+                } else {
+                  const _Date = Date;
+                  state1 = Date.now() - storefrontEntries.fetchedAt;
+                }
               }
             }
-            let state2;
-            if (storefrontById != null) {
-              state2 = storefrontById.state;
-            }
-            if ("fetched" === state2) {
-              if (null != storefrontById.fetchedAt) {
-                const _Date2 = Date;
-              }
-            }
-            c6 = 1;
-            const obj5 = { type: "SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD", storefrontId: tmp86 };
-            DispatcherDefault.dispatch(obj5);
-            const obj7 = {};
-            if (obj17.isTestModeForApplication(tmp85)) {
-              obj7.test_mode = true;
-            }
-            promotionIdOverride = promotionIdOverride.getPromotionIdOverride();
-            if (null != promotionIdOverride) {
-              obj7.promotion_id_override = promotionIdOverride;
-            }
-            const HTTP = require("HTTPUtils").HTTP;
-            const request = { url: Endpoints.SOCIAL_LAYER_STOREFRONT_BY_ID(tmp85, tmp86), query: obj7, rejectWithError: true, retries: 3 };
-            c7 = 2;
-            c8 = 1;
-            const obj10 = { value: HTTP.get(request), done: false };
-            return obj10;
+          } else if (1 === tmp4) {
+            c4 = 0;
+            state1.fail();
+            state1 = closure_130_1(closure_130_2[5]);
+            const obj8 = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD_FAILURE", applicationId };
+            state1.dispatch(obj8);
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            body = value.body;
+            state1.succeed();
+            state1 = closure_130_1(closure_130_2[5]);
+            const dispatch = state1.dispatch;
+            const obj9 = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD_SUCCESS", applicationId, entries: body.map(closure_130_0(closure_130_2[6]).transformSlayerApplicationStorefrontSummaryServer) };
+            dispatch(obj9);
+            c4 = 0;
+          }
+          c6 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp24) {
+          closure_3 = tmp24;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp24;
+          } else {
+            c5 = 1;
           }
         }
-      } else {
-        if (1 === tmp8) {
-          c6 = 0;
-          closure_131_2.fail();
-          const obj11 = { type: "SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD_FAILURE", storefrontId: closure_131_1 };
-          closure_132_1(closure_132_2[5]).dispatch(obj11);
-          if (closure_132_5.getPreviewStorefrontId(closure_131_0) === closure_131_1) {
-            closure_132_24(closure_131_0, null);
-          }
-          const obj12 = closure_132_1(closure_132_2[5]);
-        } else if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 !== 2) {
-          closure_131_3 = value;
-          body = closure_131_3.body;
-          closure_131_5 = closure_132_0(closure_132_2[6]).transformSlayerApplicationStorefrontServer(body);
-          if (null != closure_131_5.storefrontPricing) {
-            const obj13 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: null, data: null };
-            const obj15 = { type: "application", applicationId: closure_131_5.applicationId };
-            obj13.priceId = obj15;
-            obj13.data = closure_131_5.storefrontPricing;
-            closure_132_1(closure_132_2[5]).dispatch(obj13);
-            const obj = closure_132_1(closure_132_2[5]);
-          }
-          const obj22 = closure_132_0(closure_132_2[6]);
-          const obj16 = { type: "SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD_SUCCESS", storefrontId: closure_131_1, storefront: closure_131_5 };
-          closure_132_1(closure_132_2[5]).dispatch(obj16);
-          const obj4 = closure_132_1(closure_132_2[5]);
-          const obj18 = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: closure_131_5.applicationId, storefrontMetadata: null };
-          const obj6 = closure_132_1(closure_132_2[5]);
-          obj18.storefrontMetadata = closure_132_0(closure_132_2[6]).transformStorefrontMetadataServer(body);
-          obj6.dispatch(obj18);
-          const obj8 = closure_132_0(closure_132_2[6]);
-          const store_listings = closure_131_3.body.store_listings;
-          let storeListings = store_listings;
-          if (store_listings == null) {
-            storeListings = [];
-          }
-          const obj19 = { type: "STORE_LISTINGS_FETCH_SUCCESS", storeListings };
-          closure_132_1(closure_132_2[5]).dispatch(obj19);
-          closure_131_2.succeed();
-          c6 = 0;
-          const obj9 = closure_132_1(closure_132_2[5]);
-        }
-        c6 = 0;
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _fetchSocialLayerStorefrontById() {
+  obj = _asyncToGenerator(async (arg0, storefrontId) => {
+    let closure_0 = arg0;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    return (async (arg0, value) => {
+      let obj12;
+      let obj6;
+      if (c8 === 2) {
         c8 = 3;
-        const obj20 = { value, done: true };
-        return obj20;
-      }
-      c8 = 3;
-    } catch (tmp64) {
-      closure_5 = tmp64;
-      if (tmp4 === c6) {
-        c8 = tmp2;
-        throw tmp64;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
       } else {
-        c7 = tmp;
+        try {
+          let body;
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = tmp;
+              storeListings = undefined;
+              state1 = undefined;
+              body = undefined;
+              storefront = undefined;
+              storefrontById = storefrontById.getStorefrontById(storefrontId);
+              let state;
+              if (storefrontById != null) {
+                state = storefrontById.state;
+              }
+              if ("loading" !== state) {
+                storeListings = getOrCreateBackoff(map1, storefrontId);
+                state1 = undefined;
+                const tmp89 = getOrCreateBackoff(map1, storefrontId);
+                if (storefrontById != null) {
+                  state1 = storefrontById.state;
+                }
+                if ("error" === state1) {
+                  state1 = storefrontById.fetchedAt;
+                  if (null != state1) {
+                    const _Date = Date;
+                    state1 = Date.now() - storefrontById.fetchedAt;
+                  }
+                }
+                state1 = storefrontById == null;
+                let state2;
+                if (!state1) {
+                  state2 = storefrontById.state;
+                }
+                if ("fetched" === state2) {
+                  if (null != storefrontById.fetchedAt) {
+                    state1 = Date;
+                  }
+                }
+                c6 = 1;
+                state1 = DispatcherDefault;
+                const obj5 = { type: "SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD", storefrontId };
+                state1.dispatch(obj5);
+                const obj7 = {};
+                const obj13 = require("TestModeUtils");
+                if (obj13.isTestModeForApplication(closure_0)) {
+                  obj7.test_mode = true;
+                }
+                promotionIdOverride = promotionIdOverride.getPromotionIdOverride();
+                if (null != promotionIdOverride) {
+                  obj7.promotion_id_override = promotionIdOverride;
+                }
+                state1 = require("HTTPUtils").HTTP;
+                const request = { url: Endpoints.SOCIAL_LAYER_STOREFRONT_BY_ID(closure_0, storefrontId), query: obj7, rejectWithError: true, retries: 3 };
+                const get = state1.get;
+                c7 = 2;
+                c8 = 1;
+                const obj8 = { value: get(request), done: false };
+                return obj8;
+              }
+            }
+          } else if (1 === tmp4) {
+            c6 = 0;
+            storeListings.fail();
+            const obj10 = { type: "SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD_FAILURE", storefrontId };
+            const obj9 = closure_132_1(closure_132_2[5]);
+            obj9.dispatch(obj10);
+            if (closure_132_5.getPreviewStorefrontId(closure_0) === storefrontId) {
+              closure_132_24(closure_0, null);
+            }
+          } else if (arg0 === 1) {
+            c8 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 0;
+            c8 = 3;
+            return { value, done: true };
+          } else {
+            state1 = value;
+            body = state1.body;
+            state1 = closure_132_0(closure_132_2[6]).transformSlayerApplicationStorefrontServer;
+            closure_132_0(closure_132_2[6]);
+            storefront = state1(body);
+            if (null != storefront.storefrontPricing) {
+              state1 = closure_132_1(closure_132_2[5]);
+              obj = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj12, data: storefront.storefrontPricing };
+              obj12 = { type: "application", applicationId: storefront.applicationId };
+              state1.dispatch(obj);
+            }
+            const obj14 = { type: "SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD_SUCCESS", storefrontId, storefront };
+            const obj3 = closure_132_1(closure_132_2[5]);
+            obj3.dispatch(obj14);
+            const obj15 = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: storefront.applicationId, storefrontMetadata: obj6.transformStorefrontMetadataServer(body) };
+            const dispatch = closure_132_1(closure_132_2[5]).dispatch;
+            closure_132_1(closure_132_2[5]);
+            obj6 = closure_132_0(closure_132_2[6]);
+            dispatch(obj15);
+            state1 = closure_132_1(closure_132_2[5]).dispatch;
+            const store_listings = state1.body.store_listings;
+            storeListings = store_listings;
+            closure_132_1(closure_132_2[5]);
+            if (store_listings == null) {
+              storeListings = [];
+            }
+            const obj16 = { type: "STORE_LISTINGS_FETCH_SUCCESS", storeListings };
+            state1(obj16);
+            storeListings.succeed();
+            c6 = 0;
+          }
+          c8 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp62) {
+          storefront = tmp62;
+          if (0 === c6) {
+            c8 = 3;
+            throw tmp62;
+          } else {
+            c7 = 1;
+          }
+        }
       }
-    }
-  }
+    })();
+  });
+  return obj(...arguments);
 };
 function setSocialLayerStorefrontPreview(applicationId, storefrontId) {
-  DispatcherDefault.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_SET_PREVIEW", applicationId, storefrontId });
+  obj = DispatcherDefault;
+  const obj2 = { type: "SOCIAL_LAYER_STOREFRONT_SET_PREVIEW", applicationId, storefrontId };
+  obj.dispatch(obj2);
 }
-let closure_25 = async function _fetchSocialLayerStorefrontAnnouncement(guildId) {
-  c5 = 0;
-  c6 = 0;
-  c4 = 0;
-  return (async (arg0, value) => {
-    closure_2 = tmp3;
-    closure_129_0 = guildId;
-    DispatcherDefault.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_START", guildId });
-    const HTTP = require("HTTPUtils").HTTP;
-    await HTTP.get({ url: Endpoints.SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT(guildId), rejectWithError: true });
-    if (1 === tmp7) {
-      c4 = 0;
-      closure_130_1(closure_130_2[5]).dispatch({ type: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_FAILURE", guildId: closure_129_0 });
-      c6 = 3;
-      closure_130_1(closure_130_2[5]);
-    } else if (arg0 === 1) {
-      c6 = 3;
-      throw value;
-    } else if (arg0 !== 2) {
-      const body = value.body;
-      if ("guild-discord-announcement" === body.type) {
-        let obj = { type: "guild-discord-announcement", id: body.id, applicationId: body.application_id, applicationName: body.application_name, assetFullyQualifiedURL: body.asset_fully_qualified_url, videoAssetFullyQualifiedURL: body.video_asset_fully_qualified_url, popoverTitle: body.popover_title, popoverBody: body.popover_body, popoverCta: body.popover_cta };
-      } else {
-        obj = { type: "guild-application-announcement", id: body.id, applicationId: body.application_id, applicationName: body.application_name, assetId: body.asset_id, backgroundImageAssetId: body.background_image_asset_id };
-      }
-      closure_129_2 = obj;
-      closure_130_1(closure_130_2[5]).dispatch({ type: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_SUCCESS", guildId: closure_129_0, announcement: closure_129_2 });
-      c4 = 0;
-      closure_130_1(closure_130_2[5]);
-    }
-    return value;
-  })();
-};
-let closure_26 = async function _fetchSocialLayerStorefrontConfig(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
+obj = function _fetchSocialLayerStorefrontAnnouncement() {
+  obj = _asyncToGenerator(async (guildId) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
+          return { value, done: true };
         } else {
-          closure_2 = tmp3;
-          closure_1 = tmp7;
-          let body;
-          closure_129_1 = undefined;
-          closure_129_2 = undefined;
-          closure_129_3 = undefined;
-          closure_129_4 = undefined;
-          configFetchState = configFetchState.getConfigFetchState();
-          if ("loading" !== configFetchState.state) {
-            if ("success" !== configFetchState.state) {
-              if ("error" === configFetchState.state) {
-                const _Date3 = Date;
-              }
-              c3 = 1;
-              DispatcherDefault.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_START" });
-              const HTTP = require("HTTPUtils").HTTP;
-              const obj5 = { url: constants.SOCIAL_LAYER_STOREFRONT_CONFIG, rejectWithError: true };
-              c4 = 2;
-              c5 = 1;
-              const obj8 = { value: HTTP.get(obj5), done: false };
-              return obj8;
-            } else {
-              const _Date2 = Date;
-            }
-          }
+          return { value: "IconComponent", done: null };
         }
       } else {
-        if (1 === tmp7) {
+        try {
+          let body;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              closure_1 = tmp4;
+              body = undefined;
+              obj = undefined;
+              c4 = 1;
+              const obj5 = { type: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_START", guildId };
+              const obj11 = DispatcherDefault;
+              obj11.dispatch(obj5);
+              const HTTP = require("HTTPUtils").HTTP;
+              const get = HTTP.get;
+              c5 = 2;
+              c6 = 1;
+              const obj7 = { url: Endpoints.SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT(guildId), rejectWithError: true };
+              const obj8 = { value: get(obj7), done: false };
+              return obj8;
+            }
+          } else {
+            if (1 === c5) {
+              c4 = 0;
+              const obj9 = { type: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_FAILURE", guildId };
+              const obj6 = closure_130_1(closure_130_2[5]);
+              obj6.dispatch(obj9);
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              body = value.body;
+              if ("guild-discord-announcement" === body.type) {
+                obj = { type: "guild-discord-announcement", id: body.id, applicationId: body.application_id, applicationName: body.application_name, assetFullyQualifiedURL: body.asset_fully_qualified_url, videoAssetFullyQualifiedURL: body.video_asset_fully_qualified_url, popoverTitle: body.popover_title, popoverBody: body.popover_body, popoverCta: body.popover_cta };
+                const obj12 = { type: "guild-discord-announcement", id: body.id, applicationId: body.application_id, applicationName: body.application_name, assetFullyQualifiedURL: body.asset_fully_qualified_url, videoAssetFullyQualifiedURL: body.video_asset_fully_qualified_url, popoverTitle: body.popover_title, popoverBody: body.popover_body, popoverCta: body.popover_cta };
+              } else {
+                obj = { type: "guild-application-announcement", id: body.id, applicationId: body.application_id, applicationName: body.application_name, assetId: body.asset_id, backgroundImageAssetId: body.background_image_asset_id };
+              }
+              const obj13 = { type: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_SUCCESS", guildId, announcement: obj };
+              const obj3 = closure_130_1(closure_130_2[5]);
+              obj3.dispatch(obj13);
+              c4 = 0;
+            }
+            c6 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp34) {
+          closure_3 = tmp34;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp34;
+          } else {
+            c5 = 1;
+          }
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _fetchSocialLayerStorefrontConfig() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let obj11;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c3;
+      try {
+        let body;
+        let promotionEndDatetime;
+        let date;
+        let storefronts;
+        c5 = 2;
+        const tmp4 = c4;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_2 = tmp;
+            body = undefined;
+            promotionEndDatetime = undefined;
+            date = undefined;
+            storefronts = undefined;
+            obj = undefined;
+            configFetchState = configFetchState.getConfigFetchState();
+            if ("loading" !== configFetchState.state) {
+              if ("success" !== configFetchState.state) {
+                if ("error" === configFetchState.state) {
+                  const _Date3 = Date;
+                }
+                c3 = 1;
+                const obj7 = DispatcherDefault;
+                obj7.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_START" });
+                const HTTP = require("HTTPUtils").HTTP;
+                const obj5 = { url: constants.SOCIAL_LAYER_STOREFRONT_CONFIG, rejectWithError: true };
+                c4 = 2;
+                c5 = 1;
+                const obj8 = { value: HTTP.get(obj5), done: false };
+                return obj8;
+              } else {
+                const _Date2 = Date;
+              }
+            }
+          }
+        } else if (1 === tmp4) {
           c3 = 0;
-          closure_130_1(closure_130_2[5]).dispatch({ type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_FAILURE" });
           const obj6 = closure_130_1(closure_130_2[5]);
+          obj6.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_FAILURE" });
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
-        } else if (arg0 !== 2) {
+        } else if (arg0 === 2) {
+          c3 = 0;
+          c5 = 3;
+          const obj9 = { value, done: true };
+          return obj9;
+        } else {
           body = value.body;
-          closure_129_1 = null;
+          promotionEndDatetime = null;
           if (null != body.promotion_end_datetime) {
+            let tmp5 = promotionEndDatetime;
             let _Date = Date;
-            let date = new Date(body.promotion_end_datetime);
-            closure_129_2 = date;
+            let self = this;
+            let self2 = this;
+            date = new Date(body.promotion_end_datetime);
             let _Number = Number;
-            if (!Number.isNaN(closure_129_2.getTime())) {
-              closure_129_1 = closure_129_2;
+            if (!Number.isNaN(date.getTime())) {
+              promotionEndDatetime = date;
             }
           }
-          const storefronts = body.storefronts;
+          storefronts = body.storefronts;
           let mapped;
           if (storefronts != null) {
-            mapped = storefronts.map((guildId) => {
+            mapped = storefronts.map(function(guildId) {
+              let excluded_platforms;
               let date = null;
               if (null != guildId.promotion_end_datetime) {
                 const _Date = Date;
+                const self = this;
+                const self2 = this;
                 date = new Date(guildId.promotion_end_datetime);
               }
               let isNaNResult = null == date;
@@ -777,130 +757,172 @@ let closure_26 = async function _fetchSocialLayerStorefrontConfig(arg0, value) {
                 const _Number = Number;
                 isNaNResult = Number.isNaN(date.getTime());
               }
-              let tmp7 = null;
+              let tmp5 = null;
               if (!isNaNResult) {
-                tmp7 = date;
+                tmp5 = date;
               }
-              const obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: null, disableMobileAccountLinking: null, promotionEndDatetime: null, allowOrbsSpending: null };
-              let excluded_platforms = guildId.excluded_platforms;
+              obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: excluded_platforms, disableMobileAccountLinking: true === guildId.disable_mobile_account_linking, promotionEndDatetime: tmp5, allowOrbsSpending: true === guildId.allow_orbs_spending };
+              excluded_platforms = guildId.excluded_platforms;
               if (excluded_platforms == null) {
                 excluded_platforms = [];
               }
-              obj.excludedPlatforms = excluded_platforms;
-              obj.disableMobileAccountLinking = true === guildId.disable_mobile_account_linking;
-              obj.promotionEndDatetime = tmp7;
-              obj.allowOrbsSpending = true === guildId.allow_orbs_spending;
               return obj;
             });
           }
-          closure_0 = mapped;
+          let closure_0 = mapped;
           if (mapped == null) {
             closure_0 = [];
           }
-          closure_129_3 = closure_0;
-          closure_129_4 = null;
+          storefronts = closure_0;
+          obj = null;
           if (null != body.announcement_modal_config) {
-            let obj = { version: body.announcement_modal_config.version, applicationId: body.announcement_modal_config.application_id };
-            closure_129_4 = obj;
+            obj = { version: body.announcement_modal_config.version, applicationId: body.announcement_modal_config.application_id };
           }
-          const obj9 = { type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_SUCCESS", config: null };
-          const obj10 = { promotionalSkuIds: body.promotional_sku_ids, promotionEndDatetime: closure_129_1, storefronts: closure_129_3, announcementModalConfig: closure_129_4 };
-          obj9.config = obj10;
-          closure_130_1(closure_130_2[5]).dispatch(obj9);
-          c3 = 0;
+          const obj10 = { type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_SUCCESS", config: obj11 };
+          obj11 = { promotionalSkuIds: body.promotional_sku_ids, promotionEndDatetime, storefronts, announcementModalConfig: obj };
           const obj2 = closure_130_1(closure_130_2[5]);
+          obj2.dispatch(obj10);
+          c3 = 0;
         }
-        c3 = 0;
         c5 = 3;
-        const obj11 = { value, done: true };
-        return obj11;
+        return { value: "IconComponent", done: null };
+      } catch (tmp42) {
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp42;
+        } else {
+          c4 = 1;
+        }
       }
-      c5 = 3;
-    } catch (tmp47) {
-      if (tmp4 === c3) {
-        c5 = tmp2;
-        throw tmp47;
+    }
+  });
+  return obj(...arguments);
+};
+obj = function _fetchSocialLayerStorefrontLaunchAnnouncement() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let backgroundUrl;
+    let buttonText;
+    let darkThemeLogoUrl;
+    let features;
+    let lightThemeLogoUrl;
+    let subtitle;
+    let titles;
+    if (c13 === 2) {
+      c13 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        c4 = tmp;
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c11;
+      try {
+        let _null;
+        let obj8;
+        c13 = 2;
+        if (0 === c12) {
+          if (arg0 === 1) {
+            c13 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c13 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_9 = tmp;
+            closure_8 = tmp4;
+            _null = undefined;
+            obj8 = undefined;
+            c11 = 1;
+            const HTTP = require("HTTPUtils").HTTP;
+            const obj5 = { url: constants.SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT, rejectWithError: true };
+            c12 = 2;
+            c13 = 1;
+            const obj6 = { value: HTTP.get(obj5), done: false };
+            return obj6;
+          }
+        } else {
+          if (1 === c12) {
+            c11 = 0;
+            const obj4 = closure_137_1(closure_137_2[5]);
+            obj4.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT_FETCH_FAILURE" });
+          } else if (arg0 === 1) {
+            c13 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c11 = 0;
+            c13 = 3;
+            const obj7 = { value, done: true };
+            return obj7;
+          } else {
+            const body = value.body;
+            let c0 = body;
+            if (body == null) {
+              c0 = null;
+            }
+            _null = c0;
+            obj8 = null;
+            if (null != _null) {
+              obj8 = { applicationId: _null.application_id, lightThemeLogoUrl, darkThemeLogoUrl, backgroundUrl, titles, subtitle, features, buttonText };
+              const light_theme_logo_url = _null.light_theme_logo_url;
+              lightThemeLogoUrl = light_theme_logo_url;
+              if (light_theme_logo_url == null) {
+                lightThemeLogoUrl = null;
+              }
+              const dark_theme_logo_url = _null.dark_theme_logo_url;
+              darkThemeLogoUrl = dark_theme_logo_url;
+              if (dark_theme_logo_url == null) {
+                darkThemeLogoUrl = null;
+              }
+              const background_url = _null.background_url;
+              backgroundUrl = background_url;
+              if (background_url == null) {
+                backgroundUrl = null;
+              }
+              titles = _null.titles ?? null;
+              subtitle = _null.subtitle ?? null;
+              features = _null.features;
+              let mapped;
+              if (features != null) {
+                mapped = features.map((assetUrl) => ({ assetUrl: assetUrl.asset_url, title: assetUrl.title, subtitle: assetUrl.subtitle }));
+              }
+              features = mapped;
+              if (mapped == null) {
+                features = null;
+              }
+              const button_text = _null.button_text;
+              buttonText = button_text;
+              if (button_text == null) {
+                buttonText = null;
+              }
+            }
+            obj = closure_137_1(closure_137_2[5]);
+            const obj9 = { type: "SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT_FETCH_SUCCESS", config: obj8 };
+            obj.dispatch(obj9);
+            c11 = 0;
+          }
+          c13 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp43) {
+        closure_10 = tmp43;
+        if (0 === c11) {
+          c13 = 3;
+          throw tmp43;
+        } else {
+          c12 = 1;
+        }
       }
     }
-  }
+  });
+  return obj(...arguments);
 };
-let closure_27 = async function _fetchSocialLayerStorefrontLaunchAnnouncement() {
-  closure_9 = tmp3;
-  const HTTP = require("HTTPUtils").HTTP;
-  await HTTP.get({ url: constants.SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT, rejectWithError: true });
-  if (1 === tmp7) {
-    c11 = 0;
-    closure_137_1(closure_137_2[5]).dispatch({ type: "SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT_FETCH_FAILURE" });
-    c13 = 3;
-    closure_137_1(closure_137_2[5]);
-  } else if (arg0 === 1) {
-    c13 = 3;
-    throw arg1;
-  } else if (arg0 !== 2) {
-    const body = arg1.body;
-    c0 = body;
-    if (body == null) {
-      c0 = null;
-    }
-    closure_136_0 = c0;
-    closure_136_1 = null;
-    if (null != closure_136_0) {
-      const obj7 = { applicationId: closure_136_0.application_id, lightThemeLogoUrl: null, darkThemeLogoUrl: null, backgroundUrl: null, titles: null, subtitle: null, features: null, buttonText: null };
-      const light_theme_logo_url = closure_136_0.light_theme_logo_url;
-      let lightThemeLogoUrl = light_theme_logo_url;
-      if (light_theme_logo_url == null) {
-        lightThemeLogoUrl = null;
-      }
-      obj7.lightThemeLogoUrl = lightThemeLogoUrl;
-      const dark_theme_logo_url = closure_136_0.dark_theme_logo_url;
-      let darkThemeLogoUrl = dark_theme_logo_url;
-      if (dark_theme_logo_url == null) {
-        darkThemeLogoUrl = null;
-      }
-      obj7.darkThemeLogoUrl = darkThemeLogoUrl;
-      const background_url = closure_136_0.background_url;
-      let backgroundUrl = background_url;
-      if (background_url == null) {
-        backgroundUrl = null;
-      }
-      obj7.backgroundUrl = backgroundUrl;
-      let titles = closure_136_0.titles;
-      if (titles == null) {
-        titles = null;
-      }
-      obj7.titles = titles;
-      let subtitle = closure_136_0.subtitle;
-      if (subtitle == null) {
-        subtitle = null;
-      }
-      obj7.subtitle = subtitle;
-      let features = closure_136_0.features;
-      let mapped;
-      if (features != null) {
-        mapped = features.map((assetUrl) => ({ assetUrl: assetUrl.asset_url, title: assetUrl.title, subtitle: assetUrl.subtitle }));
-      }
-      features = mapped;
-      if (mapped == null) {
-        features = null;
-      }
-      obj7.features = features;
-      const button_text = closure_136_0.button_text;
-      let buttonText = button_text;
-      if (button_text == null) {
-        buttonText = null;
-      }
-      obj7.buttonText = buttonText;
-      closure_136_1 = obj7;
-    }
-    closure_137_1(closure_137_2[5]).dispatch({ type: "SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT_FETCH_SUCCESS", config: closure_136_1 });
-    c11 = 0;
-    closure_137_1(closure_137_2[5]);
-  }
-  return arg1;
-};
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = Constants.Endpoints;
 let closure_7 = 30 * DurationsDefault.Millis.SECOND;
 let closure_8 = 30 * DurationsDefault.Millis.MINUTE;
 let closure_9 = 60 * DurationsDefault.Millis.MINUTE;
@@ -911,128 +933,96 @@ let closure_17 = 30 * DurationsDefault.Millis.SECOND;
 let closure_18 = 5 * DurationsDefault.Millis.MINUTE;
 const map = new Map();
 const map1 = new Map();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontActionCreators.tsx");
 
 export { _fetchSocialLayerStorefront };
 export const fetchSocialLayerStorefrontForApplication = function fetchSocialLayerStorefrontForApplication(applicationId, arg1) {
-  let obj = arg1;
+  obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
-  return _fetchSocialLayerStorefront({ type: "application", applicationId }, Endpoints.SOCIAL_LAYER_STOREFRONT_BY_APPLICATION_ID(applicationId), obj);
+  const obj2 = { type: "application", applicationId };
+  return _fetchSocialLayerStorefront(obj2, Endpoints.SOCIAL_LAYER_STOREFRONT_BY_APPLICATION_ID(applicationId), obj);
 };
 export const fetchSocialLayerStorefront = function fetchSocialLayerStorefront(guildId, arg1) {
-  let obj = arg1;
+  obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
-  return _fetchSocialLayerStorefront({ type: "guild", guildId }, Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT(guildId), obj);
+  const obj2 = { type: "guild", guildId };
+  return _fetchSocialLayerStorefront(obj2, Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT(guildId), obj);
 };
 export const fetchSocialLayerStorefrontSkuForApplication = function fetchSocialLayerStorefrontSkuForApplication(applicationId, id, arg2) {
-  let obj = arg2;
+  obj = arg2;
   if (arg2 === undefined) {
     obj = {};
   }
   return _fetchSocialLayerStorefrontSkuWithUrl(id, Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU_BY_APPLICATION_ID(applicationId, id), obj);
 };
-export const fetchSocialLayerStorefrontSku = function fetchSocialLayerStorefrontSku(arg0, id, arg2) {
-  let obj = arg2;
+export const fetchSocialLayerStorefrontSku = function fetchSocialLayerStorefrontSku(guildId, id, arg2) {
+  obj = arg2;
   if (arg2 === undefined) {
     obj = {};
   }
-  return _fetchSocialLayerStorefrontSkuWithUrl(id, Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU(arg0, id), obj);
+  return _fetchSocialLayerStorefrontSkuWithUrl(id, Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU(guildId, id), obj);
 };
 export const setSocialLayerStorefrontState = function setSocialLayerStorefrontState(applicationId, pageIndex, skuId) {
-  DispatcherDefault.dispatch({ type: "SET_SOCIAL_LAYER_STOREFRONT_STATE", applicationId, pageIndex, skuId });
+  obj = DispatcherDefault;
+  const obj2 = { type: "SET_SOCIAL_LAYER_STOREFRONT_STATE", applicationId, pageIndex, skuId };
+  obj.dispatch(obj2);
 };
 export const fetchSocialLayerStorefrontEntries = function fetchSocialLayerStorefrontEntries() {
-  const self = this;
-  const apply = closure_22.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const fetchSocialLayerStorefrontById = function fetchSocialLayerStorefrontById() {
-  const self = this;
-  const apply = closure_23.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export { setSocialLayerStorefrontPreview };
 export const fetchSocialLayerStorefrontAnnouncement = function fetchSocialLayerStorefrontAnnouncement() {
-  const self = this;
-  const apply = closure_25.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const fetchSocialLayerStorefrontConfig = function fetchSocialLayerStorefrontConfig() {
-  const self = this;
-  const apply = closure_26.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const fetchSocialLayerSKUPurchaseEligibility = function fetchSocialLayerSKUPurchaseEligibility(arg0, skuId) {
   _require = skuId;
   const sKUEligibility = SocialLayerStorefrontStore.getSKUEligibility(skuId);
-  let tmp2 = "checking" !== sKUEligibility;
+  const tmp2 = "checking" !== sKUEligibility && "eligible" !== sKUEligibility && "ineligible" !== sKUEligibility;
   if (tmp2) {
-    tmp2 = "eligible" !== sKUEligibility;
-  }
-  if (tmp2) {
-    tmp2 = "ineligible" !== sKUEligibility;
-  }
-  if (tmp2) {
+    obj = DispatcherDefault;
     let obj2 = { type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_START", skuId };
-    DispatcherDefault.dispatch(obj2);
+    obj.dispatch(obj2);
     const _setTimeout = setTimeout;
     const timerId = setTimeout(() => {
+      const tmp = skuId;
       if ("checking" === SocialLayerStorefrontStore.getSKUEligibility(skuId)) {
-        const obj2 = { type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_FAILURE", skuId, reason: "interaction_deadline" };
-        DispatcherDefault.dispatch(obj2);
+        const obj2 = { type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_FAILURE", skuId: tmp, reason: "interaction_deadline" };
+        obj = DispatcherDefault;
+        obj.dispatch(obj2);
       }
     }, closure_11);
     const HTTP = require("HTTPUtils").HTTP;
+    const post = HTTP.post;
     const obj3 = { url: Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU_ELIGIBILITY(arg0, skuId), rejectWithError: true };
-    const postResult = HTTP.post(obj3);
-    HTTP.post(obj3).then((body) => {
-      DispatcherDefault.dispatch({ type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_CREATE", skuId, interactionId: body.body.interaction_id });
-    }).catch((error) => {
-      const obj2 = { type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_FAILURE", skuId, httpStatus: null };
+    const postResult = post(obj3);
+    const nextPromise = postResult.then((body) => {
+      obj = DispatcherDefault;
+      const obj2 = { type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_CREATE", skuId, interactionId: body.body.interaction_id };
+      obj.dispatch(obj2);
+    });
+    nextPromise.catch((error) => {
       let status;
+      obj = { type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_FAILURE", skuId, httpStatus: status };
+      status = undefined;
+      const dispatch = DispatcherDefault.dispatch;
+      DispatcherDefault;
       if (error != null) {
         status = error.status;
       }
-      obj2.httpStatus = status;
-      DispatcherDefault.dispatch(obj2);
-    });
-    const nextPromise = HTTP.post(obj3).then((body) => {
-      DispatcherDefault.dispatch({ type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_CREATE", skuId, interactionId: body.body.interaction_id });
+      dispatch(obj);
     });
   }
 };
 export const fetchSocialLayerStorefrontLaunchAnnouncement = function fetchSocialLayerStorefrontLaunchAnnouncement() {
-  const self = this;
-  const apply = closure_27.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

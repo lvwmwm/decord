@@ -1,20 +1,30 @@
-// Module ID: 5209
-// Function ID: 5210
+// Module ID: 5273
+// Function ID: 5274
 // Name: requireNativeComponentOrDefault
 // Dependencies: [17, 3, 2]
 // Exports: default
 
-// Module 5209 (requireNativeComponentOrDefault)
+// Module 5273 (requireNativeComponentOrDefault)
 import LoggerDefault from "Logger" /* 3 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-({ requireNativeComponent: closure_0, UIManager: closure_1, View: c2 } = get_ActivityIndicator);
+let set;
+
+let _window;
+let c2;
+let map;
+({ requireNativeComponent: _window, UIManager: map, View: c2 } = react_native);
 const logger = new LoggerDefault("RequireNativeComponentOrDefault");
-const map = new Map();
+const tmp3 = new LoggerDefault("RequireNativeComponentOrDefault");
+map = new Map();
 let result = size.fileFinishedImporting("utils/native/requireNativeComponentOrDefault.native.tsx");
 
 export default function requireNativeComponentOrDefault(warnWhenMissing) {
+  let componentFoundInstance;
+  let componentMissingFallbackInstance;
+  let componentName;
+  let value;
   ({ componentName, componentFoundInstance, componentMissingFallbackInstance } = warnWhenMissing);
   if (componentMissingFallbackInstance === undefined) {
     componentMissingFallbackInstance = React2;
@@ -23,12 +33,13 @@ export default function requireNativeComponentOrDefault(warnWhenMissing) {
   if (flag === undefined) {
     flag = true;
   }
-  if (framebus.hasViewManagerConfig(componentName)) {
+  if (map.hasViewManagerConfig(componentName)) {
     if (!map.has(componentName)) {
+      set = map.set;
       if (componentFoundInstance == null) {
         componentFoundInstance = React(componentName);
       }
-      const result = obj.set(componentName, componentFoundInstance);
+      const result = set(componentName, componentFoundInstance);
     }
     value = obj.get(componentName);
   } else {

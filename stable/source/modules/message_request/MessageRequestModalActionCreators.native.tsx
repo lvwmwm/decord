@@ -1,18 +1,18 @@
-// Module ID: 12729
-// Function ID: 12730
+// Module ID: 11833
+// Function ID: 11834
 // Name: MessageRequestModalActionCreators
-// Dependencies: [12726, 1074, 1241, 5141, 1115, 5237, 4755, 12730, 1980, 2]
+// Dependencies: [11830, 1086, 1253, 5205, 1127, 5301, 4801, 11834, 1987, 2]
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal
 
-// Module 12729 (MessageRequestModalActionCreators)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 12726 */;
+// Module 11833 (MessageRequestModalActionCreators)
+import Constants from "Constants" /* 1086 */;
+import intl5 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import AlertDefault from "Alert" /* 5301 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 11830 */;
 import size from "module_2" /* 2 */;
 
 const type = MessageRequestConstants.MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL;
@@ -20,24 +20,31 @@ const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestModalActionCreators.native.tsx");
 
 export const openAcceptMessageRequestConfirmModal = function openAcceptMessageRequestConfirmModal(arg0) {
+  let channelId;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let onCancel;
+  let onConfirm;
   ({ channelId, onConfirm, onCancel } = arg0);
-  AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_MODAL, { type, channel_id: channelId });
+  const obj = AnalyticsUtilsDefault;
   const obj2 = { type, channel_id: channelId };
-  const obj4 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, confirmColor: null, isDismissable: false };
-  const intl = util.intl;
-  obj4.title = intl.string(util.t["66tnno"]);
-  const intl2 = util.intl;
-  obj4.body = intl2.string(util.t["c/k4SW"]);
-  const intl3 = util.intl;
-  obj4.cancelText = intl3.string(util.t["ETE/oC"]);
-  const intl4 = util.intl;
-  obj4.confirmText = intl4.string(util.t["cY+Oob"]);
-  obj4.onConfirm = onConfirm;
-  obj4.onCancel = onCancel;
-  obj4.confirmColor = common_AlertDefault.Colors.BRAND;
-  actions_AlertActionCreatorsDefault.show(obj4);
+  obj.track(AnalyticEvents.OPEN_MODAL, obj2);
+  const obj3 = { title: intl.string(intl5.t["66tnno"]), body: intl2.string(intl5.t["c/k4SW"]), cancelText: intl3.string(intl5.t["ETE/oC"]), confirmText: intl4.string(intl5.t["cY+Oob"]), onConfirm, onCancel, confirmColor: AlertDefault.Colors.BRAND, isDismissable: false };
+  const show = actions_AlertActionCreatorsDefault.show;
+  actions_AlertActionCreatorsDefault;
+  intl = intl5.intl;
+  intl2 = intl5.intl;
+  intl3 = intl5.intl;
+  intl4 = intl5.intl;
+  show(obj3);
 };
 export const onMarkAsNotSpamConfirmationModal = function onMarkAsNotSpamConfirmationModal(arg0) {
+  let channel;
+  let onCancel;
+  let onConfirm;
   ({ onConfirm, onCancel, channel } = arg0);
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12730, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
+  const obj = ActionSheetActionCreatorsDefault;
+  obj.openLazy(asyncRequire(11834, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
 };

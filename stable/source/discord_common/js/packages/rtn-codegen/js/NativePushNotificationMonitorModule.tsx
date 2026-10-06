@@ -1,13 +1,13 @@
-// Module ID: 9591
-// Function ID: 9592
-// Name: NativePushNotificationMonitorModule
+// Module ID: 8743
+// Function ID: 8744
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 9591 (NativePushNotificationMonitorModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 8743 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativePushNotificationMonitorModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativePushNotificationMonitorModule.tsx");
 

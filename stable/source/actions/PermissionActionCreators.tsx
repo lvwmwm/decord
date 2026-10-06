@@ -1,35 +1,44 @@
-// Module ID: 17391
-// Function ID: 17392
+// Module ID: 16743
+// Function ID: 16744
 // Name: PermissionActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
-// Module 17391 (PermissionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 16743 (PermissionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("actions/PermissionActionCreators.tsx");
-
-export default {
+let obj = {
   clearVADWarning() {
-    DispatcherDefault.dispatch({ type: "PERMISSION_CLEAR_VAD_WARNING" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "PERMISSION_CLEAR_VAD_WARNING" });
   },
   clearSuppressWarning() {
     let flag = arg0;
     if (arg0 === undefined) {
       flag = false;
     }
-    DispatcherDefault.dispatch({ type: "PERMISSION_CLEAR_SUPPRESS_WARNING", forever: flag });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "PERMISSION_CLEAR_SUPPRESS_WARNING", forever: flag });
   },
   clearPTTAdminWarning() {
-    DispatcherDefault.dispatch({ type: "PERMISSION_CLEAR_PTT_ADMIN_WARNING" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "PERMISSION_CLEAR_PTT_ADMIN_WARNING" });
   },
   requestElevatedProcess(pid) {
-    DispatcherDefault.dispatch({ type: "PERMISSION_REQUEST_ELEVATED_PROCESS", pid });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "PERMISSION_REQUEST_ELEVATED_PROCESS", pid };
+    obj.dispatch(obj2);
   },
   clearElevatedProcess() {
-    DispatcherDefault.dispatch({ type: "PERMISSION_CLEAR_ELEVATED_PROCESS" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "PERMISSION_CLEAR_ELEVATED_PROCESS" });
   },
   continueNonelevatedProcess(pid) {
-    DispatcherDefault.dispatch({ type: "PERMISSION_CONTINUE_NONELEVATED_PROCESS", pid });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "PERMISSION_CONTINUE_NONELEVATED_PROCESS", pid };
+    obj.dispatch(obj2);
   }
 };
+const result = size.fileFinishedImporting("actions/PermissionActionCreators.tsx");
+
+export default obj;

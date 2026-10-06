@@ -1,48 +1,69 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 14845
+// Function ID: 14846
 // Name: DefaultGuildThemePreferenceSetting
-// Dependencies: [19, 8265, 2019, 1115, 1186, 11754, 4715, 2]
+// Dependencies: [19, 7421, 2027, 558, 576, 1127, 1198, 10874, 4762, 2]
 
-// Module 15585 (DefaultGuildThemePreferenceSetting)
-import util from "util" /* 1115 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4715 */;
-import noop from "module_19" /* 19 */;
+// Module 14845 (DefaultGuildThemePreferenceSetting)
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4762 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11754);
-const radio = SettingBuilders.createRadio({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let intl2;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { label: intl.string(intl3.t.aN3RNQ), value: preloaded_user_settings.GuildThemeSourcePreference.GUILD };
+    intl = tmp(1127).intl;
+    const items = [obj2, ];
+    const obj3 = { label: intl2.string(intl3.t.js8y7t), value: preloaded_user_settings.GuildThemeSourcePreference.PERSONAL };
+    intl2 = tmp(1127).intl;
+    items[1] = obj3;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => react.useMemo(() => {
+  let intl;
+  let intl2;
+  const obj = { label: intl.string(intl3.t.aN3RNQ), value: preloaded_user_settings.GuildThemeSourcePreference.GUILD };
+  intl = intl3.intl;
+  const items = [obj, ];
+  const obj2 = { label: intl2.string(intl3.t.js8y7t), value: preloaded_user_settings.GuildThemeSourcePreference.PERSONAL };
+  intl2 = intl3.intl;
+  items[1] = obj2;
+  return items;
+}, []));
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.Q7mm4g);
+    const intl = intl3.intl;
+    return intl.string(intl3.t.Q7mm4g);
   },
-  parent: fn(8265).MobileUserSettings.APPEARANCE,
-  useValue: fn(2019).DefaultGuildThemePreference.useSetting,
+  parent: MobileUserSettings.APPEARANCE,
+  useValue: UserSettings.DefaultGuildThemePreference.useSetting,
   onValueChange: function onDefaultGuildThemePreferenceChange(arg0) {
     const DefaultGuildThemePreference = UserSettings.DefaultGuildThemePreference;
     DefaultGuildThemePreference.updateSetting(Number(arg0));
   },
-  useOptions: function useDefaultGuildThemePreferenceOptions() {
-    return noop.useMemo(() => {
-      const obj = { label: null, value: null };
-      const intl = util.intl;
-      obj.label = intl.string(util.t.aN3RNQ);
-      obj.value = preloaded_user_settings.GuildThemeSourcePreference.GUILD;
-      const items = [obj, ];
-      const obj2 = { label: null, value: null };
-      const intl2 = util.intl;
-      obj2.label = intl2.string(util.t.js8y7t);
-      obj2.value = preloaded_user_settings.GuildThemeSourcePreference.PERSONAL;
-      items[1] = obj2;
-      return items;
-    }, []);
-  },
+  useOptions: tmp2,
   usePredicate() {
-    return ServerThemeUserExperiment.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
+    const obj = ServerThemeUserExperiment;
+    return obj.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
   }
-});
-const size = fn(2);
+};
+const radio = SettingBuilders.createRadio(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DefaultGuildThemePreferenceSetting.tsx");
 
 export default radio;

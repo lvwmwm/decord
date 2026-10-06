@@ -1,22 +1,22 @@
-// Module ID: 13400
-// Function ID: 13401
+// Module ID: 12654
+// Function ID: 12655
 // Name: maybeFetchContentInventoryOutbox
-// Dependencies: [9104, 1091, 13401, 2]
+// Dependencies: [8251, 1103, 12655, 2]
 // Exports: default
 
-// Module 13400 (maybeFetchContentInventoryOutbox)
-import DurationsDefault from "Durations" /* 1091 */;
-import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 13401 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9104 */;
+// Module 12654 (maybeFetchContentInventoryOutbox)
+import DurationsDefault from "Durations" /* 1103 */;
+import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 12655 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8251 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 const MINUTE = DurationsDefault.Millis.MINUTE;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/content_inventory/maybeFetchContentInventoryOutbox.tsx");
 
 export default function maybeFetchContentInventoryOutbox(id, arg1) {
+  const obj = ContentInventoryOutboxStore;
   if (!ContentInventoryOutboxStore.isFetchingUserOutbox(id)) {
-    const userOutbox = ContentInventoryOutboxStore.getUserOutbox(id);
+    const userOutbox = obj.getUserOutbox(id);
     let num;
     if (userOutbox != null) {
       num = userOutbox.lastFetched;
@@ -26,7 +26,8 @@ export default function maybeFetchContentInventoryOutbox(id, arg1) {
     }
     const _Date = Date;
     if (Date.now() - num >= MINUTE) {
-      return ContentInventoryHttpApi.getContentInventoryOutbox(id, arg1);
+      const obj2 = ContentInventoryHttpApi;
+      return obj2.getContentInventoryOutbox(id, arg1);
     }
   }
 };

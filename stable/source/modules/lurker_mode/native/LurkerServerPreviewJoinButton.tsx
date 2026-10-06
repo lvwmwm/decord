@@ -1,45 +1,55 @@
-// Module ID: 16497
-// Function ID: 16498
+// Module ID: 15786
+// Function ID: 15787
 // Name: LurkerServerPreviewJoinButton
-// Dependencies: [5, 32, 19, 2041, 4428, 1074, 21, 10125, 1186, 5769, 5218, 1115, 2]
+// Dependencies: [5, 32, 19, 2051, 4473, 1086, 21, 9263, 1198, 5833, 5282, 1127, 2]
 
-// Module 16497 (LurkerServerPreviewJoinButton)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import LurkingStore from "LurkingStore" /* 4428 */;
+// Module 15786 (LurkerServerPreviewJoinButton)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import LurkingStore from "LurkingStore" /* 4473 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const JoinGuildSources = fn(1074).JoinGuildSources;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/lurker_mode/native/LurkerServerPreviewJoinButton.tsx");
+let c4;
 
-export default noop.memo(function LurkerServerPreviewJoinButton(guildId) {
+let _asyncToGenerator = _asyncToGenerator_mod;
+const JoinGuildSources = Constants.JoinGuildSources;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function LurkerServerPreviewJoinButton(guildId) {
+  let closure_3;
+  let loading;
   guildId = guildId.guildId;
-  const joinSource = guildId.joinSource;
+  let joinSource = guildId.joinSource;
   loading = undefined;
-  asyncGeneratorStep = undefined;
-  [loading, asyncGeneratorStep] = noop.useState(false);
+  _asyncToGenerator = undefined;
+  [loading, _asyncToGenerator] = react.useState(false);
   const items = [guildId, joinSource, loading];
-  const callback = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
+  const callback = react.useCallback(_asyncToGenerator(async (arg0, value) => {
+    let channel;
+    let closure_0;
+    let closure_2;
+    let lurkingSourceForGuild;
+    let v1;
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
+      let c3;
       try {
         c4 = 2;
-        if (0 === v3) {
+        if (0 === joinSource) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -47,35 +57,38 @@ export default noop.memo(function LurkerServerPreviewJoinButton(guildId) {
             c4 = 3;
             const obj4 = { value, done: true };
             return obj4;
-          } else if (first) {
-            c4 = 3;
           } else {
-            lurkingSourceForGuild = lurkingSourceForGuild.getLurkingSourceForGuild(guildId);
-            let type;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            if (type === constants.DIRECTORY_ENTRY) {
-              channel = channel.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                guildId = channel.getGuildId();
-                const result = tmp3(tmp43[7]).setHubProgressActionComplete(guildId, tmp3(tmp43[8]).HubProgressStep.JOIN_GUILD);
-                const obj6 = tmp3(tmp43[7]);
+            const tmp48 = first;
+            if (!tmp48) {
+              lurkingSourceForGuild = lurkingSourceForGuild.getLurkingSourceForGuild(guildId);
+              let type;
+              if (lurkingSourceForGuild != null) {
+                type = lurkingSourceForGuild.type;
               }
+              if (type === constants.DIRECTORY_ENTRY) {
+                channel = channel.getChannel(lurkingSourceForGuild.directoryChannelId);
+                if (null != channel) {
+                  const setHubProgressActionComplete = tmp(loading[7]).setHubProgressActionComplete;
+                  const tmp31 = tmp(loading[7]);
+                  guildId = channel.getGuildId();
+                  const result = setHubProgressActionComplete(guildId, tmp(loading[8]).HubProgressStep.JOIN_GUILD);
+                }
+              }
+              v0(true);
+              c3 = 1;
+              const obj5 = { source: joinSource };
+              const obj6 = joinSource(loading[9]);
+              joinSource = 2;
+              c4 = 1;
+              const obj7 = { value: obj6.joinGuild(guildId, obj5), done: false };
+              return obj7;
             }
-            v0(true);
-            c3 = 1;
-            const obj5 = { source: joinSource };
-            v3 = 2;
-            c4 = 1;
-            const obj8 = { value: v3(tmp43[9]).joinGuild(guildId, obj5), done: false };
-            return obj8;
           }
-        } else if (1 === tmp7) {
+        } else if (1 === joinSource) {
           c3 = 0;
           closure_128_3(false);
-          throw tmp43;
-        } else if (2 === tmp7) {
+          throw loading;
+        } else if (2 === joinSource) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -83,39 +96,45 @@ export default noop.memo(function LurkerServerPreviewJoinButton(guildId) {
             c3 = 0;
             closure_128_3(false);
             c4 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
+            const obj8 = { value, done: true };
+            return obj8;
           } else {
-            v3 = 3;
+            const obj2 = joinSource(loading[9]);
+            joinSource = 3;
             c4 = 1;
-            const obj10 = { value: v3(tmp43[9]).waitForGuild(closure_128_0), done: false };
-            return obj10;
+            const obj9 = { value: obj2.waitForGuild(closure_128_0), done: false };
+            return obj9;
           }
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
-        } else if (arg0 !== 2) {
+        } else if (arg0 === 2) {
+          c3 = 0;
+          closure_128_3(false);
+          c4 = 3;
+          const obj = { value, done: true };
+          return obj;
+        } else {
           c3 = 0;
           closure_128_3(false);
         }
-        c3 = 0;
-        closure_128_3(false);
         c4 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } catch (tmp43) {
-        if (tmp4 === c3) {
-          c4 = tmp2;
-          throw tmp43;
+        return { value: "IconComponent", done: null };
+      } catch (tmp41) {
+        loading = tmp41;
+        if (0 === c3) {
+          c4 = 3;
+          throw tmp41;
         } else {
-          v3 = tmp;
+          joinSource = 1;
         }
       }
     }
   }), items);
-  let obj = { grow: true, variant: "primary", size: "md", loading, text: null, onPress: null };
+  const Button = guildId(loading[10]).Button;
   const intl = guildId(loading[11]).intl;
-  obj.text = intl.string(guildId(loading[11]).t.RLch70);
-  obj.onPress = callback;
-  return jsx(guildId(loading[10]).Button, { grow: true, variant: "primary", size: "md", loading, text: null, onPress: null });
+  return <Button grow variant="primary" size="md" loading={loading} text={intl.string(guildId(loading[11]).t.RLch70)} onPress={callback} />;
 });
+let result = size.fileFinishedImporting("modules/lurker_mode/native/LurkerServerPreviewJoinButton.tsx");
+
+export default memoResult;

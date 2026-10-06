@@ -1,20 +1,24 @@
-// Module ID: 17433
-// Function ID: 17434
+// Module ID: 16791
+// Function ID: 16792
 // Name: updateTheme
-// Dependencies: [17, 1364, 14750, 2]
+// Dependencies: [17, 1370, 14002, 2]
 // Exports: updateTheme
 
-// Module 17433 (updateTheme)
-import _mod17 from "module_17" /* 17 */;
-import NativeThemeModuleDefault from "NativeThemeModule" /* 14750 */;
+// Module 16791 (updateTheme)
+import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_nativeDefault from "react-native" /* 14002 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
+const NativeModules = react_native.NativeModules;
 const result = size.fileFinishedImporting("modules/themes/native/updateTheme.tsx");
 
 export const updateTheme = function updateTheme(arg0) {
+  let updateThemeResult;
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    let updateThemeResult = NativeThemeModuleDefault.updateTheme(arg0);
+    const obj2 = react_nativeDefault;
+    updateThemeResult = obj2.updateTheme(arg0);
   } else {
     const DCDTheme = NativeModules.DCDTheme;
     updateThemeResult = DCDTheme.updateTheme(arg0);

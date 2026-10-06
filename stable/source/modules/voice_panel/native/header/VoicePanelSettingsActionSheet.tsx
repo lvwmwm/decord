@@ -1,28 +1,66 @@
-// Module ID: 17579
-// Function ID: 17580
+// Module ID: 16890
+// Function ID: 16891
 // Name: VoicePanelSettingsActionSheet
-// Dependencies: [19, 21, 4788, 7427, 6901, 7400, 17580, 2]
+// Dependencies: [19, 21, 4837, 558, 576, 16891, 6572, 6038, 6546, 2]
 
-// Module 17579 (VoicePanelSettingsActionSheet)
-import BottomSheetModal from "BottomSheetModal" /* 6901 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7400 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
-import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 17580 */;
-import noop from "module_19" /* 19 */;
+// Module 16890 (VoicePanelSettingsActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import BottomSheetModal from "BottomSheetModal" /* 6038 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 16891 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+let BottomSheet;
+
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ wrapper: { gap: 24 } });
-const size = fn(2);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channelId;
+  let guildId;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ guildId, channelId } = arg0);
+  const tmp4 = closure_4();
+  if (cResult[0] === channelId) {
+    let tmp5;
+    if (cResult[1] === guildId) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === tmp4.wrapper) {
+      let tmp7;
+      if (cResult[4] === tmp5) {
+        tmp7 = cResult[5];
+      }
+      return tmp7;
+    }
+    BottomSheet = tmp(6572).BottomSheet;
+    const BottomSheetScrollView = tmp(6038).BottomSheetScrollView;
+    const tmp9 = <BottomSheet startExpanded scrollable>{null}</BottomSheet>;
+    cResult[3] = tmp4.wrapper;
+    cResult[4] = tmp5;
+    cResult[5] = tmp9;
+    tmp7 = tmp9;
+  }
+  const tmp6 = jsx(VoicePanelSettingsOverviewDefault, { guildId, channelId });
+  cResult[0] = channelId;
+  cResult[1] = guildId;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0) => {
+  let channelId;
+  let guildId;
+  ({ guildId, channelId } = arg0);
+  const tmp = closure_4();
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
+  const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
+  return <BottomSheet startExpanded scrollable>{null}</BottomSheet>;
+}));
 const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelSettingsActionSheet.tsx");
 
-export default noop.memo(function VoicePanelSettingsActionSheet(arg0) {
-  ({ guildId, channelId } = arg0);
-  const obj = { startExpanded: true, scrollable: true, children: null };
-  const obj2 = { children: null };
-  const tmp = closure_4();
-  obj2.children = jsx(common_SafeAreaView.SafeAreaPaddingView, { bottom: true, style: closure_4().wrapper, children: jsx(VoicePanelSettingsOverviewDefault, { guildId, channelId }) });
-  obj.children = jsx(BottomSheetModal.BottomSheetScrollView, { children: null });
-  return jsx(Sheet_BottomSheet.BottomSheet, { startExpanded: true, scrollable: true, children: null });
-});
+export default memoResult;

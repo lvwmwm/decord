@@ -1,24 +1,55 @@
-// Module ID: 11494
-// Function ID: 11495
+// Module ID: 10733
+// Function ID: 10734
 // Name: Modal
-// Dependencies: [19, 21, 1612, 7277, 5931, 2]
-// Exports: Modal
+// Dependencies: [19, 21, 558, 576, 1619, 5991, 6421, 2]
 
-// Module 11494 (Modal)
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import NavigatorConstants from "NavigatorConstants" /* 5931 */;
-import Navigator from "Navigator" /* 7277 */;
-import noop from "module_19" /* 19 */;
+// Module 10733 (Modal)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import NavigatorConstants from "NavigatorConstants" /* 5991 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let tmp;
+const Navigator2 = tmp(6421);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(5);
+  const tmp4 = useSafeAreaInsetsDefault();
+  const sum = NavigatorConstants.NAV_BAR_HEIGHT + tmp4.top;
+  if (cResult[0] !== sum) {
+    const obj2 = { height: sum };
+    cResult[0] = sum;
+    cResult[1] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === arg0) {
+    let tmp7;
+    if (cResult[3] === tmp6) {
+      tmp7 = cResult[4];
+    }
+    return tmp7;
+  }
+  const Navigator = Navigator2.Navigator;
+  const merged = Object.assign(arg0);
+  const tmp9 = <Navigator headerStyle={tmp6} />;
+  cResult[2] = arg0;
+  cResult[3] = tmp6;
+  cResult[4] = tmp9;
+  tmp7 = tmp9;
+}) : ((arg0) => {
+  const tmp = useSafeAreaInsetsDefault();
+  const Navigator = Navigator2.Navigator;
+  const merged = Object.assign(arg0);
+  ({ height: NavigatorConstants.NAV_BAR_HEIGHT + tmp.top });
+  return <Navigator headerStyle={{ height: NavigatorConstants.NAV_BAR_HEIGHT + tmp.top }} />;
+});
 const result = size.fileFinishedImporting("design/components/Modal/native/Modal.native.tsx");
 
-export const Modal = function Modal(arg0) {
-  const obj = {};
-  const merged = Object.assign(arg0);
-  const tmp = useSafeAreaInsetsDefault();
-  obj.headerStyle = { height: NavigatorConstants.NAV_BAR_HEIGHT + useSafeAreaInsetsDefault().top };
-  return jsx(Navigator.Navigator, {});
-};
+export const Modal = tmp3;

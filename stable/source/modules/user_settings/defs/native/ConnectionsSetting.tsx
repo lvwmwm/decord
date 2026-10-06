@@ -1,31 +1,33 @@
-// Module ID: 15234
-// Function ID: 15235
+// Module ID: 14477
+// Function ID: 14478
 // Name: ConnectionsSetting
-// Dependencies: [1074, 11754, 1115, 15235, 15237, 2]
+// Dependencies: [1086, 10874, 1127, 14478, 14480, 2]
 
-// Module 15234 (ConnectionsSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 15235 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14477 (ConnectionsSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 14478 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["3fe7U5"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["3fe7U5"]);
   },
   parent: null,
   IconComponent: PuzzlePieceIcon.PuzzlePieceIcon,
   screen: {
-    route: Constants.UserSettingsSections.CONNECTIONS,
+    route: UserSettingsSections.CONNECTIONS,
     getComponent() {
       return require("ConnectionsSettingScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ConnectionsSetting.tsx");
 
 export default route;

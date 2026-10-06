@@ -1,13 +1,13 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 14764
+// Function ID: 14765
 // Name: GuildRoleSubscriptionTypeUtils
-// Dependencies: [15478, 1374, 1115, 2]
+// Dependencies: [14738, 1380, 1127, 2]
 // Exports: formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 15504 (GuildRoleSubscriptionTypeUtils)
-import util from "util" /* 1115 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15478 */;
+// Module 14764 (GuildRoleSubscriptionTypeUtils)
+import intl5 from "intl" /* 1127 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14738 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;
@@ -15,49 +15,55 @@ const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionTypeUtils.tsx");
 
 export const getBenefitKey = function getBenefitKey(id) {
+  let combined;
   if ("roles" in id) {
     const _HermesInternal2 = HermesInternal;
-    let combined = "emoji-" + id.id;
+    combined = "emoji-" + id.id;
   } else {
     const _HermesInternal = HermesInternal;
     combined = "" + id.ref_type + "-" + id.emoji_id + "-" + id.name + "-" + id.ref_id;
   }
   return combined;
 };
-export const formatPlanInterval = function formatPlanInterval(first2) {
-  const interval = first2.interval;
-  const intl = util.intl;
+export const formatPlanInterval = function formatPlanInterval(merged) {
+  let cuSp8Q;
+  const interval = merged.interval;
+  const count = merged.interval_count;
+  const intl = intl5.intl;
+  const format = intl.format;
   if (SubscriptionIntervalTypes.DAY === interval) {
-    let cuSp8Q = tmp(1115).t["3rUmPQ"];
-  } else if (tmp3.MONTH === interval) {
-    cuSp8Q = tmp(1115).t.zuN545;
-  } else if (tmp3.YEAR === interval) {
-    cuSp8Q = tmp(1115).t.cuSp8Q;
+    cuSp8Q = tmp(1127).t["3rUmPQ"];
+  } else if (SubscriptionIntervalTypes.MONTH === interval) {
+    cuSp8Q = tmp(1127).t.zuN545;
+  } else if (SubscriptionIntervalTypes.YEAR === interval) {
+    cuSp8Q = tmp(1127).t.cuSp8Q;
   }
-  return intl.format(cuSp8Q, { count: first2.interval_count });
+  return format(cuSp8Q, { count });
 };
 export const formatPlanIntervalDuration = function formatPlanIntervalDuration(interval) {
+  let interval_count;
   ({ interval, interval_count } = interval);
   if (SubscriptionIntervalTypes.DAY === interval) {
     if (interval_count > 0) {
+      let formatToPlainStringResult;
       if (interval_count % 7 === 0) {
-        const intl4 = util.intl;
+        const intl4 = intl5.intl;
         const obj2 = { weeks: interval_count / 7 };
-        let formatToPlainStringResult = intl4.formatToPlainString(util.t.iVZYyl, obj2);
+        formatToPlainStringResult = intl4.formatToPlainString(intl5.t.iVZYyl, obj2);
       }
       return formatToPlainStringResult;
     }
-    const intl3 = util.intl;
+    const intl3 = intl5.intl;
     const obj3 = { days: interval_count };
-    formatToPlainStringResult = intl3.formatToPlainString(util.t.jzH70Z, obj3);
-  } else if (tmp.MONTH === interval) {
-    const intl2 = util.intl;
+    formatToPlainStringResult = intl3.formatToPlainString(intl5.t.jzH70Z, obj3);
+  } else if (SubscriptionIntervalTypes.MONTH === interval) {
+    const intl2 = intl5.intl;
     const obj4 = { months: interval_count };
-    return intl2.formatToPlainString(util.t.erUSmA, obj4);
-  } else if (tmp.YEAR === interval) {
-    const intl = util.intl;
+    return intl2.formatToPlainString(intl5.t.erUSmA, obj4);
+  } else if (SubscriptionIntervalTypes.YEAR === interval) {
+    const intl = intl5.intl;
     const obj = { years: interval_count };
-    return intl.formatToPlainString(util.t.IfYQVC, obj);
+    return intl.formatToPlainString(intl5.t.IfYQVC, obj);
   }
 };
 export const isChannelBenefit = function isChannelBenefit(ref_type) {

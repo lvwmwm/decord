@@ -1,34 +1,35 @@
-// Module ID: 13561
-// Function ID: 13562
+// Module ID: 12803
+// Function ID: 12804
 // Name: SpotifyApplicationRecord
-// Dependencies: [2002, 5532, 2]
+// Dependencies: [2009, 5596, 2]
 
-// Module 13561 (SpotifyApplicationRecord)
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import Platforms from "Platforms" /* 5532 */;
+// Module 12803 (SpotifyApplicationRecord)
+import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+import Platforms from "Platforms" /* 5596 */;
+import size from "module_2" /* 2 */;
 
+let tmp2;
 const spotify = "spotify";
 const value = Platforms.get("spotify");
-let closure_1 = value;
-class SpotifyApplicationRecord extends tmp4 {
+const map = value;
+class SpotifyApplicationRecord extends ApplicationRecord {
   constructor() {
-    tmp1 = new tmp({}, new.target, tmp);
-    tmp1.id = spotify;
-    tmp1.name = closure_1.name;
-    return tmp1;
+    const tmp2 = new tmp({}, new.target, tmp);
+    tmp2.id = spotify;
+    tmp2.name = map.name;
+    return tmp2;
+  }
+  getIconURL() {
+    return map.icon.lightPNG;
+  }
+  getWhiteIconURL() {
+    return map.icon.whitePNG;
   }
 }
 const prototype = SpotifyApplicationRecord.prototype;
-prototype["getIconURL"] = function getIconURL() {
-  return value.icon.lightPNG;
-};
-prototype["getWhiteIconURL"] = function getWhiteIconURL() {
-  return value.icon.whitePNG;
-};
 const tmp6 = new "getWhiteIconURL"({}, tmp2, tmp);
 tmp6.id = "spotify";
 tmp6.name = value.name;
-const size = fn(2);
 const result = size.fileFinishedImporting("records/SpotifyApplicationRecord.tsx");
 
 export default SpotifyApplicationRecord;

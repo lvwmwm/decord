@@ -1,21 +1,23 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 12502
+// Function ID: 12503
 // Name: GuildProductLinkActionCreators
-// Dependencies: [5141, 1115, 2]
+// Dependencies: [5205, 1127, 2]
 // Exports: openGuildProductLink
 
-// Module 13266 (GuildProductLinkActionCreators)
-import util from "util" /* 1115 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+// Module 12502 (GuildProductLinkActionCreators)
+import intl3 from "intl" /* 1127 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_products/GuildProductLinkActionCreators.native.tsx");
 
 export const openGuildProductLink = function openGuildProductLink() {
-  const obj2 = { body: null, confirmText: null };
-  const intl = util.intl;
-  obj2.body = intl.string(util.t["mYlo/T"]);
-  const intl2 = util.intl;
-  obj2.confirmText = intl2.string(util.t.BddRzS);
-  actions_AlertActionCreatorsDefault.show(obj2);
+  let intl;
+  let intl2;
+  const obj = { body: intl.string(intl3.t["mYlo/T"]), confirmText: intl2.string(intl3.t.BddRzS) };
+  const show = actions_AlertActionCreatorsDefault.show;
+  actions_AlertActionCreatorsDefault;
+  intl = intl3.intl;
+  intl2 = intl3.intl;
+  show(obj);
 };

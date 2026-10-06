@@ -1,29 +1,36 @@
-// Module ID: 8228
-// Function ID: 8229
+// Module ID: 7384
+// Function ID: 7385
 // Name: GuildAutomodMessageStore
-// Dependencies: [2041, 5008, 1074, 8108, 8229, 5010, 7782, 11, 504, 573, 2]
+// Dependencies: [2051, 5057, 1086, 7257, 7385, 5059, 6932, 11, 504, 585, 2]
 
-// Module 8228 (GuildAutomodMessageStore)
+// Module 7384 (GuildAutomodMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7782 */;
-import MessageQueue from "MessageQueue" /* 8108 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8229 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MessageStore from "MessageStore" /* 5008 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5059 */;
+import AutomodMessageUtils from "AutomodMessageUtils" /* 6932 */;
+import MessageQueue from "MessageQueue" /* 7257 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 7385 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MessageStore from "MessageStore" /* 5057 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
 function handleMessageSendFailedAutomod(messageData) {
+  let obj3;
+  let obj4;
   messageData = messageData.messageData;
-  const failedMessageId = MessageQueue.getFailedMessageId(messageData);
-  const obj2 = { id: failedMessageId, isBlockedEdit: null, messageData: null, errorMessage: null };
-  obj2.isBlockedEdit = MessageQueue.isMessageDataEdit(messageData);
-  obj2.messageData = messageData;
-  obj2.errorMessage = AutomodErrorUtils.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
-  closure_8[failedMessageId] = obj2;
+  const errorResponseBody = messageData.errorResponseBody;
+  const obj = MessageQueue;
+  const failedMessageId = obj.getFailedMessageId(messageData);
+  const obj2 = { id: failedMessageId, isBlockedEdit: obj3.isMessageDataEdit(messageData), messageData, errorMessage: obj4.getAutomodErrorMessage(messageData, errorResponseBody) };
+  obj3 = MessageQueue;
+  automodFailedMessages[failedMessageId] = obj2;
   closure_9 = closure_9 + 1;
+  obj4 = AutomodErrorUtils;
   return true;
 }
 function handleLoadMessages(messages) {
@@ -45,8 +52,11 @@ function handleLoadMessages(messages) {
         }
         let tmp3 = acc;
         if (someResult) {
+          let id;
           if (null == acc) {
-            const id = type.id;
+            id = type.id;
+          } else {
+            SnowflakeUtilsDefault;
           }
           tmp3 = id;
         }
@@ -57,62 +67,63 @@ function handleLoadMessages(messages) {
     }, lastIncidentAlertMessage[guildId]);
     let flag = null != reduced && tmp2[guildId] !== reduced;
     if (flag) {
-      tmp2[guildId] = reduced;
+      lastIncidentAlertMessage[guildId] = reduced;
       flag = true;
     }
     return flag;
   }
 }
-const Constants = fn(1074);
-({ AbortCodes: hasOwnProperty, MessageEmbedTypes: metroRequire, MessageTypes: closure_7 } = Constants);
-const automodFailedMessages = {};
+({ AbortCodes: hasOwnProperty, MessageEmbedTypes: metroRequire, MessageTypes: metroImportDefault } = Constants);
+const metroImportAll = {};
 let closure_9 = 0;
-const mentionRaidDetectionByGuild = {};
-const lastIncidentAlertMessage = {};
-const PersistedStore = initializeDefault.PersistedStore;
+const authStore = {};
+const unpackModuleId = {};
+const PersistedStore = get_initializedDefault.PersistedStore;
 class GuildAutomodMessageStore extends PersistedStore {
+  initialize(arg0) {
+    let closure_10;
+    let closure_8;
+    this.waitFor(ChannelStore, MessageStore);
+    if (null != arg0) {
+      ({ automodFailedMessages: closure_8, mentionRaidDetectionByGuild: closure_10 } = arg0);
+    }
+  }
+  getState() {
+    return { automodFailedMessages, mentionRaidDetectionByGuild, lastIncidentAlertMessage };
+  }
+  getMessage(arg0) {
+    let tmp = null;
+    if (null != arg0) {
+      let tmp3 = automodFailedMessages[arg0];
+      if (tmp3 == null) {
+        tmp3 = null;
+      }
+      tmp = tmp3;
+    }
+    return tmp;
+  }
+  getMessagesVersion() {
+    return closure_9;
+  }
+  getMentionRaidDetected(arg0) {
+    let tmp = mentionRaidDetectionByGuild[arg0];
+    if (tmp == null) {
+      tmp = null;
+    }
+    return tmp;
+  }
+  getLastIncidentAlertMessage(arg0) {
+    let tmp = lastIncidentAlertMessage[arg0];
+    if (tmp == null) {
+      tmp = null;
+    }
+    return tmp;
+  }
 }
 const prototype = GuildAutomodMessageStore.prototype;
-prototype["initialize"] = function initialize(arg0) {
-  this.waitFor(ChannelStore, MessageStore);
-  if (null != arg0) {
-    ({ automodFailedMessages: closure_8, mentionRaidDetectionByGuild: closure_10 } = arg0);
-  }
-};
-prototype["getState"] = function getState() {
-  return { automodFailedMessages, mentionRaidDetectionByGuild, lastIncidentAlertMessage };
-};
-prototype["getMessage"] = function getMessage(arg0) {
-  let tmp = null;
-  if (null != arg0) {
-    let tmp3 = automodFailedMessages[arg0];
-    if (tmp3 == null) {
-      tmp3 = null;
-    }
-    tmp = tmp3;
-  }
-  return tmp;
-};
-prototype["getMessagesVersion"] = function getMessagesVersion() {
-  return closure_9;
-};
-prototype["getMentionRaidDetected"] = function getMentionRaidDetected(arg0) {
-  let tmp = mentionRaidDetectionByGuild[arg0];
-  if (tmp == null) {
-    tmp = null;
-  }
-  return tmp;
-};
-prototype["getLastIncidentAlertMessage"] = function getLastIncidentAlertMessage(arg0) {
-  let tmp = lastIncidentAlertMessage[arg0];
-  if (tmp == null) {
-    tmp = null;
-  }
-  return tmp;
-};
 GuildAutomodMessageStore.displayName = "GuildAutomodMessageStore";
 GuildAutomodMessageStore.persistKey = "GuildAutomodMessages";
-const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault, {
+let obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let flag = 0 !== Object.keys(closure_8).length;
     if (flag) {
@@ -125,23 +136,27 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
   LOAD_MESSAGES_SUCCESS: handleLoadMessages,
   LOCAL_MESSAGES_LOADED: handleLoadMessages,
   MESSAGE_CREATE: function handleIncidentAlertMessageCreate(arg0) {
+    let guildId;
+    let message;
     ({ guildId, message } = arg0);
     if (null == guildId) {
       return false;
-    } else if (message.type !== constants2.AUTO_MODERATION_ACTION) {
+    } else if (message.type !== metroImportDefault.AUTO_MODERATION_ACTION) {
       return false;
     } else {
-      const messageRecord = MessageRecordUtils.createMessageRecord(message);
+      const obj = MessageRecordUtils;
+      const messageRecord = obj.createMessageRecord(message);
+      const obj2 = AutomodMessageUtils;
+      let result = obj2.isAutomodMessageRecord(messageRecord);
       const tmp = require;
-      let result = AutomodMessageUtils.isAutomodMessageRecord(messageRecord);
       if (result) {
-        let flag = tmp(7782).isAutomodNotification(messageRecord);
+        const tmpResult = tmp(6932);
+        let flag = tmpResult.isAutomodNotification(messageRecord);
         if (flag) {
-          closure_11[guildId] = messageRecord.id;
+          lastIncidentAlertMessage[guildId] = messageRecord.id;
           flag = true;
         }
         result = flag;
-        const tmpResult = tmp(7782);
       }
       return result;
     }
@@ -152,16 +167,17 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
     message = message.message;
     let flag = null != message;
     if (flag) {
-      const obj = { id: message.id, messageData: "PX_16", isBlockedEdit: null, errorMessage: tmp };
-      closure_8[message.id] = obj;
+      const obj = { id: message.id, messageData: "Reflect", isBlockedEdit: null, errorMessage: tmp };
+      automodFailedMessages[message.id] = obj;
       closure_9 = closure_9 + 1;
       flag = true;
     }
     return flag;
   },
-  REMOVE_AUTOMOD_MESSAGE_NOTICE: function handleMessageNoticeRemove(arg0) {
-    if (null != automodFailedMessages[arg0.messageId]) {
-      delete tmp[tmp2];
+  REMOVE_AUTOMOD_MESSAGE_NOTICE: function handleMessageNoticeRemove(messageId) {
+    messageId = messageId.messageId;
+    if (null != automodFailedMessages[messageId]) {
+      delete automodFailedMessages[messageId];
     }
     closure_9 = closure_9 + 1;
     return true;
@@ -174,7 +190,7 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
     }
     if (null == body) {
       return false;
-    } else if (response.body.code === constants.AUTOMOD_MESSAGE_BLOCKED) {
+    } else if (response.body.code === hasOwnProperty.AUTOMOD_MESSAGE_BLOCKED) {
       return false;
     } else {
       const id = response.body.id;
@@ -182,7 +198,7 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
         return false;
       } else {
         if (null != automodFailedMessages[id]) {
-          delete tmp[tmp2];
+          delete automodFailedMessages[id];
         }
         closure_9 = closure_9 + 1;
       }
@@ -190,15 +206,15 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
   },
   AUTO_MODERATION_MENTION_RAID_DETECTION: function handleMentionRaidDetection(decisionId) {
     const guildId = decisionId.guildId;
-    closure_10[guildId] = { guildId, decisionId: decisionId.decisionId, suspiciousMentionActivityUntil: decisionId.suspiciousMentionActivityUntil };
+    mentionRaidDetectionByGuild[guildId] = { guildId, decisionId: decisionId.decisionId, suspiciousMentionActivityUntil: decisionId.suspiciousMentionActivityUntil };
     return true;
   },
   AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: function handleMentionRaidNoticeDismiss(arg0) {
-    delete tmp[tmp2];
+    delete mentionRaidDetectionByGuild[arg0.guildId];
     return true;
   }
-});
-const size = fn(2);
+};
+const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStore.tsx");
 
 export default guildAutomodMessageStore;

@@ -1,108 +1,117 @@
-// Module ID: 9092
-// Function ID: 9093
+// Module ID: 8239
+// Function ID: 8240
 // Name: CollectiblesWishlistItemRecord
-// Dependencies: [7821, 7820, 1971, 7822, 7823, 5760, 9091, 1074, 1973, 2]
+// Dependencies: [6971, 6970, 1978, 6972, 6973, 5824, 8238, 1086, 1980, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 9092 (CollectiblesWishlistItemRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7821 */;
-import NameplateRecord from "NameplateRecord" /* 1971 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7822 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7823 */;
-import SKURecord from "SKURecord" /* 5760 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9091 */;
+// Module 8239 (CollectiblesWishlistItemRecord)
+import Constants from "Constants" /* 1086 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 6970 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6971 */;
+import NameplateRecord from "NameplateRecord" /* 1978 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 6972 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 6973 */;
+import SKURecord from "SKURecord" /* 5824 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8238 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function createCollectiblesItemFromServerResponse(collectibles_item) {
   const type = collectibles_item.type;
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     return AvatarDecorationRecord.fromServer(collectibles_item);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
     return ProfileEffectRecord.fromServer(collectibles_item);
-  } else if (tmp(1973).CollectiblesItemType.NAMEPLATE === type) {
+  } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
     return NameplateRecord.fromServer(collectibles_item);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
     return ProfileFrameRecord.fromServer(collectibles_item);
   } else {
     return null;
   }
 }
-let closure_3 = fn(7820).transformSKUToCollectiblesItem;
-const SKUProductLines = fn(1074).SKUProductLines;
-const prototype = function CollectiblesWishlistItemRecord(bundle_items) {
-  const tmp2 = new prototype(bundle_items, tmp);
-  tmp2.skuProductLine = SKUProductLines.COLLECTIBLES;
-  if (null != bundle_items.bundle_items) {
-    const items = [];
-    bundle_items = bundle_items.bundle_items;
-    const tmp16 = bundle_items[Symbol.iterator]();
-    while (tmp16 !== undefined) {
-      let tmp21 = createCollectiblesItemFromServerResponse(tmp18);
-      if (null != tmp21) {
-        let arr = items.push(tmp22);
+const _false = CollectiblesItemRecord.transformSKUToCollectiblesItem;
+const SKUProductLines = Constants.SKUProductLines;
+class CollectiblesWishlistItemRecord extends BaseWishlistItemRecord {
+  constructor(bundle_items) {
+    const tmp2 = new CollectiblesWishlistItemRecord(bundle_items, tmp);
+    tmp2.skuProductLine = SKUProductLines.COLLECTIBLES;
+    if (null != bundle_items.bundle_items) {
+      const items = [];
+      bundle_items = bundle_items.bundle_items;
+      const tmp12 = bundle_items[Symbol.iterator]();
+      while (tmp12 !== undefined) {
+        let tmp17 = createCollectiblesItemFromServerResponse(tmp14);
+        if (null != tmp17) {
+          let arr = items.push(tmp18);
+        }
+        continue;
       }
-      continue;
+      if (0 === items.length) {
+        const _Error3 = Error;
+        const self5 = this;
+        const self6 = this;
+        const error = new Error("Bundle has no valid items");
+        throw error;
+      } else {
+        tmp2.bundleItems = items;
+      }
+    } else if (null != bundle_items.collectibles_item) {
+      const tmp7 = createCollectiblesItemFromServerResponse(bundle_items.collectibles_item);
+      if (null == tmp7) {
+        const _Error2 = Error;
+        const self3 = this;
+        const self4 = this;
+        const error1 = new Error("Collectibles item not found");
+        throw error1;
+      } else {
+        tmp2.collectiblesItem = tmp7;
+      }
+    } else if (!bundle_items.skipValidation) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error2 = new Error("Collectibles wishlist item missing both collectibles_item and bundle_items");
+      throw error2;
     }
-    if (0 === items.length) {
-      const _Error3 = Error;
-      const error = new Error("Bundle has no valid items");
-      throw error;
-    } else {
-      tmp2.bundleItems = items;
-    }
-  } else if (null != bundle_items.collectibles_item) {
-    const tmp9 = createCollectiblesItemFromServerResponse(bundle_items.collectibles_item);
-    if (null == tmp9) {
-      const _Error2 = Error;
-      const error1 = new Error("Collectibles item not found");
-      throw error1;
-    } else {
-      tmp2.collectiblesItem = tmp9;
-    }
-  } else if (!bundle_items.skipValidation) {
-    const _Error = Error;
-    const error2 = new Error("Collectibles wishlist item missing both collectibles_item and bundle_items");
-    throw error2;
+    return tmp2;
   }
-  return tmp2;
-}.prototype;
-class prototype extends tmp2 {
+  static fromServer(sku) {
+    let fromServer;
+    const obj = { sku: fromServer };
+    const merged = Object.assign(sku);
+    fromServer = undefined;
+    const tmp = CollectiblesWishlistItemRecord;
+    if (null != sku.sku) {
+      fromServer = SKURecord.createFromServer(sku.sku);
+    }
+    return new tmp(obj);
+  }
+  static fromSKU(id) {
+    const tmp = closure_3(id);
+    if (null == tmp) {
+      return null;
+    } else {
+      const self = this;
+      const obj = { sku_id: id.id, sku_product_line: SKUProductLines.COLLECTIBLES, sku_name: id.name, sku: id, skipValidation: true };
+      const tmp7 = new CollectiblesWishlistItemRecord(obj);
+      let item;
+      if ("single" === tmp.type) {
+        item = tmp.item;
+      }
+      tmp7.collectiblesItem = item;
+      let items;
+      if ("bundle" === tmp.type) {
+        items = tmp.items;
+      }
+      tmp7.bundleItems = items;
+      return tmp7;
+    }
+  }
 }
-prototype["fromServer"] = function fromServer(sku) {
-  const obj = {};
-  const merged = Object.assign(sku);
-  let fromServer;
-  if (null != sku.sku) {
-    fromServer = SKURecord.createFromServer(sku.sku);
-  }
-  obj.sku = fromServer;
-  return new prototype(obj);
-};
-prototype["fromSKU"] = function fromSKU(id) {
-  const tmp = closure_3(id);
-  if (null == tmp) {
-    return null;
-  } else {
-    const obj = { sku_id: id.id, sku_product_line: SKUProductLines.COLLECTIBLES, sku_name: id.name, sku: id, skipValidation: true };
-    const tmp8 = new prototype(obj);
-    let item;
-    if ("single" === tmp.type) {
-      item = tmp.item;
-    }
-    tmp8.collectiblesItem = item;
-    let items;
-    if ("bundle" === tmp.type) {
-      items = tmp.items;
-    }
-    tmp8.bundleItems = items;
-    return tmp8;
-  }
-};
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/wishlists/records/CollectiblesWishlistItemRecord.tsx");
 
-export default prototype;
+export default CollectiblesWishlistItemRecord;
 export const isCollectiblesWishlistItemRecord = function isCollectiblesWishlistItemRecord(arg0) {
-  return arg0 instanceof prototype;
+  return arg0 instanceof CollectiblesWishlistItemRecord;
 };

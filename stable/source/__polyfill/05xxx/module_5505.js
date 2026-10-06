@@ -1,49 +1,87 @@
 // Module ID: 5505
 // Function ID: 5506
-// Dependencies: [5482, 5483, 5462]
+// Dependencies: [5499, 5500]
+// Exports: isAVIF, isBMP, isBPG, isCR2, isEXR, isGIF, isHEIC, isICO, isJPEG, isPBM, isPGM, isPNG, isPPM, isPSD, isWEBP
 
 // Module 5505
-import _mod5462 from "module_5462" /* 5462 */;
-import get0thIfdOffset from "get0thIfdOffset" /* 5482 */;
-import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 5483 */;
+import _mod5499 from "module_5499" /* 5499 */;
+import _mod5500 from "module_5500" /* 5500 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export default {
-  read(byteLength, sum, arg2, byteOrder, arg4) {
-    const ifd = get0thIfdOffset.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_CANON, sum, sum + arg2, byteOrder, arg4);
-    let tmp6 = ifd;
-    if (ifd.ShotInfo) {
-      value = ifd.ShotInfo.value;
-      const obj2 = {};
-      if (undefined !== value[27]) {
-        const obj3 = { value: value[27], description: null };
-        let str = "None";
-        if (0 !== value[27]) {
-          let str2 = "Rotate 90 CW";
-          if (1 !== tmp7) {
-            let str3 = "Rotate 180";
-            if (2 !== tmp7) {
-              let str4 = "Unknown";
-              if (3 === tmp7) {
-                str4 = "Rotate 270 CW";
-              }
-              str3 = str4;
-            }
-            str2 = str3;
-          }
-          str = str2;
-        }
-        obj3.description = str;
-        obj2.AutoRotate = obj3;
-      }
-      const tmp3Result = _mod5462;
-      delete tmp[tmp2];
-      tmp6 = _mod5462.objectAssign({}, ifd, obj2);
-      const objectAssignResult = _mod5462.objectAssign({}, ifd, obj2);
-    }
-    return tmp6;
-  },
-  SHOT_INFO_AUTO_ROTATE: 27
+export const isAVIF = function isAVIF(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "avif") && _mod5499.isAvifStringIncluded(fileChunk);
+  return tmp4;
+};
+export const isBMP = function isBMP(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "bmp");
+};
+export const isBPG = function isBPG(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "bpg");
+};
+export const isCR2 = function isCR2(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "cr2");
+};
+export const isEXR = function isEXR(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "exr");
+};
+export const isGIF = function isGIF(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "gif");
+};
+export const isHEIC = function isHEIC(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "avif") && _mod5499.isHeicSignatureIncluded(fileChunk);
+  return tmp4;
+};
+export const isICO = function isICO(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ico");
+};
+export const isJPEG = function isJPEG(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "jpeg");
+};
+export const isPBM = function isPBM(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pbm");
+};
+export const isPGM = function isPGM(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pgm");
+};
+export const isPNG = function isPNG(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "png");
+};
+export const isPPM = function isPPM(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ppm");
+};
+export const isPSD = function isPSD(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "psd");
+};
+export const isWEBP = function isWEBP(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "webp");
 };

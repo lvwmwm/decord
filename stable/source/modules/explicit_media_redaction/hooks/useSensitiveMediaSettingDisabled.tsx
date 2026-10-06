@@ -1,15 +1,19 @@
-// Module ID: 15109
-// Function ID: 15110
+// Module ID: 14352
+// Function ID: 14353
 // Name: useSensitiveMediaSettingDisabled
-// Dependencies: [15098, 2]
+// Dependencies: [558, 14341, 2]
 // Exports: useSensitiveMediaSettingDisabled
 
-// Module 15109 (useSensitiveMediaSettingDisabled)
-import useParentalControlSettings from "useParentalControlSettings" /* 15098 */;
+// Module 14352 (useSensitiveMediaSettingDisabled)
+import useParentalControlSettings from "useParentalControlSettings" /* 14341 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useSensitiveMediaSettingDisabled.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useSensitiveMediaSettingDisabled.tsx");
 
-export const useSensitiveMediaSettingDisabled = function useSensitiveMediaSettingDisabled() {
-  return useParentalControlSettings.useIsParentallyControlled();
+export const useSensitiveMediaSettingDisabled = () => {
+  const obj = useParentalControlSettings;
+  return obj.useIsParentallyControlled();
 };

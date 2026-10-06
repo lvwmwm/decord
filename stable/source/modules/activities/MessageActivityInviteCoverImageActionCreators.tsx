@@ -1,16 +1,19 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 12814
+// Function ID: 12815
 // Name: MessageActivityInviteCoverImageActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: setCoverImageURL
 
-// Module 13572 (MessageActivityInviteCoverImageActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 12814 (MessageActivityInviteCoverImageActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/MessageActivityInviteCoverImageActionCreators.tsx");
 
 export const setCoverImageURL = function setCoverImageURL(arg0) {
+  let coverImageURL;
+  let messageId;
   ({ messageId, coverImageURL } = arg0);
-  DispatcherDefault.dispatch({ type: "SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL", messageId, coverImageURL });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL", messageId, coverImageURL });
 };

@@ -1,10 +1,10 @@
-// Module ID: 1084
-// Function ID: 1085
+// Module ID: 1096
+// Function ID: 1097
 // Name: UserSettingsConstants
 // Dependencies: [2]
 // Exports: createEmptyEditInfo
 
-// Module 1084 (UserSettingsConstants)
+// Module 1096 (UserSettingsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsConstants.tsx");
@@ -12,7 +12,7 @@ const result = size.fileFinishedImporting("modules/user_settings/UserSettingsCon
 export const MAX_FAVORITES = 250;
 export const MAX_FAVORITE_GIFS_SIZE = 762880;
 export const MuteUntilSeconds = { MINUTES_15: 900, [900]: "MINUTES_15", HOURS_1: 3600, [3600]: "HOURS_1", HOURS_3: 10800, [10800]: "HOURS_3", HOURS_8: 28800, [28800]: "HOURS_8", HOURS_24: 86400, [86400]: "HOURS_24", ALWAYS: -1, [-1]: "ALWAYS" };
-export const SettingsOverrideReasonKeys = { REDUCED_MOTION: "REDUCED_MOTION", REDUCED_MOTION_STICKERS: "REDUCED_MOTION_STICKERS" };
+export const SettingsOverrideReasonKeys = { REDUCED_MOTION: "REDUCED_MOTION", REDUCED_MOTION_STICKERS: "REDUCED_MOTION_STICKERS", GAME_MODE: "GAME_MODE" };
 export const ListDensityMode = { AUTO: "auto", COMPACT: "compact", COZY: "cozy" };
 export const FontScales = [0.75, 0.875, 0.9375, 1, 1.125, 1.25, 1.5, 1.75, 2];
 export const ROLE_SUBSCRIPTION_SUBSECTION = "ROLE_SUBSCRIPTIONS";
@@ -23,8 +23,7 @@ export const UserSettingsTypes = { PRELOADED_USER_SETTINGS: 1, [1]: "PRELOADED_U
 export const PrivacySettingSurfaces = { USER_SETTINGS_PRIVACY_SAFETY: "user_settings_privacy_safety", USER_SETTINGS_ACTIVITY_PRIVACY: "user_settings_activity_privacy", SERVER_PRIVACY_MODAL: "server_privacy_modal" };
 export const UserSettingsDelay = { INFREQUENT_USER_ACTION: 0, [0]: "INFREQUENT_USER_ACTION", FREQUENT_USER_ACTION: 10, [10]: "FREQUENT_USER_ACTION", SLOW_USER_ACTION: 20, [20]: "SLOW_USER_ACTION", AUTOMATED: 30, [30]: "AUTOMATED", DAILY: 86400, [86400]: "DAILY" };
 export const createEmptyEditInfo = function createEmptyEditInfo() {
-  const obj = { protoToSave: "Array", timeout: "PX_16", timeoutDelay: Number.MIN_SAFE_INTEGER, rateLimited: null, cleanupFuncs: [], errorCallbacks: [], loaded: false, loading: "call", triggeredMigrations: "<string:3055951443>", offlineEditDataVersion: "<string:1090578830>" };
-  return obj;
+  return { protoToSave: "Array", timeout: "Reflect", timeoutDelay: Number.MIN_SAFE_INTEGER, rateLimited: null, cleanupFuncs: [], errorCallbacks: [], loaded: false, loading: "__initData", triggeredMigrations: "packsDatabase", offlineEditDataVersion: "Promise" };
 };
 export const UserSettingsPath = { ACCOUNT: "account", ACCOUNT_STANDING: "account-standing", ACCOUNT_ACCOUNT_STANDING: "account/account-standing", PROFILE_CUSTOMIZATION: "profile-customization", CONTENT_AND_SOCIAL: "content-and-social", CONNECTED_GAMES: "connected-games", CONTENT_AND_SOCIAL_CONNECTED_GAMES: "content-and-social/connected-games", DATA_AND_PRIVACY: "data-and-privacy", PRIVACY_AND_SAFETY: "privacy-and-safety", FAMILY_CENTER: "family-center", SESSIONS: "sessions", AUTHORIZED_APPS: "authorized-apps", CONNECTIONS: "connections", CLIPS: "clips", PREMIUM: "premium", GUILD_BOOSTING: "guild-boosting", SUBSCRIPTIONS: "subscriptions", SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS: "subscriptions/role-subscriptions", INVENTORY: "inventory", BILLING: "billing", APPEARANCE: "appearance", ACCESSIBILITY: "accessibility", VOICE: "voice", POGGERMODE: "poggermode", TEXT: "text", NOTIFICATIONS: "notifications", EMAILS: "emails", NOTIFICATIONS_EMAILS: "notifications/emails", KEYBINDS: "keybinds", SYSTEM: "system", LANGUAGE: "language", WINDOWS: "windows", LINUX: "linux", STREAMER_MODE: "streamer-mode", ADVANCED: "advanced", ACTIVITY_PRIVACY: "activity-privacy", REGISTERED_GAMES: "registered-games", OVERLAY: "overlay", EXPERIMENTS: "experiments", DEVELOPER_OPTIONS: "developer-options" };
 export const ChangeEmailSteps = { CONFIRM_START: 0, [0]: "CONFIRM_START", CONFIRM_CODE: 1, [1]: "CONFIRM_CODE", CHANGE_EMAIL_REASONS: 2, [2]: "CHANGE_EMAIL_REASONS", CHANGE_EMAIL_WARNING: 3, [3]: "CHANGE_EMAIL_WARNING", EMAIL_AND_PASSWORD: 4, [4]: "EMAIL_AND_PASSWORD", COMPLETE: 5, [5]: "COMPLETE" };

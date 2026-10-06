@@ -1,31 +1,61 @@
-// Module ID: 15856
-// Function ID: 15857
+// Module ID: 15117
+// Function ID: 15118
 // Name: ShowDevWidgetSetting
-// Dependencies: [7987, 15857, 504, 11754, 15858, 15123, 2]
+// Dependencies: [7136, 15118, 558, 576, 504, 10874, 15119, 14366, 2]
 
-// Module 15856 (ShowDevWidgetSetting)
-import initialize from "initialize" /* 504 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 15857 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7987 */;
+// Module 15117 (ShowDevWidgetSetting)
+import react from "react" /* 576 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14366 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 15118 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15119 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7136 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
+let tmp;
+const get_initialized = tmp(504);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let showDevWidget;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [DevToolsSettingsStore];
+    const fn = function n() {
+      return showDevWidget.showDevWidget;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let showDevWidget;
+  const items = [DevToolsSettingsStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => showDevWidget.showDevWidget);
+});
+let obj = {
   useTitle() {
     return "Show Dev Tools Widget";
   },
   parent: null,
-  IconComponent: fn(15858).StaffBadgeIcon,
+  IconComponent: StaffBadgeIcon.StaffBadgeIcon,
   onValueChange: function handleShowDevWidgetSettingToggle(showDevWidget) {
-    const result = DevToolsActionCreators.updateDevToolsSettings({ showDevWidget });
+    const obj = DevToolsActionCreators;
+    const obj2 = { showDevWidget };
+    const result = obj.updateDevToolsSettings(obj2);
   },
-  useValue: function useShowDevWidgetSettingToggleValue() {
-    const items = [DevToolsSettingsStore];
-    return initialize.useStateFromStores(items, () => showDevWidget.showDevWidget);
-  },
-  usePredicate: fn(15123).useStaffOrDeveloperSettingPredicate
-});
-const size = fn(2);
+  useValue: tmp2,
+  usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/ShowDevWidgetSetting.tsx");
 
 export default toggle;

@@ -1,53 +1,77 @@
 // Module ID: 1864
 // Function ID: 1865
-// Dependencies: [19, 21, 1856, 1857, 1862, 1829, 1855]
+// Dependencies: [19, 17, 21, 1838]
 // Exports: default
 
 // Module 1864
-import _mod1829 from "module_1829" /* 1829 */;
-import disabledDefault from "disabled" /* 1856 */;
-import _modDef1857 from "module_1857" /* 1857 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 
-require = fn;
-fn(19).useCallback;
-const jsx = fn(21).jsx;
+let RN;
 
-export default function _default(icon) {
-  ({ children, onPress } = icon);
-  ({ disabled, button } = icon);
-  ({ rippleRadius, style } = icon);
-  if (button === undefined) {
-    button = disabledDefault;
+let StyleSheet;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let items;
+let items1;
+let items2;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+const useMemo = react2.useMemo;
+({ Animated: c3, StyleSheet, View: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const size = { width: 13, height: 2, borderRadius: 1 };
+const size1 = { marginHorizontal: 5, width: 30, height: 30, justifyContent: "center", alignItems: "center" };
+let obj = { arrowUpContainer: size1, arrowDownContainer: obj2, arrow: { width: 20, height: 20, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, arrowLeftLine: obj3, arrowRightLine: obj4 };
+obj2 = { transform: items };
+const create = StyleSheet.create;
+const merged = Object.assign(size1);
+items = [{ rotate: "180deg" }];
+obj3 = { transform: items1, left: -0.5 };
+const merged1 = Object.assign(size);
+items1 = [{ rotate: "-45deg" }];
+obj4 = { transform: items2, left: -5.5 };
+const merged2 = Object.assign(size);
+items2 = [{ rotate: "45deg" }];
+let closure_7 = create(obj);
+
+export default function _default(disabled) {
+  let arrowUpContainer;
+  let closure_3;
+  let items3;
+  let obj3;
+  let tmp7;
+  disabled = disabled.disabled;
+  const theme = disabled.theme;
+  const type = disabled.type;
+  const obj = disabled(theme[3]);
+  const keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
+  let items = [disabled, theme, keyboardState];
+  const tmp2 = keyboardState(() => ({ backgroundColor: disabled ? theme[keyboardState].disabled : theme[keyboardState].primary }), items);
+  RN = tmp2;
+  const items1 = [tmp2];
+  const items2 = [tmp2];
+  const tmp3 = keyboardState(() => {
+    const items = [closure_7.arrowLeftLine, closure_3];
+    return items;
+  }, items1);
+  const tmp4 = keyboardState(() => {
+    const items = [closure_7.arrowRightLine, closure_3];
+    return items;
+  }, items2);
+  if ("next" === type) {
+    arrowUpContainer = closure_7.arrowDownContainer;
+    tmp7 = closure_7;
+  } else {
+    tmp7 = closure_7;
+    arrowUpContainer = closure_7.arrowUpContainer;
   }
-  icon = icon.icon;
-  if (icon === undefined) {
-    icon = _modDef1857;
-  }
-  const toolbarContext = onPress(1862).useToolbarContext();
-  const theme = toolbarContext.theme;
-  if (disabled == null) {
-    disabled = toolbarContext.isPrevDisabled;
-  }
-  const items = [onPress];
-  const obj2 = { accessibilityHint: "Moves focus to the previous field", accessibilityLabel: "Previous", disabled, rippleRadius, style, testID: null, theme: null, onPress: null, children: null };
-  const obj = onPress(1862);
-  const tmp5 = onPress;
-  obj2.testID = tmp5(1855).TEST_ID_KEYBOARD_TOOLBAR_PREVIOUS;
-  obj2.theme = theme;
-  obj2.onPress = useCallback((isDefaultPrevented) => {
-    if (onPress != null) {
-      tmp(isDefaultPrevented);
-    }
-    if (!isDefaultPrevented.isDefaultPrevented()) {
-      const KeyboardController = _mod1829.KeyboardController;
-      KeyboardController.setFocusTo("prev");
-    }
-  }, items);
-  if (children == null) {
-    const obj3 = { disabled, theme, type: "prev" };
-    children = tmp9(icon, obj3);
-  }
-  obj2.children = children;
-  return <button accessibilityHint="Moves focus to the previous field" accessibilityLabel="Previous" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={null} theme={null} onPress={null}>{null}</button>;
+  const obj2 = { style: arrowUpContainer, children: closure_6(closure_4, obj3) };
+  obj3 = { style: tmp7.arrow, children: items3 };
+  items3 = [closure_5(RN.View, { style: tmp3 }), closure_5(RN.View, { style: tmp4 })];
+  return closure_5(closure_4, obj2);
 };

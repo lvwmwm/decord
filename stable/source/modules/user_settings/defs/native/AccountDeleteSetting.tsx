@@ -1,26 +1,28 @@
-// Module ID: 15089
-// Function ID: 15090
+// Module ID: 14332
+// Function ID: 14333
 // Name: AccountDeleteSetting
-// Dependencies: [8265, 15090, 11754, 1115, 2]
+// Dependencies: [7421, 14333, 10874, 1127, 2]
 
-// Module 15089 (AccountDeleteSetting)
-import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import handleDisableAccountDefault from "handleDisableAccount" /* 15090 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14332 (AccountDeleteSetting)
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import handleDisableAccountDefault from "handleDisableAccount" /* 14333 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const pressable = SettingBuilders.createPressable({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["8lQ2rR"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["8lQ2rR"]);
   },
-  parent: SettingsConstants.MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   variant: "danger",
   onPress: function handlePress() {
     handleDisableAccountDefault(true);
   }
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountDeleteSetting.tsx");
 
 export default pressable;

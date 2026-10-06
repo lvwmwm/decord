@@ -1,21 +1,26 @@
-// Module ID: 14278
-// Function ID: 14279
+// Module ID: 13526
+// Function ID: 13527
 // Name: AgeKeyReturnHandler
-// Dependencies: [8715, 8728, 4645, 4991, 2]
+// Dependencies: [7864, 7879, 4694, 5040, 2]
 // Exports: handleAgeKeyReturn
 
-// Module 14278 (AgeKeyReturnHandler)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8728 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 8715 */;
+// Module 13526 (AgeKeyReturnHandler)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7879 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 7864 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 ({ AGE_VERIFICATION_GET_STARTED_MODAL_KEY: c3, AGE_VERIFICATION_MODAL_KEY: closure_4 } = AgeVerificationConstants);
 const set = new Set();
-const result = size.fileFinishedImporting("modules/age_assurance/native/AgeKeyReturnHandler.tsx");
+let result = size.fileFinishedImporting("modules/age_assurance/native/AgeKeyReturnHandler.tsx");
 
 export const handleAgeKeyReturn = function handleAgeKeyReturn(arg0) {
+  let ageKeySaved;
+  let result;
+  let verificationId;
   ({ result, ageKeySaved, verificationId } = arg0);
   if (verificationId == null) {
     verificationId = "";
@@ -27,21 +32,25 @@ export const handleAgeKeyReturn = function handleAgeKeyReturn(arg0) {
     ageKeySaved = "";
   }
   const combined = "" + verificationId + ":" + result + ":" + ageKeySaved;
+  const obj = set;
   if (!set.has(combined)) {
-    set.add(combined);
+    obj.add(combined);
+    const obj2 = AgeVerificationCustomTab;
     if (obj2.getIsAgeVerificationCustomTabOpen()) {
-      const result1 = tmp3(8728).releaseAgeVerificationCustomTab();
-      const tmp3Result = tmp3(8728);
-      if (tmp3Result3.isModalOpen(React3)) {
-        ModalActionCreatorsDefault.pop();
+      const tmp3Result = AgeVerificationCustomTab;
+      const result1 = tmp3Result.releaseAgeVerificationCustomTab();
+      const tmp3Result3 = NavigationRouteUtils;
+      if (tmp3Result3.isModalOpen(_false)) {
+        const arr = ModalActionCreatorsDefault;
+        arr.pop();
       }
-      tmp3Result3 = tmp3(4645);
     }
-    obj2 = AgeVerificationCustomTab;
-    if (tmp3Result4.isModalOpen(React4)) {
-      ModalActionCreatorsDefault.pop();
-      ModalActionCreatorsDefault.pop();
+    const tmp3Result4 = NavigationRouteUtils;
+    if (tmp3Result4.isModalOpen(React3)) {
+      const arr2 = ModalActionCreatorsDefault;
+      arr2.pop();
+      const arr3 = ModalActionCreatorsDefault;
+      arr3.pop();
     }
-    tmp3Result4 = NavigationRouteUtils;
   }
 };

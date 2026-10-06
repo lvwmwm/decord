@@ -1,20 +1,19 @@
-// Module ID: 4499
-// Function ID: 4500
+// Module ID: 4545
+// Function ID: 4546
 // Name: AccessibilityAnnouncer
-// Dependencies: [17, 4500, 2]
+// Dependencies: [17, 4546, 2]
 
-// Module 4499 (AccessibilityAnnouncer)
-import _mod17 from "module_17" /* 17 */;
-import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4500 */;
+// Module 4545 (AccessibilityAnnouncer)
+import react_native from "react-native" /* 17 */;
+import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4546 */;
 import size from "module_2" /* 2 */;
 
-const AccessibilityInfo = _mod17.AccessibilityInfo;
-let result = size.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncer.android.tsx");
-
-export const AccessibilityAnnouncer = {
+const AccessibilityInfo = react_native.AccessibilityInfo;
+let obj = {
   announce(intl, polite) {
     if ("polite" === polite) {
-      const result = AccessibilityAnnouncerLiveRegion.updateAccessibilityAnnouncerLiveRegionMessage(intl);
+      const obj = AccessibilityAnnouncerLiveRegion;
+      const result = obj.updateAccessibilityAnnouncerLiveRegionMessage(intl);
     } else {
       const result1 = AccessibilityInfo.announceForAccessibility(intl);
     }
@@ -23,3 +22,6 @@ export const AccessibilityAnnouncer = {
     return null;
   }
 };
+let result = size.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncer.android.tsx");
+
+export const AccessibilityAnnouncer = obj;

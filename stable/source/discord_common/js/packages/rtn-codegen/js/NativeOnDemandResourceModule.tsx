@@ -1,13 +1,13 @@
-// Module ID: 17841
-// Function ID: 17842
-// Name: NativeOnDemandResourceModule
+// Module ID: 17202
+// Function ID: 17203
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 17841 (NativeOnDemandResourceModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 17202 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeOnDemandResourceModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeOnDemandResourceModule.tsx");
 

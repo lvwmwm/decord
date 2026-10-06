@@ -1,31 +1,157 @@
-// Module ID: 11105
-// Function ID: 11106
+// Module ID: 10312
+// Function ID: 10313
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [19, 1074, 9513, 11106, 2]
-// Exports: default
+// Dependencies: [109, 19, 1086, 558, 576, 8665, 10313, 2]
 
-// Module 11105 (useMobileSocialLayerPurchaseSKU)
-import GPlayActionCreators from "GPlayActionCreators" /* 9513 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 11106 */;
-import noop from "module_19" /* 19 */;
+// Module 10312 (useMobileSocialLayerPurchaseSKU)
+import Constants from "Constants" /* 1086 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 8665 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10313 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const constants = fn(1074).PriceSetAssignmentPurchaseTypes;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/slayer_storefront/native/hooks/useMobileSocialLayerPurchaseSKU.android.tsx");
+const require = globalThis.__r;
+let _require, sku;
 
-export default function useMobileSocialLayerPurchaseSKU(sku) {
+let closure_3 = ["sku"];
+const constants = Constants.PriceSetAssignmentPurchaseTypes;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
+  let c0;
+  let tmp19;
+  let tmp3;
+  let tmp4;
+  const tmp = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(11);
+  if (cResult[0] !== sku) {
+    sku = sku.sku;
+    const tmp7 = _objectWithoutProperties(sku, closure_3);
+    cResult[0] = sku;
+    cResult[1] = tmp7;
+    cResult[2] = sku;
+    tmp4 = sku;
+    tmp3 = tmp7;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  const giftParams = tmp3.giftParams;
+  let isGift;
+  if (giftParams != null) {
+    isGift = giftParams.isGift;
+  }
+  if (isGift != null) {
+    let DEFAULT;
+    let tmp12;
+    let tmp16;
+    let tmp15;
+    if (isGift) {
+      DEFAULT = constants.GIFT;
+    }
+    let googleSkuIds;
+    const tmp10 = cResult[3];
+    if (tmp4 != null) {
+      googleSkuIds = tmp4.googleSkuIds;
+    }
+    if (tmp10 !== googleSkuIds) {
+      let googleSkuIds1;
+      if (tmp4 != null) {
+        googleSkuIds1 = tmp4.googleSkuIds;
+      }
+      if (googleSkuIds1 == null) {
+        googleSkuIds1 = {};
+      }
+      let googleSkuIds2;
+      if (tmp4 != null) {
+        googleSkuIds2 = tmp4.googleSkuIds;
+      }
+      cResult[3] = googleSkuIds2;
+      cResult[4] = googleSkuIds1;
+      tmp12 = googleSkuIds1;
+    } else {
+      tmp12 = cResult[4];
+    }
+    let tmp14 = tmp12[DEFAULT];
+    if (tmp14 == null) {
+      tmp14 = null;
+    }
+    _require = tmp14;
+    if (cResult[5] !== tmp14) {
+      class I {
+        constructor() {
+          if (null != c0) {
+            tmp2 = closure_0;
+            tmp3 = closure_2;
+            obj = closure_0(closure_2[5]);
+            items = [];
+            items[0] = tmp;
+            inAppSkus = obj.loadInAppSkus(items);
+          }
+          return;
+        }
+      }
+      let items = [tmp14];
+      cResult[5] = tmp14;
+      cResult[6] = I;
+      cResult[7] = items;
+      tmp16 = items;
+      tmp15 = I;
+    } else {
+      class I {
+        constructor() {
+          if (null != c0) {
+            tmp2 = closure_0;
+            tmp3 = closure_2;
+            obj = closure_0(closure_2[5]);
+            items = [];
+            items[0] = tmp;
+            inAppSkus = obj.loadInAppSkus(items);
+          }
+          return;
+        }
+      }
+      tmp16 = cResult[7];
+    }
+    const effect = react.useEffect(tmp15, tmp16);
+    if (cResult[8] === tmp14) {
+      class I {
+        constructor() {
+          if (null != c0) {
+            tmp2 = closure_0;
+            tmp3 = closure_2;
+            obj = closure_0(closure_2[5]);
+            items = [];
+            items[0] = tmp;
+            inAppSkus = obj.loadInAppSkus(items);
+          }
+          return;
+        }
+      }
+      return useMobilePurchaseSKUDefault(tmp19);
+    }
+    const obj2 = { platformSkuId: tmp14, isFreeForStaffSelfPurchase: false };
+    const merged = Object.assign(tmp3);
+    cResult[8] = tmp14;
+    cResult[9] = tmp3;
+    cResult[10] = obj2;
+    tmp19 = obj2;
+  }
+  DEFAULT = constants.DEFAULT;
+}) : ((sku) => {
   sku = sku.sku;
   const merged = Object.assign(sku, Object.assign({ sku: 0 }));
-  c0 = undefined;
+  let c0;
   const giftParams = merged.giftParams;
   let isGift;
   if (giftParams != null) {
     isGift = giftParams.isGift;
   }
   if (isGift != null) {
+    let DEFAULT;
     if (isGift) {
-      let DEFAULT = constants.GIFT;
+      DEFAULT = constants.GIFT;
     }
     let googleSkuIds;
     if (sku != null) {
@@ -40,17 +166,20 @@ export default function useMobileSocialLayerPurchaseSKU(sku) {
     }
     c0 = tmp4;
     let items = [tmp4];
-    const effect = noop.useEffect(() => {
+    const effect = react.useEffect(() => {
       if (null != c0) {
         const items = [tmp];
-        const inAppSkus = GPlayActionCreators.loadInAppSkus(items);
+        const obj = GPlayActionCreators;
+        const inAppSkus = obj.loadInAppSkus(items);
       }
     }, items);
-    let obj = {};
+    let obj = { platformSkuId: tmp4, isFreeForStaffSelfPurchase: false };
+    const tmp9 = useMobilePurchaseSKUDefault;
     const merged1 = Object.assign(merged);
-    obj.platformSkuId = tmp4;
-    obj.isFreeForStaffSelfPurchase = false;
-    return useMobilePurchaseSKUDefault(obj);
+    return tmp9(obj);
   }
   DEFAULT = constants.DEFAULT;
-};
+});
+const result = size.fileFinishedImporting("modules/slayer_storefront/native/hooks/useMobileSocialLayerPurchaseSKU.android.tsx");
+
+export default tmp2;

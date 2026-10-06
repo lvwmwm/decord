@@ -1,45 +1,56 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 15509
+// Function ID: 15510
 // Name: ParentalControlsUseDataToCustomizeDiscordSetting
-// Dependencies: [7811, 8265, 1074, 15098, 7813, 11754, 1115, 2]
+// Dependencies: [6961, 7421, 1086, 558, 14341, 6963, 10874, 1127, 2]
 
-// Module 16232 (ParentalControlsUseDataToCustomizeDiscordSetting)
-import util from "util" /* 1115 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7813 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15098 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
+// Module 15509 (ParentalControlsUseDataToCustomizeDiscordSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 6963 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14341 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Consents = fn(1074).Consents;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const Consents = Constants.Consents;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.MNKzyg);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.MNKzyg);
   },
-  parent: fn(8265).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue: function useDataToCustomizeDiscordSettingValue() {
-    return useParentalControlSettings.useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented;
+  parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  useValue: () => {
+    const obj = useParentalControlSettings;
+    return obj.useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented;
   },
   onValueChange: function handlePersonalizationChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      if (arg0) {
+      let items1;
+      let items2;
+      const tmp2 = arg0;
+      if (tmp2) {
         const items = [Consents.PERSONALIZATION];
-        let items1 = items;
+        items1 = items;
       } else {
         items1 = [];
       }
       if (arg0) {
-        let items2 = [];
+        items2 = [];
       } else {
         items2 = [Consents.PERSONALIZATION];
       }
-      FamilyCenterActionCreatorsDefault.updateTeenConsents(selectedTeenId, items1, items2);
+      const obj = FamilyCenterActionCreatorsDefault;
+      obj.updateTeenConsents(selectedTeenId, items1, items2);
     }
   }
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToCustomizeDiscordSetting.tsx");
+};
+const toggle = SettingBuilders.createToggle(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToCustomizeDiscordSetting.tsx");
 
 export default toggle;

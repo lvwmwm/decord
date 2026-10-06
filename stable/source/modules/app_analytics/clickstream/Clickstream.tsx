@@ -1,77 +1,85 @@
-// Module ID: 7739
-// Function ID: 7740
+// Module ID: 6889
+// Function ID: 6890
 // Name: Clickstream
-// Dependencies: [32, 502, 4811, 11, 7740, 1241, 7741, 2]
+// Dependencies: [32, 502, 4860, 11, 6890, 1253, 6891, 2]
 // Exports: trackClickstream
 
-// Module 7739 (Clickstream)
+// Module 6889 (Clickstream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ClickstreamExperiment from "ClickstreamExperiment" /* 7740 */;
-import ClickstreamEvents from "ClickstreamEvents" /* 7741 */;
-import _slicedToArray from "module_32" /* 32 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ClickstreamExperiment from "ClickstreamExperiment" /* 6890 */;
+import ClickstreamEvents from "ClickstreamEvents" /* 6891 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function isClickstreamEnabled(flag) {
   if (flag === undefined) {
     flag = true;
   }
   if (flag) {
-    const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(AuthenticationStore.getId());
+    const obj = SnowflakeUtilsDefault;
+    const extractTimestampResult = obj.extractTimestamp(AuthenticationStore.getId());
     if (extractTimestampResult !== c7) {
       drainClickstream(false);
       c7 = extractTimestampResult;
     }
-    result = ClickstreamExperiment.clickstreamExperimentEnabled();
+    const obj2 = ClickstreamExperiment;
+    metroImportAll = obj2.clickstreamExperimentEnabled();
   }
-  return result;
+  return metroImportAll;
 }
 function drainClickstream(flag) {
+  let first;
+  let tmp10;
   if (flag === undefined) {
     flag = true;
   }
   if (isClickstreamEnabled(flag)) {
-    const tmp3 = obj[Symbol.iterator]();
+    const tmp3 = map[Symbol.iterator]();
     while (tmp3 !== undefined) {
-      let tmp8 = _slicedToArray(tmp5, 2);
-      let first = tmp8[0];
-      let obj2 = AnalyticsUtilsDefault;
-      let obj3 = ClickstreamEvents;
-      let trackResult = obj2.track(first, obj3.getClickstreamDrainEvent(first, tmp8[1]));
+      [first, tmp10] = tmp5;
+      let tmp13 = AnalyticsUtilsDefault;
+      let track = tmp13.track;
+      let obj2 = ClickstreamEvents;
+      let trackResult = track(first, obj2.getClickstreamDrainEvent(first, tmp10));
       continue;
     }
     map.clear();
   } else {
-    obj.clear();
+    map.clear();
   }
 }
 const map = new Map();
 let c7 = -1;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/app_analytics/clickstream/Clickstream.tsx");
+let metroImportAll = false;
+const result = size.fileFinishedImporting("modules/app_analytics/clickstream/Clickstream.tsx");
 
 export const trackClickstream = function trackClickstream(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, arg1) {
-  const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(AuthenticationStore.getId());
+  let date;
+  const obj = SnowflakeUtilsDefault;
+  const extractTimestampResult = obj.extractTimestamp(AuthenticationStore.getId());
   if (extractTimestampResult !== c7) {
     drainClickstream(false);
     c7 = extractTimestampResult;
   }
-  result = ClickstreamExperiment.clickstreamExperimentEnabled();
-  if (result) {
+  const obj2 = ClickstreamExperiment;
+  metroImportAll = obj2.clickstreamExperimentEnabled();
+  if (metroImportAll) {
     if (!map.has(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM)) {
       const result1 = obj3.set(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, []);
     }
-    value = obj3.get(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM);
+    const value = obj3.get(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM);
     if (value != null) {
-      const obj4 = { timestamp: null, rtc_state: null };
       const _Date = Date;
-      const date = new Date();
-      obj4.timestamp = date;
-      obj4.rtc_state = RTCConnectionStore.getState();
+      const self = this;
+      const self2 = this;
+      const push = value.push;
+      const obj4 = { timestamp: date, rtc_state: RTCConnectionStore.getState() };
+      date = new Date();
       const merged = Object.assign(arg1);
-      value.push(obj4);
+      push(obj4);
     }
   }
 };

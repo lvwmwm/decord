@@ -1,14 +1,14 @@
-// Module ID: 13220
-// Function ID: 13221
+// Module ID: 12452
+// Function ID: 12453
 // Name: presentApplicationWidgetRefreshOutcome
-// Dependencies: [13221, 4486, 10476, 4485, 2]
+// Dependencies: [12453, 4531, 11106, 4530, 2]
 // Exports: default
 
-// Module 13220 (presentApplicationWidgetRefreshOutcome)
-import ToastUtils from "ToastUtils" /* 4485 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
-import RetryIcon from "RetryIcon" /* 10476 */;
-import applicationWidgetRefreshOutcomeDefault from "applicationWidgetRefreshOutcome" /* 13221 */;
+// Module 12452 (presentApplicationWidgetRefreshOutcome)
+import ToastUtils from "ToastUtils" /* 4530 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
+import RetryIcon from "RetryIcon" /* 11106 */;
+import applicationWidgetRefreshOutcomeDefault from "applicationWidgetRefreshOutcome" /* 12453 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_widget/presentApplicationWidgetRefreshOutcome.native.tsx");
@@ -18,9 +18,11 @@ export default function presentApplicationWidgetRefreshOutcome(arg0) {
   const text = tmp3.text;
   if (tmp3.ok) {
     const obj2 = { key: "APPLICATION_WIDGET_REFRESH", content: text, IconComponent: RetryIcon.RetryIcon };
-    ToastActionCreatorsDefault.open(obj2);
-    const tmpResult = ToastActionCreatorsDefault;
+    const open = tmp(4531).open;
+    ToastActionCreatorsDefault;
+    open(obj2);
   } else {
-    ToastUtils.presentError(text);
+    const obj = ToastUtils;
+    obj.presentError(text);
   }
 };

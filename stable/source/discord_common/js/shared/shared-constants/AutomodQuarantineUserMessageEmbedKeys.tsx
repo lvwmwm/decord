@@ -1,9 +1,9 @@
-// Module ID: 7789
-// Function ID: 7790
+// Module ID: 6939
+// Function ID: 6940
 // Name: AutomodQuarantineUserMessageEmbedKeys
 // Dependencies: [2]
 
-// Module 7789 (AutomodQuarantineUserMessageEmbedKeys)
+// Module 6939 (AutomodQuarantineUserMessageEmbedKeys)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodQuarantineUserMessageEmbedKeys.tsx");

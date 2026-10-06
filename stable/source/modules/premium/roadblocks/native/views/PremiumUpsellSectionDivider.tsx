@@ -1,97 +1,209 @@
-// Module ID: 10600
-// Function ID: 10601
+// Module ID: 9682
+// Function ID: 9683
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 7706, 21, 4788, 576, 10601, 5230, 1094, 5345, 2]
-// Exports: default
+// Dependencies: [19, 17, 6853, 21, 4837, 588, 558, 576, 9683, 5292, 1106, 5410, 2]
 
-// Module 10600 (PremiumUpsellSectionDivider)
-import nativeDefault from "native" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10601 */;
-import noop from "module_19" /* 19 */;
+// Module 9682 (PremiumUpsellSectionDivider)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import ColorConstants from "ColorConstants" /* 6853 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9683 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-const LockIcon2 = LockIcon(5345);
-require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-const Gradients = fn(7706).Gradients;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+let obj;
+
+let c3;
+let closure_4;
+let metroImportDefault;
+let metroRequire;
+({ StyleSheet: c3, View: closure_4 } = react_native);
+const Gradients = ColorConstants.Gradients;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles((arg0) => {
+  let container;
+  let num2;
+  let num4;
+  let obj3;
+  let rect;
   let num;
-  if (arg0 === obj2.START) {
+  if (arg0 === container.START) {
     num = 6;
   }
-  const obj = { height: 28, flex: 1, justifyContent: "center", marginTop: num, marginBottom: null };
-  let num2;
-  if (arg0 === obj2.END) {
+  container = { height: 28, flex: 1, justifyContent: "center", marginTop: num, marginBottom: num2 };
+  num2 = undefined;
+  if (arg0 === container.END) {
     num2 = 6;
   }
-  obj2 = { container: obj, lockContainer: null, lockGradient: null, lock: null, divider: null, gradient: null };
-  obj.marginBottom = num2;
+  const obj2 = { container, lockContainer: obj3, lockGradient: size, lock: { width: 16, height: 16, alignSelf: "center" }, divider: { height: 1 }, gradient: rect };
+  obj3 = { justifyContent: "center", alignItems: "center" };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj2.lockContainer = { justifyContent: "center", alignItems: "center" };
-  const size = { width: 28, height: 28, justifyContent: "center", borderRadius: nativeDefault.radii.round };
-  obj2.lockGradient = size;
-  obj2.lock = { width: 16, height: 16, alignSelf: "center" };
-  obj2.divider = { height: 1 };
+  size = { width: 28, height: 28, justifyContent: "center", borderRadius: nativeDefault.radii.round };
   let num3;
-  if (arg0 === obj2.START) {
+  if (arg0 === container.START) {
     num3 = 0;
   }
-  const rect = { flex: 1, height: 14, left: 0, right: 0, position: "absolute", bottom: num3, top: null };
-  let num4;
-  if (arg0 === obj2.END) {
+  rect = { flex: 1, height: 14, left: 0, right: 0, position: "absolute", bottom: num3, top: num4 };
+  num4 = undefined;
+  if (arg0 === container.END) {
     num4 = 0;
   }
-  rect.top = num4;
-  obj2.gradient = rect;
   return obj2;
 });
-let obj2 = { START: 0, [0]: "START", END: 1, [1]: "END" };
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellSectionDivider.tsx");
-
-export default function PremiumUpsellSectionDivider(arg0) {
+const PremiumUpsellSectionDividerPosition = { START: 0, [0]: "START", END: 1, [1]: "END" };
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let LockIcon;
+  let items;
+  let obj5;
+  let obj6;
+  let position;
+  let tmp23;
+  let tmp5;
+  let useTier0UpsellContent;
+  obj = react2;
+  const cResult = obj.c(19);
   ({ useTier0UpsellContent, position } = arg0);
-  let lock = closure_8(position);
-  const obj = { style: lock.container, children: null };
-  obj2 = { style: lock.gradient, children: timestampProducer(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
-  let LockIcon = require;
-  let WHITE = dependencyMap;
-  const items = [timestampProducer(React4, obj2), , ];
-  const obj3 = { style: lock.divider, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: null };
-  if (true === useTier0UpsellContent) {
-    let PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
-    let tmp6 = Gradients;
+  const tmp4 = closure_8(position);
+  if (cResult[0] !== useTier0UpsellContent) {
+    const obj2 = { useTier0UpsellContent };
+    const tmp7 = metroRequire(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, obj2);
+    cResult[0] = useTier0UpsellContent;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
   } else {
-    tmp6 = Gradients;
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.gradient) {
+    let tmp8;
+    let PREMIUM_TIER_2_TRI_COLOR;
+    let tmp10;
+    if (cResult[3] === tmp5) {
+      tmp8 = cResult[4];
+    }
+    if (true === useTier0UpsellContent) {
+      PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
+      tmp10 = Gradients;
+    } else {
+      tmp10 = Gradients;
+      PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
+    }
+    if (cResult[5] === tmp4.divider) {
+      let tmp12;
+      if (cResult[6] === PREMIUM_TIER_2_TRI_COLOR) {
+        tmp12 = cResult[7];
+      }
+      if (cResult[8] === position) {
+        if (cResult[9] === tmp4.lock) {
+          if (cResult[10] === tmp4.lockContainer) {
+            if (cResult[11] === tmp4.lockGradient) {
+              let tmp17;
+              if (cResult[12] === useTier0UpsellContent) {
+                tmp17 = cResult[13];
+              }
+              if (cResult[14] === tmp4.container) {
+                if (cResult[15] === tmp8) {
+                  if (cResult[16] === tmp12) {
+                    let tmp24;
+                    if (cResult[17] === tmp17) {
+                      tmp24 = cResult[18];
+                    }
+                    return tmp24;
+                  }
+                }
+              }
+              const obj3 = { style: tmp4.container, children: items };
+              items = [tmp8, tmp12, tmp17];
+              const tmp27 = metroImportDefault(React3, obj3);
+              cResult[14] = tmp4.container;
+              cResult[15] = tmp8;
+              cResult[16] = tmp12;
+              cResult[17] = tmp17;
+              cResult[18] = tmp27;
+              tmp24 = tmp27;
+            }
+          }
+        }
+      }
+      let tmp20Result = position === obj.START;
+      if (tmp20Result) {
+        const obj4 = { style: tmp4.lockContainer, children: metroRequire(tmp23, obj5) };
+        obj5 = { style: tmp4.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp10.PREMIUM_TIER_0 : tmp10.PREMIUM_TIER_2_TRI_COLOR, children: metroRequire(LockIcon, obj6) };
+        tmp23 = LinearGradientDefault;
+        obj6 = { color: nativeDefault.colors.WHITE, style: tmp4.lock };
+        LockIcon = tmp(5410).LockIcon;
+        tmp20Result = tmp20(React3, obj4);
+      }
+      cResult[8] = position;
+      cResult[9] = tmp4.lock;
+      cResult[10] = tmp4.lockContainer;
+      cResult[11] = tmp4.lockGradient;
+      cResult[12] = useTier0UpsellContent;
+      cResult[13] = tmp20Result;
+      tmp17 = tmp20Result;
+    }
+    const obj7 = { style: tmp4.divider, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: PREMIUM_TIER_2_TRI_COLOR };
+    const tmp15 = LinearGradientDefault;
+    const tmp16 = metroRequire(tmp15, obj7);
+    cResult[5] = tmp4.divider;
+    cResult[6] = PREMIUM_TIER_2_TRI_COLOR;
+    cResult[7] = tmp16;
+    tmp12 = tmp16;
+  }
+  const obj8 = { style: tmp4.gradient, children: tmp5 };
+  const tmp9 = metroRequire(React3, obj8);
+  cResult[2] = tmp4.gradient;
+  cResult[3] = tmp5;
+  cResult[4] = tmp9;
+  tmp8 = tmp9;
+}) : ((arg0) => {
+  let LockIcon;
+  let PREMIUM_TIER_2_TRI_COLOR;
+  let items;
+  let obj5;
+  let obj6;
+  let position;
+  let tmp7Result;
+  let tmp9;
+  let useTier0UpsellContent;
+  ({ useTier0UpsellContent, position } = arg0);
+  const tmp = closure_8(position);
+  obj = { style: tmp.container, children: items };
+  items = [, , ];
+  const obj2 = { style: tmp.gradient, children: metroRequire(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
+  items[0] = metroRequire(React3, obj2);
+  const obj3 = { style: tmp.divider, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: PREMIUM_TIER_2_TRI_COLOR };
+  const tmp2 = metroImportDefault;
+  const tmp8 = LinearGradientDefault;
+  if (true === useTier0UpsellContent) {
+    PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
+    tmp9 = Gradients;
+  } else {
+    tmp9 = Gradients;
     PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
-  obj3.colors = PREMIUM_TIER_2_TRI_COLOR;
-  items[1] = timestampProducer(LinearGradientDefault, obj3);
-  if (position !== obj2.START) {
-    items[2] = tmp8;
-    obj.children = items;
-    return React5(tmp2, obj);
-  } else {
-    const obj4 = { style: lock.lockContainer, children: null };
-    let obj5 = { style: lock.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp6.PREMIUM_TIER_0 : tmp6.PREMIUM_TIER_2_TRI_COLOR, children: null };
-    LockIcon = LockIcon2.LockIcon;
-    const obj6 = { color: null, style: null };
-    WHITE = tmp4(576).colors.WHITE;
-    obj6.color = WHITE;
-    lock = lock.lock;
-    obj6.style = lock;
-    obj5.children = tmp3(LockIcon, obj6);
-    obj5 = tmp3(tmp4(5230), obj5);
-    obj4.children = obj5;
-    tmp3(tmp2, obj4);
-    const tmp4Result = tmp4(5230);
+  items[1] = metroRequire(tmp8, obj3);
+  let tmp4Result = position === obj.START;
+  if (tmp4Result) {
+    const obj4 = { style: tmp.lockContainer, children: metroRequire(tmp7Result, obj5) };
+    obj5 = { style: tmp.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp9.PREMIUM_TIER_0 : tmp9.PREMIUM_TIER_2_TRI_COLOR, children: metroRequire(LockIcon, obj6) };
+    tmp7Result = LinearGradientDefault;
+    obj6 = { color: nativeDefault.colors.WHITE, style: tmp.lock };
+    LockIcon = tmp5(5410).LockIcon;
+    tmp4Result = tmp4(tmp3, obj4);
   }
-};
+  items[2] = tmp4Result;
+  return tmp2(React3, obj);
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellSectionDivider.tsx");
+
+export default tmp5;
 export const PREMIUM_UPSELL_SECTION_DIVIDER_HEIGHT = 28;
 export const PREMIUM_UPSELL_SECTION_DIVIDER_MARGIN = 6;
-export const PremiumUpsellSectionDividerPosition = obj2;
+export { PremiumUpsellSectionDividerPosition };

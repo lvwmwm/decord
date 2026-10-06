@@ -1,12 +1,12 @@
-// Module ID: 5665
-// Function ID: 5666
+// Module ID: 5729
+// Function ID: 5730
 // Name: canJoinVoiceChannel
-// Dependencies: [2045, 1074, 2]
+// Dependencies: [2055, 1086, 2]
 // Exports: default
 
-// Module 5665 (canJoinVoiceChannel)
-import Constants from "Constants" /* 1074 */;
-import ChannelRecord from "ChannelRecord" /* 2045 */;
+// Module 5729 (canJoinVoiceChannel)
+import Constants from "Constants" /* 1086 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
 import size from "module_2" /* 2 */;
 
 const isPrivate = ChannelRecord.isPrivate;
@@ -14,9 +14,6 @@ const BasicPermissions = Constants.BasicPermissions;
 const result = size.fileFinishedImporting("modules/channel/canJoinVoiceChannel.tsx");
 
 export default function canJoinVoiceChannel(type, canBasicChannel) {
-  let canBasicChannelResult = isPrivate(type.type);
-  if (!canBasicChannelResult) {
-    canBasicChannelResult = canBasicChannel.canBasicChannel(BasicPermissions.CONNECT | BasicPermissions.VIEW_CHANNEL, type);
-  }
+  const canBasicChannelResult = isPrivate(type.type) || canBasicChannel.canBasicChannel(BasicPermissions.CONNECT | BasicPermissions.VIEW_CHANNEL, type);
   return canBasicChannelResult;
 };

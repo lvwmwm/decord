@@ -1,25 +1,245 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17047
+// Function ID: 17048
 // Name: shared/DMChannel
-// Dependencies: [19, 4970, 21, 4799, 11206, 4788, 576, 17137, 16686, 15592, 11, 5225, 17451, 5371, 17136, 17452, 10404, 8155, 4941, 2]
+// Dependencies: [19, 5019, 21, 558, 576, 4848, 10417, 4837, 588, 16481, 15981, 14852, 11, 5289, 17041, 5436, 17039, 12234, 7308, 16480, 4990, 2]
 
-// Module 17459 (shared/DMChannel)
-import nativeDefault from "native" /* 576 */;
-import transitionToChannel from "transitionToChannel" /* 4799 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11206 */;
-import noop from "module_19" /* 19 */;
+// Module 17047 (shared/DMChannel)
+import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import transitionToChannel from "transitionToChannel" /* 4848 */;
+import useChannelNameDefault from "useChannelName" /* 4990 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import useFontScale from "useFontScale" /* 5289 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7308 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10417 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 14852 */;
+import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 15981 */;
+import renderChannelItemDefault from "renderChannelItem" /* 16480 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16481 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 17039 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17041 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const UnreadSetting = fn(4970).UnreadSetting;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-let obj = { pressable: { flex: 1 }, pressableUnderlayColor: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE } };
-let closure_6 = createStyles.createStyles(obj);
-let obj3 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
+const require = globalThis.__r;
+let _require;
 
-export default noop.memo(function DMChannel(navigationReplace) {
+let obj2;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, navigationReplace) => {
+  let user;
+  _require = id;
+  let obj = require("react");
+  const cResult = obj.c(8);
+  if (cResult[0] === id.id) {
+    let tmp2;
+    let tmp3;
+    if (cResult[1] === navigationReplace) {
+      tmp2 = cResult[2];
+    }
+    if (cResult[3] !== id.id) {
+      const fn2 = function s() {
+        const obj = openChannelLongPressActionSheet;
+        return obj.openChannelLongPressActionSheet(user.id);
+      };
+      cResult[3] = id.id;
+      cResult[4] = fn2;
+      tmp3 = fn2;
+    } else {
+      tmp3 = cResult[4];
+    }
+    if (cResult[5] === tmp3) {
+      let tmp4;
+      if (cResult[6] === tmp2) {
+        tmp4 = cResult[7];
+      }
+      return tmp4;
+    }
+    let obj2 = { onPress: tmp2, onLongPress: tmp3 };
+    cResult[5] = tmp3;
+    cResult[6] = tmp2;
+    cResult[7] = obj2;
+    tmp4 = obj2;
+  }
+  const fn = function l() {
+    const obj = transitionToChannel;
+    const obj2 = { navigationReplace };
+    obj.transitionToChannel(user.id, obj2);
+  };
+  cResult[0] = id.id;
+  cResult[1] = navigationReplace;
+  cResult[2] = fn;
+  tmp2 = fn;
+}) : ((id, navigationReplace) => {
+  let items;
+  let items1;
+  const user = id;
+  let obj = {
+    onPress: react.useCallback(() => {
+      const obj = transitionToChannel;
+      const obj2 = { navigationReplace };
+      obj.transitionToChannel(user.id, obj2);
+    }, items),
+    onLongPress: react.useCallback(() => {
+      const obj = openChannelLongPressActionSheet;
+      return obj.openChannelLongPressActionSheet(user.id);
+    }, items1)
+  };
+  items = [id.id, navigationReplace];
+  items1 = [id.id];
+  return obj;
+});
+let obj = { pressable: { flex: 1 }, pressableUnderlayColor: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE };
+let closure_7 = createStyles.createStyles(obj);
+ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channel;
+  let extractTimestampResult;
+  let first;
+  let mentionCount;
+  let muted;
+  let navigationReplace;
+  let tmp11;
+  let tmp17;
+  let tmp18;
+  let unread;
+  const obj = react2;
+  const cResult = obj.c(23);
+  ({ channel, muted, navigationReplace } = arg0);
+  const tmp5 = undefined !== navigationReplace && navigationReplace;
+  const tmp6 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp9 = getLayoutStylesDefault();
+    cResult[0] = tmp9;
+    first = tmp9;
+  } else {
+    first = cResult[0];
+  }
+  const tmpResult = useChannelUnreadBadgeState;
+  const baseChannelUnreadBadgeState = tmpResult.useBaseChannelUnreadBadgeState(channel, tmp4);
+  ({ unread, mentionCount } = baseChannelUnreadBadgeState);
+  if (cResult[1] !== unread) {
+    const obj2 = { unread };
+    cResult[1] = unread;
+    cResult[2] = obj2;
+    tmp11 = obj2;
+  } else {
+    tmp11 = cResult[2];
+  }
+  const tmp13 = useMessagePreviewsDefault(channel, tmp11);
+  if (null != tmp13) {
+    const tmp12Result = SnowflakeUtilsDefault;
+    extractTimestampResult = tmp12Result.extractTimestamp(tmp13.id);
+  }
+  let str = "text-muted";
+  if (unread) {
+    str = "text-muted";
+    if (!(undefined !== muted && muted)) {
+      str = "text-default";
+    }
+  }
+  const tmpResult2 = useFontScale;
+  const fontScale = tmpResult2.useFontScale();
+  const tmp12Result3 = renderChannelPressableWrapperDefault;
+  const PressableHighlight = tmp(5436).PressableHighlight;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { borderRadius: first.container.borderRadius };
+    cResult[3] = obj3;
+    tmp17 = obj3;
+  } else {
+    tmp17 = cResult[3];
+  }
+  if (cResult[4] !== tmp6.pressable) {
+    const items = [tmp6.pressable, tmp17];
+    cResult[4] = tmp6.pressable;
+    cResult[5] = items;
+    tmp18 = items;
+  } else {
+    tmp18 = cResult[5];
+  }
+  const backgroundColor = tmp6.pressableUnderlayColor.backgroundColor;
+  const tmp19 = closure_6(channel, tmp5);
+  if (cResult[6] === (undefined !== muted && muted)) {
+    let tmp20;
+    if (cResult[7] === unread) {
+      tmp20 = cResult[8];
+    }
+    if (cResult[9] === channel) {
+      if (cResult[10] === tmp13) {
+        if (cResult[11] === (undefined !== muted && muted)) {
+          let tmp22;
+          if (cResult[12] === str) {
+            tmp22 = cResult[13];
+          }
+          const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted: undefined !== muted && muted, mentionCount, unreadBadge: tmp20, subtitle: tmp22, latestMessageTimestamp: extractTimestampResult, channelName: useChannelNameDefault(channel), fontScale };
+          const tmp12Result4 = renderChannelItemDefault;
+          const tmp12Result2Result = tmp12Result4(obj4);
+          if (cResult[14] === PressableHighlight) {
+            if (cResult[15] === tmp6.pressableUnderlayColor.backgroundColor) {
+              if (cResult[16] === tmp12Result2Result) {
+                if (cResult[17] === tmp18) {
+                  let tmp28;
+                  if (cResult[18] === tmp19) {
+                    tmp28 = cResult[19];
+                  }
+                  if (cResult[20] === tmp28) {
+                    let tmp34;
+                    if (cResult[21] === tmp12Result3) {
+                      tmp34 = cResult[22];
+                    }
+                    return tmp34;
+                  }
+                  const tmp12Result1Result = tmp12Result3(tmp28);
+                  cResult[20] = tmp28;
+                  cResult[21] = tmp12Result3;
+                  cResult[22] = tmp12Result1Result;
+                  tmp34 = tmp12Result1Result;
+                }
+              }
+            }
+          }
+          const merged = Object.assign(tmp19);
+          const tmp33 = <PressableHighlight style={tmp18} underlayColor={backgroundColor}>{tmp12Result2Result}</PressableHighlight>;
+          cResult[14] = PressableHighlight;
+          cResult[15] = tmp6.pressableUnderlayColor.backgroundColor;
+          cResult[16] = tmp12Result2Result;
+          cResult[17] = tmp18;
+          cResult[18] = tmp19;
+          cResult[19] = tmp33;
+          tmp28 = tmp33;
+        }
+      }
+    }
+    let tmp23 = null != tmp13;
+    if (tmp23) {
+      const ChannelRowPreview = tmp(12234).ChannelRowPreview;
+      tmp23 = <ChannelRowPreview channel={channel} message={tmp13} color={str} muted={undefined !== muted && muted} layout={ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT} />;
+    }
+    cResult[9] = channel;
+    cResult[10] = tmp13;
+    cResult[11] = undefined !== muted && muted;
+    cResult[12] = str;
+    cResult[13] = tmp23;
+    tmp22 = tmp23;
+  }
+  const tmp21 = jsx(UnreadBadgeDefault, { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted: undefined !== muted && muted });
+  cResult[6] = undefined !== muted && muted;
+  cResult[7] = unread;
+  cResult[8] = tmp21;
+  tmp20 = tmp21;
+}) : ((navigationReplace) => {
+  let channel;
+  let mentionCount;
+  let muted;
+  let tmp11Result;
+  let unread;
   ({ channel, muted } = navigationReplace);
   if (muted === undefined) {
     muted = false;
@@ -28,15 +248,16 @@ export default noop.memo(function DMChannel(navigationReplace) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = closure_6();
-  const tmp4 = flag(17137)();
-  const baseChannelUnreadBadgeState = channel(16686).useBaseChannelUnreadBadgeState(channel, muted);
+  const tmp = closure_7();
+  const tmp4 = getLayoutStylesDefault();
+  const obj = useChannelUnreadBadgeState;
+  const baseChannelUnreadBadgeState = obj.useBaseChannelUnreadBadgeState(channel, muted);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
-  const tmp7 = flag(15592)(channel, { unread });
+  const tmp7 = useMessagePreviewsDefault(channel, { unread });
   let extractTimestampResult;
   if (null != tmp7) {
-    extractTimestampResult = tmp2(11).extractTimestamp(tmp7.id);
-    const tmp2Result = tmp2(11);
+    const tmp2Result = SnowflakeUtilsDefault;
+    extractTimestampResult = tmp2Result.extractTimestamp(tmp7.id);
   }
   let str = "text-muted";
   if (unread) {
@@ -45,32 +266,22 @@ export default noop.memo(function DMChannel(navigationReplace) {
       str = "text-default";
     }
   }
-  const obj = channel(16686);
-  const fontScale = channel(5225).useFontScale();
-  const tmp5Result = channel(5225);
-  const obj2 = { style: null, underlayColor: tmp.pressableUnderlayColor.backgroundColor };
+  const tmp5Result = useFontScale;
+  const fontScale = tmp5Result.useFontScale();
   const items = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
-  obj2.style = items;
-  const obj3 = { onPress: null, onLongPress: null };
-  const items1 = [channel.id, flag];
-  obj3.onPress = noop.useCallback(() => {
-    transitionToChannel.transitionToChannel(channel.id, { navigationReplace: flag });
-  }, items1);
-  const items2 = [channel.id];
-  obj3.onLongPress = noop.useCallback(() => openChannelLongPressActionSheet.openChannelLongPressActionSheet(channel.id), items2);
-  const merged = Object.assign(obj3);
-  const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: null, latestMessageTimestamp: null, channelName: null, fontScale: null };
-  const tmp2Result3 = flag(17451);
-  obj4.unreadBadge = jsx(flag(17452), { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted });
-  let tmp11Result = null != tmp7;
+  const tmp2Result3 = renderChannelPressableWrapperDefault;
+  const PressableHighlight = tmp5(5436).PressableHighlight;
+  const merged = Object.assign(closure_6(channel, flag));
+  const obj3 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: tmp11Result, latestMessageTimestamp: extractTimestampResult, channelName: useChannelNameDefault(channel), fontScale };
+  tmp11Result = null != tmp7;
+  const tmp2Result4 = renderChannelItemDefault;
   if (tmp11Result) {
-    const obj6 = { channel, message: tmp7, color: str, muted, layout: tmp5(8155).ChannelListLayoutTypes.COMPACT };
-    tmp11Result = tmp11(tmp5(10404).ChannelRowPreview, obj6);
+    const obj5 = { channel, message: tmp7, color: str, muted, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT };
+    const ChannelRowPreview = tmp5(12234).ChannelRowPreview;
+    tmp11Result = tmp11(ChannelRowPreview, obj5);
   }
-  obj4.subtitle = tmp11Result;
-  obj4.latestMessageTimestamp = extractTimestampResult;
-  obj4.channelName = flag(4941)(channel);
-  obj4.fontScale = fontScale;
-  obj2.children = flag(17136)(obj4);
-  return tmp2Result3(jsx(channel(5371).PressableHighlight, { style: null, underlayColor: tmp.pressableUnderlayColor.backgroundColor }));
-});
+  return tmp2Result3(<PressableHighlight style={items} underlayColor={tmp.pressableUnderlayColor.backgroundColor}>{tmp2Result4(obj3)}</PressableHighlight>);
+}));
+const result = size.fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
+
+export default memoResult;

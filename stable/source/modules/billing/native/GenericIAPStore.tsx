@@ -1,43 +1,44 @@
-// Module ID: 7516
-// Function ID: 7517
+// Module ID: 6661
+// Function ID: 6662
 // Name: GenericIAPStore
-// Dependencies: [504, 12, 7517, 573, 2]
+// Dependencies: [504, 12, 6662, 585, 2]
 
-// Module 7516 (GenericIAPStore)
+// Module 6661 (GenericIAPStore)
 import _modDef12 from "module_12" /* 12 */;
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ProductIds from "ProductIds" /* 7517 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ProductIds from "ProductIds" /* 6662 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 let c3 = null;
 let canMakePayments = false;
 let storeFront = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class GenericIAPStore extends Store {
+  canMakePurchase() {
+    return canMakePayments;
+  }
+  genericProductsLoaded() {
+    let tmp = null != c3;
+    if (tmp) {
+      const arr = _modDef12;
+      tmp = arr.filter(c3, (identifier) => {
+        const GenericProductIds = ProductIds.GenericProductIds;
+        return GenericProductIds.includes(identifier.identifier);
+      }).length === ProductIds.GenericProductIds.length;
+    }
+    return tmp;
+  }
+  getProducts() {
+    return c3;
+  }
+  getStoreFront() {
+    return storeFront;
+  }
 }
 const prototype = GenericIAPStore.prototype;
-prototype["canMakePurchase"] = function canMakePurchase() {
-  return canMakePayments;
-};
-prototype["genericProductsLoaded"] = function genericProductsLoaded() {
-  let tmp = null != c3;
-  if (tmp) {
-    tmp = _modDef12.filter(c3, (identifier) => {
-      const GenericProductIds = ProductIds.GenericProductIds;
-      return GenericProductIds.includes(identifier.identifier);
-    }).length === ProductIds.GenericProductIds.length;
-  }
-  return tmp;
-};
-prototype["getProducts"] = function getProducts() {
-  return c3;
-};
-prototype["getStoreFront"] = function getStoreFront() {
-  return storeFront;
-};
 GenericIAPStore.displayName = "GenericIAPStore";
-const genericIAPStore = new GenericIAPStore(DispatcherDefault, {
+const obj = {
   IAP_LOAD_GENERIC_PRODUCTS: function initGenericProducts(arg0) {
     ({ products: c3, storeFront } = arg0);
   },
@@ -47,8 +48,8 @@ const genericIAPStore = new GenericIAPStore(DispatcherDefault, {
   GENERIC_IAP_SET_STORE_FRONT: function setStoreFront(storeFront) {
     storeFront = storeFront.storeFront;
   }
-});
-const size = fn(2);
+};
+const genericIAPStore = new GenericIAPStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/billing/native/GenericIAPStore.tsx");
 
 export default genericIAPStore;

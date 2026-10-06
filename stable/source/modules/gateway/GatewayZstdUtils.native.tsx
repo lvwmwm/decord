@@ -1,20 +1,24 @@
-// Module ID: 13942
-// Function ID: 13943
+// Module ID: 13194
+// Function ID: 13195
 // Name: GatewayZstdUtils
-// Dependencies: [17, 1364, 13943, 2]
+// Dependencies: [17, 1370, 13195, 2]
 // Exports: createZstdContextWeb, supportsZstd
 
-// Module 13942 (GatewayZstdUtils)
-import _mod17 from "module_17" /* 17 */;
-import NativeCompressionModuleDefault from "NativeCompressionModule" /* 13943 */;
+// Module 13194 (GatewayZstdUtils)
+import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_nativeDefault from "react-native" /* 13195 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
+const NativeModules = react_native.NativeModules;
 const result = size.fileFinishedImporting("modules/gateway/GatewayZstdUtils.native.tsx");
 
 export const supportsZstd = function supportsZstd() {
+  let flag;
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    let flag = NativeCompressionModuleDefault.getConstants().supportsZstd;
+    const obj2 = react_nativeDefault;
+    flag = obj2.getConstants().supportsZstd;
   } else {
     const DCDCompressionManager = NativeModules.DCDCompressionManager;
     flag = undefined;

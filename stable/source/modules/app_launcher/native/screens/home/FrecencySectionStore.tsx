@@ -1,42 +1,43 @@
-// Module ID: 12335
-// Function ID: 12336
+// Module ID: 11411
+// Function ID: 11412
 // Name: FrecencySectionStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 12335 (FrecencySectionStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11411 (FrecencySectionStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
 
 let obj = { APPS: "apps", COMMANDS: "commands" };
 obj = { selection: null };
-const PersistedStore = initializeDefault.PersistedStore;
+const PersistedStore = get_initializedDefault.PersistedStore;
 class FrecencySectionStore extends PersistedStore {
+  initialize(arg0) {
+
+  }
+  getState() {
+    return obj;
+  }
+  getSelection() {
+    let COMMANDS;
+    if (null != obj.selection) {
+      COMMANDS = obj.selection;
+    } else {
+      COMMANDS = obj.COMMANDS;
+    }
+    return COMMANDS;
+  }
 }
 const prototype = FrecencySectionStore.prototype;
-prototype["initialize"] = function initialize(arg0) {
-
-};
-prototype["getState"] = function getState() {
-  return obj;
-};
-prototype["getSelection"] = function getSelection() {
-  if (null != obj.selection) {
-    let COMMANDS = obj.selection;
-  } else {
-    COMMANDS = obj.COMMANDS;
-  }
-  return COMMANDS;
-};
 FrecencySectionStore.displayName = "FrecencySectionStore";
 FrecencySectionStore.persistKey = "FrecencySectionStore";
-const frecencySectionStore = new FrecencySectionStore(DispatcherDefault, {
+const obj2 = {
   FRECENCY_SECTION_SET_SELECTION: function handleSetSelection(selection) {
-    obj = {};
+    obj = { selection: selection.selection };
     const merged = Object.assign(obj);
-    obj.selection = selection.selection;
   }
-});
-const size = fn(2);
+};
+const frecencySectionStore = new FrecencySectionStore(DispatcherDefault, obj2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySectionStore.tsx");
 
 export default frecencySectionStore;

@@ -1,24 +1,30 @@
-// Module ID: 15099
-// Function ID: 15100
+// Module ID: 14342
+// Function ID: 14343
 // Name: ParentalControlledUserSettings
-// Dependencies: [2021, 1074, 15100, 2019, 558, 1217, 1186, 15101, 2]
+// Dependencies: [2029, 1086, 14343, 2027, 568, 1229, 1198, 14344, 2]
 
-// Module 15099 (ParentalControlledUserSettings)
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import Constants from "Constants" /* 1074 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import wrappers from "wrappers" /* 1217 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 2021 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 15101 */;
-import ParentalControlledUserSettingsDefinitions_mod from "ParentalControlledUserSettingsDefinitions" /* 15100 */;
+// Module 14342 (ParentalControlledUserSettings)
+import shallowEqualDefault from "shallowEqual" /* 568 */;
+import Constants from "Constants" /* 1086 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import wrappers from "wrappers" /* 1229 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 2029 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 14344 */;
+import ParentalControlledUserSettingsDefinitions_mod from "ParentalControlledUserSettingsDefinitions" /* 14343 */;
 import size from "module_2" /* 2 */;
+
+let oneTimePurchaseLimit;
 
 const constants = DMSafetyConstants.ExplicitContentFilterTypes;
 const AllFriendSourceFlags = Constants.AllFriendSourceFlags;
 let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
-const result = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("textAndImages", "explicitContentSettings", UserSettings.explicitContentFromProto, UserSettings.explicitContentToProto, { comparator: discord_common_shallowEqualDefault });
-let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
+const defineParentalControlledSetting = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting;
+const explicitContentFromProto = UserSettings.explicitContentFromProto;
+let obj = { comparator: shallowEqualDefault };
+const explicitContentToProto = UserSettings.explicitContentToProto;
+const result = defineParentalControlledSetting("textAndImages", "explicitContentSettings", explicitContentFromProto, explicitContentToProto, obj);
+ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
 const result1 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("textAndImages", "explicitContentFilter", (value) => {
   let NON_FRIENDS;
   if (value != null) {
@@ -30,12 +36,16 @@ const result1 = ParentalControlledUserSettingsDefinitions.defineParentalControll
   return NON_FRIENDS;
 }, (value) => {
   const UInt32Value = wrappers.UInt32Value;
-  return UInt32Value.create({ value });
+  const obj = { value };
+  return UInt32Value.create(obj);
 });
-let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
-let obj = { comparator: discord_common_shallowEqualDefault };
-const result2 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("textAndImages", "goreContentSettings", UserSettings.goreContentFromProto, UserSettings.goreContentToProto, { comparator: discord_common_shallowEqualDefault });
-let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
+ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
+const defineParentalControlledSetting2 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting;
+const goreContentFromProto = UserSettings.goreContentFromProto;
+let obj2 = { comparator: shallowEqualDefault };
+const goreContentToProto = UserSettings.goreContentToProto;
+const result2 = defineParentalControlledSetting2("textAndImages", "goreContentSettings", goreContentFromProto, goreContentToProto, obj2);
+ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
 const result3 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("privacy", "defaultMessageRequestRestricted", (value) => {
   value = undefined;
   if (value != null) {
@@ -44,9 +54,10 @@ const result3 = ParentalControlledUserSettingsDefinitions.defineParentalControll
   return value;
 }, (value) => {
   const BoolValue = wrappers.BoolValue;
-  return BoolValue.create({ value });
+  const obj = { value };
+  return BoolValue.create(obj);
 });
-let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
+ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
 const result4 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("privacy", "defaultGuildsRestricted", (arg0) => {
   let flag = arg0;
   if (arg0 == null) {
@@ -54,7 +65,7 @@ const result4 = ParentalControlledUserSettingsDefinitions.defineParentalControll
   }
   return flag;
 }, (arg0) => arg0);
-let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
+ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
 const result5 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("privacy", "defaultGuildsRestrictedV2", (value) => {
   value = undefined;
   if (value != null) {
@@ -63,9 +74,10 @@ const result5 = ParentalControlledUserSettingsDefinitions.defineParentalControll
   return value;
 }, (value) => {
   const BoolValue = wrappers.BoolValue;
-  return BoolValue.create({ value });
+  const obj = { value };
+  return BoolValue.create(obj);
 });
-let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
+ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
 const result6 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("privacy", "friendSourceFlags", (value) => {
   value = undefined;
   if (value != null) {
@@ -77,9 +89,10 @@ const result6 = ParentalControlledUserSettingsDefinitions.defineParentalControll
   return value;
 }, (value) => {
   const UInt32Value = wrappers.UInt32Value;
-  return UInt32Value.create({ value });
+  const obj = { value };
+  return UInt32Value.create(obj);
 });
-let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
+ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
 const result7 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("privacy", "dropsOptedOut", (value) => {
   let flag;
   if (value != null) {
@@ -91,9 +104,10 @@ const result7 = ParentalControlledUserSettingsDefinitions.defineParentalControll
   return flag;
 }, (value) => {
   const BoolValue = wrappers.BoolValue;
-  return BoolValue.create({ value });
+  const obj = { value };
+  return BoolValue.create(obj);
 });
-let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
+ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
 const result8 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("privacy", "quests3PDataOptedOut", (value) => {
   let flag;
   if (value != null) {
@@ -105,10 +119,11 @@ const result8 = ParentalControlledUserSettingsDefinitions.defineParentalControll
   return flag;
 }, (value) => {
   const BoolValue = wrappers.BoolValue;
-  return BoolValue.create({ value });
+  const obj = { value };
+  return BoolValue.create(obj);
 });
-let ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
-let obj2 = { comparator: discord_common_shallowEqualDefault };
+ParentalControlledUserSettingsDefinitions = ParentalControlledUserSettingsDefinitions_mod;
+const obj3 = { comparator: SpendingLimitUtils.spendingLimitEqual };
 const result9 = ParentalControlledUserSettingsDefinitions.defineParentalControlledSetting("safetySettings", "spendingLimitSettings", (oneTimePurchaseLimit) => {
   oneTimePurchaseLimit = undefined;
   if (oneTimePurchaseLimit != null) {
@@ -116,30 +131,31 @@ const result9 = ParentalControlledUserSettingsDefinitions.defineParentalControll
   }
   let tmp2 = null;
   if (null != oneTimePurchaseLimit) {
-    const obj = { amount: null, currency: null };
     const _Number = Number;
-    obj.amount = Number(oneTimePurchaseLimit.amount);
-    obj.currency = oneTimePurchaseLimit.currency;
-    tmp2 = obj;
+    tmp2 = { amount: Number(oneTimePurchaseLimit.amount), currency: oneTimePurchaseLimit.currency };
+    const obj = { amount: Number(oneTimePurchaseLimit.amount), currency: oneTimePurchaseLimit.currency };
   }
   return tmp2;
 }, (arg0) => {
+  let amount;
+  let create2;
+  let currency;
+  let obj2;
   if (null == arg0) {
     const SpendingLimitSettings2 = preloaded_user_settings.SpendingLimitSettings;
     return SpendingLimitSettings2.create({});
   } else {
     ({ amount, currency } = arg0);
     const SpendingLimitSettings = preloaded_user_settings.SpendingLimitSettings;
-    const obj = { oneTimePurchaseLimit: null };
+    const create = SpendingLimitSettings.create;
+    const obj = { oneTimePurchaseLimit: create2(obj2) };
     const SpendingLimit = preloaded_user_settings.SpendingLimit;
-    const obj2 = { amount: null, currency: null };
     const _String = String;
-    obj2.amount = String(amount);
-    obj2.currency = currency;
-    obj.oneTimePurchaseLimit = SpendingLimit.create(obj2);
-    return SpendingLimitSettings.create(obj);
+    create2 = SpendingLimit.create;
+    obj2 = { amount: String(amount), currency };
+    return create(obj);
   }
-}, { comparator: SpendingLimitUtils.spendingLimitEqual });
+}, obj3);
 const result10 = size.fileFinishedImporting("modules/user_settings/family_center/ParentalControlledUserSettings.tsx");
 
 export const ParentalControlledExplicitContent = result;

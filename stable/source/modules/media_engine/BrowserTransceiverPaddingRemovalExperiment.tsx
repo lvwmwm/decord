@@ -1,16 +1,16 @@
-// Module ID: 14106
-// Function ID: 14107
+// Module ID: 13353
+// Function ID: 13354
 // Name: BrowserTransceiverPaddingRemovalExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 14106 (BrowserTransceiverPaddingRemovalExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13353 (BrowserTransceiverPaddingRemovalExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-04-browser-transceiver-padding-removal", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-04-browser-transceiver-padding-removal", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/BrowserTransceiverPaddingRemovalExperiment.tsx");
 

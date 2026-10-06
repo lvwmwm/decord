@@ -1,24 +1,28 @@
-// Module ID: 7616
-// Function ID: 7617
+// Module ID: 6761
+// Function ID: 6762
 // Name: transitionToGuild
-// Dependencies: [1074, 7494, 5830, 1101, 2]
+// Dependencies: [1086, 6639, 6401, 1113, 2]
 // Exports: transitionToGuild
 
-// Module 7616 (transitionToGuild)
-import Constants from "Constants" /* 1074 */;
-import router_utils from "router_utils" /* 1101 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5830 */;
-import getChannelIdForGuildTransition from "getChannelIdForGuildTransition" /* 7494 */;
+// Module 6761 (transitionToGuild)
+import Constants from "Constants" /* 1086 */;
+import router_utils from "router_utils" /* 1113 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6401 */;
+import getChannelIdForGuildTransition from "getChannelIdForGuildTransition" /* 6639 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
 let result = size.fileFinishedImporting("modules/routing/transitionToGuild.native.tsx");
 
-export const transitionToGuild = function transitionToGuild(guildId, arg1) {
-  const channelIdForGuildTransition = getChannelIdForGuildTransition.getChannelIdForGuildTransition(guildId);
-  const result = DeprecatedLayoutAnimation.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "sa", delete: "isArray" });
-  const obj3 = router_utils;
-  const obj4 = { navigationReplace: true };
+export const transitionToGuild = function transitionToGuild(id, arg1) {
+  const obj = getChannelIdForGuildTransition;
+  const channelIdForGuildTransition = obj.getChannelIdForGuildTransition(id);
+  const obj2 = DeprecatedLayoutAnimation;
+  const result = obj2.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "filter", delete: "section" });
+  const transitionTo = router_utils.transitionTo;
+  const obj3 = { navigationReplace: true };
+  router_utils;
+  const CHANNELResult = Routes.CHANNEL(id, channelIdForGuildTransition);
   const merged = Object.assign(arg1);
-  obj3.transitionTo(Routes.CHANNEL(guildId, channelIdForGuildTransition), obj4);
+  transitionTo(CHANNELResult, obj3);
 };

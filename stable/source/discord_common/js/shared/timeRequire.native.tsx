@@ -1,10 +1,10 @@
-// Module ID: 7766
-// Function ID: 7767
+// Module ID: 6916
+// Function ID: 6917
 // Name: timeRequire
 // Dependencies: [10, 2]
 // Exports: default
 
-// Module 7766 (timeRequire)
+// Module 6916 (timeRequire)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import size from "module_2" /* 2 */;
 
@@ -12,19 +12,23 @@ const result = size.fileFinishedImporting("../discord_common/js/shared/timeRequi
 
 export default function timeRequire(arg0, fn) {
   const timestamp = Date.now();
+  const tmp2 = fn();
   const diff = Date.now() - timestamp;
   if (diff >= 5) {
+    const obj2 = require;
     if (typeof require.getModules === "function") {
       const modules = obj2.getModules();
       const _Object = Object;
       const keys = Object.keys(modules);
       const _HermesInternal = HermesInternal;
-      AppStartPerformanceDefault.mark("\u{1F3C3}", "Require " + arg0 + " (" + keys.filter((item) => modules[item].isInitialized).length + " modules)", diff);
+      const length = keys.filter((item) => modules[item].isInitialized).length;
+      const obj = AppStartPerformanceDefault;
+      obj.mark("\u{1F3C3}", "Require " + arg0 + " (" + length + " modules)", diff);
     } else {
       const _HermesInternal2 = HermesInternal;
-      AppStartPerformanceDefault.mark("\u{1F3C3}", "Require " + arg0, diff);
+      const obj3 = AppStartPerformanceDefault;
+      obj3.mark("\u{1F3C3}", "Require " + arg0, diff);
     }
-    obj2 = require;
   }
-  return fn();
+  return tmp2;
 };

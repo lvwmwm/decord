@@ -1,17 +1,19 @@
-// Module ID: 10957
-// Function ID: 10958
+// Module ID: 10163
+// Function ID: 10164
 // Name: utils/openGiftModal
-// Dependencies: [4991, 10958, 1980, 2]
+// Dependencies: [5040, 10164, 1987, 2]
 // Exports: openGiftModal
 
-// Module 10957 (utils/openGiftModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+// Module 10163 (utils/openGiftModal)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/native/utils/openGiftModal.tsx");
 
 export const openGiftModal = function openGiftModal(navigationParams) {
+  navigationParams = navigationParams.navigationParams;
   const merged = Object.assign(navigationParams, Object.assign({ navigationParams: 0 }));
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10958, dependencyMap.paths), merged, "gift_modal_key", navigationParams.navigationParams);
+  const obj = ModalActionCreatorsDefault;
+  obj.pushLazy(asyncRequire(10164, dependencyMap.paths), merged, "gift_modal_key", navigationParams);
 };

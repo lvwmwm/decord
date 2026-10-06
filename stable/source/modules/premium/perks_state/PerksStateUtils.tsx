@@ -1,30 +1,31 @@
-// Module ID: 1378
-// Function ID: 1379
+// Module ID: 1384
+// Function ID: 1385
 // Name: PerksStateUtils
-// Dependencies: [32, 1379, 1086, 1380, 2]
+// Dependencies: [32, 1385, 1098, 1386, 2]
 // Exports: getPerkConfig, hasPerk, parseServerPerks
 
-// Module 1378 (PerksStateUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import types from "types" /* 1379 */;
-import user from "user" /* 1380 */;
-import _slicedToArray from "module_32" /* 32 */;
+// Module 1384 (PerksStateUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import types from "types" /* 1385 */;
+import user from "user" /* 1386 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function parseServerPerkConfigKind(kind) {
   if (null != kind.kind) {
     const type = kind.kind.type;
     if (types.PerkConfigType.INCREASED_FILE_UPLOAD_SIZE === type) {
-      const obj2 = { type: tmp(1379).PerkConfigType.INCREASED_FILE_UPLOAD_SIZE, maxSize: kind.kind.max_size };
+      const obj2 = { type: types.PerkConfigType.INCREASED_FILE_UPLOAD_SIZE, maxSize: kind.kind.max_size };
       return obj2;
-    } else if (tmp(1379).PerkConfigType.INCREASED_GUILD_LIMIT === type) {
-      const obj = { type: tmp(1379).PerkConfigType.INCREASED_GUILD_LIMIT, maxGuilds: kind.kind.max_guilds };
+    } else if (types.PerkConfigType.INCREASED_GUILD_LIMIT === type) {
+      const obj = { type: types.PerkConfigType.INCREASED_GUILD_LIMIT, maxGuilds: kind.kind.max_guilds };
       return obj;
     }
   }
 }
 function getPerkSource(perks, MONTHLY_ORBS) {
   if (null != perks) {
+    let source;
     const _String = String;
     const tmp3 = perks.configByPerk[String(undefined, MONTHLY_ORBS)];
     let source1;
@@ -32,7 +33,7 @@ function getPerkSource(perks, MONTHLY_ORBS) {
       source1 = tmp3.source;
     }
     if (null != source1) {
-      let source = tmp3.source;
+      source = tmp3.source;
     } else {
       let flag = false;
       if (null != perks) {
@@ -41,10 +42,12 @@ function getPerkSource(perks, MONTHLY_ORBS) {
         const rounded = Math.floor(MONTHLY_ORBS / 64);
         let hasItem = rounded < activePerksBitmask.length;
         if (hasItem) {
+          const has = BigFlagUtilsAll.has;
+          BigFlagUtilsAll;
           const deserializer = BigFlagUtilsAll;
-          const obj = BigFlagUtilsAll;
           const deserializeResult = deserializer.deserialize(activePerksBitmask[rounded]);
-          hasItem = obj.has(deserializeResult, BigFlagUtilsAll.getFlag(MONTHLY_ORBS % 64));
+          const obj = BigFlagUtilsAll;
+          hasItem = has(deserializeResult, obj.getFlag(MONTHLY_ORBS % 64));
         }
         flag = hasItem;
       }
@@ -56,27 +59,25 @@ function getPerkSource(perks, MONTHLY_ORBS) {
     return source;
   }
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/perks_state/PerksStateUtils.tsx");
 
 export const parseServerPerks = function parseServerPerks(perks) {
+  let first;
+  let tmp7;
   if (null == perks) {
     return null;
   } else {
     const obj2 = {};
     const _Object = Object;
     const entries = Object.entries(perks.config_by_perk);
-    const tmp11 = entries[Symbol.iterator]();
-    while (tmp11 !== undefined) {
-      let tmp5 = _slicedToArray(tmp2, 2);
-      let tmp6 = tmp5[1];
-      let obj = { source: tmp6.source, kind: null };
-      obj.kind = parseServerPerkConfigKind(tmp6);
-      obj2[tmp5[0]] = obj;
+    const tmp12 = entries[Symbol.iterator]();
+    while (tmp12 !== undefined) {
+      [first, tmp7] = tmp2;
+      let obj = { source: tmp7.source, kind: parseServerPerkConfigKind(tmp7) };
+      obj2[first] = obj;
       continue;
     }
-    const obj3 = { activePerksBitmask: perks.active_perks_bitmask, configByPerk: obj2, rulesVersion: perks.rules_version };
-    return obj3;
+    return { activePerksBitmask: perks.active_perks_bitmask, configByPerk: obj2, rulesVersion: perks.rules_version };
   }
 };
 export const hasPerk = function hasPerk(perks, MONTHLY_ORBS) {
@@ -88,10 +89,12 @@ export const hasPerk = function hasPerk(perks, MONTHLY_ORBS) {
     const rounded = Math.floor(MONTHLY_ORBS / 64);
     let hasItem = rounded < activePerksBitmask.length;
     if (hasItem) {
+      const has = BigFlagUtilsAll.has;
+      BigFlagUtilsAll;
       const deserializer = BigFlagUtilsAll;
-      const obj = BigFlagUtilsAll;
       const deserializeResult = deserializer.deserialize(activePerksBitmask[rounded]);
-      hasItem = obj.has(deserializeResult, BigFlagUtilsAll.getFlag(MONTHLY_ORBS % 64));
+      const obj = BigFlagUtilsAll;
+      hasItem = has(deserializeResult, obj.getFlag(MONTHLY_ORBS % 64));
     }
     return hasItem;
   }

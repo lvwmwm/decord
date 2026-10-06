@@ -1,7 +1,303 @@
 // Module ID: 1932
 // Function ID: 1933
 // Dependencies: []
+// Exports: createDateTimeFormat, createDateTimeFormats
 
 // Module 1932
+const f84223 = (arg0, arg1) => arg1 || "'";
+const re0 = /(?:[Eec]{1,6}|G{1,5}|(?:[yYu]+|U{1,5})|[ML]{1,5}|d{1,2}|a|[hkHK]{1,2}|m{1,2}|s{1,2}|z{1,4})(?=([^']*'[^']*')*[^']*$)/g;
+const re1 = /[QxXVOvZASjgFDwWIQqH]/;
+let closure_2 = { month: ["numeric", "2-digit", "short", "long", "narrow"], weekday: ["short", "short", "short", "long", "narrow"], era: ["short", "short", "short", "long", "narrow"] };
+const length = ["weekday", "era", "year", "month", "day"];
+const length2 = ["hour", "minute", "second", "timeZoneName"];
 
-export default { COMMON_OPEN_DISCORD: "\u041E\u0442\u0432\u0430\u0440\u044F\u043D\u0435 \u043D\u0430 Discord", COMMON_SIGN_UP_NOW: "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0430\u0439 \u0441\u0435 \u0441\u0435\u0433\u0430", FOOTER_READY_TO_TRY_DISCORD: "\u0413\u043E\u0442\u043E\u0432/\u0430 \u043B\u0438 \u0441\u0438 \u0434\u0430 \u043E\u043F\u0438\u0442\u0430\u0448 Discord? \u0411\u0435\u0437\u043F\u043B\u0430\u0442\u043D\u043E \u0435!", FOOTER_JOIN_OVER_PLAYERS_TODAY: "\u041F\u0420\u0418\u0421\u042A\u0415\u0414\u0418\u041D\u0418 \u0421\u0415 \u041A\u042A\u041C \u041D\u0410\u0414 {num} \u041C\u0418\u041B\u0418\u041E\u041D\u0410 \u0418\u0413\u0420\u0410\u0427\u0418 \u0421\u0415\u0413\u0410", NAVIGATION_HOME: "\u041D\u0430\u0447\u0430\u043B\u043E", NAVIGATION_FEATURES: "\u0425\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0438", NAVIGATION_NITRO: "Nitro", NAVIGATION_DOWNLOAD: "\u0421\u0432\u0430\u043B\u044F\u043D\u0435", NAVIGATION_PARTNERS: "\u041F\u0430\u0440\u0442\u043D\u044C\u043E\u0440\u0438", NAVIGATION_BLOG: "\u0411\u043B\u043E\u0433", NAVIGATION_BUILD: "\u0412\u0435\u0440\u0441\u0438\u044F", NAVIGATION_MORE: "\u041E\u0449\u0435", NAVIGATION_STATUS: "\u0421\u044A\u0441\u0442\u043E\u044F\u043D\u0438\u0435", NAVIGATION_FEEDBACK: "\u041E\u0431\u0440\u0430\u0442\u043D\u0430 \u0432\u0440\u044A\u0437\u043A\u0430", NAVIGATION_HELP_AND_SUPPORT: "\u041F\u043E\u043C\u043E\u0449 \u0438 \u043F\u043E\u0434\u0434\u0440\u044A\u0436\u043A\u0430", NAVIGATION_GUIDELINES: "\u041D\u0430\u0441\u043E\u043A\u0438", NAVIGATION_HYPESQUAD: "HypeSquad", NAVIGATION_STREAMKIT: "\u0418\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u0438 \u0437\u0430 \u0441\u0442\u0440\u0438\u0439\u043C", NAVIGATION_COMPANY: "\u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F", NAVIGATION_JOBS: "\u0420\u0430\u0431\u043E\u0442\u0430", NAVIGATION_SECURITY: "\u0421\u0438\u0433\u0443\u0440\u043D\u043E\u0441\u0442", NAVIGATION_DEVELOPERS: "\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u0446\u0438", NAVIGATION_DOCUMENTATION: "\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u044F", NAVIGATION_BRANDING: "\u0411\u0440\u0430\u043D\u0434\u0438\u0440\u0430\u043D\u0435", NAVIGATION_LOGIN: "\u0412\u043B\u0438\u0437\u0430\u043D\u0435", NAVIGATION_OPEN: "\u041E\u0442\u0432\u0430\u0440\u044F\u043D\u0435", NAVIGATION_PRODUCT: "\u041F\u0440\u043E\u0434\u0443\u043A\u0442", NAVIGATION_RESOURCES: "\u0420\u0435\u0441\u0443\u0440\u0441\u0438", NAVIGATION_APPLICATIONS: "\u041F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F", NAVIGATION_TERMS: "\u0423\u0441\u043B\u043E\u0432\u0438\u044F", NAVIGATION_PRIVACY: "\u041F\u043E\u0432\u0435\u0440\u0438\u0442\u0435\u043B\u043D\u043E\u0441\u0442", NAVIGATION_ABOUT: "\u0417\u0430 \u043D\u0430\u0441", NAVIGATION_VERIFICATION: "\u041F\u043E\u0442\u0432\u044A\u0440\u0436\u0434\u0435\u043D\u0438\u0435", NAVIGATION_RICH_PRESENCE: "Rich Presence", NAVIGATION_PRESS_INQUIRIES: "\u0417\u0430\u043F\u0438\u0442\u0432\u0430\u043D\u0438\u044F \u043E\u0442 \u043F\u0440\u0435\u0441\u0430\u0442\u0430", NAVIGATION_OPEN_SOURCE: "\u041E\u0442\u0432\u043E\u0440\u0435\u043D \u043A\u043E\u0434", NAVIGATION_SUPPORT: "\u041F\u043E\u0434\u0434\u0440\u044A\u0436\u043A\u0430", NAVIGATION_DEVELOPER_PORTAL: "\u041F\u043E\u0440\u0442\u0430\u043B \u0437\u0430 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u0446\u0438", NAVIGATION_COMMUNITY: "\u041E\u0431\u0449\u043D\u043E\u0441\u0442", NAVIGATION_SAFETY: "\u0411\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442", NAVIGATION_SAFETY_CENTER: "\u0426\u0435\u043D\u0442\u044A\u0440 \u0437\u0430 \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442", NAVIGATION_MOD_ACADEMY: "\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u0437\u0430 \u043C\u043E\u0434\u0435\u0440\u0430\u0442\u043E\u0440\u0438", NAVIGATION_DISCOVER: "\u041E\u0442\u043A\u0440\u0438\u0439", NAVIGATION_SERVERS: "\u0421\u044A\u0440\u0432\u044A\u0440\u0438", NAVIGATION_CAREERS: "\u041A\u0430\u0440\u0438\u0435\u0440\u0438", NAVIGATION_QUESTS: "\u041A\u0443\u0435\u0441\u0442\u043E\u0432\u0435", STOREFRONT_BENEFITS_SUMMARY: "{count, plural, one {# \u0435\u043A\u0441\u043A\u043B\u0443\u0437\u0438\u0432\u043D\u043E \u043F\u0440\u0435\u0434\u0438\u043C\u0441\u0442\u0432\u043E} other {# \u0435\u043A\u0441\u043A\u043B\u0443\u0437\u0438\u0432\u043D\u0438 \u043F\u0440\u0435\u0434\u0438\u043C\u0441\u0442\u0432\u0430}}", STOREFRONT_BENEFITS_TITLE: "\u0421\u0430\u043C\u043E \u0437\u0430 \u0442\u043E\u0432\u0430 \u043D\u0438\u0432\u043E", STOREFRONT_SERVER_SUBSCRIPTION: "\u0410\u0431\u043E\u043D\u0430\u043C\u0435\u043D\u0442 \u0437\u0430 \u0441\u044A\u0440\u0432\u044A\u0440", STOREFRONT_USER_SUBSCRIPTION: "\u041B\u0438\u0447\u0435\u043D \u0430\u0431\u043E\u043D\u0430\u043C\u0435\u043D\u0442", STOREFRONT_MORE_BENEFITS: "+ \u043E\u0449\u0435 {count, plural, one {# \u043F\u0440\u0435\u0434\u0438\u043C\u0441\u0442\u0432\u043E} other {# \u043F\u0440\u0435\u0434\u0438\u043C\u0441\u0442\u0432\u0430}}", NUMBER_ABBREVIATIONS_MILLION: "{num}M", NUMBER_ABBREVIATIONS_THOUSAND: "{num}K", DYNAMIC_LINKS_IOS_APP_PREVIEW_DESCRIPTION: "\u0422\u0432\u043E\u0435\u0442\u043E \u043C\u044F\u0441\u0442\u043E \u0437\u0430 \u0433\u043E\u0432\u043E\u0440\u0435\u043D\u0435 \u0441 \u043E\u0431\u0449\u043D\u043E\u0441\u0442\u0438 \u0438 \u043F\u0440\u0438\u044F\u0442\u0435\u043B\u0438.", SELF_XSS_HEADER: "\u0417\u0430\u0434\u0440\u044A\u0436!", SELF_XSS_LINE_1: "\u0410\u043A\u043E \u043D\u044F\u043A\u043E\u0439 \u0442\u0438 \u043A\u0430\u0436\u0435 \u0434\u0430 \u043A\u043E\u043F\u0438\u0440\u0430\u0448 \u0438 \u043F\u043E\u0441\u0442\u0430\u0432\u0438\u0448 \u043D\u0435\u0449\u043E \u0442\u0443\u043A, \u0438\u043C\u0430 \u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442 11/10 \u0434\u0430 \u0441\u0438 \u043E\u0431\u0435\u043A\u0442 \u043D\u0430 \u0438\u0437\u043C\u0430\u043C\u0430.", SELF_XSS_LINE_2: "\u041F\u043E\u0441\u0442\u0430\u0432\u044F\u043D\u0435\u0442\u043E \u043D\u0430 \u043A\u0430\u043A\u0432\u043E\u0442\u043E \u0438 \u0434\u0430 \u0435 \u0442\u0443\u043A \u0449\u0435 \u0434\u0430\u0434\u0435 \u0434\u043E\u0441\u0442\u044A\u043F \u0434\u043E \u0442\u0432\u043E\u044F \u043F\u0440\u043E\u0444\u0438\u043B \u0432 Discord \u043D\u0430 \u0445\u0430\u043A\u0435\u0440\u0438\u0442\u0435.", SELF_XSS_LINE_3: "\u041E\u0441\u0432\u0435\u043D \u0430\u043A\u043E \u043D\u0435 \u0441\u0438 \u043D\u0430\u044F\u0441\u043D\u043E \u0442\u043E\u0447\u043D\u043E \u043A\u0430\u043A\u0432\u043E \u0432\u044A\u0440\u0448\u0438\u0448, \u0437\u0430\u0442\u0432\u043E\u0440\u0438 \u0442\u043E\u0437\u0438 \u043F\u0440\u043E\u0437\u043E\u0440\u0435\u0446 \u0438 \u0431\u044A\u0434\u0438 \u0432 \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442.", SELF_XSS_LINE_4: "\u0410\u043A\u043E \u043E\u0431\u0430\u0447\u0435 \u0440\u0430\u0437\u0431\u0438\u0440\u0430\u0448 \u043A\u0430\u043A\u0432\u043E \u0442\u043E\u0447\u043D\u043E \u043F\u0440\u0430\u0432\u0438\u0448, \u0442\u0440\u044F\u0431\u0432\u0430 \u0434\u0430 \u0434\u043E\u0439\u0434\u0435\u0448 \u0434\u0430 \u0440\u0430\u0431\u043E\u0442\u0438\u0448 \u0441 \u043D\u0430\u0441 {url}" };
+export const createDateTimeFormat = function createDateTimeFormat(str) {
+  let pattern;
+  if (!regex.test(str)) {
+    const obj = { pattern: str.replace(/'([^']*)'/g, f84223) };
+    const pattern1 = obj.pattern;
+    str = obj.pattern;
+    if (pattern1.indexOf("{ampm}") > -1) {
+      obj.hour12 = true;
+      ({ pattern: obj.pattern12, pattern } = obj);
+      const str4 = pattern.replace("{ampm}", "");
+      obj.pattern = str4.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
+    }
+    return obj;
+  }
+};
+export const createDateTimeFormats = function createDateTimeFormats(formats) {
+  let availableFormats;
+  let dateFormats;
+  let medium;
+  let pattern;
+  let pattern2;
+  let pattern3;
+  let pattern4;
+  let str10;
+  let str16;
+  let str22;
+  let str5;
+  let timeFormats;
+  let tmp;
+  let tmp2;
+  let tmp3;
+  ({ availableFormats, timeFormats, dateFormats, medium } = formats);
+  const items = [];
+  const items1 = [];
+  const items2 = [];
+  let tmp4;
+  const keys = Object.keys();
+  if (keys !== undefined) {
+    let obj = tmp2;
+    let tmp6 = tmp3;
+    tmp4 = tmp2;
+    let str = keys[tmp];
+    while (str !== undefined) {
+      let hasOwnPropertyResult = availableFormats.hasOwnProperty(str);
+      if (hasOwnPropertyResult) {
+        let str2 = availableFormats[str];
+        let _Array = Array;
+        let arr4 = str.match(/M/g) || [];
+        let self = this;
+        let self2 = this;
+        let _Array1 = new _Array(arr4.length + 1);
+        let _Array2 = Array;
+        let arr6 = str.match(/E/g) || [];
+        let self3 = this;
+        let self4 = this;
+        let _Array21 = new _Array2(arr6.length + 1);
+        let str3 = str2;
+        if (_Array1.length > 2) {
+          str3 = str2.replace(/(M|L)+/, _Array1.join("$1"));
+        }
+        let str4 = str3;
+        if (_Array21.length > 2) {
+          str4 = str3.replace(/([Eec])+/, _Array21.join("$1"));
+        }
+        let tmp9 = regex;
+        let tmp10;
+        if (!regex.test(str4)) {
+          let obj9 = { pattern: str5.replace(/'([^']*)'/g, f84223) };
+          str5 = obj9.pattern;
+          let pattern1 = obj9.pattern;
+          tmp10 = obj9;
+          if (pattern1.indexOf("{ampm}") > -1) {
+            obj9.hour12 = true;
+            ({ pattern: obj2.pattern12, pattern } = obj9);
+            let str6 = pattern.replace("{ampm}", "");
+            obj9.pattern = str6.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
+            tmp10 = obj9;
+          }
+        }
+        hasOwnPropertyResult = tmp10;
+        obj = tmp10;
+        tmp6 = str4;
+      }
+      tmp2 = obj;
+      tmp3 = tmp6;
+      if (!hasOwnPropertyResult) {
+        continue;
+      } else {
+        let arr = items.push(obj);
+        let num = 0;
+        let flag = true;
+        if (0 < length2.length) {
+          let arr9 = length2;
+          flag = false;
+          while (!obj.hasOwnProperty(length2[num])) {
+            let sum = num + 1;
+            num = sum;
+            flag = true;
+            if (sum >= arr9.length) {
+              break;
+            }
+          }
+        }
+        if (flag) {
+          let arr2 = items2.push(tmp6);
+          tmp2 = obj;
+          tmp3 = tmp6;
+          continue;
+        } else {
+          let num2 = 0;
+          let flag2 = true;
+          if (0 < length.length) {
+            let arr10 = length;
+            flag2 = false;
+            while (!obj.hasOwnProperty(length[num2])) {
+              let sum1 = num2 + 1;
+              num2 = sum1;
+              flag2 = true;
+              if (sum1 >= arr10.length) {
+                break;
+              }
+            }
+          }
+          tmp2 = obj;
+          tmp3 = tmp6;
+          if (!flag2) {
+            continue;
+          } else {
+            let arr3 = items1.push(tmp6);
+            tmp2 = obj;
+            tmp3 = tmp6;
+            continue;
+          }
+          continue;
+        }
+        continue;
+      }
+      continue;
+    }
+  }
+  let tmp22 = tmp4;
+  let num3 = 0;
+  let tmp23 = tmp4;
+  if (0 < items1.length) {
+    do {
+      let tmp25 = tmp22;
+      let num4 = 0;
+      if (0 < items2.length) {
+        do {
+          let str7 = medium.replace("{0}", items1[num3]);
+          let str8 = str7.replace("{1}", items2[num4]);
+          let str9 = str8.replace(/^[,\s]+|[,\s]+$/gi, "");
+          let obj10;
+          let tmp28;
+          if (!regex.test(str9)) {
+            obj10 = { pattern: str10.replace(/'([^']*)'/g, f84223) };
+            str10 = obj10.pattern;
+            let pattern5 = obj10.pattern;
+            tmp28 = obj10;
+            if (pattern5.indexOf("{ampm}") > -1) {
+              obj10.hour12 = true;
+              ({ pattern: obj3.pattern12, pattern: pattern2 } = obj10);
+              let str11 = pattern2.replace("{ampm}", "");
+              obj10.pattern = str11.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
+              tmp28 = obj10;
+            }
+          }
+          if (tmp28) {
+            let arr5 = items.push(tmp28);
+          }
+          num4 = num4 + 1;
+          tmp25 = tmp28;
+        } while (num4 < items2.length);
+      }
+      num3 = num3 + 1;
+      tmp22 = tmp25;
+      tmp23 = tmp25;
+    } while (num3 < items1.length);
+  }
+  let tmp31 = tmp23;
+  let tmp32 = tmp23;
+  const keys1 = Object.keys();
+  if (keys1 !== undefined) {
+    let tmp34 = tmp31;
+    tmp32 = tmp31;
+    while (keys1[0] !== undefined) {
+      let hasOwnPropertyResult1 = timeFormats.hasOwnProperty(str12);
+      if (hasOwnPropertyResult1) {
+        let str13 = timeFormats[str12];
+        let _Array3 = Array;
+        let arr12 = str12.match(/M/g) || [];
+        let self5 = this;
+        let self6 = this;
+        let _Array31 = new _Array3(arr12.length + 1);
+        let _Array4 = Array;
+        let arr14 = str12.match(/E/g) || [];
+        let self7 = this;
+        let self8 = this;
+        let _Array41 = new _Array4(arr14.length + 1);
+        let str14 = str13;
+        if (_Array31.length > 2) {
+          str14 = str13.replace(/(M|L)+/, _Array31.join("$1"));
+        }
+        let str15 = str14;
+        if (_Array41.length > 2) {
+          str15 = str14.replace(/([Eec])+/, _Array41.join("$1"));
+        }
+        let tmp39;
+        if (!regex.test(str15)) {
+          let obj11 = { pattern: str16.replace(/'([^']*)'/g, f84223) };
+          str16 = obj11.pattern;
+          let pattern6 = obj11.pattern;
+          tmp39 = obj11;
+          if (pattern6.indexOf("{ampm}") > -1) {
+            obj11.hour12 = true;
+            ({ pattern: obj4.pattern12, pattern: pattern3 } = obj11);
+            let str17 = pattern3.replace("{ampm}", "");
+            obj11.pattern = str17.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
+            tmp39 = obj11;
+          }
+        }
+        hasOwnPropertyResult1 = tmp39;
+        tmp34 = tmp39;
+      }
+      tmp31 = tmp34;
+      if (!hasOwnPropertyResult1) {
+        continue;
+      } else {
+        let arr7 = items.push(tmp34);
+        tmp31 = tmp34;
+        continue;
+      }
+      continue;
+    }
+  }
+  const keys2 = Object.keys();
+  if (keys2 !== undefined) {
+    let tmp44 = tmp32;
+    while (keys2[0] !== undefined) {
+      let hasOwnPropertyResult2 = dateFormats.hasOwnProperty(str18);
+      if (hasOwnPropertyResult2) {
+        let str19 = dateFormats[str18];
+        let _Array5 = Array;
+        let arr17 = str18.match(/M/g) || [];
+        let self9 = this;
+        let self10 = this;
+        let _Array51 = new _Array5(arr17.length + 1);
+        let _Array6 = Array;
+        let arr19 = str18.match(/E/g) || [];
+        let self11 = this;
+        let self12 = this;
+        let _Array61 = new _Array6(arr19.length + 1);
+        let str20 = str19;
+        if (_Array51.length > 2) {
+          str20 = str19.replace(/(M|L)+/, _Array51.join("$1"));
+        }
+        let str21 = str20;
+        if (_Array61.length > 2) {
+          str21 = str20.replace(/([Eec])+/, _Array61.join("$1"));
+        }
+        let tmp49;
+        if (!regex.test(str21)) {
+          let obj12 = { pattern: str22.replace(/'([^']*)'/g, f84223) };
+          str22 = obj12.pattern;
+          let pattern7 = obj12.pattern;
+          tmp49 = obj12;
+          if (pattern7.indexOf("{ampm}") > -1) {
+            obj12.hour12 = true;
+            ({ pattern: obj5.pattern12, pattern: pattern4 } = obj12);
+            let str23 = pattern4.replace("{ampm}", "");
+            obj12.pattern = str23.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
+            tmp49 = obj12;
+          }
+        }
+        hasOwnPropertyResult2 = tmp49;
+        tmp44 = tmp49;
+      }
+      tmp32 = tmp44;
+      if (!hasOwnPropertyResult2) {
+        continue;
+      } else {
+        let arr8 = items.push(tmp44);
+        tmp32 = tmp44;
+        continue;
+      }
+      continue;
+    }
+  }
+  return items;
+};

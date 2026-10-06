@@ -1,51 +1,50 @@
-// Module ID: 5662
-// Function ID: 5663
+// Module ID: 5726
+// Function ID: 5727
 // Name: GuildVerificationStore
-// Dependencies: [2059, 2105, 2099, 2063, 1372, 1074, 4414, 1385, 573, 11, 504, 2]
+// Dependencies: [2069, 2111, 2105, 2073, 1378, 1086, 4458, 1391, 585, 11, 504, 2]
 
-// Module 5662 (GuildVerificationStore)
+// Module 5726 (GuildVerificationStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRecord from "GuildRecord" /* 2059 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4414 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import GuildRecord from "GuildRecord" /* 2069 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4458 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildRoleStore from "GuildRoleStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
+let c10;
+let c9;
+let metroImportAll;
 function recomputeGuild(guildId) {
+  let date2;
+  let date3;
   _require = guildId;
   clearGuild(guildId);
   set.add(guildId);
   const guild = GuildStore.getGuild(guildId);
   const currentUser = UserStore.getCurrentUser();
-  let tmp4 = null != guild;
-  if (tmp4) {
-    tmp4 = guild.verificationLevel !== constants.NONE;
-  }
   if (null != guild) {
     if (null != currentUser) {
-      if (tmp4) {
+      if (null != guild && guild.verificationLevel !== constants.NONE) {
         if (!isGuildOwner(guild, currentUser)) {
           const member = GuildMemberStore.getMember(guild.id, currentUser.id);
           if (null == member) {
-            let tmp13 = tmp6;
-            if (tmp6) {
-              tmp13 = null != member;
-            }
+            let tmp14 = tmp6 && null != member;
             let flag = false;
-            if (tmp13) {
+            if (tmp14) {
               const roles = member.roles;
-              tmp13 = !roles.includes(guild.verificationRoleId);
-              flag = tmp13;
+              tmp14 = !roles.includes(guild.verificationRoleId);
+              flag = tmp14;
             }
             let role;
-            if (tmp13) {
+            if (tmp14) {
               role = GuildRoleStore.getRole(guild.id, guild.verificationRoleId);
             }
             let num3 = 0;
@@ -55,7 +54,7 @@ function recomputeGuild(guildId) {
             let flag4 = false;
             let flag5 = false;
             let flag6 = false;
-            if (tmp4) {
+            if (null != guild && guild.verificationLevel !== constants.NONE) {
               num3 = 0;
               num4 = 0;
               flag2 = false;
@@ -67,41 +66,40 @@ function recomputeGuild(guildId) {
                 let flag7 = false;
                 if (null != member) {
                   const _Set = Set;
+                  const self = this;
+                  const self2 = this;
                   set = new Set();
                   const roles2 = member.roles;
                   for (const item10071 of roles2) {
-                    let tmp22 = item10071;
+                    let tmp21 = item10071;
                     let role1 = GuildRoleStore.getRole(guild.id, item10071);
                     let managed = null == role1;
                     if (!managed) {
-                      managed = tmp25.managed;
+                      managed = tmp24.managed;
                     }
                     if (!managed) {
-                      let addResult1 = set.add(tmp22);
+                      let addResult1 = set.add(tmp21);
                     }
                     continue;
                   }
                   const _Date = Date;
+                  const self3 = this;
+                  let self4 = this;
+                  let tmp29 = null == member.joinedAt;
                   const date = new Date("2022-12-02 00:00:00");
-                  let tmp32 = null == member.joinedAt;
-                  if (!tmp32) {
+                  if (!tmp29) {
                     const _Date2 = Date;
+                    const self5 = this;
+                    self4 = this;
+                    tmp29 = new Date(member.joinedAt) < date;
                     const date1 = new Date(member.joinedAt);
-                    tmp32 = date1 < date;
                   }
                   const features = guild.features;
-                  let tmp40 = !tmp6;
-                  if (!tmp6) {
-                    tmp40 = !tmp39;
-                  }
-                  if (tmp40) {
-                    tmp40 = set.size > 0;
-                  }
                   flag7 = false;
-                  if (tmp40) {
+                  const tmp35 = !(null != guild && null != guild.verificationRoleId) && !(features.has(constants3.GUILD_ONBOARDING_EVER_ENABLED) && !tmp29) && set.size > 0;
+                  if (tmp35) {
                     flag7 = true;
                   }
-                  tmp39 = features.has(constants3.GUILD_ONBOARDING_EVER_ENABLED) && !tmp32;
                 }
                 num3 = 0;
                 num4 = 0;
@@ -113,26 +111,28 @@ function recomputeGuild(guildId) {
                 if (!flag7) {
                   const _Date3 = Date;
                   const result = 60000 * constants2.ACCOUNT_AGE;
-                  const diff = +currentUser.createdAt + result - Date.now();
+                  const tmp36 = +currentUser.createdAt;
+                  const diff = tmp36 + result - Date.now();
                   const _Date4 = Date;
                   const result1 = 60000 * constants2.MEMBER_AGE;
-                  const diff1 = +guild.joinedAt + result1 - Date.now();
+                  const tmp41 = +guild.joinedAt;
+                  const diff1 = tmp41 + result1 - Date.now();
                   let flag8 = false;
                   let flag9 = false;
                   let flag10 = false;
                   let flag11 = false;
+                  const tmp45 = guild.verificationLevel >= constants.LOW && !currentUser.isClaimed();
                   if (!currentUser.isStaff()) {
-                    let tmp53 = guild.verificationLevel >= tmp49.MEDIUM;
-                    if (tmp53) {
-                      tmp53 = diff > 0;
+                    let tmp48 = guild.verificationLevel >= tmp44.MEDIUM;
+                    const tmp46 = guild.verificationLevel >= constants.LOW && !currentUser.verified;
+                    const tmp47 = guild.verificationLevel >= constants.VERY_HIGH;
+                    if (tmp48) {
+                      tmp48 = diff > 0;
                     }
-                    flag8 = guild.verificationLevel >= tmp49.HIGH && diff1 > 0;
-                    flag9 = tmp53;
-                    flag10 = guild.verificationLevel >= tmp49.VERY_HIGH;
-                    flag11 = guild.verificationLevel >= tmp49.LOW && !currentUser.verified;
-                    const tmp51 = guild.verificationLevel >= tmp49.LOW && !currentUser.verified;
-                    const tmp52 = guild.verificationLevel >= tmp49.VERY_HIGH;
-                    const tmp54 = guild.verificationLevel >= tmp49.HIGH && diff1 > 0;
+                    flag8 = guild.verificationLevel >= constants.HIGH && diff1 > 0;
+                    flag9 = tmp48;
+                    flag10 = tmp47;
+                    flag11 = tmp46;
                   }
                   flag2 = flag8;
                   flag3 = flag9;
@@ -140,10 +140,7 @@ function recomputeGuild(guildId) {
                   flag5 = flag11;
                   num3 = diff1;
                   num4 = diff;
-                  flag6 = guild.verificationLevel >= constants.LOW && !currentUser.isClaimed();
-                  const tmp41 = +currentUser.createdAt;
-                  const tmp46 = +guild.joinedAt;
-                  const tmp50 = guild.verificationLevel >= constants.LOW && !currentUser.isClaimed();
+                  flag6 = tmp45;
                 }
               }
             }
@@ -159,11 +156,16 @@ function recomputeGuild(guildId) {
               const _setTimeout = setTimeout;
               const _Math = Math;
               const items1 = [];
-              HermesBuiltin.arraySpread(items, 0);
+              HermesBuiltin.arraySpread(items1, items, 0);
               const _Math2 = Math;
-              timerId = setTimeout(() => DispatcherDefault.dispatch({ type: "GUILD_VERIFICATION_CHECK", guildId }), HermesBuiltin.apply(items1, Math));
+              timerId = setTimeout(() => {
+                const obj = DispatcherDefault;
+                const obj2 = { type: "GUILD_VERIFICATION_CHECK", guildId };
+                return obj.dispatch(obj2);
+              }, HermesBuiltin.apply(max, items1, Math));
             }
-            const obj = { notClaimed: flag6, notEmailVerified: flag5, notPhoneVerified: flag4, newAccount: flag3, newMember: flag2, missingVerificationRole: flag, verificationRole: role, canChat: null, accountDeadline: null, memberDeadline: null, timeoutRef: null };
+            let obj = { notClaimed: flag6, notEmailVerified: flag5, notPhoneVerified: flag4, newAccount: flag3, newMember: flag2, missingVerificationRole: flag, verificationRole: role, canChat: !flag6, accountDeadline: date2, memberDeadline: date3, timeoutRef: timerId };
+            const tmp59 = closure_14;
             if (!flag6) {
               flag6 = flag5;
             }
@@ -179,23 +181,24 @@ function recomputeGuild(guildId) {
             if (!flag6) {
               flag6 = flag;
             }
-            obj.canChat = !flag6;
             const _Date5 = Date;
             const _Date6 = Date;
-            const date2 = new Date(Date.now() + num4);
-            obj.accountDeadline = date2;
+            const self6 = this;
+            const self7 = this;
             const _Date7 = Date;
             const _Date8 = Date;
-            const date3 = new Date(Date.now() + num3);
-            obj.memberDeadline = date3;
-            obj.timeoutRef = timerId;
-            closure_14[guildId] = obj;
+            const self8 = this;
+            const self9 = this;
+            date2 = new Date(Date.now() + num4);
+            tmp59[guildId] = obj;
+            date3 = new Date(Date.now() + num3);
           } else {
             let num = member.flags;
+            const hasFlag = require("FlagUtils").hasFlag;
+            require("FlagUtils");
             if (num == null) {
               num = 0;
             }
-            const obj2 = require("FlagUtils");
           }
         }
       }
@@ -203,62 +206,68 @@ function recomputeGuild(guildId) {
   }
 }
 function clearGuild(arg0) {
-  if (null != dependencyMap[arg0]) {
+  const tmp = arg0;
+  const tmp2 = closure_14;
+  if (null != closure_14[arg0]) {
     const _clearTimeout = clearTimeout;
-    clearTimeout(tmp3.timeoutRef);
+    clearTimeout(closure_14[arg0].timeoutRef);
   }
-  delete tmp[tmp2];
+  delete tmp2[tmp];
 }
 function handleCreateOrUpdateGuild(guild) {
   set.delete(guild.guild.id);
   recomputeGuild(guild.guild.id);
 }
 const isGuildOwner = GuildRecord.isGuildOwner;
-({ VerificationLevels: closure_8, VerificationCriteria: closure_9, GuildFeatures: c10 } = Constants);
+({ VerificationLevels: metroImportAll, VerificationCriteria: c9, GuildFeatures: c10 } = Constants);
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 let closure_12 = { notClaimed: false, notEmailVerified: false, notPhoneVerified: false, newAccount: false, newMember: false, missingVerificationRole: false, canChat: true };
 let set = new Set();
-const dependencyMap = {};
-const Store = initializeDefault.Store;
+const authStore2 = {};
+const Store = get_initializedDefault.Store;
 class GuildVerificationStore extends Store {
+  initialize() {
+    this.waitFor(GuildMemberStore, GuildRoleStore, GuildStore, UserStore);
+  }
+  getCheck(guildId) {
+    let tmp5;
+    if (null == guildId) {
+      tmp5 = closure_12;
+    } else {
+      if (!set.has(guildId)) {
+        recomputeGuild(guildId);
+      }
+      tmp5 = closure_14[guildId];
+      if (tmp5 == null) {
+        tmp5 = closure_12;
+      }
+    }
+    return tmp5;
+  }
+  canChatInGuild(guild_id) {
+    return this.getCheck(guild_id).canChat;
+  }
 }
 const prototype = GuildVerificationStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(GuildMemberStore, GuildRoleStore, GuildStore, UserStore);
-};
-prototype["getCheck"] = function getCheck(guild_id) {
-  if (null == guild_id) {
-    let tmp5 = closure_12;
-  } else {
-    if (!set.has(guild_id)) {
-      recomputeGuild(guild_id);
-    }
-    tmp5 = dependencyMap[guild_id];
-    if (tmp5 == null) {
-      tmp5 = closure_12;
-    }
-  }
-  return tmp5;
-};
-prototype["canChatInGuild"] = function canChatInGuild(guild_id) {
-  return this.getCheck(guild_id).canChat;
-};
 GuildVerificationStore.displayName = "GuildVerificationStore";
-const guildVerificationStore = new GuildVerificationStore(DispatcherDefault, {
+let obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     set.clear();
     for (const key10008 in closure_14) {
-      let tmp7 = dependencyMap[key10008];
-      if (null != tmp7) {
+      let tmp5 = closure_14[key10008];
+      let tmp3 = key10008;
+      let tmp4 = closure_14;
+      if (null != tmp5) {
         let _clearTimeout = clearTimeout;
-        let clearTimeoutResult = clearTimeout(tmp7.timeoutRef);
+        let clearTimeoutResult = clearTimeout(tmp5.timeoutRef);
       }
-      delete tmp[tmp2];
+      delete tmp4[tmp3];
       continue;
     }
   },
   CONNECTION_CLOSED: function handleConnectionClosed() {
-    const keys = SnowflakeUtilsDefault.keys(closure_14);
+    const obj = SnowflakeUtilsDefault;
+    const keys = obj.keys(closure_14);
     const item = keys.forEach(clearGuild);
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate() {
@@ -266,21 +275,24 @@ const guildVerificationStore = new GuildVerificationStore(DispatcherDefault, {
   },
   GUILD_CREATE: handleCreateOrUpdateGuild,
   GUILD_UPDATE: handleCreateOrUpdateGuild,
-  GUILD_DELETE: function handleDeleteGuild(arg0) {
-    if (null != dependencyMap[arg0.guild.id]) {
+  GUILD_DELETE: function handleDeleteGuild(guild) {
+    const id = guild.guild.id;
+    const tmp = closure_14;
+    if (null != closure_14[id]) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(tmp3.timeoutRef);
+      clearTimeout(closure_14[id].timeoutRef);
     }
-    delete tmp[tmp2];
+    delete tmp[id];
   },
   GUILD_MEMBER_UPDATE: function handleGuildMemberUpdate(guildId) {
     guildId = guildId.guildId;
+    const id = guildId.user.id;
     const currentUser = UserStore.getCurrentUser();
-    let id;
+    let id1;
     if (currentUser != null) {
-      id = currentUser.id;
+      id1 = currentUser.id;
     }
-    if (guildId.user.id !== id) {
+    if (id !== id1) {
       return false;
     } else {
       set.delete(guildId);
@@ -290,7 +302,8 @@ const guildVerificationStore = new GuildVerificationStore(DispatcherDefault, {
   GUILD_VERIFICATION_CHECK: function handleGuildVerificationCheck(guildId) {
     recomputeGuild(guildId.guildId);
   }
-});
+};
+const guildVerificationStore = new GuildVerificationStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("stores/GuildVerificationStore.tsx");
 
 export default guildVerificationStore;

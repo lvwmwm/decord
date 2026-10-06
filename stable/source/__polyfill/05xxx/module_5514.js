@@ -1,46 +1,67 @@
 // Module ID: 5514
 // Function ID: 5515
-// Dependencies: [5462]
+// Dependencies: [5515]
 
 // Module 5514
-const require = globalThis.__r;
+import _mod5515 from "module_5515" /* 5515 */;
 
-const require = arg1;
-const dependencyMap = arg6;
-let closure_2 = [6, 7, 99];
+let hasOwnProperty;
 
-export default {
-  get(buffer, Compression, arg2) {
-    let prop = Compression;
-    if (Compression) {
-      let hasItem = undefined === Compression.Compression;
-      if (!hasItem) {
-        hasItem = closure_2.includes(Compression.Compression.value);
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
       }
-      prop = hasItem;
+      tmp3 = !tmp4;
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat;
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat.value;
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength;
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength.value;
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
     }
-    if (prop) {
-      Compression.type = "image/jpeg";
-      const sum = arg2 + Compression.JPEGInterchangeFormat.value;
-      buffer = buffer.buffer;
-      Compression.image = buffer.slice(sum, sum + Compression.JPEGInterchangeFormatLength.value);
-      require("module_5462").deferInit(Compression, "base64", function() {
-        return require("module_5462").getBase64Image(this.image);
-      });
-      const obj = require("module_5462");
-    }
-    return Compression;
+    continue;
   }
-};
+});
+tmp3(_mod5515, exports);

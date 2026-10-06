@@ -1,11 +1,11 @@
-// Module ID: 5248
-// Function ID: 5249
+// Module ID: 5312
+// Function ID: 5313
 // Name: StaticRouteRendering
-// Dependencies: [1115, 2]
+// Dependencies: [1127, 2]
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 5248 (StaticRouteRendering)
-import util from "util" /* 1115 */;
+// Module 5312 (StaticRouteRendering)
+import intl5 from "intl" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/StaticRouteRendering.tsx");
@@ -14,23 +14,23 @@ export const staticRouteToTranslation = function staticRouteToTranslation(id) {
   if ("home" !== id) {
     if ("guide" !== id) {
       if ("browse" === id) {
-        const intl3 = util.intl;
-        return intl3.string(util.t.et6wav);
+        const intl3 = intl5.intl;
+        return intl3.string(intl5.t.et6wav);
       } else if ("customize" === id) {
-        const intl2 = util.intl;
-        return intl2.string(util.t.h9mGOP);
+        const intl2 = intl5.intl;
+        return intl2.string(intl5.t.h9mGOP);
       } else if ("linked-roles" === id) {
-        const intl = util.intl;
-        return intl.string(util.t.ghtnss);
+        const intl = intl5.intl;
+        return intl.string(intl5.t.ghtnss);
       } else {
         return null;
       }
     }
   }
-  const intl4 = util.intl;
-  return intl4.string(util.t.VbpLyU);
+  const intl4 = intl5.intl;
+  return intl4.string(intl5.t.VbpLyU);
 };
-export const staticRouteToItemString = function staticRouteToItemString(GuildRoleStore, id, itemId, id) {
+export const staticRouteToItemString = function staticRouteToItemString(GuildRoleStore, id, itemId, id2) {
   if ("linked-roles" === id) {
     if (null == id) {
       return null;

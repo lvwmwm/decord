@@ -1,45 +1,54 @@
-// Module ID: 16949
-// Function ID: 16950
+// Module ID: 16249
+// Function ID: 16250
 // Name: VibegrationsTemplates
-// Dependencies: [1115, 3710, 2]
-// Exports: templateImportMessage, vibegrationsTemplates
+// Dependencies: [12644, 1127, 3718, 2]
+// Exports: startVibegrationsTemplateProject, templateImportMessage, vibegrationsTemplates
 
-// Module 16949 (VibegrationsTemplates)
-import util from "util" /* 1115 */;
-import _modDef3710 from "module_3710" /* 3710 */;
+// Module 16249 (VibegrationsTemplates)
+import intl9 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12644 */;
 import size from "module_2" /* 2 */;
 
+const sendUserMessage = VibegrationsConnectionStore.sendUserMessage;
 const result = size.fileFinishedImporting("modules/vibegrations/VibegrationsTemplates.tsx");
 
 export const VIBEGRATIONS_TEMPLATE_IDS = ["moderation-bot", "feature-showcase", "collaborative-whiteboard", "rust-sphere"];
 export const vibegrationsTemplates = function vibegrationsTemplates() {
-  const obj = { id: "moderation-bot", name: null, description: null };
-  const intl = util.intl;
-  obj.name = intl.string(_modDef3710.idRAwG);
-  const intl2 = util.intl;
-  obj.description = intl2.string(_modDef3710["oP90O/"]);
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  const obj = { id: "moderation-bot", name: intl.string(_modDef3718.idRAwG), description: intl2.string(_modDef3718["oP90O/"]), wizard: true };
+  intl = intl9.intl;
+  intl2 = intl9.intl;
   const items = [obj, , , ];
-  const obj2 = { id: "feature-showcase", name: null, description: null };
-  const intl3 = util.intl;
-  obj2.name = intl3.string(_modDef3710.BLDsiz);
-  const intl4 = util.intl;
-  obj2.description = intl4.string(_modDef3710.jK1PL5);
+  const obj2 = { id: "feature-showcase", name: intl3.string(_modDef3718.BLDsiz), description: intl4.string(_modDef3718.jK1PL5) };
+  intl3 = intl9.intl;
+  intl4 = intl9.intl;
   items[1] = obj2;
-  const obj3 = { id: "collaborative-whiteboard", name: null, description: null };
-  const intl5 = util.intl;
-  obj3.name = intl5.string(_modDef3710["+abXa8"]);
-  const intl6 = util.intl;
-  obj3.description = intl6.string(_modDef3710.OZYPMR);
+  const obj3 = { id: "collaborative-whiteboard", name: intl5.string(_modDef3718["+abXa8"]), description: intl6.string(_modDef3718.OZYPMR) };
+  intl5 = intl9.intl;
+  intl6 = intl9.intl;
   items[2] = obj3;
-  const obj4 = { id: "rust-sphere", name: null, description: null };
-  const intl7 = util.intl;
-  obj4.name = intl7.string(_modDef3710.ieAgex);
-  const intl8 = util.intl;
-  obj4.description = intl8.string(_modDef3710["5yvj+f"]);
+  const obj4 = { id: "rust-sphere", name: intl7.string(_modDef3718.ieAgex), description: intl8.string(_modDef3718["5yvj+f"]) };
+  intl7 = intl9.intl;
+  intl8 = intl9.intl;
   items[3] = obj4;
   return items;
 };
-export const templateImportMessage = function templateImportMessage(name) {
-  const intl = util.intl;
-  return intl.formatToPlainString(_modDef3710["9D9L0S"], { templateName: name });
+export const templateImportMessage = function templateImportMessage(templateName) {
+  const intl = intl9.intl;
+  const obj = { templateName };
+  return intl.formatToPlainString(_modDef3718["9D9L0S"], obj);
+};
+export const startVibegrationsTemplateProject = function startVibegrationsTemplateProject(arg0, name) {
+  name = name.name;
+  const intl = intl9.intl;
+  const obj = { templateId: name.id };
+  sendUserMessage(arg0, intl.formatToPlainString(_modDef3718["9D9L0S"], { templateName: name }), undefined, obj);
 };

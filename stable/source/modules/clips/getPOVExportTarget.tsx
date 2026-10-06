@@ -1,10 +1,10 @@
-// Module ID: 14293
-// Function ID: 14294
+// Module ID: 13540
+// Function ID: 13541
 // Name: getPOVExportTarget
 // Dependencies: [2]
 // Exports: default
 
-// Module 14293 (getPOVExportTarget)
+// Module 13540 (getPOVExportTarget)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/clips/getPOVExportTarget.tsx");
@@ -12,9 +12,8 @@ const result = size.fileFinishedImporting("modules/clips/getPOVExportTarget.tsx"
 export default function getPOVExportTarget(duration_secs) {
   if (null != duration_secs.duration_secs) {
     if (null != duration_secs.clip_sync_timestamp) {
-      const obj = { duration: duration_secs.duration_secs, syncTimestamp: null };
       const _Date = Date;
-      obj.syncTimestamp = Date.parse(duration_secs.clip_sync_timestamp);
+      const obj = { duration: duration_secs.duration_secs, syncTimestamp: Date.parse(duration_secs.clip_sync_timestamp) };
       return obj;
     }
   }

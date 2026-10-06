@@ -1,9 +1,9 @@
-// Module ID: 1082
-// Function ID: 1083
+// Module ID: 1094
+// Function ID: 1095
 // Name: GlobalDiscoveryAppsConstants
 // Dependencies: [2]
 
-// Module 1082 (GlobalDiscoveryAppsConstants)
+// Module 1094 (GlobalDiscoveryAppsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/global_discovery_apps/GlobalDiscoveryAppsConstants.tsx");

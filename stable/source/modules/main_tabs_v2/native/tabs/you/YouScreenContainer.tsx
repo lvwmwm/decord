@@ -1,78 +1,178 @@
-// Module ID: 17253
-// Function ID: 17254
+// Module ID: 16603
+// Function ID: 16604
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 11381, 21, 4788, 576, 1612, 16356, 1478, 4648, 17254, 1365, 2]
+// Dependencies: [19, 17, 10581, 21, 4837, 588, 558, 576, 1619, 15647, 1485, 4697, 16604, 1371, 2]
 
-// Module 17253 (YouScreenContainer)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16356 */;
-import noop from "module_19" /* 19 */;
+// Module 16603 (YouScreenContainer)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import useChatLayoutDefault from "useChatLayout" /* 4697 */;
+import MainTabsConstants from "MainTabsConstants" /* 10581 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15647 */;
+import YouScreenDefault from "YouScreen" /* 16604 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const useWindowDimensionsDefault = tmp(1478);
-const useChatLayoutDefault = tmp(4648);
-const YouScreenDefault = tmp(17254);
-require = fn;
-const View = fn(17).View;
-const RootNavigatorScreen = fn(11381).RootNavigatorScreen;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj = { container: { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xl }, androidContainer: null, wrapper: null };
-let obj3 = { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xl };
-obj.androidContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
-let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
-obj.wrapper = { flex: 1, borderRadius: nativeDefault.radii.xl, overflow: "hidden" };
-let closure_6 = createStyles.createStyles(obj);
-let obj5 = { flex: 1, borderRadius: nativeDefault.radii.xl, overflow: "hidden" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");
+let route;
 
-export default noop.memo(function YouScreenContainer(route) {
+let obj2;
+let obj3;
+let obj4;
+const View = react_native.View;
+const RootNavigatorScreen = MainTabsConstants.RootNavigatorScreen;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { container: obj2, androidContainer: obj3, wrapper: obj4 };
+obj2 = { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xl };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
+obj4 = { flex: 1, borderRadius: nativeDefault.radii.xl, overflow: "hidden" };
+let closure_6 = createStyles(obj);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+  let initialTab;
+  let items;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(15);
   route = route.route;
-  let items1 = closure_6();
-  let tmp = importDefault;
-  let tmp5Result = dependencyMap;
-  const trackTabPerformance = TabsPerformanceTracker.useTrackTabPerformance(RootNavigatorScreen.YOU);
+  const tmp4 = closure_6();
+  const top = useSafeAreaInsetsDefault().top;
+  const obj2 = TabsPerformanceTracker;
+  const trackTabPerformance = obj2.useTrackTabPerformance(RootNavigatorScreen.YOU);
   if (route != null) {
     const params = route.params;
     if (params != null) {
-      const initialTab = params.initialTab;
+      initialTab = params.initialTab;
     }
   }
+  const width = tmp5(1485)().width;
   if (useChatLayoutDefault().isChatBesideChannelList) {
-    const items = [items1.container, ];
-    let tmp7;
-    if (tmp3Result.isAndroid()) {
-      const obj2 = {};
-      const merged = Object.assign(items1.androidContainer);
-      obj2.paddingTop = useSafeAreaInsetsDefault().top;
-      tmp7 = obj2;
+    if (cResult[2] === top) {
+      let tmp10;
+      if (cResult[3] === tmp4.androidContainer) {
+        tmp10 = cResult[4];
+      }
+      if (cResult[5] === tmp4.container) {
+        let tmp14;
+        let tmp16Result;
+        if (cResult[6] === tmp10) {
+          tmp14 = cResult[7];
+        }
+        if (cResult[8] === initialTab) {
+          if (cResult[9] === tmp4.wrapper) {
+            let tmp15;
+            if (cResult[10] === width) {
+              tmp15 = cResult[11];
+            }
+            if (cResult[12] === tmp14) {
+              let tmp19;
+              if (cResult[13] === tmp15) {
+                tmp19 = cResult[14];
+              }
+              tmp7 = tmp19;
+            }
+            const tmp22 = <View style={tmp14}>{tmp15}</View>;
+            cResult[12] = tmp14;
+            cResult[13] = tmp15;
+            cResult[14] = tmp22;
+            tmp19 = tmp22;
+          }
+        }
+        const tmpResult = utils_PlatformUtils;
+        if (tmpResult.isAndroid()) {
+          const obj4 = { style: items, children: null };
+          items = [tmp4.wrapper, ];
+          const obj5 = { maxWidth: 0.6 * width };
+          items[1] = obj5;
+          tmp16Result = tmp16(View, obj4);
+        } else {
+          const obj7 = { initialTab };
+          tmp16Result = tmp16(tmp5(16604), obj7);
+        }
+        cResult[8] = initialTab;
+        cResult[9] = tmp4.wrapper;
+        cResult[10] = width;
+        cResult[11] = tmp16Result;
+        tmp15 = tmp16Result;
+      }
+      const items1 = [tmp4.container, tmp10];
+      cResult[5] = tmp4.container;
+      cResult[6] = tmp10;
+      cResult[7] = items1;
+      tmp14 = items1;
     }
-    const obj3 = { style: null, children: null };
-    items[1] = tmp7;
-    obj3.style = items;
-    tmp3Result = tmp3(1365);
-    if (tmp3Result2.isAndroid()) {
-      const obj4 = { style: null, children: null };
-      items1 = [, ];
-      items1[0] = items1.wrapper;
-      const obj5 = { maxWidth: 0.6 * useWindowDimensionsDefault().width };
+    let tmp11;
+    const tmpResult2 = utils_PlatformUtils;
+    if (tmpResult2.isAndroid()) {
+      const obj8 = { paddingTop: top };
+      const merged = Object.assign(tmp4.androidContainer);
+      tmp11 = obj8;
+    }
+    cResult[2] = top;
+    cResult[3] = tmp4.androidContainer;
+    cResult[4] = tmp11;
+    tmp10 = tmp11;
+  } else if (cResult[0] !== initialTab) {
+    const tmp9 = jsx(YouScreenDefault, { initialTab });
+    cResult[0] = initialTab;
+    cResult[1] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[1];
+  }
+  return tmp7;
+}) : ((route) => {
+  let initialTab;
+  let items1;
+  let tmp6Result;
+  let tmp6Result2;
+  route = route.route;
+  const tmp = closure_6();
+  const top = useSafeAreaInsetsDefault().top;
+  const obj = TabsPerformanceTracker;
+  const trackTabPerformance = obj.useTrackTabPerformance(RootNavigatorScreen.YOU);
+  if (route != null) {
+    const params = route.params;
+    if (params != null) {
+      initialTab = params.initialTab;
+    }
+  }
+  const width = tmp2(1485)().width;
+  if (useChatLayoutDefault().isChatBesideChannelList) {
+    const items = [tmp.container, ];
+    let tmp9;
+    const tmp4Result = utils_PlatformUtils;
+    if (tmp4Result.isAndroid()) {
+      const obj2 = { paddingTop: top };
+      const merged = Object.assign(tmp.androidContainer);
+      tmp9 = obj2;
+    }
+    const obj3 = { style: items, children: tmp6Result };
+    items[1] = tmp9;
+    const tmp4Result2 = utils_PlatformUtils;
+    if (tmp4Result2.isAndroid()) {
+      const obj4 = { style: items1, children: null };
+      items1 = [tmp.wrapper, ];
+      const obj5 = { maxWidth: 0.6 * width };
       items1[1] = obj5;
-      obj4.style = items1;
-      tmp = YouScreenDefault;
-      const obj6 = { initialTab };
-      tmp5Result = tmp5(tmp, obj6);
-      obj4.children = tmp5Result;
-      let tmp5Result3 = tmp5(tmp6, obj4);
+      tmp6Result = tmp6(tmp8, obj4);
     } else {
       const obj7 = { initialTab };
-      tmp5Result3 = tmp5(YouScreenDefault, obj7);
+      tmp6Result = tmp6(tmp2(16604), obj7);
     }
-    obj3.children = tmp5Result3;
-    tmp5(View, obj3);
-    tmp3Result2 = tmp3(1365);
+    tmp6Result2 = tmp6(tmp8, obj3);
   } else {
     const obj8 = { initialTab };
-    return tmp5(YouScreenDefault, obj8);
+    tmp6Result2 = tmp6(tmp2(16604), obj8);
   }
-});
+  return tmp6Result2;
+}));
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");
+
+export default memoResult;

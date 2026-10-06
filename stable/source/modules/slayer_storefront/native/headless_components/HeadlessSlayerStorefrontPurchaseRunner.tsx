@@ -1,81 +1,201 @@
-// Module ID: 11104
-// Function ID: 11105
+// Module ID: 10311
+// Function ID: 10312
 // Name: HeadlessSlayerStorefrontPurchaseRunner
-// Dependencies: [19, 7698, 1074, 1241, 11105, 1364, 2]
-// Exports: HeadlessSlayerStorefrontPurchaseRunner
+// Dependencies: [19, 6845, 1086, 558, 576, 1253, 1370, 10312, 2]
 
-// Module 11104 (HeadlessSlayerStorefrontPurchaseRunner)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import noop from "module_19" /* 19 */;
+// Module 10311 (HeadlessSlayerStorefrontPurchaseRunner)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 6845 */;
+import react_mod from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let onPurchaseComplete, ref;
 
-const require = fn;
-let useNativeCheckoutStore = fn(7698).useNativeCheckoutStore;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/slayer_storefront/native/headless_components/HeadlessSlayerStorefrontPurchaseRunner.tsx");
-
-export const HeadlessSlayerStorefrontPurchaseRunner = function HeadlessSlayerStorefrontPurchaseRunner(attempt) {
+let react = react_mod;
+let useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
+const AnalyticEvents = Constants.AnalyticEvents;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPurchaseComplete) => {
+  let analyticsLocations;
+  let attempt;
+  let closure_3;
+  let closure_4;
+  let first;
+  let onPurchaseError;
+  let ref2;
+  let sku;
+  let skuId;
+  let tmp5;
+  let obj = attempt(onPurchaseError[4]);
+  const cResult = obj.c(27);
+  ({ skuId, sku, analyticsLocations, attempt } = onPurchaseComplete);
+  onPurchaseComplete = onPurchaseComplete.onPurchaseComplete;
+  onPurchaseError = onPurchaseComplete.onPurchaseError;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s(analyticsFields) {
+      return analyticsFields.analyticsFields;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  let tmp3 = useNativeCheckoutStore;
+  const tmp4 = useNativeCheckoutStore(first);
+  react = tmp4;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor(setCheckoutFailed) {
+        return setCheckoutFailed.setCheckoutFailed;
+      }
+    }
+    cResult[1] = P;
+    tmp5 = P;
+  } else {
+    class P {
+      constructor(setCheckoutFailed) {
+        return setCheckoutFailed.setCheckoutFailed;
+      }
+    }
+  }
+  const tmp3Result = tmp3(tmp5);
+  useNativeCheckoutStore = tmp3Result;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor(orderRecord) {
+        return orderRecord.orderRecord;
+      }
+    }
+    cResult[2] = S;
+  } else {
+    class S {
+      constructor(orderRecord) {
+        return orderRecord.orderRecord;
+      }
+    }
+  }
+  let closure_5 = tmp3(tmp7);
+  tmp3(tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+    cResult[3] = C;
+  } else {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+  }
+  let closure_6 = tmp3(tmp9);
+  tmp3(tmp9);
+  ref = react.useRef(false);
+  if (cResult[4] === tmp4) {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+  }
+  class L {
+    constructor() {
+      if (!ref.current) {
+        tmp.current = true;
+        const obj = AnalyticsUtilsDefault;
+        obj.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_3);
+        closure_4();
+      }
+      onPurchaseError();
+    }
+  }
+  cResult[4] = tmp4;
+  cResult[5] = onPurchaseError;
+  cResult[6] = tmp3Result;
+  cResult[7] = L;
+}) : ((attempt) => {
+  let analyticsLocations;
+  let closure_3;
+  let closure_4;
+  let id;
+  let onPurchaseError;
+  let sku;
+  let skuId;
   attempt = attempt.attempt;
   ({ onPurchaseComplete: importDefault, onPurchaseError } = attempt);
   useNativeCheckoutStore = undefined;
   onPurchaseError = undefined;
-  closure_9 = undefined;
+  let closure_9;
+  let ref2;
   ({ skuId, sku, analyticsLocations } = attempt);
   const tmp = useNativeCheckoutStore((analyticsFields) => analyticsFields.analyticsFields);
-  noop = tmp;
+  react = tmp;
   const tmp2 = useNativeCheckoutStore((setCheckoutFailed) => setCheckoutFailed.setCheckoutFailed);
   useNativeCheckoutStore = tmp2;
   let tmp3 = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
-  closure_5 = tmp3;
+  let closure_5 = tmp3;
   const tmp4 = useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
-  closure_6 = tmp4;
-  noop.useRef(false);
+  let closure_6 = tmp4;
+  let obj = react;
+  ref = react.useRef(false);
   const items = [tmp, tmp2, onPurchaseError];
-  onPurchaseError = noop.useCallback(() => {
+  onPurchaseError = react.useCallback(() => {
     if (!ref.current) {
       tmp.current = true;
-      AnalyticsUtilsDefault.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_3);
+      const obj = AnalyticsUtilsDefault;
+      obj.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_3);
       closure_4();
     }
     onPurchaseError();
   }, items);
-  let obj2 = { skuId, sku, analyticsLoadId: tmp.load_id, analyticsLocations, orderId: null, analyticsData: null, onPurchaseComplete: null, onPurchaseError: null, onPurchasePending: null };
-  let id;
+  let obj2 = {
+    skuId,
+    sku,
+    analyticsLoadId: tmp.load_id,
+    analyticsLocations,
+    orderId: id,
+    analyticsData: tmp,
+    onPurchaseComplete() {
+      ref.current = true;
+      const obj = PlatformUtils;
+      if (obj.isIOS()) {
+        const obj2 = AnalyticsUtilsDefault;
+        obj2.track(AnalyticEvents.PAYMENT_FLOW_SUCCEEDED, closure_3);
+      }
+      importDefault();
+    },
+    onPurchaseError,
+    onPurchasePending() {
+
+    }
+  };
+  id = undefined;
+  const tmp6 = require("useMobileSocialLayerPurchaseSKU");
   if (tmp3 != null) {
     id = tmp3.id;
   }
-  obj2.orderId = id;
-  obj2.analyticsData = tmp;
-  obj2.onPurchaseComplete = function onPurchaseComplete() {
-    closure_7.current = true;
-    if (obj.isIOS()) {
-      AnalyticsUtilsDefault.track(AnalyticEvents.PAYMENT_FLOW_SUCCEEDED, closure_3);
-    }
-    closure_1_1();
-  };
-  obj2.onPurchaseError = onPurchaseError;
-  obj2.onPurchasePending = function onPurchasePending() {
-
-  };
-  const tmp6Result = require("useMobileSocialLayerPurchaseSKU")(obj2);
+  const tmp6Result = tmp6(obj2);
   closure_9 = tmp6Result;
-  noop.useRef(0);
+  ref2 = obj.useRef(0);
   const items1 = [attempt, tmp6Result, onPurchaseError, tmp3, tmp4];
   const effect = obj.useEffect(() => {
     if (ref2.current !== attempt) {
-      let tmp3 = closure_6;
-      if (closure_6) {
-        tmp3 = null == closure_5;
-      }
+      const tmp3 = closure_6 && null == closure_5;
       if (!tmp3) {
         tmp.current = tmp2;
-        closure_7.current = false;
-        closure_9().catch(callback);
+        ref.current = false;
         const promise = closure_9();
+        promise.catch(callback);
       }
     }
   }, items1);
   return null;
-};
+});
+const result = size.fileFinishedImporting("modules/slayer_storefront/native/headless_components/HeadlessSlayerStorefrontPurchaseRunner.tsx");
+
+export const HeadlessSlayerStorefrontPurchaseRunner = tmp2;

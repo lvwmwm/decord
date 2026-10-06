@@ -1,17 +1,18 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 14035
+// Function ID: 14036
 // Name: getCurrentEmbeddedChannel
-// Dependencies: [9345, 2041, 4692, 9346, 14779, 2]
+// Dependencies: [8496, 2051, 4741, 8498, 14031, 2]
 // Exports: default
 
-// Module 14783 (getCurrentEmbeddedChannel)
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14779 */;
-import FramesStore from "FramesStore" /* 9345 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 14035 (getCurrentEmbeddedChannel)
+import Constants from "Constants" /* 4741 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8498 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14031 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-const TransportTypes = fn(4692).TransportTypes;
-const EmbeddedSurfaceType = fn(9346).EmbeddedSurfaceType;
-const size = fn(2);
+const TransportTypes = Constants.TransportTypes;
 const result = size.fileFinishedImporting("modules/rpc/helpers/getCurrentEmbeddedChannel.tsx");
 
 export default function getCurrentEmbeddedChannel(source) {
@@ -23,7 +24,7 @@ export default function getCurrentEmbeddedChannel(source) {
     }
     if (null != surface) {
       const type = surface.type;
-      if (EmbeddedSurfaceType.MAIN !== type) {
+      if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN !== type) {
         return ChannelStore.getChannel(surface.channelId);
       }
     } else {

@@ -1,17 +1,17 @@
-// Module ID: 7740
-// Function ID: 7741
+// Module ID: 6890
+// Function ID: 6891
 // Name: ClickstreamExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 // Exports: clickstreamExperimentEnabled
 
-// Module 7740 (ClickstreamExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 6890 (ClickstreamExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-06-clickstream-analytics", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-06-clickstream-analytics", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/app_analytics/clickstream/ClickstreamExperiment.tsx");
 

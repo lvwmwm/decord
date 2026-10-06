@@ -1,32 +1,89 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 14395
+// Function ID: 14396
 // Name: useSelectedTab
-// Dependencies: [7811, 7812, 1074, 563, 7813, 1241, 2]
-// Exports: default
+// Dependencies: [6961, 6962, 1086, 558, 576, 573, 6963, 1253, 2]
 
-// Module 15152 (useSelectedTab)
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7813 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
+// Module 14395 (useSelectedTab)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 6963 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 6962 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const FamilyCenterConstants = fn(7812);
+let FamilyCenterSubPages;
+let closure_4;
+let tmp;
+const useStateFromStores = tmp(573);
 ({ FamilyCenterAction: closure_4, FamilyCenterSubPages } = FamilyCenterConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/parent_tools/hooks/useSelectedTab.tsx");
-
-export default function useSelectedMyFamilyTab() {
+const AnalyticEvents = Constants.AnalyticEvents;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let TabChange;
+  let selectedTab;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  let obj = react;
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [FamilyCenterStore];
+    const fn = function c() {
+      return selectedTab.getSelectedTab();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function s(tab) {
+      const obj = FamilyCenterActionCreatorsDefault;
+      tab = obj.selectTab(tab);
+      const obj2 = AnalyticsUtilsDefault;
+      const obj3 = { action: TabChange.TabChange, tab };
+      obj2.track(constants.FAMILY_CENTER_ACTION, obj3);
+    };
+    cResult[2] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== stateFromStores) {
+    let obj2 = { selectedTab: stateFromStores, handleTabChange: tmp8 };
+    cResult[3] = stateFromStores;
+    cResult[4] = obj2;
+    tmp9 = obj2;
+  } else {
+    tmp9 = cResult[4];
+  }
+  return tmp9;
+}) : (() => {
+  let TabChange;
+  let items;
+  let obj2;
+  let selectedTab;
   let obj = {
-    selectedTab: null,
+    selectedTab: obj2.useStateFromStores(items, () => selectedTab.getSelectedTab()),
     handleTabChange(tab) {
-      tab = FamilyCenterActionCreatorsDefault.selectTab(tab);
-      AnalyticsUtilsDefault.track(constants.FAMILY_CENTER_ACTION, { action: TabChange.TabChange, tab });
+      const obj = FamilyCenterActionCreatorsDefault;
+      tab = obj.selectTab(tab);
+      const obj2 = AnalyticsUtilsDefault;
+      const obj3 = { action: TabChange.TabChange, tab };
+      obj2.track(constants.FAMILY_CENTER_ACTION, obj3);
     }
   };
-  const items = [FamilyCenterStore];
-  obj.selectedTab = useStateFromStores.useStateFromStores(items, () => selectedTab.getSelectedTab());
+  obj2 = useStateFromStores;
+  items = [FamilyCenterStore];
   return obj;
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/hooks/useSelectedTab.tsx");
+
+export default tmp3;
 export const FAMILY_CENTER_TAB_ANALYTICS_LABELS = { [FamilyCenterSubPages.ACTIVITY]: "family_center_activity_tab", [FamilyCenterSubPages.REQUESTS]: "family_center_requests_tab", [FamilyCenterSubPages.SETTINGS]: "family_center_settings_tab", [FamilyCenterSubPages.CONTENT_AND_SOCIAL]: "family_center_content_and_social_panel", [FamilyCenterSubPages.DATA_AND_PRIVACY]: "family_center_data_and_privacy_panel", [FamilyCenterSubPages.SCREEN_TIME_CONTROLS]: "family_center_screen_time_controls_panel" };

@@ -1,16 +1,15 @@
-// Module ID: 14851
-// Function ID: 14852
+// Module ID: 14103
+// Function ID: 14104
 // Name: getVolumeForSound
-// Dependencies: [1992, 5259, 2019, 2]
+// Dependencies: [1999, 5323, 2027, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 14851 (getVolumeForSound)
-import UserSettings from "UserSettings" /* 2019 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5259 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+// Module 14103 (getVolumeForSound)
+import UserSettings from "UserSettings" /* 2027 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5323 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/soundboard/getVolumeForSound.tsx");
 
 export default function getVolumeForSound(arg0, USER) {
@@ -27,13 +26,16 @@ export default function getVolumeForSound(arg0, USER) {
     }
     tmp = num;
   }
-  const result = PerceptualVolumeUtils.amplitudeToPerceptual(tmp) / 100;
+  const obj = PerceptualVolumeUtils;
+  const result = obj.amplitudeToPerceptual(tmp) / 100;
   return Math.min(arg0 * result * Math.min(MediaEngineStore.getOutputVolume() / 100, 1), 1);
 };
 export const getPerceptualSoundboardVolume = function getPerceptualSoundboardVolume(USER) {
   let num = USER;
+  const amplitudeToPerceptual = PerceptualVolumeUtils.amplitudeToPerceptual;
+  PerceptualVolumeUtils;
   if (USER == null) {
     num = 100;
   }
-  return PerceptualVolumeUtils.amplitudeToPerceptual(num) / 100;
+  return amplitudeToPerceptual(num) / 100;
 };

@@ -1,16 +1,16 @@
-// Module ID: 14111
-// Function ID: 14112
+// Module ID: 13359
+// Function ID: 13360
 // Name: ServerLadderExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 14111 (ServerLadderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13359 (ServerLadderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-06-server-ladder", kind: "user", defaultConfig: { bitrate: 9000000, enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-06-server-ladder", kind: "user", defaultConfig: { bitrate: 9000000, enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { bitrate: 3500000, enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/ServerLadderExperiment.tsx");
 

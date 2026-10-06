@@ -1,30 +1,52 @@
-// Module ID: 18334
-// Function ID: 18335
+// Module ID: 17701
+// Function ID: 17702
 // Name: LogOutDisclaimer
-// Dependencies: [21, 14487, 4784, 1115, 2776, 6866, 2]
-// Exports: default
+// Dependencies: [21, 558, 576, 13997, 4833, 1127, 2784, 6005, 2]
 
-// Module 18334 (LogOutDisclaimer)
-import jsxProd from "jsxProd" /* 21 */;
-import util from "util" /* 1115 */;
-import _modDef2776 from "module_2776" /* 2776 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
-import ModalDisclaimer from "ModalDisclaimer" /* 14487 */;
+// Module 17701 (LogOutDisclaimer)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import _modDef2784 from "module_2784" /* 2784 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import ModalDisclaimer2 from "ModalDisclaimer" /* 13997 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let obj4;
+  let obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const ModalDisclaimer = tmp(13997).ModalDisclaimer;
+    ({ variant: "text-xs/medium", children: intl.format(_modDef2784["0DHxym"], obj4) });
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
+    const tmp7 = <ModalDisclaimer>{null}</ModalDisclaimer>;
+    obj4 = {
+      handleLogOut() {
+          const obj = AuthenticationActionCreatorsDefault;
+          obj.logout("safety_flows_enter_email_screen");
+        }
+    };
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  let intl;
+  const ModalDisclaimer = ModalDisclaimer2.ModalDisclaimer;
+  ({ variant: "text-xs/medium", children: intl.format(_modDef2784["0DHxym"], obj3) });
+  const Text = Text_Text.Text;
+  intl = intl2.intl;
+  return <ModalDisclaimer>{null}</ModalDisclaimer>;
+});
 const result = size.fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");
 
-export default function LogOutDisclaimer() {
-  const obj = { children: null };
-  const obj2 = { variant: "text-xs/medium", children: null };
-  const intl = util.intl;
-  obj2.children = intl.format(_modDef2776["0DHxym"], {
-    handleLogOut() {
-      AuthenticationActionCreatorsDefault.logout("safety_flows_enter_email_screen");
-    }
-  });
-  obj.children = jsx(Text_Text.Text, { variant: "text-xs/medium", children: null });
-  return jsx(ModalDisclaimer.ModalDisclaimer, { children: null });
-};
+export default tmp2;

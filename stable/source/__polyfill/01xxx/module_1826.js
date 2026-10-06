@@ -1,59 +1,20 @@
 // Module ID: 1826
 // Function ID: 1827
-// Dependencies: [19, 17, 1827]
-// Exports: useAnimatedValue, useEventHandlerRegistration
+// Dependencies: [1743]
+// Exports: createAnimatedPropAdapter
 
 // Module 1826
-import _mod17 from "module_17" /* 17 */;
-import _mod19 from "module_19" /* 19 */;
-import _mod1827 from "module_1827" /* 1827 */;
+import configureProps from "configureProps" /* 1743 */;
 
-const useRef = _mod19.useRef;
-const Animated = _mod17.Animated;
 
-export function useEventHandlerRegistration(arg0) {
-  return (workletEventHandler) => {
-    if (workletEventHandler.current) {
-      let findNodeHandleResult = ref(dependencyMap[2]).findNodeHandle(tmp.current);
-      if (findNodeHandleResult) {
-        if ("workletEventHandler" in workletEventHandler) {
-          workletEventHandler.workletEventHandler.registerForEvents(findNodeHandleResult);
-          workletEventHandler = workletEventHandler.workletEventHandler;
-        } else {
-          workletEventHandler.registerForEvents(findNodeHandleResult);
-        }
-      }
-      const obj = ref(dependencyMap[2]);
-    } else {
-      const _queueMicrotask = queueMicrotask;
-      queueMicrotask(function attachWorkletHandlers() {
-        const findNodeHandleResult = _mod1827.findNodeHandle(workletEventHandler.current);
-        if (findNodeHandleResult) {
-          if ("workletEventHandler" in workletEventHandler) {
-            obj2.workletEventHandler.registerForEvents(findNodeHandleResult);
-          } else {
-            obj2.registerForEvents(findNodeHandleResult);
-          }
-        }
-      });
-    }
-    return () => {
-      const findNodeHandleResult = _mod1827.findNodeHandle(workletEventHandler.current);
-      if (findNodeHandleResult) {
-        if ("workletEventHandler" in workletEventHandler) {
-          obj2.workletEventHandler.unregisterFromEvents(findNodeHandleResult);
-        } else {
-          obj2.unregisterFromEvents(findNodeHandleResult);
-        }
-      }
-    };
-  };
-}
-export const useAnimatedValue = function useAnimatedValue(arg0, arg1) {
-  const tmp = useRef(null);
-  if (null === tmp.current) {
-    value = new Animated.Value(arg0, arg1);
-    tmp.current = value;
+export const createAnimatedPropAdapter = function createAnimatedPropAdapter(arg0, arr) {
+  const obj = {};
+  if (arr != null) {
+    const item = arr.forEach((item) => {
+      obj[item] = true;
+    });
   }
-  return tmp.current;
+  const obj2 = configureProps;
+  const result = obj2.addWhitelistedNativeProps(obj);
+  return arg0;
 };

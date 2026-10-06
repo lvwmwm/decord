@@ -1,52 +1,58 @@
-// Module ID: 17955
-// Function ID: 17956
+// Module ID: 17318
+// Function ID: 17319
 // Name: getRuleInfo
-// Dependencies: [12146, 5340, 17956, 17958, 16166, 9581, 17959, 4730, 2]
+// Dependencies: [11216, 5405, 17319, 17321, 15443, 8733, 17322, 4776, 2]
 // Exports: getRuleInfo
 
-// Module 17955 (getRuleInfo)
-import Constants from "Constants" /* 12146 */;
-import _modDef17958 from "module_17958" /* 17958 */;
-import BaseRuleInfo from "BaseRuleInfo" /* 17959 */;
+// Module 17318 (getRuleInfo)
+import LinkIcon from "LinkIcon" /* 4776 */;
+import AtIcon from "AtIcon" /* 5405 */;
+import RobotIcon from "RobotIcon" /* 8733 */;
+import Constants from "Constants" /* 11216 */;
+import MenuIcon from "MenuIcon" /* 15443 */;
+import ChannelListPlusIcon from "ChannelListPlusIcon" /* 17319 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17321 */;
+import BaseRuleInfo from "BaseRuleInfo" /* 17322 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
 const result = size.fileFinishedImporting("modules/guild_automod/native/getRuleInfo.tsx");
 
 export const getRuleInfo = function getRuleInfo(triggerType, rule) {
-  const baseRuleInfo = BaseRuleInfo.getBaseRuleInfo(triggerType, rule);
+  let tmp9;
+  const obj = BaseRuleInfo;
+  const baseRuleInfo = obj.getBaseRuleInfo(triggerType, rule);
   let tmp4 = null;
   if (null != baseRuleInfo) {
     tmp4 = null;
     if (null != triggerType) {
-      const obj2 = {};
+      const obj2 = { icon: tmp9 };
       const merged = Object.assign(baseRuleInfo);
       if (AutomodTriggerType.MENTION_SPAM === triggerType) {
-        const obj3 = { IconComponent: tmp(5340).AtIcon };
-        let tmp9 = obj3;
-      } else if (tmp8.KEYWORD === triggerType) {
-        const obj4 = { IconComponent: tmp(17956).ChannelListPlusIcon };
-        tmp9 = obj4;
+        tmp9 = { IconComponent: AtIcon.AtIcon };
+        const obj3 = { IconComponent: AtIcon.AtIcon };
+      } else if (AutomodTriggerType.KEYWORD === triggerType) {
+        tmp9 = { IconComponent: ChannelListPlusIcon.ChannelListPlusIcon };
+        const obj4 = { IconComponent: ChannelListPlusIcon.ChannelListPlusIcon };
       } else {
-        if (tmp8.ML_SPAM !== triggerType) {
-          if (tmp8.USER_PROFILE !== triggerType) {
-            if (tmp8.DEFAULT_KEYWORD_LIST === triggerType) {
-              const obj5 = { IconComponent: tmp(16166).MenuIcon };
-              tmp9 = obj5;
-            } else if (tmp8.APPLICATION === triggerType) {
-              const obj6 = { IconComponent: tmp(9581).RobotIcon };
-              tmp9 = obj6;
+        if (AutomodTriggerType.ML_SPAM !== triggerType) {
+          if (AutomodTriggerType.USER_PROFILE !== triggerType) {
+            if (AutomodTriggerType.DEFAULT_KEYWORD_LIST === triggerType) {
+              tmp9 = { IconComponent: MenuIcon.MenuIcon };
+              const obj5 = { IconComponent: MenuIcon.MenuIcon };
+            } else if (AutomodTriggerType.APPLICATION === triggerType) {
+              tmp9 = { IconComponent: RobotIcon.RobotIcon };
+              const obj6 = { IconComponent: RobotIcon.RobotIcon };
             }
           }
         }
-        const obj7 = { source: _modDef17958 };
-        tmp9 = obj7;
+        tmp9 = { source: AssetRegistryDefault };
+        const obj7 = { source: AssetRegistryDefault };
       }
       if (tmp9 == null) {
-        const obj8 = { IconComponent: tmp(4730).LinkIcon };
-        tmp9 = obj8;
+        tmp9 = { IconComponent: LinkIcon.LinkIcon };
+        const obj8 = { IconComponent: LinkIcon.LinkIcon };
       }
-      obj2.icon = tmp9;
       tmp4 = obj2;
     }
   }

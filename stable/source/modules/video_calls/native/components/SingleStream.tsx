@@ -1,47 +1,84 @@
-// Module ID: 10321
-// Function ID: 10322
+// Module ID: 9481
+// Function ID: 9482
 // Name: SingleStream
-// Dependencies: [19, 9672, 21, 9715, 9723, 4989, 2]
-// Exports: default
+// Dependencies: [19, 8824, 21, 558, 576, 5038, 8866, 8879, 2]
 
-// Module 10321 (SingleStream)
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4989 */;
-import StreamTileDefault from "StreamTile" /* 9715 */;
-import noop from "module_19" /* 19 */;
+// Module 9481 (SingleStream)
+import Fragment from "Fragment" /* 21 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5038 */;
+import StreamTileDefault from "StreamTile" /* 8866 */;
+import react from "react" /* 19 */;
+import ChannelCallStore from "ChannelCallStore" /* 8824 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const ChannelCallStore = fn(9672);
+let c3;
+let closure_4;
 ({ toggleFocus: c3, resetFocus: closure_4 } = ChannelCallStore);
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channel;
+  let first;
+  let participant;
+  let tmp5;
+  let tmp6;
+  let obj = channel(576);
+  const cResult = obj.c(7);
+  const tmp = channel;
+  ({ participant, channel } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      closure_1_3();
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel.id) {
+    const fn2 = function f() {
+      React3();
+      const obj = ChannelRTCActionCreatorsDefault;
+      const participant = obj.selectParticipant(channel.id, null);
+    };
+    cResult[1] = channel.id;
+    cResult[2] = fn2;
+    tmp5 = fn2;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { flex: 1 };
+    cResult[3] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] === tmp5) {
+    let tmp7;
+    if (cResult[5] === participant) {
+      tmp7 = cResult[6];
+    }
+    return tmp7;
+  }
+  StreamTileDefault;
+  const tmp9 = <tmp8 gestureEnabled resizeMode={tmp(8879).ResizeMode.CONTAIN} onSingleTap={first} onDoubleTap={tmp5} participant={participant} style={tmp6} />;
+  cResult[4] = tmp5;
+  cResult[5] = participant;
+  cResult[6] = tmp9;
+  tmp7 = tmp9;
+}) : ((channel) => {
+  channel = channel.channel;
+  let participant = channel.participant;
+  StreamTileDefault;
+  return <tmp gestureEnabled resizeMode={channel(8879).ResizeMode.CONTAIN} onSingleTap={function onSingleTap() {
+    closure_1_3();
+  }} onDoubleTap={function onDoubleTap() {
+    React3();
+    const obj = ChannelRTCActionCreatorsDefault;
+    const participant = obj.selectParticipant(channel.id, null);
+  }} participant={participant} style={{ flex: 1 }} />;
+});
 const result = size.fileFinishedImporting("modules/video_calls/native/components/SingleStream.tsx");
 
-export default function SingleStream(channel) {
-  channel = channel.channel;
-  const obj = {
-    gestureEnabled: true,
-    resizeMode: channel(9723).ResizeMode.CONTAIN,
-    onSingleTap() {
-      closure_1_3();
-    },
-    onDoubleTap() {
-      React4();
-      const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
-    },
-    participant: channel.participant,
-    style: { flex: 1 }
-  };
-  return jsx(StreamTileDefault, {
-    gestureEnabled: true,
-    resizeMode: channel(9723).ResizeMode.CONTAIN,
-    onSingleTap() {
-      closure_1_3();
-    },
-    onDoubleTap() {
-      React4();
-      const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
-    },
-    participant: channel.participant,
-    style: { flex: 1 }
-  });
-};
+export default tmp4;

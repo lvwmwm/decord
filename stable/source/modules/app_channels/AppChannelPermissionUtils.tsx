@@ -1,21 +1,82 @@
-// Module ID: 11890
-// Function ID: 11891
+// Module ID: 10973
+// Function ID: 10974
 // Name: AppChannelPermissionUtils
-// Dependencies: [5015, 1074, 11891, 1086, 4434, 2]
-// Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission, useAppChannelBotUserId
+// Dependencies: [5064, 1086, 558, 576, 10974, 1098, 4479, 2]
+// Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission
 
-// Module 11890 (AppChannelPermissionUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4434 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 11891 */;
-import ApplicationStore from "ApplicationStore" /* 5015 */;
+// Module 10973 (AppChannelPermissionUtils)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4479 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 10974 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ChannelTypes = fn(1074).ChannelTypes;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/app_channels/AppChannelPermissionUtils.tsx");
-
-export const getAppChannelBotUserIdFromApplication = function getAppChannelBotUserIdFromApplication(type, bot) {
+const ChannelTypes = Constants.ChannelTypes;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+  const obj = react;
+  const cResult = obj.c(3);
+  const obj2 = useAppChannelApplication;
+  const appChannelApplication = obj2.useAppChannelApplication(type);
+  if (cResult[0] === appChannelApplication) {
+    let tmp3;
+    if (cResult[1] === type) {
+      tmp3 = cResult[2];
+    }
+    return tmp3;
+  }
+  let tmp4;
+  if (null != type) {
+    let tmp6;
+    if (type.type === ChannelTypes.GUILD_APP) {
+      if (null != type.application_id) {
+        let id;
+        if (appChannelApplication != null) {
+          const bot = appChannelApplication.bot;
+          if (bot != null) {
+            id = bot.id;
+          }
+        }
+        if (id == null) {
+          id = type.application_id;
+        }
+        tmp6 = id;
+      }
+    }
+    tmp4 = tmp6;
+  }
+  cResult[0] = appChannelApplication;
+  cResult[1] = type;
+  cResult[2] = tmp4;
+  tmp3 = tmp4;
+}) : ((type) => {
+  const obj = useAppChannelApplication;
+  const appChannelApplication = obj.useAppChannelApplication(type);
+  let tmp2;
+  if (null != type) {
+    let tmp4;
+    if (type.type === ChannelTypes.GUILD_APP) {
+      if (null != type.application_id) {
+        let id;
+        if (appChannelApplication != null) {
+          const bot = appChannelApplication.bot;
+          if (bot != null) {
+            id = bot.id;
+          }
+        }
+        if (id == null) {
+          id = type.application_id;
+        }
+        tmp4 = id;
+      }
+    }
+    tmp2 = tmp4;
+  }
+  return tmp2;
+});
+function getAppChannelBotUserIdFromApplication(type, bot) {
   if (type.type === ChannelTypes.GUILD_APP) {
     if (null != type.application_id) {
       let id;
@@ -31,7 +92,10 @@ export const getAppChannelBotUserIdFromApplication = function getAppChannelBotUs
       return id;
     }
   }
-};
+}
+const result = size.fileFinishedImporting("modules/app_channels/AppChannelPermissionUtils.tsx");
+
+export { getAppChannelBotUserIdFromApplication };
 export const getAppChannelBotUserId = function getAppChannelBotUserId(c18) {
   const application = ApplicationStore.getApplication(c18.application_id);
   let tmp2;
@@ -52,34 +116,12 @@ export const getAppChannelBotUserId = function getAppChannelBotUserId(c18) {
   }
   return tmp2;
 };
-export const useAppChannelBotUserId = function useAppChannelBotUserId(channel) {
-  const appChannelApplication = useAppChannelApplication.useAppChannelApplication(channel);
-  let tmp2;
-  if (null != channel) {
-    let tmp4;
-    if (channel.type === ChannelTypes.GUILD_APP) {
-      if (null != channel.application_id) {
-        let id;
-        if (appChannelApplication != null) {
-          const bot = appChannelApplication.bot;
-          if (bot != null) {
-            id = bot.id;
-          }
-        }
-        if (id == null) {
-          id = channel.application_id;
-        }
-        tmp4 = id;
-      }
-    }
-    tmp2 = tmp4;
-  }
-  return tmp2;
-};
+export const useAppChannelBotUserId = tmp2;
 export const isAppChannelFloorPermission = function isAppChannelFloorPermission(appChannelBotUserId, id, arg2) {
   let hasItem = appChannelBotUserId === id;
   if (hasItem) {
-    hasItem = BigFlagUtilsAll.has(AppChannelPermissions.APP_CHANNEL_MINIMUM_BOT_PERMISSIONS, arg2);
+    const obj = BigFlagUtilsAll;
+    hasItem = obj.has(AppChannelPermissions.APP_CHANNEL_MINIMUM_BOT_PERMISSIONS, arg2);
   }
   return hasItem;
 };

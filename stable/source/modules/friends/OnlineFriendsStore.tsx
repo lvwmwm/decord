@@ -1,26 +1,28 @@
-// Module ID: 13996
-// Function ID: 13997
+// Module ID: 13248
+// Function ID: 13249
 // Name: OnlineFriendsStore
-// Dependencies: [4828, 4437, 1074, 2058, 504, 573, 2]
+// Dependencies: [4877, 4482, 1086, 2068, 504, 585, 2]
 
-// Module 13996 (OnlineFriendsStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SetUtils from "SetUtils" /* 2058 */;
-import PresenceStore from "PresenceStore" /* 4828 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+// Module 13248 (OnlineFriendsStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import SetUtils from "SetUtils" /* 2068 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function upsert(id) {
   if (RelationshipStore.isFriend(id)) {
+    let deleteResult;
     if (PresenceStore.getStatus(id) !== StatusTypes.OFFLINE) {
       const hasItem = set.has(id);
       let flag = !hasItem;
-      if (!hasItem) {
+      if (flag) {
         set.add(id);
         flag = true;
       }
-      let deleteResult = flag;
+      deleteResult = flag;
     }
     return deleteResult;
   }
@@ -36,22 +38,23 @@ function rebuild() {
     }
     continue;
   }
-  return !SetUtils.areSetsEqual(set, set);
+  const obj2 = SetUtils;
+  return !obj2.areSetsEqual(set, set);
 }
-const StatusTypes = fn(1074).StatusTypes;
+const StatusTypes = Constants.StatusTypes;
 let set = new Set();
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class OnlineFriendsStore extends Store {
+  initialize() {
+    this.waitFor(PresenceStore, RelationshipStore);
+  }
+  getOnlineFriendCount() {
+    return set.size;
+  }
 }
 const prototype = OnlineFriendsStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(PresenceStore, RelationshipStore);
-};
-prototype["getOnlineFriendCount"] = function getOnlineFriendCount() {
-  return set.size;
-};
 OnlineFriendsStore.displayName = "OnlineFriendsStore";
-const onlineFriendsStore = new OnlineFriendsStore(DispatcherDefault, {
+const obj = {
   CONNECTION_OPEN: rebuild,
   CONNECTION_OPEN_SUPPLEMENTAL: rebuild,
   OVERLAY_INITIALIZE: rebuild,
@@ -61,14 +64,15 @@ const onlineFriendsStore = new OnlineFriendsStore(DispatcherDefault, {
   GUILD_MEMBER_REMOVE: function handleGuildMemberRemove(user) {
     const id = user.user.id;
     if (RelationshipStore.isFriend(id)) {
+      let deleteResult;
       if (PresenceStore.getStatus(id) !== StatusTypes.OFFLINE) {
         const hasItem = set.has(id);
         let flag = !hasItem;
-        if (!hasItem) {
+        if (flag) {
           set.add(id);
           flag = true;
         }
-        let deleteResult = flag;
+        deleteResult = flag;
       }
       return deleteResult;
     }
@@ -76,6 +80,7 @@ const onlineFriendsStore = new OnlineFriendsStore(DispatcherDefault, {
   },
   PRESENCE_UPDATES: function handlePresenceUpdates(arg0) {
     let flag = false;
+    const tmp = arg0.updates[Symbol.iterator]();
     while (tmp !== undefined) {
       let tmp4 = upsert(tmp2.user.id) || flag;
       flag = tmp4;
@@ -86,14 +91,15 @@ const onlineFriendsStore = new OnlineFriendsStore(DispatcherDefault, {
   RELATIONSHIP_ADD: function handleRelationshipAdd(relationship) {
     const id = relationship.relationship.id;
     if (RelationshipStore.isFriend(id)) {
+      let deleteResult;
       if (PresenceStore.getStatus(id) !== StatusTypes.OFFLINE) {
         const hasItem = set.has(id);
         let flag = !hasItem;
-        if (!hasItem) {
+        if (flag) {
           set.add(id);
           flag = true;
         }
-        let deleteResult = flag;
+        deleteResult = flag;
       }
       return deleteResult;
     }
@@ -102,14 +108,15 @@ const onlineFriendsStore = new OnlineFriendsStore(DispatcherDefault, {
   RELATIONSHIP_REMOVE: function handleRelationshipRemove(relationship) {
     const id = relationship.relationship.id;
     if (RelationshipStore.isFriend(id)) {
+      let deleteResult;
       if (PresenceStore.getStatus(id) !== StatusTypes.OFFLINE) {
         const hasItem = set.has(id);
         let flag = !hasItem;
-        if (!hasItem) {
+        if (flag) {
           set.add(id);
           flag = true;
         }
-        let deleteResult = flag;
+        deleteResult = flag;
       }
       return deleteResult;
     }
@@ -118,25 +125,27 @@ const onlineFriendsStore = new OnlineFriendsStore(DispatcherDefault, {
   RELATIONSHIP_UPDATE: function handleRelationshipUpdate(relationship) {
     const id = relationship.relationship.id;
     if (RelationshipStore.isFriend(id)) {
+      let deleteResult;
       if (PresenceStore.getStatus(id) !== StatusTypes.OFFLINE) {
         const hasItem = set.has(id);
         let flag = !hasItem;
-        if (!hasItem) {
+        if (flag) {
           set.add(id);
           flag = true;
         }
-        let deleteResult = flag;
+        deleteResult = flag;
       }
       return deleteResult;
     }
     deleteResult = set.delete(id);
   },
   LOGOUT: function handleLogout() {
+    const tmp = set.size > 0;
     set = new Set();
-    return set.size > 0;
+    return tmp;
   }
-});
-const size = fn(2);
+};
+const onlineFriendsStore = new OnlineFriendsStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/friends/OnlineFriendsStore.tsx");
 
 export default onlineFriendsStore;

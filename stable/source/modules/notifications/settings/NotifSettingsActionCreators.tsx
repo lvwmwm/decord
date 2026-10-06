@@ -1,21 +1,23 @@
-// Module ID: 16257
-// Function ID: 16258
+// Module ID: 15535
+// Function ID: 15536
 // Name: NotifSettingsActionCreators
-// Dependencies: [13974, 13975, 573, 2]
+// Dependencies: [13226, 13227, 585, 2]
 // Exports: updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 16257 (NotifSettingsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import notification_settings from "notification_settings" /* 13975 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 13974 */;
+// Module 15535 (NotifSettingsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import notification_settings from "notification_settings" /* 13227 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 13226 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function updateNotifSettingValue(GAMING_DEFAULT, createNew) {
+  let cloneResult;
   createNew = createNew.createNew;
   const settings = NotifSettingsProtoStore.settings;
+  const update = createNew.update;
   if (null != settings.values[GAMING_DEFAULT]) {
     const DeclarativeNotifSetting2 = notification_settings.DeclarativeNotifSetting;
-    let cloneResult = DeclarativeNotifSetting2.clone(tmp);
+    cloneResult = DeclarativeNotifSetting2.clone(tmp);
   } else {
     cloneResult = undefined;
     if (createNew != null) {
@@ -26,19 +28,19 @@ function updateNotifSettingValue(GAMING_DEFAULT, createNew) {
       cloneResult = DeclarativeNotifSetting.create();
     }
   }
-  if (createNew.update(cloneResult)) {
+  if (update(cloneResult)) {
     const DeclarativeSettings = notification_settings.DeclarativeSettings;
     const cloneResult1 = DeclarativeSettings.clone(settings);
     cloneResult1.values[GAMING_DEFAULT] = cloneResult;
     const obj2 = { type: "DECLARATIVE_NOTIFICATION_SETTINGS_UPDATE", declarativeSettings: cloneResult1 };
-    DispatcherDefault.dispatch(obj2);
+    const obj = DispatcherDefault;
+    obj.dispatch(obj2);
   }
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsActionCreators.tsx");
 
 export const updateNotifSettingToggleValue = function updateNotifSettingToggleValue(GAMING_DEFAULT, toggle) {
-  updateNotifSettingValue(GAMING_DEFAULT, {
+  let obj = {
     createNew() {
       const DeclarativeNotifSetting = toggle(dependencyMap[1]).DeclarativeNotifSetting;
       const obj = DeclarativeNotifSetting.create();
@@ -49,13 +51,16 @@ export const updateNotifSettingToggleValue = function updateNotifSettingToggleVa
       toggle.toggle = toggle;
       return toggle.toggle !== toggle;
     }
-  });
+  };
+  updateNotifSettingValue(GAMING_DEFAULT, obj);
 };
-export const updateNotifSettingRadioValue = function updateNotifSettingRadioValue(GAMING_DEFAULT, radio) {
-  updateNotifSettingValue(GAMING_DEFAULT, {
+export const updateNotifSettingRadioValue = function updateNotifSettingRadioValue(GAMING_DEFAULT, arg1) {
+  let closure_0 = arg1;
+  const obj = {
     update(radio) {
       radio.radio = radio;
       return radio.radio !== radio;
     }
-  });
+  };
+  updateNotifSettingValue(GAMING_DEFAULT, obj);
 };

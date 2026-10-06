@@ -1,46 +1,51 @@
-// Module ID: 5203
-// Function ID: 5204
+// Module ID: 5267
+// Function ID: 5268
 // Name: useIsScreenReaderEnabled
-// Dependencies: [17, 510, 560, 1248, 2]
+// Dependencies: [17, 510, 570, 1260, 558, 2]
 // Exports: addScreenReaderEnabledListener, getIsScreenReaderEnabled, useIsScreenReaderEnabled
 
-// Module 5203 (useIsScreenReaderEnabled)
-import _mod17 from "module_17" /* 17 */;
-import module_560 from "module_560" /* 560 */;
+// Module 5267 (useIsScreenReaderEnabled)
+import react_native from "react-native" /* 17 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const AccessibilityInfo = _mod17.AccessibilityInfo;
+const AccessibilityInfo = react_native.AccessibilityInfo;
 function SCREEN_READER_ENABLED_GETTER(screenReaderEnabled) {
   return screenReaderEnabled.screenReaderEnabled;
 }
 let screenReaderEnabled = "screenReaderEnabled";
-let closure_5 = module_560.create((arg0) => {
+let closure_5 = module_570.create((arg0) => {
   _require = arg0;
   function updateScreenReaderEnabled(event) {
     closure_0 = event;
-    closure_0(1248).batchUpdates(() => closure_0((screenReaderEnabled) => {
+    const obj = closure_0(dependencyMap[3]);
+    obj.batchUpdates(() => _false((screenReaderEnabled) => {
       let tmp = screenReaderEnabled;
-      if (screenReaderEnabled.screenReaderEnabled !== closure_1_0) {
-        const Storage = closure_0(510).Storage;
+      if (screenReaderEnabled.screenReaderEnabled !== _false) {
+        const Storage = closure_0(dependencyMap[1]).Storage;
         const result = Storage.set(screenReaderEnabled, tmp2);
-        const obj = { screenReaderEnabled: tmp2 };
-        tmp = obj;
+        tmp = { screenReaderEnabled: _false };
+        const obj = { screenReaderEnabled: _false };
       }
       return tmp;
     }));
   }
   let result = AccessibilityInfo.isScreenReaderEnabled();
-  result.then(updateScreenReaderEnabled).catch(() => {
-    c0 = false;
-    closure_0(1248).batchUpdates(() => closure_0((screenReaderEnabled) => {
+  const nextPromise = result.then(updateScreenReaderEnabled);
+  nextPromise.catch(() => {
+    let c0 = false;
+    let obj = _false(dependencyMap[3]);
+    obj.batchUpdates(() => _false((screenReaderEnabled) => {
       let tmp = screenReaderEnabled;
-      if (screenReaderEnabled.screenReaderEnabled !== closure_1_0) {
-        const Storage = closure_0(510).Storage;
+      if (screenReaderEnabled.screenReaderEnabled !== _false) {
+        const Storage = closure_0(dependencyMap[1]).Storage;
         const result = Storage.set(screenReaderEnabled, tmp2);
-        const obj = { screenReaderEnabled: tmp2 };
-        tmp = obj;
+        tmp = { screenReaderEnabled: _false };
+        const obj = { screenReaderEnabled: _false };
       }
       return tmp;
     }));
@@ -53,10 +58,12 @@ let closure_5 = module_560.create((arg0) => {
   }
   return { screenReaderEnabled };
 });
-let result = size.fileFinishedImporting("modules/a11y/native/useIsScreenReaderEnabled.native.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/a11y/native/useIsScreenReaderEnabled.native.tsx");
 
 export const addScreenReaderEnabledListener = function addScreenReaderEnabledListener(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   return closure_5.subscribe((screenReaderEnabled) => {
     closure_0(screenReaderEnabled.screenReaderEnabled);
   });
@@ -64,6 +71,4 @@ export const addScreenReaderEnabledListener = function addScreenReaderEnabledLis
 export const getIsScreenReaderEnabled = function getIsScreenReaderEnabled() {
   return closure_5.getState().screenReaderEnabled;
 };
-export const useIsScreenReaderEnabled = function useIsScreenReaderEnabled() {
-  return closure_5(SCREEN_READER_ENABLED_GETTER);
-};
+export const useIsScreenReaderEnabled = () => closure_5(SCREEN_READER_ENABLED_GETTER);

@@ -1,29 +1,32 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 8198
+// Function ID: 8199
 // Name: DisplayedInviteStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 9051 (DisplayedInviteStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 8198 (DisplayedInviteStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
+
+let c0;
 
 let c1 = null;
 let c2 = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class DisplayedInviteStore extends Store {
+  getDisplayedInviteCode() {
+    return c0;
+  }
+  getDisplayedUsername() {
+    return c1;
+  }
+  getDeeplinkAttemptId() {
+    return c2;
+  }
 }
 const prototype = DisplayedInviteStore.prototype;
-prototype["getDisplayedInviteCode"] = function getDisplayedInviteCode() {
-  return c0;
-};
-prototype["getDisplayedUsername"] = function getDisplayedUsername() {
-  return c1;
-};
-prototype["getDeeplinkAttemptId"] = function getDeeplinkAttemptId() {
-  return c2;
-};
 DisplayedInviteStore.displayName = "DisplayedInviteStore";
-const displayedInviteStore = new DisplayedInviteStore(DispatcherDefault, {
+const obj = {
   DISPLAYED_INVITE_SHOW: function handleInviteShow(arg0) {
     ({ code: c0, username: c1, deeplinkAttemptId: c2 } = arg0);
   },
@@ -31,8 +34,8 @@ const displayedInviteStore = new DisplayedInviteStore(DispatcherDefault, {
     c0 = null;
     c2 = null;
   }
-});
-const size = fn(2);
+};
+const displayedInviteStore = new DisplayedInviteStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/native/DisplayedInviteStore.tsx");
 
 export default displayedInviteStore;

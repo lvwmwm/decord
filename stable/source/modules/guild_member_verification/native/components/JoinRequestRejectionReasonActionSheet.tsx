@@ -1,154 +1,171 @@
-// Module ID: 12916
-// Function ID: 12917
+// Module ID: 12041
+// Function ID: 12042
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 4788, 8471, 5790, 4612, 4486, 1115, 6890, 576, 4755, 7427, 7400, 7362, 5682, 5218, 2]
+// Dependencies: [5, 32, 19, 21, 4837, 7619, 5854, 4660, 4531, 1127, 6026, 588, 4801, 6572, 6546, 6507, 5746, 5282, 2]
 
-// Module 12916 (JoinRequestRejectionReasonActionSheet)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 12041 (JoinRequestRejectionReasonActionSheet)
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let BottomSheet, _undefined, c4;
+
+let metroImportDefault;
+let metroRequire;
 class JoinRequestRejectionReasonActionSheet {
-  constructor(arg0) {
-    ({ joinRequest, onError } = global);
-    userId = undefined;
-    guildId = undefined;
-    joinRequestId = undefined;
-    closure_4 = undefined;
-    closure_5 = undefined;
-    tmp = closure_8();
-    userId = joinRequest.userId;
-    guildId = joinRequest.guildId;
-    joinRequestId = joinRequest.joinRequestId;
-    tmp2 = closure_4(closure_5.useState(), 2);
-    first = tmp2[0];
-    closure_4 = first;
-    obj = onError(guildId[5]);
-    bottomSheetRef1 = obj.useBottomSheetRef();
+  constructor(onDismiss) {
+    let SafeAreaPaddingView;
+    let bottomSheetClose;
+    let bottomSheetRef;
+    let c5;
+    let intl;
+    let intl2;
+    let intl3;
+    let items1;
+    let items2;
+    let joinRequest;
+    let obj3;
+    let onError;
+    let tmp7;
+    ({ joinRequest, onError } = onDismiss);
+    let value;
+    react = undefined;
+    onDismiss = onDismiss.onDismiss;
+    const tmp = closure_8();
+    const userId = joinRequest.userId;
+    let guildId = joinRequest.guildId;
+    const joinRequestId = joinRequest.joinRequestId;
+    const tmp2 = value(react.useState(), 2);
+    value = tmp2[0];
+    const tmp4 = tmp2[1];
+    let obj = onError(guildId[5]);
+    const bottomSheetRef1 = obj.useBottomSheetRef();
     ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
-    tmp5 = closure_4(closure_5.useState(false), 2);
-    [tmp6, closure_5] = tmp5;
-    items = [, , , , ];
-    items[0] = guildId;
-    items[1] = joinRequestId;
-    items[2] = onError;
-    items[3] = first;
-    items[4] = userId;
-    callback = closure_5.useCallback(joinRequestId(function*(arg0, value) {
-      if (v3 === 2) {
-        v3 = 3;
+    [tmp7, c5] = value(react.useState(false), 2);
+    const items = [guildId, joinRequestId, onError, value, userId];
+    const tmp6 = value(react.useState(false), 2);
+    const callback = react.useCallback(joinRequestId(function*(arg0, value) {
+      let closure_0;
+      let closure_1;
+      let closure_2;
+      let intl;
+      let v3;
+      if (_undefined === 2) {
+        _undefined = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp7 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
+        let c3;
         try {
-          v3 = 2;
+          _undefined = 2;
           if (0 === c4) {
             if (arg0 === 1) {
-              v3 = 3;
+              _undefined = 3;
               throw value;
             } else if (arg0 === 2) {
-              v3 = 3;
+              _undefined = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              v3(true);
+              _undefined(true);
               c3 = 2;
-              const obj8 = tmp4(tmp24[6]);
+              const obj7 = tmp(guildId[6]);
               c4 = 3;
-              v3 = 1;
-              const obj4 = { value: obj8.updateGuildJoinRequest(guildId, userId, joinRequestId, tmp4(tmp24[7]).GuildJoinRequestApplicationStatuses.REJECTED, first), done: false };
+              _undefined = 1;
+              const obj4 = { value: obj7.updateGuildJoinRequest(guildId, userId, joinRequestId, tmp(guildId[7]).GuildJoinRequestApplicationStatuses.REJECTED, first), done: false };
               return obj4;
             }
-          } else if (1 === tmp8) {
+          } else if (1 === c4) {
             c3 = 0;
             closure_129_5(false);
-            throw tmp24;
+            throw guildId;
           } else {
-            if (2 === tmp8) {
+            if (2 === c4) {
               c3 = 1;
               closure_129_0();
+            } else if (arg0 === 1) {
+              _undefined = 3;
+              throw value;
+            } else if (arg0 === 2) {
               c3 = 0;
               closure_129_5(false);
-              v3 = 3;
-            } else if (arg0 === 1) {
-              v3 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              const obj6 = { key: "JOIN_REQUEST_REJECT", content: null, icon: null };
-              const intl = tmp4(tmp24[9]).intl;
-              obj6.content = intl.string(tmp4(tmp24[9]).t["TQY/Rd"]);
-              obj6.icon = function icon() {
-                return closure_1_6(closure_1_0(6890).CircleXIcon, { color: closure_1_1(576).colors.BACKGROUND_FEEDBACK_CRITICAL, secondaryColor: closure_1_1(576).colors.ICON_FEEDBACK_CRITICAL });
+              _undefined = 3;
+              let obj = { value, done: true };
+              return obj;
+            } else {
+              const obj5 = {
+                key: "JOIN_REQUEST_REJECT",
+                content: intl.string(tmp(guildId[9]).t["TQY/Rd"]),
+                icon() {
+                          const obj = { color: closure_1_1(closure_1_2[11]).colors.BACKGROUND_FEEDBACK_CRITICAL, secondaryColor: closure_1_1(closure_1_2[11]).colors.ICON_FEEDBACK_CRITICAL };
+                          const CircleXIcon = closure_1_0(closure_1_2[10]).CircleXIcon;
+                          return closure_1_6(CircleXIcon, obj);
+                        }
               };
-              tmp42(tmp24[8]).open(obj6);
-              const obj5 = tmp42(tmp24[8]);
-              tmp42(tmp24[12]).hideAllActionSheets();
+              const open = tmp2(guildId[8]).open;
+              const tmp30 = tmp2(guildId[8]);
+              intl = tmp(guildId[9]).intl;
+              open(obj5);
+              const obj6 = tmp2(guildId[12]);
+              obj6.hideAllActionSheets();
               c3 = 1;
-              const obj7 = tmp42(tmp24[12]);
             }
             c3 = 0;
             closure_129_5(false);
-            v3 = 3;
-            const obj = { value, done: true };
-            return obj;
+            _undefined = 3;
+            return { value: "IconComponent", done: null };
           }
-        } catch (tmp24) {
-          if (tmp5 === c3) {
-            v3 = tmp3;
-            throw tmp24;
-          } else if (tmp2 === tmp26) {
-            c4 = tmp2;
+        } catch (tmp20) {
+          guildId = tmp20;
+          if (0 === c3) {
+            _undefined = 3;
+            throw tmp20;
+          } else if (1 === tmp22) {
+            c4 = 1;
           } else {
-            c4 = tmp;
+            c4 = 2;
           }
         }
       }
     }), items);
-    obj1 = { bodyStyles: tmp.container, onDismiss: global.onDismiss, ref: bottomSheetRef, children: null };
-    obj8 = { bottom: true, children: null };
-    obj9 = { label: null, maxLength: 160, onChange: null, value: null };
+    let obj2 = { bodyStyles: tmp.container, onDismiss, ref: bottomSheetRef, children: closure_7(SafeAreaPaddingView, obj3) };
+    BottomSheet = onError(guildId[13]).BottomSheet;
+    obj3 = { bottom: true, children: items1 };
+    SafeAreaPaddingView = onError(guildId[14]).SafeAreaPaddingView;
+    let obj4 = { label: intl.string(onError(guildId[9]).t["mFP/qw"]), maxLength: 160, onChange: tmp4, value };
+    const TextArea = onError(guildId[15]).TextArea;
     intl = onError(guildId[9]).intl;
-    obj9.label = intl.string(onError(guildId[9]).t["mFP/qw"]);
-    obj9.onChange = tmp2[1];
-    obj9.value = first;
-    items1 = [, ];
-    items1[0] = jsx(onError(guildId[15]).TextArea, obj9);
-    obj10 = { direction: "horizontal", style: tmp.buttonGroup, children: null };
-    obj11 = { grow: true, variant: "secondary", text: null, onPress: null, disabled: null };
+    items1 = [closure_6(TextArea, obj4), ];
+    let obj5 = { direction: "horizontal", style: tmp.buttonGroup, children: items2 };
+    const ButtonGroup = onError(guildId[16]).ButtonGroup;
+    let obj6 = { grow: true, variant: "secondary", text: intl2.string(onError(guildId[9]).t["ETE/oC"]), onPress: bottomSheetClose, disabled: tmp7 };
+    const Button = onError(guildId[17]).Button;
     intl2 = onError(guildId[9]).intl;
-    obj11.text = intl2.string(onError(guildId[9]).t["ETE/oC"]);
-    obj11.onPress = bottomSheetClose;
-    obj11.disabled = tmp6;
-    items2 = [, ];
-    items2[0] = jsx(onError(guildId[17]).Button, obj11);
-    obj12 = { grow: true, variant: "destructive", text: null, onPress: null, disabled: null };
+    items2 = [closure_6(Button, obj6), ];
+    let obj7 = { grow: true, variant: "destructive", text: intl3.string(onError(guildId[9]).t.hDtbsz), onPress: callback, disabled: tmp7 };
+    const Button2 = onError(guildId[17]).Button;
     intl3 = onError(guildId[9]).intl;
-    obj12.text = intl3.string(onError(guildId[9]).t.hDtbsz);
-    obj12.onPress = callback;
-    obj12.disabled = tmp6;
-    items2[1] = jsx(onError(guildId[17]).Button, obj12);
-    obj10.children = items2;
-    items1[1] = jsxs(onError(guildId[16]).ButtonGroup, obj10);
-    obj8.children = items1;
-    obj1.children = jsxs(onError(guildId[14]).SafeAreaPaddingView, obj8);
-    return jsx(onError(guildId[13]).BottomSheet, obj1);
+    items2[1] = closure_6(Button2, obj7);
+    items1[1] = closure_7(ButtonGroup, obj5);
+    return closure_6(BottomSheet, obj2);
   }
 }
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
-const React6 = createStyles.createStyles({ container: { padding: 20 }, buttonGroup: { marginTop: 16 } });
-const size = fn(2);
+let react = react_mod;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const metroImportAll = createStyles.createStyles({ container: { padding: 20 }, buttonGroup: { marginTop: 16 } });
+const memoResult = react.memo(JoinRequestRejectionReasonActionSheet);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestRejectionReasonActionSheet.tsx");
 
-export default noop.memo(JoinRequestRejectionReasonActionSheet);
+export default memoResult;
 export { JoinRequestRejectionReasonActionSheet };

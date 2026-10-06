@@ -1,16 +1,38 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 5083
+// Function ID: 5084
 // Name: CheckpointExperiment
-// Dependencies: [1434, 2]
-// Exports: useIsCheckpointEnabled
+// Dependencies: [1441, 558, 576, 2]
+// Exports: getIsCheckpointEnabled
 
-// Module 15965 (CheckpointExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 5083 (CheckpointExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-09-build-a-bear", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let obj = { name: "2026-09-build-a-bear", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+let closure_2 = ApexExperiment.createApexExperiment(obj);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_2.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return closure_2.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointExperiment.tsx");
 
-export const useIsCheckpointEnabled = function useIsCheckpointEnabled(DevToolsQuickActionsScreen) {
-  return closure_0.useConfig({ location: DevToolsQuickActionsScreen }).enabled;
+export const useIsCheckpointEnabled = tmp2;
+export const getIsCheckpointEnabled = function getIsCheckpointEnabled(transformCheckpoint2026CardComponent) {
+  const obj = { location: transformCheckpoint2026CardComponent };
+  return closure_2.getConfig(obj).enabled;
 };

@@ -1,33 +1,34 @@
 // Module ID: 1566
 // Function ID: 1567
-// Dependencies: [19, 1514]
-// Exports: useOnRouteFocus
+// Dependencies: [32, 19, 1500, 1526]
+// Exports: useRegisterNavigator
 
 // Module 1566
-import NavigationBuilderContext from "NavigationBuilderContext" /* 1514 */;
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-require = arg1;
 
-export const useOnRouteFocus = function useOnRouteFocus(router) {
-  router = router.router;
-  const getState = router.getState;
-  const key = router.key;
-  const setState = router.setState;
-  const onRouteFocus = noop.useContext(NavigationBuilderContext.NavigationBuilderContext).onRouteFocus;
-  const items = [getState, onRouteFocus, router, setState, key];
-  return noop.useCallback((arg0) => {
-    const tmp = getState();
-    const stateForRouteFocus = router.getStateForRouteFocus(tmp, arg0);
-    if (stateForRouteFocus !== tmp) {
-      setState(stateForRouteFocus);
-    }
-    let tmp6 = undefined !== onRouteFocus;
-    if (tmp6) {
-      tmp6 = undefined !== key;
-    }
-    if (tmp6) {
-      onRouteFocus(key);
-    }
-  }, items);
+export const useRegisterNavigator = function useRegisterNavigator() {
+  let context;
+  let obj = react;
+  const first = _slicedToArray(react.useState(() => {
+    const obj = first(context[2]);
+    return obj.nanoid();
+  }), 1)[0];
+  context = react.useContext(first(context[3]).SingleNavigatorContext);
+  if (undefined === context) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("Couldn't register the navigator. Have you wrapped your app with 'NavigationContainer'?\n\nThis can also happen if there are multiple copies of '@react-navigation' packages installed.");
+    throw error;
+  } else {
+    const items = [context, first];
+    const effect = obj.useEffect(() => {
+      const unregister = context.unregister;
+      context.register(unregister);
+      return () => unregister(first);
+    }, items);
+    return first;
+  }
 };

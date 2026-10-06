@@ -1,24 +1,26 @@
-// Module ID: 12711
-// Function ID: 12712
+// Module ID: 11815
+// Function ID: 11816
 // Name: getEmojiText
 // Dependencies: [2]
 // Exports: default
 
-// Module 12711 (getEmojiText)
+// Module 11815 (getEmojiText)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emojis/utils/getEmojiText.tsx");
 
 export default function getEmojiText(id) {
+  let surrogates;
   if (null == id.id) {
     if (null != id.surrogates) {
-      let surrogates = id.surrogates;
+      surrogates = id.surrogates;
     }
     return surrogates;
   }
   if (null != id.uniqueName) {
+    let name;
     if ("" !== id.uniqueName) {
-      let name = id.uniqueName;
+      name = id.uniqueName;
     }
     const _HermesInternal = HermesInternal;
     surrogates = ":" + name + ":";

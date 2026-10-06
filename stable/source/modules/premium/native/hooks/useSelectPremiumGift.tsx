@@ -1,64 +1,136 @@
-// Module ID: 11038
-// Function ID: 11039
+// Module ID: 10244
+// Function ID: 10245
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 1484, 10995, 11039, 4446, 7517, 5141, 1115, 10958, 2]
-// Exports: useSelectPremiumGift
+// Dependencies: [5, 19, 558, 576, 1491, 10201, 10245, 4491, 6662, 5205, 1127, 10164, 2]
 
-// Module 11038 (useSelectPremiumGift)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+// Module 10244 (useSelectPremiumGift)
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let closure_1, navigation;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/native/hooks/useSelectPremiumGift.tsx");
-
-export const useSelectPremiumGift = function useSelectPremiumGift(PremiumGiftPlanSelect) {
-  let navigation = require("useNavigation").useNavigation();
-  _require = navigation;
-  const obj = require("useNavigation");
-  const nativeGiftContext = require("NativeGiftContext").useNativeGiftContext();
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((GiftPurchaseButton) => {
+  let recipientUserId;
+  const obj = navigation(recipientUserId[3]);
+  const cResult = obj.c(7);
+  const obj2 = navigation(recipientUserId[4]);
+  navigation = obj2.useNavigation();
+  const obj3 = navigation(recipientUserId[5]);
+  const nativeGiftContext = obj3.useNativeGiftContext();
   const setPremiumType = nativeGiftContext.setPremiumType;
   recipientUserId = nativeGiftContext.recipientUserId;
   const planInterval = nativeGiftContext.planInterval;
   const setOrder = nativeGiftContext.setOrder;
-  const obj2 = require("NativeGiftContext");
-  const createOrReuseGiftOrder = require("createOrReuseGiftOrder").useCreateOrReuseGiftOrder(PremiumGiftPlanSelect);
-  _require = planInterval((arg0) => {
-    const navigation = arg0;
-    c4 = 0;
-    c5 = 0;
-    c3 = 0;
+  let obj4 = navigation(recipientUserId[6]);
+  const createOrReuseGiftOrder = obj4.useCreateOrReuseGiftOrder(GiftPurchaseButton);
+  if (cResult[0] === createOrReuseGiftOrder) {
+    if (cResult[1] === navigation) {
+      if (cResult[2] === planInterval) {
+        if (cResult[3] === recipientUserId) {
+          if (cResult[4] === setOrder) {
+            let tmp5;
+            if (cResult[5] === setPremiumType) {
+              tmp5 = cResult[6];
+            }
+            return tmp5;
+          }
+        }
+      }
+    }
+  }
+  let closure_0 = planInterval((arg0) => {
+    let v1;
+    let v3;
+    navigation = arg0;
+    let c4 = 0;
+    let c5 = 0;
+    let c3 = 0;
     return (function*(arg0) {
-      recipientUserId = tmp3;
-      v2(undefined);
+      let intl;
+      let intl2;
+      let obj8;
+      recipientUserId = tmp;
+      closure_1 = tmp4;
+      v1(undefined);
       closure_1(navigation);
-      const planIdForPremiumType = navigation(recipientUserId[5]).getPlanIdForPremiumType(navigation, c3);
-      navigation(recipientUserId[5]);
-      closure_129_0 = yield v3({ planId: planIdForPremiumType, recipientUserId, productId: navigation(recipientUserId[6]).getProductIdForGift(planIdForPremiumType) });
-      v2(closure_129_0);
-      navigation.navigate(navigation(recipientUserId[9]).PremiumGiftScreens.CUSTOMIZATION);
-      yield "HermesInternal";
-      c3 = 0;
-      const obj7 = { title: null, body: null };
-      const intl = navigation(recipientUserId[8]).intl;
-      obj7.title = intl.string(navigation(recipientUserId[8]).t.R0RpRX);
-      const intl2 = navigation(recipientUserId[8]).intl;
-      obj7.body = intl2.string(navigation(recipientUserId[8]).t.CKsXk3);
-      setPremiumType(recipientUserId[7]).show(obj7);
-      { planId: planIdForPremiumType, recipientUserId, productId: navigation(recipientUserId[6]).getProductIdForGift(planIdForPremiumType) };
+      const obj7 = navigation(closure_2_2[7]);
+      const planIdForPremiumType = obj7.getPlanIdForPremiumType(navigation, c3);
+      const obj4 = { planId: planIdForPremiumType, recipientUserId, productId: obj8.getProductIdForGift(planIdForPremiumType) };
+      obj8 = navigation(closure_2_2[8]);
+      navigation = yield c5(obj4);
+      v1(navigation);
+      navigation.navigate(navigation(closure_2_2[11]).PremiumGiftScreens.CUSTOMIZATION);
+      yield "IconComponent";
+      const obj6 = { title: intl.string(navigation(closure_2_2[10]).t.R0RpRX), body: intl2.string(navigation(closure_2_2[10]).t.CKsXk3) };
+      const show = setPremiumType(closure_2_2[9]).show;
+      setPremiumType(closure_2_2[9]);
+      intl = navigation(closure_2_2[10]).intl;
+      intl2 = navigation(closure_2_2[10]).intl;
+      show(obj6);
+    })();
+  });
+  const fn = function() {
+    return closure_0(...arguments);
+  };
+  cResult[0] = createOrReuseGiftOrder;
+  cResult[1] = navigation;
+  cResult[2] = planInterval;
+  cResult[3] = recipientUserId;
+  cResult[4] = setOrder;
+  cResult[5] = setPremiumType;
+  cResult[6] = fn;
+  tmp5 = fn;
+}) : ((GiftPurchaseButton) => {
+  let recipientUserId;
+  const obj = navigation(recipientUserId[4]);
+  navigation = obj.useNavigation();
+  const obj2 = navigation(recipientUserId[5]);
+  const nativeGiftContext = obj2.useNativeGiftContext();
+  const setPremiumType = nativeGiftContext.setPremiumType;
+  recipientUserId = nativeGiftContext.recipientUserId;
+  const planInterval = nativeGiftContext.planInterval;
+  const setOrder = nativeGiftContext.setOrder;
+  const obj3 = navigation(recipientUserId[6]);
+  const createOrReuseGiftOrder = obj3.useCreateOrReuseGiftOrder(GiftPurchaseButton);
+  const useCallback = setOrder.useCallback;
+  let closure_0 = planInterval((arg0) => {
+    let v1;
+    let v3;
+    navigation = arg0;
+    let c4 = 0;
+    let c5 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      let intl;
+      let intl2;
+      let obj8;
+      recipientUserId = tmp;
+      closure_1 = tmp4;
+      v1(undefined);
+      closure_1(navigation);
+      const obj7 = navigation(closure_2_2[7]);
+      const planIdForPremiumType = obj7.getPlanIdForPremiumType(navigation, c3);
+      const obj4 = { planId: planIdForPremiumType, recipientUserId, productId: obj8.getProductIdForGift(planIdForPremiumType) };
+      obj8 = navigation(closure_2_2[8]);
+      navigation = yield c5(obj4);
+      v1(navigation);
+      navigation.navigate(navigation(closure_2_2[11]).PremiumGiftScreens.CUSTOMIZATION);
+      yield "IconComponent";
+      const obj6 = { title: intl.string(navigation(closure_2_2[10]).t.R0RpRX), body: intl2.string(navigation(closure_2_2[10]).t.CKsXk3) };
+      const show = setPremiumType(closure_2_2[9]).show;
+      setPremiumType(closure_2_2[9]);
+      intl = navigation(closure_2_2[10]).intl;
+      intl2 = navigation(closure_2_2[10]).intl;
+      show(obj6);
     })();
   });
   const items = [setPremiumType, planInterval, createOrReuseGiftOrder, recipientUserId, setOrder, navigation];
-  return setOrder.useCallback(function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+  return useCallback(function() {
+    return closure_0(...arguments);
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/native/hooks/useSelectPremiumGift.tsx");
+
+export const useSelectPremiumGift = tmp2;

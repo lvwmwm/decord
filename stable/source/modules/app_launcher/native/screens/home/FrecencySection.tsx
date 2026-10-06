@@ -1,389 +1,654 @@
-// Module ID: 12334
-// Function ID: 12335
+// Module ID: 11410
+// Function ID: 11411
 // Name: FrecencySection
-// Dependencies: [32, 19, 17, 2040, 12335, 1074, 21, 4788, 576, 9435, 1370, 7445, 12336, 11510, 504, 9555, 4968, 4524, 4789, 1115, 9585, 12337, 12333, 1978, 9216, 12338, 4784, 8206, 11449, 5371, 12339, 7797, 5836, 12342, 2]
-// Exports: default
+// Dependencies: [109, 32, 19, 17, 2050, 11411, 1086, 21, 4837, 588, 558, 576, 8587, 1376, 6590, 11412, 10749, 504, 8707, 5017, 4570, 4838, 1127, 8737, 11413, 11409, 1985, 8367, 11414, 4833, 10604, 7366, 5436, 11415, 6947, 5896, 11418, 2]
 
-// Module 12334 (FrecencySection)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4524 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import timing from "timing" /* 4789 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9435 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9555 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11449 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 12336 */;
-import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 12337 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import FrecencySectionStore from "FrecencySectionStore" /* 12335 */;
+// Module 11410 (FrecencySection)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import timing from "timing" /* 4838 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6590 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8587 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8707 */;
+import FrecencySectionStore2 from "FrecencySectionStore" /* 11411 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11412 */;
+import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 11413 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2050 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const FrecencySectionStore_mod = FrecencySectionStore2;
+let closure_12;
 
-require = fn;
-function Placeholder() {
-  const tmp = closure_13();
-  const placeholderWidth = usePlaceholderSize.usePlaceholderWidth(20, 90);
-  const obj3 = { style: tmp.commandContainer, children: null };
-  const placeholderWidth1 = usePlaceholderSize.usePlaceholderWidth(20, 70);
-  const items = [closure_1_11(hasOwnProperty, { style: tmp.loadingCommandIcon }), ];
-  const obj5 = { children: null };
-  const obj6 = { style: null };
-  const items1 = [tmp.loadingTextPlaceholder, { width: placeholderWidth }];
-  obj6.style = items1;
-  const items2 = [closure_1_11(hasOwnProperty, obj6), ];
-  const obj7 = { style: null };
-  const items3 = [tmp.loadingTextPlaceholderSmall, { width: placeholderWidth1 }];
-  obj7.style = items3;
-  items2[1] = closure_1_11(hasOwnProperty, obj7);
-  obj5.children = items2;
-  items[1] = closure_1_12(hasOwnProperty, obj5);
-  obj3.children = items;
-  return closure_1_12(hasOwnProperty, obj3);
-}
-function FrecentActivityOneClickCTA(context) {
-  context = context.context;
-  const app = context.app;
-  let handleActivityItemSelected;
-  const appLauncherContext = context(handleActivityItemSelected[13]).useAppLauncherContext();
-  ({ entrypoint, onActivityItemSelected } = appLauncherContext);
-  let id = noop.useId();
-  const obj = context(handleActivityItemSelected[13]);
-  const obj2 = noop;
-  let items = [EmbeddedActivitiesStore];
-  const obj3 = context(handleActivityItemSelected[14]);
-  [tmp6, tmp7] = context(handleActivityItemSelected[14]).useStateFromStoresArray(items, () => {
-    const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
-    let id;
-    if ("channel" === context.type) {
-      id = context.channel.id;
+let closure_14;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+let size;
+let size1;
+let size2;
+let tmp6;
+const ChevronSmallDownIcon = tmp6(10604);
+let closure_3 = ["ref"];
+({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
+let EmbeddedActivitiesStore = EmbeddedActivitiesStore_mod;
+let FrecencySectionStore = FrecencySectionStore_mod;
+let FrecencySectionSelection = FrecencySectionStore2.FrecencySectionSelection;
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: map1, jsxs: closure_14 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, headerContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, header: obj3, scrollView: { marginTop: 8, overflow: "visible" }, scrollViewContentContainer: obj4, contextMenuIcon: { height: 16, width: 16 }, appContainer: obj5, appContainerDisabled: obj6, commandContainer: obj7, appIcon: size, loadingCommandIcon: size1, loadingTextPlaceholder: obj8, loadingTextPlaceholderSmall: obj9, submittingOverlay: size2 };
+obj2 = { marginBottom: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj4 = { gap: nativeDefault.space.PX_8 };
+obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.lg };
+let merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
+obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.lg, opacity: 0.4 };
+const merged1 = Object.assign(nativeDefault.shadows.SHADOW_LOW);
+obj7 = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.md, paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, flexDirection: "row", justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_8 };
+size = { width: 60, height: 60, borderRadius: nativeDefault.radii.lg };
+size1 = { width: 36, height: 36, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start", marginBottom: nativeDefault.space.PX_4 };
+obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start" };
+size2 = { position: "absolute", top: 0, left: 0, width: 60, height: 60, borderRadius: nativeDefault.radii.lg };
+let closure_15 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let apps;
+  let onlyActivityApps;
+  let tmp5;
+  let tmp = onlyActivityApps;
+  let obj = onlyActivityApps(576);
+  const cResult = obj.c(5);
+  ({ apps, onlyActivityApps } = arg0);
+  if (cResult[0] === apps) {
+    let tmp4;
+    if (cResult[1] === onlyActivityApps) {
+      tmp4 = cResult[2];
     }
-    items[1] = EmbeddedActivitiesStore.getLaunchState(app.applicationId, id);
-    return items;
-  });
-  const tmp5 = _slicedToArray(context(handleActivityItemSelected[14]).useStateFromStoresArray(items, () => {
-    const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
-    let id;
-    if ("channel" === context.type) {
-      id = context.channel.id;
-    }
-    items[1] = EmbeddedActivitiesStore.getLaunchState(app.applicationId, id);
-    return items;
-  }), 2);
-  let isLaunching = null != tmp7;
-  const activityAction = context(handleActivityItemSelected[30]).useActivityAction({ context, applicationId: app.applicationId });
-  if (isLaunching) {
-    isLaunching = tmp7.isLaunching;
+    useGetOrFetchApplicationsDefault(tmp4);
   }
-  if (isLaunching) {
-    isLaunching = tmp7.componentId === id;
-  }
-  const obj4 = context(handleActivityItemSelected[30]);
-  const obj5 = { context, applicationId: app.applicationId };
-  const tmpResult = context(handleActivityItemSelected[22]);
-  handleActivityItemSelected = tmpResult.useHandleActivityItemSelected({ applicationId: app.applicationId, context, sectionName: context(handleActivityItemSelected[15]).AppLauncherSectionName.RECENT_APPS, onActivityItemSelected, location: context(handleActivityItemSelected[31]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, entrypoint, launchingComponentId: id, fetchesApplication: false }).handleActivityItemSelected;
-  const items1 = [handleActivityItemSelected];
-  const obj7 = { app, disabled: null, submitting: null, onAppSelected: null };
-  const callback = obj2.useCallback(() => {
-    handleActivityItemSelected();
-  }, items1);
-  if (!tmp6) {
-    tmp6 = activityAction === tmp(tmp2[30]).ActivityAction.LEAVE;
-  }
-  obj7.disabled = tmp6;
-  obj7.submitting = isLaunching;
-  obj7.onAppSelected = callback;
-  return closure_11(FrecentApp, obj7);
-}
-function FrecentApp(app) {
-  app = app.app;
-  ({ disabled, submitting } = app);
-  if (submitting === undefined) {
-    submitting = false;
-  }
-  const onAppSelected = app.onAppSelected;
-  const tmp = closure_13();
-  if (null == app.section) {
-    return null;
-  } else {
-    const appLauncherIconSource = app(12333).getAppLauncherIconSource(app.section.application);
-    let obj = { style: disabled ? tmp.appContainerDisabled : tmp.appContainer, disabled, accessible: true, accessibilityLabel: null, accessibilityRole: "button", onPress: null, children: null };
-    const application = app.section.application;
-    let name;
-    if (application != null) {
-      name = application.name;
-    }
-    obj.accessibilityLabel = name;
-    obj.onPress = function onPress() {
-      let tmp2 = null != onAppSelected;
-      if (tmp2) {
-        tmp2 = null != app.section.application;
+  if (cResult[3] !== onlyActivityApps) {
+    const fn = function o(section) {
+      let tmp = null;
+      if (null != section.section) {
+        let id = null;
+        if (null != section.section.application) {
+          id = null;
+          const obj = AppLauncherUtils;
+          if (obj.isEmbeddedApp(section.section.application)) {
+            id = null;
+            if (onlyActivityApps) {
+              id = section.section.application.id;
+            }
+          }
+        }
+        tmp = id;
       }
-      if (tmp2) {
-        const obj = { application: app.section.application, sectionName: AppLauncherTypes.AppLauncherSectionName.RECENT_APPS };
-        onAppSelected(obj);
+      return tmp;
+    };
+    cResult[3] = onlyActivityApps;
+    cResult[4] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[4];
+  }
+  const mapped = apps.map(tmp5);
+  const found = mapped.filter(tmp(1376).isNotNullish);
+  cResult[0] = apps;
+  cResult[1] = onlyActivityApps;
+  cResult[2] = found;
+  tmp4 = found;
+}) : ((apps) => {
+  apps = apps.apps;
+  const onlyActivityApps = apps.onlyActivityApps;
+  const items = [apps, onlyActivityApps];
+  const memo = react.useMemo(() => {
+    const mapped = apps.map((section) => {
+      let tmp = null;
+      if (null != section.section) {
+        let id = null;
+        if (null != section.section.application) {
+          id = null;
+          const obj = apps(dependencyMap[12]);
+          if (obj.isEmbeddedApp(section.section.application)) {
+            id = null;
+            if (onlyActivityApps) {
+              id = section.section.application.id;
+            }
+          }
+        }
+        tmp = id;
+      }
+      return tmp;
+    });
+    return mapped.filter(GlobalUtils.isNotNullish);
+  }, items);
+  onlyActivityApps(6590)(memo);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let tmp5;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(19);
+  const tmp2 = closure_15();
+  const obj2 = usePlaceholderSize;
+  const placeholderWidth = obj2.usePlaceholderWidth(20, 90);
+  const obj3 = usePlaceholderSize;
+  const placeholderWidth1 = obj3.usePlaceholderWidth(20, 70);
+  if (cResult[0] !== tmp2.loadingCommandIcon) {
+    const obj4 = { style: tmp2.loadingCommandIcon };
+    const tmp8 = map1(metroImportDefault, obj4);
+    cResult[0] = tmp2.loadingCommandIcon;
+    cResult[1] = tmp8;
+    tmp5 = tmp8;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== placeholderWidth) {
+    const obj5 = { width: placeholderWidth };
+    cResult[2] = placeholderWidth;
+    cResult[3] = obj5;
+    tmp9 = obj5;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === tmp2.loadingTextPlaceholder) {
+    let tmp10;
+    let tmp12;
+    if (cResult[5] === tmp9) {
+      tmp10 = cResult[6];
+    }
+    if (cResult[7] !== placeholderWidth1) {
+      const obj6 = { width: placeholderWidth1 };
+      cResult[7] = placeholderWidth1;
+      cResult[8] = obj6;
+      tmp12 = obj6;
+    } else {
+      tmp12 = cResult[8];
+    }
+    if (cResult[9] === tmp2.loadingTextPlaceholderSmall) {
+      let tmp13;
+      if (cResult[10] === tmp12) {
+        tmp13 = cResult[11];
+      }
+      if (cResult[12] === tmp10) {
+        let tmp17;
+        if (cResult[13] === tmp13) {
+          tmp17 = cResult[14];
+        }
+        if (cResult[15] === tmp2.commandContainer) {
+          if (cResult[16] === tmp5) {
+            let tmp21;
+            if (cResult[17] === tmp17) {
+              tmp21 = cResult[18];
+            }
+            return tmp21;
+          }
+        }
+        const obj7 = { style: tmp2.commandContainer, children: items };
+        items = [tmp5, tmp17];
+        const tmp24 = authStore2(metroImportDefault, obj7);
+        cResult[15] = tmp2.commandContainer;
+        cResult[16] = tmp5;
+        cResult[17] = tmp17;
+        cResult[18] = tmp24;
+        tmp21 = tmp24;
+      }
+      const obj8 = { children: items1 };
+      items1 = [tmp10, tmp13];
+      const tmp20 = authStore2(metroImportDefault, obj8);
+      cResult[12] = tmp10;
+      cResult[13] = tmp13;
+      cResult[14] = tmp20;
+      tmp17 = tmp20;
+    }
+    const obj9 = { style: items2 };
+    items2 = [tmp2.loadingTextPlaceholderSmall, tmp12];
+    const tmp16 = map1(metroImportDefault, obj9);
+    cResult[9] = tmp2.loadingTextPlaceholderSmall;
+    cResult[10] = tmp12;
+    cResult[11] = tmp16;
+    tmp13 = tmp16;
+  }
+  obj10 = { style: items3 };
+  items3 = [tmp2.loadingTextPlaceholder, tmp9];
+  const tmp11 = map1(metroImportDefault, obj10);
+  cResult[4] = tmp2.loadingTextPlaceholder;
+  cResult[5] = tmp9;
+  cResult[6] = tmp11;
+  tmp10 = tmp11;
+}) : (() => {
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  const tmp = closure_15();
+  const obj = usePlaceholderSize;
+  const placeholderWidth = obj.usePlaceholderWidth(20, 90);
+  const obj3 = { style: tmp.commandContainer, children: items };
+  const obj2 = usePlaceholderSize;
+  const obj4 = { style: tmp.loadingCommandIcon };
+  const placeholderWidth1 = obj2.usePlaceholderWidth(20, 70);
+  items = [map1(metroImportDefault, obj4), ];
+  const obj6 = { style: items1 };
+  items1 = [tmp.loadingTextPlaceholder, { width: placeholderWidth }];
+  const obj5 = { children: items2 };
+  items2 = [map1(metroImportDefault, obj6), ];
+  const obj7 = { style: items3 };
+  items3 = [tmp.loadingTextPlaceholderSmall, { width: placeholderWidth1 }];
+  items2[1] = map1(metroImportDefault, obj7);
+  items[1] = authStore2(metroImportDefault, obj5);
+  return authStore2(metroImportDefault, obj3);
+});
+let obj10 = { APPS: 0, [0]: "APPS", COMMANDS: 1, [1]: "COMMANDS" };
+let closure_19 = { code: "function FrecencySectionTsx1(){const{withTiming,isRecentsMenuOpen}=this.__closure;return{transform:[{rotate:withTiming(isRecentsMenuOpen?\"-180deg\":\"0deg\")}]};}" };
+const __initData = { code: "function FrecencySectionTsx2(){const{withTiming,isRecentsMenuOpen}=this.__closure;return{transform:[{rotate:withTiming(isRecentsMenuOpen?'-180deg':'0deg')}]};}" };
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+  let closure_11;
+  let commands;
+  let launchingActivity;
+  let selection;
+  let style;
+  let tmp7;
+  let tmp8;
+  let tmp = context;
+  let tmp2 = commands;
+  let obj = context(commands[11]);
+  const cResult = obj.c(78);
+  context = context.context;
+  const sectionDescriptors = context.sectionDescriptors;
+  commands = context.commands;
+  const loading = context.loading;
+  const apps = context.apps;
+  const onAppSelected = context.onAppSelected;
+  const onCommandSelected = context.onCommandSelected;
+  const onViewAllSelected = context.onViewAllSelected;
+  let tmp4 = closure_15();
+  let closure_8 = tmp4;
+  let obj2 = context(commands[16]);
+  let obj3 = onCommandSelected;
+  const entrypoint = obj2.useAppLauncherContext().entrypoint;
+  const tmp5 = onAppSelected;
+  let tmp6 = onAppSelected(onCommandSelected.useState(false), 2);
+  EmbeddedActivitiesStore = tmp6[0];
+  FrecencySectionStore = tmp6[1];
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp9 = FrecencySectionStore;
+    let items = [FrecencySectionStore];
+    class I {
+      constructor() {
+        return selection.getSelection();
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = I;
+    tmp8 = I;
+    tmp7 = items;
+  } else {
+    [tmp7, tmp8] = cResult;
+  }
+  const tmpResult = tmp(tmp2[17]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let items1 = [EmbeddedActivitiesStore];
+    class K {
+      constructor() {
+        return launchingActivity.isLaunchingActivity();
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = K;
+    let tmp11 = items1;
+  } else {
+    tmp11 = cResult[2];
+  }
+  tmp(tmp2[17]);
+  if (commands.length > 0) {
+    let APPS;
+    if (stateFromStores === FrecencySectionSelection.COMMANDS) {
+      APPS = obj10.COMMANDS;
+    }
+    let tmp5Result = tmp5(tmp15(APPS), 2);
+    class K {
+      constructor() {
+        return launchingActivity.isLaunchingActivity();
+      }
+    }
+    FrecencySectionSelection = tmp20;
+    closure_12 = tmp5Result[1];
+    const tmp21 = entrypoint === tmp(tmp2[18]).AppLauncherEntrypoint.VOICE;
+    let closure_13 = tmp21;
+    if (cResult[4] === apps.length) {
+      if (cResult[5] === commands.length) {
+        if (cResult[6] === loading) {
+          let tmp22;
+          let tmp23;
+          let tmp25;
+          if (cResult[7] === tmp20) {
+            tmp22 = cResult[8];
+            tmp23 = cResult[9];
+          }
+          const effect = obj3.useEffect(tmp22, tmp23);
+          if (cResult[10] !== apps) {
+            const substr = apps.slice(0, 8);
+            class K {
+              constructor() {
+                return launchingActivity.isLaunchingActivity();
+              }
+            }
+            cResult[11] = substr;
+            tmp25 = substr;
+          } else {
+            tmp25 = cResult[11];
+          }
+          class K {
+            constructor() {
+              return launchingActivity.isLaunchingActivity();
+            }
+          }
+          let obj4 = { apps: tmp25, onlyActivityApps: tmp21 };
+          cResult[12] = tmp21;
+          cResult[13] = tmp25;
+          cResult[14] = obj4;
+        }
+      }
+    }
+    const fn = function j() {
+      let RECENT_COMMANDS;
+      let tmp = loading;
+      if (!tmp) {
+        tmp = 0 === commands.length && 0 === apps.length;
+        const tmp3 = 0 === commands.length && 0 === apps.length;
+      }
+      if (!tmp) {
+        let length;
+        const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
+        const APP_LAUNCHER_FRECENTS_SEEN = AnalyticEvents.APP_LAUNCHER_FRECENTS_SEEN;
+        AppAnalyticsUtils;
+        const tmp10 = obj10;
+        const tmp9 = FrecencySectionSelection;
+        if (FrecencySectionSelection === obj10.APPS) {
+          length = apps.length;
+        } else {
+          length = commands.length;
+        }
+        const obj = { num: length, section_name: RECENT_COMMANDS, location: AppLauncherTypes.AppLauncherLocations.HOME };
+        if (tmp9 === tmp10.APPS) {
+          RECENT_COMMANDS = tmp5(8707).AppLauncherSectionName.RECENT_APPS;
+        } else {
+          RECENT_COMMANDS = tmp5(8707).AppLauncherSectionName.RECENT_COMMANDS;
+        }
+        trackWithMetadata(APP_LAUNCHER_FRECENTS_SEEN, obj);
       }
     };
-    let tmp3 = null != appLauncherIconSource;
-    if (tmp3) {
-      const obj2 = { style: tmp.appIcon, source: appLauncherIconSource };
-      tmp3 = closure_11(onAppSelected(5836), obj2);
-    }
-    const items = [tmp3, ];
-    const obj3 = { submitting, style: tmp.submittingOverlay };
-    items[1] = closure_11(app(12342).SubmittingOverlay, obj3);
-    obj.children = items;
-    return closure_12(app(5371).PressableOpacity, obj, app.applicationId);
+    const items2 = [commands.length, apps.length, loading, tmp20];
+    cResult[4] = apps.length;
+    cResult[5] = commands.length;
+    cResult[6] = loading;
+    cResult[7] = tmp20;
+    cResult[8] = fn;
+    cResult[9] = items2;
+    tmp23 = items2;
+    tmp22 = fn;
   }
-}
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const FrecencySectionSelection = fn(12335).FrecencySectionSelection;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { marginBottom: nativeDefault.space.PX_16 }, headerContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, header: null, scrollView: null, scrollViewContentContainer: null, contextMenuIcon: null, appContainer: null, appContainerDisabled: null, commandContainer: null, appIcon: null, loadingCommandIcon: null, loadingTextPlaceholder: null, loadingTextPlaceholderSmall: null, submittingOverlay: null };
-let obj3 = { marginBottom: nativeDefault.space.PX_16 };
-obj2.header = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj2.scrollView = { marginTop: 8, overflow: "visible" };
-let obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj2.scrollViewContentContainer = { gap: nativeDefault.space.PX_8 };
-obj2.contextMenuIcon = { height: 16, width: 16 };
-let obj5 = { gap: nativeDefault.space.PX_8 };
-let merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
-obj2.appContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.lg };
-let obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.lg };
-const merged1 = Object.assign(nativeDefault.shadows.SHADOW_LOW);
-obj2.appContainerDisabled = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.lg, opacity: 0.4 };
-let obj7 = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.lg, opacity: 0.4 };
-obj2.commandContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.md, paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, flexDirection: "row", justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_8 };
-let size = { width: 60, height: 60, borderRadius: nativeDefault.radii.lg };
-obj2.appIcon = size;
-const size1 = { width: 36, height: 36, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj2.loadingCommandIcon = size1;
-let obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: nativeDefault.radii.md, paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, flexDirection: "row", justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.loadingTextPlaceholder = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start", marginBottom: nativeDefault.space.PX_4 };
-let obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start", marginBottom: nativeDefault.space.PX_4 };
-obj2.loadingTextPlaceholderSmall = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start" };
-const size2 = { position: "absolute", top: 0, left: 0, width: 60, height: 60, borderRadius: nativeDefault.radii.lg };
-obj2.submittingOverlay = size2;
-let closure_13 = createStyles.createStyles(obj2);
-let obj11 = { APPS: 0, [0]: "APPS", COMMANDS: 1, [1]: "COMMANDS" };
-const __initData = { code: "function FrecencySectionTsx1(){const{withTiming,isRecentsMenuOpen}=this.__closure;return{transform:[{rotate:withTiming(isRecentsMenuOpen?'-180deg':'0deg')}]};}" };
-size = fn(2);
-let result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySection.tsx");
-
-export default function FrecencySection(loading) {
+  APPS = obj10.APPS;
+}) : ((loading) => {
+  let Text;
+  let closure_7;
+  let commands;
+  let context;
+  let intl;
+  let intl2;
+  let intl3;
+  let isRecentsMenuOpen;
+  let items4;
+  let items5;
+  let obj12;
+  let onAppSelected;
+  let prop;
+  let prop1;
+  let require;
+  let selection;
+  let tmp10;
+  let tmp9;
   ({ context: require, sectionDescriptors: importDefault, commands } = loading);
   loading = loading.loading;
   const apps = loading.apps;
-  ({ onAppSelected: closure_5, onCommandSelected: closure_6, onViewAllSelected: EmbeddedActivitiesStore } = loading);
+  ({ onAppSelected: _slicedToArray, onCommandSelected: react, onViewAllSelected: closure_7 } = loading);
+  isRecentsMenuOpen = undefined;
+  selection = undefined;
   let first1;
   closure_12 = undefined;
-  closure_13 = undefined;
+  let closure_13;
   let style;
   let COMMANDS;
-  let tmp = closure_13();
-  const selection = tmp;
-  const tmp5 = loading(apps.useState(false), 2);
-  const isRecentsMenuOpen = tmp5[0];
-  closure_10 = tmp5[1];
+  let tmp = COMMANDS();
+  let closure_8 = tmp;
+  let tmp2 = require;
+  let tmp3 = commands;
   let obj = require("AppLauncherContext");
-  const tmp4 = loading;
+  let obj2 = react;
+  const entrypoint = obj.useAppLauncherContext().entrypoint;
+  let tmp4 = _slicedToArray;
+  [isRecentsMenuOpen, selection] = react.useState(false);
+  let obj3 = require("get initialized");
   let items = [selection];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => selection.getSelection());
-  require("initialize");
-  [][0] = EmbeddedActivitiesStore;
+  const stateFromStores = obj3.useStateFromStores(items, () => selection.getSelection());
+  let tmp8 = require("get initialized");
+  [][0] = isRecentsMenuOpen;
   if (commands.length > 0) {
-    if (stateFromStores === isRecentsMenuOpen.COMMANDS) {
-      let APPS = COMMANDS.COMMANDS;
-      let tmp12 = COMMANDS;
+    let APPS;
+    let tmp12;
+    let tmp11 = first1;
+    if (stateFromStores === first1.COMMANDS) {
+      APPS = obj10.COMMANDS;
+      tmp12 = obj10;
     }
     const tmp4Result = tmp4(tmp10(APPS), 2);
     first1 = tmp4Result[0];
     closure_12 = tmp4Result[1];
-    const tmp16 = obj.useAppLauncherContext().entrypoint === tmp2(tmp3[15]).AppLauncherEntrypoint.VOICE;
+    const tmp16 = entrypoint === tmp2(tmp3[18]).AppLauncherEntrypoint.VOICE;
     closure_13 = tmp16;
     let items1 = [commands.length, apps.length, loading, first1];
     const effect = obj2.useEffect(() => {
+      let RECENT_COMMANDS;
       let tmp = loading;
-      if (!loading) {
-        let tmp3 = 0 === commands.length;
-        if (tmp3) {
-          tmp3 = 0 === apps.length;
-        }
-        tmp = tmp3;
+      if (!tmp) {
+        tmp = 0 === commands.length && 0 === apps.length;
+        const tmp3 = 0 === commands.length && 0 === apps.length;
       }
       if (!tmp) {
-        let HOME = dependencyMap;
-        if (first1 === obj11.APPS) {
-          let length = apps.length;
+        let length;
+        const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
+        const APP_LAUNCHER_FRECENTS_SEEN = AnalyticEvents.APP_LAUNCHER_FRECENTS_SEEN;
+        AppAnalyticsUtils;
+        const tmp10 = obj10;
+        const tmp9 = first1;
+        if (first1 === obj10.APPS) {
+          length = apps.length;
         } else {
           length = commands.length;
         }
-        let obj2 = { num: length, section_name: null, location: null };
-        if (tmp7 === tmp8.APPS) {
-          let RECENT_COMMANDS = tmp5(9555).AppLauncherSectionName.RECENT_APPS;
+        const obj = { num: length, section_name: RECENT_COMMANDS, location: AppLauncherTypes.AppLauncherLocations.HOME };
+        if (tmp9 === tmp10.APPS) {
+          RECENT_COMMANDS = tmp5(8707).AppLauncherSectionName.RECENT_APPS;
         } else {
-          RECENT_COMMANDS = tmp5(9555).AppLauncherSectionName.RECENT_COMMANDS;
+          RECENT_COMMANDS = tmp5(8707).AppLauncherSectionName.RECENT_COMMANDS;
         }
-        obj2.section_name = RECENT_COMMANDS;
-        HOME = tmp5(9555).AppLauncherLocations.HOME;
-        obj2.location = HOME;
-        obj2 = AppAnalyticsUtils.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_FRECENTS_SEEN, obj2);
-        tmp7 = first1;
-        tmp8 = obj11;
+        trackWithMetadata(APP_LAUNCHER_FRECENTS_SEEN, obj);
       }
     }, items1);
     const items2 = [apps];
     const memo = obj2.useMemo(() => apps.slice(0, 8), items2);
-    closure_129_0 = memo;
-    closure_129_1 = tmp16;
-    const items3 = [memo, tmp16];
-    const memo1 = obj2.useMemo(() => {
-      const mapped = context.map((section) => {
-        let tmp = null;
-        if (null != section.section) {
-          let id = null;
-          if (null != section.section.application) {
-            id = null;
-            if (obj.isEmbeddedApp(section.section.application)) {
-              id = null;
-              if (closure_1_1) {
-                id = section.section.application.id;
-              }
-            }
-            obj = context(commands[9]);
-          }
-          tmp = id;
-        }
-        return tmp;
-      });
-      return mapped.filter(GlobalUtils.isNotNullish);
-    }, items3);
-    require("useGetOrFetchApplications")(memo1);
-    class G {
-      constructor() {
-        obj = closure_0(closure_2[18]);
-        str = "0deg";
-        if (closure_9) {
-          str = "-180deg";
-        }
-        obj1 = { transform: null };
-        obj4 = { rotate: obj.withTiming(str) };
-        items = [];
-        items[0] = obj4;
-        obj1.transform = items;
-        return obj1;
+    let obj4 = { apps: memo, onlyActivityApps: tmp16 };
+    closure_16(obj4);
+    const tmp2Result = tmp2(tmp3[20]);
+    const fn = function z() {
+      let items;
+      let str = "0deg";
+      const withTiming = timing.withTiming;
+      timing;
+      if (first) {
+        str = "-180deg";
       }
-    }
-    let obj4 = { withTiming: tmp2(tmp3[18]).withTiming, isRecentsMenuOpen };
-    G.__closure = obj4;
-    G.__workletHash = 4528534448308;
-    G.__initData = __initData;
-    style = tmp2(tmp3[17]).useAnimatedStyle(G);
+      const obj = { transform: items };
+      items = [{ rotate: withTiming(str) }];
+      ({ rotate: withTiming(str) });
+      return obj;
+    };
+    let obj5 = { withTiming: tmp2(tmp3[21]).withTiming, isRecentsMenuOpen };
+    const useAnimatedStyle = tmp2Result.useAnimatedStyle;
+    fn.__closure = obj5;
+    fn.__workletHash = 1244874825047;
+    fn.__initData = __initData;
+    style = useAnimatedStyle(fn);
     if (0 === commands.length) {
       if (0 === apps.length) {
         return null;
       }
     }
-    let obj5 = { label: null, IconComponent: null, action: null };
-    let intl = tmp2(tmp3[19]).intl;
-    obj5.label = intl.string(tmp2(tmp3[19]).t.XRBNsN);
-    let prop;
+    const obj6 = {
+      label: intl.string(tmp2(tmp3[22]).t.XRBNsN),
+      IconComponent: prop,
+      action() {
+          closure_12(obj10.COMMANDS);
+          const obj = FrecencySectionStoreActionCreators;
+          const result = obj.setFrecencySectionSelection(FrecencySectionSelection.COMMANDS);
+          const obj2 = AppAnalyticsUtils;
+          const obj3 = { num: commands.length, section_name: AppLauncherTypes.AppLauncherSectionName.RECENT_COMMANDS };
+          obj2.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_FRECENTS_TOGGLED, obj3);
+        }
+    };
+    intl = tmp2(tmp3[22]).intl;
+    prop = undefined;
     if (first1 === tmp12.COMMANDS) {
-      prop = tmp2(tmp3[20]).CheckmarkSmallBoldIcon;
+      prop = tmp2(tmp3[23]).CheckmarkSmallBoldIcon;
     }
-    obj5.IconComponent = prop;
-    obj5.action = function action() {
-      closure_12(obj11.COMMANDS);
-      const result = FrecencySectionStoreActionCreators.setFrecencySectionSelection(FrecencySectionSelection.COMMANDS);
-      const obj2 = AppAnalyticsUtils;
-      obj2.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_FRECENTS_TOGGLED, { num: commands.length, section_name: AppLauncherTypes.AppLauncherSectionName.RECENT_COMMANDS });
+    const items3 = [obj6, ];
+    const obj7 = {
+      label: intl2.string(tmp2(tmp3[22]).t.TCAk0p),
+      IconComponent: prop1,
+      action() {
+          closure_12(obj10.APPS);
+          const obj = FrecencySectionStoreActionCreators;
+          const result = obj.setFrecencySectionSelection(FrecencySectionSelection.APPS);
+          const obj2 = AppAnalyticsUtils;
+          const obj3 = { num: apps.length, section_name: AppLauncherTypes.AppLauncherSectionName.RECENT_APPS };
+          obj2.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_FRECENTS_TOGGLED, obj3);
+        }
     };
-    const items4 = [obj5, ];
-    let obj6 = { label: null, IconComponent: null, action: null };
-    const intl2 = tmp2(tmp3[19]).intl;
-    obj6.label = intl2.string(tmp2(tmp3[19]).t.TCAk0p);
-    let prop1;
+    intl2 = tmp2(tmp3[22]).intl;
+    prop1 = undefined;
     if (first1 === tmp12.APPS) {
-      prop1 = tmp2(tmp3[20]).CheckmarkSmallBoldIcon;
+      prop1 = tmp2(tmp3[23]).CheckmarkSmallBoldIcon;
     }
-    obj6.IconComponent = prop1;
-    obj6.action = function action() {
-      closure_12(obj11.APPS);
-      const result = FrecencySectionStoreActionCreators.setFrecencySectionSelection(FrecencySectionSelection.APPS);
-      const obj2 = AppAnalyticsUtils;
-      obj2.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_FRECENTS_TOGGLED, { num: apps.length, section_name: AppLauncherTypes.AppLauncherSectionName.RECENT_APPS });
-    };
-    items4[1] = obj6;
+    items3[1] = obj7;
     const substr = commands.slice(0, 8);
-    let mapped = substr.map((type) => {
+    const mapped = substr.map((type) => {
+      let found;
+      let items;
+      let items1;
       found = found.find((id) => id.id === type.applicationId);
       let application;
+      const getAppLauncherIconSource = require("AppLauncherNativeUtils").getAppLauncherIconSource;
+      require("AppLauncherNativeUtils");
       if (found != null) {
         application = found.application;
       }
-      const appLauncherIconSource = context(commands[22]).getAppLauncherIconSource(application);
+      const appLauncherIconSource = getAppLauncherIconSource(application);
       if (null == found) {
         return null;
       } else {
+        let displayName;
         let FAKE_BUILT_IN_APP = found.application;
+        const getSectionName = require("AppLauncherUtils").getSectionName;
+        require("AppLauncherUtils");
         if (FAKE_BUILT_IN_APP == null) {
-          FAKE_BUILT_IN_APP = tmp2(tmp3[9]).FAKE_BUILT_IN_APP;
+          FAKE_BUILT_IN_APP = tmp2(tmp3[12]).FAKE_BUILT_IN_APP;
         }
-        const sectionName = tmp2(tmp3[9]).getSectionName(FAKE_BUILT_IN_APP);
-        if (type.type === tmp2(tmp3[23]).ApplicationCommandType.PRIMARY_ENTRY_POINT) {
-          let displayName = tmp2(tmp3[9]).formatPrimaryEntryPointCommandName(type.displayName);
-          const tmp2Result2 = tmp2(tmp3[9]);
+        const sectionName = getSectionName(FAKE_BUILT_IN_APP);
+        if (type.type === require("Server").ApplicationCommandType.PRIMARY_ENTRY_POINT) {
+          const tmp2Result2 = require("AppLauncherUtils");
+          displayName = tmp2Result2.formatPrimaryEntryPointCommandName(type.displayName);
         } else {
           displayName = type.displayName;
         }
-        const obj2 = { style: selection.commandContainer, accessible: true, accessibilityLabel: null, accessibilityRole: "button", onPress: null, children: null };
         const _HermesInternal = HermesInternal;
-        obj2.accessibilityLabel = "" + displayName + " " + sectionName;
-        obj2.onPress = function onPress() {
-          return closure_2_6(closure_0, found);
+        const obj = {
+          style: closure_8.commandContainer,
+          accessible: true,
+          accessibilityLabel: "" + displayName + " " + sectionName,
+          accessibilityRole: "button",
+          onPress() {
+              return react(type, found);
+            },
+          children: items
         };
-        let tmp10 = null != appLauncherIconSource;
-        if (tmp10) {
-          const obj3 = { iconSize: 36, iconSource: appLauncherIconSource };
-          tmp10 = first1(require("EntityBorderAppIcon"), obj3);
+        const PressableScale = tmp2(tmp3[27]).PressableScale;
+        let tmp11 = null != appLauncherIconSource;
+        if (tmp11) {
+          const obj2 = { iconSize: 36, iconSource: appLauncherIconSource };
+          tmp11 = closure_13(require("EntityBorderAppIcon"), obj2);
         }
-        const items = [tmp10, ];
-        const obj4 = { children: null };
-        const obj5 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: displayName };
-        const items1 = [first1(tmp2(tmp3[26]).Text, obj5), ];
-        const obj6 = { variant: "text-xs/normal", color: "text-subtle", children: sectionName };
-        items1[1] = first1(tmp2(tmp3[26]).Text, obj6);
-        obj4.children = items1;
-        items[1] = closure_12(onAppSelected, obj4);
-        obj2.children = items;
-        return closure_12(tmp2(tmp3[24]).PressableScale, obj2, type.id);
+        items = [tmp11, ];
+        const obj3 = { children: items1 };
+        const obj4 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: displayName };
+        items1 = [closure_13(require("Text/Text").Text, obj4), ];
+        const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: sectionName };
+        items1[1] = closure_13(require("Text/Text").Text, obj5);
+        items[1] = style(closure_7, obj3);
+        return style(PressableScale, obj, type.id);
       }
-      const obj = context(commands[22]);
     });
-    let found = mapped.filter(tmp2(tmp3[10]).isNotNullish);
+    let found = mapped.filter(tmp2(tmp3[13]).isNotNullish);
     const mapped1 = memo.map((section) => {
-      let applicationId = section;
       let tmp = null;
-      if (null == section.section) {
-        return null;
-      } else {
-        if (tmp != applicationId.section.application) {
-          tmp = undefined;
-          const obj2 = { context, app: applicationId };
-          applicationId = applicationId.applicationId;
-          let tmp8 = closure_2_11(FrecentActivityOneClickCTA, obj2, applicationId);
+      if (null != section.section) {
+        if (null != section.section.application) {
+          const obj = AppLauncherUtils;
+          if (obj.isEmbeddedApp(section.section.application)) {
+            let tmp8;
+            const tmp4 = map1;
+            if (tmp4) {
+              const obj2 = { context: require, app: section };
+              tmp8 = map1(closure_21, obj2, section.applicationId);
+            }
+            tmp = tmp8;
+          }
         }
-        const obj3 = { app: applicationId, onAppSelected };
-        tmp8 = closure_2_11(FrecentApp, obj3, applicationId.applicationId);
+        const obj3 = { app: section, onAppSelected: _slicedToArray };
+        tmp8 = map1(closure_22, obj3, section.applicationId);
       }
+      return tmp;
     });
     const filter = mapped1.filter;
     if (0 === commands.length) {
@@ -394,86 +659,79 @@ export default function FrecencySection(loading) {
       if (COMMANDS === tmp12.COMMANDS) {
         mapped2 = found;
       }
-      const obj7 = { style: tmp.container, children: null };
-      const obj8 = { style: tmp.headerContainer, children: null };
       let tmp30 = commands.length > 0;
+      const obj8 = { style: tmp.container, children: items5 };
+      const obj9 = { style: tmp.headerContainer, children: items4 };
+      const ContextMenu = tmp2(tmp3[31]).ContextMenu;
       if (tmp30) {
         tmp30 = apps.length > 0;
       }
-      const obj9 = {
+      obj10 = {
         enabled: tmp30,
-        items: items4,
+        items: items3,
         triggerOnTap: true,
         onOpen() {
-              return closure_10(true);
+              return selection(true);
             },
         onClose() {
-              return closure_10(false);
+              return selection(false);
             },
         children(ref) {
-              const obj = { style: selection.header };
+              let intl;
+              let items;
+              let obj4;
+              const obj = { style: closure_8.header, ref, children: items };
+              ref = ref.ref;
               const merged = Object.assign(Object.assign(ref, Object.assign({ ref: 0 })));
-              obj.ref = ref.ref;
-              const obj2 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", children: null };
-              const intl = util.intl;
-              obj2.children = intl.string(util.t.acSE0h);
-              const items = [closure_2_11(Text_Text.Text, obj2), ];
+              const obj2 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.acSE0h) };
+              const Text = Text_Text.Text;
+              intl = intl4.intl;
+              items = [map1(Text, obj2), ];
               let tmp5Result = null;
+              const tmp = authStore2;
+              const tmp2 = metroImportDefault;
+              const tmp3 = closure_8;
               if (commands.length > 0) {
                 tmp5Result = null;
                 if (apps.length > 0) {
-                  const obj3 = { style, children: null };
-                  const obj4 = { color: "interactive-text-default", style: selection.contextMenuIcon };
-                  obj3.children = tmp5(ChevronSmallDownIcon.ChevronSmallDownIcon, obj4);
-                  tmp5Result = tmp5(ReanimatedRexportDefault.View, obj3);
+                  const obj3 = { style, children: map1(ChevronSmallDownIcon.ChevronSmallDownIcon, obj4) };
+                  const View = ReanimatedRexportDefault.View;
+                  obj4 = { color: "interactive-text-default", style: tmp3.contextMenuIcon };
+                  tmp5Result = tmp5(View, obj3);
                 }
               }
               items[1] = tmp5Result;
-              obj.children = items;
-              return closure_2_12(hasOwnProperty, obj);
+              return tmp(tmp2, obj);
             }
       };
-      const items5 = [first1(tmp2(tmp3[27]).ContextMenu, obj9), ];
+      items4 = [closure_13(ContextMenu, obj10), ];
       let tmp31 = COMMANDS === tmp12.APPS;
+      const PressableOpacity = tmp2(tmp3[32]).PressableOpacity;
       if (tmp31) {
         tmp31 = tmp9;
       }
-      const obj10 = { disabled: null, onPress: null, accessibilityRole: "button", children: null };
-      class G {
-        constructor() {
-          obj = closure_0(closure_2[18]);
-          str = "0deg";
-          if (closure_9) {
-            str = "-180deg";
-          }
-          obj1 = { transform: null };
-          obj4 = { rotate: obj.withTiming(str) };
-          items = [];
-          items[0] = obj4;
-          obj1.transform = items;
-          return obj1;
-        }
-      }
-      obj10.onPress = function onPress() {
-        return launchingActivity(COMMANDS);
+      const obj11 = {
+        disabled: tmp31,
+        onPress() {
+              return closure_7(COMMANDS);
+            },
+        accessibilityRole: "button",
+        children: closure_13(Text, obj12)
       };
-      obj11 = { variant: "text-sm/medium", color: "text-brand", children: null };
-      const intl3 = tmp2(tmp3[19]).intl;
-      obj11.children = intl3.string(tmp2(tmp3[19]).t["/qG8v7"]);
-      obj10.children = first1(tmp2(tmp3[26]).Text, obj11);
-      items5[1] = first1(tmp2(tmp3[29]).PressableOpacity, obj10);
-      obj8.children = items5;
-      const items6 = [closure_12(onAppSelected, obj8), ];
-      const obj12 = { style: null, contentContainerStyle: null, horizontal: true, showsHorizontalScrollIndicator: false, children: null };
+      obj12 = { variant: "text-sm/medium", color: "text-brand", children: intl3.string(tmp2(tmp3[22]).t["/qG8v7"]) };
+      Text = tmp2(tmp3[29]).Text;
+      intl3 = tmp2(tmp3[22]).intl;
+      items4[1] = closure_13(PressableOpacity, obj11);
+      items5 = [style(closure_7, obj9), ];
+      const obj23 = { style: null, contentContainerStyle: null, horizontal: true, showsHorizontalScrollIndicator: false, children: mapped2 };
       ({ scrollView: obj13.style, scrollViewContentContainer: obj13.contentContainerStyle } = tmp);
+      const tmp32 = closure_8;
       if (loading) {
-        const items7 = [1, 2, 3, 4, 5];
-        mapped2 = items7.map((item, index) => first1(closure_14, {}, index));
+        const items6 = [1, 2, 3, 4, 5];
+        mapped2 = items6.map((item, index) => closure_13(closure_1_17, {}, index));
       }
-      obj12.children = mapped2;
-      items6[1] = first1(closure_6, obj12);
-      obj7.children = items6;
-      return closure_12(onAppSelected, obj7);
+      items5[1] = closure_13(tmp32, obj23);
+      return style(closure_7, obj8);
     }
     COMMANDS = first1;
     if (commands.length > 0) {
@@ -482,9 +740,442 @@ export default function FrecencySection(loading) {
         COMMANDS = tmp12.COMMANDS;
       }
     }
-    const tmp2Result = tmp2(tmp3[17]);
   }
-  tmp12 = COMMANDS;
-  APPS = COMMANDS.APPS;
-};
-export const SectionItemType = obj11;
+  tmp12 = obj10;
+  APPS = obj10.APPS;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+  let entrypoint;
+  let first;
+  let handleActivityItemSelected;
+  let onActivityItemSelected;
+  let tmp11;
+  let tmp12;
+  const obj = context(handleActivityItemSelected[11]);
+  const cResult = obj.c(21);
+  context = context.context;
+  const app = context.app;
+  const obj2 = context(handleActivityItemSelected[16]);
+  const appLauncherContext = obj2.useAppLauncherContext();
+  ({ entrypoint, onActivityItemSelected } = appLauncherContext);
+  let id = react.useId();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [EmbeddedActivitiesStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === app.applicationId) {
+    if (cResult[2] === context.channel) {
+      let tmp8;
+      if (cResult[3] === context.type) {
+        tmp8 = cResult[4];
+      }
+      const tmpResult = context(handleActivityItemSelected[17]);
+      [tmp11, tmp12] = tmpResult.useStateFromStoresArray(first, tmp8);
+      _slicedToArray(tmpResult.useStateFromStoresArray(first, tmp8), 2);
+      if (cResult[5] === app.applicationId) {
+        let tmp13;
+        if (cResult[6] === context) {
+          tmp13 = cResult[7];
+        }
+        let isLaunching = null != tmp12;
+        const tmpResult3 = context(handleActivityItemSelected[33]);
+        const activityAction = tmpResult3.useActivityAction(tmp13);
+        if (isLaunching) {
+          isLaunching = tmp12.isLaunching;
+        }
+        if (isLaunching) {
+          isLaunching = tmp12.componentId === id;
+        }
+        if (cResult[8] === app.applicationId) {
+          if (cResult[9] === context) {
+            if (cResult[10] === entrypoint) {
+              if (cResult[11] === id) {
+                let tmp16;
+                if (cResult[12] === onActivityItemSelected) {
+                  tmp16 = cResult[13];
+                }
+                const tmpResult4 = context(handleActivityItemSelected[25]);
+                handleActivityItemSelected = tmpResult4.useHandleActivityItemSelected(tmp16).handleActivityItemSelected;
+                if (cResult[14] !== handleActivityItemSelected) {
+                  class O {
+                    constructor() {
+                      handleActivityItemSelected();
+                    }
+                  }
+                  cResult[14] = handleActivityItemSelected;
+                  cResult[15] = O;
+                } else {
+                  class O {
+                    constructor() {
+                      handleActivityItemSelected();
+                    }
+                  }
+                }
+                if (!tmp11) {
+                  class O {
+                    constructor() {
+                      handleActivityItemSelected();
+                    }
+                  }
+                }
+                if (cResult[16] === app) {
+                  class O {
+                    constructor() {
+                      handleActivityItemSelected();
+                    }
+                  }
+                }
+                const obj3 = { app, disabled: tmp11, submitting: isLaunching, onAppSelected: tmp17 };
+                cResult[16] = app;
+                cResult[17] = tmp17;
+                cResult[18] = isLaunching;
+                cResult[19] = tmp11;
+                cResult[20] = closure_13(closure_22, obj3);
+                const tmp21 = closure_13(closure_22, obj3);
+              }
+            }
+          }
+        }
+        const obj4 = { applicationId: app.applicationId, context, sectionName: context(handleActivityItemSelected[18]).AppLauncherSectionName.RECENT_APPS, onActivityItemSelected, location: context(handleActivityItemSelected[34]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, entrypoint, launchingComponentId: id, fetchesApplication: false };
+        cResult[8] = app.applicationId;
+        cResult[9] = context;
+        cResult[10] = entrypoint;
+        cResult[11] = id;
+        cResult[12] = onActivityItemSelected;
+        cResult[13] = obj4;
+        tmp16 = obj4;
+      }
+      const obj5 = { context, applicationId: app.applicationId };
+      cResult[5] = app.applicationId;
+      cResult[6] = context;
+      cResult[7] = obj5;
+      tmp13 = obj5;
+    }
+  }
+  const fn = function c() {
+    const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
+    let id;
+    const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
+    const applicationId = app.applicationId;
+    if ("channel" === context.type) {
+      id = context.channel.id;
+    }
+    items[1] = getLaunchState(applicationId, id);
+    return items;
+  };
+  cResult[1] = app.applicationId;
+  cResult[2] = context.channel;
+  cResult[3] = context.type;
+  cResult[4] = fn;
+  tmp8 = fn;
+}) : ((context) => {
+  let callback;
+  let entrypoint;
+  let onActivityItemSelected;
+  let tmp6;
+  let tmp7;
+  const f107366 = () => {
+    const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
+    let id;
+    const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
+    const applicationId = app.applicationId;
+    if ("channel" === context.type) {
+      id = context.channel.id;
+    }
+    items[1] = getLaunchState(applicationId, id);
+    return items;
+  };
+  context = context.context;
+  const app = context.app;
+  let handleActivityItemSelected;
+  const obj = context(handleActivityItemSelected[16]);
+  const appLauncherContext = obj.useAppLauncherContext();
+  ({ entrypoint, onActivityItemSelected } = appLauncherContext);
+  let id = react.useId();
+  let items = [EmbeddedActivitiesStore];
+  const obj3 = context(handleActivityItemSelected[17]);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f107366);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f107366), 2);
+  let isLaunching = null != tmp7;
+  const obj4 = context(handleActivityItemSelected[33]);
+  const obj5 = { context, applicationId: app.applicationId };
+  const activityAction = obj4.useActivityAction(obj5);
+  const obj2 = react;
+  if (isLaunching) {
+    isLaunching = tmp7.isLaunching;
+  }
+  if (isLaunching) {
+    isLaunching = tmp7.componentId === id;
+  }
+  const tmpResult = context(handleActivityItemSelected[25]);
+  const obj6 = { applicationId: app.applicationId, context, sectionName: context(handleActivityItemSelected[18]).AppLauncherSectionName.RECENT_APPS, onActivityItemSelected, location: context(handleActivityItemSelected[34]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, entrypoint, launchingComponentId: id, fetchesApplication: false };
+  handleActivityItemSelected = tmpResult.useHandleActivityItemSelected(obj6).handleActivityItemSelected;
+  const items1 = [handleActivityItemSelected];
+  const obj7 = { app, disabled: tmp6, submitting: isLaunching, onAppSelected: callback };
+  callback = obj2.useCallback(() => {
+    handleActivityItemSelected();
+  }, items1);
+  const tmp10 = closure_13;
+  const tmp11 = closure_22;
+  if (!tmp6) {
+    tmp6 = activityAction === context(handleActivityItemSelected[33]).ActivityAction.LEAVE;
+  }
+  return tmp10(tmp11, obj7);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((app) => {
+  let disabled;
+  let items;
+  let onAppSelected;
+  let submitting;
+  let tmp = app;
+  let tmp2 = dependencyMap;
+  let obj = app(576);
+  const cResult = obj.c(19);
+  app = app.app;
+  ({ disabled, submitting, onAppSelected } = app);
+  const tmp5 = closure_15();
+  if (null == app.section) {
+    return null;
+  } else {
+    let name;
+    if (cResult[0] !== app.section.application) {
+      const tmpResult = tmp(11409);
+      const appLauncherIconSource = tmpResult.getAppLauncherIconSource(app.section.application);
+      cResult[0] = app.section.application;
+      cResult[1] = appLauncherIconSource;
+      class S {
+        constructor() {
+          tmp2 = null != onAppSelected;
+          tmp = onAppSelected;
+          if (tmp2) {
+            tmp3 = app;
+            tmp2 = null != app.section.application;
+          }
+          if (tmp2) {
+            obj = { application: null, sectionName: null };
+            tmp4 = app;
+            obj.application = app.section.application;
+            tmp5 = closure_0;
+            tmp6 = closure_2;
+            obj.sectionName = closure_0(closure_2[18]).AppLauncherSectionName.RECENT_APPS;
+            tmpResult = tmp(obj);
+          }
+          return;
+        }
+      }
+    }
+    const tmp8 = disabled ? tmp5.appContainerDisabled : tmp5.appContainer;
+    const application = app.section.application;
+    if (application != null) {
+      name = application.name;
+    }
+    if (cResult[2] === app.section.application) {
+      let tmp9;
+      if (cResult[3] === onAppSelected) {
+        tmp9 = cResult[4];
+      }
+      if (cResult[5] === tmp6) {
+        let tmp10;
+        if (cResult[6] === tmp5.appIcon) {
+          tmp10 = cResult[7];
+        }
+        if (cResult[8] === tmp5.submittingOverlay) {
+          let tmp14;
+          if (cResult[9] === (undefined !== submitting && submitting)) {
+            tmp14 = cResult[10];
+          }
+          if (cResult[11] === app.applicationId) {
+            if (cResult[12] === disabled) {
+              if (cResult[13] === tmp8) {
+                if (cResult[14] === name) {
+                  if (cResult[15] === tmp9) {
+                    if (cResult[16] === tmp10) {
+                      let tmp17;
+                      if (cResult[17] === tmp14) {
+                        tmp17 = cResult[18];
+                      }
+                      return tmp17;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          const obj2 = { style: tmp8, disabled, accessible: true, accessibilityLabel: null, accessibilityRole: "button", onPress: tmp9, children: items };
+          class S {
+            constructor() {
+              tmp2 = null != onAppSelected;
+              tmp = onAppSelected;
+              if (tmp2) {
+                tmp3 = app;
+                tmp2 = null != app.section.application;
+              }
+              if (tmp2) {
+                obj = { application: null, sectionName: null };
+                tmp4 = app;
+                obj.application = app.section.application;
+                tmp5 = closure_0;
+                tmp6 = closure_2;
+                obj.sectionName = closure_0(closure_2[18]).AppLauncherSectionName.RECENT_APPS;
+                tmpResult = tmp(obj);
+              }
+              return;
+            }
+          }
+          items = [tmp10, tmp14];
+          const tmp19 = closure_14(tmp(5436).PressableOpacity, obj2, app.applicationId);
+          cResult[11] = app.applicationId;
+          cResult[12] = disabled;
+          cResult[13] = tmp8;
+          cResult[14] = name;
+          cResult[15] = tmp9;
+          cResult[16] = tmp10;
+          cResult[17] = tmp14;
+          cResult[18] = tmp19;
+          tmp17 = tmp19;
+        }
+        class S {
+          constructor() {
+            tmp2 = null != onAppSelected;
+            tmp = onAppSelected;
+            if (tmp2) {
+              tmp3 = app;
+              tmp2 = null != app.section.application;
+            }
+            if (tmp2) {
+              obj = { application: null, sectionName: null };
+              tmp4 = app;
+              obj.application = app.section.application;
+              tmp5 = closure_0;
+              tmp6 = closure_2;
+              obj.sectionName = closure_0(closure_2[18]).AppLauncherSectionName.RECENT_APPS;
+              tmpResult = tmp(obj);
+            }
+            return;
+          }
+        }
+        cResult[8] = tmp5.submittingOverlay;
+        cResult[9] = undefined !== submitting && submitting;
+        cResult[10] = tmp16;
+        tmp14 = tmp16;
+      }
+      let tmp11 = null != tmp6;
+      if (tmp11) {
+        const obj4 = { style: tmp5.appIcon, source: tmp6 };
+        tmp11 = closure_13(onAppSelected(5896), obj4);
+      }
+      cResult[5] = tmp6;
+      class S {
+        constructor() {
+          tmp2 = null != onAppSelected;
+          tmp = onAppSelected;
+          if (tmp2) {
+            tmp3 = app;
+            tmp2 = null != app.section.application;
+          }
+          if (tmp2) {
+            obj = { application: null, sectionName: null };
+            tmp4 = app;
+            obj.application = app.section.application;
+            tmp5 = closure_0;
+            tmp6 = closure_2;
+            obj.sectionName = closure_0(closure_2[18]).AppLauncherSectionName.RECENT_APPS;
+            tmpResult = tmp(obj);
+          }
+          return;
+        }
+      }
+      cResult[6] = tmp5.appIcon;
+      cResult[7] = tmp11;
+      tmp10 = tmp11;
+    }
+    class S {
+      constructor() {
+        tmp2 = null != onAppSelected;
+        tmp = onAppSelected;
+        if (tmp2) {
+          tmp3 = app;
+          tmp2 = null != app.section.application;
+        }
+        if (tmp2) {
+          obj = { application: null, sectionName: null };
+          tmp4 = app;
+          obj.application = app.section.application;
+          tmp5 = closure_0;
+          tmp6 = closure_2;
+          obj.sectionName = closure_0(closure_2[18]).AppLauncherSectionName.RECENT_APPS;
+          tmpResult = tmp(obj);
+        }
+        return;
+      }
+    }
+    cResult[2] = app.section.application;
+    cResult[3] = onAppSelected;
+    cResult[4] = S;
+    tmp9 = S;
+  }
+}) : ((app) => {
+  let disabled;
+  let items;
+  let name;
+  let submitting;
+  app = app.app;
+  ({ disabled, submitting } = app);
+  if (submitting === undefined) {
+    submitting = false;
+  }
+  const onAppSelected = app.onAppSelected;
+  let tmp = closure_15();
+  if (null == app.section) {
+    return null;
+  } else {
+    const obj4 = app(11409);
+    const appLauncherIconSource = obj4.getAppLauncherIconSource(app.section.application);
+    let obj = {
+      style: disabled ? tmp.appContainerDisabled : tmp.appContainer,
+      disabled,
+      accessible: true,
+      accessibilityLabel: name,
+      accessibilityRole: "button",
+      onPress() {
+          let tmp2 = null != onAppSelected;
+          const tmp = onAppSelected;
+          if (tmp2) {
+            tmp2 = null != app.section.application;
+          }
+          if (tmp2) {
+            const obj = { application: app.section.application, sectionName: AppLauncherTypes.AppLauncherSectionName.RECENT_APPS };
+            tmp(obj);
+          }
+        },
+      children: items
+    };
+    const application = app.section.application;
+    name = undefined;
+    const PressableOpacity = app(5436).PressableOpacity;
+    const tmp10 = closure_14;
+    const tmp7 = app;
+    if (application != null) {
+      name = application.name;
+    }
+    let tmp3 = null != appLauncherIconSource;
+    if (tmp3) {
+      const obj2 = { style: tmp.appIcon, source: appLauncherIconSource };
+      tmp3 = closure_13(onAppSelected(5896), obj2);
+    }
+    items = [tmp3, ];
+    const obj3 = { submitting, style: tmp.submittingOverlay };
+    items[1] = closure_13(tmp7(11418).SubmittingOverlay, obj3);
+    return tmp10(PressableOpacity, obj, app.applicationId);
+  }
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySection.tsx");
+
+export default tmp7;
+export const SectionItemType = obj10;

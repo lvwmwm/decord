@@ -1,16 +1,16 @@
-// Module ID: 14295
-// Function ID: 14296
+// Module ID: 13542
+// Function ID: 13543
 // Name: AutoclippingDefaultOverrideExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 14295 (AutoclippingDefaultOverrideExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13542 (AutoclippingDefaultOverrideExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-07-autoclipping-default-override", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { kind: "user", name: "2026-07-autoclipping-default-override", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/clips/AutoclippingDefaultOverrideExperiment.tsx");
 

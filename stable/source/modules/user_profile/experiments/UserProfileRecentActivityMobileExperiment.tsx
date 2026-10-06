@@ -1,20 +1,36 @@
-// Module ID: 13408
-// Function ID: 13409
+// Module ID: 12662
+// Function ID: 12663
 // Name: UserProfileRecentActivityMobileExperiment
-// Dependencies: [1434, 2]
-// Exports: useIsRecentActivityMobileEnabled
+// Dependencies: [1441, 558, 576, 2]
 
-// Module 13408 (UserProfileRecentActivityMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12662 (UserProfileRecentActivityMobileExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-09-recent-activity-mobile", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { name: "2026-09-recent-activity-mobile", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+let closure_2 = ApexExperiment.createApexExperiment(obj);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_2.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return closure_2.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfileRecentActivityMobileExperiment.tsx");
 
-export const useIsRecentActivityMobileEnabled = function useIsRecentActivityMobileEnabled(UserProfileContent) {
-  return closure_0.useConfig({ location: UserProfileContent }).enabled;
-};
+export const useIsRecentActivityMobileEnabled = tmp2;

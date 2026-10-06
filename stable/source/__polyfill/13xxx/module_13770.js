@@ -1,9 +1,10 @@
 // Module ID: 13770
 // Function ID: 13771
-// Dependencies: [1121]
+// Dependencies: []
+// Exports: shouldPolyfill
 
 // Module 13770
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 18, height: 18, scales: [2, 3], hash: "0b73baa146c1e8e06b259fb4eb1affa0", name: "ic_check_18px", type: "png" });
+export const shouldPolyfill = function shouldPolyfill() {
+  return !("supportedValuesOf" in Intl);
+};

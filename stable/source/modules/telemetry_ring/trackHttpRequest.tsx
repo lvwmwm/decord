@@ -1,34 +1,37 @@
-// Module ID: 17706
-// Function ID: 17707
+// Module ID: 17063
+// Function ID: 17064
 // Name: trackHttpRequest
-// Dependencies: [1074, 17707, 17708, 1241, 2]
+// Dependencies: [1086, 17064, 17065, 1253, 2]
 // Exports: default
 
-// Module 17706 (trackHttpRequest)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import trackZoomedInHttpRequestDefault from "trackZoomedInHttpRequest" /* 17708 */;
+// Module 17063 (trackHttpRequest)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HttpRequestSampleExperiment from "HttpRequestSampleExperiment" /* 17064 */;
+import trackZoomedInHttpRequestDefault from "trackZoomedInHttpRequest" /* 17065 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/telemetry_ring/trackHttpRequest.tsx");
 
 export default function trackHttpRequest(url) {
-  const obj = {};
+  let replaced;
+  const obj = { url: replaced };
   const merged = Object.assign(url);
-  let replaced = str;
+  replaced = str;
   if (null != url.url) {
-    replaced = str.split(/[?#]/)[0].replace(/\d+/g, "#");
-    const str2 = str.split(/[?#]/)[0];
+    const str2 = url.url.split(/[?#]/)[0];
+    replaced = str2.replace(/\d+/g, "#");
   }
-  obj.url = replaced;
   trackZoomedInHttpRequestDefault(obj);
   const random = Math.random();
+  const obj2 = HttpRequestSampleExperiment;
   if (random < obj2.getHttpRequestSampleRate()) {
-    const obj3 = {};
+    const obj3 = { source: "sample" };
+    const track = tmp3(1253).track;
+    const HTTP_REQUEST = AnalyticEvents.HTTP_REQUEST;
+    AnalyticsUtilsDefault;
     const merged1 = Object.assign(obj);
-    obj3.source = "sample";
-    AnalyticsUtilsDefault.track(AnalyticEvents.HTTP_REQUEST, obj3);
-    const tmp3Result = AnalyticsUtilsDefault;
+    track(HTTP_REQUEST, obj3);
   }
 };

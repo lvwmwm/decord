@@ -1,46 +1,47 @@
-// Module ID: 11948
-// Function ID: 11949
+// Module ID: 11033
+// Function ID: 11034
 // Name: SendMessageOptionsStore
-// Dependencies: [4781, 504, 573, 2]
+// Dependencies: [4830, 504, 585, 2]
 
-// Module 11948 (SendMessageOptionsStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import MessageConstants from "MessageConstants" /* 4781 */;
+// Module 11033 (SendMessageOptionsStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
 import size from "module_2" /* 2 */;
 
 const MessageSendLocation = MessageConstants.MessageSendLocation;
-let closure_1 = {};
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class SendMessageOptionsStore extends Store {
+  getOptions(arg0) {
+    return closure_1[arg0];
+  }
 }
-SendMessageOptionsStore.prototype["getOptions"] = function getOptions(arg0) {
-  return closure_1[arg0];
-};
+const prototype = SendMessageOptionsStore.prototype;
 SendMessageOptionsStore.displayName = "SendMessageOptionsStore";
-const sendMessageOptionsStore = new SendMessageOptionsStore(DispatcherDefault, {
+let obj = {
   MESSAGE_CREATE: function handleMessageCreate(arg0) {
+    let OTHER;
+    let message;
+    let sendMessageOptions;
     ({ message, sendMessageOptions } = arg0);
     if (null != sendMessageOptions) {
-      const obj = {};
+      const id = message.id;
+      const obj = { location: OTHER };
       const merged = Object.assign(sendMessageOptions);
-      let OTHER = sendMessageOptions.location;
+      OTHER = sendMessageOptions.location;
+      const tmp = closure_1;
       if (OTHER == null) {
         OTHER = MessageSendLocation.OTHER;
       }
-      obj.location = OTHER;
-      closure_1[message.id] = obj;
+      tmp[id] = obj;
     }
-    let tmp8 = null != message.nonce && message.nonce !== message.id;
-    if (tmp8) {
-      tmp8 = message.nonce in closure_1;
-    }
-    if (tmp8) {
-      const nonce = message.nonce;
-      delete tmp2[tmp];
+    const tmp6 = null != message.nonce && message.nonce !== message.id && message.nonce in closure_1;
+    if (tmp6) {
+      delete closure_1[message.nonce];
     }
   }
-});
+};
+const sendMessageOptionsStore = new SendMessageOptionsStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/messages/SendMessageOptionsStore.tsx");
 
 export default sendMessageOptionsStore;

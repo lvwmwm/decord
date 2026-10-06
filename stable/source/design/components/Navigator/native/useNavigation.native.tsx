@@ -1,23 +1,33 @@
-// Module ID: 1484
-// Function ID: 1485
+// Module ID: 1491
+// Function ID: 1492
 // Name: useNavigation
-// Dependencies: [1485, 2]
+// Dependencies: [558, 1492, 2]
 // Exports: useNativeStackNavigation, useNavigation, useStackNavigation, useTabNavigation
 
-// Module 1484 (useNavigation)
-import Link from "Link" /* 1485 */;
+// Module 1491 (useNavigation)
+import Link from "Link" /* 1492 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-function useNavigation() {
-  return Link.useNavigation();
-}
-const result = size.fileFinishedImporting("design/components/Navigator/native/useNavigation.native.tsx");
-
-export { useNavigation };
-export const useNativeStackNavigation = function useNativeStackNavigation() {
-  return Link.useNavigation();
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+const fn = () => {
+  const obj = Link;
+  return obj.useNavigation();
 };
-export const useStackNavigation = useNavigation;
-export const useTabNavigation = function useTabNavigation() {
-  return Link.useNavigation();
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result3 = size.fileFinishedImporting("design/components/Navigator/native/useNavigation.native.tsx");
+
+export const useNavigation = fn;
+export const useNativeStackNavigation = () => {
+  const obj = Link;
+  return obj.useNavigation();
+};
+export const useStackNavigation = fn;
+export const useTabNavigation = () => {
+  const obj = Link;
+  return obj.useNavigation();
 };

@@ -1,82 +1,81 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 12970
+// Function ID: 12971
 // Name: showMarketingMomentRewardScreen
-// Dependencies: [5, 7816, 7815, 11374, 2]
+// Dependencies: [5, 6966, 6965, 10574, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 13725 (showMarketingMomentRewardScreen)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7815 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7816 */;
+// Module 12970 (showMarketingMomentRewardScreen)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6965 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6966 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_5 = async function _showMarketingMomentRewardScreen(arg0, value) {
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+let c3, c4;
+
+let obj = function _showMarketingMomentRewardScreen() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj4;
+    let closure_0 = arg0;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
+      try {
+        let product;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_2 = tmp4;
+            product = undefined;
+            c3 = 1;
+            c4 = 1;
+            const obj5 = { value: obj4.fetchCollectiblesProduct(closure_0), done: false };
+            obj4 = CollectiblesActionCreators;
+            return obj5;
+          }
+        } else if (arg0 === 1) {
           c4 = 3;
           throw value;
         } else if (arg0 === 2) {
           c4 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          const obj6 = { value, done: true };
+          return obj6;
         } else {
-          closure_2 = tmp5;
-          closure_1 = tmp2;
-          closure_129_0 = closure_0;
-          let product;
-          c3 = 1;
-          c4 = 1;
-          const obj5 = { value: CollectiblesActionCreators.fetchCollectiblesProduct(closure_0), done: false };
-          return obj5;
+          product = closure_130_4.getProduct(closure_0);
+          if (null != product) {
+            const obj7 = { product, useCategoryImage: true };
+            obj = closure_130_1(closure_130_2[3]);
+            obj.open(obj7);
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: null };
         }
-      } else if (arg0 === 1) {
+      } catch (tmp20) {
         c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj6 = { value, done: true };
-        return obj6;
-      } else {
-        product = closure_130_4.getProduct(closure_129_0);
-        if (null != product) {
-          const obj7 = { product, useCategoryImage: true };
-          closure_130_1(closure_130_2[3]).open(obj7);
-          const obj = closure_130_1(closure_130_2[3]);
-        }
-        c4 = 3;
-        return { value: "HermesInternal", done: null };
+        throw tmp20;
       }
-    } catch (tmp21) {
-      c4 = tmp;
-      throw tmp21;
     }
-  }
+  });
+  return obj(...arguments);
 };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/premium_marketing/native/showMarketingMomentRewardScreen.tsx");
 
 export const showMarketingMomentRewardScreen = function showMarketingMomentRewardScreen() {
-  const self = this;
-  const apply = closure_5.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

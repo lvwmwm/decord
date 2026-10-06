@@ -1,24 +1,26 @@
-// Module ID: 4990
-// Function ID: 4991
+// Module ID: 5039
+// Function ID: 5040
 // Name: transitionToStream
-// Dependencies: [2041, 4755, 4991, 4995, 2]
+// Dependencies: [2051, 4801, 5040, 5044, 2]
 // Exports: default
 
-// Module 4990 (transitionToStream)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4995 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 5039 (transitionToStream)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5044 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/go_live/utils/transitionToStream.native.tsx");
 
 export default function transitionToStream(channelId) {
   const channel = ChannelStore.getChannel(channelId.channelId);
   if (null != channel) {
-    ActionSheetActionCreatorsDefault.hideActionSheet();
-    ModalActionCreatorsDefault.popAll();
-    PrivateChannelCallUtils.openGuildVoiceModal(channel, "Go Live");
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet();
+    const obj2 = ModalActionCreatorsDefault;
+    obj2.popAll();
+    const obj3 = PrivateChannelCallUtils;
+    obj3.openGuildVoiceModal(channel, "Go Live");
   }
 };

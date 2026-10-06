@@ -1,9 +1,20 @@
 // Module ID: 13825
 // Function ID: 13826
-// Dependencies: [1121]
+// Dependencies: [13793, 13794, 13826]
 
 // Module 13825
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13794 from "module_13794" /* 13794 */;
+import _mod13826 from "module_13826" /* 13826 */;
+import getOwnPropertyDescriptor from "module_13793" /* 13793 */;
 
+const f65532 = () => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty(_mod13826("div"), "a", obj).a;
+};
+!getOwnPropertyDescriptor && !_mod13794(f65532);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 20, height: 20, scales: [2, 3], hash: "b8e06ae6b6de6ac4efb5803ebe56348e", name: "star", type: "png" });
+export default !getOwnPropertyDescriptor && !_mod13794(f65532);

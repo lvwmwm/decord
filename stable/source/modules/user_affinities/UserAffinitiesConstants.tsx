@@ -1,13 +1,13 @@
-// Module ID: 7928
-// Function ID: 7929
+// Module ID: 7077
+// Function ID: 7078
 // Name: UserAffinitiesConstants
-// Dependencies: [1091, 2]
+// Dependencies: [1103, 2]
 
-// Module 7928 (UserAffinitiesConstants)
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 7077 (UserAffinitiesConstants)
+import DurationsDefault from "Durations" /* 1103 */;
+import size from "module_2" /* 2 */;
 
 const result = 8 * DurationsDefault.Millis.HOUR;
-const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/user_affinities/UserAffinitiesConstants.tsx");
 
 export const USER_AFFINITY_TTL = result;

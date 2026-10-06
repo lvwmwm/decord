@@ -1,11 +1,11 @@
-// Module ID: 9850
-// Function ID: 9851
+// Module ID: 8988
+// Function ID: 8989
 // Name: MediaChannelExperimentUtils
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: useGuildEligibleForMediaChannels
 
-// Module 9850 (MediaChannelExperimentUtils)
-import Constants from "Constants" /* 1074 */;
+// Module 8988 (MediaChannelExperimentUtils)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;
@@ -20,6 +20,7 @@ export const useGuildEligibleForMediaChannels = function useGuildEligibleForMedi
     return false;
   } else {
     const features = stateFromStores.features;
-    return (features.has(GuildFeatures.CREATOR_MONETIZABLE) || features.has(GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) && features.has(GuildFeatures.COMMUNITY) || features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
+    const tmp3 = (features.has(GuildFeatures.CREATOR_MONETIZABLE) || features.has(GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) && features.has(GuildFeatures.COMMUNITY) || features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
+    return tmp3;
   }
 };

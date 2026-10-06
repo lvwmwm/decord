@@ -1,40 +1,41 @@
-// Module ID: 8050
-// Function ID: 8051
+// Module ID: 7199
+// Function ID: 7200
 // Name: ThreadSummaryStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 8050 (ThreadSummaryStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 7199 (ThreadSummaryStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
 
 function handleSummarizeThreadFinish() {
   c0 = false;
 }
 let c0 = false;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ThreadSummaryStore extends Store {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.summaryInProgress = false;
     return applyArgumentsResult;
   }
+  initialize() {
+    c0 = false;
+  }
+  isInProgress() {
+    return c0;
+  }
 }
 const prototype = ThreadSummaryStore.prototype;
-prototype["initialize"] = function initialize() {
-  c0 = false;
-};
-prototype["isInProgress"] = function isInProgress() {
-  return c0;
-};
 ThreadSummaryStore.displayName = "ThreadSummaryStore";
-const threadSummaryStore = new ThreadSummaryStore(DispatcherDefault, {
+const obj = {
   SUMMARIZE_THREAD_START: function handleSummarizeThreadStart() {
     c0 = true;
   },
   SUMMARIZE_THREAD_SUCCESS: handleSummarizeThreadFinish,
   SUMMARIZE_THREAD_FAILURE: handleSummarizeThreadFinish
-});
-const size = fn(2);
+};
+const threadSummaryStore = new ThreadSummaryStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/threads/ThreadSummaryStore.tsx");
 
 export default threadSummaryStore;

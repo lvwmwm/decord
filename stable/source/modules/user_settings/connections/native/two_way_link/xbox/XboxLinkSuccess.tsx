@@ -1,115 +1,393 @@
-// Module ID: 9393
-// Function ID: 9394
+// Module ID: 8545
+// Function ID: 8546
 // Name: XboxLinkSuccess
-// Dependencies: [32, 19, 17, 9376, 9390, 21, 4788, 576, 9383, 1364, 1484, 9394, 4784, 1115, 9395, 9396, 1177, 9397, 7400, 5218, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 8528, 8542, 21, 4837, 588, 558, 576, 8535, 1370, 1491, 8546, 1127, 4833, 8547, 8548, 1189, 8549, 5282, 6546, 2]
 
-// Module 9393 (XboxLinkSuccess)
-import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 8545 (XboxLinkSuccess)
+import nativeDefault from "native" /* 588 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 8528 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8542 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let navigation;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: hasOwnProperty, View: metroRequire, Linking: closure_7, Pressable: closure_8 } = get_ActivityIndicator);
-const XboxLinkModalScenes = fn(9376).XboxLinkModalScenes;
-const GameConsoleConstants = fn(9390);
-({ XBOX_ANDROID_APP_LINK: c10, XBOX_IOS_APP_LINK: closure_11, XBOX_URL_BASE: closure_12 } = GameConsoleConstants);
-const jsxProd = fn(21);
-({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { image: { width: 58, height: 85, marginBottom: 24 }, getApp: { alignItems: "center", alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginTop: 24, padding: 16, borderRadius: nativeDefault.radii.sm, flexDirection: "row" }, appLogoBox: null, appLogo: null, getAppTitle: null, icon: null, externalLinkIcon: null };
-let size = { marginRight: 12, width: 40, height: 40, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.unsafe_rawColors.PLATFORM_XBOX };
-obj2.appLogoBox = size;
-obj2.appLogo = { width: 32, height: 32 };
-obj2.getAppTitle = { flex: 1 };
-obj2.icon = { marginLeft: 8 };
-let obj3 = { alignItems: "center", alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginTop: 24, padding: 16, borderRadius: nativeDefault.radii.sm, flexDirection: "row" };
-obj2.externalLinkIcon = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-let closure_15 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkSuccess.tsx");
-
-export default function XboxLinkDiscordSuccess() {
-  const tmp = closure_15();
-  const twoWayLinkStyles = first(navigation[8]).useTwoWayLinkStyles();
-  [first, importDefault] = noop.useState(true);
-  const effect = noop.useEffect(() => {
-    React5.canOpenURL(closure_2_12).then(closure_1);
+let c10;
+let closure_12;
+let closure_14;
+let hasOwnProperty;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let size;
+let unpackModuleId;
+({ Image: hasOwnProperty, View: metroRequire, Linking: metroImportDefault, Pressable: metroImportAll } = react_native);
+const XboxLinkModalScenes = XboxLinkConstants.XboxLinkModalScenes;
+({ XBOX_ANDROID_APP_LINK: c10, XBOX_IOS_APP_LINK: unpackModuleId, XBOX_URL_BASE: closure_12 } = GameConsoleConstants);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { image: { width: 58, height: 85, marginBottom: 24 }, getApp: obj2, appLogoBox: size, appLogo: { width: 32, height: 32 }, getAppTitle: { flex: 1 }, icon: { marginLeft: 8 }, externalLinkIcon: obj3 };
+obj2 = { alignItems: "center", alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginTop: 24, padding: 16, borderRadius: nativeDefault.radii.sm, flexDirection: "row" };
+createStyles = createStyles.createStyles;
+size = { marginRight: 12, width: 40, height: 40, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.unsafe_rawColors.PLATFORM_XBOX };
+obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
+let closure_15 = createStyles(obj);
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_1;
+  let container;
+  let content;
+  let first;
+  let tmp18;
+  let tmp22;
+  let tmp8;
+  let tmp9;
+  let tmp = first;
+  let obj = first(navigation[9]);
+  const cResult = obj.c(53);
+  const tmp4 = closure_15();
+  const obj2 = first(navigation[10]);
+  const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
+  [first, importDefault] = react.useState(true);
+  const obj3 = react;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      const canOpenURLResult = metroImportDefault.canOpenURL(closure_12);
+      canOpenURLResult.then(closure_1);
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp8 = fn;
+    tmp9 = items;
+  } else {
+    [tmp8, tmp9] = cResult;
+  }
+  const effect = obj3.useEffect(tmp8, tmp9);
+  if (cResult[2] !== first) {
+    const fn2 = function f() {
+      const tmp = first;
+      if (!tmp) {
+        const openURL = metroImportDefault.openURL;
+        const obj = PlatformUtils;
+        if (obj.isAndroid()) {
+          openURL(authStore);
+        } else {
+          openURL(unpackModuleId);
+        }
+      }
+    };
+    cResult[2] = first;
+    cResult[3] = fn2;
+  }
+  const tmpResult = tmp(navigation[12]);
+  navigation = tmpResult.useNavigation();
+  if (cResult[4] !== navigation) {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+    cResult[4] = navigation;
+    cResult[5] = C;
+  } else {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+  }
+  ({ container, content } = twoWayLinkStyles);
+  if (cResult[6] !== tmp4.image) {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+    const obj4 = { source: require("AssetRegistry"), style: tmp4.image };
+    cResult[6] = tmp4.image;
+    cResult[7] = closure_13(closure_5, obj4);
+    const tmp17 = closure_13(closure_5, obj4);
+  } else {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+  }
+  const title = twoWayLinkStyles.title;
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+    const stringResult = obj6.string(tmp(navigation[14]).t.aGRPVq);
+    cResult[8] = stringResult;
+    tmp18 = stringResult;
+  } else {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+  }
+  if (cResult[9] !== twoWayLinkStyles.title) {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+    const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: title, children: tmp18 };
+    cResult[9] = twoWayLinkStyles.title;
+    cResult[10] = closure_13(tmp(navigation[15]).Text, obj5);
+    const tmp21 = closure_13(tmp(navigation[15]).Text, obj5);
+  } else {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+  }
+  const body = twoWayLinkStyles.body;
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+    const stringResult1 = obj8.string(tmp(navigation[14]).t.m3mBYE);
+    cResult[11] = stringResult1;
+    tmp22 = stringResult1;
+  } else {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+  }
+  if (cResult[12] !== twoWayLinkStyles.body) {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+    const obj7 = { variant: "text-md/normal", color: "text-default", style: body, children: tmp22 };
+    cResult[12] = twoWayLinkStyles.body;
+    cResult[13] = closure_13(tmp(navigation[15]).Text, obj7);
+    const tmp25 = closure_13(tmp(navigation[15]).Text, obj7);
+  } else {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+  }
+  if (cResult[14] !== tmp4.appLogo) {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+    const obj9 = { source: require("AssetRegistry"), style: tmp4.appLogo };
+    cResult[14] = tmp4.appLogo;
+    cResult[15] = closure_13(closure_5, obj9);
+    const tmp29 = closure_13(closure_5, obj9);
+  } else {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+  }
+  if (cResult[16] === tmp4.appLogoBox) {
+    class C {
+      constructor() {
+        navigation.push(XboxLinkModalScenes.EDUCATION);
+      }
+    }
+    if (cResult[19] !== first) {
+      class C {
+        constructor() {
+          navigation.push(XboxLinkModalScenes.EDUCATION);
+        }
+      }
+      const string = tmp32.string;
+      const t = tmp(tmp2[14]).t;
+      if (first) {
+        class C {
+          constructor() {
+            navigation.push(XboxLinkModalScenes.EDUCATION);
+          }
+        }
+      } else {
+        class C {
+          constructor() {
+            navigation.push(XboxLinkModalScenes.EDUCATION);
+          }
+        }
+      }
+      cResult[19] = first;
+      cResult[20] = tmp33;
+    } else {
+      class C {
+        constructor() {
+          navigation.push(XboxLinkModalScenes.EDUCATION);
+        }
+      }
+    }
+    if (cResult[21] === tmp4.getAppTitle) {
+      let tmp38Result;
+      class C {
+        constructor() {
+          navigation.push(XboxLinkModalScenes.EDUCATION);
+        }
+      }
+      if (cResult[24] === first) {
+        class C {
+          constructor() {
+            navigation.push(XboxLinkModalScenes.EDUCATION);
+          }
+        }
+      }
+      if (first) {
+        class C {
+          constructor() {
+            navigation.push(XboxLinkModalScenes.EDUCATION);
+          }
+        }
+        const obj10 = { source: require("AssetRegistry"), style: tmp4.icon };
+        tmp38Result = tmp38(closure_5, obj10);
+      } else {
+        class C {
+          constructor() {
+            navigation.push(XboxLinkModalScenes.EDUCATION);
+          }
+        }
+        const Icon = tmp(tmp2[18]).Icon;
+        tmp39[0] = require("AssetRegistry");
+        tmp39[1] = tmp(navigation[18]).Icon.Sizes.SMALL;
+        tmp39[2] = tmp4.externalLinkIcon.color;
+        tmp39[3] = tmp4.icon;
+        tmp38Result = tmp38(Icon, tmp39);
+      }
+      cResult[24] = first;
+      cResult[25] = tmp4.externalLinkIcon;
+      cResult[26] = tmp4.icon;
+      cResult[27] = tmp38Result;
+    }
+    const obj11 = { style: tmp4.getAppTitle, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: tmp31 };
+    cResult[21] = tmp4.getAppTitle;
+    cResult[22] = tmp31;
+    cResult[23] = closure_13(tmp(navigation[15]).Text, obj11);
+    const tmp36 = closure_13(tmp(navigation[15]).Text, obj11);
+  }
+  const obj12 = { style: tmp4.appLogoBox, children: tmp26 };
+  cResult[16] = tmp4.appLogoBox;
+  cResult[17] = tmp26;
+  cResult[18] = closure_13(closure_6, obj12);
+  closure_13(closure_6, obj12);
+}) : (() => {
+  let Button;
+  let closure_1;
+  let first;
+  let intl;
+  let intl2;
+  let intl4;
+  let items2;
+  let items3;
+  let items4;
+  let obj10;
+  let obj15;
+  let obj16;
+  let stringResult;
+  let tmp13Result;
+  let tmp = closure_15();
+  let obj = first(navigation[10]);
+  const twoWayLinkStyles = obj.useTwoWayLinkStyles();
+  [first, importDefault] = react.useState(true);
+  const effect = react.useEffect(() => {
+    const canOpenURLResult = metroImportDefault.canOpenURL(closure_12);
+    canOpenURLResult.then(closure_1);
   }, []);
   const items = [first];
-  const callback = noop.useCallback(() => {
-    if (!first) {
-      const openURL = React5.openURL;
+  const callback = react.useCallback(() => {
+    const tmp = first;
+    if (!tmp) {
+      const openURL = metroImportDefault.openURL;
+      const obj = PlatformUtils;
       if (obj.isAndroid()) {
-        openURL(closure_2_10);
+        openURL(authStore);
       } else {
-        openURL(closure_2_11);
+        openURL(unpackModuleId);
       }
-      obj = PlatformUtils;
     }
   }, items);
-  let obj = first(navigation[8]);
-  navigation = first(navigation[10]).useNavigation();
+  const obj2 = first(navigation[12]);
+  navigation = obj2.useNavigation();
   const items1 = [navigation];
-  const obj3 = { style: twoWayLinkStyles.container, children: null };
-  const obj4 = { style: twoWayLinkStyles.content, children: null };
-  const obj5 = { source: null, style: null };
-  const callback1 = noop.useCallback(() => {
+  const obj3 = { style: twoWayLinkStyles.container, children: items4 };
+  const obj4 = { style: twoWayLinkStyles.content, children: items2 };
+  const obj5 = { source: require("AssetRegistry"), style: tmp.image };
+  const callback1 = react.useCallback(() => {
     navigation.push(XboxLinkModalScenes.EDUCATION);
   }, items1);
-  obj5.source = require("module_9394");
-  obj5.style = tmp.image;
-  const items2 = [closure_13(closure_5, obj5), , , ];
-  const obj6 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
-  const intl = first(navigation[13]).intl;
-  obj6.children = intl.string(first(navigation[13]).t.aGRPVq);
-  items2[1] = closure_13(first(navigation[12]).Text, obj6);
-  const obj7 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: null };
-  const intl2 = first(navigation[13]).intl;
-  obj7.children = intl2.string(first(navigation[13]).t.m3mBYE);
-  items2[2] = closure_13(first(navigation[12]).Text, obj7);
-  const obj8 = { onPress: callback, style: tmp.getApp, children: null };
-  const obj9 = { style: tmp.appLogoBox, children: null };
-  const obj2 = first(navigation[10]);
-  const tmp14 = closure_5;
-  obj9.children = closure_13(closure_5, { source: require("module_9395"), style: tmp.appLogo });
-  const items3 = [closure_13(closure_6, obj9), , ];
-  const obj11 = { style: tmp.getAppTitle, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl3 = first(navigation[13]).intl;
+  items2 = [closure_13(closure_5, obj5), , , ];
+  const obj6 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(first(navigation[14]).t.aGRPVq) };
+  const Text = first(navigation[15]).Text;
+  intl = first(navigation[14]).intl;
+  items2[1] = closure_13(Text, obj6);
+  const obj7 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(first(navigation[14]).t.m3mBYE) };
+  const Text2 = first(navigation[15]).Text;
+  intl2 = first(navigation[14]).intl;
+  items2[2] = closure_13(Text2, obj7);
+  const obj8 = { onPress: callback, style: tmp.getApp, children: items3 };
+  const obj9 = { style: tmp.appLogoBox, children: closure_13(closure_5, obj10) };
+  obj10 = { source: require("AssetRegistry"), style: tmp.appLogo };
+  items3 = [closure_13(closure_6, obj9), , ];
+  const obj11 = { style: tmp.getAppTitle, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: stringResult };
+  const Text3 = first(navigation[15]).Text;
+  const intl3 = first(navigation[14]).intl;
   const string = intl3.string;
-  const t = first(navigation[13]).t;
+  const t = first(navigation[14]).t;
+  const tmp14 = closure_5;
+  const tmp16 = closure_8;
   if (first) {
-    let stringResult = string(t.zcKE8W);
+    stringResult = string(t.zcKE8W);
   } else {
     stringResult = string(t["12Kx2v"]);
   }
-  obj11.children = stringResult;
-  items3[1] = closure_13(first(navigation[12]).Text, obj11);
+  items3[1] = closure_13(Text3, obj11);
   if (first) {
-    const obj12 = { source: tmp15(tmp3[15]), style: tmp.icon };
-    let tmp13Result = tmp13(tmp14, obj12);
+    const obj12 = { source: require("AssetRegistry"), style: tmp.icon };
+    tmp13Result = tmp13(tmp14, obj12);
   } else {
-    const obj13 = { source: tmp15(tmp3[17]), size: tmp2(tmp3[16]).Icon.Sizes.SMALL, color: tmp.externalLinkIcon.color, style: tmp.icon };
-    tmp13Result = tmp13(tmp2(tmp3[16]).Icon, obj13);
+    const obj13 = { source: require("AssetRegistry"), size: first(navigation[18]).Icon.Sizes.SMALL, color: tmp.externalLinkIcon.color, style: tmp.icon };
+    const Icon = tmp2(tmp3[18]).Icon;
+    tmp13Result = tmp13(Icon, obj13);
   }
   items3[2] = tmp13Result;
-  obj8.children = items3;
-  items2[3] = closure_14(closure_8, obj8);
-  obj4.children = items2;
-  const items4 = [closure_14(closure_6, obj4), ];
-  const obj14 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
-  const obj15 = { style: twoWayLinkStyles.footerButton, children: null };
-  const obj16 = { size: "lg", variant: "primary", text: null, onPress: null };
-  const intl4 = tmp2(tmp3[13]).intl;
-  obj16.text = intl4.string(first(navigation[13]).t["3PatSz"]);
-  obj16.onPress = callback1;
-  obj15.children = closure_13(first(navigation[19]).Button, obj16);
-  obj14.children = closure_13(closure_6, obj15);
-  items4[1] = closure_13(first(navigation[18]).SafeAreaPaddingView, obj14);
-  obj3.children = items4;
+  items2[3] = closure_14(tmp16, obj8);
+  items4 = [closure_14(closure_6, obj4), ];
+  const obj14 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: closure_13(closure_6, obj15) };
+  obj15 = { style: twoWayLinkStyles.footerButton, children: closure_13(Button, obj16) };
+  const SafeAreaPaddingView = tmp2(tmp3[21]).SafeAreaPaddingView;
+  obj16 = { size: "lg", variant: "primary", text: intl4.string(first(navigation[14]).t["3PatSz"]), onPress: callback1 };
+  Button = tmp2(tmp3[20]).Button;
+  intl4 = tmp2(tmp3[14]).intl;
+  items4[1] = closure_13(SafeAreaPaddingView, obj14);
   return closure_14(closure_6, obj3);
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkSuccess.tsx");
+
+export default tmp6;

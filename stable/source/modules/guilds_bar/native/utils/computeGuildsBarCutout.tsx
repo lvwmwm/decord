@@ -1,22 +1,25 @@
-// Module ID: 16640
-// Function ID: 16641
+// Module ID: 15935
+// Function ID: 15936
 // Name: computeGuildsBarCutout
-// Dependencies: [17, 16624, 1177, 9126, 2]
+// Dependencies: [17, 15919, 1189, 8273, 2]
 // Exports: default
 
-// Module 16640 (computeGuildsBarCutout)
-import _mod17 from "module_17" /* 17 */;
-import native from "native" /* 1177 */;
-import ClipView from "ClipView" /* 9126 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16624 */;
-import size from "module_2" /* 2 */;
+// Module 15935 (computeGuildsBarCutout)
+import react_native from "react-native" /* 17 */;
+import native from "native" /* 1189 */;
+import ClipView from "ClipView" /* 8273 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 15919 */;
+import size_mod from "module_2" /* 2 */;
 
-const PixelRatio = _mod17.PixelRatio;
+const PixelRatio = react_native.PixelRatio;
 const GUILD_ITEM_SIZE = GuildsBarConstants.GUILD_ITEM_SIZE;
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/computeGuildsBarCutout.tsx");
 
 export default function computeGuildsBarCutout(containerSize) {
+  let roundToNearestPixelResult2;
   containerSize = containerSize.containerSize;
+  const position = containerSize.position;
   if (containerSize === undefined) {
     containerSize = GUILD_ITEM_SIZE;
   }
@@ -34,8 +37,9 @@ export default function computeGuildsBarCutout(containerSize) {
   }
   const roundToNearestPixelResult = PixelRatio.roundToNearestPixel(BADGE_SIZE + 2 * BADGE_PADDING);
   const roundToNearestPixelResult1 = PixelRatio.roundToNearestPixel(BADGE_SIZE2 + 2 * BADGE_PADDING);
-  const size = { shape: ClipView.CutoutShape.RoundedRect, x: 0, y: 0, width: roundToNearestPixelResult, height: roundToNearestPixelResult1, cornerRadius: PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2) };
-  if ("top-right" === containerSize.position) {
+  size = { shape: ClipView.CutoutShape.RoundedRect, x: 0, y: 0, width: roundToNearestPixelResult, height: roundToNearestPixelResult1, cornerRadius: roundToNearestPixelResult2 };
+  roundToNearestPixelResult2 = PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2);
+  if ("top-right" === position) {
     size.x = containerSize - roundToNearestPixelResult + BADGE_PADDING;
     size.y = -BADGE_PADDING;
   } else {

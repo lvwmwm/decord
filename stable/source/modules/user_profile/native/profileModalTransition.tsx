@@ -1,41 +1,106 @@
-// Module ID: 17255
-// Function ID: 17256
+// Module ID: 16605
+// Function ID: 16606
 // Name: profileModalTransition
-// Dependencies: [19, 1484, 2]
-// Exports: useIsProfileModalTransitioning, useReportProfileModalTransition
+// Dependencies: [19, 558, 576, 1491, 2]
 
-// Module 17255 (profileModalTransition)
-import noop from "module_19" /* 19 */;
+// Module 16605 (profileModalTransition)
+import react2 from "react" /* 576 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let bound, navigation;
+
+const f126109 = (fn) => fn();
 let c3 = 0;
 const set = new Set();
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
-
-export const useReportProfileModalTransition = function useReportProfileModalTransition() {
-  navigation = navigation(1484).useNavigation();
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp3;
+  let tmp4;
+  const obj = navigation(576);
+  const cResult = obj.c(3);
+  const obj2 = navigation(1491);
+  navigation = obj2.useNavigation();
+  if (cResult[0] !== navigation) {
+    const fn = function o() {
+      let c0 = false;
+      function leave() {
+        const tmp = c0;
+        if (tmp) {
+          c0 = false;
+          const _Math = Math;
+          bound = Math.max(0, bound - 1);
+          if (bound !== bound) {
+            const item = closure_2_4.forEach(f126109);
+          }
+        }
+      }
+      const items = [
+        navigation.addListener("transitionStart", function enter() {
+          const tmp = c0;
+          if (!tmp) {
+            c0 = true;
+            const _Math = Math;
+            bound = Math.max(0, bound + 1);
+            if (bound !== bound) {
+              const item = closure_2_4.forEach(f126109);
+            }
+          }
+        }),
+        navigation.addListener("transitionEnd", leave),
+        navigation.addListener("gestureCancel", leave)
+      ];
+      return () => {
+        const item = items.forEach((fn) => fn());
+        const tmp2 = c0;
+        if (tmp2) {
+          c0 = false;
+          const _Math = Math;
+          bound = Math.max(0, bound - 1);
+          if (bound !== bound) {
+            const item1 = closure_2_4.forEach(f126109);
+          }
+        }
+      };
+    };
+    let items = [navigation];
+    cResult[0] = navigation;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp4 = items;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  const effect = react.useEffect(tmp3, tmp4);
+}) : (function useReportProfileModalTransition() {
+  const obj = navigation(1491);
+  navigation = obj.useNavigation();
   let items = [navigation];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     function leave() {
-      if (c0) {
+      const tmp = c0;
+      if (tmp) {
         c0 = false;
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item = set.forEach((fn) => fn());
+          const item = closure_2_4.forEach(f126109);
         }
       }
     }
-    c0 = false;
+    let c0 = false;
     const items = [
       navigation.addListener("transitionStart", function enter() {
-        if (!c0) {
+        const tmp = c0;
+        if (!tmp) {
           c0 = true;
           const _Math = Math;
           bound = Math.max(0, bound + 1);
           if (bound !== bound) {
-            const item = set.forEach((fn) => fn());
+            const item = closure_2_4.forEach(f126109);
           }
         }
       }),
@@ -44,21 +109,49 @@ export const useReportProfileModalTransition = function useReportProfileModalTra
     ];
     return () => {
       const item = items.forEach((fn) => fn());
-      if (c0) {
+      const tmp2 = c0;
+      if (tmp2) {
         c0 = false;
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item1 = set.forEach((fn) => fn());
+          const item1 = closure_2_4.forEach(f126109);
         }
       }
     };
   }, items);
-};
-export const useIsProfileModalTransitioning = function useIsProfileModalTransitioning() {
-  return noop.useSyncExternalStore((arg0) => {
-    closure_0 = arg0;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsProfileModalTransitioning() {
+  let tmp2;
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s(arg0) {
+      let closure_0 = arg0;
+      set.add(arg0);
+      return () => set.delete(closure_0);
+    };
+    const fn2 = function l() {
+      return closure_1_3 > 0;
+    };
+    cResult[0] = fn;
+    cResult[1] = fn2;
+    tmp2 = fn;
+    tmp3 = fn2;
+  } else {
+    [tmp2, tmp3] = cResult;
+  }
+  return react.useSyncExternalStore(tmp2, tmp3);
+}) : (function useIsProfileModalTransitioning() {
+  return react.useSyncExternalStore((arg0) => {
+    let closure_0 = arg0;
     set.add(arg0);
     return () => set.delete(closure_0);
   }, () => closure_1_3 > 0);
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
+
+export const useReportProfileModalTransition = tmp3;
+export const useIsProfileModalTransitioning = tmp4;

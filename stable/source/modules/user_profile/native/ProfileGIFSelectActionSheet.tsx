@@ -1,49 +1,166 @@
-// Module ID: 14918
-// Function ID: 14919
+// Module ID: 14156
+// Function ID: 14157
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4788, 576, 5405, 14900, 8470, 8468, 8465, 8467, 7266, 4755, 7427, 7426, 1115, 8972, 10659, 2]
-// Exports: default
+// Dependencies: [32, 5, 19, 17, 21, 4837, 588, 558, 576, 5470, 14138, 7618, 7616, 7613, 7615, 6410, 4801, 1127, 8119, 6571, 9859, 6572, 2]
 
-// Module 14918 (ProfileGIFSelectActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7426 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8972 */;
-import GIFPickerDefault from "GIFPicker" /* 10659 */;
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+// Module 14156 (ProfileGIFSelectActionSheet)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8119 */;
+import GIFPickerDefault from "GIFPicker" /* 9859 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { titleWrapper: { flex: 0 }, titleContainer: { justifyContent: "flex-start" }, gifPicker: { flex: 1, marginTop: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_8, marginRight: nativeDefault.space.PX_8 } };
-let closure_9 = createStyles.createStyles(obj2);
-let obj4 = { AVATAR: 0, [0]: "AVATAR", BANNER: 1, [1]: "BANNER" };
-let obj5 = { PROFILE_EDIT: 0, [0]: "PROFILE_EDIT", PROFILE_TRY_IT_OUT: 1, [1]: "PROFILE_TRY_IT_OUT" };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/user_profile/native/ProfileGIFSelectActionSheet.tsx");
+let BottomSheet, c4, c5, profileAssetType;
 
-export default function ProfileGIFSelectActionSheet(arg0) {
-  ({ profileAssetType: require, selectionContext: importDefault, guildId: dependencyMap } = arg0);
-  closure_3 = async function _onPressGIF(arg0, value) {
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+function blobToDataURI(arg0) {
+  let closure_0 = arg0;
+  const promise = new Promise((data) => {
+    closure_0 = data;
+    const fileReader = new FileReader();
+    fileReader.onload = (target) => {
+      target = target.target;
+      let result;
+      if (target != null) {
+        result = target.result;
+      }
+      let str = "";
+      const tmp2 = closure_0;
+      if (typeof result === "string") {
+        str = result;
+      }
+      tmp2(str);
+    };
+    const asDataURL = fileReader.readAsDataURL(closure_0);
+  });
+  return promise;
+}
+const View = react_native.View;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { titleWrapper: { flex: 0 }, titleContainer: { justifyContent: "flex-start" }, gifPicker: obj2 };
+obj2 = { flex: 1, marginTop: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_8, marginRight: nativeDefault.space.PX_8 };
+let closure_9 = createStyles.createStyles(obj);
+let obj3 = { AVATAR: 0, [0]: "AVATAR", BANNER: 1, [1]: "BANNER" };
+let obj4 = { PROFILE_EDIT: 0, [0]: "PROFILE_EDIT", PROFILE_TRY_IT_OUT: 1, [1]: "PROFILE_TRY_IT_OUT" };
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileAssetType) => {
+  let guildId;
+  let items;
+  const tmp = profileAssetType;
+  let obj = profileAssetType(guildId[8]);
+  const cResult = obj.c(17);
+  profileAssetType = profileAssetType.profileAssetType;
+  const selectionContext = profileAssetType.selectionContext;
+  guildId = profileAssetType.guildId;
+  const tmp4 = closure_9();
+  const ref = react.useRef(null);
+  if (cResult[0] === guildId) {
+    if (cResult[1] === profileAssetType) {
+      let tmp6;
+      let tmp9;
+      let tmp8;
+      if (cResult[2] === selectionContext) {
+        tmp6 = cResult[3];
+      }
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(tmp2[17]).intl;
+        const stringResult = intl.string(tmp(guildId[17]).t["xsC+/y"]);
+        const tmp12 = closure_7(tmp(guildId[18]).NitroWheelIcon, {});
+        cResult[4] = stringResult;
+        cResult[5] = tmp12;
+        tmp9 = tmp12;
+        tmp8 = stringResult;
+      } else {
+        tmp8 = cResult[4];
+        tmp9 = cResult[5];
+      }
+      if (cResult[6] === tmp4.titleContainer) {
+        let tmp13;
+        let tmp16;
+        if (cResult[7] === tmp4.titleWrapper) {
+          tmp13 = cResult[8];
+        }
+        if (cResult[9] !== tmp6) {
+          obj3 = { bottomSheetRef: ref, onPressGIF: tmp6 };
+          const tmp19 = closure_7(selectionContext(guildId[20]), obj3);
+          cResult[9] = tmp6;
+          cResult[10] = tmp19;
+          tmp16 = tmp19;
+        } else {
+          tmp16 = cResult[10];
+        }
+        if (cResult[11] === tmp4.gifPicker) {
+          let tmp20;
+          if (cResult[12] === tmp16) {
+            tmp20 = cResult[13];
+          }
+          if (cResult[14] === tmp13) {
+            let tmp24;
+            if (cResult[15] === tmp20) {
+              tmp24 = cResult[16];
+            }
+            return tmp24;
+          }
+          obj4 = { ref, scrollable: true, startExpanded: true, children: items };
+          items = [tmp13, tmp20];
+          const tmp26 = closure_8(tmp(guildId[21]).BottomSheet, obj4);
+          cResult[14] = tmp13;
+          cResult[15] = tmp20;
+          cResult[16] = tmp26;
+          tmp24 = tmp26;
+        }
+        let tmp22 = View;
+        let obj5 = { style: tmp4.gifPicker, children: tmp16 };
+        const tmp23 = closure_7(View, obj5);
+        cResult[11] = tmp4.gifPicker;
+        cResult[12] = tmp16;
+        cResult[13] = tmp23;
+        tmp20 = tmp23;
+      }
+      let obj9 = { title: tmp8, trailing: tmp9, titleWrapperStyle: null, titleContainerStyle: null };
+      ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp4);
+      const tmp15 = closure_7(tmp(guildId[19]).BottomSheetTitleHeader, obj9);
+      cResult[6] = tmp4.titleContainer;
+      cResult[7] = tmp4.titleWrapper;
+      cResult[8] = tmp15;
+      tmp13 = tmp15;
+    }
+  }
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let obj5;
+    closure_0 = arg0;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
+        let closure_1;
+        let closure_3;
+        let imageUri;
+        let originalMd5;
+        let avatar;
+        let banner;
+        let src;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -51,162 +168,293 @@ export default function ProfileGIFSelectActionSheet(arg0) {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            obj5 = { value, done: true };
-            return obj5;
+            obj4 = { value, done: true };
+            return obj4;
           } else {
-            closure_3 = tmp5;
-            closure_130_0 = undefined;
-            closure_130_1 = undefined;
-            closure_130_2 = undefined;
-            closure_130_3 = undefined;
-            closure_130_4 = undefined;
-            closure_130_5 = undefined;
-            closure_130_6 = undefined;
-            closure_130_7 = undefined;
-            closure_130_8 = undefined;
+            closure_0 = undefined;
+            closure_1 = undefined;
+            guildId = undefined;
+            closure_3 = undefined;
+            imageUri = undefined;
+            originalMd5 = undefined;
+            avatar = undefined;
+            banner = undefined;
             const gifSrc = closure_0.gifSrc;
-            let src = gifSrc;
+            src = gifSrc;
             if (gifSrc == null) {
               src = closure_0.src;
             }
             const _fetch = fetch;
             c4 = 1;
             c5 = 1;
-            const obj8 = { value: fetch(src), done: false };
-            return obj8;
+            const obj7 = { value: fetch(src), done: false };
+            return obj7;
           }
-        } else if (1 === tmp5) {
+        } else if (1 === c4) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj12 = { value, done: true };
-            return obj12;
+            const obj11 = { value, done: true };
+            return obj11;
           } else {
-            closure_130_1 = value;
+            closure_0 = value;
             c4 = 2;
             c5 = 1;
-            const obj13 = { value: closure_130_1.blob(), done: false };
-            return obj13;
+            const obj12 = { value: closure_0.blob(), done: false };
+            return obj12;
           }
-        } else if (2 === tmp5) {
+        } else if (2 === c4) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj14 = { value, done: true };
-            return obj14;
+            const obj13 = { value, done: true };
+            return obj13;
           } else {
-            closure_130_2 = value;
-            closure_130_0 = closure_130_2;
-            const promise = new Promise((arg0) => {
-              closure_0 = arg0;
-              const fileReader = new FileReader();
-              fileReader.onload = (target) => {
-                target = target.target;
-                let result;
-                if (target != null) {
-                  result = target.result;
-                }
-                let str = "";
-                if (typeof result === "string") {
-                  str = result;
-                }
-                closure_0(str);
-              };
-              const asDataURL = fileReader.readAsDataURL(closure_1_0);
-            });
-            const items = [promise, ];
-            const obj22 = src(tmp2[7]);
-            items[1] = src(tmp2[7]).fromBlob(closure_130_2).catch(() => null);
+            closure_1 = value;
+            const items = [blobToDataURI(closure_1), ];
+            const obj20 = selectionContext(guildId[9]);
+            const fromBlobResult = obj20.fromBlob(closure_1);
+            items[1] = fromBlobResult.catch(() => null);
             c4 = 3;
             c5 = 1;
-            const obj15 = { value: Promise.all(items), done: false };
-            return obj15;
+            const obj14 = { value: all(items), done: false };
+            return obj14;
           }
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
         } else if (arg0 === 2) {
           c5 = 3;
-          const obj16 = { value, done: true };
-          return obj16;
+          const obj15 = { value, done: true };
+          return obj15;
         } else {
-          closure_130_3 = value;
-          closure_130_4 = closure_3(closure_130_3, 2);
-          closure_130_5 = closure_130_4[0];
-          closure_130_6 = closure_130_4[1];
-          if (constants.AVATAR === closure_131_0) {
-            const obj17 = { imageUri: closure_130_5, description: null, originalMd5: null };
-            obj4 = closure_0(tmp2[8]);
-            obj17.description = closure_0(tmp2[9]).generateAvatarDescription();
-            obj17.originalMd5 = closure_130_6;
-            closure_130_7 = obj4.createPendingImage(obj17);
-            if (closure_131_1 === constants2.PROFILE_TRY_IT_OUT) {
-              closure_0(tmp2[10]).setTryItOutAvatar(closure_130_7);
-              const obj10 = closure_0(tmp2[10]);
+          guildId = value;
+          closure_3 = _slicedToArray(guildId, 2);
+          imageUri = closure_3[0];
+          originalMd5 = closure_3[1];
+          if (constants.AVATAR === closure_0) {
+            const obj16 = { imageUri, description: obj5.generateAvatarDescription(), originalMd5 };
+            const createPendingImage = closure_0(guildId[10]).createPendingImage;
+            const tmp22 = closure_0(guildId[10]);
+            obj5 = closure_0(guildId[11]);
+            avatar = createPendingImage(obj16);
+            if (src === constants2.PROFILE_TRY_IT_OUT) {
+              const obj9 = closure_0(guildId[12]);
+              obj9.setTryItOutAvatar(avatar);
             } else {
-              const obj18 = { guildId: closure_131_2, avatar: closure_130_7 };
-              closure_0(tmp2[11]).setPendingChanges(obj18);
-              const obj7 = closure_0(tmp2[11]);
-              let result = closure_0(tmp2[12]).announcePendingAvatarChange("set");
-              const obj9 = closure_0(tmp2[12]);
+              const obj17 = { guildId, avatar };
+              const obj6 = closure_0(guildId[13]);
+              obj6.setPendingChanges(obj17);
+              const obj8 = closure_0(guildId[14]);
+              const result = obj8.announcePendingAvatarChange("set");
             }
-            const obj6 = closure_0(tmp2[9]);
-          } else {
-            if (constants.BANNER === tmp64) {
-              const obj19 = { assetOrigin: closure_0(tmp2[13]).AssetOriginTypes.NEW_ASSET, imageUri: closure_130_5, description: "", originalAsset: "Array", originalMd5: closure_130_6 };
-              closure_130_8 = closure_0(tmp2[8]).createPendingImage(obj19);
-              if (closure_131_1 !== constants2.PROFILE_TRY_IT_OUT) {
-                const obj21 = { guildId: closure_131_2, banner: closure_130_8 };
-                closure_0(tmp2[11]).setPendingChanges(obj21);
-                const obj = closure_0(tmp2[11]);
-              }
-              const obj20 = closure_0(tmp2[8]);
+          } else if (constants.BANNER === tmp63) {
+            const obj18 = { assetOrigin: closure_0(guildId[15]).AssetOriginTypes.NEW_ASSET, imageUri, description: "", originalAsset: "Array", originalMd5 };
+            const createPendingImage2 = closure_0(guildId[10]).createPendingImage;
+            const tmp71 = closure_0(guildId[10]);
+            banner = createPendingImage2(obj18);
+            if (src === constants2.PROFILE_TRY_IT_OUT) {
+              obj3 = closure_0(guildId[12]);
+              obj3.setTryItOutBanner(banner);
+            } else {
+              const obj19 = { guildId, banner };
+              const obj = closure_0(guildId[13]);
+              obj.setPendingChanges(obj19);
             }
-            closure_0(tmp2[10]).setTryItOutBanner(closure_130_8);
-            const obj3 = closure_0(tmp2[10]);
           }
-          src(tmp2[14]).hideActionSheet();
+          const obj10 = selectionContext(guildId[16]);
+          obj10.hideActionSheet();
           c5 = 3;
-          const obj11 = src(tmp2[14]);
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp53) {
-        c5 = tmp;
+        c5 = 3;
         throw tmp53;
       }
     }
+  });
+  function onPressGIF() {
+    return closure_0(...arguments);
+  }
+  cResult[0] = guildId;
+  cResult[1] = profileAssetType;
+  cResult[2] = selectionContext;
+  cResult[3] = onPressGIF;
+  tmp6 = onPressGIF;
+}) : ((arg0) => {
+  let intl;
+  let items;
+  let obj7;
+  ({ profileAssetType: require, selectionContext: importDefault, guildId: dependencyMap } = arg0);
+  let obj = function _onPressGIF2() {
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let obj5;
+      let closure_0 = arg0;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let closure_1;
+          let closure_2;
+          let closure_3;
+          let imageUri;
+          let originalMd5;
+          let avatar;
+          let banner;
+          let src;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_0 = undefined;
+              closure_1 = undefined;
+              closure_2 = undefined;
+              closure_3 = undefined;
+              imageUri = undefined;
+              originalMd5 = undefined;
+              avatar = undefined;
+              banner = undefined;
+              const gifSrc = closure_0.gifSrc;
+              src = gifSrc;
+              if (gifSrc == null) {
+                src = closure_0.src;
+              }
+              const _fetch = fetch;
+              c4 = 1;
+              c5 = 1;
+              const obj7 = { value: fetch(src), done: false };
+              return obj7;
+            }
+          } else if (1 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj11 = { value, done: true };
+              return obj11;
+            } else {
+              closure_0 = value;
+              c4 = 2;
+              c5 = 1;
+              const obj12 = { value: closure_0.blob(), done: false };
+              return obj12;
+            }
+          } else if (2 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj13 = { value, done: true };
+              return obj13;
+            } else {
+              closure_1 = value;
+              const items = [closure_1_12(closure_1), ];
+              const obj20 = src(closure_2[9]);
+              const fromBlobResult = obj20.fromBlob(closure_1);
+              items[1] = fromBlobResult.catch(() => null);
+              c4 = 3;
+              c5 = 1;
+              const obj14 = { value: all(items), done: false };
+              return obj14;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj15 = { value, done: true };
+            return obj15;
+          } else {
+            closure_2 = value;
+            closure_3 = closure_3(closure_2, 2);
+            imageUri = closure_3[0];
+            originalMd5 = closure_3[1];
+            if (constants.AVATAR === closure_131_0) {
+              const obj16 = { imageUri, description: obj5.generateAvatarDescription(), originalMd5 };
+              const createPendingImage = closure_0(closure_2[10]).createPendingImage;
+              const tmp22 = closure_0(closure_2[10]);
+              obj5 = closure_0(closure_2[11]);
+              avatar = createPendingImage(obj16);
+              if (closure_131_1 === constants2.PROFILE_TRY_IT_OUT) {
+                const obj9 = closure_0(closure_2[12]);
+                obj9.setTryItOutAvatar(avatar);
+              } else {
+                const obj17 = { guildId: closure_131_2, avatar };
+                const obj6 = closure_0(closure_2[13]);
+                obj6.setPendingChanges(obj17);
+                const obj8 = closure_0(closure_2[14]);
+                const result = obj8.announcePendingAvatarChange("set");
+              }
+            } else if (constants.BANNER === tmp63) {
+              const obj18 = { assetOrigin: closure_0(closure_2[15]).AssetOriginTypes.NEW_ASSET, imageUri, description: "", originalAsset: "Array", originalMd5 };
+              const createPendingImage2 = closure_0(closure_2[10]).createPendingImage;
+              const tmp71 = closure_0(closure_2[10]);
+              banner = createPendingImage2(obj18);
+              if (closure_131_1 === constants2.PROFILE_TRY_IT_OUT) {
+                obj3 = closure_0(closure_2[12]);
+                obj3.setTryItOutBanner(banner);
+              } else {
+                const obj19 = { guildId: closure_131_2, banner };
+                obj = closure_0(closure_2[13]);
+                obj.setPendingChanges(obj19);
+              }
+            }
+            const obj10 = src(closure_2[16]);
+            obj10.hideActionSheet();
+            c5 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp53) {
+          c5 = 3;
+          throw tmp53;
+        }
+      }
+    });
+    return obj(...arguments);
   };
   const tmp = closure_9();
-  const ref = noop.useRef(null);
-  let obj = { ref, scrollable: true, startExpanded: true, children: null };
-  let obj3 = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
-  const intl = util.intl;
-  obj3.title = intl.string(util.t["xsC+/y"]);
-  obj3.trailing = closure_7(NitroWheelIcon.NitroWheelIcon, {});
+  const ref = react.useRef(null);
+  obj = { ref, scrollable: true, startExpanded: true, children: items };
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  obj3 = { title: intl.string(intl2.t["xsC+/y"]), trailing: closure_7(NitroWheelIcon.NitroWheelIcon, {}), titleWrapperStyle: null, titleContainerStyle: null };
+  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  intl = intl2.intl;
   ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
-  let items = [closure_7(BottomSheetTitleHeader.BottomSheetTitleHeader, obj3), ];
-  obj4 = {
-    style: tmp.gifPicker,
-    children: closure_7(GIFPickerDefault, {
-      bottomSheetRef: ref,
-      onPressGIF(arg0) {
-        const self = this;
-        const apply = closure_3.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
-        }
-        return applyArgumentsResult;
-      }
-    })
+  items = [closure_7(BottomSheetTitleHeader, obj3), ];
+  obj4 = { style: tmp.gifPicker, children: closure_7(GIFPickerDefault, obj7) };
+  obj7 = {
+    bottomSheetRef: ref,
+    onPressGIF(arg0) {
+      return obj(...arguments);
+    }
   };
   items[1] = closure_7(View, obj4);
-  obj.children = items;
-  return closure_8(Sheet_BottomSheet.BottomSheet, obj);
-};
-export const ProfileAssetType = obj4;
-export const GIFSelectionContext = obj5;
+  return closure_8(BottomSheet, obj);
+});
+let result = size.fileFinishedImporting("modules/user_profile/native/ProfileGIFSelectActionSheet.tsx");
+
+export default tmp3;
+export const ProfileAssetType = obj3;
+export const GIFSelectionContext = obj4;

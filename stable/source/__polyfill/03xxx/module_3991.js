@@ -1,16 +1,50 @@
 // Module ID: 3991
 // Function ID: 3992
-// Dependencies: [2114]
+// Dependencies: [3992, 3993, 3994, 3995, 3996]
 
 // Module 3991
-import module_2114 from "module_2114" /* 2114 */;
+import formatDistance from "formatDistance" /* 3992 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 3993 */;
+import formatRelative from "formatRelative" /* 3994 */;
+import date_mod from "module_3995" /* 3995 */;
+import date_mod2 from "module_3996" /* 3996 */;
 
-if (!module_2114) {
-  const obj2 = { default: module_2114 };
-  let obj = obj2;
+let tmp11;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+if (!formatDistance) {
+  tmp3 = { default: formatDistance };
+  const obj = { default: formatDistance };
 } else {
-  obj = module_2114;
+  tmp3 = formatDistance;
+}
+if (!buildFormatLongFn) {
+  tmp5 = { default: buildFormatLongFn };
+  const obj2 = { default: buildFormatLongFn };
+} else {
+  tmp5 = buildFormatLongFn;
+}
+if (!formatRelative) {
+  tmp7 = { default: formatRelative };
+  const obj3 = { default: formatRelative };
+} else {
+  tmp7 = formatRelative;
+}
+let date = date_mod2;
+if (!date) {
+  tmp9 = { default: date };
+  const obj4 = { default: date };
+} else {
+  tmp9 = date;
+}
+date = date_mod2;
+if (!date) {
+  tmp11 = { default: date };
+  const obj5 = { default: date };
+} else {
+  tmp11 = date;
 }
 
-export default { date: obj.default({ formats: { full: "EEEE, d MMMM yyyy", long: "d MMMM yyyy", medium: "d MMM yyyy", short: "dd.MM.yyyy" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "HH:mm:ss zzzz", long: "HH:mm:ss z", medium: "HH:mm:ss", short: "HH:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} 'la' {{time}}", long: "{{date}} 'la' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
-export default exports.default;
+export default { code: "ja", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };

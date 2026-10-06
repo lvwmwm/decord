@@ -1,21 +1,22 @@
-// Module ID: 16344
-// Function ID: 16345
+// Module ID: 16021
+// Function ID: 16022
 // Name: MainTabsNavigatorPanelContext
-// Dependencies: [19, 6929, 7351, 2]
+// Dependencies: [19, 6066, 6496, 2]
 
-// Module 16344 (MainTabsNavigatorPanelContext)
-import noop from "module_19" /* 19 */;
+// Module 16021 (MainTabsNavigatorPanelContext)
+import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
+import react from "react" /* 19 */;
+import "ReanimatedHelperTypes";
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6496 */;
+import size from "module_2" /* 2 */;
 
-const obj = { gesture: null, disallowGesture: null, translateX: null };
-const Gesture = fn(6929).Gesture;
-obj.gesture = Gesture.Pan();
-let ReanimatedHelperTypes = fn(7351);
-obj.disallowGesture = ReanimatedHelperTypes.createFakeSharedValue(false);
-ReanimatedHelperTypes = fn(7351);
-obj.translateX = ReanimatedHelperTypes.createFakeSharedValue(0);
-const context = noop.createContext(obj);
-const context1 = noop.createContext(undefined);
-const size = fn(2);
+let Gesture;
+let ReanimatedHelperTypes;
+const obj = { gesture: Gesture.Pan(), disallowGesture: ReanimatedHelperTypes.createFakeSharedValue(false), translateX: ReanimatedHelperTypes.createFakeSharedValue(0) };
+Gesture = LegacyBaseButton.Gesture;
+ReanimatedHelperTypes = ReanimatedHelperTypes_mod;
+const context = react.createContext(obj);
+const context1 = react.createContext(undefined);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/MainTabsNavigatorPanelContext.tsx");
 
 export default context;

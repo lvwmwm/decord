@@ -1,31 +1,18 @@
 // Module ID: 1287
 // Function ID: 1288
-// Dependencies: [1288, 1289, 1291]
+// Dependencies: []
 
 // Module 1287
-import _mod1288 from "module_1288" /* 1288 */;
-import _mod1289 from "module_1289" /* 1289 */;
-import _mod1291 from "module_1291" /* 1291 */;
-
-if (_mod1288) {
-  function getProto(arg0) {
-    return _mod1288(arg0);
+let obj2;
+const re1 = /%20/g;
+const obj = { default: "RFC3986", formatters: obj2, RFC1738: "RFC1738", RFC3986: "RFC3986" };
+obj2 = {
+  RFC1738(arg0) {
+    return replace.call(arg0, re1, "+");
+  },
+  RFC3986(arg0) {
+    return String(arg0);
   }
-} else if (_mod1289) {
-  getProto = function getProto(obj) {
-    if (obj) {
-      return _mod1289(obj);
-    }
-    const typeError = new TypeError("getProto: not an object");
-    throw typeError;
-  };
-} else {
-  getProto = null;
-  if (_mod1291) {
-    getProto = function getProto(arg0) {
-      return _mod1291(arg0);
-    };
-  }
-}
+};
 
-export default getProto;
+export default obj;

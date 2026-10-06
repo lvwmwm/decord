@@ -1,140 +1,1045 @@
-// Module ID: 14921
-// Function ID: 14922
+// Module ID: 14159
+// Function ID: 14160
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1074, 2038, 21, 4788, 576, 1484, 10029, 7662, 2027, 8467, 5021, 11192, 1391, 1241, 1115, 14922, 1177, 13505, 11189, 14923, 14925, 2872, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 1086, 2048, 21, 4837, 588, 558, 576, 1491, 9166, 2035, 6807, 7615, 5085, 10403, 1397, 1253, 1127, 14160, 1189, 12747, 10400, 14161, 2880, 14163, 2]
 
-// Module 14921 (UserProfileDisplayNameStylesEditButton)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11189 */;
-import _modDef13505 from "module_13505" /* 13505 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14922 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14923 */;
-import _slicedToArray from "module_32" /* 32 */;
+// Module 14159 (UserProfileDisplayNameStylesEditButton)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12747 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14160 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14161 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1086 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const noop = fn(19);
-({ useCallback: closure_4, useMemo: hasOwnProperty } = noop);
-const View = fn(17).View;
-const Constants = fn(1074);
-({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-let obj2 = { ggContainer: null, noneIcon: null };
-let size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center", paddingBottom: 4 };
-obj2.ggContainer = size;
-obj2.noneIcon = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
-let closure_11 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDisplayNameStylesEditButton.tsx");
+let navigateResult, obj1, obj4, tmp13, tmp15, tmp16, tmp2, tmp8, trackResult, user;
 
-export default function UserProfileDisplayNameStylesEditButton(user) {
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let size;
+let _slicedToArray = _slicedToArray_mod;
+({ useCallback: closure_4, useMemo: hasOwnProperty } = react);
+const View = react_native.View;
+({ AnalyticEvents: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { ggContainer: size, noneIcon: obj2 };
+size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center", paddingBottom: 4 };
+createStyles = createStyles.createStyles;
+obj2 = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
+let closure_11 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let closure_3;
+  let first;
+  let isTryItOut;
+  let tmp10;
+  let tmp7;
+  const tmp = user;
+  let obj = user(isTryItOut[9]);
+  const cResult = obj.c(38);
+  user = user.user;
+  const guildId = user.guildId;
+  isTryItOut = user.isTryItOut;
+  const tmp4 = closure_11();
+  _slicedToArray = tmp4;
+  let obj2 = user(isTryItOut[10]);
+  const nativeStackNavigation = obj2.useNativeStackNavigation();
+  const obj3 = user(isTryItOut[11]);
+  const isDisplayNameStylesFlywheelSettersEnabled = obj3.useIsDisplayNameStylesFlywheelSettersEnabled("UserProfileDisplayNameStylesEditButton");
+  if (cResult[0] !== isDisplayNameStylesFlywheelSettersEnabled) {
+    let items1;
+    if (isDisplayNameStylesFlywheelSettersEnabled) {
+      const items = [tmp(tmp2[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
+      items1 = items;
+    } else {
+      items1 = [];
+    }
+    cResult[0] = isDisplayNameStylesFlywheelSettersEnabled;
+    cResult[1] = items1;
+    tmp7 = items1;
+  } else {
+    tmp7 = cResult[1];
+  }
+  const tmpResult = tmp(isTryItOut[13]);
+  [first, tmp10] = tmpResult.useSelectedDismissibleContent(tmp7, undefined, true);
+  let closure_5 = tmp10;
+  const tmpResult3 = tmp(isTryItOut[14]);
+  const guildMemberOrUserPendingDisplayNameStyles = tmpResult3.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
+  let tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.pendingDisplayNameStyles;
+  if (isTryItOut) {
+    tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.tryItOutDisplayNameStyles;
+  }
+  if (cResult[2] === guildId) {
+    if (cResult[3] === tryItOutDisplayNameStyles) {
+      let tmp12;
+      if (cResult[4] === user.id) {
+        tmp12 = cResult[5];
+      }
+      const tmp14 = guildId(isTryItOut[15])(tmp12);
+      let closure_6 = tmp14;
+      let effectId;
+      const useDisplayNameStylesEffectConfig = tmp(tmp2[16]).useDisplayNameStylesEffectConfig;
+      tmp(isTryItOut[16]);
+      if (tmp14 != null) {
+        effectId = tmp14.effectId;
+      }
+      if (effectId == null) {
+        effectId = tmp(tmp2[17]).DisplayNameEffect.SOLID;
+      }
+      if (cResult[6] === guildId) {
+        if (cResult[7] === isTryItOut) {
+          if (cResult[8] === tmp10) {
+            let tmp19;
+            let combined;
+            if (cResult[9] === nativeStackNavigation) {
+              tmp19 = cResult[10];
+            }
+            if (null != tmp14) {
+              let tmp24;
+              if (cResult[12] !== tmp14.fontId) {
+                const intl2 = tmp(tmp2[19]).intl;
+                const stringResult = intl2.string(guildId(isTryItOut[20])(tmp14.fontId));
+                class W {
+                  constructor() {
+                    if (null == closure_6) {
+                      tmp11 = jsx;
+                      tmp12 = closure_0;
+                      tmp13 = closure_2;
+                      obj1 = { source: null, style: null };
+                      tmp14 = closure_1;
+                      tmp15 = closure_2;
+                      Icon = closure_0(closure_2[21]).Icon;
+                      obj1.source = closure_1(closure_2[22]);
+                      tmp16 = closure_3;
+                      obj1.style = closure_3.noneIcon;
+                      tmp10 = jsx(Icon, obj1);
+                    } else {
+                      tmp2 = jsx;
+                      tmp3 = View;
+                      obj = { style: null, children: null };
+                      tmp4 = closure_3;
+                      obj.style = closure_3.ggContainer;
+                      tmp5 = jsx;
+                      tmp6 = closure_1;
+                      tmp7 = closure_2;
+                      obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                      tmp8 = user;
+                      obj4.userId = user.id;
+                      tmp9 = guildId;
+                      obj4.guildId = guildId;
+                      obj4.pendingDisplayNameStyles = tmp;
+                      obj.children = jsx(closure_1(closure_2[23]), obj4);
+                      tmp10 = jsx(View, obj);
+                    }
+                    return tmp10;
+                  }
+                }
+                cResult[12] = tmp14.fontId;
+                cResult[13] = stringResult;
+                tmp24 = stringResult;
+              } else {
+                tmp24 = cResult[13];
+              }
+              const _HermesInternal = HermesInternal;
+              class W {
+                constructor() {
+                  if (null == closure_6) {
+                    tmp11 = jsx;
+                    tmp12 = closure_0;
+                    tmp13 = closure_2;
+                    obj1 = { source: null, style: null };
+                    tmp14 = closure_1;
+                    tmp15 = closure_2;
+                    Icon = closure_0(closure_2[21]).Icon;
+                    obj1.source = closure_1(closure_2[22]);
+                    tmp16 = closure_3;
+                    obj1.style = closure_3.noneIcon;
+                    tmp10 = jsx(Icon, obj1);
+                  } else {
+                    tmp2 = jsx;
+                    tmp3 = View;
+                    obj = { style: null, children: null };
+                    tmp4 = closure_3;
+                    obj.style = closure_3.ggContainer;
+                    tmp5 = jsx;
+                    tmp6 = closure_1;
+                    tmp7 = closure_2;
+                    obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                    tmp8 = user;
+                    obj4.userId = user.id;
+                    tmp9 = guildId;
+                    obj4.guildId = guildId;
+                    obj4.pendingDisplayNameStyles = tmp;
+                    obj.children = jsx(closure_1(closure_2[23]), obj4);
+                    tmp10 = jsx(View, obj);
+                  }
+                  return tmp10;
+                }
+              }
+              combined = "" + tmp24 + " + " + tmp18.name;
+            } else {
+              const _Symbol = Symbol;
+              class W {
+                constructor() {
+                  if (null == closure_6) {
+                    tmp11 = jsx;
+                    tmp12 = closure_0;
+                    tmp13 = closure_2;
+                    obj1 = { source: null, style: null };
+                    tmp14 = closure_1;
+                    tmp15 = closure_2;
+                    Icon = closure_0(closure_2[21]).Icon;
+                    obj1.source = closure_1(closure_2[22]);
+                    tmp16 = closure_3;
+                    obj1.style = closure_3.noneIcon;
+                    tmp10 = jsx(Icon, obj1);
+                  } else {
+                    tmp2 = jsx;
+                    tmp3 = View;
+                    obj = { style: null, children: null };
+                    tmp4 = closure_3;
+                    obj.style = closure_3.ggContainer;
+                    tmp5 = jsx;
+                    tmp6 = closure_1;
+                    tmp7 = closure_2;
+                    obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                    tmp8 = user;
+                    obj4.userId = user.id;
+                    tmp9 = guildId;
+                    obj4.guildId = guildId;
+                    obj4.pendingDisplayNameStyles = tmp;
+                    obj.children = jsx(closure_1(closure_2[23]), obj4);
+                    tmp10 = jsx(View, obj);
+                  }
+                  return tmp10;
+                }
+              }
+              if (tmp20 === Symbol.for("react.memo_cache_sentinel")) {
+                const intl = tmp(tmp2[19]).intl;
+                const stringResult1 = intl.string(tmp(isTryItOut[19]).t.PoWNfe);
+                class W {
+                  constructor() {
+                    if (null == closure_6) {
+                      tmp11 = jsx;
+                      tmp12 = closure_0;
+                      tmp13 = closure_2;
+                      obj1 = { source: null, style: null };
+                      tmp14 = closure_1;
+                      tmp15 = closure_2;
+                      Icon = closure_0(closure_2[21]).Icon;
+                      obj1.source = closure_1(closure_2[22]);
+                      tmp16 = closure_3;
+                      obj1.style = closure_3.noneIcon;
+                      tmp10 = jsx(Icon, obj1);
+                    } else {
+                      tmp2 = jsx;
+                      tmp3 = View;
+                      obj = { style: null, children: null };
+                      tmp4 = closure_3;
+                      obj.style = closure_3.ggContainer;
+                      tmp5 = jsx;
+                      tmp6 = closure_1;
+                      tmp7 = closure_2;
+                      obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                      tmp8 = user;
+                      obj4.userId = user.id;
+                      tmp9 = guildId;
+                      obj4.guildId = guildId;
+                      obj4.pendingDisplayNameStyles = tmp;
+                      obj.children = jsx(closure_1(closure_2[23]), obj4);
+                      tmp10 = jsx(View, obj);
+                    }
+                    return tmp10;
+                  }
+                }
+                cResult[11] = stringResult1;
+                combined = stringResult1;
+              } else {
+                combined = cResult[11];
+              }
+            }
+            if (cResult[14] === tmp14) {
+              if (cResult[15] === guildId) {
+                if (cResult[16] === tmp4.ggContainer) {
+                  if (cResult[17] === tmp4.noneIcon) {
+                    let tmp27;
+                    let tmp30;
+                    if (cResult[18] === user.id) {
+                      tmp27 = cResult[19];
+                    }
+                    if (cResult[20] !== tmp14) {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      cResult[20] = tmp14;
+                      class W {
+                        constructor() {
+                          if (null == closure_6) {
+                            tmp11 = jsx;
+                            tmp12 = closure_0;
+                            tmp13 = closure_2;
+                            obj1 = { source: null, style: null };
+                            tmp14 = closure_1;
+                            tmp15 = closure_2;
+                            Icon = closure_0(closure_2[21]).Icon;
+                            obj1.source = closure_1(closure_2[22]);
+                            tmp16 = closure_3;
+                            obj1.style = closure_3.noneIcon;
+                            tmp10 = jsx(Icon, obj1);
+                          } else {
+                            tmp2 = jsx;
+                            tmp3 = View;
+                            obj = { style: null, children: null };
+                            tmp4 = closure_3;
+                            obj.style = closure_3.ggContainer;
+                            tmp5 = jsx;
+                            tmp6 = closure_1;
+                            tmp7 = closure_2;
+                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                            tmp8 = user;
+                            obj4.userId = user.id;
+                            tmp9 = guildId;
+                            obj4.guildId = guildId;
+                            obj4.pendingDisplayNameStyles = tmp;
+                            obj.children = jsx(closure_1(closure_2[23]), obj4);
+                            tmp10 = jsx(View, obj);
+                          }
+                          return tmp10;
+                        }
+                      }
+                      cResult[21] = R;
+                    } else {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    class W {
+                      constructor() {
+                        if (null == closure_6) {
+                          tmp11 = jsx;
+                          tmp12 = closure_0;
+                          tmp13 = closure_2;
+                          obj1 = { source: null, style: null };
+                          tmp14 = closure_1;
+                          tmp15 = closure_2;
+                          Icon = closure_0(closure_2[21]).Icon;
+                          obj1.source = closure_1(closure_2[22]);
+                          tmp16 = closure_3;
+                          obj1.style = closure_3.noneIcon;
+                          tmp10 = jsx(Icon, obj1);
+                        } else {
+                          tmp2 = jsx;
+                          tmp3 = View;
+                          obj = { style: null, children: null };
+                          tmp4 = closure_3;
+                          obj.style = closure_3.ggContainer;
+                          tmp5 = jsx;
+                          tmp6 = closure_1;
+                          tmp7 = closure_2;
+                          obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                          tmp8 = user;
+                          obj4.userId = user.id;
+                          tmp9 = guildId;
+                          obj4.guildId = guildId;
+                          obj4.pendingDisplayNameStyles = tmp;
+                          obj.children = jsx(closure_1(closure_2[23]), obj4);
+                          tmp10 = jsx(View, obj);
+                        }
+                        return tmp10;
+                      }
+                    }
+                    if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      const stringResult2 = obj7.string(guildId(isTryItOut[25])["86GtGH"]);
+                      class W {
+                        constructor() {
+                          if (null == closure_6) {
+                            tmp11 = jsx;
+                            tmp12 = closure_0;
+                            tmp13 = closure_2;
+                            obj1 = { source: null, style: null };
+                            tmp14 = closure_1;
+                            tmp15 = closure_2;
+                            Icon = closure_0(closure_2[21]).Icon;
+                            obj1.source = closure_1(closure_2[22]);
+                            tmp16 = closure_3;
+                            obj1.style = closure_3.noneIcon;
+                            tmp10 = jsx(Icon, obj1);
+                          } else {
+                            tmp2 = jsx;
+                            tmp3 = View;
+                            obj = { style: null, children: null };
+                            tmp4 = closure_3;
+                            obj.style = closure_3.ggContainer;
+                            tmp5 = jsx;
+                            tmp6 = closure_1;
+                            tmp7 = closure_2;
+                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                            tmp8 = user;
+                            obj4.userId = user.id;
+                            tmp9 = guildId;
+                            obj4.guildId = guildId;
+                            obj4.pendingDisplayNameStyles = tmp;
+                            obj.children = jsx(closure_1(closure_2[23]), obj4);
+                            tmp10 = jsx(View, obj);
+                          }
+                          return tmp10;
+                        }
+                      }
+                      cResult[22] = stringResult2;
+                      tmp30 = stringResult2;
+                    } else {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    const tmp32 = first === tmp(isTryItOut[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
+                    if (cResult[23] !== tmp32) {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      class W {
+                        constructor() {
+                          if (null == closure_6) {
+                            tmp11 = jsx;
+                            tmp12 = closure_0;
+                            tmp13 = closure_2;
+                            obj1 = { source: null, style: null };
+                            tmp14 = closure_1;
+                            tmp15 = closure_2;
+                            Icon = closure_0(closure_2[21]).Icon;
+                            obj1.source = closure_1(closure_2[22]);
+                            tmp16 = closure_3;
+                            obj1.style = closure_3.noneIcon;
+                            tmp10 = jsx(Icon, obj1);
+                          } else {
+                            tmp2 = jsx;
+                            tmp3 = View;
+                            obj = { style: null, children: null };
+                            tmp4 = closure_3;
+                            obj.style = closure_3.ggContainer;
+                            tmp5 = jsx;
+                            tmp6 = closure_1;
+                            tmp7 = closure_2;
+                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                            tmp8 = user;
+                            obj4.userId = user.id;
+                            tmp9 = guildId;
+                            obj4.guildId = guildId;
+                            obj4.pendingDisplayNameStyles = tmp;
+                            obj.children = jsx(closure_1(closure_2[23]), obj4);
+                            tmp10 = jsx(View, obj);
+                          }
+                          return tmp10;
+                        }
+                      }
+                      cResult[23] = tmp32;
+                      cResult[24] = tmp34;
+                    } else {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    if (cResult[25] !== combined) {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      tmp36[0] = combined;
+                      class W {
+                        constructor() {
+                          if (null == closure_6) {
+                            tmp11 = jsx;
+                            tmp12 = closure_0;
+                            tmp13 = closure_2;
+                            obj1 = { source: null, style: null };
+                            tmp14 = closure_1;
+                            tmp15 = closure_2;
+                            Icon = closure_0(closure_2[21]).Icon;
+                            obj1.source = closure_1(closure_2[22]);
+                            tmp16 = closure_3;
+                            obj1.style = closure_3.noneIcon;
+                            tmp10 = jsx(Icon, obj1);
+                          } else {
+                            tmp2 = jsx;
+                            tmp3 = View;
+                            obj = { style: null, children: null };
+                            tmp4 = closure_3;
+                            obj.style = closure_3.ggContainer;
+                            tmp5 = jsx;
+                            tmp6 = closure_1;
+                            tmp7 = closure_2;
+                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                            tmp8 = user;
+                            obj4.userId = user.id;
+                            tmp9 = guildId;
+                            obj4.guildId = guildId;
+                            obj4.pendingDisplayNameStyles = tmp;
+                            obj.children = jsx(closure_1(closure_2[23]), obj4);
+                            tmp10 = jsx(View, obj);
+                          }
+                          return tmp10;
+                        }
+                      }
+                      cResult[26] = tmp36;
+                    } else {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    if (cResult[27] !== tmp27) {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      cResult[27] = tmp27;
+                      class W {
+                        constructor() {
+                          if (null == closure_6) {
+                            tmp11 = jsx;
+                            tmp12 = closure_0;
+                            tmp13 = closure_2;
+                            obj1 = { source: null, style: null };
+                            tmp14 = closure_1;
+                            tmp15 = closure_2;
+                            Icon = closure_0(closure_2[21]).Icon;
+                            obj1.source = closure_1(closure_2[22]);
+                            tmp16 = closure_3;
+                            obj1.style = closure_3.noneIcon;
+                            tmp10 = jsx(Icon, obj1);
+                          } else {
+                            tmp2 = jsx;
+                            tmp3 = View;
+                            obj = { style: null, children: null };
+                            tmp4 = closure_3;
+                            obj.style = closure_3.ggContainer;
+                            tmp5 = jsx;
+                            tmp6 = closure_1;
+                            tmp7 = closure_2;
+                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                            tmp8 = user;
+                            obj4.userId = user.id;
+                            tmp9 = guildId;
+                            obj4.guildId = guildId;
+                            obj4.pendingDisplayNameStyles = tmp;
+                            obj.children = jsx(closure_1(closure_2[23]), obj4);
+                            tmp10 = jsx(View, obj);
+                          }
+                          return tmp10;
+                        }
+                      }
+                      cResult[28] = tmp38;
+                    } else {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    class M {
+                      constructor() {
+                        obj = closure_1(closure_2[18]);
+                        trackResult = obj.track(AnalyticEvents.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+                        obj1 = { guildId, isTryItOut };
+                        navigateResult = closure_4.navigate(UserSettingsSections.DISPLAY_NAME_STYLES, obj1);
+                        tmp3 = closure_5(ContentDismissActionType.TAKE_ACTION);
+                        return;
+                      }
+                    }
+                    if (cResult[31] === combined) {
+                      class R {
+                        constructor() {
+                          tmp = closure_6;
+                          tmp3Result = null;
+                          if (null != closure_6) {
+                            tmp4 = closure_1;
+                            tmp5 = closure_2;
+                            tmp3 = jsx;
+                            colors = undefined;
+                            tmp6 = closure_1(closure_2[24]);
+                            if (tmp != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            obj = { colors: null, effectId: null };
+                            obj.colors = colors;
+                            effectId = undefined;
+                            if (tmp != null) {
+                              effectId = tmp.effectId;
+                            }
+                            obj.effectId = effectId;
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    cResult[31] = combined;
+                    cResult[32] = tmp19;
+                    cResult[33] = tmp33;
+                    cResult[34] = tmp35;
+                    cResult[35] = tmp37;
+                    cResult[36] = tmp39;
+                    cResult[37] = jsx(tmp(isTryItOut[26]).UserProfileEditFormButton, { label: tmp30, labelTrailing: tmp33, buttonText: combined, accessibilityValue: tmp35, onPress: tmp19, leading: tmp37, trailing: tmp39 });
+                    const tmp42 = jsx(tmp(isTryItOut[26]).UserProfileEditFormButton, { label: tmp30, labelTrailing: tmp33, buttonText: combined, accessibilityValue: tmp35, onPress: tmp19, leading: tmp37, trailing: tmp39 });
+                  }
+                }
+              }
+            }
+            class W {
+              constructor() {
+                if (null == closure_6) {
+                  tmp11 = jsx;
+                  tmp12 = closure_0;
+                  tmp13 = closure_2;
+                  obj1 = { source: null, style: null };
+                  tmp14 = closure_1;
+                  tmp15 = closure_2;
+                  Icon = closure_0(closure_2[21]).Icon;
+                  obj1.source = closure_1(closure_2[22]);
+                  tmp16 = closure_3;
+                  obj1.style = closure_3.noneIcon;
+                  tmp10 = jsx(Icon, obj1);
+                } else {
+                  tmp2 = jsx;
+                  tmp3 = View;
+                  obj = { style: null, children: null };
+                  tmp4 = closure_3;
+                  obj.style = closure_3.ggContainer;
+                  tmp5 = jsx;
+                  tmp6 = closure_1;
+                  tmp7 = closure_2;
+                  obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
+                  tmp8 = user;
+                  obj4.userId = user.id;
+                  tmp9 = guildId;
+                  obj4.guildId = guildId;
+                  obj4.pendingDisplayNameStyles = tmp;
+                  obj.children = jsx(closure_1(closure_2[23]), obj4);
+                  tmp10 = jsx(View, obj);
+                }
+                return tmp10;
+              }
+            }
+            cResult[14] = tmp14;
+            cResult[15] = guildId;
+            cResult[16] = tmp4.ggContainer;
+            class M {
+              constructor() {
+                obj = closure_1(closure_2[18]);
+                trackResult = obj.track(AnalyticEvents.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+                obj1 = { guildId, isTryItOut };
+                navigateResult = closure_4.navigate(UserSettingsSections.DISPLAY_NAME_STYLES, obj1);
+                tmp3 = closure_5(ContentDismissActionType.TAKE_ACTION);
+                return;
+              }
+            }
+            cResult[18] = user.id;
+            cResult[19] = W;
+            tmp27 = W;
+          }
+        }
+      }
+      class M {
+        constructor() {
+          obj = closure_1(closure_2[18]);
+          trackResult = obj.track(AnalyticEvents.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+          obj1 = { guildId, isTryItOut };
+          navigateResult = closure_4.navigate(UserSettingsSections.DISPLAY_NAME_STYLES, obj1);
+          tmp3 = closure_5(ContentDismissActionType.TAKE_ACTION);
+          return;
+        }
+      }
+      cResult[6] = guildId;
+      cResult[7] = isTryItOut;
+      cResult[8] = tmp10;
+      cResult[9] = nativeStackNavigation;
+      cResult[10] = M;
+      tmp19 = M;
+    }
+  }
+  const obj6 = { userId: user.id, guildId, pendingDisplayNameStyles: tryItOutDisplayNameStyles, ignoreDisabledStylesSetting: true };
+  cResult[2] = guildId;
+  cResult[3] = tryItOutDisplayNameStyles;
+  cResult[4] = user.id;
+  cResult[5] = obj6;
+  tmp12 = obj6;
+}) : ((user) => {
+  let closure_3;
+  let first;
+  let items1;
+  let pendingDisplayNameStyles;
+  let tmp9;
+  let tryItOutDisplayNameStyles;
   user = user.user;
   const guildId = user.guildId;
   const isTryItOut = user.isTryItOut;
-  closure_5 = undefined;
-  closure_6 = undefined;
+  let closure_5;
+  let closure_6;
   let displayNameStylesEffectConfig;
   const tmp = closure_11();
   _slicedToArray = tmp;
-  const nativeStackNavigation = user(isTryItOut[8]).useNativeStackNavigation();
-  let obj = user(isTryItOut[8]);
-  const isDisplayNameStylesFlywheelSettersEnabled = user(isTryItOut[9]).useIsDisplayNameStylesFlywheelSettersEnabled("UserProfileDisplayNameStylesEditButton");
-  let obj2 = user(isTryItOut[9]);
+  let tmp3 = isTryItOut;
+  let obj = user(isTryItOut[10]);
+  const nativeStackNavigation = obj.useNativeStackNavigation();
+  let obj2 = user(isTryItOut[11]);
+  const isDisplayNameStylesFlywheelSettersEnabled = obj2.useIsDisplayNameStylesFlywheelSettersEnabled("UserProfileDisplayNameStylesEditButton");
+  let tmp6 = user(isTryItOut[13]);
+  const useSelectedDismissibleContent = tmp6.useSelectedDismissibleContent;
   if (isDisplayNameStylesFlywheelSettersEnabled) {
-    const items = [tmp2(tmp3[11]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
-    let items1 = items;
+    const items = [tmp2(tmp3[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
+    items1 = items;
   } else {
     items1 = [];
   }
-  let tmp6 = _slicedToArray(user(isTryItOut[10]).useSelectedDismissibleContent(items1, undefined, true), 2);
-  closure_5 = tmp7;
-  let obj3 = user(isTryItOut[10]);
-  const guildMemberOrUserPendingDisplayNameStyles = user(isTryItOut[12]).useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
+  [first, tmp9] = useSelectedDismissibleContent(items1, undefined, true);
+  closure_5 = tmp9;
+  const tmp2Result = user(tmp3[14]);
+  const guildMemberOrUserPendingDisplayNameStyles = tmp2Result.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
   ({ pendingDisplayNameStyles, tryItOutDisplayNameStyles } = guildMemberOrUserPendingDisplayNameStyles);
-  const obj4 = { userId: user.id, guildId, pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true };
-  const tmp2Result = user(isTryItOut[12]);
-  const tmp9 = guildId;
+  const obj3 = { userId: user.id, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting: true };
+  const tmp11 = guildId;
+  const tmp12 = guildId(tmp3[15]);
   if (isTryItOut) {
     pendingDisplayNameStyles = tryItOutDisplayNameStyles;
   }
-  obj4.pendingDisplayNameStyles = pendingDisplayNameStyles;
-  const tmp10Result = guildId(isTryItOut[13])(obj4);
-  closure_6 = tmp10Result;
-  let tmp10 = guildId(isTryItOut[13]);
+  const tmp12Result = tmp12(obj3);
+  closure_6 = tmp12Result;
   let effectId;
-  if (tmp10Result != null) {
-    effectId = tmp10Result.effectId;
+  const useDisplayNameStylesEffectConfig = tmp2(tmp3[16]).useDisplayNameStylesEffectConfig;
+  user(tmp3[16]);
+  if (tmp12Result != null) {
+    effectId = tmp12Result.effectId;
   }
   if (effectId == null) {
-    effectId = tmp2(tmp3[15]).DisplayNameEffect.SOLID;
+    effectId = tmp2(tmp3[17]).DisplayNameEffect.SOLID;
   }
-  displayNameStylesEffectConfig = user(isTryItOut[14]).useDisplayNameStylesEffectConfig(effectId);
-  const items2 = [guildId, isTryItOut, nativeStackNavigation, tmp6[1]];
-  const items3 = [displayNameStylesEffectConfig, tmp10Result];
-  const tmp2Result2 = user(isTryItOut[14]);
-  const tmp15 = closure_5(() => {
+  displayNameStylesEffectConfig = useDisplayNameStylesEffectConfig(effectId);
+  const items2 = [guildId, isTryItOut, nativeStackNavigation, tmp9];
+  const items3 = [displayNameStylesEffectConfig, tmp12Result];
+  const tmp17 = nativeStackNavigation(() => {
+    const obj = AnalyticsUtilsDefault;
+    obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+    const obj2 = { guildId, isTryItOut };
+    nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
+    closure_5(ContentDismissActionType.TAKE_ACTION);
+  }, items2);
+  const tmp18 = closure_5(() => {
+    let stringResult;
     if (null == closure_6) {
-      const intl2 = util.intl;
-      let stringResult = intl2.string(util.t.PoWNfe);
+      const intl2 = intl3.intl;
+      stringResult = intl2.string(intl3.t.PoWNfe);
     } else {
-      const intl = util.intl;
+      const intl = intl3.intl;
       const _HermesInternal = HermesInternal;
       stringResult = "" + intl.string(getDisplayNameStylesFontNameDefault(tmp.fontId)) + " + " + displayNameStylesEffectConfig.name;
     }
     return stringResult;
   }, items3);
-  const items4 = [tmp10Result, guildId, user.id, tmp];
-  const items5 = [tmp10Result];
-  const tmp14 = nativeStackNavigation(() => {
-    AnalyticsUtilsDefault.track(constants.DISPLAY_NAME_STYLES_FROM_SETTINGS);
-    nativeStackNavigation.navigate(constants2.DISPLAY_NAME_STYLES, { guildId, isTryItOut });
-    closure_5(ContentDismissActionType.TAKE_ACTION);
-  }, items2);
-  const tmp16 = nativeStackNavigation(() => {
+  const items4 = [tmp12Result, guildId, user.id, tmp];
+  const items5 = [tmp12Result];
+  const tmp19 = nativeStackNavigation(() => {
+    let tmp10;
     if (null == closure_6) {
-      const obj2 = { source: _modDef13505, style: closure_3.noneIcon };
-      let tmp10 = jsx(native.Icon, { source: _modDef13505, style: closure_3.noneIcon });
+      const Icon = native.Icon;
+      tmp10 = <Icon source={AssetRegistryDefault} style={closure_3.noneIcon} />;
     } else {
-      const obj = { style: closure_3.ggContainer, children: null };
-      const obj3 = { userId: user.id, guildId, userName: "Gg", pendingDisplayNameStyles: tmp, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-      obj.children = jsx(UsernameWithEffectsDefault, { userId: user.id, guildId, userName: "Gg", pendingDisplayNameStyles: tmp, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" });
       tmp10 = <View style={closure_3.ggContainer}>{null}</View>;
     }
     return tmp10;
   }, items4);
-  const obj5 = { label: null, labelTrailing: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null, trailing: null };
-  let intl = tmp2(tmp3[17]).intl;
-  obj5.label = intl.string(tmp9(isTryItOut[24])["86GtGH"]);
-  const tmp17 = nativeStackNavigation(() => {
+  const tmp20 = nativeStackNavigation(() => {
+    let effectId;
     let tmp3Result = null;
     if (null != closure_6) {
       let colors;
-      if (tmp != null) {
+      const tmp3 = jsx;
+      const tmp6 = DisplayNameStylesColorSwatchDefault;
+      if (closure_6 != null) {
         colors = tmp.colors;
       }
       if (colors == null) {
         colors = [];
       }
-      const obj = { colors, effectId: null };
-      let effectId;
-      if (tmp != null) {
+      const obj = { colors, effectId };
+      effectId = undefined;
+      if (closure_6 != null) {
         effectId = tmp.effectId;
       }
-      obj.effectId = effectId;
-      tmp3Result = jsx(DisplayNameStylesColorSwatchDefault, { colors, effectId: null });
+      tmp3Result = tmp3(tmp6, obj);
     }
     return tmp3Result;
   }, items5);
-  obj5.labelTrailing = jsx(user(isTryItOut[23]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp6[0] === user(isTryItOut[11]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE });
-  obj5.buttonText = tmp15;
-  obj5.accessibilityValue = { text: tmp15 };
-  obj5.onPress = tmp14;
-  obj5.leading = tmp16();
-  obj5.trailing = tmp17();
-  return jsx(user(isTryItOut[23]).UserProfileEditFormButton, { label: null, labelTrailing: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null, trailing: null });
-};
+  const UserProfileEditFormButton = tmp2(tmp3[26]).UserProfileEditFormButton;
+  let intl = tmp2(tmp3[19]).intl;
+  ({ showPremiumIcon: true, showNewBadge: first === user(tmp3[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE });
+  const UserProfileEditFormLabelBadges = tmp2(tmp3[26]).UserProfileEditFormLabelBadges;
+  return <UserProfileEditFormButton label={intl.string(tmp11(tmp3[25])["86GtGH"])} labelTrailing={null} buttonText={tmp18} accessibilityValue={{ text: tmp18 }} onPress={tmp17} leading={tmp19()} trailing={tmp20()} />;
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDisplayNameStylesEditButton.tsx");
+
+export default tmp5;

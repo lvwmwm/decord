@@ -1,37 +1,41 @@
-// Module ID: 5716
-// Function ID: 5717
+// Module ID: 5780
+// Function ID: 5781
 // Name: EmojiTerms
-// Dependencies: [5717, 5718, 2]
+// Dependencies: [5781, 5782, 2]
 
-// Module 5716 (EmojiTerms)
-import LazyPromiseInitializerDefault from "LazyPromiseInitializer" /* 5717 */;
-import EmojiTermsImporter from "EmojiTermsImporter" /* 5718 */;
+// Module 5780 (EmojiTerms)
+import LazyPromiseInitializerDefault from "LazyPromiseInitializer" /* 5781 */;
+import EmojiTermsImporter from "EmojiTermsImporter" /* 5782 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_2 = new LazyPromiseInitializerDefault(function loadEmoji(arg0) {
+function loadEmoji(arg0) {
+  let nextPromise;
   const tmp = EmojiTermsImporter.emojiTermsImporter[arg0];
   if (undefined !== tmp) {
-    let nextPromise = tmp().then((result) => result.default);
     const tmpResult = tmp();
+    nextPromise = tmpResult.then((result) => result.default);
   } else {
     nextPromise = Promise.resolve({});
   }
   return nextPromise;
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/emoji_terms/EmojiTerms.tsx");
-
-export default {
+}
+let closure_2 = new LazyPromiseInitializerDefault(loadEmoji);
+const obj = {
   setEmojiLocale(locale) {
     closure_2.setParams(locale);
   },
   getTermsForEmoji(name) {
-    value = closure_2.get();
+    let items;
+    const value = closure_2.get();
     if (undefined !== value) {
-      let items = value[name];
+      items = value[name];
     } else {
       items = [];
     }
     return items;
   }
 };
+const tmp2 = new LazyPromiseInitializerDefault(loadEmoji);
+const result = size.fileFinishedImporting("modules/emoji_terms/EmojiTerms.tsx");
+
+export default obj;

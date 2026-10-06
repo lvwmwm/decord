@@ -1,31 +1,50 @@
-// Module ID: 8320
-// Function ID: 8321
+// Module ID: 7477
+// Function ID: 7478
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [5667, 2041, 4427, 1074, 1115, 2108, 8250, 11, 4935, 8252, 8254, 2]
+// Dependencies: [5731, 2051, 4472, 1086, 1127, 2114, 7406, 11, 4984, 7408, 7410, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8320 (StageRaiseHandSystemMessage)
+// Module 7477 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import util from "util" /* 1115 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8250 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8252 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5667 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+import intl5 from "intl" /* 1127 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7406 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7408 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5731 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
-({ HelpdeskArticles: metroRequire, MessageFlags: closure_7, MessageTypes: closure_8, Permissions: closure_9 } = Constants);
-const size = fn(2);
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+({ HelpdeskArticles: metroRequire, MessageFlags: metroImportDefault, MessageTypes: metroImportAll, Permissions: c9 } = Constants);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageRaiseHandSystemMessage.tsx");
 
-export const createStageRaiseHandSystemMessage = function createStageRaiseHandSystemMessage(roleStyle) {
-  const message = roleStyle.message;
-  const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
+export const createStageRaiseHandSystemMessage = function createStageRaiseHandSystemMessage(message) {
+  let M87x7Y;
+  let formatToParts;
+  let intl2;
+  let intl3;
+  let intl4;
+  let obj4;
+  let obj6;
+  let obj7;
+  let tmp10;
+  let tmp6Result;
+  message = message.message;
+  const roleStyle = message.roleStyle;
+  const obj = useAuthorWithProcessedColor;
+  const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   let canResult = PermissionStore.can(constants4.MUTE_MEMBERS, ChannelStore.getChannel(message.channel_id));
   const participant = StageChannelParticipantStore.getParticipant(message.channel_id, message.author.id);
   let num;
-  const date = new Date(SnowflakeUtilsDefault.extractTimestamp(message.id));
+  const obj2 = SnowflakeUtilsDefault;
+  const _Date = Date;
+  const date = new Date(obj2.extractTimestamp(message.id));
+  const toISOStringResult = date.toISOString();
   if (participant != null) {
     const voiceState = participant.voiceState;
     if (voiceState != null) {
@@ -35,42 +54,36 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
   if (num == null) {
     num = 0;
   }
-  const toISOStringResult = new Date(SnowflakeUtilsDefault.extractTimestamp(message.id)).toISOString();
-  const date1 = new Date(num);
+  const _Date1 = new _Date(num);
+  const toISOStringResult1 = _Date1.toISOString();
   if (canResult) {
     let rtsState;
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(4935).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(4984).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
   }
-  const obj3 = { content: null, showInviteToSpeakButton: null, buttonLabel: null, ephemeralIndication: null };
-  const intl = tmp(1115).intl;
-  toISOStringResult1 = new Date(num).toISOString();
-  obj3.content = intl.formatToParts(util.t.M87x7Y, { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) });
-  obj3.showInviteToSpeakButton = canResult;
-  const intl2 = tmp(1115).intl;
-  obj3.buttonLabel = intl2.string(util.t.f0T7hI);
-  let tmp10;
-  if (message.hasFlag(constants2.EPHEMERAL)) {
-    if (message.type === constants3.STAGE_RAISE_HAND) {
-      const obj5 = { content: null, helpArticleLink: null, helpButtonAccessibilityLabel: null };
-      const intl3 = tmp(1115).intl;
-      const obj6 = { handleDelete: null };
-      const obj7 = { action: "bindDismissMessage", message };
-      obj6.handleDelete = obj7;
-      obj5.content = intl3.formatToParts(tmp(1115).t["qDAX++"], obj6);
-      obj5.helpArticleLink = tmp6(2108).getArticleURL(constants.EPHEMERAL_MESSAGES);
-      const intl4 = tmp(1115).intl;
-      obj5.helpButtonAccessibilityLabel = intl4.string(tmp(1115).t.htHOrp);
+  const obj3 = { content: formatToParts(M87x7Y, obj4), showInviteToSpeakButton: canResult, buttonLabel: intl2.string(intl5.t.f0T7hI), ephemeralIndication: tmp10 };
+  const intl = tmp(1127).intl;
+  formatToParts = intl.formatToParts;
+  obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
+  M87x7Y = tmp(1127).t.M87x7Y;
+  intl2 = tmp(1127).intl;
+  tmp10 = undefined;
+  if (message.hasFlag(metroImportDefault.EPHEMERAL)) {
+    if (message.type === metroImportAll.STAGE_RAISE_HAND) {
+      const obj5 = { content: intl3.formatToParts(intl5.t["qDAX++"], obj6), helpArticleLink: tmp6Result.getArticleURL(metroRequire.EPHEMERAL_MESSAGES), helpButtonAccessibilityLabel: intl4.string(intl5.t.htHOrp) };
+      intl3 = tmp(1127).intl;
+      obj6 = { handleDelete: obj7 };
+      obj7 = { action: "bindDismissMessage", message };
+      tmp6Result = HelpdeskUtilsDefault;
+      intl4 = tmp(1127).intl;
       tmp10 = obj5;
-      const tmp6Result = tmp6(2108);
     }
   }
-  obj3.ephemeralIndication = tmp10;
-  const merged = Object.assign(tmp6(8254)(roleStyle));
+  const merged = Object.assign(tmp6(7410)(message));
   return obj3;
 };

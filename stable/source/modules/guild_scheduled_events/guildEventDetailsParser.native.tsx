@@ -1,13 +1,14 @@
-// Module ID: 9900
-// Function ID: 9901
+// Module ID: 9037
+// Function ID: 9038
 // Name: guildEventDetailsParser
-// Dependencies: [4778, 2]
+// Dependencies: [4824, 2]
 
-// Module 9900 (guildEventDetailsParser)
-import MarkupUtils from "MarkupUtils" /* 4778 */;
+// Module 9037 (guildEventDetailsParser)
+import MarkupUtils from "MarkupUtils" /* 4824 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+const reactParserForResult = MarkupUtils.reactParserFor(MarkupUtils.guildEventLocationRules);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/guildEventDetailsParser.native.tsx");
 
 export const guildEventDetailsParser = MarkupUtils.parseGuildEventDescription;
-export const guildEventLocationParser = MarkupUtils.reactParserFor(MarkupUtils.guildEventLocationRules);
+export const guildEventLocationParser = reactParserForResult;

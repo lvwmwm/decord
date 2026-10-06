@@ -1,41 +1,48 @@
-// Module ID: 11451
-// Function ID: 11452
+// Module ID: 10606
+// Function ID: 10607
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: [19, 1372, 1374, 8495, 1074, 7485, 11452, 7902, 504, 7656, 4755, 11453, 1980, 11453, 1241, 2]
+// Dependencies: [19, 1378, 1380, 7643, 1086, 6630, 10607, 7052, 504, 6801, 4801, 10608, 1987, 10608, 1253, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 11451 (useTieredTenureBadgeClickHandler)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import openUserSettings from "openUserSettings" /* 7656 */;
-import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 11453 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 10606 (useTieredTenureBadgeClickHandler)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Constants2 from "Constants" /* 6630 */;
+import openUserSettings from "openUserSettings" /* 6801 */;
+import Constants3 from "Constants" /* 7643 */;
+import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 10608 */;
+import react from "react" /* 19 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const PremiumTypes = fn(1374).PremiumTypes;
-const DEFAULT_PREMIUM_BADGE_ID = fn(8495).DEFAULT_PREMIUM_BADGE_ID;
-const Constants = fn(1074);
-({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
-const UserProfileThemeTypes = fn(7485).UserProfileThemeTypes;
-const size = fn(2);
+let metroImportAll;
+let metroImportDefault;
+const PremiumTypes = PremiumConstants.PremiumTypes;
+const DEFAULT_PREMIUM_BADGE_ID = Constants3.DEFAULT_PREMIUM_BADGE_ID;
+({ AnalyticEvents: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
+const UserProfileThemeTypes = Constants2.UserProfileThemeTypes;
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/native/hooks/useTieredTenureBadgeClickHandler.tsx");
 
 export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeClickHandler(id, userId, themeType) {
+  let badge;
   _require = id;
   dependencyMap = themeType;
-  let isPremiumSubscriber = require("useIsPremiumSubscriber").useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  let obj = require("useIsPremiumSubscriber");
+  let isPremiumSubscriber = obj.useIsPremiumSubscriber(PremiumTypes.TIER_2);
   let tmp4 = typeof id === "string";
   if (typeof id === "string") {
-    tmp4 = null != tmp(7902).getTieredTenureBadge(id);
-    const tmpResult = tmp(7902);
+    const tmpResult = require("TieredTenureBadgeUtils");
+    tmp4 = null != tmpResult.getTieredTenureBadge(id);
   }
-  let obj = require("useIsPremiumSubscriber");
   const items = [isPremiumSubscriber];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => isPremiumSubscriber.getCurrentUser());
+  const tmpResult2 = require("get initialized");
+  const stateFromStores = tmpResult2.useStateFromStores(items, () => isPremiumSubscriber.getCurrentUser());
   if (!tmp4) {
     let tmp7 = id === DEFAULT_PREMIUM_BADGE_ID;
     if (tmp7) {
@@ -55,18 +62,21 @@ export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeCli
   let callback = null;
   if (tmp4) {
     callback = isPremiumSubscriber.useCallback(() => {
-      if (closure_2 === UserProfileThemeTypes.YOU_SCREEN) {
-        const obj2 = { screen: constants2.PREMIUM };
-        openUserSettings.openUserSettings(obj2);
+      if (themeType === UserProfileThemeTypes.YOU_SCREEN) {
+        const obj3 = { screen: metroImportAll.PREMIUM };
+        const obj2 = openUserSettings;
+        obj2.openUserSettings(obj3);
       } else {
-        const obj = ActionSheetActionCreatorsDefault;
-        const tmp4 = asyncRequireImpl(11453, dependencyMap.paths);
-        const obj4 = { userId };
-        obj.openLazy(tmp4, TieredTenureBadgeActionSheet.TIERED_TENURE_BADGE_ACTION_SHEET_KEY, obj4, "stack");
+        const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+        const obj = { userId };
+        const tmp5 = asyncRequire(10608, dependencyMap.paths);
+        openLazy(tmp5, TieredTenureBadgeActionSheet.TIERED_TENURE_BADGE_ACTION_SHEET_KEY, obj, "stack");
       }
-      if (isPremiumSubscriber) {
-        const obj6 = { badge, viewed_user_id: userId, premium_type: isPremiumSubscriber };
-        AnalyticsUtilsDefault.track(constants.TIERED_TENURE_BADGE_CLICKED, obj6);
+      const tmp15 = isPremiumSubscriber;
+      if (tmp15) {
+        const obj5 = { badge, viewed_user_id: userId, premium_type: isPremiumSubscriber };
+        const obj4 = AnalyticsUtilsDefault;
+        obj4.track(metroImportDefault.TIERED_TENURE_BADGE_CLICKED, obj5);
       }
     }, items1);
   }

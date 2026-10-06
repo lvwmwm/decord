@@ -1,19 +1,22 @@
-// Module ID: 7353
-// Function ID: 7354
+// Module ID: 6498
+// Function ID: 6499
 // Name: PhoneVerificationActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
-// Module 7353 (PhoneVerificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 6498 (PhoneVerificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("actions/native/PhoneVerificationActionCreators.tsx");
-
-export default {
+let obj = {
   openCountrySelector() {
-    DispatcherDefault.dispatch({ type: "VERIFICATION_OPEN_COUNTRY_SELECTOR" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "VERIFICATION_OPEN_COUNTRY_SELECTOR" });
   },
   setCountrySelectorClosed() {
-    DispatcherDefault.dispatch({ type: "VERIFICATION_CLOSE_COUNTRY_SELECTOR" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "VERIFICATION_CLOSE_COUNTRY_SELECTOR" });
   }
 };
+const result = size.fileFinishedImporting("actions/native/PhoneVerificationActionCreators.tsx");
+
+export default obj;

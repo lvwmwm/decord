@@ -1,30 +1,61 @@
-// Module ID: 12581
-// Function ID: 12582
+// Module ID: 11674
+// Function ID: 11675
 // Name: InvitesDisabledAlertModal
-// Dependencies: [19, 21, 5146, 1115, 5146, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 1127, 5210, 5210, 2]
 
-// Module 12581 (InvitesDisabledAlertModal)
-import util from "util" /* 1115 */;
-import AlertModal from "AlertModal" /* 5146 */;
-import noop from "module_19" /* 19 */;
+// Module 11674 (InvitesDisabledAlertModal)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl4 from "intl" /* 1127 */;
+import AlertModal2 from "AlertModal" /* 5210 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let intl3;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl4.t.LpUfEt);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(intl4.t.QRXqzO);
+    cResult[0] = stringResult;
+    cResult[1] = stringResult1;
+    tmp4 = stringResult;
+    tmp5 = stringResult1;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const AlertModal = tmp(5210).AlertModal;
+    const AlertActions = tmp(5210).AlertActions;
+    ({ text: intl3.string(intl4.t.BddRzS) });
+    const AlertActionButton = tmp(5210).AlertActionButton;
+    intl3 = tmp(1127).intl;
+    const tmp10 = <AlertModal title={tmp4} content={tmp5} actions={null} />;
+    cResult[2] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[2];
+  }
+  return tmp8;
+}) : (() => {
+  let intl3;
+  const AlertModal = AlertModal2.AlertModal;
+  const intl = intl4.intl;
+  const intl2 = intl4.intl;
+  const AlertActions = AlertModal2.AlertActions;
+  ({ text: intl3.string(intl4.t.BddRzS) });
+  const AlertActionButton = AlertModal2.AlertActionButton;
+  intl3 = intl4.intl;
+  return <AlertModal title={intl.string(intl4.t.LpUfEt)} content={intl2.string(intl4.t.QRXqzO)} actions={null} />;
+});
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/InvitesDisabledAlertModal.tsx");
 
-export default function InvitesDisabledAlertModal() {
-  const obj = { title: null, content: null, actions: null };
-  const intl = util.intl;
-  obj.title = intl.string(util.t.LpUfEt);
-  const intl2 = util.intl;
-  obj.content = intl2.string(util.t.QRXqzO);
-  const obj2 = { children: null };
-  const obj3 = { text: null };
-  const intl3 = util.intl;
-  obj3.text = intl3.string(util.t.BddRzS);
-  obj2.children = jsx(AlertModal.AlertActionButton, { text: null }, "okay");
-  obj.actions = jsx(AlertModal.AlertActions, { children: null });
-  return jsx(AlertModal.AlertModal, { title: null, content: null, actions: null });
-};
+export default tmp3;

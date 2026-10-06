@@ -1,17 +1,17 @@
-// Module ID: 16299
-// Function ID: 16300
-// Name: getDeviceCountry
-// Dependencies: [1116, 2]
+// Module ID: 15590
+// Function ID: 15591
+// Name: react-native
+// Dependencies: [1128, 2]
 // Exports: getDeviceCountry
 
-// Module 16299 (getDeviceCountry)
-import NativeDeviceLocaleModule from "NativeDeviceLocaleModule" /* 1116 */;
+// Module 15590 (react-native)
+import react_native from "react-native" /* 1128 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/native/components/utils/getDeviceCountry.tsx");
 
 export const getDeviceCountry = function getDeviceCountry() {
-  const _default = NativeDeviceLocaleModule.default;
+  const _default = react_native.default;
   let Language;
   if (_default != null) {
     Language = _default.getConstants().Language;
@@ -22,7 +22,8 @@ export const getDeviceCountry = function getDeviceCountry() {
     const parts = Language.split("-");
     let formatted = null;
     if (parts.length >= 2) {
-      formatted = parts[parts.length - 1].toUpperCase();
+      const str2 = parts[parts.length - 1];
+      formatted = str2.toUpperCase();
     }
     return formatted;
   }

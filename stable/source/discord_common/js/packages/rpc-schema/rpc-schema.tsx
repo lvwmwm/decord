@@ -1,13 +1,15 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 14040
+// Function ID: 14041
 // Name: CONTEXT_MENU_ICON_NAMES
-// Dependencies: [14789, 14790, 2, 14791]
+// Dependencies: [14041, 14042, 2, 14043]
 // Exports: createRPCCommand
 
-// Module 14788 (CONTEXT_MENU_ICON_NAMES)
-import helpers from "helpers" /* 14790 */;
-import contextMenuIcons from "contextMenuIcons" /* 14791 */;
+// Module 14040 (CONTEXT_MENU_ICON_NAMES)
+import helpers from "helpers" /* 14042 */;
+import contextMenuIcons from "contextMenuIcons" /* 14043 */;
 import size from "module_2" /* 2 */;
+
+let closure_1, dependencyMap;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/rpc-schema.tsx");
 
@@ -16,7 +18,7 @@ export const createRPCCommand = function createRPCCommand(AUTHENTICATE, scope) {
   let request;
   dependencyMap = undefined;
   let obj = { scope: scope.scope, handler: scope.handler };
-  const tmp = request(14789).RPCCommandSchemas[AUTHENTICATE];
+  const tmp = request(14041).RPCCommandSchemas[AUTHENTICATE];
   request = undefined;
   if (tmp != null) {
     request = tmp.request;
@@ -25,7 +27,8 @@ export const createRPCCommand = function createRPCCommand(AUTHENTICATE, scope) {
   if (null != request) {
     obj.validation = (object) => {
       if (null == closure_1) {
-        closure_1 = helpers.joiReqObj(object.object(request(object)));
+        const obj = helpers;
+        closure_1 = obj.joiReqObj(object.object(request(object)));
       }
       return closure_1;
     };

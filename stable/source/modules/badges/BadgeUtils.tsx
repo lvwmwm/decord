@@ -1,14 +1,17 @@
-// Module ID: 11493
-// Function ID: 11494
+// Module ID: 10648
+// Function ID: 10649
 // Name: BadgeUtils
-// Dependencies: [8484, 8485, 1115, 8494, 2]
-// Exports: getAlwaysVisibleCopy, getDirectoryBadges, getLegacyIconUrlByBadgeId, getUnhideableBadgeIds, groupCustomizableBadges
+// Dependencies: [7632, 7633, 1127, 7642, 2017, 2]
+// Exports: findTier, getAlwaysVisibleCopy, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 11493 (BadgeUtils)
-import Constants from "Constants" /* 8484 */;
-import BadgeId from "BadgeId" /* 8485 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8494 */;
+// Module 10648 (BadgeUtils)
+import intl2 from "intl" /* 1127 */;
+import Constants from "Constants" /* 7632 */;
+import BadgeId from "BadgeId" /* 7633 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 7642 */;
 import size from "module_2" /* 2 */;
+
+let map;
 
 function isPinnedBadge(badge_id) {
   return badge_id === BadgeId.BadgeId.STAFF;
@@ -21,15 +24,44 @@ function getProfileBadgeIconUrl(iconSrc) {
   return iconSrc;
 }
 const getBadgeAssetFromCDN = Constants.getBadgeAssetFromCDN;
+let items = [BadgeId.BadgeId.GAME_VARIETY, BadgeId.BadgeId.GAME_TIME, BadgeId.BadgeId.STREAMING];
+const set = new Set(items);
+let items1 = [BadgeId.BadgeId.ACCOUNT_AGE, BadgeId.BadgeId.STREAMING, BadgeId.BadgeId.GAME_TIME, BadgeId.BadgeId.GAME_VARIETY];
+const set1 = new Set(items1);
 let result = size.fileFinishedImporting("modules/badges/BadgeUtils.tsx");
 
 export const MAX_DISPLAYED_PROFILE_BADGES = 6;
 export { isPinnedBadge };
+export const isPersonalizationGatedBadge = function isPersonalizationGatedBadge(badge_id) {
+  return set.has(badge_id);
+};
+export const BETA_BADGE_IDS = set1;
+export const isBetaBadgeId = function isBetaBadgeId(badge_id) {
+  return set1.has(badge_id);
+};
+export const getDisplayTier = function getDisplayTier(badge) {
+  const tiers = badge.tiers;
+  if (null != tiers) {
+    if (0 !== tiers.length) {
+      const tmp = badge.owned ? badge.current_tier : badge.next_tier;
+      let closure_0 = tmp;
+      let found;
+      if (null != tmp) {
+        found = tiers.find((key) => key.key === closure_0);
+      }
+      if (found == null) {
+        found = tiers[0];
+      }
+      return found;
+    }
+  }
+};
 export const getAlwaysVisibleCopy = function getAlwaysVisibleCopy(badge_id) {
+  let nPQVxb;
   if (badge_id === BadgeId.BadgeId.STAFF) {
-    let nPQVxb = tmp(1115).t.t3udZb;
+    nPQVxb = tmp(1127).t.t3udZb;
   } else {
-    nPQVxb = tmp(1115).t.nPQVxb;
+    nPQVxb = tmp(1127).t.nPQVxb;
   }
   return nPQVxb;
 };
@@ -50,13 +82,19 @@ export const getDirectoryBadges = function getDirectoryBadges(stateFromStoresArr
   return { earnable, owned };
 };
 export const getUnhideableBadgeIds = function getUnhideableBadgeIds(tenureBadgeHideable) {
+  let _Set1;
   const _Set = Set;
+  tenureBadgeHideable = tenureBadgeHideable.tenureBadgeHideable;
   const STAFF = BadgeId.BadgeId.STAFF;
-  if (tenureBadgeHideable.tenureBadgeHideable) {
+  if (tenureBadgeHideable) {
     const items = [STAFF];
-    let _Set1 = new _Set(items);
+    const self3 = this;
+    const self4 = this;
+    _Set1 = new _Set(items);
   } else {
     const items1 = [STAFF, BadgeId.BadgeId.PREMIUM_TENURE];
+    const self = this;
+    const self2 = this;
     _Set1 = new _Set(items1);
   }
   return _Set1;
@@ -83,8 +121,53 @@ export const groupCustomizableBadges = function groupCustomizableBadges(memo) {
   return { fixedBadges, reorderableBadges, hiddenBadges };
 };
 export { getProfileBadgeIconUrl };
+export const getProfileBadgeLabel = function getProfileBadgeLabel(description, info_label) {
+  if (info_label != null) {
+    info_label = info_label.info_label;
+  }
+  if (null != info_label) {
+    const obj = BadgeIdResolution;
+    const tmp = require;
+    if (!obj.isLegacyBadgeId(info_label.badge_id)) {
+      tmp(2017);
+    }
+    return info_label;
+  }
+  let str = description;
+  if (description == null) {
+    let name;
+    if (info_label != null) {
+      name = info_label.name;
+    }
+    str = name;
+  }
+  if (str == null) {
+    str = "";
+  }
+  info_label = str;
+};
+export const getLegacyDescriptionByBadgeId = function getLegacyDescriptionByBadgeId(badges) {
+  map = new Map();
+  const iter = badges[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let obj2 = BadgeIdResolution;
+    let profileBadgeId = obj2.resolveProfileBadgeId(nextResult.id);
+    let tmp6 = profileBadgeId;
+    let hasItem = null == profileBadgeId;
+    if (!hasItem) {
+      hasItem = map.has(tmp6);
+    }
+    if (!hasItem) {
+      let result = map.set(tmp6, tmp2.description);
+    }
+    continue;
+  }
+  return map;
+};
 export const getLegacyIconUrlByBadgeId = function getLegacyIconUrlByBadgeId(badges) {
-  const map = new Map();
+  map = new Map();
   const iter = badges[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
@@ -102,4 +185,31 @@ export const getLegacyIconUrlByBadgeId = function getLegacyIconUrlByBadgeId(badg
     continue;
   }
   return map;
+};
+export const findTier = function findTier(viewerBadge, next_tier) {
+  let closure_0 = next_tier;
+  let found;
+  if (null != next_tier) {
+    const tiers = viewerBadge.tiers;
+    found = tiers.find((key) => key.key === next_tier);
+  }
+  return found;
+};
+export const getTierRowSubtitle = function getTierRowSubtitle(tier) {
+  tier = tier.tier;
+  if (!tier.isUnlocked) {
+    if (tier.isViewerOnUpgradeableNitro) {
+      let stringResult;
+      if (!tier.isViewingOtherUser) {
+        const intl = intl2.intl;
+        stringResult = intl.string(intl2.t.VPu695);
+      }
+      return stringResult;
+    }
+  }
+  let str = tier.milestone_text;
+  if (str == null) {
+    str = "";
+  }
+  stringResult = str;
 };

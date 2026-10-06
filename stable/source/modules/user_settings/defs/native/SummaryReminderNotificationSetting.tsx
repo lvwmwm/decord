@@ -1,32 +1,34 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15053
+// Function ID: 15054
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [8265, 11754, 1115, 2019, 15793, 2]
+// Dependencies: [7421, 10874, 1127, 2027, 15054, 2]
 
-// Module 15792 (SummaryReminderNotificationSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15793 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15053 (SummaryReminderNotificationSetting)
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15054 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.xEqC6q);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.xEqC6q);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.KmVXll);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.KmVXll);
   },
-  parent: SettingsConstants.MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableSummaryReminderNotifications.useSetting,
   onValueChange: SummaryReminderNotificationUtils.onSummaryReminderNotificationSettingsChanged,
   usePredicate() {
     return false;
   }
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SummaryReminderNotificationSetting.tsx");
 
 export default toggle;

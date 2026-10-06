@@ -1,49 +1,48 @@
-// Module ID: 10198
-// Function ID: 10199
+// Module ID: 9336
+// Function ID: 9337
 // Name: SoundpackStore
-// Dependencies: [10199, 504, 573, 2]
+// Dependencies: [9337, 504, 585, 2]
 
-// Module 10198 (SoundpackStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 10199 */;
+// Module 9336 (SoundpackStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 9337 */;
 import size from "module_2" /* 2 */;
 
 const Soundpacks = Constants.Soundpacks;
 let obj = { soundpack: Soundpacks.CLASSIC, lastSoundpackExperimentId: null };
-const PersistedStore = initializeDefault.PersistedStore;
+const PersistedStore = get_initializedDefault.PersistedStore;
 class SoundpackStore extends PersistedStore {
+  initialize(arg0) {
+    if (null != arg0) {
+      const _Object = Object;
+      const values = Object.values(Soundpacks);
+      const tmp2 = Soundpacks;
+      if (!values.includes(arg0.soundpack)) {
+        arg0.soundpack = tmp2.CLASSIC;
+      }
+    }
+  }
+  getState() {
+    return obj;
+  }
+  getSoundpack() {
+    return obj.soundpack;
+  }
+  getLastSoundpackExperimentId() {
+    return obj.lastSoundpackExperimentId;
+  }
 }
 const prototype = SoundpackStore.prototype;
-prototype["initialize"] = function initialize(arg0) {
-  if (null != arg0) {
-    const _Object = Object;
-    const values = Object.values(Soundpacks);
-    if (!values.includes(arg0.soundpack)) {
-      obj.soundpack = tmp2.CLASSIC;
-    }
-    tmp2 = Soundpacks;
-  }
-};
-prototype["getState"] = function getState() {
-  return obj;
-};
-prototype["getSoundpack"] = function getSoundpack() {
-  return obj.soundpack;
-};
-prototype["getLastSoundpackExperimentId"] = function getLastSoundpackExperimentId() {
-  return obj.lastSoundpackExperimentId;
-};
 SoundpackStore.displayName = "SoundpackStore";
 SoundpackStore.persistKey = "SoundpackStore";
 obj = {
   SET_SOUNDPACK: function handleSetSoundpack(forExperimentId) {
     let lastSoundpackExperimentId = forExperimentId.forExperimentId;
-    obj = { soundpack: forExperimentId.soundpack, lastSoundpackExperimentId: null };
+    obj = { soundpack: forExperimentId.soundpack, lastSoundpackExperimentId };
     if (undefined === lastSoundpackExperimentId) {
       lastSoundpackExperimentId = obj.lastSoundpackExperimentId;
     }
-    obj.lastSoundpackExperimentId = lastSoundpackExperimentId;
   }
 };
 const soundpackStore = new SoundpackStore(DispatcherDefault, obj);

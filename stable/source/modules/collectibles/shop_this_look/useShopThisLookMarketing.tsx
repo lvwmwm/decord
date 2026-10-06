@@ -1,27 +1,67 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 12556
+// Function ID: 12557
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 8516, 7662, 2027, 2]
-// Exports: useShopThisLookMarketing
+// Dependencies: [32, 558, 576, 7664, 2035, 6807, 2]
 
-// Module 13445 (useShopThisLookMarketing)
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7662 */;
-import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 8516 */;
-import _slicedToArray from "module_32" /* 32 */;
+// Module 12556 (useShopThisLookMarketing)
+import react from "react" /* 576 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6807 */;
+import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 7664 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const dismissible_content = tmp(2027);
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/shop_this_look/useShopThisLookMarketing.tsx");
-
-export const useShopThisLookMarketing = function useShopThisLookMarketing(id, guildId, isShopThisLookMobileEnabled) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(6);
+  const obj2 = useMaybeFetchEquippedCollectibleProducts;
+  const tmp4 = obj2.useEquippedCollectibleSkuIds(arg0, arg1).length > 0;
+  if (cResult[0] === tmp4) {
+    if (cResult[1] === arg2) {
+      tmp5 = cResult[2];
+    }
+    const tmpResult = useSelectedDismissibleContent;
+    const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp5, undefined, true), 2);
+    if (cResult[3] === tmp7[1]) {
+      let tmp11;
+      if (cResult[4] === null != tmp7[0]) {
+        tmp11 = cResult[5];
+      }
+      return tmp11;
+    }
+    const obj3 = { isVisible: null != tmp7[0], markAsDismissed: tmp7[1] };
+    cResult[3] = tmp7[1];
+    cResult[4] = null != tmp7[0];
+    cResult[5] = obj3;
+    tmp11 = obj3;
+  }
+  if (arg2) {
+    let items1;
+    if (tmp4) {
+      const items = [dismissible_content.DismissibleContent.SHOP_THIS_LOOK_WEB_MARKETING];
+      items1 = items;
+    }
+    cResult[0] = tmp4;
+    cResult[1] = arg2;
+    cResult[2] = items1;
+    tmp5 = items1;
+  }
+  items1 = [];
+}) : ((arg0, arg1, arg2) => {
+  const obj = useMaybeFetchEquippedCollectibleProducts;
+  const tmp3 = obj.useEquippedCollectibleSkuIds(arg0, arg1).length > 0;
   useSelectedDismissibleContent;
-  if (isShopThisLookMobileEnabled) {
+  const tmp6 = arg2;
+  if (tmp6) {
     if (tmp3) {
       const items = [dismissible_content.DismissibleContent.SHOP_THIS_LOOK_WEB_MARKETING];
     }
-    const tmp8 = _slicedToArray(tmp5([], undefined, true), 2);
-    const obj2 = { isVisible: null != tmp8[0], markAsDismissed: tmp8[1] };
-    return obj2;
+    const tmp9 = _slicedToArray(tmp5([], undefined, true), 2);
+    return { isVisible: null != tmp9[0], markAsDismissed: tmp9[1] };
   }
-};
+});
+const result = size.fileFinishedImporting("modules/collectibles/shop_this_look/useShopThisLookMarketing.tsx");
+
+export const useShopThisLookMarketing = tmp2;

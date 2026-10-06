@@ -1,31 +1,34 @@
-// Module ID: 15270
-// Function ID: 15271
+// Module ID: 14514
+// Function ID: 14515
 // Name: PremiumPlanSelectSetting
-// Dependencies: [8265, 1074, 11754, 1115, 15271, 2]
+// Dependencies: [7421, 1086, 10874, 1127, 14515, 2]
 
-// Module 15270 (PremiumPlanSelectSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14514 (PremiumPlanSelectSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.u95Dt4);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.u95Dt4);
   },
-  parent: SettingsConstants.MobileUserSettings.PREMIUM,
+  parent: MobileUserSettings.PREMIUM,
   unsearchable: true,
   screen: {
-    route: Constants.UserSettingsSections.PREMIUM_PLAN_SELECT,
+    route: UserSettingsSections.PREMIUM_PLAN_SELECT,
     getComponent() {
       return require("PremiumPlanSelectSettingScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/PremiumPlanSelectSetting.tsx");
 
 export default route;

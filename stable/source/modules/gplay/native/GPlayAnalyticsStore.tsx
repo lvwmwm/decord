@@ -1,40 +1,47 @@
-// Module ID: 9514
-// Function ID: 9515
+// Module ID: 8666
+// Function ID: 8667
 // Name: GPlayAnalyticsStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1260, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
-// Module 9514 (GPlayAnalyticsStore)
-import module_560 from "module_560" /* 560 */;
+// Module 8666 (GPlayAnalyticsStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, analyticsByProductId, dependencyMap;
 
 let closure_2 = Object.freeze({ analyticsByProductId: {} });
-const useGPlayAnalyticsStore = module_560.create(() => closure_2);
+const useGPlayAnalyticsStore = module_570.create(() => closure_2);
 const result = size.fileFinishedImporting("modules/gplay/native/GPlayAnalyticsStore.tsx");
 
 export const setGPlayAnalytics = function setGPlayAnalytics(arg0, arg1) {
+  let closure_0;
+  let closure_1;
   _require = arg0;
   dependencyMap = arg1;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  let obj = require("react-native");
+  obj.batchUpdates(() => {
+    let obj;
     obj.setState((analyticsByProductId) => {
-      const obj = { analyticsByProductId: null };
-      const obj2 = {};
+      let obj2;
+      const obj = { analyticsByProductId: obj2 };
+      obj2 = {};
       const merged = Object.assign(analyticsByProductId.analyticsByProductId);
       obj2[closure_1_0] = closure_1_1;
-      obj.analyticsByProductId = obj2;
       return obj;
     });
   });
 };
 export const deleteGPlayAnalytics = function deleteGPlayAnalytics(arg0) {
+  let closure_0;
   _require = arg0;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  const obj = require("react-native");
+  obj.batchUpdates(() => {
     obj.setState((analyticsByProductId) => {
       analyticsByProductId = {};
       const merged = Object.assign(analyticsByProductId.analyticsByProductId);
-      delete tmp2[tmp];
+      delete obj[closure_1_0];
       return { analyticsByProductId };
     });
   });

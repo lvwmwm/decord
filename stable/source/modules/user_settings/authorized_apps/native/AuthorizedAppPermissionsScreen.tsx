@@ -1,20 +1,38 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 14467
+// Function ID: 14468
 // Name: AuthorizedAppPermissionsScreen
-// Dependencies: [19, 21, 7271, 15225, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 6415, 14468, 2]
 
-// Module 15224 (AuthorizedAppPermissionsScreen)
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7271 */;
-import UserSettingsAuthedAppPermissionsDefault from "UserSettingsAuthedAppPermissions" /* 15225 */;
-import noop from "module_19" /* 19 */;
+// Module 14467 (AuthorizedAppPermissionsScreen)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6415 */;
+import UserSettingsAuthedAppPermissionsDefault from "UserSettingsAuthedAppPermissions" /* 14468 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const obj2 = useSettingNavigationRoute;
+  const settingNavigationRoute = obj2.useSettingNavigationRoute();
+  if (cResult[0] !== settingNavigationRoute.params.oauth2Token) {
+    const tmp7 = jsx(UserSettingsAuthedAppPermissionsDefault, { oauth2Token: settingNavigationRoute.params.oauth2Token });
+    cResult[0] = settingNavigationRoute.params.oauth2Token;
+    cResult[1] = tmp7;
+    tmp4 = tmp7;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
+  const obj = useSettingNavigationRoute;
+  const settingNavigationRoute = obj.useSettingNavigationRoute();
+  return jsx(UserSettingsAuthedAppPermissionsDefault, { oauth2Token: settingNavigationRoute.params.oauth2Token });
+});
 const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppPermissionsScreen.tsx");
 
-export default function AuthorizedAppPermissionsScreen() {
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
-  return jsx(UserSettingsAuthedAppPermissionsDefault, { oauth2Token: settingNavigationRoute.params.oauth2Token });
-};
+export default tmp3;

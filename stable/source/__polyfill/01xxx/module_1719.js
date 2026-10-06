@@ -1,280 +1,122 @@
 // Module ID: 1719
 // Function ID: 1720
-// Dependencies: [1677, 1720]
-// Exports: withSpring
+// Dependencies: [1655, 1684, 1720, 1721, 1722]
+// Exports: withDecay
 
 // Module 1719
-import _mod1677 from "module_1677" /* 1677 */;
-import _mod1720 from "module_1720" /* 1720 */;
+import ReanimatedError from "ReanimatedError" /* 1655 */;
+import rubberBandDecay from "rubberBandDecay" /* 1721 */;
+import rigidDecay from "rigidDecay" /* 1722 */;
 
-require = fn;
-let dependencyMap = arg6;
-let __initData = { code: "function pnpm_springTs2(){const{userConfig,checkIfConfigIsValid,underDampedSpringCalculations,criticallyDampedSpringCalculations,isAnimationTerminatingCalculation,calculateNewMassToMatchDuration,initialCalculations,scaleZetaToMatchClamps,toValue,callback,getReduceMotionForAnimation}=this.__closure;var _userConfig,_userConfig2;const defaultConfig={damping:10,mass:1,stiffness:100,overshootClamping:false,restDisplacementThreshold:0.01,restSpeedThreshold:2,velocity:0,duration:2000,dampingRatio:0.5,reduceMotion:undefined,clamp:undefined};const config={...defaultConfig,...userConfig,useDuration:!!((_userConfig=userConfig)!==null&&_userConfig!==void 0&&_userConfig.duration||(_userConfig2=userConfig)!==null&&_userConfig2!==void 0&&_userConfig2.dampingRatio),skipAnimation:false};config.skipAnimation=!checkIfConfigIsValid(config);if(config.duration===0){config.skipAnimation=true;}function springOnFrame(animation,now){const{toValue:toValue,startTimestamp:startTimestamp,current:current}=animation;const timeFromStart=now-startTimestamp;if(config.useDuration&&timeFromStart>=config.duration){animation.current=toValue;animation.lastTimestamp=0;return true;}if(config.skipAnimation){animation.current=toValue;animation.lastTimestamp=0;return true;}const{lastTimestamp:lastTimestamp,velocity:velocity}=animation;const deltaTime=Math.min(Math.max(now-lastTimestamp,0),64);animation.lastTimestamp=now;const t=deltaTime/1000;const v0=-velocity;const x0=toValue-current;const{zeta:zeta,omega0:omega0,omega1:omega1}=animation;const{position:newPosition,velocity:newVelocity}=zeta<1?underDampedSpringCalculations(animation,{zeta:zeta,v0:v0,x0:x0,omega0:omega0,omega1:omega1,t:t}):criticallyDampedSpringCalculations(animation,{v0:v0,x0:x0,omega0:omega0,t:t});animation.current=newPosition;animation.velocity=newVelocity;const{isOvershooting:isOvershooting,isVelocity:isVelocity,isDisplacement:isDisplacement}=isAnimationTerminatingCalculation(animation,config);const springIsNotInMove=isOvershooting||isVelocity&&isDisplacement;if(!config.useDuration&&springIsNotInMove){animation.velocity=0;animation.current=toValue;animation.lastTimestamp=0;return true;}return false;}function isTriggeredTwice(previousAnimation,animation){return(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.toValue)===animation.toValue&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.duration)===animation.duration&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.dampingRatio)===animation.dampingRatio;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.startValue=value;let mass=config.mass;const triggeredTwice=isTriggeredTwice(previousAnimation,animation);const duration=config.duration;const x0=triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startValue:Number(animation.toValue)-value;if(previousAnimation){animation.velocity=(triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity:(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity)+config.velocity)||0;}else{animation.velocity=config.velocity||0;}const toValueNum=Number(animation.toValue);if(toValueNum>value&&animation.velocity<0||toValueNum<value&&animation.velocity>0){animation.velocity=0;}if(triggeredTwice){animation.zeta=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.zeta)||0;animation.omega0=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega0)||0;animation.omega1=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega1)||0;}else{if(config.useDuration){const actualDuration=triggeredTwice?duration-(((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||0)-((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||0)):duration;config.duration=actualDuration;mass=calculateNewMassToMatchDuration(x0,config,animation.velocity);}const{zeta:zeta,omega0:omega0,omega1:omega1}=initialCalculations(mass,config);animation.zeta=zeta;animation.omega0=omega0;animation.omega1=omega1;if(config.clamp!==undefined){animation.zeta=scaleZetaToMatchClamps(animation,config.clamp);}}animation.lastTimestamp=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||now;animation.startTimestamp=triggeredTwice?(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||now:now;}return{onFrame:springOnFrame,onStart:onStart,toValue:toValue,velocity:config.velocity||0,current:toValue,startValue:0,callback:callback,lastTimestamp:0,startTimestamp:0,zeta:0,omega0:0,omega1:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}" };
-fn = function n(toValue, userConfig, callback) {
-  _require = toValue;
-  dependencyMap = userConfig;
-  __initData = callback;
-  const fn = function u() {
-    let obj = { damping: 10, mass: 1, stiffness: 100, overshootClamping: false, restDisplacementThreshold: 0.01, restSpeedThreshold: 2, velocity: 0, duration: 2000, dampingRatio: 0.5, reduceMotion: "call", clamp: "TypeError" };
-    const merged = Object.assign(dependencyMap);
-    let duration;
-    if (dependencyMap != null) {
-      duration = tmp.duration;
-    }
-    let tmp4 = !duration;
-    if (!duration) {
-      let dampingRatio;
-      if (tmp != null) {
-        dampingRatio = tmp.dampingRatio;
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+function validateConfig(clamp) {
+  if (clamp.clamp) {
+    const _Array = Array;
+    if (Array.isArray(clamp.clamp)) {
+      if (2 !== clamp.clamp.length) {
+        const _HermesInternal3 = HermesInternal;
+        const self7 = this;
+        const self8 = this;
+        const reanimatedError = new ReanimatedError.ReanimatedError("`clamp array` must contain 2 items but is given " + clamp.clamp.length + ".");
+        throw reanimatedError;
       }
-      tmp4 = !dampingRatio;
+    } else {
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const reanimatedError1 = new ReanimatedError.ReanimatedError("`config.clamp` must be an array but is " + typeof clamp.clamp + ".");
+      throw reanimatedError1;
     }
-    obj.useDuration = !tmp4;
-    obj.skipAnimation = false;
-    obj.skipAnimation = !_mod1720.checkIfConfigIsValid(obj);
-    if (0 === obj.duration) {
-      obj.skipAnimation = true;
+  }
+  if (clamp.velocityFactor <= 0) {
+    const _HermesInternal2 = HermesInternal;
+    const self5 = this;
+    const self6 = this;
+    const reanimatedError2 = new ReanimatedError.ReanimatedError("`config.velocityFactor` must be greater then 0 but is " + clamp.velocityFactor + ".");
+    throw reanimatedError2;
+  } else if (clamp.rubberBandEffect) {
+    if (!clamp.clamp) {
+      const self3 = this;
+      const self4 = this;
+      const reanimatedError3 = new ReanimatedError.ReanimatedError("You need to set `clamp` property when using `rubberBandEffect`.");
+      throw reanimatedError3;
     }
-    let obj3 = {
-      onFrame: function springOnFrame(toValue, lastTimestamp) {
-        toValue = toValue.toValue;
-        if (obj.useDuration) {
-          if (tmp >= tmp2.duration) {
-            toValue.current = toValue;
-            toValue.lastTimestamp = 0;
-            return true;
+  }
+}
+validateConfig.__closure = {};
+validateConfig.__workletHash = 14532293098342;
+validateConfig.__initData = { code: "function validateConfig_Pnpm_decayTs1(config){if(config.clamp){if(!Array.isArray(config.clamp)){throw new ReanimatedError(\"`config.clamp` must be an array but is \"+typeof config.clamp+\".\");}if(config.clamp.length!==2){throw new ReanimatedError(\"`clamp array` must contain 2 items but is given \"+config.clamp.length+\".\");}}if(config.velocityFactor<=0){throw new ReanimatedError(\"`config.velocityFactor` must be greater then 0 but is \"+config.velocityFactor+\".\");}if(config.rubberBandEffect&&!config.clamp){throw new ReanimatedError('You need to set `clamp` property when using `rubberBandEffect`.');}}" };
+const __initData = { code: "function pnpm_decayTs3(){const{userConfig,isValidRubberBandConfig,rubberBandDecay,rigidDecay,validateConfig,callback,getReduceMotionForAnimation}=this.__closure;var _config$velocity;const config={deceleration:0.998,velocityFactor:1,velocity:0,rubberBandFactor:0.6};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}const decay=isValidRubberBandConfig(config)?function(animation,now){return rubberBandDecay(animation,now,config);}:function(animation,now){return rigidDecay(animation,now,config);};function onStart(animation,value,now){const initialVelocity=config.velocity;animation.current=value;animation.lastTimestamp=now;animation.startTimestamp=now;animation.initialVelocity=initialVelocity;animation.velocity=initialVelocity;validateConfig(config);if(animation.reduceMotion&&config.clamp){if(value<config.clamp[0]){animation.current=config.clamp[0];}else if(value>config.clamp[1]){animation.current=config.clamp[1];}}}return{onFrame:decay,onStart:onStart,callback:callback,velocity:(_config$velocity=config.velocity)!==null&&_config$velocity!==void 0?_config$velocity:0,initialVelocity:0,current:undefined,lastTimestamp:0,startTimestamp:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}" };
+let fn = function n(userConfig, callback) {
+  _require = userConfig;
+  dependencyMap = callback;
+  let obj = require("module_1684");
+  const fn = function c() {
+    let num;
+    let tmp4Result;
+    let obj = { deceleration: 0.998, velocityFactor: 1, velocity: 0, rubberBandFactor: 0.6 };
+    if (obj) {
+      const _Object = Object;
+      const keys = Object.keys(tmp);
+      const item = keys.forEach((item) => {
+        obj[item] = userConfig[item];
+        return userConfig[item];
+      });
+    }
+    const obj2 = userConfig(callback[2]);
+    const obj3 = {
+      onFrame: obj2.isValidRubberBandConfig(obj) ? ((current, lastTimestamp) => {
+        obj = rubberBandDecay;
+        return obj.rubberBandDecay(current, lastTimestamp, obj);
+      }) : ((initialVelocity, lastTimestamp) => {
+        obj = rigidDecay;
+        return obj.rigidDecay(initialVelocity, lastTimestamp, obj);
+      }),
+      onStart(reduceMotion, current, lastTimestamp) {
+        const velocity = obj.velocity;
+        reduceMotion.current = current;
+        reduceMotion.lastTimestamp = lastTimestamp;
+        reduceMotion.startTimestamp = lastTimestamp;
+        reduceMotion.initialVelocity = velocity;
+        reduceMotion.velocity = velocity;
+        validateConfig(obj);
+        const tmp3 = reduceMotion.reduceMotion && obj.clamp;
+        if (tmp3) {
+          if (current < obj.clamp[0]) {
+            reduceMotion.current = obj.clamp[0];
+          } else if (current > obj.clamp[1]) {
+            reduceMotion.current = obj.clamp[1];
           }
-        }
-        if (obj.skipAnimation) {
-          toValue.current = toValue;
-          toValue.lastTimestamp = 0;
-          return true;
-        } else {
-          const _Math = Math;
-          const _Math2 = Math;
-          toValue.lastTimestamp = lastTimestamp;
-          const result = Math.min(Math.max(lastTimestamp - toValue.lastTimestamp, 0), 64) / 1000;
-          const diff = toValue - toValue.current;
-          ({ zeta, omega0 } = toValue);
-          if (zeta < 1) {
-            const obj2 = { zeta, v0: tmp5, x0: diff, omega0, omega1: tmp7, t: result };
-            let result1 = closure_0(1720).underDampedSpringCalculations(toValue, obj2);
-            const obj3 = closure_0(1720);
-          } else {
-            obj = closure_0(1720);
-            const obj4 = { v0: tmp5, x0: diff, omega0, t: result };
-            result1 = obj.criticallyDampedSpringCalculations(toValue, obj4);
-          }
-          ({ position: toValue.current, velocity: toValue.velocity } = result1);
-          const result2 = closure_0(1720).isAnimationTerminatingCalculation(toValue, tmp2);
-          ({ isOvershooting, isVelocity } = result2);
-          if (!isOvershooting) {
-            if (isVelocity) {
-              isVelocity = result2.isDisplacement;
-            }
-            isOvershooting = isVelocity;
-          }
-          let num5 = tmp2.useDuration || !isOvershooting;
-          if (!num5) {
-            toValue.velocity = 0;
-            toValue.current = toValue;
-            toValue.lastTimestamp = 0;
-            num5 = 0;
-          }
-          return !num5;
         }
       },
-      onStart(toValue, current, arg2, lastTimestamp) {
-        toValue.current = current;
-        toValue.startValue = current;
-        let mass = obj.mass;
-        lastTimestamp = undefined;
-        if (lastTimestamp != null) {
-          lastTimestamp = lastTimestamp.lastTimestamp;
-        }
-        if (lastTimestamp) {
-          let startTimestamp;
-          if (lastTimestamp != null) {
-            startTimestamp = lastTimestamp.startTimestamp;
-          }
-          lastTimestamp = startTimestamp;
-        }
-        if (lastTimestamp) {
-          toValue = undefined;
-          if (lastTimestamp != null) {
-            toValue = lastTimestamp.toValue;
-          }
-          lastTimestamp = toValue === toValue.toValue;
-        }
-        if (lastTimestamp) {
-          let duration1;
-          if (lastTimestamp != null) {
-            duration1 = lastTimestamp.duration;
-          }
-          lastTimestamp = duration1 === toValue.duration;
-        }
-        if (lastTimestamp) {
-          let dampingRatio;
-          if (lastTimestamp != null) {
-            dampingRatio = lastTimestamp.dampingRatio;
-          }
-          lastTimestamp = dampingRatio === toValue.dampingRatio;
-        }
-        const duration = tmp.duration;
-        if (lastTimestamp) {
-          let startValue;
-          if (lastTimestamp != null) {
-            startValue = lastTimestamp.startValue;
-          }
-          let diff = startValue;
-        } else {
-          const _Number = Number;
-          diff = Number(toValue.toValue) - current;
-        }
-        if (lastTimestamp) {
-          if (lastTimestamp) {
-            let velocity;
-            if (!tmp11) {
-              velocity = lastTimestamp.velocity;
-            }
-            let num = velocity;
-          } else {
-            let velocity1;
-            if (!tmp11) {
-              velocity1 = lastTimestamp.velocity;
-            }
-            num = velocity1 + tmp.velocity;
-          }
-          if (!num) {
-            num = 0;
-          }
-          let tmp10 = num;
-        } else {
-          tmp10 = tmp.velocity || 0;
-        }
-        toValue.velocity = tmp10;
-        const NumberResult = Number(toValue.toValue);
-        let tmp15 = NumberResult > current;
-        if (tmp15) {
-          tmp15 = toValue.velocity < 0;
-        }
-        if (!tmp15) {
-          let tmp16 = NumberResult < current;
-          if (tmp16) {
-            tmp16 = toValue.velocity > 0;
-          }
-          tmp15 = tmp16;
-        }
-        if (tmp15) {
-          toValue.velocity = 0;
-        }
-        if (lastTimestamp) {
-          let num7;
-          if (lastTimestamp != null) {
-            num7 = lastTimestamp.zeta;
-          }
-          if (!num7) {
-            num7 = 0;
-          }
-          toValue.zeta = num7;
-          let num8;
-          if (lastTimestamp != null) {
-            num8 = lastTimestamp.omega0;
-          }
-          if (!num8) {
-            num8 = 0;
-          }
-          toValue.omega0 = num8;
-          let num9;
-          if (lastTimestamp != null) {
-            num9 = lastTimestamp.omega1;
-          }
-          if (!num9) {
-            num9 = 0;
-          }
-          toValue.omega1 = num9;
-        } else {
-          if (tmp.useDuration) {
-            let diff1 = duration;
-            if (lastTimestamp) {
-              let num5;
-              if (lastTimestamp != null) {
-                num5 = lastTimestamp.lastTimestamp;
-              }
-              if (!num5) {
-                num5 = 0;
-              }
-              let num6;
-              if (lastTimestamp != null) {
-                num6 = lastTimestamp.startTimestamp;
-              }
-              if (!num6) {
-                num6 = 0;
-              }
-              diff1 = duration - (num5 - num6);
-            }
-            tmp.duration = diff1;
-            obj = closure_0(1720);
-            mass = obj.calculateNewMassToMatchDuration(diff, tmp, toValue.velocity);
-          }
-          const obj2 = closure_0(1720);
-          ({ zeta: toValue.zeta, omega0: toValue.omega0, omega1: toValue.omega1 } = closure_0(1720).initialCalculations(mass, tmp));
-          if (undefined !== tmp.clamp) {
-            toValue.zeta = closure_0(1720).scaleZetaToMatchClamps(toValue, tmp.clamp);
-            const obj3 = closure_0(1720);
-          }
-          const initialCalculationsResult = closure_0(1720).initialCalculations(mass, tmp);
-        }
-        let lastTimestamp1;
-        if (lastTimestamp != null) {
-          lastTimestamp1 = lastTimestamp.lastTimestamp;
-        }
-        if (!lastTimestamp1) {
-          lastTimestamp1 = arg2;
-        }
-        toValue.lastTimestamp = lastTimestamp1;
-        if (lastTimestamp) {
-          let startTimestamp1;
-          if (lastTimestamp != null) {
-            startTimestamp1 = lastTimestamp.startTimestamp;
-          }
-          lastTimestamp = startTimestamp1;
-        }
-        if (!lastTimestamp) {
-          lastTimestamp = arg2;
-        }
-        toValue.startTimestamp = lastTimestamp;
-      },
-      toValue,
-      velocity: null,
-      current: null,
-      startValue: 0,
-      callback: null,
-      lastTimestamp: 0,
-      startTimestamp: 0,
-      zeta: 0,
-      omega0: 0,
-      omega1: 0,
-      reduceMotion: null
+      callback,
+      velocity: num,
+      initialVelocity: 0,
+      current: "duration",
+      lastTimestamp: null,
+      startTimestamp: "film",
+      reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
-    let num = obj.velocity;
-    if (!num) {
+    num = obj.velocity;
+    const tmp4 = userConfig;
+    const tmp5 = callback;
+    if (num == null) {
       num = 0;
     }
-    obj3.velocity = num;
-    obj3.current = toValue;
-    obj3.callback = callback;
-    obj3.reduceMotion = _mod1677.getReduceMotionForAnimation(obj.reduceMotion);
+    tmp4Result = tmp4(tmp5[1]);
     return obj3;
   };
-  let obj = require("module_1677");
-  fn.__closure = { userConfig, checkIfConfigIsValid: require("module_1720").checkIfConfigIsValid, underDampedSpringCalculations: require("module_1720").underDampedSpringCalculations, criticallyDampedSpringCalculations: require("module_1720").criticallyDampedSpringCalculations, isAnimationTerminatingCalculation: require("module_1720").isAnimationTerminatingCalculation, calculateNewMassToMatchDuration: require("module_1720").calculateNewMassToMatchDuration, initialCalculations: require("module_1720").initialCalculations, scaleZetaToMatchClamps: require("module_1720").scaleZetaToMatchClamps, toValue, callback, getReduceMotionForAnimation: require("module_1677").getReduceMotionForAnimation };
-  fn.__workletHash = 3229069592929;
+  let obj2 = { userConfig, isValidRubberBandConfig: require("VELOCITY_EPS").isValidRubberBandConfig, rubberBandDecay: require("rubberBandDecay").rubberBandDecay, rigidDecay: require("rigidDecay").rigidDecay, validateConfig, callback, getReduceMotionForAnimation: require("module_1684").getReduceMotionForAnimation };
+  fn.__closure = obj2;
+  fn.__workletHash = 17099614658252;
   fn.__initData = __initData;
-  return obj.defineAnimation(toValue, fn);
+  return obj.defineAnimation(0, fn);
 };
-fn.__closure = { defineAnimation: fn(1677).defineAnimation, checkIfConfigIsValid: fn(1720).checkIfConfigIsValid, underDampedSpringCalculations: fn(1720).underDampedSpringCalculations, criticallyDampedSpringCalculations: fn(1720).criticallyDampedSpringCalculations, isAnimationTerminatingCalculation: fn(1720).isAnimationTerminatingCalculation, calculateNewMassToMatchDuration: fn(1720).calculateNewMassToMatchDuration, initialCalculations: fn(1720).initialCalculations, scaleZetaToMatchClamps: fn(1720).scaleZetaToMatchClamps, getReduceMotionForAnimation: fn(1677).getReduceMotionForAnimation };
-fn.__workletHash = 15976080506910;
-fn.__initData = { code: "function pnpm_springTs1(toValue,userConfig,callback){const{defineAnimation,checkIfConfigIsValid,underDampedSpringCalculations,criticallyDampedSpringCalculations,isAnimationTerminatingCalculation,calculateNewMassToMatchDuration,initialCalculations,scaleZetaToMatchClamps,getReduceMotionForAnimation}=this.__closure;return defineAnimation(toValue,function(){'worklet';const defaultConfig={damping:10,mass:1,stiffness:100,overshootClamping:false,restDisplacementThreshold:0.01,restSpeedThreshold:2,velocity:0,duration:2000,dampingRatio:0.5,reduceMotion:undefined,clamp:undefined};const config={...defaultConfig,...userConfig,useDuration:!!(userConfig!==null&&userConfig!==void 0&&userConfig.duration||userConfig!==null&&userConfig!==void 0&&userConfig.dampingRatio),skipAnimation:false};config.skipAnimation=!checkIfConfigIsValid(config);if(config.duration===0){config.skipAnimation=true;}function springOnFrame(animation,now){const{toValue:toValue,startTimestamp:startTimestamp,current:current}=animation;const timeFromStart=now-startTimestamp;if(config.useDuration&&timeFromStart>=config.duration){animation.current=toValue;animation.lastTimestamp=0;return true;}if(config.skipAnimation){animation.current=toValue;animation.lastTimestamp=0;return true;}const{lastTimestamp:lastTimestamp,velocity:velocity}=animation;const deltaTime=Math.min(Math.max(now-lastTimestamp,0),64);animation.lastTimestamp=now;const t=deltaTime/1000;const v0=-velocity;const x0=toValue-current;const{zeta:zeta,omega0:omega0,omega1:omega1}=animation;const{position:newPosition,velocity:newVelocity}=zeta<1?underDampedSpringCalculations(animation,{zeta:zeta,v0:v0,x0:x0,omega0:omega0,omega1:omega1,t:t}):criticallyDampedSpringCalculations(animation,{v0:v0,x0:x0,omega0:omega0,t:t});animation.current=newPosition;animation.velocity=newVelocity;const{isOvershooting:isOvershooting,isVelocity:isVelocity,isDisplacement:isDisplacement}=isAnimationTerminatingCalculation(animation,config);const springIsNotInMove=isOvershooting||isVelocity&&isDisplacement;if(!config.useDuration&&springIsNotInMove){animation.velocity=0;animation.current=toValue;animation.lastTimestamp=0;return true;}return false;}function isTriggeredTwice(previousAnimation,animation){return(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.toValue)===animation.toValue&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.duration)===animation.duration&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.dampingRatio)===animation.dampingRatio;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.startValue=value;let mass=config.mass;const triggeredTwice=isTriggeredTwice(previousAnimation,animation);const duration=config.duration;const x0=triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startValue:Number(animation.toValue)-value;if(previousAnimation){animation.velocity=(triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity:(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity)+config.velocity)||0;}else{animation.velocity=config.velocity||0;}const toValueNum=Number(animation.toValue);if(toValueNum>value&&animation.velocity<0||toValueNum<value&&animation.velocity>0){animation.velocity=0;}if(triggeredTwice){animation.zeta=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.zeta)||0;animation.omega0=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega0)||0;animation.omega1=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega1)||0;}else{if(config.useDuration){const actualDuration=triggeredTwice?duration-(((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||0)-((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||0)):duration;config.duration=actualDuration;mass=calculateNewMassToMatchDuration(x0,config,animation.velocity);}const{zeta:zeta,omega0:omega0,omega1:omega1}=initialCalculations(mass,config);animation.zeta=zeta;animation.omega0=omega0;animation.omega1=omega1;if(config.clamp!==undefined){animation.zeta=scaleZetaToMatchClamps(animation,config.clamp);}}animation.lastTimestamp=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||now;animation.startTimestamp=triggeredTwice?(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||now:now;}return{onFrame:springOnFrame,onStart:onStart,toValue:toValue,velocity:config.velocity||0,current:toValue,startValue:0,callback:callback,lastTimestamp:0,startTimestamp:0,zeta:0,omega0:0,omega1:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};});}" };
+let obj = { defineAnimation: require("module_1684").defineAnimation, isValidRubberBandConfig: require("VELOCITY_EPS").isValidRubberBandConfig, rubberBandDecay: require("rubberBandDecay").rubberBandDecay, rigidDecay: require("rigidDecay").rigidDecay, validateConfig, getReduceMotionForAnimation: require("module_1684").getReduceMotionForAnimation };
+fn.__closure = obj;
+fn.__workletHash = 3913201228611;
+fn.__initData = { code: "function pnpm_decayTs2(userConfig,callback){const{defineAnimation,isValidRubberBandConfig,rubberBandDecay,rigidDecay,validateConfig,getReduceMotionForAnimation}=this.__closure;return defineAnimation(0,function(){'worklet';var _config$velocity;const config={deceleration:0.998,velocityFactor:1,velocity:0,rubberBandFactor:0.6};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}const decay=isValidRubberBandConfig(config)?function(animation,now){return rubberBandDecay(animation,now,config);}:function(animation,now){return rigidDecay(animation,now,config);};function onStart(animation,value,now){const initialVelocity=config.velocity;animation.current=value;animation.lastTimestamp=now;animation.startTimestamp=now;animation.initialVelocity=initialVelocity;animation.velocity=initialVelocity;validateConfig(config);if(animation.reduceMotion&&config.clamp){if(value<config.clamp[0]){animation.current=config.clamp[0];}else if(value>config.clamp[1]){animation.current=config.clamp[1];}}}return{onFrame:decay,onStart:onStart,callback:callback,velocity:(_config$velocity=config.velocity)!==null&&_config$velocity!==void 0?_config$velocity:0,initialVelocity:0,current:undefined,lastTimestamp:0,startTimestamp:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};});}" };
 
-export const withSpring = fn;
+export const withDecay = fn;

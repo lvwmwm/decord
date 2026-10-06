@@ -1,47 +1,313 @@
-// Module ID: 10933
-// Function ID: 10934
+// Module ID: 10137
+// Function ID: 10138
 // Name: MediaKeyboardActionSheet
-// Dependencies: [19, 1608, 1074, 21, 4524, 1115, 10934, 10407, 10936, 4756, 4757, 1241, 5235, 10938, 5337, 7427, 1609, 10939, 2]
-// Exports: default
+// Dependencies: [19, 1615, 1086, 21, 558, 576, 4570, 1127, 10138, 10140, 10142, 4802, 4803, 1253, 5297, 5402, 10144, 1616, 10145, 6572, 2]
 
-// Module 10933 (MediaKeyboardActionSheet)
-import util from "util" /* 1115 */;
-import ImageIcon from "ImageIcon" /* 5337 */;
-import AttachmentIcon from "AttachmentIcon" /* 10407 */;
-import PollsIcon from "PollsIcon" /* 10934 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10936 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10938 */;
-import noop from "module_19" /* 19 */;
+// Module 10137 (MediaKeyboardActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1615 */;
+import ImageIcon from "ImageIcon" /* 5402 */;
+import PollsIcon from "PollsIcon" /* 10138 */;
+import AttachmentIcon from "AttachmentIcon" /* 10140 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10142 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10144 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = fn(1608).MediaPickerActionSheetEngagedActions;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardActionSheet.tsx");
+let BottomSheet;
 
-export default function MediaKeyboardActionSheet(onAttachPress) {
+const constants = MediaKeyboardConstants.MediaPickerActionSheetEngagedActions;
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBack) => {
+  let allowCamera;
+  let channel;
+  let constants2;
+  let disableWhenReachedLimit;
+  let draftType;
+  let extensions;
+  let first;
+  let includedUploadIds;
+  let onAttachPress;
+  let onClose;
+  let onLongPressItem;
+  let onManageLimited;
+  let onPressCamera;
+  let onPressItem;
+  let onViewAll;
+  let sharedValue;
+  let tmp11;
+  let tmp8;
+  let tmp9;
+  let uploadLimit;
+  let obj = onClose(sharedValue[5]);
+  const cResult = obj.c(41);
+  ({ channel, draftType, uploadLimit, disableWhenReachedLimit, includedUploadIds, extensions, allowCamera, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, onClose } = onBack);
+  onBack = onBack.onBack;
+  let obj2 = onClose(sharedValue[6]);
+  sharedValue = obj2.useSharedValue(-1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp2(tmp3[7]).intl;
+    const stringResult = intl.string(onClose(sharedValue[7]).t.RgIi2B);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj3 = {
+      text: first,
+      IconComponent: onClose(sharedValue[8]).PollsIcon,
+      onPress() {
+
+        },
+      disabled: true
+    };
+    const intl2 = tmp2(tmp3[7]).intl;
+    const stringResult1 = intl2.string(onClose(sharedValue[7]).t["8Hvr3+"]);
+    cResult[1] = obj3;
+    cResult[2] = stringResult1;
+    tmp9 = stringResult1;
+    tmp8 = obj3;
+  } else {
+    tmp8 = cResult[1];
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] !== onAttachPress) {
+    const items = [tmp8, ];
+    items[1] = { text: tmp9, IconComponent: onClose(sharedValue[9]).AttachmentIcon, onPress: onAttachPress, disabled: false };
+    cResult[3] = onAttachPress;
+    cResult[4] = items;
+    tmp11 = items;
+    const obj4 = { text: tmp9, IconComponent: onClose(sharedValue[9]).AttachmentIcon, onPress: onAttachPress, disabled: false };
+  } else {
+    tmp11 = cResult[4];
+  }
+  if (cResult[5] === sharedValue) {
+    let tmp15;
+    let tmp18;
+    let tmp19;
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
+        constructor() {
+          const obj = onClose(sharedValue[11]);
+          const result = obj.triggerHapticFeedback(onBack(sharedValue[12]).IMPACT_LIGHT);
+          const obj2 = onBack(sharedValue[13]);
+          const obj3 = { action: constants.FULLY_EXPANDED };
+          obj2.track(constants2.MEDIA_PICKER_ACTION_SHEET_ENGAGED, obj3);
+        }
+      }
+      cResult[8] = H;
+    } else {
+      class H {
+        constructor() {
+          const obj = onClose(sharedValue[11]);
+          const result = obj.triggerHapticFeedback(onBack(sharedValue[12]).IMPACT_LIGHT);
+          const obj2 = onBack(sharedValue[13]);
+          const obj3 = { action: constants.FULLY_EXPANDED };
+          obj2.track(constants2.MEDIA_PICKER_ACTION_SHEET_ENGAGED, obj3);
+        }
+      }
+    }
+    if (cResult[9] !== onClose) {
+      class B {
+        constructor() {
+          if (onClose != null) {
+            tmp();
+          }
+        }
+      }
+      cResult[9] = onClose;
+      cResult[10] = B;
+    } else {
+      class B {
+        constructor() {
+          if (onClose != null) {
+            tmp();
+          }
+        }
+      }
+    }
+    B = tmp14;
+    if (cResult[11] !== tmp14) {
+      class G {
+        constructor() {
+          return () => {
+            let tmp;
+            if (closure_1_3 != null) {
+              tmp = closure_1_3();
+            }
+            return tmp;
+          };
+        }
+      }
+      cResult[11] = tmp14;
+      cResult[12] = G;
+      tmp15 = G;
+    } else {
+      class G {
+        constructor() {
+          return () => {
+            let tmp;
+            if (closure_1_3 != null) {
+              tmp = closure_1_3();
+            }
+            return tmp;
+          };
+        }
+      }
+    }
+    onBack(sharedValue[14])(tmp15);
+    const _Symbol2 = Symbol;
+    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+      class U {
+        constructor() {
+
+        }
+      }
+      cResult[13] = U;
+      tmp18 = U;
+    } else {
+      class U {
+        constructor() {
+
+        }
+      }
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class U {
+        constructor() {
+
+        }
+      }
+      const stringResult2 = obj5.string(onClose(sharedValue[7]).t.Zmm6dN);
+      cResult[14] = stringResult2;
+      tmp19 = stringResult2;
+    } else {
+      class U {
+        constructor() {
+
+        }
+      }
+    }
+    if (cResult[15] !== onViewAll) {
+      class U {
+        constructor() {
+
+        }
+      }
+      tmp22[0] = tmp19;
+      tmp22[1] = onClose(sharedValue[15]).ImageIcon;
+      tmp22[2] = onViewAll;
+      cResult[15] = onViewAll;
+      cResult[16] = tmp22;
+    } else {
+      class U {
+        constructor() {
+
+        }
+      }
+    }
+    if (cResult[17] === tmp11) {
+      class U {
+        constructor() {
+
+        }
+      }
+      const _Symbol4 = Symbol;
+      if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+        class U {
+          constructor() {
+
+          }
+        }
+        cResult[20] = obj7.isMetaQuest();
+        const isMetaQuestResult = obj7.isMetaQuest();
+      } else {
+        class U {
+          constructor() {
+
+          }
+        }
+      }
+      if (cResult[21] === allowCamera) {
+        class U {
+          constructor() {
+
+          }
+        }
+      }
+      cResult[21] = allowCamera;
+      cResult[22] = channel;
+      cResult[23] = disableWhenReachedLimit;
+      cResult[24] = draftType;
+      cResult[25] = extensions;
+      cResult[26] = includedUploadIds;
+      cResult[27] = onAttachPress;
+      cResult[28] = onLongPressItem;
+      cResult[29] = onManageLimited;
+      cResult[30] = onPressCamera;
+      cResult[31] = onPressItem;
+      cResult[32] = onViewAll;
+      cResult[33] = uploadLimit;
+      cResult[34] = jsx(onBack(sharedValue[18]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit });
+      const tmp34 = jsx(onBack(sharedValue[18]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit });
+    }
+    const items1 = [tmp21];
+    onBack(sharedValue[16]);
+    HermesBuiltin.arraySpread(items1, tmp11, 1);
+    const tmp29 = <tmp16Result canPostPolls={false} onHeightChange={tmp18} uploadDisabled={false} overflowButtons={items1} />;
+    cResult[17] = tmp11;
+    cResult[18] = tmp21;
+    cResult[19] = tmp29;
+  }
+  const fn = function k() {
+    return jsx(MediaKeyboardBottomSheetHeaderSimpleDefault, { animatedIndex: sharedValue, onPress: onBack });
+  };
+  cResult[5] = sharedValue;
+  cResult[6] = onBack;
+  cResult[7] = fn;
+}) : ((onAttachPress) => {
+  let allowCamera;
+  let channel;
+  let disableWhenReachedLimit;
+  let draftType;
+  let extensions;
+  let includedUploadIds;
+  let obj3;
+  let onLongPressItem;
+  let onManageLimited;
+  let onPressCamera;
+  let onPressItem;
+  let uploadLimit;
   onAttachPress = onAttachPress.onAttachPress;
   const onViewAll = onAttachPress.onViewAll;
   const onClose = onAttachPress.onClose;
   const onBack = onAttachPress.onBack;
   ({ channel, draftType, uploadLimit, disableWhenReachedLimit, includedUploadIds, extensions, allowCamera, onPressCamera, onPressItem, onLongPressItem, onManageLimited } = onAttachPress);
-  const sharedValue = onAttachPress(onClose[4]).useSharedValue(-1);
+  let obj = onAttachPress(onClose[6]);
+  const sharedValue = obj.useSharedValue(-1);
   let items = [onAttachPress];
   const memo = onBack.useMemo(() => {
-    const obj = { text: null, IconComponent: null, onPress: null, disabled: true };
-    const intl = util.intl;
-    obj.text = intl.string(util.t.RgIi2B);
-    obj.IconComponent = PollsIcon.PollsIcon;
-    obj.onPress = function onPress() {
+    let intl;
+    let intl2;
+    const obj = {
+      text: intl.string(intl3.t.RgIi2B),
+      IconComponent: PollsIcon.PollsIcon,
+      onPress() {
 
+      },
+      disabled: true
     };
+    intl = intl3.intl;
     const items = [obj, ];
-    const obj2 = { text: null, IconComponent: null, onPress: null, disabled: false };
-    const intl2 = util.intl;
-    obj2.text = intl2.string(util.t["8Hvr3+"]);
-    obj2.IconComponent = AttachmentIcon.AttachmentIcon;
-    obj2.onPress = onAttachPress;
+    const obj2 = { text: intl2.string(intl3.t["8Hvr3+"]), IconComponent: AttachmentIcon.AttachmentIcon, onPress: onAttachPress, disabled: false };
+    intl2 = intl3.intl;
     items[1] = obj2;
     return items;
   }, items);
@@ -49,16 +315,18 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
   const callback = onBack.useCallback(() => jsx(MediaKeyboardBottomSheetHeaderSimpleDefault, { animatedIndex: sharedValue, onPress: onBack }), items1);
   const items2 = [onClose];
   const callback1 = onBack.useCallback(() => {
-    const result = onAttachPress(onClose[9]).triggerHapticFeedback(onViewAll(onClose[10]).IMPACT_LIGHT);
-    const obj = onAttachPress(onClose[9]);
-    onViewAll(onClose[11]).track(memo.MEDIA_PICKER_ACTION_SHEET_ENGAGED, { action: sharedValue.FULLY_EXPANDED });
+    const obj = onAttachPress(onClose[11]);
+    const result = obj.triggerHapticFeedback(onViewAll(onClose[12]).IMPACT_LIGHT);
+    const obj2 = onViewAll(onClose[13]);
+    const obj3 = { action: sharedValue.FULLY_EXPANDED };
+    obj2.track(memo.MEDIA_PICKER_ACTION_SHEET_ENGAGED, obj3);
   }, []);
   const callback2 = onBack.useCallback(() => {
     if (onClose != null) {
       tmp();
     }
   }, items2);
-  onViewAll(onClose[12])(() => () => {
+  onViewAll(onClose[14])(() => () => {
     let tmp;
     if (callback2 != null) {
       tmp = callback2();
@@ -67,37 +335,20 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
   });
   const items3 = [onViewAll, memo];
   const memo1 = onBack.useMemo(() => {
-    const obj = {
-      canPostPolls: false,
-      onHeightChange() {
-
-      },
-      uploadDisabled: false,
-      overflowButtons: null
-    };
-    const obj2 = { text: null, IconComponent: null, onPress: null, disabled: false };
-    const intl = util.intl;
-    obj2.text = intl.string(util.t.Zmm6dN);
-    obj2.IconComponent = ImageIcon.ImageIcon;
-    obj2.onPress = onViewAll;
+    let intl;
+    const obj2 = { text: intl.string(intl3.t.Zmm6dN), IconComponent: ImageIcon.ImageIcon, onPress: onViewAll, disabled: false };
+    MediaKeyboardBottomSheetActionsDefault;
+    intl = intl3.intl;
     const items = [obj2, ...memo];
-    obj.overflowButtons = items;
-    return jsx(MediaKeyboardBottomSheetActionsDefault, {
-      canPostPolls: false,
-      onHeightChange() {
+    return <tmp canPostPolls={false} onHeightChange={function onHeightChange() {
 
-      },
-      uploadDisabled: false,
-      overflowButtons: null
-    });
+    }} uploadDisabled={false} overflowButtons={items} />;
   }, items3);
-  let obj2 = { handleComponent: callback, scrollable: true, startExpanded: null, onExpand: null, onDismiss: null, animatedIndex: null, footer: null, children: null };
-  let obj = onAttachPress(onClose[4]);
-  obj2.startExpanded = onAttachPress(onClose[16]).isMetaQuest();
-  obj2.onExpand = callback1;
-  obj2.onDismiss = callback2;
-  obj2.animatedIndex = sharedValue;
-  obj2.footer = memo1;
-  obj2.children = callback2(onViewAll(onClose[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit });
-  return callback2(onAttachPress(onClose[15]).BottomSheet, obj2);
-};
+  let obj2 = { handleComponent: callback, scrollable: true, startExpanded: obj3.isMetaQuest(), onExpand: callback1, onDismiss: callback2, animatedIndex: sharedValue, footer: memo1, children: callback2(onViewAll(onClose[18]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit }) };
+  BottomSheet = onAttachPress(onClose[19]).BottomSheet;
+  obj3 = onAttachPress(onClose[17]);
+  return callback2(BottomSheet, obj2);
+});
+let result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardActionSheet.tsx");
+
+export default tmp2;

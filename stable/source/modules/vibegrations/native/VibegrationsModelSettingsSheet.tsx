@@ -1,66 +1,295 @@
-// Module ID: 17065
-// Function ID: 17066
+// Module ID: 16266
+// Function ID: 16267
 // Name: VibegrationsModelSettingsSheet
-// Dependencies: [19, 17, 13390, 21, 504, 7474, 7426, 1115, 3710, 5216, 576, 16948, 4784, 2]
-// Exports: default
+// Dependencies: [19, 17, 12644, 21, 558, 576, 504, 16246, 1127, 3718, 4833, 5280, 588, 6571, 6624, 2]
 
-// Module 17065 (VibegrationsModelSettingsSheet)
-import nativeDefault from "native" /* 576 */;
-import _modDef3710 from "module_3710" /* 3710 */;
-import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16948 */;
-import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13390 */;
+// Module 16266 (VibegrationsModelSettingsSheet)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
+import ActionSheet2 from "ActionSheet" /* 6624 */;
+import VibegrationsConnectionStore2 from "VibegrationsConnectionStore" /* 12644 */;
+import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16246 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const sendModelSettings = fn(13390).sendModelSettings;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsModelSettingsSheet.tsx");
+const VibegrationsConnectionStore = VibegrationsConnectionStore2;
+let projectId;
 
-export default function VibegrationsModelSettingsSheet(projectId) {
+let metroImportAll;
+let metroImportDefault;
+const View = react_native.View;
+const sendModelSettings = VibegrationsConnectionStore2.sendModelSettings;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  let choices;
+  let first;
+  let tiers;
+  let tmp11;
+  let tmp12;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  const obj = projectId(576);
+  const cResult = obj.c(27);
+  projectId = projectId.projectId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [VibegrationsConnectionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== projectId) {
+    const fn = function c() {
+      return VibegrationsConnectionStore.getModelSettings(projectId);
+    };
+    const items1 = [projectId];
+    cResult[1] = projectId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = projectId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [VibegrationsConnectionStore];
+    cResult[4] = items2;
+    tmp9 = items2;
+  } else {
+    tmp9 = cResult[4];
+  }
+  if (cResult[5] !== projectId) {
+    const fn2 = function v() {
+      return VibegrationsConnectionStore.getConnState(projectId);
+    };
+    const items3 = [projectId];
+    cResult[5] = projectId;
+    cResult[6] = fn2;
+    cResult[7] = items3;
+    tmp12 = items3;
+    tmp11 = fn2;
+  } else {
+    tmp11 = cResult[6];
+    tmp12 = cResult[7];
+  }
+  const tmpResult3 = projectId(504);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp11, tmp12);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    const items4 = [VibegrationsConnectionStore];
+    cResult[8] = items4;
+    tmp14 = items4;
+  } else {
+    tmp14 = cResult[8];
+  }
+  if (cResult[9] !== projectId) {
+    class I {
+      constructor() {
+        return VibegrationsConnectionStore.isChatStopped(projectId);
+      }
+    }
+    const items5 = [projectId];
+    cResult[9] = projectId;
+    cResult[10] = I;
+    cResult[11] = items5;
+    tmp17 = items5;
+    tmp16 = I;
+  } else {
+    class I {
+      constructor() {
+        return VibegrationsConnectionStore.isChatStopped(projectId);
+      }
+    }
+    tmp17 = cResult[11];
+  }
+  const tmpResult4 = projectId(504);
+  const tmp18 = "open" !== stateFromStores1 || tmpResult4.useStateFromStores(tmp14, tmp16, tmp17);
+  if (cResult[12] !== projectId) {
+    class T {
+      constructor(arg0) {
+        try {
+          sendModelSettings(projectId, arg0);
+        } catch (err) {
+        }
+      }
+    }
+    cResult[12] = projectId;
+    cResult[13] = T;
+  } else {
+    class T {
+      constructor(arg0) {
+        try {
+          sendModelSettings(projectId, arg0);
+        } catch (err) {
+        }
+      }
+    }
+  }
+  if (stateFromStores != null) {
+    class T {
+      constructor(arg0) {
+        try {
+          sendModelSettings(projectId, arg0);
+        } catch (err) {
+        }
+      }
+    }
+  }
+  if (null == undefined) {
+    class T {
+      constructor(arg0) {
+        try {
+          sendModelSettings(projectId, arg0);
+        } catch (err) {
+        }
+      }
+    }
+  } else {
+    class T {
+      constructor(arg0) {
+        try {
+          sendModelSettings(projectId, arg0);
+        } catch (err) {
+        }
+      }
+    }
+    ({ tiers, choices } = stateFromStores);
+    if (cResult[14] === choices) {
+      class T {
+        constructor(arg0) {
+          try {
+            sendModelSettings(projectId, arg0);
+          } catch (err) {
+          }
+        }
+      }
+    }
+    const obj2 = { settings: tmp24, tiers, choices, disabled: tmp18, onChange: tmp19 };
+    cResult[14] = choices;
+    cResult[15] = tmp18;
+    cResult[16] = tmp19;
+    cResult[17] = tmp24;
+    cResult[18] = tiers;
+    cResult[19] = closure_7(VibegrationsEffortPickerDefault, obj2);
+    const tmp23 = closure_7(VibegrationsEffortPickerDefault, obj2);
+  }
+}) : ((projectId) => {
+  let choices;
+  let items7;
+  let tierSettings;
+  let tiers;
   projectId = projectId.projectId;
   const items = [VibegrationsConnectionStore];
   const items1 = [projectId];
-  const stateFromStores = projectId(504).useStateFromStores(items, () => VibegrationsConnectionStore.getModelSettings(projectId), items1);
   const obj = projectId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => VibegrationsConnectionStore.getModelSettings(projectId), items1);
   const items2 = [VibegrationsConnectionStore];
   const items3 = [projectId];
-  const stateFromStores1 = projectId(504).useStateFromStores(items2, () => VibegrationsConnectionStore.getConnState(projectId), items3);
   const obj2 = projectId(504);
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => VibegrationsConnectionStore.getConnState(projectId), items3);
   const items4 = [VibegrationsConnectionStore];
   const items5 = [projectId];
-  const tmp5 = "open" !== stateFromStores1 || projectId(504).useStateFromStores(items4, () => VibegrationsConnectionStore.isChatStopped(projectId), items5);
-  [][0] = projectId;
-  if (null == stateFromStores) {
+  const obj3 = projectId(504);
+  const tmp5 = "open" !== stateFromStores1 || obj3.useStateFromStores(items4, () => VibegrationsConnectionStore.isChatStopped(projectId), items5);
+  const items6 = [projectId];
+  let tierSettings1;
+  const callback = react.useCallback((arg0) => {
+    try {
+      sendModelSettings(projectId, arg0);
+    } catch (err) {
+    }
+  }, items6);
+  if (stateFromStores != null) {
+    tierSettings1 = stateFromStores.tierSettings;
+  }
+  if (null == tierSettings1) {
     return null;
   } else {
-    ({ settings, choices } = stateFromStores);
-    const obj4 = { header: null, children: null };
-    const obj5 = { title: null };
-    const intl = tmp(1115).intl;
-    obj5.title = intl.string(_modDef3710["2NWMqY"]);
-    obj4.header = closure_7(tmp(7426).BottomSheetTitleHeader, obj5);
-    const obj6 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: null };
-    const obj7 = { settings, choices, disabled: tmp5, onChange: tmp6 };
-    const items6 = [closure_7(VibegrationsEffortPickerDefault, obj7), ];
-    const intl2 = tmp(1115).intl;
-    const string = intl2.string;
-    const tmp12 = _modDef3710;
+    let stringResult;
+    ({ tierSettings, tiers, choices } = stateFromStores);
+    const obj4 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items7 };
+    const Stack = tmp(5280).Stack;
+    const obj5 = { settings: tierSettings, tiers, choices, disabled: tmp5, onChange: callback };
+    items7 = [closure_7(VibegrationsEffortPickerDefault, obj5), ];
+    const Text = tmp(4833).Text;
+    const intl = tmp(1127).intl;
+    const string = intl.string;
+    const tmp12 = _modDef3718;
+    const tmp11 = closure_7;
+    const tmp9 = closure_8;
     if (tmp5) {
-      let stringResult = string(tmp12.t5mTfU);
+      stringResult = string(tmp12.t5mTfU);
     } else {
       stringResult = string(tmp12.ICU5aW);
     }
-    const obj8 = { children: null };
-    const obj9 = { variant: "text-xs/normal", color: "text-muted", children: stringResult };
-    items6[1] = closure_7(tmp(4784).Text, obj9);
-    obj6.children = items6;
-    obj8.children = closure_8(tmp(5216).Stack, obj6);
-    obj4.children = closure_7(View, obj8);
-    return closure_7(tmp(7474).ActionSheet, obj4);
+    const obj6 = { variant: "text-xs/normal", color: "text-muted", children: stringResult };
+    items7[1] = tmp11(Text, obj6);
+    return tmp9(Stack, obj4);
   }
-  const obj3 = projectId(504);
-};
+});
+let closure_9 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  let first;
+  let intl;
+  let obj4;
+  let obj5;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(3);
+  projectId = projectId.projectId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { title: intl.string(_modDef3718["2NWMqY"]) };
+    const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+    intl = tmp(1127).intl;
+    const tmp7 = metroImportDefault(BottomSheetTitleHeader, obj2);
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== projectId) {
+    const obj3 = { header: first, children: metroImportDefault(View, obj4) };
+    obj4 = { children: metroImportDefault(closure_9, obj5) };
+    obj5 = { projectId };
+    const ActionSheet = tmp(6624).ActionSheet;
+    const tmp12 = metroImportDefault(ActionSheet, obj3);
+    cResult[1] = projectId;
+    cResult[2] = tmp12;
+    tmp8 = tmp12;
+  } else {
+    tmp8 = cResult[2];
+  }
+  return tmp8;
+}) : ((projectId) => {
+  let BottomSheetTitleHeader;
+  let intl;
+  let obj2;
+  let obj3;
+  projectId = projectId.projectId;
+  const obj = { header: metroImportDefault(BottomSheetTitleHeader, obj2), children: metroImportDefault(View, obj3) };
+  const ActionSheet = ActionSheet2.ActionSheet;
+  obj2 = { title: intl.string(_modDef3718["2NWMqY"]) };
+  BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  intl = intl2.intl;
+  obj3 = { children: metroImportDefault(closure_9, { projectId }) };
+  return metroImportDefault(ActionSheet, obj);
+});
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsModelSettingsSheet.tsx");
+
+export default tmp4;
 export const VIBEGRATIONS_MODEL_SETTINGS_SHEET_KEY = "VibegrationsModelSettingsSheet";
+export const VibegrationsModelSettingsContent = tmp3;

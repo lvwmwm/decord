@@ -1,28 +1,50 @@
 // Module ID: 4373
 // Function ID: 4374
-// Dependencies: []
+// Dependencies: [4374, 4375, 4376, 4377, 4378]
 
 // Module 4373
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: null, locale: "uk" };
-    const obj3 = { conjunction: null, disjunction: null, unit: null };
-    const obj4 = { long: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" } };
-    obj3.conjunction = obj4;
-    const obj5 = { long: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" }, short: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" } };
-    obj3.disjunction = obj5;
-    const obj6 = { long: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" } };
-    obj3.unit = obj6;
-    obj2.data = obj3;
-    ListFormat.__addLocaleData(obj2);
-  }
+import formatDistance from "formatDistance" /* 4374 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 4375 */;
+import formatRelative from "formatRelative" /* 4376 */;
+import date_mod from "module_4377" /* 4377 */;
+import date_mod2 from "module_4378" /* 4378 */;
+
+let tmp11;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+if (!formatDistance) {
+  tmp3 = { default: formatDistance };
+  const obj = { default: formatDistance };
+} else {
+  tmp3 = formatDistance;
 }
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-if (!prop) {
-  prop = [];
+if (!buildFormatLongFn) {
+  tmp5 = { default: buildFormatLongFn };
+  const obj2 = { default: buildFormatLongFn };
+} else {
+  tmp5 = buildFormatLongFn;
 }
-globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: { conjunction: { long: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" }, short: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" } } }, locale: "uk" };
-prop.push(obj);
+if (!formatRelative) {
+  tmp7 = { default: formatRelative };
+  const obj3 = { default: formatRelative };
+} else {
+  tmp7 = formatRelative;
+}
+let date = date_mod2;
+if (!date) {
+  tmp9 = { default: date };
+  const obj4 = { default: date };
+} else {
+  tmp9 = date;
+}
+date = date_mod2;
+if (!date) {
+  tmp11 = { default: date };
+  const obj5 = { default: date };
+} else {
+  tmp11 = date;
+}
+
+export default { code: "zh-CN", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };

@@ -1,13 +1,13 @@
-// Module ID: 5663
-// Function ID: 5664
+// Module ID: 5727
+// Function ID: 5728
 // Name: StageChannelsConstants
-// Dependencies: [1074, 1115, 2108, 2]
+// Dependencies: [1086, 1127, 2114, 2]
 // Exports: getStagePublicInfoText
 
-// Module 5663 (StageChannelsConstants)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+// Module 5727 (StageChannelsConstants)
+import Constants from "Constants" /* 1086 */;
+import intl5 from "intl" /* 1127 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -29,14 +29,18 @@ export const STAGE_BOOSTING_SHEET_KEY = "stage-boosting";
 export const STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY = "stage-channel-audience-notice-shown";
 export const RequestToSpeakPermissionStates = { EVERYONE: 1, [1]: "EVERYONE", NO_ONE: 2, [2]: "NO_ONE", ROLES: 3, [3]: "ROLES" };
 export const getStagePublicInfoText = function getStagePublicInfoText() {
-  const intl = util.intl;
-  const items = [intl.string(util.t["9XlQ9W"]), , , ];
-  const intl2 = util.intl;
-  items[1] = intl2.string(util.t.lF0IbB);
-  const intl3 = util.intl;
-  const obj = { articleURL: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
-  items[2] = intl3.format(util.t.q2jZ6N, obj);
-  const intl4 = util.intl;
-  items[3] = intl4.string(util.t.xfb7ZU);
+  let obj2;
+  const intl = intl5.intl;
+  const items = [intl.string(intl5.t["9XlQ9W"]), , , ];
+  const intl2 = intl5.intl;
+  items[1] = intl2.string(intl5.t.lF0IbB);
+  const intl3 = intl5.intl;
+  const format = intl3.format;
+  const obj = { articleURL: obj2.getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
+  const q2jZ6N = intl5.t.q2jZ6N;
+  obj2 = HelpdeskUtilsDefault;
+  items[2] = format(q2jZ6N, obj);
+  const intl4 = intl5.intl;
+  items[3] = intl4.string(intl5.t.xfb7ZU);
   return items;
 };

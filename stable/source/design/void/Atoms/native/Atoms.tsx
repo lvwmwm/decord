@@ -1,17 +1,19 @@
-// Module ID: 14427
-// Function ID: 14428
+// Module ID: 13671
+// Function ID: 13672
 // Name: Atoms
-// Dependencies: [17, 2, 8922, 14428]
+// Dependencies: [17, 2, 8076, 4833]
 
-// Module 14427 (Atoms)
-import _mod17 from "module_17" /* 17 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8922 */;
-import native from "native" /* 14428 */;
+// Module 13671 (Atoms)
+import react_native from "react-native" /* 17 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8076 */;
 import size from "module_2" /* 2 */;
 
+const TextInput = react_native.TextInput;
+const TextInputProps = react_native.TextInputProps;
 const result = size.fileFinishedImporting("design/void/Atoms/native/Atoms.tsx");
 
-export const RNTextInput = _mod17.TextInput;
-export const TextInputProps = _mod17.TextInputProps;
+export const RNTextInput = TextInput;
+export { TextInputProps };
 export const LegacyText = LegacyText_LegacyTextDefault;
-export const Text = native.Text;
+export const Text = Text_Text.Text;

@@ -1,23 +1,48 @@
-// Module ID: 12822
-// Function ID: 12823
+// Module ID: 11945
+// Function ID: 11946
 // Name: useGuildPowerupOnShowDeactivate
-// Dependencies: [19, 21, 12823, 1980, 5142, 2]
-// Exports: default
+// Dependencies: [19, 21, 11946, 1987, 558, 576, 5206, 2]
 
-// Module 12822 (useGuildPowerupOnShowDeactivate)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import useAlertStore from "useAlertStore" /* 5142 */;
-import noop from "module_19" /* 19 */;
+// Module 11945 (useGuildPowerupOnShowDeactivate)
+import Fragment from "Fragment" /* 21 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import useAlertStore from "useAlertStore" /* 5206 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-let closure_4 = noop.lazy(() => asyncRequireImpl(12823, dependencyMap.paths));
-const size = fn(2);
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+const jsx = Fragment.jsx;
+let closure_4 = react.lazy(() => asyncRequire(11946, dependencyMap.paths));
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, powerup) => {
+  _require = guildId;
+  dependencyMap = powerup;
+  let obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === guildId) {
+    let tmp2;
+    if (cResult[1] === powerup) {
+      tmp2 = cResult[2];
+    }
+    return tmp2;
+  }
+  const fn = function p() {
+    const obj = useAlertStore;
+    obj.openAlert("guild-powerups-deactivate-alert", <closure_4 guildId={guildId} powerup={powerup} />);
+  };
+  cResult[0] = guildId;
+  cResult[1] = powerup;
+  cResult[2] = fn;
+  tmp2 = fn;
+}) : ((guildId, powerup) => {
+  const items = [guildId, powerup];
+  return react.useCallback(() => {
+    const obj = useAlertStore;
+    obj.openAlert("guild-powerups-deactivate-alert", <closure_4 guildId={guildId} powerup={powerup} />);
+  }, items);
+});
 const result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnShowDeactivate.tsx");
 
-export default function useGuildPowerupOnShowDeactivate(guildId, powerup) {
-  const items = [guildId, powerup];
-  return noop.useCallback(() => {
-    useAlertStore.openAlert("guild-powerups-deactivate-alert", <closure_4 guildId={guildId} powerup={powerup} />);
-  }, items);
-};
+export default tmp2;

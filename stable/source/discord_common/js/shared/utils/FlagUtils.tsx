@@ -1,10 +1,10 @@
-// Module ID: 1385
-// Function ID: 1386
+// Module ID: 1391
+// Function ID: 1392
 // Name: FlagUtils
 // Dependencies: [2]
 // Exports: addFlag, hasAnyFlag, hasFlag, removeFlag, removeFlags, setFlag, toggleFlag
 
-// Module 1385 (FlagUtils)
+// Module 1391 (FlagUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/FlagUtils.tsx");
@@ -15,8 +15,8 @@ export const hasFlag = function hasFlag(arg0, arg1) {
 export const hasAnyFlag = function hasAnyFlag(flags, arg1) {
   return flags & arg1;
 };
-export const addFlag = function addFlag(flags, SUPPRESS_NOTIFICATIONS) {
-  return flags | SUPPRESS_NOTIFICATIONS;
+export const addFlag = function addFlag(setting, SUPPRESS_NOTIFICATIONS) {
+  return setting | SUPPRESS_NOTIFICATIONS;
 };
 export const removeFlag = function removeFlag(flags, OBFUSCATED) {
   return flags & ~OBFUSCATED;
@@ -26,16 +26,19 @@ export const removeFlags = function removeFlags(setting) {
   return substr.reduce((acc, item) => acc & ~item, setting);
 };
 export const setFlag = function setFlag(arg0, arg1, arg2) {
-  if (arg2) {
-    let tmp = arg0 | arg1;
+  let tmp2;
+  const tmp = arg2;
+  if (tmp) {
+    tmp2 = arg0 | arg1;
   } else {
-    tmp = arg0 & ~arg1;
+    tmp2 = arg0 & ~arg1;
   }
-  return tmp;
+  return tmp2;
 };
 export const toggleFlag = function toggleFlag(arg0, arg1) {
+  let tmp;
   if ((arg0 & arg1) === arg1) {
-    let tmp = arg0 & ~arg1;
+    tmp = arg0 & ~arg1;
   } else {
     tmp = arg0 | arg1;
   }

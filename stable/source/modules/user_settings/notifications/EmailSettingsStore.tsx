@@ -1,42 +1,46 @@
-// Module ID: 14040
-// Function ID: 14041
+// Module ID: 13288
+// Function ID: 13289
 // Name: EmailSettingsStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 14040 (EmailSettingsStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 13288 (EmailSettingsStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
 
 function reset() {
-  c1 = null;
+  let c1 = null;
 }
 let categories = {};
 let c1 = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class EmailSettingsStore extends Store {
+  getEmailSettings() {
+    categories = { categories, initialized };
+    return categories;
+  }
 }
-EmailSettingsStore.prototype["getEmailSettings"] = function getEmailSettings() {
-  categories = { categories, initialized };
-  return categories;
-};
+const prototype = EmailSettingsStore.prototype;
 EmailSettingsStore.displayName = "EmailSettingsStore";
 categories = {
   CONNECTION_OPEN: reset,
   LOGOUT: reset,
   EMAIL_SETTINGS_FETCH_SUCCESS: function handleFetchSuccess(settings) {
+    let c1;
+    let obj;
     ({ categories: obj, initialized: c1 } = settings.settings);
   },
   EMAIL_SETTINGS_UPDATE_SUCCESS: function handleUpdateSuccess(settings) {
 
   },
   EMAIL_SETTINGS_UPDATE: function handleUpdate(updates) {
+    updates = updates.updates;
     const obj = {};
     const merged = Object.assign(obj);
-    const merged1 = Object.assign(updates.updates);
+    const merged1 = Object.assign(updates);
   }
 };
 const emailSettingsStore = new EmailSettingsStore(DispatcherDefault, categories);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/notifications/EmailSettingsStore.tsx");
 
 export default emailSettingsStore;

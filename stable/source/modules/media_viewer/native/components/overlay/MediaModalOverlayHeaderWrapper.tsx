@@ -1,31 +1,65 @@
-// Module ID: 8671
-// Function ID: 8672
+// Module ID: 7821
+// Function ID: 7822
 // Name: MediaModalOverlayHeaderWrapper
-// Dependencies: [19, 17, 21, 4788, 5931, 1612, 2]
-// Exports: MediaModalOverlayHeaderWrapper
+// Dependencies: [19, 17, 21, 4837, 5991, 558, 576, 1619, 2]
 
-// Module 8671 (MediaModalOverlayHeaderWrapper)
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import NavigatorConstants from "NavigatorConstants" /* 5931 */;
-import noop from "module_19" /* 19 */;
+// Module 7821 (MediaModalOverlayHeaderWrapper)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import NavigatorConstants from "NavigatorConstants" /* 5991 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((paddingTop, arg1, arg2) => {
   const obj = { bar: { flexDirection: "row", alignItems: "center", height: NavigatorConstants.NAV_BAR_HEIGHT + paddingTop, paddingTop, paddingLeft: arg1 + 6, paddingRight: arg2 + 6 } };
+  ({ flexDirection: "row", alignItems: "center", height: NavigatorConstants.NAV_BAR_HEIGHT + paddingTop, paddingTop, paddingLeft: arg1 + 6, paddingRight: arg2 + 6 });
   return obj;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayHeaderWrapper.tsx");
-
-export const MediaModalOverlayHeaderWrapper = function MediaModalOverlayHeaderWrapper(arg0) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let style;
+  const obj = react2;
+  const cResult = obj.c(6);
   ({ children, style } = arg0);
   const rect = useSafeAreaInsetsDefault();
-  const obj = { style: null, pointerEvents: "box-none", children: null };
+  const tmp2 = closure_5(rect.top, rect.left, rect.right);
+  if (cResult[0] === style) {
+    let tmp3;
+    if (cResult[1] === tmp2.bar) {
+      tmp3 = cResult[2];
+    }
+    if (cResult[3] === children) {
+      let tmp4;
+      if (cResult[4] === tmp3) {
+        tmp4 = cResult[5];
+      }
+      return tmp4;
+    }
+    const tmp7 = <View style={tmp3} pointerEvents="box-none">{children}</View>;
+    cResult[3] = children;
+    cResult[4] = tmp3;
+    cResult[5] = tmp7;
+    tmp4 = tmp7;
+  }
+  const items = [tmp2.bar, style];
+  cResult[0] = style;
+  cResult[1] = tmp2.bar;
+  cResult[2] = items;
+  tmp3 = items;
+}) : ((arg0) => {
+  let children;
+  let style;
+  ({ children, style } = arg0);
+  const rect = useSafeAreaInsetsDefault();
   const items = [closure_5(rect.top, rect.left, rect.right).bar, style];
-  obj.style = items;
-  obj.children = children;
-  return <View style={null} pointerEvents="box-none">{null}</View>;
-};
+  return <View style={items} pointerEvents="box-none">{children}</View>;
+});
+const result = size.fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayHeaderWrapper.tsx");
+
+export const MediaModalOverlayHeaderWrapper = tmp3;

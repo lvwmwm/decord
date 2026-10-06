@@ -1,12 +1,13 @@
-// Module ID: 9626
-// Function ID: 9627
+// Module ID: 8778
+// Function ID: 8779
 // Name: canLaunchFrame
-// Dependencies: [1074, 9435, 9167, 2]
+// Dependencies: [1086, 8587, 8318, 2]
 // Exports: canLaunchFrame
 
-// Module 9626 (canLaunchFrame)
-import Constants from "Constants" /* 1074 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9435 */;
+// Module 8778 (canLaunchFrame)
+import Constants from "Constants" /* 1086 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8587 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationFlags = Constants.ApplicationFlags;
@@ -14,15 +15,16 @@ const result = size.fileFinishedImporting("modules/frames/utils/canLaunchFrame.t
 
 export const canLaunchFrame = function canLaunchFrame(application) {
   if (null != application) {
+    const obj = AppLauncherUtils;
     if (obj.isRealApplication(application)) {
-      let hasApplicationFlagResult = tmp(9167).hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-      const tmpResult = tmp(9167);
+      const tmpResult = ApplicationFlagUtils;
+      let hasApplicationFlagResult = tmpResult.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+      const tmpResult2 = ApplicationFlagUtils;
       if (hasApplicationFlagResult) {
         hasApplicationFlagResult = tmpResult2.hasApplicationFlag(application, ApplicationFlags.CONTEXTLESS_ACTIVITY);
       }
       return hasApplicationFlagResult;
     }
-    obj = AppLauncherUtils;
   }
   return false;
 };

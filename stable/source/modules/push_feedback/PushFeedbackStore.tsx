@@ -1,71 +1,78 @@
-// Module ID: 11720
-// Function ID: 11721
+// Module ID: 10840
+// Function ID: 10841
 // Name: PushFeedbackStore
-// Dependencies: [6869, 504, 573, 2]
+// Dependencies: [6008, 504, 585, 2]
 
-// Module 11720 (PushFeedbackStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6869 */;
+// Module 10840 (PushFeedbackStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6008 */;
 import size from "module_2" /* 2 */;
 
 const NotificationTypes = PushNotificationConstants.NotificationTypes;
-let c1 = null;
 let pushFeedbackMap = {};
-const PersistedStore = initializeDefault.PersistedStore;
+const PersistedStore = get_initializedDefault.PersistedStore;
 class PushFeedbackStore extends PersistedStore {
+  initialize(pushFeedback) {
+    if (null != pushFeedback) {
+      pushFeedback = pushFeedback.pushFeedback;
+      if (null != pushFeedback.pushFeedbackMap) {
+        pushFeedbackMap = pushFeedback.pushFeedbackMap;
+      }
+    }
+  }
+  getState() {
+    return { pushFeedback, pushFeedbackMap };
+  }
+  isEligible() {
+    return null != c1;
+  }
+  isUserPushMessage(arg0) {
+    let messageId;
+    if (pushFeedback != null) {
+      messageId = pushFeedback.messageId;
+    }
+    return messageId === arg0;
+  }
+  getPushFeedback(channel_id, id) {
+    let messageId;
+    if (pushFeedback != null) {
+      messageId = pushFeedback.messageId;
+    }
+    let tmp2 = null;
+    if (messageId === id) {
+      tmp2 = null;
+      if (pushFeedback.channelId === channel_id) {
+        tmp2 = pushFeedback;
+      }
+    }
+    return tmp2;
+  }
 }
 const prototype = PushFeedbackStore.prototype;
-prototype["initialize"] = function initialize(pushFeedback) {
-  if (null != pushFeedback) {
-    pushFeedback = pushFeedback.pushFeedback;
-    if (null != pushFeedback.pushFeedbackMap) {
-      pushFeedbackMap = pushFeedback.pushFeedbackMap;
-    }
-  }
-};
-prototype["getState"] = function getState() {
-  return { pushFeedback, pushFeedbackMap };
-};
-prototype["isEligible"] = function isEligible() {
-  return null != c1;
-};
-prototype["isUserPushMessage"] = function isUserPushMessage(arg0) {
-  let messageId;
-  if (pushFeedback != null) {
-    messageId = pushFeedback.messageId;
-  }
-  return messageId === arg0;
-};
-prototype["getPushFeedback"] = function getPushFeedback(channel_id, id) {
-  let messageId;
-  if (pushFeedback != null) {
-    messageId = pushFeedback.messageId;
-  }
-  let tmp2 = null;
-  if (messageId === id) {
-    tmp2 = null;
-    if (pushFeedback.channelId === channel_id) {
-      tmp2 = pushFeedback;
-    }
-  }
-  return tmp2;
-};
 PushFeedbackStore.displayName = "PushFeedbackStore";
 PushFeedbackStore.persistKey = "PushFeedbackPersistedStore";
-const pushFeedbackStore = new PushFeedbackStore(DispatcherDefault, {
+let obj = {
   PUSH_FEEDBACK_RECEIVED_NOTIFICATION: function handleReceivedNotification(arg0) {
+    let channelId;
+    let eligibleAt;
+    let flag;
+    let messageId;
+    let notificationType;
+    let viewCount;
     ({ notificationType, messageId, channelId } = arg0);
     if (NotificationTypes.TOP_MESSAGE_PUSH === notificationType) {
-      let flag = true;
+      flag = true;
     } else {
       flag = false;
     }
     if (flag) {
+      let tmp7;
+      let num2;
       let tmp3 = pushFeedbackMap[notificationType];
       if (tmp3 == null) {
+        tmp3 = { messageId, channelId, pushType: notificationType };
         const obj = { messageId, channelId, pushType: notificationType };
-        tmp3 = obj;
       }
       let userViewInfo = tmp3.userViewInfo;
       if (userViewInfo == null) {
@@ -73,26 +80,29 @@ const pushFeedbackStore = new PushFeedbackStore(DispatcherDefault, {
       }
       ({ eligibleAt, viewCount } = userViewInfo);
       const _Date = Date;
-      let timestamp = Date.now();
+      const timestamp = Date.now();
       if (eligibleAt < timestamp) {
         eligibleAt = timestamp + 604800000;
-        let num2 = 1;
-      } else if (viewCount >= 10) {
-        if (null != null) {
-          const obj2 = { messageId, channelId, pushType: notificationType, userViewInfo: null };
-          c1 = obj2;
-          pushFeedbackMap[notificationType] = obj2;
-        } else {
-          c1 = null;
-        }
+        num2 = 1;
+        tmp7 = { eligibleAt, viewCount: num2 };
+        const obj2 = { eligibleAt, viewCount: num2 };
       } else {
-        num2 = viewCount + 1;
+        tmp7 = null;
+        if (viewCount < 10) {
+          num2 = viewCount + 1;
+        }
       }
-      timestamp = { eligibleAt, viewCount: num2 };
+      if (null != tmp7) {
+        const obj3 = { messageId, channelId, pushType: notificationType, userViewInfo: tmp7 };
+        let c1 = obj3;
+        pushFeedbackMap[notificationType] = obj3;
+      } else {
+        c1 = null;
+      }
     }
   },
   PUSH_FEEDBACK_CLEANUP: function handleCleanup() {
-    c1 = null;
+    let c1 = null;
   },
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
     channelId = channelId.channelId;
@@ -105,7 +115,8 @@ const pushFeedbackStore = new PushFeedbackStore(DispatcherDefault, {
     }
     return false;
   }
-});
+};
+const pushFeedbackStore = new PushFeedbackStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/push_feedback/PushFeedbackStore.tsx");
 
 export default pushFeedbackStore;

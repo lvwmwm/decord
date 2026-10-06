@@ -1,23 +1,54 @@
-// Module ID: 15055
-// Function ID: 15056
+// Module ID: 14298
+// Function ID: 14299
 // Name: AccountEditPassword
-// Dependencies: [19, 17, 21, 4788, 576, 15056, 2]
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 14299, 2]
 
-// Module 15055 (AccountEditPassword)
-import nativeDefault from "native" /* 576 */;
-import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 15056 */;
-import noop from "module_19" /* 19 */;
+// Module 14298 (AccountEditPassword)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 14299 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-get_ActivityIndicator = fn(17);
-({ View: c2, StyleSheet } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj = { container: null };
+let StyleSheet;
+let c3;
+let obj2;
+({ View: c3, StyleSheet } = react_native);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { container: obj2 };
+createStyles = createStyles.createStyles;
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj.container = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_4 = createStyles.createStyles(obj);
-const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-const size = fn(2);
+let closure_5 = createStyles(obj);
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(3);
+  const tmp3 = closure_5();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = jsx(UserSettingsAccountEditPasswordDefault, {});
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp3.container) {
+    const tmp11 = <_false style={tmp3.container}>{first}</_false>;
+    cResult[1] = tmp3.container;
+    cResult[2] = tmp11;
+    tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[2];
+  }
+  return tmp8;
+}) : (() => <_false style={closure_5().container}>{jsx(UserSettingsAccountEditPasswordDefault, {})}</_false>));
 const result = size.fileFinishedImporting("modules/user_settings/account/native/AccountEditPassword.tsx");
 
-export default noop.memo(() => <React2 style={closure_4().container}>{jsx(UserSettingsAccountEditPasswordDefault, {})}</React2>);
+export default memoResult;

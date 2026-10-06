@@ -1,50 +1,82 @@
-// Module ID: 16225
-// Function ID: 16226
+// Module ID: 15502
+// Function ID: 15503
 // Name: ParentalControlsFriendRequestsMutualFriendsSetting
-// Dependencies: [19, 7811, 8265, 1074, 8957, 15099, 7272, 1385, 11754, 1115, 2]
+// Dependencies: [19, 6961, 7421, 1086, 558, 576, 8104, 14342, 6416, 1391, 10874, 1127, 2]
 
-// Module 16225 (ParentalControlsFriendRequestsMutualFriendsSetting)
-import util from "util" /* 1115 */;
-import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7272 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15099 */;
-import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
+// Module 15502 (ParentalControlsFriendRequestsMutualFriendsSetting)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import FlagUtilsAll from "FlagUtils" /* 1391 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import useSelectedTeen from "useSelectedTeen" /* 8104 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14342 */;
+import react from "react" /* 19 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const FriendSourceFlags = fn(1074).FriendSourceFlags;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const FriendSourceFlags = Constants.FriendSourceFlags;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const obj2 = useSelectedTeen;
+  const selectedTeenId = obj2.useSelectedTeenId();
+  const ParentalControlledFriendSourceFlags = tmp(14342).ParentalControlledFriendSourceFlags;
+  const controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
+  if (cResult[0] !== controlledSetting) {
+    const tmpResult = UserSettingsUtils;
+    const flags = tmpResult.computeFlags(controlledSetting);
+    cResult[0] = controlledSetting;
+    cResult[1] = flags;
+    tmp6 = flags;
+  } else {
+    tmp6 = cResult[1];
+  }
+  return tmp6.mutualFriends;
+}) : (() => {
+  let controlledSetting;
+  let obj = controlledSetting(8104);
+  const selectedTeenId = obj.useSelectedTeenId();
+  const ParentalControlledFriendSourceFlags = controlledSetting(14342).ParentalControlledFriendSourceFlags;
+  controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
+  const items = [controlledSetting];
+  return react.useMemo(() => {
+    const obj = UserSettingsUtils;
+    return obj.computeFlags(controlledSetting);
+  }, items).mutualFriends;
+});
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.IqlCSq);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.IqlCSq);
   },
-  parent: fn(8265).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue: function useFriendRequestsMutualFriendsSettingValue() {
-    const selectedTeenId = controlledSetting(8957).useSelectedTeenId();
-    const ParentalControlledFriendSourceFlags = controlledSetting(15099).ParentalControlledFriendSourceFlags;
-    controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
-    const items = [controlledSetting];
-    return noop.useMemo(() => UserSettingsUtils.computeFlags(controlledSetting), items).mutualFriends;
-  },
+  parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  useValue: tmp2,
   onValueChange: function onFriendRequestsMutualFriendsSettingValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
+      let addFlagResult;
       const ParentalControlledFriendSourceFlags = ParentalControlledUserSettings.ParentalControlledFriendSourceFlags;
       const controlledSetting = ParentalControlledFriendSourceFlags.getControlledSetting(selectedTeenId);
       const ParentalControlledFriendSourceFlags2 = ParentalControlledUserSettings.ParentalControlledFriendSourceFlags;
+      const updateControlledSetting = ParentalControlledFriendSourceFlags2.updateControlledSetting;
       const obj = FlagUtilsAll;
       if (arg0) {
-        let addFlagResult = obj.addFlag(controlledSetting, FriendSourceFlags.MUTUAL_FRIENDS);
+        addFlagResult = obj.addFlag(controlledSetting, FriendSourceFlags.MUTUAL_FRIENDS);
       } else {
         addFlagResult = obj.removeFlags(controlledSetting, FriendSourceFlags.MUTUAL_FRIENDS, FriendSourceFlags.NO_RELATION);
       }
-      const result = ParentalControlledFriendSourceFlags2.updateControlledSetting(selectedTeenId, addFlagResult);
+      const result = updateControlledSetting(selectedTeenId, addFlagResult);
     }
   },
   unsearchable: true
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsFriendRequestsMutualFriendsSetting.tsx");
 
 export default toggle;

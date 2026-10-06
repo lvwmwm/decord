@@ -1,17 +1,18 @@
-// Module ID: 1613
-// Function ID: 1614
+// Module ID: 1620
+// Function ID: 1621
 // Name: SafeAreaStore
-// Dependencies: [1614, 560, 2]
+// Dependencies: [1621, 570, 2]
 
-// Module 1613 (SafeAreaStore)
-import SafeAreaConstants from "SafeAreaConstants" /* 1614 */;
-import module_560 from "module_560" /* 560 */;
+// Module 1620 (SafeAreaStore)
+import SafeAreaConstants from "SafeAreaConstants" /* 1621 */;
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-const obj = { safeAreaInsets: SafeAreaConstants.INITIAL_SAFE_AREA_INSETS };
-const result = size.fileFinishedImporting("modules/safe_area/SafeAreaStore.native.tsx");
-
-export default module_560.create(() => {
-  share = { byAppEntry: { main: share, share } };
+({ safeAreaInsets: SafeAreaConstants.INITIAL_SAFE_AREA_INSETS });
+const obj2 = module_570.create(() => {
+  const share = { byAppEntry: obj2 };
   return share;
 });
+const result = size.fileFinishedImporting("modules/safe_area/SafeAreaStore.native.tsx");
+
+export default obj2;

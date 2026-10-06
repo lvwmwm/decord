@@ -1,43 +1,55 @@
-// Module ID: 12623
-// Function ID: 12624
+// Module ID: 11716
+// Function ID: 11717
 // Name: SearchUtils
-// Dependencies: [32, 2041, 6868, 2096, 4999, 2063, 4437, 2095, 1372, 8154, 1074, 4380, 1115, 12624, 11, 12629, 12, 12630, 4941, 4632, 2]
+// Dependencies: [32, 2051, 6007, 4470, 5048, 2073, 4482, 2102, 1378, 7307, 1086, 4424, 1127, 11717, 11, 11722, 12, 11723, 4990, 4680, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchAnalyticsIds, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 12623 (SearchUtils)
+// Module 11716 (SearchUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import util from "util" /* 1115 */;
-import _modDef4380 from "module_4380" /* 4380 */;
-import UserUtilsDefault from "UserUtils" /* 4632 */;
-import useChannelName from "useChannelName" /* 4941 */;
-import SearchTokens from "SearchTokens" /* 12624 */;
-import QueryTokenizerDefault from "QueryTokenizer" /* 12629 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 12630 */;
-import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ConsentStore from "ConsentStore" /* 6868 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 4999 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import UserStore from "UserStore" /* 1372 */;
+import intl11 from "intl" /* 1127 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import UserUtilsDefault from "UserUtils" /* 4680 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
+import SearchTokens from "SearchTokens" /* 11717 */;
+import QueryTokenizerDefault from "QueryTokenizer" /* 11722 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 11723 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ConsentStore from "ConsentStore" /* 6007 */;
+import GuildChannelStore from "GuildChannelStore" /* 4470 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5048 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
 const SearchTokensDefault = SearchTokens;
+let addRule, closure_4, importDefault, results, set;
 
-require = fn;
-const SearchTabs = fn(8154).SearchTabs;
-const Constants = fn(1074);
+let ME;
+let SearchTokenTypes;
+let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+const f108706 = (arg0, arg1) => "\\" + arg1;
+const SearchTabs = SearchConstants.SearchTabs;
 ({ SearchTypes: closure_12, SearchTokenTypes } = Constants);
 ({ SearchPopoutModes: closure_14, IS_SEARCH_ANSWER_TOKEN: closure_15, IS_SEARCH_FILTER_TOKEN: closure_16, SearchModes: closure_17, ME, Consents: closure_18, GuildFeatures: closure_19 } = Constants);
 let c20 = 2592000;
 let c21 = 31536000;
 const ShowDatePicker = { [SearchTokenTypes.FILTER_BEFORE]: true, [SearchTokenTypes.FILTER_AFTER]: true, [SearchTokenTypes.FILTER_ON]: true };
-const navigation = new QueryTokenizerDefault();
 let tmp4 = new QueryTokenizerDefault();
-const navigation2 = new QueryTokenizerDefault();
-const size = fn(2);
+const navigation = tmp4;
+let tmp5 = new QueryTokenizerDefault();
+const navigation2 = tmp5;
 let result = size.fileFinishedImporting("modules/search/SearchUtils.tsx");
 
 export const getSearchContextId = function getSearchContextId(searchContext) {
@@ -45,10 +57,10 @@ export const getSearchContextId = function getSearchContextId(searchContext) {
   if (constants.GUILD === type) {
     return searchContext.guildId;
   } else {
-    if (tmp.GUILD_CHANNEL !== type) {
-      if (tmp.CHANNEL !== type) {
-        if (tmp.THREAD !== type) {
-          return tmp.DMS === type ? searchContext.type : undefined;
+    if (constants.GUILD_CHANNEL !== type) {
+      if (constants.CHANNEL !== type) {
+        if (constants.THREAD !== type) {
+          return constants.DMS === type ? searchContext.type : undefined;
         }
       }
     }
@@ -56,14 +68,15 @@ export const getSearchContextId = function getSearchContextId(searchContext) {
   }
 };
 export const getSearchHistoryStateId = function getSearchHistoryStateId(type) {
+  let channelId;
   type = type.type;
   if (constants.GUILD === type) {
-    let channelId = type.guildId;
+    channelId = type.guildId;
   } else {
-    if (tmp.GUILD_CHANNEL !== type) {
-      if (tmp.CHANNEL !== type) {
-        if (tmp.THREAD !== type) {
-          if (tmp.DMS === type) {
+    if (constants.GUILD_CHANNEL !== type) {
+      if (constants.CHANNEL !== type) {
+        if (constants.THREAD !== type) {
+          if (constants.DMS === type) {
             channelId = type.type;
           }
         }
@@ -73,15 +86,16 @@ export const getSearchHistoryStateId = function getSearchHistoryStateId(type) {
   }
   return channelId;
 };
-export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, MEDIA, searchResultsQuery) {
+export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, MESSAGES, searchResultsQuery) {
+  let channelId;
   const type = searchContext.type;
   if (constants.GUILD === type) {
-    let channelId = searchContext.guildId;
+    channelId = searchContext.guildId;
   } else {
-    if (tmp.GUILD_CHANNEL !== type) {
-      if (tmp.CHANNEL !== type) {
-        if (tmp.THREAD !== type) {
-          if (tmp.DMS === type) {
+    if (constants.GUILD_CHANNEL !== type) {
+      if (constants.CHANNEL !== type) {
+        if (constants.THREAD !== type) {
+          if (constants.DMS === type) {
             channelId = searchContext.type;
           }
         }
@@ -89,68 +103,68 @@ export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, M
     }
     channelId = searchContext.channelId;
   }
-  return "" + channelId + "-" + MEDIA + "-" + searchResultsQuery;
+  return "" + channelId + "-" + MESSAGES + "-" + searchResultsQuery;
 };
-export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(arg0) {
-  const diffResult = _modDef4380().diff(_modDef4380(arg0), "s");
+export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(cResult) {
+  const obj = _modDef4424();
+  const diffResult = obj.diff(_modDef4424(cResult), "s");
   if (diffResult > c21) {
     const _Math5 = Math;
     const rounded = Math.round(diffResult / tmp3);
-    const intl7 = util.intl;
+    const intl7 = intl11.intl;
     const obj2 = { count: rounded };
-    return intl7.formatToPlainString(util.t["7th+Mf"], obj2);
+    return intl7.formatToPlainString(intl11.t["7th+Mf"], obj2);
   } else if (diffResult > c20) {
     const _Math4 = Math;
     const rounded1 = Math.round(diffResult / tmp21);
-    const intl6 = util.intl;
+    const intl6 = intl11.intl;
     const obj3 = { count: rounded1 };
-    return intl6.formatToPlainString(util.t.g2uHTD, obj3);
+    return intl6.formatToPlainString(intl11.t.g2uHTD, obj3);
   } else if (diffResult > 172800) {
     const _Math3 = Math;
     const rounded2 = Math.round(diffResult / 86400);
-    const intl5 = util.intl;
+    const intl5 = intl11.intl;
     const obj4 = { count: rounded2 };
-    return intl5.formatToPlainString(util.t.HNgi95, obj4);
+    return intl5.formatToPlainString(intl11.t.HNgi95, obj4);
   } else if (diffResult > 86400) {
-    const intl4 = util.intl;
-    return intl4.string(util.t.uNkIhT);
+    const intl4 = intl11.intl;
+    return intl4.string(intl11.t.uNkIhT);
   } else if (diffResult > 3600) {
     const _Math2 = Math;
     const rounded3 = Math.round(diffResult / 3600);
-    const intl3 = util.intl;
+    const intl3 = intl11.intl;
     const obj5 = { count: rounded3 };
-    return intl3.formatToPlainString(util.t.WJBWP1, obj5);
+    return intl3.formatToPlainString(intl11.t.WJBWP1, obj5);
   } else if (diffResult > 60) {
     const _Math = Math;
     const rounded4 = Math.round(diffResult / 60);
-    const intl2 = util.intl;
+    const intl2 = intl11.intl;
     const obj6 = { count: rounded4 };
-    return intl2.formatToPlainString(util.t.CbRfwg, obj6);
+    return intl2.formatToPlainString(intl11.t.CbRfwg, obj6);
   } else {
-    const intl = util.intl;
-    return intl.string(util.t["5Ldpkc"]);
+    const intl = intl11.intl;
+    return intl.string(intl11.t["5Ldpkc"]);
   }
-  const obj = _modDef4380();
 };
 export const getIndexingErrorText = function getIndexingErrorText(searchContext) {
   const type = searchContext.type;
   if (constants.CHANNEL === type) {
-    const intl3 = util.intl;
-    return intl3.string(util.t.Q0JJjv);
-  } else if (tmp.DMS === type) {
-    const intl2 = util.intl;
-    return intl2.string(util.t.Br0xJA);
+    const intl3 = intl11.intl;
+    return intl3.string(intl11.t.Q0JJjv);
+  } else if (constants.DMS === type) {
+    const intl2 = intl11.intl;
+    return intl2.string(intl11.t.Br0xJA);
   } else {
-    const intl = util.intl;
-    return intl.string(util.t.AXPbZr);
+    const intl = intl11.intl;
+    return intl.string(intl11.t.AXPbZr);
   }
 };
 export const getGuildIdFromSearchContext = function getGuildIdFromSearchContext(searchContext) {
   const type = searchContext.type;
   if (constants.GUILD_CHANNEL !== type) {
-    if (tmp.GUILD !== type) {
-      if (tmp.THREAD !== type) {
-        if (tmp.CHANNEL === type) {
+    if (constants.GUILD !== type) {
+      if (constants.THREAD !== type) {
+        if (constants.CHANNEL === type) {
           const channel = ChannelStore.getChannel(searchContext.channelId);
           let guild_id;
           if (channel != null) {
@@ -174,8 +188,8 @@ export const isGuildLikeSearchContext = function isGuildLikeSearchContext(search
 export const getChannelIdFromSearchContext = function getChannelIdFromSearchContext(searchContext) {
   const type = searchContext.type;
   if (constants.GUILD_CHANNEL !== type) {
-    if (tmp.CHANNEL !== type) {
-      if (tmp.THREAD !== type) {
+    if (constants.CHANNEL !== type) {
+      if (constants.THREAD !== type) {
         return null;
       }
     }
@@ -184,41 +198,41 @@ export const getChannelIdFromSearchContext = function getChannelIdFromSearchCont
 };
 export const getTabTitle = function getTabTitle(id) {
   if (SearchTabs.RECENT === id) {
-    const intl10 = util.intl;
-    return intl10.string(util.t.tWnHcL);
-  } else if (tmp.MESSAGES === id) {
-    const intl9 = util.intl;
-    return intl9.string(util.t.dvZAkp);
-  } else if (tmp.PEOPLE === id) {
-    const intl8 = util.intl;
-    return intl8.string(util.t["GFd/I5"]);
-  } else if (tmp.MEDIA === id) {
-    const intl7 = util.intl;
-    return intl7.string(util.t["Aw9+/M"]);
-  } else if (tmp.PINS === id) {
-    const intl6 = util.intl;
-    return intl6.string(util.t["/MoGoB"]);
-  } else if (tmp.LINKS === id) {
-    const intl5 = util.intl;
-    return intl5.string(util.t.DFSvTt);
-  } else if (tmp.FILES === id) {
-    const intl4 = util.intl;
-    return intl4.string(util.t["WgVYR/"]);
-  } else if (tmp.GUILD_CHANNELS === id) {
-    const intl3 = util.intl;
-    return intl3.string(util.t.OGiMXJ);
-  } else if (tmp.MEMBERS === id) {
-    const intl2 = util.intl;
-    return intl2.string(util.t["9Oq93m"]);
-  } else if (tmp.THREADS === id) {
-    const intl = util.intl;
-    return intl.string(util.t.B2panI);
+    const intl10 = intl11.intl;
+    return intl10.string(intl11.t.tWnHcL);
+  } else if (SearchTabs.MESSAGES === id) {
+    const intl9 = intl11.intl;
+    return intl9.string(intl11.t.dvZAkp);
+  } else if (SearchTabs.PEOPLE === id) {
+    const intl8 = intl11.intl;
+    return intl8.string(intl11.t["GFd/I5"]);
+  } else if (SearchTabs.MEDIA === id) {
+    const intl7 = intl11.intl;
+    return intl7.string(intl11.t["Aw9+/M"]);
+  } else if (SearchTabs.PINS === id) {
+    const intl6 = intl11.intl;
+    return intl6.string(intl11.t["/MoGoB"]);
+  } else if (SearchTabs.LINKS === id) {
+    const intl5 = intl11.intl;
+    return intl5.string(intl11.t.DFSvTt);
+  } else if (SearchTabs.FILES === id) {
+    const intl4 = intl11.intl;
+    return intl4.string(intl11.t["WgVYR/"]);
+  } else if (SearchTabs.GUILD_CHANNELS === id) {
+    const intl3 = intl11.intl;
+    return intl3.string(intl11.t.OGiMXJ);
+  } else if (SearchTabs.MEMBERS === id) {
+    const intl2 = intl11.intl;
+    return intl2.string(intl11.t["9Oq93m"]);
+  } else if (SearchTabs.THREADS === id) {
+    const intl = intl11.intl;
+    return intl.string(intl11.t.B2panI);
   }
 };
 export const searchModeToSearchQueryParams = function searchModeToSearchQueryParams(searchMode) {
   if (constants3.MOST_RELEVANT === searchMode) {
     return { sort_by: "relevance", sort_order: "desc" };
-  } else if (tmp.OLDEST === searchMode) {
+  } else if (constants3.OLDEST === searchMode) {
     return { sort_by: "timestamp", sort_order: "asc" };
   } else {
     const NEWEST = tmp.NEWEST;
@@ -227,9 +241,10 @@ export const searchModeToSearchQueryParams = function searchModeToSearchQueryPar
 };
 export const searchQueryParamsToSearchMode = function searchQueryParamsToSearchMode(sort_by) {
   if (null != sort_by.sort_by) {
+    let NEWEST;
     if (null != sort_by.sort_order) {
       if ("relevance" === sort_by.sort_by) {
-        let NEWEST = constants3.MOST_RELEVANT;
+        NEWEST = constants3.MOST_RELEVANT;
       } else if ("asc" === sort_by.sort_order) {
         NEWEST = constants3.OLDEST;
       } else {
@@ -242,42 +257,42 @@ export const searchQueryParamsToSearchMode = function searchQueryParamsToSearchM
 };
 export const getSearchOptionAnswer = function getSearchOptionAnswer(arg0) {
   if (SearchTokenTypes.FILTER_FROM === arg0) {
-    const intl10 = util.intl;
-    return intl10.string(util.t.E466pL);
-  } else if (tmp.FILTER_MENTIONS === arg0) {
-    const intl9 = util.intl;
-    return intl9.string(util.t.BYvFWl);
-  } else if (tmp.FILTER_HAS === arg0) {
-    const intl8 = util.intl;
-    return intl8.string(util.t.bhSYbc);
+    const intl10 = intl11.intl;
+    return intl10.string(intl11.t.E466pL);
+  } else if (SearchTokenTypes.FILTER_MENTIONS === arg0) {
+    const intl9 = intl11.intl;
+    return intl9.string(intl11.t.BYvFWl);
+  } else if (SearchTokenTypes.FILTER_HAS === arg0) {
+    const intl8 = intl11.intl;
+    return intl8.string(intl11.t.bhSYbc);
   } else {
-    if (tmp.FILTER_BEFORE !== arg0) {
-      if (tmp.FILTER_ON !== arg0) {
-        if (tmp.FILTER_AFTER !== arg0) {
-          if (tmp.FILTER_IN === arg0) {
-            const intl6 = util.intl;
-            return intl6.string(util.t["GpM+/7"]);
-          } else if (tmp.FILTER_LINK_FROM === arg0) {
-            const intl5 = util.intl;
-            return intl5.string(util.t.FdDTni);
-          } else if (tmp.FILTER_FILE_TYPE === arg0) {
-            const intl4 = util.intl;
-            return intl4.string(util.t.FXcAFe);
-          } else if (tmp.FILTER_FILE_NAME === arg0) {
-            const intl3 = util.intl;
-            return intl3.string(util.t.uAbFDM);
-          } else if (tmp.FILTER_PINNED === arg0) {
-            const intl2 = util.intl;
-            return intl2.string(util.t.UJxL3V);
-          } else if (tmp.FILTER_AUTHOR_TYPE === arg0) {
-            const intl = util.intl;
-            return intl.string(util.t.qCQzBl);
+    if (SearchTokenTypes.FILTER_BEFORE !== arg0) {
+      if (SearchTokenTypes.FILTER_ON !== arg0) {
+        if (SearchTokenTypes.FILTER_AFTER !== arg0) {
+          if (SearchTokenTypes.FILTER_IN === arg0) {
+            const intl6 = intl11.intl;
+            return intl6.string(intl11.t["GpM+/7"]);
+          } else if (SearchTokenTypes.FILTER_LINK_FROM === arg0) {
+            const intl5 = intl11.intl;
+            return intl5.string(intl11.t.FdDTni);
+          } else if (SearchTokenTypes.FILTER_FILE_TYPE === arg0) {
+            const intl4 = intl11.intl;
+            return intl4.string(intl11.t.FXcAFe);
+          } else if (SearchTokenTypes.FILTER_FILE_NAME === arg0) {
+            const intl3 = intl11.intl;
+            return intl3.string(intl11.t.uAbFDM);
+          } else if (SearchTokenTypes.FILTER_PINNED === arg0) {
+            const intl2 = intl11.intl;
+            return intl2.string(intl11.t.UJxL3V);
+          } else if (SearchTokenTypes.FILTER_AUTHOR_TYPE === arg0) {
+            const intl = intl11.intl;
+            return intl.string(intl11.t.qCQzBl);
           }
         }
       }
     }
-    const intl7 = util.intl;
-    return intl7.string(util.t.Zbbc1E);
+    const intl7 = intl11.intl;
+    return intl7.string(intl11.t.Zbbc1E);
   }
 };
 export { ShowDatePicker };
@@ -285,34 +300,40 @@ export const setIncludeNSFW = function setIncludeNSFW(arg0, guildIdFromSearchCon
   if (GuildNSFWAgreeStore.didAgree(guildIdFromSearchContext)) {
     const currentUser = UserStore.getCurrentUser();
     if (null != currentUser) {
-      arg0.include_nsfw = null == currentUser.nsfwAllowed || currentUser.nsfwAllowed;
       const tmp4 = null == currentUser.nsfwAllowed || currentUser.nsfwAllowed;
+      arg0.include_nsfw = tmp4;
     }
   }
 };
 export const getSearchQueryFromTokens = function getSearchQueryFromTokens(tokenizeQueryResult) {
+  let tmp7;
+  let tmp8;
   const obj = {};
-  const item = tokenizeQueryResult.forEach((type) => {
+  const item = tokenizeQueryResult.forEach(function(type) {
+    function getQueryKey(type) {
+      const tmp = closure_1_1(closure_1_2[13])[type];
+      let str = null;
+      if (null != tmp) {
+        str = tmp.queryKey;
+      }
+      if (null == str) {
+        str = "content";
+      }
+      return str;
+    }
     type = type.type;
-    if (!regex2.test(type)) {
+    if (!regex.test(type)) {
+      let tmp = SearchTokenTypes;
       if (SearchTokenTypes.ANSWER_BEFORE !== type) {
         if (tmp.ANSWER_ON !== type) {
           if (tmp.ANSWER_AFTER !== type) {
-            const tmp27 = (function getQueryKey(type) {
-              const tmp = closure_1_1(closure_1_2[13])[type];
-              let str = null;
-              if (null != tmp) {
-                str = tmp.queryKey;
-              }
-              if (null == str) {
-                str = "content";
-              }
-              return str;
-            })(type);
-            if (null == obj[tmp27]) {
+            const tmp25 = getQueryKey(type);
+            if (null == obj[tmp25]) {
               const _Set = Set;
-              const set = new Set();
-              tmp28[tmp27] = set;
+              const self = this;
+              const self2 = this;
+              obj[tmp25] = new Set();
+              set = new Set();
             }
             if (tmp.ANSWER_USERNAME_FROM !== type) {
               if (tmp.ANSWER_USERNAME_MENTIONS !== type) {
@@ -329,59 +350,66 @@ export const getSearchQueryFromTokens = function getSearchQueryFromTokens(tokeni
                           continue;
                         }
                       } else if (tmp.ANSWER_HAS === type) {
-                        obj.add(type.getData("has"));
+                        obj[tmp25].add(type.getData("has"));
                       } else if (tmp.ANSWER_PINNED === type) {
-                        obj.add(type.getData("pinned"));
+                        obj[tmp25].add(type.getData("pinned"));
                       } else if (tmp.ANSWER_AUTHOR_TYPE === type) {
-                        obj.add(type.getData("author_type"));
+                        obj[tmp25].add(type.getData("author_type"));
                       } else {
-                        obj.add(type.getFullMatch().trim());
+                        const add = obj.add;
                         let str = type.getFullMatch();
+                        add(str.trim());
                       }
                     }
                   }
                 }
-                obj.add(type.getMatch(1));
+                obj[tmp25].add(type.getMatch(1));
               }
             }
-            obj[tmp27].add(type.getData("userId"));
+            obj[tmp25].add(type.getData("userId"));
           }
         }
       }
       const data1 = type.getData("start");
       const data2 = type.getData("end");
       if (data1) {
-        obj.min_id = SnowflakeUtilsDefault.fromTimestamp(data1);
+        const obj2 = SnowflakeUtilsDefault;
+        obj.min_id = obj2.fromTimestamp(data1);
       }
-      if (data2) {
-        const fromTimestampResult = SnowflakeUtilsDefault.fromTimestamp(data2);
-        obj.max_id = fromTimestampResult;
+      const tmp19 = data2;
+      if (tmp19) {
+        const obj3 = SnowflakeUtilsDefault;
+        obj.max_id = obj3.fromTimestamp(data2);
+        const fromTimestampResult = obj3.fromTimestamp(data2);
       }
     }
   });
   const entries = Object.entries(obj);
-  while (tmp5 !== undefined) {
-    let tmp8 = _slicedToArray(tmp6, 2);
-    [tmp9, tmp10] = tmp8;
+  const tmp3 = entries[Symbol.iterator]();
+  while (tmp3 !== undefined) {
+    let tmp6 = _slicedToArray(tmp4, 2);
+    [tmp7, tmp8] = tmp6;
     let _Set = Set;
-    if (tmp10 instanceof Set) {
+    if (tmp8 instanceof Set) {
       let _Array = Array;
-      obj[tmp9] = Array.from(tmp11);
+      obj[tmp7] = Array.from(tmp9);
     }
     continue;
   }
   if (obj.content) {
-    delete tmp[tmp2];
+    delete obj["contents"];
     const content = obj.content;
-    obj.content = content.join(" ").trim();
+    let str = " ";
+    const str2 = content.join(" ");
+    obj.content = str2.trim();
     if (!obj.content) {
-      delete tmp[tmp2];
+      delete obj["content"];
     }
-    const str3 = content.join(" ");
   }
   return obj;
 };
 export const getQueryContentString = function getQueryContentString(searchQueryFromTokens) {
+  let content;
   let contents;
   if (searchQueryFromTokens != null) {
     contents = searchQueryFromTokens.contents;
@@ -400,7 +428,7 @@ export const getQueryContentString = function getQueryContentString(searchQueryF
           joined = mapped.join(" ");
         }
       }
-      let content = joined;
+      content = joined;
     }
     return content;
   }
@@ -416,17 +444,19 @@ export const getNonTokenQuery = function getNonTokenQuery(tokenizeQueryResult) {
     }
     return str;
   });
-  return mapped.join(" ").trim();
+  let str = mapped.join(" ");
+  return str.trim();
 };
 export const getSelectionScope = function getSelectionScope(tokenizeQueryResult, focusOffset, anchorOffset) {
-  closure_1 = focusOffset;
-  closure_2 = anchorOffset;
+  let closure_1 = focusOffset;
+  let closure_2 = anchorOffset;
   const found = tokenizeQueryResult.find((start, index) => {
-    if (closure_1 >= start.start) {
+    if (focusOffset >= start.start) {
       if (tmp <= start.end) {
-        if (closure_2 >= start.start) {
+        if (anchorOffset >= start.start) {
+          let flag;
           if (tmp2 <= start.end) {
-            let flag = true;
+            flag = true;
             if (null != tokenizeQueryResult[index + 1]) {
               closure_4 = tmp4[index + 1];
               flag = true;
@@ -436,90 +466,94 @@ export const getSelectionScope = function getSelectionScope(tokenizeQueryResult,
         }
       }
     }
-    closure_3 = start;
+    let closure_1_3 = start;
     flag = false;
   });
   let tmp2 = null;
   if (null != found) {
-    const obj = { previousToken, currentToken: found, nextToken, focusOffset, anchorOffset };
-    tmp2 = obj;
+    const tmp4 = nextToken;
+    tmp2 = { previousToken: _slicedToArray, currentToken: found, nextToken, focusOffset, anchorOffset };
+    const obj = { previousToken: _slicedToArray, currentToken: found, nextToken, focusOffset, anchorOffset };
   }
   return tmp2;
 };
 export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tokens) {
+  let currentToken;
+  let previousToken;
   let obj = cursorScope;
   if (cursorScope == null) {
     obj = {};
   }
   ({ currentToken, nextToken, previousToken } = obj);
   if (0 === tokens.length) {
-    const obj2 = { type: constants2.EMPTY, filter: null, token: null };
-    return obj2;
+    return { type: constants2.EMPTY, filter: null, token: null };
   } else if (null == currentToken) {
-    const obj3 = { type: constants2.FILTER_ALL, filter: null, token: null };
-    return obj3;
+    return { type: constants2.FILTER_ALL, filter: null, token: null };
   } else {
+    const obj9 = SearchTokens;
+    const tmp10 = require;
     if (obj9.isSearchFilterTokenType(currentToken.type)) {
       if (null != nextToken) {
         if (nextToken.type !== QueryTokenizerDefault.NON_TOKEN_TYPE) {
           if (null != nextToken) {
             if (!regex.test(nextToken.type)) {
-              const obj4 = { type: constants2.FILTER, filter: currentToken.type, token: null };
-              return obj4;
+              return { type: constants2.FILTER, filter: currentToken.type, token: null };
             }
           }
         }
       }
-      const obj5 = { type: constants2.FILTER, filter: currentToken.type, token: nextToken };
-      return obj5;
+      return { type: constants2.FILTER, filter: currentToken.type, token: nextToken };
     }
+    const tmp3 = importDefault;
     if (currentToken.type === QueryTokenizerDefault.NON_TOKEN_TYPE) {
       if (null != previousToken) {
+        let obj7;
+        const tmp10Result = tmp10(11717);
         if (tmp10Result.isSearchFilterTokenType(previousToken.type)) {
+          obj7 = { type: constants2.FILTER, filter: previousToken.type, token: currentToken };
           const obj6 = { type: constants2.FILTER, filter: previousToken.type, token: currentToken };
-          let obj7 = obj6;
         }
         return obj7;
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(12629).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(11722).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj7 = { type: constants2.FILTER_ALL, filter: null, token: tmp4 };
-    obj9 = SearchTokens;
-    tmp3 = importDefault;
   }
 };
 export const quoteChannelName = function quoteChannelName(channelName) {
   let combined = channelName;
   if (null != channelName.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + channelName.replaceAll(/([\\"])/g, (arg0, arg1) => "\\" + arg1) + "\"";
+    combined = "\"" + channelName.replaceAll(/([\\"])/g, f108706) + "\"";
   }
   return combined;
 };
 export const getFlattenedAutocompleteResults = function getFlattenedAutocompleteResults(arg0, arg1) {
-  closure_0 = arg1;
+  let closure_1;
+  let closure_0 = arg1;
   importDefault = [];
-  const item = _modDef12(arg0).forEach((results) => {
-    closure_0 = results;
+  const arr = _modDef12(arg0);
+  const item = arr.forEach((results) => {
     if (null != results) {
       if (0 !== results.results.length) {
         let group = results.group;
+        let tmp = group;
         results = results.results;
         group = group.concat(results.map((text) => {
           let tmp = str;
           if (null != text.channel) {
             let combined = str;
-            if (null != str.match(/([\\" ])/g)) {
+            if (null != text.text.match(/([\\" ])/g)) {
               const _HermesInternal = HermesInternal;
-              combined = "\"" + str.replaceAll(/([\\"])/g, (arg0, arg1) => "\\" + arg1) + "\"";
+              combined = "\"" + str.replaceAll(/([\\"])/g, f108706) + "\"";
             }
             tmp = combined;
           }
           let combined1 = tmp;
-          if (closure_0.type === constants2.FILTER_ALL) {
+          if (results.type === constants.FILTER_ALL) {
             group = text.group;
             const tmp8 = SearchTokensDefault[group];
             let key;
@@ -540,7 +574,7 @@ export const getFlattenedAutocompleteResults = function getFlattenedAutocomplete
               combined1 = "" + tmp8.key + " " + tmp;
             }
           }
-          return { result: text, group: closure_0.group, resultText: combined1 };
+          return { result: text, group: results.group, resultText: combined1 };
         }));
       }
     }
@@ -556,8 +590,9 @@ export const getQueryFromTokens = function getQueryFromTokens(tokens) {
   return str;
 };
 export const queryHasFilter = function queryHasFilter(errorcode, arg1) {
-  closure_0 = arg1;
-  return navigation.tokenize(errorcode).some((type) => type.type === closure_0);
+  let closure_0 = arg1;
+  const tokenizeResult = navigation.tokenize(errorcode);
+  return tokenizeResult.some((type) => type.type === closure_0);
 };
 export const tokenizeQuery = function tokenizeQuery(searchQueryString) {
   return navigation.tokenize(searchQueryString);
@@ -577,38 +612,49 @@ export const filterHasAnswer = function filterHasAnswer(type, type2) {
   const isMatch = regex2.test(type.type);
   let tmp2 = null == type2 && isMatch;
   if (!tmp2) {
-    let tmp3 = null != type2 && isMatch;
-    if (tmp3) {
-      tmp3 = !regex.test(type2.type);
-    }
-    tmp2 = tmp3;
+    tmp2 = null != type2 && isMatch && !regex.test(type2.type);
+    const tmp3 = null != type2 && isMatch && !regex.test(type2.type);
   }
   return !tmp2;
 };
 export const refreshSearchTokens = function refreshSearchTokens() {
-  const result = SearchTokens.rebuildSearchTokenConfigs();
+  let addRule2;
+  let obj = SearchTokens;
+  const result = obj.rebuildSearchTokenConfigs();
   navigation.reset();
-  _modDef12(SearchTokensDefault).forOwn((arg0, type) => {
+  const tmp3 = _modDef12;
+  const tmp3Result = tmp3(SearchTokensDefault);
+  tmp3Result.forOwn((arg0, type) => {
+    addRule = addRule.addRule;
+    const obj = { type };
     const merged = Object.assign(arg0);
-    return navigation.addRule({ type });
+    return addRule(obj);
   });
   navigation2.reset();
-  const tmp3Result = _modDef12(SearchTokensDefault);
-  const crossDMSearchTokensConfig = SearchTokens.buildCrossDMSearchTokensConfig();
-  _modDef12(crossDMSearchTokensConfig).forOwn((arg0, type) => {
-    const merged = Object.assign(arg0);
-    return navigation2.addRule({ type });
-  });
+  const obj3 = SearchTokens;
+  const crossDMSearchTokensConfig = obj3.buildCrossDMSearchTokensConfig();
   const obj4 = _modDef12(crossDMSearchTokensConfig);
-  const result1 = SearchActionCreatorsDefault.markSearchTokensRefreshed();
+  obj4.forOwn((arg0, type) => {
+    addRule = addRule2.addRule;
+    const obj = { type };
+    const merged = Object.assign(arg0);
+    return addRule(obj);
+  });
+  const obj5 = SearchActionCreatorsDefault;
+  const result1 = obj5.markSearchTokensRefreshed();
 };
 export const getChannelDisplayName = function getChannelDisplayName(isDM) {
-  const channelName = useChannelName.computeChannelName(isDM, UserStore, RelationshipStore);
+  let flag;
+  let str;
+  const obj = useChannelName;
+  const channelName = obj.computeChannelName(isDM, UserStore, RelationshipStore);
+  const obj2 = UserStore;
   if (isDM.isDM()) {
-    const user = UserStore.getUser(isDM.getRecipientId());
-    const userTag = UserUtilsDefault.getUserTag(user);
-    let flag = false;
-    let str = userTag;
+    const user = obj2.getUser(isDM.getRecipientId());
+    const obj3 = UserUtilsDefault;
+    const userTag = obj3.getUserTag(user);
+    flag = false;
+    str = userTag;
     if (null == userTag) {
       return null;
     }
@@ -633,7 +679,7 @@ export const getChannelDisplayName = function getChannelDisplayName(isDM) {
   let combined = str;
   if (null != str.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + str.replaceAll(/([\\"])/g, (arg0, arg1) => "\\" + arg1) + "\"";
+    combined = "\"" + str.replaceAll(/([\\"])/g, f108706) + "\"";
   }
   let combined1 = combined;
   if (flag) {
@@ -644,10 +690,12 @@ export const getChannelDisplayName = function getChannelDisplayName(isDM) {
 };
 export const getChannelPlaceholderName = function getChannelPlaceholderName(isGroupDM) {
   if (isGroupDM.isGroupDM()) {
-    return useChannelName.computeChannelName(isGroupDM, UserStore, RelationshipStore);
+    const obj3 = useChannelName;
+    return obj3.computeChannelName(isGroupDM, UserStore, RelationshipStore);
   } else if (isGroupDM.isDM()) {
     const user = UserStore.getUser(isGroupDM.getRecipientId());
-    return UserUtilsDefault.getUserTag(user);
+    const obj2 = UserUtilsDefault;
+    return obj2.getUserTag(user);
   } else {
     const tmp2 = GuildChannelStore.getTextChannelNameDisambiguations(isGroupDM.getGuildId())[isGroupDM.id];
     let name;
@@ -655,14 +703,17 @@ export const getChannelPlaceholderName = function getChannelPlaceholderName(isGr
       name = tmp2.name;
     }
     if (name == null) {
-      name = useChannelName.computeChannelName(isGroupDM, UserStore, RelationshipStore);
+      const obj = useChannelName;
+      name = obj.computeChannelName(isGroupDM, UserStore, RelationshipStore);
     }
     return name;
   }
 };
 export const removeInvalidPrivateChannelSearchTokens = function removeInvalidPrivateChannelSearchTokens(errorcode) {
   const items = [];
-  const item = navigation2.tokenize(errorcode).forEach((type) => {
+  const tokenizeResult = navigation2.tokenize(errorcode);
+  const item = tokenizeResult.forEach((type) => {
+    const tmp2 = type.type === SearchTokenTypes.FILTER_IN || type.type === tmp.ANSWER_IN;
     if (!tmp2) {
       items.push(type);
     }
@@ -674,6 +725,7 @@ export const removeInvalidPrivateChannelSearchTokens = function removeInvalidPri
   return importDefault.trim();
 };
 export const getSearchAnalyticsIds = function getSearchAnalyticsIds(type, getSessionId) {
+  const tmp2 = type.type === constants.GUILD || type.type === constants.GUILD_CHANNEL || type.type === constants.THREAD;
   if (tmp2) {
     if (ConsentStore.hasConsented(constants4.USAGE_STATISTICS)) {
       const guild = GuildStore.getGuild(type.guildId);
@@ -689,8 +741,8 @@ export const getSearchAnalyticsIds = function getSearchAnalyticsIds(type, getSes
         if (null != sessionId) {
           tmp13 = null;
           if (null != queryId) {
+            tmp13 = { search_session_id: sessionId, search_query_id: queryId };
             const obj = { search_session_id: sessionId, search_query_id: queryId };
-            tmp13 = obj;
           }
         }
         return tmp13;

@@ -1,50 +1,126 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 15316
+// Function ID: 15317
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [19, 17, 21, 4788, 576, 1484, 1612, 5936, 15861, 5854, 14889, 2]
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 1491, 1619, 15122, 5997, 5916, 14127, 2]
 
-// Module 16042 (DevToolsPerformanceTestingScreen)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14889 */;
-import noop from "module_19" /* 19 */;
+// Module 15316 (DevToolsPerformanceTestingScreen)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14127 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, navigation;
 
-require = fn;
-const ScrollView = fn(17).ScrollView;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 } };
-let closure_5 = createStyles.createStyles(obj);
-const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");
-
-export default noop.memo(function DevToolsPerformanceTestingScreen() {
-  const tmp = closure_5();
-  _require = require("useNavigation").useNavigation();
-  let obj2 = { style: tmp.container, contentContainerStyle: null, children: null };
-  let obj = require("useNavigation");
-  obj2.contentContainerStyle = { paddingBottom: useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16 };
-  const obj4 = { hasIcons: true, children: null };
-  const entries = Object.entries(require("DevToolsScreens").PerformanceTestingScreens);
-  obj4.children = entries.map((item) => {
-    [tmp, ] = item;
-    return jsx(screenKey(5854).TableRow, {
-      label: tmp2,
-      icon: jsx(screenKey(5854).TableRow.Icon, { IconComponent: tmp3 }),
-      arrow: true,
-      onPress() {
-        if (null != screenKey.push) {
-          screenKey.push(screenKey);
+let obj2;
+const ScrollView = react_native.ScrollView;
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 };
+let closure_6 = createStyles.createStyles(obj);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let arr;
+  let tmp7;
+  let tmp9;
+  const tmp = navigation;
+  let obj = navigation(576);
+  const cResult = obj.c(9);
+  const tmp4 = closure_6();
+  let obj2 = navigation(1491);
+  navigation = obj2.useNavigation();
+  const container = tmp4.container;
+  const sum = useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16;
+  if (cResult[0] !== sum) {
+    const obj3 = { paddingBottom: sum };
+    cResult[0] = sum;
+    cResult[1] = obj3;
+    tmp7 = obj3;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const _Object = Object;
+    const entries = Object.entries(tmp(15122).PerformanceTestingScreens);
+    cResult[2] = entries;
+    arr = entries;
+  } else {
+    arr = cResult[2];
+  }
+  if (cResult[3] !== navigation) {
+    const TableRowGroup = tmp(5997).TableRowGroup;
+    const tmp11 = <TableRowGroup hasIcons>{arr.map((item) => {
+      let Icon;
+      let headerTitle;
+      let screenKey;
+      [screenKey, { headerTitle, Icon }] = item;
+      const TableRow = navigation(dependencyMap[12]).TableRow;
+      return <TableRow key={screenKey} label={headerTitle} icon={null} arrow onPress={function onPress() {
+        const arr = navigation;
+        if (null != navigation.push) {
+          arr.push(screenKey);
         } else {
           const obj2 = { screenKey };
-          DevToolsNavigator.navigateToDevTools(obj2);
+          const obj = DevToolsNavigator;
+          obj.navigateToDevTools(obj2);
         }
+      }} />;
+    })}</TableRowGroup>;
+    cResult[3] = navigation;
+    cResult[4] = tmp11;
+    tmp9 = tmp11;
+  } else {
+    tmp9 = cResult[4];
+  }
+  if (cResult[5] === tmp4.container) {
+    if (cResult[6] === tmp7) {
+      let tmp12;
+      if (cResult[7] === tmp9) {
+        tmp12 = cResult[8];
       }
-    }, tmp);
+      return tmp12;
+    }
+  }
+  const tmp13 = <ScrollView style={container} contentContainerStyle={tmp7}>{tmp9}</ScrollView>;
+  cResult[5] = tmp4.container;
+  cResult[6] = tmp7;
+  cResult[7] = tmp9;
+  cResult[8] = tmp13;
+  tmp12 = tmp13;
+}) : (() => {
+  let closure_0;
+  let entries;
+  const tmp = closure_6();
+  let obj = require("useNavigation");
+  _require = obj.useNavigation();
+  ({
+    hasIcons: true,
+    children: entries.map((item) => {
+      let tmp;
+      [tmp, ] = item;
+      const TableRow = screenKey(dependencyMap[12]).TableRow;
+      return <TableRow key={tmp} label={tmp2} icon={null} arrow onPress={function onPress() {
+        const arr = screenKey;
+        if (null != screenKey.push) {
+          arr.push(screenKey);
+        } else {
+          const obj2 = { screenKey };
+          const obj = DevToolsNavigator;
+          obj.navigateToDevTools(obj2);
+        }
+      }} />;
+    })
   });
-  obj2.children = jsx(require("TableRowGroup").TableRowGroup, { hasIcons: true, children: null });
-  return <ScrollView style={tmp.container} contentContainerStyle={null}>{null}</ScrollView>;
-});
+  ({ paddingBottom: useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16 });
+  const TableRowGroup = require("TableRowGroup").TableRowGroup;
+  entries = Object.entries(require("DevToolsScreens").PerformanceTestingScreens);
+  return <ScrollView style={tmp.container} contentContainerStyle={{ paddingBottom: useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16 }}>{null}</ScrollView>;
+}));
+const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");
+
+export default memoResult;

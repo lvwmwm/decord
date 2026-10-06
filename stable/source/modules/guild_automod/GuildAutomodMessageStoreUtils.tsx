@@ -1,16 +1,17 @@
-// Module ID: 14060
-// Function ID: 14061
+// Module ID: 13308
+// Function ID: 13309
 // Name: GuildAutomodMessageStoreUtils
-// Dependencies: [1096, 2]
+// Dependencies: [1108, 2]
 // Exports: isNotAutomodEmbed
 
-// Module 14060 (GuildAutomodMessageStoreUtils)
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1096 */;
+// Module 13308 (GuildAutomodMessageStoreUtils)
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1108 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStoreUtils.tsx");
 
 export const isNotAutomodEmbed = function isNotAutomodEmbed(type) {
   type = type.type;
-  return type !== MessageEmbedTypes.MessageEmbedTypes.AUTO_MODERATION_MESSAGE && type !== MessageEmbedTypes.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION;
+  const tmp3 = type !== MessageEmbedTypes.MessageEmbedTypes.AUTO_MODERATION_MESSAGE && type !== MessageEmbedTypes.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION;
+  return tmp3;
 };

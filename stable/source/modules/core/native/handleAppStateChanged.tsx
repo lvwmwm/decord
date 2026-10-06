@@ -1,52 +1,61 @@
-// Module ID: 18360
-// Function ID: 18361
+// Module ID: 17728
+// Function ID: 17729
 // Name: handleAppStateChanged
-// Dependencies: [502, 1979, 1074, 3, 10, 573, 4811, 18359, 7749, 4636, 9, 1241, 2]
+// Dependencies: [502, 1986, 1086, 3, 10, 585, 4860, 17727, 6899, 4684, 9, 1253, 2]
 // Exports: default
 
-// Module 18360 (handleAppStateChanged)
+// Module 17728 (handleAppStateChanged)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4636 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7749 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4684 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6899 */;
+import BundleUpdaterActionCreatorsDefault from "BundleUpdaterActionCreators" /* 17727 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroRequire;
 ({ AnalyticEvents: hasOwnProperty, AppStates: metroRequire } = Constants);
 let closure_7 = new LoggerDefault("index.native.tsx");
-const size = fn(2);
+const tmp3 = new LoggerDefault("index.native.tsx");
 let result = size.fileFinishedImporting("modules/core/native/handleAppStateChanged.tsx");
 
 export default function handleAppStateChanged(state) {
   state = AppStateStore.getState();
-  AppStartPerformanceDefault.markAndLog(closure_7, "\u{1F3C3}", "AppState changing from " + state + " to " + state);
-  DispatcherDefault.dispatch({ type: "APP_STATE_UPDATE", state });
-  let isAuthenticatedResult = state === constants2.BACKGROUND && state === tmp6.ACTIVE;
+  const obj = AppStartPerformanceDefault;
+  obj.markAndLog(closure_7, "\u{1F3C3}", "AppState changing from " + state + " to " + state);
+  const obj2 = DispatcherDefault;
+  const obj3 = { type: "APP_STATE_UPDATE", state };
+  obj2.dispatch(obj3);
+  let isAuthenticatedResult = state === metroRequire.BACKGROUND && state === tmp6.ACTIVE;
+  const tmp8 = state === metroRequire.ACTIVE && state !== metroRequire.ACTIVE;
   if (isAuthenticatedResult) {
     isAuthenticatedResult = AuthenticationStore.isAuthenticated();
   }
   if (isAuthenticatedResult) {
-    isAuthenticatedResult = RTCConnectionStore.default.isDisconnected();
     const _default = RTCConnectionStore.default;
+    isAuthenticatedResult = _default.isDisconnected();
   }
   if (isAuthenticatedResult) {
-    tmp2(18359).deferUpdate();
-    const tmp2Result = tmp2(18359);
+    const tmp2Result = BundleUpdaterActionCreatorsDefault;
+    tmp2Result.deferUpdate();
   }
-  if (state === constants2.ACTIVE) {
-    TTIAnalyticsUtils.trackAppOpened("launcher");
-    const result = ThemeActionCreators.setSystemThemeIfNeeded();
+  if (state === metroRequire.ACTIVE) {
+    const obj5 = TTIAnalyticsUtils;
+    obj5.trackAppOpened("launcher");
+    const obj6 = ThemeActionCreators;
+    const result = obj6.setSystemThemeIfNeeded();
   }
-  const obj3 = { type: "APP_STATE_UPDATE", state };
-  const tmp8 = state === constants2.ACTIVE && state !== constants2.ACTIVE;
-  TTITrackerDefault.appStateChanged(state);
+  const tmp2Result3 = TTITrackerDefault;
+  tmp2Result3.appStateChanged(state);
   if (tmp8) {
-    tmp2(1241).track(constants.APP_BACKGROUND, {});
-    const tmp2Result4 = tmp2(1241);
+    const tmp2Result4 = AnalyticsUtilsDefault;
+    tmp2Result4.track(hasOwnProperty.APP_BACKGROUND, {});
   }
 };

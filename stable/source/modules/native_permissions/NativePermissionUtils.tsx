@@ -1,21 +1,26 @@
-// Module ID: 5387
-// Function ID: 5388
+// Module ID: 5452
+// Function ID: 5453
 // Name: NativePermissionUtils
-// Dependencies: [5388, 5389, 5390, 5394, 2, 5391]
+// Dependencies: [5453, 5454, 5455, 5459, 2, 5456]
 
-// Module 5387 (NativePermissionUtils)
-import NativePermissionManager_mod from "NativePermissionManager" /* 5388 */;
+// Module 5452 (NativePermissionUtils)
+import ProcessArgs2 from "ProcessArgs" /* 5454 */;
+import nativePermissionDesktopNullUtils from "nativePermissionDesktopNullUtils" /* 5455 */;
+import NativePermissionBaseUtils from "NativePermissionBaseUtils" /* 5456 */;
+import mobile_NativePermissionUtils from "mobile/NativePermissionUtils" /* 5459 */;
+import NativePermissionManager_mod from "NativePermissionManager" /* 5453 */;
+import size from "module_2" /* 2 */;
 
+let _default;
 let NativePermissionManager = NativePermissionManager_mod;
 NativePermissionManager = NativePermissionManager.initialize();
-const ProcessArgs = fn(5389).ProcessArgs;
+const ProcessArgs = ProcessArgs2.ProcessArgs;
 if (ProcessArgs.isDiscordTestSet()) {
-  let _default = fn(5390).default;
+  _default = nativePermissionDesktopNullUtils.default;
 } else {
-  _default = fn(5394).default;
+  _default = mobile_NativePermissionUtils.default;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/native_permissions/NativePermissionUtils.tsx");
 
 export default _default;
-export const NativePermissionsRequestOptions = fn(5391).NativePermissionsRequestOptions;
+export const NativePermissionsRequestOptions = NativePermissionBaseUtils.NativePermissionsRequestOptions;

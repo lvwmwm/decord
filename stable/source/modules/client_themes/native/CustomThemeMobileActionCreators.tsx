@@ -1,24 +1,30 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 11303
+// Function ID: 11304
 // Name: CustomThemeMobileActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: clearPreviewTheme, previewCustomTheme, resetCustomTheme, updateCustomTheme
 
-// Module 12230 (CustomThemeMobileActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11303 (CustomThemeMobileActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/client_themes/native/CustomThemeMobileActionCreators.tsx");
 
-export const updateCustomTheme = function updateCustomTheme(customThemeSettings, customThemeBaseTheme) {
-  DispatcherDefault.dispatch({ type: "UPDATE_CUSTOM_THEME", customTheme: customThemeSettings, theme: customThemeBaseTheme });
+export const updateCustomTheme = function updateCustomTheme(customThemeSettings, first1) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "UPDATE_CUSTOM_THEME", customTheme: customThemeSettings, theme: first1 };
+  obj.dispatch(obj2);
 };
 export const resetCustomTheme = function resetCustomTheme() {
-  DispatcherDefault.dispatch({ type: "RESET_CUSTOM_THEME" });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "RESET_CUSTOM_THEME" });
 };
 export const previewCustomTheme = function previewCustomTheme(previewCustomTheme) {
-  DispatcherDefault.dispatch({ type: "PREVIEW_CUSTOM_THEME", previewCustomTheme });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "PREVIEW_CUSTOM_THEME", previewCustomTheme };
+  obj.dispatch(obj2);
 };
 export const clearPreviewTheme = function clearPreviewTheme() {
-  DispatcherDefault.dispatch({ type: "CLEAR_PREVIEW_CUSTOM_THEME" });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "CLEAR_PREVIEW_CUSTOM_THEME" });
 };

@@ -1,10 +1,10 @@
-// Module ID: 4718
-// Function ID: 4719
-// Name: Client
-// Dependencies: [2, 1186]
+// Module ID: 4765
+// Function ID: 4766
+// Name: flow/Client
+// Dependencies: [2, 1198]
 
-// Module 4718 (Client)
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+// Module 4765 (flow/Client)
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("flow/Client.tsx");

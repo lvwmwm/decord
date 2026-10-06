@@ -1,19 +1,19 @@
-// Module ID: 2025
-// Function ID: 2026
+// Module ID: 2033
+// Function ID: 2034
 // Name: UserSettingsProtoUtils
-// Dependencies: [1223, 2]
+// Dependencies: [1235, 2]
 // Exports: createModifiedProto, getProtoFieldClass
 
-// Module 2025 (UserSettingsProtoUtils)
-import ProtoUtils from "ProtoUtils" /* 1223 */;
+// Module 2033 (UserSettingsProtoUtils)
+import ProtoUtils from "ProtoUtils" /* 1235 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsProtoUtils.tsx");
 
 export const getProtoFieldClass = function getProtoFieldClass(PreloadedUserSettings, field) {
-  closure_0 = field;
+  let closure_0 = field;
   const fields = PreloadedUserSettings.fields;
-  const found = fields.find((localName) => localName.localName === closure_0);
+  const found = fields.find((localName) => localName.localName === field);
   if (null == found) {
     const _Error = Error;
     const _String = String;
@@ -24,9 +24,11 @@ export const getProtoFieldClass = function getProtoFieldClass(PreloadedUserSetti
   }
 };
 export const createModifiedProto = function createModifiedProto(favoriteGifs, fn, protoFieldClass, PreloadedUserSettings, arg4) {
+  let fromBinaryResult;
   if (null != favoriteGifs) {
-    let fromBinaryResult = protoFieldClass.fromBinary(protoFieldClass.toBinary(favoriteGifs), ProtoUtils.BINARY_READ_OPTIONS);
+    const fromBinary = protoFieldClass.fromBinary;
     const toBinaryResult = protoFieldClass.toBinary(favoriteGifs);
+    fromBinaryResult = fromBinary(toBinaryResult, ProtoUtils.BINARY_READ_OPTIONS);
   } else {
     fromBinaryResult = protoFieldClass.create();
   }

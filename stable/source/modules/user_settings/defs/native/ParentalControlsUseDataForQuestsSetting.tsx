@@ -1,35 +1,57 @@
-// Module ID: 16233
-// Function ID: 16234
+// Module ID: 15510
+// Function ID: 15511
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [7811, 8265, 15099, 1115, 2482, 11754, 2]
+// Dependencies: [6961, 7421, 558, 576, 14342, 1127, 2490, 10874, 2]
 
-// Module 16233 (ParentalControlsUseDataForQuestsSetting)
-import util from "util" /* 1115 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15099 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
+// Module 15510 (ParentalControlsUseDataForQuestsSetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import _modDef2490 from "module_2490" /* 2490 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
-  useTitle: function useDataForQuestsSettingTitle() {
-    const intl = util.intl;
-    return intl.string(_modDef2482.ZhaNu8);
-  },
-  parent: fn(8265).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue: function useDataToSupportQuestsSettingValue() {
+let tmp;
+const ParentalControlledUserSettings = tmp(14342);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
-    const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
-    return !ParentalControlledDropsOptedOut.useControlledSetting(selectedTeenId);
+    cResult[0] = selectedTeenId;
+    first = selectedTeenId;
+  } else {
+    first = cResult[0];
+  }
+  const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
+  const useControlledSetting = ParentalControlledDropsOptedOut.useControlledSetting;
+  return !useControlledSetting(first);
+}) : (() => {
+  const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
+  const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
+  const useControlledSetting = ParentalControlledDropsOptedOut.useControlledSetting;
+  return !useControlledSetting(selectedTeenId);
+});
+let obj = {
+  useTitle: function useDataForQuestsSettingTitle() {
+    const intl = intl2.intl;
+    return intl.string(_modDef2490.ZhaNu8);
   },
+  parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  useValue: tmp2,
   onValueChange: function onDataToSupportQuestsSettingValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
-    const result = ParentalControlledDropsOptedOut.updateControlledSetting(selectedTeenId, !arg0);
+    const updateControlledSetting = ParentalControlledDropsOptedOut.updateControlledSetting;
+    const result = updateControlledSetting(selectedTeenId, !arg0);
   },
   unsearchable: true
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataForQuestsSetting.tsx");
 
 export default toggle;

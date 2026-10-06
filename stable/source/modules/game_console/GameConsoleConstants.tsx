@@ -1,25 +1,27 @@
-// Module ID: 9390
-// Function ID: 9391
+// Module ID: 8542
+// Function ID: 8543
 // Name: GameConsoleConstants
-// Dependencies: [1074, 8642, 2]
+// Dependencies: [1086, 7791, 2]
 // Exports: XBOX_HANDOFF_SEARCH_PARAMS
 
-// Module 9390 (GameConsoleConstants)
-import Constants from "Constants" /* 1074 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8642 */;
+// Module 8542 (GameConsoleConstants)
+import Constants from "Constants" /* 1086 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
 import size from "module_2" /* 2 */;
 
+const ActivityGamePlatforms = Constants.ActivityGamePlatforms;
 const items = [OAuth2Scopes.OAuth2Scopes.VOICE, OAuth2Scopes.OAuth2Scopes.DM_CHANNELS_READ, OAuth2Scopes.OAuth2Scopes.GUILDS, OAuth2Scopes.OAuth2Scopes.GUILDS_MEMBERS_READ, OAuth2Scopes.OAuth2Scopes.IDENTIFY, OAuth2Scopes.OAuth2Scopes.CONNECTIONS, OAuth2Scopes.OAuth2Scopes.ACTIVITIES_READ];
 const items1 = [OAuth2Scopes.OAuth2Scopes.VOICE, OAuth2Scopes.OAuth2Scopes.DM_CHANNELS_READ, OAuth2Scopes.OAuth2Scopes.GUILDS, OAuth2Scopes.OAuth2Scopes.GUILDS_MEMBERS_READ, OAuth2Scopes.OAuth2Scopes.IDENTIFY, OAuth2Scopes.OAuth2Scopes.CONNECTIONS];
 let obj = { PLAYSTATION: "playstation", XBOX: "xbox" };
 const items2 = [, ];
 ({ XBOX: arr3[0], PLAYSTATION: arr3[1] } = obj);
 const items3 = [, ];
-({ XBOX: arr4[0], PS5: arr4[1] } = Constants.ActivityGamePlatforms);
-const set = new Set(items2);
+({ XBOX: arr4[0], PS5: arr4[1] } = ActivityGamePlatforms);
 const obj2 = { CONSOLE_DEVICE_PASSCODE_UNLOCK_REQUIRED: 270000, [270000]: "CONSOLE_DEVICE_PASSCODE_UNLOCK_REQUIRED", CONSOLE_DEVICE_UNAVAILABLE: 270001, [270001]: "CONSOLE_DEVICE_UNAVAILABLE", CONSOLE_DEVICE_UNVAILABLE_FROM_OTHER_USERS: 270002, [270002]: "CONSOLE_DEVICE_UNVAILABLE_FROM_OTHER_USERS", CONSOLE_DEVICE_COMMUNICATION_RESTRICTED: 270003, [270003]: "CONSOLE_DEVICE_COMMUNICATION_RESTRICTED", CONSOLE_DEVICE_INVALID_POWER_MODE: 270004, [270004]: "CONSOLE_DEVICE_INVALID_POWER_MODE", CONSOLE_DEVICE_ACCOUNT_LINK_ERROR: 270005, [270005]: "CONSOLE_DEVICE_ACCOUNT_LINK_ERROR", CONSOLE_DEVICE_MAX_MEMBERS_REACHED: 270006, [270006]: "CONSOLE_DEVICE_MAX_MEMBERS_REACHED", CONSOLE_DEVICE_BAD_COMMAND: 270007, [270007]: "CONSOLE_DEVICE_BAD_COMMAND" };
 const items4 = [obj2.CONSOLE_DEVICE_PASSCODE_UNLOCK_REQUIRED];
+const set = new Set(items2);
 const set1 = new Set(items3);
+const set2 = new Set(items4);
 const result = size.fileFinishedImporting("modules/game_console/GameConsoleConstants.tsx");
 
 export const XBOX_URL_BASE = "xbox://communitylinking/donut/audio";
@@ -43,5 +45,5 @@ export const GameConsoleTypes = obj;
 export const GAME_CONSOLE_SESSIONS = set;
 export const CONSOLE_VOICE_PLATFORMS = set1;
 export const GameConsoleCommandResultErrorCodes = obj2;
-export const USER_ACTION_REQUIRED_ERROR_CODES = new Set(items4);
+export const USER_ACTION_REQUIRED_ERROR_CODES = set2;
 export const GAME_CONSOLE_ALERT_MODAL_LOCATION = "console error alert";

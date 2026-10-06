@@ -1,163 +1,486 @@
-// Module ID: 17027
-// Function ID: 17028
+// Module ID: 16340
+// Function ID: 16341
 // Name: VibegrationsMessageAuthor
-// Dependencies: [19, 17, 1372, 21, 4788, 576, 17024, 17028, 504, 17029, 4784, 5371, 1115, 4632, 17030, 3710, 1177, 5310, 2]
-// Exports: VibegrationsConjureAvatar, VibegrationsConjureHeader, VibegrationsUserAvatar, VibegrationsUserHeader, useMessageAuthorUser
+// Dependencies: [19, 17, 1378, 21, 4837, 588, 16337, 558, 576, 16341, 504, 16342, 4833, 5436, 1127, 4680, 16343, 3718, 1189, 5375, 2]
 
-// Module 17027 (VibegrationsMessageAuthor)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import _modDef3710 from "module_3710" /* 3710 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import AppsIcon from "AppsIcon" /* 5310 */;
-import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 17028 */;
-import VibegrationsMessageTime from "VibegrationsMessageTime" /* 17029 */;
-import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17030 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 16340 (VibegrationsMessageAuthor)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import VibegrationsNativeStatusLine from "VibegrationsNativeStatusLine" /* 16337 */;
+import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 16341 */;
+import VibegrationsMessageTime from "VibegrationsMessageTime" /* 16342 */;
+import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 16343 */;
+import react from "react" /* 19 */;
+import UserStore from "UserStore" /* 1378 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-class VibegrationsMessageHeader {
-  constructor(arg0) {
-    ({ name, onPressName } = global);
-    ({ color, at } = global);
-    tmp = closure_8();
-    tmp2 = closure_0;
-    tmp3 = closure_2;
-    obj = closure_0(closure_2[9]);
-    describeMessageTimeResult = obj.describeMessageTime(at);
-    tmp5 = jsx;
-    obj1 = { variant: "text-md/semibold", color, style: tmp.name, lineClamp: 1, children: name };
-    tmp6 = jsx(closure_0(closure_2[10]).Text, obj1);
-    obj7 = { style: tmp.header, children: null };
-    tmp5Result = tmp6;
-    tmp7 = jsxs;
-    tmp8 = View;
-    if (null != onPressName) {
-      obj8 = { style: null, onPress: null, onLongPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
-      obj8.style = tmp.name;
-      obj8.onPress = onPressName;
-      obj8.onLongPress = onPressName;
-      intl = tmp2(tmp3[12]).intl;
-      obj9 = { username: null };
-      obj9.username = name;
-      obj8.accessibilityLabel = intl.formatToPlainString(tmp2(tmp3[12]).t.uCenkh, obj9);
-      obj8.children = tmp6;
-      tmp5Result = tmp5(tmp2(tmp3[11]).PressableOpacity, obj8);
-    }
-    items = [, ];
-    items[0] = tmp5Result;
-    tmp5Result1 = null;
-    if (null != describeMessageTimeResult) {
-      obj10 = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
-      obj10.style = tmp.time;
-      obj10.children = describeMessageTimeResult;
-      tmp5Result1 = tmp5(tmp2(tmp3[10]).Text, obj10);
-    }
-    items[1] = tmp5Result1;
-    obj7.children = items;
-    return tmp7(tmp8, obj7);
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let size;
+let tmp;
+const AppsIcon2 = tmp(5375);
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { header: obj2, name: { flexShrink: 1 }, time: { flexShrink: 0 }, conjureTile: size };
+obj2 = { flexDirection: "row", alignItems: "baseline", gap: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+size = { width: VibegrationsNativeStatusLine.MESSAGE_AVATAR_SIZE, height: VibegrationsNativeStatusLine.MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
+let closure_8 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  let tmp7;
+  let tmp9;
+  _require = arg0;
+  const tmp = _require;
+  const tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(7);
+  if (cResult[0] !== arg0) {
+    const fn = function l() {
+      const obj = vibegrationsMessageAuthors;
+      return obj.requestMessageAuthor(closure_0);
+    };
+    const items = [arg0];
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp5 = items;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
   }
-}
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { header: { flexDirection: "row", alignItems: "baseline", gap: nativeDefault.space.PX_8 }, name: { flexShrink: 1 }, time: { flexShrink: 0 }, conjureTile: null };
-let size = { width: fn(17024).MESSAGE_AVATAR_SIZE, height: fn(17024).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
-obj2.conjureTile = size;
-const React6 = createStyles.createStyles(obj2);
-size = fn(2);
-let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsMessageAuthor.tsx");
-
-export const useMessageAuthorUser = function useMessageAuthorUser(userId) {
-  _require = userId;
-  const items = [userId];
-  const effect = noop.useEffect(() => vibegrationsMessageAuthors.requestMessageAuthor(stateFromStores), items);
+  const effect = react.useEffect(tmp4, tmp5);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserStore];
+    cResult[3] = items1;
+    tmp7 = items1;
+  } else {
+    tmp7 = cResult[3];
+  }
+  if (cResult[4] !== arg0) {
+    const fn2 = function c() {
+      let user = null;
+      const resolveMessageAuthor = vibegrationsMessageAuthors.resolveMessageAuthor;
+      vibegrationsMessageAuthors;
+      if (null != closure_0) {
+        user = UserStore.getUser(tmp2);
+      }
+      return resolveMessageAuthor(closure_0, user, UserStore.getCurrentUser());
+    };
+    const items2 = [arg0];
+    cResult[4] = arg0;
+    cResult[5] = fn2;
+    cResult[6] = items2;
+    tmp10 = items2;
+    tmp9 = fn2;
+  } else {
+    tmp9 = cResult[5];
+    tmp10 = cResult[6];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(tmp7, tmp9, tmp10);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const items = [arg0];
+  const effect = react.useEffect(() => {
+    const obj = vibegrationsMessageAuthors;
+    return obj.requestMessageAuthor(closure_0);
+  }, items);
+  let obj = require("get initialized");
   const items1 = [UserStore];
-  const items2 = [userId];
-  return require("initialize").useStateFromStores(items1, () => {
+  const items2 = [arg0];
+  return obj.useStateFromStores(items1, () => {
     let user = null;
-    if (null != stateFromStores) {
-      user = UserStore.getUser(tmp);
+    const resolveMessageAuthor = vibegrationsMessageAuthors.resolveMessageAuthor;
+    vibegrationsMessageAuthors;
+    if (null != closure_0) {
+      user = UserStore.getUser(tmp2);
     }
-    return vibegrationsMessageAuthors.resolveMessageAuthor(stateFromStores, user, UserStore.getCurrentUser());
+    return resolveMessageAuthor(closure_0, user, UserStore.getCurrentUser());
   }, items2);
-};
-export { VibegrationsMessageHeader };
-export const VibegrationsUserHeader = function VibegrationsUserHeader(userId) {
-  userId = userId.userId;
-  let stateFromStores;
-  closure_129_0 = userId;
-  const items = [userId];
-  const effect = noop.useEffect(() => vibegrationsMessageAuthors.requestMessageAuthor(stateFromStores), items);
-  const items1 = [UserStore];
-  const items2 = [userId];
-  stateFromStores = stateFromStores(504).useStateFromStores(items1, () => {
-    let user = null;
-    if (null != stateFromStores) {
-      user = UserStore.getUser(tmp);
+});
+let closure_9 = tmp4;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let at;
+  let color;
+  let intl;
+  let items;
+  let name;
+  let obj5;
+  let onPressName;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(18);
+  ({ name, color, at, onPressName } = arg0);
+  const tmp4 = closure_8();
+  if (cResult[0] !== at) {
+    const tmpResult = VibegrationsMessageTime;
+    const describeMessageTimeResult = tmpResult.describeMessageTime(at);
+    cResult[0] = at;
+    cResult[1] = describeMessageTimeResult;
+    tmp5 = describeMessageTimeResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === color) {
+    if (cResult[3] === name) {
+      let tmp7;
+      if (cResult[4] === tmp4.name) {
+        tmp7 = cResult[5];
+      }
+      if (cResult[6] === name) {
+        if (cResult[7] === tmp7) {
+          if (cResult[8] === onPressName) {
+            let tmp9;
+            if (cResult[9] === tmp4.name) {
+              tmp9 = cResult[10];
+            }
+            if (cResult[11] === tmp4.time) {
+              let tmp13;
+              if (cResult[12] === tmp5) {
+                tmp13 = cResult[13];
+              }
+              if (cResult[14] === tmp4.header) {
+                if (cResult[15] === tmp9) {
+                  let tmp16;
+                  if (cResult[16] === tmp13) {
+                    tmp16 = cResult[17];
+                  }
+                  return tmp16;
+                }
+              }
+              const obj2 = { style: tmp4.header, children: items };
+              items = [tmp9, tmp13];
+              const tmp19 = metroImportDefault(View, obj2);
+              cResult[14] = tmp4.header;
+              cResult[15] = tmp9;
+              cResult[16] = tmp13;
+              cResult[17] = tmp19;
+              tmp16 = tmp19;
+            }
+            let tmp14 = null;
+            if (null != tmp5) {
+              const obj3 = { variant: "text-xs/medium", color: "text-muted", style: tmp4.time, children: tmp5 };
+              tmp14 = metroRequire(tmp(4833).Text, obj3);
+            }
+            cResult[11] = tmp4.time;
+            cResult[12] = tmp5;
+            cResult[13] = tmp14;
+            tmp13 = tmp14;
+          }
+        }
+      }
+      let tmp11 = tmp7;
+      if (null != onPressName) {
+        const obj4 = { style: tmp4.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp7 };
+        const PressableOpacity = tmp(5436).PressableOpacity;
+        intl = tmp(1127).intl;
+        obj5 = { username: name };
+        tmp11 = metroRequire(PressableOpacity, obj4);
+      }
+      cResult[6] = name;
+      cResult[7] = tmp7;
+      cResult[8] = onPressName;
+      cResult[9] = tmp4.name;
+      cResult[10] = tmp11;
+      tmp9 = tmp11;
     }
-    return vibegrationsMessageAuthors.resolveMessageAuthor(stateFromStores, user, UserStore.getCurrentUser());
-  }, items2);
-  let obj = stateFromStores(504);
-  const name = stateFromStores(4632).useName(stateFromStores);
-  [][0] = stateFromStores;
+  }
+  const obj6 = { variant: "text-md/semibold", color, style: tmp4.name, lineClamp: 1, children: name };
+  const tmp8 = metroRequire(Text_Text.Text, obj6);
+  cResult[2] = color;
+  cResult[3] = name;
+  cResult[4] = tmp4.name;
+  cResult[5] = tmp8;
+  tmp7 = tmp8;
+}) : ((arg0) => {
+  let at;
+  let color;
+  let intl;
+  let items;
+  let name;
+  let obj5;
+  let onPressName;
+  ({ name, onPressName } = arg0);
+  ({ color, at } = arg0);
+  const tmp = closure_8();
+  const obj = VibegrationsMessageTime;
+  const describeMessageTimeResult = obj.describeMessageTime(at);
+  const obj2 = { variant: "text-md/semibold", color, style: tmp.name, lineClamp: 1, children: name };
+  const tmp6 = metroRequire(Text_Text.Text, obj2);
+  let tmp5Result = tmp6;
+  const obj3 = { style: tmp.header, children: items };
+  const tmp7 = metroImportDefault;
+  const tmp8 = View;
+  if (null != onPressName) {
+    const obj4 = { style: tmp.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp6 };
+    const PressableOpacity = tmp2(5436).PressableOpacity;
+    intl = tmp2(1127).intl;
+    obj5 = { username: name };
+    tmp5Result = tmp5(PressableOpacity, obj4);
+  }
+  items = [tmp5Result, ];
+  let tmp5Result2 = null;
+  if (null != describeMessageTimeResult) {
+    const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.time, children: describeMessageTimeResult };
+    tmp5Result2 = tmp5(tmp2(4833).Text, obj6);
+  }
+  items[1] = tmp5Result2;
+  return tmp7(tmp8, obj3);
+});
+let closure_10 = tmp5;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let closure_0;
+  let tmp4;
+  let obj = require("react");
+  const cResult = obj.c(6);
+  const at = userId.at;
+  const tmp2 = closure_9(userId.userId);
+  _require = tmp2;
+  const obj2 = require("UserUtils");
+  const name = obj2.useName(tmp2);
+  if (cResult[0] !== tmp2) {
+    const fn = function n() {
+      if (null != closure_0) {
+        const obj = VibegrationsMessageActionSheet;
+        const result = obj.openMessageAuthorProfile(tmp.id);
+      }
+    };
+    cResult[0] = tmp2;
+    cResult[1] = fn;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
   let tmp5 = null;
-  if (null != stateFromStores) {
+  if (null != tmp2) {
     tmp5 = null;
     if (null != name) {
-      const obj3 = { name, color: "text-default", at: userId.at, onPressName: tmp4 };
-      tmp5 = closure_6(VibegrationsMessageHeader, obj3);
+      if (cResult[2] === at) {
+        if (cResult[3] === tmp4) {
+          let tmp6;
+          if (cResult[4] === name) {
+            tmp6 = cResult[5];
+          }
+          tmp5 = tmp6;
+        }
+      }
+      const obj3 = { name, color: "text-default", at, onPressName: tmp4 };
+      const tmp9 = closure_6(closure_10, obj3);
+      cResult[2] = at;
+      cResult[3] = tmp4;
+      cResult[4] = name;
+      cResult[5] = tmp9;
+      tmp6 = tmp9;
     }
   }
   return tmp5;
-};
-export const VibegrationsConjureHeader = function VibegrationsConjureHeader(arg0) {
-  const obj = { name: null, color: "text-brand", at: null };
-  const intl = util.intl;
-  obj.name = intl.string(_modDef3710.Xmvb23);
-  obj.at = arg0.at;
-  return timestampProducer(VibegrationsMessageHeader, obj);
-};
-export const VibegrationsUserAvatar = function VibegrationsUserAvatar(arg0) {
-  ({ userId, size } = arg0);
-  if (size === undefined) {
-    size = stateFromStores(1177).AvatarSizes.NORMAL;
-  }
-  stateFromStores = undefined;
-  closure_129_0 = userId;
-  const items = [userId];
-  const effect = noop.useEffect(() => vibegrationsMessageAuthors.requestMessageAuthor(stateFromStores), items);
-  const items1 = [UserStore];
-  const items2 = [userId];
-  stateFromStores = stateFromStores(504).useStateFromStores(items1, () => {
-    let user = null;
-    if (null != stateFromStores) {
-      user = UserStore.getUser(tmp);
+}) : ((userId) => {
+  let closure_0;
+  const at = userId.at;
+  const tmp = closure_9(userId.userId);
+  _require = tmp;
+  let obj = require("UserUtils");
+  const name = obj.useName(tmp);
+  [][0] = tmp;
+  let tmp4 = null;
+  if (null != tmp) {
+    tmp4 = null;
+    if (null != name) {
+      const obj2 = { name, color: "text-default", at, onPressName: tmp3 };
+      tmp4 = closure_6(closure_10, obj2);
     }
-    return vibegrationsMessageAuthors.resolveMessageAuthor(stateFromStores, user, UserStore.getCurrentUser());
-  }, items2);
-  const items3 = [stateFromStores];
-  const callback = noop.useCallback(() => {
-    if (null != stateFromStores) {
-      const result = VibegrationsMessageActionSheet.openMessageAuthorProfile(tmp.id);
-    }
-  }, items3);
-  let tmp8 = null;
-  if (null != stateFromStores) {
-    const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: null, children: null };
-    const intl = tmp4(1115).intl;
-    obj2.accessibilityLabel = intl.string(tmp4(1115).t.iXAna6);
-    const obj3 = { size, user: stateFromStores, guildId: "Array" };
-    obj2.children = closure_6(tmp4(1177).Avatar, obj3);
-    tmp8 = closure_6(tmp4(5371).PressableOpacity, obj2);
   }
-  return tmp8;
-};
-export const VibegrationsConjureAvatar = function VibegrationsConjureAvatar() {
-  const obj = { style: closure_8().conjureTile, children: timestampProducer(AppsIcon.AppsIcon, { size: "sm", color: nativeDefault.colors.TEXT_BRAND }) };
-  return timestampProducer(View, obj);
-};
+  return tmp4;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(3);
+  const at = arg0.at;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = intl2.intl;
+    const stringResult = intl.string(_modDef3718.Xmvb23);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== at) {
+    const obj2 = { name: first, color: "text-brand", at };
+    const tmp10 = metroRequire(closure_10, obj2);
+    cResult[1] = at;
+    cResult[2] = tmp10;
+    tmp7 = tmp10;
+  } else {
+    tmp7 = cResult[2];
+  }
+  return tmp7;
+}) : ((arg0) => {
+  let at;
+  let intl;
+  const obj = { name: intl.string(_modDef3718.Xmvb23), color: "text-brand", at };
+  at = arg0.at;
+  intl = intl2.intl;
+  return metroRequire(closure_10, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp5;
+  let userId;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(9);
+  ({ size, userId } = arg0);
+  if (undefined === size) {
+    size = tmp(1189).AvatarSizes.NORMAL;
+  }
+  const tmp4 = closure_9(userId);
+  _require = tmp4;
+  if (cResult[0] !== tmp4) {
+    const fn = function n() {
+      if (null != closure_0) {
+        const obj = VibegrationsMessageActionSheet;
+        const result = obj.openMessageAuthorProfile(tmp.id);
+      }
+    };
+    cResult[0] = tmp4;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  let tmp6 = null;
+  if (null != tmp4) {
+    let tmp8;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(tmp(1127).t.iXAna6);
+      cResult[2] = stringResult;
+      tmp8 = stringResult;
+    } else {
+      tmp8 = cResult[2];
+    }
+    if (cResult[3] === size) {
+      let tmp10;
+      if (cResult[4] === tmp4) {
+        tmp10 = cResult[5];
+      }
+      if (cResult[6] === tmp5) {
+        let tmp13;
+        if (cResult[7] === tmp10) {
+          tmp13 = cResult[8];
+        }
+        tmp6 = tmp13;
+      }
+      const obj2 = { onPress: tmp5, onLongPress: tmp5, accessibilityRole: "button", accessibilityLabel: tmp8, children: tmp10 };
+      const tmp15 = closure_6(tmp(5436).PressableOpacity, obj2);
+      cResult[6] = tmp5;
+      cResult[7] = tmp10;
+      cResult[8] = tmp15;
+      tmp13 = tmp15;
+    }
+    const obj3 = { size, user: tmp4, guildId: "r" };
+    const tmp12 = closure_6(tmp(1189).Avatar, obj3);
+    cResult[3] = size;
+    cResult[4] = tmp4;
+    cResult[5] = tmp12;
+    tmp10 = tmp12;
+  }
+  return tmp6;
+}) : ((size) => {
+  let closure_0;
+  let intl;
+  let obj2;
+  let NORMAL = size.size;
+  const userId = size.userId;
+  if (NORMAL === undefined) {
+    const tmp = _require;
+    NORMAL = require("native").AvatarSizes.NORMAL;
+  }
+  const tmp3 = closure_9(userId);
+  _require = tmp3;
+  const items = [tmp3];
+  const callback = react.useCallback(() => {
+    if (null != closure_0) {
+      const obj = VibegrationsMessageActionSheet;
+      const result = obj.openMessageAuthorProfile(tmp.id);
+    }
+  }, items);
+  let tmp5 = null;
+  if (null != tmp3) {
+    let obj = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(require("intl").t.iXAna6), children: closure_6(require("native").Avatar, obj2) };
+    const PressableOpacity = require("Pressables").PressableOpacity;
+    intl = require("intl").intl;
+    obj2 = { size: NORMAL, user: tmp3, guildId: "r" };
+    tmp5 = closure_6(PressableOpacity, obj);
+  }
+  return tmp5;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(3);
+  const tmp4 = closure_8();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_BRAND };
+    const AppsIcon = AppsIcon2.AppsIcon;
+    const tmp8 = metroRequire(AppsIcon, obj2);
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.conjureTile) {
+    const obj3 = { style: tmp4.conjureTile, children: first };
+    const tmp12 = metroRequire(View, obj3);
+    cResult[1] = tmp4.conjureTile;
+    cResult[2] = tmp12;
+    tmp9 = tmp12;
+  } else {
+    tmp9 = cResult[2];
+  }
+  return tmp9;
+}) : (() => {
+  let AppsIcon;
+  let obj2;
+  const obj = { style: closure_8().conjureTile, children: metroRequire(AppsIcon, obj2) };
+  obj2 = { size: "sm", color: nativeDefault.colors.TEXT_BRAND };
+  AppsIcon = AppsIcon2.AppsIcon;
+  return metroRequire(View, obj);
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsMessageAuthor.tsx");
+
+export const useMessageAuthorUser = tmp4;
+export const VibegrationsMessageHeader = tmp5;
+export const VibegrationsUserHeader = tmp6;
+export const VibegrationsConjureHeader = tmp7;
+export const VibegrationsUserAvatar = tmp8;
+export const VibegrationsConjureAvatar = tmp9;

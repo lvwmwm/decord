@@ -1,20 +1,73 @@
-// Module ID: 5826
-// Function ID: 5827
+// Module ID: 5890
+// Function ID: 5891
 // Name: ActivityIndicator/ActivityIndicator
-// Dependencies: [17, 21, 4489, 576, 2]
-// Exports: ActivityIndicator
+// Dependencies: [109, 17, 21, 558, 576, 4535, 588, 2]
 
-// Module 5826 (ActivityIndicator/ActivityIndicator)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
+// Module 5890 (ActivityIndicator/ActivityIndicator)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useToken2 from "useToken" /* 4535 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const ActivityIndicator = _mod17.ActivityIndicator;
-const jsx = jsxProd.jsx;
-const result = size.fileFinishedImporting("design/components/ActivityIndicator/native/ActivityIndicator.native.tsx");
-
-export const ActivityIndicator = function ActivityIndicator(size) {
+let closure_3 = ["size", "animating"];
+const ActivityIndicator = react_native.ActivityIndicator;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let animating;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  const obj = react;
+  const cResult = obj.c(9);
+  if (cResult[0] !== arg0) {
+    ({ size, animating } = arg0);
+    const tmp9 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = tmp9;
+    cResult[2] = size;
+    cResult[3] = animating;
+    tmp6 = animating;
+    tmp5 = size;
+    tmp4 = tmp9;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+  }
+  let str = "large";
+  if (undefined !== tmp5) {
+    str = tmp5;
+  }
+  const useToken = tmp(4535).useToken;
+  let color = tmp4.color;
+  useToken2;
+  if (color == null) {
+    color = useToken(nativeDefault.colors.BACKGROUND_BRAND);
+  }
+  if (cResult[4] === (undefined === tmp6 || tmp6)) {
+    if (cResult[5] === color) {
+      if (cResult[6] === tmp4) {
+        let tmp12;
+        if (cResult[7] === str) {
+          tmp12 = cResult[8];
+        }
+        return tmp12;
+      }
+    }
+  }
+  const merged = Object.assign(tmp4);
+  const tmp14 = <ActivityIndicator size={str} animating={undefined === tmp6 || tmp6} color={color} />;
+  cResult[4] = undefined === tmp6 || tmp6;
+  cResult[5] = color;
+  cResult[6] = tmp4;
+  cResult[7] = str;
+  cResult[8] = tmp14;
+  tmp12 = tmp14;
+}) : ((size) => {
   let str = size.size;
   if (str === undefined) {
     str = "large";
@@ -24,14 +77,16 @@ export const ActivityIndicator = function ActivityIndicator(size) {
     flag = true;
   }
   const merged = Object.assign(size, Object.assign({ size: 0, animating: 0 }));
+  const useToken = useToken2.useToken;
   let color = merged.color;
+  useToken2;
   if (color == null) {
-    color = obj.useToken(nativeDefault.colors.BACKGROUND_BRAND);
+    color = useToken(nativeDefault.colors.BACKGROUND_BRAND);
   }
-  const obj2 = {};
   const merged1 = Object.assign(merged);
-  obj2.size = str;
-  obj2.animating = flag;
-  obj2.color = color;
-  return <ActivityIndicator />;
-};
+  return <ActivityIndicator size={str} animating={flag} color={color} />;
+});
+const result = size.fileFinishedImporting("design/components/ActivityIndicator/native/ActivityIndicator.native.tsx");
+const ActivityIndicator_export = tmp2;
+
+export { ActivityIndicator_export as ActivityIndicator };

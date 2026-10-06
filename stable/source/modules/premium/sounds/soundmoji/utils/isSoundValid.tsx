@@ -1,18 +1,20 @@
-// Module ID: 5262
-// Function ID: 5263
+// Module ID: 5327
+// Function ID: 5328
 // Name: isSoundValid
-// Dependencies: [2041, 4427, 1372, 5258, 1085, 4446, 2]
+// Dependencies: [2051, 4472, 1378, 5322, 1097, 4491, 2]
 // Exports: default
 
-// Module 5262 (isSoundValid)
-import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 5327 (isSoundValid)
+import Constants from "Constants" /* 1097 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import SoundboardConstants from "SoundboardConstants" /* 5322 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import UserStore from "UserStore" /* 1378 */;
+import size from "module_2" /* 2 */;
 
-const DEFAULT_SOUND_GUILD_ID = fn(5258).DEFAULT_SOUND_GUILD_ID;
-const Permissions = fn(1085).Permissions;
-const size = fn(2);
+const DEFAULT_SOUND_GUILD_ID = SoundboardConstants.DEFAULT_SOUND_GUILD_ID;
+const Permissions = Constants.Permissions;
 let result = size.fileFinishedImporting("modules/premium/sounds/soundmoji/utils/isSoundValid.tsx");
 
 export default function isSoundValid(guildId, arg1, arg2) {
@@ -39,7 +41,8 @@ export default function isSoundValid(guildId, arg1, arg2) {
       }
       if (guildId2 !== arg1) {
         let canResult = null == channel;
-        const result = PremiumUtilsDefault.canUseSoundboardEverywhere(UserStore.getCurrentUser());
+        const obj = PremiumUtilsDefault;
+        const result = obj.canUseSoundboardEverywhere(UserStore.getCurrentUser());
         if (!canResult) {
           canResult = null == channel.guild_id;
         }

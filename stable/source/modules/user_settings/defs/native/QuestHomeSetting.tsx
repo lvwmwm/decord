@@ -1,32 +1,34 @@
-// Module ID: 15274
-// Function ID: 15275
+// Module ID: 14518
+// Function ID: 14519
 // Name: defs/QuestHomeSetting
-// Dependencies: [1074, 11754, 1115, 11768, 15275, 15277, 7990, 5698, 2]
+// Dependencies: [1086, 10874, 1127, 10671, 14519, 14521, 7139, 5762, 2]
 
-// Module 15274 (defs/QuestHomeSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import QuestContent from "QuestContent" /* 5698 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7990 */;
-import QuestsEligibility from "QuestsEligibility" /* 11768 */;
-import QuestsIcon from "QuestsIcon" /* 15275 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14518 (defs/QuestHomeSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import QuestContent from "QuestContent" /* 5762 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7139 */;
+import QuestsEligibility from "QuestsEligibility" /* 10671 */;
+import QuestsIcon from "QuestsIcon" /* 14519 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.JALI2K);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.JALI2K);
   },
   usePredicate() {
-    return QuestsEligibility.getIsEligibleForQuests();
+    const obj = QuestsEligibility;
+    return obj.getIsEligibleForQuests();
   },
   parent: null,
   IconComponent: QuestsIcon.QuestsIcon,
   screen: {
-    route: Constants.UserSettingsSections.QUESTS,
+    route: UserSettingsSections.QUESTS,
     getComponent() {
       return require("QuestHomeSetting").default;
     }
@@ -34,11 +36,13 @@ const route = SettingBuilders.createRoute({
   usePreNavigationAction() {
     return () => {
       const obj = utils_QuestUtils;
-      const result = obj.setQuestHomeUtmContext({ fromContent: QuestContent.QuestContent.USER_SETTINGS });
+      const obj2 = { fromContent: QuestContent.QuestContent.USER_SETTINGS };
+      const result = obj.setQuestHomeUtmContext(obj2);
       return true;
     };
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/QuestHomeSetting.tsx");
 
 export default route;

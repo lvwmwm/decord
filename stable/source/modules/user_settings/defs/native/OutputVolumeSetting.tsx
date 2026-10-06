@@ -1,41 +1,70 @@
-// Module ID: 15524
-// Function ID: 15525
+// Module ID: 14784
+// Function ID: 14785
 // Name: OutputVolumeSetting
-// Dependencies: [1992, 8265, 504, 11754, 1115, 9943, 10278, 2]
+// Dependencies: [1999, 7421, 558, 576, 504, 10874, 1127, 9081, 9433, 2]
 
-// Module 15524 (OutputVolumeSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9943 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10278 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+// Module 14784 (OutputVolumeSetting)
+import react from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9433 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11754);
-const volumeSlider = SettingBuilders.createVolumeSlider({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.xPHVBs);
-  },
-  parent: fn(8265).MobileUserSettings.VOICE,
-  maximum: 200,
-  useValue: function useOutputVolumeSettingValue() {
+let tmp;
+const get_initialized = tmp(504);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let outputVolume;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
-    return initialize.useStateFromStores(items, () => outputVolume.getOutputVolume());
+    const fn = function n() {
+      return outputVolume.getOutputVolume();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let outputVolume;
+  const items = [MediaEngineStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => outputVolume.getOutputVolume());
+});
+let obj = {
+  useTitle() {
+    const intl = intl3.intl;
+    return intl.string(intl3.t.xPHVBs);
   },
+  parent: MobileUserSettings.VOICE,
+  maximum: 200,
+  useValue: tmp2,
   onValueChange: AudioActionCreatorsDefault.setOutputVolume,
   useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t["3182VD"]), ];
-    const intl2 = util.intl;
-    items[1] = intl2.string(util.t["DGq/PR"]);
+    const intl = intl3.intl;
+    const items = [intl.string(intl3.t["3182VD"]), ];
+    const intl2 = intl3.intl;
+    items[1] = intl2.string(intl3.t["DGq/PR"]);
     return items;
   },
   usePredicate() {
-    return MobileAudioOutputExperimentDefault.useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
+    const obj = MobileAudioOutputExperimentDefault;
+    return obj.useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
   }
-});
-const size = fn(2);
+};
+const volumeSlider = SettingBuilders.createVolumeSlider(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/OutputVolumeSetting.tsx");
 
 export default volumeSlider;

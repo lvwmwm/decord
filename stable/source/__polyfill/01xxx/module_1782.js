@@ -1,49 +1,130 @@
 // Module ID: 1782
 // Function ID: 1783
-// Dependencies: [19, 1667, 1662, 1648, 1783, 1640]
-// Exports: useHandler
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 1647, 1752, 1688]
 
 // Module 1782
-import _mod1640 from "module_1640" /* 1640 */;
-import _mod1662 from "module_1662" /* 1662 */;
-import freezeObjectInDev from "freezeObjectInDev" /* 1667 */;
-import _mod1783 from "module_1783" /* 1783 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react_native from "react-native" /* 1752 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react_mod from "react" /* 19 */;
+import module_1647 from "module_1647" /* 1647 */;
 
-({ useEffect: c2, useRef: c3 } = noop);
+let Component;
+let createContext;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const useHandler = function useHandler(memoizedGestureCallbacks, items10) {
-  const tmp = React3(null);
-  closure_0 = tmp;
-  if (null === tmp.current) {
-    const obj2 = { context: freezeObjectInDev.makeShareable({}), savedDependencies: [] };
-    tmp.current = obj2;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  React2(() => () => {
-    closure_1_0.current = null;
-  }, []);
-  ({ context, savedDependencies } = tmp.current);
-  for (const key10024 in arg0) {
-    let tmp14 = require;
-    let obj8 = _mod1662;
-    if (obj8.isWorkletFunction(arg0[key10024])) {
-      continue;
+}
+function SkipEntering(children) {
+  const tmp = metroImportDefault(children.shouldSkip);
+  let closure_0 = tmp;
+  const tmp2 = metroImportDefault(children.itemKey);
+  if (children.itemKey !== tmp2.current) {
+    ({ shouldSkip: tmp.current, itemKey: tmp2.current } = children);
+  }
+  const items = [tmp, children.itemKey];
+  metroRequire(() => {
+    closure_0.current = false;
+  }, items);
+  return jsx(closure_10 ? context : context.Provider, { value: tmp, children: children.children });
+}
+let react = react_mod;
+({ Children: hasOwnProperty, useEffect: metroRequire, useRef: metroImportDefault, Component, createContext } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
+let closure_10 = module_1647.isReact19();
+const context = createContext(null);
+class LayoutAnimationConfig {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, LayoutAnimationConfig);
+    const obj = _getPrototypeOf(LayoutAnimationConfig);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      let tmp5 = new.target;
-      let str = "Passed a function that is not a worklet. Please provide a worklet function.";
-      let tmp6 = new.target;
-      let reanimatedError = new tmp14(1648).ReanimatedError("Passed a function that is not a worklet. Please provide a worklet function.");
-      throw reanimatedError;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(LayoutAnimationConfig, Component);
+const entry = {
+  key: "getMaybeWrappedChildren",
+  value: function getMaybeWrappedChildren() {
+    const self = this;
+    const arr = closure_1_5;
+    if (closure_1_5.count(this.props.children) > 1) {
+      let children;
+      if (self.props.skipExiting) {
+        children = arr.map(self.props.children, (children) => <LayoutAnimationConfig itemKey={self.props.itemKey} skipExiting>{arg0}</LayoutAnimationConfig>);
+      }
+      return children;
+    }
+    children = self.props.children;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "setShouldAnimateExiting",
+    value: function setShouldAnimateExiting() {
+      const self = this;
+      if (1 === hasOwnProperty.count(this.props.children)) {
+        const obj = react_native;
+        const findNodeHandleResult = obj.findNodeHandle(self);
+        const tmp = require;
+        if (findNodeHandleResult) {
+          const tmpResult = tmp(1688);
+          const result = tmpResult.setShouldAnimateExitingForTag(findNodeHandleResult, !self.props.skipExiting);
+        }
+      }
+    }
+  },
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      const self = this;
+      if (undefined !== this.props.skipExiting) {
+        const result = self.setShouldAnimateExiting();
+      }
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const maybeWrappedChildren = this.getMaybeWrappedChildren();
+      let tmp2 = maybeWrappedChildren;
+      if (undefined !== this.props.skipEntering) {
+        tmp2 = <SkipEntering itemKey={self.props.itemKey} shouldSkip={self.props.skipEntering}>{maybeWrappedChildren}</SkipEntering>;
+      }
+      return tmp2;
     }
   }
-  const dependencies = _mod1783.buildDependencies(items10, memoizedGestureCallbacks);
-  tmp.current.savedDependencies = dependencies;
-  const obj5 = { context, doDependenciesDiffer: !_mod1783.areDependenciesEqual(dependencies, savedDependencies), useWeb: null };
-  let isWebResult = _mod1640.isWeb();
-  if (!isWebResult) {
-    isWebResult = _mod1640.isJest();
-    const tmp9Result = _mod1640;
-  }
-  obj5.useWeb = isWebResult;
-  return obj5;
-};
+];
+const LayoutAnimationConfig_export = _createClass(LayoutAnimationConfig, items);
+
+export const SkipEnteringContext = context;
+export { LayoutAnimationConfig_export as LayoutAnimationConfig };

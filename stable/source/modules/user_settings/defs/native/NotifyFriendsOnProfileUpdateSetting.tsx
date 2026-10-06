@@ -1,30 +1,32 @@
-// Module ID: 16241
-// Function ID: 16242
+// Module ID: 15518
+// Function ID: 15519
 // Name: NotifyFriendsOnProfileUpdateSetting
-// Dependencies: [8265, 11754, 1115, 2680, 2019, 16242, 2]
+// Dependencies: [7421, 10874, 1127, 2688, 2027, 15519, 2]
 
-// Module 16241 (NotifyFriendsOnProfileUpdateSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import _modDef2680 from "module_2680" /* 2680 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 16242 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15518 (NotifyFriendsOnProfileUpdateSetting)
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import _modDef2688 from "module_2688" /* 2688 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 15519 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(_modDef2680.F3llsQ);
+    const intl = intl2.intl;
+    return intl.string(_modDef2688.F3llsQ);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(_modDef2680["6goWcz"]);
+    const intl = intl2.intl;
+    return intl.string(_modDef2688["6goWcz"]);
   },
-  parent: SettingsConstants.MobileUserSettings.DATA_AND_PRIVACY,
+  parent: MobileUserSettings.DATA_AND_PRIVACY,
   useValue: UserSettings.NotifyFriendsOnProfileUpdate.useSetting,
   onValueChange: NotifyFriendsOnProfileUpdateUtils.onNotifyFriendsOnProfileUpdateSettingsChanged
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/NotifyFriendsOnProfileUpdateSetting.tsx");
 
 export default toggle;

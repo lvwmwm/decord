@@ -1,49 +1,109 @@
-// Module ID: 15046
-// Function ID: 15047
+// Module ID: 14289
+// Function ID: 14290
 // Name: useAvailableAgeVerificationMethods
-// Dependencies: [32, 19, 8741, 573, 8742, 2]
-// Exports: useAvailableAgeVerificationMethods
+// Dependencies: [32, 19, 558, 576, 7892, 585, 7893, 2]
 
-// Module 15046 (useAvailableAgeVerificationMethods)
-import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8741 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 14289 (useAvailableAgeVerificationMethods)
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/safety_hub/hooks/useAvailableAgeVerificationMethods.tsx");
-
-export const useAvailableAgeVerificationMethods = function useAvailableAgeVerificationMethods() {
-  [tmp2, require] = noop.useState({ methods: null, loading: true });
-  const effect = noop.useEffect(() => {
-    c0 = false;
-    const ageVerificationMethodsV2SuspendedUser = AgeVerificationMethodsV2.fetchAgeVerificationMethodsV2SuspendedUser();
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_0;
+  let first;
+  let first1;
+  let tmp5;
+  let tmp6;
+  let obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { methods: null, loading: true };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  let obj3 = react;
+  [first1, _require] = react.useState(first);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function h() {
+      let c0 = false;
+      let obj = _true(dependencyMap[4]);
+      const ageVerificationMethodsV2SuspendedUser = obj.fetchAgeVerificationMethodsV2SuspendedUser();
+      const nextPromise = ageVerificationMethodsV2SuspendedUser.then((methods) => {
+        const obj = closure_1_1(closure_1_2[5]);
+        const obj2 = { type: "AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS", methods: methods.methods, footerMessage: methods.footerMessage, outageBannerMessage: methods.outageBannerMessage };
+        obj.dispatch(obj2);
+        const obj3 = _true(closure_1_2[6]);
+        return obj3.getAvailableMethodsV2(methods.methods);
+      });
+      const nextPromise1 = nextPromise.then((methods) => {
+        const tmp = c0;
+        if (!tmp) {
+          const obj = { methods, loading: false };
+          _true(obj);
+        }
+      });
+      nextPromise1.catch(() => {
+        const tmp = c0;
+        if (!tmp) {
+          _true({ methods: null, loading: false });
+        }
+      });
+      return () => {
+        let c0 = true;
+      };
+    };
+    const items = [];
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = obj3.useEffect(tmp5, tmp6);
+  return first1;
+}) : (() => {
+  let require;
+  let tmp2;
+  let tmp = _slicedToArray(react.useState({ methods: null, loading: true }), 2);
+  [tmp2, require] = tmp;
+  const effect = react.useEffect(() => {
+    let _true;
+    let c0 = false;
+    let obj = require("AgeVerificationMethodsV2");
+    const ageVerificationMethodsV2SuspendedUser = obj.fetchAgeVerificationMethodsV2SuspendedUser();
     const nextPromise = ageVerificationMethodsV2SuspendedUser.then((methods) => {
-      closure_1_1(573).dispatch({ type: "AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS", methods: methods.methods, footerMessage: methods.footerMessage, outageBannerMessage: methods.outageBannerMessage });
-      const obj = closure_1_1(573);
+      const obj = closure_1_1(closure_1_2[5]);
       const obj2 = { type: "AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS", methods: methods.methods, footerMessage: methods.footerMessage, outageBannerMessage: methods.outageBannerMessage };
-      return _true(8742).getAvailableMethodsV2(methods.methods);
+      obj.dispatch(obj2);
+      const obj3 = _true(closure_1_2[6]);
+      return obj3.getAvailableMethodsV2(methods.methods);
     });
-    ageVerificationMethodsV2SuspendedUser.then((methods) => {
-      closure_1_1(573).dispatch({ type: "AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS", methods: methods.methods, footerMessage: methods.footerMessage, outageBannerMessage: methods.outageBannerMessage });
-      const obj = closure_1_1(573);
-      const obj2 = { type: "AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS", methods: methods.methods, footerMessage: methods.footerMessage, outageBannerMessage: methods.outageBannerMessage };
-      return _true(8742).getAvailableMethodsV2(methods.methods);
-    }).then((methods) => {
-      if (!c0) {
+    const nextPromise1 = nextPromise.then((methods) => {
+      const tmp = c0;
+      if (!tmp) {
         const obj = { methods, loading: false };
-        require(obj);
+        _require(obj);
       }
-    }).catch(() => {
-      if (!c0) {
-        require({ methods: null, loading: false });
+    });
+    nextPromise1.catch(() => {
+      const tmp = c0;
+      if (!tmp) {
+        _require({ methods: null, loading: false });
       }
     });
     return () => {
-      c0 = true;
+      let c0 = true;
     };
   }, []);
   return tmp2;
-};
+});
+const result = size.fileFinishedImporting("modules/safety_hub/hooks/useAvailableAgeVerificationMethods.tsx");
+
+export const useAvailableAgeVerificationMethods = tmp2;

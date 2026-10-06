@@ -1,38 +1,36 @@
-// Module ID: 13514
-// Function ID: 13515
+// Module ID: 12756
+// Function ID: 12757
 // Name: formatSharedClientThemeData
-// Dependencies: [17, 8342, 1115, 2712, 2]
+// Dependencies: [17, 7499, 1127, 2720, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 13514 (formatSharedClientThemeData)
-import _mod17 from "module_17" /* 17 */;
-import util from "util" /* 1115 */;
-import _modDef2712 from "module_2712" /* 2712 */;
-import _modDef8342 from "module_8342" /* 8342 */;
+// Module 12756 (formatSharedClientThemeData)
+import react_native from "react-native" /* 17 */;
+import intl4 from "intl" /* 1127 */;
+import _modDef2720 from "module_2720" /* 2720 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7499 */;
 import size from "module_2" /* 2 */;
 
-const Image = _mod17.Image;
+const Image = react_native.Image;
 const result = size.fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");
 
 export const formatSharedClientThemeData = function formatSharedClientThemeData(message, ensureAvatarSourceResult, nick) {
+  let intl;
+  let intl2;
+  let intl3;
+  let str2;
   const sharedClientTheme = message.sharedClientTheme;
   if (undefined !== sharedClientTheme) {
-    const obj = { colors: null, gradientAngle: null, createdBy: null, createdByAvatarUrl: null, nitroWheelIconUrl: null, previewLabel: null, previewHeading: null, createdByLabel: null };
+    const obj = { colors: null, gradientAngle: null, createdBy: nick, createdByAvatarUrl: str2, nitroWheelIconUrl: Image.resolveAssetSource(AssetRegistryDefault).uri, previewLabel: intl.string(intl4.t.SKNnqq), previewHeading: intl2.string(_modDef2720.yl1iMm), createdByLabel: "" + intl3.format(_modDef2720.fQPSEf, { username: "__USERNAME__" }) };
     ({ colors: obj.colors, gradient_angle: obj.gradientAngle } = sharedClientTheme);
-    obj.createdBy = nick;
-    let str2 = "";
+    str2 = "";
     if (undefined !== ensureAvatarSourceResult.uri) {
       str2 = ensureAvatarSourceResult.uri;
     }
-    obj.createdByAvatarUrl = str2;
-    obj.nitroWheelIconUrl = Image.resolveAssetSource(_modDef8342).uri;
-    const intl = util.intl;
-    obj.previewLabel = intl.string(util.t.SKNnqq);
-    const intl2 = util.intl;
-    obj.previewHeading = intl2.string(_modDef2712.yl1iMm);
-    const intl3 = util.intl;
+    intl = intl4.intl;
+    intl2 = intl4.intl;
+    intl3 = intl4.intl;
     const _HermesInternal = HermesInternal;
-    obj.createdByLabel = "" + intl3.format(_modDef2712.fQPSEf, { username: "__USERNAME__" });
     return obj;
   }
 };

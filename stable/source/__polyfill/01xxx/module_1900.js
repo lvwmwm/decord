@@ -3,42 +3,55 @@
 // Dependencies: []
 
 // Module 1900
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "es",
+const obj = {
+  locale: "en",
   pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
-      if (1 == arg0) {
-        str = "one";
-      }
-      str2 = str;
+    let str3;
+    const str = String(arg0);
+    const parts = str.split(".");
+    const tmp2 = parts[1];
+    let substr1 = Number(parts[0]) == arg0;
+    let substr = substr1;
+    if (substr) {
+      const first = parts[0];
+      substr = first.slice(-1);
     }
-    return str2;
+    if (substr1) {
+      const first1 = parts[0];
+      substr1 = first1.slice(-2);
+    }
+    if (arg1) {
+      let str4;
+      if (1 != substr) {
+        let str5;
+        if (2 != substr) {
+          let str7 = "other";
+          if (3 == substr) {
+            str7 = "other";
+            if (13 != substr1) {
+              str7 = "few";
+            }
+          }
+          str5 = str7;
+        } else {
+          str5 = "two";
+        }
+        str4 = str5;
+      } else {
+        str4 = "one";
+      }
+      str3 = str4;
+    } else {
+      str3 = "other";
+      if (1 == arg0) {
+        str3 = "other";
+        if (!tmp2) {
+          str3 = "one";
+        }
+      }
+    }
+    return str3;
   }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-419", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-AR", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-BO", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-CL", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-CO", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-CR", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-CU", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-DO", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-EA", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-EC", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-GQ", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-GT", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-HN", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-IC", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-MX", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-NI", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PA", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PE", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PH", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PR", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PY", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-SV", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-US", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-UY", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-VE", parentLocale: "es-419" });
+};
+
+export default obj;

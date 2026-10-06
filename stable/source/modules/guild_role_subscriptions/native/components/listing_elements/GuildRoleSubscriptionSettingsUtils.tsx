@@ -1,22 +1,23 @@
-// Module ID: 16893
-// Function ID: 16894
+// Module ID: 16193
+// Function ID: 16194
 // Name: GuildRoleSubscriptionSettingsUtils
-// Dependencies: [4421, 5029, 2]
+// Dependencies: [4465, 5093, 2]
 // Exports: getCoverImageURI
 
-// Module 16893 (GuildRoleSubscriptionSettingsUtils)
-import StoreUtils from "StoreUtils" /* 5029 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4421 */;
+// Module 16193 (GuildRoleSubscriptionSettingsUtils)
+import StoreUtils from "StoreUtils" /* 5093 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4465 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionSettingsUtils.tsx");
 
 export const getCoverImageURI = function getCoverImageURI(subscriptionsSettings) {
   const applicationIdForGuild = GuildRoleSubscriptionsStore.getApplicationIdForGuild(subscriptionsSettings.guild_id);
   let uri = "";
+  const tmp2 = null != applicationIdForGuild && null != subscriptionsSettings.cover_image_asset;
   if (tmp2) {
-    uri = StoreUtils.getAssetURL(applicationIdForGuild, subscriptionsSettings.cover_image_asset, 1024);
+    const obj = StoreUtils;
+    uri = obj.getAssetURL(applicationIdForGuild, subscriptionsSettings.cover_image_asset, 1024);
   }
   return { uri };
 };

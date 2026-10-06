@@ -1,383 +1,633 @@
-// Module ID: 17917
-// Function ID: 17918
+// Module ID: 17280
+// Function ID: 17281
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 17918, 2035, 1372, 1074, 21, 4788, 1177, 17919, 1115, 5218, 1485, 1249, 5873, 7651, 9930, 7471, 6866, 17923, 6864, 6877, 6874, 7259, 7321, 7322, 6865, 17924, 7355, 7270, 504, 4755, 4654, 7277, 2]
-// Exports: default
+// Dependencies: [5, 19, 17, 17281, 2043, 1378, 1086, 21, 4837, 558, 576, 1127, 5282, 1492, 1189, 17282, 1261, 5933, 6796, 9068, 6616, 6005, 17286, 6003, 6018, 6015, 6403, 6466, 6467, 6004, 17287, 6500, 6414, 504, 4801, 4703, 6421, 2]
 
-// Module 17917 (VerificationModal)
-import Link from "Link" /* 1485 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 17918 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 17280 (VerificationModal)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import intl4 from "intl" /* 1127 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import Link from "Link" /* 1492 */;
+import ChatInputUtils from "ChatInputUtils" /* 4703 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import NavigatorHeader from "NavigatorHeader" /* 5933 */;
+import ResendEmailDefault from "ResendEmail" /* 6003 */;
+import ConfirmEmailChangeStartDefault from "ConfirmEmailChangeStart" /* 6015 */;
+import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 6018 */;
+import EnterEmailDefault from "EnterEmail" /* 6403 */;
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6414 */;
+import Navigator2 from "Navigator" /* 6421 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 6500 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 6796 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9068 */;
+import OverviewDefault from "Overview" /* 17286 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 17281 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2043 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function PhoneThenEmailInterstitial(navigation) {
-  navigation = navigation.navigation;
-  const obj = { Illustration: navigation(17919).VerifyPhone, title: null, body: null, children: null };
-  const intl = navigation(1115).intl;
-  obj.title = intl.string(navigation(1115).t.KLnLIP);
-  const intl2 = navigation(1115).intl;
-  obj.body = intl2.string(navigation(1115).t.XGbCq3);
-  const obj2 = { style: closure_12().button, children: null };
-  const obj3 = { text: null, onPress: null };
-  const intl3 = navigation(1115).intl;
-  obj3.text = intl3.string(navigation(1115).t["3oK4qw"]);
-  obj3.onPress = function onPress() {
-    const currentUser = UserStore.getCurrentUser();
-    let email;
-    if (currentUser != null) {
-      email = currentUser.email;
+let c1, c2;
+
+let c10;
+let c9;
+function getScreens() {
+  let obj10;
+  let obj13;
+  let obj16;
+  let obj19;
+  let obj22;
+  let obj25;
+  let obj28;
+  let obj3;
+  let obj31;
+  let obj34;
+  let obj37;
+  let obj4;
+  let obj6;
+  let obj7;
+  let obj9;
+  let obj = {};
+  let obj2 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: obj3,
+    headerTitle: obj4.getHeaderNoTitle(),
+    render() {
+      return null;
     }
-    if (null != email) {
-      let ENTER_EMAIL = constants.RESEND_EMAIL;
-    } else {
-      ENTER_EMAIL = constants.ENTER_EMAIL;
-    }
-    const StackActions = Link.StackActions;
-    navigation.dispatch(StackActions.push(ENTER_EMAIL));
   };
-  obj2.children = jsx(navigation(5218).Button, { text: null, onPress: null });
-  obj.children = <View style={closure_12().button}>{null}</View>;
-  return jsx(navigation(1177).EmptyState, { Illustration: navigation(17919).VerifyPhone, title: null, body: null, children: null });
+  const CHANGE_EMAIL_COLLECT_REASONS = constants.CHANGE_EMAIL_COLLECT_REASONS;
+  obj3 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_COLLECT_REASONS };
+  obj4 = NavigatorHeader;
+  obj[CHANGE_EMAIL_COLLECT_REASONS] = obj2;
+  let obj5 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: obj6,
+    headerTitle: obj7.getHeaderNoTitle(),
+    render() {
+      return null;
+    }
+  };
+  const CHANGE_EMAIL_WARNING = constants.CHANGE_EMAIL_WARNING;
+  obj6 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_WARNING };
+  obj7 = NavigatorHeader;
+  obj[CHANGE_EMAIL_WARNING] = obj5;
+  let obj8 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: obj9,
+    gestureEnabled: false,
+    headerLeft() {
+      return null;
+    },
+    headerTitle: obj10.getHeaderNoTitle(),
+    headerRight() {
+      const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
+      let intl = intl4.intl;
+      return <HeaderActionButton source={AssetRegistryDefault} accessibilityLabel={intl.string(intl4.t.PdRCRg)} onPress={function onPress() {
+        let intl;
+        let items;
+        let obj = { key: "VerificationOverviewMore", options: items, hasIcons: false };
+        const obj2 = {
+          label: intl.string(closure_1_0(closure_1_2[11]).t["2jxGer"]),
+          isDestructive: true,
+          onPress() {
+            const obj = closure_1_1(closure_1_2[21]);
+            return obj.logout("verification_modal");
+          }
+        };
+        const showSimpleActionSheet = closure_1_0(closure_1_2[20]).showSimpleActionSheet;
+        closure_1_0(closure_1_2[20]);
+        intl = closure_1_0(closure_1_2[11]).intl;
+        items = [obj2];
+        const result = showSimpleActionSheet(obj);
+      }} />;
+    },
+    render() {
+      return jsx(OverviewDefault, {});
+    }
+  };
+  const OVERVIEW = constants.OVERVIEW;
+  obj9 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.OVERVIEW };
+  obj[OVERVIEW] = obj8;
+  obj10 = NavigatorHeader;
+  const RESEND_EMAIL = constants.RESEND_EMAIL;
+  const obj11 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL },
+    headerTitle: obj13.getHeaderNoTitle(),
+    render() {
+      return jsx(ResendEmailDefault, {});
+    }
+  };
+  ({ impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL });
+  obj[RESEND_EMAIL] = obj11;
+  obj13 = NavigatorHeader;
+  const CHANGE_EMAIL_COMPLETE = constants.CHANGE_EMAIL_COMPLETE;
+  const obj14 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL },
+    headerTitle: obj16.getHeaderNoTitle(),
+    render() {
+      return jsx(ResendEmailDefault, {});
+    }
+  };
+  ({ impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL });
+  obj[CHANGE_EMAIL_COMPLETE] = obj14;
+  obj16 = NavigatorHeader;
+  const CONFIRM_EMAIL_CHANGE_CODE = constants.CONFIRM_EMAIL_CHANGE_CODE;
+  const obj17 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_CODE },
+    headerTitle: obj19.getHeaderNoTitle(),
+    render() {
+      return jsx(ConfirmEmailChangeCodeDefault, { isChangeEmail: false });
+    }
+  };
+  ({ impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_CODE });
+  obj[CONFIRM_EMAIL_CHANGE_CODE] = obj17;
+  obj19 = NavigatorHeader;
+  const CONFIRM_EMAIL_CHANGE_START = constants.CONFIRM_EMAIL_CHANGE_START;
+  const obj20 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_START },
+    headerTitle: obj22.getHeaderNoTitle(),
+    render() {
+      return jsx(ConfirmEmailChangeStartDefault, {});
+    }
+  };
+  ({ impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_START });
+  obj[CONFIRM_EMAIL_CHANGE_START] = obj20;
+  obj22 = NavigatorHeader;
+  const ENTER_EMAIL = constants.ENTER_EMAIL;
+  const obj23 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ENTER_EMAIL },
+    headerTitle: obj25.getHeaderNoTitle(),
+    render() {
+      return jsx(EnterEmailDefault, { isChangeEmail: false });
+    }
+  };
+  ({ impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ENTER_EMAIL });
+  obj[ENTER_EMAIL] = obj23;
+  obj25 = NavigatorHeader;
+  const ADD_PHONE = constants.ADD_PHONE;
+  const obj26 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ADD_PHONE },
+    headerTitle: obj28.getHeaderNoTitle(),
+    render(arg0, arg1) {
+      let closure_0 = arg1;
+      let obj = {
+        reason: closure_0(closure_2[28]).ChangePhoneReason.USER_ACTION_REQUIRED,
+        onComplete(phone) {
+          let obj = {
+            phone,
+            onVerified(arg0) {
+              let constants2;
+              navigation = arg0;
+              let obj = {
+                hideUnverifiedBanner: true,
+                onSubmit: function() {
+                  return closure_2(...arguments);
+                },
+                onSuccess: function() {
+                  return closure_1(...arguments);
+                }
+              };
+              const push = navigation.push;
+              const VERIFY_PASSWORD = constants.VERIFY_PASSWORD;
+              let closure_2 = closure_1_3(function*(arg0, value) {
+                closure_0 = arg0;
+                if (c1 === 2) {
+                  c1 = 3;
+                  throw new TypeError("Generator functions may not be called on executing generators");
+                } else if (tmp2 === 3) {
+                  if (arg0 === 1) {
+                    throw value;
+                  } else if (arg0 === 2) {
+                    const obj2 = { value, done: true };
+                    return obj2;
+                  } else {
+                    return { value: "IconComponent", done: null };
+                  }
+                } else {
+                  let c4;
+                  try {
+                    c1 = 2;
+                    if (0 === c2) {
+                      if (arg0 === 1) {
+                        c1 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c1 = 3;
+                        const obj3 = { value, done: true };
+                        return obj3;
+                      } else {
+                        c4 = 1;
+                        const isPhoneReverification = v3(closure_2[29]).isPhoneReverification;
+                        const tmp18 = v3(closure_2[29]);
+                        currentUser = currentUser.getCurrentUser();
+                        const result = isPhoneReverification(currentUser, closure_2_7.getAction());
+                        const obj9 = v3(closure_2[28]);
+                        if (result) {
+                          c2 = 3;
+                          c1 = 1;
+                          const obj4 = { value: obj9.reverifyPhone(closure_0, closure_0, closure_0(closure_2[28]).ChangePhoneReason.USER_ACTION_REQUIRED), done: false };
+                          return obj4;
+                        } else {
+                          c2 = 2;
+                          c1 = 1;
+                          const obj5 = { value: obj9.addPhone(closure_0, closure_0, closure_0(closure_2[28]).ChangePhoneReason.USER_ACTION_REQUIRED), done: false };
+                          return obj5;
+                        }
+                      }
+                    } else if (1 === c2) {
+                      c4 = 0;
+                      c1 = 3;
+                      const obj6 = { value, done: true };
+                      return obj6;
+                    } else {
+                      if (2 === c2) {
+                        if (arg0 === 1) {
+                          c1 = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c4 = 0;
+                          c1 = 3;
+                          const obj7 = { value, done: true };
+                          return obj7;
+                        }
+                      } else if (arg0 === 1) {
+                        c1 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c4 = 0;
+                        c1 = 3;
+                        const obj = { value, done: true };
+                        return obj;
+                      }
+                      c4 = 0;
+                      c1 = 3;
+                      const obj8 = { value, done: true };
+                      return obj8;
+                    }
+                  } catch (tmp9) {
+                    value = tmp9;
+                    if (0 === c4) {
+                      c1 = 3;
+                      throw tmp9;
+                    } else {
+                      c2 = 1;
+                    }
+                  }
+                }
+              });
+              let closure_1 = closure_1_3(function*(arg0, value) {
+                let obj2;
+                if (c2 === 2) {
+                  c2 = 3;
+                  throw new TypeError("Generator functions may not be called on executing generators");
+                } else if (tmp2 === 3) {
+                  if (arg0 === 1) {
+                    throw value;
+                  } else if (arg0 === 2) {
+                    const obj3 = { value, done: true };
+                    return obj3;
+                  } else {
+                    return { value: "IconComponent", done: null };
+                  }
+                } else {
+                  try {
+                    c2 = 2;
+                    if (0 === c1) {
+                      if (arg0 === 1) {
+                        c2 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c2 = 3;
+                        const obj4 = { value, done: true };
+                        return obj4;
+                      } else {
+                        closure_0 = tmp3;
+                        c1 = 1;
+                        c2 = 1;
+                        const obj5 = { value: obj2.waitUntil(() => action.getAction() !== constants.REQUIRE_VERIFIED_PHONE), done: false };
+                        obj2 = closure_0(closure_2[30]);
+                        return obj5;
+                      }
+                    } else if (arg0 === 1) {
+                      c2 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c2 = 3;
+                      const obj = { value, done: true };
+                      return obj;
+                    } else {
+                      if (closure_2_7.getAction() === constants.REQUIRE_VERIFIED_EMAIL) {
+                        closure_0.push(constants2.PHONE_THEN_EMAIL_INTERSTITIAL);
+                      } else {
+                        closure_0.push(constants2.OVERVIEW);
+                      }
+                      c2 = 3;
+                      return { value: "IconComponent", done: null };
+                    }
+                  } catch (tmp14) {
+                    c2 = 3;
+                    throw tmp14;
+                  }
+                }
+              });
+              push(VERIFY_PASSWORD, obj);
+            }
+          };
+          return navigation.push(constants.VERIFY_PHONE, obj);
+        }
+      };
+      const tmp = closure_1(closure_2[27]);
+      const merged = Object.assign(arg0);
+      return closure_11(tmp, obj);
+    }
+  };
+  ({ impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ADD_PHONE });
+  obj[ADD_PHONE] = obj26;
+  obj28 = NavigatorHeader;
+  const VERIFY_PHONE = constants.VERIFY_PHONE;
+  const obj29 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PHONE },
+    headerTitle: obj31.getHeaderNoTitle(),
+    render(arg0) {
+      VerifyPhoneDefault;
+      const merged = Object.assign(arg0);
+      return <tmp disableKeyboardAvoidingView />;
+    }
+  };
+  ({ impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PHONE });
+  obj[VERIFY_PHONE] = obj29;
+  obj31 = NavigatorHeader;
+  let VERIFY_PASSWORD = constants.VERIFY_PASSWORD;
+  const obj32 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PASSWORD },
+    headerTitle: obj34.getHeaderNoTitle(),
+    render(arg0) {
+      UserSettingsConfirmPasswordDefault;
+      const merged = Object.assign(arg0);
+      return <tmp />;
+    }
+  };
+  ({ impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PASSWORD });
+  obj[VERIFY_PASSWORD] = obj32;
+  obj34 = NavigatorHeader;
+  const PHONE_THEN_EMAIL_INTERSTITIAL = constants.PHONE_THEN_EMAIL_INTERSTITIAL;
+  const obj35 = {
+    impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL,
+    impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.PHONE_THEN_EMAIL_INTERSTITIAL },
+    headerTitle: obj37.getHeaderNoTitle(),
+    render(arg0, navigation) {
+      return <closure_1_13 navigation={arg1} />;
+    }
+  };
+  ({ impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.PHONE_THEN_EMAIL_INTERSTITIAL });
+  obj[PHONE_THEN_EMAIL_INTERSTITIAL] = obj35;
+  obj37 = NavigatorHeader;
+  return obj;
 }
-const View = fn(17).View;
-const Constants = fn(1074);
-({ UserRequiredActions: closure_9, VerificationModalScenes: c10 } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const View = react_native.View;
+({ UserRequiredActions: c9, VerificationModalScenes: c10 } = Constants);
+const jsx = Fragment.jsx;
 let closure_12 = createStyles.createStyles({ button: { position: "absolute", right: 32, bottom: 32, left: 32 } });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/verification/native/components/VerificationModal.tsx");
-
-export default function VerificationModal() {
-  let items = [PhoneVerificationStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => countrySelectorOpened.getCountrySelectorOpened());
-  const items1 = [stateFromStores];
-  const memo = noop.useMemo(() => {
-    const items = [{ name: constants.OVERVIEW }];
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+  let tmp11;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  const obj = navigation(576);
+  const cResult = obj.c(8);
+  navigation = navigation.navigation;
+  const tmp4 = closure_12();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(navigation(1127).t.KLnLIP);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(navigation(1127).t.XGbCq3);
+    cResult[0] = stringResult;
+    cResult[1] = stringResult1;
+    tmp5 = stringResult;
+    tmp6 = stringResult1;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const button = tmp4.button;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl3 = tmp(1127).intl;
+    const stringResult2 = intl3.string(navigation(1127).t["3oK4qw"]);
+    cResult[2] = stringResult2;
+    tmp9 = stringResult2;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] !== navigation) {
+    const tmp13 = jsx(navigation(5282).Button, {
+      text: tmp9,
+      onPress() {
+          let ENTER_EMAIL;
+          const currentUser = UserStore.getCurrentUser();
+          let email;
+          if (currentUser != null) {
+            email = currentUser.email;
+          }
+          if (null != email) {
+            ENTER_EMAIL = constants.RESEND_EMAIL;
+          } else {
+            ENTER_EMAIL = constants.ENTER_EMAIL;
+          }
+          const dispatch = navigation.dispatch;
+          const StackActions = Link.StackActions;
+          dispatch(StackActions.push(ENTER_EMAIL));
+        }
+    });
+    cResult[3] = navigation;
+    cResult[4] = tmp13;
+    tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[4];
+  }
+  if (cResult[5] === tmp4.button) {
+    let tmp14;
+    if (cResult[6] === tmp11) {
+      tmp14 = cResult[7];
+    }
+    return tmp14;
+  }
+  const EmptyState = tmp(1189).EmptyState;
+  const tmp15 = <EmptyState Illustration={navigation(17282).VerifyPhone} title={tmp5} body={tmp6}>{null}</EmptyState>;
+  cResult[5] = tmp4.button;
+  cResult[6] = tmp11;
+  cResult[7] = tmp15;
+  tmp14 = tmp15;
+}) : ((navigation) => {
+  let intl3;
+  navigation = navigation.navigation;
+  const tmp = closure_12();
+  const EmptyState = navigation(1189).EmptyState;
+  const intl = navigation(1127).intl;
+  const intl2 = navigation(1127).intl;
+  ({
+    text: intl3.string(navigation(1127).t["3oK4qw"]),
+    onPress() {
+      let ENTER_EMAIL;
+      const currentUser = UserStore.getCurrentUser();
+      let email;
+      if (currentUser != null) {
+        email = currentUser.email;
+      }
+      if (null != email) {
+        ENTER_EMAIL = constants.RESEND_EMAIL;
+      } else {
+        ENTER_EMAIL = constants.ENTER_EMAIL;
+      }
+      const dispatch = navigation.dispatch;
+      const StackActions = Link.StackActions;
+      dispatch(StackActions.push(ENTER_EMAIL));
+    }
+  });
+  const Button = navigation(5282).Button;
+  intl3 = navigation(1127).intl;
+  return <EmptyState Illustration={navigation(17282).VerifyPhone} title={intl.string(navigation(1127).t.KLnLIP)} body={intl2.string(navigation(1127).t.XGbCq3)}>{null}</EmptyState>;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let countrySelectorOpened;
+  let tmp10;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp20;
+  let tmp22;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let obj = react2;
+  const cResult = obj.c(12);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PhoneVerificationStore];
+    const fn = function s() {
+      return countrySelectorOpened.getCountrySelectorOpened();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { name: constants.OVERVIEW };
+    cResult[2] = obj2;
+    tmp8 = obj2;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== stateFromStores) {
+    const items1 = [tmp8];
     if (stateFromStores) {
+      let tmp11;
+      const _Symbol = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj3 = { name: constants.ADD_PHONE };
+        cResult[5] = obj3;
+        tmp11 = obj3;
+      } else {
+        tmp11 = cResult[5];
+      }
+      items1.push(tmp11);
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = items1;
+    tmp10 = items1;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function c() {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      const obj2 = ChatInputUtils;
+      obj2.dismissKeyboard();
+    };
+    const items2 = [];
+    cResult[6] = fn2;
+    cResult[7] = items2;
+    tmp15 = items2;
+    tmp14 = fn2;
+  } else {
+    tmp14 = cResult[6];
+    tmp15 = cResult[7];
+  }
+  const effect = react.useEffect(tmp14, tmp15);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp19 = getScreens();
+    cResult[8] = tmp19;
+    tmp17 = tmp19;
+  } else {
+    tmp17 = cResult[8];
+  }
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl4.t["13/7kX"]);
+    cResult[9] = stringResult;
+    tmp20 = stringResult;
+  } else {
+    tmp20 = cResult[9];
+  }
+  if (cResult[10] !== tmp10) {
+    const tmp24 = jsx(Navigator2.Navigator, { screens: tmp17, initialRouteStack: tmp10, headerBackTitle: tmp20 });
+    cResult[10] = tmp10;
+    cResult[11] = tmp24;
+    tmp22 = tmp24;
+  } else {
+    tmp22 = cResult[11];
+  }
+  return tmp22;
+}) : (() => {
+  let countrySelectorOpened;
+  let stateFromStores;
+  let obj = stateFromStores(504);
+  let items = [PhoneVerificationStore];
+  stateFromStores = obj.useStateFromStores(items, () => countrySelectorOpened.getCountrySelectorOpened());
+  const items1 = [stateFromStores];
+  const memo = react.useMemo(() => {
+    const items = [];
+    const obj = { name: constants.OVERVIEW };
+    items[0] = obj;
+    const tmp2 = stateFromStores;
+    if (tmp2) {
       const obj2 = { name: tmp.ADD_PHONE };
       items.push(obj2);
     }
     return items;
   }, items1);
-  const effect = noop.useEffect(() => {
-    ActionSheetActionCreatorsDefault.hideActionSheet();
-    stateFromStores(4654).dismissKeyboard();
+  const effect = react.useEffect(() => {
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet();
+    const obj2 = stateFromStores(dependencyMap[35]);
+    obj2.dismissKeyboard();
   }, []);
-  let obj2 = {
-    screens: noop.useMemo(() => {
-      let obj = {};
-      let obj2 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_COLLECT_REASONS }, headerTitle: null, render: null };
-      let obj3 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_COLLECT_REASONS };
-      obj2.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj2.render = function render() {
-        return null;
-      };
-      obj[constants.CHANGE_EMAIL_COLLECT_REASONS] = obj2;
-      let obj5 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      let obj4 = stateFromStores(5873);
-      obj5.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_WARNING };
-      let obj6 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_WARNING };
-      obj5.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj5.render = function render() {
-        return null;
-      };
-      obj[constants.CHANGE_EMAIL_WARNING] = obj5;
-      let obj8 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, gestureEnabled: false, headerLeft: null, headerTitle: null, headerRight: null, render: null };
-      let obj7 = stateFromStores(5873);
-      obj8.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.OVERVIEW };
-      obj8.headerLeft = function headerLeft() {
-        return null;
-      };
-      let obj9 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.OVERVIEW };
-      obj8.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj8.headerRight = function headerRight() {
-        const obj = { source: closure_1_1(9930), accessibilityLabel: null, onPress: null };
-        let intl = stateFromStores(1115).intl;
-        obj.accessibilityLabel = intl.string(stateFromStores(1115).t.PdRCRg);
-        obj.onPress = function onPress() {
-          const obj2 = { key: "VerificationOverviewMore", options: null, hasIcons: false };
-          const obj3 = { label: null, isDestructive: true, onPress: null };
-          const intl = closure_1_0(1115).intl;
-          obj3.label = intl.string(closure_1_0(1115).t["2jxGer"]);
-          obj3.onPress = function onPress() {
-            return closure_1_1(dependencyMap[19]).logout("verification_modal");
-          };
-          const items = [obj3];
-          obj2.options = items;
-          const result = closure_1_0(7471).showSimpleActionSheet(obj2);
-        };
-        return closure_1_11(stateFromStores(7651).HeaderActionButton, obj);
-      };
-      obj8.render = function render() {
-        return closure_1_11(closure_1_1(17923), {});
-      };
-      obj[constants.OVERVIEW] = obj8;
-      const obj11 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      let obj10 = stateFromStores(5873);
-      obj11.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL };
-      const obj12 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL };
-      obj11.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj11.render = function render() {
-        return closure_1_11(closure_1_1(6864), {});
-      };
-      obj[constants.RESEND_EMAIL] = obj11;
-      const obj14 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj13 = stateFromStores(5873);
-      obj14.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL };
-      const obj15 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL };
-      obj14.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj14.render = function render() {
-        return closure_1_11(closure_1_1(6864), {});
-      };
-      obj[constants.CHANGE_EMAIL_COMPLETE] = obj14;
-      const obj17 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj16 = stateFromStores(5873);
-      obj17.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_CODE };
-      const obj18 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_CODE };
-      obj17.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj17.render = function render() {
-        return closure_1_11(closure_1_1(6877), { isChangeEmail: false });
-      };
-      obj[constants.CONFIRM_EMAIL_CHANGE_CODE] = obj17;
-      const obj20 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj19 = stateFromStores(5873);
-      obj20.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_START };
-      const obj21 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_START };
-      obj20.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj20.render = function render() {
-        return closure_1_11(closure_1_1(6874), {});
-      };
-      obj[constants.CONFIRM_EMAIL_CHANGE_START] = obj20;
-      const obj23 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj22 = stateFromStores(5873);
-      obj23.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ENTER_EMAIL };
-      const obj24 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ENTER_EMAIL };
-      obj23.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj23.render = function render() {
-        return closure_1_11(closure_1_1(7259), { isChangeEmail: false });
-      };
-      obj[constants.ENTER_EMAIL] = obj23;
-      const obj26 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj25 = stateFromStores(5873);
-      obj26.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ADD_PHONE };
-      const obj27 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ADD_PHONE };
-      obj26.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj26.render = function render(arg0, arg1) {
-        closure_0 = arg1;
-        let obj = {};
-        const merged = Object.assign(arg0);
-        obj.reason = closure_0(7322).ChangePhoneReason.USER_ACTION_REQUIRED;
-        obj.onComplete = function onComplete(phone) {
-          return closure_0.push(constants.VERIFY_PHONE, {
-            phone,
-            onVerified(arg0) {
-              closure_0 = arg0;
-              let obj = { hideUnverifiedBanner: true, onSubmit: null, onSuccess: null };
-              closure_2 = closure_1_3(/* F128652 */ function() { ... });
-              obj.onSubmit = function onSubmit() { ... };
-              closure_1 = closure_1_3(/* F128654 */ function() { ... });
-              obj.onSuccess = function onSuccess() { ... };
-              closure_0.push(constants.VERIFY_PASSWORD, obj);
-            }
-          });
-        };
-        return closure_11(closure_1(7321), obj);
-      };
-      obj[constants.ADD_PHONE] = obj26;
-      const obj29 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj28 = stateFromStores(5873);
-      obj29.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PHONE };
-      const obj30 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PHONE };
-      obj29.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj29.render = function render(arg0) {
-        const merged = Object.assign(arg0);
-        return closure_1_11(closure_1_1(7355), { disableKeyboardAvoidingView: true });
-      };
-      obj[constants.VERIFY_PHONE] = obj29;
-      const obj32 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj31 = stateFromStores(5873);
-      obj32.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PASSWORD };
-      const obj33 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PASSWORD };
-      obj32.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj32.render = function render(arg0) {
-        const merged = Object.assign(arg0);
-        return closure_1_11(closure_1_1(7270), {});
-      };
-      obj[constants.VERIFY_PASSWORD] = obj32;
-      const obj35 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj34 = stateFromStores(5873);
-      obj35.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.PHONE_THEN_EMAIL_INTERSTITIAL };
-      const obj36 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.PHONE_THEN_EMAIL_INTERSTITIAL };
-      obj35.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj35.render = function render(arg0, navigation) {
-        return closure_1_11(closure_1_13, { navigation });
-      };
-      obj[constants.PHONE_THEN_EMAIL_INTERSTITIAL] = obj35;
-      return obj;
-    }, []),
-    initialRouteStack: memo,
-    headerBackTitle: null
-  };
-  let intl = stateFromStores(1115).intl;
-  obj2.headerBackTitle = intl.string(stateFromStores(1115).t["13/7kX"]);
-  return jsx(stateFromStores(7277).Navigator, {
-    screens: noop.useMemo(() => {
-      let obj = {};
-      let obj2 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_COLLECT_REASONS }, headerTitle: null, render: null };
-      let obj3 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_COLLECT_REASONS };
-      obj2.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj2.render = function render() {
-        return null;
-      };
-      obj[constants.CHANGE_EMAIL_COLLECT_REASONS] = obj2;
-      let obj5 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      let obj4 = stateFromStores(5873);
-      obj5.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_WARNING };
-      let obj6 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CHANGE_EMAIL_WARNING };
-      obj5.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj5.render = function render() {
-        return null;
-      };
-      obj[constants.CHANGE_EMAIL_WARNING] = obj5;
-      let obj8 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, gestureEnabled: false, headerLeft: null, headerTitle: null, headerRight: null, render: null };
-      let obj7 = stateFromStores(5873);
-      obj8.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.OVERVIEW };
-      obj8.headerLeft = function headerLeft() {
-        return null;
-      };
-      let obj9 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.OVERVIEW };
-      obj8.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj8.headerRight = function headerRight() {
-        const obj = { source: closure_1_1(9930), accessibilityLabel: null, onPress: null };
-        let intl = stateFromStores(1115).intl;
-        obj.accessibilityLabel = intl.string(stateFromStores(1115).t.PdRCRg);
-        obj.onPress = function onPress() {
-          const obj2 = { key: "VerificationOverviewMore", options: null, hasIcons: false };
-          const obj3 = { label: null, isDestructive: true, onPress: null };
-          const intl = closure_1_0(1115).intl;
-          obj3.label = intl.string(closure_1_0(1115).t["2jxGer"]);
-          obj3.onPress = function onPress() {
-            return closure_1_1(dependencyMap[19]).logout("verification_modal");
-          };
-          const items = [obj3];
-          obj2.options = items;
-          const result = closure_1_0(7471).showSimpleActionSheet(obj2);
-        };
-        return closure_1_11(stateFromStores(7651).HeaderActionButton, obj);
-      };
-      obj8.render = function render() {
-        return closure_1_11(closure_1_1(17923), {});
-      };
-      obj[constants.OVERVIEW] = obj8;
-      const obj11 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      let obj10 = stateFromStores(5873);
-      obj11.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL };
-      const obj12 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL };
-      obj11.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj11.render = function render() {
-        return closure_1_11(closure_1_1(6864), {});
-      };
-      obj[constants.RESEND_EMAIL] = obj11;
-      const obj14 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj13 = stateFromStores(5873);
-      obj14.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL };
-      const obj15 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.RESEND_EMAIL };
-      obj14.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj14.render = function render() {
-        return closure_1_11(closure_1_1(6864), {});
-      };
-      obj[constants.CHANGE_EMAIL_COMPLETE] = obj14;
-      const obj17 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj16 = stateFromStores(5873);
-      obj17.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_CODE };
-      const obj18 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_CODE };
-      obj17.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj17.render = function render() {
-        return closure_1_11(closure_1_1(6877), { isChangeEmail: false });
-      };
-      obj[constants.CONFIRM_EMAIL_CHANGE_CODE] = obj17;
-      const obj20 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj19 = stateFromStores(5873);
-      obj20.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_START };
-      const obj21 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.CONFIRM_EMAIL_CHANGE_START };
-      obj20.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj20.render = function render() {
-        return closure_1_11(closure_1_1(6874), {});
-      };
-      obj[constants.CONFIRM_EMAIL_CHANGE_START] = obj20;
-      const obj23 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj22 = stateFromStores(5873);
-      obj23.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ENTER_EMAIL };
-      const obj24 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ENTER_EMAIL };
-      obj23.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj23.render = function render() {
-        return closure_1_11(closure_1_1(7259), { isChangeEmail: false });
-      };
-      obj[constants.ENTER_EMAIL] = obj23;
-      const obj26 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj25 = stateFromStores(5873);
-      obj26.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ADD_PHONE };
-      const obj27 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ADD_PHONE };
-      obj26.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj26.render = function render(arg0, arg1) {
-        closure_0 = arg1;
-        let obj = {};
-        const merged = Object.assign(arg0);
-        obj.reason = closure_0(7322).ChangePhoneReason.USER_ACTION_REQUIRED;
-        obj.onComplete = function onComplete(phone) {
-          return closure_0.push(constants.VERIFY_PHONE, {
-            phone,
-            onVerified(arg0) {
-              closure_0 = arg0;
-              let obj = { hideUnverifiedBanner: true, onSubmit: null, onSuccess: null };
-              closure_2 = closure_1_3(/* F128652 */ function() { ... });
-              obj.onSubmit = function onSubmit() { ... };
-              closure_1 = closure_1_3(/* F128654 */ function() { ... });
-              obj.onSuccess = function onSuccess() { ... };
-              closure_0.push(constants.VERIFY_PASSWORD, obj);
-            }
-          });
-        };
-        return closure_11(closure_1(7321), obj);
-      };
-      obj[constants.ADD_PHONE] = obj26;
-      const obj29 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj28 = stateFromStores(5873);
-      obj29.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PHONE };
-      const obj30 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PHONE };
-      obj29.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj29.render = function render(arg0) {
-        const merged = Object.assign(arg0);
-        return closure_1_11(closure_1_1(7355), { disableKeyboardAvoidingView: true });
-      };
-      obj[constants.VERIFY_PHONE] = obj29;
-      const obj32 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj31 = stateFromStores(5873);
-      obj32.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PASSWORD };
-      const obj33 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.VERIFY_PASSWORD };
-      obj32.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj32.render = function render(arg0) {
-        const merged = Object.assign(arg0);
-        return closure_1_11(closure_1_1(7270), {});
-      };
-      obj[constants.VERIFY_PASSWORD] = obj32;
-      const obj35 = { impressionName: stateFromStores(1249).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
-      const obj34 = stateFromStores(5873);
-      obj35.impressionProperties = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.PHONE_THEN_EMAIL_INTERSTITIAL };
-      const obj36 = { impression_group: stateFromStores(1249).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.PHONE_THEN_EMAIL_INTERSTITIAL };
-      obj35.headerTitle = stateFromStores(5873).getHeaderNoTitle();
-      obj35.render = function render(arg0, navigation) {
-        return closure_1_11(closure_1_13, { navigation });
-      };
-      obj[constants.PHONE_THEN_EMAIL_INTERSTITIAL] = obj35;
-      return obj;
-    }, []),
-    initialRouteStack: memo,
-    headerBackTitle: null
-  });
-};
+  const Navigator = stateFromStores(6421).Navigator;
+  const intl = stateFromStores(1127).intl;
+  return <Navigator screens={react.useMemo(() => getScreens(), [])} initialRouteStack={memo} headerBackTitle={intl.string(stateFromStores(1127).t["13/7kX"])} />;
+});
+let result = size.fileFinishedImporting("modules/verification/native/components/VerificationModal.tsx");
+
+export default tmp3;

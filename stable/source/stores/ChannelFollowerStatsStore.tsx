@@ -1,37 +1,43 @@
-// Module ID: 11952
-// Function ID: 11953
+// Module ID: 11037
+// Function ID: 11038
 // Name: ChannelFollowerStatsStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 11952 (ChannelFollowerStatsStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11037 (ChannelFollowerStatsStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
+
+let closure_1;
 
 const constants = { FAILED: "failed", SUCCEEDED: "succeeded" };
-let closure_1 = {};
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ChannelFollowerStatsStore extends Store {
+  getFollowerStatsForChannel(arg0) {
+    return closure_1[arg0];
+  }
 }
-ChannelFollowerStatsStore.prototype["getFollowerStatsForChannel"] = function getFollowerStatsForChannel(arg0) {
-  return closure_1[arg0];
-};
+const prototype = ChannelFollowerStatsStore.prototype;
 ChannelFollowerStatsStore.displayName = "ChannelFollowerStatsStore";
-const channelFollowerStatsStore = new ChannelFollowerStatsStore(DispatcherDefault, {
+const obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     closure_1 = {};
   },
   CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS: function handleFollowerStatsFetchSuccess(stats) {
     stats = stats.stats;
+    const channelId = stats.channelId;
     if (null == stats) {
       stats = {};
     }
-    closure_1[stats.channelId] = { loadingStatus: constants.SUCCEEDED, lastFetched: Date.now(), channelsFollowing: stats.channels_following, guildMembers: stats.guild_members, guildsFollowing: stats.guilds_following, usersSeenEver: stats.users_seen_ever, subscribersGainedSinceLastPost: stats.subscribers_gained_since_last_post, subscribersLostSinceLastPost: stats.subscribers_lost_since_last_post };
+    closure_1[channelId] = { loadingStatus: constants.SUCCEEDED, lastFetched: Date.now(), channelsFollowing: stats.channels_following, guildMembers: stats.guild_members, guildsFollowing: stats.guilds_following, usersSeenEver: stats.users_seen_ever, subscribersGainedSinceLastPost: stats.subscribers_gained_since_last_post, subscribersLostSinceLastPost: stats.subscribers_lost_since_last_post };
+    ({ loadingStatus: constants.SUCCEEDED, lastFetched: Date.now(), channelsFollowing: stats.channels_following, guildMembers: stats.guild_members, guildsFollowing: stats.guilds_following, usersSeenEver: stats.users_seen_ever, subscribersGainedSinceLastPost: stats.subscribers_gained_since_last_post, subscribersLostSinceLastPost: stats.subscribers_lost_since_last_post });
   },
   CHANNEL_FOLLOWER_STATS_FETCH_FAILURE: function handleFollowerStatsFetchFailure(channelId) {
     closure_1[channelId.channelId] = { loadingStatus: constants.FAILED, lastFetched: Date.now(), channelsFollowing: 0, guildMembers: 0, guildsFollowing: 0, usersSeenEver: 0, subscribersGainedSinceLastPost: 0, subscribersLostSinceLastPost: 0 };
+    ({ loadingStatus: constants.FAILED, lastFetched: Date.now(), channelsFollowing: 0, guildMembers: 0, guildsFollowing: 0, usersSeenEver: 0, subscribersGainedSinceLastPost: 0, subscribersLostSinceLastPost: 0 });
   }
-});
-const size = fn(2);
+};
+const channelFollowerStatsStore = new ChannelFollowerStatsStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/ChannelFollowerStatsStore.tsx");
 
 export default channelFollowerStatsStore;

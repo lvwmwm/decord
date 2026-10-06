@@ -1,31 +1,34 @@
-// Module ID: 16213
-// Function ID: 16214
+// Module ID: 15490
+// Function ID: 15491
 // Name: ContentAndSocialDiscordRouteSetting
-// Dependencies: [8265, 1074, 11754, 1115, 4487, 16195, 2]
+// Dependencies: [7421, 1086, 10874, 1127, 4532, 15472, 2]
 
-// Module 16213 (ContentAndSocialDiscordRouteSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import FriendsIcon from "FriendsIcon" /* 4487 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import ContentAndSocialScreen from "ContentAndSocialScreen" /* 16195 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15490 (ContentAndSocialDiscordRouteSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import FriendsIcon from "FriendsIcon" /* 4532 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import ContentAndSocialScreen from "ContentAndSocialScreen" /* 15472 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["/7xJCF"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["/7xJCF"]);
   },
-  parent: SettingsConstants.MobileUserSettings.CONTENT_AND_SOCIAL,
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL,
   IconComponent: FriendsIcon.FriendsIcon,
   screen: {
-    route: Constants.UserSettingsSections.CONTENT_AND_SOCIAL,
+    route: UserSettingsSections.CONTENT_AND_SOCIAL,
     getComponent() {
       return ContentAndSocialScreen.DiscordPermissionsPage;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ContentAndSocialDiscordRouteSetting.tsx");
 
 export default route;

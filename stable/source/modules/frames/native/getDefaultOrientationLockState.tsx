@@ -1,12 +1,12 @@
-// Module ID: 16972
-// Function ID: 16973
+// Module ID: 16282
+// Function ID: 16283
 // Name: frames/getDefaultOrientationLockState
-// Dependencies: [9754, 573, 2]
+// Dependencies: [8908, 585, 2]
 // Exports: setOrientationLockState
 
-// Module 16972 (frames/getDefaultOrientationLockState)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import getDefaultOrientationLockState from "getDefaultOrientationLockState" /* 9754 */;
+// Module 16282 (frames/getDefaultOrientationLockState)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import getDefaultOrientationLockState from "getDefaultOrientationLockState" /* 8908 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/native/getDefaultOrientationLockState.tsx");
@@ -14,10 +14,12 @@ const result = size.fileFinishedImporting("modules/frames/native/getDefaultOrien
 export const setOrientationLockState = function setOrientationLockState(frameId, application, arg2) {
   let defaultOrientationLockState = arg2;
   if (arg2 == null) {
-    defaultOrientationLockState = getDefaultOrientationLockState.getDefaultOrientationLockState(application);
+    const obj = getDefaultOrientationLockState;
+    defaultOrientationLockState = obj.getDefaultOrientationLockState(application);
   }
   if (null != defaultOrientationLockState) {
     const obj3 = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", frameId, lockState: defaultOrientationLockState };
-    DispatcherDefault.dispatch(obj3);
+    const obj2 = DispatcherDefault;
+    obj2.dispatch(obj3);
   }
 };

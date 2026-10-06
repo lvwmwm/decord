@@ -1,16 +1,17 @@
-// Module ID: 11966
-// Function ID: 11967
+// Module ID: 11053
+// Function ID: 11054
 // Name: ForwardAgeRestrictedDestinationsExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1442, 2]
 
-// Module 11966 (ForwardAgeRestrictedDestinationsExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
+// Module 11053 (ForwardAgeRestrictedDestinationsExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1442 */;
+import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-08-forward-age-restricted-destinations", defaultConfig: { disableAgeRestrictedDestinations: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { kind: "user", name: "2026-08-forward-age-restricted-destinations", defaultConfig: { disableAgeRestrictedDestinations: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { disableAgeRestrictedDestinations: true };
-obj.variations = obj2;
-const size = fn(2);
+const tmp2 = apex_ApexExperimentDefault(obj);
 const result = size.fileFinishedImporting("modules/forwarding/ForwardAgeRestrictedDestinationsExperiment.tsx");
 
-export default apex_ApexExperimentDefault(obj);
+export default tmp2;

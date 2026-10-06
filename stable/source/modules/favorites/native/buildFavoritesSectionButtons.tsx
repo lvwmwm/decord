@@ -1,187 +1,202 @@
-// Module ID: 10519
-// Function ID: 10520
+// Module ID: 9805
+// Function ID: 9806
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 21, 10520, 1980, 4755, 10525, 10524, 1115, 3356, 8972, 10532, 10538, 1177, 2]
+// Dependencies: [5, 21, 9806, 1987, 4801, 9811, 9810, 1127, 3364, 8119, 9716, 9718, 1189, 2]
 // Exports: default
 
-// Module 10519 (buildFavoritesSectionButtons)
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import _modDef3356 from "module_3356" /* 3356 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8972 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10524 */;
-import StarIcon from "StarIcon" /* 10532 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 10538 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 9805 (buildFavoritesSectionButtons)
+import Fragment from "Fragment" /* 21 */;
+import intl4 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import _modDef3364 from "module_3364" /* 3364 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8119 */;
+import StarIcon from "StarIcon" /* 9716 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9718 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 9810 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_5 = async function _addChannelToFavorites(arg0, value) {
-  if (c3 === 2) {
-    c3 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+const require = globalThis.__r;
+let c2, c3;
+
+let obj = function _addChannelToFavorites() {
+  let paths;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let items;
+    let closure_0 = arg0;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c3 = 2;
-      if (0 === c2) {
-        if (arg0 === 1) {
+      try {
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp;
+            c2 = 1;
+            c3 = 1;
+            const obj4 = { value: require("asyncRequire")(paths[2], paths.paths), done: false };
+            return obj4;
+          }
+        } else if (arg0 === 1) {
           c3 = 3;
           throw value;
         } else if (arg0 === 2) {
           c3 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          const obj5 = { value, done: true };
+          return obj5;
         } else {
-          closure_1 = tmp2;
-          closure_129_0 = closure_0;
-          c2 = 1;
-          c3 = 1;
-          const obj4 = { value: require("asyncRequireImpl")(paths[2], paths.paths), done: false };
-          return obj4;
+          obj = { channelIds: items, source: "channel_context_menu" };
+          items = [closure_0];
+          value.addFavoriteChannels(obj);
+          c3 = 3;
+          return { value: "IconComponent", done: null };
         }
-      } else if (arg0 === 1) {
+      } catch (tmp11) {
         c3 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c3 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
-      } else {
-        const obj = { channelIds: null, source: "channel_context_menu" };
-        const items = [closure_129_0];
-        obj.channelIds = items;
-        value.addFavoriteChannels(obj);
-        c3 = 3;
-        return { value: "HermesInternal", done: null };
+        throw tmp11;
       }
-    } catch (tmp12) {
-      c3 = tmp;
-      throw tmp12;
     }
-  }
+  });
+  return obj(...arguments);
 };
-let closure_6 = async function _removeChannelFromFavorites(arg0, value) {
-  if (c3 === 2) {
-    c3 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+obj = function _removeChannelFromFavorites() {
+  let paths;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c3 = 2;
-      if (0 === c2) {
-        if (arg0 === 1) {
+      try {
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp;
+            c2 = 1;
+            c3 = 1;
+            const obj4 = { value: require("asyncRequire")(paths[2], paths.paths), done: false };
+            return obj4;
+          }
+        } else if (arg0 === 1) {
           c3 = 3;
           throw value;
         } else if (arg0 === 2) {
           c3 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          closure_1 = tmp2;
-          closure_129_0 = closure_0;
-          c2 = 1;
-          c3 = 1;
-          const obj4 = { value: require("asyncRequireImpl")(paths[2], paths.paths), done: false };
-          return obj4;
+          const result = value.removeFavoriteChannel(closure_0);
+          c3 = 3;
+          return { value: "IconComponent", done: null };
         }
-      } else if (arg0 === 1) {
+      } catch (tmp11) {
         c3 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c3 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } else {
-        const result = value.removeFavoriteChannel(closure_129_0);
-        c3 = 3;
-        return { value: "HermesInternal", done: null };
+        throw tmp11;
       }
-    } catch (tmp12) {
-      c3 = tmp;
-      throw tmp12;
     }
-  }
+  });
+  return obj(...arguments);
 };
 function openNoAccessUpsell() {
-  const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequireImpl(10525, dependencyMap.paths), openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
+  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+  ActionSheetActionCreatorsDefault;
+  const tmp2 = asyncRequire(9811, dependencyMap.paths);
+  openLazy(tmp2, openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
 }
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/favorites/native/buildFavoritesSectionButtons.tsx");
 
 export default function buildFavoritesSectionButtons(isExperimentEnabled) {
+  let intl;
+  let intl2;
+  let intl3;
+  let tmp15;
   ({ channelId: require, dismissBetaTag: importDefault } = isExperimentEnabled);
   let tmp6 = null;
   if (isExperimentEnabled.isExperimentEnabled) {
     tmp6 = null;
     if (tmp2) {
-      if (!tmp) {
-        const obj = { label: null, IconComponent: null, onPress: null };
-        const intl = util.intl;
-        obj.label = intl.string(_modDef3356.G9fGlP);
-        obj.IconComponent = NitroWheelIcon.NitroWheelIcon;
-        obj.onPress = openNoAccessUpsell;
-      }
-      if (tmp3) {
-        const obj2 = { label: null, IconComponent: null, isDestructive: true, onPress: null };
-        const intl3 = util.intl;
-        obj2.label = intl3.string(_modDef3356.TN4nAX);
-        obj2.IconComponent = StarIcon.StarIcon;
-        obj2.onPress = function onPress() {
-          return (function removeChannelFromFavorites() {
-            const self = this;
-            const apply = closure_1_6.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
+      if (tmp) {
+        let tmp11;
+        if (tmp3) {
+          const obj2 = {
+            label: intl3.string(_modDef3364.TN4nAX),
+            IconComponent: StarIcon.StarIcon,
+            isDestructive: true,
+            onPress() {
+                      function removeChannelFromFavorites() {
+                        return closure_1_6(...arguments);
+                      }
+                      return removeChannelFromFavorites(require);
+                    }
+          };
+          intl3 = intl4.intl;
+          tmp11 = obj2;
+        } else {
+          tmp11 = null;
+          if (!tmp4) {
+            const obj3 = {
+              label: intl2.string(_modDef3364.G9fGlP),
+              IconComponent: StarOutlineIcon.StarOutlineIcon,
+              trailing: tmp15,
+              onPress() {
+                          function addChannelToFavorites() {
+                            return closure_1_5(...arguments);
+                          }
+                          importDefault();
+                          addChannelToFavorites(require);
+                        }
+            };
+            intl2 = intl4.intl;
+            tmp15 = undefined;
+            if (tmp5) {
+              const BetaTag = tmp12(1189).BetaTag;
+              tmp15 = <BetaTag size={native.BetaSizes.SMALL} />;
             }
-            return applyArgumentsResult;
-          })(require);
-        };
-      } else if (!tmp4) {
-        const obj3 = { label: null, IconComponent: null, trailing: null, onPress: null };
-        const intl2 = util.intl;
-        obj3.label = intl2.string(_modDef3356.G9fGlP);
-        obj3.IconComponent = StarOutlineIcon.StarOutlineIcon;
-        let tmp15;
-        if (tmp5) {
-          const obj4 = { size: tmp12(1177).BetaSizes.SMALL };
-          tmp15 = jsx(tmp12(1177).BetaTag, { size: tmp12(1177).BetaSizes.SMALL });
+            tmp11 = obj3;
+          }
         }
-        obj3.trailing = tmp15;
-        obj3.onPress = function onPress() {
-          importDefault();
-          (function addChannelToFavorites() {
-            const self = this;
-            const apply = closure_1_5.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })(require);
-        };
+        obj = tmp11;
+      } else {
+        obj = { label: intl.string(_modDef3364.G9fGlP), IconComponent: NitroWheelIcon.NitroWheelIcon, onPress: openNoAccessUpsell };
+        intl = intl4.intl;
       }
+      tmp6 = obj;
     }
   }
   return tmp6;

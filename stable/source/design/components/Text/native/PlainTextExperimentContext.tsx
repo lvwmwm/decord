@@ -1,20 +1,41 @@
-// Module ID: 4793
-// Function ID: 4794
+// Module ID: 4842
+// Function ID: 4843
 // Name: PlainTextExperimentContext
-// Dependencies: [19, 21, 2]
-// Exports: PlainTextExperimentProvider, usePlainTextExperimentEnabled
+// Dependencies: [19, 21, 558, 576, 2]
+// Exports: usePlainTextExperimentEnabled
 
-// Module 4793 (PlainTextExperimentContext)
-import noop from "module_19" /* 19 */;
+// Module 4842 (PlainTextExperimentContext)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const context = noop.createContext(false);
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/Text/native/PlainTextExperimentContext.tsx");
+const jsx = Fragment.jsx;
+const context = react.createContext(false);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let enabled;
+  const obj = react2;
+  const cResult = obj.c(3);
+  ({ children, enabled } = arg0);
+  if (cResult[0] === children) {
+    let tmp2;
+    if (cResult[1] === enabled) {
+      tmp2 = cResult[2];
+    }
+    return tmp2;
+  }
+  const tmp3 = <closure_4 value={enabled}>{children}</closure_4>;
+  cResult[0] = children;
+  cResult[1] = enabled;
+  cResult[2] = tmp3;
+  tmp2 = tmp3;
+}) : ((enabled) => <closure_4 value={arg0.enabled}>{arg0.children}</closure_4>);
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("design/components/Text/native/PlainTextExperimentContext.tsx");
 
-export const PlainTextExperimentProvider = function PlainTextExperimentProvider(enabled) {
-  return <closure_2 value={arg0.enabled}>{arg0.children}</closure_2>;
-};
-export const usePlainTextExperimentEnabled = function usePlainTextExperimentEnabled() {
-  return noop.useContext(closure_2);
-};
+export const PlainTextExperimentProvider = tmp2;
+export const usePlainTextExperimentEnabled = () => react.useContext(closure_4);

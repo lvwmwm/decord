@@ -1,11 +1,13 @@
-// Module ID: 17951
-// Function ID: 17952
+// Module ID: 17314
+// Function ID: 17315
 // Name: KeywordTextUtils
 // Dependencies: [2]
 // Exports: dedupeKeywords, getKeywordStringFromKeywordFilter, getKeywordsFromString, getRegexPatternsFromString, getStringFromRegexPatterns, isKeywordParseableString, sortKeywords
 
-// Module 17951 (KeywordTextUtils)
+// Module 17314 (KeywordTextUtils)
 import size from "module_2" /* 2 */;
+
+let set;
 
 const re0 = /[\t\n,]/g;
 const re1 = /\s{2,}/g;
@@ -15,11 +17,15 @@ const result = size.fileFinishedImporting("modules/guild_automod/KeywordTextUtil
 
 export const getKeywordsFromString = function getKeywordsFromString(str) {
   const parts = str.split(re0);
-  const mapped = parts.map((item) => item.replace(closure_1_1, " ").trim());
+  const mapped = parts.map((item) => {
+    const str = item.replace(closure_1_1, " ");
+    return str.trim();
+  });
   return mapped.filter((item) => item.length > 0);
 };
 export const dedupeKeywords = function dedupeKeywords(items) {
-  return Array.from(new Set(items));
+  set = new Set(items);
+  return Array.from(set);
 };
 export const sortKeywords = function sortKeywords(arr) {
   return arr.sort((str, str2) => {
@@ -27,14 +33,11 @@ export const sortKeywords = function sortKeywords(arr) {
     return replaced.localeCompare(str2.replaceAll(closure_1_2, ""));
   });
 };
-export const getKeywordStringFromKeywordFilter = function getKeywordStringFromKeywordFilter(join) {
-  return join.join(", ");
+export const getKeywordStringFromKeywordFilter = function getKeywordStringFromKeywordFilter(keywords) {
+  return keywords.join(", ");
 };
 export const isKeywordParseableString = function isKeywordParseableString(arr) {
-  let hasItem = arr.includes("\n");
-  if (!hasItem) {
-    hasItem = arr.includes(",");
-  }
+  const hasItem = arr.includes("\n") || arr.includes(",");
   return hasItem;
 };
 export const getRegexPatternsFromString = function getRegexPatternsFromString(str) {
@@ -42,6 +45,6 @@ export const getRegexPatternsFromString = function getRegexPatternsFromString(st
   const mapped = parts.map((item) => item.trim());
   return mapped.filter(Boolean);
 };
-export const getStringFromRegexPatterns = function getStringFromRegexPatterns(join) {
-  return join.join("\n");
+export const getStringFromRegexPatterns = function getStringFromRegexPatterns(keywords) {
+  return keywords.join("\n");
 };

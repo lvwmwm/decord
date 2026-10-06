@@ -1,9 +1,23 @@
 // Module ID: 13797
 // Function ID: 13798
-// Dependencies: [1121]
+// Dependencies: [13798]
 
 // Module 13797
-import registerAsset from "module_1121" /* 1121 */;
+import module_13798_mod from "module_13798" /* 13798 */;
 
+const call = prototype.call;
+let module_13798 = module_13798_mod;
+if (module_13798) {
+  const bind = prototype.bind;
+  module_13798 = bind.bind(call, call);
+}
+if (!module_13798) {
+  module_13798 = (arg0) => {
+    let closure_0 = arg0;
+    return function() {
+      return call(...arguments);
+    };
+  };
+}
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 420, height: 112, scales: [1, 2, 3], hash: "ac80f7b470e8847053e22e988a30fa87", name: "subscription_placeholder_pattern_dark", type: "png" });
+export default module_13798;

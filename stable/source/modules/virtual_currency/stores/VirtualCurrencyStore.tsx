@@ -1,63 +1,119 @@
-// Module ID: 9163
-// Function ID: 9164
+// Module ID: 8314
+// Function ID: 8315
 // Name: VirtualCurrencyStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 9163 (VirtualCurrencyStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 8314 (VirtualCurrencyStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
 
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class VirtualCurrencyStore extends Store {
   constructor() {
-    closure_0 = undefined;
-    obj = {
+    const obj = {
       VIRTUAL_CURRENCY_REDEEM_START(skuId) {
-            return closure_0.handleRedeemVirtualCurrencyStart(skuId);
-          },
+        return closure_0.handleRedeemVirtualCurrencyStart(skuId);
+      },
       VIRTUAL_CURRENCY_REDEEM_SUCCESS(entitlements) {
-            return closure_0.handleRedeemVirtualCurrencySuccess(entitlements);
-          },
+        return closure_0.handleRedeemVirtualCurrencySuccess(entitlements);
+      },
       VIRTUAL_CURRENCY_REDEEM_FAIL(error) {
-            return closure_0.handleRedeemVirtualCurrencyFail(error);
-          },
+        return closure_0.handleRedeemVirtualCurrencyFail(error);
+      },
       VIRTUAL_CURRENCY_BALANCE_FETCH(arg0) {
-            return closure_0.handleBalanceFetch(arg0);
-          },
+        return closure_0.handleBalanceFetch(arg0);
+      },
       VIRTUAL_CURRENCY_BALANCE_FETCH_SUCCESS(balance) {
-            return closure_0.handleBalanceFetchSuccess(balance);
-          },
+        return closure_0.handleBalanceFetchSuccess(balance);
+      },
       VIRTUAL_CURRENCY_BALANCE_FETCH_FAIL(error) {
-            return closure_0.handleBalanceFetchFail(error);
-          },
+        return closure_0.handleBalanceFetchFail(error);
+      },
       VIRTUAL_CURRENCY_BALANCE_UPDATE(arg0) {
-            return closure_0.handleBalanceUpdate(arg0);
-          },
+        return closure_0.handleBalanceUpdate(arg0);
+      },
       VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN(arg0) {
-            return closure_0.handleOnboardingModalOpen(arg0);
-          },
+        return closure_0.handleOnboardingModalOpen(arg0);
+      },
       VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET(arg0) {
-            return closure_0.handleOnboardingModalReset(arg0);
-          },
+        return closure_0.handleOnboardingModalReset(arg0);
+      },
       LOGIN_SUCCESS() {
-            return closure_0.handleBalanceStateReset();
-          },
+        return closure_0.handleBalanceStateReset();
+      },
       VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY(balancePillOverlay) {
-            const result = closure_0.setBalancePillOverlay(balancePillOverlay.balancePillOverlay);
-          }
+        const result = closure_0.setBalancePillOverlay(balancePillOverlay.balancePillOverlay);
+      }
     };
-    tmp21 = new tmp2(closure_0(closure_1[1]), obj, new.target, tmp2, tmp, new.target, undefined);
-    closure_0 = tmp21;
-    tmp21._entitlements = null;
-    tmp21._redeemingSkuId = null;
-    tmp21._isRedeemingVirtualCurrency = false;
-    tmp21._redeemVirtualCurrencyError = null;
-    tmp21._balance = null;
-    tmp21._fetchBalanceError = null;
-    tmp21._isFetchingBalance = false;
-    tmp21._onboardingModalOpenedPrior = false;
-    tmp21._balancePillOverlay = false;
-    return tmp21;
+    const tmp22 = new tmp2(DispatcherDefault, obj, new.target, tmp2, tmp, this, undefined);
+    let closure_0 = tmp22;
+    tmp22._entitlements = null;
+    tmp22._redeemingSkuId = null;
+    tmp22._isRedeemingVirtualCurrency = false;
+    tmp22._redeemVirtualCurrencyError = null;
+    tmp22._balance = null;
+    tmp22._fetchBalanceError = null;
+    tmp22._isFetchingBalance = false;
+    tmp22._onboardingModalOpenedPrior = false;
+    tmp22._balancePillOverlay = false;
+    return tmp22;
+  }
+  setBalancePillOverlay(_balancePillOverlay) {
+    this._balancePillOverlay = _balancePillOverlay;
+  }
+  getCurrentBalance() {
+    return this.balance;
+  }
+  handleBalanceStateReset() {
+    this._balance = null;
+    this._fetchBalanceError = null;
+    this._isFetchingBalance = false;
+  }
+  handleBalanceFetch(arg0) {
+    if (arg0 == null) {
+      throw new TypeError("Cannot destructure 'undefined' or 'null'.");
+    } else {
+      const self = this;
+      this._isFetchingBalance = true;
+      this._fetchBalanceError = null;
+    }
+  }
+  handleBalanceFetchSuccess(balance) {
+    this._isFetchingBalance = false;
+    this._balance = balance.balance;
+  }
+  handleBalanceFetchFail(error) {
+    this._isFetchingBalance = false;
+    this._fetchBalanceError = error.error;
+  }
+  handleBalanceUpdate(balance) {
+    this._balance = balance.balance;
+  }
+  handleRedeemVirtualCurrencyStart(skuId) {
+    this._entitlements = null;
+    this._redeemingSkuId = skuId.skuId;
+    this._redeemVirtualCurrencyError = null;
+    this._isRedeemingVirtualCurrency = true;
+  }
+  handleRedeemVirtualCurrencySuccess(entitlements) {
+    this._entitlements = entitlements.entitlements;
+    this._redeemingSkuId = null;
+    this._isRedeemingVirtualCurrency = false;
+  }
+  handleRedeemVirtualCurrencyFail(error) {
+    this._entitlements = null;
+    this._redeemVirtualCurrencyError = error.error;
+    this._redeemingSkuId = null;
+    this._isRedeemingVirtualCurrency = false;
+  }
+  handleOnboardingModalOpen(arg0) {
+    if (arg0 == null) {
+      throw new TypeError("Cannot destructure 'undefined' or 'null'.");
+    } else {
+      const self = this;
+      this._onboardingModalOpenedPrior = true;
+    }
   }
 }
 const prototype = VirtualCurrencyStore.prototype;
@@ -115,62 +171,6 @@ Object.defineProperty(prototype, "balancePillOverlay", {
   },
   set: undefined
 });
-prototype["setBalancePillOverlay"] = function setBalancePillOverlay(_balancePillOverlay) {
-  this._balancePillOverlay = _balancePillOverlay;
-};
-prototype["getCurrentBalance"] = function getCurrentBalance() {
-  return this.balance;
-};
-prototype["handleBalanceStateReset"] = function handleBalanceStateReset() {
-  this._balance = null;
-  this._fetchBalanceError = null;
-  this._isFetchingBalance = false;
-};
-prototype["handleBalanceFetch"] = function handleBalanceFetch(arg0) {
-  if (arg0 == null) {
-    throw new TypeError("Cannot destructure 'undefined' or 'null'.");
-  } else {
-    const self = this;
-    this._isFetchingBalance = true;
-    this._fetchBalanceError = null;
-  }
-};
-prototype["handleBalanceFetchSuccess"] = function handleBalanceFetchSuccess(balance) {
-  this._isFetchingBalance = false;
-  this._balance = balance.balance;
-};
-prototype["handleBalanceFetchFail"] = function handleBalanceFetchFail(error) {
-  this._isFetchingBalance = false;
-  this._fetchBalanceError = error.error;
-};
-prototype["handleBalanceUpdate"] = function handleBalanceUpdate(balance) {
-  this._balance = balance.balance;
-};
-prototype["handleRedeemVirtualCurrencyStart"] = function handleRedeemVirtualCurrencyStart(skuId) {
-  this._entitlements = null;
-  this._redeemingSkuId = skuId.skuId;
-  this._redeemVirtualCurrencyError = null;
-  this._isRedeemingVirtualCurrency = true;
-};
-prototype["handleRedeemVirtualCurrencySuccess"] = function handleRedeemVirtualCurrencySuccess(entitlements) {
-  this._entitlements = entitlements.entitlements;
-  this._redeemingSkuId = null;
-  this._isRedeemingVirtualCurrency = false;
-};
-prototype["handleRedeemVirtualCurrencyFail"] = function handleRedeemVirtualCurrencyFail(error) {
-  this._entitlements = null;
-  this._redeemVirtualCurrencyError = error.error;
-  this._redeemingSkuId = null;
-  this._isRedeemingVirtualCurrency = false;
-};
-prototype["handleOnboardingModalOpen"] = function handleOnboardingModalOpen(arg0) {
-  if (arg0 == null) {
-    throw new TypeError("Cannot destructure 'undefined' or 'null'.");
-  } else {
-    const self = this;
-    this._onboardingModalOpenedPrior = true;
-  }
-};
 function handleOnboardingModalReset(arg0) {
   if (arg0 == null) {
     throw new TypeError("Cannot destructure 'undefined' or 'null'.");
@@ -181,7 +181,7 @@ function handleOnboardingModalReset(arg0) {
 }
 prototype["handleOnboardingModalReset"] = handleOnboardingModalReset;
 VirtualCurrencyStore.displayName = "VirtualCurrencyStore";
-const object = new Object(DispatcherDefault, {
+let obj = {
   VIRTUAL_CURRENCY_REDEEM_START(skuId) {
     return closure_0.handleRedeemVirtualCurrencyStart(skuId);
   },
@@ -215,8 +215,8 @@ const object = new Object(DispatcherDefault, {
   VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY(balancePillOverlay) {
     const result = closure_0.setBalancePillOverlay(balancePillOverlay.balancePillOverlay);
   }
-}, tmp, VirtualCurrencyStore, Object, prototype, new.target, undefined, handleOnboardingModalReset, dependencyMap);
-let closure_129_0 = object;
+};
+const object = new Object(DispatcherDefault, obj, tmp, VirtualCurrencyStore, Object, prototype, this, undefined, handleOnboardingModalReset, dependencyMap);
 object._entitlements = null;
 object._redeemingSkuId = null;
 object._isRedeemingVirtualCurrency = false;
@@ -226,7 +226,6 @@ object._fetchBalanceError = null;
 object._isFetchingBalance = false;
 object._onboardingModalOpenedPrior = false;
 object._balancePillOverlay = false;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/virtual_currency/stores/VirtualCurrencyStore.tsx");
 
 export default object;

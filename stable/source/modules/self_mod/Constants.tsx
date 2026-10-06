@@ -1,11 +1,11 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 9557
+// Function ID: 9558
 // Name: Constants
-// Dependencies: [1115, 2]
+// Dependencies: [1127, 2]
 // Exports: getInappropriateConversationsSafetyTips, getSafetyToolsActionSheetKey, getStrangerDangerSafetyTips
 
-// Module 11655 (Constants)
-import util from "util" /* 1115 */;
+// Module 9557 (Constants)
+import intl4 from "intl" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/self_mod/Constants.tsx");
@@ -36,21 +36,21 @@ export const getSafetyToolsActionSheetKey = function getSafetyToolsActionSheetKe
   return "SAFETY_TOOLS_ACTION_SHEET_" + arg0;
 };
 export const getStrangerDangerSafetyTips = function getStrangerDangerSafetyTips() {
-  const intl = util.intl;
-  const items = [intl.string(util.t["26fDv4"]), , ];
-  const intl2 = util.intl;
-  items[1] = intl2.string(util.t.togDfk);
-  const intl3 = util.intl;
-  items[2] = intl3.string(util.t.O4Ljca);
+  const intl = intl4.intl;
+  const items = [intl.string(intl4.t["26fDv4"]), , ];
+  const intl2 = intl4.intl;
+  items[1] = intl2.string(intl4.t.togDfk);
+  const intl3 = intl4.intl;
+  items[2] = intl3.string(intl4.t.O4Ljca);
   return items;
 };
 export const getInappropriateConversationsSafetyTips = function getInappropriateConversationsSafetyTips() {
-  const intl = util.intl;
-  const items = [intl.string(util.t.bCWw8l), , ];
-  const intl2 = util.intl;
-  items[1] = intl2.string(util.t.mzSucz);
-  const intl3 = util.intl;
-  items[2] = intl3.string(util.t.ZkmC7s);
+  const intl = intl4.intl;
+  const items = [intl.string(intl4.t.bCWw8l), , ];
+  const intl2 = intl4.intl;
+  items[1] = intl2.string(intl4.t.mzSucz);
+  const intl3 = intl4.intl;
+  items[2] = intl3.string(intl4.t.ZkmC7s);
   return items;
 };
 export const SAFETY_TOOLS_IGNORED_USER_TOAST_KEY = "SAFETY_TOOLS_IGNORED_USER_CONFIRMED";

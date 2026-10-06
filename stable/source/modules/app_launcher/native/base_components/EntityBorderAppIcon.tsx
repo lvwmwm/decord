@@ -1,27 +1,93 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 11414
+// Function ID: 11415
 // Name: EntityBorderAppIcon
-// Dependencies: [17, 21, 576, 4788, 5836, 2]
-// Exports: default
+// Dependencies: [17, 21, 588, 4837, 558, 576, 5896, 2]
 
-// Module 12338 (EntityBorderAppIcon)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import createStyles from "createStyles" /* 4788 */;
+// Module 11414 (EntityBorderAppIcon)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const View = _mod17.View;
-const jsx = jsxProd.jsx;
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const sm = nativeDefault.radii.sm;
-let closure_5 = createStyles.createStyles((width, borderRadius) => {
+let closure_6 = createStyles.createStyles((width, borderRadius) => {
   const obj = { appIcon: { width, height: width, borderRadius }, entityWrapper: { padding: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", borderRadius: borderRadius + 1 } };
+  ({ padding: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", borderRadius: borderRadius + 1 });
   return obj;
 });
-const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/EntityBorderAppIcon.tsx");
-
-export default function EntityBorderAppIcon(iconSize) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let iconBorderRadius;
+  let iconSize;
+  let iconSource;
+  let iconStyle;
+  let wrapperStyle;
+  const obj = react;
+  const cResult = obj.c(12);
+  ({ iconSource, wrapperStyle, iconStyle, iconSize, iconBorderRadius } = arg0);
+  let num = 32;
+  const tmp3 = closure_6;
+  if (undefined !== iconSize) {
+    num = iconSize;
+  }
+  if (undefined === iconBorderRadius) {
+    iconBorderRadius = sm;
+  }
+  const tmp3Result = tmp3(num, iconBorderRadius);
+  if (cResult[0] === tmp3Result.entityWrapper) {
+    let tmp5;
+    if (cResult[1] === wrapperStyle) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === iconStyle) {
+      let tmp6;
+      if (cResult[4] === tmp3Result.appIcon) {
+        tmp6 = cResult[5];
+      }
+      if (cResult[6] === iconSource) {
+        let tmp7;
+        if (cResult[7] === tmp6) {
+          tmp7 = cResult[8];
+        }
+        if (cResult[9] === tmp5) {
+          let tmp11;
+          if (cResult[10] === tmp7) {
+            tmp11 = cResult[11];
+          }
+          return tmp11;
+        }
+        const tmp14 = <View style={tmp5}>{tmp7}</View>;
+        cResult[9] = tmp5;
+        cResult[10] = tmp7;
+        cResult[11] = tmp14;
+        tmp11 = tmp14;
+      }
+      const tmp10 = jsx(FastImageDefault, { style: tmp6, source: iconSource });
+      cResult[6] = iconSource;
+      cResult[7] = tmp6;
+      cResult[8] = tmp10;
+      tmp7 = tmp10;
+    }
+    const items = [tmp3Result.appIcon, iconStyle];
+    cResult[3] = iconStyle;
+    cResult[4] = tmp3Result.appIcon;
+    cResult[5] = items;
+    tmp6 = items;
+  }
+  const items1 = [tmp3Result.entityWrapper, wrapperStyle];
+  cResult[0] = tmp3Result.entityWrapper;
+  cResult[1] = wrapperStyle;
+  cResult[2] = items1;
+  tmp5 = items1;
+}) : ((iconSize) => {
+  let iconSource;
+  let iconStyle;
+  let wrapperStyle;
   let num = iconSize.iconSize;
   ({ iconSource, wrapperStyle, iconStyle } = iconSize);
   if (num === undefined) {
@@ -31,13 +97,11 @@ export default function EntityBorderAppIcon(iconSize) {
   if (iconBorderRadius === undefined) {
     iconBorderRadius = sm;
   }
-  const tmp = closure_5(num, iconBorderRadius);
-  const obj = { style: null, children: null };
+  const tmp = closure_6(num, iconBorderRadius);
   const items = [tmp.entityWrapper, wrapperStyle];
-  obj.style = items;
-  const obj2 = { style: null, source: iconSource };
   const items1 = [tmp.appIcon, iconStyle];
-  obj2.style = items1;
-  obj.children = jsx(FastImageDefault, { style: null, source: iconSource });
-  return <View style={null}>{null}</View>;
-};
+  return <View style={items}>{null}</View>;
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/EntityBorderAppIcon.tsx");
+
+export default tmp2;

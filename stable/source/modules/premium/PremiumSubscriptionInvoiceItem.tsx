@@ -1,29 +1,31 @@
-// Module ID: 4456
-// Function ID: 4457
+// Module ID: 4501
+// Function ID: 4502
 // Name: PremiumSubscriptionInvoiceItem
 // Dependencies: [12, 2]
 // Exports: coalesceInvoiceItems, createInvoiceItemFromServer
 
-// Module 4456 (PremiumSubscriptionInvoiceItem)
+// Module 4501 (PremiumSubscriptionInvoiceItem)
 import _modDef12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
+
+let set;
 
 const result = size.fileFinishedImporting("modules/premium/PremiumSubscriptionInvoiceItem.tsx");
 
 export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {
   const items = [];
-  const set = new Set();
+  set = new Set();
   const mapped = arr.map((subscriptionPlanId) => {
     for (const item10009 of items) {
       let tmp = item10009;
       let tmp3 = item10009;
-      if (item10009.subscriptionPlanId === arg0.subscriptionPlanId) {
-        if (tmp3.subscriptionPlanPrice === arg0.subscriptionPlanPrice) {
-          if (tmp3.amount === arg0.amount) {
+      if (item10009.subscriptionPlanId === subscriptionPlanId.subscriptionPlanId) {
+        if (tmp3.subscriptionPlanPrice === subscriptionPlanId.subscriptionPlanPrice) {
+          if (tmp3.amount === subscriptionPlanId.amount) {
             let obj2 = _modDef12;
-            if (obj2.isEqual(tmp3.discounts, arg0.discounts)) {
+            if (obj2.isEqual(tmp3.discounts, subscriptionPlanId.discounts)) {
               let addResult = set.add(tmp.subscriptionPlanId);
-              tmp.quantity = tmp.quantity + arg0.quantity;
+              tmp.quantity = tmp.quantity + subscriptionPlanId.quantity;
               obj.return();
             }
           }
@@ -31,8 +33,10 @@ export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {
       }
       continue;
     }
+    const push = items.push;
+    const obj3 = {};
     const merged = Object.assign(subscriptionPlanId);
-    items.push({});
+    push(obj3);
   });
   return items.map((subscriptionPlanId) => {
     let obj = {};
@@ -41,9 +45,8 @@ export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {
       obj.amount = obj.amount * obj.quantity;
       const discounts = obj.discounts;
       obj.discounts = discounts.map((amount) => {
-        obj = {};
+        obj = { amount: amount.amount * obj.quantity };
         const merged = Object.assign(amount);
-        obj.amount = amount.amount * obj.quantity;
         return obj;
       });
       if (null != obj.tax) {

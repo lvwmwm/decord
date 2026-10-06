@@ -1,17 +1,18 @@
-// Module ID: 16171
-// Function ID: 16172
+// Module ID: 15448
+// Function ID: 15449
 // Name: CollectiblesShopViewAllCategoryItemsSetting
-// Dependencies: [1074, 11754, 15123, 16172, 2]
+// Dependencies: [1086, 10874, 14366, 15449, 2]
 
-// Module 16171 (CollectiblesShopViewAllCategoryItemsSetting)
-import Constants from "Constants" /* 1074 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15123 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15448 (CollectiblesShopViewAllCategoryItemsSetting)
+import Constants from "Constants" /* 1086 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14366 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
     return "";
   },
@@ -19,12 +20,13 @@ const route = SettingBuilders.createRoute({
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   unsearchable: true,
   screen: {
-    route: Constants.UserSettingsSections.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS,
+    route: UserSettingsSections.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS,
     getComponent() {
       return require("CollectiblesShopViewAllCategoryItemsScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/CollectiblesShopViewAllCategoryItemsSetting.tsx");
 
 export default route;

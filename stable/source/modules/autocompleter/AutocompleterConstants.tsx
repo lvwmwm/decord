@@ -1,19 +1,20 @@
-// Module ID: 5764
-// Function ID: 5765
+// Module ID: 5828
+// Function ID: 5829
 // Name: autocompleter/AutocompleterConstants
 // Dependencies: [2]
+// Exports: HeaderRecord
 
-// Module 5764 (autocompleter/AutocompleterConstants)
+// Module 5828 (autocompleter/AutocompleterConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/autocompleter/AutocompleterConstants.tsx");
 
-export const HeaderRecord = function HeaderRecord(id) {
+export function HeaderRecord(id) {
   const obj = Object.create(new.target.prototype);
   obj.id = id;
   obj.text = id;
   return obj;
-}.prototype;
+}
 export const FindResultDirections = { UP: "UP", DOWN: "DOWN" };
 export const AutocompleterResultTypes = { GUILD: "GUILD", TEXT_CHANNEL: "TEXT_CHANNEL", GROUP_DM: "GROUP_DM", VOICE_CHANNEL: "VOICE_CHANNEL", USER: "USER", USER_GLOBAL: "USER_GLOBAL", HEADER: "HEADER", APPLICATION: "APPLICATION", GAME_PROFILE: "GAME_PROFILE", SKU: "SKU", LINK: "LINK", IN_APP_NAVIGATION: "IN_APP_NAVIGATION", DM: "DM" };
 export const AutocompleterQuerySymbols = { USER: "@", TEXT_CHANNEL: "#", VOICE_CHANNEL: "!", GUILD: "*", GAME_PROFILE: "$" };

@@ -1,16 +1,18 @@
-// Module ID: 15053
-// Function ID: 15054
+// Module ID: 14296
+// Function ID: 14297
 // Name: useIsNewClassification
 // Dependencies: [11, 2]
 // Exports: useIsNewClassification
 
-// Module 15053 (useIsNewClassification)
+// Module 14296 (useIsNewClassification)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useIsNewClassification.tsx");
 
 export const useIsNewClassification = function useIsNewClassification(classification) {
-  const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(classification.id);
-  return Math.abs(extractTimestampResult - new Date().getTime()) < 86400000;
+  const obj = SnowflakeUtilsDefault;
+  const extractTimestampResult = obj.extractTimestamp(classification.id);
+  const date = new Date();
+  return abs(extractTimestampResult - date.getTime()) < 86400000;
 };

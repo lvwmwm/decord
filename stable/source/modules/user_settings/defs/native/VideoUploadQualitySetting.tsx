@@ -1,55 +1,84 @@
-// Module ID: 15740
-// Function ID: 15741
+// Module ID: 15001
+// Function ID: 15002
 // Name: VideoUploadQualitySetting
-// Dependencies: [1184, 8265, 504, 15739, 2019, 1115, 11754, 2]
+// Dependencies: [1196, 7421, 558, 576, 504, 15000, 2027, 1127, 10874, 2]
 
-// Module 15740 (VideoUploadQualitySetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import UserSettingsText from "UserSettingsText" /* 15739 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
+// Module 15001 (VideoUploadQualitySetting)
+import react from "react" /* 576 */;
+import intl4 from "intl" /* 1127 */;
+import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1196 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import UserSettingsText from "UserSettingsText" /* 15000 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const VideoQualitySettings = fn(1184).VideoQualitySettings;
-const SettingBuilders = fn(11754);
-const radio = SettingBuilders.createRadio({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.PXq9f1);
-  },
-  parent: fn(8265).MobileUserSettings.CHAT,
-  useValue: function useVideoUploadQualitySettingValue() {
+const UnsyncedUserSettingsStore = UnsyncedUserSettingsStore2;
+
+let tmp;
+const get_initialized = tmp(504);
+const VideoQualitySettings = UnsyncedUserSettingsStore2.VideoQualitySettings;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  let videoUploadQuality;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UnsyncedUserSettingsStore];
-    return initialize.useStateFromStores(items, () => videoUploadQuality.videoUploadQuality);
+    const fn = function l() {
+      return videoUploadQuality.videoUploadQuality;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let videoUploadQuality;
+  const items = [UnsyncedUserSettingsStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => videoUploadQuality.videoUploadQuality);
+});
+let obj = {
+  useTitle() {
+    const intl = intl4.intl;
+    return intl.string(intl4.t.PXq9f1);
   },
+  parent: MobileUserSettings.CHAT,
+  useValue: tmp2,
   onValueChange: function onVideoUploadQualitySettingValueChange(videoUploadQuality) {
-    const obj3 = { videoUploadQuality, viewImageDescriptions: null, lowQualityImageMode: null, dataSavingMode: null };
-    const ViewImageDescriptions = UserSettings.ViewImageDescriptions;
-    obj3.viewImageDescriptions = ViewImageDescriptions.getSetting();
-    ({ lowQualityImageMode: obj2.lowQualityImageMode, dataSavingMode: obj2.dataSavingMode } = UnsyncedUserSettingsStore);
-    const result = UserSettingsText.setVideoUploadQuality(obj3);
+    let ViewImageDescriptions;
+    const obj = { videoUploadQuality, viewImageDescriptions: ViewImageDescriptions.getSetting(), lowQualityImageMode: null, dataSavingMode: null };
+    const setVideoUploadQuality = UserSettingsText.setVideoUploadQuality;
+    UserSettingsText;
+    ViewImageDescriptions = UserSettings.ViewImageDescriptions;
+    ({ lowQualityImageMode: obj.lowQualityImageMode, dataSavingMode: obj.dataSavingMode } = UnsyncedUserSettingsStore);
+    const result = setVideoUploadQuality(obj);
   },
   useOptions: function useVideoUploadQualitySettingOptions() {
-    const obj = { label: null, value: null };
-    const intl = util.intl;
-    obj.label = intl.string(util.t.cWGW5d);
-    obj.value = VideoQualitySettings.BEST;
+    let intl;
+    let intl2;
+    let intl3;
+    const obj = { label: intl.string(intl4.t.cWGW5d), value: VideoQualitySettings.BEST };
+    intl = intl4.intl;
     const items = [obj, , ];
-    const obj2 = { label: null, value: null };
-    const intl2 = util.intl;
-    obj2.label = intl2.string(util.t["5hKnyC"]);
-    obj2.value = VideoQualitySettings.STANDARD;
+    const obj2 = { label: intl2.string(intl4.t["5hKnyC"]), value: VideoQualitySettings.STANDARD };
+    intl2 = intl4.intl;
     items[1] = obj2;
-    const obj3 = { label: null, value: null };
-    const intl3 = util.intl;
-    obj3.label = intl3.string(util.t.y5k4ZJ);
-    obj3.value = VideoQualitySettings.DATA_SAVER;
+    const obj3 = { label: intl3.string(intl4.t.y5k4ZJ), value: VideoQualitySettings.DATA_SAVER };
+    intl3 = intl4.intl;
     items[2] = obj3;
     return items;
   }
-});
-const size = fn(2);
+};
+const radio = SettingBuilders.createRadio(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/VideoUploadQualitySetting.tsx");
 
 export default radio;

@@ -1,21 +1,24 @@
-// Module ID: 11160
-// Function ID: 11161
+// Module ID: 10372
+// Function ID: 10373
 // Name: getPrivateChannelCall
-// Dependencies: [4807, 1074, 4995, 8271, 1115, 9936, 2]
+// Dependencies: [4856, 1086, 5044, 7427, 1127, 9074, 2]
 // Exports: default
 
-// Module 11160 (getPrivateChannelCall)
-import CallsUtils from "CallsUtils" /* 9936 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+// Module 10372 (getPrivateChannelCall)
+import Constants from "Constants" /* 1086 */;
+import CallsUtils from "CallsUtils" /* 9074 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const NOOP_NULL = fn(1074).NOOP_NULL;
-const size = fn(2);
+const NOOP_NULL = Constants.NOOP_NULL;
 const result = size.fileFinishedImporting("modules/calls/native/getPrivateChannelCall.tsx");
 
 export default function getPrivateChannelCall(id) {
+  let stringResult;
+  let tmp9Result;
   _require = id;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -30,10 +33,11 @@ export default function getPrivateChannelCall(id) {
     handleJoinCall = require("PrivateChannelCallUtils").handleJoinCall;
   }
   const isInChannelResult = handleStartCall.isInChannel(id.id);
-  const obj = require("useIsCallActive");
+  let obj = require("useIsCallActive");
+  const checkIsCallActiveResult = obj.checkIsCallActive(id.id);
   if (id.isSystemDM()) {
     const C = handleJoinCall;
-    let tmp9Result = null;
+    tmp9Result = null;
   } else if (isInChannelResult) {
     if (!flag) {
       const string2 = tmp6(tmp7[4]).intl.string;
@@ -87,17 +91,14 @@ export default function getPrivateChannelCall(id) {
     const string = intl2.string;
     const t = tmp6(tmp7[4]).t;
     if (flag) {
-      let stringResult = string(t.oCqlGG);
+      stringResult = string(t.oCqlGG);
     } else {
       stringResult = string(t.focH1t);
     }
   }
-  const obj2 = { text: tmp9Result, accessibilityHint: null, inCall: null, onPress: null };
+  const obj2 = { text: tmp9Result, accessibilityHint: stringResult, inCall: isInChannelResult, onPress: C };
   if (stringResult == null) {
     stringResult = tmp9Result;
   }
-  obj2.accessibilityHint = stringResult;
-  obj2.inCall = isInChannelResult;
-  obj2.onPress = C;
   return obj2;
 };

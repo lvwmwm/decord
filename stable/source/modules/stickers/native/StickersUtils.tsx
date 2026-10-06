@@ -1,39 +1,208 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 9884
+// Function ID: 9885
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 2063, 1372, 10685, 1074, 1218, 5517, 7611, 10682, 504, 9467, 10686, 10687, 1610, 2]
-// Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
+// Dependencies: [19, 17, 2073, 1378, 9885, 1086, 1230, 558, 576, 9882, 504, 8619, 5582, 9886, 9887, 9888, 1617, 2]
+// Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker
 
-// Module 10684 (stickers/StickersUtils)
-import KeyboardTypes from "KeyboardTypes" /* 1610 */;
-import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 9884 (stickers/StickersUtils)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1086 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1230 */;
+import KeyboardTypes from "KeyboardTypes" /* 1617 */;
+import StickersTypes from "StickersTypes" /* 5582 */;
+import StickerPickerStore from "StickerPickerStore" /* 9885 */;
+import StickerCategoryUtils from "StickerCategoryUtils" /* 9886 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9887 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9888 */;
+import react from "react" /* 19 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const NativeModules = fn(17).NativeModules;
-const useStickerPickerStore = fn(10685).useStickerPickerStore;
-const GuildNSFWContentLevel = fn(1074).GuildNSFWContentLevel;
-const ExpressionPickerViewType = fn(1218).ExpressionPickerViewType;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
-
-export const useStickerCategories = function useStickerCategories(channel) {
-  _require = channel;
-  const stickerPackCategories = require("StickersHooks").useStickerPackCategories(channel);
+const NativeModules = react_native.NativeModules;
+const useStickerPickerStore = StickerPickerStore.useStickerPickerStore;
+const GuildNSFWContentLevel = Constants.GuildNSFWContentLevel;
+const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewType;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let closure_2;
+  let currentUser;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  _require = arg0;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(15);
+  let obj2 = require("StickersHooks");
+  const stickerPackCategories = obj2.useStickerPackCategories(arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function l() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = fn;
+    tmp5 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const guilds = GuildStore.getGuilds();
+    cResult[2] = guilds;
+    tmp9 = guilds;
+  } else {
+    tmp9 = cResult[2];
+  }
+  dependencyMap = tmp9;
+  const tmpResult2 = tmp(8619);
+  const mobileStickerPickerUpsellRestyleEnabled = tmpResult2.useMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
+  if (cResult[3] === arg0) {
+    if (cResult[4] === stickerPackCategories) {
+      if (cResult[5] === mobileStickerPickerUpsellRestyleEnabled) {
+        let tmp13;
+        if (cResult[6] === stateFromStores) {
+          tmp13 = cResult[7];
+        }
+        return tmp13;
+      }
+    }
+  }
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor(stickers) {
+        return stickers.stickers.length > 0;
+      }
+    }
+    cResult[8] = T;
+    let tmp14 = T;
+  } else {
+    class T {
+      constructor(stickers) {
+        return stickers.stickers.length > 0;
+      }
+    }
+  }
+  const tmp15 = cResult[9];
+  if (stateFromStores != null) {
+    class T {
+      constructor(stickers) {
+        return stickers.stickers.length > 0;
+      }
+    }
+  }
+  if (tmp15 !== undefined) {
+    class T {
+      constructor(stickers) {
+        return stickers.stickers.length > 0;
+      }
+    }
+    if (stateFromStores != null) {
+      class T {
+        constructor(stickers) {
+          return stickers.stickers.length > 0;
+        }
+      }
+    }
+    const fn2 = function f(type) {
+      let tmp2 = type.type !== StickersTypes.StickerCategoryTypes.GUILD;
+      if (!tmp2) {
+        let nsfwAllowed;
+        if (stateFromStores != null) {
+          nsfwAllowed = stateFromStores.nsfwAllowed;
+        }
+        tmp2 = nsfwAllowed;
+      }
+      if (!tmp2) {
+        tmp2 = null == tmp;
+      }
+      if (!tmp2) {
+        tmp2 = closure_2[type.id].nsfwLevel !== GuildNSFWContentLevel.AGE_RESTRICTED && closure_2[type.id].nsfwLevel !== tmp6.EXPLICIT;
+      }
+      return tmp2;
+    };
+    cResult[9] = tmp17;
+    cResult[10] = fn2;
+  } else {
+    class T {
+      constructor(stickers) {
+        return stickers.stickers.length > 0;
+      }
+    }
+  }
+  if (cResult[11] === arg0) {
+    class T {
+      constructor(stickers) {
+        return stickers.stickers.length > 0;
+      }
+    }
+  }
+  class C {
+    constructor(type) {
+      let tmp14;
+      let tmp18;
+      let result = mobileStickerPickerUpsellRestyleEnabled;
+      if (result) {
+        const obj = StickerCategoryUtils;
+        result = obj.isStickerCategoryNitroLocked(type, stateFromStores, closure_0);
+      }
+      if (type.type !== StickersTypes.StickerCategoryTypes.FAVORITE) {
+        if (type.type !== StickersTypes.StickerCategoryTypes.RECENT) {
+          let tmp8 = type;
+          if (result) {
+            const obj2 = { isNitroLocked: result };
+            const merged = Object.assign(type);
+            tmp8 = obj2;
+          }
+          return tmp8;
+        }
+      }
+      if (type.type === StickersTypes.StickerCategoryTypes.FAVORITE) {
+        tmp14 = AssetRegistryDefault;
+      } else {
+        tmp14 = AssetRegistryDefault2;
+      }
+      const obj3 = { icon: tmp14 };
+      const merged1 = Object.assign(type);
+      if (result) {
+        obj3.isNitroLocked = result;
+        tmp18 = obj3;
+      } else {
+        tmp18 = obj3;
+      }
+      return tmp18;
+    }
+  }
+  cResult[11] = arg0;
+  cResult[12] = mobileStickerPickerUpsellRestyleEnabled;
+  cResult[13] = stateFromStores;
+  cResult[14] = C;
+}) : ((arg0) => {
+  let closure_0;
+  let currentUser;
+  let stateFromStores;
+  _require = arg0;
   let obj = require("StickersHooks");
+  const stickerPackCategories = obj.useStickerPackCategories(arg0);
+  let obj2 = require("get initialized");
   const items = [UserStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => currentUser.getCurrentUser());
+  stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
   const guilds = GuildStore.getGuilds();
-  let obj2 = require("initialize");
-  const mobileStickerPickerUpsellRestyleEnabled = require("MobileStickerPickerUpsellRestyleExperiment").useMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
-  const items1 = [channel, guilds, stickerPackCategories, mobileStickerPickerUpsellRestyleEnabled, stateFromStores];
+  let obj3 = require("MobileStickerPickerUpsellRestyleExperiment");
+  const mobileStickerPickerUpsellRestyleEnabled = obj3.useMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
+  const items1 = [arg0, guilds, stickerPackCategories, mobileStickerPickerUpsellRestyleEnabled, stateFromStores];
   return guilds.useMemo(() => {
     const found = stickerPackCategories.filter((stickers) => stickers.stickers.length > 0);
     const found1 = found.filter((type) => {
-      let tmp2 = type.type !== closure_0(stateFromStores[7]).StickerCategoryTypes.GUILD;
+      let tmp2 = type.type !== closure_0(stateFromStores[12]).StickerCategoryTypes.GUILD;
       if (!tmp2) {
         nsfwAllowed = undefined;
         if (nsfwAllowed != null) {
@@ -45,59 +214,49 @@ export const useStickerCategories = function useStickerCategories(channel) {
         tmp2 = null == tmp;
       }
       if (!tmp2) {
-        tmp2 = tmp.nsfwLevel !== constants.AGE_RESTRICTED && tmp.nsfwLevel !== tmp6.EXPLICIT;
-        const tmp7 = tmp.nsfwLevel !== constants.AGE_RESTRICTED && tmp.nsfwLevel !== tmp6.EXPLICIT;
+        tmp2 = guilds[type.id].nsfwLevel !== constants.AGE_RESTRICTED && guilds[type.id].nsfwLevel !== tmp6.EXPLICIT;
       }
       return tmp2;
     });
     return found1.map((type) => {
-      let tmp = mobileStickerPickerUpsellRestyleEnabled;
-      if (mobileStickerPickerUpsellRestyleEnabled) {
-        closure_0 = nsfwAllowed;
-        closure_1 = channel;
-        let everyResult = type.type === closure_0(stateFromStores[7]).StickerCategoryTypes.GUILD;
-        if (everyResult) {
-          everyResult = 0 !== type.stickers.length;
-        }
-        if (everyResult) {
-          const stickers = type.stickers;
-          everyResult = stickers.every((item) => {
-            const stickerSendability = channel(nsfwAllowed[8]).getStickerSendability(item, closure_0, closure_1);
-            return stickerSendability === channel(nsfwAllowed[8]).StickerSendability.SENDABLE_WITH_PREMIUM;
-          });
-        }
-        tmp = everyResult;
+      let tmp14;
+      let tmp18;
+      let result = mobileStickerPickerUpsellRestyleEnabled;
+      if (result) {
+        const obj = closure_0(stateFromStores[13]);
+        result = obj.isStickerCategoryNitroLocked(type, nsfwAllowed, closure_1_0);
       }
-      if (type.type !== closure_0(stateFromStores[7]).StickerCategoryTypes.FAVORITE) {
-        if (type.type !== closure_0(stateFromStores[7]).StickerCategoryTypes.RECENT) {
-          let tmp9 = type;
-          if (tmp) {
-            const obj = {};
+      if (type.type !== closure_0(stateFromStores[12]).StickerCategoryTypes.FAVORITE) {
+        if (type.type !== closure_0(stateFromStores[12]).StickerCategoryTypes.RECENT) {
+          let tmp8 = type;
+          if (result) {
+            const obj2 = { isNitroLocked: result };
             const merged = Object.assign(type);
-            obj.isNitroLocked = tmp;
-            tmp9 = obj;
+            tmp8 = obj2;
           }
-          return tmp9;
+          return tmp8;
         }
       }
-      if (type.type === closure_0(stateFromStores[7]).StickerCategoryTypes.FAVORITE) {
-        let tmp15 = stickerPackCategories(stateFromStores[12]);
+      if (type.type === closure_0(stateFromStores[12]).StickerCategoryTypes.FAVORITE) {
+        tmp14 = stickerPackCategories(stateFromStores[14]);
       } else {
-        tmp15 = stickerPackCategories(stateFromStores[13]);
+        tmp14 = stickerPackCategories(stateFromStores[15]);
       }
-      const obj2 = {};
+      const obj3 = { icon: tmp14 };
       const merged1 = Object.assign(type);
-      obj2.icon = tmp15;
-      if (tmp) {
-        obj2.isNitroLocked = tmp;
-        let tmp19 = obj2;
+      if (result) {
+        obj3.isNitroLocked = result;
+        tmp18 = obj3;
       } else {
-        tmp19 = obj2;
+        tmp18 = obj3;
       }
-      return tmp19;
+      return tmp18;
     });
   }, items1);
-};
+});
+let result = size.fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
+
+export const useStickerCategories = tmp2;
 export const preloadSticker = function preloadSticker(hash) {
   const NativeLottieUtils = NativeModules.NativeLottieUtils;
   NativeLottieUtils.preload(hash.hash, hash.url, hash.width, hash.height, hash.frames, hash.callback);
@@ -106,14 +265,16 @@ export const dropPreloadedSticker = function dropPreloadedSticker(arg0) {
   const NativeLottieUtils = NativeModules.NativeLottieUtils;
   NativeLottieUtils.dropPreload(arg0);
 };
-export const openStickerPickerToPackId = function openStickerPickerToPackId(arg0, dependencyMap) {
+export const openStickerPickerToPackId = function openStickerPickerToPackId(arg0, pack_id) {
+  const ref = arg0;
   const state = useStickerPickerStore.getState();
-  state.setPackToScrollTo(dependencyMap);
+  state.setPackToScrollTo(pack_id);
   const timerId = setTimeout(() => {
     const current = ref.current;
     if (current != null) {
+      const openCustomKeyboard = current.openCustomKeyboard;
       const obj = { type: KeyboardTypes.KeyboardTypes.EXPRESSION, context: ExpressionPickerViewType.STICKER };
-      current.openCustomKeyboard(obj);
+      openCustomKeyboard(obj);
     }
   }, 1);
 };

@@ -1,142 +1,158 @@
-// Module ID: 9469
-// Function ID: 9470
+// Module ID: 8621
+// Function ID: 8622
 // Name: AppIconConstants
-// Dependencies: [9470, 9471, 1115, 9472, 9473, 9474, 9475, 9476, 9477, 9478, 9479, 9480, 9481, 9482, 9483, 9484, 9485, 9486, 9487, 9488, 9489, 9490, 9491, 9492, 9493, 9494, 9495, 2]
+// Dependencies: [8622, 8623, 1127, 8624, 8625, 8626, 8627, 8628, 8629, 8630, 8631, 8632, 8633, 8634, 8635, 8636, 8637, 8638, 8639, 8640, 8641, 8642, 8643, 8644, 8645, 8646, 8647, 2]
 // Exports: getDefaultIcon, getIconById, getIcons, getLimitedAlternateIcons, getOfficialAlternateIcons, isIconExpired
 
-// Module 9469 (AppIconConstants)
-import util from "util" /* 1115 */;
-import AppIconTypes from "AppIconTypes" /* 9470 */;
-import _modDef9471 from "module_9471" /* 9471 */;
-import _modDef9472 from "module_9472" /* 9472 */;
-import _modDef9473 from "module_9473" /* 9473 */;
-import _modDef9474 from "module_9474" /* 9474 */;
-import _modDef9475 from "module_9475" /* 9475 */;
-import _modDef9476 from "module_9476" /* 9476 */;
-import _modDef9477 from "module_9477" /* 9477 */;
-import _modDef9478 from "module_9478" /* 9478 */;
-import _modDef9479 from "module_9479" /* 9479 */;
-import _modDef9480 from "module_9480" /* 9480 */;
-import _modDef9481 from "module_9481" /* 9481 */;
-import _modDef9482 from "module_9482" /* 9482 */;
-import _modDef9483 from "module_9483" /* 9483 */;
-import _modDef9484 from "module_9484" /* 9484 */;
-import _modDef9485 from "module_9485" /* 9485 */;
-import _modDef9486 from "module_9486" /* 9486 */;
-import _modDef9487 from "module_9487" /* 9487 */;
-import _modDef9488 from "module_9488" /* 9488 */;
-import _modDef9489 from "module_9489" /* 9489 */;
-import _modDef9490 from "module_9490" /* 9490 */;
-import _modDef9491 from "module_9491" /* 9491 */;
-import _modDef9492 from "module_9492" /* 9492 */;
-import _modDef9493 from "module_9493" /* 9493 */;
-import _modDef9494 from "module_9494" /* 9494 */;
-import _modDef9495 from "module_9495" /* 9495 */;
+// Module 8621 (AppIconConstants)
+import intl25 from "intl" /* 1127 */;
+import AppIconTypes from "AppIconTypes" /* 8622 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8623 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8624 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8625 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 8626 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 8627 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 8628 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 8629 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 8630 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 8631 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 8632 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 8633 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 8634 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 8635 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 8636 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 8637 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 8638 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 8639 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 8640 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 8641 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 8642 */;
+import AssetRegistryDefault21 from "AssetRegistry" /* 8643 */;
+import AssetRegistryDefault22 from "AssetRegistry" /* 8644 */;
+import AssetRegistryDefault23 from "AssetRegistry" /* 8645 */;
+import AssetRegistryDefault24 from "AssetRegistry" /* 8646 */;
+import AssetRegistryDefault25 from "AssetRegistry" /* 8647 */;
 import size from "module_2" /* 2 */;
 
-let obj = { id: AppIconTypes.PremiumAppIconIds.IN_RAINBOWS, iconSource: _modDef9472, isPremium: true, name: null };
-let intl = util.intl;
-obj.name = intl.string(util.t.yxJB9E);
+let intl;
+let intl10;
+let intl11;
+let intl12;
+let intl13;
+let intl14;
+let intl15;
+let intl16;
+let intl17;
+let intl18;
+let intl19;
+let intl2;
+let intl20;
+let intl21;
+let intl22;
+let intl23;
+let intl24;
+let intl3;
+let intl4;
+let intl5;
+let intl6;
+let intl7;
+let intl8;
+let intl9;
+const f97634 = (expiresAt) => {
+  let tmp = null != expiresAt.expiresAt;
+  if (tmp) {
+    const _Date = Date;
+    tmp = Date.now() > expiresAt.expiresAt;
+  }
+  return !tmp;
+};
+const f97635 = (expiresAt) => {
+  let tmp = null != expiresAt.expiresAt;
+  if (tmp) {
+    const _Date = Date;
+    tmp = Date.now() > expiresAt.expiresAt;
+  }
+  return !tmp;
+};
+let obj = { id: AppIconTypes.PremiumAppIconIds.IN_RAINBOWS, iconSource: AssetRegistryDefault2, isPremium: true, name: intl.string(intl25.t.yxJB9E) };
+intl = intl25.intl;
 let items = [obj, , , , , , , , , , , , , , , , , , , , , , , ];
-let obj2 = { id: AppIconTypes.PremiumAppIconIds.MIDNIGHT_PRISM, iconSource: _modDef9473, isPremium: true, name: null };
-let intl2 = util.intl;
-obj2.name = intl2.string(util.t.nshUZZ);
+let obj2 = { id: AppIconTypes.PremiumAppIconIds.MIDNIGHT_PRISM, iconSource: AssetRegistryDefault3, isPremium: true, name: intl2.string(intl25.t.nshUZZ) };
+intl2 = intl25.intl;
 items[1] = obj2;
-const obj3 = { id: AppIconTypes.PremiumAppIconIds.COLOR_WAVE, iconSource: _modDef9474, isPremium: true, name: null };
-const intl3 = util.intl;
-obj3.name = intl3.string(util.t.MWRYqh);
+const obj3 = { id: AppIconTypes.PremiumAppIconIds.COLOR_WAVE, iconSource: AssetRegistryDefault4, isPremium: true, name: intl3.string(intl25.t.MWRYqh) };
+intl3 = intl25.intl;
 items[2] = obj3;
-const obj4 = { id: AppIconTypes.PremiumAppIconIds.BLURPLE_TWILIGHT, iconSource: _modDef9475, isPremium: true, name: null };
-const intl4 = util.intl;
-obj4.name = intl4.string(util.t.Mfoe3p);
+const obj4 = { id: AppIconTypes.PremiumAppIconIds.BLURPLE_TWILIGHT, iconSource: AssetRegistryDefault5, isPremium: true, name: intl4.string(intl25.t.Mfoe3p) };
+intl4 = intl25.intl;
 items[3] = obj4;
-const obj5 = { id: AppIconTypes.PremiumAppIconIds.BRAND_INVERTED, iconSource: _modDef9476, isPremium: true, name: null };
-const intl5 = util.intl;
-obj5.name = intl5.string(util.t.h6UXSt);
+const obj5 = { id: AppIconTypes.PremiumAppIconIds.BRAND_INVERTED, iconSource: AssetRegistryDefault6, isPremium: true, name: intl5.string(intl25.t.h6UXSt) };
+intl5 = intl25.intl;
 items[4] = obj5;
-const obj6 = { id: AppIconTypes.PremiumAppIconIds.BRAND_DARK, iconSource: _modDef9477, name: null, isPremium: true };
-const intl6 = util.intl;
-obj6.name = intl6.string(util.t.gZEUBl);
+const obj6 = { id: AppIconTypes.PremiumAppIconIds.BRAND_DARK, iconSource: AssetRegistryDefault7, name: intl6.string(intl25.t.gZEUBl), isPremium: true };
+intl6 = intl25.intl;
 items[5] = obj6;
-const obj7 = { id: AppIconTypes.PremiumAppIconIds.MATTE_DARK, iconSource: _modDef9478, isPremium: true, name: null };
-const intl7 = util.intl;
-obj7.name = intl7.string(util.t.NkshQt);
+const obj7 = { id: AppIconTypes.PremiumAppIconIds.MATTE_DARK, iconSource: AssetRegistryDefault8, isPremium: true, name: intl7.string(intl25.t.NkshQt) };
+intl7 = intl25.intl;
 items[6] = obj7;
-const obj8 = { id: AppIconTypes.PremiumAppIconIds.MATTE_LIGHT, iconSource: _modDef9479, name: null, isPremium: true };
-const intl8 = util.intl;
-obj8.name = intl8.string(util.t.G2W302);
+const obj8 = { id: AppIconTypes.PremiumAppIconIds.MATTE_LIGHT, iconSource: AssetRegistryDefault9, name: intl8.string(intl25.t.G2W302), isPremium: true };
+intl8 = intl25.intl;
 items[7] = obj8;
-const obj9 = { id: AppIconTypes.PremiumAppIconIds.PASTEL, iconSource: _modDef9480, isPremium: true, name: null };
-const intl9 = util.intl;
-obj9.name = intl9.string(util.t.mTSkLT);
+const obj9 = { id: AppIconTypes.PremiumAppIconIds.PASTEL, iconSource: AssetRegistryDefault10, isPremium: true, name: intl9.string(intl25.t.mTSkLT) };
+intl9 = intl25.intl;
 items[8] = obj9;
-const obj10 = { id: AppIconTypes.PremiumAppIconIds.PIRATE, iconSource: _modDef9481, isPremium: true, name: null };
-const intl10 = util.intl;
-obj10.name = intl10.string(util.t["EgWTY+"]);
+const obj10 = { id: AppIconTypes.PremiumAppIconIds.PIRATE, iconSource: AssetRegistryDefault11, isPremium: true, name: intl10.string(intl25.t["EgWTY+"]) };
+intl10 = intl25.intl;
 items[9] = obj10;
-const obj11 = { id: AppIconTypes.PremiumAppIconIds.CAMO, iconSource: _modDef9482, isPremium: true, name: null };
-const intl11 = util.intl;
-obj11.name = intl11.string(util.t.RSKXOK);
+const obj11 = { id: AppIconTypes.PremiumAppIconIds.CAMO, iconSource: AssetRegistryDefault12, isPremium: true, name: intl11.string(intl25.t.RSKXOK) };
+intl11 = intl25.intl;
 items[10] = obj11;
-const obj12 = { id: AppIconTypes.PremiumAppIconIds.SUNSET, iconSource: _modDef9483, isPremium: true, name: null };
-const intl12 = util.intl;
-obj12.name = intl12.string(util.t.ixdjPB);
+const obj12 = { id: AppIconTypes.PremiumAppIconIds.SUNSET, iconSource: AssetRegistryDefault13, isPremium: true, name: intl12.string(intl25.t.ixdjPB) };
+intl12 = intl25.intl;
 items[11] = obj12;
-const obj13 = { id: AppIconTypes.PremiumAppIconIds.GALAXY, iconSource: _modDef9484, isPremium: true, name: null };
-const intl13 = util.intl;
-obj13.name = intl13.string(util.t.cb78Ls);
+const obj13 = { id: AppIconTypes.PremiumAppIconIds.GALAXY, iconSource: AssetRegistryDefault14, isPremium: true, name: intl13.string(intl25.t.cb78Ls) };
+intl13 = intl25.intl;
 items[12] = obj13;
-const obj14 = { id: AppIconTypes.PremiumAppIconIds.Y2K, iconSource: _modDef9485, isPremium: true, name: null };
-const intl14 = util.intl;
-obj14.name = intl14.string(util.t["s+KoXO"]);
+const obj14 = { id: AppIconTypes.PremiumAppIconIds.Y2K, iconSource: AssetRegistryDefault15, isPremium: true, name: intl14.string(intl25.t["s+KoXO"]) };
+intl14 = intl25.intl;
 items[13] = obj14;
-const obj15 = { id: AppIconTypes.PremiumAppIconIds.CHERRY_BLOSSOM, iconSource: _modDef9486, isPremium: true, name: null };
-const intl15 = util.intl;
-obj15.name = intl15.string(util.t["ta/5RB"]);
+const obj15 = { id: AppIconTypes.PremiumAppIconIds.CHERRY_BLOSSOM, iconSource: AssetRegistryDefault16, isPremium: true, name: intl15.string(intl25.t["ta/5RB"]) };
+intl15 = intl25.intl;
 items[14] = obj15;
-const obj16 = { id: AppIconTypes.PremiumAppIconIds.BEANIE, iconSource: _modDef9487, isPremium: true, name: null };
-const intl16 = util.intl;
-obj16.name = intl16.string(util.t.IoLViw);
+const obj16 = { id: AppIconTypes.PremiumAppIconIds.BEANIE, iconSource: AssetRegistryDefault17, isPremium: true, name: intl16.string(intl25.t.IoLViw) };
+intl16 = intl25.intl;
 items[15] = obj16;
-const obj17 = { id: AppIconTypes.PremiumAppIconIds.GAMING, iconSource: _modDef9488, isPremium: true, name: null };
-const intl17 = util.intl;
-obj17.name = intl17.string(util.t["2Tf+c4"]);
+const obj17 = { id: AppIconTypes.PremiumAppIconIds.GAMING, iconSource: AssetRegistryDefault18, isPremium: true, name: intl17.string(intl25.t["2Tf+c4"]) };
+intl17 = intl25.intl;
 items[16] = obj17;
-const obj18 = { id: AppIconTypes.PremiumAppIconIds.CIRCUIT, iconSource: _modDef9489, isPremium: true, name: null };
-const intl18 = util.intl;
-obj18.name = intl18.string(util.t.dUpxKb);
+const obj18 = { id: AppIconTypes.PremiumAppIconIds.CIRCUIT, iconSource: AssetRegistryDefault19, isPremium: true, name: intl18.string(intl25.t.dUpxKb) };
+intl18 = intl25.intl;
 items[17] = obj18;
-const obj19 = { id: AppIconTypes.PremiumAppIconIds.HOLO_WAVES, iconSource: _modDef9490, isPremium: true, name: null };
-const intl19 = util.intl;
-obj19.name = intl19.string(util.t["9mg7g1"]);
+const obj19 = { id: AppIconTypes.PremiumAppIconIds.HOLO_WAVES, iconSource: AssetRegistryDefault20, isPremium: true, name: intl19.string(intl25.t["9mg7g1"]) };
+intl19 = intl25.intl;
 items[18] = obj19;
-const obj20 = { id: AppIconTypes.PremiumAppIconIds.BLUSH, iconSource: _modDef9491, isPremium: true, name: null };
-const intl20 = util.intl;
-obj20.name = intl20.string(util.t.nmd90m);
+const obj20 = { id: AppIconTypes.PremiumAppIconIds.BLUSH, iconSource: AssetRegistryDefault21, isPremium: true, name: intl20.string(intl25.t.nmd90m) };
+intl20 = intl25.intl;
 items[19] = obj20;
-const obj21 = { id: AppIconTypes.PremiumAppIconIds.ANGRY, iconSource: _modDef9492, isPremium: true, name: null };
-const intl21 = util.intl;
-obj21.name = intl21.string(util.t["9PUXpM"]);
+const obj21 = { id: AppIconTypes.PremiumAppIconIds.ANGRY, iconSource: AssetRegistryDefault22, isPremium: true, name: intl21.string(intl25.t["9PUXpM"]) };
+intl21 = intl25.intl;
 items[20] = obj21;
-const obj22 = { id: AppIconTypes.PremiumAppIconIds.MANGA, iconSource: _modDef9493, isPremium: true, name: null };
-const intl22 = util.intl;
-obj22.name = intl22.string(util.t.hGBbF8);
+const obj22 = { id: AppIconTypes.PremiumAppIconIds.MANGA, iconSource: AssetRegistryDefault23, isPremium: true, name: intl22.string(intl25.t.hGBbF8) };
+intl22 = intl25.intl;
 items[21] = obj22;
-const obj23 = { id: AppIconTypes.PremiumAppIconIds.CONTROLLER, iconSource: _modDef9494, isPremium: true, name: null };
-const intl23 = util.intl;
-obj23.name = intl23.string(util.t["4QM2U1"]);
+const obj23 = { id: AppIconTypes.PremiumAppIconIds.CONTROLLER, iconSource: AssetRegistryDefault24, isPremium: true, name: intl23.string(intl25.t["4QM2U1"]) };
+intl23 = intl25.intl;
 items[22] = obj23;
-const obj24 = { id: AppIconTypes.PremiumAppIconIds.MUSHROOM, iconSource: _modDef9495, isPremium: true, name: null };
-const intl24 = util.intl;
-obj24.name = intl24.string(util.t.gnLLSK);
+const obj24 = { id: AppIconTypes.PremiumAppIconIds.MUSHROOM, iconSource: AssetRegistryDefault25, isPremium: true, name: intl24.string(intl25.t.gnLLSK) };
+intl24 = intl25.intl;
 items[23] = obj24;
 let closure_4 = [];
 const result = size.fileFinishedImporting("modules/app_icons/native/AppIconConstants.tsx");
 
 export const getDefaultIcon = function getDefaultIcon() {
-  const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: _modDef9471, name: null, isPremium: false };
-  const intl = util.intl;
-  obj.name = intl.string(util.t.ANxkLy);
+  let intl;
+  const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
+  intl = intl25.intl;
   return obj;
 };
 export const isIconExpired = function isIconExpired(expiresAt) {
@@ -148,79 +164,30 @@ export const isIconExpired = function isIconExpired(expiresAt) {
   return tmp;
 };
 export const getOfficialAlternateIcons = function getOfficialAlternateIcons() {
-  return items.filter((expiresAt) => {
-    let tmp = null != expiresAt.expiresAt;
-    if (tmp) {
-      const _Date = Date;
-      tmp = Date.now() > expiresAt.expiresAt;
-    }
-    return !tmp;
-  });
+  return items.filter(f97634);
 };
 export const getLimitedAlternateIcons = function getLimitedAlternateIcons() {
-  return closure_4.filter((expiresAt) => {
-    let tmp = null != expiresAt.expiresAt;
-    if (tmp) {
-      const _Date = Date;
-      tmp = Date.now() > expiresAt.expiresAt;
-    }
-    return !tmp;
-  });
+  return closure_4.filter(f97635);
 };
 export const getIcons = function getIcons() {
-  const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: _modDef9471, name: null, isPremium: false };
-  const intl = util.intl;
-  obj.name = intl.string(util.t.ANxkLy);
-  items = [
-    obj,
-    ...items.filter((expiresAt) => {
-      let tmp = null != expiresAt.expiresAt;
-      if (tmp) {
-        const _Date = Date;
-        tmp = Date.now() > expiresAt.expiresAt;
-      }
-      return !tmp;
-    }),
-    ...closure_4.filter((expiresAt) => {
-      let tmp = null != expiresAt.expiresAt;
-      if (tmp) {
-        const _Date = Date;
-        tmp = Date.now() > expiresAt.expiresAt;
-      }
-      return !tmp;
-    })
-  ];
+  let intl;
+  const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
+  intl = intl25.intl;
+  items = [obj, ...items.filter(f97634), ...closure_4.filter(f97635)];
   return items;
 };
 export const getIconById = function getIconById(currentAppIcon) {
-  closure_0 = currentAppIcon;
-  const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: _modDef9471, name: null, isPremium: false };
-  const intl = util.intl;
-  obj.name = intl.string(util.t.ANxkLy);
-  items = [
-    obj,
-    ...items.filter((expiresAt) => {
-      let tmp = null != expiresAt.expiresAt;
-      if (tmp) {
-        const _Date = Date;
-        tmp = Date.now() > expiresAt.expiresAt;
-      }
-      return !tmp;
-    }),
-    ...closure_4.filter((expiresAt) => {
-      let tmp = null != expiresAt.expiresAt;
-      if (tmp) {
-        const _Date = Date;
-        tmp = Date.now() > expiresAt.expiresAt;
-      }
-      return !tmp;
-    })
-  ];
+  let intl;
+  let intl2;
+  let closure_0 = currentAppIcon;
+  let tmp = require;
+  const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
+  intl = intl25.intl;
+  items = [obj, ...items.filter(f97634), ...closure_4.filter(f97635)];
   let found = items.find((id) => id.id === closure_0);
   if (null == found) {
-    const obj2 = { id: tmp(9470).FreemiumAppIconIds.DEFAULT, iconSource: _modDef9471, name: null, isPremium: false };
-    const intl2 = tmp(1115).intl;
-    obj2.name = intl2.string(tmp(1115).t.ANxkLy);
+    const obj2 = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl2.string(intl25.t.ANxkLy), isPremium: false };
+    intl2 = intl25.intl;
     found = obj2;
   }
   return found;

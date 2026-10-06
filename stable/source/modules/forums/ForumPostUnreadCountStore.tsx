@@ -1,40 +1,41 @@
-// Module ID: 8162
-// Function ID: 8163
+// Module ID: 7315
+// Function ID: 7316
 // Name: ForumPostUnreadCountStore
-// Dependencies: [5756, 2041, 4803, 504, 38, 573, 2]
+// Dependencies: [5820, 2051, 4852, 504, 38, 585, 2]
 
-// Module 8162 (ForumPostUnreadCountStore)
+// Module 7315 (ForumPostUnreadCountStore)
 import _modDef38 from "module_38" /* 38 */;
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5756 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ReadStateStore from "ReadStateStore" /* 4803 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5820 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import size from "module_2" /* 2 */;
 
-const dependencyMap = {};
+let closure_5;
+
+const hasOwnProperty = {};
 let set = new Set();
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ForumPostUnreadCountStore extends Store {
+  initialize() {
+    this.waitFor(ActiveThreadsStore, ChannelStore, ReadStateStore);
+  }
+  getCount(arg0) {
+    return closure_5[arg0];
+  }
+  getThreadIdsMissingCounts(guild_id, threadIds) {
+    let tmp = _modDef38;
+    tmp(ActiveThreadsStore.hasLoaded(guild_id), "must wait for THREAD_LIST_SYNC before calling this");
+    return threadIds.filter((item) => {
+      const tmp = !(item in closure_1_5) && !set.has(item);
+      return tmp;
+    });
+  }
 }
 const prototype = ForumPostUnreadCountStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(ActiveThreadsStore, ChannelStore, ReadStateStore);
-};
-prototype["getCount"] = function getCount(arg0) {
-  return dependencyMap[arg0];
-};
-prototype["getThreadIdsMissingCounts"] = function getThreadIdsMissingCounts(guild_id, threadIds) {
-  _modDef38(ActiveThreadsStore.hasLoaded(guild_id), "must wait for THREAD_LIST_SYNC before calling this");
-  return threadIds.filter((item) => {
-    let tmp = !(item in dependencyMap);
-    if (tmp) {
-      tmp = !set.has(item);
-    }
-    return tmp;
-  });
-};
 ForumPostUnreadCountStore.displayName = "ForumPostUnreadCountStore";
-const forumPostUnreadCountStore = new ForumPostUnreadCountStore(DispatcherDefault, {
+const obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     closure_5 = {};
     set = new Set();
@@ -52,14 +53,13 @@ const forumPostUnreadCountStore = new ForumPostUnreadCountStore(DispatcherDefaul
     return isNewlyCreated;
   },
   MESSAGE_CREATE: function handleMessageCreate(isPushNotification) {
+    let channelId;
+    let optimistic;
     ({ channelId, optimistic } = isPushNotification);
-    let tmp = !optimistic;
-    if (!optimistic) {
-      tmp = !isPushNotification.isPushNotification;
-    }
+    let tmp = !optimistic && !isPushNotification.isPushNotification;
     if (tmp) {
-      if (channelId in dependencyMap) {
-        dependencyMap[channelId] = +dependencyMap[channelId] + 1;
+      if (channelId in closure_5) {
+        closure_5[channelId] = +closure_5[channelId] + 1;
       }
       tmp = tmp3;
     }
@@ -69,7 +69,7 @@ const forumPostUnreadCountStore = new ForumPostUnreadCountStore(DispatcherDefaul
     threads = threads.threads;
     const item = threads.forEach((count) => {
       if (null != count.count) {
-        dependencyMap[count.threadId] = count.count;
+        closure_1_5[count.threadId] = count.count;
       }
     });
   },
@@ -78,10 +78,11 @@ const forumPostUnreadCountStore = new ForumPostUnreadCountStore(DispatcherDefaul
     if (!(channelId in closure_5)) {
       const channel = ChannelStore.getChannel(channelId);
       let parent_id;
+      const getChannel = ChannelStore.getChannel;
       if (channel != null) {
         parent_id = channel.parent_id;
       }
-      const channel1 = ChannelStore.getChannel(parent_id);
+      const channel1 = getChannel(parent_id);
       let isForumLikeChannelResult;
       if (channel1 != null) {
         isForumLikeChannelResult = channel1.isForumLikeChannel();
@@ -96,8 +97,8 @@ const forumPostUnreadCountStore = new ForumPostUnreadCountStore(DispatcherDefaul
     threads = threads.threads;
     const item = threads.forEach((threadId) => set.add(threadId.threadId));
   }
-});
-const size = fn(2);
+};
+const forumPostUnreadCountStore = new ForumPostUnreadCountStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/forums/ForumPostUnreadCountStore.tsx");
 
 export default forumPostUnreadCountStore;

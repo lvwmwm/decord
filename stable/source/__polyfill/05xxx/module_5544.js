@@ -1,9 +1,62 @@
 // Module ID: 5544
 // Function ID: 5545
-// Dependencies: [1121]
+// Dependencies: [5532]
 
 // Module 5544
-import registerAsset from "module_1121" /* 1121 */;
+import _modDef5532 from "module_5532" /* 5532 */;
 
+const typeSizes = { 1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 7: 1, 9: 4, 10: 8, 13: 4 };
+const obj2 = { BYTE: 1, ASCII: 2, SHORT: 3, LONG: 4, RATIONAL: 5, UNDEFINED: 7, SLONG: 9, SRATIONAL: 10, IFD: 13 };
+const obj3 = {
+  getAsciiValue(items) {
+    return items.map((item) => String.fromCharCode(item));
+  },
+  getByteAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getAsciiAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getShortAt(dataView, sum, byteOrder) {
+    return dataView.getUint16(sum, byteOrder === _modDef5532.LITTLE_ENDIAN);
+  },
+  getLongAt(dataView, sum, byteOrder) {
+    return dataView.getUint32(sum, byteOrder === _modDef5532.LITTLE_ENDIAN);
+  },
+  getRationalAt(getUint32, sum, arg2) {
+    const items = [getUint32.getUint32(sum, arg2 === _modDef5532.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getUint32.getUint32(sum, arg2 === _modDef5532.LITTLE_ENDIAN);
+    return items;
+  },
+  getUndefinedAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getSlongAt(getInt32, sum, arg2) {
+    return getInt32.getInt32(sum, arg2 === _modDef5532.LITTLE_ENDIAN);
+  },
+  getSrationalAt(getInt32, sum, arg2) {
+    const items = [getInt32.getInt32(sum, arg2 === _modDef5532.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getInt32.getInt32(sum, arg2 === _modDef5532.LITTLE_ENDIAN);
+    return items;
+  },
+  getIfdPointerAt(getUint32, sum, arg2) {
+    return getUint32.getUint32(sum, arg2 === _modDef5532.LITTLE_ENDIAN);
+  },
+  typeSizes,
+  tagTypes: obj2,
+  getTypeSize(LONG) {
+    if (undefined === obj2[LONG]) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("No such type found.");
+      throw error;
+    } else {
+      return obj[tmp[LONG]];
+    }
+  }
+};
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "f2fc96c4a753dd0c5dd02646aa2a518c", name: "img_account_sync_battlenet_white", type: "svg" });
+export default obj3;

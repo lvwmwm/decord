@@ -1,43 +1,157 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 15536
+// Function ID: 15537
 // Name: useIsNotifSettingDisabled
-// Dependencies: [16249, 16251, 16250, 504, 1115, 2808, 2]
-// Exports: default
+// Dependencies: [15527, 558, 576, 15529, 15528, 504, 1127, 2816, 2]
 
-// Module 16258 (useIsNotifSettingDisabled)
-import _modDef2808 from "module_2808" /* 2808 */;
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 16250 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 16251 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 16249 */;
+// Module 15536 (useIsNotifSettingDisabled)
+import _modDef2816 from "module_2816" /* 2816 */;
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15528 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15529 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15527 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/notifications/settings/native/useIsNotifSettingDisabled.tsx");
-
-export default function useIsNotifSettingDisabled(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp4;
+  let tmp5;
+  let tmp7;
   _require = arg0;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(8);
+  if (cResult[0] !== arg0) {
+    const fn = function s() {
+      const obj = DeclarativeSystemNotifPermissionAnalytics;
+      const result = obj.trackSystemNotifSettingsOpened(closure_0);
+      const openSystemNotifSettings = DeclarativeSystemNotifPermissionHelpersDefault.openSystemNotifSettings;
+      DeclarativeSystemNotifPermissionHelpersDefault;
+      const tmp = closure_0;
+      if (openSystemNotifSettings != null) {
+        const result1 = openSystemNotifSettings(tmp);
+      }
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [DeclarativeSystemNotifPermissionStore];
+    cResult[2] = items;
+    tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] !== arg0) {
+    class S {
+      constructor() {
+        return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
+      }
+    }
+    cResult[3] = arg0;
+    cResult[4] = S;
+    tmp7 = S;
+  } else {
+    class S {
+      constructor() {
+        return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
+      }
+    }
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp7);
+  let tmp9 = !stateFromStores;
+  if (stateFromStores) {
+    class S {
+      constructor() {
+        return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
+      }
+    }
+    tmp9 = null == DeclarativeSystemNotifPermissionHelpersDefault.openSystemNotifSettings;
+  }
+  let tmp11 = !tmp9;
+  if (tmp11) {
+    let tmp12;
+    let tmp15;
+    class S {
+      constructor() {
+        return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
+      }
+    }
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor() {
+          return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
+        }
+      }
+      const stringResult = obj3.string(_modDef2816.TVZ0Fm);
+      cResult[5] = stringResult;
+      tmp12 = stringResult;
+    } else {
+      class S {
+        constructor() {
+          return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
+        }
+      }
+    }
+    if (cResult[6] !== tmp4) {
+      class S {
+        constructor() {
+          return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
+        }
+      }
+      tmp16[0] = tmp12;
+      tmp16[1] = tmp4;
+      cResult[6] = tmp4;
+      cResult[7] = tmp16;
+      tmp15 = tmp16;
+    } else {
+      class S {
+        constructor() {
+          return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
+        }
+      }
+    }
+    tmp11 = tmp15;
+  }
+  return tmp11;
+}) : ((arg0) => {
+  let closure_0;
+  let intl;
+  _require = arg0;
+  let tmp = _require;
+  let obj = require("get initialized");
   const items = [DeclarativeSystemNotifPermissionStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => DeclarativeSystemNotifPermissionStore.isDisabled(closure_0));
+  const stateFromStores = obj.useStateFromStores(items, () => DeclarativeSystemNotifPermissionStore.isDisabled(closure_0));
   let tmp4 = !stateFromStores;
   if (stateFromStores) {
     tmp4 = null == DeclarativeSystemNotifPermissionHelpersDefault.openSystemNotifSettings;
   }
   let tmp7 = !tmp4;
-  if (!tmp4) {
-    const obj2 = { label: null, onPress: null };
-    const intl = require("util").intl;
-    obj2.label = intl.string(_modDef2808.TVZ0Fm);
-    obj2.onPress = function handleOpenSystem() {
-      const result = DeclarativeSystemNotifPermissionAnalytics.trackSystemNotifSettingsOpened(closure_0);
-      const tmp = closure_0;
-      const openSystemNotifSettings = DeclarativeSystemNotifPermissionHelpersDefault.openSystemNotifSettings;
-      if (openSystemNotifSettings != null) {
-        const result1 = openSystemNotifSettings(tmp);
-      }
+  if (tmp7) {
+    const obj2 = {
+      label: intl.string(_modDef2816.TVZ0Fm),
+      onPress: function handleOpenSystem() {
+          const obj = DeclarativeSystemNotifPermissionAnalytics;
+          const result = obj.trackSystemNotifSettingsOpened(closure_0);
+          const openSystemNotifSettings = DeclarativeSystemNotifPermissionHelpersDefault.openSystemNotifSettings;
+          DeclarativeSystemNotifPermissionHelpersDefault;
+          const tmp = closure_0;
+          if (openSystemNotifSettings != null) {
+            const result1 = openSystemNotifSettings(tmp);
+          }
+        }
     };
+    intl = tmp(1127).intl;
     tmp7 = obj2;
   }
   return tmp7;
-};
+});
+let result = size.fileFinishedImporting("modules/notifications/settings/native/useIsNotifSettingDisabled.tsx");
+
+export default tmp2;

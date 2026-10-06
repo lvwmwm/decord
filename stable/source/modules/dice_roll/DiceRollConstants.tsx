@@ -1,12 +1,13 @@
-// Module ID: 9447
-// Function ID: 9448
+// Module ID: 8599
+// Function ID: 8600
 // Name: DiceRollConstants
 // Dependencies: [2]
 
-// Module 9447 (DiceRollConstants)
+// Module 8599 (DiceRollConstants)
 import size from "module_2" /* 2 */;
 
 const items = [4, 6, 8, 10, 12, 20];
+const set = new Set(items);
 const result = size.fileFinishedImporting("modules/dice_roll/DiceRollConstants.tsx");
 
 export const ROLL_DURATION_MS = 1500;
@@ -14,5 +15,5 @@ export const AFTER_ROLL_DELAY_MS = 2000;
 export const DISMISS_DELAY_MS = 300;
 export const MAX_DICE_COUNT = 10;
 export const ALLOWED_DICE_SIDES = items;
-export const ALLOWED_DICE_SIDES_SET = new Set(items);
+export const ALLOWED_DICE_SIDES_SET = set;
 export const DEFAULT_DICE_SIDES = 6;

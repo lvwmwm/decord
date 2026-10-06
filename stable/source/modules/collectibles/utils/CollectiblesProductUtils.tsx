@@ -1,97 +1,91 @@
-// Module ID: 7827
-// Function ID: 7828
+// Module ID: 6977
+// Function ID: 6978
 // Name: CollectiblesProductUtils
-// Dependencies: [32, 7822, 1074, 1973, 2]
+// Dependencies: [32, 6972, 1086, 1980, 2]
 // Exports: getHasNonOrbPrice, getHasOrbPrice, getIsVariantProduct, getProductFiatPrice, getProductOrbPrice, getProductSkuIds, getProductType, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 7827 (CollectiblesProductUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import _slicedToArray from "module_32" /* 32 */;
+// Module 6977 (CollectiblesProductUtils)
+import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 6972 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const isProfileEffectRecord = fn(7822).isProfileEffectRecord;
-const Constants = fn(1074);
+let effects;
+
+let closure_4;
+let hasOwnProperty;
+const f93275 = (currency) => currency.currency === constants.DISCORD_ORB;
+const f93276 = (currency) => currency.currency !== constants.DISCORD_ORB;
+const isProfileEffectRecord = ProfileEffectRecord.isProfileEffectRecord;
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesProductUtils.tsx");
 
 export const getProductOrbPrice = function getProductOrbPrice(arg0) {
-  const tmp2 = arg0.product.prices[arg0.hasShopDiscount ? constants.PREMIUM_TIER_2 : constants.DEFAULT];
-  let substr;
+  const tmp2 = arg0.product.prices[arg0.hasShopDiscount ? hasOwnProperty.PREMIUM_TIER_2 : hasOwnProperty.DEFAULT];
+  let prices;
   if (tmp2 != null) {
     const countryPrices = tmp2.countryPrices;
     if (countryPrices != null) {
-      const prices = countryPrices.prices;
-      if (prices != null) {
-        substr = prices.slice(0, 2);
-      }
+      prices = countryPrices.prices;
     }
   }
-  if (substr == null) {
-    substr = [];
+  if (prices == null) {
+    prices = [];
   }
-  let found = substr.find((currency) => currency.currency === constants.DISCORD_ORB);
+  let found = prices.find(f93275);
   if (found == null) {
     found = null;
   }
   return found;
 };
 export const getProductFiatPrice = function getProductFiatPrice(arg0) {
-  const tmp2 = arg0.product.prices[arg0.hasShopDiscount ? constants.MOBILE_PREMIUM_TIER_2 : constants.MOBILE];
-  let substr;
+  const tmp2 = arg0.product.prices[arg0.hasShopDiscount ? hasOwnProperty.MOBILE_PREMIUM_TIER_2 : hasOwnProperty.MOBILE];
+  let prices;
   if (tmp2 != null) {
     const countryPrices = tmp2.countryPrices;
     if (countryPrices != null) {
-      const prices = countryPrices.prices;
-      if (prices != null) {
-        substr = prices.slice(0, 2);
-      }
+      prices = countryPrices.prices;
     }
   }
-  if (substr == null) {
-    substr = [];
+  if (prices == null) {
+    prices = [];
   }
-  let found = substr.find((currency) => currency.currency !== constants.DISCORD_ORB);
+  let found = prices.find(f93276);
   if (found == null) {
     found = null;
   }
   return found;
 };
 export const getHasOrbPrice = function getHasOrbPrice(arg0) {
-  let substr;
-  if (arg0.prices[constants.DEFAULT] != null) {
+  let prices;
+  if (arg0.prices[hasOwnProperty.DEFAULT] != null) {
     const countryPrices = tmp.countryPrices;
     if (countryPrices != null) {
-      const prices = countryPrices.prices;
-      if (prices != null) {
-        substr = prices.slice(0, 2);
-      }
+      prices = countryPrices.prices;
     }
   }
-  if (substr == null) {
-    substr = [];
+  if (prices == null) {
+    prices = [];
   }
-  let found = substr.find((currency) => currency.currency === constants.DISCORD_ORB);
+  let found = prices.find(f93275);
   if (found == null) {
     found = null;
   }
   return null != found;
 };
 export const getHasNonOrbPrice = function getHasNonOrbPrice(arg0) {
-  let substr;
-  if (arg0.prices[constants.MOBILE] != null) {
+  let prices;
+  if (arg0.prices[hasOwnProperty.MOBILE] != null) {
     const countryPrices = tmp.countryPrices;
     if (countryPrices != null) {
-      const prices = countryPrices.prices;
-      if (prices != null) {
-        substr = prices.slice(0, 2);
-      }
+      prices = countryPrices.prices;
     }
   }
-  if (substr == null) {
-    substr = [];
+  if (prices == null) {
+    prices = [];
   }
-  let found = substr.find((currency) => currency.currency !== constants.DISCORD_ORB);
+  let found = prices.find(f93276);
   if (found == null) {
     found = null;
   }
@@ -101,38 +95,33 @@ export const isOrbsExclusiveProduct = function isOrbsExclusiveProduct(product) {
   if (null == product) {
     return false;
   } else {
-    let substr;
-    if (product.prices[constants.DEFAULT] != null) {
+    let prices;
+    const tmp5 = hasOwnProperty;
+    if (product.prices[hasOwnProperty.DEFAULT] != null) {
       const countryPrices = tmp6.countryPrices;
       if (countryPrices != null) {
-        const prices = countryPrices.prices;
-        if (prices != null) {
-          substr = prices.slice(0, 2);
-        }
+        prices = countryPrices.prices;
       }
     }
-    if (substr == null) {
-      substr = [];
+    if (prices == null) {
+      prices = [];
     }
-    let found = substr.find((currency) => currency.currency === constants.DISCORD_ORB);
+    let found = prices.find(f93275);
     if (found == null) {
       found = null;
     }
     let tmp2 = null != found;
-    let substr1;
-    if (product.prices[constants.MOBILE] != null) {
+    let prices1;
+    if (product.prices[tmp5.MOBILE] != null) {
       const countryPrices2 = tmp3.countryPrices;
       if (countryPrices2 != null) {
-        const prices1 = countryPrices2.prices;
-        if (prices1 != null) {
-          substr1 = prices1.slice(0, 2);
-        }
+        prices1 = countryPrices2.prices;
       }
     }
-    if (substr1 == null) {
-      substr1 = [];
+    if (prices1 == null) {
+      prices1 = [];
     }
-    let found1 = substr1.find((currency) => currency.currency !== constants.DISCORD_ORB);
+    let found1 = prices1.find(f93276);
     if (found1 == null) {
       found1 = null;
     }
@@ -171,13 +160,7 @@ export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
         let someResult = isProfileEffectRecord(effects);
         if (someResult) {
           effects = effects.effects;
-          someResult = effects.some((randomizedSources) => {
-            let tmp = null != randomizedSources.randomizedSources;
-            if (tmp) {
-              tmp = randomizedSources.randomizedSources.length > 0;
-            }
-            return tmp;
-          });
+          someResult = effects.some((randomizedSources) => null != randomizedSources.randomizedSources && randomizedSources.randomizedSources.length > 0);
         }
         return someResult;
       });
@@ -188,38 +171,33 @@ export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
 };
 export const getProductsWithOrbsPrice = function getProductsWithOrbsPrice(arr) {
   return arr.filter((item) => {
-    let substr;
+    let prices;
+    const tmp = constants;
     if (item.prices[constants.DEFAULT] != null) {
       const countryPrices = tmp2.countryPrices;
       if (countryPrices != null) {
-        const prices = countryPrices.prices;
-        if (prices != null) {
-          substr = prices.slice(0, 2);
-        }
+        prices = countryPrices.prices;
       }
     }
-    if (substr == null) {
-      substr = [];
+    if (prices == null) {
+      prices = [];
     }
-    let found = substr.find((currency) => currency.currency === constants.DISCORD_ORB);
+    let found = prices.find(f93275);
     if (found == null) {
       found = null;
     }
     let tmp4 = null != found;
-    let substr1;
-    if (item.prices[constants.MOBILE] != null) {
+    let prices1;
+    if (item.prices[tmp.MOBILE] != null) {
       const countryPrices2 = tmp5.countryPrices;
       if (countryPrices2 != null) {
-        const prices1 = countryPrices2.prices;
-        if (prices1 != null) {
-          substr1 = prices1.slice(0, 2);
-        }
+        prices1 = countryPrices2.prices;
       }
     }
-    if (substr1 == null) {
-      substr1 = [];
+    if (prices1 == null) {
+      prices1 = [];
     }
-    let found1 = substr1.find((currency) => currency.currency !== constants.DISCORD_ORB);
+    let found1 = prices1.find(f93276);
     if (found1 == null) {
       found1 = null;
     }
@@ -230,40 +208,23 @@ export const getProductsWithOrbsPrice = function getProductsWithOrbsPrice(arr) {
   });
 };
 export const getIsVariantProduct = function getIsVariantProduct(product) {
-  let tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP;
-  if (tmp) {
-    tmp = null != product.variants;
-  }
-  if (tmp) {
-    tmp = 0 !== product.variants.length;
-  }
+  const tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP && null != product.variants && 0 !== product.variants.length;
   return tmp;
 };
 export const getProductSkuIds = function getProductSkuIds(product) {
-  let tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP;
-  if (tmp) {
-    tmp = null != product.variants;
-  }
-  if (tmp) {
-    tmp = 0 !== product.variants.length;
-  }
+  let mapped;
+  const tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP && null != product.variants && 0 !== product.variants.length;
   if (tmp) {
     const variants = product.variants;
-    let mapped = variants.map((skuId) => skuId.skuId);
+    mapped = variants.map((skuId) => skuId.skuId);
   } else {
     mapped = [product.skuId];
   }
   return mapped;
 };
 export const getSelectedProduct = function getSelectedProduct(product, defaultVariantIndex) {
-  let tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP;
-  if (tmp) {
-    tmp = null != product.variants;
-  }
-  if (tmp) {
-    tmp = 0 !== product.variants.length;
-  }
   let tmp3 = product;
+  const tmp = product.type === CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP && null != product.variants && 0 !== product.variants.length;
   if (tmp) {
     tmp3 = product;
     if (null != defaultVariantIndex) {

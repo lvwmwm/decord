@@ -1,21 +1,25 @@
-// Module ID: 10636
-// Function ID: 10637
+// Module ID: 9721
+// Function ID: 9722
 // Name: guild/GuildUtils
-// Dependencies: [5769, 2]
+// Dependencies: [5833, 2]
 // Exports: handleJoinGuild
 
-// Module 10636 (guild/GuildUtils)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5769 */;
+// Module 9721 (guild/GuildUtils)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
 import size from "module_2" /* 2 */;
+
+let importDefault;
 
 let result = size.fileFinishedImporting("modules/guild/GuildUtils.tsx");
 
 export const handleJoinGuild = function handleJoinGuild(guildId) {
   importDefault = guildId;
   if (null != guildId) {
-    GuildActionCreatorsDefault.joinGuild(guildId).then(() => {
-      const result = GuildActionCreatorsDefault.transitionToGuildSync(closure_0);
+    let obj = GuildActionCreatorsDefault;
+    const joinGuildResult = obj.joinGuild(guildId);
+    joinGuildResult.then(() => {
+      const obj = GuildActionCreatorsDefault;
+      const result = obj.transitionToGuildSync(guildId);
     });
-    const joinGuildResult = GuildActionCreatorsDefault.joinGuild(guildId);
   }
 };

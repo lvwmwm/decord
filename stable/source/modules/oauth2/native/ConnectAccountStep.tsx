@@ -1,199 +1,733 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 8524
+// Function ID: 8525
 // Name: ConnectAccountStep
-// Dependencies: [19, 17, 5015, 502, 1372, 21, 4788, 576, 4722, 504, 5532, 1397, 4639, 7440, 1177, 8213, 4784, 1115, 5218, 9373, 4742, 4738, 2]
-// Exports: ConnectedAccountCard, default
+// Dependencies: [19, 17, 5064, 502, 1378, 21, 4837, 588, 558, 576, 4769, 504, 5596, 1403, 4687, 6585, 8525, 1189, 7364, 4833, 1127, 5282, 4788, 4784, 2]
 
-// Module 9372 (ConnectAccountStep)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import shared from "shared" /* 4639 */;
-import useThemeDefault from "useTheme" /* 4722 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4738 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import PlatformsDefault from "Platforms" /* 5532 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7440 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9373 */;
-import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5015 */;
+// Module 8524 (ConnectAccountStep)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import shared from "shared" /* 4687 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import PlatformsDefault from "Platforms" /* 5596 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6585 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 8525 */;
+import react from "react" /* 19 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1378 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { flexDirection: "column", gap: 16, width: "100%" }, header: { flexDirection: "column", alignItems: "center", gap: 8, marginBottom: 8 }, headerIcons: { flexDirection: "row", alignItems: "center", gap: 16, marginBottom: 8 }, card: { flexDirection: "row", alignItems: "center", gap: 12, padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.md }, cardName: { flex: 1, minWidth: 0 }, cardInfo: { flex: 1, minWidth: 0, flexDirection: "column", gap: 2 }, platformIcon: null, platformIconSmall: null, infoNotice: null, infoText: null, divider: null };
-let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.sm };
-obj2.platformIcon = size;
-const size1 = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
-obj2.platformIconSmall = size1;
-let obj3 = { flexDirection: "row", alignItems: "center", gap: 12, padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.md };
-obj2.infoNotice = { flexDirection: "row", alignItems: "flex-start", gap: 8, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, borderWidth: 1, borderRadius: nativeDefault.radii.sm };
-obj2.infoText = { flex: 1 };
-let obj4 = { flexDirection: "row", alignItems: "flex-start", gap: 8, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, borderWidth: 1, borderRadius: nativeDefault.radii.sm };
-obj2.divider = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 8 };
-let closure_10 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/oauth2/native/ConnectAccountStep.tsx");
+let clientId, currentUser;
 
-export default function ConnectAccountStep(clientId) {
+let c9;
+let metroImportAll;
+let obj2;
+let obj3;
+let obj4;
+let size;
+let size1;
+const View = react_native.View;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { flexDirection: "column", gap: 16, width: "100%" }, header: { flexDirection: "column", alignItems: "center", gap: 8, marginBottom: 8 }, headerIcons: { flexDirection: "row", alignItems: "center", gap: 16, marginBottom: 8 }, card: obj2, cardName: { flex: 1, minWidth: 0 }, cardInfo: { flex: 1, minWidth: 0, flexDirection: "column", gap: 2 }, platformIcon: size, platformIconSmall: size1, infoNotice: obj3, infoText: { flex: 1 }, divider: obj4 };
+obj2 = { flexDirection: "row", alignItems: "center", gap: 12, padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.md };
+createStyles = createStyles.createStyles;
+size = { width: 40, height: 40, borderRadius: nativeDefault.radii.sm };
+size1 = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
+obj3 = { flexDirection: "row", alignItems: "flex-start", gap: 8, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, borderWidth: 1, borderRadius: nativeDefault.radii.sm };
+obj4 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 8 };
+let closure_10 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((clientId) => {
+  let first;
+  let id;
+  let items4;
+  let tmp10;
+  let tmp12;
+  let tmp13;
+  let tmp9;
+  let obj = clientId(576);
+  const cResult = obj.c(69);
+  clientId = clientId.clientId;
+  const platformType = clientId.platformType;
+  const tmp4 = closure_10();
+  const tmp6 = platformType(4769)();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ApplicationStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== clientId) {
+    const fn = function x() {
+      return ApplicationStore.getApplication(clientId);
+    };
+    const items1 = [clientId];
+    cResult[1] = clientId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp10 = items1;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
+  }
+  const tmpResult = clientId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp9, tmp10);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [AuthenticationStore, UserStore];
+    class C {
+      constructor() {
+        currentUser = null;
+        if (null != id.getId()) {
+          currentUser = currentUser.getCurrentUser();
+        }
+        return currentUser;
+      }
+    }
+    cResult[4] = items2;
+    cResult[5] = C;
+    tmp13 = C;
+    tmp12 = items2;
+  } else {
+    tmp12 = cResult[4];
+    tmp13 = cResult[5];
+  }
+  const tmpResult3 = clientId(504);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp12, tmp13);
+  if (cResult[6] === platformType) {
+    let tmp21;
+    let tmp24;
+    let tmp29;
+    let tmp28;
+    let tmp34;
+    if (cResult[9] !== stateFromStores) {
+      let applicationIconSource;
+      if (null != stateFromStores) {
+        const obj2 = { id: null, icon: null };
+        ({ id: obj7.id, icon: obj7.icon } = stateFromStores);
+        const tmp5Result = platformType(1403);
+        applicationIconSource = tmp5Result.getApplicationIconSource(obj2);
+      }
+      cResult[9] = stateFromStores;
+      class C {
+        constructor() {
+          currentUser = null;
+          if (null != id.getId()) {
+            currentUser = currentUser.getCurrentUser();
+          }
+          return currentUser;
+        }
+      }
+      cResult[10] = applicationIconSource;
+      tmp21 = applicationIconSource;
+    } else {
+      tmp21 = cResult[10];
+    }
+    if (cResult[11] !== stateFromStores1) {
+      let userAvatarSource;
+      if (null != stateFromStores1) {
+        const tmp5Result3 = platformType(1403);
+        userAvatarSource = tmp5Result3.getUserAvatarSource(stateFromStores1);
+      }
+      cResult[11] = stateFromStores1;
+      class C {
+        constructor() {
+          currentUser = null;
+          if (null != id.getId()) {
+            currentUser = currentUser.getCurrentUser();
+          }
+          return currentUser;
+        }
+      }
+      cResult[12] = userAvatarSource;
+      tmp24 = userAvatarSource;
+    } else {
+      tmp24 = cResult[12];
+    }
+    let str;
+    class C {
+      constructor() {
+        currentUser = null;
+        if (null != id.getId()) {
+          currentUser = currentUser.getCurrentUser();
+        }
+        return currentUser;
+      }
+    }
+    if (str == null) {
+      str = "";
+    }
+    if (cResult[13] !== clientId) {
+      class G {
+        constructor() {
+          const obj = ApplicationActionCreatorsDefault;
+          const application = obj.fetchApplication(clientId);
+        }
+      }
+      const items3 = [clientId];
+      cResult[13] = clientId;
+      class C {
+        constructor() {
+          currentUser = null;
+          if (null != id.getId()) {
+            currentUser = currentUser.getCurrentUser();
+          }
+          return currentUser;
+        }
+      }
+      cResult[14] = items3;
+      cResult[15] = G;
+      tmp29 = G;
+      tmp28 = items3;
+    } else {
+      class G {
+        constructor() {
+          const obj = ApplicationActionCreatorsDefault;
+          const application = obj.fetchApplication(clientId);
+        }
+      }
+      tmp29 = cResult[15];
+    }
+    const effect = react.useEffect(tmp29, tmp28);
+    if (cResult[16] !== platformType) {
+      class P {
+        constructor() {
+          const obj = { platformType, location: "OAuth2 Connect Account Step" };
+          authorizeConnectionDefault(obj);
+        }
+      }
+      cResult[16] = platformType;
+      cResult[17] = P;
+      class C {
+        constructor() {
+          currentUser = null;
+          if (null != id.getId()) {
+            currentUser = currentUser.getCurrentUser();
+          }
+          return currentUser;
+        }
+      }
+    } else {
+      class P {
+        constructor() {
+          const obj = { platformType, location: "OAuth2 Connect Account Step" };
+          authorizeConnectionDefault(obj);
+        }
+      }
+    }
+    const container = tmp4.container;
+    if (cResult[18] !== tmp21) {
+      class P {
+        constructor() {
+          const obj = { platformType, location: "OAuth2 Connect Account Step" };
+          authorizeConnectionDefault(obj);
+        }
+      }
+      ({ source: tmp21, size: clientId(1189).AvatarSizes.XLARGE });
+      const Avatar = tmp(1189).Avatar;
+      class C {
+        constructor() {
+          currentUser = null;
+          if (null != id.getId()) {
+            currentUser = currentUser.getCurrentUser();
+          }
+          return currentUser;
+        }
+      }
+      cResult[18] = tmp21;
+      cResult[19] = tmp33;
+    } else {
+      class P {
+        constructor() {
+          const obj = { platformType, location: "OAuth2 Connect Account Step" };
+          authorizeConnectionDefault(obj);
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+      class P {
+        constructor() {
+          const obj = { platformType, location: "OAuth2 Connect Account Step" };
+          authorizeConnectionDefault(obj);
+        }
+      }
+      const obj4 = { color: platformType(588).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
+      const MoreHorizontalIcon = tmp(7364).MoreHorizontalIcon;
+      const tmp35 = closure_8(MoreHorizontalIcon, obj4);
+      class C {
+        constructor() {
+          currentUser = null;
+          if (null != id.getId()) {
+            currentUser = currentUser.getCurrentUser();
+          }
+          return currentUser;
+        }
+      }
+      cResult[20] = tmp35;
+      tmp34 = tmp35;
+    } else {
+      class P {
+        constructor() {
+          const obj = { platformType, location: "OAuth2 Connect Account Step" };
+          authorizeConnectionDefault(obj);
+        }
+      }
+    }
+    if (cResult[21] !== tmp24) {
+      class P {
+        constructor() {
+          const obj = { platformType, location: "OAuth2 Connect Account Step" };
+          authorizeConnectionDefault(obj);
+        }
+      }
+      ({ source: tmp24, size: clientId(1189).AvatarSizes.XLARGE });
+      const Avatar2 = tmp(1189).Avatar;
+      class C {
+        constructor() {
+          currentUser = null;
+          if (null != id.getId()) {
+            currentUser = currentUser.getCurrentUser();
+          }
+          return currentUser;
+        }
+      }
+      cResult[21] = tmp24;
+      cResult[22] = tmp37;
+    } else {
+      class P {
+        constructor() {
+          const obj = { platformType, location: "OAuth2 Connect Account Step" };
+          authorizeConnectionDefault(obj);
+        }
+      }
+    }
+    if (cResult[23] === tmp4.headerIcons) {
+      class P {
+        constructor() {
+          const obj = { platformType, location: "OAuth2 Connect Account Step" };
+          authorizeConnectionDefault(obj);
+        }
+      }
+    }
+    const obj6 = { style: tmp4.headerIcons, children: items4 };
+    items4 = [tmp32, tmp34, tmp36];
+    cResult[23] = tmp4.headerIcons;
+    cResult[24] = tmp32;
+    cResult[25] = tmp36;
+    cResult[26] = closure_9(View, obj6);
+    const tmp41 = closure_9(View, obj6);
+  }
+  const tmp5Result4 = platformType(5596);
+  const value = tmp5Result4.get(platformType);
+  let source = null;
+  if (null != value) {
+    class P {
+      constructor() {
+        const obj = { platformType, location: "OAuth2 Connect Account Step" };
+        authorizeConnectionDefault(obj);
+      }
+    }
+    const makeSource = tmp20.makeSource;
+    const icon = value.icon;
+    const tmpResult4 = clientId(4687);
+    source = makeSource(tmpResult4.isThemeLight(tmp6) ? icon.lightPNG : icon.darkPNG);
+  }
+  cResult[6] = platformType;
+  cResult[7] = tmp6;
+  cResult[8] = source;
+}) : ((clientId) => {
+  let id;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let items8;
   clientId = clientId.clientId;
   const platformType = clientId.platformType;
   const platformName = clientId.platformName;
   const tmp = closure_10();
-  const tmp4 = platformType(4722)();
+  const tmp4 = platformType(4769)();
+  let obj = clientId(504);
   const items = [ApplicationStore];
   const items1 = [clientId];
-  const stateFromStores = clientId(504).useStateFromStores(items, () => ApplicationStore.getApplication(clientId), items1);
-  const obj = clientId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => ApplicationStore.getApplication(clientId), items1);
   const items2 = [AuthenticationStore, UserStore];
-  const stateFromStores1 = clientId(504).useStateFromStores(items2, () => {
+  const obj2 = clientId(504);
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => {
     currentUser = null;
     if (null != id.getId()) {
       currentUser = currentUser.getCurrentUser();
     }
     return currentUser;
   });
-  const obj2 = clientId(504);
-  value = platformType(5532).get(platformType);
-  if (null == value) {
-    let applicationIconSource;
-    if (null != stateFromStores) {
-      ({ id: obj7.id, icon: obj7.icon } = stateFromStores);
-      applicationIconSource = tmp2(1397).getApplicationIconSource({ id: null, icon: null });
-      const obj4 = { id: null, icon: null };
-      const tmp2Result = tmp2(1397);
-    }
-    let userAvatarSource;
-    if (null != stateFromStores1) {
-      userAvatarSource = tmp2(1397).getUserAvatarSource(stateFromStores1);
-      const tmp2Result2 = tmp2(1397);
-    }
-    let str;
-    if (stateFromStores != null) {
-      str = stateFromStores.name;
-    }
-    if (str == null) {
-      str = "";
-    }
-    const items3 = [clientId];
-    const effect = noop.useEffect(() => {
-      const application = ApplicationActionCreatorsDefault.fetchApplication(clientId);
-    }, items3);
-    const obj5 = { style: tmp.container, children: null };
-    const obj6 = { style: tmp.header, children: null };
-    const obj8 = { style: tmp.headerIcons, children: null };
-    const obj9 = { source: applicationIconSource, size: tmp5(1177).AvatarSizes.XLARGE };
-    const items4 = [closure_8(tmp5(1177).Avatar, obj9), , ];
-    const obj10 = { color: tmp2(576).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-    items4[1] = closure_8(tmp5(8213).MoreHorizontalIcon, obj10);
-    const obj11 = { source: userAvatarSource, size: tmp5(1177).AvatarSizes.XLARGE };
-    items4[2] = closure_8(tmp5(1177).Avatar, obj11);
-    obj8.children = items4;
-    const items5 = [closure_9(View, obj8), , ];
-    const obj12 = { variant: "text-lg/normal", color: "text-default", children: null };
-    const intl = tmp5(1115).intl;
-    obj12.children = intl.string(tmp5(1115).t.uT1CPa);
-    items5[1] = closure_8(tmp5(4784).Text, obj12);
-    const obj13 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: str };
-    items5[2] = closure_8(tmp5(4784).Text, obj13);
-    obj6.children = items5;
-    const items6 = [closure_9(View, obj6), , , ];
-    const obj14 = { variant: "text-sm/normal", color: "text-default", children: null };
-    const intl2 = tmp5(1115).intl;
-    const obj15 = { applicationName: str, platformName };
-    obj14.children = intl2.format(tmp5(1115).t["aJRE/Q"], obj15);
-    items6[1] = closure_8(tmp5(4784).Text, obj14);
-    const obj16 = { style: tmp.card, children: null };
-    let tmp16Result = null;
-    if (null != null) {
-      const obj17 = { source: null, style: tmp.platformIcon, disableColor: true };
-      tmp16Result = tmp16(tmp5(1177).Icon, obj17);
-    }
-    const items7 = [tmp16Result, , ];
-    const obj18 = { variant: "text-md/medium", style: tmp.cardName, color: "text-default", children: platformName };
-    items7[1] = closure_8(tmp5(4784).Text, obj18);
-    const obj19 = {
-      variant: "primary",
-      size: "sm",
-      onPress() {
-          authorizeConnectionDefault({ platformType, location: "OAuth2 Connect Account Step" });
-        },
-      text: null
-    };
-    const intl3 = tmp5(1115).intl;
-    obj19.text = intl3.string(tmp5(1115).t.S0W8Z5);
-    items7[2] = closure_8(tmp5(5218).Button, obj19);
-    obj16.children = items7;
-    items6[2] = closure_9(View, obj16);
-    const obj20 = { style: tmp.infoNotice, children: null };
-    const obj21 = { color: tmp2(576).colors.ICON_FEEDBACK_INFO, size: "sm" };
-    const items8 = [closure_8(tmp5(4742).CircleInformationIcon, obj21), ];
-    const obj22 = { variant: "text-sm/normal", color: "text-default", style: tmp.infoText, children: null };
-    const intl4 = tmp5(1115).intl;
-    const obj23 = { platformName, applicationName: str };
-    obj22.children = intl4.format(tmp5(1115).t["8psEFX"], obj23);
-    items8[1] = closure_8(tmp5(4784).Text, obj22);
-    obj20.children = items8;
-    items6[3] = closure_9(View, obj20);
-    obj5.children = items6;
-    return closure_9(View, obj5);
-  } else {
-    const tmp5Result = tmp5(1397);
+  const obj3 = platformType(5596);
+  const value = obj3.get(platformType);
+  let source = null;
+  if (null != value) {
+    const makeSource = clientId(1403).makeSource;
+    clientId(1403);
     const icon = value.icon;
-    const source = tmp5Result.makeSource(tmp5(4639).isThemeLight(tmp4) ? icon.lightPNG : icon.darkPNG);
-    const tmp5Result2 = tmp5(4639);
+    const tmp5Result2 = clientId(4687);
+    source = makeSource(tmp5Result2.isThemeLight(tmp4) ? icon.lightPNG : icon.darkPNG);
   }
-};
-export const ConnectedAccountCard = function ConnectedAccountCard(arg0) {
+  let applicationIconSource;
+  if (null != stateFromStores) {
+    const obj4 = { id: null, icon: null };
+    ({ id: obj6.id, icon: obj6.icon } = stateFromStores);
+    const tmp2Result = platformType(1403);
+    applicationIconSource = tmp2Result.getApplicationIconSource(obj4);
+  }
+  let userAvatarSource;
+  if (null != stateFromStores1) {
+    const tmp2Result2 = platformType(1403);
+    userAvatarSource = tmp2Result2.getUserAvatarSource(stateFromStores1);
+  }
+  let str;
+  if (stateFromStores != null) {
+    str = stateFromStores.name;
+  }
+  if (str == null) {
+    str = "";
+  }
+  const items3 = [clientId];
+  const effect = react.useEffect(() => {
+    const obj = ApplicationActionCreatorsDefault;
+    const application = obj.fetchApplication(clientId);
+  }, items3);
+  const obj5 = { style: tmp.container, children: items6 };
+  const obj7 = { style: tmp.header, children: items5 };
+  const obj8 = { style: tmp.headerIcons, children: items4 };
+  const obj9 = { source: applicationIconSource, size: clientId(1189).AvatarSizes.XLARGE };
+  const Avatar = tmp5(1189).Avatar;
+  items4 = [closure_8(Avatar, obj9), , ];
+  const obj10 = { color: platformType(588).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
+  const MoreHorizontalIcon = tmp5(7364).MoreHorizontalIcon;
+  items4[1] = closure_8(MoreHorizontalIcon, obj10);
+  const obj11 = { source: userAvatarSource, size: clientId(1189).AvatarSizes.XLARGE };
+  const Avatar2 = tmp5(1189).Avatar;
+  items4[2] = closure_8(Avatar2, obj11);
+  items5 = [closure_9(View, obj8), , ];
+  const obj12 = { variant: "text-lg/normal", color: "text-default", children: intl.string(clientId(1127).t.uT1CPa) };
+  const Text = tmp5(4833).Text;
+  intl = tmp5(1127).intl;
+  items5[1] = closure_8(Text, obj12);
+  items5[2] = closure_8(clientId(4833).Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: str });
+  items6 = [closure_9(View, obj7), , , ];
+  const obj13 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(clientId(1127).t["aJRE/Q"], { applicationName: str, platformName }) };
+  const Text2 = tmp5(4833).Text;
+  intl2 = tmp5(1127).intl;
+  items6[1] = closure_8(Text2, obj13);
+  let tmp16Result = null;
+  const obj14 = { style: tmp.card, children: items7 };
+  if (null != source) {
+    const obj15 = { source, style: tmp.platformIcon, disableColor: true };
+    tmp16Result = tmp16(tmp5(1189).Icon, obj15);
+  }
+  items7 = [tmp16Result, , ];
+  const obj16 = { variant: "text-md/medium", style: tmp.cardName, color: "text-default", children: platformName };
+  items7[1] = closure_8(clientId(4833).Text, obj16);
+  const obj17 = {
+    variant: "primary",
+    size: "sm",
+    onPress() {
+      const obj = { platformType, location: "OAuth2 Connect Account Step" };
+      authorizeConnectionDefault(obj);
+    },
+    text: intl3.string(clientId(1127).t.S0W8Z5)
+  };
+  const Button = tmp5(5282).Button;
+  intl3 = tmp5(1127).intl;
+  items7[2] = closure_8(Button, obj17);
+  items6[2] = closure_9(View, obj14);
+  const obj18 = { style: tmp.infoNotice, children: items8 };
+  const obj19 = { color: platformType(588).colors.ICON_FEEDBACK_INFO, size: "sm" };
+  const CircleInformationIcon = tmp5(4788).CircleInformationIcon;
+  items8 = [closure_8(CircleInformationIcon, obj19), ];
+  const obj20 = { variant: "text-sm/normal", color: "text-default", style: tmp.infoText, children: intl4.format(clientId(1127).t["8psEFX"], { platformName, applicationName: str }) };
+  const Text3 = tmp5(4833).Text;
+  intl4 = tmp5(1127).intl;
+  items8[1] = closure_8(Text3, obj20);
+  items6[3] = closure_9(View, obj18);
+  return closure_9(View, obj5);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let applicationName;
+  let connectedAccount;
+  let items;
+  let items1;
+  let items2;
+  let platformName;
+  let platformType;
+  const obj = react2;
+  const cResult = obj.c(38);
+  ({ platformType, platformName, connectedAccount, applicationName } = arg0);
+  const tmp4 = closure_10();
+  const tmp6 = useThemeDefault();
+  if (cResult[0] === platformType) {
+    let tmp7;
+    let tmp11;
+    let tmp13;
+    if (cResult[1] === tmp6) {
+      tmp7 = cResult[2];
+    }
+    const container = tmp4.container;
+    if (cResult[3] !== platformName) {
+      const intl = tmp(1127).intl;
+      const obj2 = { platformName };
+      const formatResult = intl.format(intl5.t["+oaRw3"], obj2);
+      cResult[3] = platformName;
+      cResult[4] = formatResult;
+      tmp11 = formatResult;
+    } else {
+      tmp11 = cResult[4];
+    }
+    if (cResult[5] !== tmp11) {
+      const obj3 = { variant: "text-sm/normal", color: "text-default", children: tmp11 };
+      const tmp15 = metroImportAll(Text_Text.Text, obj3);
+      cResult[5] = tmp11;
+      cResult[6] = tmp15;
+      tmp13 = tmp15;
+    } else {
+      tmp13 = cResult[6];
+    }
+    if (cResult[7] === tmp7) {
+      let tmp17;
+      let tmp20;
+      if (cResult[8] === tmp4.platformIconSmall) {
+        tmp17 = cResult[9];
+      }
+      const cardInfo = tmp4.cardInfo;
+      if (cResult[10] !== connectedAccount.name) {
+        const obj4 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: connectedAccount.name };
+        const tmp22 = metroImportAll(Text_Text.Text, obj4);
+        cResult[10] = connectedAccount.name;
+        cResult[11] = tmp22;
+        tmp20 = tmp22;
+      } else {
+        tmp20 = cResult[11];
+      }
+      if (cResult[12] === connectedAccount.id) {
+        let tmp23;
+        let tmp25;
+        if (cResult[13] === platformName) {
+          tmp23 = cResult[14];
+        }
+        if (cResult[15] !== tmp23) {
+          const obj5 = { variant: "text-xs/normal", color: "text-muted", children: tmp23 };
+          const tmp27 = metroImportAll(Text_Text.Text, obj5);
+          cResult[15] = tmp23;
+          cResult[16] = tmp27;
+          tmp25 = tmp27;
+        } else {
+          tmp25 = cResult[16];
+        }
+        if (cResult[17] === tmp4.cardInfo) {
+          if (cResult[18] === tmp25) {
+            let tmp28;
+            let tmp33;
+            if (cResult[19] === tmp20) {
+              tmp28 = cResult[20];
+            }
+            const _Symbol = Symbol;
+            if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+              const obj6 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
+              const CheckmarkLargeIcon = tmp(4784).CheckmarkLargeIcon;
+              const tmp35 = metroImportAll(CheckmarkLargeIcon, obj6);
+              cResult[21] = tmp35;
+              tmp33 = tmp35;
+            } else {
+              tmp33 = cResult[21];
+            }
+            if (cResult[22] === tmp4.card) {
+              if (cResult[23] === tmp28) {
+                let tmp36;
+                let tmp40;
+                let tmp42;
+                let tmp45;
+                if (cResult[24] === tmp17) {
+                  tmp36 = cResult[25];
+                }
+                if (cResult[26] !== applicationName) {
+                  const intl3 = tmp(1127).intl;
+                  const obj7 = { applicationName };
+                  const formatResult1 = intl3.format(intl5.t.pyRNXJ, obj7);
+                  cResult[26] = applicationName;
+                  cResult[27] = formatResult1;
+                  tmp40 = formatResult1;
+                } else {
+                  tmp40 = cResult[27];
+                }
+                if (cResult[28] !== tmp40) {
+                  const obj8 = { variant: "text-sm/normal", color: "text-default", children: tmp40 };
+                  const tmp44 = metroImportAll(Text_Text.Text, obj8);
+                  cResult[28] = tmp40;
+                  cResult[29] = tmp44;
+                  tmp42 = tmp44;
+                } else {
+                  tmp42 = cResult[29];
+                }
+                if (cResult[30] !== tmp4.divider) {
+                  const obj9 = { style: tmp4.divider };
+                  const tmp48 = metroImportAll(View, obj9);
+                  cResult[30] = tmp4.divider;
+                  cResult[31] = tmp48;
+                  tmp45 = tmp48;
+                } else {
+                  tmp45 = cResult[31];
+                }
+                if (cResult[32] === tmp4.container) {
+                  if (cResult[33] === tmp36) {
+                    if (cResult[34] === tmp42) {
+                      if (cResult[35] === tmp45) {
+                        let tmp49;
+                        if (cResult[36] === tmp13) {
+                          tmp49 = cResult[37];
+                        }
+                        return tmp49;
+                      }
+                    }
+                  }
+                }
+                const obj10 = { style: container, children: items };
+                items = [tmp13, tmp36, tmp42, tmp45];
+                const tmp52 = React4(View, obj10);
+                cResult[32] = tmp4.container;
+                cResult[33] = tmp36;
+                cResult[34] = tmp42;
+                cResult[35] = tmp45;
+                cResult[36] = tmp13;
+                cResult[37] = tmp52;
+                tmp49 = tmp52;
+              }
+            }
+            const obj11 = { style: tmp16, children: items1 };
+            items1 = [tmp17, tmp28, tmp33];
+            const tmp39 = React4(View, obj11);
+            cResult[22] = tmp4.card;
+            cResult[23] = tmp28;
+            cResult[24] = tmp17;
+            cResult[25] = tmp39;
+            tmp36 = tmp39;
+          }
+        }
+        const obj12 = { style: cardInfo, children: items2 };
+        items2 = [tmp20, tmp25];
+        const tmp31 = React4(View, obj12);
+        cResult[17] = tmp4.cardInfo;
+        cResult[18] = tmp25;
+        cResult[19] = tmp20;
+        cResult[20] = tmp31;
+        tmp28 = tmp31;
+      }
+      const intl2 = tmp(1127).intl;
+      const obj13 = { platformName, connectedAccountId: connectedAccount.id };
+      const formatResult2 = intl2.format(intl5.t.Dkd7sE, obj13);
+      cResult[12] = connectedAccount.id;
+      cResult[13] = platformName;
+      cResult[14] = formatResult2;
+      tmp23 = formatResult2;
+    }
+    let tmp18 = null;
+    if (null != tmp7) {
+      const obj14 = { source: tmp7, style: tmp4.platformIconSmall, disableColor: true };
+      tmp18 = metroImportAll(tmp(1189).Icon, obj14);
+    }
+    cResult[7] = tmp7;
+    cResult[8] = tmp4.platformIconSmall;
+    cResult[9] = tmp18;
+    tmp17 = tmp18;
+  }
+  const tmp5Result = PlatformsDefault;
+  const value = tmp5Result.get(platformType);
+  let source = null;
+  if (null != value) {
+    const makeSource = AvatarUtils.makeSource;
+    AvatarUtils;
+    const icon = value.icon;
+    const tmpResult2 = shared;
+    source = makeSource(tmpResult2.isThemeLight(tmp6) ? icon.lightPNG : icon.darkPNG);
+  }
+  cResult[0] = platformType;
+  cResult[1] = tmp6;
+  cResult[2] = source;
+  tmp7 = source;
+}) : ((arg0) => {
+  let applicationName;
+  let connectedAccount;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let items2;
+  let obj10;
+  let platformName;
+  let platformType;
   ({ platformName, connectedAccount } = arg0);
   ({ platformType, applicationName } = arg0);
   const tmp = closure_10();
   const tmp4 = useThemeDefault();
-  value = PlatformsDefault.get(platformType);
-  if (null == value) {
-    const obj4 = { style: tmp.container, children: null };
-    const obj5 = { variant: "text-sm/normal", color: "text-default", children: null };
-    const intl = util.intl;
-    const obj6 = { platformName };
-    obj5.children = intl.format(util.t["+oaRw3"], obj6);
-    const items = [React6(Text_Text.Text, obj5), , , ];
-    const obj7 = { style: tmp.card, children: null };
-    let tmp10Result = null;
-    if (null != null) {
-      const obj8 = { source: null, style: tmp.platformIconSmall, disableColor: true };
-      tmp10Result = tmp10(tmp11(1177).Icon, obj8);
-    }
-    const items1 = [tmp10Result, , ];
-    const obj9 = { style: tmp.cardInfo, children: null };
-    const obj10 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: connectedAccount.name };
-    const items2 = [React6(Text_Text.Text, obj10), ];
-    const obj11 = { variant: "text-xs/normal", color: "text-muted", children: null };
-    const intl2 = tmp11(1115).intl;
-    const obj12 = { platformName, connectedAccountId: connectedAccount.id };
-    obj11.children = intl2.format(util.t.Dkd7sE, obj12);
-    items2[1] = React6(Text_Text.Text, obj11);
-    obj9.children = items2;
-    items1[1] = React7(View, obj9);
-    const obj13 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
-    items1[2] = React6(CheckmarkLargeIcon.CheckmarkLargeIcon, obj13);
-    obj7.children = items1;
-    items[1] = React7(View, obj7);
-    const obj14 = { variant: "text-sm/normal", color: "text-default", children: null };
-    const intl3 = tmp11(1115).intl;
-    const obj15 = { applicationName };
-    obj14.children = intl3.format(util.t.pyRNXJ, obj15);
-    items[2] = React6(Text_Text.Text, obj14);
-    const obj16 = { style: tmp.divider };
-    items[3] = React6(View, obj16);
-    obj4.children = items;
-    return React7(View, obj4);
-  } else {
-    const obj2 = AvatarUtils;
+  const obj = PlatformsDefault;
+  const value = obj.get(platformType);
+  let source = null;
+  if (null != value) {
+    const makeSource = AvatarUtils.makeSource;
+    AvatarUtils;
     const icon = value.icon;
-    const source = obj2.makeSource(shared.isThemeLight(tmp4) ? icon.lightPNG : icon.darkPNG);
+    const obj2 = shared;
+    source = makeSource(obj2.isThemeLight(tmp4) ? icon.lightPNG : icon.darkPNG);
   }
-};
+  const obj3 = { style: tmp.container, children: items };
+  const obj4 = { variant: "text-sm/normal", color: "text-default", children: intl.format(intl5.t["+oaRw3"], { platformName }) };
+  const Text = Text_Text.Text;
+  intl = intl5.intl;
+  items = [metroImportAll(Text, obj4), , , ];
+  let tmp11Result = null;
+  const obj5 = { style: tmp.card, children: items1 };
+  if (null != source) {
+    const obj6 = { source, style: tmp.platformIconSmall, disableColor: true };
+    tmp11Result = tmp11(tmp12(1189).Icon, obj6);
+  }
+  items1 = [tmp11Result, , ];
+  const obj7 = { style: tmp.cardInfo, children: items2 };
+  items2 = [, ];
+  const obj8 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: connectedAccount.name };
+  items2[0] = metroImportAll(Text_Text.Text, obj8);
+  const obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl2.format(intl5.t.Dkd7sE, obj10) };
+  const Text2 = tmp12(4833).Text;
+  intl2 = tmp12(1127).intl;
+  obj10 = { platformName, connectedAccountId: connectedAccount.id };
+  items2[1] = metroImportAll(Text2, obj9);
+  items1[1] = React4(View, obj7);
+  const obj11 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
+  const CheckmarkLargeIcon = tmp12(4784).CheckmarkLargeIcon;
+  items1[2] = metroImportAll(CheckmarkLargeIcon, obj11);
+  items[1] = React4(View, obj5);
+  const obj12 = { variant: "text-sm/normal", color: "text-default", children: intl3.format(intl5.t.pyRNXJ, { applicationName }) };
+  const Text3 = tmp12(4833).Text;
+  intl3 = tmp12(1127).intl;
+  items[2] = metroImportAll(Text3, obj12);
+  const obj13 = { style: tmp.divider };
+  items[3] = metroImportAll(View, obj13);
+  return React4(View, obj3);
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/oauth2/native/ConnectAccountStep.tsx");
+
+export default tmp4;
+export const ConnectedAccountCard = tmp5;

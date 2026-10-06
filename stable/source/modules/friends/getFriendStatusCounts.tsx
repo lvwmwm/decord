@@ -1,15 +1,16 @@
-// Module ID: 17230
-// Function ID: 17231
+// Module ID: 16580
+// Function ID: 16581
 // Name: getFriendStatusCounts
-// Dependencies: [4828, 4437, 1074, 2]
+// Dependencies: [4877, 4482, 1086, 2]
 // Exports: default
 
-// Module 17230 (getFriendStatusCounts)
-import PresenceStore from "PresenceStore" /* 4828 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+// Module 16580 (getFriendStatusCounts)
+import Constants from "Constants" /* 1086 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import size from "module_2" /* 2 */;
 
-const StatusTypes = fn(1074).StatusTypes;
-const size = fn(2);
+const StatusTypes = Constants.StatusTypes;
 const result = size.fileFinishedImporting("modules/friends/getFriendStatusCounts.tsx");
 
 export default function getFriendStatusCounts() {
@@ -17,6 +18,7 @@ export default function getFriendStatusCounts() {
   let num_friends_idle = 0;
   let num_friends_dnd = 0;
   const friendIDs = RelationshipStore.getFriendIDs();
+  const tmp2 = friendIDs[Symbol.iterator]();
   while (tmp2 !== undefined) {
     let status = PresenceStore.getStatus(tmp3);
     let tmp6 = StatusTypes;

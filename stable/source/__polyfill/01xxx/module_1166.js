@@ -1,153 +1,83 @@
 // Module ID: 1166
 // Function ID: 1167
-// Dependencies: [41, 42, 93, 95, 98, 1158]
-// Exports: formatToAst
+// Dependencies: [1167, 1169, 1170, 1177, 1182, 1184, 1185, 1186, 1187]
 
 // Module 1166
-import _mod1158 from "module_1158" /* 1158 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c2 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import astFormatter from "astFormatter" /* 1177 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
+const require = globalThis.__r;
+let hasOwnProperty;
+
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-function formatToAst(content, arg1) {
-  if (typeof content === "string") {
-    const obj = { type: AstBuilder.Text, content };
-    const items = [obj];
-    let bindFormatValuesResult = items;
-  } else {
-    const self = this;
-    bindFormatValuesResult = this.bindFormatValues(_moduleResult, content, arg1);
-  }
-  return bindFormatValuesResult;
-}
-let obj = {};
-const AstBuilder = obj;
-obj.Text = "text";
-obj.Strong = "strong";
-obj.Emphasis = "em";
-obj.Strikethrough = "s";
-obj.Code = "inlineCode";
-obj.Link = "link";
-obj.Paragraph = "paragraph";
-let closure_5 = {
-  $b(content) {
-    return { type: AstBuilder.Strong, content };
-  },
-  $i(content) {
-    return { type: AstBuilder.Emphasis, content };
-  },
-  $del(content) {
-    return { type: AstBuilder.Strikethrough, content };
-  },
-  $code(content) {
-    return { type: AstBuilder.Code, content };
-  },
-  $link(content, arg1, arg2) {
-    [tmp] = arg2;
-    return { type: AstBuilder.Link, target: tmp, content };
-  },
-  $p(content) {
-    return { type: AstBuilder.Paragraph, content };
-  }
-};
-class AstBuilder {
-  constructor() {
-    self = this;
-    tmp = closure_1(this, AstBuilder);
-    tmp2 = closure_3;
-    obj = closure_3(AstBuilder);
-    tmp3 = c2;
-    if (closure_4()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.result = [];
-    return tmp3Result;
-  }
-}
-_inherits(AstBuilder, _mod1158.FormatBuilder);
-const entry = {
-  key: "pushRichTextTag",
-  value: function pushRichTextTag(formatting, arg1, arg2) {
-    if (formatting in closure_5) {
-      const self = this;
-      const tmp4 = tmp[formatting](arg1, "", arg2);
-      const _Array = Array;
-      const result = this.result;
-      const push = result.push;
-      if (Array.isArray(tmp4)) {
-        const items = [];
-        HermesBuiltin.arraySpread(tmp4, 0);
-        HermesBuiltin.apply(items, result);
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
       } else {
-        push(tmp4);
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
       }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_2 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
     } else {
-      const _HermesInternal = HermesInternal;
-      throw "" + formatting + " is not a known rich text formatting tag";
+      let tmp3 = closure_2(arg1, obj, key10007);
+      continue;
     }
-    tmp = closure_5;
+    continue;
   }
-};
-let items = [
-  entry,
-  {
-    key: "pushLiteralText",
-    value: function pushLiteralText(content) {
-      if (null != this.result[this.result.length - 1]) {
-        if (tmp.type === AstBuilder.Text) {
-          tmp.content = tmp.content + content;
-        }
-      }
-      const result = this.result;
-      result.push({ type: AstBuilder.Text, content });
-    }
-  },
-  {
-    key: "pushObject",
-    value: function pushObject(arg0) {
-      const result = this.result;
-      result.push(arg0);
-    }
-  },
-  {
-    key: "finish",
-    value: function finish() {
-      return this.result;
-    }
-  }
-];
-const _moduleResult = _createClass(AstBuilder, items);
-const metroRequire = _moduleResult;
+});
+tmp3(astFormatter, exports);
 
-export { formatToAst };
-export const RichTextNodeType = obj;
-export const astFormatter = { format: formatToAst, builder: _moduleResult };
+export const makeDataFormatters = require("DEFAULT_FORMAT_CONFIG").makeDataFormatters;
+export const dataFormatterCache = require("dataFormatterCache").dataFormatterCache;
+export const FormatBuilder = require("FormatBuilder").FormatBuilder;
+export const bindFormatValues = require("FormatBuilder").bindFormatValues;
+export const runtimeHashMessageKey = require("runtimeHashMessageKey").runtimeHashMessageKey;
+export const IntlManager = require("DEFAULT_LOCALE").IntlManager;
+export const DEFAULT_LOCALE = require("DEFAULT_LOCALE").DEFAULT_LOCALE;
+export const InternalIntlMessage = require("InternalIntlMessage").InternalIntlMessage;
+export const createLoader = require("MessageLoader").createLoader;
+export const loadAllMessagesInLocale = require("MessageLoader").loadAllMessagesInLocale;
+export const waitForAllDefaultIntlMessagesLoaded = require("MessageLoader").waitForAllDefaultIntlMessagesLoaded;
+export const MessageLoader = require("MessageLoader").MessageLoader;
+export const chainMessagesObjects = require("chainMessagesObjects").chainMessagesObjects;
+export const makeMessagesProxy = require("chainMessagesObjects").makeMessagesProxy;

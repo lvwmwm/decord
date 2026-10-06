@@ -1,33 +1,38 @@
-// Module ID: 4459
-// Function ID: 4460
+// Module ID: 4504
+// Function ID: 4505
 // Name: BillingPlatformUtils
-// Dependencies: [1609, 1364, 2]
+// Dependencies: [1616, 1370, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported, isSocialLayerStorefrontPurchaseSupported
 
-// Module 4459 (BillingPlatformUtils)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
+// Module 4504 (BillingPlatformUtils)
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1616 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/device/BillingPlatformUtils.tsx");
 
 export const isPremiumGiftingSupported = function isPremiumGiftingSupported() {
-  return !MetaQuestUtils.isMetaQuest();
+  const obj = MetaQuestUtils;
+  return !obj.isMetaQuest();
 };
 export const isGooglePlayBillingSupported = function isGooglePlayBillingSupported() {
-  let isAndroidResult = PlatformUtils.isAndroid();
+  const obj = PlatformUtils;
+  let isAndroidResult = obj.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = !MetaQuestUtils.isMetaQuest();
     const tmpResult = MetaQuestUtils;
+    isAndroidResult = !tmpResult.isMetaQuest();
   }
   return isAndroidResult;
 };
 export const isCollectibleGiftingSupported = function isCollectibleGiftingSupported() {
-  return !MetaQuestUtils.isMetaQuest();
+  const obj = MetaQuestUtils;
+  return !obj.isMetaQuest();
 };
 export const isSocialLayerStorefrontGiftingSupported = function isSocialLayerStorefrontGiftingSupported() {
-  return !MetaQuestUtils.isMetaQuest();
+  const obj = MetaQuestUtils;
+  return !obj.isMetaQuest();
 };
 export const isSocialLayerStorefrontPurchaseSupported = function isSocialLayerStorefrontPurchaseSupported() {
-  return !MetaQuestUtils.isMetaQuest();
+  const obj = MetaQuestUtils;
+  return !obj.isMetaQuest();
 };

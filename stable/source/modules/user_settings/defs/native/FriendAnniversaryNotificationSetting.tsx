@@ -1,33 +1,36 @@
-// Module ID: 15778
-// Function ID: 15779
+// Module ID: 15039
+// Function ID: 15040
 // Name: FriendAnniversaryNotificationSetting
-// Dependencies: [8265, 11754, 1115, 2019, 15779, 8371, 2]
+// Dependencies: [7421, 10874, 1127, 2027, 15040, 7528, 2]
 
-// Module 15778 (FriendAnniversaryNotificationSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import MobileFriendAnniversaryExperimentDefault from "MobileFriendAnniversaryExperiment" /* 8371 */;
-import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 15779 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15039 (FriendAnniversaryNotificationSetting)
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import MobileFriendAnniversaryExperimentDefault from "MobileFriendAnniversaryExperiment" /* 7528 */;
+import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 15040 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.BVO96v);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.BVO96v);
   },
-  parent: SettingsConstants.MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableFriendAnniversaryNotifications.useSetting,
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t["00TNo7"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["00TNo7"]);
   },
   onValueChange: FriendAnniversaryNotificationUtils.onFriendAnniversaryNotificationSettingsChanged,
   usePredicate() {
-    return MobileFriendAnniversaryExperimentDefault.useConfig({ location: "FriendAnniversaryNotificationSetting" }).enabled;
+    const obj = MobileFriendAnniversaryExperimentDefault;
+    return obj.useConfig({ location: "FriendAnniversaryNotificationSetting" }).enabled;
   }
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/FriendAnniversaryNotificationSetting.tsx");
 
 export default toggle;

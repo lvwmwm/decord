@@ -1,33 +1,38 @@
-// Module ID: 9325
-// Function ID: 9326
+// Module ID: 8476
+// Function ID: 8477
 // Name: ApplicationWidgetMarkupUtils
-// Dependencies: [5240, 12, 5241, 9326, 4779, 8277, 2]
+// Dependencies: [5304, 12, 5305, 8477, 4825, 7433, 2]
 // Exports: parseApplicationWidgetText, parseApplicationWidgetTextToAST
 
-// Module 9325 (ApplicationWidgetMarkupUtils)
-import MarkupReactRulesDefault from "MarkupReactRules" /* 4779 */;
-import MarkupRulesDefault from "MarkupRules" /* 5241 */;
-import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 9326 */;
-import combineMarkupRules from "combineMarkupRules" /* 5240 */;
-import apply from "module_12" /* 12 */;
-import MarkupParser_mod from "MarkupParser" /* 8277 */;
+// Module 8476 (ApplicationWidgetMarkupUtils)
+import MarkupReactRulesDefault from "MarkupReactRules" /* 4825 */;
+import MarkupRulesDefault from "MarkupRules" /* 5305 */;
+import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 8477 */;
+import combineMarkupRules from "combineMarkupRules" /* 5304 */;
+import module_12 from "module_12" /* 12 */;
+import MarkupParser_mod from "MarkupParser" /* 7433 */;
+import size from "module_2" /* 2 */;
 
 const items = ["text", "link", "emoji"];
-const items1 = [apply.pick(MarkupRulesDefault.RULES, items), { image: MarkupLiteralImageRuleDefault }, MarkupReactRulesDefault()];
+const items1 = [module_12.pick(MarkupRulesDefault.RULES, items), , ];
+let obj = { image: MarkupLiteralImageRuleDefault };
+items1[1] = obj;
+items1[2] = MarkupReactRulesDefault();
 const importDefaultResultResult = combineMarkupRules(items1);
 let MarkupParser = MarkupParser_mod;
 let closure_0 = MarkupParser.reactParserFor(importDefaultResultResult);
-let MarkupParser = MarkupParser_mod;
+MarkupParser = MarkupParser_mod;
 let closure_1 = MarkupParser.astParserFor(importDefaultResultResult);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_widget/ApplicationWidgetMarkupUtils.native.tsx");
 
 export const APPLICATION_WIDGET_TEXT_RULE_KEYS = items;
 export const parseApplicationWidgetText = function parseApplicationWidgetText(text, arg1) {
+  const obj = { allowLinks: true };
   const merged = Object.assign(arg1);
-  return closure_0(text, true, { allowLinks: true });
+  return closure_0(text, true, obj);
 };
 export const parseApplicationWidgetTextToAST = function parseApplicationWidgetTextToAST(arg0, arg1) {
+  const obj = { allowLinks: true };
   const merged = Object.assign(arg1);
-  return closure_1(arg0, true, { allowLinks: true });
+  return closure_1(arg0, true, obj);
 };

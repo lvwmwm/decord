@@ -1,34 +1,39 @@
-// Module ID: 9540
-// Function ID: 9541
+// Module ID: 8692
+// Function ID: 8693
 // Name: openForumExplicitMediaWarning
-// Dependencies: [21, 5141, 9541, 1980, 2]
+// Dependencies: [21, 5205, 8693, 1987, 2]
 // Exports: default
 
-// Module 9540 (openForumExplicitMediaWarning)
-import jsxProd from "jsxProd" /* 21 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+// Module 8692 (openForumExplicitMediaWarning)
+import Fragment from "Fragment" /* 21 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+let importDefault;
+
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/forums/openForumExplicitMediaWarning.native.tsx");
 
 export default function openForumExplicitMediaWarning(arg0, arg1) {
-  closure_0 = arg0;
+  let closure_1;
+  let closure_0 = arg0;
   importDefault = arg1;
-  actions_AlertActionCreatorsDefault.openLazy({
+  const obj = actions_AlertActionCreatorsDefault;
+  const obj2 = {
     importer() {
-      return asyncRequireImpl(9541, dependencyMap.paths).then((result) => {
+      let channelId;
+      let messageId;
+      const promise = asyncRequire(8693, dependencyMap.paths);
+      return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {
-          const obj = {};
           const merged = Object.assign(arg0);
-          obj.channelId = channelId;
-          obj.messageId = messageId;
-          return <closure_0 />;
+          return <closure_0 channelId={channelId} messageId={messageId} />;
         };
       });
     },
     isDismissable: false
-  });
+  };
+  obj.openLazy(obj2);
 };

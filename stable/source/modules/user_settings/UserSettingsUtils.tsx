@@ -1,36 +1,43 @@
-// Module ID: 1222
-// Function ID: 1223
+// Module ID: 1234
+// Function ID: 1235
 // Name: user_settings/UserSettingsUtils
-// Dependencies: [32, 1084, 1074, 1186, 1221, 1223, 1215, 12, 2]
+// Dependencies: [32, 1096, 1086, 1198, 1233, 1235, 1227, 12, 2]
 // Exports: b64ToPreloadedUserSettingsProto, b64ToProtoWithType, mergeTopLevelFields, mutateUserChannelSettings, mutateUserChannelSettingsInternal, mutateUserGuildSettings, mutateUserGuildSettingsInternal, protoToB64, protoToB64WithType, runMigrations, serializeUsageHistory
 
-// Module 1222 (user_settings/UserSettingsUtils)
+// Module 1234 (user_settings/UserSettingsUtils)
 import _modDef12 from "module_12" /* 12 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import user_settings_shared from "user_settings_shared" /* 1215 */;
-import frecency_user_settings from "frecency_user_settings" /* 1221 */;
-import ProtoUtils from "ProtoUtils" /* 1223 */;
-import _slicedToArray from "module_32" /* 32 */;
+import Constants from "Constants" /* 1086 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import user_settings_shared from "user_settings_shared" /* 1227 */;
+import frecency_user_settings from "frecency_user_settings" /* 1233 */;
+import ProtoUtils from "ProtoUtils" /* 1235 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let FRECENCY_AND_FAVORITES_SETTINGS;
+let PRELOADED_USER_SETTINGS;
 function b64ToProto(arg0, arg1) {
   if (null == arg1) {
     return null;
   } else {
     try {
-      return ProtoUtils.b64ToProto(arg0, arg1);
+      obj = ProtoUtils;
+      return obj.b64ToProto(arg0, arg1);
     } catch (tmp4) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
       const error = new Error("Settings proto failed to deserialize (potentially corrupt): " + tmp4);
       throw error;
     }
   }
 }
-const ZERO_STRING_GUILD_ID = fn(1074).ZERO_STRING_GUILD_ID;
-let obj = { [PRELOADED_USER_SETTINGS]: fn(1186).PreloadedUserSettings, [FRECENCY_AND_FAVORITES_SETTINGS]: fn(1221).FrecencyUserSettings };
-({ PRELOADED_USER_SETTINGS, FRECENCY_AND_FAVORITES_SETTINGS } = fn(1084).UserSettingsTypes);
-const size = fn(2);
+const UserSettingsTypes = UserSettingsConstants.UserSettingsTypes;
+const ZERO_STRING_GUILD_ID = Constants.ZERO_STRING_GUILD_ID;
+let obj = { [PRELOADED_USER_SETTINGS]: preloaded_user_settings.PreloadedUserSettings, [FRECENCY_AND_FAVORITES_SETTINGS]: frecency_user_settings.FrecencyUserSettings };
+({ PRELOADED_USER_SETTINGS, FRECENCY_AND_FAVORITES_SETTINGS } = UserSettingsTypes);
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
 
 export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
@@ -49,17 +56,19 @@ export const b64ToPreloadedUserSettingsProto = function b64ToPreloadedUserSettin
   return b64ToProto(preloaded_user_settings.PreloadedUserSettings, settings);
 };
 export const protoToB64WithType = function protoToB64WithType(arg0, arg1) {
+  const tmp = obj[arg0];
   obj = ProtoUtils;
-  return obj.protoToB64(obj[arg0], arg1);
+  return obj.protoToB64(tmp, arg1);
 };
 export const protoToB64 = function protoToB64(arg0, arg1) {
-  return ProtoUtils.protoToB64(arg0, arg1);
+  obj = ProtoUtils;
+  return obj.protoToB64(arg0, arg1);
 };
 export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, proto, proto2) {
   obj = {};
   const merged = Object.assign(proto);
-  for (const key10007 in arg2) {
-    delete tmp[tmp2];
+  for (const key10007 in proto2) {
+    delete obj[key10007];
     continue;
   }
   ProtoClass.mergePartial(obj, proto2);
@@ -72,33 +81,29 @@ export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds, 
   }
   let tmp3 = arg1;
   guilds = guilds.guilds;
-  let tmp4 = null != arg1;
-  if (tmp4) {
-    tmp4 = "null" !== tmp3;
-  }
+  const tmp4 = null != arg1 && "null" !== tmp3;
   if (!tmp4) {
     tmp3 = ZERO_STRING_GUILD_ID;
   }
   if (!(tmp3 in guilds.guilds)) {
+    const guilds2 = guilds.guilds;
     const GuildSettings = preloaded_user_settings.GuildSettings;
-    guilds.guilds[tmp3] = GuildSettings.create();
+    guilds2[tmp3] = GuildSettings.create();
   }
   return fn(guilds.guilds[tmp3]);
 };
-export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, arg1, fn) {
+export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, arg1, f84599) {
   let tmp = arg1;
-  let tmp2 = null != arg1;
-  if (tmp2) {
-    tmp2 = "null" !== tmp;
-  }
+  const tmp2 = null != arg1 && "null" !== tmp;
   if (!tmp2) {
     tmp = ZERO_STRING_GUILD_ID;
   }
   if (!(tmp in guilds.guilds)) {
+    guilds = guilds.guilds;
     const GuildSettings = preloaded_user_settings.GuildSettings;
-    guilds.guilds[tmp] = GuildSettings.create();
+    guilds[tmp] = GuildSettings.create();
   }
-  return fn(guilds.guilds[tmp]);
+  return f84599(guilds.guilds[tmp]);
 };
 export const mutateUserChannelSettings = function mutateUserChannelSettings(guilds, arg1, id, fn) {
   if (null == guilds.guilds) {
@@ -107,29 +112,29 @@ export const mutateUserChannelSettings = function mutateUserChannelSettings(guil
   }
   let tmp3 = arg1;
   guilds = guilds.guilds;
-  let tmp4 = null != arg1;
-  if (tmp4) {
-    tmp4 = "null" !== tmp3;
-  }
+  const tmp4 = null != arg1 && "null" !== tmp3;
   if (!tmp4) {
     tmp3 = ZERO_STRING_GUILD_ID;
   }
   if (!(tmp3 in guilds.guilds)) {
+    const guilds2 = guilds.guilds;
     const GuildSettings = preloaded_user_settings.GuildSettings;
-    guilds.guilds[tmp3] = GuildSettings.create();
+    guilds2[tmp3] = GuildSettings.create();
   }
   if (!(id in guilds.guilds[tmp3].channels)) {
+    const channels = tmp7.channels;
     const ChannelSettings = preloaded_user_settings.ChannelSettings;
-    tmp7.channels[id] = ChannelSettings.create();
+    channels[id] = ChannelSettings.create();
   }
   return fn(guilds.guilds[tmp3].channels[id]);
 };
-export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, arg1, fn) {
+export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, arg1, f84599) {
   if (!(arg1 in channels.channels)) {
+    channels = channels.channels;
     const ChannelSettings = preloaded_user_settings.ChannelSettings;
-    channels.channels[arg1] = ChannelSettings.create();
+    channels[arg1] = ChannelSettings.create();
   }
-  return fn(channels.channels[arg1]);
+  return f84599(channels.channels[arg1]);
 };
 export const runMigrations = function runMigrations(proto, arg1) {
   if (null == proto.versions) {
@@ -152,6 +157,7 @@ export const runMigrations = function runMigrations(proto, arg1) {
   }
   let flag = false;
   const items = [];
+  const tmp8 = Math.random() < 0.1;
   const iter2 = arg1[Symbol.iterator]();
   const nextResult1 = iter2.next();
   while (iter2 !== undefined) {
@@ -182,44 +188,43 @@ export const runMigrations = function runMigrations(proto, arg1) {
   return { proto, isDirty: flag, cleanupFuncs: items };
 };
 export const serializeUsageHistory = function serializeUsageHistory(usageHistory, arg1) {
+  let first;
   let length;
+  let recentUses;
+  let tmp10;
   const entries = Object.entries(usageHistory);
+  let tmp = entries;
   if (entries.length > arg1) {
-    const reversed = _modDef12.sortBy(entries, (arg0) => {
+    obj = _modDef12;
+    const sortByResult = obj.sortBy(entries, (arg0) => {
+      let tmp;
       [, tmp] = arg0;
       return tmp.recentUses[tmp.recentUses.length - 1];
-    }).reverse();
+    });
+    const reversed = sortByResult.reverse();
+    tmp = reversed;
     if (reversed.length > arg1) {
       do {
         let arr = reversed.pop();
+        tmp = reversed;
         length = reversed.length;
       } while (length > arg1);
     }
-    const sortByResult = _modDef12.sortBy(entries, (arg0) => {
-      [, tmp] = arg0;
-      return tmp.recentUses[tmp.recentUses.length - 1];
-    });
   }
   const obj2 = {};
+  const tmp5 = tmp[Symbol.iterator]();
   while (tmp5 !== undefined) {
-    let tmp8 = _slicedToArray(tmp6, 2);
-    let tmp9 = tmp8[1];
+    [first, tmp10] = tmp6;
     let FrecencyItem = frecency_user_settings.FrecencyItem;
     let obj3 = FrecencyItem.create();
-    ({ frecency: tmp12.frecency, recentUses } = tmp9);
-    let found = recentUses.filter((item) => {
-      let tmp = null != item;
-      if (tmp) {
-        tmp = item > 0;
-      }
-      return tmp;
-    });
+    ({ frecency: tmp13.frecency, recentUses } = tmp10);
+    let found = recentUses.filter((item) => null != item && item > 0);
     let _String = String;
     obj3.recentUses = found.map(String);
     let _Math = Math;
-    obj3.score = Math.round(tmp9.score);
-    obj3.totalUses = tmp9.totalUses;
-    obj2[tmp8[0]] = obj3;
+    obj3.score = Math.round(tmp10.score);
+    obj3.totalUses = tmp10.totalUses;
+    obj2[first] = obj3;
     continue;
   }
   return obj2;

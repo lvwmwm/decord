@@ -1,47 +1,54 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 13438
+// Function ID: 13439
 // Name: RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec
-// Dependencies: [4703, 4427, 1074, 1115, 504, 14191, 2]
+// Dependencies: [4752, 4472, 1086, 1127, 504, 13439, 2]
 
-// Module 14190 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import ExperimentStore from "ExperimentStore" /* 4703 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+// Module 13438 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1127 */;
+import ExperimentStore from "ExperimentStore" /* 4752 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let closure_4;
+let hasOwnProperty;
 ({ GuildFeatures: closure_4, Permissions: hasOwnProperty } = Constants);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec.tsx");
-
-export default {
+let obj = {
   title() {
-    const intl = util.intl;
-    return intl.string(util.t.aTFQKh);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.aTFQKh);
   },
   description() {
-    const intl = util.intl;
-    return intl.string(util.t.oTbFQg);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.oTbFQg);
   },
   canCreateGuild: false,
   useIsGuildSupported() {
+    let obj = get_initialized;
     const items = [ExperimentStore, PermissionStore];
-    return initialize.useStateFromStores(items, () => (features) => {
-      features = features.features;
-      let hasItem = features.has(constants.ROLE_SUBSCRIPTIONS_ENABLED);
-      if (hasItem) {
-        const features2 = features.features;
-        hasItem = !features2.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
-      }
-      if (hasItem) {
-        hasItem = closure_1_3.can(constants2.ADMINISTRATOR, features);
-      }
-      if (hasItem) {
-        hasItem = closure_1_0(dependencyMap[5]).isGuildEligibleForTierTemplates(features.id);
-        const obj = closure_1_0(dependencyMap[5]);
-      }
-      return hasItem;
+    return obj.useStateFromStores(items, () => {
+      let constants2;
+      return (features) => {
+        features = features.features;
+        let hasItem = features.has(constants.ROLE_SUBSCRIPTIONS_ENABLED);
+        const tmp = constants;
+        if (hasItem) {
+          const features2 = features.features;
+          hasItem = !features2.has(tmp.CREATOR_MONETIZABLE_RESTRICTED);
+        }
+        if (hasItem) {
+          hasItem = closure_1_3.can(constants2.ADMINISTRATOR, features);
+        }
+        if (hasItem) {
+          const obj = closure_1_0(closure_1_1[5]);
+          hasItem = obj.isGuildEligibleForTierTemplates(features.id);
+        }
+        return hasItem;
+      };
     }, []);
   }
 };
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec.tsx");
+
+export default obj;

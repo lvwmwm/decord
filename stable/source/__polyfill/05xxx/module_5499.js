@@ -1,72 +1,126 @@
 // Module ID: 5499
 // Function ID: 5500
 // Dependencies: []
-// Exports: addMissingNamespaces, isMissingNamespaceError
+// Exports: findMatroskaDocTypeElements, getFileChunk, isAvifStringIncluded, isFileContaineJfiforExifHeader, isFlvStringIncluded, isHeicSignatureIncluded, isftypStringIncluded
 
 // Module 5499
-let closure_0 = { xmp: "http://ns.adobe.com/xap/1.0/", tiff: "http://ns.adobe.com/tiff/1.0/", exif: "http://ns.adobe.com/exif/1.0/", dc: "http://purl.org/dc/elements/1.1/", xmpMM: "http://ns.adobe.com/xap/1.0/mm/", stEvt: "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#", stRef: "http://ns.adobe.com/xap/1.0/sType/ResourceRef#", photoshop: "http://ns.adobe.com/photoshop/1.0/" };
+function fetchFromObject(FileTypes, arr) {
+  let tmp2;
+  const index = arr.indexOf(".");
+  if (index > -1) {
+    tmp2 = fetchFromObject(FileTypes[arr.slice(arr, 0, index)], arr.slice(index + 1));
+  } else {
+    tmp2 = FileTypes[arr];
+  }
+  return tmp2;
+}
 
-export const isMissingNamespaceError = function isMissingNamespaceError(message) {
-  const items = ["prefix is non-null and namespace is null", "prefix not bound to a namespace", "prefix inte bundet till en namnrymd", /Namespace prefix .+ is not defined/];
+export const getFileChunk = function getFileChunk(fileChunk, chunkSize) {
+  let num = chunkSize;
+  if (chunkSize === undefined) {
+    num = 32;
+  }
+  let uint8Array = fileChunk;
+  if (fileChunk instanceof ArrayBuffer) {
+    const _Uint8Array = Uint8Array;
+    const self = this;
+    const self2 = this;
+    let tmp = fileChunk;
+    uint8Array = new Uint8Array(fileChunk);
+  }
+  if (!Array.isArray(fileChunk)) {
+    const _ArrayBuffer = ArrayBuffer;
+    if (!(fileChunk instanceof ArrayBuffer)) {
+      const _Uint8Array2 = Uint8Array;
+      if (!(fileChunk instanceof Uint8Array)) {
+        const _TypeError = TypeError;
+        const _HermesInternal = HermesInternal;
+        const self3 = this;
+        const self4 = this;
+        const typeError = new TypeError("Expected the `file` argument to be of type `Array<number>`, `Uint8Array`, or `ArrayBuffer`, got `" + typeof fileChunk + "`");
+        throw typeError;
+      }
+    }
+  }
+  const arr = Array.from(uint8Array.slice(0, num));
+  if (arr.every((item) => {
+    let tmp = typeof item === "number";
+    if (typeof item === "number") {
+      const _isNaN = isNaN;
+      tmp = !isNaN(item);
+    }
+    return tmp;
+  })) {
+    return arr;
+  } else {
+    const _TypeError2 = TypeError;
+    const self5 = this;
+    const self6 = this;
+    const typeError1 = new TypeError("File content contains illegal values");
+    throw typeError1;
+  }
+};
+export { fetchFromObject };
+export const findMatroskaDocTypeElements = function findMatroskaDocTypeElements(fileChunk) {
+  const mapped = fileChunk.map((item) => String.fromCharCode(item));
+  const joined = mapped.join("");
+  let str = "webm";
+  if (!joined.includes("webm")) {
+    let str3;
+    if (joined.includes("matroska")) {
+      str3 = "mkv";
+    }
+    str = str3;
+  }
+  return str;
+};
+export const isftypStringIncluded = function isftypStringIncluded(fileChunk) {
+  const items = [102, 116, 121, 112];
   let num = 0;
-  if (0 < items.length) {
-    const _RegExp = RegExp;
-    const regExp = new RegExp(items[num]);
-    while (!regExp.test(message.message)) {
-      num = num + 1;
+  if (0 < fileChunk.length - items.length) {
+    while (true) {
+      let num2 = 0;
+      let flag = true;
+      if (0 < items.length) {
+        flag = false;
+        while (fileChunk[num + num2] === items[num2]) {
+          let sum = num2 + 1;
+          num2 = sum;
+          flag = true;
+          if (sum >= items.length) {
+            break;
+          }
+        }
+      }
+      if (flag) {
+        break;
+      } else {
+        num = num + 1;
+      }
     }
     return true;
   }
   return false;
 };
-export const addMissingNamespaces = function addMissingNamespaces(str) {
-  const match = str.match(/<([A-Za-z_][A-Za-z0-9._-]*)([^>]*)>/);
-  if (match) {
-    const items = [];
-    const obj = /xmlns:([\w-]+)=["'][^"']+["']/g;
-    let match1 = obj.exec(str);
-    if (null !== match1) {
-      do {
-        if (-1 === items.indexOf(match1[1])) {
-          let arr = items.push(match1[1]);
-        }
-        match1 = obj.exec(str);
-      } while (null !== match1);
-    }
-    const items1 = [];
-    const obj2 = /\b([A-Za-z_][A-Za-z0-9._-]*):[A-Za-z_][A-Za-z0-9._-]*\b/g;
-    let match2 = obj2.exec(str);
-    if (null !== match2) {
-      do {
-        let tmp8 = match2[1];
-        let tmp9 = "xmlns" !== tmp8 && "xml" !== tmp8;
-        if (tmp9) {
-          if (-1 === items1.indexOf(tmp8)) {
-            let arr2 = items1.push(tmp8);
-          }
-        }
-        match2 = obj2.exec(str);
-      } while (null !== match2);
-    }
-    const found = items1.filter((item) => -1 === items.indexOf(item));
-    let replaced = str;
-    if (0 !== found.length) {
-      const items2 = [];
-      for (let num3 = 0; num3 < found.length; num3 = num3 + 1) {
-        let tmp12 = found[num3];
-        let text = closure_0[tmp12];
-        if (!text) {
-          text = `http://fallback.namespace/${tmp12}`;
-        }
-        let arr3 = items2.push(` xmlns:${tmp12}="${tmp14}"`);
-      }
-      const _RegExp = RegExp;
-      const joined = items2.join("");
-      const regExp = new RegExp("<" + tmp2 + "([^>]*)>");
-      replaced = str.replace(regExp, `<${tmp2}$1${tmp17}>`);
-    }
-    return replaced;
-  } else {
-    return str;
-  }
+export const isFlvStringIncluded = function isFlvStringIncluded(fileChunk) {
+  const substr = fileChunk.slice(0, 3);
+  const textDecoder = new TextDecoder();
+  const decode = textDecoder.decode;
+  const uint8Array = new Uint8Array(substr);
+  const decodeResult = decode(uint8Array);
+  return decodeResult.includes("FLV");
+};
+export const isFileContaineJfiforExifHeader = function isFileContaineJfiforExifHeader(arg0) {
+  return 224 === tmp || 225 === tmp;
+};
+export const isAvifStringIncluded = function isAvifStringIncluded(fileChunk) {
+  const substr = fileChunk.slice(4, 12);
+  const mapped = substr.map((item) => String.fromCharCode(item));
+  return "ftypavif" === mapped.join("");
+};
+export const isHeicSignatureIncluded = function isHeicSignatureIncluded(fileChunk) {
+  const mapped = fileChunk.map((item) => String.fromCharCode(item));
+  let closure_0 = mapped.join("");
+  const items = ["ftypheic", "ftyphevc", "ftypmif1", "ftypmsf1"];
+  return items.some((item) => closure_0.includes(item));
 };

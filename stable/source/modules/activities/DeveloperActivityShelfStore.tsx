@@ -1,93 +1,88 @@
-// Module ID: 9166
-// Function ID: 9167
+// Module ID: 8317
+// Function ID: 8318
 // Name: DeveloperActivityShelfStore
-// Dependencies: [1074, 9167, 504, 2019, 573, 2]
+// Dependencies: [1086, 8318, 504, 2027, 585, 2]
 
-// Module 9166 (DeveloperActivityShelfStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9167 */;
+// Module 8317 (DeveloperActivityShelfStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
 import size from "module_2" /* 2 */;
 
+let closure_3, closure_6;
+
 const ApplicationFlags = Constants.ApplicationFlags;
-let closure_3 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
+const _false = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
 const DevShelfFetchState = { INITIALIZED: "INITIALIZED", LOADING: "LOADING", LOADED: "LOADED", ERROR: "ERROR" };
 let ERROR = DevShelfFetchState.INITIALIZED;
-let closure_6 = [];
-const PersistedStore = initializeDefault.PersistedStore;
+const metroRequire = [];
+const PersistedStore = get_initializedDefault.PersistedStore;
 class DeveloperActivityShelfStore extends PersistedStore {
+  initialize(arg0) {
+    let obj = arg0;
+    const obj2 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
+    if (arg0 == null) {
+      obj = {};
+    }
+    const merged = Object.assign(obj);
+    closure_3 = obj2;
+  }
+  getState() {
+    return closure_3;
+  }
+  getIsEnabled() {
+    const DeveloperMode = UserSettings.DeveloperMode;
+    const setting = DeveloperMode.getSetting() && closure_6.length > 0;
+    return setting;
+  }
+  getLastUsedObject() {
+    return closure_3.lastUsedObject;
+  }
+  getUseActivityUrlOverride() {
+    const useActivityUrlOverride = this.getIsEnabled() && closure_3.useActivityUrlOverride;
+    return useActivityUrlOverride;
+  }
+  getActivityUrlOverride() {
+    let activityUrlOverride = null;
+    if (this.getIsEnabled()) {
+      activityUrlOverride = closure_3.activityUrlOverride;
+    }
+    return activityUrlOverride;
+  }
+  getFetchState() {
+    return ERROR;
+  }
+  getFilter() {
+    let str = "";
+    if (this.getIsEnabled()) {
+      str = closure_3.filter;
+    }
+    return str;
+  }
+  getDeveloperShelfItems() {
+    return this.getIsEnabled() ? closure_6 : [];
+  }
+  inDevModeForApplication(id) {
+    let closure_0 = id;
+    const isEnabled = this.getIsEnabled() && null != closure_6.find((id) => id.id === closure_0);
+    return isEnabled;
+  }
 }
 const prototype = DeveloperActivityShelfStore.prototype;
-prototype["initialize"] = function initialize(arg0) {
-  let obj = arg0;
-  if (arg0 == null) {
-    obj = {};
-  }
-  const merged = Object.assign(obj);
-  closure_3 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
-};
-prototype["getState"] = function getState() {
-  return closure_3;
-};
-prototype["getIsEnabled"] = function getIsEnabled() {
-  const DeveloperMode = UserSettings.DeveloperMode;
-  let setting = DeveloperMode.getSetting();
-  if (setting) {
-    setting = closure_6.length > 0;
-  }
-  return setting;
-};
-prototype["getLastUsedObject"] = function getLastUsedObject() {
-  return closure_3.lastUsedObject;
-};
-prototype["getUseActivityUrlOverride"] = function getUseActivityUrlOverride() {
-  let useActivityUrlOverride = this.getIsEnabled();
-  if (useActivityUrlOverride) {
-    useActivityUrlOverride = closure_3.useActivityUrlOverride;
-  }
-  return useActivityUrlOverride;
-};
-prototype["getActivityUrlOverride"] = function getActivityUrlOverride() {
-  let activityUrlOverride = null;
-  if (this.getIsEnabled()) {
-    activityUrlOverride = closure_3.activityUrlOverride;
-  }
-  return activityUrlOverride;
-};
-prototype["getFetchState"] = function getFetchState() {
-  return ERROR;
-};
-prototype["getFilter"] = function getFilter() {
-  let str = "";
-  if (this.getIsEnabled()) {
-    str = closure_3.filter;
-  }
-  return str;
-};
-prototype["getDeveloperShelfItems"] = function getDeveloperShelfItems() {
-  return this.getIsEnabled() ? closure_6 : [];
-};
-prototype["inDevModeForApplication"] = function inDevModeForApplication(id) {
-  closure_0 = id;
-  let isEnabled = this.getIsEnabled();
-  if (isEnabled) {
-    isEnabled = null != closure_6.find((id) => id.id === closure_0);
-  }
-  return isEnabled;
-};
 DeveloperActivityShelfStore.displayName = "DeveloperActivityShelfStore";
 DeveloperActivityShelfStore.persistKey = "DeveloperActivityShelfStore";
 const items = [
   (arg0) => {
-    delete tmp2[tmp];
+    delete arg0["isEnabled"];
+    const obj = {};
     const merged = Object.assign(arg0);
-    return {};
+    return obj;
   }
 ];
 DeveloperActivityShelfStore.migrations = items;
-const developerActivityShelfStore = new DeveloperActivityShelfStore(DispatcherDefault, {
+let obj2 = {
   LOGOUT: function reset() {
     closure_3 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
     ERROR = obj.INITIALIZED;
@@ -101,19 +96,24 @@ const developerActivityShelfStore = new DeveloperActivityShelfStore(DispatcherDe
   },
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: function handleMarkActivityUsed(applicationId) {
     applicationId = applicationId.applicationId;
+    const timestamp = applicationId.timestamp;
     if (null == closure_6.find((id) => id.id === applicationId)) {
       return false;
     } else {
-      closure_3.lastUsedObject[applicationId] = applicationId.timestamp;
+      closure_3.lastUsedObject[applicationId] = timestamp;
     }
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
     ERROR = obj.LOADING;
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: function handleEmbeddedActivitiesFetchDeveloperApplicationsSuccess(applications) {
+    let obj;
     applications = applications.applications;
     ERROR = obj.LOADED;
-    closure_6 = applications.filter((item) => ApplicationFlagUtils.hasApplicationFlag(item, constants.EMBEDDED));
+    closure_6 = applications.filter((item) => {
+      const obj = ApplicationFlagUtils;
+      return obj.hasApplicationFlag(item, constants.EMBEDDED);
+    });
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: function handleEmbeddedActivitiesFetchDeveloperApplicationsFail(arg0) {
     ERROR = obj.ERROR;
@@ -124,7 +124,8 @@ const developerActivityShelfStore = new DeveloperActivityShelfStore(DispatcherDe
   USER_SETTINGS_PROTO_UPDATE() {
 
   }
-});
+};
+const developerActivityShelfStore = new DeveloperActivityShelfStore(DispatcherDefault, obj2);
 const result = size.fileFinishedImporting("modules/activities/DeveloperActivityShelfStore.tsx");
 
 export default developerActivityShelfStore;

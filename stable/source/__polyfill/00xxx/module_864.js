@@ -1,32 +1,29 @@
 // Module ID: 864
 // Function ID: 865
-// Dependencies: [82]
-// Exports: default
+// Dependencies: [865, 698]
+// Exports: isBrowser
 
 // Module 864
-import _modDef82 from "module_82" /* 82 */;
+import _mod865 from "module_865" /* 865 */;
 
-importDefault = arg2;
-const dependencyMap = arg6;
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export default function getDevServer() {
-  let str = first;
-  if (undefined === first) {
-    str2 = _modDef82.getConstants().scriptURL;
-    const match = str2.match(/^https?:\/\/.*?\//);
-    first = null;
-    if (match) {
-      first = match[0];
+export const isBrowser = function isBrowser() {
+  let tmp = typeof window !== "undefined";
+  if (typeof window !== "undefined") {
+    const obj = _mod865;
+    const isNodeEnvResult = obj.isNodeEnv();
+    let tmp4 = !isNodeEnvResult;
+    const tmp5 = require;
+    if (isNodeEnvResult) {
+      const _process = tmp5(698).GLOBAL_OBJ.process;
+      let type;
+      if (_process != null) {
+        type = _process.type;
+      }
+      tmp4 = "renderer" === type;
     }
-    let tmp5 = null;
-    if (match) {
-      tmp5 = str2;
-    }
-    str2 = tmp5;
-    str = first;
+    tmp = tmp4;
   }
-  if (str == null) {
-    str = "http://localhost:8081/";
-  }
-  return { url: str, fullBundleUrl: str2, bundleLoadedFromServer: null !== first };
+  return tmp;
 };

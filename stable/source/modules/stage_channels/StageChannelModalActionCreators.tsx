@@ -1,56 +1,66 @@
-// Module ID: 8696
-// Function ID: 8697
+// Module ID: 7845
+// Function ID: 7846
 // Name: StageChannelModalActionCreators
-// Dependencies: [5, 4810, 2041, 2063, 4427, 2095, 2049, 8697, 7595, 5769, 13248, 13249, 5660, 4840, 4930, 13251, 2]
+// Dependencies: [5, 4859, 2051, 2073, 4472, 2102, 2059, 7846, 6741, 5833, 12484, 12485, 5724, 4889, 4979, 12487, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 8696 (StageChannelModalActionCreators)
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5660 */;
-import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 8697 */;
-import StageChannelNewUserManagerDefault from "StageChannelNewUserManager" /* 13249 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 7845 (StageChannelModalActionCreators)
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
+import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7846 */;
+import StageChannelNewUserManagerDefault from "StageChannelNewUserManager" /* 12485 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+const require = globalThis.__r;
+let _require, c3, c4, isStreamMarkedFull;
+
 function connectToStage(channel, flag) {
   if (flag === undefined) {
     flag = false;
   }
+  let obj = SelectedChannelStore;
   if (!flag) {
     _require = channel;
     const canResult = PermissionStore.can(require("StageChannelPermissions").JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
     let tmp6 = !canResult;
     if (canResult) {
-      let num = StageChannelActionCreatorExtrasAll.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
+      const obj2 = StageChannelActionCreatorExtrasAll;
+      let num = obj2.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
+      const tmp7 = importAll;
       if (num) {
-        const result = tmp7(8697).openStageBlockedUsersSheet(channel, () => {
-          connectAndOpen(closure_0, true);
+        const tmp7Result = tmp7(7846);
+        const result = tmp7Result.openStageBlockedUsersSheet(channel, () => {
+          connectAndOpen(channel, true);
         });
         num = 1;
-        const tmp7Result = tmp7(8697);
       }
       tmp6 = num;
-      tmp7 = importAll;
     }
     if (tmp6) {
       return false;
     }
   }
-  StageChannelNewUserManagerDefault.initialize();
-  const obj = SelectedChannelStore;
-  const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(channel.id);
+  const obj4 = StageChannelNewUserManagerDefault;
+  obj4.initialize();
+  const obj5 = SelectedChannelActionCreatorsDefault;
+  const voiceChannel = obj5.selectVoiceChannel(channel.id);
   if (obj.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
     const allApplicationStreamsForChannel = ApplicationStreamingStore.getAllApplicationStreamsForChannel(channel.id);
-    const found = allApplicationStreamsForChannel.find((item) => !streamMarkedFull.isStreamMarkedFull(channel(dependencyMap[13]).encodeStreamKey(item)));
+    const found = allApplicationStreamsForChannel.find((item) => {
+      isStreamMarkedFull = isStreamMarkedFull.isStreamMarkedFull;
+      const obj = channel(dependencyMap[13]);
+      return !isStreamMarkedFull(obj.encodeStreamKey(item));
+    });
     if (null != found) {
-      require("StreamActionCreators").watchStream(found, { noFocus: true });
       const obj6 = require("StreamActionCreators");
+      obj6.watchStream(found, { noFocus: true });
     }
     return true;
   }
@@ -68,53 +78,53 @@ function connectAndOpen(channel, flag, flag2, arg3) {
     flag3 = false;
   }
   const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
-  let result = !flag3;
-  if (!flag3) {
-    result = voiceChannelId !== channel.id;
-  }
+  let result = !flag3 && voiceChannelId !== channel.id;
   if (result) {
-    result = require("shouldShowVoiceChannelChangeConfirmation").shouldShowVoiceChannelChangeConfirmation(channel);
     const obj = require("shouldShowVoiceChannelChangeConfirmation");
+    result = obj.shouldShowVoiceChannelChangeConfirmation(channel);
   }
   if (result) {
-    result = flag2(8697).showChannelChangeConfirmationAlert(channel, () => {
-      connectAndOpen(closure_0, flag, flag2, true);
+    const obj2 = flag2(7846);
+    result = obj2.showChannelChangeConfirmationAlert(channel, () => {
+      connectAndOpen(channel, flag, flag2, true);
     });
-    const obj2 = flag2(8697);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      flag2(8697).navigateToStage(channel, voiceChannelId);
-      const obj3 = flag2(8697);
+      const obj3 = flag2(7846);
+      obj3.navigateToStage(channel, voiceChannelId);
     }
   }
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/StageChannelModalActionCreators.tsx");
 
 export const connectOrLurkStage = function connectOrLurkStage(arg0, arg1, arg2) {
-  closure_0 = arg0;
-  closure_1 = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
-  closure_0 = asyncGeneratorStep(async (arg0, value) => {
+  closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    let obj5;
+    closure_0 = arg0;
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
         c4 = 2;
+        const tmp4 = c3;
         if (0 === c3) {
           if (arg0 === 1) {
             c4 = 3;
@@ -124,24 +134,25 @@ export const connectOrLurkStage = function connectOrLurkStage(arg0, arg1, arg2) 
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            closure_2 = tmp5;
-            closure_129_0 = closure_0;
-            let channel = ChannelStore.getChannel(tmp2);
+            let closure_2 = tmp4;
+            closure_1 = tmp;
+            channel = channel.getChannel(closure_1);
+            const tmp23 = closure_0;
             if (null != channel) {
               connectToStage(channel, closure_2);
               c4 = 3;
-              const obj6 = { value: tmp25(channel), done: true };
+              const obj6 = { value: tmp23(channel), done: true };
               return obj6;
             } else {
               const items = [closure_0];
               c3 = 1;
               c4 = 1;
-              const obj7 = { value: closure_0(7595).stopLurkingAll(items), done: false };
+              const obj7 = { value: obj5.stopLurkingAll(items), done: false };
+              obj5 = closure_0(dependencyMap[8]);
               return obj7;
             }
-            tmp25 = closure_0;
           }
-        } else if (1 === tmp5) {
+        } else if (1 === tmp4) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -152,7 +163,8 @@ export const connectOrLurkStage = function connectOrLurkStage(arg0, arg1, arg2) 
           } else {
             c3 = 2;
             c4 = 1;
-            const obj9 = { value: tmp2(5769).joinGuild(closure_0, { lurker: true }), done: false };
+            const obj9 = { value: obj2.joinGuild(closure_0, { lurker: true }), done: false };
+            obj2 = closure_2_1(dependencyMap[9]);
             return obj9;
           }
         } else if (arg0 === 1) {
@@ -164,42 +176,38 @@ export const connectOrLurkStage = function connectOrLurkStage(arg0, arg1, arg2) 
           return obj;
         } else {
           const result = GuildStore.addConditionalChangeListener(() => {
-            const channel = ChannelStore.getChannel(closure_1);
+            channel = channel.getChannel(closure_1);
             flag = null == channel;
             if (!flag) {
-              connectToStage(channel);
-              closure_1(13248).initialize();
+              closure_3_10(channel);
+              const obj = closure_3_1(closure_3_3[10]);
+              obj.initialize();
               closure_1_0(channel);
               flag = false;
-              const obj = closure_1(13248);
             }
             return flag;
           });
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
-      } catch (tmp20) {
-        c4 = tmp;
-        throw tmp20;
+      } catch (tmp19) {
+        c4 = 3;
+        throw tmp19;
       }
     }
   });
-  return new Promise(function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+  const promise = new Promise(function() {
+    return closure_0(...arguments);
   });
+  return promise;
 };
 export { connectToStage };
 export { connectAndOpen };
 export const navigateToStage = function navigateToStage(arg0, arg1) {
-  StageChannelActionCreatorExtrasAll.navigateToStage(arg0, arg1);
+  const obj = StageChannelActionCreatorExtrasAll;
+  obj.navigateToStage(arg0, arg1);
 };
 export const showUserProfile = function showUserProfile(arg0) {
-  const result = StageChannelActionCreatorExtrasAll.showPlatformUserProfile(arg0);
+  const obj = StageChannelActionCreatorExtrasAll;
+  const result = obj.showPlatformUserProfile(arg0);
 };

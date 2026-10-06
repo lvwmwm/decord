@@ -1,11 +1,11 @@
-// Module ID: 7262
-// Function ID: 7263
+// Module ID: 6406
+// Function ID: 6407
 // Name: safetyScannedUploadSurfaces
-// Dependencies: [7263, 2]
+// Dependencies: [6407, 2]
 // Exports: getSafetyScannedUploadSurfaceForProfileCustomization
 
-// Module 7262 (safetyScannedUploadSurfaces)
-import ImageCroppingConstants from "ImageCroppingConstants" /* 7263 */;
+// Module 6406 (safetyScannedUploadSurfaces)
+import ImageCroppingConstants from "ImageCroppingConstants" /* 6407 */;
 import size from "module_2" /* 2 */;
 
 const UploadTypes = ImageCroppingConstants.UploadTypes;
@@ -15,15 +15,17 @@ const result = size.fileFinishedImporting("lib/uploader_inline/safetyScannedUplo
 export { SafetyScannedUploadSurface };
 export const getSafetyScannedUploadSurfaceForProfileCustomization = function getSafetyScannedUploadSurfaceForProfileCustomization(arg0, arg1) {
   if (UploadTypes.AVATAR === arg0) {
+    let USER_DEFAULT_PROFILE_AVATAR;
     if (null != arg1) {
-      let USER_DEFAULT_PROFILE_AVATAR = obj.USER_GUILD_PROFILE_AVATAR;
+      USER_DEFAULT_PROFILE_AVATAR = obj.USER_GUILD_PROFILE_AVATAR;
     } else {
       USER_DEFAULT_PROFILE_AVATAR = obj.USER_DEFAULT_PROFILE_AVATAR;
     }
     return USER_DEFAULT_PROFILE_AVATAR;
-  } else if (tmp.BANNER === arg0) {
+  } else if (UploadTypes.BANNER === arg0) {
+    let USER_DEFAULT_PROFILE_BANNER;
     if (null != arg1) {
-      let USER_DEFAULT_PROFILE_BANNER = obj.USER_GUILD_PROFILE_BANNER;
+      USER_DEFAULT_PROFILE_BANNER = obj.USER_GUILD_PROFILE_BANNER;
     } else {
       USER_DEFAULT_PROFILE_BANNER = obj.USER_DEFAULT_PROFILE_BANNER;
     }

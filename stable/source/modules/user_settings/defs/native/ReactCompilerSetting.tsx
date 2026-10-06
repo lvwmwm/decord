@@ -1,38 +1,34 @@
-// Module ID: 16212
-// Function ID: 16213
+// Module ID: 15489
+// Function ID: 15490
 // Name: ReactCompilerSetting
-// Dependencies: [11754, 15842, 2]
+// Dependencies: [10874, 15103, 558, 2]
 
-// Module 16212 (ReactCompilerSetting)
-import WrenchIcon from "WrenchIcon" /* 15842 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15489 (ReactCompilerSetting)
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import WrenchIcon from "WrenchIcon" /* 15103 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const obj = {
+let obj = {
   useTitle() {
     return "React Compiler";
   },
   parent: null,
   IconComponent: WrenchIcon.WrenchIcon,
   useTrailing() {
-    return "Enabled";
+    let str = "Disabled";
+    const obj = ReactCompilerGating;
+    if (obj.isReactCompilerEnabled()) {
+      str = "Enabled";
+    }
+    return str;
   },
   usePredicate() {
-    return false;
+    const obj = ReactCompilerGating;
+    return obj.isReactCompilerBuild();
   }
 };
+const createStaticResult = SettingBuilders.createStatic(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ReactCompilerSetting.tsx");
 
-export default SettingBuilders.createStatic({
-  useTitle() {
-    return "React Compiler";
-  },
-  parent: null,
-  IconComponent: WrenchIcon.WrenchIcon,
-  useTrailing() {
-    return "Enabled";
-  },
-  usePredicate() {
-    return false;
-  }
-});
+export default createStaticResult;

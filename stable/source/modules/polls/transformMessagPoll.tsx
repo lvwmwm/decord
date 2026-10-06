@@ -1,18 +1,17 @@
-// Module ID: 5132
-// Function ID: 5133
+// Module ID: 5196
+// Function ID: 5197
 // Name: transformMessagPoll
-// Dependencies: [4380, 2]
+// Dependencies: [4424, 2]
 // Exports: default
 
-// Module 5132 (transformMessagPoll)
-import _modDef4380 from "module_4380" /* 4380 */;
+// Module 5196 (transformMessagPoll)
+import _modDef4424 from "module_4424" /* 4424 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/polls/transformMessagPoll.tsx");
 
 export default function transformMessagePoll(expiry) {
-  const obj = {};
+  const obj = { expiry: _modDef4424(expiry.expiry) };
   const merged = Object.assign(expiry);
-  obj.expiry = _modDef4380(expiry.expiry);
   return obj;
 };

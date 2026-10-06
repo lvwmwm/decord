@@ -1,39 +1,69 @@
-// Module ID: 15531
-// Function ID: 15532
+// Module ID: 14791
+// Function ID: 14792
 // Name: SidechainCompressionSetting
-// Dependencies: [1992, 8265, 4813, 504, 11754, 1115, 9943, 2]
+// Dependencies: [1999, 7421, 4862, 558, 576, 504, 10874, 1127, 9081, 2]
 
-// Module 15531 (SidechainCompressionSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9943 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+// Module 14791 (SidechainCompressionSetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import Constants from "Constants" /* 4862 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Features = fn(4813).Features;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
+let tmp;
+const get_initialized = tmp(504);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const Features = Constants.Features;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let sidechainCompression;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    const fn = function n() {
+      return sidechainCompression.getSidechainCompression();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let sidechainCompression;
+  const items = [MediaEngineStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
+});
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["/jwMtn"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["/jwMtn"]);
   },
-  parent: fn(8265).MobileUserSettings.VOICE,
+  parent: MobileUserSettings.VOICE,
   usePredicate() {
     return MediaEngineStore.supports(Features.SIDECHAIN_COMPRESSION);
   },
-  useValue: function useSidechainCompressionSettingValue() {
-    const items = [MediaEngineStore];
-    return initialize.useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
-  },
+  useValue: tmp2,
   onValueChange(arg0) {
-    return AudioActionCreatorsDefault.setSidechainCompression(arg0);
+    const obj = AudioActionCreatorsDefault;
+    return obj.setSidechainCompression(arg0);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.zlA23F);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.zlA23F);
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SidechainCompressionSetting.tsx");
 
 export default toggle;

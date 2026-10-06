@@ -1,0 +1,10 @@
+// Module ID: 15604
+// Function ID: 15605
+// Name: AssetRegistry
+// Dependencies: [1133]
+
+// Module 15604 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1133 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 182, height: 128, scales: [2, 3], hash: "d91cbec9959285a2fc129da0bb393a90", name: "img_wump_trash_dark", type: "png" });

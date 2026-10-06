@@ -1,9 +1,18 @@
 // Module ID: 13592
 // Function ID: 13593
-// Dependencies: [1121]
+// Dependencies: [13590]
 
 // Module 13592
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13590 from "module_13590" /* 13590 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/channel/header/images", width: 24, height: 24, scales: [2, 3, 4], hash: "259a63e8af8c5f3885215d3c5505af89", name: "icon-search", type: "png" });
+export default function(arg0, arg1, arg2) {
+  try {
+    const self = this;
+    const self2 = this;
+    const tmp5 = new _mod13590(arg1, arg2);
+    return tmp5.test(arg0);
+  } catch (err) {
+    return false;
+  }
+};

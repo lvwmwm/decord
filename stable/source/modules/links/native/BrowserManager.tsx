@@ -1,243 +1,322 @@
-// Module ID: 4752
-// Function ID: 4753
+// Module ID: 4798
+// Function ID: 4799
 // Name: BrowserManager
-// Dependencies: [5, 17, 1364, 4753, 4754, 560, 1094, 4483, 1370, 2]
-// Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
+// Dependencies: [5, 17, 1370, 4799, 4800, 570, 558, 576, 1106, 4528, 1376, 2]
+// Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen
 
-// Module 4752 (BrowserManager)
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import PlatformUtils2 from "PlatformUtils" /* 1364 */;
-import LinkingDefault from "Linking" /* 4483 */;
-import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4753 */;
-import NativeBrowserManagerModuleIOSDefault from "NativeBrowserManagerModuleIOS" /* 4754 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 4798 (BrowserManager)
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 576 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import LinkingDefault from "Linking" /* 4528 */;
+import react_native2 from "react-native" /* 4799 */;
+import react_nativeDefault2 from "react-native" /* 4800 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const react_nativeDefault = react_native2;
+let c0, c1, closure_7;
 
-require = fn;
-let closure_8 = async function _browserManagerClearWebsiteData(arg0, value) {
-  if (c0 === 2) {
-    c0 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj4 = { value, done: true };
-      return obj4;
+let importDefaultResult;
+let tmp2;
+const GlobalUtils = tmp2(1376);
+let obj = function _browserManagerClearWebsiteData() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj3;
+    if (c0 === 2) {
+      c0 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj4 = { value, done: true };
+        return obj4;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c0 = 2;
-      if (0 === c1) {
-        if (arg0 === 1) {
+      try {
+        c0 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            const obj2 = PlatformUtils;
+            const tmp5 = dependencyMap;
+            if (obj2.isIOS()) {
+              c1 = 1;
+              c0 = 1;
+              const obj6 = { value: obj3.clearWebsiteData(), done: false };
+              obj3 = require("react-native");
+              return obj6;
+            }
+          }
+        } else if (arg0 === 1) {
           c0 = 3;
           throw value;
         } else if (arg0 === 2) {
           c0 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          if (obj2.isIOS()) {
-            c1 = 1;
-            c0 = 1;
-            const obj6 = { value: require("NativeBrowserManagerModuleIOS").clearWebsiteData(), done: false };
-            return obj6;
-          }
-          obj2 = PlatformUtils2;
-          tmp6 = dependencyMap;
+          obj = { value, done: true };
+          return obj;
         }
-      } else if (arg0 === 1) {
         c0 = 3;
-        throw value;
-      } else if (arg0 === 2) {
+        return { value: "IconComponent", done: null };
+      } catch (tmp7) {
         c0 = 3;
-        const obj = { value, done: true };
-        return obj;
+        throw tmp7;
       }
-      c0 = 3;
-      return { value: "HermesInternal", done: null };
-    } catch (tmp8) {
-      c0 = tmp;
-      throw tmp8;
     }
-  }
+  });
+  return obj(...arguments);
 };
-const AppState = fn(17).AppState;
-const PlatformUtils = fn(1364);
+const AppState = react_native.AppState;
 if (PlatformUtils.isAndroid()) {
-  let importDefaultResult = NativeBrowserManagerModuleDefault;
+  importDefaultResult = react_nativeDefault;
 } else {
-  importDefaultResult = NativeBrowserManagerModuleIOSDefault;
+  importDefaultResult = react_nativeDefault2;
 }
 const hasOwnProperty = importDefaultResult;
+let closure_6 = module_570.create(() => {
+  obj = { isInAppBrowserOpen: false };
+  const merged = Object.assign(hasOwnProperty.getConstants());
+  return obj;
+});
+let c7 = null;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(isChromeInstalled) {
+      return isChromeInstalled.isChromeInstalled;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_6(first);
+}) : (() => closure_6((isChromeInstalled) => isChromeInstalled.isChromeInstalled));
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(supportsInAppBrowser) {
+      return supportsInAppBrowser.supportsInAppBrowser;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_6(first);
+}) : (() => closure_6((supportsInAppBrowser) => supportsInAppBrowser.supportsInAppBrowser));
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(selectedBrowser) {
+      return selectedBrowser.selectedBrowser;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_6(first);
+}) : (() => closure_6((selectedBrowser) => selectedBrowser.selectedBrowser));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(isInAppBrowserOpen) {
+      return isInAppBrowserOpen.isInAppBrowserOpen;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_6(first);
+}) : (() => closure_6((isInAppBrowserOpen) => isInAppBrowserOpen.isInAppBrowserOpen));
 function getBrowserManagerIsChromeInstalled() {
   return closure_6.getState().isChromeInstalled;
 }
 function getBrowserManagerSelectedBrowser() {
   return closure_6.getState().selectedBrowser;
 }
-const module_560 = fn(560);
-let closure_6 = module_560.create(() => {
-  const obj = {};
-  const merged = Object.assign(importDefaultResult.getConstants());
-  obj.isInAppBrowserOpen = false;
-  return obj;
-});
-let c7 = null;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/links/native/BrowserManager.tsx");
 
-export const useBrowserManagerIsChromeInstalled = function useBrowserManagerIsChromeInstalled() {
-  return closure_6((isChromeInstalled) => isChromeInstalled.isChromeInstalled);
-};
+export const useBrowserManagerIsChromeInstalled = tmp3;
 export { getBrowserManagerIsChromeInstalled };
-export const useBrowserManagerSupportsInAppBrowser = function useBrowserManagerSupportsInAppBrowser() {
-  return closure_6((supportsInAppBrowser) => supportsInAppBrowser.supportsInAppBrowser);
-};
-export const useBrowserManagerSelectedBrowser = function useBrowserManagerSelectedBrowser() {
-  return closure_6((selectedBrowser) => selectedBrowser.selectedBrowser);
-};
+export const useBrowserManagerSupportsInAppBrowser = tmp4;
+export const useBrowserManagerSelectedBrowser = tmp5;
 export { getBrowserManagerSelectedBrowser };
-export const useIsInAppBrowserOpen = function useIsInAppBrowserOpen() {
-  return closure_6((isInAppBrowserOpen) => isInAppBrowserOpen.isInAppBrowserOpen);
-};
+export const useIsInAppBrowserOpen = tmp6;
 export const getIsInAppBrowserOpen = function getIsInAppBrowserOpen() {
   return closure_6.getState().isInAppBrowserOpen;
 };
 export const subscribeToIsInAppBrowserOpen = function subscribeToIsInAppBrowserOpen(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   return closure_6.subscribe((isInAppBrowserOpen, isInAppBrowserOpen2) => {
     if (isInAppBrowserOpen.isInAppBrowserOpen !== isInAppBrowserOpen2.isInAppBrowserOpen) {
       closure_0(isInAppBrowserOpen.isInAppBrowserOpen, isInAppBrowserOpen2.isInAppBrowserOpen);
     }
   });
 };
-export const browserManagerOpenUrl = function browserManagerOpenUrl(href, CHROME) {
+export const browserManagerOpenUrl = function browserManagerOpenUrl(tryHandleUniversalLink, CHROME) {
   let selectedBrowser = CHROME;
   if (CHROME === undefined) {
     selectedBrowser = state.getState().selectedBrowser;
   }
+  let tmp2 = require;
   if (selectedBrowser !== ConstantsIOS.WebBrowserType.SAFARI) {
-    if (selectedBrowser !== tmp2(1094).WebBrowserType.CHROME) {
-      if (selectedBrowser === tmp2(1094).WebBrowserType.IN_APP) {
-        let tmp2Result = tmp2(1364);
+    if (selectedBrowser !== ConstantsIOS.WebBrowserType.CHROME) {
+      if (selectedBrowser === ConstantsIOS.WebBrowserType.IN_APP) {
+        let tmp2Result = PlatformUtils;
       }
-      if (tmp2(1094).WebBrowserType.IN_APP === selectedBrowser) {
-        return importDefaultResult.openInAppURL(href).then((result) => {
+      if (ConstantsIOS.WebBrowserType.IN_APP === selectedBrowser) {
+        const openInAppURLResult = hasOwnProperty.openInAppURL(tryHandleUniversalLink);
+        return openInAppURLResult.then((result) => {
           if (false !== result) {
             state.setState({ isInAppBrowserOpen: true });
-            if (_null != null) {
+            const obj4 = closure_7;
+            if (closure_7 != null) {
               obj4.remove();
             }
-            _null = null;
+            closure_7 = null;
+            obj = PlatformUtils;
+            const tmp2 = require;
             if (obj.isIOS()) {
-              _null = require("NativeBrowserManagerModuleIOS").onSafariViewControllerDidFinish(() => {
+              const obj3 = react_nativeDefault2;
+              closure_7 = obj3.onSafariViewControllerDidFinish(() => {
                 state.setState({ isInAppBrowserOpen: false });
-                if (_null != null) {
-                  _null.remove();
+                obj = c7;
+                if (c7 != null) {
+                  obj.remove();
                 }
-                _null = null;
+                c7 = null;
               });
-              const obj3 = require("NativeBrowserManagerModuleIOS");
             } else {
+              const tmp2Result = tmp2(dependencyMap[2]);
               if (tmp2Result.isAndroid()) {
-                _null = AppState.addEventListener("change", (event) => {
-                  let isInAppBrowserOpen = "active" === event;
-                  if (isInAppBrowserOpen) {
-                    isInAppBrowserOpen = state.getState().isInAppBrowserOpen;
-                  }
+                closure_7 = AppState.addEventListener("change", (event) => {
+                  const isInAppBrowserOpen = "active" === event && state.getState().isInAppBrowserOpen;
                   if (isInAppBrowserOpen) {
                     state.setState({ isInAppBrowserOpen: false });
+                    obj = c7;
                     if (c7 != null) {
                       obj.remove();
                     }
                     c7 = null;
-                    obj = c7;
                   }
                 });
               }
-              tmp2Result = tmp2(tmp3[2]);
             }
-            obj = PlatformUtils2;
-            obj4 = _null;
-            tmp2 = require;
           }
         });
-      } else if (tmp2(1094).WebBrowserType.CHROME === selectedBrowser) {
+      } else if (ConstantsIOS.WebBrowserType.CHROME === selectedBrowser) {
+        let openInChromeURLResult;
+        const tmp2Result3 = PlatformUtils;
         if (tmp2Result3.isAndroid()) {
-          let openInChromeURLResult = tmp6(4753).openInChromeURL(href);
-          const tmp6Result = tmp6(4753);
+          const tmp6Result = react_nativeDefault;
+          openInChromeURLResult = tmp6Result.openInChromeURL(tryHandleUniversalLink);
         } else {
-          openInChromeURLResult = tmp6(4754).openInChromeURL(href, true);
-          const tmp6Result2 = tmp6(4754);
+          const tmp6Result2 = react_nativeDefault2;
+          openInChromeURLResult = tmp6Result2.openInChromeURL(tryHandleUniversalLink, true);
         }
         return openInChromeURLResult;
       } else {
-        return tmp2(1370).assertNever(selectedBrowser);
+        const tmp2Result4 = GlobalUtils;
+        return tmp2Result4.assertNever(selectedBrowser);
       }
     }
   }
-  LinkingDefault.performURLNavigation(href);
+  const obj6 = LinkingDefault;
+  obj6.performURLNavigation(tryHandleUniversalLink);
   return Promise.resolve();
 };
 export const browserManagerSelectBrowser = function browserManagerSelectBrowser(selectedBrowser) {
+  obj = PlatformUtils;
   if (obj.isAndroid()) {
     const obj3 = {};
-    obj3[tmp(1094).WebBrowserType.SAFARI] = tmp(4753).BrowserType.SAFARI;
-    obj3[tmp(1094).WebBrowserType.IN_APP] = tmp(4753).BrowserType.IN_APP;
-    obj3[tmp(1094).WebBrowserType.CHROME] = tmp(4753).BrowserType.CHROME;
+    obj3[ConstantsIOS.WebBrowserType.SAFARI] = react_native2.BrowserType.SAFARI;
+    obj3[ConstantsIOS.WebBrowserType.IN_APP] = react_native2.BrowserType.IN_APP;
+    obj3[ConstantsIOS.WebBrowserType.CHROME] = react_native2.BrowserType.CHROME;
     if (null != obj3[selectedBrowser]) {
-      const browser = NativeBrowserManagerModuleDefault.selectBrowser(tmp5);
+      const obj4 = react_nativeDefault;
+      const browser = obj4.selectBrowser(tmp5);
     }
   } else {
-    const browser1 = NativeBrowserManagerModuleIOSDefault.selectBrowser(selectedBrowser);
+    const obj2 = react_nativeDefault2;
+    const browser1 = obj2.selectBrowser(selectedBrowser);
   }
-  closure_6.setState({ selectedBrowser });
+  const obj5 = { selectedBrowser };
+  closure_6.setState(obj5);
 };
 export const browserManagerCloseBrowser = function browserManagerCloseBrowser() {
   closure_6.setState({ isInAppBrowserOpen: false });
+  obj = PlatformUtils;
   if (obj.isIOS()) {
-    NativeBrowserManagerModuleIOSDefault.closeBrowser();
+    const obj2 = react_nativeDefault2;
+    obj2.closeBrowser();
   }
 };
 export const browserManagerClearWebsiteData = function browserManagerClearWebsiteData() {
-  const self = this;
-  const apply = closure_8.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const openPlayStoreInlineInstall = function openPlayStoreInlineInstall(url, appId, arg2, impressionToken) {
-  closure_0 = arg2;
-  closure_1 = Date.now();
+  let openPlayStoreInlineResult;
+  let closure_0 = arg2;
+  let closure_1 = Date.now();
+  const tmp = dependencyMap;
+  obj = PlatformUtils;
   if (obj.isAndroid()) {
-    let openPlayStoreInlineResult = NativeBrowserManagerModuleDefault.openPlayStoreInline(url, appId, function callback() {
+    const obj3 = react_nativeDefault;
+    openPlayStoreInlineResult = obj3.openPlayStoreInline(url, appId, function callback() {
       if (closure_0 != null) {
         tmp2(tmp);
       }
     });
-  } else if (null == appId) {
-    openPlayStoreInlineResult = Promise.resolve(false);
   } else {
-    if (null != arg2) {
-      const result = NativeBrowserManagerModuleIOSDefault.setOpenAppStoreDismissCallback(() => {
-        closure_0(Date.now() - closure_1);
-      });
+    const tmp2 = null;
+    if (null == appId) {
+      openPlayStoreInlineResult = Promise.resolve(false);
+    } else {
+      if (null != arg2) {
+        const obj2 = react_nativeDefault2;
+        const result = obj2.setOpenAppStoreDismissCallback(() => {
+          closure_0(Date.now() - closure_1);
+        });
+      }
+      impressionToken = undefined;
+      const openAppStoreInline = react_nativeDefault2.openAppStoreInline;
+      react_nativeDefault2;
+      if (impressionToken != null) {
+        impressionToken = impressionToken.impressionToken;
+      }
+      if (impressionToken == null) {
+        impressionToken = null;
+      }
+      openPlayStoreInlineResult = openAppStoreInline(url, appId, impressionToken);
     }
-    impressionToken = undefined;
-    if (impressionToken != null) {
-      impressionToken = impressionToken.impressionToken;
-    }
-    if (impressionToken == null) {
-      impressionToken = null;
-    }
-    openPlayStoreInlineResult = NativeBrowserManagerModuleIOSDefault.openAppStoreInline(url, appId, impressionToken);
   }
   return openPlayStoreInlineResult;
 };

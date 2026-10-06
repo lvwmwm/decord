@@ -1,50 +1,53 @@
-// Module ID: 4654
-// Function ID: 4655
+// Module ID: 4703
+// Function ID: 4704
 // Name: ChatInputUtils
-// Dependencies: [4655, 1875, 4656, 1610, 1482, 4657, 2]
+// Dependencies: [4704, 1882, 4705, 1617, 1489, 4706, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4654 (ChatInputUtils)
-import KeyboardTypes from "KeyboardTypes" /* 1610 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4655 */;
-import useKeyboardType from "useKeyboardType" /* 4656 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4657 */;
+// Module 4703 (ChatInputUtils)
+import KeyboardUIStore from "KeyboardUIStore" /* 1489 */;
+import KeyboardTypes from "KeyboardTypes" /* 1617 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4704 */;
+import useKeyboardType from "useKeyboardType" /* 4705 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4706 */;
 import size from "module_2" /* 2 */;
 
+const f88135 = (item) => {
+  let tmp = typeof item === "number";
+  if (typeof item === "number") {
+    const obj = ScreenIndexFrozen;
+    tmp = !obj.isScreenIndexFrozen(item);
+  }
+  return tmp;
+};
 function getBestActiveInput() {
   let str;
   if (0 !== map1.size) {
     str = "voice-panel";
-    if (!obj.has("voice-panel")) {
+    if (!map1.has("voice-panel")) {
       str = "message-request";
-      if (!obj.has("message-request")) {
+      if (!map1.has("message-request")) {
         str = "new-message";
-        if (!obj.has("new-message")) {
+        if (!map1.has("new-message")) {
           str = "vibegrations-preview";
-          if (!obj.has("vibegrations-preview")) {
+          if (!map1.has("vibegrations-preview")) {
             const _Array = Array;
-            const found = Array.from(obj.keys()).filter((item) => {
-              let tmp = typeof item === "number";
-              if (typeof item === "number") {
-                tmp = !ScreenIndexFrozen.isScreenIndexFrozen(item);
-              }
-              return tmp;
-            });
+            const arr = Array.from(map1.keys());
+            const found = arr.filter(f88135);
             if (0 !== found.length) {
               const _Math = Math;
               const items = [];
-              HermesBuiltin.arraySpread(found, 0);
+              HermesBuiltin.arraySpread(items, found, 0);
               const _Math2 = Math;
-              str = HermesBuiltin.apply(items, Math);
+              str = HermesBuiltin.apply(max, items, Math);
             }
-            const arr = Array.from(obj.keys());
           }
         }
       }
     }
   }
-  value = undefined;
+  let value;
   if (null != str) {
     value = obj.get(str);
   }
@@ -59,28 +62,30 @@ const map1 = new Map();
 let result = size.fileFinishedImporting("utils/native/ChatInputUtils.tsx");
 
 export function createInputRefTracker(id, screenIndex) {
-  closure_0 = screenIndex;
+  let closure_0 = screenIndex;
   let obj = { current: id };
-  return {
+  let obj2 = {
     handleRef(current, id) {
       obj.current = id;
       if (null == current) {
         if (null != obj) {
-          value = map.get(id);
+          const value = map.get(id);
           if (null != value) {
-            value.delete(tmp16);
+            value.delete(screenIndex);
             if (0 === value.size) {
               map.delete(id);
             }
-            map1.delete(tmp16);
+            map1.delete(screenIndex);
           }
           obj = null;
         }
       } else if (null == obj) {
         obj = { current };
-        value2 = map.get(id);
+        let value2 = map.get(id);
         if (value2 == null) {
           const _Map = Map;
+          const self = this;
+          const self2 = this;
           value2 = new Map();
         }
         const result = value2.set(tmp2, obj);
@@ -97,44 +102,48 @@ export function createInputRefTracker(id, screenIndex) {
     register() {
       if (null != obj) {
         const current2 = obj.current;
-        value = map.get(current2);
+        const value = map.get(current2);
+        const tmp12 = obj;
         if (null != value) {
-          value.delete(tmp15);
+          value.delete(screenIndex);
           if (0 === value.size) {
-            obj3.delete(current2);
+            map.delete(current2);
           }
-          map1.delete(tmp15);
+          map1.delete(screenIndex);
         }
-        const current = obj.current;
-        value2 = obj3.get(current);
+        const current = tmp12.current;
+        let value2 = obj3.get(current);
         if (value2 == null) {
           const _Map = Map;
+          const self = this;
+          const self2 = this;
           value2 = new Map();
         }
-        const result = value2.set(tmp15, tmp5);
+        const result = value2.set(tmp13, tmp5);
         const result1 = obj3.set(current, value2);
-        const result2 = map1.set(tmp15, tmp5);
+        const result2 = map1.set(tmp13, tmp5);
         const _process = process;
+        const obj2 = map1;
         if ("development" === process.env.DEVELOPMENT) {
-          const hasItem = obj2.has(tmp15);
+          const hasItem = obj2.has(tmp13);
         }
-        obj2 = map1;
       }
     },
     unregister() {
       if (null != obj) {
         const current = obj.current;
-        value = map.get(current);
+        const value = map.get(current);
         if (null != value) {
-          value.delete(tmp2);
+          value.delete(screenIndex);
           if (0 === value.size) {
-            obj.delete(current);
+            map.delete(current);
           }
-          map1.delete(tmp2);
+          map1.delete(screenIndex);
         }
       }
     }
   };
+  return obj2;
 }
 export const getHighestActiveScreenIndex = function getHighestActiveScreenIndex() {
   let obj = arg0;
@@ -152,30 +161,24 @@ export const getHighestActiveScreenIndex = function getHighestActiveScreenIndex(
       return "vibegrations-preview";
     } else {
       const _Array = Array;
-      const found = Array.from(obj.keys()).filter((item) => {
-        let tmp = typeof item === "number";
-        if (typeof item === "number") {
-          tmp = !ScreenIndexFrozen.isScreenIndexFrozen(item);
-        }
-        return tmp;
-      });
+      const arr = Array.from(obj.keys());
+      const found = arr.filter(f88135);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];
-        HermesBuiltin.arraySpread(found, 0);
+        HermesBuiltin.arraySpread(items, found, 0);
         const _Math2 = Math;
-        return HermesBuiltin.apply(items, Math);
+        return HermesBuiltin.apply(max, items, Math);
       }
-      const arr = Array.from(obj.keys());
     }
   }
 };
 export const getChatInputRef = function getChatInputRef(id, screenIndex) {
   if (null != id) {
-    value = map.get(id);
+    const value = map.get(id);
     let current;
     if (value != null) {
-      value2 = value.get(screenIndex);
+      const value2 = value.get(screenIndex);
       if (value2 != null) {
         current = value2.current;
       }
@@ -185,7 +188,7 @@ export const getChatInputRef = function getChatInputRef(id, screenIndex) {
 };
 export const getBestActiveInputForChannelId = function getBestActiveInputForChannelId(id) {
   if (null != id) {
-    value = map.get(id);
+    const value = map.get(id);
     if (null != value) {
       let obj2 = value;
       if (value === undefined) {
@@ -202,27 +205,21 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
               str = "vibegrations-preview";
               if (!obj2.has("vibegrations-preview")) {
                 const _Array = Array;
-                const found = Array.from(obj2.keys()).filter((item) => {
-                  let tmp = typeof item === "number";
-                  if (typeof item === "number") {
-                    tmp = !ScreenIndexFrozen.isScreenIndexFrozen(item);
-                  }
-                  return tmp;
-                });
+                const arr = Array.from(obj2.keys());
+                const found = arr.filter(f88135);
                 if (0 !== found.length) {
                   const _Math = Math;
                   const items = [];
-                  HermesBuiltin.arraySpread(found, 0);
+                  HermesBuiltin.arraySpread(items, found, 0);
                   const _Math2 = Math;
-                  str = HermesBuiltin.apply(items, Math);
+                  str = HermesBuiltin.apply(max, items, Math);
                 }
-                const arr = Array.from(obj2.keys());
               }
             }
           }
         }
       }
-      value2 = undefined;
+      let value2;
       if (null != str) {
         value2 = value.get(str);
       }
@@ -236,17 +233,20 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
 };
 export { getBestActiveInput };
 export const dismissKeyboard = function dismissKeyboard() {
-  const result = KeyboardManagerUtils.dismissGlobalKeyboard();
+  const obj = KeyboardManagerUtils;
+  const result = obj.dismissGlobalKeyboard();
   const obj2 = getBestActiveInput();
   if (null != obj2) {
     obj2.closeCustomKeyboard();
   }
-  const keyboardType = useKeyboardType.getKeyboardType();
-  if (keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM) {
-    const obj3 = { type: tmp(1610).KeyboardTypes.SYSTEM };
-    tmp(1482).setKeyboardType(obj3);
-    const tmpResult3 = tmp(1482);
-  }
   const tmpResult = useKeyboardType;
-  const result1 = PortalKeyboardUIStore.closePortalKeyboardRequest();
+  const keyboardType = tmpResult.getKeyboardType();
+  if (keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM) {
+    const obj3 = { type: KeyboardTypes.KeyboardTypes.SYSTEM };
+    const setKeyboardType = KeyboardUIStore.setKeyboardType;
+    KeyboardUIStore;
+    setKeyboardType(obj3);
+  }
+  const tmpResult4 = PortalKeyboardUIStore;
+  const result1 = tmpResult4.closePortalKeyboardRequest();
 };

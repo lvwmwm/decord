@@ -1,132 +1,235 @@
-// Module ID: 8361
-// Function ID: 8362
+// Module ID: 7518
+// Function ID: 7519
 // Name: VoiceSessionUtils
-// Dependencies: [19, 7927, 2041, 1372, 8362, 504, 8270, 5020, 1115, 12, 2]
-// Exports: getSortedVoiceSessionParticipants, getVoiceSessionMessageContent, useSortedVoiceSessionParticipants
+// Dependencies: [19, 7076, 2051, 1378, 7519, 558, 576, 504, 7426, 5084, 1127, 12, 2]
+// Exports: getSortedVoiceSessionParticipants, getVoiceSessionMessageContent
 
-// Module 8361 (VoiceSessionUtils)
-import useMessageAuthor from "useMessageAuthor" /* 5020 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8270 */;
-import maybeSortByProbability from "maybeSortByProbability" /* 8362 */;
-import noop from "module_19" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7927 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7518 (VoiceSessionUtils)
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import useMessageAuthor from "useMessageAuthor" /* 5084 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7426 */;
+import maybeSortByProbability from "maybeSortByProbability" /* 7519 */;
+import react from "react" /* 19 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7076 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/messages/VoiceSessionUtils.tsx");
-
-export const getSortedVoiceSessionParticipants = function getSortedVoiceSessionParticipants(message) {
-  _require = message;
-  const call = message.call;
-  let reduced;
-  if (call != null) {
-    const participants = call.participants;
-    reduced = participants.reduce((acc, item) => {
-      const user = UserStore.getUser(item);
-      let tmp2 = acc;
-      if (null != user) {
-        tmp2 = acc;
-        if (user.id !== author.author.id) {
-          const items = [];
-          items[HermesBuiltin.arraySpread(acc, 0)] = user;
-          tmp2 = items;
-        }
-      }
-      return tmp2;
-    }, []);
+const f136715 = (acc, item) => {
+  user = user.getUser(item);
+  let tmp3 = acc;
+  if (null != user) {
+    tmp3 = acc;
+    if (user.id !== author.author.id) {
+      const items = [];
+      items[HermesBuiltin.arraySpread(items, acc, 0)] = user;
+      tmp3 = items;
+    }
   }
-  if (reduced == null) {
-    reduced = [];
-  }
-  const userAffinitiesMap = UserAffinitiesV2Store.getUserAffinitiesMap();
-  return require("maybeSortByProbability").maybeSortByProbability(reduced, userAffinitiesMap, "VoiceSessionUtils - participants");
+  return tmp3;
 };
-export const useSortedVoiceSessionParticipants = function useSortedVoiceSessionParticipants(author) {
-  closure_129_0 = author;
-  const items = [UserStore];
-  const items1 = [author.author.id, author.call];
-  stateFromStoresArray = stateFromStoresArray(504).useStateFromStoresArray(items, () => {
-    const call = stateFromStoresArray.call;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((author) => {
+  let first;
+  _require = author;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === author.author.id) {
+    let tmp6;
+    let tmp7;
+    if (cResult[2] === author.call) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStoresArray(first, tmp6, tmp7);
+  }
+  const fn = function s() {
+    let found1;
+    let user;
+    const call = author.call;
     let participants;
+    const tmp = author;
     if (call != null) {
       participants = call.participants;
     }
     if (null != participants) {
-      const participants1 = stateFromStoresArray.call.participants;
+      const participants1 = tmp.call.participants;
       const mapped = participants1.map((item) => user.getUser(item));
       const found = mapped.filter((item) => null != item);
-      let found1 = found.filter((id) => id.id !== author.author.id);
+      found1 = found.filter((id) => id.id !== author.author.id);
+    } else {
+      found1 = [];
+    }
+    return found1;
+  };
+  const items1 = [author.author.id, author.call];
+  cResult[1] = author.author.id;
+  cResult[2] = author.call;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp7 = items1;
+  tmp6 = fn;
+}) : ((author) => {
+  _require = author;
+  const items = [UserStore];
+  const items1 = [author.author.id, author.call];
+  const obj = require("get initialized");
+  return obj.useStateFromStoresArray(items, () => {
+    let found1;
+    let user;
+    const call = author.call;
+    let participants;
+    const tmp = author;
+    if (call != null) {
+      participants = call.participants;
+    }
+    if (null != participants) {
+      const participants1 = tmp.call.participants;
+      const mapped = participants1.map((item) => user.getUser(item));
+      const found = mapped.filter((item) => null != item);
+      found1 = found.filter((id) => id.id !== author.author.id);
     } else {
       found1 = [];
     }
     return found1;
   }, items1);
-  const obj = stateFromStoresArray(504);
-  const items2 = [UserAffinitiesV2Store];
-  const stateFromStores = stateFromStoresArray(504).useStateFromStores(items2, () => userAffinitiesMap.getUserAffinitiesMap(), []);
-  const items3 = [stateFromStoresArray, stateFromStores];
-  return noop.useMemo(() => maybeSortByProbability.maybeSortByProbability(stateFromStoresArray, stateFromStores, "VoiceSessionUtils - participants"), items3);
-};
-export const getVoiceSessionMessageContent = function getVoiceSessionMessageContent(channel_id) {
-  _require = ChannelStore.getChannel(channel_id.channel_id);
-  let tmp2 = getHumanizedCallDurationDefault(channel_id);
-  const messageAuthor = require("useMessageAuthor").getMessageAuthor(channel_id);
-  closure_129_0 = channel_id;
-  const call = channel_id.call;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let userAffinitiesMap;
+  const obj = react2;
+  const cResult = obj.c(6);
+  const tmp4 = closure_7(arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserAffinitiesV2Store];
+    const fn = function o() {
+      return userAffinitiesMap.getUserAffinitiesMap();
+    };
+    const items1 = [];
+    cResult[0] = items;
+    cResult[1] = fn;
+    cResult[2] = items1;
+    tmp5 = items;
+    tmp6 = fn;
+    tmp7 = items1;
+  } else {
+    [tmp5, tmp6, tmp7] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6, tmp7);
+  if (cResult[3] === tmp4) {
+    let tmp10;
+    if (cResult[4] === stateFromStores) {
+      tmp10 = cResult[5];
+    }
+    return tmp10;
+  }
+  const tmpResult2 = maybeSortByProbability;
+  const result = tmpResult2.maybeSortByProbability(tmp4, stateFromStores, "VoiceSessionUtils - participants");
+  cResult[3] = tmp4;
+  cResult[4] = stateFromStores;
+  cResult[5] = result;
+  tmp10 = result;
+}) : ((arg0) => {
+  let closure_0;
+  let userAffinitiesMap;
+  const tmp = closure_7(arg0);
+  _require = tmp;
+  let obj = require("get initialized");
+  const items = [UserAffinitiesV2Store];
+  const stateFromStores = obj.useStateFromStores(items, () => userAffinitiesMap.getUserAffinitiesMap(), []);
+  const items1 = [tmp, stateFromStores];
+  return react.useMemo(() => {
+    const obj = maybeSortByProbability;
+    return obj.maybeSortByProbability(closure_0, stateFromStores, "VoiceSessionUtils - participants");
+  }, items1);
+});
+function getSortedVoiceSessionParticipants(message) {
+  _require = message;
+  const call = message.call;
   let reduced;
   if (call != null) {
     const participants = call.participants;
-    reduced = participants.reduce((acc, item) => {
-      const user = UserStore.getUser(item);
-      let tmp2 = acc;
-      if (null != user) {
-        tmp2 = acc;
-        if (user.id !== author.author.id) {
-          const items = [];
-          items[HermesBuiltin.arraySpread(acc, 0)] = user;
-          tmp2 = items;
-        }
-      }
-      return tmp2;
-    }, []);
+    reduced = participants.reduce(f136715, []);
   }
   if (reduced == null) {
     reduced = [];
   }
   const userAffinitiesMap = UserAffinitiesV2Store.getUserAffinitiesMap();
+  const obj = require("maybeSortByProbability");
+  return obj.maybeSortByProbability(reduced, userAffinitiesMap, "VoiceSessionUtils - participants");
+}
+let result = size.fileFinishedImporting("modules/messages/VoiceSessionUtils.tsx");
+
+export { getSortedVoiceSessionParticipants };
+export const useSortedVoiceSessionParticipants = tmp2;
+export const getVoiceSessionMessageContent = function getVoiceSessionMessageContent(channel_id) {
+  let closure_0;
+  let formatToPlainStringResult;
+  let nick;
+  let nick1;
+  _require = ChannelStore.getChannel(channel_id.channel_id);
+  const tmp2 = getHumanizedCallDurationDefault(channel_id);
+  let tmp3 = _require;
   let obj = require("useMessageAuthor");
-  const result = require("maybeSortByProbability").maybeSortByProbability(reduced, userAffinitiesMap, "VoiceSessionUtils - participants");
+  const messageAuthor = obj.getMessageAuthor(channel_id);
+  _require = channel_id;
+  const call = channel_id.call;
+  let reduced;
+  if (call != null) {
+    const participants = call.participants;
+    reduced = participants.reduce(f136715, []);
+  }
+  if (reduced == null) {
+    reduced = [];
+  }
+  const userAffinitiesMap = UserAffinitiesV2Store.getUserAffinitiesMap();
+  const tmp3Result = tmp3(7519);
+  const result = tmp3Result.maybeSortByProbability(reduced, userAffinitiesMap, "VoiceSessionUtils - participants");
   const mapped = result.map((user) => {
-    const obj = { user, messageAuthor: useMessageAuthor.getUserAuthor(user, closure_0) };
+    let obj2;
+    const obj = { user, messageAuthor: obj2.getUserAuthor(user, closure_0) };
+    obj2 = useMessageAuthor;
     return obj;
   });
   if (null == tmp2) {
-    const intl = tmp3(1115).intl;
-    const obj2 = { username: messageAuthor.nick, usernameOnClick: tmp3(12).identity };
-    let formatToPlainStringResult = intl.formatToPlainString(tmp3(1115).t.HzBfIN, obj2);
+    const intl = tmp3(1127).intl;
+    const formatToPlainString = intl.formatToPlainString;
+    let obj2 = { username: messageAuthor.nick, usernameOnClick: tmp3(12).identity };
+    const HzBfIN = tmp3(1127).t.HzBfIN;
+    formatToPlainStringResult = formatToPlainString(HzBfIN, obj2);
   } else {
-    const intl2 = tmp3(1115).intl;
-    const obj3 = { userCount: mapped.length + 1, username: messageAuthor.nick, usernameOnClick: tmp3(12).identity, username2: null, username2OnClick: null, username3: null, username3OnClick: null, otherCount: null, duration: null };
+    const intl2 = tmp3(1127).intl;
+    const formatToPlainString2 = intl2.formatToPlainString;
+    const obj3 = { userCount: mapped.length + 1, username: messageAuthor.nick, usernameOnClick: tmp3(12).identity, username2: nick, username2OnClick: tmp3(12).identity, username3: nick1, username3OnClick: tmp3(12).identity, otherCount: mapped.length - 1, duration: tmp2 };
+    const atbXuX = tmp3(1127).t.atbXuX;
     const first = mapped[0];
-    let nick;
+    nick = undefined;
     if (first != null) {
       nick = first.messageAuthor.nick;
     }
-    obj3.username2 = nick;
-    obj3.username2OnClick = tmp3(12).identity;
-    let nick1;
+    nick1 = undefined;
     if (mapped[1] != null) {
       nick1 = tmp7.messageAuthor.nick;
     }
-    obj3.username3 = nick1;
-    obj3.username3OnClick = tmp3(12).identity;
-    obj3.otherCount = mapped.length - 1;
-    obj3.duration = tmp2;
-    formatToPlainStringResult = intl2.formatToPlainString(tmp3(1115).t.atbXuX, obj3);
+    formatToPlainStringResult = formatToPlainString2(atbXuX, obj3);
   }
   return formatToPlainStringResult;
 };

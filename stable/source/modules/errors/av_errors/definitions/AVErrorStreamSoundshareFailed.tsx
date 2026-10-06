@@ -1,29 +1,29 @@
-// Module ID: 18305
-// Function ID: 18306
+// Module ID: 17672
+// Function ID: 17673
 // Name: AVErrorStreamSoundshareFailed
-// Dependencies: [4810, 4836, 1074, 9718, 18297, 4840, 2]
+// Dependencies: [4859, 4885, 1086, 8869, 17664, 4889, 2]
 
-// Module 18305 (AVErrorStreamSoundshareFailed)
-import StreamKeyUtils from "StreamKeyUtils" /* 4840 */;
-import AVError from "AVError" /* 9718 */;
-import AVErrorContext from "AVErrorContext" /* 18297 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
-import HookErrorStore from "HookErrorStore" /* 4836 */;
+// Module 17672 (AVErrorStreamSoundshareFailed)
+import Constants from "Constants" /* 1086 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4889 */;
+import AVError from "AVError" /* 8869 */;
+import AVErrorContext from "AVErrorContext" /* 17664 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import HookErrorStore from "HookErrorStore" /* 4885 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MediaEngineHookTypes = fn(1074).MediaEngineHookTypes;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSoundshareFailed.tsx");
-
-export const AVErrorStreamSoundshareFailedDefinition = {
+const MediaEngineHookTypes = Constants.MediaEngineHookTypes;
+let obj = {
   getActiveErrors() {
     const currentUserActiveStream = ApplicationStreamingStore.getCurrentUserActiveStream();
     let tmp2;
     if (null != currentUserActiveStream) {
       if (null != HookErrorStore.getHookError(MediaEngineHookTypes.SOUND)) {
         const obj = { type: AVError.AVError.STREAM_SOUNDSHARE_FAILED };
-        const obj2 = AVErrorContext;
-        const merged = Object.assign(obj2.getStreamErrorContext(StreamKeyUtils.encodeStreamKey(currentUserActiveStream)));
+        const getStreamErrorContext = AVErrorContext.getStreamErrorContext;
+        AVErrorContext;
+        const obj2 = StreamKeyUtils;
+        const merged = Object.assign(getStreamErrorContext(obj2.encodeStreamKey(currentUserActiveStream)));
         const items = [obj];
         tmp2 = items;
       }
@@ -34,3 +34,6 @@ export const AVErrorStreamSoundshareFailedDefinition = {
     return "" + streamKey.streamKey + ":" + streamKey.mediaSessionId;
   }
 };
+const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSoundshareFailed.tsx");
+
+export const AVErrorStreamSoundshareFailedDefinition = obj;

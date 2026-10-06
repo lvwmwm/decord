@@ -1,249 +1,401 @@
 // Module ID: 1545
 // Function ID: 1546
-// Dependencies: [32]
-// Exports: getPatternParts
+// Dependencies: [1546, 1547, 1552]
+// Exports: getPathFromState
 
 // Module 1545
-import _slicedToArray from "module_32" /* 32 */;
+import _mod1546 from "module_1546" /* 1546 */;
+import extractAll from "extract" /* 1547 */;
+import _slicedToArray from "_slicedToArray" /* 1552 */;
 
+let importAll, map, map1, segment, set;
 
-export const getPatternParts = function getPatternParts(path) {
-  const items = [];
-  let obj = { segment: "" };
-  let num = 0;
-  let num2 = 0;
-  let flag = false;
-  let flag2 = false;
-  let flag3 = false;
-  let flag4 = false;
-  let flag5 = false;
-  if (0 <= path.length) {
-    while (true) {
-      let tmp = path[num];
-      let flag6 = flag;
-      if (null != tmp) {
-        obj.segment = obj.segment + tmp;
-      }
-      if (":" === tmp) {
-        let sum = num2;
-        let flag7 = true;
-        let flag8 = flag4;
-        let obj2 = obj;
-        if (":" !== obj.segment) {
-          sum = num2;
-          flag7 = flag3;
-          flag8 = flag4;
-          obj2 = obj;
-          if (!flag4) {
-            let tmp30 = globalThis;
-            let _Error4 = Error;
-            let _HermesInternal4 = HermesInternal;
-            let str8 = "Encountered ':' in the middle of a segment in path: ";
-            let tmp31 = new.target;
-            let tmp32 = new.target;
-            let error = new Error("Encountered ':' in the middle of a segment in path: " + path);
-            throw error;
-          }
-        }
-        let tmp35 = flag6;
-        let tmp36 = flag2;
-        if (flag8) {
-          obj2.regex = obj2.regex || "";
-          obj2.regex = obj2.regex + tmp;
-          let tmp37 = flag6;
-          let flag10 = false;
-          if (!flag2) {
-            let tmp38 = flag6;
-            let flag11 = true;
-            if ("\\" !== tmp) {
-              let flag12 = true;
-              if ("[" !== tmp) {
-                if ("]" === tmp) {
-                  flag6 = false;
-                }
-                flag12 = flag6;
-              }
-              tmp38 = flag12;
-              flag11 = flag2;
-            }
-            tmp37 = tmp38;
-            flag10 = flag11;
-          }
-          tmp35 = tmp37;
-          tmp36 = flag10;
-        }
-        let tmp39 = flag7;
-        if (flag7) {
-          tmp39 = !flag8;
-        }
-        let tmp24 = sum;
-        let tmp25 = tmp35;
-        let tmp26 = tmp36;
-        let flag9 = flag7;
-        let tmp27 = flag8;
-        let tmp28 = obj2;
-        if (tmp39) {
-          obj2.param = obj2.param || "";
-          obj2.param = obj2.param + tmp;
-          tmp24 = sum;
-          tmp25 = tmp35;
-          tmp26 = tmp36;
-          flag9 = flag7;
-          tmp27 = flag8;
-          tmp28 = obj2;
-        }
-      } else {
-        if ("(" === tmp) {
-          if (!flag2) {
-            if (!flag6) {
-              if (!flag3) {
-                break;
-              } else {
-                sum = num2;
-                flag7 = flag3;
-                flag8 = true;
-                obj2 = obj;
-                if (flag4) {
-                  sum = num2 + 1;
-                  flag7 = flag3;
-                  flag8 = flag4;
-                  obj2 = obj;
-                }
-              }
-            }
-          }
-        }
-        if (")" === tmp) {
-          if (!flag2) {
-            if (!flag6) {
-              if (flag3) {
-                if (flag4) {
-                  if (num2) {
-                    sum = num2 - 1;
-                    flag7 = flag3;
-                    flag8 = flag4;
-                    obj2 = obj;
-                  } else {
-                    obj.regex = obj.regex + tmp;
-                    sum = num2;
-                    flag7 = false;
-                    flag8 = false;
-                    obj2 = obj;
-                  }
-                }
-              }
-              let tmp14 = globalThis;
-              let _Error2 = Error;
-              let _HermesInternal2 = HermesInternal;
-              let str2 = "Encountered ')' without preceding '(' in path: ";
-              let tmp15 = new.target;
-              let tmp16 = new.target;
-              let error1 = new Error("Encountered ')' without preceding '(' in path: " + path);
-              throw error1;
-            }
-          }
-        }
-        if ("?" === tmp) {
-          if (!flag4) {
-            if (obj.param) {
-              obj.optional = true;
-              sum = num2;
-              flag7 = false;
-              flag8 = flag4;
-              obj2 = obj;
-            } else {
-              let tmp19 = globalThis;
-              let _Error3 = Error;
-              let _HermesInternal3 = HermesInternal;
-              let str3 = "Encountered '?' without preceding ':' in path: ";
-              let tmp20 = new.target;
-              let tmp21 = new.target;
-              let error2 = new Error("Encountered '?' without preceding ':' in path: " + path);
-              throw error2;
-            }
-          }
-        }
-        if (null == tmp) {
-          let str4 = obj.segment;
-          obj.segment = str4.replace(/\/$/, "");
-          tmp24 = num2;
-          tmp25 = flag6;
-          tmp26 = flag2;
-          flag9 = false;
-          tmp27 = flag4;
-          tmp28 = obj;
-          if ("" !== obj.segment) {
-            if (obj.param) {
-              let str5 = obj.param;
-              obj.param = str5.replace(/^:/, "");
-            }
-            if (obj.regex) {
-              let str6 = obj.regex;
-              let str7 = str6.replace(/^\(/, "");
-              obj.regex = str7.replace(/\)$/, "");
-            }
-            let arr = items.push(obj);
-            flag5 = flag4;
-            if (null != tmp) {
-              obj2 = { segment: "" };
-              sum = num2;
-              flag7 = false;
-              flag8 = flag4;
-            }
-          }
-        } else {
-          sum = num2;
-          flag7 = flag3;
-          flag8 = flag4;
-          obj2 = obj;
-          if ("/" === tmp) {
-            sum = num2;
-            flag7 = flag3;
-            flag8 = flag4;
-            obj2 = obj;
-          }
-        }
-      }
-      num = num + 1;
-      num2 = tmp24;
-      flag = tmp25;
-      flag2 = tmp26;
-      flag3 = flag9;
-      flag4 = tmp27;
-      obj = tmp28;
-      flag5 = tmp27;
-    }
-    const _Error = Error;
-    const _HermesInternal = HermesInternal;
-    const error3 = new Error("Encountered '(' without preceding ':' in path: " + path);
-    throw error3;
-  }
-  if (flag5) {
-    const _Error6 = Error;
-    const _HermesInternal6 = HermesInternal;
-    const error4 = new Error("Could not find closing ')' in path: " + path);
-    throw error4;
+function serializeParamValue(arg0) {
+
+}
+function getActiveRoute(index, arg1, fn) {
+  let tmp;
+  if (typeof index.index === "number") {
+    tmp = index.routes[index.index];
   } else {
-    const mapped = items.map((param) => param.param);
-    const _Boolean = Boolean;
-    const found = mapped.filter(Boolean);
-    const entries = found.entries();
-    const tmp43 = entries[Symbol.iterator]();
-    while (tmp43 !== undefined) {
-      let tmp48 = _slicedToArray(tmp45, 2);
-      [tmp49, tmp50] = tmp48;
-      let tmp51 = tmp50;
-      if (found.indexOf(tmp50) !== tmp49) {
-        let _Error5 = Error;
-        let _HermesInternal5 = HermesInternal;
-        let str9 = "' found in path: ";
-        let str10 = "Duplicate param name '";
-        let tmp53 = new.target;
-        let tmp54 = new.target;
-        let error5 = new Error("Duplicate param name '" + tmp51 + "' found in path: " + path);
-        throw error5;
+    tmp = index.routes[index.routes.length - 1];
+  }
+  let tmp2;
+  if (arg1 != null) {
+    tmp2 = arg1[tmp.name];
+  }
+  const tmp3 = fn(tmp, tmp2);
+  if (tmp3) {
+    let screens;
+    const tmp4 = getActiveRoute;
+    if (tmp2 != null) {
+      screens = tmp2.screens;
+    }
+    tmp = tmp4(tmp3, screens, fn);
+  }
+  return tmp;
+}
+const weakMap = new WeakMap();
+function createNormalizedConfigs(arg0, arg1) {
+
+}
+
+export const getPathFromState = function getPathFromState(state, screens) {
+  let tmp27;
+  const f83166 = function(item) {
+    let obj4;
+    let tmp2;
+    let tmp3;
+    [tmp2, tmp3] = item;
+    if (typeof tmp3 === "string") {
+      let tmp24;
+      const obj3 = _slicedToArray;
+      const patternParts = obj3.getPatternParts(tmp3);
+      const obj2 = { parts: null, ownParts: null };
+      if (closure_1_0) {
+        const items = [];
+        HermesBuiltin.arraySpread(items, patternParts, HermesBuiltin.arraySpread(items, closure_1_0, 0));
+        obj2.parts = items;
+        obj2.ownParts = patternParts;
+        tmp24 = obj2;
+      } else {
+        obj2.parts = patternParts;
+        obj2.ownParts = patternParts;
+        tmp24 = obj2;
+      }
+      obj4 = tmp24;
+    } else {
+      let patternParts1;
+      let tmp7;
+      if (tmp3.exact) {
+        if (undefined === tmp3.path) {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error("A 'path' needs to be specified when specifying 'exact: true'. If you don't want this screen in the URL, specify it as empty string, e.g. `path: ''`.");
+          throw error;
+        }
+      }
+      if (tmp3.path) {
+        const obj = _slicedToArray;
+        patternParts1 = obj.getPatternParts(tmp3.path);
+      } else {
+        patternParts1 = [];
+      }
+      if (true !== tmp3.exact) {
+        const items1 = [];
+        const tmp8 = closure_1_0 || [];
+        HermesBuiltin.arraySpread(items1, patternParts1, HermesBuiltin.arraySpread(items1, tmp8, 0));
+        tmp7 = items1;
+      } else if (patternParts1.length) {
+        tmp7 = patternParts1;
+      }
+      let fromEntriesResult;
+      if (tmp3.screens) {
+        if (typeof createNormalizedConfigs === "function") {
+          patternParts1 = tmp7;
+          const _Object = Object;
+          const _Object2 = Object;
+          const entries = Object.entries(tmp16);
+          fromEntriesResult = fromEntries(entries.map(f83166));
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      obj4 = { parts: tmp7, ownParts: patternParts1, stringify: tmp3.stringify, screens: fromEntriesResult };
+    }
+    const items2 = [tmp2, obj4];
+    return items2;
+  };
+  if (null == state) {
+    let _Error = Error;
+    let _String = String;
+    const _HermesInternal4 = HermesInternal;
+    throw Error("Got '" + String(state) + "' for the navigation state. You must pass a valid state object.");
+  } else {
+    let obj;
+    let screens1;
+    if (screens != null) {
+      screens1 = screens.screens;
+    }
+    if (screens1) {
+      let obj2 = weakMap;
+      let screens2;
+      const get = weakMap.get;
+      if (screens != null) {
+        screens2 = screens.screens;
+      }
+      obj = get(screens2);
+      if (!obj) {
+        let tmp3 = createNormalizedConfigs;
+        if (typeof createNormalizedConfigs === "function") {
+          let _Object = Object;
+          let _Object2 = Object;
+          let entries = Object.entries(tmp4);
+          let fromEntriesResult = fromEntries(entries.map(f83166));
+          let result = obj2.set(screens.screens, fromEntriesResult);
+          obj = fromEntriesResult;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+    } else {
+      obj = {};
+    }
+    let tmp8 = globalThis;
+    const _Map = Map;
+    let self = this;
+    let self2 = this;
+    map = new Map();
+    let tmp10 = map;
+    function getRouteState(tmp11Result, screens) {
+      if (tmp11Result.state) {
+        return tmp11Result.state;
+      } else {
+        let params = tmp11Result.params && "screen" in tmp11Result.params && typeof tmp11Result.params.screen === "string";
+        if (params) {
+          let tmp3;
+          if (screens != null) {
+            screens = screens.screens;
+            if (screens != null) {
+              tmp3 = screens[tmp11Result.params.screen];
+            }
+          }
+          params = tmp3;
+        }
+        let params2 = tmp11Result.params && "state" in tmp11Result.params;
+        if (params2) {
+          let screens1;
+          if (screens != null) {
+            screens1 = screens.screens;
+          }
+          params2 = screens1;
+        }
+        let value;
+        if (tmp11Result.params) {
+          let screens2;
+          if (screens != null) {
+            screens2 = screens.screens;
+          }
+          if (screens2) {
+            if (params) {
+              if (!map.has(tmp11Result)) {
+                set = map.set;
+                const obj2 = _mod1546;
+                const result = set(tmp11Result, obj2.getStateFromRouteParams(tmp11Result.params));
+              }
+              value = obj.get(tmp11Result);
+            }
+          }
+        }
+        return value;
       }
     }
-    return items;
+    let tmp11 = getActiveRoute;
+    if (typeof getActiveRoute === "function") {
+      let tmp12;
+      if (typeof state.index === "number") {
+        tmp12 = state.routes[state.index];
+      } else {
+        tmp12 = state.routes[state.routes.length - 1];
+      }
+      let tmp13;
+      if (obj != null) {
+        tmp13 = obj[tmp12.name];
+      }
+      const routeState = getRouteState(tmp12, tmp13);
+      let tmp15 = tmp12;
+      if (routeState) {
+        if (tmp13 != null) {
+          screens = tmp13.screens;
+        }
+        if (typeof tmp11 === "function") {
+          let tmp11Result;
+          if (typeof routeState.index === "number") {
+            tmp11Result = routeState.routes[routeState.index];
+          } else {
+            tmp11Result = routeState.routes[routeState.routes.length - 1];
+          }
+          let tmp17;
+          if (screens != null) {
+            tmp17 = screens[tmp11Result.name];
+          }
+          const routeState1 = getRouteState(tmp11Result, tmp17);
+          if (routeState1) {
+            let screens3;
+            if (tmp17 != null) {
+              screens3 = tmp17.screens;
+            }
+            tmp11Result = tmp11(routeState1, screens3, getRouteState);
+          }
+          tmp15 = tmp11Result;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      let closure_2 = tmp15;
+      let str = "/";
+      let str4 = "/";
+      let str5 = "/";
+      let tmp21 = state;
+      while (tmp21) {
+        let sum;
+        let text;
+        let tmp23 = str4;
+        let num3 = 0;
+        if (typeof tmp21.index === "number") {
+          num3 = tmp21.index;
+        }
+        let index = num3;
+        let tmp24 = index;
+        serializeParamValue = tmp21.routes[index];
+        let _Map2 = Map;
+        let self3 = this;
+        let self4 = this;
+        map1 = new Map();
+        let tmp26 = map1;
+        screens = obj;
+        let closure_6 = [];
+        let c7 = true;
+        let tmp28 = serializeParamValue;
+        if (serializeParamValue.name in screens) {
+          let tmp30 = c7;
+          if (tmp30) {
+            let tmp27Result = tmp27();
+            let tmp32 = serializeParamValue;
+            let tmp33 = screens;
+            while (serializeParamValue.name in screens) {
+              let tmp34 = c7;
+              if (!tmp34) {
+                break;
+              }
+            }
+          }
+        }
+        let routeState2 = getRouteState(serializeParamValue, screens[serializeParamValue.name]);
+        if (undefined !== screens[serializeParamValue.name]) {
+          let arr2 = closure_130_0;
+          let joined;
+          if (closure_130_0 != null) {
+            let mapped = arr2.map((segment) => {
+              segment = segment.segment;
+              if ("*" === segment) {
+                return user.name;
+              } else if (tmp) {
+                let str;
+                const value = map1.get(segment);
+                if (undefined !== value) {
+                  const _Array = Array;
+                  const _String = String;
+                  const arr = Array.from(String(value));
+                  const mapped = arr.map((item) => {
+                    let encodeURIComponentResult = item;
+                    const obj = /[^A-Za-z0-9\-._~!$&'()*+,;=:@]/g;
+                    if (obj.test(item)) {
+                      const _encodeURIComponent = encodeURIComponent;
+                      encodeURIComponentResult = encodeURIComponent(item);
+                    }
+                    return encodeURIComponentResult;
+                  });
+                  str = mapped.join("");
+                } else {
+                  str = "";
+                }
+                return str;
+              } else {
+                let _encodeURIComponent = encodeURIComponent;
+                return encodeURIComponent(segment);
+              }
+            });
+            joined = mapped.join("/");
+          }
+          sum = str4 + joined;
+        } else {
+          let _encodeURIComponent = encodeURIComponent;
+          sum = str4 + encodeURIComponent(serializeParamValue.name);
+        }
+        let tmp44 = !importAll && tmp15.params;
+        if (tmp44) {
+          let _Object3 = Object;
+          let _Object4 = Object;
+          let fromEntries2 = Object.fromEntries;
+          let entries1 = Object.entries(tmp15.params);
+          importAll = fromEntries2(entries1.map((item) => {
+            let arr;
+            let tmp;
+            [tmp, arr] = item;
+            const items = [tmp, ];
+            if (typeof serializeParamValue === "function") {
+              let tmp2 = null;
+              if (null !== arr) {
+                let mapped;
+                const _Array = Array;
+                if (Array.isArray(arr)) {
+                  const _String2 = String;
+                  mapped = arr.map(String);
+                } else {
+                  const _String = String;
+                  mapped = String(arr);
+                }
+                tmp2 = mapped;
+              }
+              items[1] = tmp2;
+              return items;
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          }));
+        }
+        if (routeState2) {
+          text = `${tmp41}/`;
+        } else {
+          let tmp45 = importAll;
+          text = sum;
+          if (importAll) {
+            for (const key10124 in tmp45) {
+              if ("undefined" !== importAll[key10124]) {
+                continue;
+              } else {
+                delete importAll[tmp57];
+                continue;
+              }
+              continue;
+            }
+            let obj4 = extractAll;
+            let json = obj4.stringify(importAll, { sort: false });
+            text = sum;
+            if (json) {
+              let _HermesInternal = HermesInternal;
+              text = sum + "?" + json;
+            }
+          }
+        }
+        str4 = text;
+        str5 = text;
+        tmp21 = routeState2;
+      }
+      let path;
+      if (screens != null) {
+        path = screens.path;
+      }
+      let str6 = str5;
+      if (path) {
+        const _HermesInternal2 = HermesInternal;
+        str6 = "" + screens.path + "/" + str5;
+      }
+      const replaced = str6.replace(/\/+/g, "/");
+      let replaced1 = replaced;
+      if (replaced.length > 1) {
+        replaced1 = replaced.replace(/\/$/, "");
+      }
+      let combined = replaced1;
+      if (!replaced1.startsWith("/")) {
+        const _HermesInternal3 = HermesInternal;
+        combined = "/" + replaced1;
+      }
+      return combined;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
   }
 };

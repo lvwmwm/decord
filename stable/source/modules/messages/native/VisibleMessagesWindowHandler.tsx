@@ -1,10 +1,11 @@
-// Module ID: 11633
-// Function ID: 11634
+// Module ID: 9534
+// Function ID: 9535
 // Name: VisibleMessagesWindowHandler
-// Dependencies: [8223, 2]
+// Dependencies: [7379, 2]
+// Exports: default
 
-// Module 11633 (VisibleMessagesWindowHandler)
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8223 */;
+// Module 9534 (VisibleMessagesWindowHandler)
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
 import size from "module_2" /* 2 */;
 
 const RowType = RowGeneratorConstants.RowType;
@@ -25,6 +26,9 @@ export default function VisibleMessagesWindowHandler() {
     obj.data = null;
   };
   data.handleScrollPosition = function handleScrollPosition(arg0) {
+    let firstVisibleMessageRowIndex;
+    let lastVisibleMessageRowIndex;
+    let rows;
     ({ rows, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex } = arg0);
     if (null != data.callback) {
       let tmp2 = null;
@@ -138,10 +142,9 @@ export default function VisibleMessagesWindowHandler() {
           }
         }
       }
-      data = { topVisibleMessage: tmp2, middleVisibleMessage: tmp18, bottomVisibleMessage: tmp9 };
-      data.data = data;
+      data = { topVisibleMessage: tmp2, middleVisibleMessage: tmp18, bottomVisibleMessage: tmp9, data };
       data.callback(data.data);
     }
   };
   return data;
-}.prototype;
+};

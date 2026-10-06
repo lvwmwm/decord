@@ -1,103 +1,119 @@
-// Module ID: 10996
-// Function ID: 10997
+// Module ID: 10202
+// Function ID: 10203
 // Name: GiftCodeRecord
-// Dependencies: [1387, 7729, 10962, 4447, 1374, 4380, 1385, 2]
+// Dependencies: [1393, 6879, 10168, 4492, 1380, 4424, 1391, 2]
 
-// Module 10996 (GiftCodeRecord)
-import _modDef4380 from "module_4380" /* 4380 */;
-import Record from "Record" /* 1387 */;
-import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7729 */;
-import PromotionRecord from "PromotionRecord" /* 10962 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4447 */;
+// Module 10202 (GiftCodeRecord)
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import Record from "Record" /* 1393 */;
+import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 6879 */;
+import PromotionRecord from "PromotionRecord" /* 10168 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4492 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_6 = fn(1374).PremiumSubscriptionSKUToPremiumType;
+const require = globalThis.__r;
+
+let closure_6 = PremiumConstants.PremiumSubscriptionSKUToPremiumType;
 const frozen = Object.freeze({ PAYMENT_SOURCE_REQUIRED: 1, EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED: 2, NOT_SELF_REDEEMABLE: 4 });
-let GiftCodeRecord;
-class GiftCodeRecord extends tmp2 {
+class GiftCodeRecord extends Record {
   constructor(arg0) {
-    tmp = new GiftCodeRecord(new.target, new.target);
-    ({ userId: tmp.userId, code: tmp.code, skuId: tmp.skuId, applicationId: tmp.applicationId, uses: tmp.uses, maxUses: tmp.maxUses, expiresAt: tmp.expiresAt, redeemed: tmp.redeemed, storeListingId: tmp.storeListingId, subscriptionPlanId: tmp.subscriptionPlanId, subscriptionPlan: tmp.subscriptionPlan, revoked: tmp.revoked, entitlementBranches: tmp.entitlementBranches, flags: tmp.flags, subscriptionTrial: tmp.subscriptionTrial, promotion: tmp.promotion, giftStyle: tmp.giftStyle } = global);
+    const tmp = new GiftCodeRecord(new.target, this);
+    ({ userId: tmp.userId, code: tmp.code, skuId: tmp.skuId, applicationId: tmp.applicationId, uses: tmp.uses, maxUses: tmp.maxUses, expiresAt: tmp.expiresAt, redeemed: tmp.redeemed, storeListingId: tmp.storeListingId, subscriptionPlanId: tmp.subscriptionPlanId, subscriptionPlan: tmp.subscriptionPlan, revoked: tmp.revoked, entitlementBranches: tmp.entitlementBranches, flags: tmp.flags, subscriptionTrial: tmp.subscriptionTrial, promotion: tmp.promotion, giftStyle: tmp.giftStyle } = arg0);
     return tmp;
+  }
+  static createFromServer(user) {
+    let application_id;
+    let code;
+    let max_uses;
+    let sku_id;
+    let subscription_plan_id;
+    let tmp12;
+    let tmp13;
+    let uses;
+    let id = null;
+    if (null != user.user) {
+      id = user.user.id;
+    }
+    ({ code, sku_id, application_id, uses, max_uses } = user);
+    let id1 = null;
+    if (null != user.store_listing) {
+      id1 = user.store_listing.id;
+    }
+    let tmp5 = null;
+    if (null != user.expires_at) {
+      tmp5 = _modDef4424(user.expires_at);
+    }
+    const redeemed = user.redeemed;
+    if (null != user.subscription_plan) {
+      subscription_plan_id = user.subscription_plan.id;
+    } else {
+      subscription_plan_id = user.subscription_plan_id;
+    }
+    let fromServer = null;
+    if (null != user.subscription_plan) {
+      fromServer = SubscriptionPlanRecord.createFromServer(user.subscription_plan);
+    }
+    let entitlement_branches = null;
+    if (null != user.entitlement_branches) {
+      entitlement_branches = user.entitlement_branches;
+    }
+    let num = 0;
+    if (null != user.flags) {
+      num = user.flags;
+    }
+    let fromServer1 = null;
+    const gift_style = user.gift_style;
+    if (null != user.subscription_trial) {
+      fromServer1 = SubscriptionTrialRecord.createFromServer(user.subscription_trial);
+      tmp12 = SubscriptionTrialRecord;
+    }
+    const promotion = user.promotion;
+    let fromServer2 = null;
+    if (null != promotion) {
+      fromServer2 = PromotionRecord.createFromServer(user.promotion);
+      tmp13 = PromotionRecord;
+    }
+    if (typeof GiftCodeRecord === "function") {
+      const self = this;
+      const self2 = this;
+      const tmp16 = new GiftCodeRecord(tmp, tmp12, tmp13, promotion, GiftCodeRecord, this, id, code, sku_id, application_id, uses, max_uses, tmp5, redeemed, id1, subscription_plan_id, fromServer, entitlement_branches);
+      tmp16.userId = id;
+      tmp16.code = code;
+      tmp16.skuId = sku_id;
+      tmp16.applicationId = application_id;
+      tmp16.uses = uses;
+      tmp16.maxUses = max_uses;
+      tmp16.expiresAt = tmp5;
+      tmp16.redeemed = redeemed;
+      tmp16.storeListingId = id1;
+      tmp16.subscriptionPlanId = subscription_plan_id;
+      tmp16.subscriptionPlan = fromServer;
+      tmp16.revoked = false;
+      tmp16.entitlementBranches = entitlement_branches;
+      tmp16.flags = num;
+      tmp16.subscriptionTrial = fromServer1;
+      tmp16.promotion = fromServer2;
+      tmp16.giftStyle = gift_style;
+      return tmp16;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+  isExpired() {
+    const expiresAt = this.expiresAt;
+    let isAfterResult = null != expiresAt;
+    if (isAfterResult) {
+      const obj = _modDef4424();
+      isAfterResult = obj.isAfter(expiresAt);
+    }
+    return isAfterResult;
+  }
+  toString() {
+    return this.code;
   }
 }
 const prototype = GiftCodeRecord.prototype;
-GiftCodeRecord["createFromServer"] = function createFromServer(user) {
-  let id = null;
-  if (null != user.user) {
-    id = user.user.id;
-  }
-  ({ code, sku_id, application_id, uses, max_uses } = user);
-  let id1 = null;
-  if (null != user.store_listing) {
-    id1 = user.store_listing.id;
-  }
-  let tmp5 = null;
-  if (null != user.expires_at) {
-    tmp5 = _modDef4380(user.expires_at);
-  }
-  const redeemed = user.redeemed;
-  if (null != user.subscription_plan) {
-    let subscription_plan_id = user.subscription_plan.id;
-  } else {
-    subscription_plan_id = user.subscription_plan_id;
-  }
-  let fromServer = null;
-  if (null != user.subscription_plan) {
-    fromServer = SubscriptionPlanRecord.createFromServer(user.subscription_plan);
-  }
-  let entitlement_branches = null;
-  if (null != user.entitlement_branches) {
-    entitlement_branches = user.entitlement_branches;
-  }
-  let num = 0;
-  if (null != user.flags) {
-    num = user.flags;
-  }
-  let fromServer1 = null;
-  if (null != user.subscription_trial) {
-    fromServer1 = SubscriptionTrialRecord.createFromServer(user.subscription_trial);
-    const tmp12 = SubscriptionTrialRecord;
-  }
-  const promotion = user.promotion;
-  let fromServer2 = null;
-  if (null != promotion) {
-    fromServer2 = PromotionRecord.createFromServer(user.promotion);
-    const tmp13 = PromotionRecord;
-  }
-  if (typeof GiftCodeRecord === "function") {
-    const tmp18 = new GiftCodeRecord(tmp, tmp12, tmp13, promotion, tmp2, new.target, id, code, sku_id, application_id, uses, max_uses, tmp5, redeemed, id1, subscription_plan_id, fromServer, entitlement_branches);
-    tmp18.userId = id;
-    tmp18.code = code;
-    tmp18.skuId = sku_id;
-    tmp18.applicationId = application_id;
-    tmp18.uses = uses;
-    tmp18.maxUses = max_uses;
-    tmp18.expiresAt = tmp5;
-    tmp18.redeemed = redeemed;
-    tmp18.storeListingId = id1;
-    tmp18.subscriptionPlanId = subscription_plan_id;
-    tmp18.subscriptionPlan = fromServer;
-    tmp18.revoked = false;
-    tmp18.entitlementBranches = entitlement_branches;
-    tmp18.flags = num;
-    tmp18.subscriptionTrial = fromServer1;
-    tmp18.promotion = fromServer2;
-    tmp18.giftStyle = user.gift_style;
-    return tmp18;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-prototype["isExpired"] = function isExpired() {
-  const expiresAt = this.expiresAt;
-  let isAfterResult = null != expiresAt;
-  if (isAfterResult) {
-    isAfterResult = _modDef4380().isAfter(expiresAt);
-    const obj = _modDef4380();
-  }
-  return isAfterResult;
-};
 Object.defineProperty(prototype, "hasMultipleCopies", {
   get: function hasMultipleCopies() {
     return this.maxUses > 1;
@@ -138,13 +154,15 @@ Object.defineProperty(prototype, "premiumSubscriptionType", {
 });
 Object.defineProperty(prototype, "isSelfRedeemable", {
   get: function isSelfRedeemable() {
-    return !require("FlagUtils").hasFlag(this.flags, frozen.NOT_SELF_REDEEMABLE);
+    const obj = require("FlagUtils");
+    return !obj.hasFlag(this.flags, frozen.NOT_SELF_REDEEMABLE);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isExistingPremiumSubscriptionDisallowed", {
   get: function isExistingPremiumSubscriptionDisallowed() {
-    return require("FlagUtils").hasFlag(this.flags, frozen.EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED);
+    const obj = require("FlagUtils");
+    return obj.hasFlag(this.flags, frozen.EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED);
   },
   set: undefined
 });
@@ -154,10 +172,6 @@ Object.defineProperty(prototype, "analyticsData", {
   },
   set: undefined
 });
-prototype["toString"] = function toString() {
-  return this.code;
-};
-const size = fn(2);
 const result = size.fileFinishedImporting("records/GiftCodeRecord.tsx");
 
 export default GiftCodeRecord;

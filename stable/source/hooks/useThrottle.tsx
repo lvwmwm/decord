@@ -1,31 +1,37 @@
-// Module ID: 10368
-// Function ID: 10369
+// Module ID: 9528
+// Function ID: 9529
 // Name: useThrottle
 // Dependencies: [19, 12, 2]
 // Exports: useThrottledState
 
-// Module 10368 (useThrottle)
+// Module 9528 (useThrottle)
 import _mod12 from "module_12" /* 12 */;
-import noop from "module_19" /* 19 */;
+import react_mod from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
 function throttleStateFn(arg0) {
   return arg0;
 }
-function useThrottledFunction(callback4, arg1, items4, sharedValue) {
+let react = react_mod;
+function useThrottledFunction(callback4, arg1, cResult, sharedValue) {
+  let closure_1;
   _require = callback4;
   dependencyMap = arg1;
-  let items = items4;
-  if (items4 === undefined) {
+  let items = cResult;
+  if (cResult === undefined) {
     items = [];
   }
-  noop = sharedValue;
-  const ref = noop.useRef(require("module_12").throttle(callback4, arg1, sharedValue));
+  react = sharedValue;
+  const useRef = react.useRef;
+  const obj = require("module_12");
+  const ref = useRef(obj.throttle(callback4, arg1, sharedValue));
   const items1 = [callback4, arg1, sharedValue, ...items];
-  const effect = noop.useEffect(() => {
-    ref.current = _mod12.throttle(closure_0, current2, ref1);
+  const effect = react.useEffect(() => {
+    const obj = _mod12;
+    ref.current = obj.throttle(closure_0, closure_1, closure_2);
     return () => {
       const current = ref.current;
       if (current != null) {
@@ -35,12 +41,14 @@ function useThrottledFunction(callback4, arg1, items4, sharedValue) {
   }, items1);
   return ref.current;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("hooks/useThrottle.tsx");
 
-export const useThrottledState = (set, arg1) => {
-  let current = set;
-  _require = set;
+export const useThrottledState = (cResult, arg1) => {
+  let closure_0;
+  let closure_1;
+  let closure_2;
+  let current = cResult;
+  _require = cResult;
   let items = arg2;
   if (arg2 === undefined) {
     items = [];
@@ -48,17 +56,21 @@ export const useThrottledState = (set, arg1) => {
   let current2;
   let ref1;
   if (typeof useThrottledFunction === "function") {
-    _require = tmp;
-    current2 = arg1;
+    _require = tmp2;
+    dependencyMap = arg1;
     if (items === undefined) {
       items = [];
     }
-    ref1 = arg3;
-    const ref = ref1.useRef(require("module_12").throttle(tmp, arg1, arg3));
-    const items1 = [tmp, arg1, arg3];
-    HermesBuiltin.arraySpread(items, 3);
-    const effect = ref1.useEffect(() => {
-      ref.current = _mod12.throttle(closure_0, current2, ref1);
+    react = arg3;
+    const useRef = react.useRef;
+    let obj = require("module_12");
+    const ref = useRef(obj.throttle(tmp2, arg1, arg3));
+    const items1 = [ref, arg1, arg3];
+    const useEffect = react.useEffect;
+    HermesBuiltin.arraySpread(items1, items, 3);
+    const effect = useEffect(() => {
+      const obj = _mod12;
+      ref.current = obj.throttle(closure_0, closure_1, closure_2);
       return () => {
         const current = ref.current;
         if (current != null) {
@@ -67,9 +79,9 @@ export const useThrottledState = (set, arg1) => {
       };
     }, items1);
     current2 = ref.current;
-    ref1 = ref1.useRef(current);
+    ref1 = react.useRef(current);
     const items2 = [current, current2];
-    const effect1 = ref1.useEffect(() => {
+    const effect1 = react.useEffect(() => {
       ref1.current = current2(closure_0);
     }, items2);
     if (0 !== arg1) {

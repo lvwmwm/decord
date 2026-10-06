@@ -1,9 +1,13 @@
 // Module ID: 13795
 // Function ID: 13796
-// Dependencies: [1121]
+// Dependencies: [13796, 13800]
 
 // Module 13795
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13796 from "module_13796" /* 13796 */;
+import _mod13800 from "module_13800" /* 13800 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 16, height: 16, scales: [2, 3], hash: "3b34529117c1d3db6d78cba92e0c94bb", name: "member_list_badge_16px", type: "png" });
+export default (arg0) => {
+  const tmp = _mod13796;
+  return tmp(_mod13800(arg0));
+};

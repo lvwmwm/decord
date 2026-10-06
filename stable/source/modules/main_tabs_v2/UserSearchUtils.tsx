@@ -1,23 +1,25 @@
-// Module ID: 7929
-// Function ID: 7930
+// Module ID: 7078
+// Function ID: 7079
 // Name: UserSearchUtils
-// Dependencies: [7930, 2105, 4437, 1074, 2009, 4632, 2]
+// Dependencies: [7079, 2111, 4482, 1086, 2017, 4680, 2]
 // Exports: cleanString, getNames, getRelationshipType
 
-// Module 7929 (UserSearchUtils)
-import StringUtils from "StringUtils" /* 2009 */;
-import UserUtilsDefault from "UserUtils" /* 4632 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7930 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+// Module 7078 (UserSearchUtils)
+import Constants from "Constants" /* 1086 */;
+import StringUtils from "StringUtils" /* 2017 */;
+import UserUtilsDefault from "UserUtils" /* 4680 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7079 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const RelationshipTypes = fn(1074).RelationshipTypes;
-const size = fn(2);
+const RelationshipTypes = Constants.RelationshipTypes;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/UserSearchUtils.tsx");
 
 export const cleanString = function cleanString(toLocaleLowerCase) {
-  return StringUtils.stripDiacritics(toLocaleLowerCase.toLocaleLowerCase()).trim();
+  const obj = StringUtils;
+  const str = obj.stripDiacritics(toLocaleLowerCase.toLocaleLowerCase());
+  return str.trim();
 };
 export const getRelationshipType = function getRelationshipType(id) {
   const relationshipType = RelationshipStore.getRelationshipType(id);
@@ -34,29 +36,34 @@ export const getNames = function getNames(user) {
   const names = {};
   const nick = RelationshipStore.getNickname(user.id);
   if (null != nick) {
-    const obj3 = names(2009);
-    let str = names(2009).stripDiacritics(nick.toLocaleLowerCase());
-    names[nick] = names(2009).stripDiacritics(nick.toLocaleLowerCase()).trim().split(" ");
-    let str2 = names(2009).stripDiacritics(nick.toLocaleLowerCase()).trim();
+    const tmp = names;
+    const obj3 = names(2017);
+    let str = obj3.stripDiacritics(nick.toLocaleLowerCase());
+    let str2 = str.trim();
+    names[nick] = str2.split(" ");
   }
-  const globalName = UserUtilsDefault.getGlobalName(user);
+  const obj4 = UserUtilsDefault;
+  const globalName = obj4.getGlobalName(user);
+  const tmp4 = null != globalName && null == names[globalName];
   if (tmp4) {
-    const obj6 = names(2009);
-    const str4 = names(2009).stripDiacritics(globalName.toLocaleLowerCase());
-    names[globalName] = names(2009).stripDiacritics(globalName.toLocaleLowerCase()).trim().split(" ");
-    const str5 = names(2009).stripDiacritics(globalName.toLocaleLowerCase()).trim();
+    const obj6 = names(2017);
+    const str4 = obj6.stripDiacritics(globalName.toLocaleLowerCase());
+    const str5 = str4.trim();
+    names[globalName] = str5.split(" ");
   }
+  const username2 = user.username;
   const username = user.username;
-  tmp4 = null != globalName && null == names[globalName];
-  const obj7 = names(2009);
-  const str7 = names(2009).stripDiacritics(username.toLocaleLowerCase());
-  names[user.username] = names(2009).stripDiacritics(username.toLocaleLowerCase()).trim().split(" ");
+  const obj7 = names(2017);
+  const str7 = obj7.stripDiacritics(username2.toLocaleLowerCase());
+  const str8 = str7.trim();
+  names[username] = str8.split(" ");
   const nicknames = GuildMemberStore.getNicknames(user.id);
   const item = nicknames.forEach((toLocaleLowerCase) => {
     if (null == names[toLocaleLowerCase]) {
-      const str = StringUtils.stripDiacritics(toLocaleLowerCase.toLocaleLowerCase());
-      tmp[toLocaleLowerCase] = StringUtils.stripDiacritics(toLocaleLowerCase.toLocaleLowerCase()).trim().split(" ");
-      const str2 = StringUtils.stripDiacritics(toLocaleLowerCase.toLocaleLowerCase()).trim();
+      const obj = StringUtils;
+      const str = obj.stripDiacritics(toLocaleLowerCase.toLocaleLowerCase());
+      const str2 = str.trim();
+      tmp[toLocaleLowerCase] = str2.split(" ");
     }
   });
   return { names, nick };

@@ -1,77 +1,84 @@
-// Module ID: 17750
-// Function ID: 17751
+// Module ID: 17109
+// Function ID: 17110
 // Name: CacheManager
-// Dependencies: [5526, 7750, 3, 1091, 7395, 7922, 15853, 1364, 1094, 2]
+// Dependencies: [5590, 6900, 3, 1103, 6540, 7071, 15114, 1370, 1106, 2]
 
-// Module 17750 (CacheManager)
+// Module 17109 (CacheManager)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7922 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
-import CacheStore from "CacheStore" /* 7750 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7071 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import CacheStore from "CacheStore" /* 6900 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-const CacheActionCreators = tmp(15853);
-require = fn;
-let closure_5 = new LoggerDefault("CacheStore");
+let tmp;
+const CacheActionCreators = tmp(15114);
+const hasOwnProperty = new LoggerDefault("CacheStore");
+const tmp2 = new LoggerDefault("CacheStore");
 let closure_6 = 15 * DurationsDefault.Millis.MINUTE;
-class CacheManager extends tmp3 {
+class CacheManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.actions = {
       POST_CONNECTION_OPEN: applyArgumentsResult.handleConnectionOpen,
       CONNECTION_CLOSED: applyArgumentsResult.handleConnectionClose,
       APP_STATE_UPDATE(arg0) {
-            return applyArgumentsResult.handleAppStateUpdate(arg0);
-          },
+        return applyArgumentsResult.handleAppStateUpdate(arg0);
+      },
       WINDOW_FOCUS(arg0) {
-            return applyArgumentsResult.handleWindowFocus(arg0);
-          }
+        return applyArgumentsResult.handleWindowFocus(arg0);
+      }
     };
     return applyArgumentsResult;
   }
+  handleConnectionOpen() {
+    let obj = KvCacheVersionDefault;
+    const result = obj.doesDatabaseVersionMatchJsConstants();
+    result.then((result) => {
+      const tmp = result;
+      if (!tmp) {
+        const obj = CacheActionCreators;
+        obj.writeCaches();
+      }
+    });
+  }
+  handleConnectionClose() {
+    return false;
+  }
+  handleAppStateUpdate(state) {
+    state = state.state;
+    const obj = PlatformUtils;
+    const isAndroidResult = obj.isAndroid();
+    const AppStates = ConstantsIOS.AppStates;
+    let isConnectedResult = (isAndroidResult ? AppStates.BACKGROUND : AppStates.INACTIVE) === state;
+    if (isConnectedResult) {
+      isConnectedResult = GatewayConnectionStore.isConnected();
+    }
+    if (isConnectedResult) {
+      const tmpResult = CacheActionCreators;
+      tmpResult.writeCaches();
+    }
+    return false;
+  }
+  handleWindowFocus(focused) {
+    if (!focused.focused) {
+      const _Date = Date;
+      if (Date.now() - CacheStore.lastWriteTime > closure_6) {
+        closure_5.verbose("Writing cache from window unfocus");
+        const obj = CacheActionCreators;
+        obj.writeCaches();
+      } else {
+        closure_5.verbose("Not writing cache from window unfocus");
+      }
+    }
+    return false;
+  }
 }
 const prototype = CacheManager.prototype;
-prototype["handleConnectionOpen"] = function handleConnectionOpen() {
-  const result = KvCacheVersionDefault.doesDatabaseVersionMatchJsConstants();
-  result.then((result) => {
-    if (!result) {
-      CacheActionCreators.writeCaches();
-    }
-  });
-};
-prototype["handleConnectionClose"] = function handleConnectionClose() {
-  return false;
-};
-prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
-  const AppStates = ConstantsIOS.AppStates;
-  let isConnectedResult = (PlatformUtils.isAndroid() ? AppStates.BACKGROUND : AppStates.INACTIVE) === state.state;
-  if (isConnectedResult) {
-    isConnectedResult = GatewayConnectionStore.isConnected();
-  }
-  if (isConnectedResult) {
-    CacheActionCreators.writeCaches();
-    const tmpResult = CacheActionCreators;
-  }
-  return false;
-};
-prototype["handleWindowFocus"] = function handleWindowFocus(focused) {
-  if (!focused.focused) {
-    const _Date = Date;
-    if (Date.now() - CacheStore.lastWriteTime > closure_6) {
-      closure_5.verbose("Writing cache from window unfocus");
-      CacheActionCreators.writeCaches();
-    } else {
-      closure_5.verbose("Not writing cache from window unfocus");
-    }
-  }
-  return false;
-};
 const cacheManager = new CacheManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/cache/CacheManager.native.tsx");
 
 export default cacheManager;

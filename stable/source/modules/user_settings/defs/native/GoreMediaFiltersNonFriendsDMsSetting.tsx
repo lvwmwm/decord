@@ -1,58 +1,90 @@
-// Module ID: 15113
-// Function ID: 15114
+// Module ID: 14356
+// Function ID: 14357
 // Name: GoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [8265, 15106, 7874, 7575, 15107, 1115, 11754, 15109, 2]
-// Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
+// Dependencies: [7421, 558, 576, 14349, 7024, 6720, 14350, 1127, 10874, 14352, 2]
+// Exports: onGoreContentNonFriendsDmOnPress
 
-// Module 15113 (GoreMediaFiltersNonFriendsDMsSetting)
-import util from "util" /* 1115 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7575 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7874 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15106 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15107 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15109 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14356 (GoreMediaFiltersNonFriendsDMsSetting)
+import react from "react" /* 576 */;
+import intl4 from "intl" /* 1127 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6720 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14349 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14350 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 14352 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-function useGoreContentNonFriendsDmSettingValue() {
+let tmp;
+const ExplicitMediaRedactionUtils = tmp(7024);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  const obj = react;
+  const cResult = obj.c(2);
+  const obj2 = useExplicitContentSettingsOrDefault;
+  const goreContentNonFriendDm = obj2.useGoreContentSettingOrDefault().goreContentNonFriendDm;
+  if (cResult[0] !== goreContentNonFriendDm) {
+    const tmpResult = ExplicitMediaRedactionUtils;
+    const tmp5 = tmpResult.redactionSettingToRenderedString(goreContentNonFriendDm)();
+    cResult[0] = goreContentNonFriendDm;
+    cResult[1] = tmp5;
+    tmp4 = tmp5;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
   const obj = useExplicitContentSettingsOrDefault;
-  return ExplicitMediaRedactionUtils.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentNonFriendDm)();
-}
+  const goreContentNonFriendDm = obj.useGoreContentSettingOrDefault().goreContentNonFriendDm;
+  const obj2 = ExplicitMediaRedactionUtils;
+  return obj2.redactionSettingToRenderedString(goreContentNonFriendDm)();
+});
 function onGoreContentNonFriendsDmOnPress() {
-  const obj = SensitiveMediaGoreRedactionSettingsUtils;
-  const obj3 = { title: null, subtitle: null, handlePress: null, currentValue: null };
-  const intl = util.intl;
-  obj3.title = intl.string(util.t["16/3Bi"]);
-  const intl2 = util.intl;
-  obj3.subtitle = intl2.string(util.t["Yh+HX1"]);
-  obj3.handlePress = function handlePress(goreContentNonFriendDm) {
-    return SensitiveMediaGoreRedactionSettingsUtils.updateGoreContentSetting({ goreContentNonFriendDm });
+  let intl;
+  let intl2;
+  let obj = SensitiveMediaGoreRedactionSettingsUtils;
+  const goreContentNonFriendDm = obj.getGoreContentSettingOrDefault().goreContentNonFriendDm;
+  let obj2 = {
+    title: intl.string(intl4.t["16/3Bi"]),
+    subtitle: intl2.string(intl4.t["Yh+HX1"]),
+    handlePress(goreContentNonFriendDm) {
+      const obj = SensitiveMediaGoreRedactionSettingsUtils;
+      const obj2 = { goreContentNonFriendDm };
+      return obj.updateGoreContentSetting(obj2);
+    },
+    currentValue: goreContentNonFriendDm
   };
-  obj3.currentValue = obj.getGoreContentSettingOrDefault().goreContentNonFriendDm;
-  const result = ExplicitMediaRedactionNativeUtils.handleSensitiveMediaFilterPress(obj3);
+  const handleSensitiveMediaFilterPress = ExplicitMediaRedactionNativeUtils.handleSensitiveMediaFilterPress;
+  ExplicitMediaRedactionNativeUtils;
+  intl = intl4.intl;
+  intl2 = intl4.intl;
+  const result = handleSensitiveMediaFilterPress(obj2);
 }
-const pressable = SettingBuilders.createPressable({
-  useTitle: function getTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["Yh+HX1"]);
-  },
-  parent: SettingsConstants.MobileUserSettings.SENSITIVE_CONTENT_FILTERS,
-  useTrailing: useGoreContentNonFriendsDmSettingValue,
+function getTitle() {
+  const intl = intl4.intl;
+  return intl.string(intl4.t["Yh+HX1"]);
+}
+let obj = {
+  useTitle: getTitle,
+  parent: MobileUserSettings.SENSITIVE_CONTENT_FILTERS,
+  useTrailing: tmp2,
   onPress: onGoreContentNonFriendsDmOnPress,
   useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t["N/oRI+"]), , ];
-    const intl2 = util.intl;
-    items[1] = intl2.string(util.t.QVdYsK);
-    const intl3 = util.intl;
-    items[2] = intl3.string(util.t["K0OWP+"]);
+    const intl = intl4.intl;
+    const items = [intl.string(intl4.t["N/oRI+"]), , ];
+    const intl2 = intl4.intl;
+    items[1] = intl2.string(intl4.t.QVdYsK);
+    const intl3 = intl4.intl;
+    items[2] = intl3.string(intl4.t["K0OWP+"]);
     return items;
   },
   useIsDisabled: useSensitiveMediaSettingDisabled.useSensitiveMediaSettingDisabled
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/GoreMediaFiltersNonFriendsDMsSetting.tsx");
 
 export default pressable;
-export { useGoreContentNonFriendsDmSettingValue };
+export const useGoreContentNonFriendsDmSettingValue = tmp2;
 export { onGoreContentNonFriendsDmOnPress };

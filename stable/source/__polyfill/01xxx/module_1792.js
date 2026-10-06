@@ -1,75 +1,74 @@
 // Module ID: 1792
 // Function ID: 1793
-// Dependencies: [1782, 1784]
-// Exports: useAnimatedScrollHandler
+// Dependencies: [19, 1688, 1669]
+// Exports: useAnimatedKeyboard
 
 // Module 1792
-import _mod1782 from "module_1782" /* 1782 */;
-import _mod1784 from "module_1784" /* 1784 */;
+import react from "react" /* 19 */;
 
-require = arg1;
-const dependencyMap = arg6;
-const __initData = { code: "function pnpm_useAnimatedScrollHandlerTs1(event){const{scrollHandlers,context}=this.__closure;const{onScroll:onScroll,onBeginDrag:onBeginDrag,onEndDrag:onEndDrag,onMomentumBegin:onMomentumBegin,onMomentumEnd:onMomentumEnd}=scrollHandlers;if(onScroll&&event.eventName.endsWith('onScroll')){onScroll(event,context);}else if(onBeginDrag&&event.eventName.endsWith('onScrollBeginDrag')){onBeginDrag(event,context);}else if(onEndDrag&&event.eventName.endsWith('onScrollEndDrag')){onEndDrag(event,context);}else if(onMomentumBegin&&event.eventName.endsWith('onMomentumScrollBegin')){onMomentumBegin(event,context);}else if(onMomentumEnd&&event.eventName.endsWith('onMomentumScrollEnd')){onMomentumEnd(event,context);}}" };
+let dependencyMap;
 
-export const useAnimatedScrollHandler = function useAnimatedScrollHandler(fn, items) {
-  let tmp = fn;
-  if (typeof fn === "function") {
-    let obj2 = { onScroll: fn };
-    tmp = obj2;
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
+let closure_4 = { code: "function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}" };
+let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}" };
+
+export const useAnimatedKeyboard = function useAnimatedKeyboard() {
+  let obj3;
+  let obj4;
+  let ref;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = { isStatusBarTranslucentAndroid: "guild_id", isNavigationBarTranslucentAndroid: "r" };
   }
-  obj2 = tmp;
-  const handler = _mod1782.useHandler(tmp, items);
-  const context = handler.context;
-  items = ["onScroll"];
-  if (undefined !== tmp.onBeginDrag) {
-    items.push("onScrollBeginDrag");
+  let ref2;
+  let obj2;
+  const tmp = ref2(null);
+  dependencyMap = tmp;
+  const tmp2 = ref2(-1);
+  let closure_2 = tmp2;
+  const tmp3 = ref2(false);
+  ref2 = tmp3;
+  if (null === tmp.current) {
+    obj2 = { state: obj3.makeMutable(obj(1669).KeyboardState.UNKNOWN), height: obj4.makeMutable(0) };
+    obj3 = obj(1688);
+    let fn = function c(value, value2) {
+      obj2.state.value = value;
+      obj2.height.value = value2;
+    };
+    const obj6 = { keyboardEventData: obj2 };
+    fn.__closure = obj6;
+    fn.__workletHash = 4393537867728;
+    fn.__initData = obj2;
+    obj4 = obj(1688);
+    const obj5 = obj(1688);
+    tmp2.current = obj5.subscribeForKeyboardEvents(fn, obj);
+    tmp.current = obj2;
+    tmp3.current = true;
   }
-  if (undefined !== tmp.onEndDrag) {
-    items.push("onScrollEndDrag");
-  }
-  if (undefined !== tmp.onMomentumBegin) {
-    items.push("onMomentumScrollBegin");
-  }
-  if (undefined !== tmp.onMomentumEnd) {
-    items.push("onMomentumScrollEnd");
-  }
-  fn = function l(eventName) {
-    ({ onScroll, onBeginDrag, onEndDrag, onMomentumBegin, onMomentumEnd } = obj2);
-    if (onScroll) {
-      eventName = eventName.eventName;
-      if (eventName.endsWith("onScroll")) {
-        onScroll(eventName, context);
+  closure_2(() => {
+    if (false === ref2.current) {
+      if (null !== ref.current) {
+        const current = ref.current;
+        obj = obj(ref[1]);
+        const fn = function u(value, value2) {
+          current.state.value = value;
+          current.height.value = value2;
+        };
+        obj2 = { _keyboardEventData: current };
+        fn.__closure = obj2;
+        fn.__workletHash = 5041909921996;
+        fn.__initData = __initData;
+        ref.current = obj.subscribeForKeyboardEvents(fn, current);
+        tmp.current = true;
       }
     }
-    if (onBeginDrag) {
-      const eventName2 = eventName.eventName;
-      if (eventName2.endsWith("onScrollBeginDrag")) {
-        onBeginDrag(eventName, context);
-      }
-    }
-    if (onEndDrag) {
-      const eventName3 = eventName.eventName;
-      if (eventName3.endsWith("onScrollEndDrag")) {
-        onEndDrag(eventName, context);
-      }
-    }
-    if (onMomentumBegin) {
-      const eventName4 = eventName.eventName;
-      if (eventName4.endsWith("onMomentumScrollBegin")) {
-        onMomentumBegin(eventName, context);
-      }
-    }
-    let endsWithResult = onMomentumEnd;
-    if (onMomentumEnd) {
-      const eventName5 = eventName.eventName;
-      endsWithResult = eventName5.endsWith("onMomentumScrollEnd");
-    }
-    if (endsWithResult) {
-      onMomentumEnd(eventName, context);
-    }
-  };
-  fn.__closure = { scrollHandlers: tmp, context };
-  fn.__workletHash = 480432859268;
-  fn.__initData = __initData;
-  return _mod1784.useEvent(fn, items, handler.doDependenciesDiffer);
+    return () => {
+      obj = obj(closure_1[1]);
+      const result = obj.unsubscribeFromKeyboardEvents(ref.current);
+      ref2.current = false;
+    };
+  }, []);
+  return tmp.current;
 };

@@ -1,28 +1,31 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 15386
+// Function ID: 15387
 // Name: DesignSystemsModalSetting
-// Dependencies: [8265, 1074, 11754, 16112, 2]
+// Dependencies: [7421, 1086, 10874, 15387, 2]
 
-// Module 16111 (DesignSystemsModalSetting)
-import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15386 (DesignSystemsModalSetting)
+import Constants from "Constants" /* 1086 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
     return "Modal";
   },
-  parent: SettingsConstants.MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.DESIGN_SYSTEMS,
   screen: {
-    route: Constants.UserSettingsSections.DESIGN_SYSTEM_MODAL,
+    route: UserSettingsSections.DESIGN_SYSTEM_MODAL,
     getComponent() {
       return require("UserSettingsDesignSystemModal").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsModalSetting.tsx");
 
 export default route;

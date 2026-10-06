@@ -1,24 +1,26 @@
-// Module ID: 16795
-// Function ID: 16796
+// Module ID: 16093
+// Function ID: 16094
 // Name: createICYMIStyles
-// Dependencies: [19, 4788, 16796, 2]
+// Dependencies: [19, 4837, 16094, 2]
 // Exports: createICYMIStyles
 
-// Module 16795 (createICYMIStyles)
-import ICYMIContext from "ICYMIContext" /* 16796 */;
-import noop from "module_19" /* 19 */;
+// Module 16093 (createICYMIStyles)
+import ICYMIContext from "ICYMIContext" /* 16094 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/icymi/native/createICYMIStyles.tsx");
 
 export const createICYMIStyles = function createICYMIStyles(rect) {
-  _require = require("createStyles").createStyles(rect);
+  let closure_0;
+  const obj = require("createStyles");
+  _require = obj.createStyles(rect);
   return () => {
     const items = [...arguments];
-    const useContext = noop.useContext;
+    const useContext = react.useContext;
     const items1 = [useContext(ICYMIContext.ICYMIContext), ...items];
     return closure_0(...items);
   };

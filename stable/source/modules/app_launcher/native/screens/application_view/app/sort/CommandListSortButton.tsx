@@ -1,59 +1,75 @@
-// Module ID: 12431
-// Function ID: 12432
+// Module ID: 11517
+// Function ID: 11518
 // Name: CommandListSortButton
-// Dependencies: [19, 17, 12417, 1181, 21, 4788, 576, 1115, 5371, 4755, 12432, 1980, 4784, 11449, 2]
+// Dependencies: [19, 17, 11503, 1193, 21, 4837, 588, 1127, 5436, 4801, 11518, 1987, 4833, 10604, 2]
 // Exports: default
 
-// Module 12431 (CommandListSortButton)
-import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import noop from "module_19" /* 19 */;
+// Module 11517 (CommandListSortButton)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import FormConstants from "FormConstants" /* 1193 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 11503 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const CommandListSortOrder = fn(12417).CommandListSortOrder;
-const ANDROID_FOREGROUND_RIPPLE = fn(1181).ANDROID_FOREGROUND_RIPPLE;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { overflow: "hidden", borderRadius: nativeDefault.radii.xxl }, button: null };
-const obj3 = { overflow: "hidden", borderRadius: nativeDefault.radii.xxl };
-obj2.button = { gap: 4, flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 4, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+const View = react_native.View;
+const CommandListSortOrder = AppLauncherConstants.CommandListSortOrder;
+const ANDROID_FOREGROUND_RIPPLE = FormConstants.ANDROID_FOREGROUND_RIPPLE;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, button: obj3 };
+obj2 = { overflow: "hidden", borderRadius: nativeDefault.radii.xxl };
+createStyles = createStyles.createStyles;
+obj3 = { gap: 4, flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 4, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/sort/CommandListSortButton.tsx");
 
 export default function CommandListSortButton(sortOrder) {
+  let items;
+  let obj2;
+  let stringResult;
   sortOrder = sortOrder.sortOrder;
   const onSortOptionPress = sortOrder.onSortOptionPress;
   const tmp = closure_8();
   if (CommandListSortOrder.POPULAR === sortOrder) {
-    const intl2 = sortOrder(1115).intl;
-    let stringResult = intl2.string(sortOrder(1115).t.SzxiqK);
+    const intl2 = sortOrder(1127).intl;
+    stringResult = intl2.string(sortOrder(1127).t.SzxiqK);
   } else if (tmp2.ALPHABETICAL === sortOrder) {
-    const intl = sortOrder(1115).intl;
-    stringResult = intl.string(sortOrder(1115).t.m8xsti);
+    const intl = sortOrder(1127).intl;
+    stringResult = intl.string(sortOrder(1127).t.m8xsti);
   }
-  const obj = {
+  let obj = {
     accessibilityRole: "button",
     androidRippleConfig: ANDROID_FOREGROUND_RIPPLE,
     activeOpacity: 0.8,
     style: tmp.container,
     onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12432, dependencyMap.paths), "CommandListSortActionSheet", {
+      let obj = ActionSheetActionCreatorsDefault;
+      const obj2 = {
         sortOrder,
         onSortOptionPress,
         onClose() {
-          onSortOptionPress(closure_1_2[9]).hideActionSheet("CommandListSortActionSheet");
+          const obj = onSortOptionPress(closure_1_2[9]);
+          obj.hideActionSheet("CommandListSortActionSheet");
         }
-      });
+      };
+      obj.openLazy(asyncRequire(11518, dependencyMap.paths), "CommandListSortActionSheet", obj2);
     },
-    children: null
+    children: closure_7(View, obj2)
   };
-  const obj2 = { style: tmp.button, children: null };
-  const items = [closure_6(sortOrder(4784).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), closure_6(sortOrder(11449).ChevronSmallDownIcon, { size: "xs", color: onSortOptionPress(576).colors.TEXT_DEFAULT })];
-  obj2.children = items;
-  obj.children = closure_7(View, obj2);
-  return closure_6(sortOrder(5371).PressableOpacity, obj);
+  obj2 = { style: tmp.button, children: items };
+  const PressableOpacity = sortOrder(5436).PressableOpacity;
+  items = [closure_6(sortOrder(4833).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
+  const obj3 = { size: "xs", color: onSortOptionPress(588).colors.TEXT_DEFAULT };
+  const ChevronSmallDownIcon = sortOrder(10604).ChevronSmallDownIcon;
+  items[1] = closure_6(ChevronSmallDownIcon, obj3);
+  return closure_6(PressableOpacity, obj);
 };

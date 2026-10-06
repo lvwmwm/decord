@@ -1,165 +1,287 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 10763
+// Function ID: 10764
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4524, 4508, 5217, 11396, 4784, 2]
+// Dependencies: [32, 19, 21, 558, 576, 4570, 4554, 5281, 10764, 4833, 2]
 
-// Module 11395 (BalanceCounter)
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4508 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import spring from "spring" /* 5217 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop_mod from "module_19" /* 19 */;
+// Module 10763 (BalanceCounter)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import react3 from "react" /* 4554 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import spring from "spring" /* 5281 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const Text_Text = tmp(4784);
-require = fn;
-let noop = fn(19);
-({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: closure_7 } = noop);
-let noop = noop_mod;
-let jsx = fn(21).jsx;
+let dependencyMap, ref;
+
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let tmp;
+const Text_Text = tmp(4833);
+let react = react_mod;
+({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
+react = react_mod;
+let jsx = Fragment.jsx;
 let closure_10 = { code: "function BalanceCounterTsx1(){const{runOnJS,setIsAnimating}=this.__closure;runOnJS(setIsAnimating)(false);}" };
 let closure_11 = { code: "function BalanceCounterTsx2(){const{isAnimating,animatedValue,runOnJS,setDisplayValue,setMaxDigits}=this.__closure;if(isAnimating){const roundedValue=Math.round(animatedValue.get());runOnJS(setDisplayValue)(roundedValue);runOnJS(setMaxDigits)(roundedValue.toString().length);}return{};}" };
-class BalanceCounter {
-  constructor(arg0) {
-    value = global.value;
-    closure_0 = value;
-    onValueChange = global.onValueChange;
-    closure_2 = undefined;
-    closure_3 = undefined;
-    closure_4 = undefined;
-    enabled = undefined;
-    closure_6 = undefined;
-    closure_7 = undefined;
-    closure_8 = undefined;
-    closure_9 = undefined;
-    closure_10 = undefined;
-    clearAnimationTimeout = function clearAnimationTimeout() {
-      if (null != ref2.current) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(tmp.current);
-        tmp.current = null;
-      }
-      setIsAnimating(false);
-    };
-    ({ onValueReached, style } = global);
-    closure_2 = closure_6(null);
-    tmp2 = closure_2;
-    tmp = closure_0;
-    obj = closure_0(closure_2[3]);
-    sharedValue = obj.useSharedValue(0);
-    closure_3 = sharedValue;
-    closure_4 = closure_6(null);
-    enabled = closure_8.useContext(closure_0(closure_2[4]).AccessibilityPreferencesContext).reducedMotion.enabled;
-    tmp4 = closure_3(closure_4(0), 2);
-    [obj2, tmp5] = tmp4;
-    closure_6 = tmp5;
-    tmp6 = closure_3(closure_4(1), 2);
-    tmp7 = tmp6[1];
-    closure_7 = tmp7;
-    tmp8 = closure_3(closure_4(false), 2);
-    first = tmp8[0];
-    closure_8 = first;
-    closure_9 = tmp8[1];
-    tmp10 = closure_7((set, targetHeight, duration) => {
+let closure_12 = { code: "function BalanceCounterTsx3(){const{runOnJS,setIsAnimating}=this.__closure;runOnJS(setIsAnimating)(false);}" };
+const __initData = { code: "function BalanceCounterTsx4(){const{isAnimating,animatedValue,runOnJS,setDisplayValue,setMaxDigits}=this.__closure;if(isAnimating){const roundedValue=Math.round(animatedValue.get());runOnJS(setDisplayValue)(roundedValue);runOnJS(setMaxDigits)(roundedValue.toString().length);}return{};}" };
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
+  let closure_6;
+  let closure_8;
+  let onValueReached;
+  let ref2;
+  let setIsAnimating;
+  let style;
+  let tmp4;
+  let tmp8;
+  let obj = react2;
+  const cResult = obj.c(26);
+  value = value.value;
+  require = value;
+  const onValueChange = value.onValueChange;
+  ({ onValueReached, style } = value);
+  dependencyMap = tmp4(null);
+  let obj2 = ReanimatedRexport;
+  const sharedValue = obj2.useSharedValue(0);
+  ref = tmp4(null);
+  const enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
+  [r10035, tmp4] = sharedValue(ref(0), 2);
+  const tmp3 = sharedValue(ref(0), 2);
+  let closure_7 = sharedValue(ref(1), 2)[1];
+  const tmp5 = sharedValue(ref(1), 2);
+  const tmp6 = sharedValue(ref(false), 2);
+  react = tmp6[0];
+  jsx = tmp6[1];
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let fn = function o(set, value, duration) {
       setIsAnimating(true);
+      set = set.set;
+      let obj = spring;
       const fn = function l() {
-        value(closure_2[3]).runOnJS(setIsAnimating)(false);
+        const obj = require("ReanimatedRexport");
+        obj.runOnJS(setIsAnimating)(false);
       };
-      const obj = spring;
       const obj2 = { duration, damping: 15, stiffness: 150, mass: 1 };
       fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setIsAnimating };
       fn.__workletHash = 16153226572520;
       fn.__initData = __initData;
-      const result = set.set(obj.withSpring(targetHeight, obj2, "respect-motion-settings", fn));
-    }, []);
-    closure_10 = tmp10;
-    items = [, , , , , ];
-    items[0] = value;
-    items[1] = onValueChange;
-    items[2] = onValueReached;
-    items[3] = sharedValue;
-    items[4] = tmp10;
-    items[5] = enabled;
-    tmp11 = enabled(() => {
+      ({ runOnJS: ReanimatedRexport.runOnJS, setIsAnimating });
+      const result = set(obj.withSpring(value, obj2, "respect-motion-settings", fn));
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class F {
+      constructor() {
+        if (null != ref2.current) {
+          const _clearTimeout = clearTimeout;
+          clearTimeout(ref2.current);
+          ref2.current = null;
+        }
+        setIsAnimating(false);
+      }
+    }
+    cResult[1] = F;
+    tmp8 = F;
+  } else {
+    class F {
+      constructor() {
+        if (null != ref2.current) {
+          const _clearTimeout = clearTimeout;
+          clearTimeout(ref2.current);
+          ref2.current = null;
+        }
+        setIsAnimating(false);
+      }
+    }
+  }
+  F = tmp8;
+  if (cResult[2] === sharedValue) {
+    class F {
+      constructor() {
+        if (null != ref2.current) {
+          const _clearTimeout = clearTimeout;
+          clearTimeout(ref2.current);
+          ref2.current = null;
+        }
+        setIsAnimating(false);
+      }
+    }
+  }
+  class H {
+    constructor() {
+      let duration;
+      let tmp4;
       if (null !== duration) {
         if (null !== ref.current) {
-          if (!enabled) {
-            if (tmp !== tmp2.current) {
+          const tmp20 = enabled;
+          if (!tmp20) {
+            if (duration !== ref.current) {
               const diff = tmp - tmp2.current;
               onValueChange(diff);
-              tmp2.current = tmp;
-              const obj2 = { targetTime: value(ref[6]).EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS };
-              const orbBalanceCounterAnimationConfigs = value(ref[6]).getOrbBalanceCounterAnimationConfigs(diff, obj2);
+              ref.current = duration;
+              const obj = { targetTime: require("AnimationUtils").EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS };
+              const getOrbBalanceCounterAnimationConfigs = require("AnimationUtils").getOrbBalanceCounterAnimationConfigs;
+              require("AnimationUtils");
+              const orbBalanceCounterAnimationConfigs = getOrbBalanceCounterAnimationConfigs(diff, obj);
               duration = orbBalanceCounterAnimationConfigs.duration;
-              if (null != ref2.current) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(tmp12.current);
-                tmp12.current = null;
-              }
-              setIsAnimating(false);
+              const delay = orbBalanceCounterAnimationConfigs.delay;
+              F();
               const _setTimeout = setTimeout;
-              ref2.current = setTimeout(() => {
-                closure_10(sharedValue, value, duration);
-                closure_4.current = null;
-              }, orbBalanceCounterAnimationConfigs.delay);
-              return clearAnimationTimeout;
+              closure_4.current = setTimeout(() => {
+                first(sharedValue, require, duration);
+                ref2.current = null;
+              }, delay);
+              return F;
             } else {
-              _undefined(tmp);
+              tmp4 = tmp4(duration);
             }
           }
         }
-        _undefined(tmp);
+        tmp4(duration);
         const result = sharedValue.set(tmp);
-        ref.current = tmp;
-      }
-    }, items);
-    tmp12 = closure_0(closure_2[3]);
-    class F {
-      constructor() {
-        if (closure_8) {
-          tmp = globalThis;
-          _Math = Math;
-          tmp2 = closure_3;
-          str = Math.round(closure_3.get());
-          tmp3 = closure_0;
-          tmp4 = closure_2;
-          obj = closure_0(closure_2[3]);
-          tmp5 = closure_6;
-          tmp6 = obj.runOnJS(closure_6)(str);
-          obj2 = closure_0(closure_2[3]);
-          tmp7 = closure_7;
-          runOnJSResult = obj2.runOnJS(closure_7);
-          tmp8Result = runOnJSResult(str.toString().length);
-        }
-        return {};
+        ref.current = duration;
       }
     }
-    obj1 = { isAnimating: first, animatedValue: sharedValue, runOnJS: closure_0(closure_2[3]).runOnJS, setDisplayValue: tmp5, setMaxDigits: tmp7 };
-    F.__closure = obj1;
-    F.__workletHash = 4408542396979;
-    F.__initData = clearAnimationTimeout;
-    tmp14 = null;
-    if (null !== value) {
-      tmp15 = closure_9;
-      tmp16 = onValueChange;
-      obj7 = { style: null, children: null };
-      items1 = [, ];
-      items1[0] = tmp13;
-      obj8 = { minWidth: null };
-      num = 7;
-      obj8.minWidth = 7 * tmp6[0];
-      items1[1] = obj8;
-      obj7.style = items1;
-      obj9 = { variant: "text-sm/semibold", style: null, maxFontSizeMultiplier: 2, children: null };
-      obj9.style = style;
-      obj9.children = obj2.toFixed(0);
-      obj7.children = closure_9(tmp(tmp2[7]).Text, obj9);
-      tmp14 = closure_9(onValueChange(tmp2[3]).View, obj7);
-    }
-    return tmp14;
   }
-}
-const size = fn(2);
+  cResult[2] = sharedValue;
+  cResult[3] = onValueChange;
+  cResult[4] = enabled;
+  cResult[5] = value;
+  cResult[6] = H;
+}) : ((value) => {
+  let _undefined;
+  let obj2;
+  let onValueReached;
+  let ref2;
+  let setIsAnimating;
+  let style;
+  let tmp5;
+  value = value.value;
+  require = value;
+  const onValueChange = value.onValueChange;
+  let c6;
+  let first1;
+  function clearAnimationTimeout() {
+    if (null != ref2.current) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(ref2.current);
+      ref2.current = null;
+    }
+    setIsAnimating(false);
+  }
+  ({ onValueReached, style } = value);
+  dependencyMap = c6(null);
+  const tmp2 = dependencyMap;
+  let tmp = require;
+  let obj = ReanimatedRexport;
+  const sharedValue = obj.useSharedValue(0);
+  ref = c6(null);
+  const enabled = first1.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
+  [obj2, tmp5] = sharedValue(ref(0), 2);
+  c6 = tmp5;
+  const tmp4 = sharedValue(ref(0), 2);
+  const tmp6 = sharedValue(ref(1), 2);
+  let closure_7 = tmp8;
+  const first = tmp6[0];
+  const tmp9 = sharedValue(ref(false), 2);
+  first1 = tmp9[0];
+  jsx = tmp9[1];
+  const tmp11 = closure_7((set, value, duration) => {
+    setIsAnimating(true);
+    set = set.set;
+    let obj = spring;
+    const fn = function l() {
+      const obj = require("ReanimatedRexport");
+      obj.runOnJS(setIsAnimating)(false);
+    };
+    const obj2 = { duration, damping: 15, stiffness: 150, mass: 1 };
+    fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setIsAnimating };
+    fn.__workletHash = 5640678796522;
+    fn.__initData = __initData;
+    ({ runOnJS: ReanimatedRexport.runOnJS, setIsAnimating });
+    const result = set(obj.withSpring(value, obj2, "respect-motion-settings", fn));
+  }, []);
+  closure_10 = tmp11;
+  const items = [value, onValueChange, onValueReached, sharedValue, tmp11, enabled];
+  let tmp12 = enabled(() => {
+    let duration;
+    if (null !== duration) {
+      if (null !== ref.current) {
+        const tmp23 = enabled;
+        if (!tmp23) {
+          if (duration !== ref.current) {
+            const diff = tmp - tmp2.current;
+            onValueChange(diff);
+            ref.current = duration;
+            const obj = { targetTime: require("AnimationUtils").EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS };
+            const getOrbBalanceCounterAnimationConfigs = require("AnimationUtils").getOrbBalanceCounterAnimationConfigs;
+            require("AnimationUtils");
+            const orbBalanceCounterAnimationConfigs = getOrbBalanceCounterAnimationConfigs(diff, obj);
+            duration = orbBalanceCounterAnimationConfigs.duration;
+            const delay = orbBalanceCounterAnimationConfigs.delay;
+            const tmp12 = clearAnimationTimeout;
+            if (null != ref2.current) {
+              const _clearTimeout = clearTimeout;
+              clearTimeout(ref2.current);
+              ref2.current = null;
+            }
+            setIsAnimating(false);
+            const _setTimeout = setTimeout;
+            ref2.current = setTimeout(() => {
+              closure_10(sharedValue, require, duration);
+              ref2.current = null;
+            }, delay);
+            return tmp12;
+          } else {
+            _undefined(duration);
+          }
+        }
+      }
+      _undefined(duration);
+      const result = sharedValue.set(tmp);
+      ref.current = duration;
+    }
+  }, items);
+  ReanimatedRexport;
+  let fn = function k() {
+    const tmp = first1;
+    if (tmp) {
+      const _Math = Math;
+      const str = Math.round(sharedValue.get());
+      const obj = ReanimatedRexport;
+      obj.runOnJS(c6)(str);
+      const obj2 = ReanimatedRexport;
+      const runOnJSResult = obj2.runOnJS(closure_7);
+      runOnJSResult(str.toString().length);
+    }
+    return {};
+  };
+  const obj3 = { isAnimating: first1, animatedValue: sharedValue, runOnJS: ReanimatedRexport.runOnJS, setDisplayValue: tmp5, setMaxDigits: tmp8 };
+  fn.__closure = obj3;
+  fn.__workletHash = 3325611842357;
+  fn.__initData = __initData;
+  let tmp15 = null;
+  if (null !== value) {
+    const items1 = [tmp14, ];
+    const obj5 = { minWidth: 7 * first };
+    items1[1] = obj5;
+    const View = onValueChange(4570).View;
+    ({ variant: "text-sm/semibold", style, maxFontSizeMultiplier: 2, children: obj2.toFixed(0) });
+    const Text = Text_Text.Text;
+    tmp15 = <View style={items1}>{null}</View>;
+  }
+  return tmp15;
+});
 let result = size.fileFinishedImporting("modules/virtual_currency/native/BalanceCounter.tsx");
 
-export default BalanceCounter;
-export { BalanceCounter };
+export default tmp3;
+export const BalanceCounter = tmp3;

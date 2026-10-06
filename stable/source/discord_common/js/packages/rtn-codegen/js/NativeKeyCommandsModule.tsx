@@ -1,13 +1,13 @@
-// Module ID: 5215
-// Function ID: 5216
-// Name: NativeKeyCommandsModule
+// Module ID: 5279
+// Function ID: 5280
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 5215 (NativeKeyCommandsModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 5279 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeKeyCommandsModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeKeyCommandsModule.tsx");
 

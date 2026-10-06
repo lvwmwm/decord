@@ -1,17 +1,19 @@
-// Module ID: 4523
-// Function ID: 4524
+// Module ID: 4569
+// Function ID: 4570
 // Name: reactNativeWorkletsCompat
-// Dependencies: [4524, 2]
+// Dependencies: [4570, 2]
 
-// Module 4523 (reactNativeWorkletsCompat)
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+// Module 4569 (reactNativeWorkletsCompat)
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/gesture_handlers/native/reactNativeWorkletsCompat.js");
-
-export default {
+const obj = {
   scheduleOnUI(fn) {
     const substr = [...arguments].slice();
-    return ReanimatedRexport.runOnUI(fn)(...substr);
+    const runOnUIResult = ReanimatedRexport.runOnUI(fn);
+    return runOnUIResult(...substr);
   }
 };
+const result = size.fileFinishedImporting("modules/gesture_handlers/native/reactNativeWorkletsCompat.js");
+
+export default obj;

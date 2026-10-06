@@ -1,91 +1,671 @@
-// Module ID: 12061
-// Function ID: 12062
+// Module ID: 10718
+// Function ID: 10719
 // Name: QuestOrbsRewardModal
-// Dependencies: [32, 5, 19, 17, 4780, 1372, 1979, 5693, 21, 4991, 12061, 1980, 4788, 576, 9148, 5880, 5929, 1115, 5836, 9121, 1365, 12062, 12063, 12064, 504, 9161, 1094, 11582, 12065, 12049, 5696, 12066, 7400, 4784, 5218, 2]
-// Exports: default, openQuestOrbsRewardModal
+// Dependencies: [32, 5, 19, 17, 4826, 1378, 1986, 5757, 21, 5040, 10718, 1987, 4837, 588, 558, 576, 8295, 5940, 1127, 5942, 5896, 8268, 1371, 10719, 10720, 10721, 504, 8312, 1106, 9776, 10722, 10667, 5760, 10723, 6546, 4833, 5282, 2]
+// Exports: openQuestOrbsRewardModal
 
-// Module 12061 (QuestOrbsRewardModal)
-import nativeDefault from "native" /* 576 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import XSmallIcon from "XSmallIcon" /* 5929 */;
-import APNGPlayer from "APNGPlayer" /* 9121 */;
-import OrbsIcon from "OrbsIcon" /* 9148 */;
-import _modDef12062 from "module_12062" /* 12062 */;
-import _modDef12063 from "module_12063" /* 12063 */;
-import _modDef12064 from "module_12064" /* 12064 */;
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
-import UserStore from "UserStore" /* 1372 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+// Module 10718 (QuestOrbsRewardModal)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import QuestConstants from "QuestConstants" /* 5757 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import XSmallIcon from "XSmallIcon" /* 5940 */;
+import APNGPlayer from "APNGPlayer" /* 8268 */;
+import _modDef10719 from "module_10719" /* 10719 */;
+import _modDef10720 from "module_10720" /* 10720 */;
+import _modDef10721 from "module_10721" /* 10721 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import UserStore from "UserStore" /* 1378 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, applyOrientationLockResult, isAppActive;
 
-require = fn;
-function OrbsBalance(balance) {
+let closure_14;
+let closure_15;
+let items;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj5;
+let tmp;
+const OrbsIcon2 = tmp(8295);
+({ ActivityIndicator: metroRequire, StyleSheet: metroImportDefault, View: metroImportAll } = react_native);
+const RewardFilterTypes = QuestConstants.RewardFilterTypes;
+({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
+const QuestOrbsRewardModal = "QuestOrbsRewardModal";
+let createStyles = createStyles_mod;
+let obj = { closeButton: obj2, closeButtonIcon: obj3 };
+obj2 = { alignSelf: "flex-start", marginHorizontal: nativeDefault.space.PX_16, zIndex: 999 };
+createStyles = createStyles.createStyles;
+obj3 = { tintColor: nativeDefault.colors.WHITE };
+let closure_17 = createStyles(obj);
+createStyles = createStyles_mod;
+let closure_18 = createStyles.createStyles(() => {
+  let obj3;
+  const obj = { root: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, background: metroImportDefault.absoluteFillObject, loading: obj3, header: { flexDirection: "row", alignItems: "flex-end", justifyContent: "flex-end" }, main: { flex: 2 }, animation: { flex: 3 }, body: { flex: 2, flexDirection: "column", justifyContent: "center", gap: nativeDefault.space.PX_16 }, title: { textAlign: "center", marginHorizontal: nativeDefault.space.PX_32 }, buttonsContainer: { padding: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_16 } };
+  ({ flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW });
+  obj3 = { justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+  const merged = Object.assign(metroImportDefault.absoluteFillObject);
+  ({ flex: 2, flexDirection: "column", justifyContent: "center", gap: nativeDefault.space.PX_16 });
+  ({ textAlign: "center", marginHorizontal: nativeDefault.space.PX_32 });
+  ({ padding: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_16 });
+  return obj;
+});
+createStyles = createStyles_mod;
+let obj4 = { orbsIcon: obj5, spacer: { width: 2 } };
+obj5 = { transform: items };
+items = [{ translateY: 3 }];
+let closure_19 = createStyles.createStyles(obj4);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((balance) => {
+  let items;
+  let tmp5;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(8);
+  balance = balance.balance;
+  const tmp4 = closure_19();
+  if (cResult[0] !== tmp4.orbsIcon) {
+    const obj2 = { size: "xs", color: nativeDefault.colors.WHITE, style: tmp4.orbsIcon };
+    const OrbsIcon = OrbsIcon2.OrbsIcon;
+    const tmp8 = map1(OrbsIcon, obj2);
+    cResult[0] = tmp4.orbsIcon;
+    cResult[1] = tmp8;
+    tmp5 = tmp8;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.spacer) {
+    const obj3 = { style: tmp4.spacer };
+    const tmp12 = map1(metroImportAll, obj3);
+    cResult[2] = tmp4.spacer;
+    cResult[3] = tmp12;
+    tmp9 = tmp12;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === balance) {
+    if (cResult[5] === tmp5) {
+      let tmp13;
+      if (cResult[6] === tmp9) {
+        tmp13 = cResult[7];
+      }
+      return tmp13;
+    }
+  }
+  const obj4 = { children: items };
+  items = [tmp5, tmp9, balance];
+  const tmp14 = closure_15(authStore2, obj4);
+  cResult[4] = balance;
+  cResult[5] = tmp5;
+  cResult[6] = tmp9;
+  cResult[7] = tmp14;
+  tmp13 = tmp14;
+}) : ((balance) => {
+  let items;
+  balance = balance.balance;
   const tmp = closure_19();
-  const obj = { children: null };
-  const items = [map1(OrbsIcon.OrbsIcon, { size: "xs", color: nativeDefault.colors.WHITE, style: tmp.orbsIcon }), map1(React6, { style: tmp.spacer }), balance.balance];
-  obj.children = items;
-  return __initData(closure_1_14, obj);
-}
-function CancelButton() {
+  const obj = { children: items };
+  const obj2 = { size: "xs", color: nativeDefault.colors.WHITE, style: tmp.orbsIcon };
+  const OrbsIcon = OrbsIcon2.OrbsIcon;
+  items = [map1(OrbsIcon, obj2), , ];
+  const obj3 = { style: tmp.spacer };
+  items[1] = map1(metroImportAll, obj3);
+  items[2] = balance;
+  return closure_15(authStore2, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closeButtonIcon;
+  let first;
+  let tmp6;
+  let tmp7;
+  let obj = require("react");
+  const cResult = obj.c(7);
+  const tmp4 = closure_17();
+  _require = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const obj = ModalActionCreatorsDefault;
+      obj.popWithKey(QuestOrbsRewardModal);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.closeButtonIcon) {
+    const fn2 = function l() {
+      let items;
+      const obj = { size: "lg", style: items };
+      items = [closeButtonIcon.closeButtonIcon];
+      return map1(XSmallIcon.XSmallIcon, obj);
+    };
+    cResult[1] = tmp4.closeButtonIcon;
+    cResult[2] = fn2;
+    tmp6 = fn2;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(require("intl").t.cpT0Cq);
+    cResult[3] = stringResult;
+    tmp7 = stringResult;
+  } else {
+    tmp7 = cResult[3];
+  }
+  if (cResult[4] === tmp4.closeButton) {
+    let tmp9;
+    if (cResult[5] === tmp6) {
+      tmp9 = cResult[6];
+    }
+    return tmp9;
+  }
+  const obj2 = { onPress: first, backImage: tmp6, accessibilityLabel: tmp7, displayMode: "minimal", style: tmp4.closeButton };
+  const tmp10 = closure_13(require("module_5942").HeaderBackButton, obj2);
+  cResult[4] = tmp4.closeButton;
+  cResult[5] = tmp6;
+  cResult[6] = tmp10;
+  tmp9 = tmp10;
+}) : (() => {
+  let closeButtonIcon;
+  let intl;
   const tmp = closure_17();
   _require = tmp;
   let obj = {
     onPress() {
-      ModalActionCreatorsDefault.popWithKey(QuestOrbsRewardModal);
+      const obj = ModalActionCreatorsDefault;
+      obj.popWithKey(QuestOrbsRewardModal);
     },
     backImage() {
-      const obj = { size: "lg", style: null };
-      const items = [closeButtonIcon.closeButtonIcon];
-      obj.style = items;
+      let items;
+      const obj = { size: "lg", style: items };
+      items = [closeButtonIcon.closeButtonIcon];
       return map1(XSmallIcon.XSmallIcon, obj);
     },
-    accessibilityLabel: null,
+    accessibilityLabel: intl.string(require("intl").t.cpT0Cq),
     displayMode: "minimal",
-    style: null
+    style: tmp.closeButton
   };
-  const intl = require("util").intl;
-  obj.accessibilityLabel = intl.string(require("util").t.cpT0Cq);
-  obj.style = tmp.closeButton;
-  return closure_13(require("module_5880").HeaderBackButton, obj);
-}
-function StaticOrb() {
-  const obj = { style: { width: "100%", height: "100%" }, children: null };
-  const obj2 = { source: null, style: null, fade: false };
-  const obj3 = { uri: null };
-  const tmp = closure_25();
-  obj3.uri = _modDef12062;
-  obj2.source = obj3;
-  obj2.style = tmp.animatedOrb;
-  obj.children = map1(FastImageDefault, obj2);
-  return map1(React6, obj);
-}
-function AnimatedOrbContainer(isAppActive) {
+  const HeaderBackButton = require("module_5942").HeaderBackButton;
+  intl = require("intl").intl;
+  return closure_13(HeaderBackButton, obj);
+});
+const memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
+  let animate;
+  let onLoad;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  let obj = uri(576);
+  const cResult = obj.c(11);
+  uri = uri.uri;
+  ({ onLoad, animate } = uri);
+  if (cResult[0] !== uri) {
+    const fn = function n() {
+      const obj = FastImageDefault;
+      obj.preload(uri);
+    };
+    const items = [uri];
+    cResult[0] = uri;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp5 = items;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  const effect = react.useEffect(tmp4, tmp5);
+  const combined = "orb-animate-" + tmp3;
+  if (cResult[3] !== uri) {
+    const obj2 = { uri };
+    cResult[3] = uri;
+    cResult[4] = obj2;
+    tmp8 = obj2;
+  } else {
+    tmp8 = cResult[4];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    size = { width: "100%", height: "100%" };
+    cResult[5] = size;
+    tmp9 = size;
+  } else {
+    tmp9 = cResult[5];
+  }
+  if (cResult[6] === (undefined === animate || animate)) {
+    if (cResult[7] === onLoad) {
+      if (cResult[8] === combined) {
+        let tmp10;
+        if (cResult[9] === tmp8) {
+          tmp10 = cResult[10];
+        }
+        return tmp10;
+      }
+    }
+  }
+  const tmp11 = closure_13(FastImageDefault, { source: tmp8, style: tmp9, resizeMode: "cover", enableAnimation: undefined === animate || animate, onLoad, usesSmallCache: false, fade: false }, combined);
+  cResult[6] = undefined === animate || animate;
+  cResult[7] = onLoad;
+  cResult[8] = combined;
+  cResult[9] = tmp8;
+  cResult[10] = tmp11;
+  tmp10 = tmp11;
+}) : ((uri) => {
+  uri = uri.uri;
+  let flag = uri.animate;
+  const onLoad = uri.onLoad;
+  if (flag === undefined) {
+    flag = true;
+  }
+  const items = [uri];
+  const effect = react.useEffect(() => {
+    const obj = FastImageDefault;
+    obj.preload(uri);
+  }, items);
+  let obj = { source: { uri }, style: { width: "100%", height: "100%" }, resizeMode: "cover", enableAnimation: flag, onLoad, usesSmallCache: false, fade: false };
+  const tmp2 = FastImageDefault;
+  return closure_13(tmp2, obj, "orb-animate-" + flag);
+}));
+const memo2 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let animate;
+  let onLoad;
+  let uri;
+  const obj = react2;
+  const cResult = obj.c(8);
+  ({ uri, onLoad, animate } = arg0);
+  let closure_0 = tmp4;
+  const ref = react.useRef(null);
+  const tmpResult = APNGPlayer;
+  const aPNGPlayerControls = tmpResult.useAPNGPlayerControls(ref);
+  const obj2 = react;
+  if (cResult[0] === (undefined === animate || animate)) {
+    let tmp7;
+    let tmp8;
+    let tmp11;
+    if (cResult[1] === aPNGPlayerControls) {
+      tmp7 = cResult[2];
+      tmp8 = cResult[3];
+    }
+    const effect = obj2.useEffect(tmp7, tmp8);
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      size = { width: "100%", height: "100%" };
+      cResult[4] = size;
+      tmp11 = size;
+    } else {
+      tmp11 = cResult[4];
+    }
+    if (cResult[5] === onLoad) {
+      let tmp12;
+      if (cResult[6] === uri) {
+        tmp12 = cResult[7];
+      }
+      return tmp12;
+    }
+    const obj3 = { ref, url: uri, autoplay: false, style: tmp11, onLoad };
+    const tmp14 = map1(APNGPlayer.APNGPlayer, obj3);
+    cResult[5] = onLoad;
+    cResult[6] = uri;
+    cResult[7] = tmp14;
+    tmp12 = tmp14;
+  }
+  const fn = function n() {
+    if (closure_0) {
+      aPNGPlayerControls.play();
+    } else {
+      aPNGPlayerControls.stop();
+    }
+  };
+  const items = [undefined === animate || animate, aPNGPlayerControls];
+  cResult[0] = undefined === animate || animate;
+  cResult[1] = aPNGPlayerControls;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp8 = items;
+  tmp7 = fn;
+}) : ((animate) => {
+  let onLoad;
+  let uri;
+  let flag = animate.animate;
+  ({ uri, onLoad } = animate);
+  if (flag === undefined) {
+    flag = true;
+  }
+  const ref = react.useRef(null);
+  const obj = APNGPlayer;
+  const aPNGPlayerControls = obj.useAPNGPlayerControls(ref);
+  const items = [flag, aPNGPlayerControls];
+  const effect = react.useEffect(() => {
+    if (flag) {
+      aPNGPlayerControls.play();
+    } else {
+      aPNGPlayerControls.stop();
+    }
+  }, items);
+  return map1(APNGPlayer.APNGPlayer, { ref, url, autoplay: false, style: { width: "100%", height: "100%" }, onLoad });
+}));
+const memo3 = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_24 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let animate;
+  let onLoad;
+  let style;
+  let uri;
+  const obj = react2;
+  const cResult = obj.c(7);
+  ({ uri, style, onLoad, animate } = arg0);
+  const tmpResult = utils_PlatformUtils;
+  const tmp5 = tmpResult.isAndroid() ? closure_23 : closure_22;
+  if (cResult[0] === (undefined === animate || animate)) {
+    if (cResult[1] === onLoad) {
+      let tmp6;
+      if (cResult[2] === uri) {
+        tmp6 = cResult[3];
+      }
+      if (cResult[4] === style) {
+        let tmp8;
+        if (cResult[5] === tmp6) {
+          tmp8 = cResult[6];
+        }
+        return tmp8;
+      }
+      const obj2 = { style, renderToHardwareTextureAndroid: true, needsOffscreenAlphaCompositing: true, children: tmp6 };
+      const tmp11 = map1(metroImportAll, obj2);
+      cResult[4] = style;
+      cResult[5] = tmp6;
+      cResult[6] = tmp11;
+      tmp8 = tmp11;
+    }
+  }
+  const tmp7 = map1(tmp5, { uri, onLoad, animate: undefined === animate || animate });
+  cResult[0] = undefined === animate || animate;
+  cResult[1] = onLoad;
+  cResult[2] = uri;
+  cResult[3] = tmp7;
+  tmp6 = tmp7;
+}) : ((animate) => {
+  let onLoad;
+  let style;
+  let uri;
+  let flag = animate.animate;
+  ({ uri, style, onLoad } = animate);
+  if (flag === undefined) {
+    flag = true;
+  }
+  const obj = utils_PlatformUtils;
+  const obj2 = { style, renderToHardwareTextureAndroid: true, needsOffscreenAlphaCompositing: true, children: map1(obj.isAndroid() ? closure_23 : closure_22, { uri, onLoad, animate: flag }) };
+  return map1(metroImportAll, obj2);
+}));
+createStyles = createStyles_mod;
+let closure_25 = createStyles.createStyles({ animatedOrb: { position: "absolute", height: "130%", width: "130%", left: "-15%", top: "-15%", pointerEvents: "none" } });
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let obj4;
+  let tmp5;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const tmp3 = closure_25();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    size = { width: "100%", height: "100%" };
+    cResult[0] = size;
+    first = size;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { uri: _modDef10719 };
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== tmp3.animatedOrb) {
+    const obj3 = { style: first, children: map1(FastImageDefault, obj4) };
+    obj4 = { source: tmp5, style: tmp3.animatedOrb, fade: false };
+    const tmp11 = map1(metroImportAll, obj3);
+    cResult[2] = tmp3.animatedOrb;
+    cResult[3] = tmp11;
+    tmp7 = tmp11;
+  } else {
+    tmp7 = cResult[3];
+  }
+  return tmp7;
+}) : (() => {
+  let obj2;
+  let obj3;
+  let tmp;
+  let tmp2;
+  const obj = { style: { width: "100%", height: "100%" }, children: map1(tmp2, obj2) };
+  obj2 = { source: obj3, style: tmp.animatedOrb, fade: false };
+  obj3 = { uri: _modDef10719 };
+  tmp = closure_25();
+  tmp2 = FastImageDefault;
+  return map1(metroImportAll, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((isAppActive) => {
+  let closure_1;
+  let closure_129_4;
+  let first;
+  let first1;
+  let first2;
+  let fn2;
+  let items;
+  let items2;
+  let tmp11;
+  let tmp9;
+  let tmp = dependencyMap;
+  const obj = react2;
+  const cResult = obj.c(27);
+  isAppActive = isAppActive.isAppActive;
+  const tmp3 = closure_25();
+  [first, closure_1] = react.useState(false);
+  [first1, _slicedToArray] = react.useState(false);
+  [tmp9, closure_129_4] = react.useState(true);
+  _slicedToArray(react.useState(true), 2);
+  const obj2 = react;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l() {
+      closure_1(true);
+    };
+    cResult[0] = fn;
+    first2 = fn;
+  } else {
+    first2 = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor() {
+        closure_3(true);
+      }
+    }
+    cResult[1] = L;
+    tmp11 = L;
+  } else {
+    class L {
+      constructor() {
+        closure_3(true);
+      }
+    }
+  }
+  if (cResult[2] === first) {
+    class L {
+      constructor() {
+        closure_3(true);
+      }
+    }
+    const effect = obj2.useEffect(fn2, items2);
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class L {
+        constructor() {
+          closure_3(true);
+        }
+      }
+      cResult[6] = tmp14;
+    } else {
+      class L {
+        constructor() {
+          closure_3(true);
+        }
+      }
+    }
+    if (cResult[7] === first) {
+      class L {
+        constructor() {
+          closure_3(true);
+        }
+      }
+      if (cResult[10] === first1) {
+        class L {
+          constructor() {
+            closure_3(true);
+          }
+        }
+        if (cResult[13] === tmp3.animatedOrb) {
+          class L {
+            constructor() {
+              closure_3(true);
+            }
+          }
+          if (cResult[16] === tmp20) {
+            class L {
+              constructor() {
+                closure_3(true);
+              }
+            }
+            if (cResult[19] === isAppActive) {
+              class L {
+                constructor() {
+                  closure_3(true);
+                }
+              }
+            }
+            let tmp28 = tmp9;
+            if (tmp28) {
+              class L {
+                constructor() {
+                  closure_3(true);
+                }
+              }
+              const obj3 = { uri: _modDef10721, style: items, onLoad: first2, animate: isAppActive };
+              items = [tmp3.animatedOrb];
+              tmp28 = map1(closure_24, obj3);
+            }
+            cResult[19] = isAppActive;
+            cResult[20] = tmp9;
+            cResult[21] = tmp3.animatedOrb;
+            cResult[22] = tmp28;
+          }
+          const obj4 = { uri: _modDef10720, style: tmp20, onLoad: tmp11, animate: !tmp9 && isAppActive };
+          cResult[16] = tmp20;
+          cResult[17] = !tmp9 && isAppActive;
+          cResult[18] = map1(closure_24, obj4);
+          const tmp26 = map1(closure_24, obj4);
+        }
+        const items1 = [tmp3.animatedOrb, tmp18];
+        cResult[13] = tmp3.animatedOrb;
+        cResult[14] = tmp18;
+        cResult[15] = items1;
+      }
+      const tmp19 = (tmp9 || !first1) && { opacity: 0 };
+      cResult[10] = first1;
+      cResult[11] = tmp9;
+      cResult[12] = tmp19;
+    }
+    let tmp16 = !first && !first1;
+    if (tmp16) {
+      class L {
+        constructor() {
+          closure_3(true);
+        }
+      }
+      const obj5 = { style: { height: "100%" } };
+      tmp16 = map1(metroImportAll, obj5);
+    }
+    cResult[7] = first;
+    cResult[8] = first1;
+    cResult[9] = tmp16;
+  }
+  fn2 = function w() {
+    let closure_0;
+    let timeout;
+    const tmp = timeout;
+    if (tmp) {
+      const tmp2 = first1;
+      if (tmp2) {
+        const _setTimeout = setTimeout;
+        timeout = setTimeout(() => {
+          closure_1_4(false);
+        }, 1450);
+        return () => clearTimeout(closure_0);
+      }
+    }
+  };
+  items2 = [first, first1];
+  cResult[2] = first;
+  cResult[3] = first1;
+  cResult[4] = fn2;
+  cResult[5] = items2;
+}) : ((isAppActive) => {
+  let c4;
+  let closure_1;
+  let closure_3;
+  let first;
+  let first1;
+  let items1;
+  let items2;
+  let items3;
+  let tmp15Result;
+  let tmp7;
   isAppActive = isAppActive.isAppActive;
   first = undefined;
   closure_1 = undefined;
   first1 = undefined;
   closure_3 = undefined;
   c4 = undefined;
-  const tmp = closure_25();
-  [first, closure_1] = noop.useState(false);
-  [first1, closure_3] = noop.useState(false);
-  [tmp7, c4] = noop.useState(true);
-  const callback = noop.useCallback(() => {
+  let tmp = closure_25();
+  [first, closure_1] = react.useState(false);
+  [first1, closure_3] = react.useState(false);
+  [tmp7, c4] = react.useState(true);
+  _slicedToArray(react.useState(true), 2);
+  const callback = react.useCallback(() => {
     closure_1(true);
   }, []);
   const items = [first, first1];
-  const callback1 = noop.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     closure_3(true);
   }, []);
-  const effect = noop.useEffect(() => {
-    if (timeout) {
-      if (first1) {
+  const effect = react.useEffect(() => {
+    let closure_0;
+    let timeout;
+    const tmp = timeout;
+    if (tmp) {
+      const tmp2 = first1;
+      if (tmp2) {
         const _setTimeout = setTimeout;
         timeout = setTimeout(() => {
           closure_1_4(false);
@@ -94,8 +674,9 @@ function AnimatedOrbContainer(isAppActive) {
       }
     }
   }, items);
-  const obj = { style: { width: "100%", height: "100%" }, children: null };
   let tmp13 = !first;
+  const obj = { style: { width: "100%", height: "100%" }, children: items1 };
+  const tmp11 = closure_15;
   if (!first) {
     tmp13 = !first1;
   }
@@ -103,243 +684,520 @@ function AnimatedOrbContainer(isAppActive) {
     const obj2 = { style: { height: "100%" } };
     tmp13 = map1(tmp12, obj2);
   }
-  const items1 = [tmp13, , ];
-  const obj3 = { uri: _modDef12063, style: null, onLoad: null, animate: null };
-  const items2 = [tmp.animatedOrb, ];
-  let obj4 = tmp15Result;
-  if (!tmp15Result) {
-    obj4 = !first1;
-  }
-  if (obj4) {
-    obj4 = { opacity: 0 };
-  }
-  items2[1] = obj4;
-  obj3.style = items2;
-  obj3.onLoad = callback1;
-  let tmp19 = !tmp15Result;
-  if (!tmp15Result) {
-    tmp19 = isAppActive;
-  }
-  obj3.animate = tmp19;
+  items1 = [tmp13, , ];
+  const obj3 = { uri: _modDef10720, style: items2, onLoad: callback1, animate: !tmp15Result && isAppActive };
+  items2 = [tmp.animatedOrb, (tmp15Result || !first1) && { opacity: 0 }];
   items1[1] = map1(closure_24, obj3);
   if (tmp15Result) {
-    const obj5 = { uri: _modDef12064, style: null, onLoad: null, animate: null };
-    const items3 = [tmp.animatedOrb];
-    obj5.style = items3;
-    obj5.onLoad = callback;
-    obj5.animate = isAppActive;
-    tmp15Result = tmp15(tmp16, obj5);
+    const obj4 = { uri: _modDef10721, style: items3, onLoad: callback, animate: isAppActive };
+    items3 = [tmp.animatedOrb];
+    tmp15Result = map1(closure_24, obj4);
   }
   items1[2] = tmp15Result;
-  obj.children = items1;
-  return __initData(React6, obj);
-}
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: metroRequire, StyleSheet: closure_7, View: closure_8 } = get_ActivityIndicator);
-const RewardFilterTypes = fn(5693).RewardFilterTypes;
-const jsxProd = fn(21);
-({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-const QuestOrbsRewardModal = "QuestOrbsRewardModal";
-let createStyles = fn(4788);
-let obj = { closeButton: { alignSelf: "flex-start", marginHorizontal: nativeDefault.space.PX_16, zIndex: 999 }, closeButtonIcon: null };
-let obj3 = { alignSelf: "flex-start", marginHorizontal: nativeDefault.space.PX_16, zIndex: 999 };
-obj.closeButtonIcon = { tintColor: nativeDefault.colors.WHITE };
-let closure_17 = createStyles.createStyles(obj);
-createStyles = fn(4788);
-let closure_18 = createStyles.createStyles(() => {
-  const obj = { root: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, background: React5.absoluteFillObject, loading: null, header: null, main: null, animation: null, body: null, title: null, buttonsContainer: null };
-  const obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-  const merged = Object.assign(React5.absoluteFillObject);
-  obj.loading = { justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-  obj.header = { flexDirection: "row", alignItems: "flex-end", justifyContent: "flex-end" };
-  obj.main = { flex: 2 };
-  obj.animation = { flex: 3 };
-  const obj3 = { justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-  obj.body = { flex: 2, flexDirection: "column", justifyContent: "center", gap: nativeDefault.space.PX_16 };
-  const obj4 = { flex: 2, flexDirection: "column", justifyContent: "center", gap: nativeDefault.space.PX_16 };
-  obj.title = { textAlign: "center", marginHorizontal: nativeDefault.space.PX_32 };
-  const obj5 = { textAlign: "center", marginHorizontal: nativeDefault.space.PX_32 };
-  obj.buttonsContainer = { padding: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_16 };
-  return obj;
+  return tmp11(metroImportAll, obj);
 });
-createStyles = fn(4788);
-let obj5 = { orbsIcon: null, spacer: { width: 2 } };
-const obj8 = { transform: null };
-let items = [{ translateY: 3 }];
-obj8.transform = items;
-obj5.orbsIcon = obj8;
-let closure_19 = createStyles.createStyles(obj5);
-let closure_22 = noop.memo((onLoad) => {
-  const uri = onLoad.uri;
-  let flag = onLoad.animate;
-  if (flag === undefined) {
-    flag = true;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+  let Button;
+  let FIilK5;
+  let balance;
+  let currentUser;
+  let format;
+  let format3Result;
+  let intl2;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let obj10;
+  let obj15;
+  let obj3;
+  let state;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp15;
+  let tmp16;
+  let tmp21;
+  let tmp22;
+  let tmp33Result;
+  let tmp34Result;
+  let tmp5;
+  let tmp6;
+  let useReducedMotion;
+  let obj = balance(576);
+  const cResult = obj.c(21);
+  quest = quest.quest;
+  const tmp4 = closure_18();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function p() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
   }
-  const items = [uri];
-  const effect = noop.useEffect(() => {
-    FastImageDefault.preload(uri);
-  }, items);
-  return closure_13(FastImageDefault, { source: { uri }, style: { width: "100%", height: "100%" }, resizeMode: "cover", enableAnimation: flag, onLoad: onLoad.onLoad, usesSmallCache: false, fade: false }, "orb-animate-" + flag);
-});
-let closure_23 = noop.memo((animate) => {
-  let flag = animate.animate;
-  ({ uri, onLoad } = animate);
-  if (flag === undefined) {
-    flag = true;
-  }
-  const ref = noop.useRef(null);
-  const aPNGPlayerControls = APNGPlayer.useAPNGPlayerControls(ref);
-  const items = [flag, aPNGPlayerControls];
-  const effect = noop.useEffect(() => {
-    if (flag) {
-      obj.play();
-    } else {
-      obj.stop();
+  const tmpResult = balance(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const tmpResult5 = balance(8312);
+  balance = tmpResult5.useFetchVirtualCurrencyBalance().balance;
+  [tmp10, importDefault] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  const obj4 = react;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [AppStateStore];
+    class L {
+      constructor() {
+        return state.getState();
+      }
     }
-  }, items);
-  return map1(APNGPlayer.APNGPlayer, { ref, url, autoplay: false, style: { width: "100%", height: "100%" }, onLoad });
-});
-let closure_24 = noop.memo((animate) => {
-  let flag = animate.animate;
-  ({ uri, style, onLoad } = animate);
-  if (flag === undefined) {
-    flag = true;
+    cResult[2] = items1;
+    cResult[3] = L;
+    tmp12 = L;
+    tmp11 = items1;
+  } else {
+    tmp11 = cResult[2];
+    tmp12 = cResult[3];
   }
-  return map1(React6, { style, renderToHardwareTextureAndroid: true, needsOffscreenAlphaCompositing: true, children: map1(utils_PlatformUtils.isAndroid() ? closure_23 : closure_22, { uri, onLoad, animate: flag }) });
-});
-createStyles = fn(4788);
-let closure_25 = createStyles.createStyles({ animatedOrb: { position: "absolute", height: "130%", width: "130%", left: "-15%", top: "-15%", pointerEvents: "none" } });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/quests/native/QuestOrbsRewardModal.native.tsx");
-
-export default function QuestOrbsRewardModal(quest) {
+  const tmpResult6 = balance(504);
+  const stateFromStores1 = tmpResult6.useStateFromStores(tmp11, tmp12);
+  const ACTIVE = tmp(1106).AppStates.ACTIVE;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [UserStore];
+    class L {
+      constructor() {
+        return state.getState();
+      }
+    }
+    cResult[4] = items2;
+    cResult[5] = tmp18;
+    tmp16 = tmp18;
+    tmp15 = items2;
+  } else {
+    tmp15 = cResult[4];
+    tmp16 = cResult[5];
+  }
+  const userStatus = quest.userStatus;
+  let orbQuantityClaimed;
+  const tmpResult7 = balance(504);
+  const stateFromStores2 = tmpResult7.useStateFromStores(tmp15, tmp16);
+  if (userStatus != null) {
+    orbQuantityClaimed = userStatus.orbQuantityClaimed;
+  }
+  if (orbQuantityClaimed == null) {
+    const tmpResult8 = balance(9776);
+    orbQuantityClaimed = tmpResult8.getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class U {
+      constructor() {
+        obj = balance(closure_1_2[30]);
+        applyOrientationLockResult = obj.applyOrientationLock("PORTRAIT");
+        return () => {
+          const obj = balance(closure_1_2[30]);
+          const result = obj.restoreDefaultOrientationLock();
+        };
+      }
+    }
+    const items3 = [];
+    class L {
+      constructor() {
+        return state.getState();
+      }
+    }
+    cResult[7] = items3;
+    tmp22 = items3;
+    tmp21 = U;
+  } else {
+    class U {
+      constructor() {
+        obj = balance(closure_1_2[30]);
+        applyOrientationLockResult = obj.applyOrientationLock("PORTRAIT");
+        return () => {
+          const obj = balance(closure_1_2[30]);
+          const result = obj.restoreDefaultOrientationLock();
+        };
+      }
+    }
+    tmp22 = cResult[7];
+  }
+  const effect = obj4.useEffect(tmp21, tmp22);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class X {
+      constructor() {
+        importDefault(true);
+      }
+    }
+    cResult[8] = X;
+    class L {
+      constructor() {
+        return state.getState();
+      }
+    }
+  } else {
+    class X {
+      constructor() {
+        importDefault(true);
+      }
+    }
+  }
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class X {
+      constructor() {
+        importDefault(true);
+      }
+    }
+    cResult[9] = tmp26;
+    class L {
+      constructor() {
+        return state.getState();
+      }
+    }
+  } else {
+    class X {
+      constructor() {
+        importDefault(true);
+      }
+    }
+  }
+  if (cResult[10] !== tmp4.background) {
+    class X {
+      constructor() {
+        importDefault(true);
+      }
+    }
+    let obj2 = { style: null, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_13(tmp(10723).OrbsRewardBackground, obj3) };
+    class L {
+      constructor() {
+        return state.getState();
+      }
+    }
+    obj3 = { style: tmp4.background, onReady: tmp24 };
+    cResult[10] = tmp4.background;
+    cResult[11] = closure_13(closure_8, obj2);
+    const tmp30 = closure_13(closure_8, obj2);
+  } else {
+    class X {
+      constructor() {
+        importDefault(true);
+      }
+    }
+  }
+  if (cResult[12] === tmp33Result) {
+    class X {
+      constructor() {
+        importDefault(true);
+      }
+    }
+    if (tmp33Result) {
+      class X {
+        constructor() {
+          importDefault(true);
+        }
+      }
+      const rect = { style: items4, top: true, bottom: true, left: true, right: true, children: items5 };
+      items4 = [];
+      class L {
+        constructor() {
+          return state.getState();
+        }
+      }
+      const obj5 = { style: tmp4.header, children: closure_13(closure_21, {}) };
+      const SafeAreaPaddingView = tmp(6546).SafeAreaPaddingView;
+      items5 = [closure_13(closure_8, obj5), , , ];
+      const obj6 = { style: tmp4.animation, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp34Result };
+      if (stateFromStores) {
+        class X {
+          constructor() {
+            importDefault(true);
+          }
+        }
+        tmp34Result = closure_13(closure_26, {});
+      } else {
+        class X {
+          constructor() {
+            importDefault(true);
+          }
+        }
+        class L {
+          constructor() {
+            return state.getState();
+          }
+        }
+      }
+      items5[1] = closure_13(closure_8, obj6);
+      const obj8 = { style: tmp4.body, children: items6 };
+      const obj9 = { variant: "heading-xl/bold", color: "text-overlay-light", style: tmp4.title, children: format(FIilK5, obj10) };
+      const Heading = tmp(4833).Heading;
+      let intl = tmp(1127).intl;
+      format = intl.format;
+      FIilK5 = tmp(1127).t.FIilK5;
+      if (orbQuantityClaimed == null) {
+        class X {
+          constructor() {
+            importDefault(true);
+          }
+        }
+      }
+      obj10 = { count: orbQuantityClaimed };
+      items6 = [closure_13(Heading, obj9), ];
+      const obj11 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp4.title, children: format3Result };
+      let Text = tmp(4833).Text;
+      if (balance == null) {
+        class X {
+          constructor() {
+            importDefault(true);
+          }
+        }
+      }
+      if (balance >= 4100) {
+        class X {
+          constructor() {
+            importDefault(true);
+          }
+        }
+        const format3 = tmp39.format;
+        const obj12 = {
+          balanceHook: null,
+          profileDecoHook() {
+                  let intl;
+                  const obj = { variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(balance(dependencyMap[18]).t.pGDUH9) };
+                  const Text = balance(dependencyMap[35]).Text;
+                  intl = balance(dependencyMap[18]).intl;
+                  return closure_1_13(Text, obj, "profileDeco");
+                }
+        };
+        class L {
+          constructor() {
+            return state.getState();
+          }
+        }
+        format3Result = format3(tmp(1127).t["2dz2AL"], obj12);
+      } else {
+        class X {
+          constructor() {
+            importDefault(true);
+          }
+        }
+        const format2 = tmp37.format;
+        const obj13 = { balanceHook: null };
+        class L {
+          constructor() {
+            return state.getState();
+          }
+        }
+        format3Result = format2(tmp(1127).t.rKHvlX, obj13);
+      }
+      items6[1] = closure_13(Text, obj11);
+      items5[2] = tmp33(closure_8, obj8);
+      const obj14 = { style: tmp4.buttonsContainer, children: closure_13(Button, obj15) };
+      obj15 = { onPress: tmp25, variant: "primary", size: "lg", text: intl2.string(balance(1127).t.uJAMFX) };
+      Button = tmp(5282).Button;
+      intl2 = tmp(1127).intl;
+      items5[3] = closure_13(closure_8, obj14);
+      tmp33Result = tmp33(SafeAreaPaddingView, rect);
+    }
+    if (cResult[15] === closure_8) {
+      class X {
+        constructor() {
+          importDefault(true);
+        }
+      }
+    }
+    class L {
+      constructor() {
+        return state.getState();
+      }
+    }
+    const obj16 = { style: tmp4.root, children: items7 };
+    items7 = [tmp28, tmp31, tmp33Result];
+    cResult[15] = closure_8;
+    cResult[16] = tmp4.root;
+    cResult[17] = tmp28;
+    cResult[18] = tmp31;
+    cResult[19] = tmp33Result;
+    cResult[20] = closure_15(closure_8, obj16);
+    const tmp41 = closure_15(closure_8, obj16);
+  }
+  let tmp32 = !tmp33Result;
+  if (tmp32) {
+    class X {
+      constructor() {
+        importDefault(true);
+      }
+    }
+    const obj17 = { style: tmp4.loading, children: closure_13(closure_6, { animating: true }) };
+    class L {
+      constructor() {
+        return state.getState();
+      }
+    }
+    tmp32 = closure_13(tmp27, obj17);
+  }
+  cResult[12] = tmp33Result;
+  cResult[13] = tmp4.loading;
+  cResult[14] = tmp32;
+}) : ((quest) => {
+  let Button;
+  let FIilK5;
+  let _undefined;
+  let c1;
+  let currentUser;
+  let format;
+  let formatResult;
+  let intl4;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let obj15;
+  let obj20;
+  let obj8;
+  let state;
+  let tmp12Result;
+  let tmp14Result2;
+  let tmp6;
+  let useReducedMotion;
   quest = quest.quest;
   let num;
   c1 = undefined;
-  let tmp = closure_18();
-  let stringResult = dependencyMap;
-  const items = [AccessibilityStore];
-  const stateFromStores = num(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const tmp = closure_18();
   let obj = num(504);
-  num = num(9161).useFetchVirtualCurrencyBalance().balance;
-  let obj2 = num(9161);
-  [tmp6, c1] = noop.useState(false);
-  const tmp5 = _slicedToArray(noop.useState(false), 2);
+  const items = [AccessibilityStore];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj2 = num(8312);
+  num = obj2.useFetchVirtualCurrencyBalance().balance;
+  let obj3 = react;
+  [tmp6, c1] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
   const items1 = [AppStateStore];
-  const stateFromStores1 = num(504).useStateFromStores(items1, () => state.getState());
   const obj4 = num(504);
+  const stateFromStores1 = obj4.useStateFromStores(items1, () => state.getState());
+  const ACTIVE = num(1106).AppStates.ACTIVE;
   const items2 = [UserStore];
   const userStatus = quest.userStatus;
   let num2;
-  const stateFromStores2 = num(504).useStateFromStores(items2, () => currentUser.getCurrentUser());
+  const obj5 = num(504);
+  const stateFromStores2 = obj5.useStateFromStores(items2, () => currentUser.getCurrentUser());
   if (userStatus != null) {
     num2 = userStatus.orbQuantityClaimed;
   }
   if (num2 == null) {
-    num2 = tmp2(11582).getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
-    const tmp2Result = tmp2(11582);
+    const tmp2Result = num(9776);
+    num2 = tmp2Result.getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
   }
   const effect = obj3.useEffect(() => {
-    num(12065).applyOrientationLock("PORTRAIT");
+    let obj = num(dependencyMap[30]);
+    obj.applyOrientationLock("PORTRAIT");
     return () => {
-      const result = num(dependencyMap[28]).restoreDefaultOrientationLock();
+      const obj = num(closure_1_2[30]);
+      const result = obj.restoreDefaultOrientationLock();
     };
   }, []);
   const callback = obj3.useCallback(() => {
     _undefined(true);
   }, []);
-  let string = obj3.useCallback(() => {
-    _undefined(4991).popWithKey(QuestOrbsRewardModal);
-    const obj = _undefined(4991);
-    const obj2 = num(12049);
-    obj2.openQuestHome({ filter: constants.VIRTUAL_CURRENCY, fromContent: num(5696).QuestContent.REWARD_MODAL });
+  const obj6 = { style: tmp.root, children: items3 };
+  const obj7 = { style: absoluteFill.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_13(num(10723).OrbsRewardBackground, obj8) };
+  const callback1 = obj3.useCallback(() => {
+    const obj = _undefined(dependencyMap[9]);
+    obj.popWithKey(QuestOrbsRewardModal);
+    const obj2 = num(dependencyMap[31]);
+    const obj3 = { filter: constants.VIRTUAL_CURRENCY, fromContent: num(dependencyMap[32]).QuestContent.REWARD_MODAL };
+    obj2.openQuestHome(obj3);
   }, []);
-  const obj6 = { style: tmp.root, children: null };
-  const obj7 = { style: absoluteFill.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_13(num(12066).OrbsRewardBackground, { style: tmp.background, onReady: callback }) };
-  const items3 = [closure_13(closure_8, obj7), , ];
-  let tmp13Result = !tmp6;
-  if (!tmp6) {
-    const obj9 = { style: tmp.loading, children: tmp13(closure_6, { animating: true }) };
-    tmp13Result = tmp13(tmp12, obj9);
+  obj8 = { style: tmp.background, onReady: callback };
+  items3 = [closure_13(closure_8, obj7), , ];
+  let tmp14Result = !tmp12Result;
+  if (tmp14Result) {
+    const obj9 = { style: tmp.loading, children: closure_13(closure_6, { animating: true }) };
+    tmp14Result = tmp14(tmp13, obj9);
   }
-  items3[1] = tmp13Result;
-  if (!tmp6) {
-    items3[2] = tmp6;
-    obj6.children = items3;
-    return tmp11(tmp12, obj6);
-  } else {
-    const rect = { style: null, top: true, bottom: true, left: true, right: true, children: null };
-    const items4 = [tmp.main];
-    rect.style = items4;
-    const obj10 = { style: tmp.header, children: tmp13(CancelButton, {}) };
-    const items5 = [tmp13(tmp12, obj10), , , ];
-    const obj11 = { style: tmp.animation, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
+  items3[1] = tmp14Result;
+  if (tmp12Result) {
+    const rect = { style: items4, top: true, bottom: true, left: true, right: true, children: items5 };
+    items4 = [tmp.main];
+    const obj10 = { style: tmp.header, children: closure_13(closure_21, {}) };
+    const SafeAreaPaddingView = tmp2(6546).SafeAreaPaddingView;
+    items5 = [closure_13(closure_8, obj10), , , ];
+    const obj11 = { style: tmp.animation, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp14Result2 };
     if (stateFromStores) {
-      let tmp13Result2 = tmp13(StaticOrb, {});
+      tmp14Result2 = tmp14(closure_26, {});
     } else {
-      const obj12 = { isAppActive: stateFromStores1 === num(1094).AppStates.ACTIVE };
-      tmp13Result2 = tmp13(AnimatedOrbContainer, obj12);
+      const obj12 = { isAppActive: stateFromStores1 === ACTIVE };
+      tmp14Result2 = tmp14(closure_27, obj12);
     }
-    obj11.children = tmp13Result2;
-    items5[1] = tmp13(tmp12, obj11);
-    let obj13 = { style: tmp.body, children: null };
-    const obj14 = { variant: "heading-xl/bold", color: "text-overlay-light", style: tmp.title, children: null };
-    let intl = tmp2(1115).intl;
+    items5[1] = closure_13(closure_8, obj11);
+    const obj13 = { style: tmp.body, children: items6 };
+    const obj14 = { variant: "heading-xl/bold", color: "text-overlay-light", style: tmp.title, children: format(FIilK5, obj15) };
+    const Heading = tmp2(4833).Heading;
+    let intl = tmp2(1127).intl;
+    format = intl.format;
+    FIilK5 = tmp2(1127).t.FIilK5;
     if (num2 == null) {
       num2 = 0;
     }
-    const obj15 = { count: num2 };
-    obj14.children = intl.format(tmp2(1115).t.FIilK5, obj15);
-    let items6 = [tmp13(tmp2(4784).Heading, obj14), ];
-    let obj16 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp.title, children: null };
+    obj15 = { count: num2 };
+    items6 = [closure_13(Heading, obj14), ];
+    const obj16 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp.title, children: formatResult };
+    let Text = tmp2(4833).Text;
     if (num == null) {
       num = 0;
     }
     if (num >= 4100) {
-      const intl3 = tmp2(1115).intl;
+      const intl3 = tmp2(1127).intl;
       const obj17 = {
         balanceHook() {
-              return map1(OrbsBalance, { balance: num }, "balance");
+              const obj = { balance: num };
+              return map1(closure_20, obj, "balance");
             },
         profileDecoHook() {
-              const obj = { variant: "text-md/semibold", color: "text-overlay-light", children: null };
-              const intl = num(1115).intl;
-              obj.children = intl.string(num(1115).t.pGDUH9);
-              return closure_1_13(num(4784).Text, obj, "profileDeco");
+              let intl;
+              const obj = { variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(num(dependencyMap[18]).t.pGDUH9) };
+              const Text = num(dependencyMap[35]).Text;
+              intl = num(dependencyMap[18]).intl;
+              return closure_1_13(Text, obj, "profileDeco");
             }
       };
-      let formatResult = intl3.format(tmp2(1115).t["2dz2AL"], obj17);
+      formatResult = intl3.format(tmp2(1127).t["2dz2AL"], obj17);
     } else {
-      const intl2 = tmp2(1115).intl;
+      const intl2 = tmp2(1127).intl;
       const obj18 = {
         balanceHook() {
-              return map1(OrbsBalance, { balance: num }, "balance");
+              const obj = { balance: num };
+              return map1(closure_20, obj, "balance");
             }
       };
-      formatResult = intl2.format(tmp2(1115).t.rKHvlX, obj18);
+      formatResult = intl2.format(tmp2(1127).t.rKHvlX, obj18);
     }
-    obj16.children = formatResult;
-    items6[1] = tmp13(tmp2(4784).Text, obj16);
-    obj13.children = items6;
-    items5[2] = tmp11(tmp12, obj13);
-    const obj19 = { style: tmp.buttonsContainer, children: null };
-    items6 = tmp2(5218).Button;
-    const obj20 = { onPress: string, variant: "primary", size: "lg", text: null };
-    obj16 = tmp2(1115).intl;
-    string = obj16.string;
-    stringResult = string(tmp2(1115).t.uJAMFX);
-    obj20.text = stringResult;
-    tmp = tmp13(items6, obj20);
-    obj19.children = tmp;
-    obj13 = tmp13(tmp12, obj19);
-    items5[3] = obj13;
-    rect.children = items5;
-    tmp11(tmp2(7400).SafeAreaPaddingView, rect);
+    items6[1] = closure_13(Text, obj16);
+    items5[2] = closure_15(closure_8, obj13);
+    const obj19 = { style: tmp.buttonsContainer, children: closure_13(Button, obj20) };
+    obj20 = { onPress: callback1, variant: "primary", size: "lg", text: intl4.string(num(1127).t.uJAMFX) };
+    Button = tmp2(5282).Button;
+    intl4 = tmp2(1127).intl;
+    items5[3] = closure_13(closure_8, obj19);
+    tmp12Result = closure_15(SafeAreaPaddingView, rect);
   }
-};
+  items3[2] = tmp12Result;
+  return closure_15(closure_8, obj6);
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/quests/native/QuestOrbsRewardModal.native.tsx");
+
+export default tmp6;
 export const openQuestOrbsRewardModal = function openQuestOrbsRewardModal(quest) {
-  ModalActionCreatorsDefault.pushLazy(asyncGeneratorStep(async () => {
-    await require("asyncRequireImpl")(paths[10], paths.paths);
+  let paths;
+  quest = quest.quest;
+  const obj = ModalActionCreatorsDefault;
+  obj.pushLazy(_asyncToGenerator(async () => {
+    let c0;
+    let c1;
+    await require("asyncRequire")(paths[10], paths.paths);
     return arg1.default;
-  }), { quest: quest.quest }, QuestOrbsRewardModal);
+  }), { quest }, QuestOrbsRewardModal);
 };

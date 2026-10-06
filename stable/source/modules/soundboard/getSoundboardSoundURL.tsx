@@ -1,20 +1,21 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 14104
+// Function ID: 14105
 // Name: getSoundboardSoundURL
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: default
 
-// Module 14852 (getSoundboardSoundURL)
-import Constants from "Constants" /* 1074 */;
+// Module 14104 (getSoundboardSoundURL)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/soundboard/getSoundboardSoundURL.tsx");
 
 export default function getSoundboardSoundURL(arg0) {
+  let combined;
   if ("development" !== window.GLOBAL_ENV.PROJECT_ENV) {
     const _HermesInternal2 = HermesInternal;
-    let combined = "https://" + tmp + Endpoints.SOUNDBOARD_SOUND(arg0);
+    combined = "https://" + tmp + Endpoints.SOUNDBOARD_SOUND(arg0);
   } else {
     const _location = location;
     const _window = window;

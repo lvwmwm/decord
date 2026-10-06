@@ -1,77 +1,92 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 12881
+// Function ID: 12882
 // Name: premiumOrbsDeliveredModal
-// Dependencies: [19, 7668, 1074, 13640, 21, 5141, 13641, 11, 13643, 2]
+// Dependencies: [19, 6815, 1086, 12882, 21, 5205, 12883, 11, 12885, 2]
 // Exports: anchorOrbsPurchaseStart, openOrbsModalIfDelivered
 
-// Module 13639 (premiumOrbsDeliveredModal)
-import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 13643 */;
-import noop from "module_19" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 7668 */;
+// Module 12881 (premiumOrbsDeliveredModal)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 12882 */;
+import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 12885 */;
+import react from "react" /* 19 */;
+import EntitlementStore from "EntitlementStore" /* 6815 */;
+import size from "module_2" /* 2 */;
+
+let importDefault;
 
 function getCoinEntitlements() {
   return EntitlementStore.getForSku(SINGLE_ORB_SKU_ID);
 }
-const EntitlementTypes = fn(1074).EntitlementTypes;
-const jsx = fn(21).jsx;
-const SINGLE_ORB_SKU_ID = fn(13640).SINGLE_ORB_SKU_ID;
-const size = fn(2);
+const EntitlementTypes = Constants.EntitlementTypes;
+const SINGLE_ORB_SKU_ID = VirtualCurrencyConstants.SINGLE_ORB_SKU_ID;
+const jsx = Fragment.jsx;
+let obj = null;
 const result = size.fileFinishedImporting("modules/premium/premium_marketing/native/premiumOrbsDeliveredModal.tsx");
 
 export const anchorOrbsPurchaseStart = function anchorOrbsPurchaseStart() {
+  let _Set1;
+  let items;
   const forSku = EntitlementStore.getForSku(SINGLE_ORB_SKU_ID);
-  obj = { startedAt: Date.now(), knownCoinEntitlementIds: null };
+  obj = { startedAt: Date.now(), knownCoinEntitlementIds: _Set1 };
+  const _Set = Set;
   if (null == forSku) {
-    let items = [];
+    items = [];
   } else {
     const _Array = Array;
     items = Array.from(forSku, (id) => id.id);
   }
-  obj.knownCoinEntitlementIds = new Set(items);
+  _Set1 = new _Set(items);
 };
 export const openOrbsModalIfDelivered = function openOrbsModalIfDelivered() {
-  c6 = null;
-  if (null != c6) {
-    if (obj.getConfig({ location: "premiumOrbsDeliveredModal" })) {
-      let tmp4 = (function getDeliveredOrbsAmount(knownCoinEntitlementIds) {
-        const tmp = getCoinEntitlements();
-        if (null == tmp) {
-          return null;
-        } else {
-          for (const item10008 of tmp) {
-            let tmp3 = item10008;
-            if (item10008.type === constants.PURCHASE_REWARD) {
-              knownCoinEntitlementIds = arg0.knownCoinEntitlementIds;
-              if (!knownCoinEntitlementIds.has(tmp3.id)) {
-                obj = closure_0(11);
-                if (obj.extractTimestamp(tmp3.id) >= arg0.startedAt) {
-                  if (null != tmp3.orbsReward) {
-                    if (tmp3.orbsReward > 0) {
-                      obj2.return();
-                      return tmp3.orbsReward;
-                    }
-                  }
+  let closure_0;
+  let tmp;
+  function getDeliveredOrbsAmount(knownCoinEntitlementIds) {
+    const tmp = getCoinEntitlements();
+    if (null == tmp) {
+      return null;
+    } else {
+      for (const item10008 of tmp) {
+        let tmp3 = item10008;
+        if (item10008.type === constants.PURCHASE_REWARD) {
+          knownCoinEntitlementIds = knownCoinEntitlementIds.knownCoinEntitlementIds;
+          if (!knownCoinEntitlementIds.has(tmp3.id)) {
+            obj = closure_0(dependencyMap[7]);
+            if (obj.extractTimestamp(tmp3.id) >= knownCoinEntitlementIds.startedAt) {
+              if (null != tmp3.orbsReward) {
+                if (tmp3.orbsReward > 0) {
+                  let orbsReward = tmp3.orbsReward;
+                  obj2.return();
+                  return orbsReward;
                 }
               }
             }
-            continue;
           }
-          return null;
         }
-      })(tmp);
+        continue;
+      }
+      return null;
+    }
+  }
+  let c6 = null;
+  if (null != c6) {
+    let tmp3 = dependencyMap;
+    obj = PremiumOrbsDeliveredModalExperimentDefault;
+    const tmp2 = importDefault;
+    if (obj.getConfig({ location: "premiumOrbsDeliveredModal" })) {
+      let tmp4 = getDeliveredOrbsAmount(tmp);
       if (null != tmp4) {
         importDefault = tmp4;
         const obj2 = {
           importer() {
-                  return Promise.resolve((onClose) => jsx(orbsAmount(13641), { orbsAmount, onClose: onClose.onClose }));
+                  let orbsAmount;
+                  return Promise.resolve((onClose) => jsx(orbsAmount(dependencyMap[6]), { orbsAmount, onClose: onClose.onClose }));
                 },
           isDismissable: false
         };
-        tmp2(5141).openLazy(obj2);
-        const tmp2Result = tmp2(5141);
+        const tmp2Result = tmp2(5205);
+        tmp2Result.openLazy(obj2);
       }
     }
-    obj = PremiumOrbsDeliveredModalExperimentDefault;
-    tmp2 = importDefault;
   }
 };

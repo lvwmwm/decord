@@ -1,31 +1,36 @@
-// Module ID: 15684
-// Function ID: 15685
+// Module ID: 14945
+// Function ID: 14946
 // Name: YouBarNameplateAccessibilitySetting
-// Dependencies: [4780, 8265, 11754, 1115, 504, 14748, 2]
+// Dependencies: [4826, 7421, 10874, 1127, 504, 14000, 2]
 
-// Module 15684 (YouBarNameplateAccessibilitySetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14748 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+// Module 14945 (YouBarNameplateAccessibilitySetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14000 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.EEms8K);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.EEms8K);
   },
-  parent: fn(8265).MobileUserSettings.ACCESSIBILITY,
+  parent: MobileUserSettings.ACCESSIBILITY,
   useValue() {
     const items = [AccessibilityStore];
-    return initialize.useStateFromStores(items, () => AccessibilityStore.animateYouBarNameplate);
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => AccessibilityStore.animateYouBarNameplate);
   },
   onValueChange(animateNameplate) {
-    return AccessibilityActionCreators.setYouBarAnimations({ animateNameplate });
+    const obj = AccessibilityActionCreators;
+    const obj2 = { animateNameplate };
+    return obj.setYouBarAnimations(obj2);
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/YouBarNameplateAccessibilitySetting.tsx");
 
 export default toggle;

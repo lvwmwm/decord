@@ -1,26 +1,30 @@
-// Module ID: 16191
-// Function ID: 16192
+// Module ID: 15468
+// Function ID: 15469
 // Name: DisableStreamPreviewsSetting
-// Dependencies: [8265, 2019, 11754, 1115, 2]
+// Dependencies: [7421, 558, 2027, 10874, 1127, 2]
 
-// Module 16191 (DisableStreamPreviewsSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15468 (DisableStreamPreviewsSetting)
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["1CzWUK"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["1CzWUK"]);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.jTNPHM);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.jTNPHM);
   },
-  parent: SettingsConstants.MobileUserSettings.VOICE,
-  useValue() {
+  parent: MobileUserSettings.VOICE,
+  useValue: () => {
     const DisableStreamPreviews = UserSettings.DisableStreamPreviews;
     let flag = DisableStreamPreviews.useSetting();
     if (flag == null) {
@@ -29,7 +33,8 @@ const toggle = SettingBuilders.createToggle({
     return flag;
   },
   onValueChange: UserSettings.DisableStreamPreviews.updateSetting
-});
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/DisableStreamPreviewsSetting.tsx");
+};
+const toggle = SettingBuilders.createToggle(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/DisableStreamPreviewsSetting.tsx");
 
 export default toggle;

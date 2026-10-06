@@ -1,12 +1,12 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 7172
+// Function ID: 7173
 // Name: DeviceState
-// Dependencies: [8024, 2, 8025]
+// Dependencies: [7173, 2, 7174]
 // Exports: logDeviceState
 
-// Module 8023 (DeviceState)
-import device_DeviceState from "device/DeviceState" /* 8024 */;
-import constants_DeviceState from "constants/DeviceState" /* 8025 */;
+// Module 7172 (DeviceState)
+import device_DeviceState from "device/DeviceState" /* 7173 */;
+import constants_DeviceState from "constants/DeviceState" /* 7174 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/device/DeviceState.tsx");
@@ -26,10 +26,11 @@ export const logDeviceState = function logDeviceState(thermalState) {
     logger4.info("- Battery Level: " + 100 * thermalState.batteryLevel + "%");
     const logger5 = device_DeviceState.logger;
     let str6 = "Disabled";
+    const info = logger5.info;
     if (thermalState.isLowPowerMode) {
       str6 = "Enabled";
     }
-    logger5.info(`- Low Power Mode: ${str6}`);
+    info(`- Low Power Mode: ${str6}`);
   } else {
     const logger = device_DeviceState.logger;
     logger.info("Device state not available");

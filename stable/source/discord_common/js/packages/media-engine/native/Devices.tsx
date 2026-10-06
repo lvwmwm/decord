@@ -1,55 +1,62 @@
-// Module ID: 4914
-// Function ID: 4915
+// Module ID: 4963
+// Function ID: 4964
 // Name: Devices
-// Dependencies: [4845, 1340, 1994, 2]
+// Dependencies: [4894, 1352, 2001, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 4914 (Devices)
-import formatDefault from "format" /* 1340 */;
-import Constants from "Constants" /* 4845 */;
+// Module 4963 (Devices)
+import _modDef1352 from "module_1352" /* 1352 */;
+import Constants from "Constants" /* 4894 */;
 import size from "module_2" /* 2 */;
 
+let importDefault;
+
+let c3;
+let closure_4;
 ({ DEFAULT_DEVICE_ID: c3, DeviceTypes: closure_4 } = Constants);
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/native/Devices.tsx");
 
 export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
-  closure_0 = AUDIO_INPUT;
+  let c1;
+  let closure_0 = AUDIO_INPUT;
   importDefault = false;
   const mapped = items.map((item, index) => {
+    let guid;
+    let name;
+    let str2;
+    let tmp14;
     ({ guid, name, index } = item);
     if (VIDEO_INPUT === constants.VIDEO_INPUT) {
+      const obj = /^front/i;
       if (obj.test(name)) {
-        let tmp12 = id;
-        let str2 = "Default";
+        tmp14 = closure_2_3;
+        str2 = "Default";
       }
-      let tmp13 = index;
+      let tmp15 = index;
       if (null != index) {
-        tmp13 = index;
+        tmp15 = index;
       }
-      const obj3 = { id: tmp12, type: tmp10, index: tmp13, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9 };
-      return obj3;
+      return { id: tmp14, type: tmp12, index: tmp15, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9, windowsDeviceDescription: tmp10, windowsDeviceInterfaceFriendlyName: tmp11 };
     }
+    const obj2 = /^default/;
     if (obj2.test(name)) {
       c1 = true;
-      tmp12 = id;
+      tmp14 = closure_2_3;
       str2 = name.replace("default", "Default");
     } else {
-      tmp12 = name;
+      tmp14 = name;
       if (null != guid) {
-        tmp12 = name;
+        tmp14 = name;
         if ("" !== guid) {
-          tmp12 = guid;
+          tmp14 = guid;
         }
       }
       str2 = name;
     }
   });
-  let isMatch = AUDIO_INPUT !== constants.VIDEO_INPUT;
+  let isMatch = AUDIO_INPUT !== constants.VIDEO_INPUT && !importDefault;
   if (isMatch) {
-    isMatch = !importDefault;
-  }
-  if (isMatch) {
-    const tmp5 = formatDefault;
+    const tmp5 = _modDef1352;
     let family;
     if (tmp5 != null) {
       const os = tmp5.os;
@@ -60,8 +67,8 @@ export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
     isMatch = null != family;
   }
   if (isMatch) {
-    isMatch = /^win/i.test(formatDefault.os.family);
     const obj = /^win/i;
+    isMatch = obj.test(_modDef1352.os.family);
   }
   if (isMatch) {
     const obj2 = { id, type: AUDIO_INPUT, index: -1, name: "Default" };
@@ -70,47 +77,54 @@ export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
   return mapped;
 };
 export const getAudioInputDevices = function getAudioInputDevices() {
-  return new Promise((arg0) => {
-    closure_0 = arg0;
-    const voiceEngine = closure_0(1994).getVoiceEngine();
+  const promise = new Promise((arg0) => {
+    let closure_0 = arg0;
+    let obj = closure_0(closure_2[2]);
+    const voiceEngine = obj.getVoiceEngine();
     const inputDevices = voiceEngine.getInputDevices((arr) => {
       const AUDIO_INPUT = constants.AUDIO_INPUT;
-      c1 = false;
+      let c1 = false;
       const mapped = arr.map((item, index) => {
+        let guid;
+        let name;
+        let str2;
+        let tmp14;
         ({ guid, name, index } = item);
         if (VIDEO_INPUT === constants.VIDEO_INPUT) {
+          const obj = /^front/i;
           if (obj.test(name)) {
-            let tmp12 = id;
-            let str2 = "Default";
+            tmp14 = closure_2_3;
+            str2 = "Default";
           }
-          let tmp13 = index;
+          let tmp15 = index;
           if (null != index) {
-            tmp13 = index;
+            tmp15 = index;
           }
-          const obj3 = { id: tmp12, type: tmp10, index: tmp13, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9 };
-          return obj3;
+          return { id: tmp14, type: tmp12, index: tmp15, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9, windowsDeviceDescription: tmp10, windowsDeviceInterfaceFriendlyName: tmp11 };
         }
+        const obj2 = /^default/;
         if (obj2.test(name)) {
           c1 = true;
-          tmp12 = id;
+          tmp14 = closure_2_3;
           str2 = name.replace("default", "Default");
         } else {
-          tmp12 = name;
+          tmp14 = name;
           if (null != guid) {
-            tmp12 = name;
+            tmp14 = name;
             if ("" !== guid) {
-              tmp12 = guid;
+              tmp14 = guid;
             }
           }
           str2 = name;
         }
       });
       let isMatch = AUDIO_INPUT !== constants.VIDEO_INPUT;
+      const tmp = closure_0;
       if (isMatch) {
         isMatch = !c1;
       }
       if (isMatch) {
-        const tmp6 = formatDefault;
+        const tmp6 = _modDef1352;
         let family;
         if (tmp6 != null) {
           const os = tmp6.os;
@@ -121,59 +135,67 @@ export const getAudioInputDevices = function getAudioInputDevices() {
         isMatch = null != family;
       }
       if (isMatch) {
-        isMatch = /^win/i.test(formatDefault.os.family);
         const obj = /^win/i;
+        isMatch = obj.test(_modDef1352.os.family);
       }
       if (isMatch) {
         const obj2 = { id, type: AUDIO_INPUT, index: -1, name: "Default" };
         mapped.unshift(obj2);
       }
-      return closure_0(mapped);
+      return tmp(mapped);
     });
   });
+  return promise;
 };
 export const getAudioOutputDevices = function getAudioOutputDevices() {
-  return new Promise((arg0) => {
-    closure_0 = arg0;
-    const voiceEngine = closure_0(1994).getVoiceEngine();
+  const promise = new Promise((arg0) => {
+    let closure_0 = arg0;
+    let obj = closure_0(closure_2[2]);
+    const voiceEngine = obj.getVoiceEngine();
     const outputDevices = voiceEngine.getOutputDevices((arr) => {
       const AUDIO_OUTPUT = constants.AUDIO_OUTPUT;
-      c1 = false;
+      let c1 = false;
       const mapped = arr.map((item, index) => {
+        let guid;
+        let name;
+        let str2;
+        let tmp14;
         ({ guid, name, index } = item);
         if (VIDEO_INPUT === constants.VIDEO_INPUT) {
+          const obj = /^front/i;
           if (obj.test(name)) {
-            let tmp12 = id;
-            let str2 = "Default";
+            tmp14 = closure_2_3;
+            str2 = "Default";
           }
-          let tmp13 = index;
+          let tmp15 = index;
           if (null != index) {
-            tmp13 = index;
+            tmp15 = index;
           }
-          const obj3 = { id: tmp12, type: tmp10, index: tmp13, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9 };
-          return obj3;
+          return { id: tmp14, type: tmp12, index: tmp15, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9, windowsDeviceDescription: tmp10, windowsDeviceInterfaceFriendlyName: tmp11 };
         }
+        const obj2 = /^default/;
         if (obj2.test(name)) {
           c1 = true;
-          tmp12 = id;
+          tmp14 = closure_2_3;
           str2 = name.replace("default", "Default");
         } else {
-          tmp12 = name;
+          tmp14 = name;
           if (null != guid) {
-            tmp12 = name;
+            tmp14 = name;
             if ("" !== guid) {
-              tmp12 = guid;
+              tmp14 = guid;
             }
           }
           str2 = name;
         }
       });
       let isMatch = AUDIO_OUTPUT !== constants.VIDEO_INPUT;
+      const tmp = closure_0;
       if (isMatch) {
         isMatch = !c1;
       }
       if (isMatch) {
-        const tmp6 = formatDefault;
+        const tmp6 = _modDef1352;
         let family;
         if (tmp6 != null) {
           const os = tmp6.os;
@@ -184,48 +206,56 @@ export const getAudioOutputDevices = function getAudioOutputDevices() {
         isMatch = null != family;
       }
       if (isMatch) {
-        isMatch = /^win/i.test(formatDefault.os.family);
         const obj = /^win/i;
+        isMatch = obj.test(_modDef1352.os.family);
       }
       if (isMatch) {
         const obj2 = { id, type: AUDIO_OUTPUT, index: -1, name: "Default" };
         mapped.unshift(obj2);
       }
-      return closure_0(mapped);
+      return tmp(mapped);
     });
   });
+  return promise;
 };
 export const getVideoInputDevices = function getVideoInputDevices() {
-  return new Promise((arg0) => {
-    closure_0 = arg0;
-    const voiceEngine = closure_0(1994).getVoiceEngine();
+  const promise = new Promise((arg0) => {
+    let closure_0 = arg0;
+    let obj = closure_0(closure_2[2]);
+    const voiceEngine = obj.getVoiceEngine();
     const videoInputDevices = voiceEngine.getVideoInputDevices((arr) => {
       const VIDEO_INPUT = constants.VIDEO_INPUT;
-      c1 = false;
+      let c1 = false;
+      const tmp = closure_0;
       const mapped = arr.map((item, index) => {
+        let guid;
+        let name;
+        let str2;
+        let tmp14;
         ({ guid, name, index } = item);
         if (VIDEO_INPUT === constants.VIDEO_INPUT) {
+          const obj = /^front/i;
           if (obj.test(name)) {
-            let tmp12 = id;
-            let str2 = "Default";
+            tmp14 = closure_2_3;
+            str2 = "Default";
           }
-          let tmp13 = index;
+          let tmp15 = index;
           if (null != index) {
-            tmp13 = index;
+            tmp15 = index;
           }
-          const obj3 = { id: tmp12, type: tmp10, index: tmp13, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9 };
-          return obj3;
+          return { id: tmp14, type: tmp12, index: tmp15, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9, windowsDeviceDescription: tmp10, windowsDeviceInterfaceFriendlyName: tmp11 };
         }
+        const obj2 = /^default/;
         if (obj2.test(name)) {
           c1 = true;
-          tmp12 = id;
+          tmp14 = closure_2_3;
           str2 = name.replace("default", "Default");
         } else {
-          tmp12 = name;
+          tmp14 = name;
           if (null != guid) {
-            tmp12 = name;
+            tmp14 = name;
             if ("" !== guid) {
-              tmp12 = guid;
+              tmp14 = guid;
             }
           }
           str2 = name;
@@ -233,10 +263,14 @@ export const getVideoInputDevices = function getVideoInputDevices() {
       });
       let isMatch = VIDEO_INPUT !== constants.VIDEO_INPUT;
       if (isMatch) {
+        const tmp3 = c1;
         isMatch = !c1;
       }
       if (isMatch) {
-        const tmp6 = formatDefault;
+        const tmp4 = importDefault;
+        const tmp5 = dependencyMap;
+        const tmp6 = _modDef1352;
+        const tmp7 = null;
         let family;
         if (tmp6 != null) {
           const os = tmp6.os;
@@ -247,14 +281,18 @@ export const getVideoInputDevices = function getVideoInputDevices() {
         isMatch = null != family;
       }
       if (isMatch) {
-        isMatch = /^win/i.test(formatDefault.os.family);
-        const obj = /^win/i;
+        let obj = /^win/i;
+        const tmp9 = importDefault;
+        const tmp10 = dependencyMap;
+        isMatch = obj.test(_modDef1352.os.family);
       }
       if (isMatch) {
-        const obj2 = { id, type: VIDEO_INPUT, index: -1, name: "Default" };
+        let obj2 = { id, type: VIDEO_INPUT, index: -1, name: "Default" };
+        const tmp11 = id;
         mapped.unshift(obj2);
       }
-      return closure_0(mapped);
+      return tmp(mapped);
     });
   });
+  return promise;
 };

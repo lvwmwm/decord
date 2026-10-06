@@ -1,67 +1,77 @@
-// Module ID: 13391
-// Function ID: 13392
+// Module ID: 12645
+// Function ID: 12646
 // Name: VibegrationsChatStore
-// Dependencies: [32, 109, 7811, 10377, 2095, 4609, 5528, 9341, 1074, 2048, 1115, 3710, 9344, 2019, 10197, 504, 573, 2]
+// Dependencies: [32, 109, 6961, 12210, 2102, 4657, 5592, 8492, 1086, 2058, 1127, 3718, 8495, 2027, 9335, 504, 585, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 13391 (VibegrationsChatStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import _modDef3710 from "module_3710" /* 3710 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9344 */;
-import SoundUtils from "SoundUtils" /* 10197 */;
-import _slicedToArray from "module_32" /* 32 */;
+// Module 12645 (VibegrationsChatStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8495 */;
+import SoundUtils from "SoundUtils" /* 9335 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 10377 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9341 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12210 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8492 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let closure_14;
+let closure_15;
 function newMessage(assistant, content, arg2) {
+  let id;
+  let obj4;
+  let obj6;
+  let parsed;
+  let ts;
+  let turnId;
+  let userId;
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
   }
   ({ ts, id, userId, turnId } = obj);
+  const attachments = obj.attachments;
   if (id == null) {
     const sum = c28 + 1;
     c28 = sum;
     id = `m${tmp2}`;
   }
-  const obj2 = { id, render_id: id, role: assistant, content };
+  const obj2 = { id, render_id: id, role: assistant, content, steps: [], created_at: parsed, attachments };
   if (null != userId) {
+    obj4 = { user_id: userId };
     const obj3 = { user_id: userId };
-    let obj4 = obj3;
   } else {
     obj4 = {};
   }
   const merged = Object.assign(obj4);
   if (null != turnId) {
+    obj6 = { turn_id: turnId };
     const obj5 = { turn_id: turnId };
-    let obj6 = obj5;
   } else {
     obj6 = {};
   }
   const merged1 = Object.assign(obj6);
-  obj2.steps = [];
   if (null != ts) {
     const _Date2 = Date;
-    let parsed = Date.parse(ts);
+    parsed = Date.parse(ts);
   } else {
     const _Date = Date;
     parsed = Date.now();
   }
-  obj2.created_at = parsed;
-  obj2.attachments = obj.attachments;
   return obj2;
 }
 function newMessageFromHistory(ts) {
-  const tmp = newMessage(ts.role, ts.content, { ts: ts.ts, id: ts.id, userId: ts.user_id, attachments: ts.attachments });
+  let obj = { ts: ts.ts, id: ts.id, userId: ts.user_id, attachments: ts.attachments };
+  const tmp = newMessage(ts.role, ts.content, obj);
   if (null != ts.kind) {
     tmp.kind = ts.kind;
   }
@@ -73,12 +83,15 @@ function newMessageFromHistory(ts) {
   if (null != ts.proposal) {
     tmp.proposal = ts.proposal;
   }
+  const tmp2 = null != ts.ideas && ts.ideas.length > 0;
   if (tmp2) {
     tmp.ideas = ts.ideas;
   }
+  const tmp3 = null != ts.clarification && ts.clarification.questions.length > 0;
   if (tmp3) {
     tmp.clarification = ts.clarification;
   }
+  const tmp4 = null == ts.steps && null == ts.events && null != ts.todos && ts.todos.length > 0;
   if (tmp4) {
     tmp.todos = ts.todos;
   }
@@ -86,26 +99,51 @@ function newMessageFromHistory(ts) {
     tmp.steps = replayTimeline(ts.steps);
   } else if (null != ts.events) {
     const events = ts.events;
-    tmp.steps = events.map((type) => {
-      if ("announcement" === type.type) {
-        const obj2 = { type: "step", kind: "announcement", message: type.message };
-        let obj = obj2;
+    tmp.steps = events.flatMap((type) => {
+      let items1;
+      if ("todos" === type.type) {
+        const items = [{ type: "step", kind: "todos", items: type.items }];
+        items1 = items;
+        const obj = { type: "step", kind: "todos", items: type.items };
       } else {
-        obj = { type: "step", kind: "todos", items: type.items };
+        items1 = [];
       }
-      return obj;
+      return items1;
     });
   }
+  const tmp6 = null != ts.secret_request && ts.secret_request.fields.length > 0;
   if (tmp6) {
     tmp.secretRequest = ts.secret_request;
   }
   if (null != ts.settings_request) {
     tmp.settingsRequest = ts.settings_request;
   }
+  const tmp7 = null != ts.intake && ts.intake.questions.length > 0;
+  if (tmp7) {
+    tmp.intake = ts.intake;
+  }
+  let steps = ts.steps;
+  if (steps == null) {
+    steps = [];
+  }
+  const iter = steps[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp9 = nextResult;
+    let tmp10 = "awaiting_user" === nextResult.kind;
+    if (tmp10) {
+      tmp10 = "secrets" === tmp9.action;
+    }
+    if (tmp10) {
+      let obj2 = { action: tmp9.action };
+      tmp.awaitingUser = obj2;
+    }
+    continue;
+  }
   return tmp;
 }
 function patchTurn(projectId, turnId, fn) {
-  value = map.get(projectId);
+  const value = map.get(projectId);
   if (null != value) {
     let num3 = -1;
     if (null != turnId) {
@@ -127,16 +165,16 @@ function patchTurn(projectId, turnId, fn) {
       num3 = -1;
       if (0 <= diff1) {
         while (true) {
-          let tmp3 = value[diff1];
-          if ("assistant" === tmp3.role) {
-            let someResult = true === tmp3.finished || true === tmp3.continued || "" !== tmp3.content || null != tmp3.proposal;
+          let tmp5 = value[diff1];
+          if ("assistant" === tmp5.role) {
+            let someResult = true === tmp5.finished || true === tmp5.continued || "" !== tmp5.content || null != tmp5.proposal || null != tmp5.clarification || null != tmp5.intake;
             if (!someResult) {
-              let steps = tmp3.steps;
+              let steps = tmp5.steps;
               someResult = steps.some((kind) => set.has(kind.kind));
             }
             if (!someResult) {
               num3 = diff1;
-              if (null == tmp3.turn_id) {
+              if (null == tmp5.turn_id) {
                 break;
               }
             }
@@ -151,32 +189,35 @@ function patchTurn(projectId, turnId, fn) {
       }
     }
     if (-1 !== num3) {
-      let tmp14 = tmp13;
+      let tmp16 = tmp15;
       if (null != turnId) {
-        tmp14 = tmp13;
-        if (null == tmp13.turn_id) {
-          const obj2 = {};
-          const merged = Object.assign(tmp13);
-          obj2.turn_id = turnId;
-          tmp14 = obj2;
+        tmp16 = tmp15;
+        if (null == value[num3].turn_id) {
+          const obj2 = { turn_id: turnId };
+          const merged = Object.assign(tmp15);
+          tmp16 = obj2;
         }
       }
       const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(value.slice(0, num3), 0);
-      items[arraySpreadResult] = fn(tmp14);
-      HermesBuiltin.arraySpread(value.slice(num3 + 1), arraySpreadResult + 1);
-      const result = obj.set(projectId, items);
+      set2 = map.set;
+      const arraySpreadResult = HermesBuiltin.arraySpread(items, value.slice(0, num3), 0);
+      items[arraySpreadResult] = fn(tmp16);
+      HermesBuiltin.arraySpread(items, value.slice(num3 + 1), arraySpreadResult + 1);
+      set2(projectId, items);
     } else {
+      let obj;
       const items1 = [];
+      set = map.set;
+      const arraySpreadResult4 = HermesBuiltin.arraySpread(items1, value, 0);
+      const tmp13 = newMessage;
       if (null != turnId) {
+        obj = { turnId };
         const obj3 = { turnId };
-        let obj4 = obj3;
       } else {
-        obj4 = {};
+        obj = {};
       }
-      items1[HermesBuiltin.arraySpread(value, 0)] = fn(newMessage("assistant", "", obj4));
-      const result1 = obj.set(projectId, items1);
-      const arraySpreadResult4 = HermesBuiltin.arraySpread(value, 0);
+      items1[arraySpreadResult4] = fn(tmp13("assistant", "", obj));
+      const result = set(projectId, items1);
     }
   }
 }
@@ -194,8 +235,8 @@ function hasOpenTurn(map) {
           tmp4 = flag2;
           if ("side_reply" !== tmp.kind) {
             let flag = flag2;
-            if (!flag2) {
-              let someResult = true === tmp.finished || true === tmp.continued || "" !== tmp.content || null != tmp.proposal;
+            if (!flag) {
+              let someResult = true === tmp.finished || true === tmp.continued || "" !== tmp.content || null != tmp.proposal || null != tmp.clarification || null != tmp.intake;
               if (!someResult) {
                 let steps = tmp.steps;
                 someResult = steps.some((kind) => set.has(kind.kind));
@@ -207,7 +248,7 @@ function hasOpenTurn(map) {
             }
             tmp4 = flag;
             if (null != tmp.turn_id) {
-              let someResult1 = true === tmp.finished || true === tmp.continued || "" !== tmp.content || null != tmp.proposal;
+              let someResult1 = true === tmp.finished || true === tmp.continued || "" !== tmp.content || null != tmp.proposal || null != tmp.clarification || null != tmp.intake;
               if (!someResult1) {
                 let steps2 = tmp.steps;
                 someResult1 = steps2.some((kind) => set.has(kind.kind));
@@ -228,27 +269,30 @@ function hasOpenTurn(map) {
   }
 }
 function recordThinkingTransition(projectId) {
-  let tmp47;
+  let tmp48;
+  let tmp62;
   let flag = map2.get(projectId);
+  const obj = map2;
   if (flag == null) {
     flag = false;
   }
-  const tmp = hasOpenTurn(map.get(projectId));
-  if (flag !== tmp) {
-    const result = map2.set(projectId, tmp);
+  const tmp2 = hasOpenTurn(map.get(projectId));
+  const obj2 = map;
+  if (flag !== tmp2) {
+    const result = obj.set(projectId, tmp2);
     const index = closure_22.indexOf(projectId);
     if (-1 !== index) {
-      arr5.splice(index, 1);
+      closure_22.splice(index, 1);
     }
     closure_22.unshift(projectId);
-    if (tmp) {
+    if (tmp2) {
       map1.delete(projectId);
     } else {
-      value = map.get(projectId);
-      let tmp4 = null;
+      const value = obj2.get(projectId);
+      let tmp5 = null;
       if (null != value) {
         let diff = value.length - 1;
-        tmp4 = null;
+        tmp5 = null;
         if (0 <= diff) {
           while (true) {
             if ("assistant" === value[diff].role) {
@@ -257,31 +301,29 @@ function recordThinkingTransition(projectId) {
               }
             }
             diff = diff - 1;
-            tmp4 = null;
+            tmp5 = null;
           }
-          tmp4 = value[diff];
+          tmp5 = value[diff];
         }
       }
-      let tmp7 = null != tmp4;
-      if (tmp7) {
-        let someResult = "" !== tmp4.content.trim() || null != tmp4.proposal;
+      let tmp8 = null != tmp5;
+      if (tmp8) {
+        const str3 = tmp5.content;
+        let someResult = "" !== str3.trim() || null != tmp5.proposal || null != tmp5.clarification || null != tmp5.intake;
         if (!someResult) {
-          const steps = tmp4.steps;
+          const steps = tmp5.steps;
           someResult = steps.some((kind) => {
-            let hasItem = set.has(kind.kind);
-            if (hasItem) {
-              hasItem = "terminal_error" !== kind.kind;
-            }
+            const hasItem = set.has(kind.kind) && "terminal_error" !== kind.kind;
             return hasItem;
           });
         }
-        tmp7 = someResult;
+        tmp8 = someResult;
       }
-      if (tmp7) {
+      if (tmp8) {
         const _Date = Date;
         const result1 = obj3.set(projectId, Date.now());
       } else {
-        obj3.delete(projectId);
+        map1.delete(projectId);
       }
       const value3 = map.get(projectId);
       if (null != value3) {
@@ -291,34 +333,31 @@ function recordThinkingTransition(projectId) {
             diff1 = diff1 - 1;
           }
           if (null == value3[diff1].finished_at) {
-            let someResult1 = true === tmp13.finished || true === tmp13.continued;
+            let someResult1 = true === tmp14.finished || true === tmp14.continued || "" !== tmp14.content || null != tmp14.proposal || null != tmp14.clarification || null != tmp14.intake;
             if (!someResult1) {
-              someResult1 = "" !== tmp13.content;
-            }
-            if (!someResult1) {
-              someResult1 = null != tmp13.proposal;
-            }
-            if (!someResult1) {
-              const steps2 = tmp13.steps;
+              const steps2 = tmp14.steps;
               someResult1 = steps2.some((kind) => set.has(kind.kind));
             }
             if (someResult1) {
+              set = map.set;
               const items = [];
-              const arraySpreadResult = HermesBuiltin.arraySpread(value3.slice(0, diff1), 0);
-              const obj4 = {};
-              const merged = Object.assign(tmp13);
+              const arraySpreadResult = HermesBuiltin.arraySpread(items, value3.slice(0, diff1), 0);
+              const obj4 = { finished_at: Date.now() };
+              const merged = Object.assign(tmp14);
               const _Date2 = Date;
-              obj4.finished_at = Date.now();
               items[arraySpreadResult] = obj4;
-              HermesBuiltin.arraySpread(value3.slice(diff1 + 1), arraySpreadResult + 1);
-              const result2 = map.set(projectId, items);
+              HermesBuiltin.arraySpread(items, value3.slice(diff1 + 1), arraySpreadResult + 1);
+              const result2 = set(projectId, items);
             }
           }
         }
       }
       const project = VibegrationsProjectStore.getProject(projectId);
+      const obj5 = VibegrationsProjectStore;
       if (null != project) {
-        let result4 = VibegrationsPlatformUtilsDefault.areTurnNotificationsDisabled();
+        const obj9 = VibegrationsPlatformUtilsDefault;
+        let result4 = obj9.areTurnNotificationsDisabled();
+        const tmp72 = importDefault;
         if (!result4) {
           result4 = SelfPresenceStore.getStatus() === constants.DND;
         }
@@ -339,13 +378,10 @@ function recordThinkingTransition(projectId) {
               guild_id = guildId;
             }
           }
-          let isWindowFocusedResult = null != guild_id;
+          let isWindowFocusedResult = null != guild_id && SelectedChannelStore.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = SelectedChannelStore.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
-          }
-          if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(9344).isWindowFocused();
-            const tmp68Result = tmp68(9344);
+            const tmp72Result = tmp72(8495);
+            isWindowFocusedResult = tmp72Result.isWindowFocused();
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -354,10 +390,10 @@ function recordThinkingTransition(projectId) {
             guild_id = project.preview_guild_id;
           }
           const value4 = map.get(projectId);
-          let tmp43 = null;
+          let tmp44 = null;
           if (null != value4) {
             let diff2 = value4.length - 1;
-            tmp43 = null;
+            tmp44 = null;
             if (0 <= diff2) {
               while (true) {
                 if ("assistant" === value4[diff2].role) {
@@ -366,89 +402,102 @@ function recordThinkingTransition(projectId) {
                   }
                 }
                 diff2 = diff2 - 1;
-                tmp43 = null;
+                tmp44 = null;
               }
-              tmp43 = value4[diff2];
+              tmp44 = value4[diff2];
             }
           }
           let content = null;
-          if (null != tmp43) {
+          if (null != tmp44) {
+            const str9 = tmp44.content;
             if ("" !== str9.trim()) {
-              content = tmp43.content;
-            } else if (null != tmp43.proposal) {
-              content = tmp43.proposal.summary;
+              content = tmp44.content;
+            } else if (null != tmp44.proposal) {
+              content = tmp44.proposal.summary;
+            } else if (null != tmp44.clarification) {
+              const first = tmp44.clarification.questions[0];
+              let question;
+              if (first != null) {
+                question = first.question;
+              }
+              if (question == null) {
+                question = null;
+              }
+              content = question;
+            } else if (null != tmp44.intake) {
+              content = tmp44.intake.intro.lead;
             } else {
-              let diff3 = tmp43.steps.length - 1;
+              let diff3 = tmp44.steps.length - 1;
               content = null;
               if (0 <= diff3) {
                 while (true) {
-                  tmp47 = tmp43.steps[diff3];
-                  if ("error" !== tmp47.kind) {
-                    if ("terminal_error" !== tmp47.kind) {
-                      if ("preview_ready" === tmp47.kind) {
-                        let intl = util.intl;
-                        content = intl.string(_modDef3710["78YNh7"]);
+                  tmp48 = tmp44.steps[diff3];
+                  if ("error" !== tmp48.kind) {
+                    if ("terminal_error" !== tmp48.kind) {
+                      if ("preview_ready" === tmp48.kind) {
+                        let intl = intl2.intl;
+                        content = intl.string(_modDef3718["78YNh7"]);
                       } else {
                         diff3 = diff3 - 1;
                         content = null;
                       }
                     }
                   }
-                  if (null != tmp47.message) {
-                    if ("" !== tmp47.message) {
+                  if (null != tmp48.message) {
+                    if ("" !== tmp48.message) {
                       break;
                     }
                   }
                 }
-                content = tmp47.message;
+                content = tmp48.message;
               }
             }
-            str9 = tmp43.content;
           }
           if (null != content) {
             if (isWindowFocusedResult) {
               if (!isSoundDisabledResult) {
-                SoundUtils.playSound(bit_message1, 0.4);
+                const obj8 = SoundUtils;
+                obj8.playSound(bit_message1, 0.4);
               }
             } else {
               let CHANNELResult = null;
               if (null != guild_id) {
-                CHANNELResult = closure_1_14.CHANNEL(guild_id, StaticChannelRoute.VIBEGRATIONS, projectId);
+                CHANNELResult = authStore2.CHANNEL(guild_id, StaticChannelRoute.VIBEGRATIONS, projectId);
               }
-              const obj6 = { projectId, guildId: null, title: null, body: null, route: null, sound: null, volume: 0.4 };
+              const obj6 = { projectId, guildId: guild_id, title: project.name, body: content, route: CHANNELResult, sound: tmp62, volume: 0.4 };
+              const presentTurnNotification = VibegrationsPlatformUtilsDefault.presentTurnNotification;
+              VibegrationsPlatformUtilsDefault;
               if (guild_id == null) {
                 guild_id = null;
               }
-              obj6.guildId = guild_id;
-              obj6.title = project.name;
-              obj6.body = content;
-              obj6.route = CHANNELResult;
-              let tmp58;
+              tmp62 = undefined;
               if (!isSoundDisabledResult) {
-                tmp58 = bit_message1;
+                tmp62 = bit_message1;
               }
-              obj6.sound = tmp58;
-              const result3 = VibegrationsPlatformUtilsDefault.presentTurnNotification(obj6);
+              const result3 = presentTurnNotification(obj6);
             }
           }
         }
-        tmp68 = importDefault;
       }
-      obj5 = VibegrationsProjectStore;
     }
   }
 }
-function purgeProject(arg0) {
-  let deleteResult = map.delete(arg0);
-  map5.delete(arg0);
-  const deleteResult2 = map1.delete(arg0);
-  const deleteResult3 = map2.delete(arg0);
-  const deleteResult4 = map3.delete(arg0);
+function purgeProject(projectId) {
+  let deleteResult = map.delete(projectId);
+  const deleteResult1 = map5.delete(projectId);
+  const deleteResult2 = set2.delete(projectId);
+  const deleteResult3 = map1.delete(projectId);
+  const deleteResult4 = map2.delete(projectId);
+  const deleteResult5 = map3.delete(projectId);
+  const deleteResult6 = map4.delete(projectId);
+  const deleteResult7 = set1.delete(projectId);
+  const index = closure_22.indexOf(projectId);
   const arr = closure_22;
-  const deleteResult5 = map4.delete(arg0);
-  const index = closure_22.indexOf(arg0);
   if (-1 !== index) {
     arr.splice(index, 1);
+  }
+  if (!deleteResult) {
+    deleteResult = deleteResult1;
   }
   if (!deleteResult) {
     deleteResult = deleteResult2;
@@ -466,11 +515,17 @@ function purgeProject(arg0) {
     deleteResult = deleteResult6;
   }
   if (!deleteResult) {
-    deleteResult = tmp9;
+    deleteResult = deleteResult7;
+  }
+  if (!deleteResult) {
+    deleteResult = tmp10;
   }
   return deleteResult;
 }
 function openTimeline(steps) {
+  let first;
+  let items1;
+  let tmp7;
   let items = steps;
   if (steps === undefined) {
     items = [];
@@ -478,28 +533,27 @@ function openTimeline(steps) {
   set = new Set();
   let num = -1;
   const entries = items.entries();
+  const tmp2 = entries[Symbol.iterator]();
   while (tmp2 !== undefined) {
-    let tmp5 = _slicedToArray(tmp3, 2);
-    let tmp6 = tmp5[1];
-    let tmp7 = tmp6;
-    if (null != tmp6.turn_seq) {
-      let addResult = set.add(tmp7.turn_seq);
+    [first, tmp7] = tmp3;
+    let tmp8 = tmp7;
+    if (null != tmp7.turn_seq) {
+      let addResult = set.add(tmp8.turn_seq);
     }
-    let tmp11 = -1 === num;
-    if (tmp11) {
-      tmp11 = "todos" === tmp7.kind;
+    let tmp12 = -1 === num;
+    if (tmp12) {
+      tmp12 = "todos" === tmp8.kind;
     }
-    if (tmp11) {
-      tmp11 = null == tmp7.task_id;
+    if (tmp12) {
+      tmp12 = null == tmp8.task_id;
     }
-    if (tmp11) {
-      num = tmp5[0];
+    if (tmp12) {
+      num = first;
     }
     continue;
   }
-  const obj = { steps: null, seenSeq: set, todosAt: num };
-  const items1 = [...items];
-  obj.steps = items1;
+  const obj = { steps: items1, seenSeq: set, todosAt: num };
+  items1 = [...items];
   return obj;
 }
 function pushStep(todosAt, turn_seq) {
@@ -517,7 +571,7 @@ function pushStep(todosAt, turn_seq) {
         } else {
           if (null != todosAt.steps[todosAt.todosAt].turn_seq) {
             const seenSeq2 = todosAt.seenSeq;
-            seenSeq2.delete(tmp.turn_seq);
+            seenSeq2.delete(todosAt.steps[todosAt.todosAt].turn_seq);
           }
           todosAt.steps[todosAt.todosAt] = turn_seq;
           if (null != turn_seq.turn_seq) {
@@ -539,119 +593,136 @@ function pushStep(todosAt, turn_seq) {
 }
 function replayTimeline(steps) {
   const tmp = openTimeline();
+  const tmp2 = steps[Symbol.iterator]();
   while (tmp2 !== undefined) {
     let tmp5 = pushStep(tmp, tmp3);
     continue;
   }
   return tmp.steps;
 }
+function stoppable(role) {
+  let tmp = "assistant" === role.role && "side_reply" !== role.kind;
+  if (tmp) {
+    let someResult = true === role.finished || true === role.continued || "" !== role.content || null != role.proposal || null != role.clarification || null != role.intake;
+    if (!someResult) {
+      const steps = role.steps;
+      someResult = steps.some((kind) => set.has(kind.kind));
+    }
+    tmp = !someResult;
+  }
+  if (tmp) {
+    tmp = true !== role.stopRequested;
+  }
+  return tmp;
+}
 let closure_3 = ["disposition"];
 let closure_4 = ["disposition"];
 let closure_5 = ["disposition"];
-const Constants = fn(1074);
 ({ Routes: closure_14, StatusTypes: closure_15 } = Constants);
-const StaticChannelRoute = fn(2048).StaticChannelRoute;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 const bit_message1 = "bit_message1";
 let set = new Set(["reply", "plan_proposed", "terminal_error"]);
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
-let closure_22 = [];
+const afk = [];
 const map3 = new Map();
 const map4 = new Map();
-const set1 = new Set();
+let set1 = new Set();
 let width = 0;
 let closure_27 = [];
 let c28 = 0;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class VibegrationsChatStore extends Store {
-}
-const prototype = VibegrationsChatStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(FamilyCenterStore, NotificationSettingsStore, SelectedChannelStore, SelectedGuildStore, SelfPresenceStore, VibegrationsProjectStore);
-};
-prototype["getMessages"] = function getMessages(arg0) {
-  value = map.get(arg0);
-  if (value == null) {
-    value = closure_27;
+  initialize() {
+    this.waitFor(FamilyCenterStore, NotificationSettingsStore, SelectedChannelStore, SelectedGuildStore, SelfPresenceStore, VibegrationsProjectStore);
   }
-  return value;
-};
-prototype["hasPendingSettingsRequest"] = function hasPendingSettingsRequest(arg0) {
-  const messages = this.getMessages(arg0);
-  let tmp2 = null != tmp;
-  if (tmp2) {
-    tmp2 = "assistant" === tmp.role;
+  getMessages(arg0) {
+    let value = map.get(arg0);
+    if (value == null) {
+      value = closure_27;
+    }
+    return value;
   }
-  if (tmp2) {
-    tmp2 = null != tmp.settingsRequest;
+  hasPendingSettingsRequest(arg0) {
+    const messages = this.getMessages(arg0);
+    return null != tmp && "assistant" === tmp.role && null != tmp.settingsRequest;
   }
-  return tmp2;
-};
-prototype["isThinking"] = function isThinking(item10008) {
-  return hasOpenTurn(map.get(item10008));
-};
-prototype["hasLoadedHistory"] = function hasLoadedHistory(projectId) {
-  return map5.has(projectId);
-};
-prototype["getFinishedAt"] = function getFinishedAt(arg0) {
-  let tmp = null;
-  if (!hasOpenTurn(map.get(arg0))) {
-    value = map1.get(arg0);
+  isThinking(projectId) {
+    return hasOpenTurn(map.get(projectId));
+  }
+  hasLoadedHistory(projectId) {
+    return map5.has(projectId);
+  }
+  isHistoryUnavailable(projectId) {
+    return set2.has(projectId);
+  }
+  getFinishedAt(arg0) {
+    let tmp = null;
+    if (!hasOpenTurn(map.get(arg0))) {
+      let value = map1.get(arg0);
+      if (value == null) {
+        value = null;
+      }
+      tmp = value;
+    }
+    return tmp;
+  }
+  getProjectUsage(projectId) {
+    let value = map3.get(projectId);
     if (value == null) {
       value = null;
     }
-    tmp = value;
+    return value;
   }
-  return tmp;
-};
-prototype["getProjectUsage"] = function getProjectUsage(projectId) {
-  value = map3.get(projectId);
-  if (value == null) {
-    value = null;
-  }
-  return value;
-};
-prototype["getThinkingActivity"] = function getThinkingActivity(projectId) {
-  value = map4.get(projectId);
-  if (value == null) {
-    value = null;
-  }
-  return value;
-};
-prototype["isCompacting"] = function isCompacting(projectId) {
-  return set1.has(projectId);
-};
-prototype["getSidebarWidth"] = function getSidebarWidth() {
-  return width;
-};
-prototype["getActivityOrderedProjectIds"] = function getActivityOrderedProjectIds() {
-  return closure_22.slice();
-};
-prototype["isAnyThinking"] = function isAnyThinking() {
-  const self = this;
-  const keys = map.keys();
-  for (const item10008 of keys) {
-    if (self.isThinking(item10008)) {
-      obj.return();
-      let flag = true;
-      return true;
+  getThinkingActivity(projectId) {
+    let value = map4.get(projectId);
+    if (value == null) {
+      value = null;
     }
+    return value;
   }
-  return false;
-};
+  isCompacting(projectId) {
+    return set1.has(projectId);
+  }
+  getSidebarWidth() {
+    return width;
+  }
+  getActivityOrderedProjectIds() {
+    return closure_22.slice();
+  }
+  isAnyThinking() {
+    const self = this;
+    const keys = map.keys();
+    for (const item10008 of keys) {
+      if (self.isThinking(item10008)) {
+        obj.return();
+        let flag = true;
+        return true;
+      }
+    }
+    return false;
+  }
+}
+const prototype = VibegrationsChatStore.prototype;
 const map5 = new Map();
-const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
+let set2 = new Set();
+let obj = {
   LOGOUT: function handleLogout() {
+    const obj = map;
     if (0 === map.size) {
       if (0 === map1.size) {
         if (0 === map2.size) {
           if (0 === map3.size) {
             if (0 === map4.size) {
               if (0 === set1.size) {
-                if (0 === closure_22.length) {
-                  if (0 === width) {
-                    return false;
+                if (0 === map5.size) {
+                  if (0 === set2.size) {
+                    if (0 === closure_22.length) {
+                      if (0 === width) {
+                        return false;
+                      }
+                    }
                   }
                 }
               }
@@ -660,36 +731,49 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
         }
       }
     }
-    map.clear();
+    obj.clear();
     map1.clear();
     map2.clear();
     map3.clear();
     map4.clear();
     set1.clear();
+    map5.clear();
+    set2.clear();
     closure_22.length = 0;
     width = 0;
   },
-  VIBEGRATIONS_CHAT_HISTORY_SET: function handleChatHistorySet(arg0) {
-    ({ projectId, entries, cursor } = arg0);
-    set = undefined;
+  VIBEGRATIONS_CHAT_HISTORY_SET: function handleChatHistorySet(degraded) {
+    let cursor;
+    let entries;
+    let projectId;
+    ({ projectId, entries, cursor } = degraded);
+    set1 = undefined;
+    degraded = degraded.degraded;
+    let tmp = map5;
+    set = map5.set;
     if (cursor == null) {
       cursor = null;
     }
-    const result = map5.set(projectId, cursor);
+    const result = set(projectId, cursor);
+    if (true === degraded) {
+      set2.add(projectId);
+    } else {
+      set2.delete(projectId);
+    }
     map4.delete(projectId);
     set1.delete(projectId);
-    set = new Set();
+    set1 = new Set();
     const found = entries.filter((id) => {
       let tmp = null == id.id;
       if (!tmp) {
-        const hasItem = set.has(id.id);
+        const hasItem = set1.has(id.id);
         let flag = !hasItem;
-        if (!hasItem) {
+        const obj = set1;
+        if (flag) {
           obj.add(id.id);
           flag = true;
         }
         tmp = flag;
-        obj = set;
       }
       return tmp;
     });
@@ -697,36 +781,46 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
     recordThinkingTransition(projectId);
   },
   VIBEGRATIONS_CHAT_HISTORY_PREPEND: function handleChatHistoryPrepend(cursor) {
+    let entries;
+    let projectId;
     ({ projectId, entries } = cursor);
-    set = undefined;
+    set1 = undefined;
     const result = map5.set(projectId, cursor.cursor);
     if (0 !== entries.length) {
       let items1 = map.get(projectId);
+      const tmp11 = map;
       if (items1 == null) {
         items1 = [];
       }
       const mapped = entries.map(newMessageFromHistory);
       const _Set = Set;
-      set = new Set(items1.flatMap((id) => {
+      const self = this;
+      const self2 = this;
+      set1 = new Set(items1.flatMap((id) => {
+        let items;
         if (null == id.id) {
-          let items = [];
+          items = [];
         } else {
           items = [id.id];
         }
         return items;
       }));
       let items = [];
-      HermesBuiltin.arraySpread(items1, HermesBuiltin.arraySpread(mapped.filter((id) => {
-        let tmp = null == id.id;
-        if (!tmp) {
-          tmp = !set.has(id.id);
-        }
+      set = tmp11.set;
+      HermesBuiltin.arraySpread(items, items1, HermesBuiltin.arraySpread(items, mapped.filter((id) => {
+        const tmp = null == id.id || !set1.has(id.id);
         return tmp;
       }), 0));
-      const result1 = map.set(projectId, items);
+      const result1 = set(projectId, items);
     }
   },
   VIBEGRATIONS_CHAT_MESSAGE_APPEND: function handleChatMessageAppend(optimisticId) {
+    let attachments;
+    let content;
+    let id;
+    let projectId;
+    let timestamp;
+    let userId;
     ({ projectId, id } = optimisticId);
     optimisticId = optimisticId.optimisticId;
     ({ content, userId, timestamp, attachments } = optimisticId);
@@ -738,50 +832,55 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
       return false;
     } else {
       const obj2 = { ts: timestamp, id, userId, attachments };
-      const tmp2 = newMessage("user", content, obj2);
+      const tmp3 = newMessage("user", content, obj2);
       let num3 = -1;
+      const tmp2 = newMessage;
       if (null != optimisticId) {
         num3 = items2.findIndex((id) => id.id === optimisticId);
       }
       if (-1 !== num3) {
-        tmp2.render_id = items2[num3].render_id;
+        tmp3.render_id = items2[num3].render_id;
         const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(items2.slice(0, num3), 0);
-        items[arraySpreadResult] = tmp2;
-        HermesBuiltin.arraySpread(items2.slice(num3 + 1), arraySpreadResult + 1);
-        const result = obj.set(projectId, items);
+        set = map.set;
+        const arraySpreadResult = HermesBuiltin.arraySpread(items, items2.slice(0, num3), 0);
+        items[arraySpreadResult] = tmp3;
+        HermesBuiltin.arraySpread(items, items2.slice(num3 + 1), arraySpreadResult + 1);
+        const result = set(projectId, items);
         recordThinkingTransition(projectId);
       } else {
         const items1 = [];
-        items1[HermesBuiltin.arraySpread(items2, 0)] = tmp2;
+        items1[HermesBuiltin.arraySpread(items1, items2, 0)] = tmp3;
         if (!hasOpenTurn(items1)) {
-          items1.push(tmp("assistant", ""));
+          items1.push(tmp2("assistant", ""));
         }
         const result1 = obj.set(projectId, items1);
         recordThinkingTransition(projectId);
       }
-      tmp = newMessage;
     }
   },
   VIBEGRATIONS_CHAT_MESSAGE_DISPOSITION: function handleChatMessageDisposition(arg0) {
-    ({ projectId, id: require, activeTurnId, disposition } = arg0);
-    value = map.get(projectId);
+    let activeTurnId;
+    let closure_129_0;
+    let disposition;
+    let finished_at;
+    let projectId;
+    ({ projectId, id: closure_129_0, activeTurnId, disposition } = arg0);
+    const value = map.get(projectId);
     if (null == value) {
       return false;
     } else {
-      const findIndexResult = value.findIndex((id) => id.id === require);
+      const findIndexResult = value.findIndex((id) => id.id === closure_1_0);
       if (-1 === findIndexResult) {
         return false;
       } else {
         let arr3 = value;
         if (value[findIndexResult].disposition !== disposition) {
           const items = [];
-          const arraySpreadResult = HermesBuiltin.arraySpread(value.slice(0, findIndexResult), 0);
-          const obj2 = {};
+          const arraySpreadResult = HermesBuiltin.arraySpread(items, value.slice(0, findIndexResult), 0);
+          const obj2 = { disposition };
           const merged = Object.assign(value[findIndexResult]);
-          obj2.disposition = disposition;
           items[arraySpreadResult] = obj2;
-          HermesBuiltin.arraySpread(value.slice(findIndexResult + 1), arraySpreadResult + 1);
+          HermesBuiltin.arraySpread(items, value.slice(findIndexResult + 1), arraySpreadResult + 1);
           arr3 = items;
         }
         let num4 = -1;
@@ -806,20 +905,20 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
         if (-1 !== num4) {
           if (num4 <= findIndexResult) {
             const items1 = [, ];
-            const arraySpreadResult5 = HermesBuiltin.arraySpread(arr3.slice(0, num4), 0);
-            const obj3 = {};
+            set = map.set;
+            const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, arr3.slice(0, num4), 0);
+            const obj3 = { continued: true, finished_at };
             const merged1 = Object.assign(arr3[num4]);
-            obj3.continued = true;
-            let finished_at = arr3[num4].finished_at;
+            finished_at = arr3[num4].finished_at;
             if (finished_at == null) {
               const _Date = Date;
               finished_at = Date.now();
             }
-            obj3.finished_at = finished_at;
             items1[arraySpreadResult5] = obj3;
             const obj4 = { turnId: activeTurnId };
-            items1[HermesBuiltin.arraySpread(arr3.slice(num4 + 1), arraySpreadResult5 + 1)] = newMessage("assistant", "", obj4);
-            const result = obj.set(projectId, items1);
+            const arraySpreadResult6 = HermesBuiltin.arraySpread(items1, arr3.slice(num4 + 1), arraySpreadResult5 + 1);
+            items1[arraySpreadResult6] = newMessage("assistant", "", obj4);
+            const result = set(projectId, items1);
             recordThinkingTransition(projectId);
           }
         }
@@ -831,56 +930,62 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
     }
   },
   VIBEGRATIONS_CHAT_SIDE_REPLY: function handleChatSideReply(inReplyTo) {
+    let content;
+    let id;
+    let projectId;
+    let timestamp;
     ({ projectId, id } = inReplyTo);
     inReplyTo = inReplyTo.inReplyTo;
     ({ content, timestamp } = inReplyTo);
-    value = map.get(projectId);
+    const value = map.get(projectId);
     if (null == value) {
       return false;
     } else if (value.some((id) => id.id === id)) {
       return false;
     } else {
       const obj2 = { ts: timestamp, id };
-      const tmp2 = newMessage("assistant", content, obj2);
-      tmp2.kind = "side_reply";
-      tmp2.in_reply_to = inReplyTo;
+      const tmp3 = newMessage("assistant", content, obj2);
+      tmp3.kind = "side_reply";
+      tmp3.in_reply_to = inReplyTo;
       const findIndexResult = value.findIndex((id) => id.id === inReplyTo);
       if (-1 !== findIndexResult) {
-        const disposition = tmp7.disposition;
+        const disposition = tmp8.disposition;
         const items = [, ];
-        const arraySpreadResult = HermesBuiltin.arraySpread(value.slice(0, findIndexResult), 0);
-        items[arraySpreadResult] = _objectWithoutProperties(value[findIndexResult], closure_3);
+        set = map.set;
+        const tmp11 = _objectWithoutProperties(value[findIndexResult], closure_3);
+        const arraySpreadResult = HermesBuiltin.arraySpread(items, value.slice(0, findIndexResult), 0);
+        items[arraySpreadResult] = tmp11;
         const sum = arraySpreadResult + 1;
-        items[sum] = tmp2;
-        HermesBuiltin.arraySpread(value.slice(findIndexResult + 1), sum + 1);
-        const result = obj.set(projectId, items);
-        const tmp10 = _objectWithoutProperties(value[findIndexResult], closure_3);
+        items[sum] = tmp3;
+        HermesBuiltin.arraySpread(items, value.slice(findIndexResult + 1), sum + 1);
+        const result = set(projectId, items);
       } else {
         const items1 = [];
-        items1[HermesBuiltin.arraySpread(value, 0)] = tmp2;
+        items1[HermesBuiltin.arraySpread(items1, value, 0)] = tmp3;
         const result1 = obj.set(projectId, items1);
       }
     }
   },
   VIBEGRATIONS_CHAT_STEP_APPEND: function handleChatStepAppend(turnId) {
+    let projectId;
     ({ projectId, step: require } = turnId);
     patchTurn(projectId, turnId.turnId, (steps) => {
-      const obj = {};
+      let tmp2;
+      const obj = { steps: tmp2.steps };
       const merged = Object.assign(steps);
-      const tmp2 = openTimeline(steps.steps);
+      tmp2 = openTimeline(steps.steps);
       pushStep(tmp2, require);
-      obj.steps = tmp2.steps;
       return obj;
     });
-    recordThinkingTransition(projectId);
+    let tmp2 = recordThinkingTransition(projectId);
   },
   VIBEGRATIONS_CHAT_TURN_FINISHED: function handleChatTurnFinished(turnId) {
+    let projectId;
     ({ projectId, summary: require } = turnId);
-    value = map.get(projectId);
-    let someResult = null != value;
-    if (someResult) {
-      someResult = value.some((disposition) => null != disposition.disposition);
-    }
+    let obj = map;
+    turnId = turnId.turnId;
+    const value = map.get(projectId);
+    const someResult = null != value && value.some((disposition) => null != disposition.disposition);
     if (someResult) {
       const result = obj.set(projectId, value.map((disposition) => {
         if (null == disposition.disposition) {
@@ -891,24 +996,21 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
         }
       }));
     }
-    patchTurn(projectId, turnId.turnId, (content) => {
-      const obj = {};
+    patchTurn(projectId, turnId, (content) => {
+      let str;
+      const obj = { finished: true, finished_at: Date.now(), provisionalTodo: undefined, content: str };
       const merged = Object.assign(content);
-      obj.finished = true;
-      obj.finished_at = Date.now();
-      obj.provisionalTodo = undefined;
       if ("" !== content.content) {
-        let str = content.content;
+        str = content.content;
       } else {
         str = require;
         if (require == null) {
           str = "";
         }
       }
-      obj.content = str;
       return obj;
     });
-    if (!hasOpenTurn(map.get(projectId))) {
+    if (!hasOpenTurn(obj.get(projectId))) {
       map4.delete(projectId);
       set1.delete(projectId);
     }
@@ -916,24 +1018,49 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
   },
   VIBEGRATIONS_CHAT_INTERRUPTED: function handleChatInterrupted(projectId) {
     projectId = projectId.projectId;
-    value = map.get(projectId);
+    const value = map.get(projectId);
+    const obj = map;
     if (null == value) {
       return false;
     } else {
-      const tmp3 = newMessage("assistant", "");
-      tmp3.finished = true;
+      const tmp4 = newMessage("assistant", "");
+      tmp4.finished = true;
       const _Date = Date;
-      tmp3.finished_at = Date.now();
-      tmp3.interrupted = true;
+      tmp4.finished_at = Date.now();
+      tmp4.interrupted = true;
       const items = [];
-      items[HermesBuiltin.arraySpread(value, 0)] = tmp3;
+      items[HermesBuiltin.arraySpread(items, value, 0)] = tmp4;
       const result = obj.set(projectId, items);
     }
-    obj = map;
+  },
+  VIBEGRATIONS_CHAT_STOP_REQUESTED: function handleChatStopRequested(projectId) {
+    projectId = projectId.projectId;
+    let obj = map;
+    const value = map.get(projectId);
+    let tmp = null != value;
+    if (tmp) {
+      const someResult = value.some(stoppable);
+      if (someResult) {
+        const result = obj.set(projectId, value.map((item) => {
+          let tmp = item;
+          if (stoppable(item)) {
+            const obj = { stopRequested: true };
+            const merged = Object.assign(item);
+            tmp = obj;
+          }
+          return tmp;
+        }));
+      }
+      tmp = someResult;
+    }
+    return tmp;
   },
   VIBEGRATIONS_CHAT_PROVISIONAL_TODO: function handleChatProvisionalTodo(text) {
+    let projectId;
+    let turnId;
     ({ projectId, turnId } = text);
-    value = map.get(projectId);
+    text = text.text;
+    const value = map.get(projectId);
     let flag = false;
     if (null != value) {
       let num2 = -1;
@@ -954,13 +1081,13 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
       let flag2 = -1 !== num2;
       if (-1 !== num2) {
         const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(value.slice(0, num2), 0);
-        const obj = {};
+        set = map.set;
+        const arraySpreadResult = HermesBuiltin.arraySpread(items, value.slice(0, num2), 0);
+        const obj = { provisionalTodo: text };
         const merged = Object.assign(value[num2]);
-        obj.provisionalTodo = text.text;
         items[arraySpreadResult] = obj;
-        HermesBuiltin.arraySpread(value.slice(num2 + 1), arraySpreadResult + 1);
-        const result = map.set(projectId, items);
+        HermesBuiltin.arraySpread(items, value.slice(num2 + 1), arraySpreadResult + 1);
+        const result = set(projectId, items);
         flag2 = true;
       }
       flag = flag2;
@@ -968,11 +1095,15 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
     return flag ? undefined : false;
   },
   VIBEGRATIONS_CHAT_THINKING_SET: function handleChatThinkingSet(arg0) {
+    let activity;
+    let projectId;
     ({ projectId, activity } = arg0);
     if (null == activity) {
-      return map4.delete(projectId) && undefined;
+      const tmp4 = map4.delete(projectId) && undefined;
+      return tmp4;
     } else {
-      value = map4.get(projectId);
+      const value = map4.get(projectId);
+      const obj = map4;
       if (null != value) {
         if (activity.session === value.session) {
           if (activity.seq <= value.seq) {
@@ -980,17 +1111,19 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
           }
         }
       }
-      const result = map4.set(projectId, activity);
+      const result = obj.set(projectId, activity);
     }
   },
   VIBEGRATIONS_CHAT_COMPACTING_SET: function handleChatCompactingSet(arg0) {
+    let compacting;
+    let projectId;
     ({ projectId, compacting } = arg0);
     if (compacting === set1.has(projectId)) {
       return false;
     } else if (compacting) {
-      obj.add(projectId);
+      set1.add(projectId);
     } else {
-      obj.delete(projectId);
+      set1.delete(projectId);
     }
   },
   VIBEGRATIONS_CHAT_USAGE_SET: function handleChatUsageSet(projectId) {
@@ -1003,12 +1136,14 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
     }
   },
   VIBEGRATIONS_CHAT_TURN_PATCH: function handleChatTurnPatch(turnId) {
-    ({ projectId, patch: require } = turnId);
+    let closure_129_0;
+    let projectId;
+    ({ projectId, patch: closure_129_0 } = turnId);
     patchTurn(projectId, turnId.turnId, (arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      const merged1 = Object.assign(require);
-      if ("todos" in require) {
+      const merged1 = Object.assign(closure_1_0);
+      if ("todos" in closure_1_0) {
         obj.provisionalTodo = undefined;
       }
       return obj;
@@ -1016,25 +1151,23 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
     recordThinkingTransition(projectId);
   },
   VIBEGRATIONS_CHAT_CONN_STATE: function handleChatConnState(arg0) {
+    let connState;
+    let projectId;
     ({ projectId, connState } = arg0);
     if ("closed" !== connState) {
       if ("failed" !== connState) {
         return false;
       }
     }
+    let obj = map;
+    const deleteResult = set1.delete(projectId);
     const deleteResult1 = map4.delete(projectId);
-    value = map.get(projectId);
+    const value = map.get(projectId);
     if (null != value) {
       if (value.some((role) => {
         let tmp = "assistant" === role.role;
         if (tmp) {
-          let someResult = true === role.finished || true === role.continued;
-          if (!someResult) {
-            someResult = "" !== role.content;
-          }
-          if (!someResult) {
-            someResult = null != role.proposal;
-          }
+          let someResult = true === role.finished || true === role.continued || "" !== role.content || null != role.proposal || null != role.clarification || null != role.intake;
           if (!someResult) {
             const steps = role.steps;
             someResult = steps.some((kind) => set.has(kind.kind));
@@ -1043,91 +1176,59 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
         }
         return tmp;
       })) {
-        const result = map.set(projectId, value.map((disposition) => {
+        const result = obj.set(projectId, value.map((disposition) => {
+          let intl;
+          let items;
           if (null != disposition.disposition) {
             disposition = disposition.disposition;
             return _objectWithoutProperties(disposition, closure_1_5);
           } else {
-            let tmp2 = disposition;
+            let tmp3 = disposition;
             if ("assistant" === disposition.role) {
-              let someResult = true === disposition.finished || true === disposition.continued;
-              if (!someResult) {
-                someResult = "" !== disposition.content;
-              }
-              if (!someResult) {
-                someResult = null != disposition.proposal;
-              }
+              let someResult = true === disposition.finished || true === disposition.continued || "" !== disposition.content || null != disposition.proposal || null != disposition.clarification || null != disposition.intake;
               if (!someResult) {
                 const steps = disposition.steps;
                 someResult = steps.some((kind) => set.has(kind.kind));
               }
-              tmp2 = disposition;
+              tmp3 = disposition;
               if (!someResult) {
-                const obj = {};
+                const obj = { provisionalTodo: undefined, steps: items };
                 const merged = Object.assign(disposition);
-                obj.provisionalTodo = undefined;
-                const items = [];
-                const obj2 = { type: "step", kind: "terminal_error", message: null };
-                const intl = util.intl;
-                obj2.message = intl.string(_modDef3710["wjWm+/"]);
-                items[HermesBuiltin.arraySpread(disposition.steps, 0)] = obj2;
-                obj.steps = items;
-                tmp2 = obj;
-                const arraySpreadResult = HermesBuiltin.arraySpread(disposition.steps, 0);
+                items = [];
+                const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3718["wjWm+/"]) };
+                const arraySpreadResult = HermesBuiltin.arraySpread(items, disposition.steps, 0);
+                intl = intl2.intl;
+                items[arraySpreadResult] = obj2;
+                tmp3 = obj;
               }
             }
-            return tmp2;
+            return tmp3;
           }
         }));
         recordThinkingTransition(projectId);
       }
     }
-    let tmp6 = !deleteResult1;
-    if (!deleteResult1) {
-      tmp6 = !deleteResult;
+    return !(!deleteResult1 && !deleteResult) && undefined;
+  },
+  VIBEGRATIONS_PROJECT_CREATE_SUCCESS: function handleProjectCreateSuccess(project) {
+    project = project.project;
+    const obj = map5;
+    if (map5.has(project.id)) {
+      return false;
+    } else {
+      const result = obj.set(project.id, null);
     }
-    return !tmp6;
   },
   VIBEGRATIONS_PROJECT_DELETE_SUCCESS: function handleProjectDeleteSuccess(projectId) {
-    projectId = projectId.projectId;
-    let deleteResult = map.delete(projectId);
-    map5.delete(projectId);
-    const deleteResult2 = map1.delete(projectId);
-    const deleteResult3 = map2.delete(projectId);
-    const deleteResult4 = map3.delete(projectId);
-    const arr = closure_22;
-    const deleteResult5 = map4.delete(projectId);
-    const index = closure_22.indexOf(projectId);
-    if (-1 !== index) {
-      arr.splice(index, 1);
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult2;
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult3;
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult4;
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult5;
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult6;
-    }
-    if (!deleteResult) {
-      deleteResult = tmp9;
-    }
-    if (!deleteResult) {
+    if (!purgeProject(projectId.projectId)) {
       return false;
     }
-    deleteResult6 = set1.delete(projectId);
   },
   VIBEGRATIONS_PROJECTS_FETCH_SUCCESS: function handleProjectsFetchSuccess() {
-    const items = [...map.keys(), ...map1.keys(), ...map2.keys(), ...map3.keys()];
+    const items = [...map.keys(), ...map5.keys(), ...map1.keys(), ...map2.keys(), ...map3.keys()];
     let flag = false;
-    const iter = new Set(items)[Symbol.iterator]();
+    set = new Set(items);
+    const iter = set[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp3 = nextResult;
@@ -1142,19 +1243,13 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
     }
     return flag ? undefined : false;
   }
-});
-const size = fn(2);
+};
+const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/vibegrations/stores/VibegrationsChatStore.tsx");
 
 export default vibegrationsChatStore;
 export const turnSettled = function turnSettled(message) {
-  let someResult = true === message.finished || true === message.continued;
-  if (!someResult) {
-    someResult = "" !== message.content;
-  }
-  if (!someResult) {
-    someResult = null != message.proposal;
-  }
+  let someResult = true === message.finished || true === message.continued || "" !== message.content || null != message.proposal || null != message.clarification || null != message.intake;
   if (!someResult) {
     const steps = message.steps;
     someResult = steps.some((kind) => set.has(kind.kind));
@@ -1162,7 +1257,7 @@ export const turnSettled = function turnSettled(message) {
   return someResult;
 };
 export const getOlderHistoryCursor = function getOlderHistoryCursor(projectId) {
-  value = map5.get(projectId);
+  let value = map5.get(projectId);
   if (value == null) {
     value = null;
   }

@@ -1,51 +1,185 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 15987
+// Function ID: 15988
 // Name: GuildsBarItemUnavailableGuilds
-// Dependencies: [19, 17, 5138, 21, 4788, 576, 5140, 1115, 504, 16683, 2]
+// Dependencies: [19, 17, 5202, 21, 4837, 588, 5204, 1127, 558, 576, 504, 15978, 2]
 
-// Module 16692 (GuildsBarItemUnavailableGuilds)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import _modDef16683 from "module_16683" /* 16683 */;
-import noop from "module_19" /* 19 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5138 */;
+// Module 15987 (GuildsBarItemUnavailableGuilds)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15978 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5202 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: c3, Pressable: closure_4 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj = { unavailableGuilds: { marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING, justifyContent: "center", alignItems: "center" }, unavailableGuildsIcon: null };
-let size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
-obj.unavailableGuildsIcon = size;
-let closure_7 = createStyles.createStyles(obj);
-let obj3 = { marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING, justifyContent: "center", alignItems: "center" };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarItemUnavailableGuilds.tsx");
-
-export default noop.memo(function GuildsBarItemUnavailableGuilds() {
+let c3;
+let closure_4;
+let obj2;
+let size;
+({ Image: c3, Pressable: closure_4 } = react_native);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { unavailableGuilds: obj2, unavailableGuildsIcon: size };
+obj2 = { marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING, justifyContent: "center", alignItems: "center" };
+createStyles = createStyles.createStyles;
+size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
+let closure_7 = createStyles(obj);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let stateFromStores;
+  let tmp5;
+  let tmp6;
+  const tmp = stateFromStores;
+  let obj = stateFromStores(576);
+  const cResult = obj.c(13);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildAvailabilityStore];
+    const fn = function t() {
+      return GuildAvailabilityStore.totalUnavailableGuilds;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (stateFromStores > 0) {
+    let tmp9;
+    if (cResult[2] !== stateFromStores) {
+      let intl = tmp(1127).intl;
+      let obj2 = { count: stateFromStores };
+      const formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t["MEpX+2"], obj2);
+      cResult[2] = stateFromStores;
+      cResult[3] = formatToPlainStringResult;
+      tmp9 = formatToPlainStringResult;
+    } else {
+      tmp9 = cResult[3];
+    }
+    if (cResult[4] !== stateFromStores) {
+      class I {
+        constructor() {
+          let intl;
+          let intl2;
+          let obj2;
+          const obj = { title: intl.string(intl3.t.R0RpRX), body: intl2.format(intl3.t["TnH05/"], obj2) };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl3.intl;
+          intl2 = intl3.intl;
+          obj2 = { count: stateFromStores };
+          show(obj);
+        }
+      }
+      cResult[4] = stateFromStores;
+      cResult[5] = I;
+    } else {
+      class I {
+        constructor() {
+          let intl;
+          let intl2;
+          let obj2;
+          const obj = { title: intl.string(intl3.t.R0RpRX), body: intl2.format(intl3.t["TnH05/"], obj2) };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl3.intl;
+          intl2 = intl3.intl;
+          obj2 = { count: stateFromStores };
+          show(obj);
+        }
+      }
+    }
+    if (cResult[6] !== tmp4.unavailableGuildsIcon) {
+      class I {
+        constructor() {
+          let intl;
+          let intl2;
+          let obj2;
+          const obj = { title: intl.string(intl3.t.R0RpRX), body: intl2.format(intl3.t["TnH05/"], obj2) };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl3.intl;
+          intl2 = intl3.intl;
+          obj2 = { count: stateFromStores };
+          show(obj);
+        }
+      }
+      const tmp15 = <closure_3 style={tmp4.unavailableGuildsIcon} source={AssetRegistryDefault} />;
+      cResult[6] = tmp4.unavailableGuildsIcon;
+      cResult[7] = tmp15;
+    } else {
+      class I {
+        constructor() {
+          let intl;
+          let intl2;
+          let obj2;
+          const obj = { title: intl.string(intl3.t.R0RpRX), body: intl2.format(intl3.t["TnH05/"], obj2) };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl3.intl;
+          intl2 = intl3.intl;
+          obj2 = { count: stateFromStores };
+          show(obj);
+        }
+      }
+    }
+    if (cResult[8] === tmp4.unavailableGuilds) {
+      class I {
+        constructor() {
+          let intl;
+          let intl2;
+          let obj2;
+          const obj = { title: intl.string(intl3.t.R0RpRX), body: intl2.format(intl3.t["TnH05/"], obj2) };
+          const show = AlertActionCreatorsDefault.show;
+          AlertActionCreatorsDefault;
+          intl = intl3.intl;
+          intl2 = intl3.intl;
+          obj2 = { count: stateFromStores };
+          show(obj);
+        }
+      }
+    }
+    const tmp19 = <closure_4 accessibilityRole="button" accessibilityLabel={tmp9} onPress={tmp11} style={tmp4.unavailableGuilds}>{tmp12}</closure_4>;
+    cResult[8] = tmp4.unavailableGuilds;
+    cResult[9] = tmp9;
+    cResult[10] = tmp11;
+    cResult[11] = tmp12;
+    cResult[12] = tmp19;
+  }
+  return null;
+}) : (() => {
+  let stateFromStores;
   const tmp = closure_7();
+  let obj = stateFromStores(504);
   const items = [GuildAvailabilityStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => GuildAvailabilityStore.totalUnavailableGuilds);
+  stateFromStores = obj.useStateFromStores(items, () => GuildAvailabilityStore.totalUnavailableGuilds);
   let tmp5 = null;
   if (stateFromStores > 0) {
-    let obj2 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-    let intl = tmp2(1115).intl;
+    let intl = tmp2(1127).intl;
     const obj3 = { count: stateFromStores };
-    obj2.accessibilityLabel = intl.formatToPlainString(tmp2(1115).t["MEpX+2"], obj3);
-    obj2.onPress = function onPress() {
-      const obj2 = { title: null, body: null };
-      const intl = util.intl;
-      obj2.title = intl.string(util.t.R0RpRX);
-      const intl2 = util.intl;
-      obj2.body = intl2.format(util.t["TnH05/"], { count: stateFromStores });
-      AlertActionCreatorsDefault.show(obj2);
-    };
-    obj2.style = tmp.unavailableGuilds;
-    const obj4 = { style: tmp.unavailableGuildsIcon, source: _modDef16683 };
-    obj2.children = <closure_3 style={tmp.unavailableGuildsIcon} source={_modDef16683} />;
-    tmp5 = <closure_4 accessibilityRole="button" accessibilityLabel={null} onPress={null} style={null}>{null}</closure_4>;
+    ({ style: tmp.unavailableGuildsIcon, source: AssetRegistryDefault });
+    tmp5 = <closure_4 accessibilityRole="button" accessibilityLabel={intl.formatToPlainString(stateFromStores(1127).t["MEpX+2"], obj3)} onPress={function onPress() {
+      let intl;
+      let intl2;
+      let obj2;
+      const obj = { title: intl.string(intl3.t.R0RpRX), body: intl2.format(intl3.t["TnH05/"], obj2) };
+      const show = AlertActionCreatorsDefault.show;
+      AlertActionCreatorsDefault;
+      intl = intl3.intl;
+      intl2 = intl3.intl;
+      obj2 = { count: stateFromStores };
+      show(obj);
+    }} style={tmp.unavailableGuilds}>{null}</closure_4>;
   }
   return tmp5;
-});
+}));
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarItemUnavailableGuilds.tsx");
+
+export default memoResult;

@@ -1,13 +1,14 @@
-// Module ID: 5713
-// Function ID: 5714
+// Module ID: 5777
+// Function ID: 5778
 // Name: RoleSubscriptionEmojiUtils
-// Dependencies: [5709, 2]
+// Dependencies: [5773, 2]
 // Exports: isPurchasableRoleSubscriptionEmoji, isRoleSubscriptionEmoji, isUnusableRoleSubscriptionEmoji
 
-// Module 5713 (RoleSubscriptionEmojiUtils)
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5709 */;
+// Module 5777 (RoleSubscriptionEmojiUtils)
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5773 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+const f90049 = (item) => set.has(item);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/RoleSubscriptionEmojiUtils.tsx");
 
 export const isRoleSubscriptionEmoji = function isRoleSubscriptionEmoji(roles, id) {
@@ -18,7 +19,7 @@ export const isRoleSubscriptionEmoji = function isRoleSubscriptionEmoji(roles, i
   if (null != roles1) {
     if (0 !== roles.roles.length) {
       if (null != id) {
-        SubscriptionRoleStore.getSubscriptionRoles(id);
+        const subscriptionRoles = SubscriptionRoleStore.getSubscriptionRoles(id);
         roles = roles.roles;
         return roles.some((item) => set.has(item));
       }
@@ -36,7 +37,7 @@ export const isPurchasableRoleSubscriptionEmoji = function isPurchasableRoleSubs
       if (null != customEmojiFromJoinedGuild.guildId) {
         const purchasableSubscriptionRoles = SubscriptionRoleStore.getPurchasableSubscriptionRoles(customEmojiFromJoinedGuild.guildId);
         const roles = customEmojiFromJoinedGuild.roles;
-        return roles.some((item) => set.has(item));
+        return roles.some(f90049);
       }
     }
   }
@@ -60,16 +61,18 @@ export const isUnusableRoleSubscriptionEmoji = function isUnusableRoleSubscripti
           if (0 !== customEmojiFromJoinedGuild.roles.length) {
             flag2 = false;
             if (null != customEmojiFromJoinedGuild.guildId) {
-              SubscriptionRoleStore.getPurchasableSubscriptionRoles(customEmojiFromJoinedGuild.guildId);
+              let purchasableSubscriptionRoles = SubscriptionRoleStore.getPurchasableSubscriptionRoles(customEmojiFromJoinedGuild.guildId);
               const roles = customEmojiFromJoinedGuild.roles;
-              flag2 = roles.some((item) => set.has(item));
+              flag2 = roles.some(f90049);
             }
           }
         }
         if (flag2) {
-          SubscriptionRoleStore.getUserSubscriptionRoles(customEmojiFromJoinedGuild.guildId);
+          purchasableSubscriptionRoles = SubscriptionRoleStore.getUserSubscriptionRoles(customEmojiFromJoinedGuild.guildId);
           const roles2 = customEmojiFromJoinedGuild.roles;
           let userIsAdmin = guildId === customEmojiFromJoinedGuild.guildId;
+          const obj = SubscriptionRoleStore;
+          const someResult = roles2.some((item) => set.has(item));
           if (userIsAdmin) {
             userIsAdmin = obj.getUserIsAdmin(customEmojiFromJoinedGuild.guildId);
           }
@@ -78,8 +81,6 @@ export const isUnusableRoleSubscriptionEmoji = function isUnusableRoleSubscripti
               return true;
             }
           }
-          obj = SubscriptionRoleStore;
-          someResult = roles2.some((item) => set.has(item));
         }
         return false;
       }

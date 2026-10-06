@@ -1,9 +1,27 @@
 // Module ID: 5542
 // Function ID: 5543
-// Dependencies: [1121]
+// Dependencies: [5527]
 
 // Module 5542
-import registerAsset from "module_1121" /* 1121 */;
+import _mod5527 from "module_5527" /* 5527 */;
 
+let obj = {
+  isXMLFile(dataView) {
+    let tmp = dataView;
+    if (tmp) {
+      const obj = _mod5527;
+      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
+    }
+    return tmp;
+  },
+  findOffsets(byteLength) {
+    const xmpChunks = [];
+    const obj = { dataOffset, length: byteLength.byteLength };
+    xmpChunks.push(obj);
+    return { xmpChunks };
+  }
+};
+let c2 = 0;
+let c3 = "<?xpacket begin";
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "74748dfcc94ad61e313c4e70aacf64f7", name: "img_account_sync_battlenet_white", type: "png" });
+export default obj;

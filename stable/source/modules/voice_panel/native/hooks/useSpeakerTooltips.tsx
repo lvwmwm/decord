@@ -1,175 +1,242 @@
-// Module ID: 17591
-// Function ID: 17592
+// Module ID: 16901
+// Function ID: 16902
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 17588, 12553, 2038, 21, 17592, 17526, 9802, 12554, 4524, 7662, 17564, 1115, 2027, 17594, 11423, 2]
+// Dependencies: [32, 19, 16899, 11646, 2048, 21, 16902, 16865, 9381, 11647, 4570, 6807, 16843, 1127, 2035, 16904, 558, 576, 9656, 2]
 // Exports: default
 
-// Module 17591 (useSpeakerTooltips)
-import util from "util" /* 1115 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 17594 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 16901 (useSpeakerTooltips)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11646 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 16904 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 16899 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ConsoleVoiceUpsellStore = fn(17588);
+const require = globalThis.__r;
+let importDefault;
+
+let hasOwnProperty;
+let metroRequire;
+let tmp;
+const dismissible_content = tmp(2035);
+const useCoachmark = tmp(9656);
+let _slicedToArray = _slicedToArray_mod;
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
-let VoicePanelControlsModes = fn(12553).VoicePanelControlsModes;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
-const jsx = fn(21).jsx;
+let VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
 let __initData = { code: "function useSpeakerTooltipsTsx1(){const{controlsSpecs}=this.__closure;return controlsSpecs.get().mode;}" };
 const __initData2 = { code: "function useSpeakerTooltipsTsx2(currentControlsMode,previous){const{runOnJS,setIsShowingControls,VoicePanelControlsModes}=this.__closure;if(currentControlsMode===previous)return;runOnJS(setIsShowingControls)(currentControlsMode===VoicePanelControlsModes.FLOATING_DEFAULT);}" };
-const size = fn(2);
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let tmp4;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  let tmp = require;
+  let obj = react2;
+  const cResult = obj.c(6);
+  if (cResult[0] !== arg1) {
+    const fn = function l() {
+      const obj = visible;
+      if (visible.visible) {
+        obj.onDismiss();
+      }
+    };
+    cResult[0] = arg1;
+    cResult[1] = fn;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  let closure_2 = tmp4;
+  if (cResult[2] === arg2) {
+    let tmp5;
+    let tmp6;
+    if (cResult[3] === tmp4) {
+      tmp5 = cResult[4];
+      tmp6 = cResult[5];
+    }
+    const effect = react.useEffect(tmp5, tmp6);
+    const tmpResult = useCoachmark;
+    const coachmark = tmpResult.useCoachmark(arg0, arg1);
+  }
+  const fn2 = function u() {
+    const tmp = closure_1;
+    if (!tmp) {
+      closure_2();
+    }
+  };
+  const items = [arg2, tmp4];
+  cResult[2] = arg2;
+  cResult[3] = tmp4;
+  cResult[4] = fn2;
+  cResult[5] = items;
+  tmp6 = items;
+  tmp5 = fn2;
+}) : ((arg0, arg1, arg2) => {
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  const items = [arg1];
+  const callback = react.useCallback(() => {
+    const obj = visible;
+    if (visible.visible) {
+      obj.onDismiss();
+    }
+  }, items);
+  const items1 = [arg2, callback];
+  const effect = react.useEffect(() => {
+    const tmp = closure_1;
+    if (!tmp) {
+      callback();
+    }
+  }, items1);
+  let obj = useCoachmark;
+  const coachmark = obj.useCoachmark(arg0, arg1);
+});
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useSpeakerTooltips.tsx");
 
-export default function useSpeakerTooltips(targetRef, memo) {
-  let first = memo;
-  let memo2 = memo;
-  const tmp4 = first(callback1[6])();
-  first = tmp4;
-  const voiceUpsellDismissed = first1().voiceUpsellDismissed;
-  callback1 = voiceUpsellDismissed;
-  let tmp5 = first(callback1[7])(undefined);
+export default function useSpeakerTooltips(arg0, arg1) {
+  let closure_1;
+  let closure_10;
+  let closure_3;
+  let closure_7;
+  let controlsSpecs;
+  let first1;
+  let voiceUpsellDismissed;
+  let tmp = arg1;
+  let first = arg1;
+  let tmp3 = voiceUpsellDismissed;
+  const tmp4 = require("useConsoleConnectedAccountForVoiceUpsell")();
+  const tmp2 = importDefault;
+  importDefault = tmp4;
+  voiceUpsellDismissed = first1().voiceUpsellDismissed;
+  let tmp5 = require("useChannelFloatingCTAContent")(undefined);
   _slicedToArray = tmp5;
-  const isVoicePanelFullscreen = memo2(callback1[8]).useIsVoicePanelFullscreen();
-  controlsSpecs = controlsSpecs.useContext(first(callback1[9])).controlsSpecs;
+  let obj = first(voiceUpsellDismissed[8]);
+  let obj2 = controlsSpecs;
+  const isVoicePanelFullscreen = obj.useIsVoicePanelFullscreen();
+  controlsSpecs = controlsSpecs.useContext(require("VoicePanelStateContext")).controlsSpecs;
   const tmp9 = _slicedToArray(controlsSpecs.useState(true), 2);
-  closure_5 = tmp10;
-  let obj = memo2(callback1[8]);
-  const tmp2 = first;
-  const tmp8 = _slicedToArray;
-  const fn = function v() {
+  let closure_5 = tmp11;
+  const tmp6 = first;
+  first = tmp9[0];
+  const fn = function f() {
     return controlsSpecs.get().mode;
   };
   fn.__closure = { controlsSpecs };
   fn.__workletHash = 13952338295275;
   fn.__initData = __initData;
-  const fn2 = function b(arg0, arg1) {
-    if (arg0 !== arg1) {
-      ReanimatedRexport.runOnJS(closure_5)(arg0 === VoicePanelControlsModes.FLOATING_DEFAULT);
+  const obj3 = first(voiceUpsellDismissed[10]);
+  const tmp8 = _slicedToArray;
+  class S {
+    constructor(arg0, arg1) {
+      if (arg0 !== arg1) {
+        const obj = ReanimatedRexport;
+        obj.runOnJS(closure_5)(arg0 === VoicePanelControlsModes.FLOATING_DEFAULT);
+      }
     }
-  };
-  const obj3 = memo2(callback1[10]);
-  fn2.__closure = { runOnJS: memo2(callback1[10]).runOnJS, setIsShowingControls: tmp9[1], VoicePanelControlsModes };
-  fn2.__workletHash = 5084069556209;
-  fn2.__initData = __initData2;
-  const animatedReaction = obj3.useAnimatedReaction(fn, fn2);
-  if (memo) {
-    first = isVoicePanelFullscreen;
   }
-  if (first) {
-    first = tmp9[0];
+  S.__closure = { runOnJS: first(voiceUpsellDismissed[10]).runOnJS, setIsShowingControls: tmp9[1], VoicePanelControlsModes };
+  S.__workletHash = 5084069556209;
+  S.__initData = __initData2;
+  ({ runOnJS: first(voiceUpsellDismissed[10]).runOnJS, setIsShowingControls: tmp9[1], VoicePanelControlsModes });
+  const animatedReaction = obj3.useAnimatedReaction(fn, S);
+  if (arg1) {
+    tmp = isVoicePanelFullscreen;
   }
-  memo2 = first;
-  const items = [first, tmp5];
-  memo = obj2.useMemo(() => memo2 ? closure_3 : [], items);
-  const obj4 = { runOnJS: memo2(callback1[10]).runOnJS, setIsShowingControls: tmp9[1], VoicePanelControlsModes };
-  const tmp8Result = tmp8(memo2(callback1[11]).useSelectedDismissibleContent(memo), 2);
+  if (tmp) {
+    tmp = first;
+  }
+  first = tmp;
+  const items = [tmp, tmp5];
+  const memo = obj2.useMemo(() => first ? closure_3 : [], items);
+  const tmp6Result = tmp6(tmp3[11]);
+  const tmp8Result = tmp8(tmp6Result.useSelectedDismissibleContent(memo), 2);
   first1 = tmp8Result[0];
-  VoicePanelControlsModes = tmp15;
-  const tmp16 = tmp2(callback1[12])();
-  closure_8 = tmp16;
-  const items1 = [first, tmp8Result[1], first1];
+  VoicePanelControlsModes = tmp16;
+  const tmp17 = tmp2(tmp3[12])();
+  let closure_8 = tmp17;
+  const items1 = [tmp, tmp8Result[1], first1];
   const memo1 = obj2.useMemo(() => {
-    const obj = { position: "bottom", title: null, description: null, visible: null, renderImgComponent: null, withBlurBackground: true, onDismiss: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t.O2WA4u);
-    const intl2 = util.intl;
-    obj.description = intl2.string(util.t.fr5bJy);
-    let tmp3 = memo2;
-    if (memo2) {
+    let intl;
+    let intl2;
+    let tmp3;
+    const obj = {
+      position: "bottom",
+      title: intl.string(intl3.t.O2WA4u),
+      description: intl2.string(intl3.t.fr5bJy),
+      visible: tmp3,
+      renderImgComponent() {
+        return memo1(closure_1_1(voiceUpsellDismissed[15]), {});
+      },
+      withBlurBackground: true,
+      onDismiss() {
+        return closure_1_7(constants.UNKNOWN);
+      }
+    };
+    intl = intl3.intl;
+    intl2 = intl3.intl;
+    tmp3 = first;
+    if (tmp3) {
       tmp3 = first1 === dismissible_content.DismissibleContent.DONUT_MOBILE_NUX;
     }
-    obj.visible = tmp3;
-    obj.renderImgComponent = function renderImgComponent() {
-      return memo1(first(callback1[15]), {});
-    };
-    obj.onDismiss = function onDismiss() {
-      return closure_1_7(constants.UNKNOWN);
-    };
     return obj;
   }, items1);
-  const items2 = [tmp4, first, voiceUpsellDismissed, memo1.visible];
-  memo2 = obj2.useMemo(() => {
+  const items2 = [tmp4, tmp, voiceUpsellDismissed, memo1.visible];
+  const memo2 = obj2.useMemo(() => {
+    let icon;
+    let str2;
     let consoleInfo = null;
-    if (null != first) {
-      consoleInfo = VoicePanelConsoleFacepile.getConsoleInfo(tmp);
-    }
-    let tmp5 = memo2;
-    if (memo2) {
-      tmp5 = !callback1;
-    }
-    if (tmp5) {
-      tmp5 = null != consoleInfo;
-    }
-    if (tmp5) {
-      tmp5 = !memo1.visible;
+    if (null != closure_1) {
+      const obj = VoicePanelConsoleFacepile;
+      consoleInfo = obj.getConsoleInfo(tmp);
     }
     let str;
+    const tmp5 = first && !voiceUpsellDismissed && null != consoleInfo && !memo1.visible;
     if (consoleInfo != null) {
       str = consoleInfo.connectLabel;
     }
     if (str == null) {
       str = "";
     }
-    const obj2 = { position: "bottom", title: str, description: null, visible: null, imgSource: null, withBlurBackground: true, onDismiss: null };
-    let str2;
+    const obj2 = {
+      position: "bottom",
+      title: str,
+      description: str2,
+      visible: tmp5,
+      imgSource: icon,
+      withBlurBackground: true,
+      onDismiss() {
+        closure_1_5(true);
+      }
+    };
+    str2 = undefined;
     if (consoleInfo != null) {
       str2 = consoleInfo.connectSublabel;
     }
     if (str2 == null) {
       str2 = "";
     }
-    obj2.description = str2;
-    obj2.visible = tmp5;
-    let icon;
+    icon = undefined;
     if (consoleInfo != null) {
       icon = consoleInfo.icon;
     }
-    obj2.imgSource = icon;
-    obj2.onDismiss = function onDismiss() {
-      closure_1_5(true);
-    };
     return obj2;
   }, items2);
-  __initData = tmp19;
-  const items3 = [memo1.visible || memo2.visible, tmp16];
+  __initData = tmp20;
+  const items3 = [memo1.visible || memo2.visible, tmp17];
   const effect = obj2.useEffect(() => {
     if (closure_10) {
-      obj.lock(VoicePanelControlsModes.FLOATING_DEFAULT);
+      closure_8.lock(VoicePanelControlsModes.FLOATING_DEFAULT);
     } else {
-      obj.unlock();
+      closure_8.unlock();
     }
   }, items3);
-  memo2 = memo1;
-  const items4 = [memo1];
-  const callback = obj2.useCallback(() => {
-    if (memo2.visible) {
-      memo2.onDismiss();
-    }
-  }, items4);
-  callback1 = callback;
-  const items5 = [first, callback];
-  const effect1 = obj2.useEffect(() => {
-    if (!first) {
-      callback1();
-    }
-  }, items5);
-  const tmp6Result = memo2(callback1[11]);
-  const coachmark = memo2(callback1[16]).useCoachmark(targetRef, memo1);
-  const items6 = [memo2];
-  callback1 = obj2.useCallback(() => {
-    if (memo2.visible) {
-      memo2.onDismiss();
-    }
-  }, items6);
-  const items7 = [first, callback1];
-  const effect2 = obj2.useEffect(() => {
-    if (!first) {
-      callback1();
-    }
-  }, items7);
-  const tmp6Result3 = memo2(callback1[16]);
-  const coachmark1 = memo2(callback1[16]).useCoachmark(targetRef, memo2);
+  closure_12(arg0, memo1, tmp);
+  closure_12(arg0, memo2, tmp);
 };

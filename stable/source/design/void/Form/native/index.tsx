@@ -1,39 +1,40 @@
-// Module ID: 8903
-// Function ID: 8904
+// Module ID: 8057
+// Function ID: 8058
 // Name: Form
-// Dependencies: [2, 7415, 7418, 7423, 7424, 8904, 8908, 8909, 8910, 7425, 8911, 7416, 7420, 7414, 8912, 8914, 7417, 8915, 8916, 8913, 8917, 8918, 7413, 8919, 8920, 8921]
+// Dependencies: [2, 6561, 6564, 6559, 6569, 8058, 8062, 8063, 8064, 6570, 8065, 6562, 6566, 6560, 8066, 8068, 6563, 8069, 8070, 8067, 8071, 8072, 6558, 8073, 8074, 8075]
 
-// Module 8903 (Form)
-import FormCheckboxRowDefault from "FormCheckboxRow" /* 7413 */;
-import FormRowDefault from "FormRow" /* 7414 */;
-import Form_FormDefault from "Form/Form" /* 7415 */;
-import FormLabelDefault from "FormLabel" /* 7416 */;
-import FormSubLabelDefault from "FormSubLabel" /* 7417 */;
-import FormArrowDefault from "FormArrow" /* 7418 */;
-import Form_FormRadioDefault from "Form/FormRadio" /* 7420 */;
-import Form_FormCheckboxDefault from "Form/FormCheckbox" /* 7423 */;
-import FormCheckmarkDefault from "FormCheckmark" /* 7424 */;
-import FormIconDefault from "FormIcon" /* 7425 */;
-import FormCTADefault from "FormCTA" /* 8904 */;
-import FormCTAButtonDefault from "FormCTAButton" /* 8908 */;
-import FormDividerDefault from "FormDivider" /* 8909 */;
-import FormHintDefault from "FormHint" /* 8910 */;
-import FormInputDefault from "FormInput" /* 8911 */;
-import FormSectionDefault from "FormSection" /* 8912 */;
-import FormTitleDefault from "FormTitle" /* 8913 */;
-import FormSelectDefault from "FormSelect" /* 8914 */;
-import Form_FormSwitchDefault from "Form/FormSwitch" /* 8915 */;
-import FormText from "FormText" /* 8916 */;
-import FormSwitchRowDefault from "FormSwitchRow" /* 8917 */;
-import FormRadioRowDefault from "FormRadioRow" /* 8918 */;
-import FormRadioGroupDefault from "FormRadioGroup" /* 8919 */;
-import FormSliderRowDefault from "FormSliderRow" /* 8920 */;
-import CardSectionDefault from "CardSection" /* 8921 */;
+// Module 8057 (Form)
+import FormCheckboxRowDefault from "FormCheckboxRow" /* 6558 */;
+import Form_FormCheckboxDefault from "Form/FormCheckbox" /* 6559 */;
+import FormRowDefault from "FormRow" /* 6560 */;
+import Form_FormDefault from "Form/Form" /* 6561 */;
+import FormLabelDefault from "FormLabel" /* 6562 */;
+import FormSubLabelDefault from "FormSubLabel" /* 6563 */;
+import FormArrowDefault from "FormArrow" /* 6564 */;
+import Form_FormRadioDefault from "Form/FormRadio" /* 6566 */;
+import FormCheckmarkDefault from "FormCheckmark" /* 6569 */;
+import FormIconDefault from "FormIcon" /* 6570 */;
+import FormCTADefault from "FormCTA" /* 8058 */;
+import FormCTAButtonDefault from "FormCTAButton" /* 8062 */;
+import FormDividerDefault from "FormDivider" /* 8063 */;
+import FormHintDefault from "FormHint" /* 8064 */;
+import FormInputDefault from "FormInput" /* 8065 */;
+import FormSectionDefault from "FormSection" /* 8066 */;
+import FormTitleDefault from "FormTitle" /* 8067 */;
+import FormSelectDefault from "FormSelect" /* 8068 */;
+import Form_FormSwitchDefault from "Form/FormSwitch" /* 8069 */;
+import FormText from "FormText" /* 8070 */;
+import FormSwitchRowDefault from "FormSwitchRow" /* 8071 */;
+import FormRadioRowDefault from "FormRadioRow" /* 8072 */;
+import FormRadioGroupDefault from "FormRadioGroup" /* 8073 */;
+import FormSliderRowDefault from "FormSliderRow" /* 8074 */;
+import CardSectionDefault from "CardSection" /* 8075 */;
 import size from "module_2" /* 2 */;
 
 const FormTextDefault = FormText;
 
 const result = size.fileFinishedImporting("design/void/Form/native/index.tsx");
+const FormText_export = FormTextDefault;
 
 export const Form = Form_FormDefault;
 export const FormArrow = FormArrowDefault;
@@ -52,7 +53,7 @@ export const FormSection = FormSectionDefault;
 export const FormSelect = FormSelectDefault;
 export const FormSubLabel = FormSubLabelDefault;
 export const FormSwitch = Form_FormSwitchDefault;
-export const FormText = FormTextDefault;
+export { FormText_export as FormText };
 export const FormTextColors = FormText.FormTextColors;
 export const FormTitle = FormTitleDefault;
 export const FormSwitchRow = FormSwitchRowDefault;

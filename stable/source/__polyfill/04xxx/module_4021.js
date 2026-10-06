@@ -1,16 +1,50 @@
 // Module ID: 4021
 // Function ID: 4022
-// Dependencies: [2114]
+// Dependencies: [4022, 4023, 4024, 4025, 4026]
 
 // Module 4021
-import module_2114 from "module_2114" /* 2114 */;
+import formatDistance from "formatDistance" /* 4022 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 4023 */;
+import formatRelative from "formatRelative" /* 4024 */;
+import date_mod from "module_4025" /* 4025 */;
+import date_mod2 from "module_4026" /* 4026 */;
 
-if (!module_2114) {
-  const obj2 = { default: module_2114 };
-  let obj = obj2;
+let tmp11;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+if (!formatDistance) {
+  tmp3 = { default: formatDistance };
+  const obj = { default: formatDistance };
 } else {
-  obj = module_2114;
+  tmp3 = formatDistance;
+}
+if (!buildFormatLongFn) {
+  tmp5 = { default: buildFormatLongFn };
+  const obj2 = { default: buildFormatLongFn };
+} else {
+  tmp5 = buildFormatLongFn;
+}
+if (!formatRelative) {
+  tmp7 = { default: formatRelative };
+  const obj3 = { default: formatRelative };
+} else {
+  tmp7 = formatRelative;
+}
+let date = date_mod2;
+if (!date) {
+  tmp9 = { default: date };
+  const obj4 = { default: date };
+} else {
+  tmp9 = date;
+}
+date = date_mod2;
+if (!date) {
+  tmp11 = { default: date };
+  const obj5 = { default: date };
+} else {
+  tmp11 = date;
 }
 
-export default { date: obj.default({ formats: { full: "EEEE, do MMMM y '\u0440.'", long: "do MMMM y '\u0440.'", medium: "d MMM y '\u0440.'", short: "dd.MM.y" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "H:mm:ss zzzz", long: "H:mm:ss z", medium: "H:mm:ss", short: "H:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} '\u043E' {{time}}", long: "{{date}} '\u043E' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
-export default exports.default;
+export default { code: "pl", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };

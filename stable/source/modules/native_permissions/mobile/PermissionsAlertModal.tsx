@@ -1,33 +1,109 @@
-// Module ID: 5397
-// Function ID: 5398
+// Module ID: 5462
+// Function ID: 5463
 // Name: PermissionsAlertModal
-// Dependencies: [19, 21, 5146, 5146, 1115, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 1127, 5210, 5210, 2]
 
-// Module 5397 (PermissionsAlertModal)
-import util from "util" /* 1115 */;
-import AlertModal from "AlertModal" /* 5146 */;
-import noop from "module_19" /* 19 */;
+// Module 5462 (PermissionsAlertModal)
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import AlertModal2 from "AlertModal" /* 5210 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c2, jsxs: c3 } = jsxProd);
-const size = fn(2);
+let c2;
+let c3;
+({ jsx: c2, jsxs: c3 } = Fragment);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let body;
+  let first;
+  let intl2;
+  let items;
+  let onConfirm;
+  let title;
+  let tmp12;
+  let tmp6;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ title, body, onConfirm } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl3.t.jVcuVY);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== onConfirm) {
+    const obj2 = { onPress: onConfirm, text: first };
+    const tmp8 = React2(AlertModal2.AlertActionButton, obj2, "confirm");
+    cResult[1] = onConfirm;
+    cResult[2] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { variant: "secondary", text: intl2.string(intl3.t.cpT0Cq) };
+    const AlertActionButton = tmp(5210).AlertActionButton;
+    intl2 = tmp(1127).intl;
+    const tmp11 = React2(AlertActionButton, obj3, "close");
+    cResult[3] = tmp11;
+    tmp9 = tmp11;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] !== tmp6) {
+    const obj4 = { children: items };
+    items = [tmp6, tmp9];
+    const tmp14 = _false(AlertModal2.AlertActions, obj4);
+    cResult[4] = tmp6;
+    cResult[5] = tmp14;
+    tmp12 = tmp14;
+  } else {
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] === body) {
+    if (cResult[7] === tmp12) {
+      let tmp15;
+      if (cResult[8] === title) {
+        tmp15 = cResult[9];
+      }
+      return tmp15;
+    }
+  }
+  const tmp16 = React2(AlertModal2.AlertModal, { title, content: body, actions: tmp12 });
+  cResult[6] = body;
+  cResult[7] = tmp12;
+  cResult[8] = title;
+  cResult[9] = tmp16;
+  tmp15 = tmp16;
+}) : ((arg0) => {
+  let AlertActions;
+  let body;
+  let intl;
+  let intl2;
+  let items;
+  let obj2;
+  let onConfirm;
+  let title;
+  ({ title, body, onConfirm } = arg0);
+  const obj = { title, content: body, actions: _false(AlertActions, obj2) };
+  const AlertModal = AlertModal2.AlertModal;
+  obj2 = { children: items };
+  AlertActions = AlertModal2.AlertActions;
+  const obj3 = { onPress: onConfirm, text: intl.string(intl3.t.jVcuVY) };
+  const AlertActionButton = AlertModal2.AlertActionButton;
+  intl = intl3.intl;
+  items = [React2(AlertActionButton, obj3, "confirm"), ];
+  const obj4 = { variant: "secondary", text: intl2.string(intl3.t.cpT0Cq) };
+  const AlertActionButton2 = AlertModal2.AlertActionButton;
+  intl2 = intl3.intl;
+  items[1] = React2(AlertActionButton2, obj4, "close");
+  return React2(AlertModal, obj);
+});
 const result = size.fileFinishedImporting("modules/native_permissions/mobile/PermissionsAlertModal.tsx");
 
-export default function PermissionsAlertModal(arg0) {
-  ({ title, body, onConfirm } = arg0);
-  const obj = { title, content: body, actions: null };
-  const obj2 = { children: null };
-  const obj3 = { onPress: onConfirm, text: null };
-  const intl = util.intl;
-  obj3.text = intl.string(util.t.jVcuVY);
-  const items = [React2(AlertModal.AlertActionButton, obj3, "confirm"), ];
-  const obj4 = { variant: "secondary", text: null };
-  const intl2 = util.intl;
-  obj4.text = intl2.string(util.t.cpT0Cq);
-  items[1] = React2(AlertModal.AlertActionButton, obj4, "close");
-  obj2.children = items;
-  obj.actions = React3(AlertModal.AlertActions, obj2);
-  return React2(AlertModal.AlertModal, obj);
-};
+export default tmp4;

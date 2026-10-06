@@ -1,26 +1,27 @@
-// Module ID: 12636
-// Function ID: 12637
+// Module ID: 11729
+// Function ID: 11730
 // Name: SearchPlatformConstants
-// Dependencies: [4484, 12637, 12639, 8391, 8389, 9202, 2]
+// Dependencies: [4529, 11730, 11732, 7551, 7549, 8353, 2]
 
-// Module 12636 (SearchPlatformConstants)
-import LinkingWhitelist from "LinkingWhitelist" /* 4484 */;
-import FacebookNeutralIcon from "FacebookNeutralIcon" /* 8389 */;
-import InstagramNeutralIcon from "InstagramNeutralIcon" /* 8391 */;
-import YoutubeNeutralIcon from "YoutubeNeutralIcon" /* 9202 */;
-import TiktokNeutralIcon from "TiktokNeutralIcon" /* 12637 */;
-import TwitterNeutralIcon from "TwitterNeutralIcon" /* 12639 */;
+// Module 11729 (SearchPlatformConstants)
+import LinkingWhitelist from "LinkingWhitelist" /* 4529 */;
+import FacebookNeutralIcon from "FacebookNeutralIcon" /* 7549 */;
+import InstagramNeutralIcon from "InstagramNeutralIcon" /* 7551 */;
+import YoutubeNeutralIcon from "YoutubeNeutralIcon" /* 8353 */;
+import TiktokNeutralIcon from "TiktokNeutralIcon" /* 11730 */;
+import TwitterNeutralIcon from "TwitterNeutralIcon" /* 11732 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ REGEX: LinkingWhitelist.LINKING_WHITELIST.tiktok.regex, Icon: TiktokNeutralIcon.TiktokNeutralIcon }, , , , ];
-const obj = { REGEX: LinkingWhitelist.LINKING_WHITELIST.tiktok.regex, Icon: TiktokNeutralIcon.TiktokNeutralIcon };
+({ REGEX: LinkingWhitelist.LINKING_WHITELIST.tiktok.regex, Icon: TiktokNeutralIcon.TiktokNeutralIcon });
 items[1] = { REGEX: LinkingWhitelist.LINKING_WHITELIST.twitter.regex, Icon: TwitterNeutralIcon.TwitterNeutralIcon };
-const obj2 = { REGEX: LinkingWhitelist.LINKING_WHITELIST.twitter.regex, Icon: TwitterNeutralIcon.TwitterNeutralIcon };
+({ REGEX: LinkingWhitelist.LINKING_WHITELIST.twitter.regex, Icon: TwitterNeutralIcon.TwitterNeutralIcon });
 items[2] = { REGEX: LinkingWhitelist.LINKING_WHITELIST.instagram.regex, Icon: InstagramNeutralIcon.InstagramNeutralIcon };
-const obj3 = { REGEX: LinkingWhitelist.LINKING_WHITELIST.instagram.regex, Icon: InstagramNeutralIcon.InstagramNeutralIcon };
+({ REGEX: LinkingWhitelist.LINKING_WHITELIST.instagram.regex, Icon: InstagramNeutralIcon.InstagramNeutralIcon });
 items[3] = { REGEX: LinkingWhitelist.LINKING_WHITELIST.facebook.regex, Icon: FacebookNeutralIcon.FacebookNeutralIcon };
-const obj4 = { REGEX: LinkingWhitelist.LINKING_WHITELIST.facebook.regex, Icon: FacebookNeutralIcon.FacebookNeutralIcon };
+({ REGEX: LinkingWhitelist.LINKING_WHITELIST.facebook.regex, Icon: FacebookNeutralIcon.FacebookNeutralIcon });
 items[4] = { REGEX: LinkingWhitelist.LINKING_WHITELIST.youtube.regex, Icon: YoutubeNeutralIcon.YoutubeNeutralIcon };
+({ REGEX: LinkingWhitelist.LINKING_WHITELIST.youtube.regex, Icon: YoutubeNeutralIcon.YoutubeNeutralIcon });
 const result = size.fileFinishedImporting("modules/search/native/SearchPlatformConstants.tsx");
 
 export const SEARCH_TEXT_INPUT_DEBOUNCE_TIME = 500;

@@ -1,31 +1,32 @@
-// Module ID: 17775
-// Function ID: 17776
+// Module ID: 17134
+// Function ID: 17135
 // Name: reportMalformedStorageValues
-// Dependencies: [2071, 1231, 2]
+// Dependencies: [2078, 1243, 2]
 // Exports: default
 
-// Module 17775 (reportMalformedStorageValues)
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import _mod2071 from "module_2071" /* 2071 */;
+// Module 17134 (reportMalformedStorageValues)
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import _mod2078 from "module_2078" /* 2078 */;
 import size from "module_2" /* 2 */;
 
 let c3 = false;
 const result = size.fileFinishedImporting("modules/app_database/app/reportMalformedStorageValues.tsx");
 
 export default function reportMalformedStorageValues(source) {
-  if (!c3) {
-    const Stats = _mod2071.Stats;
+  let obj3;
+  const tmp = c3;
+  if (!tmp) {
+    const Stats = _mod2078.Stats;
     const malformedValueCountResult = Stats.malformedValueCount();
-    const Stats2 = _mod2071.Stats;
+    const Stats2 = _mod2078.Stats;
     const malformedEntryCountResult = Stats2.malformedEntryCount();
-    if (!tmp5) {
+    const tmp6 = 0 === malformedValueCountResult && 0 === malformedEntryCountResult;
+    if (!tmp6) {
       c3 = true;
-      const obj2 = { extra: null, fingerprint: null };
-      const obj3 = { malformed_value_count: malformedValueCountResult, malformed_entry_count: malformedEntryCountResult, source };
-      obj2.extra = obj3;
-      obj2.fingerprint = ["kv-storage-omitted-undecodable-values"];
-      SentryUtilsDefault.captureMessage("kv-storage: omitted undecodable values", obj2, "warning");
+      const obj2 = { extra: obj3, fingerprint: ["kv-storage-omitted-undecodable-values"] };
+      obj3 = { malformed_value_count: malformedValueCountResult, malformed_entry_count: malformedEntryCountResult, source };
+      const obj = SentryUtilsDefault;
+      obj.captureMessage("kv-storage: omitted undecodable values", obj2, "warning");
     }
-    tmp5 = 0 === malformedValueCountResult && 0 === malformedEntryCountResult;
   }
 };

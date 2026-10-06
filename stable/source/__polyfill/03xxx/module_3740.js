@@ -1,9 +1,0 @@
-// Module ID: 3740
-// Function ID: 3741
-// Dependencies: [1121]
-
-// Module 3740
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jdXN0b21fdHlwaW5nX2luZGljYXRvci9pbnRs", scales: [1], hash: "9770810ced6abf36b75c25530a7d5ddf", name: "vi.messages.9770810ced6abf36b75c25530a7d5ddf.compiled.messages", type: "jsona" });

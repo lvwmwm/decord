@@ -1,9 +1,0 @@
-// Module ID: 2481
-// Function ID: 2482
-// Dependencies: [1121]
-
-// Module 2481
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_settings/server_monetization/guild_theme/web", scales: [1], hash: "568a306e5dbbd7f0a78da5ed8e4b8801", name: "GuildSettingsGuildTheme.compiled.messages", type: "jsona" });

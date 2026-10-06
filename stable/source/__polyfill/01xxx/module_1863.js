@@ -1,53 +1,40 @@
 // Module ID: 1863
 // Function ID: 1864
-// Dependencies: [19, 21, 1856, 1857, 1862, 1829, 1855]
+// Dependencies: [19, 17, 21, 1838]
 // Exports: default
 
 // Module 1863
-import _mod1829 from "module_1829" /* 1829 */;
-import disabledDefault from "disabled" /* 1856 */;
-import _modDef1857 from "module_1857" /* 1857 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react_native from "react-native" /* 17 */;
 
-require = fn;
-fn(19).useCallback;
-const jsx = fn(21).jsx;
+let Platform;
+let TouchableOpacity;
+let c3;
+let closure_4;
+const useMemo = react2.useMemo;
+({ Platform, TouchableNativeFeedback: c3, TouchableOpacity, View: closure_4 } = react_native);
+const jsx = Fragment.jsx;
 
-export default function _default(icon) {
-  ({ children, onPress } = icon);
-  ({ disabled, button } = icon);
-  ({ rippleRadius, style } = icon);
-  if (button === undefined) {
-    button = disabledDefault;
+export default function _default(disabled) {
+  let accessibilityHint;
+  let accessibilityLabel;
+  let children;
+  let onPress;
+  let style;
+  let testID;
+  let theme;
+  disabled = disabled.disabled;
+  let num = disabled.rippleRadius;
+  ({ children, onPress, accessibilityLabel, accessibilityHint, testID } = disabled);
+  if (num === undefined) {
+    num = 18;
   }
-  icon = icon.icon;
-  if (icon === undefined) {
-    icon = _modDef1857;
-  }
-  const toolbarContext = onPress(1862).useToolbarContext();
-  const theme = toolbarContext.theme;
-  if (disabled == null) {
-    disabled = toolbarContext.isNextDisabled;
-  }
-  const items = [onPress];
-  const obj2 = { accessibilityHint: "Moves focus to the next field", accessibilityLabel: "Next", disabled, rippleRadius, style, testID: null, theme: null, onPress: null, children: null };
-  const obj = onPress(1862);
-  const tmp5 = onPress;
-  obj2.testID = tmp5(1855).TEST_ID_KEYBOARD_TOOLBAR_NEXT;
-  obj2.theme = theme;
-  obj2.onPress = useCallback((isDefaultPrevented) => {
-    if (onPress != null) {
-      tmp(isDefaultPrevented);
-    }
-    if (!isDefaultPrevented.isDefaultPrevented()) {
-      const KeyboardController = _mod1829.KeyboardController;
-      KeyboardController.setFocusTo("next");
-    }
-  }, items);
-  if (children == null) {
-    const obj3 = { disabled, theme, type: "next" };
-    children = tmp9(icon, obj3);
-  }
-  obj2.children = children;
-  return <button accessibilityHint="Moves focus to the next field" accessibilityLabel="Next" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={null} theme={null} onPress={null}>{null}</button>;
+  ({ style, theme } = disabled);
+  const obj = disabled(num[3]);
+  const keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
+  const items = [disabled];
+  const items1 = [keyboardState, num, theme];
+  const tmp2 = theme(() => ({ disabled }), items);
+  return <keyboardState accessibilityHint={accessibilityHint} accessibilityLabel={accessibilityLabel} accessibilityRole="button" accessibilityState={tmp2} background={theme(() => _false.Ripple(theme[keyboardState].ripple, true, num), items1)} style={style} testID={testID} onPress={onPress}><closure_4 style={style}>{children}</closure_4></keyboardState>;
 };

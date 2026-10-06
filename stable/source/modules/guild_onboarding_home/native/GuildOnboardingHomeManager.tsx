@@ -1,608 +1,553 @@
-// Module ID: 17780
-// Function ID: 17781
+// Module ID: 17139
+// Function ID: 17140
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 2098, 502, 2041, 2105, 2063, 4609, 4975, 4976, 4414, 7395, 1385, 4991, 17781, 1980, 12568, 1094, 12567, 7499, 7500, 2]
+// Dependencies: [32, 5, 2104, 502, 2051, 2111, 2073, 4657, 5024, 5025, 4458, 6540, 1391, 5040, 17140, 1987, 11661, 1106, 11660, 6644, 6645, 2]
 
-// Module 17780 (GuildOnboardingHomeManager)
-import FlagUtils from "FlagUtils" /* 1385 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
+// Module 17139 (GuildOnboardingHomeManager)
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import FlagUtils from "FlagUtils" /* 1391 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4458 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ImpersonateStore from "ImpersonateStore" /* 2104 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4975 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4976 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5024 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5025 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const GuildMemberFlags = fn(4414).GuildMemberFlags;
-const prototype = function GuildOnboardingHomeManager() {
-  let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  require = applyArgumentsResult;
-  applyArgumentsResult.onboardingCompleteGuilds = new Set();
-  applyArgumentsResult.actions = {
-    POST_CONNECTION_OPEN() {
-      return applyArgumentsResult.handlePostConnectionOpen();
-    },
-    GUILD_MEMBER_UPDATE(arg0) {
-      return applyArgumentsResult.handleGuildMemberUpdate(arg0);
-    },
-    GUILD_DELETE(arg0) {
-      return applyArgumentsResult.handleGuildDelete(arg0);
-    },
-    CHANNEL_SELECT(arg0) {
-      return applyArgumentsResult.handleChannelSelect(arg0);
-    },
-    MESSAGE_CREATE(message) {
-      return applyArgumentsResult.handleMessageSend(message);
-    },
-    THREAD_CREATE(arg0) {
-      return applyArgumentsResult.handleThreadCreate(arg0);
-    }
-  };
-  applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
-    const guilds = GuildStore.getGuilds();
-    for (const key10007 in guilds) {
-      let selfMember = GuildMemberStore.getSelfMember(key10007);
-      let obj = FlagUtils;
-      let num;
-      if (selfMember != null) {
-        num = selfMember.flags;
+let c2, c3, c5;
+
+const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
+class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
+  constructor() {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
+    applyArgumentsResult.onboardingCompleteGuilds = new Set();
+    applyArgumentsResult.actions = {
+      POST_CONNECTION_OPEN() {
+        return require.handlePostConnectionOpen();
+      },
+      GUILD_MEMBER_UPDATE(arg0) {
+        return require.handleGuildMemberUpdate(arg0);
+      },
+      GUILD_DELETE(arg0) {
+        return require.handleGuildDelete(arg0);
+      },
+      CHANNEL_SELECT(arg0) {
+        return require.handleChannelSelect(arg0);
+      },
+      MESSAGE_CREATE(message) {
+        return require.handleMessageSend(message);
+      },
+      THREAD_CREATE(arg0) {
+        return require.handleThreadCreate(arg0);
       }
-      if (num == null) {
-        num = 0;
-      }
-      if (!obj.hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS)) {
-        continue;
-      } else {
-        let onboardingCompleteGuilds = applyArgumentsResult.onboardingCompleteGuilds;
-        let addResult = onboardingCompleteGuilds.add(key10007);
-        continue;
-      }
-      continue;
-    }
-    const guildId = SelectedGuildStore.getGuildId();
-    if (null != guildId) {
-      const result = applyArgumentsResult._getOrLoadOnboardingMemberActions(guildId);
-    }
-  };
-  applyArgumentsResult.handleGuildMemberUpdate = function handleGuildMemberUpdate(user) {
-    ({ flags, guildId } = user);
-    if (user.user.id === AuthenticationStore.getId()) {
-      const onboardingCompleteGuilds2 = applyArgumentsResult.onboardingCompleteGuilds;
-      if (!onboardingCompleteGuilds2.has(guildId)) {
-        if (flags == null) {
-          flags = 0;
+    };
+    applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+      const guilds = GuildStore.getGuilds();
+      for (const key10007 in guilds) {
+        let selfMember = GuildMemberStore.getSelfMember(key10007);
+        let tmp13 = FlagUtils;
+        let num;
+        let hasFlag = tmp13.hasFlag;
+        if (selfMember != null) {
+          num = selfMember.flags;
         }
-        if (obj.hasFlag(flags, GuildMemberFlags.COMPLETED_HOME_ACTIONS)) {
-          const onboardingCompleteGuilds = tmp7.onboardingCompleteGuilds;
-          onboardingCompleteGuilds.add(guildId);
-          const newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(guildId);
-          let num;
-          if (newMemberActions != null) {
-            num = newMemberActions.length;
+        if (num == null) {
+          num = 0;
+        }
+        if (!hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS)) {
+          continue;
+        } else {
+          let onboardingCompleteGuilds = require.onboardingCompleteGuilds;
+          let addResult = onboardingCompleteGuilds.add(key10007);
+          continue;
+        }
+        continue;
+      }
+      const guildId = SelectedGuildStore.getGuildId();
+      if (null != guildId) {
+        const result = require._getOrLoadOnboardingMemberActions(guildId);
+      }
+    };
+    applyArgumentsResult.handleGuildMemberUpdate = function handleGuildMemberUpdate(user) {
+      let flags;
+      let guildId;
+      ({ flags, guildId } = user);
+      if (user.user.id === AuthenticationStore.getId()) {
+        const onboardingCompleteGuilds2 = require.onboardingCompleteGuilds;
+        const tmp8 = require;
+        if (!onboardingCompleteGuilds2.has(guildId)) {
+          const hasFlag = FlagUtils.hasFlag;
+          FlagUtils;
+          const tmp2 = dependencyMap;
+          if (flags == null) {
+            flags = 0;
           }
-          if (num == null) {
-            num = 0;
-          }
-          if (0 !== num) {
-            const obj2 = ModalActionCreatorsDefault;
-            const tmp9 = tmp(1980)(17781, tmp2.paths);
-            const obj3 = { initialPercent: (num - 1) / num, numActions: num };
-            const obj4 = { animation: tmp(1094).ModalAnimation.FADE };
-            obj2.pushLazy(tmp9, obj3, tmp(12568).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj4);
+          if (hasFlag(flags, GuildMemberFlags.COMPLETED_HOME_ACTIONS)) {
+            const onboardingCompleteGuilds = tmp8.onboardingCompleteGuilds;
+            onboardingCompleteGuilds.add(guildId);
+            const newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(guildId);
+            let num;
+            if (newMemberActions != null) {
+              num = newMemberActions.length;
+            }
+            if (num == null) {
+              num = 0;
+            }
+            if (0 !== num) {
+              const pushLazy = ModalActionCreatorsDefault.pushLazy;
+              const obj = { initialPercent: (num - 1) / num, numActions: num };
+              const tmp11 = asyncRequire(17140, tmp2.paths);
+              const obj2 = { animation: ConstantsIOS.ModalAnimation.FADE };
+              const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(11661).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
+              pushLazy(tmp11, obj, NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj2);
+            }
           }
         }
-        obj = FlagUtils;
-        tmp2 = dependencyMap;
       }
-      tmp7 = applyArgumentsResult;
-    }
-  };
-  applyArgumentsResult.handleGuildDelete = function handleGuildDelete(guild) {
-    const onboardingCompleteGuilds = applyArgumentsResult.onboardingCompleteGuilds;
-    onboardingCompleteGuilds.delete(guild.guild.id);
-  };
-  closure_129_1 = applyArgumentsResult;
-  closure_129_0 = asyncGeneratorStep(async (arg0, value) => {
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
+    };
+    applyArgumentsResult.handleGuildDelete = function handleGuildDelete(guild) {
+      const onboardingCompleteGuilds = require.onboardingCompleteGuilds;
+      onboardingCompleteGuilds.delete(guild.guild.id);
+    };
+    new Set();
+    _asyncToGenerator(async (arg0, value) => {
+      let c0;
+      let c1;
+      let closure_1;
+      closure_0 = arg0;
+      if (1 === c3) {
+        if (arg0 === 1) {
+          let c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj4 = { value, done: true };
+          return obj4;
+        } else if (null != c0) {
+          if (null != c1) {
+            c3 = 2;
+            c4 = 1;
+            const obj5 = { value: closure_130_1._getOrLoadOnboardingMemberActions(c0), done: false };
+            return obj5;
+          }
+        }
+      } else if (arg0 === 1) {
+        c4 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        c4 = 3;
+        const obj6 = { value, done: true };
+        return obj6;
       } else {
-        return { value: "HermesInternal", done: null };
+        let closure_2 = value;
+        const memberActions = closure_2.memberActions;
+        const completedActions = closure_2.completedActions;
+        let found;
+        const arr = memberActions;
+        if (memberActions != null) {
+          found = arr.find((channelId) => channelId.channelId === closure_1_1);
+        }
+        let tmp9;
+        if (completedActions != null) {
+          tmp9 = tmp8[c1];
+        }
+        const tmp12 = true !== tmp9 && null != found && found.actionType === closure_0(closure_2[16]).NewMemberActionTypes.VIEW;
+        if (tmp12) {
+          const obj = closure_0(closure_2[18]);
+          const result = obj.completeNewMemberAction(c0, c1);
+        }
       }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
+      await "IconComponent";
+      closure_2 = tmp4;
+      ({ guildId: c0, channelId: c1 } = closure_0);
+      return "Reflect";
+    });
+    applyArgumentsResult.handleChannelSelect = function() {
+      return closure_0(...arguments);
+    };
+    applyArgumentsResult.handleMessageSend = function handleMessageSend(message) {
+      let channelId;
+      let guildId;
+      ({ guildId, channelId } = message);
+      if (null != guildId) {
+        if (null != channelId) {
+          const author = message.message.author;
+          let id;
+          if (author != null) {
+            id = author.id;
+          }
+          if (id === AuthenticationStore.getId()) {
+            const channel = ChannelStore.getChannel(channelId);
+            let isForumPostResult;
+            if (channel != null) {
+              isForumPostResult = channel.isForumPost();
+            }
+            if (isForumPostResult) {
+              let parent_id;
+              if (channel != null) {
+                parent_id = channel.parent_id;
+              }
+              isForumPostResult = null != parent_id;
+            }
+            if (isForumPostResult) {
+              require._completeChatAction(guildId, channel.parent_id);
+            }
+            require._completeChatAction(guildId, channelId);
+          }
+        }
+      }
+    };
+    applyArgumentsResult.handleThreadCreate = function handleThreadCreate(arg0) {
+      let channel;
+      let isNewlyCreated;
+      ({ channel, isNewlyCreated } = arg0);
+      if (isNewlyCreated) {
+        isNewlyCreated = null != channel.parent_id;
+      }
+      if (isNewlyCreated) {
+        const channel1 = ChannelStore.getChannel(channel.parent_id);
+        let isForumLikeChannelResult;
+        if (channel1 != null) {
+          isForumLikeChannelResult = channel1.isForumLikeChannel();
+        }
+        isNewlyCreated = isForumLikeChannelResult;
+      }
+      if (isNewlyCreated) {
+        isNewlyCreated = channel.ownerId === AuthenticationStore.getId();
+      }
+      if (isNewlyCreated) {
+        require._completeChatAction(channel.guild_id, channel.parent_id);
+      }
+    };
+    _asyncToGenerator(async (arg0, value) => {
+      let closure_2;
+      closure_0 = arg0;
+      let closure_1 = value;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let tmp;
+          let memberActions;
+          let completedActions;
+          let found;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_3 = tmp4;
+              tmp = undefined;
+              memberActions = undefined;
+              completedActions = undefined;
+              found = undefined;
+              c4 = 1;
+              c5 = 1;
+              const obj4 = { value: applyArgumentsResult._getOrLoadOnboardingMemberActions(closure_0), done: false };
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            c5 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
-            dependencyMap = tmp5;
-            closure_1 = tmp2;
-            closure_129_0 = undefined;
-            closure_129_1 = undefined;
-            ({ guildId: closure_129_0, channelId: closure_129_1 } = applyArgumentsResult);
-            closure_129_2 = undefined;
-            let memberActions;
-            let completedActions;
-            closure_129_5 = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "PX_16", done: true };
+            tmp = value;
+            memberActions = tmp.memberActions;
+            completedActions = tmp.completedActions;
+            found = undefined;
+            const arr = memberActions;
+            if (memberActions != null) {
+              found = arr.find((channelId) => channelId.channelId === closure_1_1);
+            }
+            let tmp9;
+            if (completedActions != null) {
+              tmp9 = tmp8[closure_1];
+            }
+            const tmp12 = true !== tmp9 && null != found && found.actionType === closure_0(tmp[16]).NewMemberActionTypes.CHAT;
+            if (tmp12) {
+              const obj = closure_0(tmp[18]);
+              const result = obj.completeNewMemberAction(closure_0, closure_1);
+            }
+            c5 = 3;
+            return { value: "IconComponent", done: null };
           }
+        } catch (tmp30) {
+          c5 = 3;
+          throw tmp30;
+        }
+      }
+    });
+    applyArgumentsResult._completeChatAction = function() {
+      return closure_0(...arguments);
+    };
+    _asyncToGenerator(async (arg0, value) => {
+      let closure_1;
+      let selfMember;
+      let v1;
+      closure_0 = arg0;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          if (1 === tmp5) {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
             if (arg0 === 1) {
               c4 = 3;
               throw value;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              const obj3 = { value, done: true };
+              return obj3;
             } else {
-              if (null != closure_129_0) {
-                if (null != closure_129_1) {
-                  c3 = 2;
+              let closure_2 = tmp4;
+              closure_0 = undefined;
+              applyArgumentsResult = undefined;
+              const obj10 = closure_0(closure_2[19]);
+              const canSeeOnboardingHomeResult = obj10.canSeeOnboardingHome(closure_0);
+              const tmp21 = closure_0;
+              const tmp22 = closure_2;
+              if (!canSeeOnboardingHomeResult) {
+                if (!fullServerPreview.isFullServerPreview(closure_0)) {
+                  c4 = 3;
+                  const obj4 = { value: {}, done: true };
+                  return obj4;
+                }
+              }
+              selfMember = selfMember.getSelfMember(tmp20);
+              if (null != selfMember) {
+                const tmp21Result = tmp21(tmp22[20]);
+                if (tmp21Result.getIsNewMember(closure_0)) {
+                  const items = [applyArgumentsResult._getOrLoadOnboardingHomeSettings(closure_0), applyArgumentsResult._getOrLoadMemberActions(closure_0, selfMember)];
+                  c3 = 1;
                   c4 = 1;
-                  const obj5 = { value: closure_130_1._getOrLoadOnboardingMemberActions(closure_129_0), done: false };
+                  const obj5 = { value: all(items), done: false };
                   return obj5;
                 }
               }
               c4 = 3;
+              const obj6 = { value: {}, done: true };
+              return obj6;
             }
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
-          } else if (arg0 !== 2) {
-            closure_129_2 = value;
-            memberActions = closure_129_2.memberActions;
-            completedActions = closure_129_2.completedActions;
-            let found;
-            if (memberActions != null) {
-              found = arr.find((channelId) => channelId.channelId === closure_1_1);
-            }
-            closure_129_5 = found;
-            let tmp10;
-            if (completedActions != null) {
-              tmp10 = tmp9[closure_129_1];
-            }
-            let tmp13 = true !== tmp10;
-            if (tmp13) {
-              tmp13 = null != closure_129_5;
-            }
-            if (tmp13) {
-              tmp13 = closure_129_5.actionType === applyArgumentsResult(12568).NewMemberActionTypes.VIEW;
-            }
-            if (tmp13) {
-              const result = applyArgumentsResult(12567).completeNewMemberAction(closure_129_0, closure_129_1);
-              const obj = applyArgumentsResult(12567);
-            }
-            arr = memberActions;
-          }
-          c4 = 3;
-          const obj6 = { value, done: true };
-          return obj6;
-        }
-      } catch (tmp38) {
-        c4 = tmp;
-        throw tmp38;
-      }
-    }
-  });
-  applyArgumentsResult.handleChannelSelect = function() {
-    const self = this;
-    const apply = applyArgumentsResult.apply;
-    if (typeof apply === "unknown") {
-      applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
-  };
-  applyArgumentsResult.handleMessageSend = function handleMessageSend(message) {
-    ({ guildId, channelId } = message);
-    if (null != guildId) {
-      if (null != channelId) {
-        const author = message.message.author;
-        let id;
-        if (author != null) {
-          id = author.id;
-        }
-        if (id === AuthenticationStore.getId()) {
-          const channel = ChannelStore.getChannel(channelId);
-          let isForumPostResult;
-          if (channel != null) {
-            isForumPostResult = channel.isForumPost();
-          }
-          if (isForumPostResult) {
-            let parent_id;
-            if (channel != null) {
-              parent_id = channel.parent_id;
-            }
-            isForumPostResult = null != parent_id;
-          }
-          if (isForumPostResult) {
-            applyArgumentsResult._completeChatAction(guildId, channel.parent_id);
-          }
-          applyArgumentsResult._completeChatAction(guildId, channelId);
-        }
-      }
-    }
-  };
-  applyArgumentsResult.handleThreadCreate = function handleThreadCreate(arg0) {
-    ({ channel, isNewlyCreated } = arg0);
-    if (isNewlyCreated) {
-      isNewlyCreated = null != channel.parent_id;
-    }
-    if (isNewlyCreated) {
-      const channel1 = ChannelStore.getChannel(channel.parent_id);
-      let isForumLikeChannelResult;
-      if (channel1 != null) {
-        isForumLikeChannelResult = channel1.isForumLikeChannel();
-      }
-      isNewlyCreated = isForumLikeChannelResult;
-    }
-    if (isNewlyCreated) {
-      isNewlyCreated = channel.ownerId === AuthenticationStore.getId();
-    }
-    if (isNewlyCreated) {
-      applyArgumentsResult._completeChatAction(channel.guild_id, channel.parent_id);
-    }
-  };
-  closure_130_1 = applyArgumentsResult;
-  closure_130_0 = asyncGeneratorStep(async (arg0, value) => {
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_3 = tmp5;
-            closure_130_0 = applyArgumentsResult;
-            closure_130_1 = closure_1;
-            closure_130_2 = undefined;
-            let memberActions;
-            let completedActions;
-            closure_130_5 = undefined;
-            c4 = 1;
-            c5 = 1;
-            const obj4 = { value: importDefault._getOrLoadOnboardingMemberActions(applyArgumentsResult), done: false };
-            return obj4;
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          closure_130_2 = value;
-          memberActions = closure_130_2.memberActions;
-          completedActions = closure_130_2.completedActions;
-          let found;
-          if (memberActions != null) {
-            found = memberActions.find((channelId) => channelId.channelId === closure_1_1);
-          }
-          closure_130_5 = found;
-          let tmp10;
-          if (completedActions != null) {
-            tmp10 = tmp9[closure_130_1];
-          }
-          let tmp13 = true !== tmp10;
-          if (tmp13) {
-            tmp13 = null != closure_130_5;
-          }
-          if (tmp13) {
-            tmp13 = closure_130_5.actionType === applyArgumentsResult(tmp2[16]).NewMemberActionTypes.CHAT;
-          }
-          if (tmp13) {
-            const result = applyArgumentsResult(tmp2[18]).completeNewMemberAction(closure_130_0, closure_130_1);
-            const obj = applyArgumentsResult(tmp2[18]);
-          }
-          c5 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp31) {
-        c5 = tmp;
-        throw tmp31;
-      }
-    }
-  });
-  applyArgumentsResult._completeChatAction = function() {
-    const self = this;
-    const apply = applyArgumentsResult.apply;
-    if (typeof apply === "unknown") {
-      applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
-  };
-  closure_131_1 = applyArgumentsResult;
-  closure_131_0 = asyncGeneratorStep(async (arg0, value) => {
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === v1) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj7 = { value, done: true };
+            return obj7;
           } else {
-            closure_1 = tmp2;
-            closure_129_0 = undefined;
-            closure_129_1 = undefined;
-            const obj10 = applyArgumentsResult(tmp5[19]);
-            const tmp23 = applyArgumentsResult;
-            const tmp24 = tmp5;
-            if (!canSeeOnboardingHomeResult) {
-              if (!fullServerPreview.isFullServerPreview(applyArgumentsResult)) {
-                c4 = 3;
-                const obj4 = { value: {}, done: true };
-                return obj4;
-              }
-            }
-            selfMember = selfMember.getSelfMember(tmp22);
-            if (null != selfMember) {
-              if (tmp23Result.getIsNewMember(tmp22)) {
-                const items = [importDefault._getOrLoadOnboardingHomeSettings(tmp22), importDefault._getOrLoadMemberActions(tmp22, selfMember)];
-                v1 = 1;
-                c4 = 1;
-                const obj5 = { value: Promise.all(items), done: false };
-                return obj5;
-              }
-              tmp23Result = tmp23(tmp24[20]);
-            }
+            closure_0 = value;
+            applyArgumentsResult = c3(closure_0, 2);
+            const obj = { memberActions: applyArgumentsResult[0], completedActions: applyArgumentsResult[1] };
             c4 = 3;
-            const obj6 = { value: {}, done: true };
-            return obj6;
+            const obj8 = { value: obj, done: true };
+            return obj8;
           }
-        } else if (arg0 === 1) {
+        } catch (tmp16) {
           c4 = 3;
+          throw tmp16;
+        }
+      }
+    });
+    applyArgumentsResult._getOrLoadOnboardingMemberActions = function() {
+      return closure_0(...arguments);
+    };
+    _asyncToGenerator(async (arg0, value) => {
+      let tmp7Result;
+      closure_0 = arg0;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          c4 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          closure_129_0 = value;
-          closure_129_1 = v1(closure_129_0, 2);
-          const obj = { memberActions: closure_129_1[0], completedActions: closure_129_1[1] };
-          c4 = 3;
-          const obj8 = { value: obj, done: true };
-          return obj8;
+          return { value: "IconComponent", done: null };
         }
-      } catch (tmp17) {
-        c4 = tmp;
-        throw tmp17;
-      }
-    }
-  });
-  applyArgumentsResult._getOrLoadOnboardingMemberActions = function() {
-    const self = this;
-    const apply = applyArgumentsResult.apply;
-    if (typeof apply === "unknown") {
-      applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
-  };
-  closure_132_0 = asyncGeneratorStep(async (arg0, value) => {
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === dependencyMap) {
-          if (arg0 === 1) {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              let closure_1 = tmp3;
+              closure_0 = undefined;
+              const newMemberActions = closure_1_11.getNewMemberActions(closure_0);
+              if (null == newMemberActions) {
+                if (!closure_1_11.getIsLoading(closure_0)) {
+                  const obj3 = closure_0(c2[20]);
+                  const tmp7 = closure_0;
+                  const tmp8 = c2;
+                  if (obj3.getIsNewMember(closure_0)) {
+                    c2 = 1;
+                    c3 = 1;
+                    const obj5 = { value: tmp7Result.fetchGuildHomeSettings(closure_0), done: false };
+                    tmp7Result = tmp7(tmp8[18]);
+                    return obj5;
+                  }
+                }
+              }
+              c3 = 3;
+              const obj6 = { value: newMemberActions, done: true };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
             c3 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj7 = { value, done: true };
+            return obj7;
           } else {
-            closure_1 = tmp4;
-            closure_129_0 = undefined;
-            const newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(applyArgumentsResult);
-            if (null == newMemberActions) {
-              if (!GuildOnboardingHomeSettingsStore.getIsLoading(applyArgumentsResult)) {
-                if (obj3.getIsNewMember(tmp15)) {
-                  dependencyMap = 1;
-                  c3 = 1;
-                  const obj5 = { value: tmp8(tmp9[18]).fetchGuildHomeSettings(tmp15), done: false };
-                  return obj5;
-                }
-                obj3 = applyArgumentsResult(dependencyMap[20]);
-                tmp8 = applyArgumentsResult;
-                tmp9 = dependencyMap;
-              }
+            closure_0 = value;
+            let newMemberActions1;
+            if (closure_0 != null) {
+              newMemberActions1 = closure_0.newMemberActions;
             }
             c3 = 3;
-            const obj6 = { value: newMemberActions, done: true };
-            return obj6;
-          }
-        } else if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        } else {
-          closure_129_0 = value;
-          let newMemberActions1;
-          if (closure_129_0 != null) {
-            newMemberActions1 = closure_129_0.newMemberActions;
-          }
-          c3 = 3;
-          const obj = { value: newMemberActions1, done: true };
-          return obj;
-        }
-      } catch (tmp10) {
-        c3 = tmp;
-        throw tmp10;
-      }
-    }
-  });
-  applyArgumentsResult._getOrLoadOnboardingHomeSettings = function() {
-    const self = this;
-    const apply = applyArgumentsResult.apply;
-    if (typeof apply === "unknown") {
-      applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
-  };
-  closure_133_0 = asyncGeneratorStep(async (arg0, value) => {
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            state = state.getState(applyArgumentsResult);
-            const completedActions = state.completedActions;
-            let tmp5 = completedActions;
-            if (null == completedActions) {
-              tmp5 = completedActions;
-              if (!tmp19) {
-                const flags = tmp16.flags;
-                dependencyMap = flags;
-                if (flags == null) {
-                  dependencyMap = 0;
-                }
-                tmp5 = completedActions;
-                if (obj2.hasFlag(dependencyMap, constants.STARTED_HOME_ACTIONS)) {
-                  c4 = 1;
-                  c3 = 1;
-                  const obj5 = { value: tmp6(tmp7[18]).fetchNewMemberActions(tmp15), done: false };
-                  return obj5;
-                }
-                obj2 = applyArgumentsResult(dependencyMap[12]);
-                tmp6 = applyArgumentsResult;
-                tmp7 = dependencyMap;
-              }
-            }
-            tmp15 = applyArgumentsResult;
-            tmp16 = closure_1;
-          }
-        } else if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else {
-          tmp5 = value;
-          if (arg0 === 2) {
-            c3 = 3;
-            const obj = { value, done: true };
+            const obj = { value: newMemberActions1, done: true };
             return obj;
           }
+        } catch (tmp9) {
+          c3 = 3;
+          throw tmp9;
         }
-        c3 = 3;
-        const obj6 = { value: tmp5, done: true };
-        return obj6;
-      } catch (tmp10) {
-        c3 = tmp;
-        throw tmp10;
       }
-    }
-  });
-  applyArgumentsResult._getOrLoadMemberActions = function() {
-    const self = this;
-    const apply = applyArgumentsResult.apply;
-    if (typeof apply === "unknown") {
-      applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
+    });
+    applyArgumentsResult._getOrLoadOnboardingHomeSettings = function() {
+      return closure_0(...arguments);
+    };
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let state;
+      let tmp5Result;
+      closure_0 = arg0;
+      let closure_1 = value;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let tmp4;
+          c3 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              state = state.getState(closure_0);
+              const completedActions = state.completedActions;
+              tmp4 = completedActions;
+              const tmp14 = closure_0;
+              const tmp15 = closure_1;
+              if (null == completedActions) {
+                tmp4 = completedActions;
+                if (!tmp18) {
+                  const flags = tmp15.flags;
+                  const tmp6 = c2;
+                  const tmp7 = closure_0(c2[12]);
+                  c2 = flags;
+                  const hasFlag = tmp7.hasFlag;
+                  const tmp5 = closure_0;
+                  if (flags == null) {
+                    c2 = 0;
+                  }
+                  tmp4 = completedActions;
+                  if (hasFlag(c2, constants.STARTED_HOME_ACTIONS)) {
+                    c4 = 1;
+                    c3 = 1;
+                    const obj4 = { value: tmp5Result.fetchNewMemberActions(tmp14), done: false };
+                    tmp5Result = tmp5(tmp6[18]);
+                    return obj4;
+                  }
+                }
+              }
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else {
+            tmp4 = value;
+            if (arg0 === 2) {
+              c3 = 3;
+              const obj = { value, done: true };
+              return obj;
+            }
+          }
+          c3 = 3;
+          const obj5 = { value: tmp4, done: true };
+          return obj5;
+        } catch (tmp10) {
+          c3 = 3;
+          throw tmp10;
+        }
+      }
+    });
+    applyArgumentsResult._getOrLoadMemberActions = function() {
+      return closure_0(...arguments);
+    };
     return applyArgumentsResult;
-  };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const guildOnboardingHomeManager = new GuildOnboardingHomeManager();
 let result = size.fileFinishedImporting("modules/guild_onboarding_home/native/GuildOnboardingHomeManager.tsx");
 
-export default prototype1;
+export default guildOnboardingHomeManager;

@@ -1,31 +1,33 @@
-// Module ID: 15807
-// Function ID: 15808
+// Module ID: 15068
+// Function ID: 15069
 // Name: AdvancedSetting
-// Dependencies: [1074, 11754, 1115, 7654, 15808, 2]
+// Dependencies: [1086, 10874, 1127, 6799, 15069, 2]
 
-// Module 15807 (AdvancedSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import SettingsIcon from "SettingsIcon" /* 7654 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15068 (AdvancedSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsIcon from "SettingsIcon" /* 6799 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["8/udY0"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["8/udY0"]);
   },
   parent: null,
   IconComponent: SettingsIcon.SettingsIcon,
   screen: {
-    route: Constants.UserSettingsSections.ADVANCED,
+    route: UserSettingsSections.ADVANCED,
     getComponent() {
       return require("SettingsAdvancedScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AdvancedSetting.tsx");
 
 export default route;

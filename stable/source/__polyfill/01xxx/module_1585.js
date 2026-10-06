@@ -1,43 +1,63 @@
 // Module ID: 1585
 // Function ID: 1586
-// Dependencies: [19]
-// Exports: useMemoArray
+// Dependencies: [32, 19, 1500, 1534, 1531, 1586, 1513]
+// Exports: usePreventRemove
 
 // Module 1585
-import noop from "module_19" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+
+const require = globalThis.__r;
+let _require, importDefault, navigation;
 
 
-export const useMemoArray = function useMemoArray(arr) {
-  const ref = noop.useRef(undefined);
-  const current = ref.current;
-  const mapped = arr.map((item, index) => {
-    [tmp, arr] = item;
-    let tmp3;
-    if (current != null) {
-      tmp3 = tmp2.entries[index];
+export const usePreventRemove = function usePreventRemove(stateFromStores, arg1) {
+  let closure_1;
+  let key;
+  _require = stateFromStores;
+  importDefault = arg1;
+  const first = navigation(key.useState(() => {
+    const obj = stateFromStores(first[2]);
+    return obj.nanoid();
+  }), 1)[0];
+  let obj = require("module_1534");
+  navigation = obj.useNavigation();
+  const obj2 = require("react");
+  key = obj2.useRoute().key;
+  const obj3 = require("react");
+  const preventRemoveContext = obj3.usePreventRemoveContext();
+  const setPreventRemove = preventRemoveContext.setPreventRemove;
+  const notifyPreventRemove = preventRemoveContext.notifyPreventRemove;
+  const items = [setPreventRemove, first, key, stateFromStores];
+  const insertionEffect = key.useInsertionEffect(() => {
+    setPreventRemove(first, key, stateFromStores);
+    return () => {
+      setPreventRemove(first, key, false);
+    };
+  }, items);
+  const items1 = [first, key, stateFromStores, notifyPreventRemove];
+  const effect = key.useEffect(() => {
+    notifyPreventRemove();
+    return () => {
+      notifyPreventRemove();
+    };
+  }, items1);
+  const tmp6 = require("useLatestCallback")((preventDefault) => {
+    const tmp = stateFromStores;
+    if (tmp) {
+      preventDefault.preventDefault();
+      const obj = { data: preventDefault.data };
+      closure_1(obj);
     }
-    let everyResult = tmp3;
-    if (tmp3) {
-      everyResult = tmp3.deps.length === arr.length;
-    }
-    if (everyResult) {
-      const deps = tmp3.deps;
-      everyResult = deps.every((item, index) => Object.is(item, current[index]));
-    }
-    if (!everyResult) {
-      const obj = { item: tmp, deps: arr };
-      tmp3 = obj;
-    }
-    return tmp3;
   });
-  if (current) {
-    if (current.entries.length === mapped.length) {
-      if (mapped.every((item, index) => item === current.entries[index])) {
-        return current.items;
-      }
+  let closure_7 = tmp6;
+  const items2 = [navigation, tmp6];
+  const effect1 = key.useEffect(() => {
+    let addListenerResult;
+    const obj = navigation;
+    if (navigation != null) {
+      addListenerResult = obj.addListener("beforeRemove", closure_7);
     }
-  }
-  const mapped1 = mapped.map((item) => item.item);
-  ref.current = { entries: mapped, items: mapped1 };
-  return mapped1;
+    return addListenerResult;
+  }, items2);
 };

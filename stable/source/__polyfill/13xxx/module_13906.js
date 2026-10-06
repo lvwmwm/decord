@@ -1,9 +1,36 @@
 // Module ID: 13906
 // Function ID: 13907
-// Dependencies: [1121]
+// Dependencies: []
+// Exports: default
 
 // Module 13906
-import registerAsset from "module_1121" /* 1121 */;
+let closure_0 = { url: "http://localhost:8081" };
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/dark", width: 24, height: 23, scales: [2, 3], hash: "ded314673e0e4bafd84df14bbd2dcfb3", name: "tier_1_24px", type: "png" });
+export default () => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  return () => {
+    closure_0 = Object.assign({}, closure_0, obj);
+    obj = {
+      onCommand(type) {
+        if ("editor.open" === type.type) {
+          const payload = type.payload;
+          let num = payload.lineNumber;
+          const _HermesInternal = HermesInternal;
+          obj = { file: payload.file, lineNumber: num };
+          const combined = "" + url.url + "/open-stack-frame";
+          if (!num) {
+            num = 1;
+          }
+          const _fetch = fetch;
+          const request = { method: "POST", body: JSON.stringify(obj) };
+          const _JSON = JSON;
+          const response = fetch(combined, request);
+        }
+      }
+    };
+    return obj;
+  };
+};

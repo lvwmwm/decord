@@ -1,55 +1,262 @@
-// Module ID: 8528
-// Function ID: 8529
+// Module ID: 7677
+// Function ID: 7678
 // Name: useProfileTheme
-// Dependencies: [32, 4780, 8529, 1074, 4722, 504, 575, 8433, 1092, 8530, 4639, 2]
-// Exports: default
+// Dependencies: [32, 4826, 7678, 1086, 558, 576, 4769, 504, 587, 7593, 1104, 7679, 4687, 2]
 
-// Module 8528 (useProfileTheme)
-import initialize from "initialize" /* 504 */;
-import shims from "shims" /* 575 */;
-import useThemeDefault from "useTheme" /* 4722 */;
-import useAvatarColor from "useAvatarColor" /* 8433 */;
-import _slicedToArray from "module_32" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+// Module 7677 (useProfileTheme)
+import get_initialized from "get initialized" /* 504 */;
+import react from "react" /* 576 */;
+import shims from "shims" /* 587 */;
+import Constants from "Constants" /* 1086 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
+import shared from "shared" /* 4687 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import useAvatarColor from "useAvatarColor" /* 7593 */;
+import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 7678 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7679 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const useEffectiveThemeOverride = fn(8529).useEffectiveThemeOverride;
-const ThemeTypes = fn(1074).ThemeTypes;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/user_profile/hooks/useProfileTheme.tsx");
-
-export default function useProfileTheme(arg0) {
+const useEffectiveThemeOverride = useProfileThemeOverrideStore.useEffectiveThemeOverride;
+const ThemeTypes = Constants.ThemeTypes;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
+  let displayProfile;
+  let forceUserTheme;
+  let pendingAvatarSrc;
+  let pendingThemeColors;
+  let tmp21;
+  let tmp22;
+  let tmp6;
+  let tmp7;
+  let user;
+  const obj = react;
+  const cResult = obj.c(23);
+  ({ user, displayProfile, pendingThemeColors, pendingAvatarSrc, forceUserTheme } = isPreview);
+  isPreview = isPreview.isPreview;
+  const tmp4 = useThemeDefault();
+  const tmp5 = useEffectiveThemeOverride();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function u() {
+      return AccessibilityStore.syncProfileThemeWithUserTheme;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  let guildId;
+  const tmp10 = cResult[2];
+  if (displayProfile != null) {
+    guildId = displayProfile.guildId;
+  }
+  if (tmp10 === guildId) {
+    if (cResult[3] === pendingAvatarSrc) {
+      let tmp12;
+      let tmp17;
+      if (cResult[4] === user) {
+        tmp12 = cResult[5];
+      }
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmpResult8 = shims;
+        const result = tmpResult8.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
+        cResult[6] = result;
+        tmp17 = result;
+      } else {
+        tmp17 = cResult[6];
+      }
+      const tmpResult9 = useAvatarColor;
+      [tmp21, tmp22] = tmpResult9.useAvatarColors(tmp12, tmp17, false);
+      _slicedToArray(tmpResult9.useAvatarColors(tmp12, tmp17, false), 2);
+      if (null != tmp5) {
+        return tmp5;
+      } else {
+        let canEditThemes;
+        if (displayProfile != null) {
+          canEditThemes = displayProfile.canEditThemes;
+        }
+        if (!canEditThemes) {
+          if (!isPreview) {
+            let tmp24;
+            if (cResult[7] !== tmp4) {
+              const obj2 = { theme: tmp4, primaryColor: null, secondaryColor: null };
+              cResult[7] = tmp4;
+              cResult[8] = obj2;
+              tmp24 = obj2;
+            } else {
+              tmp24 = cResult[8];
+            }
+            return tmp24;
+          }
+        }
+        if (cResult[9] === tmp4) {
+          if (cResult[10] === displayProfile) {
+            if (cResult[11] === forceUserTheme) {
+              if (cResult[12] === pendingThemeColors) {
+                if (cResult[13] === tmp21) {
+                  if (cResult[14] === tmp22) {
+                    let tmp25;
+                    let tmp26;
+                    let tmp27;
+                    let DARK;
+                    if (cResult[15] === stateFromStores) {
+                      tmp25 = cResult[16];
+                      tmp26 = cResult[17];
+                      tmp27 = cResult[18];
+                    }
+                    if (tmp27 !== ThemeTypes.ASH) {
+                      let isThemeLightResult = tmp27 === tmp33.ASH;
+                      if (isThemeLightResult) {
+                        const tmpResult10 = shared;
+                        isThemeLightResult = tmpResult10.isThemeLight(tmp4);
+                      }
+                      DARK = tmp27;
+                      if (isThemeLightResult) {
+                        DARK = tmp33.DARK;
+                      }
+                    } else {
+                      DARK = tmp4;
+                      shared;
+                    }
+                    if (cResult[19] === tmp25) {
+                      if (cResult[20] === tmp26) {
+                        let tmp35;
+                        if (cResult[21] === DARK) {
+                          tmp35 = cResult[22];
+                        }
+                        return tmp35;
+                      }
+                    }
+                    const obj3 = { theme: DARK, primaryColor: tmp25, secondaryColor: tmp26 };
+                    cResult[19] = tmp25;
+                    cResult[20] = tmp26;
+                    cResult[21] = DARK;
+                    cResult[22] = obj3;
+                    tmp35 = obj3;
+                  }
+                }
+              }
+            }
+          }
+        }
+        let previewThemeColors;
+        if (displayProfile != null) {
+          previewThemeColors = displayProfile.getPreviewThemeColors(pendingThemeColors);
+        }
+        let first;
+        if (previewThemeColors != null) {
+          first = previewThemeColors[0];
+        }
+        if (first == null) {
+          const tmpResult12 = utils_ColorUtils;
+          first = tmpResult12.hex2int(tmp21);
+        }
+        let hex2intResult;
+        if (previewThemeColors != null) {
+          hex2intResult = previewThemeColors[1];
+        }
+        if (hex2intResult == null) {
+          const tmpResult13 = utils_ColorUtils;
+          hex2intResult = tmpResult13.hex2int(tmp22);
+        }
+        let tmp31 = tmp4;
+        if (!stateFromStores) {
+          tmp31 = tmp4;
+          if (!forceUserTheme) {
+            const tmpResult14 = UserProfileGradientUtils;
+            let profileTheme = tmpResult14.getProfileTheme(first);
+            if (profileTheme == null) {
+              profileTheme = tmp4;
+            }
+            tmp31 = profileTheme;
+          }
+        }
+        cResult[9] = tmp4;
+        cResult[10] = displayProfile;
+        cResult[11] = forceUserTheme;
+        cResult[12] = pendingThemeColors;
+        cResult[13] = tmp21;
+        cResult[14] = tmp22;
+        cResult[15] = stateFromStores;
+        cResult[16] = first;
+        cResult[17] = hex2intResult;
+        cResult[18] = tmp31;
+        tmp27 = tmp31;
+        tmp26 = hex2intResult;
+        tmp25 = first;
+      }
+    }
+  }
+  let tmp13 = pendingAvatarSrc;
+  if (pendingAvatarSrc == null) {
+    let avatarURL;
+    if (user != null) {
+      let guildId1;
+      const getAvatarURL = user.getAvatarURL;
+      if (displayProfile != null) {
+        guildId1 = displayProfile.guildId;
+      }
+      avatarURL = getAvatarURL(guildId1, 80);
+    }
+    tmp13 = avatarURL;
+  }
+  let guildId2;
+  if (displayProfile != null) {
+    guildId2 = displayProfile.guildId;
+  }
+  cResult[2] = guildId2;
+  cResult[3] = pendingAvatarSrc;
+  cResult[4] = user;
+  cResult[5] = tmp13;
+  tmp12 = tmp13;
+}) : ((arg0) => {
+  let displayProfile;
+  let forceUserTheme;
+  let isPreview;
+  let pendingAvatarSrc;
+  let pendingThemeColors;
+  let user;
   ({ user, displayProfile, pendingAvatarSrc } = arg0);
   ({ pendingThemeColors, isPreview, forceUserTheme } = arg0);
   const tmp2 = useThemeDefault();
   const tmp3 = useEffectiveThemeOverride();
   const items = [AccessibilityStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => AccessibilityStore.syncProfileThemeWithUserTheme);
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.syncProfileThemeWithUserTheme);
   if (pendingAvatarSrc == null) {
     let avatarURL;
     if (user != null) {
       let guildId;
+      const getAvatarURL = user.getAvatarURL;
       if (displayProfile != null) {
         guildId = displayProfile.guildId;
       }
-      avatarURL = user.getAvatarURL(guildId, 80);
+      avatarURL = getAvatarURL(guildId, 80);
     }
     pendingAvatarSrc = avatarURL;
   }
-  const result = shims.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
   const tmp4Result = shims;
-  _slicedToArray(useAvatarColor.useAvatarColors(pendingAvatarSrc, result, false), 2);
+  const result = tmp4Result.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
+  const tmp4Result7 = useAvatarColor;
+  _slicedToArray(tmp4Result7.useAvatarColors(pendingAvatarSrc, result, false), 2);
   if (null != tmp3) {
     return tmp3;
   } else {
+    let DARK;
     let canEditThemes;
     if (displayProfile != null) {
       canEditThemes = displayProfile.canEditThemes;
     }
     if (!canEditThemes) {
       if (!isPreview) {
-        const obj2 = { theme: tmp2, primaryColor: null, secondaryColor: null };
-        return obj2;
+        return { theme: tmp2, primaryColor: null, secondaryColor: null };
       }
     }
     let previewThemeColors;
@@ -61,45 +268,46 @@ export default function useProfileTheme(arg0) {
       first = previewThemeColors[0];
     }
     if (first == null) {
-      first = tmp4(1092).hex2int(tmp10);
-      const tmp4Result8 = tmp4(1092);
+      const tmp4Result8 = utils_ColorUtils;
+      first = tmp4Result8.hex2int(tmp10);
     }
     let hex2intResult;
     if (previewThemeColors != null) {
       hex2intResult = previewThemeColors[1];
     }
     if (hex2intResult == null) {
-      hex2intResult = tmp4(1092).hex2int(tmp11);
-      const tmp4Result9 = tmp4(1092);
+      const tmp4Result9 = utils_ColorUtils;
+      hex2intResult = tmp4Result9.hex2int(tmp11);
     }
     let tmp16 = tmp2;
     if (!stateFromStores) {
       tmp16 = tmp2;
       if (!forceUserTheme) {
-        let profileTheme = tmp4(8530).getProfileTheme(first);
+        const tmp4Result10 = UserProfileGradientUtils;
+        let profileTheme = tmp4Result10.getProfileTheme(first);
         if (profileTheme == null) {
           profileTheme = tmp2;
         }
         tmp16 = profileTheme;
-        const tmp4Result10 = tmp4(8530);
       }
     }
     if (tmp16 !== ThemeTypes.ASH) {
       let isThemeLightResult = tmp16 === tmp18.ASH;
       if (isThemeLightResult) {
-        isThemeLightResult = tmp4(4639).isThemeLight(tmp2);
-        const tmp4Result11 = tmp4(4639);
+        const tmp4Result11 = shared;
+        isThemeLightResult = tmp4Result11.isThemeLight(tmp2);
       }
-      let DARK = tmp16;
+      DARK = tmp16;
       if (isThemeLightResult) {
         DARK = tmp18.DARK;
       }
     } else {
       DARK = tmp2;
-      const tmp4Result12 = tmp4(4639);
+      shared;
     }
-    const obj3 = { theme: DARK, primaryColor: first, secondaryColor: hex2intResult };
-    return obj3;
+    return { theme: DARK, primaryColor: first, secondaryColor: hex2intResult };
   }
-  const tmp4Result7 = useAvatarColor;
-};
+});
+let result = size.fileFinishedImporting("modules/user_profile/hooks/useProfileTheme.tsx");
+
+export default tmp2;

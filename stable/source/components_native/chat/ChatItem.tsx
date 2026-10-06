@@ -1,65 +1,173 @@
-// Module ID: 8962
-// Function ID: 8963
+// Module ID: 8109
+// Function ID: 8110
 // Name: ChatItem
-// Dependencies: [32, 19, 17, 4780, 1074, 8223, 21, 576, 8963, 1090, 8964, 7544, 8965, 4788, 1364, 8427, 4489, 672, 5230, 2]
+// Dependencies: [32, 109, 19, 17, 4826, 1086, 7379, 21, 588, 558, 576, 8110, 1102, 8111, 6689, 8112, 4837, 1370, 7587, 4535, 684, 5292, 2]
 // Exports: default
 
-// Module 8962 (ChatItem)
-import nativeDefault from "native" /* 576 */;
-import _modDef672 from "module_672" /* 672 */;
-import MessageTypes2 from "MessageTypes" /* 1090 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7544 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8427 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 8963 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+// Module 8109 (ChatItem)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import _modDef684 from "module_684" /* 684 */;
+import Constants from "Constants" /* 1086 */;
+import MessageTypes2 from "MessageTypes" /* 1102 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6689 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 8110 */;
+import MessageViewNativeComponent from "MessageViewNativeComponent" /* 8111 */;
+import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 8112 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react_mod from "react" /* 19 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4826 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function DCDChatItem(message) {
+let c10;
+let closure_12;
+let map1;
+let tmp;
+let unpackModuleId;
+const RowGeneratorTypes = tmp(7587);
+let closure_3 = ["message"];
+let react = react_mod;
+const View = react_native.View;
+let AccessibilityStore = AccessibilityStore_mod;
+const MessageTypes = Constants.MessageTypes;
+({ RowType: c10, Changeset: unpackModuleId } = RowGeneratorConstants);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
+const PX_4 = nativeDefault.space.PX_4;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(11);
+  if (cResult[0] !== message) {
+    message = message.message;
+    const tmp8 = _objectWithoutProperties(message, closure_3);
+    cResult[0] = message;
+    cResult[1] = message;
+    cResult[2] = tmp8;
+    tmp5 = tmp8;
+    tmp4 = message;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  if (tmp4.type === MessageTypes.AUTO_MODERATION_ACTION) {
+    let tmp28;
+    if (cResult[3] !== tmp5) {
+      const obj2 = {};
+      const _default4 = AutoModerationSystemMessageViewNativeComponent.default;
+      const merged = Object.assign(tmp5);
+      const tmp33 = closure_12(_default4, obj2);
+      cResult[3] = tmp5;
+      cResult[4] = tmp33;
+      tmp28 = tmp33;
+    } else {
+      tmp28 = cResult[4];
+    }
+    tmp10 = tmp28;
+  } else {
+    const AUTOMOD_INCIDENT_ACTIONS = tmp(1102).MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
+    if (AUTOMOD_INCIDENT_ACTIONS.has(tmp4.type)) {
+      let tmp22;
+      if (cResult[5] !== tmp5) {
+        const obj3 = {};
+        const _default3 = MessageViewNativeComponent.default;
+        const merged1 = Object.assign(tmp5);
+        const tmp27 = closure_12(_default3, obj3);
+        cResult[5] = tmp5;
+        cResult[6] = tmp27;
+        tmp22 = tmp27;
+      } else {
+        tmp22 = cResult[6];
+      }
+      tmp10 = tmp22;
+    } else if (isSystemMessageDefault(tmp4)) {
+      let tmp16;
+      if (cResult[7] !== tmp5) {
+        const obj4 = {};
+        const _default2 = SystemMessageViewNativeComponent.default;
+        const merged2 = Object.assign(tmp5);
+        const tmp21 = closure_12(_default2, obj4);
+        cResult[7] = tmp5;
+        cResult[8] = tmp21;
+        tmp16 = tmp21;
+      } else {
+        tmp16 = cResult[8];
+      }
+      tmp10 = tmp16;
+    } else if (cResult[9] !== tmp5) {
+      const obj5 = {};
+      const _default = MessageViewNativeComponent.default;
+      const merged3 = Object.assign(tmp5);
+      const tmp15 = closure_12(_default, obj5);
+      cResult[9] = tmp5;
+      cResult[10] = tmp15;
+      tmp10 = tmp15;
+    } else {
+      tmp10 = cResult[10];
+    }
+  }
+  return tmp10;
+}) : ((message) => {
+  let tmp3Result;
   message = message.message;
   const merged = Object.assign(message, Object.assign({ message: 0 }));
   if (message.type === MessageTypes.AUTO_MODERATION_ACTION) {
     const obj2 = {};
+    const _default4 = AutoModerationSystemMessageViewNativeComponent.default;
     const merged1 = Object.assign(merged);
-    let tmp3Result = closure_1_10(AutoModerationSystemMessageViewNativeComponent.default, obj2);
+    tmp3Result = closure_12(_default4, obj2);
   } else {
     const AUTOMOD_INCIDENT_ACTIONS = MessageTypes2.MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
     if (AUTOMOD_INCIDENT_ACTIONS.has(message.type)) {
       const obj3 = {};
+      const _default3 = MessageViewNativeComponent.default;
       const merged2 = Object.assign(merged);
-      tmp3Result = closure_1_10(tmp21(8964).default, obj3);
+      tmp3Result = closure_12(_default3, obj3);
     } else if (isSystemMessageDefault(message)) {
       const obj4 = {};
+      const _default2 = SystemMessageViewNativeComponent.default;
       const merged3 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8965).default, obj4);
+      tmp3Result = tmp3(_default2, obj4);
     } else {
       const obj = {};
+      const _default = MessageViewNativeComponent.default;
       const merged4 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8964).default, obj);
+      tmp3Result = tmp3(_default, obj);
     }
   }
   return tmp3Result;
-}
-const View = fn(17).View;
-const MessageTypes = fn(1074).MessageTypes;
-const RowGeneratorConstants = fn(8223);
-({ RowType: closure_8, Changeset: closure_9 } = RowGeneratorConstants);
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const PX_4 = nativeDefault.space.PX_4;
-const createStyles = fn(4788);
-let closure_14 = createStyles.createStyles((marginLeft, marginTop, paddingTop) => {
-  const obj = { container: { position: "relative", overflow: "hidden", paddingTop }, offset: { marginTop: -marginTop, marginLeft: -marginLeft }, gradient: { position: "absolute", bottom: 0, height: 24, width: "100%" }, itemRow: { backgroundColor: "transparent" } };
+});
+let closure_16 = createStyles.createStyles((marginLeft, marginTop, paddingTop) => {
+  const obj = { container: obj2, offset: obj3, gradient: { position: "absolute", bottom: 0, height: 24, width: "100%" }, itemRow: { backgroundColor: "transparent" } };
   return obj;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("components_native/chat/ChatItem.tsx");
 
 export default function _default(rowGenerator) {
+  let _undefined;
+  let backgroundColor;
+  let c6;
+  let closure_8;
+  let items5;
+  let items6;
+  let items7;
+  let maxHeight;
+  let modifyRow;
+  let obj3;
+  let pointerEvents;
+  let tmp4;
   rowGenerator = rowGenerator.rowGenerator;
   const message = rowGenerator.message;
   let num = rowGenerator.horizontalOffset;
+  const style = rowGenerator.style;
   if (num === undefined) {
     num = 8;
   }
@@ -68,32 +176,43 @@ export default function _default(rowGenerator) {
   const messageSizeCacheRef = rowGenerator.messageSizeCacheRef;
   ({ backgroundColor, pointerEvents } = rowGenerator);
   if (backgroundColor === undefined) {
-    backgroundColor = message(modifyRow[7]).colors.BACKGROUND_BASE_LOWER;
+    let tmp = message;
+    backgroundColor = message(modifyRow[8]).colors.BACKGROUND_BASE_LOWER;
   }
   const gradientColors = rowGenerator.gradientColors;
-  AccessibilityStore = undefined;
+  react = undefined;
   let token;
-  [tmp4, c6] = onLayout(messageSizeCacheRef.useState(0), 2);
-  const tmp5 = onLayout(messageSizeCacheRef.useState(undefined), 2);
+  let obj = react;
+  const gradientStyles = rowGenerator.gradientStyles;
+  const tmp3 = messageSizeCacheRef(react.useState(0), 2);
+  [tmp4, c6] = tmp3;
+  const tmp5 = messageSizeCacheRef(react.useState(undefined), 2);
   const constrainedWidth = tmp5[0];
-  closure_8 = tmp5[1];
+  AccessibilityStore = tmp5[1];
   const roleStyle = AccessibilityStore.roleStyle;
   let items = [constrainedWidth, roleStyle, message, modifyRow, rowGenerator];
-  const memo = messageSizeCacheRef.useMemo(() => {
-    rowGenerator.setOptions({ constrainedWidth });
-    const generateResult = rowGenerator.generate({ roleStyle, rowType: constants.MESSAGE, changeType: constants2.NOOP, message, isFirst: true, canShowImages: true, canAddNewReactions: false });
+  const memo = react.useMemo(() => {
+    let obj4;
+    let stringify;
+    const obj = { constrainedWidth };
+    rowGenerator.setOptions(obj);
+    const obj2 = { roleStyle, rowType: rawRow.MESSAGE, changeType: unpackModuleId.NOOP, message, isFirst: true, canShowImages: true, canAddNewReactions: false };
+    const generateResult = rowGenerator.generate(obj2);
     if (null != modifyRow) {
       tmp3(generateResult);
     }
-    const obj3 = { rawRow: generateResult, row: null };
+    const obj3 = { rawRow: generateResult, row: stringify(obj4) };
+    stringify = JSON.stringify;
+    obj4 = { index: 0 };
     const merged = Object.assign(generateResult);
-    obj3.row = JSON.stringify({ index: 0 });
     return obj3;
   }, items);
   const rawRow = memo.rawRow;
   const items1 = [rawRow.contextType];
-  const memo1 = messageSizeCacheRef.useMemo(() => {
+  const row = memo.row;
+  const memo1 = react.useMemo(() => {
     let num = 0;
+    const obj = PlatformUtils;
     if (!obj.isAndroid()) {
       let num2 = 16;
       if (rawRow.contextType === RowGeneratorTypes.MessageContextType.SEARCH) {
@@ -103,99 +222,86 @@ export default function _default(rowGenerator) {
     }
     return num;
   }, items1);
-  let tmp11 = rawRow.contextType !== rowGenerator(modifyRow[15]).MessageContextType.SEARCH;
+  let num2 = 0;
+  const tmp11 = rawRow.contextType !== rowGenerator(modifyRow[18]).MessageContextType.SEARCH && null != rawRow.message && "avatarDecorationURL" in rawRow.message && null != rawRow.message.avatarDecorationURL;
   if (tmp11) {
-    tmp11 = null != rawRow.message;
+    const tmp9Result = rowGenerator(modifyRow[17]);
+    num2 = tmp9Result.isAndroid() ? tmp14 - 2 : tmp14;
   }
-  if (tmp11) {
-    tmp11 = "avatarDecorationURL" in rawRow.message;
-  }
-  if (tmp11) {
-    tmp11 = null != rawRow.message.avatarDecorationURL;
-  }
-  if (!tmp11) {
-    const tmp17 = closure_14(num, memo1, 0);
-    const items2 = [onLayout];
-    const items3 = [messageSizeCacheRef, message.id];
-    const callback = obj.useCallback((nativeEvent) => {
-      closure_8(nativeEvent.nativeEvent.layout.width);
-      if (onLayout != null) {
-        onLayout(nativeEvent);
-      }
-    }, items2);
-    let tmp24Result = null != maxHeight;
-    const callback1 = obj.useCallback((nativeEvent) => {
-      const height = nativeEvent.nativeEvent.layout.height;
-      if (height > 0) {
-        if (null != messageSizeCacheRef) {
-          if (tmp.current[message.id] !== height) {
-            tmp.current[tmp3.id] = height;
-          }
+  const tmp15 = closure_16(num, memo1, num2);
+  const items2 = [onLayout];
+  const items3 = [messageSizeCacheRef, message.id];
+  const callback = obj.useCallback((nativeEvent) => {
+    closure_8(nativeEvent.nativeEvent.layout.width);
+    if (onLayout != null) {
+      onLayout(nativeEvent);
+    }
+  }, items2);
+  let tmp21Result = null != maxHeight;
+  const callback1 = obj.useCallback((nativeEvent) => {
+    const height = nativeEvent.nativeEvent.layout.height;
+    if (height > 0) {
+      if (null != messageSizeCacheRef) {
+        if (messageSizeCacheRef.current[message.id] !== height) {
+          messageSizeCacheRef.current[tmp3.id] = height;
         }
-        _undefined(height);
       }
-    }, items3);
-    if (tmp24Result) {
-      tmp24Result = tmp4 - memo1 >= maxHeight;
+      _undefined(height);
     }
-    let tmp22;
-    if (messageSizeCacheRef != null) {
-      const current = messageSizeCacheRef.current;
-      if (current != null) {
-        tmp22 = current[message.id];
-      }
-    }
-    let tmp23 = tmp22;
-    if (tmp24Result) {
-      tmp23 = tmp22;
-      if (null != maxHeight) {
-        tmp23 = maxHeight;
-      }
-    }
-    const obj2 = { style: tmp17.offset, onLayout: callback1, children: null };
-    let obj3 = { message, row: memo.row, style: tmp17.itemRow };
-    obj2.children = rawRow(DCDChatItem, obj3);
-    const tmp24 = rawRow;
-    const tmp25 = gradientColors;
-    const tmp27 = rawRow(gradientColors, obj2);
-    token = tmp9(tmp10[16]).useToken(backgroundColor);
-    const items4 = [gradientColors, token];
-    const obj4 = { style: null, onLayout: null, pointerEvents: null, children: null };
-    const items5 = [tmp17.container, rowGenerator.style, ];
-    const obj5 = { height: tmp23 };
-    items5[2] = obj5;
-    obj4.style = items5;
-    obj4.onLayout = callback;
-    obj4.pointerEvents = pointerEvents;
-    let tmp31 = null != constrainedWidth;
-    const memo2 = obj.useMemo(() => {
-      let tmp = gradientColors;
-      if (gradientColors == null) {
-        const obj = _modDef672(token);
-        const items = [_modDef672(token).alpha(0).hex(), token];
-        tmp = items;
-        const alphaResult = _modDef672(token).alpha(0);
-      }
-      return tmp;
-    }, items4);
-    if (tmp31) {
-      tmp31 = tmp27;
-    }
-    const items6 = [tmp31, ];
-    if (tmp24Result) {
-      const obj6 = { colors: memo2, style: null };
-      const items7 = [tmp17.gradient, rowGenerator.gradientStyles];
-      obj6.style = items7;
-      tmp24Result = tmp24(message(tmp10[18]), obj6);
-    }
-    items6[1] = tmp24Result;
-    obj4.children = items6;
-    return token(tmp25, obj4);
-  } else {
-    tmp9(tmp10[14]).isAndroid() ? PX_4 - 2 : PX_4;
-    const tmp9Result2 = tmp9(tmp10[14]);
+  }, items3);
+  if (tmp21Result) {
+    tmp21Result = tmp4 - memo1 >= maxHeight;
   }
+  let tmp19;
+  if (messageSizeCacheRef != null) {
+    const current = messageSizeCacheRef.current;
+    if (current != null) {
+      tmp19 = current[message.id];
+    }
+  }
+  let sum = tmp19;
+  if (tmp21Result) {
+    sum = tmp19;
+    if (null != maxHeight) {
+      sum = maxHeight + num2;
+    }
+  }
+  let obj2 = { style: tmp15.offset, onLayout: callback1, children: closure_12(closure_15, obj3) };
+  obj3 = { message, row, style: tmp15.itemRow };
+  const tmp23 = closure_12(constrainedWidth, obj2);
+  const tmp9Result2 = rowGenerator(modifyRow[19]);
+  token = tmp9Result2.useToken(backgroundColor);
+  const items4 = [gradientColors, token];
+  let obj4 = { style: items5, onLayout: callback, pointerEvents, children: items6 };
+  items5 = [tmp15.container, style, { height: sum }];
+  let tmp27 = null != constrainedWidth;
+  const memo2 = obj.useMemo(() => {
+    let tmp = gradientColors;
+    if (gradientColors == null) {
+      const items = [, ];
+      const obj = _modDef684(token);
+      const alphaResult = obj.alpha(0);
+      items[0] = alphaResult.hex();
+      items[1] = token;
+      tmp = items;
+    }
+    return tmp;
+  }, items4);
+  const tmp21 = closure_12;
+  const tmp22 = constrainedWidth;
+  const tmp26 = closure_13;
+  if (tmp27) {
+    tmp27 = tmp23;
+  }
+  items6 = [tmp27, ];
+  if (tmp21Result) {
+    const obj5 = { colors: memo2, style: items7 };
+    items7 = [tmp15.gradient, gradientStyles];
+    tmp21Result = tmp21(message(tmp10[21]), obj5);
+  }
+  items6[1] = tmp21Result;
+  return tmp26(tmp22, obj4);
 };
-export const DCDMessageView = fn(8964).default;
-export const DCDSystemMessageView = fn(8965).default;
-export const DCDAutoModerationSystemMessageView = fn(8963).default;
+export const DCDMessageView = MessageViewNativeComponent.default;
+export const DCDSystemMessageView = SystemMessageViewNativeComponent.default;
+export const DCDAutoModerationSystemMessageView = AutoModerationSystemMessageViewNativeComponent.default;

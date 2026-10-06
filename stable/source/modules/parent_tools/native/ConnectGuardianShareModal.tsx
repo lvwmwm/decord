@@ -1,104 +1,151 @@
-// Module ID: 17873
-// Function ID: 17874
+// Module ID: 17234
+// Function ID: 17235
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 7811, 21, 4788, 576, 1115, 2482, 4485, 4991, 12200, 563, 15161, 8725, 8726, 5216, 4784, 15162, 5826, 5873, 11494, 2]
-// Exports: default
+// Dependencies: [19, 17, 6961, 21, 4837, 588, 1127, 2490, 4530, 5040, 11270, 573, 14404, 7874, 7875, 5280, 4833, 14405, 5890, 5933, 558, 576, 10733, 2]
 
-// Module 17873 (ConnectGuardianShareModal)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import NavigatorHeader from "NavigatorHeader" /* 5873 */;
-import Modal from "Modal" /* 11494 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15161 */;
-import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
+// Module 17234 (ConnectGuardianShareModal)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import _modDef2490 from "module_2490" /* 2490 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import NavigatorHeader from "NavigatorHeader" /* 5933 */;
+import Modal2 from "Modal" /* 10733 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14404 */;
+import react from "react" /* 19 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+function headerTitle() {
+  return null;
+}
+function render() {
+  return closure_1_6(closure_1_9, {});
+}
 function ConnectGuardianShareScreen() {
+  let getLinkCode;
+  let intl;
+  let intl2;
+  let intl3;
+  let items2;
+  let obj13;
   const tmp = closure_8();
-  const syncMessages = getLinkCode(1115).useSyncMessages(getLinkCode(2482).messagesLoader);
-  const callback = noop.useCallback(() => {
-    const intl = getLinkCode(1115).intl;
-    getLinkCode(4485).presentFailedToast(intl.string(getLinkCode(1115).t.R0RpRX));
-    const obj = getLinkCode(4485);
-    ModalActionCreatorsDefault.pop();
+  const obj = getLinkCode(1127);
+  const syncMessages = obj.useSyncMessages(getLinkCode(2490).messagesLoader);
+  const callback = react.useCallback(() => {
+    const presentFailedToast = getLinkCode(dependencyMap[8]).presentFailedToast;
+    getLinkCode(dependencyMap[8]);
+    const intl = getLinkCode(dependencyMap[6]).intl;
+    presentFailedToast(intl.string(getLinkCode(dependencyMap[6]).t.R0RpRX));
+    const arr = ModalActionCreatorsDefault;
+    arr.pop();
   }, []);
-  let obj = getLinkCode(1115);
-  getLinkCode = getLinkCode(12200).useFamilyCenterActions({ onError: callback }).getLinkCode;
-  const obj2 = getLinkCode(12200);
+  const obj2 = getLinkCode(11270);
+  getLinkCode = obj2.useFamilyCenterActions({ onError: callback }).getLinkCode;
   const items = [FamilyCenterStore];
-  const stateFromStores = getLinkCode(563).useStateFromStores(items, () => FamilyCenterStore.getLinkCode());
-  const obj3 = getLinkCode(563);
+  const obj3 = getLinkCode(573);
+  const stateFromStores = obj3.useStateFromStores(items, () => FamilyCenterStore.getLinkCode());
   const items1 = [FamilyCenterStore];
-  const stateFromStores1 = getLinkCode(563).useStateFromStores(items1, () => FamilyCenterStore.getLinkCodeExpiresAt());
-  const effect = noop.useEffect(() => {
+  const obj4 = getLinkCode(573);
+  const stateFromStores1 = obj4.useStateFromStores(items1, () => FamilyCenterStore.getLinkCodeExpiresAt());
+  const effect = react.useEffect(() => {
     getLinkCode();
   }, []);
-  const obj4 = getLinkCode(563);
-  useOnNewPendingRequestDefault(ModalActionCreatorsDefault.pop);
+  const tmp9 = useOnNewPendingRequestDefault;
+  tmp9(ModalActionCreatorsDefault.pop);
+  const ModalScreen = getLinkCode(7874).ModalScreen;
+  const ModalContent = getLinkCode(7875).ModalContent;
   const obj5 = { spacing: nativeDefault.space.PX_40, children: null };
-  const obj6 = { spacing: nativeDefault.space.PX_8, children: null };
-  const obj7 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
-  let intl = getLinkCode(1115).intl;
-  obj7.children = intl.string(_modDef2482.ITlV6p);
-  const items2 = [closure_6(getLinkCode(4784).Text, obj7), ];
-  const obj8 = { style: tmp.body, variant: "text-sm/medium", color: "text-muted", children: null };
-  const intl2 = getLinkCode(1115).intl;
-  obj8.children = intl2.format(_modDef2482.F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
-  items2[1] = closure_6(getLinkCode(4784).Text, obj8);
-  obj6.children = items2;
-  const items3 = [closure_7(getLinkCode(5216).Stack, obj6), ];
+  const Stack = getLinkCode(5280).Stack;
+  const obj6 = { spacing: nativeDefault.space.PX_8, children: items2 };
+  const Stack2 = getLinkCode(5280).Stack;
+  const obj7 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(_modDef2490.ITlV6p) };
+  const Text = getLinkCode(4833).Text;
+  intl = getLinkCode(1127).intl;
+  items2 = [closure_6(Text, obj7), ];
+  const obj8 = { style: tmp.body, variant: "text-sm/medium", color: "text-muted", children: intl2.format(_modDef2490.F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" }) };
+  const Text2 = getLinkCode(4833).Text;
+  intl2 = getLinkCode(1127).intl;
+  items2[1] = closure_6(Text2, obj8);
+  const items3 = [closure_7(Stack2, obj6), ];
   const obj9 = { spacing: nativeDefault.space.PX_24, style: tmp.cardSection, children: null };
-  const obj10 = { style: tmp.qrLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl3 = getLinkCode(1115).intl;
-  obj10.children = intl3.string(_modDef2482.pojgfk);
-  const items4 = [closure_6(getLinkCode(4784).Text, obj10), ];
+  const Stack3 = getLinkCode(5280).Stack;
+  const obj10 = { style: tmp.qrLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl3.string(_modDef2490.pojgfk) };
+  const Text3 = getLinkCode(4833).Text;
+  intl3 = getLinkCode(1127).intl;
+  const items4 = [closure_6(Text3, obj10), ];
   if (null != stateFromStores) {
+    let tmp11Result;
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      let tmp11Result = tmp11(tmp2(15162).ConnectGuardianCard, obj11);
+      tmp11Result = tmp11(tmp2(14405).ConnectGuardianCard, obj11);
     }
-    const obj12 = { children: null };
-    const obj13 = { children: null };
+    const obj12 = { children: closure_6(ModalContent, obj13) };
     items4[1] = tmp11Result;
     obj9.children = items4;
-    items3[1] = tmp12(getLinkCode(5216).Stack, obj9);
+    obj13 = { children: closure_7(Stack, obj5) };
+    items3[1] = closure_7(Stack3, obj9);
     obj5.children = items3;
-    obj13.children = tmp12(getLinkCode(5216).Stack, obj5);
-    obj12.children = tmp11(getLinkCode(8726).ModalContent, obj13);
-    return tmp11(getLinkCode(8725).ModalScreen, obj12);
+    return closure_6(ModalScreen, obj12);
   }
-  tmp11Result = tmp11(View, { style: tmp.loading, children: closure_6(getLinkCode(5826).ActivityIndicator, {}) });
+  const obj14 = { style: tmp.loading, children: closure_6(getLinkCode(5890).ActivityIndicator, {}) };
+  tmp11Result = tmp11(View, obj14);
 }
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { title: { textAlign: "center" }, body: { textAlign: "center" }, qrLabel: { textAlign: "center" }, cardSection: { alignItems: "center" }, loading: { alignItems: "center", justifyContent: "center", paddingVertical: nativeDefault.space.PX_24 } };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/parent_tools/native/ConnectGuardianShareModal.tsx");
-
-export default function ConnectGuardianShareModal() {
-  const memo = noop.useMemo(() => {
-    const obj = { CONNECT_GUARDIAN_SHARE: null };
-    const obj2 = {
-      headerShown: true,
-      headerLeft: NavigatorHeader.getHeaderBackButton(ModalActionCreatorsDefault.pop),
-      headerTitle() {
-        return null;
-      },
-      render() {
-        return closure_1_6(closure_1_9, {});
-      }
-    };
-    obj.CONNECT_GUARDIAN_SHARE = obj2;
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { title: { textAlign: "center" }, body: { textAlign: "center" }, qrLabel: { textAlign: "center" }, cardSection: { alignItems: "center" }, loading: obj2 };
+obj2 = { alignItems: "center", justifyContent: "center", paddingVertical: nativeDefault.space.PX_24 };
+let closure_8 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let obj3;
+  let tmp6;
+  let tmpResult;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { CONNECT_GUARDIAN_SHARE: obj3 };
+    obj3 = { headerShown: true, headerLeft: tmpResult.getHeaderBackButton(ModalActionCreatorsDefault.pop), headerTitle, render };
+    cResult[0] = obj2;
+    first = obj2;
+    tmpResult = NavigatorHeader;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { initialRouteName: "CONNECT_GUARDIAN_SHARE", screens: first, headerBackTitle: intl.string(intl4.t["13/7kX"]) };
+    const Modal = tmp(10733).Modal;
+    intl = tmp(1127).intl;
+    const tmp8 = metroRequire(Modal, obj4);
+    cResult[1] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[1];
+  }
+  return tmp6;
+}) : (() => {
+  let intl;
+  const memo = react.useMemo(() => {
+    let obj2;
+    let obj3;
+    const obj = { CONNECT_GUARDIAN_SHARE: obj2 };
+    obj2 = { headerShown: true, headerLeft: obj3.getHeaderBackButton(ModalActionCreatorsDefault.pop), headerTitle, render };
+    obj3 = NavigatorHeader;
     return obj;
   }, []);
-  let obj = { initialRouteName: "CONNECT_GUARDIAN_SHARE", screens: memo, headerBackTitle: null };
-  const intl = util.intl;
-  obj.headerBackTitle = intl.string(util.t["13/7kX"]);
-  return timestampProducer(Modal.Modal, obj);
-};
+  let obj = { initialRouteName: "CONNECT_GUARDIAN_SHARE", screens: memo, headerBackTitle: intl.string(intl4.t["13/7kX"]) };
+  const Modal = Modal2.Modal;
+  intl = intl4.intl;
+  return metroRequire(Modal, obj);
+});
+const result = size.fileFinishedImporting("modules/parent_tools/native/ConnectGuardianShareModal.tsx");
+
+export default tmp3;

@@ -1,25 +1,27 @@
-// Module ID: 9677
-// Function ID: 9678
+// Module ID: 8829
+// Function ID: 8830
 // Name: isOrientationLockSupported
-// Dependencies: [4767, 1609, 2]
+// Dependencies: [4813, 1616, 2]
 // Exports: default
 
-// Module 9677 (isOrientationLockSupported)
-import DeviceUtils from "DeviceUtils" /* 4767 */;
+// Module 8829 (isOrientationLockSupported)
+import MetaQuestUtils from "MetaQuestUtils" /* 1616 */;
+import DeviceUtils from "DeviceUtils" /* 4813 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/device/native/isOrientationLockSupported.tsx");
 
 export default function isOrientationLockSupported() {
-  const isIpadOSResult = DeviceUtils.isIpadOS();
-  let result = !isIpadOSResult;
-  if (!isIpadOSResult) {
-    result = !tmp(1609).isMetaQuest();
-    const tmpResult = tmp(1609);
+  const obj = DeviceUtils;
+  let result = !obj.isIpadOS();
+  obj.isIpadOS();
+  if (result) {
+    const tmpResult = MetaQuestUtils;
+    result = !tmpResult.isMetaQuest();
   }
   if (result) {
-    result = tmp(4767).isOrientationLockSupported();
-    const tmpResult2 = tmp(4767);
+    const tmpResult2 = DeviceUtils;
+    result = tmpResult2.isOrientationLockSupported();
   }
   return result;
 };

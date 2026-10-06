@@ -1,15 +1,16 @@
-// Module ID: 17155
-// Function ID: 17156
+// Module ID: 16499
+// Function ID: 16500
 // Name: MarkupSearchResultLinkPreviewReactRules
-// Dependencies: [10412, 2]
+// Dependencies: [11440, 2]
 // Exports: createSearchResultLinkPreviewReactRules
 
-// Module 17155 (MarkupSearchResultLinkPreviewReactRules)
-import MarkupMessagePreviewReactRules from "MarkupMessagePreviewReactRules" /* 10412 */;
+// Module 16499 (MarkupSearchResultLinkPreviewReactRules)
+import MarkupMessagePreviewReactRules from "MarkupMessagePreviewReactRules" /* 11440 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/native/MarkupSearchResultLinkPreviewReactRules.tsx");
 
 export const createSearchResultLinkPreviewReactRules = function createSearchResultLinkPreviewReactRules() {
-  return MarkupMessagePreviewReactRules.createMessagePreviewReactRules({ customEmojiSize: 16 });
+  const obj = MarkupMessagePreviewReactRules;
+  return obj.createMessagePreviewReactRules({ customEmojiSize: 16 });
 };

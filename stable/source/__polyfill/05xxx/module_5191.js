@@ -1,13 +1,9 @@
 // Module ID: 5191
 // Function ID: 5192
-// Dependencies: [17, 65]
+// Dependencies: [5192]
 
 // Module 5191
-import _mod17 from "module_17" /* 17 */;
-import module_65 from "module_65" /* 65 */;
+import _mod5192 from "module_5192" /* 5192 */;
 
-const codegenNativeComponent = _mod17.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenContentWrapper", validAttributes: {} };
 
-export default module_65.get("RNSScreenContentWrapper", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default _mod5192;

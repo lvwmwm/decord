@@ -1,88 +1,344 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 14771
+// Function ID: 14772
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1372, 21, 4788, 576, 1115, 504, 4940, 1397, 7464, 5836, 4784, 1092, 1177, 7482, 2]
-// Exports: GuildRoleSubscriptionMemberPreview
+// Dependencies: [19, 17, 1378, 21, 4837, 588, 558, 576, 1127, 504, 4989, 1403, 6609, 5896, 1104, 4833, 1189, 6627, 2]
 
-// Module 15511 (GuildRoleSubscriptionMemberPreview)
-import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import utils_ColorUtilsAll from "utils/ColorUtils" /* 1092 */;
-import util from "util" /* 1115 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 14771 (GuildRoleSubscriptionMemberPreview)
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import utils_ColorUtilsAll from "utils/ColorUtils" /* 1104 */;
+import intl2 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import RoleIconUtils from "RoleIconUtils" /* 6609 */;
+import RoleIconDefault from "RoleIcon" /* 6627 */;
+import react from "react" /* 19 */;
+import UserStore from "UserStore" /* 1378 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, avatar: { width: 40, height: 40, borderRadius: 20 }, content: { marginStart: 16 }, contextRow: { flexDirection: "row", alignItems: "center" } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionMemberPreview.tsx");
-
-export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscriptionMemberPreview(content) {
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+const View = react_native.View;
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { container: obj2, avatar: { width: 40, height: 40, borderRadius: 20 }, content: { marginStart: 16 }, contextRow: { flexDirection: "row", alignItems: "center" } };
+obj2 = { flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let closure_9 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let content;
+  let content2;
+  let contextRow;
+  let currentUser;
+  let guildId;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let role;
+  let style;
+  let textStyle;
+  let tmp4;
+  let tmp7;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(42);
+  ({ content, guildId, style, textStyle, role } = arg0);
+  if (cResult[0] !== content) {
+    let stringResult = content;
+    if (undefined === content) {
+      const intl = tmp(1127).intl;
+      stringResult = intl.string(tmp(1127).t["6OSasb"]);
+    }
+    cResult[0] = content;
+    cResult[1] = stringResult;
+    tmp4 = stringResult;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const tmp6 = closure_9();
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function _() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[2] = items;
+    cResult[3] = fn;
+    tmp8 = fn;
+    tmp7 = items;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
+  const obj4 = NicknameUtilsDefault;
+  const name = obj4.useName(guildId, null, stateFromStores);
+  if (null == role) {
+    return null;
+  } else {
+    if (cResult[4] === stateFromStores) {
+      let tmp12;
+      let tmp16;
+      if (cResult[5] === guildId) {
+        tmp12 = cResult[6];
+      }
+      if (cResult[7] !== role) {
+        const tmpResult2 = RoleIconUtils;
+        const roleIconData = tmpResult2.getRoleIconData(role, 16);
+        cResult[7] = role;
+        cResult[8] = roleIconData;
+        tmp16 = roleIconData;
+      } else {
+        tmp16 = cResult[8];
+      }
+      const color = role.color;
+      if (cResult[9] === style) {
+        let tmp18;
+        if (cResult[10] === tmp6.container) {
+          tmp18 = cResult[11];
+        }
+        if (cResult[12] === tmp12) {
+          let tmp19;
+          let tmp22;
+          let tmp25;
+          if (cResult[13] === tmp6.avatar) {
+            tmp19 = cResult[14];
+          }
+          ({ content: content2, contextRow } = tmp6);
+          if (cResult[15] !== color) {
+            const obj8 = utils_ColorUtilsAll;
+            const int2hexResult = obj8.int2hex(color);
+            cResult[15] = color;
+            cResult[16] = int2hexResult;
+            tmp22 = int2hexResult;
+          } else {
+            tmp22 = cResult[16];
+          }
+          if (cResult[17] !== tmp22) {
+            const obj2 = { color: tmp22 };
+            cResult[17] = tmp22;
+            cResult[18] = obj2;
+            tmp25 = obj2;
+          } else {
+            tmp25 = cResult[18];
+          }
+          if (cResult[19] === name) {
+            let tmp26;
+            if (cResult[20] === tmp25) {
+              tmp26 = cResult[21];
+            }
+            if (cResult[22] === role.name) {
+              let tmp29;
+              let tmp35;
+              let tmp34;
+              if (cResult[23] === tmp16) {
+                tmp29 = cResult[24];
+              }
+              const _Symbol = Symbol;
+              if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
+                const tmp37 = metroRequire(native.Spacer, { size: 8 });
+                const tmp38 = metroRequire(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
+                cResult[25] = tmp37;
+                cResult[26] = tmp38;
+                tmp35 = tmp38;
+                tmp34 = tmp37;
+              } else {
+                tmp34 = cResult[25];
+                tmp35 = cResult[26];
+              }
+              if (cResult[27] === tmp6.contextRow) {
+                if (cResult[28] === tmp26) {
+                  let tmp39;
+                  if (cResult[29] === tmp29) {
+                    tmp39 = cResult[30];
+                  }
+                  if (cResult[31] === tmp4) {
+                    let tmp43;
+                    if (cResult[32] === textStyle) {
+                      tmp43 = cResult[33];
+                    }
+                    if (cResult[34] === tmp6.content) {
+                      if (cResult[35] === tmp39) {
+                        let tmp46;
+                        if (cResult[36] === tmp43) {
+                          tmp46 = cResult[37];
+                        }
+                        if (cResult[38] === tmp46) {
+                          if (cResult[39] === tmp18) {
+                            let tmp50;
+                            if (cResult[40] === tmp19) {
+                              tmp50 = cResult[41];
+                            }
+                            return tmp50;
+                          }
+                        }
+                        const obj3 = { style: tmp18, children: items1 };
+                        items1 = [tmp19, tmp46];
+                        const tmp53 = metroImportAll(View, obj3);
+                        cResult[38] = tmp46;
+                        cResult[39] = tmp18;
+                        cResult[40] = tmp19;
+                        cResult[41] = tmp53;
+                        tmp50 = tmp53;
+                      }
+                    }
+                    const obj5 = { style: content2, children: items2 };
+                    items2 = [tmp39, tmp43];
+                    const tmp49 = metroImportAll(View, obj5);
+                    cResult[34] = tmp6.content;
+                    cResult[35] = tmp39;
+                    cResult[36] = tmp43;
+                    cResult[37] = tmp49;
+                    tmp46 = tmp49;
+                  }
+                  const obj6 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: tmp4 };
+                  const tmp45 = metroRequire(Text_Text.Text, obj6);
+                  cResult[31] = tmp4;
+                  cResult[32] = textStyle;
+                  cResult[33] = tmp45;
+                  tmp43 = tmp45;
+                }
+              }
+              const obj7 = { style: contextRow, children: items3 };
+              items3 = [tmp26, tmp29, tmp34, tmp35];
+              const tmp42 = metroImportAll(View, obj7);
+              cResult[27] = tmp6.contextRow;
+              cResult[28] = tmp26;
+              cResult[29] = tmp29;
+              cResult[30] = tmp42;
+              tmp39 = tmp42;
+            }
+            let tmp30 = null;
+            if (null != tmp16) {
+              const obj9 = { children: items4 };
+              items4 = [metroRequire(native.Spacer, { size: 4 }), ];
+              const obj10 = { name: role.name, src: null, unicodeEmoji: null, size: 16 };
+              ({ customIconSrc: obj12.src, unicodeEmoji: obj12.unicodeEmoji } = tmp16);
+              items4[1] = metroRequire(RoleIconDefault, obj10);
+              tmp30 = metroImportAll(metroImportDefault, obj9);
+            }
+            cResult[22] = role.name;
+            cResult[23] = tmp16;
+            cResult[24] = tmp30;
+            tmp29 = tmp30;
+          }
+          const obj11 = { variant: "text-md/semibold", color: "interactive-text-active", style: tmp25, children: name };
+          const tmp28 = metroRequire(Text_Text.Text, obj11);
+          cResult[19] = name;
+          cResult[20] = tmp25;
+          cResult[21] = tmp28;
+          tmp26 = tmp28;
+        }
+        const obj13 = { style: tmp6.avatar, source: tmp12 };
+        const tmp21 = metroRequire(FastImageDefault, obj13);
+        cResult[12] = tmp12;
+        cResult[13] = tmp6.avatar;
+        cResult[14] = tmp21;
+        tmp19 = tmp21;
+      }
+      const items5 = [tmp6.container, style];
+      cResult[9] = style;
+      cResult[10] = tmp6.container;
+      cResult[11] = items5;
+      tmp18 = items5;
+    }
+    let avatarURL;
+    const makeSource = AvatarUtilsDefault.makeSource;
+    AvatarUtilsDefault;
+    if (stateFromStores != null) {
+      avatarURL = stateFromStores.getAvatarURL(guildId, 40);
+    }
+    if (avatarURL == null) {
+      const tmp10Result2 = AvatarUtilsDefault;
+      avatarURL = tmp10Result2.getDefaultAvatarURL(undefined, undefined);
+    }
+    const source = makeSource(avatarURL);
+    cResult[4] = stateFromStores;
+    cResult[5] = guildId;
+    cResult[6] = source;
+    tmp12 = source;
+  }
+}) : ((content) => {
+  let currentUser;
+  let guildId;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let obj11;
+  let obj7;
+  let role;
+  let style;
+  let textStyle;
   content = content.content;
   if (content === undefined) {
-    const intl = util.intl;
-    content = intl.string(util.t["6OSasb"]);
+    const intl = intl2.intl;
+    content = intl.string(intl2.t["6OSasb"]);
   }
   ({ guildId, role } = content);
   ({ style, textStyle } = content);
   const tmp3 = closure_9();
   const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   NicknameUtilsDefault;
   if (null == role) {
     return null;
   } else {
     let avatarURL;
+    const makeSource = AvatarUtilsDefault.makeSource;
+    AvatarUtilsDefault;
     if (stateFromStores != null) {
       avatarURL = stateFromStores.getAvatarURL(guildId, 40);
     }
     if (avatarURL == null) {
-      avatarURL = tmp6(1397).getDefaultAvatarURL(undefined, undefined);
-      const tmp6Result2 = tmp6(1397);
+      const tmp6Result2 = AvatarUtilsDefault;
+      avatarURL = tmp6Result2.getDefaultAvatarURL(undefined, undefined);
     }
-    const source = tmp6(1397).makeSource(avatarURL);
-    const tmp6Result = tmp6(1397);
-    const roleIconData = tmp4(7464).getRoleIconData(role, 16);
-    const obj2 = { style: null, children: null };
-    const items1 = [tmp3.container, style];
-    obj2.style = items1;
+    const source = makeSource(avatarURL);
+    const tmp4Result = RoleIconUtils;
+    const roleIconData = tmp4Result.getRoleIconData(role, 16);
+    const obj2 = { style: items1, children: items2 };
+    items1 = [tmp3.container, style];
+    const color = role.color;
     const obj3 = { style: tmp3.avatar, source };
-    const items2 = [timestampProducer(tmp6(5836), obj3), ];
-    const obj4 = { style: tmp3.content, children: null };
-    const obj5 = { style: tmp3.contextRow, children: null };
-    const obj6 = { variant: "text-md/semibold", color: "interactive-text-active", style: null, children: null };
-    const obj7 = { color: null };
-    const tmp4Result = tmp4(7464);
-    obj7.color = utils_ColorUtilsAll.int2hex(role.color);
-    obj6.style = obj7;
-    obj6.children = tmp8;
-    const items3 = [timestampProducer(tmp4(4784).Text, obj6), , , ];
+    items2 = [metroRequire(FastImageDefault, obj3), ];
+    const obj4 = { style: tmp3.content, children: items5 };
+    const obj5 = { style: tmp3.contextRow, children: items3 };
+    const obj6 = { variant: "text-md/semibold", color: "interactive-text-active", style: obj7, children: tmp8 };
+    obj7 = { color: obj11.int2hex(color) };
+    const Text = tmp4(4833).Text;
+    obj11 = utils_ColorUtilsAll;
+    items3 = [metroRequire(Text, obj6), , , ];
     let tmp12Result = null;
     if (null != roleIconData) {
-      const obj8 = { children: null };
-      const items4 = [tmp14(tmp4(1177).Spacer, { size: 4 }), ];
+      const obj8 = { children: items4 };
+      items4 = [metroRequire(native.Spacer, { size: 4 }), ];
       const obj9 = { name: role.name, src: null, unicodeEmoji: null, size: 16 };
       ({ customIconSrc: obj13.src, unicodeEmoji: obj13.unicodeEmoji } = roleIconData);
-      items4[1] = tmp14(tmp6(7482), obj9);
-      obj8.children = items4;
-      tmp12Result = tmp12(React5, obj8);
+      items4[1] = metroRequire(RoleIconDefault, obj9);
+      tmp12Result = tmp12(metroImportDefault, obj8);
     }
     items3[1] = tmp12Result;
-    items3[2] = timestampProducer(tmp4(1177).Spacer, { size: 8 });
-    items3[3] = timestampProducer(tmp4(4784).Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
-    obj5.children = items3;
-    const items5 = [React6(View, obj5), ];
+    items3[2] = metroRequire(native.Spacer, { size: 8 });
+    items3[3] = metroRequire(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
+    items5 = [metroImportAll(View, obj5), ];
     const obj10 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: content };
-    items5[1] = timestampProducer(tmp4(4784).Text, obj10);
-    obj4.children = items5;
-    items2[1] = React6(View, obj4);
-    obj2.children = items2;
-    return React6(View, obj2);
+    items5[1] = metroRequire(Text_Text.Text, obj10);
+    items2[1] = metroImportAll(View, obj4);
+    return metroImportAll(View, obj2);
   }
-};
+});
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionMemberPreview.tsx");
+
+export const GuildRoleSubscriptionMemberPreview = tmp4;

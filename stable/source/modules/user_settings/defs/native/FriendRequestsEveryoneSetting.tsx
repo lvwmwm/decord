@@ -1,45 +1,79 @@
-// Module ID: 15257
-// Function ID: 15258
+// Module ID: 14501
+// Function ID: 14502
 // Name: FriendRequestsEveryoneSetting
-// Dependencies: [19, 8265, 1074, 2019, 7272, 15098, 11754, 1115, 2]
+// Dependencies: [19, 7421, 1086, 558, 576, 2027, 6416, 14341, 10874, 1127, 2]
 
-// Module 15257 (FriendRequestsEveryoneSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7272 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15098 */;
-import noop from "module_19" /* 19 */;
+// Module 14501 (FriendRequestsEveryoneSetting)
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14341 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let c3;
+let closure_4;
+let tmp;
+const UserSettingsUtils = tmp(6416);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ AllFriendSourceFlags: c3, FriendSourceFlags: closure_4 } = Constants);
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
+  const setting = FriendSourceFlagsSetting.useSetting();
+  if (cResult[0] !== setting) {
+    const tmpResult = UserSettingsUtils;
+    const flags = tmpResult.computeFlags(setting);
+    cResult[0] = setting;
+    cResult[1] = flags;
+    tmp5 = flags;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5.all;
+}) : (() => {
+  let setting;
+  const FriendSourceFlagsSetting = setting(2027).FriendSourceFlagsSetting;
+  setting = FriendSourceFlagsSetting.useSetting();
+  const items = [setting];
+  return react.useMemo(() => {
+    const obj = UserSettingsUtils;
+    return obj.computeFlags(setting);
+  }, items).all;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.mGr3CX);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.mGr3CX);
   },
-  parent: fn(8265).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: function useFriendRequestsEveryoneSettingValue() {
-    const FriendSourceFlagsSetting = setting(2019).FriendSourceFlagsSetting;
-    setting = FriendSourceFlagsSetting.useSetting();
-    const items = [setting];
-    return noop.useMemo(() => UserSettingsUtils.computeFlags(setting), items).all;
-  },
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: tmp3,
   onValueChange: function onFriendRequestsEveryoneSettingValueChange(arg0) {
+    let tmp3;
     const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
+    const updateSetting = FriendSourceFlagsSetting.updateSetting;
     if (arg0) {
-      let tmp3 = tmp;
+      tmp3 = tmp;
     } else {
       tmp3 = tmp & ~constants.NO_RELATION;
     }
-    FriendSourceFlagsSetting.updateSetting(tmp3);
+    updateSetting(tmp3);
   },
-  useIsDisabled() {
-    return useParentalControlSettings.useIsParentallyControlled();
+  useIsDisabled: () => {
+    const obj = useParentalControlSettings;
+    return obj.useIsParentallyControlled();
   }
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsEveryoneSetting.tsx");
+};
+const toggle = SettingBuilders.createToggle(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsEveryoneSetting.tsx");
 
 export default toggle;

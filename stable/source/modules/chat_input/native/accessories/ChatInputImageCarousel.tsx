@@ -1,37 +1,110 @@
-// Module ID: 12516
-// Function ID: 12517
+// Module ID: 11608
+// Function ID: 11609
 // Name: ChatInputImageCarousel
-// Dependencies: [19, 8054, 5137, 5136, 9686, 21, 504, 10927, 2]
+// Dependencies: [19, 7203, 5201, 5200, 8838, 21, 558, 576, 504, 10131, 2]
 
-// Module 12516 (ChatInputImageCarousel)
-import noop from "module_19" /* 19 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8054 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5136 */;
+// Module 11608 (ChatInputImageCarousel)
+import Fragment from "Fragment" /* 21 */;
+import DraftStore from "DraftStore" /* 5201 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 8838 */;
+import react from "react" /* 19 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7203 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5200 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const DraftType = fn(5137).DraftType;
-let closure_6 = fn(9686).useChatShowingAutoComplete;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/chat_input/native/accessories/ChatInputImageCarousel.tsx");
+let canUpload, dependencyMap;
 
-export default noop.memo(function ChatInputImageCarousel(canUpload) {
+const DraftType = DraftStore.DraftType;
+let closure_6 = useChatBottomManagerUIStore.useChatShowingAutoComplete;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((canUpload) => {
+  let closure_2;
+  let first;
+  let tmp = canUpload;
+  const obj = canUpload(576);
+  const cResult = obj.c(9);
+  canUpload = canUpload.canUpload;
+  const channelId = canUpload.channelId;
+  const tmp4 = closure_6(canUpload.screenIndex);
+  dependencyMap = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UploadAttachmentStore, ];
+    items[1] = ApplicationCommandStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === canUpload) {
+    if (cResult[2] === channelId) {
+      let tmp8;
+      let tmp9;
+      if (cResult[3] === tmp4) {
+        tmp8 = cResult[4];
+        tmp9 = cResult[5];
+      }
+      const tmpResult = tmp(504);
+      const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
+      if (cResult[6] === stateFromStores) {
+        let tmp11;
+        if (cResult[7] === channelId) {
+          tmp11 = cResult[8];
+        }
+        return tmp11;
+      }
+      let tmp12 = null;
+      if (null != stateFromStores) {
+        tmp12 = jsx(channelId(10131), { attachments: stateFromStores, channelId });
+      }
+      cResult[6] = stateFromStores;
+      cResult[7] = channelId;
+      cResult[8] = tmp12;
+      tmp11 = tmp12;
+    }
+  }
+  const fn = function h() {
+    let tmp = null;
+    if (!closure_2) {
+      let uploads = null;
+      if (canUpload) {
+        uploads = null;
+        const tmp5 = channelId;
+        if (null == ApplicationCommandStore.getActiveCommand(channelId)) {
+          uploads = UploadAttachmentStore.getUploads(tmp5, DraftType.ChannelMessage);
+        }
+      }
+      tmp = uploads;
+    }
+    return tmp;
+  };
+  const items1 = [channelId, canUpload, tmp4];
+  cResult[1] = canUpload;
+  cResult[2] = channelId;
+  cResult[3] = tmp4;
+  cResult[4] = fn;
+  cResult[5] = items1;
+  tmp9 = items1;
+  tmp8 = fn;
+}) : ((canUpload) => {
+  let closure_2;
   canUpload = canUpload.canUpload;
   const channelId = canUpload.channelId;
   let tmp = closure_6(canUpload.screenIndex);
   dependencyMap = tmp;
   const items = [UploadAttachmentStore, ApplicationCommandStore];
   const items1 = [channelId, canUpload, tmp];
-  const stateFromStores = canUpload(504).useStateFromStores(items, () => {
+  const obj = canUpload(504);
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let tmp = null;
     if (!closure_2) {
       let uploads = null;
       if (canUpload) {
         uploads = null;
+        const tmp5 = channelId;
         if (null == ApplicationCommandStore.getActiveCommand(channelId)) {
           uploads = UploadAttachmentStore.getUploads(tmp5, DraftType.ChannelMessage);
         }
-        tmp5 = channelId;
       }
       tmp = uploads;
     }
@@ -39,8 +112,11 @@ export default noop.memo(function ChatInputImageCarousel(canUpload) {
   }, items1);
   let tmp4 = null;
   if (null != stateFromStores) {
-    const obj2 = { attachments: stateFromStores, channelId };
-    tmp4 = jsx(channelId(10927), { attachments: stateFromStores, channelId });
+    let tmp5 = jsx;
+    tmp4 = jsx(channelId(10131), { attachments: stateFromStores, channelId });
   }
   return tmp4;
-});
+}));
+const result = size.fileFinishedImporting("modules/chat_input/native/accessories/ChatInputImageCarousel.tsx");
+
+export default memoResult;

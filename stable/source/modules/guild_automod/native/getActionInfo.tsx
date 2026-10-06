@@ -1,36 +1,37 @@
-// Module ID: 17953
-// Function ID: 17954
+// Module ID: 17316
+// Function ID: 17317
 // Name: getActionInfo
-// Dependencies: [12146, 6890, 5330, 12137, 12748, 17954, 2]
+// Dependencies: [11216, 6026, 5395, 11207, 11866, 17317, 2]
 // Exports: getActionInfo
 
-// Module 17953 (getActionInfo)
-import Constants from "Constants" /* 12146 */;
-import BaseActionInfo from "BaseActionInfo" /* 17954 */;
+// Module 17316 (getActionInfo)
+import Constants from "Constants" /* 11216 */;
+import BaseActionInfo from "BaseActionInfo" /* 17317 */;
 import size from "module_2" /* 2 */;
 
 const AutomodActionType = Constants.AutomodActionType;
 const result = size.fileFinishedImporting("modules/guild_automod/native/getActionInfo.tsx");
 
 export const getActionInfo = function getActionInfo(actionType, action, triggerType) {
-  const baseActionInfo = BaseActionInfo.getBaseActionInfo(actionType, action, triggerType);
+  let CircleXIcon;
+  const obj = BaseActionInfo;
+  const baseActionInfo = obj.getBaseActionInfo(actionType, action, triggerType);
   let tmp4 = null;
   if (null != baseActionInfo) {
-    const obj2 = {};
+    const obj2 = { icon: CircleXIcon };
     const merged = Object.assign(baseActionInfo);
     if (AutomodActionType.BLOCK_MESSAGE === actionType) {
-      let CircleXIcon = tmp(6890).CircleXIcon;
-    } else if (tmp8.FLAG_TO_CHANNEL === actionType) {
-      CircleXIcon = tmp(5330).TextIcon;
-    } else if (tmp8.USER_COMMUNICATION_DISABLED === actionType) {
-      CircleXIcon = tmp(12137).ClockWarningIcon;
-    } else if (tmp8.QUARANTINE_USER === actionType) {
-      CircleXIcon = tmp(12748).ChatXIcon;
+      CircleXIcon = tmp(6026).CircleXIcon;
+    } else if (AutomodActionType.FLAG_TO_CHANNEL === actionType) {
+      CircleXIcon = tmp(5395).TextIcon;
+    } else if (AutomodActionType.USER_COMMUNICATION_DISABLED === actionType) {
+      CircleXIcon = tmp(11207).ClockWarningIcon;
+    } else if (AutomodActionType.QUARANTINE_USER === actionType) {
+      CircleXIcon = tmp(11866).ChatXIcon;
     }
     if (CircleXIcon == null) {
-      CircleXIcon = tmp(6890).CircleXIcon;
+      CircleXIcon = tmp(6026).CircleXIcon;
     }
-    obj2.icon = CircleXIcon;
     tmp4 = obj2;
   }
   return tmp4;

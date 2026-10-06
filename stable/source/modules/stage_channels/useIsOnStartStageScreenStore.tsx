@@ -1,52 +1,152 @@
-// Module ID: 8698
-// Function ID: 8699
+// Module ID: 7847
+// Function ID: 7848
 // Name: useIsOnStartStageScreenStore
-// Dependencies: [19, 4427, 2095, 560, 1248, 504, 2049, 8699, 2]
-// Exports: setIsOnStartStageScreen, useUpdateIsOnStartStageScreenEffect
+// Dependencies: [19, 4472, 2102, 570, 1260, 558, 576, 504, 2059, 7848, 2]
+// Exports: setIsOnStartStageScreen
 
-// Module 8698 (useIsOnStartStageScreenStore)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 2049 */;
-import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 7847 (useIsOnStartStageScreenStore)
+import react_native from "react-native" /* 1260 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 2059 */;
+import react from "react" /* 19 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const module_560 = fn(560);
-const obj3 = module_560.create(() => ({ isOnStartStageScreen: true }));
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
-
-export default obj3;
-export const setIsOnStartStageScreen = function setIsOnStartStageScreen(arg0) {
-  _require = arg0;
-  require("ReactBatchUpdates").batchUpdates(() => state.setState({ isOnStartStageScreen }));
+const f95228 = () => {
+  obj = { isOnStartStageScreen };
+  return state.setState(obj);
 };
-export const useUpdateIsOnStartStageScreenEffect = function useUpdateIsOnStartStageScreenEffect(id) {
+let obj = module_570.create(() => ({ isOnStartStageScreen: true }));
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  let closure_2;
+  let first;
+  let fn2;
+  let items3;
+  let tmp10;
+  let tmp11;
+  let tmp6;
+  let tmp8;
   _require = id;
-  const items = [SelectedChannelStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => SelectedChannelStore.getVoiceChannelId() === id.id);
-  let obj = require("initialize");
-  const items1 = [PermissionStore];
-  const items2 = [id];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, closure_0), items2);
-  let tmp3 = stateFromStores1;
-  if (stateFromStores1) {
-    tmp3 = !stateFromStores(8699)(id.id);
+  const tmp = _require;
+  obj = require("react");
+  const cResult = obj.c(11);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SelectedChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-  dependencyMap = tmp3;
-  const items3 = [stateFromStores, tmp3];
-  const effect = noop.useEffect(() => {
+  if (cResult[1] !== id.id) {
+    const fn = function o() {
+      return SelectedChannelStore.getVoiceChannelId() === id.id;
+    };
+    cResult[1] = id.id;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [PermissionStore];
+    cResult[3] = items1;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] !== id) {
+    class O {
+      constructor() {
+        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, id);
+      }
+    }
+    const items2 = [id];
+    cResult[4] = id;
+    cResult[5] = O;
+    cResult[6] = items2;
+    tmp11 = items2;
+    tmp10 = O;
+  } else {
+    class O {
+      constructor() {
+        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, id);
+      }
+    }
+    tmp11 = cResult[6];
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10, tmp11);
+  const tmp13 = stateFromStores1 && !stateFromStores(7848)(id.id);
+  dependencyMap = tmp13;
+  if (cResult[7] === tmp13) {
+    class O {
+      constructor() {
+        return PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, id);
+      }
+    }
+    const effect = react.useEffect(fn2, items3);
+  }
+  fn2 = function l() {
     if (stateFromStores) {
-      if (!tmp) {
-        let isOnStartStageScreen = false;
-        ReactBatchUpdates.batchUpdates(() => state.setState({ isOnStartStageScreen }));
+      if (!closure_2) {
+        let c0 = false;
+        const obj2 = react_native;
+        obj2.batchUpdates(f95228);
       }
     } else {
-      isOnStartStageScreen = tmp;
-      ReactBatchUpdates.batchUpdates(() => state.setState({ isOnStartStageScreen }));
+      let closure_0 = tmp;
+      obj = react_native;
+      obj.batchUpdates(f95228);
+    }
+  };
+  items3 = [stateFromStores, tmp13];
+  cResult[7] = tmp13;
+  cResult[8] = stateFromStores;
+  cResult[9] = fn2;
+  cResult[10] = items3;
+}) : ((id) => {
+  let closure_2;
+  _require = id;
+  obj = require("get initialized");
+  const items = [SelectedChannelStore];
+  const stateFromStores = obj.useStateFromStores(items, () => SelectedChannelStore.getVoiceChannelId() === id.id);
+  let obj2 = require("get initialized");
+  const items1 = [PermissionStore];
+  const items2 = [id];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
+  const tmp3 = stateFromStores1 && !stateFromStores(7848)(id.id);
+  dependencyMap = tmp3;
+  const items3 = [stateFromStores, tmp3];
+  const effect = react.useEffect(() => {
+    let state;
+    if (stateFromStores) {
+      if (!closure_2) {
+        let c0 = false;
+        const obj2 = react_native;
+        obj2.batchUpdates(f95228);
+      }
+    } else {
+      let closure_0 = tmp;
+      obj = react_native;
+      obj.batchUpdates(f95228);
     }
   }, items3);
-};
+});
+function setIsOnStartStageScreen(arg0) {
+  let closure_0;
+  _require = arg0;
+  obj = require("react-native");
+  obj.batchUpdates(f95228);
+}
+const result = size.fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
+
+export default obj;
+export { setIsOnStartStageScreen };
+export const useUpdateIsOnStartStageScreenEffect = tmp3;

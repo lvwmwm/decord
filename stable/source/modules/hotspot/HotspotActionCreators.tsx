@@ -1,29 +1,40 @@
-// Module ID: 7493
-// Function ID: 7494
+// Module ID: 6638
+// Function ID: 6639
 // Name: HotspotActionCreators
-// Dependencies: [1074, 1241, 573, 2]
+// Dependencies: [1086, 1253, 585, 2]
 // Exports: clearHotspotOverride, hideHotspot, setHotspotOverride
 
-// Module 7493 (HotspotActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 6638 (HotspotActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
 import size from "module_2" /* 2 */;
+
+let importDefault;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/hotspot/HotspotActionCreators.tsx");
 
 export const hideHotspot = function hideHotspot(GUILD_CAP_INLINE_UPSELL) {
+  let _location;
   importDefault = GUILD_CAP_INLINE_UPSELL;
-  AnalyticsUtilsDefault.track(AnalyticEvents.HOTSPOT_HIDDEN, { hotspot_location: GUILD_CAP_INLINE_UPSELL });
-  const obj2 = { hotspot_location: GUILD_CAP_INLINE_UPSELL };
-  DispatcherDefault.wait(() => {
-    DispatcherDefault.dispatch({ type: "HOTSPOT_HIDE", location: _location });
+  let obj = AnalyticsUtilsDefault;
+  let obj2 = { hotspot_location: GUILD_CAP_INLINE_UPSELL };
+  obj.track(AnalyticEvents.HOTSPOT_HIDDEN, obj2);
+  const obj3 = DispatcherDefault;
+  obj3.wait(() => {
+    const obj = DispatcherDefault;
+    const obj2 = { type: "HOTSPOT_HIDE", location: _location };
+    obj.dispatch(obj2);
   });
 };
 export const setHotspotOverride = function setHotspotOverride(location, enabled) {
-  DispatcherDefault.dispatch({ type: "HOTSPOT_OVERRIDE_SET", location, enabled });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "HOTSPOT_OVERRIDE_SET", location, enabled };
+  obj.dispatch(obj2);
 };
 export const clearHotspotOverride = function clearHotspotOverride(location) {
-  DispatcherDefault.dispatch({ type: "HOTSPOT_OVERRIDE_CLEAR", location });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "HOTSPOT_OVERRIDE_CLEAR", location };
+  obj.dispatch(obj2);
 };

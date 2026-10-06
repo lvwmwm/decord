@@ -1,15 +1,17 @@
-// Module ID: 16632
-// Function ID: 16633
+// Module ID: 15927
+// Function ID: 15928
 // Name: guilds_bar/GuildsBarConstants
-// Dependencies: [1092, 575, 2]
+// Dependencies: [1104, 587, 2]
 // Exports: isDefaultFolderColor, normalizeFolderColor
 
-// Module 16632 (guilds_bar/GuildsBarConstants)
-import ColorUtils from "utils/ColorUtils" /* 1092 */;
-import shims from "shims" /* 575 */;
+// Module 15927 (guilds_bar/GuildsBarConstants)
+import ColorUtils from "utils/ColorUtils" /* 1104 */;
+import shims from "shims" /* 587 */;
 import size from "module_2" /* 2 */;
 
-const hex2intResult = ColorUtils.hex2int(shims.unsafe_getResolvedRawColor("BRAND_500", { saturation: 1 }));
+const hex2int = ColorUtils.hex2int;
+const hex2intResult = hex2int(shims.unsafe_getResolvedRawColor("BRAND_500", { saturation: 1 }));
+const _window = hex2intResult;
 const result = size.fileFinishedImporting("modules/guilds_bar/GuildsBarConstants.tsx");
 
 export const DEFAULT_FOLDER_COLOR = hex2intResult;
@@ -17,7 +19,7 @@ export const normalizeFolderColor = function normalizeFolderColor(arg0) {
   let tmp = null;
   if (null != arg0) {
     tmp = null;
-    if (arg0 !== hex2intResult) {
+    if (arg0 !== _window) {
       tmp = arg0;
     }
   }
@@ -27,7 +29,7 @@ export const isDefaultFolderColor = function isDefaultFolderColor(arg0) {
   let tmp = null;
   if (null != arg0) {
     tmp = null;
-    if (arg0 !== hex2intResult) {
+    if (arg0 !== _window) {
       tmp = arg0;
     }
   }

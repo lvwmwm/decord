@@ -1,46 +1,106 @@
-// Module ID: 8982
-// Function ID: 8983
+// Module ID: 8130
+// Function ID: 8131
 // Name: useResolveGame
-// Dependencies: [19, 7445, 7583, 2]
-// Exports: default
+// Dependencies: [19, 558, 576, 6590, 6728, 2]
 
-// Module 8982 (useResolveGame)
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7445 */;
-import useGame from "useGame" /* 7583 */;
-import noop from "module_19" /* 19 */;
+// Module 8130 (useResolveGame)
+import react2 from "react" /* 576 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6590 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
-
-export default function useResolveGame(arg0) {
+let tmp;
+const useGame = tmp(6728);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let applicationId;
+  let data;
+  let gameId;
+  let isLoading;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ applicationId, gameId } = arg0);
+  let tmp5;
+  const useGetOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication;
+  useGetOrFetchApplications;
+  if (null == gameId) {
+    tmp5 = applicationId;
+  }
+  const getOrFetchApplication = useGetOrFetchApplication(tmp5);
+  let tmp6 = gameId;
+  if (null == gameId) {
+    tmp6 = null;
+    if (null != getOrFetchApplication) {
+      let tmp7;
+      if (cResult[0] !== getOrFetchApplication) {
+        const canonicalGameId = getOrFetchApplication.getCanonicalGameId();
+        cResult[0] = getOrFetchApplication;
+        cResult[1] = canonicalGameId;
+        tmp7 = canonicalGameId;
+      } else {
+        tmp7 = cResult[1];
+      }
+      tmp6 = tmp7;
+    }
+  }
+  const tmpResult = useGame;
+  const game = tmpResult.useGame(tmp6);
+  ({ data, isLoading } = game);
+  if (data == null) {
+    data = null;
+  }
+  if (cResult[2] === tmp6) {
+    if (cResult[3] === data) {
+      let tmp11;
+      if (cResult[4] === (null == gameId && null != applicationId && null == getOrFetchApplication || isLoading)) {
+        tmp11 = cResult[5];
+      }
+      return tmp11;
+    }
+  }
+  const obj2 = { gameId: tmp6, gameRecord: data, isLoading: null == gameId && null != applicationId && null == getOrFetchApplication || isLoading };
+  cResult[2] = tmp6;
+  cResult[3] = data;
+  cResult[4] = null == gameId && null != applicationId && null == getOrFetchApplication || isLoading;
+  cResult[5] = obj2;
+  tmp11 = obj2;
+}) : ((arg0) => {
+  let applicationId;
+  let gameId;
+  let isLoading;
   ({ applicationId, gameId } = arg0);
   let getOrFetchApplication;
-  let tmp3;
+  let tmp = require;
+  let tmp4;
+  const useGetOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication;
+  useGetOrFetchApplications;
   if (null == gameId) {
-    tmp3 = applicationId;
+    tmp4 = applicationId;
   }
-  getOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication(tmp3);
+  getOrFetchApplication = useGetOrFetchApplication(tmp4);
   const items = [gameId, getOrFetchApplication];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     let tmp = gameId;
     if (null == gameId) {
       let canonicalGameId = null;
+      const obj = getOrFetchApplication;
       if (null != getOrFetchApplication) {
         canonicalGameId = obj.getCanonicalGameId();
       }
       tmp = canonicalGameId;
-      obj = getOrFetchApplication;
     }
     return tmp;
   }, items);
-  const game = useGame.useGame(memo);
+  const tmpResult = useGame;
+  const game = tmpResult.useGame(memo);
   let data = game.data;
-  const obj2 = { gameId: memo, gameRecord: null, isLoading: null };
+  let obj = { gameId: memo, gameRecord: data, isLoading: null == gameId && null != applicationId && null == getOrFetchApplication || isLoading };
+  isLoading = game.isLoading;
   if (data == null) {
     data = null;
   }
-  obj2.gameRecord = data;
-  obj2.isLoading = null == gameId && null != applicationId && null == getOrFetchApplication || game.isLoading;
-  return obj2;
-};
+  return obj;
+});
+const result = size.fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
+
+export default tmp2;

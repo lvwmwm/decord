@@ -1,22 +1,15 @@
-// Module ID: 9904
-// Function ID: 9905
+// Module ID: 9042
+// Function ID: 9043
 // Name: ShareEventUtils
 // Dependencies: [2]
 // Exports: SHARE_EVENT_DETAILS_LINK, canUseInviteModal
 
-// Module 9904 (ShareEventUtils)
+// Module 9042 (ShareEventUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/utils/ShareEventUtils.tsx");
 
 export const SHARE_EVENT_DETAILS_LINK = (guildId) => "https://discord.com/events/" + guildId.guildId + "/" + guildId.guildEventId;
 export const canUseInviteModal = function canUseInviteModal(arg0, arg1, arg2) {
-  let tmp = arg0;
-  if (arg0) {
-    tmp = arg1;
-  }
-  if (tmp) {
-    tmp = null != arg2;
-  }
-  return tmp;
+  return arg0 && arg1 && null != arg2;
 };

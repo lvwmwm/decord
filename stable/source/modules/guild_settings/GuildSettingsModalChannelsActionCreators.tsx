@@ -1,26 +1,32 @@
-// Module ID: 16486
-// Function ID: 16487
+// Module ID: 15775
+// Function ID: 15776
 // Name: GuildSettingsModalChannelsActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
-// Module 16486 (GuildSettingsModalChannelsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 15775 (GuildSettingsModalChannelsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsModalChannelsActionCreators.tsx");
-
-export default {
+let obj = {
   terminate() {
-    DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_TERMINATE" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_TERMINATE" });
   },
   startReordering() {
     const items = [...arguments];
-    DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_START_REORDER", sortingType: items });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_START_REORDER", sortingType: items });
   },
   stopReordering() {
-    DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER" });
   },
   localChannelUpdate(found) {
-    DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE", updates: found });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE", updates: found };
+    obj.dispatch(obj2);
   }
 };
+const result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsModalChannelsActionCreators.tsx");
+
+export default obj;

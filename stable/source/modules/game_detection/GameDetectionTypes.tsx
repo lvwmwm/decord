@@ -1,54 +1,58 @@
-// Module ID: 2018
-// Function ID: 2019
+// Module ID: 2026
+// Function ID: 2027
 // Name: GameDetectionTypes
-// Dependencies: [1387, 2002, 2]
+// Dependencies: [1393, 2009, 2]
 
-// Module 2018 (GameDetectionTypes)
-import Record from "Record" /* 1387 */;
+// Module 2026 (GameDetectionTypes)
+import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+import Record from "Record" /* 1393 */;
+import size from "module_2" /* 2 */;
 
-const createExecutable = fn(2002).createExecutable;
-const size = fn(2);
+const createExecutable = ApplicationRecord.createExecutable;
 const result = size.fileFinishedImporting("modules/game_detection/GameDetectionTypes.tsx");
-class DetectableGameRecord extends tmp2 {
-  constructor(arg0) {
-    tmp3 = new DetectableGameRecord(tmp2, new.target, new.target, tmp);
-    ({ id: tmp3.id, name: tmp3.name, description: tmp3.description, icon: tmp3.icon, icon_hash: tmp3.icon_hash } = global);
-    tmp3.aliases = global.aliases || [];
-    ({ cover_image_hash: tmp3.cover_image_hash, executables } = global);
+class DetectableGameRecord extends Record {
+  constructor(aliases) {
+    let executables;
+    const tmp3 = new DetectableGameRecord(tmp2, new.target, this, tmp);
+    ({ id: tmp3.id, name: tmp3.name, description: tmp3.description, icon: tmp3.icon, icon_hash: tmp3.icon_hash } = aliases);
+    tmp3.aliases = aliases.aliases || [];
+    ({ cover_image_hash: tmp3.cover_image_hash, executables } = aliases);
     if (executables == null) {
       executables = [];
     }
     tmp3.executables = executables.map(createExecutable);
-    tmp3.overlay = global.overlay || false;
-    tmp3.overlayWarn = global.overlayWarn || false;
-    tmp3.overlayCompatibilityHook = global.overlayCompatibilityHook || false;
-    tmp3.hook = global.hook || false;
-    tmp3.supportsOutOfProcessOverlay = global.supportsOutOfProcessOverlay || false;
-    tmp3.thirdPartySkus = global.thirdPartySkus || [];
-    tmp3.themes = global.themes || [];
-    tmp3.content_classification = global.content_classification;
+    tmp3.overlay = aliases.overlay || false;
+    tmp3.overlayWarn = aliases.overlayWarn || false;
+    tmp3.overlayCompatibilityHook = aliases.overlayCompatibilityHook || false;
+    tmp3.hook = aliases.hook || false;
+    tmp3.supportsOutOfProcessOverlay = aliases.supportsOutOfProcessOverlay || false;
+    tmp3.thirdPartySkus = aliases.thirdPartySkus || [];
+    tmp3.themes = aliases.themes || [];
+    tmp3.content_classification = aliases.content_classification;
     return tmp3;
+  }
+  getIconURL(arg0) {
+    let icon;
+    let id;
+    let combined = null;
+    if (null != this.icon) {
+      ({ id, icon } = this);
+      let str = "";
+      if (null != arg0) {
+        const _HermesInternal = HermesInternal;
+        str = "?size=" + arg0;
+      }
+      const _HermesInternal2 = HermesInternal;
+      combined = "https://cdn.discordapp.com/app-icons/" + id + "/" + icon + ".png" + str;
+    }
+    return combined;
+  }
+  hasTheme(arg0) {
+    const themes = this.themes;
+    return themes.includes(arg0);
   }
 }
 const prototype = DetectableGameRecord.prototype;
-prototype["getIconURL"] = function getIconURL(arg0) {
-  let combined = null;
-  if (null != this.icon) {
-    ({ id, icon } = this);
-    let str = "";
-    if (null != arg0) {
-      const _HermesInternal = HermesInternal;
-      str = "?size=" + arg0;
-    }
-    const _HermesInternal2 = HermesInternal;
-    combined = "https://cdn.discordapp.com/app-icons/" + id + "/" + icon + ".png" + str;
-  }
-  return combined;
-};
-prototype["hasTheme"] = function hasTheme(arg0) {
-  const themes = this.themes;
-  return themes.includes(arg0);
-};
 
 export const GameTheme = { EROTIC: "Erotic" };
 export { DetectableGameRecord };

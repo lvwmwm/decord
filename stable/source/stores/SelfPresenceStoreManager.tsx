@@ -1,26 +1,30 @@
-// Module ID: 17893
-// Function ID: 17894
+// Module ID: 17256
+// Function ID: 17257
 // Name: SelfPresenceStoreManager
-// Dependencies: [5528, 7395, 573, 2]
+// Dependencies: [5592, 6540, 585, 2]
 
-// Module 17893 (SelfPresenceStoreManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 17256 (SelfPresenceStoreManager)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
+
+let map;
 
 function handleChange() {
   const obj = DispatcherDefault;
-  obj.dispatch({ type: "SELF_PRESENCE_STORE_UPDATE", status: SelfPresenceStore.getStatus(), activities: SelfPresenceStore.getActivities(true), hiddenActivities: SelfPresenceStore.getHiddenActivities() });
+  const obj2 = { type: "SELF_PRESENCE_STORE_UPDATE", status: SelfPresenceStore.getStatus(), activities: SelfPresenceStore.getActivities(true), hiddenActivities: SelfPresenceStore.getHiddenActivities() };
+  obj.dispatch(obj2);
 }
-const prototype = function SelfPresenceStoreManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.stores = new Map().set(SelfPresenceStore, handleChange);
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class SelfPresenceStoreManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    map = new Map();
+    applyArgumentsResult.stores = map.set(SelfPresenceStore, handleChange);
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const selfPresenceStoreManager = new SelfPresenceStoreManager();
 const result = size.fileFinishedImporting("stores/SelfPresenceStoreManager.tsx");
 
-export default prototype1;
+export default selfPresenceStoreManager;

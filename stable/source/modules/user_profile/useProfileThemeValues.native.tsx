@@ -1,52 +1,151 @@
-// Module ID: 7461
-// Function ID: 7462
+// Module ID: 6606
+// Function ID: 6607
 // Name: useProfileThemeValues
-// Dependencies: [19, 4780, 563, 576, 575, 2]
-// Exports: useProfileThemeValues
+// Dependencies: [19, 4826, 558, 576, 573, 588, 587, 2]
 
-// Module 7461 (useProfileThemeValues)
-import _mod19 from "module_19" /* 19 */;
-import shims from "shims" /* 575 */;
-import nativeDefault from "native" /* 576 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+// Module 6606 (useProfileThemeValues)
+import react from "react" /* 19 */;
+import useStateFromStores from "useStateFromStores" /* 573 */;
+import react2 from "react" /* 576 */;
+import shims from "shims" /* 587 */;
+import nativeDefault from "native" /* 588 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const useMemo = _mod19.useMemo;
-const result = size.fileFinishedImporting("modules/user_profile/useProfileThemeValues.native.tsx");
-
-export const useProfileThemeValues = function useProfileThemeValues(theme) {
+const useMemo = react.useMemo;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
+  let saturation;
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(15);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function n() {
+      return saturation.saturation;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  let tmp8 = null;
+  if (null != theme) {
+    let OPACITY_WHITE_24;
+    if (cResult[2] === theme) {
+      let tmp9;
+      let tmp10;
+      let tmp11;
+      let tmp12;
+      let tmp13;
+      if (cResult[3] === stateFromStores) {
+        tmp9 = cResult[4];
+        tmp10 = cResult[5];
+        tmp11 = cResult[6];
+        tmp12 = cResult[7];
+        tmp13 = cResult[8];
+      }
+      if (cResult[9] === tmp9) {
+        if (cResult[10] === tmp10) {
+          if (cResult[11] === tmp11) {
+            if (cResult[12] === tmp12) {
+              let tmp18;
+              if (cResult[13] === tmp13) {
+                tmp18 = cResult[14];
+              }
+              tmp8 = tmp18;
+            }
+          }
+        }
+      }
+      const obj2 = { overlaySyncedWithUserTheme: tmp9, overlay: tmp10, sectionBox: tmp11, dividerOpacity: tmp12, rolePillBackgroundColor: tmp13 };
+      cResult[9] = tmp9;
+      cResult[10] = tmp10;
+      cResult[11] = tmp11;
+      cResult[12] = tmp12;
+      cResult[13] = tmp13;
+      cResult[14] = obj2;
+      tmp18 = obj2;
+    }
+    const obj3 = { theme, saturation: stateFromStores };
+    const internal = nativeDefault.internal;
+    const semanticColor = internal.resolveSemanticColor(theme, nativeDefault.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME, obj3);
+    const internal2 = nativeDefault.internal;
+    const semanticColor1 = internal2.resolveSemanticColor(theme, nativeDefault.colors.PROFILE_GRADIENT_OVERLAY, obj3);
+    const tmpResult3 = shims;
+    if (theme === tmpResult3.getThemes().LIGHT) {
+      OPACITY_WHITE_24 = tmp14(588).unsafe_rawColors.OPACITY_WHITE_24;
+    } else {
+      const internal3 = tmp14(588).internal;
+      OPACITY_WHITE_24 = internal3.resolveSemanticColor(theme, tmp14(588).colors.BACKGROUND_MOD_SUBTLE, obj3);
+    }
+    let num3 = 0.12;
+    const tmpResult4 = shims;
+    if (theme === tmpResult4.getThemes().DARK) {
+      num3 = 0.24;
+    }
+    const internal4 = tmp14(588).internal;
+    const semanticColor2 = internal4.resolveSemanticColor(theme, tmp14(588).colors.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND, obj3);
+    cResult[2] = theme;
+    cResult[3] = stateFromStores;
+    cResult[4] = semanticColor;
+    cResult[5] = semanticColor1;
+    cResult[6] = OPACITY_WHITE_24;
+    cResult[7] = num3;
+    cResult[8] = semanticColor2;
+    tmp12 = num3;
+    tmp13 = semanticColor2;
+    tmp11 = OPACITY_WHITE_24;
+    tmp10 = semanticColor1;
+    tmp9 = semanticColor;
+  }
+  return tmp8;
+}) : ((theme) => {
+  let saturation;
   _require = theme;
+  let obj = require("useStateFromStores");
   const items = [AccessibilityStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => saturation.saturation);
+  const stateFromStores = obj.useStateFromStores(items, () => saturation.saturation);
   const items1 = [theme, stateFromStores];
   return useMemo(() => {
-    if (null == closure_0) {
+    let OPACITY_WHITE_24;
+    let internal2;
+    let internal3;
+    let internal4;
+    let num;
+    if (null == theme) {
       return null;
     } else {
-      const obj = { theme: tmp, saturation: stateFromStores };
-      const obj2 = { overlaySyncedWithUserTheme: null, overlay: null, sectionBox: null, dividerOpacity: null, rolePillBackgroundColor: null };
-      const internal3 = nativeDefault.internal;
-      obj2.overlaySyncedWithUserTheme = internal3.resolveSemanticColor(tmp, nativeDefault.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME, obj);
-      const internal4 = nativeDefault.internal;
-      obj2.overlay = internal4.resolveSemanticColor(tmp, nativeDefault.colors.PROFILE_GRADIENT_OVERLAY, obj);
-      if (tmp === obj4.getThemes().LIGHT) {
-        let OPACITY_WHITE_24 = tmp3(576).unsafe_rawColors.OPACITY_WHITE_24;
+      const obj = { theme, saturation: stateFromStores };
+      const obj2 = { overlaySyncedWithUserTheme: internal3.resolveSemanticColor(theme, nativeDefault.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME, obj), overlay: internal4.resolveSemanticColor(theme, nativeDefault.colors.PROFILE_GRADIENT_OVERLAY, obj), sectionBox: OPACITY_WHITE_24, dividerOpacity: num, rolePillBackgroundColor: internal2.resolveSemanticColor(theme, nativeDefault.colors.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND, obj) };
+      internal3 = nativeDefault.internal;
+      internal4 = nativeDefault.internal;
+      const obj4 = shims;
+      const tmp5 = require;
+      if (theme === obj4.getThemes().LIGHT) {
+        OPACITY_WHITE_24 = tmp3(588).unsafe_rawColors.OPACITY_WHITE_24;
       } else {
-        const internal = tmp3(576).internal;
-        OPACITY_WHITE_24 = internal.resolveSemanticColor(tmp, tmp3(576).colors.BACKGROUND_MOD_SUBTLE, obj);
+        const internal = tmp3(588).internal;
+        OPACITY_WHITE_24 = internal.resolveSemanticColor(tmp, tmp3(588).colors.BACKGROUND_MOD_SUBTLE, obj);
       }
-      obj2.sectionBox = OPACITY_WHITE_24;
-      obj4 = shims;
-      let num = 0.12;
-      if (tmp === tmp5Result.getThemes().DARK) {
+      num = 0.12;
+      const tmp5Result = tmp5(587);
+      if (theme === tmp5Result.getThemes().DARK) {
         num = 0.24;
       }
-      obj2.dividerOpacity = num;
-      const internal2 = tmp3(576).internal;
-      obj2.rolePillBackgroundColor = internal2.resolveSemanticColor(tmp, nativeDefault.colors.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND, obj);
+      internal2 = tmp3(588).internal;
       return obj2;
     }
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/useProfileThemeValues.native.tsx");
+
+export const useProfileThemeValues = tmp2;

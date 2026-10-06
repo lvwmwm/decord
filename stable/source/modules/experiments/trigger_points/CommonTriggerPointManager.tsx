@@ -1,40 +1,40 @@
-// Module ID: 17759
-// Function ID: 17760
+// Module ID: 17118
+// Function ID: 17119
 // Name: CommonTriggerPointManager
-// Dependencies: [7395, 17760, 17377, 2]
+// Dependencies: [6540, 17119, 16729, 2]
 
-// Module 17759 (CommonTriggerPointManager)
-import OpenUserSettingsTriggerPoint2 from "OpenUserSettingsTriggerPoint" /* 17377 */;
-import VoiceCallTriggerPoint2 from "VoiceCallTriggerPoint" /* 17760 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 17118 (CommonTriggerPointManager)
+import OpenUserSettingsTriggerPoint2 from "OpenUserSettingsTriggerPoint" /* 16729 */;
+import VoiceCallTriggerPoint2 from "VoiceCallTriggerPoint" /* 17119 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class CommonTriggerPointManager extends tmp2 {
+class CommonTriggerPointManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.actions = { VOICE_CHANNEL_SELECT: applyArgumentsResult.handleVoiceChannelSelect, CALL_CREATE: applyArgumentsResult.handleCallCreate, USER_SETTINGS_MODAL_OPEN: applyArgumentsResult.handleUserSettingsModalOpen };
     return applyArgumentsResult;
   }
+  handleVoiceChannelSelect(guildId) {
+    guildId = guildId.guildId;
+    if (null != guildId.channelId) {
+      const VoiceCallTriggerPoint = VoiceCallTriggerPoint2.VoiceCallTriggerPoint;
+      const trigger = VoiceCallTriggerPoint.trigger;
+      const obj = { guildId };
+      trigger(obj);
+    }
+  }
+  handleCallCreate() {
+    const VoiceCallTriggerPoint = VoiceCallTriggerPoint2.VoiceCallTriggerPoint;
+    VoiceCallTriggerPoint.trigger();
+  }
+  handleUserSettingsModalOpen() {
+    const OpenUserSettingsTriggerPoint = OpenUserSettingsTriggerPoint2.OpenUserSettingsTriggerPoint;
+    OpenUserSettingsTriggerPoint.trigger();
+  }
 }
 const prototype = CommonTriggerPointManager.prototype;
-prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(guildId) {
-  guildId = guildId.guildId;
-  if (null != guildId.channelId) {
-    const VoiceCallTriggerPoint = VoiceCallTriggerPoint2.VoiceCallTriggerPoint;
-    const obj = { guildId };
-    VoiceCallTriggerPoint.trigger(obj);
-  }
-};
-prototype["handleCallCreate"] = function handleCallCreate() {
-  const VoiceCallTriggerPoint = VoiceCallTriggerPoint2.VoiceCallTriggerPoint;
-  VoiceCallTriggerPoint.trigger();
-};
-prototype["handleUserSettingsModalOpen"] = function handleUserSettingsModalOpen() {
-  const OpenUserSettingsTriggerPoint = OpenUserSettingsTriggerPoint2.OpenUserSettingsTriggerPoint;
-  OpenUserSettingsTriggerPoint.trigger();
-};
 const commonTriggerPointManager = new CommonTriggerPointManager();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/experiments/trigger_points/CommonTriggerPointManager.tsx");
 
 export default commonTriggerPointManager;

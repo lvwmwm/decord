@@ -1,17 +1,20 @@
-// Module ID: 17429
-// Function ID: 17430
+// Module ID: 16787
+// Function ID: 16788
 // Name: ToastStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 17429 (ToastStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 16787 (ToastStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
+
+let key;
 
 let c0 = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ToastStore extends Store {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.getContent = function getContent() {
       return _null;
     };
@@ -19,24 +22,24 @@ class ToastStore extends Store {
   }
 }
 ToastStore.displayName = "ToastStore";
-const toastStore = new ToastStore(DispatcherDefault, {
+const obj = {
   TOAST_OPEN: function handleOpen(toastProps) {
     toastProps = toastProps.toastProps;
-    let key;
-    if (_null != null) {
-      key = _null.key;
+    key = undefined;
+    if (key != null) {
+      key = key.key;
     }
     if (key === toastProps.key) {
       return false;
     } else {
-      _null = toastProps;
+      key = toastProps;
     }
   },
   TOAST_CLOSE: function handleClose() {
-    c0 = null;
+    let c0 = null;
   }
-});
-const size = fn(2);
+};
+const toastStore = new ToastStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/toast/native/ToastStore.tsx");
 
 export default toastStore;

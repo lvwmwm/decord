@@ -1,9 +1,9 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 11503
+// Function ID: 11504
 // Name: AppLauncherConstants
 // Dependencies: [2]
 
-// Module 12417 (AppLauncherConstants)
+// Module 11503 (AppLauncherConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/AppLauncherConstants.tsx");

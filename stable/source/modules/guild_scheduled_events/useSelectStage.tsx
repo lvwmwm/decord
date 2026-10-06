@@ -1,28 +1,219 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9046
+// Function ID: 9047
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 2041, 2095, 504, 8696, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 2051, 2102, 558, 576, 504, 7845, 2]
 
-// Module 9908 (useSelectStage)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 9046 (useSelectStage)
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let c3, c6, channel;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/useSelectStage.tsx");
-
-export default function useSelectStage() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_2;
+  let first;
+  let items3;
+  let stateFromStores;
+  let tmp11;
+  let tmp12;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let voiceChannelId;
+  const tmp = stateFromStores;
+  let obj = stateFromStores(first[6]);
+  const cResult = obj.c(11);
+  const tmp2 = first;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SelectedChannelStore];
+    const fn = function s() {
+      return voiceChannelId.getVoiceChannelId();
+    };
+    const items1 = [];
+    cResult[0] = items;
+    cResult[1] = fn;
+    cResult[2] = items1;
+    tmp4 = items;
+    tmp5 = fn;
+    tmp6 = items1;
+  } else {
+    [tmp4, tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(tmp2[7]);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
+  let obj3 = react;
+  [first, _asyncToGenerator] = react.useState(stateFromStores);
+  if (cResult[3] !== stateFromStores) {
+    class S {
+      constructor() {
+        closure_0 = setTimeout(() => {
+          closure_1_2(closure_0);
+        }, 500);
+        return () => {
+          clearTimeout(closure_0);
+        };
+      }
+    }
+    const items2 = [stateFromStores];
+    cResult[3] = stateFromStores;
+    cResult[4] = S;
+    cResult[5] = items2;
+    tmp12 = items2;
+    tmp11 = S;
+  } else {
+    class S {
+      constructor() {
+        closure_0 = setTimeout(() => {
+          closure_1_2(closure_0);
+        }, 500);
+        return () => {
+          clearTimeout(closure_0);
+        };
+      }
+    }
+    tmp12 = cResult[5];
+  }
+  const effect = obj3.useEffect(tmp11, tmp12);
+  if (cResult[6] !== first) {
+    class S {
+      constructor() {
+        closure_0 = setTimeout(() => {
+          closure_1_2(closure_0);
+        }, 500);
+        return () => {
+          clearTimeout(closure_0);
+        };
+      }
+    }
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let obj2;
+      closure_0 = arg0;
+      let closure_1 = value;
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c5;
+        try {
+          c6 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else {
+              c5 = 1;
+              const tmp25 = closure_0;
+              if (closure_1 === closure_1) {
+                channel = channel.getChannel(tmp26);
+                if (null != channel) {
+                  const obj4 = closure_0(first[8]);
+                  obj4.navigateToStage(channel);
+                  c5 = 0;
+                  c6 = 3;
+                  const obj6 = { value: undefined, done: true };
+                  return obj6;
+                }
+              }
+              tmp(closure_1);
+              c3 = 2;
+              c6 = 1;
+              const obj7 = { value: obj2.connectOrLurkStage(tmp25, closure_1), done: false };
+              obj2 = closure_0(first[8]);
+              return obj7;
+            }
+          } else {
+            if (1 === tmp4) {
+              c5 = 0;
+              tmp(null);
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c6 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              c5 = 0;
+            }
+            c6 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp18) {
+          let closure_4 = tmp18;
+          if (0 === c5) {
+            c6 = 3;
+            throw tmp18;
+          } else {
+            c3 = 1;
+          }
+        }
+      }
+    });
+    const fn2 = function() {
+      return closure_0(...arguments);
+    };
+    cResult[6] = first;
+    cResult[7] = fn2;
+  } else {
+    class S {
+      constructor() {
+        closure_0 = setTimeout(() => {
+          closure_1_2(closure_0);
+        }, 500);
+        return () => {
+          clearTimeout(closure_0);
+        };
+      }
+    }
+  }
+  if (cResult[8] === tmp14) {
+    class S {
+      constructor() {
+        closure_0 = setTimeout(() => {
+          closure_1_2(closure_0);
+        }, 500);
+        return () => {
+          clearTimeout(closure_0);
+        };
+      }
+    }
+    return items3;
+  }
+  items3 = [first, tmp14];
+  cResult[8] = tmp14;
+  cResult[9] = first;
+  cResult[10] = items3;
+}) : (() => {
+  let closure_2;
+  let first;
+  let stateFromStores;
+  let voiceChannelId;
+  let obj = stateFromStores(first[7]);
   const items = [SelectedChannelStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => voiceChannelId.getVoiceChannelId(), []);
-  [first, asyncGeneratorStep] = noop.useState(stateFromStores);
+  stateFromStores = obj.useStateFromStores(items, () => voiceChannelId.getVoiceChannelId(), []);
+  [first, _asyncToGenerator] = react.useState(stateFromStores);
   const items1 = [stateFromStores];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let closure_0;
     const timeout = setTimeout(() => {
       closure_1_2(closure_0);
     }, 500);
@@ -30,43 +221,94 @@ export default function useSelectStage() {
       clearTimeout(closure_0);
     };
   }, items1);
-  _require = asyncGeneratorStep(async (arg0, arg1) => {
-    if (closure_1 === closure_1) {
-      channel = channel.getChannel(tmp30);
-      if (null != channel) {
-        closure_0(first[6]).navigateToStage(channel);
-        c5 = 0;
-        c6 = 3;
-        return { value: undefined, done: true };
+  const useCallback = react.useCallback;
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    closure_0 = arg0;
+    let closure_1 = value;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c5;
+      try {
+        c6 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            c5 = 1;
+            const tmp25 = closure_0;
+            if (closure_1 === closure_1) {
+              channel = channel.getChannel(tmp26);
+              if (null != channel) {
+                const obj4 = closure_0(first[8]);
+                obj4.navigateToStage(channel);
+                c5 = 0;
+                c6 = 3;
+                const obj6 = { value: undefined, done: true };
+                return obj6;
+              }
+            }
+            tmp(closure_1);
+            c3 = 2;
+            c6 = 1;
+            const obj7 = { value: obj2.connectOrLurkStage(tmp25, closure_1), done: false };
+            obj2 = closure_0(first[8]);
+            return obj7;
+          }
+        } else {
+          if (1 === tmp4) {
+            c5 = 0;
+            tmp(null);
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c6 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            c5 = 0;
+          }
+          c6 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp18) {
+        let closure_4 = tmp18;
+        if (0 === c5) {
+          c6 = 3;
+          throw tmp18;
+        } else {
+          c3 = 1;
+        }
       }
     }
-    tmp3(closure_1);
-    await closure_0(first[6]).connectOrLurkStage(closure_0, closure_1);
-    if (1 === tmp7) {
-      c5 = 0;
-      tmp3(null);
-      c6 = 3;
-    } else if (arg0 === 1) {
-      c6 = 3;
-      throw arg1;
-    } else if (arg0 !== 2) {
-      c5 = 0;
-    }
-    return arg1;
   });
   const items2 = [first];
   const items3 = [
     first,
-    noop.useCallback(function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+    useCallback(function() {
+      return closure_0(...arguments);
     }, items2)
   ];
   return items3;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/useSelectStage.tsx");
+
+export default tmp2;

@@ -1,43 +1,97 @@
-// Module ID: 8574
-// Function ID: 8575
+// Module ID: 7723
+// Function ID: 7724
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: [4427, 1074, 563, 2019, 2]
-// Exports: default, useShouldDisplaySpoilerObscurity
+// Dependencies: [4472, 1086, 558, 576, 573, 2027, 2]
+// Exports: default
 
-// Module 8574 (computeGlobalSpoilerDisplay)
-import PermissionStore from "PermissionStore" /* 4427 */;
+// Module 7723 (computeGlobalSpoilerDisplay)
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Constants = fn(1074);
+let c3;
+let closure_4;
 ({ Permissions: c3, SpoilerRenderSetting: closure_4 } = Constants);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/messages/computeGlobalSpoilerDisplay.tsx");
-
-export default function computeGlobalSpoilerDisplay(arg0, arg1) {
-  if (constants2.ALWAYS === arg0) {
-    return true;
-  } else if (tmp.IF_MODERATOR === arg0) {
-    return arg1;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
   } else {
-    const ON_CLICK = tmp.ON_CLICK;
-    return false;
+    first = cResult[0];
   }
-};
-export const useShouldDisplaySpoilerObscurity = function useShouldDisplaySpoilerObscurity(stateFromStores) {
-  _require = stateFromStores;
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      return PermissionStore.can(constants.MANAGE_MESSAGES, closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = require("useStateFromStores");
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  const RenderSpoilers = tmp(2027).RenderSpoilers;
+  const setting = RenderSpoilers.useSetting();
+  if (cResult[3] === stateFromStores) {
+    let tmp9;
+    if (cResult[4] === setting) {
+      tmp9 = cResult[5];
+    }
+    return !tmp9;
+  }
+  let flag = true;
+  if (constants2.ALWAYS !== setting) {
+    flag = stateFromStores;
+    if (constants2.IF_MODERATOR !== setting) {
+      const ON_CLICK = tmp10.ON_CLICK;
+      flag = false;
+    }
+  }
+  cResult[3] = stateFromStores;
+  cResult[4] = setting;
+  cResult[5] = flag;
+  tmp9 = flag;
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
   const items = [PermissionStore];
-  stateFromStores = require("useStateFromStores").useStateFromStores(items, () => PermissionStore.can(constants.MANAGE_MESSAGES, closure_0));
+  const obj = require("useStateFromStores");
+  const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(constants.MANAGE_MESSAGES, closure_0));
   const RenderSpoilers = require("UserSettings").RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
   let flag = true;
   if (constants2.ALWAYS !== setting) {
     flag = stateFromStores;
-    if (tmp3.IF_MODERATOR !== setting) {
+    if (constants2.IF_MODERATOR !== setting) {
       const ON_CLICK = tmp3.ON_CLICK;
       flag = false;
     }
   }
   return !flag;
-};
+});
+function computeGlobalSpoilerDisplay(arg0, arg1) {
+  if (constants2.ALWAYS === arg0) {
+    return true;
+  } else if (constants2.IF_MODERATOR === arg0) {
+    return arg1;
+  } else {
+    const ON_CLICK = tmp.ON_CLICK;
+    return false;
+  }
+}
+const result = size.fileFinishedImporting("modules/messages/computeGlobalSpoilerDisplay.tsx");
+
+export default computeGlobalSpoilerDisplay;
+export const useShouldDisplaySpoilerObscurity = tmp3;

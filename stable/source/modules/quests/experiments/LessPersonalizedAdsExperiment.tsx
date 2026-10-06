@@ -1,13 +1,14 @@
-// Module ID: 11574
-// Function ID: 11575
+// Module ID: 9768
+// Function ID: 9769
 // Name: LessPersonalizedAdsExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 11574 (LessPersonalizedAdsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 9768 (LessPersonalizedAdsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-01-less-personalized-ads", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+const obj = { name: "2026-01-less-personalized-ads", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/quests/experiments/LessPersonalizedAdsExperiment.tsx");
 
 export const LessPersonalizedAdsExperiment = apexExperiment;

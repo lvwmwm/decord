@@ -1,30 +1,27 @@
-// Module ID: 4939
-// Function ID: 4940
+// Module ID: 4988
+// Function ID: 4989
 // Name: WebViewWebmSupportTest
-// Dependencies: [1364, 4767, 2]
+// Dependencies: [1370, 4813, 2]
 // Exports: isIOSWithWebM
 
-// Module 4939 (WebViewWebmSupportTest)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+// Module 4988 (WebViewWebmSupportTest)
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
-const DeviceUtils = tmp(4767);
+let tmp;
+const DeviceUtils = tmp(4813);
 const ARM64_ = "ARM64_";
 const result = size.fileFinishedImporting("modules/messages/WebViewWebmSupportTest.native.tsx");
 
 export const isIOSWithWebM = function isIOSWithWebM() {
+  const obj = PlatformUtils;
   if (obj.isIOS()) {
-    const str = DeviceUtils.getSocName();
-    let tmp4 = null == str;
-    if (!tmp4) {
-      tmp4 = !str.startsWith(ARM64_);
-    }
+    const tmpResult = DeviceUtils;
+    const str = tmpResult.getSocName();
+    let tmp4 = null == str || !str.startsWith(ARM64_);
     if (!tmp4) {
       const str2 = str.substring(6);
-      let tmp6 = "T" !== str2[0];
-      if (tmp6) {
-        tmp6 = "S" !== str2[0];
-      }
+      let tmp6 = "T" !== str2[0] && "S" !== str2[0];
       if (!tmp6) {
         const substr = str2.substring(1);
         let tmp8 = "7" !== substr[0];
@@ -44,5 +41,4 @@ export const isIOSWithWebM = function isIOSWithWebM() {
   } else {
     return false;
   }
-  obj = PlatformUtils;
 };

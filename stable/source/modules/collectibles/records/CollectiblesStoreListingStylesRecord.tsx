@@ -1,43 +1,50 @@
-// Module ID: 7835
-// Function ID: 7836
+// Module ID: 6985
+// Function ID: 6986
 // Name: CollectiblesStoreListingStylesRecord
-// Dependencies: [1387, 7826, 1092, 2]
+// Dependencies: [1393, 6976, 1104, 2]
 
-// Module 7835 (CollectiblesStoreListingStylesRecord)
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import tinycolorDefault from "tinycolor" /* 7826 */;
-import Record from "Record" /* 1387 */;
+// Module 6985 (CollectiblesStoreListingStylesRecord)
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
+import _modDef6976 from "module_6976" /* 6976 */;
+import Record from "Record" /* 1393 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const prototype = function CollectiblesStoreListingStylesRecord(arg0) {
-  const tmp = new prototype(new.target, new.target);
-  ({ backgroundColors: tmp.backgroundColors, buttonColors: tmp.buttonColors, confettiColors: tmp.confettiColors } = arg0);
-  return tmp;
-}.prototype;
-class prototype extends tmp2 {
-}
-prototype["fromServer"] = function fromServer(arg0) {
-  ({ background_colors, button_colors, confetti_colors } = arg0);
-  const mapped = background_colors.map((item) => {
-    const tmp = tinycolorDefault;
-    return tmp(utils_ColorUtils.int2hex(item));
-  });
-  const mapped1 = button_colors.map((item) => {
-    const tmp = tinycolorDefault;
-    return tmp(utils_ColorUtils.int2hex(item));
-  });
-  if (typeof prototype === "function") {
-    const tmp9 = new prototype(tmp, confetti_colors, tmp2, new.target);
-    tmp9.backgroundColors = mapped;
-    tmp9.buttonColors = mapped1;
-    tmp9.confettiColors = tmp5;
-    return tmp9;
-  } else {
-    throw new TypeError("Trying to call a non-function");
+class CollectiblesStoreListingStylesRecord extends Record {
+  constructor(arg0) {
+    const tmp = new CollectiblesStoreListingStylesRecord(new.target, this);
+    ({ backgroundColors: tmp.backgroundColors, buttonColors: tmp.buttonColors, confettiColors: tmp.confettiColors } = arg0);
+    return tmp;
   }
-  tmp2 = prototype;
-};
-const size = fn(2);
+  static fromServer(arg0) {
+    let background_colors;
+    let button_colors;
+    let confetti_colors;
+    let tmp;
+    ({ background_colors, button_colors, confetti_colors } = arg0);
+    const mapped = background_colors.map((item) => {
+      const tmp = _modDef6976;
+      const obj = utils_ColorUtils;
+      return tmp(obj.int2hex(item));
+    });
+    const mapped1 = button_colors.map((item) => {
+      const tmp = _modDef6976;
+      const obj = utils_ColorUtils;
+      return tmp(obj.int2hex(item));
+    });
+    const tmp2 = CollectiblesStoreListingStylesRecord;
+    if (typeof CollectiblesStoreListingStylesRecord === "function") {
+      const self = this;
+      const self2 = this;
+      const tmp7 = new CollectiblesStoreListingStylesRecord(tmp, confetti_colors, tmp2, this);
+      tmp7.backgroundColors = mapped;
+      tmp7.buttonColors = mapped1;
+      tmp7.confettiColors = tmp5;
+      return tmp7;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+}
 const result = size.fileFinishedImporting("modules/collectibles/records/CollectiblesStoreListingStylesRecord.tsx");
 
-export default prototype;
+export default CollectiblesStoreListingStylesRecord;

@@ -1,45 +1,205 @@
-// Module ID: 11486
-// Function ID: 11487
+// Module ID: 10641
+// Function ID: 10642
 // Name: BadgeCatalogIcon
-// Dependencies: [32, 19, 17, 21, 5836, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 558, 576, 5896, 2]
 
-// Module 11486 (BadgeCatalogIcon)
-import FastImageDefault from "FastImage" /* 5836 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 10641 (BadgeCatalogIcon)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/badges/native/BadgeCatalogIcon.tsx");
+let _require, tmp;
 
-export default function BadgeCatalogIcon(style) {
+const f104352 = (item) => null != item;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let badge;
+  let style;
+  let tmp12;
+  let tmp3;
+  let tmp4;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  let obj = react2;
+  const cResult = obj.c(23);
+  ({ badge, size, style } = arg0);
+  if (cResult[0] !== badge) {
+    const items = [, , ];
+    ({ simple_icon_raster_url: arr[0], complex_icon_static_url: arr[1], complex_icon_animated_url: arr[2] } = badge);
+    const found = items.filter(f104352);
+    const joined = found.join("|");
+    cResult[0] = badge;
+    cResult[1] = joined;
+    cResult[2] = found;
+    tmp4 = found;
+    tmp3 = joined;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  if (cResult[3] !== tmp3) {
+    const obj2 = { urlsKey: tmp3, candidateIndex: 0 };
+    cResult[3] = tmp3;
+    cResult[4] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[4];
+  }
+  [tmp8, tmp9] = react.useState(tmp6);
+  _require = tmp9;
+  _slicedToArray(react.useState(tmp6), 2);
+  if (tmp8.urlsKey !== tmp3) {
+    const obj3 = { urlsKey: tmp3, candidateIndex: 0 };
+    tmp9(obj3);
+  }
+  const tmp11 = tmp4[tmp8.candidateIndex];
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+    cResult[5] = K;
+    tmp12 = K;
+  } else {
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+  }
+  if (cResult[6] !== size) {
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+    tmp14[0] = size;
+    tmp14[1] = size;
+    cResult[6] = size;
+    cResult[7] = tmp14;
+  } else {
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+  }
+  if (cResult[8] === style) {
+    let tmp24;
+    class K {
+      constructor() {
+        tmp = closure_0(() => { /* body not rendered: F139162 */ });
+        return;
+      }
+    }
+    if (null == tmp11) {
+      class K {
+        constructor() {
+          tmp = closure_0(() => { /* body not rendered: F139162 */ });
+          return;
+        }
+      }
+      tmp24 = tmp28;
+    } else {
+      class K {
+        constructor() {
+          tmp = closure_0(() => { /* body not rendered: F139162 */ });
+          return;
+        }
+      }
+      if (cResult[15] !== size) {
+        class K {
+          constructor() {
+            tmp = closure_0(() => { /* body not rendered: F139162 */ });
+            return;
+          }
+        }
+        tmp19[0] = size;
+        tmp19[1] = size;
+        cResult[15] = size;
+        cResult[16] = tmp19;
+      } else {
+        class K {
+          constructor() {
+            tmp = closure_0(() => { /* body not rendered: F139162 */ });
+            return;
+          }
+        }
+      }
+      if (cResult[17] === tmp17) {
+        class K {
+          constructor() {
+            tmp = closure_0(() => { /* body not rendered: F139162 */ });
+            return;
+          }
+        }
+        if (cResult[20] === tmp15) {
+          class K {
+            constructor() {
+              tmp = closure_0(() => { /* body not rendered: F139162 */ });
+              return;
+            }
+          }
+        }
+        const tmp27 = <View style={tmp15} aria-hidden>{tmp20}</View>;
+        cResult[20] = tmp15;
+        cResult[21] = tmp20;
+        cResult[22] = tmp27;
+        tmp24 = tmp27;
+      }
+      cResult[17] = tmp17;
+      cResult[18] = tmp18;
+      cResult[19] = jsx(FastImageDefault, { source: tmp17, style: tmp18, onError: tmp12 });
+      const tmp23 = jsx(FastImageDefault, { source: tmp17, style: tmp18, onError: tmp12 });
+    }
+    return tmp24;
+  }
+  const items1 = [tmp13, style];
+  cResult[8] = style;
+  cResult[9] = tmp13;
+  cResult[10] = items1;
+}) : ((style) => {
+  let badge;
+  let obj3;
+  let tmp3;
+  let tmp4;
   ({ badge, size } = style);
   const items = [, , ];
   ({ simple_icon_raster_url: arr[0], complex_icon_static_url: arr[1], complex_icon_animated_url: arr[2] } = badge);
-  const found = items.filter((item) => null != item);
+  style = style.style;
+  const found = items.filter(f104352);
   const joined = found.join("|");
-  [tmp3, tmp4] = noop.useState({ urlsKey: joined, candidateIndex: 0 });
-  c0 = tmp4;
+  [tmp3, tmp4] = react.useState({ urlsKey: joined, candidateIndex: 0 });
+  let c0 = tmp4;
+  _slicedToArray(react.useState({ urlsKey: joined, candidateIndex: 0 }), 2);
   if (tmp3.urlsKey !== joined) {
-    let obj = { urlsKey: joined, candidateIndex: 0 };
+    const obj = { urlsKey: joined, candidateIndex: 0 };
     tmp4(obj);
   }
   [][0] = tmp4;
-  const items1 = [{ width: size, height: size }, style.style];
+  const items1 = [{ width: size, height: size }, style];
   if (null == found[tmp3.candidateIndex]) {
+    obj3 = { style: items1, "aria-hidden": true };
     const obj2 = { style: items1, "aria-hidden": true };
-    let obj3 = obj2;
   } else {
     obj3 = { style: items1, "aria-hidden": true, children: null };
-    const obj4 = { source: null, style: null, onError: null };
-    const obj5 = { uri: tmp6 };
-    obj4.source = obj5;
     const size1 = { width: size, height: size };
-    obj4.style = size1;
-    obj4.onError = tmp7;
-    obj3.children = tmp8(FastImageDefault, obj4);
+    const obj5 = { uri: found[tmp3.candidateIndex] };
   }
-  return <View {...obj3} />;
-};
+  return <tmp9 {...obj3} />;
+});
+const result = size.fileFinishedImporting("modules/badges/native/BadgeCatalogIcon.tsx");
+
+export default tmp2;

@@ -1,9 +1,14 @@
 // Module ID: 13813
 // Function ID: 13814
-// Dependencies: [1121]
+// Dependencies: [13797, 13814]
 
 // Module 13813
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13797 from "module_13797" /* 13797 */;
+import _mod13814 from "module_13814" /* 13814 */;
 
+let closure_2 = _mod13797({}.hasOwnProperty);
+const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
+  return closure_2(_mod13814(arg0), arg1);
+});
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 375, height: 301, scales: [2, 3], hash: "c7a19747ab5ad0f69954f725ac48a489", name: "img_top_pattern_dark", type: "png" });
+export default tmp;

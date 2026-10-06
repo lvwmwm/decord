@@ -1,28 +1,32 @@
-// Module ID: 17894
-// Function ID: 17895
+// Module ID: 17257
+// Function ID: 17258
 // Name: SettingTreeCacheLifecycleManager
-// Dependencies: [7395, 14997, 2]
+// Dependencies: [6540, 14240, 2]
 
-// Module 17894 (SettingTreeCacheLifecycleManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 17257 (SettingTreeCacheLifecycleManager)
+import SettingTreeManagerDefault from "SettingTreeManager" /* 14240 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-const prototype = function SettingTreeManagerLifecycleManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  importDefault = applyArgumentsResult;
-  applyArgumentsResult.actions = {
-    POST_CONNECTION_OPEN() {
-      return applyArgumentsResult.handleConnectionOpen();
-    }
-  };
-  applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {
-    applyArgumentsResult(dependencyMap[1]).clearCaches();
-  };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+let importDefault;
+
+class SettingTreeManagerLifecycleManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    importDefault = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      POST_CONNECTION_OPEN() {
+        return importDefault.handleConnectionOpen();
+      }
+    };
+    applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {
+      const obj = SettingTreeManagerDefault;
+      obj.clearCaches();
+    };
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const settingTreeManagerLifecycleManager = new SettingTreeManagerLifecycleManager();
 const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingTreeCacheLifecycleManager.tsx");
 
-export default prototype1;
+export default settingTreeManagerLifecycleManager;

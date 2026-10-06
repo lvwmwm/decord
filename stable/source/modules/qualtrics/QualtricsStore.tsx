@@ -1,32 +1,35 @@
-// Module ID: 4983
-// Function ID: 4984
+// Module ID: 5032
+// Function ID: 5033
 // Name: QualtricsStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 4983 (QualtricsStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 5032 (QualtricsStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
 
 const obj = { surveys: new Map() };
-const Store = initializeDefault.Store;
+new Map();
+const Store = get_initializedDefault.Store;
 class QualtricsStore extends Store {
-}
-QualtricsStore.prototype["getSurvey"] = function getSurvey(arg0) {
-  const surveys = obj.surveys;
-  value = surveys.get(arg0);
-  if (value == null) {
-    value = null;
+  getSurvey(arg0) {
+    const surveys = obj.surveys;
+    let value = surveys.get(arg0);
+    if (value == null) {
+      value = null;
+    }
+    return value;
   }
-  return value;
-};
+}
+const prototype = QualtricsStore.prototype;
 QualtricsStore.displayName = "QualtricsStore";
-const qualtricsStore = new QualtricsStore(DispatcherDefault, {
+const obj2 = {
   QUALTRICS_SURVEY_FETCH_SUCCESS: function handleSurveyFetchSuccess(surveyId) {
     const surveys = obj.surveys;
     const result = surveys.set(surveyId.surveyId, surveyId.surveyDetails);
   }
-});
-const size = fn(2);
+};
+const qualtricsStore = new QualtricsStore(DispatcherDefault, obj2);
 let result = size.fileFinishedImporting("modules/qualtrics/QualtricsStore.tsx");
 
 export default qualtricsStore;

@@ -1,59 +1,74 @@
-// Module ID: 7611
-// Function ID: 7612
+// Module ID: 6756
+// Function ID: 6757
 // Name: StickerSendability
-// Dependencies: [2105, 5753, 1074, 4446, 5135, 4432, 2]
+// Dependencies: [2111, 5817, 1086, 4491, 5199, 4477, 2]
 // Exports: isSendableSticker
 
-// Module 7611 (StickerSendability)
-import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
-import StickersUtils from "StickersUtils" /* 5135 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import StickersPackStore from "StickersPackStore" /* 5753 */;
+// Module 6756 (StickerSendability)
+import Constants from "Constants" /* 1086 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import StickersUtils from "StickersUtils" /* 5199 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import StickersPackStore from "StickersPackStore" /* 5817 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function getStickerSendability(item10030, currentUser, channel) {
+  let obj;
   if (null == currentUser) {
     return obj.NONSENDABLE;
   } else {
-    const result = PremiumUtilsDefault.canUseCustomStickersEverywhere(currentUser);
+    let NONSENDABLE;
+    const obj4 = PremiumUtilsDefault;
+    const result = obj4.canUseCustomStickersEverywhere(currentUser);
+    const obj5 = StickersUtils;
+    const tmp19 = require;
     if (obj5.isStandardSticker(item10030)) {
+      let SENDABLE;
       if (null == StickersPackStore.getStickerPack(item10030.pack_id)) {
-        let SENDABLE2 = obj.NONSENDABLE;
+        SENDABLE = obj.NONSENDABLE;
       } else {
-        SENDABLE2 = obj.SENDABLE;
+        SENDABLE = obj.SENDABLE;
       }
+      NONSENDABLE = SENDABLE;
     } else {
-      if (tmp22Result.isGuildSticker(item10030)) {
+      const tmp19Result = tmp19(5199);
+      if (tmp19Result.isGuildSticker(item10030)) {
         if (null != channel) {
+          let SENDABLE_WITH_BOOSTED_GUILD;
           if (null == GuildMemberStore.getSelfMember(item10030.guild_id)) {
-            let SENDABLE_WITH_BOOSTED_GUILD = obj.NONSENDABLE;
+            SENDABLE_WITH_BOOSTED_GUILD = obj.NONSENDABLE;
           } else if (item10030.available) {
+            let NONSENDABLE2;
             if (null != channel.guild_id) {
               if ("" !== channel.guild_id) {
-                const SENDABLE = obj.SENDABLE;
+                if (channel.guild_id === item10030.guild_id) {
+                  NONSENDABLE2 = obj.SENDABLE;
+                }
+                SENDABLE_WITH_BOOSTED_GUILD = NONSENDABLE2;
               }
             }
             if (null != channel.guild_id) {
               obj = { permission: Permissions.USE_EXTERNAL_STICKERS, user: currentUser, context: channel };
+              const obj2 = PermissionUtilsAll;
               if (!obj2.can(obj)) {
-                const NONSENDABLE = obj.NONSENDABLE;
+                NONSENDABLE2 = obj.NONSENDABLE;
               }
-              obj2 = PermissionUtilsAll;
             }
+            NONSENDABLE2 = result ? tmp8.SENDABLE : tmp8.SENDABLE_WITH_PREMIUM;
           } else {
             SENDABLE_WITH_BOOSTED_GUILD = obj.SENDABLE_WITH_BOOSTED_GUILD;
           }
+          NONSENDABLE = SENDABLE_WITH_BOOSTED_GUILD;
         }
       }
-      return obj.NONSENDABLE;
+      NONSENDABLE = obj.NONSENDABLE;
     }
-    obj5 = StickersUtils;
+    return NONSENDABLE;
   }
 }
-const Permissions = fn(1074).Permissions;
+const Permissions = Constants.Permissions;
 const StickerSendability = { SENDABLE: 0, [0]: "SENDABLE", SENDABLE_WITH_PREMIUM: 1, [1]: "SENDABLE_WITH_PREMIUM", NONSENDABLE: 2, [2]: "NONSENDABLE", SENDABLE_WITH_BOOSTED_GUILD: 3, [3]: "SENDABLE_WITH_BOOSTED_GUILD" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/stickers/StickerSendability.tsx");
 
 export { StickerSendability };

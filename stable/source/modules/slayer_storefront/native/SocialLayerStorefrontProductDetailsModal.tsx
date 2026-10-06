@@ -1,36 +1,274 @@
-// Module ID: 11095
-// Function ID: 11096
+// Module ID: 10302
+// Function ID: 10303
 // Name: SocialLayerStorefrontProductDetailsModal
-// Dependencies: [32, 19, 17, 5759, 7505, 11096, 1074, 21, 672, 576, 4788, 5931, 11097, 8610, 5836, 4784, 1115, 11098, 1177, 2009, 5029, 1612, 5374, 9512, 504, 7445, 7442, 7503, 7459, 5235, 1241, 11093, 11094, 1364, 4459, 11099, 9511, 11100, 11104, 7508, 9138, 11108, 3580, 5218, 8211, 8373, 11111, 5880, 5929, 5230, 11113, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 5823, 6650, 10303, 1086, 21, 684, 588, 4837, 5991, 10304, 558, 576, 7759, 5896, 4833, 1127, 10305, 1189, 2017, 5093, 1619, 5439, 8664, 504, 6590, 6587, 6648, 6604, 1253, 10300, 5297, 10301, 1370, 4504, 10306, 8663, 10307, 10311, 6653, 8285, 10315, 3588, 5282, 7362, 7530, 10318, 5940, 5942, 5292, 10320, 2]
 
-// Module 11095 (SocialLayerStorefrontProductDetailsModal)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import StringUtils from "StringUtils" /* 2009 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import StoreUtils from "StoreUtils" /* 5029 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import XSmallIcon from "XSmallIcon" /* 5929 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7503 */;
-import common_Video from "common/Video" /* 8610 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11093 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 11094 */;
-import carouselMediaItems from "carouselMediaItems" /* 11097 */;
-import StorefrontNativeUtils from "StorefrontNativeUtils" /* 11098 */;
-import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 11099 */;
-import NativePaymentContext from "NativePaymentContext" /* 11113 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import SKUStore from "SKUStore" /* 5759 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7505 */;
-import n_mod from "module_672" /* 672 */;
+// Module 10302 (SocialLayerStorefrontProductDetailsModal)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import StringUtils from "StringUtils" /* 2017 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4504 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import StoreUtils from "StoreUtils" /* 5093 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import XSmallIcon from "XSmallIcon" /* 5940 */;
+import NavigatorConstants from "NavigatorConstants" /* 5991 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6648 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10300 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10301 */;
+import SocialLayerStorefrontAnalyticsConstants from "SocialLayerStorefrontAnalyticsConstants" /* 10303 */;
+import carouselMediaItems from "carouselMediaItems" /* 10304 */;
+import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10305 */;
+import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 10306 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import SKUStore from "SKUStore" /* 5823 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6650 */;
+import Constants from "Constants" /* 1086 */;
+import Fragment from "Fragment" /* 21 */;
+import module_684_mod from "module_684" /* 684 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-function HeroMedia(arg0) {
+let applicationId, closure_0, dependencyMap, importDefault, location_stack, obj1, sku, skuId, trackResult;
+
+let closure_12;
+let closure_14;
+let closure_15;
+let hasOwnProperty;
+let map1;
+let metroImportDefault;
+let metroRequire;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
+let obj16;
+let obj17;
+let obj18;
+let obj19;
+let obj2;
+let obj20;
+let obj21;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+let size;
+let size1;
+let tmp;
+let unpackModuleId;
+const common_Video = tmp(7759);
+const NativePaymentContext = tmp(10320);
+let react = react_mod;
+({ ScrollView: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
+const SlayerShopPDPCTAType = SocialLayerStorefrontAnalyticsConstants.SlayerShopPDPCTAType;
+({ AnalyticEvents: unpackModuleId, PaymentGateways: closure_12, PriceSetAssignmentPurchaseTypes: map1 } = Constants);
+({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+let module_684 = module_684_mod;
+const importDefaultResultResult = module_684(nativeDefault.unsafe_rawColors.BRAND_500);
+const alphaResult = importDefaultResultResult.alpha(0.25);
+let closure_16 = alphaResult.hex();
+module_684 = module_684_mod;
+const importDefaultResult1Result = module_684(nativeDefault.unsafe_rawColors.BRAND_500);
+const alphaResult1 = importDefaultResult1Result.alpha(0);
+let closure_17 = alphaResult1.hex();
+let createStyles = createStyles_mod;
+let obj = { container: { flex: 1 }, header: obj2, headerTitle: { flexShrink: 1 }, closeButtonIcon: obj3, scrollContent: obj4, scrollContainer: { flex: 1 }, columnsLandscape: obj5, heroColumnLandscape: { flex: 1 }, heroColumnContentLandscape: obj6, bundleGroupLandscape: obj7, detailsScrollLandscape: { flex: 1 }, detailsContentLandscape: { flexGrow: 1, justifyContent: "space-between", paddingBottom: 0 }, detailsGroupLandscape: obj8, section: obj9, bundleThumbnailRow: obj10, thumbnail: size, thumbnailSelected: obj11, thumbnailInner: obj12, thumbnailInnerSelected: obj13, thumbnailImage: { width: "100%", height: "100%" }, labelRow: obj14, labelIcon: size1, priceRow: obj15, footer: obj16, footerButtonRow: obj17, buyButton: { flex: 1 }, availabilityCopy: { textAlign: "center" }, legalCopy: obj18, hero: obj19, heroLandscape: { flex: 1, minHeight: 140, height: "code" }, priceSection: obj20, heroImage: { width: "100%", height: "100%" }, exclusiveBadgeContainer: obj21 };
+obj2 = { height: NavigatorConstants.NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
+createStyles = createStyles.createStyles;
+obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
+obj4 = { alignItems: "stretch", gap: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16 };
+obj5 = { flex: 1, flexDirection: "row", gap: nativeDefault.space.PX_16 };
+obj6 = { flexGrow: 1, gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16 };
+obj7 = { gap: nativeDefault.space.PX_4 };
+obj8 = { gap: nativeDefault.space.PX_16 };
+obj9 = { width: "100%", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
+obj10 = { flexDirection: "row", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4 };
+size = { width: 64, height: 64, borderRadius: nativeDefault.radii.md, borderWidth: 2, borderColor: "transparent" };
+obj11 = { borderColor: nativeDefault.colors.BORDER_STRONG };
+obj12 = { flex: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+obj13 = { margin: 2, borderRadius: nativeDefault.radii.sm };
+obj14 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+size1 = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16 };
+obj15 = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
+obj16 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+obj17 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj18 = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_4 };
+obj19 = { marginHorizontal: nativeDefault.space.PX_16, height: carouselMediaItems.MOBILE_HERO_HEIGHT_PX, borderRadius: nativeDefault.radii.md, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+obj20 = { width: "100%", gap: nativeDefault.space.PX_8 };
+obj21 = { paddingHorizontal: nativeDefault.space.PX_16 };
+let closure_18 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  let landscape;
+  let mediaItem;
+  let obj6;
+  const obj = react2;
+  const cResult = obj.c(31);
+  ({ mediaItem, landscape } = arg0);
+  const tmp4 = closure_18();
+  if (landscape) {
+    landscape = tmp4.heroLandscape;
+  }
+  if (cResult[0] === tmp4.hero) {
+    let tmp5;
+    let tmp11;
+    if (cResult[1] === landscape) {
+      tmp5 = cResult[2];
+    }
+    if ("video" === mediaItem.type) {
+      let tmp29;
+      if (cResult[3] !== mediaItem.src) {
+        const obj2 = { uri: mediaItem.src };
+        cResult[3] = mediaItem.src;
+        cResult[4] = obj2;
+        tmp29 = obj2;
+      } else {
+        tmp29 = cResult[4];
+      }
+      if (cResult[5] === mediaItem.videoThumbnailSrc) {
+        if (cResult[6] === tmp4.heroImage) {
+          let tmp30;
+          if (cResult[7] === tmp29) {
+            tmp30 = cResult[8];
+          }
+          if (cResult[9] === tmp5) {
+            let tmp33;
+            if (cResult[10] === tmp30) {
+              tmp33 = cResult[11];
+            }
+            tmp11 = tmp33;
+          }
+          const obj3 = { style: tmp5, children: tmp30 };
+          const tmp36 = authStore2(metroImportDefault, obj3);
+          cResult[9] = tmp5;
+          cResult[10] = tmp30;
+          cResult[11] = tmp36;
+          tmp33 = tmp36;
+        }
+      }
+      const obj4 = { source: tmp29, poster: mediaItem.videoThumbnailSrc, muted: true, resizeMode: "cover", style: tmp4.heroImage };
+      const tmp32 = authStore2(common_Video.VideoComponent, obj4);
+      cResult[5] = mediaItem.videoThumbnailSrc;
+      cResult[6] = tmp4.heroImage;
+      cResult[7] = tmp29;
+      cResult[8] = tmp32;
+      tmp30 = tmp32;
+    } else if (null != mediaItem.backgroundSrc) {
+      let tmp15;
+      let tmp20;
+      if (cResult[12] !== mediaItem.backgroundSrc) {
+        const obj5 = { source: obj6, style: metroRequire.absoluteFill, resizeMode: "cover" };
+        obj6 = { uri: mediaItem.backgroundSrc };
+        const tmp19 = authStore2(FastImageDefault, obj5);
+        cResult[12] = mediaItem.backgroundSrc;
+        cResult[13] = tmp19;
+        tmp15 = tmp19;
+      } else {
+        tmp15 = cResult[13];
+      }
+      if (cResult[14] !== mediaItem.src) {
+        const obj7 = { uri: mediaItem.src };
+        cResult[14] = mediaItem.src;
+        cResult[15] = obj7;
+        tmp20 = obj7;
+      } else {
+        tmp20 = cResult[15];
+      }
+      if (cResult[16] === tmp4.heroImage) {
+        let tmp21;
+        if (cResult[17] === tmp20) {
+          tmp21 = cResult[18];
+        }
+        if (cResult[19] === tmp5) {
+          if (cResult[20] === tmp15) {
+            let tmp25;
+            if (cResult[21] === tmp21) {
+              tmp25 = cResult[22];
+            }
+            tmp11 = tmp25;
+          }
+        }
+        const obj8 = { style: tmp5, children: items };
+        items = [tmp15, tmp21];
+        const tmp28 = closure_15(metroImportDefault, obj8);
+        cResult[19] = tmp5;
+        cResult[20] = tmp15;
+        cResult[21] = tmp21;
+        cResult[22] = tmp28;
+        tmp25 = tmp28;
+      }
+      const obj9 = { source: tmp20, style: tmp4.heroImage, resizeMode: "cover" };
+      const tmp24 = authStore2(FastImageDefault, obj9);
+      cResult[16] = tmp4.heroImage;
+      cResult[17] = tmp20;
+      cResult[18] = tmp24;
+      tmp21 = tmp24;
+    } else {
+      let tmp6;
+      if (cResult[23] !== mediaItem.src) {
+        const obj10 = { uri: mediaItem.src };
+        cResult[23] = mediaItem.src;
+        cResult[24] = obj10;
+        tmp6 = obj10;
+      } else {
+        tmp6 = cResult[24];
+      }
+      if (cResult[25] === tmp4.heroImage) {
+        let tmp7;
+        if (cResult[26] === tmp6) {
+          tmp7 = cResult[27];
+        }
+        if (cResult[28] === tmp5) {
+          if (cResult[29] === tmp7) {
+            tmp11 = cResult[30];
+          }
+        }
+        const obj11 = { style: tmp5, children: tmp7 };
+        const tmp14 = authStore2(metroImportDefault, obj11);
+        cResult[28] = tmp5;
+        cResult[29] = tmp7;
+        cResult[30] = tmp14;
+        tmp11 = tmp14;
+      }
+      const obj12 = { source: tmp6, style: tmp4.heroImage, resizeMode: "cover" };
+      const tmp10 = authStore2(FastImageDefault, obj12);
+      cResult[25] = tmp4.heroImage;
+      cResult[26] = tmp6;
+      cResult[27] = tmp10;
+      tmp7 = tmp10;
+    }
+    return tmp11;
+  }
+  const items1 = [tmp4.hero, landscape];
+  cResult[0] = tmp4.hero;
+  cResult[1] = landscape;
+  cResult[2] = items1;
+  tmp5 = items1;
+}) : ((arg0) => {
+  let items1;
+  let landscape;
+  let mediaItem;
+  let obj10;
+  let obj11;
+  let obj3;
+  let obj4;
+  let obj7;
+  let obj9;
+  let tmp6;
   ({ mediaItem, landscape } = arg0);
   const tmp = closure_18();
   const items = [tmp.hero, ];
@@ -39,162 +277,808 @@ function HeroMedia(arg0) {
   }
   items[1] = landscape;
   if ("video" === mediaItem.type) {
-    const obj2 = { style: items, children: null };
-    const obj3 = { source: null, poster: null, muted: true, resizeMode: "cover", style: null };
-    const obj4 = { uri: mediaItem.src };
-    obj3.source = obj4;
-    obj3.poster = mediaItem.videoThumbnailSrc;
-    obj3.style = tmp.heroImage;
-    obj2.children = closure_1_14(common_Video.VideoComponent, obj3);
-    let tmp6 = closure_1_14(React5, obj2);
+    const obj2 = { style: items, children: authStore2(common_Video.VideoComponent, obj3) };
+    obj3 = { source: obj4, poster: mediaItem.videoThumbnailSrc, muted: true, resizeMode: "cover", style: tmp.heroImage };
+    obj4 = { uri: mediaItem.src };
+    tmp6 = authStore2(metroImportDefault, obj2);
   } else if (null != mediaItem.backgroundSrc) {
-    const obj5 = { style: items, children: null };
-    const obj6 = { source: null, style: null, resizeMode: "cover" };
-    const obj7 = { uri: mediaItem.backgroundSrc };
-    obj6.source = obj7;
-    obj6.style = absoluteFill.absoluteFill;
-    const items1 = [closure_1_14(FastImageDefault, obj6), ];
-    const obj8 = { source: null, style: null, resizeMode: "cover" };
-    const obj9 = { uri: mediaItem.src };
-    obj8.source = obj9;
-    obj8.style = tmp.heroImage;
-    items1[1] = closure_1_14(FastImageDefault, obj8);
-    obj5.children = items1;
-    tmp6 = __initData(React5, obj5);
+    const obj6 = { source: obj7, style: metroRequire.absoluteFill, resizeMode: "cover" };
+    const obj5 = { style: items, children: items1 };
+    obj7 = { uri: mediaItem.backgroundSrc };
+    items1 = [authStore2(FastImageDefault, obj6), ];
+    const obj8 = { source: obj9, style: tmp.heroImage, resizeMode: "cover" };
+    obj9 = { uri: mediaItem.src };
+    items1[1] = authStore2(FastImageDefault, obj8);
+    tmp6 = closure_15(metroImportDefault, obj5);
   } else {
-    const obj = { style: items, children: null };
-    const obj10 = { source: null, style: null, resizeMode: "cover" };
-    const obj11 = { uri: mediaItem.src };
-    obj10.source = obj11;
-    obj10.style = tmp.heroImage;
-    obj.children = closure_1_14(FastImageDefault, obj10);
-    tmp6 = closure_1_14(React5, obj);
+    const obj = { style: items, children: authStore2(FastImageDefault, obj10) };
+    obj10 = { source: obj11, style: tmp.heroImage, resizeMode: "cover" };
+    obj11 = { uri: mediaItem.src };
+    tmp6 = authStore2(metroImportDefault, obj);
   }
   return tmp6;
-}
-function InGameItemTag() {
-  const obj = { variant: "text-sm/medium", color: "text-muted", children: null };
-  const intl = util.intl;
-  obj.children = intl.string(util.t.V91tvy);
-  return closure_1_14(Text_Text.Text, obj);
-}
-function ProductPriceSection(sku) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { variant: "text-sm/medium", color: "text-muted", children: intl.string(intl5.t.V91tvy) };
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
+    const tmp6 = authStore2(Text, obj2);
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  let intl;
+  const obj = { variant: "text-sm/medium", color: "text-muted", children: intl.string(intl5.t.V91tvy) };
+  const Text = Text_Text.Text;
+  intl = intl5.intl;
+  return authStore2(Text, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
+  let items;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(11);
+  sku = sku.sku;
+  const tmp4 = closure_18();
+  if (cResult[0] !== sku) {
+    const obj2 = { sku, priceSetAssignmentPurchaseType: map1.DEFAULT };
+    cResult[0] = sku;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmpResult = StorefrontNativeUtils;
+  const userPrice = tmpResult.useFormattedSKUPrice(tmp5).userPrice;
+  let tmp7 = null;
+  if (null != userPrice) {
+    let tmp9;
+    let tmp13;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp12 = authStore2(closure_20, {});
+      cResult[2] = tmp12;
+      tmp9 = tmp12;
+    } else {
+      tmp9 = cResult[2];
+    }
+    if (cResult[3] !== userPrice) {
+      const obj3 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: userPrice };
+      const tmp15 = authStore2(Text_Text.Text, obj3);
+      cResult[3] = userPrice;
+      cResult[4] = tmp15;
+      tmp13 = tmp15;
+    } else {
+      tmp13 = cResult[4];
+    }
+    if (cResult[5] === tmp4.priceRow) {
+      let tmp16;
+      if (cResult[6] === tmp13) {
+        tmp16 = cResult[7];
+      }
+      if (cResult[8] === tmp4.priceSection) {
+        let tmp20;
+        if (cResult[9] === tmp16) {
+          tmp20 = cResult[10];
+        }
+        tmp7 = tmp20;
+      }
+      const obj4 = { style: tmp4.priceSection, children: items };
+      items = [tmp9, tmp16];
+      const tmp23 = closure_15(metroImportDefault, obj4);
+      cResult[8] = tmp4.priceSection;
+      cResult[9] = tmp16;
+      cResult[10] = tmp23;
+      tmp20 = tmp23;
+    }
+    const obj5 = { style: tmp4.priceRow, children: tmp13 };
+    const tmp19 = authStore2(metroImportDefault, obj5);
+    cResult[5] = tmp4.priceRow;
+    cResult[6] = tmp13;
+    cResult[7] = tmp19;
+    tmp16 = tmp19;
+  }
+  return tmp7;
+}) : ((sku) => {
+  let items;
+  let obj5;
+  sku = sku.sku;
   const tmp = closure_18();
-  const userPrice = StorefrontNativeUtils.useFormattedSKUPrice({ sku: sku.sku, priceSetAssignmentPurchaseType: constants3.DEFAULT }).userPrice;
+  const obj = StorefrontNativeUtils;
+  const obj2 = { sku, priceSetAssignmentPurchaseType: map1.DEFAULT };
+  const userPrice = obj.useFormattedSKUPrice(obj2).userPrice;
   let tmp4 = null;
   if (null != userPrice) {
-    const obj3 = { style: tmp.priceSection, children: null };
-    const items = [closure_1_14(InGameItemTag, {}), ];
-    const obj4 = { style: tmp.priceRow, children: null };
-    const obj5 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: userPrice };
-    obj4.children = closure_1_14(Text_Text.Text, obj5);
-    items[1] = closure_1_14(React5, obj4);
-    obj3.children = items;
-    tmp4 = __initData(React5, obj3);
+    const obj3 = { style: tmp.priceSection, children: items };
+    items = [authStore2(closure_20, {}), ];
+    const obj4 = { style: tmp.priceRow, children: authStore2(Text_Text.Text, obj5) };
+    obj5 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: userPrice };
+    items[1] = authStore2(metroImportDefault, obj4);
+    tmp4 = closure_15(metroImportDefault, obj3);
   }
   return tmp4;
-}
-function BundleThumbnailRow(trackPDPClick) {
-  ({ items: require, mediaItems, selectedIndex: importDefault, onSelectIndex } = trackPDPClick);
-  trackPDPClick = trackPDPClick.trackPDPClick;
-  const tmp = closure_18();
-  noop = tmp;
-  let items = [onSelectIndex, trackPDPClick];
-  closure_5 = noop.useCallback((arg0) => {
-    trackPDPClick(SlayerShopPDPCTAType.CAROUSEL_ITEM);
-    onSelectIndex(arg0);
-  }, items);
-  let obj = { style: tmp.section, children: null };
-  let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: null };
-  const intl = require("util").intl;
-  obj2.children = intl.string(require("util").t.U7DAV9);
-  let items1 = [
-    closure_14(require("Text/Text").Text, obj2),
-    closure_14(closure_5, {
-      horizontal: true,
-      showsHorizontalScrollIndicator: false,
-      contentContainerStyle: tmp.bundleThumbnailRow,
-      children: mediaItems.map((item, index) => {
-        dependencyMap = index;
-        let label;
-        if (dependencyMap[index] != null) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectIndex) => {
+  let intl;
+  let items;
+  let items1;
+  let mediaItems;
+  let selectedIndex;
+  let thumbnail;
+  let tmp10;
+  const tmp = items;
+  let tmp2 = onSelectIndex;
+  let obj = items(onSelectIndex[14]);
+  const cResult = obj.c(29);
+  items = onSelectIndex.items;
+  ({ mediaItems, selectedIndex } = onSelectIndex);
+  onSelectIndex = onSelectIndex.onSelectIndex;
+  const trackPDPClick = onSelectIndex.trackPDPClick;
+  let tmp4 = closure_18();
+  react = tmp4;
+  if (cResult[0] === onSelectIndex) {
+    let tmp5;
+    let tmp7;
+    let tmp11;
+    if (cResult[1] === trackPDPClick) {
+      tmp5 = cResult[2];
+    }
+    let closure_5 = tmp5;
+    const _Symbol = Symbol;
+    const section = tmp4.section;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp8 = closure_14;
+      let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(tmp(tmp2[18]).t.U7DAV9) };
+      const Text = tmp(tmp2[17]).Text;
+      intl = tmp(tmp2[18]).intl;
+      let tmp9 = closure_14(Text, obj2);
+      cResult[3] = tmp9;
+      tmp7 = tmp9;
+    } else {
+      tmp7 = cResult[3];
+    }
+    if (cResult[4] === tmp5) {
+      if (cResult[5] === items) {
+        if (cResult[6] === mediaItems) {
+          if (cResult[7] === selectedIndex) {
+            if (cResult[8] === tmp4.thumbnail) {
+              if (cResult[9] === tmp4.thumbnailImage) {
+                if (cResult[10] === tmp4.thumbnailInner) {
+                  if (cResult[11] === tmp4.thumbnailInnerSelected) {
+                    if (cResult[12] === tmp4.thumbnailSelected) {
+                      tmp11 = cResult[13];
+                    }
+                    if (cResult[23] === tmp4.bundleThumbnailRow) {
+                      let tmp14;
+                      if (cResult[24] === tmp11) {
+                        tmp14 = cResult[25];
+                      }
+                      if (cResult[26] === tmp4.section) {
+                        let tmp18;
+                        if (cResult[27] === tmp14) {
+                          tmp18 = cResult[28];
+                        }
+                        return tmp18;
+                      }
+                      let obj3 = { style: section, children: items1 };
+                      items1 = [tmp7, tmp14];
+                      class P {
+                        constructor(arg0, arg1) {
+                          closure_0 = arg1;
+                          tmp = closure_0[arg1];
+                          tmp3 = closure_1_14;
+                          tmp5 = onSelectIndex;
+                          tmp2 = selectedIndex;
+                          tmp4 = items;
+                          label = undefined;
+                          PressableOpacity = items(onSelectIndex[20]).PressableOpacity;
+                          if (tmp != null) {
+                            label = tmp.label;
+                          }
+                          if (label == null) {
+                            title = undefined;
+                            if (tmp != null) {
+                              title = tmp.title;
+                            }
+                            label = title;
+                          }
+                          thumbnailInnerSelected = arg1 === tmp2;
+                          obj = {
+                            accessibilityRole: "button",
+                            accessibilityLabel: label,
+                            accessibilityState: { selected: thumbnailInnerSelected },
+                            onPress() {
+                                                      return closure_5(closure_0);
+                                                    },
+                            style: null,
+                            children: null
+                          };
+                          tmp8 = closure_4;
+                          items = [, ];
+                          items[0] = closure_4.thumbnail;
+                          items[1] = thumbnailInnerSelected && tmp8.thumbnailSelected;
+                          obj.style = items;
+                          items1 = [, ];
+                          items1[0] = tmp8.thumbnailInner;
+                          tmp9 = closure_1_7;
+                          if (thumbnailInnerSelected) {
+                            thumbnailInnerSelected = tmp8.thumbnailInnerSelected;
+                          }
+                          obj1 = { style: items1, children: null };
+                          items1[1] = thumbnailInnerSelected;
+                          obj6 = { source: null, style: null, resizeMode: "cover" };
+                          obj7 = { uri: null };
+                          tmp10 = selectedIndex(tmp5[16]);
+                          tmp4Result = tmp4(tmp5[12]);
+                          obj7.uri = tmp4Result.getThumbnailSrc(onSelectIndex);
+                          obj6.source = obj7;
+                          obj6.style = tmp8.thumbnailImage;
+                          obj1.children = tmp3(tmp10, obj6);
+                          obj.children = tmp3(tmp9, obj1);
+                          return tmp3(PressableOpacity, obj, arg1);
+                        }
+                      }
+                      cResult[26] = tmp4.section;
+                      cResult[27] = tmp14;
+                      cResult[28] = tmp21;
+                      tmp18 = tmp21;
+                    }
+                    let obj4 = { horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: tmp10, children: tmp11 };
+                    const tmp17 = closure_14(closure_5, obj4);
+                    cResult[23] = tmp4.bundleThumbnailRow;
+                    class P {
+                      constructor(arg0, arg1) {
+                        closure_0 = arg1;
+                        tmp = closure_0[arg1];
+                        tmp3 = closure_1_14;
+                        tmp5 = onSelectIndex;
+                        tmp2 = selectedIndex;
+                        tmp4 = items;
+                        label = undefined;
+                        PressableOpacity = items(onSelectIndex[20]).PressableOpacity;
+                        if (tmp != null) {
+                          label = tmp.label;
+                        }
+                        if (label == null) {
+                          title = undefined;
+                          if (tmp != null) {
+                            title = tmp.title;
+                          }
+                          label = title;
+                        }
+                        thumbnailInnerSelected = arg1 === tmp2;
+                        obj = {
+                          accessibilityRole: "button",
+                          accessibilityLabel: label,
+                          accessibilityState: { selected: thumbnailInnerSelected },
+                          onPress() {
+                                                  return closure_5(closure_0);
+                                                },
+                          style: null,
+                          children: null
+                        };
+                        tmp8 = closure_4;
+                        items = [, ];
+                        items[0] = closure_4.thumbnail;
+                        items[1] = thumbnailInnerSelected && tmp8.thumbnailSelected;
+                        obj.style = items;
+                        items1 = [, ];
+                        items1[0] = tmp8.thumbnailInner;
+                        tmp9 = closure_1_7;
+                        if (thumbnailInnerSelected) {
+                          thumbnailInnerSelected = tmp8.thumbnailInnerSelected;
+                        }
+                        obj1 = { style: items1, children: null };
+                        items1[1] = thumbnailInnerSelected;
+                        obj6 = { source: null, style: null, resizeMode: "cover" };
+                        obj7 = { uri: null };
+                        tmp10 = selectedIndex(tmp5[16]);
+                        tmp4Result = tmp4(tmp5[12]);
+                        obj7.uri = tmp4Result.getThumbnailSrc(onSelectIndex);
+                        obj6.source = obj7;
+                        obj6.style = tmp8.thumbnailImage;
+                        obj1.children = tmp3(tmp10, obj6);
+                        obj.children = tmp3(tmp9, obj1);
+                        return tmp3(PressableOpacity, obj, arg1);
+                      }
+                    }
+                    cResult[24] = tmp11;
+                    cResult[25] = tmp17;
+                    tmp14 = tmp17;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    if (cResult[14] === tmp5) {
+      if (cResult[15] === items) {
+        if (cResult[16] === selectedIndex) {
+          if (cResult[17] === tmp4.thumbnail) {
+            if (cResult[18] === tmp4.thumbnailImage) {
+              if (cResult[19] === tmp4.thumbnailInner) {
+                if (cResult[20] === tmp4.thumbnailInnerSelected) {
+                  let tmp12;
+                  if (cResult[21] === tmp4.thumbnailSelected) {
+                    tmp12 = cResult[22];
+                  }
+                  const mapped = mediaItems.map(tmp12);
+                  cResult[4] = tmp5;
+                  cResult[5] = items;
+                  cResult[6] = mediaItems;
+                  cResult[7] = selectedIndex;
+                  class P {
+                    constructor(arg0, arg1) {
+                      closure_0 = arg1;
+                      tmp = closure_0[arg1];
+                      tmp3 = closure_1_14;
+                      tmp5 = onSelectIndex;
+                      tmp2 = selectedIndex;
+                      tmp4 = items;
+                      label = undefined;
+                      PressableOpacity = items(onSelectIndex[20]).PressableOpacity;
+                      if (tmp != null) {
+                        label = tmp.label;
+                      }
+                      if (label == null) {
+                        title = undefined;
+                        if (tmp != null) {
+                          title = tmp.title;
+                        }
+                        label = title;
+                      }
+                      thumbnailInnerSelected = arg1 === tmp2;
+                      obj = {
+                        accessibilityRole: "button",
+                        accessibilityLabel: label,
+                        accessibilityState: { selected: thumbnailInnerSelected },
+                        onPress() {
+                                              return closure_5(closure_0);
+                                            },
+                        style: null,
+                        children: null
+                      };
+                      tmp8 = closure_4;
+                      items = [, ];
+                      items[0] = closure_4.thumbnail;
+                      items[1] = thumbnailInnerSelected && tmp8.thumbnailSelected;
+                      obj.style = items;
+                      items1 = [, ];
+                      items1[0] = tmp8.thumbnailInner;
+                      tmp9 = closure_1_7;
+                      if (thumbnailInnerSelected) {
+                        thumbnailInnerSelected = tmp8.thumbnailInnerSelected;
+                      }
+                      obj1 = { style: items1, children: null };
+                      items1[1] = thumbnailInnerSelected;
+                      obj6 = { source: null, style: null, resizeMode: "cover" };
+                      obj7 = { uri: null };
+                      tmp10 = selectedIndex(tmp5[16]);
+                      tmp4Result = tmp4(tmp5[12]);
+                      obj7.uri = tmp4Result.getThumbnailSrc(onSelectIndex);
+                      obj6.source = obj7;
+                      obj6.style = tmp8.thumbnailImage;
+                      obj1.children = tmp3(tmp10, obj6);
+                      obj.children = tmp3(tmp9, obj1);
+                      return tmp3(PressableOpacity, obj, arg1);
+                    }
+                  }
+                  cResult[8] = tmp4.thumbnail;
+                  cResult[9] = tmp4.thumbnailImage;
+                  cResult[10] = tmp4.thumbnailInner;
+                  cResult[11] = tmp4.thumbnailInnerSelected;
+                  cResult[12] = tmp4.thumbnailSelected;
+                  cResult[13] = mapped;
+                  tmp11 = mapped;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    class P {
+      constructor(arg0, arg1) {
+        closure_0 = arg1;
+        tmp = closure_0[arg1];
+        tmp3 = closure_1_14;
+        tmp5 = onSelectIndex;
+        tmp2 = selectedIndex;
+        tmp4 = items;
+        label = undefined;
+        PressableOpacity = items(onSelectIndex[20]).PressableOpacity;
+        if (tmp != null) {
           label = tmp.label;
         }
         if (label == null) {
-          let title;
+          title = undefined;
           if (tmp != null) {
             title = tmp.title;
           }
           label = title;
         }
-        let thumbnailInnerSelected = index === closure_1;
-        const obj = {
+        thumbnailInnerSelected = arg1 === tmp2;
+        obj = {
           accessibilityRole: "button",
           accessibilityLabel: label,
           accessibilityState: { selected: thumbnailInnerSelected },
           onPress() {
-            return closure_5(closure_0);
-          },
+                  return closure_5(closure_0);
+                },
           style: null,
           children: null
         };
-        const items = [thumbnail.thumbnail, ];
-        let thumbnailSelected = thumbnailInnerSelected;
-        if (thumbnailInnerSelected) {
-          thumbnailSelected = tmp8.thumbnailSelected;
-        }
-        items[1] = thumbnailSelected;
+        tmp8 = closure_4;
+        items = [, ];
+        items[0] = closure_4.thumbnail;
+        items[1] = thumbnailInnerSelected && tmp8.thumbnailSelected;
         obj.style = items;
-        const items1 = [thumbnail.thumbnailInner, ];
+        items1 = [, ];
+        items1[0] = tmp8.thumbnailInner;
+        tmp9 = closure_1_7;
         if (thumbnailInnerSelected) {
           thumbnailInnerSelected = tmp8.thumbnailInnerSelected;
         }
-        const obj2 = { style: items1, children: null };
+        obj1 = { style: items1, children: null };
         items1[1] = thumbnailInnerSelected;
-        const obj3 = { source: null, style: null, resizeMode: "cover" };
-        const obj4 = { uri: null };
-        const tmp10 = require("FastImage");
-        const tmp9 = closure_1_7;
-        obj4.uri = dependencyMap(onSelectIndex[12]).getThumbnailSrc(item);
-        obj3.source = obj4;
-        obj3.style = thumbnail.thumbnailImage;
-        obj2.children = closure_1_14(tmp10, obj3);
-        obj.children = closure_1_14(tmp9, obj2);
-        return closure_1_14(dependencyMap(onSelectIndex[18]).PressableOpacity, obj, index);
-      })
-    })
-  ];
-  obj.children = items1;
-  return closure_15(closure_7, obj);
-}
-function SKUNameAndDescriptionSection(sku) {
-  sku = sku.sku;
+        obj6 = { source: null, style: null, resizeMode: "cover" };
+        obj7 = { uri: null };
+        tmp10 = selectedIndex(tmp5[16]);
+        tmp4Result = tmp4(tmp5[12]);
+        obj7.uri = tmp4Result.getThumbnailSrc(onSelectIndex);
+        obj6.source = obj7;
+        obj6.style = tmp8.thumbnailImage;
+        obj1.children = tmp3(tmp10, obj6);
+        obj.children = tmp3(tmp9, obj1);
+        return tmp3(PressableOpacity, obj, arg1);
+      }
+    }
+    cResult[14] = tmp5;
+    cResult[15] = items;
+    cResult[16] = selectedIndex;
+    cResult[17] = tmp4.thumbnail;
+    cResult[18] = tmp4.thumbnailImage;
+    cResult[19] = tmp4.thumbnailInner;
+    cResult[20] = tmp4.thumbnailInnerSelected;
+    cResult[21] = tmp4.thumbnailSelected;
+    cResult[22] = P;
+    tmp12 = P;
+  }
+  const fn = function l(arg0) {
+    trackPDPClick(SlayerShopPDPCTAType.CAROUSEL_ITEM);
+    onSelectIndex(arg0);
+  };
+  cResult[0] = onSelectIndex;
+  cResult[1] = trackPDPClick;
+  cResult[2] = fn;
+  tmp5 = fn;
+}) : ((trackPDPClick) => {
+  let intl;
+  let items1;
+  let mediaItems;
+  let onSelectIndex;
+  let require;
+  let thumbnail;
+  ({ items: require, mediaItems, selectedIndex: importDefault, onSelectIndex } = trackPDPClick);
+  trackPDPClick = trackPDPClick.trackPDPClick;
   const tmp = closure_18();
+  react = tmp;
+  let items = [onSelectIndex, trackPDPClick];
+  let closure_5 = react.useCallback((arg0) => {
+    trackPDPClick(SlayerShopPDPCTAType.CAROUSEL_ITEM);
+    onSelectIndex(arg0);
+  }, items);
+  let obj = { style: tmp.section, children: items1 };
+  let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(require("intl").t.U7DAV9) };
+  const Text = require("Text/Text").Text;
+  intl = require("intl").intl;
+  items1 = [closure_14(Text, obj2), ];
+  let obj3 = {
+    horizontal: true,
+    showsHorizontalScrollIndicator: false,
+    contentContainerStyle: tmp.bundleThumbnailRow,
+    children: mediaItems.map((item, index) => {
+      let items;
+      let obj2;
+      let obj3;
+      let obj4;
+      let tmp10;
+      let tmp4Result;
+      let tmp9;
+      const require = index;
+      let label;
+      const PressableOpacity = require("native").PressableOpacity;
+      const tmp2 = importDefault;
+      const tmp4 = _require;
+      if (require[index] != null) {
+        label = tmp.label;
+      }
+      if (label == null) {
+        let title;
+        if (require[index] != null) {
+          title = tmp.title;
+        }
+        label = title;
+      }
+      let thumbnailInnerSelected = index === tmp2;
+      const obj = {
+        accessibilityRole: "button",
+        accessibilityLabel: label,
+        accessibilityState: { selected: thumbnailInnerSelected },
+        onPress() {
+          return closure_5(index);
+        },
+        style: items,
+        children: closure_1_14(tmp9, obj2)
+      };
+      items = [thumbnail.thumbnail, thumbnailInnerSelected && thumbnail.thumbnailSelected];
+      const items1 = [thumbnail.thumbnailInner, ];
+      tmp9 = closure_1_7;
+      if (thumbnailInnerSelected) {
+        thumbnailInnerSelected = tmp8.thumbnailInnerSelected;
+      }
+      items1[1] = thumbnailInnerSelected;
+      obj2 = { style: items1, children: closure_1_14(tmp10, obj3) };
+      obj3 = { source: obj4, style: thumbnail.thumbnailImage, resizeMode: "cover" };
+      obj4 = { uri: tmp4Result.getThumbnailSrc(item) };
+      tmp10 = require("FastImage");
+      tmp4Result = tmp4(onSelectIndex[12]);
+      return closure_1_14(PressableOpacity, obj, index);
+    })
+  };
+  items1[1] = closure_14(closure_5, obj3);
+  return closure_15(closure_7, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
+  let items;
+  const obj = react2;
+  const cResult = obj.c(8);
+  sku = sku.sku;
+  const tmp4 = closure_18();
+  let tmp5 = null;
+  const obj2 = StringUtils;
+  if (!obj2.isNullOrEmpty(sku.name)) {
+    let tmp6;
+    let tmp9;
+    if (cResult[0] !== sku.name) {
+      const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: sku.name };
+      const tmp8 = authStore2(Text_Text.Heading, obj3);
+      cResult[0] = sku.name;
+      cResult[1] = tmp8;
+      tmp6 = tmp8;
+    } else {
+      tmp6 = cResult[1];
+    }
+    if (cResult[2] !== sku.description) {
+      const tmpResult = StringUtils;
+      let tmp11 = !tmpResult.isNullOrEmpty(sku.description);
+      tmpResult.isNullOrEmpty(sku.description);
+      if (tmp11) {
+        const obj4 = { variant: "text-md/medium", color: "text-muted", children: sku.description };
+        tmp11 = authStore2(tmp(4833).Text, obj4);
+      }
+      cResult[2] = sku.description;
+      cResult[3] = tmp11;
+      tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[3];
+    }
+    if (cResult[4] === tmp4.section) {
+      if (cResult[5] === tmp6) {
+        let tmp13;
+        if (cResult[6] === tmp9) {
+          tmp13 = cResult[7];
+        }
+        tmp5 = tmp13;
+      }
+    }
+    const obj5 = { style: tmp4.section, children: items };
+    items = [tmp6, tmp9];
+    const tmp16 = closure_15(metroImportDefault, obj5);
+    cResult[4] = tmp4.section;
+    cResult[5] = tmp6;
+    cResult[6] = tmp9;
+    cResult[7] = tmp16;
+    tmp13 = tmp16;
+  }
+  return tmp5;
+}) : ((sku) => {
+  let items;
+  sku = sku.sku;
   let tmp5Result = null;
+  const tmp = closure_18();
+  const obj = StringUtils;
   if (!obj.isNullOrEmpty(sku.name)) {
-    const obj2 = { style: tmp.section, children: null };
+    const obj2 = { style: tmp.section, children: items };
     const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: sku.name };
-    const items = [closure_1_14(tmp2(4784).Heading, obj3), ];
-    const isNullOrEmptyResult = tmp2(2009).isNullOrEmpty(sku.description);
-    let tmp7Result = !isNullOrEmptyResult;
-    if (!isNullOrEmptyResult) {
+    items = [authStore2(Text_Text.Heading, obj3), ];
+    const tmp2Result = StringUtils;
+    let tmp7Result = !tmp2Result.isNullOrEmpty(sku.description);
+    tmp2Result.isNullOrEmpty(sku.description);
+    const tmp5 = closure_15;
+    const tmp6 = metroImportDefault;
+    const tmp7 = authStore2;
+    if (tmp7Result) {
       const obj4 = { variant: "text-md/medium", color: "text-muted", children: sku.description };
-      tmp7Result = tmp7(tmp2(4784).Text, obj4);
+      tmp7Result = tmp7(tmp2(4833).Text, obj4);
     }
     items[1] = tmp7Result;
-    obj2.children = items;
-    tmp5Result = __initData(React5, obj2);
-    const tmp2Result = tmp2(2009);
-    tmp7 = closure_1_14;
+    tmp5Result = tmp5(tmp6, obj2);
   }
   return tmp5Result;
-}
-function ItemDetailsSection(selectedItem) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  let items1;
+  let obj6;
+  let selectedItem;
+  const obj = react2;
+  const cResult = obj.c(20);
+  ({ selectedItem, applicationId } = arg0);
+  const tmp4 = closure_18();
+  if (cResult[0] === applicationId) {
+    let tmp5;
+    let tmp12;
+    let tmp11;
+    let tmp10;
+    let tmp9;
+    let tmp8;
+    let tmp7;
+    if (cResult[1] === selectedItem.labelIconAssetId) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === tmp5) {
+      if (cResult[4] === selectedItem.description) {
+        if (cResult[5] === selectedItem.label) {
+          if (cResult[6] === selectedItem.title) {
+            if (cResult[7] === tmp4) {
+              tmp7 = cResult[8];
+              tmp8 = cResult[9];
+              tmp9 = cResult[10];
+              tmp10 = cResult[11];
+              tmp11 = cResult[12];
+              tmp12 = cResult[13];
+            }
+            const _Symbol2 = Symbol;
+            if (tmp12 === Symbol.for("react.early_return_sentinel")) {
+              if (cResult[14] === tmp7) {
+                if (cResult[15] === tmp8) {
+                  if (cResult[16] === tmp9) {
+                    if (cResult[17] === tmp10) {
+                      let tmp40;
+                      if (cResult[18] === tmp11) {
+                        tmp40 = cResult[19];
+                      }
+                      tmp12 = tmp40;
+                    }
+                  }
+                }
+              }
+              const obj2 = { style: tmp8, children: items };
+              items = [tmp9, tmp10, tmp11];
+              const tmp42 = closure_15(tmp7, obj2);
+              cResult[14] = tmp7;
+              cResult[15] = tmp8;
+              cResult[16] = tmp9;
+              cResult[17] = tmp10;
+              cResult[18] = tmp11;
+              cResult[19] = tmp42;
+              tmp40 = tmp42;
+            }
+            return tmp12;
+          }
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    let trimmed;
+    const forResult = Symbol.for("react.early_return_sentinel");
+    if (selectedItem.title != null) {
+      trimmed = str2.trim();
+    }
+    let trimmed1;
+    if (selectedItem.label != null) {
+      trimmed1 = str3.trim();
+    }
+    let trimmed2;
+    if (selectedItem.description != null) {
+      trimmed2 = str4.trim();
+    }
+    const tmpResult = StringUtils;
+    if (tmpResult.isNullOrEmpty(trimmed)) {
+      let tmp19;
+      const tmpResult7 = StringUtils;
+      if (tmpResult7.isNullOrEmpty(trimmed1)) {
+        tmp19 = null;
+        StringUtils;
+      }
+      cResult[3] = tmp5;
+      cResult[4] = selectedItem.description;
+      cResult[5] = selectedItem.label;
+      cResult[6] = selectedItem.title;
+      cResult[7] = tmp4;
+      cResult[8] = tmp24;
+      cResult[9] = tmp23;
+      cResult[10] = tmp22;
+      cResult[11] = tmp21;
+      cResult[12] = tmp20;
+      cResult[13] = tmp19;
+      tmp12 = tmp19;
+      tmp11 = tmp20;
+      tmp10 = tmp21;
+      tmp9 = tmp22;
+      tmp8 = tmp23;
+      tmp7 = tmp24;
+    }
+    const section = tmp4.section;
+    const tmpResult9 = StringUtils;
+    let tmp27 = !tmpResult9.isNullOrEmpty(trimmed);
+    tmpResult9.isNullOrEmpty(trimmed);
+    if (tmp27) {
+      const obj3 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: trimmed };
+      tmp27 = authStore2(tmp(4833).Heading, obj3);
+    }
+    const tmpResult10 = StringUtils;
+    let tmp31Result = !tmpResult10.isNullOrEmpty(trimmed1);
+    tmpResult10.isNullOrEmpty(trimmed1);
+    if (tmp31Result) {
+      let tmp32 = null != tmp5;
+      const obj4 = { style: tmp4.labelRow, children: items1 };
+      const tmp31 = closure_15;
+      if (tmp32) {
+        const obj5 = { source: obj6, style: tmp4.labelIcon };
+        obj6 = { uri: tmp5 };
+        tmp32 = authStore2(FastImageDefault, obj5);
+      }
+      items1 = [tmp32, ];
+      const obj7 = { variant: "text-sm/medium", color: "text-muted", children: trimmed1 };
+      items1[1] = authStore2(Text_Text.Text, obj7);
+      tmp31Result = tmp31(tmp25, obj4);
+    }
+    const tmpResult11 = StringUtils;
+    let tmp37 = !tmpResult11.isNullOrEmpty(trimmed2);
+    tmpResult11.isNullOrEmpty(trimmed2);
+    if (tmp37) {
+      const obj8 = { variant: "text-md/medium", color: "text-default", children: trimmed2 };
+      tmp37 = authStore2(tmp(4833).Text, obj8);
+    }
+    tmp19 = forResult;
+  }
+  let assetURL = null;
+  if (null != selectedItem.labelIconAssetId) {
+    const tmpResult12 = StoreUtils;
+    assetURL = tmpResult12.getAssetURL(applicationId, selectedItem.labelIconAssetId);
+  }
+  cResult[0] = applicationId;
+  cResult[1] = selectedItem.labelIconAssetId;
+  cResult[2] = assetURL;
+  tmp5 = assetURL;
+}) : ((selectedItem) => {
+  let items;
+  let items1;
+  let obj7;
   selectedItem = selectedItem.selectedItem;
+  applicationId = selectedItem.applicationId;
   const tmp = closure_18();
   let assetURL = null;
   if (null != selectedItem.labelIconAssetId) {
-    assetURL = StoreUtils.getAssetURL(selectedItem.applicationId, selectedItem.labelIconAssetId);
+    const obj = StoreUtils;
+    assetURL = obj.getAssetURL(applicationId, selectedItem.labelIconAssetId);
   }
   let trimmed;
   if (selectedItem.title != null) {
@@ -208,143 +1092,380 @@ function ItemDetailsSection(selectedItem) {
   if (selectedItem.description != null) {
     trimmed2 = str3.trim();
   }
+  const obj2 = StringUtils;
   if (obj2.isNullOrEmpty(trimmed)) {
+    let tmp11Result2;
+    const tmp8Result = StringUtils;
     if (tmp8Result.isNullOrEmpty(trimmed1)) {
-      let tmp11Result2 = null;
-      const tmp8Result5 = tmp8(2009);
+      tmp11Result2 = null;
+      StringUtils;
     }
     return tmp11Result2;
   }
-  const obj3 = { style: tmp.section, children: null };
-  obj2 = StringUtils;
-  const isNullOrEmptyResult = StringUtils.isNullOrEmpty(trimmed);
-  let tmp14 = !isNullOrEmptyResult;
-  if (!isNullOrEmptyResult) {
-    const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: trimmed };
-    tmp14 = closure_1_14(tmp8(4784).Heading, obj4);
-  }
-  const items = [tmp14, , ];
+  const obj3 = { style: tmp.section, children: items };
   const tmp8Result6 = StringUtils;
-  const isNullOrEmptyResult1 = StringUtils.isNullOrEmpty(trimmed1);
-  let tmp11Result = !isNullOrEmptyResult1;
-  if (!isNullOrEmptyResult1) {
-    const obj5 = { style: tmp.labelRow, children: null };
+  let tmp14 = !tmp8Result6.isNullOrEmpty(trimmed);
+  tmp8Result6.isNullOrEmpty(trimmed);
+  if (tmp14) {
+    const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: trimmed };
+    tmp14 = authStore2(tmp8(4833).Heading, obj4);
+  }
+  items = [tmp14, , ];
+  const tmp8Result7 = StringUtils;
+  let tmp11Result = !tmp8Result7.isNullOrEmpty(trimmed1);
+  tmp8Result7.isNullOrEmpty(trimmed1);
+  if (tmp11Result) {
     let tmp18 = null != assetURL;
+    const obj5 = { style: tmp.labelRow, children: items1 };
     if (tmp18) {
-      const obj6 = { source: null, style: null };
-      const obj7 = { uri: assetURL };
-      obj6.source = obj7;
-      obj6.style = tmp.labelIcon;
-      tmp18 = closure_1_14(FastImageDefault, obj6);
+      const obj6 = { source: obj7, style: tmp.labelIcon };
+      obj7 = { uri: assetURL };
+      tmp18 = authStore2(FastImageDefault, obj6);
     }
-    const items1 = [tmp18, ];
+    items1 = [tmp18, ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: trimmed1 };
-    items1[1] = closure_1_14(tmp8(4784).Text, obj8);
-    obj5.children = items1;
+    items1[1] = authStore2(Text_Text.Text, obj8);
     tmp11Result = tmp11(tmp12, obj5);
   }
   items[1] = tmp11Result;
-  const tmp8Result7 = StringUtils;
-  const isNullOrEmptyResult2 = StringUtils.isNullOrEmpty(trimmed2);
-  let tmp23 = !isNullOrEmptyResult2;
-  if (!isNullOrEmptyResult2) {
+  const tmp8Result8 = StringUtils;
+  let tmp23 = !tmp8Result8.isNullOrEmpty(trimmed2);
+  tmp8Result8.isNullOrEmpty(trimmed2);
+  if (tmp23) {
     const obj9 = { variant: "text-md/medium", color: "text-default", children: trimmed2 };
-    tmp23 = closure_1_14(tmp8(4784).Text, obj9);
+    tmp23 = authStore2(tmp8(4833).Text, obj9);
   }
   items[2] = tmp23;
-  obj3.children = items;
   tmp11Result2 = tmp11(tmp12, obj3);
-}
-function SocialLayerStorefrontProductDetailsModal(skuId) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+  let closeButtonIcon;
+  let closure_5;
+  let first;
+  let mobileStoreFront;
+  let ref;
+  let skuAssets;
+  let tmp12;
+  let tmp14;
+  let tmp15;
+  let tmp20;
+  let tmp21;
+  let tmp2 = skuId;
+  const tmp3 = mobileStoreFront;
+  let obj = skuId(mobileStoreFront[14]);
+  const cResult = obj.c(163);
   skuId = skuId.skuId;
   const analyticsLocations = skuId.analyticsLocations;
-  let stateFromStores2;
-  let memo1;
-  let trackPDPClick;
-  let skuAssets;
-  c10 = undefined;
-  c11 = undefined;
-  c12 = undefined;
-  const tmp = closure_18();
-  dependencyMap = tmp;
-  const rect = analyticsLocations(1612)();
-  const isScreenLandscape = skuId(5374).useIsScreenLandscape();
-  let obj = skuId(5374);
-  const mobileStoreFront = analyticsLocations(9512).useMobileStoreFront();
-  let obj2 = analyticsLocations(9512);
-  let items = [trackPDPClick];
-  const stateFromStores = skuId(504).useStateFromStores(items, () => SKUStore.get(skuId));
-  let obj3 = skuId(504);
-  let items1 = [trackPDPClick];
-  const stateFromStores1 = skuId(504).useStateFromStores(items1, () => SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId));
-  const obj4 = skuId(504);
-  let applicationId1;
-  if (stateFromStores != null) {
-    applicationId1 = stateFromStores.applicationId;
+  let tmp5 = closure_18();
+  importDefault = tmp5;
+  const tmp7 = require("useSafeAreaInsets")();
+  let obj2 = skuId(mobileStoreFront[24]);
+  const isScreenLandscape = obj2.useIsScreenLandscape();
+  const obj3 = require("NativePaymentHooks");
+  mobileStoreFront = obj3.useMobileStoreFront();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SKUStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-  const getOrFetchApplication = skuId(7445).useGetOrFetchApplication(applicationId1);
-  let tmp12 = getOrFetchApplication;
-  const obj5 = skuId(7445);
+  if (cResult[1] !== skuId) {
+    class S {
+      constructor() {
+        return closure_8.get(skuId);
+      }
+    }
+    cResult[1] = skuId;
+    cResult[2] = S;
+    tmp12 = S;
+  } else {
+    class S {
+      constructor() {
+        return closure_8.get(skuId);
+      }
+    }
+  }
+  const tmp2Result = tmp2(tmp3[26]);
+  const stateFromStores = tmp2Result.useStateFromStores(first, tmp12);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_8.get(skuId);
+      }
+    }
+    const items1 = [SKUStore];
+    cResult[3] = items1;
+    tmp14 = items1;
+  } else {
+    class S {
+      constructor() {
+        return closure_8.get(skuId);
+      }
+    }
+  }
+  if (cResult[4] !== skuId) {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
+    cResult[4] = skuId;
+    cResult[5] = F;
+    tmp15 = F;
+  } else {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
+  }
+  const tmp2Result5 = tmp2(tmp3[26]);
+  const stateFromStores1 = tmp2Result5.useStateFromStores(tmp14, tmp15);
+  const useGetOrFetchApplication = tmp2(tmp3[27]).useGetOrFetchApplication;
+  tmp2(tmp3[27]);
+  if (stateFromStores != null) {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
+  }
+  const getOrFetchApplication = useGetOrFetchApplication(undefined);
+  const tmp6Result = require("useStartAuthorize");
   if (getOrFetchApplication == null) {
-    tmp12 = null;
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
   }
-  const tmp2Result = analyticsLocations(7442);
-  const items2 = [skuAssets];
-  stateFromStores2 = skuId(504).useStateFromStores(items2, () => skuAssets.getSkuAssets());
-  const items3 = [stateFromStores];
-  const memo = stateFromStores.useMemo(() => SlayerStorefrontUtils.getCardImageURL(stateFromStores), items3);
-  const tmp16 = mobileStoreFront(stateFromStores.useState(0), 2);
-  const first = tmp16[0];
-  const items4 = [analyticsLocations];
-  memo1 = stateFromStores.useMemo(() => {
-    let items = analyticsLocations;
+  const hasAlreadyLinked = tmp6Result(getOrFetchApplication).hasAlreadyLinked;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
+    const items2 = [SocialLayerStorefrontStore];
+    class X {
+      constructor() {
+        return closure_9.getSkuAssets();
+      }
+    }
+    cResult[6] = items2;
+    cResult[7] = X;
+    tmp21 = X;
+    tmp20 = items2;
+  } else {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
+    tmp21 = cResult[7];
+  }
+  const tmp2Result7 = tmp2(tmp3[26]);
+  const stateFromStores2 = tmp2Result7.useStateFromStores(tmp20, tmp21);
+  const tmp2Result8 = tmp2(tmp3[29]);
+  const cardImageURL = tmp2Result8.getCardImageURL(stateFromStores);
+  [r10099, r10100] = stateFromStores(stateFromStores1.useState(0), 2);
+  stateFromStores(stateFromStores1.useState(0), 2);
+  if (cResult[8] !== analyticsLocations) {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
     if (analyticsLocations == null) {
-      items = [];
+      class F {
+        constructor() {
+          obj = closure_8;
+          tmp = skuId;
+          tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+          return tmp2;
+        }
+      }
     }
-    const items1 = [...items, AnalyticsLocationDefault.SLAYER_STOREFRONT_NATIVE_PDP];
-    return items1;
-  }, items4);
-  analyticsLocations(5235)(() => {
-    const obj2 = { location_stack: memo1, type: SocialLayerStorefrontNativeActionCreators.SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY, sku_id: skuId, application_id: null };
-    let applicationId;
-    if (stateFromStores != null) {
-      applicationId = stateFromStores.applicationId;
+    class X {
+      constructor() {
+        return closure_9.getSkuAssets();
+      }
     }
-    obj2.application_id = applicationId;
-    AnalyticsUtilsDefault.track(constants.OPEN_MODAL, obj2);
-  });
-  const items5 = [skuId, , ];
-  let applicationId2;
-  if (stateFromStores != null) {
-    applicationId2 = stateFromStores.applicationId;
+    cResult[9] = tmp26;
+  } else {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
   }
-  items5[1] = applicationId2;
-  items5[2] = memo1;
-  trackPDPClick = stateFromStores.useCallback((cta_type) => {
-    const obj2 = { slayer_storefront_session_id: "Array", sku_id: skuId, guild_id: true, application_id: true, cta_type: "SOURCE", location_stack: null };
-    let applicationId;
-    if (stateFromStores != null) {
-      applicationId = stateFromStores.applicationId;
+  if (cResult[10] !== tmp25) {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
     }
-    obj2.application_id = applicationId;
-    obj2.cta_type = cta_type;
-    obj2.location_stack = memo1;
-    AnalyticsUtilsDefault.track(constants.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, obj2);
-  }, items5);
-  const items6 = [stateFromStores, stateFromStores2];
-  let tmp4Result = skuId(504);
-  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(() => {
-    let applicationId;
-    if (stateFromStores != null) {
-      applicationId = tmp.applicationId;
+    class X {
+      constructor() {
+        return closure_9.getSkuAssets();
+      }
     }
-    if (null == applicationId) {
+    const arraySpreadResult = HermesBuiltin.arraySpread(tmp28, tmp25, 0);
+    tmp28[arraySpreadResult] = require("AnalyticsLocation").SLAYER_STOREFRONT_NATIVE_PDP;
+    cResult[10] = tmp25;
+    cResult[11] = tmp28;
+  } else {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
+  }
+  location_stack = tmp27;
+  if (cResult[12] === tmp27) {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
+    if (stateFromStores != null) {
+      class F {
+        constructor() {
+          obj = closure_8;
+          tmp = skuId;
+          tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+          return tmp2;
+        }
+      }
+    }
+    class X {
+      constructor() {
+        return closure_9.getSkuAssets();
+      }
+    }
+  }
+  cResult[12] = tmp27;
+  if (stateFromStores != null) {
+    class F {
+      constructor() {
+        obj = closure_8;
+        tmp = skuId;
+        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        return tmp2;
+      }
+    }
+  }
+  class J {
+    constructor() {
+      tmp = closure_1(closure_2[31]);
+      obj = { location_stack: closure_5, type: closure_0(closure_2[32]).SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY, sku_id: skuId, application_id: null };
+      track = tmp.track;
+      OPEN_MODAL = AnalyticEvents.OPEN_MODAL;
+      applicationId = undefined;
+      if (closure_3 != null) {
+        applicationId = closure_3.applicationId;
+      }
+      obj.application_id = applicationId;
+      trackResult = track(OPEN_MODAL, obj);
+      return;
+    }
+  }
+  cResult[13] = undefined;
+  cResult[14] = skuId;
+  cResult[15] = J;
+}) : ((skuId) => {
+  let Button;
+  let GOOGLE;
+  let _undefined;
+  let _undefined2;
+  let _undefined3;
+  let applicationId4;
+  let arr8;
+  let arr9;
+  let c10;
+  let c11;
+  let c12;
+  let closeButtonIcon;
+  let intl;
+  let intl2;
+  let intl3;
+  let items10;
+  let items12;
+  let items13;
+  let items14;
+  let items16;
+  let items17;
+  let items18;
+  let items19;
+  let items20;
+  let items21;
+  let items22;
+  let items23;
+  let items24;
+  let items25;
+  let items26;
+  let items27;
+  let mobileFinePrintMessageForApplication;
+  let name;
+  let obj20;
+  let obj7;
+  let obj8;
+  let productLine;
+  let tmp30;
+  let tmp32;
+  let tmp34;
+  let tmp43;
+  let tmp70;
+  let type;
+  const f103378 = () => {
+    let result;
+    let applicationId1;
+    if (stateFromStores != null) {
+      applicationId1 = tmp.applicationId;
+    }
+    if (null == applicationId1) {
       const items = [[], []];
-      let result = items;
+      result = items;
     } else {
-      const obj2 = carouselMediaItems;
       const tenantMetadata = tmp.tenantMetadata;
       let carouselItems;
+      const convertCarouselItemsToMediaItems = carouselMediaItems.convertCarouselItemsToMediaItems;
+      const tmp8 = require;
       if (tenantMetadata != null) {
         const socialLayer = tenantMetadata.socialLayer;
         if (socialLayer != null) {
@@ -354,22 +1475,117 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
       if (carouselItems == null) {
         carouselItems = [];
       }
-      const obj = { heroWidth: carouselMediaItems.MOBILE_HERO_WIDTH_PX };
-      result = obj2.convertCarouselItemsToMediaItems(carouselItems, tmp.applicationId, stateFromStores2, obj);
+      applicationId = tmp.applicationId;
+      const obj = { heroWidth: tmp8(10304).MOBILE_HERO_WIDTH_PX };
+      result = convertCarouselItemsToMediaItems(carouselItems, applicationId, stateFromStores2, obj);
     }
     return result;
-  }, items6), 2);
+  };
+  skuId = skuId.skuId;
+  const analyticsLocations = skuId.analyticsLocations;
+  let stateFromStores2;
+  let memo1;
+  let trackPDPClick;
+  let skuAssets;
+  c10 = undefined;
+  c11 = undefined;
+  c12 = undefined;
+  let ref;
+  let tmp = closure_18();
+  dependencyMap = tmp;
+  let tmp2 = analyticsLocations;
+  const rect = analyticsLocations(1619)();
+  let tmp4 = skuId;
+  let obj = skuId(5439);
+  const isScreenLandscape = obj.useIsScreenLandscape();
+  let obj2 = analyticsLocations(8664);
+  const mobileStoreFront = obj2.useMobileStoreFront();
+  let items = [trackPDPClick];
+  const obj3 = skuId(504);
+  const stateFromStores = obj3.useStateFromStores(items, () => SKUStore.get(skuId));
+  let items1 = [trackPDPClick];
+  const obj4 = skuId(504);
+  const stateFromStores1 = obj4.useStateFromStores(items1, () => {
+    const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
+    return tmp2;
+  });
+  let applicationId1;
+  const useGetOrFetchApplication = skuId(6590).useGetOrFetchApplication;
+  const tmp9 = skuId(6590);
+  if (stateFromStores != null) {
+    applicationId1 = stateFromStores.applicationId;
+  }
+  const getOrFetchApplication = useGetOrFetchApplication(applicationId1);
+  let tmp13 = getOrFetchApplication;
+  const tmp2Result = tmp2(6587);
+  if (getOrFetchApplication == null) {
+    tmp13 = null;
+  }
+  const hasAlreadyLinked = tmp2Result(tmp13).hasAlreadyLinked;
+  let tmp4Result = tmp4(504);
+  const items2 = [skuAssets];
+  stateFromStores2 = tmp4Result.useStateFromStores(items2, () => skuAssets.getSkuAssets());
+  const items3 = [stateFromStores];
+  const memo = stateFromStores.useMemo(() => {
+    const obj = SlayerStorefrontUtils;
+    return obj.getCardImageURL(stateFromStores);
+  }, items3);
+  const tmp17 = mobileStoreFront(stateFromStores.useState(0), 2);
+  const first = tmp17[0];
+  const items4 = [analyticsLocations];
+  const tmp19 = tmp17[1];
+  memo1 = stateFromStores.useMemo(() => {
+    let items = analyticsLocations;
+    if (analyticsLocations == null) {
+      items = [];
+    }
+    const items1 = [...items, AnalyticsLocationDefault.SLAYER_STOREFRONT_NATIVE_PDP];
+    return items1;
+  }, items4);
+  tmp2(5297)(() => {
+    const tmp = AnalyticsUtilsDefault;
+    const track = tmp.track;
+    const OPEN_MODAL = unpackModuleId.OPEN_MODAL;
+    const obj = { location_stack: memo1, type: SocialLayerStorefrontNativeActionCreators.SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY, sku_id: skuId, application_id: applicationId };
+    applicationId = undefined;
+    if (stateFromStores != null) {
+      applicationId = stateFromStores.applicationId;
+    }
+    track(OPEN_MODAL, obj);
+  });
+  const items5 = [skuId, , ];
+  let applicationId2;
+  const useCallback = stateFromStores.useCallback;
+  if (stateFromStores != null) {
+    applicationId2 = stateFromStores.applicationId;
+  }
+  items5[1] = applicationId2;
+  items5[2] = memo1;
+  trackPDPClick = useCallback((cta_type) => {
+    const obj = { slayer_storefront_session_id: "Array", sku_id: skuId, guild_id: true, application_id: applicationId, cta_type, location_stack: memo1 };
+    applicationId = undefined;
+    const track = AnalyticsUtilsDefault.track;
+    const SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED = unpackModuleId.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED;
+    AnalyticsUtilsDefault;
+    if (stateFromStores != null) {
+      applicationId = stateFromStores.applicationId;
+    }
+    track(SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, obj);
+  }, items5);
+  const items6 = [stateFromStores, stateFromStores2];
+  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f103378, items6), 2);
   let num = 0;
+  mobileStoreFront(stateFromStores.useMemo(f103378, items6), 2);
   if (first < arr9.length) {
     num = first;
   }
-  let tmp24 = arr8[num];
-  if (tmp24 == null) {
-    tmp24 = null;
+  let tmp26 = arr8[num];
+  if (tmp26 == null) {
+    tmp26 = null;
   }
-  let tmp25 = arr9[num];
-  if (tmp25 == null) {
-    tmp25 = null;
+  let tmp27 = arr9[num];
+  if (tmp27 == null) {
+    tmp27 = null;
   }
   let num2;
   if (stateFromStores != null) {
@@ -387,81 +1603,56 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
   if (num2 == null) {
     num2 = 0;
   }
-  skuAssets = tmp26;
-  const tmp15Result = mobileStoreFront(stateFromStores.useMemo(() => {
-    let applicationId;
-    if (stateFromStores != null) {
-      applicationId = tmp.applicationId;
-    }
-    if (null == applicationId) {
-      const items = [[], []];
-      let result = items;
-    } else {
-      const obj2 = carouselMediaItems;
-      const tenantMetadata = tmp.tenantMetadata;
-      let carouselItems;
-      if (tenantMetadata != null) {
-        const socialLayer = tenantMetadata.socialLayer;
-        if (socialLayer != null) {
-          carouselItems = socialLayer.carouselItems;
-        }
-      }
-      if (carouselItems == null) {
-        carouselItems = [];
-      }
-      const obj = { heroWidth: carouselMediaItems.MOBILE_HERO_WIDTH_PX };
-      result = obj2.convertCarouselItemsToMediaItems(carouselItems, tmp.applicationId, stateFromStores2, obj);
-    }
-    return result;
-  }, items6), 2);
-  [tmp28, c10] = mobileStoreFront(stateFromStores.useState(false), 2);
-  const tmp15Result4 = mobileStoreFront(stateFromStores.useState(false), 2);
-  [tmp30, c11] = mobileStoreFront(stateFromStores.useState(false), 2);
-  const tmp15Result5 = mobileStoreFront(stateFromStores.useState(false), 2);
-  [tmp32, c12] = mobileStoreFront(stateFromStores.useState(0), 2);
-  stateFromStores.useRef(false);
+  skuAssets = tmp28;
+  [tmp30, c10] = mobileStoreFront(stateFromStores.useState(false), 2);
+  mobileStoreFront(stateFromStores.useState(false), 2);
+  [tmp32, c11] = mobileStoreFront(stateFromStores.useState(false), 2);
+  mobileStoreFront(stateFromStores.useState(false), 2);
+  [tmp34, c12] = mobileStoreFront(stateFromStores.useState(0), 2);
+  mobileStoreFront(stateFromStores.useState(0), 2);
+  ref = obj6.useRef(false);
   const items7 = [stateFromStores, stateFromStores2, num2 === arr8.length, stateFromStores1, ];
   let country;
+  const useEffect = obj6.useEffect;
   if (mobileStoreFront != null) {
     country = mobileStoreFront.country;
   }
   items7[4] = country;
-  const effect = obj7.useEffect(() => {
+  const effect = useEffect(() => {
+    let APPLE;
+    let country;
+    let id;
+    let obj2;
+    const tmp2 = null != stateFromStores && null != stateFromStores.applicationId;
     if (tmp2) {
-      let current = closure_9;
-      if (!closure_9) {
-        current = stateFromStores1;
-      }
-      if (!current) {
-        current = ref.current;
-      }
+      const current = skuAssets || stateFromStores1 || ref.current;
       if (!current) {
         ref.current = true;
-        const obj2 = { withGoogleSkuIds: null, countryCode: null, paymentGateway: null };
-        ({ applicationId, id } = tmp);
-        const obj = SocialLayerStorefrontActionCreators;
+        const obj = { withGoogleSkuIds: obj2.isAndroid(), countryCode: country, paymentGateway: APPLE };
+        const fetchSocialLayerStorefrontSkuForApplication = SocialLayerStorefrontActionCreators.fetchSocialLayerStorefrontSkuForApplication;
+        ({ applicationId, id } = stateFromStores);
+        SocialLayerStorefrontActionCreators;
+        country = undefined;
+        obj2 = PlatformUtils;
         const tmp5 = require;
-        obj2.withGoogleSkuIds = PlatformUtils.isAndroid();
-        let country;
         if (mobileStoreFront != null) {
           country = mobileStoreFront.country;
         }
-        obj2.countryCode = country;
-        let APPLE;
+        APPLE = undefined;
+        const tmp5Result = tmp5(1370);
         if (tmp5Result.isIOS()) {
-          APPLE = constants2.APPLE;
+          APPLE = _undefined3.APPLE;
         }
-        obj2.paymentGateway = APPLE;
-        const socialLayerStorefrontSkuForApplication = obj.fetchSocialLayerStorefrontSkuForApplication(applicationId, id, obj2);
-        tmp5Result = tmp5(1364);
+        const socialLayerStorefrontSkuForApplication = fetchSocialLayerStorefrontSkuForApplication(applicationId, id, obj);
       }
     }
   }, items7);
   const items8 = [skuId, , ];
   let orbsReward;
-  const callback1 = obj7.useCallback(() => {
+  const callback1 = obj6.useCallback(() => {
     _undefined(false);
   }, []);
+  const useCallback2 = stateFromStores.useCallback;
   if (stateFromStores != null) {
     orbsReward = stateFromStores.orbsReward;
   }
@@ -469,344 +1660,286 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
   items8[2] = memo1;
   const items9 = [trackPDPClick, , ];
   let applicationId3;
-  const callback2 = obj7.useCallback(() => {
-    _undefined(false);
-    const obj2 = { skuId, orbsReward: null, analyticsLocations: null };
+  const callback2 = useCallback2(() => {
     let orbsReward;
+    _undefined(false);
+    const obj = { skuId, orbsReward, analyticsLocations: memo1 };
+    orbsReward = undefined;
+    const openSocialLayerStorefrontProductSelfPurchaseSuccessModal = SocialLayerStorefrontNativeActionCreators.openSocialLayerStorefrontProductSelfPurchaseSuccessModal;
+    SocialLayerStorefrontNativeActionCreators;
     if (stateFromStores != null) {
       orbsReward = stateFromStores.orbsReward;
     }
-    obj2.orbsReward = orbsReward;
-    obj2.analyticsLocations = memo1;
-    const result = SocialLayerStorefrontNativeActionCreators.openSocialLayerStorefrontProductSelfPurchaseSuccessModal(obj2);
+    const result = openSocialLayerStorefrontProductSelfPurchaseSuccessModal(obj);
     result.then(SocialLayerStorefrontNativeActionCreators.closeSocialLayerStorefrontProductDetailsModal);
   }, items8);
+  const useCallback3 = stateFromStores.useCallback;
   if (stateFromStores != null) {
     applicationId3 = stateFromStores.applicationId;
   }
   items9[1] = applicationId3;
   items9[2] = skuId;
-  const callback3 = obj7.useCallback(() => {
-    callback(SlayerShopPDPCTAType.BUY_BUTTON);
+  const callback3 = useCallback3(() => {
+    let tmp = callback(SlayerShopPDPCTAType.BUY_BUTTON);
+    let obj = BillingPlatformUtils;
     if (obj.isSocialLayerStorefrontPurchaseSupported()) {
       _undefined2(true);
       _undefined3((arg0) => arg0 + 1);
       _undefined(true);
     } else {
-      let applicationId;
+      applicationId = undefined;
+      const tmp4 = redirectToSlayerStorefrontWebDefault;
       if (stateFromStores != null) {
         applicationId = stateFromStores.applicationId;
       }
       const obj2 = { applicationId, skuId, source: "SocialLayerStorefrontProductDetailsModal" };
-      redirectToSlayerStorefrontWebDefault(obj2).then((result) => {
-        if (result) {
-          result = skuId(closeButtonIcon[31]).closeSocialLayerStorefrontProductDetailsModal();
-          const obj = skuId(closeButtonIcon[31]);
+      const tmp4Result = tmp4(obj2);
+      tmp4Result.then((result) => {
+        const tmp = result;
+        if (tmp) {
+          const obj = skuId(closeButtonIcon[32]);
+          result = obj.closeSocialLayerStorefrontProductDetailsModal();
         }
       });
-      const tmp4Result = redirectToSlayerStorefrontWebDefault(obj2);
     }
   }, items9);
-  const OTPACOMOrderExperiment = tmp4(9511).OTPACOMOrderExperiment;
+  const OTPACOMOrderExperiment = tmp4(8663).OTPACOMOrderExperiment;
   let enabled = OTPACOMOrderExperiment.useConfig({ location: "SocialLayerStorefrontProductDetailsModal" }).enabled;
-  const tmp15Result6 = mobileStoreFront(stateFromStores.useState(0), 2);
+  const tmp4Result6 = tmp4(1370);
   if (tmp4Result6.isIOS()) {
-    let GOOGLE = tmp40.APPLE_ADVANCED_COMMERCE;
-    let tmp41 = tmp40;
+    GOOGLE = tmp42.APPLE_ADVANCED_COMMERCE;
+    tmp43 = tmp42;
   } else {
-    GOOGLE = tmp40.GOOGLE;
-    tmp41 = tmp40;
+    GOOGLE = tmp42.GOOGLE;
+    tmp43 = tmp42;
   }
-  let tmp43Result = null;
-  if (tmp30) {
-    const obj6 = { headless: true, paymentGateway: GOOGLE, orderRequired: null, skuIds: null, isGift: false, activeSubscription: null, onOrderRetryCancellation: null, checkoutAnalyticsFields: null, children: null };
+  let tmp45Result = null;
+  if (tmp32) {
+    const obj5 = { headless: true, paymentGateway: GOOGLE, orderRequired: enabled, skuIds: items10, isGift: false, activeSubscription: null, onOrderRetryCancellation: tmp4(10300).closeSocialLayerStorefrontProductDetailsModal, checkoutAnalyticsFields: obj7, children: closure_14(tmp4(10311).HeadlessSlayerStorefrontPurchaseRunner, obj8) };
+    const tmp2Result2 = tmp2(10307);
     if (enabled) {
-      enabled = GOOGLE === tmp41.APPLE_ADVANCED_COMMERCE;
+      enabled = GOOGLE === tmp43.APPLE_ADVANCED_COMMERCE;
     }
-    obj6.orderRequired = enabled;
-    const items10 = [skuId];
-    obj6.skuIds = items10;
-    obj6.onOrderRetryCancellation = tmp4(11093).closeSocialLayerStorefrontProductDetailsModal;
-    const obj8 = { is_gift: false, location_stack: memo1, payment_type: "sku", sku_id: skuId, sku_type: null, sku_product_line: null, application_id: null };
-    let type;
+    items10 = [skuId];
+    obj7 = { is_gift: false, location_stack: memo1, payment_type: "sku", sku_id: skuId, sku_type: type, sku_product_line: productLine, application_id: applicationId4 };
+    type = undefined;
     if (stateFromStores != null) {
       type = stateFromStores.type;
     }
-    obj8.sku_type = type;
-    let productLine;
+    productLine = undefined;
     if (stateFromStores != null) {
       productLine = stateFromStores.productLine;
     }
-    obj8.sku_product_line = productLine;
-    let applicationId4;
+    applicationId4 = undefined;
     if (stateFromStores != null) {
       applicationId4 = stateFromStores.applicationId;
     }
-    obj8.application_id = applicationId4;
-    obj6.checkoutAnalyticsFields = obj8;
-    const obj9 = { attempt: tmp32, skuId, sku: stateFromStores, analyticsLocations: memo1, onPurchaseComplete: callback2, onPurchaseError: callback1 };
-    obj6.children = closure_14(tmp4(11104).HeadlessSlayerStorefrontPurchaseRunner, obj9);
-    tmp43Result = tmp43(tmp2(11100), obj6, skuId);
-    const tmp2Result2 = tmp2(11100);
+    obj8 = { attempt: tmp34, skuId, sku: stateFromStores, analyticsLocations: memo1, onPurchaseComplete: callback2, onPurchaseError: callback1 };
+    tmp45Result = tmp45(tmp2Result2, obj5, skuId);
   }
   const items11 = [skuId, memo1, trackPDPClick];
   if (null == stateFromStores) {
     return null;
   } else {
-    let result = tmp4(7508).isSlayerSkuAvailableOnThisPlatform(stateFromStores);
-    const intl4 = tmp4(1115).intl;
-    const stringResult = intl4.string(tmp4(1115).t.boqtTA);
-    const tmp4Result7 = tmp4(7508);
-    let result1 = tmp4(4459).isSocialLayerStorefrontGiftingSupported();
-    if (null != tmp25) {
-      const obj10 = { mediaItem: tmp25, landscape: isScreenLandscape };
-      let tmp49 = closure_14(HeroMedia, obj10);
+    let tmp51;
+    let tmp65Result2;
+    const tmp4Result7 = tmp4(6653);
+    let result = tmp4Result7.isSlayerSkuAvailableOnThisPlatform(stateFromStores);
+    const intl4 = tmp4(1127).intl;
+    const stringResult = intl4.string(tmp4(1127).t.boqtTA);
+    const tmp4Result8 = tmp4(4504);
+    let result1 = tmp4Result8.isSocialLayerStorefrontGiftingSupported();
+    if (null != tmp27) {
+      const obj9 = { mediaItem: tmp27, landscape: isScreenLandscape };
+      tmp51 = closure_14(closure_19, obj9);
     } else {
-      tmp49 = null;
+      tmp51 = null;
       if (null != memo) {
-        const obj11 = { sku: stateFromStores };
-        tmp49 = closure_14(tmp2(9138), obj11);
+        const obj10 = { sku: stateFromStores };
+        tmp51 = closure_14(tmp2(8285), obj10);
       }
     }
-    let tmp53 = null;
+    let tmp55 = null;
     if (stateFromStores.exclusive) {
-      const obj12 = { style: tmp.exclusiveBadgeContainer, children: closure_14(tmp4(11108).ExclusiveBadge, {}) };
-      tmp53 = closure_14(memo1, obj12);
+      const obj11 = { style: tmp.exclusiveBadgeContainer, children: closure_14(tmp4(10315).ExclusiveBadge, {}) };
+      tmp55 = closure_14(memo1, obj11);
     }
-    let tmp56 = null;
-    if (tmp23) {
-      const obj13 = { items: arr8, mediaItems: arr9, selectedIndex: num, onSelectIndex: tmp16[1], trackPDPClick };
-      tmp56 = closure_14(BundleThumbnailRow, obj13);
+    let tmp58 = null;
+    if (arr9.length > 1) {
+      const obj12 = { items: arr8, mediaItems: arr9, selectedIndex: num, onSelectIndex: tmp19, trackPDPClick };
+      tmp58 = closure_14(closure_22, obj12);
     }
-    let applicationId = stateFromStores.applicationId;
-    let tmp59 = null;
-    if (tmp23) {
-      tmp59 = tmp24;
+    applicationId = stateFromStores.applicationId;
+    let tmp61 = null;
+    if (arr9.length > 1) {
+      tmp61 = tmp26;
     }
-    let tmp60 = null;
-    if (null != tmp59) {
-      tmp60 = null;
+    let tmp62 = null;
+    if (null != tmp61) {
+      tmp62 = null;
       if (null != applicationId) {
-        const obj14 = { selectedItem: tmp59, applicationId };
-        tmp60 = closure_14(ItemDetailsSection, obj14);
+        const obj13 = { selectedItem: tmp61, applicationId };
+        tmp62 = closure_14(closure_24, obj13);
       }
     }
-    const obj15 = { style: null, children: null };
-    const items12 = [tmp.footer, ];
-    const obj16 = { paddingBottom: rect.bottom + tmp2(576).space.PX_16 };
-    items12[1] = obj16;
-    obj15.style = items12;
-    const obj17 = { sku: stateFromStores };
-    const items13 = [closure_14(ProductPriceSection, obj17), , , ];
-    let tmp65Result = !result;
-    if (!result) {
-      const obj18 = { variant: "text-xs/normal", color: "text-muted", style: tmp.availabilityCopy, includeFontPadding: true, children: null };
-      const intl = tmp4(1115).intl;
-      obj18.children = intl.string(tmp2(3580).gndWN7);
-      tmp65Result = tmp65(tmp4(4784).Text, obj18);
+    const obj14 = { style: items12, children: items13 };
+    items12 = [tmp.footer, ];
+    items12[1] = { paddingBottom: rect.bottom + tmp2(588).space.PX_16 };
+    const obj15 = { paddingBottom: rect.bottom + tmp2(588).space.PX_16 };
+    const obj16 = { sku: stateFromStores };
+    items13 = [closure_14(closure_21, obj16), , , ];
+    let tmp67Result = !result;
+    if (tmp67Result) {
+      const obj17 = { variant: "text-xs/normal", color: "text-muted", style: tmp.availabilityCopy, includeFontPadding: true, children: intl.string(tmp2(3588).gndWN7) };
+      const Text = tmp4(4833).Text;
+      intl = tmp4(1127).intl;
+      tmp67Result = tmp67(Text, obj17);
     }
-    items13[1] = tmp65Result;
-    const obj19 = { style: tmp.footerButtonRow, children: null };
-    const obj20 = { style: tmp.buyButton, children: null };
-    const obj21 = { variant: "primary", size: "lg", text: stringResult, loading: tmp28, disabled: null, onPress: null };
-    let tmp68 = tmp28;
-    if (!tmp28) {
-      tmp68 = !result;
+    items13[1] = tmp67Result;
+    const obj18 = { style: tmp.footerButtonRow, children: items14 };
+    const obj19 = { style: tmp.buyButton, children: closure_14(Button, obj20) };
+    obj20 = { variant: "primary", size: "lg", text: stringResult, loading: tmp30, disabled: tmp70, onPress: callback3 };
+    tmp70 = tmp30;
+    Button = tmp4(5282).Button;
+    if (!tmp30) {
+      tmp70 = !result;
     }
-    obj21.disabled = tmp68;
-    obj21.onPress = callback3;
-    obj20.children = closure_14(tmp4(5218).Button, obj21);
-    const items14 = [closure_14(memo1, obj20), ];
+    items14 = [closure_14(memo1, obj19), ];
     if (result1) {
-      const obj22 = { icon: tmp2(8373), variant: "primary", size: "lg", disabled: tmp28, accessibilityLabel: null, onPress: null };
-      const intl2 = tmp4(1115).intl;
-      obj22.accessibilityLabel = intl2.string(tmp4(1115).t.QAZA5f);
-      obj22.onPress = tmp48;
-      result1 = tmp65(tmp4(8211).IconButton, obj22);
+      const obj21 = { icon: tmp2(7530), variant: "primary", size: "lg", disabled: tmp30, accessibilityLabel: intl2.string(tmp4(1127).t.QAZA5f), onPress: tmp50 };
+      const IconButton = tmp4(7362).IconButton;
+      intl2 = tmp4(1127).intl;
+      result1 = tmp67(IconButton, obj21);
     }
     items14[1] = result1;
-    obj19.children = items14;
-    items13[2] = closure_15(memo1, obj19);
+    items13[2] = closure_15(memo1, obj18);
     if (result) {
-      const obj23 = { style: tmp.legalCopy, children: null };
-      const obj24 = { shouldAppendDisclaimer: false === tmp2Result(tmp12).hasAlreadyLinked };
-      const mobileFinePrintMessageForApplication = tmp4(11111).getMobileFinePrintMessageForApplication(getOrFetchApplication, stringResult, obj24);
-      obj23.children = mobileFinePrintMessageForApplication.map((children, index) => closure_1_14(skuId(closeButtonIcon[15]).Text, { variant: "text-xs/normal", color: "text-muted", includeFontPadding: true, children }, index));
-      result = tmp65(tmp64, obj23);
-      const tmp4Result9 = tmp4(11111);
+      const obj22 = {
+        style: tmp.legalCopy,
+        children: mobileFinePrintMessageForApplication.map((children, index) => {
+              const obj = { variant: "text-xs/normal", color: "text-muted", includeFontPadding: true, children };
+              return closure_1_14(skuId(closeButtonIcon[17]).Text, obj, index);
+            })
+      };
+      const getMobileFinePrintMessageForApplication = tmp4(10318).getMobileFinePrintMessageForApplication;
+      tmp4(10318);
+      const obj23 = { shouldAppendDisclaimer: false === hasAlreadyLinked };
+      mobileFinePrintMessageForApplication = getMobileFinePrintMessageForApplication(getOrFetchApplication, stringResult, obj23);
+      result = tmp67(tmp66, obj22);
     }
     items13[3] = result;
-    obj15.children = items13;
-    const tmp63Result = closure_15(memo1, obj15);
+    const tmp65Result = closure_15(memo1, obj14);
     const items15 = [tmp.container, ];
-    const tmp4Result8 = tmp4(4459);
     let num3 = 0;
+    const tmp4Result10 = tmp4(1370);
     if (!tmp4Result10.isIOS()) {
       num3 = rect.top;
     }
-    const obj25 = { style: null, children: null };
-    const obj26 = { paddingTop: num3 };
-    items15[1] = obj26;
-    obj25.style = items15;
-    const items16 = [tmp43Result, , , ];
-    const obj27 = { style: tmp.header, children: null };
-    const obj28 = {
-      onPress: tmp4(11093).closeSocialLayerStorefrontProductDetailsModal,
+    const obj24 = { style: items15, children: items16 };
+    const obj25 = { paddingTop: num3 };
+    items15[1] = obj25;
+    items16 = [tmp45Result, , , ];
+    const obj26 = { style: tmp.header, children: items17 };
+    const obj27 = {
+      onPress: tmp4(10300).closeSocialLayerStorefrontProductDetailsModal,
       backImage() {
-          return closure_2_14(XSmallIcon.XSmallIcon, { size: "md", style: closeButtonIcon.closeButtonIcon });
+          const obj = { size: "md", style: closeButtonIcon.closeButtonIcon };
+          return authStore2(XSmallIcon.XSmallIcon, obj);
         },
-      accessibilityLabel: null,
+      accessibilityLabel: intl3.string(tmp4(1127).t.cpT0Cq),
       displayMode: "minimal"
     };
-    const intl3 = tmp4(1115).intl;
-    obj28.accessibilityLabel = intl3.string(tmp4(1115).t.cpT0Cq);
-    const items17 = [closure_14(tmp4(5880).HeaderBackButton, obj28), ];
-    const obj29 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerTitle, children: null };
-    let name;
+    const HeaderBackButton = tmp4(5942).HeaderBackButton;
+    intl3 = tmp4(1127).intl;
+    items17 = [closure_14(HeaderBackButton, obj27), ];
+    const obj28 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerTitle, children: name };
+    name = undefined;
+    const Heading = tmp4(4833).Heading;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
     }
-    obj29.children = name;
-    items17[1] = closure_14(tmp4(4784).Heading, obj29);
-    obj27.children = items17;
-    items16[1] = closure_15(memo1, obj27);
-    const obj30 = { style: tmp.scrollContainer, children: null };
+    items17[1] = closure_14(Heading, obj28);
+    items16[1] = closure_15(memo1, obj26);
     let exclusive = stateFromStores.exclusive;
+    const obj29 = { style: tmp.scrollContainer, children: items19 };
     if (exclusive) {
-      const obj31 = { style: stateFromStores2.absoluteFill, colors: null, pointerEvents: "none" };
-      const items18 = [closure_16, closure_17];
-      obj31.colors = items18;
-      exclusive = tmp65(tmp2(5230), obj31);
+      const obj30 = { style: stateFromStores2.absoluteFill, colors: items18, pointerEvents: "none" };
+      items18 = [closure_16, closure_17];
+      exclusive = tmp67(tmp2(5292), obj30);
     }
-    const items19 = [exclusive, ];
+    items19 = [exclusive, ];
     if (isScreenLandscape) {
-      const obj32 = { style: tmp.columnsLandscape, children: null };
-      const obj33 = { style: tmp.heroColumnLandscape, contentContainerStyle: null, children: null };
-      const items20 = [tmp.heroColumnContentLandscape, ];
-      const obj34 = { paddingBottom: rect.bottom + 8 };
-      items20[1] = obj34;
-      obj33.contentContainerStyle = items20;
-      const items21 = [tmp49, ];
-      const obj35 = { style: tmp.bundleGroupLandscape, children: null };
-      const items22 = [tmp56, tmp60];
-      obj35.children = items22;
-      items21[1] = tmp63(tmp64, obj35);
-      obj33.children = items21;
-      const items23 = [tmp63(stateFromStores1, obj33), ];
-      const obj36 = { style: tmp.detailsScrollLandscape, contentContainerStyle: null, children: null };
-      const items24 = [, ];
+      const obj32 = { style: tmp.heroColumnLandscape, contentContainerStyle: items20, children: items21 };
+      items20 = [tmp.heroColumnContentLandscape, ];
+      const obj31 = { style: tmp.columnsLandscape, children: items23 };
+      const obj33 = { paddingBottom: rect.bottom + 8 };
+      items20[1] = obj33;
+      items21 = [tmp51, ];
+      const obj34 = { style: tmp.bundleGroupLandscape, children: items22 };
+      items22 = [tmp58, tmp62];
+      items21[1] = closure_15(memo1, obj34);
+      items23 = [closure_15(stateFromStores1, obj32), ];
+      const obj35 = { style: tmp.detailsScrollLandscape, contentContainerStyle: items24, children: items26 };
+      items24 = [, ];
       ({ scrollContent: arr30[0], detailsContentLandscape: arr30[1] } = tmp);
-      obj36.contentContainerStyle = items24;
-      const obj37 = { style: tmp.detailsGroupLandscape, children: null };
-      const items25 = [tmp53, ];
-      const obj38 = { sku: stateFromStores };
-      items25[1] = tmp65(SKUNameAndDescriptionSection, obj38);
-      obj37.children = items25;
-      const items26 = [tmp63(tmp64, obj37), tmp63Result];
-      obj36.children = items26;
-      items23[1] = tmp63(stateFromStores1, obj36);
-      obj32.children = items23;
-      let tmp63Result2 = tmp63(tmp64, obj32);
+      const obj36 = { style: tmp.detailsGroupLandscape, children: items25 };
+      items25 = [tmp55, ];
+      const obj37 = { sku: stateFromStores };
+      items25[1] = closure_14(closure_23, obj37);
+      items26 = [closure_15(memo1, obj36), tmp65Result];
+      items23[1] = closure_15(stateFromStores1, obj35);
+      tmp65Result2 = tmp65(tmp66, obj31);
     } else {
-      const obj39 = { contentContainerStyle: tmp.scrollContent, children: null };
-      const items27 = [tmp49, tmp53, , , ];
-      const obj40 = { sku: stateFromStores };
-      items27[2] = tmp65(SKUNameAndDescriptionSection, obj40);
-      items27[3] = tmp56;
-      items27[4] = tmp60;
-      obj39.children = items27;
-      tmp63Result2 = tmp63(stateFromStores1, obj39);
+      const obj38 = { contentContainerStyle: tmp.scrollContent, children: items27 };
+      items27 = [tmp51, tmp55, , , ];
+      const obj39 = { sku: stateFromStores };
+      items27[2] = closure_14(closure_23, obj39);
+      items27[3] = tmp58;
+      items27[4] = tmp62;
+      tmp65Result2 = tmp65(stateFromStores1, obj38);
     }
-    items19[1] = tmp63Result2;
-    obj30.children = items19;
-    items16[2] = closure_15(memo1, obj30);
-    let tmp82 = !isScreenLandscape;
-    if (!isScreenLandscape) {
-      tmp82 = tmp63Result;
-    }
-    items16[3] = tmp82;
-    obj25.children = items16;
-    return closure_15(memo1, obj25);
+    items19[1] = tmp65Result2;
+    items16[2] = closure_15(memo1, obj29);
+    items16[3] = !isScreenLandscape && tmp65Result;
+    return closure_15(memo1, obj24);
   }
-  tmp4Result6 = skuId(1364);
-}
-get_ActivityIndicator = fn(17);
-({ ScrollView: hasOwnProperty, StyleSheet: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const SlayerShopPDPCTAType = fn(11096).SlayerShopPDPCTAType;
-const Constants = fn(1074);
-({ AnalyticEvents: closure_11, PaymentGateways: closure_12, PriceSetAssignmentPurchaseTypes: map1 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-let n = n_mod;
-const importDefaultResultResult = n(nativeDefault.unsafe_rawColors.BRAND_500);
-let closure_16 = n(nativeDefault.unsafe_rawColors.BRAND_500).alpha(0.25).hex();
-let n = n_mod;
-const alphaResult = n(nativeDefault.unsafe_rawColors.BRAND_500).alpha(0.25);
-const importDefaultResult1Result = n(nativeDefault.unsafe_rawColors.BRAND_500);
-let closure_17 = n(nativeDefault.unsafe_rawColors.BRAND_500).alpha(0).hex();
-const createStyles = fn(4788);
-let obj = { container: { flex: 1 }, header: null, headerTitle: null, closeButtonIcon: null, scrollContent: null, scrollContainer: null, columnsLandscape: null, heroColumnLandscape: null, heroColumnContentLandscape: null, bundleGroupLandscape: null, detailsScrollLandscape: null, detailsContentLandscape: null, detailsGroupLandscape: null, section: null, bundleThumbnailRow: null, thumbnail: null, thumbnailSelected: null, thumbnailInner: null, thumbnailInnerSelected: null, thumbnailImage: null, labelRow: null, labelIcon: null, priceRow: null, footer: null, footerButtonRow: null, buyButton: null, availabilityCopy: null, legalCopy: null, hero: null, heroLandscape: null, priceSection: null, heroImage: null, exclusiveBadgeContainer: null };
-const alphaResult1 = n(nativeDefault.unsafe_rawColors.BRAND_500).alpha(0);
-obj.header = { height: fn(5931).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
-obj.headerTitle = { flexShrink: 1 };
-let obj2 = { height: fn(5931).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
-obj.closeButtonIcon = { tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-let obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-obj.scrollContent = { alignItems: "stretch", gap: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16 };
-obj.scrollContainer = { flex: 1 };
-let obj4 = { alignItems: "stretch", gap: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16 };
-obj.columnsLandscape = { flex: 1, flexDirection: "row", gap: nativeDefault.space.PX_16 };
-obj.heroColumnLandscape = { flex: 1 };
-let obj6 = { flex: 1, flexDirection: "row", gap: nativeDefault.space.PX_16 };
-obj.heroColumnContentLandscape = { flexGrow: 1, gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16 };
-let obj7 = { flexGrow: 1, gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16 };
-obj.bundleGroupLandscape = { gap: nativeDefault.space.PX_4 };
-obj.detailsScrollLandscape = { flex: 1 };
-obj.detailsContentLandscape = { flexGrow: 1, justifyContent: "space-between", paddingBottom: 0 };
-let obj8 = { gap: nativeDefault.space.PX_4 };
-obj.detailsGroupLandscape = { gap: nativeDefault.space.PX_16 };
-let obj9 = { gap: nativeDefault.space.PX_16 };
-obj.section = { width: "100%", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
-let obj10 = { width: "100%", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
-obj.bundleThumbnailRow = { flexDirection: "row", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4 };
-let size = { width: 64, height: 64, borderRadius: nativeDefault.radii.md, borderWidth: 2, borderColor: "transparent" };
-obj.thumbnail = size;
-let obj11 = { flexDirection: "row", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4 };
-obj.thumbnailSelected = { borderColor: nativeDefault.colors.BORDER_STRONG };
-let obj12 = { borderColor: nativeDefault.colors.BORDER_STRONG };
-obj.thumbnailInner = { flex: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-let obj13 = { flex: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj.thumbnailInnerSelected = { margin: 2, borderRadius: nativeDefault.radii.sm };
-obj.thumbnailImage = { width: "100%", height: "100%" };
-let obj14 = { margin: 2, borderRadius: nativeDefault.radii.sm };
-obj.labelRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-const size1 = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16 };
-obj.labelIcon = size1;
-let obj15 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj.priceRow = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
-let obj16 = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
-obj.footer = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-let obj17 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-obj.footerButtonRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj.buyButton = { flex: 1 };
-obj.availabilityCopy = { textAlign: "center" };
-let obj18 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj.legalCopy = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_4 };
-let obj19 = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_4 };
-obj.hero = { marginHorizontal: nativeDefault.space.PX_16, height: fn(11097).MOBILE_HERO_HEIGHT_PX, borderRadius: nativeDefault.radii.md, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj.heroLandscape = { flex: 1, minHeight: 140, height: "accessible" };
-let obj20 = { marginHorizontal: nativeDefault.space.PX_16, height: fn(11097).MOBILE_HERO_HEIGHT_PX, borderRadius: nativeDefault.radii.md, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj.priceSection = { width: "100%", gap: nativeDefault.space.PX_8 };
-obj.heroImage = { width: "100%", height: "100%" };
-let obj21 = { width: "100%", gap: nativeDefault.space.PX_8 };
-obj.exclusiveBadgeContainer = { paddingHorizontal: nativeDefault.space.PX_16 };
-let closure_18 = createStyles.createStyles(obj);
-size = fn(2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let obj3;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const obj2 = { skuIDs: first, activeSubscription: null, children: authStore2(closure_25, obj3) };
+    obj3 = {};
+    const NativePaymentContextProvider = NativePaymentContext.NativePaymentContextProvider;
+    const merged = Object.assign(arg0);
+    const tmp11 = authStore2(NativePaymentContextProvider, obj2);
+    cResult[1] = arg0;
+    cResult[2] = tmp11;
+    tmp5 = tmp11;
+  } else {
+    tmp5 = cResult[2];
+  }
+  return tmp5;
+}) : ((arg0) => {
+  let obj2;
+  const obj = { skuIDs: [], activeSubscription: null, children: authStore2(closure_25, obj2) };
+  obj2 = {};
+  const NativePaymentContextProvider = NativePaymentContext.NativePaymentContextProvider;
+  const merged = Object.assign(arg0);
+  return authStore2(NativePaymentContextProvider, obj);
+});
+size = size_mod;
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontProductDetailsModal.tsx");
 
-export default function WrappedSocialLayerStorefrontProductDetailsModal(arg0) {
-  const obj = { skuIDs: [], activeSubscription: null, children: null };
-  const merged = Object.assign(arg0);
-  obj.children = closure_1_14(SocialLayerStorefrontProductDetailsModal, {});
-  return closure_1_14(NativePaymentContext.NativePaymentContextProvider, obj);
-};
+export default tmp8;

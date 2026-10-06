@@ -1,26 +1,27 @@
-// Module ID: 12430
-// Function ID: 12431
+// Module ID: 11516
+// Function ID: 11517
 // Name: useFilterAndSortToOnlyFrecentCommands
-// Dependencies: [19, 9438, 12310, 9445, 2]
+// Dependencies: [19, 8590, 11386, 8597, 2]
 // Exports: default
 
-// Module 12430 (useFilterAndSortToOnlyFrecentCommands)
-import noop from "module_19" /* 19 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9438 */;
+// Module 11516 (useFilterAndSortToOnlyFrecentCommands)
+import react from "react" /* 19 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 8590 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/hooks/useFilterAndSortToOnlyFrecentCommands.tsx");
 
 export default function useFilterAndSortToOnlyFrecentCommands(commands) {
   commands = commands.commands;
   let length = commands.limit;
+  const context = commands.context;
   if (length === undefined) {
     length = commands.length;
   }
-  const commandContext = commands(length[2]).useCommandContext(commands.context);
   const obj = commands(length[2]);
-  const topCommands = commands(length[3]).useTopCommands(commandContext);
+  const commandContext = obj.useCommandContext(context);
+  const obj2 = commands(length[3]);
+  const topCommands = obj2.useTopCommands(commandContext);
   const items = [commands];
   const memo = commandContext.useMemo(() => commands.reduce((acc, id) => {
     acc[id.id] = id;

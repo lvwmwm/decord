@@ -1,17 +1,19 @@
-// Module ID: 7464
-// Function ID: 7465
+// Module ID: 6609
+// Function ID: 6610
 // Name: RoleIconUtils
-// Dependencies: [1074, 1364, 4441, 1431, 1397, 2]
+// Dependencies: [1086, 1370, 4486, 1438, 1403, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 7464 (RoleIconUtils)
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4441 */;
-import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+// Module 6609 (RoleIconUtils)
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4486 */;
+import Constants from "Constants" /* 1086 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 ({ Endpoints: c3, GuildFeatures: closure_4 } = Constants);
 let closure_5 = "" + location.protocol + "//" + window.GLOBAL_ENV.CDN_HOST + "/role-icons";
 let closure_6 = "" + location.protocol + window.GLOBAL_ENV.API_ENDPOINT;
@@ -19,9 +21,13 @@ let closure_7 = PlatformUtils.isAndroid();
 const result = size.fileFinishedImporting("modules/guild_boosting/RoleIconUtils.tsx");
 
 export const getRoleIconData = function getRoleIconData(role, size) {
+  let icon;
+  let id;
   if (null == role) {
     return null;
   } else {
+    let byName;
+    let tmp23;
     ({ id, icon } = role);
     let combined;
     if (null != icon) {
@@ -34,10 +40,11 @@ export const getRoleIconData = function getRoleIconData(role, size) {
         let str3 = "quality=lossless";
         let str5 = "";
         if (null != size) {
-          tmp2(1431);
-          tmp2(1431);
+          const getBestMediaProxySize = ImageLoaderUtils.getBestMediaProxySize;
+          ImageLoaderUtils;
+          ImageLoaderUtils;
           let str7 = "";
-          const text = `size=${tmp6(size * obj.getDevicePixelRatio())}`;
+          const text = `size=${getBestMediaProxySize(size * obj.getDevicePixelRatio())}`;
           if (!closure_7) {
             str7 = "&quality=lossless";
           }
@@ -50,36 +57,38 @@ export const getRoleIconData = function getRoleIconData(role, size) {
           combined = "" + closure_5 + "/" + id + "/" + icon + "." + str2 + "?" + str5 + str3;
         } else {
           const _HermesInternal = HermesInternal;
-          combined = "" + closure_6 + React3.ROLE_ICON(id, icon) + "?" + str5;
+          combined = "" + closure_6 + _false.ROLE_ICON(id, icon) + "?" + str5;
         }
       }
     }
     if (null != role.unicodeEmoji) {
+      const getByName = UnicodeEmojisDefault.getByName;
+      UnicodeEmojisDefault;
       const obj2 = UnicodeEmojisDefault;
-      const byName = obj2.getByName(UnicodeEmojisDefault.convertSurrogateToName(role.unicodeEmoji, false));
+      byName = getByName(obj2.convertSurrogateToName(role.unicodeEmoji, false));
     }
     if (null != combined) {
-      const obj4 = { customIconSrc: combined, unicodeEmoji: byName };
-      let tmp23 = obj4;
+      tmp23 = { customIconSrc: combined, unicodeEmoji: byName };
+      const obj3 = { customIconSrc: combined, unicodeEmoji: byName };
     } else {
       tmp23 = null;
     }
     return tmp23;
   }
 };
-export const replaceRoleIconSourceSize = function replaceRoleIconSourceSize(str, arg1) {
+export const replaceRoleIconSourceSize = function replaceRoleIconSourceSize(arg0, arg1) {
+  const replace = arg0.replace;
+  const getBestMediaProxySize = ImageLoaderUtils.getBestMediaProxySize;
+  ImageLoaderUtils;
   const obj = ImageLoaderUtils;
-  return str.replace(/size=[0-9]+/g, "size=" + obj.getBestMediaProxySize(arg1 * ImageLoaderUtils.getDevicePixelRatio()));
+  return replace(/size=[0-9]+/g, "size=" + getBestMediaProxySize(arg1 * obj.getDevicePixelRatio()));
 };
 export const isRoleIconAssetUrl = function isRoleIconAssetUrl(str) {
   let startsWithResult = str.startsWith(closure_5);
   if (!startsWithResult) {
     const _HermesInternal = HermesInternal;
-    let startsWithResult1 = str.startsWith("" + closure_6 + "/roles");
-    if (startsWithResult1) {
-      startsWithResult1 = str.includes("/icons/");
-    }
-    startsWithResult = startsWithResult1;
+    startsWithResult = str.startsWith("" + closure_6 + "/roles") && str.includes("/icons/");
+    const startsWithResult1 = str.startsWith("" + closure_6 + "/roles") && str.includes("/icons/");
   }
   return startsWithResult;
 };

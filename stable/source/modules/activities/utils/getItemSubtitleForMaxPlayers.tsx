@@ -1,43 +1,46 @@
-// Module ID: 12428
-// Function ID: 12429
+// Module ID: 11514
+// Function ID: 11515
 // Name: getItemSubtitleForMaxPlayers
-// Dependencies: [1115, 2]
+// Dependencies: [1127, 2]
 // Exports: default, getItemSubtitleForMaxPlayersShort, getItemSubtitleForMaxPlayersShorter
 
-// Module 12428 (getItemSubtitleForMaxPlayers)
-import util from "util" /* 1115 */;
+// Module 11514 (getItemSubtitleForMaxPlayers)
+import intl3 from "intl" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getItemSubtitleForMaxPlayers.tsx");
 
 export default function getItemSubtitleForMaxPlayers(count) {
+  let formatToPlainStringResult;
   if (count > 0) {
-    const intl2 = util.intl;
+    const intl2 = intl3.intl;
     const obj = { count };
-    let formatToPlainStringResult = intl2.formatToPlainString(util.t["p/YmkR"], obj);
+    formatToPlainStringResult = intl2.formatToPlainString(intl3.t["p/YmkR"], obj);
   } else {
-    const intl = util.intl;
-    formatToPlainStringResult = intl.string(util.t.s1vQIL);
+    const intl = intl3.intl;
+    formatToPlainStringResult = intl.string(intl3.t.s1vQIL);
   }
   return formatToPlainStringResult;
 };
 export const getItemSubtitleForMaxPlayersShort = function getItemSubtitleForMaxPlayersShort(arg0) {
+  let combined;
   if (arg0 > 0) {
     const _HermesInternal = HermesInternal;
-    let combined = "1 - " + arg0;
+    combined = "1 - " + arg0;
   } else {
-    const intl = util.intl;
-    combined = intl.string(util.t.zMNEiF);
+    const intl = intl3.intl;
+    combined = intl.string(intl3.t.zMNEiF);
   }
   return combined;
 };
 export const getItemSubtitleForMaxPlayersShorter = function getItemSubtitleForMaxPlayersShorter(arg0) {
+  let combined;
   if (arg0 > 0) {
     const _HermesInternal = HermesInternal;
-    let combined = "1-" + arg0;
+    combined = "1-" + arg0;
   } else {
-    const intl = util.intl;
-    combined = intl.string(util.t.zMNEiF);
+    const intl = intl3.intl;
+    combined = intl.string(intl3.t.zMNEiF);
   }
   return combined;
 };

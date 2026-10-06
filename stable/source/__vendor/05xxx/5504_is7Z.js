@@ -1,0 +1,39 @@
+// Module ID: 5504
+// Function ID: 5505
+// Name: is7Z
+// Dependencies: [5499, 5500]
+// Exports: is7Z, isLZH, isRAR, isZIP
+
+// Module 5504 (is7Z)
+import _mod5499 from "module_5499" /* 5499 */;
+import _mod5500 from "module_5500" /* 5500 */;
+
+
+export const is7Z = function is7Z(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "_7z");
+};
+export const isLZH = function isLZH(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "lzh");
+};
+export const isRAR = function isRAR(fileChunk) {
+  fileChunk = _mod5499.getFileChunk(fileChunk);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "rar");
+};
+export const isZIP = function isZIP(fileChunk, chunkSize) {
+  let num;
+  const getFileChunk = _mod5499.getFileChunk;
+  if (null != chunkSize) {
+    num = chunkSize.chunkSize;
+  }
+  if (!num) {
+    num = 64;
+  }
+  fileChunk = getFileChunk(fileChunk, num);
+  const FileTypes = _mod5500.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "zip");
+};

@@ -1,11 +1,11 @@
-// Module ID: 15245
-// Function ID: 15246
+// Module ID: 14488
+// Function ID: 14489
 // Name: shouldWarnConnectedAccountTwoWay
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: default
 
-// Module 15245 (shouldWarnConnectedAccountTwoWay)
-import Constants from "Constants" /* 1074 */;
+// Module 14488 (shouldWarnConnectedAccountTwoWay)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const items = [, , , ];
@@ -14,5 +14,6 @@ const set = new Set(items);
 const result = size.fileFinishedImporting("modules/connections/shouldWarnConnectedAccountTwoWay.tsx");
 
 export default function shouldWarnConnectedAccountTwoWay(type) {
-  return set.has(type.type) && type.twoWayLink;
+  const tmp = set.has(type.type) && type.twoWayLink;
+  return tmp;
 };

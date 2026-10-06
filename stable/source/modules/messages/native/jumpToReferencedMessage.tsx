@@ -1,11 +1,11 @@
-// Module ID: 12212
-// Function ID: 12213
+// Module ID: 11285
+// Function ID: 11286
 // Name: jumpToReferencedMessage
-// Dependencies: [7730, 2]
+// Dependencies: [6880, 2]
 // Exports: default
 
-// Module 12212 (jumpToReferencedMessage)
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7730 */;
+// Module 11285 (jumpToReferencedMessage)
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6880 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/jumpToReferencedMessage.tsx");
@@ -16,10 +16,11 @@ export default function jumpToReferencedMessage(messageReference) {
   if (messageReference != null) {
     channel_id = messageReference.channel_id;
   }
+  const tmp2 = null != channel_id && null != messageReference.message_id;
   if (tmp2) {
-    const obj3 = { channelId: null, messageId: null, flash: true, returnMessageId: null };
+    const obj3 = { channelId: null, messageId: null, flash: true, returnMessageId: messageReference.id };
     ({ channel_id: obj2.channelId, message_id: obj2.messageId } = messageReference);
-    obj3.returnMessageId = messageReference.id;
-    MessageActionCreatorsDefault.jumpToMessage(obj3);
+    const obj = MessageActionCreatorsDefault;
+    obj.jumpToMessage(obj3);
   }
 };

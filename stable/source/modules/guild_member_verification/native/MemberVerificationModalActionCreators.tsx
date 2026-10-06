@@ -1,27 +1,31 @@
-// Module ID: 5819
-// Function ID: 5820
+// Module ID: 5883
+// Function ID: 5884
 // Name: guild_member_verification/MemberVerificationModalActionCreators
-// Dependencies: [5302, 1074, 1241, 5796, 4991, 5820, 1980, 2]
+// Dependencies: [5367, 1086, 1253, 5860, 5040, 5884, 1987, 2]
 
-// Module 5819 (guild_member_verification/MemberVerificationModalActionCreators)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5796 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 5302 */;
+// Module 5883 (guild_member_verification/MemberVerificationModalActionCreators)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5860 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 5367 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 ({ MEMBER_VERIFICATION_TYPE: c3, IN_APP_MEMBER_VERIFICATION_MODAL_KEY: closure_4 } = MemberVerificationConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalActionCreators.tsx");
-
-export default {
-  openMemberVerificationModal(guildId, connect) {
-    const verificationForm = MemberVerificationActionCreatorsDefault.fetchVerificationForm(guildId);
-    AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_MODAL, { type, guild_id: guildId });
+let obj = {
+  openMemberVerificationModal(guildId, startCreateForumPostFlow) {
+    const obj = MemberVerificationActionCreatorsDefault;
+    const verificationForm = obj.fetchVerificationForm(guildId);
+    const obj2 = AnalyticsUtilsDefault;
     const obj3 = { type, guild_id: guildId };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(5820, dependencyMap.paths), { guildId, onClose: connect }, React4);
+    obj2.track(AnalyticEvents.OPEN_MODAL, obj3);
+    const obj4 = ModalActionCreatorsDefault;
+    const obj5 = { guildId, onClose: startCreateForumPostFlow };
+    obj4.pushLazy(asyncRequire(5884, dependencyMap.paths), obj5, React3);
   },
   closeMemberVerificationModal() {
     let flag = arg0;
@@ -30,8 +34,13 @@ export default {
     }
     if (!flag) {
       const obj2 = { type };
-      AnalyticsUtilsDefault.track(AnalyticEvents.MODAL_DISMISSED, obj2);
+      const obj = AnalyticsUtilsDefault;
+      obj.track(AnalyticEvents.MODAL_DISMISSED, obj2);
     }
-    ModalActionCreatorsDefault.popWithKey(React4);
+    const obj3 = ModalActionCreatorsDefault;
+    obj3.popWithKey(React3);
   }
 };
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalActionCreators.tsx");
+
+export default obj;

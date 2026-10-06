@@ -1,40 +1,70 @@
-// Module ID: 15799
-// Function ID: 15800
+// Module ID: 15060
+// Function ID: 15061
 // Name: HighlightNotificationsSetting
-// Dependencies: [2063, 8265, 1074, 504, 11754, 1115, 15800, 2]
-// Exports: useHighlightNotifications
+// Dependencies: [2073, 7421, 1086, 558, 576, 504, 10874, 1127, 15061, 2]
 
-// Module 15799 (HighlightNotificationsSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 15060 (HighlightNotificationsSetting)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function useHighlightNotifications() {
+const require = globalThis.__r;
+
+let tmp;
+const get_initialized = tmp(504);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let guildCount;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    const fn = function s() {
+      return guildCount.getGuildCount() > 0;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let guildCount;
   const items = [GuildStore];
-  return initialize.useStateFromStores(items, () => guildCount.getGuildCount() > 0);
-}
-const SettingBuilders = fn(11754);
-const route = SettingBuilders.createRoute({
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => guildCount.getGuildCount() > 0);
+});
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.o8Bypv);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.o8Bypv);
   },
-  parent: fn(8265).MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t["Vw/Xn8"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["Vw/Xn8"]);
   },
-  usePredicate: useHighlightNotifications,
+  usePredicate: tmp2,
   screen: {
-    route: fn(1074).UserSettingsSections.HIGHLIGHT_NOTIFICATIONS,
+    route: UserSettingsSections.HIGHLIGHT_NOTIFICATIONS,
     getComponent() {
       return require("UserSettingsHighlightNotifications").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/HighlightNotificationsSetting.tsx");
 
 export default route;
-export { useHighlightNotifications };
+export const useHighlightNotifications = tmp2;

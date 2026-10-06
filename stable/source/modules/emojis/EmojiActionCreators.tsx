@@ -1,18 +1,22 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 9641
+// Function ID: 9642
 // Name: emojis/EmojiActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: initiateEmojiInteraction, toggleGuildExpandedState
 
-// Module 10628 (emojis/EmojiActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 9641 (emojis/EmojiActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emojis/EmojiActionCreators.tsx");
 
 export const toggleGuildExpandedState = function toggleGuildExpandedState(guildId) {
-  DispatcherDefault.dispatch({ type: "TOGGLE_GUILD_EXPANDED_STATE", guildId });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "TOGGLE_GUILD_EXPANDED_STATE", guildId };
+  obj.dispatch(obj2);
 };
 export const initiateEmojiInteraction = function initiateEmojiInteraction(AutocompleteWrapperShown) {
-  DispatcherDefault.dispatch({ type: "EMOJI_INTERACTION_INITIATED", interaction: AutocompleteWrapperShown });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "EMOJI_INTERACTION_INITIATED", interaction: AutocompleteWrapperShown };
+  obj.dispatch(obj2);
 };

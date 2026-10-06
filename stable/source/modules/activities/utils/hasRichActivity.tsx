@@ -1,28 +1,24 @@
-// Module ID: 4829
-// Function ID: 4830
+// Module ID: 4878
+// Function ID: 4879
 // Name: hasRichActivity
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: default
 
-// Module 4829 (hasRichActivity)
-import Constants from "Constants" /* 1074 */;
+// Module 4878 (hasRichActivity)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/activities/utils/hasRichActivity.tsx");
 
 export default function hasRichActivity(type) {
-  let tmp = null != type;
-  if (tmp) {
-    tmp = type.type !== ActivityTypes.CUSTOM_STATUS;
-  }
+  let tmp = null != type && type.type !== ActivityTypes.CUSTOM_STATUS;
   if (tmp) {
     let tmp3 = null != type.details;
     if (!tmp3) {
       let tmp4 = null != type.assets;
       if (tmp4) {
         tmp4 = null != type.assets.large_image || null != type.assets.small_text;
-        const tmp5 = null != type.assets.large_image || null != type.assets.small_text;
       }
       tmp3 = tmp4;
     }

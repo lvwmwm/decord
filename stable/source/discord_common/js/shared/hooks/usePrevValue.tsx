@@ -1,14 +1,14 @@
-// Module ID: 9928
-// Function ID: 9929
-// Name: usePrevValue
+// Module ID: 9066
+// Function ID: 9067
+// Name: react
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 9928 (usePrevValue)
-import _mod19 from "module_19" /* 19 */;
+// Module 9066 (react)
+import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const useRef = _mod19.useRef;
+const useRef = react.useRef;
 const result = size.fileFinishedImporting("../discord_common/js/shared/hooks/usePrevValue.tsx");
 
 export default function usePrevValue(current) {

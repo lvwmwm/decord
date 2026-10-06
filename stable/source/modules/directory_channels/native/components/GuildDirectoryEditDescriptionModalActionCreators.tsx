@@ -1,21 +1,24 @@
-// Module ID: 12597
-// Function ID: 12598
+// Module ID: 11690
+// Function ID: 11691
 // Name: GuildDirectoryEditDescriptionModalActionCreators
-// Dependencies: [4991, 12598, 1980, 2]
+// Dependencies: [5040, 11691, 1987, 2]
 
-// Module 12597 (GuildDirectoryEditDescriptionModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+// Module 11690 (GuildDirectoryEditDescriptionModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
 import size from "module_2" /* 2 */;
 
-let c3 = "GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY";
-const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEditDescriptionModalActionCreators.tsx");
-
-export default {
+const GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY = "GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY";
+let obj = {
   open(merged) {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12598, dependencyMap.paths), merged, c3);
+    const obj = ModalActionCreatorsDefault;
+    obj.pushLazy(asyncRequire(11691, dependencyMap.paths), merged, GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY);
   },
   close() {
-    ModalActionCreatorsDefault.popWithKey(c3);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY);
   }
 };
+const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEditDescriptionModalActionCreators.tsx");
+
+export default obj;

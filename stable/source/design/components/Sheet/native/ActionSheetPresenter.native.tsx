@@ -1,20 +1,180 @@
-// Module ID: 14443
-// Function ID: 14444
+// Module ID: 13946
+// Function ID: 13947
 // Name: ActionSheetPresenter
-// Dependencies: [32, 19, 17, 4479, 1074, 21, 9080, 1249, 4755, 5213, 7429, 5199, 504, 12706, 5147, 2]
-// Exports: ActionSheetPresenter
+// Dependencies: [32, 19, 17, 4524, 1086, 21, 558, 576, 1261, 8227, 4801, 5277, 5263, 6574, 504, 11810, 5211, 2]
 
-// Module 14443 (ActionSheetPresenter)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4479 */;
+// Module 13946 (ActionSheetPresenter)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8227 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import ActionSheetStore from "ActionSheetStore" /* 4524 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const StyleSheet = fn(17).StyleSheet;
-const NOOP = fn(1074).NOOP;
-const jsx = fn(21).jsx;
-let closure_9 = noop.forwardRef((sheetKey, ref) => {
+let appEntryKey, dependencyMap, sheetKey;
+
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const StyleSheet = react_native.StyleSheet;
+const NOOP = Constants.NOOP;
+const jsx = Fragment.jsx;
+const forwardRef = react.forwardRef;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((sheetKey, ref) => {
+  let closure_4;
+  let content;
+  let first;
+  let impressionName;
+  let impressionProperties;
+  let ref2;
+  let tmp5;
+  let tmp8;
+  let zIndex;
+  let obj = sheetKey(576);
+  const cResult = obj.c(22);
+  sheetKey = sheetKey.sheetKey;
+  ({ content, impressionName, impressionProperties, zIndex } = sheetKey);
+  [tmp5, importDefault] = react.useState("visible");
+  _slicedToArray(react.useState("visible"), 2);
+  dependencyMap = react.useRef(NOOP);
+  const tmp6 = NOOP;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function p(current) {
+      ref.current = current;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  _slicedToArray = obj2.useRef(tmp6);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function _() {
+      ref2.current();
+    };
+    cResult[1] = fn2;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] === impressionName) {
+    let tmp9;
+    let tmp13;
+    let tmp12;
+    let tmp16;
+    if (cResult[3] === impressionProperties) {
+      tmp9 = cResult[4];
+    }
+    useTrackImpressionDefault(tmp9);
+    const _Symbol = Symbol;
+    const tmp10 = importDefault;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn3 = function k() {
+        return {
+          componentDidEnter() {
+            closure_1_1("visible");
+          },
+          componentWillLeave(current) {
+            closure_1_1("exiting");
+            ref2.current = current;
+          },
+          componentDidLeave() {
+            closure_1_1("exited");
+            ref2.current = current;
+          }
+        };
+      };
+      const items = [];
+      cResult[5] = fn3;
+      cResult[6] = items;
+      tmp13 = items;
+      tmp12 = fn3;
+    } else {
+      tmp12 = cResult[5];
+      tmp13 = cResult[6];
+    }
+    const imperativeHandle = obj2.useImperativeHandle(ref, tmp12, tmp13);
+    if (cResult[7] !== sheetKey) {
+      const fn4 = function z() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(sheetKey);
+      };
+      cResult[7] = sheetKey;
+      cResult[8] = fn4;
+      tmp16 = fn4;
+    } else {
+      tmp16 = cResult[8];
+    }
+    react = tmp16;
+    if (cResult[9] === tmp16) {
+      let tmp18;
+      if (cResult[12] !== tmp16) {
+        class N {
+          constructor() {
+            current = ref.current;
+            if (current != null) {
+              current();
+            }
+            closure_4();
+            return true;
+          }
+        }
+        cResult[12] = tmp16;
+        cResult[13] = N;
+        tmp18 = N;
+      } else {
+        class N {
+          constructor() {
+            current = ref.current;
+            if (current != null) {
+              current();
+            }
+            closure_4();
+            return true;
+          }
+        }
+      }
+      tmp10(5277)(tmp18);
+      if (cResult[14] === tmp16) {
+        class N {
+          constructor() {
+            current = ref.current;
+            if (current != null) {
+              current();
+            }
+            closure_4();
+            return true;
+          }
+        }
+      }
+      cResult[14] = tmp16;
+      cResult[15] = content;
+      cResult[16] = sheetKey;
+      cResult[17] = zIndex;
+      cResult[18] = jsx(sheetKey(5263).Dialog, { dialogKey: sheetKey, onDismiss: tmp16, zIndex, children: content });
+      const tmp22 = jsx(sheetKey(5263).Dialog, { dialogKey: sheetKey, onDismiss: tmp16, zIndex, children: content });
+    }
+    const obj4 = { transitionState: tmp5, close: tmp16, onLeave: tmp8, registerDismissHandler: first };
+    cResult[9] = tmp16;
+    cResult[10] = tmp5;
+    cResult[11] = obj4;
+  }
+  const obj5 = { type: sheetKey(1261).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
+  cResult[2] = impressionName;
+  cResult[3] = impressionProperties;
+  cResult[4] = obj5;
+  tmp9 = obj5;
+}) : ((sheetKey, ref) => {
+  let closure_2;
+  let content;
+  let impressionName;
+  let impressionProperties;
+  let transitionState;
+  let zIndex;
   sheetKey = sheetKey.sheetKey;
   transitionState = undefined;
   dependencyMap = undefined;
@@ -24,14 +184,15 @@ let closure_9 = noop.forwardRef((sheetKey, ref) => {
   [transitionState, dependencyMap] = registerDismissHandler.useState("visible");
   _slicedToArray = registerDismissHandler.useRef(callback2);
   registerDismissHandler = registerDismissHandler.useCallback((current) => {
-    closure_3.current = current;
+    ref.current = current;
   }, []);
-  registerDismissHandler.useRef(callback2);
+  const ref2 = registerDismissHandler.useRef(callback2);
   const callback1 = registerDismissHandler.useCallback(() => {
     ref2.current();
   }, []);
-  const obj = { type: sheetKey(1249).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
-  transitionState(9080)(obj);
+  let obj = { type: sheetKey(1261).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
+  const tmp5 = transitionState(8227);
+  tmp5(obj);
   const imperativeHandle = registerDismissHandler.useImperativeHandle(ref, () => ({
     componentDidEnter() {
       closure_1_2("visible");
@@ -47,7 +208,8 @@ let closure_9 = noop.forwardRef((sheetKey, ref) => {
   }), []);
   const items = [sheetKey];
   callback2 = registerDismissHandler.useCallback(() => {
-    ActionSheetActionCreatorsDefault.hideActionSheet(sheetKey);
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet(sheetKey);
   }, items);
   const items1 = [transitionState, callback2, callback1, registerDismissHandler];
   const items2 = [callback2];
@@ -60,23 +222,113 @@ let closure_9 = noop.forwardRef((sheetKey, ref) => {
     callback2();
     return true;
   }, items2);
-  transitionState(5213)(callback3);
-  const tmp5 = transitionState(9080);
-  return jsx(transitionState(7429).Provider, { value: memo, children: jsx(sheetKey(5199).Dialog, { dialogKey: sheetKey, onDismiss: callback2, zIndex, children: content }) });
-});
-const size = fn(2);
-let result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetPresenter.native.tsx");
-
-export const ActionSheetPresenter = function ActionSheetPresenter(appEntryKey) {
+  transitionState(5277)(callback3);
+  const Provider = transitionState(6574).Provider;
+  return <Provider value={memo}>{null}</Provider>;
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appEntryKey) => {
+  let stack;
+  let tmp12;
+  let tmp4;
+  let tmp5;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let obj = appEntryKey(576);
+  const cResult = obj.c(12);
+  appEntryKey = appEntryKey.appEntryKey;
+  if (cResult[0] !== appEntryKey) {
+    const fn = function c() {
+      return () => {
+        const obj = ActionSheetActionCreatorsDefault;
+        const result = obj.resetActionSheetsForAppEntryKey(appEntryKey);
+      };
+    };
+    const items = [appEntryKey];
+    cResult[0] = appEntryKey;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp5 = items;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  const effect = react.useEffect(tmp4, tmp5);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ActionSheetStore];
+    const fn2 = function v() {
+      return stack.getStack();
+    };
+    const items2 = [];
+    cResult[3] = items1;
+    cResult[4] = fn2;
+    cResult[5] = items2;
+    tmp9 = items2;
+    tmp8 = fn2;
+    tmp7 = items1;
+  } else {
+    tmp7 = cResult[3];
+    tmp8 = cResult[4];
+    tmp9 = cResult[5];
+  }
+  const tmpResult = appEntryKey(504);
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp7, tmp8, tmp9);
+  if (cResult[6] === appEntryKey) {
+    let tmp11;
+    let tmp14;
+    if (cResult[7] === stateFromStoresArray) {
+      tmp11 = cResult[8];
+    }
+    if (cResult[10] !== tmp11) {
+      const TransitionGroup = tmp(11810).TransitionGroup;
+      const tmp17 = <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5211).TransitionGroupOverlayView}>{tmp11}</TransitionGroup>;
+      cResult[10] = tmp11;
+      cResult[11] = tmp17;
+      tmp14 = tmp17;
+    } else {
+      tmp14 = cResult[11];
+    }
+    return tmp14;
+  }
+  const found = stateFromStoresArray.filter((appEntryKey) => appEntryKey.appEntryKey === appEntryKey);
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class A {
+      constructor(content) {
+        return <closure_1_9 key={arg0.key} sheetKey={arg0.key} content={arg0.content} impressionName={arg0.impressionName} impressionProperties={arg0.impressionProperties} zIndex={arg0.zIndex} />;
+      }
+    }
+    cResult[9] = A;
+    tmp12 = A;
+  } else {
+    class A {
+      constructor(content) {
+        return <closure_1_9 key={arg0.key} sheetKey={arg0.key} content={arg0.content} impressionName={arg0.impressionName} impressionProperties={arg0.impressionProperties} zIndex={arg0.zIndex} />;
+      }
+    }
+  }
+  const mapped = found.map(tmp12);
+  cResult[6] = appEntryKey;
+  cResult[7] = stateFromStoresArray;
+  cResult[8] = mapped;
+  tmp11 = mapped;
+}) : ((appEntryKey) => {
+  let stack;
   appEntryKey = appEntryKey.appEntryKey;
   const items = [appEntryKey];
-  const effect = noop.useEffect(() => () => {
-    const result = ActionSheetActionCreatorsDefault.resetActionSheetsForAppEntryKey(appEntryKey);
+  const effect = react.useEffect(() => () => {
+    const obj = ActionSheetActionCreatorsDefault;
+    const result = obj.resetActionSheetsForAppEntryKey(appEntryKey);
   }, items);
+  let obj = appEntryKey(504);
   const items1 = [ActionSheetStore];
-  const stateFromStoresArray = appEntryKey(504).useStateFromStoresArray(items1, () => stack.getStack(), []);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => stack.getStack(), []);
   const found = stateFromStoresArray.filter((appEntryKey) => appEntryKey.appEntryKey === appEntryKey);
   const mapped = found.map((content) => <closure_1_9 key={arg0.key} sheetKey={arg0.key} content={arg0.content} impressionName={arg0.impressionName} impressionProperties={arg0.impressionProperties} zIndex={arg0.zIndex} />);
-  const obj = appEntryKey(504);
-  return jsx(appEntryKey(12706).TransitionGroup, { style: StyleSheet.absoluteFill, component: appEntryKey(5147).TransitionGroupOverlayView, children: mapped });
-};
+  const TransitionGroup = appEntryKey(11810).TransitionGroup;
+  return <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5211).TransitionGroupOverlayView}>{mapped}</TransitionGroup>;
+});
+let result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetPresenter.native.tsx");
+
+export const ActionSheetPresenter = tmp3;

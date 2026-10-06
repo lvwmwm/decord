@@ -1,24 +1,85 @@
-// Module ID: 5378
-// Function ID: 5379
+// Module ID: 5443
+// Function ID: 5444
 // Name: NitroFileUploadExperiments
-// Dependencies: [1374, 1434, 2]
-// Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy, useNitroFileUploadRolloutEnabled, useNonNitroFileUploadMarketingEnabled
+// Dependencies: [1380, 1441, 558, 576, 2]
+// Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy
 
-// Module 5378 (NitroFileUploadExperiments)
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1434 */;
+// Module 5443 (NitroFileUploadExperiments)
+import react from "react" /* 576 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-({ MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE: closure_0, MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE_1GB: closure_1 } = PremiumConstants);
+let c2;
+let c3;
+let obj2;
+({ MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE: c2, MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE_1GB: c3 } = PremiumConstants);
 const NitroFileUploadRollout = "NitroFileUploadRollout";
 let ApexExperiment = ApexExperiment_mod;
-let obj = { name: "2026-09-nitro-file-upload-rollout", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj = { name: "2026-09-nitro-file-upload-rollout", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
-let closure_3 = ApexExperiment.createApexExperiment(obj);
-let ApexExperiment = ApexExperiment_mod;
-let closure_4 = ApexExperiment.createApexExperiment({ name: "2026-09-non-nitro-file-upload-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let closure_5 = ApexExperiment.createApexExperiment(obj);
+ApexExperiment = ApexExperiment_mod;
+const obj3 = { name: "2026-09-non-nitro-file-upload-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+let closure_6 = ApexExperiment.createApexExperiment(obj3);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp3;
+  let tmp = arg0;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (arg0 == null) {
+    tmp = NitroFileUploadRollout;
+  }
+  if (cResult[0] !== tmp) {
+    const obj2 = { location: tmp };
+    cResult[0] = tmp;
+    cResult[1] = obj2;
+    tmp3 = obj2;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return closure_5.useConfig(tmp3).enabled;
+}) : ((arg0) => {
+  let _location = arg0;
+  const useConfig = closure_5.useConfig;
+  if (arg0 == null) {
+    _location = NitroFileUploadRollout;
+  }
+  return useConfig({ location: _location }).enabled;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+function getNitroFileUploadRolloutConfig(arg0) {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let _location = obj.location;
+  const getConfig = closure_5.getConfig;
+  if (_location == null) {
+    _location = NitroFileUploadRollout;
+  }
+  return getConfig({ location: _location });
+}
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_6.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return closure_6.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/premium/experiments/NitroFileUploadExperiments.tsx");
 
 export const getNitroFileUploadLimitBytes = function getNitroFileUploadLimitBytes(arg0) {
@@ -27,40 +88,25 @@ export const getNitroFileUploadLimitBytes = function getNitroFileUploadLimitByte
     obj = {};
   }
   let _location = { location: obj.location }.location;
+  const getConfig = closure_5.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  return closure_3.getConfig({ location: _location }).enabled ? framebus : React;
+  return getConfig({ location: _location }).enabled ? _false : React2;
 };
-export const getNitroFileUploadRolloutConfig = function getNitroFileUploadRolloutConfig(arg0) {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let _location = obj.location;
-  if (_location == null) {
-    _location = NitroFileUploadRollout;
-  }
-  return closure_3.getConfig({ location: _location });
-};
+export { getNitroFileUploadRolloutConfig };
 export const getNitroFileUploadRolloutCopy = function getNitroFileUploadRolloutCopy(legacyCopy) {
-  let rolloutCopy = legacyCopy.legacyCopy;
+  legacyCopy = legacyCopy.legacyCopy;
   let _location = {}.location;
+  const rolloutCopy = legacyCopy.rolloutCopy;
+  const getConfig = closure_5.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  if (closure_3.getConfig({ location: _location }).enabled) {
-    rolloutCopy = legacyCopy.rolloutCopy;
+  if (getConfig({ location: _location }).enabled) {
+    legacyCopy = rolloutCopy;
   }
-  return rolloutCopy;
+  return legacyCopy;
 };
-export const useNitroFileUploadRolloutEnabled = function useNitroFileUploadRolloutEnabled(MainViewTooltipActionSheets) {
-  let _location = MainViewTooltipActionSheets;
-  if (MainViewTooltipActionSheets == null) {
-    _location = NitroFileUploadRollout;
-  }
-  return closure_3.useConfig({ location: _location }).enabled;
-};
-export const useNonNitroFileUploadMarketingEnabled = function useNonNitroFileUploadMarketingEnabled(location) {
-  return closure_4.useConfig({ location }).enabled;
-};
+export const useNitroFileUploadRolloutEnabled = tmp3;
+export const useNonNitroFileUploadMarketingEnabled = tmp4;

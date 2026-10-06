@@ -1,39 +1,39 @@
-// Module ID: 13983
-// Function ID: 13984
+// Module ID: 13235
+// Function ID: 13236
 // Name: ExperimentTriggerPointStore
-// Dependencies: [4703, 1235, 13984, 13985, 504, 573, 2]
+// Dependencies: [4752, 1247, 13236, 13237, 504, 585, 2]
 
-// Module 13983 (ExperimentTriggerPointStore)
-import initializeDefault from "initialize" /* 504 */;
-import Dispatcher2 from "Dispatcher" /* 573 */;
-import ConnectionOpenTriggerPoint2 from "ConnectionOpenTriggerPoint" /* 13985 */;
-import ExperimentStore from "ExperimentStore" /* 4703 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+// Module 13235 (ExperimentTriggerPointStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import Dispatcher2 from "Dispatcher" /* 585 */;
+import ConnectionOpenTriggerPoint2 from "ConnectionOpenTriggerPoint" /* 13237 */;
+import ExperimentStore from "ExperimentStore" /* 4752 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import DebugExperiment from "DebugExperiment" /* 13236 */;
+import size from "module_2" /* 2 */;
 
 const Dispatcher = Dispatcher2;
 
-require = fn;
 function handleConnectionOpen() {
   const ConnectionOpenTriggerPoint = ConnectionOpenTriggerPoint2.ConnectionOpenTriggerPoint;
   ConnectionOpenTriggerPoint.trigger();
 }
-const DebugExperiment = fn(13984);
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ExperimentTriggerPointStore extends Store {
   constructor() {
-    tmp2 = closure_1(closure_2[5]);
-    obj = { CONNECTION_OPEN: handleConnectionOpen };
-    tmp1 = new tmp(tmp2, obj, closure_0(closure_2[5]).DispatchBand.Early, handleConnectionOpen, new.target);
-    return tmp1;
+    const obj = { CONNECTION_OPEN: handleConnectionOpen };
+    const tmp2 = Dispatcher;
+    const tmp3 = new tmp(tmp2, obj, Dispatcher2.DispatchBand.Early, handleConnectionOpen, new.target);
+    return tmp3;
+  }
+  initialize() {
+    this.waitFor(ExperimentStore, ApexExperimentStore);
   }
 }
 const prototype = ExperimentTriggerPointStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(ExperimentStore, ApexExperimentStore);
-};
 ExperimentTriggerPointStore.displayName = "ExperimentTriggerPointStore";
 let obj = { CONNECTION_OPEN: handleConnectionOpen };
-const size = fn(2);
+const tmp4 = new "initialize"(Dispatcher, obj, Dispatcher2.DispatchBand.Early, prototype, ExperimentTriggerPointStore, "initialize", Dispatcher, obj);
 const result = size.fileFinishedImporting("modules/experiments/ExperimentTriggerPointStore.tsx");
 
-export default new "initialize"(Dispatcher, obj, fn(573).DispatchBand.Early, prototype, ExperimentTriggerPointStore, "initialize", Dispatcher, obj);
+export default tmp4;

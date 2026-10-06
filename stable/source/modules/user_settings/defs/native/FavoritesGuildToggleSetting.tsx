@@ -1,32 +1,35 @@
-// Module ID: 15599
-// Function ID: 15600
+// Module ID: 14859
+// Function ID: 14860
 // Name: FavoritesGuildToggleSetting
-// Dependencies: [8265, 11754, 1115, 3356, 10521, 15600, 10520, 2]
+// Dependencies: [7421, 10874, 1127, 3364, 9807, 14860, 9806, 2]
 
-// Module 15599 (FavoritesGuildToggleSetting)
-import util from "util" /* 1115 */;
-import _modDef3356 from "module_3356" /* 3356 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10520 */;
-import FavoritesHooks from "FavoritesHooks" /* 10521 */;
-import useIsFavoritesGuildVisibleDefault from "useIsFavoritesGuildVisible" /* 15600 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14859 (FavoritesGuildToggleSetting)
+import intl2 from "intl" /* 1127 */;
+import _modDef3364 from "module_3364" /* 3364 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 9806 */;
+import FavoritesHooks from "FavoritesHooks" /* 9807 */;
+import useIsFavoritesGuildVisibleDefault from "useIsFavoritesGuildVisible" /* 14860 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(_modDef3356.OT1NK5);
+    const intl = intl2.intl;
+    return intl.string(_modDef3364.OT1NK5);
   },
-  parent: SettingsConstants.MobileUserSettings.APPEARANCE,
+  parent: MobileUserSettings.APPEARANCE,
   usePredicate() {
-    return FavoritesHooks.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
+    const obj = FavoritesHooks;
+    return obj.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
   },
   useValue() {
     return useIsFavoritesGuildVisibleDefault(false);
   },
   onValueChange: FavoritesActionCreators.setFavoritesGuildVisibilityFromSettings
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/FavoritesGuildToggleSetting.tsx");
 
 export default toggle;

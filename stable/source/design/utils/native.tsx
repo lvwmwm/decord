@@ -1,21 +1,24 @@
-// Module ID: 4491
-// Function ID: 4492
+// Module ID: 4537
+// Function ID: 4538
 // Name: native
-// Dependencies: [2, 4492, 4494, 4495, 4496]
+// Dependencies: [2, 4538, 4540, 4541, 4542]
 
-// Module 4491 (native)
-import getNodeText from "getNodeText" /* 4492 */;
-import mergeProps from "mergeProps" /* 4494 */;
-import useFocus from "useFocus" /* 4495 */;
-import themes from "themes" /* 4496 */;
+// Module 4537 (native)
+import getNodeText from "getNodeText" /* 4538 */;
+import mergeProps from "mergeProps" /* 4540 */;
+import useFocus from "useFocus" /* 4541 */;
+import themes from "themes" /* 4542 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/utils/native.tsx");
+const getNodeText_export = getNodeText.getNodeText;
+const mergeProps_export = mergeProps.mergeProps;
+const useFocus_export = useFocus.useFocus;
 
-export const getNodeText = getNodeText.getNodeText;
+export { getNodeText_export as getNodeText };
 export const chainCallbacks = mergeProps.chainCallbacks;
-export const mergeProps = mergeProps.mergeProps;
+export { mergeProps_export as mergeProps };
 export const mergeRefs = mergeProps.mergeRefs;
-export const useFocus = useFocus.useFocus;
+export { useFocus_export as useFocus };
 export const isThemeLight = themes.isThemeLight;
 export const isThemeDark = themes.isThemeDark;

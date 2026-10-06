@@ -1,43 +1,43 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 8916
+// Function ID: 8917
 // Name: allowPopups
-// Dependencies: [2004, 2]
+// Dependencies: [2011, 2]
 // Exports: allowPopups
 
-// Module 9770 (allowPopups)
-import Constants from "Constants" /* 2004 */;
+// Module 8916 (allowPopups)
+import Constants from "Constants" /* 2011 */;
 import size from "module_2" /* 2 */;
 
-Constants.APPLICATIONS_WITH_ALLOWED_POPUPS;
+const set = Constants.APPLICATIONS_WITH_ALLOWED_POPUPS;
 const result = size.fileFinishedImporting("modules/activities/utils/allowPopups.tsx");
 
 export const allowPopups = function allowPopups(application) {
-  let prop = application;
-  let flag = null;
-  let tmp2 = null != application;
-  if (tmp2) {
-    const hasItem = set.has(prop.id);
-    if (hasItem) {
-      tmp2 = hasItem;
-    } else if ("embeddedActivityConfig" in prop) {
-      const embeddedActivityConfig = prop.embeddedActivityConfig;
-      prop = undefined;
-      if (embeddedActivityConfig != flag) {
-        prop = embeddedActivityConfig.displays_advertisements;
-      }
-      flag = true;
-      let tmp5 = true === prop;
-    } else {
-      tmp5 = "embedded_activity_config" in prop;
-      if (tmp5) {
-        const embedded_activity_config = prop.embedded_activity_config;
-        let prop1;
-        if (embedded_activity_config != flag) {
-          prop1 = embedded_activity_config.displays_advertisements;
+  let tmp = null != application;
+  if (tmp) {
+    let hasItem = set.has(application.id);
+    if (!hasItem) {
+      let tmp4;
+      if ("embeddedActivityConfig" in application) {
+        const embeddedActivityConfig = application.embeddedActivityConfig;
+        let prop;
+        if (embeddedActivityConfig != null) {
+          prop = embeddedActivityConfig.displays_advertisements;
         }
-        tmp5 = true === prop1;
+        tmp4 = true === prop;
+      } else {
+        tmp4 = "embedded_activity_config" in application;
+        if (tmp4) {
+          const embedded_activity_config = application.embedded_activity_config;
+          let prop1;
+          if (embedded_activity_config != null) {
+            prop1 = embedded_activity_config.displays_advertisements;
+          }
+          tmp4 = true === prop1;
+        }
       }
+      hasItem = tmp4;
     }
+    tmp = hasItem;
   }
-  return tmp2;
+  return tmp;
 };

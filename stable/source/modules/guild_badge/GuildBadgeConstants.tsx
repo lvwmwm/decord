@@ -1,77 +1,75 @@
-// Module ID: 10053
-// Function ID: 10054
+// Module ID: 9179
+// Function ID: 9180
 // Name: GuildBadgeConstants
-// Dependencies: [9055, 1115, 9054, 2]
+// Dependencies: [8202, 1127, 8201, 2]
 // Exports: getBadgeTooltip
 
-// Module 10053 (GuildBadgeConstants)
-import BadgeCategory from "BadgeCategory" /* 9054 */;
-import GuildTraits from "GuildTraits" /* 9055 */;
+// Module 9179 (GuildBadgeConstants)
+import intl17 from "intl" /* 1127 */;
+import BadgeCategory from "BadgeCategory" /* 8201 */;
+import GuildTraits from "GuildTraits" /* 8202 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_badge/GuildBadgeConstants.tsx");
 
 export const getBadgeTooltip = function getBadgeTooltip(badgeCategory, visibility) {
+  let intl10;
+  let intl11;
+  let intl12;
+  let intl13;
+  let intl14;
+  let intl15;
+  let intl16;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  let intl9;
+  let stringResult;
   if (visibility === GuildTraits.GuildVisibility.PUBLIC) {
-    const intl3 = tmp(1115).intl;
-    let stringResult = intl3.string(tmp(1115).t.op2cJ6);
-  } else if (visibility === tmp(9055).GuildVisibility.APPLY_TO_JOIN) {
-    const intl2 = tmp(1115).intl;
-    stringResult = intl2.string(tmp(1115).t.YwZfbt);
+    const intl3 = tmp(1127).intl;
+    stringResult = intl3.string(tmp(1127).t.op2cJ6);
+  } else if (visibility === GuildTraits.GuildVisibility.APPLY_TO_JOIN) {
+    const intl2 = tmp(1127).intl;
+    stringResult = intl2.string(tmp(1127).t.YwZfbt);
   } else {
-    const intl = tmp(1115).intl;
-    stringResult = intl.string(tmp(1115).t.TME4LJ);
+    const intl = tmp(1127).intl;
+    stringResult = intl.string(tmp(1127).t.TME4LJ);
   }
   if (BadgeCategory.BadgeCategory.STAFF === badgeCategory) {
-    const obj2 = { tooltipTitle: null, tooltipSubtitle: null, tooltipDescription: null };
-    const intl14 = tmp(1115).intl;
-    obj2.tooltipTitle = intl14.string(tmp(1115).t.lMrv96);
-    const intl15 = tmp(1115).intl;
-    obj2.tooltipSubtitle = intl15.string(tmp(1115).t.lMrv96);
-    const intl16 = tmp(1115).intl;
-    obj2.tooltipDescription = intl16.string(tmp(1115).t.lMrv96);
+    const obj2 = { tooltipTitle: intl14.string(intl17.t.lMrv96), tooltipSubtitle: intl15.string(intl17.t.lMrv96), tooltipDescription: intl16.string(intl17.t.lMrv96) };
+    intl14 = tmp(1127).intl;
+    intl15 = tmp(1127).intl;
+    intl16 = tmp(1127).intl;
     return obj2;
-  } else if (tmp(9054).BadgeCategory.VERIFIED === badgeCategory) {
-    const obj3 = { tooltipTitle: null, tooltipSubtitle: null, tooltipDescription: null };
-    const intl12 = tmp(1115).intl;
-    obj3.tooltipTitle = intl12.string(tmp(1115).t.K7iRig);
-    const intl13 = tmp(1115).intl;
-    obj3.tooltipSubtitle = intl13.string(tmp(1115).t.iCehw9);
-    obj3.tooltipDescription = stringResult;
+  } else if (BadgeCategory.BadgeCategory.VERIFIED === badgeCategory) {
+    const obj3 = { tooltipTitle: intl12.string(intl17.t.K7iRig), tooltipSubtitle: intl13.string(intl17.t.iCehw9), tooltipDescription: stringResult };
+    intl12 = tmp(1127).intl;
+    intl13 = tmp(1127).intl;
     return obj3;
-  } else if (tmp(9054).BadgeCategory.PARTNERED === badgeCategory) {
-    const obj4 = { tooltipTitle: null, tooltipSubtitle: null, tooltipDescription: null };
-    const intl10 = tmp(1115).intl;
-    obj4.tooltipTitle = intl10.string(tmp(1115).t.K7iRig);
-    const intl11 = tmp(1115).intl;
-    obj4.tooltipSubtitle = intl11.string(tmp(1115).t.hfYfEE);
-    obj4.tooltipDescription = stringResult;
+  } else if (BadgeCategory.BadgeCategory.PARTNERED === badgeCategory) {
+    const obj4 = { tooltipTitle: intl10.string(intl17.t.K7iRig), tooltipSubtitle: intl11.string(intl17.t.hfYfEE), tooltipDescription: stringResult };
+    intl10 = tmp(1127).intl;
+    intl11 = tmp(1127).intl;
     return obj4;
-  } else if (tmp(9054).BadgeCategory.VERIFIED_AND_PARTNERED === badgeCategory) {
-    const obj5 = { tooltipTitle: null, tooltipSubtitle: null, tooltipDescription: null };
-    const intl8 = tmp(1115).intl;
-    obj5.tooltipTitle = intl8.string(tmp(1115).t.K7iRig);
-    const intl9 = tmp(1115).intl;
-    obj5.tooltipSubtitle = intl9.string(tmp(1115).t["TX+iFC"]);
-    obj5.tooltipDescription = stringResult;
+  } else if (BadgeCategory.BadgeCategory.VERIFIED_AND_PARTNERED === badgeCategory) {
+    const obj5 = { tooltipTitle: intl8.string(intl17.t.K7iRig), tooltipSubtitle: intl9.string(intl17.t["TX+iFC"]), tooltipDescription: stringResult };
+    intl8 = tmp(1127).intl;
+    intl9 = tmp(1127).intl;
     return obj5;
-  } else if (tmp(9054).BadgeCategory.COMMUNITY === badgeCategory) {
-    const obj6 = { tooltipTitle: null, tooltipDescription: null };
-    const intl7 = tmp(1115).intl;
-    obj6.tooltipTitle = intl7.string(tmp(1115).t.K7iRig);
-    obj6.tooltipDescription = stringResult;
+  } else if (BadgeCategory.BadgeCategory.COMMUNITY === badgeCategory) {
+    const obj6 = { tooltipTitle: intl7.string(intl17.t.K7iRig), tooltipDescription: stringResult };
+    intl7 = tmp(1127).intl;
     return obj6;
-  } else if (tmp(9054).BadgeCategory.DISCOVERABLE === badgeCategory) {
-    const obj7 = { tooltipTitle: null, tooltipDescription: null };
-    const intl5 = tmp(1115).intl;
-    obj7.tooltipTitle = intl5.string(tmp(1115).t.K7iRig);
-    const intl6 = tmp(1115).intl;
-    obj7.tooltipDescription = intl6.string(tmp(1115).t.op2cJ6);
+  } else if (BadgeCategory.BadgeCategory.DISCOVERABLE === badgeCategory) {
+    const obj7 = { tooltipTitle: intl5.string(intl17.t.K7iRig), tooltipDescription: intl6.string(intl17.t.op2cJ6) };
+    intl5 = tmp(1127).intl;
+    intl6 = tmp(1127).intl;
     return obj7;
   } else {
-    const obj = { tooltipTitle: null };
-    const intl4 = tmp(1115).intl;
-    obj.tooltipTitle = intl4.string(tmp(1115).t["iZRkC/"]);
+    const obj = { tooltipTitle: intl4.string(intl17.t["iZRkC/"]) };
+    intl4 = tmp(1127).intl;
     return obj;
   }
 };

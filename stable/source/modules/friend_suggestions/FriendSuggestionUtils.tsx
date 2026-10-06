@@ -1,10 +1,10 @@
-// Module ID: 16385
-// Function ID: 16386
+// Module ID: 15675
+// Function ID: 15676
 // Name: FriendSuggestionUtils
 // Dependencies: [2]
 // Exports: getSuggestedContactNameForSuggestion
 
-// Module 16385 (FriendSuggestionUtils)
+// Module 15675 (FriendSuggestionUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/friend_suggestions/FriendSuggestionUtils.tsx");
@@ -25,8 +25,8 @@ export const getSuggestedContactNameForSuggestion = function getSuggestedContact
       if (suggestedFriend != null) {
         const contactNames1 = suggestedFriend.contactNames;
         const substr = contactNames1.slice(0, 2);
-        trimmed = substr.join(" ").trim();
         const str2 = substr.join(" ");
+        trimmed = str2.trim();
       }
       tmp2 = trimmed;
     }

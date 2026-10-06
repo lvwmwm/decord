@@ -1,57 +1,66 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 7864
+// Function ID: 7865
 // Name: AgeVerificationConstants
-// Dependencies: [1074, 8716, 1115, 8714, 2108, 3034, 2]
+// Dependencies: [1086, 7865, 1127, 7863, 2114, 3042, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 8715 (AgeVerificationConstants)
-import Constants from "Constants" /* 1074 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import _modDef3034 from "module_3034" /* 3034 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8714 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8716 */;
+// Module 7864 (AgeVerificationConstants)
+import Constants from "Constants" /* 1086 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import _modDef3042 from "module_3042" /* 3042 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 let items = [AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.NSFW_GUILD];
 let obj = { FACIAL_AGE_ESTIMATION: 1, [1]: "FACIAL_AGE_ESTIMATION", ID_VERIFICATION: 2, [2]: "ID_VERIFICATION", MODULAR: 3, [3]: "MODULAR", GOOGLE_WALLET: 9, [9]: "GOOGLE_WALLET" };
 let obj2 = {};
 const set = new Set(items);
-obj2[obj.FACIAL_AGE_ESTIMATION] = { title: _modDef3034["2yLvkS"], description: _modDef3034.eJmat5 };
-let obj3 = { title: _modDef3034["2yLvkS"], description: _modDef3034.eJmat5 };
-obj2[obj.ID_VERIFICATION] = { title: _modDef3034.dwkwo0, description: _modDef3034.ZdmRwW };
-const obj4 = { title: _modDef3034.dwkwo0, description: _modDef3034.ZdmRwW };
-obj2[obj.GOOGLE_WALLET] = { title: _modDef3034.Y9sLpR, description: _modDef3034.dah4bF };
+let obj3 = { title: _modDef3042["2yLvkS"], description: _modDef3042.eJmat5 };
+obj2[obj.FACIAL_AGE_ESTIMATION] = obj3;
+let obj4 = { title: _modDef3042.dwkwo0, description: _modDef3042.ZdmRwW };
+obj2[obj.ID_VERIFICATION] = obj4;
+obj2[obj.GOOGLE_WALLET] = { title: _modDef3042.Y9sLpR, description: _modDef3042.dah4bF };
+({ title: _modDef3042.Y9sLpR, description: _modDef3042.dah4bF });
 let result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationConstants.tsx");
 
 export const FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS = set;
 export const getAgeVerificationGetStartedSteps = function getAgeVerificationGetStartedSteps(arg0) {
+  let closure_0;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let obj4;
   _require = arg0;
-  let obj = { title: null, description: null };
-  const intl = require("util").intl;
-  obj.title = intl.string(require("util").t.HphYKp);
-  const intl2 = require("util").intl;
-  obj.description = intl2.string(require("util").t["GCZC+9"]);
+  let obj = { title: intl.string(require("intl").t.HphYKp), description: intl2.string(require("intl").t["GCZC+9"]) };
+  intl = require("intl").intl;
+  intl2 = require("intl").intl;
   const items = [obj, , ];
-  let obj2 = { title: null, description: null };
-  const intl3 = require("util").intl;
-  obj2.title = intl3.string(require("util").t.nkO4L3);
-  const intl4 = require("util").intl;
-  obj2.description = intl4.string(require("util").t.rHZFsH);
+  const obj2 = { title: intl3.string(require("intl").t.nkO4L3), description: intl4.string(require("intl").t.rHZFsH) };
+  intl3 = require("intl").intl;
+  intl4 = require("intl").intl;
   items[1] = obj2;
-  const obj3 = { title: null, description: null };
-  const intl5 = require("util").intl;
-  obj3.title = intl5.string(require("util").t.aVwLfn);
-  const intl6 = require("util").intl;
-  obj3.description = intl6.format(require("util").t.n5vd1E, {
+  const obj3 = { title: intl5.string(require("intl").t.aVwLfn), description: intl6.format(require("intl").t.n5vd1E, obj4) };
+  intl5 = require("intl").intl;
+  intl6 = require("intl").intl;
+  obj4 = {
     handleOnHelpUrlHook() {
-      const obj = AgeVerificationActionCreatorsDefault;
-      obj.openUrl(HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_SYSTEM_DMS));
-      const result = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked(closure_0, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.SYSTEM_DMS_LEARN_MORE);
+      const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
+      AgeVerificationActionCreatorsDefault;
+      const obj = HelpdeskUtilsDefault;
+      openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_SYSTEM_DMS));
+      const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
+      AgeVerificationAnalyticsUtils;
+      const result = trackAgeVerificationModalClicked(closure_0, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.SYSTEM_DMS_LEARN_MORE);
     }
-  });
+  };
   items[2] = obj3;
   return items;
 };

@@ -1,42 +1,43 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 14961
+// Function ID: 14962
 // Name: flags
-// Dependencies: [15701, 15702, 15703, 15704, 15705, 15706, 15707, 15708, 15709, 15710, 15711, 15712, 15713, 15714, 15715, 15716, 15717, 15718, 15719, 15720, 15721, 15722, 15723, 15724, 15725, 15726, 15727, 15728, 15729, 15730, 15731, 2]
+// Dependencies: [14962, 14963, 14964, 14965, 14966, 14967, 14968, 14969, 14970, 14971, 14972, 14973, 14974, 14975, 14976, 14977, 14978, 14979, 14980, 14981, 14982, 14983, 14984, 14985, 14986, 14987, 14988, 14989, 14990, 14991, 14992, 2]
 
-// Module 15700 (flags)
-import _mod15701 from "module_15701" /* 15701 */;
-import _mod15702 from "module_15702" /* 15702 */;
-import _mod15703 from "module_15703" /* 15703 */;
-import _mod15704 from "module_15704" /* 15704 */;
-import _mod15705 from "module_15705" /* 15705 */;
-import _mod15706 from "module_15706" /* 15706 */;
-import _mod15707 from "module_15707" /* 15707 */;
-import _mod15708 from "module_15708" /* 15708 */;
-import _mod15709 from "module_15709" /* 15709 */;
-import _mod15710 from "module_15710" /* 15710 */;
-import _mod15711 from "module_15711" /* 15711 */;
-import _mod15712 from "module_15712" /* 15712 */;
-import _mod15713 from "module_15713" /* 15713 */;
-import _mod15714 from "module_15714" /* 15714 */;
-import _mod15715 from "module_15715" /* 15715 */;
-import _mod15716 from "module_15716" /* 15716 */;
-import _mod15717 from "module_15717" /* 15717 */;
-import _mod15718 from "module_15718" /* 15718 */;
-import _mod15719 from "module_15719" /* 15719 */;
-import _mod15720 from "module_15720" /* 15720 */;
-import _mod15721 from "module_15721" /* 15721 */;
-import _mod15722 from "module_15722" /* 15722 */;
-import _mod15723 from "module_15723" /* 15723 */;
-import _mod15724 from "module_15724" /* 15724 */;
-import _mod15725 from "module_15725" /* 15725 */;
-import _mod15726 from "module_15726" /* 15726 */;
-import _mod15727 from "module_15727" /* 15727 */;
-import _mod15728 from "module_15728" /* 15728 */;
-import _mod15729 from "module_15729" /* 15729 */;
-import _mod15730 from "module_15730" /* 15730 */;
-import _mod15731 from "module_15731" /* 15731 */;
+// Module 14961 (flags)
+import AssetRegistry from "AssetRegistry" /* 14962 */;
+import AssetRegistry2 from "AssetRegistry" /* 14963 */;
+import AssetRegistry3 from "AssetRegistry" /* 14964 */;
+import AssetRegistry4 from "AssetRegistry" /* 14965 */;
+import AssetRegistry5 from "AssetRegistry" /* 14966 */;
+import AssetRegistry6 from "AssetRegistry" /* 14967 */;
+import AssetRegistry7 from "AssetRegistry" /* 14968 */;
+import AssetRegistry8 from "AssetRegistry" /* 14969 */;
+import AssetRegistry9 from "AssetRegistry" /* 14970 */;
+import AssetRegistry10 from "AssetRegistry" /* 14971 */;
+import AssetRegistry11 from "AssetRegistry" /* 14972 */;
+import AssetRegistry12 from "AssetRegistry" /* 14973 */;
+import AssetRegistry13 from "AssetRegistry" /* 14974 */;
+import AssetRegistry14 from "AssetRegistry" /* 14975 */;
+import AssetRegistry15 from "AssetRegistry" /* 14976 */;
+import AssetRegistry16 from "AssetRegistry" /* 14977 */;
+import AssetRegistry17 from "AssetRegistry" /* 14978 */;
+import AssetRegistry18 from "AssetRegistry" /* 14979 */;
+import AssetRegistry19 from "AssetRegistry" /* 14980 */;
+import AssetRegistry20 from "AssetRegistry" /* 14981 */;
+import AssetRegistry21 from "AssetRegistry" /* 14982 */;
+import AssetRegistry22 from "AssetRegistry" /* 14983 */;
+import AssetRegistry23 from "AssetRegistry" /* 14984 */;
+import AssetRegistry24 from "AssetRegistry" /* 14985 */;
+import AssetRegistry25 from "AssetRegistry" /* 14986 */;
+import AssetRegistry26 from "AssetRegistry" /* 14987 */;
+import AssetRegistry27 from "AssetRegistry" /* 14988 */;
+import AssetRegistry28 from "AssetRegistry" /* 14989 */;
+import AssetRegistry29 from "AssetRegistry" /* 14990 */;
+import AssetRegistry30 from "AssetRegistry" /* 14991 */;
+import AssetRegistry31 from "AssetRegistry" /* 14992 */;
 import size from "module_2" /* 2 */;
 
+const obj = { bg: AssetRegistry, cs: AssetRegistry2, da: AssetRegistry3, de: AssetRegistry4, el: AssetRegistry5, "en-GB": AssetRegistry6, "en-US": AssetRegistry7, "es-ES": AssetRegistry8, "es-419": AssetRegistry9, fi: AssetRegistry10, fr: AssetRegistry11, hi: AssetRegistry12, hr: AssetRegistry13, hu: AssetRegistry14, it: AssetRegistry15, ja: AssetRegistry16, ko: AssetRegistry17, lt: AssetRegistry18, nl: AssetRegistry19, no: AssetRegistry20, pl: AssetRegistry21, "pt-BR": AssetRegistry22, ro: AssetRegistry23, ru: AssetRegistry24, "sv-SE": AssetRegistry25, th: AssetRegistry26, tr: AssetRegistry27, uk: AssetRegistry28, vi: AssetRegistry29, "zh-CN": AssetRegistry30, "zh-TW": AssetRegistry31 };
 const result = size.fileFinishedImporting("modules/auth/native/images/flags.tsx");
 
-export const flags = { bg: _mod15701, cs: _mod15702, da: _mod15703, de: _mod15704, el: _mod15705, "en-GB": _mod15706, "en-US": _mod15707, "es-ES": _mod15708, "es-419": _mod15709, fi: _mod15710, fr: _mod15711, hi: _mod15712, hr: _mod15713, hu: _mod15714, it: _mod15715, ja: _mod15716, ko: _mod15717, lt: _mod15718, nl: _mod15719, no: _mod15720, pl: _mod15721, "pt-BR": _mod15722, ro: _mod15723, ru: _mod15724, "sv-SE": _mod15725, th: _mod15726, tr: _mod15727, uk: _mod15728, vi: _mod15729, "zh-CN": _mod15730, "zh-TW": _mod15731 };
+export const flags = obj;

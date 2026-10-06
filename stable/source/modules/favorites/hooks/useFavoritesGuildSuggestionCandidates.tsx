@@ -1,71 +1,148 @@
-// Module ID: 16616
-// Function ID: 16617
+// Module ID: 15910
+// Function ID: 15911
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 16617, 7927, 2041, 16544, 11277, 16619, 504, 10143, 11274, 11280, 10139, 10130, 2]
+// Dependencies: [19, 15911, 7076, 2051, 15833, 10478, 558, 576, 15913, 504, 9281, 10475, 10481, 9277, 9268, 2]
 // Exports: default
 
-// Module 16616 (useFavoritesGuildSuggestionCandidates)
-import sortByMatchScore from "sortByMatchScore" /* 10130 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10139 */;
-import noop from "module_19" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16617 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7927 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 15910 (useFavoritesGuildSuggestionCandidates)
+import react2 from "react" /* 576 */;
+import _mod9268 from "module_9268" /* 9268 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9277 */;
+import ShareConstants from "ShareConstants" /* 10478 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 15833 */;
+import react_mod from "react" /* 19 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 15911 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7076 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_1, importDefault, set;
 
-require = fn;
+let tmp;
+const get_initialized = tmp(504);
 function getAffineChannelId(channelId) {
   return channelId.channelId;
 }
 function getAffineUserDMId(otherUserId) {
   return ChannelStore.getDMFromUserId(otherUserId.otherUserId);
 }
-const NO_SUGGESTIONS = fn(16544).NO_SUGGESTIONS;
-const isAllowedType = fn(11277).isAllowedType;
-const size = fn(2);
+let react = react_mod;
+const NO_SUGGESTIONS = FavoritesGuildSuggestionsStore.NO_SUGGESTIONS;
+const isAllowedType = ShareConstants.isAllowedType;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let channelAffinities;
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  let tmp7;
+  let tmp8;
+  let obj = react2;
+  const cResult = obj.c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      const obj = require("ChannelAffinitiesV2ActionCreators");
+      const channelAffinitiesV2 = obj.fetchChannelAffinitiesV2();
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp4 = fn;
+    tmp5 = items;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const effect = react.useEffect(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ChannelAffinitiesV2Store];
+    const fn2 = function l() {
+      return channelAffinities.getChannelAffinities();
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    tmp8 = fn2;
+    tmp7 = items1;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
+  if (cResult[4] !== stateFromStores) {
+    let tmp11;
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn3 = function c(score, score2) {
+        return score2.score - score.score;
+      };
+      cResult[6] = fn3;
+      tmp11 = fn3;
+    } else {
+      tmp11 = cResult[6];
+    }
+    const substr = stateFromStores.slice();
+    const sorted = substr.sort(tmp11);
+    cResult[4] = stateFromStores;
+    cResult[5] = sorted;
+    tmp10 = sorted;
+  } else {
+    tmp10 = cResult[5];
+  }
+  return tmp10;
+}) : (() => {
+  let channelAffinities;
+  let stateFromStores;
+  const effect = react.useEffect(() => {
+    const obj = stateFromStores(dependencyMap[8]);
+    const channelAffinitiesV2 = obj.fetchChannelAffinitiesV2();
+  }, []);
+  let obj = stateFromStores(504);
+  const items = [ChannelAffinitiesV2Store];
+  stateFromStores = obj.useStateFromStores(items, () => channelAffinities.getChannelAffinities());
+  const items1 = [stateFromStores];
+  return react.useMemo(() => {
+    const substr = stateFromStores.slice();
+    return substr.sort((score, score2) => score2.score - score.score);
+  }, items1);
+});
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildSuggestionCandidates.tsx");
 
 export default function useFavoritesGuildSuggestionCandidates(arg0) {
+  let affinities;
+  let closure_0;
+  let results;
+  let userAffinitiesMap;
   _require = arg0;
   const tmp = require("useFavoritesGuildChannelFilter")();
   importDefault = tmp;
-  results = require("useShareSearchResults").useShareSearchResults({ channelFilter: tmp, includeFrecency: false }).results;
-  const effect = memo.useEffect(() => {
-    const channelAffinitiesV2 = closure_0(results[6]).fetchChannelAffinitiesV2();
-  }, []);
   let obj = require("useShareSearchResults");
-  let items = [memo1];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => memo1.getChannelAffinities());
-  closure_129_0 = stateFromStores;
-  const items1 = [stateFromStores];
-  memo = memo.useMemo(() => {
-    const substr = closure_0.slice();
-    return substr.sort((score, score2) => score2.score - score.score);
-  }, items1);
-  const effect1 = memo.useEffect(() => {
-    const userAffinitiesV2 = closure_0(results[8]).fetchUserAffinitiesV2();
+  results = obj.useShareSearchResults({ channelFilter: tmp, includeFrecency: false }).results;
+  let tmp2 = closure_11();
+  react = tmp2;
+  const effect = react.useEffect(() => {
+    const obj = closure_0(results[10]);
+    const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
   }, []);
-  let obj2 = require("initialize");
-  const items2 = [UserAffinitiesV2Store];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => userAffinitiesMap.getUserAffinitiesMap());
-  closure_130_0 = stateFromStores1;
-  const items3 = [stateFromStores1];
-  memo1 = memo.useMemo(() => {
-    const array = new Array(closure_0.size);
+  let obj2 = require("get initialized");
+  let items = [UserAffinitiesV2Store];
+  const stateFromStores = obj2.useStateFromStores(items, () => userAffinitiesMap.getUserAffinitiesMap());
+  const items1 = [stateFromStores];
+  const memo = react.useMemo(() => {
+    const array = new Array(stateFromStores.size);
     closure_1 = 0;
-    const item = closure_0.forEach((item) => {
+    const item = stateFromStores.forEach((item) => {
       closure_1 = tmp + 1;
       array[+closure_1] = item;
     });
     return array.sort((dmProbability, dmProbability2) => dmProbability2.dmProbability - dmProbability.dmProbability);
-  }, items3);
-  const items4 = [memo, tmp, arg0, results, memo1];
-  return memo.useMemo(() => {
+  }, items1);
+  const items2 = [tmp2, tmp, arg0, results, memo];
+  return react.useMemo(() => {
     let items = [];
-    const set = new Set();
-    const obj = { affinities: memo, getChannelId: getAffineChannelId, index: 0 };
-    const obj2 = { affinities: memo1, getChannelId: getAffineUserDMId, index: 0 };
+    set = new Set();
+    const obj = { affinities, getChannelId: getAffineChannelId, index: 0 };
+    const obj2 = { affinities: memo, getChannelId: getAffineUserDMId, index: 0 };
     let num = 0;
     if (items.length < closure_0) {
       while (true) {
@@ -146,8 +223,9 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let tmp20 = results[tmp25];
               let sum = tmp25 + 1;
               if (null != tmp20) {
-                if (tmp20.type !== sortByMatchScore.AutocompleterResultTypes.HEADER) {
-                  let tmp24 = sum;
+                let tmp24;
+                if (tmp20.type !== _mod9268.AutocompleterResultTypes.HEADER) {
+                  tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;
                   }
@@ -178,5 +256,5 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
       items = NO_SUGGESTIONS;
     }
     return items;
-  }, items4);
+  }, items2);
 };

@@ -1,22 +1,34 @@
-// Module ID: 13984
-// Function ID: 13985
+// Module ID: 13236
+// Function ID: 13237
 // Name: DebugExperiment
-// Dependencies: [1434, 2]
-// Exports: useDebugExperiment
+// Dependencies: [1441, 558, 576, 2]
 
-// Module 13984 (DebugExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13236 (DebugExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-03-debug-experiment", kind: "user", defaultConfig: {}, variations: null };
-const obj2 = { 1: null, 2: {} };
+let obj2;
+let obj = { name: "2026-03-debug-experiment", kind: "user", defaultConfig: {}, variations: obj2 };
+obj2 = { 1: null, 2: {} };
 obj2[2] = {};
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: "debug_experiment" };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  return apexExperiment.useConfig(first);
+}) : (() => apexExperiment.useConfig({ location: "debug_experiment" }));
 const result = size.fileFinishedImporting("modules/experiments/apex/DebugExperiment.tsx");
 
 export default apexExperiment;
 export const DebugExperiment = apexExperiment;
-export const useDebugExperiment = function useDebugExperiment() {
-  return apexExperiment.useConfig({ location: "debug_experiment" });
-};
+export const useDebugExperiment = tmp3;

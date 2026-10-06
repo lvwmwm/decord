@@ -1,23 +1,56 @@
-// Module ID: 7502
-// Function ID: 7503
+// Module ID: 6647
+// Function ID: 6648
 // Name: GuildSpaceExperiment
-// Dependencies: [4701, 2]
-// Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
+// Dependencies: [1086, 1441, 558, 576, 2]
+// Exports: getGuildSpaceExperimentEnabled
 
-// Module 7502 (GuildSpaceExperiment)
-import createExperiment from "module_4701" /* 4701 */;
+// Module 6647 (GuildSpaceExperiment)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "guild", id: "2026-06_guild_spaces", label: "Guild Space", defaultConfig: { enabled: false }, treatments: null };
-const items = [{ id: 1, label: "Enable Guild Space", config: { enabled: true } }];
-obj.treatments = items;
-const experiment = createExperiment.createExperiment(obj);
+const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
+let obj = { kind: "guild", name: "2026-09-guild-spaces", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, location) => {
+  let tmp = arg0;
+  const obj = react;
+  const cResult = obj.c(3);
+  if (arg0 == null) {
+    tmp = EMPTY_STRING_SNOWFLAKE_ID;
+  }
+  if (cResult[0] === location) {
+    let tmp3;
+    if (cResult[1] === tmp) {
+      tmp3 = cResult[2];
+    }
+    return apexExperiment.useConfig(tmp3).enabled;
+  }
+  const obj2 = { guildId: tmp, location };
+  cResult[0] = location;
+  cResult[1] = tmp;
+  cResult[2] = obj2;
+  tmp3 = obj2;
+}) : ((arg0, location) => {
+  let tmp = arg0;
+  const useConfig = apexExperiment.useConfig;
+  if (arg0 == null) {
+    tmp = EMPTY_STRING_SNOWFLAKE_ID;
+  }
+  const obj = { guildId: tmp, location };
+  return useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/guild_space/GuildSpaceExperiment.tsx");
 
-export const GuildSpaceExperiment = experiment;
-export const getGuildSpaceExperimentEnabled = function getGuildSpaceExperimentEnabled(guildId, location) {
-  return experiment.getCurrentConfig({ guildId, location }, { autoTrackExposure: false }).enabled;
+export const GuildSpaceExperiment = apexExperiment;
+export const getGuildSpaceExperimentEnabled = function getGuildSpaceExperimentEnabled(id, GuildSettingsModalOverview) {
+  let enabled = null != id;
+  if (enabled) {
+    const obj = { guildId: id, location: GuildSettingsModalOverview };
+    enabled = apexExperiment.getConfig(obj).enabled;
+  }
+  return enabled;
 };
-export const useGuildSpaceExperimentEnabled = function useGuildSpaceExperimentEnabled(guildId, location) {
-  return experiment.useExperiment({ guildId, location }, { autoTrackExposure: false }).enabled;
-};
+export const useGuildSpaceExperimentEnabled = tmp3;

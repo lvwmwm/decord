@@ -1,56 +1,63 @@
-// Module ID: 7989
-// Function ID: 7990
+// Module ID: 7138
+// Function ID: 7139
 // Name: SessionAdGenerator
-// Dependencies: [1091, 1255, 7745, 573, 1231, 2]
+// Dependencies: [1103, 1267, 6895, 585, 1243, 2]
 // Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession, isAdSessionExpired
 
-// Module 7989 (SessionAdGenerator)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import v1 from "v1" /* 1255 */;
-import SessionUtils from "SessionUtils" /* 7745 */;
+// Module 7138 (SessionAdGenerator)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import v1 from "v1" /* 1267 */;
+import SessionUtils from "SessionUtils" /* 6895 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let _null;
+
 let closure_3 = 12 * DurationsDefault.Millis.HOUR;
 let c4 = null;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/analytics_sessions/SessionAdGenerator.tsx");
 
 export const getOrRefreshAdSession = function getOrRefreshAdSession(shouldExtendSession) {
+  let obj3;
   let flag = shouldExtendSession;
   if (shouldExtendSession === undefined) {
     flag = false;
   }
   const timestamp = Date.now();
   if (null != _null) {
+    let flag2;
+    let tmp10;
     const _Date = Date;
     const timestamp1 = Date.now();
     if (timestamp1 < _null.createdAtTimestamp) {
-      const obj2 = { category: "ad", message: null };
       const _HermesInternal = HermesInternal;
-      obj2.message = "future facing timestamp Date.now(): " + timestamp1 + ", initialized timestamp: " + tmp11.createdAtTimestamp;
-      SentryUtilsDefault.addBreadcrumb(obj2);
-      let flag2 = true;
+      const obj = { category: "ad", message: "future facing timestamp Date.now(): " + timestamp1 + ", initialized timestamp: " + _null.createdAtTimestamp };
+      const addBreadcrumb = SentryUtilsDefault.addBreadcrumb;
+      SentryUtilsDefault;
+      addBreadcrumb(obj);
+      flag2 = true;
     } else {
-      const diff = timestamp1 - tmp11.lastUsedTimestamp;
-      flag2 = diff > SessionUtils.SESSION_IDLE_TIMEOUT_MILLIS || timestamp1 - tmp11.createdAtTimestamp > closure_3;
+      const diff = timestamp1 - tmp12.lastUsedTimestamp;
+      flag2 = diff > SessionUtils.SESSION_IDLE_TIMEOUT_MILLIS || timestamp1 - tmp12.createdAtTimestamp > closure_3;
     }
     if (!flag2) {
       if (flag) {
         _null.lastUsedTimestamp = timestamp;
       }
-      let tmp9 = _null;
+      tmp10 = _null;
     }
-    return tmp9;
+    return tmp10;
   }
-  const obj3 = { uuid: v1.v4(), createdAtTimestamp: timestamp, lastUsedTimestamp: timestamp, version: SessionUtils.CLIENT_SESSION_STORAGE_VERSION };
-  _null = obj3;
-  DispatcherDefault.dispatch({ type: "AD_SESSION_RESET" });
-  tmp9 = _null;
+  const obj2 = { uuid: obj3.v4(), createdAtTimestamp: timestamp, lastUsedTimestamp: timestamp, version: SessionUtils.CLIENT_SESSION_STORAGE_VERSION };
+  _null = obj2;
+  obj3 = v1;
+  const obj4 = DispatcherDefault;
+  obj4.dispatch({ type: "AD_SESSION_RESET" });
+  tmp10 = _null;
 };
 export function clearAdSession() {
-  c4 = null;
+  let c4 = null;
 }
 export function getCurrentAdSession() {
   return c4;
@@ -58,13 +65,15 @@ export function getCurrentAdSession() {
 export const isAdSessionExpired = function isAdSessionExpired(createdAtTimestamp) {
   const timestamp = Date.now();
   if (timestamp < createdAtTimestamp.createdAtTimestamp) {
-    const obj2 = { category: "ad", message: null };
     const _HermesInternal = HermesInternal;
-    obj2.message = "future facing timestamp Date.now(): " + timestamp + ", initialized timestamp: " + createdAtTimestamp.createdAtTimestamp;
-    SentryUtilsDefault.addBreadcrumb(obj2);
+    const obj = { category: "ad", message: "future facing timestamp Date.now(): " + timestamp + ", initialized timestamp: " + createdAtTimestamp.createdAtTimestamp };
+    const addBreadcrumb = SentryUtilsDefault.addBreadcrumb;
+    SentryUtilsDefault;
+    addBreadcrumb(obj);
     return true;
   } else {
     const diff = timestamp - createdAtTimestamp.lastUsedTimestamp;
-    return diff > SessionUtils.SESSION_IDLE_TIMEOUT_MILLIS || timestamp - createdAtTimestamp.createdAtTimestamp > closure_3;
+    const tmp5 = diff > SessionUtils.SESSION_IDLE_TIMEOUT_MILLIS || timestamp - createdAtTimestamp.createdAtTimestamp > closure_3;
+    return tmp5;
   }
 };

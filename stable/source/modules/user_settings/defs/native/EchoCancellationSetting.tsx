@@ -1,28 +1,57 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 14790
+// Function ID: 14791
 // Name: EchoCancellationSetting
-// Dependencies: [1992, 8265, 504, 11754, 1115, 10289, 2]
+// Dependencies: [1999, 7421, 558, 576, 504, 10874, 1127, 9445, 2]
 
-// Module 15530 (EchoCancellationSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+// Module 14790 (EchoCancellationSetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9445 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.iWTwu6);
-  },
-  parent: fn(8265).MobileUserSettings.VOICE,
-  useValue: function useEchoCancellationSettingValue() {
+let tmp;
+const get_initialized = tmp(504);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let echoCancellation;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
-    return initialize.useStateFromStores(items, () => echoCancellation.getEchoCancellation());
-  },
-  onValueChange: fn(10289).handleEchoCancellationChange
+    const fn = function o() {
+      return echoCancellation.getEchoCancellation();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let echoCancellation;
+  const items = [MediaEngineStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => echoCancellation.getEchoCancellation());
 });
-const size = fn(2);
+let obj = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t.iWTwu6);
+  },
+  parent: MobileUserSettings.VOICE,
+  useValue: tmp2,
+  onValueChange: UserSettingsVoiceUtils.handleEchoCancellationChange
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/EchoCancellationSetting.tsx");
 
 export default toggle;

@@ -1,11 +1,11 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 8708
+// Function ID: 8709
 // Name: getPlatform
-// Dependencies: [1978, 2]
+// Dependencies: [1985, 2]
 // Exports: default
 
-// Module 9556 (getPlatform)
-import Server from "Server" /* 1978 */;
+// Module 8708 (getPlatform)
+import Server from "Server" /* 1985 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getPlatform.tsx");

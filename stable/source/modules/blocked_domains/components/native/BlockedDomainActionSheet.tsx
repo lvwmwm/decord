@@ -1,54 +1,192 @@
-// Module ID: 13271
-// Function ID: 13272
+// Module ID: 12507
+// Function ID: 12508
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 4788, 576, 7427, 5216, 5941, 4784, 1115, 13272, 5218, 4755, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 6001, 1127, 4833, 5280, 12508, 5282, 4801, 6572, 2]
 
-// Module 13271 (BlockedDomainActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import Stack_Stack from "Stack/Stack" /* 5216 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import native from "native" /* 5941 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
-import URLCallout from "URLCallout" /* 13272 */;
-import noop from "module_19" /* 19 */;
+// Module 12507 (BlockedDomainActionSheet)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Stack_Stack from "Stack/Stack" /* 5280 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6001 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import URLCallout from "URLCallout" /* 12508 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { padding: nativeDefault.space.PX_16 }, title: { textAlign: "center" }, warningMessage: { textAlign: "center" } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
+let BottomSheet, url;
+
+let c3;
+let closure_4;
+let obj2;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let obj = { container: obj2, title: { textAlign: "center" }, warningMessage: { textAlign: "center" } };
+obj2 = { padding: nativeDefault.space.PX_16 };
+let closure_5 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
+  let first;
+  let intl3;
+  let items;
+  let items1;
+  let obj7;
+  let tmp10;
+  let tmp13;
+  let tmp15;
+  let tmp8;
+  let obj = react2;
+  const cResult = obj.c(17);
+  url = url.url;
+  const tmp4 = closure_5();
+  const container = tmp4.container;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = _false(TrafficConeSpotIllustration.TrafficConeSpotIllustration, {});
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  const title = tmp4.title;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl4.t["2B3wj8"]);
+    cResult[1] = stringResult;
+    tmp8 = stringResult;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.title) {
+    const obj2 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp8 };
+    const tmp12 = _false(Text_Text.Text, obj2);
+    cResult[2] = tmp4.title;
+    cResult[3] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[3];
+  }
+  const warningMessage = tmp4.warningMessage;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1127).intl;
+    const formatResult = intl2.format(intl4.t.jnHyYU, {});
+    cResult[4] = formatResult;
+    tmp13 = formatResult;
+  } else {
+    tmp13 = cResult[4];
+  }
+  if (cResult[5] !== tmp4.warningMessage) {
+    const obj3 = { style: warningMessage, variant: "text-md/medium", children: tmp13 };
+    const tmp17 = _false(Text_Text.Text, obj3);
+    cResult[5] = tmp4.warningMessage;
+    cResult[6] = tmp17;
+    tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[6];
+  }
+  if (cResult[7] === tmp10) {
+    let tmp18;
+    let tmp20;
+    let tmp23;
+    if (cResult[8] === tmp15) {
+      tmp18 = cResult[9];
+    }
+    if (cResult[10] !== url) {
+      const obj4 = { url };
+      const tmp22 = _false(URLCallout.URLCallout, obj4);
+      cResult[10] = url;
+      cResult[11] = tmp22;
+      tmp20 = tmp22;
+    } else {
+      tmp20 = cResult[11];
+    }
+    const _Symbol = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj5 = {
+        grow: true,
+        text: intl3.string(intl4.t["/g10LC"]),
+        onPress() {
+              const obj = ActionSheetActionCreatorsDefault;
+              return obj.hideActionSheet();
+            }
+      };
+      const Button = tmp(5282).Button;
+      intl3 = tmp(1127).intl;
+      const tmp25 = _false(Button, obj5);
+      cResult[12] = tmp25;
+      tmp23 = tmp25;
+    } else {
+      tmp23 = cResult[12];
+    }
+    if (cResult[13] === tmp4.container) {
+      if (cResult[14] === tmp20) {
+        let tmp26;
+        if (cResult[15] === tmp18) {
+          tmp26 = cResult[16];
+        }
+        return tmp26;
+      }
+    }
+    const obj6 = { startExpanded: true, children: React3(Stack_Stack.Stack, obj7) };
+    BottomSheet = tmp(6572).BottomSheet;
+    obj7 = { spacing: 16, justify: "center", align: "center", style: container, children: items };
+    items = [tmp18, tmp20, tmp23];
+    const tmp29 = _false(BottomSheet, obj6);
+    cResult[13] = tmp4.container;
+    cResult[14] = tmp20;
+    cResult[15] = tmp18;
+    cResult[16] = tmp29;
+    tmp26 = tmp29;
+  }
+  const obj8 = { spacing: 8, justify: "center", align: "center", children: items1 };
+  items1 = [first, tmp10, tmp15];
+  const tmp19 = React3(Stack_Stack.Stack, obj8);
+  cResult[7] = tmp10;
+  cResult[8] = tmp15;
+  cResult[9] = tmp19;
+  tmp18 = tmp19;
+}) : ((url) => {
+  let Stack;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let obj2;
+  url = url.url;
+  const tmp = closure_5();
+  let obj = { startExpanded: true, children: React3(Stack, obj2) };
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  obj2 = { spacing: 16, justify: "center", align: "center", style: tmp.container, children: items1 };
+  Stack = Stack_Stack.Stack;
+  const obj3 = { spacing: 8, justify: "center", align: "center", children: items };
+  const Stack2 = Stack_Stack.Stack;
+  items = [_false(TrafficConeSpotIllustration.TrafficConeSpotIllustration, {}), , ];
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["2B3wj8"]) };
+  const Text = Text_Text.Text;
+  intl = intl4.intl;
+  items[1] = _false(Text, obj4);
+  const obj5 = { style: tmp.warningMessage, variant: "text-md/medium", children: intl2.format(intl4.t.jnHyYU, {}) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl4.intl;
+  items[2] = _false(Text2, obj5);
+  items1 = [React3(Stack2, obj3), _false(URLCallout.URLCallout, { url }), ];
+  const obj6 = {
+    grow: true,
+    text: intl3.string(intl4.t["/g10LC"]),
+    onPress() {
+      const obj = ActionSheetActionCreatorsDefault;
+      return obj.hideActionSheet();
+    }
+  };
+  const Button = components_Button_Button.Button;
+  intl3 = intl4.intl;
+  items1[2] = _false(Button, obj6);
+  return _false(BottomSheet, obj);
+});
 const result = size.fileFinishedImporting("modules/blocked_domains/components/native/BlockedDomainActionSheet.tsx");
 
-export default function BlockedDomainActionSheet(url) {
-  const tmp = closure_5();
-  const obj = { startExpanded: true, children: null };
-  const obj2 = { spacing: 16, justify: "center", align: "center", style: tmp.container, children: null };
-  const obj3 = { spacing: 8, justify: "center", align: "center", children: null };
-  const items = [React3(native.TrafficConeSpotIllustration, {}), , ];
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = util.intl;
-  obj4.children = intl.string(util.t["2B3wj8"]);
-  items[1] = React3(Text_Text.Text, obj4);
-  const obj5 = { style: tmp.warningMessage, variant: "text-md/medium", children: null };
-  const intl2 = util.intl;
-  obj5.children = intl2.format(util.t.jnHyYU, {});
-  items[2] = React3(Text_Text.Text, obj5);
-  obj3.children = items;
-  const items1 = [React4(Stack_Stack.Stack, obj3), React3(URLCallout.URLCallout, { url: url.url }), ];
-  const obj6 = { grow: true, text: null, onPress: null };
-  const intl3 = util.intl;
-  obj6.text = intl3.string(util.t["/g10LC"]);
-  obj6.onPress = function onPress() {
-    return ActionSheetActionCreatorsDefault.hideActionSheet();
-  };
-  items1[2] = React3(components_Button_Button.Button, obj6);
-  obj2.children = items1;
-  obj.children = React4(Stack_Stack.Stack, obj2);
-  return React3(Sheet_BottomSheet.BottomSheet, obj);
-};
+export default tmp4;

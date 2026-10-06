@@ -1,9 +1,11 @@
 // Module ID: 13799
 // Function ID: 13800
-// Dependencies: [1121]
+// Dependencies: [13797]
 
 // Module 13799
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13797 from "module_13797" /* 13797 */;
 
+let closure_0 = _mod13797({}.toString);
+let closure_1 = _mod13797("".slice);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 420, height: 112, scales: [1, 2, 3], hash: "f08d67e9827cdce1fe3b9851e7c6b005", name: "subscription_placeholder_pattern_light", type: "png" });
+export default (arg0) => closure_1(closure_0(arg0), 8, -1);

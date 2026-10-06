@@ -1,20 +1,22 @@
-// Module ID: 9792
-// Function ID: 9793
+// Module ID: 8948
+// Function ID: 8949
 // Name: PermissionsConstants
-// Dependencies: [1074, 1086, 2049, 2]
+// Dependencies: [1086, 1098, 2059, 2]
 
-// Module 9792 (PermissionsConstants)
-import Constants from "Constants" /* 1074 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 2049 */;
-import "BigFlagUtils";
-import BigFlagUtils from "BigFlagUtils" /* 1086 */;
+// Module 8948 (PermissionsConstants)
+import Constants from "Constants" /* 1086 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 2059 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1098 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
 const VIEW_CHANNEL = Permissions.VIEW_CHANNEL;
+let BigFlagUtils = BigFlagUtils_mod;
 const combineResult = BigFlagUtils.combine(VIEW_CHANNEL, Permissions.CONNECT);
+BigFlagUtils = BigFlagUtils_mod;
+const combineResult1 = BigFlagUtils.combine(VIEW_CHANNEL, StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/PermissionsConstants.tsx");
 
 export const CREATE_GUILD_EVENT_CORE_PERMISSIONS = VIEW_CHANNEL;
 export const CREATE_GUILD_EVENT_VOICE_CHANNEL_PERMISSIONS = combineResult;
-export const CREATE_GUILD_EVENT_STAGE_CHANNEL_PERMISSIONS = BigFlagUtils.combine(VIEW_CHANNEL, StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS);
+export const CREATE_GUILD_EVENT_STAGE_CHANNEL_PERMISSIONS = combineResult1;

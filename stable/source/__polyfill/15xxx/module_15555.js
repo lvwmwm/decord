@@ -1,9 +1,13 @@
 // Module ID: 15555
 // Function ID: 15556
-// Dependencies: [1121]
+// Dependencies: [15556, 15561, 15562]
 
 // Module 15555
-import registerAsset from "module_1121" /* 1121 */;
+import ReanimatedScreenProviderDefault from "ReanimatedScreenProvider" /* 15556 */;
+import useReanimatedTransitionProgressDefault from "useReanimatedTransitionProgress" /* 15561 */;
+import useReanimatedHeaderHeightDefault from "useReanimatedHeaderHeight" /* 15562 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 161, height: 160, scales: [1], hash: "539778d237b9fff9f8baff59e260a9fa", name: "breaddog_1", type: "png" });
+export const ReanimatedScreenProvider = ReanimatedScreenProviderDefault;
+export const useReanimatedTransitionProgress = useReanimatedTransitionProgressDefault;
+export const useReanimatedHeaderHeight = useReanimatedHeaderHeightDefault;

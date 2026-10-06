@@ -1,14 +1,15 @@
-// Module ID: 8314
-// Function ID: 8315
+// Module ID: 7471
+// Function ID: 7472
 // Name: PurchaseNotificationSystemMessage
-// Dependencies: [1978, 8315, 2]
+// Dependencies: [1985, 7472, 2]
 // Exports: createPurchaseNotificationSystemMessage
 
-// Module 8314 (PurchaseNotificationSystemMessage)
-import Server from "Server" /* 1978 */;
-import GuildProductPurchaseSystemMessage from "GuildProductPurchaseSystemMessage" /* 8315 */;
+// Module 7471 (PurchaseNotificationSystemMessage)
+import Server from "Server" /* 1985 */;
 import size from "module_2" /* 2 */;
 
+let tmp2;
+const GuildProductPurchaseSystemMessage = tmp2(7472);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/PurchaseNotificationSystemMessage.tsx");
 
 export const createPurchaseNotificationSystemMessage = function createPurchaseNotificationSystemMessage(message) {
@@ -19,8 +20,8 @@ export const createPurchaseNotificationSystemMessage = function createPurchaseNo
   }
   let guildProductPurchaseSystemMessage = null;
   if (type === Server.PurchaseNotificationType.GUILD_PRODUCT) {
-    guildProductPurchaseSystemMessage = GuildProductPurchaseSystemMessage.createGuildProductPurchaseSystemMessage(message);
     const tmp2Result = GuildProductPurchaseSystemMessage;
+    guildProductPurchaseSystemMessage = tmp2Result.createGuildProductPurchaseSystemMessage(message);
   }
   return guildProductPurchaseSystemMessage;
 };

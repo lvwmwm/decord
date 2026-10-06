@@ -1,103 +1,116 @@
-// Module ID: 16136
-// Function ID: 16137
+// Module ID: 15414
+// Function ID: 15415
 // Name: ShopNitroUpsellBanner
-// Dependencies: [19, 21, 4788, 576, 672, 4489, 4755, 16137, 1980, 7459, 5856, 5230, 1094, 1177, 1115, 5929, 5216, 4784, 10266, 2]
+// Dependencies: [19, 21, 4837, 588, 684, 4535, 4801, 12721, 1987, 6604, 1127, 5918, 5292, 1106, 1189, 5940, 5280, 4833, 15413, 5282, 9421, 2]
 
-// Module 16136 (ShopNitroUpsellBanner)
-import nativeDefault from "native" /* 576 */;
-import _modDef672 from "module_672" /* 672 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import useToken from "useToken" /* 4489 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import Stack_Stack from "Stack/Stack" /* 5216 */;
-import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import Card from "Card" /* 5856 */;
-import XSmallIcon from "XSmallIcon" /* 5929 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10266 */;
-import noop from "module_19" /* 19 */;
+// Module 15414 (ShopNitroUpsellBanner)
+import nativeDefault from "native" /* 588 */;
+import _modDef684 from "module_684" /* 684 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import intl5 from "intl" /* 1127 */;
+import useToken from "useToken" /* 4535 */;
+import Card_Card from "Card/Card" /* 5918 */;
+import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 15413 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+let obj4;
+let tmp2;
+const LinearGradientDefault = tmp2(5292);
+const NitroUpsellButtonDefault = tmp2(9421);
 class ShopNitroUpsellBanner {
   constructor(arg0) {
-    ({ isDarkTheme, dismiss } = global);
-    tmp = closure_6();
-    tmp2 = closure_1;
-    tmp3 = closure_2;
-    tmp5 = closure_0;
-    tmp4 = closure_1(closure_2[4]);
-    obj = closure_0(closure_2[5]);
-    tmp4Result = tmp4(obj.useToken(closure_1(closure_2[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START));
-    alphaResult = tmp4Result.alpha(0.4);
-    hexResult = alphaResult.hex();
-    tmp7 = closure_1(closure_2[4]);
-    obj4 = closure_0(closure_2[5]);
-    tmp7Result = tmp7(obj4.useToken(closure_1(closure_2[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END));
-    alphaResult1 = tmp7Result.alpha(0.4);
-    hexResult1 = alphaResult1.hex();
-    tmp10 = jsxs;
-    callback = closure_3.useCallback(() => {
-      const obj2 = { analyticsLocations: null };
-      const obj = require("ActionSheetActionCreators");
-      const items = [require("AnalyticsLocation").COLLECTIBLES_SHOP_INDEX_PAGE];
-      obj2.analyticsLocations = items;
-      obj.openLazy(require("asyncRequireImpl")(paths[7], paths.paths), "ShopNitroUpsellPromoSheet", obj2);
+    let XSmallIcon;
+    let buttonVariant;
+    let dismiss;
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let isDarkTheme;
+    let items1;
+    let items2;
+    let obj6;
+    let paths;
+    let tmp11Result;
+    ({ isDarkTheme, dismiss, buttonVariant } = arg0);
+    const tmp = closure_6();
+    let tmp2 = importDefault;
+    const tmp4 = _modDef684;
+    let obj = useToken;
+    const tmp4Result = tmp4(obj.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START));
+    const alphaResult = tmp4Result.alpha(0.3);
+    const hexResult = alphaResult.hex();
+    const tmp7 = _modDef684;
+    const obj4 = useToken;
+    const tmp7Result = tmp7(obj4.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END));
+    const alphaResult1 = tmp7Result.alpha(0.3);
+    const hexResult1 = alphaResult1.hex();
+    const callback = react.useCallback(() => {
+      let intl;
+      let intl2;
+      let items;
+      const openLazy = require("ActionSheetActionCreators").openLazy;
+      const obj = { analyticsLocations: items, title: intl.string(require("intl").t.GZWBoL), description: intl2.string(require("intl").t["2+/rrF"]) };
+      require("ActionSheetActionCreators");
+      items = [];
+      const tmp2 = require("asyncRequire")(paths[7], paths.paths);
+      items[0] = require("AnalyticsLocation").COLLECTIBLES_SHOP_INDEX_PAGE;
+      intl = require("intl").intl;
+      intl2 = require("intl").intl;
+      openLazy(tmp2, "ShopNitroUpsellPromoSheet", obj);
     }, []);
-    items = [, ];
-    items[0] = tmp.card;
-    obj1 = { variant: "secondary", style: items, children: null };
+    let items = [tmp.card, ];
+    const obj2 = { variant: "secondary", style: items, children: items2 };
     items[1] = isDarkTheme ? tmp.borderDark : tmp.borderLight;
-    obj14 = { colors: null, start: null, end: null, style: null, pointerEvents: "none" };
-    items1 = [, ];
-    items1[0] = hexResult;
-    items1[1] = hexResult1;
-    obj14.colors = items1;
-    tmp2Result = tmp2(tmp3[11]);
-    obj14.start = tmp5(tmp3[12]).HorizontalGradient.START;
-    obj14.end = tmp5(tmp3[12]).HorizontalGradient.END;
-    obj14.style = tmp.gradientBackground;
-    items2 = [, , ];
-    items2[0] = jsx(tmp2Result, obj14);
-    obj15 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-    intl = tmp5(tmp3[14]).intl;
-    obj15.accessibilityLabel = intl.string(tmp5(tmp3[14]).t.WAI6xu);
-    obj15.onPress = dismiss;
-    obj15.style = tmp.closeButton;
-    obj16 = { size: "md", color: tmp2(tmp3[3]).colors.ICON_DEFAULT };
-    obj15.children = jsx(tmp5(tmp3[15]).XSmallIcon, obj16);
-    items2[1] = jsx(tmp5(tmp3[13]).PressableOpacity, obj15);
-    obj17 = { direction: "vertical", spacing: 16, children: null };
-    obj18 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.text, children: null };
-    intl2 = tmp5(tmp3[14]).intl;
-    obj18.children = intl2.string(tmp5(tmp3[14]).t.WjOclf);
-    items3 = [, ];
-    items3[0] = jsx(tmp5(tmp3[17]).Text, obj18);
-    obj19 = { text: null, onPress: null, size: "sm", shiny: false };
-    tmp2Result1 = tmp2(tmp3[18]);
-    intl3 = tmp5(tmp3[14]).intl;
-    obj19.text = intl3.string(tmp5(tmp3[14]).t.pj0XBN);
-    obj19.onPress = callback;
-    items3[1] = jsx(tmp2Result1, obj19);
-    obj17.children = items3;
-    items2[2] = tmp10(tmp5(tmp3[16]).Stack, obj17);
-    obj1.children = items2;
-    return tmp10(closure_0(closure_2[10]).Card, obj1);
+    const Card = Card_Card.Card;
+    const obj3 = { colors: items1, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, style: tmp.gradientBackground, pointerEvents: "none" };
+    items1 = [hexResult, hexResult1];
+    const tmp2Result = LinearGradientDefault;
+    items2 = [React3(tmp2Result, obj3), , ];
+    const obj5 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl5.t.WAI6xu), onPress: dismiss, style: tmp.closeButton, children: React3(XSmallIcon, obj6) };
+    const PressableOpacity = tmp5(1189).PressableOpacity;
+    intl = tmp5(1127).intl;
+    obj6 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
+    XSmallIcon = tmp5(5940).XSmallIcon;
+    items2[1] = React3(PressableOpacity, obj5);
+    const Stack = tmp5(5280).Stack;
+    const obj7 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.text, children: intl2.string(intl5.t.WjOclf) };
+    const Text = tmp5(4833).Text;
+    intl2 = tmp5(1127).intl;
+    const items3 = [React3(Text, obj7), ];
+    if (buttonVariant === MobileNitroUpsellInShopFeedExperiment.NitroUpsellBannerButtonVariant.LEARN_MORE) {
+      const obj8 = { variant: "primary", size: "sm", text: intl4.string(intl5.t.hvVgAZ), onPress: callback };
+      const Button = tmp5(5282).Button;
+      intl4 = tmp5(1127).intl;
+      tmp11Result = tmp11(Button, obj8);
+    } else {
+      const obj9 = { text: intl3.string(intl5.t.pj0XBN), onPress: callback, size: "sm", shiny: false };
+      const tmp2Result2 = NitroUpsellButtonDefault;
+      intl3 = tmp5(1127).intl;
+      tmp11Result = tmp11(tmp2Result2, obj9);
+    }
+    items3[1] = tmp11Result;
+    items2[2] = hasOwnProperty(Stack, { direction: "vertical", spacing: 16, children: items3 });
+    return hasOwnProperty(Card, obj2);
   }
 }
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { card: { overflow: "hidden", padding: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_16, borderWidth: 1 }, borderDark: null, borderLight: null, gradientBackground: null, text: null, closeButton: null };
-let obj3 = { overflow: "hidden", padding: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_16, borderWidth: 1 };
-obj2.borderDark = { borderColor: nativeDefault.unsafe_rawColors.PRIMARY_660 };
-let obj4 = { borderColor: nativeDefault.unsafe_rawColors.PRIMARY_660 };
-obj2.borderLight = { borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-obj2.gradientBackground = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
-obj2.text = { marginRight: 24 };
-obj2.closeButton = { position: "absolute", top: 8, right: 8 };
-const timestampProducer = createStyles.createStyles(obj2);
-const size = fn(2);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { card: obj2, borderDark: obj3, borderLight: obj4, gradientBackground: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }, text: { marginRight: 24 }, closeButton: { position: "absolute", top: 8, right: 8 } };
+obj2 = { overflow: "hidden", padding: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_16, borderWidth: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { borderColor: nativeDefault.unsafe_rawColors.PRIMARY_660 };
+obj4 = { borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+const metroRequire = createStyles(obj);
 const result = size.fileFinishedImporting("modules/collectibles/native/ShopNitroUpsellBanner.tsx");
 
 export default ShopNitroUpsellBanner;

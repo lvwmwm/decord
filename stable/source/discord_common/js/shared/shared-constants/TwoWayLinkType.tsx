@@ -1,12 +1,13 @@
-// Module ID: 9388
-// Function ID: 9389
+// Module ID: 8540
+// Function ID: 8541
 // Name: TwoWayLinkType
 // Dependencies: [2]
 
-// Module 9388 (TwoWayLinkType)
+// Module 8540 (TwoWayLinkType)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set(["desktop", "device_code", "mobile", "web"]) };
+new Set(["desktop", "device_code", "mobile", "web"]);
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/TwoWayLinkType.tsx");
 
 export const TwoWayLinkType = { MOBILE: "mobile", DESKTOP: "desktop", WEB: "web", DEVICE_CODE: "device_code" };

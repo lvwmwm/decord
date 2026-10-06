@@ -1,22 +1,27 @@
-// Module ID: 7971
-// Function ID: 7972
+// Module ID: 7120
+// Function ID: 7121
 // Name: QuestStore
-// Dependencies: [32, 7972, 7973, 5693, 12, 5701, 7976, 1231, 7967, 5696, 7977, 7978, 7969, 504, 573, 2]
+// Dependencies: [32, 7121, 7122, 5757, 12, 5765, 7125, 1243, 7116, 5760, 7126, 7127, 7118, 504, 585, 2]
 
-// Module 7971 (QuestStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7969 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7976 */;
-import getQuestLogger from "getQuestLogger" /* 7977 */;
-import QuestServerUtils from "QuestServerUtils" /* 7978 */;
-import _slicedToArray from "module_32" /* 32 */;
-import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7972 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7973 */;
+// Module 7120 (QuestStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import QuestConstants from "QuestConstants" /* 5757 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7118 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7125 */;
+import getQuestLogger from "getQuestLogger" /* 7126 */;
+import QuestServerUtils from "QuestServerUtils" /* 7127 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7121 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7122 */;
+import size from "module_2" /* 2 */;
 
-const QuestDataUtils = tmp(7967);
-require = fn;
+const require = globalThis.__r;
+let _require, c0, c10, c26, c3, c4, c5, closure_24, map2, set, set2;
+
+let tmp;
+const QuestDataUtils = tmp(7116);
 function initializeState() {
   c3 = false;
   c4 = false;
@@ -26,31 +31,33 @@ function initializeState() {
   new Map();
   new Map();
   c10 = 0;
-  new Set();
-  set1 = new Set();
-  const map3 = new Map();
-  new Set();
-  const set2 = new Set();
-  new Set();
-  const set3 = new Set();
-  set1 = new Set();
-  const set4 = new Set();
-  set = new Set();
-  map4 = new Map();
-  const set5 = new Set();
-  map2 = new Map();
-  const map5 = new Map();
   new Map();
-  const map6 = new Map();
+  new Set();
+  new Set();
+  new Set();
+  new Set();
+  new Set();
+  new Set();
+  new Set();
+  new Set();
+  new Set();
+  new Set();
+  new Set();
   new Map();
-  const map7 = new Map();
   new Map();
-  const map8 = new Map();
-  map = new Map();
-  set6 = new Set();
-  map10 = new Map();
-  const map9 = new Map();
+  new Map();
+  new Map();
+  new Map();
+  new Map();
+  new Map();
+  new Map();
+  new Map();
+  new Map();
+  new Map();
+  new Set();
+  new Map();
   closure_24 = new Map();
+  new Map();
   if (null != c33) {
     const _clearTimeout = clearTimeout;
     clearTimeout(c33);
@@ -62,14 +69,14 @@ function initializeState() {
     clearTimeout(c34);
     c34 = null;
   }
-  const map11 = new Map();
   map1 = new Map();
-  const map12 = new Map();
-  map = new Map();
+  new Map();
+  new Map();
+  new Map();
 }
 function updateQuestData(questId, result2) {
   map = new Map(map);
-  value = map.get(questId);
+  const value = map.get(questId);
   if (null != value) {
     const obj = {};
     const merged = Object.assign(value);
@@ -78,14 +85,15 @@ function updateQuestData(questId, result2) {
       if (null != userStatus.userStatus) {
         userStatus = userStatus.userStatus;
         let progress;
+        const _Object = Object;
         if (userStatus != null) {
           progress = userStatus.progress;
         }
         if (progress == null) {
           progress = {};
         }
-        const values = Object.values(progress);
-        for (const item10011 of values) {
+        const values2 = values(progress);
+        for (const item10011 of values2) {
           let tmp4 = item10011;
           let tmp5 = _require;
           let tmp6 = dependencyMap;
@@ -99,7 +107,7 @@ function updateQuestData(questId, result2) {
                 lastBeatAt = heartbeat.lastBeatAt;
               }
               if (null != lastBeatAt) {
-                let addResult = set.add(arg0);
+                let addResult = set.add(questId);
               } else {
                 let heartbeat2 = tmp4.heartbeat;
                 let lastBeatAt1;
@@ -107,7 +115,7 @@ function updateQuestData(questId, result2) {
                   lastBeatAt1 = heartbeat2.lastBeatAt;
                 }
                 if (null == lastBeatAt1) {
-                  let deleteResult = set.delete(arg0);
+                  let deleteResult = set.delete(questId);
                 }
               }
             }
@@ -118,40 +126,47 @@ function updateQuestData(questId, result2) {
     })(questId, result2);
     const result = map.set(questId, obj);
     if (map1.has(questId)) {
-      value2 = map1.get(questId);
+      const value2 = map1.get(questId);
       if (null != value2) {
         const _Map = Map;
+        const self = this;
+        const self2 = this;
         map1 = new Map(map1);
         const obj2 = {};
+        set = map1.set;
         const merged2 = Object.assign(value2);
         const merged3 = Object.assign(result2);
-        const result1 = map1.set(questId, obj2);
+        const result1 = set(questId, obj2);
       }
     }
   }
 }
 function handleAdContentDismissEnd(adCreativeId) {
+  adCreativeId = adCreativeId.adCreativeId;
   set = new Set(set);
-  set.delete(adCreativeId.adCreativeId);
+  set.delete(adCreativeId);
 }
 function _runExpirationCheck() {
+  let closure_33;
   _require = false;
   map = new Map(map);
   const item = map.forEach((item, index) => {
     if (true !== map.get(index)) {
+      const obj2 = QuestDataUtils;
       if (obj2.isQuestExpired(item)) {
         const result = obj.set(index, true);
         c0 = true;
-      } else if (!obj.has(index)) {
+      } else if (!map.has(index)) {
         const result1 = obj.set(index, false);
       }
-      obj2 = QuestDataUtils;
     }
   });
-  if (_require) {
+  const tmp3 = _require;
+  if (tmp3) {
     questStore.emitChange();
   }
-  let result = require("QuestDataUtils").findNextUpcomingExpirationEpochMs(Array.from(map.values()));
+  const obj = require("QuestDataUtils");
+  let result = obj.findNextUpcomingExpirationEpochMs(Array.from(map.values()));
   if (null != result) {
     const _Math = Math;
     const _Date = Date;
@@ -164,15 +179,108 @@ function _runExpirationCheck() {
     }
   }
 }
-const QuestsExperimentLocations = fn(5693).QuestsExperimentLocations;
-new Map();
+const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
+let map = new Map();
+let map4 = map;
 let c33 = null;
 let c34 = null;
-let map = new Map();
+let map1 = new Map();
+map = map1;
 let c36 = 864000000;
 initializeState();
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class QuestStore extends Store {
+  isFetchingQuestPreview(arg0) {
+    return set.has(arg0);
+  }
+  getQuestPreviewOverride(QUEST_BAR_MOBILE) {
+    const value = map.get(QUEST_BAR_MOBILE);
+    let value2;
+    if (null != value) {
+      value2 = map.get(value);
+    }
+    return value2;
+  }
+  getFetchQuestPreviewError(arg0) {
+    return map.get(arg0);
+  }
+  isEnrolling(id) {
+    return set.has(id);
+  }
+  isClaimingReward(id) {
+    return set.has(id);
+  }
+  isFetchingRewardCode(id) {
+    return set.has(id);
+  }
+  isDismissingContent(adCreativeId) {
+    return set.has(adCreativeId);
+  }
+  isAdContentDismissed(arg0) {
+    return set.has(arg0);
+  }
+  getRewardCode(id) {
+    return map2.get(id);
+  }
+  getRewards(id) {
+    return map.get(id);
+  }
+  getStreamHeartbeatFailure(arg0) {
+    return map.get(arg0);
+  }
+  getQuest(questId) {
+    return map.get(questId);
+  }
+  getQuestConfig(questId) {
+    const quest = this.getQuest(questId);
+    let config;
+    if (quest != null) {
+      config = quest.config;
+    }
+    return config;
+  }
+  isProgressingOnDesktop(id) {
+    return set6.has(id);
+  }
+  selectedTaskPlatform(arg0) {
+    let value = map.get(arg0);
+    if (value == null) {
+      value = null;
+    }
+    return value;
+  }
+  getOptimisticProgress(id, WATCH_VIDEO) {
+    const value = map4.get(id);
+    let value2;
+    if (value != null) {
+      value2 = value.get(WATCH_VIDEO);
+    }
+    return value2;
+  }
+  getExpiredQuestsMap() {
+    return closure_24;
+  }
+  isQuestExpired(arg0) {
+    let flag = closure_24.get(arg0);
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }
+  getQuestLoadedViaPreview(arg0) {
+    return map1.get(arg0);
+  }
+  isFetchingEarnedQuestToDeliverByPlacement(arg0) {
+    let flag;
+    const obj = map;
+    if (map != null) {
+      flag = obj.get(arg0);
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }
 }
 const prototype = QuestStore.prototype;
 Object.defineProperty(prototype, "quests", {
@@ -205,23 +313,12 @@ Object.defineProperty(prototype, "isFetchingClaimedQuests", {
   },
   set: undefined
 });
-prototype["isFetchingQuestPreview"] = function isFetchingQuestPreview(arg0) {
-  return set.has(arg0);
-};
 Object.defineProperty(prototype, "lastFetchedCurrentQuests", {
   get: function lastFetchedCurrentQuests() {
     return c10;
   },
   set: undefined
 });
-prototype["getQuestPreviewOverride"] = function getQuestPreviewOverride(QUEST_BAR_MOBILE) {
-  value = map.get(QUEST_BAR_MOBILE);
-  value2 = undefined;
-  if (null != value) {
-    value2 = map.get(value);
-  }
-  return value2;
-};
 Object.defineProperty(prototype, "questEnrollmentBlockedUntil", {
   get: function questEnrollmentBlockedUntil() {
     return date;
@@ -240,91 +337,12 @@ Object.defineProperty(prototype, "isQuestAccessSuspended", {
   },
   set: undefined
 });
-prototype["getFetchQuestPreviewError"] = function getFetchQuestPreviewError(arg0) {
-  return map.get(arg0);
-};
-prototype["isEnrolling"] = function isEnrolling(id) {
-  return set.has(id);
-};
-prototype["isClaimingReward"] = function isClaimingReward(id) {
-  return set.has(id);
-};
-prototype["isFetchingRewardCode"] = function isFetchingRewardCode(id) {
-  return set.has(id);
-};
-prototype["isDismissingContent"] = function isDismissingContent(adCreativeId) {
-  return set.has(adCreativeId);
-};
-prototype["isAdContentDismissed"] = function isAdContentDismissed(arg0) {
-  return set1.has(arg0);
-};
-prototype["getRewardCode"] = function getRewardCode(id) {
-  return map2.get(id);
-};
-prototype["getRewards"] = function getRewards(id) {
-  return map.get(id);
-};
-prototype["getStreamHeartbeatFailure"] = function getStreamHeartbeatFailure(arg0) {
-  return map.get(arg0);
-};
-prototype["getQuest"] = function getQuest(questId) {
-  return map.get(questId);
-};
-prototype["getQuestConfig"] = function getQuestConfig(questId) {
-  const quest = this.getQuest(questId);
-  let config;
-  if (quest != null) {
-    config = quest.config;
-  }
-  return config;
-};
-prototype["isProgressingOnDesktop"] = function isProgressingOnDesktop(id) {
-  return set6.has(id);
-};
-prototype["selectedTaskPlatform"] = function selectedTaskPlatform(arg0) {
-  value = map.get(arg0);
-  if (value == null) {
-    value = null;
-  }
-  return value;
-};
-prototype["getOptimisticProgress"] = function getOptimisticProgress(id, WATCH_VIDEO) {
-  value = map4.get(id);
-  value2 = undefined;
-  if (value != null) {
-    value2 = value.get(WATCH_VIDEO);
-  }
-  return value2;
-};
-prototype["getExpiredQuestsMap"] = function getExpiredQuestsMap() {
-  return closure_24;
-};
-prototype["isQuestExpired"] = function isQuestExpired(arg0) {
-  let flag = closure_24.get(arg0);
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
-prototype["getQuestLoadedViaPreview"] = function getQuestLoadedViaPreview(arg0) {
-  return map1.get(arg0);
-};
 Object.defineProperty(prototype, "isFetchingEarnedQuestToDeliver", {
   get: function isFetchingEarnedQuestToDeliver() {
     return c5;
   },
   set: undefined
 });
-prototype["isFetchingEarnedQuestToDeliverByPlacement"] = function isFetchingEarnedQuestToDeliverByPlacement(arg0) {
-  let flag;
-  if (map != null) {
-    flag = map.get(arg0);
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
 Object.defineProperty(prototype, "earnedQuestForPlacement", {
   get: function earnedQuestForPlacement() {
     return map10;
@@ -332,7 +350,7 @@ Object.defineProperty(prototype, "earnedQuestForPlacement", {
   set: undefined
 });
 QuestStore.displayName = "QuestStore";
-const questStore = new QuestStore(DispatcherDefault, {
+let obj = {
   LOGOUT: function handleLogout() {
     if (null != c33) {
       const _clearTimeout = clearTimeout;
@@ -354,80 +372,22 @@ const questStore = new QuestStore(DispatcherDefault, {
     c3 = true;
   },
   QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: function handleFetchCurrentQuestsSuccess(arg0) {
-    ({ quests, excludedQuests, questEnrollmentBlockedUntil, questAccessSuspendedUntil } = arg0);
-    const items = [...map.keys()];
-    const mapped = quests.map((id) => id.id);
-    const found = items.filter((item) => !mapped.includes(item));
-    if (found.length > 0) {
-      const obj2 = { category: "quests.store", message: null, data: null };
-      const _HermesInternal = HermesInternal;
-      obj2.message = "handleFetchCurrentQuestsSuccess: " + found.length + " quest(s) removed during rebuild";
-      const obj3 = { prevQuestIds: items, nextQuestIds: mapped, removedIds: found };
-      obj2.data = obj3;
-      SentryUtilsDefault.addBreadcrumb(obj2);
-    }
-    closure_10 = Date.now();
-    c3 = false;
-    map = new Map();
-    map1 = new Map();
-    const iter = quests[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp9 = nextResult;
-      let result = map.set(nextResult.id, nextResult);
-      let tmp13 = mapped;
-      let obj5 = mapped(7967);
-      let result1 = map1.set(nextResult.id, obj5.isQuestExpired(nextResult));
-      let targetedContent = nextResult.targetedContent;
-      if (targetedContent.includes(mapped(5696).QuestContent.QUEST_BAR)) {
-        let tmp13Result = tmp13(7977);
-        let obj4 = { location: null };
-        obj4.location = QuestsExperimentLocations.QUESTS_STORE;
-        let questLogger = tmp13Result.getQuestLogger(obj4);
-        let _HermesInternal2 = HermesInternal;
-        let str3 = "Delivered ";
-        let str4 = " (";
-        let str5 = ")";
-        let logResult = questLogger.log("Delivered " + tmp9.config.messages.questName + " (" + tmp9.id + ")");
-      }
-      continue;
-    }
-    map2 = new Map();
-    for (const item10116 of excludedQuests) {
-      let result2 = map2.set(item10116.id, item10116);
-      continue;
-    }
-    if (map1 != null) {
-      const values = map1.values();
-    }
-    for (const item10131 of values) {
-      let tmp26 = item10131;
-      if (!map.has(item10131.id)) {
-        let result3 = map.set(tmp26.id, tmp26);
-        let obj10 = mapped(7967);
-        let result4 = map1.set(tmp26.id, obj10.isQuestExpired(tmp26));
-      }
-      continue;
-    }
-    (function _startExpirationChecker() {
+    let closure_34;
+    let excludedQuests;
+    let obj2;
+    let questAccessSuspendedUntil;
+    let questEnrollmentBlockedUntil;
+    let quests;
+    function _startExpirationChecker() {
       if (null != c33) {
         const _clearTimeout = clearTimeout;
         clearTimeout(c33);
         c33 = null;
       }
       _runExpirationCheck();
-    })();
-    date = null;
-    if (null != questEnrollmentBlockedUntil) {
-      let _Date = Date;
-      date = new Date(questEnrollmentBlockedUntil);
     }
-    let date1 = null;
-    if (null != questAccessSuspendedUntil) {
-      const _Date2 = Date;
-      date1 = new Date(questAccessSuspendedUntil);
-    }
-    (function _startSuspensionExpirationTimer() {
+    function _startSuspensionExpirationTimer() {
+      let timeout;
       if (null != timeout) {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
@@ -447,7 +407,81 @@ const questStore = new QuestStore(DispatcherDefault, {
           }, Math.max(diff, 0));
         }
       }
-    })();
+    }
+    ({ quests, excludedQuests, questEnrollmentBlockedUntil, questAccessSuspendedUntil } = arg0);
+    const items = [...map.keys()];
+    const mapped = quests.map((id) => id.id);
+    const found = items.filter((item) => !mapped.includes(item));
+    if (found.length > 0) {
+      const _HermesInternal = HermesInternal;
+      const obj = { category: "quests.store", message: "handleFetchCurrentQuestsSuccess: " + found.length + " quest(s) removed during rebuild", data: obj2 };
+      const addBreadcrumb = SentryUtilsDefault.addBreadcrumb;
+      SentryUtilsDefault;
+      obj2 = { prevQuestIds: items, nextQuestIds: mapped, removedIds: found };
+      addBreadcrumb(obj);
+    }
+    let closure_10 = Date.now();
+    c3 = false;
+    map = new Map();
+    map1 = new Map();
+    const iter = quests[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp11 = nextResult;
+      let result = map.set(nextResult.id, nextResult);
+      set = map1.set;
+      let id = nextResult.id;
+      let tmp15 = mapped;
+      let obj3 = mapped(7116);
+      let result1 = set(id, obj3.isQuestExpired(nextResult));
+      let targetedContent = nextResult.targetedContent;
+      if (targetedContent.includes(mapped(5760).QuestContent.QUEST_BAR)) {
+        let tmp15Result = tmp15(7126);
+        let obj4 = { location: QuestsExperimentLocations.QUESTS_STORE };
+        let questLogger = tmp15Result.getQuestLogger(obj4);
+        let _HermesInternal2 = HermesInternal;
+        let str3 = "Delivered ";
+        let str4 = " (";
+        let str5 = ")";
+        let logResult = questLogger.log("Delivered " + tmp11.config.messages.questName + " (" + tmp11.id + ")");
+      }
+      continue;
+    }
+    map2 = new Map();
+    for (const item10116 of excludedQuests) {
+      let result2 = map2.set(item10116.id, item10116);
+      continue;
+    }
+    const obj7 = map1;
+    if (map1 != null) {
+      const values = obj7.values();
+    }
+    for (const item10131 of values) {
+      let tmp28 = item10131;
+      if (!map.has(item10131.id)) {
+        let result3 = map.set(tmp28.id, tmp28);
+        set2 = map1.set;
+        let id2 = tmp28.id;
+        let obj8 = mapped(7116);
+        let set2Result = set2(id2, obj8.isQuestExpired(tmp28));
+      }
+      continue;
+    }
+    _startExpirationChecker();
+    if (null != questEnrollmentBlockedUntil) {
+      let _Date = Date;
+      const self = this;
+      const self2 = this;
+      new Date(questEnrollmentBlockedUntil);
+    }
+    let date1 = null;
+    if (null != questAccessSuspendedUntil) {
+      const _Date2 = Date;
+      const self3 = this;
+      const self4 = this;
+      date1 = new Date(questAccessSuspendedUntil);
+    }
+    _startSuspensionExpirationTimer();
   },
   QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function handleFetchCurrentQuestsFailure() {
     c10 = 0;
@@ -456,10 +490,11 @@ const questStore = new QuestStore(DispatcherDefault, {
   QUESTS_FETCH_CLAIMED_QUESTS_BEGIN: function handleFetchClaimedQuestsBegin() {
     c4 = true;
   },
-  QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: function handleFetchClaimedQuestsSuccess(arg0) {
+  QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: function handleFetchClaimedQuestsSuccess(quests) {
+    quests = quests.quests;
     c4 = false;
     map = new Map();
-    for (const item10013 of tmp) {
+    for (const item10013 of quests) {
       let result = map.set(item10013.id, item10013);
       continue;
     }
@@ -469,59 +504,71 @@ const questStore = new QuestStore(DispatcherDefault, {
   },
   QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN: function handleFetchEarnedQuestToDeliverBegin(content) {
     c5 = true;
+    content = content.content;
     map = new Map(map);
-    const result = map.set(content.content, true);
+    const result = map.set(content, true);
   },
   QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_SUCCESS: function handleFetchEarnedQuestToDeliverSuccess(arg0) {
+    let content;
+    let fetchedAt;
+    let first;
+    let responseTtlSeconds;
+    let serverQuests;
+    let tmp11;
     ({ serverQuests, content } = arg0);
     c5 = false;
     ({ fetchedAt, responseTtlSeconds } = arg0);
     map = new Map(map);
     const result = map.set(content, false);
-    const responseTtl = AdDecisionUtils.resolveResponseTtl(responseTtlSeconds);
-    value = map10.get(content);
+    const obj2 = AdDecisionUtils;
+    const responseTtl = obj2.resolveResponseTtl(responseTtlSeconds);
+    const value = map10.get(content);
     let prop;
+    const _Map = Map;
     if (value != null) {
       prop = value.earnedDecisionByQuestId;
     }
-    map1 = new Map(prop);
+    const _Map1 = new _Map(prop);
+    const tmp5 = serverQuests[Symbol.iterator]();
     while (tmp5 !== undefined) {
       [first, tmp11] = tmp6;
       let tmp10 = first;
       let obj = { fetchedAt, ttlMillis: responseTtl, shouldDeliver: null != tmp11 };
       let tmp12 = tmp11;
-      let result1 = map1.set(first, obj);
+      let result1 = _Map1.set(first, obj);
       if (null != tmp11) {
-        value2 = map.get(tmp10);
-        let tmp37 = require;
-        let obj8 = QuestServerUtils;
-        let result2 = obj8.questWithUserStatusFromServer(tmp12);
+        let value2 = map.get(tmp10);
+        let tmp34 = require;
+        let obj7 = QuestServerUtils;
+        let result2 = obj7.questWithUserStatusFromServer(tmp12);
         if (null != value2) {
-          let tmp31 = updateQuestData(tmp10, result2);
+          let tmp28 = updateQuestData(tmp10, result2);
         } else {
-          let _Map = Map;
-          let tmp15 = new.target;
-          let tmp16 = new.target;
-          map2 = new Map(map);
-          map = map2;
-          let result3 = map2.set(tmp10, result2);
           let _Map2 = Map;
-          let tmp22 = new.target;
-          let tmp23 = new.target;
-          let map3 = new Map(closure_24);
-          closure_24 = map3;
-          let tmp37Result = tmp37(7967);
-          let result4 = map3.set(tmp10, tmp37Result.isQuestExpired(result2));
+          let self = this;
+          let self2 = this;
+          map1 = new Map(map);
+          map = map1;
+          let result3 = map1.set(tmp10, result2);
+          let _Map3 = Map;
+          let self3 = this;
+          let self4 = this;
+          map2 = new Map(closure_24);
+          closure_24 = map2;
+          set = map2.set;
+          let tmp34Result = tmp34(7116);
+          let result4 = set(tmp10, tmp34Result.isQuestExpired(result2));
         }
       }
       continue;
     }
-    const result5 = map10.set(content, { earnedDecisionByQuestId: map1 });
+    const result5 = map10.set(content, { earnedDecisionByQuestId: _Map1 });
   },
   QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_FAILURE: function handleFetchEarnedQuestToDeliverFailure(content) {
     c5 = false;
+    content = content.content;
     map = new Map(map);
-    const result = map.set(content.content, false);
+    const result = map.set(content, false);
   },
   QUESTS_FETCH_PREVIEW_BEGIN: function handleFetchQuestPreviewBegin(questId) {
     questId = questId.questId;
@@ -531,6 +578,8 @@ const questStore = new QuestStore(DispatcherDefault, {
     map.delete(questId);
   },
   QUESTS_FETCH_PREVIEW_SUCCESS: function handleFetchQuestPreviewSuccess(arg0) {
+    let quest;
+    let questId;
     ({ questId, quest } = arg0);
     set = new Set(set);
     set.delete(questId);
@@ -545,17 +594,21 @@ const questStore = new QuestStore(DispatcherDefault, {
   },
   QUESTS_FETCH_PREVIEW_FAILURE: function handleFetchQuestPreviewFailure(questId) {
     questId = questId.questId;
+    const error = questId.error;
     set = new Set(set);
     set.delete(questId);
     map = new Map(map);
-    const result = map.set(questId, questId.error);
+    const result = map.set(questId, error);
   },
   QUESTS_SEND_HEARTBEAT_SUCCESS: function handleSendHeartbeatSuccess(userStatus) {
+    let questId;
+    let streamKey;
     ({ questId, streamKey } = userStatus);
+    userStatus = userStatus.userStatus;
     set6.add(questId);
-    const obj = { userStatus: userStatus.userStatus };
+    const obj = { userStatus };
     map = new Map(map);
-    value = map.get(questId);
+    const value = map.get(questId);
     if (null != value) {
       const obj2 = {};
       const merged = Object.assign(value);
@@ -564,14 +617,15 @@ const questStore = new QuestStore(DispatcherDefault, {
         if (null != userStatus.userStatus) {
           userStatus = userStatus.userStatus;
           let progress;
+          const _Object = Object;
           if (userStatus != null) {
             progress = userStatus.progress;
           }
           if (progress == null) {
             progress = {};
           }
-          const values = Object.values(progress);
-          for (const item10011 of values) {
+          const values2 = values(progress);
+          for (const item10011 of values2) {
             let tmp4 = item10011;
             let tmp5 = _require;
             let tmp6 = dependencyMap;
@@ -585,7 +639,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                   lastBeatAt = heartbeat.lastBeatAt;
                 }
                 if (null != lastBeatAt) {
-                  let addResult = set.add(arg0);
+                  let addResult = set.add(questId);
                 } else {
                   let heartbeat2 = tmp4.heartbeat;
                   let lastBeatAt1;
@@ -593,7 +647,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                     lastBeatAt1 = heartbeat2.lastBeatAt;
                   }
                   if (null == lastBeatAt1) {
-                    let deleteResult = set.delete(arg0);
+                    let deleteResult = set.delete(questId);
                   }
                 }
               }
@@ -604,20 +658,25 @@ const questStore = new QuestStore(DispatcherDefault, {
       })(questId, obj);
       const result = map.set(questId, obj2);
       if (map1.has(questId)) {
-        value2 = map1.get(questId);
+        const value2 = map1.get(questId);
         if (null != value2) {
           const _Map = Map;
+          const self = this;
+          const self2 = this;
           map1 = new Map(map1);
           const obj3 = {};
+          set = map1.set;
           const merged2 = Object.assign(value2);
           const merged3 = Object.assign(obj);
-          const result1 = map1.set(questId, obj3);
+          const result1 = set(questId, obj3);
         }
       }
     }
     if (null != streamKey) {
       if (null != map.get(streamKey)) {
         const _Map2 = Map;
+        const self3 = this;
+        const self4 = this;
         map2 = new Map(map);
         map = map2;
         map2.delete(streamKey);
@@ -627,28 +686,32 @@ const questStore = new QuestStore(DispatcherDefault, {
   QUESTS_SEND_HEARTBEAT_FAILURE: function handleSendHeartbeatFailure(streamKey) {
     streamKey = streamKey.streamKey;
     let tmp = null != streamKey;
+    const questId = streamKey.questId;
     if (tmp) {
       tmp = null == map.get(streamKey);
     }
     if (tmp) {
       const _Map = Map;
+      const self = this;
+      const self2 = this;
       map = new Map(map);
-      const obj = { questId: streamKey.questId, streamKey, firstFailedAt: null };
       const _Date = Date;
-      obj.firstFailedAt = Date.now();
-      const result = map.set(streamKey, obj);
+      const obj = { questId, streamKey, firstFailedAt: Date.now() };
+      set = map.set;
+      const result = set(streamKey, obj);
     }
   },
   QUESTS_ENROLL_BEGIN: function handleEnrollBegin(questId) {
+    questId = questId.questId;
     set = new Set(set);
-    set.add(questId.questId);
+    set.add(questId);
   },
   QUESTS_ENROLL_SUCCESS: function handleEnrollSuccess(enrolledQuestUserStatus) {
     enrolledQuestUserStatus = enrolledQuestUserStatus.enrolledQuestUserStatus;
     const questId = enrolledQuestUserStatus.questId;
     const obj = { userStatus: enrolledQuestUserStatus };
     map = new Map(map);
-    value = map.get(questId);
+    const value = map.get(questId);
     if (null != value) {
       const obj2 = {};
       const merged = Object.assign(value);
@@ -657,14 +720,15 @@ const questStore = new QuestStore(DispatcherDefault, {
         if (null != userStatus.userStatus) {
           userStatus = userStatus.userStatus;
           let progress;
+          const _Object = Object;
           if (userStatus != null) {
             progress = userStatus.progress;
           }
           if (progress == null) {
             progress = {};
           }
-          const values = Object.values(progress);
-          for (const item10011 of values) {
+          const values2 = values(progress);
+          for (const item10011 of values2) {
             let tmp4 = item10011;
             let tmp5 = _require;
             let tmp6 = dependencyMap;
@@ -678,7 +742,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                   lastBeatAt = heartbeat.lastBeatAt;
                 }
                 if (null != lastBeatAt) {
-                  let addResult = set.add(arg0);
+                  let addResult = set.add(questId);
                 } else {
                   let heartbeat2 = tmp4.heartbeat;
                   let lastBeatAt1;
@@ -686,7 +750,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                     lastBeatAt1 = heartbeat2.lastBeatAt;
                   }
                   if (null == lastBeatAt1) {
-                    let deleteResult = set.delete(arg0);
+                    let deleteResult = set.delete(questId);
                   }
                 }
               }
@@ -697,47 +761,59 @@ const questStore = new QuestStore(DispatcherDefault, {
       })(questId, obj);
       const result = map.set(questId, obj2);
       if (map1.has(questId)) {
-        value2 = map1.get(questId);
+        const value2 = map1.get(questId);
         if (null != value2) {
           const _Map = Map;
+          const self = this;
+          const self2 = this;
           map1 = new Map(map1);
+          set = map1.set;
           const obj3 = {};
           const merged2 = Object.assign(value2);
           const merged3 = Object.assign(obj);
-          const result1 = map1.set(questId, obj3);
+          const result1 = set(questId, obj3);
         }
       }
     }
-    set = new Set(set);
-    set.delete(enrolledQuestUserStatus.questId);
+    const questId2 = enrolledQuestUserStatus.questId;
+    const set1 = new Set(set);
+    set1.delete(questId2);
+    set = set1;
   },
   QUESTS_ENROLL_FAILURE: function handleEnrollFailure(questId) {
-    set = new Set(set);
-    set.delete(questId.questId);
-  },
-  QUESTS_FETCH_REWARD_CODE_BEGIN: function handleFetchRewardCodeBegin(questId) {
-    set = new Set(set);
-    set.add(questId.questId);
-  },
-  QUESTS_FETCH_REWARD_CODE_SUCCESS: function handleFetchRewardCodeSuccess(arg0) {
-    ({ questId, rewardCode } = arg0);
+    questId = questId.questId;
     set = new Set(set);
     set.delete(questId);
+  },
+  QUESTS_FETCH_REWARD_CODE_BEGIN: function handleFetchRewardCodeBegin(questId) {
+    questId = questId.questId;
+    set = new Set(set);
+    set.add(questId);
+  },
+  QUESTS_FETCH_REWARD_CODE_SUCCESS: function handleFetchRewardCodeSuccess(arg0) {
+    let obj2;
+    let questId;
+    let rewardCode;
+    ({ questId, rewardCode } = arg0);
+    const set1 = new Set(set);
+    set1.delete(questId);
+    set = set1;
     map = new Map(map2);
     const result = map.set(questId, rewardCode);
     map2 = map;
-    value = map.get(questId);
+    const value = map.get(questId);
     let userStatus;
     if (value != null) {
       userStatus = value.userStatus;
     }
+    const tmp5 = null != userStatus && null == userStatus.claimedAt;
     if (tmp5) {
-      const obj = { userStatus: null };
-      const obj2 = {};
+      const obj = { userStatus: obj2 };
+      obj2 = { claimedAt: rewardCode.claimedAt };
       const merged = Object.assign(userStatus);
-      obj2.claimedAt = rewardCode.claimedAt;
-      obj.userStatus = obj2;
       const _Map = Map;
+      const self = this;
+      const self2 = this;
       map1 = new Map(map);
       map = map1;
       const value3 = map1.get(questId);
@@ -749,14 +825,15 @@ const questStore = new QuestStore(DispatcherDefault, {
           if (null != userStatus.userStatus) {
             userStatus = userStatus.userStatus;
             let progress;
+            const _Object = Object;
             if (userStatus != null) {
               progress = userStatus.progress;
             }
             if (progress == null) {
               progress = {};
             }
-            const values = Object.values(progress);
-            for (const item10011 of values) {
+            const values2 = values(progress);
+            for (const item10011 of values2) {
               let tmp4 = item10011;
               let tmp5 = _require;
               let tmp6 = dependencyMap;
@@ -770,7 +847,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                     lastBeatAt = heartbeat.lastBeatAt;
                   }
                   if (null != lastBeatAt) {
-                    let addResult = set.add(arg0);
+                    let addResult = set.add(questId);
                   } else {
                     let heartbeat2 = tmp4.heartbeat;
                     let lastBeatAt1;
@@ -778,7 +855,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                       lastBeatAt1 = heartbeat2.lastBeatAt;
                     }
                     if (null == lastBeatAt1) {
-                      let deleteResult = set.delete(arg0);
+                      let deleteResult = set.delete(questId);
                     }
                   }
                 }
@@ -792,32 +869,41 @@ const questStore = new QuestStore(DispatcherDefault, {
           const value4 = map1.get(questId);
           if (null != value4) {
             const _Map2 = Map;
+            const self3 = this;
+            const self4 = this;
             map2 = new Map(map1);
             map1 = map2;
+            set = map2.set;
             const obj4 = {};
             const merged3 = Object.assign(value4);
             const merged4 = Object.assign(obj);
-            const result2 = map2.set(questId, obj4);
+            const result2 = set(questId, obj4);
           }
         }
       }
     }
   },
   QUESTS_FETCH_REWARD_CODE_FAILURE: function handleFetchRewardCodeFailure(questId) {
-    set = new Set(set);
-    set.delete(questId.questId);
-  },
-  QUESTS_CLAIM_REWARD_BEGIN: function handleClaimRewardBegin(questId) {
-    set = new Set(set);
-    set.add(questId.questId);
-  },
-  QUESTS_CLAIM_REWARD_SUCCESS: function handleClaimRewardSuccess(arg0) {
-    ({ questId, entitlements } = arg0);
+    questId = questId.questId;
     set = new Set(set);
     set.delete(questId);
+  },
+  QUESTS_CLAIM_REWARD_BEGIN: function handleClaimRewardBegin(questId) {
+    questId = questId.questId;
+    set = new Set(set);
+    set.add(questId);
+  },
+  QUESTS_CLAIM_REWARD_SUCCESS: function handleClaimRewardSuccess(arg0) {
+    let entitlements;
+    let questId;
+    let tier;
+    ({ questId, entitlements } = arg0);
+    const set1 = new Set(set);
+    set1.delete(questId);
+    set = set1;
     map = new Map(map);
     const result = map.set(questId, entitlements.items);
-    value = map.get(questId);
+    const value = map.get(questId);
     let userStatus;
     if (value != null) {
       userStatus = value.userStatus;
@@ -839,24 +925,25 @@ const questStore = new QuestStore(DispatcherDefault, {
         }
         if (null != rewardCode) {
           const _Map = Map;
+          const self = this;
+          const self2 = this;
           map1 = new Map(map2);
           const result1 = map1.set(questId, rewardCode);
           map2 = map1;
         }
-        const obj = {};
+        const obj = { claimedAt: entitlements.claimedAt, claimedTier: tier };
         const merged = Object.assign(userStatus);
-        obj.claimedAt = entitlements.claimedAt;
-        let tier;
+        tier = undefined;
         if (rewardCode != null) {
           tier = rewardCode.tier;
         }
         if (tier == null) {
           tier = null;
         }
-        const obj2 = { userStatus: null };
-        obj.claimedTier = tier;
-        obj2.userStatus = obj;
+        const obj2 = { userStatus: obj };
         const _Map2 = Map;
+        const self3 = this;
+        const self4 = this;
         map2 = new Map(map);
         map = map2;
         const value3 = map2.get(questId);
@@ -868,14 +955,15 @@ const questStore = new QuestStore(DispatcherDefault, {
             if (null != userStatus.userStatus) {
               userStatus = userStatus.userStatus;
               let progress;
+              const _Object = Object;
               if (userStatus != null) {
                 progress = userStatus.progress;
               }
               if (progress == null) {
                 progress = {};
               }
-              const values = Object.values(progress);
-              for (const item10011 of values) {
+              const values2 = values(progress);
+              for (const item10011 of values2) {
                 let tmp4 = item10011;
                 let tmp5 = _require;
                 let tmp6 = dependencyMap;
@@ -889,7 +977,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                       lastBeatAt = heartbeat.lastBeatAt;
                     }
                     if (null != lastBeatAt) {
-                      let addResult = set.add(arg0);
+                      let addResult = set.add(questId);
                     } else {
                       let heartbeat2 = tmp4.heartbeat;
                       let lastBeatAt1;
@@ -897,7 +985,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                         lastBeatAt1 = heartbeat2.lastBeatAt;
                       }
                       if (null == lastBeatAt1) {
-                        let deleteResult = set.delete(arg0);
+                        let deleteResult = set.delete(questId);
                       }
                     }
                   }
@@ -911,12 +999,15 @@ const questStore = new QuestStore(DispatcherDefault, {
             const value4 = map1.get(questId);
             if (null != value4) {
               const _Map3 = Map;
+              const self5 = this;
+              const self6 = this;
               const map3 = new Map(map1);
               map1 = map3;
+              set = map3.set;
               const obj4 = {};
               const merged3 = Object.assign(value4);
               const merged4 = Object.assign(obj2);
-              const result3 = map3.set(questId, obj4);
+              const result3 = set(questId, obj4);
             }
           }
         }
@@ -924,21 +1015,22 @@ const questStore = new QuestStore(DispatcherDefault, {
     }
   },
   QUESTS_CLAIM_REWARD_FAILURE: function handleClaimRewardFailure(questId) {
+    questId = questId.questId;
     set = new Set(set);
-    set.delete(questId.questId);
+    set.delete(questId);
   },
   QUESTS_DISMISS_CONTENT_BEGIN: function handleDismissContentBegin(questId) {
     questId = questId.questId;
     set = new Set(set);
     set.add(questId);
     map = new Map(map);
-    let flag = false;
+    const tmp2 = map[Symbol.iterator]();
     while (tmp2 !== undefined) {
       let tmp5 = _slicedToArray(tmp3, 2);
       let first = tmp5[0];
       if (tmp5[1] === questId) {
         let deleteResult = map.delete(first);
-        flag = true;
+        let flag = true;
       }
       continue;
     }
@@ -948,7 +1040,7 @@ const questStore = new QuestStore(DispatcherDefault, {
     const questId = dismissedQuestUserStatus.questId;
     const obj = { userStatus: dismissedQuestUserStatus };
     map = new Map(map);
-    value = map.get(questId);
+    const value = map.get(questId);
     if (null != value) {
       const obj2 = {};
       const merged = Object.assign(value);
@@ -957,14 +1049,15 @@ const questStore = new QuestStore(DispatcherDefault, {
         if (null != userStatus.userStatus) {
           userStatus = userStatus.userStatus;
           let progress;
+          const _Object = Object;
           if (userStatus != null) {
             progress = userStatus.progress;
           }
           if (progress == null) {
             progress = {};
           }
-          const values = Object.values(progress);
-          for (const item10011 of values) {
+          const values2 = values(progress);
+          for (const item10011 of values2) {
             let tmp4 = item10011;
             let tmp5 = _require;
             let tmp6 = dependencyMap;
@@ -978,7 +1071,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                   lastBeatAt = heartbeat.lastBeatAt;
                 }
                 if (null != lastBeatAt) {
-                  let addResult = set.add(arg0);
+                  let addResult = set.add(questId);
                 } else {
                   let heartbeat2 = tmp4.heartbeat;
                   let lastBeatAt1;
@@ -986,7 +1079,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                     lastBeatAt1 = heartbeat2.lastBeatAt;
                   }
                   if (null == lastBeatAt1) {
-                    let deleteResult = set.delete(arg0);
+                    let deleteResult = set.delete(questId);
                   }
                 }
               }
@@ -997,43 +1090,74 @@ const questStore = new QuestStore(DispatcherDefault, {
       })(questId, obj);
       const result = map.set(questId, obj2);
       if (map1.has(questId)) {
-        value2 = map1.get(questId);
+        const value2 = map1.get(questId);
         if (null != value2) {
           const _Map = Map;
+          const self = this;
+          const self2 = this;
           map1 = new Map(map1);
+          set = map1.set;
           const obj3 = {};
           const merged2 = Object.assign(value2);
           const merged3 = Object.assign(obj);
-          const result1 = map1.set(questId, obj3);
+          const result1 = set(questId, obj3);
         }
       }
     }
-    set = new Set(set);
-    set.delete(dismissedQuestUserStatus.questId);
+    const questId2 = dismissedQuestUserStatus.questId;
+    const set1 = new Set(set);
+    set1.delete(questId2);
+    set = set1;
   },
   QUESTS_DISMISS_CONTENT_FAILURE: function handleDismissContentFailure(questId) {
+    questId = questId.questId;
     set = new Set(set);
-    set.delete(questId.questId);
+    set.delete(questId);
   },
   AD_CONTENT_DISMISS_BEGIN: function handleAdContentDismissBegin(adCreativeId) {
     adCreativeId = adCreativeId.adCreativeId;
     set = new Set(set);
     set.add(adCreativeId);
-    set1 = new Set(set1);
+    const set1 = new Set(set);
     set1.add(adCreativeId);
+    set = set1;
   },
   AD_CONTENT_DISMISS_SUCCESS: handleAdContentDismissEnd,
   AD_CONTENT_DISMISS_FAILURE: handleAdContentDismissEnd,
+  ADS_CREATIVE_PREVIEW_DELIVERY_STATE_RESET: function handleAdsCreativePreviewDeliveryStateReset(adCreativeId) {
+    adCreativeId = adCreativeId.adCreativeId;
+    if (set.has(adCreativeId)) {
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set(set);
+      set.delete(adCreativeId);
+    } else {
+      return false;
+    }
+  },
+  ADS_PREVIEW_DELIVERY_STATE_LOOKBACK_RESET: function handleAdsPreviewDeliveryStateLookbackReset() {
+    if (0 === set.size) {
+      return false;
+    } else {
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set();
+    }
+  },
   QUESTS_USER_STATUS_UPDATE: function handleQuestUserStatusUpdate(user_status) {
     user_status = user_status.user_status;
-    const questLogger = getQuestLogger.getQuestLogger({ location: QuestsExperimentLocations.QUESTS_STORE });
-    questLogger.log("Received user status update for " + user_status.quest_id, user_status);
+    const obj = getQuestLogger;
     const obj2 = { location: QuestsExperimentLocations.QUESTS_STORE };
-    const result = QuestServerUtils.questUserStatusFromServer(user_status);
+    const questLogger = obj.getQuestLogger(obj2);
+    questLogger.log("Received user status update for " + user_status.quest_id, user_status);
+    const obj4 = QuestServerUtils;
+    const result = obj4.questUserStatusFromServer(user_status);
     const quest_id = user_status.quest_id;
     const obj3 = { userStatus: result };
     map = new Map(map);
-    value = map.get(quest_id);
+    const value = map.get(quest_id);
     if (null != value) {
       const obj5 = {};
       const merged = Object.assign(value);
@@ -1042,14 +1166,15 @@ const questStore = new QuestStore(DispatcherDefault, {
         if (null != userStatus.userStatus) {
           userStatus = userStatus.userStatus;
           let progress;
+          const _Object = Object;
           if (userStatus != null) {
             progress = userStatus.progress;
           }
           if (progress == null) {
             progress = {};
           }
-          const values = Object.values(progress);
-          for (const item10011 of values) {
+          const values2 = values(progress);
+          for (const item10011 of values2) {
             let tmp4 = item10011;
             let tmp5 = _require;
             let tmp6 = dependencyMap;
@@ -1063,7 +1188,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                   lastBeatAt = heartbeat.lastBeatAt;
                 }
                 if (null != lastBeatAt) {
-                  let addResult = set.add(arg0);
+                  let addResult = set.add(questId);
                 } else {
                   let heartbeat2 = tmp4.heartbeat;
                   let lastBeatAt1;
@@ -1071,7 +1196,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                     lastBeatAt1 = heartbeat2.lastBeatAt;
                   }
                   if (null == lastBeatAt1) {
-                    let deleteResult = set.delete(arg0);
+                    let deleteResult = set.delete(questId);
                   }
                 }
               }
@@ -1085,28 +1210,30 @@ const questStore = new QuestStore(DispatcherDefault, {
         const value3 = map1.get(quest_id);
         if (null != value3) {
           const _Map = Map;
+          const self = this;
+          const self2 = this;
           map1 = new Map(map1);
           const obj6 = {};
+          set = map1.set;
           const merged2 = Object.assign(value3);
           const merged3 = Object.assign(obj3);
-          const result2 = map1.set(quest_id, obj6);
+          const result2 = set(quest_id, obj6);
         }
       }
     }
     const value4 = map.get(user_status.quest_id);
     if (null != value4) {
-      const isQuestExpiredResult = QuestDataUtils.isQuestExpired(value4);
+      const tmpResult = QuestDataUtils;
+      const isQuestExpiredResult = tmpResult.isQuestExpired(value4);
       if (closure_24.get(user_status.quest_id) !== isQuestExpiredResult) {
         const _Map2 = Map;
+        const self3 = this;
+        const self4 = this;
         map2 = new Map(closure_24);
         closure_24 = map2.set(user_status.quest_id, isQuestExpiredResult);
       }
-      const tmpResult = QuestDataUtils;
     }
-    let hasItem = 0 === Object.keys(result.progress).length;
-    if (hasItem) {
-      hasItem = map4.has(result.questId);
-    }
+    const hasItem = 0 === Object.keys(result.progress).length && map4.has(result.questId);
     if (hasItem) {
       const _HermesInternal = HermesInternal;
       questLogger.log("Removing optimistic progress for " + result.questId);
@@ -1117,6 +1244,8 @@ const questStore = new QuestStore(DispatcherDefault, {
     streamKey = streamKey.streamKey;
     if (null != map.get(streamKey)) {
       const _Map = Map;
+      const self = this;
+      const self2 = this;
       map = new Map(map);
       map.delete(streamKey);
     }
@@ -1125,6 +1254,8 @@ const questStore = new QuestStore(DispatcherDefault, {
     streamKey = streamKey.streamKey;
     if (null != map.get(streamKey)) {
       const _Map = Map;
+      const self = this;
+      const self2 = this;
       map = new Map(map);
       map.delete(streamKey);
     }
@@ -1134,7 +1265,7 @@ const questStore = new QuestStore(DispatcherDefault, {
     const questId = previewQuestUserStatus.questId;
     const obj = { userStatus: previewQuestUserStatus };
     map = new Map(map);
-    value = map.get(questId);
+    const value = map.get(questId);
     if (null != value) {
       let obj2 = {};
       const merged = Object.assign(value);
@@ -1143,14 +1274,15 @@ const questStore = new QuestStore(DispatcherDefault, {
         if (null != userStatus.userStatus) {
           userStatus = userStatus.userStatus;
           let progress;
+          const _Object = Object;
           if (userStatus != null) {
             progress = userStatus.progress;
           }
           if (progress == null) {
             progress = {};
           }
-          const values = Object.values(progress);
-          for (const item10011 of values) {
+          const values2 = values(progress);
+          for (const item10011 of values2) {
             let tmp4 = item10011;
             let tmp5 = _require;
             let tmp6 = dependencyMap;
@@ -1164,7 +1296,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                   lastBeatAt = heartbeat.lastBeatAt;
                 }
                 if (null != lastBeatAt) {
-                  let addResult = set.add(arg0);
+                  let addResult = set.add(questId);
                 } else {
                   let heartbeat2 = tmp4.heartbeat;
                   let lastBeatAt1;
@@ -1172,7 +1304,7 @@ const questStore = new QuestStore(DispatcherDefault, {
                     lastBeatAt1 = heartbeat2.lastBeatAt;
                   }
                   if (null == lastBeatAt1) {
-                    let deleteResult = set.delete(arg0);
+                    let deleteResult = set.delete(questId);
                   }
                 }
               }
@@ -1186,21 +1318,34 @@ const questStore = new QuestStore(DispatcherDefault, {
         const value3 = map1.get(questId);
         if (null != value3) {
           const _Map = Map;
+          let tmp4 = map1;
+          const self = this;
+          const self2 = this;
           map1 = new Map(map1);
+          let tmp6 = map1;
           const obj3 = {};
+          let tmp7 = obj3;
+          let tmp8 = value3;
+          set = map1.set;
           const merged2 = Object.assign(value3);
+          let tmp10 = obj3;
           const merged3 = Object.assign(obj);
-          const result1 = map1.set(questId, obj3);
+          const result1 = set(questId, obj3);
         }
       }
     }
     if (null == previewQuestUserStatus.claimedAt) {
       const _Map2 = Map;
+      let tmp14 = map2;
+      const self3 = this;
+      const self4 = this;
       map2 = new Map(map2);
-      map2.delete(previewQuestUserStatus.questId);
+      let deleteResult = map2.delete(previewQuestUserStatus.questId);
     }
     if (null == previewQuestUserStatus.enrolledAt) {
       const _Map3 = Map;
+      const self5 = this;
+      const self6 = this;
       const map3 = new Map(map);
       map = map3;
       map3.delete(previewQuestUserStatus.questId);
@@ -1209,15 +1354,20 @@ const questStore = new QuestStore(DispatcherDefault, {
     }
     const value4 = map.get(previewQuestUserStatus.questId);
     if (null != value4) {
-      const isQuestExpiredResult = QuestDataUtils.isQuestExpired(value4);
+      const obj7 = QuestDataUtils;
+      const isQuestExpiredResult = obj7.isQuestExpired(value4);
       if (closure_24.get(previewQuestUserStatus.questId) !== isQuestExpiredResult) {
         const _Map4 = Map;
+        const self7 = this;
+        const self8 = this;
         map4 = new Map(closure_24);
         closure_24 = map4.set(previewQuestUserStatus.questId, isQuestExpiredResult);
       }
     }
   },
   QUESTS_PREVIEW_OVERRIDE: function handlePreviewOverride(arg0) {
+    let placement;
+    let questId;
     ({ placement, questId } = arg0);
     map = new Map(map);
     if (map.get(placement) === questId) {
@@ -1227,6 +1377,8 @@ const questStore = new QuestStore(DispatcherDefault, {
     }
   },
   QUESTS_SELECT_TASK_PLATFORM: function handleSelectTaskPlatform(arg0) {
+    let platform;
+    let questId;
     ({ questId, platform } = arg0);
     map = new Map(map);
     if (null == platform) {
@@ -1236,11 +1388,15 @@ const questStore = new QuestStore(DispatcherDefault, {
     }
   },
   QUESTS_UPDATE_OPTIMISTIC_PROGRESS: function handleUpdateOptimisticProgress(questId) {
+    let progress;
+    let taskEventName;
     questId = questId.questId;
     ({ taskEventName, progress } = questId);
     map = map4.get(questId);
     if (map == null) {
       const _Map = Map;
+      const self = this;
+      const self2 = this;
       map = new Map();
     }
     const result = map.set(taskEventName, progress);
@@ -1256,14 +1412,15 @@ const questStore = new QuestStore(DispatcherDefault, {
   },
   QUESTS_USER_COMPLETION_UPDATE: function handleUserCompletionUpdate(quest_enrollment_blocked_until) {
     quest_enrollment_blocked_until = quest_enrollment_blocked_until.quest_enrollment_blocked_until;
-    date = null;
     if (null != quest_enrollment_blocked_until) {
       const _Date = Date;
-      date = new Date(quest_enrollment_blocked_until);
+      const self = this;
+      const self2 = this;
+      new Date(quest_enrollment_blocked_until);
     }
   }
-});
-const size = fn(2);
+};
+const questStore = new QuestStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/quests/QuestStore.tsx");
 
 export default questStore;

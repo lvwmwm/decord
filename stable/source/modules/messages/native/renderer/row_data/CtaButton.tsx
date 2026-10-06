@@ -1,78 +1,70 @@
-// Module ID: 13580
-// Function ID: 13581
+// Module ID: 12822
+// Function ID: 12823
 // Name: CtaButton
-// Dependencies: [7567, 12195, 5000, 1115, 3098, 2]
+// Dependencies: [6712, 11265, 5049, 1127, 3106, 2]
 // Exports: createCtaButtons
 
-// Module 13580 (CtaButton)
-import _modDef3098 from "module_3098" /* 3098 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5000 */;
-import CtaButtonUtils from "CtaButtonUtils" /* 12195 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7567 */;
+// Module 12822 (CtaButton)
+import intl5 from "intl" /* 1127 */;
+import _modDef3106 from "module_3106" /* 3106 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5049 */;
+import CtaButtonUtils from "CtaButtonUtils" /* 11265 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 6712 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/CtaButton.tsx");
 
 export const createCtaButtons = function createCtaButtons(id, channel_id, arg2) {
-  const ctaButtonType = CtaButtonUtils.getCtaButtonType(id, channel_id);
-  const isAgeVerifiedResult = AgeVerificationUtils.isAgeVerified();
-  const result = AgeVerificationUtils.shouldShowTiggerPawtect();
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let obj19;
+  let prop;
+  let prop1;
+  let prop2;
+  let tmp6;
+  const obj = CtaButtonUtils;
+  const ctaButtonType = obj.getCtaButtonType(id, channel_id);
+  const obj2 = AgeVerificationUtils;
+  const result = obj2.shouldShowTiggerPawtect();
   if (CtaButtonUtils.CtaButtonType.MARK_AS_FALSE_POSITIVE === ctaButtonType) {
-    const obj4 = { text: null, textColor: null, backgroundColor: null, callback: null };
-    const intl4 = tmp(1115).intl;
-    obj4.text = intl4.string(tmp(1115).t["4q1Elf"]);
-    ({ reportFpTextColor: obj10.textColor, reportFpBackgroundColor: obj10.backgroundColor } = arg2);
-    let prop;
+    const obj3 = { text: intl4.string(intl5.t["4q1Elf"]), textColor: null, backgroundColor: null, callback: prop };
+    intl4 = tmp(1127).intl;
+    ({ reportFpTextColor: obj9.textColor, reportFpBackgroundColor: obj9.backgroundColor } = arg2);
+    prop = undefined;
     if (ExplicitMediaStore.canSubmitFpReport(id)) {
-      prop = tmp(12195).CtaButtonType.MARK_AS_FALSE_POSITIVE;
+      prop = tmp(11265).CtaButtonType.MARK_AS_FALSE_POSITIVE;
     }
-    const obj7 = { ctaButton: null };
-    obj4.callback = prop;
-    obj7.ctaButton = obj4;
-    return obj7;
-  } else if (tmp(12195).CtaButtonType.AGE_VERIFICATION_RETRY === ctaButtonType) {
-    const intl2 = tmp(1115).intl;
-    const string = intl2.string;
-    const t = tmp(1115).t;
-    if (isAgeVerifiedResult) {
-      let stringResult = string(t["9KiIz6"]);
-    } else {
-      stringResult = string(t["/nicWo"]);
-    }
-    const obj8 = { text: stringResult, textColor: null, backgroundColor: null, callback: null };
-    ({ retryTextColor: obj6.textColor, retryBackgroundColor: obj6.backgroundColor } = arg2);
-    let prop1;
-    if (result) {
-      prop1 = tmp(12195).CtaButtonType.AGE_VERIFICATION_RETRY;
-    }
-    const obj11 = { ctaButton: null, secondaryCtaButton: null };
-    obj8.callback = prop1;
-    obj11.ctaButton = obj8;
-    let tmp8;
-    if (tmpResult.isAgeVerificationMessageWithManualReviewCta(channel_id, id)) {
-      const obj18 = { text: null, textColor: null, backgroundColor: null, callback: null };
-      const intl3 = tmp(1115).intl;
-      obj18.text = intl3.string(_modDef3098.Z61nkt);
-      ({ reportFpTextColor: obj9.textColor, reportFpBackgroundColor: obj9.backgroundColor } = arg2);
-      let prop2;
-      if (result) {
-        prop2 = tmp(12195).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW;
-      }
-      obj18.callback = prop2;
-      tmp8 = obj18;
-    }
-    obj11.secondaryCtaButton = tmp8;
-    return obj11;
-  } else if (tmp(12195).CtaButtonType.CONNECT_TO_TEEN === ctaButtonType) {
-    const obj19 = { ctaButton: null };
-    const obj20 = { text: null, textColor: null, backgroundColor: null, callback: null };
-    const intl = tmp(1115).intl;
-    obj20.text = intl.string(tmp(1115).t.n8a49k);
+    return { ctaButton: obj3 };
+  } else if (CtaButtonUtils.CtaButtonType.AGE_VERIFICATION_RETRY === ctaButtonType) {
+    const obj7 = { text: intl2.string(intl5.t["/nicWo"]), textColor: null, backgroundColor: null, callback: prop1 };
+    intl2 = tmp(1127).intl;
     ({ retryTextColor: obj5.textColor, retryBackgroundColor: obj5.backgroundColor } = arg2);
-    obj20.callback = tmp(12195).CtaButtonType.CONNECT_TO_TEEN;
-    obj19.ctaButton = obj20;
-    return obj19;
+    prop1 = undefined;
+    if (result) {
+      prop1 = tmp(11265).CtaButtonType.AGE_VERIFICATION_RETRY;
+    }
+    const obj10 = { ctaButton: obj7, secondaryCtaButton: tmp6 };
+    tmp6 = undefined;
+    const tmpResult = AgeVerificationUtils;
+    if (tmpResult.isAgeVerificationMessageWithManualReviewCta(channel_id, id)) {
+      const obj17 = { text: intl3.string(_modDef3106.Z61nkt), textColor: null, backgroundColor: null, callback: prop2 };
+      intl3 = tmp(1127).intl;
+      ({ reportFpTextColor: obj8.textColor, reportFpBackgroundColor: obj8.backgroundColor } = arg2);
+      prop2 = undefined;
+      if (result) {
+        prop2 = tmp(11265).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW;
+      }
+      tmp6 = obj17;
+    }
+    return obj10;
+  } else if (CtaButtonUtils.CtaButtonType.CONNECT_TO_TEEN === ctaButtonType) {
+    const obj18 = { ctaButton: obj19 };
+    obj19 = { text: intl.string(intl5.t.n8a49k), textColor: null, backgroundColor: null, callback: CtaButtonUtils.CtaButtonType.CONNECT_TO_TEEN };
+    intl = tmp(1127).intl;
+    ({ retryTextColor: obj4.textColor, retryBackgroundColor: obj4.backgroundColor } = arg2);
+    return obj18;
   } else {
     return {};
   }

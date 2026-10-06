@@ -1,40 +1,41 @@
-// Module ID: 10417
-// Function ID: 10418
+// Module ID: 11443
+// Function ID: 11444
 // Name: CozyDrawer
-// Dependencies: [10418, 10419, 576, 1177, 5833, 7449, 2]
+// Dependencies: [11444, 11445, 588, 1189, 5893, 6594, 2]
 
-// Module 10417 (CozyDrawer)
-import nativeDefault from "native" /* 576 */;
-import "deepmerge";
-import deepmerge from "deepmerge" /* 10418 */;
+// Module 11443 (CozyDrawer)
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import GuildIcon from "GuildIcon" /* 5893 */;
+import GameIcon from "GameIcon" /* 6594 */;
+import Compact from "Compact" /* 11445 */;
+import deepmerge_mod from "deepmerge" /* 11444 */;
+import size from "module_2" /* 2 */;
 
-const obj = { container: { borderRadius: nativeDefault.radii.md, padding: { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 }, paddingPanels: { paddingVertical: 6, paddingLeft: 8, paddingRight: 8 }, paddingThread: { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 } }, channelName: { height: 20, text: { variant: "text-md/semibold" } }, messagePreview: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, typing: null, separator: null };
-const obj2 = { borderRadius: nativeDefault.radii.md, padding: { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 }, paddingPanels: { paddingVertical: 6, paddingLeft: 8, paddingRight: 8 }, paddingThread: { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 } };
-obj.messagePreview = { text: { variant: "text-xs/medium" }, messageTypeIconSize: fn(1177).IconSizes.EXTRA_SMALL, messageTypeIconSizeNew: "xs", height: 18, margin: { marginTop: 0 } };
-obj.inviteRow = { text: { variant: "text-md/semibold" } };
-const obj3 = { text: { variant: "text-xs/medium" }, messageTypeIconSize: fn(1177).IconSizes.EXTRA_SMALL, messageTypeIconSizeNew: "xs", height: 18, margin: { marginTop: 0 } };
-obj.icon = { avatarSize: fn(1177).AvatarSizes.NORMAL, guildIconSize: fn(5833).GuildIconSizes.NORMAL, guildBadgeIconSize: fn(5833).GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { size: 24, lineHeight: 32 } };
-obj.unreadBadge = { positionThread: { left: -68 } };
-obj.mentionBadge = { position: { top: 34 }, positionThread: { top: 27 } };
-const obj5 = { text: { variant: "text-sm/bold" }, layout: { paddingVertical: 6, paddingRight: 12, paddingLeft: 12, height: 32 }, icon: null };
-const obj4 = { avatarSize: fn(1177).AvatarSizes.NORMAL, guildIconSize: fn(5833).GuildIconSizes.NORMAL, guildBadgeIconSize: fn(5833).GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { size: 24, lineHeight: 32 } };
-obj5.icon = { size: fn(1177).IconSizes.REFRESH_SMALL_16, gameSize: fn(7449).GameIconSizes.SMALL };
-obj.joinVoiceButton = obj5;
-const obj7 = { left: 48, startAndEndHeight: 16, transform: null, topOffset: -6 };
-const items = [{ translateY: 0 }];
-obj7.transform = items;
-obj.threadSpine = obj7;
-obj.happeningNow = { margin: { marginBottom: 20 } };
-obj.typing = { position: { top: 12, left: 12 }, positionThread: { top: 3, left: -17 }, typingIndicator: { position: { top: 25, left: 11 } } };
-obj.separator = { margin: { marginVertical: 20 } };
-const obj6 = { size: fn(1177).IconSizes.REFRESH_SMALL_16, gameSize: fn(7449).GameIconSizes.SMALL };
-const obj8 = { position: { top: 12, left: 12 }, positionThread: { top: 3, left: -17 }, typingIndicator: { position: { top: 25, left: 11 } } };
-const obj9 = { container: { paddingPanels: { paddingVertical: 8 } }, icon: null };
-const importDefaultResultResult = deepmerge(fn(10419).CHANNEL_LIST_STYLES_COMPACT, obj);
-obj9.icon = { avatarSize: fn(1177).AvatarSizes.REFRESH_MEDIUM_32 };
-const obj10 = { avatarSize: fn(1177).AvatarSizes.REFRESH_MEDIUM_32 };
-const size = fn(2);
+let items;
+let obj10;
+let obj2;
+let obj5;
+let obj7;
+let obj8;
+let deepmerge = deepmerge_mod;
+const obj = { container: obj2, channelName: { height: 20, text: { variant: "text-md/semibold" } }, messagePreview: { text: { variant: "text-xs/medium" }, messageTypeIconSize: native.IconSizes.EXTRA_SMALL, messageTypeIconSizeNew: "xs", height: 18, margin: { marginTop: 0 } }, inviteRow: { text: { variant: "text-md/semibold" } }, icon: { avatarSize: native.AvatarSizes.NORMAL, guildIconSize: GuildIcon.GuildIconSizes.NORMAL, guildBadgeIconSize: GuildIcon.GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { size: 24, lineHeight: 32 } }, unreadBadge: { positionThread: { left: -68 } }, mentionBadge: { position: { top: 34 }, positionThread: { top: 27 } }, joinVoiceButton: obj5, threadSpine: obj7, happeningNow: { margin: { marginBottom: 20 } }, typing: obj8, separator: { margin: { marginVertical: 20 } } };
+obj2 = { borderRadius: nativeDefault.radii.md, padding: { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 }, paddingPanels: { paddingVertical: 6, paddingLeft: 8, paddingRight: 8 }, paddingThread: { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 } };
+const CHANNEL_LIST_STYLES_COMPACT = Compact.CHANNEL_LIST_STYLES_COMPACT;
+({ text: { variant: "text-xs/medium" }, messageTypeIconSize: native.IconSizes.EXTRA_SMALL, messageTypeIconSizeNew: "xs", height: 18, margin: { marginTop: 0 } });
+obj5 = { text: { variant: "text-sm/bold" }, layout: { paddingVertical: 6, paddingRight: 12, paddingLeft: 12, height: 32 }, icon: { size: native.IconSizes.REFRESH_SMALL_16, gameSize: GameIcon.GameIconSizes.SMALL } };
+({ avatarSize: native.AvatarSizes.NORMAL, guildIconSize: GuildIcon.GuildIconSizes.NORMAL, guildBadgeIconSize: GuildIcon.GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { size: 24, lineHeight: 32 } });
+obj7 = { left: 48, startAndEndHeight: 16, transform: items, topOffset: -6 };
+items = [{ translateY: 0 }];
+obj8 = { position: { top: 12, left: 12 }, positionThread: { top: 3, left: -17 }, typingIndicator: { position: { top: 25, left: 11 } } };
+({ size: native.IconSizes.REFRESH_SMALL_16, gameSize: GameIcon.GameIconSizes.SMALL });
+const importDefaultResultResult = deepmerge(CHANNEL_LIST_STYLES_COMPACT, obj);
+deepmerge = deepmerge_mod;
+const obj9 = { container: { paddingPanels: { paddingVertical: 8 } }, icon: obj10 };
+obj10 = { avatarSize: native.AvatarSizes.REFRESH_MEDIUM_32 };
+const CHANNEL_LIST_STYLES_COMPACT2 = Compact.CHANNEL_LIST_STYLES_COMPACT;
+const importDefaultResult1Result = deepmerge(CHANNEL_LIST_STYLES_COMPACT2, obj9);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/layouts/layout/CozyDrawer.tsx");
 
 export const CHANNEL_LIST_STYLES_COZY_DRAWER = importDefaultResultResult;
-export const CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL = deepmerge(fn(10419).CHANNEL_LIST_STYLES_COMPACT, obj9);
+export const CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL = importDefaultResult1Result;

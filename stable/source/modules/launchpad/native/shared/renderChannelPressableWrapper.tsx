@@ -1,17 +1,19 @@
-// Module ID: 17451
-// Function ID: 17452
+// Module ID: 17041
+// Function ID: 17042
 // Name: renderChannelPressableWrapper
-// Dependencies: [19, 17, 21, 17137, 2]
+// Dependencies: [19, 17, 21, 16481, 2]
 // Exports: default
 
-// Module 17451 (renderChannelPressableWrapper)
-import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
-import noop from "module_19" /* 19 */;
+// Module 17041 (renderChannelPressableWrapper)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16481 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
+const View = react_native.View;
+const jsx = Fragment.jsx;
 const items = [getLayoutStylesDefault().layout.margin, { flex: 1, flexDirection: "row", alignItems: "center" }];
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/launchpad/native/shared/renderChannelPressableWrapper.tsx");
 
 export default function renderChannelPressableWrapper(children) {

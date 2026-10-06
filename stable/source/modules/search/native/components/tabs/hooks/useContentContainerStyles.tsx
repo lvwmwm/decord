@@ -1,15 +1,19 @@
-// Module ID: 17164
-// Function ID: 17165
+// Module ID: 16520
+// Function ID: 16521
 // Name: useContentContainerStyles
-// Dependencies: [8154, 4788, 2]
+// Dependencies: [7307, 4837, 2]
 
-// Module 17164 (useContentContainerStyles)
-import SearchConstants from "SearchConstants" /* 8154 */;
-import createStyles from "createStyles" /* 4788 */;
+// Module 16520 (useContentContainerStyles)
+import SearchConstants from "SearchConstants" /* 7307 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
+let SEARCH_LIST_HORIZONTAL_PADDING;
+let SEARCH_LIST_SECTION_TOP_PADDING;
+let SEARCH_ROW_TAP_STATE_PADDING;
 ({ SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = SearchConstants);
-const styles = createStyles.createStyles({ filesOrLinksContentContainer: { paddingTop: SEARCH_LIST_HORIZONTAL_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, mediaContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, messagesContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING - SEARCH_ROW_TAP_STATE_PADDING }, membersContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING } });
+const obj = { filesOrLinksContentContainer: { paddingTop: SEARCH_LIST_HORIZONTAL_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, mediaContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, messagesContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING - SEARCH_ROW_TAP_STATE_PADDING }, membersContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING } };
+const styles = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/search/native/components/tabs/hooks/useContentContainerStyles.tsx");
 
 export const useContentContainerStyles = styles;

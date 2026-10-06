@@ -1,331 +1,656 @@
-// Module ID: 13695
-// Function ID: 13696
+// Module ID: 12940
+// Function ID: 12941
 // Name: PremiumPerkCard
-// Dependencies: [19, 17, 1374, 1074, 21, 5225, 13696, 4446, 7656, 7459, 1115, 13697, 13698, 13699, 13700, 13701, 13702, 13703, 13704, 13705, 13706, 13707, 13708, 13709, 13710, 13711, 13712, 13713, 4784, 2108, 4788, 576, 5836, 13714, 5218, 2]
-// Exports: default, usePerkCardHeight, usePremiumPerkCard
+// Dependencies: [19, 17, 1380, 1086, 21, 558, 5289, 12941, 4491, 6801, 6604, 1127, 12942, 12943, 12944, 12945, 12946, 12947, 12948, 12949, 12950, 12951, 12952, 12953, 12954, 12955, 12956, 12957, 12958, 4833, 2114, 4837, 588, 576, 5896, 12959, 5282, 2]
+// Exports: usePremiumPerkCard
 
-// Module 13695 (PremiumPerkCard)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import useFontScale from "useFontScale" /* 5225 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
-import openUserSettings from "openUserSettings" /* 7656 */;
-import _modDef13697 from "module_13697" /* 13697 */;
-import _modDef13698 from "module_13698" /* 13698 */;
-import _modDef13699 from "module_13699" /* 13699 */;
-import _modDef13700 from "module_13700" /* 13700 */;
-import _modDef13701 from "module_13701" /* 13701 */;
-import _modDef13702 from "module_13702" /* 13702 */;
-import _modDef13703 from "module_13703" /* 13703 */;
-import _modDef13704 from "module_13704" /* 13704 */;
-import _modDef13705 from "module_13705" /* 13705 */;
-import _modDef13706 from "module_13706" /* 13706 */;
-import _modDef13707 from "module_13707" /* 13707 */;
-import _modDef13708 from "module_13708" /* 13708 */;
-import _modDef13709 from "module_13709" /* 13709 */;
-import _modDef13710 from "module_13710" /* 13710 */;
-import _modDef13711 from "module_13711" /* 13711 */;
-import _modDef13712 from "module_13712" /* 13712 */;
-import _modDef13713 from "module_13713" /* 13713 */;
-import PillTextDefault from "PillText" /* 13714 */;
-import noop from "module_19" /* 19 */;
+// Module 12940 (PremiumPerkCard)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl37 from "intl" /* 1127 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import useFontScale from "useFontScale" /* 5289 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import openUserSettings from "openUserSettings" /* 6801 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12942 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12943 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12944 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12945 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 12946 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 12947 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 12948 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 12949 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 12950 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 12951 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 12952 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 12953 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 12954 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 12955 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 12956 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 12957 */;
+import _modDef12958 from "module_12958" /* 12958 */;
+import PillTextDefault from "PillText" /* 12959 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1086 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const PremiumTypes = fn(1374).PremiumTypes;
-const Constants = fn(1074);
-({ HelpdeskArticles: closure_7, UserSettingsSections: closure_8 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
+let c10;
+let c9;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
+const PremiumTypes = PremiumConstants.PremiumTypes;
+({ HelpdeskArticles: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
+({ jsx: c9, jsxs: c10 } = Fragment);
 const PerkCardVariant = { NARROW: 0, [0]: "NARROW", WIDE: 1, [1]: "WIDE" };
 const frozen = Object.freeze({ [PerkCardVariant.NARROW]: { width: 300, height: 364, scaledFontHeight: 440 }, [PerkCardVariant.WIDE]: { width: 320, height: 364, scaledFontHeight: 440 } });
-const createStyles = fn(4788);
-let closure_13 = createStyles.createStyles((arg0) => {
-  const obj = { container: null, headerComponent: null, image: null, title: null, description: null, button: null, imageContainer: null, imageOverlayText: null, imageOverlayTextContainer: null, pillTextContainer: null };
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const obj = useFontScale;
+  return obj.useFontScale() > 1 ? frozen[arg0].scaledFontHeight : frozen[arg0].height;
+}) : ((arg0) => {
+  const obj = useFontScale;
+  return obj.useFontScale() > 1 ? frozen[arg0].scaledFontHeight : frozen[arg0].height;
+});
+let closure_13 = tmp6;
+let closure_14 = createStyles.createStyles((arg0) => {
+  let obj2;
+  let obj5;
+  const obj = { container: obj2, headerComponent: { width: "100%", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm, overflow: "hidden" }, image: { width: "100%", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm }, title: { marginTop: 16, marginHorizontal: 16 }, description: obj5, button: { marginTop: "auto", marginHorizontal: 16, marginBottom: 16 }, imageContainer: { position: "relative", alignItems: "center", justifyContent: "center" }, imageOverlayText: { color: nativeDefault.colors.WHITE, fontSize: 14 }, imageOverlayTextContainer: { position: "absolute", bottom: "10%", borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingHorizontal: 12, paddingVertical: 4, justifyContent: "center", alignItems: "center" }, pillTextContainer: { position: "absolute", width: "auto", top: -8, left: 10 } };
+  obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, width: frozen[arg0].width };
   const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
-  obj.container = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, width: frozen[arg0].width };
-  const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, width: frozen[arg0].width };
-  obj.headerComponent = { width: "100%", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm, overflow: "hidden" };
-  const obj3 = { width: "100%", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm, overflow: "hidden" };
-  obj.image = { width: "100%", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
-  obj.title = { marginTop: 16, marginHorizontal: 16 };
+  ({ width: "100%", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm, overflow: "hidden" });
   let num = 8;
+  ({ width: "100%", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm });
+  const tmp4 = obj;
   if (arg0 === obj.WIDE) {
     num = 24;
   }
-  const merged1 = Object.assign(arg0 === obj.NARROW && { height: "100%" });
-  obj.description = { marginTop: 8, marginHorizontal: 16, marginBottom: num };
-  obj.button = { marginTop: "auto", marginHorizontal: 16, marginBottom: 16 };
-  obj.imageContainer = { position: "relative", alignItems: "center", justifyContent: "center" };
-  const obj4 = { width: "100%", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
-  const obj5 = { marginTop: 8, marginHorizontal: 16, marginBottom: num };
-  const tmp5 = arg0 === obj.NARROW && { height: "100%" };
-  obj.imageOverlayText = { color: nativeDefault.colors.WHITE, fontSize: 14 };
-  const obj6 = { color: nativeDefault.colors.WHITE, fontSize: 14 };
-  obj.imageOverlayTextContainer = { position: "absolute", bottom: "10%", borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingHorizontal: 12, paddingVertical: 4, justifyContent: "center", alignItems: "center" };
-  obj.pillTextContainer = { position: "absolute", width: "auto", top: -8, left: 10 };
+  obj5 = { marginTop: 8, marginHorizontal: 16, marginBottom: num };
+  const tmp5 = arg0 === tmp4.NARROW && { height: "100%" };
+  const merged1 = Object.assign(tmp5);
+  ({ color: nativeDefault.colors.WHITE, fontSize: 14 });
+  ({ position: "absolute", bottom: "10%", borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingHorizontal: 12, paddingVertical: 4, justifyContent: "center", alignItems: "center" });
   return obj;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/native/PremiumPerkCard.tsx");
-
-export default function PremiumPerkCard(variant) {
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let bodyComponent;
+  let buttonOnPress;
+  let cta;
+  let description;
+  let headerComponent;
+  let imageOverlayText;
+  let imageOverlayText2;
+  let imageOverlayTextContainer;
+  let imageSrc;
+  let imageStyle;
+  let items;
+  let items3;
+  let obj11;
+  let pillText;
+  let style;
+  let title;
+  let titleStyle;
+  let tmp10;
+  let tmp39;
+  let tmp4;
+  let variant;
+  const obj = react2;
+  const cResult = obj.c(61);
+  ({ style, title, titleStyle, description, bodyComponent, headerComponent, imageSrc, imageStyle, buttonOnPress, cta, variant, imageOverlayText, pillText } = arg0);
+  if (cResult[0] !== cta) {
+    let stringResult = cta;
+    if (undefined === cta) {
+      const intl = tmp(1127).intl;
+      stringResult = intl.string(tmp(1127).t.jVcuVY);
+    }
+    cResult[0] = cta;
+    cResult[1] = stringResult;
+    tmp4 = stringResult;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (undefined === variant) {
+    variant = obj.WIDE;
+  }
+  const tmp7 = closure_14(variant);
+  const tmp9 = closure_13(obj.NARROW);
+  const tmp8 = obj;
+  if (null != imageSrc) {
+    if (null != imageOverlayText) {
+      if (cResult[2] === imageStyle) {
+        let tmp21;
+        if (cResult[3] === tmp7.image) {
+          tmp21 = cResult[4];
+        }
+        if (cResult[5] === imageSrc) {
+          let tmp22;
+          let tmp26;
+          if (cResult[6] === tmp21) {
+            tmp22 = cResult[7];
+          }
+          ({ imageOverlayTextContainer, imageOverlayText: imageOverlayText2 } = tmp7);
+          if (cResult[8] !== imageOverlayText) {
+            const formatted = imageOverlayText.toUpperCase();
+            cResult[8] = imageOverlayText;
+            cResult[9] = formatted;
+            tmp26 = formatted;
+          } else {
+            tmp26 = cResult[9];
+          }
+          if (cResult[10] === tmp7.imageOverlayText) {
+            let tmp28;
+            if (cResult[11] === tmp26) {
+              tmp28 = cResult[12];
+            }
+            if (cResult[13] === tmp7.imageOverlayTextContainer) {
+              let tmp31;
+              if (cResult[14] === tmp28) {
+                tmp31 = cResult[15];
+              }
+              if (cResult[16] === tmp7.imageContainer) {
+                if (cResult[17] === tmp31) {
+                  let tmp35;
+                  if (cResult[18] === tmp22) {
+                    tmp35 = cResult[19];
+                  }
+                  tmp10 = tmp35;
+                }
+              }
+              const obj2 = { style: tmp20, children: items };
+              items = [tmp22, tmp31];
+              const tmp38 = authStore(React3, obj2);
+              cResult[16] = tmp7.imageContainer;
+              cResult[17] = tmp31;
+              cResult[18] = tmp22;
+              cResult[19] = tmp38;
+              tmp35 = tmp38;
+            }
+            const obj3 = { style: imageOverlayTextContainer, children: tmp28 };
+            const tmp34 = React4(React3, obj3);
+            cResult[13] = tmp7.imageOverlayTextContainer;
+            cResult[14] = tmp28;
+            cResult[15] = tmp34;
+            tmp31 = tmp34;
+          }
+          const obj4 = { style: imageOverlayText2, variant: "text-md/bold", children: tmp26 };
+          const tmp30 = React4(Text_Text.Text, obj4);
+          cResult[10] = tmp7.imageOverlayText;
+          cResult[11] = tmp26;
+          cResult[12] = tmp30;
+          tmp28 = tmp30;
+        }
+        const obj5 = { style: tmp21, source: imageSrc };
+        const tmp25 = React4(FastImageDefault, obj5);
+        cResult[5] = imageSrc;
+        cResult[6] = tmp21;
+        cResult[7] = tmp25;
+        tmp22 = tmp25;
+      }
+      const items1 = [tmp7.image, imageStyle];
+      cResult[2] = imageStyle;
+      cResult[3] = tmp7.image;
+      cResult[4] = items1;
+      tmp21 = items1;
+    } else {
+      if (cResult[20] === imageStyle) {
+        let tmp15;
+        if (cResult[21] === tmp7.image) {
+          tmp15 = cResult[22];
+        }
+        if (cResult[23] === imageSrc) {
+          let tmp16;
+          if (cResult[24] === tmp15) {
+            tmp16 = cResult[25];
+          }
+          tmp10 = tmp16;
+        }
+        const obj6 = { style: tmp15, source: imageSrc };
+        const tmp19 = React4(FastImageDefault, obj6);
+        cResult[23] = imageSrc;
+        cResult[24] = tmp15;
+        cResult[25] = tmp19;
+        tmp16 = tmp19;
+      }
+      const items2 = [tmp7.image, imageStyle];
+      cResult[20] = imageStyle;
+      cResult[21] = tmp7.image;
+      cResult[22] = items2;
+      tmp15 = items2;
+    }
+  } else {
+    tmp10 = null;
+    if (null != headerComponent) {
+      if (cResult[26] === headerComponent) {
+        let tmp11;
+        if (cResult[27] === tmp7.headerComponent) {
+          tmp11 = cResult[28];
+        }
+        tmp10 = tmp11;
+      }
+      const obj7 = { style: tmp7.headerComponent, children: headerComponent };
+      const tmp14 = React4(React3, obj7);
+      cResult[26] = headerComponent;
+      cResult[27] = tmp7.headerComponent;
+      cResult[28] = tmp14;
+      tmp11 = tmp14;
+    }
+  }
+  if (null != description) {
+    let tmp40;
+    if (cResult[29] !== description) {
+      const obj8 = { variant: "text-sm/normal", children: description };
+      const tmp42 = React4(Text_Text.Text, obj8);
+      cResult[29] = description;
+      cResult[30] = tmp42;
+      tmp40 = tmp42;
+    } else {
+      tmp40 = cResult[30];
+    }
+    tmp39 = tmp40;
+  } else {
+    tmp39 = null;
+    if (null != bodyComponent) {
+      tmp39 = bodyComponent;
+    }
+  }
+  if (cResult[31] === tmp9) {
+    let tmp43;
+    if (cResult[32] === variant) {
+      tmp43 = cResult[33];
+    }
+    if (cResult[34] === style) {
+      if (cResult[35] === tmp7.container) {
+        let tmp45;
+        if (cResult[36] === tmp43) {
+          tmp45 = cResult[37];
+        }
+        if (cResult[38] === pillText) {
+          let tmp46;
+          if (cResult[39] === tmp7.pillTextContainer) {
+            tmp46 = cResult[40];
+          }
+          if (cResult[41] === tmp7.title) {
+            let tmp50;
+            if (cResult[42] === titleStyle) {
+              tmp50 = cResult[43];
+            }
+            if (cResult[44] === tmp50) {
+              let tmp51;
+              if (cResult[45] === title) {
+                tmp51 = cResult[46];
+              }
+              if (cResult[47] === tmp39) {
+                let tmp54;
+                if (cResult[48] === tmp7.description) {
+                  tmp54 = cResult[49];
+                }
+                if (cResult[50] === buttonOnPress) {
+                  if (cResult[51] === tmp4) {
+                    let tmp58;
+                    if (cResult[52] === tmp7.button) {
+                      tmp58 = cResult[53];
+                    }
+                    if (cResult[54] === tmp10) {
+                      if (cResult[55] === tmp58) {
+                        if (cResult[56] === tmp45) {
+                          if (cResult[57] === tmp46) {
+                            if (cResult[58] === tmp51) {
+                              let tmp62;
+                              if (cResult[59] === tmp54) {
+                                tmp62 = cResult[60];
+                              }
+                              return tmp62;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    const obj9 = { style: tmp45, children: items3 };
+                    items3 = [tmp46, tmp10, tmp51, tmp54, tmp58];
+                    const tmp65 = authStore(React3, obj9);
+                    cResult[54] = tmp10;
+                    cResult[55] = tmp58;
+                    cResult[56] = tmp45;
+                    cResult[57] = tmp46;
+                    cResult[58] = tmp51;
+                    cResult[59] = tmp54;
+                    cResult[60] = tmp65;
+                    tmp62 = tmp65;
+                  }
+                }
+                let tmp59 = null != buttonOnPress;
+                if (tmp59) {
+                  const obj10 = { style: tmp7.button, children: React4(components_Button_Button.Button, obj11) };
+                  obj11 = { size: "sm", variant: "secondary", text: tmp4, onPress: buttonOnPress };
+                  tmp59 = React4(React3, obj10);
+                }
+                cResult[50] = buttonOnPress;
+                cResult[51] = tmp4;
+                cResult[52] = tmp7.button;
+                cResult[53] = tmp59;
+                tmp58 = tmp59;
+              }
+              const obj12 = { style: tmp7.description, children: tmp39 };
+              const tmp57 = React4(hasOwnProperty, obj12);
+              cResult[47] = tmp39;
+              cResult[48] = tmp7.description;
+              cResult[49] = tmp57;
+              tmp54 = tmp57;
+            }
+            const obj13 = { style: tmp50, variant: "heading-lg/extrabold", accessibilityRole: "header", children: title };
+            const tmp53 = React4(Text_Text.Text, obj13);
+            cResult[44] = tmp50;
+            cResult[45] = title;
+            cResult[46] = tmp53;
+            tmp51 = tmp53;
+          }
+          const items4 = [tmp7.title, titleStyle];
+          cResult[41] = tmp7.title;
+          cResult[42] = titleStyle;
+          cResult[43] = items4;
+          tmp50 = items4;
+        }
+        let tmp47 = null != pillText;
+        if (tmp47) {
+          const obj14 = { pillText, style: tmp7.pillTextContainer };
+          tmp47 = React4(PillTextDefault, obj14);
+        }
+        cResult[38] = pillText;
+        cResult[39] = tmp7.pillTextContainer;
+        cResult[40] = tmp47;
+        tmp46 = tmp47;
+      }
+    }
+    const items5 = [tmp7.container, tmp43, style];
+    cResult[34] = style;
+    cResult[35] = tmp7.container;
+    cResult[36] = tmp43;
+    cResult[37] = items5;
+    tmp45 = items5;
+  }
+  let tmp44 = variant === tmp8.NARROW;
+  if (tmp44) {
+    tmp44 = { height: tmp9 };
+    const obj15 = { height: tmp9 };
+  }
+  cResult[31] = tmp9;
+  cResult[32] = variant;
+  cResult[33] = tmp44;
+  tmp43 = tmp44;
+}) : ((variant) => {
+  let Text;
+  let bodyComponent;
+  let buttonOnPress;
+  let cta;
+  let description;
+  let headerComponent;
+  let imageOverlayText;
+  let imageSrc;
+  let imageStyle;
+  let items;
+  let items1;
+  let items2;
+  let items4;
+  let items5;
+  let obj;
+  let obj14;
+  let obj5;
+  let pillText;
+  let style;
+  let title;
+  let titleStyle;
+  let tmp20;
+  let tmp7;
   ({ description, bodyComponent, headerComponent, imageSrc, imageStyle, buttonOnPress, cta } = variant);
   ({ style, title, titleStyle } = variant);
   if (cta === undefined) {
-    const intl = util.intl;
-    cta = intl.string(util.t.jVcuVY);
+    const intl = intl37.intl;
+    cta = intl.string(intl37.t.jVcuVY);
   }
   let WIDE = variant.variant;
   if (WIDE === undefined) {
     WIDE = obj.WIDE;
   }
   ({ imageOverlayText, pillText } = variant);
-  const tmp4 = closure_13(WIDE);
-  const NARROW = obj.NARROW;
-  useFontScale;
+  const tmp4 = closure_14(WIDE);
+  const tmp5 = obj;
+  const tmp6 = closure_13(obj.NARROW);
   if (null != imageSrc) {
+    let tmp13;
     if (null != imageOverlayText) {
-      const obj2 = { style: tmp4.imageContainer, children: null };
-      const obj3 = { style: null, source: null };
-      const items = [tmp4.image, imageStyle];
-      obj3.style = items;
-      obj3.source = imageSrc;
-      const items1 = [React7(FastImageDefault, obj3), ];
-      const obj4 = { style: tmp4.imageOverlayTextContainer, children: null };
-      const obj5 = { style: tmp4.imageOverlayText, variant: "text-md/bold", children: null };
-      imageStyle = imageOverlayText.toUpperCase();
-      obj5.children = imageStyle;
-      imageSrc = React7(tmp6(4784).Text, obj5);
-      obj4.children = imageSrc;
-      items1[1] = React7(React4, obj4);
-      obj2.children = items1;
-      let tmp15 = closure_1_10(React4, obj2);
+      const obj3 = { style: items, source: imageSrc };
+      items = [tmp4.image, imageStyle];
+      const obj2 = { style: tmp4.imageContainer, children: items1 };
+      items1 = [React4(FastImageDefault, obj3), ];
+      const obj4 = { style: tmp4.imageOverlayTextContainer, children: React4(Text, obj5) };
+      obj5 = { style: tmp4.imageOverlayText, variant: "text-md/bold", children: imageOverlayText.toUpperCase() };
+      Text = Text_Text.Text;
+      items1[1] = React4(React3, obj4);
+      tmp13 = authStore(React3, obj2);
     } else {
-      const obj6 = { style: null, source: null };
-      const items2 = [tmp4.image, imageStyle];
-      obj6.style = items2;
-      obj6.source = imageSrc;
-      tmp15 = React7(FastImageDefault, obj6);
+      const obj6 = { style: items2, source: imageSrc };
+      items2 = [tmp4.image, imageStyle];
+      tmp13 = React4(FastImageDefault, obj6);
     }
+    tmp7 = tmp13;
   } else {
-    let tmp10 = null;
+    tmp7 = null;
     if (null != headerComponent) {
       obj = { style: tmp4.headerComponent, children: headerComponent };
-      tmp10 = React7(React4, obj);
+      tmp7 = React4(React3, obj);
     }
-    if (null != description) {
-      const obj7 = { variant: "text-sm/normal", children: description };
-      let tmp21 = React7(tmp6(4784).Text, obj7);
-    } else {
-      tmp21 = null;
-      if (null != bodyComponent) {
-        tmp21 = bodyComponent;
-      }
-    }
-    const items3 = [tmp4.container, , ];
-    let tmp25 = WIDE === obj.NARROW;
-    if (tmp25) {
-      const obj8 = { height: tmp9 };
-      tmp25 = obj8;
-    }
-    const obj9 = { style: null, children: null };
-    items3[1] = tmp25;
-    items3[2] = style;
-    obj9.style = items3;
-    let tmp26 = null != pillText;
-    if (tmp26) {
-      const obj10 = { pillText, style: tmp4.pillTextContainer };
-      tmp26 = React7(PillTextDefault, obj10);
-    }
-    const items4 = [tmp26, tmp10, , , ];
-    const obj11 = { style: null, variant: "heading-lg/extrabold", accessibilityRole: "header", children: null };
-    const items5 = [tmp4.title, titleStyle];
-    obj11.style = items5;
-    obj11.children = title;
-    items4[2] = React7(tmp6(4784).Text, obj11);
-    const obj12 = { style: tmp4.description, children: tmp21 };
-    items4[3] = React7(hasOwnProperty, obj12);
-    let tmp29Result = null != buttonOnPress;
-    if (tmp29Result) {
-      const obj13 = { style: tmp4.button, children: null };
-      const obj14 = { size: "sm", variant: "secondary", text: cta, onPress: buttonOnPress };
-      obj13.children = tmp29(tmp6(5218).Button, obj14);
-      tmp29Result = tmp29(tmp24, obj13);
-    }
-    items4[4] = tmp29Result;
-    obj9.children = items4;
-    return closure_1_10(React4, obj9);
   }
-};
+  if (null != description) {
+    const obj7 = { variant: "text-sm/normal", children: description };
+    tmp20 = React4(Text_Text.Text, obj7);
+  } else {
+    tmp20 = null;
+    if (null != bodyComponent) {
+      tmp20 = bodyComponent;
+    }
+  }
+  const items3 = [tmp4.container, , ];
+  let tmp26 = WIDE === tmp5.NARROW;
+  const tmp24 = authStore;
+  if (tmp26) {
+    tmp26 = { height: tmp6 };
+    const obj8 = { height: tmp6 };
+  }
+  const obj9 = { style: items3, children: items4 };
+  items3[1] = tmp26;
+  items3[2] = style;
+  let tmp27 = null != pillText;
+  if (tmp27) {
+    const obj10 = { pillText, style: tmp4.pillTextContainer };
+    tmp27 = React4(PillTextDefault, obj10);
+  }
+  items4 = [tmp27, tmp7, , , ];
+  const obj11 = { style: items5, variant: "heading-lg/extrabold", accessibilityRole: "header", children: title };
+  items5 = [tmp4.title, titleStyle];
+  items4[2] = React4(Text_Text.Text, obj11);
+  const obj12 = { style: tmp4.description, children: tmp20 };
+  items4[3] = React4(hasOwnProperty, obj12);
+  let tmp31Result = null != buttonOnPress;
+  if (tmp31Result) {
+    const obj13 = { style: tmp4.button, children: React4(components_Button_Button.Button, obj14) };
+    obj14 = { size: "sm", variant: "secondary", text: cta, onPress: buttonOnPress };
+    tmp31Result = tmp31(tmp25, obj13);
+  }
+  items4[4] = tmp31Result;
+  return tmp24(React3, obj9);
+});
+const result = size.fileFinishedImporting("modules/premium/native/PremiumPerkCard.tsx");
+
+export default tmp7;
 export const PerkCardTypes = { CUSTOM_PROFILE: "customProfile", CLIENT_THEMES: "clientThemes", SERVER_BOOSTS: "serverBoosts", GREYED_SERVER_BOOSTS: "greyServerBoosts", CUSTOM_APP_ICONS: "customAppIcons", EMOJI: "emoji", CUSTOM_SOUNDS: "customSounds", STICKER: "sticker", EARLY_ACCESS: "earlyAccess", MEMBER_PRICING: "memberPricing", LARGE_UPLOADS: "largeUploads", HD_VIDEO: "hdVideo", SUPER_REACTIONS: "superReactions", ENTRACE_SOUNDS: "entranceSounds", BADGE: "badge", GREYED_BADGE: "greyBadge", XBOX_GAME_PASS: "xboxGamePass" };
 export { PerkCardVariant };
 export const PERK_CARD_SIZES = frozen;
-export const usePerkCardHeight = function usePerkCardHeight(NARROW) {
-  return useFontScale.useFontScale() > 1 ? frozen[NARROW].scaledFontHeight : frozen[NARROW].height;
-};
+export const usePerkCardHeight = tmp6;
 export const usePremiumPerkCard = function usePremiumPerkCard() {
-  subscriptionPlansLoaded = subscriptionPlansLoaded(13696).useSubscriptionPlansLoaded();
-  let obj = subscriptionPlansLoaded(13696);
-  const maxFileSizeForPremiumType = subscriptionPlansLoaded(4446).getMaxFileSizeForPremiumType(PremiumTypes.TIER_2);
-  const callback = noop.useCallback(() => {
-    const obj2 = { screen: constants.COLLECTIBLES_SHOP, params: null };
-    const obj = subscriptionPlansLoaded(7656);
-    obj2.params = { analyticsSource: AnalyticsLocationDefault.PREMIUM_MARKETING_PERK_CARD };
+  let Text;
+  let format;
+  let intl;
+  let intl10;
+  let intl11;
+  let intl12;
+  let intl13;
+  let intl14;
+  let intl15;
+  let intl16;
+  let intl17;
+  let intl18;
+  let intl19;
+  let intl2;
+  let intl20;
+  let intl21;
+  let intl22;
+  let intl23;
+  let intl24;
+  let intl25;
+  let intl26;
+  let intl27;
+  let intl28;
+  let intl29;
+  let intl3;
+  let intl30;
+  let intl31;
+  let intl32;
+  let intl33;
+  let intl34;
+  let intl35;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  let intl9;
+  let obj10;
+  let obj11;
+  let obj12;
+  let obj13;
+  let obj14;
+  let obj15;
+  let obj16;
+  let obj17;
+  let obj18;
+  let obj19;
+  let obj20;
+  let obj22;
+  let obj23;
+  let obj24;
+  let obj4;
+  let obj5;
+  let obj6;
+  let obj7;
+  let obj8;
+  let obj9;
+  let prop;
+  let subscriptionPlansLoaded;
+  let obj = subscriptionPlansLoaded(12941);
+  subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
+  let obj2 = subscriptionPlansLoaded(4491);
+  const maxFileSizeForPremiumType = obj2.getMaxFileSizeForPremiumType(PremiumTypes.TIER_2);
+  const callback = react.useCallback(() => {
+    const obj2 = { screen: constants.COLLECTIBLES_SHOP, params: { analyticsSource: AnalyticsLocationDefault.PREMIUM_MARKETING_PERK_CARD } };
+    const obj = subscriptionPlansLoaded(dependencyMap[9]);
+    ({ analyticsSource: AnalyticsLocationDefault.PREMIUM_MARKETING_PERK_CARD });
     obj.openUserSettings(obj2);
   }, []);
-  const callback1 = noop.useCallback(() => {
-    subscriptionPlansLoaded(7656).openUserSettings({ screen: constants.PROFILE_CUSTOMIZATION });
+  const callback1 = react.useCallback(() => {
+    const obj = subscriptionPlansLoaded(dependencyMap[9]);
+    const obj2 = { screen: constants.PROFILE_CUSTOMIZATION };
+    obj.openUserSettings(obj2);
   }, []);
   const items = [subscriptionPlansLoaded];
-  const callback2 = noop.useCallback(() => {
-    subscriptionPlansLoaded(7656).openUserSettings({ screen: constants.APPEARANCE_THEME_PICKER });
+  const callback2 = react.useCallback(() => {
+    const obj = subscriptionPlansLoaded(dependencyMap[9]);
+    const obj2 = { screen: constants.APPEARANCE_THEME_PICKER };
+    obj.openUserSettings(obj2);
   }, []);
-  const callback3 = noop.useCallback(() => {
-    const obj2 = { screen: constants.GUILD_BOOSTING, params: { shouldFetchSubscriptionPlans: !subscriptionPlansLoaded } };
-    openUserSettings.openUserSettings(obj2);
+  const callback3 = react.useCallback(() => {
+    let obj3;
+    const obj2 = { screen: metroImportAll.GUILD_BOOSTING, params: obj3 };
+    obj3 = { shouldFetchSubscriptionPlans: !subscriptionPlansLoaded };
+    const obj = openUserSettings;
+    obj.openUserSettings(obj2);
   }, items);
-  const obj3 = { customProfile: null, clientThemes: null, serverBoosts: null, greyServerBoosts: null, customAppIcons: null, emoji: null, customSounds: null, sticker: null, earlyAccess: null, memberPricing: null, largeUploads: null, hdVideo: null, superReactions: null, entranceSounds: null, badge: null, greyBadge: null, xboxGamePass: null };
-  const obj4 = { title: null, description: null, imageSrc: null, buttonOnPress: null };
-  const callback4 = noop.useCallback(() => {
-    subscriptionPlansLoaded(7656).openUserSettings({ screen: constants.APP_ICONS });
+  let obj3 = { customProfile: obj4, clientThemes: obj5, serverBoosts: obj6, greyServerBoosts: obj7, customAppIcons: obj8, emoji: obj9, customSounds: obj10, sticker: obj11, earlyAccess: obj12, memberPricing: obj13, largeUploads: obj14, hdVideo: obj15, superReactions: obj16, entranceSounds: obj17, badge: obj18, greyBadge: obj19, xboxGamePass: obj20 };
+  obj4 = { title: intl.string(subscriptionPlansLoaded(1127).t.KcyDwF), description: intl2.string(subscriptionPlansLoaded(1127).t.Mt3U1W), imageSrc: AssetRegistryDefault, buttonOnPress: callback1 };
+  const callback4 = react.useCallback(() => {
+    const obj = subscriptionPlansLoaded(dependencyMap[9]);
+    const obj2 = { screen: constants.APP_ICONS };
+    obj.openUserSettings(obj2);
   }, []);
-  const intl = subscriptionPlansLoaded(1115).intl;
-  obj4.title = intl.string(subscriptionPlansLoaded(1115).t.KcyDwF);
-  const intl2 = subscriptionPlansLoaded(1115).intl;
-  obj4.description = intl2.string(subscriptionPlansLoaded(1115).t.Mt3U1W);
-  obj4.imageSrc = _modDef13697;
-  obj4.buttonOnPress = callback1;
-  obj3.customProfile = obj4;
-  const obj5 = { title: null, description: null, imageSrc: null, buttonOnPress: null };
-  const intl3 = subscriptionPlansLoaded(1115).intl;
-  obj5.title = intl3.string(subscriptionPlansLoaded(1115).t.kWM48G);
-  const intl4 = subscriptionPlansLoaded(1115).intl;
-  obj5.description = intl4.string(subscriptionPlansLoaded(1115).t.CjRASJ);
-  obj5.imageSrc = _modDef13698;
-  obj5.buttonOnPress = callback2;
-  obj3.clientThemes = obj5;
-  const obj6 = { title: null, description: null, imageSrc: null, buttonOnPress: null };
-  const intl5 = subscriptionPlansLoaded(1115).intl;
-  obj6.title = intl5.string(subscriptionPlansLoaded(1115).t["NyDu/6"]);
-  const intl6 = subscriptionPlansLoaded(1115).intl;
-  obj6.description = intl6.string(subscriptionPlansLoaded(1115).t["4pEwXL"]);
-  obj6.imageSrc = _modDef13699;
-  obj6.buttonOnPress = callback3;
-  obj3.serverBoosts = obj6;
-  const obj7 = { title: null, description: null, imageSrc: null, imageOverlayText: null };
-  const intl7 = subscriptionPlansLoaded(1115).intl;
-  obj7.title = intl7.string(subscriptionPlansLoaded(1115).t["NyDu/6"]);
-  const intl8 = subscriptionPlansLoaded(1115).intl;
-  obj7.description = intl8.string(subscriptionPlansLoaded(1115).t["4pEwXL"]);
-  obj7.imageSrc = _modDef13700;
-  const intl9 = subscriptionPlansLoaded(1115).intl;
-  obj7.imageOverlayText = intl9.string(subscriptionPlansLoaded(1115).t["/VzCKE"]);
-  obj3.greyServerBoosts = obj7;
-  const obj8 = { title: null, description: null, imageSrc: null, buttonOnPress: null };
-  const intl10 = subscriptionPlansLoaded(1115).intl;
-  obj8.title = intl10.string(subscriptionPlansLoaded(1115).t.OuItFi);
-  const intl11 = subscriptionPlansLoaded(1115).intl;
-  obj8.description = intl11.string(subscriptionPlansLoaded(1115).t.mPyrE6);
-  obj8.imageSrc = _modDef13701;
-  obj8.buttonOnPress = callback4;
-  obj3.customAppIcons = obj8;
-  const obj9 = { title: null, description: null, imageSrc: null };
-  const intl12 = subscriptionPlansLoaded(1115).intl;
-  obj9.title = intl12.string(subscriptionPlansLoaded(1115).t["R2IV/Q"]);
-  const intl13 = subscriptionPlansLoaded(1115).intl;
-  obj9.description = intl13.string(subscriptionPlansLoaded(1115).t.R5Xag2);
-  obj9.imageSrc = _modDef13702;
-  obj3.emoji = obj9;
-  const obj10 = { title: null, description: null, imageSrc: null };
-  const intl14 = subscriptionPlansLoaded(1115).intl;
-  obj10.title = intl14.string(subscriptionPlansLoaded(1115).t.LWsArT);
-  const intl15 = subscriptionPlansLoaded(1115).intl;
-  obj10.description = intl15.string(subscriptionPlansLoaded(1115).t["4lSyCY"]);
-  obj10.imageSrc = _modDef13703;
-  obj3.customSounds = obj10;
-  const obj11 = { title: null, description: null, imageSrc: null };
-  const intl16 = subscriptionPlansLoaded(1115).intl;
-  obj11.title = intl16.string(subscriptionPlansLoaded(1115).t.tzdIwI);
-  const intl17 = subscriptionPlansLoaded(1115).intl;
-  obj11.description = intl17.string(subscriptionPlansLoaded(1115).t.hJG8ZN);
-  obj11.imageSrc = _modDef13704;
-  obj3.sticker = obj11;
-  const obj12 = { title: null, description: null, imageSrc: null };
-  const intl18 = subscriptionPlansLoaded(1115).intl;
-  obj12.title = intl18.string(subscriptionPlansLoaded(1115).t.EYxi0o);
-  const intl19 = subscriptionPlansLoaded(1115).intl;
-  obj12.description = intl19.string(subscriptionPlansLoaded(1115).t.M9AIt1);
-  obj12.imageSrc = _modDef13705;
-  obj3.earlyAccess = obj12;
-  const obj13 = { title: null, description: null, imageSrc: null, buttonOnPress: null };
-  const intl20 = subscriptionPlansLoaded(1115).intl;
-  obj13.title = intl20.string(subscriptionPlansLoaded(1115).t["H4/NBN"]);
-  const intl21 = subscriptionPlansLoaded(1115).intl;
-  obj13.description = intl21.string(subscriptionPlansLoaded(1115).t.wo3D3T);
-  obj13.imageSrc = _modDef13706;
-  obj13.buttonOnPress = callback;
-  obj3.memberPricing = obj13;
-  const obj14 = { title: null, description: null, imageSrc: null };
-  const intl22 = subscriptionPlansLoaded(1115).intl;
-  obj14.title = intl22.formatToPlainString(subscriptionPlansLoaded(1115).t.jqhAdL, { premiumMaxSize: maxFileSizeForPremiumType });
-  const intl23 = subscriptionPlansLoaded(1115).intl;
-  obj14.description = intl23.formatToPlainString(subscriptionPlansLoaded(1115).t["HI+cfm"], { premiumMaxSize: maxFileSizeForPremiumType });
-  obj14.imageSrc = _modDef13707;
-  obj3.largeUploads = obj14;
-  const obj15 = { title: null, description: null, imageSrc: null };
-  const intl24 = subscriptionPlansLoaded(1115).intl;
-  obj15.title = intl24.string(subscriptionPlansLoaded(1115).t.RSXQYO);
-  const intl25 = subscriptionPlansLoaded(1115).intl;
-  obj15.description = intl25.string(subscriptionPlansLoaded(1115).t.ymCPxp);
-  obj15.imageSrc = _modDef13708;
-  obj3.hdVideo = obj15;
-  const obj16 = { title: null, description: null, imageSrc: null };
-  const intl26 = subscriptionPlansLoaded(1115).intl;
-  obj16.title = intl26.string(subscriptionPlansLoaded(1115).t["6S7kO7"]);
-  const intl27 = subscriptionPlansLoaded(1115).intl;
-  obj16.description = intl27.string(subscriptionPlansLoaded(1115).t.A0U9fk);
-  obj16.imageSrc = _modDef13709;
-  obj3.superReactions = obj16;
-  const obj17 = { title: null, description: null, imageSrc: null };
-  const intl28 = subscriptionPlansLoaded(1115).intl;
-  obj17.title = intl28.string(subscriptionPlansLoaded(1115).t["f4M+H9"]);
-  const intl29 = subscriptionPlansLoaded(1115).intl;
-  obj17.description = intl29.string(subscriptionPlansLoaded(1115).t["7ZCYvC"]);
-  obj17.imageSrc = _modDef13710;
-  obj3.entranceSounds = obj17;
-  const obj18 = { title: null, description: null, imageSrc: null };
-  const intl30 = subscriptionPlansLoaded(1115).intl;
-  obj18.title = intl30.string(subscriptionPlansLoaded(1115).t.dcFfSJ);
-  const intl31 = subscriptionPlansLoaded(1115).intl;
-  obj18.description = intl31.string(subscriptionPlansLoaded(1115).t["37MFFq"]);
-  obj18.imageSrc = _modDef13711;
-  obj3.badge = obj18;
-  const obj19 = { title: null, description: null, imageSrc: null, imageOverlayText: null };
-  const intl32 = subscriptionPlansLoaded(1115).intl;
-  obj19.title = intl32.string(subscriptionPlansLoaded(1115).t.dcFfSJ);
-  const intl33 = subscriptionPlansLoaded(1115).intl;
-  obj19.description = intl33.string(subscriptionPlansLoaded(1115).t["37MFFq"]);
-  obj19.imageSrc = _modDef13712;
-  const intl34 = subscriptionPlansLoaded(1115).intl;
-  obj19.imageOverlayText = intl34.string(subscriptionPlansLoaded(1115).t["/VzCKE"]);
-  obj3.greyBadge = obj19;
-  const obj20 = { title: null, imageSrc: null, imageStyle: null, bodyComponent: null };
-  const intl35 = subscriptionPlansLoaded(1115).intl;
-  obj20.title = intl35.string(subscriptionPlansLoaded(1115).t.aJE9i1);
-  let obj2 = subscriptionPlansLoaded(4446);
-  obj20.imageSrc = { uri: _modDef13713 };
-  obj20.imageStyle = { aspectRatio: 1.9789473684210526 };
-  const obj22 = { variant: "text-sm/normal", children: null };
-  const intl36 = subscriptionPlansLoaded(1115).intl;
-  const obj23 = { termsLink: null };
-  const obj21 = { uri: _modDef13713 };
-  obj23.termsLink = HelpdeskUtilsDefault.getArticleURL(NITRO_2_POINT_0.NITRO_2_POINT_0);
-  obj22.children = intl36.format(subscriptionPlansLoaded(1115).t["9Wv+8h"], obj23);
-  obj20.bodyComponent = closure_9(subscriptionPlansLoaded(4784).Text, obj22);
-  obj3.xboxGamePass = obj20;
+  intl = subscriptionPlansLoaded(1127).intl;
+  intl2 = subscriptionPlansLoaded(1127).intl;
+  obj5 = { title: intl3.string(subscriptionPlansLoaded(1127).t.kWM48G), description: intl4.string(subscriptionPlansLoaded(1127).t.CjRASJ), imageSrc: AssetRegistryDefault2, buttonOnPress: callback2 };
+  intl3 = subscriptionPlansLoaded(1127).intl;
+  intl4 = subscriptionPlansLoaded(1127).intl;
+  obj6 = { title: intl5.string(subscriptionPlansLoaded(1127).t["NyDu/6"]), description: intl6.string(subscriptionPlansLoaded(1127).t["4pEwXL"]), imageSrc: AssetRegistryDefault3, buttonOnPress: callback3 };
+  intl5 = subscriptionPlansLoaded(1127).intl;
+  intl6 = subscriptionPlansLoaded(1127).intl;
+  obj7 = { title: intl7.string(subscriptionPlansLoaded(1127).t["NyDu/6"]), description: intl8.string(subscriptionPlansLoaded(1127).t["4pEwXL"]), imageSrc: AssetRegistryDefault4, imageOverlayText: intl9.string(subscriptionPlansLoaded(1127).t["/VzCKE"]) };
+  intl7 = subscriptionPlansLoaded(1127).intl;
+  intl8 = subscriptionPlansLoaded(1127).intl;
+  intl9 = subscriptionPlansLoaded(1127).intl;
+  obj8 = { title: intl10.string(subscriptionPlansLoaded(1127).t.OuItFi), description: intl11.string(subscriptionPlansLoaded(1127).t.mPyrE6), imageSrc: AssetRegistryDefault5, buttonOnPress: callback4 };
+  intl10 = subscriptionPlansLoaded(1127).intl;
+  intl11 = subscriptionPlansLoaded(1127).intl;
+  obj9 = { title: intl12.string(subscriptionPlansLoaded(1127).t["R2IV/Q"]), description: intl13.string(subscriptionPlansLoaded(1127).t.R5Xag2), imageSrc: AssetRegistryDefault6 };
+  intl12 = subscriptionPlansLoaded(1127).intl;
+  intl13 = subscriptionPlansLoaded(1127).intl;
+  obj10 = { title: intl14.string(subscriptionPlansLoaded(1127).t.LWsArT), description: intl15.string(subscriptionPlansLoaded(1127).t["4lSyCY"]), imageSrc: AssetRegistryDefault7 };
+  intl14 = subscriptionPlansLoaded(1127).intl;
+  intl15 = subscriptionPlansLoaded(1127).intl;
+  obj11 = { title: intl16.string(subscriptionPlansLoaded(1127).t.tzdIwI), description: intl17.string(subscriptionPlansLoaded(1127).t.hJG8ZN), imageSrc: AssetRegistryDefault8 };
+  intl16 = subscriptionPlansLoaded(1127).intl;
+  intl17 = subscriptionPlansLoaded(1127).intl;
+  obj12 = { title: intl18.string(subscriptionPlansLoaded(1127).t.EYxi0o), description: intl19.string(subscriptionPlansLoaded(1127).t.M9AIt1), imageSrc: AssetRegistryDefault9 };
+  intl18 = subscriptionPlansLoaded(1127).intl;
+  intl19 = subscriptionPlansLoaded(1127).intl;
+  obj13 = { title: intl20.string(subscriptionPlansLoaded(1127).t["H4/NBN"]), description: intl21.string(subscriptionPlansLoaded(1127).t.wo3D3T), imageSrc: AssetRegistryDefault10, buttonOnPress: callback };
+  intl20 = subscriptionPlansLoaded(1127).intl;
+  intl21 = subscriptionPlansLoaded(1127).intl;
+  obj14 = { title: intl22.formatToPlainString(subscriptionPlansLoaded(1127).t.jqhAdL, { premiumMaxSize: maxFileSizeForPremiumType }), description: intl23.formatToPlainString(subscriptionPlansLoaded(1127).t["HI+cfm"], { premiumMaxSize: maxFileSizeForPremiumType }), imageSrc: AssetRegistryDefault11 };
+  intl22 = subscriptionPlansLoaded(1127).intl;
+  intl23 = subscriptionPlansLoaded(1127).intl;
+  obj15 = { title: intl24.string(subscriptionPlansLoaded(1127).t.RSXQYO), description: intl25.string(subscriptionPlansLoaded(1127).t.ymCPxp), imageSrc: AssetRegistryDefault12 };
+  intl24 = subscriptionPlansLoaded(1127).intl;
+  intl25 = subscriptionPlansLoaded(1127).intl;
+  obj16 = { title: intl26.string(subscriptionPlansLoaded(1127).t["6S7kO7"]), description: intl27.string(subscriptionPlansLoaded(1127).t.A0U9fk), imageSrc: AssetRegistryDefault13 };
+  intl26 = subscriptionPlansLoaded(1127).intl;
+  intl27 = subscriptionPlansLoaded(1127).intl;
+  obj17 = { title: intl28.string(subscriptionPlansLoaded(1127).t["f4M+H9"]), description: intl29.string(subscriptionPlansLoaded(1127).t["7ZCYvC"]), imageSrc: AssetRegistryDefault14 };
+  intl28 = subscriptionPlansLoaded(1127).intl;
+  intl29 = subscriptionPlansLoaded(1127).intl;
+  obj18 = { title: intl30.string(subscriptionPlansLoaded(1127).t.dcFfSJ), description: intl31.string(subscriptionPlansLoaded(1127).t["37MFFq"]), imageSrc: AssetRegistryDefault15 };
+  intl30 = subscriptionPlansLoaded(1127).intl;
+  intl31 = subscriptionPlansLoaded(1127).intl;
+  obj19 = { title: intl32.string(subscriptionPlansLoaded(1127).t.dcFfSJ), description: intl33.string(subscriptionPlansLoaded(1127).t["37MFFq"]), imageSrc: AssetRegistryDefault16, imageOverlayText: intl34.string(subscriptionPlansLoaded(1127).t["/VzCKE"]) };
+  intl32 = subscriptionPlansLoaded(1127).intl;
+  intl33 = subscriptionPlansLoaded(1127).intl;
+  intl34 = subscriptionPlansLoaded(1127).intl;
+  obj20 = { title: intl35.string(subscriptionPlansLoaded(1127).t.aJE9i1), imageSrc: { uri: _modDef12958 }, imageStyle: { aspectRatio: 1.9789473684210526 }, bodyComponent: closure_9(Text, obj22) };
+  intl35 = subscriptionPlansLoaded(1127).intl;
+  obj22 = { variant: "text-sm/normal", children: format(prop, obj23) };
+  ({ uri: _modDef12958 });
+  Text = subscriptionPlansLoaded(4833).Text;
+  const intl36 = subscriptionPlansLoaded(1127).intl;
+  format = intl36.format;
+  obj23 = { termsLink: obj24.getArticleURL(NITRO_2_POINT_0.NITRO_2_POINT_0) };
+  prop = subscriptionPlansLoaded(1127).t["9Wv+8h"];
+  obj24 = HelpdeskUtilsDefault;
   return obj3;
 };

@@ -1,30 +1,33 @@
-// Module ID: 11635
-// Function ID: 11636
+// Module ID: 9536
+// Function ID: 9537
 // Name: isSelectedFromHomeChannel
-// Dependencies: [7554, 2095, 2048, 4646, 4645, 2]
+// Dependencies: [6699, 2102, 2058, 4695, 4694, 2]
 // Exports: default
 
-// Module 11635 (isSelectedFromHomeChannel)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
-import RootNavigationRef from "RootNavigationRef" /* 4646 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7554 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 9536 (isSelectedFromHomeChannel)
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6699 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const isGuildHomeChannel = fn(2048).isGuildHomeChannel;
-const size = fn(2);
+let tmp;
+const NavigationRouteUtils = tmp(4694);
+const isGuildHomeChannel = ChannelConstants.isGuildHomeChannel;
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/isSelectedFromHomeChannel.native.tsx");
 
 export default function isSelectedFromHomeChannel(id) {
   let coerceChannelRouteResult1;
-  const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+  const obj = RootNavigationRef;
+  const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const rootState = rootNavigationRef.getRootState();
       if (null == rootState) {
         return false;
       } else {
-        const coerceMainRouteResult = NavigationRouteUtils.coerceMainRoute(rootState.routes[rootState.index]);
+        const tmpResult = NavigationRouteUtils;
+        const coerceMainRouteResult = tmpResult.coerceMainRoute(rootState.routes[rootState.index]);
         if (null == coerceMainRouteResult) {
           return false;
         } else {
@@ -42,7 +45,7 @@ export default function isSelectedFromHomeChannel(id) {
                   let coerceChannelRouteResult = obj3.coerceChannelRoute(tmp4);
                   if (null != coerceChannelRouteResult) {
                     if (coerceChannelRouteResult.params.channelId === id.id) {
-                      let tmp6Result = tmp6(4645);
+                      let tmp6Result = tmp6(4694);
                       coerceChannelRouteResult1 = tmp6Result.coerceChannelRoute(state.routes[index - 1]);
                       if (null != coerceChannelRouteResult1) {
                         break;
@@ -52,16 +55,12 @@ export default function isSelectedFromHomeChannel(id) {
                 }
                 index = index - 1;
               }
-              let tmp10 = coerceChannelRouteResult1.params.guildId === id.guild_id;
-              if (tmp10) {
-                tmp10 = isGuildHomeChannel(coerceChannelRouteResult1.params.channelId);
-              }
+              const tmp10 = coerceChannelRouteResult1.params.guildId === id.guild_id && isGuildHomeChannel(coerceChannelRouteResult1.params.channelId);
               return tmp10;
             }
             return false;
           }
         }
-        const tmpResult = NavigationRouteUtils;
       }
     }
   }

@@ -1,9 +1,17 @@
 // Module ID: 5555
 // Function ID: 5556
-// Dependencies: [1121]
+// Dependencies: [5552]
 
 // Module 5555
-import registerAsset from "module_1121" /* 1121 */;
+import _mod5552 from "module_5552" /* 5552 */;
 
+let obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
+obj[45056] = {
+  name: "MPFVersion",
+  description(value) {
+    const obj = _mod5552;
+    return obj.getStringValue(value);
+  }
+};
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "e99a6a1cd140c0c8eecfa7ce5bbe308d", name: "img_account_sync_skype_light_and_dark", type: "png" });
+export default obj;

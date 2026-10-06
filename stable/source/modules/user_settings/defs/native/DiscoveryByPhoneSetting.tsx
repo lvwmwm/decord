@@ -1,41 +1,67 @@
-// Module ID: 15128
-// Function ID: 15129
+// Module ID: 14371
+// Function ID: 14372
 // Name: DiscoveryByPhoneSetting
-// Dependencies: [8265, 1074, 1115, 2019, 1385, 12966, 11754, 2]
+// Dependencies: [7421, 1086, 1127, 558, 576, 2027, 1391, 12074, 10874, 2]
 
-// Module 15128 (DiscoveryByPhoneSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12966 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14371 (DiscoveryByPhoneSetting)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12074 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const FlagUtils = tmp(1391);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendDiscoveryFlags = Constants.FriendDiscoveryFlags;
-const toggle = SettingBuilders.createToggle({
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
+  const setting = FriendDiscoverySettings.useSetting();
+  if (cResult[0] !== setting) {
+    const tmpResult = FlagUtils;
+    const hasFlagResult = tmpResult.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
+    cResult[0] = setting;
+    cResult[1] = hasFlagResult;
+    tmp5 = hasFlagResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
+  const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
+  const setting = FriendDiscoverySettings.useSetting();
+  const obj = FlagUtils;
+  return obj.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
+});
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.dEYpSt);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.dEYpSt);
   },
-  parent: SettingsConstants.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useDescription: function useDiscoveryByPhoneSettingDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.X7pIKN);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.X7pIKN);
   },
-  useValue: function useDiscoveryByPhoneSettingValue() {
-    const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
-    const setting = FriendDiscoverySettings.useSetting();
-    return FlagUtils.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
-  },
+  useValue: tmp2,
   onValueChange: function onDiscoveryByPhoneSettingValueChange(phone) {
     const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
     const setting = FriendDiscoverySettings.getSetting();
-    const hasFlagResult = FlagUtils.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_EMAIL);
-    const result = ContactSyncActionCreatorsDefault.updateDiscoverability({ phone, email: hasFlagResult });
+    const obj = FlagUtils;
+    const hasFlagResult = obj.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_EMAIL);
+    const obj2 = ContactSyncActionCreatorsDefault;
+    const obj3 = { phone, email: hasFlagResult };
+    const result = obj2.updateDiscoverability(obj3);
   }
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/DiscoveryByPhoneSetting.tsx");
 
 export default toggle;

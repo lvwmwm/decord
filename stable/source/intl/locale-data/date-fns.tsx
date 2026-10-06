@@ -1,449 +1,294 @@
-// Module ID: 3872
-// Function ID: 3873
-// Name: bg
-// Dependencies: [5, 3873, 1980, 3885, 3891, 3897, 3903, 3909, 2111, 3911, 3917, 3923, 3929, 3935, 3941, 3947, 3953, 3959, 3965, 3971, 3977, 3983, 3989, 3995, 4001, 4007, 4013, 4019, 4323, 4329, 4335, 4341, 2]
+// Module ID: 3916
+// Function ID: 3917
+// Name: dateFnsLocales
+// Dependencies: [5, 3917, 1987, 3929, 3935, 3941, 3947, 3953, 2117, 3955, 3961, 3967, 3973, 3979, 3985, 3991, 3997, 4003, 4009, 4015, 4021, 4027, 4033, 4039, 4045, 4051, 4057, 4063, 4367, 4373, 4379, 4385, 2]
 
-// Module 3872 (bg)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 3916 (dateFnsLocales)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const obj = { bg: null, cs: null, da: null, de: null, el: null, "en-GB": null, "en-US": null, "es-ES": null, "es-419": null, fi: null, fr: null, hr: null, hu: null, it: null, ja: null, ko: null, lt: null, nl: null, no: null, pl: null, "pt-BR": null, ro: null, ru: null, "sv-SE": null, th: null, tr: null, uk: null, vi: null, "zh-CN": null, "zh-TW": null, hi: null };
-let closure_32 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3873, dependencyMap.paths);
+const obj = {
+  bg: function() {
+    return closure_32(...arguments);
+  },
+  cs: function() {
+    return closure_31(...arguments);
+  },
+  da: function() {
+    return closure_30(...arguments);
+  },
+  de: function() {
+    return closure_29(...arguments);
+  },
+  el: function() {
+    return closure_28(...arguments);
+  },
+  "en-GB": function() {
+    return closure_27(...arguments);
+  },
+  "en-US": function() {
+    return closure_26(...arguments);
+  },
+  "es-ES": function() {
+    return closure_25(...arguments);
+  },
+  "es-419": function() {
+    return closure_24(...arguments);
+  },
+  fi: function() {
+    return closure_23(...arguments);
+  },
+  fr: function() {
+    return closure_22(...arguments);
+  },
+  hr: function() {
+    return closure_21(...arguments);
+  },
+  hu: function() {
+    return closure_20(...arguments);
+  },
+  it: function() {
+    return closure_19(...arguments);
+  },
+  ja: function() {
+    return closure_18(...arguments);
+  },
+  ko: function() {
+    return closure_17(...arguments);
+  },
+  lt: function() {
+    return closure_16(...arguments);
+  },
+  nl: function() {
+    return closure_15(...arguments);
+  },
+  no: function() {
+    return closure_14(...arguments);
+  },
+  pl: function() {
+    return closure_13(...arguments);
+  },
+  "pt-BR": function() {
+    return closure_12(...arguments);
+  },
+  ro: function() {
+    return closure_11(...arguments);
+  },
+  ru: function() {
+    return closure_10(...arguments);
+  },
+  "sv-SE": function() {
+    return closure_9(...arguments);
+  },
+  th: function() {
+    return closure_8(...arguments);
+  },
+  tr: function() {
+    return closure_7(...arguments);
+  },
+  uk: function() {
+    return closure_6(...arguments);
+  },
+  vi: function() {
+    return closure_5(...arguments);
+  },
+  "zh-CN": function() {
+    return closure_4(...arguments);
+  },
+  "zh-TW": function() {
+    return closure_3(...arguments);
+  },
+  hi: function() {
+    return closure_2(...arguments);
+  }
+};
+let closure_32 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3917, dependencyMap.paths);
   return arg1.default;
 });
-obj.bg = function() {
-  const self = this;
-  const apply = closure_32.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_31 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3885, dependencyMap.paths);
+let closure_31 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3929, dependencyMap.paths);
   return arg1.default;
 });
-obj.cs = function() {
-  const self = this;
-  const apply = closure_31.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_30 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3891, dependencyMap.paths);
+let closure_30 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3935, dependencyMap.paths);
   return arg1.default;
 });
-obj.da = function() {
-  const self = this;
-  const apply = closure_30.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_29 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3897, dependencyMap.paths);
+let closure_29 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3941, dependencyMap.paths);
   return arg1.default;
 });
-obj.de = function() {
-  const self = this;
-  const apply = closure_29.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_28 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3903, dependencyMap.paths);
+let closure_28 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3947, dependencyMap.paths);
   return arg1.default;
 });
-obj.el = function() {
-  const self = this;
-  const apply = closure_28.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_27 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3909, dependencyMap.paths);
+let closure_27 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3953, dependencyMap.paths);
   return arg1.default;
 });
-obj["en-GB"] = function() {
-  const self = this;
-  const apply = closure_27.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_26 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(2111, dependencyMap.paths);
+let closure_26 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(2117, dependencyMap.paths);
   return arg1.default;
 });
-obj["en-US"] = function() {
-  const self = this;
-  const apply = closure_26.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_25 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3911, dependencyMap.paths);
+let closure_25 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3955, dependencyMap.paths);
   return arg1.default;
 });
-obj["es-ES"] = function() {
-  const self = this;
-  const apply = closure_25.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_24 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3911, dependencyMap.paths);
+let closure_24 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3955, dependencyMap.paths);
   return arg1.default;
 });
-obj["es-419"] = function() {
-  const self = this;
-  const apply = closure_24.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_23 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3917, dependencyMap.paths);
+let closure_23 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3961, dependencyMap.paths);
   return arg1.default;
 });
-obj.fi = function() {
-  const self = this;
-  const apply = closure_23.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_22 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3923, dependencyMap.paths);
+let closure_22 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3967, dependencyMap.paths);
   return arg1.default;
 });
-obj.fr = function() {
-  const self = this;
-  const apply = closure_22.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_21 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3929, dependencyMap.paths);
+let closure_21 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3973, dependencyMap.paths);
   return arg1.default;
 });
-obj.hr = function() {
-  const self = this;
-  const apply = closure_21.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_20 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3935, dependencyMap.paths);
+let closure_20 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3979, dependencyMap.paths);
   return arg1.default;
 });
-obj.hu = function() {
-  const self = this;
-  const apply = closure_20.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_19 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3941, dependencyMap.paths);
+let closure_19 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3985, dependencyMap.paths);
   return arg1.default;
 });
-obj.it = function() {
-  const self = this;
-  const apply = closure_19.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_18 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3947, dependencyMap.paths);
+let closure_18 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3991, dependencyMap.paths);
   return arg1.default;
 });
-obj.ja = function() {
-  const self = this;
-  const apply = closure_18.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_17 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3953, dependencyMap.paths);
+let closure_17 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(3997, dependencyMap.paths);
   return arg1.default;
 });
-obj.ko = function() {
-  const self = this;
-  const apply = closure_17.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_16 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3959, dependencyMap.paths);
+let closure_16 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4003, dependencyMap.paths);
   return arg1.default;
 });
-obj.lt = function() {
-  const self = this;
-  const apply = closure_16.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_15 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3965, dependencyMap.paths);
+let closure_15 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4009, dependencyMap.paths);
   return arg1.default;
 });
-obj.nl = function() {
-  const self = this;
-  const apply = closure_15.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_14 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3971, dependencyMap.paths);
+let closure_14 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4015, dependencyMap.paths);
   return arg1.default;
 });
-obj.no = function() {
-  const self = this;
-  const apply = closure_14.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_13 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3977, dependencyMap.paths);
+let closure_13 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4021, dependencyMap.paths);
   return arg1.default;
 });
-obj.pl = function() {
-  const self = this;
-  const apply = closure_13.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_12 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3983, dependencyMap.paths);
+let closure_12 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4027, dependencyMap.paths);
   return arg1.default;
 });
-obj["pt-BR"] = function() {
-  const self = this;
-  const apply = closure_12.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_11 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3989, dependencyMap.paths);
+let closure_11 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4033, dependencyMap.paths);
   return arg1.default;
 });
-obj.ro = function() {
-  const self = this;
-  const apply = closure_11.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_10 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(3995, dependencyMap.paths);
+let closure_10 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4039, dependencyMap.paths);
   return arg1.default;
 });
-obj.ru = function() {
-  const self = this;
-  const apply = closure_10.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_9 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4001, dependencyMap.paths);
+let closure_9 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4045, dependencyMap.paths);
   return arg1.default;
 });
-obj["sv-SE"] = function() {
-  const self = this;
-  const apply = closure_9.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_8 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4007, dependencyMap.paths);
+let closure_8 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4051, dependencyMap.paths);
   return arg1.default;
 });
-obj.th = function() {
-  const self = this;
-  const apply = closure_8.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_7 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4013, dependencyMap.paths);
+let closure_7 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4057, dependencyMap.paths);
   return arg1.default;
 });
-obj.tr = function() {
-  const self = this;
-  const apply = closure_7.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_6 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4019, dependencyMap.paths);
+let closure_6 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4063, dependencyMap.paths);
   return arg1.default;
 });
-obj.uk = function() {
-  const self = this;
-  const apply = closure_6.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_5 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4323, dependencyMap.paths);
+let closure_5 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4367, dependencyMap.paths);
   return arg1.default;
 });
-obj.vi = function() {
-  const self = this;
-  const apply = closure_5.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_4 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4329, dependencyMap.paths);
+let closure_4 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4373, dependencyMap.paths);
   return arg1.default;
 });
-obj["zh-CN"] = function() {
-  const self = this;
-  const apply = closure_4.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_3 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4335, dependencyMap.paths);
+let closure_3 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4379, dependencyMap.paths);
   return arg1.default;
 });
-obj["zh-TW"] = function() {
-  const self = this;
-  const apply = closure_3.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-let closure_2 = asyncGeneratorStep(async () => {
-  await asyncRequireImpl(4341, dependencyMap.paths);
+let closure_2 = _asyncToGenerator(async () => {
+  let c0;
+  let c1;
+  await asyncRequire(4385, dependencyMap.paths);
   return arg1.default;
 });
-obj.hi = function() {
-  const self = this;
-  const apply = closure_2.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-const size = fn(2);
 const result = size.fileFinishedImporting("intl/locale-data/date-fns.tsx");
 
 export const dateFnsLocales = obj;

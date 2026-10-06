@@ -1,10 +1,10 @@
-// Module ID: 2014
-// Function ID: 2015
+// Module ID: 2022
+// Function ID: 2023
 // Name: UrlHostUtils
 // Dependencies: [2]
 // Exports: getHostWithoutPort, isLocalhost
 
-// Module 2014 (UrlHostUtils)
+// Module 2022 (UrlHostUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/core/UrlHostUtils.tsx");
@@ -17,9 +17,5 @@ export const getHostWithoutPort = function getHostWithoutPort(arg0) {
   return first;
 };
 export function isLocalhost(arg0) {
-  let tmp = "localhost" === arg0;
-  if (!tmp) {
-    tmp = "127.0.0.1" === arg0;
-  }
-  return tmp;
+  return "localhost" === arg0 || "127.0.0.1" === arg0;
 }

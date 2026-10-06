@@ -1,43 +1,28 @@
-// Module ID: 16749
-// Function ID: 16750
+// Module ID: 16045
+// Function ID: 16046
 // Name: NotificationCenterActionButton
-// Dependencies: [19, 21, 8211, 8214, 4755, 16750, 1980, 1115, 2]
+// Dependencies: [19, 21, 7362, 7365, 4801, 16046, 1987, 1127, 2]
 // Exports: default
 
-// Module 16749 (NotificationCenterActionButton)
-import util from "util" /* 1115 */;
-import IconButton from "IconButton" /* 8211 */;
-import _modDef8214 from "module_8214" /* 8214 */;
-import noop from "module_19" /* 19 */;
+// Module 16045 (NotificationCenterActionButton)
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1127 */;
+import IconButton2 from "IconButton" /* 7362 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7365 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/notification_center/native/NotificationCenterActionButton.tsx");
 
 export default function NotificationCenterActionButton() {
-  const obj = {
-    variant: "tertiary",
-    size: "sm",
-    icon: _modDef8214,
-    onPress() {
-      return require("ActionSheetActionCreators").openLazy(require("asyncRequireImpl")(paths[5], paths.paths), "NotificationCenterActionSheet");
-    },
-    accessibilityLabel: null,
-    maxFontSizeMultiplier: 2
-  };
-  const intl = util.intl;
-  obj.accessibilityLabel = intl.string(util.t["UKOtz+"]);
-  return jsx(IconButton.IconButton, {
-    variant: "tertiary",
-    size: "sm",
-    icon: _modDef8214,
-    onPress() {
-      return require("ActionSheetActionCreators").openLazy(require("asyncRequireImpl")(paths[5], paths.paths), "NotificationCenterActionSheet");
-    },
-    accessibilityLabel: null,
-    maxFontSizeMultiplier: 2
-  });
+  let paths;
+  const IconButton = IconButton2.IconButton;
+  const intl = intl2.intl;
+  return <IconButton variant="tertiary" size="sm" icon={AssetRegistryDefault} onPress={function onPress() {
+    const obj = require("ActionSheetActionCreators");
+    return obj.openLazy(require("asyncRequire")(paths[5], paths.paths), "NotificationCenterActionSheet");
+  }} accessibilityLabel={intl.string(intl2.t["UKOtz+"])} maxFontSizeMultiplier={2} />;
 };

@@ -1,28 +1,35 @@
-// Module ID: 14815
-// Function ID: 14816
+// Module ID: 14067
+// Function ID: 14068
 // Name: subscriptionHelpers
-// Dependencies: [2040, 9345, 7971, 4692, 1074, 2004, 9346, 9624, 5374, 14775, 7992, 2]
+// Dependencies: [2050, 8496, 7120, 4741, 1086, 2011, 8497, 8776, 5439, 14027, 7141, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 14815 (subscriptionHelpers)
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5374 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7992 */;
-import useThermalState from "useThermalState" /* 9624 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14775 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import FramesStore from "FramesStore" /* 9345 */;
-import QuestStore from "QuestStore" /* 7971 */;
+// Module 14067 (subscriptionHelpers)
+import Constants2 from "Constants" /* 1086 */;
+import Constants3 from "Constants" /* 4741 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5439 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
+import FramesConstants from "FramesConstants" /* 8497 */;
+import useThermalState from "useThermalState" /* 8776 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14027 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import FramesStore from "FramesStore" /* 8496 */;
+import QuestStore from "QuestStore" /* 7120 */;
+import Constants from "Constants" /* 2011 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const TransportTypes = fn(4692).TransportTypes;
-const RPCEvents = fn(1074).RPCEvents;
-const Constants = fn(2004);
-({ ActivityLayoutMode: closure_7, ActivityScreenOrientation: closure_8 } = Constants);
-const asLaunched = fn(9346).asLaunched;
-const size = fn(2);
+let metroImportAll;
+let metroImportDefault;
+const TransportTypes = Constants3.TransportTypes;
+const RPCEvents = Constants2.RPCEvents;
+({ ActivityLayoutMode: metroImportDefault, ActivityScreenOrientation: metroImportAll } = Constants);
+const asLaunched = FramesConstants.asLaunched;
 const result = size.fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
 
 export const getInitialSubscriptionPayload = function getInitialSubscriptionPayload(application, arg1, quest_id) {
+  let enrolledAt;
+  let enrolledAt1;
+  let obj4;
   if (RPCEvents.ACTIVITY_PIP_MODE_UPDATE === arg1) {
     const application3 = application.application;
     let id;
@@ -35,11 +42,11 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     }
     let tmp39 = null;
     if (null != layoutModeForApp) {
-      const obj2 = { is_pip_mode: layoutModeForApp !== constants.FOCUSED };
-      tmp39 = obj2;
+      tmp39 = { is_pip_mode: layoutModeForApp !== metroImportDefault.FOCUSED };
+      const obj2 = { is_pip_mode: layoutModeForApp !== metroImportDefault.FOCUSED };
     }
     return tmp39;
-  } else if (tmp.ACTIVITY_LAYOUT_MODE_UPDATE === arg1) {
+  } else if (RPCEvents.ACTIVITY_LAYOUT_MODE_UPDATE === arg1) {
     const application2 = application.application;
     let id1;
     if (application2 != null) {
@@ -51,40 +58,44 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     }
     let tmp34 = null;
     if (null != layoutModeForApp1) {
+      tmp34 = { layout_mode: layoutModeForApp1 };
       const obj5 = { layout_mode: layoutModeForApp1 };
-      tmp34 = obj5;
     }
     return tmp34;
-  } else if (tmp.FRAME_LAYOUT_MODE_UPDATE === arg1) {
+  } else if (RPCEvents.FRAME_LAYOUT_MODE_UPDATE === arg1) {
     if (application.source.type !== TransportTypes.POST_MESSAGE) {
       return null;
     } else {
       const tmp27 = asLaunched(FramesStore.getFrameByIframeId(application.source.iframeId));
       let tmp28 = null;
       if (null != tmp27) {
+        tmp28 = { layout_mode: tmp27.data.layoutMode };
         const obj7 = { layout_mode: tmp27.data.layoutMode };
-        tmp28 = obj7;
       }
       return tmp28;
     }
-  } else if (tmp.THERMAL_STATE_UPDATE === arg1) {
-    const thermalState = useThermalState.getThermalState();
+  } else if (RPCEvents.THERMAL_STATE_UPDATE === arg1) {
+    const obj6 = useThermalState;
+    const thermalState = obj6.getThermalState();
     let tmp23 = null;
     if (thermalState !== useThermalState.ThermalStates.UNHANDLED) {
+      tmp23 = { thermal_state: thermalState };
       const obj8 = { thermal_state: thermalState };
-      tmp23 = obj8;
     }
     return tmp23;
-  } else if (tmp.ORIENTATION_UPDATE === arg1) {
-    const obj9 = { screen_orientation: useIsScreenLandscape.getIsScreenLandscape() ? React6.LANDSCAPE : React6.PORTRAIT };
+  } else if (RPCEvents.ORIENTATION_UPDATE === arg1) {
+    const obj9 = { screen_orientation: obj4.getIsScreenLandscape() ? metroImportAll.LANDSCAPE : metroImportAll.PORTRAIT };
+    obj4 = useIsScreenLandscape;
     return obj9;
-  } else if (tmp.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === arg1) {
-    return activityInstanceConnectedParticipants.activityInstanceConnectedParticipants();
-  } else if (tmp.QUEST_ENROLLMENT_STATUS_UPDATE === arg1) {
+  } else if (RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === arg1) {
+    const obj3 = activityInstanceConnectedParticipants;
+    return obj3.activityInstanceConnectedParticipants();
+  } else if (RPCEvents.QUEST_ENROLLMENT_STATUS_UPDATE === arg1) {
     quest_id = quest_id.quest_id;
     if (quest_id) {
       const quest = QuestStore.getQuest(quest_id);
-      const activityApplicationId = QuestTaskUtils.getActivityApplicationId(quest);
+      const obj = QuestTaskUtils;
+      const activityApplicationId = obj.getActivityApplicationId(quest);
       let tmp11 = null;
       if (null != quest) {
         tmp11 = null;
@@ -96,22 +107,20 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
           }
           tmp11 = null;
           if (activityApplicationId === id2) {
-            const obj10 = { quest_id, is_enrolled: null, enrolled_at: null };
             const userStatus = quest.userStatus;
-            let enrolledAt;
+            const obj10 = { quest_id, is_enrolled: null != enrolledAt, enrolled_at: enrolledAt1 };
+            enrolledAt = undefined;
             if (userStatus != null) {
               enrolledAt = userStatus.enrolledAt;
             }
-            obj10.is_enrolled = null != enrolledAt;
             const userStatus2 = quest.userStatus;
-            let enrolledAt1;
+            enrolledAt1 = undefined;
             if (userStatus2 != null) {
               enrolledAt1 = userStatus2.enrolledAt;
             }
             if (enrolledAt1 == null) {
               enrolledAt1 = null;
             }
-            obj10.enrolled_at = enrolledAt1;
             tmp11 = obj10;
           }
         }

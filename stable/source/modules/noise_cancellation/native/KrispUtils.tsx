@@ -1,25 +1,27 @@
-// Module ID: 14109
-// Function ID: 14110
+// Module ID: 13357
+// Function ID: 13358
 // Name: noise_cancellation/KrispUtils
-// Dependencies: [1994, 2]
+// Dependencies: [2001, 2]
 // Exports: getKrispModel, setKrispModelOverride, setKrispSuppressionLevel
 
-// Module 14109 (noise_cancellation/KrispUtils)
-import inject from "inject" /* 1994 */;
+// Module 13357 (noise_cancellation/KrispUtils)
+import inject from "inject" /* 2001 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/noise_cancellation/native/KrispUtils.tsx");
 
 export const getKrispModel = function getKrispModel() {
-  return new Promise((fn) => {
-    closure_0 = fn;
-    const voiceEngine = inject.getVoiceEngine();
+  const promise = new Promise((fn) => {
+    let closure_0 = fn;
+    const obj = inject;
+    const voiceEngine = obj.getVoiceEngine();
     if (null != voiceEngine.getNcModelFilename) {
       const ncModelFilename = voiceEngine.getNcModelFilename((arg0) => closure_0(arg0));
     } else {
       fn(null);
     }
   });
+  return promise;
 };
 export function setKrispSuppressionLevel() {
 

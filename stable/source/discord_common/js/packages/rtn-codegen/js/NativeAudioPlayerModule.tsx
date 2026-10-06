@@ -1,13 +1,13 @@
-// Module ID: 14854
-// Function ID: 14855
-// Name: NativeAudioPlayerModule
+// Module ID: 14106
+// Function ID: 14107
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 14854 (NativeAudioPlayerModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 14106 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAudioPlayerModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAudioPlayerModule.tsx");
 

@@ -1,20 +1,24 @@
-// Module ID: 14749
-// Function ID: 14750
+// Module ID: 14001
+// Function ID: 14002
 // Name: updateSaturation
-// Dependencies: [17, 1364, 14750, 2]
+// Dependencies: [17, 1370, 14002, 2]
 // Exports: updateSaturation
 
-// Module 14749 (updateSaturation)
-import _mod17 from "module_17" /* 17 */;
-import NativeThemeModuleDefault from "NativeThemeModule" /* 14750 */;
+// Module 14001 (updateSaturation)
+import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_nativeDefault from "react-native" /* 14002 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
+const NativeModules = react_native.NativeModules;
 const result = size.fileFinishedImporting("modules/themes/native/updateSaturation.tsx");
 
 export const updateSaturation = function updateSaturation(saturation) {
+  let updateSaturationResult;
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    let updateSaturationResult = NativeThemeModuleDefault.updateSaturation(saturation);
+    const obj2 = react_nativeDefault;
+    updateSaturationResult = obj2.updateSaturation(saturation);
   } else {
     const DCDTheme = NativeModules.DCDTheme;
     updateSaturationResult = DCDTheme.updateSaturation(saturation);

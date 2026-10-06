@@ -1,13 +1,13 @@
-// Module ID: 16525
-// Function ID: 16526
+// Module ID: 15814
+// Function ID: 15815
 // Name: channel_list_v2/ChannelListUtils
-// Dependencies: [1074, 7802, 4968, 2]
+// Dependencies: [1086, 6952, 5017, 2]
 // Exports: isFavoritesSection, isNamedCategorySection, isRecentsSection, isVoiceChannelsSection, logChannelListEndReached
 
-// Module 16525 (channel_list_v2/ChannelListUtils)
-import Constants from "Constants" /* 1074 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
-import ChannelListState from "ChannelListState" /* 7802 */;
+// Module 15814 (channel_list_v2/ChannelListUtils)
+import Constants from "Constants" /* 1086 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
+import ChannelListState from "ChannelListState" /* 6952 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -26,5 +26,6 @@ export const isNamedCategorySection = function isNamedCategorySection(section) {
   return section >= ChannelListState.SECTION_INDEX_FIRST_NAMED_CATEGORY;
 };
 export const logChannelListEndReached = function logChannelListEndReached() {
-  AppAnalyticsUtilsDefault.trackWithMetadata(AnalyticEvents.CHANNEL_LIST_END_REACHED);
+  const obj = AppAnalyticsUtilsDefault;
+  obj.trackWithMetadata(AnalyticEvents.CHANNEL_LIST_END_REACHED);
 };

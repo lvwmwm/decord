@@ -3,47 +3,26 @@
 // Dependencies: []
 
 // Module 1911
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "pl",
+const obj = {
+  locale: "hu",
   pluralRuleFunction(arg0, arg1) {
-    const parts = String(arg0).split(".");
-    [arr, tmp2] = parts;
-    const substr = arr.slice(-1);
-    const substr1 = arr.slice(-2);
-    let str2 = "other";
-    if (!arg1) {
-      if (1 != arg0) {
-        if (!tmp2) {
-          if (substr >= 2) {
-            if (substr <= 4) {
-              let str5 = "few";
-              if (substr1 >= 12) {
-                str5 = "few";
-              }
-            }
-            let str3 = str5;
-          }
-        }
-        if (!tmp2) {
-          if (1 != arr) {
-            if (0 != substr) {
-              str5 = str6;
-            }
-          }
-          str6 = "many";
-        }
-        str6 = "other";
-        if (!tmp2) {
-          str6 = "other";
-          if (substr1 >= 12) {
-            str6 = "other";
-          }
-        }
+    let str;
+    const tmp = arg1;
+    if (tmp) {
+      let str2;
+      if (1 == arg0) {
+        str2 = "one";
       } else {
-        str3 = "one";
+        str2 = "other";
       }
-      str2 = str3;
+      str = str2;
+    } else {
+      str = "other";
+      if (1 == arg0) {
+        str = "one";
+      }
     }
-    return str2;
+    return str;
   }
-});
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj);

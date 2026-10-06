@@ -1,43 +1,47 @@
-// Module ID: 8414
-// Function ID: 8415
+// Module ID: 7574
+// Function ID: 7575
 // Name: LocalInteractionComponentStateStore
-// Dependencies: [8415, 504, 573, 2]
+// Dependencies: [7575, 504, 585, 2]
 
-// Module 8414 (LocalInteractionComponentStateStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import LimitedMapDefault from "LimitedMap" /* 8415 */;
+// Module 7574 (LocalInteractionComponentStateStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import LimitedMapDefault from "LimitedMap" /* 7575 */;
+import size from "module_2" /* 2 */;
 
-let closure_0 = new LimitedMapDefault(196606);
+let map;
+
+const React = new LimitedMapDefault(196606);
 let closure_1 = 0;
 const tmp2 = new LimitedMapDefault(196606);
 let closure_2 = new LimitedMapDefault(196606);
 const tmp3 = new LimitedMapDefault(196606);
 let closure_3 = new LimitedMapDefault(196606);
-const Store = initializeDefault.Store;
+new LimitedMapDefault(196606);
+const Store = get_initializedDefault.Store;
 class LocalInteractionComponentStateStore extends Store {
+  getInteractionComponentStates() {
+    return closure_0;
+  }
+  getInteractionComponentStateVersion() {
+    return closure_1;
+  }
+  getInteractionComponentState(customId, id) {
+    const value = closure_0.get(customId);
+    let tmp = null;
+    if (null != value) {
+      let value2 = value.get(id);
+      if (value2 == null) {
+        value2 = null;
+      }
+      tmp = value2;
+    }
+    return tmp;
+  }
 }
 const prototype = LocalInteractionComponentStateStore.prototype;
-prototype["getInteractionComponentStates"] = function getInteractionComponentStates() {
-  return closure_0;
-};
-prototype["getInteractionComponentStateVersion"] = function getInteractionComponentStateVersion() {
-  return closure_1;
-};
-prototype["getInteractionComponentState"] = function getInteractionComponentState(customId, id) {
-  value = closure_0.get(customId);
-  let tmp = null;
-  if (null != value) {
-    value2 = value.get(id);
-    if (value2 == null) {
-      value2 = null;
-    }
-    tmp = value2;
-  }
-  return tmp;
-};
 LocalInteractionComponentStateStore.displayName = "LocalInteractionComponentStateStore";
-const localInteractionComponentStateStore = new LocalInteractionComponentStateStore(DispatcherDefault, {
+let obj = {
   LOGOUT: function handleInit() {
     closure_0.clear();
     closure_2.clear();
@@ -45,59 +49,73 @@ const localInteractionComponentStateStore = new LocalInteractionComponentStateSt
     closure_1 = closure_1 + 1;
   },
   QUEUE_INTERACTION_COMPONENT_STATE: function handleQueueActionComponentState(state) {
+    let componentId;
+    let messageId;
+    let nonce;
     ({ messageId, nonce, componentId } = state);
+    state = state.state;
     const result = closure_2.set(messageId, nonce);
     const result1 = closure_3.set(nonce, { messageId, componentId });
-    let map = closure_0.get(messageId);
+    map = closure_0.get(messageId);
+    const obj = closure_0;
     if (map == null) {
       const _Map = Map;
+      const self = this;
+      const self2 = this;
       map = new Map();
     }
-    const result2 = map.set(componentId, state.state);
-    const result3 = closure_0.set(messageId, map);
+    const result2 = map.set(componentId, state);
+    const result3 = obj.set(messageId, map);
     closure_1 = closure_1 + 1;
   },
   SET_INTERACTION_COMPONENT_STATE: function handleSetInteractionComponentState(rootContainerId) {
+    let componentId;
+    let state;
     rootContainerId = rootContainerId.rootContainerId;
     ({ componentId, state } = rootContainerId);
-    let map = closure_0.get(rootContainerId);
+    map = closure_0.get(rootContainerId);
+    const obj = closure_0;
     if (map == null) {
       const _Map = Map;
+      const self = this;
+      const self2 = this;
       map = new Map();
     }
     const result = map.set(componentId, state);
-    const result1 = closure_0.set(rootContainerId, map);
+    const result1 = obj.set(rootContainerId, map);
     closure_1 = closure_1 + 1;
   },
   MESSAGE_DELETE: function handleMessageDelete(id) {
     id = id.id;
+    const obj = closure_0;
     if (closure_0.has(id)) {
-      value = closure_2.get(id);
+      const value = closure_2.get(id);
+      const obj2 = closure_2;
       if (null != value) {
         closure_3.delete(value);
       }
-      closure_2.delete(id);
+      obj2.delete(id);
       obj.delete(id);
       closure_1 = closure_1 + 1;
     } else {
       return false;
     }
-    obj = closure_0;
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
     message = message.message;
     if (null != message.id) {
+      const obj = closure_0;
       if (closure_0.has(message.id)) {
         const id = message.id;
-        value = closure_2.get(id);
+        const value = closure_2.get(id);
+        const obj2 = closure_2;
         if (null != value) {
           closure_3.delete(value);
         }
-        closure_2.delete(id);
+        obj2.delete(id);
         obj.delete(id);
         closure_1 = closure_1 + 1;
       }
-      obj = closure_0;
     }
     return false;
   },
@@ -106,7 +124,8 @@ const localInteractionComponentStateStore = new LocalInteractionComponentStateSt
     if (null == nonce) {
       return false;
     } else {
-      value = closure_3.get(nonce);
+      const value = closure_3.get(nonce);
+      const obj = closure_3;
       if (null == value) {
         return false;
       } else {
@@ -114,25 +133,27 @@ const localInteractionComponentStateStore = new LocalInteractionComponentStateSt
         obj.delete(nonce);
         closure_1 = closure_1 + 1;
       }
-      obj = closure_3;
     }
   },
   INTERACTION_FAILURE: function handleInteractionFailure(nonce) {
+    let componentId;
+    let messageId;
     nonce = nonce.nonce;
     if (null == nonce) {
       return false;
     } else {
-      value = closure_3.get(nonce);
+      const value = closure_3.get(nonce);
       if (null == value) {
         return false;
       } else {
         ({ componentId, messageId } = value);
-        value2 = closure_0.get(messageId);
+        const value2 = closure_0.get(messageId);
+        const obj = closure_0;
         if (null != value2) {
           if (value2.has(componentId)) {
             value2.delete(componentId);
             if (0 === value2.size) {
-              closure_0.delete(messageId);
+              obj.delete(messageId);
             }
             closure_1 = closure_1 + 1;
           }
@@ -144,8 +165,8 @@ const localInteractionComponentStateStore = new LocalInteractionComponentStateSt
     closure_0.delete(customId.customId);
     closure_1 = closure_1 + 1;
   }
-});
-const size = fn(2);
+};
+const localInteractionComponentStateStore = new LocalInteractionComponentStateStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/interaction_components/LocalInteractionComponentStateStore.tsx");
 
 export default localInteractionComponentStateStore;

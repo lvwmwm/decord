@@ -1,31 +1,120 @@
-// Module ID: 15352
-// Function ID: 15353
+// Module ID: 14599
+// Function ID: 14600
 // Name: BountiesBannerBackground
-// Dependencies: [19, 17, 4780, 21, 504, 8610, 5230, 2]
+// Dependencies: [19, 17, 4826, 21, 558, 576, 504, 7759, 5292, 2]
 
-// Module 15352 (BountiesBannerBackground)
-import initialize from "initialize" /* 504 */;
-import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import common_Video from "common/Video" /* 8610 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+// Module 14599 (BountiesBannerBackground)
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import common_Video from "common/Video" /* 7759 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
+let c3;
+let closure_4;
+let metroImportDefault;
+let metroRequire;
+({ StyleSheet: c3, View: closure_4 } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const locations = [0, 0.6];
 const colors = ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.9)"];
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/quests/native/BountiesBannerBackground.tsx");
-
-export default noop.memo(function BountiesBannerBackground(arg0) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let items1;
+  let style;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let uri;
+  let useReducedMotion;
+  const obj = react2;
+  const cResult = obj.c(12);
+  ({ children, style, uri } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function c() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== uri) {
+    const obj2 = { uri };
+    cResult[2] = uri;
+    cResult[3] = obj2;
+    tmp8 = obj2;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === tmp8) {
+    let tmp9;
+    let tmp11;
+    if (cResult[5] === stateFromStores) {
+      tmp9 = cResult[6];
+    }
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { colors, locations, style: _false.absoluteFillObject };
+      const tmp17 = metroRequire(LinearGradientDefault, obj3);
+      cResult[7] = tmp17;
+      tmp11 = tmp17;
+    } else {
+      tmp11 = cResult[7];
+    }
+    if (cResult[8] === children) {
+      if (cResult[9] === style) {
+        let tmp18;
+        if (cResult[10] === tmp9) {
+          tmp18 = cResult[11];
+        }
+        return tmp18;
+      }
+    }
+    const obj4 = { style, children: items1 };
+    items1 = [tmp9, tmp11, children];
+    const tmp21 = metroImportDefault(React3, obj4);
+    cResult[8] = children;
+    cResult[9] = style;
+    cResult[10] = tmp9;
+    cResult[11] = tmp21;
+    tmp18 = tmp21;
+  }
+  const obj5 = { source: tmp8, style: _false.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
+  const tmp10 = metroRequire(common_Video.VideoComponent, obj5);
+  cResult[4] = tmp8;
+  cResult[5] = stateFromStores;
+  cResult[6] = tmp10;
+  tmp9 = tmp10;
+}) : ((arg0) => {
+  let children;
+  let items1;
+  let style;
+  let uri;
+  let useReducedMotion;
   ({ children, style, uri } = arg0);
   const items = [AccessibilityStore];
-  const obj2 = { style, children: null };
-  const stateFromStores = initialize.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const items1 = [timestampProducer(common_Video.VideoComponent, { source: { uri }, style: React3.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" }), timestampProducer(LinearGradientDefault, { colors, locations, style: React3.absoluteFillObject }), children];
-  obj2.children = items1;
-  return React5(React4, obj2);
-});
+  const obj2 = { style, children: items1 };
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  items1 = [, , ];
+  const obj3 = { source: { uri }, style: _false.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
+  items1[0] = metroRequire(common_Video.VideoComponent, obj3);
+  const obj4 = { colors, locations, style: _false.absoluteFillObject };
+  items1[1] = metroRequire(LinearGradientDefault, obj4);
+  items1[2] = children;
+  return metroImportDefault(React3, obj2);
+}));
+const result = size.fileFinishedImporting("modules/quests/native/BountiesBannerBackground.tsx");
+
+export default memoResult;

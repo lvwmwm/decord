@@ -1,79 +1,251 @@
 // Module ID: 1798
 // Function ID: 1799
-// Dependencies: [1644]
+// Dependencies: [32, 19, 1647, 1752, 1681, 1672, 1675, 1674]
 
 // Module 1798
-import runWorkletOnJS from "runWorkletOnJS" /* 1644 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import module_1647_mod from "module_1647" /* 1647 */;
 
-const fn = function t() {
-  let obj = { frameCallbackRegistry: new Map(), activeFrameCallbacks: null, previousFrameTimestamp: null, nextCallId: 0, runCallbacks: null, registerFrameCallback: null, unregisterFrameCallback: null, manageStateFrameCallback: null };
-  const map = new Map();
-  obj.activeFrameCallbacks = new Set();
-  obj.runCallbacks = function runCallbacks(nextCallId) {
-    const self = this;
-    closure_1 = nextCallId;
-    function loop(previousFrameTimestamp) {
-      if (timeSincePreviousFrame === self.nextCallId) {
-        if (null === tmp.previousFrameTimestamp) {
-          tmp.previousFrameTimestamp = previousFrameTimestamp;
-        }
-        timeSincePreviousFrame = previousFrameTimestamp - tmp.previousFrameTimestamp;
-        const item = tmp.activeFrameCallbacks.forEach((item) => {
-          value = self.frameCallbackRegistry.get(item);
-          const startTime = value.startTime;
-          if (null === startTime) {
-            value.startTime = previousFrameTimestamp;
-            const obj = { timestamp: previousFrameTimestamp, timeSincePreviousFrame: null, timeSinceFirstFrame: 0 };
-            value.callback(obj);
-          } else {
-            const obj2 = { timestamp: previousFrameTimestamp, timeSincePreviousFrame, timeSinceFirstFrame: previousFrameTimestamp - startTime };
-            value.callback(obj2);
+let c3;
+let closure_4;
+({ useRef: c3, useState: closure_4 } = react);
+let module_1647 = module_1647_mod;
+module_1647.shouldBeUseWeb();
+module_1647 = module_1647_mod;
+module_1647 = module_1647.isIOS();
+if (!module_1647) {
+  const _module3 = module_1647;
+  module_1647 = _module3.isMacOS();
+}
+const __initData = { code: "function pnpm_useAnimatedRefTs1(){const{tagOrWrapper,viewName}=this.__closure;const f=function(){return tagOrWrapper.value;};if(viewName){f.viewName=viewName;}return f;}" };
+
+export const useAnimatedRef = module_1647 ? (function useAnimatedRefWeb() {
+  let fun;
+  const f83990 = (getScrollableNode) => {
+    let scrollableNode;
+    if (getScrollableNode.getScrollableNode) {
+      scrollableNode = getScrollableNode.getScrollableNode();
+    } else {
+      scrollableNode = getScrollableNode;
+      if (getScrollableNode.getNativeScrollRef) {
+        scrollableNode = getScrollableNode.getNativeScrollRef();
+      }
+    }
+    return scrollableNode;
+  };
+  map = new Map();
+  const current = fun(map).current;
+  let closure_2 = fun(-1);
+  const tmp2 = fun(null);
+  if (!tmp2.current) {
+    fun = function fun(map) {
+      let tag;
+      let closure_0 = map;
+      if (closure_0) {
+        ref.current = closure_0(map);
+        fun.getTag = () => {
+          const obj = first(first1[3]);
+          return obj.findNodeHandle(map);
+        };
+        fun.current = map;
+        const arr = tag;
+        if (tag.size) {
+          tag = undefined;
+          if (fun != null) {
+            const getTag = tmp3.getTag;
+            if (getTag != null) {
+              tag = getTag();
+            }
           }
-        });
-        if (tmp.activeFrameCallbacks.size > 0) {
-          tmp.previousFrameTimestamp = previousFrameTimestamp;
-          const _requestAnimationFrame = requestAnimationFrame;
-          const animationFrame = requestAnimationFrame(previousFrameTimestamp);
+          if (tag == null) {
+            tag = null;
+          }
+          const item = arr.forEach((fn, fn2) => {
+            if (fn != null) {
+              fn();
+            }
+            const result = current.set(fn2, fn2(tag));
+          });
+        }
+      }
+      return ref.current;
+    };
+    fun.observe = (fn) => {
+      let closure_0 = fn;
+      let tmp = fun;
+      let tag;
+      if (fun != null) {
+        const getTag = tmp.getTag;
+        if (getTag != null) {
+          tag = getTag();
+        }
+      }
+      if (tag == null) {
+        tag = null;
+      }
+      const result = current.set(fn, fn(tag));
+      return () => {
+        const value = current.get(fn);
+        const obj = current;
+        const tmp = fn;
+        if (value != null) {
+          value();
+        }
+        obj.delete(tmp);
+      };
+    };
+    fun.current = null;
+    tmp2.current = fun;
+  }
+  return tmp2.current;
+}) : (function useAnimatedRefNative() {
+  let fn;
+  const viewName = _slicedToArray(closure_4(() => {
+    let mutable = null;
+    const obj = first(first1[2]);
+    const tmp = first;
+    const tmp2 = first1;
+    if (!obj.isFabric()) {
+      mutable = null;
+      if (module_1647) {
+        const tmpResult = tmp(tmp2[4]);
+        mutable = tmpResult.makeMutable(null);
+      }
+    }
+    return mutable;
+  }), 1)[0];
+  const first1 = _slicedToArray(closure_4(() => {
+    const obj = first(first1[4]);
+    return obj.makeMutable(null);
+  }), 1)[0];
+  const f83993 = (viewConfig) => {
+    let fn;
+    const tmp = first;
+    const obj = first(first1[2]);
+    const tmp2 = first1;
+    if (obj.isFabric()) {
+      fn = tmp(tmp2[5]).getShadowNodeWrapperFromRef;
+    } else {
+      fn = (getScrollableNode) => {
+        let scrollableNode;
+        const findNodeHandle = closure_1_0(current[3]).findNodeHandle;
+        closure_1_0(current[3]);
+        if (getScrollableNode.getScrollableNode) {
+          scrollableNode = getScrollableNode.getScrollableNode();
         } else {
-          tmp.previousFrameTimestamp = null;
+          scrollableNode = getScrollableNode;
+          if (getScrollableNode.getNativeScrollRef) {
+            scrollableNode = getScrollableNode.getNativeScrollRef();
+          }
         }
-        const activeFrameCallbacks = tmp.activeFrameCallbacks;
-      }
+        return findNodeHandle(scrollableNode);
+      };
     }
-    if (tmp) {
-      let _requestAnimationFrame = requestAnimationFrame;
-      let animationFrame = requestAnimationFrame(loop);
-    }
-  };
-  obj.registerFrameCallback = function registerFrameCallback(callback, arg1) {
-    const result = this.frameCallbackRegistry.set(arg1, { callback, startTime: null });
-  };
-  obj.unregisterFrameCallback = function unregisterFrameCallback(arg0) {
-    const result = this.manageStateFrameCallback(arg0, false);
-    this.frameCallbackRegistry.delete(arg0);
-  };
-  obj.manageStateFrameCallback = function manageStateFrameCallback(arg0, arg1) {
-    if (-1 !== arg0) {
-      const self = this;
-      if (arg1) {
-        self.activeFrameCallbacks.add(arg0);
-        self.runCallbacks(self.nextCallId);
-        const activeFrameCallbacks2 = self.activeFrameCallbacks;
-      } else {
-        self.frameCallbackRegistry.get(arg0).startTime = null;
-        self.activeFrameCallbacks.delete(arg0);
-        if (0 === self.activeFrameCallbacks.size) {
-          self.nextCallId = self.nextCallId + 1;
+    current.value = fn(viewConfig);
+    const iter = current;
+    if (f83993) {
+      let str;
+      if (viewConfig != null) {
+        viewConfig = viewConfig.viewConfig;
+        if (viewConfig != null) {
+          str = viewConfig.uiViewClassName;
         }
-        const activeFrameCallbacks = self.activeFrameCallbacks;
-        const frameCallbackRegistry = self.frameCallbackRegistry;
       }
+      if (!str) {
+        str = "RCTView";
+      }
+      tmp3.value = str;
     }
+    return iter.value;
   };
-  global._frameCallbackRegistry = obj;
-};
-fn.__closure = {};
-fn.__workletHash = 12487935997347;
-fn.__initData = { code: "function pnpm_FrameCallbackRegistryUITs1(){const frameCallbackRegistry={frameCallbackRegistry:new Map(),activeFrameCallbacks:new Set(),previousFrameTimestamp:null,nextCallId:0,runCallbacks:function(callId){var _this=this;const loop=function(timestamp){if(callId!==_this.nextCallId){return;}if(_this.previousFrameTimestamp===null){_this.previousFrameTimestamp=timestamp;}const delta=timestamp-_this.previousFrameTimestamp;_this.activeFrameCallbacks.forEach(function(callbackId){const callbackDetails=_this.frameCallbackRegistry.get(callbackId);const{startTime:startTime}=callbackDetails;if(startTime===null){callbackDetails.startTime=timestamp;callbackDetails.callback({timestamp:timestamp,timeSincePreviousFrame:null,timeSinceFirstFrame:0});}else{callbackDetails.callback({timestamp:timestamp,timeSincePreviousFrame:delta,timeSinceFirstFrame:timestamp-startTime});}});if(_this.activeFrameCallbacks.size>0){_this.previousFrameTimestamp=timestamp;requestAnimationFrame(loop);}else{_this.previousFrameTimestamp=null;}};if(this.activeFrameCallbacks.size===1&&callId===this.nextCallId){requestAnimationFrame(loop);}},registerFrameCallback:function(callback,callbackId){this.frameCallbackRegistry.set(callbackId,{callback:callback,startTime:null});},unregisterFrameCallback:function(callbackId){this.manageStateFrameCallback(callbackId,false);this.frameCallbackRegistry.delete(callbackId);},manageStateFrameCallback:function(callbackId,state){if(callbackId===-1){return;}if(state){this.activeFrameCallbacks.add(callbackId);this.runCallbacks(this.nextCallId);}else{const callback=this.frameCallbackRegistry.get(callbackId);callback.startTime=null;this.activeFrameCallbacks.delete(callbackId);if(this.activeFrameCallbacks.size===0){this.nextCallId+=1;}}}};global._frameCallbackRegistry=frameCallbackRegistry;}" };
-
-export const prepareUIRegistry = runWorkletOnJS.runOnUIImmediately(fn);
+  let fun;
+  map = new Map();
+  let current = closure_3(map).current;
+  let closure_2 = closure_3(-1);
+  const tmp4 = closure_3(null);
+  if (!tmp4.current) {
+    fun = function fun(map) {
+      let tag;
+      let closure_0 = map;
+      if (closure_0) {
+        ref.current = closure_0(map);
+        fun.getTag = () => {
+          const obj = first(first1[3]);
+          return obj.findNodeHandle(map);
+        };
+        fun.current = map;
+        const arr = tag;
+        if (tag.size) {
+          tag = undefined;
+          if (fun != null) {
+            const getTag = tmp3.getTag;
+            if (getTag != null) {
+              tag = getTag();
+            }
+          }
+          if (tag == null) {
+            tag = null;
+          }
+          const item = arr.forEach((fn, fn2) => {
+            if (fn != null) {
+              fn();
+            }
+            const result = current.set(fn2, fn2(tag));
+          });
+        }
+      }
+      return ref.current;
+    };
+    fun.observe = (fn) => {
+      let closure_0 = fn;
+      let tmp = fun;
+      let tag;
+      if (fun != null) {
+        const getTag = tmp.getTag;
+        if (getTag != null) {
+          tag = getTag();
+        }
+      }
+      if (tag == null) {
+        tag = null;
+      }
+      const result = current.set(fn, fn(tag));
+      return () => {
+        const value = current.get(fn);
+        const obj = current;
+        const tmp = fn;
+        if (value != null) {
+          value();
+        }
+        obj.delete(tmp);
+      };
+    };
+    fun.current = null;
+    tmp4.current = fun;
+  }
+  current = tmp4.current;
+  const shareableMappingCache = viewName(first1[6]).shareableMappingCache;
+  if (!shareableMappingCache.get(current)) {
+    let obj = { __init: fn };
+    fn = function n() {
+      let value;
+      const fn = function f() {
+        return value.value;
+      };
+      if (viewName) {
+        fn.viewName = viewName;
+      }
+      return fn;
+    };
+    const obj2 = { tagOrWrapper: first1, viewName };
+    fn.__closure = obj2;
+    fn.__workletHash = 5138727370224;
+    fn.__initData = __initData;
+    const tmp5Result = viewName(first1[7]);
+    const shareableCloneRecursive = tmp5Result.makeShareableCloneRecursive(obj);
+    const shareableMappingCache2 = tmp5(tmp6[6]).shareableMappingCache;
+    let result = shareableMappingCache2.set(current, shareableCloneRecursive);
+  }
+  return current;
+});

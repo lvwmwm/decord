@@ -1,38 +1,40 @@
-// Module ID: 7494
-// Function ID: 7495
+// Module ID: 6639
+// Function ID: 6640
 // Name: getChannelIdForGuildTransition
-// Dependencies: [2044, 7373, 2041, 2096, 2063, 2095, 7495, 1074, 2048, 7499, 7501, 7503, 5306, 2066, 2]
+// Dependencies: [2054, 6518, 2051, 4470, 2073, 2102, 6640, 1086, 2058, 6644, 6646, 6648, 5371, 2076, 2]
 // Exports: getChannelIdForGuildTransition
 
-// Module 7494 (getChannelIdForGuildTransition)
-import FavoritesUtils from "FavoritesUtils" /* 2066 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5306 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7499 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7503 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7373 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7495 */;
+// Module 6639 (getChannelIdForGuildTransition)
+import Constants from "Constants" /* 1086 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import FavoritesUtils from "FavoritesUtils" /* 2076 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5371 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6644 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 6646 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6648 */;
+import FavoriteStore from "FavoriteStore" /* 2054 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6518 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildChannelStore from "GuildChannelStore" /* 4470 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6640 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ME = fn(1074).ME;
-const StaticChannelRoute = fn(2048).StaticChannelRoute;
-const size = fn(2);
+const ME = Constants.ME;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 const result = size.fileFinishedImporting("modules/routing/getChannelIdForGuildTransition.tsx");
 
-export const getChannelIdForGuildTransition = function getChannelIdForGuildTransition(guildId) {
-  const channelId = SelectedChannelStore.getChannelId(guildId);
-  const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
-  let id;
+export const getChannelIdForGuildTransition = function getChannelIdForGuildTransition(id) {
+  const channelId = SelectedChannelStore.getChannelId(id);
+  const defaultChannel = GuildChannelStore.getDefaultChannel(id);
+  id = undefined;
   if (defaultChannel != null) {
     id = defaultChannel.id;
   }
   if (id == null) {
     let tmp5;
-    if (guildId === ME) {
+    if (id === ME) {
       const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
       let first;
       if (privateChannelIds.length > 0) {
@@ -43,48 +45,50 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
     id = tmp5;
   }
   if (channelId === StaticChannelRoute.GUILD_ONBOARDING) {
-    if (!GuildOnboardingStore.shouldShowOnboarding(guildId)) {
+    if (!GuildOnboardingStore.shouldShowOnboarding(id)) {
       return id;
     }
   }
   if (channelId === StaticChannelRoute.GUILD_HOME) {
-    if (!obj.canSeeOnboardingHome(guildId)) {
+    const obj = OnboardingHomeUtils;
+    if (!obj.canSeeOnboardingHome(id)) {
       return id;
     }
-    obj = OnboardingHomeUtils;
   }
   if (channelId === StaticChannelRoute.GUILD_SPACE) {
-    if (obj6.canUseGuildSpace(GuildStore.getGuild(guildId), "getChannelIdForGuildTransition")) {
+    const obj6 = canUseGuildSpace;
+    if (obj6.canUseGuildSpace(GuildStore.getGuild(id), "getChannelIdForGuildTransition")) {
       id = channelId;
     }
     return id;
   } else {
-    if (channelId === tmp8.GAME_SHOP) {
-      if (obj2.canSeeGameShop(guildId)) {
+    if (channelId === StaticChannelRoute.GAME_SHOP) {
+      const obj2 = SlayerStorefrontUtils;
+      if (obj2.canSeeGameShop(id)) {
         return channelId;
       }
-      obj2 = SlayerStorefrontUtils;
     }
-    if (channelId === tmp8.VIBEGRATIONS) {
-      const guild = GuildStore.getGuild(guildId);
+    if (channelId === StaticChannelRoute.VIBEGRATIONS) {
+      const guild = GuildStore.getGuild(id);
       let tmp21 = id;
       if (null != guild) {
         tmp21 = id;
+        const obj5 = VibegrationsUtils;
         if (obj5.canAccessVibegrations(guild, "getChannelIdForGuildTransition")) {
           tmp21 = channelId;
         }
-        obj5 = VibegrationsUtils;
       }
       return tmp21;
     } else {
       const channel = ChannelStore.getChannel(channelId);
       if (null != channel) {
+        let tmp17;
         if (!channel.isGuildVocal()) {
-          let tmp17 = channelId;
-          if (obj4.isFavoritesGuildId(guildId)) {
+          tmp17 = channelId;
+          const obj4 = FavoritesUtils;
+          if (obj4.isFavoritesGuildId(id)) {
             tmp17 = channelId;
           }
-          obj4 = FavoritesUtils;
         }
         return tmp17;
       }

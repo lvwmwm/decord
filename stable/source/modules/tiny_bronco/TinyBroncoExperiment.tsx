@@ -1,19 +1,38 @@
-// Module ID: 10075
-// Function ID: 10076
+// Module ID: 9201
+// Function ID: 9202
 // Name: TinyBroncoExperiment
-// Dependencies: [1434, 2]
-// Exports: isTinyBroncoEnabled, useIsTinyBroncoEnabled
+// Dependencies: [1441, 558, 576, 2]
+// Exports: isTinyBroncoEnabled
 
-// Module 10075 (TinyBroncoExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 9201 (TinyBroncoExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-08-tiny-bronco", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let obj = { name: "2026-08-tiny-bronco", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+let closure_2 = ApexExperiment.createApexExperiment(obj);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_2.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return closure_2.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/tiny_bronco/TinyBroncoExperiment.tsx");
 
-export const useIsTinyBroncoEnabled = function useIsTinyBroncoEnabled(location) {
-  return closure_0.useConfig({ location }).enabled;
-};
+export const useIsTinyBroncoEnabled = tmp2;
 export const isTinyBroncoEnabled = function isTinyBroncoEnabled(location) {
-  return closure_0.getConfig({ location }).enabled;
+  const obj = { location };
+  return closure_2.getConfig(obj).enabled;
 };

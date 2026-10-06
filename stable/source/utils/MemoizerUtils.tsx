@@ -1,24 +1,28 @@
-// Module ID: 8102
-// Function ID: 8103
+// Module ID: 7251
+// Function ID: 7252
 // Name: MemoizerUtils
 // Dependencies: [2]
 
-// Module 8102 (MemoizerUtils)
+// Module 7251 (MemoizerUtils)
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("utils/MemoizerUtils.tsx");
+let map;
 
-export default {
+let obj = {
   makeMemoizer(getURL) {
-    const map = new Map();
+    map = new Map();
     return (arg0) => {
-      value = map.get(arg0);
+      let value = map.get(arg0);
+      const obj = map;
       if (undefined === value) {
         const tmp3 = getURL(arg0);
-        const result = map.set(arg0, tmp3);
+        const result = obj.set(arg0, tmp3);
         value = tmp3;
       }
       return value;
     };
   }
 };
+let result = size.fileFinishedImporting("utils/MemoizerUtils.tsx");
+
+export default obj;

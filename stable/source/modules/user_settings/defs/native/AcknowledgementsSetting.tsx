@@ -1,29 +1,31 @@
-// Module ID: 15820
-// Function ID: 15821
+// Module ID: 15081
+// Function ID: 15082
 // Name: AcknowledgementsSetting
-// Dependencies: [1074, 4483, 11754, 1115, 4742, 2]
+// Dependencies: [1086, 4528, 10874, 1127, 4788, 2]
 
-// Module 15820 (AcknowledgementsSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import LinkingDefault from "Linking" /* 4483 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4742 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15081 (AcknowledgementsSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import LinkingDefault from "Linking" /* 4528 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4788 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const MarketingURLs = Constants.MarketingURLs;
-const pressable = SettingBuilders.createPressable({
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["0nUKy3"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["0nUKy3"]);
   },
   parent: null,
   IconComponent: CircleInformationIcon.CircleInformationIcon,
   onPress: function handleAcknowledgementsSettingPress() {
-    LinkingDefault.openURL(MarketingURLs.ACKNOWLEDGEMENTS);
+    const obj = LinkingDefault;
+    obj.openURL(MarketingURLs.ACKNOWLEDGEMENTS);
   },
   withArrow: true
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AcknowledgementsSetting.tsx");
 
 export default pressable;

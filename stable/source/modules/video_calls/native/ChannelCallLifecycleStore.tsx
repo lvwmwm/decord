@@ -1,59 +1,62 @@
-// Module ID: 9687
-// Function ID: 9688
+// Module ID: 8839
+// Function ID: 8840
 // Name: ChannelCallLifecycleStore
-// Dependencies: [2095, 9673, 8635, 1331, 504, 573, 2]
+// Dependencies: [2102, 8825, 7784, 1343, 504, 585, 2]
 
-// Module 9687 (ChannelCallLifecycleStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import _modDef1331 from "module_1331" /* 1331 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 8839 (ChannelCallLifecycleStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import _modDef1343 from "module_1343" /* 1343 */;
+import DeviceOrientation from "DeviceOrientation" /* 7784 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 8825 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import size_mod from "module_2" /* 2 */;
 
-const VoiceCallOverlayType = fn(9673).VoiceCallOverlayType;
+let voiceChannelId;
+
+const VoiceCallOverlayType = ChannelCallConstants.VoiceCallOverlayType;
 let c4 = false;
 let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8635).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
-obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8635).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
-obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
+let size = { x: "Array", y: "Symbol", width: "unicodeVersion", height: "useState", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "\u{1F35D}", isInitialized: "masonry", isVisible: "toCharArray$esjava$1" };
+const VOICE_CONTROLS_TOGGLE_BUTTON = VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON;
+obj[VOICE_CONTROLS_TOGGLE_BUTTON] = size;
+const size1 = { x: "Array", y: "Symbol", width: "unicodeVersion", height: "useState", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "\u{1F35D}", isInitialized: "masonry", isVisible: "toCharArray$esjava$1" };
+const CAMERA_PREVIEW_PICTURE_IN_PICTURE = VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE;
+obj[CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ChannelCallLifecycleStore extends Store {
+  initialize() {
+    this.waitFor(SelectedChannelStore);
+  }
+  shouldReactToSeriousThermalStateWhenActivityFocused() {
+    return c4;
+  }
+  consumedRequestToRespondToSeriousThermalState() {
+    return c5;
+  }
+  disregardSeriousThermalState() {
+    return c6;
+  }
+  isReactingToThermalState() {
+    return c5 && !c6;
+  }
+  getShowActivitiesDebugOverlay() {
+    return visible;
+  }
+  getVoiceCallOverlayLayoutStates() {
+    return obj;
+  }
+  isPipEnabledWhileFocusedOnActivityOrStream() {
+    return c10;
+  }
 }
 const prototype = ChannelCallLifecycleStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(SelectedChannelStore);
-};
-prototype["shouldReactToSeriousThermalStateWhenActivityFocused"] = function shouldReactToSeriousThermalStateWhenActivityFocused() {
-  return c4;
-};
-prototype["consumedRequestToRespondToSeriousThermalState"] = function consumedRequestToRespondToSeriousThermalState() {
-  return c5;
-};
-prototype["disregardSeriousThermalState"] = function disregardSeriousThermalState() {
-  return c6;
-};
-prototype["isReactingToThermalState"] = function isReactingToThermalState() {
-  let tmp = c5;
-  if (c5) {
-    tmp = !c6;
-  }
-  return tmp;
-};
-prototype["getShowActivitiesDebugOverlay"] = function getShowActivitiesDebugOverlay() {
-  return visible;
-};
-prototype["getVoiceCallOverlayLayoutStates"] = function getVoiceCallOverlayLayoutStates() {
-  return obj;
-};
-prototype["isPipEnabledWhileFocusedOnActivityOrStream"] = function isPipEnabledWhileFocusedOnActivityOrStream() {
-  return c10;
-};
 ChannelCallLifecycleStore.displayName = "ChannelCallLifecycleStore";
-const channelCallLifecycleStore = new ChannelCallLifecycleStore(DispatcherDefault, {
+const obj2 = {
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(arg0) {
     if (arg0 == null) {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
@@ -92,6 +95,8 @@ const channelCallLifecycleStore = new ChannelCallLifecycleStore(DispatcherDefaul
     visible = visible.visible;
   },
   VOICE_CALL_OVERLAY_LAYOUT_STATE_UPDATE: function handleVoiceCallOverlayLayoutStateUpdate(arg0) {
+    let voiceCallOverlayLayoutState;
+    let voiceCallOverlayType;
     obj = {};
     ({ voiceCallOverlayType, voiceCallOverlayLayoutState } = arg0);
     const merged = Object.assign(obj);
@@ -114,8 +119,9 @@ const channelCallLifecycleStore = new ChannelCallLifecycleStore(DispatcherDefaul
       c10 = true;
     }
   }
-});
-size = fn(2);
+};
+const channelCallLifecycleStore = new ChannelCallLifecycleStore(DispatcherDefault, obj2);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/video_calls/native/ChannelCallLifecycleStore.tsx");
 
 export default channelCallLifecycleStore;

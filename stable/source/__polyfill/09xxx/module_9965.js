@@ -1,9 +1,63 @@
 // Module ID: 9965
 // Function ID: 9966
-// Dependencies: [1121]
+// Dependencies: [41, 42]
 
 // Module 9965
-import registerAsset from "module_1121" /* 1121 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
+class OverlapRemovalRefiner {
+  constructor() {
+    _classCallCheck(this, OverlapRemovalRefiner);
+  }
+}
+const entry = {
+  key: "refine",
+  value: function refine(debug, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
+    } else {
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp8 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp4;
+          let tmp = arg1[num];
+          if (tmp.index >= first.index + first.text.length) {
+            let arr = items.push(first);
+            tmp4 = tmp;
+          } else {
+            first = null;
+            let closure_1 = null;
+            if (tmp.text.length > first.text.length) {
+              first = tmp;
+              closure_1 = first;
+              tmp4 = tmp;
+            } else {
+              closure_1 = tmp;
+              tmp4 = first;
+            }
+            let debugResult = debug.debug(() => {
+              console.log("" + self.constructor.name + " remove " + closure_1 + " by " + first);
+            });
+          }
+          num = num2 + 1;
+          first = tmp4;
+          tmp8 = tmp4;
+          num2 = num;
+        } while (num < arg1.length);
+      }
+      if (null != tmp8) {
+        items.push(tmp8);
+      }
+      return items;
+    }
+  }
+};
+let items = [entry];
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls", width: 24, height: 24, scales: [1, 2], hash: "01b615b81a2755a195f3be7dbb482eef", name: "voice_bar_speaker_new", type: "png" });
+export default _createClass(OverlapRemovalRefiner, items);

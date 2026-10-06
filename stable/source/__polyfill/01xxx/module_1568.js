@@ -1,42 +1,23 @@
 // Module ID: 1568
 // Function ID: 1569
-// Dependencies: [19, 1514]
-// Exports: useFocusedListenersChildrenAdapter
+// Dependencies: [19, 1521, 1569]
+// Exports: useScheduleUpdate
 
 // Module 1568
-import NavigationBuilderContext from "NavigationBuilderContext" /* 1514 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 1521 */;
+import react3 from "react" /* 1569 */;
+import react from "react" /* 19 */;
 
-require = arg1;
 
-export const useFocusedListenersChildrenAdapter = function useFocusedListenersChildrenAdapter(navigation) {
-  navigation = navigation.navigation;
-  const focusedListeners = navigation.focusedListeners;
-  const addListener = noop.useContext(NavigationBuilderContext.NavigationBuilderContext).addListener;
-  const items = [focusedListeners, navigation];
-  const callback = noop.useCallback((fn) => {
-    if (navigation.isFocused()) {
-      for (const item10012 of focusedListeners) {
-        let item10012Result = item10012(arg0);
-        let handled = item10012Result.handled;
-        if (handled) {
-          let obj2 = { handled, result: tmp5 };
-          obj.return();
-          return obj2;
-        }
-      }
-      const obj3 = { handled: true, result: fn(navigation) };
-      return obj3;
-    } else {
-      return { handled: false, result: null };
-    }
-  }, items);
-  const items1 = [addListener, callback];
-  const effect = noop.useEffect(() => {
-    let tmpResult;
-    if (addListener != null) {
-      tmpResult = tmp("focus", callback);
-    }
-    return tmpResult;
-  }, items1);
+export const useScheduleUpdate = function useScheduleUpdate(arg0) {
+  let closure_129_1;
+  let flushUpdates;
+  let closure_0 = arg0;
+  const context = react.useContext(react2.NavigationBuilderContext);
+  ({ scheduleUpdate: closure_129_1, flushUpdates } = context);
+  const insertionEffect = react.useInsertionEffect(() => {
+    closure_1_1(closure_0);
+  });
+  const obj = react3;
+  const clientLayoutEffect = obj.useClientLayoutEffect(flushUpdates);
 };

@@ -1,125 +1,235 @@
-// Module ID: 7723
-// Function ID: 7724
+// Module ID: 6873
+// Function ID: 6874
 // Name: useTrialOffer
-// Dependencies: [32, 19, 1372, 7724, 504, 4446, 2036, 2]
-// Exports: hasUserTrialOfferExpired, useTrialOffer
+// Dependencies: [32, 19, 1378, 6874, 558, 576, 504, 4491, 2046, 2]
+// Exports: hasUserTrialOfferExpired
 
-// Module 7723 (useTrialOffer)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import UserOfferStore from "UserOfferStore" /* 7724 */;
+// Module 6873 (useTrialOffer)
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import UserStore from "UserStore" /* 1378 */;
+import UserOfferStore from "UserOfferStore" /* 6874 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, startResult, tmp3;
 
-const require = fn;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/premium/useTrialOffer.tsx");
-
-export const hasUserTrialOfferExpired = function hasUserTrialOfferExpired(hasExpired) {
-  let flag;
-  if (hasExpired != null) {
-    flag = hasExpired.hasExpired;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
-export const useTrialOffer = function useTrialOffer(arg0) {
+let react = react_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let closure_3;
+  let currentUser;
+  let first;
+  let first1;
+  let stateFromStores;
+  let tmp10;
+  let tmp11;
+  let tmp6;
   _require = arg0;
-  const items = [UserOfferStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => UserOfferStore.getUserTrialOffer(closure_0));
+  let tmp = _require;
+  const tmp2 = stateFromStores;
+  let obj = require("react");
+  const cResult = obj.c(9);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp5 = UserOfferStore;
+    const items = [UserOfferStore];
+    let num = 0;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function f() {
+      return UserOfferStore.getUserTrialOffer(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(tmp2[6]);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   let flag;
+  const useState = react.useState;
+  const obj3 = react;
   if (stateFromStores != null) {
     flag = stateFromStores.hasExpired;
   }
   if (flag == null) {
     flag = false;
   }
-  const tmp4 = first(noop.useState(flag), 2);
-  first = tmp4[0];
-  noop = tmp4[1];
-  const obj = require("initialize");
+  const tmp8 = first1(useState(flag), 2);
+  first1 = tmp8[0];
+  react = tmp8[1];
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserStore];
+    class T {
+      constructor() {
+        const obj = closure_0(stateFromStores[7]);
+        return obj.isPremium(currentUser.getCurrentUser());
+      }
+    }
+    cResult[3] = items1;
+    cResult[4] = T;
+    tmp11 = T;
+    tmp10 = items1;
+  } else {
+    tmp10 = cResult[3];
+    tmp11 = cResult[4];
+  }
+  const tmpResult2 = tmp(tmp2[6]);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp11);
+  if (stateFromStores1) {
+    const result = UserOfferStore.canFractionalPremiumUserUseOffer();
+  }
+  if (cResult[5] === first1) {
+    let tmp16;
+    let tmp17;
+    if (cResult[6] === stateFromStores) {
+      tmp16 = cResult[7];
+      tmp17 = cResult[8];
+    }
+    const effect = obj3.useEffect(tmp16, tmp17);
+    class T {
+      constructor() {
+        const obj = closure_0(stateFromStores[7]);
+        return obj.isPremium(currentUser.getCurrentUser());
+      }
+    }
+    return null;
+  }
+  class U {
+    constructor() {
+      tmp = closure_1;
+      if (null != closure_1) {
+        if (tmp.hasAcknowledged) {
+          tmp2 = closure_0;
+          tmp3 = closure_1;
+          self = this;
+          self2 = this;
+          timeout = new closure_0(closure_1[8]).Timeout();
+          tmp4 = timeout;
+          closure_0 = timeout;
+          if (null != tmp) {
+            num = 0;
+            if (null != tmp.expiresAt) {
+              expiresAt = tmp.expiresAt;
+              tmp6 = globalThis;
+              _Date = Date;
+              time = expiresAt.getTime();
+              num = time - Date.now();
+            }
+            startResult = timeout.start(num, () => {
+              const tmp = first1;
+              if (!tmp) {
+                if (stateFromStores.hasExpired) {
+                  closure_3(true);
+                }
+              }
+              if (null != stateFromStores) {
+                let num = 0;
+                if (null != stateFromStores.expiresAt) {
+                  const expiresAt = tmp5.expiresAt;
+                  const _Date = Date;
+                  const time = expiresAt.getTime();
+                  num = time - Date.now();
+                }
+                const obj = timeout;
+                if (timeout != null) {
+                  obj.start(num, f149393);
+                }
+              }
+            });
+          }
+          return () => timeout.stop();
+        }
+      }
+      return;
+    }
+  }
+  const items2 = [first1, stateFromStores];
+  cResult[5] = first1;
+  cResult[6] = stateFromStores;
+  cResult[7] = U;
+  cResult[8] = items2;
+  tmp17 = items2;
+  tmp16 = U;
+}) : ((arg0) => {
+  let closure_0;
+  let closure_3;
+  let currentUser;
+  let first;
+  let stateFromStores;
+  _require = arg0;
+  let tmp = _require;
+  const tmp2 = stateFromStores;
+  let obj = require("get initialized");
+  const items = [UserOfferStore];
+  stateFromStores = obj.useStateFromStores(items, () => UserOfferStore.getUserTrialOffer(closure_0));
+  let flag;
+  const useState = react.useState;
   const obj2 = UserOfferStore;
-  const obj3 = noop;
+  const obj3 = react;
+  if (stateFromStores != null) {
+    flag = stateFromStores.hasExpired;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  const tmp4 = first(useState(flag), 2);
+  first = tmp4[0];
+  react = tmp4[1];
   const items1 = [UserStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => closure_0(stateFromStores[5]).isPremium(currentUser.getCurrentUser()));
+  const tmpResult = tmp(tmp2[6]);
+  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
+    const obj = closure_0(stateFromStores[7]);
+    return obj.isPremium(currentUser.getCurrentUser());
+  });
   let result = !stateFromStores1;
   if (stateFromStores1) {
     result = obj2.canFractionalPremiumUserUseOffer();
   }
   const items2 = [first, stateFromStores];
-  const effect = obj3.useEffect(() => {
+  const effect = obj3.useEffect(function() {
+    const f149394 = () => {
+      const tmp = first;
+      if (!tmp) {
+        if (stateFromStores.hasExpired) {
+          closure_3(true);
+        }
+      }
+      if (null != stateFromStores) {
+        let num = 0;
+        if (null != stateFromStores.expiresAt) {
+          const expiresAt = tmp5.expiresAt;
+          const _Date = Date;
+          const time = expiresAt.getTime();
+          num = time - Date.now();
+        }
+        const obj = timeout;
+        if (timeout != null) {
+          obj.start(num, f149394);
+        }
+      }
+    };
+    let tmp = stateFromStores;
     if (null != stateFromStores) {
       if (tmp.hasAcknowledged) {
-        const timeout = new closure_0(stateFromStores[6]).Timeout();
+        const self = this;
+        const self2 = this;
+        const timeout = new closure_0(stateFromStores[8]).Timeout();
         if (null != tmp) {
           let num = 0;
           if (null != tmp.expiresAt) {
-            const expiresAt = tmp.expiresAt;
-            const _Date = Date;
-            const time = expiresAt.getTime();
+            let expiresAt = tmp.expiresAt;
+            let _Date = Date;
+            let time = expiresAt.getTime();
             num = time - Date.now();
           }
-          timeout.start(num, () => {
-            if (!closure_2_2) {
-              if (closure_2_1.hasExpired) {
-                closure_2_3(true);
-              }
-            }
-            if (null != closure_2_1) {
-              let num = 0;
-              if (null != tmp4.expiresAt) {
-                let expiresAt = tmp4.expiresAt;
-                let _Date = Date;
-                let time = expiresAt.getTime();
-                num = time - Date.now();
-              }
-              if (closure_1_0 != null) {
-                obj.start(num, () => {
-                  if (!closure_2_2) {
-                    if (closure_2_1.hasExpired) {
-                      closure_2_3(true);
-                    }
-                  }
-                  if (null != closure_2_1) {
-                    let num = 0;
-                    if (null != tmp4.expiresAt) {
-                      let expiresAt = tmp4.expiresAt;
-                      let _Date = Date;
-                      let time = expiresAt.getTime();
-                      num = time - Date.now();
-                    }
-                    if (closure_1_0 != null) {
-                      obj.start(num, () => {
-                        if (!closure_2_2) {
-                          if (closure_2_1.hasExpired) {
-                            closure_2_3(true);
-                          }
-                        }
-                        if (null != closure_2_1) {
-                          let num = 0;
-                          if (null != tmp4.expiresAt) {
-                            let expiresAt = tmp4.expiresAt;
-                            let _Date = Date;
-                            let time = expiresAt.getTime();
-                            num = time - Date.now();
-                          }
-                          if (closure_1_0 != null) {
-                            obj.start(num, () => { ... });
-                          }
-                          obj = closure_1_0;
-                        }
-                      });
-                    }
-                    obj = closure_1_0;
-                  }
-                });
-              }
-              obj = closure_1_0;
-            }
-          });
+          timeout.start(num, f149394);
         }
         return () => timeout.stop();
       }
@@ -133,4 +243,17 @@ export const useTrialOffer = function useTrialOffer(arg0) {
     }
   }
   return tmp9;
+});
+let result = size.fileFinishedImporting("modules/premium/useTrialOffer.tsx");
+
+export const hasUserTrialOfferExpired = function hasUserTrialOfferExpired(hasExpired) {
+  let flag;
+  if (hasExpired != null) {
+    flag = hasExpired.hasExpired;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
 };
+export const useTrialOffer = tmp2;

@@ -1,19 +1,26 @@
-// Module ID: 14816
-// Function ID: 14817
+// Module ID: 14068
+// Function ID: 14069
 // Name: users
-// Dependencies: [1372, 4692, 1074, 14788, 9619, 2]
+// Dependencies: [1378, 4741, 1086, 14040, 8771, 2]
 
-// Module 14816 (users)
-import transformUserDefault from "transformUser" /* 9619 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 14068 (users)
+import Constants2 from "Constants" /* 1086 */;
+import transformUserDefault from "transformUser" /* 8771 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 4741 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14040 */;
+import size from "module_2" /* 2 */;
 
-const Constants = fn(4692);
+let RPC_EMBEDDED_APP_SCOPE;
+let RPC_LOCAL_SCOPE;
+let RPC_SCOPE_CONFIG;
+let items;
 ({ RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = Constants);
-const RPCCommands = fn(1074).RPCCommands;
+const RPCCommands = Constants2.RPCCommands;
 const obj = {};
-const CONTEXT_MENU_ICON_NAMES = fn(14788);
-const obj3 = {
-  scope: null,
+const GET_USER = RPCCommands.GET_USER;
+const obj2 = {
+  scope: { [RPC_SCOPE_CONFIG.ANY]: items },
   handler(args) {
     const user = UserStore.getUser(args.args.id);
     let tmp2 = null;
@@ -23,10 +30,8 @@ const obj3 = {
     return tmp2;
   }
 };
-const items = [RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE];
-obj3.scope = { [RPC_SCOPE_CONFIG.ANY]: items };
-obj[RPCCommands.GET_USER] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_USER, obj3);
-const size = fn(2);
+items = [RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE];
+obj[GET_USER] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_USER, obj2);
 const result = size.fileFinishedImporting("modules/rpc/server/commands/users.tsx");
 
 export default obj;

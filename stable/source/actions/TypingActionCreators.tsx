@@ -1,19 +1,24 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 11348
+// Function ID: 11349
 // Name: TypingActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 
-// Module 12272 (TypingActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11348 (TypingActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("actions/TypingActionCreators.tsx");
-
-export default {
+let obj = {
   startTyping(id) {
-    DispatcherDefault.dispatch({ type: "TYPING_START_LOCAL", channelId: id });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "TYPING_START_LOCAL", channelId: id };
+    obj.dispatch(obj2);
   },
   stopTyping(id) {
-    DispatcherDefault.dispatch({ type: "TYPING_STOP_LOCAL", channelId: id });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "TYPING_STOP_LOCAL", channelId: id };
+    obj.dispatch(obj2);
   }
 };
+const result = size.fileFinishedImporting("actions/TypingActionCreators.tsx");
+
+export default obj;

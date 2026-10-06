@@ -1,24 +1,26 @@
-// Module ID: 13636
-// Function ID: 13637
+// Module ID: 12878
+// Function ID: 12879
 // Name: AndroidTwoWeekTrialsExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 // Exports: isAndroidTwoWeekTrialsExperimentEnabled, isAndroidTwoWeekTrialsTrialCTAEnabled
 
-// Module 13636 (AndroidTwoWeekTrialsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12878 (AndroidTwoWeekTrialsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-06-android-two-week-trials", kind: "user", defaultConfig: { enabled: false, trialCTAEnabled: false }, variations: null };
-const obj2 = { 1: null, 2: { enabled: true, trialCTAEnabled: true } };
+let obj2;
+let obj = { name: "2026-06-android-two-week-trials", kind: "user", defaultConfig: { enabled: false, trialCTAEnabled: false }, variations: obj2 };
+obj2 = { 1: null, 2: { enabled: true, trialCTAEnabled: true } };
 obj2[2] = { enabled: true, trialCTAEnabled: false };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/premium/experiments/AndroidTwoWeekTrialsExperiment.tsx");
 
 export const AndroidTwoWeekTrialsExperiment = apexExperiment;
 export const isAndroidTwoWeekTrialsExperimentEnabled = function isAndroidTwoWeekTrialsExperimentEnabled(location) {
-  return apexExperiment.getConfig({ location: location.location }).enabled;
+  const obj = { location: location.location };
+  return apexExperiment.getConfig(obj).enabled;
 };
 export const isAndroidTwoWeekTrialsTrialCTAEnabled = function isAndroidTwoWeekTrialsTrialCTAEnabled(location) {
-  return apexExperiment.getConfig({ location: location.location }).trialCTAEnabled;
+  const obj = { location: location.location };
+  return apexExperiment.getConfig(obj).trialCTAEnabled;
 };

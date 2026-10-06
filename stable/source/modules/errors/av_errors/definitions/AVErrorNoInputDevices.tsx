@@ -1,20 +1,17 @@
-// Module ID: 18298
-// Function ID: 18299
+// Module ID: 17665
+// Function ID: 17666
 // Name: AVErrorNoInputDevices
-// Dependencies: [2041, 1992, 4811, 9718, 18297, 2]
+// Dependencies: [2051, 1999, 4860, 8869, 17664, 2]
 
-// Module 18298 (AVErrorNoInputDevices)
-import AVError from "AVError" /* 9718 */;
-import AVErrorContext from "AVErrorContext" /* 18297 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+// Module 17665 (AVErrorNoInputDevices)
+import AVError from "AVError" /* 8869 */;
+import AVErrorContext from "AVErrorContext" /* 17664 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoInputDevices.tsx");
-
-export const AVErrorNoInputDevicesDefinition = {
+let obj = {
   getActiveErrors(voiceState) {
     voiceState = voiceState.voiceState;
     const channel = ChannelStore.getChannel(voiceState.voiceChannelId);
@@ -34,7 +31,8 @@ export const AVErrorNoInputDevicesDefinition = {
         if (null != RTCConnectionStore.getMediaSessionId()) {
           if (!isGuildStageVoiceResult) {
             const obj = { type: AVError.AVError.NO_INPUT_DEVICES };
-            const merged = Object.assign(AVErrorContext.getVoiceChannelErrorContext());
+            const obj3 = AVErrorContext;
+            const merged = Object.assign(obj3.getVoiceChannelErrorContext());
             const items = [obj];
             return items;
           }
@@ -46,3 +44,6 @@ export const AVErrorNoInputDevicesDefinition = {
     return "" + mediaSessionId.mediaSessionId;
   }
 };
+const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoInputDevices.tsx");
+
+export const AVErrorNoInputDevicesDefinition = obj;

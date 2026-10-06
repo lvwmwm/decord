@@ -1,16 +1,18 @@
-// Module ID: 8499
-// Function ID: 8500
+// Module ID: 7647
+// Function ID: 7648
 // Name: UserProfilePerformanceAnalyticsExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 // Exports: isUserProfilePerformanceAnalyticsEnabled
 
-// Module 8499 (UserProfilePerformanceAnalyticsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 7647 (UserProfilePerformanceAnalyticsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const config = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-04-user-profile-performance-analytics", defaultConfig: { performanceAnalyticsEnabled: false }, variations: { 0: { performanceAnalyticsEnabled: false }, 1: { performanceAnalyticsEnabled: true } } });
+let obj = { kind: "user", name: "2026-04-user-profile-performance-analytics", defaultConfig: { performanceAnalyticsEnabled: false }, variations: { 0: { performanceAnalyticsEnabled: false }, 1: { performanceAnalyticsEnabled: true } } };
+const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfilePerformanceAnalyticsExperiment.tsx");
 
 export const isUserProfilePerformanceAnalyticsEnabled = function isUserProfilePerformanceAnalyticsEnabled(UserProfileAnalyticsUtils) {
-  return config.getConfig({ location: UserProfileAnalyticsUtils }).performanceAnalyticsEnabled;
+  const obj = { location: UserProfileAnalyticsUtils };
+  return config.getConfig(obj).performanceAnalyticsEnabled;
 };

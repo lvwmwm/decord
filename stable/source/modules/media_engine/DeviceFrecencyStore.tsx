@@ -1,17 +1,21 @@
-// Module ID: 4816
-// Function ID: 4817
+// Module ID: 4865
+// Function ID: 4866
 // Name: DeviceFrecencyStore
-// Dependencies: [1992, 1372, 4813, 4817, 4825, 504, 12, 573, 2]
+// Dependencies: [1999, 1378, 4862, 4866, 4874, 504, 12, 585, 2]
 
-// Module 4816 (DeviceFrecencyStore)
+// Module 4865 (DeviceFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import FrecencyDefault from "Frecency" /* 4825 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import UserStore from "UserStore" /* 1372 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import TimeUtils from "TimeUtils" /* 4866 */;
+import FrecencyDefault from "Frecency" /* 4874 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 4862 */;
+import size from "module_2" /* 2 */;
 
-const Constants = fn(4813);
+let hasOwnProperty;
+let metroRequire;
 const DeviceTypes = Constants.DeviceTypes;
 ({ MediaEngineContextTypes: hasOwnProperty, SpeakingFlags: metroRequire } = Constants);
 let closure_7 = { inputDeviceFrecency: DeviceTypes.AUDIO_INPUT, outputDeviceFrecency: DeviceTypes.AUDIO_OUTPUT, videoDeviceFrecency: DeviceTypes.VIDEO_INPUT };
@@ -29,162 +33,189 @@ let obj = {
   numFrequentlyItems: Infinity
 };
 let obj2 = {};
-const stopWatch = new fn(4817).StopWatch();
-obj2[DeviceTypes.AUDIO_INPUT] = stopWatch;
-const stopWatch1 = new fn(4817).StopWatch();
-obj2[DeviceTypes.AUDIO_OUTPUT] = stopWatch1;
-const stopWatch2 = new fn(4817).StopWatch();
-obj2[DeviceTypes.VIDEO_INPUT] = stopWatch2;
-const dependencyMap = { [DeviceTypes.AUDIO_INPUT]: {}, [DeviceTypes.AUDIO_OUTPUT]: {}, [DeviceTypes.VIDEO_INPUT]: {} };
+let AUDIO_INPUT = DeviceTypes.AUDIO_INPUT;
+const stopWatch = new TimeUtils.StopWatch();
+obj2[AUDIO_INPUT] = stopWatch;
+let AUDIO_OUTPUT = DeviceTypes.AUDIO_OUTPUT;
+const stopWatch1 = new TimeUtils.StopWatch();
+obj2[AUDIO_OUTPUT] = stopWatch1;
+let VIDEO_INPUT = DeviceTypes.VIDEO_INPUT;
+const stopWatch2 = new TimeUtils.StopWatch();
+obj2[VIDEO_INPUT] = stopWatch2;
+const React4 = { [DeviceTypes.AUDIO_INPUT]: {}, [DeviceTypes.AUDIO_OUTPUT]: {}, [DeviceTypes.VIDEO_INPUT]: {} };
 let obj3 = {};
-obj3[DeviceTypes.AUDIO_INPUT] = new FrecencyDefault(obj);
+const AUDIO_INPUT2 = DeviceTypes.AUDIO_INPUT;
+obj3[AUDIO_INPUT2] = new FrecencyDefault(obj);
+const AUDIO_OUTPUT2 = DeviceTypes.AUDIO_OUTPUT;
 const tmp6 = new FrecencyDefault(obj);
-obj3[DeviceTypes.AUDIO_OUTPUT] = new FrecencyDefault(obj);
+obj3[AUDIO_OUTPUT2] = new FrecencyDefault(obj);
+const VIDEO_INPUT2 = DeviceTypes.VIDEO_INPUT;
 const tmp7 = new FrecencyDefault(obj);
-obj3[DeviceTypes.VIDEO_INPUT] = new FrecencyDefault(obj);
-const PersistedStore = initializeDefault.PersistedStore;
+obj3[VIDEO_INPUT2] = new FrecencyDefault(obj);
+const tmp8 = new FrecencyDefault(obj);
+const PersistedStore = get_initializedDefault.PersistedStore;
 class DeviceFrecencyStore extends PersistedStore {
+  initialize(arg0) {
+    let closure_0 = arg0;
+    this.waitFor(MediaEngineStore, UserStore);
+    const items = [, , ];
+    ({ AUDIO_INPUT: arr[0], AUDIO_OUTPUT: arr[1], VIDEO_INPUT: arr[2] } = DeviceTypes);
+    const item = items.forEach((item) => {
+      let tmp2;
+      if (closure_0 != null) {
+        tmp2 = tmp[item];
+      }
+      if (null != tmp2) {
+        const obj = obj3[item];
+        obj.overwriteHistory(closure_0[item]);
+      }
+      obj2[item].reset();
+    });
+  }
+  reset() {
+    const items = [, , ];
+    ({ AUDIO_INPUT: arr[0], AUDIO_OUTPUT: arr[1], VIDEO_INPUT: arr[2] } = DeviceTypes);
+    const item = items.forEach((item) => {
+      const obj = obj2[item];
+      obj.reset();
+      closure_1_9[item] = {};
+    });
+  }
+  track(arg0, arg1, usesSinceLastTrack) {
+    if (null == closure_9[arg0][arg1]) {
+      closure_9[arg0][arg1] = 0;
+    }
+    closure_9[arg0][arg1] = closure_9[arg0][arg1] + usesSinceLastTrack;
+    const obj = obj3[arg0];
+    obj2 = { usesSinceLastTrack };
+    obj.track(arg1, obj2);
+  }
+  isSampling(AUDIO_OUTPUT) {
+    const obj = obj2[AUDIO_OUTPUT];
+    return obj.isRunning();
+  }
+  startSampling(AUDIO_OUTPUT) {
+    const obj = obj2[AUDIO_OUTPUT];
+    obj.start();
+  }
+  stopSampling(AUDIO_OUTPUT, oldId) {
+    obj2[AUDIO_OUTPUT].stop();
+    const elapsedResult = obj2[AUDIO_OUTPUT].elapsed();
+    const asMillisecondsResult = elapsedResult.asMilliseconds();
+    if (asMillisecondsResult > 0) {
+      let currentDeviceId = oldId;
+      if (oldId == null) {
+        obj2 = {};
+        obj3 = {
+          getCurrentDeviceId(getInputDeviceId) {
+                return getInputDeviceId.getInputDeviceId();
+              }
+        };
+        obj2[DeviceTypes.AUDIO_INPUT] = obj3;
+        const obj4 = {
+          getCurrentDeviceId(getOutputDeviceId) {
+                return getOutputDeviceId.getOutputDeviceId();
+              }
+        };
+        obj2[DeviceTypes.AUDIO_OUTPUT] = obj4;
+        const obj5 = {
+          getCurrentDeviceId(getVideoDeviceId) {
+                return getVideoDeviceId.getVideoDeviceId();
+              }
+        };
+        obj2[DeviceTypes.VIDEO_INPUT] = obj5;
+        const obj7 = obj2[AUDIO_OUTPUT];
+        currentDeviceId = obj7.getCurrentDeviceId(MediaEngineStore);
+      }
+      const self = this;
+      this.track(AUDIO_OUTPUT, currentDeviceId, asMillisecondsResult);
+    }
+    obj2[AUDIO_OUTPUT].reset();
+  }
+  getState() {
+    return { [closure_1_4.AUDIO_INPUT]: obj3[DeviceTypes.AUDIO_INPUT].usageHistory, [closure_1_4.AUDIO_OUTPUT]: obj3[DeviceTypes.AUDIO_OUTPUT].usageHistory, [closure_1_4.VIDEO_INPUT]: obj3[DeviceTypes.VIDEO_INPUT].usageHistory };
+  }
+  getDeviceIdsSortedByFrecency(arg0) {
+    return obj3[arg0].frequently;
+  }
+  getUsageStats() {
+    const self = this;
+    const obj = { [closure_4.AUDIO_INPUT]: [], [closure_4.AUDIO_OUTPUT]: [], [closure_4.VIDEO_INPUT]: [] };
+    const items = [, ];
+    ({ AUDIO_INPUT: arr[0], AUDIO_OUTPUT: arr[1] } = DeviceTypes);
+    const item = items.forEach((item) => {
+      if (self.isSampling(item)) {
+        self.stopSampling(item);
+        self.startSampling(item);
+      }
+      self[item] = Object.entries(closure_9[item]);
+    });
+    obj2 = {
+      duration_input_device_used_ids: arr2.map((item) => {
+        let tmp;
+        [tmp, ] = item;
+        return tmp;
+      }),
+      duration_input_device_used_ms: arr3.map((item) => {
+        let tmp;
+        [, tmp] = item;
+        return tmp;
+      }),
+      duration_output_device_used_ids: arr4.map((item) => {
+        let tmp;
+        [tmp, ] = item;
+        return tmp;
+      }),
+      duration_output_device_used_ms: arr5.map((item) => {
+        let tmp;
+        [, tmp] = item;
+        return tmp;
+      })
+    };
+    return obj2;
+  }
 }
 const prototype = DeviceFrecencyStore.prototype;
-prototype["initialize"] = function initialize(arg0) {
-  closure_0 = arg0;
-  this.waitFor(MediaEngineStore, UserStore);
-  const items = [, , ];
-  ({ AUDIO_INPUT: arr[0], AUDIO_OUTPUT: arr[1], VIDEO_INPUT: arr[2] } = DeviceTypes);
-  const item = items.forEach((item) => {
-    let tmp2;
-    if (closure_0 != null) {
-      tmp2 = tmp[item];
-    }
-    if (null != tmp2) {
-      obj3[item].overwriteHistory(tmp[item]);
-    }
-    obj2[item].reset();
-  });
-};
-prototype["reset"] = function reset() {
-  const items = [, , ];
-  ({ AUDIO_INPUT: arr[0], AUDIO_OUTPUT: arr[1], VIDEO_INPUT: arr[2] } = DeviceTypes);
-  const item = items.forEach((item) => {
-    obj2[item].reset();
-    dependencyMap[item] = {};
-  });
-};
-prototype["track"] = function track(arg0, arg1, usesSinceLastTrack) {
-  if (null == dependencyMap[arg0][arg1]) {
-    tmp[arg0][arg1] = 0;
-  }
-  dependencyMap[arg0][arg1] = dependencyMap[arg0][arg1] + usesSinceLastTrack;
-  obj3[arg0].track(arg1, { usesSinceLastTrack });
-};
-prototype["isSampling"] = function isSampling(AUDIO_OUTPUT) {
-  return obj2[AUDIO_OUTPUT].isRunning();
-};
-prototype["startSampling"] = function startSampling(AUDIO_OUTPUT) {
-  obj2[AUDIO_OUTPUT].start();
-};
-prototype["stopSampling"] = function stopSampling(AUDIO_OUTPUT, oldId) {
-  obj2[AUDIO_OUTPUT].stop();
-  const asMillisecondsResult = obj2[AUDIO_OUTPUT].elapsed().asMilliseconds();
-  if (asMillisecondsResult > 0) {
-    let currentDeviceId = oldId;
-    if (oldId == null) {
-      obj2 = {};
-      obj3 = {
-        getCurrentDeviceId(getInputDeviceId) {
-              return getInputDeviceId.getInputDeviceId();
-            }
-      };
-      obj2[DeviceTypes.AUDIO_INPUT] = obj3;
-      const obj4 = {
-        getCurrentDeviceId(getOutputDeviceId) {
-              return getOutputDeviceId.getOutputDeviceId();
-            }
-      };
-      obj2[DeviceTypes.AUDIO_OUTPUT] = obj4;
-      const obj5 = {
-        getCurrentDeviceId(getVideoDeviceId) {
-              return getVideoDeviceId.getVideoDeviceId();
-            }
-      };
-      obj2[DeviceTypes.VIDEO_INPUT] = obj5;
-      currentDeviceId = obj2[AUDIO_OUTPUT].getCurrentDeviceId(MediaEngineStore);
-    }
-    const self = this;
-    this.track(AUDIO_OUTPUT, currentDeviceId, asMillisecondsResult);
-  }
-  obj2[AUDIO_OUTPUT].reset();
-};
-prototype["getState"] = function getState() {
-  return { [closure_1_4.AUDIO_INPUT]: obj3[DeviceTypes.AUDIO_INPUT].usageHistory, [closure_1_4.AUDIO_OUTPUT]: obj3[DeviceTypes.AUDIO_OUTPUT].usageHistory, [closure_1_4.VIDEO_INPUT]: obj3[DeviceTypes.VIDEO_INPUT].usageHistory };
-};
-prototype["getDeviceIdsSortedByFrecency"] = function getDeviceIdsSortedByFrecency(arg0) {
-  return obj3[arg0].frequently;
-};
-prototype["getUsageStats"] = function getUsageStats() {
-  const self = this;
-  const obj = { [closure_4.AUDIO_INPUT]: [], [closure_4.AUDIO_OUTPUT]: [], [closure_4.VIDEO_INPUT]: [] };
-  const items = [, ];
-  ({ AUDIO_INPUT: arr[0], AUDIO_OUTPUT: arr[1] } = DeviceTypes);
-  const item = items.forEach((item) => {
-    if (self.isSampling(item)) {
-      obj.stopSampling(item);
-      obj.startSampling(item);
-    }
-    self[item] = Object.entries(closure_9[item]);
-  });
-  obj2 = {
-    duration_input_device_used_ids: obj[DeviceTypes.AUDIO_INPUT].map((item) => {
-      [tmp, ] = item;
-      return tmp;
-    }),
-    duration_input_device_used_ms: obj[DeviceTypes.AUDIO_INPUT].map((item) => {
-      [, tmp] = item;
-      return tmp;
-    }),
-    duration_output_device_used_ids: obj[DeviceTypes.AUDIO_OUTPUT].map((item) => {
-      [tmp, ] = item;
-      return tmp;
-    }),
-    duration_output_device_used_ms: obj[DeviceTypes.AUDIO_OUTPUT].map((item) => {
-      [, tmp] = item;
-      return tmp;
-    })
-  };
-  return obj2;
-};
 DeviceFrecencyStore.displayName = "DeviceFrecencyStore";
 DeviceFrecencyStore.persistKey = "DeviceFrecencyStore";
-let items = [(arg0) => _modDef12.mapKeys(arg0, (arg0, arg1) => closure_1_7[arg1])];
+let items = [
+  (arg0) => {
+    const obj = _modDef12;
+    return obj.mapKeys(arg0, (arg0, arg1) => closure_1_7[arg1]);
+  }
+];
 DeviceFrecencyStore.migrations = items;
-const deviceFrecencyStore = new DeviceFrecencyStore(DispatcherDefault, {
+let obj4 = {
   AUDIO_SET_INPUT_DEVICE(oldId) {
     const AUDIO_INPUT = DeviceTypes.AUDIO_INPUT;
+    oldId = oldId.oldId;
     if (deviceFrecencyStore.isSampling(AUDIO_INPUT)) {
-      obj.stopSampling(AUDIO_INPUT, oldId.oldId);
-      obj.startSampling(AUDIO_INPUT);
+      deviceFrecencyStore.stopSampling(AUDIO_INPUT, oldId);
+      deviceFrecencyStore.startSampling(AUDIO_INPUT);
     }
     return false;
   },
   AUDIO_SET_OUTPUT_DEVICE(oldId) {
     const AUDIO_OUTPUT = DeviceTypes.AUDIO_OUTPUT;
+    oldId = oldId.oldId;
     if (deviceFrecencyStore.isSampling(AUDIO_OUTPUT)) {
-      obj.stopSampling(AUDIO_OUTPUT, oldId.oldId);
-      obj.startSampling(AUDIO_OUTPUT);
+      deviceFrecencyStore.stopSampling(AUDIO_OUTPUT, oldId);
+      deviceFrecencyStore.startSampling(AUDIO_OUTPUT);
     }
     return false;
   },
   MEDIA_ENGINE_SET_VIDEO_DEVICE(oldId) {
     const VIDEO_INPUT = DeviceTypes.VIDEO_INPUT;
+    oldId = oldId.oldId;
     if (deviceFrecencyStore.isSampling(VIDEO_INPUT)) {
-      obj.stopSampling(VIDEO_INPUT, oldId.oldId);
-      obj.startSampling(VIDEO_INPUT);
+      deviceFrecencyStore.stopSampling(VIDEO_INPUT, oldId);
+      deviceFrecencyStore.startSampling(VIDEO_INPUT);
     }
     return false;
   },
   SPEAKING: function handleSpeaking(speakingFlags) {
     speakingFlags = speakingFlags.speakingFlags;
-    if (speakingFlags.context !== constants.DEFAULT) {
+    if (speakingFlags.context !== hasOwnProperty.DEFAULT) {
       return false;
     } else {
       const currentUser = UserStore.getCurrentUser();
@@ -195,21 +226,24 @@ const deviceFrecencyStore = new DeviceFrecencyStore(DispatcherDefault, {
       if (null == id) {
         return false;
       } else {
+        let AUDIO_OUTPUT;
         if (tmp === id) {
-          let AUDIO_OUTPUT = DeviceTypes.AUDIO_INPUT;
+          AUDIO_OUTPUT = DeviceTypes.AUDIO_INPUT;
         } else {
           AUDIO_OUTPUT = DeviceTypes.AUDIO_OUTPUT;
         }
-        if (speakingFlags === constants2.NONE) {
+        const tmp5 = metroRequire;
+        if (speakingFlags === metroRequire.NONE) {
+          const obj = deviceFrecencyStore;
           if (deviceFrecencyStore.isSampling(AUDIO_OUTPUT)) {
-            deviceFrecencyStore.stopSampling(AUDIO_OUTPUT);
+            obj.stopSampling(AUDIO_OUTPUT);
           }
         }
-        if (speakingFlags !== constants2.NONE) {
+        if (speakingFlags !== tmp5.NONE) {
+          obj2 = deviceFrecencyStore;
           if (!deviceFrecencyStore.isSampling(AUDIO_OUTPUT)) {
             obj2.startSampling(AUDIO_OUTPUT);
           }
-          obj2 = deviceFrecencyStore;
         }
         return false;
       }
@@ -218,8 +252,8 @@ const deviceFrecencyStore = new DeviceFrecencyStore(DispatcherDefault, {
   RTC_CONNECTION_CLIENT_CONNECT: function handleConnect() {
     deviceFrecencyStore.reset();
   }
-});
-const size = fn(2);
+};
+const deviceFrecencyStore = new DeviceFrecencyStore(DispatcherDefault, obj4);
 const result = size.fileFinishedImporting("modules/media_engine/DeviceFrecencyStore.tsx");
 
 export default deviceFrecencyStore;

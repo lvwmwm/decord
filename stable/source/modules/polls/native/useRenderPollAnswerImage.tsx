@@ -1,91 +1,289 @@
-// Module ID: 12508
-// Function ID: 12509
+// Module ID: 11600
+// Function ID: 11601
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 5137, 5136, 1375, 21, 504, 12488, 5836, 7407, 4444, 1397, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 5201, 5200, 1381, 21, 558, 576, 504, 11580, 5896, 4489, 1403, 6552, 2]
 
-// Module 12508 (useRenderPollAnswerImage)
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import EmojiTypes from "EmojiTypes" /* 4444 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import EmojiDefault from "Emoji" /* 7407 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5136 */;
+// Module 11600 (useRenderPollAnswerImage)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import EmojiConstants from "EmojiConstants" /* 1381 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import EmojiTypes from "EmojiTypes" /* 4489 */;
+import DraftStore from "DraftStore" /* 5201 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import EmojiDefault from "Emoji" /* 6552 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5200 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_7, dependencyMap, importDefault;
 
-require = fn;
-const ActivityIndicator = fn(17).ActivityIndicator;
-const DraftType = fn(5137).DraftType;
-const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
-const jsx = fn(21).jsx;
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/polls/native/useRenderPollAnswerImage.tsx");
-
-export default function useRenderPollAnswerImage(arg0, arg1, mediaAttachmentState, arg3, arg4) {
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const ActivityIndicator = react_native.ActivityIndicator;
+const DraftType = DraftStore.DraftType;
+const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, mediaAttachmentState, arg3, width) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  let tmp12;
+  let tmp13;
   _require = arg0;
-  closure_1 = arg1;
+  importDefault = arg1;
+  const obj = require("react");
+  const cResult = obj.c(26);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UploadAttachmentStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp6;
+    let tmp19;
+    if (cResult[2] === arg1) {
+      tmp6 = cResult[3];
+    }
+    const tmpResult = require("get initialized");
+    const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+    let status;
+    [tmp12, tmp13] = react.useState();
+    _slicedToArray(react.useState(), 2);
+    if (mediaAttachmentState != null) {
+      mediaAttachmentState = mediaAttachmentState.mediaAttachmentState;
+      if (mediaAttachmentState != null) {
+        status = mediaAttachmentState.status;
+      }
+    }
+    if (status === require("PollTypes").PollMediaUploadAttachmentStatus.PREPARING) {
+      let tmp35;
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp38 = <ActivityIndicator />;
+        cResult[4] = tmp38;
+        tmp35 = tmp38;
+      } else {
+        tmp35 = cResult[4];
+      }
+      tmp19 = tmp35;
+    } else if (null == stateFromStores) {
+      let emoji1;
+      if (mediaAttachmentState != null) {
+        emoji1 = mediaAttachmentState.emoji;
+      }
+      if (null != emoji1) {
+        let tmp26;
+        let tmp25;
+        const emoji = mediaAttachmentState.emoji;
+        if (cResult[12] !== width) {
+          size = { width, height: width };
+          const obj2 = { fontSize: width };
+          cResult[12] = width;
+          cResult[13] = size;
+          cResult[14] = obj2;
+          tmp26 = obj2;
+          tmp25 = size;
+        } else {
+          tmp25 = cResult[13];
+          tmp26 = cResult[14];
+        }
+        let str = emoji.type === tmp(4489).EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
+        if (str == null) {
+          str = "";
+        }
+        if (cResult[15] === emoji.animated) {
+          let tmp27;
+          if (cResult[16] === emoji.id) {
+            tmp27 = cResult[17];
+          }
+          if (cResult[18] === tmp25) {
+            if (cResult[19] === tmp26) {
+              if (cResult[20] === str) {
+                let tmp31;
+                if (cResult[21] === tmp27) {
+                  tmp31 = cResult[22];
+                }
+                tmp19 = tmp31;
+              }
+            }
+          }
+          const tmp34 = jsx(EmojiDefault, { fastImageStyle: tmp25, textEmojiStyle: tmp26, name: str, src: tmp27 });
+          cResult[18] = tmp25;
+          cResult[19] = tmp26;
+          cResult[20] = str;
+          class E {
+            constructor() {
+              return closure_7.getUpload(closure_0, closure_1, DraftType.Poll);
+            }
+          }
+          cResult[21] = tmp27;
+          cResult[22] = tmp34;
+          tmp31 = tmp34;
+        }
+        let emojiURL;
+        if (null != emoji.id) {
+          const obj4 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
+          ({ id: obj9.id, animated: obj9.animated } = emoji);
+          const obj8 = AvatarUtilsDefault;
+          emojiURL = obj8.getEmojiURL(obj4);
+        }
+        cResult[15] = emoji.animated;
+        cResult[16] = emoji.id;
+        cResult[17] = emojiURL;
+        tmp27 = emojiURL;
+      }
+    } else {
+      let tmp17;
+      let tmp18;
+      let tmp16 = arg3;
+      const item = stateFromStores.item;
+      if (arg3 == null) {
+        tmp16 = tmp12;
+      }
+      if (cResult[5] !== tmp16) {
+        const size1 = { width: tmp16, height: tmp16 };
+        cResult[5] = tmp16;
+        cResult[6] = size1;
+        tmp17 = size1;
+      } else {
+        tmp17 = cResult[6];
+      }
+      if (cResult[7] !== item.uri) {
+        const obj5 = { uri: item.uri };
+        cResult[7] = item.uri;
+        cResult[8] = obj5;
+        tmp18 = obj5;
+      } else {
+        tmp18 = cResult[8];
+      }
+      if (cResult[9] === tmp17) {
+        if (cResult[10] === tmp18) {
+          tmp19 = cResult[11];
+        }
+      }
+      const tmp22 = jsx(FastImageDefault, { style: tmp17, source: tmp18 });
+      cResult[9] = tmp17;
+      cResult[10] = tmp18;
+      class E {
+        constructor() {
+          return closure_7.getUpload(closure_0, closure_1, DraftType.Poll);
+        }
+      }
+      cResult[11] = tmp22;
+      tmp19 = tmp22;
+    }
+    if (cResult[23] === tmp19) {
+      let tmp39;
+      if (cResult[24] === stateFromStores) {
+        tmp39 = cResult[25];
+      }
+      return tmp39;
+    }
+    const obj7 = { renderImage: null, upload: stateFromStores, setUploadSize: tmp13 };
+    class E {
+      constructor() {
+        return closure_7.getUpload(closure_0, closure_1, DraftType.Poll);
+      }
+    }
+    cResult[23] = tmp19;
+    cResult[24] = stateFromStores;
+    cResult[25] = obj7;
+    tmp39 = obj7;
+  }
+  class E {
+    constructor() {
+      return closure_7.getUpload(closure_0, closure_1, DraftType.Poll);
+    }
+  }
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = E;
+  tmp6 = E;
+}) : ((arg0, arg1, mediaAttachmentState, arg3, arg4) => {
+  let closure_0;
+  let closure_3;
+  let closure_4;
+  let first;
+  let items1;
+  let tmp6;
+  _require = arg0;
+  let closure_1 = arg1;
   dependencyMap = mediaAttachmentState;
   _slicedToArray = arg3;
-  noop = arg4;
+  react = arg4;
+  let tmp = _require;
+  let obj = require("get initialized");
   const items = [closure_7];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => UploadAttachmentStore.getUpload(closure_0, closure_1, DraftType.Poll));
-  const tmp4 = _slicedToArray(noop.useState(), 2);
-  const first = tmp4[0];
+  const stateFromStores = obj.useStateFromStores(items, () => UploadAttachmentStore.getUpload(closure_0, closure_1, DraftType.Poll));
+  [first, tmp6] = react.useState();
   let status;
+  const obj2 = react;
   if (mediaAttachmentState != null) {
     mediaAttachmentState = mediaAttachmentState.mediaAttachmentState;
     if (mediaAttachmentState != null) {
       status = mediaAttachmentState.status;
     }
   }
-  const tmp7 = status === require("PollTypes").PollMediaUploadAttachmentStatus.PREPARING;
-  closure_7 = tmp7;
-  let obj3 = { renderImage: null, upload: stateFromStores, setUploadSize: tmp4[1] };
-  const items1 = [mediaAttachmentState, arg4, arg3, stateFromStores, tmp7, first];
-  obj3.renderImage = noop.useMemo(() => {
-    if (closure_7) {
-      return <ActivityIndicator />;
-    } else if (null != stateFromStores) {
-      let tmp14 = closure_3;
-      if (closure_3 == null) {
-        tmp14 = first;
-      }
-      const obj2 = { style: null, source: null };
-      const size = { width: tmp14, height: tmp14 };
-      obj2.style = size;
-      const obj3 = { uri: stateFromStores.item.uri };
-      obj2.source = obj3;
-      return jsx(FastImageDefault, { style: null, source: null });
-    } else {
-      let emoji1;
-      if (closure_2 != null) {
-        emoji1 = tmp20.emoji;
-      }
-      if (null != emoji1) {
-        const emoji = tmp20.emoji;
-        const obj = { fastImageStyle: null, textEmojiStyle: null, name: null, src: null };
-        const size1 = { width: fontSize, height: fontSize };
-        obj.fastImageStyle = size1;
-        const obj6 = { fontSize };
-        obj.textEmojiStyle = obj6;
-        let str = emoji.type === EmojiTypes.EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
-        if (str == null) {
-          str = "";
+  const tmp8 = status === tmp(11580).PollMediaUploadAttachmentStatus.PREPARING;
+  closure_7 = tmp8;
+  let obj3 = {
+    renderImage: obj2.useMemo(() => {
+      let emojiURL;
+      let obj6;
+      let size1;
+      let str;
+      const tmp = closure_7;
+      if (tmp) {
+        return <ActivityIndicator />;
+      } else if (null != stateFromStores) {
+        let tmp15 = closure_3;
+        const item = stateFromStores.item;
+        if (closure_3 == null) {
+          tmp15 = first;
         }
-        obj.name = str;
-        let emojiURL;
-        if (null != emoji.id) {
-          const obj7 = { id: null, animated: null, size: null };
-          ({ id: obj5.id, animated: obj5.animated } = emoji);
-          obj7.size = EMOJI_URL_BASE_SIZE;
-          emojiURL = AvatarUtilsDefault.getEmojiURL(obj7);
+        size = { width: tmp15, height: tmp15 };
+        const obj3 = { uri: item.uri };
+        return jsx(FastImageDefault, { style: size, source: obj3 });
+      } else {
+        let emoji1;
+        if (mediaAttachmentState != null) {
+          emoji1 = tmp21.emoji;
         }
-        obj.src = emojiURL;
-        return jsx(EmojiDefault, { fastImageStyle: null, textEmojiStyle: null, name: null, src: null });
+        if (null != emoji1) {
+          const emoji = tmp21.emoji;
+          const obj = { fastImageStyle: size1, textEmojiStyle: obj6, name: str, src: emojiURL };
+          size1 = { width: fontSize, height: fontSize };
+          obj6 = { fontSize };
+          const tmp7 = EmojiDefault;
+          str = emoji.type === EmojiTypes.EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
+          const tmp4 = jsx;
+          if (str == null) {
+            str = "";
+          }
+          emojiURL = undefined;
+          if (null != emoji.id) {
+            const obj7 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
+            ({ id: obj5.id, animated: obj5.animated } = emoji);
+            const obj4 = AvatarUtilsDefault;
+            emojiURL = obj4.getEmojiURL(obj7);
+          }
+          return tmp4(tmp7, obj);
+        }
       }
-    }
-  }, items1);
+    }, items1),
+    upload: stateFromStores,
+    setUploadSize: tmp6
+  };
+  items1 = [mediaAttachmentState, arg4, arg3, stateFromStores, tmp8, first];
   return obj3;
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/polls/native/useRenderPollAnswerImage.tsx");
+
+export default tmp2;

@@ -1,22 +1,50 @@
-// Module ID: 2033
-// Function ID: 2034
+// Module ID: 2041
+// Function ID: 2042
 // Name: DismissibleContentShownStateStore
-// Dependencies: [2034, 2035, 1074, 1243, 2032, 2036, 1248, 504, 2037, 573, 2]
-// Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
+// Dependencies: [5, 2042, 2043, 2044, 1086, 569, 1255, 2040, 2045, 1283, 2046, 1260, 558, 576, 504, 2047, 585, 2]
+// Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown
 
-// Module 2033 (DismissibleContentShownStateStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2032 */;
-import isActionRequiredDefault from "isActionRequired" /* 2037 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2034 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
+// Module 2041 (DismissibleContentShownStateStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import BackoffDefault from "Backoff" /* 569 */;
+import react from "react" /* 576 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import react_native from "react-native" /* 1260 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2040 */;
+import DismissibleContentServerArbitrationConstants from "DismissibleContentServerArbitrationConstants" /* 2044 */;
+import Timers from "Timers" /* 2046 */;
+import isActionRequiredDefault from "isActionRequired" /* 2047 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2042 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2043 */;
+import Constants from "Constants" /* 1086 */;
+import module_1255 from "module_1255" /* 1255 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let body, closure_3, closure_4, context, dependencyMap;
 
-require = fn;
+let metroImportDefault;
+let metroRequire;
+const f84616 = (item) => {
+  content = undefined;
+  if (content != null) {
+    content = content.content;
+  }
+  return item !== content;
+};
+const f84619 = () => {
+  state.setState(() => {
+    obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: true };
+    new Map();
+    new Set();
+    new Set();
+    return obj;
+  });
+};
 function withContent(currentlyShown, content) {
+  let closure_0 = content;
   let tmp = arg2;
   if (arg2 === undefined) {
     tmp = null;
@@ -46,6 +74,8 @@ function withContent(currentlyShown, content) {
       if (content !== content.content) {
         currentlyShown.prevFatigableCandidate = content;
         const _Date = Date;
+        const self = this;
+        const self2 = this;
         const date = new Date();
         currentlyShown.lastWinnerTime = date.getTime();
       }
@@ -57,14 +87,150 @@ function withContent(currentlyShown, content) {
     return currentlyShown;
   }
 }
+function addWeightsToClientCandidates(arr) {
+  return arr.map((content) => ({ content, weight: 1 }));
+}
+let obj = function _arbitrateCandidates() {
+  let pending;
+  obj = _asyncToGenerator(async (context, arg1) => {
+    context = arg1;
+    let c3 = 0;
+    let c5 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      let items;
+      let obj8;
+      function isServerArbitrationEnabled() {
+        const DismissibleContentServerArbitrationExperiment = context(candidates[8]).DismissibleContentServerArbitrationExperiment;
+        return DismissibleContentServerArbitrationExperiment.getConfig({ location: "DismissibleContentShownStateStore" }).enabled;
+      }
+      function validateArbitrationResponseCandidates(found, candidates) {
+        const mapped = candidates.map((content) => content.content);
+        found = mapped.filter((item, index) => mapped.indexOf(item) !== index);
+        if (found.length > 0) {
+          const _Error2 = Error;
+          const _HermesInternal2 = HermesInternal;
+          const self3 = this;
+          const self4 = this;
+          const error = new Error("Duplicate content in dismissible content arbitration response: " + found.join(", "));
+          throw error;
+        } else {
+          const found1 = mapped.filter((item) => !found.includes(item));
+          if (found1.length > 0) {
+            const _Error = Error;
+            const _HermesInternal = HermesInternal;
+            const self = this;
+            const self2 = this;
+            const error1 = new Error("Unexpected content in dismissible content arbitration response: " + found1.join(", "));
+            throw error1;
+          } else {
+            return candidates;
+          }
+        }
+      }
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let found;
+          c5 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              found = undefined;
+              body = undefined;
+              candidates = undefined;
+              if (isServerArbitrationEnabled()) {
+                found = arr3.filter((item) => set.has(item));
+                const tmp10 = addWeightsToClientCandidates(context.filter((item) => !set.has(item)));
+                candidates = tmp10;
+                if (0 === found.length) {
+                  c5 = 3;
+                  return { value: { context, candidates: tmp10, outcome: "client-only" }, done: true };
+                } else if (pending.pending) {
+                  c5 = 3;
+                  return { value: { context, candidates: tmp10, outcome: "server-backoff" }, done: true };
+                } else {
+                  c4 = 1;
+                  const HTTP = require("HTTPUtils").HTTP;
+                  const request = { url: constants.DISMISSIBLE_CONTENT_ARBITRATE, body: obj8, oldFormErrors: true, rejectWithError: true };
+                  const post = HTTP.post;
+                  c3 = 2;
+                  c5 = 1;
+                  obj8 = { candidates: found.map((content) => ({ content })) };
+                  const obj9 = { value: post(request), done: false };
+                  return obj9;
+                }
+              } else {
+                c5 = 3;
+                const obj11 = { value: { context, candidates: addWeightsToClientCandidates(context), outcome: "client-only" }, done: true };
+                return obj11;
+              }
+            }
+          } else if (1 === tmp4) {
+            c4 = 0;
+            c5 = 3;
+            return { value: { context, candidates, outcome: "server-failure" }, done: true };
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            body = value;
+            candidates = body.body.candidates;
+            validateArbitrationResponseCandidates(found, candidates);
+            const obj15 = { context, candidates: items, outcome: "server-success" };
+            items = [];
+            HermesBuiltin.arraySpread(items, candidates, HermesBuiltin.arraySpread(items, candidates, 0));
+            c4 = 0;
+            c5 = 3;
+            return { value: obj15, done: true };
+          }
+        } catch (tmp14) {
+          if (0 === c4) {
+            c5 = 3;
+            throw tmp14;
+          } else {
+            c3 = 1;
+          }
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
 function withUpdateWinner(candidates, arg1) {
+  let items;
+  let items2;
+  let items3;
+  let obj8;
   if (0 === candidates.candidates.size) {
-    const obj2 = { state: candidates, arbitration: { type: "settled" } };
-    return obj2;
+    return { state: candidates, arbitration: { type: "settled" } };
   } else {
+    let tmp14;
+    let tmp22;
     const _Date2 = Date;
-    const date = new Date();
+    const self4 = this;
+    const self3 = this;
     let hasItem = null != candidates.prevFatigableCandidate;
+    const date = new Date();
     const diff = date.getTime() - candidates.lastWinnerTime;
     if (hasItem) {
       candidates = candidates.candidates;
@@ -74,37 +240,32 @@ function withUpdateWinner(candidates, arg1) {
       hasItem = null == candidates.shownFatigableCandidate;
     }
     if (hasItem) {
-      if (!tmp3) {
-        const obj = { state: null, arbitration: null };
+      if (diff <= 300000) {
+        obj = { state: null, arbitration: null };
         if (batchInvocationManager.isInvoking()) {
+          let obj4;
           obj.state = candidates;
           if (null != arg1) {
-            const obj3 = { type: "request", candidates: null };
-            const items = [arg1];
-            obj3.candidates = items;
-            let obj4 = obj3;
+            const obj3 = { type: "request", candidates: items };
+            items = [arg1];
+            obj4 = obj3;
           } else {
             obj4 = { type: "unchanged" };
           }
           obj.arbitration = obj4;
+          tmp14 = obj;
         } else {
-          value = undefined;
+          let value;
           if (null != candidates.prevFatigableCandidate) {
             const candidates2 = candidates.candidates;
             value = candidates2.get(candidates.prevFatigableCandidate.content);
           }
-          const require = value;
           const candidates3 = candidates.candidates;
           const items1 = [];
-          HermesBuiltin.arraySpread(candidates3.keys(), 0);
+          HermesBuiltin.arraySpread(items1, candidates3.keys(), 0);
           const shownFatigableCandidate = candidates.shownFatigableCandidate;
-          const found = items1.filter((item) => {
-            let content;
-            if (obj != null) {
-              content = obj.content;
-            }
-            return item !== content;
-          });
+          const found = items1.filter(f84616);
+          const tmp9 = withContent;
           if (null != shownFatigableCandidate) {
             if (null != shownFatigableCandidate.content) {
               const currentlyShown = candidates.currentlyShown;
@@ -123,357 +284,573 @@ function withUpdateWinner(candidates, arg1) {
               candidates.shownFatigableCandidate = null;
             }
           }
-          withContent(candidates, value, found);
+          tmp9(candidates, value, found);
           obj.state = candidates;
           obj.arbitration = { type: "settled" };
-          return obj;
+          tmp14 = obj;
         }
       }
+      return tmp14;
     }
     if (null != candidates.shownFatigableCandidate) {
-      if (!tmp3) {
-        const obj5 = { state: candidates, arbitration: { type: "settled" } };
+      let obj5;
+      if (diff <= 300000) {
+        obj5 = { state: candidates, arbitration: { type: "settled" } };
       }
+      tmp14 = obj5;
     }
-    if (!batchInvocationManager.isPending()) {
-      const _Date = Date;
-      let tmp22 = null == candidates.shownFatigableCandidate;
-      if (tmp22) {
-        tmp22 = tmp21 - candidates.lastWinnerTime < 3600000;
-      }
-      const obj6 = { state: candidates, arbitration: null };
-      if (tmp22) {
-        obj6.arbitration = { type: "unchanged" };
+    if (batchInvocationManager.isPending()) {
+      const obj6 = { state: candidates, arbitration: obj8 };
+      if (null != arg1) {
+        const obj7 = { type: "request", candidates: items2 };
+        items2 = [arg1];
+        obj8 = obj7;
       } else {
-        const obj7 = { type: "request", candidates: null };
-        const candidates4 = candidates.candidates;
-        const items2 = [];
-        HermesBuiltin.arraySpread(candidates4.keys(), 0);
-        obj7.candidates = items2;
-        obj6.arbitration = obj7;
+        obj8 = { type: "unchanged" };
       }
-      const date1 = new Date();
-    }
-    const obj8 = { state: candidates, arbitration: null };
-    if (null != arg1) {
-      const obj9 = { type: "request", candidates: null };
-      const items3 = [arg1];
-      obj9.candidates = items3;
-      let obj10 = obj9;
+      tmp22 = obj6;
     } else {
-      obj10 = { type: "unchanged" };
+      const _Date = Date;
+      const self2 = this;
+      const self = this;
+      let tmp19 = null == candidates.shownFatigableCandidate;
+      new Date();
+      if (tmp19) {
+        tmp19 = tmp18 - candidates.lastWinnerTime < 3600000;
+      }
+      const obj9 = { state: candidates, arbitration: null };
+      if (tmp19) {
+        obj9.arbitration = { type: "unchanged" };
+        tmp22 = obj9;
+      } else {
+        const candidates4 = candidates.candidates;
+        const obj10 = { type: "request", candidates: items3 };
+        items3 = [];
+        HermesBuiltin.arraySpread(items3, candidates4.keys(), 0);
+        obj9.arbitration = obj10;
+        tmp22 = obj9;
+      }
     }
-    obj8.arbitration = obj10;
+    obj5 = tmp22;
   }
 }
-const NOOP = fn(1074).NOOP;
-const identity = fn(1243);
-let closure_6 = identity.createWithEqualityFn(function initState() {
-  const obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: null, currentlyShownGroup: null, lastWinnerTime: 0, postConnectionOpen: false };
-  const map = new Map();
-  obj.currentlyShown = new Set();
-  const set = new Set();
-  obj.currentlyShownGroup = new Set();
+function applyWinnerUpdateResult(c2, c3) {
+  let flag = c3;
+  if (c3 === undefined) {
+    flag = false;
+  }
+  if ("settled" === c2.arbitration.type) {
+    closure_10 = {};
+    c11 = null;
+    closure_9.succeed();
+    batchInvocationManager.reset();
+  } else if (flag) {
+    closure_9.succeed();
+  }
+  if ("request" === c2.arbitration.type) {
+    const isPendingResult = batchInvocationManager.isPending();
+    const tmp8 = !isPendingResult && !obj2.isInvoking() && closure_9.fails >= 3;
+    if (tmp8) {
+      closure_9.succeed();
+    }
+    if (closure_10 === closure_10) {
+      if (!batchInvocationManager.isPending()) {
+        c11 = { epoch: tmp13, source: "candidate" };
+        obj = { epoch: tmp13, source: "candidate" };
+      }
+      const queueResult = batchInvocationManager.queue(tmp12);
+      queueResult.catch(metroImportDefault);
+    }
+  }
+}
+function invalidateArbitration() {
+  closure_10 = {};
+  c11 = null;
+  closure_9.succeed();
+  batchInvocationManager.reset();
+}
+function isInCooldown() {
+  const state = closure_12.getState();
+  new Date();
+  return null == state.shownFatigableCandidate && tmp3 - state.lastWinnerTime < 3600000;
+}
+const SERVER_ARBITRATION_CANDIDATES = DismissibleContentServerArbitrationConstants.SERVER_ARBITRATION_CANDIDATES;
+({ Endpoints: metroRequire, NOOP: metroImportDefault } = Constants);
+const set = new Set(SERVER_ARBITRATION_CANDIDATES);
+let tmp5 = new BackoffDefault(1000, 60000);
+let closure_9 = tmp5;
+let closure_10 = {};
+let c11 = null;
+let closure_12 = module_1255.createWithEqualityFn(function initState() {
+  obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: false };
+  new Map();
+  new Set();
+  new Set();
   return obj;
 });
-let closure_7 = false;
-const batchInvocationManager = new fn(2036).BatchInvocationManager((arg0) => {
-  const resolved = Promise.resolve(arg0);
-  return resolved.then((result) => {
-    closure_0 = result;
-    c1 = false;
-    closure_0(closure_2[6]).batchUpdates(() => {
-      state.setState((candidates) => {
-        let obj = {};
-        const merged = Object.assign(candidates);
-        obj.candidates = new Map(candidates.candidates);
-        const map = new Map(candidates.candidates);
-        obj.currentlyShown = new Set(candidates.currentlyShown);
-        const set = new Set(candidates.currentlyShown);
-        obj.currentlyShownGroup = new Set(candidates.currentlyShownGroup);
-        let arr = closure_1_0;
-        if (closure_1_0 === undefined) {
-          candidates = obj.candidates;
-          const items = [];
-          HermesBuiltin.arraySpread(candidates.keys(), 0);
-          arr = items;
-        }
-        const found = arr.filter((item) => {
-          const candidates = obj.candidates;
-          return candidates.has(item);
-        });
-        let hasItem = null !== obj.prevFatigableCandidate;
-        if (hasItem) {
-          const candidates2 = obj.candidates;
-          hasItem = candidates2.has(obj.prevFatigableCandidate.content);
-        }
-        if (hasItem) {
-          hasItem = found.length > 1;
-        }
-        let found1 = found;
-        if (hasItem) {
-          found1 = found.filter((item) => {
-            const prevFatigableCandidate = obj.prevFatigableCandidate;
-            let content;
-            if (prevFatigableCandidate != null) {
-              content = prevFatigableCandidate.content;
-            }
-            return item !== content;
-          });
-        }
-        const candidates3 = obj.candidates;
-        value = candidates3.get(found1[Math.floor(Math, Math.random(Math) * found1.length)]);
-        closure_1 = null != value;
-        obj = value;
-        const candidates4 = obj.candidates;
-        const items1 = [...candidates4.keys()];
-        const shownFatigableCandidate = obj.shownFatigableCandidate;
-        const found2 = items1.filter((item) => {
-          let content;
-          if (obj != null) {
-            content = obj.content;
-          }
-          return item !== content;
-        });
-        if (null != shownFatigableCandidate) {
-          if (null != shownFatigableCandidate.content) {
-            const currentlyShown = obj.currentlyShown;
-            currentlyShown.delete(shownFatigableCandidate.content);
-          }
-          if (null != shownFatigableCandidate.groupName) {
-            const currentlyShownGroup = obj.currentlyShownGroup;
-            currentlyShownGroup.delete(shownFatigableCandidate.groupName);
-          }
-          const shownFatigableCandidate2 = obj.shownFatigableCandidate;
-          let content;
-          if (shownFatigableCandidate2 != null) {
-            content = shownFatigableCandidate2.content;
-          }
-          if (content === shownFatigableCandidate.content) {
-            obj.shownFatigableCandidate = null;
-          }
-        }
-        closure_2_8(obj, value, found2);
-        return obj;
-      });
-    });
-    if (c1) {
-      navigation.reset();
+let closure_13 = false;
+const BatchInvocationManager = Timers.BatchInvocationManager;
+let _require = _asyncToGenerator(async (arg0, value) => {
+  let tmp;
+  let tmp4;
+  function arbitrateCandidates() {
+    return closure_1_16(...arguments);
+  }
+  function applyArbitrateCandidatesResult(outcome) {
+    const tmp = "client-only" !== outcome.outcome && "server-success" !== outcome.outcome;
+    if (!tmp) {
+      closure_9.succeed();
     }
-  });
+    if ("server-failure" === outcome.outcome) {
+      state = state.getState();
+      const _Date = Date;
+      const self = this;
+      const self2 = this;
+      let tmp4 = null == state.shownFatigableCandidate;
+      new Date();
+      if (tmp4) {
+        tmp4 = tmp13 - state.lastWinnerTime < 3600000;
+      }
+      obj = closure_9;
+      if (tmp4) {
+        obj.succeed();
+      } else if (obj.fails >= 3) {
+        obj.cancel();
+      } else {
+        obj.fail(() => {
+          const candidates = state.getState().candidates;
+          const items = [...candidates.keys()];
+          let epoch = outcome.context.epoch;
+          if (epoch === undefined) {
+            epoch = closure_2_10;
+          }
+          if (epoch === closure_2_10) {
+            obj = pending;
+            const queueResult = obj.queue(items);
+            queueResult.catch(closure_2_7);
+          }
+        });
+      }
+    }
+  }
+  closure_0 = arg0;
+  if (c4 === 2) {
+    c4 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp3 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      let closure_2;
+      let closure_1;
+      let c1;
+      let num = 2;
+      c4 = 2;
+      if (0 === c3) {
+        if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          closure_2 = tmp4;
+          closure_1 = tmp;
+          closure_0 = undefined;
+          c1 = undefined;
+          c11 = null;
+          if (null != c11) {
+            if (c11.epoch === closure_1_10) {
+              const str = "retry";
+              if ("retry" === c11.source) {
+                if (isInCooldown()) {
+                  const succeedResult = closure_1_9.succeed();
+                }
+              }
+              c3 = 1;
+              c4 = 1;
+              const obj4 = { value: arbitrateCandidates(tmp35, c11), done: false };
+              return obj4;
+            }
+          }
+        }
+      } else if (arg0 === 1) {
+        c4 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 3;
+        const obj5 = { value, done: true };
+        return obj5;
+      } else {
+        closure_0 = value;
+        if (closure_0.context.epoch === closure_1_10) {
+          if ("retry" === closure_0.context.source) {
+            let tmp5 = closure_2;
+            let tmp6 = isInCooldown;
+            if (isInCooldown()) {
+              const succeedResult1 = closure_1_9.succeed();
+            }
+          }
+          let tmp7 = closure_1;
+          let tmp10 = applyArbitrateCandidatesResult(closure_0);
+          c1 = false;
+          let tmp11 = closure_0;
+          obj = closure_0(closure_2[11]);
+          obj.batchUpdates(() => {
+            state.setState((candidates) => {
+              function nextFatigableContent(prevFatigableCandidate, candidates) {
+                const found = candidates.filter((weight) => {
+                  candidates = prevFatigableCandidate.candidates;
+                  weight = weight.weight;
+                  const hasItem = candidates.has(weight.content) && weight > 0;
+                  return hasItem;
+                });
+                let hasItem = null !== prevFatigableCandidate.prevFatigableCandidate;
+                if (hasItem) {
+                  candidates = prevFatigableCandidate.candidates;
+                  hasItem = candidates.has(prevFatigableCandidate.prevFatigableCandidate.content);
+                }
+                if (hasItem) {
+                  hasItem = found.length > 1;
+                }
+                let found1 = found;
+                if (hasItem) {
+                  found1 = found.filter((content) => {
+                    prevFatigableCandidate = prevFatigableCandidate.prevFatigableCandidate;
+                    let content1;
+                    content = content.content;
+                    if (prevFatigableCandidate != null) {
+                      content1 = prevFatigableCandidate.content;
+                    }
+                    return content !== content1;
+                  });
+                }
+                const reduced = found1.reduce((acc, weight) => acc + weight.weight, 0);
+                if (Number.isFinite(reduced)) {
+                  if (reduced > 0) {
+                    const _Math = Math;
+                    let result = Math.random() * reduced;
+                    for (const item10035 of found1) {
+                      let diff = result - item10035.weight;
+                      result = diff;
+                      if (diff < 0) {
+                        let candidates2 = prevFatigableCandidate.candidates;
+                        let value = candidates2.get(item10035.content);
+                        obj.return();
+                        return value;
+                      }
+                    }
+                  }
+                }
+              }
+              obj = { candidates: new Map(candidates.candidates), currentlyShown: new Set(candidates.currentlyShown), currentlyShownGroup: new Set(candidates.currentlyShownGroup) };
+              const merged = Object.assign(candidates);
+              new Map(candidates.candidates);
+              new Set(candidates.currentlyShown);
+              new Set(candidates.currentlyShownGroup);
+              const tmp5 = nextFatigableContent(obj, candidates.candidates);
+              if (!closure_2_9.pending) {
+                let tmp7 = null;
+                closure_1 = null != tmp5;
+                closure_0 = tmp5;
+                candidates = obj.candidates;
+                const items = [];
+                HermesBuiltin.arraySpread(items, candidates.keys(), 0);
+                const shownFatigableCandidate = obj.shownFatigableCandidate;
+                let found = items.filter(f84616);
+                const tmp11 = closure_2_14;
+                if (null != shownFatigableCandidate) {
+                  if (null != shownFatigableCandidate.content) {
+                    const currentlyShown = obj.currentlyShown;
+                    currentlyShown.delete(shownFatigableCandidate.content);
+                  }
+                  if (null != shownFatigableCandidate.groupName) {
+                    const currentlyShownGroup = obj.currentlyShownGroup;
+                    currentlyShownGroup.delete(shownFatigableCandidate.groupName);
+                  }
+                  const shownFatigableCandidate2 = obj.shownFatigableCandidate;
+                  let content;
+                  if (shownFatigableCandidate2 != null) {
+                    content = shownFatigableCandidate2.content;
+                  }
+                  if (content === shownFatigableCandidate.content) {
+                    obj.shownFatigableCandidate = null;
+                  }
+                }
+                tmp11(obj, tmp5, found);
+              } else {
+                let tmp6 = null;
+              }
+              return obj;
+            });
+          });
+          const tmp14 = c1;
+          if (tmp14) {
+            invalidateArbitration();
+          }
+        }
+      }
+      c4 = 3;
+      return { value: "IconComponent", done: null };
+    } catch (tmp25) {
+      c4 = 3;
+      throw tmp25;
+    }
+  }
+});
+const batchInvocationManager = new BatchInvocationManager(function() {
+  return closure_0(...arguments);
 }, { delay: 250, maxConcurrentInvocations: 1 });
-const Store = initializeDefault.Store;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp2;
+  let closure_0 = arg0;
+  obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function n(currentlyShown) {
+      currentlyShown = currentlyShown.currentlyShown;
+      return currentlyShown.has(closure_0);
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_12(tmp2);
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  return closure_12((currentlyShown) => {
+    currentlyShown = currentlyShown.currentlyShown;
+    return currentlyShown.has(closure_0);
+  });
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp2;
+  let closure_0 = arg0;
+  obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function n(arg0) {
+      closure_0 = arg0;
+      return closure_0.some((item) => {
+        currentlyShown = currentlyShown.currentlyShown;
+        return currentlyShown.has(item);
+      });
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_12(tmp2);
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  return closure_12((arg0) => {
+    closure_0 = arg0;
+    return closure_0.some((item) => {
+      currentlyShown = currentlyShown.currentlyShown;
+      return currentlyShown.has(item);
+    });
+  });
+});
+function isStateInCooldown(shownFatigableCandidate) {
+  new Date();
+  return null == shownFatigableCandidate.shownFatigableCandidate && tmp2 - shownFatigableCandidate.lastWinnerTime < 3600000;
+}
+function reset() {
+  obj = react_native;
+  obj.batchUpdates(f84619);
+  closure_10 = {};
+  c11 = null;
+  closure_9.succeed();
+  batchInvocationManager.reset();
+}
+const Store = get_initializedDefault.Store;
 class DismissibleContentShownStateStore extends Store {
+  initialize() {
+    const self = this;
+    this.waitFor(LoginRequiredActionStore, UserRequiredActionStore);
+    const items = [LoginRequiredActionStore, UserRequiredActionStore];
+    this.syncWith(items, () => self.setHasRequiredAction());
+  }
+  setHasRequiredAction() {
+    closure_13 = isActionRequiredDefault(LoginRequiredActionStore, UserRequiredActionStore);
+  }
 }
 const prototype = DismissibleContentShownStateStore.prototype;
-prototype["initialize"] = function initialize() {
-  const self = this;
-  this.waitFor(LoginRequiredActionStore, UserRequiredActionStore);
-  const items = [LoginRequiredActionStore, UserRequiredActionStore];
-  this.syncWith(items, () => self.setHasRequiredAction());
-};
-prototype["setHasRequiredAction"] = function setHasRequiredAction() {
-  closure_7 = isActionRequiredDefault(LoginRequiredActionStore, UserRequiredActionStore);
-};
 DismissibleContentShownStateStore.displayName = "DismissibleContentShownStateStore";
-const dismissibleContentShownStateStore = new DismissibleContentShownStateStore(DispatcherDefault, {
+obj = {
   CONNECTION_OPEN() {
-    ReactBatchUpdates.batchUpdates(() => {
-      state.setState(() => {
-        const obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: null, currentlyShownGroup: null, lastWinnerTime: 0, postConnectionOpen: false };
-        const map = new Map();
-        obj.currentlyShown = new Set();
-        const set = new Set();
-        obj.currentlyShownGroup = new Set();
-        obj.postConnectionOpen = true;
-        return obj;
-      });
-    });
+    obj = react_native;
+    obj.batchUpdates(f84619);
+    closure_10 = {};
+    c11 = null;
+    closure_9.succeed();
     batchInvocationManager.reset();
   },
   LOGOUT() {
-    ReactBatchUpdates.batchUpdates(() => {
-      state.setState(() => {
-        const obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: null, currentlyShownGroup: null, lastWinnerTime: 0, postConnectionOpen: false };
-        const map = new Map();
-        obj.currentlyShown = new Set();
-        const set = new Set();
-        obj.currentlyShownGroup = new Set();
-        obj.postConnectionOpen = true;
-        return obj;
-      });
-    });
+    let state;
+    obj = react_native;
+    obj.batchUpdates(f84619);
+    closure_10 = {};
+    c11 = null;
+    closure_9.succeed();
     batchInvocationManager.reset();
   }
-});
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentShownStateStore.tsx");
+};
+const dismissibleContentShownStateStore = new DismissibleContentShownStateStore(DispatcherDefault, obj);
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentShownStateStore.tsx");
 
-export default function useDismissibleContentShownStateStore(arg0, arg1) {
-  return closure_6(arg0, arg1);
-};
-export const isInCooldown = function isInCooldown() {
-  const state = closure_6.getState();
-  new Date();
-  let tmp4 = null == state.shownFatigableCandidate;
-  if (tmp4) {
-    tmp4 = tmp3 - state.lastWinnerTime < 3600000;
-  }
-  return tmp4;
-};
-export const isStateInCooldown = function isStateInCooldown(shownFatigableCandidate) {
-  new Date();
-  let tmp3 = null == shownFatigableCandidate.shownFatigableCandidate;
-  if (tmp3) {
-    tmp3 = tmp2 - shownFatigableCandidate.lastWinnerTime < 3600000;
-  }
-  return tmp3;
-};
+export default (arg0, arg1) => closure_12(arg0, arg1);
+export { isInCooldown };
+export { isStateInCooldown };
 export const addCandidateContent = function addCandidateContent(content) {
+  let c2;
   _require = content;
   const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require("DismissibleContentFatigueConfig").CONTENT_TYPES_WITH_BYPASS_FATIGUE;
-  closure_1 = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content);
+  let closure_1 = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content);
   dependencyMap = null;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  obj = require("react-native");
+  obj.batchUpdates(() => {
     state.setState((candidates) => {
-      const obj = {};
+      obj = { candidates: new Map(candidates.candidates), currentlyShown: new Set(candidates.currentlyShown), currentlyShownGroup: new Set(candidates.currentlyShownGroup) };
       const merged = Object.assign(candidates);
-      obj.candidates = new Map(candidates.candidates);
-      const map = new Map(candidates.candidates);
-      obj.currentlyShown = new Set(candidates.currentlyShown);
-      const set = new Set(candidates.currentlyShown);
-      obj.currentlyShownGroup = new Set(candidates.currentlyShownGroup);
-      if (closure_2_7) {
-        return obj;
-      } else if (closure_1_1) {
-        withContent(obj, content);
-        state = obj;
-      } else {
-        candidates = obj.candidates;
-        const result = candidates.set(content.content, content);
-        const tmp9 = withUpdateWinner(obj, content.content);
-        closure_2 = tmp9;
-        state = tmp9.state;
+      new Map(candidates.candidates);
+      new Set(candidates.currentlyShown);
+      let tmp5 = obj;
+      new Set(candidates.currentlyShownGroup);
+      if (!closure_2_13) {
+        const tmp6 = closure_1_1;
+        if (tmp6) {
+          withContent(obj, content);
+          state = obj;
+        } else {
+          candidates = obj.candidates;
+          const result = candidates.set(content.content, content);
+          const tmp10 = withUpdateWinner(obj, content.content);
+          closure_2 = tmp10;
+          state = tmp10.state;
+        }
+        tmp5 = state;
       }
+      return tmp5;
     });
   });
   if (null != dependencyMap) {
-    let tmp3 = "settled" === dependencyMap.arbitration.type;
-    if (!tmp3) {
-      tmp3 = "request" === tmp9.arbitration.type && false;
-      const tmp2 = "request" === tmp9.arbitration.type && false;
-    }
-    if (tmp3) {
-      batchInvocationManager.reset();
-    }
-    if ("request" === dependencyMap.arbitration.type) {
-      batchInvocationManager.queue(tmp9.arbitration.candidates).catch(NOOP);
-      const queueResult = batchInvocationManager.queue(tmp9.arbitration.candidates);
-    }
+    applyWinnerUpdateResult(dependencyMap);
   }
 };
 export const removeCandidateContent = function removeCandidateContent(arg0, arg1) {
+  let c2;
+  let closure_0;
+  let state;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
   dependencyMap = null;
-  c3 = false;
-  c4 = false;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  let c3 = false;
+  let c4 = false;
+  obj = require("react-native");
+  obj.batchUpdates(() => {
     state.setState((candidates) => {
-      const obj = {};
+      obj = { candidates: new Map(candidates.candidates), currentlyShown: new Set(candidates.currentlyShown), currentlyShownGroup: new Set(candidates.currentlyShownGroup) };
       const merged = Object.assign(candidates);
-      obj.candidates = new Map(candidates.candidates);
-      const map = new Map(candidates.candidates);
-      obj.currentlyShown = new Set(candidates.currentlyShown);
-      const set = new Set(candidates.currentlyShown);
-      obj.currentlyShownGroup = new Set(candidates.currentlyShownGroup);
+      new Map(candidates.candidates);
+      new Set(candidates.currentlyShown);
       const shownFatigableCandidate = obj.shownFatigableCandidate;
       content = undefined;
+      new Set(candidates.currentlyShownGroup);
       if (shownFatigableCandidate != null) {
         content = shownFatigableCandidate.content;
       }
       closure_3 = content === content.content;
-      if (closure_1_1) {
+      const tmp7 = closure_1_1;
+      if (tmp7) {
         const candidates2 = obj.candidates;
-        candidates2.delete(tmp6.content);
-        if (null != tmp6) {
-          if (null != tmp6.content) {
+        candidates2.delete(content.content);
+        const tmp13 = withUpdateWinner;
+        if (null != content) {
+          if (null != content.content) {
             const currentlyShown2 = obj.currentlyShown;
-            currentlyShown2.delete(tmp6.content);
+            currentlyShown2.delete(content.content);
           }
-          if (null != tmp6.groupName) {
+          if (null != content.groupName) {
             const currentlyShownGroup2 = obj.currentlyShownGroup;
-            currentlyShownGroup2.delete(tmp6.groupName);
+            currentlyShownGroup2.delete(content.groupName);
           }
           const shownFatigableCandidate3 = obj.shownFatigableCandidate;
           let content1;
           if (shownFatigableCandidate3 != null) {
             content1 = shownFatigableCandidate3.content;
           }
-          if (content1 === tmp6.content) {
+          if (content1 === content.content) {
             obj.shownFatigableCandidate = null;
           }
         }
-        const tmp12Result = withUpdateWinner(obj, null);
-        closure_2 = tmp12Result;
-        return tmp12Result.state;
+        const tmp13Result = tmp13(obj, null);
+        closure_2 = tmp13Result;
+        return tmp13Result.state;
       } else {
         candidates = obj.candidates;
-        candidates.delete(tmp6.content);
-        if (null != tmp6) {
-          if (null != tmp6.content) {
+        candidates.delete(content.content);
+        if (null != content) {
+          if (null != content.content) {
             const currentlyShown = obj.currentlyShown;
-            currentlyShown.delete(tmp6.content);
+            currentlyShown.delete(content.content);
           }
-          if (null != tmp6.groupName) {
+          if (null != content.groupName) {
             const currentlyShownGroup = obj.currentlyShownGroup;
-            currentlyShownGroup.delete(tmp6.groupName);
+            currentlyShownGroup.delete(content.groupName);
           }
           const shownFatigableCandidate2 = obj.shownFatigableCandidate;
           let content2;
           if (shownFatigableCandidate2 != null) {
             content2 = shownFatigableCandidate2.content;
           }
-          if (content2 === tmp6.content) {
+          if (content2 === content.content) {
             obj.shownFatigableCandidate = null;
           }
         }
-        let tmp11 = closure_3;
-        if (!closure_3) {
-          tmp11 = 0 === obj.candidates.size;
-        }
-        closure_4 = tmp11;
+        closure_4 = closure_3 || 0 === obj.candidates.size;
         return obj;
       }
-      const set1 = new Set(candidates.currentlyShownGroup);
     });
   });
   if (null != dependencyMap) {
-    let tmp7 = "settled" === dependencyMap.arbitration.type;
-    if (!tmp7) {
-      tmp7 = "request" === tmp5.arbitration.type && tmp6;
-      const tmp8 = "request" === tmp5.arbitration.type && tmp6;
-    }
-    if (tmp7) {
+    let tmp7 = applyWinnerUpdateResult;
+    applyWinnerUpdateResult(dependencyMap, c3);
+  } else {
+    const tmp2 = c4;
+    if (tmp2) {
+      closure_10 = {};
+      c11 = null;
+      closure_9.succeed();
       batchInvocationManager.reset();
     }
-    if ("request" === dependencyMap.arbitration.type) {
-      batchInvocationManager.queue(tmp5.arbitration.candidates).catch(NOOP);
-      const queueResult = batchInvocationManager.queue(tmp5.arbitration.candidates);
-    }
-  } else if (c4) {
-    batchInvocationManager.reset();
   }
 };
 export const getLastShownDismissibleContent = function getLastShownDismissibleContent() {
-  let first = closure_6.getState().recentlyShown[0];
+  let first = closure_12.getState().recentlyShown[0];
   if (first == null) {
     first = null;
   }
   return first;
 };
 export const getCurrentFatigableWinner = function getCurrentFatigableWinner() {
-  const shownFatigableCandidate = closure_6.getState().shownFatigableCandidate;
+  const shownFatigableCandidate = closure_12.getState().shownFatigableCandidate;
   let content;
   if (shownFatigableCandidate != null) {
     content = shownFatigableCandidate.content;
@@ -484,72 +861,42 @@ export const getCurrentFatigableWinner = function getCurrentFatigableWinner() {
   return content;
 };
 export const isContentShown = function isContentShown(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL) {
-  const currentlyShown = closure_6.getState().currentlyShown;
+  const currentlyShown = closure_12.getState().currentlyShown;
   return currentlyShown.has(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
 };
-export const useIsContentShown = function useIsContentShown(USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
-  closure_0 = USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS;
-  return closure_6((currentlyShown) => {
-    currentlyShown = currentlyShown.currentlyShown;
-    return currentlyShown.has(closure_0);
-  });
-};
-export const useIsAnyContentShown = function useIsAnyContentShown(arg0) {
-  closure_0 = arg0;
-  return closure_6((arg0) => {
-    let currentlyShown = arg0;
-    return currentlyShown.some((item) => {
-      currentlyShown = currentlyShown.currentlyShown;
-      return currentlyShown.has(item);
-    });
-  });
-};
+export const useIsContentShown = tmp7;
+export const useIsAnyContentShown = tmp8;
 export const isAnyContentShown = function isAnyContentShown(arr) {
-  const currentlyShown = closure_6.getState().currentlyShown;
+  const currentlyShown = closure_12.getState().currentlyShown;
   return arr.find((item) => currentlyShown.has(item));
 };
 export const getCurrentlyShownCounts = function getCurrentlyShownCounts() {
-  const items = [...closure_6.getState().currentlyShown];
-  const items1 = [
-    closure_6.getState().currentlyShown.size,
-    items.filter((item) => {
-      const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require("DismissibleContentFatigueConfig").CONTENT_TYPES_WITH_BYPASS_FATIGUE;
-      return !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(item);
-    }).length
-  ];
+  const items = [...closure_12.getState().currentlyShown];
+  const items1 = [, ];
+  const length = items.filter((item) => {
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require("DismissibleContentFatigueConfig").CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    return !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(item);
+  }).length;
+  items1[0] = closure_12.getState().currentlyShown.size;
+  items1[1] = length;
   return items1;
 };
-export const reset = function reset() {
-  ReactBatchUpdates.batchUpdates(() => {
-    state.setState(() => {
-      const obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: null, currentlyShownGroup: null, lastWinnerTime: 0, postConnectionOpen: false };
-      const map = new Map();
-      obj.currentlyShown = new Set();
-      const set = new Set();
-      obj.currentlyShownGroup = new Set();
-      obj.postConnectionOpen = true;
-      return obj;
-    });
-  });
-  batchInvocationManager.reset();
-};
+export { reset };
 export const resetFatigueCooldown = function resetFatigueCooldown() {
-  ReactBatchUpdates.batchUpdates(() => {
+  let state;
+  obj = react_native;
+  obj.batchUpdates(() => {
     state.setState((candidates) => {
-      const obj = {};
+      obj = { candidates: new Map(candidates.candidates), currentlyShown: new Set(candidates.currentlyShown), currentlyShownGroup: new Set(candidates.currentlyShownGroup), prevFatigableCandidate: null, lastWinnerTime: 0 };
       const merged = Object.assign(candidates);
-      obj.candidates = new Map(candidates.candidates);
-      const map = new Map(candidates.candidates);
-      obj.currentlyShown = new Set(candidates.currentlyShown);
-      const set = new Set(candidates.currentlyShown);
-      obj.currentlyShownGroup = new Set(candidates.currentlyShownGroup);
-      obj.prevFatigableCandidate = null;
-      obj.lastWinnerTime = 0;
+      new Map(candidates.candidates);
+      new Set(candidates.currentlyShown);
+      new Set(candidates.currentlyShownGroup);
       return obj;
     });
   });
 };
 export const isPostConnectionOpen = function isPostConnectionOpen() {
-  return closure_6.getState().postConnectionOpen;
+  return closure_12.getState().postConnectionOpen;
 };
 export { dismissibleContentShownStateStore };

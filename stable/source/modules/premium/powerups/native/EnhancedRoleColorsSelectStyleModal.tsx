@@ -1,164 +1,388 @@
-// Module ID: 18069
-// Function ID: 18070
+// Module ID: 17432
+// Function ID: 17433
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 18049, 18051, 18048, 1085, 21, 4788, 576, 4722, 5247, 18070, 1115, 8222, 7427, 7426, 4755, 8962, 2102, 8251, 13631, 4784, 2514, 2]
-// Exports: default
+// Dependencies: [17, 17412, 17414, 17411, 1097, 21, 4837, 588, 558, 576, 4769, 5311, 1127, 17433, 7378, 6571, 4801, 8109, 2108, 7407, 12873, 4833, 2522, 6572, 2]
 
-// Module 18069 (EnhancedRoleColorsSelectStyleModal)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import util from "util" /* 1115 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2102 */;
-import useThemeDefault from "useTheme" /* 4722 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5247 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7426 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
-import RowGeneratorDefault from "RowGenerator" /* 8222 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8251 */;
-import _modDef13631 from "module_13631" /* 13631 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18048 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18049 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18051 */;
-import useGuildSettingsRoleExampleMessage from "useGuildSettingsRoleExampleMessage" /* 18070 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4788 */;
-import size from "module_2" /* 2 */;
+// Module 17432 (EnhancedRoleColorsSelectStyleModal)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1097 */;
+import intl6 from "intl" /* 1127 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2108 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5311 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import RowGeneratorDefault from "RowGenerator" /* 7378 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7407 */;
+import _modDef12873 from "module_12873" /* 12873 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 17411 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 17412 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 17414 */;
+import useGuildSettingsRoleExampleMessage2 from "useGuildSettingsRoleExampleMessage" /* 17433 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let BottomSheet, dependencyMap;
 
-({ Pressable: c3, View: closure_4 } = get_ActivityIndicator);
+let c10;
+let c3;
+let c9;
+let closure_4;
+let tmp;
+let tmp4;
+const _modDef2522 = tmp(2522);
+const Text_Text = tmp4(4833);
+({ Pressable: c3, View: closure_4 } = react_native);
 const RoleColorsStyle = GuildSettingsRolesStore.RoleColorsStyle;
 const HOLOGRAPHIC_ROLE_COLORS = EnhancedRoleColorConstants.HOLOGRAPHIC_ROLE_COLORS;
 const STYLE_CONFIGS = GuildSettingsRoleConstants.STYLE_CONFIGS;
 const ThemeTypes = Constants.ThemeTypes;
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
+({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles((arg0) => {
-  const obj = { container: { marginHorizontal: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 }, stylesContainer: null, button: null, message: null, text: null, upsellContainer: null, upsellText: null, selected: null, disabled: null };
-  const obj2 = { marginHorizontal: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 };
-  obj.stylesContainer = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8 };
-  const size = { borderRadius: nativeDefault.radii.sm, overflow: "hidden", height: 100, width: 100, flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" };
-  obj.button = size;
-  const obj3 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8 };
-  obj.message = { width: 400, flex: 1, marginStart: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_8, alignSelf: "flex-start" };
-  if (arg0 === ThemeTypes.LIGHT) {
-    let BACKGROUND_SURFACE_HIGH = tmp(576).colors.BACKGROUND_BASE_LOW;
-  } else {
-    BACKGROUND_SURFACE_HIGH = tmp(576).colors.BACKGROUND_SURFACE_HIGH;
-  }
-  const obj4 = { width: 400, flex: 1, marginStart: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_8, alignSelf: "flex-start" };
+  let BACKGROUND_SURFACE_HIGH;
+  let BACKGROUND_SURFACE_HIGH2;
+  const obj = { container: { marginHorizontal: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 }, stylesContainer: { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8 }, button: size, message: { width: 400, flex: 1, marginStart: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_8, alignSelf: "flex-start" }, text: { width: "100%", textAlign: "center", backgroundColor: BACKGROUND_SURFACE_HIGH, paddingVertical: nativeDefault.space.PX_8 }, upsellContainer: { backgroundColor: BACKGROUND_SURFACE_HIGH2, padding: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.sm }, upsellText: { textAlign: "center" }, selected: { borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BRAND }, disabled: { opacity: 0.5 } };
+  ({ marginHorizontal: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 });
+  ({ display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8 });
+  size = { borderRadius: nativeDefault.radii.sm, overflow: "hidden", height: 100, width: 100, flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" };
+  ({ width: 400, flex: 1, marginStart: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_8, alignSelf: "flex-start" });
   const tmp3 = ThemeTypes;
-  obj.text = { width: "100%", textAlign: "center", backgroundColor: BACKGROUND_SURFACE_HIGH, paddingVertical: nativeDefault.space.PX_8 };
-  if (arg0 === tmp3.LIGHT) {
-    let BACKGROUND_SURFACE_HIGH2 = tmp(576).colors.BACKGROUND_BASE_LOW;
+  if (arg0 === ThemeTypes.LIGHT) {
+    BACKGROUND_SURFACE_HIGH = tmp(588).colors.BACKGROUND_BASE_LOW;
   } else {
-    BACKGROUND_SURFACE_HIGH2 = tmp(576).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH = tmp(588).colors.BACKGROUND_SURFACE_HIGH;
   }
-  const obj5 = { width: "100%", textAlign: "center", backgroundColor: BACKGROUND_SURFACE_HIGH, paddingVertical: nativeDefault.space.PX_8 };
-  obj.upsellContainer = { backgroundColor: BACKGROUND_SURFACE_HIGH2, padding: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.sm };
-  obj.upsellText = { textAlign: "center" };
-  const obj6 = { backgroundColor: BACKGROUND_SURFACE_HIGH2, padding: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.sm };
-  obj.selected = { borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
-  obj.disabled = { opacity: 0.5 };
+  ({ width: "100%", textAlign: "center", backgroundColor: BACKGROUND_SURFACE_HIGH, paddingVertical: nativeDefault.space.PX_8 });
+  if (arg0 === tmp3.LIGHT) {
+    BACKGROUND_SURFACE_HIGH2 = tmp(588).colors.BACKGROUND_BASE_LOW;
+  } else {
+    BACKGROUND_SURFACE_HIGH2 = tmp(588).colors.BACKGROUND_SURFACE_HIGH;
+  }
+  ({ backgroundColor: BACKGROUND_SURFACE_HIGH2, padding: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.sm });
+  ({ borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BRAND });
   return obj;
 });
+tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(roleStyle) {
+  let Text2;
+  let VpEDJc;
+  let button;
+  let first;
+  let format;
+  let guildId;
+  let intl2;
+  let intl4;
+  let intl5;
+  let items;
+  let items1;
+  let items2;
+  let obj5;
+  let obj8;
+  let obj9;
+  let role;
+  let tmp10;
+  let tmp13;
+  const tmp = roleStyle;
+  let obj = roleStyle(576);
+  const cResult = obj.c(24);
+  roleStyle = roleStyle.roleStyle;
+  const onStyleChanged = roleStyle.onStyleChanged;
+  let tmp4 = onStyleChanged;
+  ({ guildId, role } = roleStyle);
+  const tmp5 = closure_11(onStyleChanged(4769)());
+  dependencyMap = tmp5;
+  let obj2 = roleStyle(5311);
+  const hasEnhancedRoleColorsForRole = obj2.useHasEnhancedRoleColorsForRole(guildId, role);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let intl = tmp(1127).intl;
+    const stringResult = intl.string(tmp(1127).t.Mi9Kbe);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  const tmpResult = tmp(17433);
+  const guildSettingsRoleExampleMessage = tmpResult.useGuildSettingsRoleExampleMessage(first);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const self = this;
+    const self2 = this;
+    const tmp11 = new tmp4(7378)();
+    cResult[1] = tmp11;
+    tmp10 = tmp11;
+  } else {
+    tmp10 = cResult[1];
+  }
+  const rowGenerator = tmp10;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj3 = { title: intl2.string(tmp(1127).t["9wVJRB"]) };
+    const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+    intl2 = tmp(1127).intl;
+    const tmp15 = closure_9(BottomSheetTitleHeader, obj3);
+    cResult[2] = tmp15;
+    tmp13 = tmp15;
+  } else {
+    tmp13 = cResult[2];
+  }
+  if (cResult[3] === hasEnhancedRoleColorsForRole) {
+    if (cResult[4] === guildSettingsRoleExampleMessage) {
+      if (cResult[5] === onStyleChanged) {
+        if (cResult[6] === roleStyle) {
+          if (cResult[7] === tmp5.button) {
+            if (cResult[8] === tmp5.disabled) {
+              if (cResult[9] === tmp5.message) {
+                if (cResult[10] === tmp5.selected) {
+                  let tmp18;
+                  if (cResult[11] === tmp5.text) {
+                    tmp18 = cResult[12];
+                  }
+                  if (cResult[13] === tmp5.stylesContainer) {
+                    let tmp20;
+                    if (cResult[14] === tmp18) {
+                      tmp20 = cResult[15];
+                    }
+                    if (cResult[16] === hasEnhancedRoleColorsForRole) {
+                      if (cResult[17] === tmp5.upsellContainer) {
+                        let tmp24;
+                        if (cResult[18] === tmp5.upsellText) {
+                          tmp24 = cResult[19];
+                        }
+                        if (cResult[20] === tmp5.container) {
+                          if (cResult[21] === tmp20) {
+                            let tmp30;
+                            if (cResult[22] === tmp24) {
+                              tmp30 = cResult[23];
+                            }
+                            return tmp30;
+                          }
+                        }
+                        const obj4 = { header: tmp13, children: closure_10(guildSettingsRoleExampleMessage, obj5) };
+                        obj5 = { style: tmp16, children: items };
+                        items = [tmp20, tmp24];
+                        BottomSheet = tmp(6572).BottomSheet;
+                        const tmp34 = closure_9(BottomSheet, obj4);
+                        cResult[20] = tmp5.container;
+                        cResult[21] = tmp20;
+                        cResult[22] = tmp24;
+                        cResult[23] = tmp34;
+                        tmp30 = tmp34;
+                      }
+                    }
+                    let tmp25 = !hasEnhancedRoleColorsForRole;
+                    if (tmp25) {
+                      const obj6 = { style: tmp5.upsellContainer, children: items2 };
+                      const obj7 = { style: tmp5.upsellText, variant: "text-sm/semibold", children: format(VpEDJc, obj8) };
+                      let Text = tmp(4833).Text;
+                      const intl3 = tmp(1127).intl;
+                      format = intl3.format;
+                      obj8 = { magical: closure_9(Text2, obj9) };
+                      VpEDJc = tmp4(2522).VpEDJc;
+                      obj9 = { gradientColors: items1, variant: "text-sm/semibold", children: intl4.string(tmp4(2522)["+/IHLl"]) };
+                      items1 = [, , ];
+                      ({ primary_color: arr[0], secondary_color: arr[1], tertiary_color: arr[2] } = HOLOGRAPHIC_ROLE_COLORS);
+                      Text2 = tmp(4833).Text;
+                      intl4 = tmp(1127).intl;
+                      items2 = [closure_9(Text, obj7), ];
+                      const obj10 = { style: tmp5.upsellText, variant: "text-sm/normal", children: intl5.string(tmp4(2522).FJZeZF) };
+                      const Text3 = tmp(4833).Text;
+                      intl5 = tmp(1127).intl;
+                      items2[1] = closure_9(Text3, obj10);
+                      tmp25 = closure_10(guildSettingsRoleExampleMessage, obj6);
+                    }
+                    cResult[16] = hasEnhancedRoleColorsForRole;
+                    cResult[17] = tmp5.upsellContainer;
+                    cResult[18] = tmp5.upsellText;
+                    cResult[19] = tmp25;
+                    tmp24 = tmp25;
+                  }
+                  const obj11 = { style: tmp17, children: tmp18 };
+                  const tmp23 = closure_9(guildSettingsRoleExampleMessage, obj11);
+                  cResult[13] = tmp5.stylesContainer;
+                  cResult[14] = tmp18;
+                  cResult[15] = tmp23;
+                  tmp20 = tmp23;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  const mapped = STYLE_CONFIGS.map((id) => {
+    let intl;
+    let items1;
+    const items = [button.button, , ];
+    let selected = id === id.id;
+    const tmp3 = closure_1_10;
+    const tmp4 = hasEnhancedRoleColorsForRole;
+    if (selected) {
+      selected = tmp5.selected;
+    }
+    items[1] = selected;
+    let obj = {
+      style: items,
+      disabled: tmp,
+      onPress() {
+        onStyleChanged(id.id);
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+      },
+      children: items1
+    };
+    const tmp6 = !hasEnhancedRoleColorsForRole && id.id !== rowGenerator.SOLID && button.disabled;
+    items[2] = tmp6;
+    let obj2 = {
+      style: tmp5.message,
+      pointerEvents: "none",
+      message: guildSettingsRoleExampleMessage,
+      rowGenerator,
+      modifyRow(message) {
+        message.message.roleColor = undefined;
+        const obj = EnhancedRoleColorUtils;
+        const result = obj.extractColorStringsFromServerColors(id.colors);
+        message = message.message;
+        const obj2 = enhanced_role_colors_EnhancedRoleColorUtils;
+        message.roleColors = obj2.processColorStrings(result);
+        message.message.shouldShowRoleOnName = true;
+        message.message.avatarURL = _modDef12873;
+      }
+    };
+    items1 = [closure_1_9(onStyleChanged(button[17]), obj2), ];
+    const obj3 = { style: button.text, variant: "text-sm/normal", children: intl.string(id.labelString) };
+    const Text = roleStyle(button[21]).Text;
+    intl = roleStyle(button[12]).intl;
+    items1[1] = closure_1_9(Text, obj3);
+    return tmp3(tmp4, obj, id.id);
+  });
+  cResult[3] = hasEnhancedRoleColorsForRole;
+  cResult[4] = guildSettingsRoleExampleMessage;
+  cResult[5] = onStyleChanged;
+  cResult[6] = roleStyle;
+  cResult[7] = tmp5.button;
+  cResult[8] = tmp5.disabled;
+  cResult[9] = tmp5.message;
+  cResult[10] = tmp5.selected;
+  cResult[11] = tmp5.text;
+  cResult[12] = mapped;
+  tmp18 = mapped;
+}) : ((arg0) => {
+  let BottomSheetTitleHeader;
+  let Text2;
+  let VpEDJc;
+  let button;
+  let format;
+  let guildId;
+  let intl2;
+  let intl4;
+  let intl5;
+  let items;
+  let items1;
+  let items2;
+  let obj3;
+  let obj4;
+  let obj8;
+  let obj9;
+  let role;
+  ({ roleStyle: require, onStyleChanged: importDefault } = arg0);
+  const tmp = importDefault;
+  ({ guildId, role } = arg0);
+  let tmp3 = closure_11(useThemeDefault());
+  dependencyMap = tmp3;
+  let tmp4 = require;
+  let obj = useHasEnhancedRoleColors;
+  const hasEnhancedRoleColorsForRole = obj.useHasEnhancedRoleColorsForRole(guildId, role);
+  let tmp6 = useGuildSettingsRoleExampleMessage2;
+  const useGuildSettingsRoleExampleMessage = tmp6.useGuildSettingsRoleExampleMessage;
+  let intl = intl6.intl;
+  let message = useGuildSettingsRoleExampleMessage(intl.string(intl6.t.Mi9Kbe));
+  const rowGenerator = new RowGeneratorDefault();
+  let obj2 = { header: closure_9(BottomSheetTitleHeader, obj3), children: closure_10(message, obj4) };
+  new RowGeneratorDefault();
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  obj3 = { title: intl2.string(intl6.t["9wVJRB"]) };
+  BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  intl2 = intl6.intl;
+  obj4 = { style: tmp3.container, children: items };
+  items = [, ];
+  const obj5 = {
+    style: tmp3.stylesContainer,
+    children: STYLE_CONFIGS.map((id) => {
+      let intl;
+      let items1;
+      const items = [button.button, , ];
+      let selected = id === id.id;
+      const tmp3 = closure_1_10;
+      const tmp4 = hasEnhancedRoleColorsForRole;
+      if (selected) {
+        selected = tmp5.selected;
+      }
+      items[1] = selected;
+      let obj = {
+        style: items,
+        disabled: tmp,
+        onPress() {
+          importDefault(id.id);
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+        },
+        children: items1
+      };
+      const tmp6 = !hasEnhancedRoleColorsForRole && id.id !== rowGenerator.SOLID && button.disabled;
+      items[2] = tmp6;
+      let obj2 = {
+        style: tmp5.message,
+        pointerEvents: "none",
+        message,
+        rowGenerator,
+        modifyRow(message) {
+          message.message.roleColor = undefined;
+          const obj = EnhancedRoleColorUtils;
+          const result = obj.extractColorStringsFromServerColors(id.colors);
+          message = message.message;
+          const obj2 = enhanced_role_colors_EnhancedRoleColorUtils;
+          message.roleColors = obj2.processColorStrings(result);
+          message.message.shouldShowRoleOnName = true;
+          message.message.avatarURL = _modDef12873;
+        }
+      };
+      items1 = [closure_1_9(require("ChatItem"), obj2), ];
+      const obj3 = { style: button.text, variant: "text-sm/normal", children: intl.string(id.labelString) };
+      const Text = require("Text/Text").Text;
+      intl = require("intl").intl;
+      items1[1] = closure_1_9(Text, obj3);
+      return tmp3(tmp4, obj, id.id);
+    })
+  };
+  items[0] = closure_9(message, obj5);
+  let tmp9Result = !hasEnhancedRoleColorsForRole;
+  if (tmp9Result) {
+    const obj6 = { style: tmp3.upsellContainer, children: items2 };
+    const obj7 = { style: tmp3.upsellText, variant: "text-sm/semibold", children: format(VpEDJc, obj8) };
+    let Text = Text_Text.Text;
+    const intl3 = intl6.intl;
+    format = intl3.format;
+    obj8 = { magical: closure_9(Text2, obj9) };
+    VpEDJc = _modDef2522.VpEDJc;
+    obj9 = { gradientColors: items1, variant: "text-sm/semibold", children: intl4.string(_modDef2522["+/IHLl"]) };
+    items1 = [, , ];
+    ({ primary_color: arr2[0], secondary_color: arr2[1], tertiary_color: arr2[2] } = HOLOGRAPHIC_ROLE_COLORS);
+    Text2 = Text_Text.Text;
+    intl4 = intl6.intl;
+    items2 = [closure_9(Text, obj7), ];
+    const obj10 = { style: tmp3.upsellText, variant: "text-sm/normal", children: intl5.string(_modDef2522.FJZeZF) };
+    const Text3 = Text_Text.Text;
+    intl5 = intl6.intl;
+    items2[1] = closure_9(Text3, obj10);
+    tmp9Result = tmp9(tmp10, obj6);
+  }
+  items[1] = tmp9Result;
+  return closure_9(BottomSheet, obj2);
+});
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/premium/powerups/native/EnhancedRoleColorsSelectStyleModal.tsx");
 
-export default function EnhancedRoleColorsSelectStyleModal(arg0) {
-  ({ roleStyle: require, onStyleChanged: importDefault } = arg0);
-  ({ guildId, role } = arg0);
-  const tmp3 = closure_11(useThemeDefault());
-  dependencyMap = tmp3;
-  const hasEnhancedRoleColorsForRole = useHasEnhancedRoleColors.useHasEnhancedRoleColorsForRole(guildId, role);
-  let intl = util.intl;
-  const message = useGuildSettingsRoleExampleMessage.useGuildSettingsRoleExampleMessage(intl.string(util.t.Mi9Kbe));
-  const rowGenerator = new RowGeneratorDefault();
-  let obj3 = { header: null, children: null };
-  const obj4 = { title: null };
-  const intl2 = util.intl;
-  obj4.title = intl2.string(util.t["9wVJRB"]);
-  obj3.header = closure_9(BottomSheetTitleHeader.BottomSheetTitleHeader, obj4);
-  const obj5 = { style: tmp3.container, children: null };
-  const tmp6 = new RowGeneratorDefault();
-  let items = [
-    closure_9(message, {
-      style: tmp3.stylesContainer,
-      children: STYLE_CONFIGS.map((id) => {
-        let tmp = !hasEnhancedRoleColorsForRole;
-        if (!hasEnhancedRoleColorsForRole) {
-          tmp = id.id !== rowGenerator.SOLID;
-        }
-        const items = [button.button, , ];
-        let selected = id === id.id;
-        if (selected) {
-          selected = tmp5.selected;
-        }
-        items[1] = selected;
-        let disabled = tmp;
-        if (tmp) {
-          disabled = tmp5.disabled;
-        }
-        let obj = {
-          style: items,
-          disabled: tmp,
-          onPress() {
-            closure_2_1(id.id);
-            ActionSheetActionCreatorsDefault.hideActionSheet();
-          },
-          children: null
-        };
-        items[2] = disabled;
-        const items1 = [
-          closure_1_9(require("ChatItem"), {
-            style: button.message,
-            pointerEvents: "none",
-            message,
-            rowGenerator,
-            modifyRow(message) {
-              message.message.roleColor = undefined;
-              const result = EnhancedRoleColorUtils.extractColorStringsFromServerColors(id.colors);
-              message.message.roleColors = enhanced_role_colors_EnhancedRoleColorUtils.processColorStrings(result);
-              message.message.shouldShowRoleOnName = true;
-              message.message.avatarURL = _modDef13631;
-            }
-          }),
-
-        ];
-        const obj3 = { style: button.text, variant: "text-sm/normal", children: null };
-        const intl = require("util").intl;
-        obj3.children = intl.string(id.labelString);
-        items1[1] = closure_1_9(require("Text/Text").Text, obj3);
-        obj.children = items1;
-        return closure_1_10(hasEnhancedRoleColorsForRole, obj, id.id);
-      })
-    }),
-
-  ];
-  let tmp8Result = !hasEnhancedRoleColorsForRole;
-  if (!hasEnhancedRoleColorsForRole) {
-    const obj7 = { style: tmp3.upsellContainer, children: null };
-    const obj8 = { style: tmp3.upsellText, variant: "text-sm/semibold", children: null };
-    const intl3 = tmp4(1115).intl;
-    const obj9 = { magical: null };
-    const obj10 = { gradientColors: null, variant: "text-sm/semibold", children: null };
-    let items1 = [, , ];
-    ({ primary_color: arr2[0], secondary_color: arr2[1], tertiary_color: arr2[2] } = HOLOGRAPHIC_ROLE_COLORS);
-    obj10.gradientColors = items1;
-    const intl4 = tmp4(1115).intl;
-    obj10.children = intl4.string(tmp(2514)["+/IHLl"]);
-    obj9.magical = tmp7(tmp4(4784).Text, obj10);
-    obj8.children = intl3.format(tmp(2514).VpEDJc, obj9);
-    const items2 = [tmp7(tmp4(4784).Text, obj8), ];
-    const obj11 = { style: tmp3.upsellText, variant: "text-sm/normal", children: null };
-    const intl5 = tmp4(1115).intl;
-    obj11.children = intl5.string(tmp(2514).FJZeZF);
-    items2[1] = tmp7(tmp4(4784).Text, obj11);
-    obj7.children = items2;
-    tmp8Result = tmp8(tmp9, obj7);
-  }
-  items[1] = tmp8Result;
-  obj5.children = items;
-  obj3.children = closure_10(message, obj5);
-  return closure_9(Sheet_BottomSheet.BottomSheet, obj3);
-};
+export default tmp4;

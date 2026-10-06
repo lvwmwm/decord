@@ -1,20 +1,20 @@
-// Module ID: 4919
-// Function ID: 4920
+// Module ID: 4968
+// Function ID: 4969
 // Name: RobloxSubgameTypes
 // Dependencies: [2]
 // Exports: ROBLOX_DEFERRED_WEB_URL
 
-// Module 4919 (RobloxSubgameTypes)
+// Module 4968 (RobloxSubgameTypes)
 import size from "module_2" /* 2 */;
 
 class ROBLOX_PROTOCOL_URL {
   constructor(arg0) {
-    return "roblox://placeId=" + global;
+    return "roblox://placeId=" + arg0;
   }
 }
 class ROBLOX_WEB_URL {
   constructor(arg0) {
-    return "https://www.roblox.com/games/start?placeId=" + global;
+    return "https://www.roblox.com/games/start?placeId=" + arg0;
   }
 }
 const result = size.fileFinishedImporting("modules/roblox_subgame_detection/RobloxSubgameTypes.tsx");

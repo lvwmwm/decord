@@ -1,16 +1,16 @@
-// Module ID: 14302
-// Function ID: 14303
+// Module ID: 13549
+// Function ID: 13550
 // Name: AGC2MobileExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 14302 (AGC2MobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13549 (AGC2MobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-09-agc2-mobile", defaultConfig: { agc2Enabled: false, noiseCancellationDuringProcessing: false, vadKrispActivationThreshold: 0.5 }, variations: null };
-const obj2 = { 1: null, 2: { agc2Enabled: true, noiseCancellationDuringProcessing: true, vadKrispActivationThreshold: 0.4 }, 3: { agc2Enabled: true, noiseCancellationDuringProcessing: true, vadKrispActivationThreshold: 0.5 }, 4: { agc2Enabled: true, noiseCancellationDuringProcessing: true, vadKrispActivationThreshold: 0.6 } };
+let obj2;
+const obj = { kind: "user", name: "2026-09-agc2-mobile", defaultConfig: { agc2Enabled: false, noiseCancellationDuringProcessing: false, vadKrispActivationThreshold: 0.5 }, variations: obj2 };
+obj2 = { 1: null, 2: { agc2Enabled: true, noiseCancellationDuringProcessing: true, vadKrispActivationThreshold: 0.4 }, 3: { agc2Enabled: true, noiseCancellationDuringProcessing: true, vadKrispActivationThreshold: 0.5 }, 4: { agc2Enabled: true, noiseCancellationDuringProcessing: true, vadKrispActivationThreshold: 0.6 } };
 obj2[4] = { agc2Enabled: true, noiseCancellationDuringProcessing: true, vadKrispActivationThreshold: 0.7 };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/AGC2MobileExperiment.tsx");
 

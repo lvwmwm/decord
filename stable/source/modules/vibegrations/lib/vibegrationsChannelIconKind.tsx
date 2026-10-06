@@ -1,12 +1,12 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5370
+// Function ID: 5371
 // Name: vibegrationsChannelIconKind
-// Dependencies: [5306, 5309, 2]
+// Dependencies: [5371, 5374, 2]
 // Exports: vibegrationsChannelIconKind
 
-// Module 5305 (vibegrationsChannelIconKind)
-import VibegrationsUtils from "VibegrationsUtils" /* 5306 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5309 */;
+// Module 5370 (vibegrationsChannelIconKind)
+import VibegrationsUtils from "VibegrationsUtils" /* 5371 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5374 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsChannelIconKind.tsx");
@@ -15,6 +15,7 @@ export const vibegrationsChannelIconKind = function vibegrationsChannelIconKind(
   let tmp = null;
   if (null != channel) {
     tmp = null;
+    const obj = VibegrationsUtils;
     if (obj.isVibegrationsChannelCandidate(channel, getChannelIconComponent)) {
       let str = "apps";
       if (isRoleRequiredDefault(channel)) {
@@ -22,7 +23,6 @@ export const vibegrationsChannelIconKind = function vibegrationsChannelIconKind(
       }
       tmp = str;
     }
-    obj = VibegrationsUtils;
   }
   return tmp;
 };

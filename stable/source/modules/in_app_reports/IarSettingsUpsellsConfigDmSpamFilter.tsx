@@ -1,47 +1,45 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 8098
+// Function ID: 8099
 // Name: IarSettingsUpsellsConfigDmSpamFilter
-// Dependencies: [1115, 8940, 1095, 2019, 1186, 2]
+// Dependencies: [1127, 8087, 1107, 2027, 1198, 2]
 
-// Module 8951 (IarSettingsUpsellsConfigDmSpamFilter)
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import util from "util" /* 1115 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import MenuTypes from "MenuTypes" /* 8940 */;
+// Module 8098 (IarSettingsUpsellsConfigDmSpamFilter)
+import ChannelTypes from "ChannelTypes" /* 1107 */;
+import intl2 from "intl" /* 1127 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import MenuTypes from "MenuTypes" /* 8087 */;
 import size from "module_2" /* 2 */;
 
+let items;
+let items1;
 const obj = {
   getTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.vJOqMB);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.vJOqMB);
   },
   getDisabledTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["B5ZvY+"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["B5ZvY+"]);
   },
   getDescription() {
-    const intl = util.intl;
-    return intl.string(util.t["43UEUh"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["43UEUh"]);
   },
-  eligibleReportSubtypes: null,
-  eligibleChannelTypes: null,
-  onApply: null,
-  predicate: null
+  eligibleReportSubtypes: items,
+  eligibleChannelTypes: items1,
+  onApply() {
+    const DmSpamFilterV2 = UserSettings.DmSpamFilterV2;
+    return DmSpamFilterV2.updateSetting(preloaded_user_settings.DmSpamFilterV2.NON_FRIENDS);
+  },
+  predicate() {
+    const DmSpamFilterV2 = UserSettings.DmSpamFilterV2;
+    const setting = DmSpamFilterV2.getSetting();
+    return setting === preloaded_user_settings.DmSpamFilterV2.DISABLED;
+  }
 };
-const items = [MenuTypes.ReportSubType.SUB_SPAM];
-obj.eligibleReportSubtypes = items;
-const items1 = [ChannelTypes.ChannelTypes.DM, ChannelTypes.ChannelTypes.GROUP_DM];
-obj.eligibleChannelTypes = items1;
-obj.onApply = function onApply() {
-  const DmSpamFilterV2 = UserSettings.DmSpamFilterV2;
-  return DmSpamFilterV2.updateSetting(preloaded_user_settings.DmSpamFilterV2.NON_FRIENDS);
-};
-obj.predicate = function predicate() {
-  const DmSpamFilterV2 = UserSettings.DmSpamFilterV2;
-  const setting = DmSpamFilterV2.getSetting();
-  return setting === preloaded_user_settings.DmSpamFilterV2.DISABLED;
-};
+items = [MenuTypes.ReportSubType.SUB_SPAM];
+items1 = [ChannelTypes.ChannelTypes.DM, ChannelTypes.ChannelTypes.GROUP_DM];
 const result = size.fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigDmSpamFilter.tsx");
 
 export default obj;

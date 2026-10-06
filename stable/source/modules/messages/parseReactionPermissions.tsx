@@ -1,17 +1,27 @@
-// Module ID: 11607
-// Function ID: 11608
+// Module ID: 9800
+// Function ID: 9801
 // Name: parseReactionPermissions
 // Dependencies: [2]
 // Exports: default
 
-// Module 11607 (parseReactionPermissions)
+// Module 9800 (parseReactionPermissions)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/parseReactionPermissions.tsx");
 
 export default function parseReactionPermissions(arg0) {
+  let canAddNewReactions;
+  let canChat;
+  let channel;
+  let communicationDisabled;
+  let isActiveChannelOrUnarchivableThread;
+  let isAutomodQuarantined;
+  let isLurking;
+  let renderReactions;
+  let tmp4;
   ({ channel, canChat, isLurking, isActiveChannelOrUnarchivableThread, renderReactions, canAddNewReactions, communicationDisabled, isAutomodQuarantined } = arg0);
   const isPrivateResult = channel.isPrivate();
+  let isSystemDMResult = channel.isSystemDM();
   const isMediaThreadResult = channel.isMediaThread();
   if (!canChat) {
     canChat = isPrivateResult;
@@ -22,25 +32,22 @@ export default function parseReactionPermissions(arg0) {
   if (canChat) {
     canChat = !isMediaThreadResult;
   }
-  const obj = { disableReactionReads: !renderReactions, disableReactionCreates: null, disableReactionUpdates: null };
-  let tmp4 = isLurking;
-  if (!isLurking) {
-    tmp4 = !canChat;
-  }
+  const obj = { disableReactionReads: !renderReactions, disableReactionCreates: tmp4, disableReactionUpdates: isSystemDMResult };
+  tmp4 = isLurking || !canChat;
   if (!tmp4) {
     tmp4 = !((true === canAddNewReactions || isPrivateResult) && !isSystemDMResult && isActiveChannelOrUnarchivableThread && !isMediaThreadResult);
-    const tmp5 = (true === canAddNewReactions || isPrivateResult) && !isSystemDMResult && isActiveChannelOrUnarchivableThread && !isMediaThreadResult;
   }
-  obj.disableReactionCreates = tmp4;
-  if (!isLurking) {
-    isLurking = !canChat;
+  if (!isSystemDMResult) {
+    isSystemDMResult = isLurking;
   }
-  if (!isLurking) {
-    isLurking = true === communicationDisabled;
+  if (!isSystemDMResult) {
+    isSystemDMResult = !canChat;
   }
-  if (!isLurking) {
-    isLurking = true === isAutomodQuarantined;
+  if (!isSystemDMResult) {
+    isSystemDMResult = true === communicationDisabled;
   }
-  obj.disableReactionUpdates = isLurking;
+  if (!isSystemDMResult) {
+    isSystemDMResult = true === isAutomodQuarantined;
+  }
   return obj;
 };

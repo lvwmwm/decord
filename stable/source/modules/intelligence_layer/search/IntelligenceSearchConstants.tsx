@@ -1,12 +1,16 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 11740
+// Function ID: 11741
 // Name: IntelligenceSearchConstants
 // Dependencies: [2]
 
-// Module 14007 (IntelligenceSearchConstants)
+// Module 11740 (IntelligenceSearchConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/IntelligenceSearchConstants.tsx");
 
 export const MAX_CACHED_ANSWER_GUILDS = 10;
 export const MAX_CACHED_ANSWERS_PER_GUILD = 5;
+export const COLLAPSED_FRAME_HEIGHT = 217;
+export const LOADING_BLOCK_HEIGHT = 228;
+export const LOADING_BOTTOM_GAP = 18;
+export const MAX_PRESENTED_CITATIONS = 3;

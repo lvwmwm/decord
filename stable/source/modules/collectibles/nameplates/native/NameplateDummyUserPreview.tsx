@@ -1,54 +1,195 @@
-// Module ID: 9130
-// Function ID: 9131
+// Module ID: 8277
+// Function ID: 8278
 // Name: NameplateDummyUserPreview
-// Dependencies: [19, 17, 1182, 21, 1177, 576, 4788, 504, 4496, 9131, 9133, 9134, 2]
-// Exports: NameplateDummyUserPreview
+// Dependencies: [19, 17, 1194, 21, 1189, 588, 4837, 558, 576, 4542, 504, 8278, 8280, 8281, 2]
 
-// Module 9130 (NameplateDummyUserPreview)
-import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import themes from "themes" /* 4496 */;
-import NameplateDefault from "Nameplate" /* 9131 */;
-import noop from "module_19" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+// Module 8277 (NameplateDummyUserPreview)
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import themes from "themes" /* 4542 */;
+import NameplateDefault from "Nameplate" /* 8278 */;
+import react from "react" /* 19 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+let hasOwnProperty;
+let metroRequire;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG = {};
-NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG[fn(1177).AvatarSizes.XSMALL_20] = { padding: nativeDefault.space.PX_4, avatarMarginRight: nativeDefault.space.PX_4, placeholderBarHeight: 6 };
-NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG[fn(1177).AvatarSizes.XSMALL] = { padding: 6, avatarMarginRight: 6, placeholderBarHeight: 8 };
 let obj2 = { padding: nativeDefault.space.PX_4, avatarMarginRight: nativeDefault.space.PX_4, placeholderBarHeight: 6 };
-NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG[fn(1177).AvatarSizes.NORMAL] = { padding: nativeDefault.space.PX_8, avatarMarginRight: nativeDefault.space.PX_8, placeholderBarHeight: 14 };
-const createStyles = fn(4788);
+const XSMALL_20 = native.AvatarSizes.XSMALL_20;
+NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG[XSMALL_20] = obj2;
+NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG[native.AvatarSizes.XSMALL] = { padding: 6, avatarMarginRight: 6, placeholderBarHeight: 8 };
+let obj3 = { padding: nativeDefault.space.PX_8, avatarMarginRight: nativeDefault.space.PX_8, placeholderBarHeight: 14 };
+let NORMAL = native.AvatarSizes.NORMAL;
+NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG[NORMAL] = obj3;
 let closure_8 = createStyles.createStyles((arg0, arg1) => {
-  obj = { container: { padding: obj[arg0].padding, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", width: "100%", position: "relative", borderRadius: nativeDefault.radii.sm }, avatarContainer: null, avatar: null, placeholderBar: null, nameplate: null };
-  const obj3 = { borderRadius: nativeDefault.radii.round, marginRight: obj[arg0].avatarMarginRight, backgroundColor: null };
-  let str = "transparent";
+  let num;
+  let obj;
+  let obj3;
+  let str;
+  obj = { container: { padding: obj[arg0].padding, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", width: "100%", position: "relative", borderRadius: nativeDefault.radii.sm }, avatarContainer: obj3, avatar: { opacity: num }, placeholderBar: { borderRadius: nativeDefault.radii.md, height: obj[arg0].placeholderBarHeight, backgroundColor: nativeDefault.colors.BORDER_STRONG }, nameplate: { borderRadius: nativeDefault.radii.sm } };
+  ({ padding: obj[arg0].padding, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", width: "100%", position: "relative", borderRadius: nativeDefault.radii.sm });
+  obj3 = { borderRadius: nativeDefault.radii.round, marginRight: obj[arg0].avatarMarginRight, backgroundColor: str };
+  str = "transparent";
   if (arg1) {
-    str = tmp2(576).colors.BORDER_STRONG;
+    str = tmp2(588).colors.BORDER_STRONG;
   }
-  obj3.backgroundColor = str;
-  obj.avatarContainer = obj3;
-  let num = 0.5;
+  num = 0.5;
   if (arg1) {
     num = 0;
   }
-  obj.avatar = { opacity: num };
-  const obj2 = { padding: obj[arg0].padding, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", width: "100%", position: "relative", borderRadius: nativeDefault.radii.sm };
-  obj.placeholderBar = { borderRadius: nativeDefault.radii.md, height: obj[arg0].placeholderBarHeight, backgroundColor: nativeDefault.colors.BORDER_STRONG };
-  const obj4 = { borderRadius: nativeDefault.radii.md, height: obj[arg0].placeholderBarHeight, backgroundColor: nativeDefault.colors.BORDER_STRONG };
-  obj.nameplate = { borderRadius: nativeDefault.radii.sm };
+  ({ borderRadius: nativeDefault.radii.md, height: obj[arg0].placeholderBarHeight, backgroundColor: nativeDefault.colors.BORDER_STRONG });
+  ({ borderRadius: nativeDefault.radii.sm });
   return obj;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/nameplates/native/NameplateDummyUserPreview.tsx");
-
-export { NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG };
-export const NameplateDummyUserPreview = function NameplateDummyUserPreview(hideAvatar) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let animate;
+  let avatarSize;
+  let hideAvatar;
+  let items1;
+  let items2;
+  let nameplate;
+  let style;
+  let theme;
+  let tmp7;
+  let tmp8;
+  let width;
+  let obj = react2;
+  const cResult = obj.c(26);
+  ({ width, hideAvatar, avatarSize, nameplate, style, animate } = arg0);
+  const tmp4 = undefined !== hideAvatar && hideAvatar;
+  if (undefined === avatarSize) {
+    avatarSize = tmp(1189).AvatarSizes.NORMAL;
+  }
+  const tmp6 = closure_8(avatarSize, tmp4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ThemeStore];
+    const fn = function v() {
+      const obj = themes;
+      return obj.isThemeDark(theme.theme);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+  } else {
+    [tmp7, tmp8] = cResult;
+  }
+  get_initialized;
+  if (cResult[2] === style) {
+    let tmp12;
+    if (cResult[3] === tmp6.container) {
+      tmp12 = cResult[4];
+    }
+    if (cResult[5] === (undefined !== animate && animate)) {
+      if (cResult[6] === nameplate) {
+        let tmp13;
+        if (cResult[7] === tmp6.nameplate) {
+          tmp13 = cResult[8];
+        }
+        const tmp17 = importDefault(tmp11 ? 8280 : 8281);
+        if (cResult[9] === avatarSize) {
+          if (cResult[10] === tmp6.avatar) {
+            let tmp18;
+            if (cResult[11] === tmp17) {
+              tmp18 = cResult[12];
+            }
+            if (cResult[13] === tmp6.avatarContainer) {
+              let tmp21;
+              let tmp25;
+              if (cResult[14] === tmp18) {
+                tmp21 = cResult[15];
+              }
+              if (cResult[16] !== width) {
+                const obj2 = { width };
+                cResult[16] = width;
+                cResult[17] = obj2;
+                tmp25 = obj2;
+              } else {
+                tmp25 = cResult[17];
+              }
+              if (cResult[18] === tmp6.placeholderBar) {
+                let tmp26;
+                if (cResult[19] === tmp25) {
+                  tmp26 = cResult[20];
+                }
+                if (cResult[21] === tmp21) {
+                  if (cResult[22] === tmp26) {
+                    if (cResult[23] === tmp12) {
+                      let tmp30;
+                      if (cResult[24] === tmp13) {
+                        tmp30 = cResult[25];
+                      }
+                      return tmp30;
+                    }
+                  }
+                }
+                const obj3 = { style: tmp12, children: items1 };
+                items1 = [tmp13, tmp21, tmp26];
+                const tmp33 = metroRequire(View, obj3);
+                cResult[21] = tmp21;
+                cResult[22] = tmp26;
+                cResult[23] = tmp12;
+                cResult[24] = tmp13;
+                cResult[25] = tmp33;
+                tmp30 = tmp33;
+              }
+              const obj4 = { style: items2 };
+              items2 = [tmp6.placeholderBar, tmp25];
+              const tmp29 = hasOwnProperty(View, obj4);
+              cResult[18] = tmp6.placeholderBar;
+              cResult[19] = tmp25;
+              cResult[20] = tmp29;
+              tmp26 = tmp29;
+            }
+            const obj5 = { style: tmp6.avatarContainer, children: tmp18 };
+            const tmp24 = hasOwnProperty(View, obj5);
+            cResult[13] = tmp6.avatarContainer;
+            cResult[14] = tmp18;
+            cResult[15] = tmp24;
+            tmp21 = tmp24;
+          }
+        }
+        const obj6 = { source: tmp17, size: avatarSize, "aria-hidden": true, style: tmp6.avatar };
+        const tmp20 = hasOwnProperty(native.Avatar, obj6);
+        cResult[9] = avatarSize;
+        cResult[10] = tmp6.avatar;
+        cResult[11] = tmp17;
+        cResult[12] = tmp20;
+        tmp18 = tmp20;
+      }
+    }
+    const obj7 = { nameplate, fullOpacity: true, style: tmp6.nameplate, animate: undefined !== animate && animate };
+    const tmp16 = hasOwnProperty(NameplateDefault, obj7);
+    cResult[5] = undefined !== animate && animate;
+    cResult[6] = nameplate;
+    cResult[7] = tmp6.nameplate;
+    cResult[8] = tmp16;
+    tmp13 = tmp16;
+  }
+  const items3 = [tmp6.container, style];
+  cResult[2] = style;
+  cResult[3] = tmp6.container;
+  cResult[4] = items3;
+  tmp12 = items3;
+}) : ((hideAvatar) => {
+  let Avatar;
+  let animate;
+  let items1;
+  let items2;
+  let items3;
+  let nameplate;
+  let obj5;
+  let style;
+  let theme;
   let flag = hideAvatar.hideAvatar;
+  const width = hideAvatar.width;
   if (flag === undefined) {
     flag = false;
   }
@@ -61,21 +202,27 @@ export const NameplateDummyUserPreview = function NameplateDummyUserPreview(hide
     animate = false;
   }
   const tmp3 = closure_8(NORMAL, flag);
+  let obj = get_initialized;
   const items = [ThemeStore];
-  const obj2 = { style: null, children: null };
-  const items1 = [tmp3.container, style];
-  obj2.style = items1;
-  const stateFromStores = initialize.useStateFromStores(items, () => themes.isThemeDark(theme.theme));
-  const items2 = [hasOwnProperty(NameplateDefault, { nameplate, fullOpacity: true, style: tmp3.nameplate, animate }), , ];
-  const obj4 = { style: tmp3.avatarContainer, children: null };
+  const obj2 = { style: items1, children: items2 };
+  items1 = [tmp3.container, style];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const obj = themes;
+    return obj.isThemeDark(theme.theme);
+  });
+  items2 = [, , ];
   const obj3 = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
-  const tmp6 = timestampProducer;
-  obj4.children = hasOwnProperty(native.Avatar, { source: importDefault(stateFromStores ? 9133 : 9134), size: NORMAL, "aria-hidden": true, style: tmp3.avatar });
+  items2[0] = hasOwnProperty(NameplateDefault, obj3);
+  const obj4 = { style: tmp3.avatarContainer, children: hasOwnProperty(Avatar, obj5) };
+  obj5 = { source: importDefault(stateFromStores ? 8280 : 8281), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
+  Avatar = native.Avatar;
   items2[1] = hasOwnProperty(View, obj4);
-  const obj6 = { style: null };
-  const items3 = [tmp3.placeholderBar, { width: hideAvatar.width }];
-  obj6.style = items3;
+  const obj6 = { style: items3 };
+  items3 = [tmp3.placeholderBar, { width }];
   items2[2] = hasOwnProperty(View, obj6);
-  obj2.children = items2;
-  return tmp6(View, obj2);
-};
+  return metroRequire(View, obj2);
+});
+const result = size.fileFinishedImporting("modules/collectibles/nameplates/native/NameplateDummyUserPreview.tsx");
+
+export { NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG };
+export const NameplateDummyUserPreview = tmp4;

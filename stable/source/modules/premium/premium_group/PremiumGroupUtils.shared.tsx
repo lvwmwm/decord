@@ -1,34 +1,38 @@
-// Module ID: 8341
-// Function ID: 8342
-// Dependencies: [4451, 4446, 7511, 2]
+// Module ID: 7498
+// Function ID: 7499
+// Dependencies: [4496, 4491, 6656, 2]
 // Exports: getPriceString
 
-// Module 8341
-import PremiumUtils from "PremiumUtils" /* 4446 */;
-import PriceUtils from "PriceUtils" /* 7511 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4451 */;
+// Module 7498
+import PremiumUtils from "PremiumUtils" /* 4491 */;
+import PriceUtils from "PriceUtils" /* 6656 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4496 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.shared.tsx");
 
 export const getPriceString = function getPriceString(hasAnyPremiumGroup, arg1) {
+  let interval;
+  let intervalCount;
   if (null != hasAnyPremiumGroup) {
     if (hasAnyPremiumGroup.hasAnyPremiumGroup) {
       const planIdFromItems = hasAnyPremiumGroup.planIdFromItems;
       if (null == planIdFromItems) {
         return null;
       } else {
-        value = SubscriptionPlanStore.get(planIdFromItems);
+        const value = SubscriptionPlanStore.get(planIdFromItems);
         if (null == value) {
           return null;
         } else {
-          const price = PremiumUtils.getPrice(planIdFromItems);
+          const obj2 = PremiumUtils;
+          const price = obj2.getPrice(planIdFromItems);
+          const obj3 = PriceUtils;
+          const formatPriceResult = obj3.formatPrice(price.amount, price.currency);
           const tmp2 = require;
-          const formatPriceResult = PriceUtils.formatPrice(price.amount, price.currency);
           if (tmp) {
             ({ interval, intervalCount } = value);
-            return tmp2(7511).formatRate(formatPriceResult, interval, intervalCount);
+            const tmp2Result = tmp2(6656);
+            return tmp2Result.formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;
           }

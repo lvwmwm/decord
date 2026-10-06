@@ -1,33 +1,249 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 16297
+// Function ID: 16298
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1483, 21, 4524, 11510, 9555, 11511, 7427, 12364, 12478, 7429, 2]
-// Exports: useAppLauncherActionSheet
+// Dependencies: [32, 19, 1490, 21, 558, 576, 4570, 10749, 8707, 10750, 11570, 11437, 6572, 6574, 2]
 
-// Module 16983 (AppLauncherActionSheet)
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
-import ActionSheetContextDefault from "ActionSheetContext" /* 7429 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9555 */;
-import AppLauncherContext from "AppLauncherContext" /* 11510 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11511 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12364 */;
-import getAppDMApplication from "getAppDMApplication" /* 12478 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 16297 (AppLauncherActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import reactDefault from "react" /* 6574 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8707 */;
+import AppLauncherContext from "AppLauncherContext" /* 10749 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 10750 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 11437 */;
+import getAppDMApplication from "getAppDMApplication" /* 11570 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function AppLauncherActionSheet(arg0) {
-  ({ chatInputRef: require, channel } = arg0);
-  const ref = noop.useRef(null);
-  const sharedValue = ReanimatedRexport.useSharedValue(-1);
-  const sharedValue1 = ReanimatedRexport.useSharedValue(0);
-  const ref1 = noop.useRef(undefined);
+let BottomSheet, chatInputRef;
+
+const AppLauncherRouteName = AppLauncherNativeConstants.AppLauncherRouteName;
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) => {
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(21);
+  chatInputRef = chatInputRef.chatInputRef;
+  const channel = chatInputRef.channel;
+  const ref = react.useRef(null);
+  const obj3 = ReanimatedRexport;
+  const sharedValue = obj3.useSharedValue(-1);
+  const obj4 = ReanimatedRexport;
+  const sharedValue1 = obj4.useSharedValue(0);
+  const ref1 = react.useRef(undefined);
+  const ref2 = react.useRef(AppLauncherContext.AppLauncherKeyboardCloseReason.DISMISSED);
   const TEXT = AppLauncherTypes.AppLauncherEntrypoint.TEXT;
-  const ref2 = noop.useRef(AppLauncherContext.AppLauncherKeyboardCloseReason.DISMISSED);
+  const obj5 = useDefaultAppLauncherWidth;
+  const defaultAppLauncherWidth = obj5.useDefaultAppLauncherWidth(TEXT);
+  const obj2 = react;
+  if (cResult[0] !== channel) {
+    const obj6 = { channel, type: "channel" };
+    cResult[0] = channel;
+    cResult[1] = obj6;
+    tmp9 = obj6;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] !== chatInputRef) {
+    const fn = function y() {
+      const current = chatInputRef.current;
+      let applicationCommandManager;
+      if (current != null) {
+        applicationCommandManager = current.getApplicationCommandManager();
+      }
+      return applicationCommandManager;
+    };
+    cResult[2] = chatInputRef;
+    cResult[3] = fn;
+    tmp10 = fn;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.closeActionSheet();
+        }
+      }
+    }
+    class L {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.expandActionSheet();
+        }
+      }
+    }
+    cResult[4] = E;
+    cResult[5] = L;
+    tmp11 = E;
+    tmp12 = L;
+  } else {
+    class E {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.closeActionSheet();
+        }
+      }
+    }
+    class L {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.expandActionSheet();
+        }
+      }
+    }
+  }
+  if (cResult[6] !== tmp10) {
+    class E {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.closeActionSheet();
+        }
+      }
+    }
+    class L {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.expandActionSheet();
+        }
+      }
+    }
+    tmp14[1] = tmp11;
+    tmp14[2] = tmp12;
+    cResult[6] = tmp10;
+    cResult[7] = tmp14;
+    tmp13 = tmp14;
+  } else {
+    class E {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.closeActionSheet();
+        }
+      }
+    }
+  }
+  const ref3 = obj2.useRef(tmp13);
+  if (cResult[8] !== channel) {
+    class E {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.closeActionSheet();
+        }
+      }
+    }
+    class L {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.expandActionSheet();
+        }
+      }
+    }
+    if (tmp17 != null) {
+      class E {
+        constructor() {
+          const current = ref.current;
+          if (current != null) {
+            current.closeActionSheet();
+          }
+        }
+      }
+    }
+    cResult[8] = channel;
+    cResult[9] = undefined;
+  } else {
+    class E {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.closeActionSheet();
+        }
+      }
+    }
+  }
+  if (cResult[10] !== tmp16) {
+    class E {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.closeActionSheet();
+        }
+      }
+    }
+    class L {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.expandActionSheet();
+        }
+      }
+    }
+    tmp20[0] = AppLauncherRouteName.HOME;
+    tmp20[1] = tmp16;
+    cResult[10] = tmp16;
+    cResult[11] = tmp20;
+  } else {
+    class E {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.closeActionSheet();
+        }
+      }
+    }
+  }
+  if (cResult[12] === sharedValue) {
+    class E {
+      constructor() {
+        const current = ref.current;
+        if (current != null) {
+          current.closeActionSheet();
+        }
+      }
+    }
+  }
+  cResult[12] = sharedValue;
+  cResult[13] = sharedValue1;
+  cResult[14] = tmp9;
+  cResult[15] = tmp19;
+  cResult[16] = defaultAppLauncherWidth;
+  cResult[17] = jsx(AppLauncherNavigatorDefault, { bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: ref1, context: tmp9, chatInputRef: ref3, entrypoint: TEXT, keyboardCloseReasonRef: ref2, width: defaultAppLauncherWidth, overrideParams: tmp19 });
+  jsx(AppLauncherNavigatorDefault, { bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: ref1, context: tmp9, chatInputRef: ref3, entrypoint: TEXT, keyboardCloseReasonRef: ref2, width: defaultAppLauncherWidth, overrideParams: tmp19 });
+}) : ((arg0) => {
+  let channel;
+  let closure_129_0;
+  let name;
+  ({ chatInputRef: closure_129_0, channel } = arg0);
+  const ref = react.useRef(null);
+  const obj = ReanimatedRexport;
+  const sharedValue = obj.useSharedValue(-1);
+  const obj2 = ReanimatedRexport;
+  const sharedValue1 = obj2.useSharedValue(0);
+  const ref1 = react.useRef(undefined);
+  const ref2 = react.useRef(AppLauncherContext.AppLauncherKeyboardCloseReason.DISMISSED);
+  const TEXT = AppLauncherTypes.AppLauncherEntrypoint.TEXT;
   const items = [channel];
-  const defaultAppLauncherWidth = useDefaultAppLauncherWidth.useDefaultAppLauncherWidth(TEXT);
-  const memo = noop.useMemo(() => ({ channel, type: "channel" }), items);
+  const obj3 = useDefaultAppLauncherWidth;
+  const defaultAppLauncherWidth = obj3.useDefaultAppLauncherWidth(TEXT);
   const obj4 = {
     getApplicationCommandManager() {
       const current = ref.current;
@@ -50,128 +266,100 @@ function AppLauncherActionSheet(arg0) {
       }
     }
   };
-  const obj5 = { ref, animatedIndex: sharedValue, scrollable: true, startExpanded: true, children: null };
-  const obj6 = {
-    bottomSheetIndex: sharedValue,
-    bottomSheetPosition: sharedValue1,
-    bottomSheetExpandReasonRef: ref1,
-    context: memo,
-    chatInputRef: noop.useRef({
-      getApplicationCommandManager() {
-        const current = ref.current;
-        let applicationCommandManager;
-        if (current != null) {
-          applicationCommandManager = current.getApplicationCommandManager();
-        }
-        return applicationCommandManager;
-      },
-      closeCustomKeyboard() {
-        const current = ref.current;
-        if (current != null) {
-          current.closeActionSheet();
-        }
-      },
-      openCustomKeyboard() {
-        const current = ref.current;
-        if (current != null) {
-          current.expandActionSheet();
-        }
-      }
-    }),
-    entrypoint: TEXT,
-    keyboardCloseReasonRef: ref2,
-    width: defaultAppLauncherWidth,
-    overrideParams: null
-  };
-  const obj7 = { initialRouteName: AppLauncherRouteName.HOME, initialSearchQuery: null };
-  const ref3 = noop.useRef({
-    getApplicationCommandManager() {
-      const current = ref.current;
-      let applicationCommandManager;
-      if (current != null) {
-        applicationCommandManager = current.getApplicationCommandManager();
-      }
-      return applicationCommandManager;
-    },
-    closeCustomKeyboard() {
-      const current = ref.current;
-      if (current != null) {
-        current.closeActionSheet();
-      }
-    },
-    openCustomKeyboard() {
-      const current = ref.current;
-      if (current != null) {
-        current.expandActionSheet();
-      }
-    }
-  });
-  const appDMApplication = getAppDMApplication.getAppDMApplication(channel);
-  let name;
+  const memo = react.useMemo(() => ({ channel, type: "channel" }), items);
+  const ref3 = react.useRef(obj4);
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj7 = { initialRouteName: AppLauncherRouteName.HOME, initialSearchQuery: name };
+  AppLauncherNavigatorDefault;
+  const obj8 = getAppDMApplication;
+  const appDMApplication = obj8.getAppDMApplication(channel);
+  name = undefined;
   if (appDMApplication != null) {
     name = appDMApplication.name;
   }
-  obj7.initialSearchQuery = name;
-  obj6.overrideParams = obj7;
-  obj5.children = <tmp10 bottomSheetIndex={sharedValue} bottomSheetPosition={sharedValue1} bottomSheetExpandReasonRef={ref1} context={memo} chatInputRef={noop.useRef({
-    getApplicationCommandManager() {
-      const current = ref.current;
-      let applicationCommandManager;
-      if (current != null) {
-        applicationCommandManager = current.getApplicationCommandManager();
-      }
-      return applicationCommandManager;
-    },
-    closeCustomKeyboard() {
-      const current = ref.current;
-      if (current != null) {
-        current.closeActionSheet();
-      }
-    },
-    openCustomKeyboard() {
-      const current = ref.current;
-      if (current != null) {
-        current.expandActionSheet();
-      }
+  return <BottomSheet ref={ref} animatedIndex={sharedValue} scrollable startExpanded>{null}</BottomSheet>;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(5);
+  [tmp4, tmp5] = react.useState(false);
+  let closure_0 = tmp5;
+  _slicedToArray(react.useState(false), 2);
+  if (cResult[0] === tmp4) {
+    let tmp6;
+    let tmp14;
+    if (cResult[1] === arg0) {
+      tmp6 = cResult[2];
     }
-  })} entrypoint={TEXT} keyboardCloseReasonRef={ref2} width={defaultAppLauncherWidth} overrideParams={null} />;
-  return jsx(Sheet_BottomSheet.BottomSheet, { ref, animatedIndex: sharedValue, scrollable: true, startExpanded: true, children: null });
-}
-const AppLauncherRouteName = fn(1483).AppLauncherRouteName;
-const jsx = fn(21).jsx;
-const size = fn(2);
+    if (cResult[3] !== tmp6) {
+      const obj2 = { appLauncherActionSheet: tmp6, setAppLauncherActionSheetEnabled: tmp5 };
+      cResult[3] = tmp6;
+      cResult[4] = obj2;
+      tmp14 = obj2;
+    } else {
+      tmp14 = cResult[4];
+    }
+    return tmp14;
+  }
+  let tmp7 = null;
+  if (tmp4) {
+    const obj4 = {
+      transitionState: "visible",
+      close() {
+
+        },
+      onLeave() {
+          tmp5(false);
+        },
+      registerDismissHandler() {
+
+        }
+    };
+    const Provider = reactDefault.Provider;
+    const merged = Object.assign(arg0);
+    tmp7 = <Provider value={obj4}>{null}</Provider>;
+  }
+  cResult[0] = tmp4;
+  cResult[1] = arg0;
+  cResult[2] = tmp7;
+  tmp6 = tmp7;
+}) : ((arg0) => {
+  let first;
+  let items;
+  let tmp3;
+  let closure_0 = arg0;
+  [first, tmp3] = react.useState(false);
+  let closure_2 = tmp3;
+  const obj = {
+    appLauncherActionSheet: react.useMemo(() => {
+      let tmp = null;
+      if (first) {
+        const obj2 = {
+          transitionState: "visible",
+          close() {
+
+            },
+          onLeave() {
+              closure_1_2(false);
+            },
+          registerDismissHandler() {
+
+            }
+        };
+        const Provider = reactDefault.Provider;
+        const merged = Object.assign(closure_0);
+        tmp = <Provider value={obj2}>{null}</Provider>;
+      }
+      return tmp;
+    }, items),
+    setAppLauncherActionSheetEnabled: tmp3
+  };
+  items = [first, arg0];
+  return obj;
+});
 const result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherActionSheet.tsx");
 
-export const useAppLauncherActionSheet = function useAppLauncherActionSheet(arg0) {
-  closure_0 = arg0;
-  let tmp = _slicedToArray(noop.useState(false), 2);
-  const first = tmp[0];
-  closure_2 = tmp3;
-  let obj = { appLauncherActionSheet: null, setAppLauncherActionSheetEnabled: tmp[1] };
-  const items = [first, arg0];
-  obj.appLauncherActionSheet = noop.useMemo(() => {
-    let tmp = null;
-    if (first) {
-      const obj = { value: null, children: null };
-      const obj2 = {
-        transitionState: "visible",
-        close() {
-
-          },
-        onLeave() {
-            closure_1_2(false);
-          },
-        registerDismissHandler() {
-
-          }
-      };
-      obj.value = obj2;
-      const obj3 = {};
-      const merged = Object.assign(closure_0);
-      obj.children = <AppLauncherActionSheet />;
-      tmp = jsx(ActionSheetContextDefault.Provider, { value: null, children: null });
-    }
-    return tmp;
-  }, items);
-  return obj;
-};
+export const useAppLauncherActionSheet = tmp2;

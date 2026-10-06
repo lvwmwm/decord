@@ -1,10 +1,11 @@
-// Module ID: 7794
-// Function ID: 7795
+// Module ID: 6944
+// Function ID: 6945
 // Name: GuildMemberSafetySearchUtils
-// Dependencies: [7795, 2]
+// Dependencies: [6945, 2]
 // Exports: splitQuery
 
-// Module 7794 (GuildMemberSafetySearchUtils)
+// Module 6944 (GuildMemberSafetySearchUtils)
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6945 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearchUtils.tsx");
@@ -15,6 +16,7 @@ export const splitQuery = function splitQuery(query) {
   const items = [];
   const items1 = [];
   const item = mapped.forEach((item) => {
+    const obj = ApplicationCommandUtils;
     if (obj.isSnowflake(item)) {
       items.push(item);
     } else {

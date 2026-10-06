@@ -1,31 +1,36 @@
-// Module ID: 15685
-// Function ID: 15686
+// Module ID: 14946
+// Function ID: 14947
 // Name: YouBarAvatarDecoAccessibilitySetting
-// Dependencies: [4780, 8265, 11754, 1115, 504, 14748, 2]
+// Dependencies: [4826, 7421, 10874, 1127, 504, 14000, 2]
 
-// Module 15685 (YouBarAvatarDecoAccessibilitySetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14748 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+// Module 14946 (YouBarAvatarDecoAccessibilitySetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14000 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["34XN2f"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["34XN2f"]);
   },
-  parent: fn(8265).MobileUserSettings.ACCESSIBILITY,
+  parent: MobileUserSettings.ACCESSIBILITY,
   useValue() {
     const items = [AccessibilityStore];
-    return initialize.useStateFromStores(items, () => AccessibilityStore.animateYouBarAvatarDeco);
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => AccessibilityStore.animateYouBarAvatarDeco);
   },
   onValueChange(animateAvatarDeco) {
-    return AccessibilityActionCreators.setYouBarAnimations({ animateAvatarDeco });
+    const obj = AccessibilityActionCreators;
+    const obj2 = { animateAvatarDeco };
+    return obj.setYouBarAnimations(obj2);
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/YouBarAvatarDecoAccessibilitySetting.tsx");
 
 export default toggle;

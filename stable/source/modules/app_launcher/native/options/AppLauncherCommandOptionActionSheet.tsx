@@ -1,25 +1,173 @@
-// Module ID: 12448
-// Function ID: 12449
+// Module ID: 11535
+// Function ID: 11536
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [19, 17, 1483, 21, 4788, 576, 7427, 7426, 7475, 4755, 1177, 2]
-// Exports: AppLauncherCommandOptionActionSheet
+// Dependencies: [109, 19, 17, 1490, 21, 4837, 588, 558, 576, 6619, 4801, 1189, 6571, 6572, 2]
 
-// Module 12448 (AppLauncherCommandOptionActionSheet)
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import noop from "module_19" /* 19 */;
+// Module 11535 (AppLauncherCommandOptionActionSheet)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const DEFAULT_CONTENT_PADDING = fn(1483).DEFAULT_CONTENT_PADDING;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { actionSheetBackground: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND }, titleContainer: { backgroundColor: "transparent" }, titleWrapper: { alignItems: "center" }, subtitleWrapper: { paddingHorizontal: 12, textAlign: "center" }, contentContainer: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOptionActionSheet.tsx");
+const require = globalThis.__r;
+let BottomSheet, _require;
 
-export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOptionActionSheet(startExpanded) {
+let obj2;
+let closure_3 = ["option", "children", "contentContainerStyles", "scrollable", "startExpanded"];
+const View = react_native.View;
+const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
+const jsx = Fragment.jsx;
+let obj = { actionSheetBackground: obj2, titleContainer: { backgroundColor: "transparent" }, titleWrapper: { alignItems: "center" }, subtitleWrapper: { paddingHorizontal: 12, textAlign: "center" }, contentContainer: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } };
+obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+let closure_7 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let contentContainerStyles;
+  let option;
+  let scrollable;
+  let startExpanded;
+  let tmp16;
+  let tmp17;
+  let tmp21;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  let obj = require("react");
+  const cResult = obj.c(32);
+  if (cResult[0] !== arg0) {
+    ({ option, children, contentContainerStyles, scrollable, startExpanded } = arg0);
+    const tmp12 = _objectWithoutProperties(arg0, closure_3);
+    _require = tmp12;
+    cResult[0] = arg0;
+    cResult[1] = children;
+    cResult[2] = contentContainerStyles;
+    cResult[3] = option;
+    cResult[4] = tmp12;
+    cResult[5] = scrollable;
+    cResult[6] = startExpanded;
+    tmp9 = startExpanded;
+    tmp8 = scrollable;
+    tmp6 = option;
+    tmp5 = contentContainerStyles;
+    tmp4 = children;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+    _require = cResult[4];
+    tmp8 = cResult[5];
+    tmp9 = cResult[6];
+  }
+  const tmp15 = closure_7();
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { alignSelf: "flex-start" };
+    cResult[7] = obj2;
+    tmp16 = obj2;
+  } else {
+    tmp16 = cResult[7];
+  }
+  if (cResult[8] !== tmp7) {
+    const tmp20 = <View style={tmp16}>{null}</View>;
+    cResult[8] = tmp7;
+    cResult[9] = tmp20;
+    tmp17 = tmp20;
+  } else {
+    tmp17 = cResult[9];
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp23 = jsx(require("native").Spacer, { size: 24 });
+    cResult[10] = tmp23;
+    tmp21 = tmp23;
+  } else {
+    tmp21 = cResult[10];
+  }
+  if (cResult[11] === tmp6.displayDescription) {
+    if (cResult[12] === tmp6.displayName) {
+      if (cResult[13] === tmp15.subtitleWrapper) {
+        if (cResult[14] === tmp15.titleContainer) {
+          if (cResult[15] === tmp15.titleWrapper) {
+            let tmp24;
+            if (cResult[16] === tmp17) {
+              tmp24 = cResult[17];
+            }
+            if (cResult[18] === tmp5) {
+              let tmp26;
+              if (cResult[19] === tmp15.contentContainer) {
+                tmp26 = cResult[20];
+              }
+              if (cResult[21] === tmp4) {
+                let tmp27;
+                if (cResult[22] === tmp26) {
+                  tmp27 = cResult[23];
+                }
+                if (cResult[24] === tmp6.name) {
+                  if (cResult[25] === tmp7) {
+                    if (cResult[26] === (undefined === tmp8 || tmp8)) {
+                      if (cResult[27] === (undefined === tmp9 || tmp9)) {
+                        if (cResult[28] === tmp15.actionSheetBackground) {
+                          if (cResult[29] === tmp24) {
+                            let tmp31;
+                            if (cResult[30] === tmp27) {
+                              tmp31 = cResult[31];
+                            }
+                            return tmp31;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                BottomSheet = tmp(6572).BottomSheet;
+                const merged = Object.assign(tmp7);
+                const tmp36 = <BottomSheet key={tmp6.name} backgroundStyles={tmp15.actionSheetBackground} scrollable={undefined === tmp8 || tmp8} startExpanded={undefined === tmp9 || tmp9} header={tmp24}>{tmp27}</BottomSheet>;
+                cResult[24] = tmp6.name;
+                cResult[25] = tmp7;
+                cResult[26] = undefined === tmp8 || tmp8;
+                cResult[27] = undefined === tmp9 || tmp9;
+                cResult[28] = tmp15.actionSheetBackground;
+                cResult[29] = tmp24;
+                cResult[30] = tmp27;
+                cResult[31] = tmp36;
+                tmp31 = tmp36;
+              }
+              const tmp30 = <View style={tmp26}>{tmp4}</View>;
+              cResult[21] = tmp4;
+              cResult[22] = tmp26;
+              cResult[23] = tmp30;
+              tmp27 = tmp30;
+            }
+            const items = [tmp15.contentContainer, tmp5];
+            cResult[18] = tmp5;
+            cResult[19] = tmp15.contentContainer;
+            cResult[20] = items;
+            tmp26 = items;
+          }
+        }
+      }
+    }
+  }
+  const tmp25 = jsx(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { titleContainerStyle: tmp15.titleContainer, titleWrapperStyle: tmp15.titleWrapper, subtitleStyle: tmp15.subtitleWrapper, leading: tmp17, title: tmp6.displayName, subtitle: tmp6.displayDescription, trailing: tmp21 });
+  cResult[11] = tmp6.displayDescription;
+  cResult[12] = tmp6.displayName;
+  cResult[13] = tmp15.subtitleWrapper;
+  cResult[14] = tmp15.titleContainer;
+  cResult[15] = tmp15.titleWrapper;
+  cResult[16] = tmp17;
+  cResult[17] = tmp25;
+  tmp24 = tmp25;
+}) : ((startExpanded) => {
+  let children;
+  let contentContainerStyles;
+  let option;
+  let scrollable;
   ({ option, scrollable } = startExpanded);
   ({ children, contentContainerStyles } = startExpanded);
   if (scrollable === undefined) {
@@ -30,40 +178,14 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
     flag = true;
   }
   const merged = Object.assign(startExpanded, Object.assign({ option: 0, children: 0, contentContainerStyles: 0, scrollable: 0, startExpanded: 0 }));
-  const tmp2 = closure_5();
-  const obj = {};
+  const tmp2 = closure_7();
+  BottomSheet = merged(6572).BottomSheet;
   const merged1 = Object.assign(merged);
-  obj.backgroundStyles = tmp2.actionSheetBackground;
-  obj.scrollable = scrollable;
-  obj.startExpanded = flag;
-  const obj3 = { titleContainerStyle: tmp2.titleContainer, titleWrapperStyle: tmp2.titleWrapper, subtitleStyle: tmp2.subtitleWrapper, leading: null, title: null, subtitle: null, trailing: null };
-  const obj4 = {
-    style: { alignSelf: "flex-start" },
-    children: jsx(merged(7475).ActionSheetCloseButton, {
-      onPress() {
-        ActionSheetActionCreatorsDefault.hideActionSheet();
-        const onDismiss = merged.onDismiss;
-        if (onDismiss != null) {
-          onDismiss();
-        }
-      }
-    })
-  };
-  obj3.leading = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(7475).ActionSheetCloseButton, {
-    onPress() {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-      const onDismiss = merged.onDismiss;
-      if (onDismiss != null) {
-        onDismiss();
-      }
-    }
-  })}</View>;
+  const BottomSheetTitleHeader = merged(6571).BottomSheetTitleHeader;
   ({ displayName: obj2.title, displayDescription: obj2.subtitle } = option);
-  obj3.trailing = jsx(merged(1177).Spacer, { size: 24 });
-  obj.header = jsx(merged(7426).BottomSheetTitleHeader, { titleContainerStyle: tmp2.titleContainer, titleWrapperStyle: tmp2.titleWrapper, subtitleStyle: tmp2.subtitleWrapper, leading: null, title: null, subtitle: null, trailing: null });
-  const obj9 = { style: null, children };
   const items = [tmp2.contentContainer, contentContainerStyles];
-  obj9.style = items;
-  obj.children = <View style={null}>{children}</View>;
-  return jsx(merged(7427).BottomSheet, {}, option.name);
-};
+  return <BottomSheet key={option.name} backgroundStyles={tmp2.actionSheetBackground} scrollable={scrollable} startExpanded={flag} header={<BottomSheetTitleHeader titleContainerStyle={tmp2.titleContainer} titleWrapperStyle={tmp2.titleWrapper} subtitleStyle={tmp2.subtitleWrapper} leading={null} title={null} subtitle={null} trailing={null} />}><View style={items}>{children}</View></BottomSheet>;
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOptionActionSheet.tsx");
+
+export const AppLauncherCommandOptionActionSheet = tmp3;

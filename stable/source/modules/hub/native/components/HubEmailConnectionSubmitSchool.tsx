@@ -1,192 +1,240 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 12147
+// Function ID: 12148
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 13001, 1074, 21, 4788, 576, 1484, 7258, 13014, 4688, 13009, 1177, 1115, 4784, 6879, 5218, 2]
+// Dependencies: [5, 32, 19, 17, 12126, 1086, 21, 4837, 588, 1491, 6399, 12141, 4737, 12136, 1189, 1127, 4833, 6020, 5282, 2]
 // Exports: default
 
-// Module 13018 (HubEmailConnectionSubmitSchool)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import useNavigation from "useNavigation" /* 1484 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6879 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7258 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13009 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 12147 (HubEmailConnectionSubmitSchool)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl6 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import useNavigation from "useNavigation" /* 1491 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6020 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6399 */;
+import HubConstants from "HubConstants" /* 12126 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12136 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(13001).HubEmailConnectionSteps;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { paddingHorizontal: 16 }, title: { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 24 }, scrollViewContainer: { flexGrow: 2 }, input: { marginBottom: 8 }, redesignTextInput: null, redesignGrowSpacing: null, redesignSubmit: null };
-let obj3 = { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
-obj2.redesignTextInput = { borderRadius: nativeDefault.radii.lg };
-let obj4 = { borderRadius: nativeDefault.radii.lg };
-obj2.redesignGrowSpacing = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
-let obj5 = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
-obj2.redesignSubmit = { paddingHorizontal: nativeDefault.space.PX_16 };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
+let c5, closure_2, dependencyMap;
+
+let c10;
+let c9;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let _slicedToArray = _slicedToArray_mod;
+({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
+const HubEmailConnectionSteps = HubConstants.HubEmailConnectionSteps;
+const Fonts = Constants.Fonts;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { paddingHorizontal: 16 }, title: obj2, description: { textAlign: "center", marginBottom: 24 }, scrollViewContainer: { flexGrow: 2 }, input: { marginBottom: 8 }, redesignTextInput: obj3, redesignGrowSpacing: obj4, redesignSubmit: obj5 };
+obj2 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
+createStyles = createStyles.createStyles;
+obj3 = { borderRadius: nativeDefault.radii.lg };
+obj4 = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
+obj5 = { paddingHorizontal: nativeDefault.space.PX_16 };
+let closure_11 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionSubmitSchool.tsx");
 
 export default function HubEmailConnectionSubmitSchool(arg0) {
+  let Button;
+  let _undefined;
+  let anyErrorMessage;
+  let c4;
+  let closure_3;
+  let first;
+  let first1;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let items;
+  let items1;
+  let items2;
+  let obj2;
+  let obj22;
+  let tmp10;
   ({ onClose: require, email: importDefault } = arg0);
+  dependencyMap = undefined;
+  closure_3 = undefined;
   _slicedToArray = undefined;
   let ref;
-  value = undefined;
-  closure_7 = async function _submitWaitlist(arg0, value) {
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp7 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_0 = tmp8;
-            _slicedToArray(null);
-            c3 = 2;
-            asyncGeneratorStep(true);
-            c4 = 3;
-            c5 = 1;
-            const obj5 = { value: tmp4(tmp47[11]).signup(importDefault, timestampProducer), done: false };
-            return obj5;
-          }
-        } else if (1 === tmp8) {
-          c3 = 0;
-          closure_129_3(false);
-          throw tmp47;
+  first1 = undefined;
+  let obj = function _submitWaitlist() {
+    obj = _asyncToGenerator(async function(arg0, value) {
+      let closure_1;
+      let obj3;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          if (2 === tmp8) {
-            c3 = 1;
-            closure_128_0 = tmp47;
-            const aPIError = new closure_0(tmp47[12]).APIError(closure_128_0);
-            closure_129_4(aPIError);
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          let closure_0;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_0 = tmp4;
+              _undefined(null);
+              c3 = 2;
+              closure_2_3(true);
+              c4 = 3;
+              c5 = 1;
+              const obj5 = { value: obj3.signup(importDefault, first1), done: false };
+              obj3 = tmp(closure_2[11]);
+              return obj5;
+            }
+          } else if (1 === c4) {
+            c3 = 0;
+            closure_129_3(false);
+            throw closure_2;
+          } else {
+            if (2 === c4) {
+              c3 = 1;
+              closure_0 = closure_2;
+              const self = this;
+              const self2 = this;
+              const aPIError = new closure_0(closure_2[12]).APIError(closure_0);
+              closure_129_4(aPIError);
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              closure_129_3(false);
+              c5 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              obj = { school: closure_129_6, onClose: closure_129_0 };
+              closure_129_2.push(constants.EMAIL_WAITLIST, obj);
+              c3 = 1;
+            }
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 !== 2) {
-            const obj = { school: closure_129_6, onClose: closure_129_0 };
-            closure_129_2.push(constants.EMAIL_WAITLIST, obj);
-            c3 = 1;
+            return { value: "IconComponent", done: null };
           }
-          c3 = 0;
-          closure_129_3(false);
-          c5 = 3;
-          const obj6 = { value, done: true };
-          return obj6;
-        }
-      } catch (tmp47) {
-        if (tmp5 === c3) {
-          c5 = tmp3;
-          throw tmp47;
-        } else if (tmp2 === tmp49) {
-          c4 = tmp2;
-        } else {
-          c4 = tmp;
+        } catch (tmp41) {
+          closure_2 = tmp41;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp41;
+          } else if (1 === tmp43) {
+            c4 = 1;
+          } else {
+            c4 = 2;
+          }
         }
       }
-    }
+    });
+    return obj(...arguments);
   };
   const tmp = closure_11();
-  dependencyMap = useNavigation.useNavigation();
-  const tmp4 = _slicedToArray(ref.useState(false), 2);
-  closure_3 = tmp4[1];
-  [obj2, c4] = ref.useState(null);
+  const tmp3 = dependencyMap;
+  obj = useNavigation;
+  dependencyMap = obj.useNavigation();
+  [first, closure_3] = ref.useState(false);
+  [obj2, c4] = _slicedToArray(ref.useState(null), 2);
+  const tmp6 = _slicedToArray(ref.useState(null), 2);
+  const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
   ref = ref.useRef(null);
-  [value, obj9.onChangeText] = ref.useState("");
-  const obj3 = { ref, contentContainerStyle: null, children: null };
-  const items = [tmp.scrollViewContainer, ];
-  const tmp5 = _slicedToArray(ref.useState(null), 2);
-  items[1] = { paddingBottom: useSafeAreaInsetsKeyboardAwareDefault().insets.bottom + nativeDefault.space.PX_16 };
-  obj3.contentContainerStyle = items;
-  let obj5 = { style: tmp.container, children: null };
-  let obj6 = { style: tmp.title, accessibilityRole: "header", children: null };
-  const intl = util.intl;
-  obj6.children = intl.string(util.t["2FNWBG"]);
-  const items1 = [closure_9(native.LegacyText, obj6), , ];
-  const obj7 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = util.intl;
-  obj7.children = intl2.string(util.t["/4y6ox"]);
-  items1[1] = closure_9(Text_Text.Text, obj7);
-  const obj9 = { label: null, placeholder: null, value: null, onChangeText: null, style: null, textStyle: null, clearButtonVisibility: null, error: null, onFocus: null, onBlur: null };
-  let obj4 = { paddingBottom: useSafeAreaInsetsKeyboardAwareDefault().insets.bottom + nativeDefault.space.PX_16 };
-  const tmp11 = closure_7;
-  const intl3 = util.intl;
-  obj9.label = intl3.string(util.t["L+AfJr"]);
-  const intl4 = util.intl;
-  obj9.placeholder = intl4.string(util.t.Y1btJd);
-  obj9.value = value;
+  [first1, tmp10] = ref.useState("");
+  let obj3 = { ref, contentContainerStyle: items, children: items2 };
+  items = [, ];
+  items[0] = tmp.scrollViewContainer;
+  let obj4 = { paddingBottom: insets.bottom + nativeDefault.space.PX_16 };
+  const HubEmailConnectionScreen = HubEmailConnectionModal.HubEmailConnectionScreen;
+  items[1] = obj4;
+  let obj5 = { style: tmp.container, children: items1 };
+  let obj6 = { style: tmp.title, accessibilityRole: "header", children: intl.string(intl6.t["2FNWBG"]) };
+  const LegacyText = native.LegacyText;
+  intl = intl6.intl;
+  items1 = [closure_9(LegacyText, obj6), , ];
+  const obj7 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl6.t["/4y6ox"]) };
+  const Text = Text_Text.Text;
+  intl2 = intl6.intl;
+  items1[1] = closure_9(Text, obj7);
+  const obj9 = {
+    label: intl3.string(intl6.t["L+AfJr"]),
+    placeholder: intl4.string(intl6.t.Y1btJd),
+    value: first1,
+    onChangeText: tmp10,
+    style: null,
+    textStyle: null,
+    clearButtonVisibility: native.ClearButtonVisibility.WITH_CONTENT,
+    error: anyErrorMessage,
+    onFocus() {
+      const timerId = setTimeout(() => {
+        const current = ref.current;
+        if (current != null) {
+          current.scrollToEnd();
+        }
+      }, 100);
+    },
+    onBlur() {
+      const timerId = setTimeout(() => {
+        const current = ref.current;
+        if (current != null) {
+          current.scrollToEnd();
+        }
+      }, 100);
+    }
+  };
+  const tmp15 = FreeFormInputGroupDefault;
+  intl3 = intl6.intl;
+  intl4 = intl6.intl;
   ({ input: obj8.style, redesignTextInput: obj8.textStyle } = tmp);
-  obj9.clearButtonVisibility = native.ClearButtonVisibility.WITH_CONTENT;
-  let anyErrorMessage;
+  anyErrorMessage = undefined;
+  const tmp13 = obj;
   if (obj2 != null) {
     anyErrorMessage = obj2.getAnyErrorMessage();
   }
-  const obj10 = { children: null };
-  obj9.error = anyErrorMessage;
-  obj9.onFocus = function onFocus() {
-    const timerId = setTimeout(() => {
-      const current = ref.current;
-      if (current != null) {
-        current.scrollToEnd();
-      }
-    }, 100);
-  };
-  obj9.onBlur = function onBlur() {
-    const timerId = setTimeout(() => {
-      const current = ref.current;
-      if (current != null) {
-        current.scrollToEnd();
-      }
-    }, 100);
-  };
-  items1[2] = closure_9(FreeFormInputGroupDefault, obj9);
-  obj5.children = items1;
-  const items2 = [closure_10(value, obj5), closure_9(value, { style: tmp.redesignGrowSpacing }), ];
-  const obj12 = { style: tmp.redesignSubmit, children: null };
-  const obj22 = { size: "lg", loading: tmp4[0], text: null, onPress: null };
-  const intl5 = tmp2(1115).intl;
-  obj22.text = intl5.string(util.t.PDsYAo);
-  obj22.onPress = function submitWaitlist() {
-    const self = this;
-    const apply = closure_7.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
+  const obj10 = { children: closure_10(tmp13, obj3) };
+  items1[2] = closure_9(tmp15, obj9);
+  items2 = [tmp12(tmp14, obj5), , ];
+  const obj11 = { style: tmp.redesignGrowSpacing };
+  items2[1] = closure_9(first1, obj11);
+  const obj12 = { style: tmp.redesignSubmit, children: closure_9(Button, obj22) };
+  obj22 = {
+    size: "lg",
+    loading: first,
+    text: intl5.string(intl6.t.PDsYAo),
+    onPress: function submitWaitlist() {
+      return obj(...arguments);
     }
-    return applyArgumentsResult;
   };
-  obj12.children = closure_9(components_Button_Button.Button, obj22);
-  items2[2] = closure_9(value, obj12);
-  obj3.children = items2;
-  obj10.children = closure_10(tmp11, obj3);
-  return closure_9(HubEmailConnectionModal.HubEmailConnectionScreen, obj10);
+  Button = tmp2(5282).Button;
+  intl5 = tmp2(1127).intl;
+  items2[2] = closure_9(first1, obj12);
+  return closure_9(HubEmailConnectionScreen, obj10);
 };

@@ -1,47 +1,137 @@
-// Module ID: 14184
-// Function ID: 14185
+// Module ID: 13432
+// Function ID: 13433
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4788, 9403, 14182, 4784, 1115, 5218, 2]
-// Exports: ActivateDeviceError
+// Dependencies: [19, 17, 21, 4837, 558, 576, 8555, 4833, 13430, 1127, 5282, 2]
 
-// Module 14184 (ActivateDeviceError)
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import _modDef9403 from "module_9403" /* 9403 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14182 */;
-import noop from "module_19" /* 19 */;
+// Module 13432 (ActivateDeviceError)
+import react2 from "react" /* 576 */;
+import intl4 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8555 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13430 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+let onRetry;
+
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ Image: c3, View: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ image: { width: 254, height: 127, alignSelf: "center" } });
-const size = fn(2);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRetry) => {
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let tmp10;
+  let tmp14;
+  let tmp20;
+  let tmp22;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(10);
+  onRetry = onRetry.onRetry;
+  const tmp4 = closure_8();
+  if (cResult[0] !== tmp4.image) {
+    const obj2 = { source: AssetRegistryDefault, style: tmp4.image };
+    const tmp9 = hasOwnProperty(_false, obj2);
+    cResult[0] = tmp4.image;
+    cResult[1] = tmp9;
+    tmp5 = tmp9;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
+    const tmp13 = hasOwnProperty(Text, obj3);
+    cResult[2] = tmp13;
+    tmp10 = tmp13;
+  } else {
+    tmp10 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items };
+    items = [tmp10, ];
+    const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
+    const Text2 = tmp(4833).Text;
+    intl2 = tmp(1127).intl;
+    items[1] = hasOwnProperty(Text2, obj5);
+    const tmp19 = metroRequire(React3, obj4);
+    cResult[3] = tmp19;
+    tmp14 = tmp19;
+  } else {
+    tmp14 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl3 = tmp(1127).intl;
+    const stringResult = intl3.string(intl4.t["5911Lb"]);
+    cResult[4] = stringResult;
+    tmp20 = stringResult;
+  } else {
+    tmp20 = cResult[4];
+  }
+  if (cResult[5] !== onRetry) {
+    const obj6 = { size: "lg", text: tmp20, onPress: onRetry, grow: true };
+    const tmp24 = hasOwnProperty(components_Button_Button.Button, obj6);
+    cResult[5] = onRetry;
+    cResult[6] = tmp24;
+    tmp22 = tmp24;
+  } else {
+    tmp22 = cResult[6];
+  }
+  if (cResult[7] === tmp5) {
+    let tmp25;
+    if (cResult[8] === tmp22) {
+      tmp25 = cResult[9];
+    }
+    return tmp25;
+  }
+  const obj7 = { children: items1 };
+  items1 = [tmp5, tmp14, tmp22];
+  const tmp26 = metroRequire(metroImportDefault, obj7);
+  cResult[7] = tmp5;
+  cResult[8] = tmp22;
+  cResult[9] = tmp26;
+  tmp25 = tmp26;
+}) : ((onRetry) => {
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let tmp;
+  onRetry = onRetry.onRetry;
+  const obj = { children: items };
+  const obj2 = { source: AssetRegistryDefault, style: tmp.image };
+  tmp = closure_8();
+  items = [hasOwnProperty(_false, obj2), , ];
+  const obj3 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items1 };
+  const obj4 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
+  const Text = Text_Text.Text;
+  intl = intl4.intl;
+  items1 = [hasOwnProperty(Text, obj4), ];
+  const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl4.intl;
+  items1[1] = hasOwnProperty(Text2, obj5);
+  items[1] = metroRequire(React3, obj3);
+  const obj6 = { size: "lg", text: intl3.string(intl4.t["5911Lb"]), onPress: onRetry, grow: true };
+  const Button = components_Button_Button.Button;
+  intl3 = intl4.intl;
+  items[2] = hasOwnProperty(Button, obj6);
+  return metroRequire(metroImportDefault, obj);
+});
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceError.tsx");
 
-export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
-  const obj = { children: null };
-  const obj2 = { source: _modDef9403, style: closure_8().image };
-  const items = [hasOwnProperty(React3, obj2), , ];
-  const obj3 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: null };
-  const obj4 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: null };
-  const intl = util.intl;
-  obj4.children = intl.string(util.t["3dgwPD"]);
-  const items1 = [hasOwnProperty(Text_Text.Text, obj4), ];
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: null };
-  const intl2 = util.intl;
-  obj5.children = intl2.string(util.t["/GAO1P"]);
-  items1[1] = hasOwnProperty(Text_Text.Text, obj5);
-  obj3.children = items1;
-  items[1] = timestampProducer(React4, obj3);
-  const obj6 = { size: "lg", text: null, onPress: null, grow: true };
-  const intl3 = util.intl;
-  obj6.text = intl3.string(util.t["5911Lb"]);
-  obj6.onPress = onRetry.onRetry;
-  items[2] = hasOwnProperty(components_Button_Button.Button, obj6);
-  obj.children = items;
-  return timestampProducer(React5, obj);
-};
+export const ActivateDeviceError = tmp5;

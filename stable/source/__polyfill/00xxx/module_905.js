@@ -1,103 +1,148 @@
 // Module ID: 905
 // Function ID: 906
-// Dependencies: [904, 906, 907]
-// Exports: getVisibilityWatcher
+// Dependencies: [694]
+// Exports: getHttpRequestData, shouldIgnoreOnError
 
 // Module 905
-import _mod906 from "module_906" /* 906 */;
+import _mod694 from "module_694" /* 694 */;
 
 const require = globalThis.__r;
+let _require, hasOwnProperty;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const set = new Set();
-function onVisibilityUpdate(type) {
-  if ((function isPageHidden(type) {
-    let tmp = "pagehide" === type.type;
-    if (!tmp) {
-      const _document = require("module_904").WINDOW.document;
-      let visibilityState;
-      if (_document != null) {
-        visibilityState = _document.visibilityState;
-      }
-      tmp = "hidden" === visibilityState;
-    }
-    return tmp;
-  })(type)) {
-    if (num2 > -1) {
-      if ("visibilitychange" === type.type) {
-        for (const item10012 of set) {
-          let item10012Result = item10012();
-          continue;
+function ignoreNextOnError() {
+  closure_2 = closure_2 + 1;
+  const timerId = setTimeout(() => {
+    closure_2 = closure_2 - 1;
+  });
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+let closure_2 = 0;
+function wrap(__sentry_wrapped__) {
+  let tmp;
+  function isFunction(fn) {
+    return typeof fn === "function";
+  }
+  _require = __sentry_wrapped__;
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  if (isFunction(__sentry_wrapped__)) {
+    try {
+      __sentry_wrapped__ = __sentry_wrapped__.__sentry_wrapped__;
+      if (__sentry_wrapped__) {
+        let tmp14 = __sentry_wrapped__;
+        if (typeof tmp === "function") {
+          tmp14 = __sentry_wrapped__;
+        }
+        return tmp14;
+      } else {
+        const tmp2 = _require;
+        let obj2 = require("module_694");
+        if (obj2.getOriginalFunction(__sentry_wrapped__)) {
+          return __sentry_wrapped__;
+        } else {
+          function sentryWrapped() {
+            let closure_1;
+            const items = [...arguments];
+            try {
+              const self = this;
+              const tmp = items;
+              return items.apply(this, items.map((item) => wrap(item, obj)));
+            } catch (tmp2) {
+              obj = tmp2;
+              ignoreNextOnError();
+              obj = __sentry_wrapped__(obj[0]);
+              obj.withScope((addEventProcessor) => {
+                let _arguments;
+                addEventProcessor.addEventProcessor((extra) => {
+                  if (mechanism.mechanism) {
+                    obj = _arguments(obj[0]);
+                    const result = obj.addExceptionTypeValue(extra, undefined, undefined);
+                    const obj2 = _arguments(obj[0]);
+                    const result1 = obj2.addExceptionMechanism(extra, tmp.mechanism);
+                  }
+                  const obj3 = { arguments: _arguments };
+                  const merged = Object.assign(extra.extra);
+                  extra.extra = obj3;
+                  return extra;
+                });
+                obj = _mod694;
+                obj.captureException(mechanism);
+              });
+              throw tmp2;
+            }
+          }
+          try {
+            for (const key10019 in __sentry_wrapped__) {
+              let tmp16 = key10019;
+              let _Object3 = Object;
+              hasOwnProperty = Object.prototype.hasOwnProperty;
+              if (!hasOwnProperty.call(__sentry_wrapped__, key10019)) {
+                continue;
+              } else {
+                sentryWrapped[tmp16] = __sentry_wrapped__[tmp16];
+                continue;
+              }
+              continue;
+            }
+            let obj3 = require("module_694");
+            obj3.markFunctionWrapped(sentryWrapped, __sentry_wrapped__);
+            const obj4 = require("module_694");
+            let result = obj4.addNonEnumerableProperty(__sentry_wrapped__, "__sentry_wrapped__", sentryWrapped);
+            try {
+              const _Object = Object;
+              if (Object.getOwnPropertyDescriptor(sentryWrapped, "name").configurable) {
+                const _Object2 = Object;
+                const obj5 = {
+                  get() {
+                                  return __sentry_wrapped__.name;
+                                }
+                };
+                Object.defineProperty(sentryWrapped, "name", obj5);
+              }
+            } catch (err) {
+            }
+            return sentryWrapped;
+          } catch (err) {
+          }
         }
       }
-      const _isFinite = isFinite;
-      if (!isFinite(num2)) {
-        num2 = 0;
-        if ("visibilitychange" === type.type) {
-          num2 = type.timeStamp;
-        }
-        _mod906.removePageListener("prerenderingchange", onVisibilityUpdate, true);
-      }
+    } catch (err) {
+      return __sentry_wrapped__;
     }
+  } else {
+    return __sentry_wrapped__;
   }
 }
 
-export const getVisibilityWatcher = () => {
-  if (require("module_904").WINDOW.document) {
-    if (num2 < 0) {
-      _require = tmp(907).getActivationStart();
-      let tmp8;
-      if (!tmp(904).WINDOW.document.prerendering) {
-        const _globalThis = globalThis;
-        const _performance = performance;
-        const entriesByType = _performance.getEntriesByType("visibility-state");
-        const first = entriesByType.filter((name) => {
-          let tmp = "hidden" === name.name;
-          if (tmp) {
-            tmp = name.startTime > closure_0;
-          }
-          return tmp;
-        })[0];
-        let startTime;
-        if (first != null) {
-          startTime = first.startTime;
-        }
-        tmp8 = startTime;
-      }
-      if (tmp8 == null) {
-        const _document = tmp(904).WINDOW.document;
-        let visibilityState;
-        if (_document != null) {
-          visibilityState = _document.visibilityState;
-        }
-        if ("hidden" !== visibilityState) {
-          num2 = Infinity;
-        } else {
-          const _document2 = tmp(904).WINDOW.document;
-          let prerendering;
-          if (_document2 != null) {
-            prerendering = _document2.prerendering;
-          }
-          num2 = 0;
-        }
-        tmp8 = num2;
-      }
-      num2 = tmp8;
-      const tmpResult = tmp(907);
-      tmp(906).addPageListener("visibilitychange", onVisibilityUpdate, true);
-      const tmpResult4 = tmp(906);
-      tmp(906).addPageListener("pagehide", onVisibilityUpdate, true);
-      const tmpResult5 = tmp(906);
-      tmp(906).addPageListener("prerenderingchange", onVisibilityUpdate, true);
-      const tmpResult6 = tmp(906);
-    }
+export const WINDOW = _mod694.GLOBAL_OBJ;
+export const getHttpRequestData = function getHttpRequestData() {
+  let obj4;
+  const obj = _mod694;
+  const locationHref = obj.getLocationHref();
+  const referrer = (_mod694.GLOBAL_OBJ.document || {}).referrer;
+  _mod694.GLOBAL_OBJ.document || {};
+  const userAgent = (_mod694.GLOBAL_OBJ.navigator || {}).userAgent;
+  let tmp6 = referrer;
+  const obj2 = { url: locationHref, headers: obj4 };
+  _mod694.GLOBAL_OBJ.navigator || {};
+  if (tmp6) {
+    tmp6 = { Referer: referrer };
+    const obj3 = { Referer: referrer };
   }
-  const obj = {};
-  Object.defineProperty(obj, "firstHiddenTime", { get: () => num2, set: undefined });
-  obj.onHidden = function onHidden(arg0) {
-    set.add(arg0);
-  };
-  return obj;
+  obj4 = {};
+  const merged = Object.assign(tmp6);
+  let tmp8 = userAgent;
+  if (tmp8) {
+    tmp8 = { "User-Agent": userAgent };
+    const obj5 = { "User-Agent": userAgent };
+  }
+  const merged1 = Object.assign(tmp8);
+  return obj2;
 };
+export { ignoreNextOnError };
+export function shouldIgnoreOnError() {
+  return closure_2 > 0;
+}
+export { wrap };

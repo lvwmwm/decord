@@ -1,11 +1,11 @@
-// Module ID: 9430
-// Function ID: 9431
+// Module ID: 8582
+// Function ID: 8583
 // Name: FederatedSocialUtils
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 // Exports: getExampleHandle, validateHandle
 
-// Module 9430 (FederatedSocialUtils)
-import Constants from "Constants" /* 1074 */;
+// Module 8582 (FederatedSocialUtils)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;
@@ -13,10 +13,11 @@ const result = size.fileFinishedImporting("modules/connections/FederatedSocialUt
 
 export const validateHandle = function validateHandle(arg0, platformType) {
   if (platformType === PlatformTypes.MASTODON) {
-    const isMatch = /^@?[a-z0-9_]+([.-]+[a-z0-9_]+)*@[^@]+\.[^.@]{2,}$/i.test(arg0);
     const obj = /^@?[a-z0-9_]+([.-]+[a-z0-9_]+)*@[^@]+\.[^.@]{2,}$/i;
+    const isMatch = obj.test(arg0);
   }
-  return /^.+\.[^.@]{2,}$/.test(arg0);
+  const obj2 = /^.+\.[^.@]{2,}$/;
+  return obj2.test(arg0);
 };
 export const getExampleHandle = function getExampleHandle(platformType) {
   let str = "@example@mastodon.social";

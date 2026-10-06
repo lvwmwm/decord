@@ -1,24 +1,67 @@
-// Module ID: 15371
-// Function ID: 15372
+// Module ID: 14618
+// Function ID: 14619
 // Name: useConnectionBannerHeight
-// Dependencies: [13980, 15368, 13981, 504, 2]
-// Exports: useConnectionBannerHeight
+// Dependencies: [13232, 14615, 558, 576, 13233, 504, 2]
 
-// Module 15371 (useConnectionBannerHeight)
-import initialize from "initialize" /* 504 */;
-import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13981 */;
-import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13980 */;
+// Module 14618 (useConnectionBannerHeight)
+import react from "react" /* 576 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13232 */;
+import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13233 */;
+import YouBarConstants from "YouBarConstants" /* 14615 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const constants = fn(13980).ConnectivityIndicatorState;
-const CONNECTION_BANNER_HEIGHT = fn(15368).CONNECTION_BANNER_HEIGHT;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useConnectionBannerHeight.tsx");
+const ConnectivityIndicatorStateStore = ConnectivityIndicatorStateStore2;
 
-export const useConnectionBannerHeight = function useConnectionBannerHeight() {
-  const config = ConnectionIndicatorExperimentDefault.useConfig({ location: "useConnectionBannerHeight" });
+let tmp;
+const get_initialized = tmp(504);
+const constants = ConnectivityIndicatorStateStore2.ConnectivityIndicatorState;
+const CONNECTION_BANNER_HEIGHT = YouBarConstants.CONNECTION_BANNER_HEIGHT;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let hidden;
+  let state;
+  let timeoutMs;
+  const obj = react;
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: "useConnectionBannerHeight" };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const obj3 = ConnectionIndicatorExperimentDefault;
+  const config = obj3.useConfig(first);
   ({ timeoutMs, hidden } = config);
-  initialize;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ConnectivityIndicatorStateStore];
+    const fn = function l() {
+      return state.getState();
+    };
+    cResult[1] = items;
+    cResult[2] = fn;
+  }
+  get_initialized;
+  let num4 = 0;
+  if (null != timeoutMs) {
+    num4 = 0;
+    if (!hidden) {
+      num4 = 0;
+      if (tmp10 !== constants.HIDDEN) {
+        num4 = CONNECTION_BANNER_HEIGHT;
+      }
+    }
+  }
+  return num4;
+}) : (() => {
+  let hidden;
+  let state;
+  let timeoutMs;
+  const obj = ConnectionIndicatorExperimentDefault;
+  const config = obj.useConfig({ location: "useConnectionBannerHeight" });
+  ({ timeoutMs, hidden } = config);
+  get_initialized;
   [][0] = ConnectivityIndicatorStateStore;
   let num = 0;
   if (null != timeoutMs) {
@@ -31,4 +74,7 @@ export const useConnectionBannerHeight = function useConnectionBannerHeight() {
     }
   }
   return num;
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useConnectionBannerHeight.tsx");
+
+export const useConnectionBannerHeight = tmp2;

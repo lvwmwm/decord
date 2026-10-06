@@ -1,28 +1,25 @@
 // Module ID: 1775
 // Function ID: 1776
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 1640, 1745, 1681]
+// Dependencies: [41, 42, 93, 95, 98, 1716, 1714]
 
 // Module 1775
+import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1714 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
-import noop_mod from "module_19" /* 19 */;
 
-const LayoutAnimationConfig = fn;
+let size;
+
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -30,100 +27,100 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-function SkipEntering(children) {
-  const tmp = React5(children.shouldSkip);
-  closure_0 = tmp;
-  const tmp2 = React5(children.itemKey);
-  if (children.itemKey !== tmp2.current) {
-    ({ shouldSkip: tmp.current, itemKey: tmp2.current } = children);
-  }
-  const items = [tmp, children.itemKey];
-  timestampProducer(() => {
-    closure_0.current = false;
-  }, items);
-  return jsx(closure_10 ? context : context.Provider, { value: tmp, children: children.children });
-}
-let noop = fn(19);
-({ Children: hasOwnProperty, useEffect: metroRequire, useRef: closure_7, Component, createContext } = noop);
-let noop = noop_mod;
-const jsx = fn(21).jsx;
-const module_1640 = fn(1640);
-let closure_10 = module_1640.isReact19();
-const context = createContext(null);
-class LayoutAnimationConfig {
+let closure_6 = { code: "function pnpm_FadingTransitionTs1(values){const{delayFunction,delay,withSequence,withTiming,halfDuration,withDelay,callback}=this.__closure;return{initialValues:{opacity:1,originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{opacity:delayFunction(delay,withSequence(withTiming(0,{duration:halfDuration}),withTiming(1,{duration:halfDuration}))),originX:withDelay(delay+halfDuration,withTiming(values.targetOriginX,{duration:0})),originY:withDelay(delay+halfDuration,withTiming(values.targetOriginY,{duration:0})),width:withDelay(delay+halfDuration,withTiming(values.targetWidth,{duration:0})),height:withDelay(delay+halfDuration,withTiming(values.targetHeight,{duration:0}))},callback:callback};}" };
+class FadingTransition {
   constructor() {
-    self = this;
-    tmp = c2(this, LayoutAnimationConfig);
-    tmp2 = closure_4;
-    obj = closure_4(LayoutAnimationConfig);
-    tmp3 = closure_3;
-    if (closure_9()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    const tmp = _classCallCheck(this, FadingTransition);
+    const items1 = [...items];
+    let obj = _getPrototypeOf(FadingTransition);
+    const tmp3 = c3;
+    const tmp2 = _getPrototypeOf;
+    if (_isNativeReflectConstruct()) {
+      const tmp5 = globalThis;
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, items1);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.build = () => {
+      const delayFunction = closure_0.getDelayFunction();
+      const callbackV = closure_0.callbackV;
+      const delay = closure_0.getDelay();
+      let num = closure_0.durationV;
+      if (num == null) {
+        num = 500;
+      }
+      const result = num / 2;
+      const fn = function t(originX) {
+        let obj10;
+        let obj4;
+        let obj5;
+        let obj7;
+        let obj8;
+        let obj9;
+        let sum;
+        let sum1;
+        let sum2;
+        let sum3;
+        let withDelay;
+        let withDelay2;
+        let withDelay3;
+        let withDelay4;
+        let withSequence;
+        let withTimingResult;
+        const obj = { initialValues: { opacity: 1, originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: size, callback: callbackV };
+        size = { opacity: delayFunction(delay, withSequence(withTimingResult, obj5.withTiming(1, obj4))), originX: withDelay(sum, obj7.withTiming(originX.targetOriginX, { duration: 0 })), originY: withDelay2(sum1, obj8.withTiming(originX.targetOriginY, { duration: 0 })), width: withDelay3(sum2, obj9.withTiming(originX.targetWidth, { duration: 0 })), height: withDelay4(sum3, obj10.withTiming(originX.targetHeight, { duration: 0 })) };
+        withSequence = closure_2_0(closure_2_1[5]).withSequence;
+        closure_2_0(closure_2_1[5]);
+        const obj2 = { duration: result };
+        const obj3 = closure_2_0(closure_2_1[5]);
+        obj4 = { duration: result };
+        withTimingResult = obj3.withTiming(0, obj2);
+        obj5 = closure_2_0(closure_2_1[5]);
+        withDelay = closure_2_0(closure_2_1[5]).withDelay;
+        sum = delay + result;
+        closure_2_0(closure_2_1[5]);
+        obj7 = closure_2_0(closure_2_1[5]);
+        withDelay2 = closure_2_0(closure_2_1[5]).withDelay;
+        sum1 = delay + result;
+        closure_2_0(closure_2_1[5]);
+        obj8 = closure_2_0(closure_2_1[5]);
+        withDelay3 = closure_2_0(closure_2_1[5]).withDelay;
+        sum2 = delay + result;
+        closure_2_0(closure_2_1[5]);
+        obj9 = closure_2_0(closure_2_1[5]);
+        withDelay4 = closure_2_0(closure_2_1[5]).withDelay;
+        sum3 = delay + result;
+        closure_2_0(closure_2_1[5]);
+        obj10 = closure_2_0(closure_2_1[5]);
+        return obj;
+      };
+      let obj = { delayFunction, delay, withSequence: FadingTransition(closure_2_1[5]).withSequence, withTiming: FadingTransition(closure_2_1[5]).withTiming, halfDuration: result, withDelay: FadingTransition(closure_2_1[5]).withDelay, callback: callbackV };
+      fn.__closure = obj;
+      fn.__workletHash = 3440645628303;
+      fn.__initData = __initData;
+      return fn;
+    };
+    return tmp3Result;
   }
 }
-_inherits(LayoutAnimationConfig, Component);
+_inherits(FadingTransition, BaseAnimationBuilder.BaseAnimationBuilder);
 const entry = {
-  key: "getMaybeWrappedChildren",
-  value: function getMaybeWrappedChildren() {
-    const self = this;
-    if (hasOwnProperty.count(this.props.children) > 1) {
-      if (self.props.skipExiting) {
-        let children = hasOwnProperty.map(self.props.children, (children) => closure_8(LayoutAnimationConfig, { itemKey: self.props.itemKey, skipExiting: true, children }));
-      }
-      return children;
-    }
-    children = self.props.children;
+  key: "createInstance",
+  value: function createInstance() {
+    const tmp = FadingTransition();
+    return tmp;
   }
 };
-let items = [
-  entry,
-  {
-    key: "setShouldAnimateExiting",
-    value: function setShouldAnimateExiting() {
-      const self = this;
-      if (1 === hasOwnProperty.count(this.props.children)) {
-        const findNodeHandleResult = LayoutAnimationConfig(1745).findNodeHandle(self);
-        if (findNodeHandleResult) {
-          const result = tmp(1681).setShouldAnimateExitingForTag(findNodeHandleResult, !self.props.skipExiting);
-          const tmpResult = tmp(1681);
-        }
-        const obj = LayoutAnimationConfig(1745);
-        tmp = LayoutAnimationConfig;
-      }
-    }
-  },
-  {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      const self = this;
-      if (undefined !== this.props.skipExiting) {
-        const result = self.setShouldAnimateExiting();
-      }
-    }
-  },
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const maybeWrappedChildren = this.getMaybeWrappedChildren();
-      let tmp2 = maybeWrappedChildren;
-      if (undefined !== this.props.skipEntering) {
-        const obj = { itemKey: self.props.itemKey, shouldSkip: self.props.skipEntering, children: maybeWrappedChildren };
-        tmp2 = <SkipEntering itemKey={self.props.itemKey} shouldSkip={self.props.skipEntering}>{maybeWrappedChildren}</SkipEntering>;
-      }
-      return tmp2;
-    }
-  }
-];
+let items = [entry];
+const importDefaultResultResult = _createClass(FadingTransition, null, items);
+importDefaultResultResult.presetName = "FadingTransition";
+const FadingTransition_export = importDefaultResultResult;
 
-export const SkipEnteringContext = context;
-export const LayoutAnimationConfig = _createClass(LayoutAnimationConfig, items);
+export { FadingTransition_export as FadingTransition };

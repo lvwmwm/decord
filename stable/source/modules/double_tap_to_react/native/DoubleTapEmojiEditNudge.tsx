@@ -1,191 +1,1024 @@
-// Module ID: 12015
-// Function ID: 12016
+// Module ID: 11105
+// Function ID: 11106
 // Name: DoubleTapEmojiEditNudge
-// Dependencies: [5, 19, 17, 4780, 1479, 1074, 1375, 21, 4788, 576, 2019, 8258, 1481, 504, 1397, 11417, 1241, 11420, 4784, 1115, 7407, 5371, 2]
-// Exports: DoubleTapEmojiEditNudge
+// Dependencies: [5, 19, 17, 4826, 1486, 1086, 1381, 21, 4837, 588, 558, 576, 2027, 7414, 1488, 504, 1403, 9640, 1253, 9653, 4833, 1127, 6552, 5436, 2]
 
-// Module 12015 (DoubleTapEmojiEditNudge)
-import nativeDefault from "native" /* 576 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8258 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
-import DimensionsStore from "DimensionsStore" /* 1479 */;
+// Module 11105 (DoubleTapEmojiEditNudge)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7414 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import DimensionsStore from "DimensionsStore" /* 1486 */;
+import EmojiConstants from "EmojiConstants" /* 1381 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-function DoubleTapEmojiEditNudgeInner(location) {
-  let _location = location.location;
+let c3, c4, dependencyMap;
+
+let c10;
+let c9;
+let closure_12;
+let unpackModuleId;
+const View = react_native.View;
+const AnalyticEvents = Constants.AnalyticEvents;
+({ EMOJI_URL_BASE_SIZE: c9, EmojiIntention: c10 } = EmojiConstants);
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+const hitSlop = { left: 8, right: 8 };
+let closure_14 = createStyles.createStyles((arg0) => {
+  const obj = { doubleTapEmojiContainer: { marginHorizontal: nativeDefault.space.PX_4 }, doubleTapTextEmoji: { fontSize: 12 * arg0, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, doubleTapCustomEmoji: size, doubleTapEmojiEditNudgeContainer: { marginTop: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "center", flexWrap: "wrap" }, editButton: { marginHorizontal: nativeDefault.space.PX_4 } };
+  ({ marginHorizontal: nativeDefault.space.PX_4 });
+  size = { height: 16 * arg0, width: 16 * arg0 };
+  ({ fontSize: 12 * arg0, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
+  ({ marginTop: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "center", flexWrap: "wrap" });
+  ({ marginHorizontal: nativeDefault.space.PX_4 });
+  return obj;
+});
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let emojiId;
+  let emojiName;
+  let tmp5;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(8);
+  const _location = location.location;
+  const DoubleTapReactionEmoji = UserSettings.DoubleTapReactionEmoji;
+  const setting = DoubleTapReactionEmoji.useSetting();
+  if (cResult[0] !== setting) {
+    const tmpResult = DoubleTapToReactUtils;
+    const result = tmpResult.disambiguatedEmojiFromSettingsValue(setting);
+    cResult[0] = setting;
+    cResult[1] = result;
+    tmp5 = result;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult2 = DoubleTapToReactUtils;
+    const fallbackDoubleTapDisambiguatedEmoji = tmpResult2.getFallbackDoubleTapDisambiguatedEmoji();
+    cResult[2] = fallbackDoubleTapDisambiguatedEmoji;
+    tmp7 = fallbackDoubleTapDisambiguatedEmoji;
+  } else {
+    tmp7 = cResult[2];
+  }
+  ({ emojiId, emojiName } = setting);
+  let tmp9 = null;
+  if (true !== setting.disableDoubleTap) {
+    if (null == emojiId) {
+      if (null == emojiName) {
+        let tmp10;
+        if (null != tmp7) {
+          if (cResult[3] !== _location) {
+            const obj2 = { location: _location, emoji: tmp7 };
+            const tmp13 = unpackModuleId(closure_15, obj2);
+            cResult[3] = _location;
+            cResult[4] = tmp13;
+            tmp10 = tmp13;
+          } else {
+            tmp10 = cResult[4];
+          }
+        }
+        tmp9 = tmp10;
+      }
+    }
+    let tmp14 = null;
+    if (null != tmp5) {
+      if (cResult[5] === tmp5) {
+        let tmp15;
+        if (cResult[6] === _location) {
+          tmp15 = cResult[7];
+        }
+        tmp14 = tmp15;
+      }
+      const obj3 = { location: _location, emoji: tmp5 };
+      const tmp18 = unpackModuleId(closure_15, obj3);
+      cResult[5] = tmp5;
+      cResult[6] = _location;
+      cResult[7] = tmp18;
+      tmp15 = tmp18;
+    }
+    tmp10 = tmp14;
+  }
+  return tmp9;
+}) : ((location) => {
+  const _location = location.location;
+  let setting;
+  const DoubleTapReactionEmoji = setting(2027).DoubleTapReactionEmoji;
+  setting = DoubleTapReactionEmoji.useSetting();
+  const items = [setting];
+  const memo = react.useMemo(() => {
+    const obj = DoubleTapToReactUtils;
+    return obj.disambiguatedEmojiFromSettingsValue(setting);
+  }, items);
+  const memo1 = react.useMemo(() => {
+    const obj = setting(dependencyMap[13]);
+    return obj.getFallbackDoubleTapDisambiguatedEmoji();
+  }, []);
+  const items1 = [setting];
+  let tmp4 = null;
+  if (true !== setting.disableDoubleTap) {
+    if (!react.useMemo(() => {
+      let emojiId;
+      let emojiName;
+      ({ emojiId, emojiName } = setting);
+      let tmp = null != emojiId && "0" !== emojiId;
+      if (!tmp) {
+        tmp = null != emojiName && "" !== emojiName;
+        const tmp2 = null != emojiName && "" !== emojiName;
+      }
+      return tmp;
+    }, items1)) {
+      let tmp7;
+      if (null != memo1) {
+        let obj = { location: _location, emoji: memo1 };
+        tmp7 = closure_11(closure_15, obj);
+      }
+      tmp4 = tmp7;
+    }
+    let tmp8 = null;
+    if (null != memo) {
+      const obj2 = { location: _location, emoji: memo };
+      tmp8 = closure_11(closure_15, obj2);
+    }
+    tmp7 = tmp8;
+  }
+  return tmp4;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let _location;
+  let emojiURL;
+  let intl;
+  let tmp16;
+  let tmp5;
+  let tmp7;
+  let tmp8;
+  let useReducedMotion;
+  let tmp = _location;
+  let obj = _location(576);
+  const cResult = obj.c(26);
+  _location = location.location;
   const emoji = location.emoji;
-  dependencyMap = _location(1481).useAppEntryKey();
-  let obj = _location(1481);
+  let obj2 = _location(1488);
+  const appEntryKey = obj2.useAppEntryKey();
+  if (cResult[0] !== appEntryKey) {
+    const fn = function c(arg0) {
+      return arg0.byAppEntry[appEntryKey].fontScale;
+    };
+    cResult[0] = appEntryKey;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmp6 = DimensionsStore(tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn2 = function f() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[2] = items;
+    cResult[3] = fn2;
+    tmp8 = fn2;
+    tmp7 = items;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
+  const tmp11 = closure_14(tmp6);
+  if (cResult[4] === emoji.animated) {
+    if (cResult[5] === emoji.id) {
+      if (cResult[6] === emoji.url) {
+        let tmp12;
+        if (cResult[7] === stateFromStores) {
+          tmp12 = cResult[8];
+        }
+        if (cResult[9] !== _location) {
+          class R {
+            constructor() {
+              tmp = location(closure_1_2[17]);
+              obj = { pickerIntention: closure_1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+              openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+              closure_0 = closure_1_3(async (arg0, value) => {
+                if (c4 === 2) {
+                  c4 = 3;
+                  throw new TypeError("Generator functions may not be called on executing generators");
+                } else if (tmp3 === 3) {
+                  if (arg0 === 1) {
+                    throw value;
+                  } else if (arg0 === 2) {
+                    const obj2 = { value, done: true };
+                    return obj2;
+                  } else {
+                    return { value: "IconComponent", done: null };
+                  }
+                } else {
+                  try {
+                    c4 = 2;
+                    if (0 === c3) {
+                      if (arg0 === 1) {
+                        c4 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c4 = 3;
+                        const obj3 = { value, done: true };
+                        return obj3;
+                      } else {
+                        let closure_2 = tmp;
+                        let closure_1 = tmp4;
+                        const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+                        ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+                        const obj7 = appEntryKey(dependencyMap[18]);
+                        obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+                        const DoubleTapReactionEmoji = emoji(dependencyMap[12]).DoubleTapReactionEmoji;
+                        const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+                        ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+                        c3 = 1;
+                        c4 = 1;
+                        const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+                        return obj6;
+                      }
+                    } else if (arg0 === 1) {
+                      c4 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c4 = 3;
+                      const obj16 = { value, done: true };
+                      return obj16;
+                    } else {
+                      const obj17 = { emoji };
+                      const obj = emoji(dependencyMap[19]);
+                      const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+                      c4 = 3;
+                      return { value: "IconComponent", done: null };
+                    }
+                  } catch (tmp11) {
+                    c4 = 3;
+                    throw tmp11;
+                  }
+                }
+              });
+              obj.onPressEmoji = function() {
+                return closure_0(...arguments);
+              };
+              result = openEmojiPickerActionSheet(obj, "stack");
+              return;
+            }
+          }
+          cResult[9] = _location;
+          cResult[10] = R;
+        } else {
+          class R {
+            constructor() {
+              tmp = location(closure_1_2[17]);
+              obj = { pickerIntention: closure_1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+              openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+              closure_0 = closure_1_3(async (arg0, value) => {
+                if (c4 === 2) {
+                  c4 = 3;
+                  throw new TypeError("Generator functions may not be called on executing generators");
+                } else if (tmp3 === 3) {
+                  if (arg0 === 1) {
+                    throw value;
+                  } else if (arg0 === 2) {
+                    const obj2 = { value, done: true };
+                    return obj2;
+                  } else {
+                    return { value: "IconComponent", done: null };
+                  }
+                } else {
+                  try {
+                    c4 = 2;
+                    if (0 === c3) {
+                      if (arg0 === 1) {
+                        c4 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c4 = 3;
+                        const obj3 = { value, done: true };
+                        return obj3;
+                      } else {
+                        let closure_2 = tmp;
+                        let closure_1 = tmp4;
+                        const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+                        ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+                        const obj7 = appEntryKey(dependencyMap[18]);
+                        obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+                        const DoubleTapReactionEmoji = emoji(dependencyMap[12]).DoubleTapReactionEmoji;
+                        const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+                        ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+                        c3 = 1;
+                        c4 = 1;
+                        const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+                        return obj6;
+                      }
+                    } else if (arg0 === 1) {
+                      c4 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c4 = 3;
+                      const obj16 = { value, done: true };
+                      return obj16;
+                    } else {
+                      const obj17 = { emoji };
+                      const obj = emoji(dependencyMap[19]);
+                      const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+                      c4 = 3;
+                      return { value: "IconComponent", done: null };
+                    }
+                  } catch (tmp11) {
+                    c4 = 3;
+                    throw tmp11;
+                  }
+                }
+              });
+              obj.onPressEmoji = function() {
+                return closure_0(...arguments);
+              };
+              result = openEmojiPickerActionSheet(obj, "stack");
+              return;
+            }
+          }
+        }
+        const _Symbol = Symbol;
+        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+          class R {
+            constructor() {
+              tmp = location(closure_1_2[17]);
+              obj = { pickerIntention: closure_1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+              openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+              closure_0 = closure_1_3(async (arg0, value) => {
+                if (c4 === 2) {
+                  c4 = 3;
+                  throw new TypeError("Generator functions may not be called on executing generators");
+                } else if (tmp3 === 3) {
+                  if (arg0 === 1) {
+                    throw value;
+                  } else if (arg0 === 2) {
+                    const obj2 = { value, done: true };
+                    return obj2;
+                  } else {
+                    return { value: "IconComponent", done: null };
+                  }
+                } else {
+                  try {
+                    c4 = 2;
+                    if (0 === c3) {
+                      if (arg0 === 1) {
+                        c4 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c4 = 3;
+                        const obj3 = { value, done: true };
+                        return obj3;
+                      } else {
+                        let closure_2 = tmp;
+                        let closure_1 = tmp4;
+                        const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+                        ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+                        const obj7 = appEntryKey(dependencyMap[18]);
+                        obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+                        const DoubleTapReactionEmoji = emoji(dependencyMap[12]).DoubleTapReactionEmoji;
+                        const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+                        ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+                        c3 = 1;
+                        c4 = 1;
+                        const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+                        return obj6;
+                      }
+                    } else if (arg0 === 1) {
+                      c4 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c4 = 3;
+                      const obj16 = { value, done: true };
+                      return obj16;
+                    } else {
+                      const obj17 = { emoji };
+                      const obj = emoji(dependencyMap[19]);
+                      const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+                      c4 = 3;
+                      return { value: "IconComponent", done: null };
+                    }
+                  } catch (tmp11) {
+                    c4 = 3;
+                    throw tmp11;
+                  }
+                }
+              });
+              obj.onPressEmoji = function() {
+                return closure_0(...arguments);
+              };
+              result = openEmojiPickerActionSheet(obj, "stack");
+              return;
+            }
+          }
+          let obj3 = { color: "text-subtle", variant: "text-sm/normal", children: intl.string(tmp(1127).t["1EUr/W"]) };
+          const Text = tmp(4833).Text;
+          intl = tmp(1127).intl;
+          const tmp19 = closure_11(Text, obj3);
+          cResult[11] = tmp19;
+        } else {
+          class R {
+            constructor() {
+              tmp = location(closure_1_2[17]);
+              obj = { pickerIntention: closure_1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+              openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+              closure_0 = closure_1_3(async (arg0, value) => {
+                if (c4 === 2) {
+                  c4 = 3;
+                  throw new TypeError("Generator functions may not be called on executing generators");
+                } else if (tmp3 === 3) {
+                  if (arg0 === 1) {
+                    throw value;
+                  } else if (arg0 === 2) {
+                    const obj2 = { value, done: true };
+                    return obj2;
+                  } else {
+                    return { value: "IconComponent", done: null };
+                  }
+                } else {
+                  try {
+                    c4 = 2;
+                    if (0 === c3) {
+                      if (arg0 === 1) {
+                        c4 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c4 = 3;
+                        const obj3 = { value, done: true };
+                        return obj3;
+                      } else {
+                        let closure_2 = tmp;
+                        let closure_1 = tmp4;
+                        const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+                        ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+                        const obj7 = appEntryKey(dependencyMap[18]);
+                        obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+                        const DoubleTapReactionEmoji = emoji(dependencyMap[12]).DoubleTapReactionEmoji;
+                        const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+                        ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+                        c3 = 1;
+                        c4 = 1;
+                        const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+                        return obj6;
+                      }
+                    } else if (arg0 === 1) {
+                      c4 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c4 = 3;
+                      const obj16 = { value, done: true };
+                      return obj16;
+                    } else {
+                      const obj17 = { emoji };
+                      const obj = emoji(dependencyMap[19]);
+                      const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+                      c4 = 3;
+                      return { value: "IconComponent", done: null };
+                    }
+                  } catch (tmp11) {
+                    c4 = 3;
+                    throw tmp11;
+                  }
+                }
+              });
+              obj.onPressEmoji = function() {
+                return closure_0(...arguments);
+              };
+              result = openEmojiPickerActionSheet(obj, "stack");
+              return;
+            }
+          }
+        }
+        if (null == emoji.id) {
+          class R {
+            constructor() {
+              tmp = location(closure_1_2[17]);
+              obj = { pickerIntention: closure_1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+              openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+              closure_0 = closure_1_3(async (arg0, value) => {
+                if (c4 === 2) {
+                  c4 = 3;
+                  throw new TypeError("Generator functions may not be called on executing generators");
+                } else if (tmp3 === 3) {
+                  if (arg0 === 1) {
+                    throw value;
+                  } else if (arg0 === 2) {
+                    const obj2 = { value, done: true };
+                    return obj2;
+                  } else {
+                    return { value: "IconComponent", done: null };
+                  }
+                } else {
+                  try {
+                    c4 = 2;
+                    if (0 === c3) {
+                      if (arg0 === 1) {
+                        c4 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c4 = 3;
+                        const obj3 = { value, done: true };
+                        return obj3;
+                      } else {
+                        let closure_2 = tmp;
+                        let closure_1 = tmp4;
+                        const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+                        ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+                        const obj7 = appEntryKey(dependencyMap[18]);
+                        obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+                        const DoubleTapReactionEmoji = emoji(dependencyMap[12]).DoubleTapReactionEmoji;
+                        const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+                        ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+                        c3 = 1;
+                        c4 = 1;
+                        const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+                        return obj6;
+                      }
+                    } else if (arg0 === 1) {
+                      c4 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c4 = 3;
+                      const obj16 = { value, done: true };
+                      return obj16;
+                    } else {
+                      const obj17 = { emoji };
+                      const obj = emoji(dependencyMap[19]);
+                      const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+                      c4 = 3;
+                      return { value: "IconComponent", done: null };
+                    }
+                  } catch (tmp11) {
+                    c4 = 3;
+                    throw tmp11;
+                  }
+                }
+              });
+              obj.onPressEmoji = function() {
+                return closure_0(...arguments);
+              };
+              result = openEmojiPickerActionSheet(obj, "stack");
+              return;
+            }
+          }
+        }
+        if (cResult[12] === tmp12) {
+          class R {
+            constructor() {
+              tmp = location(closure_1_2[17]);
+              obj = { pickerIntention: closure_1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+              openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+              closure_0 = closure_1_3(async (arg0, value) => {
+                if (c4 === 2) {
+                  c4 = 3;
+                  throw new TypeError("Generator functions may not be called on executing generators");
+                } else if (tmp3 === 3) {
+                  if (arg0 === 1) {
+                    throw value;
+                  } else if (arg0 === 2) {
+                    const obj2 = { value, done: true };
+                    return obj2;
+                  } else {
+                    return { value: "IconComponent", done: null };
+                  }
+                } else {
+                  try {
+                    c4 = 2;
+                    if (0 === c3) {
+                      if (arg0 === 1) {
+                        c4 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c4 = 3;
+                        const obj3 = { value, done: true };
+                        return obj3;
+                      } else {
+                        let closure_2 = tmp;
+                        let closure_1 = tmp4;
+                        const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+                        ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+                        const obj7 = appEntryKey(dependencyMap[18]);
+                        obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+                        const DoubleTapReactionEmoji = emoji(dependencyMap[12]).DoubleTapReactionEmoji;
+                        const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+                        ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+                        c3 = 1;
+                        c4 = 1;
+                        const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+                        return obj6;
+                      }
+                    } else if (arg0 === 1) {
+                      c4 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c4 = 3;
+                      const obj16 = { value, done: true };
+                      return obj16;
+                    } else {
+                      const obj17 = { emoji };
+                      const obj = emoji(dependencyMap[19]);
+                      const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+                      c4 = 3;
+                      return { value: "IconComponent", done: null };
+                    }
+                  } catch (tmp11) {
+                    c4 = 3;
+                    throw tmp11;
+                  }
+                }
+              });
+              obj.onPressEmoji = function() {
+                return closure_0(...arguments);
+              };
+              result = openEmojiPickerActionSheet(obj, "stack");
+              return;
+            }
+          }
+        }
+        let obj4 = { style: null, fastImageStyle: null, textEmojiStyle: null, src: tmp12, name: str };
+        ({ doubleTapEmojiContainer: obj6.style, doubleTapCustomEmoji: obj6.fastImageStyle, doubleTapTextEmoji: obj6.textEmojiStyle } = tmp11);
+        const tmp24 = closure_11(appEntryKey(6552), obj4);
+        cResult[12] = tmp12;
+        cResult[13] = tmp11.doubleTapCustomEmoji;
+        cResult[14] = tmp11.doubleTapEmojiContainer;
+        cResult[15] = tmp11.doubleTapTextEmoji;
+        cResult[16] = "";
+        cResult[17] = tmp24;
+      }
+    }
+  }
+  if (null != emoji.id) {
+    class R {
+      constructor() {
+        tmp = location(closure_1_2[17]);
+        obj = { pickerIntention: closure_1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+        openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+        closure_0 = closure_1_3(async (arg0, value) => {
+          if (c4 === 2) {
+            c4 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj2 = { value, done: true };
+              return obj2;
+            } else {
+              return { value: "IconComponent", done: null };
+            }
+          } else {
+            try {
+              c4 = 2;
+              if (0 === c3) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  const obj3 = { value, done: true };
+                  return obj3;
+                } else {
+                  let closure_2 = tmp;
+                  let closure_1 = tmp4;
+                  const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+                  ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+                  const obj7 = appEntryKey(dependencyMap[18]);
+                  obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+                  const DoubleTapReactionEmoji = emoji(dependencyMap[12]).DoubleTapReactionEmoji;
+                  const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+                  ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+                  c3 = 1;
+                  c4 = 1;
+                  const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+                  return obj6;
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj16 = { value, done: true };
+                return obj16;
+              } else {
+                const obj17 = { emoji };
+                const obj = emoji(dependencyMap[19]);
+                const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+                c4 = 3;
+                return { value: "IconComponent", done: null };
+              }
+            } catch (tmp11) {
+              c4 = 3;
+              throw tmp11;
+            }
+          }
+        });
+        obj.onPressEmoji = function() {
+          return closure_0(...arguments);
+        };
+        result = openEmojiPickerActionSheet(obj, "stack");
+        return;
+      }
+    }
+    let obj5 = { id: emoji.id, size, animated: tmp16 };
+    const getEmojiURL = appEntryKey(1403).getEmojiURL;
+    const tmp14 = appEntryKey(1403);
+    tmp16 = !stateFromStores;
+    if (!stateFromStores) {
+      class R {
+        constructor() {
+          tmp = location(closure_1_2[17]);
+          obj = { pickerIntention: closure_1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+          openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+          closure_0 = closure_1_3(async (arg0, value) => {
+            if (c4 === 2) {
+              c4 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp3 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj2 = { value, done: true };
+                return obj2;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                c4 = 2;
+                if (0 === c3) {
+                  if (arg0 === 1) {
+                    c4 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c4 = 3;
+                    const obj3 = { value, done: true };
+                    return obj3;
+                  } else {
+                    let closure_2 = tmp;
+                    let closure_1 = tmp4;
+                    const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+                    ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+                    const obj7 = appEntryKey(dependencyMap[18]);
+                    obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+                    const DoubleTapReactionEmoji = emoji(dependencyMap[12]).DoubleTapReactionEmoji;
+                    const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+                    ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+                    c3 = 1;
+                    c4 = 1;
+                    const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+                    return obj6;
+                  }
+                } else if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  const obj16 = { value, done: true };
+                  return obj16;
+                } else {
+                  const obj17 = { emoji };
+                  const obj = emoji(dependencyMap[19]);
+                  const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+                  c4 = 3;
+                  return { value: "IconComponent", done: null };
+                }
+              } catch (tmp11) {
+                c4 = 3;
+                throw tmp11;
+              }
+            }
+          });
+          obj.onPressEmoji = function() {
+            return closure_0(...arguments);
+          };
+          result = openEmojiPickerActionSheet(obj, "stack");
+          return;
+        }
+      }
+    }
+    emojiURL = getEmojiURL(obj5);
+  } else {
+    class R {
+      constructor() {
+        tmp = location(closure_1_2[17]);
+        obj = { pickerIntention: closure_1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+        openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+        closure_0 = closure_1_3(async (arg0, value) => {
+          if (c4 === 2) {
+            c4 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj2 = { value, done: true };
+              return obj2;
+            } else {
+              return { value: "IconComponent", done: null };
+            }
+          } else {
+            try {
+              c4 = 2;
+              if (0 === c3) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  const obj3 = { value, done: true };
+                  return obj3;
+                } else {
+                  let closure_2 = tmp;
+                  let closure_1 = tmp4;
+                  const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+                  ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+                  const obj7 = appEntryKey(dependencyMap[18]);
+                  obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+                  const DoubleTapReactionEmoji = emoji(dependencyMap[12]).DoubleTapReactionEmoji;
+                  const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+                  ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+                  c3 = 1;
+                  c4 = 1;
+                  const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+                  return obj6;
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj16 = { value, done: true };
+                return obj16;
+              } else {
+                const obj17 = { emoji };
+                const obj = emoji(dependencyMap[19]);
+                const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+                c4 = 3;
+                return { value: "IconComponent", done: null };
+              }
+            } catch (tmp11) {
+              c4 = 3;
+              throw tmp11;
+            }
+          }
+        });
+        obj.onPressEmoji = function() {
+          return closure_0(...arguments);
+        };
+        result = openEmojiPickerActionSheet(obj, "stack");
+        return;
+      }
+    }
+  }
+  cResult[4] = emoji.animated;
+  cResult[5] = emoji.id;
+  cResult[6] = emoji.url;
+  cResult[7] = stateFromStores;
+  cResult[8] = emojiURL;
+  tmp12 = emojiURL;
+}) : ((location) => {
+  let Text2;
+  let intl;
+  let intl2;
+  let items3;
+  let obj7;
+  let str;
+  let useReducedMotion;
+  const _location = location.location;
+  const emoji = location.emoji;
+  let tmp = _location;
+  let obj = _location(1488);
+  dependencyMap = obj.useAppEntryKey();
   const tmp3 = DimensionsStore((arg0) => arg0.byAppEntry[closure_2].fontScale);
+  let obj2 = _location(504);
   const items = [AccessibilityStore];
-  const stateFromStores = _location(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const stateFromStores = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp5 = closure_14(tmp3);
   const items1 = [emoji, stateFromStores];
   const items2 = [_location];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
+    let animated;
+    let url;
     if (null != emoji.id) {
-      const obj2 = { id: tmp.id, size, animated: null };
-      let animated = !stateFromStores;
+      const obj = { id: emoji.id, size, animated };
+      animated = !stateFromStores;
+      const getEmojiURL = AvatarUtilsDefault.getEmojiURL;
+      AvatarUtilsDefault;
       if (!stateFromStores) {
         animated = tmp.animated;
       }
-      obj2.animated = animated;
-      let url = AvatarUtilsDefault.getEmojiURL(obj2);
+      url = getEmojiURL(obj);
     } else {
       url = tmp.url;
     }
     return url;
   }, items1);
-  let obj3 = { style: tmp5.doubleTapEmojiEditNudgeContainer, children: null };
-  const callback = noop.useCallback(() => {
-    let obj2 = { pickerIntention: constants.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
-    closure_0 = stateFromStores((_location) => {
-      c3 = 0;
-      c4 = 0;
-      return (function*(arg0, value) {
-        if (c4 === 2) {
-          c4 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp4 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
+  let obj3 = { style: tmp5.doubleTapEmojiEditNudgeContainer, children: items3 };
+  const callback = react.useCallback(() => {
+    const tmp = _location(closure_2[17]);
+    let obj = {
+      pickerIntention: constants.DEFAULT_REACT_EMOJI,
+      onPressEmoji: function() {
+        return closure_0(...arguments);
+      },
+      startExpanded: true
+    };
+    const openEmojiPickerActionSheet = tmp.openEmojiPickerActionSheet;
+    let closure_0 = stateFromStores(function*(arg0, value) {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          try {
-            c4 = 2;
-            if (0 === c3) {
-              if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                closure_2 = tmp2;
-                closure_1 = tmp5;
-                closure_129_0 = _location;
-                const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: null };
-                ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = _location);
-                obj4.location = _location;
-                emoji(1241).track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
-                const DoubleTapReactionEmoji = _location(2019).DoubleTapReactionEmoji;
-                ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = _location);
-                c3 = 1;
-                c4 = 1;
-                const obj6 = { value: DoubleTapReactionEmoji.updateSetting({ emojiId: null, emojiName: null, animated: null, disableDoubleTap: false }), done: false };
-                return obj6;
-              }
-            } else if (arg0 === 1) {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
               c4 = 3;
               throw value;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj16 = { value, done: true };
-              return obj16;
+              const obj3 = { value, done: true };
+              return obj3;
             } else {
-              const obj17 = { emoji: closure_129_0 };
-              const result = _location(11420).showDoubleTapEmojiUpdatedToast(obj17);
-              c4 = 3;
-              return { value: "HermesInternal", done: null };
+              closure_2 = tmp;
+              let closure_1 = tmp4;
+              const obj4 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: emoji };
+              ({ id: obj8.emoji_id, name: obj8.emoji_name, animated: obj8.emoji_animated } = emoji);
+              const obj7 = emoji(closure_2_2[18]);
+              obj7.track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj4);
+              const DoubleTapReactionEmoji = emoji(closure_2_2[12]).DoubleTapReactionEmoji;
+              const obj5 = { emojiId: null, emojiName: null, animated: null, disableDoubleTap: false };
+              ({ id: obj9.emojiId, name: obj9.emojiName, animated: obj9.animated } = emoji);
+              c3 = 1;
+              c4 = 1;
+              const obj6 = { value: DoubleTapReactionEmoji.updateSetting(obj5), done: false };
+              return obj6;
             }
-          } catch (tmp12) {
-            c4 = tmp;
-            throw tmp12;
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj16 = { value, done: true };
+            return obj16;
+          } else {
+            const obj17 = { emoji };
+            const obj = emoji(closure_2_2[19]);
+            const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
+            c4 = 3;
+            return { value: "IconComponent", done: null };
           }
+        } catch (tmp11) {
+          c4 = 3;
+          throw tmp11;
         }
-      })();
-    });
-    obj2.onPressEmoji = function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
       }
-      return applyArgumentsResult;
-    };
-    let result = _location(11417).openEmojiPickerActionSheet(obj2, "stack");
+    });
+    let result = openEmojiPickerActionSheet(obj, "stack");
   }, items2);
-  let obj4 = { color: "text-subtle", variant: "text-sm/normal", children: null };
-  const intl = _location(1115).intl;
-  obj4.children = intl.string(_location(1115).t["1EUr/W"]);
-  const items3 = [closure_11(_location(4784).Text, obj4), , ];
-  const obj5 = { style: tmp5.doubleTapEmojiContainer, fastImageStyle: tmp5.doubleTapCustomEmoji, textEmojiStyle: tmp5.doubleTapTextEmoji, src: memo, name: null };
-  let str = "";
-  let obj2 = _location(504);
+  let obj4 = { color: "text-subtle", variant: "text-sm/normal", children: intl.string(_location(1127).t["1EUr/W"]) };
+  const Text = _location(4833).Text;
+  intl = _location(1127).intl;
+  items3 = [closure_11(Text, obj4), , ];
+  let obj5 = { style: tmp5.doubleTapEmojiContainer, fastImageStyle: tmp5.doubleTapCustomEmoji, textEmojiStyle: tmp5.doubleTapTextEmoji, src: memo, name: str };
+  str = "";
+  const tmp11 = emoji(6552);
   const tmp8 = closure_12;
   const tmp9 = View;
   if (null == emoji.id) {
     str = emoji.surrogates;
   }
-  obj5.name = str;
-  items3[1] = closure_11(emoji(7407), obj5);
-  let obj6 = { accessibilityRole: "button", onPress: callback, hitSlop, style: tmp5.editButton, children: null };
-  const obj7 = { color: "text-brand", variant: "text-sm/normal", children: null };
-  const intl2 = tmp(1115).intl;
-  obj7.children = intl2.string(_location(1115).t.bt75uw);
-  obj6.children = closure_11(_location(4784).Text, obj7);
-  items3[2] = closure_11(_location(5371).PressableOpacity, obj6);
-  obj3.children = items3;
+  items3[1] = closure_11(tmp11, obj5);
+  let obj6 = { accessibilityRole: "button", onPress: callback, hitSlop, style: tmp5.editButton, children: closure_11(Text2, obj7) };
+  const PressableOpacity = tmp(5436).PressableOpacity;
+  obj7 = { color: "text-brand", variant: "text-sm/normal", children: intl2.string(tmp(1127).t.bt75uw) };
+  Text2 = tmp(4833).Text;
+  intl2 = tmp(1127).intl;
+  items3[2] = closure_11(PressableOpacity, obj6);
   return tmp8(tmp9, obj3);
-}
-const View = fn(17).View;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const EmojiConstants = fn(1375);
-({ EMOJI_URL_BASE_SIZE: closure_9, EmojiIntention: c10 } = EmojiConstants);
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const hitSlop = { left: 8, right: 8 };
-const createStyles = fn(4788);
-let closure_14 = createStyles.createStyles((arg0) => {
-  const obj = { doubleTapEmojiContainer: { marginHorizontal: nativeDefault.space.PX_4 }, doubleTapTextEmoji: null, doubleTapCustomEmoji: null, doubleTapEmojiEditNudgeContainer: null, editButton: null };
-  const obj2 = { marginHorizontal: nativeDefault.space.PX_4 };
-  obj.doubleTapTextEmoji = { fontSize: 12 * arg0, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-  size = { height: 16 * arg0, width: 16 * arg0 };
-  obj.doubleTapCustomEmoji = size;
-  const obj3 = { fontSize: 12 * arg0, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.doubleTapEmojiEditNudgeContainer = { marginTop: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "center", flexWrap: "wrap" };
-  const obj4 = { marginTop: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "center", flexWrap: "wrap" };
-  obj.editButton = { marginHorizontal: nativeDefault.space.PX_4 };
-  return obj;
 });
-let size = fn(2);
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapEmojiEditNudge.tsx");
 
-export const DoubleTapEmojiEditNudge = function DoubleTapEmojiEditNudge(location) {
-  const _location = location.location;
-  let setting;
-  const DoubleTapReactionEmoji = setting(2019).DoubleTapReactionEmoji;
-  setting = DoubleTapReactionEmoji.useSetting();
-  const items = [setting];
-  const memo = noop.useMemo(() => DoubleTapToReactUtils.disambiguatedEmojiFromSettingsValue(setting), items);
-  const memo1 = noop.useMemo(() => setting(dependencyMap[11]).getFallbackDoubleTapDisambiguatedEmoji(), []);
-  [][0] = setting;
-  let tmp5 = null;
-  if (true === setting.disableDoubleTap) {
-    return null;
-  } else {
-    if (!tmp4) {
-      if (tmp5 != memo1) {
-        const obj = { location: _location, emoji: memo1 };
-        const tmp8 = closure_11(DoubleTapEmojiEditNudgeInner, obj);
-      }
-    }
-    tmp5 = null;
-    if (tmp9) {
-      const obj2 = { location: _location, emoji: memo };
-      tmp5 = closure_11(DoubleTapEmojiEditNudgeInner, obj2);
-    }
-    tmp9 = tmp5 != memo;
-  }
-};
+export const DoubleTapEmojiEditNudge = tmp4;

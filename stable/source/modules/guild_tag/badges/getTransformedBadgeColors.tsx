@@ -1,51 +1,59 @@
-// Module ID: 14217
-// Function ID: 14218
+// Module ID: 13465
+// Function ID: 13466
 // Name: getTransformedBadgeColors
-// Dependencies: [672, 2]
+// Dependencies: [684, 2]
 // Exports: getTransformedBadgeColors
 
-// Module 14217 (getTransformedBadgeColors)
-import _modDef672 from "module_672" /* 672 */;
+// Module 13465 (getTransformedBadgeColors)
+import _modDef684 from "module_684" /* 684 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_tag/badges/getTransformedBadgeColors.tsx");
 
-export const getTransformedBadgeColors = function getTransformedBadgeColors(arg0) {
-  ({ primaryTintColor, primaryTintLuminances, secondaryBaseColors, secondaryTintColor, secondaryTintLuminances, secondaryLuminanceWeights } = arg0);
-  if (null == primaryTintColor) {
-    let items = [];
-    if (tmp6) {
-      if (null == secondaryTintColor) {
-        items = secondaryBaseColors;
-      } else {
-        let map2 = dependencyMap;
-        if (obj2.valid(secondaryTintColor)) {
-          secondaryTintColor = tmp7(672)(secondaryTintColor);
-          primaryTintColor = secondaryTintColor;
-          closure_2 = secondaryTintColor.luminance();
-          map2 = secondaryTintLuminances.map;
-          let map2Result = map2((arg0, arg1) => primaryTintColor.luminance((arg0 * secondaryLuminanceWeights[arg1].base + closure_2 * secondaryLuminanceWeights[arg1].tint) / (secondaryLuminanceWeights[arg1].base + secondaryLuminanceWeights[arg1].tint)).hex());
-        } else {
-          map2Result = secondaryTintLuminances.map(() => "#000000");
-        }
-        obj2 = _modDef672;
-        tmp7 = importDefault;
-      }
-    }
-    const obj3 = { primaryColorsTransformed: tmp, secondaryColorsTransformed: items };
-    return obj3;
-  } else {
-    secondaryLuminanceWeights = tmp2;
-    let map = dependencyMap;
+export const getTransformedBadgeColors = function getTransformedBadgeColors(primaryLuminanceWeights) {
+  let primaryBaseColors;
+  let primaryColorsTransformed;
+  let primaryTintColor;
+  let primaryTintLuminances;
+  let secondaryBaseColors;
+  let secondaryLuminanceWeights;
+  let secondaryTintColor;
+  let secondaryTintLuminances;
+  const f114267 = () => "#000000";
+  const f114268 = (item, index) => {
+    const luminanceResult = obj4.luminance((item * secondaryLuminanceWeights[index].base + closure_2 * secondaryLuminanceWeights[index].tint) / (secondaryLuminanceWeights[index].base + secondaryLuminanceWeights[index].tint));
+    return luminanceResult.hex();
+  };
+  ({ primaryBaseColors, primaryTintColor, primaryTintLuminances, secondaryBaseColors, secondaryTintColor, secondaryTintLuminances, secondaryLuminanceWeights } = primaryLuminanceWeights);
+  if (null != primaryTintColor) {
+    let mapped;
+    primaryLuminanceWeights = primaryLuminanceWeights.primaryLuminanceWeights;
+    const obj = _modDef684;
+    const tmp = importDefault;
     if (obj.valid(primaryTintColor)) {
-      primaryTintColor = tmp3(672)(primaryTintColor);
-      closure_2 = primaryTintColor.luminance();
-      map = primaryTintLuminances.map;
-      let mapped = map((arg0, arg1) => primaryTintColor.luminance((arg0 * secondaryLuminanceWeights[arg1].base + closure_2 * secondaryLuminanceWeights[arg1].tint) / (secondaryLuminanceWeights[arg1].base + secondaryLuminanceWeights[arg1].tint)).hex());
+      const obj2 = tmp(684)(primaryTintColor);
+      let closure_2 = obj2.luminance();
+      mapped = primaryTintLuminances.map(f114268);
     } else {
-      mapped = primaryTintLuminances.map(() => "#000000");
+      mapped = primaryTintLuminances.map(f114267);
     }
-    obj = _modDef672;
-    tmp3 = importDefault;
+    primaryColorsTransformed = mapped;
   }
+  const tmp4 = null != secondaryBaseColors && null != secondaryTintLuminances && null != secondaryLuminanceWeights;
+  if (tmp4) {
+    if (null != secondaryTintColor) {
+      let mapped1;
+      const obj3 = _modDef684;
+      const tmp6 = importDefault;
+      if (obj3.valid(secondaryTintColor)) {
+        const obj4 = tmp6(684)(secondaryTintColor);
+        closure_2 = obj4.luminance();
+        mapped1 = secondaryTintLuminances.map(f114268);
+      } else {
+        mapped1 = secondaryTintLuminances.map(f114267);
+      }
+      secondaryBaseColors = mapped1;
+    }
+  }
+  return { primaryColorsTransformed, secondaryColorsTransformed: [] };
 };

@@ -1,24 +1,42 @@
-// Module ID: 4715
-// Function ID: 4716
+// Module ID: 4762
+// Function ID: 4763
 // Name: ServerThemeUserExperiment
-// Dependencies: [1434, 2]
-// Exports: getServerThemeUserEnabled, useServerThemeUserEnabled
+// Dependencies: [1441, 558, 576, 2]
+// Exports: getServerThemeUserEnabled
 
-// Module 4715 (ServerThemeUserExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 4762 (ServerThemeUserExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-05-server-theme-user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { kind: "user", name: "2026-05-server-theme-user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return apexExperiment.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return apexExperiment.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeUserExperiment.tsx");
 
 export const ServerThemeUserExperiment = apexExperiment;
 export const getServerThemeUserEnabled = function getServerThemeUserEnabled(GuildPowerupsConstants) {
-  return apexExperiment.getConfig({ location: GuildPowerupsConstants }).enabled;
+  const obj = { location: GuildPowerupsConstants };
+  return apexExperiment.getConfig(obj).enabled;
 };
-export const useServerThemeUserEnabled = function useServerThemeUserEnabled(DefaultGuildThemePreferenceSetting) {
-  return apexExperiment.useConfig({ location: DefaultGuildThemePreferenceSetting }).enabled;
-};
+export const useServerThemeUserEnabled = tmp3;

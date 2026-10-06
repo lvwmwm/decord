@@ -1,19 +1,20 @@
-// Module ID: 13729
-// Function ID: 13730
+// Module ID: 12974
+// Function ID: 12975
 // Name: useNextTenureBadge
-// Dependencies: [1374, 11480, 2]
-// Exports: useNextTenureBadge
+// Dependencies: [1380, 558, 10635, 2]
 
-// Module 13729 (useNextTenureBadge)
-import useTenureBadging from "useTenureBadging" /* 11480 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+// Module 12974 (useNextTenureBadge)
+import useTenureBadging from "useTenureBadging" /* 10635 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
 ({ TIERED_TENURE_BADGE_ORDER: c2, TENURE_BADGES: c3 } = PremiumConstants);
-const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useNextTenureBadge.tsx");
-
-export const useNextTenureBadge = function useNextTenureBadge() {
-  const tieredTenureBadgeData = useTenureBadging.useTieredTenureBadgeData();
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = useTenureBadging;
+  const tieredTenureBadgeData = obj.useTieredTenureBadgeData();
   if (null == tieredTenureBadgeData) {
     return null;
   } else if (tieredTenureBadgeData.status === useTenureBadging.TieredTenureBadgeStatus.UPCOMING) {
@@ -24,9 +25,30 @@ export const useNextTenureBadge = function useNextTenureBadge() {
     if (null != React2[index + 1]) {
       tmp7 = null;
       if (-1 !== index) {
-        tmp7 = React3[tmp6];
+        tmp7 = _false[tmp6];
       }
     }
     return tmp7;
   }
-};
+}) : (() => {
+  const obj = useTenureBadging;
+  const tieredTenureBadgeData = obj.useTieredTenureBadgeData();
+  if (null == tieredTenureBadgeData) {
+    return null;
+  } else if (tieredTenureBadgeData.status === useTenureBadging.TieredTenureBadgeStatus.UPCOMING) {
+    return tieredTenureBadgeData;
+  } else {
+    const index = React2.indexOf(tieredTenureBadgeData.id);
+    let tmp7 = null;
+    if (null != React2[index + 1]) {
+      tmp7 = null;
+      if (-1 !== index) {
+        tmp7 = _false[tmp6];
+      }
+    }
+    return tmp7;
+  }
+});
+const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useNextTenureBadge.tsx");
+
+export const useNextTenureBadge = tmp3;

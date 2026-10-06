@@ -1,46 +1,176 @@
-// Module ID: 5786
-// Function ID: 5787
+// Module ID: 5850
+// Function ID: 5851
 // Name: MemberVerificationAlert
-// Dependencies: [19, 17, 21, 4788, 576, 5237, 4784, 2]
-// Exports: default
+// Dependencies: [109, 19, 17, 21, 4837, 588, 558, 576, 4833, 5301, 2]
 
-// Module 5786 (MemberVerificationAlert)
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
-import noop from "module_19" /* 19 */;
+// Module 5850 (MemberVerificationAlert)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import AlertDefault from "Alert" /* 5301 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { headerImage: { marginLeft: "auto", marginRight: "auto", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.round, padding: 12, marginTop: 8, marginBottom: 8 }, header: { marginTop: 8, marginBottom: 8, textAlign: "center" }, subtitle: { lineHeight: 18, marginBottom: 8, textAlign: "center" }, buttons: { marginTop: 16, marginBottom: 8, gap: 12 } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlert.tsx");
-
-export default function MemberVerificationAlert(arg0) {
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let closure_3 = ["header", "icon", "subtitle", "buttons"];
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let obj = { headerImage: obj2, header: { marginTop: 8, marginBottom: 8, textAlign: "center" }, subtitle: { lineHeight: 18, marginBottom: 8, textAlign: "center" }, buttons: { marginTop: 16, marginBottom: 8, gap: 12 } };
+obj2 = { marginLeft: "auto", marginRight: "auto", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.round, padding: 12, marginTop: 8, marginBottom: 8 };
+let closure_8 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let buttons;
+  let header;
+  let icon;
+  let items;
+  let subtitle;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(24);
+  if (cResult[0] !== arg0) {
+    ({ header, icon, subtitle, buttons } = arg0);
+    const tmp11 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = icon;
+    cResult[2] = buttons;
+    cResult[3] = header;
+    cResult[4] = tmp11;
+    cResult[5] = subtitle;
+    tmp8 = subtitle;
+    tmp7 = tmp11;
+    tmp6 = header;
+    tmp5 = buttons;
+    tmp4 = icon;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+    tmp7 = cResult[4];
+    tmp8 = cResult[5];
+  }
+  const tmp12 = closure_8();
+  if (cResult[6] === tmp4) {
+    let tmp13;
+    if (cResult[7] === tmp12.headerImage) {
+      tmp13 = cResult[8];
+    }
+    if (cResult[9] === tmp6) {
+      let tmp17;
+      if (cResult[10] === tmp12.header) {
+        tmp17 = cResult[11];
+      }
+      if (cResult[12] === tmp12.subtitle) {
+        let tmp20;
+        if (cResult[13] === tmp8) {
+          tmp20 = cResult[14];
+        }
+        if (cResult[15] === tmp5) {
+          let tmp23;
+          if (cResult[16] === tmp12.buttons) {
+            tmp23 = cResult[17];
+          }
+          if (cResult[18] === tmp7) {
+            if (cResult[19] === tmp13) {
+              if (cResult[20] === tmp17) {
+                if (cResult[21] === tmp20) {
+                  let tmp27;
+                  if (cResult[22] === tmp23) {
+                    tmp27 = cResult[23];
+                  }
+                  return tmp27;
+                }
+              }
+            }
+          }
+          const obj2 = { noDefaultButtons: true, children: items };
+          const tmp30 = AlertDefault;
+          const merged = Object.assign(tmp7);
+          items = [tmp13, tmp17, tmp20, tmp23];
+          const tmp34 = metroImportDefault(tmp30, obj2);
+          cResult[18] = tmp7;
+          cResult[19] = tmp13;
+          cResult[20] = tmp17;
+          cResult[21] = tmp20;
+          cResult[22] = tmp23;
+          cResult[23] = tmp34;
+          tmp27 = tmp34;
+        }
+        const obj3 = { style: tmp12.buttons, children: tmp5 };
+        const tmp26 = metroRequire(View, obj3);
+        cResult[15] = tmp5;
+        cResult[16] = tmp12.buttons;
+        cResult[17] = tmp26;
+        tmp23 = tmp26;
+      }
+      let tmp21 = null;
+      if (null != tmp8) {
+        const obj4 = { style: tmp12.subtitle, variant: "text-sm/medium", color: "text-default", children: tmp8 };
+        tmp21 = metroRequire(tmp(4833).Text, obj4);
+      }
+      cResult[12] = tmp12.subtitle;
+      cResult[13] = tmp8;
+      cResult[14] = tmp21;
+      tmp20 = tmp21;
+    }
+    const obj5 = { style: tmp12.header, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: tmp6 };
+    const tmp19 = metroRequire(Text_Text.Heading, obj5);
+    cResult[9] = tmp6;
+    cResult[10] = tmp12.header;
+    cResult[11] = tmp19;
+    tmp17 = tmp19;
+  }
+  let tmp14 = null;
+  if (null != tmp4) {
+    const obj6 = { style: tmp12.headerImage, children: metroRequire(tmp4, { size: "lg" }) };
+    tmp14 = metroRequire(View, obj6);
+  }
+  cResult[6] = tmp4;
+  cResult[7] = tmp12.headerImage;
+  cResult[8] = tmp14;
+  tmp13 = tmp14;
+}) : ((arg0) => {
+  let buttons;
+  let header;
+  let icon;
+  let items;
+  let subtitle;
   ({ icon, subtitle } = arg0);
   ({ header, buttons } = arg0);
   const merged = Object.assign(arg0, Object.assign({ header: 0, icon: 0, subtitle: 0, buttons: 0 }));
-  const tmp2 = closure_6();
-  const obj = {};
+  const tmp2 = closure_8();
+  const obj = { noDefaultButtons: true, children: items };
+  const tmp5 = AlertDefault;
   const merged1 = Object.assign(merged);
-  obj.noDefaultButtons = true;
   let tmp7 = null;
+  const tmp3 = metroImportDefault;
   if (null != icon) {
-    const obj2 = { style: tmp2.headerImage, children: React4(icon, { size: "lg" }) };
-    tmp7 = React4(View, obj2);
+    const obj2 = { style: tmp2.headerImage, children: metroRequire(icon, { size: "lg" }) };
+    tmp7 = metroRequire(View, obj2);
   }
-  const items = [tmp7, React4(Text_Text.Heading, { style: tmp2.header, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: header }), , ];
+  items = [tmp7, , , ];
+  const obj3 = { style: tmp2.header, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: header };
+  items[1] = metroRequire(Text_Text.Heading, obj3);
   let tmp10Result = null;
   if (null != subtitle) {
     const obj4 = { style: tmp2.subtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
     tmp10Result = tmp10(Text_Text.Text, obj4);
   }
   items[2] = tmp10Result;
-  items[3] = React4(View, { style: tmp2.buttons, children: buttons });
-  obj.children = items;
-  return hasOwnProperty(common_AlertDefault, obj);
-};
+  const obj5 = { style: tmp2.buttons, children: buttons };
+  items[3] = metroRequire(View, obj5);
+  return tmp3(tmp5, obj);
+});
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlert.tsx");
+
+export default tmp4;

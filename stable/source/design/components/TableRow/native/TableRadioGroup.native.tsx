@@ -1,78 +1,292 @@
-// Module ID: 5934
-// Function ID: 5935
+// Module ID: 5995
+// Function ID: 5996
 // Name: TableRadioGroup
-// Dependencies: [32, 19, 1074, 21, 5935, 5936, 5937, 2]
-// Exports: TableRadioGroup
+// Dependencies: [32, 19, 1086, 21, 558, 576, 5996, 5994, 5997, 2]
 
-// Module 5934 (TableRadioGroup)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 5995 (TableRadioGroup)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let jsx = fn(21).jsx;
-const context = noop.createContext({ selectedValue: null, onSelect: fn(1074).NOOP });
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/TableRow/native/TableRadioGroup.native.tsx");
+let dependencyMap;
 
-export const TableRadioGroupContext = context;
-export const TableRadioGroup = function TableRadioGroup(arg0) {
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const NOOP = Constants.NOOP;
+let jsx = Fragment.jsx;
+let context = react.createContext({ selectedValue: null, onSelect: NOOP });
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupRef) => {
+  let accessibilityLabel;
+  let c3;
+  let children;
+  let closure_1;
+  let defaultValue;
+  let description;
+  let hasIcons;
+  let helperText;
+  let onChange;
+  let title;
+  let tmp7;
+  let value;
+  let tmp = onChange;
+  const obj = onChange(576);
+  const cResult = obj.c(26);
+  ({ children, value, defaultValue, onChange } = groupRef);
+  ({ title, description, helperText, hasIcons, accessibilityLabel } = groupRef);
+  let tmp4 = undefined !== value;
+  dependencyMap = tmp4;
+  let tmp5 = null;
+  groupRef = groupRef.groupRef;
+  const useState = react.useState;
+  if (!tmp4) {
+    if (defaultValue == null) {
+      defaultValue = null;
+    }
+    tmp5 = defaultValue;
+  }
+  const tmp6 = _slicedToArray(useState(tmp5), 2);
+  [tmp7, _slicedToArray] = tmp6;
+  if (tmp4) {
+    tmp7 = value;
+  }
+  if (tmp7 == null) {
+    tmp7 = null;
+  }
+  react = tmp7;
+  if (cResult[0] === tmp4) {
+    if (cResult[1] === onChange) {
+      let tmp8;
+      let tmp9;
+      if (cResult[2] === tmp7) {
+        tmp8 = cResult[3];
+        tmp9 = cResult[4];
+      }
+      const imperativeHandle = obj2.useImperativeHandle(groupRef, tmp8, tmp9);
+      context = obj2.useContext(tmp(5996).RedesignCompatContext);
+      if (cResult[5] === tmp4) {
+        let tmp12;
+        if (cResult[6] === onChange) {
+          tmp12 = cResult[7];
+        }
+        if (cResult[8] === tmp12) {
+          let tmp13;
+          let tmp15;
+          if (cResult[9] === tmp7) {
+            tmp13 = cResult[10];
+          }
+          if (cResult[11] === children) {
+            let tmp14;
+            if (cResult[12] === context) {
+              tmp14 = cResult[13];
+            }
+            if (cResult[16] === accessibilityLabel) {
+              if (cResult[17] === description) {
+                if (cResult[18] === hasIcons) {
+                  if (cResult[19] === helperText) {
+                    if (cResult[20] === tmp14) {
+                      let tmp17;
+                      if (cResult[21] === title) {
+                        tmp17 = cResult[22];
+                      }
+                      if (cResult[23] === tmp13) {
+                        let tmp20;
+                        if (cResult[24] === tmp17) {
+                          tmp20 = cResult[25];
+                        }
+                        return tmp20;
+                      }
+                      const obj3 = { value: tmp13, children: tmp17 };
+                      const tmp23 = context(context.Provider, obj3);
+                      cResult[23] = tmp13;
+                      cResult[24] = tmp17;
+                      cResult[25] = tmp23;
+                      tmp20 = tmp23;
+                    }
+                  }
+                }
+              }
+            }
+            const obj4 = { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: tmp14 };
+            const tmp19 = context(tmp(5997).TableRowGroup, obj4);
+            cResult[16] = accessibilityLabel;
+            cResult[17] = description;
+            cResult[18] = hasIcons;
+            cResult[19] = helperText;
+            cResult[20] = tmp14;
+            cResult[21] = title;
+            cResult[22] = tmp19;
+            tmp17 = tmp19;
+          }
+          if (cResult[14] !== context) {
+            class M {
+              constructor(type) {
+                if (!react.isValidElement(type)) {
+                  let tmp4 = null;
+                  return tmp4;
+                }
+                tmp4 = type;
+              }
+            }
+            cResult[14] = context;
+            cResult[15] = M;
+            tmp15 = M;
+          } else {
+            class M {
+              constructor(type) {
+                if (!react.isValidElement(type)) {
+                  let tmp4 = null;
+                  return tmp4;
+                }
+                tmp4 = type;
+              }
+            }
+          }
+          const Children = obj2.Children;
+          const mapped = Children.map(children, tmp15);
+          cResult[11] = children;
+          cResult[12] = context;
+          cResult[13] = mapped;
+          tmp14 = mapped;
+        }
+        const obj5 = { selectedValue: tmp7, onSelect: tmp12 };
+        cResult[8] = tmp12;
+        cResult[9] = tmp7;
+        cResult[10] = obj5;
+        tmp13 = obj5;
+      }
+      const fn2 = function _(arg0) {
+        const tmp = closure_1;
+        if (!tmp) {
+          _slicedToArray(arg0);
+        }
+        if (onChange != null) {
+          tmp4(arg0);
+        }
+      };
+      cResult[5] = tmp4;
+      cResult[6] = onChange;
+      cResult[7] = fn2;
+      tmp12 = fn2;
+    }
+  }
+  const fn = function u() {
+    return {
+      setValue(arg0) {
+        const tmp = closure_1_1;
+        if (!tmp) {
+          closure_1_2(arg0);
+        }
+        if (onChange != null) {
+          tmp4(arg0);
+        }
+      },
+      getValue() {
+        return closure_1_3;
+      }
+    };
+  };
+  const items = [tmp4, onChange, tmp7];
+  cResult[0] = tmp4;
+  cResult[1] = onChange;
+  cResult[2] = tmp7;
+  cResult[3] = fn;
+  cResult[4] = items;
+  tmp9 = items;
+  tmp8 = fn;
+}) : ((arg0) => {
+  let Children;
+  let _undefined;
+  let accessibilityLabel;
+  let c2;
+  let children;
+  let closure_1;
+  let closure_4;
+  let defaultValue;
+  let description;
+  let groupRef;
+  let hasIcons;
+  let helperText;
+  let onChange;
+  let selectedValue;
+  let title;
+  let tmp4;
+  let value;
   ({ value, defaultValue, onChange } = arg0);
   _slicedToArray = undefined;
-  noop = undefined;
+  react = undefined;
   jsx = undefined;
   let onSelect;
+  let tmp = undefined !== value;
   dependencyMap = tmp;
   let tmp2 = null;
   ({ children, title, description, helperText, hasIcons, groupRef, accessibilityLabel } = arg0);
-  if (undefined === value) {
+  const useState = react.useState;
+  if (!tmp) {
     if (defaultValue == null) {
       defaultValue = null;
     }
     tmp2 = defaultValue;
   }
-  [tmp4, c2] = noop.useState(tmp2);
-  if (undefined !== value) {
+  [tmp4, c2] = _slicedToArray(useState(tmp2), 2);
+  const tmp3 = _slicedToArray(useState(tmp2), 2);
+  if (tmp) {
     tmp4 = value;
   }
   if (tmp4 == null) {
     tmp4 = null;
   }
-  noop = tmp4;
-  const items = [undefined !== value, onChange, tmp4];
+  react = tmp4;
+  const items = [tmp, onChange, tmp4];
   const imperativeHandle = obj.useImperativeHandle(groupRef, () => ({
     setValue(arg0) {
-      if (!closure_1_1) {
+      const tmp = closure_1_1;
+      if (!tmp) {
         _undefined(arg0);
       }
       if (onChange != null) {
-        tmp3(arg0);
+        tmp4(arg0);
       }
     },
     getValue() {
       return selectedValue;
     }
   }), items);
-  jsx = obj.useContext(onChange(5935).RedesignCompatContext);
-  const items1 = [undefined !== value, onChange];
+  jsx = obj.useContext(onChange(5996).RedesignCompatContext);
+  const items1 = [tmp, onChange];
   onSelect = obj.useCallback((arg0) => {
-    if (!closure_1) {
+    const tmp = closure_1;
+    if (!tmp) {
       _undefined(arg0);
     }
     if (onChange != null) {
-      tmp3(arg0);
+      tmp4(arg0);
     }
   }, items1);
   const items2 = [tmp4, onSelect];
-  const obj2 = { value: noop.useMemo(() => ({ selectedValue, onSelect }), items2), children: null };
-  const obj3 = { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: null };
-  const Children = obj.Children;
-  obj3.children = Children.map(children, (type) => {
-    if (!noop.isValidElement(type)) {
-      let tmp4 = null;
-      return tmp4;
-    }
-    tmp4 = type;
+  const Provider = onSelect.Provider;
+  ({
+    accessibilityRole: "radiogroup",
+    accessibilityLabel,
+    title,
+    description,
+    helperText,
+    hasIcons,
+    children: Children.map(children, (type) => {
+      if (!react.isValidElement(type)) {
+        let tmp4 = null;
+        return tmp4;
+      }
+      tmp4 = type;
+    })
   });
-  obj2.children = jsx(onChange(5936).TableRowGroup, { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: null });
-  return <onSelect.Provider value={noop.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</onSelect.Provider>;
-};
+  Children = obj.Children;
+  const TableRowGroup = onChange(5997).TableRowGroup;
+  return <Provider value={react.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</Provider>;
+});
+const result = size.fileFinishedImporting("design/components/TableRow/native/TableRadioGroup.native.tsx");
+
+export const TableRadioGroupContext = context;
+export const TableRadioGroup = tmp3;

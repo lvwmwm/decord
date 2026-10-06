@@ -1,40 +1,45 @@
-// Module ID: 18280
-// Function ID: 18281
+// Module ID: 17647
+// Function ID: 17648
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2109, 502, 1364, 18281, 5524, 18282, 1241, 18283, 1271, 7395, 2]
+// Dependencies: [17, 2115, 502, 1370, 17648, 5588, 17649, 1253, 17650, 1283, 6540, 2]
 
-// Module 18280 (NativeExperimentBridgeManager)
-import _mod17 from "module_17" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import YYTextReplacementExperiment from "YYTextReplacementExperiment" /* 18281 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 18283 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+// Module 17647 (NativeExperimentBridgeManager)
+import react_native from "react-native" /* 17 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 5588 */;
+import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 17649 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 17650 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const YYTextReplacementExperiment = tmp(17648);
 function syncYYTextReplacementExperiment() {
+  const obj = PlatformUtils;
   if (obj.isIOS()) {
     const NSUserDefaultsBridge = NativeModules.NSUserDefaultsBridge;
     if (NSUserDefaultsBridge != null) {
       const setShouldEnableYYTextReplacement = NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
       if (setShouldEnableYYTextReplacement != null) {
-        const result = setShouldEnableYYTextReplacement(YYTextReplacementExperiment.shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
         const tmpResult = YYTextReplacementExperiment;
+        const result = setShouldEnableYYTextReplacement(tmpResult.shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
       }
     }
   }
 }
 function updateIOSExperiments() {
+  const obj = PlatformUtils;
   if (obj.isIOS()) {
     const NSUserDefaultsBridge = NativeModules.NSUserDefaultsBridge;
     if (NSUserDefaultsBridge != null) {
       const setShouldEnableYYTextReplacement = NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
       if (setShouldEnableYYTextReplacement != null) {
-        const result = setShouldEnableYYTextReplacement(tmp(18281).shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
-        const tmpResult = tmp(18281);
+        const tmpResult = YYTextReplacementExperiment;
+        const result = setShouldEnableYYTextReplacement(tmpResult.shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
       }
     }
   }
@@ -42,11 +47,11 @@ function updateIOSExperiments() {
   if (NSUserDefaultsBridge2 != null) {
     const setShouldFixPushNotificationRawPayload = NSUserDefaultsBridge2.setShouldFixPushNotificationRawPayload;
     if (setShouldFixPushNotificationRawPayload != null) {
-      const result1 = setShouldFixPushNotificationRawPayload(tmp(5524).isIOSPushNotificationRawPayloadFixExperimentEnabled());
-      const tmpResult2 = tmp(5524);
+      const tmpResult2 = IOSPushNotificationRawPayloadFixExperiment;
+      const result1 = setShouldFixPushNotificationRawPayload(tmpResult2.isIOSPushNotificationRawPayloadFixExperimentEnabled());
     }
   }
-  obj = PlatformUtils;
+  const obj4 = VideoStutterMitigationExperimentDefault;
   if (obj4.getConfig({ location: "NativeExperimentBridgeManager" }).enabled) {
     const RNVVideo = tmp6.RNVVideo;
     if (RNVVideo != null) {
@@ -59,38 +64,44 @@ function updateIOSExperiments() {
   }
 }
 function updateAndroidExperiments() {
-  const obj = { "X-Super-Properties": AnalyticsUtilsDefault.getSuperPropertiesBase64(), "X-Fingerprint": AuthenticationStore.getFingerprint(), "X-Installation-ID": AuthenticationStore.getInstallationForTracking(), "X-Discord-Locale": LocaleStore.locale };
-  const obj3 = AuthenticationStore;
-  const config = NotificationLoadMessagesExperimentDefault.getConfig({ location: "NativeExperimentBridgeManager" });
+  let obj2;
+  let obj6;
+  const obj = { "X-Super-Properties": obj2.getSuperPropertiesBase64(), "X-Fingerprint": AuthenticationStore.getFingerprint(), "X-Installation-ID": AuthenticationStore.getInstallationForTracking(), "X-Discord-Locale": LocaleStore.locale };
+  obj2 = AnalyticsUtilsDefault;
+  const obj4 = NotificationLoadMessagesExperimentDefault;
+  const config = obj4.getConfig({ location: "NativeExperimentBridgeManager" });
   const NativeCacheModule = NativeModules.NativeCacheModule;
+  const obj3 = AuthenticationStore;
   if (NativeCacheModule != null) {
     const _JSON = JSON;
-    const obj5 = { headers: obj, userId: obj3.getId(), enabled: tmp3, apiBaseUrl: HTTPUtils.getAPIBaseURL(), urlQueryParams: null, cooldownMs: null, debounceMs: null };
+    const setItem = NativeCacheModule.setItem;
+    const obj5 = { headers: obj, userId: obj3.getId(), enabled: tmp3, apiBaseUrl: obj6.getAPIBaseURL(), urlQueryParams: "?limit=" + tmp4, cooldownMs: tmp5, debounceMs: tmp6 };
     const _HermesInternal = HermesInternal;
-    obj5.urlQueryParams = "?limit=" + tmp4;
-    obj5.cooldownMs = tmp5;
-    obj5.debounceMs = tmp6;
-    const result = NativeCacheModule.setItem("notificationNetworkRequest", JSON.stringify(obj5));
+    obj6 = HTTPUtils;
+    const result = setItem("notificationNetworkRequest", stringify(obj5));
   }
 }
-const NativeModules = _mod17.NativeModules;
-const prototype = function NativeExperimentBridgeManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  if (obj.isIOS()) {
-    let tmp5 = updateIOSExperiments;
-  } else {
-    tmp5 = PlatformUtils.isAndroid() ? updateAndroidExperiments : (() => {
+const NativeModules = react_native.NativeModules;
+class NativeExperimentBridgeManager extends AutomaticLifecycleManager {
+  constructor() {
+    let tmp5;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    const obj = PlatformUtils;
+    if (obj.isIOS()) {
+      tmp5 = updateIOSExperiments;
+    } else {
+      const tmp3Result = PlatformUtils;
+      tmp5 = tmp3Result.isAndroid() ? updateAndroidExperiments : (() => {
 
-    });
-    const tmp3Result = PlatformUtils;
+      });
+    }
+    applyArgumentsResult.handleUpdate = tmp5;
+    const obj2 = { APP_STATE_UPDATE: syncYYTextReplacementExperiment, POST_CONNECTION_OPEN: applyArgumentsResult.handleUpdate };
+    applyArgumentsResult.actions = obj2;
+    return applyArgumentsResult;
   }
-  applyArgumentsResult.handleUpdate = tmp5;
-  applyArgumentsResult.actions = { APP_STATE_UPDATE: syncYYTextReplacementExperiment, POST_CONNECTION_OPEN: applyArgumentsResult.handleUpdate };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
 }
-const prototype1 = new prototype();
+const nativeExperimentBridgeManager = new NativeExperimentBridgeManager();
 let result = size.fileFinishedImporting("modules/chat/native/NativeExperimentBridgeManager.tsx");
 
-export default prototype1;
+export default nativeExperimentBridgeManager;

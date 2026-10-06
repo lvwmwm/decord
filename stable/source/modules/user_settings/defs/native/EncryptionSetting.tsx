@@ -1,39 +1,93 @@
-// Module ID: 16176
-// Function ID: 16177
+// Module ID: 15453
+// Function ID: 15454
 // Name: EncryptionSetting
-// Dependencies: [10003, 8265, 1074, 504, 16177, 1115, 11754, 16178, 2]
+// Dependencies: [9141, 7421, 1086, 558, 576, 504, 15454, 1127, 10874, 15455, 2]
 
-// Module 16176 (EncryptionSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 16177 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 10003 */;
+// Module 15453 (EncryptionSetting)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 15454 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9141 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11754);
-const route = SettingBuilders.createRoute({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.x8U2eC);
-  },
-  useDescription: function useSecureFramesEncryptionDescription() {
-    const secureFramesVerifiedUserIds = useSecureFramesVerifiedUsers.useSecureFramesVerifiedUserIds();
-    const intl = util.intl;
-    return intl.formatToPlainString(util.t["6vrePS"], { count: secureFramesVerifiedUserIds.length });
-  },
-  parent: fn(8265).MobileUserSettings.DATA_AND_PRIVACY,
-  usePredicate: function useSecureFramesPersistentCodesValue() {
+const require = globalThis.__r;
+
+let tmp;
+const get_initialized = tmp(504);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let persistentCodesEnabled;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SecureFramesPersistedStore];
-    return initialize.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
+    const fn = function s() {
+      return persistentCodesEnabled.getPersistentCodesEnabled();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let persistentCodesEnabled;
+  const items = [SecureFramesPersistedStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  const obj = react;
+  const cResult = obj.c(2);
+  const obj2 = useSecureFramesVerifiedUsers;
+  const secureFramesVerifiedUserIds = obj2.useSecureFramesVerifiedUserIds();
+  if (cResult[0] !== secureFramesVerifiedUserIds.length) {
+    const intl = tmp(1127).intl;
+    const obj3 = { count: secureFramesVerifiedUserIds.length };
+    const formatToPlainStringResult = intl.formatToPlainString(intl2.t["6vrePS"], obj3);
+    cResult[0] = secureFramesVerifiedUserIds.length;
+    cResult[1] = formatToPlainStringResult;
+    tmp4 = formatToPlainStringResult;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
+  const obj = useSecureFramesVerifiedUsers;
+  const secureFramesVerifiedUserIds = obj.useSecureFramesVerifiedUserIds();
+  const intl = intl2.intl;
+  const obj2 = { count: secureFramesVerifiedUserIds.length };
+  return intl.formatToPlainString(intl2.t["6vrePS"], obj2);
+});
+let obj = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t.x8U2eC);
   },
+  useDescription: tmp3,
+  parent: MobileUserSettings.DATA_AND_PRIVACY,
+  usePredicate: tmp2,
   screen: {
-    route: fn(1074).UserSettingsSections.SECURE_FRAMES,
+    route: UserSettingsSections.SECURE_FRAMES,
     getComponent() {
       return require("SettingsSecureFramesScreen").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/EncryptionSetting.tsx");
 
 export default route;

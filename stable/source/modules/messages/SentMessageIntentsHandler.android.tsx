@@ -1,14 +1,12 @@
-// Module ID: 8034
-// Function ID: 8035
+// Module ID: 7183
+// Function ID: 7184
 // Name: SentMessageIntentsHandler
 // Dependencies: [2]
 
-// Module 8034 (SentMessageIntentsHandler)
+// Module 7183 (SentMessageIntentsHandler)
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/messages/SentMessageIntentsHandler.android.tsx");
-
-export default {
+const obj = {
   init() {
 
   },
@@ -19,3 +17,6 @@ export default {
 
   }
 };
+const result = size.fileFinishedImporting("modules/messages/SentMessageIntentsHandler.android.tsx");
+
+export default obj;

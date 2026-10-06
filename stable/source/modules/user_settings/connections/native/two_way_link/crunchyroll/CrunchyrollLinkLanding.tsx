@@ -1,47 +1,129 @@
-// Module ID: 9419
-// Function ID: 9420
+// Module ID: 8571
+// Function ID: 8572
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 9418, 1074, 21, 4788, 1115, 8577, 1484, 9382, 9420, 2108, 2]
-// Exports: default
+// Dependencies: [19, 8570, 1086, 21, 4837, 1127, 7726, 558, 576, 1491, 2114, 8534, 8572, 2]
 
-// Module 9419 (CrunchyrollLinkLanding)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import _modDef9420 from "module_9420" /* 9420 */;
-import noop from "module_19" /* 19 */;
+// Module 8571 (CrunchyrollLinkLanding)
+import Fragment from "Fragment" /* 21 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 8570 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8572 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1086 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_4 = fn(9418).CrunchyrollLinkModalScenes;
-const Constants = fn(1074);
+let arr, navigation;
+
+let hasOwnProperty;
+let metroRequire;
+const constants = CrunchyrollLinkConstants.CrunchyrollLinkModalScenes;
 ({ HelpdeskArticles: hasOwnProperty, PlatformTypes: metroRequire } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ image: { width: 234, height: 147 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkLanding.tsx");
-
-export default function CrunchyrollLinkLanding() {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let tmp10;
+  let tmp16;
+  let tmp8;
+  let tmp9;
+  const obj = navigation(576);
+  const cResult = obj.c(9);
+  const tmp4 = closure_8();
+  const obj2 = navigation(1491);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { label: intl.string(navigation(1127).t["2TXHQd"]), icon: navigation(7726).PlayIcon };
+    intl = tmp(1127).intl;
+    const items = [obj3];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== navigation) {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+    cResult[1] = navigation;
+    cResult[2] = L;
+  } else {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+  }
+  const image = tmp4.image;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+    const stringResult = obj4.string(navigation(1127).t["Da+3NJ"]);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(navigation(1127).t.MaPpPL);
+    const obj5 = HelpdeskUtilsDefault;
+    const articleURL = obj5.getArticleURL(constants2.CRUNCHYROLL_CONNECTION);
+    cResult[3] = stringResult;
+    cResult[4] = stringResult1;
+    cResult[5] = articleURL;
+    tmp10 = articleURL;
+    tmp9 = stringResult1;
+    tmp8 = stringResult;
+  } else {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+    tmp9 = cResult[4];
+    tmp10 = cResult[5];
+  }
+  if (cResult[6] === tmp7) {
+    class L {
+      constructor() {
+        arr = closure_0.push(closure_4.PRE_CONNECT);
+        return;
+      }
+    }
+    return tmp16;
+  }
+  const TwoWayLinkLanding = tmp(8534).TwoWayLinkLanding;
+  tmp16 = <TwoWayLinkLanding platformType={constants3.CRUNCHYROLL} img={AssetRegistryDefault} imgStyle={image} headerConnect={tmp8} body={tmp9} learnMoreLink={tmp10} onNext={tmp7} valueProps={first} />;
+  cResult[6] = tmp7;
+  cResult[7] = tmp4.image;
+  cResult[8] = tmp16;
+}) : (() => {
   const tmp = closure_8();
-  navigation = navigation(1484).useNavigation();
+  let obj = navigation(1491);
+  navigation = obj.useNavigation();
   let items = [navigation];
-  const memo = noop.useMemo(() => {
-    const obj = { label: null, icon: null };
-    const intl = navigation(1115).intl;
-    obj.label = intl.string(navigation(1115).t["2TXHQd"]);
-    obj.icon = navigation(8577).PlayIcon;
+  const memo = react.useMemo(() => {
+    let intl;
+    const obj = { label: intl.string(navigation(dependencyMap[5]).t["2TXHQd"]), icon: navigation(dependencyMap[6]).PlayIcon };
+    intl = navigation(dependencyMap[5]).intl;
     const items = [obj];
     return items;
   }, []);
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     navigation.push(constants.PRE_CONNECT);
   }, items);
-  const obj2 = { platformType: constants2.CRUNCHYROLL, img: _modDef9420, imgStyle: tmp.image, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null };
-  let intl = navigation(1115).intl;
-  obj2.headerConnect = intl.string(navigation(1115).t["Da+3NJ"]);
-  const intl2 = navigation(1115).intl;
-  obj2.body = intl2.string(navigation(1115).t.MaPpPL);
-  let obj = navigation(1484);
-  obj2.learnMoreLink = HelpdeskUtilsDefault.getArticleURL(constants.CRUNCHYROLL_CONNECTION);
-  obj2.onNext = callback;
-  obj2.valueProps = memo;
-  return jsx(navigation(9382).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: _modDef9420, imgStyle: tmp.image, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null });
-};
+  const TwoWayLinkLanding = navigation(8534).TwoWayLinkLanding;
+  let intl = navigation(1127).intl;
+  const intl2 = navigation(1127).intl;
+  const obj3 = HelpdeskUtilsDefault;
+  return <TwoWayLinkLanding platformType={constants3.CRUNCHYROLL} img={AssetRegistryDefault} imgStyle={tmp.image} headerConnect={intl.string(navigation(1127).t["Da+3NJ"])} body={intl2.string(navigation(1127).t.MaPpPL)} learnMoreLink={obj3.getArticleURL(constants2.CRUNCHYROLL_CONNECTION)} onNext={callback} valueProps={memo} />;
+});
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkLanding.tsx");
+
+export default tmp3;

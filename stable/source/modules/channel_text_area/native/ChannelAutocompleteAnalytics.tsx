@@ -1,33 +1,39 @@
-// Module ID: 12675
-// Function ID: 12676
+// Module ID: 11779
+// Function ID: 11780
 // Name: ChannelAutocompleteAnalytics
-// Dependencies: [1074, 1241, 4968, 2]
+// Dependencies: [1086, 1253, 5017, 2]
 // Exports: iOSTrackAutocompleteOpen, iOSTrackAutocompleteSelect
 
-// Module 12675 (ChannelAutocompleteAnalytics)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
+// Module 11779 (ChannelAutocompleteAnalytics)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteAnalytics.tsx");
 
 export const iOSTrackAutocompleteOpen = function iOSTrackAutocompleteOpen(autocompleteType, channel, arg2) {
-  const obj5 = {};
-  const obj = AnalyticsUtilsDefault;
-  const merged = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(channel));
-  const merged1 = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(channel.guild_id));
-  obj5.autocomplete_type = autocompleteType;
-  ({ numEmojiResults: obj2.num_emoji_results, numStickerResults: obj2.num_sticker_results, gameMentionsAvailable: obj2.game_mentions_available } = arg2);
-  obj.track(AnalyticEvents.CHANNEL_AUTOCOMPLETE_OPEN, obj5);
+  const obj = { autocomplete_type: autocompleteType };
+  const track = AnalyticsUtilsDefault.track;
+  const CHANNEL_AUTOCOMPLETE_OPEN = AnalyticEvents.CHANNEL_AUTOCOMPLETE_OPEN;
+  AnalyticsUtilsDefault;
+  const obj2 = AppAnalyticsUtils;
+  const merged = Object.assign(obj2.collectChannelAnalyticsMetadata(channel));
+  const obj3 = AppAnalyticsUtils;
+  const merged1 = Object.assign(obj3.collectGuildAnalyticsMetadata(channel.guild_id));
+  ({ numEmojiResults: obj.num_emoji_results, numStickerResults: obj.num_sticker_results, gameMentionsAvailable: obj.game_mentions_available } = arg2);
+  track(CHANNEL_AUTOCOMPLETE_OPEN, obj);
 };
 export const iOSTrackAutocompleteSelect = function iOSTrackAutocompleteSelect(autocompleteType, channel, arg2) {
-  const obj5 = {};
-  const obj = AnalyticsUtilsDefault;
-  const merged = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(channel));
-  const merged1 = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(channel.guild_id));
-  obj5.autocomplete_type = autocompleteType;
-  ({ selectionType: obj2.selection_type, stickerId: obj2.sticker_id, gameId: obj2.application_id, numEmojiResults: obj2.num_emoji_results, numStickerResults: obj2.num_sticker_results, expressionName: obj2.emoji_name, isCustom: obj2.is_custom, isAnimated: obj2.is_animated } = arg2);
-  obj.track(AnalyticEvents.CHANNEL_AUTOCOMPLETE_SELECTED, obj5);
+  const obj = { autocomplete_type: autocompleteType };
+  const track = AnalyticsUtilsDefault.track;
+  const CHANNEL_AUTOCOMPLETE_SELECTED = AnalyticEvents.CHANNEL_AUTOCOMPLETE_SELECTED;
+  AnalyticsUtilsDefault;
+  const obj2 = AppAnalyticsUtils;
+  const merged = Object.assign(obj2.collectChannelAnalyticsMetadata(channel));
+  const obj3 = AppAnalyticsUtils;
+  const merged1 = Object.assign(obj3.collectGuildAnalyticsMetadata(channel.guild_id));
+  ({ selectionType: obj.selection_type, stickerId: obj.sticker_id, gameId: obj.application_id, numEmojiResults: obj.num_emoji_results, numStickerResults: obj.num_sticker_results, expressionName: obj.emoji_name, isCustom: obj.is_custom, isAnimated: obj.is_animated } = arg2);
+  track(CHANNEL_AUTOCOMPLETE_SELECTED, obj);
 };

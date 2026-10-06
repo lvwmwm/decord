@@ -1,15 +1,15 @@
-// Module ID: 7803
-// Function ID: 7804
+// Module ID: 6953
+// Function ID: 6954
 // Name: ChannelStatusStore
-// Dependencies: [5526, 504, 1095, 573, 2]
+// Dependencies: [5590, 504, 1107, 585, 2]
 
-// Module 7803 (ChannelStatusStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
+// Module 6953 (ChannelStatusStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ChannelTypes from "ChannelTypes" /* 1107 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function handleConnectionReset() {
   set.clear();
 }
@@ -17,55 +17,57 @@ function handleGuildReset(guild) {
   set.delete(guild.guild.id);
 }
 const set = new Set();
-const dependencyMap = {};
-const Store = initializeDefault.Store;
+const React3 = {};
+const Store = get_initializedDefault.Store;
 class ChannelStatusStore extends Store {
-}
-const prototype = ChannelStatusStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(GatewayConnectionStore);
-};
-prototype["getChannelStatus"] = function getChannelStatus(guild_id) {
-  if (null != guild_id) {
-    if (null != guild_id.guild_id) {
-      if (guild_id.type === ChannelTypes.ChannelTypes.GUILD_VOICE) {
-        let tmp5;
-        if (dependencyMap[guild_id.guild_id] != null) {
-          tmp5 = tmp4[guild_id.id];
+  initialize() {
+    this.waitFor(GatewayConnectionStore);
+  }
+  getChannelStatus(guild_id) {
+    if (null != guild_id) {
+      if (null != guild_id.guild_id) {
+        if (guild_id.type === ChannelTypes.ChannelTypes.GUILD_VOICE) {
+          let tmp5;
+          if (closure_4[guild_id.guild_id] != null) {
+            tmp5 = tmp4[guild_id.id];
+          }
+          return tmp5;
         }
-        return tmp5;
       }
     }
   }
-};
-prototype["hasRequestedStatuses"] = function hasRequestedStatuses(guild_id) {
-  return set.has(guild_id);
-};
+  hasRequestedStatuses(guild_id) {
+    return set.has(guild_id);
+  }
+}
+const prototype = ChannelStatusStore.prototype;
 ChannelStatusStore.displayName = "ChannelStatusStore";
-const channelStatusStore = new ChannelStatusStore(DispatcherDefault, {
+const obj = {
   GUILD_CREATE: handleGuildReset,
   GUILD_DELETE: handleGuildReset,
   CONNECTION_RESUMED: handleConnectionReset,
   CONNECTION_OPEN: handleConnectionReset,
   VOICE_CHANNEL_STATUS_UPDATE: function handleVoiceChannelStatusUpdate(guildId) {
-    if (null == dependencyMap[guildId.guildId]) {
-      tmp[guildId.guildId] = {};
+    if (null == closure_4[guildId.guildId]) {
+      closure_4[guildId.guildId] = {};
     }
-    dependencyMap[guildId.guildId][guildId.id] = guildId.status;
+    closure_4[guildId.guildId][guildId.id] = guildId.status;
   },
   CHANNEL_INFO: function handleChannelInfo(arg0) {
+    let channels;
+    let guildId;
     ({ guildId, channels } = arg0);
-    dependencyMap[guildId] = {};
+    closure_4[guildId] = {};
     for (const item10009 of channels) {
-      dependencyMap[guildId][item10009.id] = item10009.status;
+      closure_4[guildId][item10009.id] = item10009.status;
       continue;
     }
   },
   FETCH_CHANNEL_INFO: function handleFetchChannelInfo(guildId) {
     set.add(guildId.guildId);
   }
-});
-const size = fn(2);
+};
+const channelStatusStore = new ChannelStatusStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/channel/ChannelStatusStore.tsx");
 
 export default channelStatusStore;

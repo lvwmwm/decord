@@ -1,32 +1,80 @@
-// Module ID: 12285
-// Function ID: 12286
+// Module ID: 11361
+// Function ID: 11362
 // Name: ForumPostPinIcon
-// Dependencies: [19, 17, 21, 4788, 576, 1177, 12286, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1189, 11362, 2]
 
-// Module 12285 (ForumPostPinIcon)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import _modDef12286 from "module_12286" /* 12286 */;
-import noop from "module_19" /* 19 */;
+// Module 11361 (ForumPostPinIcon)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11362 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { pin: null, pinIcon: null };
-let size = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, width: 23, height: 23, marginEnd: 4, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj2.pin = size;
-const size1 = { height: 14, width: 14, tintColor: nativeDefault.colors.WHITE };
-obj2.pinIcon = size1;
-let closure_5 = createStyles.createStyles(obj2);
-size = fn(2);
+let containerStyle;
+
+let size;
+let size1;
+let tmp;
+const native = tmp(1189);
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { pin: size, pinIcon: size1 };
+size = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, width: 23, height: 23, marginEnd: 4, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+createStyles = createStyles.createStyles;
+size1 = { height: 14, width: 14, tintColor: nativeDefault.colors.WHITE };
+let closure_5 = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) => {
+  const obj = react2;
+  const cResult = obj.c(8);
+  containerStyle = containerStyle.containerStyle;
+  const tmp4 = closure_5();
+  if (cResult[0] === containerStyle) {
+    let tmp5;
+    let tmp6;
+    if (cResult[1] === tmp4.pin) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] !== tmp4.pinIcon) {
+      const Icon = native.Icon;
+      const tmp9 = <Icon source={AssetRegistryDefault} style={tmp4.pinIcon} />;
+      cResult[3] = tmp4.pinIcon;
+      cResult[4] = tmp9;
+      tmp6 = tmp9;
+    } else {
+      tmp6 = cResult[4];
+    }
+    if (cResult[5] === tmp5) {
+      let tmp10;
+      if (cResult[6] === tmp6) {
+        tmp10 = cResult[7];
+      }
+      return tmp10;
+    }
+    const tmp13 = <View style={tmp5}>{tmp6}</View>;
+    cResult[5] = tmp5;
+    cResult[6] = tmp6;
+    cResult[7] = tmp13;
+    tmp10 = tmp13;
+  }
+  const items = [tmp4.pin, containerStyle];
+  cResult[0] = containerStyle;
+  cResult[1] = tmp4.pin;
+  cResult[2] = items;
+  tmp5 = items;
+}) : ((containerStyle) => {
+  containerStyle = containerStyle.containerStyle;
+  const tmp = closure_5();
+  const items = [tmp.pin, containerStyle];
+  ({ source: AssetRegistryDefault, style: tmp.pinIcon });
+  const Icon = native.Icon;
+  return <View style={items}>{null}</View>;
+});
+size = size_mod;
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostPinIcon.tsx");
 
-export default function ForumPostPinIcon(containerStyle) {
-  const tmp = closure_5();
-  const obj = { style: null, children: jsx(native.Icon, { source: _modDef12286, style: tmp.pinIcon }) };
-  const items = [tmp.pin, containerStyle.containerStyle];
-  obj.style = items;
-  return <View style={null}>{jsx(native.Icon, { source: _modDef12286, style: tmp.pinIcon })}</View>;
-};
+export default tmp4;

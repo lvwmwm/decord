@@ -1,31 +1,40 @@
-// Module ID: 9861
-// Function ID: 9862
+// Module ID: 8999
+// Function ID: 9000
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 5015, 1074, 504, 1091, 1370, 7440, 2]
-// Exports: useGuildEmbeddedApplications
+// Dependencies: [5, 19, 5064, 1086, 504, 1103, 1376, 6585, 558, 576, 2]
 
-// Module 9861 (useGuildEmbeddedApplications)
-import DurationsDefault from "Durations" /* 1091 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7440 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5015 */;
+// Module 8999 (useGuildEmbeddedApplications)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6585 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import ApplicationStore from "ApplicationStore" /* 5064 */;
+import get_initialized from "get initialized" /* 504 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const initialize = fn(504);
-const obj2 = {
-  getQueryId: fn(1074).QueryIds.GUILD_EMBEDDED_APPLICATIONS,
+const require = globalThis.__r;
+let application, c3, c4, status;
+
+const QueryIds = Constants.QueryIds;
+let obj = {
+  getQueryId: QueryIds.GUILD_EMBEDDED_APPLICATIONS,
   failureStaleAfter: DurationsDefault.Seconds.MINUTE,
   get(arg0, arg1) {
-    const guildEmbeddedApplications = ApplicationStore.getGuildEmbeddedApplications(arg1, arg0);
+    let tmp2 = ApplicationStore;
+    const getGuildEmbeddedApplications = ApplicationStore.getGuildEmbeddedApplications;
+    const guildEmbeddedApplications = getGuildEmbeddedApplications(arg1, arg0);
     let found = null;
     if (null != guildEmbeddedApplications) {
-      const mapped = guildEmbeddedApplications.map((applicationId) => {
-        application = application.getApplication(applicationId.applicationId);
+      const mapped = guildEmbeddedApplications.map((status) => {
+        status = status.status;
+        application = application.getApplication(status.applicationId);
         let tmp2 = null;
         if (null != application) {
-          const obj = { application, status: applicationId.status };
-          tmp2 = obj;
+          tmp2 = { application, status };
+          const obj = { application, status };
         }
         return tmp2;
       });
@@ -33,20 +42,27 @@ const obj2 = {
     }
     return found;
   },
-  load: null
+  load: function() {
+    return closure_3(...arguments);
+  }
 };
-let closure_3 = asyncGeneratorStep(async (arg0, value, arg2) => {
+const createFetchStore = get_initialized.createFetchStore;
+let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
+  let closure_0;
+  let closure_2;
+  let obj2;
+  let closure_1 = value;
   if (c3 === 2) {
     c3 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
+  } else if (tmp2 === 3) {
     if (arg0 === 1) {
       throw value;
     } else if (arg0 === 2) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -62,7 +78,8 @@ let closure_3 = asyncGeneratorStep(async (arg0, value, arg2) => {
         } else if (null != closure_1) {
           c4 = 1;
           c3 = 1;
-          const obj5 = { value: ApplicationActionCreatorsDefault.getEmbeddedApplicationsForGuild(tmp6, tmp5, tmp7), done: false };
+          const obj5 = { value: obj2.getEmbeddedApplicationsForGuild(tmp5, tmp4, tmp6), done: false };
+          obj2 = ApplicationActionCreatorsDefault;
           return obj5;
         }
       } else if (arg0 === 1) {
@@ -74,40 +91,44 @@ let closure_3 = asyncGeneratorStep(async (arg0, value, arg2) => {
         return obj;
       }
       c3 = 3;
-      return { value: "HermesInternal", done: null };
-    } catch (tmp11) {
-      c3 = tmp;
-      throw tmp11;
+      return { value: "IconComponent", done: null };
+    } catch (tmp10) {
+      c3 = 3;
+      throw tmp10;
     }
   }
 });
-obj2.load = function() {
-  const self = this;
-  const apply = closure_3.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
+let closure_6 = createFetchStore(ApplicationStore, obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  const obj = react2;
+  const cResult = obj.c(6);
+  const tmp2 = closure_6(arg0, arg1, arg2);
+  const data = tmp2.data;
+  const error = tmp2.error;
+  const isLoading = tmp2.isLoading;
+  const refetch = tmp2.refetch;
+  let closure_4 = react.useRef(false);
+  const obj2 = react;
+  if (cResult[0] === data) {
+    if (cResult[1] === error) {
+      if (cResult[2] === isLoading) {
+        let tmp3;
+        let tmp4;
+        if (cResult[3] === refetch) {
+          tmp3 = cResult[4];
+          tmp4 = cResult[5];
+        }
+        const effect = obj2.useEffect(tmp3, tmp4);
+        return tmp2;
+      }
+    }
   }
-  return applyArgumentsResult;
-};
-let closure_6 = initialize.createFetchStore(ApplicationStore, obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/applications/useGuildEmbeddedApplications.tsx");
-
-export const useGuildEmbeddedApplications = function useGuildEmbeddedApplications(APP_CHANNEL, guildId, channelId) {
-  let tmp = closure_6(APP_CHANNEL, guildId, channelId);
-  const data = tmp.data;
-  const error = tmp.error;
-  const isLoading = tmp.isLoading;
-  const refetch = tmp.refetch;
-  noop.useRef(false);
-  const items = [data, isLoading, error, refetch];
-  const effect = noop.useEffect(() => {
+  const fn = function c() {
     if (null != data) {
       ref.current = true;
     } else {
       let current = ref.current;
+      const tmp = ref;
       if (current) {
         current = !isLoading;
       }
@@ -118,8 +139,45 @@ export const useGuildEmbeddedApplications = function useGuildEmbeddedApplication
         tmp.current = false;
         refetch();
       }
-      tmp = ref;
+    }
+  };
+  const items = [data, isLoading, error, refetch];
+  cResult[0] = data;
+  cResult[1] = error;
+  cResult[2] = isLoading;
+  cResult[3] = refetch;
+  cResult[4] = fn;
+  cResult[5] = items;
+  tmp4 = items;
+  tmp3 = fn;
+}) : ((arg0, arg1, arg2) => {
+  let tmp = closure_6(arg0, arg1, arg2);
+  const data = tmp.data;
+  const error = tmp.error;
+  const isLoading = tmp.isLoading;
+  const refetch = tmp.refetch;
+  let closure_4 = react.useRef(false);
+  const items = [data, isLoading, error, refetch];
+  const effect = react.useEffect(() => {
+    if (null != data) {
+      ref.current = true;
+    } else {
+      let current = ref.current;
+      const tmp = ref;
+      if (current) {
+        current = !isLoading;
+      }
+      if (current) {
+        current = null == error;
+      }
+      if (current) {
+        tmp.current = false;
+        refetch();
+      }
     }
   }, items);
   return tmp;
-};
+});
+const result = size.fileFinishedImporting("modules/applications/useGuildEmbeddedApplications.tsx");
+
+export const useGuildEmbeddedApplications = tmp5;

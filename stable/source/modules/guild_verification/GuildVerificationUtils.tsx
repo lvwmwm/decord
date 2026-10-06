@@ -1,18 +1,17 @@
-// Module ID: 13257
-// Function ID: 13258
+// Module ID: 12493
+// Function ID: 12494
 // Name: GuildVerificationUtils
-// Dependencies: [4610, 1074, 4612, 5774, 5818, 2]
+// Dependencies: [4658, 1086, 4660, 5838, 5882, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 13257 (GuildVerificationUtils)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
-import transitionToMemberVerification from "transitionToMemberVerification" /* 5774 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5818 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4610 */;
+// Module 12493 (GuildVerificationUtils)
+import Constants from "Constants" /* 1086 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5882 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4658 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
 let result = size.fileFinishedImporting("modules/guild_verification/GuildVerificationUtils.tsx");
 
 export const inviteGuildHasPendingMemberDisabledVerification = function inviteGuildHasPendingMemberDisabledVerification(guild) {
@@ -34,10 +33,12 @@ export const inviteGuildHasPendingMemberDisabledVerification = function inviteGu
 export const openVerificationModalOrTransitionToApplication = function openVerificationModalOrTransitionToApplication(id) {
   const request = UserGuildJoinRequestStore.getRequest(id);
   if (null != request) {
+    const tmp2 = require;
     if (request.applicationStatus !== MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED) {
-      const result = transitionToMemberVerification.transitionToMemberVerification(id);
-      const tmp2Result = transitionToMemberVerification;
+      const tmp2Result = tmp2(5838);
+      const result = tmp2Result.transitionToMemberVerification(id);
     }
   }
-  const result1 = MemberVerificationModalActionCreators.openMemberVerificationModal(id);
+  const obj = MemberVerificationModalActionCreators;
+  const result1 = obj.openMemberVerificationModal(id);
 };

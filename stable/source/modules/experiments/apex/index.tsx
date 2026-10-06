@@ -1,17 +1,20 @@
-// Module ID: 1434
-// Function ID: 1435
+// Module ID: 1441
+// Function ID: 1442
 // Name: ApexExperiment
-// Dependencies: [1235, 2, 1435, 1437]
+// Dependencies: [1247, 2, 1442, 1444]
 
-// Module 1434 (ApexExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+// Module 1441 (ApexExperiment)
+import apex_ApexExperiment from "apex/ApexExperiment" /* 1442 */;
+import apex_ApexTypes from "apex/ApexTypes" /* 1444 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
+const apex_ApexExperimentDefault = apex_ApexExperiment;
+
 const result = size.fileFinishedImporting("modules/experiments/apex/index.tsx");
 
-export const ApexExperiment = fn(1435).ApexExperiment;
-export const ApexExperimentsMessage = fn(1437).ApexExperimentsMessage;
-export const ExperimentName = fn(1437).ExperimentName;
+export const ApexExperiment = apex_ApexExperiment.ApexExperiment;
+export const ApexExperimentsMessage = apex_ApexTypes.ApexExperimentsMessage;
+export const ExperimentName = apex_ApexTypes.ExperimentName;
 export const createApexExperiment = apex_ApexExperimentDefault;
 export { ApexExperimentStore };

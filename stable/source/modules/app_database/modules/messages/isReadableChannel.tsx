@@ -1,16 +1,18 @@
-// Module ID: 7758
-// Function ID: 7759
+// Module ID: 6908
+// Function ID: 6909
 // Name: isReadableChannel
-// Dependencies: [2045, 2041, 4427, 1074, 2]
+// Dependencies: [2055, 2051, 4472, 1086, 2]
 // Exports: isReadableChannel, isReadableChannelId
 
-// Module 7758 (isReadableChannel)
-import ChannelRecord from "ChannelRecord" /* 2045 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import Constants from "Constants" /* 1074 */;
+// Module 6908 (isReadableChannel)
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
+let BasicPermissions;
+let c3;
 const isTextChannel = ChannelRecord.isTextChannel;
 ({ ChannelTypes: c3, BasicPermissions } = Constants);
 let closure_4 = BasicPermissions.VIEW_CHANNEL | BasicPermissions.READ_MESSAGE_HISTORY;
@@ -21,11 +23,8 @@ export const isReadableChannel = function isReadableChannel(basicChannel) {
   if (tmp) {
     let tmp3 = basicChannel.type === constants.DM || basicChannel.type === tmp2.GROUP_DM;
     if (!tmp3) {
-      let canBasicChannelResult = isTextChannel(basicChannel.type);
-      if (canBasicChannelResult) {
-        canBasicChannelResult = PermissionStore.canBasicChannel(closure_4, basicChannel);
-      }
-      tmp3 = canBasicChannelResult;
+      tmp3 = isTextChannel(basicChannel.type) && PermissionStore.canBasicChannel(closure_4, basicChannel);
+      const canBasicChannelResult = isTextChannel(basicChannel.type) && PermissionStore.canBasicChannel(closure_4, basicChannel);
     }
     tmp = tmp3;
   }
@@ -39,11 +38,8 @@ export const isReadableChannelId = function isReadableChannelId(channelId) {
     if (tmp4) {
       let tmp6 = basicChannel.type === constants.DM || basicChannel.type === tmp5.GROUP_DM;
       if (!tmp6) {
-        let canBasicChannelResult = isTextChannel(basicChannel.type);
-        if (canBasicChannelResult) {
-          canBasicChannelResult = PermissionStore.canBasicChannel(closure_4, basicChannel);
-        }
-        tmp6 = canBasicChannelResult;
+        tmp6 = isTextChannel(basicChannel.type) && PermissionStore.canBasicChannel(closure_4, basicChannel);
+        const canBasicChannelResult = isTextChannel(basicChannel.type) && PermissionStore.canBasicChannel(closure_4, basicChannel);
       }
       tmp4 = tmp6;
     }

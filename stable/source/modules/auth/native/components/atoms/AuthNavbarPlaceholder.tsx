@@ -1,23 +1,39 @@
-// Module ID: 7253
-// Function ID: 7254
+// Module ID: 6394
+// Function ID: 6395
 // Name: AuthNavbarPlaceholder
-// Dependencies: [19, 21, 4788, 576, 5873, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 5933, 2]
 
-// Module 7253 (AuthNavbarPlaceholder)
-import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5873 */;
-import noop from "module_19" /* 19 */;
+// Module 6394 (AuthNavbarPlaceholder)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { navBar: { backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 } };
-let closure_3 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+let tmp;
+const NavigatorHeader = tmp(5933);
+const jsx = Fragment.jsx;
+let obj = { navBar: obj2 };
+obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 };
+let closure_3 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp4 = closure_3();
+  if (cResult[0] !== tmp4.navBar) {
+    const tmp7 = jsx(NavigatorHeader.FauxHeader, { style: tmp4.navBar, children: null });
+    cResult[0] = tmp4.navBar;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => jsx(NavigatorHeader.FauxHeader, { style: closure_3().navBar, children: null }));
 const result = size.fileFinishedImporting("modules/auth/native/components/atoms/AuthNavbarPlaceholder.tsx");
 
-export default function AuthNavbarPlaceholder() {
-  const tmp = closure_3();
-  return jsx(NavigatorHeader.FauxHeader, { style: closure_3().navBar, children: null });
-};
+export default tmp3;

@@ -1,29 +1,32 @@
-// Module ID: 10685
-// Function ID: 10686
+// Module ID: 9885
+// Function ID: 9886
 // Name: StickerPickerStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1260, 2]
 
-// Module 10685 (StickerPickerStore)
-import module_560 from "module_560" /* 560 */;
+// Module 9885 (StickerPickerStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/stickers/native/StickerPickerStore.tsx");
-
-export const useStickerPickerStore = module_560.create((arg0) => {
-  closure_0 = arg0;
-  return {
+let obj = module_570.create((arg0) => {
+  let closure_0 = arg0;
+  let obj = {
     packToScrollTo: null,
-    setPackToScrollTo(dependencyMap) {
-      return dependencyMap(closure_1_1[1]).batchUpdates(() => {
-        dependencyMap((packToScrollTo) => {
+    setPackToScrollTo(pack_id) {
+      let obj = pack_id(dependencyMap[1]);
+      return obj.batchUpdates(() => {
+        let tmp = pack_id((packToScrollTo) => {
           let tmp = packToScrollTo;
-          if (packToScrollTo.packToScrollTo !== dependencyMap) {
+          if (packToScrollTo.packToScrollTo !== pack_id) {
+            tmp = { packToScrollTo: tmp2 };
             const obj = { packToScrollTo: tmp2 };
-            tmp = obj;
           }
           return tmp;
         });
       });
     }
   };
+  return obj;
 });
+const result = size.fileFinishedImporting("modules/stickers/native/StickerPickerStore.tsx");
+
+export const useStickerPickerStore = obj;

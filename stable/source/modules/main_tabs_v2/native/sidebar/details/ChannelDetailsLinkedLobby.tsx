@@ -1,74 +1,187 @@
-// Module ID: 17210
-// Function ID: 17211
+// Module ID: 16560
+// Function ID: 16561
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1074, 21, 4788, 576, 7445, 4784, 1115, 2108, 2]
-// Exports: default
+// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 6590, 1127, 2114, 4833, 2]
 
-// Module 17210 (ChannelDetailsLinkedLobby)
-import nativeDefault from "native" /* 576 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7445 */;
-import noop from "module_19" /* 19 */;
+// Module 16560 (ChannelDetailsLinkedLobby)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6590 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-const util = BPDKoA(1115);
-const Text_Text = BPDKoA(4784);
-require = fn;
-const View = fn(17).View;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsxProd = fn(21);
-({ Fragment: hasOwnProperty, jsxs: metroRequire, jsx: closure_7 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { alignItems: "center" }, divider: null };
-let size = { height: 1, width: 48, marginTop: 12, backgroundColor: nativeDefault.colors.BORDER_STRONG };
-obj2.divider = size;
-let closure_8 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsLinkedLobby.tsx");
-
-export default function ChannelDetailsLinkedLobby(channel) {
-  channel = channel.channel;
-  let divider = closure_8();
-  let BPDKoA = require;
-  let getArticleURL = dependencyMap;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let size;
+const View = react_native.View;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+({ Fragment: hasOwnProperty, jsxs: metroRequire, jsx: metroImportDefault } = Fragment);
+let obj = { container: { alignItems: "center" }, divider: size };
+size = { height: 1, width: 48, marginTop: 12, backgroundColor: nativeDefault.colors.BORDER_STRONG };
+let closure_8 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channel;
+  let containerStyle;
+  let items;
+  let items1;
+  let obj4;
+  let obj8;
+  const obj = react2;
+  const cResult = obj.c(15);
+  ({ channel, containerStyle } = arg0);
+  const tmp4 = closure_8();
   const linkedLobby = channel.linkedLobby;
   let application_id;
+  const useGetOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication;
+  useGetOrFetchApplications;
   if (linkedLobby != null) {
     application_id = linkedLobby.application_id;
   }
-  let intl = useGetOrFetchApplications.useGetOrFetchApplication(application_id);
-  if (null == channel.linkedLobby) {
-    return null;
-  } else {
-    const obj2 = { style: null, children: null };
-    const items = [divider.container, channel.containerStyle];
-    obj2.style = items;
-    let Text = Text_Text.Text;
-    if (null != intl) {
-      const intl3 = util.intl;
-      const obj3 = { applicationName: intl.name };
-      let formatResult = intl3.format(util.t.SgxMJs, obj3);
-    } else {
-      const intl2 = util.intl;
-      formatResult = intl2.string(util.t.yQqVss);
+  const getOrFetchApplication = useGetOrFetchApplication(application_id);
+  let tmp8 = null;
+  if (null != channel.linkedLobby) {
+    if (cResult[0] === containerStyle) {
+      let tmp9;
+      let tmp10;
+      let tmp13;
+      if (cResult[1] === tmp4.container) {
+        tmp9 = cResult[2];
+      }
+      if (cResult[3] !== getOrFetchApplication) {
+        let formatResult;
+        if (null != getOrFetchApplication) {
+          const intl2 = tmp(1127).intl;
+          const obj2 = { applicationName: getOrFetchApplication.name };
+          formatResult = intl2.format(tmp(1127).t.SgxMJs, obj2);
+        } else {
+          const intl = tmp(1127).intl;
+          formatResult = intl.string(tmp(1127).t.yQqVss);
+        }
+        cResult[3] = getOrFetchApplication;
+        cResult[4] = formatResult;
+        tmp10 = formatResult;
+      } else {
+        tmp10 = cResult[4];
+      }
+      const _Symbol = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl3 = tmp(1127).intl;
+        const format = intl3.format;
+        const obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.LINKED_LOBBIES) };
+        const BPDKoA = tmp(1127).t.BPDKoA;
+        obj4 = HelpdeskUtilsDefault;
+        const formatResult1 = format(BPDKoA, obj3);
+        cResult[5] = formatResult1;
+        tmp13 = formatResult1;
+      } else {
+        tmp13 = cResult[5];
+      }
+      if (cResult[6] === tmp10) {
+        let tmp17;
+        let tmp22;
+        if (cResult[7] === tmp13) {
+          tmp17 = cResult[8];
+        }
+        if (cResult[9] !== tmp4.divider) {
+          const obj5 = { style: tmp4.divider };
+          const tmp25 = metroImportDefault(View, obj5);
+          cResult[9] = tmp4.divider;
+          cResult[10] = tmp25;
+          tmp22 = tmp25;
+        } else {
+          tmp22 = cResult[10];
+        }
+        if (cResult[11] === tmp9) {
+          if (cResult[12] === tmp17) {
+            let tmp26;
+            if (cResult[13] === tmp22) {
+              tmp26 = cResult[14];
+            }
+            tmp8 = tmp26;
+          }
+        }
+        const obj6 = { style: tmp9, children: items };
+        items = [tmp17, tmp22];
+        const tmp29 = metroRequire(View, obj6);
+        cResult[11] = tmp9;
+        cResult[12] = tmp17;
+        cResult[13] = tmp22;
+        cResult[14] = tmp29;
+        tmp26 = tmp29;
+      }
+      const obj7 = { variant: "text-sm/normal", color: "text-default", children: metroRequire(hasOwnProperty, obj8) };
+      obj8 = { children: items1 };
+      items1 = [tmp10, "  \u2022  ", tmp13];
+      const Text = tmp(4833).Text;
+      const tmp21 = metroImportDefault(Text, obj7);
+      cResult[6] = tmp10;
+      cResult[7] = tmp13;
+      cResult[8] = tmp21;
+      tmp17 = tmp21;
     }
-    const obj4 = { variant: "text-sm/normal", color: "text-default", children: null };
-    const obj5 = { children: null };
-    const items1 = [formatResult, "  \u2022  ", ];
-    intl = util.intl;
-    BPDKoA = util.t.BPDKoA;
-    const obj6 = { helpdeskArticle: null };
-    getArticleURL = HelpdeskUtilsDefault.getArticleURL;
-    obj6.helpdeskArticle = getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
-    items1[2] = intl.format(BPDKoA, obj6);
-    obj5.children = items1;
-    obj4.children = timestampProducer(hasOwnProperty, obj5);
-    const items2 = [React5(Text, obj4), ];
-    const obj7 = { style: null };
-    divider = divider.divider;
-    obj7.style = divider;
-    Text = tmp4(tmp3, obj7);
-    items2[1] = Text;
-    obj2.children = items2;
-    timestampProducer(View, obj2);
+    const items2 = [tmp4.container, containerStyle];
+    cResult[0] = containerStyle;
+    cResult[1] = tmp4.container;
+    cResult[2] = items2;
+    tmp9 = items2;
   }
-};
+  return tmp8;
+}) : ((channel) => {
+  let items;
+  let items1;
+  let items2;
+  let obj4;
+  let obj6;
+  channel = channel.channel;
+  const containerStyle = channel.containerStyle;
+  const tmp = closure_8();
+  const linkedLobby = channel.linkedLobby;
+  let application_id;
+  const useGetOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication;
+  useGetOrFetchApplications;
+  if (linkedLobby != null) {
+    application_id = linkedLobby.application_id;
+  }
+  const getOrFetchApplication = useGetOrFetchApplication(application_id);
+  let tmp8Result = null;
+  if (null != channel.linkedLobby) {
+    let formatResult;
+    const obj = { style: items, children: items2 };
+    items = [tmp.container, containerStyle];
+    const Text = tmp2(4833).Text;
+    const tmp11 = hasOwnProperty;
+    if (null != getOrFetchApplication) {
+      const intl2 = tmp2(1127).intl;
+      const obj2 = { applicationName: getOrFetchApplication.name };
+      formatResult = intl2.format(tmp2(1127).t.SgxMJs, obj2);
+    } else {
+      const intl = tmp2(1127).intl;
+      formatResult = intl.string(tmp2(1127).t.yQqVss);
+    }
+    const obj3 = { variant: "text-sm/normal", color: "text-default", children: metroRequire(tmp11, obj4) };
+    obj4 = { children: items1 };
+    items1 = [formatResult, "  \u2022  ", ];
+    const intl3 = tmp2(1127).intl;
+    const format = intl3.format;
+    const obj5 = { helpdeskArticle: obj6.getArticleURL(HelpdeskArticles.LINKED_LOBBIES) };
+    const BPDKoA = tmp2(1127).t.BPDKoA;
+    obj6 = HelpdeskUtilsDefault;
+    items1[2] = format(BPDKoA, obj5);
+    items2 = [metroImportDefault(Text, obj3), ];
+    const obj7 = { style: tmp.divider };
+    items2[1] = metroImportDefault(View, obj7);
+    tmp8Result = tmp8(tmp9, obj);
+  }
+  return tmp8Result;
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsLinkedLobby.tsx");
+
+export default tmp4;

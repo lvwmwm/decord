@@ -1,12 +1,12 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 17065
+// Function ID: 17066
 // Name: trackZoomedInHttpRequest
-// Dependencies: [1074, 1983, 2]
+// Dependencies: [1086, 1990, 2]
 // Exports: default
 
-// Module 17708 (trackZoomedInHttpRequest)
-import Constants from "Constants" /* 1074 */;
-import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1983 */;
+// Module 17065 (trackZoomedInHttpRequest)
+import Constants from "Constants" /* 1086 */;
+import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1990 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -14,10 +14,12 @@ const result = size.fileFinishedImporting("modules/telemetry_ring/trackZoomedInH
 
 export default function trackZoomedInHttpRequest(arg0) {
   try {
-    const obj2 = {};
+    const obj = { source: "zoomed_in" };
+    const append = ZoomedInTelemetryDefault.append;
+    const HTTP_REQUEST = AnalyticEvents.HTTP_REQUEST;
+    ZoomedInTelemetryDefault;
     const merged = Object.assign(arg0);
-    obj2.source = "zoomed_in";
-    ZoomedInTelemetryDefault.append(AnalyticEvents.HTTP_REQUEST, obj2);
+    append(HTTP_REQUEST, obj);
   } catch (err) {
   }
 };

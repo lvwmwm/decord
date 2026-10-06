@@ -1,18 +1,19 @@
-// Module ID: 9805
-// Function ID: 9806
+// Module ID: 9384
+// Function ID: 9385
 // Name: NativeMenuStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 9805 (NativeMenuStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 9384 (NativeMenuStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
 
 let c0 = null;
 let c1 = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class NativeMenuStore extends Store {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.getMenu = function getMenu() {
       return closure_1_0;
     };
@@ -24,26 +25,27 @@ class NativeMenuStore extends Store {
     };
     return applyArgumentsResult;
   }
-}
-NativeMenuStore.prototype["initialize"] = function initialize() {
+  initialize() {
 
-};
+  }
+}
+const prototype = NativeMenuStore.prototype;
 NativeMenuStore.displayName = "NativeMenuStore";
-const nativeMenuStore = new NativeMenuStore(DispatcherDefault, {
+const obj = {
   SHOW_NATIVE_MENU: function handleShowNativeMenu(arg0) {
     ({ menu: c0, key: c1 } = arg0);
   },
   HIDE_NATIVE_MENU: function handleHideNativeMenu(key) {
     if (null != key.key) {
-      if (key !== c1) {
+      if (key.key !== c1) {
         return false;
       }
     }
     c0 = null;
     c1 = null;
   }
-});
-const size = fn(2);
+};
+const nativeMenuStore = new NativeMenuStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/native_menu/native/NativeMenuStore.tsx");
 
 export default nativeMenuStore;

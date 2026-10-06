@@ -1,35 +1,35 @@
-// Module ID: 5939
-// Function ID: 5940
+// Module ID: 5999
+// Function ID: 6000
 // Name: ChangeEmailUtils
-// Dependencies: [5933, 1115, 2]
+// Dependencies: [5993, 1127, 2]
 // Exports: getChangeEmailReasonDisplayText
 
-// Module 5939 (ChangeEmailUtils)
-import util from "util" /* 1115 */;
-import VerificationConstants from "VerificationConstants" /* 5933 */;
+// Module 5999 (ChangeEmailUtils)
+import intl2 from "intl" /* 1127 */;
+import VerificationConstants from "VerificationConstants" /* 5993 */;
 import size from "module_2" /* 2 */;
 
 const ChangeEmailReasons = VerificationConstants.ChangeEmailReasons;
-const dependencyMap = {
+let closure_2 = {
   [ChangeEmailReasons.DISCORD_EMPLOYEE_ASKED_ME_TO]: () => {
-    const intl = util.intl;
-    return intl.string(util.t.naBTFO);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.naBTFO);
   },
   [ChangeEmailReasons.SOMEONE_ASKED_ME_TO]: () => {
-    const intl = util.intl;
-    return intl.string(util.t.LQ0RUP);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.LQ0RUP);
   },
   [ChangeEmailReasons.NEW_EMAIL]: () => {
-    const intl = util.intl;
-    return intl.string(util.t.oOqQjw);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.oOqQjw);
   },
   [ChangeEmailReasons.SOMETHING_ELSE]: () => {
-    const intl = util.intl;
-    return intl.string(util.t.p38n1b);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.p38n1b);
   }
 };
 const result = size.fileFinishedImporting("modules/verification/ChangeEmailUtils.tsx");
 
 export const getChangeEmailReasonDisplayText = function getChangeEmailReasonDisplayText(value) {
-  return dependencyMap[value]();
+  return closure_2[value]();
 };

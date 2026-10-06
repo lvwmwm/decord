@@ -1,30 +1,276 @@
-// Module ID: 12684
-// Function ID: 12685
+// Module ID: 11788
+// Function ID: 11789
 // Name: ApplicationCommandList
-// Dependencies: [19, 17, 10560, 21, 9562, 1978, 9444, 7797, 12682, 12683, 2]
-// Exports: default
+// Dependencies: [19, 17, 9843, 21, 558, 576, 1985, 8596, 8714, 6947, 11785, 11786, 2]
 
-// Module 12684 (ApplicationCommandList)
-import noop from "module_19" /* 19 */;
+// Module 11788 (ApplicationCommandList)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9843 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const FlatList = fn(17).FlatList;
-const jsx = fn(21).jsx;
-let closure_7 = 3 * fn(10560).AUTOCOMPLETE_ROW_HEIGHT;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandList.tsx");
+let closure_1, item, nativeEvent, tmp8, tmpResult;
 
-export default function ApplicationCommandList(channel) {
+const FlatList = react_native.FlatList;
+const AUTOCOMPLETE_ROW_HEIGHT = ApplicationCommandsConstants.AUTOCOMPLETE_ROW_HEIGHT;
+const jsx = Fragment.jsx;
+let closure_7 = 3 * AUTOCOMPLETE_ROW_HEIGHT;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressCommandItem) => {
+  let ItemSeparatorComponent;
+  let channel;
+  let commands;
+  let getItemLayout;
+  let onCommandsChange;
+  let query;
+  let style;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  const tmp = channel;
+  const obj = channel(commands[5]);
+  const cResult = obj.c(26);
+  ({ style, channel } = onPressCommandItem);
+  onPressCommandItem = onPressCommandItem.onPressCommandItem;
+  ({ query, ItemSeparatorComponent, getItemLayout, onCommandsChange } = onPressCommandItem);
+  if (cResult[0] !== channel) {
+    const obj2 = { channel, type: "channel" };
+    let num = 0;
+    cResult[0] = channel;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [tmp(tmp2[6]).ApplicationCommandType.CHAT];
+    cResult[2] = items;
+    tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] !== query) {
+    const obj3 = { text: query, commandTypes: tmp5 };
+    cResult[3] = query;
+    cResult[4] = obj3;
+    tmp6 = obj3;
+  } else {
+    tmp6 = cResult[4];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { placeholderCount: 3, limit: 7, scoreMethod: tmp(commands[7]).ScoreMethod.COMMAND_OR_APPLICATION };
+    cResult[5] = obj4;
+    tmp7 = obj4;
+  } else {
+    tmp7 = cResult[5];
+  }
+  const obj5 = onCommandsChange(commands[8]);
+  const query1 = obj5.useQuery(tmp4, tmp6, tmp7);
+  commands = query1.commands;
+  const sections = query1.sections;
+  const scrollDown = query1.scrollDown;
+  if (cResult[6] === channel.guild_id) {
+    if (cResult[7] === onPressCommandItem) {
+      let tmp9;
+      if (cResult[8] === sections) {
+        tmp9 = cResult[9];
+      }
+      let length;
+      const tmp10 = cResult[10];
+      if (commands != null) {
+        length = commands.length;
+      }
+      if (tmp10 === length) {
+        let tmp13;
+        if (cResult[11] === onCommandsChange) {
+          tmp13 = cResult[12];
+        }
+        let length1;
+        if (commands != null) {
+          length1 = commands.length;
+        }
+        if (cResult[13] === onCommandsChange) {
+          let tmp16;
+          let tmp20;
+          if (cResult[14] === length1) {
+            tmp16 = cResult[15];
+          }
+          const effect = sections.useEffect(tmp13, tmp16);
+          if (cResult[16] !== scrollDown) {
+            class D {
+              constructor(arg0) {
+                nativeEvent = onPressCommandItem.nativeEvent;
+                if (nativeEvent.contentOffset.y + nativeEvent.layoutMeasurement.height >= nativeEvent.contentSize.height - closure_7) {
+                  tmp = scrollDown;
+                  tmp2 = scrollDown();
+                }
+                return;
+              }
+            }
+            cResult[16] = scrollDown;
+            cResult[17] = D;
+          } else {
+            class D {
+              constructor(arg0) {
+                nativeEvent = onPressCommandItem.nativeEvent;
+                if (nativeEvent.contentOffset.y + nativeEvent.layoutMeasurement.height >= nativeEvent.contentSize.height - closure_7) {
+                  tmp = scrollDown;
+                  tmp2 = scrollDown();
+                }
+                return;
+              }
+            }
+          }
+          const _Symbol = Symbol;
+          if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+            class R {
+              constructor(arg0) {
+                return onPressCommandItem.id;
+              }
+            }
+            cResult[18] = R;
+            tmp20 = R;
+          } else {
+            class R {
+              constructor(arg0) {
+                return onPressCommandItem.id;
+              }
+            }
+          }
+          if (cResult[19] === ItemSeparatorComponent) {
+            class R {
+              constructor(arg0) {
+                return onPressCommandItem.id;
+              }
+            }
+          }
+          class P {
+            constructor() {
+              if (onCommandsChange != null) {
+                num = undefined;
+                if (commands != null) {
+                  num = commands.length;
+                }
+                if (num == null) {
+                  num = 0;
+                }
+                tmpResult = tmp(num);
+              }
+              return;
+            }
+          }
+          const tmp23 = <scrollDown style={style} keyExtractor={tmp20} data={commands} renderItem={tmp9} ItemSeparatorComponent={ItemSeparatorComponent} getItemLayout={getItemLayout} onScroll={tmp19} />;
+          cResult[19] = ItemSeparatorComponent;
+          cResult[20] = commands;
+          cResult[21] = getItemLayout;
+          cResult[22] = tmp19;
+          cResult[23] = tmp9;
+          cResult[24] = style;
+          cResult[25] = tmp23;
+        }
+        const items1 = [length1, onCommandsChange];
+        class P {
+          constructor() {
+            if (onCommandsChange != null) {
+              num = undefined;
+              if (commands != null) {
+                num = commands.length;
+              }
+              if (num == null) {
+                num = 0;
+              }
+              tmpResult = tmp(num);
+            }
+            return;
+          }
+        }
+        cResult[14] = length1;
+        cResult[15] = items1;
+        tmp16 = items1;
+      }
+      if (commands != null) {
+        class R {
+          constructor(arg0) {
+            return onPressCommandItem.id;
+          }
+        }
+      }
+      class P {
+        constructor() {
+          if (onCommandsChange != null) {
+            num = undefined;
+            if (commands != null) {
+              num = commands.length;
+            }
+            if (num == null) {
+              num = 0;
+            }
+            tmpResult = tmp(num);
+          }
+          return;
+        }
+      }
+      cResult[10] = undefined;
+      cResult[11] = onCommandsChange;
+      cResult[12] = P;
+      tmp13 = P;
+    }
+  }
+  class E {
+    constructor(arg0) {
+      item = onPressCommandItem.item;
+      tmp = commands;
+      index = onPressCommandItem.index;
+      if (item.inputType === channel(commands[9]).ApplicationCommandInputType.PLACEHOLDER) {
+        tmp7 = closure_1_6;
+        tmp8 = onPressCommandItem;
+        return closure_1_6(onPressCommandItem(tmp[10]), {});
+      } else {
+        arr = sections;
+        tmp2 = null;
+        found = undefined;
+        if (sections != null) {
+          found = arr.find(() => { /* body not rendered: F140471 */ });
+        }
+        closure_1 = found;
+        tmp4 = closure_1_6;
+        tmp5 = onPressCommandItem;
+        obj = { command: null, section: null, onPress: null, guildId: null, highlighted: null };
+        obj.command = item;
+        obj.section = found;
+        obj.onPress = function onPress() { /* body not rendered: F140472 */ };
+        tmp6 = item;
+        obj.guildId = item.guild_id;
+        num = 0;
+        obj.highlighted = 0 === index;
+        return closure_1_6(onPressCommandItem(tmp[11]), obj);
+      }
+    }
+  }
+  cResult[6] = channel.guild_id;
+  cResult[7] = onPressCommandItem;
+  cResult[8] = sections;
+  cResult[9] = E;
+  tmp9 = E;
+}) : ((channel) => {
+  let ItemSeparatorComponent;
+  let getItemLayout;
+  let items;
+  let query;
+  let style;
   channel = channel.channel;
   const onPressCommandItem = channel.onPressCommandItem;
   const onCommandsChange = channel.onCommandsChange;
   let commands;
   ({ style, query, ItemSeparatorComponent, getItemLayout } = channel);
-  const obj2 = { text: query, commandTypes: null };
-  const items = [channel(commands[5]).ApplicationCommandType.CHAT];
-  obj2.commandTypes = items;
-  let obj = onCommandsChange(commands[4]);
-  const query1 = obj.useQuery({ channel, type: "channel" }, obj2, { placeholderCount: 3, limit: 7, scoreMethod: channel(commands[6]).ScoreMethod.COMMAND_OR_APPLICATION });
+  const tmp = onCommandsChange(commands[8]);
+  const useQuery = tmp.useQuery;
+  const obj = { text: query, commandTypes: items };
+  items = [channel(commands[6]).ApplicationCommandType.CHAT];
+  const obj2 = { placeholderCount: 3, limit: 7, scoreMethod: channel(commands[7]).ScoreMethod.COMMAND_OR_APPLICATION };
+  const query1 = useQuery({ channel, type: "channel" }, obj, obj2);
   commands = query1.commands;
   const sections = query1.sections;
   const scrollDown = query1.scrollDown;
@@ -33,38 +279,33 @@ export default function ApplicationCommandList(channel) {
   const callback = sections.useCallback((item) => {
     item = item.item;
     let found;
-    if (item.inputType === channel(commands[7]).ApplicationCommandInputType.PLACEHOLDER) {
-      return jsx(onPressCommandItem(tmp[8]), {});
+    const index = item.index;
+    if (item.inputType === channel(commands[9]).ApplicationCommandInputType.PLACEHOLDER) {
+      return jsx(onPressCommandItem(commands[10]), {});
     } else {
       found = undefined;
+      const arr = sections;
       if (sections != null) {
-        found = sections.find((id) => id.id === item.applicationId);
+        found = arr.find((id) => id.id === item.applicationId);
       }
-      const obj = {
+      return jsx(onPressCommandItem(commands[11]), {
         command: item,
         section: found,
         onPress() {
             return onPressCommandItem(item, found);
           },
         guildId: item.guild_id,
-        highlighted: 0 === item.index
-      };
-      return jsx(onPressCommandItem(tmp[9]), {
-        command: item,
-        section: found,
-        onPress() {
-            return onPressCommandItem(item, found);
-          },
-        guildId: item.guild_id,
-        highlighted: 0 === item.index
+        highlighted: 0 === index
       });
     }
   }, items1);
+  const useEffect = sections.useEffect;
+  const obj3 = sections;
   if (commands != null) {
     length = commands.length;
   }
   const items2 = [length, onCommandsChange];
-  const effect = sections.useEffect(() => {
+  const effect = useEffect(() => {
     if (onCommandsChange != null) {
       let num;
       if (commands != null) {
@@ -77,13 +318,15 @@ export default function ApplicationCommandList(channel) {
     }
   }, items2);
   const items3 = [scrollDown];
-  const obj3 = { placeholderCount: 3, limit: 7, scoreMethod: channel(commands[6]).ScoreMethod.COMMAND_OR_APPLICATION };
   return <scrollDown style={style} keyExtractor={function keyExtractor(id) {
     return id.id;
-  }} data={commands} renderItem={callback} ItemSeparatorComponent={ItemSeparatorComponent} getItemLayout={getItemLayout} onScroll={sections.useCallback((nativeEvent) => {
+  }} data={commands} renderItem={callback} ItemSeparatorComponent={ItemSeparatorComponent} getItemLayout={getItemLayout} onScroll={obj3.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     if (nativeEvent.contentOffset.y + nativeEvent.layoutMeasurement.height >= nativeEvent.contentSize.height - closure_7) {
       scrollDown();
     }
   }, items3)} />;
-};
+});
+const result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandList.tsx");
+
+export default tmp2;

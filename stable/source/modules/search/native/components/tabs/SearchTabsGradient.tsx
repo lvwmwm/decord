@@ -1,27 +1,86 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 16548
+// Function ID: 16549
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 4489, 576, 4637, 13041, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 4535, 588, 4685, 12168, 2]
 
-// Module 17198 (SearchTabsGradient)
-import nativeDefault from "native" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4637 */;
-import TabsGradientDefault from "TabsGradient" /* 13041 */;
-import noop from "module_19" /* 19 */;
+// Module 16548 (SearchTabsGradient)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useToken from "useToken" /* 4535 */;
+import TabsGradientDefault from "TabsGradient" /* 12168 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/search/native/components/tabs/SearchTabsGradient.tsx");
+let state;
 
-export default function SearchTabsGradient(state) {
+let tmp;
+const ColorUtils = tmp(4685);
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(5);
+  const obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  if (cResult[0] !== token) {
+    const tmpResult = ColorUtils;
+    const hexWithOpacityResult = tmpResult.hexWithOpacity(token, 0);
+    cResult[0] = token;
+    cResult[1] = hexWithOpacityResult;
+    tmp5 = hexWithOpacityResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === token) {
+    let tmp7;
+    if (cResult[3] === tmp5) {
+      tmp7 = cResult[4];
+    }
+    return tmp7;
+  }
+  const items = [token, tmp5];
+  cResult[2] = token;
+  cResult[3] = tmp5;
+  cResult[4] = items;
+  tmp7 = items;
+}) : (() => {
   let token;
-  token = token(4489).useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  let obj = token(4535);
+  token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
-  const colors = noop.useMemo(() => {
-    const items = [token, ColorUtils.hexWithOpacity(token, 0)];
+  return react.useMemo(() => {
+    const items = [token, ];
+    const obj = ColorUtils;
+    items[1] = obj.hexWithOpacity(token, 0);
     return items;
   }, items);
-  return jsx(TabsGradientDefault, { state: state.state, colors });
-};
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  state = state.state;
+  const tmp3 = closure_5();
+  if (cResult[0] === tmp3) {
+    let tmp4;
+    if (cResult[1] === state) {
+      tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  const tmp5 = jsx(TabsGradientDefault, { state, colors: tmp3 });
+  cResult[0] = tmp3;
+  cResult[1] = state;
+  cResult[2] = tmp5;
+  tmp4 = tmp5;
+}) : ((state) => {
+  state = state.state;
+  const colors = closure_5();
+  return jsx(TabsGradientDefault, { state, colors });
+});
+const result = size.fileFinishedImporting("modules/search/native/components/tabs/SearchTabsGradient.tsx");
+
+export default tmp2;

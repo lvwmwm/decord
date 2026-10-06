@@ -1,22 +1,24 @@
-// Module ID: 2416
-// Function ID: 2417
-// Dependencies: [1119, 2417, 1154, 2]
+// Module ID: 2424
+// Function ID: 2425
+// Dependencies: [1131, 2425, 1166, 2]
 
-// Module 2416
-import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod2417 from "module_2417" /* 2417 */;
-import module_1154_mod from "module_1154" /* 1154 */;
+// Module 2424
+import AssetJsonUtils from "AssetJsonUtils" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 2425 */;
+import module_1166_mod from "module_1166" /* 1166 */;
 import size from "module_2" /* 2 */;
 
-let module_1154 = module_1154_mod;
-const loader = module_1154.createLoader({
-  () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2417);
+let obj = {
+  "en-US": () => {
+    const obj = AssetJsonUtils;
+    const jsonAsset = obj.loadJsonAsset(AssetRegistry);
     return jsonAsset.then((result) => ({ default: result }));
   }
-}, "en-US");
-let module_1154 = module_1154_mod;
-const messagesProxy = module_1154.makeMessagesProxy(loader);
+};
+let module_1166 = module_1166_mod;
+const loader = module_1166.createLoader(obj, "en-US");
+module_1166 = module_1166_mod;
+const messagesProxy = module_1166.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/guild_space/GuildSpaceUntranslated.messages.js");
 
 export default messagesProxy;

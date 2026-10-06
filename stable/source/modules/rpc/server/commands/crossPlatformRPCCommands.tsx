@@ -1,34 +1,36 @@
-// Module ID: 14777
-// Function ID: 14778
+// Module ID: 14029
+// Function ID: 14030
 // Name: crossPlatformRPCCommands
-// Dependencies: [14778, 14780, 14782, 14784, 14785, 14786, 14787, 14793, 14800, 14801, 14802, 14803, 14804, 14805, 14806, 14813, 14816, 14817, 14818, 14819, 14820, 14821, 14822, 14823, 2]
+// Dependencies: [14030, 14032, 14034, 14036, 14037, 14038, 14039, 14045, 14052, 14053, 14054, 14055, 14056, 14057, 14058, 14065, 14068, 14069, 14070, 14071, 14072, 14073, 14074, 14075, 2]
 
-// Module 14777 (crossPlatformRPCCommands)
-import applicationDefault from "application" /* 14778 */;
-import certifiedDevicesDefault from "certifiedDevices" /* 14780 */;
-import channelsDefault from "channels" /* 14782 */;
-import commands_configDefault from "commands/config" /* 14784 */;
-import guildsDefault from "guilds" /* 14785 */;
-import imagesDefault from "images" /* 14786 */;
-import invitesDefault from "invites" /* 14787 */;
-import linksDefault from "links" /* 14793 */;
-import logsDefault from "logs" /* 14800 */;
-import networkingDefault from "networking" /* 14801 */;
-import providersDefault from "providers" /* 14802 */;
-import relationshipsDefault from "relationships" /* 14803 */;
-import setActivityDefault from "setActivity" /* 14804 */;
-import setOrientationLockStateDefault from "setOrientationLockState" /* 14805 */;
-import merged14Default from "merged14" /* 14806 */;
-import subscriptionsDefault from "subscriptions" /* 14813 */;
-import usersDefault from "users" /* 14816 */;
-import userSettingsDefault from "userSettings" /* 14817 */;
-import platformBehaviorsDefault from "platformBehaviors" /* 14818 */;
-import soundboardDefault from "soundboard" /* 14819 */;
-import vibegrationsVoiceDefault from "vibegrationsVoice" /* 14820 */;
-import activitiesDefault from "activities" /* 14821 */;
-import questsDefault from "quests" /* 14822 */;
-import voiceChannelChatDefault from "voiceChannelChat" /* 14823 */;
+// Module 14029 (crossPlatformRPCCommands)
+import applicationDefault from "application" /* 14030 */;
+import certifiedDevicesDefault from "certifiedDevices" /* 14032 */;
+import channelsDefault from "channels" /* 14034 */;
+import commands_configDefault from "commands/config" /* 14036 */;
+import guildsDefault from "guilds" /* 14037 */;
+import imagesDefault from "images" /* 14038 */;
+import invitesDefault from "invites" /* 14039 */;
+import linksDefault from "links" /* 14045 */;
+import logsDefault from "logs" /* 14052 */;
+import networkingDefault from "networking" /* 14053 */;
+import providersDefault from "providers" /* 14054 */;
+import relationshipsDefault from "relationships" /* 14055 */;
+import setActivityDefault from "setActivity" /* 14056 */;
+import setOrientationLockStateDefault from "setOrientationLockState" /* 14057 */;
+import merged14Default from "merged14" /* 14058 */;
+import subscriptionsDefault from "subscriptions" /* 14065 */;
+import usersDefault from "users" /* 14068 */;
+import userSettingsDefault from "userSettings" /* 14069 */;
+import platformBehaviorsDefault from "platformBehaviors" /* 14070 */;
+import soundboardDefault from "soundboard" /* 14071 */;
+import vibegrationsVoiceDefault from "vibegrationsVoice" /* 14072 */;
+import activitiesDefault from "activities" /* 14073 */;
+import questsDefault from "quests" /* 14074 */;
+import voiceChannelChatDefault from "voiceChannelChat" /* 14075 */;
+import size from "module_2" /* 2 */;
 
+const obj = {};
 const application = Object.assign(applicationDefault);
 const certifiedDevices = Object.assign(certifiedDevicesDefault);
 const channels = Object.assign(channelsDefault);
@@ -53,7 +55,6 @@ const vibegrationsVoice = Object.assign(vibegrationsVoiceDefault);
 const activities = Object.assign(activitiesDefault);
 const quests = Object.assign(questsDefault);
 const voiceChannelChat = Object.assign(voiceChannelChatDefault);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/rpc/server/commands/crossPlatformRPCCommands.tsx");
 
-export const crossPlatformCommands = {};
+export const crossPlatformCommands = obj;

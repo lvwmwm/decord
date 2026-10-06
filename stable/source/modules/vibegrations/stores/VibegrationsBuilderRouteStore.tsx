@@ -1,32 +1,36 @@
-// Module ID: 16941
-// Function ID: 16942
+// Module ID: 16241
+// Function ID: 16242
 // Name: VibegrationsBuilderRouteStore
-// Dependencies: [2048, 504, 573, 2]
+// Dependencies: [2058, 504, 585, 2]
 
-// Module 16941 (VibegrationsBuilderRouteStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelConstants from "ChannelConstants" /* 2048 */;
+// Module 16241 (VibegrationsBuilderRouteStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
 import size from "module_2" /* 2 */;
 
+let _null, c1;
+
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
-let c1 = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class VibegrationsBuilderRouteStore extends Store {
+  getRoutedProjectId(guildId) {
+    guildId = undefined;
+    if (_null != null) {
+      guildId = _null.guildId;
+    }
+    let projectId = null;
+    if (guildId === guildId) {
+      projectId = _null.projectId;
+    }
+    return projectId;
+  }
 }
-VibegrationsBuilderRouteStore.prototype["getRoutedProjectId"] = function getRoutedProjectId(guildId) {
-  guildId = undefined;
-  if (_null != null) {
-    guildId = _null.guildId;
-  }
-  let projectId = null;
-  if (guildId === guildId) {
-    projectId = _null.projectId;
-  }
-  return projectId;
-};
-const vibegrationsBuilderRouteStore = new VibegrationsBuilderRouteStore(DispatcherDefault, {
+const prototype = VibegrationsBuilderRouteStore.prototype;
+let obj = {
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
+    let guildId;
+    let messageId;
     ({ guildId, messageId } = channelId);
     let tmp = null;
     if (channelId.channelId === StaticChannelRoute.VIBEGRATIONS) {
@@ -34,8 +38,8 @@ const vibegrationsBuilderRouteStore = new VibegrationsBuilderRouteStore(Dispatch
       if (null != guildId) {
         tmp = null;
         if (null != messageId) {
+          tmp = { guildId, projectId: messageId };
           const obj = { guildId, projectId: messageId };
-          tmp = obj;
         }
       }
     }
@@ -69,7 +73,8 @@ const vibegrationsBuilderRouteStore = new VibegrationsBuilderRouteStore(Dispatch
       c1 = null;
     }
   }
-});
+};
+const vibegrationsBuilderRouteStore = new VibegrationsBuilderRouteStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/vibegrations/stores/VibegrationsBuilderRouteStore.tsx");
 
 export default vibegrationsBuilderRouteStore;

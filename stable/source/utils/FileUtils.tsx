@@ -1,38 +1,45 @@
-// Module ID: 5382
-// Function ID: 5383
+// Module ID: 5447
+// Function ID: 5448
 // Name: FileUtils
-// Dependencies: [2063, 1372, 1074, 1374, 12, 5383, 4713, 4446, 5377, 4684, 1115, 2]
+// Dependencies: [2073, 1378, 1086, 1380, 12, 5448, 4491, 5442, 4733, 1127, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 5382 (FileUtils)
+// Module 5447 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
-import UploadUtils from "UploadUtils" /* 5377 */;
-import noConflictDefault from "noConflict" /* 5383 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import FileSizeUtils from "FileSizeUtils" /* 4733 */;
+import UploadUtils from "UploadUtils" /* 5442 */;
+import _modDef5448 from "module_5448" /* 5448 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let reType;
+
+let GuildFeatures;
+let hasOwnProperty;
+let tmp;
+const intl2 = tmp(1127);
+const PremiumUtils = tmp(4491);
 function getUploadFileSizeSum(arg0) {
   let num = 0;
+  const tmp = arg0[Symbol.iterator]();
   while (tmp !== undefined) {
     num = num + tmp2.size;
     continue;
   }
   return num;
 }
-const Constants = fn(1074);
-const GuildFeatures = Constants.GuildFeatures;
-const MAX_ATTACHMENT_SIZE = Constants.MAX_ATTACHMENT_SIZE;
-const PremiumConstants = fn(1374);
+({ GuildFeatures, MAX_ATTACHMENT_SIZE: hasOwnProperty } = Constants);
 const PremiumTypes = PremiumConstants.PremiumTypes;
-let items = [{ reType: /^image\/vnd.adobe.photoshop/, klass: "photoshop" }, { reType: /^image\/svg\+xml/, klass: "webcode" }, { reType: /^image\//, klass: "image" }, { reType: /^video\//, klass: "video" }, { reName: /\.pdf$/, klass: "acrobat" }, { reName: /\.ae/, klass: "ae" }, { reName: /\.sketch$/, klass: "sketch" }, { reName: /\.ai$/, klass: "ai" }, { reName: /\.(?:rar|zip|7z|tar|tar\.gz)$/, klass: "archive" }, { reName: /\.(?:c\+\+|cpp|cc|c|h|hpp|mm|m|json|js|ts|rb|rake|py|asm|fs|pyc|dtd|cgi|bat|rss|java|graphml|idb|lua|o|gml|prl|sls|conf|cmake|make|sln|vbe|cxx|wbf|vbs|r|wml|php|bash|applescript|fcgi|yaml|ex|exs|sh|ml|actionscript)$/, klass: "code" }, { reName: /\.(?:txt|rtf|doc|docx|md|pages|ppt|pptx|pptm|key|log)$/, klass: "document" }, { reName: /\.(?:xls|xlsx|numbers|csv)$/, klass: "spreadsheet" }, { reName: /\.(?:html|xhtml|htm|xml|xsd|css|styl)$/, klass: "webcode" }, { reName: /\.(?:mp3|ogg|opus|wav|aiff|flac)$/, klass: "audio" }];
-const items1 = [GuildFeatures.MAX_FILE_SIZE_250_MB, PremiumConstants.MAX_GUILD_FILE_SIZE_250_MB];
-const items2 = [items1, , ];
-const items3 = [GuildFeatures.MAX_FILE_SIZE_100_MB, PremiumConstants.MAX_GUILD_FILE_SIZE_100_MB];
+let obj = { reType: /^image\/vnd.adobe.photoshop/, klass: "photoshop" };
+let items = [obj, { reType: /^image\/svg\+xml/, klass: "webcode" }, { reType: /^image\//, klass: "image" }, { reType: /^video\//, klass: "video" }, { reName: /\.pdf$/, klass: "acrobat" }, { reName: /\.ae/, klass: "ae" }, { reName: /\.sketch$/, klass: "sketch" }, { reName: /\.ai$/, klass: "ai" }, { reName: /\.(?:rar|zip|7z|tar|tar\.gz)$/, klass: "archive" }, { reName: /\.(?:c\+\+|cpp|cc|c|h|hpp|mm|m|json|js|ts|rb|rake|py|asm|fs|pyc|dtd|cgi|bat|rss|java|graphml|idb|lua|o|gml|prl|sls|conf|cmake|make|sln|vbe|cxx|wbf|vbs|r|wml|php|bash|applescript|fcgi|yaml|ex|exs|sh|ml|actionscript)$/, klass: "code" }, { reName: /\.(?:txt|rtf|doc|docx|md|pages|ppt|pptx|pptm|key|log)$/, klass: "document" }, { reName: /\.(?:xls|xlsx|numbers|csv)$/, klass: "spreadsheet" }, { reName: /\.(?:html|xhtml|htm|xml|xsd|css|styl)$/, klass: "webcode" }, { reName: /\.(?:mp3|ogg|opus|wav|aiff|flac)$/, klass: "audio" }];
+const items1 = [GuildFeatures.MAX_FILE_SIZE_100_MB, PremiumConstants.MAX_GUILD_FILE_SIZE_100_MB];
+const items2 = [items1, ];
+const items3 = [GuildFeatures.MAX_FILE_SIZE_50_MB, PremiumConstants.MAX_GUILD_FILE_SIZE_50_MB];
 items2[1] = items3;
-const items4 = [GuildFeatures.MAX_FILE_SIZE_50_MB, PremiumConstants.MAX_GUILD_FILE_SIZE_50_MB];
-items2[2] = items4;
-const size = fn(2);
 const result = size.fileFinishedImporting("utils/FileUtils.tsx");
 
 export const transformNativeFile = function transformNativeFile(filename, arg1) {
@@ -40,19 +47,23 @@ export const transformNativeFile = function transformNativeFile(filename, arg1) 
   if (!(filename instanceof File)) {
     let str = arg1;
     filename = filename.filename;
+    const buffer = filename.data.buffer;
     if (arg1 == null) {
       str = "text/plain";
     }
     const _File = File;
-    items = [filename.data.buffer];
+    items = [buffer];
+    const self = this;
+    const self2 = this;
     const obj = { type: str };
     file = new File(items, filename, obj);
   }
   return file;
 };
-export const makeFile = function makeFile(arg0, arg1, type) {
+export const makeFile = function makeFile(arg0, filename, type) {
   items = [arg0];
-  const file = new File(items, arg1, { type });
+  const obj = { type };
+  const file = new File(items, filename, obj);
   return file;
 };
 export const classifyFile = function classifyFile(file) {
@@ -64,18 +75,17 @@ export const classifyFile = function classifyFile(file) {
   if (str2 == null) {
     str2 = "";
   }
-  const found = _modDef12.find(items, (reType) => {
+  const arr = _modDef12;
+  const found = arr.find(items, (reType) => {
+    let isMatch;
     if (null != reType.reType) {
       if (null != type) {
         reType = reType.reType;
-        let isMatch = reType.test(tmp);
+        isMatch = reType.test(tmp);
       }
       return isMatch;
     }
-    isMatch = null != reType.reName;
-    if (isMatch) {
-      isMatch = "" !== str2;
-    }
+    isMatch = null != reType.reName && "" !== str2;
     if (isMatch) {
       const reName = reType.reName;
       isMatch = reName.test(str2);
@@ -87,27 +97,26 @@ export const classifyFile = function classifyFile(file) {
   }
   return str3;
 };
-export const classifyFileName = function classifyFileName(str, arg1) {
-  closure_1 = arg1;
-  str = undefined;
-  if (str != null) {
-    str = str.toLowerCase();
+export const classifyFileName = function classifyFileName(fileName, arg1) {
+  let closure_1 = arg1;
+  let str;
+  if (fileName != null) {
+    str = fileName.toLowerCase();
   }
   if (str == null) {
     str = "";
   }
-  const found = _modDef12.find(items, (reType) => {
+  const arr = _modDef12;
+  const found = arr.find(items, (reType) => {
+    let isMatch;
     if (null != reType.reType) {
       if (null != type) {
         reType = reType.reType;
-        let isMatch = reType.test(tmp);
+        isMatch = reType.test(tmp);
       }
       return isMatch;
     }
-    isMatch = null != reType.reName;
-    if (isMatch) {
-      isMatch = "" !== str2;
-    }
+    isMatch = null != reType.reName && "" !== str2;
     if (isMatch) {
       const reName = reType.reName;
       isMatch = reName.test(str2);
@@ -119,89 +128,89 @@ export const classifyFileName = function classifyFileName(str, arg1) {
   }
   return str2;
 };
-export const sizeString = function sizeString(currentSize) {
-  return noConflictDefault.filesize(currentSize);
+export const sizeString = function sizeString(size) {
+  const obj = _modDef5448;
+  return obj.filesize(size);
 };
 export const maxFileSize = function maxFileSize(guildId) {
   const currentUser = UserStore.getCurrentUser();
-  const userMaxFileSize = enabled(4446).getUserMaxFileSize(currentUser);
+  const obj = PremiumUtilsDefault;
+  const userMaxFileSize = obj.getUserMaxFileSize(currentUser);
   if (null == guildId) {
     return userMaxFileSize;
   } else {
+    let reduced;
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
-      const FileUploadPowerupHoldoutExperiment = guild(4713).FileUploadPowerupHoldoutExperiment;
-      enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
-      let reduced = items2.reduce((acc, item) => {
+      reduced = items2.reduce((acc, item) => {
+        let tmp;
+        let tmp2;
         [tmp, tmp2] = item;
-        if (!enabled) {
-          const features = _Math.features;
-          let tmp6 = acc;
-          if (features.has(tmp)) {
-            tmp6 = acc;
-            if (tmp2 > acc) {
-              tmp6 = tmp2;
-            }
+        const features = guild.features;
+        let tmp3 = acc;
+        if (features.has(tmp)) {
+          tmp3 = acc;
+          if (tmp2 > acc) {
+            tmp3 = tmp2;
           }
-          let tmp4 = tmp6;
-        } else {
-          tmp4 = acc;
         }
-        return tmp4;
-      }, MAX_ATTACHMENT_SIZE);
+        return tmp3;
+      }, hasOwnProperty);
     } else {
-      reduced = MAX_ATTACHMENT_SIZE;
+      reduced = hasOwnProperty;
     }
     const _Math = Math;
     return Math.max(reduced, userMaxFileSize);
   }
-  const obj = enabled(4446);
 };
 export { getUploadFileSizeSum };
 export const uploadSumTooLarge = function uploadSumTooLarge(arg0) {
   const tmp = getUploadFileSizeSum(arg0);
-  return tmp > UploadUtils.getMaxTotalAttachmentSize({ location: "uploadSumTooLarge" });
+  const obj = UploadUtils;
+  return tmp > obj.getMaxTotalAttachmentSize({ location: "uploadSumTooLarge" });
 };
 export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadblockDescription(arg0) {
+  let guildId;
+  let maxSize;
   ({ guildId, maxSize } = arg0);
+  const tmp = require;
+  const tmp2 = dependencyMap;
+  let tmp3 = FileSizeUtils;
+  const formatSize = tmp3.formatSize;
   if (maxSize == null) {
     const currentUser = UserStore.getCurrentUser();
-    const userMaxFileSize = enabled(4446).getUserMaxFileSize(currentUser);
-    if (null == guildId) {
-      maxSize = userMaxFileSize;
-    } else {
-      let _Math = GuildStore.getGuild(guildId);
-      if (null != _Math) {
-        const FileUploadPowerupHoldoutExperiment = tmp(4713).FileUploadPowerupHoldoutExperiment;
-        enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
-        let reduced = items2.reduce((acc, item) => {
+    const obj2 = PremiumUtilsDefault;
+    const userMaxFileSize = obj2.getUserMaxFileSize(currentUser);
+    let bound = userMaxFileSize;
+    if (null != guildId) {
+      let reduced;
+      const guild = GuildStore.getGuild(guildId);
+      if (null != guild) {
+        reduced = items2.reduce((acc, item) => {
+          let tmp;
+          let tmp2;
           [tmp, tmp2] = item;
-          if (!enabled) {
-            const features = _Math.features;
-            let tmp6 = acc;
-            if (features.has(tmp)) {
-              tmp6 = acc;
-              if (tmp2 > acc) {
-                tmp6 = tmp2;
-              }
+          const features = guild.features;
+          let tmp3 = acc;
+          if (features.has(tmp)) {
+            tmp3 = acc;
+            if (tmp2 > acc) {
+              tmp3 = tmp2;
             }
-            let tmp4 = tmp6;
-          } else {
-            tmp4 = acc;
           }
-          return tmp4;
-        }, MAX_ATTACHMENT_SIZE);
+          return tmp3;
+        }, hasOwnProperty);
       } else {
-        reduced = MAX_ATTACHMENT_SIZE;
+        reduced = hasOwnProperty;
       }
-      _Math = Math;
-      const bound = Math.max(reduced, userMaxFileSize);
+      const _Math = Math;
+      bound = Math.max(reduced, userMaxFileSize);
     }
-    const obj3 = enabled(4446);
+    maxSize = bound;
   }
-  const maxSize1 = _Math(4684).formatSize(maxSize / 1024, { useKibibytes: true });
-  const obj = _Math(4684);
-  const premiumMaxSize = _Math(4446).getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false });
-  const intl = tmp(1115).intl;
-  return intl.format(_Math(1115).t["+R2TzS"], { maxSize: maxSize1, premiumMaxSize });
+  const maxSize1 = formatSize(maxSize / 1024, { useKibibytes: true });
+  const tmpResult = PremiumUtils;
+  const premiumMaxSize = tmpResult.getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false });
+  const intl = intl2.intl;
+  return intl.format(intl2.t["+R2TzS"], { maxSize: maxSize1, premiumMaxSize });
 };

@@ -1,29 +1,25 @@
-// Module ID: 12238
-// Function ID: 12239
+// Module ID: 11313
+// Function ID: 11314
 // Name: MessagesUtils
-// Dependencies: [1074, 7600, 4776, 8166, 4936, 2]
+// Dependencies: [1086, 6745, 4822, 7320, 4985, 2]
 
-// Module 12238 (MessagesUtils)
-import CodedLink from "CodedLink" /* 4776 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4936 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7600 */;
-import Constants from "Constants" /* 1074 */;
+// Module 11313 (MessagesUtils)
+import CodedLink from "CodedLink" /* 4822 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4985 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 6745 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 7320 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
+let invites;
+
+let c2;
+let c3;
 ({ InviteStates: c2, MessageEmbedTypes: c3 } = Constants);
 const GuildTemplateStates = GuildTemplatesConstants.GuildTemplateStates;
-const result = size.fileFinishedImporting("utils/native/MessagesUtils.tsx");
-
-export default {
+let obj = {
   messageAuthorActivitiesChanged(activity, props, messageAuthorActivities2) {
-    let tmp = props.messageAuthorActivities !== messageAuthorActivities2.messageAuthorActivities;
-    if (tmp) {
-      tmp = null != activity.activity;
-    }
-    if (tmp) {
-      tmp = props.messageAuthorActivities[activity.author.id] !== messageAuthorActivities2.messageAuthorActivities[activity.author.id];
-    }
-    return tmp;
+    return props.messageAuthorActivities !== messageAuthorActivities2.messageAuthorActivities && null != activity.activity && props.messageAuthorActivities[activity.author.id] !== messageAuthorActivities2.messageAuthorActivities[activity.author.id];
   },
   codedLinksChanged(codedLinks, props, invites2) {
     let tmp = 0 !== codedLinks.codedLinks.length;
@@ -32,72 +28,77 @@ export default {
       if (someResult) {
         codedLinks = codedLinks.codedLinks;
         someResult = codedLinks.some((item) => {
+          let code;
+          let type;
           ({ type, code } = item);
           if (CodedLink.CodedLinkType.BUILD_OVERRIDE !== type) {
-            if (tmp(4776).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
-              if (tmp(4776).CodedLinkType.EXPERIMENT === type) {
-                const experimentFromEmbedURL = tmp(8166).getExperimentFromEmbedURL(code);
-                let tmp48 = null != experimentFromEmbedURL;
-                if (tmp48) {
+            if (CodedLink.CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+              if (CodedLink.CodedLinkType.EXPERIMENT === type) {
+                const tmpResult = ExperimentEmbedUtils;
+                const experimentFromEmbedURL = tmpResult.getExperimentFromEmbedURL(code);
+                let tmp52 = null != experimentFromEmbedURL;
+                if (tmp52) {
                   const legacyExperiments = props.experimentEmbeds.legacyExperiments;
-                  let tmp50;
+                  let tmp54;
                   if (legacyExperiments != null) {
-                    tmp50 = legacyExperiments[experimentFromEmbedURL];
+                    tmp54 = legacyExperiments[experimentFromEmbedURL];
                   }
                   const legacyExperiments2 = invites2.experimentEmbeds.legacyExperiments;
-                  let tmp52;
+                  let tmp56;
                   if (legacyExperiments2 != null) {
-                    tmp52 = legacyExperiments2[experimentFromEmbedURL];
+                    tmp56 = legacyExperiments2[experimentFromEmbedURL];
                   }
-                  let tmp53 = tmp50 !== tmp52;
-                  if (!tmp53) {
-                    const legacyOverridesInfo = tmp49.experimentEmbeds.legacyOverridesInfo;
-                    let tmp54;
-                    if (legacyOverridesInfo != null) {
-                      tmp54 = legacyOverridesInfo[experimentFromEmbedURL];
-                    }
-                    const legacyOverridesInfo2 = tmp51.experimentEmbeds.legacyOverridesInfo;
-                    let tmp55;
-                    if (legacyOverridesInfo2 != null) {
-                      tmp55 = legacyOverridesInfo2[experimentFromEmbedURL];
-                    }
-                    tmp53 = tmp54 !== tmp55;
-                  }
-                  if (!tmp53) {
-                    const apexExperiments = tmp49.experimentEmbeds.apexExperiments;
-                    let tmp56;
-                    if (apexExperiments != null) {
-                      tmp56 = apexExperiments[experimentFromEmbedURL];
-                    }
-                    const apexExperiments2 = tmp51.experimentEmbeds.apexExperiments;
-                    let tmp57;
-                    if (apexExperiments2 != null) {
-                      tmp57 = apexExperiments2[experimentFromEmbedURL];
-                    }
-                    tmp53 = tmp56 !== tmp57;
-                  }
-                  if (!tmp53) {
-                    const apexOverridesInfo = tmp49.experimentEmbeds.apexOverridesInfo;
+                  let tmp57 = tmp54 !== tmp56;
+                  if (!tmp57) {
+                    const legacyOverridesInfo = tmp53.experimentEmbeds.legacyOverridesInfo;
                     let tmp58;
-                    if (apexOverridesInfo != null) {
-                      tmp58 = apexOverridesInfo[experimentFromEmbedURL];
+                    if (legacyOverridesInfo != null) {
+                      tmp58 = legacyOverridesInfo[experimentFromEmbedURL];
                     }
-                    const apexOverridesInfo2 = tmp51.experimentEmbeds.apexOverridesInfo;
+                    const legacyOverridesInfo2 = tmp55.experimentEmbeds.legacyOverridesInfo;
                     let tmp59;
-                    if (apexOverridesInfo2 != null) {
-                      tmp59 = apexOverridesInfo2[experimentFromEmbedURL];
+                    if (legacyOverridesInfo2 != null) {
+                      tmp59 = legacyOverridesInfo2[experimentFromEmbedURL];
                     }
-                    tmp53 = tmp58 !== tmp59;
+                    tmp57 = tmp58 !== tmp59;
                   }
-                  tmp48 = tmp53;
+                  if (!tmp57) {
+                    const apexExperiments = tmp53.experimentEmbeds.apexExperiments;
+                    let tmp60;
+                    if (apexExperiments != null) {
+                      tmp60 = apexExperiments[experimentFromEmbedURL];
+                    }
+                    const apexExperiments2 = tmp55.experimentEmbeds.apexExperiments;
+                    let tmp61;
+                    if (apexExperiments2 != null) {
+                      tmp61 = apexExperiments2[experimentFromEmbedURL];
+                    }
+                    tmp57 = tmp60 !== tmp61;
+                  }
+                  if (!tmp57) {
+                    const apexOverridesInfo = tmp53.experimentEmbeds.apexOverridesInfo;
+                    let tmp62;
+                    if (apexOverridesInfo != null) {
+                      tmp62 = apexOverridesInfo[experimentFromEmbedURL];
+                    }
+                    const apexOverridesInfo2 = tmp55.experimentEmbeds.apexOverridesInfo;
+                    let tmp63;
+                    if (apexOverridesInfo2 != null) {
+                      tmp63 = apexOverridesInfo2[experimentFromEmbedURL];
+                    }
+                    tmp57 = tmp62 !== tmp63;
+                  }
+                  tmp52 = tmp57;
                 }
-                return tmp48;
-              } else if (tmp(4776).CodedLinkType.INVITE === type) {
+                return tmp52;
+              } else if (CodedLink.CodedLinkType.INVITE === type) {
                 const invites3 = props.invites;
-                value = invites3.get(code);
+                const value = invites3.get(code);
                 const invites4 = invites2.invites;
                 const value6 = invites4.get(code);
                 let state;
+                const applicationAssetFetchingIds = props.applicationAssetFetchingIds;
+                const applicationAssetFetchingIds2 = invites2.applicationAssetFetchingIds;
                 if (value != null) {
                   state = value.state;
                 }
@@ -105,19 +106,19 @@ export default {
                 if (value6 != null) {
                   state1 = value6.state;
                 }
-                let tmp43 = state !== state1;
-                if (tmp43) {
+                let tmp47 = state !== state1;
+                if (tmp47) {
                   let state2;
                   if (value6 != null) {
                     state2 = value6.state;
                   }
-                  tmp43 = state2 !== constants.RESOLVING;
+                  tmp47 = state2 !== constants.RESOLVING;
                 }
-                if (!tmp43) {
-                  tmp43 = props.applicationAssetFetchingIds !== invites2.applicationAssetFetchingIds;
+                if (!tmp47) {
+                  tmp47 = applicationAssetFetchingIds !== applicationAssetFetchingIds2;
                 }
-                return tmp43;
-              } else if (tmp(4776).CodedLinkType.TEMPLATE === type) {
+                return tmp47;
+              } else if (CodedLink.CodedLinkType.TEMPLATE === type) {
                 const guildTemplates = props.guildTemplates;
                 const value7 = guildTemplates.get(code);
                 const guildTemplates2 = invites2.guildTemplates;
@@ -130,34 +131,38 @@ export default {
                 if (value8 != null) {
                   state4 = value8.state;
                 }
-                let tmp33 = state3 !== state4;
-                if (tmp33) {
+                let tmp37 = state3 !== state4;
+                if (tmp37) {
                   let state5;
                   if (value8 != null) {
                     state5 = value8.state;
                   }
-                  tmp33 = state5 !== GuildTemplateStates.RESOLVING;
+                  tmp37 = state5 !== GuildTemplateStates.RESOLVING;
                 }
-                return tmp33;
+                return tmp37;
               } else {
-                if (tmp(4776).CodedLinkType.EVENT !== type) {
-                  if (tmp(4776).CodedLinkType.CHANNEL_LINK !== type) {
-                    if (tmp(4776).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
+                if (CodedLink.CodedLinkType.EVENT !== type) {
+                  if (CodedLink.CodedLinkType.CHANNEL_LINK !== type) {
+                    if (CodedLink.CodedLinkType.APP_DIRECTORY_PROFILE === type) {
                       const invalidAppDirectoryEmbedApplicationIds = props.invalidAppDirectoryEmbedApplicationIds;
                       const invalidAppDirectoryEmbedApplicationIds2 = invites2.invalidAppDirectoryEmbedApplicationIds;
+                      const tmp23 = props.appDirectoryEmbedApplications[code];
+                      const tmp25 = invites2.appDirectoryEmbedApplications[code];
                       const hasItem = invalidAppDirectoryEmbedApplicationIds.has(code);
-                      let tmp25 = props.appDirectoryEmbedApplications[code] !== invites2.appDirectoryEmbedApplications[code];
-                      if (!tmp25) {
-                        tmp25 = hasItem !== invalidAppDirectoryEmbedApplicationIds2.has(code);
+                      let tmp29 = tmp23 !== tmp25;
+                      const tmp27 = props.appDirectoryEmbedApplicationFetchStates[code];
+                      const tmp28 = invites2.appDirectoryEmbedApplicationFetchStates[code];
+                      if (!tmp29) {
+                        tmp29 = hasItem !== invalidAppDirectoryEmbedApplicationIds2.has(code);
                       }
-                      if (!tmp25) {
-                        tmp25 = props.appDirectoryEmbedApplicationFetchStates[code] !== invites2.appDirectoryEmbedApplicationFetchStates[code];
+                      if (!tmp29) {
+                        tmp29 = tmp27 !== tmp28;
                       }
-                      return tmp25;
-                    } else if (tmp(4776).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+                      return tmp29;
+                    } else if (CodedLink.CodedLinkType.ACTIVITY_BOOKMARK === type) {
                       return props.activityParticipants !== invites2.activityParticipants || props.invalidApplicationIds !== invites2.invalidApplicationIds || props.applicationAssetFetchingIds !== invites2.applicationAssetFetchingIds;
-                    } else if (tmp(4776).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
-                      const invites = props.invites;
+                    } else if (CodedLink.CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
+                      invites = props.invites;
                       const value9 = invites.get(code);
                       invites2 = invites2.invites;
                       const value10 = invites2.get(code);
@@ -183,22 +188,22 @@ export default {
                       }
                       return tmp12;
                     } else {
-                      if (tmp(4776).CodedLinkType.GUILD_PRODUCT !== type) {
-                        if (tmp(4776).CodedLinkType.SERVER_SHOP !== type) {
-                          if (tmp(4776).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                            if (tmp(4776).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                              if (tmp(4776).CodedLinkType.QUESTS_EMBED === type) {
+                      if (CodedLink.CodedLinkType.GUILD_PRODUCT !== type) {
+                        if (CodedLink.CodedLinkType.SERVER_SHOP !== type) {
+                          if (CodedLink.CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                            if (CodedLink.CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                              if (CodedLink.CodedLinkType.QUESTS_EMBED === type) {
                                 return props.quests !== invites2.quests || props.isFetchingCurrentQuests !== tmp6.isFetchingCurrentQuests;
                               } else {
-                                if (tmp(4776).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                                  if (tmp(4776).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                    if (tmp(4776).CodedLinkType.APP_OAUTH2_LINK === type) {
+                                if (CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                                  if (CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                    if (CodedLink.CodedLinkType.APP_OAUTH2_LINK === type) {
                                       return props.applicationAssetFetchingIds !== invites2.applicationAssetFetchingIds || props.invalidApplicationIds !== tmp4.invalidApplicationIds;
                                     } else {
-                                      if (tmp(4776).CodedLinkType.COLLECTIBLES_SHOP !== type) {
-                                        if (tmp(4776).CodedLinkType.GAME_PROFILE !== type) {
-                                          if (tmp(4776).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                            if (tmp(4776).CodedLinkType.USER_PROFILE !== type) {
+                                      if (CodedLink.CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                                        if (CodedLink.CodedLinkType.GAME_PROFILE !== type) {
+                                          if (CodedLink.CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                            if (CodedLink.CodedLinkType.USER_PROFILE !== type) {
                                               const _Error = Error;
                                               const _HermesInternal = HermesInternal;
                                               throw Error("Unknown coded link type: " + type);
@@ -226,11 +231,11 @@ export default {
           }
           let state9;
           if (props.buildOverrides[code] != null) {
-            state9 = tmp60.state;
+            state9 = tmp64.state;
           }
           let state10;
           if (invites2.buildOverrides[code] != null) {
-            state10 = tmp61.state;
+            state10 = tmp65.state;
           }
           return state9 !== state10;
         });
@@ -240,7 +245,7 @@ export default {
     return tmp;
   },
   giftCodesChanged(giftCodes, props, arg2) {
-    closure_1 = arg2;
+    let closure_1 = arg2;
     let someResult = 0 !== giftCodes.giftCodes.length;
     if (someResult) {
       giftCodes = giftCodes.giftCodes;
@@ -262,16 +267,17 @@ export default {
     return someResult;
   },
   mediaPostPreviewEmbedsChanged(embeds, props, arg2) {
-    closure_1 = arg2;
+    let closure_1 = arg2;
     embeds = embeds.embeds;
     const found = embeds.filter((type) => type.type === constants.POST_PREVIEW);
-    return 0 !== found.length && found.some((url) => {
-      const mediaPostEmbedChannelId = MediaPostEmbedUtils.getMediaPostEmbedChannelId(url.url);
-      let tmp2 = null != mediaPostEmbedChannelId;
-      if (tmp2) {
-        tmp2 = props.mediaPostPreviewEmbeds[mediaPostEmbedChannelId] !== closure_1.mediaPostPreviewEmbeds[mediaPostEmbedChannelId];
-      }
-      return tmp2;
+    const tmp = 0 !== found.length && found.some((url) => {
+      const obj = MediaPostEmbedUtils;
+      const mediaPostEmbedChannelId = obj.getMediaPostEmbedChannelId(url.url);
+      return null != mediaPostEmbedChannelId && props.mediaPostPreviewEmbeds[mediaPostEmbedChannelId] !== closure_1.mediaPostPreviewEmbeds[mediaPostEmbedChannelId];
     });
+    return tmp;
   }
 };
+const result = size.fileFinishedImporting("utils/native/MessagesUtils.tsx");
+
+export default obj;

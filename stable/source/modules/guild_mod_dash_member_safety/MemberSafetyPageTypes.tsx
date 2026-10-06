@@ -1,21 +1,21 @@
-// Module ID: 16923
-// Function ID: 16924
+// Module ID: 16223
+// Function ID: 16224
 // Name: MemberSafetyPageTypes
-// Dependencies: [4612, 2]
+// Dependencies: [4660, 2]
 
-// Module 16923 (MemberSafetyPageTypes)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
+// Module 16223 (MemberSafetyPageTypes)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
 import size from "module_2" /* 2 */;
 
-const obj = { ALL_MEMBERS: "ALL_MEMBERS" };
-const SUBMITTED = MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED;
-obj.PENDING = SUBMITTED;
+let APPROVED;
+let REJECTED;
+let SUBMITTED;
+const obj = { ALL_MEMBERS: "ALL_MEMBERS", PENDING: SUBMITTED, REJECTED, APPROVED };
+SUBMITTED = MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED;
 obj[SUBMITTED] = "PENDING";
-const REJECTED = MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED;
-obj.REJECTED = REJECTED;
+REJECTED = MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED;
 obj[REJECTED] = "REJECTED";
-const APPROVED = MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED;
-obj.APPROVED = APPROVED;
+APPROVED = MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED;
 obj[APPROVED] = "APPROVED";
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPageTypes.tsx");
 

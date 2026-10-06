@@ -1,86 +1,95 @@
-// Module ID: 13006
-// Function ID: 13007
+// Module ID: 12133
+// Function ID: 12134
 // Name: InviteErrorUtils
-// Dependencies: [1372, 1074, 4446, 1115, 2108, 2]
+// Dependencies: [1378, 1086, 4491, 1127, 2114, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 13006 (InviteErrorUtils)
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 12133 (InviteErrorUtils)
+import intl9 from "intl" /* 1127 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
-({ AbortCodes: closure_4, HelpdeskArticles: hasOwnProperty, MAX_USER_GUILDS: metroRequire, MAX_USER_GUILDS_PREMIUM: closure_7 } = Constants);
-const size = fn(2);
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ AbortCodes: closure_4, HelpdeskArticles: hasOwnProperty, MAX_USER_GUILDS: metroRequire, MAX_USER_GUILDS_PREMIUM: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("utils/InviteErrorUtils.tsx");
 
 export const getDescriptiveInviteError = function getDescriptiveInviteError(code) {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  let obj3;
   if (constants.TOO_MANY_USER_GUILDS === code) {
     const currentUser = UserStore.getCurrentUser();
+    const obj5 = PremiumUtilsDefault;
     if (!obj5.canUseIncreasedGuildCap(currentUser)) {
+      let tmp14;
       let isStaffResult;
       if (currentUser != null) {
         isStaffResult = currentUser.isStaff();
       }
       if (!isStaffResult) {
-        let tmp14 = timestampProducer;
+        tmp14 = metroRequire;
       }
-      const obj2 = { title: null, description: null };
-      const intl7 = util.intl;
-      const obj3 = { quantity: tmp14 };
-      obj2.title = intl7.formatToPlainString(util.t["ttJ/hj"], obj3);
-      const intl8 = util.intl;
-      obj2.description = intl8.string(util.t.iLyuDO);
+      const obj2 = { title: intl7.formatToPlainString(intl9.t["ttJ/hj"], obj3), description: intl8.string(intl9.t.iLyuDO) };
+      intl7 = intl9.intl;
+      obj3 = { quantity: tmp14 };
+      intl8 = intl9.intl;
       return obj2;
     }
-    tmp14 = React5;
-    obj5 = PremiumUtilsDefault;
-  } else if (tmp.GUILD_AT_CAPACITY === code) {
-    const obj4 = { title: null, description: null };
-    const intl5 = util.intl;
-    obj4.title = intl5.string(util.t.ZZlox4);
-    const intl6 = util.intl;
-    obj4.description = intl6.string(util.t.ZUEGFn);
+    tmp14 = metroImportDefault;
+  } else if (constants.GUILD_AT_CAPACITY === code) {
+    const obj4 = { title: intl5.string(intl9.t.ZZlox4), description: intl6.string(intl9.t.ZUEGFn) };
+    intl5 = intl9.intl;
+    intl6 = intl9.intl;
     return obj4;
-  } else if (tmp.GUILD_JOIN_INVITE_LIMITED_ACCESS === code) {
-    const obj6 = { title: null, description: null };
-    const intl3 = util.intl;
-    obj6.title = intl3.string(util.t.kJwpBW);
-    const intl4 = util.intl;
-    obj6.description = intl4.string(util.t.ZUEGFn);
+  } else if (constants.GUILD_JOIN_INVITE_LIMITED_ACCESS === code) {
+    const obj6 = { title: intl3.string(intl9.t.kJwpBW), description: intl4.string(intl9.t.ZUEGFn) };
+    intl3 = intl9.intl;
+    intl4 = intl9.intl;
     return obj6;
-  } else if (tmp.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED === code) {
-    const obj = { title: null, description: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t["u/xsK9"]);
-    const intl2 = util.intl;
-    obj.description = intl2.string(util.t.SxY4IW);
+  } else if (constants.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED === code) {
+    const obj = { title: intl.string(intl9.t["u/xsK9"]), description: intl2.string(intl9.t.SxY4IW) };
+    intl = intl9.intl;
+    intl2 = intl9.intl;
     return obj;
   } else {
     return null;
   }
 };
 export const getInviteError = function getInviteError(arg0) {
+  let obj2;
   if (constants.TOO_MANY_USER_GUILDS === arg0) {
-    const intl6 = util.intl;
-    return intl6.string(util.t.iLyuDO);
-  } else if (tmp.GUILD_AT_CAPACITY === arg0) {
-    const intl5 = util.intl;
-    return intl5.string(util.t.M6unNJ);
-  } else if (tmp.INVALID_COUNTRY_CODE === arg0) {
-    const intl4 = util.intl;
-    return intl4.string(util.t.sRJGR1);
-  } else if (tmp.INVALID_CANNOT_FRIEND_SELF === arg0) {
-    const intl3 = util.intl;
-    return intl3.string(util.t["mY2R+F"]);
-  } else if (tmp.INVITES_DISABLED === arg0) {
-    const intl2 = util.intl;
-    const obj = { articleLink: HelpdeskUtilsDefault.getArticleURL(constants2.INVITE_DISABLED) };
-    return intl2.format(util.t.RXSeLl, obj);
+    const intl6 = intl9.intl;
+    return intl6.string(intl9.t.iLyuDO);
+  } else if (constants.GUILD_AT_CAPACITY === arg0) {
+    const intl5 = intl9.intl;
+    return intl5.string(intl9.t.M6unNJ);
+  } else if (constants.INVALID_COUNTRY_CODE === arg0) {
+    const intl4 = intl9.intl;
+    return intl4.string(intl9.t.sRJGR1);
+  } else if (constants.INVALID_CANNOT_FRIEND_SELF === arg0) {
+    const intl3 = intl9.intl;
+    return intl3.string(intl9.t["mY2R+F"]);
+  } else if (constants.INVITES_DISABLED === arg0) {
+    const intl2 = intl9.intl;
+    const format = intl2.format;
+    const obj = { articleLink: obj2.getArticleURL(hasOwnProperty.INVITE_DISABLED) };
+    const RXSeLl = intl9.t.RXSeLl;
+    obj2 = HelpdeskUtilsDefault;
+    return format(RXSeLl, obj);
   } else {
-    const intl = util.intl;
-    return intl.string(util.t.dDZRdy);
+    const intl = intl9.intl;
+    return intl.string(intl9.t.dDZRdy);
   }
 };

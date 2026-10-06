@@ -1,180 +1,349 @@
-// Module ID: 16862
-// Function ID: 16863
+// Module ID: 16160
+// Function ID: 16161
 // Name: ICYMIForumThreadRow
-// Dependencies: [19, 17, 2041, 2063, 21, 16795, 576, 504, 5769, 8654, 16834, 11206, 8653, 4941, 16836, 1115, 11, 5371, 4784, 4778, 16840, 16842, 2]
-// Exports: default
+// Dependencies: [19, 17, 2051, 2073, 21, 16093, 588, 558, 576, 504, 5833, 7803, 16132, 10417, 7802, 4990, 1127, 11, 4833, 4824, 16136, 5436, 16138, 16139, 2]
 
-// Module 16862 (ICYMIForumThreadRow)
-import nativeDefault from "native" /* 576 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5769 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8654 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11206 */;
-import ICYMIShared from "ICYMIShared" /* 16834 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 16160 (ICYMIForumThreadRow)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7803 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10417 */;
+import ICYMIShared from "ICYMIShared" /* 16132 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import Fragment from "Fragment" /* 21 */;
+import createICYMIStyles from "createICYMIStyles" /* 16093 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class ICYMIForumThreadRow {
-  constructor(arg0) {
-    channel = global.channel;
-    message = global.message;
-    closure_2 = undefined;
-    author = undefined;
-    tmp = closure_9();
-    tmp2 = channel;
-    tmp3 = closure_2;
-    obj = channel(closure_2[7]);
-    items = [];
-    items[0] = closure_6;
-    stateFromStores = obj.useStateFromStores(items, () => {
+let channel;
+
+let metroImportAll;
+let metroImportDefault;
+const View = react_native.View;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let closure_9 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
+  const obj = { pressable: { flex: 1, paddingLeft: marginHorizontal.inset }, container: { marginHorizontal: marginHorizontal.margin }, subtitle: { marginTop: nativeDefault.space.PX_8, marginBottom: marginHorizontal.margin }, footer: { justifyContent: "flex-end", paddingLeft: marginHorizontal.inset, marginTop: marginHorizontal.margin, gap: marginHorizontal.margin }, threadAsComments: { marginHorizontal: marginHorizontal.margin }, ICYMICardInteractionRow: { marginHorizontal: marginHorizontal.margin, marginBottom: marginHorizontal.margin } };
+  ({ marginTop: nativeDefault.space.PX_8, marginBottom: marginHorizontal.margin });
+  return obj;
+});
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let first;
+  let stateFromStores;
+  let tmp17;
+  let tmp7;
+  const tmp = channel;
+  let tmp2 = stateFromStores;
+  let obj = channel(stateFromStores[8]);
+  const cResult = obj.c(60);
+  channel = channel.channel;
+  const message = channel.message;
+  closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp6 = GuildStore;
+    let items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel) {
+    const fn = function _() {
       let guildId;
+      const getGuild = GuildStore.getGuild;
+      const obj = channel;
       if (channel != null) {
-        guildId = channel.getGuildId();
+        guildId = obj.getGuildId();
       }
-      return GuildStore.getGuild(guildId);
-    });
-    closure_2 = stateFromStores;
-    author = message.author;
-    obj2 = channel(closure_2[7]);
-    items1 = [];
-    items1[0] = closure_5;
-    obj3 = author;
-    items2 = [, ];
-    items2[0] = author.id;
-    id = undefined;
-    stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channel.parent_id));
-    if (stateFromStores != null) {
-      id = stateFromStores.id;
+      return getGuild(guildId);
+    };
+    cResult[1] = channel;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(tmp2[9]);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  const author = message.author;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ChannelStore];
+    cResult[3] = items1;
+  }
+  if (cResult[4] !== channel.parent_id) {
+    class C {
+      constructor() {
+        return ChannelStore.getChannel(channel.parent_id);
+      }
     }
-    items2[1] = id;
-    effect = author.useEffect(() => {
+    cResult[4] = channel.parent_id;
+    cResult[5] = C;
+  } else {
+    class C {
+      constructor() {
+        return ChannelStore.getChannel(channel.parent_id);
+      }
+    }
+  }
+  tmp(tmp2[9]);
+  if (cResult[6] === author.id) {
+    class C {
+      constructor() {
+        return ChannelStore.getChannel(channel.parent_id);
+      }
+    }
+    const tmp13 = cResult[7];
+    if (stateFromStores != null) {
+      class C {
+        constructor() {
+          return ChannelStore.getChannel(channel.parent_id);
+        }
+      }
+    }
+    if (tmp13 === undefined) {
+      class C {
+        constructor() {
+          return ChannelStore.getChannel(channel.parent_id);
+        }
+      }
+    }
+    if (stateFromStores != null) {
+      class C {
+        constructor() {
+          return ChannelStore.getChannel(channel.parent_id);
+        }
+      }
+    }
+    if (cResult[9] === author.id) {
+      class C {
+        constructor() {
+          return ChannelStore.getChannel(channel.parent_id);
+        }
+      }
+      const effect = author.useEffect(S, tmp17);
+      if (cResult[12] === channel) {
+        class C {
+          constructor() {
+            return ChannelStore.getChannel(channel.parent_id);
+          }
+        }
+      }
+      class A {
+        constructor() {
+          const obj = ICYMIActionCreatorsDefault;
+          obj.itemInteracted(message.id, "forum_thread", "press_forum_thread");
+          const obj2 = ICYMIActionCreatorsDefault;
+          const obj3 = { itemId: message.id, itemType: "forum_thread", actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "navigate", actionDestinationType: "channel" } };
+          obj2.feedItemActioned(obj3);
+          let tmp6 = null != channel;
+          const tmp2 = message;
+          const tmp5 = channel;
+          if (tmp6) {
+            tmp6 = null != stateFromStores;
+          }
+          if (tmp6) {
+            const obj4 = ICYMIShared;
+            obj4.navigateToPost(tmp5.id, stateFromStores.id, tmp2.id);
+          }
+        }
+      }
+      cResult[12] = channel;
+      cResult[13] = stateFromStores;
+      cResult[14] = message.id;
+      cResult[15] = A;
+    }
+    const items2 = [author.id, undefined];
+    cResult[9] = author.id;
+    cResult[10] = undefined;
+    cResult[11] = items2;
+    tmp17 = items2;
+  }
+  cResult[6] = author.id;
+  if (stateFromStores != null) {
+    class C {
+      constructor() {
+        return ChannelStore.getChannel(channel.parent_id);
+      }
+    }
+  }
+  class S {
+    constructor() {
       let id;
       if (stateFromStores != null) {
         id = tmp.id;
       }
       if (null != id) {
         let id1;
-        if (tmp != null) {
+        const requestMembersById = GuildActionCreatorsDefault.requestMembersById;
+        GuildActionCreatorsDefault;
+        if (stateFromStores != null) {
           id1 = tmp.id;
         }
         const items = [author.id];
-        const membersById = GuildActionCreatorsDefault.requestMembersById(id1, items);
+        const membersById = requestMembersById(id1, items);
       }
-    }, items2);
-    items3 = [, , ];
-    items3[0] = channel;
-    items3[1] = stateFromStores;
-    items3[2] = message.id;
-    callback = obj3.useCallback(() => {
-      ICYMIActionCreatorsDefault.itemInteracted(message.id, "forum_thread", "press_forum_thread");
-      const tmp2 = message;
-      ICYMIActionCreatorsDefault.feedItemActioned({ itemId: message.id, itemType: "forum_thread", actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "navigate", actionDestinationType: "channel" } });
-      let tmp6 = null != channel;
-      if (tmp6) {
-        tmp6 = null != stateFromStores;
+    }
+  }
+  cResult[7] = undefined;
+  cResult[8] = S;
+}) : ((channel) => {
+  let intl;
+  let items5;
+  let items6;
+  let obj11;
+  let obj12;
+  let obj6;
+  let tmp11Result3;
+  let tmp11Result4;
+  channel = channel.channel;
+  const message = channel.message;
+  let stateFromStores;
+  const visible = channel.visible;
+  const tmp = closure_9();
+  let tmp2 = channel;
+  let obj = channel(stateFromStores[9]);
+  let items = [GuildStore];
+  stateFromStores = obj.useStateFromStores(items, () => {
+    let guildId;
+    const getGuild = GuildStore.getGuild;
+    const obj = channel;
+    if (channel != null) {
+      guildId = obj.getGuildId();
+    }
+    return getGuild(guildId);
+  });
+  const author = message.author;
+  let obj2 = channel(stateFromStores[9]);
+  const items1 = [ChannelStore];
+  let obj3 = author;
+  const items2 = [author.id, ];
+  let id;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channel.parent_id));
+  const useEffect = author.useEffect;
+  if (stateFromStores != null) {
+    id = stateFromStores.id;
+  }
+  items2[1] = id;
+  const effect = useEffect(() => {
+    let id;
+    if (stateFromStores != null) {
+      id = tmp.id;
+    }
+    if (null != id) {
+      let id1;
+      const requestMembersById = GuildActionCreatorsDefault.requestMembersById;
+      GuildActionCreatorsDefault;
+      if (stateFromStores != null) {
+        id1 = tmp.id;
       }
-      if (tmp6) {
-        ICYMIShared.navigateToPost(channel.id, stateFromStores.id, tmp2.id);
-      }
-    }, items3);
-    items4 = [, ];
-    items4[0] = channel.parent_id;
-    items4[1] = message.id;
-    callback1 = obj3.useCallback(() => {
-      if (null != channel.parent_id) {
-        ICYMIActionCreatorsDefault.itemInteracted(message.id, "forum_thread", "long_press_forum_thread");
-        const obj3 = { itemId: message.id, itemType: "forum_thread", actionParameters: { actionGestureType: "long_press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null } };
-        ICYMIActionCreatorsDefault.feedItemActioned(obj3);
-        const result = openChannelLongPressActionSheet.openChannelLongPressActionSheet(tmp.parent_id);
-      }
-    }, items4);
-    tmp2Result = tmp2(tmp3[12]);
-    gravityMessage = tmp2Result.useGravityMessage(message);
-    tmp11 = message;
+      const items = [author.id];
+      const membersById = requestMembersById(id1, items);
+    }
+  }, items2);
+  const items3 = [channel, stateFromStores, message.id];
+  const callback = obj3.useCallback(() => {
+    const obj = ICYMIActionCreatorsDefault;
+    obj.itemInteracted(message.id, "forum_thread", "press_forum_thread");
+    const obj2 = ICYMIActionCreatorsDefault;
+    const obj3 = { itemId: message.id, itemType: "forum_thread", actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "navigate", actionDestinationType: "channel" } };
+    obj2.feedItemActioned(obj3);
+    let tmp6 = null != channel;
+    const tmp2 = message;
+    const tmp5 = channel;
+    if (tmp6) {
+      tmp6 = null != stateFromStores;
+    }
+    if (tmp6) {
+      const obj4 = ICYMIShared;
+      obj4.navigateToPost(tmp5.id, stateFromStores.id, tmp2.id);
+    }
+  }, items3);
+  const items4 = [channel.parent_id, message.id];
+  const callback1 = obj3.useCallback(() => {
+    if (null != channel.parent_id) {
+      const obj = ICYMIActionCreatorsDefault;
+      obj.itemInteracted(message.id, "forum_thread", "long_press_forum_thread");
+      const obj3 = { itemId: message.id, itemType: "forum_thread", actionParameters: { actionGestureType: "long_press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null } };
+      const obj2 = ICYMIActionCreatorsDefault;
+      obj2.feedItemActioned(obj3);
+      const obj4 = openChannelLongPressActionSheet;
+      const result = obj4.openChannelLongPressActionSheet(tmp.parent_id);
+    }
+  }, items4);
+  const tmp2Result = tmp2(stateFromStores[14]);
+  const gravityMessage = tmp2Result.useGravityMessage(message);
+  let tmp13 = null;
+  if (null != channel) {
     tmp13 = null;
-    if (null != channel) {
+    if (null != channel.guild_id) {
       tmp13 = null;
-      if (null != channel.guild_id) {
+      if (null != stateFromStores) {
         tmp13 = null;
-        if (null != stateFromStores) {
+        if (null != author) {
           tmp13 = null;
-          if (null != author) {
-            tmp13 = null;
-            if (null != stateFromStores1) {
-              tmp14 = jsxs;
-              obj1 = { actionLabel: null, id: null, interactionType: "forum_thread", channelId: null, timestamp: null, onHeaderPress: null, onHeaderLongPress: null, message: null, shouldFeatureUser: true, children: null };
-              tmp11Result = tmp11(tmp3[14]);
-              intl = tmp2(tmp3[15]).intl;
-              obj1.actionLabel = intl.string(tmp2(tmp3[15]).t.bYNuVx);
-              obj1.id = gravityMessage.id;
-              obj1.channelId = channel.parent_id;
-              tmp11Result1 = tmp11(tmp3[16]);
-              obj1.timestamp = tmp11Result1.extractTimestamp(gravityMessage.id);
-              obj1.onHeaderPress = callback;
-              obj1.onHeaderLongPress = callback1;
-              obj1.message = gravityMessage;
-              tmp16 = jsx;
-              obj16 = { onPress: null, onLongPress: null, accessibilityRole: "button", unstable_pressDelay: 130, style: null, children: null };
-              obj16.onPress = callback;
-              obj16.onLongPress = callback1;
-              obj16.style = tmp.pressable;
-              tmp17 = View;
-              obj17 = { style: null, children: null };
-              obj17.style = tmp.container;
-              obj18 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: null };
-              obj18.children = tmp12;
-              items5 = [, , ];
-              items5[0] = jsx(tmp2(tmp3[18]).Text, obj18);
-              obj19 = { variant: "text-md/normal", color: "text-subtle", style: null, lineClamp: 5, children: null };
-              obj19.style = tmp.subtitle;
-              tmp11Result2 = tmp11(tmp3[19]);
-              flag = true;
-              obj19.children = tmp11Result2.parseInlineReply(message.content, true);
-              items5[1] = jsx(tmp2(tmp3[18]).Text, obj19);
-              obj20 = { message: null, visible: null, itemType: "forum_thread" };
-              obj20.message = message;
-              obj20.visible = global.visible;
-              items5[2] = jsx(tmp11(tmp3[20]), obj20);
-              obj17.children = items5;
-              obj16.children = jsxs(View, obj17);
-              items6 = [, ];
-              items6[0] = jsx(tmp2(tmp3[17]).PressableHighlight, obj16);
-              obj21 = { style: null, children: null };
-              obj21.style = tmp.footer;
-              obj22 = { style: null, children: null };
-              obj22.style = tmp.ICYMICardInteractionRow;
-              obj23 = { message: null, channel: null, guild: null, backgroundVariant: "base", id: null, itemType: "forum_thread" };
-              obj23.message = gravityMessage;
-              obj23.channel = channel;
-              obj23.guild = stateFromStores;
-              obj23.id = gravityMessage.id;
-              obj22.children = jsx(tmp11(tmp3[21]), obj23);
-              obj21.children = jsx(View, obj22);
-              items6[1] = jsx(View, obj21);
-              obj1.children = items6;
-              tmp13 = jsxs(tmp11Result, obj1);
-            }
+          if (null != stateFromStores1) {
+            let obj4 = { actionLabel: intl.string(tmp2(tmp3[16]).t.bYNuVx), id: gravityMessage.id, interactionType: "forum_thread", channelId: channel.parent_id, timestamp: tmp11Result3.extractTimestamp(gravityMessage.id), onHeaderPress: callback, onHeaderLongPress: callback1, message: gravityMessage, shouldFeatureUser: true, children: items6 };
+            const tmp11Result = message(stateFromStores[23]);
+            intl = tmp2(tmp3[16]).intl;
+            tmp11Result3 = message(stateFromStores[17]);
+            const obj5 = { onPress: callback, onLongPress: callback1, accessibilityRole: "button", unstable_pressDelay: 130, style: tmp.pressable, children: closure_8(View, obj6) };
+            obj6 = { style: tmp.container, children: items5 };
+            const PressableHighlight = tmp2(tmp3[21]).PressableHighlight;
+            const obj7 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: tmp12 };
+            items5 = [closure_7(tmp2(tmp3[18]).Text, obj7), , ];
+            const obj8 = { variant: "text-md/normal", color: "text-subtle", style: tmp.subtitle, lineClamp: 5, children: tmp11Result4.parseInlineReply(message.content, true) };
+            const Text = tmp2(tmp3[18]).Text;
+            tmp11Result4 = message(stateFromStores[19]);
+            items5[1] = closure_7(Text, obj8);
+            const obj9 = { message, visible, itemType: "forum_thread" };
+            items5[2] = closure_7(message(stateFromStores[20]), obj9);
+            items6 = [closure_7(PressableHighlight, obj5), ];
+            const obj10 = { style: tmp.footer, children: closure_7(View, obj11) };
+            obj11 = { style: tmp.ICYMICardInteractionRow, children: closure_7(message(stateFromStores[22]), obj12) };
+            obj12 = { message: gravityMessage, channel, guild: stateFromStores, backgroundVariant: "base", id: gravityMessage.id, itemType: "forum_thread" };
+            items6[1] = closure_7(View, obj10);
+            tmp13 = closure_8(tmp11Result, obj4);
           }
         }
       }
     }
-    return tmp13;
   }
-}
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createICYMIStyles = fn(16795);
-const React7 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
-  const obj = { pressable: { flex: 1, paddingLeft: marginHorizontal.inset }, container: { marginHorizontal: marginHorizontal.margin }, subtitle: { marginTop: nativeDefault.space.PX_8, marginBottom: marginHorizontal.margin }, footer: { justifyContent: "flex-end", paddingLeft: marginHorizontal.inset, marginTop: marginHorizontal.margin, gap: marginHorizontal.margin }, threadAsComments: { marginHorizontal: marginHorizontal.margin }, ICYMICardInteractionRow: { marginHorizontal: marginHorizontal.margin, marginBottom: marginHorizontal.margin } };
-  return obj;
+  return tmp13;
 });
-const size = fn(2);
+let closure_10 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let message;
+  let threadChannel;
+  let visible;
+  const obj = react2;
+  const cResult = obj.c(4);
+  ({ message, threadChannel, visible } = arg0);
+  if (cResult[0] === message) {
+    if (cResult[1] === threadChannel) {
+      let tmp2;
+      if (cResult[2] === visible) {
+        tmp2 = cResult[3];
+      }
+      return tmp2;
+    }
+  }
+  const tmp3 = metroImportDefault(closure_10, { message, channel: threadChannel, visible });
+  cResult[0] = message;
+  cResult[1] = threadChannel;
+  cResult[2] = visible;
+  cResult[3] = tmp3;
+  tmp2 = tmp3;
+}) : ((message) => {
+  const obj = { message: message.message, channel: message.threadChannel, visible: message.visible };
+  return metroImportDefault(closure_10, obj);
+});
 let result = size.fileFinishedImporting("modules/icymi/native/ICYMIForumThreadRow.tsx");
 
-export default function ForumThreadRowWrapper(message) {
-  return React5(ICYMIForumThreadRow, { message: message.message, channel: message.threadChannel, visible: message.visible });
-};
+export default tmp4;
 export const MAX_AVATARS_IN_PILE = 3;
-export { ICYMIForumThreadRow };
+export const ICYMIForumThreadRow = tmp3;

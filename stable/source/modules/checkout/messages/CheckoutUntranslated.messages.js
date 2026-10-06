@@ -1,22 +1,24 @@
-// Module ID: 2250
-// Function ID: 2251
-// Dependencies: [1119, 2251, 1154, 2]
+// Module ID: 2256
+// Function ID: 2257
+// Dependencies: [1131, 2257, 1166, 2]
 
-// Module 2250
-import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod2251 from "module_2251" /* 2251 */;
-import module_1154_mod from "module_1154" /* 1154 */;
+// Module 2256
+import AssetJsonUtils from "AssetJsonUtils" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 2257 */;
+import module_1166_mod from "module_1166" /* 1166 */;
 import size from "module_2" /* 2 */;
 
-let module_1154 = module_1154_mod;
-const loader = module_1154.createLoader({
-  () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2251);
+let obj = {
+  "en-US": () => {
+    const obj = AssetJsonUtils;
+    const jsonAsset = obj.loadJsonAsset(AssetRegistry);
     return jsonAsset.then((result) => ({ default: result }));
   }
-}, "en-US");
-let module_1154 = module_1154_mod;
-const messagesProxy = module_1154.makeMessagesProxy(loader);
+};
+let module_1166 = module_1166_mod;
+const loader = module_1166.createLoader(obj, "en-US");
+module_1166 = module_1166_mod;
+const messagesProxy = module_1166.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/checkout/messages/CheckoutUntranslated.messages.js");
 
 export default messagesProxy;

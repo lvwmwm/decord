@@ -1,25 +1,30 @@
-// Module ID: 12169
-// Function ID: 12170
+// Module ID: 11239
+// Function ID: 11240
 // Name: AppealIngestionModalActionCreators
-// Dependencies: [573, 4991, 12170, 1980, 2]
+// Dependencies: [585, 5040, 11240, 1987, 2]
 
-// Module 12169 (AppealIngestionModalActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+// Module 11239 (AppealIngestionModalActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
 import size from "module_2" /* 2 */;
 
 const APPEAL_INGESTION_MODAL_KEY = "APPEAL_INGESTION_MODAL_KEY";
-const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionModalActionCreators.tsx");
-
-export default {
+let obj = {
   open(classificationId) {
-    DispatcherDefault.dispatch({ type: "SAFETY_HUB_APPEAL_OPEN", classificationId: classificationId.classificationId });
+    const obj = DispatcherDefault;
     const obj2 = { type: "SAFETY_HUB_APPEAL_OPEN", classificationId: classificationId.classificationId };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12170, dependencyMap.paths), classificationId, APPEAL_INGESTION_MODAL_KEY);
+    obj.dispatch(obj2);
+    const obj3 = ModalActionCreatorsDefault;
+    obj3.pushLazy(asyncRequire(11240, dependencyMap.paths), classificationId, APPEAL_INGESTION_MODAL_KEY);
   },
   close() {
-    ModalActionCreatorsDefault.popWithKey(APPEAL_INGESTION_MODAL_KEY);
-    DispatcherDefault.dispatch({ type: "SAFETY_HUB_APPEAL_CLOSE" });
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(APPEAL_INGESTION_MODAL_KEY);
+    const obj2 = DispatcherDefault;
+    obj2.dispatch({ type: "SAFETY_HUB_APPEAL_CLOSE" });
   }
 };
+const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionModalActionCreators.tsx");
+
+export default obj;

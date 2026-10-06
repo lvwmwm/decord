@@ -1,17 +1,19 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 8810
+// Function ID: 8811
 // Name: FirstPartyRichPresenceStore
-// Dependencies: [9659, 1331, 504, 573, 2]
+// Dependencies: [8811, 1343, 504, 585, 2]
 
-// Module 9658 (FirstPartyRichPresenceStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import _modDef1331 from "module_1331" /* 1331 */;
-import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 9659 */;
+// Module 8810 (FirstPartyRichPresenceStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import _modDef1343 from "module_1343" /* 1343 */;
+import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 8811 */;
+import size from "module_2" /* 2 */;
 
 function updateActivities() {
   items = [];
   const iter = items[Symbol.iterator]();
+  const nextResult = iter.next();
   while (iter !== undefined) {
     let activity = nextResult.getActivity();
     if (null != activity) {
@@ -19,28 +21,27 @@ function updateActivities() {
     }
     continue;
   }
-  const tmp6 = _modDef1331(items, items);
-  let flag = !tmp6;
-  if (!tmp6) {
+  let flag = !_modDef1343(items, items);
+  _modDef1343(items, items);
+  if (flag) {
     flag = true;
   }
   return flag;
 }
 let items = [StageChannelSelfRichPresenceStoreDefault];
 items = [];
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class FirstPartyRichPresenceStore extends Store {
+  initialize() {
+    this.syncWith(items, updateActivities);
+  }
+  getActivities() {
+    return items;
+  }
 }
 const prototype = FirstPartyRichPresenceStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.syncWith(items, updateActivities);
-};
-prototype["getActivities"] = function getActivities() {
-  return items;
-};
 FirstPartyRichPresenceStore.displayName = "FirstPartyRichPresenceStore";
 const firstPartyRichPresenceStore = new FirstPartyRichPresenceStore(DispatcherDefault);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/rich_presence/FirstPartyRichPresenceStore.tsx");
 
 export default firstPartyRichPresenceStore;

@@ -1,34 +1,36 @@
-// Module ID: 10592
-// Function ID: 10593
+// Module ID: 9674
+// Function ID: 9675
 // Name: RoleSubscriptionUpsellUtils
-// Dependencies: [19, 21, 5141, 10593, 1980, 2]
+// Dependencies: [19, 21, 5205, 9675, 1987, 2]
 
-// Module 10592 (RoleSubscriptionUpsellUtils)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import noop from "module_19" /* 19 */;
+// Module 9674 (RoleSubscriptionUpsellUtils)
+import Fragment from "Fragment" /* 21 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/RoleSubscriptionUpsellUtils.tsx");
-
-export default {
+const jsx = Fragment.jsx;
+let obj = {
   handleShowEmojiUpsellAlert(guildId) {
     guildId = guildId.guildId;
-    actions_AlertActionCreatorsDefault.openLazy({
+    const obj = actions_AlertActionCreatorsDefault;
+    const obj2 = {
       importer() {
-        return asyncRequireImpl(10593, dependencyMap.paths).then((result) => {
-          closure_0 = result.default;
+        const promise = asyncRequire(9675, dependencyMap.paths);
+        return promise.then((result) => {
+          let closure_0 = result.default;
           return (arg0) => {
-            const obj = {};
             const merged = Object.assign(arg0);
-            obj.guildId = guildId;
-            return <closure_0 />;
+            return <closure_0 guildId={guildId} />;
           };
         });
       },
       isDismissable: false
-    });
+    };
+    obj.openLazy(obj2);
   }
 };
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/RoleSubscriptionUpsellUtils.tsx");
+
+export default obj;

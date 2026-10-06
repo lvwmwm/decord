@@ -1,20 +1,23 @@
-// Module ID: 13355
-// Function ID: 13356
+// Module ID: 12609
+// Function ID: 12610
 // Name: getActivityChannelId
-// Dependencies: [2045, 2041, 4807, 2]
+// Dependencies: [2055, 2051, 4856, 2]
 // Exports: default
 
-// Module 13355 (getActivityChannelId)
-import ChannelRecord from "ChannelRecord" /* 2045 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+// Module 12609 (getActivityChannelId)
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 const isTextChannel = ChannelRecord.isTextChannel;
 const result = size.fileFinishedImporting("modules/activities/utils/getActivityChannelId.tsx");
 
 export default function getActivityChannelId(userId) {
+  let activity;
+  let channelId;
   ({ channelId, activity } = userId);
+  userId = userId.userId;
   const channel = ChannelStore.getChannel(channelId);
   let session_id;
   if (activity != null) {
@@ -24,10 +27,11 @@ export default function getActivityChannelId(userId) {
   if (null != session_id) {
     if (null == channel) {
       let session_id1;
+      const getVoiceStateForSession = VoiceStateStore.getVoiceStateForSession;
       if (activity != null) {
         session_id1 = activity.session_id;
       }
-      const voiceStateForSession = VoiceStateStore.getVoiceStateForSession(userId.userId, session_id1);
+      const voiceStateForSession = getVoiceStateForSession(userId, session_id1);
       let channelId1;
       if (voiceStateForSession != null) {
         channelId1 = voiceStateForSession.channelId;

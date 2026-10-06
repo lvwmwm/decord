@@ -1,93 +1,103 @@
-// Module ID: 17877
-// Function ID: 17878
+// Module ID: 17240
+// Function ID: 17241
 // Name: MobileGiftIntentCardManager
-// Dependencies: [7927, 2041, 5008, 2095, 8368, 1374, 17878, 1095, 2019, 11037, 9080, 1249, 2036, 10143, 2]
+// Dependencies: [7076, 2051, 5057, 2102, 7525, 1380, 17241, 1107, 2027, 10243, 8227, 1261, 2046, 9281, 2]
 
-// Module 17877 (MobileGiftIntentCardManager)
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import Timers from "Timers" /* 2036 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 10143 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7927 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MessageStore from "MessageStore" /* 5008 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8368 */;
-import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 17878 */;
+// Module 17240 (MobileGiftIntentCardManager)
+import ChannelTypes from "ChannelTypes" /* 1107 */;
+import Timers from "Timers" /* 2046 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9281 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7076 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MessageStore from "MessageStore" /* 5057 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7525 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 17241 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PremiumConstants = fn(1374);
-({ GiftIntentSecondaryAction: closure_7, GiftIntentType: closure_8 } = PremiumConstants);
-class MobileGiftIntentCardManager extends tmp3 {
+const require = globalThis.__r;
+let _require, dependencyMap, set;
+
+let metroImportAll;
+let metroImportDefault;
+({ GiftIntentSecondaryAction: metroImportDefault, GiftIntentType: metroImportAll } = PremiumConstants);
+class MobileGiftIntentCardManager extends GiftIntentReconcilingManager {
+  isChannelEligible(channel) {
+    return channel.type === ChannelTypes.ChannelTypes.DM;
+  }
+  maybeSendCard(id, found) {
+    let dmProbability;
+    let obj2;
+    const self = this;
+    dependencyMap = id;
+    _require = found;
+    const tmp = _require;
+    const EnableFriendAnniversaryNotifications = require("UserSettings").EnableFriendAnniversaryNotifications;
+    if (EnableFriendAnniversaryNotifications.getSetting()) {
+      if (!PremiumGiftingIntentStore.isGiftIntentMessageInCooldown(found)) {
+        if (id === SelectedChannelStore.getChannelId()) {
+          const obj4 = MessageStore;
+          if (MessageStore.isReady(id)) {
+            const tmp6 = constants2;
+            if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, found, constants.SEND_MESSAGE)) {
+              const tmpResult = tmp(10243);
+              const result = tmpResult.logMessageGiftIntentShown(found);
+              const userAffinity = self.getUserAffinity(found);
+              const obj = { name: tmp(1261).ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION, type: tmp(1261).ImpressionTypes.VIEW, properties: obj2 };
+              const trackImpression = tmp(8227).trackImpression;
+              tmp(8227);
+              obj2 = { gift_intent_type: tmp6.FRIEND_ANNIVERSARY, dm_affinity: dmProbability, channel_id: id };
+              dmProbability = undefined;
+              if (userAffinity != null) {
+                dmProbability = userAffinity.dmProbability;
+              }
+              trackImpression(obj);
+            }
+          } else {
+            obj4.whenReady(id, () => {
+              if (SelectedChannelStore.getChannelId() === id) {
+                self.maybeSendCard(tmp, found);
+              }
+            });
+          }
+        }
+      }
+    }
+  }
+  sendCardInSelectedChannelIfEligible(channelId) {
+    const self = this;
+    const channel = ChannelStore.getChannel(channelId);
+    if (null != channel) {
+      if (self.isChannelEligible(channel)) {
+        const _Set = Set;
+        const self2 = this;
+        const self3 = this;
+        set = new Set(channel.recipients);
+        const friendAnniversaries = PremiumGiftingIntentStore.getFriendAnniversaries();
+        const found = friendAnniversaries.find((item) => set.has(item));
+        if (null != found) {
+          const self4 = this;
+          const self5 = this;
+          const delayedCall = new Timers.DelayedCall(1000, () => {
+            self.maybeSendCard(channel.id, found);
+          });
+          delayedCall.delay();
+        }
+      }
+    }
+  }
+  onChannelSelect(channelId) {
+    const result = this.sendCardInSelectedChannelIfEligible(channelId.channelId);
+  }
+  sendGiftingPromptSystemMessagesIfEligible() {
+    const obj = UserAffinitiesActionCreators;
+    const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
+    const result = this.sendCardInSelectedChannelIfEligible(SelectedChannelStore.getChannelId());
+  }
 }
 const prototype = MobileGiftIntentCardManager.prototype;
-prototype["isChannelEligible"] = function isChannelEligible(channel) {
-  return channel.type === ChannelTypes.ChannelTypes.DM;
-};
-prototype["maybeSendCard"] = function maybeSendCard(id, found) {
-  const self = this;
-  dependencyMap = id;
-  _require = found;
-  const EnableFriendAnniversaryNotifications = require("UserSettings").EnableFriendAnniversaryNotifications;
-  if (EnableFriendAnniversaryNotifications.getSetting()) {
-    if (!PremiumGiftingIntentStore.isGiftIntentMessageInCooldown(found)) {
-      if (id === SelectedChannelStore.getChannelId()) {
-        if (MessageStore.isReady(id)) {
-          if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, found, constants.SEND_MESSAGE)) {
-            const result = tmp(11037).logMessageGiftIntentShown(found);
-            const userAffinity = self.getUserAffinity(found);
-            const tmpResult = tmp(11037);
-            const obj = { name: tmp(1249).ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION, type: tmp(1249).ImpressionTypes.VIEW, properties: null };
-            const obj2 = { gift_intent_type: tmp6.FRIEND_ANNIVERSARY, dm_affinity: null, channel_id: null };
-            let dmProbability;
-            if (userAffinity != null) {
-              dmProbability = userAffinity.dmProbability;
-            }
-            obj2.dm_affinity = dmProbability;
-            obj2.channel_id = id;
-            obj.properties = obj2;
-            tmp(9080).trackImpression(obj);
-            const tmpResult2 = tmp(9080);
-          }
-          tmp6 = constants2;
-        } else {
-          obj5.whenReady(id, () => {
-            if (SelectedChannelStore.getChannelId() === closure_1) {
-              self.maybeSendCard(tmp, closure_0);
-            }
-          });
-        }
-        obj5 = MessageStore;
-      }
-    }
-  }
-};
-prototype["sendCardInSelectedChannelIfEligible"] = function sendCardInSelectedChannelIfEligible(channelId) {
-  const self = this;
-  const channel = ChannelStore.getChannel(channelId);
-  if (null != channel) {
-    if (self.isChannelEligible(channel)) {
-      const _Set = Set;
-      const set = new Set(channel.recipients);
-      const friendAnniversaries = PremiumGiftingIntentStore.getFriendAnniversaries();
-      const found = friendAnniversaries.find((item) => set.has(item));
-      if (null != found) {
-        const delayedCall = new Timers.DelayedCall(1000, () => {
-          self.maybeSendCard(channel.id, found);
-        });
-        delayedCall.delay();
-      }
-    }
-  }
-};
-prototype["onChannelSelect"] = function onChannelSelect(channelId) {
-  const result = this.sendCardInSelectedChannelIfEligible(channelId.channelId);
-};
-prototype["sendGiftingPromptSystemMessagesIfEligible"] = function sendGiftingPromptSystemMessagesIfEligible() {
-  const userAffinitiesV2 = UserAffinitiesActionCreators.fetchUserAffinitiesV2();
-  const result = this.sendCardInSelectedChannelIfEligible(SelectedChannelStore.getChannelId());
-};
 const mobileGiftIntentCardManager = new MobileGiftIntentCardManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/gifting/native/MobileGiftIntentCardManager.tsx");
 
 export default mobileGiftIntentCardManager;

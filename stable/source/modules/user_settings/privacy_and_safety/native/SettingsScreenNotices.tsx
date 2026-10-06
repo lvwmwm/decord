@@ -1,124 +1,211 @@
-// Module ID: 15094
-// Function ID: 15095
+// Module ID: 14337
+// Function ID: 14338
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1372, 21, 4788, 576, 7866, 15095, 15096, 5672, 5673, 5000, 15103, 15104, 2]
-// Exports: default
+// Dependencies: [19, 17, 1378, 21, 4837, 588, 7016, 14338, 14339, 5736, 5737, 5049, 14346, 14347, 558, 576, 2]
 
-// Module 15094 (SettingsScreenNotices)
-import nativeDefault from "native" /* 576 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5000 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5672 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5673 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 15095 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 15103 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 14337 (SettingsScreenNotices)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5736 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5737 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7016 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 14338 */;
+import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 14339 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14346 */;
+import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 14347 */;
+import react from "react" /* 19 */;
+import UserStore from "UserStore" /* 1378 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { noticeContainer: { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16 }, listHeaderNoticeContainer: null };
-const obj3 = { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16 };
-obj2.listHeaderNoticeContainer = { marginTop: nativeDefault.space.PX_16 };
-let closure_6 = createStyles.createStyles(obj2);
-const obj5 = { SENSITIVE_CONTENT_FILTERS: null, CONTENT_AND_SOCIAL: null, DATA_AND_PRIVACY: null };
-const obj4 = { marginTop: nativeDefault.space.PX_16 };
-let items = [{ order: 100, predicate: fn(7866).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, , , ];
-const obj6 = { order: 100, predicate: fn(7866).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
-items[1] = { order: 150, predicate: fn(15096).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(15096).ContentFiltersUnconfirmedNotice };
-const obj7 = { order: 150, predicate: fn(15096).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(15096).ContentFiltersUnconfirmedNotice };
-items[2] = {
-  order: 200,
-  predicate() {
-    let isFeatureAgeGatedResult = RegionalFeatureConfigUtils.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
-    if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !AgeVerificationUtils.isAgeVerified();
-      const tmpResult = AgeVerificationUtils;
-    }
-    return isFeatureAgeGatedResult;
-  },
-  Component: AgeConfirmationNoticeDefault
+let items;
+let items1;
+let items2;
+let obj2;
+let tmp;
+const AgeVerificationUtils = tmp(5049);
+function predicate() {
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
+  if (isFeatureAgeGatedResult) {
+    const tmpResult = AgeVerificationUtils;
+    isFeatureAgeGatedResult = !tmpResult.isAgeVerified();
+  }
+  return isFeatureAgeGatedResult;
+}
+const predicate2 = function predicate() {
+  const currentUser = UserStore.getCurrentUser();
+  let nsfwAllowed;
+  if (currentUser != null) {
+    nsfwAllowed = currentUser.nsfwAllowed;
+  }
+  return false === nsfwAllowed;
 };
-const obj8 = {
-  order: 200,
-  predicate() {
-    let isFeatureAgeGatedResult = RegionalFeatureConfigUtils.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
-    if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !AgeVerificationUtils.isAgeVerified();
-      const tmpResult = AgeVerificationUtils;
-    }
-    return isFeatureAgeGatedResult;
-  },
-  Component: AgeConfirmationNoticeDefault
+const predicate3 = function predicate() {
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
+  if (isFeatureAgeGatedResult) {
+    const tmpResult = AgeVerificationUtils;
+    isFeatureAgeGatedResult = !tmpResult.isAgeVerified();
+  }
+  return isFeatureAgeGatedResult;
 };
-items[3] = {
-  order: 300,
-  predicate() {
-    const currentUser = UserStore.getCurrentUser();
-    let nsfwAllowed;
-    if (currentUser != null) {
-      nsfwAllowed = currentUser.nsfwAllowed;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { noticeContainer: obj2, listHeaderNoticeContainer: { marginTop: nativeDefault.space.PX_16 } };
+createStyles = createStyles.createStyles;
+obj2 = { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16 };
+({ marginTop: nativeDefault.space.PX_16 });
+let closure_6 = createStyles(obj);
+const obj4 = { SENSITIVE_CONTENT_FILTERS: items, CONTENT_AND_SOCIAL: items1, DATA_AND_PRIVACY: items2 };
+items = [{ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, , , ];
+({ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault });
+items[1] = { order: 150, predicate: TinyBroncoSettingsNoticesLazy.shouldShowTinyBroncoUnconfirmedNotice, Component: TinyBroncoSettingsNoticesLazy.ContentFiltersUnconfirmedNotice };
+({ order: 150, predicate: TinyBroncoSettingsNoticesLazy.shouldShowTinyBroncoUnconfirmedNotice, Component: TinyBroncoSettingsNoticesLazy.ContentFiltersUnconfirmedNotice });
+items[2] = { order: 200, predicate, Component: AgeConfirmationNoticeDefault };
+({ order: 200, predicate, Component: AgeConfirmationNoticeDefault });
+items[3] = { order: 300, predicate: predicate2, Component: SensitiveContentFiltersNotices.SensitiveContentFiltersTeenNotice };
+({ order: 300, predicate: predicate2, Component: SensitiveContentFiltersNotices.SensitiveContentFiltersTeenNotice });
+items1 = [{ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, ];
+({ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault });
+items1[1] = { order: 200, predicate: predicate3, Component: AgeConfirmationNoticeDefault };
+({ order: 200, predicate: predicate3, Component: AgeConfirmationNoticeDefault });
+items2 = [{ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }];
+({ order: 100, predicate: FamilyCenterUtils.isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault });
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let arr;
+  let isListHeader;
+  let screen;
+  let tmp16;
+  const obj = react2;
+  const cResult = obj.c(11);
+  ({ screen, isListHeader } = arg0);
+  closure_6();
+  if (cResult[0] !== screen) {
+    let tmp4;
+    let tmp5;
+    let tmp7;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+      cResult[2] = C;
+      tmp4 = C;
+    } else {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
     }
-    return false === nsfwAllowed;
-  },
-  Component: fn(15104).SensitiveContentFiltersTeenNotice
-};
-obj5.SENSITIVE_CONTENT_FILTERS = items;
-const obj9 = {
-  order: 300,
-  predicate() {
-    const currentUser = UserStore.getCurrentUser();
-    let nsfwAllowed;
-    if (currentUser != null) {
-      nsfwAllowed = currentUser.nsfwAllowed;
+    const _Symbol2 = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+      cResult[3] = tmp6;
+      tmp5 = tmp6;
+    } else {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
     }
-    return false === nsfwAllowed;
-  },
-  Component: fn(15104).SensitiveContentFiltersTeenNotice
-};
-const items1 = [{ order: 100, predicate: fn(7866).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, ];
-const obj10 = { order: 100, predicate: fn(7866).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
-items1[1] = {
-  order: 200,
-  predicate() {
-    let isFeatureAgeGatedResult = RegionalFeatureConfigUtils.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
-    if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !AgeVerificationUtils.isAgeVerified();
-      const tmpResult = AgeVerificationUtils;
+    const _Symbol3 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+      cResult[4] = tmp8;
+      tmp7 = tmp8;
+    } else {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
     }
-    return isFeatureAgeGatedResult;
-  },
-  Component: AgeConfirmationNoticeDefault
-};
-obj5.CONTENT_AND_SOCIAL = items1;
-const obj11 = {
-  order: 200,
-  predicate() {
-    let isFeatureAgeGatedResult = RegionalFeatureConfigUtils.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
-    if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !AgeVerificationUtils.isAgeVerified();
-      const tmpResult = AgeVerificationUtils;
+    const arr2 = obj4[screen];
+    const found = arr2.filter(tmp4);
+    const sorted = found.sort(tmp5);
+    const mapped = sorted.map(tmp7);
+    cResult[0] = screen;
+    cResult[1] = mapped;
+    arr = mapped;
+  } else {
+    class C {
+      constructor(arg0) {
+        return arg0.predicate();
+      }
     }
-    return isFeatureAgeGatedResult;
-  },
-  Component: AgeConfirmationNoticeDefault
-};
-const items2 = [{ order: 100, predicate: fn(7866).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }];
-obj5.DATA_AND_PRIVACY = items2;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
-
-export default function SettingsScreenNotices(screen) {
+  }
+  if (0 !== arr.length) {
+    class C {
+      constructor(arg0) {
+        return arg0.predicate();
+      }
+    }
+  }
+  if (null == null) {
+    class C {
+      constructor(arg0) {
+        return arg0.predicate();
+      }
+    }
+  } else {
+    class C {
+      constructor(arg0) {
+        return arg0.predicate();
+      }
+    }
+    if (cResult[5] === null) {
+      class C {
+        constructor(arg0) {
+          return arg0.predicate();
+        }
+      }
+      if (cResult[8] === tmp12) {
+        class C {
+          constructor(arg0) {
+            return arg0.predicate();
+          }
+        }
+        return tmp16;
+      }
+      const tmp19 = <View style={tmp12}>{tmp13}</View>;
+      cResult[8] = tmp12;
+      cResult[9] = tmp13;
+      cResult[10] = tmp19;
+      tmp16 = tmp19;
+    }
+    cResult[5] = null;
+    cResult[6] = screen;
+    cResult[7] = jsx(null, {}, screen);
+    const tmp15 = jsx(null, {}, screen);
+  }
+}) : ((screen) => {
   screen = screen.screen;
   let flag = screen.isListHeader;
   if (flag === undefined) {
     flag = false;
   }
-  let obj = closure_6();
+  const tmp = closure_6();
   const items = [screen];
-  const memo = noop.useMemo(() => {
-    const found = obj5[screen].filter((predicate) => predicate.predicate());
+  const memo = react.useMemo(() => {
+    const arr = obj4[screen];
+    const found = arr.filter((predicate) => predicate.predicate());
     const sorted = found.sort((order, order2) => order.order - order2.order);
     const mapped = sorted.map((Component) => Component.Component);
     let first = null;
@@ -127,14 +214,14 @@ export default function SettingsScreenNotices(screen) {
     }
     return first;
   }, items);
-  if (null == memo) {
-    return null;
-  } else {
-    obj = { style: null, children: null };
-    obj.style = flag ? obj.listHeaderNoticeContainer : obj.noticeContainer;
-    obj.children = <memo key={screen} />;
-    <View style={null}>{null}</View>;
-    const tmp4 = flag ? obj.listHeaderNoticeContainer : obj.noticeContainer;
+  let tmp4Result = null;
+  if (null != memo) {
+    const obj = { style: flag ? tmp.listHeaderNoticeContainer : tmp.noticeContainer, children: <memo key={screen} /> };
+    tmp4Result = tmp4(View, obj);
   }
-};
+  return tmp4Result;
+});
+const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
+
+export default tmp3;
 export const SettingsScreen = { SENSITIVE_CONTENT_FILTERS: "SENSITIVE_CONTENT_FILTERS", CONTENT_AND_SOCIAL: "CONTENT_AND_SOCIAL", DATA_AND_PRIVACY: "DATA_AND_PRIVACY" };

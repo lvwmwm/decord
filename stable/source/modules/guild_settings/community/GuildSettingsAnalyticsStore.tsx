@@ -1,60 +1,64 @@
-// Module ID: 18121
-// Function ID: 18122
+// Module ID: 17487
+// Function ID: 17488
 // Name: GuildSettingsAnalyticsStore
-// Dependencies: [18122, 504, 573, 2]
+// Dependencies: [17488, 504, 585, 2]
 
-// Module 18121 (GuildSettingsAnalyticsStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import _modDef18122 from "module_18122" /* 18122 */;
+// Module 17487 (GuildSettingsAnalyticsStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import createCompounderDefault from "createCompounder" /* 17488 */;
+import size from "module_2" /* 2 */;
+
+let closure_3;
 
 function handleFetchSuccess(arg0) {
+  let guildId;
+  let stats;
   ({ guildId, stats } = arg0);
-  c4 = null;
+  let c4 = null;
   const obj = {};
   const obj2 = {};
   const first = stats[0];
-  dependencyMap = stats[1];
+  closure_3 = stats[1];
   if (null != first) {
+    let tmp2 = first;
     const item = first.forEach((item) => {
       if (null != first[item]) {
-        const tmp8 = _modDef18122(item);
-        let tmp2 = null != closure_3;
-        if (tmp2) {
-          tmp2 = 0 !== tmp9[item];
-        }
+        const tmp8 = createCompounderDefault(item);
+        const tmp2 = null != closure_3 && 0 !== tmp9[item];
         if (tmp2) {
           const _HermesInternal = HermesInternal;
-          obj["" + tmp8 + "Change"] = 100 * (tmp[item] - tmp9[item]) / tmp9[item];
+          obj["" + tmp8 + "Change"] = 100 * (first[item] - closure_3[item]) / closure_3[item];
         }
-        obj2[tmp8] = tmp[item];
+        obj2[tmp8] = first[item];
       }
     });
   }
+  const obj3 = {};
   const merged = Object.assign(obj2);
   const merged1 = Object.assign(obj);
-  const merged2 = Object.assign(dependencyMap[guildId]);
-  dependencyMap[guildId] = {};
+  const merged2 = Object.assign(closure_3[guildId]);
+  closure_3[guildId] = obj3;
 }
 function handleFetchFailure(error) {
   code = error.error.code;
 }
 let closure_2 = ["pct_retained", "new_members", "visitors", "communicators"];
-let dependencyMap = {};
+const _false = {};
 let code = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class GuildSettingsAnalyticsStore extends Store {
+  getOverviewAnalytics(arg0) {
+    return closure_3[arg0];
+  }
+  getError() {
+    return code;
+  }
 }
 const prototype = GuildSettingsAnalyticsStore.prototype;
-prototype["getOverviewAnalytics"] = function getOverviewAnalytics(arg0) {
-  return dependencyMap[arg0];
-};
-prototype["getError"] = function getError() {
-  return code;
-};
 GuildSettingsAnalyticsStore.displayName = "GuildSettingsAnalyticsStore";
-const guildSettingsAnalyticsStore = new GuildSettingsAnalyticsStore(DispatcherDefault, { GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: handleFetchSuccess, GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: handleFetchSuccess, GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: handleFetchSuccess, GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: handleFetchFailure, GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: handleFetchFailure, GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: handleFetchFailure });
-const size = fn(2);
+let obj = { GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: handleFetchSuccess, GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: handleFetchSuccess, GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: handleFetchSuccess, GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: handleFetchFailure, GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: handleFetchFailure, GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: handleFetchFailure };
+const guildSettingsAnalyticsStore = new GuildSettingsAnalyticsStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/guild_settings/community/GuildSettingsAnalyticsStore.tsx");
 
 export default guildSettingsAnalyticsStore;

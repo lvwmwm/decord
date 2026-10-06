@@ -1,23 +1,51 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 7504
+// Function ID: 7505
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: [7726, 8348, 504, 2]
-// Exports: useIsEligibleSenderForReferralProgram
+// Dependencies: [6876, 558, 576, 7505, 504, 2]
 
-// Module 8347 (useIsEligibleSenderForReferralProgram)
-import initialize from "initialize" /* 504 */;
-import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 8348 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7726 */;
+// Module 7504 (useIsEligibleSenderForReferralProgram)
+import get_initialized from "get initialized" /* 504 */;
+import react from "react" /* 576 */;
+import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 7505 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 6876 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useIsEligibleSenderForReferralProgram.tsx");
-
-export const useIsEligibleSenderForReferralProgram = function useIsEligibleSenderForReferralProgram(flag) {
-  if (flag === undefined) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let isEligibleToSendReferrals;
+  let tmp6;
+  let tmp7;
+  const obj = react;
+  const cResult = obj.c(2);
+  const tmp4 = undefined !== arg0 && arg0;
+  const tmpResult = useMaybeFetchReferralsRemaining;
+  const maybeFetchReferralsRemaining = tmpResult.useMaybeFetchReferralsRemaining(tmp4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ReferralTrialStore];
+    const fn = function l() {
+      return isEligibleToSendReferrals.getIsEligibleToSendReferrals();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult2 = get_initialized;
+  return tmpResult2.useStateFromStores(tmp6, tmp7);
+}) : (() => {
+  let isEligibleToSendReferrals;
+  let flag = arg0;
+  if (arg0 === undefined) {
     flag = false;
   }
-  const maybeFetchReferralsRemaining = useMaybeFetchReferralsRemaining.useMaybeFetchReferralsRemaining(flag);
+  const obj = useMaybeFetchReferralsRemaining;
+  const maybeFetchReferralsRemaining = obj.useMaybeFetchReferralsRemaining(flag);
   const items = [ReferralTrialStore];
-  return initialize.useStateFromStores(items, () => isEligibleToSendReferrals.getIsEligibleToSendReferrals());
-};
+  const obj2 = get_initialized;
+  return obj2.useStateFromStores(items, () => isEligibleToSendReferrals.getIsEligibleToSendReferrals());
+});
+const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useIsEligibleSenderForReferralProgram.tsx");
+
+export const useIsEligibleSenderForReferralProgram = tmp2;

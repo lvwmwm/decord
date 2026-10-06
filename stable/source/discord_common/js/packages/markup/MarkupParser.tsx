@@ -1,23 +1,25 @@
-// Module ID: 8277
-// Function ID: 8278
+// Module ID: 7433
+// Function ID: 7434
 // Name: MarkupParser
-// Dependencies: [8278, 2, 8279, 8280]
+// Dependencies: [7434, 2, 7435, 7436]
 
-// Module 8277 (MarkupParser)
-import markup_MarkupParser from "markup/MarkupParser" /* 8278 */;
+// Module 7433 (MarkupParser)
+import markup_MarkupParser from "markup/MarkupParser" /* 7434 */;
+import MarkupASTUtils from "MarkupASTUtils" /* 7435 */;
+import MarkupParserTypes from "MarkupParserTypes" /* 7436 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
+const reactParserFor = markup_MarkupParser.default.reactParserFor;
+const astParserFor = markup_MarkupParser.default.astParserFor;
 const result = size.fileFinishedImporting("../discord_common/js/packages/markup/MarkupParser.tsx");
-for (const key10026 in require("MarkupASTUtils")) {
-  arg5[key10026] = require("MarkupASTUtils")[key10026];
+for (const key10026 in MarkupASTUtils) {
+  exports[key10026] = MarkupASTUtils[key10026];
   continue;
 }
-for (const key10030 in require("MarkupParserTypes")) {
-  arg5[key10030] = require("MarkupParserTypes")[key10030];
+for (const key10030 in MarkupParserTypes) {
+  exports[key10030] = MarkupParserTypes[key10030];
   continue;
 }
 
-export const reactParserFor = markup_MarkupParser.default.reactParserFor;
-export const astParserFor = markup_MarkupParser.default.astParserFor;
+export { reactParserFor };
+export { astParserFor };

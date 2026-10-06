@@ -1,9 +1,17 @@
 // Module ID: 13846
 // Function ID: 13847
-// Dependencies: [1121]
+// Dependencies: [13793, 13844, 13827]
 
 // Module 13846
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13793 from "module_13793" /* 13793 */;
+import _mod13827 from "module_13827" /* 13827 */;
+import defineProperty2 from "defineProperty2" /* 13844 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 200, height: 90, scales: [1], hash: "d354a91b7a8b3b1cf9e4de447250911f", name: "yearly_upsell_wumpus", type: "png" });
+export default _mod13793 ? ((arg0, arg1, arg2) => {
+  const obj = defineProperty2;
+  return obj.f(arg0, arg1, _mod13827(1, arg2));
+}) : ((arg0, arg1, arg2) => {
+  arg0[arg1] = arg2;
+  return arg0;
+});

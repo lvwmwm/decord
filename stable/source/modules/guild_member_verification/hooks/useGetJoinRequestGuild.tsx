@@ -1,38 +1,123 @@
-// Module ID: 10077
-// Function ID: 10078
+// Module ID: 9203
+// Function ID: 9204
 // Name: useGetJoinRequestGuild
-// Dependencies: [19, 4610, 504, 5790, 2]
-// Exports: default
+// Dependencies: [19, 4658, 558, 576, 504, 5854, 2]
 
-// Module 10077 (useGetJoinRequestGuild)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5790 */;
-import noop from "module_19" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4610 */;
+// Module 9203 (useGetJoinRequestGuild)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5854 */;
+import react from "react" /* 19 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4658 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestGuild.tsx");
-
-export default function useGetGuildJoinRequest(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp12;
+  let tmp13;
+  let tmp6;
+  let tmp8;
+  let tmp9;
   _require = arg0;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserGuildJoinRequestStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      let request = null;
+      if (null != closure_0) {
+        request = UserGuildJoinRequestStore.getRequest(tmp);
+      }
+      return request;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserGuildJoinRequestStore];
+    const fn2 = function f() {
+      return UserGuildJoinRequestStore.hasFetchedRequestToJoinGuilds;
+    };
+    cResult[3] = items1;
+    cResult[4] = fn2;
+    tmp9 = fn2;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
+  if (cResult[5] !== stateFromStores1) {
+    class S {
+      constructor() {
+        const tmp = stateFromStores1;
+        if (!tmp) {
+          const obj = GuildJoinRequestActionCreatorsDefault;
+          const requestToJoinGuilds = obj.fetchRequestToJoinGuilds();
+        }
+      }
+    }
+    const items2 = [stateFromStores1];
+    cResult[5] = stateFromStores1;
+    cResult[6] = S;
+    cResult[7] = items2;
+    tmp13 = items2;
+    tmp12 = S;
+  } else {
+    class S {
+      constructor() {
+        const tmp = stateFromStores1;
+        if (!tmp) {
+          const obj = GuildJoinRequestActionCreatorsDefault;
+          const requestToJoinGuilds = obj.fetchRequestToJoinGuilds();
+        }
+      }
+    }
+    tmp13 = cResult[7];
+  }
+  const effect = react.useEffect(tmp12, tmp13);
+  return stateFromStores;
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
   const items = [UserGuildJoinRequestStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let request = null;
     if (null != closure_0) {
       request = UserGuildJoinRequestStore.getRequest(tmp);
     }
     return request;
   });
-  let obj = require("initialize");
   const items1 = [UserGuildJoinRequestStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => UserGuildJoinRequestStore.hasFetchedRequestToJoinGuilds);
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => UserGuildJoinRequestStore.hasFetchedRequestToJoinGuilds);
   const items2 = [stateFromStores1];
-  const effect = noop.useEffect(() => {
-    if (!stateFromStores1) {
-      const requestToJoinGuilds = GuildJoinRequestActionCreatorsDefault.fetchRequestToJoinGuilds();
+  const effect = react.useEffect(() => {
+    const tmp = stateFromStores1;
+    if (!tmp) {
+      const obj = GuildJoinRequestActionCreatorsDefault;
+      const requestToJoinGuilds = obj.fetchRequestToJoinGuilds();
     }
   }, items2);
   return stateFromStores;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestGuild.tsx");
+
+export default tmp2;

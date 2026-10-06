@@ -1,10 +1,10 @@
-// Module ID: 2021
-// Function ID: 2022
+// Module ID: 2029
+// Function ID: 2030
 // Name: DMSafetyConstants
-// Dependencies: [1186, 2]
+// Dependencies: [1198, 2]
 
-// Module 2021 (DMSafetyConstants)
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+// Module 2029 (DMSafetyConstants)
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
 import size from "module_2" /* 2 */;
 
 const obj = { DISABLED: 0, [0]: "DISABLED", NON_FRIENDS: 1, [1]: "NON_FRIENDS", FRIENDS_AND_NON_FRIENDS: 2, [2]: "FRIENDS_AND_NON_FRIENDS" };
@@ -14,9 +14,10 @@ const items2 = [obj.NON_FRIENDS, preloaded_user_settings.DmSpamFilterV2.NON_FRIE
 items1[1] = items2;
 const items3 = [obj.FRIENDS_AND_NON_FRIENDS, preloaded_user_settings.DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS];
 items1[2] = items3;
+const map = new Map(items1);
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/DMSafetyConstants.tsx");
 
 export const DMSafetyCoachmarkActions = { VIEW: 0, [0]: "VIEW", DISMISS: 1, [1]: "DISMISS", CHANGE_SETTING: 2, [2]: "CHANGE_SETTING" };
 export const DmSpamFilterTypes = { DISABLED: 0, [0]: "DISABLED", NON_FRIENDS: 1, [1]: "NON_FRIENDS", FRIENDS_AND_NON_FRIENDS: 2, [2]: "FRIENDS_AND_NON_FRIENDS" };
 export const ExplicitContentFilterTypes = obj;
-export const ExplicitContentFilterToDmSpamFilterV2 = new Map(items1);
+export const ExplicitContentFilterToDmSpamFilterV2 = map;

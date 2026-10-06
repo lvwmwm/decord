@@ -1,31 +1,37 @@
-// Module ID: 11645
-// Function ID: 11646
+// Module ID: 9546
+// Function ID: 9547
 // Name: useSafeAreaInsetsSharedValue
-// Dependencies: [4524, 1612, 9766, 11646, 1625, 1481, 2]
-// Exports: default
+// Dependencies: [4570, 1619, 8921, 9547, 1632, 558, 1488, 2]
 
-// Module 11645 (useSafeAreaInsetsSharedValue)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
-import AppEntryKey from "AppEntryKey" /* 1625 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9766 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11646 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4524 */;
-import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1612 */;
+// Module 9546 (useSafeAreaInsetsSharedValue)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1488 */;
+import AppEntryKey from "AppEntryKey" /* 1632 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 8921 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9547 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4570 */;
+import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1619 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let obj = { main: null, share: null };
+let makeMutable;
+let makeMutable2;
+let obj2;
+let obj3;
+let obj = { main: makeMutable(obj2), share: makeMutable2(obj3) };
 let ReanimatedRexport = ReanimatedRexport_mod;
+makeMutable = ReanimatedRexport.makeMutable;
+obj2 = {};
 let useSafeAreaInsets = useSafeAreaInsets_mod;
 const merged = Object.assign(useSafeAreaInsets.getSafeAreaInsets("main"));
-obj.main = ReanimatedRexport.makeMutable({});
-let ReanimatedRexport = ReanimatedRexport_mod;
-let useSafeAreaInsets = useSafeAreaInsets_mod;
+ReanimatedRexport = ReanimatedRexport_mod;
+makeMutable2 = ReanimatedRexport.makeMutable;
+obj3 = {};
+useSafeAreaInsets = useSafeAreaInsets_mod;
 const merged1 = Object.assign(useSafeAreaInsets.getSafeAreaInsets("share"));
-obj.share = ReanimatedRexport.makeMutable({});
 function _loop(iter) {
-  closure_0 = iter;
+  let closure_0 = iter;
   subscribeToSafeAreaInsetsDefault((arg0) => {
-    updateSharedValueIfChangedDefault(obj[closure_0], arg0);
+    updateSharedValueIfChangedDefault(obj[iter], arg0);
   }, iter);
 }
 const iter = AppEntryKey.APP_ENTRY_KEYS[Symbol.iterator]();
@@ -34,19 +40,15 @@ while (iter !== undefined) {
   continue;
 }
 const __initData = { code: "function getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1(appEntryKey='main'){const{safeAreaInsetsSharedValues}=this.__closure;return safeAreaInsetsSharedValues[appEntryKey].get();}" };
-const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
-
-export default function useSafeAreaInsetsSharedValue() {
-  obj = AppEntryKeyContext;
-  return obj[obj.useAppEntryKey(obj)];
-};
-export const getSafeAreaInsetsWorklet = (() => {
+const tmp7 = (() => {
+  let __closure;
   function getSafeAreaInsetsWorklet() {
     let str = arg0;
     if (arg0 === undefined) {
       str = "main";
     }
-    return obj[str].get();
+    obj = closure_1_3[str];
+    return obj.get();
   }
   __closure = { safeAreaInsetsSharedValues: __closure };
   getSafeAreaInsetsWorklet.__closure = __closure;
@@ -54,3 +56,13 @@ export const getSafeAreaInsetsWorklet = (() => {
   getSafeAreaInsetsWorklet.__initData = __initData;
   return getSafeAreaInsetsWorklet;
 })();
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  obj = AppEntryKeyContext;
+  return obj[obj.useAppEntryKey(obj)];
+}) : (() => {
+  obj = AppEntryKeyContext;
+  return obj[obj.useAppEntryKey(obj)];
+});
+const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
+
+export default tmp8;

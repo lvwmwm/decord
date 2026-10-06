@@ -1,238 +1,372 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 11181
+// Function ID: 11182
 // Name: GuildIncidentActionsActionSheet
-// Dependencies: [19, 10376, 12113, 8306, 1074, 21, 4788, 7474, 7426, 1115, 7476, 563, 8305, 4755, 1177, 5854, 5936, 7477, 9745, 8898, 5682, 5218, 12114, 1241, 12115, 2]
+// Dependencies: [19, 10906, 11182, 7463, 1086, 21, 4837, 558, 576, 6624, 6571, 1127, 6620, 573, 7462, 4801, 1189, 5916, 5997, 6621, 8899, 8052, 5746, 5282, 11183, 1253, 11185, 2]
 
-// Module 12112 (GuildIncidentActionsActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4755 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8305 */;
-import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 12114 */;
-import noop from "module_19" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10376 */;
+// Module 11181 (GuildIncidentActionsActionSheet)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4801 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7462 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7463 */;
+import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11183 */;
+import react from "react" /* 19 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10906 */;
+import GuildIncidentsActionSheetStore from "GuildIncidentsActionSheetStore" /* 11182 */;
+import Constants from "Constants" /* 1086 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
+let onClose;
 
-const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(12115);
-require = fn;
-function DurationSelectionActionSheet(onClose) {
-  onClose = onClose.onClose;
-  const obj = { children: null };
-  const obj2 = { title: null };
-  const intl = onClose(1115).intl;
-  obj2.title = intl.string(onClose(1115).t.vKYZzc);
-  const items = [closure_14(onClose(7426).BottomSheetTitleHeader, obj2), ];
-  const arr = getTimeframes();
-  items[1] = closure_14(onClose(7476).ActionSheetRow.Group, {
-    hasIcons: false,
-    children: getTimeframes().map((label) => closure_1_14(onClose(dependencyMap[10]).ActionSheetRow, {
-      label: label.label,
-      onPress() {
-        React7(label.value);
-        onClose();
-      }
-    }, label.value))
-  });
-  obj.children = items;
-  return closure_15(onClose(7474).ActionSheet, obj);
-}
-const GuildIncidentsActionSheetStore = fn(12113);
-({ resetGuildIncidentsActionSheetStore: hasOwnProperty, setInitialTime: metroRequire, setPauseDms: closure_7, setPauseInvites: closure_8, setTime: closure_9, useGuildIncidentsActionSheetStore: c10 } = GuildIncidentsActionSheetStore);
-const getTimeframes = fn(8306).getTimeframes;
-const Constants = fn(1074);
+let c10;
+let c9;
+let closure_12;
+let closure_14;
+let closure_15;
+let hasOwnProperty;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let tmp7;
+const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(11185);
+({ resetGuildIncidentsActionSheetStore: hasOwnProperty, setInitialTime: metroRequire, setPauseDms: metroImportDefault, setPauseInvites: metroImportAll, setTime: c9, useGuildIncidentsActionSheetStore: c10 } = GuildIncidentsActionSheetStore);
+const getTimeframes = GuildAntiRaidConstants.getTimeframes;
 ({ AnalyticEvents: closure_12, GuildFeatures: map1 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4788);
-const value = createStyles.createStyles({ beta: { marginLeft: -12 } });
-class GuildIncidentActionsActionSheet {
-  constructor(arg0) {
-    guild = global.guild;
-    analyticsData = global.analyticsData;
-    time = undefined;
-    pauseInvites = undefined;
-    pauseDms = undefined;
-    closure_5 = undefined;
-    closure_6 = undefined;
-    closure_7 = undefined;
-    onDurationSelectorClose = function onDurationSelectorClose() {
-      const obj2 = { content: closure_2_14(GuildIncidentActionsActionSheet, { guild, analyticsData }), key: "GuildIncidentActionsActionSheet" };
-      ActionSheetActionCreators.showActionSheet(obj2);
-    };
-    tmp = closure_16();
-    tmp2 = closure_10();
-    time = tmp2.time;
-    pauseInvites = tmp2.pauseInvites;
-    pauseDms = tmp2.pauseDms;
-    tmp3 = guild;
-    tmp4 = time;
-    obj = guild(time[11]);
-    items = [];
-    items[0] = pauseDms;
-    stateFromStores = obj.useStateFromStores(items, () => GuildIncidentsStore.getGuildIncident(guild.id));
-    obj2 = guild(time[12]);
-    hasInvitesDisabledResult = obj2.hasInvitesDisabled(stateFromStores);
-    closure_5 = hasInvitesDisabledResult;
-    obj3 = guild(time[12]);
-    hasDMsDisabledResult = obj3.hasDMsDisabled(stateFromStores);
-    closure_6 = hasDMsDisabledResult;
-    obj4 = guild(time[12]);
-    result = obj4.initialLockdownDurationHours(stateFromStores);
-    closure_7 = result;
-    hasItem = undefined;
-    if (guild != null) {
-      features = guild.features;
-      tmp10 = GuildFeatures;
-      hasItem = features.has(GuildFeatures.INVITES_DISABLED);
+({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+const authStore3 = createStyles.createStyles({ beta: { marginLeft: -12 } });
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+  let flag;
+  let intl;
+  let items;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let obj = onClose(576);
+  const cResult = obj.c(15);
+  onClose = onClose.onClose;
+  if (cResult[0] !== onClose) {
+    let tmp10;
+    const arr = getTimeframes();
+    const ActionSheet = tmp(6624).ActionSheet;
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { title: intl.string(onClose(1127).t.vKYZzc) };
+      const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+      intl = tmp(1127).intl;
+      const tmp12 = closure_14(BottomSheetTitleHeader, obj2);
+      cResult[6] = tmp12;
+      tmp10 = tmp12;
+    } else {
+      tmp10 = cResult[6];
     }
-    items1 = [, ];
-    items1[0] = hasDMsDisabledResult;
-    items1[1] = hasInvitesDisabledResult;
-    effect = pauseInvites.useEffect(() => {
-      React6(c5);
-      React5(c6);
+    const Group = tmp(6620).ActionSheetRow.Group;
+    const mapped = arr.map((label) => {
+      const obj = {
+        label: label.label,
+        onPress() {
+          React4(label.value);
+          onClose();
+        }
+      };
+      return closure_1_14(onClose(dependencyMap[12]).ActionSheetRow, obj, label.value);
+    });
+    cResult[0] = onClose;
+    cResult[1] = Group;
+    cResult[2] = ActionSheet;
+    cResult[3] = false;
+    cResult[4] = mapped;
+    cResult[5] = tmp10;
+    tmp7 = tmp10;
+    tmp6 = mapped;
+    flag = false;
+    tmp5 = ActionSheet;
+    tmp4 = Group;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    flag = cResult[3];
+    tmp6 = cResult[4];
+    tmp7 = cResult[5];
+  }
+  if (cResult[7] === tmp4) {
+    if (cResult[8] === flag) {
+      let tmp14;
+      if (cResult[9] === tmp6) {
+        tmp14 = cResult[10];
+      }
+      if (cResult[11] === tmp5) {
+        if (cResult[12] === tmp7) {
+          let tmp16;
+          if (cResult[13] === tmp14) {
+            tmp16 = cResult[14];
+          }
+          return tmp16;
+        }
+      }
+      const obj3 = { children: items };
+      items = [tmp7, tmp14];
+      const tmp18 = closure_15(tmp5, obj3);
+      cResult[11] = tmp5;
+      cResult[12] = tmp7;
+      cResult[13] = tmp14;
+      cResult[14] = tmp18;
+      tmp16 = tmp18;
+    }
+  }
+  const tmp15 = closure_14(tmp4, { hasIcons: flag, children: tmp6 });
+  cResult[7] = tmp4;
+  cResult[8] = flag;
+  cResult[9] = tmp6;
+  cResult[10] = tmp15;
+  tmp14 = tmp15;
+}) : ((onClose) => {
+  let intl;
+  let items;
+  onClose = onClose.onClose;
+  let obj = { children: items };
+  const arr = getTimeframes();
+  const ActionSheet = onClose(6624).ActionSheet;
+  const obj2 = { title: intl.string(onClose(1127).t.vKYZzc) };
+  const BottomSheetTitleHeader = onClose(6571).BottomSheetTitleHeader;
+  intl = onClose(1127).intl;
+  items = [closure_14(BottomSheetTitleHeader, obj2), ];
+  const obj3 = {
+    hasIcons: false,
+    children: arr.map((label) => {
+      const obj = {
+        label: label.label,
+        onPress() {
+          React4(label.value);
+          onClose();
+        }
+      };
+      return closure_1_14(onClose(dependencyMap[12]).ActionSheetRow, obj, label.value);
+    })
+  };
+  const Group = onClose(6620).ActionSheetRow.Group;
+  items[1] = closure_14(Group, obj3);
+  return closure_15(ActionSheet, obj);
+});
+class GuildIncidentActionsActionSheet {
+  constructor(guild) {
+    let BetaTag;
+    let BottomSheetTitleHeader;
+    let Icon;
+    let _undefined;
+    let intl;
+    let intl10;
+    let intl2;
+    let intl3;
+    let intl4;
+    let intl5;
+    let intl6;
+    let intl7;
+    let intl8;
+    let intl9;
+    let items4;
+    let items6;
+    let obj11;
+    let obj6;
+    let obj7;
+    let tmp17;
+    guild = guild.guild;
+    const analyticsData = guild.analyticsData;
+    function onDurationSelectorClose() {
+      let obj2;
+      const obj = { content: authStore2(GuildIncidentActionsActionSheet, obj2), key: "GuildIncidentActionsActionSheet" };
+      const showActionSheet = ActionSheetActionCreators.showActionSheet;
+      obj2 = { guild, analyticsData };
+      ActionSheetActionCreators;
+      showActionSheet(obj);
+    }
+    const tmp = closure_16();
+    const tmp2 = state();
+    const time = tmp2.time;
+    const pauseInvites = tmp2.pauseInvites;
+    const pauseDms = tmp2.pauseDms;
+    let tmp3 = guild;
+    let tmp4 = time;
+    const hasTimeChanges = tmp2.hasTimeChanges;
+    let obj = guild(time[13]);
+    const items = [pauseDms];
+    const stateFromStores = obj.useStateFromStores(items, () => GuildIncidentsStore.getGuildIncident(guild.id));
+    let obj2 = guild(time[14]);
+    const hasInvitesDisabledResult = obj2.hasInvitesDisabled(stateFromStores);
+    let c5 = hasInvitesDisabledResult;
+    let obj3 = guild(time[14]);
+    const hasDMsDisabledResult = obj3.hasDMsDisabled(stateFromStores);
+    let c6 = hasDMsDisabledResult;
+    let obj4 = guild(time[14]);
+    let result = obj4.initialLockdownDurationHours(stateFromStores);
+    let c7 = result;
+    let hasItem;
+    if (guild != null) {
+      const features = guild.features;
+      hasItem = features.has(constants2.INVITES_DISABLED);
+    }
+    const items1 = [hasDMsDisabledResult, hasInvitesDisabledResult];
+    const effect = pauseInvites.useEffect(() => {
+      metroImportAll(c5);
+      metroImportDefault(c6);
     }, items1);
-    items2 = [];
-    items2[0] = result;
-    effect1 = pauseInvites.useEffect(() => {
+    const items2 = [result];
+    const effect1 = pauseInvites.useEffect(() => {
       if (!state.getState().hasTimeChanges) {
-        timestampProducer(c7);
+        metroRequire(c7);
       }
     }, items2);
-    items3 = [];
-    items3[0] = time;
-    memo = pauseInvites.useMemo(() => {
-      const found = getTimeframes().find((value) => value.value === time);
+    const items3 = [time];
+    const memo = pauseInvites.useMemo(() => {
+      const arr = getTimeframes();
+      const found = arr.find((value) => value.value === time);
       let label;
       if (found != null) {
         label = found.label;
       }
       return label;
     }, items3);
-    tmp14 = jsxs;
-    obj1 = { startExpanded: true, header: null, children: null };
-    tmp15 = jsx;
-    obj16 = { title: null, leading: null };
-    intl = tmp3(tmp4[9]).intl;
-    obj16.title = intl.string(tmp3(tmp4[9]).t.oCYAc7);
-    obj17 = { size: tmp3(tmp4[14]).BetaSizes.SMALL, style: tmp.beta };
-    obj16.leading = jsx(tmp3(tmp4[14]).BetaTag, obj17);
-    obj1.header = jsx(tmp3(tmp4[8]).BottomSheetTitleHeader, obj16);
-    str = memo;
+    let obj5 = { startExpanded: true, header: closure_14(BottomSheetTitleHeader, obj6), children: items4 };
+    const ActionSheet = tmp3(tmp4[9]).ActionSheet;
+    obj6 = { title: intl.string(tmp3(tmp4[11]).t.oCYAc7), leading: closure_14(BetaTag, obj7) };
+    BottomSheetTitleHeader = tmp3(tmp4[10]).BottomSheetTitleHeader;
+    intl = tmp3(tmp4[11]).intl;
+    obj7 = { size: tmp3(tmp4[16]).BetaSizes.SMALL, style: tmp.beta };
+    BetaTag = tmp3(tmp4[16]).BetaTag;
+    const TableRow = tmp3(tmp4[17]).TableRow;
+    let str = memo;
+    const TrailingText = tmp3(tmp4[17]).TableRow.TrailingText;
     if (memo == null) {
       str = "";
     }
-    obj18 = { trailing: tmp15(tmp3(tmp4[15]).TableRow.TrailingText, { text: str }), label: null, arrow: true, onPress: null, start: true, end: true, accessibilityLabel: null, accessibilityHint: null };
-    intl2 = tmp3(tmp4[9]).intl;
-    obj18.label = intl2.string(tmp3(tmp4[9]).t.vKYZzc);
-    obj18.onPress = function onPress() {
-      const obj2 = { content: closure_2_14(DurationSelectionActionSheet, { onClose: onDurationSelectorClose }), key: "DurationSelectionActionSheet" };
-      ActionSheetActionCreators.showActionSheet(obj2);
+    const obj8 = {
+      trailing: closure_14(TrailingText, { text: str }),
+      label: intl2.string(tmp3(tmp4[11]).t.vKYZzc),
+      arrow: true,
+      onPress() {
+        let obj2;
+        const obj = { content: authStore2(closure_17, obj2), key: "DurationSelectionActionSheet" };
+        const showActionSheet = ActionSheetActionCreators.showActionSheet;
+        obj2 = { onClose: onDurationSelectorClose };
+        ActionSheetActionCreators;
+        showActionSheet(obj);
+      },
+      start: true,
+      end: true,
+      accessibilityLabel: intl3.string(tmp3(tmp4[11]).t.vKYZzc),
+      accessibilityHint: memo
     };
-    intl3 = tmp3(tmp4[9]).intl;
-    obj18.accessibilityLabel = intl3.string(tmp3(tmp4[9]).t.vKYZzc);
-    obj18.accessibilityHint = memo;
-    items4 = [, , , ];
-    items4[0] = tmp15(tmp3(tmp4[15]).TableRow, obj18);
-    obj19 = { label: null, subLabel: null, value: null, onValueChange: null, disabled: null };
-    intl4 = tmp3(tmp4[9]).intl;
-    obj19.label = intl4.string(tmp3(tmp4[9]).t.Uwsjn6);
-    intl5 = tmp3(tmp4[9]).intl;
-    obj19.subLabel = intl5.string(tmp3(tmp4[9]).t.qPJkZh);
-    tmp16 = pauseInvites;
-    if (!pauseInvites) {
-      tmp16 = hasItem;
-    }
-    obj19.value = tmp16;
-    obj19.onValueChange = function onValueChange() {
-      React6(!pauseInvites);
+    intl2 = tmp3(tmp4[11]).intl;
+    intl3 = tmp3(tmp4[11]).intl;
+    items4 = [tmp15(TableRow, obj8), , , ];
+    const TableRowGroup = tmp3(tmp4[18]).TableRowGroup;
+    const obj9 = {
+      label: intl4.string(tmp3(tmp4[11]).t.Uwsjn6),
+      subLabel: intl5.string(tmp3(tmp4[11]).t.qPJkZh),
+      value: pauseInvites || hasItem,
+      onValueChange() {
+        metroImportAll(!pauseInvites);
+      },
+      disabled: hasItem
     };
-    obj19.disabled = hasItem;
-    items5 = [, ];
-    items5[0] = tmp15(tmp3(tmp4[17]).TableSwitchRow, obj19);
+    const TableSwitchRow = tmp3(tmp4[19]).TableSwitchRow;
+    intl4 = tmp3(tmp4[11]).intl;
+    intl5 = tmp3(tmp4[11]).intl;
+    const items5 = [tmp15(TableSwitchRow, obj9), ];
     if (hasItem) {
-      obj20 = { icon: null, label: null };
-      obj21 = { source: null, IconComponent: null, variant: "secondary" };
-      tmp17 = analyticsData;
-      obj21.source = analyticsData(tmp4[18]);
-      obj21.IconComponent = tmp3(tmp4[19]).WarningIcon;
-      obj20.icon = tmp15(tmp3(tmp4[15]).TableRow.Icon, obj21);
-      intl6 = tmp3(tmp4[9]).intl;
-      obj20.label = intl6.string(tmp3(tmp4[9]).t["9GPbsV"]);
-      hasItem = tmp15(tmp3(tmp4[15]).TableRow, obj20);
+      const obj10 = { icon: closure_14(Icon, obj11), label: intl6.string(tmp3(tmp4[11]).t["9GPbsV"]) };
+      const TableRow2 = tmp3(tmp4[17]).TableRow;
+      obj11 = { source: analyticsData(tmp4[20]), IconComponent: tmp3(tmp4[21]).WarningIcon, variant: "secondary" };
+      Icon = tmp3(tmp4[17]).TableRow.Icon;
+      intl6 = tmp3(tmp4[11]).intl;
+      hasItem = tmp15(TableRow2, obj10);
     }
     items5[1] = hasItem;
-    items4[1] = tmp14(tmp3(tmp4[16]).TableRowGroup, { hasIcons: true, children: items5 });
-    obj22 = { label: null, subLabel: null, value: null, onValueChange: null, start: true, end: true };
-    intl7 = tmp3(tmp4[9]).intl;
-    obj22.label = intl7.string(tmp3(tmp4[9]).t["wrDmA/"]);
-    intl8 = tmp3(tmp4[9]).intl;
-    obj22.subLabel = intl8.string(tmp3(tmp4[9]).t.UQbJW7);
-    obj22.value = pauseDms;
-    obj22.onValueChange = function onValueChange() {
-      React5(!pauseDms);
+    items4[1] = closure_15(TableRowGroup, { hasIcons: true, children: items5 });
+    const obj12 = {
+      label: intl7.string(tmp3(tmp4[11]).t["wrDmA/"]),
+      subLabel: intl8.string(tmp3(tmp4[11]).t.UQbJW7),
+      value: pauseDms,
+      onValueChange() {
+        metroImportDefault(!pauseDms);
+      },
+      start: true,
+      end: true
     };
-    items4[2] = tmp15(tmp3(tmp4[17]).TableSwitchRow, obj22);
-    obj23 = {
+    const TableSwitchRow2 = tmp3(tmp4[19]).TableSwitchRow;
+    intl7 = tmp3(tmp4[11]).intl;
+    intl8 = tmp3(tmp4[11]).intl;
+    items4[2] = closure_14(TableSwitchRow2, obj12);
+    const ButtonGroup = tmp3(tmp4[22]).ButtonGroup;
+    const obj13 = {
       onPress() {
-            const result = GuildAntiRaidActionCreators.setGuildIncidentActions(guild.id, pauseInvites, pauseDms, time);
-            const tmp3 = guild;
-            const tmp4 = pauseInvites;
-            const tmp5 = pauseDms;
-            ActionSheetActionCreatorsDefault.hideActionSheet("GuildIncidentActionsActionSheet");
-            hasOwnProperty();
-            ({ source, alertType, messageId } = analyticsData);
-            const obj4 = { guild_id: guild.id, source, raid_alert_id: messageId, raid_alert_type: alertType, intervention_type_enabled: null, intervention_type_disabled: null, duration: null };
-            const obj3 = AnalyticsUtilsDefault;
-            obj4.intervention_type_enabled = GuildAntiRaidUtils.getEnabledInterventions(pauseInvites, pauseDms);
-            obj4.intervention_type_disabled = GuildAntiRaidUtils.getDisabledInterventions(pauseInvites, pauseDms);
-            obj4.duration = 60 * time;
-            obj3.track(constants.GUILD_RAID_INTERVENTION_STATE_CHANGE, obj4);
-            let tmp11 = !c5;
-            if (!c5) {
-              tmp11 = !c6;
-            }
-            if (!tmp11) {
-              tmp11 = tmp4;
-            }
-            if (!tmp11) {
-              tmp11 = tmp5;
-            }
-            if (!tmp11) {
-              const obj7 = { content: null, key: "GuildRaidLockdownFeedbackActionSheet" };
-              const obj8 = { guildId: tmp3.id };
-              obj7.content = closure_2_14(GuildRaidLockdownFeedbackActionSheetDefault, obj8);
-              ActionSheetActionCreators.showActionSheet(obj7);
-              const tmpResult = ActionSheetActionCreators;
-            }
-          },
-      text: null,
+        let alertType;
+        let messageId;
+        let obj4;
+        let obj5;
+        let obj7;
+        let source;
+        const obj = GuildAntiRaidActionCreators;
+        const result = obj.setGuildIncidentActions(guild.id, pauseInvites, pauseDms, time);
+        const obj2 = ActionSheetActionCreatorsDefault;
+        obj2.hideActionSheet("GuildIncidentActionsActionSheet");
+        hasOwnProperty();
+        ({ source, alertType, messageId } = analyticsData);
+        const obj3 = { guild_id: guild.id, source, raid_alert_id: messageId, raid_alert_type: alertType, intervention_type_enabled: obj4.getEnabledInterventions(pauseInvites, pauseDms), intervention_type_disabled: obj5.getDisabledInterventions(pauseInvites, pauseDms), duration: 60 * time };
+        const track = AnalyticsUtilsDefault.track;
+        const GUILD_RAID_INTERVENTION_STATE_CHANGE = constants.GUILD_RAID_INTERVENTION_STATE_CHANGE;
+        AnalyticsUtilsDefault;
+        obj4 = GuildAntiRaidUtils;
+        obj5 = GuildAntiRaidUtils;
+        track(GUILD_RAID_INTERVENTION_STATE_CHANGE, obj3);
+        let tmp12 = !c5;
+        const tmp3 = guild;
+        const tmp4 = pauseInvites;
+        const tmp5 = pauseDms;
+        if (tmp12) {
+          tmp12 = !c6;
+        }
+        if (!tmp12) {
+          tmp12 = tmp4;
+        }
+        if (!tmp12) {
+          tmp12 = tmp5;
+        }
+        if (!tmp12) {
+          const obj6 = { content: authStore2(GuildRaidLockdownFeedbackActionSheetDefault, obj7), key: "GuildRaidLockdownFeedbackActionSheet" };
+          const showActionSheet = tmp(4801).showActionSheet;
+          obj7 = { guildId: tmp3.id };
+          ActionSheetActionCreators;
+          showActionSheet(obj6);
+        }
+      },
+      text: intl9.string(tmp3(tmp4[11]).t["R3BPH+"]),
       variant: "primary",
       size: "md",
-      disabled: null
+      disabled: !tmp17
     };
-    intl9 = tmp3(tmp4[9]).intl;
-    obj23.text = intl9.string(tmp3(tmp4[9]).t["R3BPH+"]);
-    tmp18 = pauseInvites !== hasInvitesDisabledResult || pauseDms !== hasDMsDisabledResult || tmp2.hasTimeChanges;
-    obj24 = { children: null };
-    obj23.disabled = !tmp18;
-    handleClose = function handleClose() {
-      analyticsData(time[13]).hideActionSheet("GuildIncidentActionsActionSheet");
+    const Button = tmp3(tmp4[23]).Button;
+    intl9 = tmp3(tmp4[11]).intl;
+    function handleClose() {
+      const obj = analyticsData(time[15]);
+      obj.hideActionSheet("GuildIncidentActionsActionSheet");
       _undefined();
-    };
-    items6 = [, ];
-    items6[0] = tmp15(tmp3(tmp4[21]).Button, obj23);
-    obj25 = { onPress: handleClose, text: null, variant: "secondary", size: "md" };
-    intl10 = tmp3(tmp4[9]).intl;
-    obj25.text = intl10.string(tmp3(tmp4[9]).t["ETE/oC"]);
-    items6[1] = tmp15(tmp3(tmp4[21]).Button, obj25);
-    obj24.children = items6;
-    items4[3] = tmp14(tmp3(tmp4[20]).ButtonGroup, obj24);
-    obj1.children = items4;
-    return tmp14(tmp3(tmp4[7]).ActionSheet, obj1);
+    }
+    const obj14 = { children: items6 };
+    tmp17 = pauseInvites !== hasInvitesDisabledResult || pauseDms !== hasDMsDisabledResult || hasTimeChanges;
+    items6 = [tmp15(Button, obj13), ];
+    const obj15 = { onPress: handleClose, text: intl10.string(tmp3(tmp4[11]).t["ETE/oC"]), variant: "secondary", size: "md" };
+    const Button2 = tmp3(tmp4[23]).Button;
+    intl10 = tmp3(tmp4[11]).intl;
+    items6[1] = closure_14(Button2, obj15);
+    items4[3] = closure_15(ButtonGroup, obj14);
+    return closure_15(ActionSheet, obj5);
   }
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_antiraid/native/GuildIncidentActionsActionSheet.tsx");
 
 export default GuildIncidentActionsActionSheet;

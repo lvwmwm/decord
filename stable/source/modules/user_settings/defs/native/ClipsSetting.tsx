@@ -1,31 +1,33 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 14496
+// Function ID: 14497
 // Name: ClipsSetting
-// Dependencies: [1074, 11754, 1115, 15253, 15255, 2]
+// Dependencies: [1086, 10874, 1127, 14497, 14499, 2]
 
-// Module 15252 (ClipsSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import ClipsIcon from "ClipsIcon" /* 15253 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14496 (ClipsSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import ClipsIcon from "ClipsIcon" /* 14497 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.z2jK6X);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.z2jK6X);
   },
   parent: null,
   IconComponent: ClipsIcon.ClipsIcon,
   screen: {
-    route: Constants.UserSettingsSections.CLIPS,
+    route: UserSettingsSections.CLIPS,
     getComponent() {
       return require("SettingsClipsScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ClipsSetting.tsx");
 
 export default route;

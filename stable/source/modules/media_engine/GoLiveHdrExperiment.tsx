@@ -1,22 +1,23 @@
-// Module ID: 14300
-// Function ID: 14301
+// Module ID: 13547
+// Function ID: 13548
 // Name: GoLiveHdrExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 // Exports: getGoLiveHdrConfig
 
-// Module 14300 (GoLiveHdrExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13547 (GoLiveHdrExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { Never: "never", Always: "always", PermittedDevicesOnly: "permittedDevicesOnly" };
-const obj2 = { name: "2026-02-go-live-hdr", kind: "user", defaultConfig: { hdrCaptureMode: obj.Never }, variations: null };
-const obj3 = { 1: null, 2: { hdrCaptureMode: obj.Always } };
+let obj3;
+let obj = { Never: "never", Always: "always", PermittedDevicesOnly: "permittedDevicesOnly" };
+const obj2 = { name: "2026-02-go-live-hdr", kind: "user", defaultConfig: { hdrCaptureMode: obj.Never }, variations: obj3 };
+obj3 = { 1: null, 2: { hdrCaptureMode: obj.Always } };
 obj3[2] = { hdrCaptureMode: obj.PermittedDevicesOnly };
-obj2.variations = obj3;
 const config = ApexExperiment.createApexExperiment(obj2);
 const result = size.fileFinishedImporting("modules/media_engine/GoLiveHdrExperiment.tsx");
 
 export const HdrCaptureMode = obj;
 export const getGoLiveHdrConfig = function getGoLiveHdrConfig(location) {
-  return config.getConfig({ location: location.location });
+  const obj = { location: location.location };
+  return config.getConfig(obj);
 };

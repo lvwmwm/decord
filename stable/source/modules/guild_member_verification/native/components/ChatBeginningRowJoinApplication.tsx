@@ -1,125 +1,233 @@
-// Module ID: 12913
-// Function ID: 12914
+// Module ID: 12038
+// Function ID: 12039
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 4427, 1372, 1074, 21, 4788, 576, 12914, 504, 12915, 5833, 4784, 1115, 4612, 5682, 5218, 2]
-// Exports: default
+// Dependencies: [19, 17, 4472, 1378, 1086, 21, 4837, 588, 558, 576, 12039, 504, 12040, 5893, 4833, 1127, 4660, 5746, 5282, 2]
 
-// Module 12913 (ChatBeginningRowJoinApplication)
-import nativeDefault from "native" /* 576 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
-import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 12038 (ChatBeginningRowJoinApplication)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import react from "react" /* 19 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import UserStore from "UserStore" /* 1378 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, channelId;
 
-require = fn;
-const View = fn(17).View;
-const Permissions = fn(1074).Permissions;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { width: "100%", marginTop: 12, display: "flex", flexDirection: "column", alignSelf: "flex-start", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.lg }, guildInfoRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, divider: null, formQuestion: null };
-let obj3 = { width: "100%", marginTop: 12, display: "flex", flexDirection: "column", alignSelf: "flex-start", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.lg };
-obj2.divider = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, border: "none", marginVertical: 16 };
-obj2.formQuestion = { marginBottom: 4 };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/ChatBeginningRowJoinApplication.tsx");
-
-export default function ChatBeginningRowJoinRequest(channelId) {
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+const View = react_native.View;
+const Permissions = Constants.Permissions;
+({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, guildInfoRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, divider: obj3, formQuestion: { marginBottom: 4 } };
+obj2 = { width: "100%", marginTop: 12, display: "flex", flexDirection: "column", alignSelf: "flex-start", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.lg };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, border: "none", marginVertical: 16 };
+let closure_10 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let approveRequest;
+  let closure_0;
+  let first;
+  let joinRequest;
+  let joinRequestGuild;
+  let rejectRequest;
+  let tmp10;
+  let tmp14;
+  let tmp16;
+  let obj = require("react");
+  const cResult = obj.c(32);
+  channelId = channelId.channelId;
+  _require = closure_10();
+  const tmp4 = closure_10();
+  const tmp5 = joinRequest(joinRequestGuild[10])(channelId);
+  joinRequest = tmp5.joinRequest;
+  joinRequestGuild = tmp5.joinRequestGuild;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [UserStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  let userId;
+  const tmp8 = cResult[1];
+  if (joinRequest != null) {
+    userId = joinRequest.userId;
+  }
+  if (tmp8 !== userId) {
+    let userId1;
+    if (joinRequest != null) {
+      userId1 = joinRequest.userId;
+    }
+    const fn = function f() {
+      let userId;
+      const getUser = UserStore.getUser;
+      if (joinRequest != null) {
+        userId = joinRequest.userId;
+      }
+      return getUser(userId);
+    };
+    cResult[1] = userId1;
+    cResult[2] = fn;
+    tmp10 = fn;
+  } else {
+    tmp10 = cResult[2];
+  }
+  const tmpResult = require("get initialized");
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp10);
+  const tmpResult3 = require("useJoinRequestButtonActions");
+  const joinRequestButtonActions = tmpResult3.useJoinRequestButtonActions(joinRequest, channelId);
+  ({ approveRequest, rejectRequest } = joinRequestButtonActions);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [PermissionStore];
+    cResult[3] = items1;
+    tmp14 = items1;
+  } else {
+    tmp14 = cResult[3];
+  }
+  if (cResult[4] !== joinRequestGuild) {
+    class I {
+      constructor() {
+        return PermissionStore.can(Permissions.KICK_MEMBERS, joinRequestGuild);
+      }
+    }
+    cResult[4] = joinRequestGuild;
+    cResult[5] = I;
+    tmp16 = I;
+  } else {
+    class I {
+      constructor() {
+        return PermissionStore.can(Permissions.KICK_MEMBERS, joinRequestGuild);
+      }
+    }
+  }
+  const tmpResult4 = require("get initialized");
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp14, tmp16);
+  if (null != joinRequest) {
+    class I {
+      constructor() {
+        return PermissionStore.can(Permissions.KICK_MEMBERS, joinRequestGuild);
+      }
+    }
+  }
+  return null;
+}) : ((channelId) => {
+  let approveRequest;
+  let closure_0;
+  let intl;
+  let intl2;
+  let intl3;
+  let items2;
+  let items3;
+  let items5;
+  let obj9;
+  let rejectRequest;
   channelId = channelId.channelId;
   let joinRequest;
   let joinRequestGuild;
   const tmp = closure_10();
   _require = tmp;
-  const tmp4 = joinRequest(joinRequestGuild[8])(channelId);
+  const tmp4 = joinRequest(joinRequestGuild[10])(channelId);
+  const tmp2 = joinRequest;
   joinRequest = tmp4.joinRequest;
   joinRequestGuild = tmp4.joinRequestGuild;
+  let obj = require("get initialized");
   let items = [UserStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let userId;
+    const getUser = UserStore.getUser;
     if (joinRequest != null) {
       userId = joinRequest.userId;
     }
-    return UserStore.getUser(userId);
+    return getUser(userId);
   });
-  let obj = require("initialize");
-  const tmp2 = joinRequest;
-  const joinRequestButtonActions = require("useJoinRequestButtonActions").useJoinRequestButtonActions(joinRequest, channelId);
-  ({ approveRequest, rejectRequest } = joinRequestButtonActions);
   let obj2 = require("useJoinRequestButtonActions");
+  const joinRequestButtonActions = obj2.useJoinRequestButtonActions(joinRequest, channelId);
+  ({ approveRequest, rejectRequest } = joinRequestButtonActions);
+  let obj3 = require("get initialized");
   const items1 = [PermissionStore];
-  let stateFromStores1 = require("initialize").useStateFromStores(items1, () => PermissionStore.can(Permissions.KICK_MEMBERS, joinRequestGuild));
+  let stateFromStores1 = obj3.useStateFromStores(items1, () => PermissionStore.can(Permissions.KICK_MEMBERS, joinRequestGuild));
   let tmp10Result2 = null;
   if (null != joinRequest) {
     tmp10Result2 = null;
     if (null != joinRequest.formResponses) {
-      let obj4 = { style: tmp.container, children: null };
+      let obj4 = { style: tmp.container, children: items3 };
       let tmp10Result = null != joinRequestGuild;
+      const tmp11 = closure_9;
       if (tmp10Result) {
-        const obj5 = { style: tmp.guildInfoRow, children: null };
-        const obj6 = { guild: joinRequestGuild, size: tmp5(tmp3[11]).GuildIconSizes.XXSMALL };
-        const items2 = [closure_7(tmp2(tmp3[11]), obj6), ];
+        const obj5 = { style: tmp.guildInfoRow, children: items2 };
+        const obj6 = { guild: joinRequestGuild, size: require("GuildIcon").GuildIconSizes.XXSMALL };
+        const tmp2Result = tmp2(joinRequestGuild[13]);
+        items2 = [closure_7(tmp2Result, obj6), ];
         const obj7 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: joinRequestGuild.name };
-        items2[1] = closure_7(tmp5(tmp3[12]).Text, obj7);
-        obj5.children = items2;
+        items2[1] = closure_7(require("Text/Text").Text, obj7);
         tmp10Result = tmp10(tmp12, obj5);
-        const tmp2Result = tmp2(tmp3[11]);
       }
-      const items3 = [tmp10Result, , ];
+      items3 = [tmp10Result, , ];
       let tmp16 = null != stateFromStores;
       if (tmp16) {
-        const obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: null };
-        const intl = tmp5(tmp3[13]).intl;
-        const obj9 = { username: stateFromStores.globalName };
-        obj8.children = intl.format(tmp5(tmp3[13]).t.jDV3i6, obj9);
-        tmp16 = closure_7(tmp5(tmp3[12]).Text, obj8);
+        const obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.format(require("intl").t.jDV3i6, obj9) };
+        const Text = tmp5(tmp3[14]).Text;
+        intl = tmp5(tmp3[15]).intl;
+        obj9 = { username: stateFromStores.globalName };
+        tmp16 = closure_7(Text, obj8);
       }
       items3[1] = tmp16;
       const formResponses = joinRequest.formResponses;
-      const found = formResponses.filter((field_type) => field_type.field_type !== closure_0(joinRequestGuild[14]).VerificationFormFieldTypes.TERMS);
+      const found = formResponses.filter((field_type) => field_type.field_type !== closure_0(joinRequestGuild[16]).VerificationFormFieldTypes.TERMS);
       items3[2] = found.map((field_type, index) => {
+        let items;
         if (field_type.field_type === MemberVerificationTypes.VerificationFormFieldTypes.MULTIPLE_CHOICE) {
+          let response;
           if (null != field_type.response) {
-            let response = field_type.choices[field_type.response];
+            response = field_type.choices[field_type.response];
           }
-          const obj = { children: null };
+          const obj = { children: items };
           const obj2 = { style: closure_0.divider };
-          const items = [React5(View, obj2), , ];
+          items = [metroImportDefault(View, obj2), , ];
           const obj3 = { style: closure_0.formQuestion, variant: "text-xs/semibold", color: "text-muted", children: field_type.label };
-          items[1] = React5(tmp(4784).Text, obj3);
+          items[1] = metroImportDefault(Text_Text.Text, obj3);
           const obj4 = { variant: "text-md/medium", color: "text-strong", children: response };
-          items[2] = React5(tmp(4784).Text, obj4);
-          obj.children = items;
+          items[2] = metroImportDefault(Text_Text.Text, obj4);
           const _HermesInternal = HermesInternal;
-          return React6(View, obj, "form-response-" + index);
+          return metroImportAll(View, obj, "form-response-" + index);
         }
         response = field_type.response;
       });
-      obj4.children = items3;
       const items4 = [closure_8(View, obj4), ];
       if (stateFromStores1) {
-        stateFromStores1 = joinRequest.applicationStatus === tmp5(tmp3[14]).GuildJoinRequestApplicationStatuses.SUBMITTED;
+        stateFromStores1 = joinRequest.applicationStatus === tmp5(tmp3[16]).GuildJoinRequestApplicationStatuses.SUBMITTED;
       }
       if (stateFromStores1) {
-        const obj10 = { direction: "horizontal", align: "center", children: null };
-        const obj11 = { grow: true, size: "md", variant: "primary", onPress: approveRequest, text: null };
-        const intl2 = tmp5(tmp3[13]).intl;
-        obj11.text = intl2.string(tmp5(tmp3[13]).t.BzjDQJ);
-        const items5 = [closure_7(tmp5(tmp3[16]).Button, obj11), ];
-        const obj12 = { grow: true, size: "md", variant: "destructive", onPress: rejectRequest, text: null };
-        const intl3 = tmp5(tmp3[13]).intl;
-        obj12.text = intl3.string(tmp5(tmp3[13]).t.hDtbsz);
-        items5[1] = closure_7(tmp5(tmp3[16]).Button, obj12);
-        obj10.children = items5;
-        stateFromStores1 = tmp10(tmp5(tmp3[15]).ButtonGroup, obj10);
+        const obj10 = { direction: "horizontal", align: "center", children: items5 };
+        const ButtonGroup = tmp5(tmp3[17]).ButtonGroup;
+        const obj11 = { grow: true, size: "md", variant: "primary", onPress: approveRequest, text: intl2.string(require("intl").t.BzjDQJ) };
+        const Button = tmp5(tmp3[18]).Button;
+        intl2 = tmp5(tmp3[15]).intl;
+        items5 = [closure_7(Button, obj11), ];
+        const obj12 = { grow: true, size: "md", variant: "destructive", onPress: rejectRequest, text: intl3.string(require("intl").t.hDtbsz) };
+        const Button2 = tmp5(tmp3[18]).Button;
+        intl3 = tmp5(tmp3[15]).intl;
+        items5[1] = closure_7(Button2, obj12);
+        stateFromStores1 = tmp10(ButtonGroup, obj10);
       }
-      const obj13 = { children: null };
+      const obj13 = { children: items4 };
       items4[1] = stateFromStores1;
-      obj13.children = items4;
-      tmp10Result2 = tmp10(closure_9, obj13);
+      tmp10Result2 = tmp10(tmp11, obj13);
     }
   }
   return tmp10Result2;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/ChatBeginningRowJoinApplication.tsx");
+
+export default tmp5;

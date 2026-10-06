@@ -1,47 +1,49 @@
-// Module ID: 17414
-// Function ID: 17415
+// Module ID: 16768
+// Function ID: 16769
 // Name: AccountLinkStore
-// Dependencies: [7384, 504, 573, 2]
+// Dependencies: [6529, 504, 585, 2]
 
-// Module 17414 (AccountLinkStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7384 */;
+// Module 16768 (AccountLinkStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6529 */;
+import size from "module_2" /* 2 */;
 
 const map = new Map();
 let set = new Set();
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class AccountLinkStore extends Store {
+  initialize() {
+    this.waitFor(AuthorizedAppsStore);
+  }
+  getPendingAuthorizations() {
+    return map;
+  }
+  deletePendingAuthorization(arg0) {
+    map.delete(arg0);
+  }
+  getGloballyDisabledAuthorizationFlows() {
+    return set;
+  }
 }
 const prototype = AccountLinkStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(AuthorizedAppsStore);
-};
-prototype["getPendingAuthorizations"] = function getPendingAuthorizations() {
-  return map;
-};
-prototype["deletePendingAuthorization"] = function deletePendingAuthorization(arg0) {
-  map.delete(arg0);
-};
-prototype["getGloballyDisabledAuthorizationFlows"] = function getGloballyDisabledAuthorizationFlows() {
-  return set;
-};
 AccountLinkStore.displayName = "AccountLinkStore";
-const accountLinkStore = new AccountLinkStore(DispatcherDefault, {
+let obj = {
   ACCOUNT_LINK_AUTHORIZATION_STARTED: function handleAuthorizationStarted(applicationId) {
+    const tmp = null == AuthorizedAppsStore.getNewestTokenForApplication(applicationId.applicationId) && null != applicationId.accountLinkCallbacks;
     if (tmp) {
-      const obj = { applicationId: applicationId.applicationId, startedAt: null, accountLinkCallbacks: null };
       const _Date = Date;
-      obj.startedAt = Date.now();
-      obj.accountLinkCallbacks = applicationId.accountLinkCallbacks;
-      const result = map.set(applicationId.applicationId, obj);
+      applicationId = applicationId.applicationId;
+      const obj = { applicationId: applicationId.applicationId, startedAt: Date.now(), accountLinkCallbacks: applicationId.accountLinkCallbacks };
+      set = map.set;
+      const result = set(applicationId, obj);
     }
   },
   ACCOUNT_LINK_DEVTOOLS_SET_GLOBALLY_DISBLED_FLOWS: function handleSetGloballyDisabledFlows(flows) {
     set = new Set(flows.flows);
   }
-});
-const size = fn(2);
+};
+const accountLinkStore = new AccountLinkStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/application_account_linking/AccountLinkStore.tsx");
 
 export default accountLinkStore;

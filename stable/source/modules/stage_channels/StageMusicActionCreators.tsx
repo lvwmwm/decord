@@ -1,18 +1,22 @@
-// Module ID: 10208
-// Function ID: 10209
+// Module ID: 9346
+// Function ID: 9347
 // Name: StageMusicActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: updateStageMusicMuted, updateStageMusicShouldPlay
 
-// Module 10208 (StageMusicActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 9346 (StageMusicActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stage_channels/StageMusicActionCreators.tsx");
 
 export const updateStageMusicMuted = function updateStageMusicMuted(muted) {
-  DispatcherDefault.dispatch({ type: "STAGE_MUSIC_MUTE", muted });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "STAGE_MUSIC_MUTE", muted };
+  obj.dispatch(obj2);
 };
 export const updateStageMusicShouldPlay = function updateStageMusicShouldPlay(play) {
-  DispatcherDefault.dispatch({ type: "STAGE_MUSIC_PLAY", play });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "STAGE_MUSIC_PLAY", play };
+  obj.dispatch(obj2);
 };

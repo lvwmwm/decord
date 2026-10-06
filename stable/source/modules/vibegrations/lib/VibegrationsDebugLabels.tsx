@@ -1,72 +1,77 @@
-// Module ID: 17072
-// Function ID: 17073
+// Module ID: 16414
+// Function ID: 16415
 // Name: VibegrationsDebugLabels
-// Dependencies: [1115, 3710, 17071, 2]
+// Dependencies: [1127, 3718, 16413, 2]
 // Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, forceCompactionStatus, isRenderableLog, modelCallOutcome
 
-// Module 17072 (VibegrationsDebugLabels)
-import util from "util" /* 1115 */;
-import _modDef3710 from "module_3710" /* 3710 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17071 */;
+// Module 16414 (VibegrationsDebugLabels)
+import intl6 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 16413 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set(["error", "aborted", "length"]);
 let closure_4 = {
   db() {
-    return _modDef3710.r6cciE;
+    return _modDef3718.r6cciE;
   },
   db_preview() {
-    return _modDef3710.JmIyL8;
+    return _modDef3718.JmIyL8;
   },
   runtime() {
-    return _modDef3710.bzNyv8;
+    return _modDef3718.bzNyv8;
   },
   runtime_preview() {
-    return _modDef3710["LONZ/8"];
+    return _modDef3718["LONZ/8"];
   },
   bot() {
-    return _modDef3710.jdpw3A;
+    return _modDef3718.jdpw3A;
   },
   bot_preview() {
-    return _modDef3710["/g6wUz"];
+    return _modDef3718["/g6wUz"];
   }
 };
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsDebugLabels.tsx");
 
 export const debugEnvLabel = function debugEnvLabel(env) {
-  const intl = util.intl;
+  let kiOVnt;
+  const intl = intl6.intl;
+  const string = intl.string;
   if ("preview" === env) {
-    let kiOVnt = _modDef3710["+m8XM6"];
+    kiOVnt = _modDef3718["+m8XM6"];
   } else {
-    kiOVnt = _modDef3710.kiOVnt;
+    kiOVnt = _modDef3718.kiOVnt;
   }
-  return intl.string(kiOVnt);
+  return string(kiOVnt);
 };
 export const debugYesNo = function debugYesNo(connected) {
-  const intl = util.intl;
-  const tmp = _modDef3710;
-  return intl.string(connected ? tmp["9KlveJ"] : tmp["4tYZVa"]);
+  const intl = intl6.intl;
+  const string = intl.string;
+  const tmp = _modDef3718;
+  return string(connected ? tmp["9KlveJ"] : tmp["4tYZVa"]);
 };
 export const DEBUG_LOG_FILTERS = ["all", "preview", "stable", "web"];
 export const debugLogFilterLabel = function debugLogFilterLabel(id) {
+  let kiOVnt;
   if ("preview" !== id) {
     if ("stable" !== id) {
       if ("web" === id) {
-        const intl2 = util.intl;
-        return intl2.string(_modDef3710.J2TPCe);
+        const intl2 = intl6.intl;
+        return intl2.string(_modDef3718.J2TPCe);
       } else {
-        const intl = util.intl;
-        return intl.string(_modDef3710.humq1B);
+        const intl = intl6.intl;
+        return intl.string(_modDef3718.humq1B);
       }
     }
   }
-  const intl3 = util.intl;
+  const intl3 = intl6.intl;
+  const string = intl3.string;
   if ("preview" === id) {
-    let kiOVnt = _modDef3710["+m8XM6"];
+    kiOVnt = _modDef3718["+m8XM6"];
   } else {
-    kiOVnt = _modDef3710.kiOVnt;
+    kiOVnt = _modDef3718.kiOVnt;
   }
-  return intl3.string(kiOVnt);
+  return string(kiOVnt);
 };
 export const isRenderableLog = function isRenderableLog(log) {
   const message = log.message;
@@ -81,100 +86,110 @@ export const isRenderableLog = function isRenderableLog(log) {
 };
 export const MAX_MODEL_CALL_ROWS = 30;
 export const modelCallOutcome = function modelCallOutcome(call) {
-  let hasItem = null != call.stopReason;
-  if (hasItem) {
-    hasItem = set.has(call.stopReason);
-  }
+  let found;
+  const hasItem = null != call.stopReason && set.has(call.stopReason);
   let formatMsResult = null;
   if (null != call.durationMs) {
-    formatMsResult = VibegrationsDebugFormat.formatMs(call.durationMs);
+    const obj = VibegrationsDebugFormat;
+    formatMsResult = obj.formatMs(call.durationMs);
   }
   const items = [formatMsResult, , ];
-  const formatCountResult = VibegrationsDebugFormat.formatCount(call.inputTokens + call.cacheReadTokens + call.cacheWriteTokens);
-  items[1] = "" + formatCountResult + " \u2192 " + VibegrationsDebugFormat.formatCount(call.outputTokens);
+  const obj2 = VibegrationsDebugFormat;
+  const formatCountResult = obj2.formatCount(call.inputTokens + call.cacheReadTokens + call.cacheWriteTokens);
+  const obj3 = VibegrationsDebugFormat;
+  items[1] = "" + formatCountResult + " \u2192 " + obj3.formatCount(call.outputTokens);
   let stopReason = null;
   if (hasItem) {
     stopReason = call.stopReason;
   }
-  const obj4 = { text: null, bad: null };
   items[2] = stopReason;
-  const found = items.filter((item) => null != item);
-  obj4.text = found.join(" \u00B7 ");
-  obj4.bad = hasItem;
+  const obj4 = { text: found.join(" \u00B7 "), bad: hasItem };
+  found = items.filter((item) => null != item);
   return obj4;
 };
 export const forceCompactionStatus = function forceCompactionStatus(stateFromStores3) {
   if ("idle" === stateFromStores3) {
-    const intl4 = util.intl;
-    return intl4.string(_modDef3710.wBng42);
+    const intl4 = intl6.intl;
+    return intl4.string(_modDef3718.wBng42);
   } else if ("pending" === stateFromStores3) {
-    const intl3 = util.intl;
-    return intl3.string(_modDef3710["0tgo31"]);
+    const intl3 = intl6.intl;
+    return intl3.string(_modDef3718["0tgo31"]);
   } else {
-    const formatObservedAtResult = VibegrationsDebugFormat.formatObservedAt(stateFromStores3.observedAt);
+    const obj3 = VibegrationsDebugFormat;
+    const formatObservedAtResult = obj3.formatObservedAt(stateFromStores3.observedAt);
     if ("compacted" === stateFromStores3.outcome) {
-      const intl2 = tmp13(1115).intl;
+      const intl2 = tmp13(1127).intl;
       const obj2 = { time: formatObservedAtResult };
-      return intl2.formatToPlainString(_modDef3710["eL8+rZ"], obj2);
+      return intl2.formatToPlainString(_modDef3718["eL8+rZ"], obj2);
     } else {
+      let v9vZuG6;
       if ("declined" === stateFromStores3.outcome) {
-        let v9vZuG6 = _modDef3710["9vZuG6"];
+        v9vZuG6 = _modDef3718["9vZuG6"];
       } else if ("busy" === stateFromStores3.outcome) {
-        v9vZuG6 = _modDef3710.GV4sdd;
+        v9vZuG6 = _modDef3718.GV4sdd;
       } else {
-        v9vZuG6 = _modDef3710["Y+0nUb"];
+        v9vZuG6 = _modDef3718["Y+0nUb"];
       }
-      const intl = tmp13(1115).intl;
+      const intl = tmp13(1127).intl;
       let str2 = stateFromStores3.reason;
+      const formatToPlainString = intl.formatToPlainString;
       if (str2 == null) {
         str2 = "no reason given";
       }
       const obj = { reason: str2, time: formatObservedAtResult };
-      return intl.formatToPlainString(v9vZuG6, obj);
+      return formatToPlainString(v9vZuG6, obj);
     }
   }
 };
 export const analyticsUnavailableReason = function analyticsUnavailableReason(analytics) {
   const reason = analytics.reason;
   if ("local" === reason) {
-    const intl5 = util.intl;
-    return intl5.string(_modDef3710.M7Vn6y);
+    const intl5 = intl6.intl;
+    return intl5.string(_modDef3718.M7Vn6y);
   } else if ("unconfigured" === reason) {
-    const intl4 = util.intl;
-    return intl4.string(_modDef3710.QirpMl);
+    const intl4 = intl6.intl;
+    return intl4.string(_modDef3718.QirpMl);
   } else if ("unauthorized" === reason) {
-    const intl3 = util.intl;
-    return intl3.string(_modDef3710.QZ1e4l);
+    const intl3 = intl6.intl;
+    return intl3.string(_modDef3718.QZ1e4l);
   } else {
+    let formatToPlainStringResult;
     if (null != analytics.detail) {
-      const intl2 = util.intl;
+      const intl2 = intl6.intl;
       const obj = { detail: analytics.detail };
-      let formatToPlainStringResult = intl2.formatToPlainString(_modDef3710.zUTHf7, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3718.zUTHf7, obj);
     } else {
-      const intl = util.intl;
-      formatToPlainStringResult = intl.string(_modDef3710.WIAQes);
+      const intl = intl6.intl;
+      formatToPlainStringResult = intl.string(_modDef3718.WIAQes);
     }
     return formatToPlainStringResult;
   }
 };
 export const analyticsMemoryValue = function analyticsMemoryValue(found) {
+  let formatBytes2;
+  let formatToPlainStringResult;
+  let num2;
   if (null != found.memory_p50_bytes) {
-    const intl = util.intl;
+    const intl = intl6.intl;
+    const formatToPlainString = intl.formatToPlainString;
+    const SBkDIZ = _modDef3718.SBkDIZ;
     let num = found.memory_p50_bytes;
+    const formatBytes = VibegrationsDebugFormat.formatBytes;
+    VibegrationsDebugFormat;
     if (num == null) {
       num = 0;
     }
-    const obj2 = { p50: VibegrationsDebugFormat.formatBytes(num), p999: null };
-    let num2 = found.memory_p999_bytes;
+    const obj = { p50: formatBytes(num), p999: formatBytes2(num2) };
+    num2 = found.memory_p999_bytes;
+    formatBytes2 = tmp2(16413).formatBytes;
+    VibegrationsDebugFormat;
     if (num2 == null) {
       num2 = found.memory_p50_bytes;
     }
     if (num2 == null) {
       num2 = 0;
     }
-    obj2.p999 = VibegrationsDebugFormat.formatBytes(num2);
-    let formatToPlainStringResult = intl.formatToPlainString(_modDef3710.SBkDIZ, obj2);
-    const tmp2Result = VibegrationsDebugFormat;
+    formatToPlainStringResult = formatToPlainString(SBkDIZ, obj);
   } else {
     formatToPlainStringResult = null;
   }
@@ -187,7 +202,7 @@ export const analyticsRoleLabel = function analyticsRoleLabel(role) {
   }
   let stringResult = null;
   if (null != tmp) {
-    const intl = util.intl;
+    const intl = intl6.intl;
     stringResult = intl.string(tmp());
   }
   return stringResult;

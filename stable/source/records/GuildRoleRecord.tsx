@@ -1,13 +1,13 @@
-// Module ID: 2100
-// Function ID: 2101
+// Module ID: 2106
+// Function ID: 2107
 // Name: GuildRoleRecord
-// Dependencies: [2056, 1086, 12, 2]
+// Dependencies: [2066, 1098, 12, 2]
 // Exports: hasAnyPermission, hasPermission, isEveryoneRole, isRoleEqual
 
-// Module 2100 (GuildRoleRecord)
+// Module 2106 (GuildRoleRecord)
 import _modDef12 from "module_12" /* 12 */;
-import BigFlagUtils from "BigFlagUtils" /* 1086 */;
-import PlainRecord from "PlainRecord" /* 2056 */;
+import BigFlagUtils from "BigFlagUtils" /* 1098 */;
+import PlainRecord from "PlainRecord" /* 2066 */;
 import size from "module_2" /* 2 */;
 
 const TypeTag = PlainRecord.TypeTag;
@@ -18,16 +18,20 @@ export const isEveryoneRole = function isEveryoneRole(role) {
   return role.id === role.guildId;
 };
 export const hasPermission = function hasPermission(permissions, arg1) {
-  return BigFlagUtils.has(permissions.permissions, arg1);
+  const obj = BigFlagUtils;
+  return obj.has(permissions.permissions, arg1);
 };
 export const hasAnyPermission = function hasAnyPermission(permissions, arg1) {
-  return BigFlagUtils.hasAny(permissions.permissions, arg1);
+  const obj = BigFlagUtils;
+  return obj.hasAny(permissions.permissions, arg1);
 };
 export const isRoleEqual = function isRoleEqual(found, arg1) {
-  return _modDef12.isEqualWith(found, arg1, (arg0, arg1, arg2) => {
+  let obj = _modDef12;
+  return obj.isEqualWith(found, arg1, (arg0, arg1, arg2) => {
     let equalsResult;
     if ("permissions" === arg2) {
-      equalsResult = BigFlagUtils.equals(arg0, arg1);
+      const obj = BigFlagUtils;
+      equalsResult = obj.equals(arg0, arg1);
     }
     return equalsResult;
   });

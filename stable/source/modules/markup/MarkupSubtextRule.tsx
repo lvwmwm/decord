@@ -1,41 +1,48 @@
-// Module ID: 5269
-// Function ID: 5270
+// Module ID: 5334
+// Function ID: 5335
 // Name: MarkupSubtextRule
-// Dependencies: [1929, 2]
+// Dependencies: [1936, 2]
 
-// Module 5269 (MarkupSubtextRule)
-import _mod1929 from "module_1929" /* 1929 */;
+// Module 5334 (MarkupSubtextRule)
+import _mod1936 from "module_1936" /* 1936 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1929 = _mod1929;
+const _modDef1936 = _mod1936;
 
 const re2 = /\n$/;
 const re3 = /^ *-# +((?!-#)[^\n]+)(?:\n|$)/;
-const result = size.fileFinishedImporting("modules/markup/MarkupSubtextRule.tsx");
-
-export default {
-  order: _modDef1929.defaultRules.heading.order,
+let obj = {
+  order: _modDef1936.defaultRules.heading.order,
   requiredFirstCharacters: ["-"],
   match(arg0, allowSubtext, str) {
     let tmp = null;
     if (false !== allowSubtext.allowSubtext) {
       if (null != str) {
+        let tmp4;
         if ("" !== str) {
-          let tmp4 = null;
+          tmp4 = null;
         }
         tmp = tmp4;
       }
-      tmp4 = _mod1929.anyScopeRegex(re3)(arg0, allowSubtext, str);
+      const obj = _mod1936;
+      tmp4 = obj.anyScopeRegex(re3)(arg0, allowSubtext, str);
     }
     return tmp;
   },
   parse(arg0, fn, arg2) {
-    const obj = { content: null };
-    const obj3 = {};
-    const trimmed = arg0[1].trim();
+    let obj2;
+    let parseInline;
+    let trimmed;
+    const obj = { content: parseInline(fn, trimmed, obj2) };
+    parseInline = _mod1936.parseInline;
+    obj2 = { allowSubtext: false };
+    const str = arg0[1];
+    _mod1936;
+    trimmed = str.trim();
     const merged = Object.assign(arg2);
-    obj3.allowSubtext = false;
-    obj.content = _mod1929.parseInline(fn, trimmed, obj3);
     return obj;
   }
 };
+const result = size.fileFinishedImporting("modules/markup/MarkupSubtextRule.tsx");
+
+export default obj;

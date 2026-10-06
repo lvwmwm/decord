@@ -1,9 +1,17 @@
 // Module ID: 13791
 // Function ID: 13792
-// Dependencies: [1121]
+// Dependencies: [13790]
 
 // Module 13791
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13790 from "module_13790" /* 13790 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 351, height: 100, scales: [2, 3], hash: "7e6a8bbab7f30fd349a76227a78736a2", name: "img_subheader_error_mobile_v2_light", type: "png" });
+export default (arg0, value) => {
+  try {
+    const obj = { value, configurable: true, writable: true };
+    defineProperty(_mod13790, arg0, obj);
+  } catch (err) {
+    _mod13790[arg0] = value;
+  }
+  return value;
+};

@@ -1,57 +1,64 @@
-// Module ID: 1181
-// Function ID: 1182
+// Module ID: 1193
+// Function ID: 1194
 // Name: FormConstants
-// Dependencies: [1182, 1364, 576, 4767, 4639, 2]
+// Dependencies: [1194, 1370, 588, 4813, 4687, 2]
 // Exports: getThemedRippleConfig
 
-// Module 1181 (FormConstants)
-import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4639 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+// Module 1193 (FormConstants)
+import nativeDefault from "native" /* 588 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import DeviceUtils from "DeviceUtils" /* 4813 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PlatformUtils = fn(1364);
+let tmp;
+const shared = tmp(4687);
 let num = 24;
 if (PlatformUtils.isAndroid()) {
   num = 32;
 }
 const internal = nativeDefault.internal;
-const semanticColor = internal.resolveSemanticColor(nativeDefault.themes.DARK, nativeDefault.colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+const resolveSemanticColor = internal.resolveSemanticColor;
+const semanticColor = resolveSemanticColor(nativeDefault.themes.DARK, nativeDefault.colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
 const internal2 = nativeDefault.internal;
-const semanticColor1 = internal2.resolveSemanticColor(nativeDefault.themes.LIGHT, nativeDefault.colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-const DeviceUtils = fn(4767);
+const resolveSemanticColor2 = internal2.resolveSemanticColor;
+const semanticColor2 = resolveSemanticColor2(nativeDefault.themes.LIGHT, nativeDefault.colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
 const systemVersionMajor = DeviceUtils.getSystemVersionMajor();
 let frozen = Object.freeze({ foreground: true });
 let closure_6 = Object.freeze({});
 const map = new Map();
-const size = fn(2);
 let result = size.fileFinishedImporting("design/void/Form/native/FormConstants.tsx");
 
 export const FORM_ROW_VERTICAL_PADDING = num;
 export const RIPPLE_DARK_COLOR = semanticColor;
-export const RIPPLE_LIGHT_COLOR = semanticColor1;
+export const RIPPLE_LIGHT_COLOR = semanticColor2;
 export const ANDROID_FOREGROUND_RIPPLE = frozen;
 export const TitleStyleType = { DEFAULT: "default", ANDROID_NO_BORDER: "no_border", NO_BORDER_OR_MARGIN: "no_border_or_margin" };
 export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
+  let borderless;
+  let color;
+  let cornerRadius;
+  let foreground;
+  let radius;
   ({ radius, cornerRadius, color } = arg0);
   ({ foreground, borderless } = arg0);
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    if (null != color) {
-      const sum = "" + color.toString() + cornerRadius + radius + tmp5;
-      value = map.get(sum);
-      if (null != value) {
-        return value;
-      } else {
-        const _Object = Object;
-        const obj2 = { color, radius, borderless, cornerRadius, foreground: tmp5 };
-        const frozen = Object.freeze(obj2);
-        const result = obj3.set(sum, frozen);
-        return frozen;
-      }
-      obj3 = map;
-    } else {
-      shared.isThemeLight(ThemeStore.theme) ? semanticColor1 : semanticColor;
+    if (null == color) {
       const tmpResult = shared;
+      color = tmpResult.isThemeLight(ThemeStore.theme) ? semanticColor2 : semanticColor;
+    }
+    const sum = "" + color.toString() + cornerRadius + radius + tmp5;
+    const value = map.get(sum);
+    const obj3 = map;
+    if (null != value) {
+      return value;
+    } else {
+      const _Object = Object;
+      const obj2 = { color, radius, borderless, cornerRadius, foreground: closure_5 >= 23 && foreground };
+      const frozen = Object.freeze(obj2);
+      const result = obj3.set(sum, frozen);
+      return frozen;
     }
   } else {
     return closure_6;

@@ -1,401 +1,452 @@
-// Module ID: 5532
-// Function ID: 5533
+// Module ID: 5596
+// Function ID: 5597
 // Name: Platforms
-// Dependencies: [1074, 2005, 575, 5533, 5534, 5535, 5536, 5537, 5538, 5539, 5540, 5541, 5542, 5543, 5544, 2006, 5545, 5546, 5547, 5548, 5549, 5550, 5551, 5552, 5553, 5554, 5555, 5556, 5557, 5558, 5559, 5560, 5561, 5562, 5563, 5564, 5565, 5566, 5567, 5568, 5569, 5570, 5571, 5572, 5573, 5574, 5575, 5576, 5577, 5578, 5579, 5580, 5581, 5582, 5583, 5584, 5585, 5586, 5587, 5588, 5589, 5590, 5591, 5592, 5593, 5594, 5595, 5596, 5597, 5598, 5599, 5600, 5601, 5602, 5603, 5604, 5605, 5606, 5607, 5608, 5609, 5610, 5611, 5612, 5613, 5614, 5615, 5616, 5617, 5618, 5619, 5620, 5621, 5622, 5623, 5624, 5625, 5626, 5627, 5628, 5629, 5630, 5631, 5632, 5633, 5634, 5635, 5636, 5637, 5638, 5639, 5640, 5641, 5642, 5643, 5644, 5645, 5646, 5647, 5648, 5649, 5650, 5651, 5652, 5653, 5654, 12, 1366, 2]
+// Dependencies: [1086, 2013, 587, 5597, 5598, 5599, 5600, 5601, 5602, 5603, 5604, 5605, 5606, 5607, 5608, 2014, 5609, 5610, 5611, 5612, 5613, 5614, 5615, 5616, 5617, 5618, 5619, 5620, 5621, 5622, 5623, 5624, 5625, 5626, 5627, 5628, 5629, 5630, 5631, 5632, 5633, 5634, 5635, 5636, 5637, 5638, 5639, 5640, 5641, 5642, 5643, 5644, 5645, 5646, 5647, 5648, 5649, 5650, 5651, 5652, 5653, 5654, 5655, 5656, 5657, 5658, 5659, 5660, 5661, 5662, 5663, 5664, 5665, 5666, 5667, 5668, 5669, 5670, 5671, 5672, 5673, 5674, 5675, 5676, 5677, 5678, 5679, 5680, 5681, 5682, 5683, 5684, 5685, 5686, 5687, 5688, 5689, 5690, 5691, 5692, 5693, 5694, 5695, 5696, 5697, 5698, 5699, 5700, 5701, 5702, 5703, 5704, 5705, 5706, 5707, 5708, 5709, 5710, 5711, 5712, 5713, 5714, 5715, 5716, 5717, 5718, 12, 1372, 2]
 
-// Module 5532 (Platforms)
-import Constants from "Constants" /* 1074 */;
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2005 */;
-import socialSDKMigration from "socialSDKMigration" /* 2006 */;
-import _mod5533 from "module_5533" /* 5533 */;
-import _mod5534 from "module_5534" /* 5534 */;
-import _mod5535 from "module_5535" /* 5535 */;
-import _mod5536 from "module_5536" /* 5536 */;
-import _mod5537 from "module_5537" /* 5537 */;
-import _mod5538 from "module_5538" /* 5538 */;
-import _mod5539 from "module_5539" /* 5539 */;
-import _mod5540 from "module_5540" /* 5540 */;
-import _mod5541 from "module_5541" /* 5541 */;
-import _mod5542 from "module_5542" /* 5542 */;
-import _mod5543 from "module_5543" /* 5543 */;
-import _mod5544 from "module_5544" /* 5544 */;
-import _mod5545 from "module_5545" /* 5545 */;
-import _mod5546 from "module_5546" /* 5546 */;
-import _mod5547 from "module_5547" /* 5547 */;
-import _mod5548 from "module_5548" /* 5548 */;
-import _mod5549 from "module_5549" /* 5549 */;
-import _mod5550 from "module_5550" /* 5550 */;
-import _mod5551 from "module_5551" /* 5551 */;
-import _mod5552 from "module_5552" /* 5552 */;
-import _mod5553 from "module_5553" /* 5553 */;
-import _mod5554 from "module_5554" /* 5554 */;
-import _mod5555 from "module_5555" /* 5555 */;
-import _mod5556 from "module_5556" /* 5556 */;
-import _mod5557 from "module_5557" /* 5557 */;
-import _mod5558 from "module_5558" /* 5558 */;
-import _mod5559 from "module_5559" /* 5559 */;
-import _mod5560 from "module_5560" /* 5560 */;
-import _mod5561 from "module_5561" /* 5561 */;
-import _mod5562 from "module_5562" /* 5562 */;
-import _mod5563 from "module_5563" /* 5563 */;
-import _mod5564 from "module_5564" /* 5564 */;
-import _mod5565 from "module_5565" /* 5565 */;
-import _mod5566 from "module_5566" /* 5566 */;
-import _mod5567 from "module_5567" /* 5567 */;
-import _mod5568 from "module_5568" /* 5568 */;
-import _mod5569 from "module_5569" /* 5569 */;
-import _mod5570 from "module_5570" /* 5570 */;
-import _mod5571 from "module_5571" /* 5571 */;
-import _mod5572 from "module_5572" /* 5572 */;
-import _mod5573 from "module_5573" /* 5573 */;
-import _mod5574 from "module_5574" /* 5574 */;
-import _mod5575 from "module_5575" /* 5575 */;
-import _mod5576 from "module_5576" /* 5576 */;
-import _mod5577 from "module_5577" /* 5577 */;
-import _mod5578 from "module_5578" /* 5578 */;
-import _mod5579 from "module_5579" /* 5579 */;
-import _mod5580 from "module_5580" /* 5580 */;
-import _mod5581 from "module_5581" /* 5581 */;
-import _mod5582 from "module_5582" /* 5582 */;
-import _mod5583 from "module_5583" /* 5583 */;
-import _mod5584 from "module_5584" /* 5584 */;
-import _mod5585 from "module_5585" /* 5585 */;
-import _mod5586 from "module_5586" /* 5586 */;
-import _mod5587 from "module_5587" /* 5587 */;
-import _mod5588 from "module_5588" /* 5588 */;
-import _mod5589 from "module_5589" /* 5589 */;
-import _mod5590 from "module_5590" /* 5590 */;
-import _mod5591 from "module_5591" /* 5591 */;
-import _mod5592 from "module_5592" /* 5592 */;
-import _mod5593 from "module_5593" /* 5593 */;
-import _mod5594 from "module_5594" /* 5594 */;
-import _mod5595 from "module_5595" /* 5595 */;
-import _mod5596 from "module_5596" /* 5596 */;
-import _mod5597 from "module_5597" /* 5597 */;
-import _mod5598 from "module_5598" /* 5598 */;
-import _mod5599 from "module_5599" /* 5599 */;
-import _mod5600 from "module_5600" /* 5600 */;
-import _mod5601 from "module_5601" /* 5601 */;
-import _mod5602 from "module_5602" /* 5602 */;
-import _mod5603 from "module_5603" /* 5603 */;
-import _mod5604 from "module_5604" /* 5604 */;
-import _mod5605 from "module_5605" /* 5605 */;
-import _mod5606 from "module_5606" /* 5606 */;
-import _mod5607 from "module_5607" /* 5607 */;
-import _mod5608 from "module_5608" /* 5608 */;
-import _mod5609 from "module_5609" /* 5609 */;
-import _mod5610 from "module_5610" /* 5610 */;
-import _mod5611 from "module_5611" /* 5611 */;
-import _mod5612 from "module_5612" /* 5612 */;
-import _mod5613 from "module_5613" /* 5613 */;
-import _mod5614 from "module_5614" /* 5614 */;
-import _mod5615 from "module_5615" /* 5615 */;
-import _mod5616 from "module_5616" /* 5616 */;
-import _mod5617 from "module_5617" /* 5617 */;
-import _mod5618 from "module_5618" /* 5618 */;
-import _mod5619 from "module_5619" /* 5619 */;
-import _mod5620 from "module_5620" /* 5620 */;
-import _mod5621 from "module_5621" /* 5621 */;
-import _mod5622 from "module_5622" /* 5622 */;
-import _mod5623 from "module_5623" /* 5623 */;
-import _mod5624 from "module_5624" /* 5624 */;
-import _mod5625 from "module_5625" /* 5625 */;
-import _mod5626 from "module_5626" /* 5626 */;
-import _mod5627 from "module_5627" /* 5627 */;
-import _mod5628 from "module_5628" /* 5628 */;
-import _mod5629 from "module_5629" /* 5629 */;
-import _mod5630 from "module_5630" /* 5630 */;
-import _mod5631 from "module_5631" /* 5631 */;
-import _mod5632 from "module_5632" /* 5632 */;
-import _mod5633 from "module_5633" /* 5633 */;
-import _mod5634 from "module_5634" /* 5634 */;
-import _mod5635 from "module_5635" /* 5635 */;
-import _mod5636 from "module_5636" /* 5636 */;
-import _mod5637 from "module_5637" /* 5637 */;
-import _mod5638 from "module_5638" /* 5638 */;
-import _mod5639 from "module_5639" /* 5639 */;
-import _mod5640 from "module_5640" /* 5640 */;
-import _mod5641 from "module_5641" /* 5641 */;
-import _mod5642 from "module_5642" /* 5642 */;
-import _mod5643 from "module_5643" /* 5643 */;
-import _mod5644 from "module_5644" /* 5644 */;
-import _mod5645 from "module_5645" /* 5645 */;
-import _mod5646 from "module_5646" /* 5646 */;
-import _mod5647 from "module_5647" /* 5647 */;
-import _mod5648 from "module_5648" /* 5648 */;
-import _mod5649 from "module_5649" /* 5649 */;
-import _mod5650 from "module_5650" /* 5650 */;
-import _mod5651 from "module_5651" /* 5651 */;
-import _mod5652 from "module_5652" /* 5652 */;
-import _mod5653 from "module_5653" /* 5653 */;
-import _mod5654 from "module_5654" /* 5654 */;
-import shims_mod from "shims" /* 575 */;
-import apply from "module_12" /* 12 */;
+// Module 5596 (Platforms)
+import Constants from "Constants" /* 1086 */;
+import URLUtilsDefault from "URLUtils" /* 1372 */;
+import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2013 */;
+import socialSDKMigration from "socialSDKMigration" /* 2014 */;
+import AssetRegistry from "AssetRegistry" /* 5597 */;
+import AssetRegistry2 from "AssetRegistry" /* 5598 */;
+import AssetRegistry3 from "AssetRegistry" /* 5599 */;
+import AssetRegistry4 from "AssetRegistry" /* 5600 */;
+import AssetRegistry5 from "AssetRegistry" /* 5601 */;
+import AssetRegistry6 from "AssetRegistry" /* 5602 */;
+import AssetRegistry7 from "AssetRegistry" /* 5603 */;
+import AssetRegistry8 from "AssetRegistry" /* 5604 */;
+import AssetRegistry9 from "AssetRegistry" /* 5605 */;
+import AssetRegistry10 from "AssetRegistry" /* 5606 */;
+import AssetRegistry11 from "AssetRegistry" /* 5607 */;
+import AssetRegistry12 from "AssetRegistry" /* 5608 */;
+import AssetRegistry13 from "AssetRegistry" /* 5609 */;
+import AssetRegistry14 from "AssetRegistry" /* 5610 */;
+import AssetRegistry15 from "AssetRegistry" /* 5611 */;
+import AssetRegistry16 from "AssetRegistry" /* 5612 */;
+import AssetRegistry17 from "AssetRegistry" /* 5613 */;
+import AssetRegistry18 from "AssetRegistry" /* 5614 */;
+import AssetRegistry19 from "AssetRegistry" /* 5615 */;
+import AssetRegistry20 from "AssetRegistry" /* 5616 */;
+import AssetRegistry21 from "AssetRegistry" /* 5617 */;
+import AssetRegistry22 from "AssetRegistry" /* 5618 */;
+import AssetRegistry23 from "AssetRegistry" /* 5619 */;
+import AssetRegistry24 from "AssetRegistry" /* 5620 */;
+import AssetRegistry25 from "AssetRegistry" /* 5621 */;
+import AssetRegistry26 from "AssetRegistry" /* 5622 */;
+import AssetRegistry27 from "AssetRegistry" /* 5623 */;
+import AssetRegistry28 from "AssetRegistry" /* 5624 */;
+import AssetRegistry29 from "AssetRegistry" /* 5625 */;
+import AssetRegistry30 from "AssetRegistry" /* 5626 */;
+import AssetRegistry31 from "AssetRegistry" /* 5627 */;
+import AssetRegistry32 from "AssetRegistry" /* 5628 */;
+import AssetRegistry33 from "AssetRegistry" /* 5629 */;
+import AssetRegistry34 from "AssetRegistry" /* 5630 */;
+import AssetRegistry35 from "AssetRegistry" /* 5631 */;
+import AssetRegistry36 from "AssetRegistry" /* 5632 */;
+import AssetRegistry37 from "AssetRegistry" /* 5633 */;
+import AssetRegistry38 from "AssetRegistry" /* 5634 */;
+import AssetRegistry39 from "AssetRegistry" /* 5635 */;
+import AssetRegistry40 from "AssetRegistry" /* 5636 */;
+import AssetRegistry41 from "AssetRegistry" /* 5637 */;
+import AssetRegistry42 from "AssetRegistry" /* 5638 */;
+import AssetRegistry43 from "AssetRegistry" /* 5639 */;
+import AssetRegistry44 from "AssetRegistry" /* 5640 */;
+import AssetRegistry45 from "AssetRegistry" /* 5641 */;
+import AssetRegistry46 from "AssetRegistry" /* 5642 */;
+import AssetRegistry47 from "AssetRegistry" /* 5643 */;
+import AssetRegistry48 from "AssetRegistry" /* 5644 */;
+import AssetRegistry49 from "AssetRegistry" /* 5645 */;
+import AssetRegistry50 from "AssetRegistry" /* 5646 */;
+import AssetRegistry51 from "AssetRegistry" /* 5647 */;
+import AssetRegistry52 from "AssetRegistry" /* 5648 */;
+import AssetRegistry53 from "AssetRegistry" /* 5649 */;
+import AssetRegistry54 from "AssetRegistry" /* 5650 */;
+import AssetRegistry55 from "AssetRegistry" /* 5651 */;
+import AssetRegistry56 from "AssetRegistry" /* 5652 */;
+import AssetRegistry57 from "AssetRegistry" /* 5653 */;
+import AssetRegistry58 from "AssetRegistry" /* 5654 */;
+import AssetRegistry59 from "AssetRegistry" /* 5655 */;
+import AssetRegistry60 from "AssetRegistry" /* 5656 */;
+import AssetRegistry61 from "AssetRegistry" /* 5657 */;
+import AssetRegistry62 from "AssetRegistry" /* 5658 */;
+import AssetRegistry63 from "AssetRegistry" /* 5659 */;
+import AssetRegistry64 from "AssetRegistry" /* 5660 */;
+import AssetRegistry65 from "AssetRegistry" /* 5661 */;
+import AssetRegistry66 from "AssetRegistry" /* 5662 */;
+import AssetRegistry67 from "AssetRegistry" /* 5663 */;
+import AssetRegistry68 from "AssetRegistry" /* 5664 */;
+import AssetRegistry69 from "AssetRegistry" /* 5665 */;
+import AssetRegistry70 from "AssetRegistry" /* 5666 */;
+import AssetRegistry71 from "AssetRegistry" /* 5667 */;
+import AssetRegistry72 from "AssetRegistry" /* 5668 */;
+import AssetRegistry73 from "AssetRegistry" /* 5669 */;
+import AssetRegistry74 from "AssetRegistry" /* 5670 */;
+import AssetRegistry75 from "AssetRegistry" /* 5671 */;
+import AssetRegistry76 from "AssetRegistry" /* 5672 */;
+import AssetRegistry77 from "AssetRegistry" /* 5673 */;
+import AssetRegistry78 from "AssetRegistry" /* 5674 */;
+import AssetRegistry79 from "AssetRegistry" /* 5675 */;
+import AssetRegistry80 from "AssetRegistry" /* 5676 */;
+import AssetRegistry81 from "AssetRegistry" /* 5677 */;
+import AssetRegistry82 from "AssetRegistry" /* 5678 */;
+import AssetRegistry83 from "AssetRegistry" /* 5679 */;
+import AssetRegistry84 from "AssetRegistry" /* 5680 */;
+import AssetRegistry85 from "AssetRegistry" /* 5681 */;
+import AssetRegistry86 from "AssetRegistry" /* 5682 */;
+import AssetRegistry87 from "AssetRegistry" /* 5683 */;
+import AssetRegistry88 from "AssetRegistry" /* 5684 */;
+import AssetRegistry89 from "AssetRegistry" /* 5685 */;
+import AssetRegistry90 from "AssetRegistry" /* 5686 */;
+import AssetRegistry91 from "AssetRegistry" /* 5687 */;
+import AssetRegistry92 from "AssetRegistry" /* 5688 */;
+import AssetRegistry93 from "AssetRegistry" /* 5689 */;
+import AssetRegistry94 from "AssetRegistry" /* 5690 */;
+import AssetRegistry95 from "AssetRegistry" /* 5691 */;
+import AssetRegistry96 from "AssetRegistry" /* 5692 */;
+import AssetRegistry97 from "AssetRegistry" /* 5693 */;
+import AssetRegistry98 from "AssetRegistry" /* 5694 */;
+import AssetRegistry99 from "AssetRegistry" /* 5695 */;
+import AssetRegistry100 from "AssetRegistry" /* 5696 */;
+import AssetRegistry101 from "AssetRegistry" /* 5697 */;
+import AssetRegistry102 from "AssetRegistry" /* 5698 */;
+import AssetRegistry103 from "AssetRegistry" /* 5699 */;
+import AssetRegistry104 from "AssetRegistry" /* 5700 */;
+import AssetRegistry105 from "AssetRegistry" /* 5701 */;
+import AssetRegistry106 from "AssetRegistry" /* 5702 */;
+import AssetRegistry107 from "AssetRegistry" /* 5703 */;
+import AssetRegistry108 from "AssetRegistry" /* 5704 */;
+import AssetRegistry109 from "AssetRegistry" /* 5705 */;
+import AssetRegistry110 from "AssetRegistry" /* 5706 */;
+import AssetRegistry111 from "AssetRegistry" /* 5707 */;
+import AssetRegistry112 from "AssetRegistry" /* 5708 */;
+import AssetRegistry113 from "AssetRegistry" /* 5709 */;
+import AssetRegistry114 from "AssetRegistry" /* 5710 */;
+import AssetRegistry115 from "AssetRegistry" /* 5711 */;
+import AssetRegistry116 from "AssetRegistry" /* 5712 */;
+import AssetRegistry117 from "AssetRegistry" /* 5713 */;
+import AssetRegistry118 from "AssetRegistry" /* 5714 */;
+import AssetRegistry119 from "AssetRegistry" /* 5715 */;
+import AssetRegistry120 from "AssetRegistry" /* 5716 */;
+import AssetRegistry121 from "AssetRegistry" /* 5717 */;
+import AssetRegistry122 from "AssetRegistry" /* 5718 */;
+import shims_mod from "shims" /* 587 */;
+import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
+let domains, hasOwnProperty;
+
+let obj16;
+let obj43;
+let obj7;
+let shims;
 const PlatformTypes = Constants.PlatformTypes;
 const ApplicationIdentityAppIds = UserApplicationIdentityConstants.ApplicationIdentityAppIds;
-let obj = { type: PlatformTypes.TWITCH, name: "Twitch", color: null, icon: null, enabled: true, getPlatformUserUrl: null, domains: null };
-let shims = shims_mod;
-obj.color = shims.unsafe_getRawColor("PLATFORM_TWITCH");
-obj.icon = { lightPNG: _mod5533, darkPNG: _mod5533, whitePNG: _mod5534, lightSVG: _mod5535, darkSVG: _mod5535, whiteSVG: _mod5536 };
-obj.getPlatformUserUrl = function getPlatformUserUrl(name) {
-  return "https://www.twitch.tv/" + encodeURIComponent(name.name);
+let obj = {
+  type: PlatformTypes.TWITCH,
+  name: "Twitch",
+  color: shims.unsafe_getRawColor("PLATFORM_TWITCH"),
+  icon: { lightPNG: AssetRegistry, darkPNG: AssetRegistry, whitePNG: AssetRegistry2, lightSVG: AssetRegistry3, darkSVG: AssetRegistry3, whiteSVG: AssetRegistry4 },
+  enabled: true,
+  getPlatformUserUrl(name) {
+    return "https://www.twitch.tv/" + encodeURIComponent(name.name);
+  },
+  domains: ["twitch.tv", "twitch.com"]
 };
-obj.domains = ["twitch.tv", "twitch.com"];
+shims = shims_mod;
 const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-const obj3 = { type: PlatformTypes.YOUTUBE, name: "YouTube", color: null, icon: null, enabled: true, getPlatformUserUrl: null, domains: null };
-let shims = shims_mod;
-obj3.color = shims.unsafe_getRawColor("PLATFORM_YOUTUBE");
-const obj2 = { lightPNG: _mod5533, darkPNG: _mod5533, whitePNG: _mod5534, lightSVG: _mod5535, darkSVG: _mod5535, whiteSVG: _mod5536 };
-obj3.icon = { lightPNG: _mod5537, darkPNG: _mod5537, whitePNG: _mod5538, lightSVG: _mod5539, darkSVG: _mod5539, whiteSVG: _mod5540 };
-obj3.getPlatformUserUrl = function getPlatformUserUrl(id) {
-  return "https://www.youtube.com/channel/" + encodeURIComponent(id.id);
+const obj3 = {
+  type: PlatformTypes.YOUTUBE,
+  name: "YouTube",
+  color: shims.unsafe_getRawColor("PLATFORM_YOUTUBE"),
+  icon: { lightPNG: AssetRegistry5, darkPNG: AssetRegistry5, whitePNG: AssetRegistry6, lightSVG: AssetRegistry7, darkSVG: AssetRegistry7, whiteSVG: AssetRegistry8 },
+  enabled: true,
+  getPlatformUserUrl(id) {
+    return "https://www.youtube.com/channel/" + encodeURIComponent(id.id);
+  },
+  domains: ["youtube.com", "youtu.be"]
 };
-obj3.domains = ["youtube.com", "youtu.be"];
+({ lightPNG: AssetRegistry, darkPNG: AssetRegistry, whitePNG: AssetRegistry2, lightSVG: AssetRegistry3, darkSVG: AssetRegistry3, whiteSVG: AssetRegistry4 });
+shims = shims_mod;
 items[1] = obj3;
-const obj5 = { type: PlatformTypes.BATTLENET, name: "Battle.net", color: null, icon: null, enabled: true, migrationData: null };
-let shims = shims_mod;
-obj5.color = shims.unsafe_getRawColor("PLATFORM_BATTLENET");
-const obj4 = { lightPNG: _mod5537, darkPNG: _mod5537, whitePNG: _mod5538, lightSVG: _mod5539, darkSVG: _mod5539, whiteSVG: _mod5540 };
-obj5.icon = { lightPNG: _mod5541, darkPNG: _mod5541, whitePNG: _mod5542, lightSVG: _mod5543, darkSVG: _mod5543, whiteSVG: _mod5544, blackSVG: _mod5543 };
-const obj7 = {
+const obj5 = { type: PlatformTypes.BATTLENET, name: "Battle.net", color: shims.unsafe_getRawColor("PLATFORM_BATTLENET"), icon: { lightPNG: AssetRegistry9, darkPNG: AssetRegistry9, whitePNG: AssetRegistry10, lightSVG: AssetRegistry11, darkSVG: AssetRegistry11, whiteSVG: AssetRegistry12, blackSVG: AssetRegistry11 }, enabled: true, migrationData: obj7 };
+({ lightPNG: AssetRegistry5, darkPNG: AssetRegistry5, whitePNG: AssetRegistry6, lightSVG: AssetRegistry7, darkSVG: AssetRegistry7, whiteSVG: AssetRegistry8 });
+shims = shims_mod;
+obj7 = {
   replacedBy: ApplicationIdentityAppIds.BATTLENET,
   getMigrationExperimentEnabled(location) {
     const battlenetSocialSDKMigrationExperiment = socialSDKMigration.battlenetSocialSDKMigrationExperiment;
-    return battlenetSocialSDKMigrationExperiment.getConfig({ location }).enabled;
+    const obj = { location };
+    return battlenetSocialSDKMigrationExperiment.getConfig(obj).enabled;
   },
   helpCenterLink: "https://discord.com/blog/link-world-of-warcraft-with-discord",
-  deprecationDate: null
+  deprecationDate: new Date("2026-09-22Z-07:00")
 };
-const obj6 = { lightPNG: _mod5541, darkPNG: _mod5541, whitePNG: _mod5542, lightSVG: _mod5543, darkSVG: _mod5543, whiteSVG: _mod5544, blackSVG: _mod5543 };
-obj7.deprecationDate = new Date("2026-09-22Z-07:00");
-obj5.migrationData = obj7;
+({ lightPNG: AssetRegistry9, darkPNG: AssetRegistry9, whitePNG: AssetRegistry10, lightSVG: AssetRegistry11, darkSVG: AssetRegistry11, whiteSVG: AssetRegistry12, blackSVG: AssetRegistry11 });
 items[2] = obj5;
-const obj8 = { type: PlatformTypes.BLUESKY, name: "Bluesky", icon: null, enabled: true, getPlatformUserUrl: null, isFederated: true, hasMetadata: true };
-const date = new Date("2026-09-22Z-07:00");
-obj8.icon = { lightPNG: _mod5545, darkPNG: _mod5545, whitePNG: _mod5546, lightSVG: _mod5547, darkSVG: _mod5547, whiteSVG: _mod5548 };
-obj8.getPlatformUserUrl = function getPlatformUserUrl(id) {
-  return "https://bsky.app/profile/" + encodeURIComponent(id.id).replaceAll("%3A", ":");
+const obj8 = {
+  type: PlatformTypes.BLUESKY,
+  name: "Bluesky",
+  icon: { lightPNG: AssetRegistry13, darkPNG: AssetRegistry13, whitePNG: AssetRegistry14, lightSVG: AssetRegistry15, darkSVG: AssetRegistry15, whiteSVG: AssetRegistry16 },
+  enabled: true,
+  getPlatformUserUrl(id) {
+    const encodeURIComponentResult = encodeURIComponent(id.id);
+    return "https://bsky.app/profile/" + encodeURIComponentResult.replaceAll("%3A", ":");
+  },
+  isFederated: true,
+  hasMetadata: true
 };
+new Date("2026-09-22Z-07:00");
 items[3] = obj8;
-const obj10 = { type: PlatformTypes.BUNGIE, name: "Bungie.net", color: null, icon: null, enabled: true };
-let shims = shims_mod;
-obj10.color = shims.unsafe_getRawColor("PLATFORM_BUNGIE");
-const obj9 = { lightPNG: _mod5545, darkPNG: _mod5545, whitePNG: _mod5546, lightSVG: _mod5547, darkSVG: _mod5547, whiteSVG: _mod5548 };
-obj10.icon = { lightPNG: _mod5549, darkPNG: _mod5550, whitePNG: _mod5551, lightSVG: _mod5552, darkSVG: _mod5553, whiteSVG: _mod5554 };
+const obj10 = { type: PlatformTypes.BUNGIE, name: "Bungie.net", color: shims.unsafe_getRawColor("PLATFORM_BUNGIE"), icon: { lightPNG: AssetRegistry17, darkPNG: AssetRegistry18, whitePNG: AssetRegistry19, lightSVG: AssetRegistry20, darkSVG: AssetRegistry21, whiteSVG: AssetRegistry22 }, enabled: true };
+({ lightPNG: AssetRegistry13, darkPNG: AssetRegistry13, whitePNG: AssetRegistry14, lightSVG: AssetRegistry15, darkSVG: AssetRegistry15, whiteSVG: AssetRegistry16 });
+shims = shims_mod;
 items[4] = obj10;
-const obj12 = { type: PlatformTypes.SKYPE, name: "Skype", color: null, icon: null, enabled: false, getPlatformUserUrl: null };
-let shims = shims_mod;
-obj12.color = shims.unsafe_getRawColor("PLATFORM_SKYPE");
-const obj11 = { lightPNG: _mod5549, darkPNG: _mod5550, whitePNG: _mod5551, lightSVG: _mod5552, darkSVG: _mod5553, whiteSVG: _mod5554 };
-obj12.icon = { lightPNG: _mod5555, darkPNG: _mod5555, whitePNG: _mod5556, lightSVG: _mod5557, darkSVG: _mod5557, whiteSVG: _mod5558 };
-obj12.getPlatformUserUrl = function getPlatformUserUrl(id) {
-  return "skype:" + encodeURIComponent(id.id) + "?userinfo";
+const obj12 = {
+  type: PlatformTypes.SKYPE,
+  name: "Skype",
+  color: shims.unsafe_getRawColor("PLATFORM_SKYPE"),
+  icon: { lightPNG: AssetRegistry23, darkPNG: AssetRegistry23, whitePNG: AssetRegistry24, lightSVG: AssetRegistry25, darkSVG: AssetRegistry25, whiteSVG: AssetRegistry26 },
+  enabled: false,
+  getPlatformUserUrl(id) {
+    return "skype:" + encodeURIComponent(id.id) + "?userinfo";
+  }
 };
+({ lightPNG: AssetRegistry17, darkPNG: AssetRegistry18, whitePNG: AssetRegistry19, lightSVG: AssetRegistry20, darkSVG: AssetRegistry21, whiteSVG: AssetRegistry22 });
+shims = shims_mod;
 items[5] = obj12;
-const obj14 = { type: PlatformTypes.LEAGUE_OF_LEGENDS, name: "League of Legends", color: null, icon: null, enabled: true, migrationData: null };
-let shims = shims_mod;
-obj14.color = shims.unsafe_getRawColor("PLATFORM_LOL");
-const obj13 = { lightPNG: _mod5555, darkPNG: _mod5555, whitePNG: _mod5556, lightSVG: _mod5557, darkSVG: _mod5557, whiteSVG: _mod5558 };
-obj14.icon = { lightPNG: _mod5559, darkPNG: _mod5559, whitePNG: _mod5560, lightSVG: _mod5561, darkSVG: _mod5561, whiteSVG: _mod5562 };
-const obj16 = {
+const obj14 = { type: PlatformTypes.LEAGUE_OF_LEGENDS, name: "League of Legends", color: shims.unsafe_getRawColor("PLATFORM_LOL"), icon: { lightPNG: AssetRegistry27, darkPNG: AssetRegistry27, whitePNG: AssetRegistry28, lightSVG: AssetRegistry29, darkSVG: AssetRegistry29, whiteSVG: AssetRegistry30 }, enabled: true, migrationData: obj16 };
+({ lightPNG: AssetRegistry23, darkPNG: AssetRegistry23, whitePNG: AssetRegistry24, lightSVG: AssetRegistry25, darkSVG: AssetRegistry25, whiteSVG: AssetRegistry26 });
+shims = shims_mod;
+obj16 = {
   replacedBy: ApplicationIdentityAppIds.RIOT_GAMES,
   getMigrationExperimentEnabled() {
     return true;
   },
   helpCenterLink: "https://www.riotgames.com/en/riot-games-discord-account-linking",
-  deprecationDate: null
+  deprecationDate: new Date("2026-07-10Z-07:00")
 };
-const obj15 = { lightPNG: _mod5559, darkPNG: _mod5559, whitePNG: _mod5560, lightSVG: _mod5561, darkSVG: _mod5561, whiteSVG: _mod5562 };
-obj16.deprecationDate = new Date("2026-07-10Z-07:00");
-obj14.migrationData = obj16;
+({ lightPNG: AssetRegistry27, darkPNG: AssetRegistry27, whitePNG: AssetRegistry28, lightSVG: AssetRegistry29, darkSVG: AssetRegistry29, whiteSVG: AssetRegistry30 });
 items[6] = obj14;
-const obj17 = { type: PlatformTypes.STEAM, name: "Steam", color: null, icon: null, enabled: true, getPlatformUserUrl: null, hasMetadata: true };
-let shims = shims_mod;
-obj17.color = shims.unsafe_getRawColor("PLATFORM_STEAM");
-const date1 = new Date("2026-07-10Z-07:00");
-obj17.icon = { lightPNG: _mod5563, darkPNG: _mod5564, whitePNG: _mod5564, lightSVG: _mod5565, darkSVG: _mod5566, whiteSVG: _mod5566 };
-obj17.getPlatformUserUrl = function getPlatformUserUrl(id) {
-  return "https://steamcommunity.com/profiles/" + encodeURIComponent(id.id);
+const obj17 = {
+  type: PlatformTypes.STEAM,
+  name: "Steam",
+  color: shims.unsafe_getRawColor("PLATFORM_STEAM"),
+  icon: { lightPNG: AssetRegistry31, darkPNG: AssetRegistry32, whitePNG: AssetRegistry32, lightSVG: AssetRegistry33, darkSVG: AssetRegistry34, whiteSVG: AssetRegistry34 },
+  enabled: true,
+  getPlatformUserUrl(id) {
+    return "https://steamcommunity.com/profiles/" + encodeURIComponent(id.id);
+  },
+  hasMetadata: true
 };
+new Date("2026-07-10Z-07:00");
+shims = shims_mod;
 items[7] = obj17;
-const obj19 = { type: PlatformTypes.REDDIT, name: "Reddit", color: null, icon: null, enabled: true, domains: null, getPlatformUserUrl: null, hasMetadata: true };
-let shims = shims_mod;
-obj19.color = shims.unsafe_getRawColor("PLATFORM_REDDIT");
-const obj18 = { lightPNG: _mod5563, darkPNG: _mod5564, whitePNG: _mod5564, lightSVG: _mod5565, darkSVG: _mod5566, whiteSVG: _mod5566 };
-obj19.icon = { lightPNG: _mod5567, darkPNG: _mod5567, whitePNG: _mod5568, lightSVG: _mod5569, darkSVG: _mod5569, whiteSVG: _mod5570 };
-obj19.domains = ["reddit.com"];
-obj19.getPlatformUserUrl = function getPlatformUserUrl(name) {
-  return "https://www.reddit.com/u/" + encodeURIComponent(name.name);
+const obj19 = {
+  type: PlatformTypes.REDDIT,
+  name: "Reddit",
+  color: shims.unsafe_getRawColor("PLATFORM_REDDIT"),
+  icon: { lightPNG: AssetRegistry35, darkPNG: AssetRegistry35, whitePNG: AssetRegistry36, lightSVG: AssetRegistry37, darkSVG: AssetRegistry37, whiteSVG: AssetRegistry38 },
+  enabled: true,
+  domains: ["reddit.com"],
+  getPlatformUserUrl(name) {
+    return "https://www.reddit.com/u/" + encodeURIComponent(name.name);
+  },
+  hasMetadata: true
 };
+({ lightPNG: AssetRegistry31, darkPNG: AssetRegistry32, whitePNG: AssetRegistry32, lightSVG: AssetRegistry33, darkSVG: AssetRegistry34, whiteSVG: AssetRegistry34 });
+shims = shims_mod;
 items[8] = obj19;
-const obj21 = { type: PlatformTypes.FACEBOOK, name: "Facebook", color: null, icon: null, domains: null, enabled: true };
-let shims = shims_mod;
-obj21.color = shims.unsafe_getRawColor("PLATFORM_FACEBOOK");
-const obj20 = { lightPNG: _mod5567, darkPNG: _mod5567, whitePNG: _mod5568, lightSVG: _mod5569, darkSVG: _mod5569, whiteSVG: _mod5570 };
-obj21.icon = { lightPNG: _mod5571, darkPNG: _mod5571, whitePNG: _mod5572, lightSVG: _mod5573, darkSVG: _mod5573, whiteSVG: _mod5574 };
-obj21.domains = ["facebook.com"];
+const obj21 = { type: PlatformTypes.FACEBOOK, name: "Facebook", color: shims.unsafe_getRawColor("PLATFORM_FACEBOOK"), icon: { lightPNG: AssetRegistry39, darkPNG: AssetRegistry39, whitePNG: AssetRegistry40, lightSVG: AssetRegistry41, darkSVG: AssetRegistry41, whiteSVG: AssetRegistry42 }, domains: ["facebook.com"], enabled: true };
+({ lightPNG: AssetRegistry35, darkPNG: AssetRegistry35, whitePNG: AssetRegistry36, lightSVG: AssetRegistry37, darkSVG: AssetRegistry37, whiteSVG: AssetRegistry38 });
+shims = shims_mod;
 items[9] = obj21;
-const obj23 = { type: PlatformTypes.TWITTER_LEGACY, name: "Twitter", color: null, icon: null, enabled: false, getPlatformUserUrl: null, domains: null, hasMetadata: true };
-let shims = shims_mod;
-obj23.color = shims.unsafe_getRawColor("PLATFORM_TWITTER");
-const obj22 = { lightPNG: _mod5571, darkPNG: _mod5571, whitePNG: _mod5572, lightSVG: _mod5573, darkSVG: _mod5573, whiteSVG: _mod5574 };
-obj23.icon = { lightPNG: _mod5575, darkPNG: _mod5575, whitePNG: _mod5576, lightSVG: _mod5577, darkSVG: _mod5577, whiteSVG: _mod5578 };
-obj23.getPlatformUserUrl = function getPlatformUserUrl(name) {
-  return "https://twitter.com/" + encodeURIComponent(name.name);
+const obj23 = {
+  type: PlatformTypes.TWITTER_LEGACY,
+  name: "Twitter",
+  color: shims.unsafe_getRawColor("PLATFORM_TWITTER"),
+  icon: { lightPNG: AssetRegistry43, darkPNG: AssetRegistry43, whitePNG: AssetRegistry44, lightSVG: AssetRegistry45, darkSVG: AssetRegistry45, whiteSVG: AssetRegistry46 },
+  enabled: false,
+  getPlatformUserUrl(name) {
+    return "https://twitter.com/" + encodeURIComponent(name.name);
+  },
+  domains: ["twitter.com"],
+  hasMetadata: true
 };
-obj23.domains = ["twitter.com"];
+({ lightPNG: AssetRegistry39, darkPNG: AssetRegistry39, whitePNG: AssetRegistry40, lightSVG: AssetRegistry41, darkSVG: AssetRegistry41, whiteSVG: AssetRegistry42 });
+shims = shims_mod;
 items[10] = obj23;
-const obj25 = { type: PlatformTypes.TWITTER, name: "X", color: null, icon: null, enabled: true, getPlatformUserUrl: null, domains: null, hasMetadata: true };
-let shims = shims_mod;
-obj25.color = shims.unsafe_getRawColor("PLATFORM_TWITTER");
-const obj24 = { lightPNG: _mod5575, darkPNG: _mod5575, whitePNG: _mod5576, lightSVG: _mod5577, darkSVG: _mod5577, whiteSVG: _mod5578 };
-obj25.icon = { lightPNG: _mod5579, darkPNG: _mod5580, whitePNG: _mod5581, lightSVG: _mod5582, darkSVG: _mod5583, whiteSVG: _mod5584 };
-obj25.getPlatformUserUrl = function getPlatformUserUrl(name) {
-  return "https://x.com/" + encodeURIComponent(name.name);
+const obj25 = {
+  type: PlatformTypes.TWITTER,
+  name: "X",
+  color: shims.unsafe_getRawColor("PLATFORM_TWITTER"),
+  icon: { lightPNG: AssetRegistry47, darkPNG: AssetRegistry48, whitePNG: AssetRegistry49, lightSVG: AssetRegistry50, darkSVG: AssetRegistry51, whiteSVG: AssetRegistry52 },
+  enabled: true,
+  getPlatformUserUrl(name) {
+    return "https://x.com/" + encodeURIComponent(name.name);
+  },
+  domains: ["x.com"],
+  hasMetadata: true
 };
-obj25.domains = ["x.com"];
+({ lightPNG: AssetRegistry43, darkPNG: AssetRegistry43, whitePNG: AssetRegistry44, lightSVG: AssetRegistry45, darkSVG: AssetRegistry45, whiteSVG: AssetRegistry46 });
+shims = shims_mod;
 items[11] = obj25;
-const obj27 = { type: PlatformTypes.SPOTIFY, name: "Spotify", color: null, icon: null, enabled: true, getPlatformUserUrl: null };
-let shims = shims_mod;
-obj27.color = shims.unsafe_getRawColor("PLATFORM_SPOTIFY");
-const obj26 = { lightPNG: _mod5579, darkPNG: _mod5580, whitePNG: _mod5581, lightSVG: _mod5582, darkSVG: _mod5583, whiteSVG: _mod5584 };
-obj27.icon = { lightPNG: _mod5585, darkPNG: _mod5585, whitePNG: _mod5586, lightSVG: _mod5587, darkSVG: _mod5587, whiteSVG: _mod5588 };
-obj27.getPlatformUserUrl = function getPlatformUserUrl(id) {
-  return "https://open.spotify.com/user/" + encodeURIComponent(id.id);
+const obj27 = {
+  type: PlatformTypes.SPOTIFY,
+  name: "Spotify",
+  color: shims.unsafe_getRawColor("PLATFORM_SPOTIFY"),
+  icon: { lightPNG: AssetRegistry53, darkPNG: AssetRegistry53, whitePNG: AssetRegistry54, lightSVG: AssetRegistry55, darkSVG: AssetRegistry55, whiteSVG: AssetRegistry56 },
+  enabled: true,
+  getPlatformUserUrl(id) {
+    return "https://open.spotify.com/user/" + encodeURIComponent(id.id);
+  }
 };
+({ lightPNG: AssetRegistry47, darkPNG: AssetRegistry48, whitePNG: AssetRegistry49, lightSVG: AssetRegistry50, darkSVG: AssetRegistry51, whiteSVG: AssetRegistry52 });
+shims = shims_mod;
 items[12] = obj27;
-const obj29 = { type: PlatformTypes.XBOX, name: "Xbox", color: null, icon: null, enabled: true };
-let shims = shims_mod;
-obj29.color = shims.unsafe_getRawColor("PLATFORM_XBOX");
-const obj28 = { lightPNG: _mod5585, darkPNG: _mod5585, whitePNG: _mod5586, lightSVG: _mod5587, darkSVG: _mod5587, whiteSVG: _mod5588 };
-obj29.icon = { lightPNG: _mod5589, darkPNG: _mod5590, whitePNG: _mod5590, lightSVG: _mod5591, darkSVG: _mod5592, whiteSVG: _mod5592, customPNG: _mod5593 };
+const obj29 = { type: PlatformTypes.XBOX, name: "Xbox", color: shims.unsafe_getRawColor("PLATFORM_XBOX"), icon: { lightPNG: AssetRegistry57, darkPNG: AssetRegistry58, whitePNG: AssetRegistry58, lightSVG: AssetRegistry59, darkSVG: AssetRegistry60, whiteSVG: AssetRegistry60, customPNG: AssetRegistry61 }, enabled: true };
+({ lightPNG: AssetRegistry53, darkPNG: AssetRegistry53, whitePNG: AssetRegistry54, lightSVG: AssetRegistry55, darkSVG: AssetRegistry55, whiteSVG: AssetRegistry56 });
+shims = shims_mod;
 items[13] = obj29;
-const obj31 = { type: PlatformTypes.SAMSUNG, name: "Samsung Galaxy", color: null, icon: null, enabled: false };
-let shims = shims_mod;
-obj31.color = shims.unsafe_getRawColor("PLATFORM_SAMSUNG");
-const obj30 = { lightPNG: _mod5589, darkPNG: _mod5590, whitePNG: _mod5590, lightSVG: _mod5591, darkSVG: _mod5592, whiteSVG: _mod5592, customPNG: _mod5593 };
-obj31.icon = { lightPNG: _mod5594, darkPNG: _mod5594, whitePNG: _mod5595, lightSVG: _mod5596, darkSVG: _mod5596, whiteSVG: _mod5597 };
+const obj31 = { type: PlatformTypes.SAMSUNG, name: "Samsung Galaxy", color: shims.unsafe_getRawColor("PLATFORM_SAMSUNG"), icon: { lightPNG: AssetRegistry62, darkPNG: AssetRegistry62, whitePNG: AssetRegistry63, lightSVG: AssetRegistry64, darkSVG: AssetRegistry64, whiteSVG: AssetRegistry65 }, enabled: false };
+({ lightPNG: AssetRegistry57, darkPNG: AssetRegistry58, whitePNG: AssetRegistry58, lightSVG: AssetRegistry59, darkSVG: AssetRegistry60, whiteSVG: AssetRegistry60, customPNG: AssetRegistry61 });
+shims = shims_mod;
 items[14] = obj31;
-const obj33 = { type: PlatformTypes.GITHUB, name: "GitHub", color: null, icon: null, enabled: true, getPlatformUserUrl: null, domains: null };
-let shims = shims_mod;
-obj33.color = shims.unsafe_getRawColor("PLATFORM_GITHUB");
-const obj32 = { lightPNG: _mod5594, darkPNG: _mod5594, whitePNG: _mod5595, lightSVG: _mod5596, darkSVG: _mod5596, whiteSVG: _mod5597 };
-obj33.icon = { lightPNG: _mod5598, darkPNG: _mod5599, whitePNG: _mod5599, lightSVG: _mod5600, darkSVG: _mod5601, whiteSVG: _mod5601 };
-obj33.getPlatformUserUrl = function getPlatformUserUrl(name) {
-  return "https://github.com/" + encodeURIComponent(name.name);
+const obj33 = {
+  type: PlatformTypes.GITHUB,
+  name: "GitHub",
+  color: shims.unsafe_getRawColor("PLATFORM_GITHUB"),
+  icon: { lightPNG: AssetRegistry66, darkPNG: AssetRegistry67, whitePNG: AssetRegistry67, lightSVG: AssetRegistry68, darkSVG: AssetRegistry69, whiteSVG: AssetRegistry69 },
+  enabled: true,
+  getPlatformUserUrl(name) {
+    return "https://github.com/" + encodeURIComponent(name.name);
+  },
+  domains: ["github.com"]
 };
-obj33.domains = ["github.com"];
+({ lightPNG: AssetRegistry62, darkPNG: AssetRegistry62, whitePNG: AssetRegistry63, lightSVG: AssetRegistry64, darkSVG: AssetRegistry64, whiteSVG: AssetRegistry65 });
+shims = shims_mod;
 items[15] = obj33;
-const obj35 = { type: PlatformTypes.PLAYSTATION, name: "PlayStation Network", color: null, icon: null, enabled: true };
-let shims = shims_mod;
-obj35.color = shims.unsafe_getRawColor("PLATFORM_PLAYSTATION");
-const obj34 = { lightPNG: _mod5598, darkPNG: _mod5599, whitePNG: _mod5599, lightSVG: _mod5600, darkSVG: _mod5601, whiteSVG: _mod5601 };
-obj35.icon = { lightPNG: _mod5602, darkPNG: _mod5603, whitePNG: _mod5603, lightSVG: _mod5604, darkSVG: _mod5605, whiteSVG: _mod5605 };
+const obj35 = { type: PlatformTypes.PLAYSTATION, name: "PlayStation Network", color: shims.unsafe_getRawColor("PLATFORM_PLAYSTATION"), icon: { lightPNG: AssetRegistry70, darkPNG: AssetRegistry71, whitePNG: AssetRegistry71, lightSVG: AssetRegistry72, darkSVG: AssetRegistry73, whiteSVG: AssetRegistry73 }, enabled: true };
+({ lightPNG: AssetRegistry66, darkPNG: AssetRegistry67, whitePNG: AssetRegistry67, lightSVG: AssetRegistry68, darkSVG: AssetRegistry69, whiteSVG: AssetRegistry69 });
+shims = shims_mod;
 items[16] = obj35;
-const obj37 = { type: PlatformTypes.PLAYSTATION_STAGING, name: "PlayStation Network (Staging)", color: null, icon: null, enabled: false };
-let shims = shims_mod;
-obj37.color = shims.unsafe_getRawColor("PLATFORM_PLAYSTATION");
-const obj36 = { lightPNG: _mod5602, darkPNG: _mod5603, whitePNG: _mod5603, lightSVG: _mod5604, darkSVG: _mod5605, whiteSVG: _mod5605 };
-obj37.icon = { lightPNG: _mod5603, darkPNG: _mod5602, whitePNG: _mod5602, lightSVG: _mod5605, darkSVG: _mod5604, whiteSVG: _mod5604 };
+const obj37 = { type: PlatformTypes.PLAYSTATION_STAGING, name: "PlayStation Network (Staging)", color: shims.unsafe_getRawColor("PLATFORM_PLAYSTATION"), icon: { lightPNG: AssetRegistry71, darkPNG: AssetRegistry70, whitePNG: AssetRegistry70, lightSVG: AssetRegistry73, darkSVG: AssetRegistry72, whiteSVG: AssetRegistry72 }, enabled: false };
+({ lightPNG: AssetRegistry70, darkPNG: AssetRegistry71, whitePNG: AssetRegistry71, lightSVG: AssetRegistry72, darkSVG: AssetRegistry73, whiteSVG: AssetRegistry73 });
+shims = shims_mod;
 items[17] = obj37;
-const obj39 = { type: PlatformTypes.EPIC_GAMES, name: "Epic Games", icon: null, enabled: true };
-const obj38 = { lightPNG: _mod5603, darkPNG: _mod5602, whitePNG: _mod5602, lightSVG: _mod5605, darkSVG: _mod5604, whiteSVG: _mod5604 };
-obj39.icon = { lightPNG: _mod5606, darkPNG: _mod5607, whitePNG: _mod5607, lightSVG: _mod5608, darkSVG: _mod5609, whiteSVG: _mod5609 };
+const obj39 = { type: PlatformTypes.EPIC_GAMES, name: "Epic Games", icon: { lightPNG: AssetRegistry74, darkPNG: AssetRegistry75, whitePNG: AssetRegistry75, lightSVG: AssetRegistry76, darkSVG: AssetRegistry77, whiteSVG: AssetRegistry77 }, enabled: true };
+({ lightPNG: AssetRegistry71, darkPNG: AssetRegistry70, whitePNG: AssetRegistry70, lightSVG: AssetRegistry73, darkSVG: AssetRegistry72, whiteSVG: AssetRegistry72 });
 items[18] = obj39;
-const obj41 = { type: PlatformTypes.RIOT_GAMES, name: "Riot Games", icon: null, enabled: true, migrationData: null };
-const obj40 = { lightPNG: _mod5606, darkPNG: _mod5607, whitePNG: _mod5607, lightSVG: _mod5608, darkSVG: _mod5609, whiteSVG: _mod5609 };
-obj41.icon = { lightPNG: _mod5610, darkPNG: _mod5610, whitePNG: _mod5611, lightSVG: _mod5612, darkSVG: _mod5612, whiteSVG: _mod5613, blackSVG: _mod5614 };
-const obj43 = {
+const obj41 = { type: PlatformTypes.RIOT_GAMES, name: "Riot Games", icon: { lightPNG: AssetRegistry78, darkPNG: AssetRegistry78, whitePNG: AssetRegistry79, lightSVG: AssetRegistry80, darkSVG: AssetRegistry80, whiteSVG: AssetRegistry81, blackSVG: AssetRegistry82 }, enabled: true, migrationData: obj43 };
+({ lightPNG: AssetRegistry74, darkPNG: AssetRegistry75, whitePNG: AssetRegistry75, lightSVG: AssetRegistry76, darkSVG: AssetRegistry77, whiteSVG: AssetRegistry77 });
+obj43 = {
   replacedBy: ApplicationIdentityAppIds.RIOT_GAMES,
   getMigrationExperimentEnabled() {
     return true;
   },
   helpCenterLink: "https://www.riotgames.com/en/riot-games-discord-account-linking",
-  deprecationDate: null
+  deprecationDate: new Date("2026-07-10Z-07:00")
 };
-const obj42 = { lightPNG: _mod5610, darkPNG: _mod5610, whitePNG: _mod5611, lightSVG: _mod5612, darkSVG: _mod5612, whiteSVG: _mod5613, blackSVG: _mod5614 };
-obj43.deprecationDate = new Date("2026-07-10Z-07:00");
-obj41.migrationData = obj43;
+({ lightPNG: AssetRegistry78, darkPNG: AssetRegistry78, whitePNG: AssetRegistry79, lightSVG: AssetRegistry80, darkSVG: AssetRegistry80, whiteSVG: AssetRegistry81, blackSVG: AssetRegistry82 });
 items[19] = obj41;
-const obj44 = { type: PlatformTypes.ROBLOX, name: "Roblox", icon: null, enabled: true, getPlatformUserUrl: null };
-const date2 = new Date("2026-07-10Z-07:00");
-obj44.icon = { lightPNG: _mod5615, darkPNG: _mod5616, whitePNG: _mod5617, lightSVG: _mod5618, darkSVG: _mod5619, whiteSVG: _mod5620 };
-obj44.getPlatformUserUrl = function getPlatformUserUrl(id) {
-  return "https://roblox.com/users/" + encodeURIComponent(id.id) + "/profile";
+const obj44 = {
+  type: PlatformTypes.ROBLOX,
+  name: "Roblox",
+  icon: { lightPNG: AssetRegistry83, darkPNG: AssetRegistry84, whitePNG: AssetRegistry85, lightSVG: AssetRegistry86, darkSVG: AssetRegistry87, whiteSVG: AssetRegistry88 },
+  enabled: true,
+  getPlatformUserUrl(id) {
+    return "https://roblox.com/users/" + encodeURIComponent(id.id) + "/profile";
+  }
 };
+new Date("2026-07-10Z-07:00");
 items[20] = obj44;
-const obj46 = { type: PlatformTypes.PAYPAL, name: "PayPal", icon: null, enabled: true, hasMetadata: true };
-const obj45 = { lightPNG: _mod5615, darkPNG: _mod5616, whitePNG: _mod5617, lightSVG: _mod5618, darkSVG: _mod5619, whiteSVG: _mod5620 };
-obj46.icon = { lightPNG: _mod5621, darkPNG: _mod5621, whitePNG: _mod5622, lightSVG: _mod5623, darkSVG: _mod5623, whiteSVG: _mod5624 };
+const obj46 = { type: PlatformTypes.PAYPAL, name: "PayPal", icon: { lightPNG: AssetRegistry89, darkPNG: AssetRegistry89, whitePNG: AssetRegistry90, lightSVG: AssetRegistry91, darkSVG: AssetRegistry91, whiteSVG: AssetRegistry92 }, enabled: true, hasMetadata: true };
+({ lightPNG: AssetRegistry83, darkPNG: AssetRegistry84, whitePNG: AssetRegistry85, lightSVG: AssetRegistry86, darkSVG: AssetRegistry87, whiteSVG: AssetRegistry88 });
 items[21] = obj46;
-const obj48 = { type: PlatformTypes.EBAY, name: "eBay", icon: null, enabled: true, hasMetadata: true, getPlatformUserUrl: null };
-const obj47 = { lightPNG: _mod5621, darkPNG: _mod5621, whitePNG: _mod5622, lightSVG: _mod5623, darkSVG: _mod5623, whiteSVG: _mod5624 };
-obj48.icon = { lightPNG: _mod5625, darkPNG: _mod5625, whitePNG: _mod5626, lightSVG: _mod5627, darkSVG: _mod5627, whiteSVG: _mod5628 };
-obj48.getPlatformUserUrl = function getPlatformUserUrl(name) {
-  return "https://www.ebay.com/usr/" + encodeURIComponent(name.name);
+const obj48 = {
+  type: PlatformTypes.EBAY,
+  name: "eBay",
+  icon: { lightPNG: AssetRegistry93, darkPNG: AssetRegistry93, whitePNG: AssetRegistry94, lightSVG: AssetRegistry95, darkSVG: AssetRegistry95, whiteSVG: AssetRegistry96 },
+  enabled: true,
+  hasMetadata: true,
+  getPlatformUserUrl(name) {
+    return "https://www.ebay.com/usr/" + encodeURIComponent(name.name);
+  }
 };
+({ lightPNG: AssetRegistry89, darkPNG: AssetRegistry89, whitePNG: AssetRegistry90, lightSVG: AssetRegistry91, darkSVG: AssetRegistry91, whiteSVG: AssetRegistry92 });
 items[22] = obj48;
-const obj50 = { type: PlatformTypes.TIKTOK, name: "TikTok", icon: null, enabled: false, hasMetadata: true, domains: null, getPlatformUserUrl: null };
-const obj49 = { lightPNG: _mod5625, darkPNG: _mod5625, whitePNG: _mod5626, lightSVG: _mod5627, darkSVG: _mod5627, whiteSVG: _mod5628 };
-obj50.icon = { lightPNG: _mod5629, darkPNG: _mod5630, whitePNG: _mod5630, lightSVG: _mod5631, darkSVG: _mod5632, whiteSVG: _mod5632 };
-obj50.domains = ["tiktok.com"];
-obj50.getPlatformUserUrl = function getPlatformUserUrl(name) {
-  return "https://www.tiktok.com/@" + encodeURIComponent(name.name);
+const obj50 = {
+  type: PlatformTypes.TIKTOK,
+  name: "TikTok",
+  icon: { lightPNG: AssetRegistry97, darkPNG: AssetRegistry98, whitePNG: AssetRegistry98, lightSVG: AssetRegistry99, darkSVG: AssetRegistry100, whiteSVG: AssetRegistry100 },
+  enabled: false,
+  hasMetadata: true,
+  domains: ["tiktok.com"],
+  getPlatformUserUrl(name) {
+    return "https://www.tiktok.com/@" + encodeURIComponent(name.name);
+  }
 };
+({ lightPNG: AssetRegistry93, darkPNG: AssetRegistry93, whitePNG: AssetRegistry94, lightSVG: AssetRegistry95, darkSVG: AssetRegistry95, whiteSVG: AssetRegistry96 });
 items[23] = obj50;
-const obj52 = { type: PlatformTypes.INSTAGRAM, name: "Instagram", icon: null, enabled: false, domains: null, getPlatformUserUrl: null };
-const obj51 = { lightPNG: _mod5629, darkPNG: _mod5630, whitePNG: _mod5630, lightSVG: _mod5631, darkSVG: _mod5632, whiteSVG: _mod5632 };
-obj52.icon = { lightPNG: _mod5633, darkPNG: _mod5633, whitePNG: _mod5634, lightSVG: _mod5635, darkSVG: _mod5635, whiteSVG: _mod5636 };
-obj52.domains = ["instagram.com"];
-obj52.getPlatformUserUrl = function getPlatformUserUrl(name) {
-  return "https://www.instagram.com/" + encodeURIComponent(name.name);
+const obj52 = {
+  type: PlatformTypes.INSTAGRAM,
+  name: "Instagram",
+  icon: { lightPNG: AssetRegistry101, darkPNG: AssetRegistry101, whitePNG: AssetRegistry102, lightSVG: AssetRegistry103, darkSVG: AssetRegistry103, whiteSVG: AssetRegistry104 },
+  enabled: false,
+  domains: ["instagram.com"],
+  getPlatformUserUrl(name) {
+    return "https://www.instagram.com/" + encodeURIComponent(name.name);
+  }
 };
+({ lightPNG: AssetRegistry97, darkPNG: AssetRegistry98, whitePNG: AssetRegistry98, lightSVG: AssetRegistry99, darkSVG: AssetRegistry100, whiteSVG: AssetRegistry100 });
 items[24] = obj52;
-const obj54 = { type: PlatformTypes.MASTODON, name: "Mastodon", icon: null, enabled: false, getPlatformUserUrl: null, isFederated: true, hasMetadata: true };
-const obj53 = { lightPNG: _mod5633, darkPNG: _mod5633, whitePNG: _mod5634, lightSVG: _mod5635, darkSVG: _mod5635, whiteSVG: _mod5636 };
-obj54.icon = { lightPNG: _mod5637, darkPNG: _mod5637, whitePNG: _mod5638, lightSVG: _mod5639, darkSVG: _mod5639, whiteSVG: _mod5640 };
-obj54.getPlatformUserUrl = function getPlatformUserUrl(id) {
-  return id.id;
+const obj54 = {
+  type: PlatformTypes.MASTODON,
+  name: "Mastodon",
+  icon: { lightPNG: AssetRegistry105, darkPNG: AssetRegistry105, whitePNG: AssetRegistry106, lightSVG: AssetRegistry107, darkSVG: AssetRegistry107, whiteSVG: AssetRegistry108 },
+  enabled: false,
+  getPlatformUserUrl(id) {
+    return id.id;
+  },
+  isFederated: true,
+  hasMetadata: true
 };
+({ lightPNG: AssetRegistry101, darkPNG: AssetRegistry101, whitePNG: AssetRegistry102, lightSVG: AssetRegistry103, darkSVG: AssetRegistry103, whiteSVG: AssetRegistry104 });
 items[25] = obj54;
-const obj56 = { type: PlatformTypes.CRUNCHYROLL, name: "Crunchyroll", color: null, icon: null, enabled: true };
-let shims = shims_mod;
-obj56.color = shims.unsafe_getRawColor("PLATFORM_CRUNCHYROLL");
-const obj55 = { lightPNG: _mod5637, darkPNG: _mod5637, whitePNG: _mod5638, lightSVG: _mod5639, darkSVG: _mod5639, whiteSVG: _mod5640 };
-obj56.icon = { lightPNG: _mod5641, darkPNG: _mod5641, whitePNG: _mod5641, lightSVG: _mod5642, darkSVG: _mod5642, whiteSVG: _mod5643 };
+const obj56 = { type: PlatformTypes.CRUNCHYROLL, name: "Crunchyroll", color: shims.unsafe_getRawColor("PLATFORM_CRUNCHYROLL"), icon: { lightPNG: AssetRegistry109, darkPNG: AssetRegistry109, whitePNG: AssetRegistry109, lightSVG: AssetRegistry110, darkSVG: AssetRegistry110, whiteSVG: AssetRegistry111 }, enabled: true };
+({ lightPNG: AssetRegistry105, darkPNG: AssetRegistry105, whitePNG: AssetRegistry106, lightSVG: AssetRegistry107, darkSVG: AssetRegistry107, whiteSVG: AssetRegistry108 });
+shims = shims_mod;
 items[26] = obj56;
-const obj58 = { type: PlatformTypes.DOMAIN, name: "Domain", icon: null, getPlatformUserUrl: null, enabled: true };
-const obj57 = { lightPNG: _mod5641, darkPNG: _mod5641, whitePNG: _mod5641, lightSVG: _mod5642, darkSVG: _mod5642, whiteSVG: _mod5643 };
-obj58.icon = { lightPNG: _mod5644, darkPNG: _mod5645, whitePNG: _mod5645, lightSVG: _mod5646, darkSVG: _mod5647, whiteSVG: _mod5647 };
-obj58.getPlatformUserUrl = function getPlatformUserUrl(id) {
-  return "https://" + id.id + "/";
+const obj58 = {
+  type: PlatformTypes.DOMAIN,
+  name: "Domain",
+  icon: { lightPNG: AssetRegistry112, darkPNG: AssetRegistry113, whitePNG: AssetRegistry113, lightSVG: AssetRegistry114, darkSVG: AssetRegistry115, whiteSVG: AssetRegistry115 },
+  getPlatformUserUrl(id) {
+    return "https://" + id.id + "/";
+  },
+  enabled: true
 };
+({ lightPNG: AssetRegistry109, darkPNG: AssetRegistry109, whitePNG: AssetRegistry109, lightSVG: AssetRegistry110, darkSVG: AssetRegistry110, whiteSVG: AssetRegistry111 });
 items[27] = obj58;
-const obj60 = { type: PlatformTypes.AMAZON_MUSIC, name: "Amazon Music", icon: null, enabled: true };
-const obj59 = { lightPNG: _mod5644, darkPNG: _mod5645, whitePNG: _mod5645, lightSVG: _mod5646, darkSVG: _mod5647, whiteSVG: _mod5647 };
-obj60.icon = { lightPNG: _mod5648, darkPNG: _mod5648, whitePNG: _mod5648, lightSVG: _mod5649, darkSVG: _mod5649, whiteSVG: _mod5649 };
+const obj60 = { type: PlatformTypes.AMAZON_MUSIC, name: "Amazon Music", icon: { lightPNG: AssetRegistry116, darkPNG: AssetRegistry116, whitePNG: AssetRegistry116, lightSVG: AssetRegistry117, darkSVG: AssetRegistry117, whiteSVG: AssetRegistry117 }, enabled: true };
+({ lightPNG: AssetRegistry112, darkPNG: AssetRegistry113, whitePNG: AssetRegistry113, lightSVG: AssetRegistry114, darkSVG: AssetRegistry115, whiteSVG: AssetRegistry115 });
 items[28] = obj60;
-const obj62 = { type: PlatformTypes.META_QUEST_OR_HORIZON, name: "Meta Quest", icon: null, enabled: false };
-const obj61 = { lightPNG: _mod5648, darkPNG: _mod5648, whitePNG: _mod5648, lightSVG: _mod5649, darkSVG: _mod5649, whiteSVG: _mod5649 };
-obj62.icon = { lightPNG: _mod5650, darkPNG: _mod5651, whitePNG: _mod5652, lightSVG: _mod5653, darkSVG: _mod5654, whiteSVG: _mod5654 };
+const obj62 = { type: PlatformTypes.META_QUEST_OR_HORIZON, name: "Meta Quest", icon: { lightPNG: AssetRegistry118, darkPNG: AssetRegistry119, whitePNG: AssetRegistry120, lightSVG: AssetRegistry121, darkSVG: AssetRegistry122, whiteSVG: AssetRegistry122 }, enabled: false };
+({ lightPNG: AssetRegistry116, darkPNG: AssetRegistry116, whitePNG: AssetRegistry116, lightSVG: AssetRegistry117, darkSVG: AssetRegistry117, whiteSVG: AssetRegistry117 });
 items[29] = obj62;
-let closure_4 = apply.keyBy(items, "type");
+({ lightPNG: AssetRegistry118, darkPNG: AssetRegistry119, whitePNG: AssetRegistry120, lightSVG: AssetRegistry121, darkSVG: AssetRegistry122, whiteSVG: AssetRegistry122 });
+let closure_4 = module_12.keyBy(items, "type");
 let closure_5 = {};
 let item = items.forEach((domains) => {
-  closure_0 = domains;
+  let closure_0 = domains;
   domains = domains.domains;
   if (domains != null) {
     const item = domains.forEach((item) => {
-      closure_5[item] = closure_0;
+      closure_5[item] = domains;
     });
   }
 });
-const result = size.fileFinishedImporting("lib/Platforms.tsx");
-
-export default {
+const obj64 = {
   get(arg0) {
     let tmp = closure_4[arg0];
     if (tmp == null) {
@@ -404,7 +455,8 @@ export default {
     return tmp;
   },
   getByUrl(url) {
-    const toURLSafeResult = URLUtilsDefault.toURLSafe(url);
+    const obj = URLUtilsDefault;
+    const toURLSafeResult = obj.toURLSafe(url);
     if (null != toURLSafeResult) {
       const hostname = toURLSafeResult.hostname;
       let substr = hostname;
@@ -414,10 +466,9 @@ export default {
       return closure_5[substr];
     }
   },
-  isSupported(key10009) {
+  isSupported(arg0) {
     hasOwnProperty = Object.prototype.hasOwnProperty;
-    const call = hasOwnProperty.call;
-    return typeof call === "unknown" ? hasOwnProperty(key10009) : call(closure_4, key10009);
+    return hasOwnProperty.call(closure_4, arg0);
   },
   map(arg0) {
     return items.map(arg0);
@@ -430,7 +481,10 @@ export default {
     });
     return found;
   },
-  find(_messages) {
-    return items.find(_messages);
+  find(cResult) {
+    return items.find(cResult);
   }
 };
+const result = size.fileFinishedImporting("lib/Platforms.tsx");
+
+export default obj64;

@@ -1,9 +1,11 @@
 // Module ID: 10406
 // Function ID: 10407
-// Dependencies: [1121]
+// Dependencies: []
 
 // Module 10406
-import registerAsset from "module_1121" /* 1121 */;
+let closure_1 = raw(HermesBuiltin.getTemplateObject(false, "\\p{Emoji}(?:\\p{EMod}|[\\u{E0020}-\\u{E007E}]+\\u{E007F}|\\uFE0F?\\u20E3?)", "p{Emoji}(?:p{EMod}|[\u{E0020}-\u{E007E}]+\u{E007F}|\uFE0F?\u20E3?)"));
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b001972a2062de923c0ef45fb0f2ab23", name: "VideoIcon", type: "png" });
+export default () => {
+  const regExp = new RegExp(raw(HermesBuiltin.getTemplateObject(false, "\\p{RI}{2}|(?![#*\\d](?!\\uFE0F?\\u20E3))", "(?:\\u200D", ")*", "p{RI}{2}|(?![#*d](?!\uFE0F?\u20E3))", "(?:\u200D", ")*"), closure_1, closure_1), "gu");
+  return regExp;
+};

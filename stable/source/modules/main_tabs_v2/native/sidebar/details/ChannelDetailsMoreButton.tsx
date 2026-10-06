@@ -1,37 +1,94 @@
-// Module ID: 17208
-// Function ID: 17209
+// Module ID: 16558
+// Function ID: 16559
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 11206, 8142, 8139, 1115, 9930, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 10417, 1127, 7298, 7292, 9068, 2]
 
-// Module 17208 (ChannelDetailsMoreButton)
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8142 */;
-import _modDef9930 from "module_9930" /* 9930 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11206 */;
-import noop from "module_19" /* 19 */;
+// Module 16558 (ChannelDetailsMoreButton)
+import Fragment from "Fragment" /* 21 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7298 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9068 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10417 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx");
+let channel;
 
-export default function MoreButton(channel) {
+const jsx = Fragment.jsx;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let tmp4;
+  let tmp = channel;
+  const obj = channel(576);
+  const cResult = obj.c(5);
+  channel = channel.channel;
+  if (cResult[0] !== channel) {
+    const fn = function l() {
+      let tmp = null != channel;
+      if (tmp) {
+        tmp = channel.isDM() || channel.isMultiUserDM();
+        channel.isDM() || channel.isMultiUserDM();
+      }
+      if (tmp) {
+        const obj2 = openChannelLongPressActionSheet;
+        const result = obj2.openChannelLongPressActionSheet(obj.id);
+      }
+    };
+    cResult[0] = channel;
+    cResult[1] = fn;
+    tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  let tmp5 = null;
+  if (null != channel) {
+    if (channel.isDM()) {
+      let tmp7;
+      let tmp9;
+      const _Symbol = Symbol;
+      if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(1127).intl;
+        const stringResult = intl.string(tmp(1127).t["UKOtz+"]);
+        cResult[2] = stringResult;
+        tmp7 = stringResult;
+      } else {
+        tmp7 = cResult[2];
+      }
+      if (cResult[3] !== tmp4) {
+        ({ accessibilityLabel: tmp7, source: AssetRegistryDefault, onPress: tmp4 });
+        PressableNavigatorButtonWrapperDefault;
+        const HeaderIconButton = tmp(7292).HeaderIconButton;
+        const tmp13 = <tmp12>{null}</tmp12>;
+        cResult[3] = tmp4;
+        cResult[4] = tmp13;
+        tmp9 = tmp13;
+      } else {
+        tmp9 = cResult[4];
+      }
+      tmp5 = tmp9;
+    } else {
+      tmp5 = null;
+    }
+  }
+  return tmp5;
+}) : ((channel) => {
+  let intl;
+  let tmp;
   channel = channel.channel;
   [][0] = channel;
   let tmp2 = null;
   if (null != channel) {
     if (channel.isDM()) {
-      const obj = { children: null };
-      let obj2 = { accessibilityLabel: null, source: null, onPress: null };
-      const intl = channel(1115).intl;
-      obj2.accessibilityLabel = intl.string(channel(1115).t["UKOtz+"]);
-      obj2.source = _modDef9930;
-      obj2.onPress = tmp;
-      obj.children = jsx(channel(8139).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
-      tmp2 = jsx(PressableNavigatorButtonWrapperDefault, { children: null });
+      let obj2 = { accessibilityLabel: intl.string(channel(1127).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
+      PressableNavigatorButtonWrapperDefault;
+      const HeaderIconButton = channel(7292).HeaderIconButton;
+      intl = channel(1127).intl;
+      tmp2 = <tmp6>{null}</tmp6>;
     } else {
       tmp2 = null;
     }
   }
   return tmp2;
-};
+});
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx");
+
+export default tmp2;

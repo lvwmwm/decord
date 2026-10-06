@@ -1,19 +1,22 @@
-// Module ID: 9609
-// Function ID: 9610
+// Module ID: 8761
+// Function ID: 8762
 // Name: WebViewPostMessageTransport
-// Dependencies: [3, 9610, 9611, 9617, 9621, 2]
+// Dependencies: [3, 8762, 8763, 8769, 8773, 2]
 
-// Module 9609 (WebViewPostMessageTransport)
+// Module 8761 (WebViewPostMessageTransport)
 import LoggerDefault from "Logger" /* 3 */;
-import stripSensitiveLoggingDataDefault from "stripSensitiveLoggingData" /* 9610 */;
-import WebViewWindowProxySocketFactoryDefault from "WebViewWindowProxySocketFactory" /* 9621 */;
-import PostMessageTransport from "PostMessageTransport" /* 9611 */;
+import stripSensitiveLoggingDataDefault from "stripSensitiveLoggingData" /* 8762 */;
+import NativeRPCHelpers from "NativeRPCHelpers" /* 8769 */;
+import WebViewWindowProxySocketFactoryDefault from "WebViewWindowProxySocketFactory" /* 8773 */;
+import PostMessageTransport from "PostMessageTransport" /* 8763 */;
+import size from "module_2" /* 2 */;
 
 const tmp2 = new LoggerDefault("RPCServer:PostMessage");
-const size = fn(2);
+const importDefaultResult1 = new PostMessageTransport(NativeRPCHelpers.validateSocketClient, tmp2, WebViewWindowProxySocketFactoryDefault, (arg0, info, id) => {
+  info = info.info;
+  const combined = "Socket Message: " + id.id;
+  info(combined, stripSensitiveLoggingDataDefault(arg0));
+});
 const result = size.fileFinishedImporting("modules/rpc/native/server/transports/WebViewPostMessageTransport.tsx");
 
-export default new PostMessageTransport(fn(9617).validateSocketClient, new LoggerDefault("RPCServer:PostMessage"), WebViewWindowProxySocketFactoryDefault, (arg0, info, id) => {
-  const combined = "Socket Message: " + id.id;
-  info.info(combined, stripSensitiveLoggingDataDefault(arg0));
-});
+export default importDefaultResult1;

@@ -1,27 +1,46 @@
-// Module ID: 12733
-// Function ID: 12734
+// Module ID: 11837
+// Function ID: 11838
 // Name: useLongestChannelMessageBeforeReply
-// Dependencies: [5008, 504, 2]
-// Exports: useLongestChannelMessageBeforeReply
+// Dependencies: [5057, 558, 576, 504, 2]
 
-// Module 12733 (useLongestChannelMessageBeforeReply)
-import MessageStore from "MessageStore" /* 5008 */;
+// Module 11837 (useLongestChannelMessageBeforeReply)
+import MessageStore from "MessageStore" /* 5057 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/messages/useLongestChannelMessageBeforeReply.tsx");
-
-export const useLongestChannelMessageBeforeReply = function useLongestChannelMessageBeforeReply(id, recipientId) {
-  _require = id;
-  dependencyMap = recipientId;
-  const items = [MessageStore];
-  const items1 = [id, recipientId];
-  return require("initialize").useStateFromStores(items, () => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  _require = arg0;
+  dependencyMap = arg1;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MessageStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp6;
+    let tmp7;
+    if (cResult[2] === arg1) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp6, tmp7);
+  }
+  const fn = function l() {
     if (null != closure_1) {
       const messages = MessageStore.getMessages(closure_0);
-      const findOldestResult = messages.findOldest((author) => author.author.id === recipientId);
+      const findOldestResult = messages.findOldest((author) => author.author.id === closure_1_1);
       let tmp4 = findOldestResult;
       if (null != findOldestResult) {
         const toArrayResult = messages.toArray();
@@ -30,11 +49,54 @@ export const useLongestChannelMessageBeforeReply = function useLongestChannelMes
             obj2.return();
             break;
           } else {
-            let length;
+            let length1;
+            let length = tmp8.content.length;
             if (tmp4 != null) {
-              length = tmp4.content.length;
+              length1 = tmp4.content.length;
             }
-            if (tmp8.content.length > length) {
+            if (length > length1) {
+              tmp4 = item10018;
+            }
+            continue;
+          }
+          return tmp4;
+        }
+      }
+    }
+  };
+  const items1 = [arg0, arg1];
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp7 = items1;
+  tmp6 = fn;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  _require = arg0;
+  dependencyMap = arg1;
+  const items = [MessageStore];
+  const items1 = [arg0, arg1];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    if (null != closure_1) {
+      const messages = MessageStore.getMessages(closure_0);
+      const findOldestResult = messages.findOldest((author) => author.author.id === closure_1_1);
+      let tmp4 = findOldestResult;
+      if (null != findOldestResult) {
+        const toArrayResult = messages.toArray();
+        for (const item10018 of toArrayResult) {
+          if (item10018.author.id !== closure_1) {
+            obj2.return();
+            break;
+          } else {
+            let length1;
+            let length = tmp8.content.length;
+            if (tmp4 != null) {
+              length1 = tmp4.content.length;
+            }
+            if (length > length1) {
               tmp4 = item10018;
             }
             continue;
@@ -44,4 +106,7 @@ export const useLongestChannelMessageBeforeReply = function useLongestChannelMes
       }
     }
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/messages/useLongestChannelMessageBeforeReply.tsx");
+
+export const useLongestChannelMessageBeforeReply = tmp2;

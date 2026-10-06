@@ -1,58 +1,56 @@
-// Module ID: 8669
-// Function ID: 8670
+// Module ID: 7818
+// Function ID: 7819
 // Name: showSharePreparingModal
-// Dependencies: [8667, 4991, 8670, 1980, 2]
+// Dependencies: [7816, 5040, 7819, 1987, 2]
 // Exports: showSharePreparingModal
 
-// Module 8669 (showSharePreparingModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8667 */;
+// Module 7818 (showSharePreparingModal)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 7816 */;
 import size from "module_2" /* 2 */;
+
+let _true;
 
 const SHARE_PREPARING_MODAL_KEY = SharePreparingModalConstants.SHARE_PREPARING_MODAL_KEY;
 const result = size.fileFinishedImporting("modules/share/native/showSharePreparingModal.tsx");
 
 export const showSharePreparingModal = function showSharePreparingModal(onCancel) {
+  let closure_2;
   onCancel = onCancel.onCancel;
-  c1 = false;
+  let c1 = false;
   const timeout = setTimeout(() => {
+    let obj = ModalActionCreatorsDefault;
     const obj2 = {
       onCancel() {
-        if (!_true) {
+        const tmp = _true;
+        if (!tmp) {
           _true = true;
           const _clearTimeout = clearTimeout;
-          clearTimeout(dependencyMap);
-          _true(4991).popWithKey(SHARE_PREPARING_MODAL_KEY);
+          clearTimeout(closure_1_2);
+          const obj = _true(closure_2[1]);
+          obj.popWithKey(SHARE_PREPARING_MODAL_KEY);
           onCancel();
-          const obj = _true(4991);
         }
       }
     };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(8670, dependencyMap.paths), {
-      onCancel() {
-        if (!_true) {
-          _true = true;
-          const _clearTimeout = clearTimeout;
-          clearTimeout(dependencyMap);
-          _true(4991).popWithKey(SHARE_PREPARING_MODAL_KEY);
-          onCancel();
-          const obj = _true(4991);
-        }
-      }
-    }, SHARE_PREPARING_MODAL_KEY, { animation: "fade", presentation: "transparentModal" }).then(() => {
-      if (_true) {
-        _true(4991).popWithKey(SHARE_PREPARING_MODAL_KEY);
-        const obj = _true(4991);
+    const pushLazyResult = obj.pushLazy(asyncRequire(7819, dependencyMap.paths), obj2, SHARE_PREPARING_MODAL_KEY, { animation: "fade", presentation: "transparentModal" });
+    pushLazyResult.then(() => {
+      const tmp = _true;
+      if (tmp) {
+        const obj = _true(closure_2[1]);
+        obj.popWithKey(SHARE_PREPARING_MODAL_KEY);
       }
     });
   }, 1000);
   return () => {
-    if (!c1) {
+    const tmp = c1;
+    if (!tmp) {
       c1 = true;
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_2);
-      ModalActionCreatorsDefault.popWithKey(SHARE_PREPARING_MODAL_KEY);
+      const obj = ModalActionCreatorsDefault;
+      obj.popWithKey(SHARE_PREPARING_MODAL_KEY);
     }
   };
 };

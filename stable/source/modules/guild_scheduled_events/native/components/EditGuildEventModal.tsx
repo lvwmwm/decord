@@ -1,151 +1,333 @@
-// Module ID: 9842
-// Function ID: 9843
+// Module ID: 8980
+// Function ID: 8981
 // Name: EditGuildEventModal
-// Dependencies: [5, 32, 19, 17, 2047, 21, 4788, 576, 1612, 9821, 9818, 1875, 9820, 4499, 1115, 9822, 9843, 9824, 9844, 9896, 9897, 7277, 2]
+// Dependencies: [5, 32, 19, 17, 2057, 21, 4837, 588, 558, 576, 1619, 8957, 1882, 8956, 8960, 4545, 1127, 8958, 8981, 8961, 8982, 9034, 9035, 6421, 2]
 
-// Module 9842 (EditGuildEventModal)
-import nativeDefault from "native" /* 576 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9820 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9821 */;
-import EntityUtils from "EntityUtils" /* 9822 */;
-import useGetEventChannelsByType from "useGetEventChannelsByType" /* 9843 */;
-import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 9844 */;
-import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9896 */;
-import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9897 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 8980 (EditGuildEventModal)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1882 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8956 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8957 */;
+import EntityUtils from "EntityUtils" /* 8958 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8961 */;
+import useGetEventChannelsByType from "useGetEventChannelsByType" /* 8981 */;
+import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 8982 */;
+import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9034 */;
+import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9035 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let c1, c2, constants, guild, obj1, tmp10;
 
-require = fn;
-const View = fn(17).View;
-let closure_8 = fn(2047).GuildScheduledEventEntityTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, cardStyle: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj.cardStyle = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_10 = createStyles.createStyles(obj);
-let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModal.tsx");
-
-export default noop.memo((guild) => {
+let obj2;
+let obj3;
+let react = react_mod;
+const View = react_native.View;
+let closure_8 = GuildScheduledEventsConstants.GuildScheduledEventEntityTypes;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { container: obj2, cardStyle: obj3 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let closure_10 = createStyles(obj);
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  let first;
+  let first1;
+  let left;
+  let right;
+  let tmp = guild;
+  let tmp2 = first;
+  let obj = guild(first[9]);
+  const cResult = obj.c(65);
   guild = guild.guild;
-  let PREVIEW = guild;
+  const onCloseModal = guild.onCloseModal;
+  const initialGuildEvent = guild.initialGuildEvent;
+  const targetChannel = guild.targetChannel;
+  const tmp4 = closure_10();
+  ({ left, right } = onCloseModal(first[10])());
+  const tmp5 = onCloseModal(first[10])();
+  if (cResult[0] === initialGuildEvent) {
+    let tmp6;
+    let tmp11;
+    let tmp14;
+    if (cResult[1] === targetChannel) {
+      tmp6 = cResult[2];
+    }
+    let obj3 = react;
+    const tmp9 = first1(react.useState(tmp6), 2);
+    first = tmp9[0];
+    let closure_4 = tmp9[1];
+    if (cResult[3] !== initialGuildEvent) {
+      const tmpResult = tmp(tmp2[11]);
+      const isEditingEventResult = tmpResult.isEditingEvent(initialGuildEvent);
+      cResult[3] = initialGuildEvent;
+      cResult[4] = isEditingEventResult;
+      tmp11 = isEditingEventResult;
+    } else {
+      tmp11 = cResult[4];
+    }
+    first1 = tmp8(obj3.useState(tmp11), 1)[0];
+    if (cResult[5] !== first1) {
+      class I {
+        constructor() {
+          obj = { name: closure_0(closure_3[11]).EditGuildEventScreens.CHANNEL_SELECTOR };
+          if (closure_5) {
+            items = [, ];
+            items[0] = obj;
+            obj1 = { name: null };
+            tmp = closure_0;
+            tmp2 = closure_3;
+            obj1.name = closure_0(closure_3[11]).EditGuildEventScreens.DETAILS;
+            items[1] = obj1;
+            items1 = items;
+          } else {
+            items1 = [];
+            items1[0] = obj;
+          }
+          return items1;
+        }
+      }
+      cResult[5] = first1;
+      cResult[6] = I;
+      tmp14 = I;
+    } else {
+      class I {
+        constructor() {
+          obj = { name: closure_0(closure_3[11]).EditGuildEventScreens.CHANNEL_SELECTOR };
+          if (closure_5) {
+            items = [, ];
+            items[0] = obj;
+            obj1 = { name: null };
+            tmp = closure_0;
+            tmp2 = closure_3;
+            obj1.name = closure_0(closure_3[11]).EditGuildEventScreens.DETAILS;
+            items[1] = obj1;
+            items1 = items;
+          } else {
+            items1 = [];
+            items1[0] = obj;
+          }
+          return items1;
+        }
+      }
+    }
+    const first2 = tmp8(obj3.useState(tmp14), 1)[0];
+    if (cResult[7] === guild.id) {
+      class I {
+        constructor() {
+          obj = { name: closure_0(closure_3[11]).EditGuildEventScreens.CHANNEL_SELECTOR };
+          if (closure_5) {
+            items = [, ];
+            items[0] = obj;
+            obj1 = { name: null };
+            tmp = closure_0;
+            tmp2 = closure_3;
+            obj1.name = closure_0(closure_3[11]).EditGuildEventScreens.DETAILS;
+            items[1] = obj1;
+            items1 = items;
+          } else {
+            items1 = [];
+            items1[0] = obj;
+          }
+          return items1;
+        }
+      }
+    }
+    class B {
+      constructor() {
+        tmp = closure_3;
+        obj = closure_2(closure_3[12]);
+        result = obj.dismissGlobalKeyboard();
+        tmp3 = closure_5;
+        if (tmp3) {
+          tmp4 = initialGuildEvent;
+          tmp5 = null;
+          id = undefined;
+          if (initialGuildEvent != null) {
+            id = tmp4.id;
+          }
+          if (null != id) {
+            tmp8 = closure_1;
+            obj3 = closure_1(tmp[13]);
+            tmp9 = closure_3;
+            tmp10 = guild;
+            saveEventResult = obj3.saveEvent(tmp4.id, closure_3, guild.id);
+          }
+          return saveEventResult;
+        }
+        obj2 = closure_1(tmp[13]);
+        saveEventResult = obj2.createGuildEvent(closure_3, guild.id);
+        return;
+      }
+    }
+    cResult[7] = guild.id;
+    cResult[8] = first;
+    cResult[9] = initialGuildEvent;
+    cResult[10] = first1;
+    cResult[11] = B;
+  }
+  const tmpResult2 = tmp(tmp2[11]);
+  const initialGuildEventData = tmpResult2.getInitialGuildEventData(initialGuildEvent, targetChannel);
+  cResult[0] = initialGuildEvent;
+  cResult[1] = targetChannel;
+  cResult[2] = initialGuildEventData;
+  tmp6 = initialGuildEventData;
+}) : ((guild) => {
+  let _undefined;
+  let c6;
+  let initialGuildEvent;
+  let left;
+  let onClose;
+  let right;
+  let tmp8;
+  const f98679 = () => {
+    obj = KeyboardManagerUtilsAll;
+    const result = obj.dismissGlobalKeyboard();
+    const tmp3 = first1;
+    if (tmp3) {
+      let saveEventResult;
+      let id;
+      if (initialGuildEvent != null) {
+        id = tmp4.id;
+      }
+      if (null != id) {
+        const obj3 = GuildScheduledEventsActionCreatorsDefault;
+        saveEventResult = obj3.saveEvent(tmp4.id, first, guild.id);
+      }
+      return saveEventResult;
+    }
+    const obj2 = GuildScheduledEventsActionCreatorsDefault;
+    saveEventResult = obj2.createGuildEvent(first, guild.id);
+  };
+  const customNavbar = () => jsx(EditGuildEventModalNavbarDefault, { screen: PREVIEW2, onClose: importDefault });
+  guild = guild.guild;
   ({ onCloseModal: importDefault, initialGuildEvent } = guild);
   let guildEvent;
   let first1;
-  noop = undefined;
-  closure_7 = async function _handleSave(arg0, value) {
-    if (c2 === 2) {
-      c2 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+  react = undefined;
+  let obj = function _handleSave2() {
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let closure_0;
+      if (c2 === 2) {
+        c2 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
       } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c2 = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
+        try {
+          c2 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              c1 = 1;
+              c2 = 1;
+              const obj4 = { value: _undefined(), done: false };
+              return obj4;
+            }
+          } else if (arg0 === 1) {
             c2 = 3;
             throw value;
           } else if (arg0 === 2) {
             c2 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            obj = { value, done: true };
+            return obj;
           } else {
-            c1 = 1;
-            c2 = 1;
-            const obj4 = { value: noop(), done: false };
-            return obj4;
-          }
-        } else if (arg0 === 1) {
-          c2 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c2 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } else if (null == value) {
-          c2 = 3;
-          return { value: "HermesInternal", done: null };
-        } else {
-          if (!closure_128_5) {
-            const AccessibilityAnnouncer = tmp4(4499).AccessibilityAnnouncer;
-            const intl = tmp4(1115).intl;
-            AccessibilityAnnouncer.announce(intl.string(tmp4(1115).t["5HzXO5"]));
-            closure_128_1();
-          } else {
-            let id;
-            if (closure_128_2 != null) {
-              id = closure_128_2.id;
+            if (null != value) {
+              const tmp31 = closure_128_5;
+              if (tmp31) {
+                let id;
+                if (closure_128_2 != null) {
+                  id = closure_128_2.id;
+                }
+                if (null != id) {
+                  const AccessibilityAnnouncer2 = tmp3(guildEvent[15]).AccessibilityAnnouncer;
+                  const announce2 = AccessibilityAnnouncer2.announce;
+                  const intl2 = tmp3(guildEvent[16]).intl;
+                  announce2(intl2.string(tmp3(guildEvent[16]).t["F9On+q"]));
+                }
+                closure_128_1();
+              }
+              const AccessibilityAnnouncer = tmp3(guildEvent[15]).AccessibilityAnnouncer;
+              const announce = AccessibilityAnnouncer.announce;
+              const intl = tmp3(guildEvent[16]).intl;
+              announce(intl.string(tmp3(guildEvent[16]).t["5HzXO5"]));
             }
+            c2 = 3;
+            return { value: "IconComponent", done: null };
           }
-          const AccessibilityAnnouncer2 = tmp4(4499).AccessibilityAnnouncer;
-          const intl2 = tmp4(1115).intl;
-          AccessibilityAnnouncer2.announce(intl2.string(tmp4(1115).t["F9On+q"]));
+        } catch (tmp25) {
+          c2 = 3;
+          throw tmp25;
         }
-      } catch (tmp26) {
-        c2 = tmp;
-        throw tmp26;
       }
-    }
+    });
+    return obj(...arguments);
   };
-  const tmp = closure_10();
-  ({ left, right } = require("useSafeAreaInsets")());
-  const tmp2 = require("useSafeAreaInsets")();
-  let tmp3 = first1(noop.useState(PREVIEW(guildEvent[9]).getInitialGuildEventData(initialGuildEvent, guild.targetChannel)), 2);
+  const targetChannel = guild.targetChannel;
+  let tmp = closure_10();
+  let tmp2 = require("useSafeAreaInsets")();
+  ({ left, right } = tmp2);
+  obj = guild(guildEvent[11]);
+  let tmp3 = first1(react.useState(obj.getInitialGuildEventData(initialGuildEvent, targetChannel)), 2);
   guildEvent = tmp3[0];
-  closure_4 = tmp3[1];
-  let obj = PREVIEW(guildEvent[9]);
-  first1 = first1(noop.useState(PREVIEW(guildEvent[9]).isEditingEvent(initialGuildEvent)), 1)[0];
-  let obj2 = PREVIEW(guildEvent[9]);
-  [c6, tmp7] = first1(require("LazyAPIPromise")(() => {
-    const result = KeyboardManagerUtilsAll.dismissGlobalKeyboard();
+  let closure_4 = tmp3[1];
+  const useState = react.useState;
+  let obj2 = guild(guildEvent[11]);
+  first1 = first1(useState(obj2.isEditingEvent(initialGuildEvent)), 1)[0];
+  const first2 = first1(react.useState(() => {
+    let items1;
+    obj = { name: EditGuildEventUtils.EditGuildEventScreens.CHANNEL_SELECTOR };
     if (first1) {
-      let id;
-      if (initialGuildEvent != null) {
-        id = tmp3.id;
-      }
-      if (null != id) {
-        let saveEventResult = GuildScheduledEventsActionCreatorsDefault.saveEvent(tmp3.id, first, PREVIEW.id);
-      }
-      return saveEventResult;
+      const items = [obj, ];
+      items[1] = { name: EditGuildEventUtils.EditGuildEventScreens.DETAILS };
+      items1 = items;
+      const obj2 = { name: EditGuildEventUtils.EditGuildEventScreens.DETAILS };
+    } else {
+      items1 = [obj];
     }
-    saveEventResult = GuildScheduledEventsActionCreatorsDefault.createGuildEvent(first, PREVIEW.id);
-  }), 2);
+    return items1;
+  }), 1)[0];
+  [c6, tmp8] = first1(require("LazyAPIPromise")(f98679), 2);
   constants = {
     guild,
     guildEvent,
     initialGuildEvent,
     isEdit: first1,
-    error: tmp7.error,
-    loading: tmp7.loading,
+    error: tmp8.error,
+    loading: tmp8.loading,
     onSave: function handleSave() {
-      const self = this;
-      const apply = closure_7.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+      return obj(...arguments);
     },
     onChange: function handleChange(entityType) {
-      closure_0 = entityType;
+      let closure_0 = entityType;
       if (null != entityType.entityType) {
-        const channelTypeFromEntity = EntityUtils.getChannelTypeFromEntity(entityType.entityType);
-        const first = _slicedToArray(useGetEventChannelsByType.getEventChannelsByType(PREVIEW.id, channelTypeFromEntity), 1)[0];
+        obj = EntityUtils;
+        const channelTypeFromEntity = obj.getChannelTypeFromEntity(entityType.entityType);
+        const obj2 = useGetEventChannelsByType;
+        const first = _slicedToArray(obj2.getEventChannelsByType(guild.id, channelTypeFromEntity), 1)[0];
         let id;
         if (first != null) {
           id = first.id;
@@ -154,90 +336,75 @@ export default noop.memo((guild) => {
           id = null;
         }
         entityType.channelId = id;
-        let tmp3 = entityType.entityType !== constants.EXTERNAL;
-        if (tmp3) {
-          tmp3 = first.entityType === tmp2.EXTERNAL;
-        }
+        const tmp3 = entityType.entityType !== constants.EXTERNAL && first.entityType === tmp2.EXTERNAL;
         if (tmp3) {
           entityType.entityMetadata = null;
         }
       }
       closure_4((arg0) => {
+        obj = {};
         const merged = Object.assign(arg0);
         const merged1 = Object.assign(closure_0);
-        return {};
+        return obj;
       });
     }
   };
   let obj3 = {};
-  let obj4 = { title: "", customNavbar: null, headerLeft: null, render: null, fullscreen: true };
-  PREVIEW = PREVIEW(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR;
-  obj4.customNavbar = () => closure_9(closure_1(guildEvent[17]), { screen: PREVIEW, onClose: importDefault });
-  obj4.headerLeft = function headerLeft() {
-    return null;
-  };
-  obj4.render = function render() {
-    const obj = {};
-    const merged = Object.assign(closure_8);
-    let id;
-    if (initialGuildEvent != null) {
-      id = initialGuildEvent.id;
-    }
-    obj.guildEventId = id;
-    return jsx(EditGuildEventWhereDefault, {});
-  };
-  obj3[PREVIEW(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR] = obj4;
-  const obj5 = { title: "", customNavbar: null, render: null, fullscreen: true };
-  PREVIEW = PREVIEW(guildEvent[9]).EditGuildEventScreens.DETAILS;
-  obj5.customNavbar = () => closure_9(closure_1(guildEvent[17]), { screen: PREVIEW, onClose: importDefault });
-  obj5.render = function render() {
-    const merged = Object.assign(closure_8);
-    return jsx(EditGuildEventDetailsDefault, {});
-  };
-  obj3[PREVIEW(guildEvent[9]).EditGuildEventScreens.DETAILS] = obj5;
-  const obj6 = { title: "", customNavbar: null, render: null, fullscreen: true };
-  PREVIEW = PREVIEW(guildEvent[9]).EditGuildEventScreens.PREVIEW;
-  obj6.customNavbar = () => closure_9(closure_1(guildEvent[17]), { screen: PREVIEW, onClose: importDefault });
-  obj6.render = function render() {
-    const merged = Object.assign(closure_8);
-    return jsx(EditGuildEventPreviewDefault, {});
-  };
-  obj3[PREVIEW(guildEvent[9]).EditGuildEventScreens.PREVIEW] = obj6;
-  const obj7 = { style: null, children: null };
-  let items = [tmp.container, { paddingLeft: left, paddingRight: right }];
-  obj7.style = items;
-  const tmp6 = first1(require("LazyAPIPromise")(() => {
-    const result = KeyboardManagerUtilsAll.dismissGlobalKeyboard();
-    if (first1) {
+  let obj4 = {
+    title: "",
+    customNavbar,
+    headerLeft() {
+      return null;
+    },
+    render() {
       let id;
+      obj = { guildEventId: id };
+      const tmp2 = EditGuildEventWhereDefault;
+      const merged = Object.assign(constants);
+      id = undefined;
+      const tmp = jsx;
       if (initialGuildEvent != null) {
-        id = tmp3.id;
+        id = initialGuildEvent.id;
       }
-      if (null != id) {
-        let saveEventResult = GuildScheduledEventsActionCreatorsDefault.saveEvent(tmp3.id, first, PREVIEW.id);
-      }
-      return saveEventResult;
-    }
-    saveEventResult = GuildScheduledEventsActionCreatorsDefault.createGuildEvent(first, PREVIEW.id);
-  }), 2);
-  obj7.children = jsx(PREVIEW(guildEvent[21]).Navigator, {
-    screens: obj3,
-    initialRouteName: PREVIEW(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR,
-    initialRouteStack: first1(noop.useState(() => {
-      const obj = { name: EditGuildEventUtils.EditGuildEventScreens.CHANNEL_SELECTOR };
-      if (first1) {
-        const items = [obj, ];
-        const obj2 = { name: EditGuildEventUtils.EditGuildEventScreens.DETAILS };
-        items[1] = obj2;
-        let items1 = items;
-      } else {
-        items1 = [obj];
-      }
-      return items1;
-    }), 1)[0],
-    cardShadowEnabled: false,
-    cardOverlayEnabled: false,
-    cardStyle: tmp.cardStyle
-  });
-  return <closure_7 style={null}>{null}</closure_7>;
-});
+      return tmp(tmp2, obj);
+    },
+    fullscreen: true
+  };
+  const tmp7 = first1(require("LazyAPIPromise")(f98679), 2);
+  const CHANNEL_SELECTOR = guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR;
+  const CHANNEL_SELECTOR2 = guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR;
+  obj3[CHANNEL_SELECTOR] = obj4;
+  const obj5 = {
+    title: "",
+    customNavbar,
+    render() {
+      EditGuildEventDetailsDefault;
+      const merged = Object.assign(constants);
+      return <tmp />;
+    },
+    fullscreen: true
+  };
+  const DETAILS = guild(guildEvent[11]).EditGuildEventScreens.DETAILS;
+  const DETAILS2 = guild(guildEvent[11]).EditGuildEventScreens.DETAILS;
+  obj3[DETAILS] = obj5;
+  const obj6 = {
+    title: "",
+    customNavbar,
+    render() {
+      EditGuildEventPreviewDefault;
+      const merged = Object.assign(constants);
+      return <tmp />;
+    },
+    fullscreen: true
+  };
+  const PREVIEW = guild(guildEvent[11]).EditGuildEventScreens.PREVIEW;
+  const PREVIEW2 = guild(guildEvent[11]).EditGuildEventScreens.PREVIEW;
+  obj3[PREVIEW] = obj6;
+  let items = [tmp.container, { paddingLeft: left, paddingRight: right }];
+  ({ screens: obj3, initialRouteName: guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR, initialRouteStack: first2, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: tmp.cardStyle });
+  const Navigator = guild(guildEvent[23]).Navigator;
+  return <obj style={items}>{null}</obj>;
+}));
+let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModal.tsx");
+
+export default memoResult;

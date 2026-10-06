@@ -1,170 +1,233 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 16545
+// Function ID: 16546
 // Name: messages/PinsScreen
-// Dependencies: [19, 11955, 7555, 12622, 8154, 8153, 1074, 21, 504, 17120, 11954, 17116, 12641, 17164, 17124, 17123, 17188, 2]
+// Dependencies: [19, 11041, 6700, 11715, 7307, 7306, 1086, 21, 504, 16464, 11040, 16460, 11734, 16520, 16468, 16467, 558, 576, 16543, 2]
 
-// Module 17195 (messages/PinsScreen)
-import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 11954 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12641 */;
-import MessagesScreenDefault from "MessagesScreen" /* 17188 */;
-import noop from "module_19" /* 19 */;
-import ChannelPinsStore from "ChannelPinsStore" /* 11955 */;
-import SearchMessageStore from "SearchMessageStore" /* 7555 */;
-import SearchQueryStore from "SearchQueryStore" /* 12622 */;
+// Module 16545 (messages/PinsScreen)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import TrackingConstants from "TrackingConstants" /* 7306 */;
+import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 11040 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 11041 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11734 */;
+import MessagesScreenDefault from "MessagesScreen" /* 16543 */;
+import react from "react" /* 19 */;
+import SearchMessageStore from "SearchMessageStore" /* 6700 */;
+import SearchQueryStore from "SearchQueryStore" /* 11715 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+const ChannelPinsStore = ChannelPinsStore2;
+let placeholderHeight;
+
+let c10;
+let c9;
+let metroImportAll;
 function InitialPinsScreen(searchContext) {
+  let closure_8;
+  let constants2;
   searchContext = searchContext.searchContext;
   const isFocused = searchContext.isFocused;
   let stateFromStores;
   let items;
   let callback;
   placeholderHeight = undefined;
+  let obj = searchContext(stateFromStores[8]);
   const items1 = [callback];
   const items2 = [searchContext];
-  stateFromStores = searchContext(stateFromStores[8]).useStateFromStores(items1, () => SearchQueryStore.isInitialSearchQuery(searchContext), items2);
-  let obj = searchContext(stateFromStores[8]);
-  const fullscreenPlaceholderCount = searchContext(stateFromStores[9]).useFullscreenPlaceholderCount({ placeholderHeight, numColumns: 1 });
+  stateFromStores = obj.useStateFromStores(items1, () => SearchQueryStore.isInitialSearchQuery(searchContext), items2);
+  const obj2 = searchContext(stateFromStores[9]);
+  const obj3 = { placeholderHeight, numColumns: 1 };
+  const fullscreenPlaceholderCount = obj2.useFullscreenPlaceholderCount(obj3);
   const items3 = [isFocused, stateFromStores, searchContext.channelId];
   const effect = fullscreenPlaceholderCount.useEffect(() => {
-    let tmp = stateFromStores;
-    if (stateFromStores) {
-      tmp = isFocused;
-    }
+    const tmp = stateFromStores && isFocused;
     if (tmp) {
-      const pins = ChannelPinActionCreatorsDefault.fetchPins(searchContext.channelId);
+      const obj = ChannelPinActionCreatorsDefault;
+      const pins = obj.fetchPins(searchContext.channelId);
     }
   }, items3);
-  let obj2 = searchContext(stateFromStores[9]);
-  const obj3 = { placeholderHeight, numColumns: 1 };
   const items4 = [items];
-  const stateFromStoresObject = searchContext(stateFromStores[8]).useStateFromStoresObject(items4, () => {
+  const obj4 = searchContext(stateFromStores[8]);
+  const stateFromStoresObject = obj4.useStateFromStoresObject(items4, () => {
     const pins = ChannelPinsStore.getPins(searchContext.channelId);
     items = undefined;
     if (pins != null) {
       items = pins.items;
     }
-    const obj = { items, showLoading: null };
-    let tmp3 = null == pins;
-    if (!tmp3) {
-      tmp3 = pins.state === FetchState.LOADING;
-    }
-    obj.showLoading = tmp3;
+    const obj = { items, showLoading: tmp3 };
     return obj;
   });
   items = stateFromStoresObject.items;
   const showLoading = stateFromStoresObject.showLoading;
-  const obj4 = searchContext(stateFromStores[8]);
-  const onPressMessageItem = searchContext(stateFromStores[11]).useOnPressMessageItem({ searchContext });
+  const obj5 = searchContext(stateFromStores[11]);
+  const onPressMessageItem = obj5.useOnPressMessageItem({ searchContext });
   const items5 = [onPressMessageItem, searchContext];
   callback = fullscreenPlaceholderCount.useCallback((arg0, index) => {
+    let channelId;
+    let id;
+    let messageId;
     ({ channelId, messageId } = arg0);
     const message = SearchMessageStore.getMessage(messageId);
-    const obj2 = { searchContext, channelId, messageId, userId: null, index: null, entityType: null };
-    let id;
+    const obj = { searchContext, channelId, messageId, userId: id, index, entityType: constants2.MESSAGE };
+    id = undefined;
+    const trackSearchResultClicked = search_tracking_TrackingDefault.trackSearchResultClicked;
     if (message != null) {
       const author = message.author;
       if (author != null) {
         id = author.id;
       }
     }
-    obj2.userId = id;
-    obj2.index = index;
-    obj2.entityType = constants2.MESSAGE;
-    const result = search_tracking_TrackingDefault.trackSearchResultClicked(obj2);
+    const result = trackSearchResultClicked(obj);
     onPressMessageItem(channelId, messageId);
   }, items5);
   placeholderHeight = fullscreenPlaceholderCount.useRef({});
   const items6 = [fullscreenPlaceholderCount, callback, showLoading, items];
   const memo = fullscreenPlaceholderCount.useMemo(() => {
+    let messageSizeCacheRef;
     items = [];
+    const arr2 = items;
     if (items != null) {
-      const item = items.forEach((message, index) => {
-        closure_0 = index;
-        const element = {
-          type: constants.MESSAGE,
-          props: {
-            message: message.message,
-            onPress(channelId) {
-              return callback({ channelId: channelId.channelId, messageId: channelId.messageId }, closure_0);
-            },
-            lineClamp,
-            messageSizeCacheRef
-          }
+      const item = arr2.forEach((message, index) => {
+        let obj;
+        let closure_0 = index;
+        const element = { type: constants.MESSAGE, props: obj };
+        obj = {
+          message: message.message,
+          onPress(channelId) {
+            const obj = { channelId: channelId.channelId, messageId: channelId.messageId };
+            return closure_2_7(obj, closure_0);
+          },
+          lineClamp,
+          messageSizeCacheRef
         };
         items.push(element);
       });
     }
-    if (showLoading) {
+    const tmp2 = showLoading;
+    if (tmp2) {
       let num = 0;
       if (0 < fullscreenPlaceholderCount) {
         do {
-          let obj = { type: null, key: null };
-          obj.type = constants.MESSAGE_PLACEHOLDER;
+          let obj = { type: constants.MESSAGE_PLACEHOLDER, key: "message-placeholder-" + num };
           let _HermesInternal = HermesInternal;
-          obj.key = "message-placeholder-" + num;
-          let arr = items.push(obj);
+          let push = items.push;
+          let arr = push(obj);
           num = num + 1;
         } while (num < fullscreenPlaceholderCount);
       }
     }
     return items;
   }, items6);
-  const obj5 = searchContext(stateFromStores[11]);
-  const contentContainerStyles = searchContext(stateFromStores[13]).useContentContainerStyles();
-  const obj7 = {
-    contentContainerStyle: contentContainerStyles.messagesContentContainer,
-    data: memo,
-    onEndReached() {
-      let pinnedAt;
-      if (items != null) {
-        const atResult = items.at(-1);
-        if (atResult != null) {
-          pinnedAt = atResult.pinnedAt;
-        }
-      }
-      const pins = ChannelPinActionCreatorsDefault.fetchPins(searchContext.channelId, { before: pinnedAt });
-    },
-    ItemSeparatorComponent: null
-  };
   const obj6 = searchContext(stateFromStores[13]);
-  obj7.ItemSeparatorComponent = searchContext(stateFromStores[15]).MessageVerticalSeparator;
-  return jsx(isFocused(stateFromStores[14]), {
-    contentContainerStyle: contentContainerStyles.messagesContentContainer,
-    data: memo,
-    onEndReached() {
-      let pinnedAt;
-      if (items != null) {
-        const atResult = items.at(-1);
-        if (atResult != null) {
-          pinnedAt = atResult.pinnedAt;
+  const contentContainerStyles = obj6.useContentContainerStyles();
+  isFocused(stateFromStores[14]);
+  return <tmp9 contentContainerStyle={contentContainerStyles.messagesContentContainer} data={memo} onEndReached={function onEndReached() {
+    let pinnedAt;
+    const fetchPins = ChannelPinActionCreatorsDefault.fetchPins;
+    const channelId = searchContext.channelId;
+    ChannelPinActionCreatorsDefault;
+    const obj = items;
+    if (items != null) {
+      const atResult = obj.at(-1);
+      if (atResult != null) {
+        pinnedAt = atResult.pinnedAt;
+      }
+    }
+    const pins = fetchPins(channelId, { before: pinnedAt });
+  }} ItemSeparatorComponent={searchContext(stateFromStores[15]).MessageVerticalSeparator} />;
+}
+const FetchState = ChannelPinsStore2.FetchState;
+({ MESSAGE_PLACEHOLDER_ITEM_SIZE: metroImportAll, SearchListItemTypes: c9, SEARCH_PINNED_MESSAGES_LINE_CLAMP: c10 } = SearchConstants);
+let closure_11 = TrackingConstants.SearchResultContentEntityTypes;
+const SearchTypes = Constants.SearchTypes;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+  let first;
+  let isFocused;
+  let tab;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  const obj = searchContext(576);
+  const cResult = obj.c(12);
+  const tmp = searchContext;
+  searchContext = searchContext.searchContext;
+  ({ tab, isFocused } = searchContext);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SearchQueryStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== searchContext) {
+    const fn = function n() {
+      return SearchQueryStore.isInitialSearchQuery(searchContext);
+    };
+    const items1 = [searchContext];
+    cResult[1] = searchContext;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  if (tmpResult.useStateFromStores(first, tmp6, tmp7)) {
+    if (searchContext.type !== SearchTypes.CHANNEL) {
+      if (searchContext.type !== SearchTypes.GUILD_CHANNEL) {
+        return tmp9;
+      }
+    }
+    if (cResult[4] === isFocused) {
+      if (cResult[5] === searchContext) {
+        if (cResult[6] === tab) {
+          tmp9 = cResult[7];
         }
       }
-      const pins = ChannelPinActionCreatorsDefault.fetchPins(searchContext.channelId, { before: pinnedAt });
-    },
-    ItemSeparatorComponent: null
-  });
-}
-const FetchState = fn(11955).FetchState;
-const SearchConstants = fn(8154);
-({ MESSAGE_PLACEHOLDER_ITEM_SIZE: closure_8, SearchListItemTypes: closure_9, SEARCH_PINNED_MESSAGES_LINE_CLAMP: c10 } = SearchConstants);
-let closure_11 = fn(8153).SearchResultContentEntityTypes;
-const SearchTypes = fn(1074).SearchTypes;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/PinsScreen.tsx");
-
-export default noop.memo(function PinsScreen(searchContext) {
+    }
+    const tmp12 = <InitialPinsScreen searchContext={searchContext} tab={tab} isFocused={isFocused} />;
+    cResult[4] = isFocused;
+    cResult[5] = searchContext;
+    cResult[6] = tab;
+    cResult[7] = tmp12;
+    tmp9 = tmp12;
+  }
+  if (cResult[8] === isFocused) {
+    if (cResult[9] === searchContext) {
+      let tmp13;
+      if (cResult[10] === tab) {
+        tmp13 = cResult[11];
+      }
+      tmp9 = tmp13;
+    }
+  }
+  const tmp14 = jsx(MessagesScreenDefault, { searchContext, tab, isFocused });
+  cResult[8] = isFocused;
+  cResult[9] = searchContext;
+  cResult[10] = tab;
+  cResult[11] = tmp14;
+  tmp13 = tmp14;
+}) : ((searchContext) => {
+  let isFocused;
+  let tab;
+  let tmp5;
   searchContext = searchContext.searchContext;
   ({ tab, isFocused } = searchContext);
   const items = [SearchQueryStore];
   const items1 = [searchContext];
+  const obj = searchContext(504);
   if (!obj.useStateFromStores(items, () => SearchQueryStore.isInitialSearchQuery(searchContext), items1)) {
-    const obj2 = { searchContext, tab, isFocused };
-    let tmp5 = jsx(MessagesScreenDefault, { searchContext, tab, isFocused });
+    tmp5 = jsx(MessagesScreenDefault, { searchContext, tab, isFocused });
   } else {
-    const obj3 = { searchContext, tab, isFocused };
     tmp5 = <InitialPinsScreen searchContext={searchContext} tab={tab} isFocused={isFocused} />;
   }
   return tmp5;
-});
+}));
+let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/PinsScreen.tsx");
+
+export default memoResult;

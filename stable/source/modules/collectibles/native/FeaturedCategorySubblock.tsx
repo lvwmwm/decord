@@ -1,41 +1,445 @@
-// Module ID: 16156
-// Function ID: 16157
+// Module ID: 15433
+// Function ID: 15434
 // Name: FeaturedCategorySubblock
-// Dependencies: [19, 17, 7816, 1076, 1074, 21, 4788, 1484, 9079, 504, 16144, 16151, 5371, 1115, 576, 1241, 7815, 7459, 7828, 9143, 2]
-// Exports: default
+// Dependencies: [19, 17, 6966, 1088, 1086, 21, 4837, 558, 576, 1491, 8226, 504, 15421, 1253, 6965, 6604, 15431, 5436, 1127, 588, 6978, 8290, 2]
 
-// Module 16156 (FeaturedCategorySubblock)
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7815 */;
-import VisibilitySensorDefault from "VisibilitySensor" /* 16151 */;
-import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7816 */;
+// Module 15433 (FeaturedCategorySubblock)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6965 */;
+import VisibilitySensorDefault from "VisibilitySensor" /* 15431 */;
+import react from "react" /* 19 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6966 */;
+import Constants from "Constants" /* 1086 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Image = fn(17).Image;
-let closure_5 = fn(1076).CollectiblesMobileShopScreen;
-const Constants = fn(1074);
-({ AnalyticEvents: metroRequire, UserSettingsSections: closure_7 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4788);
+let dependencyMap, importDefault, navigation;
+
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+const Image = react_native.Image;
+const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
+({ AnalyticEvents: metroRequire, UserSettingsSections: metroImportDefault } = Constants);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ container: { position: "relative" }, bannerImage: { width: "100%", aspectRatio: 2.237580993520518, resizeMode: "contain" }, limitedTimeBadge: { position: "absolute", bottom: "68%", left: "3%", zIndex: 1 } });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/collectibles/native/FeaturedCategorySubblock.tsx");
-
-export default function _default(subblock) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(subblock) {
+  let collectiblesAnalyticsContext;
+  let first;
+  let items1;
+  let obj10;
+  let tmp9;
+  let obj = subblock(collectiblesAnalyticsContext[8]);
+  const cResult = obj.c(52);
   subblock = subblock.subblock;
-  const tmp = closure_10();
-  importDefault = subblock(1484).useNavigation();
-  const obj = subblock(1484);
-  dependencyMap = subblock(9079).useCollectiblesAnalyticsContext();
+  const tmp4 = closure_10();
+  let obj2 = subblock(collectiblesAnalyticsContext[9]);
+  navigation = obj2.useNavigation();
+  let obj3 = subblock(collectiblesAnalyticsContext[10]);
+  collectiblesAnalyticsContext = obj3.useCollectiblesAnalyticsContext();
   const assetUrl = subblock.assetUrl;
-  let obj2 = subblock(9079);
-  let items = [CollectiblesCategoryStore];
-  const stateFromStores = subblock(504).useStateFromStores(items, () => CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId));
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [CollectiblesCategoryStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== subblock.categoryStoreListingId) {
+    const fn = function _() {
+      return CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId);
+    };
+    cResult[1] = subblock.categoryStoreListingId;
+    cResult[2] = fn;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[2];
+  }
+  const tmpResult = subblock(collectiblesAnalyticsContext[11]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
+  const tmpResult3 = subblock(collectiblesAnalyticsContext[12]);
+  const handleCardVisibilityChange = tmpResult3.useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange;
+  if (cResult[3] === collectiblesAnalyticsContext) {
+    if (cResult[4] === stateFromStores) {
+      if (cResult[5] === navigation) {
+        let tmp11;
+        let tmp28;
+        let tmp30;
+        let tmp32;
+        let tmp19;
+        let num5;
+        let tmp23;
+        let num4;
+        let tmp22;
+        let tmp21;
+        let str;
+        let tmp20;
+        let tmp18;
+        let tmp17;
+        let tmp16;
+        let tmp15;
+        let tmp14;
+        if (cResult[6] === subblock.categoryStoreListingId) {
+          tmp11 = cResult[7];
+        }
+        let unpublishedAt = subblock.unpublishedAt;
+        if (unpublishedAt == null) {
+          let unpublishedAt1;
+          if (stateFromStores != null) {
+            unpublishedAt1 = stateFromStores.unpublishedAt;
+          }
+          unpublishedAt = unpublishedAt1;
+        }
+        if (cResult[8] === assetUrl) {
+          if (cResult[9] === handleCardVisibilityChange) {
+            if (cResult[10] === tmp11) {
+              if (cResult[11] === tmp4.bannerImage) {
+                if (cResult[12] === tmp4.container) {
+                  if (cResult[13] === tmp4.limitedTimeBadge) {
+                    if (cResult[14] === subblock.name) {
+                      if (cResult[15] === unpublishedAt) {
+                        tmp14 = cResult[16];
+                        tmp15 = cResult[17];
+                        tmp16 = cResult[18];
+                        tmp17 = cResult[19];
+                        tmp18 = cResult[20];
+                        tmp19 = cResult[21];
+                        tmp20 = cResult[22];
+                        str = cResult[23];
+                        tmp21 = cResult[24];
+                        tmp22 = cResult[25];
+                        num4 = cResult[26];
+                        tmp23 = cResult[27];
+                        num5 = cResult[28];
+                      }
+                      if (cResult[36] === tmp14) {
+                        if (cResult[37] === tmp16) {
+                          if (cResult[38] === tmp17) {
+                            if (cResult[39] === tmp18) {
+                              if (cResult[40] === tmp19) {
+                                if (cResult[41] === str) {
+                                  if (cResult[42] === tmp21) {
+                                    if (cResult[43] === tmp22) {
+                                      if (cResult[44] === num4) {
+                                        if (cResult[45] === tmp23) {
+                                          let tmp39;
+                                          if (cResult[46] === num5) {
+                                            tmp39 = cResult[47];
+                                          }
+                                          if (cResult[48] === tmp15) {
+                                            if (cResult[49] === tmp20) {
+                                              let tmp42;
+                                              if (cResult[50] === tmp39) {
+                                                tmp42 = cResult[51];
+                                              }
+                                              return tmp42;
+                                            }
+                                          }
+                                          const obj4 = { onChange: tmp20, children: tmp39 };
+                                          const tmp44 = closure_8(tmp15, obj4);
+                                          cResult[48] = tmp15;
+                                          cResult[49] = tmp20;
+                                          cResult[50] = tmp39;
+                                          cResult[51] = tmp44;
+                                          tmp42 = tmp44;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      const obj5 = { accessibilityRole: str, accessibilityLabel: tmp21, accessibilityHint: tmp22, activeOpacity: num4, androidRippleConfig: tmp23, hitSlop: num5, onPress: tmp16, style: tmp17, children: items1 };
+                      items1 = [tmp18, tmp19];
+                      const tmp41 = closure_9(tmp14, obj5);
+                      cResult[36] = tmp14;
+                      cResult[37] = tmp16;
+                      cResult[38] = tmp17;
+                      cResult[39] = tmp18;
+                      cResult[40] = tmp19;
+                      cResult[41] = str;
+                      cResult[42] = tmp21;
+                      class O {
+                        constructor() {
+                          let _String;
+                          let items;
+                          let pageCategory;
+                          let pageSection;
+                          let tilePosition;
+                          let sessionId;
+                          const track = AnalyticsUtilsDefault.track;
+                          const COLLECTIBLES_SHOP_ELEMENT_CLICKED = metroRequire.COLLECTIBLES_SHOP_ELEMENT_CLICKED;
+                          AnalyticsUtilsDefault;
+                          if (collectiblesAnalyticsContext != null) {
+                            sessionId = tmp4.sessionId;
+                          }
+                          const obj = { collectibles_shop_session_id: sessionId, sku_id: subblock.categoryStoreListingId, page_type: "mobile_home", page_section: pageSection, page_category: pageCategory, tile_type: "FEATURED_BLOCK", tile_position: _String(tilePosition), cta_name: null };
+                          pageSection = undefined;
+                          if (collectiblesAnalyticsContext != null) {
+                            pageSection = tmp4.pageSection;
+                          }
+                          pageCategory = undefined;
+                          if (collectiblesAnalyticsContext != null) {
+                            pageCategory = tmp4.pageCategory;
+                          }
+                          tilePosition = undefined;
+                          _String = String;
+                          if (collectiblesAnalyticsContext != null) {
+                            tilePosition = tmp4.tilePosition;
+                          }
+                          track(COLLECTIBLES_SHOP_ELEMENT_CLICKED, obj);
+                          if (null != stateFromStores) {
+                            if (stateFromStores.isOrbsExclusive) {
+                              const obj2 = { analyticsLocations: items, analyticsSource: AnalyticsLocationDefault.COLLECTIBLES_SHOP, screen: constants.ORBS };
+                              const openCollectiblesShopMobile = CollectiblesActionCreators.openCollectiblesShopMobile;
+                              items = [];
+                              CollectiblesActionCreators;
+                              items[0] = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
+                              const result = openCollectiblesShopMobile(obj2);
+                            } else {
+                              const obj3 = { category: stateFromStores, analyticsContext: collectiblesAnalyticsContext };
+                              navigation.navigate(metroImportDefault.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS, obj3);
+                            }
+                          }
+                        }
+                      }
+                      cResult[44] = num4;
+                      cResult[45] = tmp23;
+                      cResult[46] = num5;
+                      cResult[47] = tmp41;
+                      tmp39 = tmp41;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        let date = null;
+        if (null != unpublishedAt) {
+          const _Date = Date;
+          const self = this;
+          const self2 = this;
+          date = new Date(unpublishedAt);
+        }
+        const tmp27 = navigation(collectiblesAnalyticsContext[16]);
+        const PressableOpacity = tmp(tmp2[17]).PressableOpacity;
+        const tmp26 = navigation;
+        if (cResult[29] !== subblock.name) {
+          const intl = tmp(tmp2[18]).intl;
+          const obj6 = { category: subblock.name };
+          const formatToPlainStringResult = intl.formatToPlainString(subblock(collectiblesAnalyticsContext[18]).t.FNtLb3, obj6);
+          cResult[29] = subblock.name;
+          cResult[30] = formatToPlainStringResult;
+          tmp28 = formatToPlainStringResult;
+        } else {
+          tmp28 = cResult[30];
+        }
+        const _Symbol = Symbol;
+        if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl2 = tmp(tmp2[18]).intl;
+          const stringResult = intl2.string(subblock(collectiblesAnalyticsContext[18]).t.F8ma9x);
+          cResult[31] = stringResult;
+          tmp30 = stringResult;
+        } else {
+          tmp30 = cResult[31];
+        }
+        const _Symbol2 = Symbol;
+        if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
+          const obj7 = { radius: tmp26(collectiblesAnalyticsContext[19]).radii.lg };
+          cResult[32] = obj7;
+          tmp32 = obj7;
+        } else {
+          tmp32 = cResult[32];
+        }
+        const container = tmp4.container;
+        if (cResult[33] === assetUrl) {
+          let tmp33;
+          if (cResult[34] === tmp4.bannerImage) {
+            tmp33 = cResult[35];
+          }
+          const tmpResult4 = subblock(collectiblesAnalyticsContext[20]);
+          let result = tmpResult4.shouldShowLimitedTimeBadge(date);
+          if (result) {
+            const obj8 = { style: tmp4.limitedTimeBadge };
+            result = closure_8(tmp(tmp2[21]).LimitedTimeBadge, obj8);
+          }
+          cResult[8] = assetUrl;
+          cResult[9] = handleCardVisibilityChange;
+          cResult[10] = tmp11;
+          cResult[11] = tmp4.bannerImage;
+          cResult[12] = tmp4.container;
+          cResult[13] = tmp4.limitedTimeBadge;
+          cResult[14] = subblock.name;
+          cResult[15] = unpublishedAt;
+          cResult[16] = PressableOpacity;
+          cResult[17] = tmp27;
+          cResult[18] = tmp11;
+          cResult[19] = container;
+          cResult[20] = tmp33;
+          cResult[21] = result;
+          class O {
+            constructor() {
+              let _String;
+              let items;
+              let pageCategory;
+              let pageSection;
+              let tilePosition;
+              let sessionId;
+              const track = AnalyticsUtilsDefault.track;
+              const COLLECTIBLES_SHOP_ELEMENT_CLICKED = metroRequire.COLLECTIBLES_SHOP_ELEMENT_CLICKED;
+              AnalyticsUtilsDefault;
+              if (collectiblesAnalyticsContext != null) {
+                sessionId = tmp4.sessionId;
+              }
+              const obj = { collectibles_shop_session_id: sessionId, sku_id: subblock.categoryStoreListingId, page_type: "mobile_home", page_section: pageSection, page_category: pageCategory, tile_type: "FEATURED_BLOCK", tile_position: _String(tilePosition), cta_name: null };
+              pageSection = undefined;
+              if (collectiblesAnalyticsContext != null) {
+                pageSection = tmp4.pageSection;
+              }
+              pageCategory = undefined;
+              if (collectiblesAnalyticsContext != null) {
+                pageCategory = tmp4.pageCategory;
+              }
+              tilePosition = undefined;
+              _String = String;
+              if (collectiblesAnalyticsContext != null) {
+                tilePosition = tmp4.tilePosition;
+              }
+              track(COLLECTIBLES_SHOP_ELEMENT_CLICKED, obj);
+              if (null != stateFromStores) {
+                if (stateFromStores.isOrbsExclusive) {
+                  const obj2 = { analyticsLocations: items, analyticsSource: AnalyticsLocationDefault.COLLECTIBLES_SHOP, screen: constants.ORBS };
+                  const openCollectiblesShopMobile = CollectiblesActionCreators.openCollectiblesShopMobile;
+                  items = [];
+                  CollectiblesActionCreators;
+                  items[0] = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
+                  const result = openCollectiblesShopMobile(obj2);
+                } else {
+                  const obj3 = { category: stateFromStores, analyticsContext: collectiblesAnalyticsContext };
+                  navigation.navigate(metroImportDefault.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS, obj3);
+                }
+              }
+            }
+          }
+          cResult[22] = handleCardVisibilityChange;
+          cResult[23] = "button";
+          cResult[24] = tmp28;
+          cResult[25] = tmp30;
+          cResult[26] = 0.8;
+          cResult[27] = tmp32;
+          cResult[28] = 8;
+          tmp19 = result;
+          num5 = 8;
+          tmp23 = tmp32;
+          num4 = 0.8;
+          tmp22 = tmp30;
+          tmp21 = tmp28;
+          str = "button";
+          tmp20 = handleCardVisibilityChange;
+          tmp18 = tmp33;
+          tmp17 = container;
+          tmp16 = tmp11;
+          tmp15 = tmp27;
+          tmp14 = PressableOpacity;
+        }
+        let tmp34 = null != assetUrl;
+        if (tmp34) {
+          const obj9 = { source: obj10, style: tmp4.bannerImage };
+          obj10 = { uri: assetUrl };
+          tmp34 = closure_8(stateFromStores, obj9);
+        }
+        cResult[33] = assetUrl;
+        cResult[34] = tmp4.bannerImage;
+        cResult[35] = tmp34;
+        tmp33 = tmp34;
+      }
+    }
+  }
+  class O {
+    constructor() {
+      let _String;
+      let items;
+      let pageCategory;
+      let pageSection;
+      let tilePosition;
+      let sessionId;
+      const track = AnalyticsUtilsDefault.track;
+      const COLLECTIBLES_SHOP_ELEMENT_CLICKED = metroRequire.COLLECTIBLES_SHOP_ELEMENT_CLICKED;
+      AnalyticsUtilsDefault;
+      if (collectiblesAnalyticsContext != null) {
+        sessionId = tmp4.sessionId;
+      }
+      const obj = { collectibles_shop_session_id: sessionId, sku_id: subblock.categoryStoreListingId, page_type: "mobile_home", page_section: pageSection, page_category: pageCategory, tile_type: "FEATURED_BLOCK", tile_position: _String(tilePosition), cta_name: null };
+      pageSection = undefined;
+      if (collectiblesAnalyticsContext != null) {
+        pageSection = tmp4.pageSection;
+      }
+      pageCategory = undefined;
+      if (collectiblesAnalyticsContext != null) {
+        pageCategory = tmp4.pageCategory;
+      }
+      tilePosition = undefined;
+      _String = String;
+      if (collectiblesAnalyticsContext != null) {
+        tilePosition = tmp4.tilePosition;
+      }
+      track(COLLECTIBLES_SHOP_ELEMENT_CLICKED, obj);
+      if (null != stateFromStores) {
+        if (stateFromStores.isOrbsExclusive) {
+          const obj2 = { analyticsLocations: items, analyticsSource: AnalyticsLocationDefault.COLLECTIBLES_SHOP, screen: constants.ORBS };
+          const openCollectiblesShopMobile = CollectiblesActionCreators.openCollectiblesShopMobile;
+          items = [];
+          CollectiblesActionCreators;
+          items[0] = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
+          const result = openCollectiblesShopMobile(obj2);
+        } else {
+          const obj3 = { category: stateFromStores, analyticsContext: collectiblesAnalyticsContext };
+          navigation.navigate(metroImportDefault.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS, obj3);
+        }
+      }
+    }
+  }
+  cResult[3] = collectiblesAnalyticsContext;
+  cResult[4] = stateFromStores;
+  cResult[5] = navigation;
+  cResult[6] = subblock.categoryStoreListingId;
+  cResult[7] = O;
+  tmp11 = O;
+}) : (function(subblock) {
+  let PressableOpacity;
+  let analyticsContext;
+  let intl;
+  let intl2;
+  let items1;
+  let obj10;
+  let obj6;
+  let obj7;
+  let tmp11;
+  subblock = subblock.subblock;
+  dependencyMap = undefined;
+  const tmp = closure_10();
+  let obj = subblock(1491);
+  importDefault = obj.useNavigation();
+  let obj2 = subblock(8226);
+  dependencyMap = obj2.useCollectiblesAnalyticsContext();
+  const assetUrl = subblock.assetUrl;
   let obj3 = subblock(504);
+  let items = [CollectiblesCategoryStore];
+  const stateFromStores = obj3.useStateFromStores(items, () => CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId));
   let unpublishedAt = subblock.unpublishedAt;
+  const obj4 = subblock(15421);
+  const handleCardVisibilityChange = obj4.useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange;
   if (unpublishedAt == null) {
     let unpublishedAt1;
     if (stateFromStores != null) {
@@ -46,73 +450,86 @@ export default function _default(subblock) {
   let date = null;
   if (null != unpublishedAt) {
     const _Date = Date;
+    const self = this;
+    const self2 = this;
     date = new Date(unpublishedAt);
   }
-  let obj5 = { onChange: subblock(16144).useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange, children: null };
-  let obj4 = subblock(16144);
-  const obj6 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, activeOpacity: 0.8, androidRippleConfig: null, hitSlop: 8, onPress: null, style: null, children: null };
-  const intl = tmp2(1115).intl;
-  obj6.accessibilityLabel = intl.formatToPlainString(subblock(1115).t.FNtLb3, { category: subblock.name });
-  const intl2 = tmp2(1115).intl;
-  obj6.accessibilityHint = intl2.string(subblock(1115).t.F8ma9x);
-  const obj7 = { category: subblock.name };
-  const tmp12 = VisibilitySensorDefault;
-  const tmp13 = closure_9;
-  obj6.androidRippleConfig = { radius: nativeDefault.radii.lg };
-  obj6.onPress = function onPress() {
-    let sessionId;
-    if (closure_2 != null) {
-      sessionId = tmp3.sessionId;
-    }
-    const obj2 = { collectibles_shop_session_id: sessionId, sku_id: subblock.categoryStoreListingId, page_type: "mobile_home", page_section: null, page_category: null, tile_type: "FEATURED_BLOCK", tile_position: null, cta_name: null };
-    let pageSection;
-    if (closure_2 != null) {
-      pageSection = tmp3.pageSection;
-    }
-    obj2.page_section = pageSection;
-    let pageCategory;
-    if (closure_2 != null) {
-      pageCategory = tmp3.pageCategory;
-    }
-    obj2.page_category = pageCategory;
-    let tilePosition;
-    if (closure_2 != null) {
-      tilePosition = tmp3.tilePosition;
-    }
-    obj2.tile_position = String(tilePosition);
-    AnalyticsUtilsDefault.track(constants.COLLECTIBLES_SHOP_ELEMENT_CLICKED, obj2);
-    if (null != stateFromStores) {
-      if (tmp9.isOrbsExclusive) {
-        const obj3 = { analyticsLocations: null, analyticsSource: null, screen: null };
-        const items = [tmp(7459).COLLECTIBLES_SHOP];
-        obj3.analyticsLocations = items;
-        obj3.analyticsSource = tmp(7459).COLLECTIBLES_SHOP;
-        obj3.screen = constants.ORBS;
-        const result = CollectiblesActionCreators.openCollectiblesShopMobile(obj3);
-      } else {
-        const obj5 = { category: tmp9, analyticsContext: tmp3 };
-        navigation.navigate(constants2.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS, obj5);
+  const obj5 = { onChange: handleCardVisibilityChange, children: tmp11(PressableOpacity, obj6) };
+  const tmp10 = VisibilitySensorDefault;
+  obj6 = {
+    accessibilityRole: "button",
+    accessibilityLabel: intl.formatToPlainString(subblock(1127).t.FNtLb3, obj7),
+    accessibilityHint: intl2.string(subblock(1127).t.F8ma9x),
+    activeOpacity: 0.8,
+    androidRippleConfig: { radius: nativeDefault.radii.lg },
+    hitSlop: 8,
+    onPress() {
+      let _String;
+      let items;
+      let pageCategory;
+      let pageSection;
+      let tilePosition;
+      let sessionId;
+      const track = AnalyticsUtilsDefault.track;
+      const COLLECTIBLES_SHOP_ELEMENT_CLICKED = metroRequire.COLLECTIBLES_SHOP_ELEMENT_CLICKED;
+      AnalyticsUtilsDefault;
+      if (analyticsContext != null) {
+        sessionId = tmp4.sessionId;
       }
-    }
+      const obj = { collectibles_shop_session_id: sessionId, sku_id: subblock.categoryStoreListingId, page_type: "mobile_home", page_section: pageSection, page_category: pageCategory, tile_type: "FEATURED_BLOCK", tile_position: _String(tilePosition), cta_name: null };
+      pageSection = undefined;
+      if (analyticsContext != null) {
+        pageSection = tmp4.pageSection;
+      }
+      pageCategory = undefined;
+      if (analyticsContext != null) {
+        pageCategory = tmp4.pageCategory;
+      }
+      tilePosition = undefined;
+      _String = String;
+      if (analyticsContext != null) {
+        tilePosition = tmp4.tilePosition;
+      }
+      track(COLLECTIBLES_SHOP_ELEMENT_CLICKED, obj);
+      if (null != stateFromStores) {
+        if (stateFromStores.isOrbsExclusive) {
+          const obj2 = { analyticsLocations: items, analyticsSource: AnalyticsLocationDefault.COLLECTIBLES_SHOP, screen: constants.ORBS };
+          const openCollectiblesShopMobile = CollectiblesActionCreators.openCollectiblesShopMobile;
+          items = [];
+          CollectiblesActionCreators;
+          items[0] = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
+          const result = openCollectiblesShopMobile(obj2);
+        } else {
+          const obj3 = { category: stateFromStores, analyticsContext };
+          navigation.navigate(metroImportDefault.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS, obj3);
+        }
+      }
+    },
+    style: tmp.container,
+    children: items1
   };
-  obj6.style = tmp.container;
-  let tmp11Result = null != assetUrl;
-  if (tmp11Result) {
-    const obj9 = { source: null, style: null };
-    const obj10 = { uri: assetUrl };
-    obj9.source = obj10;
-    obj9.style = tmp.bannerImage;
-    tmp11Result = tmp11(stateFromStores, obj9);
+  PressableOpacity = tmp2(5436).PressableOpacity;
+  intl = tmp2(1127).intl;
+  obj7 = { category: subblock.name };
+  intl2 = tmp2(1127).intl;
+  let tmp9Result = null != assetUrl;
+  ({ radius: nativeDefault.radii.lg });
+  tmp11 = closure_9;
+  if (tmp9Result) {
+    const obj9 = { source: obj10, style: tmp.bannerImage };
+    obj10 = { uri: assetUrl };
+    tmp9Result = tmp9(stateFromStores, obj9);
   }
-  const items1 = [tmp11Result, ];
-  const obj8 = { radius: nativeDefault.radii.lg };
-  let result = subblock(7828).shouldShowLimitedTimeBadge(date);
+  items1 = [tmp9Result, ];
+  const tmp2Result = subblock(6978);
+  let result = tmp2Result.shouldShowLimitedTimeBadge(date);
   if (result) {
     const obj11 = { style: tmp.limitedTimeBadge };
-    result = tmp11(tmp2(9143).LimitedTimeBadge, obj11);
+    result = tmp9(tmp2(8290).LimitedTimeBadge, obj11);
   }
   items1[1] = result;
-  obj6.children = items1;
-  obj5.children = tmp13(subblock(5371).PressableOpacity, obj6);
-  return closure_8(tmp12, obj5);
-};
+  return closure_8(tmp10, obj5);
+});
+let result = size.fileFinishedImporting("modules/collectibles/native/FeaturedCategorySubblock.tsx");
+
+export default tmp5;

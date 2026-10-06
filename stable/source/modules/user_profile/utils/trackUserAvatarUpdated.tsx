@@ -1,20 +1,24 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 6409
+// Function ID: 6410
 // Name: trackUserAvatarUpdated
-// Dependencies: [1074, 7266, 1241, 1397, 2]
+// Dependencies: [1086, 6410, 1253, 1403, 2]
 // Exports: trackUserAvatarUpdated
 
-// Module 7265 (trackUserAvatarUpdated)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7266 */;
+// Module 6409 (trackUserAvatarUpdated)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AvatarUtils from "AvatarUtils" /* 1403 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6410 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/user_profile/utils/trackUserAvatarUpdated.tsx");
 
 export const trackUserAvatarUpdated = function trackUserAvatarUpdated(isGuildProfile) {
+  let NumberResult;
+  let avatarHash;
+  let avatarId;
+  let obj2;
   let flag = isGuildProfile.isGuildProfile;
   ({ avatarHash, avatarId } = isGuildProfile);
   if (flag === undefined) {
@@ -24,16 +28,15 @@ export const trackUserAvatarUpdated = function trackUserAvatarUpdated(isGuildPro
   if (NEW_ASSET === undefined) {
     NEW_ASSET = ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET;
   }
-  const obj2 = { animated: null, is_guild_profile: null, recent_avatar_id: null, is_edited_recent_avatar: null };
-  const obj = AnalyticsUtilsDefault;
-  obj2.animated = AvatarUtils.isAnimatedIconHash(avatarHash);
-  obj2.is_guild_profile = flag;
-  let NumberResult;
+  const obj = { animated: obj2.isAnimatedIconHash(avatarHash), is_guild_profile: flag, recent_avatar_id: NumberResult, is_edited_recent_avatar: NEW_ASSET === ProfilePendingImageTypes.AssetOriginTypes.EDITED_ARCHIVED_ASSET };
+  const track = AnalyticsUtilsDefault.track;
+  const USER_AVATAR_UPDATED = AnalyticEvents.USER_AVATAR_UPDATED;
+  AnalyticsUtilsDefault;
+  NumberResult = undefined;
+  obj2 = AvatarUtils;
   if (NEW_ASSET === ProfilePendingImageTypes.AssetOriginTypes.ARCHIVED_ASSET) {
     const _Number = Number;
     NumberResult = Number(avatarId);
   }
-  obj2.recent_avatar_id = NumberResult;
-  obj2.is_edited_recent_avatar = NEW_ASSET === ProfilePendingImageTypes.AssetOriginTypes.EDITED_ARCHIVED_ASSET;
-  obj.track(AnalyticEvents.USER_AVATAR_UPDATED, obj2);
+  track(USER_AVATAR_UPDATED, obj);
 };

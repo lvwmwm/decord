@@ -1,25 +1,27 @@
-// Module ID: 7952
-// Function ID: 7953
+// Module ID: 7101
+// Function ID: 7102
 // Name: parseContentForSuppressNotifications
 // Dependencies: [2]
 // Exports: default
 
-// Module 7952 (parseContentForSuppressNotifications)
+// Module 7101 (parseContentForSuppressNotifications)
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^" + "@silent" + "(\\s|$)");
 const result = size.fileFinishedImporting("modules/suppress_notifications/parseContentForSuppressNotifications.tsx");
 
 export default function parseContentForSuppressNotifications(str) {
+  let items2;
   if (null == str) {
     const items = [false, ""];
-    let items2 = items;
+    items2 = items;
   } else if (null == str.match(regExp)) {
     const items1 = [false, str];
     items2 = items1;
   } else {
-    items2 = [true, str.substring(7).trim()];
+    items2 = [true, ];
     str = str.substring(7);
+    items2[1] = str.trim();
   }
   return items2;
 };

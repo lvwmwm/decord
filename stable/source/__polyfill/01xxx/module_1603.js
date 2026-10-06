@@ -1,27 +1,55 @@
 // Module ID: 1603
 // Function ID: 1604
-// Dependencies: [19, 1487, 1583]
-// Exports: useLinkTo
+// Dependencies: [19, 17, 1604, 1494]
+// Exports: Link
 
 // Module 1603
-import BaseNavigationContainer from "BaseNavigationContainer" /* 1487 */;
-import _mod1583 from "module_1583" /* 1583 */;
-import noop from "module_19" /* 19 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1494 */;
+import _mod1604 from "module_1604" /* 1604 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-require = arg1;
+let Platform;
+let c3;
+({ Platform, Text: c3 } = react_native);
 
-export const useLinkTo = function useLinkTo() {
-  const context = noop.useContext(BaseNavigationContainer.NavigationContainerRefContext);
-  const buildAction = _mod1583.useBuildAction();
-  const items = [buildAction, context];
-  return noop.useCallback((arg0) => {
-    if (undefined === context) {
-      const _Error = Error;
-      const error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
-      throw error;
+export const Link = function Link(arg0) {
+  let action;
+  let colors;
+  let fonts;
+  let href;
+  let params;
+  let screen;
+  let style;
+  ({ screen, params, action, href, style } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ screen: 0, params: 0, action: 0, href: 0, style: 0, target: 0 }));
+  const obj = _mod1604;
+  const linkProps = obj.useLinkProps({ screen, params, action, href });
+  const obj2 = BaseNavigationContainer;
+  const theme = obj2.useTheme();
+  ({ colors, fonts } = theme);
+  const createElement = react.createElement;
+  const merged1 = Object.assign(linkProps);
+  const merged2 = Object.assign(merged);
+  const items = [, , ];
+  const obj4 = { color: colors.primary };
+  items[0] = obj4;
+  items[1] = fonts.regular;
+  items[2] = style;
+  return <_false onPress={function onPress(preventDefault) {
+    if (merged.disabled) {
+      preventDefault.preventDefault();
+      preventDefault.stopPropagation();
     } else {
-      obj.dispatch(buildAction(arg0));
+      if ("onPress" in merged) {
+        const onPress = tmp.onPress;
+        if (onPress != null) {
+          onPress(preventDefault);
+        }
+      }
+      if (!preventDefault.defaultPrevented) {
+        linkProps.onPress(preventDefault);
+      }
     }
-    obj = context;
-  }, items);
+  }} style={items} />;
 };

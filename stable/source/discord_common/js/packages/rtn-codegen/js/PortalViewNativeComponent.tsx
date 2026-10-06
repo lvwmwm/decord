@@ -1,16 +1,17 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 7721
+// Function ID: 7722
 // Name: PortalViewNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 8572 (PortalViewNativeComponent)
-import weakSet from "weakSet" /* 106 */;
+// Module 7721 (PortalViewNativeComponent)
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "DCDPortalView", directEventTypes: { topPortalViewLoaded: { registrationName: "onPortalViewLoaded" } }, validAttributes: null };
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onPortalViewLoaded: true }));
-__INTERNAL_VIEW_CONFIG.validAttributes = { portal: true };
+let obj2;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "DCDPortalView", directEventTypes: { topPortalViewLoaded: { registrationName: "onPortalViewLoaded" } }, validAttributes: obj2 };
+obj2 = { portal: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onPortalViewLoaded: true }));
 const value = module_65.get("DCDPortalView", () => obj);
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/PortalViewNativeComponent.tsx");
 

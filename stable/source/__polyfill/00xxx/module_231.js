@@ -4,41 +4,40 @@
 
 // Module 231
 import _createClassDefault from "_createClass" /* 42 */;
+import DialogManagerAndroid from "DialogManagerAndroid" /* 232 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 
-const Alert = arg1;
+let constants;
+
 class Alert {
   constructor() {
-    tmp = c2(this, Alert);
-    return;
+    _classCallCheck(this, Alert);
   }
 }
 const entry = {
   key: "alert",
   value: function alert(Alert, arg1, items, arg3) {
-    closure_0 = arg3;
-    const _default = Alert(232).default;
+    let closure_0 = arg3;
+    const _default = DialogManagerAndroid.default;
     if (_default) {
+      let substr;
       let str = Alert;
-      const buttonClicked = _default.getConstants();
+      constants = _default.getConstants();
       if (!Alert) {
         str = "";
       }
       let str2 = arg1;
-      let obj = { title: str, message: null, cancelable: false };
+      let obj = { title: str, message: str2, cancelable: false };
       if (!arg1) {
         str2 = "";
       }
-      obj.message = str2;
-      let cancelable = arg3;
-      if (arg3) {
-        cancelable = arg3.cancelable;
-      }
-      if (cancelable) {
+      const tmp = arg3 && arg3.cancelable;
+      if (tmp) {
         obj.cancelable = arg3.cancelable;
       }
-      if (items) {
-        let substr = items.slice(0, 3);
+      const tmp2 = items;
+      if (tmp2) {
+        substr = items.slice(0, 3);
       } else {
         substr = [{ text: "OK" }];
       }
@@ -56,30 +55,24 @@ const entry = {
       }
       _default.showAlert(obj, (arg0) => console.warn(arg0), (arg0, arg1) => {
         if (arg0 === buttonClicked.buttonClicked) {
-          if (arg1 === tmp.buttonNeutral) {
+          if (arg1 === buttonClicked.buttonNeutral) {
+            const obj2 = arr5;
             if (arr5.onPress) {
               obj2.onPress();
             }
-            obj2 = arr5;
-          } else if (arg1 === tmp.buttonNegative) {
+          } else if (arg1 === buttonClicked.buttonNegative) {
+            const obj = arr4;
             if (arr4.onPress) {
               obj.onPress();
             }
-            obj = arr4;
           } else {
-            let onPress = arg1 === tmp.buttonPositive;
-            if (onPress) {
-              onPress = arr.onPress;
-            }
+            const onPress = arg1 === tmp.buttonPositive && arr.onPress;
             if (onPress) {
               arr.onPress();
             }
           }
         } else {
-          let onDismiss = arg0 === tmp.dismissed && closure_0;
-          if (onDismiss) {
-            onDismiss = closure_0.onDismiss;
-          }
+          const onDismiss = arg0 === tmp.dismissed && closure_0 && closure_0.onDismiss;
           if (onDismiss) {
             closure_0.onDismiss();
           }

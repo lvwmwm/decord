@@ -1,31 +1,20 @@
-// Module ID: 8261
-// Function ID: 8262
+// Module ID: 7417
+// Function ID: 7418
 // Name: canAddNewReactions
-// Dependencies: [5662, 4427, 1074, 2]
+// Dependencies: [5726, 4472, 1086, 2]
 // Exports: default
 
-// Module 8261 (canAddNewReactions)
-import GuildVerificationStore from "GuildVerificationStore" /* 5662 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+// Module 7417 (canAddNewReactions)
+import Constants from "Constants" /* 1086 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5726 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import size from "module_2" /* 2 */;
 
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
+const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/reactions/canAddNewReactions.tsx");
 
 export default (getGuildId) => {
   const guildId = getGuildId.getGuildId();
-  let canChatInGuildResult = null != guildId;
-  if (canChatInGuildResult) {
-    canChatInGuildResult = GuildVerificationStore.canChatInGuild(guildId);
-  }
-  if (canChatInGuildResult) {
-    canChatInGuildResult = PermissionStore.can(Permissions.ADD_REACTIONS, getGuildId);
-  }
-  if (!canChatInGuildResult) {
-    canChatInGuildResult = getGuildId.isPrivate();
-  }
-  if (canChatInGuildResult) {
-    canChatInGuildResult = !getGuildId.isSystemDM();
-  }
+  const canChatInGuildResult = (null != guildId && GuildVerificationStore.canChatInGuild(guildId) && PermissionStore.can(Permissions.ADD_REACTIONS, getGuildId) || getGuildId.isPrivate()) && !getGuildId.isSystemDM();
   return canChatInGuildResult;
 };

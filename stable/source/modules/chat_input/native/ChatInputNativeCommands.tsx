@@ -1,16 +1,14 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 11346
+// Function ID: 11347
 // Name: ChatInputNativeCommands
-// Dependencies: [12271, 8027, 2]
+// Dependencies: [11347, 7176, 2]
 
-// Module 12270 (ChatInputNativeCommands)
-import createNonce from "createNonce" /* 8027 */;
-import ChatInputNativeComponent from "ChatInputNativeComponent" /* 12271 */;
+// Module 11346 (ChatInputNativeCommands)
+import createNonce from "createNonce" /* 7176 */;
+import ChatInputNativeComponent from "ChatInputNativeComponent" /* 11347 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputNativeCommands.tsx");
-
-export default {
+let obj = {
   backspace(arg0) {
     if (null != arg0) {
       const Commands = ChatInputNativeComponent.Commands;
@@ -36,11 +34,13 @@ export default {
     }
   },
   getText(arg0, set, arg2) {
-    closure_1 = arg2;
+    let closure_0 = set;
+    let closure_1 = arg2;
     if (null == arg0) {
       return null;
     } else {
-      const nonce = createNonce.createNonce();
+      const obj = createNonce;
+      const nonce = obj.createNonce();
       const result = set.set(nonce, (arg0) => {
         set.delete(nonce);
         closure_1(arg0);
@@ -83,11 +83,16 @@ export default {
     if (null != arg0) {
       const Commands = ChatInputNativeComponent.Commands;
       const _JSON = JSON;
+      const updateTextBlocks = Commands.updateTextBlocks;
       const json = JSON.stringify(arg1);
-      Commands.updateTextBlocks(arg0, json, arg2);
+      updateTextBlocks(arg0, json, arg2);
     }
   },
   replaceRange(arg0, keepCursorPosition) {
+    let _location;
+    let length;
+    let nodes;
+    let text;
     ({ location: _location, length, text, nodes } = keepCursorPosition);
     if (nodes === undefined) {
       nodes = [];
@@ -104,3 +109,6 @@ export default {
     }
   }
 };
+let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputNativeCommands.tsx");
+
+export default obj;

@@ -1,23 +1,22 @@
-// Module ID: 2084
-// Function ID: 2085
+// Module ID: 2091
+// Function ID: 2092
 // Name: Kv
-// Dependencies: [2079, 2]
+// Dependencies: [2086, 2]
 
-// Module 2084 (Kv)
-import Host2 from "Host" /* 2079 */;
+// Module 2091 (Kv)
+import Host2 from "Host" /* 2086 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Kv.tsx");
-const prototype = function Kv() {
-  return Object.create(new.target.prototype);
-}.prototype;
-prototype["databases"] = function databases() {
-  const Host = Host2.Host;
-  return Host.list();
-};
-prototype["optimize"] = function optimize(arg0) {
-  const Host = Host2.Host;
-  return Host.optimize(arg0);
-};
+class Kv {
+  static databases() {
+    const Host = Host2.Host;
+    return Host.list();
+  }
+  static optimize(arg0) {
+    const Host = Host2.Host;
+    return Host.optimize(arg0);
+  }
+}
 
-export const Kv = prototype;
+export { Kv };

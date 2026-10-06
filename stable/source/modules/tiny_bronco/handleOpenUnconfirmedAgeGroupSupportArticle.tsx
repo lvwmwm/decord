@@ -1,28 +1,33 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 14274
+// Function ID: 14275
 // Name: handleOpenUnconfirmedAgeGroupSupportArticle
-// Dependencies: [14015, 10071, 8714, 2108, 2]
+// Dependencies: [13263, 9197, 7863, 2114, 2]
 // Exports: handleOpenUnconfirmedAgeGroupSupportArticle
 
-// Module 15031 (handleOpenUnconfirmedAgeGroupSupportArticle)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8714 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 14015 */;
+// Module 14274 (handleOpenUnconfirmedAgeGroupSupportArticle)
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 13263 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 9197 */;
+import size from "module_2" /* 2 */;
 
-const TinyBroncoConstants = fn(10071);
+let c3;
+let closure_4;
 ({ TINY_BRONCO_AGE_GROUP_SUPPORT_ARTICLE_IDS_BY_COUNTRY: c3, TINY_BRONCO_DEFAULT_ARTICLE_ID: closure_4 } = TinyBroncoConstants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/tiny_bronco/handleOpenUnconfirmedAgeGroupSupportArticle.tsx");
 
 export const handleOpenUnconfirmedAgeGroupSupportArticle = function handleOpenUnconfirmedAgeGroupSupportArticle() {
   const countryCode = LocationMetadataStore.getCountryCode();
   let tmp2;
   if (null != countryCode) {
-    tmp2 = React3[countryCode.alpha2];
+    tmp2 = _false[countryCode.alpha2];
   }
-  const obj = AgeVerificationActionCreatorsDefault;
+  const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
+  AgeVerificationActionCreatorsDefault;
+  const getArticleURL = HelpdeskUtilsDefault.getArticleURL;
+  HelpdeskUtilsDefault;
   if (tmp2 == null) {
-    tmp2 = React4;
+    tmp2 = React3;
   }
-  obj.openUrl(HelpdeskUtilsDefault.getArticleURL(tmp2));
+  openUrl(getArticleURL(tmp2));
 };

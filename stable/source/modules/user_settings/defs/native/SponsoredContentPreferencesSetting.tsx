@@ -1,34 +1,36 @@
-// Module ID: 16187
-// Function ID: 16188
+// Module ID: 15464
+// Function ID: 15465
 // Name: SponsoredContentPreferencesSetting
-// Dependencies: [1074, 11754, 1115, 2154, 15275, 16185, 16188, 2]
+// Dependencies: [1086, 10874, 1127, 2160, 14519, 15462, 15465, 2]
 
-// Module 16187 (SponsoredContentPreferencesSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import _modDef2154 from "module_2154" /* 2154 */;
-import QuestsIcon from "QuestsIcon" /* 15275 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 16185 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15464 (SponsoredContentPreferencesSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import _modDef2160 from "module_2160" /* 2160 */;
+import QuestsIcon from "QuestsIcon" /* 14519 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 15462 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(_modDef2154.XUj46U);
+    const intl = intl2.intl;
+    return intl.string(_modDef2160.XUj46U);
   },
   parent: null,
   IconComponent: QuestsIcon.QuestsIcon,
   usePredicate: AdTopicOptOutClientExperiment.useIsAdTopicOptOutClientEnabled,
   screen: {
-    route: Constants.UserSettingsSections.SPONSORED_CONTENT_PREFERENCES,
+    route: UserSettingsSections.SPONSORED_CONTENT_PREFERENCES,
     getComponent() {
       return require("SponsoredContentPreferencesScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SponsoredContentPreferencesSetting.tsx");
 
 export default route;

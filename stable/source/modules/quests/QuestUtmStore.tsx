@@ -1,21 +1,22 @@
-// Module ID: 7991
-// Function ID: 7992
+// Module ID: 7140
+// Function ID: 7141
 // Name: QuestUtmStore
-// Dependencies: [560, 2]
+// Dependencies: [570, 2]
 
-// Module 7991 (QuestUtmStore)
-import module_560 from "module_560" /* 560 */;
+// Module 7140 (QuestUtmStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-let obj = module_560.create((arg0) => {
+let obj = module_570.create((arg0) => {
   const state = arg0;
   obj = {
     utmSourceCurrent: "r",
-    utmMediumCurrent: "ip",
-    utmCampaignCurrent: "content",
-    utmContentCurrent: "isArray",
+    utmMediumCurrent: "__initData",
+    utmCampaignCurrent: "pos",
+    utmContentCurrent: "registerAsset",
     setUtmCurrentContext(utmSourceCurrent) {
-      return state({ utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent });
+      obj = { utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent };
+      return state(obj);
     },
     getUtmCurrentContext() {
       return state.getState();

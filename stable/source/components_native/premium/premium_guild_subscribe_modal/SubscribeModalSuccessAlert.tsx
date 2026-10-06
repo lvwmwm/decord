@@ -1,62 +1,266 @@
-// Module ID: 13915
-// Function ID: 13916
+// Module ID: 13165
+// Function ID: 13166
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 2063, 7706, 21, 4788, 576, 13916, 13917, 504, 4722, 5237, 1115, 5141, 5683, 5230, 1094, 4639, 13918, 13919, 4784, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 2073, 6853, 21, 4837, 588, 558, 576, 13166, 13167, 504, 4769, 1127, 5205, 5747, 4687, 13168, 13169, 5292, 1106, 4833, 5301, 2]
 
-// Module 13915 (SubscribeModalSuccessAlert)
-import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import util from "util" /* 1115 */;
-import useThemeDefault from "useTheme" /* 4722 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5683 */;
-import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13916 */;
-import _mod13917 from "module_13917" /* 13917 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 13165 (SubscribeModalSuccessAlert)
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import intl4 from "intl" /* 1127 */;
+import shared from "shared" /* 4687 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import AlertDefault from "Alert" /* 5301 */;
+import ColorConstants from "ColorConstants" /* 6853 */;
+import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13167 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class PremiumPaymentGuildAnimation {
-  constructor(arg0) {
-    ({ nextScene, onSceneComplete, loop } = global);
-    tmp = closure_11();
-    obj = { nextScene, onSceneComplete, loop, sceneSegments: closure_12, style: tmp.animation, source: null };
-    tmp2 = closure_1(closure_2[8]);
-    obj.source = closure_0(closure_2[9]);
-    return jsx(tmp2, obj);
+const require = globalThis.__r;
+let dependencyMap, guildId, importDefault;
+
+let c10;
+let c9;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let tmp;
+const _mod13166 = tmp(13166);
+({ View: hasOwnProperty, Image: metroRequire } = react_native);
+const Gradients = ColorConstants.Gradients;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { wrapper: { paddingHorizontal: 24, paddingBottom: 16, paddingTop: 4, alignItems: "stretch" }, animation: { width: "auto", height: 112, alignSelf: "center" }, text: { lineHeight: 18, textAlign: "center" }, activated: obj2, activatedBackground: obj3, activatedImage: { width: 220 }, successInfo: { marginTop: 24 } };
+obj2 = { padding: 2, borderRadius: nativeDefault.radii.xs, marginTop: 8 };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingVertical: 12, paddingHorizontal: 20, alignItems: "center" };
+let closure_11 = createStyles(obj);
+let obj4 = { ENTRY: "entry", IDLE: "idle" };
+const sceneSegments = { [obj4.ENTRY]: { BEG: 0, END: 180 }, [obj4.IDLE]: { BEG: 180, END: 360 } };
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let loop;
+  let nextScene;
+  let onSceneComplete;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ nextScene, onSceneComplete, loop } = arg0);
+  const tmp4 = closure_11();
+  const animation = tmp4.animation;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = _mod13166;
+    cResult[0] = tmpResult;
+    first = tmpResult;
+  } else {
+    first = cResult[0];
   }
-}
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
-const Gradients = fn(7706).Gradients;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { wrapper: { paddingHorizontal: 24, paddingBottom: 16, paddingTop: 4, alignItems: "stretch" }, animation: { width: "auto", height: 112, alignSelf: "center" }, text: { lineHeight: 18, textAlign: "center" }, activated: { padding: 2, borderRadius: nativeDefault.radii.xs, marginTop: 8 }, activatedBackground: null, activatedImage: null, successInfo: null };
-let obj3 = { padding: 2, borderRadius: nativeDefault.radii.xs, marginTop: 8 };
-obj2.activatedBackground = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingVertical: 12, paddingHorizontal: 20, alignItems: "center" };
-obj2.activatedImage = { width: 220 };
-obj2.successInfo = { marginTop: 24 };
-let closure_11 = createStyles.createStyles(obj2);
-let obj5 = { ENTRY: "entry", IDLE: "idle" };
-const sceneSegments = { [obj5.ENTRY]: { BEG: 0, END: 180 }, [obj5.IDLE]: { BEG: 180, END: 360 } };
-PremiumPaymentGuildAnimation.Scenes = obj5;
-const size = fn(2);
-const result = size.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalSuccessAlert.tsx");
-
-export default function SubscribeModalSuccessAlert(arg0) {
+  if (cResult[1] === loop) {
+    if (cResult[2] === nextScene) {
+      if (cResult[3] === onSceneComplete) {
+        let tmp7;
+        if (cResult[4] === tmp4.animation) {
+          tmp7 = cResult[5];
+        }
+        return tmp7;
+      }
+    }
+  }
+  const obj2 = { nextScene, onSceneComplete, loop, sceneSegments, style: animation, source: first };
+  const tmp8 = React4(SequencedLottieAnimationViewDefault, obj2);
+  cResult[1] = loop;
+  cResult[2] = nextScene;
+  cResult[3] = onSceneComplete;
+  cResult[4] = tmp4.animation;
+  cResult[5] = tmp8;
+  tmp7 = tmp8;
+}) : ((arg0) => {
+  let loop;
+  let nextScene;
+  let onSceneComplete;
+  ({ nextScene, onSceneComplete, loop } = arg0);
+  const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_11().animation, source: _mod13166 };
+  const tmp2 = SequencedLottieAnimationViewDefault;
+  return React4(tmp2, obj);
+});
+let closure_13 = tmp5;
+tmp5.Scenes = obj4;
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let first;
+  let tmp14;
+  let tmp16;
+  let tmp7;
+  const f113581 = (premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription;
+  let obj = guildId(576);
+  const cResult = obj.c(42);
+  guildId = guildId.guildId;
+  const guildBoostSlots = guildId.guildBoostSlots;
+  const tmp4 = closure_11();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function x() {
+      return GuildStore.getGuild(guildId);
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = guildId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] !== guildBoostSlots) {
+    cResult[3] = guildBoostSlots;
+    cResult[4] = null != guildBoostSlots && guildBoostSlots.some(f113581);
+    const tmp11 = null != guildBoostSlots && guildBoostSlots.some(f113581);
+  }
+  let num6;
+  if (guildBoostSlots != null) {
+    num6 = guildBoostSlots.length;
+  }
+  if (num6 == null) {
+    num6 = 1;
+  }
+  [tmp14, importDefault] = react.useState(Scenes.Scenes.ENTRY);
+  _slicedToArray(react.useState(Scenes.Scenes.ENTRY), 2);
+  [tmp16, dependencyMap] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  const tmp17 = useThemeDefault();
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(guildId(1127).t.YKxJCI);
+    class G {
+      constructor() {
+        const obj = actions_AlertActionCreatorsDefault;
+        obj.close();
+        const obj2 = guildId(dependencyMap[16]);
+        obj2.closeApplyBoostModal();
+      }
+    }
+    cResult[5] = stringResult;
+    cResult[6] = G;
+  }
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor(arg0) {
+        if (Scenes.Scenes.ENTRY === arg0) {
+          return importDefault(Scenes.Scenes.IDLE);
+        } else if (Scenes.Scenes.IDLE === arg0) {
+          return dependencyMap(true);
+        }
+      }
+    }
+    cResult[7] = R;
+    class G {
+      constructor() {
+        const obj = actions_AlertActionCreatorsDefault;
+        obj.close();
+        const obj2 = guildId(dependencyMap[16]);
+        obj2.closeApplyBoostModal();
+      }
+    }
+  } else {
+    class R {
+      constructor(arg0) {
+        if (Scenes.Scenes.ENTRY === arg0) {
+          return importDefault(Scenes.Scenes.IDLE);
+        } else if (Scenes.Scenes.IDLE === arg0) {
+          return dependencyMap(true);
+        }
+      }
+    }
+  }
+  if (cResult[8] === tmp14) {
+    class R {
+      constructor(arg0) {
+        if (Scenes.Scenes.ENTRY === arg0) {
+          return importDefault(Scenes.Scenes.IDLE);
+        } else if (Scenes.Scenes.IDLE === arg0) {
+          return dependencyMap(true);
+        }
+      }
+    }
+    const tmpResult2 = guildId(4687);
+    if (tmpResult2.isThemeLight(tmp17)) {
+      class R {
+        constructor(arg0) {
+          if (Scenes.Scenes.ENTRY === arg0) {
+            return importDefault(Scenes.Scenes.IDLE);
+          } else if (Scenes.Scenes.IDLE === arg0) {
+            return dependencyMap(true);
+          }
+        }
+      }
+    } else {
+      class R {
+        constructor(arg0) {
+          if (Scenes.Scenes.ENTRY === arg0) {
+            return importDefault(Scenes.Scenes.IDLE);
+          } else if (Scenes.Scenes.IDLE === arg0) {
+            return dependencyMap(true);
+          }
+        }
+      }
+    }
+    class G {
+      constructor() {
+        const obj = actions_AlertActionCreatorsDefault;
+        obj.close();
+        const obj2 = guildId(dependencyMap[16]);
+        obj2.closeApplyBoostModal();
+      }
+    }
+    let obj2 = { style: tmp4.activatedImage, source: tmp23 };
+    cResult[11] = tmp4.activatedImage;
+    cResult[12] = tmp23;
+    cResult[13] = closure_9(closure_6, obj2);
+    const tmp27 = closure_9(closure_6, obj2);
+  }
+  cResult[8] = tmp14;
+  cResult[9] = tmp16;
+  cResult[10] = closure_9(Scenes, { nextScene: tmp14, loop: tmp16, onSceneComplete: tmp21 });
+  closure_9(Scenes, { nextScene: tmp14, loop: tmp16, onSceneComplete: tmp21 });
+}) : ((arg0) => {
+  let closure_1;
+  let closure_2;
+  let first;
+  let first1;
+  let guildBoostSlots;
+  let intl;
+  let intl3;
+  let items1;
+  let items3;
+  let obj11;
+  let obj5;
+  let obj6;
+  let stringResult;
+  let tmp10Result;
+  let tmp17;
   ({ guildId: require, guildBoostSlots } = arg0);
   importDefault = undefined;
   dependencyMap = undefined;
   const tmp = closure_11();
+  let obj = get_initialized;
   const items = [GuildStore];
   let someResult = null != guildBoostSlots;
-  const stateFromStores = initialize.useStateFromStores(items, () => GuildStore.getGuild(require));
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(require));
   if (someResult) {
     someResult = guildBoostSlots.some((premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription);
   }
@@ -67,83 +271,69 @@ export default function SubscribeModalSuccessAlert(arg0) {
   if (num == null) {
     num = 1;
   }
-  const tmp6 = _slicedToArray(noop.useState(PremiumPaymentGuildAnimation.Scenes.ENTRY), 2);
-  importDefault = tmp6[1];
-  const tmp7 = _slicedToArray(noop.useState(false), 2);
-  dependencyMap = tmp7[1];
-  const obj2 = { style: tmp.wrapper, confirmText: null, onConfirm: null, children: null };
-  const tmp9 = useThemeDefault();
-  const intl = tmp2(1115).intl;
-  obj2.confirmText = intl.string(util.t.YKxJCI);
-  obj2.onConfirm = function onConfirm() {
-    closure_1(5141).close();
-    const obj = closure_1(5141);
-    actions_BoostingActionCreators.closeApplyBoostModal();
+  [first, importDefault] = react.useState(Scenes.Scenes.ENTRY);
+  [first1, dependencyMap] = react.useState(false);
+  let obj2 = {
+    style: tmp.wrapper,
+    confirmText: intl.string(tmp2(1127).t.YKxJCI),
+    onConfirm() {
+      const obj = closure_1(closure_2[15]);
+      obj.close();
+      const obj2 = require("actions/BoostingActionCreators");
+      obj2.closeApplyBoostModal();
+    },
+    children: items1
   };
-  const items1 = [
-    closure_9(PremiumPaymentGuildAnimation, {
-      nextScene: tmp6[0],
-      loop: tmp7[0],
-      onSceneComplete(currentScene) {
-        if (PremiumPaymentGuildAnimation.Scenes.ENTRY === currentScene) {
-          return closure_1(tmp.Scenes.IDLE);
-        } else if (tmp.Scenes.IDLE === currentScene) {
-          return dependencyMap(true);
-        }
-      }
-    }),
-
-  ];
-  const obj4 = { style: tmp.activated, start: null, end: null, colors: null, children: null };
+  const tmp11 = useThemeDefault();
+  const tmp13 = AlertDefault;
+  intl = tmp2(1127).intl;
+  items1 = [, ];
   const obj3 = {
-    nextScene: tmp6[0],
-    loop: tmp7[0],
+    nextScene: first,
+    loop: first1,
     onSceneComplete(currentScene) {
-      if (PremiumPaymentGuildAnimation.Scenes.ENTRY === currentScene) {
-        return closure_1(tmp.Scenes.IDLE);
-      } else if (tmp.Scenes.IDLE === currentScene) {
-        return dependencyMap(true);
+      if (Scenes.Scenes.ENTRY === currentScene) {
+        return closure_1(Scenes.Scenes.IDLE);
+      } else if (Scenes.Scenes.IDLE === currentScene) {
+        return closure_2(true);
       }
     }
   };
-  const tmp11 = common_AlertDefault;
-  obj4.start = ConstantsIOS.HorizontalGradient.START;
-  obj4.end = ConstantsIOS.HorizontalGradient.END;
-  obj4.colors = Gradients.PREMIUM_GUILD;
-  const obj5 = { style: tmp.activatedBackground, children: null };
-  const obj6 = { style: tmp.activatedImage, source: null };
-  const tmp14 = LinearGradientDefault;
-  const tmp15 = closure_6;
-  if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(13918);
+  items1[0] = closure_9(Scenes, obj3);
+  const obj4 = { style: tmp.activated, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: closure_9(closure_5, obj5) };
+  const tmp16 = LinearGradientDefault;
+  obj5 = { style: tmp.activatedBackground, children: closure_9(tmp17, obj6) };
+  obj6 = { style: tmp.activatedImage, source: tmp10Result };
+  tmp17 = closure_6;
+  const tmp2Result = shared;
+  if (tmp2Result.isThemeLight(tmp11)) {
+    tmp10Result = tmp10(13168);
   } else {
-    tmp8Result = tmp8(13919);
+    tmp10Result = tmp10(13169);
   }
-  obj6.source = tmp8Result;
-  obj5.children = closure_9(tmp15, obj6);
-  obj4.children = closure_9(closure_5, obj5);
-  const items2 = [closure_9(tmp14, obj4), ];
-  const obj7 = { style: tmp.successInfo, children: null };
-  const obj8 = { style: tmp.text, variant: "text-sm/medium", children: null };
-  const intl2 = tmp2(1115).intl;
+  const items2 = [closure_9(tmp16, obj4), ];
+  const obj7 = { style: tmp.successInfo, children: items3 };
+  const obj8 = { style: tmp.text, variant: "text-sm/medium", children: stringResult };
+  const Text = tmp2(4833).Text;
+  const intl2 = tmp2(1127).intl;
   const string = intl2.string;
-  const t = tmp2(1115).t;
+  const t = tmp2(1127).t;
   if (someResult) {
-    let stringResult = string(t.RMmWY3);
+    stringResult = string(t.RMmWY3);
   } else {
     stringResult = string(t.d81BkZ);
   }
-  const obj9 = { children: null };
-  obj8.children = stringResult;
-  const items3 = [closure_9(Text_Text.Text, obj8), ];
-  const obj10 = { style: tmp.text, variant: "text-sm/medium", children: null };
-  const intl3 = tmp2(1115).intl;
-  obj10.children = intl3.format(util.t.r0IGsP, { guildName: stateFromStores.name, guildSubscriptionQuantity: num });
-  items3[1] = closure_9(Text_Text.Text, obj10);
-  obj7.children = items3;
+  const obj9 = { children: items2 };
+  items3 = [closure_9(Text, obj8), ];
+  const obj10 = { style: tmp.text, variant: "text-sm/medium", children: intl3.format(intl4.t.r0IGsP, obj11) };
+  const Text2 = tmp2(4833).Text;
+  intl3 = tmp2(1127).intl;
+  obj11 = { guildName: stateFromStores.name, guildSubscriptionQuantity: num };
+  items3[1] = closure_9(Text2, obj10);
   items2[1] = closure_10(closure_5, obj7);
-  obj9.children = items2;
   items1[1] = closure_10(closure_5, obj9);
-  obj2.children = items1;
-  return closure_10(tmp11, obj2);
-};
+  return closure_10(tmp13, obj2);
+});
+const result = size.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalSuccessAlert.tsx");
+
+export default tmp6;

@@ -1,84 +1,260 @@
-// Module ID: 5803
-// Function ID: 5804
+// Module ID: 5867
+// Function ID: 5868
 // Name: AppWindowContext
-// Dependencies: [32, 19, 1074, 21, 1110, 5804, 2012, 5805, 2]
-// Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
+// Dependencies: [32, 19, 1086, 21, 1122, 5868, 558, 576, 2020, 5869, 2]
+// Exports: getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 5803 (AppWindowContext)
-import WindowIdUtils2 from "WindowIdUtils" /* 5804 */;
-import WindowInteractingUtils from "WindowInteractingUtils" /* 5805 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 5867 (AppWindowContext)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
+import DOMUtils from "DOMUtils" /* 2020 */;
+import WindowInteractingUtils from "WindowInteractingUtils" /* 5869 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import WindowIdUtils_mod from "WindowIdUtils" /* 5868 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-let componentDispatcher = new fn(1110).ComponentDispatcher();
-const obj = { appContext: fn(1074).AppContext.APP, renderWindow: window, windowDispatch: componentDispatcher, windowId: null };
-const WindowIdUtils = fn(5804);
-obj.windowId = WindowIdUtils.getMainWindowId();
-const context = noop.createContext(obj);
+const require = globalThis.__r;
+let _require, children, dependencyMap;
+
+let WindowIdUtils;
+let react = react_mod;
+const AppContext = Constants.AppContext;
+const jsx = Fragment.jsx;
+let componentDispatcher = new ComponentDispatchUtils.ComponentDispatcher();
+let obj = { appContext: AppContext.APP, renderWindow: window, windowDispatch: componentDispatcher, windowId: WindowIdUtils.getMainWindowId() };
+const createContext = react.createContext;
+WindowIdUtils = WindowIdUtils_mod;
+const context = createContext(obj);
 const map = new Map();
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/main_app_window/web/AppWindowContext.tsx");
-
-export default context;
-export const MainWindowDispatch = componentDispatcher;
-export const getWindowDispatchForElement = function getWindowDispatchForElement(ownerDocument) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(appContext, renderWindow) {
+  let closure_2;
+  let closure_3;
+  let tmp4;
+  let tmp8;
+  let windowId;
+  _require = renderWindow;
+  let obj = require("react");
+  const cResult = obj.c(16);
+  if (cResult[0] !== renderWindow) {
+    const tmpResult = require("WindowIdUtils");
+    windowId = tmpResult.getWindowId(renderWindow);
+    cResult[0] = renderWindow;
+    cResult[1] = windowId;
+    tmp4 = windowId;
+  } else {
+    tmp4 = cResult[1];
+  }
+  [windowId, _slicedToArray] = react.useState(tmp4);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const self = this;
+    const self2 = this;
+    const componentDispatcher = new tmp(tmp2[4]).ComponentDispatcher();
+    cResult[2] = componentDispatcher;
+    tmp8 = componentDispatcher;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === appContext) {
+    if (cResult[4] === renderWindow) {
+      let tmp11;
+      if (cResult[5] === windowId) {
+        tmp11 = cResult[6];
+      }
+      react = tmp11;
+      if (cResult[7] === renderWindow) {
+        let tmp12;
+        let tmp13;
+        if (cResult[8] === windowId) {
+          tmp12 = cResult[9];
+          tmp13 = cResult[10];
+        }
+        const effect = obj3.useEffect(tmp12, tmp13);
+        if (cResult[11] === tmp11) {
+          if (cResult[12] === renderWindow) {
+            let tmp16;
+            let tmp17;
+            if (cResult[13] === windowId) {
+              tmp16 = cResult[14];
+              tmp17 = cResult[15];
+            }
+            const effect1 = obj3.useEffect(tmp16, tmp17);
+            return tmp11;
+          }
+        }
+        class E {
+          constructor() {
+            result = closure_1_6.set(closure_1, closure_3);
+            handleUnload = function handleUnload() { /* body not rendered: F135480 */ };
+            listener = handleUnload.addEventListener("unload", handleUnload);
+            return () => { /* body not rendered: F135481 */ };
+          }
+        }
+        const items = [tmp11, renderWindow, windowId];
+        cResult[11] = tmp11;
+        cResult[12] = renderWindow;
+        cResult[13] = windowId;
+        cResult[14] = E;
+        cResult[15] = items;
+        tmp17 = items;
+        tmp16 = E;
+      }
+      const items1 = [renderWindow, windowId];
+      cResult[7] = renderWindow;
+      cResult[8] = windowId;
+      cResult[9] = tmp14;
+      cResult[10] = items1;
+      tmp13 = items1;
+      tmp12 = tmp14;
+    }
+  }
+  const obj2 = { appContext, renderWindow, windowDispatch: tmp8, windowId };
+  cResult[3] = appContext;
+  cResult[4] = renderWindow;
+  cResult[5] = windowId;
+  cResult[6] = obj2;
+  tmp11 = obj2;
+}) : ((appContext, defaultView) => {
+  let closure_3;
+  let renderWindow;
+  let windowId;
+  _require = appContext;
+  dependencyMap = defaultView;
+  const useState = react.useState;
+  let obj = require("WindowIdUtils");
+  const tmp = windowId(useState(obj.getWindowId(defaultView)), 2);
+  windowId = tmp[0];
+  react = tmp[1];
+  const memo = react.useMemo(() => {
+    const componentDispatcher = new appContext(renderWindow[4]).ComponentDispatcher();
+    return componentDispatcher;
+  }, []);
+  const items = [appContext, defaultView, memo, windowId];
+  const memo1 = react.useMemo(() => ({ appContext, renderWindow, windowDispatch: memo, windowId }), items);
+  const items1 = [defaultView, windowId];
+  const effect = react.useEffect(() => {
+    let closure_0;
+    if (null == first) {
+      const _setInterval = setInterval;
+      const interval = setInterval(() => {
+        const obj = WindowIdUtils;
+        windowId = obj.getWindowId(renderWindow);
+        if (null != windowId) {
+          closure_3(windowId);
+          const _clearInterval = clearInterval;
+          clearInterval(closure_0);
+        }
+      }, 10);
+      return () => clearInterval(closure_0);
+    }
+  }, items1);
+  const items2 = [memo1, defaultView, windowId];
+  const effect1 = react.useEffect(() => {
+    function handleUnload() {
+      map.delete(windowId);
+    }
+    const result = map.set(first, memo1);
+    const listener = renderWindow.addEventListener("unload", handleUnload);
+    return () => renderWindow.removeEventListener("unload", handleUnload);
+  }, items2);
+  return memo1;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  children = children.children;
+  const tmp2 = closure_7(children.appContext, children.renderWindow);
+  if (cResult[0] === children) {
+    let tmp3;
+    if (cResult[1] === tmp2) {
+      tmp3 = cResult[2];
+    }
+    return tmp3;
+  }
+  const tmp4 = <context.Provider value={tmp2}>{children}</context.Provider>;
+  cResult[0] = children;
+  cResult[1] = tmp2;
+  cResult[2] = tmp4;
+  tmp3 = tmp4;
+}) : ((appContext) => <context.Provider value={closure_7(arg0.appContext, arg0.renderWindow)}>{arg0.children}</context.Provider>);
+function getWindowDispatchForElement(ownerDocument) {
   const defaultView = ownerDocument.ownerDocument.defaultView;
   if (null != defaultView) {
-    value = map.get(WindowIdUtils2.getWindowId(defaultView));
+    const obj = WindowIdUtils;
+    const value = map.get(obj.getWindowId(defaultView));
     let windowDispatch;
     if (value != null) {
       windowDispatch = value.windowDispatch;
     }
     return windowDispatch;
   }
-};
-export const getWindowDispatchForEvent = function getWindowDispatchForEvent(target) {
-  target = undefined;
-  if (target != null) {
-    target = target.target;
-  }
-  let tmp4 = null;
-  if (obj.isElement(target)) {
-    const defaultView = target.target.ownerDocument.defaultView;
-    let tmp5;
-    if (null != defaultView) {
-      value = map.get(WindowIdUtils2.getWindowId(defaultView));
-      let windowDispatch;
-      if (value != null) {
-        windowDispatch = value.windowDispatch;
-      }
-      tmp5 = windowDispatch;
-      const tmpResult = WindowIdUtils2;
-    }
-    if (tmp5 == null) {
-      tmp5 = null;
-    }
-    tmp4 = tmp5;
-  }
-  return tmp4;
-};
-export const getCurrentlyInteractingAppWindowContext = function getCurrentlyInteractingAppWindowContext() {
-  const currentlyInteractingWindowId = WindowInteractingUtils.getCurrentlyInteractingWindowId();
+}
+function getCurrentlyInteractingAppWindowContext() {
+  const obj = WindowInteractingUtils;
+  const currentlyInteractingWindowId = obj.getCurrentlyInteractingWindowId();
   let tmp2 = null;
   if (null != currentlyInteractingWindowId) {
-    value = map.get(currentlyInteractingWindowId);
+    let value = map.get(currentlyInteractingWindowId);
     if (value == null) {
       value = null;
     }
     tmp2 = value;
   }
   return tmp2;
+}
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result3 = size.fileFinishedImporting("modules/main_app_window/web/AppWindowContext.tsx");
+
+export default context;
+export const MainWindowDispatch = componentDispatcher;
+export { getWindowDispatchForElement };
+export const getWindowDispatchForEvent = function getWindowDispatchForEvent(target) {
+  target = undefined;
+  const isElement = DOMUtils.isElement;
+  DOMUtils;
+  if (target != null) {
+    target = target.target;
+  }
+  let tmp5 = null;
+  if (isElement(target)) {
+    const defaultView = target.target.ownerDocument.defaultView;
+    let tmp6;
+    if (null != defaultView) {
+      const tmpResult = WindowIdUtils;
+      const value = map.get(tmpResult.getWindowId(defaultView));
+      let windowDispatch;
+      if (value != null) {
+        windowDispatch = value.windowDispatch;
+      }
+      tmp6 = windowDispatch;
+    }
+    if (tmp6 == null) {
+      tmp6 = null;
+    }
+    tmp5 = tmp6;
+  }
+  return tmp5;
 };
+export { getCurrentlyInteractingAppWindowContext };
 export const getAppWindowContextValue = function getAppWindowContextValue(arg0) {
   return map.get(arg0);
 };
 export const getCurrentlyInteractingAppContext = function getCurrentlyInteractingAppContext() {
-  const currentlyInteractingWindowId = WindowInteractingUtils.getCurrentlyInteractingWindowId();
+  const obj = WindowInteractingUtils;
+  const currentlyInteractingWindowId = obj.getCurrentlyInteractingWindowId();
   let tmp2 = null;
   if (null != currentlyInteractingWindowId) {
-    value = map.get(currentlyInteractingWindowId);
+    let value = map.get(currentlyInteractingWindowId);
     if (value == null) {
       value = null;
     }
@@ -90,52 +266,7 @@ export const getCurrentlyInteractingAppContext = function getCurrentlyInteractin
   }
   return appContext;
 };
-export const AppWindowContextProvider = function AppWindowContextProvider(children) {
-  ({ appContext, renderWindow } = children);
-  let windowId;
-  noop = undefined;
-  const tmp = windowId(noop.useState(appContext(renderWindow[5]).getWindowId(renderWindow)), 2);
-  windowId = tmp[0];
-  noop = tmp[1];
-  const memo = noop.useMemo(() => {
-    const componentDispatcher = new appContext(renderWindow[4]).ComponentDispatcher();
-    return componentDispatcher;
-  }, []);
-  const items = [appContext, renderWindow, memo, windowId];
-  value = noop.useMemo(() => ({ appContext, renderWindow, windowDispatch: memo, windowId }), items);
-  redux = value;
-  const items1 = [renderWindow, windowId];
-  const effect = noop.useEffect(() => {
-    if (null == first) {
-      const _setInterval = setInterval;
-      const interval = setInterval(() => {
-        windowId = WindowIdUtils2.getWindowId(renderWindow);
-        if (null != windowId) {
-          closure_3(windowId);
-          const _clearInterval = clearInterval;
-          clearInterval(closure_0);
-        }
-      }, 10);
-      return () => clearInterval(closure_0);
-    }
-  }, items1);
-  const items2 = [value, renderWindow, windowId];
-  const effect1 = noop.useEffect(() => {
-    function handleUnload() {
-      map.delete(windowId);
-    }
-    const result = map.set(first, c5);
-    const listener = renderWindow.addEventListener("unload", handleUnload);
-    return () => renderWindow.removeEventListener("unload", handleUnload);
-  }, items2);
-  return memo(redux.Provider, { value, children: children.children });
-};
-export const useAppContext = function useAppContext() {
-  return noop.useContext(context).appContext;
-};
-export const useWindowDispatch = function useWindowDispatch() {
-  return noop.useContext(context).windowDispatch;
-};
-export const useRenderWindow = function useRenderWindow() {
-  return noop.useContext(context).renderWindow;
-};
+export const AppWindowContextProvider = tmp6;
+export const useAppContext = () => react.useContext(context).appContext;
+export const useWindowDispatch = () => react.useContext(context).windowDispatch;
+export const useRenderWindow = () => react.useContext(context).renderWindow;

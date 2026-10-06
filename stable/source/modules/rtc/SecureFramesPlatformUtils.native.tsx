@@ -1,56 +1,71 @@
-// Module ID: 10006
-// Function ID: 10007
+// Module ID: 9144
+// Function ID: 9145
 // Name: SecureFramesPlatformUtils
-// Dependencies: [2041, 4811, 10004, 1074, 4991, 10007, 1980, 4755, 10018, 1115, 5141, 1177, 7521, 10021, 2]
+// Dependencies: [2051, 4860, 9142, 1086, 5040, 9145, 1987, 4801, 9156, 1127, 5205, 1189, 6666, 9159, 2]
 
-// Module 10006 (SecureFramesPlatformUtils)
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 7521 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+// Module 9144 (SecureFramesPlatformUtils)
+import intl3 from "intl" /* 1127 */;
+import native from "native" /* 1189 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 6666 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9142 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SecureFramesConstants = fn(10004);
-({ SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY: hasOwnProperty, SECURE_FRAMES_STREAM_VERIFICATION_BOTTOM_SHEET_KEY: metroRequire, SECURE_FRAMES_USER_VERIFICATION_MODAL_KEY: closure_7 } = SecureFramesConstants);
-const Constants = fn(1074);
-({ ME: closure_8, Routes: closure_9 } = Constants);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/rtc/SecureFramesPlatformUtils.native.tsx");
-
-export default {
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+({ SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY: hasOwnProperty, SECURE_FRAMES_STREAM_VERIFICATION_BOTTOM_SHEET_KEY: metroRequire, SECURE_FRAMES_USER_VERIFICATION_MODAL_KEY: metroImportDefault } = SecureFramesConstants);
+({ ME: metroImportAll, Routes: c9 } = Constants);
+let obj = {
   openSecureFramesStreamVerification(streamKey, channelId) {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10018, dependencyMap.paths), timestampProducer, { streamKey, channelId });
+    const obj = ActionSheetActionCreatorsDefault;
+    const obj2 = { streamKey, channelId };
+    obj.openLazy(asyncRequire(9156, dependencyMap.paths), metroRequire, obj2);
   },
   openSecureFramesUserVerificationModal(id, id2, fn) {
     if (fn()) {
       const obj2 = { userId: id, channelId: id2 };
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10007, dependencyMap.paths), obj2, React5);
+      const obj = ModalActionCreatorsDefault;
+      obj.pushLazy(asyncRequire(9145, dependencyMap.paths), obj2, metroImportDefault);
     }
   },
   openSecureFramesUpdateConfirmation(confirmText) {
+    let intl2;
+    let subtitle;
+    let title;
     confirmText = confirmText.confirmText;
     ({ title, subtitle } = confirmText);
     if (confirmText === undefined) {
-      const intl = util.intl;
-      confirmText = intl.string(util.t["cY+Oob"]);
+      let tmp = require;
+      const intl = intl3.intl;
+      confirmText = intl.string(intl3.t["cY+Oob"]);
     }
     const onConfirm = confirmText.onConfirm;
-    const obj2 = { title, body: subtitle, confirmText, cancelText: null, confirmColor: null };
-    const intl2 = util.intl;
-    obj2.cancelText = intl2.string(util.t["ETE/oC"]);
-    obj2.confirmColor = native.ButtonColors.RED;
-    actions_AlertActionCreatorsDefault.confirm(obj2).then((result) => {
-      if (result) {
+    const tmp3 = actions_AlertActionCreatorsDefault;
+    const _confirm = tmp3.confirm;
+    const obj = { title, body: subtitle, confirmText, cancelText: intl2.string(intl3.t["ETE/oC"]), confirmColor: native.ButtonColors.RED };
+    intl2 = intl3.intl;
+    const _confirmResult = _confirm(obj);
+    _confirmResult.then((result) => {
+      const tmp = result;
+      if (tmp) {
         onConfirm();
       }
     });
   },
   handleSecureFramesUserVerificationLink(arg0) {
+    let fingerprint;
+    let intl;
+    let intl2;
+    let userId;
     ({ userId, fingerprint } = arg0);
     const channelId = RTCConnectionStore.getChannelId();
     const channel = ChannelStore.getChannel(channelId);
@@ -59,20 +74,25 @@ export default {
       guildId = channel.getGuildId();
     }
     if (guildId == null) {
-      guildId = React6;
+      guildId = metroImportAll;
     }
     if (null != channelId) {
       if (null != channel) {
-        safeTransitionToDefault(React7.CHANNEL(guildId, channelId));
+        const tmp7 = safeTransitionToDefault;
+        tmp7(React4.CHANNEL(guildId, channelId));
         const obj = { userId, channelId, guildId, fingerprint };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10021, dependencyMap.paths), hasOwnProperty, obj);
+        const obj3 = ActionSheetActionCreatorsDefault;
+        obj3.openLazy(asyncRequire(9159, dependencyMap.paths), hasOwnProperty, obj);
       }
     }
-    const obj3 = { title: null, body: null };
-    const intl = util.intl;
-    obj3.title = intl.string(util.t["5ICxE6"]);
-    const intl2 = util.intl;
-    obj3.body = intl2.string(util.t["v1eXp/"]);
-    actions_AlertActionCreatorsDefault.show(obj3);
+    const obj2 = { title: intl.string(intl3.t["5ICxE6"]), body: intl2.string(intl3.t["v1eXp/"]) };
+    const show = actions_AlertActionCreatorsDefault.show;
+    actions_AlertActionCreatorsDefault;
+    intl = intl3.intl;
+    intl2 = intl3.intl;
+    show(obj2);
   }
 };
+const result = size.fileFinishedImporting("modules/rtc/SecureFramesPlatformUtils.native.tsx");
+
+export default obj;

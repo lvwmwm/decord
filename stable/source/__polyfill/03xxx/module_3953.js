@@ -1,46 +1,50 @@
 // Module ID: 3953
 // Function ID: 3954
-// Dependencies: [3954, 3955, 3956, 3957, 3958]
+// Dependencies: [2118, 2121, 2122, 2124, 3954]
 
 // Module 3953
-import module_3954 from "module_3954" /* 3954 */;
-import module_3955 from "module_3955" /* 3955 */;
-import module_3956 from "module_3956" /* 3956 */;
-import date_mod from "module_3957" /* 3957 */;
-import date_mod from "module_3958" /* 3958 */;
+import formatDistance from "formatDistance" /* 2118 */;
+import formatRelative from "formatRelative" /* 2121 */;
+import date_mod from "module_2122" /* 2122 */;
+import date_mod2 from "module_2124" /* 2124 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 3954 */;
 
-if (!module_3954) {
-  const obj = { default: module_3954 };
-  let tmp3 = obj;
+let tmp11;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+if (!formatDistance) {
+  tmp3 = { default: formatDistance };
+  const obj = { default: formatDistance };
 } else {
-  tmp3 = module_3954;
+  tmp3 = formatDistance;
 }
-if (!module_3955) {
-  const obj2 = { default: module_3955 };
-  let tmp5 = obj2;
+if (!formatRelative) {
+  tmp5 = { default: formatRelative };
+  const obj2 = { default: formatRelative };
 } else {
-  tmp5 = module_3955;
+  tmp5 = formatRelative;
 }
-if (!module_3956) {
-  const obj3 = { default: module_3956 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3956;
-}
-let date = date_mod;
+let date = date_mod2;
 if (!date) {
+  tmp7 = { default: date };
+  const obj3 = { default: date };
+} else {
+  tmp7 = date;
+}
+date = date_mod2;
+if (!date) {
+  tmp9 = { default: date };
   const obj4 = { default: date };
-  let tmp9 = obj4;
 } else {
   tmp9 = date;
 }
-let date = date_mod;
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
+if (!buildFormatLongFn) {
+  tmp11 = { default: buildFormatLongFn };
+  const obj5 = { default: buildFormatLongFn };
 } else {
-  tmp11 = date;
+  tmp11 = buildFormatLongFn;
 }
 
-export default { code: "ko", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };
-export default exports.default;
+export default { code: "en-GB", formatDistance: tmp3.default, formatLong: tmp11.default, formatRelative: tmp5.default, localize: tmp7.default, match: tmp9.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };

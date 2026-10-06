@@ -1,43 +1,113 @@
-// Module ID: 7609
-// Function ID: 7610
+// Module ID: 6754
+// Function ID: 6755
 // Name: useGuildOnboardingAvailable
-// Dependencies: [2098, 1074, 504, 2]
-// Exports: default, isGuildOnboardingAvailable
+// Dependencies: [2104, 1086, 558, 576, 504, 2]
+// Exports: isGuildOnboardingAvailable
 
-// Module 7609 (useGuildOnboardingAvailable)
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
+// Module 6754 (useGuildOnboardingAvailable)
+import Constants from "Constants" /* 1086 */;
+import ImpersonateStore from "ImpersonateStore" /* 2104 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");
-
-export default function useGuildOnboardingAvailable(features) {
+const GuildFeatures = Constants.GuildFeatures;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
+  let first;
+  let tmp6;
+  _require = features;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ImpersonateStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== features) {
+    const fn = function s() {
+      let id;
+      if (features != null) {
+        id = tmp.id;
+      }
+      if (null == id) {
+        return false;
+      } else {
+        const tmp4 = ImpersonateStore.isFullServerPreview(features.id) && ImpersonateStore.isOnboardingEnabled(features.id);
+        return tmp4;
+      }
+    };
+    cResult[1] = features;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  let features1;
+  const tmp8 = cResult[3];
+  if (features != null) {
+    features1 = features.features;
+  }
+  if (tmp8 === features1) {
+    let tmp10;
+    if (cResult[4] === stateFromStores) {
+      tmp10 = cResult[5];
+    }
+    return tmp10;
+  }
+  let tmp11 = stateFromStores;
+  if (!tmp11) {
+    let hasItem;
+    if (features != null) {
+      features = features.features;
+      hasItem = features.has(GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS);
+    }
+    tmp11 = hasItem;
+  }
+  let features2;
+  if (features != null) {
+    features2 = features.features;
+  }
+  cResult[3] = features2;
+  cResult[4] = stateFromStores;
+  cResult[5] = tmp11;
+  tmp10 = tmp11;
+}) : ((features) => {
   _require = features;
   const items = [ImpersonateStore];
-  let stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, () => {
     let id;
-    if (closure_0 != null) {
+    if (features != null) {
       id = tmp.id;
     }
     if (null == id) {
       return false;
     } else {
-      return ImpersonateStore.isFullServerPreview(tmp.id) && ImpersonateStore.isOnboardingEnabled(tmp.id);
+      const tmp4 = ImpersonateStore.isFullServerPreview(features.id) && ImpersonateStore.isOnboardingEnabled(features.id);
+      return tmp4;
     }
   });
   if (!stateFromStores) {
     let hasItem;
     if (features != null) {
       features = features.features;
+      let tmp4 = GuildFeatures;
       hasItem = features.has(GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS);
     }
     stateFromStores = hasItem;
   }
   return stateFromStores;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");
+
+export default tmp2;
 export const isGuildOnboardingAvailable = function isGuildOnboardingAvailable(guild) {
   if (null == guild) {
     return false;

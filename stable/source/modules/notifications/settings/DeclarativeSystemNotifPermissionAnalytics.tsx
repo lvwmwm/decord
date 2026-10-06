@@ -1,23 +1,27 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 15529
+// Function ID: 15530
 // Name: DeclarativeSystemNotifPermissionAnalytics
-// Dependencies: [14755, 1074, 14761, 14757, 1241, 2]
+// Dependencies: [14007, 1086, 14013, 14009, 1253, 2]
 // Exports: trackSystemNotifSettingsOpened, trackSystemNotifSettingsReenabled
 
-// Module 16251 (DeclarativeSystemNotifPermissionAnalytics)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14755 */;
-import NotifTypes from "NotifTypes" /* 14757 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14761 */;
+// Module 15529 (DeclarativeSystemNotifPermissionAnalytics)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14007 */;
+import NotifTypes from "NotifTypes" /* 14009 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14013 */;
 import size from "module_2" /* 2 */;
 
+let set;
+
 function getNotifTypesUsingSettings(items) {
+  set = new Set(items);
   const set1 = new Set();
   const ids = [];
   const names = [];
-  notifications_NotificationSettingsUtils;
-  for (const item10026 of tmp2) {
+  const obj3 = notifications_NotificationSettingsUtils;
+  const mappings = obj3.getAssignedNotifSettingsAndMappings().mappings;
+  for (const item10026 of mappings) {
     let notifType = item10026.notifType;
     let hasItem = set.has(item10026.notifSetting);
     if (hasItem) {
@@ -43,24 +47,26 @@ const map = new Map(NOTIF_SETTINGS.map((item) => {
 const result = size.fileFinishedImporting("modules/notifications/settings/DeclarativeSystemNotifPermissionAnalytics.tsx");
 
 export const trackSystemNotifSettingsOpened = function trackSystemNotifSettingsOpened(notif_setting_id) {
-  value = map.get(notif_setting_id);
+  const value = map.get(notif_setting_id);
   if (null != value) {
     const items = [notif_setting_id];
-    const tmp3 = getNotifTypesUsingSettings(items);
     const obj3 = { system_notif_channel_id: value, notif_setting_id, notif_type_ids: null, notif_type_names: null };
-    ({ ids: obj2.notif_type_ids, names: obj2.notif_type_names } = tmp3);
-    AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_SETTING_SYSTEM_SETTINGS_OPENED, obj3);
+    ({ ids: obj2.notif_type_ids, names: obj2.notif_type_names } = getNotifTypesUsingSettings(items));
+    const tmp3 = getNotifTypesUsingSettings(items);
+    const obj = AnalyticsUtilsDefault;
+    obj.track(AnalyticEvents.NOTIFICATION_SETTING_SYSTEM_SETTINGS_OPENED, obj3);
   }
 };
 export const trackSystemNotifSettingsReenabled = function trackSystemNotifSettingsReenabled(disabledSettings, disabledSettings2, app_launch) {
   const items = [];
   const items1 = [];
+  set = new Set(disabledSettings2);
   const iter = disabledSettings[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
     if (!set.has(nextResult)) {
-      value = map.get(tmp2);
+      let value = map.get(tmp2);
       if (null != value) {
         let arr = items.push(tmp6);
         let arr2 = items1.push(tmp2);
@@ -69,10 +75,10 @@ export const trackSystemNotifSettingsReenabled = function trackSystemNotifSettin
     continue;
   }
   if (0 !== items.length) {
+    const obj = { reenabled_system_notif_channel_ids: items, reenabled_notif_setting_ids: items1, reenabled_notif_type_ids: null, reenabled_notif_type_names: null, source: app_launch };
+    ({ ids: obj3.reenabled_notif_type_ids, names: obj3.reenabled_notif_type_names } = getNotifTypesUsingSettings(items1));
     const tmp13 = getNotifTypesUsingSettings(items1);
-    const obj = { reenabled_system_notif_channel_ids: items, reenabled_notif_setting_ids: items1, reenabled_notif_type_ids: null, reenabled_notif_type_names: null, source: null };
-    ({ ids: obj3.reenabled_notif_type_ids, names: obj3.reenabled_notif_type_names } = tmp13);
-    obj.source = app_launch;
-    AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_SETTING_SYSTEM_REENABLED, obj);
+    const obj2 = AnalyticsUtilsDefault;
+    obj2.track(AnalyticEvents.NOTIFICATION_SETTING_SYSTEM_REENABLED, obj);
   }
 };

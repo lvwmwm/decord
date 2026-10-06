@@ -1,34 +1,85 @@
-// Module ID: 16493
-// Function ID: 16494
+// Module ID: 15782
+// Function ID: 15783
 // Name: useFavoritesGuildHeaderAction
-// Dependencies: [19, 1074, 10521, 1101, 1115, 3356, 2]
-// Exports: default
+// Dependencies: [19, 1086, 558, 576, 9807, 1113, 1127, 3364, 2]
 
-// Module 16493 (useFavoritesGuildHeaderAction)
-import router_utils from "router_utils" /* 1101 */;
-import util from "util" /* 1115 */;
-import _modDef3356 from "module_3356" /* 3356 */;
-import FavoritesHooks from "FavoritesHooks" /* 10521 */;
-import noop from "module_19" /* 19 */;
+// Module 15782 (useFavoritesGuildHeaderAction)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import router_utils from "router_utils" /* 1113 */;
+import intl2 from "intl" /* 1127 */;
+import _modDef3364 from "module_3364" /* 3364 */;
+import FavoritesHooks from "FavoritesHooks" /* 9807 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Routes = fn(1074).Routes;
-const size = fn(2);
+const Routes = Constants.Routes;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp6;
+  let obj = react2;
+  const cResult = obj.c(6);
+  const obj2 = FavoritesHooks;
+  const hasAccess = obj2.useFavoritesAccess().hasAccess;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      const obj = router_utils;
+      obj.transitionTo(constants.ME);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== hasAccess) {
+    let ojM1xJ;
+    const intl = tmp(1127).intl;
+    const string = intl.string;
+    if (hasAccess) {
+      ojM1xJ = _modDef3364.G9fGlP;
+    } else {
+      ojM1xJ = tmp(1127).t.ojM1xJ;
+    }
+    const stringResult = string(ojM1xJ);
+    cResult[1] = hasAccess;
+    cResult[2] = stringResult;
+    tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === !hasAccess) {
+    let tmp9;
+    if (cResult[4] === tmp6) {
+      tmp9 = cResult[5];
+    }
+    return tmp9;
+  }
+  const obj3 = { isPreview: !hasAccess, label: tmp6, exitPreview: first };
+  cResult[3] = !hasAccess;
+  cResult[4] = tmp6;
+  cResult[5] = obj3;
+  tmp9 = obj3;
+}) : (() => {
+  let callback;
+  let ojM1xJ;
+  let string;
+  let obj = FavoritesHooks;
+  const hasAccess = obj.useFavoritesAccess().hasAccess;
+  const obj2 = { isPreview: !hasAccess, label: string(ojM1xJ), exitPreview: callback };
+  callback = react.useCallback(() => {
+    const obj = router_utils;
+    obj.transitionTo(constants.ME);
+  }, []);
+  const intl = intl2.intl;
+  string = intl.string;
+  if (hasAccess) {
+    ojM1xJ = _modDef3364.G9fGlP;
+  } else {
+    ojM1xJ = intl2.t.ojM1xJ;
+  }
+  return obj2;
+});
 const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHeaderAction.tsx");
 
-export default function useFavoritesGuildHeaderAction() {
-  const hasAccess = FavoritesHooks.useFavoritesAccess().hasAccess;
-  const obj2 = { isPreview: !hasAccess, label: null, exitPreview: null };
-  const callback = noop.useCallback(() => {
-    router_utils.transitionTo(constants.ME);
-  }, []);
-  const intl = util.intl;
-  if (hasAccess) {
-    let ojM1xJ = _modDef3356.G9fGlP;
-  } else {
-    ojM1xJ = util.t.ojM1xJ;
-  }
-  obj2.label = intl.string(ojM1xJ);
-  obj2.exitPreview = callback;
-  return obj2;
-};
+export default tmp2;

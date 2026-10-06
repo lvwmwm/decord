@@ -1,16 +1,16 @@
-// Module ID: 4814
-// Function ID: 4815
+// Module ID: 4863
+// Function ID: 4864
 // Name: discord_common/DiscordNative
 // Dependencies: [2]
 
-// Module 4814 (discord_common/DiscordNative)
+// Module 4863 (discord_common/DiscordNative)
 import size from "module_2" /* 2 */;
 
 class SystemServiceNotAvailableError extends Error {
   constructor() {
-    tmp1 = new tmp("System service not available", new.target);
-    tmp1.name = "SystemServiceNotAvailableError";
-    return tmp1;
+    const tmp2 = new tmp("System service not available", new.target);
+    tmp2.name = "SystemServiceNotAvailableError";
+    return tmp2;
   }
 }
 const result = size.fileFinishedImporting("../discord_common/js/packages/discord-native-types/DiscordNative.tsx");
@@ -20,3 +20,4 @@ export const StoredCrashInformation = { HasRTCConnection: 0, [0]: "HasRTCConnect
 export const JSExceptionLocation = { RendererProcessDelayed: 0, [0]: "RendererProcessDelayed", RendererProcess: 1, [1]: "RendererProcess", MainProcess: 2, [2]: "MainProcess" };
 export const DesktopSources = { WINDOW: "window", SCREEN: "screen", CAMERA: "camera" };
 export const ThumbarButtonName = { VIDEO: "VIDEO", MUTE: "MUTE", DEAFEN: "DEAFEN", DISCONNECT: "DISCONNECT" };
+export const TrayIcon = { DEFAULT: "DEFAULT", UNREAD: "UNREAD", CONNECTED: "CONNECTED", SPEAKING: "SPEAKING", MUTED: "MUTED", DEAFENED: "DEAFENED" };

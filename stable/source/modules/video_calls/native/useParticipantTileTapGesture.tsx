@@ -1,25 +1,28 @@
-// Module ID: 9713
-// Function ID: 9714
+// Module ID: 8864
+// Function ID: 8865
 // Name: useParticipantTileTapGesture
-// Dependencies: [6929, 2]
+// Dependencies: [6066, 2]
 // Exports: default
 
-// Module 9713 (useParticipantTileTapGesture)
-import LegacyBaseButton from "LegacyBaseButton" /* 6929 */;
+// Module 8864 (useParticipantTileTapGesture)
+import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video_calls/native/useParticipantTileTapGesture.tsx");
 
 export default function useParticipantTileTapGesture(arg0) {
+  let onDoubleTapStart;
+  let onSingleTapStart;
   ({ onSingleTapStart, onDoubleTapStart } = arg0);
   const Gesture = LegacyBaseButton.Gesture;
   const TapResult = Gesture.Tap();
-  const runOnJSResult = Gesture.Tap().runOnJS(true);
+  const runOnJSResult = TapResult.runOnJS(true);
+  const onStartResult = runOnJSResult.onStart(onSingleTapStart);
   const Gesture2 = LegacyBaseButton.Gesture;
-  const onStartResult = Gesture.Tap().runOnJS(true).onStart(onSingleTapStart);
   const TapResult1 = Gesture2.Tap();
-  const runOnJSResult1 = Gesture2.Tap().runOnJS(true);
-  const onStartResult1 = Gesture2.Tap().runOnJS(true).onStart(onDoubleTapStart);
+  const runOnJSResult1 = TapResult1.runOnJS(true);
+  const onStartResult1 = runOnJSResult1.onStart(onDoubleTapStart);
+  const numberOfTapsResult = onStartResult1.numberOfTaps(2);
   const Gesture3 = LegacyBaseButton.Gesture;
-  return Gesture3.Exclusive(Gesture2.Tap().runOnJS(true).onStart(onDoubleTapStart).numberOfTaps(2), onStartResult);
+  return Gesture3.Exclusive(numberOfTapsResult, onStartResult);
 };

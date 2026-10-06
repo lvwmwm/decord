@@ -1,15 +1,15 @@
-// Module ID: 17787
-// Function ID: 17788
+// Module ID: 17146
+// Function ID: 17147
 // Name: GuildVerificationManager
-// Dependencies: [1074, 13256, 1385, 8695, 13257, 7395, 2]
+// Dependencies: [1086, 12492, 1391, 7844, 12493, 6540, 2]
 
-// Module 17787 (GuildVerificationManager)
-import Constants from "Constants" /* 1074 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8695 */;
-import HubUtilsDefault from "HubUtils" /* 13256 */;
-import GuildVerificationUtils from "GuildVerificationUtils" /* 13257 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 17146 (GuildVerificationManager)
+import Constants from "Constants" /* 1086 */;
+import FlagUtils from "FlagUtils" /* 1391 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 7844 */;
+import HubUtilsDefault from "HubUtils" /* 12492 */;
+import GuildVerificationUtils from "GuildVerificationUtils" /* 12493 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 function handleInviteData(invite) {
@@ -27,15 +27,17 @@ function handleInviteData(invite) {
       }
     }
     if (hasItem) {
-      HubUtilsDefault.onOpenHubInvite(invite.invite);
+      const obj5 = HubUtilsDefault;
+      obj5.onOpenHubInvite(invite.invite);
     }
   }
   let new_member = invite.invite.new_member;
   if (new_member) {
-    let hasFlagResult = FlagUtils.hasFlag(num, GuildInviteFlags.GuildInviteFlags.IS_GUEST_INVITE);
+    const obj = FlagUtils;
+    let hasFlagResult = obj.hasFlag(num, GuildInviteFlags.GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
-      hasFlagResult = tmp3(1385).hasFlag(num, tmp3(8695).GuildInviteFlags.IS_APPLICATION_BYPASS);
-      const tmp3Result = tmp3(1385);
+      const tmp3Result = FlagUtils;
+      hasFlagResult = tmp3Result.hasFlag(num, tmp3(7844).GuildInviteFlags.IS_APPLICATION_BYPASS);
     }
     new_member = !hasFlagResult;
   }
@@ -43,21 +45,24 @@ function handleInviteData(invite) {
     new_member = null != guild;
   }
   if (new_member) {
-    new_member = GuildVerificationUtils.inviteGuildHasPendingMemberDisabledVerification(guild);
+    const obj3 = GuildVerificationUtils;
+    new_member = obj3.inviteGuildHasPendingMemberDisabledVerification(guild);
   }
   if (new_member) {
-    const result = GuildVerificationUtils.openVerificationModalOrTransitionToApplication(guild.id);
+    const obj4 = GuildVerificationUtils;
+    const result = obj4.openVerificationModalOrTransitionToApplication(guild.id);
   }
 }
 const GuildFeatures = Constants.GuildFeatures;
-const prototype = function GuildVerificationManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.actions = { INVITE_ACCEPT_SUCCESS: handleInviteData };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class GuildVerificationManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    const obj = { INVITE_ACCEPT_SUCCESS: handleInviteData };
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
+const guildVerificationManager = new GuildVerificationManager();
 let result = size.fileFinishedImporting("modules/guild_verification/GuildVerificationManager.tsx");
 
-export default prototype1;
+export default guildVerificationManager;

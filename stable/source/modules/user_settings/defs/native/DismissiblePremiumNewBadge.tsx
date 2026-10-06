@@ -1,109 +1,169 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 14270
+// Function ID: 14271
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 7706, 21, 4788, 576, 10921, 1364, 1177, 5230, 1094, 2]
-// Exports: default
+// Dependencies: [19, 6853, 21, 4837, 588, 558, 576, 1370, 1189, 5292, 1106, 10125, 2]
 
-// Module 15027 (DismissiblePremiumNewBadge)
-import nativeDefault from "native" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import native from "native" /* 1177 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10921 */;
-import noop from "module_19" /* 19 */;
+// Module 14270 (DismissiblePremiumNewBadge)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import native from "native" /* 1189 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import ColorConstants from "ColorConstants" /* 6853 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10125 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Gradients = fn(7706).Gradients;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-let obj2 = { newTag: { backgroundColor: "transparent" }, newTagContainer: { borderRadius: nativeDefault.radii.sm, marginLeft: nativeDefault.space.PX_4 } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/DismissiblePremiumNewBadge.tsx");
+let dismissibleContent;
 
-export default function DismissiblePremiumNewBadge(dismissibleContent) {
+let obj2;
+const Gradients = ColorConstants.Gradients;
+const jsx = Fragment.jsx;
+let obj = { newTag: { backgroundColor: "transparent" }, newTagContainer: obj2 };
+obj2 = { borderRadius: nativeDefault.radii.sm, marginLeft: nativeDefault.space.PX_4 };
+let closure_5 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((dismissibleContent) => {
+  let noGradient;
+  let tmp4;
+  let obj = dismissibleContent(noGradient[6]);
+  const cResult = obj.c(13);
   dismissibleContent = dismissibleContent.dismissibleContent;
-  ({ containerStyle: importDefault, noGradient: dependencyMap, newPremiumStyle: Gradients, colors: jsx, variantOverride: closure_5 } = dismissibleContent);
-  closure_6 = closure_5();
-  let obj = {
-    contentTypes: null,
-    children(visibleContent) {
-      if (visibleContent.visibleContent !== dismissibleContent) {
-        return null;
-      } else {
-        let tmp3 = closure_1_5;
-        if (null == closure_1_5) {
-          let str = "text-xs/bold";
-          if (obj.isAndroid()) {
-            str = "text-xxs/bold";
+  const containerStyle = dismissibleContent.containerStyle;
+  const tmp = noGradient;
+  noGradient = dismissibleContent.noGradient;
+  const newPremiumStyle = dismissibleContent.newPremiumStyle;
+  const colors = dismissibleContent.colors;
+  const variantOverride = dismissibleContent.variantOverride;
+  let tmp3 = variantOverride();
+  let closure_6 = tmp3;
+  if (cResult[0] !== dismissibleContent) {
+    let items = [dismissibleContent];
+    cResult[0] = dismissibleContent;
+    cResult[1] = items;
+    tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === colors) {
+    if (cResult[3] === containerStyle) {
+      if (cResult[4] === dismissibleContent) {
+        if (cResult[5] === newPremiumStyle) {
+          if (cResult[6] === noGradient) {
+            if (cResult[7] === tmp3) {
+              let tmp5;
+              if (cResult[8] === variantOverride) {
+                tmp5 = cResult[9];
+              }
+              if (cResult[10] === tmp4) {
+                let tmp6;
+                if (cResult[11] === tmp5) {
+                  tmp6 = cResult[12];
+                }
+                return tmp6;
+              }
+              const obj2 = { contentTypes: tmp4, children: tmp5 };
+              let tmp9 = colors(containerStyle(tmp[11]), obj2);
+              cResult[10] = tmp4;
+              cResult[11] = tmp5;
+              cResult[12] = tmp9;
+              tmp6 = tmp9;
+            }
           }
-          tmp3 = str;
-          obj = PlatformUtils;
         }
-        if (dependencyMap) {
-          const obj2 = { variant: tmp3, containerStyle: null };
-          const items = [closure_6.newTagContainer, closure_1_1];
-          obj2.containerStyle = items;
-          let tmp6Result = jsx(native.NewTag, { variant: tmp3, containerStyle: null });
-        } else if (closure_1_3) {
-          const obj3 = { variant: tmp3, containerStyle: closure_6.newTag, gradient: true, colors: Gradients.PREMIUM_TIER_2_TRI_COLOR };
-          tmp6Result = tmp6(native.NewTag, obj3);
-        } else {
-          const obj4 = { style: closure_6.newTagContainer, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: null, children: null };
-          let tmp15 = closure_1_4;
-          if (closure_1_4 == null) {
-            const items1 = [tmp7(576).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, tmp7(576).unsafe_rawColors.PREMIUM_TIER_2_PINK];
-            tmp15 = items1;
-          }
-          obj4.colors = tmp15;
-          const obj5 = { containerStyle: closure_6.newTag, variant: tmp3 };
-          obj4.children = jsx(native.NewTag, { containerStyle: closure_6.newTag, variant: tmp3 });
-          tmp6Result = tmp6(LinearGradientDefault, obj4);
-        }
-        return tmp6Result;
       }
     }
+  }
+  const fn = function c(visibleContent) {
+    let tmp15;
+    if (visibleContent.visibleContent !== dismissibleContent) {
+      return null;
+    } else {
+      let tmp6Result;
+      let tmp3 = variantOverride;
+      if (null == variantOverride) {
+        let str = "text-xs/bold";
+        const obj = PlatformUtils;
+        if (obj.isAndroid()) {
+          str = "text-xxs/bold";
+        }
+        tmp3 = str;
+      }
+      const tmp4 = noGradient;
+      if (tmp4) {
+        const items = [closure_6.newTagContainer, containerStyle];
+        tmp6Result = jsx(native.NewTag, { variant: tmp3, containerStyle: items });
+      } else if (newPremiumStyle) {
+        const obj3 = { variant: tmp3, containerStyle: closure_6.newTag, gradient: true, colors: Gradients.PREMIUM_TIER_2_TRI_COLOR };
+        tmp6Result = tmp6(native.NewTag, obj3);
+      } else {
+        const obj4 = { style: closure_6.newTagContainer, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: tmp15, children: null };
+        tmp15 = colors;
+        const tmp9 = LinearGradientDefault;
+        if (colors == null) {
+          const items1 = [nativeDefault.unsafe_rawColors.PREMIUM_TIER_2_PURPLE, nativeDefault.unsafe_rawColors.PREMIUM_TIER_2_PINK];
+          tmp15 = items1;
+        }
+        tmp6Result = tmp6(tmp9, obj4);
+      }
+      return tmp6Result;
+    }
   };
+  cResult[2] = colors;
+  cResult[3] = containerStyle;
+  cResult[4] = dismissibleContent;
+  cResult[5] = newPremiumStyle;
+  cResult[6] = noGradient;
+  cResult[7] = tmp3;
+  cResult[8] = variantOverride;
+  cResult[9] = fn;
+  tmp5 = fn;
+}) : ((dismissibleContent) => {
+  dismissibleContent = dismissibleContent.dismissibleContent;
+  ({ containerStyle: importDefault, noGradient: dependencyMap, newPremiumStyle: Gradients, colors: jsx, variantOverride: closure_5 } = dismissibleContent);
+  let closure_6 = closure_5();
   let items = [dismissibleContent];
-  obj.contentTypes = items;
   return jsx(SelectedDismissibleContentDefault, {
-    contentTypes: null,
+    contentTypes: items,
     children(visibleContent) {
+      let tmp15;
       if (visibleContent.visibleContent !== dismissibleContent) {
         return null;
       } else {
-        let tmp3 = closure_1_5;
-        if (null == closure_1_5) {
+        let tmp6Result;
+        let tmp3 = closure_5;
+        if (null == closure_5) {
           let str = "text-xs/bold";
+          const obj = PlatformUtils;
           if (obj.isAndroid()) {
             str = "text-xxs/bold";
           }
           tmp3 = str;
-          obj = PlatformUtils;
         }
-        if (dependencyMap) {
-          const obj2 = { variant: tmp3, containerStyle: null };
-          const items = [closure_6.newTagContainer, closure_1_1];
-          obj2.containerStyle = items;
-          let tmp6Result = jsx(native.NewTag, { variant: tmp3, containerStyle: null });
-        } else if (closure_1_3) {
+        const tmp4 = dependencyMap;
+        if (tmp4) {
+          const items = [closure_6.newTagContainer, importDefault];
+          tmp6Result = jsx(native.NewTag, { variant: tmp3, containerStyle: items });
+        } else if (Gradients) {
           const obj3 = { variant: tmp3, containerStyle: closure_6.newTag, gradient: true, colors: Gradients.PREMIUM_TIER_2_TRI_COLOR };
           tmp6Result = tmp6(native.NewTag, obj3);
         } else {
-          const obj4 = { style: closure_6.newTagContainer, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: null, children: null };
-          let tmp15 = closure_1_4;
-          if (closure_1_4 == null) {
-            const items1 = [tmp7(576).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, tmp7(576).unsafe_rawColors.PREMIUM_TIER_2_PINK];
+          const obj4 = { style: closure_6.newTagContainer, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: tmp15, children: null };
+          tmp15 = jsx;
+          const tmp9 = LinearGradientDefault;
+          if (jsx == null) {
+            const items1 = [nativeDefault.unsafe_rawColors.PREMIUM_TIER_2_PURPLE, nativeDefault.unsafe_rawColors.PREMIUM_TIER_2_PINK];
             tmp15 = items1;
           }
-          obj4.colors = tmp15;
-          const obj5 = { containerStyle: closure_6.newTag, variant: tmp3 };
-          obj4.children = jsx(native.NewTag, { containerStyle: closure_6.newTag, variant: tmp3 });
-          tmp6Result = tmp6(LinearGradientDefault, obj4);
+          tmp6Result = tmp6(tmp9, obj4);
         }
         return tmp6Result;
       }
     }
   });
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/DismissiblePremiumNewBadge.tsx");
+
+export default tmp3;

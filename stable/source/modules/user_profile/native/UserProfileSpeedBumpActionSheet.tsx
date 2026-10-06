@@ -1,75 +1,421 @@
-// Module ID: 8483
-// Function ID: 8484
+// Module ID: 7631
+// Function ID: 7632
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 2041, 2105, 1372, 8484, 1074, 21, 4788, 576, 8486, 1115, 5936, 5854, 1177, 4639, 4722, 504, 8487, 7439, 7459, 8491, 8500, 1241, 8482, 8480, 7427, 6901, 8220, 7244, 4784, 4940, 5218, 5371, 2019, 2]
+// Dependencies: [32, 19, 17, 2051, 2111, 1378, 7632, 1086, 21, 4837, 588, 7634, 1127, 558, 576, 5997, 5916, 1189, 4687, 4769, 504, 7635, 6604, 6584, 7639, 7648, 1253, 7630, 7628, 7376, 6385, 4833, 4989, 5282, 5436, 2027, 6572, 6038, 2]
 
-// Module 8483 (UserProfileSpeedBumpActionSheet)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import TableRow from "TableRow" /* 5854 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8480 */;
-import UserActionCreators from "UserActionCreators" /* 8482 */;
-import _modDef8486 from "module_8486" /* 8486 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7631 (UserProfileSpeedBumpActionSheet)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
+import UserActionCreators from "UserActionCreators" /* 7630 */;
+import Constants2 from "Constants" /* 7632 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7634 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import UserStore_mod from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function InformationTable(speedBumpType) {
-  let items;
-  let obj = { icon: _modDef8486, text: null };
-  const intl = items(1115).intl;
-  obj.text = intl.string(items(1115).t.kcuWva);
-  items = [obj, ];
-  const obj2 = { icon: _modDef8486, text: null };
-  if ("block" === speedBumpType.speedBumpType) {
-    const intl3 = tmp2(1115).intl;
-    let stringResult = intl3.string(tmp2(1115).t.QxrDY1);
-  } else {
-    const intl2 = tmp2(1115).intl;
-    stringResult = intl2.string(tmp2(1115).t.W6fjkS);
-  }
-  obj2.text = stringResult;
-  items[1] = obj2;
-  return closure_12(items(5936).TableRowGroup, {
-    hasIcons: true,
-    children: items.map((icon, index) => {
-      const obj = { start: 0 === index, end: items.length === index, icon: closure_2_12(native.Icon, { size: native.Icon.Sizes.MEDIUM, source: icon.icon }), label: icon.text };
-      return closure_2_12(TableRow.TableRow, obj, index);
-    })
-  });
+let BottomSheet, c6, userId;
+
+let c10;
+let closure_12;
+let map1;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let rect;
+let unpackModuleId;
+const View = react_native.View;
+let UserStore = UserStore_mod;
+let UserProfileAnalyticsTypes = Constants2.UserProfileAnalyticsTypes;
+({ AnalyticEvents: c10, EMPTY_STRING_SNOWFLAKE_ID: unpackModuleId } = Constants);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { button: obj2, tableContainer: obj3, header: obj4, bodyText: { textAlign: "center" }, headerText: { textAlign: "center" }, avatar: { alignSelf: "center" }, avatarContainer: obj5, avatarIconContainer: rect, suppress: obj6 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: 56 };
+createStyles = createStyles.createStyles;
+obj3 = { marginBottom: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
+obj4 = { marginBottom: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
+obj5 = { position: "relative", alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
+rect = { position: "absolute", bottom: -8, right: -8, padding: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.round };
+obj6 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
+let closure_14 = createStyles(obj);
+function SPEEDBUMP_ROWS(arg0) {
+
 }
-const View = fn(17).View;
-const UserProfileAnalyticsTypes = fn(8484).UserProfileAnalyticsTypes;
-const Constants = fn(1074);
-({ AnalyticEvents: c10, EMPTY_STRING_SNOWFLAKE_ID: closure_11 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4788);
-let obj = { button: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: 56 }, tableContainer: null, header: null, bodyText: null, headerText: null, avatar: null, avatarContainer: null, avatarIconContainer: null, suppress: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: 56 };
-obj.tableContainer = { marginBottom: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
-let obj4 = { marginBottom: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
-obj.header = { marginBottom: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
-obj.bodyText = { textAlign: "center" };
-obj.headerText = { textAlign: "center" };
-obj.avatar = { alignSelf: "center" };
-let obj5 = { marginBottom: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
-obj.avatarContainer = { position: "relative", alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
-const rect = { position: "absolute", bottom: -8, right: -8, padding: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.round };
-obj.avatarIconContainer = rect;
-let obj6 = { position: "relative", alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
-obj.suppress = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
-let closure_14 = createStyles.createStyles(obj);
-let obj7 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileSpeedBumpActionSheet.tsx");
-
-export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType) => {
+  let flag;
+  let intl;
+  let items;
+  let stringResult;
+  let tmp4;
+  let tmp5;
+  let obj = items(576);
+  const cResult = obj.c(8);
+  speedBumpType = speedBumpType.speedBumpType;
+  if (cResult[0] !== speedBumpType) {
+    if (typeof SPEEDBUMP_ROWS === "function") {
+      let obj2 = { icon: AssetRegistryDefault, text: intl.string(items(1127).t.kcuWva) };
+      intl = tmp(1127).intl;
+      items = [obj2, ];
+      const obj3 = { icon: AssetRegistryDefault, text: stringResult };
+      if ("block" === speedBumpType) {
+        const intl3 = tmp(1127).intl;
+        stringResult = intl3.string(tmp(1127).t.QxrDY1);
+      } else {
+        const intl2 = tmp(1127).intl;
+        stringResult = intl2.string(tmp(1127).t.W6fjkS);
+      }
+      items[1] = obj3;
+      const TableRowGroup = tmp(5997).TableRowGroup;
+      const mapped = items.map((icon, index) => {
+        let Icon;
+        let obj2;
+        const obj = { start: 0 === index, end: items.length === index, icon: closure_12(Icon, obj2), label: icon.text };
+        const TableRow = TableRow2.TableRow;
+        obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon.icon };
+        Icon = native.Icon;
+        return closure_12(TableRow, obj, index);
+      });
+      cResult[0] = speedBumpType;
+      cResult[1] = TableRowGroup;
+      cResult[2] = true;
+      cResult[3] = mapped;
+      tmp5 = mapped;
+      flag = true;
+      tmp4 = TableRowGroup;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    tmp4 = cResult[1];
+    flag = cResult[2];
+    tmp5 = cResult[3];
+  }
+  if (cResult[4] === tmp4) {
+    if (cResult[5] === flag) {
+      let tmp10;
+      if (cResult[6] === tmp5) {
+        tmp10 = cResult[7];
+      }
+      return tmp10;
+    }
+  }
+  const tmp11 = closure_12(tmp4, { hasIcons: flag, children: tmp5 });
+  cResult[4] = tmp4;
+  cResult[5] = flag;
+  cResult[6] = tmp5;
+  cResult[7] = tmp11;
+  tmp10 = tmp11;
+}) : ((arg0) => {
+  let intl;
+  let stringResult;
+  let items;
+  if (typeof SPEEDBUMP_ROWS === "function") {
+    let obj = { icon: AssetRegistryDefault, text: intl.string(items(1127).t.kcuWva) };
+    intl = items(1127).intl;
+    items = [obj, ];
+    let obj2 = { icon: AssetRegistryDefault, text: stringResult };
+    if ("block" === tmp) {
+      const intl3 = tmp4(1127).intl;
+      stringResult = intl3.string(tmp4(1127).t.QxrDY1);
+    } else {
+      const intl2 = tmp4(1127).intl;
+      stringResult = intl2.string(tmp4(1127).t.W6fjkS);
+    }
+    items[1] = obj2;
+    const obj3 = {
+      hasIcons: true,
+      children: items.map((icon, index) => {
+          let Icon;
+          let obj2;
+          const obj = { start: 0 === index, end: items.length === index, icon: closure_12(Icon, obj2), label: icon.text };
+          const TableRow = TableRow2.TableRow;
+          obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon.icon };
+          Icon = native.Icon;
+          return closure_12(TableRow, obj, index);
+        })
+    };
+    const TableRowGroup = tmp4(5997).TableRowGroup;
+    return closure_12(TableRowGroup, obj3);
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let closure_8;
+  let closure_9;
+  let fn;
+  let localUser;
+  let messageId;
+  let onClose;
+  let openedAt;
+  let roleId;
+  let sessionId;
+  let sourceAnalyticsLocations;
+  let speedBumpType;
+  let stateFromStores2;
+  let tmp11;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp22;
+  let tmp5;
+  let tmp9;
+  let obj = userId(onClose[14]);
+  const cResult = obj.c(112);
+  userId = userId.userId;
+  const channelId = userId.channelId;
+  ({ messageId, localUser, roleId, sessionId, onClose } = userId);
+  const location = userId.location;
+  ({ openedAt, sourceAnalyticsLocations, speedBumpType } = userId);
+  if (cResult[0] !== sourceAnalyticsLocations) {
+    let items = sourceAnalyticsLocations;
+    if (undefined === sourceAnalyticsLocations) {
+      items = [];
+    }
+    cResult[0] = sourceAnalyticsLocations;
+    cResult[1] = items;
+    tmp5 = items;
+  } else {
+    tmp5 = cResult[1];
+  }
+  let tmp6 = closure_14();
+  const tmp2Result = userId(onClose[18]);
+  tmp2Result.isThemeLight(channelId(onClose[19])());
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserStore];
+    cResult[2] = items1;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] !== userId) {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+    cResult[3] = userId;
+    cResult[4] = M;
+    tmp11 = M;
+  } else {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+  }
+  const tmp2Result4 = userId(onClose[20]);
+  const stateFromStores = tmp2Result4.useStateFromStores(tmp9, tmp11);
+  let tmp13 = stateFromStores;
+  if (stateFromStores == null) {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+    if (localUser != null) {
+      class M {
+        constructor() {
+          return UserStore.getUser(userId);
+        }
+      }
+    }
+    if (tmp14 === userId) {
+      class M {
+        constructor() {
+          return UserStore.getUser(userId);
+        }
+      }
+    }
+    tmp13 = tmp15;
+  }
+  let c5 = tmp13;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+    const items2 = [c6];
+    cResult[5] = items2;
+    tmp16 = items2;
+  } else {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+  }
+  if (cResult[6] !== channelId) {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+    const items3 = [channelId];
+    cResult[6] = channelId;
+    cResult[7] = tmp19;
+    cResult[8] = items3;
+    tmp18 = items3;
+    tmp17 = tmp19;
+  } else {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+    tmp18 = cResult[8];
+  }
+  const tmp2Result5 = userId(onClose[20]);
+  const stateFromStores1 = tmp2Result5.useStateFromStores(tmp16, tmp17, tmp18);
+  if (stateFromStores1 != null) {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+  }
+  c6 = tmp21;
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+    const items4 = [stateFromStores2];
+    cResult[9] = items4;
+    tmp22 = items4;
+  } else {
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+  }
+  if (cResult[10] === undefined) {
+    let tmp31;
+    class M {
+      constructor() {
+        return UserStore.getUser(userId);
+      }
+    }
+    const tmp2Result6 = userId(onClose[20]);
+    stateFromStores2 = tmp2Result6.useStateFromStores(tmp22, fn);
+    const tmp7Result = channelId(onClose[21]);
+    if (tmp13 != null) {
+      class M {
+        constructor() {
+          return UserStore.getUser(userId);
+        }
+      }
+    }
+    if (undefined == null) {
+      class M {
+        constructor() {
+          return UserStore.getUser(userId);
+        }
+      }
+    }
+    UserStore = tmp7Result(undefined, undefined);
+    const IGNORED_USER_SHEET = UserProfileAnalyticsTypes.IGNORED_USER_SHEET;
+    tmp7Result(undefined, undefined);
+    const tmp30 = location(stateFromStores.useState(false), 2);
+    UserProfileAnalyticsTypes = tmp30[0];
+    let closure_10 = tmp30[1];
+    if (cResult[13] !== tmp5) {
+      class M {
+        constructor() {
+          return UserStore.getUser(userId);
+        }
+      }
+      const arraySpreadResult = HermesBuiltin.arraySpread(tmp32, tmp5, 0);
+      tmp32[arraySpreadResult] = channelId(onClose[22]).IGNORED_PROFILE_ACTION_SHEET;
+      cResult[13] = tmp5;
+      cResult[14] = tmp32;
+      tmp31 = tmp32;
+    } else {
+      class M {
+        constructor() {
+          return UserStore.getUser(userId);
+        }
+      }
+    }
+    const analyticsLocations = tmp7(tmp3[23])(tmp31).analyticsLocations;
+    if (cResult[15] === channelId) {
+      class M {
+        constructor() {
+          return UserStore.getUser(userId);
+        }
+      }
+    }
+    const obj2 = { layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, channelId, messageId, roleId };
+    cResult[15] = channelId;
+    cResult[16] = messageId;
+    cResult[17] = roleId;
+    cResult[18] = sessionId;
+    cResult[19] = userId;
+    cResult[20] = obj2;
+  }
+  fn = function j() {
+    let member = null;
+    if (null != c6) {
+      member = GuildMemberStore.getMember(tmp, userId);
+    }
+    return member;
+  };
+  cResult[10] = undefined;
+  cResult[11] = userId;
+  cResult[12] = fn;
+}) : ((userId) => {
+  let Icon;
+  let Text3;
+  let UserProfileAnalyticsProvider;
+  let _location;
+  let closure_10;
+  let fetchEndedAt;
+  let fetchStartedAt;
+  let first;
+  let format;
+  let handleShowProfileActionSheet;
+  let intl;
+  let intl3;
+  let intl4;
+  let isLoaded;
+  let items11;
+  let items8;
+  let items9;
+  let localUser;
+  let messageId;
+  let obj12;
+  let obj14;
+  let obj18;
+  let obj19;
+  let obj20;
+  let obj4;
+  let onClose;
+  let openedAt;
+  let roleId;
+  let sessionId;
+  let sourceAnalyticsLocations;
+  let tmp32;
+  let tmp33;
+  let tmp5Result4;
   userId = userId.userId;
   const channelId = userId.channelId;
   ({ localUser, onClose } = userId);
@@ -82,41 +428,42 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
   localUser = undefined;
   let guild_id;
   let stateFromStores2;
-  closure_8 = undefined;
+  let closure_8;
   first = undefined;
   closure_10 = undefined;
   let analyticsLocations;
   let createUserProfileAnalyticsContext;
-  closure_13 = undefined;
-  let tmp = closure_14();
-  let obj = userId(onClose[16]);
-  const isThemeLightResult = userId(onClose[16]).isThemeLight(channelId(onClose[17])());
+  let closure_13;
+  let tmp2 = closure_14();
+  let obj = userId(onClose[18]);
   const items = [closure_8];
-  const stateFromStores = userId(onClose[18]).useStateFromStores(items, () => UserStore.getUser(userId));
-  let tmp7 = stateFromStores;
+  const isThemeLightResult = obj.isThemeLight(channelId(onClose[19])());
+  const obj2 = userId(onClose[20]);
+  const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(userId));
+  let tmp8 = stateFromStores;
   if (stateFromStores == null) {
     let id;
     if (localUser != null) {
       id = localUser.id;
     }
-    let tmp9;
+    let tmp10;
     if (id === userId) {
-      tmp9 = localUser;
+      tmp10 = localUser;
     }
-    tmp7 = tmp9;
+    tmp8 = tmp10;
   }
-  localUser = tmp7;
-  const obj2 = userId(onClose[18]);
+  localUser = tmp8;
   const items1 = [guild_id];
   const items2 = [channelId];
-  const stateFromStores1 = userId(onClose[18]).useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
+  const tmp3Result = userId(onClose[20]);
+  const stateFromStores1 = tmp3Result.useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
   guild_id = undefined;
   if (stateFromStores1 != null) {
     guild_id = stateFromStores1.guild_id;
   }
-  const tmp2Result = userId(onClose[18]);
   const items3 = [stateFromStores2];
-  stateFromStores2 = userId(onClose[18]).useStateFromStores(items3, () => {
+  const tmp3Result3 = userId(onClose[20]);
+  stateFromStores2 = tmp3Result3.useStateFromStores(items3, () => {
     let member = null;
     if (null != guild_id) {
       member = GuildMemberStore.getMember(tmp, userId);
@@ -124,31 +471,29 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
     return member;
   });
   let id1;
-  const tmp2Result3 = userId(onClose[18]);
-  if (tmp7 != null) {
-    id1 = tmp7.id;
+  const tmp5Result = channelId(onClose[21]);
+  if (tmp8 != null) {
+    id1 = tmp8.id;
   }
   if (id1 == null) {
     id1 = analyticsLocations;
   }
-  const tmp4ResultResult = channelId(onClose[19])(id1, guild_id);
-  closure_8 = tmp4ResultResult;
+  const tmp5ResultResult = tmp5Result(id1, guild_id);
+  closure_8 = tmp5ResultResult;
+  const IGNORED_USER_SHEET = first.IGNORED_USER_SHEET;
   [first, closure_10] = stateFromStores.useState(false);
   const items4 = [];
-  const tmp4Result = channelId(onClose[19]);
-  const tmp4Result3 = channelId(onClose[20]);
-  items4[HermesBuiltin.arraySpread(sourceAnalyticsLocations, 0)] = channelId(onClose[21]).IGNORED_PROFILE_ACTION_SHEET;
-  analyticsLocations = tmp4Result3(items4).analyticsLocations;
-  const arraySpreadResult = HermesBuiltin.arraySpread(sourceAnalyticsLocations, 0);
-  createUserProfileAnalyticsContext = userId(onClose[22]).useCreateUserProfileAnalyticsContext({ layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, channelId, messageId, roleId });
-  const tmp21 = channelId(onClose[23])({ userId, user: tmp7, channelId, guildId: guild_id, displayProfile: tmp4ResultResult, guildMember: stateFromStores2, type: first.IGNORED_USER_SHEET });
-  closure_13 = tmp21;
-  const items5 = [tmp21, tmp4ResultResult, guild_id, first, stateFromStores2];
+  const tmp5Result3 = channelId(onClose[23]);
+  const arraySpreadResult = HermesBuiltin.arraySpread(items4, sourceAnalyticsLocations, 0);
+  items4[arraySpreadResult] = channelId(onClose[22]).IGNORED_PROFILE_ACTION_SHEET;
+  analyticsLocations = tmp5Result3(items4).analyticsLocations;
+  const tmp3Result4 = userId(onClose[24]);
+  createUserProfileAnalyticsContext = tmp3Result4.useCreateUserProfileAnalyticsContext({ layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, channelId, messageId, roleId });
+  const tmp22 = channelId(onClose[25])({ userId, user: tmp8, channelId, guildId: guild_id, displayProfile: tmp5ResultResult, guildMember: stateFromStores2, type: IGNORED_USER_SHEET });
+  closure_13 = tmp22;
+  const items5 = [tmp22, tmp5ResultResult, guild_id, first, stateFromStores2];
   const effect = stateFromStores.useEffect(() => {
-    let tmp = first;
-    if (!first) {
-      tmp = null == closure_8;
-    }
+    const tmp = first || null == closure_8;
     if (!tmp) {
       let tmp6 = null == guild_id;
       if (!tmp6) {
@@ -159,7 +504,8 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
         tmp6 = null != prop;
       }
       if (tmp6) {
-        AnalyticsUtilsDefault.track(constants.OPEN_POPOUT, closure_13);
+        const obj = AnalyticsUtilsDefault;
+        obj.track(c10.OPEN_POPOUT, closure_13);
         closure_10(true);
       }
     }
@@ -173,105 +519,108 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
   const items7 = [stateFromStores, userId];
   const effect2 = stateFromStores.useEffect(() => {
     if (null == stateFromStores) {
-      const user = UserActionCreators.getUser(userId);
+      const obj = UserActionCreators;
+      const user = obj.getUser(userId);
     }
   }, items7);
-  if (null == tmp7) {
+  if (null == tmp8) {
     return null;
   } else {
-    const obj3 = { value: analyticsLocations, children: null };
-    const obj4 = { value: createUserProfileAnalyticsContext, openedAt, fetchStartedAt: null, fetchEndedAt: null, isLoaded: null, children: null };
-    let fetchStartedAt;
-    if (tmp4ResultResult != null) {
-      fetchStartedAt = tmp4ResultResult.fetchStartedAt;
+    const obj3 = { value: analyticsLocations, children: createUserProfileAnalyticsContext(UserProfileAnalyticsProvider, obj4) };
+    const AnalyticsLocationProvider = tmp3(tmp4[23]).AnalyticsLocationProvider;
+    obj4 = { value: createUserProfileAnalyticsContext, openedAt, fetchStartedAt, fetchEndedAt, isLoaded, children: createUserProfileAnalyticsContext(BottomSheet, obj19) };
+    fetchStartedAt = undefined;
+    UserProfileAnalyticsProvider = tmp3(tmp4[24]).UserProfileAnalyticsProvider;
+    if (tmp5ResultResult != null) {
+      fetchStartedAt = tmp5ResultResult.fetchStartedAt;
     }
-    obj4.fetchStartedAt = fetchStartedAt;
-    let fetchEndedAt;
-    if (tmp4ResultResult != null) {
-      fetchEndedAt = tmp4ResultResult.fetchEndedAt;
+    fetchEndedAt = undefined;
+    if (tmp5ResultResult != null) {
+      fetchEndedAt = tmp5ResultResult.fetchEndedAt;
     }
-    obj4.fetchEndedAt = fetchEndedAt;
-    let isLoaded;
-    if (tmp4ResultResult != null) {
-      isLoaded = tmp4ResultResult.isLoaded;
+    isLoaded = undefined;
+    if (tmp5ResultResult != null) {
+      isLoaded = tmp5ResultResult.isLoaded;
     }
-    obj4.isLoaded = isLoaded;
-    const obj5 = { style: tmp.header, children: null };
-    const obj6 = { style: tmp.avatarContainer, children: null };
-    const obj7 = { user: tmp7, guildId: guild_id, animate: false, size: tmp2(tmp3[15]).AvatarSizes.XLARGE, style: tmp.avatar };
-    const items8 = [createUserProfileAnalyticsContext(tmp2(tmp3[15]).Avatar, obj7), ];
-    const obj8 = { style: tmp.avatarIconContainer, children: null };
-    const obj9 = { size: tmp2(tmp3[15]).Icon.Sizes.MEDIUM, source: null };
+    BottomSheet = tmp3(tmp4[36]).BottomSheet;
+    const obj5 = { style: tmp2.header, children: items9 };
+    const obj6 = { style: tmp2.avatarContainer, children: items8 };
+    const BottomSheetView = tmp3(tmp4[37]).BottomSheetView;
+    const obj7 = { user: tmp8, guildId: guild_id, animate: false, size: userId(onClose[17]).AvatarSizes.XLARGE, style: tmp2.avatar };
+    const Avatar = tmp3(tmp4[17]).Avatar;
+    items8 = [createUserProfileAnalyticsContext(Avatar, obj7), ];
+    const obj8 = { style: tmp2.avatarIconContainer, children: createUserProfileAnalyticsContext(Icon, tmp32) };
+    const obj9 = { size: userId(onClose[17]).Icon.Sizes.MEDIUM, source: null };
+    Icon = tmp3(tmp4[17]).Icon;
     if ("block" === speedBumpType) {
-      obj9.source = tmp4(tmp3[29]);
-      let tmp31 = obj9;
+      obj9.source = channelId(onClose[29]);
+      tmp32 = obj9;
     } else {
-      obj9.source = tmp4(tmp3[30]);
-      tmp31 = obj9;
+      obj9.source = channelId(onClose[30]);
+      tmp32 = obj9;
     }
-    obj8.children = createUserProfileAnalyticsContext(tmp2(tmp3[15]).Icon, tmp31);
     items8[1] = createUserProfileAnalyticsContext(localUser, obj8);
-    obj6.children = items8;
-    const items9 = [closure_13(localUser, obj6), , ];
-    const obj10 = { style: tmp.headerText, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
-    const intl = tmp2(tmp3[12]).intl;
-    obj10.children = intl.string(tmp2(tmp3[12]).t.b33pLD);
-    items9[1] = createUserProfileAnalyticsContext(tmp2(tmp3[31]).Text, obj10);
-    const obj11 = { style: tmp.bodyText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
-    const intl2 = tmp2(tmp3[12]).intl;
-    const t = tmp2(tmp3[12]).t;
-    const obj12 = { username: tmp4(tmp3[32]).getName(guild_id, channelId, tmp7) };
-    obj11.children = intl2.format("block" === speedBumpType ? t["8F+WNz"] : t["/cZp5s"], obj12);
-    items9[2] = createUserProfileAnalyticsContext(tmp2(tmp3[31]).Text, obj11);
-    obj5.children = items9;
+    items9 = [closure_13(localUser, obj6), , ];
+    const obj10 = { style: tmp2.headerText, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(userId(onClose[12]).t.b33pLD) };
+    const Text = tmp3(tmp4[31]).Text;
+    intl = tmp3(tmp4[12]).intl;
+    items9[1] = createUserProfileAnalyticsContext(Text, obj10);
+    const obj11 = { style: tmp2.bodyText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: format(tmp33, obj12) };
+    const Text2 = tmp3(tmp4[31]).Text;
+    const intl2 = tmp3(tmp4[12]).intl;
+    format = intl2.format;
+    const t = tmp3(tmp4[12]).t;
+    obj12 = { username: tmp5Result4.getName(guild_id, channelId, tmp8) };
+    tmp33 = "block" === speedBumpType ? t["8F+WNz"] : t["/cZp5s"];
+    tmp5Result4 = channelId(onClose[32]);
+    items9[2] = createUserProfileAnalyticsContext(Text2, obj11);
     const items10 = [closure_13(localUser, obj5), , ];
-    const obj13 = { style: tmp.tableContainer, children: null };
-    const obj14 = { speedBumpType };
-    obj13.children = createUserProfileAnalyticsContext(InformationTable, obj14);
+    const obj13 = { style: tmp2.tableContainer, children: createUserProfileAnalyticsContext(closure_16, obj14) };
+    obj14 = { speedBumpType };
     items10[1] = createUserProfileAnalyticsContext(localUser, obj13);
-    const obj15 = { style: tmp.button, children: null };
     let str2 = "secondary";
+    const obj15 = { style: tmp2.button, children: items11 };
+    const Button = tmp3(tmp4[33]).Button;
     if (isThemeLightResult) {
       str2 = "tertiary";
     }
-    const obj16 = { variant: str2, size: "lg", text: null, onPress: null };
-    function handleShowProfileActionSheet() {
+    const obj16 = { variant: str2, size: "lg", text: intl3.string(userId(onClose[12]).t["UJKH/l"]), onPress: handleShowProfileActionSheet };
+    handleShowProfileActionSheet = function handleShowProfileActionSheet() {
+      const obj = { sourceAnalyticsLocations: analyticsLocations, ignoreBlockedSpeedBump: true, location: _slicedToArray, localUser };
+      const tmp = showUserProfileActionSheetDefault;
       const merged = Object.assign(createUserProfileAnalyticsContext);
-      showUserProfileActionSheetDefault({ sourceAnalyticsLocations: analyticsLocations, ignoreBlockedSpeedBump: true, location: _location, localUser });
-    }
-    const intl3 = tmp2(tmp3[12]).intl;
-    obj16.text = intl3.string(tmp2(tmp3[12]).t["UJKH/l"]);
-    obj16.onPress = handleShowProfileActionSheet;
-    const items11 = [createUserProfileAnalyticsContext(tmp2(tmp3[33]).Button, obj16), ];
-    let tmp35Result = null;
+      tmp(obj);
+    };
+    intl3 = tmp3(tmp4[12]).intl;
+    items11 = [createUserProfileAnalyticsContext(Button, obj16), ];
+    let tmp36Result = null;
     if ("ignore" === speedBumpType) {
       const obj17 = {
-        style: tmp.suppress,
+        style: tmp2.suppress,
         accessibilityRole: "button",
         onPress() {
               const IgnoreProfileSpeedbumpDisabled = UserSettings.IgnoreProfileSpeedbumpDisabled;
               IgnoreProfileSpeedbumpDisabled.updateSetting(true);
+              const obj = { sourceAnalyticsLocations: analyticsLocations, ignoreBlockedSpeedBump: true, location: _slicedToArray, localUser };
+              const tmp2 = showUserProfileActionSheetDefault;
               const merged = Object.assign(createUserProfileAnalyticsContext);
-              showUserProfileActionSheetDefault({ sourceAnalyticsLocations: analyticsLocations, ignoreBlockedSpeedBump: true, location: _location, localUser });
+              tmp2(obj);
             },
-        children: null
+        children: createUserProfileAnalyticsContext(Text3, obj18)
       };
-      const obj18 = { variant: "text-sm/normal", color: "text-link", children: null };
-      const intl4 = tmp2(tmp3[12]).intl;
-      obj18.children = intl4.string(tmp2(tmp3[12]).t.QbcRCJ);
-      obj17.children = tmp35(tmp2(tmp3[31]).Text, obj18);
-      tmp35Result = tmp35(tmp2(tmp3[34]).PressableOpacity, obj17);
+      const PressableOpacity = tmp3(tmp4[34]).PressableOpacity;
+      obj18 = { variant: "text-sm/normal", color: "text-link", children: intl4.string(userId(onClose[12]).t.QbcRCJ) };
+      Text3 = tmp3(tmp4[31]).Text;
+      intl4 = tmp3(tmp4[12]).intl;
+      tmp36Result = tmp36(PressableOpacity, obj17);
     }
-    const obj19 = { startExpanded: true, children: null };
-    const obj20 = { children: null };
-    items11[1] = tmp35Result;
-    obj15.children = items11;
+    obj19 = { startExpanded: true, children: closure_13(BottomSheetView, obj20) };
+    obj20 = { children: items10 };
+    items11[1] = tmp36Result;
     items10[2] = closure_13(localUser, obj15);
-    obj20.children = items10;
-    obj19.children = closure_13(tmp2(tmp3[28]).BottomSheetView, obj20);
-    obj4.children = createUserProfileAnalyticsContext(tmp2(tmp3[27]).BottomSheet, obj19);
-    obj3.children = createUserProfileAnalyticsContext(tmp2(tmp3[22]).UserProfileAnalyticsProvider, obj4);
-    return createUserProfileAnalyticsContext(tmp2(tmp3[20]).AnalyticsLocationProvider, obj3);
+    return createUserProfileAnalyticsContext(AnalyticsLocationProvider, obj3);
   }
-  const tmp2Result4 = userId(onClose[22]);
-});
+}));
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileSpeedBumpActionSheet.tsx");
+
+export default memoResult;

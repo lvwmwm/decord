@@ -1,20 +1,25 @@
-// Module ID: 18392
-// Function ID: 18393
+// Module ID: 17760
+// Function ID: 17761
 // Name: MarkAsRead
-// Dependencies: [1074, 7387, 2]
+// Dependencies: [1086, 6532, 2]
 
-// Module 18392 (MarkAsRead)
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7387 */;
-import Constants from "Constants" /* 1074 */;
+// Module 17760 (MarkAsRead)
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6532 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
 ({ AnalyticsObjectTypes: c2, AnalyticsObjects: c3 } = Constants);
 const result = size.fileFinishedImporting("modules/headless_tasks/android/MarkAsRead.tsx");
 
 export default (arg0) => {
-  closure_0 = arg0;
-  return new Promise((fn) => {
-    ReadStateActionCreators.ack(closure_0.channelId, { object: constants2.MARK_CHANNEL_AS_READ_FROM_NOTIFICATION, objectType: constants.ACK_MANUAL }, true, true, closure_0.messageId);
+  let closure_0 = arg0;
+  const promise = new Promise((fn) => {
+    const obj = ReadStateActionCreators;
+    const obj2 = { object: constants2.MARK_CHANNEL_AS_READ_FROM_NOTIFICATION, objectType: constants.ACK_MANUAL };
+    obj.ack(closure_0.channelId, obj2, true, true, closure_0.messageId);
     fn(true);
   });
+  return promise;
 };

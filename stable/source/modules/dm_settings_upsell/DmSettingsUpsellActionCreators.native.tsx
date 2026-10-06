@@ -1,31 +1,39 @@
-// Module ID: 17768
-// Function ID: 17769
+// Module ID: 17127
+// Function ID: 17128
 // Name: DmSettingsUpsellActionCreators
-// Dependencies: [17769, 510, 4755, 17770, 1980, 17771, 2]
+// Dependencies: [17128, 510, 4801, 17129, 1987, 17130, 2]
 
-// Module 17768 (DmSettingsUpsellActionCreators)
+// Module 17127 (DmSettingsUpsellActionCreators)
 import Storage3 from "Storage" /* 510 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import DmSettingsUpsellConstants from "DmSettingsUpsellConstants" /* 17769 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 17130 */;
+import DmSettingsUpsellConstants from "DmSettingsUpsellConstants" /* 17128 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 ({ DM_SETTINGS_UPSELL_LAST_SHOWN_KEY: c3, DM_SETTINGS_UPSELL_LAST_SHOWN_MAX_TIME_MS: closure_4 } = DmSettingsUpsellConstants);
-let result = size.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellActionCreators.native.tsx");
-
-export default {
+let obj = {
   openDmSettingsUpsellModal(guildId) {
     const Storage = Storage3.Storage;
-    value = Storage.get(React3);
+    const value = Storage.get(_false);
     const timestamp = Date.now();
+    const tmp2 = dependencyMap;
+    const tmp3 = _false;
     if (null != value) {
-      if (timestamp - value <= React4) {
-        tmp(17771).trackEvent(tmp(17771).DmUpsellActionTypes.SUPPRESSED_BY_COOLDOWN, guildId);
-        const tmpResult = tmp(17771);
+      if (timestamp - value <= React3) {
+        const tmpResult = DmSettingsUpsellUtils;
+        tmpResult.trackEvent(DmSettingsUpsellUtils.DmUpsellActionTypes.SUPPRESSED_BY_COOLDOWN, guildId);
       }
     }
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17770, dependencyMap.paths), "dm_settings_upsell_modal", { guildId });
+    const obj = { guildId };
+    const obj2 = ActionSheetActionCreatorsDefault;
+    obj2.openLazy(asyncRequire(17129, tmp2.paths), "dm_settings_upsell_modal", obj);
     const Storage2 = tmp(510).Storage;
-    const result = Storage2.set(React3, timestamp);
+    const result = Storage2.set(tmp3, timestamp);
   }
 };
+let result = size.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellActionCreators.native.tsx");
+
+export default obj;

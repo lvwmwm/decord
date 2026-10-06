@@ -1,29 +1,30 @@
-// Module ID: 17898
-// Function ID: 17899
+// Module ID: 17261
+// Function ID: 17262
 // Name: StaffMemberPreloaderManager
-// Dependencies: [7395, 17899, 2]
+// Dependencies: [6540, 17262, 2]
 
-// Module 17898 (StaffMemberPreloaderManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 17261 (StaffMemberPreloaderManager)
+import StaffMemberPreloader from "StaffMemberPreloader" /* 17262 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-const prototype = function StaffMemberPreloaderManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  require = applyArgumentsResult;
-  applyArgumentsResult.actions = {
-    POST_CONNECTION_OPEN() {
-      return applyArgumentsResult.handlePostConnectionOpen();
-    }
-  };
-  applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
-    applyArgumentsResult(dependencyMap[1]).preloadStaffMembers();
-  };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class StaffMemberPreloaderManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      POST_CONNECTION_OPEN() {
+        return require.handlePostConnectionOpen();
+      }
+    };
+    applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+      const obj = StaffMemberPreloader;
+      obj.preloadStaffMembers();
+    };
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const staffMemberPreloaderManager = new StaffMemberPreloaderManager();
 const result = size.fileFinishedImporting("modules/staff/StaffMemberPreloaderManager.tsx");
 
-export default prototype1;
+export default staffMemberPreloaderManager;

@@ -1,31 +1,38 @@
-// Module ID: 13363
-// Function ID: 13364
+// Module ID: 12617
+// Function ID: 12618
 // Name: UserProfileStackedActivityCardUtils
-// Dependencies: [1074, 12, 2]
+// Dependencies: [1086, 12, 2]
 // Exports: getUserProfileLiveActivities, getUserProfileStackedActivityCards
 
-// Module 13363 (UserProfileStackedActivityCardUtils)
+// Module 12617 (UserProfileStackedActivityCardUtils)
 import _mod12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
+
+let type;
 
 const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/user_profile/utils/UserProfileStackedActivityCardUtils.tsx");
 
 export const getUserProfileLiveActivities = function getUserProfileLiveActivities(stateFromStores1) {
-  return _mod12.uniqWith(stateFromStores1.filter((type) => {
+  const obj = _mod12;
+  return obj.uniqWith(stateFromStores1.filter((type) => {
     type = type.type;
     return type !== constants.CUSTOM_STATUS && type !== constants.HANG_STATUS;
   }), (application_id, application_id2) => {
     let tmp = null != application_id.application_id && null != application_id2.application_id && application_id.application_id === application_id2.application_id;
     if (!tmp) {
       tmp = null != application_id.name && null != application_id2.name && application_id.name === application_id2.name;
-      const tmp2 = null != application_id.name && null != application_id2.name && application_id.name === application_id2.name;
     }
     return tmp;
   });
 };
 export const getUserProfileStackedActivityCards = function getUserProfileStackedActivityCards(arg0) {
+  let isPrivate;
+  let live;
+  let stream;
+  let voiceActivity;
+  let voiceChannel;
   ({ stream, live } = arg0);
   if (live === undefined) {
     live = [];

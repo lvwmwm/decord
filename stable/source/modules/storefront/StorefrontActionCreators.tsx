@@ -1,23 +1,27 @@
-// Module ID: 9097
-// Function ID: 9098
+// Module ID: 8244
+// Function ID: 8245
 // Name: StorefrontActionCreators
-// Dependencies: [5, 4448, 7509, 9098, 9099, 9100, 1074, 1091, 573, 1271, 7508, 2]
-// Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
+// Dependencies: [5, 4493, 6654, 8245, 8246, 8247, 1086, 1103, 585, 1283, 4738, 6653, 2]
+// Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 9097 (StorefrontActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BillingInfoStore from "BillingInfoStore" /* 4448 */;
-import SKUPricesStore from "SKUPricesStore" /* 7509 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9098 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9099 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9100 */;
+// Module 8244 (StorefrontActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import BillingInfoStore from "BillingInfoStore" /* 4493 */;
+import SKUPricesStore from "SKUPricesStore" /* 6654 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8245 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8246 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8247 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let apiError, c1, closure_3, closure_4, promotions;
+
 function shouldFetchStorefrontPromotions(arg0) {
   const fetchState = StorefrontPromotionStore.getFetchState(arg0);
+  obj = StorefrontPromotionStore;
   if (undefined === fetchState) {
     return true;
   } else if ("loading" === fetchState) {
@@ -28,293 +32,386 @@ function shouldFetchStorefrontPromotions(arg0) {
       return true;
     } else {
       const _Date = Date;
-      return Date.now() - fetchedAt > ("error" === fetchState ? closure_9 : MINUTE);
+      const tmp4 = "error" === fetchState ? closure_9 : MINUTE;
+      return Date.now() - fetchedAt > tmp4;
     }
   }
-  obj = StorefrontPromotionStore;
 }
-let closure_12 = async function _maybeFetchStorefrontPromotions(arg0, value) {
-  if (c1 === 2) {
-    c1 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c1 = 2;
-      if (0 === c2) {
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          const found = _require.filter(shouldFetchStorefrontPromotions);
-          if (0 !== found.length) {
-            c2 = 1;
-            c1 = 1;
-            const obj4 = { value: fetchStorefrontPromotions(found), done: false };
-            return obj4;
-          }
-        }
-      } else if (arg0 === 1) {
-        c1 = 3;
+let obj = function _maybeFetchStorefrontPromotions() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        c1 = 3;
-        const obj = { value, done: true };
-        return obj;
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
       }
-      c1 = 3;
-      return { value: "HermesInternal", done: null };
-    } catch (tmp8) {
-      c1 = tmp;
-      throw tmp8;
+    } else {
+      try {
+        c1 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c1 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            const found = closure_0.filter(shouldFetchStorefrontPromotions);
+            if (0 !== found.length) {
+              c2 = 1;
+              c1 = 1;
+              const obj4 = { value: fetchStorefrontPromotions(found), done: false };
+              return obj4;
+            }
+          }
+        } else if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          obj = { value, done: true };
+          return obj;
+        }
+        c1 = 3;
+        return { value: "IconComponent", done: null };
+      } catch (tmp7) {
+        c1 = 3;
+        throw tmp7;
+      }
     }
-  }
+  });
+  return obj(...arguments);
 };
 function fetchStorefrontPromotions() {
-  const self = this;
-  const apply = closure_14.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_14 = async function _fetchStorefrontPromotions(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
+obj = function _fetchStorefrontPromotions() {
+  obj = _asyncToGenerator(async (applicationIds) => {
+    let c4 = 0;
+    let c5 = 0;
+    let c3 = 0;
+    return (async (arg0, value) => {
+      let obj7;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          return { value, done: true };
         } else {
-          closure_2 = tmp3;
-          closure_1 = tmp7;
-          closure_129_0 = length;
-          closure_129_1 = undefined;
-          if (0 !== length.length) {
-            c3 = 1;
-            const obj5 = { type: "STOREFRONT_PROMOTIONS_FETCH_START", applicationIds: tmp39 };
-            DispatcherDefault.dispatch(obj5);
-            promotionIdOverride = promotionIdOverride.getPromotionIdOverride();
-            const HTTP = HTTPUtils.HTTP;
-            let get = HTTP.get;
-            const request = { url: constants.STOREFRONT_PROMOTIONS, query: null, rejectWithError: true };
-            const obj7 = { application_ids: tmp39 };
-            if (null != promotionIdOverride) {
-              const obj8 = { promotion_id_override: promotionIdOverride };
-              let obj9 = obj8;
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
             } else {
-              obj9 = {};
+              closure_2 = tmp;
+              promotions = undefined;
+              if (0 !== applicationIds.length) {
+                let obj9;
+                c3 = 1;
+                const obj5 = { type: "STOREFRONT_PROMOTIONS_FETCH_START", applicationIds };
+                const obj6 = DispatcherDefault;
+                obj6.dispatch(obj5);
+                promotionIdOverride = promotionIdOverride.getPromotionIdOverride();
+                const HTTP = HTTPUtils.HTTP;
+                const request = { url: constants.STOREFRONT_PROMOTIONS, query: obj7, rejectWithError: true };
+                const get = HTTP.get;
+                obj7 = { application_ids: applicationIds };
+                if (null != promotionIdOverride) {
+                  obj9 = { promotion_id_override: promotionIdOverride };
+                  const obj8 = { promotion_id_override: promotionIdOverride };
+                } else {
+                  obj9 = {};
+                }
+                const merged = Object.assign(obj9);
+                c4 = 2;
+                c5 = 1;
+                const obj10 = { value: get(request), done: false };
+                return obj10;
+              }
             }
-            const merged = Object.assign(obj9);
-            request.query = obj7;
-            get = get(request);
-            c4 = 2;
-            c5 = 1;
+          } else if (1 === c4) {
+            c3 = 0;
+            const obj11 = { type: "STOREFRONT_PROMOTIONS_FETCH_FAIL", applicationIds };
+            const obj4 = closure_130_1(closure_130_2[8]);
+            obj4.dispatch(obj11);
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            promotions = value.body.promotions;
+            promotions = promotions.map((item) => closure_1_7.createFromServer(item));
+            const obj13 = { type: "STOREFRONT_PROMOTIONS_FETCH_SUCCESS", applicationIds, promotions };
+            obj = closure_130_1(closure_130_2[8]);
+            obj.dispatch(obj13);
+            c3 = 0;
+          }
+          c5 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp29) {
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp29;
+          } else {
+            c4 = 1;
           }
         }
-      } else {
-        if (1 === tmp7) {
-          c3 = 0;
-          const obj10 = { type: "STOREFRONT_PROMOTIONS_FETCH_FAIL", applicationIds: closure_129_0 };
-          closure_130_1(closure_130_2[8]).dispatch(obj10);
-          const obj4 = closure_130_1(closure_130_2[8]);
-        } else if (arg0 === 1) {
-          c5 = 3;
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _claimStorefrontPromotion() {
+  obj = _asyncToGenerator(async (promotionId, arg1) => {
+    let closure_1 = arg1;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (async function(arg0, value) {
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
           throw value;
-        } else if (arg0 !== 2) {
-          const promotions = value.body.promotions;
-          closure_129_1 = promotions.map((item) => closure_1_7.createFromServer(item));
-          const obj11 = { type: "STOREFRONT_PROMOTIONS_FETCH_SUCCESS", applicationIds: closure_129_0, promotions: closure_129_1 };
-          closure_130_1(closure_130_2[8]).dispatch(obj11);
-          c3 = 0;
-          const obj = closure_130_1(closure_130_2[8]);
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
         }
-        c3 = 0;
-        c5 = 3;
-        const obj12 = { value, done: true };
-        return obj12;
-      }
-      c5 = 3;
-    } catch (tmp32) {
-      if (tmp4 === c3) {
-        c5 = tmp2;
-        throw tmp32;
       } else {
-        c4 = tmp;
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp;
+              apiError = undefined;
+              const obj4 = { type: "STOREFRONT_PROMOTION_CLAIM_START", promotionId };
+              const obj11 = DispatcherDefault;
+              obj11.dispatch(obj4);
+              c5 = 1;
+              const HTTP = HTTPUtils.HTTP;
+              const request = { url: Endpoints.STOREFRONT_PROMOTION_CLAIM(promotionId), body: {}, rejectWithError: true };
+              const post = HTTP.post;
+              c6 = 3;
+              c7 = 1;
+              const obj5 = { value: post(request), done: false };
+              return obj5;
+            }
+          } else if (1 === c6) {
+            c5 = 0;
+            closure_3 = closure_4;
+            const self = this;
+            const self2 = this;
+            apiError = new closure_131_1(closure_131_2[10])(closure_3);
+            const obj7 = { type: "STOREFRONT_PROMOTION_CLAIM_FAIL", promotionId, apiError };
+            const tmp20 = new closure_131_1(closure_131_2[10])(closure_3);
+            const obj6 = closure_131_1(closure_131_2[8]);
+            obj6.dispatch(obj7);
+            throw apiError;
+          } else if (2 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              c7 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c7 = 3;
+            return { value, done: true };
+          } else {
+            c5 = 0;
+            const obj10 = { type: "STOREFRONT_PROMOTION_CLAIM_SUCCESS", promotionId };
+            obj = closure_131_1(closure_131_2[8]);
+            obj.dispatch(obj10);
+            const items = [closure_1];
+            c6 = 2;
+            c7 = 1;
+            const obj12 = { value: closure_131_13(items), done: false };
+            return obj12;
+          }
+        } catch (tmp28) {
+          closure_4 = tmp28;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp28;
+          } else {
+            c6 = 1;
+          }
+        }
       }
-    }
-  }
+    })();
+  });
+  return obj(...arguments);
 };
-let closure_15 = async function _fetchStorefrontPricesForApplicationId(arg0) {
-  let applicationId = arg0;
-  c3 = 0;
-  c4 = 0;
-  let iter = (async (arg0) => {
-    await closure_130_17({ type: "application", applicationId: applicationId2 });
-    await "HermesInternal";
-    closure_1 = tmp2;
-    applicationId2 = applicationId.applicationId;
-    return "PX_16";
-  })();
-  iter.next();
-  return iter;
+obj = function _fetchStorefrontPricesForApplicationId() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let closure_1;
+    let closure_2;
+    let applicationId = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (async (arg0) => {
+      const obj5 = { type: "application", applicationId };
+      await closure_130_18(obj5);
+      await "IconComponent";
+      applicationId = applicationId.applicationId;
+      return "Reflect";
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
-let closure_16 = async function _fetchStorefrontPricesForSkuIds(arg0) {
-  let skuIds = arg0;
-  c3 = 0;
-  c4 = 0;
-  let iter = (async (arg0) => {
-    await closure_130_17({ type: "skus", skuIds: skuIds2 });
-    await "HermesInternal";
-    closure_1 = tmp2;
-    skuIds2 = skuIds.skuIds;
-    return "PX_16";
-  })();
-  iter.next();
-  return iter;
+obj = function _fetchStorefrontPricesForSkuIds() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let closure_1;
+    let closure_2;
+    let skuIds = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (async (arg0) => {
+      const obj5 = { type: "skus", skuIds };
+      await closure_130_18(obj5);
+      await "IconComponent";
+      skuIds = skuIds.skuIds;
+      return "Reflect";
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
 function fetchStorefrontPrices() {
-  const self = this;
-  const apply = closure_18.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_18 = async function _fetchStorefrontPrices(arg0, value) {
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+obj = function _fetchStorefrontPrices() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
+      let c2;
+      try {
+        let priceId;
+        let body;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            let closure_1 = tmp;
+            let closure_0 = tmp4;
+            priceId = undefined;
+            body = undefined;
+          }
+        } else if (1 === c3) {
+          c2 = 0;
+          const obj6 = { type: "SKUS_PRICING_FETCH_FAIL", priceId };
+          const obj4 = closure_129_1(closure_129_2[8]);
+          obj4.dispatch(obj6);
+        } else if (arg0 === 1) {
           c4 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c2 = 0;
           c4 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
+          const obj7 = { value, done: true };
+          return obj7;
         } else {
-          closure_1 = tmp3;
-          closure_0 = tmp7;
-          closure_128_0 = undefined;
-          let body;
-        }
-      } else {
-        if (1 === tmp7) {
-          c2 = 0;
-          const obj6 = { type: "SKUS_PRICING_FETCH_FAIL", priceId: closure_128_0 };
-          closure_129_1(closure_129_2[8]).dispatch(obj6);
-          const obj5 = closure_129_1(closure_129_2[8]);
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 !== 2) {
           body = value.body;
-          const obj7 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: closure_128_0, data: null };
-          const obj = closure_129_1(closure_129_2[8]);
-          obj7.data = closure_129_0(closure_129_2[10]).transformStorefrontPricesServer(body);
-          obj.dispatch(obj7);
+          obj = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId, data: obj2.transformStorefrontPricesServer(body) };
+          const dispatch = closure_129_1(closure_129_2[8]).dispatch;
+          const tmp9 = closure_129_1(closure_129_2[8]);
+          obj2 = closure_129_0(closure_129_2[11]);
+          dispatch(obj);
           c2 = 0;
-          const obj3 = closure_129_0(closure_129_2[10]);
         }
-        c2 = 0;
         c4 = 3;
-        const obj8 = { value, done: true };
-        return obj8;
-      }
-      c4 = 3;
-    } catch (tmp23) {
-      if (tmp4 === c2) {
-        c4 = tmp2;
-        throw tmp23;
-      } else {
-        c3 = tmp;
+        return { value: "IconComponent", done: null };
+      } catch (tmp21) {
+        if (0 === c2) {
+          c4 = 3;
+          throw tmp21;
+        } else {
+          c3 = 1;
+        }
       }
     }
-  }
+  });
+  return obj(...arguments);
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = Constants.Endpoints;
 let closure_9 = 10 * DurationsDefault.Millis.MINUTE;
 const MINUTE = DurationsDefault.Millis.MINUTE;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/storefront/StorefrontActionCreators.tsx");
 
 export const maybeFetchStorefrontPromotions = function maybeFetchStorefrontPromotions() {
-  const self = this;
-  const apply = closure_12.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export { fetchStorefrontPromotions };
+export const claimStorefrontPromotion = function claimStorefrontPromotion() {
+  return obj(...arguments);
+};
 export const fetchStorefrontPricesForApplicationId = function fetchStorefrontPricesForApplicationId() {
-  const self = this;
-  const apply = closure_15.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const fetchStorefrontPricesForSkuIds = function fetchStorefrontPricesForSkuIds() {
-  const self = this;
-  const apply = closure_16.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const setStorefrontPromotionIdOverride = function setStorefrontPromotionIdOverride(promotionIdOverride) {
-  DispatcherDefault.dispatch({ type: "STOREFRONT_PROMOTION_ID_OVERRIDE_SET", promotionIdOverride });
+  obj = DispatcherDefault;
+  const obj2 = { type: "STOREFRONT_PROMOTION_ID_OVERRIDE_SET", promotionIdOverride };
+  obj.dispatch(obj2);
 };

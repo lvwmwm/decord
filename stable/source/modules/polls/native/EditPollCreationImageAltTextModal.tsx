@@ -1,98 +1,364 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 11603
+// Function ID: 11604
 // Name: EditPollCreationImageAltTextModal
-// Dependencies: [32, 19, 17, 8103, 21, 4788, 576, 12508, 12510, 7400, 1115, 1177, 7269, 4784, 5827, 10111, 8903, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 7252, 21, 4837, 588, 558, 576, 11600, 11602, 1127, 1189, 6413, 4833, 9249, 8057, 6462, 6546, 2]
 
-// Module 12511 (EditPollCreationImageAltTextModal)
-import nativeDefault from "native" /* 576 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12510 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 11603 (EditPollCreationImageAltTextModal)
+import nativeDefault from "native" /* 588 */;
+import PollsConstants from "PollsConstants" /* 7252 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 11602 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ TouchableOpacity: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const MAX_POLL_ANSWER_LENGTH = fn(8103).MAX_POLL_ANSWER_LENGTH;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: 18, paddingTop: 10 }, separator: null, contentContainer: null, imageContainer: null, formContainer: null, textInput: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj2.separator = { borderBottomWidth: 1, borderColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
-obj2.contentContainer = { flex: 1, justifyContent: "center" };
-let obj4 = { borderBottomWidth: 1, borderColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
-obj2.imageContainer = { borderRadius: nativeDefault.radii.lg, justifyContent: "center", alignItems: "center", alignSelf: "center", overflow: "hidden", aspectRatio: 1 };
-obj2.formContainer = { paddingHorizontal: 16 };
-let obj5 = { borderRadius: nativeDefault.radii.lg, justifyContent: "center", alignItems: "center", alignSelf: "center", overflow: "hidden", aspectRatio: 1 };
-obj2.textInput = { backgroundColor: nativeDefault.colors.REDESIGN_CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.radii.lg };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/polls/native/EditPollCreationImageAltTextModal.tsx");
+let imageSize;
 
-export default function EditPollCreationImageAltTextModal(imageSize) {
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+({ TouchableOpacity: hasOwnProperty, View: metroRequire } = react_native);
+const MAX_POLL_ANSWER_LENGTH = PollsConstants.MAX_POLL_ANSWER_LENGTH;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: 18, paddingTop: 10 }, separator: obj3, contentContainer: { flex: 1, justifyContent: "center" }, imageContainer: obj4, formContainer: { paddingHorizontal: 16 }, textInput: obj5 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { borderBottomWidth: 1, borderColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
+obj4 = { borderRadius: nativeDefault.radii.lg, justifyContent: "center", alignItems: "center", alignSelf: "center", overflow: "hidden", aspectRatio: 1 };
+obj5 = { backgroundColor: nativeDefault.colors.REDESIGN_CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.radii.lg };
+let closure_10 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((imageSize) => {
+  let Icon;
+  let answer;
+  let channelId;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let obj3;
+  let onSave;
+  let renderImage;
+  let upload;
+  let value;
+  const tmp = onSave;
+  let obj = onSave(576);
+  const cResult = obj.c(35);
   ({ channelId, answer, onSave } = imageSize);
   imageSize = imageSize.imageSize;
-  value = undefined;
-  const tmp = closure_10();
-  const tmp4 = value(12508)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
-  const upload = tmp4.upload;
+  const tmp4 = closure_10();
+  ({ renderImage, upload } = value(11600)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize));
   let str;
+  const useState = react.useState;
+  value(11600)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
   if (upload != null) {
     str = upload.description;
   }
   if (str == null) {
     str = "";
   }
-  const tmp5 = _slicedToArray(noop.useState(str), 2);
-  value = tmp5[0];
-  const items = [onSave, value];
-  const callback = noop.useCallback(() => {
+  value = _slicedToArray(useState(str), 2)[0];
+  _slicedToArray(useState(str), 2);
+  if (cResult[0] === onSave) {
+    let tmp11;
+    let tmp13;
+    let tmp17;
+    let tmp20;
+    let tmp23;
+    if (cResult[1] === value) {
+      tmp11 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    const container = tmp4.container;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { onPress: tmp(11602).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(tmp(1127).t.cpT0Cq), children: closure_8(Icon, obj3) };
+      intl = tmp(1127).intl;
+      obj3 = { source: value(6413) };
+      Icon = tmp(1189).Icon;
+      const tmp16 = closure_8(closure_5, obj2);
+      cResult[3] = tmp16;
+      tmp13 = tmp16;
+    } else {
+      tmp13 = cResult[3];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: intl2.string(tmp(1127).t.Cq44Rg) };
+      const Text = tmp(4833).Text;
+      intl2 = tmp(1127).intl;
+      const tmp19 = closure_8(Text, obj4);
+      cResult[4] = tmp19;
+      tmp17 = tmp19;
+    } else {
+      tmp17 = cResult[4];
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj5 = { variant: "text-md/medium", color: "text-brand", children: intl3.string(tmp(1127).t["R3BPH+"]) };
+      const Text2 = tmp(4833).Text;
+      intl3 = tmp(1127).intl;
+      const tmp22 = closure_8(Text2, obj5);
+      cResult[5] = tmp22;
+      tmp20 = tmp22;
+    } else {
+      tmp20 = cResult[5];
+    }
+    if (cResult[6] !== tmp11) {
+      const obj6 = { onPress: tmp11, activeOpacity: 0.5, children: tmp20 };
+      const tmp26 = closure_8(closure_5, obj6);
+      cResult[6] = tmp11;
+      cResult[7] = tmp26;
+      tmp23 = tmp26;
+    } else {
+      tmp23 = cResult[7];
+    }
+    if (cResult[8] === tmp4.header) {
+      let tmp27;
+      let tmp31;
+      if (cResult[9] === tmp23) {
+        tmp27 = cResult[10];
+      }
+      if (cResult[11] !== tmp4.separator) {
+        const obj7 = { style: tmp4.separator };
+        const tmp34 = closure_8(closure_6, obj7);
+        cResult[11] = tmp4.separator;
+        cResult[12] = tmp34;
+        tmp31 = tmp34;
+      } else {
+        tmp31 = cResult[12];
+      }
+      if (cResult[13] === renderImage) {
+        let tmp36;
+        let tmp40;
+        let tmp43;
+        let tmp47;
+        if (cResult[14] === tmp4.imageContainer) {
+          tmp36 = cResult[15];
+        }
+        const _Symbol4 = Symbol;
+        const formContainer = tmp4.formContainer;
+        if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+          const tmp42 = closure_8(tmp(1189).Spacer, { size: 27 });
+          cResult[16] = tmp42;
+          tmp40 = tmp42;
+        } else {
+          tmp40 = cResult[16];
+        }
+        const _Symbol5 = Symbol;
+        if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+          const obj8 = { children: intl4.string(tmp(1127).t["/2Gnoa"]) };
+          const tmp5Result = value(9249);
+          intl4 = tmp(1127).intl;
+          const tmp46 = closure_8(tmp5Result, obj8);
+          cResult[17] = tmp46;
+          tmp43 = tmp46;
+        } else {
+          tmp43 = cResult[17];
+        }
+        const _Symbol6 = Symbol;
+        const textInput = tmp4.textInput;
+        if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl5 = tmp(1127).intl;
+          const stringResult = intl5.string(tmp(1127).t["/2Gnoa"]);
+          cResult[18] = stringResult;
+          tmp47 = stringResult;
+        } else {
+          tmp47 = cResult[18];
+        }
+        if (cResult[19] === tmp4.textInput) {
+          let tmp49;
+          let tmp53;
+          if (cResult[20] === value) {
+            tmp49 = cResult[21];
+          }
+          const _Symbol7 = Symbol;
+          if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+            const tmp55 = closure_8(tmp(1189).Spacer, { size: 27 });
+            cResult[22] = tmp55;
+            tmp53 = tmp55;
+          } else {
+            tmp53 = cResult[22];
+          }
+          if (cResult[23] === tmp4.formContainer) {
+            let tmp56;
+            if (cResult[24] === tmp49) {
+              tmp56 = cResult[25];
+            }
+            if (cResult[26] === tmp4.contentContainer) {
+              if (cResult[27] === tmp36) {
+                let tmp60;
+                if (cResult[28] === tmp56) {
+                  tmp60 = cResult[29];
+                }
+                if (cResult[30] === tmp4.container) {
+                  if (cResult[31] === tmp60) {
+                    if (cResult[32] === tmp27) {
+                      let tmp63;
+                      if (cResult[33] === tmp31) {
+                        tmp63 = cResult[34];
+                      }
+                      return tmp63;
+                    }
+                  }
+                }
+                const obj9 = { top: true, style: container, children: items };
+                items = [tmp27, tmp31, tmp60];
+                const tmp65 = closure_9(tmp(6546).SafeAreaPaddingView, obj9);
+                cResult[30] = tmp4.container;
+                cResult[31] = tmp60;
+                cResult[32] = tmp27;
+                cResult[33] = tmp31;
+                cResult[34] = tmp65;
+                tmp63 = tmp65;
+              }
+            }
+            const obj10 = { style: tmp35, children: items1 };
+            items1 = [tmp36, tmp56];
+            const tmp62 = closure_9(value(6462), obj10);
+            cResult[26] = tmp4.contentContainer;
+            cResult[27] = tmp36;
+            cResult[28] = tmp56;
+            cResult[29] = tmp62;
+            tmp60 = tmp62;
+          }
+          const obj11 = { style: formContainer, children: items2 };
+          items2 = [tmp40, tmp43, tmp49, tmp53];
+          const tmp59 = closure_9(closure_6, obj11);
+          cResult[23] = tmp4.formContainer;
+          cResult[24] = tmp49;
+          cResult[25] = tmp59;
+          tmp56 = tmp59;
+        }
+        const obj12 = { showTopContainer: false, showBorder: false, multiline: false, value, onChange: tmp10, clearButtonVisibility: tmp(1189).ClearButtonVisibility.WITH_CONTENT, style: textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true, accessibilityLabel: tmp47 };
+        const FormInput = tmp(8057).FormInput;
+        const tmp52 = closure_8(FormInput, obj12);
+        cResult[19] = tmp4.textInput;
+        cResult[20] = value;
+        cResult[21] = tmp52;
+        tmp49 = tmp52;
+      }
+      const obj13 = { style: tmp4.imageContainer, children: renderImage };
+      const tmp39 = closure_8(closure_6, obj13);
+      cResult[13] = renderImage;
+      cResult[14] = tmp4.imageContainer;
+      cResult[15] = tmp39;
+      tmp36 = tmp39;
+    }
+    const obj14 = { style: tmp4.header, children: items3 };
+    items3 = [tmp13, tmp17, tmp23];
+    const tmp30 = closure_9(closure_6, obj14);
+    cResult[8] = tmp4.header;
+    cResult[9] = tmp23;
+    cResult[10] = tmp30;
+    tmp27 = tmp30;
+  }
+  const fn = function u() {
     if (null != first) {
       onSave(tmp);
     }
-    const result = EditPollCreationImageAltTextModalActionCreators.closeEditPollCreationImageAltTextModal();
+    const obj = EditPollCreationImageAltTextModalActionCreators;
+    const result = obj.closeEditPollCreationImageAltTextModal();
+  };
+  cResult[0] = onSave;
+  cResult[1] = value;
+  cResult[2] = fn;
+  tmp11 = fn;
+}) : ((imageSize) => {
+  let Icon;
+  let Text2;
+  let answer;
+  let channelId;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let obj5;
+  let obj8;
+  let onSave;
+  let tmp7;
+  let value;
+  ({ channelId, answer, onSave } = imageSize);
+  imageSize = imageSize.imageSize;
+  value = undefined;
+  const tmp = closure_10();
+  const tmp4 = value(11600)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
+  const upload = tmp4.upload;
+  let obj = react;
+  let str;
+  const renderImage = tmp4.renderImage;
+  const useState = react.useState;
+  if (upload != null) {
+    str = upload.description;
+  }
+  if (str == null) {
+    str = "";
+  }
+  [value, tmp7] = useState(str);
+  const items = [onSave, value];
+  const callback = obj.useCallback(() => {
+    if (null != first) {
+      onSave(tmp);
+    }
+    const obj = EditPollCreationImageAltTextModalActionCreators;
+    const result = obj.closeEditPollCreationImageAltTextModal();
   }, items);
-  const obj2 = { top: true, style: tmp.container, children: null };
-  const obj3 = { style: tmp.header, children: null };
-  const obj4 = { onPress: onSave(12510).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, children: null };
-  const intl = onSave(1115).intl;
-  obj4.accessibilityLabel = intl.string(onSave(1115).t.cpT0Cq);
-  obj4.children = closure_8(onSave(1177).Icon, { source: value(7269) });
-  const items1 = [closure_8(closure_5, obj4), , ];
-  const obj6 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: null };
-  const intl2 = onSave(1115).intl;
-  obj6.children = intl2.string(onSave(1115).t.Cq44Rg);
-  items1[1] = closure_8(onSave(4784).Text, obj6);
-  const obj7 = { onPress: callback, activeOpacity: 0.5, children: null };
-  const obj8 = { variant: "text-md/medium", color: "text-brand", children: null };
-  const intl3 = onSave(1115).intl;
-  obj8.children = intl3.string(onSave(1115).t["R3BPH+"]);
-  obj7.children = closure_8(onSave(4784).Text, obj8);
+  const obj2 = { top: true, style: tmp.container, children: items2 };
+  const obj3 = { style: tmp.header, children: items1 };
+  const obj4 = { onPress: onSave(11602).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(onSave(1127).t.cpT0Cq), children: closure_8(Icon, obj5) };
+  const SafeAreaPaddingView = onSave(6546).SafeAreaPaddingView;
+  intl = onSave(1127).intl;
+  obj5 = { source: value(6413) };
+  Icon = onSave(1189).Icon;
+  items1 = [closure_8(closure_5, obj4), , ];
+  const obj6 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: intl2.string(onSave(1127).t.Cq44Rg) };
+  const Text = onSave(4833).Text;
+  intl2 = onSave(1127).intl;
+  items1[1] = closure_8(Text, obj6);
+  const obj7 = { onPress: callback, activeOpacity: 0.5, children: closure_8(Text2, obj8) };
+  obj8 = { variant: "text-md/medium", color: "text-brand", children: intl3.string(onSave(1127).t["R3BPH+"]) };
+  Text2 = onSave(4833).Text;
+  intl3 = onSave(1127).intl;
   items1[2] = closure_8(closure_5, obj7);
-  obj3.children = items1;
-  const items2 = [closure_9(closure_6, obj3), closure_8(closure_6, { style: tmp.separator }), ];
-  const obj10 = { style: tmp.contentContainer, children: null };
-  const obj11 = { style: tmp.imageContainer, children: tmp4.renderImage };
-  const obj5 = { source: value(7269) };
+  items2 = [closure_9(closure_6, obj3), , ];
   const obj9 = { style: tmp.separator };
-  const items3 = [closure_8(closure_6, obj11), ];
-  const obj12 = { style: tmp.formContainer, children: null };
-  const items4 = [closure_8(onSave(1177).Spacer, { size: 27 }), , , ];
-  const obj13 = { children: null };
-  const tmp2Result = value(5827);
-  const intl4 = onSave(1115).intl;
-  obj13.children = intl4.string(onSave(1115).t["/2Gnoa"]);
-  items4[1] = closure_8(value(10111), obj13);
-  const obj14 = { showTopContainer: false, showBorder: false, multiline: false, value, onChange: tmp5[1], clearButtonVisibility: onSave(1177).ClearButtonVisibility.WITH_CONTENT, style: tmp.textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true, accessibilityLabel: null };
-  const intl5 = onSave(1115).intl;
-  obj14.accessibilityLabel = intl5.string(onSave(1115).t["/2Gnoa"]);
-  items4[2] = closure_8(onSave(8903).FormInput, obj14);
-  items4[3] = closure_8(onSave(1177).Spacer, { size: 27 });
-  obj12.children = items4;
+  items2[1] = closure_8(closure_6, obj9);
+  const obj10 = { style: tmp.contentContainer, children: items3 };
+  items3 = [, ];
+  const obj11 = { style: tmp.imageContainer, children: renderImage };
+  const tmp2Result = value(6462);
+  items3[0] = closure_8(closure_6, obj11);
+  const obj12 = { style: tmp.formContainer, children: items4 };
+  items4 = [closure_8(onSave(1189).Spacer, { size: 27 }), , , ];
+  const obj13 = { children: intl4.string(onSave(1127).t["/2Gnoa"]) };
+  const tmp2Result2 = value(9249);
+  intl4 = onSave(1127).intl;
+  items4[1] = closure_8(tmp2Result2, obj13);
+  const obj14 = { showTopContainer: false, showBorder: false, multiline: false, value, onChange: tmp7, clearButtonVisibility: onSave(1189).ClearButtonVisibility.WITH_CONTENT, style: tmp.textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true, accessibilityLabel: intl5.string(onSave(1127).t["/2Gnoa"]) };
+  const FormInput = onSave(8057).FormInput;
+  intl5 = onSave(1127).intl;
+  items4[2] = closure_8(FormInput, obj14);
+  items4[3] = closure_8(onSave(1189).Spacer, { size: 27 });
   items3[1] = closure_9(closure_6, obj12);
-  obj10.children = items3;
   items2[2] = closure_9(tmp2Result, obj10);
-  obj2.children = items2;
-  return closure_9(onSave(7400).SafeAreaPaddingView, obj2);
-};
+  return closure_9(SafeAreaPaddingView, obj2);
+});
+let result = size.fileFinishedImporting("modules/polls/native/EditPollCreationImageAltTextModal.tsx");
+
+export default tmp5;

@@ -1,13 +1,14 @@
-// Module ID: 5372
-// Function ID: 5373
+// Module ID: 5437
+// Function ID: 5438
 // Name: StyleSheetUtils
 // Dependencies: [2]
 
-// Module 5372 (StyleSheetUtils)
+// Module 5437 (StyleSheetUtils)
 import size from "module_2" /* 2 */;
 
-const obj = { getStyleProp: null };
-function getStyleProp(style, borderRadius) {
+let getStyleProp;
+const obj = { getStyleProp };
+getStyleProp = function getStyleProp(style, borderRadius) {
   if (null != borderRadius) {
     if ("" !== borderRadius) {
       const _Array = Array;
@@ -27,8 +28,7 @@ function getStyleProp(style, borderRadius) {
       }
     }
   }
-}
-obj.getStyleProp = getStyleProp;
+};
 const result = size.fileFinishedImporting("utils/native/StyleSheetUtils.tsx");
 
 export default obj;

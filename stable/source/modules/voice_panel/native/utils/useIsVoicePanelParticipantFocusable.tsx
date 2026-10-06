@@ -1,19 +1,26 @@
-// Module ID: 17549
-// Function ID: 17550
+// Module ID: 16940
+// Function ID: 16941
 // Name: useIsVoicePanelParticipantFocusable
-// Dependencies: [2040, 4804, 4810, 1992, 4809, 9742, 1370, 504, 2]
-// Exports: default
+// Dependencies: [2050, 4853, 4859, 1999, 4858, 8893, 1376, 558, 576, 504, 2]
 
-// Module 17549 (useIsVoicePanelParticipantFocusable)
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+// Module 16940 (useIsVoicePanelParticipantFocusable)
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import participantHasVideo from "participantHasVideo" /* 8893 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import CallConstants from "CallConstants" /* 4858 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-function isVoicePanelParticipantFocusable(channelId, guildId, id2, ChannelRTCStore, MediaEngineStore, EmbeddedActivitiesStore, ApplicationStreamingStore) {
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+function isVoicePanelParticipantFocusable(guildId, channelId, id2, ChannelRTCStore, MediaEngineStore, EmbeddedActivitiesStore, ApplicationStreamingStore) {
   let obj = ChannelRTCStore;
   if (ChannelRTCStore === undefined) {
     obj = ChannelRTCStore;
@@ -33,10 +40,10 @@ function isVoicePanelParticipantFocusable(channelId, guildId, id2, ChannelRTCSto
   if (null == id2) {
     return false;
   } else {
-    const participant = obj.getParticipant(guildId, id2);
+    const participant = obj.getParticipant(channelId, id2);
     if (null == participant) {
       return false;
-    } else if (timestampProducer(participant)) {
+    } else if (metroRequire(participant)) {
       const currentEmbeddedActivity = obj2.getCurrentEmbeddedActivity();
       let applicationId;
       if (currentEmbeddedActivity != null) {
@@ -44,29 +51,69 @@ function isVoicePanelParticipantFocusable(channelId, guildId, id2, ChannelRTCSto
       }
       return null != applicationId && participant.applicationId === currentEmbeddedActivity.applicationId;
     } else {
-      if (React5(participant)) {
-        let result = null != obj3.getActiveStreamForUser(participant.user.id, channelId);
-      } else if (React6(participant)) {
-        result = tmp4(9742).canRenderParticipantVideo(participant, tmp);
-        const tmp4Result = tmp4(9742);
+      let result;
+      if (metroImportDefault(participant)) {
+        result = null != obj3.getActiveStreamForUser(participant.user.id, guildId);
+      } else if (metroImportAll(participant)) {
+        const tmp4Result = participantHasVideo;
+        result = tmp4Result.canRenderParticipantVideo(participant, tmp);
       } else {
-        tmp4(1370).assertNever(participant);
-        const tmp4Result2 = tmp4(1370);
+        const tmp4Result2 = GlobalUtils;
+        tmp4Result2.assertNever(participant);
       }
       return result;
     }
   }
 }
-const CallConstants = fn(4809);
-({ isActivityParticipant: metroRequire, isStreamParticipant: closure_7, isUserParticipant: closure_8 } = CallConstants);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx");
-
-export default function useIsVoicePanelParticipantFocusable(arg0, arg1, arg2) {
+({ isActivityParticipant: metroRequire, isStreamParticipant: metroImportDefault, isUserParticipant: metroImportAll } = CallConstants);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let closure_0;
+  let closure_1;
+  let first;
   _require = arg0;
   dependencyMap = arg1;
-  closure_2 = arg2;
+  let closure_2 = arg2;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelRTCStore, MediaEngineStore, closure_2, ApplicationStreamingStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    if (cResult[2] === arg0) {
+      let tmp9;
+      if (cResult[3] === arg2) {
+        tmp9 = cResult[4];
+      }
+      const tmpResult = tmp(504);
+      return tmpResult.useStateFromStores(first, tmp9);
+    }
+  }
+  class P {
+    constructor() {
+      return isVoicePanelParticipantFocusable(closure_0, closure_1, closure_2, closure_3, closure_5, closure_2, closure_4);
+    }
+  }
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = arg2;
+  cResult[4] = P;
+  tmp9 = P;
+}) : ((arg0, arg1, arg2) => {
+  let closure_0;
+  let closure_1;
+  _require = arg0;
+  dependencyMap = arg1;
+  let closure_2 = arg2;
   const items = [ChannelRTCStore, MediaEngineStore, closure_2, ApplicationStreamingStore];
-  return require("initialize").useStateFromStores(items, () => isVoicePanelParticipantFocusable(closure_0, closure_1, closure_2, ChannelRTCStore, MediaEngineStore, EmbeddedActivitiesStore, ApplicationStreamingStore));
-};
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => isVoicePanelParticipantFocusable(closure_0, closure_1, closure_2, ChannelRTCStore, MediaEngineStore, EmbeddedActivitiesStore, ApplicationStreamingStore));
+});
+let result = size.fileFinishedImporting("modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx");
+
+export default tmp3;
 export { isVoicePanelParticipantFocusable };

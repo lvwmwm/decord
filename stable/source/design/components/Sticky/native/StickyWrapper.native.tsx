@@ -1,42 +1,110 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 9554
+// Function ID: 9555
 // Name: StickyWrapper
-// Dependencies: [19, 17, 21, 1365, 2]
-// Exports: StickyWrapper
+// Dependencies: [19, 17, 21, 558, 576, 1371, 2]
 
-// Module 11652 (StickyWrapper)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import noop from "module_19" /* 19 */;
+// Module 9554 (StickyWrapper)
+import react2 from "react" /* 576 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet, View: c2 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const wrapper = StyleSheet.create({ wrapper: { height: "100%", width: "100%" }, header: { zIndex: 1 }, androidHeader: { position: "absolute", top: 0, left: 0, right: 0 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/Sticky/native/StickyWrapper.native.tsx");
-
-export const StickyWrapper = function StickyWrapper(header) {
+let StyleSheet;
+let c2;
+let c3;
+let closure_4;
+let tmp;
+const utils_PlatformUtils = tmp(1371);
+({ StyleSheet, View: c2 } = react_native);
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+const styles = StyleSheet.create({ wrapper: { height: "100%", width: "100%" }, header: { zIndex: 1 }, androidHeader: { position: "absolute", top: 0, left: 0, right: 0 } });
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let header;
+  let items2;
+  let pointerEvents;
+  let style;
+  let tmp4;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(9);
+  ({ header, children, pointerEvents, style } = arg0);
+  if (cResult[0] !== style) {
+    const items = [style, closure_5.wrapper];
+    cResult[0] = style;
+    cResult[1] = items;
+    tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] !== header) {
+    let tmp8Result = null;
+    if (null != header) {
+      const items1 = [closure_5.header, ];
+      let androidHeader;
+      const tmp10 = closure_5;
+      const tmp8 = _false;
+      const tmp9 = React2;
+      const tmpResult = utils_PlatformUtils;
+      if (tmpResult.isAndroid()) {
+        androidHeader = tmp10.androidHeader;
+      }
+      const obj2 = { style: items1, children: header };
+      items1[1] = androidHeader;
+      tmp8Result = tmp8(tmp9, obj2);
+    }
+    cResult[2] = header;
+    cResult[3] = tmp8Result;
+    tmp6 = tmp8Result;
+  } else {
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] === children) {
+    if (cResult[5] === pointerEvents) {
+      if (cResult[6] === tmp4) {
+        let tmp12;
+        if (cResult[7] === tmp6) {
+          tmp12 = cResult[8];
+        }
+        return tmp12;
+      }
+    }
+  }
+  const obj3 = { style: tmp4, pointerEvents, children: items2 };
+  items2 = [tmp6, children];
+  const tmp13 = React3(React2, obj3);
+  cResult[4] = children;
+  cResult[5] = pointerEvents;
+  cResult[6] = tmp4;
+  cResult[7] = tmp6;
+  cResult[8] = tmp13;
+  tmp12 = tmp13;
+}) : ((header) => {
+  let items;
+  let items2;
   header = header.header;
-  const obj = { style: null, pointerEvents: header.pointerEvents, children: null };
-  const items = [header.style, wrapper.wrapper];
-  obj.style = items;
+  const obj = { style: items, pointerEvents: header.pointerEvents, children: items2 };
+  items = [header.style, closure_5.wrapper];
   let tmp5Result = null;
+  const children = header.children;
+  const tmp = React3;
   if (null != header) {
-    const items1 = [tmp3.header, ];
+    const items1 = [closure_5.header, ];
     let androidHeader;
+    const obj2 = utils_PlatformUtils;
+    const tmp5 = _false;
     if (obj2.isAndroid()) {
       androidHeader = tmp3.androidHeader;
     }
-    const obj3 = { style: null, children: null };
+    const obj3 = { style: items1, children: header };
     items1[1] = androidHeader;
-    obj3.style = items1;
-    obj3.children = header;
-    tmp5Result = React3(tmp2, obj3);
-    obj2 = utils_PlatformUtils;
+    tmp5Result = tmp5(tmp2, obj3);
   }
-  const items2 = [tmp5Result, header.children];
-  obj.children = items2;
-  return React4(React2, obj);
-};
+  items2 = [tmp5Result, children];
+  return tmp(React2, obj);
+});
+const result = size.fileFinishedImporting("design/components/Sticky/native/StickyWrapper.native.tsx");
+
+export const StickyWrapper = tmp5;

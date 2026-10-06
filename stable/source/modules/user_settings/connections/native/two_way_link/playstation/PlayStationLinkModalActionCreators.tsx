@@ -1,21 +1,25 @@
-// Module ID: 9405
-// Function ID: 9406
+// Module ID: 8557
+// Function ID: 8558
 // Name: PlayStationLinkModalActionCreators
-// Dependencies: [4991, 9406, 1980, 2]
+// Dependencies: [5040, 8558, 1987, 2]
 
-// Module 9405 (PlayStationLinkModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+// Module 8557 (PlayStationLinkModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
 import size from "module_2" /* 2 */;
 
-let c3 = "USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY";
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkModalActionCreators.tsx");
-
-export default {
+const USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY = "USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY";
+let obj = {
   showModal(locationStack, platformType) {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(9406, dependencyMap.paths), { locationStack, platformType }, c3);
+    const obj = ModalActionCreatorsDefault;
+    const obj2 = { locationStack, platformType };
+    obj.pushLazy(asyncRequire(8558, dependencyMap.paths), obj2, USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY);
   },
   hideModal() {
-    ModalActionCreatorsDefault.popWithKey(c3);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY);
   }
 };
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkModalActionCreators.tsx");
+
+export default obj;

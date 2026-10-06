@@ -1,39 +1,43 @@
-// Module ID: 9660
-// Function ID: 9661
+// Module ID: 8812
+// Function ID: 8813
 // Name: StageChannelRichPresenceUtils
-// Dependencies: [32, 502, 2041, 2063, 5670, 5663, 1074, 2]
+// Dependencies: [32, 502, 2051, 2073, 5734, 5727, 1086, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 9660 (StageChannelRichPresenceUtils)
-import _slicedToArray from "module_32" /* 32 */;
+// Module 8812 (StageChannelRichPresenceUtils)
+import Constants from "Constants" /* 1086 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5727 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5670 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5734 */;
+import size from "module_2" /* 2 */;
 
-function unpackStageChannelParty(party) {
-  if (null != party) {
-    if (null != party.party) {
+function unpackStageChannelParty(activity) {
+  if (null != activity) {
+    if (null != activity.party) {
       try {
-        if (null != str) {
-          if (str.startsWith(c7)) {
-            const tmp4 = _slicedToArray(str.split(":"), 5);
+        if (null != activity.party.id) {
+          if (activity.party.id.startsWith(c7)) {
+            const tmp3 = _slicedToArray(activity.party.id.split(":"), 5);
             const _parseInt = parseInt;
-            const parsed = parseInt(tmp4[3], 16);
-            const obj = { guildId: tmp4[1], channelId: tmp4[2], size: tmp2, userIsSpeaker: 1 & parsed, guildIsPartnered: 2 & parsed, guildIsVerified: 4 & parsed, stageInstanceId: tmp4[4] };
-            return obj;
+            const tmp4 = tmp3[1];
+            const tmp5 = tmp3[2];
+            const tmp6 = tmp3[4];
+            const parsed = parseInt(tmp3[3], 16);
+            return { guildId: tmp4, channelId: tmp5, size: tmp, userIsSpeaker: 1 & parsed, guildIsPartnered: 2 & parsed, guildIsVerified: 4 & parsed, stageInstanceId: tmp6 };
           }
         }
       } catch (err) {
-        return tmp;
+        return null;
       }
     }
   }
 }
-const STAGE_APPLICATION_ID = fn(5663).STAGE_APPLICATION_ID;
-const GuildFeatures = fn(1074).GuildFeatures;
+const STAGE_APPLICATION_ID = StageChannelsConstants.STAGE_APPLICATION_ID;
+const GuildFeatures = Constants.GuildFeatures;
 let c7 = "stage:";
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
 
 export const packStageChannelPartyId = function packStageChannelPartyId(channel, stageInstanceByChannel) {
@@ -46,6 +50,7 @@ export const packStageChannelPartyId = function packStageChannelPartyId(channel,
   if (null != guild) {
     const features = guild.features;
     let tmp3 = num;
+    const tmp2 = GuildFeatures;
     if (features.has(GuildFeatures.PARTNERED)) {
       tmp3 = num | 2;
     }
@@ -55,20 +60,19 @@ export const packStageChannelPartyId = function packStageChannelPartyId(channel,
       tmp4 = tmp3 | 4;
     }
     str = tmp4;
-    tmp2 = GuildFeatures;
   }
   return "" + c7 + channel.guild_id + ":" + channel.id + ":" + str.toString(16) + ":" + stageInstanceByChannel.id;
 };
 export { unpackStageChannelParty };
-export const isStageActivity = function isStageActivity(application_id) {
-  application_id = undefined;
-  if (application_id != null) {
-    application_id = application_id.application_id;
+export const isStageActivity = function isStageActivity(activity) {
+  let application_id;
+  if (activity != null) {
+    application_id = activity.application_id;
   }
   return application_id === STAGE_APPLICATION_ID;
 };
-export const shouldShowActivity = function shouldShowActivity(party) {
-  const tmp = unpackStageChannelParty(party);
+export const shouldShowActivity = function shouldShowActivity(activity) {
+  const tmp = unpackStageChannelParty(activity);
   if (null == tmp) {
     return false;
   } else {

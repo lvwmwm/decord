@@ -1,57 +1,59 @@
-// Module ID: 9452
-// Function ID: 9453
+// Module ID: 8604
+// Function ID: 8605
 // Name: ThreadAutoArchive
-// Dependencies: [1114, 1091, 1115, 595, 4380, 2]
+// Dependencies: [1126, 1103, 1127, 607, 4424, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 9452 (ThreadAutoArchive)
-import memoizeDefault from "memoize" /* 595 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import ThreadConstants from "ThreadConstants" /* 1114 */;
-import util from "util" /* 1115 */;
-import _modDef4380 from "module_4380" /* 4380 */;
+// Module 8604 (ThreadAutoArchive)
+import memoizeDefault from "memoize" /* 607 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import ThreadConstants from "ThreadConstants" /* 1126 */;
+import intl5 from "intl" /* 1127 */;
+import _modDef4424 from "module_4424" /* 4424 */;
 import size from "module_2" /* 2 */;
 
 function getAutoArchiveOptions() {
-  const obj = { id: "1hour", label: null, value: null };
-  const intl = util.intl;
-  obj.label = intl.string(util.t.cs8A1c);
-  obj.value = DurationsDefault.Minutes.HOUR;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  const obj = { id: "1hour", label: intl.string(intl5.t.cs8A1c), value: DurationsDefault.Minutes.HOUR };
+  intl = intl5.intl;
   const items = [obj, , , ];
-  const obj2 = { id: "24hours", label: null, value: null };
-  const intl2 = util.intl;
-  obj2.label = intl2.string(util.t.zFKbrF);
-  obj2.value = DurationsDefault.Minutes.DAY;
+  const obj2 = { id: "24hours", label: intl2.string(intl5.t.zFKbrF), value: DurationsDefault.Minutes.DAY };
+  intl2 = intl5.intl;
   items[1] = obj2;
-  const obj3 = { id: "3days", label: null, value: null };
-  const intl3 = util.intl;
-  obj3.label = intl3.string(util.t.TmPIZX);
-  obj3.value = 3 * DurationsDefault.Minutes.DAY;
+  const obj3 = { id: "3days", label: intl3.string(intl5.t.TmPIZX), value: 3 * DurationsDefault.Minutes.DAY };
+  intl3 = intl5.intl;
   items[2] = obj3;
-  const obj4 = { id: "1week", label: null, value: null };
-  const intl4 = util.intl;
-  obj4.label = intl4.string(util.t["/7i2el"]);
-  obj4.value = DurationsDefault.Minutes.WEEK;
+  const obj4 = { id: "1week", label: intl4.string(intl5.t["/7i2el"]), value: DurationsDefault.Minutes.WEEK };
+  intl4 = intl5.intl;
   items[3] = obj4;
   return items;
 }
 let closure_3 = ThreadConstants.DEFAULT_AUTO_ARCHIVE_DURATION;
 let items = [DurationsDefault.Minutes.HOUR, DurationsDefault.Minutes.DAY, 3 * DurationsDefault.Minutes.DAY, DurationsDefault.Minutes.WEEK];
+const tmp2 = memoizeDefault(() => {
+  const arr = getAutoArchiveOptions();
+  return arr.map((value) => value.value);
+});
 const result = size.fileFinishedImporting("modules/threads/ThreadAutoArchive.tsx");
 
 export const AUTO_ARCHIVE_OPTION_VALUES = items;
 export { getAutoArchiveOptions };
-export const getAutoArchiveDurations = memoizeDefault(() => getAutoArchiveOptions().map((value) => value.value));
+export const getAutoArchiveDurations = tmp2;
 export const getAutoArchiveDurationText = function getAutoArchiveDurationText(arg0) {
-  closure_0 = arg0;
-  const found = getAutoArchiveOptions().find((value) => value.value === closure_0);
+  let closure_0 = arg0;
+  const arr = getAutoArchiveOptions();
+  const found = arr.find((value) => value.value === closure_0);
   let label;
   if (found != null) {
     label = found.label;
   }
   if (label == null) {
-    label = _modDef4380.duration(arg0, "minutes").humanize();
-    const durationResult = _modDef4380.duration(arg0, "minutes");
+    const obj = _modDef4424;
+    const durationResult = obj.duration(arg0, "minutes");
+    label = durationResult.humanize();
   }
   return label;
 };

@@ -1,23 +1,56 @@
-// Module ID: 15994
-// Function ID: 15995
+// Module ID: 15264
+// Function ID: 15265
 // Name: CheckpointHeaderButton
-// Dependencies: [17, 5013, 21, 4788, 576, 2]
-// Exports: default
+// Dependencies: [17, 5062, 21, 4837, 558, 576, 588, 2]
 
-// Module 15994 (CheckpointHeaderButton)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 5013 */;
-import createStyles from "createStyles" /* 4788 */;
+// Module 15264 (CheckpointHeaderButton)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import CheckpointConstants from "CheckpointConstants" /* 5062 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const Pressable = _mod17.Pressable;
-const jsx = jsxProd.jsx;
-let closure_4 = createStyles.createStyles({ button: { width: 32, height: 32, alignItems: "center", justifyContent: "center", borderWidth: 1, borderColor: CheckpointConstants.CHECKPOINT_PRIMARY } });
+const Pressable = react_native.Pressable;
+const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
+const jsx = Fragment.jsx;
+let obj = { button: { width: 32, height: 32, alignItems: "center", justifyContent: "center", borderWidth: 1, borderColor: CHECKPOINT_PRIMARY } };
+let closure_5 = createStyles.createStyles(obj);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let children;
+  let onPress;
+  const obj = react;
+  const cResult = obj.c(5);
+  ({ accessibilityLabel, children, onPress } = arg0);
+  const tmp3 = closure_5();
+  if (cResult[0] === accessibilityLabel) {
+    if (cResult[1] === children) {
+      if (cResult[2] === onPress) {
+        let tmp4;
+        if (cResult[3] === tmp3.button) {
+          tmp4 = cResult[4];
+        }
+        return tmp4;
+      }
+    }
+  }
+  const tmp5 = <Pressable style={tmp3.button} hitSlop={nativeDefault.space.PX_8} onPress={onPress} accessibilityRole="button" accessibilityLabel={accessibilityLabel}>{children}</Pressable>;
+  cResult[0] = accessibilityLabel;
+  cResult[1] = children;
+  cResult[2] = onPress;
+  cResult[3] = tmp3.button;
+  cResult[4] = tmp5;
+  tmp4 = tmp5;
+}) : ((arg0) => {
+  let accessibilityLabel;
+  let children;
+  let onPress;
+  ({ accessibilityLabel, children, onPress } = arg0);
+  return <Pressable style={closure_5().button} hitSlop={nativeDefault.space.PX_8} onPress={onPress} accessibilityRole="button" accessibilityLabel={accessibilityLabel}>{children}</Pressable>;
+});
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointHeaderButton.tsx");
 
-export default function CheckpointHeaderButton(arg0) {
-  ({ accessibilityLabel, children, onPress } = arg0);
-  return <Pressable style={closure_4().button} hitSlop={nativeDefault.space.PX_8} onPress={onPress} accessibilityRole="button" accessibilityLabel={accessibilityLabel}>{children}</Pressable>;
-};
+export default tmp2;

@@ -1,57 +1,65 @@
-// Module ID: 13248
-// Function ID: 13249
+// Module ID: 12484
+// Function ID: 12485
 // Name: StageLurkingManager
-// Dependencies: [2041, 4609, 1982, 573, 7595, 1370, 2]
+// Dependencies: [2051, 4657, 1989, 585, 6741, 1376, 2]
 
-// Module 13248 (StageLurkingManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+// Module 12484 (StageLurkingManager)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 6741 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import LifecycleManager from "LifecycleManager" /* 1989 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-class StageLurkingManager extends tmp2 {
+class StageLurkingManager extends LifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     applyArgumentsResult.handleVoiceChannelSelect = function handleVoiceChannelSelect(arg0) {
+      let channelId;
       ({ channelId, guildId } = arg0);
       if (null != channelId) {
         const channel = ChannelStore.getChannel(channelId);
       }
-      applyArgumentsResult.terminate();
+      require.terminate();
       let tmp3 = null;
+      const obj2 = require;
       if (null != channelId) {
         if (guildId == null) {
           guildId = null;
         }
         tmp3 = guildId;
       }
-      const result = applyArgumentsResult.handleDisconnectFromStageChannel(tmp3);
+      const result = obj2.handleDisconnectFromStageChannel(tmp3);
     };
     applyArgumentsResult.handleDisconnectFromStageChannel = function handleDisconnectFromStageChannel(guildId) {
       guildId = guildId.getGuildId();
       const items = [guildId, guildId];
-      applyArgumentsResult(7595).stopLurkingAll(items.filter(applyArgumentsResult(1370).isNotNullish));
+      const obj = LurkerActionCreators;
+      obj.stopLurkingAll(items.filter(GlobalUtils.isNotNullish));
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
-      applyArgumentsResult.terminate();
-      const result = applyArgumentsResult.handleDisconnectFromStageChannel(null);
+      require.terminate();
+      const result = require.handleDisconnectFromStageChannel(null);
     };
     return applyArgumentsResult;
   }
+  _initialize() {
+    const obj = DispatcherDefault;
+    const subscription = obj.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
+    const obj2 = DispatcherDefault;
+    const subscription1 = obj2.subscribe("LOGOUT", this.handleLogout);
+  }
+  _terminate() {
+    const obj = DispatcherDefault;
+    obj.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
+    const obj2 = DispatcherDefault;
+    obj2.unsubscribe("LOGOUT", this.handleLogout);
+  }
 }
 const prototype = StageLurkingManager.prototype;
-prototype["_initialize"] = function _initialize() {
-  const subscription = DispatcherDefault.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
-  const subscription1 = DispatcherDefault.subscribe("LOGOUT", this.handleLogout);
-};
-prototype["_terminate"] = function _terminate() {
-  DispatcherDefault.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
-  DispatcherDefault.unsubscribe("LOGOUT", this.handleLogout);
-};
 const stageLurkingManager = new StageLurkingManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/StageLurkingManager.tsx");
 
 export default stageLurkingManager;

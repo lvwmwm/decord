@@ -1,12 +1,13 @@
-// Module ID: 10084
-// Function ID: 10085
+// Module ID: 9222
+// Function ID: 9223
 // Name: ConsoleHandoffType
 // Dependencies: [2]
 
-// Module 10084 (ConsoleHandoffType)
+// Module 9222 (ConsoleHandoffType)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set(["CREATE_NEW_CALL", "TRANSFER_EXISTING_CALL"]) };
+new Set(["CREATE_NEW_CALL", "TRANSFER_EXISTING_CALL"]);
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ConsoleHandoffType.tsx");
 
 export const ConsoleHandoffType = { TRANSFER_EXISTING_CALL: "TRANSFER_EXISTING_CALL", CREATE_NEW_CALL: "CREATE_NEW_CALL" };

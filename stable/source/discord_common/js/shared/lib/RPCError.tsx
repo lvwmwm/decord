@@ -1,24 +1,24 @@
-// Module ID: 9614
-// Function ID: 9615
+// Module ID: 8766
+// Function ID: 8767
 // Name: shared/RPCError
 // Dependencies: [2]
 
-// Module 9614 (shared/RPCError)
+// Module 8766 (shared/RPCError)
 import size from "module_2" /* 2 */;
 
-const prototype = function RPCError(arg0, message) {
-  const tmp = new prototype(message, new.target, new.target, arg0);
-  if ("closeCode" in arg0) {
-    ({ closeCode: tmp.code, closeCode: tmp.closeCode } = arg0);
-  } else {
-    ({ errorCode: tmp.code, errorCode: tmp.errorCode } = arg0);
+class RPCError extends Error {
+  constructor(message, message2) {
+    const tmp = new RPCError(message, new.target, this, message);
+    if ("closeCode" in message) {
+      ({ closeCode: tmp.code, closeCode: tmp.closeCode } = message);
+    } else {
+      ({ errorCode: tmp.code, errorCode: tmp.errorCode } = message);
+    }
+    tmp.message = message;
+    tmp.name = "RPCError";
+    return tmp;
   }
-  tmp.message = message;
-  tmp.name = "RPCError";
-  return tmp;
-}.prototype;
-class prototype extends Error {
 }
 const result = size.fileFinishedImporting("../discord_common/js/shared/lib/RPCError.tsx");
 
-export const RPCError = prototype;
+export { RPCError };

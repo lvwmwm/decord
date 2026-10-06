@@ -1,51 +1,56 @@
-// Module ID: 13264
-// Function ID: 13265
+// Module ID: 12500
+// Function ID: 12501
 // Name: CustomActivityLinkRecord
-// Dependencies: [13265, 8440, 13262, 2]
+// Dependencies: [12501, 7599, 12498, 2]
 
-// Module 13264 (CustomActivityLinkRecord)
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13265 */;
+// Module 12500 (CustomActivityLinkRecord)
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7599 */;
+import CustomActivityLinkUtils from "CustomActivityLinkUtils" /* 12498 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 12501 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/activities/records/CustomActivityLinkRecord.tsx");
 class CustomActivityLinkRecord {
-  constructor(arg0) {
-    obj = closure_0(closure_1[0]);
-    result = obj.decodeCustomActivityLink(global.link_id);
-    type = undefined;
+  constructor(link) {
+    const prototype = new.target.prototype;
+    const obj = utils_CustomActivityLinkUtils;
+    const result = obj.decodeCustomActivityLink(link.link_id);
+    let type;
     if (result != null) {
       type = result.type;
     }
     if (type == null) {
       type = null;
     }
-    obj1 = Object.create(new.target.prototype);
-    obj1.type = type;
-    ({ application_id: tmp3.applicationId, link_id: tmp3.linkId } = global);
-    asset_id = undefined;
-    if ("asset_id" in global) {
-      asset_id = global.asset_id;
+    const obj2 = Object.create(prototype);
+    obj2.type = type;
+    ({ application_id: tmp3.applicationId, link_id: tmp3.linkId } = link);
+    let asset_id;
+    if ("asset_id" in link) {
+      asset_id = link.asset_id;
     }
-    obj1.assetId = asset_id;
-    asset_path = undefined;
-    if ("asset_path" in global) {
-      asset_path = global.asset_path;
+    obj2.assetId = asset_id;
+    let asset_path;
+    if ("asset_path" in link) {
+      asset_path = link.asset_path;
     }
-    obj1.assetPath = asset_path;
-    ({ title: tmp3.title, description: tmp3.description, custom_id: tmp3.customId } = global);
-    return obj1;
+    obj2.assetPath = asset_path;
+    ({ title: tmp3.title, description: tmp3.description, custom_id: tmp3.customId } = link);
+    return obj2;
+  }
+  getAssetURL() {
+    let assetImage;
+    const self = this;
+    if (this.type === utils_CustomActivityLinkUtils.CustomLinkType.MANAGED) {
+      const tmpResult = ApplicationAssetUtils;
+      assetImage = tmpResult.getAssetImage(self.applicationId, self.assetId, 512);
+    } else if (self.type === utils_CustomActivityLinkUtils.CustomLinkType.QUICK) {
+      const tmpResult2 = CustomActivityLinkUtils;
+      assetImage = tmpResult2.getQuickLinkImage(self.assetPath);
+    }
+    return assetImage;
   }
 }
-CustomActivityLinkRecord.prototype["getAssetURL"] = function getAssetURL() {
-  const self = this;
-  if (this.type === utils_CustomActivityLinkUtils.CustomLinkType.MANAGED) {
-    let assetImage = tmp(8440).getAssetImage(self.applicationId, self.assetId, 512);
-    const tmpResult = tmp(8440);
-  } else if (self.type === tmp(13265).CustomLinkType.QUICK) {
-    assetImage = tmp(13262).getQuickLinkImage(self.assetPath);
-    const tmpResult2 = tmp(13262);
-  }
-  return assetImage;
-};
+let prototype = CustomActivityLinkRecord.prototype;
 
 export default CustomActivityLinkRecord;

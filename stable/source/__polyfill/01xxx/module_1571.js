@@ -1,170 +1,120 @@
 // Module ID: 1571
 // Function ID: 1572
-// Dependencies: [109, 19, 1514, 1489]
-// Exports: useNavigationCache
+// Dependencies: [19, 1521, 1525, 1572]
+// Exports: useOnAction
 
 // Module 1571
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import noop from "module_19" /* 19 */;
+import _mod1572 from "module_1572" /* 1572 */;
+import react from "react" /* 19 */;
 
-const require = arg1;
-let closure_2 = ["emit"];
+let set;
 
-export const useNavigationCache = function useNavigationCache(getState) {
-  getState = getState.getState;
-  const navigation = getState.navigation;
-  const setOptions = getState.setOptions;
-  const router = getState.router;
-  const emitter = getState.emitter;
-  const stackRef = emitter.useContext(getState(navigation[2]).NavigationBuilderContext).stackRef;
-  let items = [navigation, router.actionCreators];
-  const base = emitter.useMemo(() => {
-    const tmp = router(dispatch, setOptions);
-    closure_0 = tmp;
-    const merged = Object.assign(router.actionCreators);
-    const merged1 = Object.assign(getState(navigation[3]).CommonActions);
-    dispatch = function dispatch() {
-      const error = new Error("Actions cannot be dispatched from a placeholder screen.");
-      throw error;
-    };
-    const keys = Object.keys({});
-    const reduced = keys.reduce((acc, item) => {
-      acc[item] = dispatch;
-      return acc;
-    }, {});
-    const obj2 = {};
-    const merged2 = Object.assign(tmp);
-    const merged3 = Object.assign(reduced);
-    obj2.addListener = function addListener() {
-      return () => {
 
-      };
-    };
-    obj2.removeListener = function removeListener() {
-
-    };
-    obj2.dispatch = dispatch;
-    obj2.getParent = function getParent(arg0) {
-      if (undefined !== arg0) {
-        if (arg0 === closure_0.getId()) {
-          let parent = base;
-        }
-        return parent;
-      }
-      parent = closure_0.getParent(arg0);
-    };
-    obj2.setOptions = function setOptions() {
-      const error = new Error("Options cannot be set from a placeholder screen.");
-      throw error;
-    };
-    obj2.isFocused = function isFocused() {
+export const useOnAction = function useOnAction(router) {
+  router = router.router;
+  const getState = router.getState;
+  const setState = router.setState;
+  const key = router.key;
+  const actionListeners = router.actionListeners;
+  const beforeRemoveListeners = router.beforeRemoveListeners;
+  const routerConfigOptions = router.routerConfigOptions;
+  const emitter = router.emitter;
+  const context = setState.useContext(router(getState[1]).NavigationBuilderContext);
+  const onAction = context.onAction;
+  const onRouteFocus = context.onRouteFocus;
+  const addListener = context.addListener;
+  const onDispatchAction = context.onDispatchAction;
+  const flushUpdates = context.flushUpdates;
+  const context1 = setState.useContext(router(getState[2]).DeprecatedNavigationInChildContext);
+  const ref = setState.useRef(routerConfigOptions);
+  const insertionEffect = setState.useInsertionEffect(() => {
+    ref.current = routerConfigOptions;
+  });
+  const items = [actionListeners, beforeRemoveListeners, emitter, flushUpdates, getState, context1, key, onAction, onDispatchAction, onRouteFocus, router, setState];
+  const callback = setState.useCallback(function(target) {
+    set = arg1;
+    if (arg1 === undefined) {
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set();
+    }
+    flushUpdates();
+    const tmp4 = getState();
+    const tmp3 = getState;
+    if (set.has(tmp4.key)) {
       return false;
-    };
-    return obj2;
-  }, items);
-  const items1 = [base, getState, navigation, setOptions, emitter];
-  emitter.useMemo(() => ({ current: {} }), items1);
-  const routes = getState.state.routes;
-  const navigations = routes.reduce((acc, key) => {
-    if (ref.current[key.key]) {
-      acc[key.key] = tmp;
     } else {
-      function dispatch(arg0) {
-
-      }
-      function withStack(fn) {
-        fn();
-      }
-      let obj = {};
-      let merged = Object.assign(withStack.actionCreators);
-      let merged1 = Object.assign(getState(navigation[3]).CommonActions);
-      const _Object = Object;
-      const keys = Object.keys(obj);
-      const reduced = keys.reduce((acc, item) => {
-        closure_0 = item;
-        acc[item] = () => {
-          const args = [...arguments];
-          withStack(() => {
-            const items = [...closure_0];
-            const applyResult = obj[args].apply(items);
-            if (typeof dispatch === "function") {
-              let applyResultResult = applyResult;
-              if (typeof applyResult === "function") {
-                applyResultResult = applyResult(args());
-              }
-              if (null != applyResultResult) {
-                obj = { source: closure_1.key };
-                const merged = Object.assign(applyResultResult);
-                closure_1_1.dispatch(obj);
-              }
+      set.add(tmp4.key);
+      if (typeof target.target !== "string") {
+        const stateForAction = router.getStateForAction(tmp4, target, ref.current);
+        let tmp10 = stateForAction;
+        const tmp7 = ref;
+        if (null === stateForAction) {
+          tmp10 = stateForAction;
+          if (target.target === tmp4.key) {
+            tmp10 = tmp4;
+          }
+        }
+        let rehydratedState = tmp10;
+        const tmp11 = null !== tmp10 && false !== tmp10.stale;
+        if (tmp11) {
+          rehydratedState = obj2.getRehydratedState(tmp10, tmp7.current);
+        }
+        if (null !== rehydratedState) {
+          if (tmp4 !== rehydratedState) {
+            const obj3 = _mod1572;
+            if (obj3.shouldPreventRemove(emitter, beforeRemoveListeners, tmp4.routes, rehydratedState.routes, target)) {
+              onDispatchAction(target, true);
+              return true;
+            } else if (tmp3() !== tmp4) {
+              const _Set2 = Set;
+              const self3 = this;
+              const self4 = this;
+              const set1 = new Set();
+              return callback(target, set1);
             } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-        };
-        return acc;
-      }, {});
-      const obj2 = {};
-      let merged2 = Object.assign(base);
-      const merged3 = Object.assign(reduced);
-      const merged4 = Object.assign(obj.create(key.key));
-      obj2.dispatch = function dispatch(arg0) {
-        closure_0 = arg0;
-        withStack(() => {
-          if (typeof dispatch === "function") {
-            let tmpResult = tmp;
-            if (typeof tmp === "function") {
-              tmpResult = tmp(closure_0());
-            }
-            if (null != tmpResult) {
-              obj = { source: key.key };
-              const merged = Object.assign(tmpResult);
-              key.dispatch(obj);
+              onDispatchAction(target, false);
+              setState(rehydratedState);
             }
           } else {
-            throw new TypeError("Trying to call a non-function");
+            onDispatchAction(target, true);
           }
-        });
-      };
-      obj2.getParent = function getParent(arg0) {
-        if (undefined !== arg0) {
-          if (arg0 === base.getId()) {
-            let parent = acc[key.key];
+          if (undefined !== onRouteFocus) {
+            const result = obj2.shouldActionChangeFocus(target) && undefined !== key;
+            if (result) {
+              tmp30(key);
+            }
           }
-          return parent;
+          return true;
         }
-        parent = base.getParent(arg0);
-      };
-      obj2.setOptions = function setOptions(arg0) {
-        closure_0 = arg0;
-        dispatch((arg0) => {
-          obj = {};
-          const merged = Object.assign(arg0);
-          const merged1 = Object.assign(arg0[closure_1.key]);
-          const merged2 = Object.assign(closure_0);
-          obj[closure_1.key] = {};
-          return obj;
-        });
-      };
-      obj2.isFocused = function isFocused() {
-        const state = base.getState();
-        let tmp2 = state.routes[state.index].key === key.key;
-        if (tmp2) {
-          let isFocusedResult = !navigation;
-          if (navigation) {
-            isFocusedResult = obj.isFocused();
-          }
-          tmp2 = isFocusedResult;
-          obj = navigation;
+      }
+      if (undefined !== onAction) {
+        if (onAction(target, set)) {
+          return true;
         }
-        return tmp2;
-      };
-      acc[key.key] = obj2;
+      }
+      if (typeof target.target !== "string") {
+        return false;
+      }
+      let diff = actionListeners.length - 1;
+      if (0 <= diff) {
+        while (!actionListeners[diff](target, set)) {
+          diff = diff - 1;
+        }
+        return true;
+      }
     }
-    return acc;
-  }, {});
-  const insertionEffect = emitter.useInsertionEffect(() => {
-    closure_6.current = navigations;
-  });
-  return { base, navigations };
+  }, items);
+  const obj = router(getState[3]);
+  const onPreventRemove = obj.useOnPreventRemove({ getState, emitter, beforeRemoveListeners });
+  const items1 = [addListener, callback];
+  const effect = setState.useEffect(() => {
+    let tmpResult;
+    if (addListener != null) {
+      tmpResult = tmp("action", callback);
+    }
+    return tmpResult;
+  }, items1);
+  return callback;
 };

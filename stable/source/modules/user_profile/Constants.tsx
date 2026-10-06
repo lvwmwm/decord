@@ -1,12 +1,12 @@
-// Module ID: 8484
-// Function ID: 8485
+// Module ID: 7632
+// Function ID: 7633
 // Name: Constants
-// Dependencies: [1074, 8485, 2]
+// Dependencies: [1086, 7633, 2]
 // Exports: getBadgeAssetFromCDN, getBadgeName
 
-// Module 8484 (Constants)
-import Constants from "Constants" /* 1074 */;
-import BadgeId from "BadgeId" /* 8485 */;
+// Module 7632 (Constants)
+import Constants from "Constants" /* 1086 */;
+import BadgeId from "BadgeId" /* 7633 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
@@ -14,9 +14,10 @@ const result = size.fileFinishedImporting("modules/user_profile/Constants.tsx");
 
 export const USER_PROFILE_TOOLTIP_DELAY = 300;
 export const getBadgeName = function getBadgeName(GIFTING) {
+  let formatted;
   const str = BadgeId.BadgeId[GIFTING];
   if (null != str) {
-    let formatted = str.toLowerCase();
+    formatted = str.toLowerCase();
   } else {
     const _String = String;
     formatted = String(GIFTING);
@@ -37,9 +38,10 @@ export const ClipsGalleryClipSources = { PICKER: "PICKER", SUGGESTED: "SUGGESTED
 export const TrackUserProfileWishlistActions = { WISHLIST_ITEM_CLICKED: "WISHLIST_ITEM_CLICKED", WISHLIST_TOGGLE_PRIVATE: "WISHLIST_TOGGLE_PRIVATE", WISHLIST_TOGGLE_PUBLIC: "WISHLIST_TOGGLE_PUBLIC", PRESS_WISHLIST_BREADCRUMB_CARD: "PRESS_WISHLIST_BREADCRUMB_CARD", PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD: "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD", VIEW_WISHLIST: "VIEW_WISHLIST", PRESS_EDIT_WISHLIST: "PRESS_EDIT_WISHLIST", PRESS_ADD_WISHLIST_ITEM: "PRESS_ADD_WISHLIST_ITEM" };
 export const TrackUserProfileUi = { USER_PROFILE: "USER_PROFILE", PROFILE_FRAME: "PROFILE_FRAME" };
 export const getBadgeAssetFromCDN = function getBadgeAssetFromCDN(icon) {
+  let combined;
   if (null != CDN_HOST) {
     const _HermesInternal2 = HermesInternal;
-    let combined = "https://" + CDN_HOST + "/badge-icons/" + icon + ".png";
+    combined = "https://" + CDN_HOST + "/badge-icons/" + icon + ".png";
   } else {
     const _location = location;
     const _HermesInternal = HermesInternal;

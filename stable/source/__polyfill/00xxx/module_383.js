@@ -4,6 +4,7 @@
 
 // Module 383
 import _modDef366 from "module_366" /* 366 */;
+import _modDef367 from "module_367" /* 367 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -11,19 +12,14 @@ import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
-const AnimatedTransform = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -32,24 +28,23 @@ function _isNativeReflectConstruct() {
   }
 }
 class AnimatedTransform {
-  constructor(arg0, arg1, arg2) {
-    self = this;
-    tmp = c2(this, AnimatedTransform);
-    items = [];
-    items[0] = importDefault;
-    tmp2 = closure_4;
-    obj = closure_4(AnimatedTransform);
-    tmp3 = closure_3;
-    if (metroRequire()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
+  constructor(_nodes, _transforms, arg2) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AnimatedTransform);
+    const items = [arg2];
+    const obj = _getPrototypeOf(AnimatedTransform);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
     } else {
       constructResult = obj.apply(self, items);
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result._nodes = global;
-    tmp3Result._transforms = arg1;
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result._nodes = _nodes;
+    tmp3Result._transforms = _transforms;
     return tmp3Result;
   }
 }
@@ -57,13 +52,15 @@ _inherits(AnimatedTransform, _modDef366);
 const entry = {
   key: "__makeNative",
   value: function __makeNative(arg0) {
+    let num;
     const self = this;
     const _nodes = this._nodes;
+    const length = _nodes.length;
     for (let num = 0; num < length; num = num + 1) {
       let obj = _nodes[num];
       let __makeNativeResult = obj.__makeNative(arg0);
     }
-    let fn = hasOwnProperty(_getPrototypeOf(AnimatedTransform.prototype), "__makeNative", self);
+    let fn = _get(_getPrototypeOf(AnimatedTransform.prototype), "__makeNative", self);
     if (typeof fn === "function") {
       fn = (items) => fn.apply(self, items);
     }
@@ -77,20 +74,20 @@ let items = [
     key: "__getValue",
     value: function __getValue() {
       const _transforms = this._transforms;
-      const f109878 = (__getValue) => __getValue.__getValue();
+      const f132334 = (__getValue) => __getValue.__getValue();
       return _transforms.map((item) => {
         const obj = {};
-        for (const key10006 in arg0) {
-          let arr = arg0[key10006];
-          if (arr instanceof AnimatedTransform(367)) {
-            obj[key10006] = f109881(arr);
+        for (const key10006 in item) {
+          let arr = item[key10006];
+          if (arr instanceof _modDef367) {
+            obj[key10006] = f132337(arr);
             continue;
           } else {
             let _Array = Array;
             if (Array.isArray(arr)) {
               obj[key10006] = arr.map((item) => {
                 let tmp = item;
-                if (item instanceof f109881(dependencyMap[6])) {
+                if (item instanceof f132337(dependencyMap[6])) {
                   tmp = closure_1_0(item);
                 }
                 return tmp;
@@ -99,11 +96,12 @@ let items = [
             } else {
               if (typeof arr === "object") {
                 let obj2 = {};
+                let tmp = arr;
                 for (const key10013 in arr) {
                   let tmp9 = arr[key10013];
                   let tmp3 = tmp9;
-                  if (tmp9 instanceof AnimatedTransform(367)) {
-                    tmp3 = f109881(tmp9);
+                  if (tmp9 instanceof _modDef367) {
+                    tmp3 = f132337(tmp9);
                   }
                   obj2[key10013] = tmp3;
                   continue;
@@ -127,24 +125,24 @@ let items = [
   {
     key: "__getValueWithStaticTransforms",
     value: function __getValueWithStaticTransforms(arr) {
-      let f109879 = [];
+      let closure_0 = [];
       const _transforms = this._transforms;
-      f109879 = (__getValue) => {
-        f109879.push(__getValue.__getValue());
+      const f132335 = (__getValue) => {
+        closure_0.push(__getValue.__getValue());
       };
       const mapped = _transforms.map((item) => {
         const obj = {};
-        for (const key10006 in arg0) {
-          let arr = arg0[key10006];
-          if (arr instanceof AnimatedTransform(367)) {
-            obj[key10006] = f109881(arr);
+        for (const key10006 in item) {
+          let arr = item[key10006];
+          if (arr instanceof _modDef367) {
+            obj[key10006] = f132337(arr);
             continue;
           } else {
             let _Array = Array;
             if (Array.isArray(arr)) {
               obj[key10006] = arr.map((item) => {
                 let tmp = item;
-                if (item instanceof f109881(dependencyMap[6])) {
+                if (item instanceof f132337(dependencyMap[6])) {
                   tmp = closure_1_0(item);
                 }
                 return tmp;
@@ -153,11 +151,12 @@ let items = [
             } else {
               if (typeof arr === "object") {
                 let obj2 = {};
+                let tmp = arr;
                 for (const key10013 in arr) {
                   let tmp9 = arr[key10013];
                   let tmp3 = tmp9;
-                  if (tmp9 instanceof AnimatedTransform(367)) {
-                    tmp3 = f109881(tmp9);
+                  if (tmp9 instanceof _modDef367) {
+                    tmp3 = f132337(tmp9);
                   }
                   obj2[key10013] = tmp3;
                   continue;
@@ -176,20 +175,20 @@ let items = [
         }
         return obj;
       });
-      closure_129_0 = () => f109879.shift();
+      const f132336 = () => f132336.shift();
       return arr.map((item) => {
         const obj = {};
-        for (const key10006 in arg0) {
-          let arr = arg0[key10006];
-          if (arr instanceof AnimatedTransform(367)) {
-            obj[key10006] = f109881(arr);
+        for (const key10006 in item) {
+          let arr = item[key10006];
+          if (arr instanceof _modDef367) {
+            obj[key10006] = f132337(arr);
             continue;
           } else {
             let _Array = Array;
             if (Array.isArray(arr)) {
               obj[key10006] = arr.map((item) => {
                 let tmp = item;
-                if (item instanceof f109881(dependencyMap[6])) {
+                if (item instanceof f132337(dependencyMap[6])) {
                   tmp = closure_1_0(item);
                 }
                 return tmp;
@@ -198,11 +197,12 @@ let items = [
             } else {
               if (typeof arr === "object") {
                 let obj2 = {};
+                let tmp = arr;
                 for (const key10013 in arr) {
                   let tmp9 = arr[key10013];
                   let tmp3 = tmp9;
-                  if (tmp9 instanceof AnimatedTransform(367)) {
-                    tmp3 = f109881(tmp9);
+                  if (tmp9 instanceof _modDef367) {
+                    tmp3 = f132337(tmp9);
                   }
                   obj2[key10013] = tmp3;
                   continue;
@@ -227,20 +227,20 @@ let items = [
     key: "__getAnimatedValue",
     value: function __getAnimatedValue() {
       const _transforms = this._transforms;
-      const f109881 = (__getAnimatedValue) => __getAnimatedValue.__getAnimatedValue();
+      const f132337 = (__getAnimatedValue) => __getAnimatedValue.__getAnimatedValue();
       return _transforms.map((item) => {
         const obj = {};
-        for (const key10006 in arg0) {
-          let arr = arg0[key10006];
-          if (arr instanceof AnimatedTransform(367)) {
-            obj[key10006] = f109881(arr);
+        for (const key10006 in item) {
+          let arr = item[key10006];
+          if (arr instanceof _modDef367) {
+            obj[key10006] = f132337(arr);
             continue;
           } else {
             let _Array = Array;
             if (Array.isArray(arr)) {
               obj[key10006] = arr.map((item) => {
                 let tmp = item;
-                if (item instanceof f109881(dependencyMap[6])) {
+                if (item instanceof f132337(dependencyMap[6])) {
                   tmp = closure_1_0(item);
                 }
                 return tmp;
@@ -249,11 +249,12 @@ let items = [
             } else {
               if (typeof arr === "object") {
                 let obj2 = {};
+                let tmp = arr;
                 for (const key10013 in arr) {
                   let tmp9 = arr[key10013];
                   let tmp3 = tmp9;
-                  if (tmp9 instanceof AnimatedTransform(367)) {
-                    tmp3 = f109881(tmp9);
+                  if (tmp9 instanceof _modDef367) {
+                    tmp3 = f132337(tmp9);
                   }
                   obj2[key10013] = tmp3;
                   continue;
@@ -277,13 +278,15 @@ let items = [
   {
     key: "__attach",
     value: function __attach() {
+      let num;
       const self = this;
       const _nodes = this._nodes;
+      const length = _nodes.length;
       for (let num = 0; num < length; num = num + 1) {
         let obj = _nodes[num];
         let __addChildResult = obj.__addChild(self);
       }
-      let fn = hasOwnProperty(_getPrototypeOf(AnimatedTransform.prototype), "__attach", self);
+      let fn = _get(_getPrototypeOf(AnimatedTransform.prototype), "__attach", self);
       if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
@@ -293,13 +296,15 @@ let items = [
   {
     key: "__detach",
     value: function __detach() {
+      let num;
       const self = this;
       const _nodes = this._nodes;
+      const length = _nodes.length;
       for (let num = 0; num < length; num = num + 1) {
         let obj = _nodes[num];
         let __removeChildResult = obj.__removeChild(self);
       }
-      let fn = hasOwnProperty(_getPrototypeOf(AnimatedTransform.prototype), "__detach", self);
+      let fn = _get(_getPrototypeOf(AnimatedTransform.prototype), "__detach", self);
       if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
@@ -309,75 +314,79 @@ let items = [
   {
     key: "__getNativeConfig",
     value: function __getNativeConfig() {
+      let num;
       const self = this;
       const items = [];
       const _transforms = this._transforms;
+      const length = _transforms.length;
       for (let num = 0; num < length; num = num + 1) {
         let tmp = _transforms[num];
         for (const key10012 in tmp) {
           let obj5 = tmp[key10012];
-          let tmp7 = AnimatedTransform;
+          let tmp7 = importDefault;
           let push = items.push;
-          if (obj5 instanceof AnimatedTransform(367)) {
+          if (obj5 instanceof _modDef367) {
             let obj2 = { type: "animated", property: key10012, nodeTag: obj5.__getNativeTag() };
             let arr = push(obj2);
             continue;
           } else {
-            let obj = { type: "static", property: key10012, value: null };
+            let obj = { type: "static", property: key10012, value: tmp7Result.transformDataType(obj5) };
             let tmp7Result = tmp7(357);
-            obj.value = tmp7Result.transformDataType(obj5);
             let arr2 = push(obj);
             continue;
           }
           continue;
         }
       }
-      return { type: "transform", transforms: items, debugID: self.__getDebugID() };
+      const obj3 = { type: "transform", transforms: items, debugID: self.__getDebugID() };
+      return obj3;
     }
   }
 ];
 const entry1 = {
   key: "from",
   value: function from(_transforms) {
-    let construct = globalThis;
+    let num;
     let items = _transforms;
     if (!Array.isArray(_transforms)) {
       items = [];
     }
     const items1 = [];
+    const length = items.length;
     for (let num = 0; num < length; num = num + 1) {
       let tmp = items[num];
       for (const key10017 in tmp) {
-        let tmp15 = tmp[key10017];
-        if (!(tmp15 instanceof AnimatedTransform(367))) {
+        let tmp16 = tmp[key10017];
+        if (!(tmp16 instanceof _modDef367)) {
           continue;
         } else {
-          let arr = items1.push(tmp15);
+          let arr = items1.push(tmp16);
           continue;
         }
         continue;
       }
     }
-    if (0 === items1.length) {
-      return null;
-    } else {
+    let tmp5 = null;
+    if (0 !== items1.length) {
+      let constructResult;
       const obj2 = Object.create(AnimatedTransform.prototype);
       _classCallCheck(obj2, AnimatedTransform);
       const items2 = [undefined];
-      let constructor = _getPrototypeOf;
       const obj = _getPrototypeOf(AnimatedTransform);
-      if (metroRequire()) {
-        const _Reflect = construct.Reflect;
-        construct = _Reflect.construct;
-        constructor = constructor(obj2).constructor;
-        let constructResult = construct(obj, items2, constructor);
+      const tmp10 = _getPrototypeOf;
+      const tmp11 = c3;
+      if (_isNativeReflectConstruct()) {
+        const _Reflect = Reflect;
+        constructResult = Reflect.construct(obj, items2, tmp10(obj2).constructor);
       } else {
         constructResult = obj.apply(obj2, items2);
       }
-      const tmp9Result = _possibleConstructorReturn(obj2, constructResult);
-      tmp9Result._nodes = items1;
-      tmp9Result._transforms = _transforms;
+      const tmp11Result = tmp11(obj2, constructResult);
+      tmp11Result._nodes = items1;
+      tmp11Result._transforms = _transforms;
+      tmp5 = tmp11Result;
     }
+    return tmp5;
   }
 };
 let items1 = [entry1];

@@ -1,24 +1,44 @@
-// Module ID: 4525
-// Function ID: 4526
+// Module ID: 4571
+// Function ID: 4572
 // Name: REAWorkaroundView
-// Dependencies: [19, 21, 1637, 4526, 2]
+// Dependencies: [19, 21, 1644, 4572, 558, 576, 2]
 
-// Module 4525 (REAWorkaroundView)
-import _mod19 from "module_19" /* 19 */;
-import jsxProd from "jsxProd" /* 21 */;
-import ReanimatedViewNativeComponentDefault from "ReanimatedViewNativeComponent" /* 4526 */;
-import cancelAnimation from "cancelAnimation" /* 1637 */;
+// Module 4571 (REAWorkaroundView)
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import ReanimatedViewNativeComponentDefault from "ReanimatedViewNativeComponent" /* 4572 */;
+import cancelAnimation from "module_1644" /* 1644 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+const forwardRef = react.forwardRef;
+const jsx = Fragment.jsx;
 const ReanimatedViewNativeComponent = cancelAnimation.createAnimatedComponent(ReanimatedViewNativeComponentDefault);
-const forwardRefResult = _mod19.forwardRef((entering, ref) => {
-  const obj = {};
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((entering, ref) => {
+  const obj = react2;
+  const cResult = obj.c(4);
+  if (cResult[0] === null != entering.entering) {
+    if (cResult[1] === entering) {
+      let tmp3;
+      if (cResult[2] === ref) {
+        tmp3 = cResult[3];
+      }
+      return tmp3;
+    }
+  }
   const merged = Object.assign(entering);
-  obj.hasEnteringAnimation = null != entering.entering;
-  obj.ref = ref;
-  return <ReanimatedViewNativeComponent />;
-});
+  const tmp5 = <ReanimatedViewNativeComponent hasEnteringAnimation={null != arg0.entering} ref={arg1} />;
+  cResult[0] = null != entering.entering;
+  cResult[1] = entering;
+  cResult[2] = ref;
+  cResult[3] = tmp5;
+  tmp3 = tmp5;
+}) : ((entering, ref) => {
+  const tmp = null != entering.entering;
+  const merged = Object.assign(entering);
+  return <ReanimatedViewNativeComponent hasEnteringAnimation={tmp} ref={arg1} />;
+}));
 forwardRefResult.displayName = "REAWorkaroundView";
 const result = size.fileFinishedImporting("modules/reanimated/native/REAWorkaroundView.tsx");
 

@@ -1,13 +1,13 @@
-// Module ID: 7429
-// Function ID: 7430
-// Name: ActionSheetContext
+// Module ID: 6574
+// Function ID: 6575
+// Name: react
 // Dependencies: [19, 2]
 
-// Module 7429 (ActionSheetContext)
-import noop from "module_19" /* 19 */;
+// Module 6574 (react)
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const context = noop.createContext(null);
-const size = fn(2);
+const context = react.createContext(null);
 const result = size.fileFinishedImporting("modules/action_sheet/native/ActionSheetContext.tsx");
 
 export default context;

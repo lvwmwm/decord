@@ -1,262 +1,473 @@
-// Module ID: 12694
-// Function ID: 12695
+// Module ID: 11798
+// Function ID: 11799
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 12692, 12693, 1074, 4997, 9592, 1241, 12695, 12701, 12702, 504, 2]
-// Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useCanSeePushNotificationNudge, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
+// Dependencies: [32, 5, 19, 17, 11796, 11797, 1086, 5046, 8744, 1253, 11799, 11805, 558, 576, 11806, 504, 2]
+// Exports: enableProvisionalPushNotification, requestPushNotificationPermission
 
-// Module 12694 (NotificationPermissionUtil)
-import initialize from "initialize" /* 504 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12695 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 12702 */;
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12692 */;
+// Module 11798 (NotificationPermissionUtil)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5046 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 11797 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 11806 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11796 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_11 = async function _requestPushNotificationPermission(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj4 = { value, done: true };
-      return obj4;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      if (0 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          closure_4 = tmp5;
-          closure_3 = tmp2;
-          closure_131_0 = action_type;
-          closure_131_1 = action_location;
-          closure_131_2 = dependencyMap;
-          closure_131_3 = undefined;
-          const NativePermissionManager = NativeModules.NativePermissionManager;
-          c5 = 1;
-          c6 = 1;
-          const obj6 = { value: NativePermissionManager.getNotificationAuthorizationStatus(), done: false };
-          return obj6;
-        }
-      } else if (arg0 === 1) {
+const require = globalThis.__r;
+let c1, c2, c3, closure_3, closure_4, nextPromise;
+
+let tmp;
+const get_initialized = tmp(504);
+let obj = function _requestPushNotificationPermission() {
+  obj = _asyncToGenerator(async (arg0, action_location, arg2) => {
+    let closure_0 = arg0;
+    let closure_2 = arg2;
+    let c5 = 0;
+    let c6 = 0;
+    return (async (arg0, value, arg2) => {
+      let action_type;
+      if (c6 === 2) {
         c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c6 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
-      } else {
-        closure_131_3 = value;
-        if (closure_131_3 === closure_132_10.DENIED) {
-          closure_132_1(closure_132_2[8])();
-          const obj8 = { action_type: closure_132_8.TO_SETTINGS, action_location: closure_131_1 };
-          closure_132_1(closure_132_2[9]).track(closure_132_9.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj8);
-          closure_131_2();
-          c6 = 3;
-          const obj3 = closure_132_1(closure_132_2[9]);
-        } else if (closure_131_3 !== closure_132_10.AUTHORIZED) {
-          const permission = closure_132_1(closure_132_2[11]).requestPermission((permission_granted) => {
-            action_location(1241).track(constants.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, { action_type, action_location, permission_granted });
-            dependencyMap();
-          });
-          const obj = closure_132_1(closure_132_2[11]);
-        }
-        const result = closure_132_0(closure_132_2[10]).updateNotificationAuthorizationStatus(closure_131_3);
-        closure_131_2();
-        const obj2 = closure_132_0(closure_132_2[10]);
-      }
-    } catch (tmp36) {
-      c6 = tmp;
-      throw tmp36;
-    }
-  }
-};
-let closure_12 = async function _enableProvisionalPushNotification(arg0, value) {
-  if (c3 === 2) {
-    c3 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c3 = 2;
-      if (0 === c2) {
-        if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          closure_1 = tmp4;
-          closure_0 = tmp4;
-          let NativePermissionManager = NativeModules.NativePermissionManager;
-          c2 = 1;
-          c3 = 1;
-          const obj4 = { value: NativePermissionManager.getNotificationAuthorizationStatus(), done: false };
-          return obj4;
-        }
-      } else if (arg0 === 1) {
-        c3 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c3 = 3;
-        let obj = { value, done: true };
-        return obj;
-      } else {
-        if (value === closure_129_10.UNDETERMINED) {
-          const DCDProvisionalNotificationUtils = closure_129_6.DCDProvisionalNotificationUtils;
-          let result = DCDProvisionalNotificationUtils.registerProvisionalNotification((arg0) => {
-            let str = "denied";
-            if (arg0) {
-              str = "accepted";
-            }
-            closure_1_1(closure_1_2[9]).track(constants.PERMISSIONS_ACKED, { type: "provisional_notification", action: str });
-            const NativePermissionManager = closure_1_6.NativePermissionManager;
-            const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
-            notificationAuthorizationStatus.then((result) => {
-              if (null != result) {
-                result = closure_1_0(dependencyMap[10]).updateNotificationAuthorizationStatus(result);
-                const obj = closure_1_0(dependencyMap[10]);
-              }
-            });
-          });
-        }
-        c3 = 3;
-        return { value: "HermesInternal", done: null };
-      }
-    } catch (tmp12) {
-      c3 = tmp;
-      throw tmp12;
-    }
-  }
-};
-const NativeModules = fn(17).NativeModules;
-const EventActionType = fn(12693).EventActionType;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-let closure_10 = fn(4997).NotificationAuthorizationStatus;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/nuf/native/NotificationPermissionUtil.tsx");
-
-export const requestPushNotificationPermission = function requestPushNotificationPermission() {
-  const self = this;
-  const apply = closure_11.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-export const useShowReactivationPrompt = function useShowReactivationPrompt() {
-  [tmp2, require] = noop.useState(false);
-  const effect = noop.useEffect(() => {
-    closure_0 = async function _shouldShowReactivationPrompts(arg0, value) {
-      if (c2 === 2) {
-        c2 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+          return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
-          c2 = 2;
-          if (0 === c1) {
+          c6 = 2;
+          if (0 === c5) {
             if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = tmp4;
+              closure_3 = undefined;
+              const NativePermissionManager = NativeModules.NativePermissionManager;
+              c5 = 1;
+              c6 = 1;
+              const obj6 = { value: NativePermissionManager.getNotificationAuthorizationStatus(), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            closure_3 = value;
+            if (closure_3 === closure_132_10.DENIED) {
+              closure_132_1(closure_132_2[8])();
+              const obj8 = { action_type: closure_132_8.TO_SETTINGS, action_location };
+              const obj3 = closure_132_1(closure_132_2[9]);
+              obj3.track(closure_132_9.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj8);
+              closure_2();
+            } else if (closure_3 === closure_132_10.AUTHORIZED) {
+              let obj2 = closure_132_0(closure_132_2[10]);
+              const result = obj2.updateNotificationAuthorizationStatus(closure_3);
+              closure_2();
+            } else {
+              obj = closure_132_1(closure_132_2[11]);
+              const permission = obj.requestPermission((permission_granted) => {
+                obj = action_location(closure_2[9]);
+                const obj2 = { action_type, action_location, permission_granted };
+                obj.track(constants.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+                closure_1_2();
+              });
+            }
+            c6 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp35) {
+          c6 = 3;
+          throw tmp35;
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _enableProvisionalPushNotification() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    if (c3 === 2) {
+      c3 = 3;
+      let str = "Generator functions may not be called on executing generators";
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp3;
+            let closure_0 = tmp3;
+            let NativePermissionManager = NativeModules.NativePermissionManager;
+            c2 = 1;
+            c3 = 1;
+            const obj4 = { value: NativePermissionManager.getNotificationAuthorizationStatus(), done: false };
+            return obj4;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          obj = { value, done: true };
+          return obj;
+        } else {
+          if (value === closure_129_10.UNDETERMINED) {
+            const DCDProvisionalNotificationUtils = closure_129_6.DCDProvisionalNotificationUtils;
+            let result = DCDProvisionalNotificationUtils.registerProvisionalNotification((arg0) => {
+              let str = "denied";
+              const track = closure_1_1(closure_1_2[9]).track;
+              const PERMISSIONS_ACKED = constants.PERMISSIONS_ACKED;
+              const tmp = closure_1_1(closure_1_2[9]);
+              if (arg0) {
+                str = "accepted";
+              }
+              track(PERMISSIONS_ACKED, { type: "provisional_notification", action: str });
+              const NativePermissionManager = closure_1_6.NativePermissionManager;
+              const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
+              notificationAuthorizationStatus.then((result) => {
+                if (null != result) {
+                  obj = closure_1_0(closure_1_2[10]);
+                  result = obj.updateNotificationAuthorizationStatus(result);
+                }
+              });
+            });
+          }
+          c3 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp11) {
+        c3 = 3;
+        throw tmp11;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+const NativeModules = react_native.NativeModules;
+const EventActionType = NotificationPermissionConstants.EventActionType;
+const AnalyticEvents = Constants.AnalyticEvents;
+let closure_10 = NativePermissionConstants.NotificationAuthorizationStatus;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp4;
+  let tmp5;
+  obj = require("react");
+  const cResult = obj.c(2);
+  let obj2 = react;
+  [first, _require] = react.useState(false);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function u() {
+      function shouldShowReactivationPrompts() {
+        return closure_0(...arguments);
+      }
+      closure_0 = _asyncToGenerator(async (arg0, value) => {
+        if (c2 === 2) {
+          c2 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp2 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            c2 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c2 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c2 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                const NativePermissionManager = NativeModules.NativePermissionManager;
+                c1 = 1;
+                c2 = 1;
+                const obj4 = { value: NativePermissionManager.getNotificationAuthorizationStatus(), done: false };
+                return obj4;
+              }
+            } else if (arg0 === 1) {
               c2 = 3;
               throw value;
             } else if (arg0 === 2) {
               c2 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
+              obj = { value, done: true };
+              return obj;
             } else {
-              const NativePermissionManager = NativeModules.NativePermissionManager;
-              c1 = 1;
-              c2 = 1;
-              const obj4 = { value: NativePermissionManager.getNotificationAuthorizationStatus(), done: false };
-              return obj4;
+              if (value !== constants.AUTHORIZED) {
+                tmp3(true);
+              }
+              c2 = 3;
+              return { value: "IconComponent", done: null };
             }
-          } else if (arg0 === 1) {
+          } catch (tmp10) {
             c2 = 3;
+            throw tmp10;
+          }
+        }
+      });
+      shouldShowReactivationPrompts();
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp4 = fn;
+    tmp5 = items;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const effect = obj2.useEffect(tmp4, tmp5);
+  return first;
+}) : (() => {
+  let require;
+  let tmp2;
+  const tmp = _slicedToArray(react.useState(false), 2);
+  [tmp2, require] = tmp;
+  const effect = react.useEffect(() => {
+    function shouldShowReactivationPrompts() {
+      return obj(...arguments);
+    }
+    obj = function _shouldShowReactivationPrompts2() {
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let closure_0;
+        if (c2 === 2) {
+          c2 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp2 === 3) {
+          if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
-            c2 = 3;
-            const obj = { value, done: true };
-            return obj;
+            const obj2 = { value, done: true };
+            return obj2;
           } else {
-            if (value !== constants.AUTHORIZED) {
-              tmp4(true);
-            }
-            c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
-        } catch (tmp11) {
-          c2 = tmp;
-          throw tmp11;
+        } else {
+          try {
+            c2 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c2 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c2 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                const NativePermissionManager = closure_2_6.NativePermissionManager;
+                c1 = 1;
+                c2 = 1;
+                const obj4 = { value: NativePermissionManager.getNotificationAuthorizationStatus(), done: false };
+                return obj4;
+              }
+            } else if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              if (value !== constants.AUTHORIZED) {
+                tmp3(true);
+              }
+              c2 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp10) {
+            c2 = 3;
+            throw tmp10;
+          }
         }
-      }
+      });
+      return obj(...arguments);
     };
-    !(function shouldShowReactivationPrompts() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })();
+    !shouldShowReactivationPrompts();
   }, []);
   return tmp2;
-};
-export const enableProvisionalPushNotification = function enableProvisionalPushNotification() {
-  const self = this;
-  const apply = closure_12.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeePushNotificationNudge() {
+  let authorizationStatus;
+  let require;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp5;
+  let tmp6;
+  obj = react2;
+  const cResult = obj.c(8);
+  const obj2 = RegionalTeenUtils;
+  const isTeenInStrictCountry = obj2.useIsTeenInStrictCountry();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PushNotificationPermissionStore];
+    const fn = function c() {
+      return authorizationStatus.authorizationStatus;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
   } else {
-    applyArgumentsResult = apply(self, arguments);
+    [tmp5, tmp6] = cResult;
   }
-  return applyArgumentsResult;
-};
-export const useCanSeePushNotificationNudge = function useCanSeePushNotificationNudge() {
-  const isTeenInStrictCountry = RegionalTeenUtils.useIsTeenInStrictCountry();
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  [tmp10, require] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  const obj4 = react;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor() {
+        NativePermissionManager = NativeModules.NativePermissionManager;
+        notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
+        nextPromise = notificationAuthorizationStatus.then((result) => {
+          if (null != result) {
+            obj = require("PushNotificationActionCreators");
+            result = obj.updateNotificationAuthorizationStatus(result);
+          }
+          closure_1_0(true);
+        });
+        return;
+      }
+    }
+    const items1 = [];
+    cResult[2] = N;
+    cResult[3] = items1;
+    tmp12 = items1;
+    tmp11 = N;
+  } else {
+    class N {
+      constructor() {
+        NativePermissionManager = NativeModules.NativePermissionManager;
+        notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
+        nextPromise = notificationAuthorizationStatus.then((result) => {
+          if (null != result) {
+            obj = require("PushNotificationActionCreators");
+            result = obj.updateNotificationAuthorizationStatus(result);
+          }
+          closure_1_0(true);
+        });
+        return;
+      }
+    }
+    tmp12 = cResult[3];
+  }
+  const effect = obj4.useEffect(tmp11, tmp12);
+  if (cResult[4] === stateFromStores) {
+    class N {
+      constructor() {
+        NativePermissionManager = NativeModules.NativePermissionManager;
+        notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
+        nextPromise = notificationAuthorizationStatus.then((result) => {
+          if (null != result) {
+            obj = require("PushNotificationActionCreators");
+            result = obj.updateNotificationAuthorizationStatus(result);
+          }
+          closure_1_0(true);
+        });
+        return;
+      }
+    }
+  }
+  let hasItem = tmp10 && !isTeenInStrictCountry;
+  if (hasItem) {
+    class N {
+      constructor() {
+        NativePermissionManager = NativeModules.NativePermissionManager;
+        notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
+        nextPromise = notificationAuthorizationStatus.then((result) => {
+          if (null != result) {
+            obj = require("PushNotificationActionCreators");
+            result = obj.updateNotificationAuthorizationStatus(result);
+          }
+          closure_1_0(true);
+        });
+        return;
+      }
+    }
+    hasItem = null != stateFromStores;
+  }
+  if (hasItem) {
+    class N {
+      constructor() {
+        NativePermissionManager = NativeModules.NativePermissionManager;
+        notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
+        nextPromise = notificationAuthorizationStatus.then((result) => {
+          if (null != result) {
+            obj = require("PushNotificationActionCreators");
+            result = obj.updateNotificationAuthorizationStatus(result);
+          }
+          closure_1_0(true);
+        });
+        return;
+      }
+    }
+    const items2 = [, , ];
+    ({ DENIED: arr3[0], PROVISIONAL: arr3[1], UNDETERMINED: arr3[2] } = closure_10);
+    hasItem = items2.includes(stateFromStores);
+  }
+  cResult[4] = stateFromStores;
+  cResult[5] = tmp10;
+  cResult[6] = isTeenInStrictCountry;
+  cResult[7] = hasItem;
+}) : (function useCanSeePushNotificationNudge() {
+  let authorizationStatus;
+  let hasItem;
+  let require;
+  let tmp4;
+  obj = RegionalTeenUtils;
+  const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => state.authorizationStatus);
-  [tmp4, require] = noop.useState(false);
-  const effect = noop.useEffect(() => {
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, () => authorizationStatus.authorizationStatus);
+  [tmp4, require] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  const effect = react.useEffect(() => {
     const NativePermissionManager = NativeModules.NativePermissionManager;
     const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
     notificationAuthorizationStatus.then((result) => {
       if (null != result) {
-        result = PushNotificationActionCreators.updateNotificationAuthorizationStatus(result);
+        obj = require("PushNotificationActionCreators");
+        result = obj.updateNotificationAuthorizationStatus(result);
       }
       closure_1_0(true);
     });
@@ -273,39 +484,64 @@ export const useCanSeePushNotificationNudge = function useCanSeePushNotification
     hasItem = items1.includes(stateFromStores);
   }
   return hasItem;
-};
-export const useShouldShowPushNotificationNudgeByPromptType = function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
-  const isTeenInStrictCountry = RegionalTeenUtils.useIsTeenInStrictCountry();
-  const items = [PushNotificationPermissionStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => state.authorizationStatus);
-  const tmp4 = PushNotificationPermissionStore;
-  [tmp7, require] = noop.useState(false);
-  const effect = noop.useEffect(() => {
-    const NativePermissionManager = NativeModules.NativePermissionManager;
-    const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
-    notificationAuthorizationStatus.then((result) => {
-      if (null != result) {
-        result = PushNotificationActionCreators.updateNotificationAuthorizationStatus(result);
+});
+let closure_13 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowPushNotificationNudgeByPromptType(arg0) {
+  let state;
+  let tmp5;
+  let tmp6;
+  obj = react2;
+  const cResult = obj.c(6);
+  const tmp4 = closure_13();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PushNotificationPermissionStore];
+    const fn = function n() {
+      return state.getState().eligiblePromptTypes;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === stateFromStores) {
+    if (cResult[3] === tmp4) {
+      let tmp8;
+      if (cResult[4] === arg0) {
+        tmp8 = cResult[5];
       }
-      closure_1_0(true);
-    });
-  }, []);
-  if (hasItem) {
-    hasItem = !isTeenInStrictCountry;
+      return tmp8;
+    }
   }
+  const tmp9 = tmp4 && stateFromStores.has(arg0);
+  cResult[2] = stateFromStores;
+  cResult[3] = tmp4;
+  cResult[4] = arg0;
+  cResult[5] = tmp9;
+  tmp8 = tmp9;
+}) : (function useShouldShowPushNotificationNudgeByPromptType(arg0) {
+  let state;
+  let hasItem = closure_13();
+  const items = [PushNotificationPermissionStore];
+  obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => state.getState().eligiblePromptTypes);
   if (hasItem) {
-    hasItem = null != stateFromStores;
-  }
-  if (hasItem) {
-    const items1 = [, , ];
-    ({ DENIED: arr2[0], PROVISIONAL: arr2[1], UNDETERMINED: arr2[2] } = closure_10);
-    hasItem = items1.includes(stateFromStores);
-  }
-  const tmp6 = _slicedToArray(noop.useState(false), 2);
-  const items2 = [tmp4];
-  const stateFromStores1 = initialize.useStateFromStores(items2, () => state.getState().eligiblePromptTypes);
-  if (hasItem) {
-    hasItem = stateFromStores1.has(CHANNEL_BANNER);
+    hasItem = stateFromStores.has(arg0);
   }
   return hasItem;
+});
+let result = size.fileFinishedImporting("modules/nuf/native/NotificationPermissionUtil.tsx");
+
+export const requestPushNotificationPermission = function requestPushNotificationPermission() {
+  return obj(...arguments);
 };
+export const useShowReactivationPrompt = tmp2;
+export const enableProvisionalPushNotification = function enableProvisionalPushNotification() {
+  return obj(...arguments);
+};
+export const useCanSeePushNotificationNudge = tmp3;
+export const useShouldShowPushNotificationNudgeByPromptType = tmp4;

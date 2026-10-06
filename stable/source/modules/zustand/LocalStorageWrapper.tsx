@@ -1,16 +1,16 @@
-// Module ID: 7975
-// Function ID: 7976
+// Module ID: 7124
+// Function ID: 7125
 // Name: LocalStorageWrapper
 // Dependencies: [510, 2]
 
-// Module 7975 (LocalStorageWrapper)
+// Module 7124 (LocalStorageWrapper)
 import Storage2 from "Storage" /* 510 */;
 import size from "module_2" /* 2 */;
 
-const frozen = Object.freeze({
+const obj = {
   getItem(arg0) {
     const Storage = Storage2.Storage;
-    value = Storage.get(arg0);
+    let value = Storage.get(arg0);
     if (value == null) {
       value = null;
     }
@@ -24,7 +24,8 @@ const frozen = Object.freeze({
     const Storage = Storage2.Storage;
     return Storage.remove(arg0);
   }
-});
+};
+const frozen = Object.freeze(obj);
 const result = size.fileFinishedImporting("modules/zustand/LocalStorageWrapper.tsx");
 
 export default frozen;

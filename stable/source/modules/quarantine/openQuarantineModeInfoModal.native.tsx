@@ -1,38 +1,45 @@
-// Module ID: 5771
-// Function ID: 5772
+// Module ID: 5835
+// Function ID: 5836
 // Name: openQuarantineModeInfoModal
-// Dependencies: [19, 17, 21, 4654, 5141, 5772, 1980, 2]
+// Dependencies: [19, 17, 21, 4703, 5205, 5836, 1987, 2]
 // Exports: default
 
-// Module 5771 (openQuarantineModeInfoModal)
-import ChatInputUtils from "ChatInputUtils" /* 4654 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import noop from "module_19" /* 19 */;
+// Module 5835 (openQuarantineModeInfoModal)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import ChatInputUtils from "ChatInputUtils" /* 4703 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const Keyboard = fn(17).Keyboard;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const Keyboard = react_native.Keyboard;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/quarantine/openQuarantineModeInfoModal.native.tsx");
 
 export default function openQuarantineModeInfoModal() {
+  let paths;
   Keyboard.dismiss();
-  const bestActiveInput = ChatInputUtils.getBestActiveInput();
+  let obj = ChatInputUtils;
+  const bestActiveInput = obj.getBestActiveInput();
   if (bestActiveInput != null) {
     bestActiveInput.blur();
   }
-  actions_AlertActionCreatorsDefault.openLazy({
+  const obj2 = {
     importer() {
-      return require("asyncRequireImpl")(paths[5], paths.paths).then((result) => {
-        closure_0 = result.default;
+      const promise = require("asyncRequire")(paths[5], paths.paths);
+      return promise.then((result) => {
+        let closure_0 = result.default;
         return (arg0) => {
+          const obj = {};
           const merged = Object.assign(arg0);
-          return closure_2_4(closure_0, {});
+          return closure_2_4(closure_0, obj);
         };
       });
     },
     isDismissable: false
-  });
+  };
+  const obj3 = actions_AlertActionCreatorsDefault;
+  obj3.openLazy(obj2);
 };

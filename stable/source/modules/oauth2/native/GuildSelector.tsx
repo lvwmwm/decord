@@ -1,81 +1,108 @@
-// Module ID: 9571
-// Function ID: 9572
+// Module ID: 8723
+// Function ID: 8724
 // Name: GuildSelector
-// Dependencies: [19, 17, 1074, 21, 4788, 576, 4755, 9572, 1980, 1115, 1086, 4784, 1177, 8903, 2]
+// Dependencies: [19, 17, 1086, 21, 4837, 588, 4801, 8724, 1987, 1127, 1098, 4833, 1189, 8057, 2]
 // Exports: default
 
-// Module 9571 (GuildSelector)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import noop from "module_19" /* 19 */;
+// Module 8723 (GuildSelector)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Permissions = fn(1074).Permissions;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { selectorGroup: { display: "flex", flexDirection: "column", gap: 8 }, select: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, borderRadius: nativeDefault.radii.xs }, label: null, error: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, borderRadius: nativeDefault.radii.xs };
-obj2.label = { color: nativeDefault.colors.TEXT_SUBTLE, fontWeight: "500" };
-const obj4 = { color: nativeDefault.colors.TEXT_SUBTLE, fontWeight: "500" };
-obj2.error = { color: nativeDefault.unsafe_rawColors.RED_400 };
-const styles = createStyles.createStyles(obj2);
-const GuildSelector = "GuildSelector";
-const size = fn(2);
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let obj4;
+const View = react_native.View;
+const Permissions = Constants.Permissions;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { selectorGroup: { display: "flex", flexDirection: "column", gap: 8 }, select: obj2, label: obj3, error: obj4 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, borderRadius: nativeDefault.radii.xs };
+createStyles = createStyles.createStyles;
+obj3 = { color: nativeDefault.colors.TEXT_SUBTLE, fontWeight: "500" };
+obj4 = { color: nativeDefault.unsafe_rawColors.RED_400 };
+const styles = createStyles(obj);
+const GuildSelector_str = "GuildSelector";
 const result = size.fileFinishedImporting("modules/oauth2/native/GuildSelector.tsx");
 
-export default function GuildSelector(disabled) {
-  ({ error, selectedGuildId } = disabled);
-  const onGuildChange = disabled.onGuildChange;
-  const guilds = disabled.guilds;
-  const tmp = styles();
+export default function GuildSelector(onGuildChange) {
+  let error;
+  let intl;
+  let intl3;
+  let items1;
+  let selectedGuildId;
+  ({ error, selectedGuildId } = onGuildChange);
+  onGuildChange = onGuildChange.onGuildChange;
+  const guilds = onGuildChange.guilds;
+  const disabled = onGuildChange.disabled;
+  let tmp = styles();
   const items = [guilds, onGuildChange, selectedGuildId];
-  const callback = noop.useCallback(() => {
-    const obj2 = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
-    const obj = ActionSheetActionCreatorsDefault;
-    const intl = util.intl;
-    obj2.title = intl.string(util.t.oM4E1A);
-    const found = guilds.filter((permissions) => guilds(closure_1_3[10]).has(permissions.permissions, constants.MANAGE_GUILD));
-    obj2.items = found.map((label) => ({ label: label.name, value: label.id }));
-    obj2.onItemSelect = function onItemSelect(arg0) {
-      closure_1_1(arg0);
-      onGuildChange(dependencyMap[6]).hideActionSheet(GuildSelector);
+  const callback = react.useCallback(() => {
+    let found;
+    let intl;
+    let tmp4;
+    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+    let obj = {
+      title: intl.string(intl4.t.oM4E1A),
+      items: found.map((label) => ({ label: label.name, value: label.id })),
+      onItemSelect(arg0) {
+        closure_1_1(arg0);
+        const obj = onGuildChange(dependencyMap[6]);
+        obj.hideActionSheet(GuildSelector_str);
+      },
+      selectedItem: tmp4,
+      hasIcons: false
     };
-    obj2.selectedItem = selectedGuildId;
-    obj.openLazy(asyncRequireImpl(9572, dependencyMap.paths), GuildSelector, obj2);
+    const tmp2 = asyncRequire(8724, dependencyMap.paths);
+    intl = intl4.intl;
+    found = guilds.filter((permissions) => {
+      const obj = guilds(closure_1_3[10]);
+      return obj.has(permissions.permissions, constants.MANAGE_GUILD);
+    });
+    openLazy(tmp2, GuildSelector_str, obj);
+    tmp4 = selectedGuildId;
   }, items);
   let found = guilds.find((id) => id.id === selectedGuildId);
-  let obj = { style: tmp.selectorGroup, children: null };
-  let obj2 = { variant: "eyebrow", color: "text-default", children: null };
-  let intl = selectedGuildId(1115).intl;
-  obj2.children = intl.string(selectedGuildId(1115).t["1DXFFd"]);
-  const items1 = [closure_7(selectedGuildId(4784).Text, obj2), , , ];
+  let obj = { style: tmp.selectorGroup, children: items1 };
+  let tmp4 = closure_8;
+  const obj2 = { variant: "eyebrow", color: "text-default", children: intl.string(selectedGuildId(1127).t["1DXFFd"]) };
+  const Text = selectedGuildId(4833).Text;
+  intl = selectedGuildId(1127).intl;
+  items1 = [closure_7(Text, obj2), , , ];
   let tmp6Result = null;
+  const tmp5 = View;
   if (null != error) {
     tmp6Result = null;
     if ("" !== error) {
       const obj3 = { style: tmp.error, children: error };
-      tmp6Result = tmp6(tmp7(1177).LegacyText, obj3);
+      tmp6Result = tmp6(tmp7(1189).LegacyText, obj3);
     }
   }
   items1[1] = tmp6Result;
   let name;
+  const FormRow = tmp7(8057).FormRow;
   if (found != null) {
     name = found.name;
   }
   if (name == null) {
-    const intl2 = tmp7(1115).intl;
-    name = intl2.string(tmp7(1115).t.oM4E1A);
+    const intl2 = tmp7(1127).intl;
+    name = intl2.string(tmp7(1127).t.oM4E1A);
   }
-  items1[2] = closure_7(selectedGuildId(8903).FormRow, { label: name, disabled: disabled.disabled, trailing: closure_7(selectedGuildId(8903).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
-  const obj5 = { style: tmp.label, children: null };
-  const intl3 = tmp7(1115).intl;
-  obj5.children = intl3.format(selectedGuildId(1115).t.t9Jm9o, {});
-  items1[3] = closure_7(selectedGuildId(1177).LegacyText, obj5);
-  obj.children = items1;
-  return closure_8(View, obj);
+  const obj4 = { label: name, disabled, trailing: closure_7(selectedGuildId(8057).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback };
+  items1[2] = closure_7(FormRow, obj4);
+  const obj5 = { style: tmp.label, children: intl3.format(selectedGuildId(1127).t.t9Jm9o, {}) };
+  const LegacyText = tmp7(1189).LegacyText;
+  intl3 = tmp7(1127).intl;
+  items1[3] = closure_7(LegacyText, obj5);
+  return tmp4(tmp5, obj);
 };
 export const useStyles = styles;

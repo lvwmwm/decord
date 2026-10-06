@@ -1,13 +1,13 @@
-// Module ID: 13750
-// Function ID: 13751
-// Name: NativeAppIconModule
+// Module ID: 12998
+// Function ID: 12999
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 13750 (NativeAppIconModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 12998 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAppIconModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAppIconModule.tsx");
 

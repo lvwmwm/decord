@@ -1,31 +1,29 @@
-// Module ID: 4627
-// Function ID: 4628
+// Module ID: 4675
+// Function ID: 4676
 // Name: RouteUtils
-// Dependencies: [1075, 2048, 2, 4628]
+// Dependencies: [1087, 2058, 2, 4676]
 // Exports: isPseudoGuildId, isValidChannelId, isValidGuildId
 
-// Module 4627 (RouteUtils)
-import RouteConstants from "RouteConstants" /* 1075 */;
-import ChannelConstants from "ChannelConstants" /* 2048 */;
-import RouteParam from "RouteParam" /* 4628 */;
+// Module 4675 (RouteUtils)
+import RouteConstants from "RouteConstants" /* 1087 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import RouteParam from "RouteParam" /* 4676 */;
 import size from "module_2" /* 2 */;
 
 const PSEUDO_GUILD_IDS = RouteConstants.PSEUDO_GUILD_IDS;
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const re2 = /^\d+$/;
 const result = size.fileFinishedImporting("modules/routing/RouteUtils.tsx");
+const RouteParam_export = RouteParam.RouteParam;
 
-export const RouteParam = RouteParam.RouteParam;
+export { RouteParam_export as RouteParam };
 export const isPseudoGuildId = function isPseudoGuildId(guildId) {
   return PSEUDO_GUILD_IDS.includes(guildId);
 };
 export const isValidGuildId = function isValidGuildId(guildId) {
   let tmp = null != guildId;
   if (tmp) {
-    let hasItem = PSEUDO_GUILD_IDS.includes(guildId);
-    if (!hasItem) {
-      hasItem = re2.test(guildId);
-    }
+    const hasItem = PSEUDO_GUILD_IDS.includes(guildId) || re2.test(guildId);
     tmp = hasItem;
   }
   return tmp;
@@ -33,10 +31,7 @@ export const isValidGuildId = function isValidGuildId(guildId) {
 export const isValidChannelId = function isValidChannelId(channelId) {
   let tmp = null == channelId;
   if (!tmp) {
-    let isMatch = re2.test(channelId);
-    if (!isMatch) {
-      isMatch = isStaticChannelRoute(channelId);
-    }
+    const isMatch = re2.test(channelId) || isStaticChannelRoute(channelId);
     tmp = isMatch;
   }
   return tmp;

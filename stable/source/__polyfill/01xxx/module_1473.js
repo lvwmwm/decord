@@ -1,66 +1,162 @@
 // Module ID: 1473
 // Function ID: 1474
-// Dependencies: []
+// Dependencies: [5, 42, 41, 1474, 1476, 1477]
 
 // Module 1473
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-export default (str, SEPARATOR, arg2, maxKeys) => {
-  str = SEPARATOR;
-  if (!SEPARATOR) {
-    str = "&";
-  }
-  let str2 = arg2;
-  if (!arg2) {
-    str2 = "=";
-  }
-  const obj = {};
-  if (typeof str === "string") {
-    if (0 !== str.length) {
-      const parts = str.split(str);
-      let tmp = maxKeys;
-      if (maxKeys) {
-        tmp = typeof maxKeys.maxKeys === "number";
+let c3, c4;
+
+class State {
+  constructor(arg0) {
+    const self = this;
+    let tmp = _classCallCheck(this, State);
+    this._nativeEventSubscription = null;
+    this._subscriptions = new Set();
+    this._latestState = null;
+    this._handleNativeStateUpdate = (arg0) => {
+      const _internetReachability = self._internetReachability;
+      _internetReachability.update(arg0);
+      const _convertStateResult = self._convertState(arg0);
+      self._latestState = _convertStateResult;
+      const _subscriptions = self._subscriptions;
+      const item = _subscriptions.forEach((fn) => fn(_convertStateResult));
+    };
+    this._handleInternetReachabilityUpdate = (isInternetReachable) => {
+      if (self._latestState) {
+        const obj = { isInternetReachable };
+        const merged = Object.assign(tmp._latestState);
+        self._latestState = obj;
+        const _subscriptions = tmp._subscriptions;
+        const item = _subscriptions.forEach((fn) => fn(obj));
       }
-      let num = 1000;
-      if (tmp) {
-        num = maxKeys.maxKeys;
-      }
-      let length = parts.length;
-      if (tmp2) {
-        length = num;
-      }
-      for (let num3 = 0; num3 < length; num3 = num3 + 1) {
-        let str5 = parts[num3];
-        let replaced = str5.replace(tmp11, "%20");
-        let index = replaced.indexOf(str2);
-        let str6 = "";
-        let substr = replaced;
-        if (index >= 0) {
-          substr = replaced.substr(0, index);
-          str6 = replaced.substr(index + 1);
-        }
-        let _decodeURIComponent = decodeURIComponent;
-        let decodeURIComponentResult = decodeURIComponent(substr);
-        let _decodeURIComponent2 = decodeURIComponent;
-        let decodeURIComponentResult1 = decodeURIComponent(str6);
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        let call = hasOwnProperty.call;
-        if (typeof call === "unknown" ? hasOwnProperty(decodeURIComponentResult) : call(obj, decodeURIComponentResult)) {
-          let _Array = Array;
-          let arr2 = obj[decodeURIComponentResult];
-          if (Array.isArray(obj[decodeURIComponentResult])) {
-            let arr = arr2.push(decodeURIComponentResult1);
-          } else {
-            let items = [arr2, decodeURIComponentResult1];
-            obj[decodeURIComponentResult] = items;
-          }
+    };
+    new Set();
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let closure_2;
+      let obj3;
+      closure_0 = arg0;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          obj[decodeURIComponentResult] = decodeURIComponentResult1;
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let closure_1;
+          let tmp4;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_1 = undefined;
+              tmp4 = undefined;
+              c3 = 1;
+              c4 = 1;
+              const obj5 = { value: obj3.getCurrentState(closure_0), done: false };
+              obj3 = closure_0(dependencyMap[3]);
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            closure_1 = value;
+            const _internetReachability = closure_0._internetReachability;
+            _internetReachability.update(closure_1);
+            tmp4 = closure_0._convertState(closure_1);
+            const tmp26 = closure_0;
+            if (!tmp26) {
+              closure_0._latestState = tmp4;
+              const _subscriptions = closure_0._subscriptions;
+              const item = _subscriptions.forEach((fn) => fn(closure_1_2));
+            }
+            c4 = 3;
+            const obj = { value: tmp4, done: true };
+            return obj;
+          }
+        } catch (tmp15) {
+          c4 = 3;
+          throw tmp15;
         }
       }
-      return obj;
-    }
+    });
+    this._fetchCurrentState = function(arg0) {
+      return closure_0(...arguments);
+    };
+    this._convertState = (isInternetReachable) => {
+      let _internetReachability;
+      let tmp = isInternetReachable;
+      if (typeof isInternetReachable.isInternetReachable !== "boolean") {
+        const obj = { isInternetReachable: _internetReachability.currentState() };
+        const merged = Object.assign(isInternetReachable);
+        _internetReachability = self._internetReachability;
+        tmp = obj;
+      }
+      return tmp;
+    };
+    this.latest = (arg0) => {
+      let _fetchCurrentStateResult;
+      if (arg0) {
+        _fetchCurrentStateResult = obj._fetchCurrentState(arg0);
+      } else if (self._latestState) {
+        _fetchCurrentStateResult = Promise.resolve(obj._latestState);
+      } else {
+        _fetchCurrentStateResult = obj._fetchCurrentState();
+      }
+      return _fetchCurrentStateResult;
+    };
+    this.add = (fn) => {
+      const _subscriptions = self._subscriptions;
+      _subscriptions.add(fn);
+      if (self._latestState) {
+        fn(self._latestState);
+      } else {
+        const latestResult = self.latest();
+        latestResult.then(fn);
+      }
+    };
+    this.remove = (arg0) => {
+      const _subscriptions = self._subscriptions;
+      _subscriptions.delete(arg0);
+    };
+    this.tearDown = () => {
+      if (self._internetReachability) {
+        const _internetReachability = tmp._internetReachability;
+        _internetReachability.tearDown();
+      }
+      if (self._nativeEventSubscription) {
+        const _nativeEventSubscription = tmp._nativeEventSubscription;
+        _nativeEventSubscription.remove();
+      }
+      const _subscriptions = tmp._subscriptions;
+      _subscriptions.clear();
+    };
+    const tmp3 = new self(1476)(arg0, this._handleInternetReachabilityUpdate);
+    this._internetReachability = tmp3;
+    const eventEmitter = self(1474).eventEmitter;
+    this._nativeEventSubscription = eventEmitter.addListener(self(1477).DEVICE_CONNECTIVITY_EVENT, this._handleNativeStateUpdate);
+    let _fetchCurrentStateResult = this._fetchCurrentState();
   }
-  return obj;
-};
+}
+
+export default _createClass(State);

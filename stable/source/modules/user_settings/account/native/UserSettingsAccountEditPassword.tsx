@@ -1,71 +1,90 @@
-// Module ID: 15056
-// Function ID: 15057
+// Module ID: 14299
+// Function ID: 14300
 // Name: UserSettingsAccountEditPassword
-// Dependencies: [19, 17, 2034, 7657, 1372, 1074, 21, 4788, 576, 4498, 7261, 7268, 12, 1241, 7267, 7275, 15057, 4784, 1115, 5216, 6880, 5218, 7271, 504, 38, 1484, 2]
-// Exports: default
+// Dependencies: [19, 17, 2042, 6802, 1378, 1086, 21, 4837, 588, 4544, 6405, 6412, 12, 1253, 6411, 6419, 14300, 4833, 1127, 5280, 6021, 5282, 558, 576, 6415, 38, 504, 1491, 2]
 
-// Module 15056 (UserSettingsAccountEditPassword)
+// Module 14299 (UserSettingsAccountEditPassword)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import Stack_Stack from "Stack/Stack" /* 5216 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import TextInput from "TextInput" /* 6880 */;
-import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7261 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7267 */;
-import showInvalidUsernameToastNative from "showInvalidUsernameToastNative" /* 7268 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7275 */;
-import _modDef15057 from "module_15057" /* 15057 */;
-import noop from "module_19" /* 19 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2034 */;
-import UserSettingsAccountStore from "UserSettingsAccountStore" /* 7657 */;
-import UserStore from "UserStore" /* 1372 */;
+import nativeDefault from "native" /* 588 */;
+import intl6 from "intl" /* 1127 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import native from "native" /* 4544 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import Stack_Stack from "Stack/Stack" /* 5280 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6021 */;
+import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 6405 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
+import showInvalidUsernameToastNative from "showInvalidUsernameToastNative" /* 6412 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14300 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2042 */;
+import UserSettingsAccountStore from "UserSettingsAccountStore" /* 6802 */;
+import UserStore from "UserStore" /* 1378 */;
+import Constants from "Constants" /* 1086 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const UserSettingsAccountUnverifiedHeaderDefault = UserSettingsAccountUnverifiedHeader;
+let navigation, ok;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const Constants = fn(1074);
-({ AnalyticEvents: c10, LoginRequiredActions: closure_11 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const state = { newPassword: "call", password: 17080385 };
-const createStyles = fn(4788);
-let obj2 = { onePass: { width: 20, height: 20 }, unverifiedWrapper: { overflow: "hidden", borderRadius: nativeDefault.radii.xs, marginVertical: 16 }, container: { padding: 16 }, header: { marginBottom: 20 }, requiredActionsSubtitle: { textAlign: "center", marginTop: 8 }, requiredActionsTitle: { flex: 1, textAlign: "center" }, image: { marginTop: 12, marginBottom: 16, alignSelf: "center" } };
-let closure_15 = createStyles.createLegacyClassComponentStyles(obj2);
-const Component = noop.Component;
+let c10;
+let closure_12;
+let closure_4;
+let hasOwnProperty;
+let map1;
+let metroRequire;
+let obj2;
+let unpackModuleId;
+({ Image: closure_4, View: hasOwnProperty, ScrollView: metroRequire } = react_native);
+({ AnalyticEvents: c10, LoginRequiredActions: unpackModuleId } = Constants);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
+const authStore2 = { newPassword: "unicodeVersion", password: 17076801 };
+let obj = { onePass: { width: 20, height: 20 }, unverifiedWrapper: obj2, container: { padding: 16 }, header: { marginBottom: 20 }, requiredActionsSubtitle: { textAlign: "center", marginTop: 8 }, requiredActionsTitle: { flex: 1, textAlign: "center" }, image: { marginTop: 12, marginBottom: 16, alignSelf: "center" } };
+obj2 = { overflow: "hidden", borderRadius: nativeDefault.radii.xs, marginVertical: 16 };
+let closure_15 = createStyles.createLegacyClassComponentStyles(obj);
+const Component = react.Component;
 class EditPassword extends Component {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
-    applyArgumentsResult.state = closure_14;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
+    applyArgumentsResult.state = state;
     applyArgumentsResult.newPasswordRef = null;
     applyArgumentsResult.passwordManagerRef = null;
     applyArgumentsResult.handlePasswordChange = function handlePasswordChange(password) {
-      applyArgumentsResult.setState({ password });
-      UserSettingsAccountActionCreatorsAll.updateAccount({ password });
+      const obj = { password };
+      require.setState(obj);
+      const obj2 = UserSettingsAccountActionCreatorsAll;
+      const obj3 = { password };
+      obj2.updateAccount(obj3);
     };
     applyArgumentsResult.handleSetNewPasswordRef = function handleSetNewPasswordRef(newPasswordRef) {
-      applyArgumentsResult.newPasswordRef = newPasswordRef;
+      require.newPasswordRef = newPasswordRef;
     };
     applyArgumentsResult.handleFocusNewPassword = function handleFocusNewPassword() {
-      const newPasswordRef = applyArgumentsResult.newPasswordRef;
+      const newPasswordRef = require.newPasswordRef;
       if (newPasswordRef != null) {
         newPasswordRef.focus();
       }
     };
     applyArgumentsResult.handleNewPasswordChange = function handleNewPasswordChange(newPassword) {
-      applyArgumentsResult.setState({ newPassword });
-      UserSettingsAccountActionCreatorsAll.updateAccount({ newPassword });
+      require.setState({ newPassword });
+      const obj = UserSettingsAccountActionCreatorsAll;
+      obj.updateAccount({ newPassword });
     };
     applyArgumentsResult.handleSubmit = function handleSubmit() {
+      let newPassword;
+      let password;
+      let showForcedPasswordUpdate;
       showForcedPasswordUpdate = showForcedPasswordUpdate.props.showForcedPasswordUpdate;
       ({ password, newPassword } = showForcedPasswordUpdate.state);
-      UserSettingsAccountActionCreatorsAll.saveAccountChanges({ password, newPassword }, { close: false }).then((ok) => {
+      let obj = UserSettingsAccountActionCreatorsAll;
+      const saveAccountChangesResult = obj.saveAccountChanges({ password, newPassword }, { close: false });
+      saveAccountChangesResult.then((ok) => {
         ok = ok.ok;
         if (!ok) {
           const body = ok.body;
@@ -76,146 +95,159 @@ class EditPassword extends Component {
           ok = null == username;
         }
         if (!ok) {
-          const result = showInvalidUsernameToastNative.showInvalidUsernameToast();
+          const obj = showInvalidUsernameToastNative;
+          const result = obj.showInvalidUsernameToast();
         }
         const errors = UserSettingsAccountStore.getErrors();
         let isEmptyResult = null == errors;
         if (!isEmptyResult) {
-          isEmptyResult = _modDef12(errors).isEmpty();
           const obj2 = _modDef12(errors);
+          isEmptyResult = obj2.isEmpty();
         }
         if (isEmptyResult) {
-          if (showForcedPasswordUpdate) {
-            AnalyticsUtilsDefault.track(constants.FORCED_UPDATE_PASSWORD_SUCCEEDED);
-            UserSettingsModalActionCreatorsDefault.close();
+          const tmp10 = showForcedPasswordUpdate;
+          if (tmp10) {
+            const obj3 = AnalyticsUtilsDefault;
+            obj3.track(constants.FORCED_UPDATE_PASSWORD_SUCCEEDED);
+            const obj4 = UserSettingsModalActionCreatorsDefault;
+            obj4.close();
           } else {
-            const navigation = applyArgumentsResult.props.navigation;
+            navigation = require.props.navigation;
             navigation.pop();
           }
         }
       });
     };
     applyArgumentsResult.handleSetPasswordManagerRef = function handleSetPasswordManagerRef(passwordManagerRef) {
-      applyArgumentsResult.passwordManagerRef = passwordManagerRef;
+      require.passwordManagerRef = passwordManagerRef;
     };
     applyArgumentsResult.canSubmit = function canSubmit() {
-      ({ password, newPassword } = applyArgumentsResult.state);
-      let tmp = null != password;
-      if (tmp) {
-        tmp = "" !== password;
-      }
-      if (tmp) {
-        tmp = null != newPassword;
-      }
-      if (tmp) {
-        tmp = "" !== newPassword;
-      }
+      let newPassword;
+      let password;
+      ({ password, newPassword } = require.state);
+      let tmp = null != password && "" !== password && null != newPassword && "" !== newPassword;
       if (tmp) {
         tmp = password.length > 0 && newPassword.length > 0;
-        const tmp2 = password.length > 0 && newPassword.length > 0;
       }
       return tmp;
     };
     return applyArgumentsResult;
   }
-}
-const prototype = EditPassword.prototype;
-prototype["componentWillUnmount"] = function componentWillUnmount() {
-  try {
-    UserSettingsAccountActionCreatorsAll.resetAccount();
-  } catch (err) {
-  }
-};
-prototype["getError"] = function getError(arg0) {
-  const errors = this.props.errors;
-  let first;
-  if (null != errors) {
-    if (null != errors[arg0]) {
-      first = errors[arg0][0];
+  componentWillUnmount() {
+    try {
+      const obj = UserSettingsAccountActionCreatorsAll;
+      obj.resetAccount();
+    } catch (err) {
     }
   }
-  return first;
-};
-prototype["render"] = function render() {
-  const self = this;
-  const tmp = closure_15(this.context);
-  ({ password, newPassword } = this.state);
-  const props = this.props;
-  ({ showForcedPasswordUpdate, submitting, hasBannerText } = props);
-  const obj = { style: tmp.container, children: null };
-  ({ passwordLabel, newPasswordLabel } = props);
-  if (hasBannerText) {
-    const obj2 = { style: tmp.unverifiedWrapper, children: tmp2(UserSettingsAccountUnverifiedHeaderDefault, {}) };
-    hasBannerText = tmp2(tmp5, obj2);
+  getError(arg0) {
+    const errors = this.props.errors;
+    let first;
+    if (null != errors) {
+      if (null != errors[arg0]) {
+        first = errors[arg0][0];
+      }
+    }
+    return first;
   }
-  const items = [hasBannerText, , , ];
-  let tmp4Result = showForcedPasswordUpdate;
-  if (showForcedPasswordUpdate) {
-    const obj3 = { style: tmp.header, children: null };
-    const obj4 = { source: _modDef15057, style: tmp.image };
-    const items1 = [tmp2(React4, obj4), , ];
-    const obj5 = { style: tmp.requiredActionsTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-    const intl = util.intl;
-    obj5.children = intl.string(util.t.geta79);
-    items1[1] = tmp2(Text_Text.Text, obj5);
-    const obj6 = { style: tmp.requiredActionsSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
-    const intl2 = util.intl;
-    obj6.children = intl2.string(util.t["37iHbZ"]);
-    items1[2] = tmp2(Text_Text.Text, obj6);
-    obj3.children = items1;
-    tmp4Result = tmp4(tmp5, obj3);
+  render() {
+    let handleSubmit;
+    let hasBannerText;
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let intl5;
+    let items;
+    let items1;
+    let items2;
+    let newPassword;
+    let newPasswordLabel;
+    let password;
+    let passwordLabel;
+    let showForcedPasswordUpdate;
+    let submitting;
+    const self = this;
+    const tmp = closure_15(this.context);
+    ({ password, newPassword } = this.state);
+    const props = this.props;
+    ({ showForcedPasswordUpdate, submitting, hasBannerText } = props);
+    const obj = { style: tmp.container, children: items };
+    ({ passwordLabel, newPasswordLabel } = props);
+    const tmp3 = metroRequire;
+    if (hasBannerText) {
+      const obj2 = { style: tmp.unverifiedWrapper, children: closure_12(UserSettingsAccountUnverifiedHeaderDefault, {}) };
+      hasBannerText = tmp2(tmp5, obj2);
+    }
+    items = [hasBannerText, , , ];
+    let tmp4Result = showForcedPasswordUpdate;
+    if (tmp4Result) {
+      const obj3 = { style: tmp.header, children: items1 };
+      const obj4 = { source: AssetRegistryDefault, style: tmp.image };
+      items1 = [closure_12(React3, obj4), , ];
+      const obj5 = { style: tmp.requiredActionsTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl6.t.geta79) };
+      const Text = Text_Text.Text;
+      intl = intl6.intl;
+      items1[1] = closure_12(Text, obj5);
+      const obj6 = { style: tmp.requiredActionsSubtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl6.t["37iHbZ"]) };
+      const Text2 = Text_Text.Text;
+      intl2 = intl6.intl;
+      items1[2] = closure_12(Text2, obj6);
+      tmp4Result = tmp4(tmp5, obj3);
+    }
+    items[1] = tmp4Result;
+    let tmp4Result2 = !showForcedPasswordUpdate;
+    if (tmp4Result2) {
+      const obj7 = { style: tmp.header, children: items2 };
+      const obj8 = { style: tmp.requiredActionsTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl3.string(intl6.t.geta79) };
+      const Text3 = Text_Text.Text;
+      intl3 = intl6.intl;
+      items2 = [closure_12(Text3, obj8), ];
+      const obj9 = { style: tmp.requiredActionsSubtitle, variant: "text-sm/medium", color: "text-default", children: intl4.string(intl6.t.x5tG4V) };
+      const Text4 = Text_Text.Text;
+      intl4 = intl6.intl;
+      items2[1] = closure_12(Text4, obj9);
+      tmp4Result2 = tmp4(tmp5, obj7);
+    }
+    items[2] = tmp4Result2;
+    const Stack = Stack_Stack.Stack;
+    const obj10 = { label: passwordLabel, secureTextEntry: true, errorMessage: self.getError("password"), onChange: self.handlePasswordChange, value: password, onSubmitEditing: self.canSubmit() ? self.handleSubmit : self.handleFocusNewPassword, returnKeyType: "next", autoComplete: "current-password", required: true };
+    const TextInput = TextInput_TextInput.TextInput;
+    const items3 = [closure_12(TextInput, obj10), , ];
+    const obj11 = { label: newPasswordLabel, ref: self.handleSetNewPasswordRef, secureTextEntry: true, errorMessage: self.getError("new_password"), onChange: self.handleNewPasswordChange, value: newPassword, returnKeyType: "done", autoComplete: "new-password", onSubmitEditing: handleSubmit, required: true };
+    const TextInput2 = tmp16(6021).TextInput;
+    handleSubmit = undefined;
+    if (self.canSubmit()) {
+      handleSubmit = self.handleSubmit;
+    }
+    items3[1] = closure_12(TextInput2, obj11);
+    const obj12 = { text: intl5.string(intl6.t["FRep5/"]), onPress: self.handleSubmit, loading: submitting, disabled: submitting };
+    const Button = tmp16(5282).Button;
+    intl5 = tmp16(1127).intl;
+    if (!submitting) {
+      submitting = null == password;
+    }
+    if (!submitting) {
+      submitting = null == newPassword;
+    }
+    const obj13 = { children: map1(hasOwnProperty, obj) };
+    const obj14 = { spacing: 24, children: items3 };
+    items3[2] = closure_12(Button, obj12);
+    items[3] = map1(Stack, obj14);
+    return closure_12(tmp3, obj13);
   }
-  items[1] = tmp4Result;
-  let tmp4Result2 = !showForcedPasswordUpdate;
-  if (!showForcedPasswordUpdate) {
-    const obj7 = { style: tmp.header, children: null };
-    const obj8 = { style: tmp.requiredActionsTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-    const intl3 = util.intl;
-    obj8.children = intl3.string(util.t.geta79);
-    const items2 = [tmp2(Text_Text.Text, obj8), ];
-    const obj9 = { style: tmp.requiredActionsSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
-    const intl4 = util.intl;
-    obj9.children = intl4.string(util.t.x5tG4V);
-    items2[1] = tmp2(Text_Text.Text, obj9);
-    obj7.children = items2;
-    tmp4Result2 = tmp4(tmp5, obj7);
-  }
-  items[2] = tmp4Result2;
-  const items3 = [closure_1_12(TextInput.TextInput, { label: passwordLabel, secureTextEntry: true, errorMessage: self.getError("password"), onChange: self.handlePasswordChange, value: password, onSubmitEditing: self.canSubmit() ? self.handleSubmit : self.handleFocusNewPassword, returnKeyType: "next", autoComplete: "current-password", required: true }), , ];
-  const obj11 = { label: newPasswordLabel, ref: self.handleSetNewPasswordRef, secureTextEntry: true, errorMessage: self.getError("new_password"), onChange: self.handleNewPasswordChange, value: newPassword, returnKeyType: "done", autoComplete: "new-password", onSubmitEditing: null, required: true };
-  let handleSubmit;
-  if (self.canSubmit()) {
-    handleSubmit = self.handleSubmit;
-  }
-  obj11.onSubmitEditing = handleSubmit;
-  items3[1] = closure_1_12(TextInput.TextInput, obj11);
-  const obj12 = { text: null, onPress: null, loading: null, disabled: null };
-  const intl5 = tmp16(1115).intl;
-  obj12.text = intl5.string(util.t["FRep5/"]);
-  obj12.onPress = self.handleSubmit;
-  obj12.loading = submitting;
-  if (!submitting) {
-    submitting = null == password;
-  }
-  if (!submitting) {
-    submitting = null == newPassword;
-  }
-  const obj13 = { children: null };
-  const obj14 = { spacing: 24, children: null };
-  obj12.disabled = submitting;
-  items3[2] = closure_1_12(components_Button_Button.Button, obj12);
-  obj14.children = items3;
-  items[3] = map1(Stack_Stack.Stack, obj14);
-  obj.children = items;
-  obj13.children = map1(hasOwnProperty, obj);
-  return closure_1_12(timestampProducer, obj13);
-};
-EditPassword.contextType = fn(4498).ThemeContext;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountEditPassword.tsx");
-
-export default function EditPasswordWrapper() {
-  const params = flag(7271).useSettingNavigationRoute().params;
+}
+const prototype = EditPassword.prototype;
+EditPassword.contextType = native.ThemeContext;
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let flag;
+  let tmp8;
+  const tmp2 = dependencyMap;
+  let obj = flag(576);
+  const cResult = obj.c(6);
+  let obj2 = flag(6415);
+  const params = obj2.useSettingNavigationRoute().params;
   flag = undefined;
   if (params != null) {
     flag = params.isLoginRequiredAction;
@@ -223,10 +255,94 @@ export default function EditPasswordWrapper() {
   if (flag == null) {
     flag = false;
   }
-  let obj = flag(7271);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [UserStore, UserSettingsAccountStore, LoginRequiredActionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== flag) {
+    const fn = function s() {
+      let intl;
+      let intl2;
+      const currentUser = UserStore.getCurrentUser();
+      const obj = UserSettingsAccountUnverifiedHeader;
+      const tmp4 = null != obj.getBannerText(currentUser);
+      const errors = UserSettingsAccountStore.getErrors();
+      const submitting = UserSettingsAccountStore.getSubmitting();
+      const settings = UserSettingsAccountStore.getSettings();
+      if (!flag) {
+        _modDef38(null != currentUser, "EditPasswordWrapper: user cannot be undefined");
+      }
+      let id;
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      let result = null != id;
+      if (result) {
+        const items = [unpackModuleId.UPDATE_PASSWORD];
+        result = LoginRequiredActionStore.requiredActionsIncludes(id, items);
+      }
+      const obj2 = { errors, submitting, settings, user: currentUser, verified: flag, passwordLabel: intl.string(intl6.t.WBqMRQ), newPasswordLabel: intl2.string(intl6.t["8dM4FO"]), showForcedPasswordUpdate: result, hasBannerText: tmp4 };
+      flag = undefined;
+      if (currentUser != null) {
+        flag = currentUser.verified;
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      intl = tmp2(1127).intl;
+      intl2 = tmp2(1127).intl;
+      if (result) {
+        result = tmp8;
+      }
+      return obj2;
+    };
+    cResult[1] = flag;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = flag(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
+  const tmpResult2 = flag(1491);
+  navigation = tmpResult2.useNavigation();
+  if (cResult[3] === navigation) {
+    let tmp11;
+    if (cResult[4] === stateFromStoresObject) {
+      tmp11 = cResult[5];
+    }
+    return tmp11;
+  }
+  const obj3 = { navigation };
+  const merged = Object.assign(stateFromStoresObject);
+  const tmp13 = closure_12(EditPassword, obj3);
+  cResult[3] = navigation;
+  cResult[4] = stateFromStoresObject;
+  cResult[5] = tmp13;
+  tmp11 = tmp13;
+}) : (() => {
+  let flag;
+  const tmp2 = dependencyMap;
+  let obj = flag(6415);
+  const params = obj.useSettingNavigationRoute().params;
+  flag = undefined;
+  if (params != null) {
+    flag = params.isLoginRequiredAction;
+  }
+  if (flag == null) {
+    flag = false;
+  }
   let items = [UserStore, UserSettingsAccountStore, LoginRequiredActionStore];
-  const stateFromStoresObject = flag(504).useStateFromStoresObject(items, () => {
+  const tmpResult = flag(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(items, () => {
+    let intl;
+    let intl2;
     const currentUser = UserStore.getCurrentUser();
+    const obj = UserSettingsAccountUnverifiedHeader;
+    const tmp4 = null != obj.getBannerText(currentUser);
     const errors = UserSettingsAccountStore.getErrors();
     const submitting = UserSettingsAccountStore.getSubmitting();
     const settings = UserSettingsAccountStore.getSettings();
@@ -239,10 +355,10 @@ export default function EditPasswordWrapper() {
     }
     let result = null != id;
     if (result) {
-      const items = [constants2.UPDATE_PASSWORD];
+      const items = [unpackModuleId.UPDATE_PASSWORD];
       result = LoginRequiredActionStore.requiredActionsIncludes(id, items);
     }
-    const obj2 = { errors, submitting, settings, user: currentUser, verified: null, passwordLabel: null, newPasswordLabel: null, showForcedPasswordUpdate: null, hasBannerText: null };
+    const obj2 = { errors, submitting, settings, user: currentUser, verified: flag, passwordLabel: intl.string(intl6.t.WBqMRQ), newPasswordLabel: intl2.string(intl6.t["8dM4FO"]), showForcedPasswordUpdate: result, hasBannerText: tmp4 };
     flag = undefined;
     if (currentUser != null) {
       flag = currentUser.verified;
@@ -250,20 +366,18 @@ export default function EditPasswordWrapper() {
     if (flag == null) {
       flag = false;
     }
-    obj2.verified = flag;
-    const intl = tmp2(1115).intl;
-    obj2.passwordLabel = intl.string(util.t.WBqMRQ);
-    const intl2 = tmp2(1115).intl;
-    obj2.newPasswordLabel = intl2.string(util.t["8dM4FO"]);
+    intl = tmp2(1127).intl;
+    intl2 = tmp2(1127).intl;
     if (result) {
-      result = flag;
+      result = tmp8;
     }
-    obj2.showForcedPasswordUpdate = result;
-    obj2.hasBannerText = null != UserSettingsAccountUnverifiedHeader.getBannerText(currentUser);
     return obj2;
   });
-  const tmpResult = flag(504);
-  const tmpResult2 = flag(1484);
+  const tmpResult2 = flag(1491);
+  let obj2 = { navigation: tmpResult2.useNavigation() };
   const merged = Object.assign(stateFromStoresObject);
-  return closure_12(EditPassword, { navigation: flag(1484).useNavigation() });
-};
+  return closure_12(EditPassword, obj2);
+});
+let result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountEditPassword.tsx");
+
+export default tmp6;

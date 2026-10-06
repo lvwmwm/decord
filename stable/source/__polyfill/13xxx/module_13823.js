@@ -1,9 +1,17 @@
 // Module ID: 13823
 // Function ID: 13824
-// Dependencies: [1121]
+// Dependencies: [13798]
 
 // Module 13823
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13798 from "module_13798" /* 13798 */;
 
+let fn;
+if (_mod13798) {
+  fn = call.bind(call);
+} else {
+  fn = function() {
+    return call(...arguments);
+  };
+}
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 24, height: 24, scales: [2, 3], hash: "3301eac470d1db4f813dc4b19265d85e", name: "audio", type: "png" });
+export default fn;

@@ -1,13 +1,14 @@
-// Module ID: 2006
-// Function ID: 2007
+// Module ID: 2014
+// Function ID: 2015
 // Name: socialSDKMigration
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 2006 (socialSDKMigration)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 2014 (socialSDKMigration)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-battlenet-social-sdk-migration", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+const obj = { name: "2026-06-battlenet-social-sdk-migration", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/application_account_linking/experiments/socialSDKMigration.tsx");
 
 export const battlenetSocialSDKMigrationExperiment = apexExperiment;

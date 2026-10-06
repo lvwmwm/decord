@@ -1,272 +1,270 @@
-// Module ID: 8059
-// Function ID: 8060
+// Module ID: 7208
+// Function ID: 7209
 // Name: getBurstAnimation
-// Dependencies: [5, 8060, 8061, 8062, 8063, 8064, 8065, 8066, 8067, 8068, 8069, 8070, 8071, 8072, 8073, 8074, 8075, 8076, 8077, 8078, 8079, 8080, 8081, 8082, 8083, 8084, 8085, 8086, 8087, 8088, 8089, 8090, 8091, 8092, 8093, 8094, 8095, 8096, 2]
+// Dependencies: [5, 7209, 7210, 7211, 7212, 7213, 7214, 7215, 7216, 7217, 7218, 7219, 7220, 7221, 7222, 7223, 7224, 7225, 7226, 7227, 7228, 7229, 7230, 7231, 7232, 7233, 7234, 7235, 7236, 7237, 7238, 7239, 7240, 7241, 7242, 7243, 7244, 7245, 2]
 // Exports: getBurstAnimation
 
-// Module 8059 (getBurstAnimation)
-import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
+// Module 7208 (getBurstAnimation)
+import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+let closure_5;
+
+const obj = {
+  load() {
+    return require("module_7209");
+  }
+};
 const items = [
+  obj,
   {
     load() {
-      return closure_0(8060);
+      return require("module_7210");
     }
   },
   {
     load() {
-      return closure_0(8061);
+      return require("module_7211");
     }
   },
   {
     load() {
-      return closure_0(8062);
+      return require("module_7212");
     }
   },
   {
     load() {
-      return closure_0(8063);
+      return require("module_7213");
     }
   },
   {
     load() {
-      return closure_0(8064);
+      return require("module_7214");
     }
   },
   {
     load() {
-      return closure_0(8065);
+      return require("module_7215");
     }
   },
   {
     load() {
-      return closure_0(8066);
+      return require("module_7216");
     }
   },
   {
     load() {
-      return closure_0(8067);
+      return require("module_7217");
     }
   },
   {
     load() {
-      return closure_0(8068);
+      return require("module_7218");
     }
   },
   {
     load() {
-      return closure_0(8069);
+      return require("module_7219");
     }
   },
   {
     load() {
-      return closure_0(8070);
+      return require("module_7220");
     }
   },
   {
     load() {
-      return closure_0(8071);
+      return require("module_7221");
     }
   },
   {
     load() {
-      return closure_0(8072);
+      return require("module_7222");
     }
   },
   {
     load() {
-      return closure_0(8073);
+      return require("module_7223");
     }
   },
   {
     load() {
-      return closure_0(8074);
+      return require("module_7224");
     }
   },
   {
     load() {
-      return closure_0(8075);
+      return require("module_7225");
     }
   },
   {
     load() {
-      return closure_0(8076);
-    }
-  },
-  {
-    load() {
-      return closure_0(8077);
+      return require("module_7226");
     }
   }
 ];
+const obj2 = {
+  load() {
+    return require("module_7227");
+  }
+};
 const items1 = [
+  obj2,
   {
     load() {
-      return closure_0(8078);
+      return require("module_7228");
     }
   },
   {
     load() {
-      return closure_0(8079);
+      return require("module_7229");
     }
   },
   {
     load() {
-      return closure_0(8080);
+      return require("module_7230");
     }
   },
   {
     load() {
-      return closure_0(8081);
+      return require("module_7231");
     }
   },
   {
     load() {
-      return closure_0(8082);
+      return require("module_7232");
     }
   },
   {
     load() {
-      return closure_0(8083);
+      return require("module_7233");
     }
   },
   {
     load() {
-      return closure_0(8084);
+      return require("module_7234");
     }
   },
   {
     load() {
-      return closure_0(8085);
+      return require("module_7235");
     }
   },
   {
     load() {
-      return closure_0(8086);
+      return require("module_7236");
     }
   },
   {
     load() {
-      return closure_0(8087);
+      return require("module_7237");
     }
   },
   {
     load() {
-      return closure_0(8088);
+      return require("module_7238");
     }
   },
   {
     load() {
-      return closure_0(8089);
+      return require("module_7239");
     }
   },
   {
     load() {
-      return closure_0(8090);
+      return require("module_7240");
     }
   },
   {
     load() {
-      return closure_0(8091);
+      return require("module_7241");
     }
   },
   {
     load() {
-      return closure_0(8092);
+      return require("module_7242");
     }
   },
   {
     load() {
-      return closure_0(8093);
+      return require("module_7243");
     }
   },
   {
     load() {
-      return closure_0(8094);
-    }
-  },
-  {
-    load() {
-      return closure_0(8095);
+      return require("module_7244");
     }
   }
 ];
-let closure_0 = asyncGeneratorStepDefault(function*(arg0, value, arg2) {
-  if (c7 === 2) {
-    c7 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
+  let closure_4;
+  closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  const length = arg3;
+  let c6 = 0;
+  let c7 = 0;
+  const iter = (function*(arg0, value, arg2) {
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        return { value, done: true };
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c7 = 2;
-      if (0 === c6) {
-        if (arg0 === 1) {
+      try {
+        let flag;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            return { value, done: true };
+          } else {
+            closure_5 = tmp4;
+            let burstAnimationHash = tmp;
+            flag = length;
+            if (length === undefined) {
+              flag = false;
+            }
+            burstAnimationHash = undefined;
+            c6 = 1;
+            c7 = 1;
+            return { value: "Reflect", done: true };
+          }
+        } else if (arg0 === 1) {
           c7 = 3;
           throw value;
         } else if (arg0 === 2) {
           c7 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          return { value, done: true };
         } else {
-          closure_5 = tmp5;
-          closure_4 = tmp2;
-          closure_132_3 = undefined;
-          closure_132_0 = closure_0;
-          closure_132_1 = dependencyMap;
-          closure_132_2 = closure_2;
-          let flag = length;
-          if (length === undefined) {
-            flag = false;
-          }
-          closure_132_3 = flag;
-          let burstAnimationHash;
-          c6 = 1;
-          c7 = 1;
-          return { value: "PX_16", done: true };
+          const _HermesInternal = HermesInternal;
+          const obj6 = closure_0(closure_1[37]);
+          burstAnimationHash = obj6.getBurstAnimationHash("" + closure_0 + closure_1 + closure_2);
+          c7 = 3;
+          const obj5 = { value: obj.load(), done: true };
+          return obj5;
         }
-      } else if (arg0 === 1) {
+      } catch (tmp14) {
         c7 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c7 = 3;
-        const obj4 = { value, done: true };
-        return obj4;
-      } else {
-        const _HermesInternal = HermesInternal;
-        burstAnimationHash = closure_0(dependencyMap[37]).getBurstAnimationHash("" + closure_132_0 + closure_132_1 + closure_132_2);
-        if (closure_132_3) {
-          let tmp6 = closure_2;
-        } else {
-          tmp6 = length;
-        }
-        tmp6[burstAnimationHash % length.length].load();
-        c7 = 3;
-        const obj5 = closure_0(dependencyMap[37]);
+        throw tmp14;
       }
-    } catch (tmp16) {
-      c7 = tmp;
-      throw tmp16;
     }
-  }
+  })();
+  iter.next();
+  return iter;
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
 export const getBurstAnimation = function() {
-  const self = this;
-  const apply = closure_0.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return closure_0(...arguments);
 };

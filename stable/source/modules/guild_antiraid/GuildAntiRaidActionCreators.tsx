@@ -1,308 +1,319 @@
-// Module ID: 12114
-// Function ID: 12115
+// Module ID: 11183
+// Function ID: 11184
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 2063, 8306, 1074, 1241, 4968, 9887, 4380, 1271, 10397, 2]
+// Dependencies: [5, 2073, 7463, 1086, 1253, 5017, 9025, 4424, 1283, 11184, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 12114 (GuildAntiRaidActionCreators)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import _modDef4380 from "module_4380" /* 4380 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9887 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 10397 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 11183 (GuildAntiRaidActionCreators)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import _modDef4424 from "module_4424" /* 4424 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7463 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 11184 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_9 = async function _setGuildRaidAlerts(arg0, arg1) {
-  let features = arg0;
-  closure_1 = arg1;
-  c3 = 0;
-  c2 = 0;
-  return (async (arg0, value) => {
-    if (c2 === 2) {
-      c2 = 3;
+let c4, guild, set;
+
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj = function _setGuildRaidAlerts() {
+  obj = _asyncToGenerator(async (arg0, arg1) => {
+    const features = arg0;
+    let closure_1 = arg1;
+    let c3 = 0;
+    let c2 = 0;
+    return (async function(arg0, value) {
+      let obj2;
+      if (c2 === 2) {
+        c2 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              return { value, done: true };
+            } else {
+              const _Set = Set;
+              const self = this;
+              const self2 = this;
+              set = new Set(features.features);
+              const tmp14 = features;
+              if (set.has(constants.COMMUNITY)) {
+                if (closure_1) {
+                  set.delete(constants.RAID_ALERTS_DISABLED);
+                } else {
+                  set.add(constants.RAID_ALERTS_DISABLED);
+                }
+              } else if (closure_1) {
+                set.add(constants.NON_COMMUNITY_RAID_ALERTS);
+              } else {
+                set.delete(constants.NON_COMMUNITY_RAID_ALERTS);
+              }
+              c3 = 1;
+              c2 = 1;
+              const obj5 = { features: set };
+              const obj6 = { value: obj2.saveGuild(tmp14.id, obj5, { throwErr: true }), done: false };
+              obj2 = GuildSettingsActionCreatorsDefault;
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            return { value, done: true };
+          } else {
+            c2 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp10) {
+          c2 = 3;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _setGuildIncidentActions() {
+  obj = _asyncToGenerator(async (arg0, arg1, arg2, arg3) => {
+    let c5;
+    let c6;
+    let obj7;
+    let tmp12;
+    let tmp13;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let closure_3 = arg3;
+    let tmp4 = closure_1;
+    const tmp21 = closure_0;
+    if (!closure_1) {
+      tmp4 = tmp23;
+    }
+    let closure_4 = tmp24;
+    if (closure_3 == null) {
+      closure_4 = DEFAULT_LOCKDOWN_DURATION;
+    }
+    let toISOStringResult = null;
+    if (tmp4) {
+      const obj3 = _modDef4424();
+      const addResult = obj3.add(closure_4, "hours");
+      toISOStringResult = addResult.toISOString();
+    }
+    let tmp11 = null;
+    if (closure_1) {
+      tmp11 = toISOStringResult;
+    }
+    const obj5 = { invites_disabled_until: tmp11, dms_disabled_until: tmp12, lockdown_duration_hours: tmp13 };
+    tmp12 = null;
+    if (closure_2) {
+      tmp12 = toISOStringResult;
+    }
+    tmp13 = null;
+    if (tmp4) {
+      tmp13 = tmp7;
+    }
+    const HTTP = HTTPUtils.HTTP;
+    const request = { url: metroImportDefault.GUILD_INCIDENT_ACTIONS(tmp21), body: obj5, rejectWithError: obj7.rejectWithMigratedError() };
+    const put = HTTP.put;
+    obj7 = HTTPUtils;
+    await put(request);
+    return arg1;
+  });
+  return obj(...arguments);
+};
+obj = function _handleResolveRaid() {
+  obj = _asyncToGenerator(async (arg0, value, arg2) => {
+    let obj4;
+    let obj5;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_2 = arg2;
+    if (c3 === 2) {
+      c3 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
-        c2 = 2;
-        if (0 === c3) {
+        let tmp4;
+        c3 = 2;
+        if (0 === c4) {
           if (arg0 === 1) {
-            c2 = 3;
+            c3 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c2 = 3;
+            c3 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let obj4 = features;
-            const _Set = Set;
-            const set = new Set(features.features);
-            let saveGuildResult = set;
-            let saveGuild = constants;
-            if (set.has(constants.COMMUNITY)) {
-              if (tmp17) {
-                saveGuildResult.delete(saveGuild.RAID_ALERTS_DISABLED);
-              } else {
-                saveGuildResult.add(saveGuild.RAID_ALERTS_DISABLED);
-              }
-              saveGuild = GuildSettingsActionCreatorsDefault.saveGuild;
-              obj4 = { features: saveGuildResult };
-              saveGuildResult = saveGuild(obj4.id, obj4, { throwErr: true });
-              c3 = 1;
-              c2 = 1;
-            } else if (!tmp17) {
-              saveGuildResult.delete(saveGuild.NON_COMMUNITY_RAID_ALERTS);
+            guild = guild.getGuild(closure_0);
+            let tmp7 = null;
+            const tmp15 = closure_0;
+            const tmp16 = closure_1;
+            const tmp17 = closure_2;
+            if (null != guild) {
+              tmp7 = getGuildSafetyAlertsChannelIdDefault(guild);
             }
-            saveGuildResult.add(saveGuild.NON_COMMUNITY_RAID_ALERTS);
+            tmp4 = null;
+            if (null != tmp7) {
+              const HTTP = HTTPUtils.HTTP;
+              const request = { url: metroImportDefault.GUILD_INCIDENT_REPORT_FALSE_ALARM(tmp15), body: obj5, rejectWithError: obj4.rejectWithMigratedError() };
+              const post = HTTP.post;
+              obj5 = { alert_message_id: tmp16, reason: tmp17 };
+              obj4 = HTTPUtils;
+              c4 = 1;
+              c3 = 1;
+              const obj6 = { value: post(request), done: false };
+              return obj6;
+            }
           }
         } else if (arg0 === 1) {
-          c2 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c2 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } else {
-          c2 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp12) {
-        c2 = tmp;
-        throw tmp12;
-      }
-    }
-  })();
-};
-let closure_10 = async function _setGuildIncidentActions() {
-  let tmp5 = closure_1;
-  if (!closure_1) {
-    tmp5 = tmp25;
-  }
-  closure_4 = tmp26;
-  if (closure_3 == null) {
-    closure_4 = DEFAULT_LOCKDOWN_DURATION;
-  }
-  let toISOStringResult = null;
-  if (tmp5) {
-    _modDef4380();
-    toISOStringResult = _modDef4380().add(tmp8, "hours").toISOString();
-    _modDef4380().add(tmp8, "hours");
-  }
-  let tmp12 = null;
-  if (closure_1) {
-    tmp12 = toISOStringResult;
-  }
-  const obj5 = { invites_disabled_until: tmp12, dms_disabled_until: null, lockdown_duration_hours: null };
-  let tmp13 = null;
-  if (closure_2) {
-    tmp13 = toISOStringResult;
-  }
-  obj5.dms_disabled_until = tmp13;
-  let tmp14 = null;
-  if (tmp5) {
-    tmp14 = tmp8;
-  }
-  obj5.lockdown_duration_hours = tmp14;
-  const HTTP = HTTPUtils.HTTP;
-  const request = { url: React5.GUILD_INCIDENT_ACTIONS(closure_0), body: obj5, rejectWithError: HTTPUtils.rejectWithMigratedError() };
-  await HTTP.put(request);
-  return arg1;
-};
-let closure_11 = async function _handleResolveRaid(arg0, value) {
-  if (c3 === 2) {
-    c3 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c3 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
           c3 = 3;
           throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
         } else {
-          guild = guild.getGuild(closure_0);
-          let tmp8 = null;
-          if (null != guild) {
-            tmp8 = getGuildSafetyAlertsChannelIdDefault(guild);
+          tmp4 = value;
+          if (arg0 === 2) {
+            c3 = 3;
+            obj = { value, done: true };
+            return obj;
           }
-          let tmp5 = null;
-          if (null != tmp8) {
-            const HTTP = HTTPUtils.HTTP;
-            const request = { url: React5.GUILD_INCIDENT_REPORT_FALSE_ALARM(tmp17), body: null, rejectWithError: null };
-            const obj5 = { alert_message_id: tmp18, reason: tmp19 };
-            request.body = obj5;
-            request.rejectWithError = HTTPUtils.rejectWithMigratedError();
-            c4 = 1;
-            c3 = 1;
-            const obj6 = { value: HTTP.post(request), done: false };
-            return obj6;
-          }
-          tmp17 = closure_0;
-          tmp18 = closure_1;
-          tmp19 = closure_2;
         }
-      } else if (arg0 === 1) {
         c3 = 3;
-        throw value;
-      } else {
-        tmp5 = value;
-        if (arg0 === 2) {
-          c3 = 3;
-          const obj = { value, done: true };
-          return obj;
-        }
+        const obj7 = { value: tmp4, done: true };
+        return obj7;
+      } catch (tmp11) {
+        c3 = 3;
+        throw tmp11;
       }
-      c3 = 3;
-      const obj7 = { value: tmp5, done: true };
-      return obj7;
-    } catch (tmp12) {
-      c3 = tmp;
-      throw tmp12;
     }
-  }
+  });
+  return obj(...arguments);
 };
-let closure_12 = async function _handleReportRaid(arg0, value) {
-  if (c1 === 2) {
-    c1 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+obj = function _handleReportRaid() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj3;
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c1 = 2;
-      if (0 === c2) {
-        if (arg0 === 1) {
+      try {
+        let tmp4;
+        c1 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c1 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            guild = guild.getGuild(closure_0);
+            let tmp7 = null;
+            const tmp15 = closure_0;
+            if (null != guild) {
+              tmp7 = getGuildSafetyAlertsChannelIdDefault(guild);
+            }
+            tmp4 = null;
+            if (null != tmp7) {
+              const HTTP = HTTPUtils.HTTP;
+              const obj5 = { url: metroImportDefault.GUILD_INCIDENT_REPORT_RAID(tmp15), rejectWithError: obj3.rejectWithMigratedError() };
+              const post = HTTP.post;
+              obj3 = HTTPUtils;
+              c2 = 1;
+              c1 = 1;
+              const obj6 = { value: post(obj5), done: false };
+              return obj6;
+            }
+          }
+        } else if (arg0 === 1) {
           c1 = 3;
           throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
         } else {
-          guild = guild.getGuild(closure_0);
-          let tmp8 = null;
-          if (null != guild) {
-            tmp8 = getGuildSafetyAlertsChannelIdDefault(guild);
+          tmp4 = value;
+          if (arg0 === 2) {
+            c1 = 3;
+            obj = { value, done: true };
+            return obj;
           }
-          let tmp5 = null;
-          if (null != tmp8) {
-            const HTTP = HTTPUtils.HTTP;
-            const obj5 = { url: React5.GUILD_INCIDENT_REPORT_RAID(tmp17), rejectWithError: HTTPUtils.rejectWithMigratedError() };
-            c2 = 1;
-            c1 = 1;
-            const obj6 = { value: HTTP.post(obj5), done: false };
-            return obj6;
-          }
-          tmp17 = closure_0;
         }
-      } else if (arg0 === 1) {
         c1 = 3;
-        throw value;
-      } else {
-        tmp5 = value;
-        if (arg0 === 2) {
-          c1 = 3;
-          const obj = { value, done: true };
-          return obj;
-        }
+        const obj7 = { value: tmp4, done: true };
+        return obj7;
+      } catch (tmp11) {
+        c1 = 3;
+        throw tmp11;
       }
-      c1 = 3;
-      const obj7 = { value: tmp5, done: true };
-      return obj7;
-    } catch (tmp12) {
-      c1 = tmp;
-      throw tmp12;
     }
-  }
+  });
+  return obj(...arguments);
 };
-const DEFAULT_LOCKDOWN_DURATION = fn(8306).DEFAULT_LOCKDOWN_DURATION;
-const Constants = fn(1074);
-({ AnalyticEvents: metroRequire, Endpoints: closure_7, GuildFeatures: closure_8 } = Constants);
-const size = fn(2);
+const DEFAULT_LOCKDOWN_DURATION = GuildAntiRaidConstants.DEFAULT_LOCKDOWN_DURATION;
+({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault, GuildFeatures: metroImportAll } = Constants);
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidActionCreators.tsx");
 
-export const trackReportRaidViewed = function trackReportRaidViewed(guildId, arg1) {
-  let items = arg1;
-  if (arg1 === undefined) {
+export const trackReportRaidViewed = function trackReportRaidViewed(c1, c2) {
+  let items = c2;
+  if (c2 === undefined) {
     items = [];
   }
   if (0 !== items.length) {
-    const obj2 = {};
-    const obj = AnalyticsUtilsDefault;
-    const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(guildId));
-    obj2.guild_id = guildId;
-    obj2.raid_types = items;
-    obj.track(constants.GUILD_RAID_REPORTED, obj2);
+    obj = { guild_id: c1, raid_types: items };
+    const track = AnalyticsUtilsDefault.track;
+    const GUILD_RAID_REPORTED = metroRequire.GUILD_RAID_REPORTED;
+    AnalyticsUtilsDefault;
+    const obj2 = AppAnalyticsUtils;
+    const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(c1));
+    track(GUILD_RAID_REPORTED, obj);
   }
 };
 export const setGuildRaidAlerts = function setGuildRaidAlerts() {
-  const self = this;
-  const apply = closure_9.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const setGuildIncidentActions = function setGuildIncidentActions() {
-  const self = this;
-  const apply = closure_10.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const handleResolveRaid = function handleResolveRaid() {
-  const self = this;
-  const apply = closure_11.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const handleReportRaid = function handleReportRaid() {
-  const self = this;
-  const apply = closure_12.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

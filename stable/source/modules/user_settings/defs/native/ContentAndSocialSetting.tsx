@@ -1,31 +1,33 @@
-// Module ID: 16194
-// Function ID: 16195
+// Module ID: 15471
+// Function ID: 15472
 // Name: ContentAndSocialSetting
-// Dependencies: [1074, 11754, 1115, 4487, 16195, 2]
+// Dependencies: [1086, 10874, 1127, 4532, 15472, 2]
 
-// Module 16194 (ContentAndSocialSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import FriendsIcon from "FriendsIcon" /* 4487 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15471 (ContentAndSocialSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import FriendsIcon from "FriendsIcon" /* 4532 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["+o1pDZ"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["+o1pDZ"]);
   },
   parent: null,
   IconComponent: FriendsIcon.FriendsIcon,
   screen: {
-    route: Constants.UserSettingsSections.CONTENT_AND_SOCIAL,
+    route: UserSettingsSections.CONTENT_AND_SOCIAL,
     getComponent() {
       return require("ContentAndSocialScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ContentAndSocialSetting.tsx");
 
 export default route;

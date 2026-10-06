@@ -1,34 +1,39 @@
-// Module ID: 8366
-// Function ID: 8367
+// Module ID: 7523
+// Function ID: 7524
 // Name: GiftIntentSystemMessage
-// Dependencies: [4788, 576, 8367, 8254, 8375, 8236, 8239, 2]
+// Dependencies: [4837, 588, 7524, 7410, 7532, 7392, 7395, 2]
 // Exports: createGiftIntentSystemMessage
 
-// Module 8366 (GiftIntentSystemMessage)
-import nativeDefault from "native" /* 576 */;
-import _modDef8239 from "module_8239" /* 8239 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8254 */;
-import GiftIntentEmbed from "GiftIntentEmbed" /* 8367 */;
-import createStyles from "createStyles" /* 4788 */;
+// Module 7523 (GiftIntentSystemMessage)
+import nativeDefault from "native" /* 588 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7392 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7395 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7410 */;
+import GiftIntentEmbed from "GiftIntentEmbed" /* 7524 */;
+import EphemeralIndication from "EphemeralIndication" /* 7532 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
-let closure_3 = createStyles.createNativeStyleProperties({ iconTintColor: nativeDefault.colors.BACKGROUND_BRAND, iconDividerColor: nativeDefault.colors.ICON_STRONG });
+let obj = { iconTintColor: nativeDefault.colors.BACKGROUND_BRAND, iconDividerColor: nativeDefault.colors.ICON_STRONG };
+let closure_3 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GiftIntentSystemMessage.tsx");
 
 export const createGiftIntentSystemMessage = function createGiftIntentSystemMessage(message) {
+  let theme;
+  let tmpResult;
+  let tmpResult2;
   ({ message, theme } = message);
-  const giftIntentEmbed = GiftIntentEmbed.createGiftIntentEmbed(message, theme);
+  const obj = GiftIntentEmbed;
+  const giftIntentEmbed = obj.createGiftIntentEmbed(message, theme);
   if (null == giftIntentEmbed) {
     return null;
   } else {
-    const obj3 = {};
-    const merged = Object.assign(createCommonMessageDefault(message));
-    obj3.giftIntentInfo = giftIntentEmbed;
+    const obj3 = { giftIntentInfo: giftIntentEmbed, ephemeralIndication: tmpResult.createEphemeralIndication(message), iconUrl: tmpResult2.getAssetUriForEmbed(AssetRegistryDefault) };
     const tmp5 = closure_3(theme);
-    obj3.ephemeralIndication = tmp(8375).createEphemeralIndication(message);
-    const tmpResult = tmp(8375);
-    obj3.iconUrl = tmp(8236).getAssetUriForEmbed(_modDef8239);
+    const merged = Object.assign(createCommonMessageDefault(message));
+    tmpResult = EphemeralIndication;
     ({ iconTintColor: obj2.iconTintColor, iconDividerColor: obj2.iconDividerColor } = tmp5);
+    tmpResult2 = renderer_EmbedUtils;
     return obj3;
   }
 };

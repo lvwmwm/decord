@@ -1,19 +1,38 @@
-// Module ID: 13425
-// Function ID: 13426
+// Module ID: 12679
+// Function ID: 12680
 // Name: MobileWishlistSuggestionsExperiment
-// Dependencies: [1434, 2]
-// Exports: getIsMobileWishlistSuggestionsEnabled, useIsMobileWishlistSuggestionsEnabled
+// Dependencies: [1441, 558, 576, 2]
+// Exports: getIsMobileWishlistSuggestionsEnabled
 
-// Module 13425 (MobileWishlistSuggestionsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12679 (MobileWishlistSuggestionsExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-07-smag-mobile-wishlist-suggestions", kind: "user", defaultConfig: { isEnabled: false }, variations: { 0: { isEnabled: false }, 1: { isEnabled: true } } });
+let obj = { name: "2026-07-smag-mobile-wishlist-suggestions", kind: "user", defaultConfig: { isEnabled: false }, variations: { 0: { isEnabled: false }, 1: { isEnabled: true } } };
+let closure_2 = ApexExperiment.createApexExperiment(obj);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_2.useConfig(tmp2).isEnabled;
+}) : ((location) => {
+  const obj = { location };
+  return closure_2.useConfig(obj).isEnabled;
+});
 const result = size.fileFinishedImporting("modules/wishlists/experiments/MobileWishlistSuggestionsExperiment.tsx");
 
-export const useIsMobileWishlistSuggestionsEnabled = function useIsMobileWishlistSuggestionsEnabled(WishlistEmptyState) {
-  return closure_0.useConfig({ location: WishlistEmptyState }).isEnabled;
-};
+export const useIsMobileWishlistSuggestionsEnabled = tmp2;
 export const getIsMobileWishlistSuggestionsEnabled = function getIsMobileWishlistSuggestionsEnabled(location) {
-  return closure_0.getConfig({ location }).isEnabled;
+  const obj = { location };
+  return closure_2.getConfig(obj).isEnabled;
 };

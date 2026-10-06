@@ -1,154 +1,373 @@
 // Module ID: 1692
 // Function ID: 1693
-// Dependencies: [1662, 1693, 1641, 1706, 1707, 1725, 1723, 1724, 1689]
-// Exports: tryActivateLayoutTransition
+// Dependencies: [1647, 1693, 1651]
+// Exports: startMapper, stopMapper
 
 // Module 1692
-import _mod1641 from "module_1641" /* 1641 */;
-import _mod1662 from "module_1662" /* 1662 */;
-import TransitionType from "TransitionType" /* 1693 */;
-import maybeModifyStyleForKeyframe from "maybeModifyStyleForKeyframe" /* 1706 */;
-import findDescendantWithExitingAnimation from "findDescendantWithExitingAnimation" /* 1724 */;
+import setupMicrotasks from "setupMicrotasks" /* 1651 */;
+import _mod1693 from "module_1693" /* 1693 */;
+import module_1647_mod from "module_1647" /* 1647 */;
 
-require = arg1;
-const dependencyMap = arg6;
-function startWebLayoutAnimation(props, _componentDOMRef, ENTERING, easingY) {
-  if (ENTERING === _mod1662.LayoutAnimationType.ENTERING) {
-    let entering = props.entering;
-  } else if (ENTERING === tmp(1662).LayoutAnimationType.EXITING) {
-    entering = props.exiting;
-  } else {
-    entering = null;
-    if (ENTERING === tmp(1662).LayoutAnimationType.LAYOUT) {
-      entering = props.layout;
-    }
-  }
-  let processedConfig = null;
-  if (entering) {
-    const tmp5 = entering instanceof tmp(1707).Keyframe;
-    if (tmp5) {
-      let presetName = tmp(1725).createCustomKeyFrameAnimation(entering.definitions);
-      const tmpResult = tmp(1725);
-    } else if (typeof entering === "function") {
-      presetName = entering.presetName;
-    } else {
-      presetName = entering.constructor.presetName;
-    }
-    let animationWithInitialValues = presetName;
-    if (undefined !== entering.initialValues) {
-      animationWithInitialValues = tmp(1725).createAnimationWithInitialValues(presetName, entering.initialValues);
-      const tmpResult8 = tmp(1725);
-    }
-    let flag = !(animationWithInitialValues in tmp(1693).Animations) && !(ENTERING === tmp(1662).LayoutAnimationType.LAYOUT || tmp5 || undefined !== entering.initialValues);
-    if (flag) {
-      let logger = tmp(1641).logger;
-      logger.warn("Couldn't load entering/exiting animation. Current version supports only predefined animations with modifiers: duration, delay, easing, randomizeDelay, withCallback, reducedMotion.");
-      flag = true;
-    }
-    processedConfig = null;
-    if (!flag) {
-      if (tmp5) {
-        const _Object = Object;
-        const keys = Object.keys(entering.definitions);
-        let hasItem = keys.includes("100");
-        if (!hasItem) {
-          hasItem = keys.includes("to");
-        }
-        if (!hasItem) {
-          const logger2 = tmp(1641).logger;
-          logger2.warn("Neither '100' nor 'to' was specified in Keyframe definition. This may result in wrong final position of your component. One possible solution is to duplicate last timestamp in definition as '100' (or 'to')");
+let map, set;
+
+const updateMappersOrder2 = function updateMappersOrder() {
+  function dfs(item) {
+    set.add(item);
+    const tmp2 = item.inputs[Symbol.iterator]();
+    while (tmp2 !== undefined) {
+      let value = map.get(tmp3);
+      if (value) {
+        for (const item10022 of value) {
+          let tmp9 = item10022;
+          if (!set.has(item10022)) {
+            let tmp13 = dfs(tmp9);
+          }
+          continue;
         }
       }
-      processedConfig = tmp(1706).getProcessedConfig(animationWithInitialValues, ENTERING, entering);
-      const tmpResult9 = tmp(1706);
+      continue;
     }
-    const tmp8 = ENTERING === tmp(1662).LayoutAnimationType.LAYOUT || tmp5 || undefined !== entering.initialValues;
+    items.push(item);
   }
-  const result = maybeModifyStyleForKeyframe.maybeModifyStyleForKeyframe(_componentDOMRef, props.entering);
-  let animationName;
-  if (processedConfig != null) {
-    animationName = processedConfig.animationName;
-  }
-  if (animationName in TransitionType.Animations) {
-    let animationName1;
-    if (processedConfig != null) {
-      animationName1 = processedConfig.animationName;
-    }
-    (function maybeReportOverwrittenProperties(style, style2) {
-      const set = new Set();
-      for (const item10014 of matchAllResult) {
-        let addResult = set.add(item10014[1]);
+  map = new Map();
+  const item = map.forEach((outputs) => {
+    if (outputs.outputs) {
+      outputs = outputs.outputs;
+      for (const item10009 of outputs) {
+        let obj = map;
+        let tmp3 = item10009;
+        let value = map.get(item10009);
+        let arr = value;
+        if (undefined === value) {
+          items = [outputs];
+          let result = obj.set(tmp3, items);
+        } else {
+          let arr2 = arr.push(outputs);
+        }
         continue;
       }
-      const matchAllResult = style.matchAll(/([a-zA-Z-]+)(?=:)/g);
-      const found = Array.from(style2).filter((item) => set.has(item));
-      if (0 !== found.length) {
-        const logger = _mod1641.logger;
-        let str = "Properties";
-        if (1 === found.length) {
-          str = "Property";
+    }
+  });
+  set = new Set();
+  items = [];
+  const item1 = map.forEach((item) => {
+    if (!set.has(item)) {
+      dfs(item);
+    }
+  });
+  let closure_1 = items;
+};
+let module_1647 = module_1647_mod;
+module_1647 = module_1647.isJest();
+function createMapperRegistry() {
+  const updateMappersOrder = updateMappersOrder2;
+  function mapperRun() {
+    c2 = false;
+    const tmp = c3;
+    if (!tmp) {
+      try {
+        c3 = true;
+        if (map.size !== length.length) {
+          updateMappersOrder();
         }
-        const _HermesInternal = HermesInternal;
-        logger.warn("" + str + " [" + found.join(", ") + "] may be overwritten by a layout animation. Please wrap your component with an animated view and apply the layout animation on the wrapper.");
+        for (const item10015 of length) {
+          let obj = item10015;
+          if (item10015.dirty) {
+            obj.dirty = false;
+            let workletResult = obj.worklet();
+          }
+          continue;
+        }
+        c3 = false;
+      } catch (tmp10) {
+        c3 = false;
+        throw tmp10;
       }
-    })(tmp(1693).Animations[animationName1].style, _componentDOMRef.style);
-  }
-  if (processedConfig) {
-    if (tmp(1662).LayoutAnimationType.ENTERING === ENTERING) {
-      tmp(1706).setElementAnimation(_componentDOMRef, processedConfig, true);
-      const tmpResult11 = tmp(1706);
-    } else if (tmp(1662).LayoutAnimationType.LAYOUT === ENTERING) {
-      easingY.reversed = processedConfig.reversed;
-      const result1 = tmp(1706).handleLayoutTransition(_componentDOMRef, processedConfig, easingY);
-      const tmpResult12 = tmp(1706);
-    } else if (tmp(1662).LayoutAnimationType.EXITING === ENTERING) {
-      const result2 = tmp(1706).handleExitingAnimation(_componentDOMRef, processedConfig);
-      const tmpResult13 = tmp(1706);
     }
-  } else {
-    const elementVisible = tmp(1723).makeElementVisible(_componentDOMRef, 0);
-    const tmpResult14 = tmp(1723);
   }
+  function maybeRequestUpdates() {
+    const tmp = closure_2_3;
+    if (tmp) {
+      mapperRun();
+    } else {
+      const tmp2 = c2;
+      if (!tmp2) {
+        if (c3) {
+          const _requestAnimationFrame = requestAnimationFrame;
+          const animationFrame = requestAnimationFrame(mapperRun);
+        } else {
+          const _queueMicrotask = queueMicrotask;
+          queueMicrotask(mapperRun);
+        }
+        c2 = true;
+      }
+    }
+  }
+  function extractInputs(iter, items) {
+    if (Array.isArray(iter)) {
+      iter = iter[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        if (nextResult) {
+          let tmp16 = extractInputs(tmp13, items);
+        }
+        continue;
+      }
+    } else {
+      const obj = items(items1[1]);
+      if (obj.isSharedValue(iter)) {
+        items.push(iter);
+      } else {
+        const _Object = Object;
+        const _Object2 = Object;
+        if (Object.getPrototypeOf(iter) === Object.prototype) {
+          const _Object3 = Object;
+          const values = Object.values(iter);
+          for (const item10021 of values) {
+            if (item10021) {
+              let tmp7 = extractInputs(tmp4, items);
+            }
+            continue;
+          }
+        }
+      }
+    }
+    return items;
+  }
+  new Map();
+  let closure_1 = [];
+  let c2 = false;
+  let c3 = false;
+  return {
+    start(id, worklet, iter, outputs) {
+      const obj = { id, dirty: true, worklet, inputs: items, outputs };
+      items = [];
+      let tmp = extractInputs(iter, items);
+      const result = obj.set(obj.id, obj);
+      let closure_1 = [];
+      const inputs = obj.inputs;
+      for (const item10018 of inputs) {
+        let addListenerResult = item10018.addListener(obj.id, () => {
+          obj.dirty = true;
+          const tmp = closure_1_3;
+          if (tmp) {
+            mapperRun();
+          } else {
+            const tmp2 = c2;
+            if (!tmp2) {
+              if (c3) {
+                const _requestAnimationFrame = requestAnimationFrame;
+                const animationFrame = requestAnimationFrame(mapperRun);
+              } else {
+                const _queueMicrotask = queueMicrotask;
+                queueMicrotask(mapperRun);
+              }
+              c2 = true;
+            }
+          }
+        });
+        continue;
+      }
+      maybeRequestUpdates();
+    },
+    stop(arg0) {
+      const value = map.get(arg0);
+      const obj = map;
+      if (value) {
+        obj.delete(value.id);
+        let closure_1 = [];
+        const inputs = value.inputs;
+        for (const item10013 of inputs) {
+          let removeListenerResult = item10013.removeListener(value.id);
+          continue;
+        }
+      }
+    }
+  };
 }
+let obj = { IS_JEST: module_1647, isSharedValue: _mod1693.isSharedValue };
+createMapperRegistry.__closure = obj;
+createMapperRegistry.__workletHash = 4849129099287;
+createMapperRegistry.__initData = { code: "function createMapperRegistry_Pnpm_mappersTs1(){const{IS_JEST,isSharedValue}=this.__closure;const mappers=new Map();let sortedMappers=[];let runRequested=false;let processingMappers=false;function updateMappersOrder(){const pre=new Map();mappers.forEach(function(mapper){if(mapper.outputs){for(const output of mapper.outputs){const preMappers=pre.get(output);if(preMappers===undefined){pre.set(output,[mapper]);}else{preMappers.push(mapper);}}}});const visited=new Set();const newOrder=[];function dfs(mapper){visited.add(mapper);for(const input of mapper.inputs){const preMappers=pre.get(input);if(preMappers){for(const preMapper of preMappers){if(!visited.has(preMapper)){dfs(preMapper);}}}}newOrder.push(mapper);}mappers.forEach(function(mapper){if(!visited.has(mapper)){dfs(mapper);}});sortedMappers=newOrder;}function mapperRun(){runRequested=false;if(processingMappers){return;}try{processingMappers=true;if(mappers.size!==sortedMappers.length){updateMappersOrder();}for(const mapper of sortedMappers){if(mapper.dirty){mapper.dirty=false;mapper.worklet();}}}finally{processingMappers=false;}}function maybeRequestUpdates(){if(IS_JEST){mapperRun();}else if(!runRequested){if(processingMappers){requestAnimationFrame(mapperRun);}else{queueMicrotask(mapperRun);}runRequested=true;}}function extractInputs(inputs,resultArray){if(Array.isArray(inputs)){for(const input of inputs){input&&extractInputs(input,resultArray);}}else if(isSharedValue(inputs)){resultArray.push(inputs);}else if(Object.getPrototypeOf(inputs)===Object.prototype){for(const element of Object.values(inputs)){element&&extractInputs(element,resultArray);}}return resultArray;}return{start:function(mapperID,worklet,inputs,outputs){const mapper={id:mapperID,dirty:true,worklet:worklet,inputs:extractInputs(inputs,[]),outputs:outputs};mappers.set(mapper.id,mapper);sortedMappers=[];for(const sv of mapper.inputs){sv.addListener(mapper.id,function(){mapper.dirty=true;maybeRequestUpdates();});}maybeRequestUpdates();},stop:function(mapperID){const mapper=mappers.get(mapperID);if(mapper){mappers.delete(mapper.id);sortedMappers=[];for(const sv of mapper.inputs){sv.removeListener(mapper.id);}}}};}" };
+let c5 = 9999;
+const __initData = { code: "function pnpm_mappersTs2(){const{createMapperRegistry,mapperID,worklet,inputs,outputs}=this.__closure;let mapperRegistry=global.__mapperRegistry;if(mapperRegistry===undefined){mapperRegistry=global.__mapperRegistry=createMapperRegistry();}mapperRegistry.start(mapperID,worklet,inputs,outputs);}" };
+const __initData2 = { code: "function pnpm_mappersTs3(){const{mapperID}=this.__closure;const mapperRegistry=global.__mapperRegistry;mapperRegistry===null||mapperRegistry===void 0||mapperRegistry.stop(mapperID);}" };
 
-export { startWebLayoutAnimation };
-export const tryActivateLayoutTransition = function tryActivateLayoutTransition(props, _componentDOMRef, arg2) {
-  if (props.layout) {
-    const size = _componentDOMRef.getBoundingClientRect();
-    if (!obj.areDOMRectsEqual(size, arg2)) {
-      const enteringV = props.layout.enteringV;
-      let presetName;
-      if (enteringV != null) {
-        presetName = enteringV.presetName;
-      }
-      const exitingV = props.layout.exitingV;
-      let presetName1;
-      if (exitingV != null) {
-        presetName1 = exitingV.presetName;
-      }
-      const obj2 = { translateX: arg2.x - size.x + (arg2.width - size.width) / 2, translateY: arg2.y - size.y + (arg2.height - size.height) / 2, scaleX: arg2.width / size.width, scaleY: arg2.height / size.height, reversed: false, easingX: null, easingY: null, entering: null, exiting: null };
-      const easingXV = props.layout.easingXV;
-      let str;
-      if (easingXV != null) {
-        str = easingXV[tmp3(undefined, 1689).EasingNameSymbol];
-      }
-      if (str == null) {
-        str = "ease";
-      }
-      obj2.easingX = str;
-      const easingYV = props.layout.easingYV;
-      let str2;
-      if (easingYV != null) {
-        str2 = easingYV[tmp3(undefined, 1689).EasingNameSymbol];
-      }
-      if (str2 == null) {
-        str2 = "ease";
-      }
-      obj2.easingY = str2;
-      obj2.entering = presetName;
-      obj2.exiting = presetName1;
-      startWebLayoutAnimation(props, _componentDOMRef, tmp3(1662).LayoutAnimationType.LAYOUT, obj2);
-    }
-    obj = findDescendantWithExitingAnimation;
+export const startMapper = function startMapper(fn, values2, items) {
+  let closure_0 = fn;
+  items = values2;
+  if (values2 === undefined) {
+    items = [];
   }
+  let items1 = items;
+  if (items === undefined) {
+    items1 = [];
+  }
+  const sum = c5 + 1;
+  c5 = sum;
+  module_1647 = sum;
+  let obj = items(items1[2]);
+  fn = function f() {
+    let tmp;
+    let __mapperRegistry = global.__mapperRegistry;
+    if (undefined === __mapperRegistry) {
+      let tmp6 = createMapperRegistry;
+      if (typeof createMapperRegistry === "function") {
+        const updateMappersOrder = updateMappersOrder2;
+        function mapperRun() {
+          c2 = false;
+          const tmp = c3;
+          if (!tmp) {
+            try {
+              c3 = true;
+              if (map.size !== length.length) {
+                updateMappersOrder();
+              }
+              for (const item10015 of length) {
+                let obj = item10015;
+                if (item10015.dirty) {
+                  obj.dirty = false;
+                  let workletResult = obj.worklet();
+                }
+                continue;
+              }
+              c3 = false;
+            } catch (tmp10) {
+              c3 = false;
+              throw tmp10;
+            }
+          }
+        }
+        function maybeRequestUpdates() {
+          const tmp = closure_2_3;
+          if (tmp) {
+            mapperRun();
+          } else {
+            const tmp2 = c2;
+            if (!tmp2) {
+              if (c3) {
+                const _requestAnimationFrame = requestAnimationFrame;
+                const animationFrame = requestAnimationFrame(mapperRun);
+              } else {
+                const _queueMicrotask = queueMicrotask;
+                queueMicrotask(mapperRun);
+              }
+              c2 = true;
+            }
+          }
+        }
+        function extractInputs(iter, items) {
+          if (Array.isArray(iter)) {
+            iter = iter[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              if (nextResult) {
+                let tmp16 = extractInputs(tmp13, items);
+              }
+              continue;
+            }
+          } else {
+            const obj = items(items1[1]);
+            if (obj.isSharedValue(iter)) {
+              items.push(iter);
+            } else {
+              const _Object = Object;
+              const _Object2 = Object;
+              if (Object.getPrototypeOf(iter) === Object.prototype) {
+                const _Object3 = Object;
+                const values = Object.values(iter);
+                for (const item10021 of values) {
+                  if (item10021) {
+                    let tmp7 = extractInputs(tmp4, items);
+                  }
+                  continue;
+                }
+              }
+            }
+          }
+          return items;
+        }
+        let tmp2 = globalThis;
+        const _Map = Map;
+        const self = this;
+        const self2 = this;
+        map = new Map();
+        let tmp4 = map;
+        let closure_1 = [];
+        let c2 = false;
+        let c3 = false;
+        let obj = {
+          start(id, worklet, iter, outputs) {
+                const obj = { id, dirty: true, worklet, inputs: items, outputs };
+                items = [];
+                let tmp = extractInputs(iter, items);
+                const result = obj.set(obj.id, obj);
+                let closure_1 = [];
+                const inputs = obj.inputs;
+                for (const item10018 of inputs) {
+                  let addListenerResult = item10018.addListener(obj.id, () => {
+                    obj.dirty = true;
+                    const tmp = closure_1_3;
+                    if (tmp) {
+                      mapperRun();
+                    } else {
+                      const tmp2 = c2;
+                      if (!tmp2) {
+                        if (c3) {
+                          const _requestAnimationFrame = requestAnimationFrame;
+                          const animationFrame = requestAnimationFrame(mapperRun);
+                        } else {
+                          const _queueMicrotask = queueMicrotask;
+                          queueMicrotask(mapperRun);
+                        }
+                        c2 = true;
+                      }
+                    }
+                  });
+                  continue;
+                }
+                maybeRequestUpdates();
+              },
+          stop(arg0) {
+                const value = map.get(arg0);
+                const obj = map;
+                if (value) {
+                  obj.delete(value.id);
+                  let closure_1 = [];
+                  const inputs = value.inputs;
+                  for (const item10013 of inputs) {
+                    let removeListenerResult = item10013.removeListener(value.id);
+                    continue;
+                  }
+                }
+              }
+        };
+        tmp.__mapperRegistry = obj;
+        __mapperRegistry = obj;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
+    __mapperRegistry.start(module_1647, fn, items, items1);
+  };
+  const obj2 = { createMapperRegistry, mapperID: sum, worklet: fn, inputs: items, outputs: items1 };
+  fn.__closure = obj2;
+  fn.__workletHash = 1517453109481;
+  fn.__initData = __initData;
+  let tmp2 = obj.runOnUI(fn)();
+  return sum;
+};
+export const stopMapper = function stopMapper(_inlinePropsMapperId) {
+  let closure_0 = _inlinePropsMapperId;
+  const fn = function t() {
+    const __mapperRegistry = global.__mapperRegistry;
+    if (__mapperRegistry != null) {
+      __mapperRegistry.stop(_inlinePropsMapperId);
+    }
+  };
+  fn.__closure = { mapperID: _inlinePropsMapperId };
+  fn.__workletHash = 1696829263429;
+  fn.__initData = __initData2;
+  const obj = setupMicrotasks;
+  obj.runOnUI(fn)();
 };

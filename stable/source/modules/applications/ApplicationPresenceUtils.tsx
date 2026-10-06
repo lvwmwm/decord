@@ -1,21 +1,22 @@
-// Module ID: 8532
-// Function ID: 8533
+// Module ID: 7681
+// Function ID: 7682
 // Name: ApplicationPresenceUtils
-// Dependencies: [2041, 2]
+// Dependencies: [2051, 2]
 // Exports: shouldDisableUserPresenceInChannel
 
-// Module 8532 (ApplicationPresenceUtils)
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 7681 (ApplicationPresenceUtils)
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/applications/ApplicationPresenceUtils.tsx");
 
 export const shouldDisableUserPresenceInChannel = function shouldDisableUserPresenceInChannel(bot, channelId) {
+  let closure_0 = bot;
   const channel = ChannelStore.getChannel(channelId);
   let tmp = null != channel && bot.bot && channel.isPrivate();
   if (tmp) {
     const rawRecipients = channel.rawRecipients;
-    tmp = null == rawRecipients.find((id) => id.id === bot.id);
+    tmp = null == rawRecipients.find((id) => id.id === id.id);
   }
   return tmp;
 };

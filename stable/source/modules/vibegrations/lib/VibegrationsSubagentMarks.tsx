@@ -1,48 +1,50 @@
-// Module ID: 17042
-// Function ID: 17043
+// Module ID: 16377
+// Function ID: 16378
 // Name: VibegrationsSubagentMarks
-// Dependencies: [3710, 1115, 2]
+// Dependencies: [3718, 1127, 2]
 // Exports: assignSubagentMarkKeys, isVibegrationsSubagentMarkKey, subagentMarkName
 
-// Module 17042 (VibegrationsSubagentMarks)
-import util from "util" /* 1115 */;
-import _modDef3710 from "module_3710" /* 3710 */;
+// Module 16377 (VibegrationsSubagentMarks)
+import intl2 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
 import size from "module_2" /* 2 */;
 
+let map;
+
 const items = ["snail", "goat", "frog", "bunny", "cat", "caterpillar", "butterfly", "dog", "spider", "bee", "bot"];
-const dependencyMap = {
+let closure_4 = {
   snail() {
-    return _modDef3710["2l3AEQ"];
+    return _modDef3718["2l3AEQ"];
   },
   goat() {
-    return _modDef3710["+FPL+I"];
+    return _modDef3718["+FPL+I"];
   },
   frog() {
-    return _modDef3710.w4GOfR;
+    return _modDef3718.w4GOfR;
   },
   bunny() {
-    return _modDef3710.XmZT9M;
+    return _modDef3718.XmZT9M;
   },
   cat() {
-    return _modDef3710.NnydwQ;
+    return _modDef3718.NnydwQ;
   },
   caterpillar() {
-    return _modDef3710["4iXcNT"];
+    return _modDef3718["4iXcNT"];
   },
   butterfly() {
-    return _modDef3710.DoTGt5;
+    return _modDef3718.DoTGt5;
   },
   dog() {
-    return _modDef3710["9zxqmP"];
+    return _modDef3718["9zxqmP"];
   },
   spider() {
-    return _modDef3710.HF0T3L;
+    return _modDef3718.HF0T3L;
   },
   bee() {
-    return _modDef3710.XTzDga;
+    return _modDef3718.XTzDga;
   },
   bot() {
-    return _modDef3710.abtC2b;
+    return _modDef3718.abtC2b;
   }
 };
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsSubagentMarks.tsx");
@@ -52,13 +54,15 @@ export const isVibegrationsSubagentMarkKey = function isVibegrationsSubagentMark
   return items.includes(helperMark);
 };
 export const subagentMarkName = function subagentMarkName(helperMark) {
-  const intl = util.intl;
-  return intl.string(dependencyMap[helperMark]());
+  const intl = intl2.intl;
+  return intl.string(closure_4[helperMark]());
 };
 export const assignSubagentMarkKeys = function assignSubagentMarkKeys(arr) {
-  let length = items;
-  c1 = 0;
+  let length;
+  let closure_0 = items;
+  let c1 = 0;
   let str = arr[0];
+  arr = items;
   if (str == null) {
     str = "";
   }
@@ -73,7 +77,7 @@ export const assignSubagentMarkKeys = function assignSubagentMarkKeys(arr) {
       length = str.length;
     } while (num < length);
   }
-  const map = new Map();
+  map = new Map();
   const item = arr.forEach((item, index) => {
     const result = map.set(item, length[(c1 + index) % length.length]);
   });

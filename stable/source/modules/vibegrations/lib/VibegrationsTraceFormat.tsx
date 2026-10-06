@@ -1,20 +1,21 @@
-// Module ID: 17077
-// Function ID: 17078
+// Module ID: 16419
+// Function ID: 16420
 // Name: vibegrations/VibegrationsTraceFormat
-// Dependencies: [1115, 3710, 2]
+// Dependencies: [1127, 3718, 2]
 // Exports: categoryLabel, formatDuration, formatTokens, omissionLabel, statusLabel, traceRichStatusLabel
 
-// Module 17077 (vibegrations/VibegrationsTraceFormat)
-import util from "util" /* 1115 */;
-import _modDef3710 from "module_3710" /* 3710 */;
+// Module 16419 (vibegrations/VibegrationsTraceFormat)
+import intl6 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTraceFormat.tsx");
 
 export const formatDuration = function formatDuration(arg0) {
+  let combined;
   if (arg0 < 1000) {
     const _HermesInternal2 = HermesInternal;
-    let combined = "" + arg0 + "ms";
+    combined = "" + arg0 + "ms";
   } else {
     const result = arg0 / 1000;
     const _HermesInternal = HermesInternal;
@@ -27,9 +28,10 @@ export const formatTokens = function formatTokens(promptTokens) {
     const _String = String;
     return String(promptTokens);
   } else {
+    let toFixedResult;
     const result = promptTokens / 1000;
     if (result < 10) {
-      let toFixedResult = result.toFixed(1);
+      toFixedResult = result.toFixed(1);
     } else {
       const _Math = Math;
       toFixedResult = Math.round(result);
@@ -40,66 +42,66 @@ export const formatTokens = function formatTokens(promptTokens) {
 };
 export const categoryLabel = function categoryLabel(traceCategoryResult) {
   if ("subagent" === traceCategoryResult) {
-    const intl5 = util.intl;
-    return intl5.string(_modDef3710["EoY7D+"]);
+    const intl5 = intl6.intl;
+    return intl5.string(_modDef3718["EoY7D+"]);
   } else if ("context" === traceCategoryResult) {
-    const intl4 = util.intl;
-    return intl4.string(_modDef3710.KVFrD3);
+    const intl4 = intl6.intl;
+    return intl4.string(_modDef3718.KVFrD3);
   } else if ("tool" === traceCategoryResult) {
-    const intl3 = util.intl;
-    return intl3.string(_modDef3710["/N6ZU9"]);
+    const intl3 = intl6.intl;
+    return intl3.string(_modDef3718["/N6ZU9"]);
   } else if ("delegated" === traceCategoryResult) {
-    const intl2 = util.intl;
-    return intl2.string(_modDef3710.HcEbf2);
+    const intl2 = intl6.intl;
+    return intl2.string(_modDef3718.HcEbf2);
   } else {
-    const intl = util.intl;
-    return intl.string(_modDef3710.AhOqQs);
+    const intl = intl6.intl;
+    return intl.string(_modDef3718.AhOqQs);
   }
 };
 export const statusLabel = function statusLabel(status) {
   if ("started" === status) {
-    const intl3 = util.intl;
-    return intl3.string(_modDef3710.HpKDyl);
+    const intl3 = intl6.intl;
+    return intl3.string(_modDef3718.HpKDyl);
   } else if ("error" === status) {
-    const intl2 = util.intl;
-    return intl2.string(_modDef3710["5T4Dd0"]);
+    const intl2 = intl6.intl;
+    return intl2.string(_modDef3718["5T4Dd0"]);
   } else {
-    const intl = util.intl;
-    return intl.string(_modDef3710.VbEmf0);
+    const intl = intl6.intl;
+    return intl.string(_modDef3718.VbEmf0);
   }
 };
 export const omissionLabel = function omissionLabel(content) {
   if ("prose" === content) {
-    const intl3 = util.intl;
-    return intl3.string(_modDef3710.xO6bcQ);
+    const intl3 = intl6.intl;
+    return intl3.string(_modDef3718.xO6bcQ);
   } else if ("content" === content) {
-    const intl2 = util.intl;
-    return intl2.string(_modDef3710.gpBZRr);
+    const intl2 = intl6.intl;
+    return intl2.string(_modDef3718.gpBZRr);
   } else {
-    const intl = util.intl;
-    return intl.string(_modDef3710.OZvPXt);
+    const intl = intl6.intl;
+    return intl.string(_modDef3718.OZvPXt);
   }
 };
 export const traceRichStatusLabel = function traceRichStatusLabel(vibegrationsTraceDetail) {
-  let tmp = null;
+  let stringResult = null;
   if (null != vibegrationsTraceDetail) {
-    tmp = null;
+    stringResult = null;
     if ("loaded" !== vibegrationsTraceDetail.status) {
-      tmp = null;
+      stringResult = null;
       if ("forbidden" !== vibegrationsTraceDetail.status) {
-        let tmp5 = dependencyMap;
-        const intl = util.intl;
+        let fj5wM8;
+        const intl = intl6.intl;
+        const string = intl.string;
         if ("loading" === vibegrationsTraceDetail.status) {
-          tmp5 = _modDef3710;
-          let fj5wM8 = tmp5["vBF/0G"];
+          fj5wM8 = _modDef3718["vBF/0G"];
         } else if ("unavailable" === vibegrationsTraceDetail.status) {
-          fj5wM8 = _modDef3710.jEQTot;
+          fj5wM8 = _modDef3718.jEQTot;
         } else {
-          fj5wM8 = _modDef3710.fj5wM8;
+          fj5wM8 = _modDef3718.fj5wM8;
         }
-        intl.string(fj5wM8);
+        stringResult = string(fj5wM8);
       }
     }
   }
-  return tmp;
+  return stringResult;
 };

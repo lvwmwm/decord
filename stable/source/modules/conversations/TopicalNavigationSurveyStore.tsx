@@ -1,44 +1,45 @@
-// Module ID: 8184
-// Function ID: 8185
+// Module ID: 7338
+// Function ID: 7339
 // Name: TopicalNavigationSurveyStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 8184 (TopicalNavigationSurveyStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 7338 (TopicalNavigationSurveyStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
 
-const channelsExposedCount = 0;
-const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
+const React = 0;
+const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class TopicalNavigationSurveyStore extends DeviceSettingsStore {
+  initialize(channelsExposedCount) {
+    let num;
+    if (channelsExposedCount != null) {
+      num = channelsExposedCount.channelsExposedCount;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    let closure_0 = num;
+  }
+  shouldTriggerOnNextExposure() {
+    return channelsExposedCount >= 2;
+  }
+  getState() {
+    return { channelsExposedCount };
+  }
+  getUserAgnosticState() {
+    return { channelsExposedCount };
+  }
 }
 const prototype = TopicalNavigationSurveyStore.prototype;
-prototype["initialize"] = function initialize(channelsExposedCount) {
-  let num;
-  if (channelsExposedCount != null) {
-    num = channelsExposedCount.channelsExposedCount;
-  }
-  if (num == null) {
-    num = 0;
-  }
-  closure_0 = num;
-};
-prototype["shouldTriggerOnNextExposure"] = function shouldTriggerOnNextExposure() {
-  return closure_0 >= 2;
-};
-prototype["getState"] = function getState() {
-  return { channelsExposedCount };
-};
-prototype["getUserAgnosticState"] = function getUserAgnosticState() {
-  return { channelsExposedCount };
-};
 TopicalNavigationSurveyStore.displayName = "TopicalNavigationSurveyStore";
 TopicalNavigationSurveyStore.persistKey = "TopicalNavigationSurveyStore";
-const topicalNavigationSurveyStore = new TopicalNavigationSurveyStore(DispatcherDefault, {
+const obj = {
   TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION: function handleTopicalNavigationEntrypointImpression() {
     closure_0 = closure_0 + 1;
   }
-});
-const size = fn(2);
+};
+const topicalNavigationSurveyStore = new TopicalNavigationSurveyStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/conversations/TopicalNavigationSurveyStore.tsx");
 
 export default topicalNavigationSurveyStore;

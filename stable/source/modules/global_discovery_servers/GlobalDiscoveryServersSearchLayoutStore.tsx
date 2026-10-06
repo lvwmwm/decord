@@ -1,31 +1,31 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 13250
+// Function ID: 13251
 // Name: GlobalDiscoveryServersSearchLayoutStore
-// Dependencies: [13997, 13999, 504, 573, 2]
+// Dependencies: [13249, 13251, 504, 585, 2]
 
-// Module 13998 (GlobalDiscoveryServersSearchLayoutStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13999 */;
-import GlobalDiscoveryServersSearchCountsStore from "GlobalDiscoveryServersSearchCountsStore" /* 13997 */;
+// Module 13250 (GlobalDiscoveryServersSearchLayoutStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import GlobalDiscoveryServersSearchCountsStore from "GlobalDiscoveryServersSearchCountsStore" /* 13249 */;
+import GlobalDiscoveryServersSearchResultsStore from "GlobalDiscoveryServersSearchResultsStore" /* 13251 */;
+import size from "module_2" /* 2 */;
 
 function reset() {
   counts = [];
 }
-GlobalDiscoveryServersSearchResultsStoreDefault;
 let counts = [];
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class GlobalDiscoveryServersSearchLayoutStore extends Store {
+  initialize() {
+    this.waitFor(GlobalDiscoveryServersSearchCountsStore, GlobalDiscoveryServersSearchResultsStore);
+  }
+  getVisibleTabs() {
+    return counts;
+  }
 }
 const prototype = GlobalDiscoveryServersSearchLayoutStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(GlobalDiscoveryServersSearchCountsStore, GlobalDiscoveryServersSearchResultsStore);
-};
-prototype["getVisibleTabs"] = function getVisibleTabs() {
-  return counts;
-};
 GlobalDiscoveryServersSearchLayoutStore.displayName = "GlobalDiscoveryServersSearchLayoutStore";
-const globalDiscoveryServersSearchLayoutStore = new GlobalDiscoveryServersSearchLayoutStore(DispatcherDefault, {
+const obj = {
   CONNECTION_OPEN: reset,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_LAYOUT_RESET: reset,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS: function handleGlobalDiscoveryServersSearchCountSuccess(query) {
@@ -34,8 +34,8 @@ const globalDiscoveryServersSearchLayoutStore = new GlobalDiscoveryServersSearch
       return false;
     }
   }
-});
-const size = fn(2);
+};
+const globalDiscoveryServersSearchLayoutStore = new GlobalDiscoveryServersSearchLayoutStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersSearchLayoutStore.tsx");
 
 export default globalDiscoveryServersSearchLayoutStore;

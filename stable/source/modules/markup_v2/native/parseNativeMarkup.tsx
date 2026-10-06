@@ -1,17 +1,16 @@
-// Module ID: 8395
-// Function ID: 8396
+// Module ID: 7555
+// Function ID: 7556
 // Name: parseNativeMarkup
-// Dependencies: [12, 8396, 8399, 2]
+// Dependencies: [12, 7556, 7559, 2]
 // Exports: default
 
-// Module 8395 (parseNativeMarkup)
-import _mod8396 from "module_8396" /* 8396 */;
-import transformNativeMarkupNode from "transformNativeMarkupNode" /* 8399 */;
-import apply from "module_12" /* 12 */;
+// Module 7555 (parseNativeMarkup)
+import _mod7556 from "module_7556" /* 7556 */;
+import transformNativeMarkupNode from "transformNativeMarkupNode" /* 7559 */;
+import module_12 from "module_12" /* 12 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_2 = apply.once(() => _mod8396.parse);
-const size = fn(2);
+let closure_2 = module_12.once(() => _mod7556.parse);
 let result = size.fileFinishedImporting("modules/markup_v2/native/parseNativeMarkup.tsx");
 
 export default function parseNativeMarkupToAST(arg0, arg1, channelId) {
@@ -19,7 +18,8 @@ export default function parseNativeMarkupToAST(arg0, arg1, channelId) {
   if (arg3 === undefined) {
     tmp = null;
   }
-  const result = transformNativeMarkupNode.transformNativeBlocks(closure_2()(arg0), channelId);
+  const obj = transformNativeMarkupNode;
+  const result = obj.transformNativeBlocks(closure_2()(arg0), channelId);
   let tmpResult = result;
   if (null != tmp) {
     tmpResult = tmp(result, arg1, false);

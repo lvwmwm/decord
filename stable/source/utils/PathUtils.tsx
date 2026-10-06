@@ -1,10 +1,11 @@
-// Module ID: 14290
-// Function ID: 14291
+// Module ID: 13538
+// Function ID: 13539
 // Name: PathUtils
-// Dependencies: [1364, 2]
+// Dependencies: [1370, 2]
 // Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
-// Module 14290 (PathUtils)
+// Module 13538 (PathUtils)
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/PathUtils.tsx");
@@ -12,6 +13,7 @@ const result = size.fileFinishedImporting("utils/PathUtils.tsx");
 export const pathJoin = function pathJoin() {
   const items = [...arguments];
   let str = "/";
+  const obj = PlatformUtils;
   if (obj.isWindows()) {
     str = "\\";
   }
@@ -25,6 +27,7 @@ export const pathBasename = function pathBasename(str, arg1) {
     arr = parts[parts.length - 1];
   }
   let substr = arr;
+  const tmp = null != arg1 && arr.endsWith(arg1);
   if (tmp) {
     substr = arr.slice(0, -arg1.length);
   }

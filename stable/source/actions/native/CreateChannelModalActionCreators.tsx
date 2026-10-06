@@ -1,48 +1,52 @@
-// Module ID: 9854
-// Function ID: 9855
+// Module ID: 8992
+// Function ID: 8993
 // Name: CreateChannelModalActionCreators
-// Dependencies: [2045, 2041, 4799, 4991, 9849, 1980, 2]
+// Dependencies: [2055, 2051, 4848, 5040, 8987, 1987, 2]
 
-// Module 9854 (CreateChannelModalActionCreators)
-import ChannelRecord from "ChannelRecord" /* 2045 */;
-import transitionToChannel from "transitionToChannel" /* 4799 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 8992 (CreateChannelModalActionCreators)
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import transitionToChannel from "transitionToChannel" /* 4848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 const isGuildReadableType = ChannelRecord.isGuildReadableType;
 const CREATE_CHANNEL_MODAL_KEY = "CREATE_CHANNEL_MODAL_KEY";
-const result = size.fileFinishedImporting("actions/native/CreateChannelModalActionCreators.tsx");
-
-export default {
+let obj = {
   CREATE_CHANNEL_MODAL_KEY: "CREATE_CHANNEL_MODAL_KEY",
-  open(arg0, guildId, categoryId, cloneChannelId) {
+  open(channelType, guildId, arg2, arg3) {
+    let tmp2;
+    let tmp3;
     const self = this;
     if (null != guildId) {
-      const obj2 = ModalActionCreatorsDefault;
-      const tmp = arg0;
+      const pushLazy = ModalActionCreatorsDefault.pushLazy;
+      ModalActionCreatorsDefault;
       let obj = {
-        channelType: tmp,
+        channelType,
         guildId,
-        categoryId,
-        cloneChannelId,
+        categoryId: tmp2,
+        cloneChannelId: tmp3,
         onChannelCreated(id, arg1) {
             self.close();
             const channel = ChannelStore.getChannel(id);
-            let tmp3 = null != arg1 && null != channel;
+            const tmp3 = null != arg1 && null != channel && isGuildReadableType(channel.type);
             if (tmp3) {
-              tmp3 = isGuildReadableType(channel.type);
-            }
-            if (tmp3) {
-              transitionToChannel.transitionToChannel(id);
+              const obj = transitionToChannel;
+              obj.transitionToChannel(id);
             }
           }
       };
-      obj2.pushLazy(self(1980)(9849, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
-      const tmp9 = self(1980)(9849, dependencyMap.paths);
+      tmp3 = arg3;
+      const tmp10 = self(1987)(8987, dependencyMap.paths);
+      pushLazy(tmp10, obj, CREATE_CHANNEL_MODAL_KEY);
+      tmp2 = arg2;
     }
   },
   close() {
-    ModalActionCreatorsDefault.popWithKey(CREATE_CHANNEL_MODAL_KEY);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(CREATE_CHANNEL_MODAL_KEY);
   }
 };
+const result = size.fileFinishedImporting("actions/native/CreateChannelModalActionCreators.tsx");
+
+export default obj;

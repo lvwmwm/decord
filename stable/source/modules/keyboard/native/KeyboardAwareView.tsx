@@ -1,22 +1,24 @@
-// Module ID: 5827
-// Function ID: 5828
+// Module ID: 6462
+// Function ID: 6463
 // Name: KeyboardAwareView
-// Dependencies: [32, 19, 17, 1480, 21, 1878, 4656, 1610, 5828, 5829, 5830, 2]
+// Dependencies: [32, 19, 17, 1487, 21, 1885, 4705, 1617, 6402, 6400, 6401, 2]
 
-// Module 5827 (KeyboardAwareView)
-import useKeyboardDuration from "useKeyboardDuration" /* 5829 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1480 */;
+// Module 6462 (KeyboardAwareView)
+import Fragment from "Fragment" /* 21 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 6400 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1487 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, StyleSheet: hasOwnProperty } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/keyboard/native/KeyboardAwareView.tsx");
-
-export default noop.memo(function KeyboardAwareView(style) {
+let closure_4;
+let hasOwnProperty;
+({ View: closure_4, StyleSheet: hasOwnProperty } = react_native);
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function KeyboardAwareView(style) {
+  let children;
+  let pointerEvents;
   style = style.style;
   let flag = style.animated;
   ({ children, pointerEvents } = style);
@@ -28,79 +30,89 @@ export default noop.memo(function KeyboardAwareView(style) {
     num = 0;
   }
   let marginBottom;
-  closure_5 = undefined;
+  let closure_5;
   let ref;
-  let systemKeyboardHeight = style(flag[5]).getSystemKeyboardHeight();
+  let obj = ref;
+  let tmp = style;
+  let tmp2 = flag;
+  const useRef = ref.useRef;
+  let _Math = Math;
+  const obj2 = style(flag[5]);
+  let systemKeyboardHeight = obj2.getSystemKeyboardHeight();
   if (0 === systemKeyboardHeight) {
-    let keyboardType = tmp(tmp2[6]).getKeyboardType();
+    const tmpResult = tmp(tmp2[6]);
+    let keyboardType = tmpResult.getKeyboardType();
     let num2 = 0;
     if (keyboardType !== tmp(tmp2[7]).KeyboardTypes.SYSTEM) {
-      num2 = tmp(tmp2[8]).getCustomKeyboardHeight();
       const tmpResult2 = tmp(tmp2[8]);
+      num2 = tmpResult2.getCustomKeyboardHeight();
     }
     systemKeyboardHeight = num2;
-    const tmpResult = tmp(tmp2[6]);
   }
-  ref = ref.useRef(Math.max(0, systemKeyboardHeight + num));
-  const tmp6 = num(ref.useState(ref.current), 2);
+  ref = useRef(max(0, systemKeyboardHeight + num));
+  const tmp6 = num(obj.useState(ref.current), 2);
   marginBottom = tmp6[0];
   closure_5 = tmp6[1];
   const items = [num];
   const effect = obj.useEffect(() => subscribeToKeyboardUIStore(() => {
-    let systemKeyboardHeight = style(flag[5]).getSystemKeyboardHeight();
+    const _Math = Math;
+    const obj = style(flag[5]);
+    let systemKeyboardHeight = obj.getSystemKeyboardHeight();
+    const tmp = closure_1_2;
     if (0 === systemKeyboardHeight) {
-      const keyboardType = tmp2(tmp3[6]).getKeyboardType();
+      const tmp2Result = style(flag[6]);
+      const keyboardType = tmp2Result.getKeyboardType();
       num = 0;
-      if (keyboardType !== tmp2(tmp3[7]).KeyboardTypes.SYSTEM) {
-        num = tmp2(tmp3[8]).getCustomKeyboardHeight();
-        const tmp2Result2 = tmp2(tmp3[8]);
+      if (keyboardType !== style(flag[7]).KeyboardTypes.SYSTEM) {
+        const tmp2Result2 = style(flag[8]);
+        num = tmp2Result2.getCustomKeyboardHeight();
       }
       systemKeyboardHeight = num;
-      const tmp2Result = tmp2(tmp3[6]);
     }
-    const bound = Math.max(0, systemKeyboardHeight + closure_1_2);
-    if (ref.current !== bound) {
-      ref.current = bound;
-      closure_1_5(bound);
+    const maxResult = max(0, systemKeyboardHeight + tmp);
+    if (ref.current !== maxResult) {
+      ref.current = maxResult;
+      closure_1_5(maxResult);
     }
   }), items);
   ref = obj.useRef(false);
   const items1 = [flag, marginBottom];
   const effect1 = obj.useEffect(() => {
     if (ref.current) {
-      const keyboardDuration = useKeyboardDuration.getKeyboardDuration();
+      const obj = useKeyboardDuration;
+      const keyboardDuration = obj.getKeyboardDuration();
       let tmp5 = flag;
-      if (flag) {
+      const tmp2 = require;
+      if (tmp5) {
         tmp5 = keyboardDuration > 0;
       }
       if (tmp5) {
-        const result = tmp2(5830).DeprecatedLayoutAnimationKeyboard(keyboardDuration);
-        const tmp2Result = tmp2(5830);
+        const tmp2Result = tmp2(6401);
+        const result = tmp2Result.DeprecatedLayoutAnimationKeyboard(keyboardDuration);
       }
-      tmp2 = require;
     } else {
       tmp.current = true;
     }
   }, items1);
   const items2 = [marginBottom, style];
-  let obj2 = style(flag[5]);
-  return <marginBottom style={ref.useMemo(() => {
+  return <marginBottom style={obj.useMemo(() => {
     if (null == style) {
-      const obj2 = { marginBottom };
-      return obj2;
+      return { marginBottom };
     } else {
+      let obj3;
       const flattenResult = hasOwnProperty.flatten(tmp);
       if (typeof flattenResult.marginBottom === "number") {
-        const obj = {};
+        const obj = { marginBottom: flattenResult.marginBottom + marginBottom };
         const merged = Object.assign(flattenResult);
-        obj.marginBottom = flattenResult.marginBottom + marginBottom;
-        let obj3 = obj;
+        obj3 = obj;
       } else {
-        obj3 = {};
+        obj3 = { marginBottom };
         const merged1 = Object.assign(flattenResult);
-        obj3.marginBottom = marginBottom;
       }
       return obj3;
     }
   }, items2)} pointerEvents={pointerEvents}>{children}</marginBottom>;
 });
+let result = size.fileFinishedImporting("modules/keyboard/native/KeyboardAwareView.tsx");
+
+export default memoResult;

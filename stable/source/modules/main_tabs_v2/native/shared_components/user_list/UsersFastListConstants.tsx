@@ -1,15 +1,15 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 10368
+// Function ID: 10369
 // Name: UsersFastListConstants
-// Dependencies: [576, 2]
+// Dependencies: [588, 2]
 
-// Module 10510 (UsersFastListConstants)
-import nativeDefault from "native" /* 576 */;
+// Module 10368 (UsersFastListConstants)
+import nativeDefault from "native" /* 588 */;
+import size from "module_2" /* 2 */;
 
 const PX_24 = nativeDefault.space.PX_24;
 const PX_8 = nativeDefault.space.PX_8;
 const sum = 18 + PX_24 + PX_8;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UsersFastListConstants.tsx");
 
 export const USERS_LIST_PADDING_BETWEEN_SECTIONS = PX_24;

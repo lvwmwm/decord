@@ -1,22 +1,23 @@
-// Module ID: 17548
-// Function ID: 17549
+// Module ID: 16848
+// Function ID: 16849
 // Name: PanelSizeUtils
-// Dependencies: [12555, 2]
+// Dependencies: [11648, 2]
 // Exports: getMaxPanelWidth, getPanelX
 
-// Module 17548 (PanelSizeUtils)
-import VoicePanelConstants from "VoicePanelConstants" /* 12555 */;
+// Module 16848 (PanelSizeUtils)
+import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
 import size from "module_2" /* 2 */;
 
 const VOICE_PANEL_DRAWER_MAX_WIDTH = VoicePanelConstants.VOICE_PANEL_DRAWER_MAX_WIDTH;
 function getMaxPanelWidth(windowWidth) {
   windowWidth = windowWidth.windowWidth;
   let bound = windowWidth;
+  const _Math = Math;
   if (!windowWidth.connected) {
-    const _Math = Math;
+    const _Math2 = Math;
     bound = Math.min(VOICE_PANEL_DRAWER_MAX_WIDTH, windowWidth - tmp - tmp2);
   }
-  return Math.min(windowWidth, bound);
+  return min(windowWidth, bound);
 }
 getMaxPanelWidth.__closure = { VOICE_PANEL_DRAWER_MAX_WIDTH };
 getMaxPanelWidth.__workletHash = 6813992446153;

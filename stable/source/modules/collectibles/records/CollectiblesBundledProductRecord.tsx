@@ -1,31 +1,40 @@
-// Module ID: 7819
-// Function ID: 7820
+// Module ID: 6969
+// Function ID: 6970
 // Name: CollectiblesBundledProductRecord
-// Dependencies: [5762, 2]
+// Dependencies: [5826, 2]
 
-// Module 7819 (CollectiblesBundledProductRecord)
+// Module 6969 (CollectiblesBundledProductRecord)
 import size from "module_2" /* 2 */;
 
-const prototype = function CollectiblesBundledProductRecord(arg0) {
-  ({ prices: tmp.prices, type: tmp.type, premiumType: tmp.premiumType, name: tmp.name, skuId: tmp.skuId, summary: tmp.summary } = arg0);
-  return Object.create(new.target.prototype);
-}.prototype;
-prototype["fromServer"] = function fromServer(arg0) {
-  ({ prices, type, premium_type, name, sku_id, summary } = arg0);
-  if (typeof prototype === "function") {
-    const obj = Object.create(tmp.prototype);
-    obj.prices = tmp2;
-    obj.type = type;
-    obj.premiumType = premium_type;
-    obj.name = name;
-    obj.skuId = sku_id;
-    obj.summary = summary;
+class CollectiblesBundledProductRecord {
+  constructor(arg0) {
+    ({ prices: tmp.prices, type: tmp.type, premiumType: tmp.premiumType, name: tmp.name, skuId: tmp.skuId, summary: tmp.summary } = arg0);
+    const obj = Object.create(new.target.prototype);
     return obj;
-  } else {
-    throw new TypeError("Trying to call a non-function");
   }
-  tmp = prototype;
-};
+  static fromServer(arg0) {
+    let name;
+    let premium_type;
+    let prices;
+    let sku_id;
+    let summary;
+    let type;
+    ({ prices, type, premium_type, name, sku_id, summary } = arg0);
+    const tmp = CollectiblesBundledProductRecord;
+    if (typeof CollectiblesBundledProductRecord === "function") {
+      const obj = Object.create(tmp.prototype);
+      obj.prices = tmp2;
+      obj.type = type;
+      obj.premiumType = premium_type;
+      obj.name = name;
+      obj.skuId = sku_id;
+      obj.summary = summary;
+      return obj;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+}
 const result = size.fileFinishedImporting("modules/collectibles/records/CollectiblesBundledProductRecord.tsx");
 
-export default prototype;
+export default CollectiblesBundledProductRecord;

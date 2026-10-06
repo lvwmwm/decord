@@ -1,23 +1,41 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 9194
+// Function ID: 9195
 // Name: UserProfileWYSIWYGEditingExperiment
-// Dependencies: [1434, 2]
-// Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
+// Dependencies: [1441, 558, 576, 2]
+// Exports: getIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 10068 (UserProfileWYSIWYGEditingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 9194 (UserProfileWYSIWYGEditingExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-03-wysiwyg-user-profile-editing", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { name: "2026-03-wysiwyg-user-profile-editing", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+let closure_2 = ApexExperiment.createApexExperiment(obj);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_2.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return closure_2.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfileWYSIWYGEditingExperiment.tsx");
 
-export const useIsEligibleForUserProfileWYSIWYGEditing = function useIsEligibleForUserProfileWYSIWYGEditing(AutomodQuarantineUtils) {
-  return closure_0.useConfig({ location: AutomodQuarantineUtils }).enabled;
-};
+export const useIsEligibleForUserProfileWYSIWYGEditing = tmp2;
 export const getIsEligibleForUserProfileWYSIWYGEditing = function getIsEligibleForUserProfileWYSIWYGEditing(location) {
-  return closure_0.getConfig({ location }).enabled;
+  const obj = { location };
+  return closure_2.getConfig(obj).enabled;
 };

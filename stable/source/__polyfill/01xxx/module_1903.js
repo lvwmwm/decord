@@ -3,48 +3,29 @@
 // Dependencies: []
 
 // Module 1903
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "hr",
+const obj = {
+  locale: "da",
   pluralRuleFunction(arg0, arg1) {
-    const parts = String(arg0).split(".");
+    let str3;
+    const str = String(arg0);
+    const parts = str.split(".");
     const first = parts[0];
-    const substr = first.slice(-1);
-    const substr1 = first.slice(-2);
-    const substr2 = arr2.slice(-1);
-    const substr3 = arr2.slice(-2);
-    let str2 = "other";
-    if (!arg1) {
-      if (!tmp2) {
-        if (1 == substr) {
-          let str3 = "one";
-        }
-        str2 = str3;
-      }
-      if (1 != substr2) {
-        if (!tmp2) {
-          if (substr >= 2) {
-            if (substr <= 4) {
-              if (substr1 >= 12) {
-                str3 = str4;
-              }
-            }
-            str4 = "few";
+    const tmp4 = arg1;
+    if (tmp4) {
+      str3 = "other";
+    } else {
+      str3 = "one";
+      if (1 != arg0) {
+        if (!tmp3) {
+          str3 = "one";
+          if (0 != first) {
+            str3 = "one";
           }
         }
-        str4 = "other";
-        if (substr2 >= 2) {
-          str4 = "other";
-          if (substr2 <= 4) {
-            if (substr3 >= 12) {
-              str4 = "other";
-            }
-          }
-        }
-      } else {
-        str3 = "one";
       }
     }
-    return str2;
+    return str3;
   }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "hr-BA", parentLocale: "hr" });
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj);
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "da-GL", parentLocale: "da" });

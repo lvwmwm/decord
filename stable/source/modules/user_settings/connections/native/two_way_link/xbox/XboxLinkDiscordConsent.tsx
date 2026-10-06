@@ -1,32 +1,90 @@
-// Module ID: 9389
-// Function ID: 9390
+// Module ID: 8541
+// Function ID: 8542
 // Name: XboxLinkDiscordConsent
-// Dependencies: [19, 9376, 1074, 9390, 21, 1484, 9391, 9392, 2]
-// Exports: default
+// Dependencies: [19, 8528, 1086, 8542, 21, 558, 576, 1491, 8543, 8544, 2]
 
-// Module 9389 (XboxLinkDiscordConsent)
-import noop from "module_19" /* 19 */;
+// Module 8541 (XboxLinkDiscordConsent)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 8528 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8542 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const XboxLinkModalScenes = fn(9376).XboxLinkModalScenes;
-const PlatformTypes = fn(1074).PlatformTypes;
-const XBOX_CLIENT_SCOPES = fn(9390).XBOX_CLIENT_SCOPES;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkDiscordConsent.tsx");
+let navigation;
 
-export default function XboxLinkDiscordConsent(arg0) {
-  let navigation;
+const XboxLinkModalScenes = XboxLinkConstants.XboxLinkModalScenes;
+const PlatformTypes = Constants.PlatformTypes;
+const XBOX_CLIENT_SCOPES = GameConsoleConstants.XBOX_CLIENT_SCOPES;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let callbackCode;
+  let callbackState;
+  let tmp5;
+  let tmp6;
+  const obj = navigation(576);
+  const cResult = obj.c(9);
   ({ callbackCode, callbackState } = arg0);
-  navigation = navigation(1484).useNavigation();
+  const obj2 = navigation(1491);
+  navigation = obj2.useNavigation();
+  if (cResult[0] !== navigation) {
+    const fn = function s() {
+      navigation.push(XboxLinkModalScenes.SUCCESS);
+    };
+    cResult[0] = navigation;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== navigation) {
+    const fn2 = function k() {
+      navigation.push(XboxLinkModalScenes.ERROR);
+    };
+    cResult[2] = navigation;
+    cResult[3] = fn2;
+    tmp6 = fn2;
+  } else {
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] === callbackCode) {
+    if (cResult[5] === callbackState) {
+      if (cResult[6] === tmp6) {
+        let tmp7;
+        if (cResult[7] === tmp5) {
+          tmp7 = cResult[8];
+        }
+        return tmp7;
+      }
+    }
+  }
+  const TwoWayLinkDiscordConsent = tmp(8543).TwoWayLinkDiscordConsent;
+  const tmp8 = <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(8544).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={tmp5} onError={tmp6} />;
+  cResult[4] = callbackCode;
+  cResult[5] = callbackState;
+  cResult[6] = tmp6;
+  cResult[7] = tmp5;
+  cResult[8] = tmp8;
+  tmp7 = tmp8;
+}) : ((arg0) => {
+  let callbackCode;
+  let callbackState;
+  navigation = undefined;
+  ({ callbackCode, callbackState } = arg0);
+  const obj = navigation(1491);
+  navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     navigation.push(XboxLinkModalScenes.SUCCESS);
   }, items);
-  const callback1 = noop.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
-  const obj = navigation(1484);
-  return jsx(navigation(9391).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: navigation(9392).ConsoleOAuthApplications.XBOX_APPLICATION_ID, scopes: XBOX_CLIENT_SCOPES, onNext: callback, onError: callback1 });
-};
+  const TwoWayLinkDiscordConsent = navigation(8543).TwoWayLinkDiscordConsent;
+  return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(8544).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
+});
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkDiscordConsent.tsx");
+
+export default tmp2;

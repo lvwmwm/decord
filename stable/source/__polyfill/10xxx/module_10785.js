@@ -1,95 +1,55 @@
 // Module ID: 10785
 // Function ID: 10786
-// Dependencies: [41, 42, 93, 95, 98, 10733, 10735]
+// Dependencies: [5, 17, 10778]
+// Exports: saveDocuments
 
 // Module 10785
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import react_native from "react-native" /* 17 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
-const FRCasualTimeParser = require;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
+let closure_1;
+
+let obj = function _saveDocuments() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c2;
+    let c3;
+    let closure_0 = arg0;
+    if (arg0 === 1) {
+      throw arg1;
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class FRCasualTimeParser {
-  constructor() {
-    self = this;
-    tmp = c2(this, FRCasualTimeParser);
-    tmp2 = closure_4;
-    obj = closure_4(FRCasualTimeParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+    if (arg0 === 2) {
+      return arg1;
     }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FRCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return /(cet?)?\s*(matin|soir|après-midi|aprem|a midi|à minuit)(?=\W|$)/i;
-  }
-};
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const formatted = arg1[2].toLowerCase();
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      if ("apr\u00E8s-midi" !== formatted) {
-        if ("aprem" !== formatted) {
-          if ("soir" === formatted) {
-            parsingComponents.imply("hour", 18);
-            parsingComponents.imply("minute", 0);
-            parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.PM);
-          } else if ("matin" === formatted) {
-            parsingComponents.imply("hour", 8);
-            parsingComponents.imply("minute", 0);
-            parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.AM);
-          } else if ("a midi" === formatted) {
-            parsingComponents.imply("hour", 12);
-            parsingComponents.imply("minute", 0);
-            parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.AM);
-          } else if ("\u00E0 minuit" === formatted) {
-            parsingComponents.imply("hour", 0);
-            parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.AM);
-          }
-        }
-        return parsingComponents;
+    await _asyncToGenerator(async () => {
+      let tmp;
+      closure_1 = tmp4;
+      const tmp18 = tmp;
+      if (tmp.sourceUris.length > 1) {
+        const _console = console;
+        const _HermesInternal = HermesInternal;
+        console.warn("DocumentPicker.saveDocuments: Android only allows to save one file at a time.\n\n      You provided an array with " + tmp.sourceUris.length + " entries.");
       }
-      parsingComponents.imply("hour", 14);
-      parsingComponents.imply("minute", 0);
-      parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.PM);
+      const NativeDocumentPicker2 = tmp(closure_1[2]).NativeDocumentPicker;
+      tmp = await NativeDocumentPicker2.saveDocument(tmp18);
+      const NativeDocumentPicker = tmp(closure_1[2]).NativeDocumentPicker;
+      await NativeDocumentPicker.writeDocuments(tmp);
+      return arg1;
+    })();
+    if (arg0 === 1) {
+      throw arg1;
     }
-  }
-];
+    if (arg0 === 2) {
+      return arg1;
+    }
+    return arg1.map(closure_129_4);
+  });
+  return obj(...arguments);
+};
+function keepOnlySpecifiedFields(uri) {
+  return { uri: uri.uri, name: uri.name, error: uri.error };
+}
+const Platform = react_native.Platform;
 
-export default _createClass(FRCasualTimeParser, items);
+export const saveDocuments = function saveDocuments(arg0) {
+  return obj(...arguments);
+};

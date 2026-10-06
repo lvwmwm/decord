@@ -1,28 +1,35 @@
-// Module ID: 13582
-// Function ID: 13583
+// Module ID: 12824
+// Function ID: 12825
 // Name: Loading
-// Dependencies: [8223, 4788, 576, 2]
+// Dependencies: [7379, 4837, 588, 2]
 // Exports: generateLoadingRowData
 
-// Module 13582 (Loading)
-import nativeDefault from "native" /* 576 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8223 */;
-import createStyles from "createStyles" /* 4788 */;
+// Module 12824 (Loading)
+import nativeDefault from "native" /* 588 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
+import createStyles from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
-({ LoadingType: closure_0, RowType: closure_1, SeparatorAction: c2 } = RowGeneratorConstants);
-let closure_3 = createStyles.createNativeStyleProperties({ loadButtonBackgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, loadButtonColor: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, loadingColor: nativeDefault.colors.ICON_SUBTLE });
+let _window;
+let c2;
+let map;
+({ LoadingType: _window, RowType: map, SeparatorAction: c2 } = RowGeneratorConstants);
+let obj = { loadButtonBackgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, loadButtonColor: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, loadingColor: nativeDefault.colors.ICON_SUBTLE };
+let closure_3 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/rows/Loading.tsx");
 
 export const generateLoadingRowData = function generateLoadingRowData(rowType, theme) {
+  let changeType;
+  let isLoading;
+  let text;
   ({ rowType, isLoading } = rowType);
   ({ changeType, text } = rowType);
   const tmp = closure_3(theme);
-  if (rowType === constants.LOAD_BEFORE) {
+  if (rowType === _window.LOAD_BEFORE) {
     let LOAD_MORE_AFTER = constants3.LOAD_MORE_BEFORE;
   } else {
     LOAD_MORE_AFTER = constants3.LOAD_MORE_AFTER;
   }
-  const obj = { type: constants2.LOADING, id: rowType, button: { action: { type: LOAD_MORE_AFTER }, backgroundColor: tmp.loadButtonBackgroundColor, cornerRadius: 4, text }, color: isLoading ? tmp.loadingColor : tmp.loadButtonColor, changeType, isLoading };
+  const obj = { type: map.LOADING, id: rowType, button: obj2, color: isLoading ? tmp.loadingColor : tmp.loadButtonColor, changeType, isLoading };
   return obj;
 };

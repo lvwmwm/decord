@@ -1,17 +1,17 @@
-// Module ID: 14133
-// Function ID: 14134
+// Module ID: 13381
+// Function ID: 13382
 // Name: OverlaySupported
-// Dependencies: [1364, 2]
+// Dependencies: [1370, 2]
 
-// Module 14133 (OverlaySupported)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+// Module 13381 (OverlaySupported)
+import PlatformUtils from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 let flag = PlatformUtils.isPlatformEmbedded;
 if (flag) {
   const _module = PlatformUtils;
   flag = _module.isWindows() || false;
-  const tmp2 = _module.isWindows() || false;
+  _module.isWindows() || false;
 }
 if (flag) {
   flag = false;

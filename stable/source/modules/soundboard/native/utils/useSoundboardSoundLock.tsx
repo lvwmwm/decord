@@ -1,55 +1,314 @@
-// Module ID: 17541
-// Function ID: 17542
+// Module ID: 16880
+// Function ID: 16881
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1372, 5258, 504, 7618, 4446, 17542, 8125, 8128, 4486, 10366, 1115, 2]
-// Exports: useSoundboardSoundLock
+// Dependencies: [19, 1378, 5322, 558, 576, 504, 6763, 4491, 16881, 7274, 7277, 4531, 9526, 1127, 2]
 
-// Module 17541 (useSoundboardSoundLock)
-import util from "util" /* 1115 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8125 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8128 */;
-import _modDef10366 from "module_10366" /* 10366 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17542 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 16880 (useSoundboardSoundLock)
+import intl3 from "intl" /* 1127 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
+import SoundboardConstants from "SoundboardConstants" /* 5322 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7274 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7277 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9526 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 16881 */;
+import react from "react" /* 19 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-require = fn;
-const DEFAULT_SOUND_GUILD_ID = fn(5258).DEFAULT_SOUND_GUILD_ID;
-const size = fn(2);
+const DEFAULT_SOUND_GUILD_ID = SoundboardConstants.DEFAULT_SOUND_GUILD_ID;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id) => {
+  let closure_1;
+  let currentUser;
+  let tmp17;
+  let tmp4;
+  let tmp5;
+  _require = guildId;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(19);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function u() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = fn;
+    tmp4 = items;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === guild_id) {
+    if (cResult[3] === stateFromStores) {
+      let tmp8;
+      if (cResult[4] === guildId) {
+        tmp8 = cResult[5];
+      }
+      if (cResult[6] === guild_id) {
+        if (cResult[7] === stateFromStores) {
+          let tmp11;
+          if (cResult[8] === guildId.guildId) {
+            tmp11 = cResult[9];
+          }
+          importDefault = tmp11;
+          if (cResult[10] === tmp11) {
+            let tmp15;
+            if (cResult[11] === guildId.available) {
+              tmp15 = cResult[12];
+            }
+            let tmp16;
+            if (!tmp8) {
+              if (tmp11) {
+                const _Symbol2 = Symbol;
+                if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+                  const intl2 = tmp(1127).intl;
+                  const stringResult = intl2.string(tmp(1127).t.BARTXV);
+                  class E {
+                    constructor(arg0) {
+                      let intl;
+                      const tmp = closure_1;
+                      if (tmp) {
+                        const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
+                        const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                        const tmp17 = openPremiumUpsellActionSheetDefault;
+                        const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+                        let tmp20;
+                        if (returnOnUpsellDismiss) {
+                          tmp20 = arg0;
+                        }
+                        tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                      } else if (!guildId.available) {
+                        const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                        const open = ToastActionCreatorsDefault.open;
+                        ToastActionCreatorsDefault;
+                        intl = intl3.intl;
+                        open(obj);
+                      }
+                    }
+                  }
+                  cResult[13] = stringResult;
+                  let tmp20 = stringResult;
+                } else {
+                  tmp20 = cResult[13];
+                }
+                class E {
+                  constructor(arg0) {
+                    let intl;
+                    const tmp = closure_1;
+                    if (tmp) {
+                      const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
+                      const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                      const tmp17 = openPremiumUpsellActionSheetDefault;
+                      const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+                      let tmp20;
+                      if (returnOnUpsellDismiss) {
+                        tmp20 = arg0;
+                      }
+                      tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                    } else if (!guildId.available) {
+                      const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                      const open = ToastActionCreatorsDefault.open;
+                      ToastActionCreatorsDefault;
+                      intl = intl3.intl;
+                      open(obj);
+                    }
+                  }
+                }
+              } else if (!guildId.available) {
+                const _Symbol = Symbol;
+                if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+                  let intl = tmp(1127).intl;
+                  const stringResult1 = intl.string(tmp(1127).t.MDOXJR);
+                  class E {
+                    constructor(arg0) {
+                      let intl;
+                      const tmp = closure_1;
+                      if (tmp) {
+                        const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
+                        const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                        const tmp17 = openPremiumUpsellActionSheetDefault;
+                        const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+                        let tmp20;
+                        if (returnOnUpsellDismiss) {
+                          tmp20 = arg0;
+                        }
+                        tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                      } else if (!guildId.available) {
+                        const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                        const open = ToastActionCreatorsDefault.open;
+                        ToastActionCreatorsDefault;
+                        intl = intl3.intl;
+                        open(obj);
+                      }
+                    }
+                  }
+                  cResult[14] = stringResult1;
+                }
+                class E {
+                  constructor(arg0) {
+                    let intl;
+                    const tmp = closure_1;
+                    if (tmp) {
+                      const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
+                      const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                      const tmp17 = openPremiumUpsellActionSheetDefault;
+                      const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+                      let tmp20;
+                      if (returnOnUpsellDismiss) {
+                        tmp20 = arg0;
+                      }
+                      tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                    } else if (!guildId.available) {
+                      const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                      const open = ToastActionCreatorsDefault.open;
+                      ToastActionCreatorsDefault;
+                      intl = intl3.intl;
+                      open(obj);
+                    }
+                  }
+                }
+              }
+              tmp16 = tmp17;
+            }
+            class E {
+              constructor(arg0) {
+                let intl;
+                const tmp = closure_1;
+                if (tmp) {
+                  const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
+                  const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                  const tmp17 = openPremiumUpsellActionSheetDefault;
+                  const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+                  let tmp20;
+                  if (returnOnUpsellDismiss) {
+                    tmp20 = arg0;
+                  }
+                  tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+                } else if (!guildId.available) {
+                  const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                  const open = ToastActionCreatorsDefault.open;
+                  ToastActionCreatorsDefault;
+                  intl = intl3.intl;
+                  open(obj);
+                }
+              }
+            }
+            const obj2 = { isLocked: !tmp8, lockedAccessibilityHint: tmp16, onLockedPress: tmp15 };
+            cResult[15] = !tmp8;
+            cResult[16] = tmp16;
+            cResult[17] = tmp15;
+            cResult[18] = obj2;
+          }
+          class E {
+            constructor(arg0) {
+              let intl;
+              const tmp = closure_1;
+              if (tmp) {
+                const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
+                const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+                const tmp17 = openPremiumUpsellActionSheetDefault;
+                const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+                let tmp20;
+                if (returnOnUpsellDismiss) {
+                  tmp20 = arg0;
+                }
+                tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+              } else if (!guildId.available) {
+                const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                const open = ToastActionCreatorsDefault.open;
+                ToastActionCreatorsDefault;
+                intl = intl3.intl;
+                open(obj);
+              }
+            }
+          }
+          cResult[10] = tmp11;
+          cResult[11] = guildId.available;
+          cResult[12] = E;
+          tmp15 = E;
+        }
+      }
+      const obj4 = PremiumUtilsDefault;
+      const result = obj4.canUseSoundboardEverywhere(stateFromStores);
+      let tmp13 = !result && guildId.guildId !== guild_id.guild_id;
+      if (tmp13) {
+        tmp13 = guildId.guildId !== DEFAULT_SOUND_GUILD_ID;
+      }
+      cResult[6] = guild_id;
+      cResult[7] = stateFromStores;
+      cResult[8] = guildId.guildId;
+      cResult[9] = tmp13;
+      tmp11 = tmp13;
+    }
+  }
+  const tmpResult2 = tmp(6763);
+  const result1 = tmpResult2.canUseSoundboardSound(stateFromStores, guildId, guild_id);
+  cResult[2] = guild_id;
+  cResult[3] = stateFromStores;
+  cResult[4] = guildId;
+  cResult[5] = result1;
+  tmp8 = result1;
+}) : ((guildId, guild_id) => {
+  let closure_1;
+  let currentUser;
+  _require = guildId;
+  let tmp = _require;
+  let obj = require("get initialized");
+  const items = [UserStore];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj2 = require("SoundboardUtils");
+  const result = obj2.canUseSoundboardSound(stateFromStores, guildId, guild_id);
+  const isLocked = !result;
+  const obj3 = PremiumUtilsDefault;
+  const result1 = obj3.canUseSoundboardEverywhere(stateFromStores);
+  let tmp7 = !result1 && guildId.guildId !== guild_id.guild_id;
+  if (tmp7) {
+    tmp7 = guildId.guildId !== DEFAULT_SOUND_GUILD_ID;
+  }
+  importDefault = tmp7;
+  const items1 = [tmp7, guildId.available];
+  let lockedAccessibilityHint;
+  const onLockedPress = react.useCallback((arg0) => {
+    let intl;
+    const tmp = closure_1;
+    if (tmp) {
+      const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
+      const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
+      const tmp17 = openPremiumUpsellActionSheetDefault;
+      const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+      let tmp20;
+      if (returnOnUpsellDismiss) {
+        tmp20 = arg0;
+      }
+      tmp17(SOUNDBOARD_EVERYWHERE, undefined, undefined, tmp20);
+    } else if (!guildId.available) {
+      const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+      const open = ToastActionCreatorsDefault.open;
+      ToastActionCreatorsDefault;
+      intl = intl3.intl;
+      open(obj);
+    }
+  }, items1);
+  if (!result) {
+    let stringResult;
+    if (tmp7) {
+      const intl2 = tmp(1127).intl;
+      stringResult = intl2.string(tmp(1127).t.BARTXV);
+    } else if (!guildId.available) {
+      let intl = tmp(1127).intl;
+      stringResult = intl.string(tmp(1127).t.MDOXJR);
+    }
+    lockedAccessibilityHint = stringResult;
+  }
+  return { isLocked, lockedAccessibilityHint, onLockedPress };
+});
 let result = size.fileFinishedImporting("modules/soundboard/native/utils/useSoundboardSoundLock.tsx");
 
-export const useSoundboardSoundLock = function useSoundboardSoundLock(sound, channel) {
-  _require = sound;
-  let BARTXV = dependencyMap;
-  const items = [UserStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj = require("initialize");
-  const result = require("SoundboardUtils").canUseSoundboardSound(stateFromStores, sound, channel);
-  let obj2 = require("SoundboardUtils");
-  const tmp4 = !result;
-  const result1 = PremiumUtilsDefault.canUseSoundboardEverywhere(stateFromStores);
-  let tmp6 = !result1;
-  if (!result1) {
-    tmp6 = sound.guildId !== channel.guild_id;
-  }
-  if (tmp6) {
-    tmp6 = sound.guildId !== DEFAULT_SOUND_GUILD_ID;
-  }
-  importDefault = tmp6;
-  const items1 = [tmp6, sound.available];
-  if (result) {
-    const obj4 = { isLocked: tmp4, lockedAccessibilityHint: undefined, onLockedPress: tmp8 };
-    return obj4;
-  } else if (tmp6) {
-    const intl2 = tmp(1115).intl;
-    BARTXV = tmp(1115).t.BARTXV;
-    let stringResult = intl2.string(BARTXV);
-  } else if (!sound.available) {
-    let intl = tmp(1115).intl;
-    stringResult = intl.string(tmp(1115).t.MDOXJR);
-  }
-};
+export const useSoundboardSoundLock = tmp2;

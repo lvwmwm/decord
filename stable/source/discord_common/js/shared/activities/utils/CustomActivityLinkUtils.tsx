@@ -1,36 +1,39 @@
-// Module ID: 13265
-// Function ID: 13266
+// Module ID: 12501
+// Function ID: 12502
 // Name: utils/CustomActivityLinkUtils
 // Dependencies: [32, 2]
 // Exports: decodeCustomActivityLink
 
-// Module 13265 (utils/CustomActivityLinkUtils)
-import _slicedToArray from "module_32" /* 32 */;
+// Module 12501 (utils/CustomActivityLinkUtils)
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
 const CustomLinkType = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };
-const size = fn(2);
 const result = size.fileFinishedImporting("../discord_common/js/shared/activities/utils/CustomActivityLinkUtils.tsx");
 
 export { CustomLinkType };
 export const decodeCustomActivityLink = function decodeCustomActivityLink(link_id) {
+  let first;
+  let obj;
+  let tmp4;
   if (null == link_id) {
     return null;
   } else {
-    const tmp2 = _slicedToArray(link_id.split("-"), 2);
-    const first = tmp2[0];
+    let MANAGED;
+    [first, tmp4] = link_id.split("-");
     if ("0" === first) {
-      let MANAGED = obj.MANAGED;
+      MANAGED = obj.MANAGED;
     } else {
       MANAGED = null;
       if ("1" === first) {
         MANAGED = obj.QUICK;
       }
     }
-    let tmp7 = null;
+    let tmp8 = null;
     if (null != MANAGED) {
-      obj = { type: MANAGED, encodedLinkId: link_id, decodedLinkId: tmp2[1] };
-      tmp7 = obj;
+      obj = { type: MANAGED, encodedLinkId: link_id, decodedLinkId: tmp4 };
+      tmp8 = obj;
     }
-    return tmp7;
+    return tmp8;
   }
 };

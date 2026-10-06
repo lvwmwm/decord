@@ -1,16 +1,17 @@
-// Module ID: 9553
-// Function ID: 9554
+// Module ID: 8705
+// Function ID: 8706
 // Name: AgeRestrictedApplicationCommandsExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1442, 2]
 
-// Module 9553 (AgeRestrictedApplicationCommandsExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
+// Module 8705 (AgeRestrictedApplicationCommandsExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1442 */;
+import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-05-age-restricted-application-commands", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { kind: "user", name: "2026-05-age-restricted-application-commands", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
-const size = fn(2);
+const tmp2 = apex_ApexExperimentDefault(obj);
 const result = size.fileFinishedImporting("modules/application_commands/AgeRestrictedApplicationCommandsExperiment.tsx");
 
-export default apex_ApexExperimentDefault(obj);
+export default tmp2;

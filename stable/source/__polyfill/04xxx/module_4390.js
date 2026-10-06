@@ -1,181 +1,68 @@
 // Module ID: 4390
 // Function ID: 4391
-// Dependencies: [4380]
+// Dependencies: [2125, 2126, 4387]
 
 // Module 4390
-import _mod4380 from "module_4380" /* 4380 */;
+import localeToNumber from "localeToNumber" /* 4387 */;
+import buildMatchFn from "buildMatchFn" /* 2125 */;
+import buildMatchPatternFn from "buildMatchPatternFn" /* 2126 */;
 
-const fn = function n(moment) {
-  function translate(arg0, arg1, arg2, arg3) {
-    switch (arg2) {
-      case "s":
-        if (arg3) {
-          let str17 = "n\u00E9h\u00E1ny m\u00E1sodperc";
-        } else {
-          str17 = "n\u00E9h\u00E1ny m\u00E1sodperce";
-        }
-        return str17;
-      case "ss":
-        let tmp = arg3;
-        if (!arg3) {
-          tmp = arg1;
-        }
-        let str16 = " m\u00E1sodperce";
-        if (arg0 + tmp) {
-          str16 = " m\u00E1sodperc";
-        }
-        return str16;
-      case "m":
-        if (arg3) {
-          let str14 = " perc";
-        } else {
-          str14 = " perce";
-        }
-        return "egy" + str14;
-      case "mm":
-        if (arg3) {
-          let str13 = " perc";
-        } else {
-          str13 = " perce";
-        }
-        return arg0 + str13;
-      case "h":
-        if (arg3) {
-          let str11 = " \u00F3ra";
-        } else {
-          str11 = " \u00F3r\u00E1ja";
-        }
-        return "egy" + str11;
-      case "hh":
-        if (arg3) {
-          let str10 = " \u00F3ra";
-        } else {
-          str10 = " \u00F3r\u00E1ja";
-        }
-        return arg0 + str10;
-      case "d":
-        if (arg3) {
-          let str8 = " nap";
-        } else {
-          str8 = " napja";
-        }
-        return "egy" + str8;
-      case "dd":
-        if (arg3) {
-          let str7 = " nap";
-        } else {
-          str7 = " napja";
-        }
-        return arg0 + str7;
-      case "M":
-        if (arg3) {
-          let str5 = " h\u00F3nap";
-        } else {
-          str5 = " h\u00F3napja";
-        }
-        return "egy" + str5;
-      case "MM":
-        if (arg3) {
-          let str4 = " h\u00F3nap";
-        } else {
-          str4 = " h\u00F3napja";
-        }
-        return arg0 + str4;
-      case "y":
-        if (arg3) {
-          let str2 = " \u00E9v";
-        } else {
-          str2 = " \u00E9ve";
-        }
-        return "egy" + str2;
-      case "yy":
-        if (arg3) {
-          let str = " \u00E9v";
-        } else {
-          str = " \u00E9ve";
-        }
-        return arg0 + str;
-      default:
-        return "";
-    }
+let items;
+let items1;
+let items2;
+let items3;
+let items4;
+let items5;
+let obj;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
+let obj3;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+if (!buildMatchFn) {
+  obj = { default: buildMatchFn };
+  const obj2 = { default: buildMatchFn };
+} else {
+  obj = buildMatchFn;
+}
+if (!buildMatchPatternFn) {
+  obj3 = { default: buildMatchPatternFn };
+  const obj4 = { default: buildMatchPatternFn };
+} else {
+  obj3 = buildMatchPatternFn;
+}
+const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
+obj6 = { matchPatterns: { narrow: /^(ईसा-पूर्व|ईस्वी)/i, abbreviated: /^(ईसा\.?\s?पूर्व\.?|ईसा\.?)/i, wide: /^(ईसा-पूर्व|ईसवी पूर्व|ईसवी सन|ईसवी)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
+obj7 = { any: items };
+items = [/^b/i, /^(a|c)/i];
+obj8 = {
+  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^ति[1234]/i, wide: /^[1234](पहली|दूसरी|तीसरी|चौथी)? तिमाही/i },
+  defaultMatchWidth: "wide",
+  parsePatterns: obj9,
+  defaultParseWidth: "any",
+  valueCallback(arg0) {
+    return arg0 + 1;
   }
-  function week(arg0) {
-    let str = "[m\u00FAlt] ";
-    if (arg0) {
-      str = "";
-    }
-    return str + "[" + dependencyMap[this.day(this)] + "] LT[-kor]";
-  }
-  dependencyMap = "vas\u00E1rnap h\u00E9tf\u0151n kedden szerd\u00E1n cs\u00FCt\u00F6rt\u00F6k\u00F6n p\u00E9nteken szombaton".split(" ");
-  return moment.defineLocale("hu", {
-    months: "janu\u00E1r_febru\u00E1r_m\u00E1rcius_\u00E1prilis_m\u00E1jus_j\u00FAnius_j\u00FAlius_augusztus_szeptember_okt\u00F3ber_november_december".split("_"),
-    monthsShort: "jan._feb._m\u00E1rc._\u00E1pr._m\u00E1j._j\u00FAn._j\u00FAl._aug._szept._okt._nov._dec.".split("_"),
-    monthsParseExact: true,
-    weekdays: "vas\u00E1rnap_h\u00E9tf\u0151_kedd_szerda_cs\u00FCt\u00F6rt\u00F6k_p\u00E9ntek_szombat".split("_"),
-    weekdaysShort: "vas_h\u00E9t_kedd_sze_cs\u00FCt_p\u00E9n_szo".split("_"),
-    weekdaysMin: "v_h_k_sze_cs_p_szo".split("_"),
-    longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "YYYY.MM.DD.", LL: "YYYY. MMMM D.", LLL: "YYYY. MMMM D. H:mm", LLLL: "YYYY. MMMM D., dddd H:mm" },
-    meridiemParse: /de|du/i,
-    isPM(str) {
-      return "u" === str.charAt(1).toLowerCase();
-    },
-    meridiem(arg0, arg1, arg2) {
-      if (arg0 < 12) {
-        let str2 = "DE";
-        if (true === arg2) {
-          str2 = "de";
-        }
-        let str = str2;
-      } else {
-        str = "DU";
-        if (true === arg2) {
-          str = "du";
-        }
-      }
-      return str;
-    },
-    calendar: {
-      sameDay: "[ma] LT[-kor]",
-      nextDay: "[holnap] LT[-kor]",
-      nextWeek() {
-        const self = this;
-        const call = week.call;
-        if (typeof call === "unknown") {
-          let text = `${"[" + closure_0[self.day(self)]}] LT[-kor]`;
-        } else {
-          text = call(self, true);
-        }
-        return text;
-      },
-      lastDay: "[tegnap] LT[-kor]",
-      lastWeek() {
-        const self = this;
-        const call = week.call;
-        if (typeof call === "unknown") {
-          let text = `${"[m\u00FAlt] [" + closure_0[self.day(self)]}] LT[-kor]`;
-        } else {
-          text = call(self, false);
-        }
-        return text;
-      },
-      sameElse: "L"
-    },
-    relativeTime: { future: "%s m\u00FAlva", past: "%s", s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate },
-    dayOfMonthOrdinalParse: /\d{1,2}\./,
-    ordinal: "%d.",
-    week: { dow: 1, doy: 4 }
-  });
 };
-if (typeof exports === "object") {
-  if (undefined !== module) {
-    if (typeof require === "function") {
-      fn(_mod4380);
-    }
-  }
-}
-if (typeof globalThis.define === "function") {
-  if (globalThis.define.amd) {
-    globalThis.define(["../moment"], fn);
-  }
-}
-fn(this.moment);
+obj9 = { any: items1 };
+items1 = [/1/i, /2/i, /3/i, /4/i];
+obj10 = { matchPatterns: { narrow: /^[जफ़माअप्मईजूनजुअगसिअक्तनदि]/i, abbreviated: /^(जन|फ़र|मार्च|अप्|मई|जून|जुल|अग|सित|अक्तू|नव|दिस)/i, wide: /^(जनवरी|फ़रवरी|मार्च|अप्रैल|मई|जून|जुलाई|अगस्त|सितंबर|अक्तूबर|नवंबर|दिसंबर)/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "any" };
+obj11 = { narrow: items2, any: items3 };
+items2 = [/^ज/i, /^फ़/i, /^मा/i, /^अप्/i, /^मई/i, /^जू/i, /^जु/i, /^अग/i, /^सि/i, /^अक्तू/i, /^न/i, /^दि/i];
+items3 = [/^जन/i, /^फ़/i, /^मा/i, /^अप्/i, /^मई/i, /^जू/i, /^जु/i, /^अग/i, /^सि/i, /^अक्तू/i, /^नव/i, /^दिस/i];
+obj12 = { matchPatterns: { narrow: /^[रविसोममंगलबुधगुरुशुक्रशनि]/i, short: /^(रवि|सोम|मंगल|बुध|गुरु|शुक्र|शनि)/i, abbreviated: /^(रवि|सोम|मंगल|बुध|गुरु|शुक्र|शनि)/i, wide: /^(रविवार|सोमवार|मंगलवार|बुधवार|गुरुवार|शुक्रवार|शनिवार)/i }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "any" };
+obj13 = { narrow: items4, any: items5 };
+items4 = [/^रवि/i, /^सोम/i, /^मंगल/i, /^बुध/i, /^गुरु/i, /^शुक्र/i, /^शनि/i];
+items5 = [/^रवि/i, /^सोम/i, /^मंगल/i, /^बुध/i, /^गुरु/i, /^शुक्र/i, /^शनि/i];
+obj14 = { matchPatterns: { narrow: /^(पू|अ|म|द.\?|सु|दो|शा|रा)/i, any: /^(पूर्वाह्न|अपराह्न|म|द.\?|सु|दो|शा|रा)/i }, defaultMatchWidth: "any", parsePatterns: obj15, defaultParseWidth: "any" };
+obj15 = { any: { am: /^पूर्वाह्न/i, pm: /^अपराह्न/i, midnight: /^मध्य/i, noon: /^दो/i, morning: /सु/i, afternoon: /दो/i, evening: /शा/i, night: /रा/i } };
+obj5 = { matchPattern: /^[०१२३४५६७८९]+/i, parsePattern: /^[०१२३४५६७८९]+/i, valueCallback: localeToNumber.localeToNumber };
+
+export default date;

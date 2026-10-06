@@ -1,93 +1,95 @@
-// Module ID: 11593
-// Function ID: 11594
+// Module ID: 9787
+// Function ID: 9788
 // Name: EarnedDecisionRoundtripTracker
-// Dependencies: [4837, 1074, 7733, 1241, 7945, 7736, 2]
+// Dependencies: [4886, 1086, 6883, 1253, 7094, 6886, 2]
 
-// Module 11593 (EarnedDecisionRoundtripTracker)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import NetStats from "NetStats" /* 7733 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7945 */;
-import NetworkStore from "NetworkStore" /* 4837 */;
+// Module 9787 (EarnedDecisionRoundtripTracker)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import NetStats from "NetStats" /* 6883 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7094 */;
+import NetworkStore from "NetworkStore" /* 4886 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function trackRoundtrip(apiResponseTimestamp) {
+  let tmp2Result;
   if (Math.random() <= 0.1) {
     let diff = null;
     if (null != apiResponseTimestamp.apiResponseTimestamp) {
       diff = apiResponseTimestamp.apiResponseTimestamp - apiResponseTimestamp.initialSendTimestamp;
     }
-    const signalStrength = NetStats.getSignalStrength();
-    const tmp2 = require;
-    const obj4 = {};
+    const obj = NetStats;
+    const signalStrength = obj.getSignalStrength();
+    const obj3 = { api_latency_ms: diff, mobile_network_type: NetworkStore.getType(), is_foregrounded: tmp2Result.isForegrounded() };
+    const track = AnalyticsUtilsDefault.track;
+    const EARNED_DECISION_ROUNDTRIP = AnalyticEvents.EARNED_DECISION_ROUNDTRIP;
+    AnalyticsUtilsDefault;
     const merged = Object.assign(getDeviceMetadataDefault());
-    ({ endpoint: obj3.endpoint, wasSuccessful: obj3.was_successful } = apiResponseTimestamp);
-    obj4.api_latency_ms = diff;
-    obj4.mobile_network_type = NetworkStore.getType();
-    let tmp10 = null != signalStrength;
-    if (tmp10) {
-      const obj5 = { mobile_signal_strength_level: signalStrength };
-      tmp10 = obj5;
+    ({ endpoint: obj2.endpoint, wasSuccessful: obj2.was_successful } = apiResponseTimestamp);
+    let tmp11 = null != signalStrength;
+    const tmp2 = require;
+    if (tmp11) {
+      tmp11 = { mobile_signal_strength_level: signalStrength };
+      const obj4 = { mobile_signal_strength_level: signalStrength };
     }
-    const merged1 = Object.assign(tmp10);
-    ({ callerSource: obj3.caller_source, requestId: obj3.request_id, fetchedAt: obj3.fetched_at } = apiResponseTimestamp);
-    const obj2 = AnalyticsUtilsDefault;
-    obj4.is_foregrounded = tmp2(7736).isForegrounded();
-    obj2.track(AnalyticEvents.EARNED_DECISION_ROUNDTRIP, obj4);
-    const tmp2Result = tmp2(7736);
+    const merged1 = Object.assign(tmp11);
+    ({ callerSource: obj2.caller_source, requestId: obj2.request_id, fetchedAt: obj2.fetched_at } = apiResponseTimestamp);
+    tmp2Result = tmp2(6886);
+    track(EARNED_DECISION_ROUNDTRIP, obj3);
   }
 }
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = Constants.AnalyticEvents;
 class EarnedDecisionRoundtripTracker {
   constructor() {
-    merged = Object.assign({ pendingRequests: null });
-    map = new Map();
-    merged[0] = map;
+    const merged = Object.assign({ pendingRequests: null });
+    merged[0] = new Map();
+    new Map();
     return merged;
+  }
+  recordEarnedRequestAttempt(arg0, callerSource) {
+    const self = this;
+    let closure_0 = arg0;
+    let pendingRequests = this.pendingRequests;
+    const obj = { initialSendTimestamp: Date.now(), endpoint: "/quests/earned-decision", apiResponseTimestamp: null, wasSuccessful: false, callerSource, requestId: null, fetchedAt: null };
+    const result = pendingRequests.set(arg0, obj);
+    const timerId = setTimeout(() => {
+      const pendingRequests = self.pendingRequests;
+      const value = pendingRequests.get(closure_0);
+      const tmp = self;
+      const tmp2 = closure_0;
+      if (null != value) {
+        trackRoundtrip(value);
+        const pendingRequests2 = tmp.pendingRequests;
+        pendingRequests2.delete(tmp2);
+      }
+    }, 30000);
+  }
+  recordEarnedRequestApiResponse(get, requestId) {
+    requestId = requestId.requestId;
+    const wasSuccessful = requestId.wasSuccessful;
+    if (requestId === undefined) {
+      requestId = null;
+    }
+    let fetchedAt = requestId.fetchedAt;
+    if (fetchedAt === undefined) {
+      fetchedAt = null;
+    }
+    const pendingRequests = this.pendingRequests;
+    const value = pendingRequests.get(get);
+    if (null != value) {
+      const obj = { apiResponseTimestamp: Date.now(), wasSuccessful, requestId, fetchedAt };
+      const merged = Object.assign(value);
+      const _Date = Date;
+      trackRoundtrip(obj);
+      const pendingRequests2 = this.pendingRequests;
+      pendingRequests2.delete(get);
+    }
   }
 }
 const prototype = EarnedDecisionRoundtripTracker.prototype;
-prototype["recordEarnedRequestAttempt"] = function recordEarnedRequestAttempt(arg0, callerSource) {
-  const self = this;
-  closure_0 = arg0;
-  let pendingRequests = this.pendingRequests;
-  const result = pendingRequests.set(arg0, { initialSendTimestamp: Date.now(), endpoint: "/quests/earned-decision", apiResponseTimestamp: null, wasSuccessful: false, callerSource, requestId: null, fetchedAt: null });
-  const timerId = setTimeout(() => {
-    const pendingRequests = self.pendingRequests;
-    value = pendingRequests.get(closure_0);
-    if (null != value) {
-      trackRoundtrip(value);
-      const pendingRequests2 = self.pendingRequests;
-      pendingRequests2.delete(closure_0);
-    }
-  }, 30000);
-};
-prototype["recordEarnedRequestApiResponse"] = function recordEarnedRequestApiResponse(arg0, requestId) {
-  requestId = requestId.requestId;
-  if (requestId === undefined) {
-    requestId = null;
-  }
-  let fetchedAt = requestId.fetchedAt;
-  if (fetchedAt === undefined) {
-    fetchedAt = null;
-  }
-  const pendingRequests = this.pendingRequests;
-  value = pendingRequests.get(arg0);
-  if (null != value) {
-    const obj = {};
-    const merged = Object.assign(value);
-    const _Date = Date;
-    obj.apiResponseTimestamp = Date.now();
-    obj.wasSuccessful = requestId.wasSuccessful;
-    obj.requestId = requestId;
-    obj.fetchedAt = fetchedAt;
-    trackRoundtrip(obj);
-    const pendingRequests2 = this.pendingRequests;
-    pendingRequests2.delete(arg0);
-  }
-};
 let merged = Object.assign({ pendingRequests: null });
-merged[0] = new Map();
-const size = fn(2);
+const map = new Map();
+merged[0] = map;
 let result = size.fileFinishedImporting("modules/quests/EarnedDecisionRoundtripTracker.tsx");
 
 export default merged;

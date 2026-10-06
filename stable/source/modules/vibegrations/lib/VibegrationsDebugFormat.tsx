@@ -1,18 +1,19 @@
-// Module ID: 17071
-// Function ID: 17072
+// Module ID: 16413
+// Function ID: 16414
 // Name: VibegrationsDebugFormat
 // Dependencies: [2]
 // Exports: debugLogEnv, formatBytes, formatClockTime, formatCount, formatMs, formatObservedAt, shortBuildLabel
 
-// Module 17071 (VibegrationsDebugFormat)
+// Module 16413 (VibegrationsDebugFormat)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsDebugFormat.tsx");
 
 export function debugLogEnv(source) {
   if ("preview" !== source) {
+    let str2;
     if ("stable" !== source) {
-      let str2 = "other";
+      str2 = "other";
     }
     return str2;
   }
@@ -28,9 +29,10 @@ export const formatBytes = function formatBytes(r2_bytes) {
       } else {
         const result = r2_bytes / 1024;
         if (result < 1024) {
+          let rounded;
           if (100 <= result) {
             const _Math3 = Math;
-            let rounded = Math.round(result);
+            rounded = Math.round(result);
           } else {
             rounded = result.toFixed(1);
           }
@@ -39,19 +41,21 @@ export const formatBytes = function formatBytes(r2_bytes) {
         } else {
           const result1 = result / 1024;
           if (result1 < 1024) {
+            let rounded1;
             if (100 <= result1) {
               const _Math2 = Math;
-              let rounded1 = Math.round(result1);
+              rounded1 = Math.round(result1);
             } else {
               rounded1 = result1.toFixed(1);
             }
             const _HermesInternal2 = HermesInternal;
             return "" + rounded1 + " MB";
           } else {
+            let rounded2;
             const result2 = result1 / 1024;
             if (100 <= result2) {
               const _Math = Math;
-              let rounded2 = Math.round(result2);
+              rounded2 = Math.round(result2);
             } else {
               rounded2 = result2.toFixed(1);
             }
@@ -71,32 +75,36 @@ export const formatMs = function formatMs(cpu_ms) {
         const _HermesInternal4 = HermesInternal;
         return "" + cpu_ms.toFixed(2) + " ms";
       } else if (cpu_ms < 1000) {
+        let rounded;
         if (cpu_ms >= 100) {
           const _Math4 = Math;
-          let rounded = Math.round(cpu_ms);
+          rounded = Math.round(cpu_ms);
         } else {
           rounded = cpu_ms.toFixed(1);
         }
         const _HermesInternal3 = HermesInternal;
         return "" + rounded + " ms";
       } else {
+        let combined;
         const result = cpu_ms / 1000;
         if (result < 60) {
+          let rounded1;
           if (10 <= result) {
             const _Math3 = Math;
-            let rounded1 = Math.round(result);
+            rounded1 = Math.round(result);
           } else {
             rounded1 = result.toFixed(1);
           }
           const _HermesInternal2 = HermesInternal;
-          const combined = "" + rounded1 + " s";
+          combined = "" + rounded1 + " s";
         } else {
           const _Math = Math;
           const rounded2 = Math.floor(result / 60);
           const _Math2 = Math;
           const _HermesInternal = HermesInternal;
-          return "" + rounded2 + " m " + Math.round(result % 60) + " s";
+          combined = "" + rounded2 + " m " + Math.round(result % 60) + " s";
         }
+        return combined;
       }
     }
   }
@@ -114,31 +122,35 @@ export const formatClockTime = function formatClockTime(arg0) {
   const date = new Date(arg0);
   if (!Number.isNaN(date.getTime())) {
     const _String = String;
-    const padStartResult = String(date.getHours()).padStart(2, "0");
-    const _String2 = String;
     const StringResult = String(date.getHours());
+    const _String2 = String;
     const _String3 = String;
+    const padStartResult = StringResult.padStart(2, "0");
     const StringResult1 = String(date.getMinutes());
-    const padStartResult1 = String(date.getMinutes()).padStart(2, "0");
     const _HermesInternal = HermesInternal;
-    combined = "" + padStartResult + ":" + padStartResult1 + ":" + String(date.getSeconds()).padStart(2, "0");
+    const padStartResult1 = StringResult1.padStart(2, "0");
     const StringResult2 = String(date.getSeconds());
+    combined = "" + padStartResult + ":" + padStartResult1 + ":" + StringResult2.padStart(2, "0");
   }
   return combined;
 };
-export const formatObservedAt = function formatObservedAt(observedAt) {
-  const date = new Date(observedAt);
+export const formatObservedAt = function formatObservedAt(since) {
+  const date = new Date(since);
   if (Number.isNaN(date.getTime())) {
-    return observedAt;
+    return since;
   } else {
     const _Date = Date;
+    const self = this;
+    const self2 = this;
     const date1 = new Date();
     const fullYear = date.getFullYear();
     if (fullYear === date1.getFullYear()) {
       const month = date.getMonth();
       if (month === date1.getMonth()) {
+        let toLocaleTimeStringResult;
+        const date2 = date.getDate();
         if (date2 === date1.getDate()) {
-          let toLocaleTimeStringResult = date.toLocaleTimeString();
+          toLocaleTimeStringResult = date.toLocaleTimeString();
         }
         return toLocaleTimeStringResult;
       }

@@ -1,37 +1,99 @@
-// Module ID: 15041
-// Function ID: 15042
+// Module ID: 14284
+// Function ID: 14285
 // Name: useAccountStandingStatusLabel
-// Dependencies: [12166, 12194, 15042, 1115, 15043, 2]
-// Exports: useAccountStandingStatusLabel
+// Dependencies: [558, 576, 11236, 11264, 14285, 1127, 14286, 2]
 
-// Module 15041 (useAccountStandingStatusLabel)
-import util from "util" /* 1115 */;
-import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 12166 */;
-import useSafetyHubInitialized from "useSafetyHubInitialized" /* 12194 */;
-import useSafetyHubFetchError from "useSafetyHubFetchError" /* 15042 */;
+// Module 14284 (useAccountStandingStatusLabel)
+import react from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 11236 */;
+import useSafetyHubInitialized from "useSafetyHubInitialized" /* 11264 */;
+import useSafetyHubFetchError from "useSafetyHubFetchError" /* 14285 */;
+import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 14286 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/safety_hub/hooks/useAccountStandingStatusLabel.tsx");
-
-export const useAccountStandingStatusLabel = function useAccountStandingStatusLabel() {
-  const safetyHubAccountStanding = useSafetyHubAccountStanding.useSafetyHubAccountStanding();
-  const safetyHubInitialized = useSafetyHubInitialized.useSafetyHubInitialized();
-  const safetyHubFetchError = useSafetyHubFetchError.useSafetyHubFetchError();
-  const intl = util.intl;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = react;
+  const cResult = obj.c(5);
+  const obj2 = useSafetyHubAccountStanding;
+  const safetyHubAccountStanding = obj2.useSafetyHubAccountStanding();
+  const obj3 = useSafetyHubInitialized;
+  const safetyHubInitialized = obj3.useSafetyHubInitialized();
+  const obj4 = useSafetyHubFetchError;
+  const safetyHubFetchError = obj4.useSafetyHubFetchError();
+  if (safetyHubInitialized) {
+    let tmp10;
+    if (cResult[2] !== safetyHubAccountStanding.state) {
+      let tmp12;
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const fn = function u(arg0) {
+          return arg0;
+        };
+        cResult[4] = fn;
+        tmp12 = fn;
+      } else {
+        tmp12 = cResult[4];
+      }
+      const intl2 = tmp(1127).intl;
+      const obj5 = { hook: tmp12 };
+      const formatToPlainStringResult = intl2.formatToPlainString(SafetyHubAccountStandingLabels.ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj5);
+      cResult[2] = safetyHubAccountStanding.state;
+      cResult[3] = formatToPlainStringResult;
+      tmp10 = formatToPlainStringResult;
+    } else {
+      tmp10 = cResult[3];
+    }
+    return tmp10;
+  } else {
+    let tmp7;
+    if (cResult[0] !== safetyHubFetchError) {
+      let ZTNur7;
+      const intl = tmp(1127).intl;
+      const string = intl.string;
+      if (null != safetyHubFetchError) {
+        ZTNur7 = tmp(1127).t.TDRvqs;
+      } else {
+        ZTNur7 = tmp(1127).t.ZTNur7;
+      }
+      const stringResult = string(ZTNur7);
+      cResult[0] = safetyHubFetchError;
+      cResult[1] = stringResult;
+      tmp7 = stringResult;
+    } else {
+      tmp7 = cResult[1];
+    }
+    return tmp7;
+  }
+}) : (() => {
+  let formatToPlainStringResult;
+  const obj = useSafetyHubAccountStanding;
+  const safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
+  const obj2 = useSafetyHubInitialized;
+  const safetyHubInitialized = obj2.useSafetyHubInitialized();
+  const obj3 = useSafetyHubFetchError;
+  const safetyHubFetchError = obj3.useSafetyHubFetchError();
+  const intl = intl3.intl;
   if (safetyHubInitialized) {
     const obj4 = {
       hook(arg0) {
           return arg0;
         }
     };
-    let formatToPlainStringResult = intl.formatToPlainString(tmp(15043).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(14286).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
   } else {
+    let ZTNur7;
+    const string = intl.string;
     if (null != safetyHubFetchError) {
-      let ZTNur7 = tmp(1115).t.TDRvqs;
+      ZTNur7 = tmp(1127).t.TDRvqs;
     } else {
-      ZTNur7 = tmp(1115).t.ZTNur7;
+      ZTNur7 = tmp(1127).t.ZTNur7;
     }
-    formatToPlainStringResult = intl.string(ZTNur7);
+    formatToPlainStringResult = string(ZTNur7);
   }
   return formatToPlainStringResult;
-};
+});
+const result = size.fileFinishedImporting("modules/safety_hub/hooks/useAccountStandingStatusLabel.tsx");
+
+export const useAccountStandingStatusLabel = tmp2;

@@ -1,31 +1,113 @@
-// Module ID: 11446
-// Function ID: 11447
+// Module ID: 10600
+// Function ID: 10601
 // Name: useCustomStatusActivityForUser
-// Dependencies: [502, 4828, 1074, 504, 9662, 2]
-// Exports: default
+// Dependencies: [502, 4877, 1086, 558, 576, 504, 8814, 2]
 
-// Module 11446 (useCustomStatusActivityForUser)
+// Module 10600 (useCustomStatusActivityForUser)
+import Constants from "Constants" /* 1086 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 4828 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const ActivityTypes = fn(1074).ActivityTypes;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/custom_status/utils/useCustomStatusActivityForUser.tsx");
-
-export default function useCustomStatusActivityForUser(arg0) {
+const ActivityTypes = Constants.ActivityTypes;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp10;
+  let tmp6;
+  let tmp9;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+    cResult[1] = arg0;
+    cResult[2] = S;
+    tmp6 = S;
+  } else {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+  }
+  const tmpResult = require("get initialized");
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  const tmpResult3 = require("userSettingToActivity");
+  const customStatusActivity = tmpResult3.useCustomStatusActivity();
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+    const items1 = [PresenceStore];
+    cResult[3] = items1;
+    tmp9 = items1;
+  } else {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+  }
+  if (cResult[4] !== arg0) {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+    cResult[4] = arg0;
+    cResult[5] = tmp11;
+    tmp10 = tmp11;
+  } else {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+  }
+  const tmpResult4 = require("get initialized");
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp9, tmp10);
+  if (stateFromStores) {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+  }
+  return stateFromStores1;
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [AuthenticationStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => AuthenticationStore.getId() === closure_0);
-  const obj = require("initialize");
-  const customStatusActivity = require("userSettingToActivity").useCustomStatusActivity();
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => AuthenticationStore.getId() === closure_0);
   const obj2 = require("userSettingToActivity");
+  const customStatusActivity = obj2.useCustomStatusActivity();
   const items1 = [PresenceStore];
-  let stateFromStores1 = require("initialize").useStateFromStores(items1, () => PresenceStore.findActivity(closure_0, (type) => type.type === constants.CUSTOM_STATUS));
+  const obj3 = require("get initialized");
+  let stateFromStores1 = obj3.useStateFromStores(items1, () => PresenceStore.findActivity(closure_0, (type) => type.type === constants.CUSTOM_STATUS));
   if (stateFromStores) {
     stateFromStores1 = customStatusActivity;
   }
   return stateFromStores1;
-};
+});
+const result = size.fileFinishedImporting("modules/custom_status/utils/useCustomStatusActivityForUser.tsx");
+
+export default tmp2;

@@ -1,14 +1,15 @@
-// Module ID: 11286
-// Function ID: 11287
+// Module ID: 10487
+// Function ID: 10488
 // Name: TabsExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 11286 (TabsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 10487 (TabsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
 const obj = { CONTROL: 0, [0]: "CONTROL", ENABLED: 1, [1]: "ENABLED" };
-const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-07-desktop-channel-tabs", kind: "user", defaultConfig: { enabled: false }, variations: { [obj.ENABLED]: { enabled: true } } });
+const obj2 = { name: "2026-07-desktop-channel-tabs", kind: "user", defaultConfig: { enabled: false }, variations: { [obj.ENABLED]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj2);
 const result = size.fileFinishedImporting("modules/tabs/TabsExperiment.tsx");
 
 export default apexExperiment;

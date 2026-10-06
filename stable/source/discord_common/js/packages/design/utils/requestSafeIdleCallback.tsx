@@ -1,29 +1,34 @@
-// Module ID: 7746
-// Function ID: 7747
+// Module ID: 6896
+// Function ID: 6897
 // Name: requestSafeIdleCallback
-// Dependencies: [1356, 2]
+// Dependencies: [1362, 2]
 // Exports: requestSafeIdleCallback, setOriginWindow
 
-// Module 7746 (requestSafeIdleCallback)
-import GlobalUtils from "utils/GlobalUtils" /* 1356 */;
+// Module 6896 (requestSafeIdleCallback)
+import GlobalUtils from "utils/GlobalUtils" /* 1362 */;
 import size from "module_2" /* 2 */;
 
-let global = GlobalUtils.getGlobalObject();
+let closure_0;
+
+const globalObject = GlobalUtils.getGlobalObject();
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/utils/requestSafeIdleCallback.tsx");
 
 export function setOriginWindow(arg0) {
-  global = arg0;
+  closure_0 = arg0;
 }
 export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, timeout) {
   closure_0 = arg0;
-  closure_1 = global;
-  if (undefined !== global) {
+  let obj = closure_0;
+  let closure_1 = closure_0;
+  if (undefined !== closure_0) {
+    let tmp = null;
     if (null != obj.requestIdleCallback) {
       if (null != obj.cancelIdleCallback) {
-        c2 = false;
-        timeout = null;
-        closure_4 = obj.requestIdleCallback(function runOnce() {
-          if (!c2) {
+        let c2 = false;
+        let c3 = null;
+        let closure_4 = obj.requestIdleCallback(function runOnce() {
+          const tmp = c2;
+          if (!tmp) {
             c2 = true;
             if (null != c3) {
               closure_1.clearTimeout(c3);
@@ -33,17 +38,20 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
           }
         }, timeout);
         let num;
+        const _setTimeout = obj.setTimeout;
         if (timeout != null) {
           num = timeout.timeout;
         }
         if (num == null) {
           num = 1000;
         }
-        timeout = obj.setTimeout(() => {
-          if (!c2) {
+        c3 = _setTimeout(() => {
+          const tmp = c2;
+          if (!tmp) {
             closure_1.cancelIdleCallback(closure_4);
           }
-          if (!c2) {
+          const tmp5 = c2;
+          if (!tmp5) {
             c2 = true;
             if (null != c3) {
               closure_1.clearTimeout(c3);
@@ -54,15 +62,16 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
         }, num);
         return () => {
           closure_1.cancelIdleCallback(closure_4);
+          const obj = closure_1;
           if (null != c3) {
-            closure_1.clearTimeout(c3);
+            obj.clearTimeout(c3);
             c3 = null;
           }
         };
       }
     }
   }
-  const timeout2 = obj.setTimeout(arg0, 0);
+  timeout = obj.setTimeout(arg0, 0);
   return () => {
     closure_1.clearTimeout(closure_5);
   };

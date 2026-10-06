@@ -1,20 +1,18 @@
-// Module ID: 4628
-// Function ID: 4629
+// Module ID: 4676
+// Function ID: 4677
 // Name: RouteParam
-// Dependencies: [1075, 2048, 1083, 4629, 2]
+// Dependencies: [1087, 2058, 1095, 4677, 2]
 
-// Module 4628 (RouteParam)
-import RouteConstants from "RouteConstants" /* 1075 */;
-import utils_PathUtils from "utils/PathUtils" /* 1083 */;
-import ChannelConstants from "ChannelConstants" /* 2048 */;
-import escapeRegExpDefault from "escapeRegExp" /* 4629 */;
+// Module 4676 (RouteParam)
+import RouteConstants from "RouteConstants" /* 1087 */;
+import utils_PathUtils from "utils/PathUtils" /* 1095 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import escapeRegExpDefault from "escapeRegExp" /* 4677 */;
 import size from "module_2" /* 2 */;
 
 const PSEUDO_GUILD_IDS = RouteConstants.PSEUDO_GUILD_IDS;
 const StaticChannelRoutes = ChannelConstants.StaticChannelRoutes;
-const result = size.fileFinishedImporting("modules/routing/RouteParam.tsx");
-
-export const RouteParam = {
+let obj = {
   guildId() {
     let obj = arg0;
     if (arg0 === undefined) {
@@ -34,11 +32,13 @@ export const RouteParam = {
     if (flag2 === undefined) {
       flag2 = false;
     }
+    const UnescapedPathParam = utils_PathUtils.UnescapedPathParam;
     let str2 = "";
+    const tmp4 = escapeRegExpDefault(str);
     if (flag2) {
       str2 = "?";
     }
-    const unescapedPathParam = new utils_PathUtils.UnescapedPathParam(":" + escapeRegExpDefault(str) + "(" + combined + ")" + str2);
+    const unescapedPathParam = new UnescapedPathParam(":" + tmp4 + "(" + combined + ")" + str2);
     return unescapedPathParam;
   },
   channelId() {
@@ -61,11 +61,16 @@ export const RouteParam = {
     if (flag2 === undefined) {
       flag2 = false;
     }
+    const UnescapedPathParam = utils_PathUtils.UnescapedPathParam;
     let str2 = "";
+    const tmp4 = escapeRegExpDefault(str);
     if (flag2) {
       str2 = "?";
     }
-    const unescapedPathParam = new utils_PathUtils.UnescapedPathParam(":" + escapeRegExpDefault(str) + "(" + combined + ")" + str2);
+    const unescapedPathParam = new UnescapedPathParam(":" + tmp4 + "(" + combined + ")" + str2);
     return unescapedPathParam;
   }
 };
+const result = size.fileFinishedImporting("modules/routing/RouteParam.tsx");
+
+export const RouteParam = obj;

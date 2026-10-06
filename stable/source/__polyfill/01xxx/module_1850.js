@@ -1,157 +1,215 @@
 // Module ID: 1850
 // Function ID: 1851
-// Dependencies: [17, 1637, 1831]
-// Exports: useSmoothKeyboardHandler
+// Dependencies: [19, 17, 21, 1644, 1851, 1838, 1834, 1634, 1852]
 
 // Module 1850
-import _mod17 from "module_17" /* 17 */;
-import cancelAnimation from "cancelAnimation" /* 1637 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import _mod1644 from "module_1644" /* 1644 */;
+import react_mod from "react" /* 19 */;
 
-const require = globalThis.__r;
+let c3;
+let closure_4;
+let forwardRef;
+let react = react_mod;
+({ useCallback: c3, useMemo: closure_4, forwardRef } = react);
+react = react_mod;
+let View = react_native.View;
+const jsx = Fragment.jsx;
+let closure_8 = { x: 0, y: 0, width: 0, height: 0 };
+let closure_9 = { code: "function pnpm_indexTsx1(){const{initialFrame,defaultLayout}=this.__closure;return initialFrame.value||defaultLayout;}" };
+let closure_10 = { code: "function pnpm_indexTsx2(){const{screenHeight,keyboard,keyboardVerticalOffset,frame}=this.__closure;const keyboardY=screenHeight-keyboard.heightWhenOpened.value-keyboardVerticalOffset;return Math.max(frame.value.y+frame.value.height-keyboardY,0);}" };
+let closure_11 = { code: "function pnpm_indexTsx3(value){const{interpolate,relativeKeyboardHeight}=this.__closure;return interpolate(value,[0,1],[0,relativeKeyboardHeight()]);}" };
+let __initData = { code: "function pnpm_indexTsx4(layout){const{keyboard,initialFrame,behavior}=this.__closure;if(keyboard.isClosed.value||initialFrame.value===null||behavior!==\"height\"){initialFrame.value=layout;}}" };
+let __initData2 = { code: "function pnpm_indexTsx5(){const{enabled,interpolateToRelativeKeyboardHeight,keyboard,translate,padding,frame,behavior}=this.__closure;if(!enabled){return{};}const bottom=interpolateToRelativeKeyboardHeight(keyboard.progress.value);const translateY=interpolateToRelativeKeyboardHeight(translate.value);const paddingBottom=interpolateToRelativeKeyboardHeight(padding.value);const height=frame.value.height-bottom;switch(behavior){case\"height\":if(!keyboard.isClosed.value&&height>0){return{height:height,flex:0};}return{};case\"position\":return{bottom:bottom};case\"padding\":return{paddingBottom:bottom};case\"translate-with-padding\":return{paddingTop:paddingBottom,transform:[{translateY:-translateY}]};default:return{};}}" };
 
-const value = _mod17.Platform.Version >= 30 || false;
-let obj = { duration: 250, easing: null };
-const Easing = cancelAnimation.Easing;
-obj.easing = Easing.bezier(0.19919472913616398, 0.010644531250000006, 0.27920937042459737, 0.91025390625);
-let closure_4 = { code: "function pnpm_useSmoothKeyboardHandlerTs1(){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,persistedHeight,TELEGRAM_ANDROID_TIMING_CONFIG,target,animatedKeyboardHeight}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){return;}if(persistedHeight.value===0){return;}const event={duration:TELEGRAM_ANDROID_TIMING_CONFIG.duration,target:target.value,height:animatedKeyboardHeight.value,progress:animatedKeyboardHeight.value/persistedHeight.value};return event;}" };
-const __initData = { code: "function pnpm_useSmoothKeyboardHandlerTs2(evt){const{handler,height,persistedHeight}=this.__closure;var _handler$onMove,_handler;if(!evt){return;}(_handler$onMove=(_handler=handler).onMove)===null||_handler$onMove===void 0||_handler$onMove.call(_handler,evt);if(evt.height===height.value){var _handler$onEnd,_handler2;(_handler$onEnd=(_handler2=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler2,evt);persistedHeight.value=height.value;}}" };
-const __initData2 = { code: "function pnpm_useSmoothKeyboardHandlerTs3(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,persistedHeight,handler,target,height,animatedKeyboardHeight,withTiming,TELEGRAM_ANDROID_TIMING_CONFIG}=this.__closure;var _handler$onStart2,_handler3;if(!IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS&&e.height===persistedHeight.value){var _handler$onStart,_handler,_handler$onEnd,_handler2;(_handler$onStart=(_handler=handler).onStart)===null||_handler$onStart===void 0||_handler$onStart.call(_handler,e);(_handler$onEnd=(_handler2=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler2,e);return;}target.value=e.target;height.value=e.height;if(e.height>0){persistedHeight.value=e.height;}if(!IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){animatedKeyboardHeight.value=withTiming(e.height,TELEGRAM_ANDROID_TIMING_CONFIG);}(_handler$onStart2=(_handler3=handler).onStart)===null||_handler$onStart2===void 0||_handler$onStart2.call(_handler3,{...e,duration:IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS?e.duration:TELEGRAM_ANDROID_TIMING_CONFIG.duration});}" };
-const __initData3 = { code: "function pnpm_useSmoothKeyboardHandlerTs4(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,handler}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){var _handler$onMove,_handler;(_handler$onMove=(_handler=handler).onMove)===null||_handler$onMove===void 0||_handler$onMove.call(_handler,e);}}" };
-const __initData4 = { code: "function pnpm_useSmoothKeyboardHandlerTs5(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,handler}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){var _handler$onEnd,_handler;(_handler$onEnd=(_handler=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler,e);}}" };
-
-export const useSmoothKeyboardHandler = (handler, items) => {
-  _require = handler;
-  sharedValue = require("cancelAnimation").useSharedValue(-1);
-  obj = require("cancelAnimation");
-  const sharedValue1 = require("cancelAnimation").useSharedValue(0);
-  let obj2 = require("cancelAnimation");
-  const sharedValue2 = require("cancelAnimation").useSharedValue(0);
-  const obj3 = require("cancelAnimation");
-  const sharedValue3 = require("cancelAnimation").useSharedValue(0);
-  const obj4 = require("cancelAnimation");
-  const fn = function s() {
-    if (!closure_2) {
-      if (0 !== sharedValue2.value) {
-        obj = { duration: null, target: null, height: null, progress: null };
-        obj.duration = obj.duration;
-        obj.target = sharedValue.value;
-        obj.height = sharedValue3.value;
-        obj.progress = sharedValue3.value / iter.value;
-        return obj;
-      }
+export default forwardRef((behavior, arg1) => {
+  let children;
+  let closure_13;
+  let enabled;
+  let obj10;
+  let onLayout;
+  let style;
+  let tmp17Result;
+  behavior = behavior.behavior;
+  ({ children, enabled } = behavior);
+  let contentContainerStyle = behavior.contentContainerStyle;
+  if (enabled === undefined) {
+    enabled = true;
+  }
+  let num = behavior.keyboardVerticalOffset;
+  if (num === undefined) {
+    num = 0;
+  }
+  let flag = behavior.automaticOffset;
+  if (flag === undefined) {
+    flag = false;
+  }
+  ({ style, onLayout } = behavior);
+  let merged = Object.assign(behavior, Object.assign({ behavior: 0, children: 0, contentContainerStyle: 0, enabled: 0, keyboardVerticalOffset: 0, automaticOffset: 0, style: 0, onLayout: 0 }));
+  let derivedValue;
+  let translate;
+  let padding;
+  let keyboardAnimation;
+  let height;
+  __initData = undefined;
+  __initData2 = undefined;
+  let closure_14;
+  let animatedStyle;
+  contentContainerStyle = undefined;
+  let obj = behavior(num[3]);
+  const sharedValue = obj.useSharedValue(null);
+  const ref = sharedValue.useRef(null);
+  let obj2 = behavior(num[3]);
+  class K {
+    constructor() {
+      return sharedValue.value || closure_8;
     }
-  };
-  fn.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, persistedHeight: sharedValue2, TELEGRAM_ANDROID_TIMING_CONFIG: sharedValue2, target: sharedValue, animatedKeyboardHeight: sharedValue3 };
-  fn.__workletHash = 4217597553195;
-  fn.__initData = sharedValue3;
-  class I {
+  }
+  let obj3 = { initialFrame: sharedValue, defaultLayout: translate };
+  K.__closure = obj3;
+  K.__workletHash = 4703969179658;
+  K.__initData = padding;
+  derivedValue = obj2.useDerivedValue(K);
+  const obj4 = behavior(num[4]);
+  const translateAnimation = obj4.useTranslateAnimation();
+  translate = translateAnimation.translate;
+  padding = translateAnimation.padding;
+  const obj5 = behavior(num[4]);
+  keyboardAnimation = obj5.useKeyboardAnimation();
+  const obj6 = behavior(num[5]);
+  height = obj6.useWindowDimensions().height;
+  class V {
+    constructor() {
+      return Math.max(derivedValue.value.y + derivedValue.value.height - (height - keyboardAnimation.heightWhenOpened.value - num), 0);
+    }
+  }
+  V.__closure = { screenHeight: height, keyboard: keyboardAnimation, keyboardVerticalOffset: num, frame: derivedValue };
+  V.__workletHash = 10539040422992;
+  V.__initData = keyboardAnimation;
+  let items = [height, num];
+  const tmp8 = flag(V, items);
+  __initData = tmp8;
+  class C {
     constructor(arg0) {
-      if (handler) {
-        tmp = closure_0;
-        onMove = closure_0.onMove;
-        tmp2 = null;
-        if (onMove != null) {
-          onMoveResult = onMove(handler);
-        }
-        if (handler.height === closure_2.value) {
-          onEnd = tmp.onEnd;
-          if (onEnd != null) {
-            onEndResult = onEnd(handler);
-          }
-          tmp5 = closure_3;
-          closure_3.value = iter.value;
-        }
-      }
-      return;
+      const interpolate = _mod1644.interpolate;
+      const items = [0];
+      _mod1644;
+      items[1] = closure_12();
+      return interpolate(arg0, [0, 1], items);
     }
   }
-  I.__closure = { handler, height: sharedValue1, persistedHeight: sharedValue2 };
-  I.__workletHash = 1186520959152;
-  I.__initData = __initData;
-  let tmp9 = items;
-  if (items) {
-    items = [];
-    HermesBuiltin.arraySpread(items, 0);
-    tmp9 = items;
-  }
-  const animatedReaction = require("cancelAnimation").useAnimatedReaction(fn, I, tmp9);
-  const obj5 = require("cancelAnimation");
-  const obj6 = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, persistedHeight: sharedValue2, TELEGRAM_ANDROID_TIMING_CONFIG: sharedValue2, target: sharedValue, animatedKeyboardHeight: sharedValue3 };
-  const tmp8 = sharedValue2;
-  const obj7 = { onStart: null, onMove: null, onEnd: null };
-  const fn2 = function v(height) {
-    if (!closure_2) {
-      if (height.height === sharedValue2.value) {
-        const onStart = handler.onStart;
-        if (onStart != null) {
-          onStart(height);
-        }
-        const onEnd = handler.onEnd;
-        if (onEnd != null) {
-          onEnd(height);
-        }
+  C.__closure = { interpolate: behavior(num[3]).interpolate, relativeKeyboardHeight: tmp8 };
+  C.__workletHash = 11482114301276;
+  C.__initData = height;
+  const items1 = [tmp8];
+  ({ interpolate: behavior(num[3]).interpolate, relativeKeyboardHeight: tmp8 });
+  const tmp9 = flag(C, items1);
+  __initData2 = tmp9;
+  class D {
+    constructor(value) {
+      value = keyboardAnimation.isClosed.value || null === sharedValue.value || "height" !== behavior;
+      if (value) {
+        sharedValue.value = value;
       }
     }
-    sharedValue.value = height.target;
-    sharedValue1.value = height.height;
-    if (height.height > 0) {
-      sharedValue2.value = height.height;
+  }
+  D.__closure = { keyboard: keyboardAnimation, initialFrame: sharedValue, behavior };
+  D.__workletHash = 12256944793057;
+  D.__initData = __initData;
+  const items2 = [behavior];
+  closure_14 = flag(D, items2);
+  const items3 = [onLayout, flag];
+  const tmp10 = flag((nativeEvent) => {
+    if (onLayout != null) {
+      tmp(nativeEvent);
     }
-    if (!closure_2) {
-      obj = cancelAnimation;
-      sharedValue3.value = obj.withTiming(height.height, obj);
+    const layout = nativeEvent.nativeEvent.layout;
+    const tmp3 = flag;
+    if (tmp3) {
+      let obj = behavior(num[6]);
+      const findNodeHandleResult = obj.findNodeHandle(ref.current);
+      if (null !== findNodeHandleResult) {
+        const KeyboardControllerNative = behavior(num[7]).KeyboardControllerNative;
+        const viewPositionInWindowResult = KeyboardControllerNative.viewPositionInWindow(findNodeHandleResult);
+        const nextPromise = viewPositionInWindowResult.then((result) => {
+          const obj = _mod1644;
+          const obj3 = {};
+          const runOnUIResult = obj.runOnUI(closure_14);
+          const merged = Object.assign(layout);
+          ({ x: obj2.x, y: obj2.y } = result);
+          runOnUIResult(obj3);
+        });
+        return nextPromise.catch(() => {
+          const obj = _mod1644;
+          obj.runOnUI(closure_14)(layout);
+        });
+      }
     }
-    const onStart2 = handler.onStart;
-    if (onStart2 != null) {
-      let obj2 = {};
-      const merged = Object.assign(height);
+    const obj2 = behavior(num[3]);
+    return obj2.runOnUI(closure_14)(layout);
+  }, items3);
+  const obj8 = behavior(num[3]);
+  class F {
+    constructor() {
+      let items;
+      const tmp = enabled;
       if (tmp) {
-        let duration = height.duration;
+        const tmp4 = closure_13(keyboardAnimation.progress.value);
+        const diff = derivedValue.value.height - tmp4;
+        const tmp3 = keyboardAnimation;
+        const tmp6 = closure_13(translate.value);
+        if ("height" === behavior) {
+          if (!tmp3.isClosed.value) {
+            let obj2;
+            if (diff > 0) {
+              obj2 = { height: diff, flex: 0 };
+            }
+            return obj2;
+          }
+          obj2 = {};
+        } else if ("position" === behavior) {
+          return { bottom: tmp4 };
+        } else if ("padding" === behavior) {
+          return { paddingBottom: tmp4 };
+        } else if ("translate-with-padding" === behavior) {
+          const obj = { paddingTop: tmp8, transform: items };
+          items = [{ translateY: -tmp6 }];
+          return obj;
+        } else {
+          return {};
+        }
       } else {
-        duration = obj.duration;
+        return {};
       }
-      obj2.duration = duration;
-      obj2 = onStart2(obj2);
-    }
-  };
-  const tmpResult = require("module_1831");
-  fn2.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, persistedHeight: sharedValue2, handler, target: sharedValue, height: sharedValue1, animatedKeyboardHeight: sharedValue3, withTiming: require("cancelAnimation").withTiming, TELEGRAM_ANDROID_TIMING_CONFIG: tmp8 };
-  fn2.__workletHash = 2049629670138;
-  fn2.__initData = __initData2;
-  obj7.onStart = fn2;
-  class R {
-    constructor(arg0) {
-      if (c2) {
-        onMove = closure_0.onMove;
-        tmp2 = null;
-        if (onMove != null) {
-          tmp3 = handler;
-          onMoveResult = onMove(handler);
-        }
-      }
-      return;
     }
   }
-  R.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, handler };
-  R.__workletHash = 16381726355375;
-  R.__initData = __initData3;
-  obj7.onMove = R;
-  class O {
-    constructor(arg0) {
-      if (c2) {
-        onEnd = closure_0.onEnd;
-        tmp2 = null;
-        if (onEnd != null) {
-          tmp3 = handler;
-          onEndResult = onEnd(handler);
-        }
-      }
-      return;
-    }
+  F.__closure = { enabled, interpolateToRelativeKeyboardHeight: tmp9, keyboard: keyboardAnimation, translate, padding, frame: derivedValue, behavior };
+  F.__workletHash = 6440002265153;
+  F.__initData = __initData2;
+  const items4 = [behavior, enabled, tmp9];
+  animatedStyle = obj8.useAnimatedStyle(F, items4);
+  const tmp13 = enabled(num[8])(ref, arg1);
+  let tmp15 = style;
+  if ("position" === behavior) {
+    tmp15 = contentContainerStyle;
   }
-  O.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, handler };
-  O.__workletHash = 9348108811600;
-  O.__initData = __initData4;
-  obj7.onEnd = O;
-  tmpResult.useKeyboardHandler(obj7, items);
-};
+  contentContainerStyle = tmp15;
+  const items5 = [tmp15, animatedStyle];
+  const tmp16 = onLayout(() => {
+    const items = [contentContainerStyle, animatedStyle];
+    return items;
+  }, items5);
+  if ("position" === behavior) {
+    const obj9 = { ref: tmp13, style, onLayout: tmp10, children: derivedValue(enabled(num[3]).View, obj10) };
+    const merged1 = Object.assign(merged);
+    obj10 = { style: tmp16, children };
+    tmp17Result = tmp17(ref, obj9);
+  } else {
+    const obj11 = { ref: tmp13, style: tmp16, onLayout: tmp10, children };
+    View = tmp12(tmp2[3]).View;
+    const merged2 = Object.assign(merged);
+    tmp17Result = tmp17(View, obj11);
+  }
+  return tmp17Result;
+});

@@ -1,43 +1,109 @@
-// Module ID: 10066
-// Function ID: 10067
+// Module ID: 9192
+// Function ID: 9193
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1372, 10067, 1074, 1084, 8461, 10068, 10069, 7656, 2]
-// Exports: default
+// Dependencies: [19, 1378, 9193, 1086, 1096, 7609, 558, 576, 9194, 9195, 6801, 2]
 
-// Module 10066 (useOpenProfileSettings)
-import _mod19 from "module_19" /* 19 */;
-import Constants from "Constants" /* 1074 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
-import openUserSettings from "openUserSettings" /* 7656 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10069 */;
-import UserStore from "UserStore" /* 1372 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10067 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8461 */;
+// Module 9192 (useOpenProfileSettings)
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1086 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import openUserSettings from "openUserSettings" /* 6801 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9195 */;
+import UserStore from "UserStore" /* 1378 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9193 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7609 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-_mod19.useCallback;
+const useCallback = react.useCallback;
 const UserSettingsSections = Constants.UserSettingsSections;
 let closure_5 = UserSettingsConstants.ProfileCustomizationSubsection;
-const result = size.fileFinishedImporting("modules/profile_customization/useOpenProfileSettings.tsx");
-
-export default function useOpenProfileSettings() {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let guild;
+  let scrollPosition;
+  let tmp4;
+  const tmp = guild;
+  let obj = guild(scrollPosition[7]);
+  const cResult = obj.c(7);
+  const tmp2 = scrollPosition;
+  if (cResult[0] !== arg0) {
+    let obj2 = arg0;
+    if (undefined === arg0) {
+      obj2 = {};
+    }
+    cResult[0] = arg0;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  guild = tmp4.guild;
+  scrollPosition = tmp4.scrollPosition;
+  const analyticsLocations = tmp4.analyticsLocations;
+  const tmpResult = tmp(tmp2[8]);
+  const isEligibleForUserProfileWYSIWYGEditing = tmpResult.useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings");
+  if (cResult[2] === analyticsLocations) {
+    if (cResult[3] === guild) {
+      if (cResult[4] === isEligibleForUserProfileWYSIWYGEditing) {
+        let tmp6;
+        if (cResult[5] === scrollPosition) {
+          tmp6 = cResult[6];
+        }
+        return tmp6;
+      }
+    }
+  }
+  const fn = function c() {
+    let USER_PROFILE;
+    if (null != guild) {
+      const obj = GuildIdentityActionCreators;
+      const guildIdentitySettings = obj.initGuildIdentitySettings(tmp.id);
+    }
+    const setState = ProfileCustomizationNavigationStore.setState;
+    if (null != guild) {
+      USER_PROFILE = constants.GUILD;
+    } else {
+      USER_PROFILE = constants.USER_PROFILE;
+    }
+    const obj2 = { subsection: USER_PROFILE, scrollPosition };
+    setState(obj2);
+    const obj3 = { screen: UserSettingsSections.PROFILE_CUSTOMIZATION };
+    openUserSettings.openUserSettings(obj3);
+  };
+  cResult[2] = analyticsLocations;
+  cResult[3] = guild;
+  cResult[4] = isEligibleForUserProfileWYSIWYGEditing;
+  cResult[5] = scrollPosition;
+  cResult[6] = fn;
+  tmp6 = fn;
+}) : (() => {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
   const guild = obj.guild;
   const scrollPosition = obj.scrollPosition;
-  const items = [guild, scrollPosition, obj.analyticsLocations, guild(scrollPosition[6]).useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings")];
+  const analyticsLocations = obj.analyticsLocations;
+  let obj2 = guild(scrollPosition[8]);
+  const items = [guild, scrollPosition, analyticsLocations, obj2.useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings")];
   return useCallback(() => {
+    let USER_PROFILE;
     if (null != guild) {
-      const guildIdentitySettings = GuildIdentityActionCreators.initGuildIdentitySettings(tmp.id);
+      const obj = GuildIdentityActionCreators;
+      const guildIdentitySettings = obj.initGuildIdentitySettings(tmp.id);
     }
+    const setState = ProfileCustomizationNavigationStore.setState;
     if (null != guild) {
-      let USER_PROFILE = constants.GUILD;
+      USER_PROFILE = constants.GUILD;
     } else {
       USER_PROFILE = constants.USER_PROFILE;
     }
-    ProfileCustomizationNavigationStore.setState({ subsection: USER_PROFILE, scrollPosition });
-    openUserSettings.openUserSettings({ screen: UserSettingsSections.PROFILE_CUSTOMIZATION });
+    const obj2 = { subsection: USER_PROFILE, scrollPosition };
+    setState(obj2);
+    const obj3 = { screen: UserSettingsSections.PROFILE_CUSTOMIZATION };
+    openUserSettings.openUserSettings(obj3);
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/profile_customization/useOpenProfileSettings.tsx");
+
+export default tmp4;

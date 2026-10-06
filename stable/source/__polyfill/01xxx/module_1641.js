@@ -1,15 +1,11 @@
 // Module ID: 1641
 // Function ID: 1642
-// Dependencies: [1642, 1643]
+// Dependencies: [65]
 
 // Module 1641
-const require = globalThis.__r;
+import module_65 from "module_65" /* 65 */;
 
-for (const key10013 in require("module_1642")) {
-  arg5[key10013] = require("module_1642")[key10013];
-  continue;
-}
-for (const key10017 in require("logToConsole")) {
-  arg5[key10017] = require("logToConsole")[key10017];
-  continue;
-}
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "KeyboardToolbarGroupView", validAttributes: {} };
+
+export default module_65.get("KeyboardToolbarGroupView", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

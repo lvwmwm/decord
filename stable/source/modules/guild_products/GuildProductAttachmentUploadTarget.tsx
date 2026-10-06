@@ -1,35 +1,37 @@
-// Module ID: 5425
-// Function ID: 5426
+// Module ID: 5490
+// Function ID: 5491
 // Name: GuildProductAttachmentUploadTarget
-// Dependencies: [5426, 1074, 2]
+// Dependencies: [5491, 1086, 2]
 
-// Module 5425 (GuildProductAttachmentUploadTarget)
-import Constants from "Constants" /* 1074 */;
-import GuildProductConstants from "GuildProductConstants" /* 5426 */;
+// Module 5490 (GuildProductAttachmentUploadTarget)
+import Constants from "Constants" /* 1086 */;
+import GuildProductConstants from "GuildProductConstants" /* 5491 */;
 import size from "module_2" /* 2 */;
 
-({ MAX_ATTACHMENT_UPLOAD_COUNT: closure_0, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_1, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: c2 } = GuildProductConstants);
+let _window;
+let c2;
+let map;
+({ MAX_ATTACHMENT_UPLOAD_COUNT: _window, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: map, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: c2 } = GuildProductConstants);
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_products/GuildProductAttachmentUploadTarget.tsx");
 class GuildProductAttachmentUploadTarget {
+  getCreateAttachmentURL(arg0) {
+    return Endpoints.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD(arg0);
+  }
+  getDeleteUploadURL(arg0) {
+    return Endpoints.MESSAGE_DELETE_UPLOAD(arg0);
+  }
+  getMaxFileSize() {
+    return map;
+  }
+  getMaxAttachmentsCount() {
+    return React;
+  }
+  getMaxTotalAttachmentSize() {
+    return React2;
+  }
 }
-const prototype = GuildProductAttachmentUploadTarget.prototype;
-prototype["getCreateAttachmentURL"] = function getCreateAttachmentURL(arg0) {
-  return Endpoints.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD(arg0);
-};
-prototype["getDeleteUploadURL"] = function getDeleteUploadURL(arg0) {
-  return Endpoints.MESSAGE_DELETE_UPLOAD(arg0);
-};
-prototype["getMaxFileSize"] = function getMaxFileSize() {
-  return framebus;
-};
-prototype["getMaxAttachmentsCount"] = function getMaxAttachmentsCount() {
-  return React;
-};
-prototype["getMaxTotalAttachmentSize"] = function getMaxTotalAttachmentSize() {
-  return React2;
-};
-Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
+Object.defineProperty(GuildProductAttachmentUploadTarget.prototype, "shouldReactNativeCompressUploads", {
   get: function shouldReactNativeCompressUploads() {
     return false;
   },

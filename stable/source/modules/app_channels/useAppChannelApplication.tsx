@@ -1,25 +1,40 @@
-// Module ID: 11891
-// Function ID: 11892
+// Module ID: 10974
+// Function ID: 10975
 // Name: useAppChannelApplication
-// Dependencies: [1074, 7440, 2]
-// Exports: useAppChannelApplication
+// Dependencies: [1086, 558, 6585, 2]
 
-// Module 11891 (useAppChannelApplication)
-import Constants from "Constants" /* 1074 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7440 */;
+// Module 10974 (useAppChannelApplication)
+import Constants from "Constants" /* 1086 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6585 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const ChannelTypes = Constants.ChannelTypes;
-const result = size.fileFinishedImporting("modules/app_channels/useAppChannelApplication.tsx");
+let type;
 
-export const useAppChannelApplication = function useAppChannelApplication(stateFromStores) {
-  let type;
-  if (stateFromStores != null) {
-    type = stateFromStores.type;
+const ChannelTypes = Constants.ChannelTypes;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+  type = undefined;
+  if (type != null) {
+    type = type.type;
   }
   let application_id;
   if (type === ChannelTypes.GUILD_APP) {
-    application_id = stateFromStores.application_id;
+    application_id = type.application_id;
   }
-  return ApplicationActionCreators.useApplication(application_id).data;
-};
+  const obj = ApplicationActionCreators;
+  return obj.useApplication(application_id).data;
+}) : ((type) => {
+  type = undefined;
+  if (type != null) {
+    type = type.type;
+  }
+  let application_id;
+  if (type === ChannelTypes.GUILD_APP) {
+    application_id = type.application_id;
+  }
+  const obj = ApplicationActionCreators;
+  return obj.useApplication(application_id).data;
+});
+const result = size.fileFinishedImporting("modules/app_channels/useAppChannelApplication.tsx");
+
+export const useAppChannelApplication = tmp2;

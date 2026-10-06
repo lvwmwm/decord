@@ -1,17 +1,22 @@
-// Module ID: 4678
-// Function ID: 4679
+// Module ID: 4727
+// Function ID: 4728
 // Name: GameServerConstants
-// Dependencies: [1384, 4679, 2]
+// Dependencies: [1390, 4728, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4678 (GameServerConstants)
-import UserStoreConstants from "UserStoreConstants" /* 1384 */;
-import GameServerProviderType from "GameServerProviderType" /* 4679 */;
+// Module 4727 (GameServerConstants)
+import UserStoreConstants from "UserStoreConstants" /* 1390 */;
+import GameServerProviderType from "GameServerProviderType" /* 4728 */;
 import size from "module_2" /* 2 */;
 
+let obj3;
+let obj4;
 const obj = { SELECT_GAME: "select-game", SERVER_SETTINGS: "server-settings" };
-const obj2 = { steps: { [obj.SELECT_GAME]: { onBack: { type: "close" }, onNext: { type: "go-to-step", step: obj.SERVER_SETTINGS } }, [obj.SERVER_SETTINGS]: { onBack: { type: "go-to-step", step: obj.SELECT_GAME }, onNext: { type: "save" } } } };
+const obj2 = { steps: { [obj.SELECT_GAME]: obj3, [obj.SERVER_SETTINGS]: obj4 } };
 let str = "1425215263548117002";
+obj3 = { onBack: { type: "close" }, onNext: { type: "go-to-step", step: obj.SERVER_SETTINGS } };
+obj4 = { onBack: { type: "go-to-step", step: obj.SELECT_GAME }, onNext: { type: "save" } };
+const Environments = UserStoreConstants.Environments;
 if ("production" !== window.GLOBAL_ENV.PROJECT_ENV) {
   const _window = window;
   let str2 = "1415025086791942144";
@@ -58,11 +63,12 @@ NewGamesCoachmarkContent.FEATURED_GAME_NAME = "Windrose";
 NewGamesCoachmarkContent.SECOND_GAME_NAME = "Factorio";
 NewGamesCoachmarkContent.THIRD_GAME_NAME = "V Rising";
 let str13 = "https://discord.shockbyte.com/support";
-if (window.GLOBAL_ENV.RELEASE_CHANNEL === UserStoreConstants.Environments.STAGING) {
+const SHOCKBYTE = GameServerProviderType.GameServerProviderType.SHOCKBYTE;
+if (window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING) {
   str13 = "https://purple-prod.shockbyte.dev/support";
 }
 const obj5 = {};
-obj5[GameServerProviderType.GameServerProviderType.SHOCKBYTE] = str13;
+obj5[SHOCKBYTE] = str13;
 const result = size.fileFinishedImporting("modules/game_server/GameServerConstants.tsx");
 
 export const GameServerSetupStep = obj;

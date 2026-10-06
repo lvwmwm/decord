@@ -1,24 +1,26 @@
-// Module ID: 14910
-// Function ID: 14911
+// Module ID: 14148
+// Function ID: 14149
 // Name: UserProfileEditFormSharedStyles
-// Dependencies: [7485, 4788, 576, 2]
+// Dependencies: [6630, 4837, 588, 2]
 
-// Module 14910 (UserProfileEditFormSharedStyles)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 7485 */;
-import createStyles from "createStyles" /* 4788 */;
+// Module 14148 (UserProfileEditFormSharedStyles)
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 6630 */;
+import createStyles_mod from "createStyles" /* 4837 */;
 import size from "module_2" /* 2 */;
 
+let ARBITRARY_LARGE_OFFSET;
+let FLOATING_UPSELL_HEIGHT;
+let rect;
+let rect1;
 ({ ARBITRARY_LARGE_OFFSET, FLOATING_UPSELL_HEIGHT } = Constants);
-const obj = { container: { flex: 1 }, bounceOffset: null, avatarContainer: null, formContainer: null, errorContainer: null, floatingUpsell: null };
-const rect = { position: "absolute", top: -ARBITRARY_LARGE_OFFSET, height: ARBITRARY_LARGE_OFFSET, right: 0, left: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj.bounceOffset = rect;
-obj.avatarContainer = { zIndex: 1 };
-obj.formContainer = { marginTop: 16, padding: 16, borderRadius: nativeDefault.radii.lg, rowGap: 20 };
-obj.errorContainer = { flex: 1, flexDirection: "row", justifyContent: "center" };
-const rect1 = { position: "absolute", marginBottom: nativeDefault.space.PX_4, left: 0, right: 0, maxHeight: FLOATING_UPSELL_HEIGHT - 12 };
-obj.floatingUpsell = rect1;
-const styles = createStyles.createStyles(obj);
+let createStyles = createStyles_mod;
+const obj = { container: { flex: 1 }, bounceOffset: rect, avatarContainer: { zIndex: 1 }, formContainer: { marginTop: 16, padding: 16, borderRadius: nativeDefault.radii.lg, rowGap: 20 }, errorContainer: { flex: 1, flexDirection: "row", justifyContent: "center" }, floatingUpsell: rect1 };
+rect = { position: "absolute", top: -ARBITRARY_LARGE_OFFSET, height: ARBITRARY_LARGE_OFFSET, right: 0, left: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+createStyles = createStyles.createStyles;
+({ marginTop: 16, padding: 16, borderRadius: nativeDefault.radii.lg, rowGap: 20 });
+rect1 = { position: "absolute", marginBottom: nativeDefault.space.PX_4, left: 0, right: 0, maxHeight: FLOATING_UPSELL_HEIGHT - 12 };
+const styles = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormSharedStyles.tsx");
 
 export default styles;

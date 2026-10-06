@@ -1,207 +1,315 @@
-// Module ID: 10583
-// Function ID: 10584
+// Module ID: 9645
+// Function ID: 9646
 // Name: ExpressionPickerGridStores
-// Dependencies: [1243, 4659, 1248, 2]
+// Dependencies: [1255, 4708, 1260, 2]
 // Exports: default
 
-// Module 10583 (ExpressionPickerGridStores)
-import identity_mod from "module_1243" /* 1243 */;
-import module_4659_mod from "module_4659" /* 4659 */;
+// Module 9645 (ExpressionPickerGridStores)
+import react_native from "react-native" /* 1260 */;
+import module_1255_mod from "module_1255" /* 1255 */;
+import combine_mod from "combine" /* 4708 */;
 import size from "module_2" /* 2 */;
 
+const f100864 = () => closure_1_2;
 let closure_2 = Object.freeze({ inspectedExpressionPosition: { rowIndex: 0, columnIndex: 0 }, hasInteracted: false, activeCategoryIndex: 0, searchPlaceholder: null, bottomPosition: null, analyticsId: null });
-let identity = identity_mod;
-identity = identity.createWithEqualityFn();
-let module_4659 = module_4659_mod;
-let withEqualityFnResult = identity(module_4659.subscribeWithSelector(() => closure_1_2));
+let module_1255 = module_1255_mod;
+module_1255 = module_1255.createWithEqualityFn();
+let combine = combine_mod;
+let withEqualityFnResult = module_1255(combine.subscribeWithSelector(f100864));
 let store = {
   useStore: withEqualityFnResult,
   getState() {
-    return withEqualityFnResult.getState();
+    return require.getState();
   },
   subscribe(arg0, arg1) {
-    return withEqualityFnResult.subscribe(arg0, arg1);
+    return require.subscribe(arg0, arg1);
   },
   setInspectedExpressionPosition(columnIndex, rowIndex, source) {
-    withEqualityFnResult(1248).batchUpdates(() => {
-      const obj = { inspectedExpressionPosition: { rowIndex, columnIndex, source }, hasInteracted: true };
-      return withEqualityFnResult.setState(obj);
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      let obj2;
+      const obj = { inspectedExpressionPosition: obj2, hasInteracted: true };
+      obj2 = { rowIndex, columnIndex, source };
+      return require.setState(obj);
     });
   },
   setActiveCategoryIndex(activeCategoryIndex) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ activeCategoryIndex }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { activeCategoryIndex };
+      return require.setState(obj);
+    });
   },
   setSearchPlaceholder(searchPlaceholder) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ searchPlaceholder }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { searchPlaceholder };
+      return require.setState(obj);
+    });
   },
   resetStoreState() {
-    withEqualityFnResult(1248).batchUpdates(() => state.setState(closure_2_2));
+    let state;
+    const obj = react_native;
+    obj.batchUpdates(() => state.setState(closure_2_2));
   },
   setBottomPosition(bottomPosition) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ bottomPosition }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { bottomPosition };
+      return require.setState(obj);
+    });
   },
   setAnalyticsId(replaced) {
     const analyticsId = replaced;
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ analyticsId }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { analyticsId };
+      return require.setState(obj);
+    });
   },
   getAnalyticsId() {
-    return withEqualityFnResult.getState().analyticsId;
+    return require.getState().analyticsId;
   }
 };
-let identity = identity_mod;
-identity = identity.createWithEqualityFn();
-let module_4659 = module_4659_mod;
-const withEqualityFn1Result = identity(module_4659.subscribeWithSelector(() => closure_1_2));
+module_1255 = module_1255_mod;
+module_1255 = module_1255.createWithEqualityFn();
+combine = combine_mod;
+const withEqualityFn1Result = module_1255(combine.subscribeWithSelector(f100864));
 const store1 = {
   useStore: withEqualityFn1Result,
   getState() {
-    return withEqualityFnResult.getState();
+    return require.getState();
   },
   subscribe(arg0, arg1) {
-    return withEqualityFnResult.subscribe(arg0, arg1);
+    return require.subscribe(arg0, arg1);
   },
   setInspectedExpressionPosition(columnIndex, rowIndex, source) {
-    withEqualityFnResult(1248).batchUpdates(() => {
-      const obj = { inspectedExpressionPosition: { rowIndex, columnIndex, source }, hasInteracted: true };
-      return withEqualityFnResult.setState(obj);
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      let obj2;
+      const obj = { inspectedExpressionPosition: obj2, hasInteracted: true };
+      obj2 = { rowIndex, columnIndex, source };
+      return require.setState(obj);
     });
   },
   setActiveCategoryIndex(activeCategoryIndex) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ activeCategoryIndex }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { activeCategoryIndex };
+      return require.setState(obj);
+    });
   },
   setSearchPlaceholder(searchPlaceholder) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ searchPlaceholder }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { searchPlaceholder };
+      return require.setState(obj);
+    });
   },
   resetStoreState() {
-    withEqualityFnResult(1248).batchUpdates(() => state.setState(closure_2_2));
+    let state;
+    const obj = react_native;
+    obj.batchUpdates(() => state.setState(closure_2_2));
   },
   setBottomPosition(bottomPosition) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ bottomPosition }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { bottomPosition };
+      return require.setState(obj);
+    });
   },
   setAnalyticsId(replaced) {
     const analyticsId = replaced;
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ analyticsId }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { analyticsId };
+      return require.setState(obj);
+    });
   },
   getAnalyticsId() {
-    return withEqualityFnResult.getState().analyticsId;
+    return require.getState().analyticsId;
   }
 };
-let identity = identity_mod;
-identity = identity.createWithEqualityFn();
-let module_4659 = module_4659_mod;
-const withEqualityFn2Result = identity(module_4659.subscribeWithSelector(() => closure_1_2));
+module_1255 = module_1255_mod;
+module_1255 = module_1255.createWithEqualityFn();
+combine = combine_mod;
+const withEqualityFn2Result = module_1255(combine.subscribeWithSelector(f100864));
 const store2 = {
   useStore: withEqualityFn2Result,
   getState() {
-    return withEqualityFnResult.getState();
+    return require.getState();
   },
   subscribe(arg0, arg1) {
-    return withEqualityFnResult.subscribe(arg0, arg1);
+    return require.subscribe(arg0, arg1);
   },
   setInspectedExpressionPosition(columnIndex, rowIndex, source) {
-    withEqualityFnResult(1248).batchUpdates(() => {
-      const obj = { inspectedExpressionPosition: { rowIndex, columnIndex, source }, hasInteracted: true };
-      return withEqualityFnResult.setState(obj);
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      let obj2;
+      const obj = { inspectedExpressionPosition: obj2, hasInteracted: true };
+      obj2 = { rowIndex, columnIndex, source };
+      return require.setState(obj);
     });
   },
   setActiveCategoryIndex(activeCategoryIndex) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ activeCategoryIndex }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { activeCategoryIndex };
+      return require.setState(obj);
+    });
   },
   setSearchPlaceholder(searchPlaceholder) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ searchPlaceholder }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { searchPlaceholder };
+      return require.setState(obj);
+    });
   },
   resetStoreState() {
-    withEqualityFnResult(1248).batchUpdates(() => state.setState(closure_2_2));
+    let state;
+    const obj = react_native;
+    obj.batchUpdates(() => state.setState(closure_2_2));
   },
   setBottomPosition(bottomPosition) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ bottomPosition }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { bottomPosition };
+      return require.setState(obj);
+    });
   },
   setAnalyticsId(replaced) {
     const analyticsId = replaced;
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ analyticsId }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { analyticsId };
+      return require.setState(obj);
+    });
   },
   getAnalyticsId() {
-    return withEqualityFnResult.getState().analyticsId;
+    return require.getState().analyticsId;
   }
 };
-let identity = identity_mod;
-identity = identity.createWithEqualityFn();
-let module_4659 = module_4659_mod;
-const withEqualityFn3Result = identity(module_4659.subscribeWithSelector(() => closure_1_2));
+module_1255 = module_1255_mod;
+module_1255 = module_1255.createWithEqualityFn();
+combine = combine_mod;
+const withEqualityFn3Result = module_1255(combine.subscribeWithSelector(f100864));
 let c0 = withEqualityFn3Result;
 const store3 = {
   useStore: withEqualityFn3Result,
   getState() {
-    return withEqualityFnResult.getState();
+    return require.getState();
   },
   subscribe(arg0, arg1) {
-    return withEqualityFnResult.subscribe(arg0, arg1);
+    return require.subscribe(arg0, arg1);
   },
   setInspectedExpressionPosition(columnIndex, rowIndex, source) {
-    withEqualityFnResult(1248).batchUpdates(() => {
-      const obj = { inspectedExpressionPosition: { rowIndex, columnIndex, source }, hasInteracted: true };
-      return withEqualityFnResult.setState(obj);
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      let obj2;
+      const obj = { inspectedExpressionPosition: obj2, hasInteracted: true };
+      obj2 = { rowIndex, columnIndex, source };
+      return require.setState(obj);
     });
   },
   setActiveCategoryIndex(activeCategoryIndex) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ activeCategoryIndex }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { activeCategoryIndex };
+      return require.setState(obj);
+    });
   },
   setSearchPlaceholder(searchPlaceholder) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ searchPlaceholder }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { searchPlaceholder };
+      return require.setState(obj);
+    });
   },
   resetStoreState() {
-    withEqualityFnResult(1248).batchUpdates(() => state.setState(closure_2_2));
+    let state;
+    const obj = react_native;
+    obj.batchUpdates(() => state.setState(closure_2_2));
   },
   setBottomPosition(bottomPosition) {
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ bottomPosition }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { bottomPosition };
+      return require.setState(obj);
+    });
   },
   setAnalyticsId(replaced) {
     const analyticsId = replaced;
-    withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ analyticsId }));
+    let obj = react_native;
+    obj.batchUpdates(() => {
+      const obj = { analyticsId };
+      return require.setState(obj);
+    });
   },
   getAnalyticsId() {
-    return withEqualityFnResult.getState().analyticsId;
+    return require.getState().analyticsId;
   }
 };
 const result = size.fileFinishedImporting("modules/expression_picker/ExpressionPickerGridStores.tsx");
 
 export default function createStore() {
-  const withEqualityFn = _undefined(1243).createWithEqualityFn();
-  let obj = _undefined(1243);
-  const withEqualityFnResult = withEqualityFn(_undefined(4659).subscribeWithSelector(() => closure_1_2));
-  _undefined = withEqualityFnResult;
+  let obj = module_1255;
+  const withEqualityFn = obj.createWithEqualityFn();
+  let obj2 = combine;
+  const withEqualityFnResult = withEqualityFn(obj2.subscribeWithSelector(f100864));
+  require = withEqualityFnResult;
   const store = {
     useStore: withEqualityFnResult,
     getState() {
-      return withEqualityFnResult.getState();
+      return require.getState();
     },
     subscribe(arg0, arg1) {
-      return withEqualityFnResult.subscribe(arg0, arg1);
+      return require.subscribe(arg0, arg1);
     },
     setInspectedExpressionPosition(columnIndex, rowIndex, source) {
-      withEqualityFnResult(1248).batchUpdates(() => {
-        const obj = { inspectedExpressionPosition: { rowIndex, columnIndex, source }, hasInteracted: true };
-        return withEqualityFnResult.setState(obj);
+      let obj = react_native;
+      obj.batchUpdates(() => {
+        let obj2;
+        const obj = { inspectedExpressionPosition: obj2, hasInteracted: true };
+        obj2 = { rowIndex, columnIndex, source };
+        return require.setState(obj);
       });
     },
     setActiveCategoryIndex(activeCategoryIndex) {
-      withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ activeCategoryIndex }));
+      let obj = react_native;
+      obj.batchUpdates(() => {
+        const obj = { activeCategoryIndex };
+        return require.setState(obj);
+      });
     },
     setSearchPlaceholder(searchPlaceholder) {
-      withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ searchPlaceholder }));
+      let obj = react_native;
+      obj.batchUpdates(() => {
+        const obj = { searchPlaceholder };
+        return require.setState(obj);
+      });
     },
     resetStoreState() {
-      withEqualityFnResult(1248).batchUpdates(() => state.setState(closure_2_2));
+      let state;
+      const obj = react_native;
+      obj.batchUpdates(() => state.setState(closure_2_2));
     },
     setBottomPosition(bottomPosition) {
-      withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ bottomPosition }));
+      let obj = react_native;
+      obj.batchUpdates(() => {
+        const obj = { bottomPosition };
+        return require.setState(obj);
+      });
     },
     setAnalyticsId(replaced) {
       const analyticsId = replaced;
-      withEqualityFnResult(1248).batchUpdates(() => withEqualityFnResult.setState({ analyticsId }));
+      let obj = react_native;
+      obj.batchUpdates(() => {
+        const obj = { analyticsId };
+        return require.setState(obj);
+      });
     },
     getAnalyticsId() {
-      return withEqualityFnResult.getState().analyticsId;
+      return require.getState().analyticsId;
     }
   };
   return store;

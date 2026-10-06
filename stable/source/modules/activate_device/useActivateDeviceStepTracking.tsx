@@ -1,41 +1,89 @@
-// Module ID: 14174
-// Function ID: 14175
+// Module ID: 13422
+// Function ID: 13423
 // Name: useActivateDeviceStepTracking
-// Dependencies: [19, 1074, 8575, 14175, 1241, 2]
-// Exports: useActivateDeviceStepTracking
+// Dependencies: [19, 1086, 558, 576, 7724, 13423, 1253, 2]
 
-// Module 14174 (useActivateDeviceStepTracking)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import usePreviousDefault from "usePrevious" /* 8575 */;
-import ActivateDeviceUtils from "ActivateDeviceUtils" /* 14175 */;
-import noop from "module_19" /* 19 */;
+// Module 13422 (useActivateDeviceStepTracking)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import usePreviousDefault from "usePrevious" /* 7724 */;
+import ActivateDeviceUtils from "ActivateDeviceUtils" /* 13423 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/activate_device/useActivateDeviceStepTracking.tsx");
+const require = globalThis.__r;
+let _require, importDefault;
 
-export const useActivateDeviceStepTracking = function useActivateDeviceStepTracking(arg0) {
-  closure_0 = arg0;
+const AnalyticEvents = Constants.AnalyticEvents;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_1;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  const tmp2 = usePreviousDefault(arg0);
+  importDefault = tmp2;
+  if (cResult[0] === tmp2) {
+    let tmp3;
+    let tmp4;
+    if (cResult[1] === arg0) {
+      tmp3 = cResult[2];
+      tmp4 = cResult[3];
+    }
+    const effect = react.useEffect(tmp3, tmp4);
+  }
+  const fn = function p() {
+    if (type !== closure_1) {
+      let result = null;
+      const tmp3 = "user-code-input" !== tmp.type && "handoff" !== tmp.type;
+      if (tmp3) {
+        const obj = ActivateDeviceUtils;
+        result = obj.clientIdToActivateDevicePlatform(tmp.userCodeData.clientId);
+      }
+      type = undefined;
+      const track = AnalyticsUtilsDefault.track;
+      const DEVICE_LINK_STEP = AnalyticEvents.DEVICE_LINK_STEP;
+      AnalyticsUtilsDefault;
+      if (closure_1 != null) {
+        type = tmp2.type;
+      }
+      const obj2 = { previous_step: type, current_step: type.type, platform_type: result };
+      track(DEVICE_LINK_STEP, obj2);
+    }
+  };
+  const items = [tmp2, arg0];
+  cResult[0] = tmp2;
+  cResult[1] = arg0;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp4 = items;
+  tmp3 = fn;
+}) : ((arg0) => {
+  let closure_1;
+  let type = arg0;
   const tmp = usePreviousDefault(arg0);
   importDefault = tmp;
   const items = [tmp, arg0];
-  const effect = noop.useEffect(() => {
-    if (closure_0 !== closure_1) {
-      let tmp3 = "user-code-input" !== tmp.type;
-      if (tmp3) {
-        tmp3 = "handoff" !== tmp.type;
-      }
+  const effect = react.useEffect(() => {
+    if (type !== closure_1) {
       let result = null;
+      const tmp3 = "user-code-input" !== tmp.type && "handoff" !== tmp.type;
       if (tmp3) {
-        result = ActivateDeviceUtils.clientIdToActivateDevicePlatform(tmp.userCodeData.clientId);
+        const obj = ActivateDeviceUtils;
+        result = obj.clientIdToActivateDevicePlatform(tmp.userCodeData.clientId);
       }
-      let type;
-      if (tmp2 != null) {
+      type = undefined;
+      const track = AnalyticsUtilsDefault.track;
+      const DEVICE_LINK_STEP = AnalyticEvents.DEVICE_LINK_STEP;
+      AnalyticsUtilsDefault;
+      if (closure_1 != null) {
         type = tmp2.type;
       }
-      const obj3 = { previous_step: type, current_step: tmp.type, platform_type: result };
-      AnalyticsUtilsDefault.track(AnalyticEvents.DEVICE_LINK_STEP, obj3);
+      const obj2 = { previous_step: type, current_step: type.type, platform_type: result };
+      track(DEVICE_LINK_STEP, obj2);
     }
   }, items);
-};
+});
+let result = size.fileFinishedImporting("modules/activate_device/useActivateDeviceStepTracking.tsx");
+
+export const useActivateDeviceStepTracking = tmp2;

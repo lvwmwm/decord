@@ -1,277 +1,656 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 12023
+// Function ID: 12024
 // Name: SegmentedControlPages
-// Dependencies: [32, 19, 17, 21, 4524, 12899, 1364, 6929, 5212, 5171, 2]
-// Exports: SegmentedControlPages
+// Dependencies: [109, 32, 19, 17, 21, 4570, 558, 576, 12024, 1370, 6066, 5276, 5235, 2]
 
-// Module 12898 (SegmentedControlPages)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4524 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5212 */;
-import MathUtils from "MathUtils" /* 12899 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 12023 (SegmentedControlPages)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
+import react_native2 from "react-native" /* 5276 */;
+import MathUtils from "MathUtils" /* 12024 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const ReanimatedRexport = ReanimatedRexport2;
+let _require, dependencyMap, importDefault, set;
 
-require = fn;
-function SegmentedControlPage(children) {
-  const reportedPageIndex = children.reportedPageIndex;
-  const pageIndex = children.pageIndex;
-  const scrollTargetPageIndex = children.scrollTargetPageIndex;
-  const index = children.index;
-  const activePageRangeStart = children.activePageRangeStart;
-  const activePageRangeEnd = children.activePageRangeEnd;
-  const merged = Object.assign(children, Object.assign({ reportedPageIndex: 0, pageIndex: 0, scrollTargetPageIndex: 0, index: 0, item: 0, activePageRangeStart: 0, activePageRangeEnd: 0 }));
-  let accessibilityElementsHidden;
-  closure_8 = undefined;
-  let ref;
-  closure_11 = undefined;
-  const fn = function v() {
-    let tmp2 = Math.floor(pageIndex.get()) === index;
-    if (!tmp2) {
-      const _Math = Math;
-      tmp2 = Math.ceil(pageIndex.get()) === tmp;
-    }
-    if (!tmp2) {
-      tmp2 = scrollTargetPageIndex.get() === tmp;
-    }
-    return tmp2;
-  };
-  fn.__closure = { pageIndex, index, scrollTargetPageIndex };
-  fn.__workletHash = 6181538518841;
-  fn.__initData = __initData3;
-  const derivedValue = reportedPageIndex(scrollTargetPageIndex[4]).useDerivedValue(fn);
-  let obj = reportedPageIndex(scrollTargetPageIndex[4]);
-  let tmp2 = reportedPageIndex;
-  class S {
-    constructor() {
-      pointerEvents = "box-none";
-      if (reportedPageIndex.get() !== index) {
-        pointerEvents = "none";
-      }
-      return { pointerEvents };
-    }
-  }
-  S.__closure = { reportedPageIndex, index };
-  S.__workletHash = 13786543795395;
-  S.__initData = __initData4;
-  const animatedProps = reportedPageIndex(scrollTargetPageIndex[4]).useAnimatedProps(S);
-  const tmp6 = index(activePageRangeStart.useState(() => reportedPageIndex.get() !== index), 2);
-  accessibilityElementsHidden = tmp6[0];
-  closure_8 = tmp8;
-  let obj2 = reportedPageIndex(scrollTargetPageIndex[4]);
-  const fn2 = function p() {
-    return reportedPageIndex.get() !== index;
-  };
-  fn2.__closure = { reportedPageIndex, index };
-  fn2.__workletHash = 7407561160388;
-  fn2.__initData = __initData5;
-  class I {
-    constructor(arg0) {
-      obj = closure_0(closure_2[4]);
-      tmp = obj.runOnJS(closure_8)(children);
-      return;
-    }
-  }
-  let obj3 = reportedPageIndex(scrollTargetPageIndex[4]);
-  I.__closure = { runOnJS: reportedPageIndex(scrollTargetPageIndex[4]).runOnJS, setIsAccessibilityHidden: tmp6[1] };
-  I.__workletHash = 1716421879381;
-  I.__initData = __initData6;
-  const animatedReaction = obj3.useAnimatedReaction(fn2, I);
-  activePageRangeStart.useRef(null);
-  ref = activePageRangeStart.useRef(accessibilityElementsHidden);
-  let items = [accessibilityElementsHidden];
-  const effect = activePageRangeStart.useEffect(() => {
-    let current = ref.current;
-    if (current) {
-      current = !current;
-    }
-    ref.current = current;
-    if (current) {
-      current = PlatformUtils.isIOS();
-    }
-    if (current) {
-      const obj3 = { ref, delay: 100 };
-      const result = setAccessibilityFocus.setAccessibilityFocus(obj3);
-    }
-  }, items);
-  const obj4 = { runOnJS: reportedPageIndex(scrollTargetPageIndex[4]).runOnJS, setIsAccessibilityHidden: tmp6[1] };
-  class A {
-    constructor() {
-      display = "none";
-      if (closure_6.get()) {
-        display = "flex";
-      }
-      return { display, flex: 1 };
-    }
-  }
-  A.__closure = { isVisibleOnScreen: derivedValue };
-  A.__workletHash = 10465509086469;
-  A.__initData = __initData7;
-  const animatedStyle = reportedPageIndex(scrollTargetPageIndex[4]).useAnimatedStyle(A);
-  const tmp13 = index(activePageRangeStart.useState(() => {
-    let tmp2 = index >= activePageRangeStart.get();
-    if (tmp2) {
-      tmp2 = index <= activePageRangeEnd.get();
-    }
-    return !tmp2;
-  }), 2);
-  closure_11 = tmp14;
-  const obj5 = reportedPageIndex(scrollTargetPageIndex[4]);
-  const fn3 = function y() {
-    const items = [activePageRangeStart.get(), activePageRangeEnd.get()];
-    return items;
-  };
-  fn3.__closure = { activePageRangeStart, activePageRangeEnd };
-  fn3.__workletHash = 3980327308475;
-  fn3.__initData = __initData8;
-  class N {
-    constructor(arg0) {
-      [tmp, tmp2] = children;
-      obj = closure_0(closure_2[4]);
-      tmp4 = index >= tmp;
-      runOnJSResult = obj.runOnJS(closure_11);
-      if (tmp4) {
-        tmp4 = index <= tmp2;
-      }
-      tmp3Result = runOnJSResult(!tmp4);
-      return;
-    }
-  }
-  const obj6 = reportedPageIndex(scrollTargetPageIndex[4]);
-  N.__closure = { index, runOnJS: reportedPageIndex(scrollTargetPageIndex[4]).runOnJS, setFreeze: tmp13[1] };
-  N.__workletHash = 16675026816258;
-  N.__initData = __initData9;
-  const animatedReaction1 = obj6.useAnimatedReaction(fn3, N);
-  const obj8 = { ref };
-  const merged1 = Object.assign(merged);
-  obj8.animatedProps = animatedProps;
-  let str = "auto";
-  if (accessibilityElementsHidden) {
-    str = "no-hide-descendants";
-  }
-  obj8.importantForAccessibility = str;
-  obj8.accessibilityElementsHidden = accessibilityElementsHidden;
-  const obj9 = { freeze: tmp13[0], children: activePageRangeEnd(pageIndex(scrollTargetPageIndex[4]).View, { style: animatedStyle, children: children.item.page }) };
-  obj8.children = activePageRangeEnd(tmp2(scrollTargetPageIndex[9]).Freeze, obj9);
-  return activePageRangeEnd(pageIndex(scrollTargetPageIndex[4]).View, obj8, index);
-}
-const jsx = fn(21).jsx;
-let closure_6 = ReanimatedRexport.createAnimatedComponent(fn(17).ScrollView);
-let closure_7 = { code: "function SegmentedControlPagesNativeTsx1(){const{activeIndex}=this.__closure;return activeIndex.get();}" };
-let closure_8 = { code: "function SegmentedControlPagesNativeTsx2(value){const{runOnJS,updateCurrentActiveIndex}=this.__closure;runOnJS(updateCurrentActiveIndex)(value);}" };
-let closure_9 = { code: "function SegmentedControlPagesNativeTsx3(){const{pageIndex}=this.__closure;return pageIndex.get();}" };
-let closure_10 = { code: "function SegmentedControlPagesNativeTsx4(value){const{activeIndex}=this.__closure;activeIndex.set(value);}" };
-let closure_11 = { code: "function SegmentedControlPagesNativeTsx5(contentOffset,contentSize){const{pageWidth,pageIndex,roundIfClose,reportedPageIndex,runOnJS,onPageChanged}=this.__closure;if(pageWidth===0){return;}pageIndex.set(Math.min(Math.max(roundIfClose(contentOffset.x/pageWidth,1e-4),0),roundIfClose(contentSize.width/pageWidth,1e-4)-1));const pageFullyVisible=pageIndex.get()%1===0;if(pageFullyVisible&&reportedPageIndex.get()!==pageIndex.get()){reportedPageIndex.set(pageIndex.get());runOnJS(onPageChanged)(pageIndex.get());}}" };
-let closure_12 = { code: "function SegmentedControlPagesNativeTsx6(event){const{scrollTarget,onBeginDragWorklet}=this.__closure;var _onBeginDragWorklet;scrollTarget.set(-1);(_onBeginDragWorklet=onBeginDragWorklet)===null||_onBeginDragWorklet===void 0||_onBeginDragWorklet(event);}" };
-let closure_13 = { code: "function SegmentedControlPagesNativeTsx7(event){const{onEndDragWorklet}=this.__closure;var _onEndDragWorklet;(_onEndDragWorklet=onEndDragWorklet)===null||_onEndDragWorklet===void 0||_onEndDragWorklet(event);}" };
-let __initData = { code: "function SegmentedControlPagesNativeTsx8({contentOffset:contentOffset,contentSize:contentSize}){const{scrollTarget,roundIfClose,runOnJS,refreshScrollOffset,resolvePageIndex}=this.__closure;if(scrollTarget.get()!==-1){const hasReachedTarget=roundIfClose(contentOffset.x-scrollTarget.get(),1e-4)===0;if(hasReachedTarget){scrollTarget.set(-1);}else{const page=scrollTarget.get();runOnJS(refreshScrollOffset)(page);}}resolvePageIndex(contentOffset,contentSize);}" };
-let __initData2 = { code: "function SegmentedControlPagesNativeTsx9(event){const{lastScrollOffsetX,onScrollWorklet,itemCount,pageWidth,activeIndex,runOnJS,refreshScrollOffset,scrollOverflow,scrollTarget,roundIfClose,resolvePageIndex}=this.__closure;var _onScrollWorklet;const{contentOffset:contentOffset,contentSize:contentSize}=event;if(contentSize.width===0){return;}if(lastScrollOffsetX.get()===contentOffset.x){return;}lastScrollOffsetX.set(contentOffset.x);(_onScrollWorklet=onScrollWorklet)===null||_onScrollWorklet===void 0||_onScrollWorklet(event);const expectedContentSize=itemCount*pageWidth;if(Math.round(expectedContentSize)%Math.round(contentSize.width)!==0){const page=activeIndex.get()*pageWidth;runOnJS(refreshScrollOffset)(page);return;}if(contentOffset.x<0){scrollOverflow.set(contentOffset.x);}else if(contentOffset.x>contentSize.width-pageWidth){scrollOverflow.set(contentOffset.x-(contentSize.width-pageWidth));}else{scrollOverflow.set(0);}if(scrollTarget.get()!==-1){const hasReachedTarget=roundIfClose(contentOffset.x-scrollTarget.get(),1e-4)===0;if(hasReachedTarget){scrollTarget.set(-1);}else{return;}}resolvePageIndex(contentOffset,contentSize);}" };
-let closure_16 = { code: "function SegmentedControlPagesNativeTsx10(){const{scrollTarget,roundIfClose,pageWidth}=this.__closure;if(scrollTarget.get()===-1){return-1;}return roundIfClose(scrollTarget.get()/pageWidth,1e-4);}" };
-let closure_17 = { code: "function SegmentedControlPagesNativeTsx11(){const{pageIndex,scrollTargetPageIndex}=this.__closure;const idx=pageIndex.get();let lo=Math.floor(idx);let hi=Math.ceil(idx);const target=scrollTargetPageIndex.get();if(target!==-1){lo=Math.min(lo,target);hi=Math.max(hi,target);}return[lo,hi];}" };
-let closure_18 = { code: "function SegmentedControlPagesNativeTsx12(range,prev){const{visiblePageRange}=this.__closure;if(prev==null||prev[0]!==range[0]||prev[1]!==range[1]){visiblePageRange.set(range);}}" };
-const __initData3 = { code: "function SegmentedControlPagesNativeTsx13(){const{pageIndex,index,scrollTargetPageIndex}=this.__closure;if(Math.floor(pageIndex.get())===index||Math.ceil(pageIndex.get())===index){return true;}if(scrollTargetPageIndex.get()===index){return true;}return false;}" };
-const __initData4 = { code: "function SegmentedControlPagesNativeTsx14(){const{reportedPageIndex,index}=this.__closure;const isHidden=reportedPageIndex.get()!==index;return{pointerEvents:isHidden?'none':'box-none'};}" };
-const __initData5 = { code: "function SegmentedControlPagesNativeTsx15(){const{reportedPageIndex,index}=this.__closure;return reportedPageIndex.get()!==index;}" };
-const __initData6 = { code: "function SegmentedControlPagesNativeTsx16(hidden){const{runOnJS,setIsAccessibilityHidden}=this.__closure;runOnJS(setIsAccessibilityHidden)(hidden);}" };
-const __initData7 = { code: "function SegmentedControlPagesNativeTsx17(){const{isVisibleOnScreen}=this.__closure;return{display:isVisibleOnScreen.get()?'flex':'none',flex:1};}" };
-const __initData8 = { code: "function SegmentedControlPagesNativeTsx18(){const{activePageRangeStart,activePageRangeEnd}=this.__closure;return[activePageRangeStart.get(),activePageRangeEnd.get()];}" };
-const __initData9 = { code: "function SegmentedControlPagesNativeTsx19([start,end]){const{index,runOnJS,setFreeze}=this.__closure;const isInActiveRange=index>=start&&index<=end;runOnJS(setFreeze)(!isInActiveRange);}" };
-const __initData10 = { code: "function SegmentedControlPagesNativeTsx20(min,max){const{activePageRangeStart,activePageRangeEnd}=this.__closure;activePageRangeStart.set(Math.min(activePageRangeStart.get(),min));activePageRangeEnd.set(Math.max(activePageRangeEnd.get(),max));}" };
-const __initData11 = { code: "function SegmentedControlPagesNativeTsx21(){const{activeIndex,pressedIndex}=this.__closure;return{activeIndex:activeIndex.get(),pressedIndex:pressedIndex.get()};}" };
-const __initData12 = { code: "function SegmentedControlPagesNativeTsx22({activeIndex:activeIndex,pressedIndex:pressedIndex}){const{expandActivePageRange}=this.__closure;let min=activeIndex;let max=activeIndex;if(pressedIndex!==-1){min=Math.min(activeIndex,pressedIndex);max=Math.max(activeIndex,pressedIndex);}expandActivePageRange(Math.floor(min),Math.ceil(max));}" };
-const size = fn(2);
-let result = size.fileFinishedImporting("design/components/SegmentedControl/native/SegmentedControlPages.native.tsx");
-
-export const SegmentedControlPages = function SegmentedControlPages(onEndDragWorklet) {
-  ({ state, nativeGesture, onBeginDragWorklet } = onEndDragWorklet);
-  activeIndex = onBeginDragWorklet;
+let closure_3 = ["reportedPageIndex", "pageIndex", "scrollTargetPageIndex", "index", "item", "activePageRangeStart", "activePageRangeEnd"];
+const ScrollView = react_native.ScrollView;
+const jsx = Fragment.jsx;
+let closure_8 = ReanimatedRexport.createAnimatedComponent(ScrollView);
+let ref = { code: "function SegmentedControlPagesNativeTsx1(){const{activeIndex}=this.__closure;return activeIndex.get();}" };
+let pageIndex = { code: "function SegmentedControlPagesNativeTsx2(value_0){const{runOnJS,updateCurrentActiveIndex}=this.__closure;runOnJS(updateCurrentActiveIndex)(value_0);}" };
+let reportedPageIndex = { code: "function SegmentedControlPagesNativeTsx3(){const{pageIndex}=this.__closure;return pageIndex.get();}" };
+let closure_12 = { code: "function SegmentedControlPagesNativeTsx4(value_1){const{activeIndex}=this.__closure;activeIndex.set(value_1);}" };
+let closure_13 = { code: "function SegmentedControlPagesNativeTsx5(contentOffset,contentSize){const{pageWidth,pageIndex,roundIfClose,reportedPageIndex,runOnJS,onPageChanged}=this.__closure;if(pageWidth===0){return;}pageIndex.set(Math.min(Math.max(roundIfClose(contentOffset.x/pageWidth,0.0001),0),roundIfClose(contentSize.width/pageWidth,0.0001)-1));const pageFullyVisible=pageIndex.get()%1===0;if(pageFullyVisible&&reportedPageIndex.get()!==pageIndex.get()){reportedPageIndex.set(pageIndex.get());runOnJS(onPageChanged)(pageIndex.get());}}" };
+let __initData = { code: "function SegmentedControlPagesNativeTsx6(event){const{scrollTarget,onBeginDragWorklet}=this.__closure;var _onBeginDragWorklet;scrollTarget.set(-1);(_onBeginDragWorklet=onBeginDragWorklet)===null||_onBeginDragWorklet===void 0||_onBeginDragWorklet(event);}" };
+let __initData2 = { code: "function SegmentedControlPagesNativeTsx7(event_0){const{onEndDragWorklet}=this.__closure;var _onEndDragWorklet;(_onEndDragWorklet=onEndDragWorklet)===null||_onEndDragWorklet===void 0||_onEndDragWorklet(event_0);}" };
+let closure_16 = { code: "function SegmentedControlPagesNativeTsx8(t5){const{scrollTarget,roundIfClose,runOnJS,refreshScrollOffset,resolvePageIndex}=this.__closure;const{contentOffset:contentOffset_0,contentSize:contentSize_0}=t5;if(scrollTarget.get()!==-1){const hasReachedTarget=roundIfClose(contentOffset_0.x-scrollTarget.get(),0.0001)===0;if(hasReachedTarget){scrollTarget.set(-1);}else{const page=scrollTarget.get();runOnJS(refreshScrollOffset)(page);}}resolvePageIndex(contentOffset_0,contentSize_0);}" };
+let closure_17 = { code: "function SegmentedControlPagesNativeTsx9(event_1){const{lastScrollOffsetX,onScrollWorklet,itemCount,pageWidth,activeIndex,runOnJS,refreshScrollOffset,scrollOverflow,scrollTarget,roundIfClose,resolvePageIndex}=this.__closure;var _onScrollWorklet;const{contentOffset:contentOffset_1,contentSize:contentSize_1}=event_1;if(contentSize_1.width===0){return;}if(lastScrollOffsetX.get()===contentOffset_1.x){return;}lastScrollOffsetX.set(contentOffset_1.x);(_onScrollWorklet=onScrollWorklet)===null||_onScrollWorklet===void 0||_onScrollWorklet(event_1);const expectedContentSize=itemCount*pageWidth;if(Math.round(expectedContentSize)%Math.round(contentSize_1.width)!==0){const page_0=activeIndex.get()*pageWidth;runOnJS(refreshScrollOffset)(page_0);return;}if(contentOffset_1.x<0){scrollOverflow.set(contentOffset_1.x);}else{if(contentOffset_1.x>contentSize_1.width-pageWidth){scrollOverflow.set(contentOffset_1.x-(contentSize_1.width-pageWidth));}else{scrollOverflow.set(0);}}if(scrollTarget.get()!==-1){const hasReachedTarget_0=roundIfClose(contentOffset_1.x-scrollTarget.get(),0.0001)===0;if(hasReachedTarget_0){scrollTarget.set(-1);}else{return;}}resolvePageIndex(contentOffset_1,contentSize_1);}" };
+let __initData3 = { code: "function SegmentedControlPagesNativeTsx10(){const{scrollTarget,roundIfClose,pageWidth}=this.__closure;if(scrollTarget.get()===-1){return-1;}return roundIfClose(scrollTarget.get()/pageWidth,0.0001);}" };
+let closure_19 = { code: "function SegmentedControlPagesNativeTsx11(){const{pageIndex,scrollTargetPageIndex}=this.__closure;const idx=pageIndex.get();let lo=Math.floor(idx);let hi=Math.ceil(idx);const target=scrollTargetPageIndex.get();if(target!==-1){lo=Math.min(lo,target);hi=Math.max(hi,target);}return[lo,hi];}" };
+let style = { code: "function SegmentedControlPagesNativeTsx12(range,prev){const{visiblePageRange}=this.__closure;if(prev==null||prev[0]!==range[0]||prev[1]!==range[1]){visiblePageRange.set(range);}}" };
+__initData = { code: "function SegmentedControlPagesNativeTsx13(){const{activeIndex}=this.__closure;return activeIndex.get();}" };
+__initData = { code: "function SegmentedControlPagesNativeTsx14(value_0){const{runOnJS,updateCurrentActiveIndex}=this.__closure;runOnJS(updateCurrentActiveIndex)(value_0);}" };
+let scrollTargetPageIndex = { code: "function SegmentedControlPagesNativeTsx15(){const{pageIndex}=this.__closure;return pageIndex.get();}" };
+const __initData4 = { code: "function SegmentedControlPagesNativeTsx16(value_1){const{activeIndex}=this.__closure;activeIndex.set(value_1);}" };
+const __initData5 = { code: "function SegmentedControlPagesNativeTsx17(contentOffset,contentSize){const{pageWidth,pageIndex,roundIfClose,reportedPageIndex,runOnJS,onPageChanged}=this.__closure;if(pageWidth===0){return;}pageIndex.set(Math.min(Math.max(roundIfClose(contentOffset.x/pageWidth,1e-4),0),roundIfClose(contentSize.width/pageWidth,1e-4)-1));const pageFullyVisible=pageIndex.get()%1===0;if(pageFullyVisible&&reportedPageIndex.get()!==pageIndex.get()){reportedPageIndex.set(pageIndex.get());runOnJS(onPageChanged)(pageIndex.get());}}" };
+const __initData6 = { code: "function SegmentedControlPagesNativeTsx18(event){const{scrollTarget,onBeginDragWorklet}=this.__closure;var _onBeginDragWorklet;scrollTarget.set(-1);(_onBeginDragWorklet=onBeginDragWorklet)===null||_onBeginDragWorklet===void 0||_onBeginDragWorklet(event);}" };
+const __initData7 = { code: "function SegmentedControlPagesNativeTsx19(event_0){const{onEndDragWorklet}=this.__closure;var _onEndDragWorklet;(_onEndDragWorklet=onEndDragWorklet)===null||_onEndDragWorklet===void 0||_onEndDragWorklet(event_0);}" };
+const __initData8 = { code: "function SegmentedControlPagesNativeTsx20({contentOffset:contentOffset_0,contentSize:contentSize_0}){const{scrollTarget,roundIfClose,runOnJS,refreshScrollOffset,resolvePageIndex}=this.__closure;if(scrollTarget.get()!==-1){const hasReachedTarget=roundIfClose(contentOffset_0.x-scrollTarget.get(),1e-4)===0;if(hasReachedTarget){scrollTarget.set(-1);}else{const page=scrollTarget.get();runOnJS(refreshScrollOffset)(page);}}resolvePageIndex(contentOffset_0,contentSize_0);}" };
+const __initData9 = { code: "function SegmentedControlPagesNativeTsx21(event_1){const{lastScrollOffsetX,onScrollWorklet,itemCount,pageWidth,activeIndex,runOnJS,refreshScrollOffset,scrollOverflow,scrollTarget,roundIfClose,resolvePageIndex}=this.__closure;var _onScrollWorklet;const{contentOffset:contentOffset_1,contentSize:contentSize_1}=event_1;if(contentSize_1.width===0){return;}if(lastScrollOffsetX.get()===contentOffset_1.x){return;}lastScrollOffsetX.set(contentOffset_1.x);(_onScrollWorklet=onScrollWorklet)===null||_onScrollWorklet===void 0||_onScrollWorklet(event_1);const expectedContentSize=itemCount*pageWidth;if(Math.round(expectedContentSize)%Math.round(contentSize_1.width)!==0){const page_0=activeIndex.get()*pageWidth;runOnJS(refreshScrollOffset)(page_0);return;}if(contentOffset_1.x<0){scrollOverflow.set(contentOffset_1.x);}else if(contentOffset_1.x>contentSize_1.width-pageWidth){scrollOverflow.set(contentOffset_1.x-(contentSize_1.width-pageWidth));}else{scrollOverflow.set(0);}if(scrollTarget.get()!==-1){const hasReachedTarget_0=roundIfClose(contentOffset_1.x-scrollTarget.get(),1e-4)===0;if(hasReachedTarget_0){scrollTarget.set(-1);}else{return;}}resolvePageIndex(contentOffset_1,contentSize_1);}" };
+const __initData10 = { code: "function SegmentedControlPagesNativeTsx22(){const{scrollTarget,roundIfClose,pageWidth}=this.__closure;if(scrollTarget.get()===-1){return-1;}return roundIfClose(scrollTarget.get()/pageWidth,1e-4);}" };
+const __initData11 = { code: "function SegmentedControlPagesNativeTsx23(){const{pageIndex,scrollTargetPageIndex}=this.__closure;const idx=pageIndex.get();let lo=Math.floor(idx);let hi=Math.ceil(idx);const target=scrollTargetPageIndex.get();if(target!==-1){lo=Math.min(lo,target);hi=Math.max(hi,target);}return[lo,hi];}" };
+const __initData12 = { code: "function SegmentedControlPagesNativeTsx24(range,prev){const{visiblePageRange}=this.__closure;if(prev==null||prev[0]!==range[0]||prev[1]!==range[1]){visiblePageRange.set(range);}}" };
+let ReactCompilerGating = ReactCompilerGating_mod;
+const __initData13 = { code: "function SegmentedControlPagesNativeTsx25(){const{pageIndex,index,scrollTargetPageIndex}=this.__closure;if(Math.floor(pageIndex.get())===index||Math.ceil(pageIndex.get())===index){return true;}if(scrollTargetPageIndex.get()===index){return true;}return false;}" };
+const __initData14 = { code: "function SegmentedControlPagesNativeTsx26(){const{reportedPageIndex,index}=this.__closure;const isHidden=reportedPageIndex.get()!==index;return{pointerEvents:isHidden?\"none\":\"box-none\"};}" };
+const __initData15 = { code: "function SegmentedControlPagesNativeTsx27(){const{reportedPageIndex,index}=this.__closure;return reportedPageIndex.get()!==index;}" };
+const __initData16 = { code: "function SegmentedControlPagesNativeTsx28(hidden){const{runOnJS,setIsAccessibilityHidden}=this.__closure;runOnJS(setIsAccessibilityHidden)(hidden);}" };
+const __initData17 = { code: "function SegmentedControlPagesNativeTsx29(){const{isVisibleOnScreen}=this.__closure;return{display:isVisibleOnScreen.get()?\"flex\":\"none\",flex:1};}" };
+let closure_38 = { code: "function SegmentedControlPagesNativeTsx30(){const{activePageRangeStart,activePageRangeEnd}=this.__closure;return[activePageRangeStart.get(),activePageRangeEnd.get()];}" };
+let closure_39 = { code: "function SegmentedControlPagesNativeTsx31(t5){const{index,runOnJS,setFreeze}=this.__closure;const[start,end]=t5;const isInActiveRange_0=index>=start&&index<=end;runOnJS(setFreeze)(!isInActiveRange_0);}" };
+const __initData18 = { code: "function SegmentedControlPagesNativeTsx32(){const{pageIndex,index,scrollTargetPageIndex}=this.__closure;if(Math.floor(pageIndex.get())===index||Math.ceil(pageIndex.get())===index){return true;}if(scrollTargetPageIndex.get()===index){return true;}return false;}" };
+const __initData19 = { code: "function SegmentedControlPagesNativeTsx33(){const{reportedPageIndex,index}=this.__closure;const isHidden=reportedPageIndex.get()!==index;return{pointerEvents:isHidden?'none':'box-none'};}" };
+const __initData20 = { code: "function SegmentedControlPagesNativeTsx34(){const{reportedPageIndex,index}=this.__closure;return reportedPageIndex.get()!==index;}" };
+const __initData21 = { code: "function SegmentedControlPagesNativeTsx35(hidden){const{runOnJS,setIsAccessibilityHidden}=this.__closure;runOnJS(setIsAccessibilityHidden)(hidden);}" };
+const __initData22 = { code: "function SegmentedControlPagesNativeTsx36(){const{isVisibleOnScreen}=this.__closure;return{display:isVisibleOnScreen.get()?'flex':'none',flex:1};}" };
+const __initData23 = { code: "function SegmentedControlPagesNativeTsx37(){const{activePageRangeStart,activePageRangeEnd}=this.__closure;return[activePageRangeStart.get(),activePageRangeEnd.get()];}" };
+const __initData24 = { code: "function SegmentedControlPagesNativeTsx38([start,end]){const{index,runOnJS,setFreeze}=this.__closure;const isInActiveRange_0=index>=start&&index<=end;runOnJS(setFreeze)(!isInActiveRange_0);}" };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) => {
+  let activeIndex;
+  let ae;
+  let bounces;
+  let closure_18;
+  let ie;
+  let items;
+  let le;
+  let nativeGesture;
+  let num39;
+  let oe;
+  let onBeginDragWorklet;
+  let onScrollWorklet;
+  let pageWidth;
+  let ref2;
+  let state;
+  let tmp7;
+  let tmp = onBeginDragWorklet;
+  const tmp2 = onScrollWorklet;
+  let obj = onBeginDragWorklet(onScrollWorklet[7]);
+  const cResult = obj.c(44);
+  ({ state, style, bounces, nativeGesture, onBeginDragWorklet } = onEndDragWorklet);
   onEndDragWorklet = onEndDragWorklet.onEndDragWorklet;
-  pressedIndex = onEndDragWorklet;
+  onScrollWorklet = onEndDragWorklet.onScrollWorklet;
+  ({ items, activeIndex } = state);
+  const visiblePageRange = state.visiblePageRange;
+  const pagerRef = state.pagerRef;
+  const scrollTarget = state.scrollTarget;
+  const scrollOverflow = state.scrollOverflow;
+  ({ onPageChangeRef: closure_8, pageWidth } = state);
+  const pressedIndex = state.pressedIndex;
+  let obj2 = onBeginDragWorklet(onScrollWorklet[5]);
+  const sharedValue = obj2.useSharedValue(activeIndex.get());
+  let obj3 = onBeginDragWorklet(onScrollWorklet[5]);
+  const sharedValue1 = obj3.useSharedValue(activeIndex.get());
+  const length = items.length;
+  let obj4 = onBeginDragWorklet(onScrollWorklet[5]);
+  const sharedValue2 = obj4.useSharedValue(undefined);
+  __initData = scrollTarget.useRef(false);
+  if (cResult[0] !== activeIndex) {
+    let value = activeIndex.get();
+    let num = 0;
+    cResult[0] = activeIndex;
+    cResult[1] = value;
+    tmp7 = value;
+  } else {
+    tmp7 = cResult[1];
+  }
+  __initData2 = obj5.useRef(tmp7);
+  function updateCurrentActiveIndex(current) {
+    ref2.current = current;
+  }
+  let tmpResult = tmp(tmp2[5]);
+  class L {
+    constructor() {
+      return activeIndex.get();
+    }
+  }
+  L.__closure = { activeIndex };
+  L.__workletHash = 4275537317596;
+  L.__initData = pageWidth;
+  class K {
+    constructor(arg0) {
+      const obj = ReanimatedRexport2;
+      obj.runOnJS(updateCurrentActiveIndex)(arg0);
+    }
+  }
+  K.__closure = { runOnJS: tmp(tmp2[5]).runOnJS, updateCurrentActiveIndex };
+  K.__workletHash = 9797123893952;
+  K.__initData = sharedValue;
+  ({ runOnJS: tmp(tmp2[5]).runOnJS, updateCurrentActiveIndex });
+  const animatedReaction = tmpResult.useAnimatedReaction(L, K);
+  const tmpResult6 = tmp(tmp2[5]);
+  class U {
+    constructor() {
+      return sharedValue.get();
+    }
+  }
+  U.__closure = { pageIndex: sharedValue };
+  U.__workletHash = 3363652844798;
+  U.__initData = sharedValue1;
+  class Q {
+    constructor(arg0) {
+      const result = activeIndex.set(arg0);
+    }
+  }
+  Q.__closure = { activeIndex };
+  Q.__workletHash = 2303988655079;
+  Q.__initData = length;
+  const animatedReaction1 = tmpResult6.useAnimatedReaction(U, Q);
+  function onPageChanged(AUTO_DISMISS) {
+    const tmp = closure_8;
+    if (closure_8 != null) {
+      current = tmp.current;
+      if (current != null) {
+        current(AUTO_DISMISS);
+      }
+    }
+  }
+  if (cResult[2] === pagerRef) {
+    let tmp11;
+    if (cResult[3] === scrollTarget) {
+      tmp11 = cResult[4];
+    }
+    __initData3 = tmp11;
+    if (cResult[5] === pageWidth) {
+      let tmp12;
+      let tmp13;
+      let tmp23;
+      let tmp26;
+      if (cResult[6] === tmp11) {
+        tmp12 = cResult[7];
+        tmp13 = cResult[8];
+      }
+      const effect = obj5.useEffect(tmp12, tmp13);
+      function re(arg0, width) {
+        if (0 !== pageWidth) {
+          const _Math = Math;
+          const _Math2 = Math;
+          set = sharedValue.set;
+          const obj3 = MathUtils;
+          const maxResult = max(obj3.roundIfClose(arg0.x / pageWidth, 0.0001), 0);
+          const obj4 = MathUtils;
+          const result = set(min(maxResult, obj4.roundIfClose(width.width / tmp, 0.0001) - 1));
+          const result1 = sharedValue.get() % 1;
+          let tmp4 = result1 === 0;
+          const tmp13 = require;
+          if (result1 === 0) {
+            const value = sharedValue1.get();
+            tmp4 = value !== obj2.get();
+          }
+          if (tmp4) {
+            const result2 = sharedValue1.set(obj2.get());
+            const tmp13Result = tmp13(4570);
+            const runOnJSResult = tmp13Result.runOnJS(onPageChanged);
+            runOnJSResult(sharedValue.get());
+          }
+        }
+      }
+      re.__closure = { pageWidth, pageIndex: sharedValue, roundIfClose: tmp(tmp2[8]).roundIfClose, reportedPageIndex: sharedValue1, runOnJS: tmp(tmp2[5]).runOnJS, onPageChanged };
+      re.__workletHash = 7601802094880;
+      re.__initData = sharedValue2;
+      const obj8 = { onBeginDrag: le, onEndDrag: ie, onMomentumEnd: oe, onScroll: ae };
+      le = function le(arg0) {
+        const result = scrollTarget.set(-1);
+        if (onBeginDragWorklet != null) {
+          tmp2(arg0);
+        }
+      };
+      const obj9 = { scrollTarget, onBeginDragWorklet };
+      le.__closure = obj9;
+      le.__workletHash = 3327779393906;
+      le.__initData = __initData;
+      ie = function ie(arg0) {
+        if (onEndDragWorklet != null) {
+          tmp(arg0);
+        }
+      };
+      const obj10 = { onEndDragWorklet };
+      ie.__closure = obj10;
+      ie.__workletHash = 3007879580981;
+      ie.__initData = __initData2;
+      oe = function oe(contentOffset) {
+        contentOffset = contentOffset.contentOffset;
+        const contentSize = contentOffset.contentSize;
+        if (-1 !== scrollTarget.get()) {
+          const obj2 = MathUtils;
+          const tmp = require;
+          if (0 === obj2.roundIfClose(contentOffset.x - scrollTarget.get(), 0.0001)) {
+            const result = obj.set(-1);
+          } else {
+            const value = obj.get();
+            const tmpResult = tmp(4570);
+            tmpResult.runOnJS(closure_18)(value);
+          }
+        }
+        re(contentOffset, contentSize);
+      };
+      const obj7 = { pageWidth, pageIndex: sharedValue, roundIfClose: tmp(tmp2[8]).roundIfClose, reportedPageIndex: sharedValue1, runOnJS: tmp(tmp2[5]).runOnJS, onPageChanged };
+      const obj11 = { scrollTarget, roundIfClose: tmp(tmp2[8]).roundIfClose, runOnJS: tmp(tmp2[5]).runOnJS, refreshScrollOffset: tmp11, resolvePageIndex: re };
+      oe.__closure = obj11;
+      oe.__workletHash = 2536156100149;
+      oe.__initData = updateCurrentActiveIndex;
+      ae = function ae(arg0) {
+        let contentOffset;
+        let contentSize;
+        ({ contentOffset, contentSize } = arg0);
+        if (0 !== contentSize.width) {
+          const obj4 = sharedValue2;
+          if (sharedValue2.get() !== contentOffset.x) {
+            const result = obj4.set(contentOffset.x);
+            if (onScrollWorklet != null) {
+              tmp24(arg0);
+            }
+            const _Math = Math;
+            const _Math2 = Math;
+            const rounded = Math.round(length * pageWidth);
+            if (rounded % Math.round(contentSize.width) == 0) {
+              if (contentOffset.x < 0) {
+                const result1 = scrollOverflow.set(contentOffset.x);
+              } else if (contentOffset.x > contentSize.width - pageWidth) {
+                const result2 = scrollOverflow.set(contentOffset.x - (contentSize.width - tmp4));
+              } else {
+                const result3 = scrollOverflow.set(0);
+              }
+              if (-1 !== scrollTarget.get()) {
+                const obj3 = MathUtils;
+                if (0 === obj3.roundIfClose(contentOffset.x - scrollTarget.get(), 0.0001)) {
+                  const result4 = obj2.set(-1);
+                }
+              }
+              re(contentOffset, contentSize);
+            } else {
+              const result5 = activeIndex.get() * tmp4;
+              const obj = ReanimatedRexport2;
+              obj.runOnJS(closure_18)(result5);
+            }
+          }
+        }
+      };
+      const useAnimatedScrollHandler = tmp(tmp2[5]).useAnimatedScrollHandler;
+      const obj12 = { lastScrollOffsetX: null, onScrollWorklet, itemCount: length, pageWidth, activeIndex, runOnJS: tmp(tmp2[5]).runOnJS, refreshScrollOffset: tmp11, scrollOverflow, scrollTarget: null, roundIfClose: tmp(tmp2[8]).roundIfClose, resolvePageIndex: re };
+      class L {
+        constructor() {
+          return activeIndex.get();
+        }
+      }
+      class K {
+        constructor(arg0) {
+          const obj = ReanimatedRexport2;
+          obj.runOnJS(updateCurrentActiveIndex)(arg0);
+        }
+      }
+      ae.__closure = obj12;
+      ae.__workletHash = 9770585444979;
+      ae.__initData = onPageChanged;
+      const animatedScrollHandler = useAnimatedScrollHandler(obj8);
+      if (cResult[9] !== pageWidth) {
+        const obj13 = { flex: 1, width: pageWidth };
+        cResult[9] = pageWidth;
+        cResult[10] = obj13;
+        tmp23 = obj13;
+      } else {
+        tmp23 = cResult[10];
+      }
+      style = tmp23;
+      class U {
+        constructor() {
+          return sharedValue.get();
+        }
+      }
+      let result = tmp24 * pageWidth;
+      if (cResult[13] !== result) {
+        const point = { x: result, y: 0 };
+        cResult[13] = result;
+        cResult[14] = point;
+        tmp26 = point;
+      } else {
+        tmp26 = cResult[14];
+      }
+      const tmp29 = pagerRef(closure_54(activeIndex, pressedIndex), 2);
+      const first = tmp29[0];
+      class Q {
+        constructor(arg0) {
+          const result = activeIndex.set(arg0);
+        }
+      }
+      activePageRangeEnd = tmp31;
+      function he() {
+        let num = -1;
+        const obj = scrollTarget;
+        if (-1 !== scrollTarget.get()) {
+          const obj2 = MathUtils;
+          num = obj2.roundIfClose(obj.get() / pageWidth, 0.0001);
+        }
+        return num;
+      }
+      const obj14 = { scrollTarget, roundIfClose: tmp(tmp2[8]).roundIfClose, pageWidth };
+      const useDerivedValue = tmp(tmp2[5]).useDerivedValue;
+      tmp(tmp2[5]);
+      he.__closure = obj14;
+      class Z {
+        constructor(x) {
+          const result = scrollTarget.set(x);
+          if (pagerRef != null) {
+            current = pagerRef.current;
+            if (current != null) {
+              const obj = { x, animated: false };
+              current.scrollTo(obj);
+            }
+          }
+        }
+      }
+      he.__initData = __initData3;
+      const derivedValue = useDerivedValue(he);
+      const tmpResult9 = tmp(tmp2[5]);
+      class Ie {
+        constructor() {
+          const value = sharedValue.get();
+          const rounded = Math.floor(value);
+          const rounded1 = Math.ceil(value);
+          const value2 = derivedValue.get();
+          let bound1 = rounded1;
+          let bound = rounded;
+          if (-1 !== value2) {
+            const _Math = Math;
+            bound = Math.min(rounded, value2);
+            const _Math2 = Math;
+            bound1 = Math.max(rounded1, value2);
+          }
+          const items = [bound, bound1];
+          return items;
+        }
+      }
+      const obj15 = { pageIndex: sharedValue, scrollTargetPageIndex: derivedValue };
+      Ie.__closure = obj15;
+      Ie.__workletHash = 9125733538935;
+      Ie.__initData = re;
+      function ve(arg0, arg1) {
+        const tmp = null != arg1 && arg1[0] === arg0[0] && arg1[1] === arg0[1];
+        if (!tmp) {
+          const result = visiblePageRange.set(arg0);
+        }
+      }
+      const obj16 = { visiblePageRange };
+      ve.__closure = obj16;
+      ve.__workletHash = 14106897948399;
+      ve.__initData = style;
+      const animatedReaction2 = tmpResult9.useAnimatedReaction(Ie, ve);
+      if (0 === pageWidth) {
+        return null;
+      } else {
+        if (cResult[15] === tmp23) {
+          let tmp38;
+          let tmp39;
+          if (cResult[16] === style) {
+            tmp38 = cResult[17];
+          }
+          if (cResult[18] === tmp29[1]) {
+            if (cResult[19] === first) {
+              if (cResult[20] === tmp23) {
+                if (cResult[21] === items) {
+                  if (cResult[22] === sharedValue) {
+                    if (cResult[23] === sharedValue1) {
+                      if (cResult[24] === derivedValue) {
+                        tmp39 = cResult[25];
+                      }
+                      if (cResult[33] === bounces) {
+                        if (cResult[34] === tmp26) {
+                          if (cResult[35] === animatedScrollHandler) {
+                            if (cResult[36] === pageWidth) {
+                              if (cResult[37] === pagerRef) {
+                                if (cResult[38] === tmp38) {
+                                  let tmp42;
+                                  let tmp48;
+                                  if (cResult[39] === tmp39) {
+                                    tmp42 = cResult[40];
+                                  }
+                                  if (cResult[41] === nativeGesture) {
+                                    let tmp46;
+                                    if (cResult[42] === tmp42) {
+                                      tmp46 = cResult[43];
+                                    }
+                                    return tmp46;
+                                  }
+                                  class Pe {
+                                    constructor(item, index) {
+                                      return <closure_47 key={arg1} index={arg1} activePageRangeStart={activePageRangeStart} activePageRangeEnd={activePageRangeEnd} reportedPageIndex={sharedValue1} pageIndex={sharedValue} scrollTargetPageIndex={derivedValue} style={style} item={arg0} />;
+                                    }
+                                  }
+                                  if (null != nativeGesture) {
+                                    const obj17 = { gesture: nativeGesture, children: null };
+                                    class Pe {
+                                      constructor(item, index) {
+                                        return <closure_47 key={arg1} index={arg1} activePageRangeStart={activePageRangeStart} activePageRangeEnd={activePageRangeEnd} reportedPageIndex={sharedValue1} pageIndex={sharedValue} scrollTargetPageIndex={derivedValue} style={style} item={arg0} />;
+                                      }
+                                    }
+                                    tmp48 = scrollOverflow(tmp(tmp2[10]).GestureDetector, obj17);
+                                  }
+                                  cResult[41] = nativeGesture;
+                                  cResult[42] = tmp42;
+                                  cResult[43] = tmp48;
+                                  tmp46 = tmp48;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      const obj18 = { ref: null, style: tmp38, contentOffset: tmp26, keyboardShouldPersistTaps: "handled", showsHorizontalScrollIndicator: false, pagingEnabled: true, snapToInterval: pageWidth, snapToAlignment: "center", decelerationRate: "fast", centerContent: true, bounces, horizontal: true, accessibilityRole: "none", onScroll: animatedScrollHandler, disableIntervalMomentum: true, scrollEventThrottle: num39, children: tmp39 };
+                      class Pe {
+                        constructor(item, index) {
+                          return <closure_47 key={arg1} index={arg1} activePageRangeStart={activePageRangeStart} activePageRangeEnd={activePageRangeEnd} reportedPageIndex={sharedValue1} pageIndex={sharedValue} scrollTargetPageIndex={derivedValue} style={style} item={arg0} />;
+                        }
+                      }
+                      num39 = undefined;
+                      const tmp43 = scrollOverflow;
+                      const tmp44 = closure_8;
+                      const tmpResult10 = tmp(tmp2[9]);
+                      if (tmpResult10.isIOS()) {
+                        num39 = 32;
+                      }
+                      const tmp43Result = tmp43(tmp44, obj18);
+                      cResult[33] = bounces;
+                      cResult[34] = tmp26;
+                      cResult[35] = animatedScrollHandler;
+                      cResult[36] = pageWidth;
+                      cResult[37] = pagerRef;
+                      cResult[38] = tmp38;
+                      cResult[39] = tmp39;
+                      cResult[40] = tmp43Result;
+                      tmp42 = tmp43Result;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          if (cResult[26] === tmp29[1]) {
+            if (cResult[27] === first) {
+              if (cResult[28] === tmp23) {
+                if (cResult[29] === sharedValue) {
+                  if (cResult[30] === sharedValue1) {
+                    let tmp40;
+                    if (cResult[31] === derivedValue) {
+                      tmp40 = cResult[32];
+                    }
+                    const mapped = items.map(tmp40);
+                    class Pe {
+                      constructor(item, index) {
+                        return <closure_47 key={arg1} index={arg1} activePageRangeStart={activePageRangeStart} activePageRangeEnd={activePageRangeEnd} reportedPageIndex={sharedValue1} pageIndex={sharedValue} scrollTargetPageIndex={derivedValue} style={style} item={arg0} />;
+                      }
+                    }
+                    cResult[19] = first;
+                    cResult[20] = tmp23;
+                    cResult[21] = items;
+                    cResult[22] = sharedValue;
+                    cResult[23] = sharedValue1;
+                    cResult[24] = derivedValue;
+                    cResult[25] = mapped;
+                    tmp39 = mapped;
+                  }
+                }
+              }
+            }
+          }
+          class Pe {
+            constructor(item, index) {
+              return <closure_47 key={arg1} index={arg1} activePageRangeStart={activePageRangeStart} activePageRangeEnd={activePageRangeEnd} reportedPageIndex={sharedValue1} pageIndex={sharedValue} scrollTargetPageIndex={derivedValue} style={style} item={arg0} />;
+            }
+          }
+          cResult[26] = tmp29[1];
+          cResult[27] = first;
+          cResult[28] = tmp23;
+          cResult[29] = sharedValue;
+          cResult[30] = sharedValue1;
+          cResult[31] = derivedValue;
+          cResult[32] = Pe;
+          tmp40 = Pe;
+        }
+        const items1 = [tmp23, ];
+        cResult[15] = tmp23;
+        cResult[16] = style;
+        cResult[17] = items1;
+        tmp38 = items1;
+      }
+    }
+    const items2 = [pageWidth, tmp11];
+    cResult[5] = pageWidth;
+    cResult[6] = tmp11;
+    cResult[7] = tmp14;
+    cResult[8] = items2;
+    tmp13 = items2;
+    tmp12 = tmp14;
+  }
+  class Z {
+    constructor(x) {
+      const result = scrollTarget.set(x);
+      if (pagerRef != null) {
+        current = pagerRef.current;
+        if (current != null) {
+          const obj = { x, animated: false };
+          current.scrollTo(obj);
+        }
+      }
+    }
+  }
+  cResult[2] = pagerRef;
+  cResult[3] = scrollTarget;
+  tmp11 = Z;
+}) : ((onEndDragWorklet) => {
+  let activeIndex;
+  let bounces;
+  let c21;
+  let c22;
+  let ee;
+  let items;
+  let items7;
+  let nativeGesture;
+  let ne;
+  let num;
+  let onBeginDragWorklet;
+  let re;
+  let state;
+  let te;
+  ({ state, nativeGesture, onBeginDragWorklet } = onEndDragWorklet);
+  onEndDragWorklet = onEndDragWorklet.onEndDragWorklet;
   const onScrollWorklet = onEndDragWorklet.onScrollWorklet;
-  let sharedValue3 = onScrollWorklet;
-  onPageChangeRef = undefined;
+  activeIndex = undefined;
   let callback1;
   let callback2;
   let callback3;
   let memo;
-  c21 = undefined;
-  c22 = undefined;
+  __initData = undefined;
   let derivedValue;
   ({ items, activeIndex } = state);
-  let sharedValue4 = activeIndex;
   const visiblePageRange = state.visiblePageRange;
-  let callback4 = visiblePageRange;
   const pagerRef = state.pagerRef;
   const scrollTarget = state.scrollTarget;
   const scrollOverflow = state.scrollOverflow;
-  ({ pressedIndex, onPageChangeRef } = state);
+  const onPageChangeRef = state.onPageChangeRef;
   const pageWidth = state.pageWidth;
+  let tmp = onBeginDragWorklet;
+  const tmp2 = onScrollWorklet;
   ({ style, bounces } = onEndDragWorklet);
-  const sharedValue = activeIndex(sharedValue3[4]).useSharedValue(activeIndex.get());
-  let obj = activeIndex(sharedValue3[4]);
-  const sharedValue1 = activeIndex(sharedValue3[4]).useSharedValue(activeIndex.get());
+  const pressedIndex = state.pressedIndex;
+  let obj = onBeginDragWorklet(onScrollWorklet[5]);
+  const sharedValue = obj.useSharedValue(activeIndex.get());
+  let obj2 = onBeginDragWorklet(onScrollWorklet[5]);
+  const sharedValue1 = obj2.useSharedValue(activeIndex.get());
   const length = items.length;
-  let obj2 = activeIndex(sharedValue3[4]);
-  const sharedValue2 = activeIndex(sharedValue3[4]).useSharedValue(undefined);
-  callback4.useRef(false);
-  __initData2 = callback4.useRef(activeIndex.get());
-  __initData = callback4.useCallback((current) => {
-    closure_15.current = current;
+  let obj3 = onBeginDragWorklet(onScrollWorklet[5]);
+  const sharedValue2 = obj3.useSharedValue(undefined);
+  ref = scrollTarget.useRef(false);
+  const ref2 = scrollTarget.useRef(activeIndex.get());
+  const updateCurrentActiveIndex = scrollTarget.useCallback((current) => {
+    ref2.current = current;
   }, []);
-  let obj3 = activeIndex(sharedValue3[4]);
-  class J {
+  let obj4 = onBeginDragWorklet(onScrollWorklet[5]);
+  class I {
     constructor() {
-      return closure_3.get();
+      return activeIndex.get();
     }
   }
-  J.__closure = { activeIndex };
-  J.__workletHash = 4275537317596;
-  J.__initData = scrollOverflow;
-  class W {
-    constructor(arg0) {
-      obj = closure_0(closure_2[4]);
-      tmp = obj.runOnJS(closure_16)(onEndDragWorklet);
-      return;
-    }
-  }
-  let obj4 = activeIndex(sharedValue3[4]);
-  W.__closure = { runOnJS: activeIndex(sharedValue3[4]).runOnJS, updateCurrentActiveIndex: __initData };
-  W.__workletHash = 1219187007872;
-  W.__initData = onPageChangeRef;
-  const animatedReaction = obj4.useAnimatedReaction(J, W);
-  const obj5 = { runOnJS: activeIndex(sharedValue3[4]).runOnJS, updateCurrentActiveIndex: __initData };
-  const fn = function z() {
+  I.__closure = { activeIndex };
+  I.__workletHash = 1395514015727;
+  I.__initData = __initData;
+  const fn = function v(arg0) {
+    const obj = ReanimatedRexport2;
+    obj.runOnJS(callback)(arg0);
+  };
+  fn.__closure = { runOnJS: onBeginDragWorklet(onScrollWorklet[5]).runOnJS, updateCurrentActiveIndex };
+  fn.__workletHash = 12907997375351;
+  fn.__initData = __initData;
+  ({ runOnJS: onBeginDragWorklet(onScrollWorklet[5]).runOnJS, updateCurrentActiveIndex });
+  const animatedReaction = obj4.useAnimatedReaction(I, fn);
+  const fn2 = function p() {
     return sharedValue.get();
   };
-  fn.__closure = { pageIndex: sharedValue };
-  fn.__workletHash = 3363652844798;
-  fn.__initData = pageWidth;
-  class E {
+  fn2.__closure = { pageIndex: sharedValue };
+  fn2.__workletHash = 10499929423113;
+  fn2.__initData = derivedValue;
+  const obj6 = onBeginDragWorklet(onScrollWorklet[5]);
+  class S {
     constructor(arg0) {
-      result = closure_3.set(onEndDragWorklet);
-      return;
+      const result = activeIndex.set(arg0);
     }
   }
-  E.__closure = { activeIndex };
-  E.__workletHash = 10225590895783;
-  E.__initData = sharedValue;
-  const animatedReaction1 = activeIndex(sharedValue3[4]).useAnimatedReaction(fn, E);
+  S.__closure = { activeIndex };
+  S.__workletHash = 4431632836916;
+  S.__initData = __initData4;
+  const animatedReaction1 = obj6.useAnimatedReaction(fn2, S);
   const items1 = [onPageChangeRef];
-  callback1 = callback4.useCallback((AUTO_DISMISS) => {
+  callback1 = scrollTarget.useCallback((AUTO_DISMISS) => {
+    const tmp = onPageChangeRef;
     if (onPageChangeRef != null) {
-      const current = onPageChangeRef.current;
+      current = tmp.current;
       if (current != null) {
         current(AUTO_DISMISS);
       }
     }
   }, items1);
   const items2 = [pagerRef, scrollTarget];
-  callback2 = callback4.useCallback((x) => {
+  callback2 = scrollTarget.useCallback((x) => {
     const result = scrollTarget.set(x);
     if (pagerRef != null) {
-      const current = pagerRef.current;
+      current = pagerRef.current;
       if (current != null) {
         const obj = { x, animated: false };
         current.scrollTo(obj);
@@ -279,7 +658,7 @@ export const SegmentedControlPages = function SegmentedControlPages(onEndDragWor
     }
   }, items2);
   const items3 = [pageWidth, callback2];
-  const effect = callback4.useEffect(() => {
+  const effect = scrollTarget.useEffect(() => {
     if (pageWidth > 0) {
       if (!ref.current) {
         tmp2.current = true;
@@ -289,80 +668,86 @@ export const SegmentedControlPages = function SegmentedControlPages(onEndDragWor
       }
     }
   }, items3);
-  function te(arg0, width) {
-    if (0 !== pageWidth) {
-      const _Math = Math;
-      const _Math2 = Math;
-      const bound = Math.max(MathUtils.roundIfClose(arg0.x / tmp, 0.0001), 0);
-      const tmp13 = require;
-      const result = sharedValue.set(Math.min(bound, MathUtils.roundIfClose(width.width / tmp, 0.0001) - 1));
-      const result1 = sharedValue.get() % 1;
-      let tmp4 = result1 === 0;
-      if (result1 === 0) {
-        value = sharedValue1.get();
-        tmp4 = value !== obj2.get();
-      }
-      if (tmp4) {
-        const result2 = sharedValue1.set(obj2.get());
-        const tmp13Result = tmp13(4524);
-        tmp13(4524).runOnJS(callback1)(obj2.get());
-        const runOnJSResult = tmp13(4524).runOnJS(callback1);
+  class Z {
+    constructor(arg0, width) {
+      if (0 !== pageWidth) {
+        const _Math = Math;
+        const _Math2 = Math;
+        set = sharedValue.set;
+        const obj3 = MathUtils;
+        const maxResult = max(obj3.roundIfClose(arg0.x / pageWidth, 0.0001), 0);
+        const obj4 = MathUtils;
+        const result = set(min(maxResult, obj4.roundIfClose(width.width / tmp, 0.0001) - 1));
+        const result1 = sharedValue.get() % 1;
+        let tmp4 = result1 === 0;
+        const tmp13 = require;
+        if (result1 === 0) {
+          const value = sharedValue1.get();
+          tmp4 = value !== obj2.get();
+        }
+        if (tmp4) {
+          const result2 = sharedValue1.set(obj2.get());
+          const tmp13Result = tmp13(4570);
+          const runOnJSResult = tmp13Result.runOnJS(callback1);
+          runOnJSResult(sharedValue.get());
+        }
       }
     }
   }
-  const obj6 = activeIndex(sharedValue3[4]);
-  te.__closure = { pageWidth, pageIndex: sharedValue, roundIfClose: activeIndex(sharedValue3[5]).roundIfClose, reportedPageIndex: sharedValue1, runOnJS: activeIndex(sharedValue3[4]).runOnJS, onPageChanged: callback1 };
-  te.__workletHash = 11872880107296;
-  te.__initData = sharedValue1;
+  Z.__closure = { pageWidth, pageIndex: sharedValue, roundIfClose: onBeginDragWorklet(onScrollWorklet[8]).roundIfClose, reportedPageIndex: sharedValue1, runOnJS: onBeginDragWorklet(onScrollWorklet[5]).runOnJS, onPageChanged: callback1 };
+  Z.__workletHash = 8342205089427;
+  Z.__initData = __initData5;
   const items4 = [callback1, sharedValue, pageWidth, sharedValue1];
-  callback3 = callback4.useCallback(te, items4);
-  const obj7 = { pageWidth, pageIndex: sharedValue, roundIfClose: activeIndex(sharedValue3[5]).roundIfClose, reportedPageIndex: sharedValue1, runOnJS: activeIndex(sharedValue3[4]).runOnJS, onPageChanged: callback1 };
-  const obj9 = { onBeginDrag: null, onEndDrag: null, onMomentumEnd: null, onScroll: null };
-  function oe(arg0) {
+  ({ pageWidth, pageIndex: sharedValue, roundIfClose: onBeginDragWorklet(onScrollWorklet[8]).roundIfClose, reportedPageIndex: sharedValue1, runOnJS: onBeginDragWorklet(onScrollWorklet[5]).runOnJS, onPageChanged: callback1 });
+  callback3 = scrollTarget.useCallback(Z, items4);
+  let tmp13 = onBeginDragWorklet(onScrollWorklet[5]);
+  const obj8 = { onBeginDrag: re, onEndDrag: ne, onMomentumEnd: te, onScroll: ee };
+  re = function re(arg0) {
     const result = scrollTarget.set(-1);
-    if (activeIndex != null) {
+    if (onBeginDragWorklet != null) {
       tmp2(arg0);
     }
-  }
-  oe.__closure = { scrollTarget, onBeginDragWorklet };
-  oe.__workletHash = 3327779393906;
-  oe.__initData = length;
-  obj9.onBeginDrag = oe;
-  function ae(arg0) {
-    if (pressedIndex != null) {
+  };
+  re.__closure = { scrollTarget, onBeginDragWorklet };
+  re.__workletHash = 13774066389517;
+  re.__initData = __initData6;
+  ne = function ne(arg0) {
+    if (onEndDragWorklet != null) {
       tmp(arg0);
     }
-  }
-  ae.__closure = { onEndDragWorklet };
-  ae.__workletHash = 14857102500821;
-  ae.__initData = sharedValue2;
-  obj9.onEndDrag = ae;
-  function re(contentOffset) {
+  };
+  ne.__closure = { onEndDragWorklet };
+  ne.__workletHash = 1247100135210;
+  ne.__initData = __initData7;
+  te = function te(contentOffset) {
     contentOffset = contentOffset.contentOffset;
+    const contentSize = contentOffset.contentSize;
     if (-1 !== scrollTarget.get()) {
-      if (0 === obj2.roundIfClose(contentOffset.x - obj.get(), 0.0001)) {
+      const obj2 = MathUtils;
+      const tmp = require;
+      if (0 === obj2.roundIfClose(contentOffset.x - scrollTarget.get(), 0.0001)) {
         const result = obj.set(-1);
       } else {
-        value = obj.get();
-        tmp(4524).runOnJS(callback2)(value);
-        const tmpResult = tmp(4524);
+        const value = obj.get();
+        const tmpResult = tmp(4570);
+        tmpResult.runOnJS(callback2)(value);
       }
-      obj2 = MathUtils;
-      tmp = require;
     }
-    callback3(contentOffset, contentOffset.contentSize);
-  }
-  const obj8 = activeIndex(sharedValue3[4]);
-  re.__closure = { scrollTarget, roundIfClose: activeIndex(sharedValue3[5]).roundIfClose, runOnJS: activeIndex(sharedValue3[4]).runOnJS, refreshScrollOffset: callback2, resolvePageIndex: callback3 };
-  re.__workletHash = 10636475595563;
-  re.__initData = __initData;
-  obj9.onMomentumEnd = re;
-  function ne(arg0) {
+    callback3(contentOffset, contentSize);
+  };
+  const useAnimatedScrollHandler = tmp13.useAnimatedScrollHandler;
+  te.__closure = { scrollTarget, roundIfClose: onBeginDragWorklet(onScrollWorklet[8]).roundIfClose, runOnJS: onBeginDragWorklet(onScrollWorklet[5]).runOnJS, refreshScrollOffset: callback2, resolvePageIndex: callback3 };
+  te.__workletHash = 7952328022238;
+  te.__initData = __initData8;
+  ee = function ee(arg0) {
+    let contentOffset;
+    let contentSize;
     ({ contentOffset, contentSize } = arg0);
     if (0 !== contentSize.width) {
+      const obj4 = sharedValue2;
       if (sharedValue2.get() !== contentOffset.x) {
         const result = obj4.set(contentOffset.x);
-        if (sharedValue3 != null) {
+        if (onScrollWorklet != null) {
           tmp24(arg0);
         }
         const _Math = Math;
@@ -371,38 +756,36 @@ export const SegmentedControlPages = function SegmentedControlPages(onEndDragWor
         if (rounded % Math.round(contentSize.width) == 0) {
           if (contentOffset.x < 0) {
             const result1 = scrollOverflow.set(contentOffset.x);
-          } else if (contentOffset.x > contentSize.width - tmp4) {
+          } else if (contentOffset.x > contentSize.width - pageWidth) {
             const result2 = scrollOverflow.set(contentOffset.x - (contentSize.width - tmp4));
           } else {
             const result3 = scrollOverflow.set(0);
           }
           if (-1 !== scrollTarget.get()) {
-            if (0 === obj3.roundIfClose(contentOffset.x - obj2.get(), 0.0001)) {
+            const obj3 = MathUtils;
+            if (0 === obj3.roundIfClose(contentOffset.x - scrollTarget.get(), 0.0001)) {
               const result4 = obj2.set(-1);
             }
-            obj3 = MathUtils;
           }
           callback3(contentOffset, contentSize);
         } else {
-          const result5 = sharedValue4.get() * tmp4;
-          ReanimatedRexport2.runOnJS(callback2)(result5);
+          const result5 = activeIndex.get() * tmp4;
+          const obj = ReanimatedRexport2;
+          obj.runOnJS(callback2)(result5);
         }
       }
-      obj4 = sharedValue2;
     }
-  }
-  const obj10 = { scrollTarget, roundIfClose: activeIndex(sharedValue3[5]).roundIfClose, runOnJS: activeIndex(sharedValue3[4]).runOnJS, refreshScrollOffset: callback2, resolvePageIndex: callback3 };
-  ne.__closure = { lastScrollOffsetX: sharedValue2, onScrollWorklet, itemCount: length, pageWidth, activeIndex, runOnJS: activeIndex(sharedValue3[4]).runOnJS, refreshScrollOffset: callback2, scrollOverflow, scrollTarget, roundIfClose: activeIndex(sharedValue3[5]).roundIfClose, resolvePageIndex: callback3 };
-  ne.__workletHash = 9933659944135;
-  ne.__initData = __initData2;
-  obj9.onScroll = ne;
+  };
+  ({ scrollTarget, roundIfClose: onBeginDragWorklet(onScrollWorklet[8]).roundIfClose, runOnJS: onBeginDragWorklet(onScrollWorklet[5]).runOnJS, refreshScrollOffset: callback2, resolvePageIndex: callback3 });
+  ee.__closure = { lastScrollOffsetX: sharedValue2, onScrollWorklet, itemCount: length, pageWidth, activeIndex, runOnJS: onBeginDragWorklet(onScrollWorklet[5]).runOnJS, refreshScrollOffset: callback2, scrollOverflow, scrollTarget, roundIfClose: onBeginDragWorklet(onScrollWorklet[8]).roundIfClose, resolvePageIndex: callback3 };
+  ee.__workletHash = 12685695320253;
+  ee.__initData = __initData9;
   const items5 = [pageWidth];
-  const obj11 = { lastScrollOffsetX: sharedValue2, onScrollWorklet, itemCount: length, pageWidth, activeIndex, runOnJS: activeIndex(sharedValue3[4]).runOnJS, refreshScrollOffset: callback2, scrollOverflow, scrollTarget, roundIfClose: activeIndex(sharedValue3[5]).roundIfClose, resolvePageIndex: callback3 };
-  memo = callback4.useMemo(() => ({ flex: 1, width: pageWidth }), items5);
+  ({ lastScrollOffsetX: sharedValue2, onScrollWorklet, itemCount: length, pageWidth, activeIndex, runOnJS: onBeginDragWorklet(onScrollWorklet[5]).runOnJS, refreshScrollOffset: callback2, scrollOverflow, scrollTarget, roundIfClose: onBeginDragWorklet(onScrollWorklet[8]).roundIfClose, resolvePageIndex: callback3 });
+  const animatedScrollHandler = useAnimatedScrollHandler(obj8);
+  memo = scrollTarget.useMemo(() => ({ flex: 1, width: pageWidth }), items5);
   const items6 = [sharedValue, pageWidth];
-  sharedValue3 = undefined;
-  callback4 = undefined;
-  const memo1 = callback4.useMemo(() => {
+  const memo1 = scrollTarget.useMemo(() => {
     let num = sharedValue.get();
     if (num == null) {
       num = 0;
@@ -410,72 +793,28 @@ export const SegmentedControlPages = function SegmentedControlPages(onEndDragWor
     const point = { x: num * pageWidth, y: 0 };
     return point;
   }, items6);
-  const animatedScrollHandler = obj8.useAnimatedScrollHandler(obj9);
-  sharedValue3 = activeIndex(sharedValue3[4]).useSharedValue(activeIndex.get());
-  const obj12 = activeIndex(sharedValue3[4]);
-  sharedValue4 = activeIndex(sharedValue3[4]).useSharedValue(activeIndex.get());
-  const fn2 = function u(arg0, arg1) {
-    const result = sharedValue3.set(Math.min(sharedValue3.get(), arg0));
-    const result1 = sharedValue4.set(Math.max(sharedValue4.get(), arg1));
-  };
-  fn2.__closure = { activePageRangeStart: sharedValue3, activePageRangeEnd: sharedValue4 };
-  fn2.__workletHash = 2682934677750;
-  fn2.__initData = __initData10;
-  const items7 = [sharedValue4, sharedValue3];
-  callback4 = callback4.useCallback(fn2, items7);
-  const obj13 = activeIndex(sharedValue3[4]);
-  class SegmentedControlPagesNativeTsx21 {
-    constructor() {
-      obj = { activeIndex: activeIndex.get(), pressedIndex: pressedIndex.get() };
-      return obj;
-    }
-  }
-  SegmentedControlPagesNativeTsx21.__closure = { activeIndex, pressedIndex };
-  SegmentedControlPagesNativeTsx21.__workletHash = 16203677263547;
-  SegmentedControlPagesNativeTsx21.__initData = __initData11;
-  class SegmentedControlPagesNativeTsx22 {
-    constructor(arg0) {
-      ({ activeIndex, pressedIndex } = onEndDragWorklet);
-      bound1 = activeIndex;
-      bound = activeIndex;
-      if (-1 !== pressedIndex) {
-        tmp3 = globalThis;
-        _Math = Math;
-        bound = Math.min(activeIndex, pressedIndex);
-        _Math2 = Math;
-        bound1 = Math.max(activeIndex, pressedIndex);
-      }
-      rounded = Math.floor(bound);
-      tmp5 = closure_4(rounded, Math.ceil(bound1));
-      return;
-    }
-  }
-  SegmentedControlPagesNativeTsx22.__closure = { expandActivePageRange: callback4 };
-  SegmentedControlPagesNativeTsx22.__workletHash = 4886047206415;
-  SegmentedControlPagesNativeTsx22.__initData = __initData12;
-  const animatedReaction2 = activeIndex(sharedValue3[4]).useAnimatedReaction(SegmentedControlPagesNativeTsx21, SegmentedControlPagesNativeTsx22);
-  const items8 = [sharedValue3, sharedValue4];
-  const obj14 = activeIndex(sharedValue3[4]);
-  [c21, c22] = sharedValue4(items8, 2);
-  const tmp20 = sharedValue4(items8, 2);
-  function se() {
+  [c21, c22] = pagerRef(closure_54(activeIndex, pressedIndex), 2);
+  pagerRef(closure_54(activeIndex, pressedIndex), 2);
+  function ae() {
     let num = -1;
+    const obj = scrollTarget;
     if (-1 !== scrollTarget.get()) {
-      num = MathUtils.roundIfClose(scrollTarget.get() / pageWidth, 0.0001);
+      const obj2 = MathUtils;
+      num = obj2.roundIfClose(obj.get() / pageWidth, 0.0001);
     }
     return num;
   }
-  const obj15 = activeIndex(sharedValue3[4]);
-  se.__closure = { scrollTarget, roundIfClose: activeIndex(sharedValue3[5]).roundIfClose, pageWidth };
-  se.__workletHash = 7742060999778;
-  se.__initData = __initData;
-  derivedValue = obj15.useDerivedValue(se);
-  const obj16 = { scrollTarget, roundIfClose: activeIndex(sharedValue3[5]).roundIfClose, pageWidth };
-  function le() {
-    value = sharedValue.get();
+  const obj11 = onBeginDragWorklet(onScrollWorklet[5]);
+  ae.__closure = { scrollTarget, roundIfClose: onBeginDragWorklet(onScrollWorklet[8]).roundIfClose, pageWidth };
+  ae.__workletHash = 3139503492995;
+  ae.__initData = __initData10;
+  ({ scrollTarget, roundIfClose: onBeginDragWorklet(onScrollWorklet[8]).roundIfClose, pageWidth });
+  derivedValue = obj11.useDerivedValue(ae);
+  function ie() {
+    const value = sharedValue.get();
     const rounded = Math.floor(value);
     const rounded1 = Math.ceil(value);
-    value2 = derivedValue.get();
+    const value2 = derivedValue.get();
     let bound1 = rounded1;
     let bound = rounded;
     if (-1 !== value2) {
@@ -487,41 +826,614 @@ export const SegmentedControlPages = function SegmentedControlPages(onEndDragWor
     const items = [bound, bound1];
     return items;
   }
-  le.__closure = { pageIndex: sharedValue, scrollTargetPageIndex: derivedValue };
-  le.__workletHash = 9125733538935;
-  le.__initData = callback1;
-  function ie(arg0, arg1) {
+  ie.__closure = { pageIndex: sharedValue, scrollTargetPageIndex: derivedValue };
+  ie.__workletHash = 11592344490710;
+  ie.__initData = __initData11;
+  function oe(arg0, arg1) {
+    const tmp = null != arg1 && arg1[0] === arg0[0] && arg1[1] === arg0[1];
     if (!tmp) {
-      const result = callback4.set(arg0);
+      const result = visiblePageRange.set(arg0);
     }
   }
-  ie.__closure = { visiblePageRange };
-  ie.__workletHash = 14106897948399;
-  ie.__initData = callback2;
-  const animatedReaction3 = activeIndex(sharedValue3[4]).useAnimatedReaction(le, ie);
+  oe.__closure = { visiblePageRange };
+  oe.__workletHash = 11577207813194;
+  oe.__initData = __initData12;
+  const obj13 = onBeginDragWorklet(onScrollWorklet[5]);
+  const animatedReaction2 = obj13.useAnimatedReaction(ie, oe);
   if (0 === pageWidth) {
     return null;
   } else {
-    const obj18 = { ref: pagerRef, style: null, contentOffset: null, keyboardShouldPersistTaps: "handled", showsHorizontalScrollIndicator: false, pagingEnabled: true, snapToInterval: null, snapToAlignment: "center", decelerationRate: "fast", centerContent: true, bounces: null, horizontal: true, accessibilityRole: "none", onScroll: null, disableIntervalMomentum: true, scrollEventThrottle: null, children: null };
-    const items9 = [memo, style];
-    obj18.style = items9;
-    obj18.contentOffset = memo1;
-    obj18.snapToInterval = pageWidth;
-    obj18.bounces = bounces;
-    obj18.onScroll = animatedScrollHandler;
-    let num;
+    const tmp24 = scrollOverflow;
+    const obj14 = { ref: pagerRef, style: items7, contentOffset: memo1, keyboardShouldPersistTaps: "handled", showsHorizontalScrollIndicator: false, pagingEnabled: true, snapToInterval: pageWidth, snapToAlignment: "center", decelerationRate: "fast", centerContent: true, bounces, horizontal: true, accessibilityRole: "none", onScroll: animatedScrollHandler, disableIntervalMomentum: true, scrollEventThrottle: num, children: items.map((item, index) => <closure_47 key={arg1} index={arg1} activePageRangeStart={c21} activePageRangeEnd={c22} reportedPageIndex={sharedValue1} pageIndex={sharedValue} scrollTargetPageIndex={derivedValue} style={memo} item={arg0} />) };
+    items7 = [memo, style];
+    let tmpResult = tmp(tmp2[9]);
+    num = undefined;
+    const tmp25 = onPageChangeRef;
     if (tmpResult.isIOS()) {
       num = 32;
     }
-    obj18.scrollEventThrottle = num;
-    obj18.children = items.map((item, index) => <SegmentedControlPage key={arg1} index={arg1} activePageRangeStart={activePageRangeStart} activePageRangeEnd={activePageRangeEnd} reportedPageIndex={sharedValue1} pageIndex={sharedValue} scrollTargetPageIndex={derivedValue} style={memo} item={arg0} />);
-    const tmp27Result = pagerRef(scrollTarget, obj18);
-    let tmp27Result2 = tmp27Result;
+    const tmp24Result = tmp24(tmp25, obj14);
+    let tmp24Result2 = tmp24Result;
     if (null != nativeGesture) {
-      const obj19 = { gesture: nativeGesture, children: tmp27Result };
-      tmp27Result2 = tmp27(tmp(tmp2[7]).GestureDetector, obj19);
+      const obj15 = { gesture: nativeGesture, children: tmp24Result };
+      tmp24Result2 = tmp24(tmp(tmp2[10]).GestureDetector, obj15);
     }
-    return tmp27Result2;
+    return tmp24Result2;
   }
-  const obj17 = activeIndex(sharedValue3[4]);
-};
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIndex) => {
+  let closure_0;
+  let closure_1;
+  let closure_2;
+  let closure_5;
+  let tmp10;
+  let tmp5;
+  let tmp8;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(32);
+  if (cResult[0] !== reportedPageIndex) {
+    reportedPageIndex = reportedPageIndex.reportedPageIndex;
+    pageIndex = reportedPageIndex.pageIndex;
+    closure_3 = pageIndex;
+    scrollTargetPageIndex = reportedPageIndex.scrollTargetPageIndex;
+    closure_5 = scrollTargetPageIndex;
+    const index = reportedPageIndex.index;
+    dependencyMap = index;
+    const item = reportedPageIndex.item;
+    class P {
+      constructor() {
+        let tmp2 = Math.floor(closure_3.get()) === closure_2;
+        const obj = closure_3;
+        if (!tmp2) {
+          const _Math = Math;
+          tmp2 = Math.ceil(obj.get()) === tmp;
+        }
+        if (!tmp2) {
+          tmp2 = closure_5.get() === tmp;
+        }
+        return tmp2;
+      }
+    }
+    importDefault = tmp12;
+    activePageRangeEnd = reportedPageIndex.activePageRangeEnd;
+    _require = activePageRangeEnd;
+    cResult[0] = reportedPageIndex;
+    cResult[1] = activePageRangeEnd;
+    cResult[2] = tmp12;
+    reportedPageIndex(reportedPageIndex, closure_3);
+    class O {
+      constructor() {
+        let pointerEvents = "box-none";
+        if (reportedPageIndex.get() !== closure_2) {
+          pointerEvents = "none";
+        }
+        return { pointerEvents };
+      }
+    }
+    cResult[3] = index;
+    cResult[4] = item;
+    cResult[5] = pageIndex;
+    cResult[6] = reportedPageIndex;
+    cResult[7] = scrollTargetPageIndex;
+    class C {
+      constructor() {
+        return reportedPageIndex.get() !== closure_2;
+      }
+    }
+    tmp10 = scrollTargetPageIndex;
+    tmp5 = tmp12;
+    tmp8 = pageIndex;
+  } else {
+    _require = cResult[1];
+    importDefault = cResult[2];
+    dependencyMap = cResult[3];
+    closure_3 = cResult[5];
+    class P {
+      constructor() {
+        let tmp2 = Math.floor(closure_3.get()) === closure_2;
+        const obj = closure_3;
+        if (!tmp2) {
+          const _Math = Math;
+          tmp2 = Math.ceil(obj.get()) === tmp;
+        }
+        if (!tmp2) {
+          tmp2 = closure_5.get() === tmp;
+        }
+        return tmp2;
+      }
+    }
+    reportedPageIndex = tmp9;
+    closure_5 = cResult[7];
+  }
+  const tmpResult = tmp(4570);
+  class P {
+    constructor() {
+      let tmp2 = Math.floor(closure_3.get()) === closure_2;
+      const obj = closure_3;
+      if (!tmp2) {
+        const _Math = Math;
+        tmp2 = Math.ceil(obj.get()) === tmp;
+      }
+      if (!tmp2) {
+        tmp2 = closure_5.get() === tmp;
+      }
+      return tmp2;
+    }
+  }
+  P.__closure = { pageIndex: tmp8, index: tmp6, scrollTargetPageIndex: tmp10 };
+  P.__workletHash = 2724531395868;
+  P.__initData = __initData13;
+  const derivedValue = tmpResult.useDerivedValue(P);
+  const tmpResult3 = tmp(4570);
+  class O {
+    constructor() {
+      let pointerEvents = "box-none";
+      if (reportedPageIndex.get() !== closure_2) {
+        pointerEvents = "none";
+      }
+      return { pointerEvents };
+    }
+  }
+  O.__closure = { reportedPageIndex: tmp9, index: tmp6 };
+  O.__workletHash = 9779507421474;
+  O.__initData = __initData14;
+  const animatedProps = tmpResult3.useAnimatedProps(O);
+  if (cResult[9] === tmp6) {
+    let tmp18;
+    let tmp30;
+    if (cResult[10] === tmp9) {
+      tmp18 = cResult[11];
+    }
+    const tmp20 = closure_5(derivedValue.useState(tmp18), 2);
+    current = tmp20[0];
+    closure_8 = tmp22;
+    const obj4 = derivedValue;
+    class P {
+      constructor() {
+        let tmp2 = Math.floor(closure_3.get()) === closure_2;
+        const obj = closure_3;
+        if (!tmp2) {
+          const _Math = Math;
+          tmp2 = Math.ceil(obj.get()) === tmp;
+        }
+        if (!tmp2) {
+          tmp2 = closure_5.get() === tmp;
+        }
+        return tmp2;
+      }
+    }
+    class D {
+      constructor() {
+        return reportedPageIndex.get() !== closure_2;
+      }
+    }
+    let obj2 = { reportedPageIndex: tmp9, index: tmp6 };
+    D.__closure = obj2;
+    D.__workletHash = 10737484996965;
+    D.__initData = __initData15;
+    class R {
+      constructor(arg0) {
+        const obj = ReanimatedRexport2;
+        obj.runOnJS(closure_8)(arg0);
+      }
+    }
+    let obj3 = { runOnJS: null, setIsAccessibilityHidden: tmp20[1] };
+    const useAnimatedReaction = tmp23.useAnimatedReaction;
+    class O {
+      constructor() {
+        let pointerEvents = "box-none";
+        if (reportedPageIndex.get() !== closure_2) {
+          pointerEvents = "none";
+        }
+        return { pointerEvents };
+      }
+    }
+    R.__closure = obj3;
+    R.__workletHash = 17485016054072;
+    R.__initData = __initData16;
+    const animatedReaction = useAnimatedReaction(D, R);
+    ref = derivedValue.useRef(null);
+    class C {
+      constructor() {
+        return reportedPageIndex.get() !== closure_2;
+      }
+    }
+    if (cResult[12] !== current) {
+      class H {
+        constructor() {
+          current = ref.current;
+          const tmp = ref;
+          if (current) {
+            current = !current;
+          }
+          tmp.current = current;
+          if (current) {
+            const obj = PlatformUtils;
+            current = obj.isIOS();
+          }
+          if (current) {
+            const obj3 = { ref, delay: 100 };
+            const obj2 = react_native2;
+            const result = obj2.setAccessibilityFocus(obj3);
+          }
+        }
+      }
+      let items = [current];
+      cResult[12] = current;
+      cResult[13] = H;
+      cResult[14] = items;
+      class P {
+        constructor() {
+          let tmp2 = Math.floor(closure_3.get()) === closure_2;
+          const obj = closure_3;
+          if (!tmp2) {
+            const _Math = Math;
+            tmp2 = Math.ceil(obj.get()) === tmp;
+          }
+          if (!tmp2) {
+            tmp2 = closure_5.get() === tmp;
+          }
+          return tmp2;
+        }
+      }
+      class D {
+        constructor() {
+          return reportedPageIndex.get() !== closure_2;
+        }
+      }
+    } else {
+      class H {
+        constructor() {
+          current = ref.current;
+          const tmp = ref;
+          if (current) {
+            current = !current;
+          }
+          tmp.current = current;
+          if (current) {
+            const obj = PlatformUtils;
+            current = obj.isIOS();
+          }
+          if (current) {
+            const obj3 = { ref, delay: 100 };
+            const obj2 = react_native2;
+            const result = obj2.setAccessibilityFocus(obj3);
+          }
+        }
+      }
+      tmp30 = cResult[14];
+    }
+    const effect = obj4.useEffect(tmp29, tmp30);
+    const fn = function z() {
+      let display = "none";
+      if (derivedValue.get()) {
+        display = "flex";
+      }
+      return { display, flex: 1 };
+    };
+    const obj5 = { isVisibleOnScreen: derivedValue };
+    fn.__closure = obj5;
+    fn.__workletHash = 6740536171688;
+    fn.__initData = __initData17;
+    const tmpResult4 = tmp(4570);
+    const animatedStyle = tmpResult4.useAnimatedStyle(fn);
+    if (cResult[15] === tmp4) {
+      class H {
+        constructor() {
+          current = ref.current;
+          const tmp = ref;
+          if (current) {
+            current = !current;
+          }
+          tmp.current = current;
+          if (current) {
+            const obj = PlatformUtils;
+            current = obj.isIOS();
+          }
+          if (current) {
+            const obj3 = { ref, delay: 100 };
+            const obj2 = react_native2;
+            const result = obj2.setAccessibilityFocus(obj3);
+          }
+        }
+      }
+    }
+    class N {
+      constructor() {
+        let tmp2 = closure_2 >= closure_1.get();
+        const tmp = closure_2;
+        if (tmp2) {
+          tmp2 = tmp <= closure_0.get();
+        }
+        return !tmp2;
+      }
+    }
+    cResult[15] = tmp4;
+    cResult[16] = tmp5;
+    cResult[17] = tmp6;
+    cResult[18] = N;
+  }
+  class C {
+    constructor() {
+      return reportedPageIndex.get() !== closure_2;
+    }
+  }
+  cResult[9] = tmp6;
+  cResult[10] = tmp9;
+  cResult[11] = C;
+  tmp18 = C;
+}) : ((reportedPageIndex) => {
+  let Freeze;
+  let first;
+  let obj10;
+  let obj9;
+  let str;
+  reportedPageIndex = reportedPageIndex.reportedPageIndex;
+  pageIndex = reportedPageIndex.pageIndex;
+  scrollTargetPageIndex = reportedPageIndex.scrollTargetPageIndex;
+  const index = reportedPageIndex.index;
+  activePageRangeStart = reportedPageIndex.activePageRangeStart;
+  activePageRangeEnd = reportedPageIndex.activePageRangeEnd;
+  const item = reportedPageIndex.item;
+  const merged = Object.assign(reportedPageIndex, Object.assign({ reportedPageIndex: 0, pageIndex: 0, scrollTargetPageIndex: 0, index: 0, item: 0, activePageRangeStart: 0, activePageRangeEnd: 0 }));
+  let accessibilityElementsHidden;
+  closure_8 = undefined;
+  ref = undefined;
+  let closure_11;
+  let tmp2 = reportedPageIndex;
+  let obj = reportedPageIndex(scrollTargetPageIndex[5]);
+  const fn = function v() {
+    let tmp2 = Math.floor(pageIndex.get()) === index;
+    const obj = pageIndex;
+    if (!tmp2) {
+      const _Math = Math;
+      tmp2 = Math.ceil(obj.get()) === tmp;
+    }
+    if (!tmp2) {
+      tmp2 = scrollTargetPageIndex.get() === tmp;
+    }
+    return tmp2;
+  };
+  fn.__closure = { pageIndex, index, scrollTargetPageIndex };
+  fn.__workletHash = 4593378569274;
+  fn.__initData = __initData18;
+  const derivedValue = obj.useDerivedValue(fn);
+  let obj2 = reportedPageIndex(scrollTargetPageIndex[5]);
+  class I {
+    constructor() {
+      let pointerEvents = "box-none";
+      if (reportedPageIndex.get() !== index) {
+        pointerEvents = "none";
+      }
+      return { pointerEvents };
+    }
+  }
+  I.__closure = { reportedPageIndex, index };
+  I.__workletHash = 12899986233414;
+  I.__initData = __initData19;
+  const animatedProps = obj2.useAnimatedProps(I);
+  const tmp6 = activePageRangeEnd(derivedValue.useState(() => reportedPageIndex.get() !== index), 2);
+  accessibilityElementsHidden = tmp6[0];
+  closure_8 = tmp8;
+  let obj3 = reportedPageIndex(scrollTargetPageIndex[5]);
+  const fn2 = function p() {
+    return reportedPageIndex.get() !== index;
+  };
+  fn2.__closure = { reportedPageIndex, index };
+  fn2.__workletHash = 2345652853959;
+  fn2.__initData = __initData20;
+  class S {
+    constructor(arg0) {
+      const obj = ReanimatedRexport2;
+      obj.runOnJS(closure_8)(arg0);
+    }
+  }
+  S.__closure = { runOnJS: reportedPageIndex(scrollTargetPageIndex[5]).runOnJS, setIsAccessibilityHidden: tmp6[1] };
+  S.__workletHash = 15518480728660;
+  S.__initData = __initData21;
+  ({ runOnJS: reportedPageIndex(scrollTargetPageIndex[5]).runOnJS, setIsAccessibilityHidden: tmp6[1] });
+  const animatedReaction = obj3.useAnimatedReaction(fn2, S);
+  derivedValue.useRef(null);
+  ref = derivedValue.useRef(accessibilityElementsHidden);
+  let items = [accessibilityElementsHidden];
+  const effect = derivedValue.useEffect(() => {
+    current = ref.current;
+    const tmp = ref;
+    if (current) {
+      current = !current;
+    }
+    tmp.current = current;
+    if (current) {
+      const obj = PlatformUtils;
+      current = obj.isIOS();
+    }
+    if (current) {
+      const obj3 = { ref, delay: 100 };
+      const obj2 = react_native2;
+      const result = obj2.setAccessibilityFocus(obj3);
+    }
+  }, items);
+  const obj5 = reportedPageIndex(scrollTargetPageIndex[5]);
+  class W {
+    constructor() {
+      let display = "none";
+      if (derivedValue.get()) {
+        display = "flex";
+      }
+      return { display, flex: 1 };
+    }
+  }
+  W.__closure = { isVisibleOnScreen: derivedValue };
+  W.__workletHash = 1125238936966;
+  W.__initData = __initData22;
+  const animatedStyle = obj5.useAnimatedStyle(W);
+  const tmp13 = activePageRangeEnd(derivedValue.useState(() => {
+    let tmp2 = index >= activePageRangeStart.get();
+    const tmp = index;
+    if (tmp2) {
+      tmp2 = tmp <= activePageRangeEnd.get();
+    }
+    return !tmp2;
+  }), 2);
+  closure_11 = tmp15;
+  const first1 = tmp13[0];
+  const obj6 = reportedPageIndex(scrollTargetPageIndex[5]);
+  class M {
+    constructor() {
+      const items = [activePageRangeStart.get(), activePageRangeEnd.get()];
+      return items;
+    }
+  }
+  M.__closure = { activePageRangeStart, activePageRangeEnd };
+  M.__workletHash = 7158564312502;
+  M.__initData = __initData23;
+  const fn3 = function b(arg0) {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = arg0;
+    let tmp4 = index >= tmp;
+    const obj = ReanimatedRexport2;
+    const runOnJSResult = obj.runOnJS(closure_11);
+    if (tmp4) {
+      tmp4 = index <= tmp2;
+    }
+    runOnJSResult(!tmp4);
+  };
+  fn3.__closure = { index, runOnJS: reportedPageIndex(scrollTargetPageIndex[5]).runOnJS, setFreeze: tmp13[1] };
+  fn3.__workletHash = 13391069051873;
+  fn3.__initData = __initData24;
+  ({ index, runOnJS: reportedPageIndex(scrollTargetPageIndex[5]).runOnJS, setFreeze: tmp13[1] });
+  const animatedReaction1 = obj6.useAnimatedReaction(M, fn3);
+  const obj8 = { ref, animatedProps, importantForAccessibility: str, accessibilityElementsHidden, children: accessibilityElementsHidden(Freeze, obj9) };
+  const View = pageIndex(scrollTargetPageIndex[5]).View;
+  const merged1 = Object.assign(merged);
+  str = "auto";
+  const tmp18 = pageIndex;
+  if (accessibilityElementsHidden) {
+    str = "no-hide-descendants";
+  }
+  obj9 = { freeze: first1, children: accessibilityElementsHidden(tmp18(scrollTargetPageIndex[5]).View, obj10) };
+  Freeze = tmp2(tmp3[12]).Freeze;
+  obj10 = { style: animatedStyle, children: item.page };
+  return accessibilityElementsHidden(View, obj8, index);
+});
+const __initData25 = { code: "function SegmentedControlPagesNativeTsx39(min,max){const{activePageRangeStart,activePageRangeEnd}=this.__closure;activePageRangeStart.set(Math.min(activePageRangeStart.get(),min));activePageRangeEnd.set(Math.max(activePageRangeEnd.get(),max));}" };
+const __initData26 = { code: "function SegmentedControlPagesNativeTsx40(){const{activeIndex,pressedIndex}=this.__closure;return{activeIndex:activeIndex.get(),pressedIndex:pressedIndex.get()};}" };
+const __initData27 = { code: "function SegmentedControlPagesNativeTsx41(t0){const{expandActivePageRange}=this.__closure;const{activeIndex:activeIndex_0,pressedIndex:pressedIndex_0}=t0;let min_0=activeIndex_0;let max_0=activeIndex_0;if(pressedIndex_0!==-1){min_0=Math.min(activeIndex_0,pressedIndex_0);max_0=Math.max(activeIndex_0,pressedIndex_0);}expandActivePageRange(Math.floor(min_0),Math.ceil(max_0));}" };
+const __initData28 = { code: "function SegmentedControlPagesNativeTsx42(min,max){const{activePageRangeStart,activePageRangeEnd}=this.__closure;activePageRangeStart.set(Math.min(activePageRangeStart.get(),min));activePageRangeEnd.set(Math.max(activePageRangeEnd.get(),max));}" };
+const __initData29 = { code: "function SegmentedControlPagesNativeTsx43(){const{activeIndex,pressedIndex}=this.__closure;return{activeIndex:activeIndex.get(),pressedIndex:pressedIndex.get()};}" };
+const __initData30 = { code: "function SegmentedControlPagesNativeTsx44({activeIndex:activeIndex_0,pressedIndex:pressedIndex_0}){const{expandActivePageRange}=this.__closure;let min_0=activeIndex_0;let max_0=activeIndex_0;if(pressedIndex_0!==-1){min_0=Math.min(activeIndex_0,pressedIndex_0);max_0=Math.max(activeIndex_0,pressedIndex_0);}expandActivePageRange(Math.floor(min_0),Math.ceil(max_0));}" };
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_54 = ReactCompilerGating.isReactCompilerEnabled() ? ((activeIndex, pressedIndex) => {
+  let closure_0 = activeIndex;
+  let closure_1 = pressedIndex;
+  let obj = react2;
+  const cResult = obj.c(3);
+  const obj2 = ReanimatedRexport2;
+  const sharedValue = obj2.useSharedValue(activeIndex.get());
+  const obj3 = ReanimatedRexport2;
+  const sharedValue1 = obj3.useSharedValue(activeIndex.get());
+  const fn = function o(arg0, arg1) {
+    const result = sharedValue.set(Math.min(sharedValue.get(), arg0));
+    const result1 = sharedValue1.set(Math.max(sharedValue1.get(), arg1));
+  };
+  fn.__closure = { activePageRangeStart: sharedValue, activePageRangeEnd: sharedValue1 };
+  fn.__workletHash = 3575728639518;
+  fn.__initData = __initData25;
+  const fn2 = function l() {
+    const obj = { activeIndex: closure_0.get(), pressedIndex: closure_1.get() };
+    return obj;
+  };
+  fn2.__closure = { activeIndex, pressedIndex };
+  fn2.__workletHash = 15473938229756;
+  fn2.__initData = __initData26;
+  const fn3 = function s(arg0) {
+    let activeIndex;
+    let pressedIndex;
+    ({ activeIndex, pressedIndex } = arg0);
+    let bound = activeIndex;
+    if (-1 !== pressedIndex) {
+      const _Math = Math;
+      bound = Math.min(activeIndex, pressedIndex);
+      const _Math2 = Math;
+      const bound1 = Math.max(activeIndex, pressedIndex);
+    }
+    const rounded = Math.floor(bound);
+    if (typeof fn === "function") {
+      const _Math3 = Math;
+      const result = sharedValue.set(Math.min(sharedValue.get(), rounded));
+      const _Math4 = Math;
+      const result1 = sharedValue1.set(Math.max(sharedValue1.get(), tmp5));
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+  fn3.__closure = { expandActivePageRange: fn };
+  fn3.__workletHash = 11024199346758;
+  fn3.__initData = __initData27;
+  const obj4 = ReanimatedRexport2;
+  const animatedReaction = obj4.useAnimatedReaction(fn2, fn3);
+  if (cResult[0] === sharedValue1) {
+    let tmp5;
+    if (cResult[1] === sharedValue) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const items = [sharedValue, sharedValue1];
+  cResult[0] = sharedValue1;
+  cResult[1] = sharedValue;
+  cResult[2] = items;
+  tmp5 = items;
+}) : ((activeIndex, pressedIndex) => {
+  let closure_0 = activeIndex;
+  let closure_1 = pressedIndex;
+  let obj = ReanimatedRexport2;
+  const sharedValue = obj.useSharedValue(activeIndex.get());
+  const obj2 = ReanimatedRexport2;
+  const sharedValue1 = obj2.useSharedValue(activeIndex.get());
+  const fn = function o(arg0, arg1) {
+    const result = sharedValue.set(Math.min(sharedValue.get(), arg0));
+    const result1 = sharedValue1.set(Math.max(sharedValue1.get(), arg1));
+  };
+  fn.__closure = { activePageRangeStart: sharedValue, activePageRangeEnd: sharedValue1 };
+  fn.__workletHash = 13074491908786;
+  fn.__initData = __initData28;
+  const items = [sharedValue1, sharedValue];
+  const callback = react.useCallback(fn, items);
+  const fn2 = function c() {
+    const obj = { activeIndex: closure_0.get(), pressedIndex: closure_1.get() };
+    return obj;
+  };
+  fn2.__closure = { activeIndex, pressedIndex };
+  fn2.__workletHash = 7031527506303;
+  fn2.__initData = __initData29;
+  const fn3 = function l(arg0) {
+    let activeIndex;
+    let pressedIndex;
+    ({ activeIndex, pressedIndex } = arg0);
+    let bound1 = activeIndex;
+    let bound = activeIndex;
+    if (-1 !== pressedIndex) {
+      const _Math = Math;
+      bound = Math.min(activeIndex, pressedIndex);
+      const _Math2 = Math;
+      bound1 = Math.max(activeIndex, pressedIndex);
+    }
+    const rounded = Math.floor(bound);
+    callback(rounded, Math.ceil(bound1));
+  };
+  fn3.__closure = { expandActivePageRange: callback };
+  fn3.__workletHash = 7154390605088;
+  fn3.__initData = __initData30;
+  const obj3 = ReanimatedRexport2;
+  const animatedReaction = obj3.useAnimatedReaction(fn2, fn3);
+  const items1 = [sharedValue, sharedValue1];
+  return items1;
+});
+let result = size.fileFinishedImporting("design/components/SegmentedControl/native/SegmentedControlPages.native.tsx");
+
+export const SegmentedControlPages = tmp2;

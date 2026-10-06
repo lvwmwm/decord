@@ -1,9 +1,18 @@
 // Module ID: 13842
 // Function ID: 13843
-// Dependencies: [1121]
+// Dependencies: [13815]
 
 // Module 13842
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13815 from "module_13815" /* 13815 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 64, height: 64, scales: [1], hash: "7820559d802b687a2589b1c9f32203ab", name: "img_wumpus_nitro_boost", type: "png" });
+export default function(arg0) {
+  if (_mod13815(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp3 = new TypeError(String(arg0) + " is not an object");
+    throw tmp3;
+  }
+};

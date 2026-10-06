@@ -1,25 +1,28 @@
-// Module ID: 8236
-// Function ID: 8237
+// Module ID: 7392
+// Function ID: 7393
 // Name: renderer/EmbedUtils
 // Dependencies: [17, 2]
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
-// Module 8236 (renderer/EmbedUtils)
-import _mod17 from "module_17" /* 17 */;
+// Module 7392 (renderer/EmbedUtils)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const Image = _mod17.Image;
-const frozen = Object.freeze(new Set(["YouTube", "TikTok"]));
+const Image = react_native.Image;
+const set = new Set(["YouTube", "TikTok"]);
+const freezeResult = freeze(set);
+const map = freezeResult;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/EmbedUtils.tsx");
 
 export const getAssetUriForEmbed = function getAssetUriForEmbed(Image) {
   return Image.resolveAssetSource(Image).uri;
 };
-export const SUPPORTED_VIDEO_PARTNERS = frozen;
+export const SUPPORTED_VIDEO_PARTNERS = freezeResult;
 export const shouldPlayVideoInline = function shouldPlayVideoInline(effectiveVideoProvider) {
   let str = effectiveVideoProvider;
+  const has = map.has;
   if (effectiveVideoProvider == null) {
     str = "";
   }
-  return frozen.has(str);
+  return has(str);
 };

@@ -1,25 +1,35 @@
-// Module ID: 10946
-// Function ID: 10947
+// Module ID: 10152
+// Function ID: 10153
 // Name: NativeMenuActionCreators
-// Dependencies: [573, 4756, 4757, 2]
+// Dependencies: [585, 4802, 4803, 2]
 
-// Module 10946 (NativeMenuActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HapticUtils from "HapticUtils" /* 4756 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4757 */;
+// Module 10152 (NativeMenuActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import HapticUtils from "HapticUtils" /* 4802 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/native_menu/native/NativeMenuActionCreators.tsx");
+let importDefault;
 
-export default {
+let obj = {
   showNativeMenu(key, memo) {
+    let menu;
     importDefault = memo;
-    DispatcherDefault.wait(() => {
-      const result = HapticUtils.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-      DispatcherDefault.dispatch({ type: "SHOW_NATIVE_MENU", key, menu });
+    let obj = DispatcherDefault;
+    obj.wait(() => {
+      const obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+      const obj2 = DispatcherDefault;
+      const obj3 = { type: "SHOW_NATIVE_MENU", key, menu };
+      obj2.dispatch(obj3);
     });
   },
   hideNativeMenu(key) {
-    DispatcherDefault.dispatch({ type: "HIDE_NATIVE_MENU", key });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "HIDE_NATIVE_MENU", key };
+    obj.dispatch(obj2);
   }
 };
+let result = size.fileFinishedImporting("modules/native_menu/native/NativeMenuActionCreators.tsx");
+
+export default obj;

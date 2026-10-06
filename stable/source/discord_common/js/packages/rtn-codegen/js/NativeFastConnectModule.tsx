@@ -1,13 +1,13 @@
-// Module ID: 13931
-// Function ID: 13932
-// Name: NativeFastConnectModule
+// Module ID: 13183
+// Function ID: 13184
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 13931 (NativeFastConnectModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 13183 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeFastConnectModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeFastConnectModule.tsx");
 

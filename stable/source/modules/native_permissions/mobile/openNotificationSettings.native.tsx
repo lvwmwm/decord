@@ -1,15 +1,16 @@
-// Module ID: 9592
-// Function ID: 9593
-// Name: openNotificationSettings
-// Dependencies: [5396, 2]
+// Module ID: 8744
+// Function ID: 8745
+// Name: react-native
+// Dependencies: [5461, 2]
 // Exports: default
 
-// Module 9592 (openNotificationSettings)
-import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5396 */;
+// Module 8744 (react-native)
+import react_nativeDefault from "react-native" /* 5461 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/native_permissions/mobile/openNotificationSettings.native.tsx");
 
 export default function openNotificationSettings() {
-  const result = NativeDeviceSettingsModuleDefault.openNotificationSettings();
+  const obj = react_nativeDefault;
+  const result = obj.openNotificationSettings();
 };

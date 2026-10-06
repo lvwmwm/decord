@@ -1,11 +1,11 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 9212
+// Function ID: 9213
 // Name: ClearAllIncomingRequestsConfirmationModal
-// Dependencies: [10041, 2]
+// Dependencies: [9213, 2]
 // Exports: default
 
-// Module 10040 (ClearAllIncomingRequestsConfirmationModal)
-import people_ClearAllIncomingRequestsConfirmationModal from "people/ClearAllIncomingRequestsConfirmationModal" /* 10041 */;
+// Module 9212 (ClearAllIncomingRequestsConfirmationModal)
+import people_ClearAllIncomingRequestsConfirmationModal from "people/ClearAllIncomingRequestsConfirmationModal" /* 9213 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/people/ClearAllIncomingRequestsConfirmationModal.tsx");

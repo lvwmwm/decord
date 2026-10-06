@@ -1,54 +1,61 @@
-// Module ID: 10096
-// Function ID: 10097
+// Module ID: 9234
+// Function ID: 9235
 // Name: getXboxURIForChannel
-// Dependencies: [2063, 1992, 4437, 1372, 9390, 1074, 4941, 1115, 1271, 2]
+// Dependencies: [2073, 1999, 4482, 1378, 8542, 1086, 4990, 1127, 1283, 2]
 // Exports: default
 
-// Module 10096 (getXboxURIForChannel)
-import useChannelName from "useChannelName" /* 4941 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 9234 (getXboxURIForChannel)
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import useChannelName from "useChannelName" /* 4990 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import UserStore from "UserStore" /* 1378 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8542 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const GameConsoleConstants = fn(9390);
-({ XBOX_HANDOFF_SEARCH_PARAMS: metroRequire, XBOX_URL_BASE: closure_7 } = GameConsoleConstants);
-const Constants = fn(1074);
-({ Endpoints: closure_8, ZERO_STRING_GUILD_ID: closure_9 } = Constants);
-const size = fn(2);
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+({ XBOX_HANDOFF_SEARCH_PARAMS: metroRequire, XBOX_URL_BASE: metroImportDefault } = GameConsoleConstants);
+({ Endpoints: metroImportAll, ZERO_STRING_GUILD_ID: c9 } = Constants);
 const result = size.fileFinishedImporting("modules/game_console/getXboxURIForChannel.tsx");
 
 export default function getXboxURIForChannel(channelId, arg1) {
+  let combined;
+  let forQRCode;
+  let name;
+  let nonce;
+  let obj2;
   ({ nonce, forQRCode } = arg1);
   const guildId = channelId.getGuildId();
   const guild = GuildStore.getGuild(guildId);
   let tmp4 = guildId;
+  const tmp3 = metroRequire;
   if (guildId == null) {
-    tmp4 = React7;
+    tmp4 = React4;
   }
-  const obj = { guildId: tmp4, channelId: channelId.id, channelName: useChannelName.computeChannelName(channelId, UserStore, RelationshipStore), guildName: null, muted: null, deafened: null, nonce: null };
-  let name;
+  const obj = { guildId: tmp4, channelId: channelId.id, channelName: obj2.computeChannelName(channelId, UserStore, RelationshipStore), guildName: name, muted: MediaEngineStore.isSelfMute(), deafened: MediaEngineStore.isSelfDeaf(), nonce };
+  name = undefined;
+  obj2 = useChannelName;
   if (guild != null) {
     name = guild.name;
   }
   if (name == null) {
-    const intl = tmp5(1115).intl;
-    name = intl.string(tmp5(1115).t.LJpTRF);
+    const intl = tmp5(1127).intl;
+    name = intl.string(tmp5(1127).t.LJpTRF);
   }
-  obj.guildName = name;
-  obj.muted = MediaEngineStore.isSelfMute();
-  obj.deafened = MediaEngineStore.isSelfDeaf();
-  obj.nonce = nonce;
-  const str = timestampProducer(obj);
+  const str = tmp3(obj);
   if (forQRCode) {
-    const aPIBaseURL = tmp5(1271).getAPIBaseURL();
+    const tmp5Result = HTTPUtils;
+    const aPIBaseURL = tmp5Result.getAPIBaseURL();
     const _HermesInternal2 = HermesInternal;
-    let combined = "" + aPIBaseURL + constants.XBOX_HANDOFF + "?" + str.toString();
-    const tmp5Result = tmp5(1271);
+    combined = "" + aPIBaseURL + metroImportAll.XBOX_HANDOFF + "?" + str.toString();
   } else {
     const _HermesInternal = HermesInternal;
-    combined = "" + React5 + "?" + str.toString();
+    combined = "" + metroImportDefault + "?" + str.toString();
   }
   return combined;
 };

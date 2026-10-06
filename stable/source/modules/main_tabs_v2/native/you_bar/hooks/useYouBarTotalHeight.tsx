@@ -1,23 +1,35 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 14617
+// Function ID: 14618
 // Name: useYouBarTotalHeight
-// Dependencies: [15368, 15367, 15371, 2]
-// Exports: useYouBarTotalHeight
+// Dependencies: [14615, 558, 14614, 14618, 2]
 
-// Module 15370 (useYouBarTotalHeight)
-import useYouBarMargins from "useYouBarMargins" /* 15367 */;
-import YouBarConstants from "YouBarConstants" /* 15368 */;
-import useConnectionBannerHeight from "useConnectionBannerHeight" /* 15371 */;
+// Module 14617 (useYouBarTotalHeight)
+import useYouBarMargins from "useYouBarMargins" /* 14614 */;
+import YouBarConstants from "YouBarConstants" /* 14615 */;
+import useConnectionBannerHeight from "useConnectionBannerHeight" /* 14618 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const YOU_BAR_HEIGHT = YouBarConstants.YOU_BAR_HEIGHT;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarTotalHeight.tsx");
-
-export const useYouBarTotalHeight = function useYouBarTotalHeight(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let num = 0;
+  if (undefined !== arg0) {
+    num = arg0;
+  }
+  const obj = useYouBarMargins;
+  const youBarBottomMargin = obj.useYouBarBottomMargin();
+  const obj2 = useConnectionBannerHeight;
+  return youBarBottomMargin + YOU_BAR_HEIGHT + obj2.useConnectionBannerHeight() + num;
+}) : (() => {
   let num = arg0;
   if (arg0 === undefined) {
     num = 0;
   }
-  const youBarBottomMargin = useYouBarMargins.useYouBarBottomMargin();
-  return youBarBottomMargin + YOU_BAR_HEIGHT + useConnectionBannerHeight.useConnectionBannerHeight() + num;
-};
+  const obj = useYouBarMargins;
+  const youBarBottomMargin = obj.useYouBarBottomMargin();
+  const obj2 = useConnectionBannerHeight;
+  return youBarBottomMargin + YOU_BAR_HEIGHT + obj2.useConnectionBannerHeight() + num;
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarTotalHeight.tsx");
+
+export const useYouBarTotalHeight = tmp2;

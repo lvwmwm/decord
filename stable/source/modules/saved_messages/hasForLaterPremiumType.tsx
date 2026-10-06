@@ -1,24 +1,57 @@
-// Module ID: 8131
-// Function ID: 8132
+// Module ID: 7280
+// Function ID: 7281
 // Name: hasForLaterPremiumType
-// Dependencies: [1372, 1374, 1969, 504, 2]
-// Exports: default, useHasForLaterPremiumType
+// Dependencies: [1378, 1380, 1976, 558, 576, 504, 2]
+// Exports: default
 
-// Module 8131 (hasForLaterPremiumType)
-import initialize from "initialize" /* 504 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7280 (hasForLaterPremiumType)
+import react from "react" /* 576 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PremiumTypes = fn(1374).PremiumTypes;
-const size = fn(2);
+let tmp;
+const get_initialized = tmp(504);
+const PremiumTypes = PremiumConstants.PremiumTypes;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let TIER_2;
+  let currentUser;
+  let tmp4;
+  let tmp5;
+  let obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function n() {
+      const obj = PremiumTypeUtils;
+      return obj.isPremium(currentUser.getCurrentUser(), TIER_2.TIER_2);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let TIER_2;
+  let currentUser;
+  let obj = get_initialized;
+  const items = [UserStore];
+  return obj.useStateFromStores(items, () => {
+    const obj = PremiumTypeUtils;
+    return obj.isPremium(currentUser.getCurrentUser(), TIER_2.TIER_2);
+  });
+});
 const result = size.fileFinishedImporting("modules/saved_messages/hasForLaterPremiumType.tsx");
 
 export default function hasForLaterPremiumType() {
   const currentUser = UserStore.getCurrentUser();
-  return PremiumTypeUtils.isPremium(currentUser, PremiumTypes.TIER_2);
+  const obj = PremiumTypeUtils;
+  return obj.isPremium(currentUser, PremiumTypes.TIER_2);
 };
-export const useHasForLaterPremiumType = function useHasForLaterPremiumType() {
-  const items = [UserStore];
-  return initialize.useStateFromStores(items, () => PremiumTypeUtils.isPremium(currentUser.getCurrentUser(), TIER_2.TIER_2));
-};
+export const useHasForLaterPremiumType = tmp2;

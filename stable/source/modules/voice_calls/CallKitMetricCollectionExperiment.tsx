@@ -1,16 +1,16 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 15031
+// Function ID: 15032
 // Name: CallKitMetricCollectionExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 15770 (CallKitMetricCollectionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 15031 (CallKitMetricCollectionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-02-callkit-metric-collection", kind: "user", defaultConfig: { enabled: true }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-02-callkit-metric-collection", kind: "user", defaultConfig: { enabled: true }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: false };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/voice_calls/CallKitMetricCollectionExperiment.tsx");
 

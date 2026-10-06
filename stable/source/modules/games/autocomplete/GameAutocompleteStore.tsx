@@ -1,88 +1,89 @@
-// Module ID: 5356
-// Function ID: 5357
+// Module ID: 5421
+// Function ID: 5422
 // Name: GameAutocompleteStore
-// Dependencies: [1438, 504, 5357, 573, 2]
+// Dependencies: [1445, 504, 5422, 585, 2]
 
-// Module 5356 (GameAutocompleteStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import privDefault from "priv" /* 1438 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5357 */;
+// Module 5421 (GameAutocompleteStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import LRUCacheDefault from "LRUCache" /* 1445 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5422 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const navigation = new privDefault({ max: 100 });
-let set = new Set();
-const tmp2 = new privDefault({ max: 100 });
-const navigation2 = new privDefault({ max: 500 });
-const Store = initializeDefault.Store;
+const React2 = new LRUCacheDefault({ max: 100 });
+const tmp2 = new LRUCacheDefault({ max: 100 });
+const set = new Set();
+let tmp4 = new LRUCacheDefault({ max: 500 });
+const React3 = tmp4;
+const Store = get_initializedDefault.Store;
 class GameAutocompleteStore extends Store {
-}
-const prototype = GameAutocompleteStore.prototype;
-prototype["getResults"] = function getResults(query) {
-  const result = GameAutocompleteUtils.normalizeGameAutocompleteQuery(query);
-  let peekResult;
-  if (null != result) {
-    peekResult = navigation.peek(result);
+  getResults(query) {
+    const obj = GameAutocompleteUtils;
+    const result = obj.normalizeGameAutocompleteQuery(query);
+    let peekResult;
+    if (null != result) {
+      peekResult = navigation.peek(result);
+    }
+    return peekResult;
   }
-  return peekResult;
-};
-prototype["getClosestResults"] = function getClosestResults(result) {
-  result = GameAutocompleteUtils.normalizeGameAutocompleteQuery(result);
-  if (null != result) {
-    const peekResult = navigation.peek(result);
-    if (null != peekResult) {
-      return peekResult;
-    } else {
-      let diff = result.length - 1;
-      if (1 <= diff) {
-        const peekResult1 = navigation.peek(result.slice(0, diff));
-        while (null == peekResult1) {
-          diff = diff - 1;
+  getClosestResults(result) {
+    const obj = GameAutocompleteUtils;
+    result = obj.normalizeGameAutocompleteQuery(result);
+    if (null != result) {
+      const peekResult = navigation.peek(result);
+      if (null != peekResult) {
+        return peekResult;
+      } else {
+        let diff = result.length - 1;
+        if (1 <= diff) {
+          const peekResult1 = navigation.peek(result.slice(0, diff));
+          while (null == peekResult1) {
+            diff = diff - 1;
+          }
+          return peekResult1;
         }
-        return peekResult1;
       }
     }
   }
-};
-prototype["shouldSuppressFetch"] = function shouldSuppressFetch(result) {
-  result = GameAutocompleteUtils.normalizeGameAutocompleteQuery(result);
-  let tmp4 = null != result;
-  if (tmp4) {
-    const hasItem = navigation.has(result);
-    let result1 = !hasItem;
-    if (!hasItem) {
-      result1 = !set.has(result);
+  shouldSuppressFetch(result) {
+    const obj = GameAutocompleteUtils;
+    result = obj.normalizeGameAutocompleteQuery(result);
+    let tmp4 = null != result;
+    if (tmp4) {
+      const hasItem = navigation.has(result);
+      let result1 = !hasItem && !set.has(result);
+      if (result1) {
+        const tmpResult = GameAutocompleteUtils;
+        result1 = tmpResult.shouldSuppressAutocompleteFetch(result, (arg0) => navigation.peek(arg0));
+      }
+      tmp4 = result1;
     }
-    if (result1) {
-      result1 = GameAutocompleteUtils.shouldSuppressAutocompleteFetch(result, (arg0) => navigation.peek(arg0));
-      const tmpResult = GameAutocompleteUtils;
-    }
-    tmp4 = result1;
+    return tmp4;
   }
-  return tmp4;
-};
-prototype["isFetching"] = function isFetching(query) {
-  const result = GameAutocompleteUtils.normalizeGameAutocompleteQuery(query);
-  let hasItem = null != result;
-  if (hasItem) {
-    hasItem = set.has(result);
+  isFetching(query) {
+    const obj = GameAutocompleteUtils;
+    const result = obj.normalizeGameAutocompleteQuery(query);
+    const hasItem = null != result && set.has(result);
+    return hasItem;
   }
-  return hasItem;
-};
-prototype["getGameById"] = function getGameById(item) {
-  return navigation2.peek(item);
-};
+  getGameById(item) {
+    return navigation2.peek(item);
+  }
+}
+const prototype = GameAutocompleteStore.prototype;
 GameAutocompleteStore.displayName = "GameAutocompleteStore";
-const gameAutocompleteStore = new GameAutocompleteStore(DispatcherDefault, {
+let obj = {
   LOGOUT: function handleLogout() {
     navigation.reset();
-    set = new Set();
+    new Set();
     navigation2.reset();
   },
   GAME_AUTOCOMPLETE_FETCH: function handleFetch(query) {
     set.add(query.query);
   },
   GAME_AUTOCOMPLETE_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
+    let query;
+    let results;
     ({ query, results } = arg0);
     set.delete(query);
     const result = navigation.set(query, results);
@@ -94,8 +95,8 @@ const gameAutocompleteStore = new GameAutocompleteStore(DispatcherDefault, {
   GAME_AUTOCOMPLETE_FETCH_FAILURE: function handleFetchFailure(query) {
     set.delete(query.query);
   }
-});
-const size = fn(2);
+};
+const gameAutocompleteStore = new GameAutocompleteStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteStore.tsx");
 
 export default gameAutocompleteStore;

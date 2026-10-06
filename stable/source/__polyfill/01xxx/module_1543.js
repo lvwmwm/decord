@@ -1,27 +1,52 @@
 // Module ID: 1543
 // Function ID: 1544
-// Dependencies: []
+// Dependencies: [32, 109, 19, 1544]
+// Exports: useRouteCache
 
 // Module 1543
+import _mod1544 from "module_1544" /* 1544 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
 
-export default (str, str2) => {
-  if (typeof str === "string") {
-    if (typeof str2 === "string") {
-      if ("" === str2) {
-        const items = [str];
-        return items;
-      } else {
-        const index = str.indexOf(str2);
-        if (-1 === index) {
-          const items1 = [str];
-          let items2 = items1;
-        } else {
-          items2 = [str.slice(0, index), str.slice(index + str2.length)];
-        }
-        return items2;
+let map;
+
+let closure_2 = ["state"];
+const SymbolResult = Symbol("CHILD_STATE");
+const hasOwnProperty = SymbolResult;
+
+export const CHILD_STATE = SymbolResult;
+export const useRouteCache = function useRouteCache(routes) {
+  const ref = react.useMemo(() => {
+    const obj = { current: new Map() };
+    new Map();
+    return obj;
+  }, []);
+  const reduce = routes.reduce;
+  map = new Map();
+  const reduced = reduce((set, key) => {
+    const current = ref.current;
+    const value = current.get(key.key);
+    const state = key.state;
+    const tmp2 = _objectWithoutProperties(key, closure_2);
+    let tmp3 = tmp2;
+    if (value) {
+      tmp3 = tmp2;
+      const obj = _mod1544;
+      if (obj.isRecordEqual(value, tmp2)) {
+        tmp3 = value;
       }
     }
-  }
-  const typeError = new TypeError("Expected the arguments to be of type `string`");
-  throw typeError;
+    if (tmp3[hasOwnProperty] !== state) {
+      const _Object = Object;
+      const obj2 = { enumerable: false, configurable: true, value: state };
+      Object.defineProperty(tmp3, tmp6, obj2);
+    }
+    const result = set.set(key.key, tmp3);
+    return set;
+  }, map);
+  const insertionEffect = react.useInsertionEffect(() => {
+    ref.current = reduced;
+  });
+  return Array.from(reduced.values());
 };

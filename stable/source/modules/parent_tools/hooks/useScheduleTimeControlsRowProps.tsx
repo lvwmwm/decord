@@ -1,42 +1,137 @@
-// Module ID: 15191
-// Function ID: 15192
+// Module ID: 14434
+// Function ID: 14435
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 4784, 1115, 2482, 2]
-// Exports: default
+// Dependencies: [21, 558, 576, 4833, 1127, 2490, 2]
 
-// Module 15191 (useScheduleTimeControlsRowProps)
-import jsxProd from "jsxProd" /* 21 */;
-import util from "util" /* 1115 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import Text_Text from "Text/Text" /* 4784 */;
+// Module 14434 (useScheduleTimeControlsRowProps)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import intl4 from "intl" /* 1127 */;
+import _modDef2490 from "module_2490" /* 2490 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
-const result = size.fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");
-
-export default function useScheduleTimeControlsRowProps(arr) {
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  let intl3;
+  const obj = react;
+  const cResult = obj.c(13);
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "Array" };
-    const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
-    const intl = util.intl;
-    obj3.children = intl.string(_modDef2482.fOBIZH);
-    obj2.subLabel = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: null });
+    let first;
+    const _Symbol2 = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { subLabel: null, trailing: "y" };
+      ({ variant: "text-xs/medium", color: "text-muted", children: intl3.string(_modDef2490.fOBIZH) });
+      const Text = tmp(4833).Text;
+      intl3 = tmp(1127).intl;
+      cResult[0] = obj2;
+      first = obj2;
+    } else {
+      first = cResult[0];
+    }
+    return first;
+  } else {
+    let tmp4;
+    let tmp8;
+    let tmp11;
+    let tmp15;
+    if (cResult[1] !== arr) {
+      let tmp6;
+      const _Symbol = Symbol;
+      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+        const fn = function s(enabled) {
+          return enabled.enabled;
+        };
+        cResult[3] = fn;
+        tmp6 = fn;
+      } else {
+        tmp6 = cResult[3];
+      }
+      const someResult = arr.some(tmp6);
+      cResult[1] = arr;
+      cResult[2] = someResult;
+      tmp4 = someResult;
+    } else {
+      tmp4 = cResult[2];
+    }
+    if (cResult[4] !== arr.length) {
+      const intl = tmp(1127).intl;
+      const obj4 = { count: arr.length };
+      const formatToPlainStringResult = intl.formatToPlainString(_modDef2490.XfwcpX, obj4);
+      cResult[4] = arr.length;
+      cResult[5] = formatToPlainStringResult;
+      tmp8 = formatToPlainStringResult;
+    } else {
+      tmp8 = cResult[5];
+    }
+    if (cResult[6] !== tmp4) {
+      let stringResult;
+      const intl2 = tmp(1127).intl;
+      const string = intl2.string;
+      const tmp13 = _modDef2490;
+      if (tmp4) {
+        stringResult = string(tmp13["8vDHRq"]);
+      } else {
+        stringResult = string(tmp13["4z9fN+"]);
+      }
+      cResult[6] = tmp4;
+      cResult[7] = stringResult;
+      tmp11 = stringResult;
+    } else {
+      tmp11 = cResult[7];
+    }
+    if (cResult[8] !== tmp11) {
+      const tmp17 = jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: tmp11 });
+      cResult[8] = tmp11;
+      cResult[9] = tmp17;
+      tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[9];
+    }
+    if (cResult[10] === tmp8) {
+      let tmp18;
+      if (cResult[11] === tmp15) {
+        tmp18 = cResult[12];
+      }
+      return tmp18;
+    }
+    const obj6 = { subLabel: tmp8, trailing: tmp15 };
+    cResult[10] = tmp8;
+    cResult[11] = tmp15;
+    cResult[12] = obj6;
+    tmp18 = obj6;
+  }
+}) : ((arr) => {
+  let Text2;
+  let intl;
+  let intl2;
+  let obj5;
+  let tmp10;
+  if (0 === arr.length) {
+    const obj2 = { subLabel: null, trailing: "y" };
+    ({ variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef2490.fOBIZH) });
+    const Text = Text_Text.Text;
+    intl = intl4.intl;
     return obj2;
   } else {
-    const obj4 = { subLabel: null, trailing: null };
-    const intl2 = util.intl;
-    const obj5 = { count: arr.length };
-    obj4.subLabel = intl2.formatToPlainString(_modDef2482.XfwcpX, obj5);
-    const intl3 = util.intl;
+    const obj4 = { subLabel: intl2.formatToPlainString(_modDef2490.XfwcpX, obj5), trailing: tmp10(Text2, obj) };
+    const someResult = arr.some((enabled) => enabled.enabled);
+    intl2 = intl4.intl;
+    obj5 = { count: arr.length };
+    Text2 = Text_Text.Text;
+    const intl3 = intl4.intl;
     const string = intl3.string;
-    const tmp11 = _modDef2482;
+    const tmp11 = _modDef2490;
+    tmp10 = jsx;
     if (someResult) {
       let stringResult = string(tmp11["8vDHRq"]);
     } else {
       stringResult = string(tmp11["4z9fN+"]);
     }
-    const obj = { variant: "text-sm/medium", color: "text-muted", children: stringResult };
-    obj4.trailing = jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: stringResult });
     return obj4;
   }
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");
+
+export default tmp2;

@@ -1,9 +1,16 @@
 // Module ID: 5294
 // Function ID: 5295
-// Dependencies: [1121]
+// Dependencies: [5295]
 
 // Module 5294
-import registerAsset from "module_1121" /* 1121 */;
+import _mod5295 from "module_5295" /* 5295 */;
 
+const _modDef5295 = _mod5295;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "50398ad483a7c69d1d35b3cb9c9b7bde", name: "ForumSpoilerIcon", type: "png" });
+for (const key10016 in _mod5295) {
+  exports[key10016] = _mod5295[key10016];
+  continue;
+}
+
+export default _modDef5295;
+export const LinearGradient = _modDef5295;

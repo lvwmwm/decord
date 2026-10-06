@@ -1,23 +1,50 @@
-// Module ID: 16513
-// Function ID: 16514
+// Module ID: 15802
+// Function ID: 15803
 // Name: GuildPowerupsBoostToUnlockCoachmark
-// Dependencies: [19, 12778, 16514, 2]
-// Exports: default
+// Dependencies: [19, 558, 576, 11899, 15803, 2]
 
-// Module 16513 (GuildPowerupsBoostToUnlockCoachmark)
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12778 */;
-import noop from "module_19" /* 19 */;
+// Module 15802 (GuildPowerupsBoostToUnlockCoachmark)
+import react2 from "react" /* 576 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 15803 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostToUnlockCoachmark.tsx");
-
-export default function GuildPowerupsBoostToUnlockCoachmark(powerup) {
+let tmp;
+const GuildPowerupsNotification = tmp(11899);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let markAsDismissed;
+  let powerup;
+  const obj = react2;
+  const cResult = obj.c(3);
+  ({ powerup, markAsDismissed } = arg0);
+  if (cResult[0] === markAsDismissed) {
+    let tmp6;
+    if (cResult[1] === powerup) {
+      tmp6 = cResult[2];
+    }
+    useGuildPowerupsCoachmarkDefault(tmp5, tmp4, tmp6);
+    return null;
+  }
+  const obj2 = { type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed };
+  cResult[0] = markAsDismissed;
+  cResult[1] = powerup;
+  cResult[2] = obj2;
+  tmp6 = obj2;
+}) : ((powerup) => {
+  let guildId;
+  let targetRef;
   powerup = powerup.powerup;
   const markAsDismissed = powerup.markAsDismissed;
   const items = [powerup, markAsDismissed];
   ({ guildId, targetRef } = powerup);
-  const memo = noop.useMemo(() => ({ type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed }), items);
-  markAsDismissed(16514)(targetRef, guildId, memo);
+  const memo = react.useMemo(() => {
+    const obj = { type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed };
+    return obj;
+  }, items);
+  markAsDismissed(15803)(targetRef, guildId, memo);
   return null;
-};
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostToUnlockCoachmark.tsx");
+
+export default tmp2;

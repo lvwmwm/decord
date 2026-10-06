@@ -1,18 +1,18 @@
-// Module ID: 4695
-// Function ID: 4696
+// Module ID: 4744
+// Function ID: 4745
 // Name: UploadVoiceDebugLogsError
-// Dependencies: [1115, 2]
+// Dependencies: [1127, 2]
 
-// Module 4695 (UploadVoiceDebugLogsError)
+// Module 4744 (UploadVoiceDebugLogsError)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const UploadErrorCodes = { GENERAL: 0, [0]: "GENERAL", NO_FILE: 1, [1]: "NO_FILE", PROGRESS: 2, [2]: "PROGRESS", UPLOAD: 3, [3]: "UPLOAD", READ: 4, [4]: "READ" };
 class UploadVoiceDebugLogsError {
-  constructor(arg0) {
-    obj = Object.create(new.target.prototype);
-    obj.code = global;
+  constructor(PROGRESS) {
+    const obj = Object.create(new.target.prototype);
+    obj.code = PROGRESS;
     return obj;
   }
 }
@@ -20,21 +20,21 @@ Object.defineProperty(UploadVoiceDebugLogsError.prototype, "displayMessage", {
   get: function displayMessage() {
     const code = this.code;
     if (obj.NO_FILE === code) {
-      const intl5 = require("util").intl;
-      return intl5.string(require("util").t.dDMp2Z);
-    } else if (tmp.PROGRESS === code) {
-      const intl4 = require("util").intl;
-      return intl4.string(require("util").t.XBxyvo);
-    } else if (tmp.UPLOAD === code) {
-      const intl3 = require("util").intl;
-      return intl3.string(require("util").t["6b6rwk"]);
-    } else if (tmp.READ === code) {
-      const intl2 = require("util").intl;
-      return intl2.string(require("util").t.VUc3ti);
+      const intl5 = require("intl").intl;
+      return intl5.string(require("intl").t.dDMp2Z);
+    } else if (obj.PROGRESS === code) {
+      const intl4 = require("intl").intl;
+      return intl4.string(require("intl").t.XBxyvo);
+    } else if (obj.UPLOAD === code) {
+      const intl3 = require("intl").intl;
+      return intl3.string(require("intl").t["6b6rwk"]);
+    } else if (obj.READ === code) {
+      const intl2 = require("intl").intl;
+      return intl2.string(require("intl").t.VUc3ti);
     } else {
       const GENERAL = tmp.GENERAL;
-      const intl = require("util").intl;
-      return intl.string(require("util").t.VzHcSm);
+      const intl = require("intl").intl;
+      return intl.string(require("intl").t.VzHcSm);
     }
   },
   set: undefined

@@ -1,43 +1,56 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 14315
+// Function ID: 14316
 // Name: AccountRemove2faSetting
-// Dependencies: [8265, 15073, 5140, 1115, 14986, 11754, 14987, 2]
+// Dependencies: [7421, 558, 14316, 5204, 1127, 14229, 10874, 14230, 2]
 
-// Module 15072 (AccountRemove2faSetting)
-import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14986 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14987 */;
-import account_MFAUtils from "account/MFAUtils" /* 15073 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14315 (AccountRemove2faSetting)
+import intl4 from "intl" /* 1127 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14229 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14230 */;
+import account_MFAUtils from "account/MFAUtils" /* 14316 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const pressable = SettingBuilders.createPressable({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["D+aE7g"]);
+    const intl = intl4.intl;
+    return intl.string(intl4.t["D+aE7g"]);
   },
-  parent: SettingsConstants.MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   onPress: function remove2FA() {
-    const obj2 = { title: null, body: null, cancelText: null, onConfirm: null };
-    const intl = util.intl;
-    obj2.title = intl.string(util.t["D+aE7g"]);
-    const intl2 = util.intl;
-    obj2.body = intl2.string(util.t.EA4ZEk);
-    const intl3 = util.intl;
-    obj2.cancelText = intl3.string(util.t["ETE/oC"]);
-    obj2.onConfirm = function onConfirm() {
-      return MFAActionCreatorsDefault.disable();
+    let intl;
+    let intl2;
+    let intl3;
+    let obj = {
+      title: intl.string(intl4.t["D+aE7g"]),
+      body: intl2.string(intl4.t.EA4ZEk),
+      cancelText: intl3.string(intl4.t["ETE/oC"]),
+      onConfirm() {
+        const obj = MFAActionCreatorsDefault;
+        return obj.disable();
+      }
     };
-    AlertActionCreatorsDefault.show(obj2);
+    const show = AlertActionCreatorsDefault.show;
+    AlertActionCreatorsDefault;
+    intl = intl4.intl;
+    intl2 = intl4.intl;
+    intl3 = intl4.intl;
+    show(obj);
   },
-  useIsDisabled() {
-    return null !== account_MFAUtils.use2FARemoveDisableReason();
+  useIsDisabled: () => {
+    const obj = account_MFAUtils;
+    return null !== obj.use2FARemoveDisableReason();
   },
   useDescription: account_MFAUtils.use2FARemoveDisableReason,
   usePredicate: SettingsAccountUtils.useIsTOTPEnabled
-});
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountRemove2faSetting.tsx");
+};
+const pressable = SettingBuilders.createPressable(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/AccountRemove2faSetting.tsx");
 
 export default pressable;

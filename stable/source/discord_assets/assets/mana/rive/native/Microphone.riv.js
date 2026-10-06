@@ -1,8 +1,8 @@
-// Module ID: 4595
-// Function ID: 4596
+// Module ID: 4639
+// Function ID: 4640
 // Dependencies: [2]
 
-// Module 4595
+// Module 4639
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/Microphone.riv.js");

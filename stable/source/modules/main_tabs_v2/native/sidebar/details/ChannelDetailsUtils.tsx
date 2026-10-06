@@ -1,24 +1,25 @@
-// Module ID: 11892
-// Function ID: 11893
+// Module ID: 10975
+// Function ID: 10976
 // Name: ChannelDetailsUtils
-// Dependencies: [11209, 1095, 2]
+// Dependencies: [10419, 1107, 2]
 // Exports: getChannelDetailsButtons, navigateToChannelDetailsScreen
 
-// Module 11892 (ChannelDetailsUtils)
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11209 */;
+// Module 10975 (ChannelDetailsUtils)
+import ChannelTypes from "ChannelTypes" /* 1107 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10419 */;
 import size from "module_2" /* 2 */;
 
 const ChannelDetailsButtonTypes = ChannelDetailsConstants.ChannelDetailsButtonTypes;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsUtils.tsx");
 
 export const getChannelDetailsButtons = function getChannelDetailsButtons(channel, stateFromStores) {
+  let items;
   let flag = stateFromStores;
   if (stateFromStores === undefined) {
     flag = false;
   }
   if (channel.type === ChannelTypes.ChannelTypes.GUILD_DIRECTORY) {
-    let items = [];
+    items = [];
   } else {
     items = [, , ];
     ({ SEARCH: arr[0], MUTE: arr[1], SETTINGS: arr[2] } = ChannelDetailsButtonTypes);
@@ -29,6 +30,7 @@ export const getChannelDetailsButtons = function getChannelDetailsButtons(channe
   }
   return found;
 };
-export const navigateToChannelDetailsScreen = function navigateToChannelDetailsScreen(navigate, PERMISSIONS, channelId, source) {
-  navigate.navigate("sidebar", { screen: PERMISSIONS, channelId, source });
+export const navigateToChannelDetailsScreen = function navigateToChannelDetailsScreen(navigation, PERMISSIONS, channelId, source) {
+  const obj = { screen: PERMISSIONS, channelId, source };
+  navigation.navigate("sidebar", obj);
 };

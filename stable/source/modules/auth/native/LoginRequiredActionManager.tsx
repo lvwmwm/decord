@@ -1,53 +1,58 @@
-// Module ID: 17824
-// Function ID: 17825
+// Module ID: 17183
+// Function ID: 17184
 // Name: LoginRequiredActionManager
-// Dependencies: [1372, 2034, 1074, 7395, 7656, 6866, 2]
+// Dependencies: [1378, 2042, 1086, 6540, 6801, 6005, 2]
 
-// Module 17824 (LoginRequiredActionManager)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
-import UserStore from "UserStore" /* 1372 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2034 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 17183 (LoginRequiredActionManager)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import UserStore from "UserStore" /* 1378 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2042 */;
+import Constants from "Constants" /* 1086 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const Constants = fn(1074);
-({ LoginRequiredActions: hasOwnProperty, Routes: metroRequire, UserSettingsSections: closure_7 } = Constants);
-class LoginRequiredActionManager extends tmp3 {
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ LoginRequiredActions: hasOwnProperty, Routes: metroRequire, UserSettingsSections: metroImportDefault } = Constants);
+class LoginRequiredActionManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.handleConnectionOpen };
     return applyArgumentsResult;
   }
-}
-LoginRequiredActionManager.prototype["handleConnectionOpen"] = function handleConnectionOpen() {
-  const currentUser = UserStore.getCurrentUser();
-  if (null != currentUser) {
-    let items = [constants.UPDATE_PASSWORD];
-    const result = LoginRequiredActionStore.wasLoginAttemptedInSession(currentUser.id);
-    const result1 = LoginRequiredActionStore.requiredActionsIncludes(currentUser.id, items);
-    if (result) {
-      if (result1) {
-        const obj3 = {
-          screen: constants3.ACCOUNT_CHANGE_PASSWORD,
-          params: { isLoginRequiredAction: true },
-          onClose() {
-                  const items = [constants.UPDATE_PASSWORD];
-                  if (LoginRequiredActionStore.requiredActionsIncludes(currentUser.id, items)) {
-                    AuthenticationActionCreatorsDefault.logout("login_required_account_manager", constants2.LOGIN);
+  handleConnectionOpen() {
+    const currentUser = UserStore.getCurrentUser();
+    if (null != currentUser) {
+      let items = [constants.UPDATE_PASSWORD];
+      const result = LoginRequiredActionStore.wasLoginAttemptedInSession(currentUser.id);
+      const result1 = LoginRequiredActionStore.requiredActionsIncludes(currentUser.id, items);
+      if (result) {
+        if (result1) {
+          const obj3 = {
+            screen: constants3.ACCOUNT_CHANGE_PASSWORD,
+            params: { isLoginRequiredAction: true },
+            onClose() {
+                    const items = [hasOwnProperty.UPDATE_PASSWORD];
+                    if (LoginRequiredActionStore.requiredActionsIncludes(currentUser.id, items)) {
+                      const obj = AuthenticationActionCreatorsDefault;
+                      obj.logout("login_required_account_manager", metroRequire.LOGIN);
+                    }
                   }
-                }
-        };
-        currentUser(7656).openUserSettings(obj3);
-        const obj2 = currentUser(7656);
+          };
+          const obj2 = currentUser(6801);
+          obj2.openUserSettings(obj3);
+        }
+      }
+      if (result1) {
+        let obj = AuthenticationActionCreatorsDefault;
+        obj.logout("login_required_account_manager", constants2.LOGIN);
       }
     }
-    if (result1) {
-      AuthenticationActionCreatorsDefault.logout("login_required_account_manager", constants2.LOGIN);
-    }
   }
-};
+}
+const prototype = LoginRequiredActionManager.prototype;
 const loginRequiredActionManager = new LoginRequiredActionManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/auth/native/LoginRequiredActionManager.tsx");
 
 export default loginRequiredActionManager;

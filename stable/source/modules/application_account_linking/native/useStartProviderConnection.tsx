@@ -1,38 +1,179 @@
-// Module ID: 7457
-// Function ID: 7458
+// Module ID: 6602
+// Function ID: 6603
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 7458, 4483, 2]
-// Exports: useStartProviderConnection
+// Dependencies: [5, 19, 558, 576, 6603, 4528, 2]
 
-// Module 7457 (useStartProviderConnection)
-import LinkingDefault from "Linking" /* 4483 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+// Module 6602 (useStartProviderConnection)
+import LinkingDefault from "Linking" /* 4528 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let c5, c6;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/application_account_linking/native/useStartProviderConnection.tsx");
-
-export const useStartProviderConnection = function useStartProviderConnection(provider_id) {
-  const providerConnection = require("useProviderConnection").useProviderConnection(provider_id);
-  const startConnection = providerConnection.startConnection;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let canConnect;
+  let hasConnection;
+  let loading;
+  let startConnection;
+  let tmp3;
+  let obj = startConnection(576);
+  const cResult = obj.c(8);
+  let obj2 = startConnection(6603);
+  const providerConnection = obj2.useProviderConnection(arg0);
+  ({ loading, hasConnection, canConnect, startConnection } = providerConnection);
+  const account = providerConnection.account;
+  if (cResult[0] !== startConnection) {
+    const tmp4 = _asyncToGenerator;
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let obj5;
+      closure_0 = arg0;
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c4;
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_2 = tmp;
+              let closure_1 = tmp4;
+              closure_0 = undefined;
+              c5 = 1;
+              c6 = 1;
+              const obj4 = { value: closure_0(closure_0), done: false };
+              return obj4;
+            }
+          } else if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              closure_0 = value;
+              if (closure_0.success) {
+                if (null != closure_0.url) {
+                  c4 = 1;
+                  c5 = 3;
+                  c6 = 1;
+                  const obj7 = { value: obj5.openURL(closure_0.url), done: false };
+                  obj5 = LinkingDefault;
+                  return obj7;
+                }
+              }
+              c6 = 3;
+              const obj8 = { value: { success: false }, done: true };
+              return obj8;
+            }
+          } else if (2 === c5) {
+            c4 = 0;
+            c6 = 3;
+            const obj9 = { value: { success: false }, done: true };
+            return obj9;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            const obj10 = { value, done: true };
+            return obj10;
+          } else {
+            c4 = 0;
+            c6 = 3;
+            const obj = { value: { success: true }, done: true };
+            return obj;
+          }
+        } catch (tmp15) {
+          let closure_3 = tmp15;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp15;
+          } else {
+            c5 = 2;
+          }
+        }
+      }
+    });
+    const fn = function() {
+      return closure_0(...arguments);
+    };
+    cResult[0] = startConnection;
+    cResult[1] = fn;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  if (cResult[2] === account) {
+    if (cResult[3] === canConnect) {
+      if (cResult[4] === hasConnection) {
+        if (cResult[5] === loading) {
+          let tmp5;
+          if (cResult[6] === tmp3) {
+            tmp5 = cResult[7];
+          }
+          return tmp5;
+        }
+      }
+    }
+  }
+  let obj3 = { loading, hasConnection, canConnect, startConnection: tmp3, account };
+  cResult[2] = account;
+  cResult[3] = canConnect;
+  cResult[4] = hasConnection;
+  cResult[5] = loading;
+  cResult[6] = tmp3;
+  cResult[7] = obj3;
+  tmp5 = obj3;
+}) : ((arg0) => {
+  let account;
+  let canConnect;
+  let hasConnection;
+  let loading;
+  let startConnection;
+  let obj = startConnection(6603);
+  const providerConnection = obj.useProviderConnection(arg0);
+  startConnection = providerConnection.startConnection;
   ({ loading, hasConnection, canConnect, account } = providerConnection);
-  _require = asyncGeneratorStep(async (arg0, value) => {
+  const useCallback = react.useCallback;
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let obj5;
+    closure_0 = arg0;
     if (c6 === 2) {
       c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
+      let c4;
       try {
         c6 = 2;
         if (0 === c5) {
@@ -44,15 +185,15 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_2 = tmp3;
-            closure_1 = tmp7;
-            closure_129_0 = undefined;
+            let closure_2 = tmp;
+            let closure_1 = tmp4;
+            closure_0 = undefined;
             c5 = 1;
             c6 = 1;
             const obj4 = { value: closure_0(closure_0), done: false };
             return obj4;
           }
-        } else if (1 === tmp7) {
+        } else if (1 === c5) {
           if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -61,13 +202,14 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
             const obj6 = { value, done: true };
             return obj6;
           } else {
-            closure_129_0 = value;
-            if (closure_129_0.success) {
-              if (null != closure_129_0.url) {
+            closure_0 = value;
+            if (closure_0.success) {
+              if (null != closure_0.url) {
                 c4 = 1;
                 c5 = 3;
                 c6 = 1;
-                const obj7 = { value: LinkingDefault.openURL(closure_129_0.url), done: false };
+                const obj7 = { value: obj5.openURL(closure_0.url), done: false };
+                obj5 = LinkingDefault;
                 return obj7;
               }
             }
@@ -75,7 +217,7 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
             const obj8 = { value: { success: false }, done: true };
             return obj8;
           }
-        } else if (2 === tmp7) {
+        } else if (2 === c5) {
           c4 = 0;
           c6 = 3;
           const obj9 = { value: { success: false }, done: true };
@@ -94,33 +236,29 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
           const obj = { value: { success: true }, done: true };
           return obj;
         }
-      } catch (tmp18) {
-        closure_3 = tmp18;
-        if (tmp4 === c4) {
-          c6 = tmp2;
-          throw tmp18;
+      } catch (tmp15) {
+        let closure_3 = tmp15;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp15;
         } else {
-          c5 = tmp;
+          c5 = 2;
         }
       }
     }
   });
   const items = [startConnection];
-  let obj = require("useProviderConnection");
-  return {
+  let obj2 = {
     loading,
     hasConnection,
     canConnect,
-    startConnection: noop.useCallback(function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+    startConnection: useCallback(function() {
+      return closure_0(...arguments);
     }, items),
     account
   };
-};
+  return obj2;
+});
+const result = size.fileFinishedImporting("modules/application_account_linking/native/useStartProviderConnection.tsx");
+
+export const useStartProviderConnection = tmp2;

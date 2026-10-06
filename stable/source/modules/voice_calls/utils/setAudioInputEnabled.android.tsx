@@ -1,15 +1,16 @@
-// Module ID: 17744
-// Function ID: 17745
-// Name: setAudioInputEnabled
-// Dependencies: [1997, 2]
+// Module ID: 17103
+// Function ID: 17104
+// Name: react-native
+// Dependencies: [2004, 2]
 // Exports: default
 
-// Module 17744 (setAudioInputEnabled)
-import NativeMediaEngineModuleDefault from "NativeMediaEngineModule" /* 1997 */;
+// Module 17103 (react-native)
+import react_nativeDefault from "react-native" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_calls/utils/setAudioInputEnabled.android.tsx");
 
 export default function setAudioInputEnabled(arg0) {
-  NativeMediaEngineModuleDefault.setAudioInputEnabled(arg0);
+  const obj = react_nativeDefault;
+  obj.setAudioInputEnabled(arg0);
 };

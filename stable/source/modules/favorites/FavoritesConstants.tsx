@@ -1,14 +1,16 @@
-// Module ID: 2054
-// Function ID: 2055
+// Module ID: 2064
+// Function ID: 2065
 // Name: FavoritesConstants
-// Dependencies: [2055, 2]
+// Dependencies: [2065, 2]
 
-// Module 2054 (FavoritesConstants)
-import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+// Module 2064 (FavoritesConstants)
+import GuildRecordUtils from "GuildRecordUtils" /* 2065 */;
 import size from "module_2" /* 2 */;
 
+const constructFromPartialGuildRecord = GuildRecordUtils.constructFromPartialGuildRecord;
 const obj = { id: "373", name: "Favorites", description: "The place for all your favorite channels!", joinedAt: new Date(), maxMembers: 500000 };
-const result = GuildRecordUtils.constructFromPartialGuildRecord(obj);
+new Date();
+const result = constructFromPartialGuildRecord(obj);
 const result1 = size.fileFinishedImporting("modules/favorites/FavoritesConstants.tsx");
 
 export const FAVORITES_RAW_GUILD_ID = "373";

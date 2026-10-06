@@ -1,11 +1,12 @@
-// Module ID: 1094
-// Function ID: 1095
+// Module ID: 1106
+// Function ID: 1107
 // Name: ConstantsIOS
 // Dependencies: [2]
 
-// Module 1094 (ConstantsIOS)
+// Module 1106 (ConstantsIOS)
 import size from "module_2" /* 2 */;
 
+const set = new Set(["token", "fingerprint"]);
 const frozen = Object.freeze({ START: { x: 0, y: 0 }, END: { x: 1, y: 0 } });
 const frozen1 = Object.freeze({ START: { x: 0, y: 0 }, END: { x: 0, y: 1 } });
 const result = size.fileFinishedImporting("ConstantsIOS.tsx");
@@ -33,7 +34,7 @@ export const ActivityPartyApplicationNames = { spotify: "Spotify" };
 export const CACHE_STORE_LAZY_KEY = "CacheStoreLazy";
 export const CACHE_STORE_CHANNELS_LAZY_KEY = "CacheStoreChannelsLazy";
 export const CACHE_STORE_KEY = "CacheStore";
-export const STORAGE_SECURE_KEYS = new Set(["token", "fingerprint"]);
+export const STORAGE_SECURE_KEYS = set;
 export const MAX_INVITE_AVATARS_TO_SHOW = 6;
 export const INVITE_EMBED_AVATAR_SIZE = 50;
 export const UPLOAD_BANNER_SIZE = { width: 1080, height: 432 };

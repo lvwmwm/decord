@@ -1,18 +1,42 @@
-// Module ID: 8956
-// Function ID: 8957
+// Module ID: 8103
+// Function ID: 8104
 // Name: useIsInAdultAgeGroup
-// Dependencies: [7811, 504, 2]
-// Exports: default
+// Dependencies: [6961, 558, 576, 504, 2]
 
-// Module 8956 (useIsInAdultAgeGroup)
-import initialize from "initialize" /* 504 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
+// Module 8103 (useIsInAdultAgeGroup)
+import react from "react" /* 576 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let tmp;
+const get_initialized = tmp(504);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let ageGroup;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [FamilyCenterStore];
+    const fn = function u() {
+      return ageGroup.getAgeGroup();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return "adult" === tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let ageGroup;
+  const items = [FamilyCenterStore];
+  const obj = get_initialized;
+  return "adult" === obj.useStateFromStores(items, () => ageGroup.getAgeGroup());
+});
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useIsInAdultAgeGroup.tsx");
 
-export default function useIsInAdultAgeGroup() {
-  const items = [FamilyCenterStore];
-  return "adult" === initialize.useStateFromStores(items, () => ageGroup.getAgeGroup());
-};
+export default tmp2;

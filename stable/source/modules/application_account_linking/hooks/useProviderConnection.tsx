@@ -1,53 +1,59 @@
-// Module ID: 7458
-// Function ID: 7459
+// Module ID: 6603
+// Function ID: 6604
 // Name: useProviderConnection
-// Dependencies: [5, 19, 5530, 504, 5655, 2]
+// Dependencies: [5, 19, 5594, 504, 5719, 2]
 // Exports: useProviderConnection
 
-// Module 7458 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5655 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
+// Module 6603 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5719 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c3, c6, closure_0;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
 
-export const useProviderConnection = function useProviderConnection(provider_id) {
-  _require = provider_id;
+export const useProviderConnection = function useProviderConnection(arg0) {
+  let fetching;
+  _require = arg0;
+  let obj = require("get initialized");
   const items = [ConnectedAccountsStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let account = null;
     if (null != closure_0) {
       account = ConnectedAccountsStore.getAccount(null, tmp);
     }
     return account;
   });
-  const obj = require("initialize");
+  let obj2 = require("get initialized");
   const items1 = [ConnectedAccountsStore];
   let tmp3 = null != stateFromStores;
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => fetching.isFetching());
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => fetching.isFetching());
   if (tmp3) {
     tmp3 = !stateFromStores.revoked;
   }
-  _require = asyncGeneratorStep(async (arg0, value) => {
+  const useCallback = react.useCallback;
+  _require = _asyncToGenerator(async (arg0, value) => {
+    closure_0 = arg0;
     if (c6 === 2) {
       c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        const obj = { value, done: true };
+        return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
+      let c5;
       try {
+        let authorize;
         c6 = 2;
         if (0 === c3) {
           if (arg0 === 1) {
@@ -55,81 +61,80 @@ export const useProviderConnection = function useProviderConnection(provider_id)
             throw value;
           } else if (arg0 === 2) {
             c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj2 = { value, done: true };
+            return obj2;
           } else {
-            closure_2 = tmp4;
-            closure_130_0 = undefined;
+            closure_0 = undefined;
             if (null == closure_0) {
               c6 = 3;
-              const obj4 = { value: { success: false }, done: true };
-              return obj4;
+              const obj3 = { value: { success: false }, done: true };
+              return obj3;
             } else {
               c5 = 1;
-              let _location = tmp26;
-              if (tmp26 == null) {
+              authorize = ConnectedAccountsActionCreatorsDefault.authorize;
+              let _location = tmp21;
+              if (closure_0 == null) {
                 _location = "Account Linking";
               }
-              const obj6 = { location: _location };
+              const obj4 = { location: _location };
+              authorize = authorize(tmp22, obj4);
               c3 = 2;
               c6 = 1;
-              const obj7 = { value: ConnectedAccountsActionCreatorsDefault.authorize(tmp27, obj6), done: false };
-              return obj7;
+              const obj5 = { value: authorize, done: false };
+              return obj5;
             }
           }
-        } else if (1 === tmp7) {
+        } else if (1 === tmp3) {
           c5 = 0;
           c6 = 3;
-          const obj8 = { value: { success: false }, done: true };
-          return obj8;
+          const obj6 = { value: { success: false }, done: true };
+          return obj6;
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
         } else if (arg0 === 2) {
           c5 = 0;
           c6 = 3;
-          const obj9 = { value, done: true };
-          return obj9;
+          const obj7 = { value, done: true };
+          return obj7;
         } else {
-          closure_130_0 = value;
-          const body = closure_130_0.body;
+          closure_0 = value;
+          authorize = closure_0.body;
           let url;
-          if (body != null) {
-            url = body.url;
+          if (authorize != null) {
+            url = authorize.url;
           }
           if (null != url) {
-            const obj10 = { success: true, url: closure_130_0.body.url };
+            const obj8 = { success: true, url: closure_0.body.url };
+            authorize = obj8;
+          } else {
+            authorize = { success: false };
           }
           c5 = 0;
           c6 = 3;
+          const obj9 = { value: authorize, done: true };
+          return obj9;
         }
-      } catch (tmp18) {
-        closure_4 = tmp18;
-        if (tmp3 === c5) {
-          c6 = tmp2;
-          throw tmp18;
+      } catch (tmp14) {
+        let closure_4 = tmp14;
+        if (0 === c5) {
+          c6 = 3;
+          throw tmp14;
         } else {
-          c3 = tmp;
+          c3 = 1;
         }
       }
     }
   });
-  const items2 = [provider_id];
-  let obj2 = require("initialize");
-  return {
+  const items2 = [arg0];
+  let obj3 = {
     loading: stateFromStores1,
     hasConnection: tmp3,
-    canConnect: null != provider_id,
-    startConnection: noop.useCallback(function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+    canConnect: null != arg0,
+    startConnection: useCallback(function() {
+      return closure_0(...arguments);
     }, items2),
     account: stateFromStores
   };
+  return obj3;
 };

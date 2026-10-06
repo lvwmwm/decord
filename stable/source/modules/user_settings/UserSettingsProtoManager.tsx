@@ -1,47 +1,55 @@
-// Module ID: 14765
-// Function ID: 14766
+// Module ID: 14017
+// Function ID: 14018
 // Name: UserSettingsProtoManager
-// Dependencies: [1220, 1084, 1224, 14766, 14767, 573, 12, 2024, 2]
+// Dependencies: [1232, 1096, 1236, 14018, 14019, 585, 12, 2032, 2]
 
-// Module 14765 (UserSettingsProtoManager)
+// Module 14017 (UserSettingsProtoManager)
 import _modDef12 from "module_12" /* 12 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1224 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2024 */;
-import PreloadedUserSettingsMigrationsDefault from "PreloadedUserSettingsMigrations" /* 14766 */;
-import FrecencySettingsMigrationsDefault from "FrecencySettingsMigrations" /* 14767 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1236 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2032 */;
+import PreloadedUserSettingsMigrationsDefault from "PreloadedUserSettingsMigrations" /* 14018 */;
+import FrecencySettingsMigrationsDefault from "FrecencySettingsMigrations" /* 14019 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function handleConnectionOpen() {
   const fullState = UserSettingsProtoStore.getFullState();
-  if (fullState[UserSettingsTypes.PRELOADED_USER_SETTINGS].editInfo.triggeredMigrations) {
+  let tmp2 = fullState[UserSettingsTypes.PRELOADED_USER_SETTINGS];
+  if (tmp2.editInfo.triggeredMigrations) {
     const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
     let result = PreloadedUserSettingsActionCreators.markDirtyFromMigration(tmp2.proto, tmp2.editInfo.cleanupFuncs);
   }
-  const item = _modDef12.forEach(UserSettingsProtoActionCreators.UserSettingsActionCreatorsByType, (scheduleSaveFromOfflineEdit, arg1) => {
+  const arr = _modDef12;
+  const item = arr.forEach(UserSettingsProtoActionCreators.UserSettingsActionCreatorsByType, (scheduleSaveFromOfflineEdit, arg1) => {
     const tmp = fullState[Number(undefined, arg1)];
+    const tmp2 = null != tmp.editInfo.offlineEditDataVersion && null != tmp.editInfo.protoToSave;
     if (tmp2) {
       const result = scheduleSaveFromOfflineEdit.scheduleSaveFromOfflineEdit();
     }
   });
 }
 function handleUserSettingsProtoEnqueueUpdate(settings) {
+  let delaySeconds;
+  let jitter;
+  let proto;
+  let type;
   ({ proto, type } = settings.settings);
   ({ delaySeconds, jitter } = settings);
-  UserSettingsProtoActionCreators.UserSettingsActionCreatorsByType[type].markDirty(proto, { delaySeconds, jitter });
+  const obj = UserSettingsProtoActionCreators.UserSettingsActionCreatorsByType[type];
+  obj.markDirty(proto, { delaySeconds, jitter });
 }
 function handleUserSettingsProtoLoadIfNecessary(arg0) {
-  const ifNecessary = UserSettingsProtoActionCreators.UserSettingsActionCreatorsByType[arg0.settingsType].loadIfNecessary();
+  const obj = UserSettingsProtoActionCreators.UserSettingsActionCreatorsByType[arg0.settingsType];
+  const ifNecessary = obj.loadIfNecessary();
 }
 function handleAppStateUpdate(state) {
   state = state.state;
-  let tmp = "inactive" !== state;
-  if (tmp) {
-    tmp = "background" !== state;
-  }
+  const tmp = "inactive" !== state && "background" !== state;
   if (!tmp) {
-    const item = _modDef12.forEach(UserSettingsProtoActionCreators.UserSettingsActionCreatorsByType, (persistChanges, arg1) => {
+    const arr = _modDef12;
+    const item = arr.forEach(UserSettingsProtoActionCreators.UserSettingsActionCreatorsByType, (persistChanges, arg1) => {
       fullState = fullState.getFullState();
       if (null != fullState[Number(undefined, arg1)].editInfo.timeout) {
         persistChanges.persistChanges();
@@ -49,17 +57,23 @@ function handleAppStateUpdate(state) {
     });
   }
 }
-const UserSettingsTypes = fn(1084).UserSettingsTypes;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/user_settings/UserSettingsProtoManager.tsx");
-
-export default {
+const UserSettingsTypes = UserSettingsConstants.UserSettingsTypes;
+let obj = {
   init() {
-    UserSettingsMigrationsByTypeDefault[UserSettingsTypes.PRELOADED_USER_SETTINGS] = PreloadedUserSettingsMigrationsDefault;
-    UserSettingsMigrationsByTypeDefault[UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS] = FrecencySettingsMigrationsDefault;
-    const subscription = DispatcherDefault.subscribe("CONNECTION_OPEN", handleConnectionOpen);
-    const subscription1 = DispatcherDefault.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", handleUserSettingsProtoEnqueueUpdate);
-    const subscription2 = DispatcherDefault.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", handleUserSettingsProtoLoadIfNecessary);
-    const subscription3 = DispatcherDefault.subscribe("APP_STATE_UPDATE", handleAppStateUpdate);
+    const tmp = UserSettingsMigrationsByTypeDefault;
+    tmp[UserSettingsTypes.PRELOADED_USER_SETTINGS] = PreloadedUserSettingsMigrationsDefault;
+    const tmp2 = UserSettingsMigrationsByTypeDefault;
+    tmp2[UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS] = FrecencySettingsMigrationsDefault;
+    const obj = DispatcherDefault;
+    const subscription = obj.subscribe("CONNECTION_OPEN", handleConnectionOpen);
+    const obj2 = DispatcherDefault;
+    const subscription1 = obj2.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", handleUserSettingsProtoEnqueueUpdate);
+    const obj3 = DispatcherDefault;
+    const subscription2 = obj3.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", handleUserSettingsProtoLoadIfNecessary);
+    const obj4 = DispatcherDefault;
+    const subscription3 = obj4.subscribe("APP_STATE_UPDATE", handleAppStateUpdate);
   }
 };
+let result = size.fileFinishedImporting("modules/user_settings/UserSettingsProtoManager.tsx");
+
+export default obj;

@@ -1,35 +1,135 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 6852
+// Function ID: 6853
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1374, 7706, 21, 4788, 7707, 7708, 4446, 5230, 1094, 5836, 7709, 7710, 7711, 7712, 9531, 11011, 9536, 2]
-// Exports: default
+// Dependencies: [19, 17, 1380, 6853, 21, 4837, 558, 576, 6854, 6855, 6856, 6857, 6858, 6859, 6860, 6861, 4491, 5896, 6862, 5292, 1106, 2]
 
-// Module 7705 (PremiumPlanActionSheetHeader)
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import PremiumUtils from "PremiumUtils" /* 4446 */;
-import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import noop from "module_19" /* 19 */;
+// Module 6852 (PremiumPlanActionSheetHeader)
+import react_native from "react-native" /* 17 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import PremiumUtils from "PremiumUtils" /* 4491 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import ColorConstants from "ColorConstants" /* 6853 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6854 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6855 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 6856 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 6857 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 6858 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 6859 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 6860 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 6861 */;
+import react from "react" /* 19 */;
+import PremiumConstants from "PremiumConstants" /* 1380 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
+let importDefault;
 
-require = fn;
-const View = fn(17).View;
-const PremiumConstants = fn(1374);
+let closure_4;
+let hasOwnProperty;
+let items;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+const View = react_native.View;
 ({ PremiumTypes: closure_4, SubscriptionIntervalTypes: hasOwnProperty } = PremiumConstants);
-const getPremiumGradientColor = fn(7706).getPremiumGradientColor;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { header: { height: 112, justifyContent: "center", alignItems: "center" }, logoContainer: { position: "absolute", top: 16, left: 16 }, imgWumpus: { position: "absolute", height: 90 }, imgWumpusRight: null, imgWumpusBottom: { bottom: 0 }, discountPill: { marginTop: 10 } };
-let obj3 = { transform: null };
-let items = [{ scaleX: -1 }];
-obj3.transform = items;
-obj2.imgWumpusRight = obj3;
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanActionSheetHeader.tsx");
-
-export default function PremiumPlanActionSheetHeader(arg0) {
+const getPremiumGradientColor = ColorConstants.getPremiumGradientColor;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { header: { height: 112, justifyContent: "center", alignItems: "center" }, logoContainer: { position: "absolute", top: 16, left: 16 }, imgWumpus: { position: "absolute", height: 90 }, imgWumpusRight: obj2, imgWumpusBottom: { bottom: 0 }, discountPill: { marginTop: 10 } };
+obj2 = { transform: items };
+items = [{ scaleX: -1 }];
+let closure_9 = createStyles.createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
+  let closure_1;
+  let discountOffer;
+  let trialOffer;
+  const obj = premiumType(576);
+  const cResult = obj.c(58);
+  premiumType = premiumType.premiumType;
+  ({ trialOffer, discountOffer } = premiumType);
+  const tmp2 = closure_9();
+  importDefault = tmp2;
+  if (cResult[0] !== premiumType) {
+    const fn = function o() {
+      if (React3.TIER_0 === premiumType) {
+        return AssetRegistryDefault;
+      } else if (React3.TIER_1 === premiumType) {
+        return AssetRegistryDefault2;
+      } else if (React3.TIER_2 === premiumType) {
+        return AssetRegistryDefault3;
+      }
+    };
+    cResult[0] = premiumType;
+    cResult[1] = fn;
+  }
+  if (cResult[2] !== premiumType) {
+    class P {
+      constructor() {
+        if (React3.TIER_0 === premiumType) {
+          return AssetRegistryDefault4;
+        } else if (React3.TIER_1 === premiumType) {
+          return AssetRegistryDefault5;
+        } else if (React3.TIER_2 === premiumType) {
+          return AssetRegistryDefault6;
+        }
+      }
+    }
+    cResult[2] = premiumType;
+    cResult[3] = P;
+  } else {
+    class P {
+      constructor() {
+        if (React3.TIER_0 === premiumType) {
+          return AssetRegistryDefault4;
+        } else if (React3.TIER_1 === premiumType) {
+          return AssetRegistryDefault5;
+        } else if (React3.TIER_2 === premiumType) {
+          return AssetRegistryDefault6;
+        }
+      }
+    }
+  }
+  if (cResult[4] === premiumType) {
+    class P {
+      constructor() {
+        if (React3.TIER_0 === premiumType) {
+          return AssetRegistryDefault4;
+        } else if (React3.TIER_1 === premiumType) {
+          return AssetRegistryDefault5;
+        } else if (React3.TIER_2 === premiumType) {
+          return AssetRegistryDefault6;
+        }
+      }
+    }
+  }
+  class E {
+    constructor() {
+      if (React3.TIER_0 !== premiumType) {
+        if (React3.TIER_1 !== premiumType) {
+          if (React3.TIER_2 === premiumType) {
+            return closure_1.imgWumpusRight;
+          }
+        }
+      }
+      return closure_1.imgWumpusBottom;
+    }
+  }
+  cResult[4] = premiumType;
+  cResult[5] = tmp2.imgWumpusBottom;
+  cResult[6] = tmp2.imgWumpusRight;
+  cResult[7] = E;
+}) : ((arg0) => {
+  let discountOffer;
+  let items1;
+  let premiumType;
+  let tmp13Result10;
+  let tmp13Result12;
+  let tmp17Result;
+  let tmp6Result;
+  let trialOffer;
   ({ premiumType, trialOffer, discountOffer } = arg0);
   const tmp = closure_9();
   let tmp2 = null != trialOffer;
@@ -39,7 +139,8 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     if (subscriptionTrial != null) {
       skuId = subscriptionTrial.skuId;
     }
-    tmp2 = skuId === PremiumUtilsDefault.getSkuIdForPremiumType(premiumType);
+    const obj = PremiumUtilsDefault;
+    tmp2 = skuId === obj.getSkuIdForPremiumType(premiumType);
   }
   PremiumUtils;
   let tmp10 = null != discountOffer;
@@ -52,82 +153,86 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     }
     tmp10 = hasItem;
   }
-  const obj2 = { style: tmp.header, colors: getPremiumGradientColor(premiumType), start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, accessible: true, accessibilityRole: "header", accessibilityLabel: null, children: null };
+  const obj2 = { style: tmp.header, colors: getPremiumGradientColor(premiumType), start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, accessible: true, accessibilityRole: "header", accessibilityLabel: tmp6Result.getPremiumTypeDisplayName(premiumType), children: null };
   const tmp14 = LinearGradientDefault;
-  obj2.accessibilityLabel = PremiumUtils.getPremiumTypeDisplayName(premiumType);
-  if (TIER_0.TIER_0 === premiumType) {
-    let tmp13Result = tmp13(7707);
+  tmp6Result = PremiumUtils;
+  if (React3.TIER_0 === premiumType) {
+    tmp17Result = tmp13(6860);
   } else {
-    tmp13Result = null;
-    if (tmp15.TIER_1 !== premiumType) {
-      if (tmp15.TIER_2 === premiumType) {
-        tmp13Result = tmp13(7708);
+    tmp17Result = null;
+    if (React3.TIER_1 !== premiumType) {
+      if (React3.TIER_2 === premiumType) {
+        tmp17Result = tmp13(6861);
       }
     }
   }
-  if (!tmp13Result) {
-    const items = [tmp13Result, , ];
-    const obj3 = { style: tmp.logoContainer, children: null };
-    if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result8 = tmp13(7709);
-    } else if (tmp15.TIER_1 === premiumType) {
-      tmp13Result8 = tmp13(7710);
-    } else if (tmp15.TIER_2 === premiumType) {
-      tmp13Result8 = tmp13(7711);
-    }
-    const obj4 = { source: tmp13Result8, resizeMode: "contain" };
-    const items1 = [React5(tmp13(5836), obj4), , ];
-    let tmp22Result = null;
-    if (tmp2) {
-      const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-      tmp22Result = tmp22(tmp6(7712).PremiumPill, obj5);
-    }
-    items1[1] = tmp22Result;
-    let tmp22Result2 = null;
-    if (tmp10) {
-      const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-      tmp22Result2 = tmp22(tmp6(7712).PremiumPill, obj6);
-    }
-    items1[2] = tmp22Result2;
-    obj3.children = items1;
-    items[1] = tmp12(View, obj3);
-    const tmp13Result7 = tmp13(5836);
-    if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result10 = tmp13(9531);
-    } else if (tmp15.TIER_1 === premiumType) {
-      tmp13Result10 = tmp13(11011);
-    } else if (tmp15.TIER_2 === premiumType) {
-      tmp13Result10 = tmp13(9536);
-    }
-    const obj7 = { source: tmp13Result10, style: null, resizeMode: "contain" };
-    const items2 = [tmp.imgWumpus, ];
-    if (tmp15.TIER_0 !== premiumType) {
-      if (tmp15.TIER_1 !== premiumType) {
-        if (tmp15.TIER_2 === premiumType) {
-          let imgWumpusBottom = tmp.imgWumpusRight;
-        }
-      }
-      items2[1] = imgWumpusBottom;
-      obj7.style = items2;
-      items[2] = tmp22(tmp13Result9, obj7);
-      obj2.children = items;
-      return tmp12(tmp14, obj2);
-    }
-    imgWumpusBottom = tmp.imgWumpusBottom;
-    tmp13Result9 = tmp13(5836);
-  } else {
-    if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result12 = tmp13(7707);
+  if (tmp17Result) {
+    let tmp13Result8;
+    const tmp13Result7 = FastImageDefault;
+    const tmp17 = metroImportDefault;
+    if (React3.TIER_0 === premiumType) {
+      tmp13Result8 = tmp13(6860);
     } else {
-      tmp13Result12 = null;
-      if (tmp15.TIER_1 !== premiumType) {
-        if (tmp15.TIER_2 === premiumType) {
-          tmp13Result12 = tmp13(7708);
+      tmp13Result8 = null;
+      if (React3.TIER_1 !== premiumType) {
+        if (React3.TIER_2 === premiumType) {
+          tmp13Result8 = tmp13(6861);
         }
       }
     }
-    const obj8 = { source: tmp13Result12 };
-    React5(tmp13(5836), obj8);
-    const tmp13Result11 = tmp13(5836);
+    const obj3 = { source: tmp13Result8 };
+    tmp17Result = tmp17(tmp13Result7, obj3);
   }
-};
+  const items = [tmp17Result, , ];
+  const obj4 = { style: tmp.logoContainer, children: items1 };
+  const tmp13Result9 = FastImageDefault;
+  const tmp20 = View;
+  if (React3.TIER_0 === premiumType) {
+    tmp13Result10 = tmp13(6854);
+  } else if (React3.TIER_1 === premiumType) {
+    tmp13Result10 = tmp13(6855);
+  } else if (React3.TIER_2 === premiumType) {
+    tmp13Result10 = tmp13(6856);
+  }
+  items1 = [metroImportDefault(tmp13Result9, { source: tmp13Result10, resizeMode: "contain" }), , ];
+  let tmp21Result = null;
+  if (tmp2) {
+    const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
+    tmp21Result = tmp21(tmp6(6862).PremiumPill, obj5);
+  }
+  items1[1] = tmp21Result;
+  let tmp21Result2 = null;
+  if (tmp10) {
+    const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
+    tmp21Result2 = tmp21(tmp6(6862).PremiumPill, obj6);
+  }
+  items1[2] = tmp21Result2;
+  items[1] = metroImportAll(tmp20, obj4);
+  const tmp13Result11 = FastImageDefault;
+  if (React3.TIER_0 === premiumType) {
+    tmp13Result12 = tmp13(6857);
+  } else if (React3.TIER_1 === premiumType) {
+    tmp13Result12 = tmp13(6858);
+  } else if (React3.TIER_2 === premiumType) {
+    tmp13Result12 = tmp13(6859);
+  }
+  const obj7 = { source: tmp13Result12, style: null, resizeMode: "contain" };
+  const items2 = [tmp.imgWumpus, ];
+  if (React3.TIER_0 !== premiumType) {
+    let imgWumpusBottom;
+    if (React3.TIER_1 !== premiumType) {
+      if (React3.TIER_2 === premiumType) {
+        imgWumpusBottom = tmp.imgWumpusRight;
+      }
+    }
+    items2[1] = imgWumpusBottom;
+    obj7.style = items2;
+    items[2] = metroImportDefault(tmp13Result11, obj7);
+    obj2.children = items;
+    return metroImportAll(tmp14, obj2);
+  }
+  imgWumpusBottom = tmp.imgWumpusBottom;
+});
+const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanActionSheetHeader.tsx");
+
+export default tmp5;

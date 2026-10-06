@@ -1,37 +1,69 @@
-// Module ID: 15797
-// Function ID: 15798
+// Module ID: 15058
+// Function ID: 15059
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [10376, 8265, 1074, 504, 1115, 11754, 15798, 2]
+// Dependencies: [10906, 7421, 1086, 558, 576, 504, 1127, 10874, 15059, 2]
 
-// Module 15797 (CommunityActivityAlertsSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10376 */;
+// Module 15058 (CommunityActivityAlertsSetting)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10906 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11754);
-const route = SettingBuilders.createRoute({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.D9yVAH);
-  },
-  parent: fn(8265).MobileUserSettings.NOTIFICATIONS,
-  useDescription: function useCommunityActivityAlertsSettingDescription() {
-    const intl = util.intl;
-    return intl.string(util.t["0PhAOH"]);
-  },
-  usePredicate: function useHasCommunityActivityAlertsSetting() {
+const require = globalThis.__r;
+
+let tmp;
+const get_initialized = tmp(504);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let guildAlertSettings;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildIncidentsStore];
-    return initialize.useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
+    const fn = function s() {
+      return Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let guildAlertSettings;
+  const items = [GuildIncidentsStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
+});
+let obj = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t.D9yVAH);
   },
+  parent: MobileUserSettings.NOTIFICATIONS,
+  useDescription: function useCommunityActivityAlertsSettingDescription() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t["0PhAOH"]);
+  },
+  usePredicate: tmp2,
   screen: {
-    route: fn(1074).UserSettingsSections.COMMUNITY_ALERTS,
+    route: UserSettingsSections.COMMUNITY_ALERTS,
     getComponent() {
       return require("UserSettingsCommunityNotifications").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/CommunityActivityAlertsSetting.tsx");
 
 export default route;

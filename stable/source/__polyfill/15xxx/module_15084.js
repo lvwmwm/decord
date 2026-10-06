@@ -1,9 +1,15 @@
 // Module ID: 15084
 // Function ID: 15085
-// Dependencies: [1121]
+// Dependencies: [7731, 15085, 15088, 15089]
 
 // Module 15084
-import registerAsset from "module_1121" /* 1121 */;
+import _mod15089 from "module_15089" /* 15089 */;
+import module_7731 from "module_7731" /* 7731 */;
+
+const require = globalThis.__r;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 433, height: 231.5, scales: [2, 3], hash: "91d00dd928cdd63a1c9619eb92ec080e", name: "blocked_light", type: "png" });
+export const getYoutubeMeta = require("module_15085").getYoutubeMeta;
+export const PLAYER_STATES = require("PLAY_MODE").PLAYER_STATES_NAMES;
+export const PLAYER_ERRORS = require("PLAY_MODE").PLAYER_ERROR_NAMES;
+export default module_7731(_mod15089).default;

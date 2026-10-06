@@ -1,9 +1,20 @@
 // Module ID: 13912
 // Function ID: 13913
-// Dependencies: [1121]
+// Dependencies: []
+// Exports: default
 
 // Module 13912
-import registerAsset from "module_1121" /* 1121 */;
+let size;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 203, height: 120, scales: [1, 2, 3], hash: "4cb64ea1ce49f760ec2c14cca07c9930", name: "guild_subscription_removal_dark", type: "png" });
+export default () => (arg0) => {
+  let closure_0 = arg0;
+  return {
+    features: {
+      image(dependencyMap) {
+        size = { uri: dependencyMap.uri, preview: dependencyMap.preview, filename: dependencyMap.filename, width: dependencyMap.width, height: dependencyMap.height, caption: dependencyMap.caption };
+        return closure_0.send("image", size);
+      }
+    }
+  };
+};

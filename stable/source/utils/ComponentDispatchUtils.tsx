@@ -1,18 +1,18 @@
-// Module ID: 1110
-// Function ID: 1111
+// Module ID: 1122
+// Function ID: 1123
 // Name: ComponentDispatchUtils
-// Dependencies: [1074, 1111, 3, 1112, 2]
+// Dependencies: [1086, 1123, 3, 1124, 2]
 
-// Module 1110 (ComponentDispatchUtils)
+// Module 1122 (ComponentDispatchUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1074 */;
-import DevtoolsExtensionAll from "DevtoolsExtension" /* 1111 */;
-import utils_ComponentDispatchUtils from "utils/ComponentDispatchUtils" /* 1112 */;
+import Constants from "Constants" /* 1086 */;
+import DevtoolsExtensionAll from "DevtoolsExtension" /* 1123 */;
+import utils_ComponentDispatchUtils from "utils/ComponentDispatchUtils" /* 1124 */;
 import size from "module_2" /* 2 */;
 
 const ComponentActionsKeyed = Constants.ComponentActionsKeyed;
 const warn = new LoggerDefault("ComponentDispatchUtils");
-const componentDispatcher = new utils_ComponentDispatchUtils.ComponentDispatcher({
+let obj = {
   maxListeners: 100,
   enableDevtools: false,
   logger: {
@@ -22,15 +22,19 @@ const componentDispatcher = new utils_ComponentDispatchUtils.ComponentDispatcher
     }
   },
   devtoolsReporter: function reportDevtoolsEvent(fullActionName, actionData, durationMs) {
-    closure_0 = fullActionName;
+    let closure_0 = fullActionName;
     const values = Object.values(ComponentActionsKeyed);
     let found = values.find((item) => closure_0.startsWith(item));
     if (found == null) {
       found = fullActionName;
     }
-    DevtoolsExtensionAll.reportEvent({ type: "ComponentDispatch", description: found, data: { actionData, fullActionName }, durationMs });
+    const obj = DevtoolsExtensionAll;
+    const obj2 = { type: "ComponentDispatch", description: found, data: { actionData, fullActionName }, durationMs };
+    obj.reportEvent(obj2);
   }
-});
+};
+new LoggerDefault("ComponentDispatchUtils");
+const componentDispatcher = new utils_ComponentDispatchUtils.ComponentDispatcher(obj);
 const result = size.fileFinishedImporting("utils/ComponentDispatchUtils.tsx");
 
 export const ComponentDispatcher = utils_ComponentDispatchUtils.ComponentDispatcher;

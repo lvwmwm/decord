@@ -1,42 +1,143 @@
-// Module ID: 5355
-// Function ID: 5356
+// Module ID: 5420
+// Function ID: 5421
 // Name: useGameMentionData
-// Dependencies: [2000, 5356, 1372, 5359, 504, 558, 2]
-// Exports: getGameMentionData, useGameMentionData
+// Dependencies: [2007, 5421, 1378, 5424, 558, 576, 504, 568, 2]
+// Exports: getGameMentionData
 
-// Module 5355 (useGameMentionData)
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5359 */;
-import GameStore from "GameStore" /* 2000 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5356 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 5420 (useGameMentionData)
+import shallowEqualDefault from "shallowEqual" /* 568 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5424 */;
+import GameStore from "GameStore" /* 2007 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5421 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
+  let first;
+  let tmp8;
+  let tmp9;
+  _require = gameId;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp5 = GameStore;
+    const items = [GameStore, , ];
+    items[1] = GameAutocompleteStore;
+    items[2] = UserStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== gameId) {
+    const fn = function c() {
+      let icon;
+      let media;
+      let tmp5;
+      const currentUser = UserStore.getCurrentUser();
+      const game = GameStore.getGame(gameId);
+      const gameById = GameAutocompleteStore.getGameById(gameId);
+      if (null != game) {
+        let nsfwAllowed;
+        const isGameProfileObscured = useGameProfileObscured.isGameProfileObscured;
+        useGameProfileObscured;
+        if (currentUser != null) {
+          nsfwAllowed = currentUser.nsfwAllowed;
+        }
+        if (!isGameProfileObscured(game, nsfwAllowed)) {
+          const obj3 = { gameId, gameName: null, gameIcon: icon };
+          ({ name: obj2.gameName, media } = game);
+          icon = undefined;
+          if (media != null) {
+            icon = media.icon;
+          }
+          tmp5 = obj3;
+        }
+      } else if (null != gameById) {
+        const obj = { gameId, gameName: null, gameIcon: null };
+        ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
+        tmp5 = obj;
+      }
+      return tmp5;
+    };
+    const items1 = [gameId];
+    cResult[1] = gameId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp8, tmp9, shallowEqualDefault);
+}) : ((gameId) => {
+  _require = gameId;
+  let obj = require("get initialized");
+  const items = [GameStore, GameAutocompleteStore, UserStore];
+  const items1 = [gameId];
+  return obj.useStateFromStores(items, () => {
+    let icon;
+    let media;
+    let tmp5;
+    const currentUser = UserStore.getCurrentUser();
+    const game = GameStore.getGame(gameId);
+    const gameById = GameAutocompleteStore.getGameById(gameId);
+    if (null != game) {
+      let nsfwAllowed;
+      const isGameProfileObscured = useGameProfileObscured.isGameProfileObscured;
+      useGameProfileObscured;
+      if (currentUser != null) {
+        nsfwAllowed = currentUser.nsfwAllowed;
+      }
+      if (!isGameProfileObscured(game, nsfwAllowed)) {
+        const obj3 = { gameId, gameName: null, gameIcon: icon };
+        ({ name: obj2.gameName, media } = game);
+        icon = undefined;
+        if (media != null) {
+          icon = media.icon;
+        }
+        tmp5 = obj3;
+      }
+    } else if (null != gameById) {
+      const obj = { gameId, gameName: null, gameIcon: null };
+      ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
+      tmp5 = obj;
+    }
+    return tmp5;
+  }, items1, shallowEqualDefault);
+});
 const result = size.fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");
 
 export const getGameMentionData = function getGameMentionData(gameId) {
+  let icon;
+  let media;
+  let tmp4;
   const currentUser = UserStore.getCurrentUser();
   const game = GameStore.getGame(gameId);
   const gameById = GameAutocompleteStore.getGameById(gameId);
   if (null != game) {
     let nsfwAllowed;
+    const isGameProfileObscured = useGameProfileObscured.isGameProfileObscured;
+    useGameProfileObscured;
     if (currentUser != null) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
-    if (!obj2.isGameProfileObscured(game, nsfwAllowed)) {
-      const obj4 = { gameId, gameName: null, gameIcon: null };
-      ({ name: obj3.gameName, media } = game);
-      let icon;
+    if (!isGameProfileObscured(game, nsfwAllowed)) {
+      const obj3 = { gameId, gameName: null, gameIcon: icon };
+      ({ name: obj2.gameName, media } = game);
+      icon = undefined;
       if (media != null) {
         icon = media.icon;
       }
-      obj4.gameIcon = icon;
-      let tmp4 = obj4;
+      tmp4 = obj3;
     }
-    obj2 = useGameProfileObscured;
   } else if (null != gameById) {
     const obj = { gameId, gameName: null, gameIcon: null };
     ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
@@ -44,35 +145,4 @@ export const getGameMentionData = function getGameMentionData(gameId) {
   }
   return tmp4;
 };
-export const useGameMentionData = function useGameMentionData(gameId) {
-  _require = gameId;
-  const items = [GameStore, GameAutocompleteStore, UserStore];
-  const items1 = [gameId];
-  return require("initialize").useStateFromStores(items, () => {
-    const currentUser = UserStore.getCurrentUser();
-    const game = GameStore.getGame(closure_0);
-    const gameById = GameAutocompleteStore.getGameById(closure_0);
-    if (null != game) {
-      let nsfwAllowed;
-      if (currentUser != null) {
-        nsfwAllowed = currentUser.nsfwAllowed;
-      }
-      if (!obj2.isGameProfileObscured(game, nsfwAllowed)) {
-        const obj4 = { gameId: tmp, gameName: null, gameIcon: null };
-        ({ name: obj3.gameName, media } = game);
-        let icon;
-        if (media != null) {
-          icon = media.icon;
-        }
-        obj4.gameIcon = icon;
-        let tmp5 = obj4;
-      }
-      obj2 = useGameProfileObscured;
-    } else if (null != gameById) {
-      const obj = { gameId: tmp, gameName: null, gameIcon: null };
-      ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
-      tmp5 = obj;
-    }
-    return tmp5;
-  }, items1, discord_common_shallowEqualDefault);
-};
+export const useGameMentionData = tmp2;

@@ -1,41 +1,39 @@
-// Module ID: 5765
-// Function ID: 5766
+// Module ID: 5829
+// Function ID: 5830
 // Name: utils/AutocompleteUtils
-// Dependencies: [1074, 1115, 2]
+// Dependencies: [1086, 1127, 2]
 
-// Module 5765 (utils/AutocompleteUtils)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+// Module 5829 (utils/AutocompleteUtils)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
 import size from "module_2" /* 2 */;
 
-Constants.AutoCompleteResultTypes;
+const AutoCompleteResultTypes = Constants.AutoCompleteResultTypes;
 const items = [["game", "gameMentionInput"], ["time", "timestampMentionInput"]];
 const map = new Map(items);
-const result = size.fileFinishedImporting("utils/native/AutocompleteUtils.tsx");
-
-export default {
+let obj = {
   MENTION_EVERYONE() {
-    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "everyone", text: "@everyone", description: null };
-    const intl = util.intl;
-    obj.description = intl.string(util.t["5atMLZ"]);
+    let intl;
+    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "everyone", text: "@everyone", description: intl.string(intl2.t["5atMLZ"]) };
+    intl = intl2.intl;
     return obj;
   },
   MENTION_HERE() {
-    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "here", text: "@here", description: null };
-    const intl = util.intl;
-    obj.description = intl.string(util.t.iX9SFD);
+    let intl;
+    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "here", text: "@here", description: intl.string(intl2.t.iX9SFD) };
+    intl = intl2.intl;
     return obj;
   },
   MENTION_GAME() {
-    const obj = { test: "game", text: "@game", inlineAutocompleteType: "gameMentionInput", description: null };
-    const intl = util.intl;
-    obj.description = intl.string(util.t["1kR88y"]);
+    let intl;
+    const obj = { test: "game", text: "@game", inlineAutocompleteType: "gameMentionInput", description: intl.string(intl2.t["1kR88y"]) };
+    intl = intl2.intl;
     return obj;
   },
   MENTION_TIMESTAMP() {
-    const obj = { test: "time", text: "@time", inlineAutocompleteType: "timestampMentionInput", description: null };
-    const intl = util.intl;
-    obj.description = intl.string(util.t.V6L3TV);
+    let intl;
+    const obj = { test: "time", text: "@time", inlineAutocompleteType: "timestampMentionInput", description: intl.string(intl2.t.V6L3TV) };
+    intl = intl2.intl;
     return obj;
   },
   LAUNCHABLE_APPLICATIONS() {
@@ -45,3 +43,6 @@ export default {
     return map.get(trigger.toLowerCase());
   }
 };
+const result = size.fileFinishedImporting("utils/native/AutocompleteUtils.tsx");
+
+export default obj;

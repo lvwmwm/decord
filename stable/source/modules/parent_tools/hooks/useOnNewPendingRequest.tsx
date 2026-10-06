@@ -1,51 +1,154 @@
-// Module ID: 15161
-// Function ID: 15162
+// Module ID: 14404
+// Function ID: 14405
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 7811, 8955, 504, 5235, 7813, 2]
-// Exports: default
+// Dependencies: [19, 6961, 558, 576, 8102, 504, 6963, 5297, 2]
 
-// Module 15161 (useOnNewPendingRequest)
-import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
+// Module 14404 (useOnNewPendingRequest)
+import react_mod from "react" /* 19 */;
+import FamilyCenterStore_mod from "FamilyCenterStore" /* 6961 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, cResult;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
+let react = react_mod;
+let FamilyCenterStore = FamilyCenterStore_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
+  let current;
+  let ref;
+  let ref2;
+  let stateFromStores;
+  let tmp11;
+  let tmp12;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  _require = cResult;
+  let tmp = _require;
+  let obj = require("react");
+  cResult = obj.c(10);
+  const obj2 = require("useUserLinks");
+  const pendingRequestCount = obj2.usePendingRequestCount();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [FamilyCenterStore];
+    const fn = function c() {
+      return ref2.getAreLinkedUsersProcessed();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(stateFromStores[5]);
+  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function l() {
+      if (!ref2.getAreLinkedUsersProcessed()) {
+        const obj = pendingRequestCount(stateFromStores[6]);
+        const linkedUsers = obj.fetchLinkedUsers();
+        linkedUsers.catch(() => {
 
-export default function useOnNewPendingRequest(set) {
-  _require = set;
-  const pendingRequestCount = require("useUserLinks").usePendingRequestCount();
+        });
+      }
+    };
+    cResult[2] = fn2;
+    tmp9 = fn2;
+  } else {
+    tmp9 = cResult[2];
+  }
+  pendingRequestCount(stateFromStores[7])(tmp9);
+  react = react.useRef(cResult);
+  if (cResult[3] !== cResult) {
+    const fn3 = function _() {
+      ref.current = current;
+    };
+    const items1 = [cResult];
+    cResult[3] = cResult;
+    cResult[4] = fn3;
+    cResult[5] = items1;
+    tmp12 = items1;
+    tmp11 = fn3;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const effect = obj4.useEffect(tmp11, tmp12);
+  FamilyCenterStore = obj4.useRef(null);
+  if (cResult[6] === stateFromStores) {
+    let tmp14;
+    let tmp15;
+    if (cResult[7] === pendingRequestCount) {
+      tmp14 = cResult[8];
+      tmp15 = cResult[9];
+    }
+    const effect1 = obj4.useEffect(tmp14, tmp15);
+  }
+  class R {
+    constructor() {
+      const tmp = stateFromStores;
+      if (tmp) {
+        if (null != ref2.current) {
+          ref2.current = pendingRequestCount;
+          if (pendingRequestCount > ref2.current) {
+            ref.current();
+          }
+        } else {
+          ref2.current = pendingRequestCount;
+        }
+      }
+    }
+  }
+  const items2 = [stateFromStores, pendingRequestCount];
+  cResult[6] = stateFromStores;
+  cResult[7] = pendingRequestCount;
+  cResult[8] = R;
+  cResult[9] = items2;
+  tmp15 = items2;
+  tmp14 = R;
+}) : ((cResult) => {
+  let current;
+  let ref;
+  let ref2;
+  let stateFromStores;
+  _require = cResult;
   let obj = require("useUserLinks");
+  const pendingRequestCount = obj.usePendingRequestCount();
   const items = [ref2];
-  stateFromStores = require("initialize").useStateFromStores(items, () => ref2.getAreLinkedUsersProcessed());
-  pendingRequestCount(stateFromStores[4])(() => {
+  const obj2 = require("get initialized");
+  stateFromStores = obj2.useStateFromStores(items, () => ref2.getAreLinkedUsersProcessed());
+  pendingRequestCount(stateFromStores[7])(() => {
     if (!ref2.getAreLinkedUsersProcessed()) {
-      const linkedUsers = pendingRequestCount(stateFromStores[5]).fetchLinkedUsers();
+      const obj = pendingRequestCount(stateFromStores[6]);
+      const linkedUsers = obj.fetchLinkedUsers();
       linkedUsers.catch(() => {
 
       });
-      const obj = pendingRequestCount(stateFromStores[5]);
     }
   });
-  noop = noop.useRef(set);
-  const items1 = [set];
-  const effect = noop.useEffect(() => {
-    closure_3.current = current;
+  react = react.useRef(cResult);
+  const items1 = [cResult];
+  const effect = react.useEffect(() => {
+    ref.current = current;
   }, items1);
-  const obj2 = require("initialize");
+  ref2 = react.useRef(null);
   const items2 = [stateFromStores, pendingRequestCount];
-  const effect1 = noop.useEffect(() => {
-    if (stateFromStores) {
+  const effect1 = react.useEffect(() => {
+    const tmp = stateFromStores;
+    if (tmp) {
       if (null != ref2.current) {
-        tmp.current = pendingRequestCount;
-        if (pendingRequestCount > tmp.current) {
+        ref2.current = pendingRequestCount;
+        if (pendingRequestCount > ref2.current) {
           ref.current();
         }
       } else {
-        tmp.current = pendingRequestCount;
+        ref2.current = pendingRequestCount;
       }
     }
   }, items2);
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
+
+export default tmp2;

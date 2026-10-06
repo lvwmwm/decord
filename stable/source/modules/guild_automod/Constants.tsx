@@ -1,20 +1,23 @@
-// Module ID: 12146
-// Function ID: 12147
+// Module ID: 11216
+// Function ID: 11217
 // Name: Constants
-// Dependencies: [12147, 2, 12148, 12149]
+// Dependencies: [11217, 2, 11218, 11219]
 
-// Module 12146 (Constants)
-import AutomodTriggerType from "AutomodTriggerType" /* 12147 */;
-import AutomodEventType from "AutomodEventType" /* 12148 */;
-import AutomodActionType from "AutomodActionType" /* 12149 */;
+// Module 11216 (Constants)
+import AutomodTriggerType from "AutomodTriggerType" /* 11217 */;
+import AutomodEventType from "AutomodEventType" /* 11218 */;
+import AutomodActionType from "AutomodActionType" /* 11219 */;
 import size from "module_2" /* 2 */;
 
 const items = [AutomodTriggerType.AutomodTriggerType.USER_PROFILE, AutomodTriggerType.AutomodTriggerType.SERVER_POLICY, AutomodTriggerType.AutomodTriggerType.MENTION_SPAM, AutomodTriggerType.AutomodTriggerType.ML_SPAM, AutomodTriggerType.AutomodTriggerType.DEFAULT_KEYWORD_LIST, AutomodTriggerType.AutomodTriggerType.KEYWORD];
 const result = size.fileFinishedImporting("modules/guild_automod/Constants.tsx");
+const AutomodEventType_export = AutomodEventType.AutomodEventType;
+const AutomodTriggerType_export = AutomodTriggerType.AutomodTriggerType;
+const AutomodActionType_export = AutomodActionType.AutomodActionType;
 
-export const AutomodEventType = AutomodEventType.AutomodEventType;
-export const AutomodTriggerType = AutomodTriggerType.AutomodTriggerType;
-export const AutomodActionType = AutomodActionType.AutomodActionType;
+export { AutomodEventType_export as AutomodEventType };
+export { AutomodTriggerType_export as AutomodTriggerType };
+export { AutomodActionType_export as AutomodActionType };
 export const KeywordPreset = { PROFANITY: 1, [1]: "PROFANITY", SEXUAL_CONTENT: 2, [2]: "SEXUAL_CONTENT", SLURS: 3, [3]: "SLURS" };
 export const AUTOMOD_TRIGGER_TYPES = items;
 export const MAX_APPLICATION_RULES_PER_GUILD = 5;

@@ -1,13 +1,15 @@
-// Module ID: 10138
-// Function ID: 10139
-// Dependencies: [5764, 2]
+// Module ID: 9276
+// Function ID: 9277
+// Dependencies: [5828, 2]
 // Exports: default
 
-// Module 10138
-import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5764 */;
+// Module 9276
+import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5828 */;
 import size from "module_2" /* 2 */;
 
-({ FindResultDirections: closure_0, AutocompleterResultTypes: closure_1 } = AutocompleterConstants);
+let _window;
+let map;
+({ FindResultDirections: _window, AutocompleterResultTypes: map } = AutocompleterConstants);
 const result = size.fileFinishedImporting("modules/autocompleter/findNextSelectedResult.tsx");
 function findNextSelectedResult(DOWN, selectedIndex, arr, arg3) {
   if (0 === arr.length) {
@@ -21,24 +23,26 @@ function findNextSelectedResult(DOWN, selectedIndex, arr, arg3) {
       }
     }
     let num = 1;
-    if (DOWN === constants.UP) {
+    if (DOWN === _window.UP) {
       num = -1;
     }
     const sum = selectedIndex + num;
     if (sum >= 0) {
-      if (sum < length) {
-        let tmp13Result = sum;
-        if (arr[sum].type === constants2.HEADER) {
+      let tmp13Result;
+      if (sum < arr.length) {
+        tmp13Result = sum;
+        if (arr[sum].type === map.HEADER) {
           tmp13Result = findNextSelectedResult(DOWN, sum, arr, tmp);
         }
       }
       return tmp13Result;
     }
     let num2 = -1;
+    const tmp13 = findNextSelectedResult;
     if (sum < 0) {
       num2 = length;
     }
-    tmp13Result = findNextSelectedResult(DOWN, num2, arr, tmp);
+    tmp13Result = tmp13(DOWN, num2, arr, tmp);
   }
 }
 let c2 = findNextSelectedResult;

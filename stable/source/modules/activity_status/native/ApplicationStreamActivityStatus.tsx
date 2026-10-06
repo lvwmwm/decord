@@ -1,22 +1,127 @@
-// Module ID: 11172
-// Function ID: 11173
+// Module ID: 10383
+// Function ID: 10384
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [19, 21, 1115, 11173, 11174, 11176, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 1127, 10384, 10385, 10387, 2]
 
-// Module 11172 (ApplicationStreamActivityStatus)
-import util from "util" /* 1115 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 11173 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 11176 */;
-import noop from "module_19" /* 19 */;
+// Module 10383 (ApplicationStreamActivityStatus)
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10384 */;
+import TvIcon from "TvIcon" /* 10385 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10387 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activity_status/native/ApplicationStreamActivityStatus.tsx");
-
-export default function ApplicationStreamActivityStatus(hideText) {
+let c3;
+let closure_4;
+let hasOwnProperty;
+({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let game;
+  let hideIcon;
+  let hideText;
+  let iconStyle;
+  let items;
+  let maxFontSizeMultiplier;
+  let textStyle;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(13);
+  ({ game, iconStyle, textStyle, maxFontSizeMultiplier, hideIcon, hideText } = arg0);
+  if (undefined !== hideIcon && hideIcon) {
+    if (undefined !== hideText && hideText) {
+      return null;
+    }
+  }
+  let name;
+  if (game != null) {
+    name = game.name;
+  }
+  let tmp7 = null;
+  if ("" !== name) {
+    let name1;
+    if (game != null) {
+      name1 = game.name;
+    }
+    tmp7 = name1;
+  }
+  if (cResult[0] !== tmp7) {
+    let formatResult;
+    if (null != tmp7) {
+      const intl2 = tmp(1127).intl;
+      const obj2 = { name: tmp7 };
+      formatResult = intl2.format(tmp(1127).t["0wJXSh"], obj2);
+    } else {
+      const intl = tmp(1127).intl;
+      formatResult = intl.string(tmp(1127).t.eXan7B);
+    }
+    cResult[0] = tmp7;
+    cResult[1] = formatResult;
+    tmp9 = formatResult;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] === (undefined !== hideIcon && hideIcon)) {
+    let tmp11;
+    if (cResult[3] === iconStyle) {
+      tmp11 = cResult[4];
+    }
+    if (cResult[5] === (undefined !== hideText && hideText)) {
+      if (cResult[6] === maxFontSizeMultiplier) {
+        if (cResult[7] === tmp9) {
+          let tmp16;
+          if (cResult[8] === textStyle) {
+            tmp16 = cResult[9];
+          }
+          if (cResult[10] === tmp11) {
+            let tmp20;
+            if (cResult[11] === tmp16) {
+              tmp20 = cResult[12];
+            }
+            return tmp20;
+          }
+          const obj3 = { children: items };
+          items = [tmp11, tmp16];
+          const tmp23 = hasOwnProperty(React3, obj3);
+          cResult[10] = tmp11;
+          cResult[11] = tmp16;
+          cResult[12] = tmp23;
+          tmp20 = tmp23;
+        }
+      }
+    }
+    let tmp17 = !tmp5;
+    if (tmp17) {
+      const obj4 = { style: textStyle, maxFontSizeMultiplier, children: tmp9 };
+      tmp17 = _false(ActivityStatusTextDefault, obj4);
+    }
+    cResult[5] = undefined !== hideText && hideText;
+    cResult[6] = maxFontSizeMultiplier;
+    cResult[7] = tmp9;
+    cResult[8] = textStyle;
+    cResult[9] = tmp17;
+    tmp16 = tmp17;
+  }
+  let tmp12 = !tmp4;
+  if (tmp12) {
+    const obj5 = { icon: TvIcon.TvIcon, style: iconStyle };
+    const tmp15 = ActivityStatusIconDefault;
+    tmp12 = _false(tmp15, obj5);
+  }
+  cResult[2] = undefined !== hideIcon && hideIcon;
+  cResult[3] = iconStyle;
+  cResult[4] = tmp12;
+  tmp11 = tmp12;
+}) : ((hideText) => {
+  let formatResult;
+  let game;
+  let hideIcon;
+  let iconStyle;
+  let maxFontSizeMultiplier;
+  let textStyle;
+  let tmp7;
   ({ game, hideIcon } = hideText);
   ({ iconStyle, textStyle, maxFontSizeMultiplier } = hideText);
   if (hideIcon === undefined) {
@@ -44,26 +149,32 @@ export default function ApplicationStreamActivityStatus(hideText) {
     tmp2 = name1;
   }
   if (null != tmp2) {
-    const intl2 = util.intl;
+    const intl2 = intl3.intl;
     const obj = { name: tmp2 };
-    let formatResult = intl2.format(util.t["0wJXSh"], obj);
-    let tmp7 = require;
+    formatResult = intl2.format(intl3.t["0wJXSh"], obj);
+    tmp7 = require;
   } else {
-    const intl = util.intl;
-    formatResult = intl.string(util.t.eXan7B);
+    const intl = intl3.intl;
+    formatResult = intl.string(intl3.t.eXan7B);
     tmp7 = require;
   }
   let tmp12 = !hideIcon;
+  const tmp10 = hasOwnProperty;
+  const tmp11 = React3;
   if (!hideIcon) {
-    const obj2 = { icon: tmp7(11174).TvIcon, style: iconStyle };
-    tmp12 = React3(ActivityStatusIconDefault, obj2);
+    const obj2 = { icon: tmp7(10385).TvIcon, style: iconStyle };
+    const tmp15 = ActivityStatusIconDefault;
+    tmp12 = _false(tmp15, obj2);
   }
   const children = [tmp12, ];
   let tmp16 = !flag;
-  if (!flag) {
+  if (tmp16) {
     const obj3 = { style: textStyle, maxFontSizeMultiplier, children: formatResult };
-    tmp16 = React3(ActivityStatusTextDefault, obj3);
+    tmp16 = _false(ActivityStatusTextDefault, obj3);
   }
   children[1] = tmp16;
-  return hasOwnProperty(React4, { children });
-};
+  return tmp10(tmp11, { children });
+});
+const result = size.fileFinishedImporting("modules/activity_status/native/ApplicationStreamActivityStatus.tsx");
+
+export default tmp4;

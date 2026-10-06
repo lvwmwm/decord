@@ -1,78 +1,389 @@
-// Module ID: 12658
-// Function ID: 12659
+// Module ID: 11757
+// Function ID: 11758
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 2063, 4969, 4970, 21, 4788, 504, 7474, 7426, 5833, 1115, 8903, 1177, 12659, 7387, 4755, 12660, 12661, 7396, 7391, 2]
-// Exports: default
+// Dependencies: [19, 17, 2073, 5018, 5019, 21, 4837, 558, 576, 504, 5893, 1127, 6571, 1189, 11758, 8057, 6532, 4801, 11759, 11760, 6541, 6536, 6624, 2]
 
-// Module 12658 (UpcomingEventsLongPressActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7387 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
-import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+// Module 11757 (UpcomingEventsLongPressActionSheet)
+import react_native from "react-native" /* 17 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6532 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6536 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
+import react from "react" /* 19 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const ReadStateTypes = fn(4970).ReadStateTypes;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+let guildId;
+
+let metroImportAll;
+let metroImportDefault;
+const View = react_native.View;
+const ReadStateTypes = ReadStateConstants.ReadStateTypes;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ headerIcon: { marginRight: 16 } });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/UpcomingEventsLongPressActionSheet.tsx");
-
-export default function UpcomingEventsLongPressActionSheet(guildId) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let first;
+  let intl;
+  let tmp11;
+  let tmp7;
+  let tmp9;
+  const tmp = guildId;
+  let obj = guildId(576);
+  const cResult = obj.c(35);
+  guildId = guildId.guildId;
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function _() {
+      return GuildStore.getGuild(guildId);
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserGuildSettingsStore];
+    cResult[3] = items1;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] !== guildId) {
+    class F {
+      constructor() {
+        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+      }
+    }
+    cResult[4] = guildId;
+    cResult[5] = F;
+    tmp11 = F;
+  } else {
+    class F {
+      constructor() {
+        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+      }
+    }
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11);
+  if (cResult[6] !== stateFromStores) {
+    class F {
+      constructor() {
+        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+      }
+    }
+    let obj2 = { guild: stateFromStores, size: tmp(5893).GuildIconSizes.LARGE };
+    const tmp15 = stateFromStores1(5893);
+    cResult[6] = stateFromStores;
+    cResult[7] = closure_7(tmp15, obj2);
+    const tmp16 = closure_7(tmp15, obj2);
+  } else {
+    class F {
+      constructor() {
+        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+      }
+    }
+  }
+  if (cResult[8] === tmp4.headerIcon) {
+    let tmp19;
+    let tmp23;
+    let tmp26;
+    class F {
+      constructor() {
+        return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+      const stringResult = obj6.string(tmp(1127).t.tlopTM);
+      cResult[11] = stringResult;
+      tmp19 = stringResult;
+    } else {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+    }
+    if (cResult[12] !== tmp17) {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+      const obj3 = { leading: tmp17, title: tmp19 };
+      cResult[12] = tmp17;
+      cResult[13] = closure_7(tmp(6571).BottomSheetTitleHeader, obj3);
+      const tmp22 = closure_7(tmp(6571).BottomSheetTitleHeader, obj3);
+    } else {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+      const obj4 = { source: stateFromStores1(11758) };
+      const Icon = tmp(1189).Icon;
+      const tmp25 = closure_7(Icon, obj4);
+      cResult[14] = tmp25;
+      tmp23 = tmp25;
+    } else {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+      const obj5 = { text: intl.string(tmp(1127).t.e6RscS) };
+      const FormLabel = tmp(8057).FormLabel;
+      intl = tmp(1127).intl;
+      const tmp27 = closure_7(FormLabel, obj5);
+      cResult[15] = tmp27;
+      tmp26 = tmp27;
+    } else {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+    }
+    if (cResult[16] !== guildId) {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+      const obj7 = {
+        leading: tmp23,
+        label: tmp26,
+        onPress() {
+              const obj = ReadStateActionCreators;
+              obj.ackGuildFeature(guildId, ReadStateTypes.GUILD_EVENT);
+              const obj2 = ActionSheetActionCreatorsDefault;
+              obj2.hideActionSheet();
+            }
+      };
+      cResult[16] = guildId;
+      cResult[17] = closure_7(tmp(8057).FormRow, obj7);
+      const tmp29 = closure_7(tmp(8057).FormRow, obj7);
+    } else {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+    }
+    const tmp30 = stateFromStores1(stateFromStores1 ? 11759 : 11760);
+    if (cResult[18] !== tmp30) {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+      const obj8 = { source: tmp30 };
+      cResult[18] = tmp30;
+      cResult[19] = closure_7(tmp(1189).Icon, obj8);
+      const tmp32 = closure_7(tmp(1189).Icon, obj8);
+    } else {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+    }
+    if (cResult[20] !== stateFromStores1) {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+      const string = tmp34.string;
+      const t = tmp(1127).t;
+      if (stateFromStores1) {
+        class F {
+          constructor() {
+            return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+          }
+        }
+      } else {
+        class F {
+          constructor() {
+            return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+          }
+        }
+      }
+      cResult[20] = stateFromStores1;
+      cResult[21] = tmp35;
+    } else {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+    }
+    if (cResult[22] !== tmp33) {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+      const obj9 = { text: tmp33 };
+      cResult[22] = tmp33;
+      cResult[23] = closure_7(tmp(8057).FormLabel, obj9);
+      const tmp37 = closure_7(tmp(8057).FormLabel, obj9);
+    } else {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+    }
+    if (cResult[24] === guildId) {
+      class F {
+        constructor() {
+          return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+        }
+      }
+      if (cResult[27] === tmp31) {
+        class F {
+          constructor() {
+            return UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId);
+          }
+        }
+      }
+      const obj10 = { leading: tmp31, label: tmp36, onPress: tmp38 };
+      cResult[27] = tmp31;
+      cResult[28] = tmp36;
+      cResult[29] = tmp38;
+      cResult[30] = closure_7(tmp(8057).FormRow, obj10);
+      const tmp41 = closure_7(tmp(8057).FormRow, obj10);
+    }
+    const fn2 = function w() {
+      const updateGuildNotificationSettings = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
+      const obj = { mute_scheduled_events: !stateFromStores1 };
+      NotificationSettingsModalActionCreatorsDefault;
+      const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
+      const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
+    };
+    cResult[24] = guildId;
+    cResult[25] = stateFromStores1;
+    cResult[26] = fn2;
+  }
+  const obj11 = { style: tmp4.headerIcon, children: tmp13 };
+  cResult[8] = tmp4.headerIcon;
+  cResult[9] = tmp13;
+  cResult[10] = closure_7(View, obj11);
+  const tmp18 = closure_7(View, obj11);
+}) : ((guildId) => {
+  let FormLabel;
+  let FormLabel2;
+  let Icon;
+  let Icon2;
+  let intl;
+  let intl2;
+  let obj10;
+  let obj4;
+  let obj5;
+  let obj7;
+  let obj8;
+  let stringResult;
+  let tmp9;
   guildId = guildId.guildId;
   const tmp = closure_9();
-  const items = [GuildStore];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => GuildStore.getGuild(guildId));
   let obj = guildId(504);
+  const items = [GuildStore];
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
+  let obj2 = guildId(504);
   const items1 = [UserGuildSettingsStore];
-  const stateFromStores1 = guildId(504).useStateFromStores(items1, () => UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId));
-  const obj3 = { leading: null, title: null };
-  const obj4 = { style: tmp.headerIcon, children: null };
-  const obj5 = { guild: stateFromStores, size: null };
-  const obj2 = guildId(504);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId));
+  const ActionSheet = guildId(6624).ActionSheet;
+  const obj3 = { leading: closure_7(View, obj4), title: intl.string(guildId(1127).t.tlopTM) };
+  obj4 = { style: tmp.headerIcon, children: closure_7(tmp9, obj5) };
+  const BottomSheetTitleHeader = guildId(6571).BottomSheetTitleHeader;
+  obj5 = { guild: stateFromStores, size: guildId(5893).GuildIconSizes.LARGE };
+  tmp9 = stateFromStores1(5893);
+  intl = guildId(1127).intl;
+  const items2 = [closure_7(BottomSheetTitleHeader, obj3), , ];
+  const obj6 = {
+    leading: closure_7(Icon, obj7),
+    label: closure_7(FormLabel, obj8),
+    onPress() {
+      const obj = ReadStateActionCreators;
+      obj.ackGuildFeature(guildId, ReadStateTypes.GUILD_EVENT);
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
+    }
+  };
+  const FormRow = guildId(8057).FormRow;
+  obj7 = { source: stateFromStores1(11758) };
+  Icon = guildId(1189).Icon;
+  obj8 = { text: intl2.string(guildId(1127).t.e6RscS) };
+  FormLabel = guildId(8057).FormLabel;
+  intl2 = guildId(1127).intl;
+  items2[1] = closure_7(FormRow, obj6);
+  const FormRow2 = guildId(8057).FormRow;
+  const obj9 = {
+    leading: closure_7(Icon2, obj10),
+    label: closure_7(FormLabel2, { text: stringResult }),
+    onPress() {
+      const updateGuildNotificationSettings = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
+      const obj = { mute_scheduled_events: !stateFromStores1 };
+      NotificationSettingsModalActionCreatorsDefault;
+      const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
+      const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
+    }
+  };
+  obj10 = { source: stateFromStores1(stateFromStores1 ? 11759 : 11760) };
+  Icon2 = guildId(1189).Icon;
+  FormLabel2 = tmp2(8057).FormLabel;
+  const intl3 = tmp2(1127).intl;
+  const string = intl3.string;
+  const t = tmp2(1127).t;
   const tmp6 = closure_8;
   const tmp8 = stateFromStores1;
-  obj5.size = guildId(5833).GuildIconSizes.LARGE;
-  obj4.children = closure_7(stateFromStores1(5833), obj5);
-  obj3.leading = closure_7(View, obj4);
-  const intl = guildId(1115).intl;
-  obj3.title = intl.string(guildId(1115).t.tlopTM);
-  const items2 = [closure_7(guildId(7426).BottomSheetTitleHeader, obj3), , ];
-  const obj6 = { leading: null, label: null, onPress: null };
-  const tmp9 = stateFromStores1(5833);
-  obj6.leading = closure_7(guildId(1177).Icon, { source: stateFromStores1(12659) });
-  const obj8 = { text: null };
-  const intl2 = guildId(1115).intl;
-  obj8.text = intl2.string(guildId(1115).t.e6RscS);
-  obj6.label = closure_7(guildId(8903).FormLabel, obj8);
-  obj6.onPress = function onPress() {
-    ReadStateActionCreators.ackGuildFeature(guildId, ReadStateTypes.GUILD_EVENT);
-    ActionSheetActionCreatorsDefault.hideActionSheet();
-  };
-  items2[1] = closure_7(guildId(8903).FormRow, obj6);
-  const obj9 = { leading: null, label: null, onPress: null };
-  const obj7 = { source: stateFromStores1(12659) };
-  obj9.leading = closure_7(guildId(1177).Icon, { source: tmp8(stateFromStores1 ? 12660 : 12661) });
-  const intl3 = tmp2(1115).intl;
-  const string = intl3.string;
-  const t = tmp2(1115).t;
-  if (stateFromStores1) {
-    let stringResult = string(t.COiLo0);
+  if (tmp8) {
+    stringResult = string(t.COiLo0);
   } else {
     stringResult = string(t.ONG3Yz);
   }
-  const obj11 = { children: null };
-  obj9.label = closure_7(guildId(8903).FormLabel, { text: stringResult });
-  obj9.onPress = function onPress() {
-    const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
-    const result = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings(guildId, { mute_scheduled_events: !stateFromStores1 }, NotificationLabel.mutedEvents(!stateFromStores1));
-  };
-  items2[2] = closure_7(guildId(8903).FormRow, obj9);
-  obj11.children = items2;
-  return tmp6(guildId(7474).ActionSheet, obj11);
-};
+  const obj11 = { children: items2 };
+  items2[2] = closure_7(FormRow2, obj9);
+  return tmp6(ActionSheet, obj11);
+});
+let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/UpcomingEventsLongPressActionSheet.tsx");
+
+export default tmp4;

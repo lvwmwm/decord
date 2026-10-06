@@ -1,36 +1,172 @@
-// Module ID: 15324
-// Function ID: 15325
+// Module ID: 14551
+// Function ID: 14552
 // Name: BountiesEndCardPressableCta
-// Dependencies: [19, 17, 15325, 21, 4788, 576, 11770, 15321, 11577, 11780, 5700, 5698, 7996, 5836, 4784, 2]
-// Exports: default
+// Dependencies: [19, 17, 14552, 21, 4837, 588, 558, 576, 10675, 14553, 9771, 10683, 5764, 5762, 7145, 5896, 4833, 2]
 
-// Module 15324 (BountiesEndCardPressableCta)
-import nativeDefault from "native" /* 576 */;
-import QuestContent from "QuestContent" /* 5698 */;
-import AdCreativeType from "AdCreativeType" /* 5700 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7996 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11780 */;
-import noop from "module_19" /* 19 */;
+// Module 14551 (BountiesEndCardPressableCta)
+import nativeDefault from "native" /* 588 */;
+import QuestContent from "QuestContent" /* 5762 */;
+import AdCreativeType from "AdCreativeType" /* 5764 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10683 */;
+import BountyConstants from "BountyConstants" /* 14552 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const END_CARD_IMAGE_SIZE = fn(15325).END_CARD_IMAGE_SIZE;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+let bounty, obj1;
+
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+({ Pressable: closure_4, View: hasOwnProperty } = react_native);
+const END_CARD_IMAGE_SIZE = BountyConstants.END_CARD_IMAGE_SIZE;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles(() => {
-  const obj = { image: null, info: null, ctaContainer: null };
-  const size = { width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE, borderRadius: nativeDefault.radii.xl, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-  obj.image = size;
-  obj.info = { gap: nativeDefault.space.PX_4, alignItems: "center", marginTop: nativeDefault.space.PX_12 };
-  obj.ctaContainer = { position: "relative", alignItems: "center" };
+  const obj = { image: size, info: { alignItems: "center", marginTop: nativeDefault.space.PX_12 }, ctaContainer: { position: "relative", alignItems: "center" } };
+  size = { width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE, borderRadius: nativeDefault.radii.xl, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+  ({ alignItems: "center", marginTop: nativeDefault.space.PX_12 });
   return obj;
 });
-let size = fn(2);
-let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesEndCardPressableCta.tsx");
-
-export default function BountiesEndCardPressableCta(bounty) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
+  let getQuestImpressionId;
+  let items;
+  let tmp7;
+  let tmp8;
+  let tmp = bounty;
+  let obj = bounty(getQuestImpressionId[7]);
+  const cResult = obj.c(25);
+  bounty = bounty.bounty;
+  const sourceQuestContent = bounty.sourceQuestContent;
+  const disabled = bounty.disabled;
+  const tmp5 = closure_9();
+  const tmpResult = tmp(getQuestImpressionId[8]);
+  getQuestImpressionId = tmpResult.useGetQuestImpressionId();
+  if (cResult[0] !== bounty) {
+    const tmpResult3 = tmp(getQuestImpressionId[9]);
+    const bountyCtaInfo = tmpResult3.getBountyCtaInfo(bounty);
+    let scaledImageUrl;
+    if (null != bountyCtaInfo.iconImageUri) {
+      size = { assetUrl: bountyCtaInfo.iconImageUri, width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE };
+      const tmpResult4 = tmp(getQuestImpressionId[10]);
+      scaledImageUrl = tmpResult4.getScaledImageUrl(size);
+    }
+    cResult[0] = bounty;
+    cResult[1] = bountyCtaInfo;
+    cResult[2] = scaledImageUrl;
+    tmp8 = scaledImageUrl;
+    tmp7 = bountyCtaInfo;
+  } else {
+    tmp7 = cResult[1];
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === bounty.cta) {
+    if (cResult[4] === bounty.id) {
+      if (cResult[5] === getQuestImpressionId) {
+        let tmp15;
+        if (cResult[8] !== tmp8) {
+          let obj2 = { uri: tmp8 };
+          cResult[8] = tmp8;
+          cResult[9] = obj2;
+          tmp15 = obj2;
+        } else {
+          tmp15 = cResult[9];
+        }
+        if (cResult[10] === tmp5.image) {
+          let tmp16;
+          let tmp20;
+          if (cResult[11] === tmp15) {
+            tmp16 = cResult[12];
+          }
+          if (cResult[13] !== tmp7.label) {
+            const obj3 = { variant: "text-md/semibold", color: "text-strong", children: tmp7.label };
+            const tmp22 = closure_7(tmp(getQuestImpressionId[16]).Text, obj3);
+            cResult[13] = tmp7.label;
+            cResult[14] = tmp22;
+            tmp20 = tmp22;
+          } else {
+            tmp20 = cResult[14];
+          }
+          if (cResult[15] === tmp5.info) {
+            let tmp23;
+            if (cResult[16] === tmp20) {
+              tmp23 = cResult[17];
+            }
+            if (cResult[18] === tmp7.label) {
+              if (cResult[19] === (undefined !== disabled && disabled)) {
+                if (cResult[20] === tmp5.ctaContainer) {
+                  if (cResult[21] === tmp14) {
+                    if (cResult[22] === tmp16) {
+                      let tmp27;
+                      if (cResult[23] === tmp23) {
+                        tmp27 = cResult[24];
+                      }
+                      return tmp27;
+                    }
+                  }
+                }
+              }
+            }
+            const obj4 = { onPress: tmp14, disabled: undefined !== disabled && disabled, hitSlop: 16, accessibilityRole: "button", accessibilityLabel: tmp7.label, style: tmp5.ctaContainer, children: items };
+            items = [tmp16, tmp23];
+            const tmp30 = closure_8(closure_4, obj4);
+            cResult[18] = tmp7.label;
+            cResult[19] = undefined !== disabled && disabled;
+            cResult[20] = tmp5.ctaContainer;
+            class A {
+              constructor() {
+                tmp = closure_0(closure_2[11]);
+                obj = { adContentId: bounty.id, adCreativeType: closure_0(closure_2[12]).AdCreativeType.BOUNTY, cta: bounty.cta };
+                openAdGameLinkDirectly = tmp.openAdGameLinkDirectly;
+                obj1 = { content: closure_0(closure_2[13]).QuestContent.VIDEO_MODAL_ICON_END_CARD, ctaContent: closure_0(closure_2[14]).QuestContentCTA.OPEN_GAME_LINK, impressionId: closure_2(), sourceQuestContent };
+                result = openAdGameLinkDirectly(obj, obj1);
+                return;
+              }
+            }
+            cResult[21] = tmp14;
+            cResult[22] = tmp16;
+            cResult[23] = tmp23;
+            cResult[24] = tmp30;
+            tmp27 = tmp30;
+          }
+          const obj5 = { style: tmp5.info, children: tmp20 };
+          const tmp26 = closure_7(closure_5, obj5);
+          cResult[15] = tmp5.info;
+          cResult[16] = tmp20;
+          cResult[17] = tmp26;
+          tmp23 = tmp26;
+        }
+        const obj6 = { source: tmp15, style: tmp5.image };
+        const tmp19 = closure_7(sourceQuestContent(getQuestImpressionId[15]), obj6);
+        cResult[10] = tmp5.image;
+        cResult[11] = tmp15;
+        cResult[12] = tmp19;
+        tmp16 = tmp19;
+      }
+    }
+  }
+  class A {
+    constructor() {
+      tmp = closure_0(closure_2[11]);
+      obj = { adContentId: bounty.id, adCreativeType: closure_0(closure_2[12]).AdCreativeType.BOUNTY, cta: bounty.cta };
+      openAdGameLinkDirectly = tmp.openAdGameLinkDirectly;
+      obj1 = { content: closure_0(closure_2[13]).QuestContent.VIDEO_MODAL_ICON_END_CARD, ctaContent: closure_0(closure_2[14]).QuestContentCTA.OPEN_GAME_LINK, impressionId: closure_2(), sourceQuestContent };
+      result = openAdGameLinkDirectly(obj, obj1);
+      return;
+    }
+  }
+  cResult[3] = bounty.cta;
+  cResult[4] = bounty.id;
+  cResult[5] = getQuestImpressionId;
+  cResult[6] = sourceQuestContent;
+  cResult[7] = A;
+}) : ((bounty) => {
+  let items1;
+  let obj6;
   bounty = bounty.bounty;
   const sourceQuestContent = bounty.sourceQuestContent;
   let flag = bounty.disabled;
@@ -38,34 +174,42 @@ export default function BountiesEndCardPressableCta(bounty) {
     flag = false;
   }
   let getQuestImpressionId;
-  const tmp = closure_9();
-  getQuestImpressionId = bounty(getQuestImpressionId[6]).useGetQuestImpressionId();
-  let obj = bounty(getQuestImpressionId[6]);
-  const bountyCtaInfo = bounty(getQuestImpressionId[7]).getBountyCtaInfo(bounty);
+  let tmp = closure_9();
+  let obj = bounty(getQuestImpressionId[8]);
+  getQuestImpressionId = obj.useGetQuestImpressionId();
+  let obj2 = bounty(getQuestImpressionId[9]);
+  const bountyCtaInfo = obj2.getBountyCtaInfo(bounty);
   let scaledImageUrl;
   if (null != bountyCtaInfo.iconImageUri) {
-    const size = { assetUrl: bountyCtaInfo.iconImageUri, width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE };
-    scaledImageUrl = tmp2(tmp3[8]).getScaledImageUrl(size);
-    const tmp2Result = tmp2(tmp3[8]);
+    size = { assetUrl: bountyCtaInfo.iconImageUri, width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE };
+    const tmp2Result = bounty(getQuestImpressionId[10]);
+    scaledImageUrl = tmp2Result.getScaledImageUrl(size);
   }
   const items = [, , , ];
   ({ id: arr[0], cta: arr[1] } = bounty);
   items[2] = getQuestImpressionId;
   items[3] = sourceQuestContent;
   let callback;
+  const tmp8 = closure_8;
+  const tmp9 = closure_4;
   if (!flag) {
-    callback = noop.useCallback(() => {
-      const obj = QuestPlatformUtils;
-      const obj2 = { adContentId: bounty.id, adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, cta: bounty.cta };
-      const result = obj.openAdGameLinkDirectly(obj2, { content: QuestContent.QuestContent.VIDEO_MODAL_ICON_END_CARD, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent });
+    callback = react.useCallback(() => {
+      const openAdGameLinkDirectly = QuestPlatformUtils.openAdGameLinkDirectly;
+      const obj = { adContentId: bounty.id, adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, cta: bounty.cta };
+      const obj2 = { content: QuestContent.QuestContent.VIDEO_MODAL_ICON_END_CARD, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
+      const result = openAdGameLinkDirectly(obj, obj2);
     }, items);
   }
-  const obj3 = { onPress: callback, disabled: flag, hitSlop: 16, accessibilityRole: "button", accessibilityLabel: bountyCtaInfo.label, style: tmp.ctaContainer, children: null };
-  const items1 = [closure_7(sourceQuestContent(getQuestImpressionId[13]), { source: { uri: scaledImageUrl }, style: tmp.image }), ];
-  const obj5 = { style: tmp.info, children: null };
-  const items2 = [closure_7(bounty(getQuestImpressionId[14]).Text, { variant: "text-md/semibold", color: "text-strong", children: bountyCtaInfo.label }), closure_7(bounty(getQuestImpressionId[14]).Text, { variant: "text-sm/medium", color: "text-default", children: bountyCtaInfo.subtext })];
-  obj5.children = items2;
-  items1[1] = closure_8(closure_5, obj5);
-  obj3.children = items1;
-  return closure_8(closure_4, obj3);
-};
+  const obj3 = { onPress: callback, disabled: flag, hitSlop: 16, accessibilityRole: "button", accessibilityLabel: bountyCtaInfo.label, style: tmp.ctaContainer, children: items1 };
+  items1 = [, ];
+  const obj4 = { source: { uri: scaledImageUrl }, style: tmp.image };
+  items1[0] = closure_7(sourceQuestContent(getQuestImpressionId[15]), obj4);
+  const obj5 = { style: tmp.info, children: closure_7(bounty(getQuestImpressionId[16]).Text, obj6) };
+  obj6 = { variant: "text-md/semibold", color: "text-strong", children: bountyCtaInfo.label };
+  items1[1] = closure_7(closure_5, obj5);
+  return tmp8(tmp9, obj3);
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesEndCardPressableCta.tsx");
+
+export default tmp4;

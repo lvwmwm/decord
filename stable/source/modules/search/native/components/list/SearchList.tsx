@@ -1,105 +1,125 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 16468
+// Function ID: 16469
 // Name: SearchList
-// Dependencies: [19, 17, 8154, 21, 4788, 17125, 17127, 17128, 17143, 17121, 17145, 17147, 17142, 17129, 17148, 17152, 17153, 17156, 17157, 17158, 17159, 17160, 1612, 17112, 1115, 9029, 2]
+// Dependencies: [19, 17, 7307, 21, 4837, 16469, 16471, 16472, 16487, 16465, 16489, 16491, 16486, 16473, 16492, 16496, 16497, 16500, 16501, 16502, 16503, 16504, 16505, 558, 576, 1619, 16456, 1127, 8176, 2]
 
-// Module 17124 (SearchList)
-import util from "util" /* 1115 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import _mod9029 from "module_9029" /* 9029 */;
-import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 17121 */;
-import DMRowDefault from "DMRow" /* 17125 */;
-import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 17127 */;
-import SearchHistoryRowDefault from "SearchHistoryRow" /* 17128 */;
-import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 17129 */;
-import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 17142 */;
-import MediaGridItemDefault from "MediaGridItem" /* 17143 */;
-import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 17145 */;
-import MediaGridDefault from "MediaGrid" /* 17147 */;
-import MessageRowDefault from "MessageRow" /* 17148 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 17152 */;
-import LinkGridItemDefault from "LinkGridItem" /* 17153 */;
-import FileGridItemDefault from "FileGridItem" /* 17156 */;
-import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 17157 */;
-import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 17158 */;
-import GenericTextRowDefault from "GenericTextRow" /* 17159 */;
-import SearchListSectionDefault from "SearchListSection" /* 17160 */;
-import noop from "module_19" /* 19 */;
+// Module 16468 (SearchList)
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 8176 */;
+import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 16465 */;
+import DMRowDefault from "DMRow" /* 16469 */;
+import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 16471 */;
+import SearchHistoryRowDefault from "SearchHistoryRow" /* 16472 */;
+import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 16473 */;
+import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 16486 */;
+import MediaGridItemDefault from "MediaGridItem" /* 16487 */;
+import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 16489 */;
+import MediaGridDefault from "MediaGrid" /* 16491 */;
+import MessageRowDefault from "MessageRow" /* 16492 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 16496 */;
+import LinkGridItemDefault from "LinkGridItem" /* 16497 */;
+import FileGridItemDefault from "FileGridItem" /* 16500 */;
+import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 16501 */;
+import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 16502 */;
+import GenericTextRowDefault from "GenericTextRow" /* 16503 */;
+import SearchListSectionDefault from "SearchListSection" /* 16504 */;
+import SmartSearchRowDefault from "SmartSearchRow" /* 16505 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import SearchConstants from "SearchConstants" /* 7307 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const pages_ErrorScreenDefault = tmp3(17112);
-require = fn;
+let c9;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let tmp6;
+const ErrorScreenDefault = tmp6(16456);
 function keyExtractor(type) {
+  let key;
+  const type2 = type.type;
   type = type.type;
-  if (constants2.DM === type) {
+  if (metroImportDefault.DM === type2) {
+    const _HermesInternal12 = HermesInternal;
+    key = "" + type.section + "-" + type.props.user.id + "-" + type.props.guildId;
+  } else if (metroImportDefault.GUILD_CHANNEL_MEMBER === type2) {
     const _HermesInternal11 = HermesInternal;
-    let key = "" + type.section + "-" + type.props.user.id + "-" + type.props.guildId;
-  } else if (tmp.GUILD_CHANNEL_MEMBER === type) {
-    const _HermesInternal10 = HermesInternal;
     key = "" + type.props.user.id + "-" + type.props.guildId;
-  } else if (tmp.SEARCH_HISTORY_ITEM === type) {
+  } else if (metroImportDefault.SEARCH_HISTORY_ITEM === type2) {
+    let combined;
     const searchHistoryItem = type.props.searchHistoryItem;
-    const type2 = searchHistoryItem.type;
-    if (constants.TEXT === type2) {
+    const type3 = searchHistoryItem.type;
+    if (metroRequire.TEXT === type3) {
       const tags = searchHistoryItem.tags;
       let joined;
+      const text = searchHistoryItem.text;
       if (tags != null) {
         const mapped = tags.map((text) => text.text);
         joined = mapped.join(" ");
       }
-      const _HermesInternal9 = HermesInternal;
-      let combined = "" + searchHistoryItem.text + " " + joined;
+      const _HermesInternal10 = HermesInternal;
+      combined = "" + text + " " + joined;
     } else {
-      if (tmp9.GROUP_DM !== type2) {
-        if (tmp9.GUILD_TEXT_CHANNEL !== type2) {
-          if (tmp9.GUILD_VOICE_CHANNEL !== type2) {
-            if (tmp9.DM === type2) {
+      if (metroRequire.GROUP_DM !== type3) {
+        if (metroRequire.GUILD_TEXT_CHANNEL !== type3) {
+          if (metroRequire.GUILD_VOICE_CHANNEL !== type3) {
+            if (metroRequire.DM === type3) {
               const _HermesInternal13 = HermesInternal;
               combined = "" + searchHistoryItem.userId;
             }
           }
         }
       }
-      const _HermesInternal8 = HermesInternal;
+      const _HermesInternal9 = HermesInternal;
       combined = "" + searchHistoryItem.channelId;
     }
     key = combined;
-  } else if (tmp.MEDIA_GRID === type) {
+  } else if (metroImportDefault.MEDIA_GRID === type2) {
     const media = type.props.media;
     const mapped1 = media.map((messageId) => "" + messageId.messageId + "-" + messageId.mediaIndex);
     key = mapped1.join("-");
-  } else if (tmp.MEDIA === type) {
-    const _HermesInternal7 = HermesInternal;
+  } else if (metroImportDefault.MEDIA === type2) {
+    const _HermesInternal8 = HermesInternal;
     key = "" + type.props.media.messageId + "-" + type.props.media.mediaIndex;
   } else {
-    if (tmp.MEDIA_PLACEHOLDER !== type) {
-      if (tmp.FILE_OR_LINK_PLACEHOLDER !== type) {
-        if (tmp.MESSAGE_PLACEHOLDER !== type) {
-          if (tmp.GUILD_CHANNEL_MEMBER_PLACEHOLDER !== type) {
-            if (tmp.GROUP_DM === type) {
-              const _HermesInternal6 = HermesInternal;
+    if (metroImportDefault.MEDIA_PLACEHOLDER !== type2) {
+      if (metroImportDefault.FILE_OR_LINK_PLACEHOLDER !== type2) {
+        if (metroImportDefault.MESSAGE_PLACEHOLDER !== type2) {
+          if (metroImportDefault.GUILD_CHANNEL_MEMBER_PLACEHOLDER !== type2) {
+            if (metroImportDefault.GROUP_DM === type2) {
+              const _HermesInternal7 = HermesInternal;
               key = "" + type.section + "-" + type.props.channel.id;
             } else {
-              if (tmp.GUILD_TEXT_CHANNEL !== type) {
-                if (tmp.GUILD_VOICE_CHANNEL !== type) {
-                  if (tmp.MESSAGE === type) {
-                    const _HermesInternal4 = HermesInternal;
+              if (metroImportDefault.GUILD_TEXT_CHANNEL !== type2) {
+                if (metroImportDefault.GUILD_VOICE_CHANNEL !== type2) {
+                  if (metroImportDefault.MESSAGE === type2) {
+                    const _HermesInternal5 = HermesInternal;
                     key = "" + type.props.message.id;
-                  } else if (tmp.LINK === type) {
-                    const _HermesInternal3 = HermesInternal;
+                  } else if (metroImportDefault.LINK === type2) {
+                    const _HermesInternal4 = HermesInternal;
                     key = "" + type.props.data.messageId + "-" + type.props.data.linkIndex;
-                  } else if (tmp.FILE === type) {
-                    const _HermesInternal2 = HermesInternal;
+                  } else if (metroImportDefault.FILE === type2) {
+                    const _HermesInternal3 = HermesInternal;
                     key = "" + type.props.data.messageId + "-" + type.props.data.fileIndex;
-                  } else if (tmp.GENERIC === type) {
-                    const _HermesInternal = HermesInternal;
+                  } else if (metroImportDefault.GENERIC === type2) {
+                    const _HermesInternal2 = HermesInternal;
                     key = "" + type.props.text;
-                  } else if (tmp.SECTION === type) {
-                    const _HermesInternal12 = HermesInternal;
+                  } else if (metroImportDefault.SECTION === type2) {
+                    const _HermesInternal = HermesInternal;
                     key = "" + type.props.title;
+                  } else if (metroImportDefault.INTELLIGENCE_SMART_SEARCH === type2) {
+                    key = type.props.requestKey;
                   }
                 }
               }
-              const _HermesInternal5 = HermesInternal;
+              const _HermesInternal6 = HermesInternal;
               key = "" + type.props.channel.id;
             }
           }
@@ -108,7 +128,7 @@ function keyExtractor(type) {
     }
     key = type.key;
   }
-  return "" + type.type + "-" + key;
+  return "" + type + "-" + key;
 }
 function getItemType(type) {
   return type.type;
@@ -116,90 +136,119 @@ function getItemType(type) {
 function renderItem(item) {
   item = item.item;
   const type = item.type;
-  if (constants2.DM === type) {
+  if (metroImportDefault.DM === type) {
     const obj2 = {};
+    const tmp102 = DMRowDefault;
     const merged = Object.assign(item.props);
-    return React6(DMRowDefault, obj2);
-  } else if (tmp.GROUP_DM === type) {
+    return metroImportAll(tmp102, obj2);
+  } else if (metroImportDefault.GROUP_DM === type) {
     const obj3 = {};
+    const tmp96 = rows_GroupDMRowDefault;
     const merged1 = Object.assign(item.props);
-    return React6(rows_GroupDMRowDefault, obj3);
-  } else if (tmp.SEARCH_HISTORY_ITEM === type) {
+    return metroImportAll(tmp96, obj3);
+  } else if (metroImportDefault.SEARCH_HISTORY_ITEM === type) {
     const obj4 = {};
+    const tmp90 = SearchHistoryRowDefault;
     const merged2 = Object.assign(item.props);
-    return React6(SearchHistoryRowDefault, obj4);
-  } else if (tmp.MEDIA === type) {
+    return metroImportAll(tmp90, obj4);
+  } else if (metroImportDefault.MEDIA === type) {
     const obj5 = {};
+    const tmp84 = MediaGridItemDefault;
     const merged3 = Object.assign(item.props);
-    return React6(MediaGridItemDefault, obj5);
-  } else if (tmp.MEDIA_PLACEHOLDER === type) {
+    return metroImportAll(tmp84, obj5);
+  } else if (metroImportDefault.MEDIA_PLACEHOLDER === type) {
     const obj6 = {};
+    const tmp78 = MediaGridPlaceholderDefault;
     const merged4 = Object.assign(item.props);
-    return React6(MediaGridPlaceholderDefault, obj6);
-  } else if (tmp.FILE_OR_LINK_PLACEHOLDER === type) {
+    return metroImportAll(tmp78, obj6);
+  } else if (metroImportDefault.FILE_OR_LINK_PLACEHOLDER === type) {
     const obj7 = {};
+    const tmp72 = FileOrLinkGridPlaceholderDefault;
     const merged5 = Object.assign(item.props);
-    return React6(FileOrLinkGridPlaceholderDefault, obj7);
-  } else if (tmp.MEDIA_GRID === type) {
+    return metroImportAll(tmp72, obj7);
+  } else if (metroImportDefault.MEDIA_GRID === type) {
     const obj8 = {};
+    const tmp66 = MediaGridDefault;
     const merged6 = Object.assign(item.props);
-    return React6(MediaGridDefault, obj8);
-  } else if (tmp.GUILD_TEXT_CHANNEL === type) {
+    return metroImportAll(tmp66, obj8);
+  } else if (metroImportDefault.GUILD_TEXT_CHANNEL === type) {
     const obj9 = {};
+    const tmp60 = GuildTextChannelRowDefault;
     const merged7 = Object.assign(item.props);
-    return React6(GuildTextChannelRowDefault, obj9);
-  } else if (tmp.GUILD_VOICE_CHANNEL === type) {
+    return metroImportAll(tmp60, obj9);
+  } else if (metroImportDefault.GUILD_VOICE_CHANNEL === type) {
     const obj10 = {};
+    const tmp54 = GuildVoiceOrStageChannelRowDefault;
     const merged8 = Object.assign(item.props);
-    return React6(GuildVoiceOrStageChannelRowDefault, obj10);
-  } else if (tmp.MESSAGE === type) {
+    return metroImportAll(tmp54, obj10);
+  } else if (metroImportDefault.MESSAGE === type) {
     const obj11 = {};
+    const tmp48 = MessageRowDefault;
     const merged9 = Object.assign(item.props);
-    return React6(MessageRowDefault, obj11);
-  } else if (tmp.MESSAGE_PLACEHOLDER === type) {
-    return React6(FormRowPlaceholderDefault, {});
-  } else if (tmp.LINK === type) {
+    return metroImportAll(tmp48, obj11);
+  } else if (metroImportDefault.MESSAGE_PLACEHOLDER === type) {
+    return metroImportAll(FormRowPlaceholderDefault, {});
+  } else if (metroImportDefault.LINK === type) {
     const obj12 = {};
+    const tmp39 = LinkGridItemDefault;
     const merged10 = Object.assign(item.props);
-    return React6(LinkGridItemDefault, obj12);
-  } else if (tmp.FILE === type) {
+    return metroImportAll(tmp39, obj12);
+  } else if (metroImportDefault.FILE === type) {
     const obj13 = {};
+    const tmp33 = FileGridItemDefault;
     const merged11 = Object.assign(item.props);
-    return React6(FileGridItemDefault, obj13);
-  } else if (tmp.GUILD_CHANNEL_MEMBER === type) {
+    return metroImportAll(tmp33, obj13);
+  } else if (metroImportDefault.GUILD_CHANNEL_MEMBER === type) {
     const obj14 = {};
+    const tmp27 = GuildChannelMemberRowDefault;
     const merged12 = Object.assign(item.props);
-    return React6(GuildChannelMemberRowDefault, obj14);
-  } else if (tmp.GUILD_CHANNEL_MEMBER_PLACEHOLDER === type) {
-    return React6(MemberRowPlaceholderDefault, {});
-  } else if (tmp.GENERIC === type) {
+    return metroImportAll(tmp27, obj14);
+  } else if (metroImportDefault.GUILD_CHANNEL_MEMBER_PLACEHOLDER === type) {
+    return metroImportAll(MemberRowPlaceholderDefault, {});
+  } else if (metroImportDefault.GENERIC === type) {
     const obj15 = {};
+    const tmp18 = GenericTextRowDefault;
     const merged13 = Object.assign(item.props);
-    return React6(GenericTextRowDefault, obj15);
-  } else if (tmp.SECTION === type) {
-    const obj = {};
+    return metroImportAll(tmp18, obj15);
+  } else if (metroImportDefault.SECTION === type) {
+    const obj16 = {};
+    const tmp12 = SearchListSectionDefault;
     const merged14 = Object.assign(item.props);
-    return React6(SearchListSectionDefault, obj);
+    return metroImportAll(tmp12, obj16);
+  } else if (metroImportDefault.INTELLIGENCE_SMART_SEARCH === type) {
+    const obj = {};
+    const tmp6 = SmartSearchRowDefault;
+    const merged15 = Object.assign(item.props);
+    return metroImportAll(tmp6, obj);
   } else {
     return null;
   }
 }
-get_ActivityIndicator = fn(17);
-({ View: closure_4, StyleSheet: hasOwnProperty } = get_ActivityIndicator);
-const SearchConstants = fn(8154);
-({ SearchHistoryItemTypes: metroRequire, SearchListItemTypes: closure_7 } = SearchConstants);
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4788);
+({ View: closure_4, StyleSheet: hasOwnProperty } = react_native);
+({ SearchHistoryItemTypes: metroRequire, SearchListItemTypes: metroImportDefault } = SearchConstants);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ container: { flex: 1 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/search/native/components/list/SearchList.tsx");
-
-export default noop.memo(function SearchList(arg0) {
-  ({ contentContainerStyle, data, ListHeaderComponent, ListFooterComponent, numColumns } = arg0);
-  ({ onEndReached, ItemSeparatorComponent } = arg0);
-  const ref = noop.useRef(null);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let ItemSeparatorComponent;
+  let ListFooterComponent;
+  let ListHeaderComponent;
+  let contentContainerStyle;
+  let data;
+  let intl;
+  let items;
+  let numColumns;
+  let obj3;
+  let onEndReached;
+  let tmp14;
+  let tmp6Result;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(21);
+  ({ contentContainerStyle, data, onEndReached, ItemSeparatorComponent, ListHeaderComponent, ListFooterComponent, numColumns } = arg0);
+  const ref = react.useRef(null);
+  const tmp5 = closure_10();
   let num = 0.5;
+  const bottom = useSafeAreaInsetsDefault().bottom;
   if (null != numColumns) {
     num = 0.5;
     if (1 !== numColumns) {
@@ -211,40 +260,149 @@ export default noop.memo(function SearchList(arg0) {
       }
     }
   }
-  const obj = { style: closure_10().container, children: null };
-  let tmp8 = tmp5;
-  if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
-    const obj2 = { style: absoluteFill.absoluteFill, children: null };
-    const obj3 = { text: null };
-    const intl = util.intl;
-    obj3.text = intl.string(util.t.V6nAfF);
-    obj2.children = React6(pages_ErrorScreenDefault, obj3);
-    tmp8 = React6(tmp7, obj2);
-    const tmp3Result = pages_ErrorScreenDefault;
+  if (cResult[0] !== (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent)) {
+    let tmp9 = tmp7;
+    if (tmp9) {
+      const obj2 = { style: hasOwnProperty.absoluteFill, children: metroImportAll(tmp6Result, obj3) };
+      obj3 = { text: intl.string(intl2.t.V6nAfF) };
+      tmp6Result = ErrorScreenDefault;
+      intl = tmp(1127).intl;
+      tmp9 = metroImportAll(React3, obj2);
+    }
+    cResult[0] = 0 === data.length && null == ListFooterComponent && null == ListHeaderComponent;
+    cResult[1] = tmp9;
+    tmp8 = tmp9;
+  } else {
+    tmp8 = cResult[1];
   }
-  const items = [tmp8, ];
-  const obj4 = { ref, overrideProps: null, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data: null, renderItem: null, onEndReachedThreshold: null, onEndReached: null, scrollsToTop: true, contentContainerStyle: null, keyExtractor: null, getItemType: null, ListHeaderComponent: null, ListFooterComponent: null, ItemSeparatorComponent: null, numColumns: null };
+  if (cResult[2] !== (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent)) {
+    let obj4;
+    if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
+      obj4 = { importantForAccessibility: "no", scrollEnabled: false };
+    }
+    cResult[2] = 0 === data.length && null == ListFooterComponent && null == ListHeaderComponent;
+    cResult[3] = obj4;
+    tmp14 = obj4;
+  } else {
+    tmp14 = cResult[3];
+  }
+  const sum = 16 + bottom;
+  if (cResult[4] === contentContainerStyle) {
+    let tmp16;
+    if (cResult[5] === sum) {
+      tmp16 = cResult[6];
+    }
+    if (cResult[7] === ItemSeparatorComponent) {
+      if (cResult[8] === ListFooterComponent) {
+        if (cResult[9] === ListHeaderComponent) {
+          if (cResult[10] === data) {
+            if (cResult[11] === numColumns) {
+              if (cResult[12] === onEndReached) {
+                if (cResult[13] === tmp14) {
+                  if (cResult[14] === tmp16) {
+                    let tmp18;
+                    if (cResult[15] === num) {
+                      tmp18 = cResult[16];
+                    }
+                    if (cResult[17] === tmp5.container) {
+                      if (cResult[18] === tmp8) {
+                        let tmp24;
+                        if (cResult[19] === tmp18) {
+                          tmp24 = cResult[20];
+                        }
+                        return tmp24;
+                      }
+                    }
+                    const obj5 = { style: tmp5.container, children: items };
+                    items = [tmp8, tmp18];
+                    const tmp27 = React4(React3, obj5);
+                    cResult[17] = tmp5.container;
+                    cResult[18] = tmp8;
+                    cResult[19] = tmp18;
+                    cResult[20] = tmp27;
+                    tmp24 = tmp27;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    const obj6 = { ref, overrideProps: tmp14, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, contentContainerStyle: tmp16, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns };
+    const tmp23 = metroImportAll(defaultMVCPConfig.AnimatedFlashList, obj6);
+    cResult[7] = ItemSeparatorComponent;
+    cResult[8] = ListFooterComponent;
+    cResult[9] = ListHeaderComponent;
+    cResult[10] = data;
+    cResult[11] = numColumns;
+    cResult[12] = onEndReached;
+    cResult[13] = tmp14;
+    cResult[14] = tmp16;
+    cResult[15] = num;
+    cResult[16] = tmp23;
+    tmp18 = tmp23;
+  }
+  const obj7 = { paddingBottom: sum };
+  const merged = Object.assign(contentContainerStyle);
+  cResult[4] = contentContainerStyle;
+  cResult[5] = sum;
+  cResult[6] = obj7;
+  tmp16 = obj7;
+}) : ((arg0) => {
+  let ItemSeparatorComponent;
+  let ListFooterComponent;
+  let ListHeaderComponent;
+  let contentContainerStyle;
+  let data;
+  let intl;
+  let items;
+  let numColumns;
+  let obj3;
   let obj5;
+  let obj6;
+  let onEndReached;
+  let tmp3Result;
+  ({ contentContainerStyle, data, ListHeaderComponent, ListFooterComponent, numColumns } = arg0);
+  ({ onEndReached, ItemSeparatorComponent } = arg0);
+  let num = 0.5;
+  const ref = react.useRef(null);
+  const tmp2 = closure_10();
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  if (null != numColumns) {
+    num = 0.5;
+    if (1 !== numColumns) {
+      num = 0.8;
+      if (2 !== numColumns) {
+        if (numColumns >= 3) {
+          num = 0.99;
+        }
+      }
+    }
+  }
+  let tmp8 = tmp5;
+  const obj = { style: tmp2.container, children: items };
+  const tmp6 = React4;
+  if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
+    const obj2 = { style: hasOwnProperty.absoluteFill, children: metroImportAll(tmp3Result, obj3) };
+    obj3 = { text: intl.string(intl2.t.V6nAfF) };
+    tmp3Result = ErrorScreenDefault;
+    intl = intl2.intl;
+    tmp8 = metroImportAll(tmp7, obj2);
+  }
+  items = [tmp8, ];
+  const obj4 = { ref, overrideProps: obj5, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, contentContainerStyle: obj6, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns };
+  obj5 = undefined;
+  const AnimatedFlashList = defaultMVCPConfig.AnimatedFlashList;
+  const tmp13 = metroImportAll;
   if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
     obj5 = { importantForAccessibility: "no", scrollEnabled: false };
   }
-  obj4.overrideProps = obj5;
-  obj4.data = data;
-  obj4.renderItem = renderItem;
-  obj4.onEndReachedThreshold = num;
-  obj4.onEndReached = onEndReached;
-  const tmp13 = React6;
-  const tmp2 = closure_10();
-  const tmp6 = React7;
+  obj6 = { paddingBottom: 16 + bottom };
   const merged = Object.assign(contentContainerStyle);
-  obj4.contentContainerStyle = { paddingBottom: 16 + useSafeAreaInsetsDefault().bottom };
-  obj4.keyExtractor = keyExtractor;
-  obj4.getItemType = getItemType;
-  obj4.ListHeaderComponent = ListHeaderComponent;
-  obj4.ListFooterComponent = ListFooterComponent;
-  obj4.ItemSeparatorComponent = ItemSeparatorComponent;
-  obj4.numColumns = numColumns;
-  items[1] = tmp13(_mod9029.AnimatedFlashList, obj4);
-  obj.children = items;
-  return tmp6(React4, obj);
-});
+  items[1] = tmp13(AnimatedFlashList, obj4);
+  return tmp6(React3, obj);
+}));
+const result = size.fileFinishedImporting("modules/search/native/components/list/SearchList.tsx");
+
+export default memoResult;

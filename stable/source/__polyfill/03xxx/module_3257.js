@@ -1,9 +1,0 @@
-// Module ID: 3257
-// Function ID: 3258
-// Dependencies: [1121]
-
-// Module 3257
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/application_account_linking", scales: [1], hash: "7bd1d391e8b9022004489c52afb85bf3", name: "AccountLinking.compiled.messages", type: "jsona" });

@@ -1,43 +1,224 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 11400
+// Function ID: 11401
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 9166, 2004, 504, 2]
-// Exports: useDeveloperActivityShelfItems
+// Dependencies: [19, 8317, 2011, 558, 576, 504, 2]
 
-// Module 12324 (useDeveloperActivityShelfItems)
-import noop from "module_19" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9166 */;
+// Module 11400 (useDeveloperActivityShelfItems)
+import Constants from "Constants" /* 2011 */;
+import react from "react" /* 19 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8317 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_4 = fn(2004).DEFAULT_EMBEDDED_ACTIVITY_CONFIG;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activities/useDeveloperActivityShelfItems.tsx");
-
-export const useDeveloperActivityShelfItems = function useDeveloperActivityShelfItems() {
+let closure_4 = Constants.DEFAULT_EMBEDDED_ACTIVITY_CONFIG;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let lastUsedObject;
+  let tmp10;
+  let tmp11;
+  let tmp13;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  const tmp = lastUsedObject;
+  const tmp2 = dependencyMap;
+  let obj = lastUsedObject(576);
+  const cResult = obj.c(13);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [DeveloperActivityShelfStore];
+    const fn = function s() {
+      const obj = { isEnabled: DeveloperActivityShelfStore.getIsEnabled(), lastUsedObject: DeveloperActivityShelfStore.getLastUsedObject() };
+      return obj;
+    };
+    const items1 = [];
+    let num = 0;
+    cResult[0] = items;
+    let num2 = 1;
+    cResult[1] = fn;
+    cResult[2] = items1;
+    tmp4 = items;
+    tmp5 = fn;
+    tmp6 = items1;
+  } else {
+    [tmp4, tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5, tmp6);
+  lastUsedObject = stateFromStoresObject.lastUsedObject;
+  const isEnabled = stateFromStoresObject.isEnabled;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [DeveloperActivityShelfStore];
+    const fn2 = function p() {
+      return DeveloperActivityShelfStore.getDeveloperShelfItems();
+    };
+    const items3 = [];
+    cResult[3] = items2;
+    cResult[4] = fn2;
+    cResult[5] = items3;
+    tmp11 = items3;
+    tmp10 = fn2;
+    tmp9 = items2;
+  } else {
+    tmp9 = cResult[3];
+    tmp10 = cResult[4];
+    tmp11 = cResult[5];
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStoresArray = tmpResult2.useStateFromStoresArray(tmp9, tmp10, tmp11);
+  if (isEnabled) {
+    let tmp16;
+    let tmp17;
+    if (cResult[7] === stateFromStoresArray) {
+      let tmp15;
+      if (cResult[8] === lastUsedObject) {
+        tmp15 = cResult[9];
+      }
+      tmp13 = tmp15;
+    }
+    const _Symbol = Symbol;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      class E {
+        constructor(application) {
+          let obj2;
+          const obj = { application, activity: obj2 };
+          obj2 = { application_id: application.id };
+          const merged = Object.assign(closure_1_4);
+          const merged1 = Object.assign(application.embeddedActivityConfig);
+          return obj;
+        }
+      }
+      cResult[10] = E;
+      tmp16 = E;
+    } else {
+      class E {
+        constructor(application) {
+          let obj2;
+          const obj = { application, activity: obj2 };
+          obj2 = { application_id: application.id };
+          const merged = Object.assign(closure_1_4);
+          const merged1 = Object.assign(application.embeddedActivityConfig);
+          return obj;
+        }
+      }
+    }
+    if (cResult[11] !== lastUsedObject) {
+      class I {
+        constructor(arg0, arg1) {
+          let num = 1;
+          if (null != lastUsedObject[arg0.application.id]) {
+            let num2 = -1;
+            if (null != lastUsedObject[arg1.application.id]) {
+              num2 = tmp2 - tmp;
+            }
+            num = num2;
+          }
+          return num;
+        }
+      }
+      cResult[11] = lastUsedObject;
+      cResult[12] = I;
+      tmp17 = I;
+    } else {
+      class I {
+        constructor(arg0, arg1) {
+          let num = 1;
+          if (null != lastUsedObject[arg0.application.id]) {
+            let num2 = -1;
+            if (null != lastUsedObject[arg1.application.id]) {
+              num2 = tmp2 - tmp;
+            }
+            num = num2;
+          }
+          return num;
+        }
+      }
+    }
+    const mapped = stateFromStoresArray.map(tmp16);
+    const sorted = mapped.sort(tmp17);
+    cResult[7] = stateFromStoresArray;
+    cResult[8] = lastUsedObject;
+    cResult[9] = sorted;
+    tmp15 = sorted;
+  } else {
+    class I {
+      constructor(arg0, arg1) {
+        let num = 1;
+        if (null != lastUsedObject[arg0.application.id]) {
+          let num2 = -1;
+          if (null != lastUsedObject[arg1.application.id]) {
+            num2 = tmp2 - tmp;
+          }
+          num = num2;
+        }
+        return num;
+      }
+    }
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class I {
+        constructor(arg0, arg1) {
+          let num = 1;
+          if (null != lastUsedObject[arg0.application.id]) {
+            let num2 = -1;
+            if (null != lastUsedObject[arg1.application.id]) {
+              num2 = tmp2 - tmp;
+            }
+            num = num2;
+          }
+          return num;
+        }
+      }
+      cResult[6] = tmp14;
+      tmp13 = tmp14;
+    } else {
+      class I {
+        constructor(arg0, arg1) {
+          let num = 1;
+          if (null != lastUsedObject[arg0.application.id]) {
+            let num2 = -1;
+            if (null != lastUsedObject[arg1.application.id]) {
+              num2 = tmp2 - tmp;
+            }
+            num = num2;
+          }
+          return num;
+        }
+      }
+    }
+  }
+  return tmp13;
+}) : (() => {
+  let isEnabled;
+  let lastUsedObject;
+  let obj = isEnabled(lastUsedObject[5]);
   const items = [DeveloperActivityShelfStore];
-  const stateFromStoresObject = isEnabled(lastUsedObject[3]).useStateFromStoresObject(items, () => ({ isEnabled: DeveloperActivityShelfStore.getIsEnabled(), lastUsedObject: DeveloperActivityShelfStore.getLastUsedObject() }), []);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { isEnabled: DeveloperActivityShelfStore.getIsEnabled(), lastUsedObject: DeveloperActivityShelfStore.getLastUsedObject() };
+    return obj;
+  }, []);
   isEnabled = stateFromStoresObject.isEnabled;
   lastUsedObject = stateFromStoresObject.lastUsedObject;
-  let obj = isEnabled(lastUsedObject[3]);
+  let obj2 = isEnabled(lastUsedObject[5]);
   const items1 = [DeveloperActivityShelfStore];
-  const stateFromStoresArray = isEnabled(lastUsedObject[3]).useStateFromStoresArray(items1, () => DeveloperActivityShelfStore.getDeveloperShelfItems(), []);
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => DeveloperActivityShelfStore.getDeveloperShelfItems(), []);
   const items2 = [stateFromStoresArray, isEnabled, lastUsedObject];
   return stateFromStoresArray.useMemo(() => {
-    if (isEnabled) {
+    let sorted;
+    const tmp = isEnabled;
+    if (tmp) {
+      const tmp2 = stateFromStoresArray;
       const mapped = stateFromStoresArray.map((application) => {
-        const obj = { application, activity: null };
-        const obj2 = {};
+        let obj2;
+        const obj = { application, activity: obj2 };
+        obj2 = { application_id: application.id };
         const merged = Object.assign(closure_1_4);
         const merged1 = Object.assign(application.embeddedActivityConfig);
-        obj2.application_id = application.id;
-        obj.activity = obj2;
         return obj;
       });
-      let sorted = mapped.sort((arg0, arg1) => {
+      sorted = mapped.sort((arg0, arg1) => {
         let num = 1;
-        if (null != dependencyMap[arg0.application.id]) {
+        if (null != lastUsedObject[arg0.application.id]) {
           let num2 = -1;
-          if (null != tmp2) {
+          if (null != lastUsedObject[arg1.application.id]) {
             num2 = tmp2 - tmp;
           }
           num = num2;
@@ -49,4 +230,7 @@ export const useDeveloperActivityShelfItems = function useDeveloperActivityShelf
     }
     return sorted;
   }, items2);
-};
+});
+const result = size.fileFinishedImporting("modules/activities/useDeveloperActivityShelfItems.tsx");
+
+export const useDeveloperActivityShelfItems = tmp2;

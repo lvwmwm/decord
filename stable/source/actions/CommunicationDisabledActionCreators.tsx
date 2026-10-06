@@ -1,34 +1,32 @@
-// Module ID: 12126
-// Function ID: 12127
+// Module ID: 11196
+// Function ID: 11197
 // Name: CommunicationDisabledActionCreators
-// Dependencies: [5, 4380, 5769, 2]
+// Dependencies: [5, 4424, 5833, 2]
 
-// Module 12126 (CommunicationDisabledActionCreators)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 11196 (CommunicationDisabledActionCreators)
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
-const result = size.fileFinishedImporting("actions/CommunicationDisabledActionCreators.tsx");
-
-export default {
-  setCommunicationDisabledDuration(arg0, id, value, current, arg4, arg5) {
-    closure_0 = arg0;
-    closure_1 = id;
-    asyncGeneratorStep = value;
-    closure_3 = current;
-    closure_4 = arg4;
-    closure_5 = arg5;
+let _asyncToGenerator = _asyncToGenerator_mod;
+let obj = {
+  setCommunicationDisabledDuration(guildId, id, value, current, arg4, arg5) {
+    let userId = id;
+    _asyncToGenerator = value;
+    let closure_3 = current;
+    let closure_4 = arg4;
+    let closure_5 = arg5;
     return (async (arg0, value) => {
       if (guildId === 2) {
         guildId = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -43,15 +41,16 @@ export default {
               return obj5;
             } else {
               let toISOStringResult = null;
-              if (null != duration) {
+              if (null != _asyncToGenerator) {
                 const obj2 = guildId(userId[1])();
-                toISOStringResult = guildId(userId[1])().add(tmp20, "s").toISOString();
-                const addResult = guildId(userId[1])().add(tmp20, "s");
+                const addResult = obj2.add(_asyncToGenerator, "s");
+                toISOStringResult = addResult.toISOString();
               }
-              const obj6 = { guildId, userId, communicationDisabledUntilTimestamp: toISOStringResult, duration, reason, location: _location, moderatorReportId };
+              const obj6 = { guildId, userId, communicationDisabledUntilTimestamp: toISOStringResult, duration: _asyncToGenerator, reason, location: _location, moderatorReportId };
+              const obj4 = guildId(userId[2]);
               userId = 1;
               guildId = 1;
-              const obj7 = { value: guildId(userId[2]).setCommunicationDisabledUntil(obj6), done: false };
+              const obj7 = { value: obj4.setCommunicationDisabledUntil(obj6), done: false };
               return obj7;
             }
           } else if (arg0 === 1) {
@@ -63,13 +62,16 @@ export default {
             return obj;
           } else {
             guildId = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
-        } catch (tmp15) {
-          guildId = tmp;
-          throw tmp15;
+        } catch (tmp14) {
+          guildId = 3;
+          throw tmp14;
         }
       }
     })();
   }
 };
+const result = size.fileFinishedImporting("actions/CommunicationDisabledActionCreators.tsx");
+
+export default obj;

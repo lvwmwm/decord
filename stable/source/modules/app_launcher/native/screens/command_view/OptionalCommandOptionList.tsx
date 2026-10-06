@@ -1,88 +1,128 @@
-// Module ID: 12474
-// Function ID: 12475
+// Module ID: 11562
+// Function ID: 11563
 // Name: OptionalCommandOptionList
-// Dependencies: [19, 17, 21, 5936, 5854, 5218, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 558, 576, 5916, 5282, 1127, 5997, 2]
 
-// Module 12474 (OptionalCommandOptionList)
-import util from "util" /* 1115 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import TableRow from "TableRow" /* 5854 */;
-import TableRowGroup from "TableRowGroup" /* 5936 */;
-import noop from "module_19" /* 19 */;
+// Module 11562 (OptionalCommandOptionList)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1127 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import TableRow2 from "TableRow" /* 5916 */;
+import TableRowGroup2 from "TableRowGroup" /* 5997 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let style;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/app_launcher/native/screens/command_view/OptionalCommandOptionList.tsx");
-
-export default function OptionalCommandOptionList(arg0) {
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+  let onSelectOption;
+  let options;
+  const obj = onSelectOption(576);
+  const cResult = obj.c(10);
+  const tmp = onSelectOption;
+  ({ options, onSelectOption } = style);
+  style = style.style;
+  if (0 === options.length) {
+    return null;
+  } else {
+    let tmp5;
+    if (cResult[0] === onSelectOption) {
+      let tmp4;
+      let tmp7;
+      if (cResult[1] === options) {
+        tmp4 = cResult[2];
+      }
+      if (cResult[5] !== tmp4) {
+        const tmp9 = jsx(tmp(5997).TableRowGroup, { hasIcons: false, children: tmp4 });
+        cResult[5] = tmp4;
+        cResult[6] = tmp9;
+        tmp7 = tmp9;
+      } else {
+        tmp7 = cResult[6];
+      }
+      if (cResult[7] === style) {
+        let tmp10;
+        if (cResult[8] === tmp7) {
+          tmp10 = cResult[9];
+        }
+        return tmp10;
+      }
+      const tmp13 = <View style={style} collapsable={false}>{tmp7}</View>;
+      cResult[7] = style;
+      cResult[8] = tmp7;
+      cResult[9] = tmp13;
+      tmp10 = tmp13;
+    }
+    if (cResult[3] !== onSelectOption) {
+      const fn = function o(displayName) {
+        let intl;
+        let closure_0 = displayName;
+        const TableRow = onSelectOption(dependencyMap[5]).TableRow;
+        ({
+          accessibilityRole: "none",
+          variant: "tertiary",
+          size: "sm",
+          shrink: true,
+          text: intl.string(onSelectOption(dependencyMap[7]).t.OYkgVk),
+          onPress() {
+            return onSelectOption(displayName);
+          }
+        });
+        const Button = onSelectOption(dependencyMap[6]).Button;
+        intl = onSelectOption(dependencyMap[7]).intl;
+        return <TableRow key={arg0.name} onPress={function onPress() {
+          return onSelectOption(displayName);
+        }} label={arg0.displayName} subLabel={arg0.displayDescription} trailing={null} />;
+      };
+      cResult[3] = onSelectOption;
+      cResult[4] = fn;
+      tmp5 = fn;
+    } else {
+      tmp5 = cResult[4];
+    }
+    const mapped = options.map(tmp5);
+    cResult[0] = onSelectOption;
+    cResult[1] = options;
+    cResult[2] = mapped;
+    tmp4 = mapped;
+  }
+}) : ((arg0) => {
+  let options;
   ({ options, onSelectOption: require } = arg0);
   let tmp2 = null;
   if (0 !== options.length) {
-    let obj = { style: tmp, collapsable: false, children: null };
-    let obj2 = {
+    const obj2 = {
       hasIcons: false,
       children: options.map((displayName) => {
-          closure_0 = displayName;
-          const obj = {
+          let intl;
+          require = displayName;
+          const TableRow = TableRow2.TableRow;
+          ({
+            accessibilityRole: "none",
+            variant: "tertiary",
+            size: "sm",
+            shrink: true,
+            text: intl.string(intl2.t.OYkgVk),
             onPress() {
-              return require(closure_0);
-            },
-            label: displayName.displayName,
-            subLabel: displayName.displayDescription,
-            trailing: null
-          };
-          const obj2 = { accessibilityRole: "none", variant: "tertiary", size: "sm", shrink: true, text: null, onPress: null };
-          const intl = util.intl;
-          obj2.text = intl.string(util.t.OYkgVk);
-          obj2.onPress = function onPress() {
-            return require(closure_0);
-          };
-          obj.trailing = jsx(components_Button_Button.Button, { accessibilityRole: "none", variant: "tertiary", size: "sm", shrink: true, text: null, onPress: null });
-          return jsx(TableRow.TableRow, {
-            onPress() {
-              return require(closure_0);
-            },
-            label: displayName.displayName,
-            subLabel: displayName.displayDescription,
-            trailing: null
-          }, displayName.name);
+              return require(displayName);
+            }
+          });
+          const Button = components_Button_Button.Button;
+          intl = intl2.intl;
+          return <TableRow key={arg0.name} onPress={function onPress() {
+            return require(displayName);
+          }} label={arg0.displayName} subLabel={arg0.displayDescription} trailing={null} />;
         })
     };
-    obj.children = jsx(TableRowGroup.TableRowGroup, {
-      hasIcons: false,
-      children: options.map((displayName) => {
-          closure_0 = displayName;
-          const obj = {
-            onPress() {
-              return require(closure_0);
-            },
-            label: displayName.displayName,
-            subLabel: displayName.displayDescription,
-            trailing: null
-          };
-          const obj2 = { accessibilityRole: "none", variant: "tertiary", size: "sm", shrink: true, text: null, onPress: null };
-          const intl = util.intl;
-          obj2.text = intl.string(util.t.OYkgVk);
-          obj2.onPress = function onPress() {
-            return require(closure_0);
-          };
-          obj.trailing = jsx(components_Button_Button.Button, { accessibilityRole: "none", variant: "tertiary", size: "sm", shrink: true, text: null, onPress: null });
-          return jsx(TableRow.TableRow, {
-            onPress() {
-              return require(closure_0);
-            },
-            label: displayName.displayName,
-            subLabel: displayName.displayDescription,
-            trailing: null
-          }, displayName.name);
-        })
-    });
+    const TableRowGroup = TableRowGroup2.TableRowGroup;
     tmp2 = <View style={tmp} collapsable={false}>{null}</View>;
   }
   return tmp2;
-};
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/screens/command_view/OptionalCommandOptionList.tsx");
+
+export default tmp3;

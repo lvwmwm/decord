@@ -1,18 +1,19 @@
-// Module ID: 12608
-// Function ID: 12609
+// Module ID: 11700
+// Function ID: 11701
 // Name: GuildDirectoryTemplatesIcons
-// Dependencies: [12609, 12610, 12611, 12612, 12613, 12614, 12615, 2]
+// Dependencies: [11701, 11702, 11703, 11704, 11705, 11706, 11707, 2]
 
-// Module 12608 (GuildDirectoryTemplatesIcons)
-import _modDef12609 from "module_12609" /* 12609 */;
-import _modDef12610 from "module_12610" /* 12610 */;
-import _modDef12611 from "module_12611" /* 12611 */;
-import _modDef12612 from "module_12612" /* 12612 */;
-import _modDef12613 from "module_12613" /* 12613 */;
-import _modDef12614 from "module_12614" /* 12614 */;
-import _modDef12615 from "module_12615" /* 12615 */;
+// Module 11700 (GuildDirectoryTemplatesIcons)
+import AssetRegistryDefault from "AssetRegistry" /* 11701 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11702 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11703 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11704 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11705 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 11706 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 11707 */;
 import size from "module_2" /* 2 */;
 
+const obj = { CREATE: AssetRegistryDefault, HUB_SCHOOL_CLUB: AssetRegistryDefault2, HUB_STUDY: AssetRegistryDefault3, HUB_CLASS: AssetRegistryDefault4, HUB_SOCIAL: AssetRegistryDefault5, HUB_MAJOR: AssetRegistryDefault6, HUB_DORM: AssetRegistryDefault7 };
 const result = size.fileFinishedImporting("modules/directory_channels/native/GuildDirectoryTemplatesIcons.tsx");
 
-export const GUILD_TEMPLATE_ICONS = { CREATE: _modDef12609, HUB_SCHOOL_CLUB: _modDef12610, HUB_STUDY: _modDef12611, HUB_CLASS: _modDef12612, HUB_SOCIAL: _modDef12613, HUB_MAJOR: _modDef12614, HUB_DORM: _modDef12615 };
+export const GUILD_TEMPLATE_ICONS = obj;

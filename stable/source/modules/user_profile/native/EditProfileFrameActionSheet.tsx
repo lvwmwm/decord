@@ -1,112 +1,896 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 14176
+// Function ID: 14177
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 7831, 7823, 1074, 21, 4788, 576, 8487, 8471, 7439, 7459, 1241, 8465, 8472, 7427, 4784, 1115, 8473, 11030, 504, 14939, 8467, 8488, 14940, 13507, 13508, 8474, 11514, 5230, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 6981, 6973, 1086, 21, 4837, 588, 558, 576, 7635, 7619, 6584, 6604, 1253, 7613, 7620, 1127, 4833, 7621, 6572, 10236, 504, 14177, 7615, 7636, 14178, 12749, 12750, 7622, 10753, 5292, 2]
 
-// Module 14938 (EditProfileFrameActionSheet)
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8465 */;
-import useShopProductItems from "useShopProductItems" /* 8472 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8488 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 14940 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7831 */;
+// Module 14176 (EditProfileFrameActionSheet)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 6973 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7613 */;
+import useShopProductItems from "useShopProductItems" /* 7620 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 7622 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7636 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10753 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 14178 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6981 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let BottomSheet, dependencyMap, importDefault, setPendingChangesResult, trackResult;
 
-require = fn;
-function EditProfileFrameInner(user) {
+let StyleSheet;
+let c10;
+let c9;
+let hasOwnProperty;
+let obj2;
+let obj3;
+let obj4;
+let unpackModuleId;
+({ View: hasOwnProperty, StyleSheet } = react_native);
+const isProfileFrameRecord = ProfileFrameRecord.isProfileFrameRecord;
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, bounceOffset: { position: "absolute", top: -250, height: 250, right: 0, left: 0 }, title: obj3, previewContainer: { overflow: "hidden", height: 300, alignItems: "center" }, previewGradient: obj4 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createStyles = createStyles.createStyles;
+obj3 = { alignSelf: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
+obj4 = { bottom: -1, color: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+let closure_12 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_2;
+  let currentProfileFrame;
+  let guildId;
+  let selectedProfileFrame;
+  let tmp11;
+  let tmp9;
+  let user;
+  const tmp = guildId;
+  let obj = guildId(576);
+  const cResult = obj.c(38);
+  ({ user, currentProfileFrame, guildId } = arg0);
+  const tmp4 = closure_12();
+  let str = user.id;
+  const tmp6 = selectedProfileFrame(7635);
+  if (str == null) {
+    str = "";
+  }
+  const tmp6Result = tmp6(str);
+  [selectedProfileFrame, tmp9] = react.useState(currentProfileFrame);
+  const tmpResult = tmp(7619);
+  const bottomSheetRef = tmpResult.useBottomSheetRef().bottomSheetRef;
+  const tmp5Result = selectedProfileFrame(6584);
+  const analyticsLocations = tmp5Result(tmp5(6604).EDIT_PROFILE_FRAME_SHEET).analyticsLocations;
+  if (cResult[0] !== tmp6Result) {
+    let tmp12 = null != tmp6Result;
+    if (tmp12) {
+      let result;
+      if (tmp6Result != null) {
+        result = tmp6Result.hasPremiumCustomization();
+      }
+      tmp12 = result;
+    }
+    cResult[0] = tmp6Result;
+    cResult[1] = tmp12;
+    tmp11 = tmp12;
+  } else {
+    tmp11 = cResult[1];
+  }
+  if (cResult[2] === guildId) {
+    let tmp14;
+    if (cResult[3] === tmp11) {
+      tmp14 = cResult[4];
+    }
+    dependencyMap = tmp14;
+    if (cResult[5] !== tmp14) {
+      class O {
+        constructor() {
+          tmp = closure_1(closure_2[15]);
+          obj = {};
+          track = tmp.track;
+          OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+          merged = Object.assign(closure_2);
+          obj.is_fullscreen = true;
+          trackResult = track(OPEN_POPOUT, obj);
+          return;
+        }
+      }
+      cResult[5] = tmp14;
+      class T {
+        constructor(arg0) {
+          tmp = closure_0(closure_2[16]);
+          obj = { guildId, profileFrame: null };
+          setPendingChanges = tmp.setPendingChanges;
+          obj2 = closure_0(closure_2[17]);
+          purchasedItem = obj2.getPurchasedItem(arg0, "firstProfileFrame");
+          if (purchasedItem == null) {
+            purchasedItem = closure_1;
+          }
+          if (purchasedItem == null) {
+            purchasedItem = null;
+          }
+          obj.profileFrame = purchasedItem;
+          setPendingChangesResult = setPendingChanges(obj);
+          return;
+        }
+      }
+    } else {
+      class O {
+        constructor() {
+          tmp = closure_1(closure_2[15]);
+          obj = {};
+          track = tmp.track;
+          OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+          merged = Object.assign(closure_2);
+          obj.is_fullscreen = true;
+          trackResult = track(OPEN_POPOUT, obj);
+          return;
+        }
+      }
+    }
+    if (cResult[7] === guildId) {
+      class O {
+        constructor() {
+          tmp = closure_1(closure_2[15]);
+          obj = {};
+          track = tmp.track;
+          OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+          merged = Object.assign(closure_2);
+          obj.is_fullscreen = true;
+          trackResult = track(OPEN_POPOUT, obj);
+          return;
+        }
+      }
+      const container = tmp4.container;
+      if (cResult[10] !== tmp4.bounceOffset) {
+        class O {
+          constructor() {
+            tmp = closure_1(closure_2[15]);
+            obj = {};
+            track = tmp.track;
+            OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+            merged = Object.assign(closure_2);
+            obj.is_fullscreen = true;
+            trackResult = track(OPEN_POPOUT, obj);
+            return;
+          }
+        }
+        let obj2 = { style: tmp4.bounceOffset };
+        class T {
+          constructor(arg0) {
+            tmp = closure_0(closure_2[16]);
+            obj = { guildId, profileFrame: null };
+            setPendingChanges = tmp.setPendingChanges;
+            obj2 = closure_0(closure_2[17]);
+            purchasedItem = obj2.getPurchasedItem(arg0, "firstProfileFrame");
+            if (purchasedItem == null) {
+              purchasedItem = closure_1;
+            }
+            if (purchasedItem == null) {
+              purchasedItem = null;
+            }
+            obj.profileFrame = purchasedItem;
+            setPendingChangesResult = setPendingChanges(obj);
+            return;
+          }
+        }
+        cResult[10] = tmp4.bounceOffset;
+        cResult[11] = tmp19;
+      } else {
+        class O {
+          constructor() {
+            tmp = closure_1(closure_2[15]);
+            obj = {};
+            track = tmp.track;
+            OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+            merged = Object.assign(closure_2);
+            obj.is_fullscreen = true;
+            trackResult = track(OPEN_POPOUT, obj);
+            return;
+          }
+        }
+      }
+      class T {
+        constructor(arg0) {
+          tmp = closure_0(closure_2[16]);
+          obj = { guildId, profileFrame: null };
+          setPendingChanges = tmp.setPendingChanges;
+          obj2 = closure_0(closure_2[17]);
+          purchasedItem = obj2.getPurchasedItem(arg0, "firstProfileFrame");
+          if (purchasedItem == null) {
+            purchasedItem = closure_1;
+          }
+          if (purchasedItem == null) {
+            purchasedItem = null;
+          }
+          obj.profileFrame = purchasedItem;
+          setPendingChangesResult = setPendingChanges(obj);
+          return;
+        }
+      }
+      const title = tmp4.title;
+      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+        class O {
+          constructor() {
+            tmp = closure_1(closure_2[15]);
+            obj = {};
+            track = tmp.track;
+            OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+            merged = Object.assign(closure_2);
+            obj.is_fullscreen = true;
+            trackResult = track(OPEN_POPOUT, obj);
+            return;
+          }
+        }
+        const stringResult = obj6.string(tmp(1127).t["oTSa/q"]);
+        class T {
+          constructor(arg0) {
+            tmp = closure_0(closure_2[16]);
+            obj = { guildId, profileFrame: null };
+            setPendingChanges = tmp.setPendingChanges;
+            obj2 = closure_0(closure_2[17]);
+            purchasedItem = obj2.getPurchasedItem(arg0, "firstProfileFrame");
+            if (purchasedItem == null) {
+              purchasedItem = closure_1;
+            }
+            if (purchasedItem == null) {
+              purchasedItem = null;
+            }
+            obj.profileFrame = purchasedItem;
+            setPendingChangesResult = setPendingChanges(obj);
+            return;
+          }
+        }
+      } else {
+        class O {
+          constructor() {
+            tmp = closure_1(closure_2[15]);
+            obj = {};
+            track = tmp.track;
+            OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+            merged = Object.assign(closure_2);
+            obj.is_fullscreen = true;
+            trackResult = track(OPEN_POPOUT, obj);
+            return;
+          }
+        }
+      }
+      if (cResult[13] !== tmp4.title) {
+        class O {
+          constructor() {
+            tmp = closure_1(closure_2[15]);
+            obj = {};
+            track = tmp.track;
+            OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+            merged = Object.assign(closure_2);
+            obj.is_fullscreen = true;
+            trackResult = track(OPEN_POPOUT, obj);
+            return;
+          }
+        }
+        class T {
+          constructor(arg0) {
+            tmp = closure_0(closure_2[16]);
+            obj = { guildId, profileFrame: null };
+            setPendingChanges = tmp.setPendingChanges;
+            obj2 = closure_0(closure_2[17]);
+            purchasedItem = obj2.getPurchasedItem(arg0, "firstProfileFrame");
+            if (purchasedItem == null) {
+              purchasedItem = closure_1;
+            }
+            if (purchasedItem == null) {
+              purchasedItem = null;
+            }
+            obj.profileFrame = purchasedItem;
+            setPendingChangesResult = setPendingChanges(obj);
+            return;
+          }
+        }
+        cResult[13] = tmp4.title;
+        cResult[14] = tmp24;
+      } else {
+        class O {
+          constructor() {
+            tmp = closure_1(closure_2[15]);
+            obj = {};
+            track = tmp.track;
+            OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+            merged = Object.assign(closure_2);
+            obj.is_fullscreen = true;
+            trackResult = track(OPEN_POPOUT, obj);
+            return;
+          }
+        }
+      }
+      if (cResult[15] === guildId) {
+        class O {
+          constructor() {
+            tmp = closure_1(closure_2[15]);
+            obj = {};
+            track = tmp.track;
+            OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+            merged = Object.assign(closure_2);
+            obj.is_fullscreen = true;
+            trackResult = track(OPEN_POPOUT, obj);
+            return;
+          }
+        }
+      }
+      const obj4 = { user, selectedProfileFrame, setSelectedProfileFrame: tmp9, guildId };
+      cResult[15] = guildId;
+      cResult[16] = selectedProfileFrame;
+      cResult[17] = user;
+      cResult[18] = closure_9(closure_13, obj4);
+      const tmp28 = closure_9(closure_13, obj4);
+    }
+    class T {
+      constructor(arg0) {
+        tmp = closure_0(closure_2[16]);
+        obj = { guildId, profileFrame: null };
+        setPendingChanges = tmp.setPendingChanges;
+        obj2 = closure_0(closure_2[17]);
+        purchasedItem = obj2.getPurchasedItem(arg0, "firstProfileFrame");
+        if (purchasedItem == null) {
+          purchasedItem = closure_1;
+        }
+        if (purchasedItem == null) {
+          purchasedItem = null;
+        }
+        obj.profileFrame = purchasedItem;
+        setPendingChangesResult = setPendingChanges(obj);
+        return;
+      }
+    }
+    cResult[7] = guildId;
+    cResult[8] = selectedProfileFrame;
+    cResult[9] = T;
+  }
+  const obj5 = { type: selectedProfileFrame(6604).EDIT_PROFILE_FRAME_SHEET, guild_id: guildId, profile_has_nitro_customization: tmp11 };
+  cResult[2] = guildId;
+  cResult[3] = tmp11;
+  cResult[4] = obj5;
+  tmp14 = obj5;
+}) : ((arg0) => {
+  let closure_1;
+  let currentProfileFrame;
+  let guildId;
+  let intl;
+  let items3;
+  let items4;
+  let obj3;
+  let skuId;
+  let skuId1;
+  let tmp14;
+  let user;
+  ({ user, currentProfileFrame, guildId } = arg0);
+  importDefault = undefined;
+  let selectedProfileFrame;
+  let memo;
+  let tmp = closure_12();
+  let str = user.id;
+  const tmp4 = require("useDisplayProfile");
+  if (str == null) {
+    str = "";
+  }
+  const tmp4Result = tmp4(str);
+  importDefault = tmp4Result;
+  const tmp6 = memo(react.useState(currentProfileFrame), 2);
+  selectedProfileFrame = tmp6[0];
+  const tmp8 = tmp6[1];
+  let obj = guildId(tmp3[12]);
+  const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
+  const tmp2Result = require("useAnalyticsLocations");
+  const analyticsLocations = tmp2Result(tmp2(tmp3[14]).EDIT_PROFILE_FRAME_SHEET).analyticsLocations;
+  const items = [guildId, tmp4Result];
+  memo = react.useMemo(() => {
+    let tmp;
+    const obj = { type: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET, guild_id: guildId, profile_has_nitro_customization: tmp };
+    tmp = null != closure_1;
+    if (tmp) {
+      let result;
+      if (closure_1 != null) {
+        result = obj2.hasPremiumCustomization();
+      }
+      tmp = result;
+    }
+    return obj;
+  }, items);
+  const items1 = [memo];
+  const items2 = [selectedProfileFrame, guildId];
+  const callback = react.useCallback(() => {
+    const obj = { is_fullscreen: true };
+    const track = AnalyticsUtilsDefault.track;
+    const OPEN_POPOUT = AnalyticEvents.OPEN_POPOUT;
+    AnalyticsUtilsDefault;
+    const merged = Object.assign(memo);
+    track(OPEN_POPOUT, obj);
+  }, items1);
+  const callback1 = react.useCallback((arg0) => {
+    let purchasedItem;
+    const obj = { guildId, profileFrame: purchasedItem };
+    const setPendingChanges = UserProfileSettingsActionCreators.setPendingChanges;
+    UserProfileSettingsActionCreators;
+    const obj2 = useShopProductItems;
+    purchasedItem = obj2.getPurchasedItem(arg0, "firstProfileFrame");
+    if (purchasedItem == null) {
+      purchasedItem = first;
+    }
+    if (purchasedItem == null) {
+      purchasedItem = null;
+    }
+    setPendingChanges(obj);
+  }, items2);
+  let obj2 = { value: analyticsLocations, children: tmp14(BottomSheet, obj3) };
+  const AnalyticsLocationProvider = guildId(tmp3[13]).AnalyticsLocationProvider;
+  obj3 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, children: items4 };
+  const obj4 = { style: tmp.container, children: items3 };
+  const obj5 = { style: tmp.bounceOffset };
+  BottomSheet = guildId(tmp3[21]).BottomSheet;
+  items3 = [closure_9(closure_5, obj5), , ];
+  const obj6 = { variant: "redesign/heading-18/bold", style: tmp.title, children: intl.string(guildId(selectedProfileFrame[18]).t["oTSa/q"]) };
+  const Heading = guildId(tmp3[19]).Heading;
+  intl = guildId(tmp3[18]).intl;
+  items3[1] = closure_9(Heading, obj6);
+  items3[2] = closure_9(closure_13, { user, selectedProfileFrame, setSelectedProfileFrame: tmp8, guildId });
+  items4 = [closure_10(closure_5, obj4), ];
+  const obj7 = { user, currentSkuId: skuId, selectedSkuId: skuId1, onApply: callback1, analyticsLocations, analyticsSource: require("AnalyticsLocation").EDIT_PROFILE_FRAME_SHEET };
+  skuId = undefined;
+  tmp14 = closure_10;
+  const tmp2Result2 = require("EditCollectiblesCTAButton");
+  if (currentProfileFrame != null) {
+    skuId = currentProfileFrame.skuId;
+  }
+  skuId1 = undefined;
+  if (selectedProfileFrame != null) {
+    skuId1 = selectedProfileFrame.skuId;
+  }
+  items4[1] = closure_9(tmp2Result2, obj7);
+  return closure_9(AnalyticsLocationProvider, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let guildId;
+  let isFetching;
+  let selectedProfileFrame;
+  let setSelectedProfileFrame;
+  let tmp5;
+  let tmp6;
+  let tmp = user;
+  let obj = user(guildId[10]);
+  const cResult = obj.c(31);
+  user = user.user;
+  ({ selectedProfileFrame, setSelectedProfileFrame } = user);
+  guildId = user.guildId;
+  const obj2 = user(guildId[22]);
+  const getOrFetchCollectiblesCategoriesAndPurchases = obj2.useGetOrFetchCollectiblesCategoriesAndPurchases();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [CollectiblesPurchaseStore];
+    const fn = function o() {
+      return isFetching.isFetching;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(guildId[23]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const tmp10 = setSelectedProfileFrame(guildId[24])();
+  const tmp11 = setSelectedProfileFrame(guildId[11])(user.id, guildId);
+  let profileFrame;
+  const tmp9 = setSelectedProfileFrame;
+  if (tmp11 != null) {
+    const _userProfile = tmp11._userProfile;
+    if (_userProfile != null) {
+      profileFrame = _userProfile.profileFrame;
+    }
+  }
+  let profileFrame1;
+  if (tmp11 != null) {
+    const _guildMemberProfile = tmp11._guildMemberProfile;
+    if (_guildMemberProfile != null) {
+      profileFrame1 = _guildMemberProfile.profileFrame;
+    }
+  }
+  if (cResult[2] === guildId) {
+    if (cResult[3] === selectedProfileFrame) {
+      if (cResult[4] === profileFrame) {
+        let tmp14;
+        let tmp17;
+        let tmp16;
+        if (cResult[5] === profileFrame1) {
+          tmp14 = cResult[6];
+        }
+        if (cResult[7] !== user) {
+          const fn2 = function w() {
+            const tmp = null == user || user.isNonUserBot();
+            if (!tmp) {
+              const tmp4 = maybeFetchUserProfileDefault;
+              tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true, dispatchWait: true });
+            }
+          };
+          const items1 = [user];
+          cResult[7] = user;
+          class C {
+            constructor(arg0) {
+              let items;
+              let selectedSkuId;
+              ({ items, size, selectedSkuId } = arg0);
+              const obj = { items, size, selectedSkuId, setSelectedProfileFrame, guildId };
+              return React4(EditProfileFrameSection.EditProfileFrameRow, obj);
+            }
+          }
+          cResult[8] = fn2;
+          cResult[9] = items1;
+          tmp17 = items1;
+          tmp16 = fn2;
+        } else {
+          tmp16 = cResult[8];
+          tmp17 = cResult[9];
+        }
+        const effect = react.useEffect(tmp16, tmp17);
+        if (cResult[10] === guildId) {
+          let tmp20;
+          if (cResult[11] === setSelectedProfileFrame) {
+            tmp20 = cResult[12];
+          }
+          let skuId;
+          if (tmp14 != null) {
+            skuId = tmp14.skuId;
+          }
+          if (cResult[13] === guildId) {
+            if (cResult[14] === skuId) {
+              let tmp22;
+              if (cResult[15] === user) {
+                tmp22 = cResult[16];
+              }
+              let skuId1;
+              if (tmp14 != null) {
+                skuId1 = tmp14.skuId;
+              }
+              const _Symbol = Symbol;
+              class C {
+                constructor(arg0) {
+                  let items;
+                  let selectedSkuId;
+                  ({ items, size, selectedSkuId } = arg0);
+                  const obj = { items, size, selectedSkuId, setSelectedProfileFrame, guildId };
+                  return React4(EditProfileFrameSection.EditProfileFrameRow, obj);
+                }
+              }
+              if (cResult[19] === skuId1) {
+                let tmp29;
+                if (cResult[20] === user) {
+                  tmp29 = cResult[21];
+                }
+                let skuId2;
+                if (selectedProfileFrame != null) {
+                  skuId2 = selectedProfileFrame.skuId;
+                }
+                if (cResult[22] === stateFromStores) {
+                  if (cResult[23] === tmp20) {
+                    if (cResult[24] === tmp10) {
+                      let tmp33;
+                      if (cResult[25] === skuId2) {
+                        tmp33 = cResult[26];
+                      }
+                      if (cResult[27] === tmp22) {
+                        if (cResult[28] === tmp29) {
+                          let tmp37;
+                          if (cResult[29] === tmp33) {
+                            tmp37 = cResult[30];
+                          }
+                          return tmp37;
+                        }
+                      }
+                      const obj3 = { children: tmp40 };
+                      class C {
+                        constructor(arg0) {
+                          let items;
+                          let selectedSkuId;
+                          ({ items, size, selectedSkuId } = arg0);
+                          const obj = { items, size, selectedSkuId, setSelectedProfileFrame, guildId };
+                          return React4(EditProfileFrameSection.EditProfileFrameRow, obj);
+                        }
+                      }
+                      tmp40[0] = tmp22;
+                      tmp40[1] = tmp29;
+                      tmp40[2] = tmp33;
+                      const tmp41 = closure_10(closure_11, obj3);
+                      cResult[27] = tmp22;
+                      cResult[28] = tmp29;
+                      cResult[29] = tmp33;
+                      cResult[30] = tmp41;
+                      tmp37 = tmp41;
+                    }
+                  }
+                }
+                class C {
+                  constructor(arg0) {
+                    let items;
+                    let selectedSkuId;
+                    ({ items, size, selectedSkuId } = arg0);
+                    const obj = { items, size, selectedSkuId, setSelectedProfileFrame, guildId };
+                    return React4(EditProfileFrameSection.EditProfileFrameRow, obj);
+                  }
+                }
+                tmp35[0] = tmp10;
+                tmp35[1] = skuId2;
+                tmp35[2] = tmp20;
+                tmp35[3] = stateFromStores;
+                const tmp36 = closure_9(tmp(guildId[29]).EditCollectiblesPickerList, tmp35);
+                cResult[22] = stateFromStores;
+                cResult[23] = tmp20;
+                cResult[24] = tmp10;
+                cResult[25] = skuId2;
+                cResult[26] = tmp36;
+                tmp33 = tmp36;
+              }
+              const obj4 = { user, previewSkuId: skuId1, nitroJoinCTA: tmp27, nitroUpgradeCTA: tmp28 };
+              const tmp31 = closure_9(tmp9(guildId[28]), obj4);
+              cResult[19] = skuId1;
+              cResult[20] = user;
+              cResult[21] = tmp31;
+              tmp29 = tmp31;
+            }
+          }
+          class C {
+            constructor(arg0) {
+              let items;
+              let selectedSkuId;
+              ({ items, size, selectedSkuId } = arg0);
+              const obj = { items, size, selectedSkuId, setSelectedProfileFrame, guildId };
+              return React4(EditProfileFrameSection.EditProfileFrameRow, obj);
+            }
+          }
+          const obj5 = { previewSkuId: skuId, user, guildId };
+          const tmp24 = closure_9(closure_14, obj5);
+          cResult[13] = guildId;
+          cResult[14] = skuId;
+          cResult[15] = user;
+          cResult[16] = tmp24;
+          tmp22 = tmp24;
+        }
+        class C {
+          constructor(arg0) {
+            let items;
+            let selectedSkuId;
+            ({ items, size, selectedSkuId } = arg0);
+            const obj = { items, size, selectedSkuId, setSelectedProfileFrame, guildId };
+            return React4(EditProfileFrameSection.EditProfileFrameRow, obj);
+          }
+        }
+        cResult[10] = guildId;
+        cResult[11] = setSelectedProfileFrame;
+        cResult[12] = C;
+        tmp20 = C;
+      }
+    }
+  }
+  const tmpResult2 = tmp(guildId[25]);
+  const profilePreviewValue = tmpResult2.getProfilePreviewValue({ pendingValue: selectedProfileFrame, userValue: profileFrame, guildValue: profileFrame1, guildId });
+  cResult[2] = guildId;
+  cResult[3] = selectedProfileFrame;
+  cResult[4] = profileFrame;
+  cResult[5] = profileFrame1;
+  cResult[6] = profilePreviewValue;
+  tmp14 = profilePreviewValue;
+}) : ((user) => {
+  let intl;
+  let intl2;
+  let isFetching;
+  let profileFrame;
+  let profileFrame1;
+  let selectedProfileFrame;
+  let setSelectedProfileFrame;
+  let skuId1;
+  let skuId2;
   user = user.user;
   ({ selectedProfileFrame, setSelectedProfileFrame } = user);
   const guildId = user.guildId;
-  const getOrFetchCollectiblesCategoriesAndPurchases = user(guildId[20]).useGetOrFetchCollectiblesCategoriesAndPurchases();
-  const obj = user(guildId[20]);
+  let tmp = user;
+  let obj = user(guildId[22]);
+  const getOrFetchCollectiblesCategoriesAndPurchases = obj.useGetOrFetchCollectiblesCategoriesAndPurchases();
   const items = [CollectiblesPurchaseStore];
-  const stateFromStores = user(guildId[21]).useStateFromStores(items, () => isFetching.isFetching);
-  const obj2 = user(guildId[21]);
+  const obj2 = user(guildId[23]);
+  const stateFromStores = obj2.useStateFromStores(items, () => isFetching.isFetching);
+  const tmp6 = setSelectedProfileFrame(guildId[24])();
+  const tmp7 = setSelectedProfileFrame(guildId[11])(user.id, guildId);
+  const obj3 = { pendingValue: selectedProfileFrame, userValue: profileFrame, guildValue: profileFrame1, guildId };
+  profileFrame = undefined;
+  const getProfilePreviewValue = user(guildId[25]).getProfilePreviewValue;
+  user(guildId[25]);
   const tmp5 = setSelectedProfileFrame;
-  const tmp7 = setSelectedProfileFrame(guildId[9])(user.id, guildId);
-  const tmp6 = setSelectedProfileFrame(guildId[22])();
-  const obj4 = { pendingValue: selectedProfileFrame, userValue: null, guildValue: null, guildId: null };
-  let profileFrame;
   if (tmp7 != null) {
     const _userProfile = tmp7._userProfile;
     if (_userProfile != null) {
       profileFrame = _userProfile.profileFrame;
     }
   }
-  obj4.userValue = profileFrame;
-  let profileFrame1;
+  profileFrame1 = undefined;
   if (tmp7 != null) {
     const _guildMemberProfile = tmp7._guildMemberProfile;
     if (_guildMemberProfile != null) {
       profileFrame1 = _guildMemberProfile.profileFrame;
     }
   }
-  obj4.guildValue = profileFrame1;
-  obj4.guildId = guildId;
-  const profilePreviewValue = user(guildId[23]).getProfilePreviewValue(obj4);
+  const profilePreviewValue = getProfilePreviewValue(obj3);
   const items1 = [user];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    const tmp = null == user || user.isNonUserBot();
     if (!tmp) {
-      maybeFetchUserProfileDefault(obj.id, obj.getAvatarURL(null, 80), { withMutualGuilds: true, dispatchWait: true });
+      const tmp4 = maybeFetchUserProfileDefault;
+      tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true, dispatchWait: true });
     }
   }, items1);
   const items2 = [setSelectedProfileFrame, guildId];
   let skuId;
-  const callback = noop.useCallback((arg0) => {
+  const callback = react.useCallback((arg0) => {
+    let items;
+    let selectedSkuId;
     ({ items, size, selectedSkuId } = arg0);
-    return React7(EditProfileFrameSection.EditProfileFrameRow, { items, size, selectedSkuId, setSelectedProfileFrame, guildId });
+    const obj = { items, size, selectedSkuId, setSelectedProfileFrame, guildId };
+    return React4(EditProfileFrameSection.EditProfileFrameRow, obj);
   }, items2);
+  const tmp14 = closure_10;
+  const tmp15 = closure_11;
+  const tmp17 = closure_14;
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
-  const items3 = [closure_9(ProfileFrameSectionPreview, { previewSkuId: skuId, user, guildId }), , ];
-  const obj5 = { user, previewSkuId: null, nitroJoinCTA: null, nitroUpgradeCTA: null };
-  let skuId1;
-  const obj3 = user(guildId[23]);
-  const tmp13 = closure_10;
-  const tmp14 = closure_11;
+  const items3 = [closure_9(tmp17, { previewSkuId: skuId, user, guildId }), , ];
+  const obj4 = { user, previewSkuId: skuId1, nitroJoinCTA: intl.string(tmp(guildId[18]).t["JvNv+a"]), nitroUpgradeCTA: intl2.string(tmp(guildId[18]).t.hR2psy) };
+  skuId1 = undefined;
+  const tmp5Result = tmp5(guildId[28]);
   if (profilePreviewValue != null) {
     skuId1 = profilePreviewValue.skuId;
   }
-  obj5.previewSkuId = skuId1;
-  const intl = tmp(tmp2[18]).intl;
-  obj5.nitroJoinCTA = intl.string(user(guildId[18]).t["JvNv+a"]);
-  const intl2 = tmp(tmp2[18]).intl;
-  obj5.nitroUpgradeCTA = intl2.string(user(guildId[18]).t.hR2psy);
-  items3[1] = closure_9(tmp5(guildId[26]), obj5);
-  const obj6 = { sections: tmp6, selectedSkuId: null, renderRow: null, isFetching: null };
-  let skuId2;
+  intl = tmp(tmp2[18]).intl;
+  intl2 = tmp(tmp2[18]).intl;
+  items3[1] = closure_9(tmp5Result, obj4);
+  const obj5 = { sections: tmp6, selectedSkuId: skuId2, renderRow: callback, isFetching: stateFromStores };
+  skuId2 = undefined;
+  const EditCollectiblesPickerList = tmp(tmp2[29]).EditCollectiblesPickerList;
   if (selectedProfileFrame != null) {
     skuId2 = selectedProfileFrame.skuId;
   }
-  const obj7 = { children: null };
-  obj6.selectedSkuId = skuId2;
-  obj6.renderRow = callback;
-  obj6.isFetching = stateFromStores;
-  items3[2] = closure_9(user(guildId[27]).EditCollectiblesPickerList, obj6);
-  obj7.children = items3;
-  return tmp13(tmp14, obj7);
-}
-function ProfileFrameSectionPreview(arg0) {
+  const obj6 = { children: items3 };
+  items3[2] = closure_9(EditCollectiblesPickerList, obj5);
+  return tmp14(tmp15, obj6);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewSkuId) => {
+  let guildId;
+  let items;
+  let product;
+  let purchase;
+  let user;
+  const obj = react2;
+  const cResult = obj.c(16);
+  ({ user, guildId } = previewSkuId);
+  previewSkuId = previewSkuId.previewSkuId;
+  const tmp3 = closure_12();
+  ({ product, purchase } = useCollectiblesDataDefault(previewSkuId));
+  let first;
+  useCollectiblesDataDefault(previewSkuId);
+  if (product != null) {
+    first = product.items[0];
+  }
+  if (first == null) {
+    let first1;
+    if (purchase != null) {
+      first1 = purchase.items[0];
+    }
+    first = first1;
+  }
+  let tmp8 = null;
+  if (isProfileFrameRecord(first)) {
+    tmp8 = first;
+  }
+  if (cResult[0] === guildId) {
+    if (cResult[1] === tmp8) {
+      let tmp9;
+      let tmp13;
+      let tmp12;
+      if (cResult[2] === user) {
+        tmp9 = cResult[3];
+      }
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const point = { x: 0, y: 0.6 };
+        const point1 = { x: 0, y: 1 };
+        cResult[4] = point;
+        cResult[5] = point1;
+        tmp13 = point1;
+        tmp12 = point;
+      } else {
+        tmp12 = cResult[4];
+        tmp13 = cResult[5];
+      }
+      const _HermesInternal = HermesInternal;
+      const combined = "" + tmp3.previewGradient.color + "00";
+      if (cResult[6] === tmp3.previewGradient.color) {
+        let tmp15;
+        if (cResult[7] === combined) {
+          tmp15 = cResult[8];
+        }
+        if (cResult[9] === tmp3.previewGradient) {
+          let tmp16;
+          if (cResult[10] === tmp15) {
+            tmp16 = cResult[11];
+          }
+          if (cResult[12] === tmp3.previewContainer) {
+            if (cResult[13] === tmp9) {
+              let tmp19;
+              if (cResult[14] === tmp16) {
+                tmp19 = cResult[15];
+              }
+              return tmp19;
+            }
+          }
+          const obj2 = { style: tmp3.previewContainer, children: items };
+          items = [tmp9, tmp16];
+          const tmp22 = authStore(hasOwnProperty, obj2);
+          cResult[12] = tmp3.previewContainer;
+          cResult[13] = tmp9;
+          cResult[14] = tmp16;
+          cResult[15] = tmp22;
+          tmp19 = tmp22;
+        }
+        const obj3 = { style: tmp3.previewGradient, start: tmp12, end: tmp13, colors: tmp15 };
+        const tmp18 = React4(LinearGradientDefault, obj3);
+        cResult[9] = tmp3.previewGradient;
+        cResult[10] = tmp15;
+        cResult[11] = tmp18;
+        tmp16 = tmp18;
+      }
+      const items1 = [combined, tmp3.previewGradient.color];
+      cResult[6] = tmp3.previewGradient.color;
+      cResult[7] = combined;
+      cResult[8] = items1;
+      tmp15 = items1;
+    }
+  }
+  const tmp10 = React4(ProfileFrameUserPreviewDefault, { user, guildId, profileFrame: tmp8, maxWidth: 280 });
+  cResult[0] = guildId;
+  cResult[1] = tmp8;
+  cResult[2] = user;
+  cResult[3] = tmp10;
+  tmp9 = tmp10;
+}) : ((arg0) => {
+  let guildId;
+  let items1;
+  let items2;
+  let previewSkuId;
+  let user;
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8474)(previewSkuId);
+  const tmp2 = purchase(7622)(previewSkuId);
   const product = tmp2.product;
-  c0 = product;
+  let c0 = product;
   purchase = tmp2.purchase;
   const items = [purchase, product];
-  const obj = { style: tmp.previewContainer, children: null };
-  const memo = noop.useMemo(() => {
+  const obj = { style: tmp.previewContainer, children: items1 };
+  const memo = react.useMemo(() => {
     let first;
-    if (_undefined != null) {
-      first = _undefined.items[0];
+    if (items != null) {
+      first = items.items[0];
     }
     if (first == null) {
       let first1;
@@ -121,116 +905,15 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [closure_9(purchase(11514), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
-  const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
-  const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
-  obj2.colors = items2;
-  items1[1] = closure_9(purchase(5230), obj2);
-  obj.children = items1;
+  items1 = [closure_9(purchase(10753), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
+  items2 = [, ];
+  const tmp4 = purchase(5292);
+  items2[0] = "" + tmp.previewGradient.color + "00";
+  items2[1] = tmp.previewGradient.color;
+  items1[1] = closure_9(tmp4, obj2);
   return closure_10(closure_5, obj);
-}
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const isProfileFrameRecord = fn(7823).isProfileFrameRecord;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, bounceOffset: { position: "absolute", top: -250, height: 250, right: 0, left: 0 }, title: null, previewContainer: null, previewGradient: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj2.title = { alignSelf: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
-obj2.previewContainer = { overflow: "hidden", height: 300, alignItems: "center" };
-let obj5 = {};
-let merged = Object.assign(StyleSheet.absoluteFillObject);
-obj5.bottom = -1;
-obj5.color = nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND;
-obj2.previewGradient = obj5;
-let closure_12 = createStyles.createStyles(obj2);
-const size = fn(2);
+});
 let result = size.fileFinishedImporting("modules/user_profile/native/EditProfileFrameActionSheet.tsx");
 
-export default function EditProfileFrameActionSheet(arg0) {
-  ({ user, currentProfileFrame, guildId } = arg0);
-  importDefault = undefined;
-  let selectedProfileFrame;
-  let memo;
-  let tmp = closure_12();
-  let str = user.id;
-  if (str == null) {
-    str = "";
-  }
-  const tmp4Result = require("useDisplayProfile")(str);
-  importDefault = tmp4Result;
-  const tmp6 = memo(noop.useState(currentProfileFrame), 2);
-  selectedProfileFrame = tmp6[0];
-  const tmp4 = require("useDisplayProfile");
-  let obj = guildId(selectedProfileFrame[10]);
-  const analyticsLocations = require("useAnalyticsLocations")(tmp2(tmp3[12]).EDIT_PROFILE_FRAME_SHEET).analyticsLocations;
-  const items = [guildId, tmp4Result];
-  memo = noop.useMemo(() => {
-    const obj = { type: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET, guild_id: guildId, profile_has_nitro_customization: null };
-    let tmp = null != closure_1;
-    if (tmp) {
-      let result;
-      if (obj2 != null) {
-        result = obj2.hasPremiumCustomization();
-      }
-      tmp = result;
-    }
-    obj.profile_has_nitro_customization = tmp;
-    return obj;
-  }, items);
-  const items1 = [memo];
-  const items2 = [selectedProfileFrame, guildId];
-  const callback = noop.useCallback(() => {
-    const obj2 = {};
-    const merged = Object.assign(memo);
-    obj2.is_fullscreen = true;
-    AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, obj2);
-  }, items1);
-  const callback1 = noop.useCallback((arg0) => {
-    const obj2 = { guildId, profileFrame: null };
-    const obj = UserProfileSettingsActionCreators;
-    let purchasedItem = useShopProductItems.getPurchasedItem(arg0, "firstProfileFrame");
-    if (purchasedItem == null) {
-      purchasedItem = first;
-    }
-    if (purchasedItem == null) {
-      purchasedItem = null;
-    }
-    obj2.profileFrame = purchasedItem;
-    obj.setPendingChanges(obj2);
-  }, items2);
-  let obj2 = { value: analyticsLocations, children: null };
-  const obj3 = { scrollable: true, ref: obj.useBottomSheetRef().bottomSheetRef, onExpand: callback, startExpanded: true, children: null };
-  const obj4 = { style: tmp.container, children: null };
-  const items3 = [closure_9(closure_5, { style: tmp.bounceOffset }), , ];
-  const obj6 = { variant: "redesign/heading-18/bold", style: tmp.title, children: null };
-  const intl = guildId(tmp3[18]).intl;
-  obj6.children = intl.string(guildId(selectedProfileFrame[18]).t["oTSa/q"]);
-  items3[1] = closure_9(guildId(selectedProfileFrame[17]).Heading, obj6);
-  items3[2] = closure_9(EditProfileFrameInner, { user, selectedProfileFrame, setSelectedProfileFrame: tmp6[1], guildId });
-  obj4.children = items3;
-  const items4 = [closure_10(closure_5, obj4), ];
-  const obj7 = { user, currentSkuId: null, selectedSkuId: null, onApply: null, analyticsLocations: null, analyticsSource: null };
-  let skuId;
-  const obj5 = { style: tmp.bounceOffset };
-  const tmp13 = closure_10;
-  const tmp2Result = require("useAnalyticsLocations");
-  if (currentProfileFrame != null) {
-    skuId = currentProfileFrame.skuId;
-  }
-  obj7.currentSkuId = skuId;
-  let skuId1;
-  if (selectedProfileFrame != null) {
-    skuId1 = selectedProfileFrame.skuId;
-  }
-  obj7.selectedSkuId = skuId1;
-  obj7.onApply = callback1;
-  obj7.analyticsLocations = analyticsLocations;
-  obj7.analyticsSource = require("AnalyticsLocation").EDIT_PROFILE_FRAME_SHEET;
-  items4[1] = closure_9(require("EditCollectiblesCTAButton"), obj7);
-  obj3.children = items4;
-  obj2.children = tmp13(guildId(selectedProfileFrame[16]).BottomSheet, obj3);
-  return closure_9(guildId(selectedProfileFrame[11]).AnalyticsLocationProvider, obj2);
-};
+export default tmp6;

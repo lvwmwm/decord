@@ -1,56 +1,131 @@
-// Module ID: 10097
-// Function ID: 10098
+// Module ID: 9235
+// Function ID: 9236
 // Name: XboxInstallAlert
-// Dependencies: [19, 9390, 21, 4788, 576, 5237, 1115, 1177, 9397, 1364, 4483, 2]
-// Exports: default
+// Dependencies: [19, 8542, 21, 4837, 588, 558, 576, 1127, 1189, 8549, 1370, 4528, 5301, 2]
 
-// Module 10097 (XboxInstallAlert)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import LinkingDefault from "Linking" /* 4483 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
-import _modDef9397 from "module_9397" /* 9397 */;
-import noop from "module_19" /* 19 */;
+// Module 9235 (XboxInstallAlert)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import native from "native" /* 1189 */;
+import LinkingDefault from "Linking" /* 4528 */;
+import AlertDefault from "Alert" /* 5301 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8549 */;
+import react from "react" /* 19 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8542 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const GameConsoleConstants = fn(9390);
+let c3;
+let closure_4;
+let size;
 ({ XBOX_ANDROID_APP_LINK: c3, XBOX_IOS_APP_LINK: closure_4 } = GameConsoleConstants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { externalLinkIcon: null };
-let size = { tintColor: nativeDefault.colors.WHITE, width: 20, height: 20, marginLeft: 8 };
-obj2.externalLinkIcon = size;
-let closure_6 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/game_console/native/XboxInstallAlert.tsx");
-
-export default function XboxInstallAlert(arg0) {
-  _require = closure_6();
-  let obj = {};
+const jsx = Fragment.jsx;
+let obj = { externalLinkIcon: size };
+size = { tintColor: nativeDefault.colors.WHITE, width: 20, height: 20, marginLeft: 8 };
+let closure_6 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp13;
+  let tmp14;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let obj = require("react");
+  const cResult = obj.c(10);
+  const tmp4 = closure_6();
+  _require = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(require("intl").t["12Kx2v"]);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(require("intl").t.msZW3j);
+    const intl3 = tmp(1127).intl;
+    const stringResult2 = intl3.string(require("intl").t["n+VrqG"]);
+    const intl4 = tmp(1127).intl;
+    const stringResult3 = intl4.string(require("intl").t.kYaBOg);
+    cResult[0] = stringResult;
+    cResult[1] = stringResult1;
+    cResult[2] = stringResult2;
+    cResult[3] = stringResult3;
+    tmp5 = stringResult;
+    tmp6 = stringResult1;
+    tmp7 = stringResult2;
+    tmp8 = stringResult3;
+  } else {
+    [tmp5, tmp6, tmp7, tmp8] = cResult;
+  }
+  if (cResult[4] !== tmp4.externalLinkIcon) {
+    const fn = function _() {
+      const Icon = native.Icon;
+      return <Icon source={AssetRegistryDefault} style={closure_0.externalLinkIcon} />;
+    };
+    cResult[4] = tmp4.externalLinkIcon;
+    cResult[5] = fn;
+    tmp13 = fn;
+  } else {
+    tmp13 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function u() {
+      const obj = closure_0(dependencyMap[10]);
+      const isAndroidResult = obj.isAndroid();
+      const openURL = LinkingDefault.openURL;
+      LinkingDefault;
+      if (isAndroidResult) {
+        openURL(closure_1_3);
+      } else {
+        openURL(closure_1_4);
+      }
+    };
+    cResult[6] = fn2;
+    tmp14 = fn2;
+  } else {
+    tmp14 = cResult[6];
+  }
+  if (cResult[7] === arg0) {
+    let tmp15;
+    if (cResult[8] === tmp13) {
+      tmp15 = cResult[9];
+    }
+    return tmp15;
+  }
+  AlertDefault;
   const merged = Object.assign(arg0);
-  const intl = require("util").intl;
-  obj.title = intl.string(require("util").t["12Kx2v"]);
-  const intl2 = require("util").intl;
-  obj.body = intl2.string(require("util").t.msZW3j);
-  const intl3 = require("util").intl;
-  obj.confirmText = intl3.string(require("util").t["n+VrqG"]);
-  const intl4 = require("util").intl;
-  obj.cancelText = intl4.string(require("util").t.kYaBOg);
-  obj.fillCancelText = true;
-  obj.renderConfirmRightIcon = function renderConfirmRightIcon() {
-    return jsx(native.Icon, { source: _modDef9397, style: closure_0.externalLinkIcon });
-  };
-  obj.onConfirm = function onConfirm() {
-    const obj = closure_0(1364);
-    const isAndroidResult = closure_0(1364).isAndroid();
+  const tmp18 = <tmp16 title={tmp5} body={tmp6} confirmText={tmp7} cancelText={tmp8} fillCancelText renderConfirmRightIcon={tmp13} onConfirm={tmp14} />;
+  cResult[7] = arg0;
+  cResult[8] = tmp13;
+  cResult[9] = tmp18;
+  tmp15 = tmp18;
+}) : ((arg0) => {
+  let closure_0;
+  _require = closure_6();
+  AlertDefault;
+  const merged = Object.assign(arg0);
+  const intl = require("intl").intl;
+  const intl2 = require("intl").intl;
+  const intl3 = require("intl").intl;
+  const intl4 = require("intl").intl;
+  return <tmp title={intl.string(require("intl").t["12Kx2v"])} body={intl2.string(require("intl").t.msZW3j)} confirmText={intl3.string(require("intl").t["n+VrqG"])} cancelText={intl4.string(require("intl").t.kYaBOg)} fillCancelText renderConfirmRightIcon={function renderConfirmRightIcon() {
+    const Icon = native.Icon;
+    return <Icon source={AssetRegistryDefault} style={closure_0.externalLinkIcon} />;
+  }} onConfirm={function onConfirm() {
+    const obj = closure_0(dependencyMap[10]);
+    const isAndroidResult = obj.isAndroid();
     const openURL = LinkingDefault.openURL;
+    LinkingDefault;
     if (isAndroidResult) {
       openURL(closure_1_3);
     } else {
       openURL(closure_1_4);
     }
-  };
-  return jsx(common_AlertDefault, {});
-};
+  }} />;
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/game_console/native/XboxInstallAlert.tsx");
+
+export default tmp4;

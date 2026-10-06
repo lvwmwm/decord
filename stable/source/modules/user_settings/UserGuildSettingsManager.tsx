@@ -1,283 +1,296 @@
-// Module ID: 7393
-// Function ID: 7394
+// Module ID: 6538
+// Function ID: 6539
 // Name: UserGuildSettingsManager
-// Dependencies: [5, 7394, 2041, 1074, 1091, 1271, 7395, 2]
+// Dependencies: [5, 6539, 2051, 1086, 1103, 1283, 6540, 2]
 
-// Module 7393 (UserGuildSettingsManager)
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7394 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 6538 (UserGuildSettingsManager)
+import DurationsDefault from "Durations" /* 1103 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 6539 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Constants from "Constants" /* 1086 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let body, c3, c4, c6, c7, channel, collapsedCategories, guilds;
+
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
 function handleConnectionOpen() {
-  const obj = {};
+  obj = {};
   const merged = Object.assign(CategoryCollapseStore.getCollapsedCategories());
 }
 function scheduleSync() {
+  let timeout;
   clearTimeout(timeout);
   timeout = setTimeout(() => saveUserGuildSettingsBulk({}), closure_10);
 }
 function saveUserGuildSettings() {
-  const self = this;
-  const apply = closure_14.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_14 = async function _saveUserGuildSettings(arg0, value) {
-  if (c3 === 2) {
-    c3 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c3 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let tmp7 = null;
-          if (null != closure_0) {
-            if (tmp18 !== React5) {
-              if (tmp7 != tmp19) {
-                closure_2 = tmp18;
-                if (tmp18 == tmp7) {
-                  closure_2 = tmp5;
-                }
-                const obj4 = {};
-                tmp7 = closure_2;
-                obj4[closure_2] = tmp19;
-                let obj5 = obj4;
-              } else {
-                obj5 = {};
-              }
-              saveUserGuildSettingsBulk(obj5);
-              c4 = 2;
-              c3 = 1;
-            }
-            tmp5 = React5;
-          }
-          const HTTP = HTTPUtils.HTTP;
-          const request = { url: hasOwnProperty.USER_GUILD_SETTINGS(React5), body: dependencyMap, rejectWithError: false };
-          c4 = 1;
-          c3 = 1;
-          const obj6 = { value: HTTP.patch(request), done: false };
-          return obj6;
-        }
+let obj = function _saveUserGuildSettings() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_1;
+    let closure_0 = arg0;
+    body = value;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        if (1 === tmp4) {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === c4) {
           if (arg0 === 1) {
             c3 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj7 = { value, done: true };
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            if (null != closure_0) {
+              if (closure_0 !== metroImportDefault) {
+                let obj5;
+                const tmp5 = saveUserGuildSettingsBulk;
+                if (null != body) {
+                  let closure_2 = tmp15;
+                  if (closure_0 == null) {
+                    closure_2 = tmp4;
+                  }
+                  const obj4 = {};
+                  obj4[closure_2] = body;
+                  obj5 = obj4;
+                } else {
+                  obj5 = {};
+                }
+                c4 = 2;
+                c3 = 1;
+                const obj6 = { value: tmp5(obj5), done: false };
+                return obj6;
+              }
+            }
+            const HTTP = HTTPUtils.HTTP;
+            const request = { url: hasOwnProperty.USER_GUILD_SETTINGS(metroImportDefault), body, rejectWithError: false };
+            const patch = HTTP.patch;
+            c4 = 1;
+            c3 = 1;
+            const obj7 = { value: patch(request), done: false };
             return obj7;
           }
-        } else if (arg0 === 1) {
+        } else {
+          if (1 === tmp3) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj8 = { value, done: true };
+              return obj8;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value, done: true };
+            return obj;
+          }
           c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          const obj = { value, done: true };
-          return obj;
+          return { value: "IconComponent", done: null };
         }
+      } catch (tmp11) {
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        throw tmp11;
       }
-    } catch (tmp13) {
-      c3 = tmp;
-      throw tmp13;
     }
-  }
+  });
+  return obj(...arguments);
 };
 function saveUserGuildSettingsBulk() {
-  const self = this;
-  const apply = closure_16.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_16 = async function _saveUserGuildSettingsBulk(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp5 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
+obj = function _saveUserGuildSettingsBulk() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    let closure_3;
+    let obj6;
+    let tmp2;
+    function getChangedCategories() {
+      obj = {};
+      collapsedCategories = collapsedCategories.getCollapsedCategories();
+      for (const key10007 in collapsedCategories) {
+        if (collapsedCategories[key10007] === closure_1_8[key10007]) {
+          continue;
+        } else {
+          obj[key10007] = true;
+          continue;
+        }
+        continue;
+      }
+      for (const key10010 in closure_1_8) {
+        if (collapsedCategories[key10010] === closure_1_8[key10010]) {
+          continue;
+        } else {
+          obj[key10010] = true;
+          continue;
+        }
+        continue;
+      }
+      return obj;
     }
-  } else {
-    try {
-      c6 = 2;
-      if (0 === c7) {
-        if (arg0 === 1) {
+    guilds = arg0;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let items;
+        c6 = 2;
+        let tmp3 = c7;
+        if (0 === c7) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1;
+            let tmp9;
+            const _clearTimeout = clearTimeout;
+            clearTimeout(closure_2_9);
+            const _Object = Object;
+            const tmp28 = 0 !== Object.keys(guilds).length;
+            collapsedCategories = collapsedCategories.getCollapsedCategories();
+            const tmp31 = getChangedCategories();
+            let closure_2 = tmp31;
+            const keys = Object.keys();
+            const tmp33 = tmp31;
+            if (keys === undefined) {
+              let closure_4 = tmp35;
+              collapsedCategories = tmp34;
+              closure_2 = tmp31;
+              closure_1 = keys;
+              tmp9 = tmp28;
+            } else {
+              closure_4 = tmp35;
+              collapsedCategories = tmp34;
+              closure_2 = tmp33;
+              closure_1 = keys;
+              let flag = tmp28;
+              let tmp4 = closure_1;
+              let tmp5 = closure_2;
+              tmp9 = flag;
+              while (closure_1[collapsedCategories] !== undefined) {
+                let closure_5 = tmp10;
+                closure_4 = tmp7;
+                collapsedCategories = tmp6;
+                closure_2 = tmp5;
+                closure_1 = tmp4;
+                channel = channel.getChannel(tmp10);
+                let tmp11 = null != channel && null != channel.guild_id;
+                flag = tmp9;
+                if (!tmp11) {
+                  continue;
+                } else {
+                  if (!(channel.guild_id in tmp24)) {
+                    tmp24[channel.guild_id] = {};
+                  }
+                  if (null == tmp24[channel.guild_id].channel_overrides) {
+                    tmp24[channel.guild_id].channel_overrides = {};
+                  }
+                  let obj4 = { collapsed: channel.id in collapsedCategories };
+                  let channel_overrides = tmp24[channel.guild_id].channel_overrides;
+                  let id = channel.id;
+                  let merged = Object.assign(tmp24[channel.guild_id].channel_overrides[channel.id]);
+                  channel_overrides[id] = obj4;
+                  flag = true;
+                  continue;
+                }
+                continue;
+              }
+              closure_5 = tmp10;
+              closure_4 = tmp7;
+              collapsedCategories = tmp6;
+              closure_2 = tmp5;
+              closure_1 = tmp4;
+            }
+            if (tmp9) {
+              obj5 = {};
+              const merged1 = Object.assign(collapsedCategories);
+              delete guilds[metroRequire];
+              const HTTP = HTTPUtils.HTTP;
+              const request = { url: constants.USER_GUILD_SETTINGS_BULK, body: obj6, rejectWithError: false };
+              obj6 = { guilds };
+              c7 = 1;
+              c6 = 1;
+              const obj7 = { value: HTTP.patch(request), done: false };
+              return obj7;
+            } else {
+              items = [];
+            }
+          }
+        } else if (arg0 === 1) {
           c6 = 3;
           throw value;
         } else if (arg0 === 2) {
           c6 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(React7);
-          const _Object = Object;
-          const tmp33 = 0 !== Object.keys(closure_0).length;
-          collapsedCategories = collapsedCategories.getCollapsedCategories();
-          const tmp36 = (function getChangedCategories() {
-            const obj = {};
-            collapsedCategories = collapsedCategories.getCollapsedCategories();
-            for (const key10007 in collapsedCategories) {
-              if (collapsedCategories[key10007] === dependencyMap[key10007]) {
-                continue;
-              } else {
-                obj[key10007] = true;
-                continue;
-              }
-              continue;
-            }
-            for (const key10010 in closure_1_8) {
-              if (collapsedCategories[key10010] === dependencyMap[key10010]) {
-                continue;
-              } else {
-                obj[key10010] = true;
-                continue;
-              }
-              continue;
-            }
-            return obj;
-          })();
-          closure_2 = tmp36;
-          const keys = Object.keys();
-          if (keys === undefined) {
-            closure_4 = tmp40;
-            collapsedCategories = tmp39;
-            closure_2 = tmp36;
-            dependencyMap = keys;
-            let tmp12 = tmp33;
-          } else {
-            closure_4 = tmp40;
-            collapsedCategories = tmp39;
-            closure_2 = tmp38;
-            dependencyMap = keys;
-            let flag = tmp33;
-            tmp12 = flag;
-            while (dependencyMap[collapsedCategories] !== undefined) {
-              closure_5 = tmp13;
-              closure_4 = tmp10;
-              collapsedCategories = tmp9;
-              closure_2 = tmp8;
-              dependencyMap = tmp7;
-              channel = channel.getChannel(tmp13);
-              let tmp14 = null != channel;
-              if (tmp14) {
-                tmp14 = null != channel.guild_id;
-              }
-              flag = tmp12;
-              if (!tmp14) {
-                continue;
-              } else {
-                if (!(channel.guild_id in tmp29)) {
-                  tmp29[channel.guild_id] = {};
-                }
-                if (null == tmp29[channel.guild_id].channel_overrides) {
-                  tmp29[channel.guild_id].channel_overrides = {};
-                }
-                let obj4 = {};
-                let merged = Object.assign(tmp29[channel.guild_id].channel_overrides[channel.id]);
-                obj4.collapsed = channel.id in collapsedCategories;
-                tmp29[channel.guild_id].channel_overrides[channel.id] = obj4;
-                flag = true;
-                continue;
-              }
-              continue;
-            }
-            closure_5 = tmp13;
-            closure_4 = tmp10;
-            collapsedCategories = tmp9;
-            closure_2 = tmp8;
-            dependencyMap = tmp7;
-          }
-          if (tmp12) {
-            const obj5 = {};
-            const merged1 = Object.assign(collapsedCategories);
-            delete tmp3[tmp2];
-            const HTTP = HTTPUtils.HTTP;
-            const request = { url: constants.USER_GUILD_SETTINGS_BULK, body: null, rejectWithError: false };
-            const obj6 = { guilds: tmp29 };
-            request.body = obj6;
-            c7 = 1;
-            c6 = 1;
-            const obj7 = { value: HTTP.patch(request), done: false };
-            return obj7;
-          } else {
-            const items = [];
-            c6 = 3;
-          }
-          tmp38 = tmp36;
+          items = value.body;
         }
-      } else if (arg0 === 1) {
         c6 = 3;
-        throw value;
-      } else if (arg0 !== 2) {
-        const body = value.body;
+        const obj8 = { value: items, done: true };
+        return obj8;
+      } catch (tmp20) {
+        c6 = 3;
+        throw tmp20;
       }
-      c6 = 3;
-      let obj = { value, done: true };
-      return obj;
-    } catch (tmp24) {
-      c6 = tmp;
-      throw tmp24;
     }
-  }
+  });
+  return obj(...arguments);
 };
 function handleUserGuildSettingsFullUpdate() {
-  const obj = {};
+  obj = {};
   const merged = Object.assign(CategoryCollapseStore.getCollapsedCategories());
 }
-const Constants = fn(1074);
-({ Endpoints: hasOwnProperty, FAVORITES: metroRequire, ME: closure_7 } = Constants);
-let actions = {};
+({ Endpoints: hasOwnProperty, FAVORITES: metroRequire, ME: metroImportDefault } = Constants);
+obj = {};
 let closure_9 = 0;
 let closure_10 = 15 * DurationsDefault.Millis.SECOND;
-const prototype = function UserGuildSettingsManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  actions = { CATEGORY_COLLAPSE: scheduleSync, CATEGORY_EXPAND: scheduleSync, CATEGORY_COLLAPSE_ALL: scheduleSync, CATEGORY_EXPAND_ALL: scheduleSync, POST_CONNECTION_OPEN: handleConnectionOpen, USER_GUILD_SETTINGS_FULL_UPDATE: handleUserGuildSettingsFullUpdate };
-  applyArgumentsResult.actions = actions;
-  applyArgumentsResult.saveUserGuildSettings = saveUserGuildSettings;
-  applyArgumentsResult.saveUserGuildSettingsBulk = saveUserGuildSettingsBulk;
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp3 {
+class UserGuildSettingsManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    obj = { CATEGORY_COLLAPSE: scheduleSync, CATEGORY_EXPAND: scheduleSync, CATEGORY_COLLAPSE_ALL: scheduleSync, CATEGORY_EXPAND_ALL: scheduleSync, POST_CONNECTION_OPEN: handleConnectionOpen, USER_GUILD_SETTINGS_FULL_UPDATE: handleUserGuildSettingsFullUpdate };
+    applyArgumentsResult.actions = obj;
+    applyArgumentsResult.saveUserGuildSettings = saveUserGuildSettings;
+    applyArgumentsResult.saveUserGuildSettingsBulk = saveUserGuildSettingsBulk;
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const userGuildSettingsManager = new UserGuildSettingsManager();
 const result = size.fileFinishedImporting("modules/user_settings/UserGuildSettingsManager.tsx");
 
-export default prototype1;
+export default userGuildSettingsManager;

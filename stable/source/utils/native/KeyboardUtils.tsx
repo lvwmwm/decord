@@ -1,14 +1,14 @@
-// Module ID: 10571
-// Function ID: 10572
-// Name: KeyboardUtils
+// Module ID: 9854
+// Function ID: 9855
+// Name: react-native
 // Dependencies: [17, 2]
 // Exports: dismissKeyboard
 
-// Module 10571 (KeyboardUtils)
-import _mod17 from "module_17" /* 17 */;
+// Module 9854 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const Keyboard = _mod17.Keyboard;
+const Keyboard = react_native.Keyboard;
 const result = size.fileFinishedImporting("utils/native/KeyboardUtils.tsx");
 
 export const dismissKeyboard = function dismissKeyboard() {

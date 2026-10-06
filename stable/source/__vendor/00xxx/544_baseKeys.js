@@ -4,25 +4,17 @@
 // Dependencies: [545, 546]
 
 // Module 544 (baseKeys)
-import _mod545 from "module_545" /* 545 */;
+import isPrototype from "isPrototype" /* 545 */;
 
+let tmp;
 const overArg = tmp(546);
 
 export default function baseKeys(arg0) {
-  if (_mod545(arg0)) {
+  if (isPrototype(arg0)) {
     const items = [];
     const _Object = Object;
     for (const key10016 in Object(arg0)) {
-      let tmp7 = hasOwnProperty;
-      let call = hasOwnProperty.call;
-      if (typeof call === "unknown") {
-        let callResult = tmp7(key10016);
-      } else {
-        callResult = call(arg0, key10016);
-      }
-      if (callResult) {
-        callResult = "constructor" != key10016;
-      }
+      let callResult = hasOwnProperty.call(arg0, key10016) && "constructor" != key10016;
       if (!callResult) {
         continue;
       } else {

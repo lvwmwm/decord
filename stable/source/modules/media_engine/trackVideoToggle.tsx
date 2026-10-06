@@ -1,57 +1,63 @@
-// Module ID: 14126
-// Function ID: 14127
+// Module ID: 13374
+// Function ID: 13375
 // Name: trackVideoToggle
-// Dependencies: [1074, 14120, 1241, 2]
+// Dependencies: [1086, 13368, 1253, 2]
 // Exports: default, setVideoToggleAnalyticsParams
 
-// Module 14126 (trackVideoToggle)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import VideoHealthManager from "VideoHealthManager" /* 14120 */;
+// Module 13374 (trackVideoToggle)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import VideoHealthManager from "VideoHealthManager" /* 13368 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/media_engine/trackVideoToggle.tsx");
 
 export default function trackVideoToggle(toggled_user_id, video_toggle_reason, is_video_shown) {
+  let allowedPoorFpsRatio;
+  let backoffTimeSec;
+  let fpsThreshold;
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let windowLength;
   const defaultConfig = VideoHealthManager.VideoHealthManager.defaultConfig;
   const featureEnabled = defaultConfig.featureEnabled;
   ({ windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec } = defaultConfig);
-  const obj2 = { video_toggle_reason, toggled_user_id, rtc_connection_id: null, media_session_id: null, video_health_manager_window_length: null, video_health_manager_poor_fps_ratio: null, video_health_manager_fps_threshold: null, is_video_shown: null, video_health_manager_backoff_time_seconds: null };
-  let tmp;
-  if (global != null) {
-    tmp = global();
+  const obj = { video_toggle_reason, toggled_user_id, rtc_connection_id: tmp2, media_session_id: tmp3, video_health_manager_window_length: tmp4, video_health_manager_poor_fps_ratio: tmp5, video_health_manager_fps_threshold: tmp6, is_video_shown, video_health_manager_backoff_time_seconds: tmp7 };
+  tmp2 = undefined;
+  const track = AnalyticsUtilsDefault.track;
+  const VIDEO_TOGGLED = AnalyticEvents.VIDEO_TOGGLED;
+  AnalyticsUtilsDefault;
+  if (_false != null) {
+    tmp2 = _false();
   }
-  obj2.rtc_connection_id = tmp;
-  let tmp2;
-  if (require != null) {
-    tmp2 = require();
+  tmp3 = undefined;
+  if (React3 != null) {
+    tmp3 = React3();
   }
-  obj2.media_session_id = tmp2;
-  let tmp3 = null;
+  tmp4 = null;
   if (featureEnabled) {
-    tmp3 = windowLength;
+    tmp4 = windowLength;
   }
-  obj2.video_health_manager_window_length = tmp3;
-  let tmp4 = null;
+  tmp5 = null;
   if (featureEnabled) {
-    tmp4 = allowedPoorFpsRatio;
+    tmp5 = allowedPoorFpsRatio;
   }
-  obj2.video_health_manager_poor_fps_ratio = tmp4;
-  let tmp5 = null;
+  tmp6 = null;
   if (featureEnabled) {
-    tmp5 = fpsThreshold;
+    tmp6 = fpsThreshold;
   }
-  obj2.video_health_manager_fps_threshold = tmp5;
-  obj2.is_video_shown = is_video_shown;
-  let tmp6 = null;
+  tmp7 = null;
   if (featureEnabled) {
-    tmp6 = backoffTimeSec;
+    tmp7 = backoffTimeSec;
   }
-  obj2.video_health_manager_backoff_time_seconds = tmp6;
-  AnalyticsUtilsDefault.track(AnalyticEvents.VIDEO_TOGGLED, obj2);
+  track(VIDEO_TOGGLED, obj);
 };
 export function setVideoToggleAnalyticsParams(getRTCConnectionId, getMediaSessionId) {
-  global = getRTCConnectionId;
-  require = getMediaSessionId;
+  let closure_1_3 = getRTCConnectionId;
+  let closure_1_4 = getMediaSessionId;
 }

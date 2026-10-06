@@ -1,26 +1,30 @@
-// Module ID: 12701
-// Function ID: 12702
+// Module ID: 11805
+// Function ID: 11806
 // Name: NotificationUtils
-// Dependencies: [5, 17, 12692, 1074, 12695, 1241, 9589, 10197, 2]
+// Dependencies: [5, 17, 11796, 1086, 11799, 1253, 8741, 9335, 2]
 
-// Module 12701 (NotificationUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PushNotificationDefault from "PushNotification" /* 9589 */;
-import SoundUtils from "SoundUtils" /* 10197 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 11805 (NotificationUtils)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PushNotificationDefault from "PushNotification" /* 8741 */;
+import SoundUtils from "SoundUtils" /* 9335 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11796 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c0;
 
-require = fn;
-const NativeModules = fn(17).NativeModules;
-const PermissionStateType = fn(12692).PermissionStateType;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
-let result = size.fileFinishedImporting("utils/native/NotificationUtils.tsx");
-
-export default {
+const NativeModules = react_native.NativeModules;
+const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
+const AnalyticEvents = Constants.AnalyticEvents;
+let obj = {
   hasPermission() {
-    return PushNotificationDefault.requestPermissions((badge) => {
+    const obj = PushNotificationDefault;
+    return obj.requestPermissions((badge) => {
+      let _alert;
+      let sound;
       ({ alert: _alert, sound } = badge);
       if (!_alert) {
         _alert = badge.badge;
@@ -32,12 +36,17 @@ export default {
     });
   },
   requestPermission(arg0) {
+    let closure_0;
     _require = arg0;
-    let result = require("PushNotificationActionCreators").setPushPermissionState(PermissionStateType.REQUESTED);
     let obj = require("PushNotificationActionCreators");
-    AnalyticsUtilsDefault.track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
-    const permissions = PushNotificationDefault.requestPermissions();
+    let result = obj.setPushPermissionState(PermissionStateType.REQUESTED);
+    const obj2 = AnalyticsUtilsDefault;
+    obj2.track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
+    const obj3 = PushNotificationDefault;
+    const permissions = obj3.requestPermissions();
     permissions.then((sound) => {
+      let _alert;
+      let badge;
       ({ alert: _alert, badge } = sound);
       if (!_alert) {
         _alert = sound.sound;
@@ -46,16 +55,18 @@ export default {
         _alert = badge;
       }
       let str = "denied";
+      const track = AnalyticsUtilsDefault.track;
+      const PERMISSIONS_ACKED = AnalyticEvents.PERMISSIONS_ACKED;
       if (_alert) {
         str = "accepted";
       }
-      AnalyticsUtilsDefault.track(AnalyticEvents.PERMISSIONS_ACKED, { type: "notification", action: str });
+      track(PERMISSIONS_ACKED, { type: "notification", action: str });
       const NativePermissionManager = NativeModules.NativePermissionManager;
       const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
       notificationAuthorizationStatus.then((result) => {
         if (null != result) {
-          result = closure_1_0(dependencyMap[4]).updateNotificationAuthorizationStatus(result);
-          const obj = closure_1_0(dependencyMap[4]);
+          const obj = closure_1_0(closure_1_2[4]);
+          result = obj.updateNotificationAuthorizationStatus(result);
         }
       });
       if (null != _alert) {
@@ -70,14 +81,14 @@ export default {
       if (c0 === 2) {
         c0 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -91,11 +102,11 @@ export default {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
-        } catch (tmp4) {
-          c0 = tmp;
-          throw tmp4;
+        } catch (tmp3) {
+          c0 = 3;
+          throw tmp3;
         }
       }
     })();
@@ -106,6 +117,10 @@ export default {
     if (arg1 === undefined) {
       num = 1;
     }
-    SoundUtils.playSound(arg0, num, undefined, arg2);
+    const obj = SoundUtils;
+    obj.playSound(arg0, num, undefined, arg2);
   }
 };
+let result = size.fileFinishedImporting("utils/native/NotificationUtils.tsx");
+
+export default obj;

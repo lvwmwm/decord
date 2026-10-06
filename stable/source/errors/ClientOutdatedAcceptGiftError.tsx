@@ -1,20 +1,20 @@
-// Module ID: 4694
-// Function ID: 4695
+// Module ID: 4743
+// Function ID: 4744
 // Name: ClientOutdatedAcceptGiftError
-// Dependencies: [1074, 2]
+// Dependencies: [1086, 2]
 
-// Module 4694 (ClientOutdatedAcceptGiftError)
-import Constants from "Constants" /* 1074 */;
+// Module 4743 (ClientOutdatedAcceptGiftError)
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
-const prototype = function ClientOutdatedAcceptGiftError() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.code = AbortCodes.INVALID_GIFT_REDEMPTION_CLIENT_UPDATE_REQUIRED;
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends Error {
+class ClientOutdatedAcceptGiftError extends Error {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    applyArgumentsResult.code = AbortCodes.INVALID_GIFT_REDEMPTION_CLIENT_UPDATE_REQUIRED;
+    return applyArgumentsResult;
+  }
 }
 const result = size.fileFinishedImporting("errors/ClientOutdatedAcceptGiftError.tsx");
 
-export default prototype;
+export default ClientOutdatedAcceptGiftError;

@@ -1,26 +1,22 @@
-// Module ID: 10665
-// Function ID: 10666
+// Module ID: 9865
+// Function ID: 9866
 // Name: FavoriteGIFHooks
-// Dependencies: [19, 10666, 12, 2]
-// Exports: useFavoriteGIFs, useIsFavoriteGIF, useShouldShowTooltipOnFavorite, useSortedFavoriteGIFs
+// Dependencies: [19, 558, 9866, 576, 12, 2]
 
-// Module 10665 (FavoriteGIFHooks)
+// Module 9865 (FavoriteGIFHooks)
 import _modDef12 from "module_12" /* 12 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10666 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 576 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 9866 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
-require = fn;
 let closure_4 = {};
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/gif_picker/FavoriteGIFHooks.tsx");
-
-export const useFavoriteGIFs = function useFavoriteGIFs(flag) {
-  if (flag === undefined) {
-    flag = true;
-  }
-  const favoriteGifs = FrecencyUserSettingsHooks.useFrecencySettings(flag).favoriteGifs;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const tmp = undefined === arg0 || arg0;
+  const obj = FrecencyUserSettingsHooks;
+  const favoriteGifs = obj.useFrecencySettings(tmp).favoriteGifs;
   let gifs;
   if (favoriteGifs != null) {
     gifs = favoriteGifs.gifs;
@@ -29,10 +25,13 @@ export const useFavoriteGIFs = function useFavoriteGIFs(flag) {
     gifs = closure_4;
   }
   return gifs;
-};
-export const useSortedFavoriteGIFs = function useSortedFavoriteGIFs(transformFavoriteGifUrl) {
-  _require = transformFavoriteGifUrl;
-  const favoriteGifs = require("FrecencyUserSettingsHooks").useFrecencySettings(true).favoriteGifs;
+}) : (() => {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const obj = FrecencyUserSettingsHooks;
+  const favoriteGifs = obj.useFrecencySettings(flag).favoriteGifs;
   let gifs;
   if (favoriteGifs != null) {
     gifs = favoriteGifs.gifs;
@@ -40,29 +39,79 @@ export const useSortedFavoriteGIFs = function useSortedFavoriteGIFs(transformFav
   if (gifs == null) {
     gifs = closure_4;
   }
-  const items = [gifs, transformFavoriteGifUrl];
-  return noop.useMemo(() => {
-    const mapped = _modDef12(gifs).map((src, url) => {
-      const obj = {};
+  return gifs;
+});
+let closure_5 = tmp2;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp5;
+  let closure_0 = arg0;
+  let obj = react2;
+  const cResult = obj.c(5);
+  const tmp3 = closure_5();
+  if (cResult[0] === tmp3) {
+    let tmp4;
+    if (cResult[1] === arg0) {
+      tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  if (cResult[3] !== arg0) {
+    const fn = function s(src, url) {
+      const obj = { url, src };
       const merged = Object.assign(src);
-      obj.url = url;
       src = undefined;
-      if (transformFavoriteGifUrl != null) {
+      if (closure_0 != null) {
         src = tmp2(src.src, url);
       }
       if (src == null) {
         src = src.src;
       }
-      obj.src = src;
+      return obj;
+    };
+    cResult[3] = arg0;
+    cResult[4] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[4];
+  }
+  const arr = _modDef12(tmp3);
+  const mapped = arr.map(tmp5);
+  const sortByResult = mapped.sortBy("order");
+  const iter = sortByResult.reverse();
+  const valueResult = iter.value();
+  cResult[0] = tmp3;
+  cResult[1] = arg0;
+  cResult[2] = valueResult;
+  tmp4 = valueResult;
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  const tmp = closure_5();
+  let closure_1 = tmp;
+  const items = [tmp, arg0];
+  return react.useMemo(() => {
+    const arr = _modDef12(closure_1);
+    const mapped = arr.map((src, url) => {
+      const obj = { url, src };
+      const merged = Object.assign(src);
+      src = undefined;
+      if (closure_1_0 != null) {
+        src = tmp2(src.src, url);
+      }
+      if (src == null) {
+        src = src.src;
+      }
       return obj;
     });
-    const arr = _modDef12(gifs);
     const sortByResult = mapped.sortBy("order");
-    return mapped.sortBy("order").reverse().value();
+    const iter = sortByResult.reverse();
+    return iter.value();
   }, items);
-};
-export const useShouldShowTooltipOnFavorite = function useShouldShowTooltipOnFavorite() {
-  const favoriteGifs = FrecencyUserSettingsHooks.useFrecencySettings().favoriteGifs;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = FrecencyUserSettingsHooks;
+  const favoriteGifs = obj.useFrecencySettings().favoriteGifs;
   let flag;
   if (favoriteGifs != null) {
     flag = favoriteGifs.hideTooltip;
@@ -71,21 +120,36 @@ export const useShouldShowTooltipOnFavorite = function useShouldShowTooltipOnFav
     flag = false;
   }
   return flag;
-};
-export const useIsFavoriteGIF = function useIsFavoriteGIF(arg0, flag) {
-  if (flag === undefined) {
-    flag = true;
-  }
-  if (flag === undefined) {
-    flag = true;
-  }
-  const favoriteGifs = FrecencyUserSettingsHooks.useFrecencySettings(flag).favoriteGifs;
-  let gifs;
+}) : (() => {
+  const obj = FrecencyUserSettingsHooks;
+  const favoriteGifs = obj.useFrecencySettings().favoriteGifs;
+  let flag;
   if (favoriteGifs != null) {
-    gifs = favoriteGifs.gifs;
+    flag = favoriteGifs.hideTooltip;
   }
-  if (gifs == null) {
-    gifs = closure_4;
+  if (flag == null) {
+    flag = false;
   }
-  return null != gifs[arg0];
-};
+  return flag;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let tmp2 = undefined === arg1;
+  const tmp = closure_5;
+  if (!tmp2) {
+    tmp2 = arg1;
+  }
+  return null != tmp(tmp2)[arg0];
+}) : ((arg0) => {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = true;
+  }
+  return null != closure_5(flag)[arg0];
+});
+const result = size.fileFinishedImporting("modules/gif_picker/FavoriteGIFHooks.tsx");
+
+export const useFavoriteGIFs = tmp2;
+export const useSortedFavoriteGIFs = tmp3;
+export const useShouldShowTooltipOnFavorite = tmp4;
+export const useIsFavoriteGIF = tmp5;

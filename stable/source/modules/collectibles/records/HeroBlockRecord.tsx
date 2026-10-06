@@ -1,34 +1,40 @@
-// Module ID: 7852
-// Function ID: 7853
+// Module ID: 7002
+// Function ID: 7003
 // Name: HeroBlockRecord
-// Dependencies: [7846, 7828, 2]
+// Dependencies: [6996, 6978, 2]
 
-// Module 7852 (HeroBlockRecord)
-import CollectiblesUtils from "CollectiblesUtils" /* 7828 */;
-import ShopBlockType from "ShopBlockType" /* 7846 */;
+// Module 7002 (HeroBlockRecord)
+import CollectiblesUtils from "CollectiblesUtils" /* 6978 */;
+import ShopBlockType from "ShopBlockType" /* 6996 */;
 import size from "module_2" /* 2 */;
 
-const prototype = function HeroBlockRecord(unpublished_at) {
-  const obj = Object.create(new.target.prototype);
-  obj.type = ShopBlockType.ShopBlockType.HERO;
-  ({ category_sku_id: tmp.categorySkuId, name: tmp.name, summary } = unpublished_at);
-  obj.summary = summary.trim();
-  ({ category_store_listing_id: tmp.categoryStoreListingId, title: tmp.title, ranked_sku_ids: tmp.rankedSkuIds } = unpublished_at);
-  let date = null;
-  if (null != unpublished_at.unpublished_at) {
-    const _Date = Date;
-    date = new Date(unpublished_at.unpublished_at);
+class HeroBlockRecord {
+  constructor(unpublished_at) {
+    let summary;
+    const obj = Object.create(new.target.prototype);
+    obj.type = ShopBlockType.ShopBlockType.HERO;
+    ({ category_sku_id: tmp.categorySkuId, name: tmp.name, summary } = unpublished_at);
+    obj.summary = summary.trim();
+    ({ category_store_listing_id: tmp.categoryStoreListingId, title: tmp.title, ranked_sku_ids: tmp.rankedSkuIds } = unpublished_at);
+    let date = null;
+    if (null != unpublished_at.unpublished_at) {
+      const _Date = Date;
+      const self = this;
+      const self2 = this;
+      date = new Date(unpublished_at.unpublished_at);
+    }
+    obj.unpublishedAt = date;
+    ({ banner_text_color: tmp.bannerTextColor, mobile_title: tmp.mobileTitle, mobile_summary: tmp.mobileSummary, mobile_products_title: tmp.mobileProductsTitle, hero_banner_url: tmp.heroBannerUrl, hero_banner_animated_url: tmp.heroBannerAnimatedUrl, hero_rive_url: tmp.heroRiveUrl, hero_logo_url: tmp.heroLogoUrl, mobile_hero_url: tmp.mobileHeroUrl, mobile_hero_animated_url: tmp.mobileHeroAnimatedUrl } = unpublished_at);
+    const tmp2Result = CollectiblesUtils;
+    obj.bannerDisplayConfig = tmp2Result.getAssetDisplayConfig(unpublished_at.banner_display_config);
+    const tmp2Result2 = CollectiblesUtils;
+    obj.logoDisplayConfig = tmp2Result2.getAssetDisplayConfig(unpublished_at.logo_display_config);
+    return obj;
   }
-  obj.unpublishedAt = date;
-  ({ banner_text_color: tmp.bannerTextColor, mobile_title: tmp.mobileTitle, mobile_summary: tmp.mobileSummary, mobile_products_title: tmp.mobileProductsTitle, hero_banner_url: tmp.heroBannerUrl, hero_banner_animated_url: tmp.heroBannerAnimatedUrl, hero_rive_url: tmp.heroRiveUrl, hero_logo_url: tmp.heroLogoUrl, mobile_hero_url: tmp.mobileHeroUrl, mobile_hero_animated_url: tmp.mobileHeroAnimatedUrl } = unpublished_at);
-  obj.bannerDisplayConfig = CollectiblesUtils.getAssetDisplayConfig(unpublished_at.banner_display_config);
-  const tmp2Result = CollectiblesUtils;
-  obj.logoDisplayConfig = CollectiblesUtils.getAssetDisplayConfig(unpublished_at.logo_display_config);
-  return obj;
-}.prototype;
-prototype["fromServer"] = function fromServer(arg0) {
-  return new prototype(arg0);
-};
+  static fromServer(unpublished_at) {
+    return new HeroBlockRecord(unpublished_at);
+  }
+}
 const result = size.fileFinishedImporting("modules/collectibles/records/HeroBlockRecord.tsx");
 
-export const HeroBlockRecord = prototype;
+export { HeroBlockRecord };

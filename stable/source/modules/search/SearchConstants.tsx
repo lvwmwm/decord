@@ -1,13 +1,15 @@
-// Module ID: 8154
-// Function ID: 8155
+// Module ID: 7307
+// Function ID: 7308
 // Name: SearchConstants
-// Dependencies: [1074, 8155, 2]
+// Dependencies: [1086, 7308, 2]
 
-// Module 8154 (SearchConstants)
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8155 */;
-import Constants from "Constants" /* 1074 */;
+// Module 7307 (SearchConstants)
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7308 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
+let MessageEmbedTypes;
+let SearchTypes;
 ({ MessageEmbedTypes, SearchTypes } = Constants);
 const obj = { Messages: 0, [0]: "Messages", Media: 1, [1]: "Media", Link: 2, [2]: "Link", File: 3, [3]: "File", Pins: 4, [4]: "Pins" };
 const obj2 = { RECENT: "recent", MEMBERS: "members", PEOPLE: "people", MEDIA: "media", PINS: "pins", MESSAGES: "messages", LINKS: "links", FILES: "files", GUILD_CHANNELS: "guild_channels", THREADS: "threads" };
@@ -18,6 +20,7 @@ const items1 = [, , ];
 const items2 = [, , , ];
 ({ MEDIA: arr3[0], LINKS: arr3[1], PINS: arr3[2], FILES: arr3[3] } = obj2);
 const items3 = [, , , , , ];
+const obj3 = { [obj2.RECENT]: obj.Media, [obj2.MEDIA]: obj.Media, [obj2.PINS]: obj.Pins, [obj2.MESSAGES]: obj.Messages, [obj2.LINKS]: obj.Link, [obj2.FILES]: obj.File };
 ({ RECENT: arr4[0], PEOPLE: arr4[1], MEDIA: arr4[2], PINS: arr4[3], LINKS: arr4[4], FILES: arr4[5] } = obj2);
 const items4 = [, , , , , ];
 ({ PEOPLE: arr5[0], MESSAGES: arr5[1], MEDIA: arr5[2], PINS: arr5[3], LINKS: arr5[4], FILES: arr5[5] } = obj2);
@@ -39,8 +42,10 @@ const items12 = [, , , , , ];
 ({ MEMBERS: arr13[0], MESSAGES: arr13[1], MEDIA: arr13[2], PINS: arr13[3], LINKS: arr13[4], FILES: arr13[5] } = obj2);
 const items13 = [, , ];
 ({ IMAGE: arr14[0], VIDEO: arr14[1], GIFV: arr14[2] } = MessageEmbedTypes);
-const obj3 = { [obj2.RECENT]: obj.Media, [obj2.MEDIA]: obj.Media, [obj2.PINS]: obj.Pins, [obj2.MESSAGES]: obj.Messages, [obj2.LINKS]: obj.Link, [obj2.FILES]: obj.File };
 const set = new Set(items);
+const COZY = ChannelListLayoutTypes.ChannelListLayoutTypes.COZY;
+const FILES = obj2.FILES;
+const set1 = new Set(items13);
 const result = size.fileFinishedImporting("modules/search/SearchConstants.tsx");
 
 export const SearchAutocompleteSelectAnalyticsActions = { KEY_PRESS: "key_press", CLICK: "click" };
@@ -63,7 +68,7 @@ export const SEARCH_FILTERS_BY_TAB = obj3;
 export const SEARCH_TYPE_TO_SEARCH_INITIAL_TABS = { [SearchTypes.THREAD]: items11, [SearchTypes.CHANNEL]: items7, [SearchTypes.GUILD_CHANNEL]: items9, [SearchTypes.GUILD]: items5, [SearchTypes.DMS]: items3 };
 export const SEARCH_TYPE_TO_SEARCH_RESULT_TABS = { [SearchTypes.THREAD]: items12, [SearchTypes.CHANNEL]: items8, [SearchTypes.GUILD_CHANNEL]: items10, [SearchTypes.GUILD]: items6, [SearchTypes.DMS]: items4 };
 export const SearchHistoryItemTypes = { GUILD_TEXT_CHANNEL: "guild_text_channel", GUILD_VOICE_CHANNEL: "guild_voice_channel", GROUP_DM: "group_dm", DM: "dm", TEXT: "text" };
-export const SearchListItemTypes = { DM: "dm", GENERIC: "generic", GROUP_DM: "group_dm", GUILD_TEXT_CHANNEL: "guild_text_channel", GUILD_VOICE_CHANNEL: "guild_voice_channel", SEARCH_HISTORY_ITEM: "search_history_item", MEDIA: "media", MEDIA_PLACEHOLDER: "media_placeholder", MEDIA_GRID: "media_grid", MESSAGE: "message", MESSAGE_PLACEHOLDER: "message_placeholder", FILE: "file", LINK: "link", FILE_OR_LINK_PLACEHOLDER: "file_or_link_placeholder", SECTION: "section", GUILD_CHANNEL_MEMBER_PLACEHOLDER: "guild_channel_member_placeholder", GUILD_CHANNEL_MEMBER: "guild_channel_member" };
+export const SearchListItemTypes = { DM: "dm", GENERIC: "generic", GROUP_DM: "group_dm", GUILD_TEXT_CHANNEL: "guild_text_channel", GUILD_VOICE_CHANNEL: "guild_voice_channel", SEARCH_HISTORY_ITEM: "search_history_item", MEDIA: "media", MEDIA_PLACEHOLDER: "media_placeholder", MEDIA_GRID: "media_grid", MESSAGE: "message", MESSAGE_PLACEHOLDER: "message_placeholder", FILE: "file", LINK: "link", FILE_OR_LINK_PLACEHOLDER: "file_or_link_placeholder", SECTION: "section", GUILD_CHANNEL_MEMBER_PLACEHOLDER: "guild_channel_member_placeholder", GUILD_CHANNEL_MEMBER: "guild_channel_member", INTELLIGENCE_SMART_SEARCH: "intelligence_smart_search" };
 export const SEARCH_LIST_SECTION_TOP_PADDING = 16;
 export const SEARCH_LIST_HORIZONTAL_PADDING = 16;
 export const FILES_OR_LINKS_GAP_WIDTH = 8;
@@ -79,12 +84,12 @@ export const MESSAGE_ESTIMATED_ITEM_SIZE = 110;
 export const CARD_ESTIMATED_ITEM_SIZE = 150;
 export const RECENTS_ESTIMATED_ITEM_SIZE = 64;
 export const MESSAGE_PLACEHOLDER_ITEM_SIZE = 64;
-export const CHANNEL_LIST_SEARCH_LAYOUT = ChannelListLayoutTypes.ChannelListLayoutTypes.COZY;
+export const CHANNEL_LIST_SEARCH_LAYOUT = COZY;
 export const EMPTY_VOICE_STATES = [];
 export const EMPTY_SEARCH_TAB_COUNTS = {};
 export const FADE_LAYOUT_ANIMATION_DURATION = 350;
 export const EMPTY_SEARCH_QUERY_STRING = "";
-export const SEARCH_MESSAGE_TAB_SENTINEL = obj2.FILES;
+export const SEARCH_MESSAGE_TAB_SENTINEL = FILES;
 export const MAX_SEARCH_RESULTS_LIMIT = 25;
 export const SearchMediaTypes = { AUDIO: "audio", EMBED: "embed", ATTACHMENT: "attachment", COMPONENT: "component" };
 export const SearchLinkTypes = { TEXT: "text", EMBED: "embed" };
@@ -92,4 +97,4 @@ export const SearchFileTypes = { AUDIO: "audio", MEDIA_ATTACHMENT: "media_attach
 export const SEARCH_BAR_HEIGHT = 40;
 export const SearchQueryTagTypes = { COMPLETE: "complete", PREFIX: "prefix", ANSWER: "answer" };
 export const SearchQuerySource = { SEARCH_TEXT_INPUT: "search_text_input", SEARCH_POPOUT: "search_popout", SEARCH_FILTERS_MODAL: "search_filters_modal", SEARCH_XDM_SETTINGS: "search_xdm_settings", SEARCH_RESULTS_HINT: "search_results_hint" };
-export const EMBED_TYPES_WITHOUT_DESCRIPTION = new Set(items13);
+export const EMBED_TYPES_WITHOUT_DESCRIPTION = set1;

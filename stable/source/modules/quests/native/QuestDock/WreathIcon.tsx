@@ -1,26 +1,83 @@
-// Module ID: 15374
-// Function ID: 15375
+// Module ID: 14621
+// Function ID: 14622
 // Name: WreathIcon
-// Dependencies: [19, 21, 576, 4488, 15375, 2]
-// Exports: default
+// Dependencies: [109, 19, 21, 558, 576, 588, 14622, 4534, 2]
 
-// Module 15374 (WreathIcon)
-import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod15375 from "module_15375" /* 15375 */;
-import noop from "module_19" /* 19 */;
+// Module 14621 (WreathIcon)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import BaseIconImage2 from "BaseIconImage" /* 4534 */;
+import AssetRegistry from "AssetRegistry" /* 14622 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/quests/native/QuestDock/WreathIcon.tsx");
-
-export default function WreathIcon(color) {
+let closure_3 = ["style", "color"];
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let INTERACTIVE_TEXT_DEFAULT;
+  let color;
+  let style;
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(9);
+  if (cResult[0] !== arg0) {
+    ({ style, color } = arg0);
+    const tmp8 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = tmp8;
+    cResult[2] = style;
+    cResult[3] = color;
+    INTERACTIVE_TEXT_DEFAULT = color;
+    tmp5 = style;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    INTERACTIVE_TEXT_DEFAULT = cResult[3];
+  }
+  if (undefined === INTERACTIVE_TEXT_DEFAULT) {
+    INTERACTIVE_TEXT_DEFAULT = nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT;
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = AssetRegistry;
+    cResult[4] = tmpResult;
+    tmp10 = tmpResult;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] === INTERACTIVE_TEXT_DEFAULT) {
+    if (cResult[6] === tmp4) {
+      let tmp12;
+      if (cResult[7] === tmp5) {
+        tmp12 = cResult[8];
+      }
+      return tmp12;
+    }
+  }
+  const BaseIconImage = tmp(4534).BaseIconImage;
+  const merged = Object.assign(tmp4);
+  const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_TEXT_DEFAULT} style={tmp5} />;
+  cResult[5] = INTERACTIVE_TEXT_DEFAULT;
+  cResult[6] = tmp4;
+  cResult[7] = tmp5;
+  cResult[8] = tmp14;
+  tmp12 = tmp14;
+}) : ((color) => {
   let INTERACTIVE_TEXT_DEFAULT = color.color;
+  const style = color.style;
   if (INTERACTIVE_TEXT_DEFAULT === undefined) {
     INTERACTIVE_TEXT_DEFAULT = nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT;
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
+  const BaseIconImage = BaseIconImage2.BaseIconImage;
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15375, color: INTERACTIVE_TEXT_DEFAULT, style: color.style });
-};
+  return <BaseIconImage source={AssetRegistry} color={INTERACTIVE_TEXT_DEFAULT} style={style} />;
+});
+const result = size.fileFinishedImporting("modules/quests/native/QuestDock/WreathIcon.tsx");
+
+export default tmp3;

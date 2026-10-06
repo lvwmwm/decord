@@ -1,26 +1,31 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 10960
+// Function ID: 10961
 // Name: PremiumMarketingUtil
-// Dependencies: [1074, 7656, 7860, 1101, 2]
+// Dependencies: [1086, 6801, 7010, 1113, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 11877 (PremiumMarketingUtil)
-import router_utils from "router_utils" /* 1101 */;
-import openUserSettings from "openUserSettings" /* 7656 */;
-import LayerActionCreators from "LayerActionCreators" /* 7860 */;
-import Constants from "Constants" /* 1074 */;
+// Module 10960 (PremiumMarketingUtil)
+import router_utils from "router_utils" /* 1113 */;
+import openUserSettings from "openUserSettings" /* 6801 */;
+import LayerActionCreators from "LayerActionCreators" /* 7010 */;
+import Constants from "Constants" /* 1086 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
 ({ Routes: c2, UserSettingsSections: c3 } = Constants);
 const result = size.fileFinishedImporting("modules/premium/PremiumMarketingUtil.tsx");
 
 export const navigateToPremiumHomePage = function navigateToPremiumHomePage() {
-  openUserSettings.openUserSettings({ screen: constants2.PREMIUM });
+  const obj = { screen: constants2.PREMIUM };
+  openUserSettings.openUserSettings(obj);
 };
 export const navigateToNitroHomePage = function navigateToNitroHomePage(fn) {
   if (fn != null) {
     fn();
   }
-  LayerActionCreators.popLayer();
-  router_utils.transitionTo(constants.APPLICATION_STORE);
+  const obj = LayerActionCreators;
+  obj.popLayer();
+  const obj2 = router_utils;
+  obj2.transitionTo(constants.APPLICATION_STORE);
 };

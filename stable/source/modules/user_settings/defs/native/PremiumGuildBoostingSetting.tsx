@@ -1,31 +1,33 @@
-// Module ID: 15272
-// Function ID: 15273
+// Module ID: 14516
+// Function ID: 14517
 // Name: PremiumGuildBoostingSetting
-// Dependencies: [1074, 11754, 1115, 9521, 13793, 2]
+// Dependencies: [1086, 10874, 1127, 8675, 13041, 2]
 
-// Module 15272 (PremiumGuildBoostingSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import BoostGemIcon from "BoostGemIcon" /* 9521 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14516 (PremiumGuildBoostingSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import BoostGemIcon from "BoostGemIcon" /* 8675 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["+CbP2v"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["+CbP2v"]);
   },
   parent: null,
   IconComponent: BoostGemIcon.BoostGemIcon,
   screen: {
-    route: Constants.UserSettingsSections.GUILD_BOOSTING,
+    route: UserSettingsSections.GUILD_BOOSTING,
     getComponent() {
       return require("UserSettingsPremiumGuildSubscriptions").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/PremiumGuildBoostingSetting.tsx");
 
 export default route;

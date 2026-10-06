@@ -1,20 +1,21 @@
-// Module ID: 10197
-// Function ID: 10198
+// Module ID: 9335
+// Function ID: 9336
 // Name: SoundUtils
-// Dependencies: [10198, 4633, 9945, 3, 10200, 10201, 2]
+// Dependencies: [9336, 4681, 9083, 3, 9338, 9339, 2]
 // Exports: createSound, createSoundForPack, playSound
 
-// Module 10197 (SoundUtils)
+// Module 9335 (SoundUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import getSoundsForPackDefault from "getSoundsForPack" /* 10200 */;
-import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 10201 */;
-import SoundpackStore from "SoundpackStore" /* 10198 */;
-import StreamerModeStore from "StreamerModeStore" /* 4633 */;
+import Constants from "Constants" /* 9083 */;
+import getSoundsForPackDefault from "getSoundsForPack" /* 9338 */;
+import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 9339 */;
+import SoundpackStore from "SoundpackStore" /* 9336 */;
+import StreamerModeStore from "StreamerModeStore" /* 4681 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SoundOutputChannel = fn(9945).SoundOutputChannel;
-const logger = new LoggerDefault("SoundUtils");
-const size = fn(2);
+const SoundOutputChannel = Constants.SoundOutputChannel;
+const tmp2 = new LoggerDefault("SoundUtils");
+const logger = tmp2;
 const result = size.fileFinishedImporting("modules/sound_playback/SoundUtils.tsx");
 
 export const createSoundForPack = function createSoundForPack(call_calling, soundpack) {
@@ -39,7 +40,7 @@ export const createSoundForPack = function createSoundForPack(call_calling, soun
   const mobileAudioSound = new sound_playback_SoundUtils.MobileAudioSound(tmp3, call_calling, num, DEFAULT, false);
   return mobileAudioSound;
 };
-export const createSound = function createSound(stage_waiting, soundboard_sound, arg2) {
+export const createSound = function createSound(stage_waiting, vibing_wumpus, arg2) {
   let num = arg2;
   if (arg2 === undefined) {
     num = 1;
@@ -52,7 +53,7 @@ export const createSound = function createSound(stage_waiting, soundboard_sound,
   if (arg4 === undefined) {
     flag = false;
   }
-  const mobileAudioSound = new sound_playback_SoundUtils.MobileAudioSound(stage_waiting, soundboard_sound, num, DEFAULT, flag);
+  const mobileAudioSound = new sound_playback_SoundUtils.MobileAudioSound(stage_waiting, vibing_wumpus, num, DEFAULT, flag);
   return mobileAudioSound;
 };
 export const playSound = function playSound(arg0, arg1, arg2, arg3, outputChannel) {
@@ -60,13 +61,15 @@ export const playSound = function playSound(arg0, arg1, arg2, arg3, outputChanne
   if (arg1 === undefined) {
     num = 1;
   }
-  closure_0 = arg2;
+  let closure_0 = arg2;
   if (!StreamerModeStore.disableSounds) {
+    let tmp = arg3;
     let soundpack = arg3;
+    const tmp4 = getSoundsForPackDefault;
     if (arg3 == null) {
       soundpack = SoundpackStore.getSoundpack();
     }
-    const tmp4Result = getSoundsForPackDefault(soundpack);
+    const tmp4Result = tmp4(soundpack);
     if (null == tmp4Result) {
       const _HermesInternal = HermesInternal;
       logger.log("Unable to find sound for pack name: " + arg3);
@@ -98,14 +101,17 @@ export const playSound = function playSound(arg0, arg1, arg2, arg3, outputChanne
     if (flag === undefined) {
       flag = false;
     }
+    const self = this;
+    const self2 = this;
     const mobileAudioSound = new sound_playback_SoundUtils.MobileAudioSound(tmp13, arg0, num, outputChannel, flag);
     if (null != arg2) {
-      mobileAudioSound.playWithListener().then((result) => {
-        if (result) {
+      const playWithListenerResult = mobileAudioSound.playWithListener();
+      playWithListenerResult.then((result) => {
+        const tmp = result;
+        if (tmp) {
           closure_0();
         }
       });
-      const playWithListenerResult = mobileAudioSound.playWithListener();
     } else {
       mobileAudioSound.play();
     }

@@ -1,59 +1,93 @@
-// Module ID: 16409
-// Function ID: 16410
+// Module ID: 15697
+// Function ID: 15698
 // Name: happeningNowRankingUtils
-// Dependencies: [4437, 4807, 15569, 1370, 12, 2]
+// Dependencies: [4482, 4856, 14829, 1376, 12, 2]
 // Exports: cardSize, filterHappeningNowCards, sortHappeningNowCards
 
-// Module 16409 (happeningNowRankingUtils)
+// Module 15697 (happeningNowRankingUtils)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 14829 */;
+import size from "module_2" /* 2 */;
 
 const _modDef12 = _mod12;
 
-require = fn;
-const HappeningNowConstants = fn(15569);
-({ HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: hasOwnProperty, HAPPENING_NOW_CARD_WIDTH_SMALL_WITH_MARGIN: metroRequire, HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN: closure_7 } = HappeningNowConstants);
-const size = fn(2);
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: hasOwnProperty, HAPPENING_NOW_CARD_WIDTH_SMALL_WITH_MARGIN: metroRequire, HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN: metroImportDefault } = HappeningNowConstants);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/happeningNowRankingUtils.tsx");
 
 export const cardSize = function cardSize(kind) {
   switch (kind.kind) {
     case "placeholder":
+    {
       return hasOwnProperty;
+    }
     case "voice":
+    {
       return hasOwnProperty;
+    }
     case "activity":
+    {
       return hasOwnProperty;
+    }
     case "guild-event":
+    {
       return hasOwnProperty;
+    }
     case "active-channel":
+    {
       return hasOwnProperty;
+    }
     case "live-guild-stage":
+    {
       return hasOwnProperty;
+    }
     case "embedded-activity":
+    {
       return hasOwnProperty;
+    }
     case "unified-vc":
+    {
       return hasOwnProperty;
+    }
     case "user":
-      return React5;
+    {
+      return metroImportDefault;
+    }
     case "invite":
-      return timestampProducer;
+    {
+      return metroRequire;
+    }
     case "create-channel":
-      return timestampProducer;
+    {
+      return metroRequire;
+    }
     case "customize-guild":
-      return timestampProducer;
+    {
+      return metroRequire;
+    }
     case "student-hub-add-channel":
-      return timestampProducer;
+    {
+      return metroRequire;
+    }
     default:
-      GlobalUtils.assertNever(kind);
+    {
+      const obj = GlobalUtils;
+      obj.assertNever(kind);
+      break;
+    }
   }
 };
 export const HappeningNowWeights = { Stage: 7, Voice: 6, Stream: 5, Game: 4, Listening: 3, CustomStatus: 3, User: 2, Base: 1 };
 export const HAPPENING_NOW_OFFLINE_PENALTY = -1000;
 export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
   return arr.filter((voiceState) => {
+    let blockedOrIgnored;
+    const f151520 = (discoverable) => false === discoverable.discoverable;
     let flag = false;
     if ("voiceState" in voiceState) {
       flag = false;
@@ -63,16 +97,13 @@ export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
         if (null != channelId) {
           const _Object = Object;
           const values = Object.values(VoiceStateStore.getVoiceStatesForChannel(channelId));
-          let everyResult = values.length > 0;
-          if (everyResult) {
-            everyResult = values.every((discoverable) => false === discoverable.discoverable);
-          }
-          flag = everyResult;
+          flag = values.length > 0 && values.every(f151520);
+          const everyResult = values.length > 0 && values.every(f151520);
         }
       }
     }
     let tmp5 = !flag;
-    if (!flag) {
+    if (tmp5) {
       let flag2 = false;
       if ("voiceState" in voiceState) {
         flag2 = false;
@@ -83,10 +114,10 @@ export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
             const voiceStatesForChannel = VoiceStateStore.getVoiceStatesForChannel(channelId2);
             let someResult = null != voiceStatesForChannel;
             if (someResult) {
-              const mapped = _modDef12(voiceStatesForChannel).map((userId) => userId.userId);
+              const arr2 = _modDef12(voiceStatesForChannel);
+              const mapped = arr2.map((userId) => userId.userId);
               const found = mapped.filter(GlobalUtils.isNotNullish);
               someResult = found.some((item) => blockedOrIgnored.isBlockedOrIgnored(item));
-              const arr2 = _modDef12(voiceStatesForChannel);
             }
             flag2 = someResult;
           }
@@ -98,82 +129,116 @@ export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
   });
 };
 export const sortHappeningNowCards = function sortHappeningNowCards(result) {
+  let voiceStatesForChannel;
+  let obj = _mod12;
   const items = [
     (kind) => {
+      let num;
+      let tmp;
       switch (kind.kind) {
         case "placeholder":
-          let tmp = closure_1_5;
-          let num = 1;
+        {
+          tmp = closure_1_5;
+          num = 1;
           if (tmp === closure_1_5) {
             num = 0;
           }
           return num;
+        }
         case "voice":
+        {
           tmp = closure_1_5;
           num = 1;
           if (tmp === closure_1_5) {
             num = 0;
           }
           return num;
+        }
         case "activity":
+        {
           tmp = closure_1_5;
           num = 1;
           if (tmp === closure_1_5) {
             num = 0;
           }
           return num;
+        }
         case "guild-event":
+        {
           tmp = closure_1_5;
           num = 1;
           if (tmp === closure_1_5) {
             num = 0;
           }
           return num;
+        }
         case "active-channel":
+        {
           tmp = closure_1_5;
           num = 1;
           if (tmp === closure_1_5) {
             num = 0;
           }
           return num;
+        }
         case "live-guild-stage":
+        {
           tmp = closure_1_5;
           num = 1;
           if (tmp === closure_1_5) {
             num = 0;
           }
           return num;
+        }
         case "embedded-activity":
+        {
           tmp = closure_1_5;
           num = 1;
           if (tmp === closure_1_5) {
             num = 0;
           }
           return num;
+        }
         case "unified-vc":
+        {
           tmp = closure_1_5;
           num = 1;
           if (tmp === closure_1_5) {
             num = 0;
           }
           return num;
+        }
         case "user":
+        {
           tmp = closure_1_7;
-        break;
+          break;
+        }
         case "invite":
+        {
           tmp = closure_1_6;
-        break;
+          break;
+        }
         case "create-channel":
+        {
           tmp = closure_1_6;
-        break;
+          break;
+        }
         case "customize-guild":
+        {
           tmp = closure_1_6;
-        break;
+          break;
+        }
         case "student-hub-add-channel":
+        {
           tmp = closure_1_6;
-        break;
+          break;
+        }
         default:
-          GlobalUtils.assertNever(kind);
+        {
+          const obj = GlobalUtils;
+          obj.assertNever(kind);
+          break;
+        }
       }
     },
     (voiceState) => {
@@ -198,5 +263,5 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
       return flag;
     }
   ];
-  return _mod12.orderBy(result, items, ["asc", "asc"]);
+  return obj.orderBy(result, items, ["asc", "asc"]);
 };

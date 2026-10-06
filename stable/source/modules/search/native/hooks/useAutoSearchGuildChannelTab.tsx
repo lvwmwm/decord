@@ -1,46 +1,163 @@
-// Module ID: 17199
-// Function ID: 17200
+// Module ID: 16549
+// Function ID: 16550
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [19, 12636, 12623, 12644, 12, 12621, 2]
-// Exports: useAutoSearchGuildChannelTab
+// Dependencies: [19, 11729, 558, 576, 11716, 11737, 12, 11714, 2]
 
-// Module 17199 (useAutoSearchGuildChannelTab)
+// Module 16549 (useAutoSearchGuildChannelTab)
 import _mod12 from "module_12" /* 12 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12621 */;
-import SearchUtils from "SearchUtils" /* 12623 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12644 */;
-import noop from "module_19" /* 19 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11714 */;
+import SearchUtils from "SearchUtils" /* 11716 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 11729 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11737 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = fn(12636).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-export const useAutoSearchGuildChannelTab = function useAutoSearchGuildChannelTab(searchContext, arg1) {
-  closure_1 = arg1;
-  const items = [searchContext];
-  const callback = noop.useCallback((searchQueryString) => {
-    const guildIdFromSearchContext = SearchUtils.getGuildIdFromSearchContext(searchContext);
+let closure_4 = SearchPlatformConstants.SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_2;
+  let tmp2;
+  _require = arg0;
+  let closure_1 = arg1;
+  let obj = require("react");
+  const cResult = obj.c(14);
+  if (cResult[0] !== arg0) {
+    const fn = function c(searchQueryString) {
+      const obj = SearchUtils;
+      const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(closure_0);
+      const tmp2 = closure_0;
+      if (null != guildIdFromSearchContext) {
+        const obj3 = { searchContext: tmp2, searchQueryString, guildId: guildIdFromSearchContext };
+        const obj2 = SearchPlatformActionCreatorsDefault;
+        const result = obj2.searchGuildChannelTab(obj3);
+      }
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  dependencyMap = tmp2;
+  if (cResult[2] === arg1) {
+    let tmp3;
+    let tmp4;
+    if (cResult[3] === tmp2) {
+      tmp3 = cResult[4];
+      tmp4 = cResult[5];
+    }
+    let obj2 = react;
+    const effect = react.useEffect(tmp3, tmp4);
+    if (cResult[6] === arg1) {
+      if (cResult[7] === tmp2) {
+        let tmp6;
+        let tmp7;
+        let tmp10;
+        let tmp9;
+        if (cResult[8] === arg0) {
+          tmp6 = cResult[9];
+          tmp7 = cResult[10];
+        }
+        const effect1 = obj2.useEffect(tmp6, tmp7);
+        if (cResult[11] !== arg0) {
+          class C {
+            constructor() {
+              return () => {
+                const obj = closure_1(closure_2[5]);
+                const result = obj.cleanupGuildChannelTab(closure_1_0);
+              };
+            }
+          }
+          const items = [arg0];
+          cResult[11] = arg0;
+          cResult[12] = C;
+          cResult[13] = items;
+          tmp10 = items;
+          tmp9 = C;
+        } else {
+          class C {
+            constructor() {
+              return () => {
+                const obj = closure_1(closure_2[5]);
+                const result = obj.cleanupGuildChannelTab(closure_1_0);
+              };
+            }
+          }
+          tmp10 = cResult[13];
+        }
+        const effect2 = obj2.useEffect(tmp9, tmp10);
+      }
+    }
+    const fn3 = function h() {
+      if (!closure_1) {
+        const obj = _mod12;
+        const debounceResult = obj.debounce(closure_2, closure_4);
+        const obj2 = SearchPlatformUtilsDefault;
+        return obj2.subscribeTextInputValue(closure_0, debounceResult, true);
+      }
+    };
+    const items1 = [arg0, arg1, tmp2];
+    cResult[6] = arg1;
+    cResult[7] = tmp2;
+    cResult[8] = arg0;
+    cResult[9] = fn3;
+    cResult[10] = items1;
+    tmp7 = items1;
+    tmp6 = fn3;
+  }
+  const fn2 = function o() {
+    const tmp = closure_1;
+    if (!tmp) {
+      closure_2("");
+    }
+  };
+  const items2 = [arg1, tmp2];
+  cResult[2] = arg1;
+  cResult[3] = tmp2;
+  cResult[4] = fn2;
+  cResult[5] = items2;
+  tmp4 = items2;
+  tmp3 = fn2;
+}) : ((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const items = [arg0];
+  const callback = react.useCallback((searchQueryString) => {
+    const obj = SearchUtils;
+    const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(closure_0);
+    const tmp2 = closure_0;
     if (null != guildIdFromSearchContext) {
-      const obj3 = { searchContext, searchQueryString, guildId: guildIdFromSearchContext };
-      const result = SearchPlatformActionCreatorsDefault.searchGuildChannelTab(obj3);
+      const obj3 = { searchContext: tmp2, searchQueryString, guildId: guildIdFromSearchContext };
+      const obj2 = SearchPlatformActionCreatorsDefault;
+      const result = obj2.searchGuildChannelTab(obj3);
     }
   }, items);
   const items1 = [arg1, callback];
-  const effect = noop.useEffect(() => {
-    if (!closure_1) {
+  const effect = react.useEffect(() => {
+    const tmp = closure_1;
+    if (!tmp) {
       callback("");
     }
   }, items1);
-  const items2 = [searchContext, arg1, callback];
-  const effect1 = noop.useEffect(() => {
+  const items2 = [arg0, arg1, callback];
+  const effect1 = react.useEffect(() => {
     if (!closure_1) {
-      const debounceResult = _mod12.debounce(callback, closure_4);
-      return SearchPlatformUtilsDefault.subscribeTextInputValue(closure_0, debounceResult, true);
+      const obj = _mod12;
+      const debounceResult = obj.debounce(callback, closure_4);
+      const obj2 = SearchPlatformUtilsDefault;
+      return obj2.subscribeTextInputValue(closure_0, debounceResult, true);
     }
   }, items2);
-  const items3 = [searchContext];
-  const effect2 = noop.useEffect(() => () => {
-    const result = closure_1(callback[3]).cleanupGuildChannelTab(searchContext);
+  const items3 = [arg0];
+  const effect2 = react.useEffect(() => () => {
+    const obj = closure_1(callback[5]);
+    const result = obj.cleanupGuildChannelTab(closure_1_0);
   }, items3);
-};
+});
+let result = size.fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
+
+export const useAutoSearchGuildChannelTab = tmp2;

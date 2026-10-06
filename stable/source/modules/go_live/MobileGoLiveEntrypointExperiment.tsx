@@ -1,14 +1,18 @@
-// Module ID: 17570
-// Function ID: 17571
+// Module ID: 16855
+// Function ID: 16856
 // Name: MobileGoLiveEntrypointExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 17570 (MobileGoLiveEntrypointExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 16855 (MobileGoLiveEntrypointExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
+let obj3;
+let obj4;
 const obj = { CONTROL: 0, [0]: "CONTROL", SCREENSHARE_REPLACES_CHAT: 1, [1]: "SCREENSHARE_REPLACES_CHAT", SCREENSHARE_REPLACES_SOUNDBOARD: 2, [2]: "SCREENSHARE_REPLACES_SOUNDBOARD" };
-const obj2 = { name: "2026-01-mobile-go-live-entrypoint", kind: "user", defaultConfig: { treatment: obj.CONTROL }, variations: { [obj.SCREENSHARE_REPLACES_CHAT]: { treatment: obj.SCREENSHARE_REPLACES_CHAT }, [obj.SCREENSHARE_REPLACES_SOUNDBOARD]: { treatment: obj.SCREENSHARE_REPLACES_SOUNDBOARD } } };
+const obj2 = { name: "2026-01-mobile-go-live-entrypoint", kind: "user", defaultConfig: { treatment: obj.CONTROL }, variations: { [obj.SCREENSHARE_REPLACES_CHAT]: obj3, [obj.SCREENSHARE_REPLACES_SOUNDBOARD]: obj4 } };
+obj3 = { treatment: obj.SCREENSHARE_REPLACES_CHAT };
+obj4 = { treatment: obj.SCREENSHARE_REPLACES_SOUNDBOARD };
 const apexExperiment = ApexExperiment.createApexExperiment(obj2);
 const result = size.fileFinishedImporting("modules/go_live/MobileGoLiveEntrypointExperiment.tsx");
 

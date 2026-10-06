@@ -1,27 +1,29 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 14402
+// Function ID: 14403
 // Name: shareGuardianConnectLink
-// Dependencies: [7812, 8664, 1115, 2482, 2]
+// Dependencies: [6962, 7813, 1127, 2490, 2]
 // Exports: shareGuardianConnectLink
 
-// Module 15159 (shareGuardianConnectLink)
-import util from "util" /* 1115 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7812 */;
-import showShareActionSheet from "showShareActionSheet" /* 8664 */;
+// Module 14402 (shareGuardianConnectLink)
+import intl2 from "intl" /* 1127 */;
+import _modDef2490 from "module_2490" /* 2490 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 6962 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 7813 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = FamilyCenterConstants.FAMILY_CENTER_REQUEST_QR_CODE_URL;
 const result = size.fileFinishedImporting("modules/parent_tools/native/shareGuardianConnectLink.tsx");
 
 export const shareGuardianConnectLink = function shareGuardianConnectLink(stateFromStores, linkCode) {
+  let intl;
   let username = stateFromStores.globalName;
+  const tmp = closure_3(stateFromStores.id, linkCode);
   if (username == null) {
     username = stateFromStores.username;
   }
-  const tmp = closure_3(stateFromStores.id, linkCode);
-  const obj2 = { message: null };
-  const intl = util.intl;
-  obj2.message = intl.formatToPlainString(_modDef2482.lVD5Nd, { username, url: tmp });
-  showShareActionSheet.showShareActionSheet(obj2, "Family Center Connect Guardian");
+  const obj = { message: intl.formatToPlainString(_modDef2490.lVD5Nd, { username, url: tmp }) };
+  const showShareActionSheet = showShareActionSheet2.showShareActionSheet;
+  showShareActionSheet2;
+  intl = intl2.intl;
+  showShareActionSheet(obj, "Family Center Connect Guardian");
 };

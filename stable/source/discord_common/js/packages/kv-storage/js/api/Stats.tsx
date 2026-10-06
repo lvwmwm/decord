@@ -1,23 +1,22 @@
-// Module ID: 2086
-// Function ID: 2087
+// Module ID: 2093
+// Function ID: 2094
 // Name: api/Stats
-// Dependencies: [2079, 2]
+// Dependencies: [2086, 2]
 
-// Module 2086 (api/Stats)
-import Host2 from "Host" /* 2079 */;
+// Module 2093 (api/Stats)
+import Host2 from "Host" /* 2086 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Stats.tsx");
-const prototype = function Stats() {
-  return Object.create(new.target.prototype);
-}.prototype;
-prototype["malformedValueCount"] = function malformedValueCount() {
-  const Host = Host2.Host;
-  return Host.malformedValueCount();
-};
-prototype["malformedEntryCount"] = function malformedEntryCount() {
-  const Host = Host2.Host;
-  return Host.malformedEntryCount();
-};
+class Stats {
+  static malformedValueCount() {
+    const Host = Host2.Host;
+    return Host.malformedValueCount();
+  }
+  static malformedEntryCount() {
+    const Host = Host2.Host;
+    return Host.malformedEntryCount();
+  }
+}
 
-export const Stats = prototype;
+export { Stats };

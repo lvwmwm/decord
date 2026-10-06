@@ -3,8 +3,8 @@
 // Dependencies: []
 
 // Module 1917
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "tr",
+const obj = {
+  locale: "no",
   pluralRuleFunction(arg0, arg1) {
     let str = "other";
     let str2 = "other";
@@ -16,5 +16,5 @@ globalThis.IntlMessageFormat.__addLocaleData({
     }
     return str2;
   }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "tr-CY", parentLocale: "tr" });
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj);

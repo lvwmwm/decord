@@ -1,25 +1,31 @@
-// Module ID: 12915
-// Function ID: 12916
+// Module ID: 12040
+// Function ID: 12041
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 2041, 1074, 21, 4486, 1115, 7521, 4755, 5790, 4612, 4747, 576, 12916, 1980, 2]
+// Dependencies: [5, 32, 19, 2051, 1086, 21, 4531, 1127, 6666, 4801, 5854, 4660, 4793, 588, 12041, 1987, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12915 (useJoinRequestButtonActions)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 12040 (useJoinRequestButtonActions)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Routes = fn(1074).Routes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let c4, c5;
+
+const Routes = Constants.Routes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/useJoinRequestButtonActions.tsx");
 
-export const useJoinRequestButtonActions = function useJoinRequestButtonActions(joinRequest, interviewChannelId, callback) {
-  const onDismiss = callback;
+export const useJoinRequestButtonActions = function useJoinRequestButtonActions(joinRequest, interviewChannelId, cResult) {
+  let callback1;
+  let items1;
+  let items2;
+  let onDismiss = cResult;
   let obj = joinRequest;
   if (joinRequest == null) {
     obj = {};
@@ -27,32 +33,170 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
   const guildId = obj.guildId;
   const userId = obj.userId;
   const joinRequestId = obj.joinRequestId;
-  const tmp = userId(joinRequestId.useState(false), 2);
+  let tmp = userId(joinRequestId.useState(false), 2);
   const submitting = tmp[0];
-  closure_7 = tmp[1];
+  let closure_7 = tmp[1];
   const onError = joinRequestId.useCallback(() => {
-    const obj2 = { key: "JOIN_REQUEST_ERROR", content: null };
-    const intl = joinRequest(onDismiss[7]).intl;
-    obj2.content = intl.string(joinRequest(onDismiss[7]).t.R0RpRX);
-    interviewChannelId(onDismiss[6]).open(obj2);
+    let intl;
+    const obj = { key: "JOIN_REQUEST_ERROR", content: intl.string(joinRequest(onDismiss[7]).t.R0RpRX) };
+    const open = interviewChannelId(onDismiss[6]).open;
+    interviewChannelId(onDismiss[6]);
+    intl = joinRequest(onDismiss[7]).intl;
+    open(obj);
   }, []);
   const items = [guildId, joinRequestId, interviewChannelId, onError, submitting, userId];
-  let obj2 = { approveRequest: null, rejectRequest: null, submitting: null, handleOpenInterview: null };
-  const callback1 = joinRequestId.useCallback(guildId(function*(arg0, value) {
+  let obj2 = {
+    approveRequest: joinRequestId.useCallback(guildId(function*(arg0, value) {
+      let closure_0;
+      let closure_1;
+      let closure_2;
+      let intl;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              const tmp57 = first;
+              if (!tmp57) {
+                if (null != guildId) {
+                  if (null != userId) {
+                    if (null != joinRequestId) {
+                      closure_7(true);
+                      c3 = 2;
+                      const obj5 = tmp(onDismiss[10]);
+                      c4 = 3;
+                      c5 = 1;
+                      const obj7 = { value: obj5.updateGuildJoinRequest(guildId, userId, joinRequestId, tmp(onDismiss[11]).GuildJoinRequestApplicationStatuses.APPROVED), done: false };
+                      return obj7;
+                    }
+                  }
+                }
+              }
+            }
+          } else if (1 === c4) {
+            c3 = 0;
+            closure_129_7(false);
+            const obj4 = tmp2(onDismiss[9]);
+            obj4.hideActionSheet();
+            throw onDismiss;
+          } else {
+            if (2 === c4) {
+              c3 = 1;
+              closure_129_8();
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              closure_129_7(false);
+              let obj = tmp2(onDismiss[9]);
+              obj.hideActionSheet();
+              c5 = 3;
+              const obj8 = { value, done: true };
+              return obj8;
+            } else {
+              const obj9 = {
+                key: "JOIN_REQUEST_APPROVE",
+                content: intl.string(tmp(onDismiss[7]).t.WXHcq5),
+                icon() {
+                          const obj = { color: closure_1_1(closure_1_2[13]).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: closure_1_1(closure_1_2[13]).colors.STATUS_POSITIVE_TEXT };
+                          const CircleCheckIcon = closure_1_0(closure_1_2[12]).CircleCheckIcon;
+                          return closure_1_8(CircleCheckIcon, obj);
+                        }
+              };
+              const open = tmp2(onDismiss[6]).open;
+              const tmp51 = tmp2(onDismiss[6]);
+              intl = tmp(onDismiss[7]).intl;
+              open(obj9);
+              c3 = 1;
+            }
+            c3 = 0;
+            closure_129_7(false);
+            const obj3 = tmp2(onDismiss[9]);
+            obj3.hideActionSheet();
+          }
+          c5 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp40) {
+          onDismiss = tmp40;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp40;
+          } else if (1 === tmp42) {
+            c4 = 1;
+          } else {
+            c4 = 2;
+          }
+        }
+      }
+    }), items1),
+    rejectRequest: joinRequestId.useCallback(() => {
+      let tmp2 = null != joinRequest;
+      const tmp = joinRequest;
+      if (tmp2) {
+        tmp2 = null != guildId;
+      }
+      if (tmp2) {
+        tmp2 = null != userId;
+      }
+      if (tmp2) {
+        tmp2 = null != joinRequestId;
+      }
+      if (tmp2) {
+        const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+        const _HermesInternal = HermesInternal;
+        ActionSheetActionCreatorsDefault;
+        const obj = { joinRequest: tmp, onError, onDismiss };
+        const tmp10 = asyncRequire(12041, dependencyMap.paths);
+        openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
+      }
+    }, items2),
+    submitting,
+    handleOpenInterview: callback1
+  };
+  callback1 = joinRequestId.useCallback(guildId(function*(arg0, value) {
+    let channel;
+    let closure_1;
+    let closure_2;
+    let obj11;
+    let tmp17;
+    let tmp54;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp7 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
+      let c3;
       try {
+        let closure_0;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -63,33 +207,34 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_0 = tmp8;
-            closure_128_0 = undefined;
-            if (!first) {
+            closure_0 = undefined;
+            const tmp63 = first;
+            if (!tmp63) {
               if (null != guildId) {
                 if (null != userId) {
                   if (null != joinRequestId) {
-                    channel = channel.getChannel(tmp4);
+                    channel = channel.getChannel(tmp);
                     if (null != channel) {
                       c4 = 1;
                       c5 = 1;
-                      const obj5 = { value: tmp4(tmp60[8])(closure_1_7.CHANNEL(null, channel.id), { openChannel: true, navigationReplace: false }), done: false };
+                      const obj5 = { value: tmp54(closure_1_7.CHANNEL(null, channel.id), { openChannel: true, navigationReplace: false }), done: false };
+                      tmp54 = tmp(onDismiss[8]);
                       return obj5;
                     } else {
                       closure_7(true);
                       c3 = 2;
                       c4 = 4;
                       c5 = 1;
-                      const obj9 = { value: tmp4(tmp60[10]).createOrEnterJoinRequestInterview(tmp70, false), done: false };
+                      const obj9 = { value: obj11.createOrEnterJoinRequestInterview(tmp65, false), done: false };
+                      obj11 = tmp(onDismiss[10]);
                       return obj9;
                     }
                   }
                 }
               }
             }
-            c5 = 3;
           }
-        } else if (1 === tmp8) {
+        } else if (1 === c4) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
@@ -98,33 +243,42 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             const obj10 = { value, done: true };
             return obj10;
           } else {
-            tmp4(tmp60[9]).hideActionSheet();
+            const obj8 = tmp(onDismiss[9]);
+            obj8.hideActionSheet();
             c5 = 3;
             const obj12 = { value: undefined, done: true };
             return obj12;
           }
-        } else if (2 !== tmp8) {
-          if (3 === tmp8) {
+        } else if (2 === c4) {
+          c3 = 0;
+          closure_129_7(false);
+          const obj7 = tmp(onDismiss[9]);
+          obj7.hideActionSheet();
+          throw onDismiss;
+        } else {
+          if (3 === c4) {
             c3 = 1;
             closure_129_8();
           } else {
-            if (4 === tmp8) {
+            if (4 === c4) {
               if (arg0 === 1) {
                 c5 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c3 = 0;
                 closure_129_7(false);
-                tmp4(tmp60[9]).hideActionSheet();
+                const obj4 = tmp(onDismiss[9]);
+                obj4.hideActionSheet();
                 c5 = 3;
                 const obj13 = { value, done: true };
                 return obj13;
               } else {
-                closure_128_0 = value;
-                if (null != closure_128_0) {
+                closure_0 = value;
+                if (null != closure_0) {
                   c4 = 5;
                   c5 = 1;
-                  const obj14 = { value: tmp4(tmp60[8])(closure_1_7.CHANNEL(null, closure_128_0), { openChannel: true, navigationReplace: false }), done: false };
+                  const obj14 = { value: tmp17(closure_1_7.CHANNEL(null, closure_0), { openChannel: true, navigationReplace: false }), done: false };
+                  tmp17 = tmp(onDismiss[8]);
                   return obj14;
                 }
               }
@@ -134,7 +288,8 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             } else if (arg0 === 2) {
               c3 = 0;
               closure_129_7(false);
-              tmp4(tmp60[9]).hideActionSheet();
+              const obj = tmp(onDismiss[9]);
+              obj.hideActionSheet();
               c5 = 3;
               const obj15 = { value, done: true };
               return obj15;
@@ -143,137 +298,25 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           }
           c3 = 0;
           closure_129_7(false);
-          tmp4(tmp60[9]).hideActionSheet();
-          const obj6 = tmp4(tmp60[9]);
+          const obj6 = tmp(onDismiss[9]);
+          obj6.hideActionSheet();
         }
-        c3 = 0;
-        closure_129_7(false);
-        tmp4(tmp60[9]).hideActionSheet();
-        throw tmp60;
-      } catch (tmp60) {
-        if (tmp5 === c3) {
-          c5 = tmp3;
-          throw tmp60;
-        } else if (tmp2 === tmp62) {
-          c4 = tmp;
+        c5 = 3;
+        return { value: "IconComponent", done: null };
+      } catch (tmp56) {
+        onDismiss = tmp56;
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp56;
+        } else if (1 === tmp58) {
+          c4 = 2;
         } else {
-          c4 = tmp3;
+          c4 = 3;
         }
       }
     }
   }), items);
-  const items1 = [guildId, joinRequestId, onError, submitting, userId];
-  obj2.approveRequest = joinRequestId.useCallback(guildId(function*(arg0, value) {
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp7 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
-          } else {
-            let tmp42 = tmp4;
-            if (!first) {
-              if (null != guildId) {
-                if (null != userId) {
-                  if (null != joinRequestId) {
-                    closure_7(true);
-                    c3 = 2;
-                    const obj5 = tmp42(tmp44[10]);
-                    tmp42 = tmp62;
-                    c4 = 3;
-                    c5 = 1;
-                    const obj7 = { value: obj5.updateGuildJoinRequest(tmp32, tmp62, tmp33, tmp4(tmp44[11]).GuildJoinRequestApplicationStatuses.APPROVED), done: false };
-                    return obj7;
-                  }
-                }
-              }
-            }
-            c5 = 3;
-          }
-        } else if (1 !== tmp8) {
-          if (2 === tmp8) {
-            c3 = 1;
-            closure_129_8();
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            closure_129_7(false);
-            tmp42(tmp44[9]).hideActionSheet();
-            c5 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
-          } else {
-            const obj10 = { key: "JOIN_REQUEST_APPROVE", content: null, icon: null };
-            const intl = tmp4(tmp44[7]).intl;
-            obj10.content = intl.string(tmp4(tmp44[7]).t.WXHcq5);
-            obj10.icon = function icon() {
-              return closure_1_8(closure_1_0(4747).CircleCheckIcon, { color: closure_1_1(576).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: closure_1_1(576).colors.STATUS_POSITIVE_TEXT });
-            };
-            tmp42(tmp44[6]).open(obj10);
-            c3 = 1;
-            const obj9 = tmp42(tmp44[6]);
-          }
-          c3 = 0;
-          closure_129_7(false);
-          tmp42(tmp44[9]).hideActionSheet();
-          const obj3 = tmp42(tmp44[9]);
-        }
-        c3 = 0;
-        closure_129_7(false);
-        tmp42(tmp44[9]).hideActionSheet();
-        throw tmp44;
-      } catch (tmp44) {
-        if (tmp5 === c3) {
-          c5 = tmp3;
-          throw tmp44;
-        } else if (tmp2 === tmp46) {
-          c4 = tmp2;
-        } else {
-          c4 = tmp;
-        }
-      }
-    }
-  }), items1);
-  const items2 = [guildId, joinRequestId, joinRequest, callback, onError, userId];
-  obj2.rejectRequest = joinRequestId.useCallback(() => {
-    let tmp2 = null != joinRequest;
-    if (tmp2) {
-      tmp2 = null != guildId;
-    }
-    if (tmp2) {
-      tmp2 = null != userId;
-    }
-    if (tmp2) {
-      tmp2 = null != joinRequestId;
-    }
-    if (tmp2) {
-      const _HermesInternal = HermesInternal;
-      const obj = ActionSheetActionCreatorsDefault;
-      const obj2 = { joinRequest, onError, onDismiss };
-      obj.openLazy(asyncRequireImpl(12916, dependencyMap.paths), "RejectionReason-" + joinRequestId, obj2);
-      const tmp9 = asyncRequireImpl(12916, dependencyMap.paths);
-    }
-  }, items2);
-  obj2.submitting = submitting;
-  obj2.handleOpenInterview = callback1;
+  items1 = [guildId, joinRequestId, onError, submitting, userId];
+  items2 = [guildId, joinRequestId, joinRequest, cResult, onError, userId];
   return obj2;
 };

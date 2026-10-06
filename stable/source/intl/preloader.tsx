@@ -1,59 +1,56 @@
-// Module ID: 2121
-// Function ID: 2122
+// Module ID: 2127
+// Function ID: 2128
 // Name: preloader
-// Dependencies: [5, 1115, 1980, 2122, 2154, 2186, 2218, 2250, 2252, 2254, 2286, 2318, 2350, 2382, 2414, 2416, 2418, 2450, 2482, 2514, 2546, 2578, 2580, 2582, 2614, 2616, 2648, 2680, 2712, 2744, 2776, 2808, 2840, 2872, 2904, 2936, 2968, 3000, 3032, 3034, 3066, 3098, 3130, 3162, 3194, 3226, 3258, 3260, 3292, 3324, 3356, 3388, 3420, 3452, 3484, 3516, 3548, 3580, 3612, 3644, 3646, 3678, 3710, 3712, 3744, 3776, 3808, 3840, 2]
+// Dependencies: [5, 1127, 1987, 2128, 2160, 2192, 2224, 2256, 2258, 2260, 2292, 2294, 2326, 2358, 2390, 2422, 2424, 2426, 2458, 2490, 2522, 2554, 2586, 2588, 2590, 2622, 2624, 2656, 2688, 2720, 2752, 2784, 2816, 2848, 2880, 2912, 2944, 2976, 3008, 3040, 3042, 3074, 3106, 3138, 3170, 3202, 3234, 3266, 3268, 3300, 3332, 3364, 3396, 3428, 3460, 3492, 3524, 3556, 3588, 3620, 3652, 3654, 3686, 3718, 3720, 3752, 3784, 3816, 3848, 3880, 3912, 3914, 2]
 // Exports: preloadAllIntlMessageFiles
 
-// Module 2121 (preloader)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 2127 (preloader)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_3 = async function _preloadAllIntlMessageFiles(arg0, value) {
-  if (c0 === 2) {
-    c0 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c0 = 2;
+let c0;
+
+let obj = function _preloadAllIntlMessageFiles() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    if (c0 === 2) {
+      c0 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
-        c0 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c0 = 3;
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        const items = [asyncRequireImpl(dependencyMap[1], dependencyMap.paths), asyncRequireImpl(dependencyMap[3], dependencyMap.paths), asyncRequireImpl(dependencyMap[4], dependencyMap.paths), asyncRequireImpl(dependencyMap[5], dependencyMap.paths), asyncRequireImpl(dependencyMap[6], dependencyMap.paths), asyncRequireImpl(dependencyMap[7], dependencyMap.paths), asyncRequireImpl(dependencyMap[8], dependencyMap.paths), asyncRequireImpl(dependencyMap[9], dependencyMap.paths), asyncRequireImpl(dependencyMap[10], dependencyMap.paths), asyncRequireImpl(dependencyMap[11], dependencyMap.paths), asyncRequireImpl(dependencyMap[12], dependencyMap.paths), asyncRequireImpl(dependencyMap[13], dependencyMap.paths), asyncRequireImpl(dependencyMap[14], dependencyMap.paths), asyncRequireImpl(dependencyMap[15], dependencyMap.paths), asyncRequireImpl(dependencyMap[16], dependencyMap.paths), asyncRequireImpl(dependencyMap[17], dependencyMap.paths), asyncRequireImpl(dependencyMap[18], dependencyMap.paths), asyncRequireImpl(dependencyMap[19], dependencyMap.paths), asyncRequireImpl(dependencyMap[20], dependencyMap.paths), asyncRequireImpl(dependencyMap[21], dependencyMap.paths), asyncRequireImpl(dependencyMap[22], dependencyMap.paths), asyncRequireImpl(dependencyMap[23], dependencyMap.paths), asyncRequireImpl(dependencyMap[24], dependencyMap.paths), asyncRequireImpl(dependencyMap[25], dependencyMap.paths), asyncRequireImpl(dependencyMap[26], dependencyMap.paths), asyncRequireImpl(dependencyMap[27], dependencyMap.paths), asyncRequireImpl(dependencyMap[28], dependencyMap.paths), asyncRequireImpl(dependencyMap[29], dependencyMap.paths), asyncRequireImpl(dependencyMap[30], dependencyMap.paths), asyncRequireImpl(dependencyMap[31], dependencyMap.paths), asyncRequireImpl(dependencyMap[32], dependencyMap.paths), asyncRequireImpl(dependencyMap[33], dependencyMap.paths), asyncRequireImpl(dependencyMap[34], dependencyMap.paths), asyncRequireImpl(dependencyMap[35], dependencyMap.paths), asyncRequireImpl(dependencyMap[36], dependencyMap.paths), asyncRequireImpl(dependencyMap[37], dependencyMap.paths), asyncRequireImpl(dependencyMap[38], dependencyMap.paths), asyncRequireImpl(dependencyMap[39], dependencyMap.paths), asyncRequireImpl(dependencyMap[40], dependencyMap.paths), asyncRequireImpl(dependencyMap[41], dependencyMap.paths), asyncRequireImpl(dependencyMap[42], dependencyMap.paths), asyncRequireImpl(dependencyMap[43], dependencyMap.paths), asyncRequireImpl(dependencyMap[44], dependencyMap.paths), asyncRequireImpl(dependencyMap[45], dependencyMap.paths), asyncRequireImpl(dependencyMap[46], dependencyMap.paths), asyncRequireImpl(dependencyMap[47], dependencyMap.paths), asyncRequireImpl(dependencyMap[48], dependencyMap.paths), asyncRequireImpl(dependencyMap[49], dependencyMap.paths), asyncRequireImpl(dependencyMap[50], dependencyMap.paths), asyncRequireImpl(dependencyMap[51], dependencyMap.paths), asyncRequireImpl(dependencyMap[52], dependencyMap.paths), asyncRequireImpl(dependencyMap[53], dependencyMap.paths), asyncRequireImpl(dependencyMap[54], dependencyMap.paths), asyncRequireImpl(dependencyMap[55], dependencyMap.paths), asyncRequireImpl(dependencyMap[56], dependencyMap.paths), asyncRequireImpl(dependencyMap[57], dependencyMap.paths), asyncRequireImpl(dependencyMap[58], dependencyMap.paths), asyncRequireImpl(dependencyMap[59], dependencyMap.paths), asyncRequireImpl(dependencyMap[60], dependencyMap.paths), asyncRequireImpl(dependencyMap[61], dependencyMap.paths), asyncRequireImpl(dependencyMap[62], dependencyMap.paths), asyncRequireImpl(dependencyMap[63], dependencyMap.paths), asyncRequireImpl(dependencyMap[64], dependencyMap.paths), asyncRequireImpl(dependencyMap[65], dependencyMap.paths), asyncRequireImpl(dependencyMap[66], dependencyMap.paths), asyncRequireImpl(dependencyMap[67], dependencyMap.paths)];
-        c0 = 3;
-        const obj = { value: Promise.all(items), done: true };
-        return obj;
+        return { value: "IconComponent", done: null };
       }
-    } catch (tmp4) {
-      c0 = tmp;
-      throw tmp4;
+    } else {
+      try {
+        c0 = 2;
+        if (arg0 === 1) {
+          c0 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c0 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          const items = [asyncRequire(dependencyMap[1], dependencyMap.paths), asyncRequire(dependencyMap[3], dependencyMap.paths), asyncRequire(dependencyMap[4], dependencyMap.paths), asyncRequire(dependencyMap[5], dependencyMap.paths), asyncRequire(dependencyMap[6], dependencyMap.paths), asyncRequire(dependencyMap[7], dependencyMap.paths), asyncRequire(dependencyMap[8], dependencyMap.paths), asyncRequire(dependencyMap[9], dependencyMap.paths), asyncRequire(dependencyMap[10], dependencyMap.paths), asyncRequire(dependencyMap[11], dependencyMap.paths), asyncRequire(dependencyMap[12], dependencyMap.paths), asyncRequire(dependencyMap[13], dependencyMap.paths), asyncRequire(dependencyMap[14], dependencyMap.paths), asyncRequire(dependencyMap[15], dependencyMap.paths), asyncRequire(dependencyMap[16], dependencyMap.paths), asyncRequire(dependencyMap[17], dependencyMap.paths), asyncRequire(dependencyMap[18], dependencyMap.paths), asyncRequire(dependencyMap[19], dependencyMap.paths), asyncRequire(dependencyMap[20], dependencyMap.paths), asyncRequire(dependencyMap[21], dependencyMap.paths), asyncRequire(dependencyMap[22], dependencyMap.paths), asyncRequire(dependencyMap[23], dependencyMap.paths), asyncRequire(dependencyMap[24], dependencyMap.paths), asyncRequire(dependencyMap[25], dependencyMap.paths), asyncRequire(dependencyMap[26], dependencyMap.paths), asyncRequire(dependencyMap[27], dependencyMap.paths), asyncRequire(dependencyMap[28], dependencyMap.paths), asyncRequire(dependencyMap[29], dependencyMap.paths), asyncRequire(dependencyMap[30], dependencyMap.paths), asyncRequire(dependencyMap[31], dependencyMap.paths), asyncRequire(dependencyMap[32], dependencyMap.paths), asyncRequire(dependencyMap[33], dependencyMap.paths), asyncRequire(dependencyMap[34], dependencyMap.paths), asyncRequire(dependencyMap[35], dependencyMap.paths), asyncRequire(dependencyMap[36], dependencyMap.paths), asyncRequire(dependencyMap[37], dependencyMap.paths), asyncRequire(dependencyMap[38], dependencyMap.paths), asyncRequire(dependencyMap[39], dependencyMap.paths), asyncRequire(dependencyMap[40], dependencyMap.paths), asyncRequire(dependencyMap[41], dependencyMap.paths), asyncRequire(dependencyMap[42], dependencyMap.paths), asyncRequire(dependencyMap[43], dependencyMap.paths), asyncRequire(dependencyMap[44], dependencyMap.paths), asyncRequire(dependencyMap[45], dependencyMap.paths), asyncRequire(dependencyMap[46], dependencyMap.paths), asyncRequire(dependencyMap[47], dependencyMap.paths), asyncRequire(dependencyMap[48], dependencyMap.paths), asyncRequire(dependencyMap[49], dependencyMap.paths), asyncRequire(dependencyMap[50], dependencyMap.paths), asyncRequire(dependencyMap[51], dependencyMap.paths), asyncRequire(dependencyMap[52], dependencyMap.paths), asyncRequire(dependencyMap[53], dependencyMap.paths), asyncRequire(dependencyMap[54], dependencyMap.paths), asyncRequire(dependencyMap[55], dependencyMap.paths), asyncRequire(dependencyMap[56], dependencyMap.paths), asyncRequire(dependencyMap[57], dependencyMap.paths), asyncRequire(dependencyMap[58], dependencyMap.paths), asyncRequire(dependencyMap[59], dependencyMap.paths), asyncRequire(dependencyMap[60], dependencyMap.paths), asyncRequire(dependencyMap[61], dependencyMap.paths), asyncRequire(dependencyMap[62], dependencyMap.paths), asyncRequire(dependencyMap[63], dependencyMap.paths), asyncRequire(dependencyMap[64], dependencyMap.paths), asyncRequire(dependencyMap[65], dependencyMap.paths), asyncRequire(dependencyMap[66], dependencyMap.paths), asyncRequire(dependencyMap[67], dependencyMap.paths), asyncRequire(dependencyMap[68], dependencyMap.paths), asyncRequire(dependencyMap[69], dependencyMap.paths), asyncRequire(dependencyMap[70], dependencyMap.paths), asyncRequire(dependencyMap[71], dependencyMap.paths)];
+          c0 = 3;
+          obj = { value: all(items), done: true };
+          return obj;
+        }
+      } catch (tmp3) {
+        c0 = 3;
+        throw tmp3;
+      }
     }
-  }
+  });
+  return obj(...arguments);
 };
-const size = fn(2);
 const result = size.fileFinishedImporting("intl/preloader.tsx");
 
 export const preloadAllIntlMessageFiles = function preloadAllIntlMessageFiles() {
-  const self = this;
-  const apply = closure_3.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

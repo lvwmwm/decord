@@ -1,16 +1,16 @@
-// Module ID: 14378
-// Function ID: 14379
+// Module ID: 13622
+// Function ID: 13623
 // Name: DisableCameraSimulcastExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 14378 (DisableCameraSimulcastExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13622 (DisableCameraSimulcastExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-05-disable-camera-simulcast", kind: "user", defaultConfig: { enableSimulcast: true }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-05-disable-camera-simulcast", kind: "user", defaultConfig: { enableSimulcast: true }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enableSimulcast: false };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/DisableCameraSimulcastExperiment.tsx");
 

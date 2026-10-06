@@ -1,40 +1,209 @@
-// Module ID: 14396
-// Function ID: 14397
+// Module ID: 13640
+// Function ID: 13641
 // Name: Collapsible
-// Dependencies: [32, 19, 17, 21, 4788, 576, 4524, 5217, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 4570, 5281, 2]
 
-// Module 14396 (Collapsible)
-import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5217 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 13640 (Collapsible)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import spring from "spring" /* 5281 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let importDefault;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let _slicedToArray = _slicedToArray_mod;
+let View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const EXPAND_SPRING = { stiffness: 150, overshootClamping: true };
-const createStyles = fn(4788);
-const obj2 = { collapsible: { position: "relative", overflow: "hidden" }, collapsibleContent: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
-let closure_9 = createStyles.createStyles(obj2);
+let obj = { collapsible: { position: "relative", overflow: "hidden" }, collapsibleContent: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+let closure_9 = createStyles.createStyles(obj);
 const __initData = { code: "function CollapsibleTsx1(){const{withSpring,totalHeight,EXPAND_SPRING}=this.__closure;return{height:withSpring(totalHeight,EXPAND_SPRING)};}" };
-const size = fn(2);
-const result = size.fileFinishedImporting("design/void/Collapsible/native/Collapsible.tsx");
-
-export default function Collapsible(isExpanded) {
+const __initData2 = { code: "function CollapsibleTsx2(){const{withSpring,totalHeight,EXPAND_SPRING}=this.__closure;return{height:withSpring(totalHeight,EXPAND_SPRING)};}" };
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let closure_1;
+  let closure_3;
+  let closure_5;
+  let collapsibleContent;
+  let first;
+  let first1;
+  let first2;
+  let isExpanded;
+  let style;
+  let tmp11;
+  let obj = first(first1[7]);
+  const cResult = obj.c(26);
+  ({ children, collapsibleContent, isExpanded, style } = arg0);
+  const tmp4 = closure_9();
+  [first, importDefault] = first2.useState(false);
+  [first1, _slicedToArray] = first2.useState(0);
+  [first2, View] = first2.useState(0);
+  if (cResult[0] !== first1) {
+    const fn = function _(nativeEvent) {
+      if (0 === first1) {
+        closure_3(nativeEvent.nativeEvent.layout.height);
+      }
+    };
+    cResult[0] = first1;
+    cResult[1] = fn;
+    tmp11 = fn;
+  } else {
+    tmp11 = cResult[1];
+  }
+  if (cResult[2] !== first2) {
+    class X {
+      constructor(nativeEvent) {
+        if (0 === first2) {
+          closure_5(nativeEvent.nativeEvent.layout.height);
+        }
+      }
+    }
+    cResult[2] = first2;
+    cResult[3] = X;
+  } else {
+    class X {
+      constructor(nativeEvent) {
+        if (0 === first2) {
+          closure_5(nativeEvent.nativeEvent.layout.height);
+        }
+      }
+    }
+  }
+  if (isExpanded == null) {
+    class X {
+      constructor(nativeEvent) {
+        if (0 === first2) {
+          closure_5(nativeEvent.nativeEvent.layout.height);
+        }
+      }
+    }
+    const sum = first1 + first2;
+    let closure_6 = sum;
+    const fn2 = function j() {
+      let obj2;
+      const obj = { height: obj2.withSpring(closure_6, EXPAND_SPRING) };
+      obj2 = spring;
+      return obj;
+    };
+    let obj2 = { withSpring: tmp(tmp2[9]).withSpring, totalHeight: sum, EXPAND_SPRING };
+    const useAnimatedStyle = tmp(tmp2[8]).useAnimatedStyle;
+    first(first1[8]);
+    fn2.__closure = obj2;
+    fn2.__workletHash = 1072657539267;
+    fn2.__initData = __initData;
+    const animatedStyle = useAnimatedStyle(fn2);
+    if (cResult[4] !== first) {
+      class V {
+        constructor() {
+          closure_1(!first);
+        }
+      }
+      cResult[4] = first;
+      cResult[5] = V;
+    } else {
+      class V {
+        constructor() {
+          closure_1(!first);
+        }
+      }
+    }
+    if (sum > 0) {
+      class V {
+        constructor() {
+          closure_1(!first);
+        }
+      }
+    }
+    if (cResult[6] === tmp4.collapsible) {
+      class V {
+        constructor() {
+          closure_1(!first);
+        }
+      }
+      if (cResult[9] === children) {
+        class V {
+          constructor() {
+            closure_1(!first);
+          }
+        }
+        if (cResult[12] === tmp11) {
+          class V {
+            constructor() {
+              closure_1(!first);
+            }
+          }
+          if (cResult[15] === collapsibleContent) {
+            class V {
+              constructor() {
+                closure_1(!first);
+              }
+            }
+          }
+          const obj3 = { style: tmp4.collapsibleContent, onLayout: tmp12, children: collapsibleContent };
+          cResult[15] = collapsibleContent;
+          cResult[16] = tmp12;
+          cResult[17] = tmp4.collapsibleContent;
+          cResult[18] = closure_6(View, obj3);
+          const tmp30 = closure_6(View, obj3);
+        }
+        const obj4 = { onLayout: tmp11, children: tmp21 };
+        cResult[12] = tmp11;
+        cResult[13] = tmp21;
+        cResult[14] = closure_6(View, obj4);
+        const tmp26 = closure_6(View, obj4);
+      }
+      const obj5 = { onPress: tmp18 };
+      cResult[9] = children;
+      cResult[10] = tmp18;
+      cResult[11] = children(obj5);
+      const childrenResult = children(obj5);
+    }
+    const items = [tmp4.collapsible, null];
+    cResult[6] = tmp4.collapsible;
+    cResult[7] = null;
+    cResult[8] = items;
+  } else {
+    class V {
+      constructor() {
+        closure_1(!first);
+      }
+    }
+  }
+}) : ((isExpanded) => {
+  let children;
+  let closure_1;
+  let closure_3;
+  let closure_5;
+  let collapsibleContent;
+  let first1;
+  let first2;
+  let items3;
+  let num;
+  let obj4;
+  let obj6;
+  let style;
+  let tmp21;
   isExpanded = isExpanded.isExpanded;
-  first = undefined;
   first1 = undefined;
   _slicedToArray = undefined;
   first2 = undefined;
   closure_5 = undefined;
-  c6 = undefined;
+  let c6;
   ({ children, collapsibleContent, style } = isExpanded);
   const tmp = closure_9();
-  [first] = first2.useState(false);
+  let obj = first2;
+  const tmp2 = _slicedToArray(first2.useState(false), 2);
+  const first = tmp2[0];
   importDefault = tmp4;
   [first1, _slicedToArray] = first2.useState(0);
   [first2, closure_5] = first2.useState(0);
@@ -46,46 +215,47 @@ export default function Collapsible(isExpanded) {
     }
   }, items);
   if (isExpanded == null) {
-    let num = 0;
+    num = 0;
     const sum = first1 + num;
     c6 = sum;
-    class S {
-      constructor() {
-        obj = { height: null };
-        obj2 = closure_0(closure_2[7]);
-        obj.height = obj2.withSpring(closure_6, closure_8);
-        return obj;
-      }
-    }
-    const obj3 = { withSpring: first(first1[7]).withSpring, totalHeight: sum, EXPAND_SPRING };
-    S.__closure = obj3;
-    S.__workletHash = 1072657539267;
-    S.__initData = __initData;
-    const items1 = [first, tmp4];
-    const animatedStyle = first(first1[6]).useAnimatedStyle(S);
-    const obj4 = { style, children: null };
-    const callback1 = first2.useCallback(() => {
+    const fn = function v() {
+      let obj2;
+      const obj = { height: obj2.withSpring(c6, EXPAND_SPRING) };
+      obj2 = spring;
+      return obj;
+    };
+    let obj2 = { withSpring: first(first1[9]).withSpring, totalHeight: sum, EXPAND_SPRING };
+    const useAnimatedStyle = first(first1[8]).useAnimatedStyle;
+    first(first1[8]);
+    fn.__closure = obj2;
+    fn.__workletHash = 16011681899808;
+    fn.__initData = __initData2;
+    const items1 = [first, tmp2[1]];
+    const animatedStyle = useAnimatedStyle(fn);
+    const obj3 = { style, children: tmp21(View, obj4) };
+    const callback1 = obj.useCallback(() => {
       closure_1(!first);
     }, items1);
     const items2 = [tmp.collapsible, ];
-    let tmp22 = null;
+    let tmp23 = null;
+    View = require("ReanimatedRexport").View;
+    tmp21 = closure_7;
     if (sum > 0) {
-      tmp22 = animatedStyle;
+      tmp23 = animatedStyle;
     }
-    const obj5 = { style: null, children: null };
-    items2[1] = tmp22;
-    obj5.style = items2;
-    const obj6 = { onLayout: callback, children: null };
-    const obj7 = { onPress: callback1 };
-    obj6.children = children(obj7);
-    const items3 = [c6(closure_5, obj6), ];
-    const obj8 = { style: tmp.collapsibleContent, onLayout: tmp10, children: collapsibleContent };
-    items3[1] = c6(closure_5, obj8);
-    obj5.children = items3;
-    obj4.children = closure_7(require("ReanimatedRexport").View, obj5);
-    return c6(closure_5, obj4);
+    obj4 = { style: items2, children: items3 };
+    items2[1] = tmp23;
+    const obj5 = { onLayout: callback, children: children(obj6) };
+    obj6 = { onPress: callback1 };
+    items3 = [c6(closure_5, obj5), ];
+    const obj7 = { style: tmp.collapsibleContent, onLayout: tmp10, children: collapsibleContent };
+    items3[1] = c6(closure_5, obj7);
+    return c6(closure_5, obj3);
   } else {
     num = 0;
   }
   num = first2;
-};
+});
+const result = size.fileFinishedImporting("design/void/Collapsible/native/Collapsible.tsx");
+
+export default tmp3;

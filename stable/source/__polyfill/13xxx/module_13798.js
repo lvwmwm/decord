@@ -1,9 +1,16 @@
 // Module ID: 13798
 // Function ID: 13799
-// Dependencies: [1121]
+// Dependencies: [13794]
 
 // Module 13798
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13794 from "module_13794" /* 13794 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 420, height: 112, scales: [2, 3], hash: "e2e6d0edbd6c916cde4ea4f22a6f794c", name: "subscription_placeholder_pattern_darker", type: "png" });
+export default !_mod13794(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
+  return hasOwnPropertyResult;
+});

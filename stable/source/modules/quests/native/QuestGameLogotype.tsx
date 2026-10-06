@@ -1,30 +1,219 @@
-// Module ID: 15420
-// Function ID: 15421
+// Module ID: 14669
+// Function ID: 14670
 // Name: QuestGameLogotype
-// Dependencies: [32, 19, 17, 21, 5221, 4788, 576, 4524, 5217, 8760, 5836, 2]
+// Dependencies: [32, 19, 17, 21, 5285, 4837, 588, 558, 576, 4570, 5281, 7913, 5896, 2]
 
-// Module 15420 (QuestGameLogotype)
-import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5217 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 14669 (QuestGameLogotype)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import spring from "spring" /* 5281 */;
+import springPresets from "springPresets" /* 5285 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-let SPRING_CONFIG = {};
-const merged = Object.assign(fn(5221).springSlow);
-SPRING_CONFIG.overshootClamping = true;
-const createStyles = fn(4788);
-const obj2 = { logo: { marginBottom: nativeDefault.space.PX_4 } };
+let dependencyMap;
+
+let hasOwnProperty;
+let metroRequire;
+let obj3;
+({ View: hasOwnProperty, Image: metroRequire } = react_native);
+const jsx = Fragment.jsx;
+let SPRING_CONFIG = { overshootClamping: true };
+const merged = Object.assign(springPresets.springSlow);
+let obj2 = { logo: obj3 };
+obj3 = { marginBottom: nativeDefault.space.PX_4 };
 let closure_9 = createStyles.createStyles(obj2);
-const __initData = { code: "function QuestGameLogotypeTsx1(){const{withSpring,logoDimensionStyles,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(logoDimensionStyles==null?0:1,SPRING_CONFIG,'animate-always')};}" };
-let obj4 = { marginBottom: nativeDefault.space.PX_4 };
-let size = fn(2);
-let result = size.fileFinishedImporting("modules/quests/native/QuestGameLogotype.tsx");
-
-export default noop.memo((assetUrl) => {
+const __initData = { code: "function QuestGameLogotypeTsx1(){const{withSpring,logoDimensionStyles,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(logoDimensionStyles==null?0:1,SPRING_CONFIG,\"animate-always\")};}" };
+const __initData2 = { code: "function QuestGameLogotypeTsx2(){const{withSpring,logoDimensionStyles,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(logoDimensionStyles==null?0:1,SPRING_CONFIG,'animate-always')};}" };
+let memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((assetUrl) => {
+  let closure_2;
+  let height;
+  let items1;
+  let items2;
+  let maxHeight;
+  let maxWidth;
+  let obj6;
+  let onError;
+  let style;
+  let tmp11;
+  let tmp12;
+  let width;
+  let tmp = assetUrl;
+  SPRING_CONFIG = assetUrl(576);
+  const cResult = SPRING_CONFIG.c(23);
+  assetUrl = assetUrl.assetUrl;
+  ({ width, height, maxWidth, maxHeight, style, onError } = assetUrl);
+  let num = 120;
+  if (undefined !== width) {
+    num = width;
+  }
+  const tmp4 = closure_9();
+  [size, importDefault] = react.useState(null);
+  let tmp6;
+  _slicedToArray(react.useState(null), 2);
+  const obj2 = react;
+  if (null != size) {
+    let size2;
+    const result = size.width / size.height;
+    if (cResult[0] === result) {
+      if (cResult[1] === height) {
+        if (cResult[2] === maxHeight) {
+          if (cResult[3] === maxWidth) {
+            let tmp8;
+            if (cResult[4] === num) {
+              tmp8 = cResult[5];
+            }
+            tmp6 = tmp8;
+          }
+        }
+      }
+    }
+    if (null != height) {
+      const size1 = { height, width: height * result };
+      size2 = size1;
+    } else {
+      size2 = { height: num / result, width: num };
+    }
+    if (null != maxWidth) {
+      const _Math = Math;
+      size2.width = Math.min(maxWidth, size2.width);
+      size2.height = size2.width / result;
+    }
+    if (null != maxHeight) {
+      const _Math2 = Math;
+      size2.height = Math.min(maxHeight, size2.height);
+      size2.width = size2.height * result;
+    }
+    cResult[0] = result;
+    cResult[1] = height;
+    cResult[2] = maxHeight;
+    cResult[3] = maxWidth;
+    cResult[4] = num;
+    cResult[5] = size2;
+    tmp8 = size2;
+  }
+  dependencyMap = tmp6;
+  if (cResult[6] !== assetUrl) {
+    class R {
+      constructor() {
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F142753 */ });
+        return;
+      }
+    }
+    const items = [assetUrl];
+    cResult[6] = assetUrl;
+    cResult[7] = R;
+    cResult[8] = items;
+    tmp12 = items;
+    tmp11 = R;
+  } else {
+    class R {
+      constructor() {
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F142753 */ });
+        return;
+      }
+    }
+    tmp12 = cResult[8];
+  }
+  const effect = obj2.useEffect(tmp11, tmp12);
+  const tmpResult = tmp(4570);
+  class W {
+    constructor() {
+      tmp = closure_0(closure_2[10]);
+      num = 1;
+      withSpring = tmp.withSpring;
+      if (null == closure_2) {
+        num = 0;
+      }
+      obj = { opacity: withSpring(num, closure_8, "animate-always") };
+      return obj;
+    }
+  }
+  W.__closure = { withSpring: tmp(5281).withSpring, logoDimensionStyles: tmp6, SPRING_CONFIG };
+  W.__workletHash = 13667917221894;
+  W.__initData = __initData;
+  ({ withSpring: tmp(5281).withSpring, logoDimensionStyles: tmp6, SPRING_CONFIG });
+  const animatedStyle = tmpResult.useAnimatedStyle(W);
+  if (cResult[9] !== assetUrl) {
+    class R {
+      constructor() {
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F142753 */ });
+        return;
+      }
+    }
+    cResult[9] = assetUrl;
+    cResult[10] = assetUrl.endsWith(".svg");
+    const endsWithResult = assetUrl.endsWith(".svg");
+  } else {
+    class R {
+      constructor() {
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F142753 */ });
+        return;
+      }
+    }
+  }
+  if (cResult[11] === animatedStyle) {
+    let tmp18Result;
+    class R {
+      constructor() {
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F142753 */ });
+        return;
+      }
+    }
+    if (cResult[14] === assetUrl) {
+      class R {
+        constructor() {
+          size = Image.getSize(assetUrl, () => { /* body not rendered: F142753 */ });
+          return;
+        }
+      }
+    }
+    if (tmp15) {
+      class R {
+        constructor() {
+          size = Image.getSize(assetUrl, () => { /* body not rendered: F142753 */ });
+          return;
+        }
+      }
+      const obj4 = { style: items1, children: null };
+      items1 = [tmp6, tmp4.logo];
+      const size3 = { height: "100%", width: "100%", uri: assetUrl, onError };
+      tmp18Result = tmp18(closure_5, obj4);
+    } else {
+      class R {
+        constructor() {
+          size = Image.getSize(assetUrl, () => { /* body not rendered: F142753 */ });
+          return;
+        }
+      }
+      const obj5 = { source: obj6, style: items2, onError };
+      items2 = [tmp6, tmp4.logo];
+      obj6 = { uri: assetUrl };
+      tmp18Result = tmp18(FastImageDefault, obj5);
+    }
+    cResult[14] = assetUrl;
+    cResult[15] = tmp15;
+    cResult[16] = tmp6;
+    cResult[17] = onError;
+    cResult[18] = tmp4.logo;
+    cResult[19] = tmp18Result;
+  }
+  const items3 = [animatedStyle, style];
+  cResult[11] = animatedStyle;
+  cResult[12] = style;
+  cResult[13] = items3;
+}) : ((assetUrl) => {
+  let items3;
+  let items4;
+  let items5;
+  let obj6;
+  let tmp10Result;
   assetUrl = assetUrl.assetUrl;
   let num = assetUrl.width;
   if (num === undefined) {
@@ -34,18 +223,20 @@ export default noop.memo((assetUrl) => {
   const maxWidth = assetUrl.maxWidth;
   const maxHeight = assetUrl.maxHeight;
   const onError = assetUrl.onError;
-  const tmp = closure_9();
+  const style = assetUrl.style;
+  let tmp = closure_9();
   const tmp2 = maxWidth(maxHeight.useState(null), 2);
   const first = tmp2[0];
-  closure_6 = tmp2[1];
+  let closure_6 = tmp2[1];
   const items = [first, num, height, maxWidth, maxHeight];
   const memo = maxHeight.useMemo(() => {
     size = first;
     if (null != first) {
+      let size2;
       const result = size.width / size.height;
       if (null != height) {
-        const size1 = { height: tmp2, width: tmp2 * result };
-        let size2 = size1;
+        const size1 = { height, width: height * result };
+        size2 = size1;
       } else {
         size2 = { height: num / result, width: num };
       }
@@ -64,50 +255,54 @@ export default noop.memo((assetUrl) => {
   }, items);
   const items1 = [assetUrl];
   const effect = maxHeight.useEffect(() => {
-    size = size.getSize(assetUrl, (width, height) => {
+    size = metroRequire.getSize(assetUrl, (width, height) => {
+      const tmp = width > 0 && height > 0;
       if (tmp) {
         size = { width, height };
         closure_1_6(size);
       }
     });
   }, items1);
-  SPRING_CONFIG = assetUrl(height[7]);
-  class C {
+  const tmp6 = assetUrl;
+  SPRING_CONFIG = assetUrl(height[9]);
+  class D {
     constructor() {
-      obj = closure_0(closure_2[8]);
+      let obj;
       num = 1;
-      if (null == closure_7) {
+      const withSpring = spring.withSpring;
+      spring;
+      if (null == memo) {
         num = 0;
       }
-      obj1 = { opacity: obj.withSpring(num, closure_8, "animate-always") };
-      return obj1;
+      obj = { opacity: withSpring(num, obj, "animate-always") };
+      return obj;
     }
   }
-  C.__closure = { withSpring: assetUrl(height[8]).withSpring, logoDimensionStyles: memo, SPRING_CONFIG };
-  C.__workletHash = 11242802634598;
-  C.__initData = __initData;
+  D.__closure = { withSpring: assetUrl(height[10]).withSpring, logoDimensionStyles: memo, SPRING_CONFIG };
+  D.__workletHash = 13440780505285;
+  D.__initData = __initData2;
   const items2 = [assetUrl];
-  const animatedStyle = SPRING_CONFIG.useAnimatedStyle(C);
+  ({ withSpring: assetUrl(height[10]).withSpring, logoDimensionStyles: memo, SPRING_CONFIG });
+  const animatedStyle = SPRING_CONFIG.useAnimatedStyle(D);
   const memo1 = maxHeight.useMemo(() => assetUrl.endsWith(".svg"), items2);
-  const obj3 = { style: null, children: null };
-  const items3 = [animatedStyle, assetUrl.style];
-  obj3.style = items3;
+  const obj3 = { style: items3, children: tmp10Result };
+  items3 = [animatedStyle, style];
+  const View = num(height[9]).View;
+  const tmp11 = num;
   if (memo1) {
-    const obj4 = { style: null, children: null };
-    const items4 = [memo, tmp.logo];
-    obj4.style = items4;
+    const obj4 = { style: items4, children: memo(tmp6(height[11]).SvgUri, size) };
+    items4 = [memo, tmp.logo];
     size = { height: "100%", width: "100%", uri: assetUrl, onError };
-    obj4.children = tmp10(assetUrl(tmp7[9]).SvgUri, size);
-    let tmp10Result = tmp10(first, obj4);
+    tmp10Result = tmp10(first, obj4);
   } else {
-    const obj5 = { source: null, style: null, onError: null };
-    const obj6 = { uri: assetUrl };
-    obj5.source = obj6;
-    const items5 = [memo, tmp.logo];
-    obj5.style = items5;
-    obj5.onError = onError;
-    tmp10Result = tmp10(num(tmp7[10]), obj5);
+    const obj5 = { source: obj6, style: items5, onError };
+    items5 = [memo, tmp.logo];
+    obj6 = { uri: assetUrl };
+    tmp10Result = tmp10(tmp11(tmp7[12]), obj5);
   }
-  obj3.children = tmp10Result;
-  return memo(num(height[7]).View, obj3);
-});
+  return memo(View, obj3);
+}));
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/quests/native/QuestGameLogotype.tsx");
+
+export default memoResult;

@@ -1,12 +1,12 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 16310
+// Function ID: 16311
 // Name: VibegrationsRestorePanelOp
-// Dependencies: [1115, 3710, 2]
+// Dependencies: [1127, 3718, 2]
 // Exports: restoreEnvironmentLabel, restorePanelEnvironments, restorePanelStatusForEnvironment, restorePointOriginLabel
 
-// Module 16997 (VibegrationsRestorePanelOp)
-import util from "util" /* 1115 */;
-import _modDef3710 from "module_3710" /* 3710 */;
+// Module 16310 (VibegrationsRestorePanelOp)
+import intl4 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsRestorePanelOp.tsx");
@@ -14,43 +14,50 @@ const result = size.fileFinishedImporting("modules/vibegrations/lib/Vibegrations
 export const RESTORE_WINDOW_DAYS = 30;
 export const restorePointOriginLabel = function restorePointOriginLabel(origin) {
   if ("auto_deploy" === origin) {
-    const intl3 = util.intl;
-    return intl3.string(_modDef3710.h4zhWL);
+    const intl3 = intl4.intl;
+    return intl3.string(_modDef3718.h4zhWL);
   } else if ("undo" === origin) {
-    const intl2 = util.intl;
-    return intl2.string(_modDef3710["c/tNny"]);
+    const intl2 = intl4.intl;
+    return intl2.string(_modDef3718["c/tNny"]);
   } else {
-    const intl = util.intl;
-    return intl.string(_modDef3710["jViU+0"]);
+    const intl = intl4.intl;
+    return intl.string(_modDef3718["jViU+0"]);
   }
 };
 export const restoreEnvironmentLabel = function restoreEnvironmentLabel(id) {
-  const intl = util.intl;
+  let prop;
+  const intl = intl4.intl;
+  const string = intl.string;
   if ("preview" === id) {
-    let prop = _modDef3710["/kYdZe"];
+    prop = _modDef3718["/kYdZe"];
   } else {
-    prop = _modDef3710["1/CVzo"];
+    prop = _modDef3718["1/CVzo"];
   }
-  return intl.string(prop);
+  return string(prop);
 };
 export function restorePanelEnvironments(installScope) {
   return "user" === installScope ? ["stable"] : ["preview", "stable"];
 }
 export const restorePanelStatusForEnvironment = function restorePanelStatusForEnvironment(phase, arg1) {
+  let obj;
   if ("busy" === phase.phase) {
-    if ("restore" !== phase.kind) {
-      let obj3 = { kind: "none" };
+    if ("restore" === phase.kind) {
+      let obj3;
+      if (phase.environment === arg1) {
+        obj3 = { kind: "pending" };
+      }
+      obj = obj3;
     }
-    obj3 = { kind: "pending" };
+    obj3 = { kind: "none" };
   } else {
     if ("settled" === phase.phase) {
       if (phase.environment === arg1) {
-        ({ tone: obj2.tone, text: obj2.text } = phase);
-        let obj = { kind: "notice", tone: null, text: null };
         const obj5 = { kind: "notice", tone: null, text: null };
+        ({ tone: obj2.tone, text: obj2.text } = phase);
+        obj = obj5;
       }
-      return obj;
     }
     obj = { kind: "none" };
   }
+  return obj;
 };

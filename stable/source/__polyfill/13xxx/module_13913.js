@@ -1,9 +1,47 @@
 // Module ID: 13913
 // Function ID: 13914
-// Dependencies: [1121]
+// Dependencies: []
+// Exports: default
 
 // Module 13913
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 215, height: 128, scales: [2, 3], hash: "91b8f5f85a023591658822c0d3091e54", name: "guild_subscription_removal_darker", type: "png" });
+export default () => (startTimer) => {
+  let closure_0 = startTimer;
+  startTimer = startTimer.startTimer;
+  let obj = {
+    features: {
+      benchmark(title) {
+        const items = [];
+        let closure_2 = items();
+        function step(title) {
+          let num = 0;
+          if (0 !== items.length) {
+            num = arr[arr.length - 1].time;
+          }
+          const tmp = closure_2();
+          const obj = { title, time: tmp, delta: tmp - num };
+          items.push(obj);
+        }
+        let obj = { title, time: 0, delta: 0 };
+        const arr = items.push(obj);
+        function stop(title) {
+          if (typeof step === "function") {
+            let num = 0;
+            if (0 !== items.length) {
+              num = arr[arr.length - 1].time;
+            }
+            const tmp3 = closure_2();
+            const obj = { title, time: tmp3, delta: tmp3 - num };
+            items.push(obj);
+            const obj2 = { title, steps: items };
+            title.send("benchmark.report", obj2);
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        }
+        return { step, stop, last: stop };
+      }
+    }
+  };
+  return obj;
+};

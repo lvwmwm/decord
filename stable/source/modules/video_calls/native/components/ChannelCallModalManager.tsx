@@ -1,55 +1,52 @@
-// Module ID: 9776
-// Function ID: 9777
+// Module ID: 8932
+// Function ID: 8933
 // Name: ChannelCallModalManager
-// Dependencies: [1372, 4807, 1982, 573, 4995, 2]
+// Dependencies: [1378, 4856, 1989, 585, 5044, 2]
 
-// Module 9776 (ChannelCallModalManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+// Module 8932 (ChannelCallModalManager)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import UserStore from "UserStore" /* 1378 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import LifecycleManager from "LifecycleManager" /* 1989 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-class ChannelCallModalManager extends tmp2 {
+class ChannelCallModalManager extends LifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     applyArgumentsResult.inVoiceChannel = false;
     applyArgumentsResult.handleCloseModal = function handleCloseModal() {
-      const channel = applyArgumentsResult.channel;
+      let obj = require;
+      const channel = require.channel;
       const currentUser = UserStore.getCurrentUser();
-      let isInChannelResult = null != channel && null != currentUser;
-      if (isInChannelResult) {
-        isInChannelResult = VoiceStateStore.isInChannel(channel.id, currentUser.id);
-      }
+      const isInChannelResult = null != channel && null != currentUser && VoiceStateStore.isInChannel(channel.id, currentUser.id);
+      const tmp4 = null != channel && obj.inVoiceChannel && obj.inVoiceChannel !== isInChannelResult;
       if (tmp4) {
-        DispatcherDefault.wait(() => {
-          const result = applyArgumentsResult(dependencyMap[4]).dismissVoiceChannelScreens(channel);
+        const obj2 = DispatcherDefault;
+        obj2.wait(() => {
+          const obj = closure_2_0(closure_2_2[4]);
+          const result = obj.dismissVoiceChannelScreens(channel);
         });
         obj.terminate();
       }
-      applyArgumentsResult.inVoiceChannel = isInChannelResult;
+      obj.inVoiceChannel = isInChannelResult;
     };
     return applyArgumentsResult;
   }
+  _initialize(channel) {
+    const self = this;
+    this.channel = channel;
+    const currentUser = UserStore.getCurrentUser();
+    self.inVoiceChannel = null != channel && null != currentUser && VoiceStateStore.isInChannel(channel.id, currentUser.id);
+    const isInChannelResult = null != channel && null != currentUser && VoiceStateStore.isInChannel(channel.id, currentUser.id);
+    VoiceStateStore.addChangeListener(self.handleCloseModal);
+  }
+  _terminate() {
+    VoiceStateStore.removeChangeListener(this.handleCloseModal);
+  }
 }
 const prototype = ChannelCallModalManager.prototype;
-prototype["_initialize"] = function _initialize(channel) {
-  const self = this;
-  this.channel = channel;
-  const currentUser = UserStore.getCurrentUser();
-  let isInChannelResult = null != channel && null != currentUser;
-  if (isInChannelResult) {
-    isInChannelResult = VoiceStateStore.isInChannel(channel.id, currentUser.id);
-  }
-  self.inVoiceChannel = isInChannelResult;
-  VoiceStateStore.addChangeListener(self.handleCloseModal);
-};
-prototype["_terminate"] = function _terminate() {
-  VoiceStateStore.removeChangeListener(this.handleCloseModal);
-};
 const channelCallModalManager = new ChannelCallModalManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallModalManager.tsx");
 
 export default channelCallModalManager;

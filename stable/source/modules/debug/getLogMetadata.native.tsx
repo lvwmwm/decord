@@ -1,30 +1,36 @@
-// Module ID: 10491
-// Function ID: 10492
+// Module ID: 12281
+// Function ID: 12282
 // Name: getLogMetadata
-// Dependencies: [1363, 4767, 2]
+// Dependencies: [1369, 4813, 2]
 // Exports: default
 
-// Module 10491 (getLogMetadata)
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
-import DeviceUtils from "DeviceUtils" /* 4767 */;
+// Module 12281 (getLogMetadata)
+import react_nativeAll from "react-native" /* 1369 */;
+import DeviceUtils from "DeviceUtils" /* 4813 */;
 import size from "module_2" /* 2 */;
+
+let constants;
 
 const result = size.fileFinishedImporting("modules/debug/getLogMetadata.native.tsx");
 
 export default function getLogMetadata() {
-  constants = ClientInfoUtilsAll.getConstants();
-  const obj2 = { logsUploaded: null, Identifier: null, Version: null, Manifest: null, ReleaseChannel: null, Build: null, JSBuildNumber: null, DeviceVendorID: null, DeviceInfo: null, systemVersion: null };
+  let Build;
+  let DeviceVendorID;
+  let Identifier;
+  let Manifest;
+  let ReleaseChannel;
+  let Version;
+  let date;
+  let obj4;
+  let obj5;
+  let obj6;
+  const obj = react_nativeAll;
+  constants = obj.getConstants();
+  const obj2 = { logsUploaded: date.toISOString(), Identifier, Version, Manifest, ReleaseChannel, Build, JSBuildNumber: obj4.getBuildNumberLabel(), DeviceVendorID, DeviceInfo: obj5.getDeviceInfo(), systemVersion: obj6.getSystemVersion() };
   ({ Identifier, Version, Manifest, ReleaseChannel, Build, DeviceVendorID } = constants);
-  obj2.logsUploaded = new Date().toISOString();
-  obj2.Identifier = Identifier;
-  obj2.Version = Version;
-  obj2.Manifest = Manifest;
-  obj2.ReleaseChannel = ReleaseChannel;
-  obj2.Build = Build;
-  const date = new Date();
-  obj2.JSBuildNumber = ClientInfoUtilsAll.getBuildNumberLabel();
-  obj2.DeviceVendorID = DeviceVendorID;
-  obj2.DeviceInfo = DeviceUtils.getDeviceInfo();
-  obj2.systemVersion = DeviceUtils.getSystemVersion();
+  date = new Date();
+  obj4 = react_nativeAll;
+  obj5 = DeviceUtils;
+  obj6 = DeviceUtils;
   return obj2;
 };

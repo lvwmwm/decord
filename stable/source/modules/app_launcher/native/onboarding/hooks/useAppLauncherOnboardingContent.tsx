@@ -1,70 +1,239 @@
-// Module ID: 12319
-// Function ID: 12320
+// Module ID: 11395
+// Function ID: 11396
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 9437, 2041, 2038, 4608, 2027, 504, 12320, 12325, 7662, 2]
-// Exports: default
+// Dependencies: [32, 8589, 2051, 2048, 558, 576, 4656, 2035, 504, 11396, 11401, 6807, 2]
 
-// Module 12319 (useAppLauncherOnboardingContent)
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12325 */;
-import _slicedToArray from "module_32" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9437 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 11395 (useAppLauncherOnboardingContent)
+import get_initialized from "get initialized" /* 504 */;
+import react from "react" /* 576 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
+import useActivityApplications2 from "useActivityApplications" /* 11396 */;
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11401 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 8589 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const constants = fn(2038).DismissibleContentGroupName;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useAppLauncherOnboardingContent.tsx");
+let channel, channelId;
 
-export default function useAppLauncherOnboardingContent(channelId) {
-  channelId = channelId.channelId;
-  let items = [];
-  let obj = { channel: null };
-  const items1 = [ChannelStore];
-  obj.channel = channelId(504).useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
-  const tmp3 = useCanShowAppLauncherOnboardingDefault({ channelId });
-  if (tmp3.canShowBotsBanner) {
-    items.push(tmp(2027).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+const constants = DismissibleContentConstants.DismissibleContentGroupName;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let applicationFrecencyWithoutLoadingLatest;
+  let tmp6;
+  let tmp7;
+  const obj = react;
+  const cResult = obj.c(7);
+  channel = channel.channel;
+  const obj2 = DismissibleContentUnsafeUtils;
+  let result = obj2.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+  const obj3 = DismissibleContentUnsafeUtils;
+  const result1 = obj3.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ApplicationFrecencyStore];
+    class A {
+      constructor() {
+        return closure_1_4.getApplicationFrecencyWithoutLoadingLatest();
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = A;
+    tmp6 = items;
+    tmp7 = A;
+  } else {
+    [tmp6, tmp7] = cResult;
   }
-  if (tmp3.canShowAppsOrActivitiesBanner) {
-    const push = items.push;
-    const DismissibleContent = tmp(2027).DismissibleContent;
-    if ((function useHasUsedActivities(channel) {
-      channel = channel.channel;
-      let result = channelId(4608).useIsDismissibleContentDismissed_UNSAFE(channelId(2027).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
-      const obj = channelId(4608);
-      const tmp = channelId;
-      const result1 = channelId(4608).useIsDismissibleContentDismissed_UNSAFE(channelId(2027).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-      const obj2 = channelId(4608);
-      const items = [ApplicationFrecencyStore];
-      const stateFromStores = channelId(504).useStateFromStores(items, () => applicationFrecencyWithoutLoadingLatest.getApplicationFrecencyWithoutLoadingLatest());
-      let guild_id;
-      if (channel != null) {
-        guild_id = channel.guild_id;
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  if (result) {
+    result = result1;
+  }
+  let guild_id;
+  if (channel != null) {
+    guild_id = channel.guild_id;
+  }
+  if (cResult[2] === !result) {
+    let tmp11;
+    if (cResult[3] === guild_id) {
+      tmp11 = cResult[4];
+    }
+    const tmpResult2 = useActivityApplications2;
+    const activityApplications = tmpResult2.useActivityApplications(tmp11);
+    class A {
+      constructor() {
+        return closure_1_4.getApplicationFrecencyWithoutLoadingLatest();
       }
-      const obj3 = channelId(504);
-      const obj4 = { guildId: guild_id, fetchesShelf: null };
-      if (result) {
-        result = result1;
-      }
-      obj4.fetchesShelf = !result;
-      const activityApplications = tmp(12320).useActivityApplications(obj4);
-      let flag = false;
-      for (const item10042 of activityApplications) {
-        if (null != stateFromStores.getEntry(item10042.id)) {
-          flag = true;
-          obj7.return();
-          break;
+    }
+    for (const item10063 of activityApplications) {
+      let flag;
+      if (null != stateFromStores.getEntry(item10063.id)) {
+        flag = true;
+        obj8.return();
+        class A {
+          constructor() {
+            return closure_1_4.getApplicationFrecencyWithoutLoadingLatest();
+          }
         }
-        let obj5 = { hasUsedActivities: flag };
-        return obj5;
       }
-    })(obj).hasUsedActivities) {
+      if (cResult[5] !== flag) {
+        let obj4 = { hasUsedActivities: flag };
+        class A {
+          constructor() {
+            return closure_1_4.getApplicationFrecencyWithoutLoadingLatest();
+          }
+        }
+        cResult[5] = flag;
+        cResult[6] = obj4;
+      }
+      class A {
+        constructor() {
+          return closure_1_4.getApplicationFrecencyWithoutLoadingLatest();
+        }
+      }
+    }
+  }
+  const obj5 = { guildId: guild_id, fetchesShelf: !result };
+  cResult[2] = !result;
+  cResult[3] = guild_id;
+  cResult[4] = obj5;
+  tmp11 = obj5;
+}) : ((channel) => {
+  let applicationFrecencyWithoutLoadingLatest;
+  channel = channel.channel;
+  const obj = DismissibleContentUnsafeUtils;
+  let result = obj.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+  const obj2 = DismissibleContentUnsafeUtils;
+  const result1 = obj2.useIsDismissibleContentDismissed_UNSAFE(dismissible_content.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+  const items = [ApplicationFrecencyStore];
+  const obj3 = get_initialized;
+  const stateFromStores = obj3.useStateFromStores(items, () => applicationFrecencyWithoutLoadingLatest.getApplicationFrecencyWithoutLoadingLatest());
+  let guild_id;
+  if (channel != null) {
+    guild_id = channel.guild_id;
+  }
+  const obj4 = { guildId: guild_id, fetchesShelf: !result };
+  const useActivityApplications = tmp(11396).useActivityApplications;
+  useActivityApplications2;
+  if (result) {
+    result = result1;
+  }
+  const activityApplications = useActivityApplications(obj4);
+  let flag = false;
+  for (const item10042 of activityApplications) {
+    if (null != stateFromStores.getEntry(item10042.id)) {
+      flag = true;
+      obj6.return();
+      break;
+    }
+    let obj5 = { hasUsedActivities: flag };
+    return obj5;
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let tmp15;
+  let tmp16;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  const obj = channelId(576);
+  const cResult = obj.c(10);
+  channelId = channelId.channelId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function l() {
+      return ChannelStore.getChannel(channelId);
+    };
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = channelId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] !== stateFromStores) {
+    const obj2 = { channel: stateFromStores };
+    cResult[3] = stateFromStores;
+    cResult[4] = obj2;
+    tmp8 = obj2;
+  } else {
+    tmp8 = cResult[4];
+  }
+  const hasUsedActivities = closure_7(tmp8).hasUsedActivities;
+  if (cResult[5] !== channelId) {
+    const obj3 = { channelId };
+    cResult[5] = channelId;
+    cResult[6] = obj3;
+    tmp9 = obj3;
+  } else {
+    tmp9 = cResult[6];
+  }
+  const items1 = [];
+  const tmp10 = useCanShowAppLauncherOnboardingDefault(tmp9);
+  const canShowAppsOrActivitiesBanner = tmp10.canShowAppsOrActivitiesBanner;
+  if (tmp10.canShowBotsBanner) {
+    items1.push(channelId(2035).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+  }
+  if (canShowAppsOrActivitiesBanner) {
+    const push = items1.push;
+    const DismissibleContent = tmp(2035).DismissibleContent;
+    if (hasUsedActivities) {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
     } else {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
     }
   }
-  let obj2 = channelId(504);
-  let tmp7 = _slicedToArray(channelId(7662).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
+  const tmpResult2 = channelId(6807);
+  [tmp15, tmp16] = tmpResult2.useSelectedDismissibleContent(items1, constants.APP_LAUNCHER_ONBOARDING);
+  _slicedToArray(tmpResult2.useSelectedDismissibleContent(items1, constants.APP_LAUNCHER_ONBOARDING), 2);
+  if (cResult[7] === tmp16) {
+    let tmp17;
+    if (cResult[8] === tmp15) {
+      tmp17 = cResult[9];
+    }
+    return tmp17;
+  }
+  const obj4 = { visibleContent: tmp15, markAsDismissed: tmp16 };
+  cResult[7] = tmp16;
+  cResult[8] = tmp15;
+  cResult[9] = obj4;
+  tmp17 = obj4;
+}) : ((channelId) => {
+  channelId = channelId.channelId;
+  const items = [];
+  const items1 = [ChannelStore];
+  const obj = channelId(504);
+  const obj2 = { channel: obj.useStateFromStores(items1, () => ChannelStore.getChannel(channelId)) };
+  const hasUsedActivities = closure_7(obj2).hasUsedActivities;
+  const tmp3 = useCanShowAppLauncherOnboardingDefault({ channelId });
+  const canShowAppsOrActivitiesBanner = tmp3.canShowAppsOrActivitiesBanner;
+  if (tmp3.canShowBotsBanner) {
+    items.push(channelId(2035).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+  }
+  if (canShowAppsOrActivitiesBanner) {
+    const push = items.push;
+    const DismissibleContent = tmp(2035).DismissibleContent;
+    if (hasUsedActivities) {
+      push(DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+    } else {
+      push(DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+    }
+  }
+  const tmpResult = channelId(6807);
+  const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
   return { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };
-};
+});
+let result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useAppLauncherOnboardingContent.tsx");
+
+export default tmp2;

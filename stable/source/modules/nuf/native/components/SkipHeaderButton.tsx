@@ -1,40 +1,95 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 12086
+// Function ID: 12087
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 4788, 576, 1115, 8139, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 1127, 7292, 2]
 
-// Module 12978 (SkipHeaderButton)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import HeaderShared from "HeaderShared" /* 8139 */;
-import noop from "module_19" /* 19 */;
+// Module 12086 (SkipHeaderButton)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl2 from "intl" /* 1127 */;
+import HeaderShared from "HeaderShared" /* 7292 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { button: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, insideNavigatorButton: { paddingRight: 16 } };
-let closure_3 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/nuf/native/components/SkipHeaderButton.tsx");
+let label;
 
-export default function SkipHeaderButton(label) {
+let obj2;
+const jsx = Fragment.jsx;
+let obj = { button: obj2, insideNavigatorButton: { paddingRight: 16 } };
+obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+let closure_3 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(9);
+  const tmp4 = closure_3();
+  if (cResult[0] !== label.label) {
+    label = label.label;
+    if (label == null) {
+      const intl = tmp(1127).intl;
+      label = intl.string(tmp(1127).t["5Wxrcd"]);
+    }
+    cResult[0] = label.label;
+    cResult[1] = label;
+    tmp5 = label;
+  } else {
+    tmp5 = cResult[1];
+  }
+  let prop;
+  if (label.insideNavigator) {
+    prop = tmp4.insideNavigatorButton;
+  }
+  if (cResult[2] === tmp4.button) {
+    let tmp8;
+    if (cResult[3] === prop) {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] === tmp5) {
+      if (cResult[6] === label) {
+        let tmp9;
+        if (cResult[7] === tmp8) {
+          tmp9 = cResult[8];
+        }
+        return tmp9;
+      }
+    }
+    const HeaderTextButton = tmp(7292).HeaderTextButton;
+    const merged = Object.assign(label);
+    const tmp14 = <HeaderTextButton labelStyle={tmp8} label={tmp5} accessibilityLabel={tmp5} />;
+    cResult[5] = tmp5;
+    cResult[6] = label;
+    cResult[7] = tmp8;
+    cResult[8] = tmp14;
+    tmp9 = tmp14;
+  }
+  const items = [tmp4.button, prop];
+  cResult[2] = tmp4.button;
+  cResult[3] = prop;
+  cResult[4] = items;
+  tmp8 = items;
+}) : ((label) => {
+  let items;
   const tmp = closure_3();
   label = label.label;
   if (label == null) {
-    const intl = util.intl;
-    label = intl.string(util.t["5Wxrcd"]);
+    const intl = intl2.intl;
+    label = intl.string(intl2.t["5Wxrcd"]);
   }
-  const obj = {};
+  const obj = { labelStyle: items, label, accessibilityLabel: label };
+  const HeaderTextButton = HeaderShared.HeaderTextButton;
   const merged = Object.assign(label);
-  const items = [tmp.button, ];
+  items = [tmp.button, ];
   let prop;
+  const tmp4 = jsx;
   if (label.insideNavigator) {
     prop = tmp.insideNavigatorButton;
   }
   items[1] = prop;
-  obj.labelStyle = items;
-  obj.label = label;
-  obj.accessibilityLabel = label;
-  return jsx(HeaderShared.HeaderTextButton, {});
-};
+  return tmp4(HeaderTextButton, obj);
+});
+const result = size.fileFinishedImporting("modules/nuf/native/components/SkipHeaderButton.tsx");
+
+export default tmp3;

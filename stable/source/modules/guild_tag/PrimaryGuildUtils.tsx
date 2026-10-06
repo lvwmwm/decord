@@ -1,18 +1,19 @@
-// Module ID: 1388
-// Function ID: 1389
+// Module ID: 1394
+// Function ID: 1395
 // Name: PrimaryGuildUtils
 // Dependencies: [2]
 // Exports: ensureUserPrimaryGuild, isUserPrimaryGuildEqual
 
-// Module 1388 (PrimaryGuildUtils)
+// Module 1394 (PrimaryGuildUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_tag/PrimaryGuildUtils.tsx");
 
 export const isUserPrimaryGuildEqual = function isUserPrimaryGuildEqual(primaryGuild, primary_guild) {
   if (null != primaryGuild) {
+    let tmp;
     if (null != primary_guild) {
-      let tmp = primaryGuild.identityGuildId === primary_guild.identityGuildId && primaryGuild.identityEnabled === primary_guild.identityEnabled && primaryGuild.tag === primary_guild.tag && primaryGuild.badge === primary_guild.badge;
+      tmp = primaryGuild.identityGuildId === primary_guild.identityGuildId && primaryGuild.identityEnabled === primary_guild.identityEnabled && primaryGuild.tag === primary_guild.tag && primaryGuild.badge === primary_guild.badge;
     }
     return tmp;
   }

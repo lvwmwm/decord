@@ -1,16 +1,15 @@
-// Module ID: 1437
-// Function ID: 1438
+// Module ID: 1444
+// Function ID: 1445
 // Name: apex/ApexTypes
-// Dependencies: [2, 1238]
+// Dependencies: [2, 1250]
 
-// Module 1437 (apex/ApexTypes)
+// Module 1444 (apex/ApexTypes)
+import ApexTypes from "ApexTypes" /* 1250 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
 const result = size.fileFinishedImporting("modules/experiments/apex/ApexTypes.tsx");
-for (const key10018 in require("ApexTypes")) {
-  arg5[key10018] = require("ApexTypes")[key10018];
+for (const key10018 in ApexTypes) {
+  exports[key10018] = ApexTypes[key10018];
   continue;
 }
 

@@ -1,53 +1,173 @@
-// Module ID: 14081
-// Function ID: 14082
+// Module ID: 13329
+// Function ID: 13330
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4427, 1074, 21, 4788, 10234, 504, 1115, 1875, 5660, 5218, 2]
-// Exports: default
+// Dependencies: [19, 17, 4472, 1086, 21, 4837, 558, 576, 9372, 504, 1127, 1882, 5724, 5282, 2]
 
-// Module 14081 (JoinVoiceChannelButton)
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5660 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10234 */;
-import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+// Module 13329 (JoinVoiceChannelButton)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1086 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1882 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9372 */;
+import react from "react" /* 19 */;
+import PermissionStore from "PermissionStore" /* 4472 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const Permissions = fn(1074).Permissions;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+let channel;
+
+const View = react_native.View;
+const Permissions = Constants.Permissions;
+const jsx = Fragment.jsx;
 let closure_9 = createStyles.createStyles({ container: { flexDirection: "row" } });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx");
-
-export default function JoinVoiceChannelButton(channel) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let first;
+  let flag;
+  let tmp10;
+  let tmp16;
+  let tmp8;
+  let obj = channel(576);
+  const cResult = obj.c(18);
   channel = channel.channel;
-  const tmp = closure_9();
-  const tmp3 = useIsVoiceChannelFullDefault(channel);
-  const items = [PermissionStore];
-  const stateFromStores = channel(504).useStateFromStores(items, () => !PermissionStore.can(Permissions.CONNECT, channel));
-  const intl = channel(1115).intl;
-  let stringResult = intl.string(channel(1115).t.eIi3Om);
-  if (tmp3) {
-    const intl3 = tmp4(1115).intl;
-    stringResult = intl3.string(tmp4(1115).t.rZfiNq);
-    let flag = true;
+  const style = channel.style;
+  const tmp4 = closure_9();
+  const tmp5 = useIsVoiceChannelFullDefault(channel);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel) {
+    const fn = function _() {
+      return !PermissionStore.can(Permissions.CONNECT, channel);
+    };
+    cResult[1] = channel;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = channel(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(channel(1127).t.eIi3Om);
+    cResult[3] = stringResult;
+    tmp10 = stringResult;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (tmp5) {
+    let tmp14;
+    const _Symbol2 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl3 = tmp(1127).intl;
+      const stringResult1 = intl3.string(channel(1127).t.rZfiNq);
+      cResult[4] = stringResult1;
+      tmp14 = stringResult1;
+    } else {
+      tmp14 = cResult[4];
+    }
+    flag = true;
+    tmp10 = tmp14;
   } else {
     flag = false;
     if (stateFromStores) {
-      const intl2 = tmp4(1115).intl;
-      stringResult = intl2.string(tmp4(1115).t.TVBCKZ);
+      let tmp12;
+      const _Symbol = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl2 = tmp(1127).intl;
+        const stringResult2 = intl2.string(channel(1127).t.TVBCKZ);
+        cResult[5] = stringResult2;
+        tmp12 = stringResult2;
+      } else {
+        tmp12 = cResult[5];
+      }
       flag = true;
+      tmp10 = tmp12;
     }
   }
+  if (cResult[6] !== channel.id) {
+    const fn2 = function x() {
+      const obj = KeyboardManagerUtilsAll;
+      const result = obj.dismissGlobalKeyboard();
+      const obj2 = SelectedChannelActionCreatorsDefault;
+      const voiceChannel = obj2.selectVoiceChannel(channel.id);
+    };
+    cResult[6] = channel.id;
+    cResult[7] = fn2;
+    tmp16 = fn2;
+  } else {
+    tmp16 = cResult[7];
+  }
+  if (cResult[8] === style) {
+    let tmp17;
+    if (cResult[9] === tmp4.container) {
+      tmp17 = cResult[10];
+    }
+    if (cResult[11] === tmp10) {
+      if (cResult[12] === flag) {
+        let tmp18;
+        if (cResult[13] === tmp16) {
+          tmp18 = cResult[14];
+        }
+        if (cResult[15] === tmp17) {
+          let tmp21;
+          if (cResult[16] === tmp18) {
+            tmp21 = cResult[17];
+          }
+          return tmp21;
+        }
+        const tmp24 = <View style={tmp17}>{tmp18}</View>;
+        cResult[15] = tmp17;
+        cResult[16] = tmp18;
+        cResult[17] = tmp24;
+        tmp21 = tmp24;
+      }
+    }
+    const tmp20 = jsx(channel(5282).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
+    cResult[11] = tmp10;
+    cResult[12] = flag;
+    cResult[13] = tmp16;
+    cResult[14] = tmp20;
+    tmp18 = tmp20;
+  }
+  const items1 = [tmp4.container, style];
+  cResult[8] = style;
+  cResult[9] = tmp4.container;
+  cResult[10] = items1;
+  tmp17 = items1;
+}) : ((channel) => {
+  channel = channel.channel;
+  const style = channel.style;
+  const tmp = closure_9();
+  const tmp3 = useIsVoiceChannelFullDefault(channel);
+  let obj = channel(504);
+  const items = [PermissionStore];
+  const stateFromStores = obj.useStateFromStores(items, () => !PermissionStore.can(Permissions.CONNECT, channel));
+  const intl = channel(1127).intl;
+  intl.string(channel(1127).t.eIi3Om);
+  if (tmp3) {
+    const intl3 = tmp4(1127).intl;
+    intl3.string(tmp4(1127).t.rZfiNq);
+  } else if (stateFromStores) {
+    const intl2 = tmp4(1127).intl;
+    intl2.string(tmp4(1127).t.TVBCKZ);
+  }
   const items1 = [channel.id];
-  const obj2 = { style: null, children: null };
-  const items2 = [tmp.container, channel.style];
-  obj2.style = items2;
-  const callback = noop.useCallback(() => {
-    const result = KeyboardManagerUtilsAll.dismissGlobalKeyboard();
-    const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(channel.id);
+  const items2 = [tmp.container, style];
+  const callback = react.useCallback(() => {
+    const obj = KeyboardManagerUtilsAll;
+    const result = obj.dismissGlobalKeyboard();
+    const obj2 = SelectedChannelActionCreatorsDefault;
+    const voiceChannel = obj2.selectVoiceChannel(channel.id);
   }, items1);
-  obj2.children = jsx(channel(5218).Button, { disabled: flag, text: stringResult, onPress: callback });
-  return <View style={null}>{null}</View>;
-};
+  return <View style={items2}>{null}</View>;
+});
+let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx");
+
+export default tmp2;

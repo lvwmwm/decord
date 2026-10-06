@@ -1,63 +1,156 @@
-// Module ID: 13386
-// Function ID: 13387
+// Module ID: 12640
+// Function ID: 12641
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 2038, 21, 4788, 576, 8542, 10921, 2027, 4742, 4784, 1115, 5371, 5929, 2]
-// Exports: default
+// Dependencies: [19, 17, 2048, 21, 4837, 588, 558, 576, 7691, 2035, 10125, 4788, 4833, 1127, 5436, 5940, 2]
 
-// Module 13386 (UserProfileWidgetsBoardEditNotice)
-import nativeDefault from "native" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8542 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10921 */;
-import noop from "module_19" /* 19 */;
+// Module 12640 (UserProfileWidgetsBoardEditNotice)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import XSmallIcon from "XSmallIcon" /* 5940 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7691 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-require = fn;
-const View = fn(17).View;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_16 }, icon: { flexShrink: 0, marginTop: 2 }, text: { flex: 1 }, closeButton: { flexShrink: 0 } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoardEditNotice.tsx");
-
-export default function UserProfileWidgetsBoardEditNotice() {
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let tmp5;
+const SelectedDismissibleContentDefault = tmp5(10125);
+const View = react_native.View;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { container: obj2, icon: { flexShrink: 0, marginTop: 2 }, text: { flex: 1 }, closeButton: { flexShrink: 0 } };
+obj2 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_16 };
+let closure_7 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let card;
+  let closure_0;
+  let first;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  const tmp4 = closure_7();
+  _require = tmp4;
+  const tmp6 = UserProfileSharedStylesDefault();
+  importDefault = tmp6;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [tmp(2035).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === tmp6) {
+    let tmp8;
+    if (cResult[2] === tmp4) {
+      tmp8 = cResult[3];
+    }
+    return tmp8;
+  }
+  let obj2 = {
+    contentTypes: first,
+    bypassAutoDismiss: true,
+    children(markAsDismissed) {
+      let CircleInformationIcon;
+      let intl;
+      let intl2;
+      let items;
+      let items1;
+      let obj3;
+      markAsDismissed = markAsDismissed.markAsDismissed;
+      let tmp3 = null;
+      if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE) {
+        const obj = { style: items, children: items1 };
+        items = [card.card, closure_0.container];
+        const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
+        obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
+        CircleInformationIcon = tmp(4788).CircleInformationIcon;
+        items1 = [hasOwnProperty(View, obj2), , ];
+        const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
+        const Text = tmp(4833).Text;
+        intl = tmp(1127).intl;
+        items1[1] = hasOwnProperty(Text, obj4);
+        const obj5 = {
+          accessibilityRole: "button",
+          accessibilityLabel: intl2.string(intl3.t.WAI6xu),
+          onPress() {
+              return markAsDismissed(constants.USER_DISMISS);
+            },
+          style: closure_0.closeButton,
+          children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
+        };
+        const PressableOpacity = tmp(5436).PressableOpacity;
+        intl2 = tmp(1127).intl;
+        items1[2] = hasOwnProperty(PressableOpacity, obj5);
+        tmp3 = metroRequire(View, obj);
+      }
+      return tmp3;
+    }
+  };
+  const tmp9 = closure_5(SelectedDismissibleContentDefault, obj2);
+  cResult[1] = tmp6;
+  cResult[2] = tmp4;
+  cResult[3] = tmp9;
+  tmp8 = tmp9;
+}) : (() => {
+  let card;
+  let closure_0;
+  let items;
   _require = closure_7();
   importDefault = UserProfileSharedStylesDefault();
-  let obj = { contentTypes: null, bypassAutoDismiss: true, children: null };
-  let items = [require("dismissible_content").DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
-  obj.contentTypes = items;
-  obj.children = function children(markAsDismissed) {
-    markAsDismissed = markAsDismissed.markAsDismissed;
-    let tmp3 = null;
-    if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE) {
-      const obj = { style: null, children: null };
-      const items = [card.card, closure_0.container];
-      obj.style = items;
-      const obj2 = { style: closure_0.icon, children: null };
-      const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      obj2.children = hasOwnProperty(tmp(4742).CircleInformationIcon, obj3);
-      const items1 = [hasOwnProperty(View, obj2), , ];
-      const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: null };
-      const intl = tmp(1115).intl;
-      obj4.children = intl.string(tmp(1115).t.kv8ULD);
-      items1[1] = hasOwnProperty(tmp(4784).Text, obj4);
-      const obj5 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-      const intl2 = tmp(1115).intl;
-      obj5.accessibilityLabel = intl2.string(tmp(1115).t.WAI6xu);
-      obj5.onPress = function onPress() {
-        return markAsDismissed(constants.USER_DISMISS);
-      };
-      obj5.style = closure_0.closeButton;
-      obj5.children = hasOwnProperty(tmp(5929).XSmallIcon, { size: "sm" });
-      items1[2] = hasOwnProperty(tmp(5371).PressableOpacity, obj5);
-      obj.children = items1;
-      tmp3 = timestampProducer(View, obj);
+  let obj = {
+    contentTypes: items,
+    bypassAutoDismiss: true,
+    children(markAsDismissed) {
+      let CircleInformationIcon;
+      let intl;
+      let intl2;
+      let items;
+      let items1;
+      let obj3;
+      markAsDismissed = markAsDismissed.markAsDismissed;
+      let tmp3 = null;
+      if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE) {
+        const obj = { style: items, children: items1 };
+        items = [card.card, closure_0.container];
+        const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
+        obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
+        CircleInformationIcon = tmp(4788).CircleInformationIcon;
+        items1 = [hasOwnProperty(View, obj2), , ];
+        const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
+        const Text = tmp(4833).Text;
+        intl = tmp(1127).intl;
+        items1[1] = hasOwnProperty(Text, obj4);
+        const obj5 = {
+          accessibilityRole: "button",
+          accessibilityLabel: intl2.string(intl3.t.WAI6xu),
+          onPress() {
+              return markAsDismissed(constants.USER_DISMISS);
+            },
+          style: closure_0.closeButton,
+          children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
+        };
+        const PressableOpacity = tmp(5436).PressableOpacity;
+        intl2 = tmp(1127).intl;
+        items1[2] = hasOwnProperty(PressableOpacity, obj5);
+        tmp3 = metroRequire(View, obj);
+      }
+      return tmp3;
     }
-    return tmp3;
   };
-  return closure_5(SelectedDismissibleContentDefault, obj);
-};
+  const tmp = SelectedDismissibleContentDefault;
+  items = [require("dismissible_content").DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
+  return closure_5(tmp, obj);
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoardEditNotice.tsx");
+
+export default tmp4;

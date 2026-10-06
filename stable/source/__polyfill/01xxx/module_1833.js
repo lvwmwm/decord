@@ -1,34 +1,64 @@
 // Module ID: 1833
 // Function ID: 1834
-// Dependencies: [32, 19, 17, 1627]
-// Exports: useWindowDimensions
+// Dependencies: [19, 17, 1834]
+// Exports: useAnimatedValue, useEventHandlerRegistration
 
 // Module 1833
-import _slicedToArray from "module_32" /* 32 */;
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
+import react_native2 from "react-native" /* 1834 */;
 
-const require = fn;
-const noop = fn(19);
-({ useEffect: c3, useState: closure_4 } = noop);
-const Dimensions = fn(17).Dimensions;
-const size = Dimensions.get("window");
-let global = { width: size.width, height: size.height };
-let WindowDimensionsEvents = fn(1627).WindowDimensionsEvents;
-WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
-  global = arg0;
-});
+const useRef = react.useRef;
+const Animated = react_native.Animated;
 
-export const useWindowDimensions = () => {
-  const tmp = _slicedToArray(closure_4(global), 2);
-  closure_0 = tmp[1];
-  closure_3(() => {
-    const WindowDimensionsEvents = closure_0(dependencyMap[3]).WindowDimensionsEvents;
-    closure_0 = WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
-      closure_0(arg0);
-    });
-    closure_0(global);
+export function useEventHandlerRegistration(arg0) {
+  const ref = arg0;
+  return (workletEventHandler) => {
+    if (workletEventHandler.current) {
+      let obj = ref(dependencyMap[2]);
+      let findNodeHandleResult = obj.findNodeHandle(tmp.current);
+      if (findNodeHandleResult) {
+        if ("workletEventHandler" in workletEventHandler) {
+          workletEventHandler = workletEventHandler.workletEventHandler;
+          workletEventHandler.registerForEvents(findNodeHandleResult);
+        } else {
+          workletEventHandler.registerForEvents(findNodeHandleResult);
+        }
+      }
+    } else {
+      const _queueMicrotask = queueMicrotask;
+      queueMicrotask(function attachWorkletHandlers() {
+        const obj = react_native2;
+        const findNodeHandleResult = obj.findNodeHandle(workletEventHandler.current);
+        if (findNodeHandleResult) {
+          if ("workletEventHandler" in workletEventHandler) {
+            workletEventHandler.workletEventHandler.registerForEvents(findNodeHandleResult);
+          } else {
+            workletEventHandler.registerForEvents(findNodeHandleResult);
+          }
+        }
+      });
+    }
     return () => {
-      closure_0.remove();
+      const obj = react_native2;
+      const findNodeHandleResult = obj.findNodeHandle(workletEventHandler.current);
+      if (findNodeHandleResult) {
+        if ("workletEventHandler" in workletEventHandler) {
+          workletEventHandler.workletEventHandler.unregisterFromEvents(findNodeHandleResult);
+        } else {
+          workletEventHandler.unregisterFromEvents(findNodeHandleResult);
+        }
+      }
     };
-  }, []);
-  return tmp[0];
+  };
+}
+export const useAnimatedValue = function useAnimatedValue(arg0, arg1) {
+  const tmp = useRef(null);
+  if (null === tmp.current) {
+    const self = this;
+    const self2 = this;
+    const value = new Animated.Value(arg0, arg1);
+    tmp.current = value;
+  }
+  return tmp.current;
 };

@@ -1,28 +1,33 @@
-// Module ID: 11374
-// Function ID: 11375
+// Module ID: 10574
+// Function ID: 10575
 // Name: ProductPurchaseSuccessActionCreators
-// Dependencies: [5, 4991, 11375, 1980, 2]
+// Dependencies: [5, 5040, 10575, 1987, 2]
 
-// Module 11374 (ProductPurchaseSuccessActionCreators)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 10574 (ProductPurchaseSuccessActionCreators)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const require = fn;
 const ShopProductPurchaseSuccessModal = "ShopProductPurchaseSuccessModal";
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessActionCreators.tsx");
-
-export default {
+let obj = {
   open(merged) {
-    ModalActionCreatorsDefault.pushLazy(asyncGeneratorStep(async () => {
-      await require("asyncRequireImpl")(paths[2], paths.paths);
+    let paths;
+    const obj = ModalActionCreatorsDefault;
+    obj.pushLazy(_asyncToGenerator(async () => {
+      let c0;
+      let c1;
+      await require("asyncRequire")(paths[2], paths.paths);
       return arg1.default;
     }), merged, ShopProductPurchaseSuccessModal);
   },
   close() {
-    ModalActionCreatorsDefault.popWithKey(ShopProductPurchaseSuccessModal);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(ShopProductPurchaseSuccessModal);
   }
 };
+const result = size.fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessActionCreators.tsx");
+
+export default obj;
 export const MODAL_KEY = "ShopProductPurchaseSuccessModal";

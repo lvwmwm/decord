@@ -1,319 +1,410 @@
 // Module ID: 1674
 // Function ID: 1675
-// Dependencies: [1640, 1641, 1675, 1667, 1644, 1648, 1668]
+// Dependencies: [32, 1647, 1675, 1655, 1669, 1660, 1648]
+// Exports: makeShareableCloneOnUIRecursive
 
 // Module 1674
-import valueSetter from "valueSetter" /* 1675 */;
-import module_1640_mod from "module_1640" /* 1640 */;
+import shareableMappingFlag from "shareableMappingFlag" /* 1675 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import module_1647_mod from "module_1647" /* 1647 */;
 
 const require = globalThis.__r;
 
-let module_1640 = module_1640_mod;
-module_1640.shouldBeUseWeb();
-let module_1640 = module_1640_mod;
-let closure_2 = module_1640.isJest();
-function addCompilerSafeGetAndSet(prototype) {
-  closure_0 = prototype;
-  Object.defineProperties(prototype, {
-    get: {
-      value() {
-        return obj.value;
-      },
-      configurable: false,
-      enumerable: false
+let fn;
+function freezeObjectInDev(arg0) {
+
+}
+let module_1647 = module_1647_mod;
+module_1647 = module_1647.shouldBeUseWeb();
+const REANIMATED_MAGIC_KEY = "REANIMATED_MAGIC_KEY";
+function isHostObject(__remoteFunction) {
+  return REANIMATED_MAGIC_KEY in __remoteFunction;
+}
+isHostObject.__closure = { MAGIC_KEY: "REANIMATED_MAGIC_KEY" };
+isHostObject.__workletHash = 10372729533958;
+isHostObject.__initData = { code: "function isHostObject_Pnpm_shareablesTs1(value){const{MAGIC_KEY}=this.__closure;return MAGIC_KEY in value;}" };
+let obj = { __init: fn };
+fn = function u() {
+  obj = {
+    get(arg0, arg1) {
+      if ("_isReanimatedSharedValue" !== arg1) {
+        if ("__remoteFunction" !== arg1) {
+          const _String = String;
+          const _HermesInternal = HermesInternal;
+          const self = this;
+          const self2 = this;
+          const reanimatedError = new require("ReanimatedError").ReanimatedError("Trying to access property `" + String(arg1) + "` of an object which cannot be sent to the UI runtime.");
+          throw reanimatedError;
+        }
+      }
+      return false;
     },
-    set: {
-      value(__isAnimationDefinition) {
-        if (typeof __isAnimationDefinition === "function") {
-          if (!__isAnimationDefinition.__isAnimationDefinition) {
-            obj.value = __isAnimationDefinition(obj.value);
+    set() {
+      const reanimatedError = new require("ReanimatedError").ReanimatedError("Trying to write to an object which cannot be sent to the UI runtime.");
+      throw reanimatedError;
+    }
+  };
+  const proxy = new Proxy({}, obj);
+  return proxy;
+};
+fn.__closure = {};
+fn.__workletHash = 15880119471501;
+fn.__initData = { code: "function pnpm_shareablesTs2(){return new Proxy({},{get:function(_,prop){if(prop==='_isReanimatedSharedValue'||prop==='__remoteFunction'){return false;}throw new ReanimatedError(\"Trying to access property `\"+String(prop)+\"` of an object which cannot be sent to the UI runtime.\");},set:function(){throw new ReanimatedError('Trying to write to an object which cannot be sent to the UI runtime.');}});}" };
+const VALID_ARRAY_VIEWS_NAMES = ["Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Uint16Array", "Int32Array", "Uint32Array", "Float32Array", "Float64Array", "BigInt64Array", "BigUint64Array", "DataView"];
+let tmp3 = module_1647 ? (function makeShareableCloneRecursiveWeb(arg0) {
+  return arg0;
+}) : (function makeShareableCloneRecursiveNative(__workletContextObjectFactory, flag) {
+  let c7;
+  let fn;
+  let fn2;
+  let fn3;
+  let fn4;
+  let name;
+  function cloneWorklet(__stackDetails, flag, arg2) {
+    let tmp7;
+    let tmp9;
+    if (__stackDetails.__stackDetails) {
+      delete tmp["__stackDetails"];
+    }
+    obj = { __initData: closure_1_10(__stackDetails.__initData, true, arg2 + 1) };
+    const entries = Object.entries(__stackDetails);
+    const tmp3 = entries[Symbol.iterator]();
+    while (tmp3 !== undefined) {
+      let tmp6 = _slicedToArray(tmp4, 2);
+      [tmp7, tmp9] = tmp6;
+      let tmp10 = "__initData" === tmp7;
+      let tmp8 = tmp7;
+      if (tmp10) {
+        tmp10 = undefined !== obj.__initData;
+      }
+      if (!tmp10) {
+        obj[tmp8] = closure_1_10(tmp9, flag, arg2 + 1);
+      }
+      continue;
+    }
+    const WorkletsModule = name(dependencyMap[5]).WorkletsModule;
+    const shareableClone = WorkletsModule.makeShareableClone(obj, true, __stackDetails);
+    const shareableMappingCache = name(dependencyMap[2]).shareableMappingCache;
+    const result = shareableMappingCache.set(__stackDetails, shareableClone);
+    const shareableMappingCache2 = name(dependencyMap[2]).shareableMappingCache;
+    const result1 = shareableMappingCache2.set(shareableClone);
+    freezeObjectInDev(0);
+    return shareableClone;
+  }
+  function clonePlainJSObject(__workletContextObjectFactory, flag, arg2) {
+    let tmp6;
+    let tmp8;
+    obj = {};
+    const entries = Object.entries(__workletContextObjectFactory);
+    const tmp2 = entries[Symbol.iterator]();
+    while (tmp2 !== undefined) {
+      let tmp5 = _slicedToArray(tmp3, 2);
+      [tmp6, tmp8] = tmp5;
+      let tmp9 = "__initData" === tmp6;
+      let tmp7 = tmp6;
+      if (tmp9) {
+        tmp9 = undefined !== obj.__initData;
+      }
+      if (!tmp9) {
+        obj[tmp7] = closure_1_10(tmp8, flag, arg2 + 1);
+      }
+      continue;
+    }
+    const WorkletsModule = name(dependencyMap[5]).WorkletsModule;
+    const shareableClone = WorkletsModule.makeShareableClone(obj, flag, __workletContextObjectFactory);
+    const shareableMappingCache = name(dependencyMap[2]).shareableMappingCache;
+    const result = shareableMappingCache.set(__workletContextObjectFactory, shareableClone);
+    const shareableMappingCache2 = name(dependencyMap[2]).shareableMappingCache;
+    const result1 = shareableMappingCache2.set(shareableClone);
+    freezeObjectInDev(0);
+    return shareableClone;
+  }
+  if (flag === undefined) {
+    flag = false;
+  }
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 0;
+  }
+  if (num >= 30) {
+    if (30 === num) {
+      c7 = __workletContextObjectFactory;
+    } else {
+      const tmp = c7;
+      if (__workletContextObjectFactory === c7) {
+        let tmp2 = name;
+        let tmp3 = dependencyMap;
+        let self = this;
+        let self2 = this;
+        let reanimatedError = new name(1655).ReanimatedError("Trying to convert a cyclic object to a shareable. This is not supported.");
+        let tmp5 = reanimatedError;
+        throw reanimatedError;
+      }
+    }
+  } else {
+    c7 = undefined;
+  }
+  if (typeof __workletContextObjectFactory === "object") {
+    let tmp6 = null;
+    if (null !== __workletContextObjectFactory) {
+      const shareableMappingCache14 = name(1675).shareableMappingCache;
+      let value = shareableMappingCache14.get(__workletContextObjectFactory);
+      if (value === name(1675).shareableMappingFlag) {
+        value = __workletContextObjectFactory;
+      }
+      if (undefined === value) {
+        let shareableClone1;
+        const _Array = Array;
+        if (Array.isArray(__workletContextObjectFactory)) {
+          const mapped = __workletContextObjectFactory.map((item) => closure_2_10(item, flag, num + 1));
+          const WorkletsModule4 = tmp44(1660).WorkletsModule;
+          let shareableClone = WorkletsModule4.makeShareableClone(mapped, flag, __workletContextObjectFactory);
+          const shareableMappingCache12 = tmp44(1675).shareableMappingCache;
+          let result = shareableMappingCache12.set(__workletContextObjectFactory, shareableClone);
+          const shareableMappingCache13 = tmp44(1675).shareableMappingCache;
+          let result1 = shareableMappingCache13.set(shareableClone);
+          shareableClone1 = shareableClone;
+        } else {
+          if (typeof __workletContextObjectFactory === "function") {
+            const tmp44Result = name(1669);
+            if (!tmp44Result.isWorkletFunction(__workletContextObjectFactory)) {
+              let WorkletsModule = tmp44(1660).WorkletsModule;
+              shareableClone1 = WorkletsModule.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+              let shareableMappingCache = tmp44(1675).shareableMappingCache;
+              const result2 = shareableMappingCache.set(__workletContextObjectFactory, shareableClone1);
+              let shareableMappingCache2 = tmp44(1675).shareableMappingCache;
+              const result3 = shareableMappingCache2.set(shareableClone1);
+            }
+          }
+          let tmp11 = isHostObject;
+          if (typeof isHostObject === "function") {
+            let tmp15;
+            let tmp12 = REANIMATED_MAGIC_KEY;
+            if (REANIMATED_MAGIC_KEY in __workletContextObjectFactory) {
+              const WorkletsModule3 = tmp44(1660).WorkletsModule;
+              const shareableClone2 = WorkletsModule3.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+              const shareableMappingCache10 = tmp44(1675).shareableMappingCache;
+              const result4 = shareableMappingCache10.set(__workletContextObjectFactory, shareableClone2);
+              const shareableMappingCache11 = tmp44(1675).shareableMappingCache;
+              const result5 = shareableMappingCache11.set(shareableClone2);
+              tmp15 = shareableClone2;
+            } else {
+              const _Object = Object;
+              const _Object2 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) === Object.prototype) {
+                if (__workletContextObjectFactory.__workletContextObjectFactory) {
+                  __workletContextObjectFactory = __workletContextObjectFactory.__workletContextObjectFactory;
+                  obj = { __init: fn4 };
+                  fn4 = function c() {
+                    return __workletContextObjectFactory();
+                  };
+                  const obj2 = { workletContextObjectFactory: __workletContextObjectFactory };
+                  fn4.__closure = obj2;
+                  fn4.__workletHash = 16264240301234;
+                  fn4.__initData = __initData;
+                  const tmp35 = closure_10(obj);
+                  const shareableMappingCache9 = tmp44(1675).shareableMappingCache;
+                  const result6 = shareableMappingCache9.set(__workletContextObjectFactory, tmp35);
+                  tmp15 = tmp35;
+                }
+              }
+              const _Object3 = Object;
+              const _Object4 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) === Object.prototype) {
+                const tmp44Result2 = name(1669);
+                if (tmp44Result2.isWorkletFunction(__workletContextObjectFactory)) {
+                  tmp15 = cloneWorklet(__workletContextObjectFactory, flag, num);
+                }
+              }
+              const _Object5 = Object;
+              const _Object6 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) !== Object.prototype) {
+                if (typeof __workletContextObjectFactory !== "function") {
+                  const _RegExp = RegExp;
+                  if (__workletContextObjectFactory instanceof RegExp) {
+                    const source = __workletContextObjectFactory.source;
+                    const flags = __workletContextObjectFactory.flags;
+                    const obj3 = { __init: fn3 };
+                    fn3 = function s() {
+                      const regExp = new RegExp(source, flags);
+                      return regExp;
+                    };
+                    const obj4 = { pattern: source, flags };
+                    fn3.__closure = obj4;
+                    fn3.__workletHash = 17343605339188;
+                    fn3.__initData = __initData2;
+                    const tmp31 = closure_10(obj3);
+                    const shareableMappingCache8 = tmp44(1675).shareableMappingCache;
+                    const result7 = shareableMappingCache8.set(__workletContextObjectFactory, tmp31);
+                    tmp15 = tmp31;
+                  } else {
+                    const _Error = Error;
+                    if (__workletContextObjectFactory instanceof Error) {
+                      const name2 = __workletContextObjectFactory.name;
+                      const message = __workletContextObjectFactory.message;
+                      const stack = __workletContextObjectFactory.stack;
+                      const obj5 = { __init: fn2 };
+                      fn2 = function u() {
+                        const error = new Error();
+                        error.name = name2;
+                        error.message = message;
+                        error.stack = stack;
+                        return error;
+                      };
+                      let error = { name: name2, message, stack };
+                      fn2.__closure = error;
+                      fn2.__workletHash = 1273124072033;
+                      fn2.__initData = __initData3;
+                      const tmp27 = closure_10(obj5);
+                      const shareableMappingCache7 = tmp44(1675).shareableMappingCache;
+                      const result8 = shareableMappingCache7.set(__workletContextObjectFactory, tmp27);
+                      tmp15 = tmp27;
+                    } else {
+                      const _ArrayBuffer = ArrayBuffer;
+                      if (__workletContextObjectFactory instanceof ArrayBuffer) {
+                        const WorkletsModule2 = tmp44(1660).WorkletsModule;
+                        const shareableClone3 = WorkletsModule2.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+                        const shareableMappingCache5 = tmp44(1675).shareableMappingCache;
+                        const result9 = shareableMappingCache5.set(__workletContextObjectFactory, shareableClone3);
+                        const shareableMappingCache6 = tmp44(1675).shareableMappingCache;
+                        const result10 = shareableMappingCache6.set(shareableClone3);
+                        tmp15 = shareableClone3;
+                      } else {
+                        const _ArrayBuffer2 = ArrayBuffer;
+                        if (ArrayBuffer.isView(__workletContextObjectFactory)) {
+                          const buffer = __workletContextObjectFactory.buffer;
+                          name = __workletContextObjectFactory.constructor.name;
+                          const obj6 = { __init: fn };
+                          fn = function s() {
+                            if (VALID_ARRAY_VIEWS_NAMES.includes(name)) {
+                              if (undefined === global[name]) {
+                                const _HermesInternal2 = HermesInternal;
+                                const self5 = this;
+                                const self6 = this;
+                                const reanimatedError = new require("ReanimatedError").ReanimatedError("[Reanimated] Constructor for `" + tmp + "` not found.");
+                                throw reanimatedError;
+                              } else {
+                                const self3 = this;
+                                const self4 = this;
+                                const tmp82 = new global[name](buffer);
+                                return tmp82;
+                              }
+                            } else {
+                              const _HermesInternal = HermesInternal;
+                              const self = this;
+                              const self2 = this;
+                              const reanimatedError1 = new require("ReanimatedError").ReanimatedError("[Reanimated] Invalid array view name `" + tmp + "`.");
+                              throw reanimatedError1;
+                            }
+                          };
+                          const obj7 = { VALID_ARRAY_VIEWS_NAMES, typeName: name, buffer };
+                          fn.__closure = obj7;
+                          fn.__workletHash = 2440560686150;
+                          fn.__initData = __initData4;
+                          const tmp20 = closure_10(obj6);
+                          const shareableMappingCache4 = tmp44(1675).shareableMappingCache;
+                          const result11 = shareableMappingCache4.set(__workletContextObjectFactory, tmp20);
+                          tmp15 = tmp20;
+                        } else {
+                          let tmp13 = closure_10;
+                          tmp15 = closure_10(obj);
+                          const shareableMappingCache3 = tmp44(1675).shareableMappingCache;
+                          const result12 = shareableMappingCache3.set(__workletContextObjectFactory, tmp15);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              tmp15 = clonePlainJSObject(__workletContextObjectFactory, flag, num);
+            }
+            shareableClone1 = tmp15;
+          } else {
+            throw new TypeError("Trying to call a non-function");
           }
         }
-        obj.value = __isAnimationDefinition;
-      },
-      configurable: false,
-      enumerable: false
-    }
-  });
-}
-addCompilerSafeGetAndSet.__closure = {};
-addCompilerSafeGetAndSet.__workletHash = 14094096506039;
-addCompilerSafeGetAndSet.__initData = { code: "function addCompilerSafeGetAndSet_Pnpm_mutablesTs1(mutable){Object.defineProperties(mutable,{get:{value:function(){return mutable.value;},configurable:false,enumerable:false},set:{value:function(newValue){if(typeof newValue==='function'&&!newValue.__isAnimationDefinition){mutable.value=newValue(mutable.value);}else{mutable.value=newValue;}},configurable:false,enumerable:false}});}" };
-function hideInternalValueProp(arg0) {
-  Object.defineProperty(arg0, "_value", { configurable: false, enumerable: false });
-}
-hideInternalValueProp.__closure = {};
-hideInternalValueProp.__workletHash = 3380393180484;
-hideInternalValueProp.__initData = { code: "function hideInternalValueProp_Pnpm_mutablesTs2(mutable){Object.defineProperty(mutable,'_value',{configurable:false,enumerable:false});}" };
-function makeMutableUI(initialValues) {
-  new Map();
-  closure_1 = initialValues;
-  let obj = {};
-  Object.defineProperty(obj, "value", {
-    get: () => closure_1,
-    set: (value) => {
-      obj = valueSetter;
-      obj.valueSetter(obj, value);
-    }
-  });
-  Object.defineProperty(obj, "_value", {
-    get: () => closure_1,
-    set: (arg0) => {
-      closure_0 = arg0;
-      closure_1 = arg0;
-      const item = obj.forEach((fn) => {
-        fn(closure_0);
-      });
-    }
-  });
-  obj.modify = function modify(fn, flag) {
-    if (flag === undefined) {
-      flag = true;
-    }
-    obj = valueSetter;
-    if (undefined !== fn) {
-      let tmp2 = fn(closure_1);
-    } else {
-      tmp2 = closure_1;
-    }
-    obj.valueSetter(obj, tmp2, flag);
-  };
-  obj.addListener = function addListener(arg0, arg1) {
-    const result = obj.set(arg0, arg1);
-  };
-  obj.removeListener = function removeListener(arg0) {
-    obj.delete(arg0);
-  };
-  obj._animation = null;
-  obj._isReanimatedSharedValue = true;
-  if (typeof hideInternalValueProp === "function") {
-    const _Object = Object;
-    Object.defineProperty(obj, "_value", { configurable: false, enumerable: false });
-    if (typeof addCompilerSafeGetAndSet === "function") {
-      const _Object2 = Object;
-      const obj2 = { get: null, set: null };
-      const obj3 = {
-        value() {
-              return obj.value;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      obj2.get = obj3;
-      const obj4 = {
-        value(__isAnimationDefinition) {
-              if (typeof __isAnimationDefinition === "function") {
-                if (!__isAnimationDefinition.__isAnimationDefinition) {
-                  obj.value = __isAnimationDefinition(obj.value);
-                }
-              }
-              obj.value = __isAnimationDefinition;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      obj2.set = obj4;
-      Object.defineProperties(obj, obj2);
-      return obj;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-  const map = new Map();
-}
-makeMutableUI.__closure = { valueSetter: valueSetter.valueSetter, hideInternalValueProp, addCompilerSafeGetAndSet };
-makeMutableUI.__workletHash = 8132940328790;
-makeMutableUI.__initData = { code: "function makeMutableUI_Pnpm_mutablesTs3(initial){const{valueSetter,hideInternalValueProp,addCompilerSafeGetAndSet}=this.__closure;const listeners=new Map();let value=initial;const mutable={get value(){return value;},set value(newValue){valueSetter(mutable,newValue);},get _value(){return value;},set _value(newValue){value=newValue;listeners.forEach(function(listener){listener(newValue);});},modify:function(modifier,forceUpdate=true){valueSetter(mutable,modifier!==undefined?modifier(value):value,forceUpdate);},addListener:function(id,listener){listeners.set(id,listener);},removeListener:function(id){listeners.delete(id);},_animation:null,_isReanimatedSharedValue:true};hideInternalValueProp(mutable);addCompilerSafeGetAndSet(mutable);return mutable;}" };
-const __initData = { code: "function pnpm_mutablesTs4(){const{makeMutableUI,initial}=this.__closure;return makeMutableUI(initial);}" };
-let closure_7 = { code: "function pnpm_mutablesTs5(sv){return sv.value;}" };
-let closure_8 = { code: "function pnpm_mutablesTs6(){const{mutable,newValue}=this.__closure;mutable.value=newValue;}" };
-let closure_9 = { code: "function pnpm_mutablesTs7(){const{mutable,modifier,forceUpdate}=this.__closure;mutable.modify(modifier,forceUpdate);}" };
-
-export { makeMutableUI };
-export const makeMutable = module_1640 ? (function makeMutableWeb(arg0) {
-  closure_0 = arg0;
-  const map = new Map();
-  let obj = {};
-  Object.defineProperty(obj, "value", {
-    get: () => closure_0,
-    set: (value) => {
-      obj = valueSetter;
-      obj.valueSetter(obj, value);
-    }
-  });
-  Object.defineProperty(obj, "_value", {
-    get: () => closure_0,
-    set: (arg0) => {
-      closure_0 = arg0;
-      const item = map.forEach((fn) => {
-        fn(closure_0);
-      });
-    }
-  });
-  obj.modify = function modify(fn, flag) {
-    if (flag === undefined) {
-      flag = true;
-    }
-    obj = valueSetter;
-    if (undefined !== fn) {
-      value = fn(iter.value);
-    } else {
-      value = iter.value;
-    }
-    obj.valueSetter(obj, value, flag);
-  };
-  obj.addListener = function addListener(arg0, arg1) {
-    const result = map.set(arg0, arg1);
-  };
-  obj.removeListener = function removeListener(arg0) {
-    map.delete(arg0);
-  };
-  obj._isReanimatedSharedValue = true;
-  if (typeof hideInternalValueProp === "function") {
-    const _Object = Object;
-    Object.defineProperty(obj, "_value", { configurable: false, enumerable: false });
-    if (typeof addCompilerSafeGetAndSet === "function") {
-      closure_0 = obj;
-      const _Object2 = Object;
-      const obj2 = { get: null, set: null };
-      const obj3 = {
-        value() {
-              return obj.value;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      obj2.get = obj3;
-      const obj4 = {
-        value(__isAnimationDefinition) {
-              if (typeof __isAnimationDefinition === "function") {
-                if (!__isAnimationDefinition.__isAnimationDefinition) {
-                  obj.value = __isAnimationDefinition(obj.value);
-                }
-              }
-              obj.value = __isAnimationDefinition;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      obj2.set = obj4;
-      Object.defineProperties(obj, obj2);
-      if (obj) {
-        obj.toJSON = () => JSON.stringify(closure_0);
+        value = shareableClone1;
       }
-      return obj;
-    } else {
-      throw new TypeError("Trying to call a non-function");
+      return value;
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
   }
-}) : (function makeMutableNative(initial) {
-  const obj2 = { __init: null };
-  let fn = function n() {
-    return makeMutableUI(obj4);
-  };
-  fn.__closure = { makeMutableUI, initial };
-  fn.__workletHash = 38746935544;
-  fn.__initData = __initData;
-  obj2.__init = fn;
-  const obj4 = {};
-  const shareableCloneRecursive = obj4(obj4[3]).makeShareableCloneRecursive(obj2);
-  Object.defineProperty(obj4, "value", {
-    get: () => {
-      const fn = function t(value) {
-        return value.value;
-      };
-      fn.__closure = {};
-      fn.__workletHash = 5375306386445;
-      fn.__initData = __initData;
-      return require("runWorkletOnJS").executeOnUIRuntimeSync(fn)(obj4);
-    },
-    set: (newValue) => {
-      value = newValue;
-      const fn = function n() {
-        obj4.value = value;
-      };
-      fn.__closure = { mutable: obj4, newValue };
-      fn.__workletHash = 11269088169577;
-      fn.__initData = __initData2;
-      obj4(obj4[4]).runOnUI(fn)();
+  const WorkletsModule5 = name(1660).WorkletsModule;
+  return WorkletsModule5.makeShareableClone(__workletContextObjectFactory, flag);
+});
+let closure_10 = tmp3;
+const __initData = { code: "function pnpm_shareablesTs3(){const{workletContextObjectFactory}=this.__closure;return workletContextObjectFactory();}" };
+const __initData2 = { code: "function pnpm_shareablesTs4(){const{pattern,flags}=this.__closure;return new RegExp(pattern,flags);}" };
+const __initData3 = { code: "function pnpm_shareablesTs5(){const{name,message,stack}=this.__closure;const error=new Error();error.name=name;error.message=message;error.stack=stack;return error;}" };
+const __initData4 = { code: "function pnpm_shareablesTs6(){const{VALID_ARRAY_VIEWS_NAMES,typeName,buffer}=this.__closure;if(!VALID_ARRAY_VIEWS_NAMES.includes(typeName)){throw new ReanimatedError(\"[Reanimated] Invalid array view name `\"+typeName+\"`.\");}const constructor=global[typeName];if(constructor===undefined){throw new ReanimatedError(\"[Reanimated] Constructor for `\"+typeName+\"` not found.\");}return new constructor(buffer);}" };
+function isRemoteFunction(__remoteFunction) {
+  return __remoteFunction.__remoteFunction;
+}
+isRemoteFunction.__closure = {};
+isRemoteFunction.__workletHash = 12817663616448;
+isRemoteFunction.__initData = { code: "function isRemoteFunction_Pnpm_shareablesTs7(value){return!!value.__remoteFunction;}" };
+function makeShareableCloneOnUIRecursive(fn) {
+  const tmp = module_1647;
+  if (tmp) {
+    return fn;
+  } else {
+    function cloneRecursive(__remoteFunction) {
+      if (typeof __remoteFunction !== "object") {
+        if (typeof __remoteFunction !== "function") {
+          return global._makeShareableClone(__remoteFunction, undefined);
+        }
+      }
+      if (isHostObject(__remoteFunction)) {
+        return global._makeShareableClone(__remoteFunction, undefined);
+      } else if (isRemoteFunction(__remoteFunction)) {
+        return __remoteFunction.__remoteFunction;
+      } else {
+        const _Array = Array;
+        if (Array.isArray(__remoteFunction)) {
+          return global._makeShareableClone(__remoteFunction.map(cloneRecursive), undefined);
+        } else {
+          obj = {};
+          const _Object = Object;
+          const entries = Object.entries(__remoteFunction);
+          const tmp5 = entries[Symbol.iterator]();
+          while (tmp5 !== undefined) {
+            let tmp10 = _slicedToArray(tmp7, 2);
+            obj[tmp10[0]] = cloneRecursive(tmp10[1]);
+            continue;
+          }
+          return global._makeShareableClone(obj, __remoteFunction);
+        }
+      }
     }
-  });
-  Object.defineProperty(obj4, "_value", {
-    get: () => {
-      const reanimatedError = new obj4(obj4[5]).ReanimatedError("Reading from `_value` directly is only possible on the UI runtime. Perhaps you passed an Animated Style to a non-animated component?");
-      throw reanimatedError;
-    },
-    set: (arg0) => {
-      const reanimatedError = new obj4(obj4[5]).ReanimatedError("Setting `_value` directly is only possible on the UI runtime. Perhaps you want to assign to `value` instead?");
-      throw reanimatedError;
-    }
-  });
-  obj4.modify = function modify(modifier) {
-    closure_0 = modifier;
-    let flag = arg1;
-    if (arg1 === undefined) {
-      flag = true;
-    }
-    const fn = function u() {
-      obj4.modify(closure_0, flag);
+    return cloneRecursive(fn);
+  }
+}
+makeShareableCloneOnUIRecursive.__closure = { SHOULD_BE_USE_WEB: module_1647, isHostObject, isRemoteFunction };
+makeShareableCloneOnUIRecursive.__workletHash = 10912061747670;
+makeShareableCloneOnUIRecursive.__initData = { code: "function makeShareableCloneOnUIRecursive_Pnpm_shareablesTs8(value){const{SHOULD_BE_USE_WEB,isHostObject,isRemoteFunction}=this.__closure;if(SHOULD_BE_USE_WEB){return value;}function cloneRecursive(value){if(typeof value==='object'&&value!==null||typeof value==='function'){if(isHostObject(value)){return global._makeShareableClone(value,undefined);}if(isRemoteFunction(value)){return value.__remoteFunction;}if(Array.isArray(value)){return global._makeShareableClone(value.map(cloneRecursive),undefined);}const toAdapt={};for(const[key,element]of Object.entries(value)){toAdapt[key]=cloneRecursive(element);}return global._makeShareableClone(toAdapt,value);}return global._makeShareableClone(value,undefined);}return cloneRecursive(value);}" };
+const __initData5 = { code: "function pnpm_shareablesTs9(){const{value}=this.__closure;return value;}" };
+
+export const makeShareableCloneRecursive = tmp3;
+export { makeShareableCloneOnUIRecursive };
+export const makeShareable = module_1647 ? (function makeShareableJS(arg0) {
+  return arg0;
+}) : (function makeShareableNative(value) {
+  let fn;
+  let closure_0 = value;
+  const shareableMappingCache = shareableMappingFlag.shareableMappingCache;
+  if (shareableMappingCache.get(value)) {
+    return value;
+  } else {
+    obj = { __init: fn };
+    fn = function n() {
+      return closure_0;
     };
-    fn.__closure = { mutable: flag, modifier, forceUpdate: flag };
-    fn.__workletHash = 15983399508815;
-    fn.__initData = __initData3;
-    obj4(obj4[4]).runOnUI(fn)();
-  };
-  obj4.addListener = function addListener() {
-    const reanimatedError = new obj4(obj4[5]).ReanimatedError("Adding listeners is only possible on the UI runtime.");
-    throw reanimatedError;
-  };
-  obj4.removeListener = function removeListener() {
-    const reanimatedError = new obj4(obj4[5]).ReanimatedError("Removing listeners is only possible on the UI runtime.");
-    throw reanimatedError;
-  };
-  obj4._isReanimatedSharedValue = true;
-  if (typeof hideInternalValueProp === "function") {
-    const _Object = Object;
-    Object.defineProperty(obj4, "_value", { configurable: false, enumerable: false });
-    if (typeof addCompilerSafeGetAndSet === "function") {
-      const _Object2 = Object;
-      const obj5 = { get: null, set: null };
-      const obj6 = {
-        value() {
-              return obj.value;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      obj5.get = obj6;
-      const obj7 = {
-        value(__isAnimationDefinition) {
-              if (typeof __isAnimationDefinition === "function") {
-                if (!__isAnimationDefinition.__isAnimationDefinition) {
-                  obj.value = __isAnimationDefinition(obj.value);
-                }
-              }
-              obj.value = __isAnimationDefinition;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      obj5.set = obj7;
-      Object.defineProperties(obj4, obj5);
-      const shareableMappingCache = tmp(tmp2[6]).shareableMappingCache;
-      const result = shareableMappingCache.set(obj4, shareableCloneRecursive);
-      return obj4;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
+    const obj2 = { value };
+    fn.__closure = obj2;
+    fn.__workletHash = 5731865988281;
+    fn.__initData = __initData5;
+    const tmp5 = closure_10(obj);
+    const shareableMappingCache2 = shareableMappingFlag.shareableMappingCache;
+    const result = shareableMappingCache2.set(value, tmp5);
+    return value;
   }
-  const obj = obj4(obj4[3]);
-  const obj3 = { makeMutableUI, initial };
-  tmp = obj4;
-  tmp2 = obj4;
 });

@@ -1,55 +1,245 @@
-// Module ID: 16366
-// Function ID: 16367
+// Module ID: 15656
+// Function ID: 15657
 // Name: useHomeDrawerPeekHint
-// Dependencies: [32, 19, 4780, 16358, 1074, 2038, 4524, 2027, 1485, 16367, 504, 16360, 4608, 7662, 4789, 5217, 16364, 2]
-// Exports: useHomeDrawerPeekHint
+// Dependencies: [32, 19, 4826, 15649, 1086, 2048, 4570, 2035, 558, 576, 1492, 15657, 504, 15651, 4656, 6807, 4838, 5281, 15654, 2]
 
-// Module 16366 (useHomeDrawerPeekHint)
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
-import spring from "spring" /* 5217 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16364 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 16358 */;
+// Module 15656 (useHomeDrawerPeekHint)
+import Constants from "Constants" /* 1086 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import spring from "spring" /* 5281 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15654 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 15649 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, clearTimeoutResult, current, obj1, ref2, set, tmp3, tmp5;
 
-require = fn;
-const ME = fn(1074).ME;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ME = Constants.ME;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let c8 = 2000;
-const Easing = fn(4524).Easing;
-let closure_9 = Easing.inOut(fn(4524).Easing.cubic);
+const Easing = ReanimatedRexport.Easing;
+const easing = Easing.inOut(ReanimatedRexport.Easing.cubic);
 let closure_10 = [];
-let items = [fn(2027).DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
-let __initData = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };
-let __initData2 = { code: "function useHomeDrawerPeekHintTsx2(isDragged,wasDragged){const{isPeekGranted,runOnJS,handleDrawerDragged}=this.__closure;if(!isPeekGranted||wasDragged==null)return;if(isDragged&&!wasDragged){runOnJS(handleDrawerDragged)();}}" };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/home_drawer/native/useHomeDrawerPeekHint.tsx");
-
-export const PEEK_HINT_DISTANCE = 40;
-export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHint, sharedValue8) {
-  let tmp = enablePeekHint;
-  _require = sharedValue8;
-  const tmp2 = noteInteraction();
+let items = [dismissible_content.DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
+let ref = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };
+let closure_13 = { code: "function useHomeDrawerPeekHintTsx2(isDragged,wasDragged){const{isPeekGranted,runOnJS,handleDrawerDragged}=this.__closure;if(!isPeekGranted||wasDragged==null){return;}if(isDragged&&!wasDragged){runOnJS(handleDrawerDragged)();}}" };
+let __initData = { code: "function useHomeDrawerPeekHintTsx3(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };
+let __initData2 = { code: "function useHomeDrawerPeekHintTsx4(isDragged,wasDragged){const{isPeekGranted,runOnJS,handleDrawerDragged}=this.__closure;if(!isPeekGranted||wasDragged==null)return;if(isDragged&&!wasDragged){runOnJS(handleDrawerDragged)();}}" };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let items;
+  let noteInteraction;
+  let panelX;
+  let ref4;
+  let tmp7;
+  let tmp8;
+  _require = arg1;
+  let tmp = _require;
+  let tmp2 = panelX;
+  let obj = require("react");
+  const cResult = obj.c(26);
+  const tmp4 = noteInteraction();
+  panelX = tmp4.panelX;
+  const gestureState = tmp4.gestureState;
+  const lastInteractionAt = tmp4.lastInteractionAt;
+  const isPanelTouchActive = tmp4.isPanelTouchActive;
+  noteInteraction = tmp4.noteInteraction;
+  let obj2 = require("Link");
+  const isFocused = obj2.useIsFocused();
+  const obj3 = require("useDrawerState");
+  const drawerOpen = obj3.useDrawerOpen(arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [isPanelTouchActive];
+    class T {
+      constructor() {
+        return isPanelTouchActive.useReducedMotion;
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = T;
+    tmp7 = items;
+    tmp8 = T;
+  } else {
+    [tmp7, tmp8] = cResult;
+  }
+  const tmpResult = tmp(tmp2[12]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
+  const tmpResult4 = tmp(tmp2[13]);
+  const first = gestureState(tmpResult4.useGuildsRouteGuildAndChannelId(), 1)[0];
+  let tmp14 = arg0;
+  const tmpResult5 = tmp(tmp2[14]);
+  const tmp13 = !tmpResult5.useIsDismissibleContentDismissed_UNSAFE(tmp(tmp2[7]).DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX);
+  if (arg0) {
+    tmp14 = isFocused;
+  }
+  if (tmp14) {
+    tmp14 = null != first;
+  }
+  if (tmp14) {
+    tmp14 = first !== drawerOpen;
+  }
+  if (tmp14) {
+    tmp14 = !drawerOpen;
+  }
+  if (tmp14) {
+    tmp14 = !stateFromStores;
+  }
+  if (tmp14) {
+    tmp14 = tmp13;
+  }
+  let closure_7 = tmp14;
+  ref = lastInteractionAt.useRef(false);
+  const tmp11Result = gestureState(lastInteractionAt.useState(false), 2);
+  const first1 = tmp11Result[0];
+  closure_10 = tmp19;
+  const tmp20 = first1 && !tmp14;
+  if (tmp20) {
+    tmp11Result[1](false);
+  }
+  tmp(tmp2[15]);
+  if (first1) {
+    let tmp24;
+    if (tmp14) {
+      tmp24 = items;
+    }
+    const tmp11Result2 = gestureState(tmp23(tmp24, undefined, true), 2);
+    class T {
+      constructor() {
+        return isPanelTouchActive.useReducedMotion;
+      }
+    }
+    items = tmp27;
+    const first2 = tmp11Result2[0];
+    ref = obj7.useRef(null);
+    const ref3 = obj7.useRef(null);
+    __initData = obj7.useRef(false);
+    const ref5 = obj7.useRef(null);
+    if (cResult[2] !== arg1) {
+      class L {
+        constructor() {
+          tmp = closure_12;
+          if (null != closure_12.current) {
+            tmp2 = globalThis;
+            _clearTimeout = clearTimeout;
+            clearTimeoutResult = clearTimeout(tmp.current);
+            tmp.current = null;
+          }
+          closure_14.current = true;
+          set = closure_0.set;
+          obj = closure_0(closure_1[16]);
+          obj1 = { duration: 1500, easing: closure_9 };
+          result = set(obj.withTiming(40, obj1));
+          closure_13.current = setTimeout(() => { /* body not rendered: F143617 */ }, 2500);
+          return;
+        }
+      }
+      cResult[2] = arg1;
+      class T {
+        constructor() {
+          return isPanelTouchActive.useReducedMotion;
+        }
+      }
+    } else {
+      class L {
+        constructor() {
+          tmp = closure_12;
+          if (null != closure_12.current) {
+            tmp2 = globalThis;
+            _clearTimeout = clearTimeout;
+            clearTimeoutResult = clearTimeout(tmp.current);
+            tmp.current = null;
+          }
+          closure_14.current = true;
+          set = closure_0.set;
+          obj = closure_0(closure_1[16]);
+          obj1 = { duration: 1500, easing: closure_9 };
+          result = set(obj.withTiming(40, obj1));
+          closure_13.current = setTimeout(() => { /* body not rendered: F143617 */ }, 2500);
+          return;
+        }
+      }
+    }
+    const L = tmp29;
+    const tmp30 = first2 === tmp(tmp2[7]).DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX;
+    let closure_17 = tmp30;
+    if (cResult[4] === tmp30) {
+      class L {
+        constructor() {
+          tmp = closure_12;
+          if (null != closure_12.current) {
+            tmp2 = globalThis;
+            _clearTimeout = clearTimeout;
+            clearTimeoutResult = clearTimeout(tmp.current);
+            tmp.current = null;
+          }
+          closure_14.current = true;
+          set = closure_0.set;
+          obj = closure_0(closure_1[16]);
+          obj1 = { duration: 1500, easing: closure_9 };
+          result = set(obj.withTiming(40, obj1));
+          closure_13.current = setTimeout(() => { /* body not rendered: F143617 */ }, 2500);
+          return;
+        }
+      }
+    }
+    class V {
+      constructor() {
+        tmp = closure_17;
+        if (tmp) {
+          tmp2 = closure_14;
+          tmp = !closure_14.current;
+        }
+        if (tmp) {
+          tmp3 = closure_15;
+          tmp4 = closure_11;
+          closure_15.current = closure_11;
+          tmp5 = closure_16;
+          tmp6 = closure_16();
+        }
+        return;
+      }
+    }
+    const items1 = [tmp30, tmp29, tmp27];
+    cResult[4] = tmp30;
+    cResult[5] = tmp27;
+    cResult[6] = tmp29;
+    cResult[7] = V;
+    cResult[8] = items1;
+  }
+  tmp24 = closure_10;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let noteInteraction;
+  let ref4;
+  let ref5;
+  let tmp = arg0;
+  _require = arg1;
+  let tmp2 = noteInteraction();
   const panelX = tmp2.panelX;
   const gestureState = tmp2.gestureState;
   const lastInteractionAt = tmp2.lastInteractionAt;
   const isPanelTouchActive = tmp2.isPanelTouchActive;
   noteInteraction = tmp2.noteInteraction;
-  const isFocused = require("Link").useIsFocused();
+  const tmp4 = panelX;
   let obj = require("Link");
-  const drawerOpen = require("useDrawerState").useDrawerOpen(enablePeekHint);
-  const obj2 = require("useDrawerState");
-  items = [isPanelTouchActive];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => isPanelTouchActive.useReducedMotion);
-  const obj3 = require("initialize");
-  const first = gestureState(require("useGuildsRouteGuildId").useGuildsRouteGuildAndChannelId(), 1)[0];
+  const isFocused = obj.useIsFocused();
+  let obj2 = require("useDrawerState");
+  const drawerOpen = obj2.useDrawerOpen(arg0);
+  const items = [isPanelTouchActive];
+  const obj3 = require("get initialized");
+  const stateFromStores = obj3.useStateFromStores(items, () => isPanelTouchActive.useReducedMotion);
   const obj4 = require("useGuildsRouteGuildId");
+  const first = gestureState(obj4.useGuildsRouteGuildAndChannelId(), 1)[0];
   const obj5 = require("DismissibleContentUnsafeUtils");
-  if (enablePeekHint) {
+  const tmp10 = !obj5.useIsDismissibleContentDismissed_UNSAFE(require("dismissible_content").DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX);
+  if (arg0) {
     tmp = isFocused;
   }
   if (tmp) {
@@ -67,42 +257,46 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
   if (tmp) {
     tmp = tmp10;
   }
-  closure_7 = tmp;
-  lastInteractionAt.useRef(false);
+  let closure_7 = tmp;
+  ref = lastInteractionAt.useRef(false);
   const tmp8Result = gestureState(lastInteractionAt.useState(false), 2);
   const first1 = tmp8Result[0];
   closure_10 = tmp15;
-  let tmp16 = first1;
-  if (first1) {
-    tmp16 = !tmp;
-  }
+  const tmp16 = first1 && !tmp;
   if (tmp16) {
-    tmp15(false);
+    tmp8Result[1](false);
   }
   require("useSelectedDismissibleContent");
   if (first1) {
+    let tmp20;
     if (tmp) {
-      let tmp20 = current;
+      tmp20 = current;
     }
-    const tmp8Result2 = tmp8(tmp19(tmp20, undefined, true), 2);
-    current = tmp22;
-    __initData = obj6.useRef(null);
+    const tmp8Result2 = gestureState(tmp19(tmp20, undefined, true), 2);
+    current = tmp23;
+    const first2 = tmp8Result2[0];
+    ref2 = obj6.useRef(null);
+    const ref3 = obj6.useRef(null);
+    __initData = obj6.useRef(false);
     __initData2 = obj6.useRef(null);
-    obj6.useRef(false);
-    obj6.useRef(null);
-    const items1 = [sharedValue8];
+    const items1 = [arg1];
     const callback = obj6.useCallback(() => {
       if (null != ref2.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(tmp.current);
-        tmp.current = null;
+        clearTimeout(ref2.current);
+        ref2.current = null;
       }
-      closure_14.current = true;
-      let result = sharedValue8.set(timing.withTiming(40, { duration: 1500, easing }));
-      closure_13.current = setTimeout(() => {
+      ref4.current = true;
+      set = closure_0.set;
+      let obj = timing;
+      const obj2 = { duration: 1500, easing };
+      let result = set(obj.withTiming(40, obj2));
+      ref3.current = setTimeout(() => {
         ref3.current = null;
         ref4.current = false;
-        const result = sharedValue8.set(closure_0(panelX[15]).withSpring(0, closure_0(panelX[16]).HOME_DRAWER_FLING_PHYSICS));
+        set = closure_1_0.set;
+        const obj = closure_0(panelX[17]);
+        const result = set(obj.withSpring(0, closure_0(panelX[18]).HOME_DRAWER_FLING_PHYSICS));
         current = ref.current;
         if (current != null) {
           current(constants.AUTO_DISMISS);
@@ -110,62 +304,68 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
         closure_1_10(false);
       }, 2500);
     }, items1);
-    const tmp25 = tmp8Result2[0] === tmp3(tmp4[7]).DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX;
-    closure_17 = tmp25;
-    const items2 = [tmp25, callback, tmp8Result2[1]];
+    const tmp26 = first2 === require("dismissible_content").DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX;
+    let closure_17 = tmp26;
+    const items2 = [tmp26, callback, tmp8Result2[1]];
     const effect = obj6.useEffect(() => {
-      let tmp = closure_17;
-      if (closure_17) {
-        tmp = !ref4.current;
-      }
+      const tmp = closure_17 && !ref4.current;
       if (tmp) {
-        closure_15.current = current;
+        ref5.current = current;
         callback();
       }
     }, items2);
-    const items3 = [sharedValue8];
+    const items3 = [arg1];
     const callback1 = obj6.useCallback(() => {
       if (null != ref2.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(tmp.current);
-        tmp.current = null;
+        clearTimeout(ref2.current);
+        ref2.current = null;
       }
       if (null != ref3.current) {
         const _clearTimeout2 = clearTimeout;
-        clearTimeout(tmp4.current);
-        tmp4.current = null;
+        clearTimeout(ref3.current);
+        ref3.current = null;
       }
       if (ref4.current) {
         tmp7.current = false;
-        const result = sharedValue8.set(spring.withSpring(0, useHomeDrawerGesture.HOME_DRAWER_FLING_PHYSICS));
+        set = closure_0.set;
+        const obj = spring;
+        const result = set(obj.withSpring(0, useHomeDrawerGesture.HOME_DRAWER_FLING_PHYSICS));
       }
     }, items3);
     const items4 = [tmp, first1, noteInteraction, lastInteractionAt, isPanelTouchActive];
     const effect1 = obj6.useEffect(() => {
-      if (closure_7) {
-        if (!first1) {
+      let tmp = closure_7;
+      if (tmp) {
+        let tmp2 = first1;
+        if (!tmp2) {
           if (!ref.current) {
             noteInteraction();
-            const _setTimeout = setTimeout;
+            let tmp6 = ref;
+            let _setTimeout = setTimeout;
             function checkIdle() {
-              closure_12.current = null;
+              ref2.current = null;
               let diff = c8 - (Date.now() - lastInteractionAt.current);
+              const tmp = ref2;
+              const tmp2 = c8;
               if (!isPanelTouchActive.get()) {
                 if (0 >= diff) {
                   closure_10(true);
                 }
               }
+              const _setTimeout = setTimeout;
+              const tmp6 = checkIdle;
               if (0 >= diff) {
-                diff = c8;
+                diff = tmp2;
               }
-              closure_12.current = setTimeout(checkIdle, diff);
+              tmp.current = _setTimeout(tmp6, diff);
             }
             ref.current = setTimeout(checkIdle, ref);
             return () => {
               if (null != ref.current) {
                 const _clearTimeout = clearTimeout;
-                clearTimeout(tmp.current);
-                tmp.current = null;
+                clearTimeout(ref.current);
+                ref.current = null;
               }
             };
           }
@@ -174,17 +374,15 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
     }, items4);
     const items5 = [drawerOpen, callback1];
     const effect2 = obj6.useEffect(() => {
-      if (drawerOpen) {
-        closure_8.current = true;
+      const tmp = drawerOpen;
+      if (tmp) {
+        ref.current = true;
         callback1();
       }
     }, items5);
     const items6 = [tmp, callback1];
     const effect3 = obj6.useEffect(() => {
-      current = !closure_7;
-      if (!closure_7) {
-        current = ref4.current;
-      }
+      current = !closure_7 && ref4.current;
       if (current) {
         callback1();
         const current2 = ref5.current;
@@ -202,49 +400,35 @@ export const useHomeDrawerPeekHint = function useHomeDrawerPeekHint(enablePeekHi
       }
       closure_10(false);
     }, items7);
+    const tmp3Result2 = require("ReanimatedRexport");
     class V {
       constructor() {
-        active = gestureState.get().active;
-        if (active) {
-          tmp = panelX;
-          num = 8;
-          active = panelX.get() > 8;
-        }
+        const active = gestureState.get().active && panelX.get() > 8;
         return active;
       }
     }
     const obj7 = { gestureState, panelX, PEEK_HINT_DRAWER_DRAG_THRESHOLD: 8 };
     V.__closure = obj7;
-    V.__workletHash = 15765003051494;
+    V.__workletHash = 13898630050852;
     V.__initData = __initData;
     class Q {
       constructor(arg0, arg1) {
-        tmp = closure_17;
-        if (closure_17) {
-          tmp2 = null;
-          tmp = null != sharedValue8;
-        }
+        const tmp = closure_17 && null != arg1 && arg0 && !arg1;
         if (tmp) {
-          tmp = enablePeekHint;
+          const obj = ReanimatedRexport;
+          obj.runOnJS(callback2)();
         }
-        if (tmp) {
-          tmp = !sharedValue8;
-        }
-        if (tmp) {
-          tmp3 = closure_0;
-          tmp4 = closure_1;
-          obj = closure_0(closure_1[6]);
-          tmp5 = closure_19;
-          tmp6 = obj.runOnJS(closure_19)();
-        }
-        return;
       }
     }
-    const obj8 = { isPeekGranted: tmp25, runOnJS: tmp3(tmp4[6]).runOnJS, handleDrawerDragged: callback2 };
-    Q.__closure = obj8;
-    Q.__workletHash = 10054961085184;
+    const useAnimatedReaction = tmp3Result2.useAnimatedReaction;
+    Q.__closure = { isPeekGranted: tmp26, runOnJS: require("ReanimatedRexport").runOnJS, handleDrawerDragged: callback2 };
+    Q.__workletHash = 10590232595782;
     Q.__initData = __initData2;
-    const animatedReaction = tmp3(tmp4[6]).useAnimatedReaction(V, Q);
+    const obj8 = { isPeekGranted: tmp26, runOnJS: require("ReanimatedRexport").runOnJS, handleDrawerDragged: callback2 };
+    const animatedReaction = useAnimatedReaction(V, Q);
   }
-  tmp20 = closure_10;
-};
+});
+let result = size.fileFinishedImporting("modules/home_drawer/native/useHomeDrawerPeekHint.tsx");
+
+export const PEEK_HINT_DISTANCE = 40;
+export const useHomeDrawerPeekHint = tmp2;

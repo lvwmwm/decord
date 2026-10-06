@@ -1,31 +1,78 @@
-// Module ID: 6466
-// Function ID: 6467
+// Module ID: 12105
+// Function ID: 12106
 // Name: HeartIllocon
-// Dependencies: [21, 5836, 6467, 2]
-// Exports: HeartIllocon
+// Dependencies: [21, 558, 576, 12106, 5896, 2]
 
-// Module 6466 (HeartIllocon)
-import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import _modDef6467 from "module_6467" /* 6467 */;
+// Module 12105 (HeartIllocon)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import _modDef12106 from "module_12106" /* 12106 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/HeartIllocon.native.tsx");
-
-export const HeartIllocon = function HeartIllocon(size) {
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let accessible;
+  let first;
+  let resizeMode;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(8);
+  ({ accessible, accessibilityLabel, resizeMode, size } = arg0);
+  let num = 64;
+  if (undefined !== size) {
+    num = size;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { uri: _modDef12106 };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== num) {
+    const size1 = { width: num, height: num };
+    const items = [size1];
+    cResult[1] = num;
+    cResult[2] = items;
+    tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] === accessibilityLabel) {
+    if (cResult[4] === accessible) {
+      if (cResult[5] === resizeMode) {
+        let tmp6;
+        if (cResult[6] === tmp5) {
+          tmp6 = cResult[7];
+        }
+        return tmp6;
+      }
+    }
+  }
+  const tmp7 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp5, accessible, accessibilityLabel, resizeMode });
+  cResult[3] = accessibilityLabel;
+  cResult[4] = accessible;
+  cResult[5] = resizeMode;
+  cResult[6] = tmp5;
+  cResult[7] = tmp7;
+  tmp6 = tmp7;
+}) : ((size) => {
+  let accessibilityLabel;
+  let accessible;
+  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
-  const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6467 };
-  obj.source = obj2;
+  const obj2 = { uri: _modDef12106 };
+  FastImageDefault;
   const items = [{ width: num, height: num }];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
-};
+  return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
+});
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/HeartIllocon.native.tsx");
+
+export const HeartIllocon = tmp2;

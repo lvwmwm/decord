@@ -1,156 +1,934 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 11062
+// Function ID: 11063
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 4788, 576, 4722, 8427, 8222, 8962, 11977, 1978, 11978, 12, 11979, 1115, 11981, 9026, 5337, 10407, 5836, 1477, 9126, 4784, 3000, 8444, 2]
-// Exports: ForwardPreview
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4769, 7587, 7378, 8109, 11063, 5082, 11064, 12, 1127, 11066, 8173, 5402, 10140, 1484, 5896, 8273, 4833, 11068, 2]
 
-// Module 11976 (ForwardPreview)
-import nativeDefault from "native" /* 576 */;
-import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1477 */;
-import _modDef3000 from "module_3000" /* 3000 */;
-import useThemeDefault from "useTheme" /* 4722 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8427 */;
-import ChatItemDefault from "ChatItem" /* 8962 */;
-import ClipViewDefault from "ClipView" /* 9126 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11977 */;
-import MosaicMediaType from "MosaicMediaType" /* 11979 */;
-import noop from "module_19" /* 19 */;
+// Module 11062 (ForwardPreview)
+import _mod12 from "module_12" /* 12 */;
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl5 from "intl" /* 1127 */;
+import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1484 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5082 */;
+import FastImageDefault from "FastImage" /* 5896 */;
+import RowGeneratorDefault from "RowGenerator" /* 7378 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7587 */;
+import ChatItemDefault from "ChatItem" /* 8109 */;
+import CirclePlayIcon2 from "CirclePlayIcon" /* 8173 */;
+import ClipView from "ClipView" /* 8273 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11063 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11068 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-function MessagePreview(content) {
-  ({ message, attachmentCount } = content);
-  importDefault = undefined;
+const require = globalThis.__r;
+const ClipViewDefault = ClipView;
+let importDefault;
+
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let size;
+let size1;
+let size2;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let c7 = 56;
+let createStyles = createStyles_mod;
+let obj = { forwardPreview: obj2, quote: size, contentWrapper: { flexDirection: "column", flex: 1, paddingVertical: 4, gap: 6 }, attachmentPreview: size1, attachmentPreviewVideo: obj3, videoThumbnail: { position: "absolute", top: 0, left: 0, opacity: 0.6 }, playIcon: { position: "absolute", top: 0, left: 0, margin: 16, zIndex: 100 }, attachmentPreviewOverflow: { position: "relative" }, overflowCount: size2, attachmentRow: { flexDirection: "row", alignItems: "center", gap: 6 }, largeIcon: { width: 20, height: 20 } };
+obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" };
+createStyles = createStyles.createStyles;
+size = { width: 4, height: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: 2 };
+size1 = { position: "relative", width: 56, height: 56, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+obj3 = { backgroundColor: nativeDefault.colors.BLACK };
+size2 = { position: "absolute", bottom: 0, right: 0, alignItems: "center", justifyContent: "center", textAlign: "center", width: 24, height: 24, lineHeight: 24, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+let closure_8 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+  let TEXT_SUBTLE;
+  let attachmentCount;
+  let contentMessage;
+  let message;
+  let seeMoreLabelColor;
+  let obj = attachmentCount(576);
+  const cResult = obj.c(13);
+  const tmp = attachmentCount;
+  ({ message, contentMessage, attachmentCount } = arg0);
+  const tmp5 = useThemeDefault();
   if (attachmentCount > 0) {
-    let TEXT_SUBTLE = tmp(576).colors.TEXT_DEFAULT;
+    TEXT_SUBTLE = tmp4(588).colors.TEXT_DEFAULT;
   } else {
-    TEXT_SUBTLE = tmp(576).colors.TEXT_SUBTLE;
+    TEXT_SUBTLE = tmp4(588).colors.TEXT_SUBTLE;
   }
+  if (cResult[0] === TEXT_SUBTLE) {
+    let tmp6;
+    if (cResult[1] === tmp5) {
+      tmp6 = cResult[2];
+    }
+    importDefault = tmp6;
+    if (cResult[3] === attachmentCount) {
+      let tmp8;
+      let tmp10;
+      if (cResult[4] === tmp6.seeMoreLabelColor) {
+        tmp8 = cResult[5];
+      }
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const self = this;
+        const self2 = this;
+        const obj3 = new RowGeneratorDefault();
+        obj3.setOptions({ renderEmbeds: false, renderReactions: false, inlineEmbedMedia: false, inlineAttachmentMedia: false, animateEmoji: true, gifAutoPlay: false, timestampHourCycle: 0, renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderThreadEmbeds: false, renderReplies: false, renderCommunicationDisabled: false, renderAttachments: false, renderExecutedCommands: false, renderPolls: false, renderSharedClientTheme: false, renderForumPostActions: false, ignoreMentioned: false, ignoreEmbedDescriptionCache: false, forceHideSimpleEmbedContent: false, enableSwipeActions: false, useAlternateEmbedColors: false });
+        cResult[6] = obj3;
+        tmp10 = obj3;
+      } else {
+        tmp10 = cResult[6];
+      }
+      if (cResult[7] === contentMessage.content) {
+        let tmp13;
+        if (cResult[8] === message) {
+          tmp13 = cResult[9];
+        }
+        if (cResult[10] === tmp8) {
+          let tmp15;
+          if (cResult[11] === tmp13) {
+            tmp15 = cResult[12];
+          }
+          return tmp15;
+        }
+        const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: tmp8, message: tmp13, rowGenerator: tmp10 };
+        const tmp17 = closure_5(ChatItemDefault, obj2);
+        cResult[10] = tmp8;
+        cResult[11] = tmp13;
+        cResult[12] = tmp17;
+        tmp15 = tmp17;
+      }
+      const obj4 = { messageSnapshots: [], content: contentMessage.content };
+      const mergeResult = message.merge(obj4);
+      cResult[7] = contentMessage.content;
+      cResult[8] = message;
+      cResult[9] = mergeResult;
+      tmp13 = mergeResult;
+    }
+    const fn = function v(message) {
+      message.contextType = RowGeneratorTypes.MessageContextType.SEARCH;
+      let num = 2;
+      if (attachmentCount > 0) {
+        num = 1;
+      }
+      const obj = { numberOfLines: num, expandable: false, seeMoreLabel: "...", seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
+      message.truncation = obj;
+      message.message.edited = "";
+    };
+    let num = 3;
+    cResult[3] = attachmentCount;
+    cResult[4] = tmp6.seeMoreLabelColor;
+    cResult[5] = fn;
+    tmp8 = fn;
+  }
+  const tmpResult = tmp(4837);
+  const tmp7 = tmpResult.createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp5);
+  cResult[0] = TEXT_SUBTLE;
+  cResult[1] = tmp5;
+  cResult[2] = tmp7;
+  tmp6 = tmp7;
+}) : ((contentMessage) => {
+  let TEXT_SUBTLE;
+  let attachmentCount;
+  let closure_1;
+  let message;
+  let obj3;
+  ({ message, attachmentCount } = contentMessage);
+  importDefault = undefined;
+  contentMessage = contentMessage.contentMessage;
   const tmp3 = useThemeDefault();
-  const tmp4 = attachmentCount(4788).createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp3);
+  if (attachmentCount > 0) {
+    TEXT_SUBTLE = tmp(588).colors.TEXT_DEFAULT;
+  } else {
+    TEXT_SUBTLE = tmp(588).colors.TEXT_SUBTLE;
+  }
+  let obj = attachmentCount(4837);
+  const tmp4 = obj.createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp3);
   importDefault = tmp4;
   const items = [tmp4.seeMoreLabelColor, attachmentCount];
-  const callback = noop.useCallback((message) => {
+  const callback = react.useCallback((message) => {
     message.contextType = RowGeneratorTypes.MessageContextType.SEARCH;
     let num = 2;
     if (attachmentCount > 0) {
       num = 1;
     }
-    message.truncation = { numberOfLines: num, expandable: false, seeMoreLabel: "...", seeMoreLabelColor: closure_1.seeMoreLabelColor };
+    const obj = { numberOfLines: num, expandable: false, seeMoreLabel: "...", seeMoreLabelColor: closure_1.seeMoreLabelColor };
+    message.truncation = obj;
     message.message.edited = "";
   }, items);
-  const memo = noop.useMemo(() => {
-    const obj = new closure_1(dependencyMap[7])();
+  const memo = react.useMemo(() => {
+    const obj = new closure_1(dependencyMap[9])();
     obj.setOptions({ renderEmbeds: false, renderReactions: false, inlineEmbedMedia: false, inlineAttachmentMedia: false, animateEmoji: true, gifAutoPlay: false, timestampHourCycle: 0, renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderThreadEmbeds: false, renderReplies: false, renderCommunicationDisabled: false, renderAttachments: false, renderExecutedCommands: false, renderPolls: false, renderSharedClientTheme: false, renderForumPostActions: false, ignoreMentioned: false, ignoreEmbedDescriptionCache: false, forceHideSimpleEmbedContent: false, enableSwipeActions: false, useAlternateEmbedColors: false });
     return obj;
   }, []);
-  const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: callback, message: null, rowGenerator: null };
-  let obj = attachmentCount(4788);
-  const obj3 = { messageSnapshots: [], content: content.contentMessage.content };
-  obj2.message = message.merge(obj3);
-  obj2.rowGenerator = memo;
-  return closure_5(ChatItemDefault, obj2);
-}
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let c7 = 56;
-const createStyles = fn(4788);
-let obj2 = { forwardPreview: { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" }, quote: null, contentWrapper: null, attachmentPreview: null, attachmentPreviewVideo: null, videoThumbnail: null, playIcon: null, attachmentPreviewOverflow: null, overflowCount: null, attachmentRow: null, largeIcon: null };
-let size = { width: 4, height: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: 2 };
-obj2.quote = size;
-obj2.contentWrapper = { flexDirection: "column", flex: 1, paddingVertical: 4, gap: 6 };
-let size1 = { position: "relative", width: 56, height: 56, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj2.attachmentPreview = size1;
-let obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" };
-obj2.attachmentPreviewVideo = { backgroundColor: nativeDefault.colors.BLACK };
-obj2.videoThumbnail = { position: "absolute", top: 0, left: 0, opacity: 0.6 };
-obj2.playIcon = { position: "absolute", top: 0, left: 0, margin: 16, zIndex: 100 };
-obj2.attachmentPreviewOverflow = { position: "relative" };
-let size2 = { position: "absolute", bottom: 0, right: 0, alignItems: "center", justifyContent: "center", textAlign: "center", width: 24, height: 24, lineHeight: 24, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj2.overflowCount = size2;
-obj2.attachmentRow = { flexDirection: "row", alignItems: "center", gap: 6 };
-obj2.largeIcon = { width: 20, height: 20 };
-let closure_8 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
-
-export const ForwardPreview = function ForwardPreview(message) {
+  const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: callback, message: message.merge(obj3), rowGenerator: memo };
+  obj3 = { messageSnapshots: [], content: contentMessage.content };
+  const tmpResult = ChatItemDefault;
+  return closure_5(tmpResult, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let CirclePlayIcon;
+  let attachments;
+  let channel;
+  let contentMessage;
+  let embeds;
+  let formatToPlainStringResult;
+  let forwardOptions;
+  let hasContent;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let items5;
+  let items6;
+  let message;
+  let obj17;
+  let obj19;
+  let obj4;
+  let tmpResult6;
+  let obj = react2;
+  const cResult = obj.c(106);
+  ({ message, channel, forwardOptions } = arg0);
+  const tmp4 = closure_8();
+  if (cResult[0] === channel) {
+    if (cResult[1] === forwardOptions) {
+      let tmp5;
+      let tmp19;
+      let tmp20;
+      let tmp21;
+      if (cResult[2] === message) {
+        tmp5 = cResult[3];
+      }
+      const tmpResult = ForwardPreviewUtils;
+      const forwardPreviewContent = tmpResult.useForwardPreviewContent(tmp5);
+      ({ attachments, embeds, hasContent, contentMessage } = forwardPreviewContent);
+      if (cResult[4] === attachments) {
+        if (cResult[5] === contentMessage) {
+          if (cResult[6] === embeds) {
+            if (cResult[7] === tmp4.attachmentPreview) {
+              if (cResult[8] === tmp4.attachmentPreviewOverflow) {
+                if (cResult[9] === tmp4.attachmentPreviewVideo) {
+                  if (cResult[10] === tmp4.contentWrapper) {
+                    if (cResult[11] === tmp4.forwardPreview) {
+                      if (cResult[12] === tmp4.overflowCount) {
+                        if (cResult[13] === tmp4.playIcon) {
+                          if (cResult[14] === tmp4.quote) {
+                            let tmp7;
+                            let tmp8;
+                            let tmp9;
+                            let tmp10;
+                            let tmp11;
+                            let tmp12;
+                            let tmp13;
+                            let tmp14;
+                            let tmp15;
+                            let tmp16;
+                            let tmp17;
+                            if (cResult[15] === tmp4.videoThumbnail) {
+                              tmp7 = cResult[16];
+                              tmp8 = cResult[17];
+                              tmp9 = cResult[18];
+                              tmp10 = cResult[19];
+                              tmp11 = cResult[20];
+                              tmp12 = cResult[21];
+                              tmp13 = cResult[22];
+                              tmp14 = cResult[23];
+                              tmp15 = cResult[24];
+                              tmp16 = cResult[25];
+                              tmp17 = cResult[26];
+                            }
+                            if (cResult[78] === tmp10) {
+                              if (cResult[79] === contentMessage) {
+                                if (cResult[80] === hasContent) {
+                                  let tmp99;
+                                  if (cResult[81] === message) {
+                                    tmp99 = cResult[82];
+                                  }
+                                  if (cResult[83] === tmp7) {
+                                    if (cResult[84] === tmp10) {
+                                      if (cResult[85] === tmp11) {
+                                        if (cResult[86] === hasContent) {
+                                          if (cResult[87] === tmp4.attachmentRow) {
+                                            let tmp103;
+                                            if (cResult[88] === tmp4.largeIcon) {
+                                              tmp103 = cResult[89];
+                                            }
+                                            if (cResult[90] === tmp8) {
+                                              if (cResult[91] === tmp14) {
+                                                if (cResult[92] === tmp15) {
+                                                  if (cResult[93] === tmp99) {
+                                                    let tmp112;
+                                                    if (cResult[94] === tmp103) {
+                                                      tmp112 = cResult[95];
+                                                    }
+                                                    if (cResult[96] === tmp13) {
+                                                      let tmp115;
+                                                      if (cResult[97] === tmp4.attachmentPreview) {
+                                                        tmp115 = cResult[98];
+                                                      }
+                                                      if (cResult[99] === tmp9) {
+                                                        if (cResult[100] === tmp12) {
+                                                          if (cResult[101] === tmp16) {
+                                                            if (cResult[102] === tmp17) {
+                                                              if (cResult[103] === tmp112) {
+                                                                let tmp121;
+                                                                if (cResult[104] === tmp115) {
+                                                                  tmp121 = cResult[105];
+                                                                }
+                                                                return tmp121;
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                      const obj2 = { style: tmp16, children: items };
+                                                      items = [tmp17, tmp112, tmp12, tmp115];
+                                                      const tmp123 = metroRequire(tmp9, obj2);
+                                                      cResult[99] = tmp9;
+                                                      cResult[100] = tmp12;
+                                                      cResult[101] = tmp16;
+                                                      cResult[102] = tmp17;
+                                                      cResult[103] = tmp112;
+                                                      cResult[104] = tmp115;
+                                                      cResult[105] = tmp123;
+                                                      tmp121 = tmp123;
+                                                    }
+                                                    let tmp117 = null != tmp13;
+                                                    if (tmp117) {
+                                                      const obj3 = { style: tmp4.attachmentPreview, children: hasOwnProperty(CheckpointForwardPreviewDefault, obj4) };
+                                                      obj4 = { checkpointData: tmp13 };
+                                                      tmp117 = hasOwnProperty(View, obj3);
+                                                    }
+                                                    cResult[96] = tmp13;
+                                                    cResult[97] = tmp4.attachmentPreview;
+                                                    cResult[98] = tmp117;
+                                                    tmp115 = tmp117;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            const obj5 = { style: tmp14, children: items1 };
+                                            items1 = [tmp15, tmp99, tmp103];
+                                            const tmp114 = metroRequire(tmp8, obj5);
+                                            cResult[90] = tmp8;
+                                            cResult[91] = tmp14;
+                                            cResult[92] = tmp15;
+                                            cResult[93] = tmp99;
+                                            cResult[94] = tmp103;
+                                            cResult[95] = tmp114;
+                                            tmp112 = tmp114;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  let tmp105Result = tmp10 > 0;
+                                  if (tmp105Result) {
+                                    let tmp109Result = null != tmp7;
+                                    const obj7 = { style: tmp4.attachmentRow, children: items2 };
+                                    const tmp105 = metroRequire;
+                                    const tmp106 = View;
+                                    if (tmp109Result) {
+                                      let str3 = "custom";
+                                      const tmp109 = hasOwnProperty;
+                                      if (hasContent) {
+                                        str3 = "sm";
+                                      }
+                                      const obj9 = { size: str3, style: !hasContent && tmp4.largeIcon, color: "text-muted" };
+                                      tmp109Result = tmp109(tmp7, obj9);
+                                    }
+                                    items2 = [tmp109Result, ];
+                                    let tmp111Result = null != tmp11;
+                                    if (tmp111Result) {
+                                      let str4 = "text-md/medium";
+                                      const Text2 = tmp(4833).Text;
+                                      const tmp111 = hasOwnProperty;
+                                      if (hasContent) {
+                                        str4 = "text-sm/medium";
+                                      }
+                                      const obj10 = { variant: str4, color: "text-muted", children: tmp11 };
+                                      tmp111Result = tmp111(Text2, obj10);
+                                    }
+                                    items2[1] = tmp111Result;
+                                    tmp105Result = tmp105(tmp106, obj7);
+                                  }
+                                  cResult[83] = tmp7;
+                                  cResult[84] = tmp10;
+                                  cResult[85] = tmp11;
+                                  cResult[86] = hasContent;
+                                  cResult[87] = tmp4.attachmentRow;
+                                  cResult[88] = tmp4.largeIcon;
+                                  cResult[89] = tmp105Result;
+                                  tmp103 = tmp105Result;
+                                }
+                              }
+                            }
+                            let tmp100 = hasContent;
+                            if (tmp100) {
+                              const obj11 = { message, contentMessage, attachmentCount: tmp10 };
+                              tmp100 = hasOwnProperty(closure_9, obj11);
+                            }
+                            cResult[78] = tmp10;
+                            cResult[79] = contentMessage;
+                            cResult[80] = hasContent;
+                            cResult[81] = message;
+                            cResult[82] = tmp100;
+                            tmp99 = tmp100;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      const tmpResult4 = checkpoint_CheckpointMessageComponentUtils;
+      const checkpointDataFromMessage = tmpResult4.getCheckpointDataFromMessage(contentMessage);
+      if (attachments.length > 0) {
+        let tmp26;
+        let tmp23;
+        let tmp24;
+        let tmp22;
+        if (cResult[27] === attachments.length) {
+          if (cResult[28] === attachments) {
+            tmp22 = cResult[29];
+            tmp23 = cResult[30];
+            tmp24 = cResult[31];
+          }
+          if (tmp22 > 0) {
+            if (attachments.length === tmp22) {
+              if (cResult[35] === tmp4.attachmentPreview) {
+                let tmp57;
+                let tmp58;
+                let tmp65;
+                if (cResult[36] === tmp4.attachmentPreviewVideo) {
+                  tmp57 = cResult[37];
+                }
+                const videoThumbnail = tmp4.videoThumbnail;
+                if (cResult[38] !== attachments[0].proxy_url) {
+                  const obj16 = utils_ImageUtilsDefault;
+                  const mobileOptimizedSrc = obj16.getMobileOptimizedSrc(attachments[0].proxy_url, v56, v56, "png");
+                  cResult[38] = attachments[0].proxy_url;
+                  cResult[39] = mobileOptimizedSrc;
+                  tmp58 = mobileOptimizedSrc;
+                } else {
+                  tmp58 = cResult[39];
+                }
+                if (cResult[40] !== tmp58) {
+                  const obj13 = { uri: tmp58 };
+                  cResult[40] = tmp58;
+                  cResult[41] = obj13;
+                  tmp65 = obj13;
+                } else {
+                  tmp65 = cResult[41];
+                }
+                if (cResult[42] === tmp4.videoThumbnail) {
+                  let tmp66;
+                  let tmp71;
+                  if (cResult[43] === tmp65) {
+                    tmp66 = cResult[44];
+                  }
+                  if (cResult[45] !== tmp4.playIcon) {
+                    const obj14 = { style: tmp4.playIcon, size: "md", color: "white" };
+                    const tmp73 = hasOwnProperty(CirclePlayIcon2.CirclePlayIcon, obj14);
+                    cResult[45] = tmp4.playIcon;
+                    cResult[46] = tmp73;
+                    tmp71 = tmp73;
+                  } else {
+                    tmp71 = cResult[46];
+                  }
+                  if (cResult[47] === tmp66) {
+                    if (cResult[48] === tmp71) {
+                      let tmp74;
+                      if (cResult[49] === tmp57) {
+                        tmp74 = cResult[50];
+                      }
+                      tmp19 = tmp74;
+                      tmp20 = tmp23;
+                      tmp21 = tmp24;
+                    }
+                  }
+                  const obj15 = { style: tmp57, children: items3 };
+                  items3 = [tmp66, tmp71];
+                  const tmp77 = metroRequire(View, obj15);
+                  cResult[47] = tmp66;
+                  cResult[48] = tmp71;
+                  cResult[49] = tmp57;
+                  cResult[50] = tmp77;
+                  tmp74 = tmp77;
+                }
+                size = { style: videoThumbnail, source: tmp65, width: v56, height: v56 };
+                const tmp70 = hasOwnProperty(FastImageDefault, size);
+                cResult[42] = tmp4.videoThumbnail;
+                cResult[43] = tmp65;
+                cResult[44] = tmp70;
+                tmp66 = tmp70;
+              }
+              const items4 = [, ];
+              ({ attachmentPreview: arr[0], attachmentPreviewVideo: arr[1] } = tmp4);
+              cResult[35] = tmp4.attachmentPreview;
+              cResult[36] = tmp4.attachmentPreviewVideo;
+              cResult[37] = items4;
+              tmp57 = items4;
+            }
+          }
+          if (attachments.length > 0) {
+            let tmp44;
+            let tmp48;
+            const attachmentPreview2 = tmp4.attachmentPreview;
+            if (cResult[51] !== attachments[0].proxy_url) {
+              const obj12 = utils_ImageUtilsDefault;
+              const mobileOptimizedSrc1 = obj12.getMobileOptimizedSrc(attachments[0].proxy_url, v56, v56);
+              cResult[51] = attachments[0].proxy_url;
+              cResult[52] = mobileOptimizedSrc1;
+              tmp44 = mobileOptimizedSrc1;
+            } else {
+              tmp44 = cResult[52];
+            }
+            if (cResult[53] !== tmp44) {
+              const size1 = { source: obj17, width: v56, height: v56 };
+              obj17 = { uri: tmp44 };
+              const tmp52 = hasOwnProperty(FastImageDefault, size1);
+              cResult[53] = tmp44;
+              cResult[54] = tmp52;
+              tmp48 = tmp52;
+            } else {
+              tmp48 = cResult[54];
+            }
+            if (cResult[55] === tmp4.attachmentPreview) {
+              let tmp53;
+              if (cResult[56] === tmp48) {
+                tmp53 = cResult[57];
+              }
+              tmp19 = tmp53;
+              tmp20 = tmp23;
+              tmp21 = tmp24;
+            }
+            const obj18 = { style: attachmentPreview2, children: tmp48 };
+            const tmp56 = hasOwnProperty(View, obj18);
+            cResult[55] = tmp4.attachmentPreview;
+            cResult[56] = tmp48;
+            cResult[57] = tmp56;
+            tmp53 = tmp56;
+          } else {
+            const first = embeds[0];
+            let proxyURL;
+            if (first != null) {
+              const thumbnail = first.thumbnail;
+              if (thumbnail != null) {
+                proxyURL = thumbnail.proxyURL;
+              }
+            }
+            tmp19 = null;
+            tmp20 = tmp23;
+            tmp21 = tmp24;
+            if (null != proxyURL) {
+              let tmp31;
+              let tmp35;
+              const attachmentPreview = tmp4.attachmentPreview;
+              if (cResult[58] !== embeds[0].thumbnail.proxyURL) {
+                const obj8 = utils_ImageUtilsDefault;
+                const mobileOptimizedSrc2 = obj8.getMobileOptimizedSrc(embeds[0].thumbnail.proxyURL, v56, v56);
+                cResult[58] = embeds[0].thumbnail.proxyURL;
+                cResult[59] = mobileOptimizedSrc2;
+                tmp31 = mobileOptimizedSrc2;
+              } else {
+                tmp31 = cResult[59];
+              }
+              if (cResult[60] !== tmp31) {
+                const size2 = { source: obj19, width: v56, height: v56 };
+                obj19 = { uri: tmp31 };
+                const tmp39 = hasOwnProperty(FastImageDefault, size2);
+                cResult[60] = tmp31;
+                cResult[61] = tmp39;
+                tmp35 = tmp39;
+              } else {
+                tmp35 = cResult[61];
+              }
+              if (cResult[62] === tmp4.attachmentPreview) {
+                let tmp40;
+                if (cResult[63] === tmp35) {
+                  tmp40 = cResult[64];
+                }
+                tmp19 = tmp40;
+                tmp20 = tmp23;
+                tmp21 = tmp24;
+              }
+              const obj20 = { style: attachmentPreview, children: tmp35 };
+              const tmp43 = hasOwnProperty(View, obj20);
+              cResult[62] = tmp4.attachmentPreview;
+              cResult[63] = tmp35;
+              cResult[64] = tmp43;
+              tmp40 = tmp43;
+            }
+          }
+        }
+        const _Symbol = Symbol;
+        if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
+          class G {
+            constructor(arg0) {
+              obj = closure_1_0(closure_1_2[13]);
+              return obj.getMosaicMediaTypeForAttachment(arg0, true);
+            }
+          }
+          cResult[32] = G;
+          tmp26 = G;
+        } else {
+          class G {
+            constructor(arg0) {
+              obj = closure_1_0(closure_1_2[13]);
+              return obj.getMosaicMediaTypeForAttachment(arg0, true);
+            }
+          }
+        }
+        const tmpResult5 = _mod12;
+        const countByResult = tmpResult5.countBy(attachments, tmp26);
+        const IMAGE = countByResult.IMAGE;
+        if (IMAGE == null) {
+          class G {
+            constructor(arg0) {
+              obj = closure_1_0(closure_1_2[13]);
+              return obj.getMosaicMediaTypeForAttachment(arg0, true);
+            }
+          }
+        }
+        const VIDEO = countByResult.VIDEO;
+        if (VIDEO == null) {
+          class G {
+            constructor(arg0) {
+              obj = closure_1_0(closure_1_2[13]);
+              return obj.getMosaicMediaTypeForAttachment(arg0, true);
+            }
+          }
+        }
+        if (IMAGE > 0) {
+          class G {
+            constructor(arg0) {
+              obj = closure_1_0(closure_1_2[13]);
+              return obj.getMosaicMediaTypeForAttachment(arg0, true);
+            }
+          }
+          cResult[27] = attachments.length;
+          cResult[28] = attachments;
+          cResult[29] = VIDEO;
+          cResult[30] = formatToPlainStringResult;
+          cResult[31] = CirclePlayIcon;
+          tmp23 = formatToPlainStringResult;
+          tmp24 = CirclePlayIcon;
+          tmp22 = VIDEO;
+        }
+        if (VIDEO > 0) {
+          class G {
+            constructor(arg0) {
+              obj = closure_1_0(closure_1_2[13]);
+              return obj.getMosaicMediaTypeForAttachment(arg0, true);
+            }
+          }
+          const obj21 = { count: VIDEO };
+          formatToPlainStringResult = obj6.formatToPlainString(intl5.t.SJ6pPX, obj21);
+          CirclePlayIcon = tmp(8173).CirclePlayIcon;
+        } else {
+          class G {
+            constructor(arg0) {
+              obj = closure_1_0(closure_1_2[13]);
+              return obj.getMosaicMediaTypeForAttachment(arg0, true);
+            }
+          }
+        }
+      } else {
+        class G {
+          constructor(arg0) {
+            obj = closure_1_0(closure_1_2[13]);
+            return obj.getMosaicMediaTypeForAttachment(arg0, true);
+          }
+        }
+        tmp20 = null;
+        tmp21 = null;
+      }
+      let tmp78 = tmp19;
+      if (attachments.length > 1) {
+        class G {
+          constructor(arg0) {
+            obj = closure_1_0(closure_1_2[13]);
+            return obj.getMosaicMediaTypeForAttachment(arg0, true);
+          }
+        }
+        tmp78 = tmp19;
+        if (null != tmp19) {
+          let tmp79;
+          let tmp81;
+          class G {
+            constructor(arg0) {
+              obj = closure_1_0(closure_1_2[13]);
+              return obj.getMosaicMediaTypeForAttachment(arg0, true);
+            }
+          }
+          const _Symbol3 = Symbol;
+          if (cResult[65] === Symbol.for("react.memo_cache_sentinel")) {
+            class G {
+              constructor(arg0) {
+                obj = closure_1_0(closure_1_2[13]);
+                return obj.getMosaicMediaTypeForAttachment(arg0, true);
+              }
+            }
+            tmp80[0] = ClipView.CutoutShape.RoundedRect;
+            cResult[65] = tmp80;
+            tmp79 = tmp80;
+          } else {
+            class G {
+              constructor(arg0) {
+                obj = closure_1_0(closure_1_2[13]);
+                return obj.getMosaicMediaTypeForAttachment(arg0, true);
+              }
+            }
+          }
+          const _Symbol2 = Symbol;
+          if (cResult[66] === Symbol.for("react.memo_cache_sentinel")) {
+            class G {
+              constructor(arg0) {
+                obj = closure_1_0(closure_1_2[13]);
+                return obj.getMosaicMediaTypeForAttachment(arg0, true);
+              }
+            }
+            tmp82[0] = tmp79;
+            cResult[66] = tmp82;
+            tmp81 = tmp82;
+          } else {
+            class G {
+              constructor(arg0) {
+                obj = closure_1_0(closure_1_2[13]);
+                return obj.getMosaicMediaTypeForAttachment(arg0, true);
+              }
+            }
+          }
+          if (cResult[67] !== tmp19) {
+            class G {
+              constructor(arg0) {
+                obj = closure_1_0(closure_1_2[13]);
+                return obj.getMosaicMediaTypeForAttachment(arg0, true);
+              }
+            }
+            const obj22 = { cutouts: tmp81, children: tmp19 };
+            cResult[67] = tmp19;
+            cResult[68] = hasOwnProperty(ClipViewDefault, obj22);
+            const tmp85 = hasOwnProperty(ClipViewDefault, obj22);
+          } else {
+            class G {
+              constructor(arg0) {
+                obj = closure_1_0(closure_1_2[13]);
+                return obj.getMosaicMediaTypeForAttachment(arg0, true);
+              }
+            }
+          }
+          const diff = length - 1;
+          if (cResult[69] === tmp4.overflowCount) {
+            class G {
+              constructor(arg0) {
+                obj = closure_1_0(closure_1_2[13]);
+                return obj.getMosaicMediaTypeForAttachment(arg0, true);
+              }
+            }
+            if (cResult[72] === tmp4.attachmentPreviewOverflow) {
+              class G {
+                constructor(arg0) {
+                  obj = closure_1_0(closure_1_2[13]);
+                  return obj.getMosaicMediaTypeForAttachment(arg0, true);
+                }
+              }
+            }
+            const obj23 = { style: tmp4.attachmentPreviewOverflow, children: items5 };
+            items5 = [tmp83, tmp87];
+            cResult[72] = tmp4.attachmentPreviewOverflow;
+            cResult[73] = tmp87;
+            cResult[74] = tmp83;
+            cResult[75] = metroRequire(View, obj23);
+            const tmp93 = metroRequire(View, obj23);
+          }
+          const obj24 = { style: tmp4.overflowCount, variant: "text-xs/semibold", color: "text-default", children: items6 };
+          items6 = ["+", diff];
+          cResult[69] = tmp4.overflowCount;
+          cResult[70] = diff;
+          cResult[71] = metroRequire(Text_Text.Text, obj24);
+          const tmp89 = metroRequire(Text_Text.Text, obj24);
+        }
+      }
+      const forwardPreview = tmp4.forwardPreview;
+      if (cResult[76] !== tmp4.quote) {
+        class G {
+          constructor(arg0) {
+            obj = closure_1_0(closure_1_2[13]);
+            return obj.getMosaicMediaTypeForAttachment(arg0, true);
+          }
+        }
+        const obj25 = { style: tmp4.quote };
+        cResult[76] = tmp4.quote;
+        cResult[77] = hasOwnProperty(View, obj25);
+        const tmp96 = hasOwnProperty(View, obj25);
+      } else {
+        class G {
+          constructor(arg0) {
+            obj = closure_1_0(closure_1_2[13]);
+            return obj.getMosaicMediaTypeForAttachment(arg0, true);
+          }
+        }
+      }
+      let tmp98 = null != checkpointDataFromMessage;
+      if (tmp98) {
+        class G {
+          constructor(arg0) {
+            obj = closure_1_0(closure_1_2[13]);
+            return obj.getMosaicMediaTypeForAttachment(arg0, true);
+          }
+        }
+        const obj26 = { variant: "text-md/medium", children: tmpResult6.getCheckpointLabel(checkpointDataFromMessage) };
+        const Text = tmp(4833).Text;
+        tmpResult6 = checkpoint_CheckpointMessageComponentUtils;
+        tmp98 = hasOwnProperty(Text, obj26);
+      }
+      cResult[4] = attachments;
+      cResult[5] = contentMessage;
+      cResult[6] = embeds;
+      cResult[7] = tmp4.attachmentPreview;
+      cResult[8] = tmp4.attachmentPreviewOverflow;
+      cResult[9] = tmp4.attachmentPreviewVideo;
+      cResult[10] = tmp4.contentWrapper;
+      cResult[11] = tmp4.forwardPreview;
+      cResult[12] = tmp4.overflowCount;
+      cResult[13] = tmp4.playIcon;
+      cResult[14] = tmp4.quote;
+      cResult[15] = tmp4.videoThumbnail;
+      cResult[16] = tmp21;
+      cResult[17] = View;
+      cResult[18] = View;
+      cResult[19] = attachments.length;
+      cResult[20] = tmp20;
+      cResult[21] = tmp78;
+      cResult[22] = checkpointDataFromMessage;
+      cResult[23] = tmp4.contentWrapper;
+      cResult[24] = tmp98;
+      cResult[25] = forwardPreview;
+      cResult[26] = tmp95;
+      tmp15 = tmp98;
+      tmp17 = tmp95;
+      tmp16 = forwardPreview;
+      tmp14 = contentWrapper;
+      tmp13 = checkpointDataFromMessage;
+      tmp12 = tmp78;
+      tmp11 = tmp20;
+      tmp10 = length;
+      tmp9 = tmp94;
+      tmp8 = tmp94;
+      tmp7 = tmp21;
+    }
+  }
+  const obj27 = { message, channel, forwardOptions };
+  cResult[0] = channel;
+  cResult[1] = forwardOptions;
+  cResult[2] = message;
+  cResult[3] = obj27;
+  tmp5 = obj27;
+}) : ((message) => {
+  let attachments;
+  let channel;
+  let contentMessage;
+  let embeds;
+  let forwardOptions;
+  let hasContent;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let obj10;
+  let obj11;
+  let obj15;
+  let obj19;
+  let obj29;
+  let obj5;
+  let obj8;
+  let size1;
+  let size2;
+  let tmp17;
+  let tmp22;
+  let tmp2Result2;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   message = message.message;
   ({ channel, forwardOptions } = message);
   const tmp = closure_8();
-  const forwardPreviewContent = ForwardPreviewUtils.useForwardPreviewContent({ message, channel, forwardOptions });
+  let obj = ForwardPreviewUtils;
+  const forwardPreviewContent = obj.useForwardPreviewContent({ message, channel, forwardOptions });
   ({ attachments, embeds, hasContent, contentMessage } = forwardPreviewContent);
-  let checkpointData = null;
-  if (contentMessage.components.length > 0) {
-    checkpointData = null;
-    if (contentMessage.components[0].type === tmp2(1978).ComponentType.CHECKPOINT_CARD) {
-      checkpointData = contentMessage.components[0].checkpointData;
-    }
-  }
-  let tmp6 = null;
-  if (null != checkpointData) {
-    let num = checkpointData.cardId;
+  const obj2 = checkpoint_CheckpointMessageComponentUtils;
+  const checkpointDataFromMessage = obj2.getCheckpointDataFromMessage(contentMessage);
+  if (attachments.length > 0) {
+    let formatToPlainStringResult;
+    let AttachmentIcon;
+    const tmp2Result = _mod12;
+    const countByResult = tmp2Result.countBy(attachments, (proxy_url) => {
+      const obj = require("MosaicMediaType");
+      return obj.getMosaicMediaTypeForAttachment(proxy_url, true);
+    });
+    let num = countByResult.IMAGE;
     if (num == null) {
       num = 0;
     }
-    tmp6 = tmp2(11978).CHECKPOINT_PERSONA_COLORS[num];
-  }
-  if (tmp6 != null) {
-    const primaryColor = tmp6.primaryColor;
-  }
-  if (attachments.length > 0) {
-    const countByResult = tmp2(12).countBy(attachments, (proxy_url) => MosaicMediaType.getMosaicMediaTypeForAttachment(proxy_url, true));
-    let num2 = countByResult.IMAGE;
+    let num2 = countByResult.VIDEO;
     if (num2 == null) {
       num2 = 0;
     }
-    let num3 = countByResult.VIDEO;
-    if (num3 == null) {
-      num3 = 0;
-    }
-    if (num2 > 0) {
-      if (num3 > 0) {
-        const intl4 = tmp2(1115).intl;
-        const obj2 = { image_count: num2, video_count: num3 };
-        let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1115).t.Lr0Top, obj2);
-        let AttachmentIcon = tmp2(11981).ImagesIcon;
+    if (num > 0) {
+      if (num2 > 0) {
+        const intl4 = tmp2(1127).intl;
+        const obj3 = { image_count: num, video_count: num2 };
+        formatToPlainStringResult = intl4.formatToPlainString(tmp2(1127).t.Lr0Top, obj3);
+        AttachmentIcon = tmp2(11066).ImagesIcon;
       }
-      if (num3 > 0) {
-        if (length === num3) {
-          const obj3 = { style: null, children: null };
-          const items = [, ];
+      if (num2 > 0) {
+        if (attachments.length === num2) {
+          const obj4 = { style: items, children: items1 };
+          items = [, ];
           ({ attachmentPreview: arr[0], attachmentPreviewVideo: arr[1] } = tmp);
-          obj3.style = items;
-          const size = { style: tmp.videoThumbnail, source: null, width: null, height: null };
-          const obj4 = { uri: null };
-          const obj18 = utils_ImageUtilsDefault;
-          obj4.uri = obj18.getMobileOptimizedSrc(attachments[0].proxy_url, v56, v56, "png");
-          size.source = obj4;
-          size.width = v56;
-          size.height = v56;
-          const items1 = [hasOwnProperty(FastImageDefault, size), ];
-          const obj5 = { style: tmp.playIcon, size: "md", color: "white" };
-          items1[1] = hasOwnProperty(tmp2(9026).CirclePlayIcon, obj5);
-          obj3.children = items1;
-          let tmp7 = timestampProducer(View, obj3);
-          let tmp8 = AttachmentIcon;
-          let tmp9 = formatToPlainStringResult;
+          size = { style: tmp.videoThumbnail, source: obj5, width: v56, height: v56 };
+          obj5 = { uri: obj19.getMobileOptimizedSrc(attachments[0].proxy_url, v56, v56, "png") };
+          const tmp28 = FastImageDefault;
+          obj19 = utils_ImageUtilsDefault;
+          items1 = [hasOwnProperty(tmp28, size), ];
+          const obj6 = { style: tmp.playIcon, size: "md", color: "white" };
+          items1[1] = hasOwnProperty(CirclePlayIcon2.CirclePlayIcon, obj6);
+          tmp6 = metroRequire(View, obj4);
+          tmp7 = AttachmentIcon;
+          tmp8 = formatToPlainStringResult;
         }
       }
-      if (length > 0) {
-        const obj6 = { style: tmp.attachmentPreview, children: null };
-        const size1 = { source: null, width: null, height: null };
-        const obj7 = { uri: null };
-        const tmp22 = FastImageDefault;
-        obj7.uri = utils_ImageUtilsDefault.getMobileOptimizedSrc(attachments[0].proxy_url, v56, v56);
-        size1.source = obj7;
-        size1.width = v56;
-        size1.height = v56;
-        obj6.children = hasOwnProperty(tmp22, size1);
-        tmp7 = hasOwnProperty(View, obj6);
-        tmp8 = AttachmentIcon;
-        tmp9 = formatToPlainStringResult;
+      if (attachments.length > 0) {
+        const obj7 = { style: tmp.attachmentPreview, children: hasOwnProperty(tmp22, size1) };
+        size1 = { source: obj8, width: v56, height: v56 };
+        obj8 = { uri: obj15.getMobileOptimizedSrc(attachments[0].proxy_url, v56, v56) };
+        tmp22 = FastImageDefault;
+        obj15 = utils_ImageUtilsDefault;
+        tmp6 = hasOwnProperty(View, obj7);
+        tmp7 = AttachmentIcon;
+        tmp8 = formatToPlainStringResult;
       } else {
         const first = embeds[0];
         let proxyURL;
@@ -160,144 +938,122 @@ export const ForwardPreview = function ForwardPreview(message) {
             proxyURL = thumbnail.proxyURL;
           }
         }
-        tmp7 = null;
-        tmp8 = AttachmentIcon;
-        tmp9 = formatToPlainStringResult;
+        tmp6 = null;
+        tmp7 = AttachmentIcon;
+        tmp8 = formatToPlainStringResult;
         if (null != proxyURL) {
-          const obj8 = { style: tmp.attachmentPreview, children: null };
-          const size2 = { source: null, width: null, height: null };
-          const obj9 = { uri: null };
-          const tmp17 = FastImageDefault;
-          obj9.uri = utils_ImageUtilsDefault.getMobileOptimizedSrc(embeds[0].thumbnail.proxyURL, v56, v56);
-          size2.source = obj9;
-          size2.width = v56;
-          size2.height = v56;
-          obj8.children = hasOwnProperty(tmp17, size2);
-          tmp7 = hasOwnProperty(View, obj8);
-          tmp8 = AttachmentIcon;
-          tmp9 = formatToPlainStringResult;
+          const obj9 = { style: tmp.attachmentPreview, children: hasOwnProperty(tmp17, size2) };
+          size2 = { source: obj10, width: v56, height: v56 };
+          obj10 = { uri: obj11.getMobileOptimizedSrc(embeds[0].thumbnail.proxyURL, v56, v56) };
+          tmp17 = FastImageDefault;
+          obj11 = utils_ImageUtilsDefault;
+          tmp6 = hasOwnProperty(View, obj9);
+          tmp7 = AttachmentIcon;
+          tmp8 = formatToPlainStringResult;
         }
       }
     }
-    if (num3 > 0) {
-      const intl3 = tmp2(1115).intl;
-      const obj11 = { count: num3 };
-      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1115).t.SJ6pPX, obj11);
-      AttachmentIcon = tmp2(9026).CirclePlayIcon;
-    } else if (num2 > 0) {
-      const intl2 = tmp2(1115).intl;
+    if (num2 > 0) {
+      const intl3 = tmp2(1127).intl;
       const obj12 = { count: num2 };
-      if (1 === num2) {
-        let ImagesIcon = tmp2(5337).ImageIcon;
+      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1127).t.SJ6pPX, obj12);
+      AttachmentIcon = tmp2(8173).CirclePlayIcon;
+    } else if (num > 0) {
+      let ImagesIcon;
+      const intl2 = tmp2(1127).intl;
+      const obj13 = { count: num };
+      const formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t.h4pFfU, obj13);
+      if (1 === num) {
+        ImagesIcon = tmp2(5402).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11981).ImagesIcon;
+        ImagesIcon = tmp2(11066).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
-      formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.h4pFfU, obj12);
-      const formatToPlainStringResult1 = intl2.formatToPlainString(tmp2(1115).t.h4pFfU, obj12);
+      formatToPlainStringResult = formatToPlainStringResult1;
     } else {
-      const intl = tmp2(1115).intl;
-      const obj13 = { count: length };
-      formatToPlainStringResult = intl.formatToPlainString(tmp2(1115).t["89ihS8"], obj13);
-      AttachmentIcon = tmp2(10407).AttachmentIcon;
+      const intl = tmp2(1127).intl;
+      const obj14 = { count: attachments.length };
+      formatToPlainStringResult = intl.formatToPlainString(tmp2(1127).t["89ihS8"], obj14);
+      AttachmentIcon = tmp2(10140).AttachmentIcon;
     }
-    const tmp2Result = tmp2(12);
   } else {
+    tmp6 = null;
     tmp7 = null;
     tmp8 = null;
-    tmp9 = null;
   }
-  let tmp33 = tmp7;
+  let tmp33 = tmp6;
   if (attachments.length > 1) {
-    tmp33 = tmp7;
-    if (null != tmp7) {
-      const size3 = { shape: tmp2(9126).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
-      const obj15 = { style: tmp.attachmentPreviewOverflow, children: null };
-      const obj16 = { cutouts: null, children: null };
-      const items2 = [size3];
-      obj16.cutouts = items2;
-      obj16.children = tmp7;
-      const items3 = [hasOwnProperty(ClipViewDefault, obj16), ];
-      const obj17 = { style: tmp.overflowCount, variant: "text-xs/semibold", color: "text-default", children: null };
-      const items4 = ["+", length - 1];
-      obj17.children = items4;
-      items3[1] = timestampProducer(tmp2(4784).Text, obj17);
-      obj15.children = items3;
-      tmp33 = timestampProducer(View, obj15);
+    tmp33 = tmp6;
+    if (null != tmp6) {
+      const size3 = { shape: ClipView.CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
+      const obj17 = { cutouts: items2, children: tmp6 };
+      items2 = [size3];
+      const obj16 = { style: tmp.attachmentPreviewOverflow, children: items3 };
+      items3 = [hasOwnProperty(ClipViewDefault, obj17), ];
+      const obj18 = { style: tmp.overflowCount, variant: "text-xs/semibold", color: "text-default", children: items4 };
+      items4 = ["+", attachments.length - 1];
+      items3[1] = metroRequire(Text_Text.Text, obj18);
+      tmp33 = metroRequire(View, obj16);
     }
   }
-  const obj19 = { style: tmp.forwardPreview, children: null };
-  const items5 = [hasOwnProperty(View, { style: tmp.quote }), , , ];
-  const obj21 = { style: tmp.contentWrapper, children: null };
-  let tmp36Result = null != checkpointData;
+  const obj20 = { style: tmp.forwardPreview, children: items5 };
+  items5 = [, , , ];
+  const obj21 = { style: tmp.quote };
+  items5[0] = hasOwnProperty(View, obj21);
+  let tmp36Result = null != checkpointDataFromMessage;
+  const obj22 = { style: tmp.contentWrapper, children: items6 };
   if (tmp36Result) {
-    const obj22 = { variant: "text-md/medium", children: null };
-    const intl5 = tmp2(1115).intl;
-    obj22.children = intl5.string(_modDef3000.goiR2u);
-    tmp36Result = tmp36(tmp2(4784).Text, obj22);
+    const obj23 = { variant: "text-md/medium", children: tmp2Result2.getCheckpointLabel(checkpointDataFromMessage) };
+    const Text = tmp2(4833).Text;
+    tmp2Result2 = checkpoint_CheckpointMessageComponentUtils;
+    tmp36Result = tmp36(Text, obj23);
   }
-  const items6 = [tmp36Result, , ];
+  items6 = [tmp36Result, , ];
   let tmp36Result5 = hasContent;
-  if (hasContent) {
-    const obj23 = { message, contentMessage, attachmentCount: length };
-    tmp36Result5 = tmp36(MessagePreview, obj23);
+  if (tmp36Result5) {
+    const obj24 = { message, contentMessage, attachmentCount: attachments.length };
+    tmp36Result5 = tmp36(closure_9, obj24);
   }
   items6[1] = tmp36Result5;
   let tmp34Result = length > 0;
   if (tmp34Result) {
-    const obj24 = { style: tmp.attachmentRow, children: null };
-    let tmp36Result6 = null != tmp8;
+    let tmp36Result6 = null != tmp7;
+    const obj25 = { style: tmp.attachmentRow, children: items7 };
     if (tmp36Result6) {
       let str2 = "custom";
       if (hasContent) {
         str2 = "sm";
       }
-      const obj25 = { size: str2, style: null, color: "text-muted" };
-      let largeIcon = !hasContent;
-      if (!hasContent) {
-        largeIcon = tmp.largeIcon;
-      }
-      obj25.style = largeIcon;
-      tmp36Result6 = tmp36(tmp8, obj25);
+      const obj26 = { size: str2, style: !hasContent && tmp.largeIcon, color: "text-muted" };
+      tmp36Result6 = tmp36(tmp7, obj26);
     }
-    const items7 = [tmp36Result6, ];
-    let tmp36Result7 = null != tmp9;
+    items7 = [tmp36Result6, ];
+    let tmp36Result7 = null != tmp8;
     if (tmp36Result7) {
       let str3 = "text-md/medium";
+      const Text2 = tmp2(4833).Text;
       if (hasContent) {
         str3 = "text-sm/medium";
       }
-      const obj26 = { variant: str3, color: "text-muted", children: tmp9 };
-      tmp36Result7 = tmp36(tmp2(4784).Text, obj26);
+      const obj27 = { variant: str3, color: "text-muted", children: tmp8 };
+      tmp36Result7 = tmp36(Text2, obj27);
     }
     items7[1] = tmp36Result7;
-    obj24.children = items7;
-    tmp34Result = tmp34(tmp35, obj24);
+    tmp34Result = tmp34(tmp35, obj25);
   }
   items6[2] = tmp34Result;
-  obj21.children = items6;
-  items5[1] = timestampProducer(View, obj21);
+  items5[1] = metroRequire(View, obj22);
   items5[2] = tmp33;
-  let tmp36Result8 = null != checkpointData;
+  let tmp36Result8 = null != checkpointDataFromMessage;
   if (tmp36Result8) {
-    const obj27 = { style: tmp.attachmentPreview, children: null };
-    const size4 = { style: null, width: null, height: null, source: null };
-    const obj28 = { backgroundColor: primaryColor };
-    size4.style = obj28;
-    size4.width = v56;
-    size4.height = v56;
-    const tmp46 = FastImageDefault;
-    let num5 = checkpointData.cardId;
-    if (num5 == null) {
-      num5 = 0;
-    }
-    const obj29 = { uri: tmp2(8444).getCardAssetUrl(num5) };
-    size4.source = obj29;
-    obj27.children = tmp36(tmp46, size4);
-    tmp36Result8 = tmp36(tmp35, obj27);
-    const tmp2Result2 = tmp2(8444);
+    const obj28 = { style: tmp.attachmentPreview, children: hasOwnProperty(CheckpointForwardPreviewDefault, obj29) };
+    obj29 = { checkpointData: checkpointDataFromMessage };
+    tmp36Result8 = tmp36(tmp35, obj28);
   }
   items5[3] = tmp36Result8;
-  obj19.children = items5;
-  return timestampProducer(View, obj19);
-};
+  return metroRequire(View, obj20);
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
+
+export const ForwardPreview = tmp4;

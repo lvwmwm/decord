@@ -1,31 +1,34 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 15458
+// Function ID: 15459
 // Name: SecureFramesVerifiedDevicesSetting
-// Dependencies: [8265, 1074, 11754, 1115, 16182, 2]
+// Dependencies: [7421, 1086, 10874, 1127, 15459, 2]
 
-// Module 16181 (SecureFramesVerifiedDevicesSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15458 (SecureFramesVerifiedDevicesSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["5b3FNI"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["5b3FNI"]);
   },
-  parent: SettingsConstants.MobileUserSettings.DATA_AND_PRIVACY,
+  parent: MobileUserSettings.DATA_AND_PRIVACY,
   unsearchable: true,
   screen: {
-    route: Constants.UserSettingsSections.SECURE_FRAMES_VERIFIED_DEVICES,
+    route: UserSettingsSections.SECURE_FRAMES_VERIFIED_DEVICES,
     getComponent() {
       return require("SettingsSecureFramesVerificationsScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SecureFramesVerifiedDevicesSetting.tsx");
 
 export default route;

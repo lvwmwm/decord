@@ -1,23 +1,34 @@
-// Module ID: 8375
-// Function ID: 8376
+// Module ID: 7532
+// Function ID: 7533
 // Name: EphemeralIndication
-// Dependencies: [8228, 1074, 8376, 1115, 2108, 2]
+// Dependencies: [7384, 1086, 7533, 1127, 2114, 2]
 // Exports: createEphemeralIndication
 
-// Module 8375 (EphemeralIndication)
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8376 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8228 */;
+// Module 7532 (EphemeralIndication)
+import intl6 from "intl" /* 1127 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 7533 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7384 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let closure_4;
+let hasOwnProperty;
 ({ HelpdeskArticles: closure_4, MessageFlags: hasOwnProperty } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/EphemeralIndication.tsx");
 
 export const createEphemeralIndication = function createEphemeralIndication(message) {
-  if (message.hasFlag(constants2.EPHEMERAL)) {
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let obj2;
+  let obj3;
+  let obj5;
+  let obj6;
+  let obj7;
+  let obj9;
+  if (message.hasFlag(hasOwnProperty.EPHEMERAL)) {
     const interactionMetadata = message.interactionMetadata;
     let ephemerality_reason;
     if (interactionMetadata != null) {
@@ -26,38 +37,35 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
     if (null != ephemerality_reason) {
       const interactionMetadata2 = message.interactionMetadata;
       let ephemerality_reason1;
+      const getEphemeralReasonMessage = ApplicationCommandUserAppUtils.getEphemeralReasonMessage;
+      ApplicationCommandUserAppUtils;
       if (interactionMetadata2 != null) {
         ephemerality_reason1 = interactionMetadata2.ephemerality_reason;
       }
-      const obj = { content: null, helpArticleLink: null, helpButtonAccessibilityLabel: null };
-      const ephemeralReasonMessage = ApplicationCommandUserAppUtils.getEphemeralReasonMessage(ephemerality_reason1);
-      const intl2 = tmp3(1115).intl;
-      const obj3 = { handleDelete: null, reason: null };
-      const obj4 = { action: "bindDismissMessage", message };
-      obj3.handleDelete = obj4;
-      obj3.reason = ephemeralReasonMessage;
-      obj.content = intl2.formatToParts(util.t.xgCMRQ, obj3);
-      obj.helpArticleLink = HelpdeskUtilsDefault.getArticleURL(constants.USING_APPS_FAQ);
-      const intl3 = tmp3(1115).intl;
-      obj.helpButtonAccessibilityLabel = intl3.string(util.t.OIWSJe);
+      const obj = { content: intl2.formatToParts(intl6.t.xgCMRQ, obj2), helpArticleLink: obj5.getArticleURL(constants.USING_APPS_FAQ), helpButtonAccessibilityLabel: intl3.string(intl6.t.OIWSJe) };
+      const ephemeralReasonMessage = getEphemeralReasonMessage(ephemerality_reason1);
+      intl2 = tmp3(1127).intl;
+      obj2 = { handleDelete: obj3, reason: ephemeralReasonMessage };
+      obj3 = { action: "bindDismissMessage", message };
+      obj5 = HelpdeskUtilsDefault;
+      intl3 = tmp3(1127).intl;
       return obj;
     } else {
-      const obj5 = { content: null, helpArticleLink: null, helpButtonAccessibilityLabel: null };
-      const intl4 = util.intl;
-      const obj7 = { count: 1, countMessages: 1, handleDelete: null };
-      const obj8 = { action: "bindDismissMessage", message };
-      obj7.handleDelete = obj8;
-      obj5.content = intl4.formatToParts(util.t.uX3ecL, obj7);
-      obj5.helpArticleLink = HelpdeskUtilsDefault.getAppsSupportURL(constants.EPHEMERAL_MESSAGES);
-      const intl5 = util.intl;
-      obj5.helpButtonAccessibilityLabel = intl5.string(util.t.htHOrp);
+      const obj4 = { content: intl4.formatToParts(intl6.t.uX3ecL, obj6), helpArticleLink: obj9.getAppsSupportURL(constants.EPHEMERAL_MESSAGES), helpButtonAccessibilityLabel: intl5.string(intl6.t.htHOrp) };
+      intl4 = intl6.intl;
+      obj6 = { count: 1, countMessages: 1, handleDelete: obj7 };
+      obj7 = { action: "bindDismissMessage", message };
+      obj9 = HelpdeskUtilsDefault;
+      intl5 = intl6.intl;
+      const tmp12 = importDefault;
+      const tmp13 = constants;
       if (null != GuildAutomodMessageStore.getMessage(message.id)) {
-        obj5.helpArticleLink = HelpdeskUtilsDefault.getArticleURL(constants.GUILD_AUTOMOD_BLOCKED_MESSAGE);
-        const intl = tmp9(1115).intl;
-        obj5.helpButtonAccessibilityLabel = intl.string(tmp9(1115).t.OiCBhP);
-        const tmp11Result = HelpdeskUtilsDefault;
+        const tmp12Result = tmp12(2114);
+        obj4.helpArticleLink = tmp12Result.getArticleURL(tmp13.GUILD_AUTOMOD_BLOCKED_MESSAGE);
+        const intl = tmp10(1127).intl;
+        obj4.helpButtonAccessibilityLabel = intl.string(intl6.t.OiCBhP);
       }
-      return obj5;
+      return obj4;
     }
   }
 };

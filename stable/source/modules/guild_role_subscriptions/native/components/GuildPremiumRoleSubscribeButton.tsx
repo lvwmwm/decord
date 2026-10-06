@@ -1,26 +1,55 @@
-// Module ID: 18230
-// Function ID: 18231
+// Module ID: 17596
+// Function ID: 17597
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [19, 21, 4788, 10594, 1115, 2]
-// Exports: GuildPremiumRoleSubscribeButton
+// Dependencies: [19, 21, 4837, 558, 576, 1127, 9676, 2]
 
-// Module 18230 (GuildPremiumRoleSubscribeButton)
-import util from "util" /* 1115 */;
-import CreatorRevenueButton from "CreatorRevenueButton" /* 10594 */;
-import noop from "module_19" /* 19 */;
+// Module 17596 (GuildPremiumRoleSubscribeButton)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9676 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+let onPress;
+
+const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ crButton: { marginVertical: 16 } });
-const size = fn(2);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(4);
+  onPress = onPress.onPress;
+  const tmp4 = closure_3();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t.BEeXib);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === onPress) {
+    let tmp7;
+    if (cResult[2] === tmp4.crButton) {
+      tmp7 = cResult[3];
+    }
+    return tmp7;
+  }
+  const tmp8 = jsx(CreatorRevenueButton2.CreatorRevenueButton, { text: first, onPress, style: tmp4.crButton, disabled: true });
+  cResult[1] = onPress;
+  cResult[2] = tmp4.crButton;
+  cResult[3] = tmp8;
+  tmp7 = tmp8;
+}) : ((onPress) => {
+  onPress = onPress.onPress;
+  const tmp = closure_3();
+  const CreatorRevenueButton = CreatorRevenueButton2.CreatorRevenueButton;
+  const intl = intl2.intl;
+  return <CreatorRevenueButton text={intl.string(intl2.t.BEeXib)} onPress={onPress} style={tmp.crButton} disabled />;
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildPremiumRoleSubscribeButton.tsx");
 
-export const GuildPremiumRoleSubscribeButton = function GuildPremiumRoleSubscribeButton(onPress) {
-  const obj = { text: null, onPress: null, style: null, disabled: true };
-  const intl = util.intl;
-  obj.text = intl.string(util.t.BEeXib);
-  obj.onPress = onPress.onPress;
-  obj.style = closure_3().crButton;
-  return jsx(CreatorRevenueButton.CreatorRevenueButton, { text: null, onPress: null, style: null, disabled: true });
-};
+export const GuildPremiumRoleSubscribeButton = tmp3;

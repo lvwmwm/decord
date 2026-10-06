@@ -1,65 +1,77 @@
-// Module ID: 9435
-// Function ID: 9436
+// Module ID: 8587
+// Function ID: 8588
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9436, 2002, 9554, 1074, 5242, 4781, 1115, 9167, 9556, 1364, 1978, 7797, 9557, 7950, 7730, 5140, 1397, 9555, 9563, 7795, 9564, 2]
+// Dependencies: [109, 5, 8588, 2009, 8706, 1086, 5306, 4830, 1127, 8318, 8708, 1370, 1985, 6947, 8709, 7099, 6880, 5204, 1403, 8707, 8715, 6945, 8716, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 9435 (AppLauncherUtils)
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import Server from "Server" /* 1978 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7795 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9167 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9555 */;
-import getPlatformDefault from "getPlatform" /* 9556 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 9564 */;
+// Module 8587 (AppLauncherUtils)
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import Server from "Server" /* 1985 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6945 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8707 */;
+import getPlatformDefault from "getPlatform" /* 8708 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 8715 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 8716 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9436 */;
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import AppLauncherStore from "AppLauncherStore" /* 9554 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
+import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+import AppLauncherStore from "AppLauncherStore" /* 8706 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let maxSizeCallback, sectionName;
 
-require = fn;
 function getShelfBadgeTypeIfActive(application) {
   let tmp2 = null;
   if (application.id !== BuiltInSectionId.BUILT_IN) {
     let hasApplicationFlagResult = application.id !== tmp.BUILT_IN;
     if (hasApplicationFlagResult) {
-      hasApplicationFlagResult = ApplicationFlagUtils.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+      const obj = ApplicationFlagUtils;
+      hasApplicationFlagResult = obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
     }
     tmp2 = null;
+    if (hasApplicationFlagResult) {
+      tmp2 = application instanceof ApplicationRecord ? application.embeddedActivityConfig : application.embedded_activity_config;
+    }
   }
-  let tmp9;
+  let tmp8;
   if (tmp2 != null) {
+    const client_platform_config = tmp2.client_platform_config;
+    const tmp11 = getPlatformDefault;
     const obj2 = PlatformUtils;
-    tmp9 = tmp2.client_platform_config[getPlatformDefault(undefined, obj2.getOS(obj2))];
+    tmp8 = client_platform_config[tmp11(undefined, obj2.getOS(obj2))];
   }
   const timestamp = Date.now();
   let label_until;
-  if (tmp9 != null) {
-    label_until = tmp9.label_until;
+  if (tmp8 != null) {
+    label_until = tmp8.label_until;
   }
   if (null != label_until) {
     const _Date = Date;
-    if (timestamp < Date.parse(tmp9.label_until)) {
+    if (timestamp < Date.parse(tmp8.label_until)) {
       let label_from;
-      if (tmp9 != null) {
-        label_from = tmp9.label_from;
+      if (tmp8 != null) {
+        label_from = tmp8.label_from;
       }
       if (null != label_from) {
+        let NONE;
         const _Date2 = Date;
-        if (timestamp > Date.parse(tmp9.label_from)) {
+        if (timestamp > Date.parse(tmp8.label_from)) {
           let label_type;
-          if (tmp9 != null) {
-            label_type = tmp9.label_type;
+          if (tmp8 != null) {
+            label_type = tmp8.label_type;
           }
           if (label_type == null) {
             label_type = Server.EmbeddedActivityLabelTypes.NONE;
           }
-          let NONE = label_type;
+          NONE = label_type;
         }
         return NONE;
       }
@@ -68,52 +80,57 @@ function getShelfBadgeTypeIfActive(application) {
   NONE = Server.EmbeddedActivityLabelTypes.NONE;
 }
 let closure_3 = ["fakeAppIconURL"];
-const ApplicationFlags = fn(1074).ApplicationFlags;
-const BuiltInSectionId = fn(5242).BuiltInSectionId;
-const MessageSendLocation = fn(4781).MessageSendLocation;
-const size = fn(2);
+const ApplicationFlags = Constants.ApplicationFlags;
+const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
+const MessageSendLocation = MessageConstants.MessageSendLocation;
+let obj = { id: BuiltInSectionId.BUILT_IN };
 let result = size.fileFinishedImporting("modules/app_launcher/utils/AppLauncherUtils.tsx");
 
-export const FAKE_BUILT_IN_APP = { id: BuiltInSectionId.BUILT_IN };
+export const FAKE_BUILT_IN_APP = obj;
 export const isRealApplication = function isRealApplication(application) {
   return application.id !== BuiltInSectionId.BUILT_IN;
 };
 export const getSectionName = function getSectionName(FAKE_BUILT_IN_APP) {
+  let name;
   if (FAKE_BUILT_IN_APP.id !== BuiltInSectionId.BUILT_IN) {
-    let name = FAKE_BUILT_IN_APP.name;
+    name = FAKE_BUILT_IN_APP.name;
   } else {
-    const intl = util.intl;
-    name = intl.string(util.t.UB2gG2);
+    const intl = intl4.intl;
+    name = intl.string(intl4.t.UB2gG2);
   }
   return name;
 };
-export const getSectionDescription = function getSectionDescription(FAKE_BUILT_IN_APP) {
-  if (FAKE_BUILT_IN_APP.id !== BuiltInSectionId.BUILT_IN) {
-    let description = FAKE_BUILT_IN_APP.description;
+export const getSectionDescription = function getSectionDescription(application) {
+  let description;
+  if (application.id !== BuiltInSectionId.BUILT_IN) {
+    description = application.description;
   } else {
-    const intl = util.intl;
-    description = intl.string(util.t.X9fusn);
+    const intl = intl4.intl;
+    description = intl.string(intl4.t.X9fusn);
   }
   return description;
 };
 export const isEmbeddedApp = function isEmbeddedApp(application) {
   let hasApplicationFlagResult = application.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = ApplicationFlagUtils.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+    const obj = ApplicationFlagUtils;
+    hasApplicationFlagResult = obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
   }
   return hasApplicationFlagResult;
 };
 export const isPartnerApplication = function isPartnerApplication(application) {
   let hasApplicationFlagResult = application.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = ApplicationFlagUtils.hasApplicationFlag(application, ApplicationFlags.PARTNER);
+    const obj = ApplicationFlagUtils;
+    hasApplicationFlagResult = obj.hasApplicationFlag(application, ApplicationFlags.PARTNER);
   }
   return hasApplicationFlagResult;
 };
 export const isPromotedApplication = function isPromotedApplication(FAKE_BUILT_IN_APP2) {
   let hasApplicationFlagResult = FAKE_BUILT_IN_APP2.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = ApplicationFlagUtils.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
+    const obj = ApplicationFlagUtils;
+    hasApplicationFlagResult = obj.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
   }
   return hasApplicationFlagResult;
 };
@@ -133,34 +150,47 @@ export const getEmbeddedActivityConfig = function getEmbeddedActivityConfig(id) 
   if (id.id !== BuiltInSectionId.BUILT_IN) {
     let hasApplicationFlagResult = id.id !== tmp.BUILT_IN;
     if (hasApplicationFlagResult) {
-      hasApplicationFlagResult = ApplicationFlagUtils.hasApplicationFlag(id, ApplicationFlags.EMBEDDED);
+      const obj = ApplicationFlagUtils;
+      hasApplicationFlagResult = obj.hasApplicationFlag(id, ApplicationFlags.EMBEDDED);
     }
     tmp2 = null;
+    if (hasApplicationFlagResult) {
+      tmp2 = id instanceof ApplicationRecord ? id.embeddedActivityConfig : id.embedded_activity_config;
+    }
   }
   return tmp2;
 };
 export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0) {
-  ({ command: closure_0, optionValues: importDefault, context } = arg0);
-  ({ commandTargetId: closure_3, maxSizeCallback: _objectWithoutProperties, sectionName: asyncGeneratorStep, commandOrigin } = arg0);
+  let commandOrigin;
+  let context;
+  ({ command: require, optionValues: importDefault, context } = arg0);
+  ({ commandTargetId: closure_3, maxSizeCallback: _objectWithoutProperties, sectionName: _asyncToGenerator, commandOrigin } = arg0);
   if (commandOrigin === undefined) {
+    const tmp = require;
     commandOrigin = require("ApplicationCommandTypes").CommandOrigin.APPLICATION_LAUNCHER;
   }
   const channel = context.channel;
-  _require = asyncGeneratorStep(async (arg0, value) => {
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let commandTargetId;
+    let intl;
+    let intl2;
+    let intl3;
     if (commandOrigin === 2) {
       commandOrigin = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
+        let _false;
+        let optionValues;
         commandOrigin = 2;
         if (0 === sectionName) {
           if (arg0 === 1) {
@@ -171,86 +201,90 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            context = tmp3;
-            const optionValues = tmp7;
-            closure_129_0 = undefined;
-            closure_129_1 = undefined;
-            let maxSizeCallback = 1;
-            const obj5 = { command: tts, optionValues, context, commandTargetId, maxSizeCallback, commandOrigin, sectionName, source: fn.entrypoint() };
+            context = tmp;
+            _false = undefined;
+            optionValues = undefined;
+            maxSizeCallback = 1;
+            const obj4 = { command: _false, optionValues, context, commandTargetId, maxSizeCallback, commandOrigin, sectionName, source: fn.entrypoint() };
+            const tmp63 = require("executeCommand");
             sectionName = 2;
             commandOrigin = 1;
-            const obj6 = { value: require("executeCommand")(obj5), done: false };
-            return obj6;
+            const obj5 = { value: tmp63(obj4), done: false };
+            return obj5;
           }
-        } else if (1 === tmp7) {
+        } else if (1 === sectionName) {
           maxSizeCallback = 0;
-          closure_129_2 = commandTargetId;
-          const obj7 = { title: null, body: null, confirmText: null, onConfirm: null, isDismissable: false };
-          const intl = closure_0(context[8]).intl;
-          obj7.title = intl.string(closure_0(context[8]).t["aHO//m"]);
-          const intl2 = closure_0(context[8]).intl;
-          obj7.body = intl2.string(closure_0(context[8]).t.kuzKHK);
-          const intl3 = closure_0(context[8]).intl;
-          obj7.confirmText = intl3.string(closure_0(context[8]).t["5911Lb"]);
-          obj7.onConfirm = function onConfirm() {
-            return closure_1_8();
+          context = commandTargetId;
+          const obj6 = {
+            title: intl.string(_false(context[8]).t["aHO//m"]),
+            body: intl2.string(_false(context[8]).t.kuzKHK),
+            confirmText: intl3.string(_false(context[8]).t["5911Lb"]),
+            onConfirm() {
+                    return closure_1_8();
+                  },
+            isDismissable: false
           };
-          require("AlertActionCreators").show(obj7);
-          throw closure_129_2;
+          const show = require("AlertActionCreators").show;
+          const tmp22 = require("AlertActionCreators");
+          intl = _false(context[8]).intl;
+          intl2 = _false(context[8]).intl;
+          intl3 = _false(context[8]).intl;
+          show(obj6);
+          throw context;
         } else if (arg0 === 1) {
           commandOrigin = 3;
           throw value;
         } else if (arg0 === 2) {
           maxSizeCallback = 0;
           commandOrigin = 3;
-          const obj8 = { value, done: true };
-          return obj8;
+          const obj7 = { value, done: true };
+          return obj7;
         } else {
-          closure_129_0 = value;
-          if (tts.inputType === closure_0(context[13]).ApplicationCommandInputType.BUILT_IN_TEXT) {
-            if (null != closure_129_0) {
+          _false = value;
+          if (_false.inputType === _false(context[13]).ApplicationCommandInputType.BUILT_IN_TEXT) {
+            if (null != _false) {
               if (null != context.channel) {
-                closure_129_1 = require("MessageParser").parse(channel, closure_129_0.content);
-                tts = closure_129_0.tts;
+                const obj8 = require("MessageParser");
+                optionValues = obj8.parse(channel, _false.content);
+                const tts = _false.tts;
+                _false = tts;
+                const tmp59 = optionValues;
                 if (tts == null) {
-                  tts = false;
+                  _false = false;
                 }
-                closure_129_1.tts = tts;
+                tmp59.tts = _false;
                 const obj = require("MessageActionCreators");
-                const obj10 = { location: constants.APP_COMMAND };
-                obj.sendMessage(context.channel.id, closure_129_1, true, obj10);
-                const obj9 = require("MessageParser");
+                const obj9 = { location: constants.APP_COMMAND };
+                obj.sendMessage(context.channel.id, optionValues, true, obj9);
               }
             }
           }
           maxSizeCallback = 0;
           commandOrigin = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
-      } catch (tmp39) {
-        commandTargetId = tmp39;
-        if (tmp4 === maxSizeCallback) {
-          commandOrigin = tmp2;
-          throw tmp39;
+      } catch (tmp37) {
+        commandTargetId = tmp37;
+        if (0 === maxSizeCallback) {
+          commandOrigin = 3;
+          throw tmp37;
         } else {
-          sectionName = tmp;
+          sectionName = 1;
         }
       }
     }
   });
   const fn = function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+    return closure_0(...arguments);
   };
   return fn();
 };
 export const getApplicationDetails = function getApplicationDetails(id) {
+  let getApplicationIconURL;
+  let intl;
+  let intl2;
+  let obj7;
+  let obj8;
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -258,79 +292,84 @@ export const getApplicationDetails = function getApplicationDetails(id) {
   let fakeAppIconURL = obj.fakeAppIconURL;
   const tmp2 = _objectWithoutProperties(obj, closure_3);
   if (id.id !== BuiltInSectionId.BUILT_IN) {
-    const obj2 = { iconURL: null, name: null, description: null };
-    const obj8 = {};
+    const obj2 = { iconURL: getApplicationIconURL(obj7), name: null, description: null };
+    obj7 = {};
+    getApplicationIconURL = AvatarUtilsDefault.getApplicationIconURL;
+    AvatarUtilsDefault;
     const merged = Object.assign(tmp2);
-    ({ id: obj5.id, icon: obj5.icon } = id);
-    obj2.iconURL = AvatarUtilsDefault.getApplicationIconURL(obj8);
+    ({ id: obj4.id, icon: obj4.icon } = id);
     ({ name: obj3.name, description: obj3.description } = id);
-    let obj9 = obj2;
+    obj8 = obj2;
   } else {
     if (fakeAppIconURL == null) {
       fakeAppIconURL = null;
     }
-    obj9 = { iconURL: fakeAppIconURL, name: null, description: null };
-    const intl = util.intl;
-    obj9.name = intl.string(util.t.UB2gG2);
-    const intl2 = util.intl;
-    obj9.description = intl2.string(util.t.X9fusn);
+    obj8 = { iconURL: fakeAppIconURL, name: intl.string(intl4.t.UB2gG2), description: intl2.string(intl4.t.X9fusn) };
+    intl = intl4.intl;
+    intl2 = intl4.intl;
   }
-  return obj9;
+  return obj8;
 };
 export const isApplicationMonetizedWithIAP = function isApplicationMonetizedWithIAP(application) {
-  if (application.id === BuiltInSectionId.BUILT_IN) {
-    return tmp;
-  }
+  return application.id !== BuiltInSectionId.BUILT_IN && (application instanceof ApplicationRecord ? application.isMonetized : application.is_monetized);
 };
 export const isApplicationAdSupported = function isApplicationAdSupported(application) {
   let tmp2 = null;
   if (application.id !== BuiltInSectionId.BUILT_IN) {
     let hasApplicationFlagResult = application.id !== tmp.BUILT_IN;
     if (hasApplicationFlagResult) {
-      hasApplicationFlagResult = ApplicationFlagUtils.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+      const obj = ApplicationFlagUtils;
+      hasApplicationFlagResult = obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
     }
     tmp2 = null;
+    if (hasApplicationFlagResult) {
+      tmp2 = application instanceof ApplicationRecord ? application.embeddedActivityConfig : application.embedded_activity_config;
+    }
   }
   return null != tmp2 && tmp2.displays_advertisements;
 };
-export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(initialSearchQuery) {
-  return initialSearchQuery === AppLauncherTypes.AppLauncherEntrypoint.TEXT;
+export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
+  return entrypoint === AppLauncherTypes.AppLauncherEntrypoint.TEXT;
 };
 export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
   if (null != displayName) {
     const charAtResult = displayName.charAt(0);
-    const sum = displayName.charAt(0).toLocaleUpperCase() + displayName.slice(1);
+    const toLocaleUpperCaseResult = charAtResult.toLocaleUpperCase();
+    const sum = toLocaleUpperCaseResult + displayName.slice(1);
     str = sum.replaceAll("_", " ");
-    const toLocaleUpperCaseResult = displayName.charAt(0).toLocaleUpperCase();
   }
   return str;
 };
-export const ensureRecommendationSectionsOnlyContainActivities = function ensureRecommendationSectionsOnlyContainActivities(entrypoint) {
+export const ensureRecommendationSectionsOnlyContainActivities = function ensureRecommendationSectionsOnlyContainActivities(stateFromStores) {
+  let constants2;
+  let tmp3;
   const items = [];
-  const iter = entrypoint[Symbol.iterator]();
+  const iter = stateFromStores[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let prop = nextResult.application_directory_collection_items;
     let tmp2 = nextResult;
     let found = prop.filter((type) => {
-      let tmp3 = type.type === require("ApplicationDirectoryCollectionItemType").ApplicationDirectoryCollectionItemType.APPLICATION;
+      let tmp3 = type.type === ApplicationDirectoryCollectionItemType.ApplicationDirectoryCollectionItemType.APPLICATION;
+      const tmp = require;
+      const tmp2 = dependencyMap;
       if (tmp3) {
         const application = type.application;
         let hasApplicationFlagResult = application.id !== constants2.BUILT_IN;
         if (hasApplicationFlagResult) {
-          hasApplicationFlagResult = require("ApplicationFlagUtils").hasApplicationFlag(application, constants.EMBEDDED);
-          const tmpResult = require("ApplicationFlagUtils");
+          const tmpResult = tmp(tmp2[9]);
+          hasApplicationFlagResult = tmpResult.hasApplicationFlag(application, constants.EMBEDDED);
         }
         tmp3 = hasApplicationFlagResult;
       }
       return tmp3;
     });
     if (0 !== found.length) {
-      let obj = {};
+      let obj = { application_directory_collection_items: tmp3 };
+      let push = items.push;
       let merged = Object.assign(tmp2);
-      obj.application_directory_collection_items = tmp3;
-      let arr = items.push(obj);
+      let arr = push(obj);
     }
     continue;
   }
@@ -340,10 +379,11 @@ export const getInstallAppPropsFromProfileApplication = function getInstallAppPr
   return { applicationId: application.id, customInstallUrl: application.customInstallUrl, installParams: application.installParams, integrationTypesConfig: application.integrationTypesConfig };
 };
 export const getInstallAppProps = function getInstallAppProps(application) {
+  let tmp;
   const obj = { applicationId: application.id, customInstallUrl: null, installParams: null, integrationTypesConfig: null };
   if (application instanceof ApplicationRecord) {
     ({ customInstallUrl: obj.customInstallUrl, installParams: obj.installParams, integrationTypesConfig: obj.integrationTypesConfig } = application);
-    let tmp = obj;
+    tmp = obj;
   } else {
     ({ custom_install_url: obj.customInstallUrl, install_params: obj.installParams, integration_types_config: obj.integrationTypesConfig } = application);
     tmp = obj;
@@ -357,7 +397,10 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
   }
   let result = null != guildState;
   if (result) {
-    result = ApplicationCommandUtils.hasCommandIndexForApp(id.id, guildState);
+    const obj = ApplicationCommandUtils;
+    result = obj.hasCommandIndexForApp(id.id, guildState);
   }
-  return ApplicationInstallUtils.isAppUserInstallable(id) || result;
+  const obj2 = ApplicationInstallUtils;
+  const tmp6 = obj2.isAppUserInstallable(id) || result;
+  return tmp6;
 };

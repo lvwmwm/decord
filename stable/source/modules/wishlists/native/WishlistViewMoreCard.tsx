@@ -1,49 +1,146 @@
-// Module ID: 11336
-// Function ID: 11337
+// Module ID: 10536
+// Function ID: 10537
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 4788, 576, 1115, 11331, 4784, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 10531, 4833, 2]
 
-// Module 11336 (WishlistViewMoreCard)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 11331 */;
-import noop from "module_19" /* 19 */;
+// Module 10536 (WishlistViewMoreCard)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl3 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 10531 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Pressable: c3, StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ Pressable: c3, StyleSheet: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles(() => {
-  const obj = { moreOverlay: null };
-  const obj2 = {};
+  let obj2;
+  const obj = { moreOverlay: obj2 };
+  obj2 = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj2.borderRadius = nativeDefault.radii.lg;
-  obj2.backgroundColor = nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
-  obj2.justifyContent = "center";
-  obj2.alignItems = "center";
-  obj.moreOverlay = obj2;
   return obj;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/wishlists/native/WishlistViewMoreCard.tsx");
-
-export default function WishlistViewMoreCard(recipientName) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  let onPress;
+  let overflowCount;
+  let recipientName;
+  let sku;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(18);
+  ({ sku, size, recipientName, overflowCount, onPress } = arg0);
+  const tmp4 = closure_8();
+  if (cResult[0] !== recipientName) {
+    const intl = tmp(1127).intl;
+    const obj2 = { username: recipientName };
+    const formatToPlainStringResult = intl.formatToPlainString(intl3.t["8uYD+I"], obj2);
+    cResult[0] = recipientName;
+    cResult[1] = formatToPlainStringResult;
+    tmp5 = formatToPlainStringResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === recipientName) {
+    if (cResult[3] === size) {
+      let tmp7;
+      let tmp9;
+      let tmp11;
+      if (cResult[4] === sku) {
+        tmp7 = cResult[5];
+      }
+      const moreOverlay = tmp4.moreOverlay;
+      if (cResult[6] !== overflowCount) {
+        const intl2 = tmp(1127).intl;
+        const obj3 = { count: overflowCount };
+        const formatResult = intl2.format(intl3.t.F6iMs4, obj3);
+        cResult[6] = overflowCount;
+        cResult[7] = formatResult;
+        tmp9 = formatResult;
+      } else {
+        tmp9 = cResult[7];
+      }
+      if (cResult[8] !== tmp9) {
+        const obj4 = { variant: "text-md/semibold", color: "text-overlay-light", children: tmp9 };
+        const tmp13 = metroRequire(Text_Text.Text, obj4);
+        cResult[8] = tmp9;
+        cResult[9] = tmp13;
+        tmp11 = tmp13;
+      } else {
+        tmp11 = cResult[9];
+      }
+      if (cResult[10] === tmp4.moreOverlay) {
+        let tmp14;
+        if (cResult[11] === tmp11) {
+          tmp14 = cResult[12];
+        }
+        if (cResult[13] === onPress) {
+          if (cResult[14] === tmp5) {
+            if (cResult[15] === tmp7) {
+              let tmp18;
+              if (cResult[16] === tmp14) {
+                tmp18 = cResult[17];
+              }
+              return tmp18;
+            }
+          }
+        }
+        const obj5 = { onPress, accessibilityLabel: tmp5, children: items };
+        items = [tmp7, tmp14];
+        const tmp21 = metroImportDefault(_false, obj5);
+        cResult[13] = onPress;
+        cResult[14] = tmp5;
+        cResult[15] = tmp7;
+        cResult[16] = tmp14;
+        cResult[17] = tmp21;
+        tmp18 = tmp21;
+      }
+      const obj6 = { style: moreOverlay, children: tmp11 };
+      const tmp17 = metroRequire(hasOwnProperty, obj6);
+      cResult[10] = tmp4.moreOverlay;
+      cResult[11] = tmp11;
+      cResult[12] = tmp17;
+      tmp14 = tmp17;
+    }
+  }
+  const tmp8 = metroRequire(WishlistItemCardDefault, { accessibilityHidden: true, sku, size, recipientName });
+  cResult[2] = recipientName;
+  cResult[3] = size;
+  cResult[4] = sku;
+  cResult[5] = tmp8;
+  tmp7 = tmp8;
+}) : ((recipientName) => {
+  let Text;
+  let intl;
+  let intl2;
+  let items;
+  let obj3;
+  let onPress;
+  let overflowCount;
+  let sku;
   recipientName = recipientName.recipientName;
   ({ sku, size, overflowCount, onPress } = recipientName);
-  const obj = { onPress, accessibilityLabel: null, children: null };
-  const intl = util.intl;
-  obj.accessibilityLabel = intl.formatToPlainString(util.t["8uYD+I"], { username: recipientName });
-  const items = [timestampProducer(WishlistItemCardDefault, { accessibilityHidden: true, sku, size, recipientName }), ];
-  const obj2 = { style: closure_8().moreOverlay, children: null };
-  const obj3 = { variant: "text-md/semibold", color: "text-overlay-light", children: null };
-  const intl2 = util.intl;
-  obj3.children = intl2.format(util.t.F6iMs4, { count: overflowCount });
-  obj2.children = timestampProducer(Text_Text.Text, obj3);
-  items[1] = timestampProducer(hasOwnProperty, obj2);
-  obj.children = items;
-  return React5(React3, obj);
-};
+  const obj = { onPress, accessibilityLabel: intl.formatToPlainString(intl3.t["8uYD+I"], { username: recipientName }), children: items };
+  const tmp = closure_8();
+  intl = intl3.intl;
+  items = [metroRequire(WishlistItemCardDefault, { accessibilityHidden: true, sku, size, recipientName }), ];
+  const obj2 = { style: tmp.moreOverlay, children: metroRequire(Text, obj3) };
+  obj3 = { variant: "text-md/semibold", color: "text-overlay-light", children: intl2.format(intl3.t.F6iMs4, { count: overflowCount }) };
+  Text = Text_Text.Text;
+  intl2 = intl3.intl;
+  items[1] = metroRequire(hasOwnProperty, obj2);
+  return metroImportDefault(_false, obj);
+});
+const result = size.fileFinishedImporting("modules/wishlists/native/WishlistViewMoreCard.tsx");
+
+export default tmp5;

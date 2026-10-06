@@ -1,29 +1,32 @@
-// Module ID: 14368
-// Function ID: 14369
+// Module ID: 13613
+// Function ID: 13614
 // Name: KeybindModKeys
-// Dependencies: [1364, 2]
+// Dependencies: [1370, 2]
 
-// Module 14368 (KeybindModKeys)
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+// Module 13613 (KeybindModKeys)
+import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
+let str;
+let str2;
+let str3;
 let PlatformUtils = PlatformUtils_mod;
 if (PlatformUtils.isMac()) {
-  let str = "cmd";
+  str = "cmd";
 } else {
   const _module1 = PlatformUtils;
   str = "ctrl";
 }
-let PlatformUtils = PlatformUtils_mod;
+PlatformUtils = PlatformUtils_mod;
 if (PlatformUtils.isMac()) {
-  let str2 = "opt";
+  str2 = "opt";
 } else {
   const _module3 = PlatformUtils;
   str2 = "alt";
 }
-let PlatformUtils = PlatformUtils_mod;
+PlatformUtils = PlatformUtils_mod;
 if (PlatformUtils.isMac()) {
-  let str3 = "return";
+  str3 = "return";
 } else {
   const _module5 = PlatformUtils;
   str3 = "enter";

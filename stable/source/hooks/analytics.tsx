@@ -1,17 +1,17 @@
-// Module ID: 9738
-// Function ID: 9739
+// Module ID: 8875
+// Function ID: 8876
 // Name: analytics
-// Dependencies: [19, 1241, 2]
+// Dependencies: [19, 558, 1253, 2]
 // Exports: useAnalyticsContext
 
-// Module 9738 (analytics)
-import AnalyticsUtils from "AnalyticsUtils" /* 1241 */;
-import noop from "module_19" /* 19 */;
+// Module 8875 (analytics)
+import AnalyticsUtils from "AnalyticsUtils" /* 1253 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("hooks/analytics.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("hooks/analytics.tsx");
 
-export const useAnalyticsContext = function useAnalyticsContext() {
-  return noop.useContext(AnalyticsUtils.AnalyticsContext);
-};
+export const useAnalyticsContext = () => react.useContext(AnalyticsUtils.AnalyticsContext);

@@ -1,17 +1,20 @@
-// Module ID: 13268
-// Function ID: 13269
+// Module ID: 12504
+// Function ID: 12505
 // Name: SuspiciousDownloadModalActionCreators
-// Dependencies: [4755, 13269, 1980, 2]
+// Dependencies: [4801, 12505, 1987, 2]
 
-// Module 13268 (SuspiciousDownloadModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+// Module 12504 (SuspiciousDownloadModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadModalActionCreators.native.tsx");
-
-export default {
+let obj = {
   show(href) {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(13269, dependencyMap.paths), "suspicious-download", { href });
+    const obj = ActionSheetActionCreatorsDefault;
+    const obj2 = { href };
+    obj.openLazy(asyncRequire(12505, dependencyMap.paths), "suspicious-download", obj2);
   }
 };
+const result = size.fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadModalActionCreators.native.tsx");
+
+export default obj;

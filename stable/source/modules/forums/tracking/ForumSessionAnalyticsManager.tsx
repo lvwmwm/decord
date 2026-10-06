@@ -1,26 +1,32 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 7194
+// Function ID: 7195
 // Name: ForumSessionAnalyticsManager
-// Dependencies: [1255, 2]
+// Dependencies: [1267, 2]
 
-// Module 8045 (ForumSessionAnalyticsManager)
-import v1 from "v1" /* 1255 */;
+// Module 7194 (ForumSessionAnalyticsManager)
+import v1 from "v1" /* 1267 */;
 import size from "module_2" /* 2 */;
 
 class ForumSessionAnalyticsManager {
+  getForumChannelSessionId(channelId) {
+    let obj2;
+    let obj4;
+    const self = this;
+    if (null == this.session) {
+      const obj = { channelId, sessionId: obj2.v4() };
+      self.session = obj;
+      obj2 = v1;
+    }
+    if (self.session.channelId !== channelId) {
+      const obj3 = { channelId, sessionId: obj4.v4() };
+      self.session = obj3;
+      obj4 = v1;
+    }
+    return self.session.sessionId;
+  }
 }
-ForumSessionAnalyticsManager.prototype["getForumChannelSessionId"] = function getForumChannelSessionId(channelId) {
-  const self = this;
-  if (null == this.session) {
-    const obj = { channelId, sessionId: v1.v4() };
-    self.session = obj;
-  }
-  if (self.session.channelId !== channelId) {
-    const obj3 = { channelId, sessionId: v1.v4() };
-    self.session = obj3;
-  }
-  return self.session.sessionId;
-};
+const prototype = ForumSessionAnalyticsManager.prototype;
+const prototype2 = ForumSessionAnalyticsManager.prototype;
 const result = size.fileFinishedImporting("modules/forums/tracking/ForumSessionAnalyticsManager.tsx");
 
-export default Object.create(ForumSessionAnalyticsManager.prototype);
+export default Object.create(prototype2);

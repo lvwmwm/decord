@@ -7,8 +7,6 @@
 // Module 66 (customBubblingEventTypes)
 import _modDef38 from "module_38" /* 38 */;
 
-importDefault = arg2;
-const dependencyMap = arg6;
 const customBubblingEventTypes = {};
 const obj2 = {};
 const map = new Map();
@@ -17,34 +15,39 @@ const map1 = new Map();
 export { customBubblingEventTypes };
 export const customDirectEventTypes = obj2;
 export const register = function register(arg0, fn) {
-  _modDef38(!map.has(arg0), "Tried to register two views with the same name %s", arg0);
+  const tmp = _modDef38;
+  tmp(!map.has(arg0), "Tried to register two views with the same name %s", arg0);
   let str = "null";
   const obj = map;
+  const tmp3 = _modDef38;
   if (null !== fn) {
     str = typeof fn;
   }
-  _modDef38(typeof fn === "function", "View config getter callback for component `%s` must be a function (received `%s`)", arg0, str);
+  tmp3(typeof fn === "function", "View config getter callback for component `%s` must be a function (received `%s`)", arg0, str);
   const result = obj.set(arg0, fn);
   return arg0;
 };
 export const get = function get(arg0) {
-  value = map1.get(arg0);
+  let bubblingEventTypes;
+  let directEventTypes;
+  let value = map1.get(arg0);
   if (null == value) {
-    value2 = map.get(arg0);
+    const value2 = map.get(arg0);
     if (typeof value2 !== "function") {
       let str = "null";
+      const tmp17 = _modDef38;
       if (null !== value2) {
         str = typeof value2;
       }
       let str3 = "";
       if (typeof arg0[0] === "string") {
         str3 = "";
+        const obj3 = /[a-z]/;
         if (obj3.test(arg0[0])) {
           str3 = " Make sure to start component names with a capital letter.";
         }
-        obj3 = /[a-z]/;
       }
-      _modDef38(false, "View config getter callback for component `%s` must be a function (received `%s`).%s", arg0, str, str3);
+      tmp17(false, "View config getter callback for component `%s` must be a function (received `%s`).%s", arg0, str, str3);
     }
     const value1Result = value2();
     _modDef38(value1Result, "View config not found for component `%s`", arg0);

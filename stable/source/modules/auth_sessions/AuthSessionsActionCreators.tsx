@@ -1,126 +1,80 @@
-// Module ID: 15230
-// Function ID: 15231
+// Module ID: 14473
+// Function ID: 14474
 // Name: AuthSessionsActionCreators
-// Dependencies: [5, 1074, 1271, 573, 2]
+// Dependencies: [5, 1086, 1283, 585, 2]
 // Exports: clearAuthSessions, fetchAuthSessions, logOutSessions
 
-// Module 15230 (AuthSessionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 14473 (AuthSessionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_5 = async function _fetchAuthSessions() {
-  closure_1 = tmp2;
-  closure_0 = tmp5;
-  const HTTP = HTTPUtils.HTTP;
-  closure_128_0 = await HTTP.get({ url: constants.AUTH_SESSIONS, rejectWithError: false });
-  const body = closure_128_0.body;
-  if (body != null) {
-    const user_sessions = body.user_sessions;
-  }
-  if (null != user_sessions) {
-    closure_129_1(closure_129_2[3]).dispatch({ type: "FETCH_AUTH_SESSIONS_SUCCESS", sessions: closure_128_0.body.user_sessions });
-    closure_129_1(closure_129_2[3]);
-  }
-  return closure_128_0;
-};
-let closure_6 = async function _logOutSessions(arg0, value) {
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp5 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
+let length;
+
+let obj = function _fetchAuthSessions() {
+  obj = _asyncToGenerator(async () => {
+    let c2;
+    let c3;
+    let closure_1;
+    let user_sessions;
+    const HTTP = HTTPUtils.HTTP;
+    const obj4 = { url: constants.AUTH_SESSIONS, rejectWithError: false };
+    const value = await HTTP.get(obj4);
+    const body = value.body;
+    if (body != null) {
+      user_sessions = body.user_sessions;
     }
-  } else {
-    try {
-      c4 = 2;
-      let num2 = 0;
-      if (0 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          closure_2 = tmp3;
-          closure_1 = tmp2;
-          closure_129_0 = closure_0;
-          let HTTP;
-          closure_129_1 = undefined;
-          const _Array = Array;
-          if (Array.isArray(closure_0)) {
-            let items = arr2;
-            if (num2 === arr2.length) {
-              c4 = 3;
-              return { value: "HermesInternal", done: null };
-            }
-          } else {
-            items = [arr2];
-            closure_129_0 = items;
-          }
-          HTTP = HTTPUtils.HTTP;
-          num2 = HTTP.post;
-          const request = { url: constants.AUTH_SESSIONS_LOGOUT, body: null, rejectWithError: false };
-          const obj4 = { session_id_hashes: items };
-          request.body = obj4;
-          num2(request);
-          c3 = 1;
-          c4 = 1;
-        }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
-      } else {
-        closure_129_1 = value;
-        const obj6 = { type: "LOGOUT_AUTH_SESSIONS_SUCCESS", sessionIdHashes: closure_129_0 };
-        closure_130_1(closure_130_2[3]).dispatch(obj6);
-        c4 = 3;
-        const obj7 = { value: closure_129_1, done: true };
-        return obj7;
+    if (null != user_sessions) {
+      const obj7 = { type: "FETCH_AUTH_SESSIONS_SUCCESS", sessions: value.body.user_sessions };
+      obj = closure_129_1(closure_129_2[3]);
+      obj.dispatch(obj7);
+    }
+    return value;
+  });
+  return obj(...arguments);
+};
+obj = function _logOutSessions() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c3;
+    let closure_0;
+    let closure_2;
+    let obj4;
+    length = arg0;
+    let value = tmp;
+    let items = length;
+    const _Array = Array;
+    if (Array.isArray(length)) {
+      items = arr2;
+      if (0 === length.length) {
+        let c4 = 3;
+        return { value: "IconComponent", done: null };
       }
-    } catch (tmp18) {
-      c4 = tmp;
-      throw tmp18;
+    } else {
+      items = [length];
     }
-  }
+    const HTTP = HTTPUtils.HTTP;
+    const request = { url: constants.AUTH_SESSIONS_LOGOUT, body: obj4, rejectWithError: false };
+    obj4 = { session_id_hashes: items };
+    value = await HTTP.post(request);
+    const obj7 = { type: "LOGOUT_AUTH_SESSIONS_SUCCESS", sessionIdHashes: items };
+    obj = closure_130_1(closure_130_2[3]);
+    obj.dispatch(obj7);
+    return value;
+  });
+  return obj(...arguments);
 };
-const Endpoints = fn(1074).Endpoints;
-const size = fn(2);
+const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/auth_sessions/AuthSessionsActionCreators.tsx");
 
 export const fetchAuthSessions = function fetchAuthSessions() {
-  const self = this;
-  const apply = closure_5.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const clearAuthSessions = function clearAuthSessions() {
-  DispatcherDefault.dispatch({ type: "FETCH_AUTH_SESSIONS_SUCCESS", sessions: [] });
+  obj = DispatcherDefault;
+  obj.dispatch({ type: "FETCH_AUTH_SESSIONS_SUCCESS", sessions: [] });
 };
 export const logOutSessions = function logOutSessions() {
-  const self = this;
-  const apply = closure_6.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

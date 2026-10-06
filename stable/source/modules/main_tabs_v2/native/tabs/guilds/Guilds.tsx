@@ -1,36 +1,92 @@
-// Module ID: 16355
-// Function ID: 16356
+// Module ID: 15646
+// Function ID: 15647
 // Name: guilds/Guilds
-// Dependencies: [19, 11381, 21, 16356, 4641, 11768, 4498, 15369, 16357, 16706, 15453, 2]
+// Dependencies: [19, 10581, 21, 558, 576, 15647, 4690, 10671, 14616, 15648, 16001, 14700, 4544, 2]
 
-// Module 16355 (guilds/Guilds)
-import native from "native" /* 4498 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4641 */;
-import QuestsEligibility from "QuestsEligibility" /* 11768 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 15369 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16356 */;
-import MainChannelsDefault from "MainChannels" /* 16357 */;
-import YouBarDefault from "YouBar" /* 16706 */;
-import noop from "module_19" /* 19 */;
+// Module 15646 (guilds/Guilds)
+import react2 from "react" /* 576 */;
+import native from "native" /* 4544 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4690 */;
+import MainTabsConstants from "MainTabsConstants" /* 10581 */;
+import QuestsEligibility from "QuestsEligibility" /* 10671 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 14616 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15647 */;
+import MainChannelsDefault from "MainChannels" /* 15648 */;
+import YouBarDefault from "YouBar" /* 16001 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const QuestDockDefault = tmp3(15453);
-require = fn;
-const YouBarNavigatorScreens = fn(11381).YouBarNavigatorScreens;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/Guilds.tsx");
-
-export default noop.memo(function GuildsOnly() {
-  const trackTabPerformance = TabsPerformanceTracker.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
+let closure_4;
+let hasOwnProperty;
+let tmp3;
+const QuestDockDefault = tmp3(14700);
+const YouBarNavigatorScreens = MainTabsConstants.YouBarNavigatorScreens;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp13;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const obj2 = TabsPerformanceTracker;
+  const trackTabPerformance = obj2.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
+  const tmp6 = useColorThemeBackgroundDefault();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = QuestsEligibility;
+    const isEligibleForQuests = tmpResult.getIsEligibleForQuests();
+    cResult[0] = isEligibleForQuests;
+    first = isEligibleForQuests;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const QuestDockExternalCoordinationContextProvider = tmp(14616).QuestDockExternalCoordinationContextProvider;
+    const items = [React3(MainChannelsDefault, {}), React3(YouBarDefault, {}), ];
+    const tmp10 = hasOwnProperty;
+    const tmp11 = React3;
+    if (first) {
+      first = tmp11(tmp5(14700), {});
+    }
+    const obj3 = { children: items };
+    items[2] = first;
+    const tmp10Result = tmp10(QuestDockExternalCoordinationContextProvider, obj3);
+    cResult[1] = tmp10Result;
+    tmp9 = tmp10Result;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] !== tmp6) {
+    const obj4 = { gradient: tmp6, children: tmp9 };
+    const tmp15 = React3(native.ThemeContextProvider, obj4);
+    cResult[2] = tmp6;
+    cResult[3] = tmp15;
+    tmp13 = tmp15;
+  } else {
+    tmp13 = cResult[3];
+  }
+  return tmp13;
+}) : (() => {
+  let QuestDockExternalCoordinationContextProvider;
+  let items;
+  let tmp7;
+  const obj = TabsPerformanceTracker;
+  const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
   const tmp4 = useColorThemeBackgroundDefault();
-  let isEligibleForQuests = QuestsEligibility.getIsEligibleForQuests();
-  const obj3 = { gradient: tmp4, children: null };
-  const items = [React4(MainChannelsDefault, {}), React4(YouBarDefault, {}), ];
+  const obj2 = QuestsEligibility;
+  let isEligibleForQuests = obj2.getIsEligibleForQuests();
+  const obj3 = { gradient: tmp4, children: tmp7(QuestDockExternalCoordinationContextProvider, { children: items }) };
+  const ThemeContextProvider = native.ThemeContextProvider;
+  QuestDockExternalCoordinationContextProvider = QuestDockExternalCoordinationContext.QuestDockExternalCoordinationContextProvider;
+  items = [React3(MainChannelsDefault, {}), React3(YouBarDefault, {}), ];
+  tmp7 = hasOwnProperty;
   if (isEligibleForQuests) {
     isEligibleForQuests = tmp6(QuestDockDefault, {});
   }
   items[2] = isEligibleForQuests;
-  obj3.children = hasOwnProperty(QuestDockExternalCoordinationContext.QuestDockExternalCoordinationContextProvider, { children: items });
-  return React4(native.ThemeContextProvider, obj3);
-}, () => true);
+  return React3(ThemeContextProvider, obj3);
+}), () => true);
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/Guilds.tsx");
+
+export default memoResult;

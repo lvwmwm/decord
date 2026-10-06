@@ -1,69 +1,193 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 14244
+// Function ID: 14245
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 14994, 14891, 14997, 14892, 15002, 14996, 551, 2]
-// Exports: useSettingSearchResults
+// Dependencies: [32, 19, 14237, 14129, 14240, 14130, 558, 576, 14245, 14239, 551, 2]
 
-// Module 15001 (useSettingSearchResults)
+// Module 14244 (useSettingSearchResults)
 import debounceDefault from "debounce" /* 551 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14994 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 14891 */;
+import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 14245 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14237 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 14129 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let setting;
+
+let react = react_mod;
 let closure_7 = [];
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/settings/native/search/hooks/useSettingSearchResults.tsx");
-
-export const useSettingSearchResults = function useSettingSearchResults() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+  let closure_4;
+  let first;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp15;
+  let tmp18;
+  let tmp19;
+  let tmp = first;
+  let obj = first(576);
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const self = this;
+    const self2 = this;
+    const tmp6 = UserSettingSearchManagerDefault;
+    const tmpResult = tmp(14239);
+    const tmp62 = new tmp6(tmpResult.getSettingSearchableTitles());
+    cResult[0] = tmp62;
+    first = tmp62;
+  } else {
+    first = cResult[0];
+  }
+  [tmp10, importDefault] = _slicedToArray(react.useState(closure_7), 2);
+  const tmp9 = _slicedToArray(react.useState(closure_7), 2);
+  [tmp12, dependencyMap] = _slicedToArray(react.useState(false), 2);
+  const tmp11 = _slicedToArray(react.useState(false), 2);
+  const tmp13 = _slicedToArray(react.useState(10), 2);
+  [tmp14, _slicedToArray] = tmp13;
+  const obj3 = react;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp17 = debounceDefault((arg0) => {
+      const field = SettingBlocklistStore.getField("blocklist");
+      const scoredSearchResults = first.getScoredSearchResults(arg0);
+      const found = scoredSearchResults.filter((setting) => {
+        setting = setting.setting;
+        const obj = closure_2_1(closure_2_2[4]);
+        let tmp3 = !obj.isBlocked(setting, closure_0);
+        obj.isBlocked(setting, closure_0);
+        const tmp = closure_2_2;
+        if (tmp3) {
+          tmp3 = !first(tmp[5]).SETTING_RENDERER_CONFIG[setting].unsearchable;
+        }
+        return tmp3;
+      });
+      let tmp = importDefault(found);
+      _slicedToArray(Math.max(Math.min(found.length, 10), 5));
+      let tmp3 = dependencyMap(false);
+    }, 350);
+    cResult[1] = tmp17;
+    tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[1];
+  }
+  react = tmp15;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function q() {
+      const obj = {
+        equalityFn(arg0, arg1) {
+          return arg0 === arg1;
+        }
+      };
+      let closure_0 = UserSettingSearchStore.subscribe((query) => {
+        const str = query.query;
+        return str.trim();
+      }, (arg0) => {
+        if ("" === arg0) {
+          const cancel = closure_1_4.cancel;
+          if (cancel != null) {
+            cancel();
+          }
+          closure_1_1(closure_2_7);
+          closure_1_2(false);
+        } else {
+          closure_1_2(true);
+          closure_1_4(arg0);
+        }
+      }, obj);
+      return () => {
+        closure_0();
+        const cancel = closure_4.cancel;
+        if (cancel != null) {
+          cancel();
+        }
+      };
+    };
+    const items = [tmp15];
+    cResult[2] = fn;
+    cResult[3] = items;
+    tmp19 = items;
+    tmp18 = fn;
+  } else {
+    tmp18 = cResult[2];
+    tmp19 = cResult[3];
+  }
+  const effect = obj3.useEffect(tmp18, tmp19);
+  if (cResult[4] === tmp12) {
+    if (cResult[5] === tmp14) {
+      let tmp21;
+      if (cResult[6] === tmp10) {
+        tmp21 = cResult[7];
+      }
+      return tmp21;
+    }
+  }
+  const obj2 = { settings: tmp10, isLoading: tmp12, placeholderCount: tmp14 };
+  cResult[4] = tmp12;
+  cResult[5] = tmp14;
+  cResult[6] = tmp10;
+  cResult[7] = obj2;
+  tmp21 = obj2;
+}) : (() => {
+  let closure_1;
+  let closure_2;
+  let closure_3;
+  let field;
+  let isLoading;
+  let memo1;
+  let placeholderCount;
+  let settings;
   const memo = memo1.useMemo(() => {
-    const tmp = closure_1(15002);
-    const obj = memo(14996);
-    return new tmp(memo(14996).getSettingSearchableTitles());
+    const tmp = closure_1(closure_2[8]);
+    const obj = memo(closure_2[9]);
+    const tmp2 = new tmp(obj.getSettingSearchableTitles());
+    return tmp2;
   }, []);
-  const settings = _slicedToArray(memo1.useState(closure_7), 2);
-  closure_1 = settings[1];
-  const isLoading = _slicedToArray(memo1.useState(false), 2);
-  dependencyMap = isLoading[1];
-  const placeholderCount = _slicedToArray(memo1.useState(10), 2);
-  _slicedToArray = placeholderCount[1];
+  [settings, closure_1] = memo1.useState(closure_7);
+  [isLoading, closure_2] = memo1.useState(false);
+  [placeholderCount, _slicedToArray] = memo1.useState(10);
   const items = [memo];
   memo1 = memo1.useMemo(() => debounceDefault((arg0) => {
     const field2 = field.getField("blocklist");
     scoredSearchResults = scoredSearchResults.getScoredSearchResults(arg0);
     const found = scoredSearchResults.filter((setting) => {
       setting = setting.setting;
-      const isBlockedResult = closure_2_1(14997).isBlocked(setting, closure_0);
-      let tmp3 = !isBlockedResult;
-      if (!isBlockedResult) {
-        tmp3 = !scoredSearchResults(14892).SETTING_RENDERER_CONFIG[setting].unsearchable;
+      const obj = closure_2_1(closure_2_2[4]);
+      let tmp3 = !obj.isBlocked(setting, closure_0);
+      obj.isBlocked(setting, closure_0);
+      const tmp = closure_2_2;
+      if (tmp3) {
+        tmp3 = !scoredSearchResults(tmp[5]).SETTING_RENDERER_CONFIG[setting].unsearchable;
       }
       return tmp3;
     });
-    closure_1_1(found);
+    let tmp = closure_1_1(found);
     closure_1_3(Math.max(Math.min(found.length, 10), 5));
-    dependencyMap(false);
+    let tmp3 = closure_1_2(false);
   }, 350), items);
   const items1 = [memo1];
   const effect = memo1.useEffect(() => {
-    closure_0 = UserSettingSearchStore.subscribe((query) => query.query.trim(), (arg0) => {
+    const obj = {
+      equalityFn(arg0, arg1) {
+        return arg0 === arg1;
+      }
+    };
+    let closure_0 = UserSettingSearchStore.subscribe((query) => {
+      const str = query.query;
+      return str.trim();
+    }, (arg0) => {
       if ("" === arg0) {
         const cancel = memo1.cancel;
         if (cancel != null) {
           cancel();
         }
         closure_1_1(closure_2_7);
-        dependencyMap(false);
+        closure_1_2(false);
       } else {
-        dependencyMap(true);
+        closure_1_2(true);
         memo1(arg0);
       }
-    }, {
-      equalityFn(arg0, arg1) {
-        return arg0 === arg1;
-      }
-    });
+    }, obj);
     return () => {
       closure_0();
       const cancel = memo1.cancel;
@@ -72,5 +196,8 @@ export const useSettingSearchResults = function useSettingSearchResults() {
       }
     };
   }, items1);
-  return { settings: settings[0], isLoading: isLoading[0], placeholderCount: placeholderCount[0] };
-};
+  return { settings, isLoading, placeholderCount };
+});
+const result = size.fileFinishedImporting("modules/settings/native/search/hooks/useSettingSearchResults.tsx");
+
+export const useSettingSearchResults = tmp2;

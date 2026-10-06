@@ -1,11 +1,11 @@
-// Module ID: 17700
-// Function ID: 17701
-// Dependencies: [1883, 17701, 2]
+// Module ID: 17057
+// Function ID: 17058
+// Dependencies: [1890, 17058, 2]
 
-// Module 17700
-import i18n from "i18n" /* 1883 */;
-import updateRulesDefault from "updateRules" /* 17701 */;
+// Module 17057
+import I18N from "I18N" /* 1890 */;
+import updateRulesDefault from "updateRules" /* 17058 */;
 import size from "module_2" /* 2 */;
 
-const updateRules = i18n.setUpdateRules(updateRulesDefault);
+const updateRules = I18N.setUpdateRules(updateRulesDefault);
 const result = size.fileFinishedImporting("i18n/native/index.tsx");

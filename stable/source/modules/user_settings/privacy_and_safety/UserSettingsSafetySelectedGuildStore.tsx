@@ -1,24 +1,26 @@
-// Module ID: 16197
-// Function ID: 16198
+// Module ID: 15474
+// Function ID: 15475
 // Name: UserSettingsSafetySelectedGuildStore
-// Dependencies: [560, 2]
+// Dependencies: [570, 2]
 // Exports: getSelectedGuildId, setSelectedGuildId
 
-// Module 16197 (UserSettingsSafetySelectedGuildStore)
-import module_560 from "module_560" /* 560 */;
+// Module 15474 (UserSettingsSafetySelectedGuildStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = { selectedGuildId: "0" };
-const useUserSafetySettingsSelectedGuildStore = module_560.create((arg0) => {
+const useUserSafetySettingsSelectedGuildStore = module_570.create((arg0) => {
   closure_0 = arg0;
-  const obj = {};
+  let obj = {
+    setSelectedGuildId(selectedGuildId) {
+      const obj = { selectedGuildId };
+      closure_0(obj);
+    },
+    reset() {
+      closure_0(closure_0);
+    }
+  };
   const merged = Object.assign(closure_0);
-  obj.setSelectedGuildId = function setSelectedGuildId(selectedGuildId) {
-    closure_0({ selectedGuildId });
-  };
-  obj.reset = function reset() {
-    closure_0(closure_0);
-  };
   return obj;
 });
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/UserSettingsSafetySelectedGuildStore.tsx");

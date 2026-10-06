@@ -1,65 +1,72 @@
-// Module ID: 9093
-// Function ID: 9094
+// Module ID: 8240
+// Function ID: 8241
 // Name: PremiumWishlistItemRecord
-// Dependencies: [5760, 9091, 1074, 2]
+// Dependencies: [5824, 8238, 1086, 2]
 // Exports: isPremiumWishlistItemRecord
 
-// Module 9093 (PremiumWishlistItemRecord)
-import SKURecord from "SKURecord" /* 5760 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9091 */;
+// Module 8240 (PremiumWishlistItemRecord)
+import Constants from "Constants" /* 1086 */;
+import SKURecord from "SKURecord" /* 5824 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8238 */;
+import size from "module_2" /* 2 */;
 
-const SKUProductLines = fn(1074).SKUProductLines;
-const prototype = function PremiumWishlistItemRecord(sku) {
-  const tmp = new prototype(sku, new.target, new.target);
-  tmp.skuProductLine = SKUProductLines.PREMIUM;
-  tmp.sku = sku.sku;
-  return tmp;
-}.prototype;
-class prototype extends tmp2 {
+const SKUProductLines = Constants.SKUProductLines;
+class PremiumWishlistItemRecord extends BaseWishlistItemRecord {
+  constructor(sku) {
+    const tmp = new PremiumWishlistItemRecord(sku, new.target, this);
+    tmp.skuProductLine = SKUProductLines.PREMIUM;
+    tmp.sku = sku.sku;
+    return tmp;
+  }
+  static fromServer(sku) {
+    const fromServer = SKURecord.createFromServer(sku.sku);
+    if (null == fromServer) {
+      const _Error = Error;
+      const self4 = this;
+      const self5 = this;
+      const error = new Error("SKU not found");
+      throw error;
+    } else {
+      const obj = { sku: fromServer };
+      const merged = Object.assign(sku);
+      const self = this;
+      const tmp2 = PremiumWishlistItemRecord;
+      if (typeof PremiumWishlistItemRecord === "function") {
+        const self2 = this;
+        const self3 = this;
+        const tmp8 = new PremiumWishlistItemRecord(obj, sku, tmp2, this);
+        tmp8.skuProductLine = SKUProductLines.PREMIUM;
+        tmp8.sku = obj.sku;
+        return tmp8;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
+  }
+  static fromSKU(id) {
+    let name;
+    let tmp = null;
+    if (null != id) {
+      const obj = { sku_id: id.id, sku_product_line: SKUProductLines.PREMIUM, sku_name: name, sku: id };
+      name = id.name;
+      const self = this;
+      if (typeof PremiumWishlistItemRecord === "function") {
+        const self2 = this;
+        const self3 = this;
+        const tmp6 = new PremiumWishlistItemRecord(obj, name, tmp2, this, SKUProductLines);
+        tmp6.skuProductLine = SKUProductLines.PREMIUM;
+        tmp6.sku = obj.sku;
+        tmp = tmp6;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
+    return tmp;
+  }
 }
-prototype["fromServer"] = function fromServer(sku) {
-  const fromServer = SKURecord.createFromServer(sku.sku);
-  if (null == fromServer) {
-    const _Error = Error;
-    const error = new Error("SKU not found");
-    throw error;
-  } else {
-    const obj = {};
-    const merged = Object.assign(sku);
-    obj.sku = fromServer;
-    if (typeof prototype === "function") {
-      const tmp11 = new prototype(obj, sku, tmp2, new.target);
-      tmp11.skuProductLine = SKUProductLines.PREMIUM;
-      tmp11.sku = obj.sku;
-      return tmp11;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-    tmp2 = prototype;
-  }
-};
-prototype["fromSKU"] = function fromSKU(id) {
-  let tmp = null;
-  if (null != id) {
-    const obj = { sku_id: id.id, sku_product_line: SKUProductLines.PREMIUM, sku_name: null, sku: null };
-    const name = id.name;
-    obj.sku_name = name;
-    obj.sku = id;
-    if (typeof prototype === "function") {
-      const tmp9 = new prototype(obj, name, tmp2, new.target, tmp3);
-      tmp9.skuProductLine = tmp3.PREMIUM;
-      tmp9.sku = obj.sku;
-      tmp = tmp9;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  }
-  return tmp;
-};
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/wishlists/records/PremiumWishlistItemRecord.tsx");
 
-export default prototype;
+export default PremiumWishlistItemRecord;
 export const isPremiumWishlistItemRecord = function isPremiumWishlistItemRecord(arg0) {
-  return arg0 instanceof prototype;
+  return arg0 instanceof PremiumWishlistItemRecord;
 };

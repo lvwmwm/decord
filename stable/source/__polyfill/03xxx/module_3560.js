@@ -1,9 +1,0 @@
-// Module ID: 3560
-// Function ID: 3561
-// Dependencies: [1121]
-
-// Module 3560
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "396ad17db757955cb008a01eef27281c", name: "hr.messages.396ad17db757955cb008a01eef27281c.compiled.messages", type: "jsona" });

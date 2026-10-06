@@ -1,10 +1,10 @@
-// Module ID: 12560
-// Function ID: 12561
+// Module ID: 11653
+// Function ID: 11654
 // Name: fitCardsInGrid
 // Dependencies: [2]
 // Exports: default
 
-// Module 12560 (fitCardsInGrid)
+// Module 11653 (fitCardsInGrid)
 import size from "module_2" /* 2 */;
 
 function isNewLayoutBetter(unusedSpace, unusedSpace2) {
@@ -52,6 +52,11 @@ function isNewLayoutBetter(unusedSpace, unusedSpace2) {
 let result = size.fileFinishedImporting("modules/voice_panel/native/utils/fitCardsInGrid.tsx");
 
 export default function fitCardsInGrid(arg0) {
+  let availableHeight;
+  let availableWidth;
+  let cardCount;
+  let gutterSize;
+  let sum1;
   ({ cardCount, gutterSize, availableWidth, availableHeight } = arg0);
   let obj = { columns: 1, rows: 0, cardSize: 0, overscroll: 0, unusedSpace: Infinity };
   let num = 1;
@@ -69,13 +74,8 @@ export default function fitCardsInGrid(arg0) {
       }
       let result1 = diff1 / num;
       let sum = rounded + num2;
-      let obj2 = { unusedSpace: null, columns: null, overscroll: null, rows: null, cardSize: null };
-      let sum1 = result1 * sum + (sum - 1) * gutterSize;
-      obj2.unusedSpace = availableWidth * availableHeight - (result1 * num + diff * gutterSize) * sum1;
-      obj2.columns = num;
-      obj2.overscroll = availableHeight - sum1;
-      obj2.rows = sum;
-      obj2.cardSize = result1;
+      let obj2 = { unusedSpace: availableWidth * availableHeight - (result1 * num + diff * gutterSize) * sum1, columns: num, overscroll: availableHeight - sum1, rows: sum, cardSize: result1 };
+      sum1 = result1 * sum + (sum - 1) * gutterSize;
       let tmp11 = isNewLayoutBetter;
       let tmp12 = obj;
       if (isNewLayoutBetter(obj2, obj)) {
@@ -85,11 +85,8 @@ export default function fitCardsInGrid(arg0) {
       if (obj2.overscroll < 0) {
         let result2 = (availableHeight - (obj2.rows - 1) * gutterSize) / obj2.rows;
         let sum2 = result2 * obj2.rows + (obj2.rows - 1) * gutterSize;
-        let obj3 = {};
+        let obj3 = { unusedSpace: availableWidth * availableHeight - (result2 * obj2.columns + (obj2.columns - 1) * gutterSize) * sum2, overscroll: availableHeight - sum2, cardSize: result2 };
         let merged = Object.assign(obj2);
-        obj3.unusedSpace = availableWidth * availableHeight - (result2 * obj2.columns + (obj2.columns - 1) * gutterSize) * sum2;
-        obj3.overscroll = availableHeight - sum2;
-        obj3.cardSize = result2;
         tmp13 = tmp12;
         if (tmp11(obj3, tmp12)) {
           tmp13 = obj3;

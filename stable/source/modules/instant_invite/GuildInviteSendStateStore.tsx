@@ -1,23 +1,28 @@
-// Module ID: 13439
-// Function ID: 13440
+// Module ID: 12548
+// Function ID: 12549
 // Name: GuildInviteSendStateStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1260, 2]
 // Exports: setSendState
 
-// Module 13439 (GuildInviteSendStateStore)
-import module_560 from "module_560" /* 560 */;
+// Module 12548 (GuildInviteSendStateStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const useGuildInviteSendStates = module_560.create(() => ({}));
+const useGuildInviteSendStates = module_570.create(() => ({}));
 const result = size.fileFinishedImporting("modules/instant_invite/GuildInviteSendStateStore.tsx");
 
 export const setSendState = function setSendState(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_1;
   _require = arg0;
   dependencyMap = arg1;
-  closure_2 = arg2;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  let closure_2 = arg2;
+  let obj = require("react-native");
+  obj.batchUpdates(() => {
+    let obj;
     obj.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);

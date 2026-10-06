@@ -1,28 +1,52 @@
-// Module ID: 15124
-// Function ID: 15125
+// Module ID: 14367
+// Function ID: 14368
 // Name: SyncContactsSetting
-// Dependencies: [5530, 1372, 8265, 1074, 12962, 15125, 11754, 1115, 2]
+// Dependencies: [5594, 1378, 7421, 1086, 558, 576, 12070, 14368, 10874, 1127, 2]
 
-// Module 15124 (SyncContactsSetting)
-import util from "util" /* 1115 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12962 */;
-import ContactSyncSettings from "ContactSyncSettings" /* 15125 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 14367 (SyncContactsSetting)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12070 */;
+import ContactSyncSettings from "ContactSyncSettings" /* 14368 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PlatformTypes = fn(1074).PlatformTypes;
-const SettingBuilders = fn(11754);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const PlatformTypes = Constants.PlatformTypes;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  const obj2 = ContactSyncUtils;
+  const contactSyncAccount = obj2.useContactSyncAccount();
+  if (cResult[0] !== contactSyncAccount) {
+    const tmpResult = ContactSyncUtils;
+    const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
+    cResult[0] = contactSyncAccount;
+    cResult[1] = isContactSyncEnabledResult;
+    tmp5 = isContactSyncEnabledResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
+  const obj = ContactSyncUtils;
+  const contactSyncAccount = obj.useContactSyncAccount();
+  const obj2 = ContactSyncUtils;
+  return obj2.isContactSyncEnabled(contactSyncAccount);
+});
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.uSvEy7);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.uSvEy7);
   },
-  parent: fn(8265).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: function useContactSyncSettingValue() {
-    const contactSyncAccount = ContactSyncUtils.useContactSyncAccount();
-    return ContactSyncUtils.isContactSyncEnabled(contactSyncAccount);
-  },
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: tmp2,
   onValueChange: function onContactSyncSettingValueChange(arg0) {
     const localAccount = ConnectedAccountsStore.getLocalAccount(PlatformTypes.CONTACTS);
     const currentUser = UserStore.getCurrentUser();
@@ -30,10 +54,11 @@ const toggle = SettingBuilders.createToggle({
     if (currentUser != null) {
       phone = currentUser.phone;
     }
-    ContactSyncSettings.handleSyncContacts(localAccount, phone, arg0);
+    const obj = ContactSyncSettings;
+    obj.handleSyncContacts(localAccount, phone, arg0);
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SyncContactsSetting.tsx");
 
 export default toggle;

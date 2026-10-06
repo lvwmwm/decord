@@ -1,40 +1,27 @@
 // Module ID: 1796
 // Function ID: 1797
-// Dependencies: [19, 1797]
-// Exports: useFrameCallback
+// Dependencies: [32, 19, 1688, 1716]
+// Exports: useSharedValue
 
 // Module 1796
-import FrameCallbackRegistryJSDefault from "FrameCallbackRegistryJS" /* 1797 */;
-import noop from "module_19" /* 19 */;
+import startMapper from "startMapper" /* 1688 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-({ useEffect: closure_0, useRef: closure_1 } = noop);
-let closure_2 = new FrameCallbackRegistryJSDefault();
+let c3;
+let closure_4;
+({ useEffect: c3, useState: closure_4 } = react);
 
-export const useFrameCallback = function useFrameCallback(fn, arg1) {
-  closure_0 = fn;
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = true;
-  }
-  closure_1 = undefined;
-  const tmp = closure_1({
-    setActive(isActive) {
-      const result = closure_2.manageStateFrameCallback(closure_1.current.callbackId, isActive);
-      closure_1.current.isActive = isActive;
-    },
-    isActive: flag,
-    callbackId: -1
-  });
-  closure_1 = tmp;
-  const items = [fn, flag];
-  closure_0(() => {
-    closure_1.current.callbackId = closure_2.registerFrameCallback(callbackId);
-    ({ current: closure_0, current } = closure_1);
-    current.setActive(closure_1.current.isActive);
-    return () => {
-      const result = closure_2_2.unregisterFrameCallback(callbackId.callbackId);
-      callbackId.callbackId = -1;
-    };
+export const useSharedValue = function useSharedValue(point) {
+  let closure_0 = point;
+  const first = _slicedToArray(closure_4(() => {
+    const obj = startMapper;
+    return obj.makeMutable(point);
+  }), 1)[0];
+  const items = [first];
+  closure_3(() => () => {
+    const obj = point(first[3]);
+    obj.cancelAnimation(closure_1_1);
   }, items);
-  return tmp.current;
+  return first;
 };

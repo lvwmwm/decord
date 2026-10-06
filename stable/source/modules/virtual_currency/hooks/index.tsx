@@ -1,18 +1,18 @@
-// Module ID: 9161
-// Function ID: 9162
-// Dependencies: [2, 9162, 9169]
+// Module ID: 8312
+// Function ID: 8313
+// Dependencies: [2, 8313, 8320]
 
-// Module 9161
+// Module 8312
+import useFetchVirtualCurrencyBalance from "useFetchVirtualCurrencyBalance" /* 8313 */;
+import useRedeemVirtualCurrency from "useRedeemVirtualCurrency" /* 8320 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
 const result = size.fileFinishedImporting("modules/virtual_currency/hooks/index.tsx");
-for (const key10018 in require("useFetchVirtualCurrencyBalance")) {
-  arg5[key10018] = require("useFetchVirtualCurrencyBalance")[key10018];
+for (const key10018 in useFetchVirtualCurrencyBalance) {
+  exports[key10018] = useFetchVirtualCurrencyBalance[key10018];
   continue;
 }
-for (const key10022 in require("useRedeemVirtualCurrency")) {
-  arg5[key10022] = require("useRedeemVirtualCurrency")[key10022];
+for (const key10022 in useRedeemVirtualCurrency) {
+  exports[key10022] = useRedeemVirtualCurrency[key10022];
   continue;
 }

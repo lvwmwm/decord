@@ -1,39 +1,98 @@
-// Module ID: 13343
-// Function ID: 13344
+// Module ID: 12597
+// Function ID: 12598
 // Name: useTrackUserProfileActivityView
-// Dependencies: [32, 19, 9104, 504, 2]
-// Exports: default
+// Dependencies: [32, 19, 8251, 558, 576, 504, 2]
 
-// Module 13343 (useTrackUserProfileActivityView)
-import _slicedToArray from "module_32" /* 32 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9104 */;
+// Module 12597 (useTrackUserProfileActivityView)
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8251 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let userId;
 
-const require = fn;
-const noop = fn(19);
-({ useEffect: c3, useState: closure_4 } = noop);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileActivityView.tsx");
-
-export default function useTrackUserProfileActivityView(arg0) {
+let c3;
+let closure_4;
+let _slicedToArray = _slicedToArray_mod;
+({ useEffect: c3, useState: closure_4 } = react);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let closure_2;
+  let first;
+  let onAction;
+  let tmp6;
+  let tmp = userId;
+  const obj = userId(onAction[4]);
+  const cResult = obj.c(7);
+  userId = userId.userId;
+  const tmp2 = onAction;
+  onAction = userId.onAction;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ContentInventoryOutboxStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== userId) {
+    const fn = function f() {
+      return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
+    };
+    cResult[1] = userId;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(tmp2[5]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  const tmp8 = _slicedToArray(closure_4(false), 2);
+  _slicedToArray = tmp8[1];
+  let closure_3 = tmp9;
+  if (cResult[3] === onAction) {
+    let tmp10;
+    let tmp11;
+    if (cResult[4] === (!stateFromStores && !tmp8[0])) {
+      tmp10 = cResult[5];
+      tmp11 = cResult[6];
+    }
+    closure_3(tmp10, tmp11);
+  }
+  const fn2 = function v() {
+    const tmp = closure_3;
+    if (tmp) {
+      onAction({ action: "VIEW_ACTIVITY_CARD" });
+      closure_2(true);
+    }
+  };
+  const items1 = [!stateFromStores && !tmp8[0], onAction];
+  cResult[3] = onAction;
+  cResult[4] = !stateFromStores && !tmp8[0];
+  cResult[5] = fn2;
+  cResult[6] = items1;
+  tmp11 = items1;
+  tmp10 = fn2;
+}) : ((arg0) => {
+  let closure_2;
+  let onAction;
   ({ userId: require, onAction } = arg0);
   _slicedToArray = undefined;
-  closure_3 = undefined;
   const items = [ContentInventoryOutboxStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => ContentInventoryOutboxStore.isFetchingUserOutbox(require));
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => ContentInventoryOutboxStore.isFetchingUserOutbox(require));
   const tmp2 = _slicedToArray(closure_4(false), 2);
   _slicedToArray = tmp2[1];
-  let tmp3 = !stateFromStores;
-  if (!stateFromStores) {
-    tmp3 = !tmp2[0];
-  }
-  closure_3 = tmp3;
+  let closure_3 = tmp3;
   const items1 = [tmp3, onAction];
   closure_3(() => {
-    if (closure_3) {
+    const tmp = closure_3;
+    if (tmp) {
       onAction({ action: "VIEW_ACTIVITY_CARD" });
       closure_2(true);
     }
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileActivityView.tsx");
+
+export default tmp3;

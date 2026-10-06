@@ -1,21 +1,51 @@
-// Module ID: 11391
-// Function ID: 11392
+// Module ID: 10759
+// Function ID: 10760
 // Name: SpendEarnOrbsLightThemeLottie
-// Dependencies: [19, 21, 10245, 11392, 2]
+// Dependencies: [19, 21, 558, 576, 10760, 9402, 2]
 
-// Module 11391 (SpendEarnOrbsLightThemeLottie)
-import LottieIcon from "LottieIcon" /* 10245 */;
-import _mod11392 from "module_11392" /* 11392 */;
-import noop from "module_19" /* 19 */;
+// Module 10759 (SpendEarnOrbsLightThemeLottie)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import LottieIcon2 from "LottieIcon" /* 9402 */;
+import AssetRegistry from "AssetRegistry" /* 10760 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const layers = ["Orbs-Spend_LightTheme", "Orbs-Earn_LightTheme"];
 const items = [{ name: "earn", start: 0, duration: 180 }, { name: "spend", start: 240, duration: 180 }];
-const size = fn(2);
+const forwardRef = react.forwardRef;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = AssetRegistry;
+    cResult[0] = tmpResult;
+    first = tmpResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp6;
+    if (cResult[2] === ref) {
+      tmp6 = cResult[3];
+    }
+    return tmp6;
+  }
+  const LottieIcon = tmp(9402).LottieIcon;
+  const merged = Object.assign(arg0);
+  const tmp8 = <LottieIcon dotLottie={first} ref={arg1} layers={layers} markers={items} />;
+  cResult[1] = arg0;
+  cResult[2] = ref;
+  cResult[3] = tmp8;
+  tmp6 = tmp8;
+}) : ((arg0, ref) => {
+  const LottieIcon = LottieIcon2.LottieIcon;
+  const merged = Object.assign(arg0);
+  return <LottieIcon dotLottie={AssetRegistry} ref={arg1} layers={layers} markers={items} />;
+}));
 const result = size.fileFinishedImporting("design/components/LottieIcon/native/generated/SpendEarnOrbsLightThemeLottie.tsx");
 
-export const SpendEarnOrbsLightThemeLottie = noop.forwardRef((arg0, ref) => {
-  const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod11392, ref, layers, markers: items });
-});
+export const SpendEarnOrbsLightThemeLottie = forwardRefResult;

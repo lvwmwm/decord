@@ -1,89 +1,175 @@
-// Module ID: 17049
-// Function ID: 17050
+// Module ID: 16388
+// Function ID: 16389
 // Name: VibegrationsSettingsRequestCard
-// Dependencies: [19, 17, 13390, 21, 4788, 576, 504, 4755, 16993, 4784, 1115, 3710, 5218, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4801, 16262, 4833, 1127, 3718, 5282, 2]
 
-// Module 17049 (VibegrationsSettingsRequestCard)
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4755 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16993 */;
-import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13390 */;
+// Module 16388 (VibegrationsSettingsRequestCard)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4801 */;
+import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16262 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const VibegrationsSettingsSheetDefault = VibegrationsSettingsSheet;
+let projectId;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, chips: null, chip: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
-obj2.chips = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
-let obj4 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
-obj2.chip = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4 };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsSettingsRequestCard.tsx");
-
-export default function VibegrationsSettingsRequestCard(projectId) {
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { card: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
+let closure_7 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  let intl;
+  let items;
+  let tmp = projectId;
+  let obj = projectId(576);
+  const cResult = obj.c(16);
   projectId = projectId.projectId;
   const request = projectId.request;
-  const tmp = closure_8();
-  dependencyMap = tmp;
-  const items = [VibegrationsConnectionStore];
-  noop = projectId(504).useStateFromStores(items, () => VibegrationsConnectionStore.getSettings(projectId));
-  let keys = request.keys;
-  if (keys == null) {
-    keys = [];
-  }
-  const mapped = keys.map((item) => {
-    closure_0 = item;
-    let found;
-    if (schema != null) {
-      schema = schema.schema;
-      found = schema.find((key) => key.key === closure_0);
+  const tmp4 = closure_7();
+  if (cResult[0] === projectId) {
+    if (cResult[1] === request.keys) {
+      let tmp5;
+      let tmp7;
+      let tmp11;
+      let tmp14;
+      let tmp17;
+      let tmp20;
+      if (cResult[2] === request.note) {
+        tmp5 = cResult[3];
+      }
+      const _Symbol = Symbol;
+      const card = tmp4.card;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(3718).wgDhiQ) };
+        const Text = tmp(4833).Text;
+        intl = tmp(1127).intl;
+        const tmp10 = closure_5(Text, obj2);
+        cResult[4] = tmp10;
+        tmp7 = tmp10;
+      } else {
+        tmp7 = cResult[4];
+      }
+      if (cResult[5] !== request.note) {
+        if (null != request.note) {
+          let note;
+          if ("" !== request.note) {
+            note = request.note;
+          }
+          cResult[5] = request.note;
+          cResult[6] = note;
+          tmp11 = note;
+        }
+        const intl2 = tmp(1127).intl;
+        note = intl2.string(request(3718)["V+DBhs"]);
+      } else {
+        tmp11 = cResult[6];
+      }
+      if (cResult[7] !== tmp11) {
+        const obj3 = { variant: "text-sm/normal", color: "text-default", children: tmp11 };
+        const tmp16 = closure_5(tmp(4833).Text, obj3);
+        cResult[7] = tmp11;
+        cResult[8] = tmp16;
+        tmp14 = tmp16;
+      } else {
+        tmp14 = cResult[8];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl3 = tmp(1127).intl;
+        const stringResult = intl3.string(request(3718)["KO2xN+"]);
+        cResult[9] = stringResult;
+        tmp17 = stringResult;
+      } else {
+        tmp17 = cResult[9];
+      }
+      if (cResult[10] !== tmp5) {
+        const obj4 = { variant: "secondary", size: "sm", onPress: tmp5, text: tmp17 };
+        const tmp22 = closure_5(tmp(5282).Button, obj4);
+        cResult[10] = tmp5;
+        cResult[11] = tmp22;
+        tmp20 = tmp22;
+      } else {
+        tmp20 = cResult[11];
+      }
+      if (cResult[12] === tmp4.card) {
+        if (cResult[13] === tmp14) {
+          let tmp23;
+          if (cResult[14] === tmp20) {
+            tmp23 = cResult[15];
+          }
+          return tmp23;
+        }
+      }
+      const obj5 = { style: card, children: items };
+      items = [tmp7, tmp14, tmp20];
+      const tmp26 = closure_6(View, obj5);
+      cResult[12] = tmp4.card;
+      cResult[13] = tmp14;
+      cResult[14] = tmp20;
+      cResult[15] = tmp26;
+      tmp23 = tmp26;
     }
-    return found;
-  });
-  let found = mapped.filter((item) => null != item);
-  const items1 = [projectId, request];
-  let obj2 = { style: tmp.card, children: null };
-  const callback = noop.useCallback(() => {
-    const obj2 = { content: timestampProducer(VibegrationsSettingsSheetDefault, { projectId, scopeKeys: request.keys, note: request.note, notifyAgent: true, isPreview: true }), key: VibegrationsSettingsSheet.VIBEGRATIONS_SETTINGS_SHEET_KEY };
-    ActionSheetActionCreators.showActionSheet(obj2);
-  }, items1);
-  const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: null };
-  const intl = tmp2(1115).intl;
-  obj3.children = intl.string(request(3710).wgDhiQ);
-  const items2 = [closure_6(projectId(4784).Text, obj3), , , ];
+  }
+  const fn = function o() {
+    let obj2;
+    const tmp = ActionSheetActionCreators;
+    const showActionSheet = tmp.showActionSheet;
+    const obj = { content: hasOwnProperty(VibegrationsSettingsSheetDefault, obj2), key: VibegrationsSettingsSheet.VIBEGRATIONS_SETTINGS_SHEET_KEY };
+    obj2 = { projectId, scopeKeys: request.keys, note: request.note, notifyAgent: true, isPreview: true };
+    showActionSheet(obj);
+  };
+  cResult[0] = projectId;
+  cResult[1] = request.keys;
+  cResult[2] = request.note;
+  cResult[3] = fn;
+  tmp5 = fn;
+}) : ((projectId) => {
+  let intl;
+  let intl3;
+  projectId = projectId.projectId;
+  const request = projectId.request;
+  const items = [projectId, request];
+  let tmp = closure_7();
+  let obj = { style: tmp.card, children: null };
+  const callback = react.useCallback(() => {
+    let obj2;
+    const tmp = ActionSheetActionCreators;
+    const showActionSheet = tmp.showActionSheet;
+    const obj = { content: hasOwnProperty(VibegrationsSettingsSheetDefault, obj2), key: VibegrationsSettingsSheet.VIBEGRATIONS_SETTINGS_SHEET_KEY };
+    obj2 = { projectId, scopeKeys: request.keys, note: request.note, notifyAgent: true, isPreview: true };
+    showActionSheet(obj);
+  }, items);
+  let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(3718).wgDhiQ) };
+  const Text = projectId(4833).Text;
+  intl = projectId(1127).intl;
+  const items1 = [closure_5(Text, obj2), , ];
+  const tmp3 = closure_6;
+  const tmp4 = View;
   if (null != request.note) {
+    let note;
     if ("" !== request.note) {
-      let note = request.note;
+      note = request.note;
     }
-    const obj4 = { variant: "text-sm/normal", color: "text-default", children: note };
-    items2[1] = tmp7(tmp9, obj4);
-    let tmp7Result = null;
-    if (found.length > 0) {
-      const obj5 = {
-        style: tmp.chips,
-        children: found.map((children) => {
-              const obj = { style: chip.chip, children: timestampProducer(Text_Text.Text, { variant: "text-xs/medium", color: "text-default", children: children.label }) };
-              return timestampProducer(View, obj, children.key);
-            })
-      };
-      tmp7Result = tmp7(tmp6, obj5);
-    }
-    items2[2] = tmp7Result;
-    const obj6 = { variant: "secondary", size: "sm", onPress: callback, text: null };
-    const intl3 = tmp2(1115).intl;
-    obj6.text = intl3.string(tmp8(3710)["KO2xN+"]);
-    items2[3] = tmp7(tmp2(5218).Button, obj6);
-    obj2.children = items2;
-    return closure_7(tmp6, obj2);
+    const obj3 = { variant: "text-sm/normal", color: "text-default", children: note };
+    items1[1] = closure_5(tmp9, obj3);
+    const obj4 = { variant: "secondary", size: "sm", onPress: callback, text: intl3.string(request(3718)["KO2xN+"]) };
+    const Button = tmp6(5282).Button;
+    intl3 = tmp6(1127).intl;
+    items1[2] = closure_5(Button, obj4);
+    obj.children = items1;
+    return tmp3(tmp4, obj);
   }
-  const intl2 = tmp2(1115).intl;
-  note = intl2.string(tmp8(3710)["V+DBhs"]);
-};
+  const intl2 = tmp6(1127).intl;
+  note = intl2.string(tmp8(3718)["V+DBhs"]);
+});
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsSettingsRequestCard.tsx");
+
+export default tmp3;

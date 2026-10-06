@@ -1,25 +1,27 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 14334
+// Function ID: 14335
 // Name: AccountDisableSetting
-// Dependencies: [8265, 15090, 11754, 1115, 2]
+// Dependencies: [7421, 14333, 10874, 1127, 2]
 
-// Module 15091 (AccountDisableSetting)
-import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import handleDisableAccountDefault from "handleDisableAccount" /* 15090 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14334 (AccountDisableSetting)
+import intl2 from "intl" /* 1127 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import handleDisableAccountDefault from "handleDisableAccount" /* 14333 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
-const pressable = SettingBuilders.createPressable({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.jf5GGb);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.jf5GGb);
   },
-  parent: SettingsConstants.MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   onPress: function onAccountDisablePress() {
     handleDisableAccountDefault(false);
   }
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountDisableSetting.tsx");
 
 export default pressable;

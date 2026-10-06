@@ -1,14 +1,14 @@
-// Module ID: 17797
-// Function ID: 17798
-// Name: setIncomingRingtone
+// Module ID: 17156
+// Function ID: 17157
+// Name: react-native
 // Dependencies: [17, 2]
 // Exports: setIncomingRingtone
 
-// Module 17797 (setIncomingRingtone)
-import _mod17 from "module_17" /* 17 */;
+// Module 17156 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
+const NativeModules = react_native.NativeModules;
 const result = size.fileFinishedImporting("modules/holidays/setIncomingRingtone.android.tsx");
 
 export const setIncomingRingtone = function setIncomingRingtone(call_ringing) {

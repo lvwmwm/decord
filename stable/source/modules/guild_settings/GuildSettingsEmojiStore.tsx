@@ -1,54 +1,60 @@
-// Module ID: 18002
-// Function ID: 18003
+// Module ID: 17365
+// Function ID: 17366
 // Name: GuildSettingsEmojiStore
-// Dependencies: [18003, 4609, 1438, 1091, 504, 573, 2]
+// Dependencies: [17366, 4657, 1445, 1103, 504, 585, 2]
 
-// Module 18002 (GuildSettingsEmojiStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import EmojiRecord from "EmojiRecord" /* 18003 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import priv from "priv" /* 1438 */;
+// Module 17365 (GuildSettingsEmojiStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import EmojiRecord from "EmojiRecord" /* 17366 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import LRUCache from "LRUCache" /* 1445 */;
+import size from "module_2" /* 2 */;
 
-const dependencyMap = {};
-const dependencyMap2 = {};
+const React2 = {};
+const _false = {};
 let closure_4 = 0;
-const obj = { max: 5, maxAge: null };
-obj.maxAge = DurationsDefault.Millis.HOUR;
-const importDefaultResult1 = new priv(obj);
-const Store = initializeDefault.Store;
+const obj = { max: 5, maxAge: DurationsDefault.Millis.HOUR };
+const importDefaultResult1 = new LRUCache(obj);
+const Store = get_initializedDefault.Store;
 class GuildSettingsEmojiStore extends Store {
+  initialize() {
+    this.waitFor(SelectedGuildStore);
+  }
+  isUploadingEmoji() {
+    return closure_4 > 0;
+  }
+  getEmojiRevision(id) {
+    let num = closure_2[id];
+    if (num == null) {
+      num = 0;
+    }
+    return num;
+  }
+  getEmojis(id) {
+    return closure_3[id];
+  }
+  getEmojiRawAsset(arg0) {
+    return importDefaultResult1.get(arg0);
+  }
 }
 const prototype = GuildSettingsEmojiStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(SelectedGuildStore);
-};
-prototype["isUploadingEmoji"] = function isUploadingEmoji() {
-  return closure_4 > 0;
-};
-prototype["getEmojiRevision"] = function getEmojiRevision(id) {
-  let num = dependencyMap[id];
-  if (num == null) {
-    num = 0;
-  }
-  return num;
-};
-prototype["getEmojis"] = function getEmojis(id) {
-  return dependencyMap2[id];
-};
-prototype["getEmojiRawAsset"] = function getEmojiRawAsset(arg0) {
-  return importDefaultResult1.get(arg0);
-};
 GuildSettingsEmojiStore.displayName = "GuildSettingsEmojiStore";
-const guildSettingsEmojiStore = new GuildSettingsEmojiStore(DispatcherDefault, {
+const obj2 = {
   EMOJI_DELETE: function handleEmojiDelete(arg0) {
-    ({ guildId, emojiId: EmojiRecord } = arg0);
-    dependencyMap2[guildId] = dependencyMap2[guildId].filter((id) => id.id !== EmojiRecord);
+    let closure_129_0;
+    let guildId;
+    ({ guildId, emojiId: closure_129_0 } = arg0);
+    const arr = closure_3[guildId];
+    closure_3[guildId] = arr.filter((id) => id.id !== closure_1_0);
   },
   EMOJI_FETCH_SUCCESS: function handleFetchSuccess(emojis) {
     emojis = emojis.emojis;
-    closure_3[emojis.guildId] = emojis.map((item) => new EmojiRecord(item));
+    closure_3[emojis.guildId] = emojis.map((item) => {
+      const tmp = new EmojiRecord(item);
+      return tmp;
+    });
   },
   EMOJI_FETCH_FAILURE: function handleFetchFailure(guildId) {
     closure_3[guildId.guildId] = [];
@@ -64,14 +70,15 @@ const guildSettingsEmojiStore = new GuildSettingsEmojiStore(DispatcherDefault, {
   },
   GUILD_EMOJIS_UPDATE: function handleGuildEmojiUpdate(guildId) {
     guildId = guildId.guildId;
-    let num = dependencyMap[guildId];
+    let num = closure_2[guildId];
+    const tmp = closure_2;
     if (num == null) {
       num = 0;
     }
-    dependencyMap[guildId] = num + 1;
+    tmp[guildId] = num + 1;
   }
-});
-const size = fn(2);
+};
+const guildSettingsEmojiStore = new GuildSettingsEmojiStore(DispatcherDefault, obj2);
 let result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsEmojiStore.tsx");
 
 export default guildSettingsEmojiStore;

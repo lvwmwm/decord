@@ -1,43 +1,156 @@
-// Module ID: 12883
-// Function ID: 12884
+// Module ID: 12008
+// Function ID: 12009
 // Name: UserProfileMutualGuildsActionSheet
-// Dependencies: [19, 17, 21, 4788, 576, 12884, 11447, 12885, 12886, 12890, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 12009, 12010, 10601, 12014, 12020, 2]
 
-// Module 12883 (UserProfileMutualGuildsActionSheet)
-import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+// Module 12008 (UserProfileMutualGuildsActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 10601 */;
+import NoMutualServers from "NoMutualServers" /* 12010 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ View: c3, ActivityIndicator: closure_4 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-let obj2 = { container: { flex: 1, gap: 20, paddingTop: nativeDefault.space.PX_8 }, loadingState: null, emptyState: null };
-let obj3 = { flex: 1, gap: 20, paddingTop: nativeDefault.space.PX_8 };
-obj2.loadingState = { paddingTop: nativeDefault.space.PX_8, alignItems: "center" };
-obj2.emptyState = { alignItems: "center" };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileMutualGuildsActionSheet.tsx");
+let dependencyMap, user;
 
-export default function UserProfileMutualGuildsActionSheet(user) {
+let c3;
+let closure_4;
+let obj2;
+let obj3;
+({ View: c3, ActivityIndicator: closure_4 } = react_native);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { container: obj2, loadingState: obj3, emptyState: { alignItems: "center" } };
+obj2 = { flex: 1, gap: 20, paddingTop: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingTop: nativeDefault.space.PX_8, alignItems: "center" };
+let closure_6 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let closure_2;
+  let obj = user(576);
+  const cResult = obj.c(16);
+  user = user.user;
+  const onPressMutualGuild = user.onPressMutualGuild;
+  const tmp3 = closure_6();
+  dependencyMap = tmp3;
+  let tmp4 = onPressMutualGuild;
+  const mutualGuilds = onPressMutualGuild(12009)(user).mutualGuilds;
+  if (cResult[0] === mutualGuilds) {
+    if (cResult[1] === onPressMutualGuild) {
+      if (cResult[2] === tmp3.emptyState) {
+        if (cResult[3] === tmp3.loadingState) {
+          let tmp5;
+          let tmp8;
+          let tmp10;
+          if (cResult[4] === user) {
+            tmp5 = cResult[5];
+          }
+          let length;
+          if (mutualGuilds != null) {
+            length = mutualGuilds.length;
+          }
+          if (cResult[6] !== length) {
+            const tmp9 = tmp4(12020)(length);
+            cResult[6] = length;
+            cResult[7] = tmp9;
+            tmp8 = tmp9;
+          } else {
+            tmp8 = cResult[7];
+          }
+          const container = tmp3.container;
+          if (cResult[8] !== tmp5) {
+            const tmp5Result = tmp5();
+            cResult[8] = tmp5;
+            cResult[9] = tmp5Result;
+            tmp10 = tmp5Result;
+          } else {
+            tmp10 = cResult[9];
+          }
+          if (cResult[10] === tmp3.container) {
+            let tmp12;
+            if (cResult[11] === tmp10) {
+              tmp12 = cResult[12];
+            }
+            if (cResult[13] === tmp8) {
+              let tmp16;
+              if (cResult[14] === tmp12) {
+                tmp16 = cResult[15];
+              }
+              return tmp16;
+            }
+            const tmp18 = jsx(tmp4(10601), { scrollable: true, title: tmp8, children: tmp12 });
+            cResult[13] = tmp8;
+            cResult[14] = tmp12;
+            cResult[15] = tmp18;
+            tmp16 = tmp18;
+          }
+          const tmp15 = <mutualGuilds style={container}>{tmp10}</mutualGuilds>;
+          cResult[10] = tmp3.container;
+          cResult[11] = tmp10;
+          cResult[12] = tmp15;
+          tmp12 = tmp15;
+        }
+      }
+    }
+  }
+  const fn = function o() {
+    let tmp4;
+    if (null == mutualGuilds) {
+      tmp4 = <_false style={closure_2.loadingState}><React3 /></_false>;
+    } else if (0 === mutualGuilds.length) {
+      tmp4 = <_false style={closure_2.emptyState}>{jsx(NoMutualServers.NoMutualServers, {})}</_false>;
+    } else {
+      tmp4 = jsx(UserProfileStackedActionSheet.UserProfileStackedActionSheetList, {
+        data: mutualGuilds,
+        keyExtractor(guild) {
+            return guild.guild.id;
+          },
+        renderItem(item) {
+            let end;
+            let start;
+            item = item.item;
+            ({ start, end } = item);
+            const obj = {
+              user: item,
+              mutualGuild: item,
+              onPress() {
+                return onPressMutualGuild(item.guild.id);
+              },
+              start,
+              end
+            };
+            return closure_1_5(user(closure_1_2[10]).MutualGuildRow, obj);
+          }
+      });
+    }
+    return tmp4;
+  };
+  cResult[0] = mutualGuilds;
+  cResult[1] = onPressMutualGuild;
+  cResult[2] = tmp3.emptyState;
+  cResult[3] = tmp3.loadingState;
+  cResult[4] = user;
+  cResult[5] = fn;
+  tmp5 = fn;
+}) : ((user) => {
   user = user.user;
   const onPressMutualGuild = user.onPressMutualGuild;
   const tmp = closure_6();
-  const mutualGuilds = onPressMutualGuild(12884)(user).mutualGuilds;
+  const mutualGuilds = onPressMutualGuild(12009)(user).mutualGuilds;
   let length;
-  const tmp4 = onPressMutualGuild(11447);
+  onPressMutualGuild(10601);
+  const tmp5 = onPressMutualGuild(12020);
   if (mutualGuilds != null) {
     length = mutualGuilds.length;
   }
-  const obj = { scrollable: true, title: onPressMutualGuild(12885)(length), children: null };
-  const obj2 = { style: tmp.container, children: null };
   if (null == mutualGuilds) {
-    const obj3 = { style: tmp.loadingState, children: tmp3(closure_4, {}) };
+    const obj3 = { style: tmp.loadingState, children: <closure_4 /> };
     let tmp3Result = tmp3(tmp7, obj3);
   } else if (0 === mutualGuilds.length) {
-    const obj4 = { style: tmp.emptyState, children: tmp3(user(12886).NoMutualServers, {}) };
+    const obj4 = { style: tmp.emptyState, children: jsx(user(12010).NoMutualServers, {}) };
     tmp3Result = tmp3(tmp7, obj4);
   } else {
     const obj5 = {
@@ -46,9 +159,11 @@ export default function UserProfileMutualGuildsActionSheet(user) {
           return guild.guild.id;
         },
       renderItem(item) {
+          let end;
+          let start;
           item = item.item;
           ({ start, end } = item);
-          return jsx(user(dependencyMap[9]).MutualGuildRow, {
+          return jsx(user(dependencyMap[10]).MutualGuildRow, {
             user: item,
             mutualGuild: item,
             onPress() {
@@ -59,9 +174,10 @@ export default function UserProfileMutualGuildsActionSheet(user) {
           });
         }
     };
-    tmp3Result = tmp3(user(11447).UserProfileStackedActionSheetList, obj5);
+    tmp3Result = tmp3(user(10601).UserProfileStackedActionSheetList, obj5);
   }
-  obj2.children = tmp3Result;
-  obj.children = <closure_3 style={tmp.container}>{null}</closure_3>;
-  return <tmp4 scrollable title={onPressMutualGuild(12885)(length)}>{null}</tmp4>;
-};
+  return <tmp4 scrollable title={tmp5(length)}>{null}</tmp4>;
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileMutualGuildsActionSheet.tsx");
+
+export default tmp5;

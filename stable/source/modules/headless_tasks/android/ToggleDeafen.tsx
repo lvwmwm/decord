@@ -1,27 +1,30 @@
-// Module ID: 18394
-// Function ID: 18395
+// Module ID: 17762
+// Function ID: 17763
 // Name: ToggleDeafen
-// Dependencies: [2041, 18391, 10314, 10299, 2]
+// Dependencies: [2051, 17759, 9474, 9459, 2]
 
-// Module 18394 (ToggleDeafen)
-import VoiceActionUtils from "VoiceActionUtils" /* 10299 */;
-import useDeafStates from "useDeafStates" /* 10314 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 18391 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 17762 (ToggleDeafen)
+import VoiceActionUtils from "VoiceActionUtils" /* 9459 */;
+import useDeafStates from "useDeafStates" /* 9474 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 17759 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/headless_tasks/android/ToggleDeafen.tsx");
 
 export default (channelId) => {
   channelId = channelId.channelId;
-  return new Promise((arg0) => {
-    closure_0 = arg0;
-    HeadlessTaskUtilsDefault.awaitStorage(() => {
+  const promise = new Promise((arg0) => {
+    let closure_0 = arg0;
+    let obj = HeadlessTaskUtilsDefault;
+    obj.awaitStorage(() => {
       const channel = ChannelStore.getChannel(channelId);
-      const deafStates = useDeafStates.getDeafStates(channel);
-      VoiceActionUtils.createDeafHandler(deafStates).onPress();
+      const obj = useDeafStates;
+      const deafStates = obj.getDeafStates(channel);
+      const obj2 = VoiceActionUtils;
+      obj2.createDeafHandler(deafStates).onPress();
       closure_0(true);
     });
   });
+  return promise;
 };

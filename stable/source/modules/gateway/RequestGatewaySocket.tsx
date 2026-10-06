@@ -1,14 +1,17 @@
-// Module ID: 8031
-// Function ID: 8032
+// Module ID: 7180
+// Function ID: 7181
 // Name: RequestGatewaySocket
-// Dependencies: [5, 1074, 7746, 1241, 2]
+// Dependencies: [5, 1086, 6896, 1253, 2]
 // Exports: describeConnectionReasons, isRequested, recordStartHeadlessTask, startBridgeTo, withRequest
 
-// Module 8031 (RequestGatewaySocket)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 7180 (RequestGatewaySocket)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let c7, closure_4;
+
 function setRequestedBy(arg0) {
   c6 = false;
   let num = map.get(arg0);
@@ -23,7 +26,7 @@ function setRequestedBy(arg0) {
   }
   const diff = num2 - 1;
   if (diff <= 0) {
-    obj.delete(combined);
+    map.delete(combined);
   } else {
     const result1 = obj.set(combined, diff);
   }
@@ -36,82 +39,86 @@ function stopRequest(arg0) {
   }
   const diff = num - 1;
   if (diff <= 0) {
-    obj.delete(arg0);
+    map.delete(arg0);
   } else {
     const result = obj.set(arg0, diff);
   }
 }
-let closure_10 = async function _withRequest(arg0, value) {
-  if (c7 === 2) {
-    c7 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+let obj = function _withRequest() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    let closure_1 = value;
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c7 = 2;
-      if (0 === c6) {
-        if (arg0 === 1) {
+      let c5;
+      try {
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_3 = tmp;
+            let closure_2 = tmp4;
+            c5 = 1;
+            setRequestedBy(closure_0);
+            c6 = 2;
+            c7 = 1;
+            const obj4 = { value: closure_1(), done: false };
+            return obj4;
+          }
+        } else if (1 === c6) {
+          c5 = 0;
+          closure_131_9(closure_0);
+          throw closure_4;
+        } else if (arg0 === 1) {
           c7 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c5 = 0;
+          closure_131_9(closure_0);
           c7 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          const obj5 = { value, done: true };
+          return obj5;
         } else {
-          closure_3 = tmp3;
-          closure_2 = tmp7;
-          closure_130_0 = closure_0;
-          c5 = 1;
-          setRequestedBy(closure_0);
-          c6 = 2;
-          c7 = 1;
-          const obj4 = { value: importDefault(), done: false };
-          return obj4;
+          c5 = 0;
+          closure_131_9(closure_0);
+          c7 = 3;
+          obj = { value, done: true };
+          return obj;
         }
-      } else if (1 === tmp7) {
-        c5 = 0;
-        closure_131_9(closure_130_0);
-        throw closure_4;
-      } else if (arg0 === 1) {
-        c7 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 0;
-        closure_131_9(closure_130_0);
-        c7 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
-      } else {
-        c5 = 0;
-        closure_131_9(closure_130_0);
-        c7 = 3;
-        const obj = { value, done: true };
-        return obj;
-      }
-    } catch (tmp29) {
-      closure_4 = tmp29;
-      if (tmp4 === c5) {
-        c7 = tmp2;
-        throw tmp29;
-      } else {
-        c6 = tmp;
+      } catch (tmp26) {
+        closure_4 = tmp26;
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp26;
+        } else {
+          c6 = 1;
+        }
       }
     }
-  }
+  });
+  return obj(...arguments);
 };
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = Constants.AnalyticEvents;
 let closure_5 = ["COLD_START"];
 let c6 = true;
 const map = new Map();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/gateway/RequestGatewaySocket.tsx");
 
 export const isRequested = function isRequested() {
@@ -121,7 +128,8 @@ export function recordStartHeadlessTask() {
   c6 = false;
 }
 export const describeConnectionReasons = function describeConnectionReasons() {
-  const items = [...c6 ? closure_5 : [], ...map.keys()];
+  const tmp = c6 ? closure_5 : [];
+  const items = [...tmp, ...map.keys()];
   const sorted = items.sort();
   let str = "NO_REASONS";
   if (sorted.length > 0) {
@@ -132,19 +140,23 @@ export const describeConnectionReasons = function describeConnectionReasons() {
 export { setRequestedBy };
 export const startBridgeTo = function startBridgeTo(arg0) {
   const combined = "BRIDGE:" + arg0;
-  closure_1 = performance.now();
+  let closure_1 = performance.now();
+  obj = map;
   c6 = false;
   let num = map.get(combined);
   if (num == null) {
     num = 0;
   }
-  let result = map.set(combined, num + 1);
-  combined(7746).requestSafeIdleCallback(() => {
+  let result = obj.set(combined, num + 1);
+  let obj2 = combined(6896);
+  obj2.requestSafeIdleCallback(() => {
     if (map.has(combined)) {
-      const obj3 = { bridge_token: tmp, cleared_after: null };
       const _performance = performance;
-      obj3.cleared_after = performance.now() - closure_1;
-      AnalyticsUtilsDefault.track(AnalyticEvents.GATEWAY_BRIDGE_TIMEOUT, obj3);
+      const obj2 = { bridge_token: combined, cleared_after: performance.now() - closure_1 };
+      const track = AnalyticsUtilsDefault.track;
+      const GATEWAY_BRIDGE_TIMEOUT = AnalyticEvents.GATEWAY_BRIDGE_TIMEOUT;
+      AnalyticsUtilsDefault;
+      track(GATEWAY_BRIDGE_TIMEOUT, obj2);
     }
     c6 = false;
     let num = obj.get(tmp);
@@ -153,7 +165,7 @@ export const startBridgeTo = function startBridgeTo(arg0) {
     }
     const diff = num - 1;
     if (diff <= 0) {
-      obj.delete(tmp);
+      map.delete(combined);
     } else {
       const result = obj.set(tmp, diff);
     }
@@ -161,12 +173,5 @@ export const startBridgeTo = function startBridgeTo(arg0) {
 };
 export { stopRequest };
 export const withRequest = function withRequest() {
-  const self = this;
-  const apply = closure_10.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

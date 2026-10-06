@@ -1,12 +1,12 @@
-// Module ID: 4924
-// Function ID: 4925
+// Module ID: 4973
+// Function ID: 4974
 // Name: getReportedStreamResolution
-// Dependencies: [4813, 4925, 2]
+// Dependencies: [4862, 4974, 2]
 // Exports: default
 
-// Module 4924 (getReportedStreamResolution)
-import Constants from "Constants" /* 4813 */;
-import getReportedPresetResolutionDefault from "getReportedPresetResolution" /* 4925 */;
+// Module 4973 (getReportedStreamResolution)
+import Constants from "Constants" /* 4862 */;
+import getReportedPresetResolutionDefault from "getReportedPresetResolution" /* 4974 */;
 import size from "module_2" /* 2 */;
 
 const ResolutionTypes = Constants.ResolutionTypes;
@@ -19,11 +19,9 @@ export default function getReportedStreamResolution(arg0, arg1, type, arg3) {
     const tmp7 = getReportedPresetResolutionDefault(arg0, arg1, type.height, arg3);
     let tmp8 = type;
     if (tmp7 !== type.height) {
-      const obj = {};
+      const obj = { width: Math.round(type.width * tmp7 / type.height), height: tmp7 };
       const merged = Object.assign(type);
       const _Math = Math;
-      obj.width = Math.round(type.width * tmp7 / type.height);
-      obj.height = tmp7;
       tmp8 = obj;
     }
     return tmp8;

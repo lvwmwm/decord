@@ -1,47 +1,114 @@
-// Module ID: 12976
-// Function ID: 12977
+// Module ID: 12084
+// Function ID: 12085
 // Name: ContactSyncError
-// Dependencies: [19, 21, 4788, 4524, 4789, 4784, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 558, 576, 4570, 4838, 4833, 2]
 
-// Module 12976 (ContactSyncError)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
-import noop from "module_19" /* 19 */;
+// Module 12084 (ContactSyncError)
+import Fragment from "Fragment" /* 21 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { justifyContent: "center" }, error: { paddingHorizontal: 16, textAlign: "center" } });
 const __initData = { code: "function ContactSyncErrorTsx1(){const{withTiming,hasError,ERROR_HEIGHT}=this.__closure;return{height:withTiming(hasError?ERROR_HEIGHT:0)};}" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncError.tsx");
-
-export default function ContactSyncError(error) {
-  error = error.error;
-  _require = undefined;
-  const tmp = closure_4();
-  let tmp2 = null != error;
-  if (tmp2) {
-    tmp2 = "" !== error;
-  }
-  _require = tmp2;
-  const fn = function l() {
+const __initData2 = { code: "function ContactSyncErrorTsx2(){const{withTiming,hasError,ERROR_HEIGHT}=this.__closure;return{height:withTiming(hasError?ERROR_HEIGHT:0)};}" };
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let error;
+  let style;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(10);
+  ({ style, error } = arg0);
+  const tmp4 = closure_4();
+  _require = tmp5;
+  const fn = function s() {
     let num = 0;
+    const withTiming = timing.withTiming;
+    timing;
     if (closure_0) {
       num = 44;
     }
-    return { height: timing.withTiming(num) };
+    const obj = { height: withTiming(num) };
+    return obj;
   };
-  let obj = require("ReanimatedRexport");
-  fn.__closure = { withTiming: require("timing").withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
+  const tmpResult = tmp(4570);
+  fn.__closure = { withTiming: tmp(4838).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 };
   fn.__workletHash = 14558247431913;
   fn.__initData = __initData;
+  ({ withTiming: tmp(4838).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 });
+  const animatedStyle = tmpResult.useAnimatedStyle(fn);
+  if (cResult[0] === animatedStyle) {
+    if (cResult[1] === style) {
+      let tmp7;
+      if (cResult[2] === tmp4.container) {
+        tmp7 = cResult[3];
+      }
+      if (cResult[4] === error) {
+        let tmp8;
+        if (cResult[5] === tmp4.error) {
+          tmp8 = cResult[6];
+        }
+        if (cResult[7] === tmp7) {
+          let tmp11;
+          if (cResult[8] === tmp8) {
+            tmp11 = cResult[9];
+          }
+          return tmp11;
+        }
+        const tmp14 = jsx(ReanimatedRexportDefault.View, { style: tmp7, children: tmp8 });
+        cResult[7] = tmp7;
+        cResult[8] = tmp8;
+        cResult[9] = tmp14;
+        tmp11 = tmp14;
+      }
+      const tmp10 = jsx(tmp(4833).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp4.error, children: error });
+      let num = 4;
+      cResult[4] = error;
+      cResult[5] = tmp4.error;
+      cResult[6] = tmp10;
+      tmp8 = tmp10;
+    }
+  }
+  const items = [tmp4.container, style, animatedStyle];
+  cResult[0] = animatedStyle;
+  cResult[1] = style;
+  cResult[2] = tmp4.container;
+  cResult[3] = items;
+  tmp7 = items;
+}) : ((error) => {
+  let closure_0;
+  error = error.error;
+  const style = error.style;
+  const tmp = closure_4();
+  _require = tmp2;
+  let obj = require("ReanimatedRexport");
+  const fn = function l() {
+    let num = 0;
+    const withTiming = timing.withTiming;
+    timing;
+    if (closure_0) {
+      num = 44;
+    }
+    const obj = { height: withTiming(num) };
+    return obj;
+  };
+  fn.__closure = { withTiming: require("timing").withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 };
+  fn.__workletHash = 16862151134186;
+  fn.__initData = __initData2;
+  ({ withTiming: require("timing").withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 });
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = { style: null, children: jsx(require("Text/Text").Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error }) };
-  const items = [tmp.container, error.style, animatedStyle];
-  obj3.style = items;
-  return jsx(ReanimatedRexportDefault.View, { style: null, children: jsx(require("Text/Text").Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error }) });
-};
+  const items = [tmp.container, style, animatedStyle];
+  const View = ReanimatedRexportDefault.View;
+  return <View style={items}>{null}</View>;
+});
+const result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncError.tsx");
+
+export default tmp3;

@@ -1,64 +1,99 @@
 // Module ID: 781
 // Function ID: 782
-// Dependencies: []
-// Exports: getClientIPAddress
+// Dependencies: [725, 746, 702, 718, 696, 734, 712, 711, 701]
+// Exports: getTraceData
 
 // Module 781
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["X-Client-IP", "X-Forwarded-For", "Fly-Client-IP", "CF-Connecting-IP", "Fastly-Client-Ip", "True-Client-Ip", "X-Real-IP", "X-Cluster-Client-IP", "X-Forwarded", "Forwarded-For", "Forwarded", "X-Vercel-Forwarded-For"];
+import TRACE_FLAG_NONE from "TRACE_FLAG_NONE" /* 696 */;
+import _mod702 from "module_702" /* 702 */;
+import regExp from "regExp" /* 711 */;
+import MAX_BAGGAGE_STRING_LENGTH from "MAX_BAGGAGE_STRING_LENGTH" /* 712 */;
+import _mod718 from "module_718" /* 718 */;
+import _mod725 from "module_725" /* 725 */;
+import freezeDscOnSpan from "freezeDscOnSpan" /* 734 */;
+import _mod746 from "module_746" /* 746 */;
 
-export const getClientIPAddress = function getClientIPAddress(arg0) {
-  let obj = {};
-  const keys = Object.keys(arg0);
-  for (const item10010 of keys) {
-    obj[item10010.toLowerCase()] = arg0[item10010];
-    continue;
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const getTraceData = function getTraceData() {
+  let propagationSpanId;
+  let propagationSpanId2;
+  let sampled;
+  let sampled2;
+  let traceId;
+  let traceId2;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-  let mapped = items.map((item) => {
-    obj = obj[item.toLowerCase(item)];
-    let str = obj;
-    if (Array.isArray(obj)) {
-      str = obj.join(";");
-    }
-    if ("Forwarded" === item) {
-      let mapped = (function parseForwardedHeader(str) {
-        if (str) {
-          const parts = str.split(";");
-          const iter = parts[Symbol.iterator]();
-          const nextResult = iter.next();
-          while (iter !== undefined) {
-            let arr = nextResult;
-            if (nextResult.startsWith("for=")) {
-              let substr = arr.slice(4);
-              iter.return();
-              return substr;
-            }
-          }
-          return null;
-        } else {
-          return null;
+  let client = obj.client;
+  if (!client) {
+    const obj2 = _mod725;
+    client = obj2.getClient();
+  }
+  const obj3 = _mod746;
+  if (obj3.isEnabled()) {
+    if (client) {
+      const tmp3Result = _mod702;
+      const mainCarrier = tmp3Result.getMainCarrier();
+      const tmp3Result10 = _mod718;
+      const asyncContextStrategy = tmp3Result10.getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
+      } else {
+        let spanToTraceHeaderResult;
+        let dynamicSamplingContextFromSpan;
+        let scope = obj.scope;
+        if (!scope) {
+          const tmp3Result11 = _mod725;
+          scope = tmp3Result11.getCurrentScope();
         }
-      })(str);
-    } else if (str != null) {
-      let parts = str.split(",");
-      mapped = parts.map((item) => item.trim());
+        let span = obj.span;
+        if (!span) {
+          const tmp3Result12 = TRACE_FLAG_NONE;
+          span = tmp3Result12.getActiveSpan();
+        }
+        if (span) {
+          const tmp3Result13 = TRACE_FLAG_NONE;
+          spanToTraceHeaderResult = tmp3Result13.spanToTraceHeader(span);
+        } else {
+          const propagationContext = scope.getPropagationContext();
+          ({ traceId, sampled, propagationSpanId } = propagationContext);
+          const tmp3Result14 = regExp;
+          spanToTraceHeaderResult = tmp3Result14.generateSentryTraceHeader(traceId, propagationSpanId, sampled);
+        }
+        const tmp3Result15 = freezeDscOnSpan;
+        if (span) {
+          dynamicSamplingContextFromSpan = tmp3Result15.getDynamicSamplingContextFromSpan(span);
+        } else {
+          dynamicSamplingContextFromSpan = tmp3Result15.getDynamicSamplingContextFromScope(client, scope);
+        }
+        const tmp3Result16 = MAX_BAGGAGE_STRING_LENGTH;
+        const result = tmp3Result16.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp3(711).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          if (obj.propagateTraceparent) {
+            let result1;
+            if (span) {
+              const tmp3Result17 = TRACE_FLAG_NONE;
+              result1 = tmp3Result17.spanToTraceparentHeader(span);
+            } else {
+              const propagationContext1 = scope.getPropagationContext();
+              ({ traceId: traceId2, sampled: sampled2, propagationSpanId: propagationSpanId2 } = propagationContext1);
+              const tmp3Result18 = regExp;
+              result1 = tmp3Result18.generateTraceparentHeader(traceId2, propagationSpanId2, sampled2);
+            }
+            obj4.traceparent = result1;
+          }
+          return obj4;
+        } else {
+          const debug = tmp3(701).debug;
+          debug.warn("Invalid sentry-trace data. Cannot generate trace data");
+          return {};
+        }
+      }
     }
-    return mapped;
-  });
-  const reduced = mapped.reduce((arr, item) => {
-    let combined = arr;
-    if (item) {
-      combined = arr.concat(item);
-    }
-    return combined;
-  }, []);
-  return reduced.find((item) => {
-    let isMatch = null !== item;
-    if (isMatch) {
-      isMatch = /(?:^(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}$)|(?:^(?:(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,6}|:)|(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,7}|:)))(?:%[0-9a-zA-Z]{1,})?$)/.test(item);
-      obj = /(?:^(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}$)|(?:^(?:(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,6}|:)|(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,7}|:)))(?:%[0-9a-zA-Z]{1,})?$)/;
-    }
-    return isMatch;
-  }) || null;
+  }
+  return {};
 };
-export const ipHeaderNames = items;

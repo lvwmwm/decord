@@ -1,19 +1,17 @@
-// Module ID: 16266
-// Function ID: 16267
+// Module ID: 15544
+// Function ID: 15545
 // Name: ScreenRecordingStore
-// Dependencies: [560, 16267, 2]
+// Dependencies: [570, 15545, 2]
 
-// Module 16266 (ScreenRecordingStore)
-import ScreenRecordingUtils from "ScreenRecordingUtils" /* 16267 */;
-import module_560 from "module_560" /* 560 */;
+// Module 15544 (ScreenRecordingStore)
+import ScreenRecordingUtils from "ScreenRecordingUtils" /* 15545 */;
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/screen_recording/native/ScreenRecordingStore.tsx");
-
-export const useScreenRecordingStore = module_560.create((arg0, arg1) => {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  return {
+let obj = module_570.create((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let obj = {
     isRecording: false,
     microphoneEnabled: false,
     isUploading: false,
@@ -35,15 +33,18 @@ export const useScreenRecordingStore = module_560.create((arg0, arg1) => {
       if (arg2 === undefined) {
         tmp2 = null;
       }
-      return closure_0({ isRecording: true, microphoneEnabled: flag, currentSurveyId: tmp, currentSurveyConfig: tmp2, stepStartedTime: Date.now() });
+      const obj = { isRecording: true, microphoneEnabled: flag, currentSurveyId: tmp, currentSurveyConfig: tmp2, stepStartedTime: Date.now() };
+      return closure_0(obj);
     },
     stopRecording() {
       return closure_0({ isRecording: false, microphoneEnabled: false, currentStep: 0, stepStartedTime: null, isCompleted: false });
     },
     setIsUploading(isUploading) {
-      return closure_0({ isUploading });
+      const obj = { isUploading };
+      return closure_0(obj);
     },
     nextStep() {
+      let obj;
       const tmp = closure_1();
       const sum = tmp.currentStep + 1;
       const currentSurveyConfig = tmp.currentSurveyConfig;
@@ -54,21 +55,27 @@ export const useScreenRecordingStore = module_560.create((arg0, arg1) => {
       if (steps == null) {
         steps = [];
       }
+      const tmp3 = closure_0;
       if (sum >= steps.length) {
-        let obj = { isCompleted: true };
+        obj = { isCompleted: true };
       } else {
-        obj = { currentStep: sum, stepStartedTime: null };
+        obj = { currentStep: sum, stepStartedTime: Date.now() };
         const _Date = Date;
-        obj.stepStartedTime = Date.now();
       }
-      closure_0(obj);
+      tmp3(obj);
     },
     resetActionSheet() {
-      return closure_0({ currentStep: 0, stepStartedTime: Date.now(), isCompleted: false });
+      const obj = { currentStep: 0, stepStartedTime: Date.now(), isCompleted: false };
+      return closure_0(obj);
     },
     completeActionSheet() {
-      ScreenRecordingUtils.handleStopAndSend();
+      const obj = ScreenRecordingUtils;
+      obj.handleStopAndSend();
       closure_0({ currentStep: 0, stepStartedTime: null, isCompleted: false });
     }
   };
+  return obj;
 });
+const result = size.fileFinishedImporting("modules/screen_recording/native/ScreenRecordingStore.tsx");
+
+export const useScreenRecordingStore = obj;

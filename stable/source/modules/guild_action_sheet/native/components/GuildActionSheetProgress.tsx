@@ -1,43 +1,94 @@
-// Module ID: 14273
-// Function ID: 14274
+// Module ID: 13521
+// Function ID: 13522
 // Name: GuildActionSheetProgress
-// Dependencies: [19, 21, 4788, 576, 12757, 5856, 14274, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 11875, 13522, 5918, 2]
 
-// Module 14273 (GuildActionSheetProgress)
-import nativeDefault from "native" /* 576 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 12757 */;
-import GuildProgressOverviewDefault from "GuildProgressOverview" /* 14274 */;
-import noop from "module_19" /* 19 */;
+// Module 13521 (GuildActionSheetProgress)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 11875 */;
+import GuildProgressOverviewDefault from "GuildProgressOverview" /* 13522 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const Card = tmp2(5856);
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { title: { color: nativeDefault.colors.TEXT_DEFAULT }, cardStyle: null };
-let obj3 = { color: nativeDefault.colors.TEXT_DEFAULT };
-obj2.cardStyle = { marginHorizontal: nativeDefault.space.PX_16, padding: 0, marginBottom: nativeDefault.space.PX_24 };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetProgress.tsx");
+let guild;
 
-export default function GuildActionSheetProgress(guild) {
+let obj2;
+let tmp;
+const Card_Card = tmp(5918);
+const jsx = Fragment.jsx;
+let obj = { title: obj2, cardStyle: { padding: 0 } };
+obj2 = { color: nativeDefault.colors.TEXT_DEFAULT };
+let closure_4 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  let completed;
+  let dismissed;
+  const obj = react2;
+  const cResult = obj.c(6);
+  guild = guild.guild;
+  const tmp4 = closure_4();
+  const obj2 = GuildProgressUtils;
+  const iOSCompletionStates = obj2.useIOSCompletionStates(guild);
+  ({ completed, dismissed } = iOSCompletionStates);
+  let tmp6 = null;
+  const obj3 = GuildProgressUtils;
+  if (obj3.useIsEligibleForGuildProgress(guild)) {
+    tmp6 = null;
+    if (!completed) {
+      tmp6 = null;
+      if (dismissed) {
+        if (cResult[0] === guild) {
+          let tmp7;
+          if (cResult[1] === tmp4.title) {
+            tmp7 = cResult[2];
+          }
+          if (cResult[3] === tmp4.cardStyle) {
+            let tmp11;
+            if (cResult[4] === tmp7) {
+              tmp11 = cResult[5];
+            }
+            tmp6 = tmp11;
+          }
+          const tmp13 = jsx(Card_Card.Card, { style: tmp4.cardStyle, children: tmp7 });
+          cResult[3] = tmp4.cardStyle;
+          cResult[4] = tmp7;
+          cResult[5] = tmp13;
+          tmp11 = tmp13;
+        }
+        const tmp10 = jsx(GuildProgressOverviewDefault, { guild, titleStyle: tmp4.title, longPressDisabled: true, resume: true });
+        cResult[0] = guild;
+        cResult[1] = tmp4.title;
+        cResult[2] = tmp10;
+        tmp7 = tmp10;
+      }
+    }
+  }
+  return tmp6;
+}) : ((guild) => {
+  let completed;
+  let dismissed;
   guild = guild.guild;
   const tmp = closure_4();
-  const iOSCompletionStates = GuildProgressUtils.useIOSCompletionStates(guild);
+  const obj = GuildProgressUtils;
+  const iOSCompletionStates = obj.useIOSCompletionStates(guild);
   ({ completed, dismissed } = iOSCompletionStates);
   let tmp5 = null;
+  const obj2 = GuildProgressUtils;
   if (obj2.useIsEligibleForGuildProgress(guild)) {
     tmp5 = null;
     if (!completed) {
       tmp5 = null;
       if (dismissed) {
-        const obj3 = { style: tmp.cardStyle, children: null };
-        const obj4 = { guild, titleStyle: tmp.title, longPressDisabled: true, resume: true };
-        obj3.children = jsx(GuildProgressOverviewDefault, { guild, titleStyle: tmp.title, longPressDisabled: true, resume: true });
-        tmp5 = jsx(Card.Card, { style: tmp.cardStyle, children: null });
+        const Card = Card_Card.Card;
+        tmp5 = <Card style={tmp.cardStyle}>{null}</Card>;
       }
     }
   }
   return tmp5;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetProgress.tsx");
+
+export default tmp3;

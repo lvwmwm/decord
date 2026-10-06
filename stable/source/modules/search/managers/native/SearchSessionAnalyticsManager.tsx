@@ -1,52 +1,57 @@
-// Module ID: 12642
-// Function ID: 12643
+// Module ID: 11735
+// Function ID: 11736
 // Name: SearchSessionAnalyticsManager
-// Dependencies: [8153, 12643, 12623, 2]
+// Dependencies: [7306, 11736, 11716, 2]
 
-// Module 12642 (SearchSessionAnalyticsManager)
-import TrackingConstants from "TrackingConstants" /* 8153 */;
-import SearchUtils from "SearchUtils" /* 12623 */;
-import AbstractSearchSessionAnalyticsManager from "AbstractSearchSessionAnalyticsManager" /* 12643 */;
+// Module 11735 (SearchSessionAnalyticsManager)
+import TrackingConstants from "TrackingConstants" /* 7306 */;
+import SearchUtils from "SearchUtils" /* 11716 */;
+import AbstractSearchSessionAnalyticsManager from "AbstractSearchSessionAnalyticsManager" /* 11736 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = TrackingConstants.SEARCH_TAB_TO_ANALYTICS_SEARCH_TAB;
-class SearchSessionAnalyticsManager extends tmp2 {
+const React2 = TrackingConstants.SEARCH_TAB_TO_ANALYTICS_SEARCH_TAB;
+class SearchSessionAnalyticsManager extends AbstractSearchSessionAnalyticsManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    map = new Map();
-    applyArgumentsResult.locations = map;
-    map1 = new Map();
-    applyArgumentsResult.selectedTabs = map1;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    applyArgumentsResult.locations = new Map();
+    new Map();
+    applyArgumentsResult.selectedTabs = new Map();
+    new Map();
     return applyArgumentsResult;
+  }
+  _initialize(searchContext, arg1) {
+    const locations = this.locations;
+    const obj = SearchUtils;
+    const result = locations.set(obj.getSearchContextId(searchContext), arg1);
+  }
+  _terminate(searchContext) {
+    const obj = SearchUtils;
+    const searchContextId = obj.getSearchContextId(searchContext);
+    const locations = this.locations;
+    locations.delete(searchContextId);
+    const selectedTabs = this.selectedTabs;
+    selectedTabs.delete(searchContextId);
+  }
+  _transferSession() {
+
+  }
+  getLocation(searchContext) {
+    const locations = this.locations;
+    const obj = SearchUtils;
+    return locations.get(obj.getSearchContextId(searchContext));
+  }
+  getSelectedTab(searchContext) {
+    const selectedTabs = this.selectedTabs;
+    const obj = SearchUtils;
+    return selectedTabs.get(obj.getSearchContextId(searchContext));
+  }
+  setSelectedTab(searchContext, arg1) {
+    const selectedTabs = this.selectedTabs;
+    const obj = SearchUtils;
+    const result = selectedTabs.set(obj.getSearchContextId(searchContext), closure_2[arg1]);
   }
 }
 const prototype = SearchSessionAnalyticsManager.prototype;
-prototype["_initialize"] = function _initialize(searchContext, arg1) {
-  const locations = this.locations;
-  const result = locations.set(SearchUtils.getSearchContextId(searchContext), arg1);
-};
-prototype["_terminate"] = function _terminate(searchContext) {
-  const searchContextId = SearchUtils.getSearchContextId(searchContext);
-  const locations = this.locations;
-  locations.delete(searchContextId);
-  const selectedTabs = this.selectedTabs;
-  selectedTabs.delete(searchContextId);
-};
-prototype["_transferSession"] = function _transferSession() {
-
-};
-prototype["getLocation"] = function getLocation(searchContext) {
-  const locations = this.locations;
-  return locations.get(SearchUtils.getSearchContextId(searchContext));
-};
-prototype["getSelectedTab"] = function getSelectedTab(searchContext) {
-  const selectedTabs = this.selectedTabs;
-  return selectedTabs.get(SearchUtils.getSearchContextId(searchContext));
-};
-prototype["setSelectedTab"] = function setSelectedTab(searchContext, arg1) {
-  const selectedTabs = this.selectedTabs;
-  const result = selectedTabs.set(SearchUtils.getSearchContextId(searchContext), closure_2[arg1]);
-};
 const searchSessionAnalyticsManager = new SearchSessionAnalyticsManager();
 let result = size.fileFinishedImporting("modules/search/managers/native/SearchSessionAnalyticsManager.tsx");
 

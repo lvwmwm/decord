@@ -1,26 +1,30 @@
-// Module ID: 2030
-// Function ID: 2031
+// Module ID: 2038
+// Function ID: 2039
 // Name: DCFEventStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 2030 (DCFEventStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 2038 (DCFEventStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
 
 const DCFEventTypes = { DC_SHOWN: 0, [0]: "DC_SHOWN", DC_SHOW_REQUEST: 1, [1]: "DC_SHOW_REQUEST", DC_DISMISSED: 2, [2]: "DC_DISMISSED" };
 let closure_1 = [];
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class DCFEventStore extends Store {
+  getDCFEvents() {
+    return closure_1;
+  }
 }
-DCFEventStore.prototype["getDCFEvents"] = function getDCFEvents() {
-  return closure_1;
-};
+const prototype = DCFEventStore.prototype;
 DCFEventStore.displayName = "DCFEventStore";
-const dCFEventStore = new DCFEventStore(DispatcherDefault, {
+const obj2 = {
   LOGOUT: function reset() {
     closure_1 = [];
   },
   DCF_EVENT_LOGGED: function handleGenericEvent(arg0) {
+    let dismissibleContent;
+    let eventType;
     ({ eventType, dismissibleContent } = arg0);
   },
   DCF_HANDLE_DC_DISMISSED: function handleDCDismissed(arg0) {
@@ -29,8 +33,8 @@ const dCFEventStore = new DCFEventStore(DispatcherDefault, {
   DCF_HANDLE_DC_SHOWN: function handleDCShownToUser(arg0) {
 
   }
-});
-const size = fn(2);
+};
+const dCFEventStore = new DCFEventStore(DispatcherDefault, obj2);
 const result = size.fileFinishedImporting("modules/dismissible_content/DCFEventStore.tsx");
 
 export default dCFEventStore;

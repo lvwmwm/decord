@@ -1,11 +1,11 @@
-// Module ID: 17632
-// Function ID: 17633
+// Module ID: 16945
+// Function ID: 16946
 // Name: VoicePanelPreJoinUtils
-// Dependencies: [558, 2]
+// Dependencies: [568, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 17632 (VoicePanelPreJoinUtils)
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
+// Module 16945 (VoicePanelPreJoinUtils)
+import shallowEqualDefault from "shallowEqual" /* 568 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinUtils.tsx");
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/voice_panel/native/prejoin/Vo
 export const areVoicePanelPreJoinContentPropsEqual = function areVoicePanelPreJoinContentPropsEqual(streamingMembers, arg1) {
   if (null != streamingMembers) {
     if (null != arg1) {
-      if (discord_common_shallowEqualDefault(streamingMembers, arg1, ["streamingMembers"])) {
+      if (shallowEqualDefault(streamingMembers, arg1, ["streamingMembers"])) {
         let num = 0;
         streamingMembers = streamingMembers.streamingMembers;
         for (const item10013 of streamingMembers) {

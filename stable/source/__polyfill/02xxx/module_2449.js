@@ -1,9 +1,0 @@
-// Module ID: 2449
-// Function ID: 2450
-// Dependencies: [1121]
-
-// Module 2449
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_settings/server_monetization/tags/web", scales: [1], hash: "c3685a2fecec4fcf3399bcc8edd129b0", name: "GuildSettingsTags.compiled.messages", type: "jsona" });

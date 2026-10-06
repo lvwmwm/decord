@@ -1,0 +1,95 @@
+// Module ID: 688
+// Function ID: 689
+// Name: debugSymbolicatorIntegration
+// Dependencies: [689, 877, 893, 900, 987, 988, 989, 991, 992, 993, 1002, 1003, 1004, 1005, 1006, 1010, 1011, 1029, 1039, 1041, 1042, 998, 1030, 1044, 1047, 1048, 1050, 1051, 1052, 1012]
+
+// Module 688 (debugSymbolicatorIntegration)
+import _mod689 from "module_689" /* 689 */;
+import deviceContextIntegration from "deviceContextIntegration" /* 877 */;
+import reactNativeErrorHandlersIntegration from "reactNativeErrorHandlersIntegration" /* 893 */;
+import nativeLinkedErrorsIntegration from "nativeLinkedErrorsIntegration" /* 900 */;
+import nativeReleaseIntegration from "nativeReleaseIntegration" /* 987 */;
+import eventOriginIntegration from "eventOriginIntegration" /* 988 */;
+import defaultSdkInfo from "defaultSdkInfo" /* 989 */;
+import reactNativeInfoIntegration from "reactNativeInfoIntegration" /* 991 */;
+import modulesLoaderIntegration from "modulesLoaderIntegration" /* 992 */;
+import hermesProfilingIntegration from "hermesProfilingIntegration" /* 993 */;
+import ANDROID_DEFAULT_BUNDLE_NAME from "ANDROID_DEFAULT_BUNDLE_NAME" /* 998 */;
+import screenshotIntegration from "screenshotIntegration" /* 1002 */;
+import viewHierarchyIntegration from "viewHierarchyIntegration" /* 1003 */;
+import OTA_UPDATES_CONTEXT_KEY from "OTA_UPDATES_CONTEXT_KEY" /* 1004 */;
+import spotlightIntegration from "spotlightIntegration" /* 1005 */;
+import MOBILE_REPLAY_INTEGRATION_NAME from "MOBILE_REPLAY_INTEGRATION_NAME" /* 1006 */;
+import MOBILE_FEEDBACK_INTEGRATION_NAME from "MOBILE_FEEDBACK_INTEGRATION_NAME" /* 1010 */;
+import browserReplayIntegration from "browserReplayIntegration" /* 1011 */;
+import init from "init" /* 1012 */;
+import captureAppStart from "captureAppStart" /* 1029 */;
+import _mod1030 from "module_1030" /* 1030 */;
+import _mod1039 from "module_1039" /* 1039 */;
+import stallTrackingIntegration from "stallTrackingIntegration" /* 1041 */;
+import userInteractionIntegration from "userInteractionIntegration" /* 1042 */;
+import _mod1044 from "module_1044" /* 1044 */;
+import _mod1047 from "module_1047" /* 1047 */;
+import _mod1048 from "module_1048" /* 1048 */;
+import logEnricherIntegration from "logEnricherIntegration" /* 1050 */;
+import graphqlIntegration from "graphqlIntegration" /* 1051 */;
+import supabaseIntegration from "supabaseIntegration" /* 1052 */;
+
+const deviceContextIntegration_export = deviceContextIntegration.deviceContextIntegration;
+const reactNativeErrorHandlersIntegration_export = reactNativeErrorHandlersIntegration.reactNativeErrorHandlersIntegration;
+const nativeLinkedErrorsIntegration_export = nativeLinkedErrorsIntegration.nativeLinkedErrorsIntegration;
+const nativeReleaseIntegration_export = nativeReleaseIntegration.nativeReleaseIntegration;
+const eventOriginIntegration_export = eventOriginIntegration.eventOriginIntegration;
+const reactNativeInfoIntegration_export = reactNativeInfoIntegration.reactNativeInfoIntegration;
+const modulesLoaderIntegration_export = modulesLoaderIntegration.modulesLoaderIntegration;
+const hermesProfilingIntegration_export = hermesProfilingIntegration.hermesProfilingIntegration;
+const screenshotIntegration_export = screenshotIntegration.screenshotIntegration;
+const viewHierarchyIntegration_export = viewHierarchyIntegration.viewHierarchyIntegration;
+const spotlightIntegration_export = spotlightIntegration.spotlightIntegration;
+const browserReplayIntegration_export = browserReplayIntegration.browserReplayIntegration;
+const stallTrackingIntegration_export = stallTrackingIntegration.stallTrackingIntegration;
+const userInteractionIntegration_export = userInteractionIntegration.userInteractionIntegration;
+const logEnricherIntegration_export = logEnricherIntegration.logEnricherIntegration;
+const graphqlIntegration_export = graphqlIntegration.graphqlIntegration;
+const supabaseIntegration_export = supabaseIntegration.supabaseIntegration;
+
+export const debugSymbolicatorIntegration = _mod689.debugSymbolicatorIntegration;
+export { deviceContextIntegration_export as deviceContextIntegration };
+export { reactNativeErrorHandlersIntegration_export as reactNativeErrorHandlersIntegration };
+export { nativeLinkedErrorsIntegration_export as nativeLinkedErrorsIntegration };
+export { nativeReleaseIntegration_export as nativeReleaseIntegration };
+export { eventOriginIntegration_export as eventOriginIntegration };
+export const sdkInfoIntegration = defaultSdkInfo.sdkInfoIntegration;
+export { reactNativeInfoIntegration_export as reactNativeInfoIntegration };
+export { modulesLoaderIntegration_export as modulesLoaderIntegration };
+export { hermesProfilingIntegration_export as hermesProfilingIntegration };
+export { screenshotIntegration_export as screenshotIntegration };
+export { viewHierarchyIntegration_export as viewHierarchyIntegration };
+export const expoContextIntegration = OTA_UPDATES_CONTEXT_KEY.expoContextIntegration;
+export { spotlightIntegration_export as spotlightIntegration };
+export const mobileReplayIntegration = MOBILE_REPLAY_INTEGRATION_NAME.mobileReplayIntegration;
+export const feedbackIntegration = MOBILE_FEEDBACK_INTEGRATION_NAME.feedbackIntegration;
+export { browserReplayIntegration_export as browserReplayIntegration };
+export const appStartIntegration = captureAppStart.appStartIntegration;
+export const nativeFramesIntegration = _mod1039.nativeFramesIntegration;
+export const createNativeFramesIntegrations = _mod1039.createNativeFramesIntegrations;
+export { stallTrackingIntegration_export as stallTrackingIntegration };
+export { userInteractionIntegration_export as userInteractionIntegration };
+export const createReactNativeRewriteFrames = ANDROID_DEFAULT_BUNDLE_NAME.createReactNativeRewriteFrames;
+export const appRegistryIntegration = _mod1030.appRegistryIntegration;
+export const timeToDisplayIntegration = _mod1044.timeToDisplayIntegration;
+export const breadcrumbsIntegration = _mod1047.breadcrumbsIntegration;
+export const primitiveTagIntegration = _mod1048.primitiveTagIntegration;
+export { logEnricherIntegration_export as logEnricherIntegration };
+export { graphqlIntegration_export as graphqlIntegration };
+export { supabaseIntegration_export as supabaseIntegration };
+export const browserApiErrorsIntegration = init.browserApiErrorsIntegration;
+export const dedupeIntegration = init.dedupeIntegration;
+export const functionToStringIntegration = init.functionToStringIntegration;
+export const browserGlobalHandlersIntegration = init.globalHandlersIntegration;
+export const httpClientIntegration = init.httpClientIntegration;
+export const httpContextIntegration = init.httpContextIntegration;
+export const inboundFiltersIntegration = init.inboundFiltersIntegration;
+export const browserLinkedErrorsIntegration = init.linkedErrorsIntegration;
+export const rewriteFramesIntegration = init.rewriteFramesIntegration;
+export const extraErrorDataIntegration = init.extraErrorDataIntegration;

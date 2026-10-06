@@ -1,29 +1,25 @@
 // Module ID: 9999
 // Function ID: 10000
-// Dependencies: [41, 42, 93, 95, 98, 9993, 9994]
-// Exports: Chi, Maj
+// Dependencies: [41, 42, 93, 95, 98, 9994, 9932, 9934, 9935, 9939]
 
 // Module 9999
-import _asyncLoop from "_asyncLoop" /* 9993 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9932 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9939 */;
+import _mod9994 from "module_9994" /* 9994 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const HashMD = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -31,186 +27,65 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class HashMD {
-  constructor(arg0, arg1, arg2, arg3) {
-    self = this;
-    tmp = c2(this, HashMD);
-    tmp2 = closure_4;
-    obj = closure_4(HashMD);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
+class FRTimeUnitAgoFormatParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, FRTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(FRTimeUnitAgoFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
       constructResult = obj.apply(self, undefined);
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.blockLen = global;
-    tmp3Result.outputLen = require;
-    tmp3Result.padOffset = importDefault;
-    tmp3Result.isLE = importAll;
-    tmp3Result.finished = false;
-    tmp3Result.length = 0;
-    tmp3Result.pos = 0;
-    tmp3Result.destroyed = false;
-    uint8Array = new Uint8Array(global);
-    tmp3Result.buffer = uint8Array;
-    tmp3Result.view = closure_0(closure_1[5]).createView(tmp3Result.buffer);
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(HashMD, _asyncLoop.Hash);
+_inherits(FRTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "update",
-  value: function update(B) {
-    let tmp8;
-    const self = this;
-    HashMD(9994).exists(this);
-    ({ buffer, blockLen, view } = this);
-    const toBytesResult = HashMD(9993).toBytes(B);
-    let num = 0;
-    if (0 < toBytesResult.length) {
-      do {
-        let _Math = Math;
-        let bound = Math.min(blockLen - self.pos, length - num);
-        if (bound !== blockLen) {
-          let result = buffer.set(toBytesResult.subarray(num, num + bound), self.pos);
-          self.pos = self.pos + bound;
-          let sum = num + bound;
-          tmp8 = sum;
-          if (self.pos === blockLen) {
-            let processResult = self.process(view, 0);
-            self.pos = 0;
-            tmp8 = sum;
-          }
-        } else {
-          let tmp7 = num;
-          tmp8 = num;
-          if (blockLen <= length - num) {
-            do {
-              let processResult1 = self.process(tmp6, tmp7);
-              let sum1 = tmp7 + blockLen;
-              tmp7 = sum1;
-              tmp8 = sum1;
-              diff = length - sum1;
-            } while (blockLen <= diff);
-          }
-        }
-        num = tmp8;
-      } while (tmp8 < length);
-    }
-    self.length = self.length + toBytesResult.length;
-    self.roundClean();
-    return self;
+  key: "innerPattern",
+  value: function innerPattern() {
+    const NUMBER_PATTERN = _mod9994.NUMBER_PATTERN;
+    const regExp = new RegExp("(?:les?|la|l'|du|des?)\\s*(" + NUMBER_PATTERN + ")?(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod9994.TIME_UNIT_DICTIONARY) + ")(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?", "i");
+    return regExp;
   }
 };
-let items = [
+const items = [
   entry,
   {
-    key: "digestInto",
-    value: function digestInto(content) {
-      const self = this;
-      HashMD(9994).exists(this);
-      HashMD(9994).output(content, this);
-      this.finished = true;
-      ({ buffer, view, blockLen, isLE } = this);
-      let num = tmp3 + 1;
-      buffer[+this.pos] = 128;
-      const buffer2 = this.buffer;
-      buffer2.subarray(num).fill(0);
-      if (this.padOffset > blockLen - num) {
-        self.process(view, 0);
-        num = 0;
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      let num = 1;
+      if (arg1[1]) {
+        num = _mod9994.parseNumberPattern(arg1[1]);
       }
-      if (num < blockLen) {
-        do {
-          buffer[num] = 0;
-          num = num + 1;
-        } while (num < blockLen);
-      }
-      const diff = blockLen - 8;
-      const BigIntResult = BigInt(8 * self.length);
-      if (typeof view.setBigUint64 === "function") {
-        view.setBigUint64(diff, BigIntResult, isLE);
-      } else {
-        const _BigInt = BigInt;
-        const _BigInt2 = BigInt;
-        const BigIntResult2 = BigInt(4294967295);
-        const _Number = Number;
-        const _Number2 = Number;
-        const BigIntResult1 = BigInt(32);
-        let num2 = 0;
-        const NumberResult = Number(BigIntResult >> BigInt(32) & BigIntResult2);
-        if (isLE) {
-          num2 = 4;
+      const obj = {};
+      obj[_mod9994.TIME_UNIT_DICTIONARY[arg1[3].toLowerCase(arg1[3])]] = num;
+      const str2 = arg1[2] || arg1[4] || "";
+      const formatted = str2.toLowerCase();
+      if (formatted) {
+        const obj2 = /derni[eè]re?s?/;
+        let isMatch = obj2.test(formatted);
+        if (!isMatch) {
+          const obj3 = /pass[ée]e?s?/;
+          isMatch = obj3.test(formatted);
         }
-        let num3 = 4;
-        if (isLE) {
-          num3 = 0;
+        if (!isMatch) {
+          const obj4 = /pr[ée]c[ée]dents?/;
+          isMatch = obj4.test(formatted);
         }
-        view.setUint32(diff + num2, NumberResult, isLE);
-        view.setUint32(diff + num3, Number(BigIntResult & BigIntResult2), isLE);
-        const NumberResult1 = Number(BigIntResult & BigIntResult2);
-      }
-      self.process(view, 0);
-      const view1 = HashMD(9993).createView(content);
-      const outputLen = self.outputLen;
-      if (outputLen % 4) {
-        const _Error2 = Error;
-        const error = new Error("_sha2: outputLen should be aligned to 32bit");
-        throw error;
-      } else {
-        const result = outputLen / 4;
-        value = self.get();
-        if (result > value.length) {
-          const _Error = Error;
-          const error1 = new Error("_sha2: outputLen bigger than state");
-          throw error1;
-        } else {
-          let num5 = 0;
-          if (0 < result) {
-            do {
-              let setUint32Result2 = view1.setUint32(4 * num5, value[num5], isLE);
-              num5 = num5 + 1;
-            } while (num5 < result);
-          }
+        let reverseDurationResult = obj;
+        if (isMatch) {
+          reverseDurationResult = tmp3(9934).reverseDuration(obj);
         }
+        const ParsingComponents = tmp3(9935).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
       }
-      const subarrayResult = buffer2.subarray(num);
-    }
-  },
-  {
-    key: "digest",
-    value: function digest() {
-      ({ buffer, outputLen } = this);
-      this.digestInto(buffer);
-      const substr = buffer.slice(0, outputLen);
-      this.destroy();
-      return substr;
-    }
-  },
-  {
-    key: "_cloneInto",
-    value: function _cloneInto(arg0) {
-      const self = this;
-      let constructor = arg0;
-      if (!arg0) {
-        constructor = new self.constructor();
-      }
-      const items = [...self.get()];
-      constructor.set.apply(items);
-      constructor.length = self.length;
-      ({ pos: tmp.pos, finished: tmp.finished, destroyed: tmp.destroyed } = self);
-      if (self.length % self.blockLen) {
-        const buffer = constructor.buffer;
-        const result = buffer.set(tmp5);
-      }
-      return constructor;
     }
   }
 ];
 
-export const Chi = (arg0, arg1, arg2) => arg0 & arg1 ^ ~arg0 & arg2;
-export const Maj = (arg0, arg1, arg2) => arg0 & arg1 ^ arg0 & arg2 ^ arg1 & arg2;
-export const HashMD = _createClass(HashMD, items);
+export default _createClass(FRTimeUnitAgoFormatParser, items);

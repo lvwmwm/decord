@@ -1,53 +1,136 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 15945
+// Function ID: 15946
 // Name: GuildsBarMessages
-// Dependencies: [19, 4609, 1074, 21, 16651, 16636, 504, 16639, 576, 1115, 16652, 5321, 2]
+// Dependencies: [19, 4657, 1086, 21, 15946, 558, 576, 15931, 504, 15934, 588, 1127, 15947, 5386, 2]
 
-// Module 16650 (GuildsBarMessages)
-import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import ChatIcon from "ChatIcon" /* 5321 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 16636 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 16639 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16651 */;
-import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 16652 */;
-import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+// Module 15945 (GuildsBarMessages)
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import ChatIcon from "ChatIcon" /* 5386 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 15931 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 15934 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 15946 */;
+import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 15947 */;
+import react from "react" /* 19 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const GuildsBarAnimatedItemWrapperDefault = GuildsBarAnimatedItemWrapper;
+let guildId;
 
-require = fn;
-const ME = fn(1074).ME;
-const jsx = fn(21).jsx;
+const ME = Constants.ME;
+const jsx = Fragment.jsx;
 const config = {
   onPress() {
     transitionGuildsBarToGuildOrOpenSelectedChannelDefault(ME);
   }
 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
-
-export default noop.memo(function GuildsBarMessages() {
-  const guildsBarAnimatedWrapperStyles = GuildsBarAnimatedItemWrapper.useGuildsBarAnimatedWrapperStyles();
-  const items = [SelectedGuildStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => {
-    guildId = guildId.getGuildId();
-    let tmp2 = null == guildId;
-    if (!tmp2) {
-      tmp2 = guildId === ME;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let badge;
+  let cutouts;
+  let tmp13;
+  let tmp15;
+  let tmp18;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(13);
+  const obj2 = GuildsBarAnimatedItemWrapper;
+  const guildsBarAnimatedWrapperStyles = obj2.useGuildsBarAnimatedWrapperStyles();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SelectedGuildStore];
+    const fn = function c() {
+      guildId = guildId.getGuildId();
+      return null == guildId || guildId === ME;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { mentionCount: 0 };
+    cResult[2] = obj3;
+    tmp9 = obj3;
+  } else {
+    tmp9 = cResult[2];
+  }
+  ({ badge, cutouts } = useGuildsBarBottomRightBadgeDefault(tmp9));
+  useGuildsBarBottomRightBadgeDefault(tmp9);
+  const colors = nativeDefault.colors;
+  const tmp12 = stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl2.t.YUU0RF);
+    cResult[3] = stringResult;
+    tmp13 = stringResult;
+  } else {
+    tmp13 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp17 = jsx(HomeDrawerDirectMessagesRowDefault, {});
+    cResult[4] = tmp17;
+    tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[4];
+  }
+  if (cResult[5] !== tmp12) {
+    const tmp20 = jsx(ChatIcon.ChatIcon, { color: tmp12 });
+    cResult[5] = tmp12;
+    cResult[6] = tmp20;
+    tmp18 = tmp20;
+  } else {
+    tmp18 = cResult[6];
+  }
+  if (cResult[7] === badge) {
+    if (cResult[8] === cutouts) {
+      if (cResult[9] === stateFromStores) {
+        if (cResult[10] === guildsBarAnimatedWrapperStyles) {
+          let tmp21;
+          if (cResult[11] === tmp18) {
+            tmp21 = cResult[12];
+          }
+          return tmp21;
+        }
+      }
     }
-    return tmp2;
+  }
+  const tmp22 = jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, cutouts, config, overState: "y", label: tmp13, externalChildren: badge, expandedChildren: tmp15, children: tmp18 });
+  cResult[7] = badge;
+  cResult[8] = cutouts;
+  cResult[9] = stateFromStores;
+  cResult[10] = guildsBarAnimatedWrapperStyles;
+  cResult[11] = tmp18;
+  cResult[12] = tmp22;
+  tmp21 = tmp22;
+}) : (() => {
+  let badge;
+  let cutouts;
+  const obj = GuildsBarAnimatedItemWrapper;
+  const items = [SelectedGuildStore];
+  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
+  const obj2 = get_initialized;
+  const stateFromStores = obj2.useStateFromStores(items, () => {
+    guildId = guildId.getGuildId();
+    return null == guildId || guildId === ME;
   });
   ({ badge, cutouts } = useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 }));
+  useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 });
   const colors = nativeDefault.colors;
-  const obj3 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, cutouts, config, overState: "y", label: "CATEGORY_COLLAPSE", externalChildren: null, expandedChildren: false, children: false };
-  const tmp6 = useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 });
-  const tmp7 = stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
-  const intl = tmp(1115).intl;
-  obj3.label = intl.string(util.t.YUU0RF);
-  obj3.externalChildren = badge;
-  obj3.expandedChildren = jsx(HomeDrawerDirectMessagesRowDefault, {});
-  obj3.children = jsx(ChatIcon.ChatIcon, { color: tmp7 });
-  return jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, cutouts, config, overState: "y", label: "CATEGORY_COLLAPSE", externalChildren: null, expandedChildren: false, children: false });
-});
+  GuildsBarAnimatedItemWrapperDefault;
+  const intl = tmp(1127).intl;
+  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren="1,1">{"POGGERMODE_UPDATE_COMBO"}</tmp5Result>;
+}));
+const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
+
+export default memoResult;

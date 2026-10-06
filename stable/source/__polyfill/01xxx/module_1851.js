@@ -1,231 +1,130 @@
 // Module ID: 1851
 // Function ID: 1852
-// Dependencies: [19, 17, 21, 1637, 1627, 1852]
+// Dependencies: [19, 17, 1837, 1644, 1838]
+// Exports: useKeyboardAnimation, useTranslateAnimation
 
 // Module 1851
-import cancelAnimation2 from "cancelAnimation" /* 1637 */;
-import noop from "module_19" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
+import _mod1644 from "module_1644" /* 1644 */;
+import _mod1837 from "module_1837" /* 1837 */;
+import _mod1838 from "module_1838" /* 1838 */;
 
-const cancelAnimation = cancelAnimation2;
+const useLayoutEffect = react.useLayoutEffect;
+const Platform = react_native.Platform;
+const android = "android";
+const __initData = { code: "function pnpm_hooksTs1(e){const{isClosed,heightWhenOpened}=this.__closure;if(e.height>0){isClosed.value=false;heightWhenOpened.value=e.height;}}" };
+const __initData2 = { code: "function pnpm_hooksTs2(e){const{progress,height}=this.__closure;progress.value=e.progress;height.value=e.height;}" };
+const __initData3 = { code: "function pnpm_hooksTs3(e){const{progress,height}=this.__closure;progress.value=e.progress;height.value=e.height;}" };
+const __initData4 = { code: "function pnpm_hooksTs4(e){const{isClosed,height,progress}=this.__closure;isClosed.value=e.height===0;height.value=e.height;progress.value=e.progress;}" };
+const __initData5 = { code: "function pnpm_hooksTs5(e){const{padding,OS,translate}=this.__closure;if(e.height===0){padding.value=0;}if(OS===\"ios\"){translate.value=e.progress;}}" };
+const __initData6 = { code: "function pnpm_hooksTs6(e){const{OS,translate}=this.__closure;if(OS!==\"ios\"){translate.value=e.progress;}}" };
+const __initData7 = { code: "function pnpm_hooksTs7(e){const{padding,translate}=this.__closure;padding.value=0;translate.value=e.progress;}" };
+const __initData8 = { code: "function pnpm_hooksTs8(e){const{padding,OS,translate}=this.__closure;padding.value=e.progress;if(OS!==\"ios\"){translate.value=e.progress;}}" };
 
-require = fn;
-const Platform = fn(17).Platform;
-const jsx = fn(21).jsx;
-let closure_4 = cancelAnimation.createAnimatedComponent(fn(1627).ClippingScrollView);
-let closure_5 = { code: "function pnpm_indexTsx1(){const{inverted,bottomPadding,contentInset}=this.__closure;var _contentInset,_contentInset2,_contentInset3,_contentInset4;const dynamicTop=inverted?bottomPadding.value:0;const dynamicBottom=!inverted?bottomPadding.value:0;return{dynamic:{top:dynamicTop,bottom:dynamicBottom},effective:{top:dynamicTop+(((_contentInset=contentInset)===null||_contentInset===void 0?void 0:_contentInset.top)||0),bottom:dynamicBottom+(((_contentInset2=contentInset)===null||_contentInset2===void 0?void 0:_contentInset2.bottom)||0),left:((_contentInset3=contentInset)===null||_contentInset3===void 0?void 0:_contentInset3.left)||0,right:((_contentInset4=contentInset)===null||_contentInset4===void 0?void 0:_contentInset4.right)||0}};}" };
-let closure_6 = { code: "function pnpm_indexTsx2(){const{insets}=this.__closure;return insets.value.effective;}" };
-let closure_7 = { code: "function pnpm_indexTsx3(current,previous){const{onContentInsetChange,runOnJS}=this.__closure;if(!onContentInsetChange){return;}if(previous&&current.top===previous.top&&current.bottom===previous.bottom&&current.left===previous.left&&current.right===previous.right){return;}runOnJS(onContentInsetChange)(current);}" };
-let value = { code: "function pnpm_indexTsx4(){const{insets,scrollIndicatorPadding,bottomPadding,inverted,scrollIndicatorInsets,contentOffsetY,prevContentOffsetY}=this.__closure;var _scrollIndicatorPaddi,_scrollIndicatorInset,_scrollIndicatorInset2,_scrollIndicatorInset3,_scrollIndicatorInset4;const{dynamic:dynamic,effective:effective}=insets.value;const indicatorPadding=(_scrollIndicatorPaddi=scrollIndicatorPadding)!==null&&_scrollIndicatorPaddi!==void 0?_scrollIndicatorPaddi:bottomPadding;const indicatorTop=(inverted?indicatorPadding.value:0)+(((_scrollIndicatorInset=scrollIndicatorInsets)===null||_scrollIndicatorInset===void 0?void 0:_scrollIndicatorInset.top)||0);const indicatorBottom=(!inverted?indicatorPadding.value:0)+(((_scrollIndicatorInset2=scrollIndicatorInsets)===null||_scrollIndicatorInset2===void 0?void 0:_scrollIndicatorInset2.bottom)||0);const result={contentInset:effective,scrollIndicatorInsets:{bottom:indicatorBottom,top:indicatorTop,right:(_scrollIndicatorInset3=scrollIndicatorInsets)===null||_scrollIndicatorInset3===void 0?void 0:_scrollIndicatorInset3.right,left:(_scrollIndicatorInset4=scrollIndicatorInsets)===null||_scrollIndicatorInset4===void 0?void 0:_scrollIndicatorInset4.left},contentInsetBottom:dynamic.bottom,contentInsetTop:dynamic.top};if(contentOffsetY){const curr=contentOffsetY.value;if(curr!==prevContentOffsetY.value){prevContentOffsetY.value=curr;result.contentOffset={x:0,y:curr};}}return result;}" };
-
-export default fn(19).forwardRef((bottomPadding, ref) => {
-  bottomPadding = bottomPadding.bottomPadding;
-  const scrollIndicatorPadding = bottomPadding.scrollIndicatorPadding;
-  const contentInset = bottomPadding.contentInset;
-  const scrollIndicatorInsets = bottomPadding.scrollIndicatorInsets;
-  const inverted = bottomPadding.inverted;
-  const contentOffsetY = bottomPadding.contentOffsetY;
-  const onContentInsetChange = bottomPadding.onContentInsetChange;
-  ({ ScrollViewComponent, applyWorkaroundForContentInsetHitTestBug, children } = bottomPadding);
-  const merged = Object.assign(bottomPadding, Object.assign({ ScrollViewComponent: 0, bottomPadding: 0, scrollIndicatorPadding: 0, contentInset: 0, scrollIndicatorInsets: 0, inverted: 0, contentOffsetY: 0, applyWorkaroundForContentInsetHitTestBug: 0, onContentInsetChange: 0, children: 0 }));
-  let derivedValue;
-  const sharedValue = bottomPadding(contentInset[3]).useSharedValue(null);
-  let obj = bottomPadding(contentInset[3]);
-  class T {
-    constructor() {
-      num = 0;
-      tmp = inverted;
-      if (inverted) {
-        tmp2 = bottomPadding;
-        num = bottomPadding.value;
-      }
-      num2 = 0;
-      if (!tmp) {
-        tmp3 = bottomPadding;
-        num2 = bottomPadding.value;
-      }
-      obj = { dynamic: { top: num, bottom: num2 }, effective: null };
-      rect = contentInset;
-      num3 = undefined;
-      if (contentInset != null) {
-        num3 = rect.top;
-      }
-      if (!num3) {
-        num3 = 0;
-      }
-      rect1 = { top: num + num3, bottom: null, left: null, right: null };
-      num4 = undefined;
-      if (rect != null) {
-        num4 = rect.bottom;
-      }
-      if (!num4) {
-        num4 = 0;
-      }
-      rect1.bottom = num2 + num4;
-      num5 = undefined;
-      if (rect != null) {
-        num5 = rect.left;
-      }
-      if (!num5) {
-        num5 = 0;
-      }
-      rect1.left = num5;
-      num6 = undefined;
-      if (rect != null) {
-        num6 = rect.right;
-      }
-      if (!num6) {
-        num6 = 0;
-      }
-      rect1.right = num6;
-      obj.effective = rect1;
-      return obj;
-    }
-  }
-  T.__closure = { inverted, bottomPadding, contentInset };
-  T.__workletHash = 788035152099;
-  T.__initData = contentOffsetY;
-  const items = [inverted, , , , ];
-  let top;
-  if (contentInset != null) {
-    top = contentInset.top;
-  }
-  items[1] = top;
-  let bottom;
-  if (contentInset != null) {
-    bottom = contentInset.bottom;
-  }
-  items[2] = bottom;
-  let left;
-  if (contentInset != null) {
-    left = contentInset.left;
-  }
-  items[3] = left;
-  let right;
-  if (contentInset != null) {
-    right = contentInset.right;
-  }
-  items[4] = right;
-  derivedValue = bottomPadding(contentInset[3]).useDerivedValue(T, items);
-  const obj2 = bottomPadding(contentInset[3]);
-  class B {
-    constructor() {
-      return closure_8.value.effective;
-    }
-  }
-  B.__closure = { insets: derivedValue };
-  B.__workletHash = 3359315898790;
-  B.__initData = onContentInsetChange;
-  const fn = function x(top, top2) {
-    if (onContentInsetChange) {
-      let tmp4 = top2;
-      if (top2) {
-        tmp4 = top.top === top2.top;
-      }
-      if (tmp4) {
-        tmp4 = top.bottom === top2.bottom;
-      }
-      if (tmp4) {
-        tmp4 = top.left === top2.left;
-      }
-      if (tmp4) {
-        tmp4 = top.right === top2.right;
-      }
-      if (!tmp4) {
-        cancelAnimation2.runOnJS(tmp)(top);
-      }
+export const useKeyboardAnimation = () => {
+  let fn;
+  let fn2;
+  let fn3;
+  let fn4;
+  const obj = _mod1837;
+  const reanimated = obj.useKeyboardContext().reanimated;
+  const obj2 = _mod1644;
+  const heightWhenOpened = obj2.useSharedValue(0);
+  const obj3 = _mod1644;
+  const height = obj3.useSharedValue(0);
+  const obj4 = _mod1644;
+  const progress = obj4.useSharedValue(0);
+  const obj5 = _mod1644;
+  const isClosed = obj5.useSharedValue(true);
+  useLayoutEffect(() => {
+    const value = reanimated.progress.value;
+    heightWhenOpened.value = -reanimated.height.value;
+    height.value = -reanimated.height.value;
+    progress.value = value;
+    isClosed.value = 0 === value;
+  }, []);
+  const obj7 = { onStart: fn, onMove: fn2, onInteractive: fn3, onEnd: fn4 };
+  fn = function _(height) {
+    if (height.height > 0) {
+      isClosed.value = false;
+      heightWhenOpened.value = height.height;
     }
   };
-  const tmp2Result = bottomPadding(contentInset[3]);
-  fn.__closure = { onContentInsetChange, runOnJS: bottomPadding(contentInset[3]).runOnJS };
-  fn.__workletHash = 12461544130657;
-  fn.__initData = sharedValue;
-  const items1 = [onContentInsetChange];
-  const animatedReaction = tmp2Result.useAnimatedReaction(B, fn, items1);
-  const obj3 = { onContentInsetChange, runOnJS: bottomPadding(contentInset[3]).runOnJS };
-  const fn2 = function w() {
-    value = derivedValue.value;
-    let iter = scrollIndicatorPadding;
-    if (scrollIndicatorPadding == null) {
-      iter = bottomPadding;
-    }
-    let num = 0;
-    if (inverted) {
-      num = iter.value;
-    }
-    const rect = scrollIndicatorInsets;
-    let num2;
-    if (scrollIndicatorInsets != null) {
-      num2 = rect.top;
-    }
-    if (!num2) {
-      num2 = 0;
-    }
-    const obj = { contentInset: value.effective, scrollIndicatorInsets: null, contentInsetBottom: null, contentInsetTop: null };
-    let num3 = 0;
-    const sum = num + num2;
-    if (!inverted) {
-      num3 = iter.value;
-    }
-    let num4;
-    if (rect != null) {
-      num4 = rect.bottom;
-    }
-    if (!num4) {
-      num4 = 0;
-    }
-    const rect1 = { bottom: num3 + num4, top: sum, right: null, left: null };
-    let right;
-    if (rect != null) {
-      right = rect.right;
-    }
-    rect1.right = right;
-    let left;
-    if (rect != null) {
-      left = rect.left;
-    }
-    rect1.left = left;
-    obj.scrollIndicatorInsets = rect1;
-    ({ bottom: obj.contentInsetBottom, top: obj.contentInsetTop } = value.dynamic);
-    if (contentOffsetY) {
-      value2 = contentOffsetY.value;
-      if (value2 !== sharedValue.value) {
-        sharedValue.value = value2;
-        const point = { x: 0, y: value2 };
-        obj.contentOffset = point;
-      }
-    }
-    return obj;
+  fn.__closure = { isClosed, heightWhenOpened };
+  fn.__workletHash = 12249381939606;
+  fn.__initData = __initData;
+  fn2 = function h(progress) {
+    progress.value = progress.progress;
+    height.value = progress.height;
   };
-  fn2.__closure = { insets: derivedValue, scrollIndicatorPadding, bottomPadding, inverted, scrollIndicatorInsets, contentOffsetY, prevContentOffsetY: sharedValue };
-  fn2.__workletHash = 909305568735;
-  fn2.__initData = derivedValue;
-  let bottom1;
-  if (scrollIndicatorInsets != null) {
-    bottom1 = scrollIndicatorInsets.bottom;
-  }
-  const items2 = [bottom1, , , , , ];
-  let top1;
-  if (scrollIndicatorInsets != null) {
-    top1 = scrollIndicatorInsets.top;
-  }
-  items2[1] = top1;
-  let right1;
-  if (scrollIndicatorInsets != null) {
-    right1 = scrollIndicatorInsets.right;
-  }
-  items2[2] = right1;
-  let left1;
-  if (scrollIndicatorInsets != null) {
-    left1 = scrollIndicatorInsets.left;
-  }
-  items2[3] = left1;
-  items2[4] = inverted;
-  items2[5] = contentOffsetY;
-  const animatedProps = bottomPadding(contentInset[3]).useAnimatedProps(fn2, items2);
-  const obj4 = { animatedProps, applyWorkaroundForContentInsetHitTestBug, style: scrollIndicatorPadding(contentInset[5]).container, children: null };
-  const obj5 = { ref, animatedProps };
-  const merged1 = Object.assign(merged);
-  obj5.children = children;
-  obj4.children = scrollIndicatorInsets(ScrollViewComponent, obj5);
-  return scrollIndicatorInsets(inverted, obj4);
-});
+  fn2.__closure = { progress, height };
+  fn2.__workletHash = 6522928191084;
+  fn2.__initData = __initData2;
+  fn3 = function l(progress) {
+    progress.value = progress.progress;
+    height.value = progress.height;
+  };
+  fn3.__closure = { progress, height };
+  fn3.__workletHash = 4743203414413;
+  fn3.__initData = __initData3;
+  fn4 = function s(height) {
+    isClosed.value = 0 === height.height;
+    height.value = height.height;
+    progress.value = height.progress;
+  };
+  fn4.__closure = { isClosed, height, progress };
+  fn4.__workletHash = 7189399485148;
+  fn4.__initData = __initData4;
+  const obj6 = _mod1838;
+  obj6.useKeyboardHandler(obj7, []);
+  return { height, progress, heightWhenOpened, isClosed };
+};
+export const useTranslateAnimation = () => {
+  let fn;
+  let fn2;
+  let fn3;
+  let fn4;
+  const obj = _mod1837;
+  const reanimated = obj.useKeyboardContext().reanimated;
+  const obj2 = _mod1644;
+  const padding = obj2.useSharedValue(0);
+  const obj3 = _mod1644;
+  const translate = obj3.useSharedValue(0);
+  useLayoutEffect(() => {
+    padding.value = reanimated.progress.value;
+  }, []);
+  const obj5 = { onStart: fn, onMove: fn2, onInteractive: fn3, onEnd: fn4 };
+  fn = function u(height) {
+    if (0 === height.height) {
+      padding.value = 0;
+    }
+  };
+  const obj6 = { padding, OS: android, translate };
+  fn.__closure = obj6;
+  fn.__workletHash = 12261942243858;
+  fn.__initData = __initData5;
+  fn2 = function n(progress) {
+    translate.value = progress.progress;
+  };
+  fn2.__closure = { OS: android, translate };
+  fn2.__workletHash = 4704193858755;
+  fn2.__initData = __initData6;
+  fn3 = function o(progress) {
+    padding.value = 0;
+    translate.value = progress.progress;
+  };
+  fn3.__closure = { padding, translate };
+  fn3.__workletHash = 3250463859117;
+  fn3.__initData = __initData7;
+  fn4 = function t(progress) {
+    padding.value = progress.progress;
+    translate.value = progress.progress;
+  };
+  fn4.__closure = { padding, OS: android, translate };
+  fn4.__workletHash = 14425204766932;
+  fn4.__initData = __initData8;
+  const obj4 = _mod1838;
+  obj4.useKeyboardHandler(obj5, []);
+  return { translate, padding };
+};

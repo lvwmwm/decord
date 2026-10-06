@@ -1,43 +1,58 @@
-// Module ID: 7659
-// Function ID: 7660
+// Module ID: 6804
+// Function ID: 6805
 // Name: useGiftCardMobileConsumptionHalfsheet
-// Dependencies: [32, 19, 7660, 4449, 2038, 1085, 7661, 504, 2027, 7662, 5111, 573, 7666, 1980, 4755, 2]
+// Dependencies: [32, 19, 6805, 4494, 2048, 1097, 6806, 504, 2035, 6807, 5175, 585, 6811, 1987, 4801, 2]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
-// Module 7659 (useGiftCardMobileConsumptionHalfsheet)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5111 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import WalletBalanceStore from "WalletBalanceStore" /* 7660 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4449 */;
+// Module 6804 (useGiftCardMobileConsumptionHalfsheet)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1097 */;
+import dismissible_content from "dismissible_content" /* 2035 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5175 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import WalletBalanceStore from "WalletBalanceStore" /* 6805 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4494 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
-const PaymentSourceTypes = fn(1085).PaymentSourceTypes;
+let Idle, dependencyMap;
+
+let tmp;
+const asyncRequire = tmp(1987);
+let react = react_mod;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const PaymentSourceTypes = Constants.PaymentSourceTypes;
 const GiftCardMobileConsumptionActionSheet = "GiftCardMobileConsumptionActionSheet";
 let obj = { Idle: "idle", Opening: "opening", Opened: "opened" };
 let Opening = obj.Idle;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
 
 export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileConsumptionHalfsheet() {
-  enabled = enabled(7661).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
-  obj = enabled(7661);
+  let closure_2;
+  let current;
+  let enabled;
+  let first;
+  let markAsDismissed;
+  let ref;
   let tmp = enabled;
+  let tmp2 = dependencyMap;
+  obj = enabled(6806);
+  enabled = obj.useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
+  let obj2 = enabled(504);
   let items = [markAsDismissed];
   let items1 = [enabled];
-  const stateFromStores = enabled(504).useStateFromStores(items, () => {
-    if (enabled) {
+  const stateFromStores = obj2.useStateFromStores(items, () => {
+    const tmp = enabled;
+    if (tmp) {
       const _Object = Object;
       const values = Object.values(PaymentSourceStore.paymentSources);
       for (const item10013 of values) {
         if (item10013.type === PaymentSourceTypes.TDS_WALLET) {
+          let id = item10013.id;
           obj.return();
-          return item10013.id;
+          return id;
         }
       }
       return null;
@@ -45,25 +60,22 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
       return null;
     }
   }, items1);
-  let obj2 = enabled(504);
+  let obj3 = enabled(504);
   const items2 = [ref];
   const items3 = [stateFromStores];
-  const stateFromStores1 = enabled(504).useStateFromStores(items2, () => {
+  const stateFromStores1 = obj3.useStateFromStores(items2, () => {
     let balance = null;
     if (null != stateFromStores) {
       balance = WalletBalanceStore.getBalance(tmp);
     }
     return balance;
   }, items3);
-  let obj3 = enabled(504);
   const items4 = [ref];
   const items5 = [stateFromStores];
   let tmp6 = enabled;
-  const stateFromStores2 = enabled(504).useStateFromStores(items4, () => {
-    let isFetching = null != stateFromStores;
-    if (isFetching) {
-      isFetching = WalletBalanceStore.getIsFetching(tmp);
-    }
+  const obj4 = enabled(504);
+  const stateFromStores2 = obj4.useStateFromStores(items4, () => {
+    const isFetching = null != stateFromStores && WalletBalanceStore.getIsFetching(tmp);
     return isFetching;
   }, items5);
   if (enabled) {
@@ -73,6 +85,7 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
     tmp6 = !stateFromStores2;
   }
   if (tmp6) {
+    let tmp8 = null;
     tmp6 = null != stateFromStores1;
   }
   if (tmp6) {
@@ -80,64 +93,65 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
   }
   dependencyMap = tmp6;
   const items6 = [tmp6];
-  const memo = noop.useMemo(() => {
-    if (closure_2) {
+  const memo = react.useMemo(() => {
+    let items1;
+    const tmp = closure_2;
+    if (tmp) {
       const items = [dismissible_content.DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET];
-      let items1 = items;
+      items1 = items;
     } else {
       items1 = [];
     }
     return items1;
   }, items6);
-  const obj4 = enabled(504);
-  const tmp10 = first(tmp(7662).useSelectedDismissibleContent(memo, undefined, true), 2);
+  const tmpResult = tmp(6807);
+  let tmp10 = first(tmpResult.useSelectedDismissibleContent(memo, undefined, true), 2);
   first = tmp10[0];
-  noop = tmp12;
-  ref = noop.useRef(tmp10[1]);
+  react = tmp12;
+  ref = react.useRef(tmp12);
   const items7 = [tmp10[1]];
-  const effect = noop.useEffect(() => {
-    closure_5.current = current;
+  const effect = react.useEffect(() => {
+    ref.current = current;
   }, items7);
-  markAsDismissed = noop.useCallback((AUTO_DISMISS) => {
+  markAsDismissed = react.useCallback((AUTO_DISMISS) => {
     ref.current(AUTO_DISMISS);
   }, []);
   const items8 = [enabled];
-  const effect1 = noop.useEffect(() => {
-    if (enabled) {
-      const paymentSources = actions_BillingActionCreators.fetchPaymentSources();
+  const effect1 = react.useEffect(() => {
+    const tmp = enabled;
+    if (tmp) {
+      obj = actions_BillingActionCreators;
+      const paymentSources = obj.fetchPaymentSources();
     }
   }, items8);
   const items9 = [stateFromStores];
-  const effect2 = noop.useEffect(() => {
+  const effect2 = react.useEffect(() => {
     if (null != stateFromStores) {
-      const walletInformation = actions_BillingActionCreators.fetchWalletInformation(tmp);
+      obj = actions_BillingActionCreators;
+      const walletInformation = obj.fetchWalletInformation(tmp);
     }
   }, items9);
   const items10 = [first, markAsDismissed];
-  const effect3 = noop.useEffect(() => {
+  const effect3 = react.useEffect(() => {
     function handleShow(key) {
-      let tmp = c0;
-      if (!c0) {
-        tmp = key.key !== GiftCardMobileConsumptionActionSheet;
-      }
+      const tmp = c0 || key.key !== closure_2_9;
       if (!tmp) {
-        Idle = obj.Opened;
+        Idle = closure_2_10.Opened;
       }
     }
+    let tmp = require;
+    const tmp2 = dependencyMap;
     if (first === dismissible_content.DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET) {
       if (Opening === obj.Idle) {
         Opening = obj.Opening;
-        c0 = false;
+        let c0 = false;
         obj = DispatcherDefault;
         const subscription = obj.subscribe("SHOW_ACTION_SHEET", handleShow);
-        const promise = asyncRequireImpl(7666, dependencyMap.paths);
+        const promise = asyncRequire(6811, tmp2.paths);
         promise.catch(() => {
-          let tmp = c0;
-          if (!c0) {
-            tmp = Idle !== obj.Opening;
-          }
+          const tmp = c0 || Idle !== closure_2_10.Opening;
           if (!tmp) {
-            Idle = obj.Idle;
+            Idle = closure_2_10.Idle;
           }
         });
         const obj2 = ActionSheetActionCreatorsDefault;
@@ -145,27 +159,30 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
         obj2.openLazy(promise, GiftCardMobileConsumptionActionSheet, obj3, "stack");
         return () => {
           c0 = true;
-          stateFromStores(closure_2[11]).unsubscribe("SHOW_ACTION_SHEET", handleShow);
-          if (Idle === obj.Opening) {
-            Idle = obj.Idle;
+          obj = stateFromStores(closure_2_2[11]);
+          obj.unsubscribe("SHOW_ACTION_SHEET", handleShow);
+          if (Idle === closure_2_10.Opening) {
+            Idle = closure_2_10.Idle;
           }
         };
       }
     }
   }, items10);
   const items11 = [first];
-  const effect4 = noop.useEffect(() => {
+  const effect4 = react.useEffect(() => {
     function handleHide(key) {
       if (key.key === GiftCardMobileConsumptionActionSheet) {
         ref.current(constants.USER_DISMISS);
       }
     }
+    const tmp = closure_2;
     if (first === enabled(closure_2[8]).DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET) {
-      const subscription = stateFromStores(tmp[11]).subscribe("HIDE_ACTION_SHEET", handleHide);
+      obj = stateFromStores(tmp[11]);
+      const subscription = obj.subscribe("HIDE_ACTION_SHEET", handleHide);
       return () => {
-        DispatcherDefault.unsubscribe("HIDE_ACTION_SHEET", handleHide);
+        obj = DispatcherDefault;
+        obj.unsubscribe("HIDE_ACTION_SHEET", handleHide);
       };
     }
-    tmp = closure_2;
   }, items11);
 };

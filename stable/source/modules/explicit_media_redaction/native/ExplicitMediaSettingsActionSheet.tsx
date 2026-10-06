@@ -1,49 +1,151 @@
-// Module ID: 15108
-// Function ID: 15109
+// Module ID: 14351
+// Function ID: 14352
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [19, 17, 21, 4788, 576, 4755, 7427, 7426, 5934, 1186, 5937, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4801, 6571, 1198, 5994, 5995, 6572, 2]
 
-// Module 15108 (ExplicitMediaSettingsActionSheet)
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import noop from "module_19" /* 19 */;
+// Module 14351 (ExplicitMediaSettingsActionSheet)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { content: { marginTop: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaSettingsActionSheet.tsx");
+let BottomSheet;
 
-export default function ExplicitMediaSettingsActionSheet(options) {
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { content: obj2 };
+obj2 = { marginTop: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
+let closure_7 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentValue) => {
+  let options;
+  let subtitle;
+  let title;
+  let tmp5;
+  let obj = options(576);
+  const cResult = obj.c(18);
+  ({ title, subtitle, options } = currentValue);
+  let SHOW = currentValue.currentValue;
+  const tmp4 = closure_7();
+  if (cResult[0] !== options) {
+    const fn = function n(arg0) {
+      let closure_0 = arg0;
+      const found = options.find((value) => value.value === closure_0);
+      if (null != found) {
+        found.onPress();
+        const obj2 = ActionSheetActionCreatorsDefault;
+        obj2.hideActionSheet();
+      }
+    };
+    cResult[0] = options;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === subtitle) {
+    const content = tmp4.content;
+    if (SHOW == null) {
+      SHOW = tmp(1198).ExplicitContentRedaction.SHOW;
+    }
+    if (cResult[5] !== options) {
+      let tmp11;
+      const _Symbol = Symbol;
+      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+        class R {
+          constructor(label) {
+            const obj = { label: label.label, value: label.value };
+            return closure_1_5(options(dependencyMap[10]).TableRadioRow, obj, label.value);
+          }
+        }
+        cResult[7] = R;
+        tmp11 = R;
+      } else {
+        class R {
+          constructor(label) {
+            const obj = { label: label.label, value: label.value };
+            return closure_1_5(options(dependencyMap[10]).TableRadioRow, obj, label.value);
+          }
+        }
+      }
+      const mapped = options.map(tmp11);
+      cResult[5] = options;
+      cResult[6] = mapped;
+    } else {
+      class R {
+        constructor(label) {
+          const obj = { label: label.label, value: label.value };
+          return closure_1_5(options(dependencyMap[10]).TableRadioRow, obj, label.value);
+        }
+      }
+    }
+    if (cResult[8] === tmp5) {
+      class R {
+        constructor(label) {
+          const obj = { label: label.label, value: label.value };
+          return closure_1_5(options(dependencyMap[10]).TableRadioRow, obj, label.value);
+        }
+      }
+    }
+    let obj2 = { defaultValue: SHOW, onChange: tmp5, hasIcons: false, children: tmp9 };
+    cResult[8] = tmp5;
+    cResult[9] = SHOW;
+    cResult[10] = tmp9;
+    cResult[11] = closure_5(options(5995).TableRadioGroup, obj2);
+    const tmp15 = closure_5(options(5995).TableRadioGroup, obj2);
+  }
+  cResult[2] = subtitle;
+  cResult[3] = title;
+  cResult[4] = closure_5(options(6571).BottomSheetTitleHeader, { title, subtitle });
+  closure_5(options(6571).BottomSheetTitleHeader, { title, subtitle });
+}) : ((options) => {
+  let TableRadioGroup;
+  let obj3;
+  let subtitle;
+  let title;
   options = options.options;
   let SHOW = options.currentValue;
   ({ title, subtitle } = options);
   const items = [options];
-  const callback = noop.useCallback((arg0) => {
-    closure_0 = arg0;
+  const tmp = closure_7();
+  const callback = react.useCallback((arg0) => {
+    let closure_0 = arg0;
     const found = options.find((value) => value.value === closure_0);
     if (null != found) {
       found.onPress();
-      ActionSheetActionCreatorsDefault.hideActionSheet();
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
     }
   }, items);
-  const items1 = [closure_5(options(7426).BottomSheetTitleHeader, { title, subtitle }), ];
-  const obj = { style: closure_7().content, children: null };
-  if (SHOW == null) {
-    SHOW = tmp4(1186).ExplicitContentRedaction.SHOW;
-  }
-  let obj2 = { startExpanded: true, children: null };
-  const tmp = closure_7();
+  BottomSheet = options(6572).BottomSheet;
+  const items1 = [closure_5(options(6571).BottomSheetTitleHeader, { title, subtitle }), ];
+  let obj = { style: tmp.content, children: closure_5(TableRadioGroup, obj3) };
+  TableRadioGroup = options(5995).TableRadioGroup;
   const tmp3 = closure_6;
-  tmp4 = options;
+  const tmp4 = options;
   const tmp7 = View;
-  obj.children = closure_5(options(5934).TableRadioGroup, { defaultValue: SHOW, onChange: callback, hasIcons: false, children: options.map((label) => closure_1_5(options(dependencyMap[10]).TableRadioRow, { label: label.label, value: label.value }, label.value)) });
+  if (SHOW == null) {
+    SHOW = tmp4(1198).ExplicitContentRedaction.SHOW;
+  }
+  let obj2 = { startExpanded: true, children: items1 };
+  obj3 = {
+    defaultValue: SHOW,
+    onChange: callback,
+    hasIcons: false,
+    children: options.map((label) => {
+      const obj = { label: label.label, value: label.value };
+      return closure_1_5(options(dependencyMap[10]).TableRadioRow, obj, label.value);
+    })
+  };
   items1[1] = closure_5(tmp7, obj);
-  obj2.children = items1;
-  return tmp3(options(7427).BottomSheet, obj2);
-};
+  return tmp3(BottomSheet, obj2);
+});
+const result = size.fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaSettingsActionSheet.tsx");
+
+export default tmp3;

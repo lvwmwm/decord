@@ -1,15 +1,17 @@
-// Module ID: 9969
-// Function ID: 9970
+// Module ID: 9107
+// Function ID: 9108
 // Name: AudioManagerActionCreator
-// Dependencies: [573, 2]
+// Dependencies: [585, 2]
 // Exports: setAudioOutputDevice
 
-// Module 9969 (AudioManagerActionCreator)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 9107 (AudioManagerActionCreator)
+import DispatcherDefault from "Dispatcher" /* 585 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_calls/native/AudioManagerActionCreator.tsx");
 
 export const setAudioOutputDevice = function setAudioOutputDevice(device) {
-  DispatcherDefault.dispatch({ type: "NATIVE_AUDIO_SET_OUTPUT_DEVICE", device });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "NATIVE_AUDIO_SET_OUTPUT_DEVICE", device };
+  obj.dispatch(obj2);
 };

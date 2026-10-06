@@ -1,56 +1,80 @@
-// Module ID: 18085
-// Function ID: 18086
+// Module ID: 17448
+// Function ID: 17449
 // Name: ChangeVanityURLActionCreators
-// Dependencies: [1074, 573, 1271, 2]
+// Dependencies: [1086, 585, 1283, 2]
 
-// Module 18085 (ChangeVanityURLActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 17448 (ChangeVanityURLActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
-const result = size.fileFinishedImporting("actions/ChangeVanityURLActionCreators.tsx");
-
-export default {
+let obj = {
   openModal(id, vanityURLCode) {
-    DispatcherDefault.dispatch({ type: "CHANGE_VANITY_URL_MODAL_OPEN", guildId: id, code: vanityURLCode });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "CHANGE_VANITY_URL_MODAL_OPEN", guildId: id, code: vanityURLCode };
+    obj.dispatch(obj2);
   },
   closeModal() {
-    DispatcherDefault.dispatch({ type: "CHANGE_VANITY_URL_MODAL_CLOSE" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "CHANGE_VANITY_URL_MODAL_CLOSE" });
   },
   removeVanityURL(id) {
     const HTTP = HTTPUtils.HTTP;
     const request = { url: Endpoints.GUILD_VANITY_URL(id), body: { code: null }, oldFormErrors: true, rejectWithError: true };
-    return HTTP.patch(request).then(() => {
-      DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code: null, uses: 0 });
+    const patchResult = HTTP.patch(request);
+    return patchResult.then(() => {
+      const obj = DispatcherDefault;
+      obj.dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code: null, uses: 0 });
     });
   },
   changeVanityURL(id, vanityURLCode) {
+    let obj2;
     const self = this;
-    DispatcherDefault.dispatch({ type: "CHANGE_VANITY_URL_MODAL_SUBMIT" });
-    const HTTP = self(1271).HTTP;
-    const request = { url: Endpoints.GUILD_VANITY_URL(id), body: { code: vanityURLCode }, oldFormErrors: true, rejectWithError: true };
-    const obj2 = { code: vanityURLCode };
-    return HTTP.patch(request).then((body) => {
+    let obj = DispatcherDefault;
+    obj.dispatch({ type: "CHANGE_VANITY_URL_MODAL_SUBMIT" });
+    const HTTP = self(1283).HTTP;
+    const request = { url: Endpoints.GUILD_VANITY_URL(id), body: obj2, oldFormErrors: true, rejectWithError: true };
+    obj2 = { code: vanityURLCode };
+    const patchResult = HTTP.patch(request);
+    return patchResult.then((body) => {
+      let code;
+      let uses;
       ({ code, uses } = body.body);
-      DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code, uses });
+      const obj = DispatcherDefault;
+      obj.dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code, uses });
       self.closeModal();
     }, (body) => {
-      DispatcherDefault.dispatch({ type: "CHANGE_VANITY_URL_MODAL_SUBMIT_FAILURE", error: body.body, hasError: true });
+      const obj = DispatcherDefault;
+      const obj2 = { type: "CHANGE_VANITY_URL_MODAL_SUBMIT_FAILURE", error: body.body, hasError: true };
+      obj.dispatch(obj2);
       return body;
     });
   },
   setVanityURL(id, code) {
+    let obj;
+    let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: Endpoints.GUILD_VANITY_URL(id), body: { code }, oldFormErrors: true, rejectWithError: HTTPUtils.rejectWithMigratedError() };
-    const obj = { code };
-    return HTTP.patch(request).then((body) => {
+    const request = { url: Endpoints.GUILD_VANITY_URL(id), body: obj, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const patch = HTTP.patch;
+    obj = { code };
+    obj3 = HTTPUtils;
+    const patchResult = patch(request);
+    return patchResult.then((body) => {
+      let code;
+      let uses;
       ({ code, uses } = body.body);
-      DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code, uses });
+      const obj = DispatcherDefault;
+      obj.dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code, uses });
     }, (body) => {
-      DispatcherDefault.dispatch({ type: "CHANGE_VANITY_URL_MODAL_SUBMIT_FAILURE", error: body.body, hasError: true });
+      const obj = DispatcherDefault;
+      const obj2 = { type: "CHANGE_VANITY_URL_MODAL_SUBMIT_FAILURE", error: body.body, hasError: true };
+      obj.dispatch(obj2);
       return body;
     });
   }
 };
+const result = size.fileFinishedImporting("actions/ChangeVanityURLActionCreators.tsx");
+
+export default obj;

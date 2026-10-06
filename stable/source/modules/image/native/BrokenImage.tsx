@@ -1,23 +1,47 @@
-// Module ID: 12367
-// Function ID: 12368
+// Module ID: 11453
+// Function ID: 11454
 // Name: BrokenImage
-// Dependencies: [19, 21, 8760, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 7913, 2]
 
-// Module 12367 (BrokenImage)
-import inlineStyles from "inlineStyles" /* 8760 */;
-import noop from "module_19" /* 19 */;
+// Module 11453 (BrokenImage)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import inlineStylesDefault from "inlineStyles" /* 7913 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const inlineStylesDefault = inlineStyles;
-
-require = fn;
-const jsx = fn(21).jsx;
-let size = fn(2);
+let tmp;
+const inlineStyles = tmp(7913);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = jsx(inlineStyles.Path, { d: "M21 5v6.59l-3-3-4 4-4-4-4 4-3-3V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Zm-3 6.42 3 3V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6.58l3 3 4-4 4 4 4-4Z" });
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    inlineStylesDefault;
+    const merged = Object.assign(arg0);
+    const tmp14 = <tmp10 width={24} height={24} fill="hsl(217, 7.6%, 33.5%)">{first}</tmp10>;
+    cResult[1] = arg0;
+    cResult[2] = tmp14;
+    tmp7 = tmp14;
+  } else {
+    tmp7 = cResult[2];
+  }
+  return tmp7;
+}) : ((arg0) => {
+  inlineStylesDefault;
+  const merged = Object.assign(arg0);
+  return <tmp width={24} height={24} fill="hsl(217, 7.6%, 33.5%)">{jsx(inlineStyles.Path, { d: "M21 5v6.59l-3-3-4 4-4-4-4 4-3-3V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Zm-3 6.42 3 3V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6.58l3 3 4-4 4 4 4-4Z" })}</tmp>;
+});
 const result = size.fileFinishedImporting("modules/image/native/BrokenImage.tsx");
 
-export default function BrokenImage(arg0) {
-  const size = { width: 24, height: 24, fill: "hsl(217, 7.6%, 33.5%)" };
-  const merged = Object.assign(arg0);
-  size.children = jsx(inlineStyles.Path, { d: "M21 5v6.59l-3-3-4 4-4-4-4 4-3-3V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Zm-3 6.42 3 3V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6.58l3 3 4-4 4 4 4-4Z" });
-  return jsx(inlineStylesDefault, { width: 24, height: 24, fill: "hsl(217, 7.6%, 33.5%)" });
-};
+export default tmp3;

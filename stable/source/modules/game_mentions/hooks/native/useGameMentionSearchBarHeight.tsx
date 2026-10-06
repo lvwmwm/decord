@@ -1,22 +1,27 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 11775
+// Function ID: 11776
 // Name: useGameMentionSearchBarHeight
-// Dependencies: [17, 10414, 2]
+// Dependencies: [17, 558, 10489, 2]
 // Exports: default
 
-// Module 12671 (useGameMentionSearchBarHeight)
-import _mod17 from "module_17" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10414 */;
+// Module 11775 (useGameMentionSearchBarHeight)
+import react_native from "react-native" /* 17 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10489 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const StyleSheet = _mod17.StyleSheet;
+const StyleSheet = react_native.StyleSheet;
 let c3 = "text-sm/semibold";
 let c4 = "text-sm/medium";
-const result = size.fileFinishedImporting("modules/game_mentions/hooks/native/useGameMentionSearchBarHeight.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/game_mentions/hooks/native/useGameMentionSearchBarHeight.tsx");
 
-export default function useGameMentionSearchBarHeight() {
-  const sum = 24 + useScaledTextLineHeight.useScaledTextLineHeight(c3);
-  return sum + useScaledTextLineHeight.useScaledTextLineHeight(c4) + 12 + StyleSheet.hairlineWidth;
+export default () => {
+  const obj = useScaledTextLineHeight;
+  const sum = 24 + obj.useScaledTextLineHeight(c3);
+  const obj2 = useScaledTextLineHeight;
+  return sum + obj2.useScaledTextLineHeight(c4) + 12 + StyleSheet.hairlineWidth;
 };
 export const GAME_MENTION_SEARCH_BAR_TITLE_VARIANT = "text-sm/semibold";
 export const GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT = "text-sm/medium";

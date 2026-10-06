@@ -1,159 +1,674 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15124
+// Function ID: 15125
 // Name: DevToolsBuildOverrideScreen
-// Dependencies: [32, 19, 17, 11717, 21, 4788, 576, 9173, 15864, 7258, 504, 12072, 5216, 5936, 5854, 4734, 7466, 4485, 15428, 4745, 5934, 5937, 6880, 5218, 1370, 2]
+// Dependencies: [32, 19, 17, 10837, 21, 4837, 588, 8324, 15125, 558, 576, 6399, 11141, 504, 5997, 5916, 4780, 6611, 4530, 14494, 4791, 5994, 5995, 6021, 1376, 5282, 5280, 2]
 
-// Module 15863 (DevToolsBuildOverrideScreen)
-import nativeDefault from "native" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ToastUtils from "ToastUtils" /* 4485 */;
-import ClipboardUtils from "ClipboardUtils" /* 7466 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12072 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11717 */;
+// Module 15124 (DevToolsBuildOverrideScreen)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import ToastUtils from "ToastUtils" /* 4530 */;
+import ClipboardUtils from "ClipboardUtils" /* 6611 */;
+import TagIcon from "TagIcon" /* 8324 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11141 */;
+import HashmarkIcon from "HashmarkIcon" /* 15125 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10837 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ScrollView = fn(17).ScrollView;
-const jsxProd = fn(21);
-const jsx = jsxProd.jsx;
-const jsxs = jsxProd.jsxs;
-const createStyles = fn(4788);
-let obj = { content: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, contentContainer: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.contentContainer = { padding: nativeDefault.space.PX_16 };
-let closure_9 = createStyles.createStyles(obj);
-let obj4 = { padding: nativeDefault.space.PX_16 };
-let items = [{ label: "Branch Name", value: "branch", icon: jsx(fn(9173).TagIcon, {}) }, ];
-let obj5 = { label: "Branch Name", value: "branch", icon: jsx(fn(9173).TagIcon, {}) };
-items[1] = { label: "Commit SHA", value: "id", icon: jsx(fn(15864).HashmarkIcon, {}) };
-let obj6 = { label: "Commit SHA", value: "id", icon: jsx(fn(15864).HashmarkIcon, {}) };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBuildOverrideScreen.tsx");
+let closure_0;
 
-export default noop.memo(() => {
+let obj2;
+let obj3;
+const ScrollView = react_native.ScrollView;
+const jsx = Fragment.jsx;
+const jsxs = Fragment.jsxs;
+let createStyles = createStyles_mod;
+let obj = { content: obj2, contentContainer: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16 };
+let closure_9 = createStyles(obj);
+let items = [{ label: "Branch Name", value: "branch", icon: jsx(TagIcon.TagIcon, {}) }, ];
+const obj4 = { label: "Branch Name", value: "branch", icon: jsx(TagIcon.TagIcon, {}) };
+let obj5 = { label: "Commit SHA", value: "id", icon: jsx(HashmarkIcon.HashmarkIcon, {}) };
+items[1] = obj5;
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_2;
+  let currentBuildOverride;
+  let first;
+  let first1;
+  let stateFromStores;
+  let tmp10;
+  let tmp6;
+  let tmp7;
+  let tmp = stateFromStores;
+  let obj = stateFromStores(576);
+  const cResult = obj.c(47);
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { includeKeyboardHeight: true };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const insets = first1(6399)(first).insets;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [BuildOverrideStore];
+    class C {
+      constructor() {
+        const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+        let tmp;
+        if (overrides != null) {
+          tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+        }
+        return tmp;
+      }
+    }
+    cResult[1] = items;
+    cResult[2] = C;
+    tmp7 = C;
+    tmp6 = items;
+  } else {
+    tmp6 = cResult[1];
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj3 = { type: "branch", id: "" };
+    cResult[3] = obj3;
+    class C {
+      constructor() {
+        const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+        let tmp;
+        if (overrides != null) {
+          tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+        }
+        return tmp;
+      }
+    }
+  } else {
+    tmp10 = cResult[3];
+  }
+  [first1, dependencyMap] = react.useState(tmp10);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor(arg0) {
+        closure_0 = arg0;
+        found = closure_1_10.find((value) => value.value === type.type);
+        label = undefined;
+        if (found != null) {
+          label = found.label;
+        }
+        return label;
+      }
+    }
+    cResult[4] = R;
+    class C {
+      constructor() {
+        const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+        let tmp;
+        if (overrides != null) {
+          tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+        }
+        return tmp;
+      }
+    }
+  } else {
+    class R {
+      constructor(arg0) {
+        closure_0 = arg0;
+        found = closure_1_10.find((value) => value.value === type.type);
+        label = undefined;
+        if (found != null) {
+          label = found.label;
+        }
+        return label;
+      }
+    }
+  }
+  const sum = tmp4.contentContainer.padding + insets.bottom;
+  if (cResult[5] === tmp4.contentContainer) {
+    let tmp22;
+    class R {
+      constructor(arg0) {
+        closure_0 = arg0;
+        found = closure_1_10.find((value) => value.value === type.type);
+        label = undefined;
+        if (found != null) {
+          label = found.label;
+        }
+        return label;
+      }
+    }
+    if (cResult[8] !== stateFromStores) {
+      let tmp17;
+      class R {
+        constructor(arg0) {
+          closure_0 = arg0;
+          found = closure_1_10.find((value) => value.value === type.type);
+          label = undefined;
+          if (found != null) {
+            label = found.label;
+          }
+          return label;
+        }
+      }
+      if (null != stateFromStores) {
+        class R {
+          constructor(arg0) {
+            closure_0 = arg0;
+            found = closure_1_10.find((value) => value.value === type.type);
+            label = undefined;
+            if (found != null) {
+              label = found.label;
+            }
+            return label;
+          }
+        }
+        class C {
+          constructor() {
+            const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+            let tmp;
+            if (overrides != null) {
+              tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+            }
+            return tmp;
+          }
+        }
+        const TableRow = tmp(5916).TableRow;
+        const items1 = [
+          <TableRow icon={null} label={tmp13(stateFromStores)} subLabel={stateFromStores.id} onPress={function onPress() {
+                  const obj = ClipboardUtils;
+                  obj.copy(stateFromStores.id);
+                  const obj2 = ToastUtils;
+                  const result = obj2.presentCopiedToClipboard();
+                }} />,
+  ,
+
+        ];
+        const TableRow2 = tmp(5916).TableRow;
+        items1[1] = <TableRow2 icon={null} label="Refresh Override" onPress={tmp(11141).refreshBuildOverride} arrow />;
+        const TableRow3 = tmp(5916).TableRow;
+        items1[2] = <TableRow3 icon={null} label="Clear Override" variant="danger" onPress={tmp(11141).clearBuildOverride} arrow />;
+        tmp17 = <tmp18 title="Current Override" hasIcons>{items1}</tmp18>;
+      }
+      class C {
+        constructor() {
+          const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+          let tmp;
+          if (overrides != null) {
+            tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+          }
+          return tmp;
+        }
+      }
+      cResult[9] = tmp17;
+    } else {
+      class R {
+        constructor(arg0) {
+          closure_0 = arg0;
+          found = closure_1_10.find((value) => value.value === type.type);
+          label = undefined;
+          if (found != null) {
+            label = found.label;
+          }
+          return label;
+        }
+      }
+    }
+    class C {
+      constructor() {
+        const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+        let tmp;
+        if (overrides != null) {
+          tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+        }
+        return tmp;
+      }
+    }
+    if (null != stateFromStores) {
+      class R {
+        constructor(arg0) {
+          closure_0 = arg0;
+          found = closure_1_10.find((value) => value.value === type.type);
+          label = undefined;
+          if (found != null) {
+            label = found.label;
+          }
+          return label;
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    let type = first1.type;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor(type) {
+          const obj = { type, id: "" };
+          closure_2(obj);
+        }
+      }
+      cResult[10] = F;
+      class C {
+        constructor() {
+          const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+          let tmp;
+          if (overrides != null) {
+            tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+          }
+          return tmp;
+        }
+      }
+    } else {
+      class F {
+        constructor(type) {
+          const obj = { type, id: "" };
+          closure_2(obj);
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor(type) {
+          const obj = { type, id: "" };
+          closure_2(obj);
+        }
+      }
+      const mapped = items.map((value) => {
+        let icon;
+        let label;
+        value = value.value;
+        ({ icon, label } = value);
+        return jsx(stateFromStores(closure_2[21]).TableRadioRow, { value, label, icon }, value);
+      });
+      class C {
+        constructor() {
+          const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+          let tmp;
+          if (overrides != null) {
+            tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+          }
+          return tmp;
+        }
+      }
+      tmp22 = mapped;
+    } else {
+      class F {
+        constructor(type) {
+          const obj = { type, id: "" };
+          closure_2(obj);
+        }
+      }
+    }
+    const text = `${str} Override Type`;
+    if (cResult[12] === first1.type) {
+      class F {
+        constructor(type) {
+          const obj = { type, id: "" };
+          closure_2(obj);
+        }
+      }
+      if (cResult[15] !== first1) {
+        class F {
+          constructor(type) {
+            const obj = { type, id: "" };
+            closure_2(obj);
+          }
+        }
+        cResult[15] = first1;
+        class C {
+          constructor() {
+            const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+            let tmp;
+            if (overrides != null) {
+              tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+            }
+            return tmp;
+          }
+        }
+        cResult[16] = tmp29;
+      } else {
+        class F {
+          constructor(type) {
+            const obj = { type, id: "" };
+            closure_2(obj);
+          }
+        }
+      }
+      if (cResult[17] !== first1.type) {
+        class F {
+          constructor(type) {
+            const obj = { type, id: "" };
+            closure_2(obj);
+          }
+        }
+        let found = items.find((value) => value.value === first1.type);
+        class C {
+          constructor() {
+            const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+            let tmp;
+            if (overrides != null) {
+              tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+            }
+            return tmp;
+          }
+        }
+        cResult[17] = first1.type;
+        cResult[18] = undefined;
+      } else {
+        class F {
+          constructor(type) {
+            const obj = { type, id: "" };
+            closure_2(obj);
+          }
+        }
+      }
+      class C {
+        constructor() {
+          const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+          let tmp;
+          if (overrides != null) {
+            tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+          }
+          return tmp;
+        }
+      }
+      const _HermesInternal = HermesInternal;
+      const combined = "Enter " + tmp33;
+      if (cResult[21] !== first1) {
+        class H {
+          constructor(id) {
+            const obj = { id };
+            const merged = Object.assign(first1);
+            closure_2(obj);
+          }
+        }
+        cResult[21] = first1;
+        class C {
+          constructor() {
+            const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+            let tmp;
+            if (overrides != null) {
+              tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+            }
+            return tmp;
+          }
+        }
+        cResult[22] = H;
+      } else {
+        class H {
+          constructor(id) {
+            const obj = { id };
+            const merged = Object.assign(first1);
+            closure_2(obj);
+          }
+        }
+      }
+      if (cResult[23] === combined) {
+        class H {
+          constructor(id) {
+            const obj = { id };
+            const merged = Object.assign(first1);
+            closure_2(obj);
+          }
+        }
+        if (cResult[26] === tmp30) {
+          class H {
+            constructor(id) {
+              const obj = { id };
+              const merged = Object.assign(first1);
+              closure_2(obj);
+            }
+          }
+          if (cResult[29] === tmp28) {
+            class H {
+              constructor(id) {
+                const obj = { id };
+                const merged = Object.assign(first1);
+                closure_2(obj);
+              }
+            }
+            if (cResult[32] === first1.id) {
+              class H {
+                constructor(id) {
+                  const obj = { id };
+                  const merged = Object.assign(first1);
+                  closure_2(obj);
+                }
+              }
+              class U {
+                constructor() {
+                  const type = first1.type;
+                  if ("branch" === type) {
+                    const obj3 = build_overrides_BuildOverrideUtils;
+                    const result = obj3.setBuildOverrideForBranch(tmp.id);
+                  } else if ("id" === type) {
+                    const obj2 = build_overrides_BuildOverrideUtils;
+                    const result1 = obj2.setBuildOverrideForId(tmp.id);
+                  } else {
+                    const obj = GlobalUtils;
+                    obj.assertNever(first1.type);
+                  }
+                }
+              }
+              class C {
+                constructor() {
+                  const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+                  let tmp;
+                  if (overrides != null) {
+                    tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+                  }
+                  return tmp;
+                }
+              }
+              cResult[35] = "" === tmp45;
+              cResult[36] = tmp46;
+              cResult[37] = jsx(tmp(5282).Button, { text: "Apply Build Override", disabled: "" === tmp45, onPress: tmp46 });
+              const tmp49 = jsx(tmp(5282).Button, { text: "Apply Build Override", disabled: "" === tmp45, onPress: tmp46 });
+            }
+            class U {
+              constructor() {
+                const type = first1.type;
+                if ("branch" === type) {
+                  const obj3 = build_overrides_BuildOverrideUtils;
+                  const result = obj3.setBuildOverrideForBranch(tmp.id);
+                } else if ("id" === type) {
+                  const obj2 = build_overrides_BuildOverrideUtils;
+                  const result1 = obj2.setBuildOverrideForId(tmp.id);
+                } else {
+                  const obj = GlobalUtils;
+                  obj.assertNever(first1.type);
+                }
+              }
+            }
+            class C {
+              constructor() {
+                const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+                let tmp;
+                if (overrides != null) {
+                  tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+                }
+                return tmp;
+              }
+            }
+            cResult[32] = first1.id;
+            cResult[33] = first1.type;
+            cResult[34] = U;
+          }
+          class C {
+            constructor() {
+              const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+              let tmp;
+              if (overrides != null) {
+                tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+              }
+              return tmp;
+            }
+          }
+          tmp43[0] = tmp28;
+          tmp43[2] = tmp39;
+          cResult[29] = tmp28;
+          cResult[30] = tmp39;
+          cResult[31] = jsx(tmp(5997).TableRowGroup, tmp43);
+          const tmp44 = jsx(tmp(5997).TableRowGroup, tmp43);
+        }
+        class C {
+          constructor() {
+            const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+            let tmp;
+            if (overrides != null) {
+              tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
+            }
+            return tmp;
+          }
+        }
+        tmp40[0] = tmp30;
+        tmp40[1] = tmp36;
+        cResult[26] = tmp30;
+        cResult[27] = tmp36;
+        cResult[28] = jsx(tmp(5916).TableRow, tmp40);
+        const tmp41 = jsx(tmp(5916).TableRow, tmp40);
+      }
+      cResult[23] = combined;
+      cResult[24] = tmp35;
+      cResult[25] = jsx(tmp(6021).TextInput, { size: "md", placeholder: combined, onChange: tmp35, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true });
+      const tmp38 = jsx(tmp(6021).TextInput, { size: "md", placeholder: combined, onChange: tmp35, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true });
+    }
+    cResult[12] = first1.type;
+    cResult[13] = text;
+    cResult[14] = jsx(tmp(5995).TableRadioGroup, { title: text, defaultValue: type, onChange: tmp21, hasIcons: true, children: tmp22 });
+    const tmp27 = jsx(tmp(5995).TableRadioGroup, { title: text, defaultValue: type, onChange: tmp21, hasIcons: true, children: tmp22 });
+  }
+  const obj11 = { paddingBottom: sum };
+  let merged = Object.assign(tmp4.contentContainer);
+  cResult[5] = tmp4.contentContainer;
+  cResult[6] = sum;
+  cResult[7] = obj11;
+}) : (() => {
+  let closure_2;
+  let currentBuildOverride;
+  let first;
+  let items1;
+  let stateFromStores;
+  const f143043 = (value) => value.value === first.type;
   let tmp = closure_9();
+  const insets = first(6399)({ includeKeyboardHeight: true }).insets;
+  let obj = stateFromStores(504);
   items = [BuildOverrideStore];
-  const stateFromStores = first(504).useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let tmp;
     if (overrides != null) {
-      tmp = overrides[first(undefined, 12072).DEVICE_FIELD];
+      tmp = overrides[stateFromStores(undefined, closure_2[12]).DEVICE_FIELD];
     }
     return tmp;
   });
-  first = stateFromStores;
-  [first, dependencyMap] = noop.useState({ type: "branch", id: "" });
-  let obj2 = { style: tmp.content, contentContainerStyle: null, children: null };
-  let obj3 = {};
+  [first, dependencyMap] = react.useState({ type: "branch", id: "" });
+  let obj3 = { paddingBottom: tmp.contentContainer.padding + insets.bottom };
   let merged = Object.assign(tmp.contentContainer);
-  obj3.paddingBottom = tmp.contentContainer.padding + first(7258)({ includeKeyboardHeight: true }).insets.bottom;
-  obj2.contentContainerStyle = obj3;
   let tmp10Result = null;
+  const Stack = stateFromStores(5280).Stack;
   if (null != stateFromStores) {
-    const obj4 = { icon: tmp7(tmp3(4734).CopyIcon, {}), label: null, subLabel: null, onPress: null };
-    first = stateFromStores;
-    const found = items.find((value) => value.value === first.type);
+    const TableRowGroup = tmp3(5997).TableRowGroup;
+    const TableRow = tmp3(5916).TableRow;
+    const found = items.find(f143043);
     let label;
     if (found != null) {
       label = found.label;
     }
-    const obj5 = { title: "Current Override", hasIcons: true, children: null };
-    obj4.label = label;
-    obj4.subLabel = stateFromStores.id;
-    obj4.onPress = function onPress() {
-      ClipboardUtils.copy(first.id);
-      const result = ToastUtils.presentCopiedToClipboard();
-    };
-    const items1 = [tmp7(tmp3(5854).TableRow, obj4), , ];
-    const obj6 = { icon: tmp7(tmp3(15428).RefreshIcon, {}), label: "Refresh Override", onPress: tmp3(12072).refreshBuildOverride, arrow: true };
-    items1[1] = tmp7(tmp3(5854).TableRow, obj6);
-    const obj7 = { icon: tmp7(tmp3(4745).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Override", variant: "danger", onPress: tmp3(12072).clearBuildOverride, arrow: true };
-    items1[2] = tmp7(tmp3(5854).TableRow, obj7);
-    obj5.children = items1;
-    tmp10Result = tmp10(tmp3(5936).TableRowGroup, obj5);
+    const obj5 = { title: "Current Override", hasIcons: true, children: items1 };
+    items1 = [
+      <TableRow icon={null} label={label} subLabel={stateFromStores.id} onPress={function onPress() {
+          const obj = ClipboardUtils;
+          obj.copy(stateFromStores.id);
+          const obj2 = ToastUtils;
+          const result = obj2.presentCopiedToClipboard();
+        }} />,
+  ,
+
+    ];
+    const TableRow2 = tmp3(5916).TableRow;
+    items1[1] = <TableRow2 icon={null} label="Refresh Override" onPress={stateFromStores(11141).refreshBuildOverride} arrow />;
+    const TableRow3 = tmp3(5916).TableRow;
+    items1[2] = <TableRow3 icon={null} label="Clear Override" variant="danger" onPress={stateFromStores(11141).clearBuildOverride} arrow />;
+    tmp10Result = tmp10(TableRowGroup, obj5);
   }
   const items2 = [tmp10Result, , , ];
   let str = "";
+  const TableRadioGroup = tmp3(5995).TableRadioGroup;
   if (null != stateFromStores) {
     str = "New";
   }
-  let obj = first(504);
-  items2[1] = jsx(first(5934).TableRadioGroup, {
-    title: `${str} Override Type`,
-    defaultValue: first.type,
-    onChange(type) {
-      dependencyMap({ type, id: "" });
-    },
-    hasIcons: true,
-    children: items.map((value) => {
-      value = value.value;
-      ({ icon, label } = value);
-      return jsx(first(5937).TableRadioRow, { value, label, icon }, value);
-    })
-  });
-  const found1 = items.find((value) => value.value === first.type);
+  items2[1] = <TableRadioGroup title={`${str} Override Type`} defaultValue={first.type} onChange={function onChange(type) {
+    const obj = { type, id: "" };
+    closure_2(obj);
+  }} hasIcons>{items.map((value) => {
+    let icon;
+    let label;
+    value = value.value;
+    ({ icon, label } = value);
+    return jsx(stateFromStores(closure_2[21]).TableRadioRow, { value, label, icon }, value);
+  })}</TableRadioGroup>;
+  const TableRowGroup2 = tmp3(5997).TableRowGroup;
+  const found1 = items.find(f143043);
   let label1;
   if (found1 != null) {
     label1 = found1.label;
   }
-  const obj9 = { title: label1, hasIcons: true, children: null };
+  const TableRow4 = tmp3(5916).TableRow;
   const found2 = arr4.find((value) => value.value === first.type);
   let icon;
   if (found2 != null) {
     icon = found2.icon;
   }
-  const obj10 = { icon, label: null };
-  const found3 = arr4.find((value) => value.value === first.type);
+  const TextInput = tmp3(6021).TextInput;
+  const found3 = arr4.find(f143043);
   let label2;
   if (found3 != null) {
     label2 = found3.label;
   }
-  const obj11 = { spacing: 16, children: null };
-  const obj8 = {
-    title: `${str} Override Type`,
-    defaultValue: first.type,
-    onChange(type) {
-      dependencyMap({ type, id: "" });
-    },
-    hasIcons: true,
-    children: items.map((value) => {
-      value = value.value;
-      ({ icon, label } = value);
-      return jsx(first(5937).TableRadioRow, { value, label, icon }, value);
-    })
-  };
-  obj10.label = jsx(first(6880).TextInput, {
+  ({
     size: "md",
     placeholder: "Enter " + label2,
     onChange(id) {
-      const obj = {};
+      const obj = { id };
       const merged = Object.assign(first);
-      obj.id = id;
-      dependencyMap(obj);
+      closure_2(obj);
     },
     autoCapitalize: "none",
     autoCorrect: false,
     autoComplete: "off",
     clearable: true
   });
-  obj9.children = jsx(first(5854).TableRow, { icon, label: null });
-  items2[2] = jsx(first(5936).TableRowGroup, { title: label1, hasIcons: true, children: null });
-  items2[3] = jsx(first(5218).Button, {
+  items2[2] = <TableRowGroup2 title={label1} hasIcons>{null}</TableRowGroup2>;
+  items2[3] = jsx(stateFromStores(5282).Button, {
     text: "Apply Build Override",
     disabled: "" === first.id,
     onPress() {
       const type = first.type;
       if ("branch" === type) {
-        const result = build_overrides_BuildOverrideUtils.setBuildOverrideForBranch(tmp.id);
+        const obj3 = build_overrides_BuildOverrideUtils;
+        const result = obj3.setBuildOverrideForBranch(tmp.id);
       } else if ("id" === type) {
-        const result1 = build_overrides_BuildOverrideUtils.setBuildOverrideForId(tmp.id);
+        const obj2 = build_overrides_BuildOverrideUtils;
+        const result1 = obj2.setBuildOverrideForId(tmp.id);
       } else {
-        GlobalUtils.assertNever(tmp.type);
+        const obj = GlobalUtils;
+        obj.assertNever(first.type);
       }
     }
   });
-  obj11.children = items2;
-  obj2.children = jsxs(first(5216).Stack, { spacing: 16, children: null });
-  return <tmp8 style={tmp.content} contentContainerStyle={null}>{null}</tmp8>;
-});
+  return <tmp8 style={tmp.content} contentContainerStyle={obj3}>{null}</tmp8>;
+}));
+let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBuildOverrideScreen.tsx");
+
+export default memoResult;

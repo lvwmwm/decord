@@ -1,40 +1,45 @@
-// Module ID: 8242
-// Function ID: 8243
+// Module ID: 7398
+// Function ID: 7399
 // Name: useIsAccessibilityServiceEnabled
-// Dependencies: [560, 5144, 5203, 2]
-// Exports: getIsAccessibilityServiceEnabled, useIsAccessibilityServiceEnabled
+// Dependencies: [570, 5208, 5267, 558, 2]
+// Exports: getIsAccessibilityServiceEnabled
 
-// Module 8242 (useIsAccessibilityServiceEnabled)
-import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5144 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5203 */;
-import module_560 from "module_560" /* 560 */;
+// Module 7398 (useIsAccessibilityServiceEnabled)
+import react_nativeDefault from "react-native" /* 5208 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function ACCESSIBILITY_SERVICE_ENABLED_GETTER(accessibilityServiceEnabled) {
   return accessibilityServiceEnabled.accessibilityServiceEnabled;
 }
-const state = module_560.create((arg0) => {
-  closure_0 = arg0;
-  const result = NativeDeviceAccessibilityModuleDefault.onAccessibilityServiceEnabledChanged((accessibilityServiceEnabled) => {
-    closure_0({ accessibilityServiceEnabled });
+const state = module_570.create((arg0) => {
+  let obj3;
+  let closure_0 = arg0;
+  let obj = react_nativeDefault;
+  const result = obj.onAccessibilityServiceEnabledChanged((accessibilityServiceEnabled) => {
+    const obj = { accessibilityServiceEnabled };
+    closure_0(obj);
   });
-  const obj2 = { accessibilityServiceEnabled: null };
-  obj2.accessibilityServiceEnabled = NativeDeviceAccessibilityModuleDefault.isAccessibilityServiceEnabled();
+  const obj2 = { accessibilityServiceEnabled: obj3.isAccessibilityServiceEnabled() };
+  obj3 = react_nativeDefault;
   return obj2;
+});
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = useIsScreenReaderEnabled;
+  const isScreenReaderEnabled = obj.useIsScreenReaderEnabled() || state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
+  return isScreenReaderEnabled;
+}) : (() => {
+  const obj = useIsScreenReaderEnabled;
+  const isScreenReaderEnabled = obj.useIsScreenReaderEnabled() || state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
+  return isScreenReaderEnabled;
 });
 let result = size.fileFinishedImporting("modules/a11y/native/useIsAccessibilityServiceEnabled.native.tsx");
 
 export const getIsAccessibilityServiceEnabled = function getIsAccessibilityServiceEnabled() {
-  let accessibilityServiceEnabled = useIsScreenReaderEnabled.getIsScreenReaderEnabled();
-  if (!accessibilityServiceEnabled) {
-    accessibilityServiceEnabled = state.getState().accessibilityServiceEnabled;
-  }
+  const obj = useIsScreenReaderEnabled;
+  const accessibilityServiceEnabled = obj.getIsScreenReaderEnabled() || state.getState().accessibilityServiceEnabled;
   return accessibilityServiceEnabled;
 };
-export const useIsAccessibilityServiceEnabled = function useIsAccessibilityServiceEnabled() {
-  let isScreenReaderEnabled = useIsScreenReaderEnabled.useIsScreenReaderEnabled();
-  if (!isScreenReaderEnabled) {
-    isScreenReaderEnabled = state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
-  }
-  return isScreenReaderEnabled;
-};
+export const useIsAccessibilityServiceEnabled = tmp2;

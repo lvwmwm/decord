@@ -1,30 +1,78 @@
-// Module ID: 7525
-// Function ID: 7526
+// Module ID: 6670
+// Function ID: 6671
 // Name: useIsCreatorMonetizationEnabledGuild
-// Dependencies: [2063, 1074, 504, 2]
-// Exports: default, isCreatorMonetizationEnabledGuild
+// Dependencies: [2073, 1086, 558, 576, 504, 2]
+// Exports: isCreatorMonetizationEnabledGuild
 
-// Module 7525 (useIsCreatorMonetizationEnabledGuild)
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 6670 (useIsCreatorMonetizationEnabledGuild)
+import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2073 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationEnabledGuild.tsx");
-
-export default function useIsCreatorMonetizationEnabledGuild(arg0) {
+const GuildFeatures = Constants.GuildFeatures;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  let tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp5 = GuildStore;
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      const guild = GuildStore.getGuild(closure_0);
+      let tmp2 = null != guild;
+      if (tmp2) {
+        const features = guild.features;
+        const hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
+        let tmp5 = !hasItem;
+        if (tmp5) {
+          const features2 = guild.features;
+          let hasItem1 = features2.has(tmp3.CREATOR_MONETIZABLE);
+          if (!hasItem1) {
+            const features3 = guild.features;
+            hasItem1 = features3.has(tmp3.CREATOR_MONETIZABLE_PROVISIONAL);
+          }
+          tmp5 = hasItem1;
+        }
+        tmp2 = tmp5;
+      }
+      return tmp2;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     const guild = GuildStore.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
       const features = guild.features;
       const hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
       let tmp5 = !hasItem;
-      if (!hasItem) {
+      if (tmp5) {
         const features2 = guild.features;
         let hasItem1 = features2.has(tmp3.CREATOR_MONETIZABLE);
         if (!hasItem1) {
@@ -37,12 +85,12 @@ export default function useIsCreatorMonetizationEnabledGuild(arg0) {
     }
     return tmp2;
   });
-};
-export const isCreatorMonetizationEnabledGuild = function isCreatorMonetizationEnabledGuild(guild) {
+});
+function isCreatorMonetizationEnabledGuild(guild) {
   const features = guild.features;
   const hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
   let tmp3 = !hasItem;
-  if (!hasItem) {
+  if (tmp3) {
     const features2 = guild.features;
     let hasItem1 = features2.has(tmp.CREATOR_MONETIZABLE);
     if (!hasItem1) {
@@ -52,4 +100,8 @@ export const isCreatorMonetizationEnabledGuild = function isCreatorMonetizationE
     tmp3 = hasItem1;
   }
   return tmp3;
-};
+}
+const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationEnabledGuild.tsx");
+
+export default tmp2;
+export { isCreatorMonetizationEnabledGuild };

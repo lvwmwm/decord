@@ -1,39 +1,51 @@
-// Module ID: 11194
-// Function ID: 11195
+// Module ID: 10405
+// Function ID: 10406
 // Name: PerLetterEffect
-// Dependencies: [19, 17, 21, 4788, 11195, 11196, 4784, 2]
+// Dependencies: [19, 17, 21, 4837, 10406, 10407, 4833, 2]
 // Exports: default
 
-// Module 11194 (PerLetterEffect)
-import noop from "module_19" /* 19 */;
+// Module 10405 (PerLetterEffect)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4837 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, Text: hasOwnProperty } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+let closure_4;
+let hasOwnProperty;
+({ View: closure_4, Text: hasOwnProperty } = react_native);
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ container: { overflow: "hidden" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/display_name_styles/native/effects/PerLetterEffect.tsx");
 
 export default function PerLetterEffect(name) {
+  let Text;
+  let accessibilityLabel;
+  let colors;
+  let containerStyle;
+  let items1;
+  let items2;
+  let obj2;
+  let textProps;
+  let textStyle;
   name = name.name;
   ({ textProps, colors } = name);
   ({ containerStyle, textStyle } = name);
   const items = [name, colors];
-  let obj = { style: null, children: null };
-  const items1 = [closure_7().container, containerStyle];
-  obj.style = items1;
-  const memo = noop.useMemo(() => {
-    const regex = colors(11195)();
-    closure_1 = 0;
-    let obj = name(11196);
-    return name(11196).splitGraphemes(regex).map((children, index) => {
+  let tmp = closure_7();
+  let obj = { style: items1, children: tmp3(Text, obj2) };
+  items1 = [tmp.container, containerStyle];
+  const memo = react.useMemo(() => {
+    const regex = colors(dependencyMap[4])();
+    let closure_1 = 0;
+    let obj = name(dependencyMap[5]);
+    const splitGraphemesResult = obj.splitGraphemes(regex);
+    return splitGraphemesResult.map((children, index) => {
       regex.lastIndex = 0;
       const tmp = regex.test(children) || 0 === children.trim().length;
       let tmp2;
       if (null != colors) {
-        if (arr.length > 0) {
+        if (colors.length > 0) {
           if (!tmp) {
             tmp2 = arr[closure_1 % arr.length];
           }
@@ -43,24 +55,24 @@ export default function PerLetterEffect(name) {
         closure_1 = closure_1 + 1;
       }
       let tmp7;
+      const tmp5 = jsx;
+      const tmp6 = hasOwnProperty;
       if (null != tmp2) {
+        tmp7 = { color: tmp2 };
         const obj = { color: tmp2 };
-        tmp7 = obj;
       }
-      return <hasOwnProperty key={arg1} style={tmp7}>{arg0}</hasOwnProperty>;
+      const obj2 = { style: tmp7, children };
+      return tmp5(tmp6, obj2, index);
     });
   }, items);
-  const obj2 = {};
+  obj2 = { textBreakStrategy: "simple", accessibilityLabel, style: items2, children: memo };
+  Text = name(4833).Text;
   const merged = Object.assign(textProps);
-  obj2.textBreakStrategy = "simple";
-  let accessibilityLabel = textProps.accessibilityLabel;
+  accessibilityLabel = textProps.accessibilityLabel;
+  const tmp4 = closure_4;
   if (accessibilityLabel == null) {
     accessibilityLabel = name;
   }
-  obj2.accessibilityLabel = accessibilityLabel;
-  const items2 = [textStyle, { lineHeight: "r" }];
-  obj2.style = items2;
-  obj2.children = memo;
-  obj.children = jsx(name(4784).Text, {});
-  return <closure_4 style={null}>{null}</closure_4>;
+  items2 = [textStyle, { lineHeight: "r" }];
+  return jsx(tmp4, obj);
 };

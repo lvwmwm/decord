@@ -1,48 +1,55 @@
-// Module ID: 17390
-// Function ID: 17391
+// Module ID: 16742
+// Function ID: 16743
 // Name: Suppressed
-// Dependencies: [19, 14049, 21, 17391, 1115, 17392, 17393, 5237, 2]
+// Dependencies: [19, 13297, 21, 16743, 1127, 16744, 16745, 5301, 2]
 
-// Module 17390 (Suppressed)
-import util from "util" /* 1115 */;
-import PermissionActionCreatorsDefault from "PermissionActionCreators" /* 17391 */;
-import _modDef17392 from "module_17392" /* 17392 */;
-import _modDef17393 from "module_17393" /* 17393 */;
-import noop from "module_19" /* 19 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 14049 */;
+// Module 16742 (Suppressed)
+import Fragment from "Fragment" /* 21 */;
+import intl4 from "intl" /* 1127 */;
+import PermissionActionCreatorsDefault from "PermissionActionCreators" /* 16743 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16744 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16745 */;
+import react from "react" /* 19 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 13297 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const Component = noop.Component;
+const jsx = Fragment.jsx;
+const Component = react.Component;
 class Suppressed extends Component {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.close = function close() {
-      PermissionActionCreatorsDefault.clearSuppressWarning();
+      const obj = PermissionActionCreatorsDefault;
+      obj.clearSuppressWarning();
     };
     return applyArgumentsResult;
   }
-}
-Suppressed.prototype["render"] = function render() {
-  const intl = util.intl;
-  const string = intl.string;
-  const t = util.t;
-  if (isAFKChannelResult) {
-    let stringResult = string(t.KuYcnU);
-    const intl3 = tmp2(1115).intl;
-    let stringResult1 = intl3.string(tmp2(1115).t["RaFZ3+"]);
-    let tmp7 = _modDef17392;
-    let tmp6 = importDefault;
-  } else {
-    stringResult = string(t.FJSZVM);
-    const intl2 = tmp2(1115).intl;
-    stringResult1 = intl2.string(tmp2(1115).t.etJjgW);
-    tmp6 = importDefault;
-    tmp7 = _modDef17393;
+  render() {
+    let stringResult;
+    let stringResult1;
+    let tmp6;
+    let tmp7;
+    const isAFKChannelResult = PermissionSpeakStore.isAFKChannel();
+    const intl = intl4.intl;
+    const string = intl.string;
+    const t = intl4.t;
+    if (isAFKChannelResult) {
+      stringResult = string(t.KuYcnU);
+      const intl3 = tmp2(1127).intl;
+      stringResult1 = intl3.string(tmp2(1127).t["RaFZ3+"]);
+      tmp7 = AssetRegistryDefault;
+      tmp6 = importDefault;
+    } else {
+      stringResult = string(t.FJSZVM);
+      const intl2 = tmp2(1127).intl;
+      stringResult1 = intl2.string(tmp2(1127).t.etJjgW);
+      tmp6 = importDefault;
+      tmp7 = AssetRegistryDefault2;
+    }
+    return jsx(tmp6(5301), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
   }
-  return jsx(tmp6(5237), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
-};
-const size = fn(2);
+}
+const prototype = Suppressed.prototype;
 const result = size.fileFinishedImporting("components_native/warnings/Suppressed.tsx");
 
 export default Suppressed;

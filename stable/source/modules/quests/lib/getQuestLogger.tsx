@@ -1,18 +1,21 @@
-// Module ID: 7977
-// Function ID: 7978
+// Module ID: 7126
+// Function ID: 7127
 // Name: getQuestLogger
-// Dependencies: [1346, 1085, 3, 2]
+// Dependencies: [1358, 1097, 3, 2]
 // Exports: getQuestLogger
 
-// Module 7977 (getQuestLogger)
+// Module 7126 (getQuestLogger)
 import LoggerDefault from "Logger" /* 3 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
+import Constants from "Constants" /* 1097 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1358 */;
+import size from "module_2" /* 2 */;
 
-const NOOP = fn(1085).NOOP;
-const size = fn(2);
+const NOOP = Constants.NOOP;
 const result = size.fileFinishedImporting("modules/quests/lib/getQuestLogger.tsx");
 
 export const getQuestLogger = function getQuestLogger(arg0) {
+  let _location;
+  let quest;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -33,6 +36,7 @@ export const getQuestLogger = function getQuestLogger(arg0) {
     const _HermesInternal2 = HermesInternal;
     str = "-" + questName + ")";
   }
-  const tmp42 = new LoggerDefault("QuestLogger" + str2 + str);
+  const tmp4 = LoggerDefault;
+  const tmp42 = new tmp4("QuestLogger" + str2 + str);
   return { log: isLoggingQuestEvents ? tmp42.log : NOOP, warn: isLoggingQuestEvents ? tmp42.warn : NOOP, error: isLoggingQuestEvents ? tmp42.error : NOOP, info: isLoggingQuestEvents ? tmp42.info : NOOP, verbose: isLoggingQuestEvents ? tmp42.verbose : NOOP, trace: isLoggingQuestEvents ? tmp42.trace : NOOP };
 };

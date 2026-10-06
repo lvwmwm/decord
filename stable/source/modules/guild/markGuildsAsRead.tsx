@@ -1,31 +1,35 @@
-// Module ID: 14259
-// Function ID: 14260
+// Module ID: 13507
+// Function ID: 13508
 // Name: markGuildsAsRead
-// Dependencies: [7377, 5755, 2041, 2096, 4803, 1074, 4970, 12, 11, 1241, 7387, 2]
+// Dependencies: [6522, 5819, 2051, 4470, 4852, 1086, 5019, 12, 11, 1253, 6532, 2]
 // Exports: default
 
-// Module 14259 (markGuildsAsRead)
+// Module 13507 (markGuildsAsRead)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7377 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5755 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import ReadStateStore from "ReadStateStore" /* 4803 */;
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6522 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5819 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildChannelStore from "GuildChannelStore" /* 4470 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const ReadStateTypes = fn(4970).ReadStateTypes;
-const size = fn(2);
+let activeJoinedThreadsForGuild, channel;
+
+const AnalyticEvents = Constants.AnalyticEvents;
+const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 const result = size.fileFinishedImporting("modules/guild/markGuildsAsRead.tsx");
 
 export default function markGuildsAsRead(arr, source, onFinished) {
-  const mapped = _modDef12.flatMap(arr, (guildId) => {
-    const selectableChannelIds = GuildChannelStore.getSelectableChannelIds(guildId);
-    const vocalChannelIds = GuildChannelStore.getVocalChannelIds(guildId);
+  let obj = _modDef12;
+  const flatMapResult = obj.flatMap(arr, (id) => {
+    const selectableChannelIds = GuildChannelStore.getSelectableChannelIds(id);
+    const vocalChannelIds = GuildChannelStore.getVocalChannelIds(id);
     const items = [...vocalChannelIds];
-    activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(guildId);
+    activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(id);
     const iter = selectableChannelIds[Symbol.iterator]();
     while (iter !== undefined) {
       let obj = activeJoinedThreadsForGuild[iter.next()];
@@ -39,8 +43,10 @@ export default function markGuildsAsRead(arr, source, onFinished) {
       continue;
     }
     return items;
-  }).map((channelId) => {
-    const obj = { channelId, readStateType: constants.CHANNEL, messageId: null };
+  });
+  const mapped = flatMapResult.map((channelId) => {
+    let fromTimestampResult;
+    const obj = { channelId, readStateType: constants.CHANNEL, messageId: fromTimestampResult };
     channel = channel.getChannel(channelId);
     let isForumLikeChannelResult;
     if (channel != null) {
@@ -48,42 +54,28 @@ export default function markGuildsAsRead(arr, source, onFinished) {
     }
     if (isForumLikeChannelResult) {
       const _Date = Date;
-      let fromTimestampResult = SnowflakeUtilsDefault.fromTimestamp(Date.now());
+      const obj3 = SnowflakeUtilsDefault;
+      fromTimestampResult = obj3.fromTimestamp(Date.now());
     } else {
       fromTimestampResult = ReadStateStore.lastMessageId(channelId);
     }
-    obj.messageId = fromTimestampResult;
     return obj;
   });
   const item = arr.forEach((item) => {
-    const obj = { channelId: SnowflakeUtilsDefault.cast(item), readStateType: ReadStateTypes.GUILD_EVENT, messageId: ReadStateStore.lastMessageId(item, ReadStateTypes.GUILD_EVENT) };
-    mapped.push(obj);
-    const obj3 = { channelId: null, readStateType: null, messageId: null };
-    obj3.channelId = SnowflakeUtilsDefault.cast(item);
-    obj3.readStateType = ReadStateTypes.GUILD_ONBOARDING_QUESTION;
-    obj3.messageId = GuildOnboardingPromptsStore.ackIdForGuild(item);
-    mapped.push(obj3);
+    let obj2;
+    let obj4;
+    const push = mapped.push;
+    const obj = { channelId: obj2.cast(item), readStateType: ReadStateTypes.GUILD_EVENT, messageId: ReadStateStore.lastMessageId(item, ReadStateTypes.GUILD_EVENT) };
+    obj2 = SnowflakeUtilsDefault;
+    push(obj);
+    const push2 = mapped.push;
+    const obj3 = { channelId: obj4.cast(item), readStateType: ReadStateTypes.GUILD_ONBOARDING_QUESTION, messageId: GuildOnboardingPromptsStore.ackIdForGuild(item) };
+    obj4 = SnowflakeUtilsDefault;
+    push2(obj3);
   });
-  const flatMapResult = _modDef12.flatMap(arr, (guildId) => {
-    const selectableChannelIds = GuildChannelStore.getSelectableChannelIds(guildId);
-    const vocalChannelIds = GuildChannelStore.getVocalChannelIds(guildId);
-    const items = [...vocalChannelIds];
-    activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(guildId);
-    const iter = selectableChannelIds[Symbol.iterator]();
-    while (iter !== undefined) {
-      let obj = activeJoinedThreadsForGuild[iter.next()];
-      if (obj == null) {
-        obj = {};
-      }
-      for (const key10027 in obj) {
-        let arr = items.push(key10027);
-        continue;
-      }
-      continue;
-    }
-    return items;
-  });
-  AnalyticsUtilsDefault.track(AnalyticEvents.MARK_AS_READ, { source, type: "guild" });
+  let obj2 = AnalyticsUtilsDefault;
   let obj3 = { source, type: "guild" };
-  return mapped(7387).bulkAck(mapped, onFinished);
+  obj2.track(AnalyticEvents.MARK_AS_READ, obj3);
+  let obj4 = mapped(6532);
+  return obj4.bulkAck(mapped, onFinished);
 };

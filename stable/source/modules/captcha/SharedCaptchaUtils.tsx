@@ -1,41 +1,44 @@
-// Module ID: 5114
-// Function ID: 5115
+// Module ID: 5178
+// Function ID: 5179
 // Name: SharedCaptchaUtils
-// Dependencies: [5115, 5122, 2]
+// Dependencies: [5179, 5186, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 5114 (SharedCaptchaUtils)
-import CaptchaConstants from "CaptchaConstants" /* 5122 */;
-import CaptchaStore from "CaptchaStore" /* 5115 */;
+// Module 5178 (SharedCaptchaUtils)
+import CaptchaConstants from "CaptchaConstants" /* 5186 */;
+import CaptchaStore from "CaptchaStore" /* 5179 */;
 import size from "module_2" /* 2 */;
 
-({ incrementCaptchaServeVolume: closure_0, flushCaptchaServeVolume: closure_1, isCaptchaStoreVolumeEmpty: c2 } = CaptchaStore);
+let _window;
+let c2;
+let map;
+({ incrementCaptchaServeVolume: _window, flushCaptchaServeVolume: map, isCaptchaStoreVolumeEmpty: c2 } = CaptchaStore);
 let closure_3 = CaptchaConstants.CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS;
-const prototype = function CaptchaCancelError() {
-  return new tmp("Captcha cancelled", new.target);
-}.prototype;
-class prototype extends Error {
+class CaptchaCancelError extends Error {
+  constructor() {
+    const tmp2 = new tmp("Captcha cancelled", new.target);
+    return tmp2;
+  }
 }
 const result = size.fileFinishedImporting("modules/captcha/SharedCaptchaUtils.tsx");
 
 export const CaptchaError = { CANCEL: "cancel", ERROR: "error", EXPIRED: "expired" };
 export const extractCaptchaPropsFromResponse = function extractCaptchaPropsFromResponse(body) {
-  const obj = { captchaService: body.captcha_service, sitekey: body.captcha_sitekey, captchaSessionId: body.captcha_session_id, options: null };
-  const obj2 = { rqdata: body.captcha_rqdata, rqtoken: body.captcha_rqtoken, serveInvisible: null, userflow: null };
-  let flag = body.should_serve_invisible;
+  let flag;
+  let obj2;
+  const obj = { captchaService: body.captcha_service, sitekey: body.captcha_sitekey, captchaSessionId: body.captcha_session_id, options: obj2 };
+  obj2 = { rqdata: body.captcha_rqdata, rqtoken: body.captcha_rqtoken, serveInvisible: flag, userflow: body.user_flow };
+  flag = body.should_serve_invisible;
   if (flag == null) {
     flag = false;
   }
-  obj2.serveInvisible = flag;
-  obj2.userflow = body.user_flow;
-  obj.options = obj2;
   return obj;
 };
-export const emitCaptchaDistributionMetric = function emitCaptchaDistributionMetric(arg0) {
+export const emitCaptchaDistributionMetric = function emitCaptchaDistributionMetric(userflow) {
   if (React2()) {
     const _setTimeout = setTimeout;
     const timerId = setTimeout(() => closure_1_1(), closure_3);
   }
-  React(arg0);
+  React(userflow);
 };
-export const CaptchaCancelError = prototype;
+export { CaptchaCancelError };

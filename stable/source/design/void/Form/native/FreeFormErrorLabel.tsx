@@ -1,32 +1,88 @@
-// Module ID: 7216
-// Function ID: 7217
+// Module ID: 6357
+// Function ID: 6358
 // Name: FreeFormErrorLabel
-// Dependencies: [19, 21, 4491, 4639, 4784, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 4537, 4687, 4833, 2]
 
-// Module 7216 (FreeFormErrorLabel)
-import shared from "shared" /* 4639 */;
-import noop from "module_19" /* 19 */;
+// Module 6357 (FreeFormErrorLabel)
+import Fragment from "Fragment" /* 21 */;
+import shared from "shared" /* 4687 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
+const require = globalThis.__r;
+let _require;
 
-export default function Label(style) {
-  const children = style.children;
-  let nodeText;
-  nodeText = nodeText(4491).getNodeText(children);
-  const items = [nodeText];
-  const effect = noop.useEffect(() => {
-    let tmp2 = null != nodeText;
-    if (tmp2) {
-      tmp2 = "" !== tmp;
+const jsx = Fragment.jsx;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let closure_0;
+  let style;
+  let tmp4;
+  let tmp6;
+  let tmp7;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(8);
+  ({ children, style } = arg0);
+  if (cResult[0] !== children) {
+    const tmpResult = tmp(4537);
+    const nodeText = tmpResult.getNodeText(children);
+    cResult[0] = children;
+    cResult[1] = nodeText;
+    tmp4 = nodeText;
+  } else {
+    tmp4 = cResult[1];
+  }
+  _require = tmp4;
+  if (cResult[2] !== tmp4) {
+    const fn = function f() {
+      const tmp2 = null != closure_0 && "" !== tmp;
+      if (tmp2) {
+        const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
+        AccessibilityAnnouncer.announce(closure_0);
+      }
+    };
+    const items = [tmp4];
+    cResult[2] = tmp4;
+    cResult[3] = fn;
+    cResult[4] = items;
+    tmp7 = items;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[3];
+    tmp7 = cResult[4];
+  }
+  const effect = react.useEffect(tmp6, tmp7);
+  if (cResult[5] === children) {
+    let tmp9;
+    if (cResult[6] === style) {
+      tmp9 = cResult[7];
     }
+    return tmp9;
+  }
+  const tmp10 = jsx(tmp(4833).Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  cResult[5] = children;
+  cResult[6] = style;
+  cResult[7] = tmp10;
+  tmp9 = tmp10;
+}) : ((children) => {
+  children = children.children;
+  let nodeText;
+  const style = children.style;
+  const obj = nodeText(4537);
+  nodeText = obj.getNodeText(children);
+  const items = [nodeText];
+  const effect = react.useEffect(() => {
+    const tmp2 = null != nodeText && "" !== tmp;
     if (tmp2) {
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
-      AccessibilityAnnouncer.announce(tmp);
+      AccessibilityAnnouncer.announce(nodeText);
     }
   }, items);
-  return jsx(nodeText(4784).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
-};
+  return jsx(nodeText(4833).Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+});
+const result = size.fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
+
+export default tmp2;

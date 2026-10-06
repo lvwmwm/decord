@@ -1,14 +1,14 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 15049
+// Function ID: 15050
 // Name: ServerTrendingNotificationUtils
-// Dependencies: [4440, 1074, 2019, 1241, 2]
+// Dependencies: [4485, 1086, 2027, 1253, 2]
 // Exports: onServerTrendingNotificationSettingsChanged
 
-// Module 15788 (ServerTrendingNotificationUtils)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import NotificationConstants from "NotificationConstants" /* 4440 */;
+// Module 15049 (ServerTrendingNotificationUtils)
+import Constants from "Constants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import NotificationConstants from "NotificationConstants" /* 4485 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;
@@ -18,5 +18,7 @@ const result = size.fileFinishedImporting("modules/notifications/server_trending
 export const onServerTrendingNotificationSettingsChanged = function onServerTrendingNotificationSettingsChanged(server_trending_notifications) {
   const EnableServerTrendingNotifications = UserSettings.EnableServerTrendingNotifications;
   EnableServerTrendingNotifications.updateSetting(server_trending_notifications);
-  AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, { update_type: constants.ACCOUNT, server_trending_notifications });
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { update_type: constants.ACCOUNT, server_trending_notifications };
+  obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj2);
 };

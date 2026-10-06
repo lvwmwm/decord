@@ -1,69 +1,185 @@
-// Module ID: 16652
-// Function ID: 16653
+// Module ID: 15947
+// Function ID: 15948
 // Name: HomeDrawerDirectMessagesRow
-// Dependencies: [19, 17, 4828, 4437, 1074, 21, 4788, 576, 504, 4784, 1115, 16648, 4651, 4648, 2]
-// Exports: default
+// Dependencies: [19, 17, 4877, 4482, 1086, 21, 4837, 588, 558, 576, 504, 4833, 1127, 15943, 4700, 4697, 2]
 
-// Module 16652 (HomeDrawerDirectMessagesRow)
-import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4651 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 16648 */;
-import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4828 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+// Module 15947 (HomeDrawerDirectMessagesRow)
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl3 from "intl" /* 1127 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 15943 */;
+import react from "react" /* 19 */;
+import PresenceStore from "PresenceStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-function HomeDrawerDMsRow() {
+let friendIDs;
+
+let metroImportAll;
+let metroImportDefault;
+let size;
+let tmp;
+const HomeDrawerExperiment = tmp(4700);
+const View = react_native.View;
+const StatusTypes = Constants.StatusTypes;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 }, onlineDot: size };
+size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
+let closure_9 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let intl;
+  let intl2;
+  let items1;
+  let obj7;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(8);
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [RelationshipStore, PresenceStore];
+    const fn = function x() {
+      let status;
+      friendIDs = friendIDs.getFriendIDs();
+      return friendIDs.filter((item) => status.getStatus(item) !== constants.OFFLINE).length;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === stateFromStores) {
+    let tmp10;
+    let tmp15;
+    let tmp18;
+    if (cResult[3] === tmp4) {
+      tmp10 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
+      const Text2 = tmp(4833).Text;
+      intl2 = tmp(1127).intl;
+      const tmp17 = metroImportDefault(Text2, obj2);
+      cResult[5] = tmp17;
+      tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[5];
+    }
+    if (cResult[6] !== tmp10) {
+      const obj3 = { title: tmp15, subtitle: tmp10 };
+      const tmp20 = metroImportDefault(HomeDrawerShared.HomeDrawerSharedItem, obj3);
+      cResult[6] = tmp10;
+      cResult[7] = tmp20;
+      tmp18 = tmp20;
+    } else {
+      tmp18 = cResult[7];
+    }
+    return tmp18;
+  }
+  let tmp11 = null;
+  if (stateFromStores > 0) {
+    const obj4 = { style: tmp4.subtitle, children: items1 };
+    const obj5 = { style: tmp4.onlineDot };
+    items1 = [metroImportDefault(View, obj5), ];
+    const obj6 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj7) };
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
+    obj7 = { numFriends: stateFromStores };
+    items1[1] = metroImportDefault(Text, obj6);
+    tmp11 = metroImportAll(View, obj4);
+  }
+  cResult[2] = stateFromStores;
+  cResult[3] = tmp4;
+  cResult[4] = tmp11;
+  tmp10 = tmp11;
+}) : (() => {
+  let Text2;
+  let intl;
+  let intl2;
+  let items1;
+  let obj5;
+  let obj7;
   const tmp = closure_9();
   const items = [RelationshipStore, PresenceStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let status;
     friendIDs = friendIDs.getFriendIDs();
     return friendIDs.filter((item) => status.getStatus(item) !== constants.OFFLINE).length;
   });
   let tmp5 = null;
   if (stateFromStores > 0) {
-    const obj2 = { style: tmp.subtitle, children: null };
+    const obj2 = { style: tmp.subtitle, children: items1 };
     const obj3 = { style: tmp.onlineDot };
-    const items1 = [React5(View, obj3), ];
-    const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
-    const intl = tmp2(1115).intl;
-    const obj5 = { numFriends: stateFromStores };
-    obj4.children = intl.format(tmp2(1115).t.N5UIKr, obj5);
-    items1[1] = React5(tmp2(4784).Text, obj4);
-    obj2.children = items1;
-    tmp5 = React6(View, obj2);
+    items1 = [metroImportDefault(View, obj3), ];
+    const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj5) };
+    const Text = tmp2(4833).Text;
+    intl = tmp2(1127).intl;
+    obj5 = { numFriends: stateFromStores };
+    items1[1] = metroImportDefault(Text, obj4);
+    tmp5 = metroImportAll(View, obj2);
   }
-  const obj6 = { title: null, subtitle: null };
-  const obj7 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null };
-  const intl2 = tmp2(1115).intl;
-  obj7.children = intl2.string(util.t.YUU0RF);
-  obj6.title = React5(Text_Text.Text, obj7);
-  obj6.subtitle = tmp5;
-  return React5(HomeDrawerShared.HomeDrawerSharedItem, obj6);
-}
-const View = fn(17).View;
-const StatusTypes = fn(1074).StatusTypes;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 }, onlineDot: null };
-let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
-obj2.onlineDot = size;
-let closure_9 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerDirectMessagesRow.tsx");
-
-export default function HomeDrawerDMsRowWrapper() {
+  const obj6 = { title: metroImportDefault(Text2, obj7), subtitle: tmp5 };
+  const HomeDrawerSharedItem = tmp2(15943).HomeDrawerSharedItem;
+  obj7 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
+  Text2 = tmp2(4833).Text;
+  intl2 = tmp2(1127).intl;
+  return metroImportDefault(HomeDrawerSharedItem, obj6);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: "dm-expanded-children" };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const MobileHomeDrawerExperiment = HomeDrawerExperiment.MobileHomeDrawerExperiment;
+  let tmp6 = null;
+  if (MobileHomeDrawerExperiment.useConfig(first).enableHome) {
+    tmp6 = null;
+    if (!tmp5) {
+      let tmp7;
+      const _Symbol = Symbol;
+      if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp10 = metroImportDefault(closure_10, {});
+        cResult[1] = tmp10;
+        tmp7 = tmp10;
+      } else {
+        tmp7 = cResult[1];
+      }
+      tmp6 = tmp7;
+    }
+  }
+  return tmp6;
+}) : (() => {
   const MobileHomeDrawerExperiment = HomeDrawerExperiment.MobileHomeDrawerExperiment;
   let tmp2 = null;
   if (MobileHomeDrawerExperiment.useConfig({ location: "dm-expanded-children" }).enableHome) {
     tmp2 = null;
     if (!tmp) {
-      tmp2 = React5(HomeDrawerDMsRow, {});
+      tmp2 = metroImportDefault(closure_10, {});
     }
   }
   return tmp2;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerDirectMessagesRow.tsx");
+
+export default tmp4;

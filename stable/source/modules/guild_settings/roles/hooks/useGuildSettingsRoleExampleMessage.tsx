@@ -1,42 +1,77 @@
-// Module ID: 18070
-// Function ID: 18071
+// Module ID: 17433
+// Function ID: 17434
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1386, 1074, 5010, 8026, 1115, 8482, 13631, 2]
-// Exports: useGuildSettingsRoleExampleMessage
+// Dependencies: [19, 1392, 1086, 558, 576, 5059, 7175, 1127, 7630, 12873, 2]
 
-// Module 18070 (useGuildSettingsRoleExampleMessage)
-import util from "util" /* 1115 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
-import createMessageDefault from "createMessage" /* 8026 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 8482 */;
-import noop from "module_19" /* 19 */;
-import UserRecord from "UserRecord" /* 1386 */;
+// Module 17433 (useGuildSettingsRoleExampleMessage)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5059 */;
+import createMessageDefault from "createMessage" /* 7175 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 7630 */;
+import react from "react" /* 19 */;
+import UserRecord from "UserRecord" /* 1392 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MessageStates = fn(1074).MessageStates;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_settings/roles/hooks/useGuildSettingsRoleExampleMessage.tsx");
+const require = globalThis.__r;
 
-export const useGuildSettingsRoleExampleMessage = function useGuildSettingsRoleExampleMessage(intl) {
-  const content = intl;
-  const items = [intl];
-  return noop.useMemo(() => {
-    const obj2 = {};
-    const merged = Object.assign(createMessageDefault({ channelId: "1337", content }));
-    obj2.state = MessageStates.SENT;
-    obj2.id = "31337";
-    const messageRecord = MessageRecordUtils.createMessageRecord(obj2);
-    const obj4 = { id: "313337", username: null, discriminator: "0000", bot: false };
-    const intl = util.intl;
-    obj4.username = intl.string(util.t.cqpybK);
-    const tmp3 = new UserRecord(obj4);
-    messageRecord.author = tmp3;
+const MessageStates = Constants.MessageStates;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(content) {
+  let intl;
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== content) {
+    const obj2 = { state: MessageStates.SENT, id: "31337" };
+    const createMessageRecord = MessageRecordUtils.createMessageRecord;
     const obj3 = { channelId: "1337", content };
-    const insertStaticUserResult = UserActionCreatorsAll.insertStaticUser(tmp3);
+    MessageRecordUtils;
+    const merged = Object.assign(createMessageDefault(obj3));
+    const messageRecord = createMessageRecord(obj2);
+    const obj4 = { id: "313337", username: intl.string(intl2.t.cqpybK), discriminator: "0000", bot: false };
+    intl = tmp(1127).intl;
+    const self = this;
+    const self2 = this;
+    const tmp13 = new UserRecord(obj4);
+    messageRecord.author = tmp13;
+    const obj5 = UserActionCreatorsAll;
+    const insertStaticUserResult = obj5.insertStaticUser(tmp13);
     if (null != insertStaticUserResult) {
       messageRecord.author = insertStaticUserResult;
-      messageRecord.author.getAvatarURL = () => closure_1_1(closure_1_3[7]);
+      messageRecord.author.getAvatarURL = () => require("module_12873");
+    }
+    cResult[0] = content;
+    cResult[1] = messageRecord;
+    tmp4 = messageRecord;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : ((content) => {
+  const items = [content];
+  return react.useMemo(() => {
+    let intl;
+    const obj = { state: MessageStates.SENT, id: "31337" };
+    const createMessageRecord = MessageRecordUtils.createMessageRecord;
+    const obj2 = { channelId: "1337", content };
+    MessageRecordUtils;
+    const merged = Object.assign(createMessageDefault(obj2));
+    const messageRecord = createMessageRecord(obj);
+    const obj3 = { id: "313337", username: intl.string(intl2.t.cqpybK), discriminator: "0000", bot: false };
+    intl = intl2.intl;
+    const tmp4 = new UserRecord(obj3);
+    messageRecord.author = tmp4;
+    const obj4 = UserActionCreatorsAll;
+    const insertStaticUserResult = obj4.insertStaticUser(tmp4);
+    if (null != insertStaticUserResult) {
+      messageRecord.author = insertStaticUserResult;
+      messageRecord.author.getAvatarURL = () => closure_1_1(closure_1_3[9]);
     }
     return messageRecord;
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_settings/roles/hooks/useGuildSettingsRoleExampleMessage.tsx");
+
+export const useGuildSettingsRoleExampleMessage = tmp2;

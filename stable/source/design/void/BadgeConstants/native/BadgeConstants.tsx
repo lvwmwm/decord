@@ -1,16 +1,16 @@
-// Module ID: 1179
-// Function ID: 1180
+// Module ID: 1191
+// Function ID: 1192
 // Name: BadgeConstants
-// Dependencies: [576, 2]
+// Dependencies: [588, 2]
 
-// Module 1179 (BadgeConstants)
-import nativeDefault from "native" /* 576 */;
+// Module 1191 (BadgeConstants)
+import nativeDefault from "native" /* 588 */;
+import size from "module_2" /* 2 */;
 
 const PX_16 = nativeDefault.space.PX_16;
 const PX_12 = nativeDefault.space.PX_12;
 const sum = PX_16 + 6;
 const sum1 = PX_12 + 6;
-const size = fn(2);
 const result = size.fileFinishedImporting("design/void/BadgeConstants/native/BadgeConstants.tsx");
 
 export const BADGE_SIZE = PX_16;

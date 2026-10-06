@@ -1,37 +1,44 @@
-// Module ID: 1462
-// Function ID: 1463
+// Module ID: 1469
+// Function ID: 1470
 // Name: NetworkUtils
-// Dependencies: [1463, 2]
+// Dependencies: [1470, 2]
 
-// Module 1462 (NetworkUtils)
-import utils_NetworkUtils from "utils/NetworkUtils" /* 1463 */;
+// Module 1469 (NetworkUtils)
+import utils_NetworkUtils from "utils/NetworkUtils" /* 1470 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = [];
 let c3 = false;
-const obj = {};
-const merged = Object.assign(utils_NetworkUtils.default);
-obj.awaitOnline = function awaitOnline() {
-  return new Promise((fn) => {
-    if (_default.isOnline()) {
-      return fn();
-    } else {
-      function whenOnline() {
-        const item = closure_2_2.forEach((fn) => fn());
-        closure_2_2.length = 0;
-        c3 = false;
-        utils_NetworkUtils.default.removeOnlineCallback(whenOnline);
+const obj = {
+  awaitOnline() {
+    const promise = new Promise((fn) => {
+      let whenOnline;
+      let _default = whenOnline(closure_1[0]).default;
+      const tmp = whenOnline;
+      const tmp2 = closure_1;
+      if (_default.isOnline()) {
+        return fn();
+      } else {
+        whenOnline = function whenOnline() {
+          const item = closure_2_2.forEach((fn) => fn());
+          closure_2_2.length = 0;
+          c3 = false;
+          const _default = utils_NetworkUtils.default;
+          _default.removeOnlineCallback(whenOnline);
+        };
+        closure_2.push(fn);
+        const tmp5 = c3;
+        if (!tmp5) {
+          c3 = true;
+          const _default2 = tmp(tmp2[0]).default;
+          _default2.addOnlineCallback(whenOnline);
+        }
       }
-      closure_2.push(fn);
-      if (!c3) {
-        c3 = true;
-        tmp(1463).default.addOnlineCallback(whenOnline);
-      }
-    }
-    _default = whenOnline(1463).default;
-    tmp = whenOnline;
-  });
+    });
+    return promise;
+  }
 };
+const merged = Object.assign(utils_NetworkUtils.default);
 const result = size.fileFinishedImporting("utils/NetworkUtils.tsx");
 
 export default obj;

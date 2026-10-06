@@ -1,16 +1,16 @@
-// Module ID: 10512
-// Function ID: 10513
+// Module ID: 12285
+// Function ID: 12286
 // Name: BugReporterExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 10512 (BugReporterExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12285 (BugReporterExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-01-bug-reporter", kind: "user", defaultConfig: { hasBugReporterAccess: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-01-bug-reporter", kind: "user", defaultConfig: { hasBugReporterAccess: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { hasBugReporterAccess: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/bug_reporter/BugReporterExperiment.tsx");
 

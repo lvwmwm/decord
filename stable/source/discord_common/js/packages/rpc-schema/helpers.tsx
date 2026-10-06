@@ -1,20 +1,23 @@
-// Module ID: 14790
-// Function ID: 14791
+// Module ID: 14042
+// Function ID: 14043
 // Name: helpers
-// Dependencies: [1085, 2]
+// Dependencies: [1097, 2]
 // Exports: joiEnum, joiReqObj
 
-// Module 14790 (helpers)
-import Constants from "Constants" /* 1085 */;
+// Module 14042 (helpers)
+import Constants from "Constants" /* 1097 */;
 import size from "module_2" /* 2 */;
 
+let RPCCommands;
+let RPCEvents;
 ({ RPCCommands, RPCEvents } = Constants);
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/helpers.tsx");
 
 export const RPCCommand = RPCCommands;
 export const RPCEvent = RPCEvents;
 export const joiReqObj = function joiReqObj(required) {
-  return required.required().unknown(true);
+  const requiredResult = required.required();
+  return requiredResult.unknown(true);
 };
 export const joiEnum = function joiEnum(OAuth2Scopes) {
   return Object.values(OAuth2Scopes);

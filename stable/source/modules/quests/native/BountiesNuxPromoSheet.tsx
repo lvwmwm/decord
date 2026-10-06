@@ -1,43 +1,113 @@
-// Module ID: 15341
-// Function ID: 15342
+// Module ID: 14586
+// Function ID: 14587
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4788, 576, 4755, 15340, 10527, 1115, 6078, 5218, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4801, 14585, 1127, 14587, 5282, 9816, 2]
 
-// Module 15341 (BountiesNuxPromoSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 6078 */;
-import PromoSheet from "PromoSheet" /* 10527 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 15340 */;
-import noop from "module_19" /* 19 */;
+// Module 14586 (BountiesNuxPromoSheet)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl4 from "intl" /* 1127 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import PromoSheet2 from "PromoSheet" /* 9816 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 14585 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 14587 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { illustrationContainer: { paddingTop: nativeDefault.space.PX_12 } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { illustrationContainer: obj2 };
+obj2 = { paddingTop: nativeDefault.space.PX_12 };
+let closure_6 = createStyles.createStyles(obj);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp10;
+  let tmp13;
+  let tmp17;
+  let tmp20;
+  let tmp6;
+  let tmp7;
+  let obj = react2;
+  const cResult = obj.c(9);
+  const tmp4 = closure_6();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet(openBountiesNuxPromoSheet.PROMO_SHEET_KEY);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1127).intl;
+    const stringResult = intl.string(intl4.t.DDpHZG);
+    const intl2 = tmp(1127).intl;
+    const stringResult1 = intl2.string(intl4.t.aC3Dwj);
+    cResult[1] = stringResult;
+    cResult[2] = stringResult1;
+    tmp7 = stringResult1;
+    tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[1];
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp12 = jsx(BountiesPosterSpotIllustration.BountiesPosterSpotIllustration, { width: 273, height: 205 });
+    cResult[3] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] !== tmp4.illustrationContainer) {
+    const tmp16 = <View style={tmp4.illustrationContainer}>{tmp10}</View>;
+    cResult[4] = tmp4.illustrationContainer;
+    cResult[5] = tmp16;
+    tmp13 = tmp16;
+  } else {
+    tmp13 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const Button = tmp(5282).Button;
+    const intl3 = tmp(1127).intl;
+    const tmp19 = <Button grow size="lg" variant="primary" text={intl3.string(intl4.t.cpT0Cq)} onPress={first} />;
+    cResult[6] = tmp19;
+    tmp17 = tmp19;
+  } else {
+    tmp17 = cResult[6];
+  }
+  if (cResult[7] !== tmp13) {
+    const tmp22 = jsx(PromoSheet2.PromoSheet, { gradientColor: "purple", title: tmp6, description: tmp7, illustration: tmp13, actions: tmp17 });
+    cResult[7] = tmp13;
+    cResult[8] = tmp22;
+    tmp20 = tmp22;
+  } else {
+    tmp20 = cResult[8];
+  }
+  return tmp20;
+}) : (() => {
+  let intl3;
+  const tmp = closure_6();
+  const callback = react.useCallback(() => {
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet(openBountiesNuxPromoSheet.PROMO_SHEET_KEY);
+  }, []);
+  const PromoSheet = PromoSheet2.PromoSheet;
+  const intl = intl4.intl;
+  const intl2 = intl4.intl;
+  ({ style: tmp.illustrationContainer, children: jsx(BountiesPosterSpotIllustration.BountiesPosterSpotIllustration, { width: 273, height: 205 }) });
+  ({ grow: true, size: "lg", variant: "primary", text: intl3.string(intl4.t.cpT0Cq), onPress: callback });
+  const Button = components_Button_Button.Button;
+  intl3 = intl4.intl;
+  return <PromoSheet gradientColor="purple" title={intl.string(intl4.t.DDpHZG)} description={intl2.string(intl4.t.aC3Dwj)} illustration={null} actions={null} />;
+});
 const result = size.fileFinishedImporting("modules/quests/native/BountiesNuxPromoSheet.tsx");
 
-export default function BountiesNuxPromoSheet() {
-  const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.hideActionSheet(openBountiesNuxPromoSheet.PROMO_SHEET_KEY);
-  }, []);
-  const obj = { gradientColor: "purple", title: null, description: null, illustration: null, actions: null };
-  const intl = util.intl;
-  obj.title = intl.string(util.t.DDpHZG);
-  const intl2 = util.intl;
-  obj.description = intl2.string(util.t.aC3Dwj);
-  const tmp = closure_6();
-  obj.illustration = <View style={closure_6().illustrationContainer}>{jsx(BountiesPosterSpotIllustration.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
-  const obj3 = { grow: true, size: "lg", variant: "primary", text: null, onPress: null };
-  const intl3 = util.intl;
-  obj3.text = intl3.string(util.t.cpT0Cq);
-  obj3.onPress = callback;
-  obj.actions = jsx(components_Button_Button.Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
-  return jsx(PromoSheet.PromoSheet, { gradientColor: "purple", title: null, description: null, illustration: null, actions: null });
-};
+export default tmp2;

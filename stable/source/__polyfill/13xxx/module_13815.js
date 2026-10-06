@@ -1,9 +1,17 @@
 // Module ID: 13815
 // Function ID: 13816
-// Dependencies: [1121]
+// Dependencies: [13816]
 
 // Module 13815
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13816 from "module_13816" /* 13816 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 375, height: 301, scales: [2, 3], hash: "66755272db25a38d2c195d1bf5a25e70", name: "img_top_pattern_light", type: "png" });
+export default (obj) => {
+  let tmp2;
+  if (typeof obj === "object") {
+    tmp2 = null !== obj;
+  } else {
+    tmp2 = _mod13816(obj);
+  }
+  return tmp2;
+};

@@ -1,25 +1,27 @@
-// Module ID: 17950
-// Function ID: 17951
+// Module ID: 17313
+// Function ID: 17314
 // Name: AutomodActionUtils
-// Dependencies: [12146, 17949, 1370, 2]
+// Dependencies: [11216, 17312, 1376, 2]
 // Exports: getDefaultActions, getRuleActionsInOrder, getRuleDefaultActionsFromConfig, isActionBlockMessage, isActionFlagToChannel, isActionQuarantineUser, isActionUserCommunicationDisabled, setRuleAction
 
-// Module 17950 (AutomodActionUtils)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import Constants from "Constants" /* 12146 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17949 */;
+// Module 17313 (AutomodActionUtils)
+import GlobalUtils from "GlobalUtils" /* 1376 */;
+import Constants from "Constants" /* 11216 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17312 */;
 import size from "module_2" /* 2 */;
 
 const AutomodActionType = Constants.AutomodActionType;
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodActionUtils.tsx");
 
 export const getRuleDefaultActionsFromConfig = function getRuleDefaultActionsFromConfig(defaultActionTypes) {
-  closure_0 = { [closure_1_2.BLOCK_MESSAGE]: { type: AutomodActionType.BLOCK_MESSAGE, metadata: { customMessage: "r" } }, [closure_1_2.FLAG_TO_CHANNEL]: { type: AutomodActionType.FLAG_TO_CHANNEL, metadata: { channelId: "r" } }, [closure_1_2.USER_COMMUNICATION_DISABLED]: { type: AutomodActionType.USER_COMMUNICATION_DISABLED, metadata: { durationSeconds: 60 } }, [closure_1_2.QUARANTINE_USER]: { type: AutomodActionType.QUARANTINE_USER, metadata: {} } };
-  return Array.from(defaultActionTypes.defaultActionTypes).map((item) => closure_0[item]);
+  let closure_0 = { [closure_1_2.BLOCK_MESSAGE]: { type: AutomodActionType.BLOCK_MESSAGE, metadata: { customMessage: "r" } }, [closure_1_2.FLAG_TO_CHANNEL]: { type: AutomodActionType.FLAG_TO_CHANNEL, metadata: { channelId: "r" } }, [closure_1_2.USER_COMMUNICATION_DISABLED]: { type: AutomodActionType.USER_COMMUNICATION_DISABLED, metadata: { durationSeconds: 60 } }, [closure_1_2.QUARANTINE_USER]: { type: AutomodActionType.QUARANTINE_USER, metadata: {} } };
+  const arr = Array.from(defaultActionTypes.defaultActionTypes);
+  return arr.map((item) => closure_0[item]);
 };
 export const getRuleActionsInOrder = function getRuleActionsInOrder(rule) {
-  let actions = rule;
-  const availableActionTypes = AutomodTriggerConfigs.getAvailableActionTypes(rule.triggerType);
+  let closure_0 = rule;
+  const obj = AutomodTriggerConfigs;
+  const availableActionTypes = obj.getAvailableActionTypes(rule.triggerType);
   const mapped = availableActionTypes.map((item) => {
     actions = item;
     actions = actions.actions;
@@ -27,19 +29,19 @@ export const getRuleActionsInOrder = function getRuleActionsInOrder(rule) {
   });
   return mapped.filter(GlobalUtils.isNotNullish);
 };
-export const setRuleAction = function setRuleAction(actions, BLOCK_MESSAGE, arg2) {
-  closure_0 = BLOCK_MESSAGE;
-  actions = actions.actions;
-  const found = actions.filter((type) => type.type !== closure_0);
-  const obj = {};
-  const merged = Object.assign(actions);
-  let tmp3 = found;
+export const setRuleAction = function setRuleAction(rule, BLOCK_MESSAGE, arg2) {
+  let tmp4;
+  let closure_0 = BLOCK_MESSAGE;
+  const actions = rule.actions;
+  const found = actions.filter((type) => type.type !== BLOCK_MESSAGE);
+  const obj = { actions: tmp4 };
+  const merged = Object.assign(rule);
+  tmp4 = found;
   if (null != arg2) {
     const items = [];
-    items[HermesBuiltin.arraySpread(found, 0)] = arg2;
-    tmp3 = items;
+    items[HermesBuiltin.arraySpread(items, found, 0)] = arg2;
+    tmp4 = items;
   }
-  obj.actions = tmp3;
   return obj;
 };
 export const isActionFlagToChannel = function isActionFlagToChannel(type) {

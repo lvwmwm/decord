@@ -1,30 +1,40 @@
-// Module ID: 8935
-// Function ID: 8936
+// Module ID: 9833
+// Function ID: 9834
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 8936, 2041, 1074, 573, 4646, 8039, 1271, 7597, 2]
+// Dependencies: [5, 9834, 2051, 1086, 585, 4695, 7188, 1283, 6742, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8935 (ChannelSettingsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import RootNavigationRef from "RootNavigationRef" /* 4646 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8936 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 9833 (ChannelSettingsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9834 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Constants from "Constants" /* 1086 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let application_id, auto_archive_duration, default_auto_archive_duration, default_forum_layout, default_sort_order, default_tag_setting, default_thread_rate_limit_per_user, permission_overwrites, position, rate_limit_per_user, rtc_region, theme_color, user, user_limit, video_quality_mode;
+
+let Layers;
+let metroImportDefault;
+let metroRequire;
 function init(channelId, location, subsection) {
-  DispatcherDefault.dispatch({ type: "CHANNEL_SETTINGS_INIT", channelId, location, subsection });
+  obj = DispatcherDefault;
+  const obj2 = { type: "CHANNEL_SETTINGS_INIT", channelId, location, subsection };
+  obj.dispatch(obj2);
 }
 function open(channelId, location, subsection) {
-  const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+  obj = RootNavigationRef;
+  const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const obj2 = { type: "CHANNEL_SETTINGS_INIT", channelId, location, subsection };
-      DispatcherDefault.dispatch(obj2);
+      const obj3 = DispatcherDefault;
+      obj3.dispatch(obj2);
       let OVERVIEW = ChannelSettingsStore.getSection();
       if (OVERVIEW == null) {
-        OVERVIEW = constants.OVERVIEW;
+        OVERVIEW = metroImportDefault.OVERVIEW;
       }
       const obj4 = { channelId, initialRouteName: OVERVIEW, source: "channel-settings-action-creators-open" };
       rootNavigationRef.navigate("sidebar", obj4);
@@ -32,291 +42,363 @@ function open(channelId, location, subsection) {
   }
 }
 function close() {
-  DispatcherDefault.dispatch({ type: "CHANNEL_SETTINGS_CLOSE" });
+  obj = DispatcherDefault;
+  obj.dispatch({ type: "CHANNEL_SETTINGS_CLOSE" });
 }
 function setSection(section) {
-  DispatcherDefault.dispatch({ type: "CHANNEL_SETTINGS_SET_SECTION", section });
+  obj = DispatcherDefault;
+  const obj2 = { type: "CHANNEL_SETTINGS_SET_SECTION", section };
+  obj.dispatch(obj2);
 }
 function selectPermissionOverwrite(overwriteId) {
-  DispatcherDefault.dispatch({ type: "CHANNEL_SETTINGS_OVERWRITE_SELECT", overwriteId });
+  obj = DispatcherDefault;
+  const obj2 = { type: "CHANNEL_SETTINGS_OVERWRITE_SELECT", overwriteId };
+  obj.dispatch(obj2);
 }
 function updateChannel(arg0) {
+  let applicationId;
+  let autoArchiveDuration;
+  let availableTags;
+  let bitrate;
+  let defaultAutoArchiveDuration;
+  let defaultForumLayout;
+  let defaultReactionEmoji;
+  let defaultSortOrder;
+  let defaultTagSetting;
+  let defaultThreadRateLimitPerUser;
+  let flags;
+  let iconEmoji;
+  let invitable;
+  let locked;
+  let name;
+  let nsfw;
+  let rateLimitPerUser;
+  let rtcRegion;
+  let template;
+  let themeColor;
+  let topic;
+  let type;
+  let userLimit;
+  let videoQualityMode;
   ({ name, type, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, autoArchiveDuration, locked, invitable, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor, applicationId } = arg0);
-  DispatcherDefault.dispatch({ type: "CHANNEL_SETTINGS_UPDATE", name, channelType: type, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, autoArchiveDuration, locked, invitable, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor, applicationId });
+  obj = DispatcherDefault;
+  obj.dispatch({ type: "CHANNEL_SETTINGS_UPDATE", name, channelType: type, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, autoArchiveDuration, locked, invitable, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor, applicationId });
 }
 function saveChannel() {
-  const self = this;
-  const apply = closure_9.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_9 = async function _saveChannel(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
+let obj = function _saveChannel() {
+  obj = _asyncToGenerator(async (arg0, name) => {
+    let closure_0 = arg0;
+    let c4 = 0;
+    let c5 = 0;
+    const iter = (async (arg0, value) => {
+      let c1;
+      let c10;
+      let c11;
+      let c12;
+      let c13;
+      let c14;
+      let c15;
+      let c16;
+      let c17;
+      let c18;
+      let c19;
+      let c2;
+      let c20;
+      let c21;
+      let c22;
+      let c23;
+      let c24;
+      let c25;
+      let c26;
+      let c3;
+      let c4;
+      let c5;
+      let c6;
+      let c7;
+      let c8;
+      let c9;
+      let emojiName;
+      let mapped;
+      let obj10;
+      let obj3;
+      let obj7;
+      let patchResult;
+      let tmp;
+      let tmp21;
+      let tmp7;
+      if (bitrate === 2) {
+        bitrate = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          let obj2 = { value, done: true };
+          return obj2;
         } else {
-          closure_3 = tmp5;
-          dependencyMap = tmp2;
-          closure_130_1 = undefined;
-          closure_130_2 = undefined;
-          closure_130_3 = undefined;
-          closure_130_4 = undefined;
-          closure_130_5 = undefined;
-          closure_130_6 = undefined;
-          closure_130_7 = undefined;
-          closure_130_8 = undefined;
-          closure_130_9 = undefined;
-          closure_130_10 = undefined;
-          closure_130_11 = undefined;
-          closure_130_12 = undefined;
-          closure_130_13 = undefined;
-          closure_130_14 = undefined;
-          closure_130_15 = undefined;
-          closure_130_16 = undefined;
-          closure_130_17 = undefined;
-          closure_130_18 = undefined;
-          closure_130_19 = undefined;
-          closure_130_20 = undefined;
-          closure_130_21 = undefined;
-          closure_130_22 = undefined;
-          closure_130_23 = undefined;
-          closure_130_24 = undefined;
-          closure_130_25 = undefined;
-          closure_130_26 = undefined;
-          closure_130_0 = channelId;
-          ({ name: closure_130_1, type: closure_130_2, position: closure_130_3, topic: closure_130_4, bitrate: closure_130_5, userLimit: closure_130_6, nsfw: closure_130_7, flags: closure_130_8, permissionOverwrites: closure_130_9, rateLimitPerUser: closure_130_10, defaultThreadRateLimitPerUser: closure_130_11, defaultAutoArchiveDuration: closure_130_12, template: closure_130_13, defaultReactionEmoji: closure_130_14, rtcRegion: closure_130_15, videoQualityMode: closure_130_16, autoArchiveDuration: closure_130_17, locked: closure_130_18, invitable: closure_130_19, availableTags: closure_130_20, defaultSortOrder: closure_130_21, defaultForumLayout: closure_130_22, defaultTagSetting: closure_130_23, iconEmoji: closure_130_24, themeColor: closure_130_25, applicationId: closure_130_26 } = closure_1);
-          let channel;
-          c4 = 1;
-          c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "IconComponent", done: null };
         }
-      } else if (1 === tmp5) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          let obj4 = { value, done: true };
-          return obj4;
-        } else {
-          channel = closure_131_5.getChannel(closure_130_0);
-          let isGameInvitesChannelResult;
-          if (channel != null) {
-            isGameInvitesChannelResult = obj12.isGameInvitesChannel();
-          }
-          if (isGameInvitesChannelResult) {
-            closure_130_12 = undefined;
-          }
-          closure_131_1(closure_131_2[4]).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT" });
-          obj12 = channel;
-          const obj6 = closure_131_1(closure_131_2[4]);
-          c4 = 2;
-          c5 = 1;
-          const obj5 = { value: closure_131_1(closure_131_2[6]).unarchiveThreadIfNecessary(closure_130_0), done: false };
-          return obj5;
-        }
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 3;
-        const obj8 = { value, done: true };
-        return obj8;
       } else {
-        let HTTP = closure_131_0(closure_131_2[7]).HTTP;
-        let then = HTTP.patch;
-        let request = { url: closure_131_6.CHANNEL(closure_130_0), body: null, oldFormErrors: true, rejectWithError: null };
-        let obj9 = { name: closure_130_1, type: closure_130_2, position: closure_130_3, topic: closure_130_4, bitrate: closure_130_5, user_limit: closure_130_6, nsfw: closure_130_7, flags: closure_130_8, permission_overwrites: closure_130_9, rate_limit_per_user: closure_130_10, default_thread_rate_limit_per_user: closure_130_11, default_auto_archive_duration: closure_130_12, template: closure_130_13, rtc_region: closure_130_15, video_quality_mode: closure_130_16, auto_archive_duration: closure_130_17, locked: closure_130_18, invitable: closure_130_19, default_reaction_emoji: null, available_tags: null, default_sort_order: null, default_forum_layout: null, default_tag_setting: null, icon_emoji: null, theme_color: null, application_id: null };
-        if (null != closure_130_14) {
-          let emojiId;
-          if (closure_130_14 != null) {
-            emojiId = closure_130_14.emojiId;
-          }
-          const obj = { emoji_id: emojiId, emoji_name: null };
-          let emojiName;
-          if (closure_130_14 != null) {
-            emojiName = closure_130_14.emojiName;
-          }
-          obj.emoji_name = emojiName;
-          let tmp8 = obj;
-        } else if (null === closure_130_14) {
-          tmp8 = null;
-        }
-        obj9.default_reaction_emoji = tmp8;
-        let mapped;
-        if (closure_130_20 != null) {
-          mapped = arr.map((id) => ({ id: id.id, name: id.name, emoji_id: id.emojiId, emoji_name: id.emojiName, moderated: id.moderated }));
-        }
-        obj9.available_tags = mapped;
-        obj9.default_sort_order = closure_130_21;
-        obj9.default_forum_layout = closure_130_22;
-        obj9.default_tag_setting = closure_130_23;
-        if (null != closure_130_24) {
-          const obj10 = { id: closure_130_24.id, name: closure_130_24.name };
-          let tmp22 = obj10;
-        } else if (null === closure_130_24) {
-          tmp22 = null;
-        }
-        obj9.icon_emoji = tmp22;
-        obj9.theme_color = closure_130_25;
-        obj9.application_id = closure_130_26;
-        request.body = obj9;
-        obj9 = closure_131_0(closure_131_2[7]);
-        request.rejectWithError = obj9.rejectWithMigratedError();
-        HTTP = then(request);
-        then = HTTP.then;
-        request = then((arg0) => {
-          closure_1(573).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS", channelId });
-          guildId = undefined;
-          if (guildId != null) {
-            guildId = guildId.getGuildId();
-          }
-          let tmp5 = null == guildId;
-          if (!tmp5) {
-            let isThreadResult;
-            if (guildId != null) {
-              isThreadResult = obj4.isThread();
+        try {
+          let closure_2;
+          let channel;
+          bitrate = 2;
+          if (0 === topic) {
+            if (arg0 === 1) {
+              bitrate = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              bitrate = 3;
+              let obj4 = { value, done: true };
+              return obj4;
+            } else {
+              let closure_3 = tmp4;
+              closure_2 = tmp;
+              name = undefined;
+              type = undefined;
+              position = undefined;
+              user_limit = undefined;
+              nsfw = undefined;
+              flags = undefined;
+              permission_overwrites = undefined;
+              rate_limit_per_user = undefined;
+              default_thread_rate_limit_per_user = undefined;
+              default_auto_archive_duration = undefined;
+              template = undefined;
+              c14 = undefined;
+              rtc_region = undefined;
+              video_quality_mode = undefined;
+              auto_archive_duration = undefined;
+              locked = undefined;
+              invitable = undefined;
+              c20 = undefined;
+              default_sort_order = undefined;
+              default_forum_layout = undefined;
+              default_tag_setting = undefined;
+              user = undefined;
+              theme_color = undefined;
+              application_id = undefined;
+              ({ name: c1, type: c2, position: c3, topic: c4, bitrate: c5, userLimit: c6, nsfw: c7, flags: c8, permissionOverwrites: c9, rateLimitPerUser: c10, defaultThreadRateLimitPerUser: c11, defaultAutoArchiveDuration: c12, template: c13, defaultReactionEmoji: c14, rtcRegion: c15, videoQualityMode: c16, autoArchiveDuration: c17, locked: c18, invitable: c19, availableTags: c20, defaultSortOrder: c21, defaultForumLayout: c22, defaultTagSetting: c23, iconEmoji: c24, themeColor: c25, applicationId: c26 } = closure_1);
+              channel = undefined;
+              topic = 1;
+              bitrate = 1;
+              return { value: "Reflect", done: true };
             }
-            tmp5 = isThreadResult;
-            obj4 = guildId;
+          } else if (1 === topic) {
+            if (arg0 === 1) {
+              bitrate = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              bitrate = 3;
+              return { value, done: true };
+            } else {
+              channel = closure_131_5.getChannel(channelId);
+              let isGameInvitesChannelResult;
+              const obj14 = channel;
+              if (channel != null) {
+                isGameInvitesChannelResult = obj14.isGameInvitesChannel();
+              }
+              if (isGameInvitesChannelResult) {
+                default_auto_archive_duration = undefined;
+              }
+              const obj6 = closure_131_1(closure_131_2[4]);
+              obj6.dispatch({ type: "CHANNEL_SETTINGS_SUBMIT" });
+              topic = 2;
+              bitrate = 1;
+              const obj8 = { value: obj7.unarchiveThreadIfNecessary(channelId), done: false };
+              obj7 = closure_131_1(closure_131_2[6]);
+              return obj8;
+            }
+          } else if (arg0 === 1) {
+            bitrate = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            bitrate = 3;
+            return { value, done: true };
+          } else {
+            const HTTP = closure_131_0(closure_131_2[7]).HTTP;
+            const request = { url: closure_131_6.CHANNEL(channelId), body: obj10, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+            const patch = HTTP.patch;
+            obj10 = { name, type, position, topic, bitrate, user_limit, nsfw, flags, permission_overwrites, rate_limit_per_user, default_thread_rate_limit_per_user, default_auto_archive_duration, template, rtc_region, video_quality_mode, auto_archive_duration, locked, invitable, default_reaction_emoji: tmp7, available_tags: mapped, default_sort_order, default_forum_layout, default_tag_setting, icon_emoji: tmp21, theme_color, application_id };
+            if (null != c14) {
+              let emojiId;
+              if (c14 != null) {
+                emojiId = c14.emojiId;
+              }
+              obj = { emoji_id: emojiId, emoji_name: emojiName };
+              emojiName = undefined;
+              if (c14 != null) {
+                emojiName = c14.emojiName;
+              }
+              tmp7 = obj;
+            } else {
+              let tmp5 = closure_2;
+              if (null === c14) {
+                tmp7 = null;
+              }
+            }
+            mapped = undefined;
+            const arr = c20;
+            if (c20 != null) {
+              mapped = arr.map((id) => ({ id: id.id, name: id.name, emoji_id: id.emojiId, emoji_name: id.emojiName, moderated: id.moderated }));
+            }
+            if (null != user) {
+              tmp21 = { id: user.id, name: user.name };
+              const obj11 = { id: user.id, name: user.name };
+            } else if (null === user) {
+              tmp21 = null;
+            }
+            obj3 = closure_131_0(closure_131_2[7]);
+            bitrate = 3;
+            const obj12 = {
+              value: patchResult.then((result) => {
+                      obj = name(type[4]);
+                      const obj2 = { type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS", channelId };
+                      obj.dispatch(obj2);
+                      let guildId;
+                      const obj3 = closure_1_27;
+                      const tmp = name;
+                      const tmp2 = type;
+                      if (closure_1_27 != null) {
+                        guildId = obj3.getGuildId();
+                      }
+                      let tmp5 = null == guildId;
+                      if (!tmp5) {
+                        let isThreadResult;
+                        const obj4 = closure_1_27;
+                        if (closure_1_27 != null) {
+                          isThreadResult = obj4.isThread();
+                        }
+                        tmp5 = isThreadResult;
+                      }
+                      if (!tmp5) {
+                        const tmpResult = tmp(tmp2[8]);
+                        result = tmpResult.checkGuildTemplateDirty(guildId);
+                      }
+                      return result;
+                    }, (body) => {
+                      obj = name(type[4]);
+                      const obj2 = { type: "CHANNEL_SETTINGS_SUBMIT_FAILURE", errors: body.body };
+                      obj.dispatch(obj2);
+                      return body;
+                    }),
+              done: true
+            };
+            patchResult = patch(request);
+            return obj12;
           }
-          if (!tmp5) {
-            const result = closure_1(7597).checkGuildTemplateDirty(guildId);
-            const tmpResult = closure_1(7597);
-          }
-          return arg0;
-        }, (body) => {
-          closure_1_1(573).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT_FAILURE", errors: body.body });
-          return body;
-        });
-        c5 = 3;
-        arr = closure_130_20;
+        } catch (tmp40) {
+          bitrate = 3;
+          throw tmp40;
+        }
       }
-    } catch (tmp41) {
-      c5 = tmp;
-      throw tmp41;
-    }
-  }
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
 function deleteChannel() {
-  const self = this;
-  const apply = closure_10.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_10 = async function _deleteChannel(arg0, value) {
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp5 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
+obj = function _deleteChannel() {
+  let channel;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
+      try {
+        let channel2;
+        let guildId;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_2 = tmp2;
+            let closure_1 = tmp;
+            channel2 = undefined;
+            guildId = undefined;
+            channel2 = channel.getChannel(channel2);
+            const HTTP = HTTPUtils.HTTP;
+            const obj5 = { url: metroRequire.CHANNEL(channel2), oldFormErrors: true, rejectWithError: true };
+            const del = HTTP.del;
+            c3 = 1;
+            c4 = 1;
+            const obj6 = { value: del(obj5), done: false };
+            return obj6;
+          }
+        } else if (arg0 === 1) {
           c4 = 3;
           throw value;
         } else if (arg0 === 2) {
           c4 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
+          const obj8 = { value, done: true };
+          return obj8;
         } else {
-          closure_2 = tmp3;
-          closure_1 = tmp2;
-          let channel2;
-          closure_129_1 = undefined;
-          channel2 = channel.getChannel(closure_0);
-          const HTTP = HTTPUtils.HTTP;
-          const obj5 = { url: timestampProducer.CHANNEL(closure_0), oldFormErrors: true, rejectWithError: true };
-          c3 = 1;
-          c4 = 1;
-          const obj6 = { value: HTTP.del(obj5), done: false };
-          return obj6;
-        }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj8 = { value, done: true };
-        return obj8;
-      } else {
-        let guildId;
-        if (channel2 != null) {
-          guildId = channel2.getGuildId();
-        }
-        closure_129_1 = guildId;
-        let tmp10 = null == closure_129_1;
-        if (!tmp10) {
-          let isThreadResult;
+          guildId = undefined;
+          const obj7 = channel2;
           if (channel2 != null) {
-            isThreadResult = obj.isThread();
+            guildId = obj7.getGuildId();
           }
-          tmp10 = isThreadResult;
-          obj = channel2;
+          let tmp9 = null == guildId;
+          if (!tmp9) {
+            let isThreadResult;
+            obj = channel2;
+            if (channel2 != null) {
+              isThreadResult = obj.isThread();
+            }
+            tmp9 = isThreadResult;
+          }
+          if (!tmp9) {
+            const obj2 = closure_130_1(closure_130_2[8]);
+            const result = obj2.checkGuildTemplateDirty(guildId);
+          }
+          closure_130_8();
+          c4 = 3;
+          return { value: "IconComponent", done: null };
         }
-        if (!tmp10) {
-          const result = closure_130_1(closure_130_2[8]).checkGuildTemplateDirty(closure_129_1);
-          const obj2 = closure_130_1(closure_130_2[8]);
-        }
-        closure_130_8();
+      } catch (tmp21) {
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        throw tmp21;
       }
-    } catch (tmp22) {
-      c4 = tmp;
-      throw tmp22;
     }
-  }
+  });
+  return obj(...arguments);
 };
 function updateVoiceChannelStatus(arg0, status) {
+  let obj3;
   const HTTP = HTTPUtils.HTTP;
-  const request = { url: timestampProducer.UPDATE_VOICE_CHANNEL_STATUS(arg0), body: { status }, rejectWithError: HTTPUtils.rejectWithMigratedError() };
-  return HTTP.put(request);
+  const request = { url: metroRequire.UPDATE_VOICE_CHANNEL_STATUS(arg0), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
+  const put = HTTP.put;
+  obj = { status };
+  obj3 = HTTPUtils;
+  return put(request);
 }
 function removeLinkedLobby(arg0) {
   const HTTP = HTTPUtils.HTTP;
-  return HTTP.del({ url: timestampProducer.CHANNEL_LINKED_LOBBY(arg0), rejectWithError: true });
+  obj = { url: metroRequire.CHANNEL_LINKED_LOBBY(arg0), rejectWithError: true };
+  return HTTP.del(obj);
 }
-const Constants = fn(1074);
-({ Endpoints: metroRequire, Layers, ChannelSettingsSections: closure_7 } = Constants);
-const size = fn(2);
+({ Endpoints: metroRequire, Layers, ChannelSettingsSections: metroImportDefault } = Constants);
 let result = size.fileFinishedImporting("actions/ChannelSettingsActionCreators.tsx");
 
 export default { init, open, close, setSection, selectPermissionOverwrite, updateChannel, saveChannel, deleteChannel, updateVoiceChannelStatus, removeLinkedLobby };

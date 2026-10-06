@@ -1,87 +1,218 @@
-// Module ID: 12732
-// Function ID: 12733
+// Module ID: 11836
+// Function ID: 11837
 // Name: ChatInputGuardSpamMessageRequest
-// Dependencies: [19, 1372, 21, 1484, 504, 12733, 12725, 4486, 1115, 5846, 12731, 4799, 2]
+// Dependencies: [19, 1378, 21, 558, 576, 1491, 504, 11837, 4531, 1127, 5906, 11829, 4848, 11835, 2]
 
-// Module 12732 (ChatInputGuardSpamMessageRequest)
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 11836 (ChatInputGuardSpamMessageRequest)
+import Fragment from "Fragment" /* 21 */;
+import react_mod from "react" /* 19 */;
+import UserStore from "UserStore" /* 1378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardSpamMessageRequest.tsx");
+let dependencyMap, navigation;
 
-export default noop.memo(function ChatInputGuardSpamMessageRequest(channel) {
+let react = react_mod;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let first;
+  let isOptimisticRejected;
+  let isRejectLoading;
+  let isUserProfileLoading;
+  let longestChannelMessageBeforeReply;
+  let markAsNotSpam;
+  let obj3;
+  let tmp12;
+  let tmp7;
+  let tmp9;
+  const tmp = channel;
+  let obj = channel(longestChannelMessageBeforeReply[4]);
+  const cResult = obj.c(28);
   channel = channel.channel;
-  noop = undefined;
+  const obj2 = channel(longestChannelMessageBeforeReply[5]);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [markAsNotSpam];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel) {
+    const fn = function s() {
+      return UserStore.getUser(channel.getRecipientId());
+    };
+    cResult[1] = channel;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(longestChannelMessageBeforeReply[6]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  const id = channel.id;
+  if (cResult[3] !== channel) {
+    const recipientId = channel.getRecipientId();
+    cResult[3] = channel;
+    cResult[4] = recipientId;
+    tmp9 = recipientId;
+  } else {
+    tmp9 = cResult[4];
+  }
+  const tmpResult3 = tmp(longestChannelMessageBeforeReply[7]);
+  longestChannelMessageBeforeReply = tmpResult3.useLongestChannelMessageBeforeReply(id, tmp9);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        let intl;
+        const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(longestChannelMessageBeforeReply[9]).t["EDYbS+"]), icon: navigation(longestChannelMessageBeforeReply[10]) };
+        const open = navigation(longestChannelMessageBeforeReply[8]).open;
+        navigation(longestChannelMessageBeforeReply[8]);
+        intl = channel(longestChannelMessageBeforeReply[9]).intl;
+        open(obj);
+      }
+    }
+    cResult[5] = R;
+    tmp12 = R;
+  } else {
+    class R {
+      constructor() {
+        let intl;
+        const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(longestChannelMessageBeforeReply[9]).t["EDYbS+"]), icon: navigation(longestChannelMessageBeforeReply[10]) };
+        const open = navigation(longestChannelMessageBeforeReply[8]).open;
+        navigation(longestChannelMessageBeforeReply[8]);
+        intl = channel(longestChannelMessageBeforeReply[9]).intl;
+        open(obj);
+      }
+    }
+  }
+  if (cResult[6] !== navigation) {
+    class E {
+      constructor() {
+        navigation.pop();
+      }
+    }
+    cResult[6] = navigation;
+    cResult[7] = E;
+  } else {
+    class E {
+      constructor() {
+        navigation.pop();
+      }
+    }
+  }
+  if (cResult[8] === tmp13) {
+    class E {
+      constructor() {
+        navigation.pop();
+      }
+    }
+    const tmpResult4 = tmp(longestChannelMessageBeforeReply[11]);
+    const messageRequestActions = tmpResult4.useMessageRequestActions(obj3);
+    const rejectMessageRequest = messageRequestActions.rejectMessageRequest;
+    ({ isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam } = messageRequestActions);
+    if (cResult[11] === channel) {
+      class E {
+        constructor() {
+          navigation.pop();
+        }
+      }
+    }
+    const fn2 = function v(stopPropagation) {
+      let id;
+      stopPropagation.stopPropagation();
+      markAsNotSpam(channel, longestChannelMessageBeforeReply, () => {
+        const obj = channel(longestChannelMessageBeforeReply[12]);
+        return obj.transitionToChannel(id.id, { navigationReplace: true });
+      });
+    };
+    cResult[11] = channel;
+    cResult[12] = markAsNotSpam;
+    cResult[13] = longestChannelMessageBeforeReply;
+    cResult[14] = fn2;
+  }
+  obj3 = { user: stateFromStores, onError: tmp12, onRejectSuccess: tmp13 };
+  cResult[8] = tmp13;
+  cResult[9] = stateFromStores;
+  cResult[10] = obj3;
+}) : ((channel) => {
+  let _undefined;
+  let _undefined2;
+  let c3;
+  let c4;
+  let closure_2;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let isOptimisticRejected;
+  let isRejectLoading;
+  let isUserProfileLoading;
+  channel = channel.channel;
+  react = undefined;
   c4 = undefined;
-  const navigation = channel(1484).useNavigation();
-  const obj = channel(1484);
+  const tmp = channel;
+  let obj = channel(1491);
+  navigation = obj.useNavigation();
   const items = [c4];
-  const stateFromStores = channel(504).useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj2 = channel(504);
-  dependencyMap = channel(12733).useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
+  const obj2 = channel(504);
+  const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
+  const obj3 = channel(11837);
+  dependencyMap = obj3.useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
-  const callback = noop.useCallback(() => {
+  const callback = react.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj3 = channel(12733);
-  const messageRequestActions = channel(12725).useMessageRequestActions({
-    user: stateFromStores,
-    onError() {
-      const obj2 = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-      const intl = channel(1115).intl;
-      obj2.content = intl.string(channel(1115).t["EDYbS+"]);
-      obj2.icon = navigation(5846);
-      navigation(4486).open(obj2);
-    },
-    onRejectSuccess: callback
-  });
-  ({ rejectMessageRequest: c3, isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam: c4 } = messageRequestActions);
-  let tmp7 = isRejectLoading;
-  if (!isRejectLoading) {
-    tmp7 = isUserProfileLoading;
-  }
-  if (!tmp7) {
-    tmp7 = isOptimisticRejected;
-  }
-  const obj6 = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonPrimaryVariant: "destructive", buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
-  const obj4 = channel(12725);
+  const obj4 = channel(11829);
   const obj5 = {
     user: stateFromStores,
     onError() {
-      const obj2 = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-      const intl = channel(1115).intl;
-      obj2.content = intl.string(channel(1115).t["EDYbS+"]);
-      obj2.icon = navigation(5846);
-      navigation(4486).open(obj2);
+      let intl;
+      const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(closure_2[9]).t["EDYbS+"]), icon: navigation(closure_2[10]) };
+      const open = navigation(closure_2[8]).open;
+      navigation(closure_2[8]);
+      intl = channel(closure_2[9]).intl;
+      open(obj);
     },
     onRejectSuccess: callback
   };
-  const tmp8 = jsx;
-  let intl = tmp(1115).intl;
-  obj6.message = intl.string(channel(1115).t.fS08qB);
-  const intl2 = tmp(1115).intl;
-  obj6.subtext = intl2.string(channel(1115).t["8U5OXE"]);
-  const intl3 = tmp(1115).intl;
-  obj6.buttonPrimaryText = intl3.string(channel(1115).t.cpT0Cq);
-  obj6.buttonPrimaryOnPress = function buttonPrimaryOnPress(stopPropagation) {
-    stopPropagation.stopPropagation();
-    _undefined(channel.id);
+  const messageRequestActions = obj4.useMessageRequestActions(obj5);
+  ({ rejectMessageRequest: c3, isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam: c4 } = messageRequestActions);
+  const obj6 = {
+    type: "button-action",
+    message: intl.string(tmp(1127).t.fS08qB),
+    subtext: intl2.string(tmp(1127).t["8U5OXE"]),
+    buttonPrimaryText: intl3.string(tmp(1127).t.cpT0Cq),
+    buttonPrimaryOnPress(stopPropagation) {
+      stopPropagation.stopPropagation();
+      _undefined(channel.id);
+    },
+    buttonPrimaryDisabled: isRejectLoading || isUserProfileLoading || isOptimisticRejected,
+    buttonPrimaryLoading: isRejectLoading,
+    buttonPrimaryVariant: "destructive",
+    buttonSecondaryText: intl4.string(tmp(1127).t.olZgw5),
+    buttonSecondaryOnPress(stopPropagation) {
+      let id;
+      stopPropagation.stopPropagation();
+      _undefined2(channel, closure_2, () => {
+        const obj = channel(closure_2[12]);
+        return obj.transitionToChannel(id.id, { navigationReplace: true });
+      });
+    },
+    buttonSecondaryDisabled: isRejectLoading || isUserProfileLoading || isOptimisticRejected,
+    buttonSecondaryLoading: isUserProfileLoading
   };
-  obj6.buttonPrimaryDisabled = tmp7;
+  const tmp9 = navigation(11835);
+  intl = tmp(1127).intl;
+  intl2 = tmp(1127).intl;
+  intl3 = tmp(1127).intl;
+  const tmp8 = jsx;
   if (!isRejectLoading) {
     isRejectLoading = isOptimisticRejected;
   }
-  obj6.buttonPrimaryLoading = isRejectLoading;
-  const intl4 = tmp(1115).intl;
-  obj6.buttonSecondaryText = intl4.string(channel(1115).t.olZgw5);
-  obj6.buttonSecondaryOnPress = function buttonSecondaryOnPress(stopPropagation) {
-    stopPropagation.stopPropagation();
-    _undefined2(channel, closure_2, () => channel(closure_2[11]).transitionToChannel(id.id, { navigationReplace: true }));
-  };
-  obj6.buttonSecondaryDisabled = tmp7;
-  obj6.buttonSecondaryLoading = isUserProfileLoading;
-  return tmp8(navigation(12731), obj6);
-});
+  intl4 = tmp(1127).intl;
+  return tmp8(tmp9, obj6);
+}));
+const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardSpamMessageRequest.tsx");
+
+export default memoResult;

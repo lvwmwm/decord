@@ -1,24 +1,28 @@
-// Module ID: 8182
-// Function ID: 8183
+// Module ID: 7336
+// Function ID: 7337
 // Name: useConversationBackoffRef
-// Dependencies: [19, 7869, 559, 2]
+// Dependencies: [19, 7019, 569, 2]
 // Exports: useConversationBackoffRef
 
-// Module 8182 (useConversationBackoffRef)
-import BackoffDefault from "Backoff" /* 559 */;
-import noop from "module_19" /* 19 */;
+// Module 7336 (useConversationBackoffRef)
+import BackoffDefault from "Backoff" /* 569 */;
+import react from "react" /* 19 */;
+import ConversationConstants from "ConversationConstants" /* 7019 */;
+import size from "module_2" /* 2 */;
 
-const ConversationConstants = fn(7869);
+let c3;
+let closure_4;
 ({ FETCH_BACKOFF_MAX_MS: c3, FETCH_BACKOFF_MIN_MS: closure_4 } = ConversationConstants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/conversations/useConversationBackoffRef.tsx");
 
 export const useConversationBackoffRef = function useConversationBackoffRef(items) {
   if (items === undefined) {
     items = [];
   }
-  const ref = noop.useRef(new BackoffDefault(React4, React3));
-  const effect = noop.useEffect(() => {
+  const useRef = react.useRef;
+  const tmp = new BackoffDefault(React3, _false);
+  const ref = useRef(tmp);
+  const effect = react.useEffect(() => {
     const current = ref.current;
     return () => {
       current.succeed();

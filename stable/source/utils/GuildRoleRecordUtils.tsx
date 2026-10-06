@@ -1,17 +1,19 @@
-// Module ID: 2101
-// Function ID: 2102
+// Module ID: 2107
+// Function ID: 2108
 // Name: GuildRoleRecordUtils
-// Dependencies: [2056, 2100, 1086, 1092, 2102, 2]
+// Dependencies: [2066, 2106, 1098, 1104, 2108, 2]
 // Exports: constructGuildRoleInPlace, fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
 
-// Module 2101 (GuildRoleRecordUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2100 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2102 */;
-import PlainRecord from "PlainRecord" /* 2056 */;
+// Module 2107 (GuildRoleRecordUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2106 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2108 */;
+import PlainRecord from "PlainRecord" /* 2066 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 function fromServerArray(id, roles) {
   const obj = {};
   const iter = roles[Symbol.iterator]();
@@ -23,105 +25,107 @@ function fromServerArray(id, roles) {
   return obj;
 }
 function fromServer(guildId, id) {
-  const obj = { id: id.id, name: id.name, guildId, permissions: null, mentionable: null, position: null, color: null, colorString: null, colors: null, colorStrings: null, hoist: null, managed: null, tags: null, icon: null, unicodeEmoji: null, flags: null, description: null, version: null };
-  const deserializer = BigFlagUtilsAll;
-  obj.permissions = deserializer.deserialize(id.permissions);
+  let colors;
+  let description;
+  let deserializer;
+  let flags;
+  let int2hexResult;
+  let managed;
+  let result;
+  let tags;
+  const obj = { id: id.id, name: id.name, guildId, permissions: deserializer.deserialize(id.permissions), mentionable: null, position: null, color: null, colorString: int2hexResult, colors, colorStrings: result, hoist: null, managed, tags, icon: null, unicodeEmoji: null, flags, description, version: id.version };
+  deserializer = BigFlagUtilsAll;
   ({ mentionable: obj.mentionable, position: obj.position, color: obj.color } = id);
-  let int2hexResult = null;
+  int2hexResult = null;
   if (0 !== id.color) {
-    int2hexResult = utils_ColorUtils.int2hex(id.color);
+    const obj2 = utils_ColorUtils;
+    int2hexResult = obj2.int2hex(id.color);
   }
-  obj.colorString = int2hexResult;
-  let colors = id.colors;
+  colors = id.colors;
   if (colors == null) {
     colors = null;
   }
-  obj.colors = colors;
-  let result = null;
+  result = null;
   if (null != id.colors) {
-    result = EnhancedRoleColorUtils.extractColorStringsFromServerColors(id.colors);
+    const obj3 = EnhancedRoleColorUtils;
+    result = obj3.extractColorStringsFromServerColors(id.colors);
   }
-  obj.colorStrings = result;
   ({ hoist: obj.hoist, managed } = id);
   if (managed == null) {
     managed = false;
   }
-  obj.managed = managed;
-  let tags = id.tags;
+  tags = id.tags;
   if (tags == null) {
     tags = {};
   }
-  obj.tags = tags;
   ({ icon: obj.icon, unicode_emoji: obj.unicodeEmoji, flags } = id);
   if (flags == null) {
     flags = 0;
   }
-  obj.flags = flags;
-  let description = id.description;
+  description = id.description;
   if (description == null) {
     description = null;
   }
-  obj.description = description;
-  obj.version = id.version;
-  return React3(GuildRoleRecordTypeTag, obj);
+  return _false(GuildRoleRecordTypeTag, obj);
 }
 function fromSerialized(guildId, id) {
-  const obj = { id: id.id, name: id.name, guildId, permissions: null, mentionable: null, position: null, color: null, colorString: null, colors: null, colorStrings: null, hoist: null, managed: null, tags: null, icon: null, unicodeEmoji: null, flags: null, description: null, version: null };
-  const deserializer = BigFlagUtilsAll;
-  obj.permissions = deserializer.deserialize(id.permissions);
+  let colors;
+  let description;
+  let deserializer;
+  let flags;
+  let int2hexResult;
+  let managed;
+  let result;
+  let tags;
+  const obj = { id: id.id, name: id.name, guildId, permissions: deserializer.deserialize(id.permissions), mentionable: null, position: null, color: null, colorString: int2hexResult, colors, colorStrings: result, hoist: null, managed, tags, icon: null, unicodeEmoji: null, flags, description, version: id.version };
+  deserializer = BigFlagUtilsAll;
   ({ mentionable: obj.mentionable, position: obj.position, color: obj.color } = id);
-  let int2hexResult = null;
+  int2hexResult = null;
   if (null != id.color) {
     int2hexResult = null;
     if (0 !== id.color) {
-      int2hexResult = utils_ColorUtils.int2hex(id.color);
+      const obj2 = utils_ColorUtils;
+      int2hexResult = obj2.int2hex(id.color);
     }
   }
-  obj.colorString = int2hexResult;
-  let colors = id.colors;
+  colors = id.colors;
   if (colors == null) {
     colors = null;
   }
-  obj.colors = colors;
-  let result = null;
+  result = null;
   if (null != id.colors) {
-    result = EnhancedRoleColorUtils.extractColorStringsFromServerColors(id.colors);
+    const obj3 = EnhancedRoleColorUtils;
+    result = obj3.extractColorStringsFromServerColors(id.colors);
   }
-  obj.colorStrings = result;
   ({ hoist: obj.hoist, managed } = id);
   if (managed == null) {
     managed = false;
   }
-  obj.managed = managed;
-  let tags = id.tags;
+  tags = id.tags;
   if (tags == null) {
     tags = {};
   }
-  obj.tags = tags;
   ({ icon: obj.icon, unicodeEmoji: obj.unicodeEmoji, flags } = id);
   if (flags == null) {
     flags = 0;
   }
-  obj.flags = flags;
-  let description = id.description;
+  description = id.description;
   if (description == null) {
     description = null;
   }
-  obj.description = description;
-  obj.version = id.version;
-  return React3(GuildRoleRecordTypeTag, obj);
+  return _false(GuildRoleRecordTypeTag, obj);
 }
 ({ constructInPlace: c3, objectIsPlainRecordOfType: closure_4 } = PlainRecord);
 const GuildRoleRecordTypeTag = GuildRoleRecord.GuildRoleRecordTypeTag;
 let result = size.fileFinishedImporting("utils/GuildRoleRecordUtils.tsx");
 
 export const isGuildRoleRecord = function isGuildRoleRecord(arg0) {
-  return React4(GuildRoleRecordTypeTag, arg0);
+  return React3(GuildRoleRecordTypeTag, arg0);
 };
 export { fromServerArray };
 export { fromServer };
 export const constructGuildRoleInPlace = function constructGuildRoleInPlace(arg0) {
-  return React3(GuildRoleRecordTypeTag, arg0);
+  return _false(GuildRoleRecordTypeTag, arg0);
 };
 export { fromSerialized };
 export const fromSyncOperation = function fromSyncOperation(id, roles, partition) {
@@ -132,12 +136,12 @@ export const fromSyncOperation = function fromSyncOperation(id, roles, partition
     const merged = Object.assign(partition);
     const deletes = roles.deletes;
     for (const item10013 of deletes) {
-      delete tmp[tmp2];
+      delete obj[item10013];
       continue;
     }
     const writes = roles.writes;
     for (const item10020 of writes) {
-      obj[item10020.id] = fromServer(arg0, item10020);
+      obj[item10020.id] = fromServer(id, item10020);
       continue;
     }
     return obj;
@@ -145,20 +149,19 @@ export const fromSyncOperation = function fromSyncOperation(id, roles, partition
 };
 export const fromSerializedPartition = function fromSerializedPartition(id, roles) {
   const obj = {};
-  for (const key10006 in arg1) {
-    obj[key10006] = fromSerialized(arg0, arg1[key10006]);
+  for (const key10006 in roles) {
+    obj[key10006] = fromSerialized(id, roles[key10006]);
     continue;
   }
   return obj;
 };
 export const toSerializedPartition = function toSerializedPartition(unsafeMutableRoles) {
   const obj = {};
-  for (const key10004 in arg0) {
-    let tmp2 = arg0[key10004];
-    let obj2 = {};
+  for (const key10004 in unsafeMutableRoles) {
+    let tmp2 = unsafeMutableRoles[key10004];
+    let obj2 = { permissions: str.toString() };
     let merged = Object.assign(tmp2);
     let str = tmp2.permissions;
-    obj2.permissions = str.toString();
     obj[key10004] = obj2;
     continue;
   }

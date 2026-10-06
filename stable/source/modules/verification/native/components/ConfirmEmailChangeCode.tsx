@@ -1,30 +1,167 @@
-// Module ID: 6877
-// Function ID: 6878
+// Module ID: 6018
+// Function ID: 6019
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 5872, 21, 1484, 1094, 6878, 6875, 1115, 2]
-// Exports: default
+// Dependencies: [5, 19, 5932, 21, 558, 576, 1491, 1106, 6016, 1127, 6019, 2]
 
-// Module 6877 (ConfirmEmailChangeCode)
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+// Module 6018 (ConfirmEmailChangeCode)
+import Fragment from "Fragment" /* 21 */;
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 5932 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const setEmailToken = fn(5872).setEmailToken;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
+let c0, isChangeEmail, navigation;
 
-export default function ConfirmEmailChangeCode(isChangeEmail) {
+const setEmailToken = ChangeEmailStore.setEmailToken;
+const jsx = Fragment.jsx;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
+  let tmp = isChangeEmail;
+  let tmp2 = dependencyMap;
+  let obj = isChangeEmail(576);
+  const cResult = obj.c(9);
   isChangeEmail = isChangeEmail.isChangeEmail;
-  const navigation = isChangeEmail(1484).useNavigation();
-  const items = [isChangeEmail, navigation];
-  const callback = noop.useCallback((arg0) => {
+  let obj2 = isChangeEmail(1491);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === isChangeEmail) {
+    let tmp5;
+    let tmp7;
+    let tmp11;
+    let tmp10;
+    let tmp9;
+    let tmp15;
+    if (cResult[1] === navigation) {
+      tmp5 = cResult[2];
+    }
+    const tmp6 = globalThis;
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      let closure_0 = _asyncToGenerator(async (arg0) => {
+        let c1;
+        closure_0 = arg0;
+        const obj3 = closure_0(c2[8]);
+        await obj3.confirmEmailChange(closure_0);
+        return arg1;
+      });
+      const fn2 = function() {
+        return closure_0(...arguments);
+      };
+      cResult[3] = fn2;
+      tmp7 = fn2;
+    } else {
+      tmp7 = cResult[3];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      closure_0 = _asyncToGenerator(async (arg0, value) => {
+        let v3;
+        if (c0 === 2) {
+          c0 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp2 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            c0 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c0 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c0 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                c1 = 1;
+                const obj2 = c0(closure_1_2[8]);
+                c0 = 1;
+                const obj5 = { value: obj2.sendConfirmationCode(), done: false };
+                return obj5;
+              }
+            } else if (arg0 === 1) {
+              c0 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c0 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              c0 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp6) {
+            c0 = 3;
+            throw tmp6;
+          }
+        }
+      });
+      const fn3 = function() {
+        return closure_0(...arguments);
+      };
+      const intl = tmp(1127).intl;
+      const stringResult = intl.string(tmp(1127).t["2x/2Uo"]);
+      const intl2 = tmp(1127).intl;
+      const stringResult1 = intl2.string(tmp(1127).t.PDTjLN);
+      cResult[4] = fn3;
+      cResult[5] = stringResult;
+      cResult[6] = stringResult1;
+      tmp11 = stringResult1;
+      tmp10 = stringResult;
+      tmp9 = fn3;
+    } else {
+      tmp9 = cResult[4];
+      tmp10 = cResult[5];
+      tmp11 = cResult[6];
+    }
+    if (cResult[7] !== tmp5) {
+      const tmp18 = jsx(navigation(6019), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
+      cResult[7] = tmp5;
+      cResult[8] = tmp18;
+      tmp15 = tmp18;
+    } else {
+      tmp15 = cResult[8];
+    }
+    return tmp15;
+  }
+  const fn = function c(arg0) {
     let tmp = arg0;
+    const tmp2 = setEmailToken;
     if (arg0 == null) {
       tmp = null;
     }
-    setEmailToken(tmp);
+    tmp2(tmp);
+    const push = navigation.push;
+    const VerificationModalScenes = ConstantsIOS.VerificationModalScenes;
+    if (isChangeEmail) {
+      push(VerificationModalScenes.CHANGE_EMAIL_COLLECT_REASONS);
+    } else {
+      push(VerificationModalScenes.ENTER_EMAIL);
+    }
+  };
+  cResult[0] = isChangeEmail;
+  cResult[1] = navigation;
+  cResult[2] = fn;
+  tmp5 = fn;
+}) : ((isChangeEmail) => {
+  isChangeEmail = isChangeEmail.isChangeEmail;
+  let obj = isChangeEmail(1491);
+  navigation = obj.useNavigation();
+  const items = [isChangeEmail, navigation];
+  const callback = react.useCallback((arg0) => {
+    let tmp = arg0;
+    const tmp2 = setEmailToken;
+    if (arg0 == null) {
+      tmp = null;
+    }
+    tmp2(tmp);
     const push = navigation.push;
     const VerificationModalScenes = ConstantsIOS.VerificationModalScenes;
     if (isChangeEmail) {
@@ -33,73 +170,68 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  const obj2 = { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null };
-  let obj = isChangeEmail(1484);
-  closure_129_0 = asyncGeneratorStep(async (arg0) => {
-    await closure_0(c2[7]).confirmEmailChange(closure_0);
+  navigation(6019);
+  isChangeEmail = _asyncToGenerator(async (arg0) => {
+    let c1;
+    closure_0 = arg0;
+    const obj3 = closure_0(c2[8]);
+    await obj3.confirmEmailChange(closure_0);
     return arg1;
   });
-  obj2.onFormSubmit = function() {
-    const self = this;
-    const apply = isChangeEmail.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
-  };
-  obj2.onSuccess = callback;
-  obj2.onResend = asyncGeneratorStep(async (arg0, value) => {
-    if (v3 === 2) {
-      v3 = 3;
+  const intl = isChangeEmail(1127).intl;
+  const intl2 = isChangeEmail(1127).intl;
+  return <tmp3 onFormSubmit={function() {
+    return closure_0(...arguments);
+  }} onSuccess={callback} onResend={_asyncToGenerator(async (arg0, value) => {
+    let v3;
+    if (isChangeEmail === 2) {
+      isChangeEmail = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
-        v3 = 2;
+        isChangeEmail = 2;
         if (0 === c1) {
           if (arg0 === 1) {
-            v3 = 3;
+            isChangeEmail = 3;
             throw value;
           } else if (arg0 === 2) {
-            v3 = 3;
+            isChangeEmail = 3;
             const obj4 = { value, done: true };
             return obj4;
           } else {
             c1 = 1;
-            v3 = 1;
-            const obj5 = { value: v3(dependencyMap[7]).sendConfirmationCode(), done: false };
+            const obj2 = isChangeEmail(dependencyMap[8]);
+            isChangeEmail = 1;
+            const obj5 = { value: obj2.sendConfirmationCode(), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
-          v3 = 3;
+          isChangeEmail = 3;
           throw value;
         } else if (arg0 === 2) {
-          v3 = 3;
+          isChangeEmail = 3;
           const obj = { value, done: true };
           return obj;
         } else {
-          v3 = 3;
-          return { value: "HermesInternal", done: null };
+          isChangeEmail = 3;
+          return { value: "IconComponent", done: null };
         }
-      } catch (tmp7) {
-        v3 = tmp;
-        throw tmp7;
+      } catch (tmp6) {
+        isChangeEmail = 3;
+        throw tmp6;
       }
     }
-  });
-  const intl = isChangeEmail(1115).intl;
-  obj2.headerText = intl.string(isChangeEmail(1115).t["2x/2Uo"]);
-  const intl2 = isChangeEmail(1115).intl;
-  obj2.confirmButtonText = intl2.string(isChangeEmail(1115).t.PDTjLN);
-  return jsx(navigation(6878), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
-};
+  })} headerText={intl.string(isChangeEmail(1127).t["2x/2Uo"])} confirmButtonText={intl2.string(isChangeEmail(1127).t.PDTjLN)} />;
+});
+const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
+
+export default tmp2;

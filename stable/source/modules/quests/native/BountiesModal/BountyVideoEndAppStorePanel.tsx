@@ -1,34 +1,58 @@
-// Module ID: 15332
-// Function ID: 15333
+// Module ID: 14577
+// Function ID: 14578
 // Name: BountyVideoEndAppStorePanel
-// Dependencies: [19, 17, 1182, 7428, 21, 4788, 576, 11786, 5235, 4524, 7986, 4477, 11782, 6929, 4789, 4792, 7431, 504, 4498, 2]
-// Exports: default
+// Dependencies: [19, 17, 1194, 6573, 21, 4837, 588, 10689, 5297, 4570, 7135, 4522, 10685, 6066, 4838, 4841, 6576, 558, 576, 504, 4544, 2]
 
-// Module 15332 (BountyVideoEndAppStorePanel)
-import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import openURLDefault from "openURL" /* 4477 */;
-import native from "native" /* 4498 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
-import timingPresets from "timingPresets" /* 4792 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6929 */;
-import AnalyticsActions from "AnalyticsActions" /* 7986 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 11782 */;
-import noop from "module_19" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+// Module 14577 (BountyVideoEndAppStorePanel)
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import openURLDefault from "openURL" /* 4522 */;
+import native from "native" /* 4544 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+import timing from "timing" /* 4838 */;
+import timingPresets from "timingPresets" /* 4841 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6573 */;
+import AnalyticsActions from "AnalyticsActions" /* 7135 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 10685 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 10689 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let set;
+
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
 function BountyVideoEndAppStorePanelInner(metadata) {
+  let View;
+  let callback;
+  let items6;
+  let items7;
+  let obj10;
+  let obj6;
+  let obj9;
+  let onCarouselScroll;
+  let onOverlaySurfaceClick;
   metadata = metadata.metadata;
   const sheetHeight = metadata.sheetHeight;
   const revealProgress = metadata.revealProgress;
   const onDismiss = metadata.onDismiss;
   const onInstallPress = metadata.onInstallPress;
   let sharedValue;
-  const tmp = closure_9();
-  closure_5 = tmp;
-  onDismiss.useRef(false);
+  ({ onOverlaySurfaceClick, onCarouselScroll } = metadata);
+  let tmp = closure_9();
+  let closure_5 = tmp;
+  const ref = onDismiss.useRef(false);
   let items = [onDismiss];
   const onPress = onDismiss.useCallback(() => {
     if (!ref.current) {
@@ -36,30 +60,31 @@ function BountyVideoEndAppStorePanelInner(metadata) {
       onDismiss();
     }
   }, items);
-  const unmountEffect = metadata(revealProgress[8]).useUnmountEffect(onPress);
   let obj = metadata(revealProgress[8]);
-  class H {
+  const unmountEffect = obj.useUnmountEffect(onPress);
+  let obj2 = metadata(revealProgress[9]);
+  class A {
     constructor() {
-      obj = { transform: null };
-      obj1 = { translateY: null };
-      obj3 = closure_0(closure_2[9]);
+      let interpolate;
+      let items;
+      let items1;
+      let value;
+      const obj = { transform: items1 };
+      const obj2 = { translateY: interpolate(value, [0, 1], items, ReanimatedRexport.Extrapolation.CLAMP) };
+      interpolate = ReanimatedRexport.interpolate;
+      ReanimatedRexport;
       value = revealProgress.get();
-      items = [, ];
-      items[0] = sheetHeight;
-      items[1] = 0;
-      obj1.translateY = obj3.interpolate(value, [0, 1], items, closure_0(closure_2[9]).Extrapolation.CLAMP);
-      items1 = [];
-      items1[0] = obj1;
-      obj.transform = items1;
+      items = [sheetHeight, 0];
+      items1 = [obj2];
       return obj;
     }
   }
-  let obj2 = metadata(revealProgress[9]);
-  H.__closure = { interpolate: metadata(revealProgress[9]).interpolate, revealProgress, sheetHeight, Extrapolation: metadata(revealProgress[9]).Extrapolation };
-  H.__workletHash = 2597568517005;
-  H.__initData = __initData;
+  const obj3 = { interpolate: metadata(revealProgress[9]).interpolate, revealProgress, sheetHeight, Extrapolation: metadata(revealProgress[9]).Extrapolation };
+  A.__closure = obj3;
+  A.__workletHash = 2597568517005;
+  A.__initData = __initData;
   let items1 = [metadata.storeUrl, onInstallPress];
-  const animatedStyle = obj2.useAnimatedStyle(H);
+  const animatedStyle = obj2.useAnimatedStyle(A);
   const callback1 = onDismiss.useCallback(() => {
     onInstallPress(AnalyticsActions.AppStoreOverlaySurfaces.MAIN_CTA);
     openURLDefault(metadata.storeUrl);
@@ -69,95 +94,149 @@ function BountyVideoEndAppStorePanelInner(metadata) {
   items2[3] = onInstallPress;
   const callback2 = onDismiss.useCallback(() => {
     onInstallPress(AnalyticsActions.AppStoreOverlaySurfaces.RATING_STAT);
-    AppStoreOverlayContent.openAppStoreReviews(metadata.storeUrl, metadata.platform, metadata.appId);
+    const obj = AppStoreOverlayContent;
+    obj.openAppStoreReviews(metadata.storeUrl, metadata.platform, metadata.appId);
   }, items2);
-  const obj3 = { interpolate: metadata(revealProgress[9]).interpolate, revealProgress, sheetHeight, Extrapolation: metadata(revealProgress[9]).Extrapolation };
-  sharedValue = metadata(revealProgress[9]).useSharedValue(1);
+  const obj4 = metadata(revealProgress[9]);
+  sharedValue = obj4.useSharedValue(1);
   const items3 = [sharedValue, onPress, revealProgress, sheetHeight];
   const items4 = [tmp.panel, sheetHeight];
   const memo = onDismiss.useMemo(() => {
     const Gesture = LegacyBaseButton.Gesture;
     const PanResult = Gesture.Pan();
-    const activeOffsetYResult = Gesture.Pan().activeOffsetY(8);
     const fn = function n() {
       const result = sharedValue.set(revealProgress.get());
     };
-    fn.__closure = { dragStartProgress: sharedValue, revealProgress };
+    let obj = { dragStartProgress: sharedValue, revealProgress };
+    fn.__closure = obj;
     fn.__workletHash = 5755610000059;
     fn.__initData = __initData3;
-    const failOffsetXResult = Gesture.Pan().activeOffsetY(8).failOffsetX([-24, 24]);
-    const obj = { dragStartProgress: sharedValue, revealProgress };
+    const activeOffsetYResult = PanResult.activeOffsetY(8);
     const fn2 = function o(translationY) {
       const result = revealProgress.set(Math.max(0, Math.min(1, sharedValue.get() - translationY.translationY / sheetHeight)));
     };
-    fn2.__closure = { revealProgress, dragStartProgress: sharedValue, sheetHeight };
+    let obj2 = { revealProgress, dragStartProgress: sharedValue, sheetHeight };
+    fn2.__closure = obj2;
     fn2.__workletHash = 15072230748689;
     fn2.__initData = __initData2;
-    let obj2 = { revealProgress, dragStartProgress: sharedValue, sheetHeight };
-    const onBeginResult = Gesture.Pan().activeOffsetY(8).failOffsetX([-24, 24]).onBegin(fn);
+    const failOffsetXResult = activeOffsetYResult.failOffsetX([-24, 24]);
     const fn3 = function t(velocityY) {
+      const tmp = closure_1_2;
       if (closure_1_2.get() >= 0.5) {
         if (velocityY.velocityY <= 800) {
-          const result = closure_1_2.set(metadata(revealProgress[14]).withTiming(1, metadata(revealProgress[15]).timingStandard));
-          const obj2 = metadata(revealProgress[14]);
+          set = tmp.set;
+          const obj = metadata(revealProgress[14]);
+          const result = set(obj.withTiming(1, metadata(revealProgress[15]).timingStandard));
         }
       }
-      metadata(revealProgress[9]).runOnJS(callback)();
+      const obj2 = metadata(revealProgress[9]);
+      obj2.runOnJS(callback)();
     };
-    const onUpdateResult = Gesture.Pan().activeOffsetY(8).failOffsetX([-24, 24]).onBegin(fn).onUpdate(fn2);
+    const onBeginResult = failOffsetXResult.onBegin(fn);
+    const onUpdateResult = onBeginResult.onUpdate(fn2);
     fn3.__closure = { revealProgress, DISMISS_PROGRESS_THRESHOLD: 0.5, DISMISS_VELOCITY_THRESHOLD: 800, runOnJS: ReanimatedRexport.runOnJS, handleDismiss, withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard };
-    fn3.__workletHash = 11043554169049;
+    fn3.__workletHash = 1930356737433;
     fn3.__initData = __initData;
+    ({ revealProgress, DISMISS_PROGRESS_THRESHOLD: 0.5, DISMISS_VELOCITY_THRESHOLD: 800, runOnJS: ReanimatedRexport.runOnJS, handleDismiss, withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard });
     return onUpdateResult.onEnd(fn3);
   }, items3);
   const items5 = [sheetHeight, tmp.root];
   const memo1 = onDismiss.useMemo(() => {
-    const items = [closure_5.panel, { height: sheetHeight }];
+    const items = [closure_5.panel, ];
+    const obj = { height: sheetHeight };
+    items[1] = obj;
     return items;
   }, items4);
   const obj5 = {
     style: onDismiss.useMemo(() => {
-      const items = [closure_5.root, { height: sheetHeight }];
+      const items = [closure_5.root, ];
+      const obj = { height: sheetHeight };
+      items[1] = obj;
       return items;
     }, items5),
-    children: null
+    children: sharedValue(View, obj6)
   };
-  const obj6 = { style: null, children: null };
-  const items6 = [memo1, animatedStyle];
-  obj6.style = items6;
-  const obj4 = metadata(revealProgress[9]);
-  const items7 = [onPress(onInstallPress, { style: tmp.scrollBody, contentContainerStyle: tmp.scrollContent, nestedScrollEnabled: true, showsVerticalScrollIndicator: false, keyboardShouldPersistTaps: "handled", children: onPress(metadata(revealProgress[7]).AppStoreOverlayBody, { metadata, onOpenReviews: callback2, onMediaGetGamePress: callback1 }) }), , ];
-  const obj8 = { gesture: memo, children: null };
-  const obj9 = { style: tmp.headerGestureTarget, children: onPress(metadata(revealProgress[16]).ActionSheetHeaderBar, { variant: "overlay", style: tmp.headerBar, onPress }) };
-  obj8.children = onPress(closure_5, obj9);
-  items7[1] = onPress(metadata(revealProgress[13]).GestureDetector, obj8);
+  obj6 = { style: items6, children: items7 };
+  items6 = [memo1, animatedStyle];
+  const obj7 = { style: tmp.scrollBody, contentContainerStyle: tmp.scrollContent, nestedScrollEnabled: true, showsVerticalScrollIndicator: false, keyboardShouldPersistTaps: "handled", children: onPress(metadata(revealProgress[7]).AppStoreOverlayBody, { metadata, onOpenReviews: callback2, onMediaGetGamePress: callback1, onCarouselScroll, onOverlaySurfaceClick }) };
+  View = sheetHeight(revealProgress[9]).View;
+  items7 = [onPress(onInstallPress, obj7), , ];
+  const obj8 = { gesture: memo, children: onPress(closure_5, obj9) };
+  obj9 = { style: tmp.headerGestureTarget, children: onPress(metadata(revealProgress[16]).ActionSheetHeaderBar, obj10) };
+  const GestureDetector = metadata(revealProgress[13]).GestureDetector;
+  obj10 = { variant: "overlay", style: tmp.headerBar, onPress };
+  items7[1] = onPress(GestureDetector, obj8);
   items7[2] = onPress(metadata(revealProgress[7]).AppStoreOverlayFooter, { onInstallPress: callback1 });
-  obj6.children = items7;
-  obj5.children = sharedValue(sheetHeight(revealProgress[9]).View, obj6);
   return onPress(closure_5, obj5);
 }
-get_ActivityIndicator = fn(17);
-({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ACTION_SHEET_BORDER_RADIUS = fn(7428).ACTION_SHEET_BORDER_RADIUS;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { root: { position: "absolute", left: 0, right: 0, bottom: 0, zIndex: 10 }, panel: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, borderTopLeftRadius: ACTION_SHEET_BORDER_RADIUS, borderTopRightRadius: ACTION_SHEET_BORDER_RADIUS, overflow: "hidden", flexDirection: "column" }, headerBar: { zIndex: 1 }, headerGestureTarget: { position: "absolute", top: 0, left: 0, right: 0, height: 48, zIndex: 2 }, scrollBody: { flex: 1, minHeight: 0 }, scrollContent: null };
-let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, borderTopLeftRadius: ACTION_SHEET_BORDER_RADIUS, borderTopRightRadius: ACTION_SHEET_BORDER_RADIUS, overflow: "hidden", flexDirection: "column" };
-obj2.scrollContent = { paddingBottom: fn(11786).APP_STORE_OVERLAY_FOOTER_GRADIENT_HEIGHT };
-let closure_9 = createStyles.createStyles(obj2);
+({ ScrollView: closure_4, View: hasOwnProperty } = react_native);
+const ACTION_SHEET_BORDER_RADIUS = ActionSheetConstants.ACTION_SHEET_BORDER_RADIUS;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { root: { position: "absolute", left: 0, right: 0, bottom: 0, zIndex: 10 }, panel: obj2, headerBar: { zIndex: 1 }, headerGestureTarget: { position: "absolute", top: 0, left: 0, right: 0, height: 48, zIndex: 2 }, scrollBody: { flex: 1, minHeight: 0 }, scrollContent: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, borderTopLeftRadius: ACTION_SHEET_BORDER_RADIUS, borderTopRightRadius: ACTION_SHEET_BORDER_RADIUS, overflow: "hidden", flexDirection: "column" };
+createStyles = createStyles.createStyles;
+obj3 = { paddingBottom: AppStoreOverlayBody.APP_STORE_OVERLAY_FOOTER_GRADIENT_HEIGHT };
+let closure_9 = createStyles(obj);
 const __initData = { code: "function BountyVideoEndAppStorePanelTsx1(){const{interpolate,revealProgress,sheetHeight,Extrapolation}=this.__closure;return{transform:[{translateY:interpolate(revealProgress.get(),[0,1],[sheetHeight,0],Extrapolation.CLAMP)}]};}" };
-let closure_11 = { code: "function BountyVideoEndAppStorePanelTsx2(event){const{revealProgress,DISMISS_PROGRESS_THRESHOLD,DISMISS_VELOCITY_THRESHOLD,runOnJS,handleDismiss,withTiming,timingStandard}=this.__closure;if(revealProgress.get()<DISMISS_PROGRESS_THRESHOLD||event.velocityY>DISMISS_VELOCITY_THRESHOLD){runOnJS(handleDismiss)();return;}revealProgress.set(withTiming(1,timingStandard));}" };
+let closure_11 = { code: "function BountyVideoEndAppStorePanelTsx2(event_0){const{revealProgress,DISMISS_PROGRESS_THRESHOLD,DISMISS_VELOCITY_THRESHOLD,runOnJS,handleDismiss,withTiming,timingStandard}=this.__closure;if(revealProgress.get()<DISMISS_PROGRESS_THRESHOLD||event_0.velocityY>DISMISS_VELOCITY_THRESHOLD){runOnJS(handleDismiss)();return;}revealProgress.set(withTiming(1,timingStandard));}" };
 let closure_12 = { code: "function BountyVideoEndAppStorePanelTsx3(event){const{revealProgress,dragStartProgress,sheetHeight}=this.__closure;revealProgress.set(Math.max(0,Math.min(1,dragStartProgress.get()-event.translationY/sheetHeight)));}" };
 let closure_13 = { code: "function BountyVideoEndAppStorePanelTsx4(){const{dragStartProgress,revealProgress}=this.__closure;dragStartProgress.set(revealProgress.get());}" };
-const size = fn(2);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let theme;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ThemeStore];
+    const fn = function n() {
+      return theme.theme;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== arg0) {
+    const obj2 = {};
+    const merged = Object.assign(arg0);
+    const tmp14 = metroImportDefault(BountyVideoEndAppStorePanelInner, obj2);
+    cResult[2] = arg0;
+    cResult[3] = tmp14;
+    tmp8 = tmp14;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === stateFromStores) {
+    let tmp15;
+    if (cResult[5] === tmp8) {
+      tmp15 = cResult[6];
+    }
+    return tmp15;
+  }
+  const tmp16 = metroImportDefault(native.ThemeContextProvider, { theme: stateFromStores, children: tmp8 });
+  cResult[4] = stateFromStores;
+  cResult[5] = tmp8;
+  cResult[6] = tmp16;
+  tmp15 = tmp16;
+}) : ((arg0) => {
+  let obj3;
+  let theme;
+  const items = [ThemeStore];
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
+  const obj2 = { theme: stateFromStores, children: metroImportDefault(BountyVideoEndAppStorePanelInner, obj3) };
+  obj3 = {};
+  const ThemeContextProvider = native.ThemeContextProvider;
+  const merged = Object.assign(arg0);
+  return metroImportDefault(ThemeContextProvider, obj2);
+});
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideoEndAppStorePanel.tsx");
 
-export default function BountyVideoEndAppStorePanel(arg0) {
-  const items = [ThemeStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => theme.theme);
-  const obj2 = { theme: stateFromStores, children: null };
-  const merged = Object.assign(arg0);
-  obj2.children = React5(BountyVideoEndAppStorePanelInner, {});
-  return React5(native.ThemeContextProvider, obj2);
-};
+export default tmp5;

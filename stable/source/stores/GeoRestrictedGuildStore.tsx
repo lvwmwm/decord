@@ -1,21 +1,23 @@
-// Module ID: 14043
-// Function ID: 14044
+// Module ID: 13291
+// Function ID: 13292
 // Name: GeoRestrictedGuildStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 585, 2]
 
-// Module 14043 (GeoRestrictedGuildStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 13291 (GeoRestrictedGuildStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import size from "module_2" /* 2 */;
 
 let found = [];
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class GeoRestrictedGuildStore extends Store {
+  getGeoRestrictedGuilds() {
+    return found;
+  }
 }
-GeoRestrictedGuildStore.prototype["getGeoRestrictedGuilds"] = function getGeoRestrictedGuilds() {
-  return found;
-};
+const prototype = GeoRestrictedGuildStore.prototype;
 GeoRestrictedGuildStore.displayName = "GeoRestrictedGuildStore";
-const geoRestrictedGuildStore = new GeoRestrictedGuildStore(DispatcherDefault, {
+let obj = {
   CONNECTION_OPEN: function handleConnectionOpen(geoRestrictedGuilds) {
     found = geoRestrictedGuilds.geoRestrictedGuilds;
   },
@@ -28,11 +30,13 @@ const geoRestrictedGuildStore = new GeoRestrictedGuildStore(DispatcherDefault, {
     }
   },
   GUILD_GEO_RESTRICTED: function handleGeoRestrictGuild(guildId) {
+    let closure_0 = guildId;
     found = found.filter((id) => id.id !== guildId.guildId);
-    found.push({ id: guildId.guildId, name: guildId.name, icon: guildId.icon, unavailable: true, geo_restricted: true });
+    const obj = { id: guildId.guildId, name: guildId.name, icon: guildId.icon, unavailable: true, geo_restricted: true };
+    found.push(obj);
   }
-});
-const size = fn(2);
+};
+const geoRestrictedGuildStore = new GeoRestrictedGuildStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/GeoRestrictedGuildStore.tsx");
 
 export default geoRestrictedGuildStore;

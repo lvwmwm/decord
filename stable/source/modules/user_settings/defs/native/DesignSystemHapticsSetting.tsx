@@ -1,28 +1,31 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 15397
+// Function ID: 15398
 // Name: DesignSystemHapticsSetting
-// Dependencies: [8265, 1074, 11754, 16120, 2]
+// Dependencies: [7421, 1086, 10874, 15398, 2]
 
-// Module 16119 (DesignSystemHapticsSetting)
-import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 15397 (DesignSystemHapticsSetting)
+import Constants from "Constants" /* 1086 */;
+import SettingsConstants from "SettingsConstants" /* 7421 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
     return "Haptics";
   },
-  parent: SettingsConstants.MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.DESIGN_SYSTEMS,
   screen: {
-    route: Constants.UserSettingsSections.DESIGN_SYSTEM_HAPTICS,
+    route: UserSettingsSections.DESIGN_SYSTEM_HAPTICS,
     getComponent() {
       return require("UserSettingsDesignSystemHaptics").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemHapticsSetting.tsx");
 
 export default route;

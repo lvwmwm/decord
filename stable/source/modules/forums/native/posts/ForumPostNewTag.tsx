@@ -1,25 +1,50 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 11373
+// Function ID: 11374
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 4788, 576, 1177, 2]
-// Exports: default
+// Dependencies: [19, 21, 4837, 588, 558, 576, 1189, 2]
 
-// Module 12297 (ForumPostNewTag)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+// Module 11373 (ForumPostNewTag)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { container: { paddingVertical: 1, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND } };
-let closure_3 = createStyles.createStyles(obj2);
-const size = fn(2);
+let containerStyle;
+
+let obj2;
+let tmp;
+const native = tmp(1189);
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { paddingVertical: 1, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
+let closure_3 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  containerStyle = containerStyle.containerStyle;
+  const tmp4 = closure_3();
+  if (cResult[0] === containerStyle) {
+    let tmp5;
+    if (cResult[1] === tmp4.container) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const items = [containerStyle, tmp4.container];
+  const tmp6 = jsx(native.NewTag, { containerStyle: items, variant: "text-xs/bold", color: "badge-text-brand" });
+  cResult[0] = containerStyle;
+  cResult[1] = tmp4.container;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((containerStyle) => {
+  containerStyle = containerStyle.containerStyle;
+  const items = [containerStyle, closure_3().container];
+  closure_3();
+  return jsx(native.NewTag, { containerStyle: items, variant: "text-xs/bold", color: "badge-text-brand" });
+});
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostNewTag.tsx");
 
-export default function ForumPostNewTag(containerStyle) {
-  const obj = { containerStyle: null, variant: "text-xs/bold", color: "badge-text-brand" };
-  const items = [containerStyle.containerStyle, closure_3().container];
-  obj.containerStyle = items;
-  return jsx(native.NewTag, { containerStyle: null, variant: "text-xs/bold", color: "badge-text-brand" });
-};
+export default tmp3;

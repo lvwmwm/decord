@@ -1,93 +1,465 @@
-// Module ID: 9387
-// Function ID: 9388
+// Module ID: 8539
+// Function ID: 8540
 // Name: TwoWayLinkPreConnect
-// Dependencies: [32, 5, 19, 17, 1074, 21, 3, 4788, 5655, 9388, 4483, 1364, 9383, 5656, 38, 573, 4784, 1115, 7400, 5218, 2]
-// Exports: TwoWayLinkPreConnect
+// Dependencies: [32, 5, 19, 17, 1086, 21, 3, 4837, 5719, 8540, 4528, 1370, 558, 576, 8535, 5720, 38, 585, 4833, 1127, 5282, 6546, 2]
 
-// Module 9387 (TwoWayLinkPreConnect)
+// Module 8539 (TwoWayLinkPreConnect)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5655 */;
-import TwoWayLinkType from "TwoWayLinkType" /* 9388 */;
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5719 */;
+import TwoWayLinkType from "TwoWayLinkType" /* 8540 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_13 = async function _authorizeLink(arg0, value) {
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+let platformType;
+
+let c10;
+let c9;
+let metroImportDefault;
+let metroRequire;
+function authorizeLink() {
+  return obj(...arguments);
+}
+let obj = function _authorizeLink() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let IN_APP;
+    let c3;
+    let c4;
+    let closure_1;
+    let closure_2;
+    let closure_0 = arg0;
+    const obj4 = { twoWayLinkType: TwoWayLinkType.TwoWayLinkType.MOBILE };
+    const authorize = ConnectedAccountsActionCreatorsDefault.authorize;
+    await authorize(closure_0, obj4);
+    const url = arg1.body.url;
+    const openURL = closure_130_1(closure_130_2[10]).openURL;
+    const tmp15 = closure_130_1(closure_130_2[10]);
+    const obj6 = closure_130_0(closure_130_2[11]);
+    const tmp16 = url;
+    if (obj6.isAndroid()) {
+      IN_APP = tmp20.CHROME;
     } else {
-      return { value: "HermesInternal", done: null };
+      IN_APP = tmp20.IN_APP;
     }
-  } else {
-    try {
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          closure_2 = tmp2;
-          closure_1 = tmp5;
-          let url;
-          const obj4 = { twoWayLinkType: TwoWayLinkType.TwoWayLinkType.MOBILE };
-          c3 = 1;
-          c4 = 1;
-          const obj8 = { value: ConnectedAccountsActionCreatorsDefault.authorize(closure_0, obj4), done: false };
-          return obj8;
-        }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } else {
-        url = value.body.url;
-        const obj5 = closure_130_1(closure_130_2[10]);
-        const tmp18 = url;
-        let tmp6 = closure_130_8;
-        if (obj6.isAndroid()) {
-          let IN_APP = tmp6.CHROME;
-        } else {
-          IN_APP = tmp6.IN_APP;
-        }
-        tmp6 = closure_1;
-        obj5.openURL(tmp18, IN_APP);
-        c4 = 3;
-        obj6 = closure_130_0(closure_130_2[11]);
-      }
-    } catch (tmp9) {
-      c4 = tmp;
-      throw tmp9;
-    }
-  }
+    openURL(tmp16, IN_APP);
+    return url;
+  });
+  return obj(...arguments);
 };
-get_ActivityIndicator = fn(17);
-({ Image: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const WebBrowserType = fn(1074).WebBrowserType;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-let closure_11 = new LoggerDefault("TwoWayLink");
-const createStyles = fn(4788);
+let _slicedToArray = _slicedToArray_mod;
+let _asyncToGenerator = _asyncToGenerator_mod;
+let react = react_mod;
+({ Image: metroRequire, View: metroImportDefault } = react_native);
+const WebBrowserType = Constants.WebBrowserType;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let tmp4 = new LoggerDefault("TwoWayLink");
+const logger = tmp4;
 let closure_12 = createStyles.createStyles({ image: { marginBottom: 32 }, redirect: { marginTop: 8 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkPreConnect.tsx");
-
-export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platformType) => {
+  let body;
+  let closure_5;
+  let footerButton;
+  let footerContainer;
+  let img;
+  let imgStyle;
+  let intl;
+  let items;
+  let items1;
+  let obj10;
+  let onNext;
+  let redirectDestination;
+  let ref;
+  let title;
+  let tmp23;
+  let tmp7;
+  const tmp = platformType;
+  obj = platformType(onNext[13]);
+  const cResult = obj.c(44);
+  platformType = platformType.platformType;
+  const onError = platformType.onError;
+  onNext = platformType.onNext;
+  ({ img, imgStyle, title, body, redirectDestination } = platformType);
+  const tmp4 = closure_12();
+  const obj2 = platformType(onNext[14]);
+  const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
+  const obj3 = react;
+  const tmp6 = _slicedToArray(react.useState(false), 2);
+  [tmp7, _slicedToArray] = tmp6;
+  _asyncToGenerator = react.useRef(undefined);
+  if (cResult[0] === onError) {
+    let tmp8;
+    if (cResult[1] === platformType) {
+      tmp8 = cResult[2];
+    }
+    if (cResult[3] === onNext) {
+      let tmp9;
+      if (cResult[4] === platformType) {
+        tmp9 = cResult[5];
+      }
+      react = tmp9;
+      class P {
+        constructor(callbackState) {
+          callbackState = callbackState.callbackState;
+          if (callbackState === ref.current) {
+            obj = { callbackCode: tmp, callbackState };
+            onNext(obj);
+          } else {
+            const _HermesInternal = HermesInternal;
+            logger.warn("" + platformType + " link: received mismatching callback state!");
+          }
+        }
+      }
+      const effect = obj3.useEffect(tmp10, tmp11);
+      const container = twoWayLinkStyles.container;
+      if (imgStyle == null) {
+        imgStyle = false;
+      }
+      if (cResult[9] === tmp4.image) {
+        let tmp14;
+        if (cResult[10] === imgStyle) {
+          tmp14 = cResult[11];
+        }
+        if (cResult[12] === img) {
+          let tmp15;
+          if (cResult[13] === tmp14) {
+            tmp15 = cResult[14];
+          }
+          if (cResult[15] === twoWayLinkStyles.title) {
+            let tmp18;
+            if (cResult[16] === title) {
+              tmp18 = cResult[17];
+            }
+            if (cResult[18] === body) {
+              let tmp20;
+              if (cResult[19] === twoWayLinkStyles.body) {
+                tmp20 = cResult[20];
+              }
+              if (cResult[21] === redirectDestination) {
+                let tmp22;
+                if (cResult[22] === tmp4.redirect) {
+                  tmp22 = cResult[23];
+                }
+                if (cResult[24] === twoWayLinkStyles.content) {
+                  if (cResult[25] === tmp20) {
+                    if (cResult[26] === tmp22) {
+                      if (cResult[27] === tmp15) {
+                        let tmp25;
+                        let tmp29;
+                        if (cResult[28] === tmp18) {
+                          tmp25 = cResult[29];
+                        }
+                        class P {
+                          constructor(callbackState) {
+                            callbackState = callbackState.callbackState;
+                            if (callbackState === ref.current) {
+                              obj = { callbackCode: tmp, callbackState };
+                              onNext(obj);
+                            } else {
+                              const _HermesInternal = HermesInternal;
+                              logger.warn("" + platformType + " link: received mismatching callback state!");
+                            }
+                          }
+                        }
+                        ({ footerContainer, footerButton } = twoWayLinkStyles);
+                        if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
+                          const string = tmp(tmp2[19]).intl.string;
+                          class P {
+                            constructor(callbackState) {
+                              callbackState = callbackState.callbackState;
+                              if (callbackState === ref.current) {
+                                obj = { callbackCode: tmp, callbackState };
+                                onNext(obj);
+                              } else {
+                                const _HermesInternal = HermesInternal;
+                                logger.warn("" + platformType + " link: received mismatching callback state!");
+                              }
+                            }
+                          }
+                          cResult[30] = tmp30;
+                          tmp29 = tmp30;
+                        } else {
+                          tmp29 = cResult[30];
+                        }
+                        if (cResult[31] === tmp8) {
+                          let tmp31;
+                          if (cResult[32] === tmp7) {
+                            tmp31 = cResult[33];
+                          }
+                          if (cResult[34] === twoWayLinkStyles.footerButton) {
+                            let tmp34;
+                            if (cResult[35] === tmp31) {
+                              tmp34 = cResult[36];
+                            }
+                            if (cResult[37] === twoWayLinkStyles.footerContainer) {
+                              let tmp37;
+                              if (cResult[38] === tmp34) {
+                                tmp37 = cResult[39];
+                              }
+                              if (cResult[40] === twoWayLinkStyles.container) {
+                                if (cResult[41] === tmp25) {
+                                  let tmp39;
+                                  if (cResult[42] === tmp37) {
+                                    tmp39 = cResult[43];
+                                  }
+                                  return tmp39;
+                                }
+                              }
+                              class P {
+                                constructor(callbackState) {
+                                  callbackState = callbackState.callbackState;
+                                  if (callbackState === ref.current) {
+                                    obj = { callbackCode: tmp, callbackState };
+                                    onNext(obj);
+                                  } else {
+                                    const _HermesInternal = HermesInternal;
+                                    logger.warn("" + platformType + " link: received mismatching callback state!");
+                                  }
+                                }
+                              }
+                              const obj4 = { style: container, children: items };
+                              items = [tmp25, tmp37];
+                              const tmp41 = closure_10(closure_7, obj4);
+                              cResult[40] = twoWayLinkStyles.container;
+                              cResult[41] = tmp25;
+                              cResult[42] = tmp37;
+                              cResult[43] = tmp41;
+                              tmp39 = tmp41;
+                            }
+                            class P {
+                              constructor(callbackState) {
+                                callbackState = callbackState.callbackState;
+                                if (callbackState === ref.current) {
+                                  obj = { callbackCode: tmp, callbackState };
+                                  onNext(obj);
+                                } else {
+                                  const _HermesInternal = HermesInternal;
+                                  logger.warn("" + platformType + " link: received mismatching callback state!");
+                                }
+                              }
+                            }
+                            const obj5 = { bottom: true, style: footerContainer, children: tmp34 };
+                            const tmp38 = closure_9(tmp(onNext[21]).SafeAreaPaddingView, obj5);
+                            cResult[37] = twoWayLinkStyles.footerContainer;
+                            cResult[38] = tmp34;
+                            cResult[39] = tmp38;
+                            tmp37 = tmp38;
+                          }
+                          class P {
+                            constructor(callbackState) {
+                              callbackState = callbackState.callbackState;
+                              if (callbackState === ref.current) {
+                                obj = { callbackCode: tmp, callbackState };
+                                onNext(obj);
+                              } else {
+                                const _HermesInternal = HermesInternal;
+                                logger.warn("" + platformType + " link: received mismatching callback state!");
+                              }
+                            }
+                          }
+                          let obj6 = { style: footerButton, children: tmp31 };
+                          const tmp36 = closure_9(closure_7, obj6);
+                          cResult[34] = twoWayLinkStyles.footerButton;
+                          cResult[35] = tmp31;
+                          cResult[36] = tmp36;
+                          tmp34 = tmp36;
+                        }
+                        const obj7 = { variant: "primary", size: "lg", text: tmp29, onPress: tmp8, loading: tmp7 };
+                        const tmp33 = closure_9(tmp(onNext[20]).Button, obj7);
+                        cResult[31] = tmp8;
+                        cResult[32] = tmp7;
+                        cResult[33] = tmp33;
+                        tmp31 = tmp33;
+                      }
+                    }
+                  }
+                }
+                class P {
+                  constructor(callbackState) {
+                    callbackState = callbackState.callbackState;
+                    if (callbackState === ref.current) {
+                      obj = { callbackCode: tmp, callbackState };
+                      onNext(obj);
+                    } else {
+                      const _HermesInternal = HermesInternal;
+                      logger.warn("" + platformType + " link: received mismatching callback state!");
+                    }
+                  }
+                }
+                const obj8 = { style: twoWayLinkStyles.content, children: items1 };
+                items1 = [tmp15, tmp18, tmp20, tmp22];
+                const tmp27 = closure_10(closure_7, obj8);
+                cResult[24] = twoWayLinkStyles.content;
+                cResult[25] = tmp20;
+                cResult[26] = tmp22;
+                cResult[27] = tmp15;
+                cResult[28] = tmp18;
+                cResult[29] = tmp27;
+                tmp25 = tmp27;
+              }
+              class P {
+                constructor(callbackState) {
+                  callbackState = callbackState.callbackState;
+                  if (callbackState === ref.current) {
+                    obj = { callbackCode: tmp, callbackState };
+                    onNext(obj);
+                  } else {
+                    const _HermesInternal = HermesInternal;
+                    logger.warn("" + platformType + " link: received mismatching callback state!");
+                  }
+                }
+              }
+              if (tmp23) {
+                const obj9 = { style: null, variant: "text-sm/medium", color: "text-default", children: intl.format(tmp(onNext[19]).t.XhlYYn, obj10) };
+                class P {
+                  constructor(callbackState) {
+                    callbackState = callbackState.callbackState;
+                    if (callbackState === ref.current) {
+                      obj = { callbackCode: tmp, callbackState };
+                      onNext(obj);
+                    } else {
+                      const _HermesInternal = HermesInternal;
+                      logger.warn("" + platformType + " link: received mismatching callback state!");
+                    }
+                  }
+                }
+                const Text = tmp(tmp2[18]).Text;
+                intl = tmp(tmp2[19]).intl;
+                obj10 = { redirectUrl: redirectDestination };
+                tmp23 = closure_9(Text, obj9);
+              }
+              cResult[21] = redirectDestination;
+              cResult[22] = tmp4.redirect;
+              cResult[23] = tmp23;
+              tmp22 = tmp23;
+            }
+            class P {
+              constructor(callbackState) {
+                callbackState = callbackState.callbackState;
+                if (callbackState === ref.current) {
+                  obj = { callbackCode: tmp, callbackState };
+                  onNext(obj);
+                } else {
+                  const _HermesInternal = HermesInternal;
+                  logger.warn("" + platformType + " link: received mismatching callback state!");
+                }
+              }
+            }
+            const obj11 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: body };
+            const tmp21 = closure_9(tmp(onNext[18]).Text, obj11);
+            cResult[18] = body;
+            cResult[19] = twoWayLinkStyles.body;
+            cResult[20] = tmp21;
+            tmp20 = tmp21;
+          }
+          class P {
+            constructor(callbackState) {
+              callbackState = callbackState.callbackState;
+              if (callbackState === ref.current) {
+                obj = { callbackCode: tmp, callbackState };
+                onNext(obj);
+              } else {
+                const _HermesInternal = HermesInternal;
+                logger.warn("" + platformType + " link: received mismatching callback state!");
+              }
+            }
+          }
+          const obj12 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header", children: title };
+          const tmp19 = closure_9(tmp(onNext[18]).Text, obj12);
+          cResult[15] = twoWayLinkStyles.title;
+          cResult[16] = title;
+          cResult[17] = tmp19;
+          tmp18 = tmp19;
+        }
+        class P {
+          constructor(callbackState) {
+            callbackState = callbackState.callbackState;
+            if (callbackState === ref.current) {
+              obj = { callbackCode: tmp, callbackState };
+              onNext(obj);
+            } else {
+              const _HermesInternal = HermesInternal;
+              logger.warn("" + platformType + " link: received mismatching callback state!");
+            }
+          }
+        }
+        const obj13 = { source: img, style: tmp14 };
+        const tmp17 = closure_9(closure_6, obj13);
+        cResult[12] = img;
+        cResult[13] = tmp14;
+        cResult[14] = tmp17;
+        tmp15 = tmp17;
+      }
+      const items2 = [tmp4.image, imgStyle];
+      cResult[9] = tmp4.image;
+      cResult[10] = imgStyle;
+      cResult[11] = items2;
+      tmp14 = items2;
+    }
+    class P {
+      constructor(callbackState) {
+        callbackState = callbackState.callbackState;
+        if (callbackState === ref.current) {
+          obj = { callbackCode: tmp, callbackState };
+          onNext(obj);
+        } else {
+          const _HermesInternal = HermesInternal;
+          logger.warn("" + platformType + " link: received mismatching callback state!");
+        }
+      }
+    }
+    cResult[3] = onNext;
+    cResult[4] = platformType;
+    cResult[5] = P;
+    tmp9 = P;
+  }
+  let closure_0 = _asyncToGenerator(async () => {
+    let c5;
+    let closure_1;
+    let closure_2;
+    let v0;
+    closure_0 = tmp4;
+    c3(true);
+    closure_0 = await closure_2_13(closure_0);
+    c3(false);
+    const obj6 = closure_0(onNext[15]);
+    const state = obj6.getCallbackParamsFromURL(closure_0).state;
+    onError(onNext[16])(null != state, "Authorize URL state query parameter must be present");
+    c4.current = state;
+    await "IconComponent";
+    tmp();
+  });
+  const fn = function() {
+    return closure_0(...arguments);
+  };
+  cResult[0] = onError;
+  cResult[1] = platformType;
+  cResult[2] = fn;
+  tmp8 = fn;
+}) : ((platformType) => {
+  let Button;
+  let body;
+  let c3;
+  let img;
+  let imgStyle;
+  let intl;
+  let intl2;
+  let items3;
+  let items4;
+  let items5;
+  let obj10;
+  let obj11;
+  let obj8;
+  let redirectDestination;
+  let ref;
+  let title;
+  let tmp6;
   platformType = platformType.platformType;
   const onError = platformType.onError;
   const onNext = platformType.onNext;
@@ -96,36 +468,34 @@ export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) 
   let callback1;
   ({ img, title, body } = platformType);
   const tmp = closure_12();
-  const twoWayLinkStyles = platformType(onNext[12]).useTwoWayLinkStyles();
-  let obj = platformType(onNext[12]);
-  [tmp6, c3] = callback1.useState(false);
-  asyncGeneratorStep = callback1.useRef(undefined);
+  const tmp3 = onNext;
+  obj = platformType(onNext[14]);
+  const twoWayLinkStyles = obj.useTwoWayLinkStyles();
+  [tmp6, c3] = _slicedToArray(callback1.useState(false), 2);
+  const tmp5 = _slicedToArray(callback1.useState(false), 2);
+  _asyncToGenerator = callback1.useRef(undefined);
   const items = [onError, platformType];
   const items1 = [platformType, onNext];
-  const callback = callback1.useCallback(asyncGeneratorStep(async () => {
+  const callback = callback1.useCallback(_asyncToGenerator(async () => {
+    let c4;
+    let c5;
+    let closure_0;
+    let closure_1;
+    let closure_2;
     v0(true);
-    closure_128_0 = await (function authorizeLink() {
-      const self = this;
-      const apply = closure_1_13.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })(platformType);
+    platformType = await closure_1_13(platformType);
     closure_129_3(false);
-    const state = platformType(tmp15[13]).getCallbackParamsFromURL(closure_128_0).state;
-    tmp3(tmp15[14])(null != state, "Authorize URL state query parameter must be present");
+    const obj6 = platformType(onNext[15]);
+    const state = obj6.getCallbackParamsFromURL(platformType).state;
+    tmp(onNext[16])(null != state, "Authorize URL state query parameter must be present");
     closure_129_4.current = state;
-    await "HermesInternal";
-    v0 = 0;
+    await "IconComponent";
     closure_129_1();
   }), items);
   callback1 = callback1.useCallback((callbackState) => {
     callbackState = callbackState.callbackState;
     if (callbackState === ref.current) {
-      const obj = { callbackCode: tmp, callbackState };
+      obj = { callbackCode: tmp, callbackState };
       onNext(obj);
     } else {
       const _HermesInternal = HermesInternal;
@@ -134,42 +504,46 @@ export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) 
   }, items1);
   const items2 = [callback1];
   const effect = callback1.useEffect(() => {
-    const subscription = DispatcherDefault.subscribe("USER_CONNECTIONS_LINK_CALLBACK", callback1);
+    obj = DispatcherDefault;
+    const subscription = obj.subscribe("USER_CONNECTIONS_LINK_CALLBACK", callback1);
     return () => {
-      onError(onNext[15]).unsubscribe("USER_CONNECTIONS_LINK_CALLBACK", callback1);
+      obj = onError(onNext[17]);
+      obj.unsubscribe("USER_CONNECTIONS_LINK_CALLBACK", callback1);
     };
   }, items2);
-  const obj2 = { style: twoWayLinkStyles.container, children: null };
-  const obj3 = { style: twoWayLinkStyles.content, children: null };
-  const obj4 = { source: img, style: null };
-  const items3 = [tmp.image, ];
+  const obj2 = { style: twoWayLinkStyles.container, children: items5 };
+  const obj3 = { style: twoWayLinkStyles.content, children: items4 };
+  const obj4 = { source: img, style: items3 };
+  items3 = [tmp.image, ];
+  const tmp13 = closure_6;
   if (imgStyle == null) {
     imgStyle = false;
   }
   items3[1] = imgStyle;
-  obj4.style = items3;
-  const items4 = [closure_9(closure_6, obj4), closure_9(platformType(onNext[16]).Text, { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header", children: title }), closure_9(platformType(onNext[16]).Text, { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: body }), ];
+  items4 = [tmp12(tmp13, obj4), , , ];
+  const obj5 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header", children: title };
+  items4[1] = closure_9(platformType(tmp3[18]).Text, obj5);
+  let obj6 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: body };
+  items4[2] = closure_9(platformType(tmp3[18]).Text, obj6);
   let tmp12Result = null != redirectDestination;
   if (tmp12Result) {
-    const obj7 = { style: tmp.redirect, variant: "text-sm/medium", color: "text-default", children: null };
-    const intl = tmp2(tmp3[17]).intl;
-    const obj8 = { redirectUrl: redirectDestination };
-    obj7.children = intl.format(tmp2(tmp3[17]).t.XhlYYn, obj8);
-    tmp12Result = tmp12(tmp2(tmp3[16]).Text, obj7);
+    const obj7 = { style: tmp.redirect, variant: "text-sm/medium", color: "text-default", children: intl.format(platformType(tmp3[19]).t.XhlYYn, obj8) };
+    const Text = tmp2(tmp3[18]).Text;
+    intl = tmp2(tmp3[19]).intl;
+    obj8 = { redirectUrl: redirectDestination };
+    tmp12Result = tmp12(Text, obj7);
   }
   items4[3] = tmp12Result;
-  obj3.children = items4;
-  const items5 = [closure_10(closure_7, obj3), ];
-  const obj9 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
-  const obj10 = { style: twoWayLinkStyles.footerButton, children: null };
-  const obj11 = { variant: "primary", size: "lg", text: null, onPress: null, loading: null };
-  const intl2 = tmp2(tmp3[17]).intl;
-  obj11.text = intl2.string(platformType(onNext[17]).t["3PatSz"]);
-  obj11.onPress = callback;
-  obj11.loading = tmp6;
-  obj10.children = closure_9(platformType(onNext[19]).Button, obj11);
-  obj9.children = closure_9(closure_7, obj10);
-  items5[1] = closure_9(platformType(onNext[18]).SafeAreaPaddingView, obj9);
-  obj2.children = items5;
+  items5 = [tmp10(tmp11, obj3), ];
+  const obj9 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: closure_9(closure_7, obj10) };
+  obj10 = { style: twoWayLinkStyles.footerButton, children: closure_9(Button, obj11) };
+  const SafeAreaPaddingView = tmp2(tmp3[21]).SafeAreaPaddingView;
+  obj11 = { variant: "primary", size: "lg", text: intl2.string(platformType(tmp3[19]).t["3PatSz"]), onPress: callback, loading: tmp6 };
+  Button = tmp2(tmp3[20]).Button;
+  intl2 = tmp2(tmp3[19]).intl;
+  items5[1] = closure_9(SafeAreaPaddingView, obj9);
   return closure_10(closure_7, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkPreConnect.tsx");
+
+export const TwoWayLinkPreConnect = tmp5;

@@ -1,18 +1,21 @@
-// Module ID: 7796
-// Function ID: 7797
+// Module ID: 6946
+// Function ID: 6947
 // Name: IntegrationPermissionUtils
-// Dependencies: [32, 1978, 7797, 2]
+// Dependencies: [32, 1985, 6947, 2]
 // Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions, toPermissionKey
 
-// Module 7796 (IntegrationPermissionUtils)
-import Server from "Server" /* 1978 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7797 */;
-import _slicedToArray from "module_32" /* 32 */;
+// Module 6946 (IntegrationPermissionUtils)
+import Server from "Server" /* 1985 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function commandPermissions(arg0, items) {
+  let tmp6;
+  let tmp7;
   const obj = {};
   const entries = Object.entries(arg0);
+  const tmp2 = entries[Symbol.iterator]();
   while (tmp2 !== undefined) {
     let tmp5 = _slicedToArray(tmp3, 2);
     [tmp6, tmp7] = tmp5;
@@ -24,7 +27,6 @@ function commandPermissions(arg0, items) {
   }
   return obj;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/integrations/permission/IntegrationPermissionUtils.tsx");
 
 export const commandName = function commandName(arg0, arg1) {

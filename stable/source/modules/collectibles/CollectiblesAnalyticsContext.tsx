@@ -1,29 +1,75 @@
-// Module ID: 9079
-// Function ID: 9080
+// Module ID: 8226
+// Function ID: 8227
 // Name: CollectiblesAnalyticsContext
-// Dependencies: [19, 21, 2]
-// Exports: CollectiblesAnalyticsProvider, useCollectiblesAnalyticsContext
+// Dependencies: [19, 21, 558, 576, 2]
 
-// Module 9079 (CollectiblesAnalyticsContext)
-import noop from "module_19" /* 19 */;
+// Module 8226 (CollectiblesAnalyticsContext)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-let context = noop.createContext(null);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/CollectiblesAnalyticsContext.tsx");
-
-export const CollectiblesAnalyticsContext = context;
-export const useCollectiblesAnalyticsContext = function useCollectiblesAnalyticsContext() {
-  return noop.useContext(context);
-};
-export const CollectiblesAnalyticsProvider = function CollectiblesAnalyticsProvider(children) {
-  const newValue = children.newValue;
-  context = undefined;
-  context = noop.useContext(context);
-  const items = [context, newValue];
-  return <context.Provider value={noop.useMemo(() => {
+const jsx = Fragment.jsx;
+let context = react.createContext(null);
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+const useCollectiblesAnalyticsContext = () => react.useContext(context);
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let newValue;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ newValue, children } = arg0);
+  if (typeof fn === "function") {
+    context = react.useContext(context);
+    if (cResult[0] === newValue) {
+      let tmp5;
+      if (cResult[1] === context) {
+        tmp5 = cResult[2];
+      }
+      if (cResult[3] === children) {
+        let tmp12;
+        if (cResult[4] === tmp5) {
+          tmp12 = cResult[5];
+        }
+        return tmp12;
+      }
+      const tmp14 = <tmp3.Provider value={tmp5}>{children}</tmp3.Provider>;
+      cResult[3] = children;
+      cResult[4] = tmp5;
+      cResult[5] = tmp14;
+      tmp12 = tmp14;
+    }
+    const obj3 = {};
     const merged = Object.assign(context);
     const merged1 = Object.assign(newValue);
-    return {};
-  }, items)}>{arg0.children}</context.Provider>;
-};
+    cResult[0] = newValue;
+    cResult[1] = context;
+    cResult[2] = obj3;
+    tmp5 = obj3;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : ((newValue) => {
+  newValue = newValue.newValue;
+  context = undefined;
+  if (typeof fn === "function") {
+    context = react.useContext(context);
+    const items = [context, newValue];
+    return <context.Provider value={react.useMemo(() => {
+      const obj = {};
+      const merged = Object.assign(context);
+      const merged1 = Object.assign(newValue);
+      return obj;
+    }, items)}>{tmp}</context.Provider>;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+const result1 = size.fileFinishedImporting("modules/collectibles/CollectiblesAnalyticsContext.tsx");
+
+export const CollectiblesAnalyticsContext = context;
+export { useCollectiblesAnalyticsContext };
+export const CollectiblesAnalyticsProvider = tmp4;

@@ -1,25 +1,43 @@
-// Module ID: 12734
-// Function ID: 12735
+// Module ID: 11838
+// Function ID: 11839
 // Name: ChatInputGuardQuarantineDM
-// Dependencies: [19, 12735, 21, 12731, 12736, 1115, 2]
+// Dependencies: [19, 11839, 21, 558, 576, 11835, 11840, 1127, 2]
 
-// Module 12734 (ChatInputGuardQuarantineDM)
-import util from "util" /* 1115 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12731 */;
-import ChatWarningIcon from "ChatWarningIcon" /* 12736 */;
-import noop from "module_19" /* 19 */;
+// Module 11838 (ChatInputGuardQuarantineDM)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1127 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 11835 */;
+import QuarantineConstants from "QuarantineConstants" /* 11839 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const QUARANTINE_APPEAL_LINK = fn(12735).QUARANTINE_APPEAL_LINK;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const QUARANTINE_APPEAL_LINK = QuarantineConstants.QUARANTINE_APPEAL_LINK;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    ChatInputGuardDefault;
+    const intl = tmp(1127).intl;
+    const intl2 = tmp(1127).intl;
+    const obj3 = { appealLink: QUARANTINE_APPEAL_LINK };
+    const tmp9 = <tmp7 type="simple-action" icon={null} message={intl.string(intl3.t.EouHwv)} subtext={intl2.format(intl3.t.PThBel, obj3)} />;
+    cResult[0] = tmp9;
+    first = tmp9;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  ChatInputGuardDefault;
+  const intl = intl3.intl;
+  const intl2 = intl3.intl;
+  const obj2 = { appealLink: QUARANTINE_APPEAL_LINK };
+  return <tmp type="simple-action" icon={null} message={intl.string(intl3.t.EouHwv)} subtext={intl2.format(intl3.t.PThBel, obj2)} />;
+}));
 const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardQuarantineDM.tsx");
 
-export default noop.memo(function ChatInputGuardQuarantineDM() {
-  const obj = { type: "simple-action", icon: jsx(ChatWarningIcon.ChatWarningIcon, {}), message: null, subtext: null };
-  const intl = util.intl;
-  obj.message = intl.string(util.t.EouHwv);
-  const intl2 = util.intl;
-  obj.subtext = intl2.format(util.t.PThBel, { appealLink: QUARANTINE_APPEAL_LINK });
-  return jsx(ChatInputGuardDefault, { type: "simple-action", icon: jsx(ChatWarningIcon.ChatWarningIcon, {}), message: null, subtext: null });
-});
+export default memoResult;

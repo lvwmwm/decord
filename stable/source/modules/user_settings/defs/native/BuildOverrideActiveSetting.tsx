@@ -1,66 +1,122 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 15340
+// Function ID: 15341
 // Name: BuildOverrideActiveSetting
-// Dependencies: [11717, 21, 14889, 504, 12072, 15123, 16060, 11754, 15428, 2]
+// Dependencies: [10837, 21, 14127, 558, 576, 11141, 504, 14366, 15334, 10874, 14494, 2]
 
-// Module 16066 (BuildOverrideActiveSetting)
-import initialize from "initialize" /* 504 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12072 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14889 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15123 */;
-import DevToolsContent from "DevToolsContent" /* 16060 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11717 */;
+// Module 15340 (BuildOverrideActiveSetting)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11141 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14127 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14366 */;
+import RefreshIcon from "RefreshIcon" /* 14494 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const SettingBuilders = fn(11754);
-const pressable = SettingBuilders.createPressable({
+let tmp;
+const get_initialized = tmp(504);
+const DevToolsContent = tmp(15334);
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let currentBuildOverride;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [BuildOverrideStore];
+    const fn = function l() {
+      const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+      let id;
+      if (overrides != null) {
+        const tmp4 = overrides[build_overrides_BuildOverrideUtils.DEVICE_FIELD];
+        if (tmp4 != null) {
+          id = tmp4.id;
+        }
+      }
+      return id;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let currentBuildOverride;
+  const items = [BuildOverrideStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => {
+    const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+    let id;
+    if (overrides != null) {
+      const tmp4 = overrides[build_overrides_BuildOverrideUtils.DEVICE_FIELD];
+      if (tmp4 != null) {
+        id = tmp4.id;
+      }
+    }
+    return id;
+  });
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = useIsStaffOrDeveloperSettingPredicate;
+  const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
+  const tmp2 = null != closure_4() && staffOrDeveloperSettingPredicate;
+  return tmp2;
+}) : (() => {
+  const obj = useIsStaffOrDeveloperSettingPredicate;
+  const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
+  const tmp2 = null != closure_4() && staffOrDeveloperSettingPredicate;
+  return tmp2;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  const tmp4 = closure_4();
+  if (cResult[0] !== tmp4) {
+    let tmp7;
+    if (null != tmp4) {
+      tmp7 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Build override: ", value: tmp4 });
+    }
+    cResult[0] = tmp4;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
+  const tmp = closure_4();
+  let tmp2;
+  if (null != tmp) {
+    tmp2 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Build override: ", value: tmp });
+  }
+  return tmp2;
+});
+let obj = {
   useTitle() {
     return "Build Override Active";
   },
   parent: null,
-  IconComponent: fn(15428).RefreshIcon,
-  useDescription: function useBuildOverrideActiveDescription() {
-    const items = [BuildOverrideStore];
-    const stateFromStores = initialize.useStateFromStores(items, () => {
-      const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
-      let id;
-      if (overrides != null) {
-        const tmp4 = overrides[build_overrides_BuildOverrideUtils.DEVICE_FIELD];
-        if (tmp4 != null) {
-          id = tmp4.id;
-        }
-      }
-      return id;
-    });
-    let tmp4;
-    if (null != stateFromStores) {
-      const obj2 = { label: "Build override: ", value: stateFromStores };
-      tmp4 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Build override: ", value: stateFromStores });
-    }
-    return tmp4;
-  },
-  usePredicate: function useHasBuildOverrideActive() {
-    const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
-    const items = [BuildOverrideStore];
-    return null != initialize.useStateFromStores(items, () => {
-      const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
-      let id;
-      if (overrides != null) {
-        const tmp4 = overrides[build_overrides_BuildOverrideUtils.DEVICE_FIELD];
-        if (tmp4 != null) {
-          id = tmp4.id;
-        }
-      }
-      return id;
-    }) && staffOrDeveloperSettingPredicate;
-  },
+  IconComponent: RefreshIcon.RefreshIcon,
+  useDescription: tmp3,
+  usePredicate: tmp2,
   onPress: function handleBuildOverrideActivePress() {
-    DevToolsNavigator.navigateToDevTools({ screenKey: "buildOverride" });
+    const obj = DevToolsNavigator;
+    obj.navigateToDevTools({ screenKey: "buildOverride" });
   },
   withArrow: true
-});
-const size = fn(2);
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/BuildOverrideActiveSetting.tsx");
 
 export default pressable;

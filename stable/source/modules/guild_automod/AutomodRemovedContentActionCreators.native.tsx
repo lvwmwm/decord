@@ -1,38 +1,43 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 17098
+// Function ID: 17099
 // Name: AutomodRemovedContentActionCreators
-// Dependencies: [2041, 4486, 1115, 4755, 17740, 1980, 2]
+// Dependencies: [2051, 4531, 1127, 4801, 17099, 1987, 2]
 // Exports: openRemovedContentModal, showRemovedMessageToast
 
-// Module 17739 (AutomodRemovedContentActionCreators)
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 17098 (AutomodRemovedContentActionCreators)
+import intl2 from "intl" /* 1127 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodRemovedContentActionCreators.native.tsx");
 
 export const showRemovedMessageToast = function showRemovedMessageToast(arg0, channel_id) {
+  let formatToPlainString;
+  let obj2;
+  let v9U3Wb3;
   const channel = ChannelStore.getChannel(channel_id);
   let name;
   if (channel != null) {
     name = channel.name;
   }
   if (null != name) {
-    const obj2 = { key: null, content: null };
     const _HermesInternal = HermesInternal;
-    obj2.key = "AUTOMOD_REMOVED_" + channel_id;
-    const intl = util.intl;
-    const obj3 = { channel: null };
+    const obj = { key: "AUTOMOD_REMOVED_" + channel_id, content: formatToPlainString(v9U3Wb3, obj2) };
+    const open = ToastActionCreatorsDefault.open;
+    ToastActionCreatorsDefault;
+    const intl = intl2.intl;
+    formatToPlainString = intl.formatToPlainString;
     const _HermesInternal2 = HermesInternal;
-    obj3.channel = "#" + name;
-    obj2.content = intl.formatToPlainString(util.t["9U3Wb3"], obj3);
-    ToastActionCreatorsDefault.open(obj2);
+    obj2 = { channel: "#" + name };
+    v9U3Wb3 = intl2.t["9U3Wb3"];
+    open(obj);
   }
 };
 export const openRemovedContentModal = function openRemovedContentModal(action) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17740, dependencyMap.paths), "AutomodRemovedContentSheet", { action });
+  const obj = ActionSheetActionCreatorsDefault;
+  const obj2 = { action };
+  obj.openLazy(asyncRequire(17099, dependencyMap.paths), "AutomodRemovedContentSheet", obj2);
 };

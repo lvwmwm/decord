@@ -1,49 +1,54 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 13267
+// Function ID: 13268
 // Name: HabitualDNDStore
-// Dependencies: [5528, 1074, 1091, 2019, 573, 504, 2]
+// Dependencies: [5592, 1086, 1103, 2027, 585, 504, 2]
 
-// Module 14019 (HabitualDNDStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
+// Module 13267 (HabitualDNDStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import DurationsDefault from "Durations" /* 1103 */;
+import UserSettings from "UserSettings" /* 2027 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const StatusTypes = fn(1074).StatusTypes;
-let sessionStartsWithDND = [];
+const f113766 = (item) => {
+  const timestamp = Date.now();
+  return item < timestamp - 3 * DurationsDefault.Millis.DAY;
+};
+const StatusTypes = Constants.StatusTypes;
+const hasOwnProperty = [];
 let c6 = false;
-const PersistedStore = initializeDefault.PersistedStore;
+const PersistedStore = get_initializedDefault.PersistedStore;
 class HabitualDNDStore extends PersistedStore {
+  initialize(sessionStartsWithDND) {
+    this.waitFor(SelfPresenceStore);
+    let isArray = null != sessionStartsWithDND;
+    if (isArray) {
+      const _Array = Array;
+      isArray = Array.isArray(sessionStartsWithDND.sessionStartsWithDND);
+    }
+    if (isArray) {
+      sessionStartsWithDND = sessionStartsWithDND.sessionStartsWithDND;
+    }
+  }
+  showNagBar() {
+    return c6;
+  }
+  getState() {
+    return { sessionStartsWithDND };
+  }
+  getTemp() {
+    let StatusExpiresAtSetting;
+    const obj = { x: StatusExpiresAtSetting.getSetting() };
+    StatusExpiresAtSetting = UserSettings.StatusExpiresAtSetting;
+    return obj;
+  }
 }
 const prototype = HabitualDNDStore.prototype;
-prototype["initialize"] = function initialize(sessionStartsWithDND) {
-  this.waitFor(SelfPresenceStore);
-  let isArray = null != sessionStartsWithDND;
-  if (isArray) {
-    const _Array = Array;
-    isArray = Array.isArray(sessionStartsWithDND.sessionStartsWithDND);
-  }
-  if (isArray) {
-    sessionStartsWithDND = sessionStartsWithDND.sessionStartsWithDND;
-  }
-};
-prototype["showNagBar"] = function showNagBar() {
-  return c6;
-};
-prototype["getState"] = function getState() {
-  return { sessionStartsWithDND };
-};
-prototype["getTemp"] = function getTemp() {
-  const obj = { x: null };
-  const StatusExpiresAtSetting = UserSettings.StatusExpiresAtSetting;
-  obj.x = StatusExpiresAtSetting.getSetting();
-  return obj;
-};
 HabitualDNDStore.displayName = "HabitualDNDStore";
 HabitualDNDStore.persistKey = "habitualDND";
-const habitualDNDStore = new HabitualDNDStore(DispatcherDefault, {
+let obj = {
   POST_CONNECTION_OPEN: function handleConnect() {
     if (SelfPresenceStore.getStatus() === StatusTypes.DND) {
       const StatusExpiresAtSetting = UserSettings.StatusExpiresAtSetting;
@@ -55,17 +60,12 @@ const habitualDNDStore = new HabitualDNDStore(DispatcherDefault, {
           return item > timestamp - 5 * DurationsDefault.Millis.DAY;
         });
         sessionStartsWithDND = found;
-        let someResult = found.length >= 4;
-        if (someResult) {
-          someResult = sessionStartsWithDND.some((item) => {
-            const timestamp = Date.now();
-            return item < timestamp - 3 * DurationsDefault.Millis.DAY;
-          });
-        }
+        const someResult = found.length >= 4 && sessionStartsWithDND.some(f113766);
         if (someResult) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
-            DispatcherDefault.dispatch({ type: "HABITUAL_DND_CLEAR" });
+            const obj = DispatcherDefault;
+            obj.dispatch({ type: "HABITUAL_DND_CLEAR" });
           }, 15 * DurationsDefault.Millis.SECOND);
         }
       }
@@ -73,18 +73,12 @@ const habitualDNDStore = new HabitualDNDStore(DispatcherDefault, {
     sessionStartsWithDND = [];
   },
   HABITUAL_DND_CLEAR: function handleDNDClear() {
-    let someResult = sessionStartsWithDND.length >= 4;
-    if (someResult) {
-      someResult = sessionStartsWithDND.some((item) => {
-        const timestamp = Date.now();
-        return item < timestamp - 3 * DurationsDefault.Millis.DAY;
-      });
-    }
-    c6 = someResult;
+    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f113766);
+    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f113766);
     sessionStartsWithDND = [];
   }
-});
-const size = fn(2);
+};
+const habitualDNDStore = new HabitualDNDStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/notifications/HabitualDNDStore.tsx");
 
 export default habitualDNDStore;

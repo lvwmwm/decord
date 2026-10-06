@@ -6,17 +6,19 @@
 // Module 142
 import _mod131 from "module_131" /* 131 */;
 
-require = arg1;
-const dependencyMap = arg6;
+let closure_2;
+
 
 export const getElementSibling = function getElementSibling(parentNode, next) {
   parentNode = parentNode.parentNode;
   if (null == parentNode) {
     return null;
   } else {
-    const childNodes = _mod131.getChildNodes(parentNode);
+    const obj = _mod131;
+    const childNodes = obj.getChildNodes(parentNode);
     const index = childNodes.indexOf(parentNode);
     let num = -1;
+    const tmp9 = require;
     if (-1 === index) {
       return null;
     } else {
@@ -49,6 +51,5 @@ export const getElementSibling = function getElementSibling(parentNode, next) {
       }
       return tmp8;
     }
-    tmp9 = require;
   }
 };

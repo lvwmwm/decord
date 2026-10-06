@@ -1,54 +1,178 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 12553
+// Function ID: 12554
 // Name: useCanDM
-// Dependencies: [7926, 4428, 502, 2105, 4437, 2019, 504, 2]
-// Exports: canDm, default
+// Dependencies: [7075, 4473, 502, 2111, 4482, 2027, 558, 576, 504, 2]
+// Exports: canDm
 
-// Module 13444 (useCanDM)
-import UserSettings from "UserSettings" /* 2019 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7926 */;
-import LurkingStore from "LurkingStore" /* 4428 */;
+// Module 12553 (useCanDM)
+import UserSettings from "UserSettings" /* 2027 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7075 */;
+import LurkingStore from "LurkingStore" /* 4473 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_3, closure_4, dependencyMap;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
-
-export default function useCanDM(arg0, arg1) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  let setting;
+  let stateFromStores1;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  _require = arg0;
+  dependencyMap = arg1;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(12);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [setting];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class F {
+      constructor() {
+        return AuthenticationStore.getId() === closure_0;
+      }
+    }
+    cResult[1] = arg0;
+    cResult[2] = F;
+    tmp6 = F;
+  } else {
+    class F {
+      constructor() {
+        return AuthenticationStore.getId() === closure_0;
+      }
+    }
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class F {
+      constructor() {
+        return AuthenticationStore.getId() === closure_0;
+      }
+    }
+    const items1 = [stateFromStores1];
+    cResult[3] = items1;
+    tmp8 = items1;
+  } else {
+    class F {
+      constructor() {
+        return AuthenticationStore.getId() === closure_0;
+      }
+    }
+  }
+  if (cResult[4] !== arg1) {
+    class I {
+      constructor() {
+        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
+        return isLurkingResult;
+      }
+    }
+    cResult[4] = arg1;
+    cResult[5] = I;
+    tmp9 = I;
+  } else {
+    class I {
+      constructor() {
+        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
+        return isLurkingResult;
+      }
+    }
+  }
+  const tmpResult2 = tmp(504);
+  stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
+  const RestrictedGuildIds = tmp(2027).RestrictedGuildIds;
+  setting = RestrictedGuildIds.useSetting();
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
+        return isLurkingResult;
+      }
+    }
+    const items2 = [RelationshipStore, GuildMemberStore, stateFromStores];
+    cResult[6] = items2;
+  } else {
+    class I {
+      constructor() {
+        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
+        return isLurkingResult;
+      }
+    }
+  }
+  if (cResult[7] === stateFromStores1) {
+    class I {
+      constructor() {
+        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
+        return isLurkingResult;
+      }
+    }
+  }
+  const fn = function b() {
+    let tmp = !stateFromStores && !stateFromStores1;
+    if (tmp) {
+      let isFriendResult = RelationshipStore.isFriend(closure_0);
+      const tmp4 = closure_0;
+      if (!isFriendResult) {
+        const memberOfResult = GuildMemberStore.memberOf(tmp4);
+        isFriendResult = null != memberOfResult.find((item) => !setting.includes(item));
+      }
+      tmp = isFriendResult;
+    }
+    if (!tmp) {
+      setting = GameRelationshipStore.getGameFriendsForUser(closure_0).length > 0;
+      if (setting) {
+        const AllowGameFriendDmsInDiscord = UserSettings.AllowGameFriendDmsInDiscord;
+        setting = AllowGameFriendDmsInDiscord.getSetting();
+      }
+      tmp = setting;
+    }
+    return tmp;
+  };
+  cResult[7] = stateFromStores1;
+  cResult[8] = stateFromStores;
+  cResult[9] = setting;
+  cResult[10] = arg0;
+  cResult[11] = fn;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
   _require = arg0;
   dependencyMap = arg1;
   const items = [closure_4];
-  closure_2 = require("initialize").useStateFromStores(items, () => AuthenticationStore.getId() === closure_0);
-  const obj = require("initialize");
+  const obj = require("get initialized");
+  let closure_2 = obj.useStateFromStores(items, () => AuthenticationStore.getId() === closure_0);
   const items1 = [closure_3];
-  closure_3 = require("initialize").useStateFromStores(items1, () => {
-    let isLurkingResult = null != closure_1;
-    if (isLurkingResult) {
-      isLurkingResult = LurkingStore.isLurking(tmp);
-    }
+  const obj2 = require("get initialized");
+  closure_3 = obj2.useStateFromStores(items1, () => {
+    const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
     return isLurkingResult;
   });
   const RestrictedGuildIds = require("UserSettings").RestrictedGuildIds;
   closure_4 = RestrictedGuildIds.useSetting();
-  const obj2 = require("initialize");
   const items2 = [RelationshipStore, GuildMemberStore, closure_2];
-  return require("initialize").useStateFromStores(items2, () => {
-    let tmp = !closure_2;
-    if (!closure_2) {
-      tmp = !closure_3;
-    }
+  const obj3 = require("get initialized");
+  return obj3.useStateFromStores(items2, () => {
+    let tmp = !closure_2 && !closure_3;
     if (tmp) {
       let isFriendResult = RelationshipStore.isFriend(closure_0);
+      const tmp4 = closure_0;
       if (!isFriendResult) {
-        isFriendResult = null != GuildMemberStore.memberOf(tmp4).find((item) => !closure_1_4.includes(item));
         const memberOfResult = GuildMemberStore.memberOf(tmp4);
+        isFriendResult = null != memberOfResult.find((item) => !closure_1_4.includes(item));
       }
       tmp = isFriendResult;
-      tmp4 = closure_0;
     }
     if (!tmp) {
       let setting = GameRelationshipStore.getGameFriendsForUser(closure_0).length > 0;
@@ -60,24 +184,25 @@ export default function useCanDM(arg0, arg1) {
     }
     return tmp;
   });
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
+
+export default tmp2;
 export const canDm = function canDm(userId, guildId) {
   let isLurkingResult = null != guildId;
   const id = AuthenticationStore.getId();
   if (isLurkingResult) {
     isLurkingResult = LurkingStore.isLurking(guildId);
   }
+  const tmp4 = id === userId;
   const RestrictedGuildIds = UserSettings.RestrictedGuildIds;
   const setting2 = RestrictedGuildIds.getSetting();
   let isFriendResult = RelationshipStore.isFriend(userId);
-  let tmp8 = !tmp4;
-  if (id !== userId) {
-    tmp8 = !isLurkingResult;
-  }
+  let tmp8 = !tmp4 && !isLurkingResult;
   if (tmp8) {
     if (!isFriendResult) {
-      isFriendResult = null != GuildMemberStore.memberOf(userId).find((item) => !closure_0.includes(item));
       const memberOfResult = GuildMemberStore.memberOf(userId);
+      isFriendResult = null != memberOfResult.find((item) => !closure_0.includes(item));
     }
     tmp8 = isFriendResult;
   }

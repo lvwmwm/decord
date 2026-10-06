@@ -1,41 +1,140 @@
-// Module ID: 7314
-// Function ID: 7315
+// Module ID: 6458
+// Function ID: 6459
 // Name: PostponeRender
-// Dependencies: [32, 19, 17, 21, 4788, 576, 5235, 7315, 7316, 5827, 2]
-// Exports: PostponeRender
+// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 6459, 5297, 6460, 6462, 2]
 
-// Module 7314 (PostponeRender)
-import nativeDefault from "native" /* 576 */;
-import useMountEffectDefault from "useMountEffect" /* 5235 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5827 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7315 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 6458 (PostponeRender)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import useMountEffectDefault from "useMountEffect" /* 5297 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6459 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-const obj2 = { view: null };
-const obj3 = {};
+let dependencyMap, importDefault;
+
+let StyleSheet;
+let hasOwnProperty;
+let obj2;
+let tmp8;
+const KeyboardAwareViewDefault = tmp8(6462);
+({ View: hasOwnProperty, StyleSheet } = react_native);
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { view: obj2 };
+createStyles = createStyles.createStyles;
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3.backgroundColor = nativeDefault.colors.BACKGROUND_BASE_LOWER;
-obj2.view = obj3;
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/Navigator/native/PostponeRender.native.tsx");
-
-export const PostponeRender = function PostponeRender(children) {
+let closure_7 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let closure_1;
+  let closure_2;
+  let first;
+  let ignoreKeyboard;
+  let postpone;
+  let tmp7;
+  let viewStyle;
+  let tmp = first;
+  let obj = first(576);
+  const cResult = obj.c(12);
+  ({ viewStyle, children } = arg0);
+  ({ postpone, ignoreKeyboard } = arg0);
+  const tmp4 = closure_7();
+  [first, importDefault] = react.useState(postpone);
+  dependencyMap = react.useRef(undefined);
+  if (cResult[0] !== first) {
+    const fn = function s() {
+      const tmp = first;
+      if (tmp) {
+        const obj = RunAfterInteractionsUtils;
+        ref.current = obj.runAfterInteractions(() => {
+          closure_1_1(false);
+        });
+        return () => {
+          const current = ref.current;
+          if (current != null) {
+            current.cancel();
+          }
+        };
+      }
+    };
+    cResult[0] = first;
+    cResult[1] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[1];
+  }
+  useMountEffectDefault(tmp7);
+  if (cResult[2] === children) {
+    let tmp10;
+    let tmp8Result;
+    if (cResult[3] === first) {
+      tmp10 = cResult[4];
+    }
+    if (ignoreKeyboard) {
+      tmp8Result = closure_5;
+    } else {
+      tmp8Result = KeyboardAwareViewDefault;
+    }
+    if (cResult[5] === tmp4.view) {
+      let tmp14;
+      if (cResult[6] === viewStyle) {
+        tmp14 = cResult[7];
+      }
+      if (cResult[8] === tmp8Result) {
+        if (cResult[9] === tmp10) {
+          let tmp15;
+          if (cResult[10] === tmp14) {
+            tmp15 = cResult[11];
+          }
+          return tmp15;
+        }
+      }
+      const tmp17 = <tmp8Result style={tmp14}>{tmp10}</tmp8Result>;
+      cResult[8] = tmp8Result;
+      cResult[9] = tmp10;
+      cResult[10] = tmp14;
+      cResult[11] = tmp17;
+      tmp15 = tmp17;
+    }
+    const items = [tmp4.view, viewStyle];
+    cResult[5] = tmp4.view;
+    cResult[6] = viewStyle;
+    cResult[7] = items;
+    tmp14 = items;
+  }
+  let tmp11 = children;
+  if (first) {
+    tmp11 = jsx(tmp(6460).SceneLoadingIndicator, {});
+  }
+  cResult[2] = children;
+  cResult[3] = first;
+  cResult[4] = tmp11;
+  tmp10 = tmp11;
+}) : ((children) => {
+  let closure_1;
+  let closure_2;
+  let first;
+  let ignoreKeyboard;
+  let postpone;
+  let viewStyle;
   children = children.children;
   first = undefined;
   importDefault = undefined;
   ({ postpone, ignoreKeyboard, viewStyle } = children);
-  [first, importDefault] = noop.useState(postpone);
-  dependencyMap = noop.useRef(undefined);
+  let tmp = closure_7();
+  [first, importDefault] = react.useState(postpone);
+  dependencyMap = react.useRef(undefined);
   useMountEffectDefault(() => {
-    if (first) {
-      ref.current = RunAfterInteractionsUtils.runAfterInteractions(() => {
+    const tmp = first;
+    if (tmp) {
+      const obj = RunAfterInteractionsUtils;
+      ref.current = obj.runAfterInteractions(() => {
         closure_1_1(false);
       });
       return () => {
@@ -47,15 +146,14 @@ export const PostponeRender = function PostponeRender(children) {
     }
   });
   if (first) {
-    children = jsx(first(7316).SceneLoadingIndicator, {});
+    children = jsx(first(6460).SceneLoadingIndicator, {});
   }
-  if (ignoreKeyboard) {
-    let tmp4Result = closure_5;
-  } else {
-    tmp4Result = KeyboardAwareViewDefault;
+  if (!ignoreKeyboard) {
+    KeyboardAwareViewDefault;
   }
-  const obj = { style: null, children };
-  const items = [closure_7().view, viewStyle];
-  obj.style = items;
-  return <tmp4Result style={null}>{children}</tmp4Result>;
-};
+  const items = [tmp.view, viewStyle];
+  return <tmp4Result style={items}>{children}</tmp4Result>;
+});
+const result = size.fileFinishedImporting("design/components/Navigator/native/PostponeRender.native.tsx");
+
+export const PostponeRender = tmp5;

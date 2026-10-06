@@ -1,49 +1,57 @@
-// Module ID: 5795
-// Function ID: 5796
+// Module ID: 5859
+// Function ID: 5860
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4772, 4610, 1074, 504, 5796, 2]
+// Dependencies: [5, 32, 19, 4818, 4658, 1086, 504, 5860, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 5795 (useCanReapplyToRejectedMemberVerificationApplication)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import InviteStore from "InviteStore" /* 4772 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4610 */;
+// Module 5859 (useCanReapplyToRejectedMemberVerificationApplication)
+import Constants from "Constants" /* 1086 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import InviteStore from "InviteStore" /* 4818 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4658 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c2, c5, closure_0, closure_3, inviteKeyForGuildId;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
+const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx");
 
 export const useCanReapplyToRejectedMemberVerificationApplication = function useCanReapplyToRejectedMemberVerificationApplication(guildId) {
+  let callback;
+  let closure_1;
+  let isLoading;
   _require = guildId;
-  const isLoading = _slicedToArray(noop.useState(true), 2);
-  closure_1 = isLoading[1];
+  [isLoading, closure_1] = react.useState(true);
+  let obj = require("get initialized");
   const items = [UserGuildJoinRequestStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let joinRequestGuild;
-    if (null != closure_0) {
+    if (null != guildId) {
       joinRequestGuild = UserGuildJoinRequestStore.getJoinRequestGuild(tmp);
     }
     return joinRequestGuild;
   });
-  _require = asyncGeneratorStep(async (arg0, value) => {
+  const useCallback = react.useCallback;
+  _require = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    closure_0 = arg0;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
+      let c4;
       try {
         c5 = 2;
         if (0 === c2) {
@@ -57,56 +65,50 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
           } else {
             c4 = 1;
             inviteKeyForGuildId = inviteKeyForGuildId.getInviteKeyForGuildId(closure_0);
+            const tmp25 = closure_0;
             if (null != inviteKeyForGuildId) {
               c2 = 2;
               c5 = 1;
-              const obj5 = { value: tmp3(callback[7]).fetchVerificationForm(tmp29, inviteKeyForGuildId), done: false };
+              const obj5 = { value: obj2.fetchVerificationForm(tmp25, inviteKeyForGuildId), done: false };
+              obj2 = closure_2_1(callback[7]);
               return obj5;
             }
-            tmp29 = closure_0;
           }
-        } else if (1 === tmp7) {
+        } else if (1 === tmp4) {
           c4 = 0;
-          tmp3(false);
+          tmp(false);
           throw closure_3;
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
         } else if (arg0 === 2) {
           c4 = 0;
-          tmp3(false);
+          tmp(false);
           c5 = 3;
           const obj = { value, done: true };
           return obj;
         }
         c4 = 0;
-        tmp3(false);
+        tmp(false);
         c5 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp18) {
-        closure_3 = tmp18;
-        if (tmp4 === c4) {
-          c5 = tmp2;
-          throw tmp18;
+        return { value: "IconComponent", done: null };
+      } catch (tmp15) {
+        closure_3 = tmp15;
+        if (0 === c4) {
+          c5 = 3;
+          throw tmp15;
         } else {
-          c2 = tmp;
+          c2 = 1;
         }
       }
     }
   });
-  callback = noop.useCallback(function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+  callback = useCallback(function() {
+    return closure_0(...arguments);
   }, []);
   const items1 = [guildId, callback];
-  const effect = noop.useEffect(() => {
-    if (null == closure_0) {
+  const effect = react.useEffect(() => {
+    if (null == guildId) {
       closure_1(false);
     } else {
       closure_1(true);
@@ -118,5 +120,5 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
     const features = stateFromStores.features;
     canReapply = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
   }
-  return { canReapply, isLoading: isLoading[0] };
+  return { canReapply, isLoading };
 };

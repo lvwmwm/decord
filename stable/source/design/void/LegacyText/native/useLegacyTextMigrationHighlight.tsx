@@ -1,26 +1,55 @@
-// Module ID: 8923
-// Function ID: 8924
+// Module ID: 8077
+// Function ID: 8078
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [4787, 4788, 576, 504, 2]
-// Exports: useLegacyTextMigrationHighlight
+// Dependencies: [4836, 4837, 588, 558, 576, 504, 2]
 
-// Module 8923 (useLegacyTextMigrationHighlight)
-import nativeDefault from "native" /* 576 */;
-import DevSettingsStore from "DevSettingsStore" /* 4787 */;
+// Module 8077 (useLegacyTextMigrationHighlight)
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import DevSettingsStore from "DevSettingsStore" /* 4836 */;
+import createStyles from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const createStyles = fn(4788);
-const obj2 = { highlight: { borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER } };
-let closure_3 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("design/void/LegacyText/native/useLegacyTextMigrationHighlight.tsx");
-
-export const useLegacyTextMigrationHighlight = function useLegacyTextMigrationHighlight() {
-  const tmp = closure_3();
+let tmp;
+const get_initialized = tmp(504);
+let obj = { highlight: { borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER } };
+({ borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER });
+let closure_3 = createStyles.createStyles(obj);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  let tmp6;
+  const obj = react;
+  const cResult = obj.c(2);
+  const tmp4 = closure_3();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [DevSettingsStore];
+    const fn = function n() {
+      return DevSettingsStore.get("highlight_mana_text");
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  let highlight = null;
+  const tmpResult = get_initialized;
+  if (tmpResult.useStateFromStores(tmp5, tmp6)) {
+    highlight = tmp4.highlight;
+  }
+  return highlight;
+}) : (() => {
   const items = [DevSettingsStore];
   let highlight = null;
+  const tmp = closure_3();
+  const obj = get_initialized;
   if (obj.useStateFromStores(items, () => DevSettingsStore.get("highlight_mana_text"))) {
     highlight = tmp.highlight;
   }
   return highlight;
-};
+});
+const result = size.fileFinishedImporting("design/void/LegacyText/native/useLegacyTextMigrationHighlight.tsx");
+
+export const useLegacyTextMigrationHighlight = tmp2;

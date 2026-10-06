@@ -1,25 +1,44 @@
-// Module ID: 16696
-// Function ID: 16697
+// Module ID: 15991
+// Function ID: 15992
 // Name: HomeDrawerAddServerRow
-// Dependencies: [19, 21, 16648, 4784, 1115, 2]
-// Exports: HomeDrawerAddServerRowExpandedChildren
+// Dependencies: [19, 21, 558, 576, 15943, 4833, 1127, 2]
 
-// Module 16696 (HomeDrawerAddServerRow)
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 16648 */;
-import noop from "module_19" /* 19 */;
+// Module 15991 (HomeDrawerAddServerRow)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1127 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 15943 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const HomeDrawerSharedItem = tmp(15943).HomeDrawerSharedItem;
+    ({ variant: "text-md/medium", color: "text-default", children: intl.string(intl2.t.l5WIbf) });
+    const Text = tmp(4833).Text;
+    intl = tmp(1127).intl;
+    const tmp6 = <HomeDrawerSharedItem title={null} subtitle={null} />;
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  let intl;
+  const HomeDrawerSharedItem = HomeDrawerShared.HomeDrawerSharedItem;
+  ({ variant: "text-md/medium", color: "text-default", children: intl.string(intl2.t.l5WIbf) });
+  const Text = Text_Text.Text;
+  intl = intl2.intl;
+  return <HomeDrawerSharedItem title={null} subtitle={null} />;
+});
 const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerAddServerRow.tsx");
 
-export const HomeDrawerAddServerRowExpandedChildren = function HomeDrawerAddServerRowExpandedChildren() {
-  const obj = { title: null, subtitle: null };
-  const obj2 = { variant: "text-md/medium", color: "text-default", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t.l5WIbf);
-  obj.title = jsx(Text_Text.Text, { variant: "text-md/medium", color: "text-default", children: null });
-  return jsx(HomeDrawerShared.HomeDrawerSharedItem, { title: null, subtitle: null });
-};
+export const HomeDrawerAddServerRowExpandedChildren = tmp3;

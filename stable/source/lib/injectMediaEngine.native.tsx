@@ -1,15 +1,15 @@
-// Module ID: 1993
-// Function ID: 1994
+// Module ID: 2000
+// Function ID: 2001
 // Name: injectMediaEngine
-// Dependencies: [1994, 1995, 2]
+// Dependencies: [2001, 2002, 2]
 
-// Module 1993 (injectMediaEngine)
-import inject from "inject" /* 1994 */;
+// Module 2000 (injectMediaEngine)
+import inject from "inject" /* 2001 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-inject.inject({
+const obj = {
   supported() {
     return true;
   },
@@ -26,5 +26,6 @@ inject.inject({
   getOpenH264LibraryPath() {
 
   }
-});
+};
+inject.inject(obj);
 const result = size.fileFinishedImporting("lib/injectMediaEngine.native.tsx");

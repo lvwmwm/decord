@@ -1,10 +1,11 @@
-// Module ID: 17029
-// Function ID: 17030
+// Module ID: 16342
+// Function ID: 16343
 // Name: VibegrationsMessageTime
-// Dependencies: [2]
+// Dependencies: [4515, 2]
 // Exports: describeMessageTime
 
-// Module 17029 (VibegrationsMessageTime)
+// Module 16342 (VibegrationsMessageTime)
+import DateUtils from "DateUtils" /* 4515 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsMessageTime.tsx");
@@ -18,11 +19,15 @@ export const describeMessageTime = function describeMessageTime(at) {
   if (isFiniteResult) {
     isFiniteResult = at > 0;
   }
-  let toLocaleTimeStringResult = null;
+  let calendarFormatResult = null;
   if (isFiniteResult) {
     const _Date = Date;
+    const self = this;
+    const self2 = this;
+    const calendarFormat = DateUtils.calendarFormat;
+    DateUtils;
     const date = new Date(at);
-    toLocaleTimeStringResult = date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
+    calendarFormatResult = calendarFormat(date, true);
   }
-  return toLocaleTimeStringResult;
+  return calendarFormatResult;
 };

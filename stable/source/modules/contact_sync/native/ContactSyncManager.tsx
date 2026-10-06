@@ -1,54 +1,118 @@
-// Module ID: 12963
-// Function ID: 12964
+// Module ID: 12071
+// Function ID: 12072
 // Name: ContactSyncManager
-// Dependencies: [5, 5530, 1372, 12961, 12960, 1074, 510, 12962, 7395, 7315, 2]
+// Dependencies: [5, 5594, 1378, 12069, 12068, 1086, 510, 12070, 6540, 6459, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 12963 (ContactSyncManager)
+// Module 12071 (ContactSyncManager)
 import Storage3 from "Storage" /* 510 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12962 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
-import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import Constants from "Constants" /* 1086 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12068 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12070 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
+import UserStore from "UserStore" /* 1378 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12069 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_11 = async function _requestAndSyncContacts(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp7 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
+let c5, c6, localAccount, set;
+
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj = function _requestAndSyncContacts() {
+  let state;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      if (0 !== c5) {
-        if (1 === tmp8) {
+      let c4;
+      try {
+        let timestamp;
+        let names;
+        let payload;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_2 = tmp;
+            timestamp = undefined;
+            set = undefined;
+            names = undefined;
+            payload = undefined;
+            const Storage2 = Storage3.Storage;
+            value = Storage2.get(LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY, 0);
+            let c0 = value;
+            if (value == null) {
+              c0 = 0;
+            }
+            const _Date = Date;
+            timestamp = Date.now();
+            c4 = 1;
+            if (c0 + 86400000 <= timestamp) {
+              currentUser = currentUser.getCurrentUser();
+              let phone;
+              if (currentUser != null) {
+                phone = currentUser.phone;
+              }
+              if (null == phone) {
+                c4 = 0;
+                c6 = 3;
+                return { value: "IconComponent", done: null };
+              } else {
+                set = ContactSyncUtils;
+                c5 = 2;
+                c6 = 1;
+                const obj4 = { value: set.getContacts(phone, state.getState().storedContacts), done: false };
+                return obj4;
+              }
+            } else {
+              c4 = 0;
+            }
+          }
+        } else if (1 === c5) {
           c4 = 0;
           closure_130_6();
-          c6 = 3;
         } else {
-          if (2 === tmp8) {
+          if (2 === c5) {
             if (arg0 === 1) {
               c6 = 3;
               throw value;
             } else if (arg0 === 2) {
               c4 = 0;
               c6 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              const obj5 = { value, done: true };
+              return obj5;
             } else {
-              closure_129_1 = value;
-              let names = closure_129_1.names;
-              let payload = closure_129_1.payload;
+              set = value;
+              names = set.names;
+              payload = set.payload;
+              set = closure_130_5;
               closure_130_5(names);
+              if (null != payload) {
+                set = closure_130_0(closure_130_1[7]);
+                c5 = 3;
+                c6 = 1;
+                const obj6 = { value: set.uploadContacts(payload, true), done: false };
+                return obj6;
+              }
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -56,121 +120,74 @@ let closure_11 = async function _requestAndSyncContacts(arg0, value) {
           } else if (arg0 === 2) {
             c4 = 0;
             c6 = 3;
-            const obj = { value, done: true };
+            obj = { value, done: true };
             return obj;
           }
           const Storage = closure_130_0(closure_130_1[6]).Storage;
-          const result = Storage.set(closure_130_10, closure_129_0);
-          c4 = 0;
+          set = Storage.set;
+          const result = set(closure_130_10, timestamp);
         }
-        c5 = 3;
-        c6 = 1;
-        const obj6 = { value: closure_130_0(closure_130_1[7]).uploadContacts(payload, true), done: false };
-        return obj6;
-      }
-      if (arg0 === 1) {
         c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c6 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
-      } else {
-        closure_2 = tmp3;
-        closure_1 = tmp5;
-        closure_129_0 = undefined;
-        closure_129_1 = undefined;
-        names = undefined;
-        payload = undefined;
-        const Storage2 = Storage3.Storage;
-        value = Storage2.get(LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY, 0);
-        c0 = value;
-        if (value == null) {
-          c0 = 0;
+        return { value: "IconComponent", done: null };
+      } catch (tmp29) {
+        let closure_3 = tmp29;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp29;
+        } else {
+          c5 = 1;
         }
-        const _Date = Date;
-        const timestamp = Date.now();
-        closure_129_0 = timestamp;
-        c4 = 1;
-        if (c0 + 86400000 <= timestamp) {
-          currentUser = currentUser.getCurrentUser();
-          let phone;
-          if (currentUser != null) {
-            phone = currentUser.phone;
-          }
-          if (null == phone) {
-            c4 = 0;
-            c6 = 3;
-            return { value: "HermesInternal", done: null };
-          } else {
-            c5 = 2;
-            c6 = 1;
-            const obj8 = { value: ContactSyncUtils.getContacts(phone, state.getState().storedContacts), done: false };
-            return obj8;
-          }
-        }
-      }
-    } catch (tmp33) {
-      closure_3 = tmp33;
-      if (tmp4 === c4) {
-        c6 = tmp2;
-        throw tmp33;
-      } else {
-        c5 = tmp;
       }
     }
-  }
+  });
+  return obj(...arguments);
 };
-const ContactSyncPersistedStore = fn(12961);
-({ setStoredContacts: hasOwnProperty, deleteStoredContacts: metroRequire, useContactSyncStore: closure_7 } = ContactSyncPersistedStore);
-const ContactPermissions = fn(12960).ContactPermissions;
-const PlatformTypes = fn(1074).PlatformTypes;
+({ setStoredContacts: hasOwnProperty, deleteStoredContacts: metroRequire, useContactSyncStore: metroImportDefault } = ContactSyncPersistedStore);
+const ContactPermissions = ContactSyncConstants.ContactPermissions;
+const PlatformTypes = Constants.PlatformTypes;
 const LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY = "LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY";
-const prototype = function ContactSyncLifecycleManager() {
-  let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  require = applyArgumentsResult;
-  applyArgumentsResult.actions = {
-    POST_CONNECTION_OPEN() {
-      return applyArgumentsResult.handleConnectionOpen();
-    }
-  };
-  applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {
-    if (null != currentUser.getCurrentUser()) {
-      localAccount = localAccount.getLocalAccount(constants.CONTACTS);
-      if (obj.isContactSyncEnabled(localAccount)) {
-        const result = tmp4(tmp5[7]).checkContactPermissions();
-        result.then((result) => {
-          if (result === constants.AUTHORIZED) {
-            closure_1_0(dependencyMap[9]).runAfterInteractions(() => (function requestAndSyncContacts() {
-              const self = this;
-              const apply = closure_1_11.apply;
-              if (typeof apply === "unknown") {
-                applyArgumentsResult = HermesBuiltin.applyArguments(self);
-              } else {
-                applyArgumentsResult = apply(self, arguments);
-              }
-              return applyArgumentsResult;
-            })());
-            const obj = closure_1_0(dependencyMap[9]);
-          }
-        });
-        const tmp4Result = tmp4(tmp5[7]);
+class ContactSyncLifecycleManager extends AutomaticLifecycleManager {
+  constructor() {
+    let currentUser;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      POST_CONNECTION_OPEN() {
+        return require.handleConnectionOpen();
       }
-      obj = applyArgumentsResult(dependencyMap[7]);
-      tmp4 = applyArgumentsResult;
-      tmp5 = dependencyMap;
-    }
-  };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp3 {
+    };
+    applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {
+      if (null != currentUser.getCurrentUser()) {
+        localAccount = localAccount.getLocalAccount(constants.CONTACTS);
+        obj = ContactSyncUtils;
+        const tmp4 = require;
+        const tmp5 = dependencyMap;
+        if (obj.isContactSyncEnabled(localAccount)) {
+          const tmp4Result = tmp4(tmp5[7]);
+          const result = tmp4Result.checkContactPermissions();
+          result.then((result) => {
+            if (result === constants.AUTHORIZED) {
+              obj = closure_1_0(closure_1_1[9]);
+              obj.runAfterInteractions(() => {
+                function requestAndSyncContacts() {
+                  return closure_1_11(...arguments);
+                }
+                return requestAndSyncContacts();
+              });
+            }
+          });
+        }
+      }
+    };
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const contactSyncLifecycleManager = new ContactSyncLifecycleManager();
 let result = size.fileFinishedImporting("modules/contact_sync/native/ContactSyncManager.tsx");
+const LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY_export = "LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY";
 
-export default prototype1;
-export const LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY = "LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY";
+export default contactSyncLifecycleManager;
+export { LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY_export as LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY };
 export const removeLastUserContactsUpload = function removeLastUserContactsUpload() {
   const Storage = Storage3.Storage;
   Storage.remove(LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY);

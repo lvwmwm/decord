@@ -1,202 +1,322 @@
-// Module ID: 4455
-// Function ID: 4456
+// Module ID: 4500
+// Function ID: 4501
 // Name: InvoiceRecord
-// Dependencies: [1387, 4456, 2]
+// Dependencies: [1393, 4501, 2]
 
-// Module 4455 (InvoiceRecord)
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4456 */;
-import Record from "Record" /* 1387 */;
+// Module 4500 (InvoiceRecord)
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4501 */;
+import Record from "Record" /* 1393 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let BaseInvoiceRecord;
-class BaseInvoiceRecord extends tmp2 {
+let billing_facet, order_line_items;
+
+class BaseInvoiceRecord extends Record {
   constructor(arg0) {
-    tmp = new BaseInvoiceRecord(new.target, new.target, global);
-    ({ total: tmp.total, subtotal: tmp.subtotal, tax: tmp.tax, currency: tmp.currency, invoiceItems } = global);
+    let invoiceItems;
+    const tmp = new BaseInvoiceRecord(new.target, this, arg0);
+    ({ total: tmp.total, subtotal: tmp.subtotal, tax: tmp.tax, currency: tmp.currency, invoiceItems } = arg0);
     if (invoiceItems == null) {
       invoiceItems = [];
     }
     tmp.invoiceItems = invoiceItems;
     return tmp;
   }
-}
-const prototype = BaseInvoiceRecord.prototype;
-BaseInvoiceRecord["createFromServer"] = function createFromServer(currency) {
-  ({ total, subtotal, tax, invoice_items } = currency);
-  let mapped = invoice_items.map((skuId) => ({ skuId: skuId.sku_id, quantity: skuId.quantity, description: skuId.description }));
-  if (typeof BaseInvoiceRecord === "function") {
-    const tmp6 = new BaseInvoiceRecord(tmp, invoice_items, tmp2, new.target, total, subtotal, tax);
-    tmp6.total = total;
-    tmp6.subtotal = subtotal;
-    tmp6.tax = tax;
-    tmp6.currency = currency.currency;
-    if (mapped == null) {
-      mapped = [];
-    }
-    tmp6.invoiceItems = mapped;
-    return tmp6;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-  tmp2 = BaseInvoiceRecord;
-};
-BaseInvoiceRecord["createInvoiceFromOrder"] = function createInvoiceFromOrder(billing_facet) {
-  billing_facet = billing_facet.billing_facet;
-  let invoice_preview = null;
-  if (null != billing_facet) {
-    invoice_preview = billing_facet.invoice_preview;
-  }
-  if (null == invoice_preview) {
-    return null;
-  } else {
-    const line_items = invoice_preview.line_items;
-    const mapped = line_items.map((unit_price) => {
-      billing_facet = unit_price;
-      const order_line_items = billing_facet.order_line_items;
-      const found = order_line_items.find((id) => id.id === unit_price.ref_order_line_item_id);
-      let tmp2 = null;
-      if (null != found) {
-        const obj = { skuId: found.sku_id, unitPrice: null, quantity: null };
-        const obj2 = { amount: unit_price.unit_price, currency: invoice_preview.currency };
-        obj.unitPrice = obj2;
-        obj.quantity = unit_price.quantity;
-        tmp2 = obj;
-      }
-      return tmp2;
-    });
-    let found = mapped.filter((item) => null != item);
-    ({ total, subtotal, tax, currency } = invoice_preview);
+  static createFromServer(currency) {
+    let invoice_items;
+    let subtotal;
+    let tax;
+    let total;
+    ({ total, subtotal, tax, invoice_items } = currency);
+    currency = currency.currency;
+    let mapped = invoice_items.map((skuId) => ({ skuId: skuId.sku_id, quantity: skuId.quantity, description: skuId.description }));
+    const tmp2 = BaseInvoiceRecord;
     if (typeof BaseInvoiceRecord === "function") {
-      const tmp6 = new BaseInvoiceRecord(tmp, tmp8, new.target, total, subtotal, tax, currency, found);
-      tmp6.total = total;
-      tmp6.subtotal = subtotal;
-      tmp6.tax = tax;
-      tmp6.currency = currency;
-      if (found == null) {
-        found = [];
+      const self = this;
+      const self2 = this;
+      const tmp4 = new BaseInvoiceRecord(tmp, invoice_items, tmp2, this, total, subtotal, tax);
+      tmp4.total = total;
+      tmp4.subtotal = subtotal;
+      tmp4.tax = tax;
+      tmp4.currency = currency;
+      if (mapped == null) {
+        mapped = [];
       }
-      tmp6.invoiceItems = found;
-      return tmp6;
+      tmp4.invoiceItems = mapped;
+      return tmp4;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
   }
-};
-prototype["getInvoicePreviewLineItemForSku"] = function getInvoicePreviewLineItemForSku(arg0) {
-  closure_0 = arg0;
-  const invoiceItems = this.invoiceItems;
-  let found = invoiceItems.find((skuId) => skuId.skuId === closure_0);
-  if (found == null) {
-    found = null;
-  }
-  return found;
-};
-prototype["getInvoicePreviewLineItemUnitPriceForSku"] = function getInvoicePreviewLineItemUnitPriceForSku(arg0) {
-  const invoicePreviewLineItemForSku = this.getInvoicePreviewLineItemForSku(arg0);
-  let amount = null;
-  if (null != invoicePreviewLineItemForSku) {
-    amount = null;
-    if (null != invoicePreviewLineItemForSku.unitPrice) {
-      amount = invoicePreviewLineItemForSku.unitPrice.amount;
+  static createInvoiceFromOrder(billing_facet) {
+    let currency;
+    let subtotal;
+    let tax;
+    let total;
+    let closure_0 = billing_facet;
+    billing_facet = billing_facet.billing_facet;
+    let invoice_preview = null;
+    if (null != billing_facet) {
+      invoice_preview = billing_facet.invoice_preview;
+    }
+    if (null == invoice_preview) {
+      return null;
+    } else {
+      const line_items = invoice_preview.line_items;
+      const mapped = line_items.map((unit_price) => {
+        let obj2;
+        order_line_items = unit_price;
+        order_line_items = order_line_items.order_line_items;
+        const found = order_line_items.find((id) => id.id === closure_0.ref_order_line_item_id);
+        let tmp2 = null;
+        if (null != found) {
+          const obj = { skuId: found.sku_id, unitPrice: obj2, quantity: unit_price.quantity };
+          tmp2 = obj;
+          obj2 = { amount: unit_price.unit_price, currency: invoice_preview.currency };
+        }
+        return tmp2;
+      });
+      let found = mapped.filter((item) => null != item);
+      ({ total, subtotal, tax, currency } = invoice_preview);
+      const self3 = this;
+      if (typeof BaseInvoiceRecord === "function") {
+        const self = this;
+        const self2 = this;
+        const tmp4 = new BaseInvoiceRecord(tmp, tmp6, this, total, subtotal, tax, currency, found);
+        tmp4.total = total;
+        tmp4.subtotal = subtotal;
+        tmp4.tax = tax;
+        tmp4.currency = currency;
+        if (found == null) {
+          found = [];
+        }
+        tmp4.invoiceItems = found;
+        return tmp4;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
     }
   }
-  return amount;
-};
-let InvoiceRecord;
+  getInvoicePreviewLineItemForSku(arg0) {
+    let closure_0 = arg0;
+    const invoiceItems = this.invoiceItems;
+    let found = invoiceItems.find((skuId) => skuId.skuId === closure_0);
+    if (found == null) {
+      found = null;
+    }
+    return found;
+  }
+  getInvoicePreviewLineItemUnitPriceForSku(arg0) {
+    const invoicePreviewLineItemForSku = this.getInvoicePreviewLineItemForSku(arg0);
+    let amount = null;
+    if (null != invoicePreviewLineItemForSku) {
+      amount = null;
+      if (null != invoicePreviewLineItemForSku.unitPrice) {
+        amount = invoicePreviewLineItemForSku.unitPrice.amount;
+      }
+    }
+    return amount;
+  }
+}
+const prototype = BaseInvoiceRecord.prototype;
 class InvoiceRecord extends BaseInvoiceRecord {
   constructor(arg0) {
-    tmp = new InvoiceRecord(global, new.target, new.target);
-    ({ id: tmp.id, invoiceItems } = global);
+    let invoiceItems;
+    const tmp = new InvoiceRecord(arg0, new.target, this);
+    ({ id: tmp.id, invoiceItems } = arg0);
     if (invoiceItems == null) {
       invoiceItems = [];
     }
     tmp.invoiceItems = invoiceItems;
-    ({ taxInclusive: tmp.taxInclusive, subscriptionPeriodStart: tmp.subscriptionPeriodStart, subscriptionPeriodEnd: tmp.subscriptionPeriodEnd, status: tmp.status, orbsReward: tmp.orbsReward, checkoutContext: tmp.checkoutContext } = global);
+    ({ taxInclusive: tmp.taxInclusive, subscriptionPeriodStart: tmp.subscriptionPeriodStart, subscriptionPeriodEnd: tmp.subscriptionPeriodEnd, status: tmp.status, orbsReward: tmp.orbsReward, checkoutContext: tmp.checkoutContext } = arg0);
     return tmp;
   }
-}
-const prototype2 = InvoiceRecord.prototype;
-InvoiceRecord["createInvoiceFromServer"] = function createInvoiceFromServer(body) {
-  const obj = { id: body.id, invoiceItems: null, total: null, subtotal: null, currency: null, tax: null, taxInclusive: null, subscriptionPeriodStart: null, subscriptionPeriodEnd: null, status: null, orbsReward: null, checkoutContext: null };
-  const invoice_items = body.invoice_items;
-  let mapped;
-  if (invoice_items != null) {
-    mapped = invoice_items.map(PremiumSubscriptionInvoiceItem.createInvoiceItemFromServer);
-    const tmp3 = require;
-  }
-  obj.invoiceItems = mapped;
-  ({ total: obj.total, subtotal: obj.subtotal, currency: obj.currency, tax: obj.tax, tax_inclusive: obj.taxInclusive } = body);
-  obj.subscriptionPeriodStart = new Date(body.subscription_period_start);
-  const date = new Date(body.subscription_period_start);
-  const tmp = InvoiceRecord;
-  const tmp6 = new.target;
-  obj.subscriptionPeriodEnd = new Date(body.subscription_period_end);
-  ({ status: obj.status, orbs_reward: obj.orbsReward, checkout_context: obj.checkoutContext } = body);
-  if (typeof tmp === "function") {
-    const tmp12 = new InvoiceRecord(obj, tmp3, Date, Date, tmp6);
-    ({ id: tmp12.id, invoiceItems } = obj);
-    if (invoiceItems == null) {
-      invoiceItems = [];
+  static createInvoiceFromServer(body) {
+    let invoiceItems;
+    let mapped;
+    let tmp3;
+    const obj = { id: body.id, invoiceItems: mapped, total: null, subtotal: null, currency: null, tax: null, taxInclusive: null, subscriptionPeriodStart: new Date(body.subscription_period_start), subscriptionPeriodEnd: new Date(body.subscription_period_end), status: null, orbsReward: null, checkoutContext: null };
+    const invoice_items = body.invoice_items;
+    mapped = undefined;
+    const tmp = InvoiceRecord;
+    if (invoice_items != null) {
+      mapped = invoice_items.map(PremiumSubscriptionInvoiceItem.createInvoiceItemFromServer);
+      tmp3 = require;
     }
-    tmp12.invoiceItems = invoiceItems;
-    ({ taxInclusive: tmp12.taxInclusive, subscriptionPeriodStart: tmp12.subscriptionPeriodStart, subscriptionPeriodEnd: tmp12.subscriptionPeriodEnd, status: tmp12.status, orbsReward: tmp12.orbsReward, checkoutContext: tmp12.checkoutContext } = obj);
-    return tmp12;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-  const date1 = new Date(body.subscription_period_end);
-};
-InvoiceRecord["createFromOTPPreview"] = function createFromOTPPreview(invoice_items) {
-  invoice_items = invoice_items.invoice_items;
-  let mapped;
-  if (invoice_items != null) {
-    mapped = invoice_items.map(PremiumSubscriptionInvoiceItem.createInvoiceItemFromServer);
-    const tmp3 = require;
-  }
-  const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: new Date(0), subscriptionPeriodEnd: null, orbsReward: null, checkoutContext: null };
-  const date = new Date(0);
-  const tmp5 = new.target;
-  const tmp7 = new.target;
-  obj.subscriptionPeriodEnd = new Date(0);
-  const orbs_reward = invoice_items.orbs_reward;
-  obj.orbsReward = orbs_reward;
-  obj.checkoutContext = invoice_items.checkout_context;
-  if (typeof InvoiceRecord === "function") {
-    const tmp13 = new InvoiceRecord(obj, tmp3, tmp5, tmp7, orbs_reward, tmp);
-    ({ id: tmp13.id, invoiceItems } = obj);
-    if (invoiceItems == null) {
-      invoiceItems = [];
+    ({ total: obj.total, subtotal: obj.subtotal, currency: obj.currency, tax: obj.tax, tax_inclusive: obj.taxInclusive } = body);
+    const _Date = Date;
+    const _Date2 = Date;
+    new Date(body.subscription_period_start);
+    ({ status: obj.status, orbs_reward: obj.orbsReward, checkout_context: obj.checkoutContext } = body);
+    new Date(body.subscription_period_end);
+    if (typeof tmp === "function") {
+      const self = this;
+      const self2 = this;
+      const tmp9 = new InvoiceRecord(obj, tmp3, _Date, _Date2, this);
+      ({ id: tmp9.id, invoiceItems } = obj);
+      if (invoiceItems == null) {
+        invoiceItems = [];
+      }
+      tmp9.invoiceItems = invoiceItems;
+      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext } = obj);
+      return tmp9;
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
-    tmp13.invoiceItems = invoiceItems;
-    ({ taxInclusive: tmp13.taxInclusive, subscriptionPeriodStart: tmp13.subscriptionPeriodStart, subscriptionPeriodEnd: tmp13.subscriptionPeriodEnd, status: tmp13.status, orbsReward: tmp13.orbsReward, checkoutContext: tmp13.checkoutContext } = obj);
-    return tmp13;
-  } else {
-    throw new TypeError("Trying to call a non-function");
   }
-  const date1 = new Date(0);
-};
-prototype2["findInvoiceItemByPlanId"] = function findInvoiceItemByPlanId(id) {
-  closure_0 = id;
-  const invoiceItems = this.invoiceItems;
-  let found = invoiceItems.find((subscriptionPlanId) => subscriptionPlanId.subscriptionPlanId === closure_0);
-  if (found == null) {
-    found = null;
-  }
-  return found;
-};
-prototype2["getDiscountIdIfExists"] = function getDiscountIdIfExists() {
-  const invoiceItems = this.invoiceItems;
-  const found = invoiceItems.find((discounts) => discounts.discounts.length > 0);
-  if (null != found) {
-    if (0 !== found.discounts.length) {
-      const first = found.discounts[0];
-      if (null != first) {
-        return first.discount_id;
+  static createFromOrder(billing_facet) {
+    let checkout_context;
+    let date;
+    let date1;
+    let invoiceItems;
+    let tmp3;
+    let closure_0 = billing_facet;
+    billing_facet = billing_facet.billing_facet;
+    let invoice_preview = null;
+    if (null != billing_facet) {
+      invoice_preview = billing_facet.invoice_preview;
+    }
+    if (null == invoice_preview) {
+      return null;
+    } else {
+      const line_items = invoice_preview.line_items;
+      const mapped = line_items.map((ref_order_line_item_id) => {
+        let discounts;
+        let obj2;
+        let subscription_plan_id;
+        order_line_items = ref_order_line_item_id;
+        order_line_items = order_line_items.order_line_items;
+        const found = order_line_items.find((id) => id.id === closure_0.ref_order_line_item_id);
+        let tmp2 = null;
+        if (null != found) {
+          let obj = {
+            id: ref_order_line_item_id.ref_order_line_item_id,
+            skuId: null,
+            subscriptionPlanId: subscription_plan_id,
+            subscriptionPlanPrice: null,
+            amount: null,
+            quantity: null,
+            unitPrice: obj2,
+            discounts: discounts.map((type) => {
+                let discount_id;
+                let percentage_amount;
+                let str;
+                const obj = { type: type.type, amount: type.amount, description: str, percentage_amount, discount_id };
+                str = type.description;
+                if (str == null) {
+                  str = "";
+                }
+                percentage_amount = type.percentage_amount;
+                discount_id = type.discount_id;
+                return obj;
+              })
+          };
+          ({ sku_id: obj.skuId, subscription_plan_id } = found);
+          if (subscription_plan_id == null) {
+            subscription_plan_id = "";
+          }
+          ({ unit_price: obj.subscriptionPlanPrice, total: obj.amount, quantity: obj.quantity } = ref_order_line_item_id);
+          discounts = ref_order_line_item_id.discounts;
+          tmp2 = obj;
+          obj2 = { amount: ref_order_line_item_id.unit_price, currency: invoice_preview.currency };
+        }
+        return tmp2;
+      });
+      const line_items1 = invoice_preview.line_items;
+      let num = 0;
+      let found = mapped.filter((item) => null != item);
+      const reduced = line_items1.reduce((acc, orbs_reward) => {
+        let num = orbs_reward.orbs_reward;
+        if (num == null) {
+          num = 0;
+        }
+        return acc + num;
+      }, 0);
+      let obj = { id: "", invoiceItems: found, total: null, subtotal: null, currency: null, tax: null, taxInclusive: null, subscriptionPeriodStart: date, subscriptionPeriodEnd: date1, orbsReward: tmp3, checkoutContext: checkout_context };
+      ({ total: obj.total, subtotal: obj.subtotal, currency: obj.currency, tax: obj.tax, tax_inclusive: obj.taxInclusive } = invoice_preview);
+      const _Date = Date;
+      const self5 = this;
+      const self4 = this;
+      const _Date2 = Date;
+      const self7 = this;
+      const self6 = this;
+      date = new Date(0);
+      tmp3 = undefined;
+      date1 = new Date(0);
+      const tmp10 = InvoiceRecord;
+      if (reduced > 0) {
+        tmp3 = reduced;
+      }
+      checkout_context = billing_facet.checkout_context;
+      const self = this;
+      if (typeof tmp10 === "function") {
+        const self2 = this;
+        const self3 = this;
+        const tmp6 = new InvoiceRecord(obj, tmp, self4, self6, reduced, tmp3);
+        ({ id: tmp6.id, invoiceItems } = obj);
+        if (invoiceItems == null) {
+          invoiceItems = [];
+        }
+        tmp6.invoiceItems = invoiceItems;
+        ({ taxInclusive: tmp6.taxInclusive, subscriptionPeriodStart: tmp6.subscriptionPeriodStart, subscriptionPeriodEnd: tmp6.subscriptionPeriodEnd, status: tmp6.status, orbsReward: tmp6.orbsReward, checkoutContext: tmp6.checkoutContext } = obj);
+        return tmp6;
+      } else {
+        let str = "Trying to call a non-function";
+        throw new TypeError("Trying to call a non-function");
       }
     }
   }
-};
-const size = fn(2);
+  static createFromOTPPreview(invoice_items) {
+    let invoiceItems;
+    let orbs_reward;
+    let tmp3;
+    invoice_items = invoice_items.invoice_items;
+    let mapped;
+    if (invoice_items != null) {
+      mapped = invoice_items.map(PremiumSubscriptionInvoiceItem.createInvoiceItemFromServer);
+      tmp3 = require;
+    }
+    const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: new Date(0), subscriptionPeriodEnd: new Date(0), orbsReward: orbs_reward, checkoutContext: invoice_items.checkout_context };
+    new Date(0);
+    orbs_reward = invoice_items.orbs_reward;
+    new Date(0);
+    if (typeof InvoiceRecord === "function") {
+      const self = this;
+      const self2 = this;
+      const tmp9 = new InvoiceRecord(obj, tmp3, this, this, orbs_reward, InvoiceRecord);
+      ({ id: tmp9.id, invoiceItems } = obj);
+      if (invoiceItems == null) {
+        invoiceItems = [];
+      }
+      tmp9.invoiceItems = invoiceItems;
+      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext } = obj);
+      return tmp9;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+  findInvoiceItemByPlanId(id) {
+    let closure_0 = id;
+    const invoiceItems = this.invoiceItems;
+    let found = invoiceItems.find((subscriptionPlanId) => subscriptionPlanId.subscriptionPlanId === id);
+    if (found == null) {
+      found = null;
+    }
+    return found;
+  }
+  getDiscountIdIfExists() {
+    const invoiceItems = this.invoiceItems;
+    const found = invoiceItems.find((discounts) => discounts.discounts.length > 0);
+    if (null != found) {
+      if (0 !== found.discounts.length) {
+        const first = found.discounts[0];
+        if (null != first) {
+          return first.discount_id;
+        }
+      }
+    }
+  }
+}
+const prototype2 = InvoiceRecord.prototype;
 const result = size.fileFinishedImporting("records/InvoiceRecord.tsx");
 
 export default InvoiceRecord;

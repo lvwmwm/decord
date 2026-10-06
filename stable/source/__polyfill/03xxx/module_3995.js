@@ -1,46 +1,76 @@
 // Module ID: 3995
 // Function ID: 3996
-// Dependencies: [3996, 3997, 3998, 3999, 4000]
+// Dependencies: [2123]
 
 // Module 3995
-import module_3996 from "module_3996" /* 3996 */;
-import module_3997 from "module_3997" /* 3997 */;
-import module_3998 from "module_3998" /* 3998 */;
-import date_mod from "module_3999" /* 3999 */;
-import date_mod from "module_4000" /* 4000 */;
+import buildLocalizeFn from "buildLocalizeFn" /* 2123 */;
 
-if (!module_3996) {
-  const obj = { default: module_3996 };
-  let tmp3 = obj;
+let obj;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+if (!buildLocalizeFn) {
+  obj = { default: buildLocalizeFn };
+  const obj2 = { default: buildLocalizeFn };
 } else {
-  tmp3 = module_3996;
+  obj = buildLocalizeFn;
 }
-if (!module_3997) {
-  const obj2 = { default: module_3997 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3997;
-}
-if (!module_3998) {
-  const obj3 = { default: module_3998 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3998;
-}
-let date = date_mod;
-if (!date) {
-  const obj4 = { default: date };
-  let tmp9 = obj4;
-} else {
-  tmp9 = date;
-}
-let date = date_mod;
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
-} else {
-  tmp11 = date;
-}
+const date = {
+  ordinalNumber(arg0, unit) {
+    const NumberResult = Number(arg0);
+    unit = undefined;
+    const _String = String;
+    if (null != unit) {
+      unit = unit.unit;
+    }
+    const _StringResult = _String(unit);
+    if ("year" === _StringResult) {
+      const concat9 = "".concat;
+      return "".concat(NumberResult, "\u5E74");
+    } else if ("quarter" === _StringResult) {
+      const concat8 = "\u7B2C".concat;
+      return "\u7B2C".concat(NumberResult, "\u56DB\u534A\u671F");
+    } else if ("month" === _StringResult) {
+      const concat7 = "".concat;
+      return "".concat(NumberResult, "\u6708");
+    } else if ("week" === _StringResult) {
+      const concat6 = "\u7B2C".concat;
+      return "\u7B2C".concat(NumberResult, "\u9031");
+    } else if ("date" === _StringResult) {
+      const concat5 = "".concat;
+      return "".concat(NumberResult, "\u65E5");
+    } else if ("hour" === _StringResult) {
+      const concat4 = "".concat;
+      return "".concat(NumberResult, "\u6642");
+    } else if ("minute" === _StringResult) {
+      const concat3 = "".concat;
+      return "".concat(NumberResult, "\u5206");
+    } else if ("second" === _StringResult) {
+      const concat2 = "".concat;
+      return "".concat(NumberResult, "\u79D2");
+    } else {
+      const concat = "".concat;
+      return "".concat(NumberResult);
+    }
+  },
+  era: obj.default(obj3),
+  quarter: obj.default(obj4),
+  month: obj.default(obj5),
+  day: obj.default(obj6),
+  dayPeriod: obj.default(obj7)
+};
+obj3 = { values: { narrow: ["BC", "AC"], abbreviated: ["\u7D00\u5143\u524D", "\u897F\u66A6"], wide: ["\u7D00\u5143\u524D", "\u897F\u66A6"] }, defaultWidth: "wide" };
+obj4 = {
+  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["Q1", "Q2", "Q3", "Q4"], wide: ["\u7B2C1\u56DB\u534A\u671F", "\u7B2C2\u56DB\u534A\u671F", "\u7B2C3\u56DB\u534A\u671F", "\u7B2C4\u56DB\u534A\u671F"] },
+  defaultWidth: "wide",
+  argumentCallback(arg0) {
+    return Number(arg0) - 1;
+  }
+};
+obj5 = { values: { narrow: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], abbreviated: ["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], wide: ["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"] }, defaultWidth: "wide" };
+obj6 = { values: { narrow: ["\u65E5", "\u6708", "\u706B", "\u6C34", "\u6728", "\u91D1", "\u571F"], short: ["\u65E5", "\u6708", "\u706B", "\u6C34", "\u6728", "\u91D1", "\u571F"], abbreviated: ["\u65E5", "\u6708", "\u706B", "\u6C34", "\u6728", "\u91D1", "\u571F"], wide: ["\u65E5\u66DC\u65E5", "\u6708\u66DC\u65E5", "\u706B\u66DC\u65E5", "\u6C34\u66DC\u65E5", "\u6728\u66DC\u65E5", "\u91D1\u66DC\u65E5", "\u571F\u66DC\u65E5"] }, defaultWidth: "wide" };
+obj7 = { values: { narrow: { am: "\u5348\u524D", pm: "\u5348\u5F8C", midnight: "\u6DF1\u591C", noon: "\u6B63\u5348", morning: "\u671D", afternoon: "\u5348\u5F8C", evening: "\u591C", night: "\u6DF1\u591C" }, abbreviated: { am: "\u5348\u524D", pm: "\u5348\u5F8C", midnight: "\u6DF1\u591C", noon: "\u6B63\u5348", morning: "\u671D", afternoon: "\u5348\u5F8C", evening: "\u591C", night: "\u6DF1\u591C" }, wide: { am: "\u5348\u524D", pm: "\u5348\u5F8C", midnight: "\u6DF1\u591C", noon: "\u6B63\u5348", morning: "\u671D", afternoon: "\u5348\u5F8C", evening: "\u591C", night: "\u6DF1\u591C" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "\u5348\u524D", pm: "\u5348\u5F8C", midnight: "\u6DF1\u591C", noon: "\u6B63\u5348", morning: "\u671D", afternoon: "\u5348\u5F8C", evening: "\u591C", night: "\u6DF1\u591C" }, abbreviated: { am: "\u5348\u524D", pm: "\u5348\u5F8C", midnight: "\u6DF1\u591C", noon: "\u6B63\u5348", morning: "\u671D", afternoon: "\u5348\u5F8C", evening: "\u591C", night: "\u6DF1\u591C" }, wide: { am: "\u5348\u524D", pm: "\u5348\u5F8C", midnight: "\u6DF1\u591C", noon: "\u6B63\u5348", morning: "\u671D", afternoon: "\u5348\u5F8C", evening: "\u591C", night: "\u6DF1\u591C" } }, defaultFormattingWidth: "wide" };
 
-export default { code: "ru", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
-export default exports.default;
+export default date;

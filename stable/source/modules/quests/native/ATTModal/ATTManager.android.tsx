@@ -1,40 +1,41 @@
-// Module ID: 17741
-// Function ID: 17742
+// Module ID: 17100
+// Function ID: 17101
 // Name: ATTManager
-// Dependencies: [7395, 8006, 1231, 2]
+// Dependencies: [6540, 7154, 1243, 2]
 
-// Module 17741 (ATTManager)
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AdUserActionCreators from "AdUserActionCreators" /* 8006 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 17100 (ATTManager)
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import AdUserActionCreators from "AdUserActionCreators" /* 7154 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class ATTManager extends tmp2 {
+class ATTManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult._openATTPrePromptOrFlowTimeoutId = null;
     applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.onPostConnectionOpen };
     return applyArgumentsResult;
   }
+  onPostConnectionOpen() {
+    try {
+      const obj = AdUserActionCreators;
+      const adUser = obj.fetchAdUser("post_connection_open");
+    } catch (tmp4) {
+      const obj2 = SentryUtilsDefault;
+      obj2.captureException(tmp4);
+    }
+  }
+  _terminate() {
+    const self = this;
+    if (null != this._openATTPrePromptOrFlowTimeoutId) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(self._openATTPrePromptOrFlowTimeoutId);
+      self._openATTPrePromptOrFlowTimeoutId = null;
+    }
+  }
 }
 const prototype = ATTManager.prototype;
-prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
-  try {
-    const adUser = AdUserActionCreators.fetchAdUser("post_connection_open");
-  } catch (tmp4) {
-    SentryUtilsDefault.captureException(tmp4);
-  }
-};
-prototype["_terminate"] = function _terminate() {
-  const self = this;
-  if (null != this._openATTPrePromptOrFlowTimeoutId) {
-    const _clearTimeout = clearTimeout;
-    clearTimeout(self._openATTPrePromptOrFlowTimeoutId);
-    self._openATTPrePromptOrFlowTimeoutId = null;
-  }
-};
 const aTTManager = new ATTManager();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/ATTModal/ATTManager.android.tsx");
 
 export default aTTManager;

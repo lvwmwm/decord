@@ -1,31 +1,31 @@
-// Module ID: 8232
-// Function ID: 8233
+// Module ID: 7388
+// Function ID: 7389
 // Name: MediaPostSharePromptStore
-// Dependencies: [2097, 502, 2041, 8233, 11, 504, 573, 2]
+// Dependencies: [2103, 502, 2051, 7389, 11, 504, 585, 2]
 
-// Module 8232 (MediaPostSharePromptStore)
+// Module 7388 (MediaPostSharePromptStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 8233 */;
-import GatedChannelStore from "GatedChannelStore" /* 2097 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 7389 */;
+import GatedChannelStore from "GatedChannelStore" /* 2103 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 let set = new Set();
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class MediaPostSharePromptStore extends Store {
+  initialize() {
+    this.waitFor(AuthenticationStore, ChannelStore, GatedChannelStore);
+  }
+  shouldDisplayPrompt(id) {
+    return set.has(id);
+  }
 }
 const prototype = MediaPostSharePromptStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(AuthenticationStore, ChannelStore, GatedChannelStore);
-};
-prototype["shouldDisplayPrompt"] = function shouldDisplayPrompt(id) {
-  return set.has(id);
-};
 MediaPostSharePromptStore.displayName = "MediaPostSharePromptStore";
-const mediaPostSharePromptStore = new MediaPostSharePromptStore(DispatcherDefault, {
+let obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     set = new Set();
   },
@@ -39,17 +39,19 @@ const mediaPostSharePromptStore = new MediaPostSharePromptStore(DispatcherDefaul
         id1 = author.id;
       }
       if (id === id1) {
+        const obj2 = useIsFirstMessageInMediaPost;
         if (obj2.isFirstMessageIdInMediaPost(message.id, message.channel_id)) {
           const channel = ChannelStore.getChannel(message.channel_id);
           if (null != channel) {
             if (null != channel.parent_id) {
               if (GatedChannelStore.isChannelGated(channel.guild_id, channel.parent_id)) {
-                set.add(SnowflakeUtilsDefault.castMessageIdAsChannelId(isPushNotification.message.id));
+                const add = set.add;
+                const obj = SnowflakeUtilsDefault;
+                add(obj.castMessageIdAsChannelId(isPushNotification.message.id));
               }
             }
           }
         }
-        obj2 = useIsFirstMessageInMediaPost;
       }
     }
   },
@@ -59,8 +61,8 @@ const mediaPostSharePromptStore = new MediaPostSharePromptStore(DispatcherDefaul
   LOGOUT: function handleLogout() {
     set.clear();
   }
-});
-const size = fn(2);
+};
+const mediaPostSharePromptStore = new MediaPostSharePromptStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/media_channel/MediaPostSharePromptStore.tsx");
 
 export default mediaPostSharePromptStore;

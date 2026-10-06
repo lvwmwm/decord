@@ -1,15 +1,18 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 15919
+// Function ID: 15920
 // Name: GuildsBarConstants
-// Dependencies: [4489, 576, 2]
+// Dependencies: [558, 4535, 588, 2]
 // Exports: useGuildWrapperSize
 
-// Module 16624 (GuildsBarConstants)
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4489 */;
+// Module 15919 (GuildsBarConstants)
+import nativeDefault from "native" /* 588 */;
+import useToken from "useToken" /* 4535 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
 
 export const GUILD_ITEM_SIZE = 48;
 export const GUILD_LIST_WIDTH = 72;
@@ -17,9 +20,11 @@ export const GUILD_ITEM_EMPTY_SRC = { uri: "invalid" };
 export const GUILD_ITEM_HIT_SLOP = { top: 4, left: 12, bottom: 4, right: 12 };
 export const GUILD_ITEM_BADGE_SIZE = 16;
 export const GUILD_ITEM_INSET_LEFT = 12;
-export const useGuildWrapperSize = function useGuildWrapperSize() {
-  const token = useToken.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
-  return token + 2 * useToken.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN);
+export const useGuildWrapperSize = () => {
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const obj2 = useToken;
+  return token + 2 * obj2.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN);
 };
 export const FastListRenderSections = { MESSAGES: 0, [0]: "MESSAGES", FAVORITES: 1, [1]: "FAVORITES", PENDING_JOIN_REQUESTS: 2, [2]: "PENDING_JOIN_REQUESTS", LURKING_GUILDS: 3, [3]: "LURKING_GUILDS", GUEST_GUILDS: 4, [4]: "GUEST_GUILDS", UNREAD_PRIVATE_CHANNELS: 5, [5]: "UNREAD_PRIVATE_CHANNELS", SEPARATOR: 6, [6]: "SEPARATOR", GUILDS: 7, [7]: "GUILDS" };
 export const FOLDER_SPRING_PHYSICS = { mass: 0.5, damping: 30, stiffness: 300 };

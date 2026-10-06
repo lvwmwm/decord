@@ -1,39 +1,35 @@
-// Module ID: 13739
-// Function ID: 13740
+// Module ID: 12985
+// Function ID: 12986
 // Name: ReferralProgramShareActionSheetUtils
-// Dependencies: [4437, 11151, 2]
+// Dependencies: [4482, 10361, 2]
 // Exports: buildReferralUserRow
 
-// Module 13739 (ReferralProgramShareActionSheetUtils)
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+// Module 12985 (ReferralProgramShareActionSheetUtils)
+import UserRowConstants from "UserRowConstants" /* 10361 */;
+import RelationshipStore from "RelationshipStore" /* 4482 */;
+import size from "module_2" /* 2 */;
 
-const UserRowModes = fn(11151).UserRowModes;
-const size = fn(2);
+const UserRowModes = UserRowConstants.UserRowModes;
 const result = size.fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheetUtils.tsx");
 
 export const buildReferralUserRow = function buildReferralUserRow(selectedNotResendUsers) {
+  let eligibleUsers;
+  let resendUsers;
+  let row;
+  let selectedUserIds;
   ({ eligibleUsers, row, selectedUserIds, resendUsers } = selectedNotResendUsers);
   if (null != eligibleUsers[row]) {
     let tmp4 = selectedNotResendUsers.selectedNotResendUsers.length >= tmp;
     const hasItem = selectedUserIds.includes(tmp3.id);
-    const obj = { type: null, user: null, onPress: null, selected: null, disabled: null, mode: null, start: null, end: null };
+    const obj = { type: RelationshipStore.getRelationshipType(eligibleUsers[row].id), user: eligibleUsers[row], onPress: tmp2, selected: hasItem, disabled: tmp4, mode: UserRowModes.TOGGLE, start: 0 === row, end: row === eligibleUsers.length - 1 };
     const hasItem1 = resendUsers.has(tmp3.id);
-    obj.type = RelationshipStore.getRelationshipType(tmp3.id);
-    obj.user = tmp3;
-    obj.onPress = tmp2;
-    obj.selected = hasItem;
     if (tmp4) {
       tmp4 = !hasItem;
     }
     if (tmp4) {
       tmp4 = !hasItem1;
     }
-    const element = { type: "user", props: null };
-    obj.disabled = tmp4;
-    obj.mode = UserRowModes.TOGGLE;
-    obj.start = 0 === row;
-    obj.end = row === eligibleUsers.length - 1;
-    element.props = obj;
+    const element = { type: "user", props: obj };
     return element;
   }
 };

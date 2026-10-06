@@ -1,0 +1,65 @@
+// Module ID: 11070
+// Function ID: 11071
+// Name: CheckpointColors
+// Dependencies: [11071, 588, 2]
+
+// Module 11070 (CheckpointColors)
+import nativeDefault from "native" /* 588 */;
+import checkpoint_CheckpointConstants from "checkpoint/CheckpointConstants" /* 11071 */;
+import size from "module_2" /* 2 */;
+
+let items;
+let items1;
+let items2;
+let items3;
+let items4;
+let items5;
+let items6;
+let items7;
+let items8;
+let items9;
+const CheckpointPersonas = checkpoint_CheckpointConstants.CheckpointPersonas;
+const obj = {};
+const ZERO = CheckpointPersonas.ZERO;
+const obj2 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_BACKGROUND_OVERLAY, gradient: items };
+items = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_GRADIENT_END];
+obj[ZERO] = obj2;
+const ONE = CheckpointPersonas.ONE;
+const obj3 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ONE_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ONE_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ONE_BACKGROUND_OVERLAY, gradient: items1 };
+items1 = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ONE_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_ONE_GRADIENT_END];
+obj[ONE] = obj3;
+const TWO = CheckpointPersonas.TWO;
+const obj4 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_TWO_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_TWO_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_TWO_BACKGROUND_OVERLAY, gradient: items2 };
+items2 = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_TWO_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_TWO_GRADIENT_END];
+obj[TWO] = obj4;
+const THREE = CheckpointPersonas.THREE;
+const obj5 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_THREE_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_THREE_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_THREE_BACKGROUND_OVERLAY, gradient: items3 };
+items3 = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_THREE_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_THREE_GRADIENT_END];
+obj[THREE] = obj5;
+const FOUR = CheckpointPersonas.FOUR;
+const obj6 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FOUR_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FOUR_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FOUR_BACKGROUND_OVERLAY, gradient: items4 };
+items4 = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FOUR_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FOUR_GRADIENT_END];
+obj[FOUR] = obj6;
+const FIVE = CheckpointPersonas.FIVE;
+const obj7 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FIVE_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FIVE_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FIVE_BACKGROUND_OVERLAY, gradient: items5 };
+items5 = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FIVE_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_FIVE_GRADIENT_END];
+obj[FIVE] = obj7;
+const SIX = CheckpointPersonas.SIX;
+const obj8 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SIX_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SIX_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SIX_BACKGROUND_OVERLAY, gradient: items6 };
+items6 = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SIX_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SIX_GRADIENT_END];
+obj[SIX] = obj8;
+const SEVEN = CheckpointPersonas.SEVEN;
+const obj9 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SEVEN_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SEVEN_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SEVEN_BACKGROUND_OVERLAY, gradient: items7 };
+items7 = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SEVEN_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_SEVEN_GRADIENT_END];
+obj[SEVEN] = obj9;
+const EIGHT = CheckpointPersonas.EIGHT;
+const obj10 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_EIGHT_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_EIGHT_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_EIGHT_BACKGROUND_OVERLAY, gradient: items8 };
+items8 = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_EIGHT_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_EIGHT_GRADIENT_END];
+obj[EIGHT] = obj10;
+const NINE = CheckpointPersonas.NINE;
+const obj11 = { primaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_NINE_PRIMARY, secondaryColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_NINE_SECONDARY, backgroundOverlayColor: nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_NINE_BACKGROUND_OVERLAY, gradient: items9 };
+items9 = [nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_NINE_GRADIENT_START, nativeDefault.unsafe_rawColors.CHECKPOINT_PERSONA_NINE_GRADIENT_END];
+obj[NINE] = obj11;
+const result = size.fileFinishedImporting("modules/checkpoint/2025/CheckpointColors.native.tsx");
+
+export const CHECKPOINT_PERSONA_COLORS = obj;

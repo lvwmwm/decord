@@ -1,13 +1,14 @@
-// Module ID: 15359
-// Function ID: 15360
+// Module ID: 14606
+// Function ID: 14607
 // Name: OrbsHoldoutExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1441, 2]
 
-// Module 15359 (OrbsHoldoutExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14606 (OrbsHoldoutExperiment)
+import ApexExperiment from "ApexExperiment" /* 1441 */;
 import size from "module_2" /* 2 */;
 
-const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-orbs-holdout", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+const obj = { name: "2026-06-orbs-holdout", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/quests/experiments/OrbsHoldoutExperiment.tsx");
 
 export const OrbsHoldoutExperiment = apexExperiment;

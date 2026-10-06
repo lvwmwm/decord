@@ -1,38 +1,82 @@
-// Module ID: 10461
-// Function ID: 10462
+// Module ID: 11762
+// Function ID: 11763
 // Name: StaticChannelIndicator
-// Dependencies: [17, 4970, 21, 4788, 576, 4489, 2]
-// Exports: default
+// Dependencies: [17, 5019, 21, 4837, 588, 558, 576, 4535, 2]
 
-// Module 10461 (StaticChannelIndicator)
-import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4489 */;
-import ReadStateConstants from "ReadStateConstants" /* 4970 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
-import createStyles from "createStyles" /* 4788 */;
+// Module 11762 (StaticChannelIndicator)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useToken2 from "useToken" /* 4535 */;
+import ReadStateConstants from "ReadStateConstants" /* 5019 */;
+import react_native from "react-native" /* 17 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-({ View: c3, StyleSheet } = get_ActivityIndicator);
+let StyleSheet;
+let c3;
+let obj2;
+let size;
+({ View: c3, StyleSheet } = react_native);
 const UnreadSetting = ReadStateConstants.UnreadSetting;
-const jsx = jsxProd.jsx;
-let obj = { indicatorContainer: null, indicator: null };
-let obj2 = {};
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { indicatorContainer: obj2, indicator: size };
+obj2 = { top: 0, bottom: 0, justifyContent: "center" };
+createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj2.top = 0;
-obj2.bottom = 0;
-obj2.justifyContent = "center";
-obj.indicatorContainer = obj2;
-let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, marginLeft: -4 };
-obj.indicator = size;
-let closure_6 = createStyles.createStyles(obj);
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
-
-export default function ChannelIndicator(arg0) {
+size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, marginLeft: -4 };
+let closure_6 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((resolvedUnreadSetting) => {
+  let CHANNELS_DEFAULT;
+  let style;
+  let unread;
+  const obj = react;
+  const cResult = obj.c(5);
+  ({ unread, style } = resolvedUnreadSetting);
+  resolvedUnreadSetting = resolvedUnreadSetting.resolvedUnreadSetting;
+  const tmp3 = closure_6();
+  const useToken = useToken2.useToken;
+  useToken2;
+  if (resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
+    CHANNELS_DEFAULT = nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE;
+  } else {
+    CHANNELS_DEFAULT = nativeDefault.colors.CHANNELS_DEFAULT;
+  }
+  const token = useToken(CHANNELS_DEFAULT);
+  if (cResult[0] === token) {
+    if (cResult[1] === style) {
+      if (cResult[2] === tmp3) {
+        let tmp8;
+        if (cResult[3] === unread) {
+          tmp8 = cResult[4];
+        }
+        return tmp8;
+      }
+    }
+  }
+  let tmp9 = null;
+  if (unread) {
+    const items = [tmp3.indicator, , ];
+    const obj4 = { backgroundColor: token };
+    items[1] = obj4;
+    items[2] = style;
+    tmp9 = <_false style={tmp3.indicatorContainer}>{null}</_false>;
+  }
+  cResult[0] = token;
+  cResult[1] = style;
+  cResult[2] = tmp3;
+  cResult[3] = unread;
+  cResult[4] = tmp9;
+  tmp8 = tmp9;
+}) : ((arg0) => {
+  let resolvedUnreadSetting;
+  let style;
+  let unread;
   ({ unread, resolvedUnreadSetting, style } = arg0);
   const tmp = closure_6();
-  useToken;
+  useToken2;
   if (resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
     let CHANNELS_DEFAULT = nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE;
   } else {
@@ -40,15 +84,15 @@ export default function ChannelIndicator(arg0) {
   }
   let tmp7 = null;
   if (unread) {
-    const obj = { style: tmp.indicatorContainer, children: null };
-    const obj2 = { style: null };
     const items = [tmp.indicator, , ];
     const obj3 = { backgroundColor: tmp6 };
     items[1] = obj3;
     items[2] = style;
-    obj2.style = items;
-    obj.children = <React3 style={null} />;
-    tmp7 = <React3 style={tmp.indicatorContainer}>{null}</React3>;
+    tmp7 = <_false style={tmp.indicatorContainer}>{null}</_false>;
   }
   return tmp7;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
+
+export default tmp5;

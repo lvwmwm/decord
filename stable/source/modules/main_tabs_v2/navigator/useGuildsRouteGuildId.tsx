@@ -1,25 +1,61 @@
-// Module ID: 16360
-// Function ID: 16361
+// Module ID: 15651
+// Function ID: 15652
 // Name: useGuildsRouteGuildId
-// Dependencies: [1485, 2]
-// Exports: default, useGuildsRouteGuildAndChannelId
+// Dependencies: [558, 1492, 576, 2]
+// Exports: default
 
-// Module 16360 (useGuildsRouteGuildId)
-import Link from "Link" /* 1485 */;
+// Module 15651 (useGuildsRouteGuildId)
+import react from "react" /* 576 */;
+import Link from "Link" /* 1492 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/main_tabs_v2/navigator/useGuildsRouteGuildId.tsx");
-
-export default function useGuildsRouteGuildId() {
-  const params = Link.useRoute().params;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+const fn = () => {
+  const obj = Link;
+  const params = obj.useRoute().params;
   let guildId;
   if (params != null) {
     guildId = params.guildId;
   }
   return guildId;
 };
-export const useGuildsRouteGuildAndChannelId = function useGuildsRouteGuildAndChannelId() {
-  const route = Link.useRoute();
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = react;
+  const cResult = obj.c(3);
+  const obj2 = Link;
+  const route = obj2.useRoute();
+  let guildId;
+  if (route != null) {
+    const params = route.params;
+    if (params != null) {
+      guildId = params.guildId;
+    }
+  }
+  let channelId;
+  if (route != null) {
+    const params2 = route.params;
+    if (params2 != null) {
+      channelId = params2.channelId;
+    }
+  }
+  if (cResult[0] === guildId) {
+    let tmp5;
+    if (cResult[1] === channelId) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const items = [guildId, channelId];
+  cResult[0] = guildId;
+  cResult[1] = channelId;
+  cResult[2] = items;
+  tmp5 = items;
+}) : (() => {
+  const obj = Link;
+  const route = obj.useRoute();
   let guildId;
   if (route != null) {
     const params = route.params;
@@ -37,4 +73,8 @@ export const useGuildsRouteGuildAndChannelId = function useGuildsRouteGuildAndCh
   }
   items[1] = channelId;
   return items;
-};
+});
+const result1 = size.fileFinishedImporting("modules/main_tabs_v2/navigator/useGuildsRouteGuildId.tsx");
+
+export default fn;
+export const useGuildsRouteGuildAndChannelId = tmp3;

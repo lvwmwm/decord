@@ -1,28 +1,33 @@
-// Module ID: 4780
-// Function ID: 4781
+// Module ID: 4826
+// Function ID: 4827
 // Name: AccessibilityStore
-// Dependencies: [109, 1183, 1182, 1220, 1074, 4781, 4782, 2019, 504, 510, 4639, 573, 2]
+// Dependencies: [109, 4827, 1195, 1194, 1232, 1086, 4830, 4831, 2027, 504, 510, 4687, 585, 2]
 
-// Module 4780 (AccessibilityStore)
-import initializeDefault from "initialize" /* 504 */;
+// Module 4826 (AccessibilityStore)
+import get_initializedDefault from "get initialized" /* 504 */;
 import Storage7 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import shared from "shared" /* 4639 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4782 */;
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import shared from "shared" /* 4687 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4831 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import GameModeStore from "GameModeStore" /* 4827 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1195 */;
+import ThemeStore from "ThemeStore" /* 1194 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import Constants from "Constants" /* 1086 */;
+import MessageConstants from "MessageConstants" /* 4830 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let indexOf;
+
+let closure_12;
+let map1;
+let unpackModuleId;
 function maybeApplyNoTextColorForLightCustomTheme() {
-  const officialMessageStyleExplicitlySet = obj.officialMessageStyleExplicitlySet;
-  let tmp = !officialMessageStyleExplicitlySet;
-  if (!officialMessageStyleExplicitlySet) {
-    let tmp3 = "default" !== obj.officialMessageStyle;
-    if (!tmp3) {
-      tmp3 = ThemeStore.theme !== ThemeTypes.LIGHT;
-    }
+  let tmp = !obj.officialMessageStyleExplicitlySet;
+  if (tmp) {
+    let tmp3 = "default" !== obj.officialMessageStyle || ThemeStore.theme !== ThemeTypes.LIGHT;
     if (!tmp3) {
       const ClientThemeSettings = require("UserSettings").ClientThemeSettings;
       const setting = ClientThemeSettings.getSetting();
@@ -44,7 +49,7 @@ function maybeApplyNoTextColorForLightCustomTheme() {
       tmp3 = !tmp10;
     }
     let flag = !tmp3;
-    if (!tmp3) {
+    if (flag) {
       obj.officialMessageStyle = "no_text_color";
       flag = true;
     }
@@ -53,14 +58,17 @@ function maybeApplyNoTextColorForLightCustomTheme() {
   return tmp;
 }
 function handleReducedMotionUpdated() {
-  obj = {};
+  let str;
+  let str2;
+  obj = { youBarNameplateAnimation: str2, youBarAvatarDecoAnimation: str };
   const merged = Object.assign(obj);
-  let str = "animate-never";
-  let str2 = "animate-never";
+  str = "animate-never";
+  str2 = "animate-never";
   if ("animate-never" !== obj.youBarNameplateAnimation) {
+    let flag;
     const prefersReducedMotion = obj.prefersReducedMotion;
     if ("no-preference" === prefersReducedMotion) {
-      let flag = false;
+      flag = false;
     } else {
       flag = true;
       if ("reduce" !== prefersReducedMotion) {
@@ -73,11 +81,11 @@ function handleReducedMotionUpdated() {
     }
     str2 = str5;
   }
-  obj.youBarNameplateAnimation = str2;
   if (str !== obj.youBarAvatarDecoAnimation) {
+    let flag2;
     const prefersReducedMotion2 = obj.prefersReducedMotion;
     if ("no-preference" === prefersReducedMotion2) {
-      let flag2 = false;
+      flag2 = false;
     } else {
       flag2 = true;
       if ("reduce" !== prefersReducedMotion2) {
@@ -90,46 +98,58 @@ function handleReducedMotionUpdated() {
     }
     str = str8;
   }
-  obj.youBarAvatarDecoAnimation = str;
 }
 let closure_3 = ["fontScale"];
-const Constants = fn(1074);
 const Accessibility = Constants.Accessibility;
 const ThemeTypes = Constants.ThemeTypes;
-const MessageConstants = fn(4781);
-({ MESSAGE_GROUP_SPACING: c10, DEFAULT_COMPACT_SPACING: closure_11, DEFAULT_COZY_SPACING: closure_12 } = MessageConstants);
+({ MESSAGE_GROUP_SPACING: unpackModuleId, DEFAULT_COMPACT_SPACING: closure_12, DEFAULT_COZY_SPACING: map1 } = MessageConstants);
 let obj = { DEFAULT: "default", HIGH: "high" };
 let obj2 = { FLEXIBLE: "flexible", CONDENSED: "condensed", HIDDEN: "hidden" };
 let obj3 = { fontSize: Accessibility.FONT_SIZE_DEFAULT, zoom: Accessibility.ZOOM_DEFAULT, keyboardModeEnabled: false, contrastMode: obj.DEFAULT, colorblindMode: false, lowContrastMode: false, saturation: 1, contrast: 1, desaturateUserColors: false, forcedColorsModalSeen: false, keyboardNavigationExplainerModalSeen: false, messageGroupSpacing: null, systemPrefersReducedMotion: "no-preference", systemPrefersCrossfades: false, prefersReducedMotion: "auto", systemForcedColors: "none", syncForcedColors: true, systemPrefersContrast: "no-preference", alwaysShowLinkDecorations: false, roleStyle: "username", officialMessageStyle: "default", officialMessageStyleExplicitlySet: false, displayNameStylesEnabled: true, submitButtonEnabled: false, syncProfileThemeWithUserTheme: false, enableCustomCursor: true, switchIconsEnabled: false, appsButtonEnabled: true, expressionPickerFormat: obj2.FLEXIBLE, condensePickerWhenNarrow: true, emojiButtonEnabled: true, gifButtonEnabled: true, stickerButtonEnabled: true, youBarNameplateAnimation: "animate-never", youBarAvatarDecoAnimation: "animate-never" };
 obj = obj3;
-let closure_17 = { 12: "font-size-12", 14: "font-size-14", 15: "font-size-15", 16: "font-size-16", 18: "font-size-18", 20: "font-size-20", 24: "font-size-24" };
-const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
+let closure_18 = { 12: "font-size-12", 14: "font-size-14", 15: "font-size-15", 16: "font-size-16", 18: "font-size-18", 20: "font-size-20", 24: "font-size-24" };
+const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class AccessibilityStore extends DeviceSettingsStore {
+  initialize(arg0) {
+    const self = this;
+    let tmp = arg0;
+    this.waitFor(UserSettingsProtoStore);
+    obj = {};
+    const merged = Object.assign(obj3);
+    const tmp2 = UserSettingsProtoStore;
+    if (arg0 == null) {
+      tmp = null;
+    }
+    const merged1 = Object.assign(tmp);
+    if (isNaN(obj.fontSize)) {
+      obj.fontSize = Accessibility.FONT_SIZE_DEFAULT;
+    }
+    let num = -1;
+    indexOf = indexOf.indexOf;
+    if (null != obj.messageGroupSpacing) {
+      num = obj.messageGroupSpacing;
+    }
+    if (indexOf(num) < 0) {
+      obj.messageGroupSpacing = null;
+    }
+    const items = [tmp2, SelectivelySyncedUserSettingsStore];
+    self.syncWith(items, maybeApplyNoTextColorForLightCustomTheme);
+    let isThrottling = false;
+    const items1 = [GameModeStore];
+    self.syncWith(items1, () => {
+      isThrottling = GameModeStore.isThrottling;
+      let flag = isThrottling !== isThrottling;
+      if (flag) {
+        flag = true;
+      }
+      return flag;
+    });
+  }
+  getUserAgnosticState() {
+    return obj;
+  }
 }
 const prototype = AccessibilityStore.prototype;
-prototype["initialize"] = function initialize(arg0) {
-  const self = this;
-  let tmp = arg0;
-  this.waitFor(UserSettingsProtoStore);
-  obj = {};
-  const merged = Object.assign(obj3);
-  if (arg0 == null) {
-    tmp = null;
-  }
-  const merged1 = Object.assign(tmp);
-  if (isNaN(obj.fontSize)) {
-    obj.fontSize = Accessibility.FONT_SIZE_DEFAULT;
-  }
-  let num = -1;
-  if (null != obj.messageGroupSpacing) {
-    num = obj.messageGroupSpacing;
-  }
-  if (closure_1_10.indexOf(num) < 0) {
-    obj.messageGroupSpacing = null;
-  }
-  const items = [UserSettingsProtoStore, SelectivelySyncedUserSettingsStore];
-  self.syncWith(items, maybeApplyNoTextColorForLightCustomTheme);
-};
 Object.defineProperty(prototype, "fontScale", {
   get: function fontScale() {
     return obj.fontSize / Accessibility.FONT_SIZE_DEFAULT * 100;
@@ -156,14 +176,15 @@ Object.defineProperty(prototype, "isFontScaledDown", {
 });
 Object.defineProperty(prototype, "fontScaleClass", {
   get: function fontScaleClass() {
+    let combined;
     const self = this;
-    let str = closure_17[this.fontSize];
+    let str = closure_18[this.fontSize];
     if (str == null) {
       str = "";
     }
     if (self.isFontScaledUp) {
       const _HermesInternal2 = HermesInternal;
-      let combined = "a11y-font-scaled-up " + str;
+      combined = "a11y-font-scaled-up " + str;
     } else {
       const _HermesInternal = HermesInternal;
       if (self.isFontScaledDown) {
@@ -244,11 +265,12 @@ Object.defineProperty(prototype, "keyboardNavigationExplainerModalSeen", {
 });
 Object.defineProperty(prototype, "messageGroupSpacing", {
   get: function messageGroupSpacing() {
+    let messageGroupSpacing;
     if (null != obj.messageGroupSpacing) {
-      let messageGroupSpacing = obj.messageGroupSpacing;
+      messageGroupSpacing = obj.messageGroupSpacing;
     } else {
       const MessageDisplayCompact = require("UserSettings").MessageDisplayCompact;
-      messageGroupSpacing = MessageDisplayCompact.getSetting() ? closure_1_11 : closure_1_12;
+      messageGroupSpacing = MessageDisplayCompact.getSetting() ? closure_12 : map1;
     }
     return messageGroupSpacing;
   },
@@ -257,14 +279,14 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
 Object.defineProperty(prototype, "isMessageGroupSpacingIncreased", {
   get: function isMessageGroupSpacingIncreased() {
     const MessageDisplayCompact = require("UserSettings").MessageDisplayCompact;
-    return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? closure_1_11 : closure_1_12);
+    return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? closure_12 : map1);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMessageGroupSpacingDecreased", {
   get: function isMessageGroupSpacingDecreased() {
     const MessageDisplayCompact = require("UserSettings").MessageDisplayCompact;
-    return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? closure_1_11 : closure_1_12);
+    return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? closure_12 : map1);
   },
   set: undefined
 });
@@ -292,11 +314,12 @@ Object.defineProperty(prototype, "rawPrefersReducedMotion", {
   },
   set: undefined
 });
-Object.defineProperty(prototype, "useReducedMotion", {
-  get: function useReducedMotion() {
+Object.defineProperty(prototype, "prefersReducedMotion", {
+  get: function prefersReducedMotion() {
+    let flag;
     const prefersReducedMotion = obj.prefersReducedMotion;
     if ("no-preference" === prefersReducedMotion) {
-      let flag = false;
+      flag = false;
     } else {
       flag = true;
       if ("reduce" !== prefersReducedMotion) {
@@ -304,6 +327,17 @@ Object.defineProperty(prototype, "useReducedMotion", {
       }
     }
     return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "useReducedMotion", {
+  get: function useReducedMotion() {
+    let prefersReducedMotion = GameModeStore.isThrottling;
+    if (!prefersReducedMotion) {
+      const self = this;
+      prefersReducedMotion = this.prefersReducedMotion;
+    }
+    return prefersReducedMotion;
   },
   set: undefined
 });
@@ -460,9 +494,6 @@ Object.defineProperty(prototype, "youBarAvatarDecoAnimation", {
   },
   set: undefined
 });
-prototype["getUserAgnosticState"] = function getUserAgnosticState() {
-  return obj;
-};
 AccessibilityStore.displayName = "AccessibilityStore";
 AccessibilityStore.persistKey = "AccessibilityStore";
 let items = [
@@ -470,10 +501,7 @@ let items = [
     const Storage = Storage7.Storage;
     const fontScale = Storage.get("a11yFontScale") || 100;
     const Storage2 = tmp(510).Storage;
-    let zoom = Storage2.get("a11yZoom");
-    if (!zoom) {
-      zoom = Accessibility.ZOOM_DEFAULT;
-    }
+    const zoom = Storage2.get("a11yZoom") || Accessibility.ZOOM_DEFAULT;
     const Storage3 = tmp(510).Storage;
     const colorblindMode = Storage3.get("a11yColorblindMode") || false;
     const Storage4 = tmp(510).Storage;
@@ -485,9 +513,11 @@ let items = [
     return { fontScale, zoom, colorblindMode, keyboardModeEnabled: false };
   },
   (fontScale) => {
+    let num4;
     fontScale = fontScale.fontScale;
+    const tmp = _objectWithoutProperties(fontScale, closure_3);
     if (82 === fontScale) {
-      let num4 = 12;
+      num4 = 12;
     } else if (92 === fontScale) {
       num4 = 15;
     } else {
@@ -505,83 +535,67 @@ let items = [
         }
       }
     }
-    obj = {};
-    const merged = Object.assign(_objectWithoutProperties(fontScale, closure_3));
-    obj.fontSize = num4;
+    obj = { fontSize: num4 };
+    const merged = Object.assign(tmp);
     return obj;
   },
   (arg0) => {
-    obj = {};
+    obj = { darkSidebar: false };
     const merged = Object.assign(arg0);
-    obj.darkSidebar = false;
     return obj;
   },
   (arg0) => {
-    obj = {};
+    obj = { messageGroupSpacing: null };
     const merged = Object.assign(arg0);
-    obj.messageGroupSpacing = null;
     return obj;
   },
   (arg0) => {
-    obj = {};
+    obj = { systemPrefersReducedMotion: "no-preference", prefersReducedMotion: "auto" };
     const merged = Object.assign(arg0);
-    obj.systemPrefersReducedMotion = "no-preference";
-    obj.prefersReducedMotion = "auto";
     return obj;
   },
   (saturation) => {
-    obj = {};
+    obj = { alwaysShowLinkDecorations: saturation.saturation <= shared.LOW_SATURATION_THRESHOLD };
     const merged = Object.assign(saturation);
-    obj.alwaysShowLinkDecorations = saturation.saturation <= shared.LOW_SATURATION_THRESHOLD;
     return obj;
   },
   (arg0) => {
-    obj = {};
+    obj = { disableVoiceBackgrounds: false };
     const merged = Object.assign(arg0);
-    obj.disableVoiceBackgrounds = false;
     return obj;
   },
   (arg0) => {
     try {
-      delete tmp[tmp2];
-      return arg0;
+      delete tmp["disableVoiceBackgrounds"];
     } catch (err) {
     }
+    return arg0;
   },
   (arg0) => {
     try {
-      delete tmp[tmp2];
-      return arg0;
+      delete tmp["hideGuildTags"];
     } catch (err) {
     }
+    return arg0;
   },
   (arg0) => {
-    obj = {};
+    obj = { enableCustomCursor: true };
     const merged = Object.assign(arg0);
-    obj.enableCustomCursor = true;
     return obj;
   },
   (arg0) => {
-    obj = {};
+    obj = { appsButtonEnabled: true, expressionPickerFormat: obj2.FLEXIBLE, condensePickerWhenNarrow: true, emojiButtonEnabled: true, gifButtonEnabled: true, stickerButtonEnabled: true };
     const merged = Object.assign(arg0);
-    obj.appsButtonEnabled = true;
-    obj.expressionPickerFormat = obj2.FLEXIBLE;
-    obj.condensePickerWhenNarrow = true;
-    obj.emojiButtonEnabled = true;
-    obj.gifButtonEnabled = true;
-    obj.stickerButtonEnabled = true;
     return obj;
   },
   (arg0) => {
-    obj = {};
+    obj = { youBarNameplateAnimation: "animate-never", youBarAvatarDecoAnimation: "animate-never" };
     const merged = Object.assign(arg0);
-    obj.youBarNameplateAnimation = "animate-never";
-    obj.youBarAvatarDecoAnimation = "animate-never";
     return obj;
   }
 ];
 AccessibilityStore.migrations = items;
-const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
+let obj4 = {
   ACCESSIBILITY_SET_FONT_SIZE: function handleFontScaleTo(fontSize) {
     let FONT_SIZE_DEFAULT = fontSize.fontSize;
     const FONT_SIZES = Accessibility.FONT_SIZES;
@@ -589,11 +603,10 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
       FONT_SIZE_DEFAULT = tmp.FONT_SIZE_DEFAULT;
     }
     if (FONT_SIZE_DEFAULT <= Accessibility.FONT_SIZE_MAX) {
-      if (FONT_SIZE_DEFAULT >= tmp.FONT_SIZE_MIN) {
+      if (FONT_SIZE_DEFAULT >= Accessibility.FONT_SIZE_MIN) {
         if (obj.fontSize !== FONT_SIZE_DEFAULT) {
-          obj = {};
+          obj = { fontSize: FONT_SIZE_DEFAULT };
           const merged = Object.assign(obj);
-          obj.fontSize = FONT_SIZE_DEFAULT;
         }
       }
     }
@@ -603,10 +616,10 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
     if (zoom.zoom >= Accessibility.ZOOM_MIN) {
       if (zoom.zoom <= tmp.ZOOM_MAX) {
         if (obj.zoom !== zoom.zoom) {
-          obj = {};
+          obj = { zoom: zoom.zoom };
           const merged = Object.assign(obj);
-          obj.zoom = zoom.zoom;
-          CrossPlatformNativeUtilsDefault.setZoomFactor(obj.zoom);
+          obj2 = CrossPlatformNativeUtilsDefault;
+          obj2.setZoomFactor(obj.zoom);
         }
       }
     }
@@ -621,27 +634,26 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
     obj = {};
     const merged = Object.assign(obj);
     if (obj.fontSize !== Accessibility.FONT_SIZE_DEFAULT) {
-      obj.fontSize = tmp.FONT_SIZE_DEFAULT;
+      obj.fontSize = Accessibility.FONT_SIZE_DEFAULT;
     }
     if (obj.zoom !== Accessibility.ZOOM_DEFAULT) {
-      obj.zoom = tmp.ZOOM_DEFAULT;
-      CrossPlatformNativeUtilsDefault.setZoomFactor(obj.zoom);
+      obj.zoom = Accessibility.ZOOM_DEFAULT;
+      obj2 = CrossPlatformNativeUtilsDefault;
+      obj2.setZoomFactor(obj.zoom);
     }
   },
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: function handleEnableKeyboardMode() {
     if (obj.keyboardModeEnabled) {
       return false;
     } else {
-      obj = {};
+      obj = { keyboardModeEnabled: true };
       const merged = Object.assign(obj);
-      obj.keyboardModeEnabled = true;
     }
   },
   ACCESSIBILITY_KEYBOARD_MODE_DISABLE: function handleDisableKeyboardMode() {
     if (obj.keyboardModeEnabled) {
-      obj = {};
+      obj = { keyboardModeEnabled: false };
       const merged = Object.assign(obj);
-      obj.keyboardModeEnabled = false;
     } else {
       return false;
     }
@@ -667,30 +679,28 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
     obj.desaturateUserColors = !obj.desaturateUserColors;
   },
   ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: function handleSystemColorPreferencesChanged(systemForcedColors) {
-    obj = {};
+    let str;
+    obj = { systemForcedColors: str };
     const merged = Object.assign(obj);
-    let str = systemForcedColors.systemForcedColors;
+    str = systemForcedColors.systemForcedColors;
     if (str == null) {
       str = "none";
     }
-    obj.systemForcedColors = str;
   },
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: function handleSystemPrefersContrastChanged(systemPrefersContrast) {
     if (obj.systemPrefersContrast === systemPrefersContrast.systemPrefersContrast) {
       return false;
     } else {
-      obj = {};
+      obj = { systemPrefersContrast: systemPrefersContrast.systemPrefersContrast };
       const merged = Object.assign(obj);
-      obj.systemPrefersContrast = systemPrefersContrast.systemPrefersContrast;
     }
   },
   ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: function handleSystemPrefersReducedMotionChanged(systemPrefersReducedMotion) {
     if (obj.systemPrefersReducedMotion === systemPrefersReducedMotion.systemPrefersReducedMotion) {
       return false;
     } else {
-      obj = {};
+      obj = { systemPrefersReducedMotion: systemPrefersReducedMotion.systemPrefersReducedMotion };
       const merged = Object.assign(obj);
-      obj.systemPrefersReducedMotion = systemPrefersReducedMotion.systemPrefersReducedMotion;
       handleReducedMotionUpdated();
     }
   },
@@ -698,18 +708,16 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
     if (obj.systemPrefersCrossfades === systemPrefersCrossfades.systemPrefersCrossfades) {
       return false;
     } else {
-      obj = {};
+      obj = { systemPrefersCrossfades: systemPrefersCrossfades.systemPrefersCrossfades };
       const merged = Object.assign(obj);
-      obj.systemPrefersCrossfades = systemPrefersCrossfades.systemPrefersCrossfades;
     }
   },
   ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION: function handleSetPrefersReducedMotion(prefersReducedMotion) {
     if (obj.prefersReducedMotion === prefersReducedMotion.prefersReducedMotion) {
       return false;
     } else {
-      obj = {};
+      obj = { prefersReducedMotion: prefersReducedMotion.prefersReducedMotion };
       const merged = Object.assign(obj);
-      obj.prefersReducedMotion = prefersReducedMotion.prefersReducedMotion;
       handleReducedMotionUpdated();
     }
   },
@@ -717,14 +725,12 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
     obj.syncForcedColors = syncForcedColors.syncForcedColors;
   },
   ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: function handleSetAlwaysShowLinkDecorations(alwaysShowLinkDecorations) {
-    obj = {};
+    obj = { alwaysShowLinkDecorations: alwaysShowLinkDecorations.alwaysShowLinkDecorations };
     const merged = Object.assign(obj);
-    obj.alwaysShowLinkDecorations = alwaysShowLinkDecorations.alwaysShowLinkDecorations;
   },
   ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR: function handleSetEnableCustomCursor(enableCustomCursor) {
-    obj = {};
+    obj = { enableCustomCursor: enableCustomCursor.enableCustomCursor };
     const merged = Object.assign(obj);
-    obj.enableCustomCursor = enableCustomCursor.enableCustomCursor;
   },
   ACCESSIBILITY_SET_ROLE_STYLE: function handleSetRoleStyle(roleStyle) {
     obj.roleStyle = roleStyle.roleStyle;
@@ -740,14 +746,13 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
     obj.forcedColorsModalSeen = true;
   },
   KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: function handleKeyboardNavigationExplainerModalSeen() {
-    obj = {};
+    obj = { keyboardNavigationExplainerModalSeen: true };
     const merged = Object.assign(obj);
-    obj.keyboardNavigationExplainerModalSeen = true;
   },
   ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: function handleMessageGroupSpacingChange(messageGroupSpacing) {
-    obj = {};
+    obj = { messageGroupSpacing };
+    messageGroupSpacing = messageGroupSpacing.messageGroupSpacing;
     const merged = Object.assign(obj);
-    obj.messageGroupSpacing = messageGroupSpacing.messageGroupSpacing;
   },
   ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: function handleSubmitButtonToggle() {
     obj = {};
@@ -760,66 +765,67 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
     obj.syncProfileThemeWithUserTheme = !obj.syncProfileThemeWithUserTheme;
   },
   ACCESSIBILITY_SET_CONTRAST: function handleSetContrast(contrast) {
-    obj = {};
+    obj = { contrast };
+    contrast = contrast.contrast;
     const merged = Object.assign(obj);
-    obj.contrast = contrast.contrast;
   },
   ACCESSIBILITY_SET_CONTRAST_MODE: function handleSetContrastMode(contrastMode) {
-    obj = {};
+    obj = { contrastMode };
+    contrastMode = contrastMode.contrastMode;
     const merged = Object.assign(obj);
-    obj.contrastMode = contrastMode.contrastMode;
   },
   ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED: function handleSetSwitchIconsEnabled(switchIconsEnabled) {
-    obj = {};
+    obj = { switchIconsEnabled: switchIconsEnabled.switchIconsEnabled };
     const merged = Object.assign(obj);
-    obj.switchIconsEnabled = switchIconsEnabled.switchIconsEnabled;
   },
   ACCESSIBILITY_SET_CHAT_BAR_SETTINGS: function handleSetChatBarSettings(appsButtonEnabled) {
     obj = {};
     const merged = Object.assign(obj);
     let tmp2 = null != appsButtonEnabled.appsButtonEnabled;
     if (tmp2) {
+      tmp2 = { appsButtonEnabled: appsButtonEnabled.appsButtonEnabled };
       obj2 = { appsButtonEnabled: appsButtonEnabled.appsButtonEnabled };
-      tmp2 = obj2;
     }
     const merged1 = Object.assign(tmp2);
     let tmp4 = null != appsButtonEnabled.expressionPickerFormat;
     if (tmp4) {
+      tmp4 = { expressionPickerFormat: appsButtonEnabled.expressionPickerFormat };
       obj3 = { expressionPickerFormat: appsButtonEnabled.expressionPickerFormat };
-      tmp4 = obj3;
     }
     const merged2 = Object.assign(tmp4);
     let tmp6 = null != appsButtonEnabled.condensePickerWhenNarrow;
     if (tmp6) {
+      tmp6 = { condensePickerWhenNarrow: appsButtonEnabled.condensePickerWhenNarrow };
       const obj4 = { condensePickerWhenNarrow: appsButtonEnabled.condensePickerWhenNarrow };
-      tmp6 = obj4;
     }
     const merged3 = Object.assign(tmp6);
     let tmp8 = null != appsButtonEnabled.emojiButtonEnabled;
     if (tmp8) {
+      tmp8 = { emojiButtonEnabled: appsButtonEnabled.emojiButtonEnabled };
       const obj5 = { emojiButtonEnabled: appsButtonEnabled.emojiButtonEnabled };
-      tmp8 = obj5;
     }
     const merged4 = Object.assign(tmp8);
     let tmp10 = null != appsButtonEnabled.gifButtonEnabled;
     if (tmp10) {
+      tmp10 = { gifButtonEnabled: appsButtonEnabled.gifButtonEnabled };
       const obj6 = { gifButtonEnabled: appsButtonEnabled.gifButtonEnabled };
-      tmp10 = obj6;
     }
     const merged5 = Object.assign(tmp10);
     let tmp12 = null != appsButtonEnabled.stickerButtonEnabled;
     if (tmp12) {
+      tmp12 = { stickerButtonEnabled: appsButtonEnabled.stickerButtonEnabled };
       const obj7 = { stickerButtonEnabled: appsButtonEnabled.stickerButtonEnabled };
-      tmp12 = obj7;
     }
     const merged6 = Object.assign(tmp12);
   },
   ACCESSIBILITY_SET_YOU_BAR_ANIMATIONS: function handleSetYouBarAnimations(animateNameplate) {
-    obj = {};
+    let str;
+    let str2;
+    obj = { youBarNameplateAnimation: str2, youBarAvatarDecoAnimation: str };
     const merged = Object.assign(obj);
     animateNameplate = animateNameplate.animateNameplate;
-    let str = "animate-always";
-    let str2 = "animate-always";
+    str = "animate-always";
+    str2 = "animate-always";
     if (true !== animateNameplate) {
       str2 = "animate-never";
       if (false !== animateNameplate) {
@@ -828,7 +834,6 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
         }
       }
     }
-    obj.youBarNameplateAnimation = str2;
     const animateAvatarDeco = animateNameplate.animateAvatarDeco;
     if (true !== animateAvatarDeco) {
       str = "animate-never";
@@ -838,10 +843,9 @@ const accessibilityStore = new AccessibilityStore(DispatcherDefault, {
         }
       }
     }
-    obj.youBarAvatarDecoAnimation = str;
   }
-});
-const size = fn(2);
+};
+const accessibilityStore = new AccessibilityStore(DispatcherDefault, obj4);
 const result = size.fileFinishedImporting("modules/a11y/AccessibilityStore.tsx");
 
 export default accessibilityStore;

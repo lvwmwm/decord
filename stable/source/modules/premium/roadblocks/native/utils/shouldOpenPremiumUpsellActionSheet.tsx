@@ -1,12 +1,13 @@
-// Module ID: 9466
-// Function ID: 9467
+// Module ID: 8618
+// Function ID: 8619
 // Name: shouldOpenPremiumUpsellActionSheet
-// Dependencies: [8125, 1094, 8128, 9467, 2]
+// Dependencies: [7274, 1106, 7277, 8619, 2]
 // Exports: default
 
-// Module 9466 (shouldOpenPremiumUpsellActionSheet)
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8125 */;
+// Module 8618 (shouldOpenPremiumUpsellActionSheet)
+import ConstantsIOS from "ConstantsIOS" /* 1106 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7274 */;
+import MobileStickerPickerUpsellRestyleExperiment from "MobileStickerPickerUpsellRestyleExperiment" /* 8619 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/utils/shouldOpenPremiumUpsellActionSheet.tsx");
@@ -14,31 +15,32 @@ const result = size.fileFinishedImporting("modules/premium/roadblocks/native/uti
 export default function maybeOpenPremiumUpsellActionSheet(initialUpsellKey) {
   initialUpsellKey = initialUpsellKey.initialUpsellKey;
   if (ConstantsIOS.UpsellTypes.UPLOAD === initialUpsellKey) {
-    const INCREASED_FILE_UPLOAD_SIZE = tmp(8128).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE;
+    const INCREASED_FILE_UPLOAD_SIZE = tmp(7277).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE;
     openPremiumUpsellActionSheetDefault(INCREASED_FILE_UPLOAD_SIZE, undefined, undefined, undefined, initialUpsellKey.appEntryKey);
     return true;
-  } else if (tmp(1094).UpsellTypes.GLOBAL_EMOJI === initialUpsellKey) {
-    const EMOJIS_EVERYWHERE = tmp(8128).EntitlementFeatureNames.EMOJIS_EVERYWHERE;
+  } else if (ConstantsIOS.UpsellTypes.GLOBAL_EMOJI === initialUpsellKey) {
+    const EMOJIS_EVERYWHERE = tmp(7277).EntitlementFeatureNames.EMOJIS_EVERYWHERE;
     openPremiumUpsellActionSheetDefault(EMOJIS_EVERYWHERE, undefined, undefined, undefined, initialUpsellKey.appEntryKey);
     return true;
-  } else if (tmp(1094).UpsellTypes.ANIMATED_EMOJI === initialUpsellKey) {
-    const ANIMATED_EMOJIS = tmp(8128).EntitlementFeatureNames.ANIMATED_EMOJIS;
+  } else if (ConstantsIOS.UpsellTypes.ANIMATED_EMOJI === initialUpsellKey) {
+    const ANIMATED_EMOJIS = tmp(7277).EntitlementFeatureNames.ANIMATED_EMOJIS;
     openPremiumUpsellActionSheetDefault(ANIMATED_EMOJIS, undefined, undefined, undefined, initialUpsellKey.appEntryKey);
     return true;
-  } else if (tmp(1094).UpsellTypes.GLOBAL_STICKER === initialUpsellKey) {
-    let flag4 = tmp(9467).getMobileStickerPickerUpsellRestyleEnabled("native.shouldOpenPremiumUpsellActionSheet");
+  } else if (ConstantsIOS.UpsellTypes.GLOBAL_STICKER === initialUpsellKey) {
+    const tmpResult = MobileStickerPickerUpsellRestyleExperiment;
+    let flag4 = tmpResult.getMobileStickerPickerUpsellRestyleEnabled("native.shouldOpenPremiumUpsellActionSheet");
     if (flag4) {
-      const STICKERS_EVERYWHERE = tmp(8128).EntitlementFeatureNames.STICKERS_EVERYWHERE;
+      const STICKERS_EVERYWHERE = tmp(7277).EntitlementFeatureNames.STICKERS_EVERYWHERE;
       openPremiumUpsellActionSheetDefault(STICKERS_EVERYWHERE, undefined, undefined, undefined, initialUpsellKey.appEntryKey);
       flag4 = true;
     }
     return flag4;
-  } else if (tmp(1094).UpsellTypes.SOUNDBOARD === initialUpsellKey) {
-    const SOUNDBOARD_EVERYWHERE = tmp(8128).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+  } else if (ConstantsIOS.UpsellTypes.SOUNDBOARD === initialUpsellKey) {
+    const SOUNDBOARD_EVERYWHERE = tmp(7277).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
     openPremiumUpsellActionSheetDefault(SOUNDBOARD_EVERYWHERE, undefined, undefined, undefined, initialUpsellKey.appEntryKey);
     return true;
-  } else if (tmp(1094).UpsellTypes.STREAM_HIGH_QUALITY === initialUpsellKey) {
-    const STREAM_HIGH_QUALITY = tmp(8128).EntitlementFeatureNames.STREAM_HIGH_QUALITY;
+  } else if (ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY === initialUpsellKey) {
+    const STREAM_HIGH_QUALITY = tmp(7277).EntitlementFeatureNames.STREAM_HIGH_QUALITY;
     openPremiumUpsellActionSheetDefault(STREAM_HIGH_QUALITY, undefined, undefined, undefined, initialUpsellKey.appEntryKey);
     return true;
   } else {

@@ -1,28 +1,39 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12064
+// Function ID: 12065
 // Name: HubProgressHeader
-// Dependencies: [19, 17, 10126, 12593, 21, 4788, 576, 12951, 1186, 1115, 8903, 4755, 12955, 1980, 13034, 2]
+// Dependencies: [19, 17, 9264, 11686, 21, 4837, 588, 12061, 1198, 1127, 8057, 4801, 12065, 1987, 12165, 2]
 // Exports: default
 
-// Module 12954 (HubProgressHeader)
-import nativeDefault from "native" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import noop from "module_19" /* 19 */;
+// Module 12064 (HubProgressHeader)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 588 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 11686 */;
+import react from "react" /* 19 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 9264 */;
+import createStyles from "createStyles" /* 4837 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const HubProgressBarConstants = fn(10126);
+let closure_4;
+let hasOwnProperty;
+let obj2;
+const View = react_native.View;
 ({ HUB_PROGRESS_ACTION_SHEET_ID: closure_4, HUB_PROGRESS_NUM_TOTAL_STEPS: hasOwnProperty } = HubProgressBarConstants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-let obj2 = { container: { overflow: "hidden", height: fn(12593).GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT, padding: 16 }, icon: { width: 48, height: 48 }, innerContainer: { paddingVertical: 8, paddingLeft: 8, paddingRight: 12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
-let closure_7 = createStyles.createStyles(obj2);
-let size = fn(2);
+const GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT = directory_channels_GuildDirectoryConstants.GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT;
+const jsx = Fragment.jsx;
+let obj = { container: { overflow: "hidden", height: GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT, padding: 16 }, icon: { width: 48, height: 48 }, innerContainer: obj2 };
+obj2 = { paddingVertical: 8, paddingLeft: 8, paddingRight: 12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+let closure_7 = createStyles.createStyles(obj);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/hub/native/components/progress_bar/HubProgressHeader.tsx");
 
 export default function HubProgressHeader(guild) {
+  let FormCTA;
+  let obj5;
+  let tmp11Result;
   guild = guild.guild;
   let flag = guild.onDirectoryPage;
   if (flag === undefined) {
@@ -30,51 +41,54 @@ export default function HubProgressHeader(guild) {
   }
   let nextHubProgressStep;
   let tmp = closure_7();
-  const hubProgressBarCompletedSteps = guild(nextHubProgressStep[7]).useHubProgressBarCompletedSteps(guild);
   let obj = guild(nextHubProgressStep[7]);
-  nextHubProgressStep = guild(nextHubProgressStep[7]).getNextHubProgressStep(hubProgressBarCompletedSteps);
+  const hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
+  let obj2 = guild(nextHubProgressStep[7]);
+  nextHubProgressStep = obj2.getNextHubProgressStep(hubProgressBarCompletedSteps);
   if (null == nextHubProgressStep) {
     return null;
   } else {
-    const size = hubProgressBarCompletedSteps.size;
+    let formatToPlainStringResult;
+    size = hubProgressBarCompletedSteps.size;
     if (flag) {
       flag = nextHubProgressStep === tmp2(tmp3[8]).HubProgressStep.JOIN_GUILD;
     }
-    const hubProgressTitleForStep = tmp2(tmp3[7]).getHubProgressTitleForStep(nextHubProgressStep);
+    const tmp2Result = guild(nextHubProgressStep[7]);
+    const hubProgressTitleForStep = tmp2Result.getHubProgressTitleForStep(nextHubProgressStep);
     if (size < closure_5) {
       const intl2 = tmp2(tmp3[9]).intl;
-      const obj3 = { number: null, total: null };
+      const formatToPlainString = intl2.formatToPlainString;
       const _HermesInternal = HermesInternal;
-      obj3.number = "" + size;
-      obj3.total = tmp7;
-      let formatToPlainStringResult = intl2.formatToPlainString(tmp2(tmp3[9]).t["9j7xDu"], obj3);
+      const obj3 = { number: "" + size, total: tmp7 };
+      const v9j7xDu = tmp2(tmp3[9]).t["9j7xDu"];
+      formatToPlainStringResult = formatToPlainString(v9j7xDu, obj3);
     } else {
       const intl = tmp2(tmp3[9]).intl;
       formatToPlainStringResult = intl.string(tmp2(tmp3[9]).t["+Gyklt"]);
     }
-    const obj4 = { style: tmp.container, children: null };
-    const obj5 = { style: null, iconStyle: null, onPress: null, iconSource: null, title: null, subtitle: null, trailing: null };
+    const obj4 = { style: tmp.container, children: jsx(FormCTA, obj5) };
     ({ innerContainer: obj6.style, icon: obj6.iconStyle } = tmp);
-    obj5.onPress = function onPress() {
-      let tmp = flag;
-      if (flag) {
-        tmp = nextHubProgressStep === preloaded_user_settings.HubProgressStep.JOIN_GUILD;
-      }
-      if (!tmp) {
-        const obj2 = { guild, analyticsSource: "Directory Channel Header" };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12955, dependencyMap.paths), React4, obj2);
-      }
+    obj5 = {
+      style: null,
+      iconStyle: null,
+      onPress() {
+          const tmp = flag && nextHubProgressStep === preloaded_user_settings.HubProgressStep.JOIN_GUILD;
+          if (!tmp) {
+            const obj2 = { guild, analyticsSource: "Directory Channel Header" };
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.openLazy(asyncRequire(12065, dependencyMap.paths), React3, obj2);
+          }
+        },
+      iconSource: flag(nextHubProgressStep[14]),
+      title: hubProgressTitleForStep,
+      subtitle: formatToPlainStringResult,
+      trailing: tmp11Result
     };
-    obj5.iconSource = flag(tmp3[14]);
-    obj5.title = hubProgressTitleForStep;
-    obj5.subtitle = formatToPlainStringResult;
-    let tmp10Result;
+    FormCTA = tmp2(tmp3[10]).FormCTA;
+    tmp11Result = undefined;
     if (flag) {
-      tmp10Result = tmp10(tmp11, {});
+      tmp11Result = tmp11(tmp12, {});
     }
-    obj5.trailing = tmp10Result;
-    obj4.children = jsx(tmp2(tmp3[10]).FormCTA, { style: null, iconStyle: null, onPress: null, iconSource: null, title: null, subtitle: null, trailing: null });
-    return <View style={tmp.container}>{null}</View>;
+    return jsx(View, obj4);
   }
-  let obj2 = guild(nextHubProgressStep[7]);
 };

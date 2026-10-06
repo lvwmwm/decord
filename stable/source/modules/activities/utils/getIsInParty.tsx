@@ -1,10 +1,10 @@
-// Module ID: 12040
-// Function ID: 12041
+// Module ID: 11132
+// Function ID: 11133
 // Name: getIsInParty
 // Dependencies: [2]
 // Exports: getIsInParty
 
-// Module 12040 (getIsInParty)
+// Module 11132 (getIsInParty)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getIsInParty.tsx");
@@ -27,7 +27,6 @@ export const getIsInParty = function getIsInParty(tmp8Result, activity) {
       }
     }
     tmp2 = null != id1 && tmp8Result.party.id === activity.party.id;
-    const tmp5 = null != id1 && tmp8Result.party.id === activity.party.id;
   }
   return tmp2;
 };

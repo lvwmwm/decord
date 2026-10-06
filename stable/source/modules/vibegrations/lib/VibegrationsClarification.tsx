@@ -1,21 +1,22 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 16384
+// Function ID: 16385
 // Name: VibegrationsClarification
 // Dependencies: [2]
 // Exports: formatClarificationAnswers, isClarificationComplete, nextClarificationStep
 
-// Module 17046 (VibegrationsClarification)
+// Module 16384 (VibegrationsClarification)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsClarification.tsx");
 
 export const isClarificationComplete = function isClarificationComplete(questions, arg1) {
-  closure_0 = arg1;
+  let closure_0 = arg1;
   questions = questions.questions;
   return questions.every((item) => {
     let tmp2 = null != tmp;
     if (tmp2) {
-      tmp2 = "" !== tmp.text.trim();
+      const str = closure_0[item.id].text;
+      tmp2 = "" !== str.trim();
     }
     return tmp2;
   });
@@ -38,19 +39,21 @@ export const nextClarificationStep = function nextClarificationStep(clarificatio
   return null;
 };
 export const formatClarificationAnswers = function formatClarificationAnswers(clarification, arg1) {
-  closure_0 = arg1;
+  let closure_0 = arg1;
   const questions = clarification.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
   const found = mapped.filter((answer) => {
     let tmp = null != answer.answer;
     if (tmp) {
-      tmp = "" !== answer.answer.text.trim();
+      const str = answer.answer.text;
+      tmp = "" !== str.trim();
     }
     return tmp;
   });
   const mapped1 = found.map((answer) => {
     const sum = answer.index + 1;
-    return "" + sum + ". " + answer.question.question + " \u2192 " + answer.answer.text.trim();
+    const str = answer.answer.text;
+    return "" + sum + ". " + answer.question.question + " \u2192 " + str.trim();
   });
   return mapped1.join("\n");
 };

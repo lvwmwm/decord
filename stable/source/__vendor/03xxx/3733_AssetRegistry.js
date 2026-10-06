@@ -1,0 +1,10 @@
+// Module ID: 3733
+// Function ID: 3734
+// Name: AssetRegistry
+// Dependencies: [1133]
+
+// Module 3733 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1133 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jdXN0b21fdHlwaW5nX2luZGljYXRvci9pbnRs", scales: [1], hash: "e7ab0bea4c6961977e00d5f419fd2b5a", name: "hu.messages.e7ab0bea4c6961977e00d5f419fd2b5a.compiled.messages", type: "jsona" });

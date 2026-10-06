@@ -1,51 +1,61 @@
-// Module ID: 1242
-// Function ID: 1243
+// Module ID: 1254
+// Function ID: 1255
 // Name: ImpressionStore
-// Dependencies: [1243, 1248, 1249, 2]
+// Dependencies: [1255, 1260, 1261, 2]
 // Exports: cleanupImpression, getImpressionStack, getLocation, setCurrentImpression, setDebugTrackedData
 
-// Module 1242 (ImpressionStore)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import identity from "module_1243" /* 1243 */;
+// Module 1254 (ImpressionStore)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import module_1255 from "module_1255" /* 1255 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
 let closure_2 = Object.freeze({ debugTrackedData: null, impressions: [] });
-const withEqualityFn = identity.createWithEqualityFn(() => closure_2);
+const withEqualityFn = module_1255.createWithEqualityFn(() => closure_2);
 const result = size.fileFinishedImporting("modules/app_analytics/ImpressionStore.tsx");
 
 export const setCurrentImpression = function setCurrentImpression(arg0) {
+  let closure_0;
   _require = arg0;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  let obj = require("react-native");
+  obj.batchUpdates(() => {
     withEqualityFn.setState((impressions) => {
-      const obj = { impressions: null };
-      const items = [];
-      items[HermesBuiltin.arraySpread(impressions.impressions, 0)] = closure_1_0;
-      obj.impressions = items;
+      let items;
+      const obj = { impressions: items };
+      items = [];
+      items[HermesBuiltin.arraySpread(items, impressions.impressions, 0)] = closure_1_0;
       return obj;
     });
   });
 };
 export const cleanupImpression = function cleanupImpression(arg0) {
+  let closure_0;
   _require = arg0;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  let obj = require("react-native");
+  obj.batchUpdates(() => {
     withEqualityFn.setState((impressions) => {
-      const obj = { impressions: null };
+      let sequenceId;
+      const obj = { impressions: impressions.filter((sequenceId) => sequenceId.sequenceId !== sequenceId.sequenceId) };
       impressions = impressions.impressions;
-      obj.impressions = impressions.filter((sequenceId) => sequenceId.sequenceId !== sequenceId.sequenceId);
       return obj;
     });
   });
 };
 export const setDebugTrackedData = function setDebugTrackedData(arg0, arg1) {
+  let closure_0;
+  let closure_1;
   _require = arg0;
   dependencyMap = arg1;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  let obj = require("react-native");
+  obj.batchUpdates(() => {
+    let name;
     withEqualityFn.setState(() => {
-      const obj = { debugTrackedData: null };
+      let obj2;
+      const obj = { debugTrackedData: obj2 };
+      obj2 = { name };
       const merged = Object.assign(closure_1_1);
-      obj.debugTrackedData = { name };
       return obj;
     });
   });

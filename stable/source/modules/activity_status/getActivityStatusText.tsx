@@ -1,19 +1,39 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 10390
+// Function ID: 10391
 // Name: getActivityStatusText
-// Dependencies: [1074, 11180, 8013, 11181, 1115, 11182, 9660, 8647, 2]
+// Dependencies: [1086, 10391, 7162, 10392, 1127, 10393, 8812, 7796, 2]
 // Exports: default
 
-// Module 11179 (getActivityStatusText)
-import Constants from "Constants" /* 1074 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8013 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 11180 */;
+// Module 10390 (getActivityStatusText)
+import Constants from "Constants" /* 1086 */;
+import intl9 from "intl" /* 1127 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7162 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 7796 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 8812 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10391 */;
+import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 10392 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10393 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/activity_status/getActivityStatusText.tsx");
 
 export default function getActivityStatusText(name) {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  let obj11;
+  let obj13;
+  let obj15;
+  let obj17;
+  let obj7;
+  let obj9;
+  let tmp17;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -75,16 +95,16 @@ export default function getActivityStatusText(name) {
     if (name != null) {
       status_display_type1 = name.status_display_type;
     }
-    if (status_display_type1 !== tmp15(11180).StatusDisplayTypes.STATE) {
+    if (status_display_type1 !== StatusDisplayTypes.StatusDisplayTypes.STATE) {
       let status_display_type2;
       if (name != null) {
         status_display_type2 = name.status_display_type;
       }
-      let tmp17 = tmp12;
+      tmp17 = tmp12;
+      const tmp20 = status_display_type2 === StatusDisplayTypes.StatusDisplayTypes.DETAILS && null != tmp5;
       if (tmp20) {
         tmp17 = tmp5;
       }
-      tmp20 = status_display_type2 === tmp15(11180).StatusDisplayTypes.DETAILS && null != tmp5;
     } else {
       tmp17 = tmp8;
     }
@@ -92,24 +112,22 @@ export default function getActivityStatusText(name) {
     tmp17 = tmp2;
   }
   if (isEmbeddedActivityDefault(name)) {
-    const tmp28 = tmp21(11181)(tmp2);
-    const obj = { text: tmp28, tooltip: tmp28 };
-    return obj;
+    const tmp28 = getChannelCopyForEmbeddedActivityDefault(tmp2);
+    return { text: tmp28, tooltip: tmp28 };
   } else {
+    let obj18;
     let type1;
     if (name != null) {
       type1 = name.type;
     }
-    if (type1 === tmp11.PLAYING) {
+    if (type1 === ActivityTypes.PLAYING) {
       if (null != tmp17) {
-        const obj2 = { text: tmp17, tooltip: null };
-        const intl8 = tmp15(1115).intl;
-        const obj3 = { game: tmp17 };
-        obj2.tooltip = intl8.formatToPlainString(tmp15(1115).t.lFApmz, obj3);
+        const obj2 = { text: tmp17, tooltip: intl8.formatToPlainString(intl9.t.lFApmz, obj3) };
+        intl8 = tmp15(1127).intl;
         return obj2;
       }
     }
-    if (tmp21(11182)(name)) {
+    if (isListeningOnSpotifyDefault(name)) {
       if (flag) {
         if (null != tmp8) {
           const parts = tmp8.split("; ");
@@ -117,21 +135,19 @@ export default function getActivityStatusText(name) {
           if (parts != null) {
             joined = parts.join(", ");
           }
-          const obj4 = { text: joined, tooltip: null };
-          const intl7 = tmp15(1115).intl;
-          const obj5 = { name: joined };
-          obj4.tooltip = intl7.formatToPlainString(tmp15(1115).t.Vnuxue, obj5);
+          const obj4 = { text: joined, tooltip: intl7.formatToPlainString(intl9.t.Vnuxue, obj5) };
+          intl7 = tmp15(1127).intl;
           return obj4;
         }
       }
     }
+    const tmp15Result = StageChannelRichPresenceUtils;
     if (tmp15Result.isStageActivity(name)) {
       if (null != tmp2) {
-        const obj6 = { text: tmp2, tooltip: null };
-        const intl6 = tmp15(1115).intl;
-        const obj7 = { name: tmp2 };
-        obj6.tooltip = intl6.formatToPlainString(tmp15(1115).t.pW3Ip3, obj7);
-        let obj18 = obj6;
+        const obj6 = { text: tmp2, tooltip: intl6.formatToPlainString(intl9.t.pW3Ip3, obj7) };
+        intl6 = tmp15(1127).intl;
+        obj18 = obj6;
+        obj7 = { name: tmp2 };
       }
       return obj18;
     }
@@ -139,23 +155,21 @@ export default function getActivityStatusText(name) {
     if (name != null) {
       type2 = name.type;
     }
-    if (type2 === tmp11.LISTENING) {
+    if (type2 === ActivityTypes.LISTENING) {
       if (null != tmp17) {
-        const obj8 = { text: tmp17, tooltip: null };
-        const intl5 = tmp15(1115).intl;
-        const obj9 = { name: tmp17 };
-        obj8.tooltip = intl5.formatToPlainString(tmp15(1115).t.Vnuxue, obj9);
+        const obj8 = { text: tmp17, tooltip: intl5.formatToPlainString(intl9.t.Vnuxue, obj9) };
+        intl5 = tmp15(1127).intl;
         obj18 = obj8;
+        obj9 = { name: tmp17 };
       }
     }
-    if (tmp21(8647)(name)) {
+    if (isCrunchyrollActivityDefault(name)) {
       if (flag) {
         if (null != tmp5) {
-          const obj10 = { text: tmp5, tooltip: null };
-          const intl4 = tmp15(1115).intl;
-          const obj11 = { name: tmp5 };
-          obj10.tooltip = intl4.formatToPlainString(tmp15(1115).t.pW3Ip3, obj11);
+          const obj10 = { text: tmp5, tooltip: intl4.formatToPlainString(intl9.t.pW3Ip3, obj11) };
+          intl4 = tmp15(1127).intl;
           obj18 = obj10;
+          obj11 = { name: tmp5 };
         }
       }
     }
@@ -163,42 +177,38 @@ export default function getActivityStatusText(name) {
     if (name != null) {
       type3 = name.type;
     }
-    if (type3 === tmp11.WATCHING) {
+    if (type3 === ActivityTypes.WATCHING) {
       if (null != tmp17) {
-        const obj12 = { text: tmp17, tooltip: null };
-        const intl3 = tmp15(1115).intl;
-        const obj13 = { name: tmp17 };
-        obj12.tooltip = intl3.formatToPlainString(tmp15(1115).t.pW3Ip3, obj13);
+        const obj12 = { text: tmp17, tooltip: intl3.formatToPlainString(intl9.t.pW3Ip3, obj13) };
+        intl3 = tmp15(1127).intl;
         obj18 = obj12;
+        obj13 = { name: tmp17 };
       }
     }
     let type4;
     if (name != null) {
       type4 = name.type;
     }
-    if (type4 === tmp11.COMPETING) {
+    if (type4 === ActivityTypes.COMPETING) {
       if (null != tmp17) {
-        const obj14 = { text: tmp17, tooltip: null };
-        const intl2 = tmp15(1115).intl;
-        const obj15 = { name: tmp17 };
-        obj14.tooltip = intl2.formatToPlainString(tmp15(1115).t.QQ2wVE, obj15);
+        const obj14 = { text: tmp17, tooltip: intl2.formatToPlainString(intl9.t.QQ2wVE, obj15) };
+        intl2 = tmp15(1127).intl;
         obj18 = obj14;
+        obj15 = { name: tmp17 };
       }
     }
     let type5;
     if (name != null) {
       type5 = name.type;
     }
-    if (type5 === tmp11.STREAMING) {
+    if (type5 === ActivityTypes.STREAMING) {
       if (null != tmp17) {
-        const obj16 = { text: tmp17, tooltip: null };
-        const intl = tmp15(1115).intl;
-        const obj17 = { name: tmp17 };
-        obj16.tooltip = intl.formatToPlainString(tmp15(1115).t["0wJXSh"], obj17);
+        const obj16 = { text: tmp17, tooltip: intl.formatToPlainString(intl9.t["0wJXSh"], obj17) };
+        intl = tmp15(1127).intl;
         obj18 = obj16;
+        obj17 = { name: tmp17 };
       }
     }
     obj18 = {};
-    tmp15Result = tmp15(9660);
   }
 };

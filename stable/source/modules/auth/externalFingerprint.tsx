@@ -1,25 +1,27 @@
-// Module ID: 18357
-// Function ID: 18358
+// Module ID: 17725
+// Function ID: 17726
 // Name: externalFingerprint
-// Dependencies: [502, 5705, 573, 2]
+// Dependencies: [502, 5769, 585, 2]
 // Exports: default
 
-// Module 18357 (externalFingerprint)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import keysSorter from "keysSorter" /* 5705 */;
+// Module 17725 (externalFingerprint)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import _mod5769 from "module_5769" /* 5769 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/externalFingerprint.tsx");
 
 export default function externalFingerprint(arg0) {
   if (!AuthenticationStore.isAuthenticated()) {
-    const obj = keysSorter;
-    const fingerprint = obj.parse(keysSorter.extract(arg0)).fingerprint;
+    const parse = _mod5769.parse;
+    _mod5769;
+    const obj = _mod5769;
+    const fingerprint = parse(obj.extract(arg0)).fingerprint;
     if (null != fingerprint) {
-      const obj4 = { type: "FINGERPRINT", fingerprint };
-      DispatcherDefault.dispatch(obj4);
+      const obj3 = { type: "FINGERPRINT", fingerprint };
+      const obj2 = DispatcherDefault;
+      obj2.dispatch(obj3);
     }
   }
 };

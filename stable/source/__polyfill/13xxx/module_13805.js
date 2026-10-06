@@ -1,9 +1,21 @@
 // Module ID: 13805
 // Function ID: 13806
-// Dependencies: [1121]
+// Dependencies: [13806]
 
 // Module 13805
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13806 from "module_13806" /* 13806 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/colored", width: 24, height: 24, scales: [2, 3], hash: "e7624f04ed4a80ca86e10402e935320b", name: "tier_1_32px", type: "png" });
+export default (arg0, arg1) => {
+  let tmp3 = _mod13806[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    const tmpResult = _mod13806;
+    if (!arg1) {
+      obj = {};
+    }
+    tmpResult[arg0] = obj;
+    tmp3 = obj;
+  }
+  return tmp3;
+};

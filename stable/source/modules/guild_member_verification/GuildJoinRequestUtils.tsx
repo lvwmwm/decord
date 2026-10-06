@@ -1,26 +1,24 @@
-// Module ID: 4611
-// Function ID: 4612
+// Module ID: 4659
+// Function ID: 4660
 // Name: GuildJoinRequestUtils
-// Dependencies: [4612, 2]
+// Dependencies: [4660, 2]
 // Exports: isActionedAndNotAcked, isActionedApplicationStatus, isApprovedAndAcked, isSubmittedApplicationStatus
 
-// Module 4611 (GuildJoinRequestUtils)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
+// Module 4659 (GuildJoinRequestUtils)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestUtils.tsx");
 
 export const isActionedApplicationStatus = function isActionedApplicationStatus(applicationStatus) {
-  return applicationStatus === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED || applicationStatus === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED;
+  const tmp3 = applicationStatus === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED || applicationStatus === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED;
+  return tmp3;
 };
 export const isSubmittedApplicationStatus = function isSubmittedApplicationStatus(applicationStatus) {
   return applicationStatus === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED;
 };
 export const isApprovedAndAcked = function isApprovedAndAcked(applicationStatus) {
-  let tmp = applicationStatus.applicationStatus === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED;
-  if (tmp) {
-    tmp = null != applicationStatus.lastSeen;
-  }
+  const tmp = applicationStatus.applicationStatus === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED && null != applicationStatus.lastSeen;
   return tmp;
 };
 export const isActionedAndNotAcked = function isActionedAndNotAcked(request) {

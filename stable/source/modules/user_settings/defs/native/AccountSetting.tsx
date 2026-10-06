@@ -1,31 +1,33 @@
-// Module ID: 14961
-// Function ID: 14962
+// Module ID: 14200
+// Function ID: 14201
 // Name: AccountSetting
-// Dependencies: [1074, 11754, 1115, 11210, 14962, 2]
+// Dependencies: [1086, 10874, 1127, 10420, 14201, 2]
 
-// Module 14961 (AccountSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import UserCircleIcon from "UserCircleIcon" /* 11210 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+// Module 14200 (AccountSetting)
+import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1127 */;
+import UserCircleIcon from "UserCircleIcon" /* 10420 */;
+import SettingBuilders from "SettingBuilders" /* 10874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["ldCE/p"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["ldCE/p"]);
   },
   parent: null,
   IconComponent: UserCircleIcon.UserCircleIcon,
   screen: {
-    route: Constants.UserSettingsSections.ACCOUNT,
+    route: UserSettingsSections.ACCOUNT,
     getComponent() {
       return require("SettingsAccountScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountSetting.tsx");
 
 export default route;

@@ -1,34 +1,40 @@
-// Module ID: 9018
-// Function ID: 9019
+// Module ID: 8165
+// Function ID: 8166
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2000, 2043, 4772, 1074, 8992, 504, 1091, 8681, 7583, 2]
-// Exports: default, hasGameProfileDiscordWebsite, preloadGameProfileInvite
+// Dependencies: [5, 19, 2007, 2053, 4818, 1086, 8139, 504, 1103, 7830, 6728, 558, 576, 2]
+// Exports: hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 9018 (useGameProfileInvite)
-import DurationsDefault from "Durations" /* 1091 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8681 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import GameStore from "GameStore" /* 2000 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 2043 */;
-import InviteStore from "InviteStore" /* 4772 */;
+// Module 8165 (useGameProfileInvite)
+import DurationsDefault from "Durations" /* 1103 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7830 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import GameStore from "GameStore" /* 2007 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 2053 */;
+import InviteStore from "InviteStore" /* 4818 */;
+import Constants from "Constants" /* 1086 */;
+import get_initialized from "get initialized" /* 504 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c3, c4, current;
 
-const require = fn;
+let QueryIds;
+let metroImportDefault;
+const f96072 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
-  let tmp = null != state;
+  let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
-    tmp = state.state !== constants.RESOLVING;
-  }
-  if (tmp) {
-    let tmp4 = state.state !== constants.EXPIRED && state.state !== tmp3.BANNED;
+    let tmp4 = state.state !== metroImportDefault.EXPIRED && state.state !== tmp3.BANNED;
     if (tmp4) {
       let tmp5 = null != state.expires_at;
       if (tmp5) {
         const _Date = Date;
-        const date = new Date(state.expires_at);
+        const self = this;
+        const self2 = this;
         const _Date2 = Date;
+        const date = new Date(state.expires_at);
         const time = date.getTime();
         tmp5 = time <= Date.now();
       }
@@ -38,10 +44,8 @@ function isUsableGameProfileInvite(state) {
   }
   return tmp;
 }
-const Constants = fn(1074);
-({ InviteStates: closure_7, QueryIds } = Constants);
-const initialize = fn(504);
-const obj2 = {
+({ InviteStates: metroImportDefault, QueryIds } = Constants);
+let obj = {
   getQueryId: QueryIds.GAME_PROFILE_INVITE,
   staleAfter: 5 * DurationsDefault.Seconds.MINUTE,
   failureStaleAfter: 5 * DurationsDefault.Seconds.MINUTE,
@@ -50,18 +54,17 @@ const obj2 = {
       return null;
     } else {
       const invite = InviteStore.getInvite(arg0);
-      let tmp2 = null != invite;
+      let tmp2 = null != invite && invite.state !== metroImportDefault.RESOLVING;
       if (tmp2) {
-        tmp2 = invite.state !== constants.RESOLVING;
-      }
-      if (tmp2) {
-        let tmp4 = invite.state !== constants.EXPIRED && invite.state !== tmp3.BANNED;
+        let tmp4 = invite.state !== metroImportDefault.EXPIRED && invite.state !== tmp3.BANNED;
         if (tmp4) {
           let tmp5 = null != invite.expires_at;
           if (tmp5) {
             const _Date = Date;
-            const date = new Date(invite.expires_at);
+            const self = this;
+            const self2 = this;
             const _Date2 = Date;
+            const date = new Date(invite.expires_at);
             const time = date.getTime();
             tmp5 = time <= Date.now();
           }
@@ -69,27 +72,32 @@ const obj2 = {
         }
         tmp2 = tmp4;
       }
-      let tmp11 = null;
+      let tmp9 = null;
       if (tmp2) {
-        tmp11 = invite;
+        tmp9 = invite;
       }
-      return tmp11;
+      return tmp9;
     }
   },
-  load: null
+  load: function() {
+    return closure_9(...arguments);
+  }
 };
-let closure_9 = asyncGeneratorStep(async (arg0, value) => {
+const createFetchStore = get_initialized.createFetchStore;
+let closure_9 = _asyncToGenerator(async function(arg0, value) {
+  let obj2;
+  let closure_0 = arg0;
   if (c4 === 2) {
     c4 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
+  } else if (tmp3 === 3) {
     if (arg0 === 1) {
       throw value;
     } else if (arg0 === 2) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -103,13 +111,13 @@ let closure_9 = asyncGeneratorStep(async (arg0, value) => {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          closure_2 = tmp2;
-          c1 = 0;
-          closure_129_0 = closure_0;
+          let closure_2 = tmp;
+          let c1 = 0;
           if (null != closure_0) {
             c3 = 1;
             c4 = 1;
-            const obj5 = { value: InstantInviteActionCreatorsDefault.resolveInvite(tmp18, "game_profile"), done: false };
+            const obj5 = { value: obj2.resolveInvite(tmp15, "game_profile"), done: false };
+            obj2 = InstantInviteActionCreatorsDefault;
             return obj5;
           }
         }
@@ -120,51 +128,248 @@ let closure_9 = asyncGeneratorStep(async (arg0, value) => {
         c4 = 3;
         const obj = { value, done: true };
         return obj;
-      } else if (!closure_130_8(closure_130_6.getInvite(closure_129_0))) {
+      } else if (!closure_130_8(closure_130_6.getInvite(closure_0))) {
         const _Error = Error;
         const _HermesInternal = HermesInternal;
-        const error = new Error("Failed to resolve game profile invite: " + closure_129_0);
+        const self = this;
+        const self2 = this;
+        const error = new Error("Failed to resolve game profile invite: " + closure_0);
         throw error;
       }
       c4 = 3;
-      return { value: "HermesInternal", done: null };
-    } catch (tmp22) {
-      c4 = tmp;
-      throw tmp22;
+      return { value: "IconComponent", done: null };
+    } catch (tmp19) {
+      c4 = 3;
+      throw tmp19;
     }
   }
 });
-obj2.load = function() {
-  const self = this;
-  const apply = closure_9.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+let closure_10 = createFetchStore(InviteStore, obj);
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((websites, cResult) => {
+  let data;
+  let tmp14;
+  let tmp18;
+  let tmp21;
+  let tmp22;
+  let tmp4;
+  let tmp5;
+  let tmp7;
+  _require = cResult;
+  const tmp = _require;
+  const obj = require("react");
+  cResult = obj.c(15);
+  const ref = react.useRef(cResult);
+  const tmp2 = data;
+  if (cResult[0] !== cResult) {
+    const fn = function u() {
+      ref.current = current;
+    };
+    const items = [cResult];
+    cResult[0] = cResult;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp5 = items;
+    tmp4 = fn;
   } else {
-    applyArgumentsResult = apply(self, arguments);
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
   }
-  return applyArgumentsResult;
-};
-let closure_10 = initialize.createFetchStore(InviteStore, obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileInvite.tsx");
-
-export default function useGameProfileInvite(websites, set) {
-  _require = set;
-  noop.useRef(set);
-  const items = [set];
-  const effect = noop.useEffect(() => {
-    closure_1.current = current;
+  const effect = obj2.useEffect(tmp4, tmp5);
+  if (cResult[3] !== websites) {
+    let found;
+    if (websites != null) {
+      websites = websites.websites;
+      if (websites != null) {
+        found = websites.find(f96072);
+      }
+    }
+    let arr;
+    if (found != null) {
+      const str = found.url;
+      const parts = str.split("/");
+      arr = parts.pop();
+    }
+    let tmp11 = null;
+    if (null != arr) {
+      tmp11 = null;
+      if ("" !== arr) {
+        tmp11 = arr;
+      }
+    }
+    cResult[3] = websites;
+    cResult[4] = tmp11;
+    tmp7 = tmp11;
+  } else {
+    tmp7 = cResult[4];
+  }
+  const tmp12 = closure_10(tmp7);
+  data = tmp12.data;
+  let isLoading = tmp12.isLoading;
+  let tmp13 = null != tmp7;
+  const error = tmp12.error;
+  if (tmp13) {
+    tmp13 = null == data;
+  }
+  if (tmp13) {
+    if (!isLoading) {
+      isLoading = null == error;
+    }
+    tmp13 = isLoading;
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GuildMembershipStore];
+    cResult[5] = items1;
+    tmp14 = items1;
+  } else {
+    tmp14 = cResult[5];
+  }
+  let id;
+  const tmp16 = cResult[6];
+  if (data != null) {
+    let guild = data.guild;
+    if (guild != null) {
+      id = guild.id;
+    }
+  }
+  if (tmp16 !== id) {
+    if (data != null) {
+      let guild2 = data.guild;
+      class G {
+        constructor() {
+          let id;
+          if (data != null) {
+            const guild = tmp.guild;
+            if (guild != null) {
+              id = guild.id;
+            }
+          }
+          let isMemberResult = null != id;
+          if (isMemberResult) {
+            let id1;
+            const isMember = GuildMembershipStore.isMember;
+            if (data != null) {
+              const guild2 = tmp.guild;
+              if (guild2 != null) {
+                id1 = guild2.id;
+              }
+            }
+            isMemberResult = isMember(id1);
+          }
+          return isMemberResult;
+        }
+      }
+    }
+    class G {
+      constructor() {
+        let id;
+        if (data != null) {
+          const guild = tmp.guild;
+          if (guild != null) {
+            id = guild.id;
+          }
+        }
+        let isMemberResult = null != id;
+        if (isMemberResult) {
+          let id1;
+          const isMember = GuildMembershipStore.isMember;
+          if (data != null) {
+            const guild2 = tmp.guild;
+            if (guild2 != null) {
+              id1 = guild2.id;
+            }
+          }
+          isMemberResult = isMember(id1);
+        }
+        return isMemberResult;
+      }
+    }
+    cResult[6] = undefined;
+    cResult[7] = G;
+    tmp18 = G;
+  } else {
+    tmp18 = cResult[7];
+  }
+  const tmpResult = tmp(tmp2[7]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp18);
+  if (cResult[8] !== data) {
+    const fn2 = function _() {
+      if (null != data) {
+        current = ref.current;
+        if (current != null) {
+          current(tmp);
+        }
+      }
+    };
+    const items2 = [];
+    class G {
+      constructor() {
+        let id;
+        if (data != null) {
+          const guild = tmp.guild;
+          if (guild != null) {
+            id = guild.id;
+          }
+        }
+        let isMemberResult = null != id;
+        if (isMemberResult) {
+          let id1;
+          const isMember = GuildMembershipStore.isMember;
+          if (data != null) {
+            const guild2 = tmp.guild;
+            if (guild2 != null) {
+              id1 = guild2.id;
+            }
+          }
+          isMemberResult = isMember(id1);
+        }
+        return isMemberResult;
+      }
+    }
+    cResult[8] = data;
+    cResult[9] = fn2;
+    cResult[10] = items2;
+    tmp22 = items2;
+    tmp21 = fn2;
+  } else {
+    tmp21 = cResult[9];
+    tmp22 = cResult[10];
+  }
+  const effect1 = obj2.useEffect(tmp21, tmp22);
+  if (cResult[11] === data) {
+    if (cResult[12] === stateFromStores) {
+      let tmp24;
+      if (cResult[13] === tmp13) {
+        tmp24 = cResult[14];
+      }
+      return tmp24;
+    }
+  }
+  const obj3 = { invite: data, isMember: stateFromStores, isResolving: tmp13 };
+  cResult[11] = data;
+  cResult[12] = stateFromStores;
+  cResult[13] = tmp13;
+  cResult[14] = obj3;
+  tmp24 = obj3;
+}) : ((websites, cResult) => {
+  let tmp8;
+  _require = cResult;
+  const ref = react.useRef(cResult);
+  const items = [cResult];
+  const effect = react.useEffect(() => {
+    ref.current = current;
   }, items);
   let found;
+  const obj = react;
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find((category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD);
+      found = websites.find(f96072);
     }
   }
   let arr;
   if (found != null) {
-    const parts = found.url.split("/");
+    const str = found.url;
+    const parts = str.split("/");
     arr = parts.pop();
   }
   let tmp4 = null;
@@ -177,9 +382,11 @@ export default function useGameProfileInvite(websites, set) {
   const tmp5 = closure_10(tmp4);
   const data = tmp5.data;
   let isLoading = tmp5.isLoading;
+  const error = tmp5.error;
   const items1 = [GuildMembershipStore];
   const items2 = [data];
-  const stateFromStores = require("initialize").useStateFromStores(items1, () => {
+  const obj2 = require("get initialized");
+  const stateFromStores = obj2.useStateFromStores(items1, () => {
     let id;
     if (data != null) {
       const guild = tmp.guild;
@@ -190,17 +397,18 @@ export default function useGameProfileInvite(websites, set) {
     let isMemberResult = null != id;
     if (isMemberResult) {
       let id1;
-      if (tmp != null) {
+      const isMember = GuildMembershipStore.isMember;
+      if (data != null) {
         const guild2 = tmp.guild;
         if (guild2 != null) {
           id1 = guild2.id;
         }
       }
-      isMemberResult = GuildMembershipStore.isMember(id1);
+      isMemberResult = isMember(id1);
     }
     return isMemberResult;
   });
-  const effect1 = noop.useEffect(() => {
+  const effect1 = obj.useEffect(() => {
     if (null != data) {
       current = ref.current;
       if (current != null) {
@@ -208,17 +416,19 @@ export default function useGameProfileInvite(websites, set) {
       }
     }
   }, items2);
-  const obj3 = { invite: data, isMember: stateFromStores, isResolving: null };
-  let tmp8 = null != tmp4 && null == data;
+  const obj3 = { invite: data, isMember: stateFromStores, isResolving: tmp8 };
+  tmp8 = null != tmp4 && null == data;
   if (tmp8) {
     if (!isLoading) {
-      isLoading = null == tmp5.error;
+      isLoading = null == error;
     }
     tmp8 = isLoading;
   }
-  obj3.isResolving = tmp8;
   return obj3;
-};
+});
+const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileInvite.tsx");
+
+export default tmp6;
 export const hasGameProfileDiscordWebsite = function hasGameProfileDiscordWebsite(game) {
   let flag;
   if (game != null) {
@@ -233,6 +443,7 @@ export const hasGameProfileDiscordWebsite = function hasGameProfileDiscordWebsit
   return flag;
 };
 export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) {
+  let closure_0;
   _require = arg0;
   const useGame = require("useGame").useGame;
   let items = [arg0];
@@ -243,12 +454,13 @@ export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) 
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find((category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD);
+        found = websites.find(f96072);
       }
     }
     let arr;
     if (found != null) {
-      const parts = found.url.split("/");
+      const str = found.url;
+      const parts = str.split("/");
       arr = parts.pop();
     }
     let tmp4 = null;

@@ -1,18 +1,18 @@
-// Module ID: 14814
-// Function ID: 14815
+// Module ID: 14066
+// Function ID: 14067
 // Name: validateScope
-// Dependencies: [4692, 2]
+// Dependencies: [4741, 2]
 // Exports: default
 
-// Module 14814 (validateScope)
-import Constants from "Constants" /* 4692 */;
+// Module 14066 (validateScope)
+import Constants from "Constants" /* 4741 */;
 import size from "module_2" /* 2 */;
 
 const RPC_SCOPE_CONFIG = Constants.RPC_SCOPE_CONFIG;
 const result = size.fileFinishedImporting("modules/rpc/helpers/validateScope.tsx");
 
 export default function validateScope(arr, str) {
-  closure_0 = arr;
+  let closure_0 = arr;
   if (null == str) {
     return true;
   } else if (typeof str === "string") {

@@ -1,90 +1,91 @@
-// Module ID: 4347
-// Function ID: 4348
+// Module ID: 4391
+// Function ID: 4392
 // Name: formatjs
-// Dependencies: [4348, 1980, 4349, 4350, 4351, 4352, 4353, 4354, 4355, 4356, 4357, 4358, 4359, 4360, 4361, 4362, 4363, 4364, 4365, 4366, 4367, 4368, 4369, 4370, 4371, 4372, 4373, 4374, 4375, 4376, 4377, 2]
+// Dependencies: [4392, 1987, 4393, 4394, 4395, 4396, 4397, 4398, 4399, 4400, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409, 4410, 4411, 4412, 4413, 4414, 4415, 4416, 4417, 4418, 4419, 4420, 4421, 2]
 
-// Module 4347 (formatjs)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+// Module 4391 (formatjs)
+import asyncRequire from "asyncRequire" /* 1987 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("intl/locale-data/formatjs.tsx");
-
-export const formatjsLocales = {
+const obj = {
   bg() {
-    return asyncRequireImpl(4348, dependencyMap.paths);
+    return asyncRequire(4392, dependencyMap.paths);
   },
   cs() {
-    return asyncRequireImpl(4349, dependencyMap.paths);
+    return asyncRequire(4393, dependencyMap.paths);
   },
   da() {
-    return asyncRequireImpl(4350, dependencyMap.paths);
+    return asyncRequire(4394, dependencyMap.paths);
   },
   de() {
-    return asyncRequireImpl(4351, dependencyMap.paths);
+    return asyncRequire(4395, dependencyMap.paths);
   },
   el() {
-    return asyncRequireImpl(4352, dependencyMap.paths);
+    return asyncRequire(4396, dependencyMap.paths);
   },
-  () => asyncRequireImpl(4353, dependencyMap.paths),
-  () => asyncRequireImpl(4354, dependencyMap.paths),
-  () => asyncRequireImpl(4355, dependencyMap.paths),
-  () => asyncRequireImpl(4355, dependencyMap.paths),
+  "en-GB": () => asyncRequire(4397, dependencyMap.paths),
+  "en-US": () => asyncRequire(4398, dependencyMap.paths),
+  "es-ES": () => asyncRequire(4399, dependencyMap.paths),
+  "es-419": () => asyncRequire(4399, dependencyMap.paths),
   fi() {
-    return asyncRequireImpl(4356, dependencyMap.paths);
+    return asyncRequire(4400, dependencyMap.paths);
   },
   fr() {
-    return asyncRequireImpl(4357, dependencyMap.paths);
+    return asyncRequire(4401, dependencyMap.paths);
   },
   hr() {
-    return asyncRequireImpl(4358, dependencyMap.paths);
+    return asyncRequire(4402, dependencyMap.paths);
   },
   hu() {
-    return asyncRequireImpl(4359, dependencyMap.paths);
+    return asyncRequire(4403, dependencyMap.paths);
   },
   it() {
-    return asyncRequireImpl(4360, dependencyMap.paths);
+    return asyncRequire(4404, dependencyMap.paths);
   },
   ja() {
-    return asyncRequireImpl(4361, dependencyMap.paths);
+    return asyncRequire(4405, dependencyMap.paths);
   },
   ko() {
-    return asyncRequireImpl(4362, dependencyMap.paths);
+    return asyncRequire(4406, dependencyMap.paths);
   },
   lt() {
-    return asyncRequireImpl(4363, dependencyMap.paths);
+    return asyncRequire(4407, dependencyMap.paths);
   },
   nl() {
-    return asyncRequireImpl(4364, dependencyMap.paths);
+    return asyncRequire(4408, dependencyMap.paths);
   },
   no() {
-    return asyncRequireImpl(4365, dependencyMap.paths);
+    return asyncRequire(4409, dependencyMap.paths);
   },
   pl() {
-    return asyncRequireImpl(4366, dependencyMap.paths);
+    return asyncRequire(4410, dependencyMap.paths);
   },
-  () => asyncRequireImpl(4367, dependencyMap.paths),
+  "pt-BR": () => asyncRequire(4411, dependencyMap.paths),
   ro() {
-    return asyncRequireImpl(4368, dependencyMap.paths);
+    return asyncRequire(4412, dependencyMap.paths);
   },
   ru() {
-    return asyncRequireImpl(4369, dependencyMap.paths);
+    return asyncRequire(4413, dependencyMap.paths);
   },
-  () => asyncRequireImpl(4370, dependencyMap.paths),
+  "sv-SE": () => asyncRequire(4414, dependencyMap.paths),
   th() {
-    return asyncRequireImpl(4371, dependencyMap.paths);
+    return asyncRequire(4415, dependencyMap.paths);
   },
   tr() {
-    return asyncRequireImpl(4372, dependencyMap.paths);
+    return asyncRequire(4416, dependencyMap.paths);
   },
   uk() {
-    return asyncRequireImpl(4373, dependencyMap.paths);
+    return asyncRequire(4417, dependencyMap.paths);
   },
   vi() {
-    return asyncRequireImpl(4374, dependencyMap.paths);
+    return asyncRequire(4418, dependencyMap.paths);
   },
-  () => asyncRequireImpl(4375, dependencyMap.paths),
-  () => asyncRequireImpl(4376, dependencyMap.paths),
+  "zh-CN": () => asyncRequire(4419, dependencyMap.paths),
+  "zh-TW": () => asyncRequire(4420, dependencyMap.paths),
   hi() {
-    return asyncRequireImpl(4377, dependencyMap.paths);
+    return asyncRequire(4421, dependencyMap.paths);
   }
 };
+const result = size.fileFinishedImporting("intl/locale-data/formatjs.tsx");
+
+export const formatjsLocales = obj;

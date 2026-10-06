@@ -1,210 +1,714 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 16278
+// Function ID: 16279
 // Name: VibegrationsNativePreview
-// Dependencies: [32, 19, 17, 9345, 502, 2041, 4803, 1979, 16939, 1074, 9346, 21, 4788, 576, 5856, 4784, 9594, 13212, 16969, 9603, 16970, 16971, 16978, 1115, 3710, 5218, 504, 7901, 9233, 7440, 4801, 7387, 11632, 1364, 16980, 2]
-// Exports: default, leaveVibegrationsPreviewFrame
+// Dependencies: [32, 19, 17, 8496, 502, 2051, 4852, 1986, 16239, 1086, 8497, 21, 4837, 588, 558, 576, 4833, 5918, 8746, 12444, 16279, 8755, 16280, 16281, 16288, 16290, 1127, 3718, 5282, 504, 7051, 8384, 6585, 4850, 6532, 9533, 1370, 16294, 2]
+// Exports: leaveVibegrationsPreviewFrame
 
-// Module 16968 (VibegrationsNativePreview)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import _modDef3710 from "module_3710" /* 3710 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4801 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import Card from "Card" /* 5856 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7387 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7901 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 9233 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9594 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9603 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9345 */;
+// Module 16278 (VibegrationsNativePreview)
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import intl8 from "intl" /* 1127 */;
+import _modDef3718 from "module_3718" /* 3718 */;
+import Text_Text from "Text/Text" /* 4833 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
+import components_Button_Button from "components/Button/Button" /* 5282 */;
+import Card_Card from "Card/Card" /* 5918 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6532 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7051 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 8384 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 8746 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 8755 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import FramesStore from "FramesStore" /* 8496 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ReadStateStore from "ReadStateStore" /* 4803 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReadStateStore from "ReadStateStore" /* 4852 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import vibegrationsDesignFeedbackStore from "vibegrationsDesignFeedbackStore" /* 16239 */;
+import Constants from "Constants" /* 1086 */;
+import FramesConstants from "FramesConstants" /* 8497 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function StatusCard(arg0) {
+let c0, catchPromise, dependencyMap, flag, obj1;
+
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_24;
+let closure_25;
+let hasOwnProperty;
+let map1;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ ActivityIndicator: hasOwnProperty, ScrollView: metroRequire, View: metroImportDefault } = react_native);
+({ exitVibegrationsDesignFeedback: map1, useVibegrationsDesignFeedback: closure_14 } = vibegrationsDesignFeedbackStore);
+({ AnalyticsObjects: closure_15, AnalyticsObjectTypes: closure_16, AnalyticsSections: closure_17, AppStates: closure_18, ME: closure_19 } = Constants);
+({ FrameLayoutModes: closure_20, isLaunched: closure_21, MAIN_SURFACE: closure_22, makeFrameId: closure_23 } = FramesConstants);
+({ jsx: closure_24, jsxs: closure_25 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { frame: { flex: 1 }, centered: obj2, card: { alignSelf: "stretch" }, cardBody: obj3, cardCopy: obj4, cardText: { textAlign: "center" }, widget: obj5, dm: { flex: 1 } };
+obj2 = { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16, alignItems: "center", gap: nativeDefault.space.PX_12 };
+obj4 = { alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj5 = { padding: nativeDefault.space.PX_16 };
+let closure_26 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let body;
+  let children;
+  let items;
+  let items1;
+  let title;
+  const obj = react2;
+  const cResult = obj.c(20);
+  ({ title, body, children } = arg0);
+  const tmp4 = closure_26();
+  if (cResult[0] === tmp4.cardText) {
+    let tmp5;
+    if (cResult[1] === title) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === body) {
+      let tmp7;
+      if (cResult[4] === tmp4.cardText) {
+        tmp7 = cResult[5];
+      }
+      if (cResult[6] === tmp4.cardCopy) {
+        if (cResult[7] === tmp5) {
+          let tmp10;
+          if (cResult[8] === tmp7) {
+            tmp10 = cResult[9];
+          }
+          if (cResult[10] === children) {
+            if (cResult[11] === tmp4.cardBody) {
+              let tmp14;
+              if (cResult[12] === tmp10) {
+                tmp14 = cResult[13];
+              }
+              if (cResult[14] === tmp4.card) {
+                let tmp18;
+                if (cResult[15] === tmp14) {
+                  tmp18 = cResult[16];
+                }
+                if (cResult[17] === tmp4.centered) {
+                  let tmp21;
+                  if (cResult[18] === tmp18) {
+                    tmp21 = cResult[19];
+                  }
+                  return tmp21;
+                }
+                const obj2 = { style: tmp4.centered, children: tmp18 };
+                const tmp24 = closure_24(metroImportDefault, obj2);
+                cResult[17] = tmp4.centered;
+                cResult[18] = tmp18;
+                cResult[19] = tmp24;
+                tmp21 = tmp24;
+              }
+              const obj3 = { variant: "primary", style: tmp4.card, children: tmp14 };
+              const tmp20 = closure_24(Card_Card.Card, obj3);
+              cResult[14] = tmp4.card;
+              cResult[15] = tmp14;
+              cResult[16] = tmp20;
+              tmp18 = tmp20;
+            }
+          }
+          const obj4 = { style: tmp4.cardBody, children: items };
+          items = [tmp10, children];
+          const tmp17 = closure_25(metroImportDefault, obj4);
+          cResult[10] = children;
+          cResult[11] = tmp4.cardBody;
+          cResult[12] = tmp10;
+          cResult[13] = tmp17;
+          tmp14 = tmp17;
+        }
+      }
+      const obj5 = { style: tmp4.cardCopy, children: items1 };
+      items1 = [tmp5, tmp7];
+      const tmp13 = closure_25(metroImportDefault, obj5);
+      cResult[6] = tmp4.cardCopy;
+      cResult[7] = tmp5;
+      cResult[8] = tmp7;
+      cResult[9] = tmp13;
+      tmp10 = tmp13;
+    }
+    const obj6 = { variant: "text-sm/normal", color: "text-muted", style: tmp4.cardText, children: body };
+    const tmp9 = closure_24(Text_Text.Text, obj6);
+    cResult[3] = body;
+    cResult[4] = tmp4.cardText;
+    cResult[5] = tmp9;
+    tmp7 = tmp9;
+  }
+  const obj7 = { variant: "heading-md/semibold", color: "text-default", style: tmp4.cardText, children: title };
+  const tmp6 = closure_24(Text_Text.Text, obj7);
+  cResult[0] = tmp4.cardText;
+  cResult[1] = title;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0) => {
+  let Card;
+  let body;
+  let children;
+  let items;
+  let items1;
+  let obj2;
+  let obj3;
+  let title;
   ({ title, body, children } = arg0);
   const tmp = closure_26();
-  const obj = { style: tmp.centered, children: null };
-  const obj2 = { variant: "primary", style: tmp.card, children: null };
-  const obj3 = { style: tmp.cardBody, children: null };
-  const obj4 = { style: tmp.cardCopy, children: null };
-  const items = [__initData4(Text_Text.Text, { variant: "heading-md/semibold", color: "text-default", style: tmp.cardText, children: title }), __initData4(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", style: tmp.cardText, children: body })];
-  obj4.children = items;
-  const items1 = [closure_1_25(React5, obj4), children];
-  obj3.children = items1;
-  obj2.children = closure_1_25(React5, obj3);
-  obj.children = __initData4(Card.Card, obj2);
-  return __initData4(React5, obj);
-}
-class PreviewFrame {
-  constructor(arg0) {
-    applicationId = global.applicationId;
-    projectId = global.projectId;
-    visible = global.visible;
-    closure_2 = undefined;
-    closure_3 = undefined;
-    closure_4 = undefined;
-    closure_5 = undefined;
-    tmp = applicationId;
-    tmp2 = closure_2;
-    obj = applicationId(closure_2[17]);
-    vibegrationsControlActive = obj.useVibegrationsControlActive(projectId);
-    obj2 = closure_4;
-    items = [, ];
-    items[0] = projectId;
-    items[1] = visible;
-    effect = closure_4.useEffect(() => () => closure_2_13(projectId), items);
-    tmp5 = closure_26();
-    tmp6 = makeFrameId(applicationId, MAIN_SURFACE);
-    closure_2 = tmp6;
-    tmp7 = projectId;
-    tmp8 = projectId(closure_2[18])(applicationId, MAIN_SURFACE);
-    closure_3 = tmp8;
-    tmp9 = null;
-    if (null != tmp8) {
-      tmp10 = isLaunched;
-      tmp9 = null;
-      if (isLaunched(tmp8)) {
-        tmp9 = tmp8;
-      }
-    }
-    tmp11 = closure_3(obj2.useState(false), 2);
-    first = tmp11[0];
-    closure_4 = first;
-    closure_5 = tmp11[1];
-    items1 = [, , , ];
-    items1[0] = applicationId;
-    items1[1] = first;
-    items1[2] = tmp8;
-    items1[3] = tmp6;
-    effect1 = obj2.useEffect(() => {
-      if (!first) {
-        if (null == closure_3) {
-          const mainFrame = FramesStore.getMainFrame();
-          if (null != mainFrame) {
-            FramesNativeManagerDefault.leaveFrame(mainFrame.id);
-          }
-          const obj3 = { applicationId, surface };
-          FramesActionCreatorsDefault.launchFrame(obj3).catch(() => closure_1_5(true));
-          const launchFrameResult = FramesActionCreatorsDefault.launchFrame(obj3);
-          FramesActionCreatorsDefault.demoteMainFrame(closure_2);
-        }
-      }
-    }, items1);
-    tmp15 = visible;
-    tmp7Result = tmp7(tmp2[20]);
-    if (visible) {
-      tmp15 = null != tmp9;
-    }
-    tmp14Result = tmp7Result(tmp15);
-    if (null != tmp9) {
-      tmp22 = View;
-      obj1 = { style: null, children: null };
-      obj1.style = tmp5.frame;
-      tmp23 = jsx;
-      tmp21 = jsxs;
-      obj11 = { frameId: null, layoutMode: null };
-      obj11.frameId = tmp9.id;
-      tmp24 = FrameLayoutModes;
-      obj11.layoutMode = FrameLayoutModes.FOCUSED;
-      items2 = [, , ];
-      items2[0] = jsx(tmp(tmp2[21]).InlineFrameView, obj11);
-      tmp23Result = null;
-      if (visible) {
-        tmp23Result = null;
-        if (closure_14(projectId).active) {
-          tmp23Result = null;
-          if (!vibegrationsControlActive) {
-            obj12 = { projectId: null };
-            obj12.projectId = projectId;
-            tmp23Result = tmp23(tmp7(tmp2[22]), obj12);
-          }
-        }
-      }
-      items2[1] = tmp23Result;
-      tmp23Result1 = null;
-      if (visible) {
-        tmp23Result1 = null;
-        if (vibegrationsControlActive) {
-          obj13 = { style: null, pointerEvents: "box-only", accessibilityLiveRegion: "polite", children: null };
-          obj13.style = tmp5.controlOverlay;
-          obj14 = { variant: "text-sm/medium", color: "text-default", style: null, children: null };
-          obj14.style = tmp5.controlText;
-          intl4 = tmp(tmp2[23]).intl;
-          obj14.children = intl4.string(tmp7(tmp2[24]).dIE9zO);
-          obj13.children = tmp23(tmp(tmp2[15]).Text, obj14);
-          tmp23Result1 = tmp23(tmp22, obj13);
-        }
-      }
-      items2[2] = tmp23Result1;
-      obj1.children = items2;
-      tmp21Result = tmp21(tmp22, obj1);
-    } else {
-      tmp27 = jsx;
-      if (first) {
-        tmp20 = StatusCard;
-        obj15 = { title: null, body: null, children: null };
-        intl = tmp(tmp2[23]).intl;
-        obj15.title = intl.string(tmp7(tmp2[24]).MeLWCr);
-        intl2 = tmp(tmp2[23]).intl;
-        obj15.body = intl2.string(tmp7(tmp2[24])["1RCbQT"]);
-        obj16 = { variant: "primary", size: "sm", text: null, onPress: null };
-        intl3 = tmp(tmp2[23]).intl;
-        obj16.text = intl3.string(tmp7(tmp2[24])["42EdIV"]);
-        obj16.onPress = function onPress() {
-          return closure_5(false);
-        };
-        obj15.children = tmp27(tmp(tmp2[25]).Button, obj16);
-        tmp21Result = tmp27(StatusCard, obj15);
-      } else {
-        tmp17 = View;
-        obj17 = { style: null, children: null };
-        obj17.style = tmp5.centered;
-        tmp18 = closure_5;
-        obj17.children = tmp27(closure_5, {});
-        tmp21Result = tmp27(View, obj17);
-      }
-    }
-    return tmp21Result;
-  }
-}
-function PreviewWidget(applicationId) {
+  const obj = { style: tmp.centered, children: closure_24(Card, obj2) };
+  obj2 = { variant: "primary", style: tmp.card, children: closure_25(metroImportDefault, obj3) };
+  obj3 = { style: tmp.cardBody, children: items1 };
+  const obj4 = { style: tmp.cardCopy, children: items };
+  Card = Card_Card.Card;
+  items = [, ];
+  const obj5 = { variant: "heading-md/semibold", color: "text-default", style: tmp.cardText, children: title };
+  items[0] = closure_24(Text_Text.Text, obj5);
+  const obj6 = { variant: "text-sm/normal", color: "text-muted", style: tmp.cardText, children: body };
+  items[1] = closure_24(Text_Text.Text, obj6);
+  items1 = [closure_25(metroImportDefault, obj4), children];
+  return closure_24(metroImportDefault, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+  let Button;
+  let closure_2;
+  let closure_3;
+  let closure_5;
+  let first;
+  let intl3;
+  let items;
+  let obj8;
+  let onOpenPublishedApp;
+  let tmp6;
+  let visible;
+  let tmp = applicationId;
+  let obj = applicationId(576);
+  const cResult = obj.c(38);
   applicationId = applicationId.applicationId;
+  const projectId = applicationId.projectId;
+  ({ visible, onOpenPublishedApp } = applicationId);
+  let tmp4 = null;
+  if (undefined !== onOpenPublishedApp) {
+    tmp4 = onOpenPublishedApp;
+  }
+  const tmpResult = tmp(12444);
+  const vibegrationsControlActive = tmpResult.useVibegrationsControlActive(projectId);
+  const active = closure_14(projectId).active;
+  if (cResult[0] !== projectId) {
+    const fn = function c() {
+      return () => closure_2_13(projectId);
+    };
+    cResult[0] = projectId;
+    cResult[1] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === projectId) {
+    let tmp7;
+    let tmp11;
+    let tmp18;
+    if (cResult[3] === visible) {
+      tmp7 = cResult[4];
+    }
+    let obj3 = first;
+    const effect = first.useEffect(tmp6, tmp7);
+    const tmp10 = closure_26();
+    if (cResult[5] !== applicationId) {
+      const tmp14 = closure_23(applicationId, surface);
+      cResult[5] = applicationId;
+      cResult[6] = tmp14;
+      tmp11 = tmp14;
+    } else {
+      tmp11 = cResult[6];
+    }
+    dependencyMap = tmp11;
+    const tmp17 = projectId(16279)(applicationId, surface);
+    _slicedToArray = tmp17;
+    if (cResult[7] !== tmp17) {
+      let tmp19 = null;
+      if (null != tmp17) {
+        tmp19 = null;
+        if (closure_21(tmp17)) {
+          tmp19 = tmp17;
+        }
+      }
+      cResult[7] = tmp17;
+      cResult[8] = tmp19;
+      tmp18 = tmp19;
+    } else {
+      tmp18 = cResult[8];
+    }
+    [first, closure_5] = obj3.useState(false);
+    if (cResult[9] === applicationId) {
+      if (cResult[10] === first) {
+        if (cResult[11] === tmp17) {
+          let tmp24;
+          let tmp25;
+          let tmp35;
+          if (cResult[12] === tmp11) {
+            tmp24 = cResult[13];
+            tmp25 = cResult[14];
+          }
+          const effect1 = obj3.useEffect(tmp24, tmp25);
+          let tmp28 = visible;
+          const tmp15Result = projectId(16280);
+          if (visible) {
+            tmp28 = null != tmp18;
+          }
+          tmp15Result(tmp28);
+          if (null != tmp18) {
+            let tmp48;
+            if (cResult[15] !== tmp18.id) {
+              let obj2 = { frameId: tmp18.id, layoutMode: constants4.FOCUSED };
+              const tmp51 = closure_24(tmp(16281).InlineFrameView, obj2);
+              cResult[15] = tmp18.id;
+              cResult[16] = tmp51;
+              tmp48 = tmp51;
+            } else {
+              tmp48 = cResult[16];
+            }
+            if (cResult[17] === vibegrationsControlActive) {
+              if (cResult[18] === projectId) {
+                if (cResult[19] === active) {
+                  let tmp52;
+                  if (cResult[20] === visible) {
+                    tmp52 = cResult[21];
+                  }
+                  if (cResult[22] === vibegrationsControlActive) {
+                    if (cResult[23] === tmp4) {
+                      if (cResult[24] === projectId) {
+                        let tmp55;
+                        if (cResult[25] === visible) {
+                          tmp55 = cResult[26];
+                        }
+                        if (cResult[27] === tmp10.frame) {
+                          if (cResult[28] === tmp55) {
+                            if (cResult[29] === tmp48) {
+                              let tmp58;
+                              if (cResult[30] === tmp52) {
+                                tmp58 = cResult[31];
+                              }
+                              tmp35 = tmp58;
+                            }
+                          }
+                        }
+                        let obj4 = { style: tmp10.frame, children: items };
+                        items = [tmp48, tmp52, tmp55];
+                        const tmp61 = closure_25(closure_7, obj4);
+                        cResult[27] = tmp10.frame;
+                        cResult[28] = tmp55;
+                        cResult[29] = tmp48;
+                        cResult[30] = tmp52;
+                        class L {
+                          constructor() {
+                            const tmp = first;
+                            if (!tmp) {
+                              if (null == closure_3) {
+                                const mainFrame = FramesStore.getMainFrame();
+                                if (null != mainFrame) {
+                                  const obj = FramesNativeManagerDefault;
+                                  obj.leaveFrame(mainFrame.id);
+                                }
+                                const obj3 = { applicationId, surface };
+                                const obj2 = FramesActionCreatorsDefault;
+                                const launchFrameResult = obj2.launchFrame(obj3);
+                                launchFrameResult.catch(() => closure_1_5(true));
+                                const obj4 = FramesActionCreatorsDefault;
+                                obj4.demoteMainFrame(closure_2);
+                              }
+                            }
+                          }
+                        }
+                        cResult[31] = tmp61;
+                        tmp58 = tmp61;
+                      }
+                    }
+                  }
+                  let tmp56 = null;
+                  if (visible) {
+                    const obj5 = { projectId, active: vibegrationsControlActive, onOpenPublishedApp: tmp4 };
+                    tmp56 = closure_24(tmp15(16290), obj5);
+                  }
+                  cResult[22] = vibegrationsControlActive;
+                  cResult[23] = tmp4;
+                  cResult[24] = projectId;
+                  cResult[25] = visible;
+                  cResult[26] = tmp56;
+                  tmp55 = tmp56;
+                }
+              }
+            }
+            let tmp53 = null;
+            if (visible) {
+              tmp53 = null;
+              if (active) {
+                tmp53 = null;
+                if (!vibegrationsControlActive) {
+                  const obj6 = { projectId };
+                  tmp53 = closure_24(tmp15(16288), obj6);
+                }
+              }
+            }
+            cResult[17] = vibegrationsControlActive;
+            cResult[18] = projectId;
+            cResult[19] = active;
+            cResult[20] = visible;
+            cResult[21] = tmp53;
+            tmp52 = tmp53;
+          } else if (first) {
+            let tmp41;
+            let tmp40;
+            let tmp44;
+            const _Symbol2 = Symbol;
+            if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
+              const intl = tmp(1127).intl;
+              const stringResult = intl.string(projectId(3718).MeLWCr);
+              const intl2 = tmp(1127).intl;
+              const stringResult1 = intl2.string(projectId(3718)["1RCbQT"]);
+              cResult[32] = stringResult;
+              cResult[33] = stringResult1;
+              tmp41 = stringResult1;
+              tmp40 = stringResult;
+            } else {
+              tmp40 = cResult[32];
+              tmp41 = cResult[33];
+            }
+            const _Symbol3 = Symbol;
+            if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
+              const obj7 = { title: tmp40, body: tmp41, children: closure_24(Button, obj8) };
+              obj8 = {
+                variant: "primary",
+                size: "sm",
+                text: intl3.string(projectId(3718)["42EdIV"]),
+                onPress() {
+                              return closure_5(false);
+                            }
+              };
+              Button = tmp(5282).Button;
+              intl3 = tmp(1127).intl;
+              const tmp47 = closure_24(closure_27, obj7);
+              cResult[34] = tmp47;
+              tmp44 = tmp47;
+            } else {
+              tmp44 = cResult[34];
+            }
+            tmp35 = tmp44;
+          } else {
+            let tmp31;
+            const _Symbol = Symbol;
+            if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
+              const tmp34 = closure_24(closure_5, {});
+              cResult[35] = tmp34;
+              tmp31 = tmp34;
+            } else {
+              tmp31 = cResult[35];
+            }
+            if (cResult[36] !== tmp10.centered) {
+              const obj9 = { style: tmp10.centered, children: tmp31 };
+              const tmp38 = closure_24(closure_7, obj9);
+              cResult[36] = tmp10.centered;
+              cResult[37] = tmp38;
+              tmp35 = tmp38;
+            } else {
+              tmp35 = cResult[37];
+            }
+          }
+          return tmp35;
+        }
+      }
+    }
+    class L {
+      constructor() {
+        const tmp = first;
+        if (!tmp) {
+          if (null == closure_3) {
+            const mainFrame = FramesStore.getMainFrame();
+            if (null != mainFrame) {
+              const obj = FramesNativeManagerDefault;
+              obj.leaveFrame(mainFrame.id);
+            }
+            const obj3 = { applicationId, surface };
+            const obj2 = FramesActionCreatorsDefault;
+            const launchFrameResult = obj2.launchFrame(obj3);
+            launchFrameResult.catch(() => closure_1_5(true));
+            const obj4 = FramesActionCreatorsDefault;
+            obj4.demoteMainFrame(closure_2);
+          }
+        }
+      }
+    }
+    const items1 = [applicationId, first, tmp17, tmp11];
+    cResult[9] = applicationId;
+    cResult[10] = first;
+    cResult[11] = tmp17;
+    cResult[12] = tmp11;
+    cResult[13] = L;
+    cResult[14] = items1;
+    tmp25 = items1;
+    tmp24 = L;
+  }
+  const items2 = [projectId, visible];
+  cResult[2] = projectId;
+  cResult[3] = visible;
+  cResult[4] = items2;
+  tmp7 = items2;
+}) : ((applicationId) => {
+  let Button;
+  let closure_2;
+  let closure_3;
+  let closure_5;
+  let first;
+  let intl;
+  let intl2;
+  let intl3;
+  let items2;
+  let obj8;
+  let onOpenPublishedApp;
+  let tmp27Result;
+  let visible;
+  applicationId = applicationId.applicationId;
+  const projectId = applicationId.projectId;
+  ({ visible, onOpenPublishedApp } = applicationId);
+  if (onOpenPublishedApp === undefined) {
+    onOpenPublishedApp = null;
+  }
+  first = undefined;
+  closure_5 = undefined;
+  let tmp = applicationId;
+  let obj = applicationId(12444);
+  const vibegrationsControlActive = obj.useVibegrationsControlActive(projectId);
+  let obj2 = first;
+  const items = [projectId, visible];
+  const active = closure_14(projectId).active;
+  const effect = first.useEffect(() => () => closure_2_13(projectId), items);
+  const tmp5 = closure_26();
+  const tmp6 = closure_23(applicationId, surface);
+  dependencyMap = tmp6;
+  const tmp8 = projectId(16279)(applicationId, surface);
+  _slicedToArray = tmp8;
+  let tmp9 = null;
+  if (null != tmp8) {
+    tmp9 = null;
+    if (closure_21(tmp8)) {
+      tmp9 = tmp8;
+    }
+  }
+  [first, closure_5] = obj2.useState(false);
+  const items1 = [applicationId, first, tmp8, tmp6];
+  const effect1 = obj2.useEffect(() => {
+    const tmp = first;
+    if (!tmp) {
+      if (null == closure_3) {
+        const mainFrame = FramesStore.getMainFrame();
+        if (null != mainFrame) {
+          const obj = FramesNativeManagerDefault;
+          obj.leaveFrame(mainFrame.id);
+        }
+        const obj3 = { applicationId, surface };
+        const obj2 = FramesActionCreatorsDefault;
+        const launchFrameResult = obj2.launchFrame(obj3);
+        launchFrameResult.catch(() => closure_1_5(true));
+        const obj4 = FramesActionCreatorsDefault;
+        obj4.demoteMainFrame(closure_2);
+      }
+    }
+  }, items1);
+  let tmp15 = visible;
+  const tmp7Result = projectId(16280);
+  if (visible) {
+    tmp15 = null != tmp9;
+  }
+  tmp7Result(tmp15);
+  if (null != tmp9) {
+    let obj3 = { style: tmp5.frame, children: items2 };
+    let obj4 = { frameId: tmp9.id, layoutMode: constants4.FOCUSED };
+    items2 = [closure_24(tmp(16281).InlineFrameView, obj4), , ];
+    let tmp23Result = null;
+    const tmp21 = closure_25;
+    const tmp22 = closure_7;
+    if (visible) {
+      tmp23Result = null;
+      if (active) {
+        tmp23Result = null;
+        if (!vibegrationsControlActive) {
+          const obj5 = { projectId };
+          tmp23Result = tmp23(tmp7(16288), obj5);
+        }
+      }
+    }
+    items2[1] = tmp23Result;
+    let tmp23Result2 = null;
+    if (visible) {
+      const obj6 = { projectId, active: vibegrationsControlActive, onOpenPublishedApp };
+      tmp23Result2 = tmp23(tmp7(16290), obj6);
+    }
+    items2[2] = tmp23Result2;
+    tmp27Result = tmp21(tmp22, obj3);
+  } else if (first) {
+    const obj7 = { title: intl.string(projectId(3718).MeLWCr), body: intl2.string(projectId(3718)["1RCbQT"]), children: closure_24(Button, obj8) };
+    intl = tmp(1127).intl;
+    intl2 = tmp(1127).intl;
+    obj8 = {
+      variant: "primary",
+      size: "sm",
+      text: intl3.string(projectId(3718)["42EdIV"]),
+      onPress() {
+          return closure_5(false);
+        }
+    };
+    Button = tmp(5282).Button;
+    intl3 = tmp(1127).intl;
+    tmp27Result = tmp27(closure_27, obj7);
+  } else {
+    const obj9 = { style: tmp5.centered, children: closure_24(closure_5, {}) };
+    tmp27Result = tmp27(closure_7, obj9);
+  }
+  return tmp27Result;
+});
+let closure_28 = tmp8;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function(applicationId) {
+  let id;
+  let intl;
+  let intl2;
+  let tmp17;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(11);
+  applicationId = applicationId.applicationId;
+  const revoked = applicationId.revoked;
+  const tmp4 = closure_26();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    const fn = function l() {
+      return id.getId();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] !== applicationId) {
+    const self = this;
+    const self2 = this;
+    const obj2 = { applicationId };
+    const applicationWidget = new tmp(7051).ApplicationWidget(obj2);
+    cResult[2] = applicationId;
+    cResult[3] = applicationWidget;
+    tmp9 = applicationWidget;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (revoked) {
+    let tmp21;
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { title: intl.string(_modDef3718.SGHO9K), body: intl2.string(_modDef3718["pV/rS2"]) };
+      intl = tmp(1127).intl;
+      intl2 = tmp(1127).intl;
+      const tmp25 = closure_24(closure_27, obj3);
+      cResult[4] = tmp25;
+      tmp21 = tmp25;
+    } else {
+      tmp21 = cResult[4];
+    }
+    tmp17 = tmp21;
+  } else {
+    if (cResult[5] === stateFromStores) {
+      let tmp13;
+      if (cResult[6] === tmp9) {
+        tmp13 = cResult[7];
+      }
+      if (cResult[8] === tmp4.widget) {
+        if (cResult[9] === tmp13) {
+          tmp17 = cResult[10];
+        }
+      }
+      const obj4 = { contentContainerStyle: tmp4.widget, children: tmp13 };
+      const tmp20 = closure_24(metroRequire, obj4);
+      cResult[8] = tmp4.widget;
+      cResult[9] = tmp13;
+      cResult[10] = tmp20;
+      tmp17 = tmp20;
+    }
+    const obj5 = { userId: stateFromStores, widget: tmp9 };
+    const tmp16 = closure_24(UserProfileApplicationWidgetCardDefault, obj5);
+    cResult[5] = stateFromStores;
+    cResult[6] = tmp9;
+    cResult[7] = tmp16;
+    tmp13 = tmp16;
+  }
+  return tmp17;
+}) : ((applicationId) => {
+  let id;
+  let intl;
+  let intl2;
+  let obj4;
+  let tmp6Result;
+  applicationId = applicationId.applicationId;
+  const revoked = applicationId.revoked;
   const tmp = closure_26();
+  let obj = applicationId(504);
   const items = [AuthenticationStore];
   [][0] = applicationId;
-  const stateFromStores = applicationId(504).useStateFromStores(items, () => id.getId());
-  if (applicationId.revoked) {
-    const obj2 = { title: null, body: null };
-    const intl = tmp2(1115).intl;
-    obj2.title = intl.string(_modDef3710.SGHO9K);
-    const intl2 = tmp2(1115).intl;
-    obj2.body = intl2.string(_modDef3710["pV/rS2"]);
-    let tmp6Result = tmp6(StatusCard, obj2);
+  const stateFromStores = obj.useStateFromStores(items, () => id.getId());
+  if (revoked) {
+    const obj2 = { title: intl.string(_modDef3718.SGHO9K), body: intl2.string(_modDef3718["pV/rS2"]) };
+    intl = tmp2(1127).intl;
+    intl2 = tmp2(1127).intl;
+    tmp6Result = tmp6(closure_27, obj2);
   } else {
-    const obj3 = { contentContainerStyle: tmp.widget, children: null };
-    const obj4 = { userId: stateFromStores, widget: tmp5 };
-    obj3.children = tmp6(UserProfileApplicationWidgetCardDefault, obj4);
+    const obj3 = { contentContainerStyle: tmp.widget, children: closure_24(UserProfileApplicationWidgetCardDefault, obj4) };
+    obj4 = { userId: stateFromStores, widget: tmp5 };
     tmp6Result = tmp6(closure_6, obj3);
   }
   return tmp6Result;
-}
-function PreviewBot(previewApplicationId) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewApplicationId) => {
+  let closure_2;
+  let closure_3;
+  let first;
   let id;
-  let stateFromStores;
-  dependencyMap = undefined;
-  _slicedToArray = undefined;
-  noop = undefined;
-  let id1;
-  let stateFromStores1;
-  let stateFromStores2;
-  let tmp = closure_26();
-  const application = id(7440).useApplication(previewApplicationId.previewApplicationId);
+  let state;
+  let tmp10;
+  let tmp16;
+  let tmp9;
+  let tmp = id;
+  let tmp2 = dependencyMap;
+  let obj = id(576);
+  const cResult = obj.c(43);
+  previewApplicationId = previewApplicationId.previewApplicationId;
+  const tmp4 = closure_26();
+  let obj2 = id(6585);
+  const application = obj2.useApplication(previewApplicationId);
   const data = application.data;
   id = undefined;
   if (data != null) {
@@ -216,36 +720,324 @@ function PreviewBot(previewApplicationId) {
   if (id == null) {
     id = null;
   }
-  let obj = id(7440);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id) {
+    const fn = function u() {
+      if (null == id) {
+        return null;
+      } else {
+        const dMFromUserId = ChannelStore.getDMFromUserId(tmp);
+        let channel = null;
+        const obj = ChannelStore;
+        if (null != dMFromUserId) {
+          channel = obj.getChannel(dMFromUserId);
+        }
+        return channel;
+      }
+    };
+    const items1 = [id];
+    cResult[1] = id;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp10 = items1;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp9, tmp10);
+  const tmp13 = _slicedToArray(react.useState(null), 2);
+  dependencyMap = tmp13[1];
+  const tmp12 = _slicedToArray;
+  _slicedToArray = tmp14;
+  const tmp12Result = tmp12(react.useState(0), 2);
+  [tmp16, react] = tmp12Result;
+  if (cResult[4] === id) {
+    if (cResult[5] === stateFromStores) {
+      let tmp17;
+      if (cResult[6] === (null != id && tmp13[0] === id)) {
+        tmp17 = cResult[7];
+      }
+      if (cResult[8] === tmp16) {
+        if (cResult[9] === id) {
+          if (cResult[10] === stateFromStores) {
+            let tmp18;
+            let tmp22;
+            let tmp21;
+            let tmp24;
+            let tmp26;
+            let tmp25;
+            let tmp29;
+            let tmp28;
+            if (cResult[11] === (null != id && tmp13[0] === id)) {
+              tmp18 = cResult[12];
+            }
+            const effect = obj4.useEffect(tmp17, tmp18);
+            let id1;
+            if (stateFromStores != null) {
+              id1 = stateFromStores.id;
+            }
+            if (id1 == null) {
+              id1 = null;
+            }
+            if (cResult[13] !== id1) {
+              class W {
+                constructor() {
+                  if (null != id1) {
+                    const obj = ChannelActionCreatorsDefault;
+                    obj.preload(closure_19, tmp);
+                  }
+                }
+              }
+              const items2 = [id1];
+              cResult[13] = id1;
+              cResult[14] = W;
+              cResult[15] = items2;
+              tmp22 = items2;
+              tmp21 = W;
+            } else {
+              class W {
+                constructor() {
+                  if (null != id1) {
+                    const obj = ChannelActionCreatorsDefault;
+                    obj.preload(closure_19, tmp);
+                  }
+                }
+              }
+              tmp22 = cResult[15];
+            }
+            const effect1 = obj4.useEffect(tmp21, tmp22);
+            const _Symbol = Symbol;
+            if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+              class W {
+                constructor() {
+                  if (null != id1) {
+                    const obj = ChannelActionCreatorsDefault;
+                    obj.preload(closure_19, tmp);
+                  }
+                }
+              }
+              const items3 = [ReadStateStore];
+              cResult[16] = items3;
+              tmp24 = items3;
+            } else {
+              class W {
+                constructor() {
+                  if (null != id1) {
+                    const obj = ChannelActionCreatorsDefault;
+                    obj.preload(closure_19, tmp);
+                  }
+                }
+              }
+            }
+            if (cResult[17] !== id1) {
+              class Y {
+                constructor() {
+                  const hasUnreadResult = null != id1 && ReadStateStore.hasUnread(tmp);
+                  return hasUnreadResult;
+                }
+              }
+              const items4 = [id1];
+              cResult[17] = id1;
+              cResult[18] = items4;
+              cResult[19] = Y;
+              tmp26 = Y;
+              tmp25 = items4;
+            } else {
+              class Y {
+                constructor() {
+                  const hasUnreadResult = null != id1 && ReadStateStore.hasUnread(tmp);
+                  return hasUnreadResult;
+                }
+              }
+              tmp26 = cResult[19];
+            }
+            const tmpResult3 = tmp(504);
+            const stateFromStores1 = tmpResult3.useStateFromStores(tmp24, tmp26, tmp25);
+            const _Symbol2 = Symbol;
+            if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+              class Y {
+                constructor() {
+                  const hasUnreadResult = null != id1 && ReadStateStore.hasUnread(tmp);
+                  return hasUnreadResult;
+                }
+              }
+              const items5 = [AppStateStore];
+              const fn2 = function $() {
+                return state.getState() === constants.ACTIVE;
+              };
+              cResult[20] = items5;
+              cResult[21] = fn2;
+              tmp29 = fn2;
+              tmp28 = items5;
+            } else {
+              class Y {
+                constructor() {
+                  const hasUnreadResult = null != id1 && ReadStateStore.hasUnread(tmp);
+                  return hasUnreadResult;
+                }
+              }
+              tmp29 = cResult[21];
+            }
+            const tmpResult4 = tmp(504);
+            const stateFromStores2 = tmpResult4.useStateFromStores(tmp28, tmp29);
+            if (cResult[22] === stateFromStores2) {
+              class Y {
+                constructor() {
+                  const hasUnreadResult = null != id1 && ReadStateStore.hasUnread(tmp);
+                  return hasUnreadResult;
+                }
+              }
+            }
+            function te() {
+              let tmp2 = null != stateFromStores;
+              const tmp = stateFromStores;
+              if (tmp2) {
+                tmp2 = stateFromStores1;
+              }
+              if (tmp2) {
+                tmp2 = stateFromStores2;
+              }
+              if (tmp2) {
+                const obj2 = { section: constants3.CHANNEL, object: constants.ACK_INCOMING_MESSAGE, objectType: constants2.ACK_AUTOMATIC };
+                const obj = ReadStateActionCreators;
+                obj.ackChannel(tmp, obj2);
+              }
+            }
+            const items6 = [stateFromStores, stateFromStores1, stateFromStores2];
+            cResult[22] = stateFromStores2;
+            cResult[23] = stateFromStores;
+            cResult[24] = stateFromStores1;
+            cResult[25] = te;
+            cResult[26] = items6;
+          }
+        }
+      }
+      const items7 = [id, stateFromStores, null != id && tmp13[0] === id, tmp16];
+      cResult[8] = tmp16;
+      cResult[9] = id;
+      cResult[10] = stateFromStores;
+      cResult[11] = null != id && tmp13[0] === id;
+      cResult[12] = items7;
+      tmp18 = items7;
+    }
+  }
+  class T {
+    constructor() {
+      if (null != c0) {
+        tmp2 = closure_1;
+        if (null == closure_1) {
+          tmp3 = closure_3;
+          if (!tmp3) {
+            flag = false;
+            c0 = false;
+            tmp4 = closure_1;
+            tmp5 = closure_2;
+            obj = closure_1(closure_2[33]);
+            obj1 = { recipientIds: null, navigateToChannel: false };
+            obj1.recipientIds = tmp;
+            openPrivateChannelResult = obj.openPrivateChannel(obj1);
+            catchPromise = openPrivateChannelResult.catch(() => {
+              const tmp = c0;
+              if (!tmp) {
+                closure_2(id);
+              }
+            });
+            return () => {
+              c0 = true;
+            };
+          }
+        }
+      }
+      return;
+    }
+  }
+  cResult[4] = id;
+  cResult[5] = stateFromStores;
+  cResult[6] = null != id && tmp13[0] === id;
+  cResult[7] = T;
+  tmp17 = T;
+}) : ((previewApplicationId) => {
+  let closure_2;
+  let closure_3;
+  let closure_4;
+  let intl;
+  let intl2;
+  let intl3;
+  let items8;
+  let state;
+  let tmp19Result;
+  let tmp19Result2;
+  let tmp29Result;
+  let id;
+  let stateFromStores;
+  dependencyMap = undefined;
+  _slicedToArray = undefined;
+  react = undefined;
+  let id1;
+  let stateFromStores1;
+  let stateFromStores2;
+  previewApplicationId = previewApplicationId.previewApplicationId;
+  let tmp = closure_26();
+  let tmp2 = id;
+  let tmp3 = dependencyMap;
+  let obj = id(6585);
+  const application = obj.useApplication(previewApplicationId);
+  const data = application.data;
+  id = undefined;
+  const isLoading = application.isLoading;
+  if (data != null) {
+    const bot = data.bot;
+    if (bot != null) {
+      id = bot.id;
+    }
+  }
+  if (id == null) {
+    id = null;
+  }
   const items = [ChannelStore];
   const items1 = [id];
-  stateFromStores = id(504).useStateFromStores(items, () => {
+  const tmp2Result = tmp2(504);
+  stateFromStores = tmp2Result.useStateFromStores(items, () => {
     if (null == id) {
       return null;
     } else {
       const dMFromUserId = ChannelStore.getDMFromUserId(tmp);
       let channel = null;
+      const obj = ChannelStore;
       if (null != dMFromUserId) {
-        channel = ChannelStore.getChannel(dMFromUserId);
+        channel = obj.getChannel(dMFromUserId);
       }
       return channel;
     }
   }, items1);
-  const tmp8 = _slicedToArray(noop.useState(null), 2);
+  const tmp8 = _slicedToArray(react.useState(null), 2);
   dependencyMap = tmp8[1];
+  const tmp7 = _slicedToArray;
   _slicedToArray = tmp9;
-  const tmp7Result = _slicedToArray(noop.useState(0), 2);
-  noop = tmp7Result[1];
+  const tmp7Result = tmp7(react.useState(0), 2);
+  react = tmp7Result[1];
   const items2 = [id, stateFromStores, null != id && tmp8[0] === id, tmp7Result[0]];
   const effect = obj3.useEffect(() => {
+    let tmp;
     if (null != c0) {
       if (null == stateFromStores) {
-        if (!closure_3) {
+        const tmp3 = closure_3;
+        if (!tmp3) {
           c0 = false;
           const obj2 = { recipientIds: tmp, navigateToChannel: false };
-          const obj = stateFromStores(4801);
-          stateFromStores(4801).openPrivateChannel(obj2).catch(() => {
-            if (!c0) {
+          const obj = stateFromStores(closure_2[33]);
+          const openPrivateChannelResult = obj.openPrivateChannel(obj2);
+          openPrivateChannelResult.catch(() => {
+            const tmp = c0;
+            if (!tmp) {
               closure_2(id);
             }
           });
@@ -266,25 +1058,24 @@ function PreviewBot(previewApplicationId) {
   const items3 = [id1];
   const effect1 = obj3.useEffect(() => {
     if (null != id1) {
-      ChannelActionCreatorsDefault.preload(guildId, tmp);
+      const obj = ChannelActionCreatorsDefault;
+      obj.preload(closure_19, tmp);
     }
   }, items3);
-  const tmp2Result = id(504);
   const items4 = [ReadStateStore];
   const items5 = [id1];
-  stateFromStores1 = id(504).useStateFromStores(items4, () => {
-    let hasUnreadResult = null != id1;
-    if (hasUnreadResult) {
-      hasUnreadResult = ReadStateStore.hasUnread(tmp);
-    }
+  const tmp2Result4 = tmp2(504);
+  stateFromStores1 = tmp2Result4.useStateFromStores(items4, () => {
+    const hasUnreadResult = null != id1 && ReadStateStore.hasUnread(tmp);
     return hasUnreadResult;
   }, items5);
-  const tmp2Result4 = id(504);
   const items6 = [AppStateStore];
-  stateFromStores2 = id(504).useStateFromStores(items6, () => state.getState() === constants.ACTIVE);
+  const tmp2Result5 = tmp2(504);
+  stateFromStores2 = tmp2Result5.useStateFromStores(items6, () => state.getState() === constants.ACTIVE);
   const items7 = [stateFromStores, stateFromStores1, stateFromStores2];
   const effect2 = obj3.useEffect(() => {
     let tmp2 = null != stateFromStores;
+    const tmp = stateFromStores;
     if (tmp2) {
       tmp2 = stateFromStores1;
     }
@@ -293,129 +1084,240 @@ function PreviewBot(previewApplicationId) {
     }
     if (tmp2) {
       const obj2 = { section: constants3.CHANNEL, object: constants.ACK_INCOMING_MESSAGE, objectType: constants2.ACK_AUTOMATIC };
-      ReadStateActionCreators.ackChannel(stateFromStores, obj2);
+      const obj = ReadStateActionCreators;
+      obj.ackChannel(tmp, obj2);
     }
   }, items7);
   const callback = obj3.useCallback(() => {
-    dependencyMap(null);
+    closure_2(null);
     closure_4((arg0) => arg0 + 1);
   }, []);
-  const tmp2Result5 = id(504);
-  if (!application.isLoading) {
-    let obj2 = { title: null, body: null, children: null };
-    const intl = tmp2(1115).intl;
-    obj2.title = intl.string(stateFromStores(3710).bl4eBc);
-    const intl2 = tmp2(1115).intl;
-    obj2.body = intl2.string(stateFromStores(3710)["4iyrze"]);
-    let tmp19Result = null;
-    if (tmp9) {
-      const obj4 = { variant: "secondary", size: "sm", text: null, onPress: null };
-      const intl3 = tmp2(1115).intl;
-      obj4.text = intl3.string(tmp2(1115).t["5911Lb"]);
-      obj4.onPress = callback;
-      tmp19Result = tmp19(tmp2(5218).Button, obj4);
+  const ref = react.useRef(null);
+  if (!isLoading) {
+    if (null != id) {
+      return tmp19Result2;
     }
-    obj2.children = tmp19Result;
-    return closure_24(StatusCard, obj2);
+    let obj2 = { title: intl.string(stateFromStores(3718).bl4eBc), body: intl2.string(stateFromStores(3718)["4iyrze"]), children: tmp19Result };
+    intl = tmp2(1127).intl;
+    intl2 = tmp2(1127).intl;
+    tmp19Result = null;
+    const tmp20 = closure_27;
+    if (null != id && tmp8[0] === id) {
+      const obj4 = { variant: "secondary", size: "sm", text: intl3.string(tmp2(1127).t["5911Lb"]), onPress: callback };
+      const Button = tmp2(5282).Button;
+      intl3 = tmp2(1127).intl;
+      tmp19Result = tmp19(Button, obj4);
+    }
+    tmp19Result2 = tmp19(tmp20, obj2);
   }
   if (null == stateFromStores) {
-    const obj5 = { style: tmp.centered, children: null };
-    tmp = id1;
-    obj5.children = closure_24(id1, {});
-    closure_24(stateFromStores2, obj5);
+    const obj5 = { style: tmp.centered, children: closure_24(id1, {}) };
+    tmp29Result = closure_24(stateFromStores2, obj5);
   } else {
-    const obj6 = { style: tmp.dm, children: null };
+    const obj6 = { style: tmp.dm, children: items8 };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: ref, screenIndex: "vibegrations-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    const items8 = [closure_24(stateFromStores(11632), obj7, stateFromStores.id), ];
-    let tmp29Result = null;
+    items8 = [closure_24(stateFromStores(9533), obj7, stateFromStores.id), ];
+    let tmp31Result = null;
+    const tmp29 = closure_25;
+    const tmp2Result6 = tmp2(1370);
+    const tmp30 = stateFromStores2;
+    const tmp31 = closure_24;
     if (tmp2Result6.isAndroid()) {
-      tmp29Result = tmp29(tmp2(16980).PortalKeyboardRenderer, { portal: true });
+      tmp31Result = tmp31(tmp2(16294).PortalKeyboardRenderer, { portal: true });
     }
-    items8[1] = tmp29Result;
-    obj6.children = items8;
-    closure_25(stateFromStores2, obj6);
-    tmp29 = closure_24;
-    tmp2Result6 = tmp2(1364);
+    items8[1] = tmp31Result;
+    tmp29Result = tmp29(tmp30, obj6);
   }
-}
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: hasOwnProperty, ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const vibegrationsDesignFeedbackStore = fn(16939);
-({ exitVibegrationsDesignFeedback: map1, useVibegrationsDesignFeedback: closure_14 } = vibegrationsDesignFeedbackStore);
-const Constants = fn(1074);
-({ AnalyticsObjects: closure_15, AnalyticsObjectTypes: closure_16, AnalyticsSections: closure_17, AppStates: closure_18, ME: closure_19 } = Constants);
-const FramesConstants = fn(9346);
-({ FrameLayoutModes: closure_20, isLaunched: closure_21, MAIN_SURFACE: closure_22, makeFrameId: closure_23 } = FramesConstants);
-const jsxProd = fn(21);
-({ jsx: closure_24, jsxs: closure_25 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { frame: { flex: 1 }, centered: { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24 }, card: { alignSelf: "stretch" }, cardBody: null, cardCopy: null, cardText: null, widget: null, controlOverlay: null, controlText: null, dm: null };
-let obj3 = { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24 };
-obj2.cardBody = { padding: nativeDefault.space.PX_16, alignItems: "center", gap: nativeDefault.space.PX_12 };
-let obj4 = { padding: nativeDefault.space.PX_16, alignItems: "center", gap: nativeDefault.space.PX_12 };
-obj2.cardCopy = { alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj2.cardText = { textAlign: "center" };
-let obj5 = { alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj2.widget = { padding: nativeDefault.space.PX_16 };
-const rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "flex-end", padding: nativeDefault.space.PX_16 };
-obj2.controlOverlay = rect;
-let obj6 = { padding: nativeDefault.space.PX_16 };
-obj2.controlText = { textAlign: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_8 };
-obj2.dm = { flex: 1 };
-let dependencyMap = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativePreview.tsx");
-
-export default function VibegrationsNativePreview(arg0) {
+  tmp19Result2 = tmp29Result;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let availability;
+  let frameHostAvailable;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let mode;
+  let obj3;
+  let permissionsGate;
+  let previewApplicationId;
+  let projectId;
+  let tmp25;
+  let tmp26;
+  let widgetApplicationId;
+  const obj = react2;
+  const cResult = obj.c(16);
+  ({ projectId, previewApplicationId, mode, availability, widgetApplicationId, frameHostAvailable, permissionsGate } = arg0);
+  if (null != permissionsGate) {
+    let tmp30;
+    const _Symbol2 = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl5 = tmp(1127).intl;
+      const stringResult = intl5.string(_modDef3718.DYwf2n);
+      const intl6 = tmp(1127).intl;
+      const stringResult1 = intl6.string(_modDef3718.WWj3pN);
+      cResult[0] = stringResult;
+      cResult[1] = stringResult1;
+      tmp25 = stringResult;
+      tmp26 = stringResult1;
+    } else {
+      [tmp25, tmp26] = cResult;
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl7 = tmp(1127).intl;
+      const stringResult2 = intl7.string(_modDef3718["CRfE/E"]);
+      cResult[2] = stringResult2;
+      tmp30 = stringResult2;
+    } else {
+      tmp30 = cResult[2];
+    }
+    if (cResult[3] === permissionsGate.loading) {
+      let tmp33;
+      if (cResult[4] === permissionsGate.onReviewPermissions) {
+        tmp33 = cResult[5];
+      }
+      return tmp33;
+    }
+    const obj2 = { title: tmp25, body: tmp26, children: closure_24(components_Button_Button.Button, obj3) };
+    obj3 = { variant: "primary", size: "sm", text: tmp30, onPress: null, loading: null };
+    ({ onReviewPermissions: obj8.onPress, loading: obj8.loading } = permissionsGate);
+    const tmp36 = closure_24(closure_27, obj2);
+    cResult[3] = permissionsGate.loading;
+    cResult[4] = permissionsGate.onReviewPermissions;
+    cResult[5] = tmp36;
+    tmp33 = tmp36;
+  } else if ("frame" === mode) {
+    let tmp19Result;
+    if (cResult[6] === frameHostAvailable) {
+      if (cResult[7] === previewApplicationId) {
+        let tmp18;
+        if (cResult[8] === projectId) {
+          tmp18 = cResult[9];
+        }
+        return tmp18;
+      }
+    }
+    if (frameHostAvailable) {
+      const obj4 = { applicationId: previewApplicationId, projectId, visible: true };
+      tmp19Result = tmp19(closure_28, obj4);
+    } else {
+      const obj5 = { title: intl3.string(_modDef3718.FHOJiH), body: intl4.string(_modDef3718["1yLQoV"]) };
+      intl3 = tmp(1127).intl;
+      intl4 = tmp(1127).intl;
+      tmp19Result = tmp19(closure_27, obj5);
+    }
+    cResult[6] = frameHostAvailable;
+    cResult[7] = previewApplicationId;
+    cResult[8] = projectId;
+    cResult[9] = tmp19Result;
+    tmp18 = tmp19Result;
+  } else if ("widget" === mode) {
+    if (cResult[10] === availability) {
+      let tmp14;
+      if (cResult[11] === widgetApplicationId) {
+        tmp14 = cResult[12];
+      }
+      return tmp14;
+    }
+    let tmp15 = null;
+    if (null != widgetApplicationId) {
+      const obj6 = { applicationId: widgetApplicationId, revoked: "unavailable-authorization-revoked" === availability.profileState };
+      tmp15 = closure_24(closure_29, obj6);
+    }
+    cResult[10] = availability;
+    cResult[11] = widgetApplicationId;
+    cResult[12] = tmp15;
+    tmp14 = tmp15;
+  } else if ("bot" === mode) {
+    let tmp10;
+    if (cResult[13] !== previewApplicationId) {
+      const obj7 = { previewApplicationId };
+      const tmp13 = closure_24(closure_30, obj7);
+      cResult[13] = previewApplicationId;
+      cResult[14] = tmp13;
+      tmp10 = tmp13;
+    } else {
+      tmp10 = cResult[14];
+    }
+    return tmp10;
+  } else if (null === mode) {
+    let tmp5;
+    const _Symbol = Symbol;
+    if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj15 = { title: intl.string(_modDef3718.FHOJiH), body: intl2.string(_modDef3718["1yLQoV"]) };
+      intl = tmp(1127).intl;
+      intl2 = tmp(1127).intl;
+      const tmp9 = closure_24(closure_27, obj15);
+      cResult[15] = tmp9;
+      tmp5 = tmp9;
+    } else {
+      tmp5 = cResult[15];
+    }
+    return tmp5;
+  }
+}) : ((arg0) => {
+  let Button;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let mode;
+  let obj3;
+  let permissionsGate;
+  let previewApplicationId;
+  let widgetApplicationId;
   ({ previewApplicationId, mode, widgetApplicationId, permissionsGate } = arg0);
   if (null != permissionsGate) {
-    const obj2 = { title: null, body: null, children: null };
-    const intl5 = util.intl;
-    obj2.title = intl5.string(_modDef3710.DYwf2n);
-    const intl6 = util.intl;
-    obj2.body = intl6.string(_modDef3710.WWj3pN);
-    const obj3 = { variant: "primary", size: "sm", text: null, onPress: null, loading: null };
-    const intl7 = util.intl;
-    obj3.text = intl7.string(_modDef3710["CRfE/E"]);
+    const obj2 = { title: intl5.string(_modDef3718.DYwf2n), body: intl6.string(_modDef3718.WWj3pN), children: closure_24(Button, obj3) };
+    intl5 = intl8.intl;
+    intl6 = intl8.intl;
+    obj3 = { variant: "primary", size: "sm", text: intl7.string(_modDef3718["CRfE/E"]), onPress: null, loading: null };
+    Button = components_Button_Button.Button;
+    intl7 = intl8.intl;
     ({ onReviewPermissions: obj7.onPress, loading: obj7.loading } = permissionsGate);
-    obj2.children = __initData4(components_Button_Button.Button, obj3);
-    return __initData4(StatusCard, obj2);
+    return closure_24(closure_27, obj2);
   } else if ("frame" === mode) {
+    let tmp14Result;
     if (tmp3) {
       const obj4 = { applicationId: previewApplicationId, projectId: tmp, visible: true };
-      let tmp14Result = tmp14(PreviewFrame, obj4);
+      tmp14Result = tmp14(closure_28, obj4);
     } else {
-      const obj5 = { title: null, body: null };
-      const intl3 = util.intl;
-      obj5.title = intl3.string(_modDef3710.FHOJiH);
-      const intl4 = util.intl;
-      obj5.body = intl4.string(_modDef3710["1yLQoV"]);
-      tmp14Result = tmp14(StatusCard, obj5);
+      const obj5 = { title: intl3.string(_modDef3718.FHOJiH), body: intl4.string(_modDef3718["1yLQoV"]) };
+      intl3 = intl8.intl;
+      intl4 = intl8.intl;
+      tmp14Result = tmp14(closure_27, obj5);
     }
     return tmp14Result;
   } else if ("widget" === mode) {
     let tmp11 = null;
     if (null != widgetApplicationId) {
       const obj6 = { applicationId: widgetApplicationId, revoked: "unavailable-authorization-revoked" === tmp2.profileState };
-      tmp11 = __initData4(PreviewWidget, obj6);
+      tmp11 = closure_24(closure_29, obj6);
     }
     return tmp11;
   } else if ("bot" === mode) {
     const obj13 = { previewApplicationId };
-    return __initData4(PreviewBot, obj13);
+    return closure_24(closure_30, obj13);
   } else if (null === mode) {
-    const obj = { title: null, body: null };
-    const intl = util.intl;
-    obj.title = intl.string(_modDef3710.FHOJiH);
-    const intl2 = util.intl;
-    obj.body = intl2.string(_modDef3710["1yLQoV"]);
-    return __initData4(StatusCard, obj);
+    const obj = { title: intl.string(_modDef3718.FHOJiH), body: intl2.string(_modDef3718["1yLQoV"]) };
+    intl = intl8.intl;
+    intl2 = intl8.intl;
+    return closure_24(closure_27, obj);
   }
-};
+});
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativePreview.tsx");
+
+export default tmp9;
 export const leaveVibegrationsPreviewFrame = function leaveVibegrationsPreviewFrame(arg0) {
-  const frameBySurface = FramesStore.getFrameBySurface(arg0, surface);
+  const frameBySurface = FramesStore.getFrameBySurface(arg0, closure_22);
   if (null != frameBySurface) {
-    FramesNativeManagerDefault.leaveFrame(frameBySurface.id);
+    const obj = FramesNativeManagerDefault;
+    obj.leaveFrame(frameBySurface.id);
   }
 };
-export { PreviewFrame };
+export const PreviewFrame = tmp8;

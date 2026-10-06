@@ -1,42 +1,594 @@
-// Module ID: 11632
-// Function ID: 11633
+// Module ID: 9533
+// Function ID: 9534
 // Name: ChatView
-// Dependencies: [19, 17, 5526, 2045, 2041, 5008, 1074, 21, 4788, 576, 4654, 504, 1115, 4998, 7603, 5847, 11633, 11634, 7749, 7588, 11636, 7387, 11641, 11654, 11716, 12240, 12751, 1364, 12919, 12920, 12549, 12924, 12927, 11813, 12930, 5373, 9, 10591, 12945, 1177, 12947, 12949, 12950, 13042, 2]
+// Dependencies: [19, 17, 5590, 2055, 2051, 5057, 1086, 21, 4837, 588, 558, 576, 4703, 504, 1127, 5047, 6748, 9534, 5907, 9535, 6899, 6733, 9537, 6532, 9542, 9556, 10836, 11316, 11869, 1370, 12044, 12045, 11642, 12049, 12052, 9, 9673, 12055, 1189, 12057, 12059, 12060, 12173, 12187, 5438, 11315, 2]
 
-// Module 11632 (ChatView)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ChatInputUtils from "ChatInputUtils" /* 4654 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7588 */;
-import SummaryActionCreators from "SummaryActionCreators" /* 11636 */;
-import ChatViewWrapperDefault from "ChatViewWrapper" /* 11641 */;
-import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 11654 */;
-import MessagesDefault from "Messages" /* 11716 */;
-import ChatInputDefault from "ChatInput" /* 12240 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 12751 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12924 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12927 */;
-import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MessageStore from "MessageStore" /* 5008 */;
+// Module 9533 (ChatView)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 588 */;
+import Constants from "Constants" /* 1086 */;
+import intl4 from "intl" /* 1127 */;
+import PlatformUtils from "PlatformUtils" /* 1370 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChatInputUtils from "ChatInputUtils" /* 4703 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 6733 */;
+import SummaryActionCreators from "SummaryActionCreators" /* 9537 */;
+import ChatViewWrapperDefault from "ChatViewWrapper" /* 9542 */;
+import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 9556 */;
+import MessagesDefault from "Messages" /* 10836 */;
+import ChatInputDefault from "ChatInput" /* 11316 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 11869 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12049 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12052 */;
+import react from "react" /* 19 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import ChannelStore_mod from "ChannelStore" /* 2051 */;
+import MessageStore from "MessageStore" /* 5057 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const createChannelRecord = fn(2045).createChannelRecord;
-const ChannelTypes = fn(1074).ChannelTypes;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4788);
-let obj = { empty: { flex: 1, borderTopWidth: fn(17).StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE }, messages: { flex: 1, overflow: "hidden" }, chat: null };
-let obj3 = { flex: 1, borderTopWidth: fn(17).StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-obj.chat = { backgroundColor: nativeDefault.colors.CHANNEL_BACKGROUND_DEFAULT, justifyContent: "flex-start", overflow: "hidden", flex: 1 };
-let closure_12 = createStyles.createStyles(obj);
-let obj4 = { backgroundColor: nativeDefault.colors.CHANNEL_BACKGROUND_DEFAULT, justifyContent: "flex-start", overflow: "hidden", flex: 1 };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/chat/native/ChatView.tsx");
-
-export default noop.memo(function ChatView(alwaysRespectKeyboard) {
+let c10;
+let c9;
+let obj2;
+let obj3;
+let unpackModuleId;
+const StyleSheet = react_native.StyleSheet;
+const createChannelRecord = ChannelRecord.createChannelRecord;
+let ChannelStore = ChannelStore_mod;
+const ChannelTypes = Constants.ChannelTypes;
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { empty: obj2, messages: { flex: 1, overflow: "hidden" }, chat: obj3 };
+obj2 = { flex: 1, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.CHANNEL_BACKGROUND_DEFAULT, justifyContent: "flex-start", overflow: "hidden", flex: 1 };
+let closure_12 = createStyles(obj);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) => {
+  let HACK_fixModalInteraction;
+  let alwaysRespectKeyboard;
+  let channel;
+  let channelId;
+  let channelIsLoading;
+  let disableGradient;
+  let guildId;
+  let intl;
+  let intl2;
+  let intl3;
+  let items6;
+  let tmp21;
+  let tmp31;
+  let tmp32;
+  let tmp59;
+  let tmp7;
+  let visibleMessagesWindowHandler;
+  let tmp = channelId;
+  let tmp2 = HACK_fixModalInteraction;
+  let obj = channelId(HACK_fixModalInteraction[11]);
+  const cResult = obj.c(63);
+  ({ alwaysRespectKeyboard, channelId } = chatInputRef);
+  chatInputRef = chatInputRef.chatInputRef;
+  ({ disableGradient, guildId, HACK_fixModalInteraction } = chatInputRef);
+  const screenIndex = chatInputRef.screenIndex;
+  const secondaryTextFieldRef = chatInputRef.secondaryTextFieldRef;
+  const setNoExtractUI = chatInputRef.setNoExtractUI;
+  ChannelStore = tmp4;
+  let tmp5 = undefined !== disableGradient && disableGradient;
+  const tmp6 = visibleMessagesWindowHandler();
+  let closure_7 = tmp6;
+  if (cResult[0] !== (undefined !== alwaysRespectKeyboard && alwaysRespectKeyboard)) {
+    const fn = function u() {
+      const tmp = alwaysRespectKeyboard;
+      if (!tmp) {
+        const obj = ChatInputUtils;
+        obj.dismissKeyboard();
+      }
+    };
+    cResult[0] = undefined !== alwaysRespectKeyboard && alwaysRespectKeyboard;
+    cResult[1] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] === (undefined !== alwaysRespectKeyboard && alwaysRespectKeyboard)) {
+    let tmp8;
+    let tmp11;
+    let tmp13;
+    if (cResult[3] === channelId) {
+      tmp8 = cResult[4];
+    }
+    let obj2 = screenIndex;
+    const effect = screenIndex.useEffect(tmp7, tmp8);
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      let tmp12 = ChannelStore;
+      let items = [ChannelStore];
+      cResult[5] = items;
+      tmp11 = items;
+    } else {
+      tmp11 = cResult[5];
+    }
+    if (cResult[6] !== channelId) {
+      class C {
+        constructor() {
+          return ChannelStore.getChannel(channelId);
+        }
+      }
+      cResult[6] = channelId;
+      cResult[7] = C;
+      tmp13 = C;
+    } else {
+      class C {
+        constructor() {
+          return ChannelStore.getChannel(channelId);
+        }
+      }
+    }
+    const tmpResult = tmp(tmp2[13]);
+    const stateFromStores = tmpResult.useStateFromStores(tmp11, tmp13);
+    if (cResult[8] === channelId) {
+      class C {
+        constructor() {
+          return ChannelStore.getChannel(channelId);
+        }
+      }
+      if (cResult[11] === tmp15) {
+        let tmp26;
+        let tmp30;
+        class C {
+          constructor() {
+            return ChannelStore.getChannel(channelId);
+          }
+        }
+        ({ channelIsLoading, channel } = tmp21);
+        const tmpResult5 = tmp(tmp2[15]);
+        const isChannelContentGated = tmpResult5.useIsChannelContentGated(channel);
+        const useGetSpoilerGatingChannelId = tmp(tmp2[16]).useGetSpoilerGatingChannelId;
+        tmp(tmp2[16]);
+        if (stateFromStores == null) {
+          class C {
+            constructor() {
+              return ChannelStore.getChannel(channelId);
+            }
+          }
+        }
+        const getSpoilerGatingChannelId = useGetSpoilerGatingChannelId(stateFromStores);
+        const tmp25 = null != getSpoilerGatingChannelId;
+        let closure_9 = obj2.useRef(channelId);
+        const ref = obj2.useRef(null);
+        const ref2 = obj2.useRef(null);
+        const _Symbol2 = Symbol;
+        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+          class A {
+            constructor() {
+              const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+              return tmp;
+            }
+          }
+          cResult[14] = A;
+          tmp26 = A;
+        } else {
+          class A {
+            constructor() {
+              const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+              return tmp;
+            }
+          }
+        }
+        const tmp28 = chatInputRef(tmp2[18])(tmp26);
+        visibleMessagesWindowHandler = tmp28;
+        const tmp29 = chatInputRef(tmp2[19])(channelId);
+        const isResourceChannel = tmp29;
+        const _Symbol3 = Symbol;
+        if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+          class A {
+            constructor() {
+              const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+              return tmp;
+            }
+          }
+          let items1 = [closure_7];
+          cResult[15] = items1;
+          tmp30 = items1;
+        } else {
+          class A {
+            constructor() {
+              const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+              return tmp;
+            }
+          }
+        }
+        if (cResult[16] === channelId) {
+          let tmp34;
+          let tmp38;
+          let tmp40;
+          let tmp43;
+          let tmp42;
+          let tmp47;
+          let tmp46;
+          let tmp51;
+          let tmp50;
+          let tmp55;
+          let tmp54;
+          class A {
+            constructor() {
+              const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+              return tmp;
+            }
+          }
+          const tmpResult7 = tmp(tmp2[13]);
+          const stateFromStoresObject = tmpResult7.useStateFromStoresObject(tmp30, tmp31, tmp32);
+          const shouldRenderPlaceholder = stateFromStoresObject.shouldRenderPlaceholder;
+          const shouldRenderBegginingRow = stateFromStoresObject.shouldRenderBegginingRow;
+          const _Symbol4 = Symbol;
+          if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            cResult[20] = tmp35;
+            tmp34 = tmp35;
+          } else {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+          }
+          const onScroll = tmp34;
+          if (cResult[21] !== chatInputRef) {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            cResult[21] = chatInputRef;
+            cResult[22] = tmp37;
+          } else {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+          }
+          const onPressKey = tmp36;
+          const _Symbol5 = Symbol;
+          if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            cResult[23] = tmp39;
+            tmp38 = tmp39;
+          } else {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+          }
+          const scrollToNewMessages = tmp38;
+          const _Symbol6 = Symbol;
+          if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            cResult[24] = tmp41;
+            tmp40 = tmp41;
+          } else {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+          }
+          const onJumpToPresent = tmp40;
+          const _Symbol7 = Symbol;
+          if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            let items2 = [];
+            cResult[25] = tmp44;
+            cResult[26] = items2;
+            tmp43 = items2;
+            tmp42 = tmp44;
+          } else {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            tmp43 = cResult[26];
+          }
+          const layoutEffect = obj2.useLayoutEffect(tmp42, tmp43);
+          if (cResult[27] !== channelId) {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            const items3 = [channelId];
+            cResult[27] = channelId;
+            cResult[28] = tmp48;
+            cResult[29] = items3;
+            tmp47 = items3;
+            tmp46 = tmp48;
+          } else {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            tmp47 = cResult[29];
+          }
+          const effect1 = obj2.useEffect(tmp46, tmp47);
+          if (cResult[30] !== channel.id) {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            const items4 = [channel.id];
+            cResult[30] = channel.id;
+            cResult[31] = tmp52;
+            cResult[32] = items4;
+            tmp51 = items4;
+            tmp50 = tmp52;
+          } else {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            tmp51 = cResult[32];
+          }
+          const effect2 = obj2.useEffect(tmp50, tmp51);
+          const _Symbol8 = Symbol;
+          if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            const items5 = [];
+            cResult[33] = tmp56;
+            cResult[34] = items5;
+            tmp55 = items5;
+            tmp54 = tmp56;
+          } else {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            tmp55 = cResult[34];
+          }
+          const effect3 = obj2.useEffect(tmp54, tmp55);
+          if (cResult[35] === HACK_fixModalInteraction) {
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+          }
+          if (cResult[58] === channelId) {
+            let tmp62;
+            let tmp66Result;
+            class A {
+              constructor() {
+                const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                return tmp;
+              }
+            }
+            if (cResult[61] !== tmp5) {
+              let tmp63;
+              class A {
+                constructor() {
+                  const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                  return tmp;
+                }
+              }
+              if (!tmp5) {
+                class A {
+                  constructor() {
+                    const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                    return tmp;
+                  }
+                }
+                tmp63 = closure_9(chatInputRef(tmp2[44]), { absolute: true });
+              }
+              cResult[61] = tmp5;
+              cResult[62] = tmp63;
+              tmp62 = tmp63;
+            } else {
+              class A {
+                constructor() {
+                  const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                  return tmp;
+                }
+              }
+            }
+            let obj3 = { profile: tmp(tmp2[45]).Profiles.ChatView, children: items6 };
+            items6 = [tmp59, tmp62, ];
+            const tmp27Result = chatInputRef(tmp2[45]);
+            const tmp64 = ref;
+            const tmpResult8 = tmp(tmp2[36]);
+            if (tmpResult8.shouldNSFWGateGuild(guildId)) {
+              class A {
+                constructor() {
+                  const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                  return tmp;
+                }
+              }
+              tmp66Result = closure_9(tmp27(tmp2[37]), {});
+              const tmp27Result3 = chatInputRef(tmp2[35]);
+              tmp27Result3.setInterstitial("NsfwGateChat");
+            } else {
+              let tmp68;
+              class A {
+                constructor() {
+                  const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                  return tmp;
+                }
+              }
+              if (channelIsLoading) {
+                class A {
+                  constructor() {
+                    const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                    return tmp;
+                  }
+                }
+                if (!secondaryTextFieldRef.isConnected()) {
+                  class A {
+                    constructor() {
+                      const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                      return tmp;
+                    }
+                  }
+                  tmp66Result = tmp66();
+                }
+              }
+              if (channelIsLoading) {
+                class A {
+                  constructor() {
+                    const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                    return tmp;
+                  }
+                }
+                let obj4 = { style: tmp6.empty, title: intl2.string(tmp(tmp2[14]).t.ai6Lbr), body: intl3.string(tmp(tmp2[14]).t["LTr+x9"]) };
+                const EmptyState = tmp(tmp2[38]).EmptyState;
+                intl2 = tmp(tmp2[14]).intl;
+                intl3 = tmp(tmp2[14]).intl;
+                tmp68 = closure_9(EmptyState, obj4);
+                const tmp27Result4 = chatInputRef(tmp2[35]);
+                tmp27Result4.setInterstitial("EmptyState");
+              } else {
+                class A {
+                  constructor() {
+                    const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+                    return tmp;
+                  }
+                }
+              }
+              tmp66Result = tmp68;
+            }
+            items6[2] = tmp66Result;
+            cResult[35] = HACK_fixModalInteraction;
+            cResult[36] = undefined !== alwaysRespectKeyboard && alwaysRespectKeyboard;
+            cResult[37] = channel;
+            cResult[38] = channelId;
+            cResult[39] = channelIsLoading;
+            cResult[40] = chatInputRef;
+            cResult[41] = tmp5;
+            cResult[42] = guildId;
+            cResult[43] = tmp36;
+            cResult[44] = tmp29;
+            cResult[45] = isChannelContentGated;
+            cResult[46] = screenIndex;
+            cResult[47] = secondaryTextFieldRef;
+            cResult[48] = setNoExtractUI;
+            cResult[49] = shouldRenderBegginingRow;
+            cResult[50] = shouldRenderPlaceholder;
+            cResult[51] = getSpoilerGatingChannelId;
+            cResult[52] = tmp25;
+            cResult[53] = tmp6.chat;
+            cResult[54] = tmp6.empty;
+            cResult[55] = tmp6.messages;
+            cResult[56] = tmp28;
+            cResult[57] = tmp64(tmp27Result, obj3);
+            const tmp64Result = tmp64(tmp27Result, obj3);
+          }
+          let obj5 = { channelId, guildId };
+          const tmp61 = closure_9(chatInputRef(tmp2[43]), obj5);
+          cResult[58] = channelId;
+          cResult[59] = guildId;
+          cResult[60] = tmp61;
+          tmp59 = tmp61;
+        }
+        const fn2 = function q() {
+          const messages = MessageStore.getMessages(channelId);
+          let tmp = 0 === messages.length;
+          if (tmp) {
+            tmp = messages.loadingMore || !messages.ready;
+          }
+          const obj = { shouldRenderPlaceholder: tmp, shouldRenderBegginingRow: tmp3 };
+          return obj;
+        };
+        const items7 = [channelId, tmp29];
+        cResult[16] = channelId;
+        cResult[17] = tmp29;
+        cResult[18] = fn2;
+        cResult[19] = items7;
+        tmp31 = fn2;
+        tmp32 = items7;
+      }
+      let obj6 = { channel: tmp15, channelIsLoading: null == stateFromStores };
+      cResult[11] = tmp15;
+      cResult[12] = null == stateFromStores;
+      cResult[13] = obj6;
+      tmp21 = obj6;
+    }
+    let tmp17 = stateFromStores;
+    if (null == stateFromStores) {
+      class A {
+        constructor() {
+          const tmp = new chatInputRef(HACK_fixModalInteraction[17])();
+          return tmp;
+        }
+      }
+      let obj7 = { id: channelId, type: channel.GUILD_TEXT, name: intl.string(tmp(tmp2[14]).t.ZTNur7) };
+      intl = tmp(tmp2[14]).intl;
+      tmp17 = setNoExtractUI(obj7);
+    }
+    cResult[8] = channelId;
+    cResult[9] = stateFromStores;
+    cResult[10] = tmp17;
+  }
+  const items8 = [channelId, tmp4];
+  cResult[2] = undefined !== alwaysRespectKeyboard && alwaysRespectKeyboard;
+  cResult[3] = channelId;
+  cResult[4] = items8;
+  tmp8 = items8;
+}) : ((alwaysRespectKeyboard) => {
+  let HACK_fixModalInteraction;
+  let c15;
+  let c16;
+  let channel;
+  let channelIsLoading;
+  let guildId;
+  let intl;
+  let intl2;
+  let items10;
+  let screenIndex;
+  let secondaryTextFieldRef;
+  let setNoExtractUI;
+  let shouldRender;
+  let tmp20Result3;
   let flag = alwaysRespectKeyboard.alwaysRespectKeyboard;
   if (flag === undefined) {
     flag = false;
@@ -47,10 +599,11 @@ export default noop.memo(function ChatView(alwaysRespectKeyboard) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  ({ guildId, HACK_fixModalInteraction: noop, screenIndex: GatewayConnectionStore, secondaryTextFieldRef: createChannelRecord, setNoExtractUI: ChannelStore } = alwaysRespectKeyboard);
+  ({ guildId, HACK_fixModalInteraction: react, screenIndex: GatewayConnectionStore, secondaryTextFieldRef: createChannelRecord, setNoExtractUI: ChannelStore } = alwaysRespectKeyboard);
   channel = undefined;
-  closure_10 = undefined;
+  let closure_10;
   let ref;
+  let visibleMessagesWindowHandler;
   let isResourceChannel;
   c15 = undefined;
   c16 = undefined;
@@ -58,64 +611,69 @@ export default noop.memo(function ChatView(alwaysRespectKeyboard) {
   let onPressKey;
   let scrollToNewMessages;
   let onJumpToPresent;
-  let setInterstitial = ref();
+  let tmp = ref();
+  let closure_7 = tmp;
+  let obj = react;
   let items = [channelId, flag];
-  const effect = noop.useEffect(() => {
-    if (!flag) {
-      ChatInputUtils.dismissKeyboard();
+  const effect = react.useEffect(() => {
+    const tmp = flag;
+    if (!tmp) {
+      const obj = ChatInputUtils;
+      obj.dismissKeyboard();
     }
   }, items);
+  const tmp3 = flag;
+  let obj2 = flag(chatInputRef[13]);
   let items1 = [ChannelStore];
-  let stateFromStores = flag(chatInputRef[11]).useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
+  let stateFromStores = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
   let items2 = [stateFromStores, channelId];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
+    let intl;
     let tmp2 = stateFromStores;
+    const tmp = stateFromStores;
     if (null == stateFromStores) {
-      const obj = { id: channelId, type: ChannelTypes.GUILD_TEXT, name: null };
-      const intl = util.intl;
-      obj.name = intl.string(util.t.ZTNur7);
+      const obj = { id: channelId, type: ChannelTypes.GUILD_TEXT, name: intl.string(intl4.t.ZTNur7) };
+      intl = intl4.intl;
       tmp2 = createChannelRecord(obj);
     }
-    return { channel: tmp2, channelIsLoading: null == stateFromStores };
+    return { channel: tmp2, channelIsLoading: null == tmp };
   }, items2);
   ({ channelIsLoading, channel } = memo);
-  let obj2 = flag(chatInputRef[11]);
-  const isChannelContentGated = flag(chatInputRef[13]).useIsChannelContentGated(channel);
-  let obj3 = flag(chatInputRef[13]);
+  let obj3 = flag(chatInputRef[15]);
+  const isChannelContentGated = obj3.useIsChannelContentGated(channel);
+  let tmp8 = flag(chatInputRef[16]);
+  const useGetSpoilerGatingChannelId = tmp8.useGetSpoilerGatingChannelId;
   if (stateFromStores == null) {
     stateFromStores = null;
   }
-  const getSpoilerGatingChannelId = flag(chatInputRef[14]).useGetSpoilerGatingChannelId(stateFromStores);
+  const getSpoilerGatingChannelId = useGetSpoilerGatingChannelId(stateFromStores);
   closure_10 = obj.useRef(channelId);
   obj.useRef(null);
   ref = obj.useRef(null);
-  channelId(chatInputRef[15])(() => new channelId(chatInputRef[16])());
-  const tmp10 = channelId(chatInputRef[17])(channelId);
-  isResourceChannel = tmp10;
-  let obj4 = flag(chatInputRef[14]);
-  const items3 = [setInterstitial];
-  const items4 = [channelId, tmp10];
-  const stateFromStoresObject = flag(chatInputRef[11]).useStateFromStoresObject(items3, () => {
+  let tmp11 = channelId;
+  visibleMessagesWindowHandler = channelId(tmp4[18])(() => {
+    const tmp = new channelId(chatInputRef[17])();
+    return tmp;
+  });
+  let tmp12 = channelId(tmp4[19])(channelId);
+  isResourceChannel = tmp12;
+  const items3 = [closure_7];
+  const items4 = [channelId, tmp12];
+  const tmp3Result = tmp3(chatInputRef[13]);
+  const stateFromStoresObject = tmp3Result.useStateFromStoresObject(items3, () => {
     const messages = MessageStore.getMessages(channelId);
     let tmp = 0 === messages.length;
     if (tmp) {
       tmp = messages.loadingMore || !messages.ready;
-      const tmp2 = messages.loadingMore || !messages.ready;
     }
-    const obj = { shouldRenderPlaceholder: tmp, shouldRenderBegginingRow: null };
-    const hasMoreBefore = messages.hasMoreBefore;
-    let tmp3 = !hasMoreBefore;
-    if (!hasMoreBefore) {
-      tmp3 = !closure_14;
-    }
-    obj.shouldRenderBegginingRow = tmp3;
+    const obj = { shouldRenderPlaceholder: tmp, shouldRenderBegginingRow: tmp3 };
     return obj;
   }, items4);
   ({ shouldRenderPlaceholder: c15, shouldRenderBegginingRow: c16 } = stateFromStoresObject);
-  onScroll = obj.useCallback((isFirstMessageVisible) => {
+  onScroll = obj.useCallback((arg0) => {
     const current = ref.current;
     if (current != null) {
-      current.onChatViewScrolled(isFirstMessageVisible);
+      current.onChatViewScrolled(arg0);
     }
   }, []);
   const items5 = [chatInputRef];
@@ -139,123 +697,132 @@ export default noop.memo(function ChatView(alwaysRespectKeyboard) {
       current.jumpToPresent();
     }
   }, items7);
-  const layoutEffect = obj.useLayoutEffect(() => flag(chatInputRef[18]).trackAppUIViewed(), []);
+  const layoutEffect = obj.useLayoutEffect(() => {
+    const obj = flag(chatInputRef[20]);
+    return obj.trackAppUIViewed();
+  }, []);
   const items8 = [channelId];
   const effect1 = obj.useEffect(() => {
-    const thread = LazyLoadedThreadManagerDefault.loadThread(channelId);
-    const summaries = SummaryActionCreators.fetchSummaries(channelId);
+    const obj = LazyLoadedThreadManagerDefault;
+    const thread = obj.loadThread(channelId);
+    const obj2 = SummaryActionCreators;
+    const summaries = obj2.fetchSummaries(channelId);
   }, items8);
   const items9 = [channel.id];
   const effect2 = obj.useEffect(() => {
     closure_10.current = channel.id;
   }, items9);
   const effect3 = obj.useEffect(() => () => {
-    const result = flag(chatInputRef[21]).clearOldestUnreadMessageId(ref.current);
+    const obj = flag(chatInputRef[23]);
+    const result = obj.clearOldestUnreadMessageId(ref.current);
   }, []);
-  let obj5 = { profile: null, children: null };
-  const tmp16 = closure_10;
-  const tmp2Result = flag(chatInputRef[11]);
-  obj5.profile = flag(chatInputRef[33]).Profiles.ChatView;
-  const items10 = [channel(channelId(chatInputRef[34]), { channelId, guildId }), , ];
-  let tmp18Result = null;
+  let obj4 = { profile: tmp3(tmp4[45]).Profiles.ChatView, children: items10 };
+  const tmp19 = channelId(chatInputRef[45]);
+  items10 = [channel(channelId(tmp4[43]), { channelId, guildId }), , ];
+  let tmp20Result = null;
+  const tmp18 = closure_10;
   if (!flag2) {
-    tmp18Result = tmp18(tmp9(tmp3[35]), { absolute: true });
+    tmp20Result = tmp20(tmp11(tmp4[44]), { absolute: true });
   }
-  items10[1] = tmp18Result;
-  const tmp17 = channelId(chatInputRef[33]);
-  if (tmp2Result2.shouldNSFWGateGuild(guildId)) {
-    let tmp18Result3 = tmp18(tmp9(tmp3[38]), {});
-    tmp9(tmp3[36]).setInterstitial("NsfwGateChat");
-    const tmp9Result = tmp9(tmp3[36]);
+  items10[1] = tmp20Result;
+  const tmp3Result2 = tmp3(chatInputRef[36]);
+  if (tmp3Result2.shouldNSFWGateGuild(guildId)) {
+    tmp20Result3 = tmp20(tmp11(tmp4[37]), {});
+    const tmp11Result = tmp11(chatInputRef[35]);
+    tmp11Result.setInterstitial("NsfwGateChat");
   } else {
+    let tmp20Result4;
     function renderMessagesWrapper() {
-      const obj = { style: setInterstitial.messages, channelId, stickyHeader: React7(ChatViewStickyHeaderDefault, { channel, ref, scrollToNewMessages }), children: null };
-      const obj3 = { alwaysRespectKeyboard: flag, channel, screenIndex, chatInputRef, HACK_fixModalInteraction, isResourceChannel, onPressKey, onScroll, ref, style: setInterstitial.chat, visibleMessagesWindowHandler, children: null };
-      const obj2 = { channel, ref, scrollToNewMessages };
-      const tmp2 = closure_2_11;
+      let items;
+      let items1;
+      let items2;
+      let obj2;
+      const obj = { style: closure_7.messages, channelId, stickyHeader: React4(ChatViewStickyHeaderDefault, obj2), children: items1 };
+      obj2 = { channel, ref, scrollToNewMessages };
+      const obj3 = { alwaysRespectKeyboard: flag, channel, screenIndex: GatewayConnectionStore, chatInputRef, HACK_fixModalInteraction: react, isResourceChannel, onPressKey, onScroll, ref, style: closure_7.chat, visibleMessagesWindowHandler, children: items };
+      items = [, ];
+      const obj4 = { ref: chatInputRef, channel, isResourceChannel, screenIndex: GatewayConnectionStore, secondaryTextFieldRef: createChannelRecord, setNoExtractUI: ChannelStore, onJumpToPresent };
       const tmp5 = ChatViewWrapperDefault;
-      const tmp8 = channel;
-      const items = [React7(ChatInputDefault, { ref: chatInputRef, channel, isResourceChannel, screenIndex, secondaryTextFieldRef, setNoExtractUI, onJumpToPresent }), ];
-      const obj5 = { channelId, guildId: null, shouldRender: null };
-      const obj4 = { ref: chatInputRef, channel, isResourceChannel, screenIndex, secondaryTextFieldRef, setNoExtractUI, onJumpToPresent };
+      const tmp9 = MessagesDefault;
+      items[0] = React4(ChatInputDefault, obj4);
+      const obj5 = { channelId, guildId: channel.getGuildId(), shouldRender };
+      const tmp13 = ChatBeginningRowDefault;
+      items[1] = React4(tmp13, obj5);
+      items1 = [authStore(tmp9, obj3), , , ];
+      let tmp7Result = null;
+      const obj6 = PlatformUtils;
       const tmp11 = ref;
       const tmp12 = onJumpToPresent;
-      const tmp9 = MessagesDefault;
-      obj5.guildId = channel.getGuildId();
-      obj5.shouldRender = shouldRender;
-      items[1] = React7(ChatBeginningRowDefault, obj5);
-      obj3.children = items;
-      const items1 = [closure_2_10(tmp9, obj3), , , ];
-      let tmp7Result = null;
+      const tmp2 = unpackModuleId;
+      const tmp8 = channel;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(12919), obj7);
+        tmp7Result = tmp7(tmp3(12044), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c15) {
-        const obj8 = { screenIndex: tmp10 };
-        tmp7Result3 = tmp7(tmp3(12920), obj8);
+        const obj8 = { screenIndex: GatewayConnectionStore };
+        tmp7Result3 = tmp7(tmp3(12045), obj8);
       }
       items1[2] = tmp7Result3;
-      obj6 = PlatformUtils;
       let tmp7Result4 = null;
+      const tmp14Result = PlatformUtils;
       if (tmp14Result.isAndroid()) {
-        const obj9 = { channelId: tmp6, screenIndex: tmp10, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(12549), obj9);
+        const obj9 = { channelId, screenIndex: GatewayConnectionStore, onJumpToPresent: tmp12 };
+        tmp7Result4 = tmp7(tmp3(11642), obj9);
       }
-      const obj10 = { children: null };
+      const obj10 = { children: items2 };
       items1[3] = tmp7Result4;
-      obj.children = items1;
-      const items2 = [closure_2_10(tmp5, obj), React7(ChannelSafeAreaBottomDefault, { channelId }), React7(VoiceMessageOverlayDefault, { channelId })];
-      obj10.children = items2;
-      return closure_2_10(tmp2, obj10);
+      items2 = [authStore(tmp5, obj), React4(ChannelSafeAreaBottomDefault, { channelId }), React4(VoiceMessageOverlayDefault, { channelId })];
+      return authStore(tmp2, obj10);
     }
     if (channelIsLoading) {
       if (!GatewayConnectionStore.isConnected()) {
-        tmp18Result3 = renderMessagesWrapper();
+        tmp20Result3 = renderMessagesWrapper();
       }
     }
     if (channelIsLoading) {
-      let obj6 = { style: setInterstitial.empty, title: null, body: null };
-      let intl = tmp2(tmp3[12]).intl;
-      obj6.title = intl.string(tmp2(tmp3[12]).t.ai6Lbr);
-      const intl2 = tmp2(tmp3[12]).intl;
-      obj6.body = intl2.string(tmp2(tmp3[12]).t["LTr+x9"]);
-      let tmp18Result4 = tmp18(tmp2(tmp3[39]).EmptyState, obj6);
-      setInterstitial = tmp9(tmp3[36]).setInterstitial;
-      setInterstitial("EmptyState");
-      const tmp9Result6 = tmp9(tmp3[36]);
+      let obj5 = { style: tmp.empty, title: intl.string(tmp3(tmp4[14]).t.ai6Lbr), body: intl2.string(tmp3(tmp4[14]).t["LTr+x9"]) };
+      const EmptyState = tmp3(tmp4[38]).EmptyState;
+      intl = tmp3(tmp4[14]).intl;
+      intl2 = tmp3(tmp4[14]).intl;
+      tmp20Result4 = tmp20(EmptyState, obj5);
+      const tmp11Result6 = tmp11(chatInputRef[35]);
+      tmp11Result6.setInterstitial("EmptyState");
     } else if (isChannelContentGated) {
-      let obj7 = { guildId, channelId };
-      tmp18Result4 = tmp18(tmp9(tmp3[40]), obj7);
-      tmp9(tmp3[36]).setInterstitial("GuildNSFW");
-      const tmp9Result7 = tmp9(tmp3[36]);
+      let obj6 = { guildId, channelId };
+      tmp20Result4 = tmp20(tmp11(tmp4[39]), obj6);
+      const tmp11Result7 = tmp11(chatInputRef[35]);
+      tmp11Result7.setInterstitial("GuildNSFW");
     } else {
       if (null != getSpoilerGatingChannelId) {
         if (null != getSpoilerGatingChannelId) {
-          let obj8 = { guildId, channelId: getSpoilerGatingChannelId };
-          tmp18Result4 = tmp18(tmp9(tmp3[41]), obj8, channelId);
-          tmp9(tmp3[36]).setInterstitial("ChannelSpoiler");
-          const tmp9Result8 = tmp9(tmp3[36]);
+          let obj7 = { guildId, channelId: getSpoilerGatingChannelId };
+          tmp20Result4 = tmp20(tmp11(tmp4[40]), obj7, channelId);
+          const tmp11Result8 = tmp11(chatInputRef[35]);
+          tmp11Result8.setInterstitial("ChannelSpoiler");
         }
       }
       if (channel.isDirectory()) {
-        let obj9 = { channel, guildId };
-        tmp18Result4 = tmp18(tmp9(tmp3[42]), obj9);
-        tmp9(tmp3[36]).setInterstitial("GuildDirectory");
-        const tmp9Result9 = tmp9(tmp3[36]);
+        let obj8 = { channel, guildId };
+        tmp20Result4 = tmp20(tmp11(tmp4[41]), obj8);
+        const tmp11Result9 = tmp11(chatInputRef[35]);
+        tmp11Result9.setInterstitial("GuildDirectory");
       } else if (channel.isForumLikeChannel()) {
-        let obj10 = { channel };
-        tmp18Result4 = tmp18(tmp9(tmp3[43]), obj10);
-        tmp9(tmp3[36]).setInterstitial("ForumChannel");
-        const tmp9Result10 = tmp9(tmp3[36]);
+        let obj9 = { channel };
+        tmp20Result4 = tmp20(tmp11(tmp4[42]), obj9);
+        const tmp11Result10 = tmp11(chatInputRef[35]);
+        tmp11Result10.setInterstitial("ForumChannel");
       } else {
-        tmp18Result4 = renderMessagesWrapper();
+        tmp20Result4 = renderMessagesWrapper();
       }
     }
+    tmp20Result3 = tmp20Result4;
   }
-  items10[2] = tmp18Result3;
-  obj5.children = items10;
-  return tmp16(tmp17, obj5);
-});
+  items10[2] = tmp20Result3;
+  return tmp18(tmp19, obj4);
+}));
+let result = size.fileFinishedImporting("modules/chat/native/ChatView.tsx");
+
+export default memoResult;

@@ -1,107 +1,348 @@
-// Module ID: 16747
-// Function ID: 16748
+// Module ID: 16043
+// Function ID: 16044
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 11940, 21, 9126, 16748, 4788, 576, 4722, 4489, 5224, 8136, 4750, 11989, 504, 8130, 8125, 8128, 7459, 8135, 8211, 1115, 2]
+// Dependencies: [19, 17, 11025, 21, 8273, 16044, 4837, 588, 558, 576, 4769, 4535, 5288, 7289, 4796, 11079, 504, 7279, 7274, 7277, 6604, 7288, 1127, 7362, 2]
 
-// Module 16747 (ForLaterOpenActionButton)
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4489 */;
-import useThemeDefault from "useTheme" /* 4722 */;
-import ButtonHooks from "ButtonHooks" /* 5224 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8125 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8128 */;
-import showForLaterModal from "showForLaterModal" /* 8135 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 8136 */;
-import noop from "module_19" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11940 */;
+// Module 16043 (ForLaterOpenActionButton)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 588 */;
+import useToken from "useToken" /* 4535 */;
+import useThemeDefault from "useTheme" /* 4769 */;
+import ButtonHooks from "ButtonHooks" /* 5288 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7274 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7277 */;
+import showForLaterModal from "showForLaterModal" /* 7288 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7289 */;
+import ClipView from "ClipView" /* 8273 */;
+import getIconSize from "getIconSize" /* 16044 */;
+import react from "react" /* 19 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11025 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4837 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-const ClipViewDefault = tmp(9126);
-require = fn;
-function BadgedIcon(arg0) {
+let metroImportDefault;
+let metroRequire;
+let size;
+let size1;
+let tmp4;
+const ClipViewDefault = tmp4(8273);
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const point = { shape: ClipView.CutoutShape.Circle, x: getIconSize.ICON_SIZE.sm - 7, y: getIconSize.ICON_SIZE.sm - 8, size: 10 };
+let createStyles = createStyles_mod;
+let obj = { container: { aspectRatio: 1, alignItems: "center", justifyContent: "center", position: "relative" }, iconAnchor: size, dot: size1 };
+size = { width: getIconSize.ICON_SIZE.sm, height: getIconSize.ICON_SIZE.sm, position: "relative" };
+createStyles = createStyles.createStyles;
+size1 = { position: "absolute", height: 6.5, width: 6.5, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: nativeDefault.radii.lg, right: -2, bottom: -0.5 };
+let closure_9 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let BookmarkIcon;
+  let items;
+  let items1;
+  let obj7;
+  let showRedDot;
+  let type;
+  const obj = react2;
+  const cResult = obj.c(12);
+  ({ showRedDot, type } = arg0);
+  const tmp5 = useThemeDefault();
+  const obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, tmp5);
+  const tmp7 = closure_9();
+  const obj3 = ButtonHooks;
+  const iconSizeStyles = obj3.useIconSizeStyles("sm", true, 2);
+  if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
+    BookmarkIcon = tmp(4796).ClockIcon;
+  } else {
+    BookmarkIcon = tmp(11079).BookmarkIcon;
+  }
+  if (cResult[0] === iconSizeStyles) {
+    let tmp9;
+    let tmp12;
+    if (cResult[1] === tmp7.container) {
+      tmp9 = cResult[2];
+    }
+    if (cResult[3] === BookmarkIcon) {
+      if (cResult[4] === showRedDot) {
+        if (cResult[5] === tmp7.dot) {
+          if (cResult[6] === tmp7.iconAnchor) {
+            let tmp10;
+            if (cResult[7] === token) {
+              tmp10 = cResult[8];
+            }
+            if (cResult[9] === tmp9) {
+              let tmp18;
+              if (cResult[10] === tmp10) {
+                tmp18 = cResult[11];
+              }
+              return tmp18;
+            }
+            const obj4 = { style: tmp9, children: tmp10 };
+            const tmp21 = metroRequire(View, obj4);
+            cResult[9] = tmp9;
+            cResult[10] = tmp10;
+            cResult[11] = tmp21;
+            tmp18 = tmp21;
+          }
+        }
+      }
+    }
+    if (showRedDot) {
+      const obj5 = { style: tmp7.iconAnchor, children: items1 };
+      const obj6 = { cutouts: items, children: metroRequire(BookmarkIcon, obj7) };
+      items = [point];
+      obj7 = { size: "sm", color: token };
+      const tmp4Result = ClipViewDefault;
+      items1 = [metroRequire(tmp4Result, obj6), ];
+      const obj8 = { style: tmp7.dot };
+      items1[1] = metroRequire(View, obj8);
+      tmp12 = metroImportDefault(View, obj5);
+    } else {
+      const obj9 = { size: "sm", color: token };
+      tmp12 = metroRequire(BookmarkIcon, obj9);
+    }
+    cResult[3] = BookmarkIcon;
+    cResult[4] = showRedDot;
+    cResult[5] = tmp7.dot;
+    cResult[6] = tmp7.iconAnchor;
+    cResult[7] = token;
+    cResult[8] = tmp12;
+    tmp10 = tmp12;
+  }
+  const items2 = [tmp7.container, iconSizeStyles];
+  cResult[0] = iconSizeStyles;
+  cResult[1] = tmp7.container;
+  cResult[2] = items2;
+  tmp9 = items2;
+}) : ((arg0) => {
+  let BookmarkIcon;
+  let items;
+  let items1;
+  let items2;
+  let obj6;
+  let showRedDot;
+  let tmp8Result;
+  let type;
   ({ type, showRedDot } = arg0);
   const tmp3 = useThemeDefault();
-  const token = useToken.useToken(nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, tmp3);
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, tmp3);
   const tmp6 = closure_9();
-  const iconSizeStyles = ButtonHooks.useIconSizeStyles("sm", true, 2);
+  const obj2 = ButtonHooks;
+  const iconSizeStyles = obj2.useIconSizeStyles("sm", true, 2);
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    let BookmarkIcon = tmp4(4750).ClockIcon;
+    BookmarkIcon = tmp4(4796).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(11989).BookmarkIcon;
+    BookmarkIcon = tmp4(11079).BookmarkIcon;
   }
-  const obj3 = { style: null, children: null };
-  const items = [tmp6.container, iconSizeStyles];
-  obj3.style = items;
+  const obj3 = { style: items, children: tmp8Result };
+  items = [tmp6.container, iconSizeStyles];
   if (showRedDot) {
-    const obj4 = { style: tmp6.iconAnchor, children: null };
-    const obj5 = { cutouts: null, children: null };
-    const items1 = [point];
-    obj5.cutouts = items1;
-    const obj6 = { size: "sm", color: token };
-    obj5.children = tmp8(BookmarkIcon, obj6);
-    const items2 = [tmp8(ClipViewDefault, obj5), ];
-    const obj7 = { style: tmp6.dot };
-    items2[1] = tmp8(tmp9, obj7);
-    obj4.children = items2;
-    let tmp8Result = React5(tmp9, obj4);
+    const obj4 = { style: tmp6.iconAnchor, children: items2 };
+    const obj5 = { cutouts: items1, children: metroRequire(BookmarkIcon, obj6) };
+    items1 = [point];
+    obj6 = { size: "sm", color: token };
     const tmpResult = ClipViewDefault;
+    items2 = [metroRequire(tmpResult, obj5), ];
+    const obj7 = { style: tmp6.dot };
+    items2[1] = metroRequire(View, obj7);
+    tmp8Result = metroImportDefault(tmp9, obj4);
   } else {
     const obj8 = { size: "sm", color: token };
     tmp8Result = tmp8(BookmarkIcon, obj8);
   }
-  obj3.children = tmp8Result;
-  return timestampProducer(View, obj3);
-}
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const point = { shape: fn(9126).CutoutShape.Circle, x: fn(16748).ICON_SIZE.sm - 7, y: fn(16748).ICON_SIZE.sm - 8, size: 10 };
-const createStyles = fn(4788);
-let obj = { container: { aspectRatio: 1, alignItems: "center", justifyContent: "center", position: "relative" }, iconAnchor: null, dot: null };
-let size = { width: fn(16748).ICON_SIZE.sm, height: fn(16748).ICON_SIZE.sm, position: "relative" };
-obj.iconAnchor = size;
-const size1 = { position: "absolute", height: 6.5, width: 6.5, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: nativeDefault.radii.lg, right: -2, bottom: -0.5 };
-obj.dot = size1;
-let closure_9 = createStyles.createStyles(obj);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterOpenActionButton.tsx");
-
-export default noop.forwardRef((type, ref) => {
+  return metroRequire(View, obj3);
+});
+const forwardRef = react.forwardRef;
+ReactCompilerGating = ReactCompilerGating_mod;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((type, ref) => {
+  let stateFromStores1;
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  let tmp2 = stateFromStores1;
+  let obj = type(stateFromStores1[9]);
+  const cResult = obj.c(22);
+  type = type.type;
+  const onOpen = type.onOpen;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [SavedMessagesStore];
+    const fn = function u() {
+      return SavedMessagesStore.hasOverdueReminder();
+    };
+    const items1 = [];
+    cResult[0] = items;
+    cResult[1] = fn;
+    cResult[2] = items1;
+    tmp5 = fn;
+    tmp4 = items;
+    tmp6 = items1;
+  } else {
+    [tmp4, tmp5, tmp6] = cResult;
+  }
+  const tmpResult = type(tmp2[16]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [SavedMessagesStore];
+    const fn2 = function y() {
+      return SavedMessagesStore.getSavedMessageCount();
+    };
+    cResult[3] = items2;
+    cResult[4] = fn2;
+    tmp10 = fn2;
+    tmp9 = items2;
+  } else {
+    tmp9 = cResult[3];
+    tmp10 = cResult[4];
+  }
+  const tmpResult3 = type(tmp2[16]);
+  stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
+  const tmpResult4 = type(tmp2[17]);
+  const hasForLaterAccess = tmpResult4.useHasForLaterAccess("ForLaterOpenActionButton");
+  if (cResult[5] === hasForLaterAccess) {
+    if (cResult[6] === onOpen) {
+      if (cResult[7] === stateFromStores1) {
+        let tmp14;
+        if (cResult[8] === type) {
+          tmp14 = cResult[9];
+        }
+        const tmp15 = type === type(tmp2[13]).SavedMessageSortTypes.REMINDER && stateFromStores;
+        if (cResult[10] === tmp15) {
+          let tmp16;
+          let tmp20;
+          if (cResult[11] === type) {
+            tmp16 = cResult[12];
+          }
+          if (cResult[13] !== type) {
+            let aUXxzT;
+            const intl = tmp(tmp2[22]).intl;
+            const string = intl.string;
+            if (type === type(tmp2[13]).SavedMessageSortTypes.REMINDER) {
+              aUXxzT = tmp(tmp2[22]).t.aUXxzT;
+            } else {
+              aUXxzT = tmp(tmp2[22]).t["2pAkDA"];
+            }
+            const stringResult = string(aUXxzT);
+            cResult[13] = type;
+            cResult[14] = stringResult;
+            tmp20 = stringResult;
+          } else {
+            tmp20 = cResult[14];
+          }
+          if (cResult[15] === tmp14) {
+            if (cResult[16] === tmp16) {
+              let tmp23;
+              if (cResult[17] === tmp20) {
+                tmp23 = cResult[18];
+              }
+              if (cResult[19] === ref) {
+                let tmp27;
+                if (cResult[20] === tmp23) {
+                  tmp27 = cResult[21];
+                }
+                return tmp27;
+              }
+              const obj2 = { ref, children: tmp23 };
+              const tmp30 = closure_6(View, obj2);
+              cResult[19] = ref;
+              cResult[20] = tmp23;
+              cResult[21] = tmp30;
+              tmp27 = tmp30;
+            }
+          }
+          const obj3 = { variant: "tertiary", size: "sm", icon: tmp16, onPress: tmp14, accessibilityLabel: tmp20, maxFontSizeMultiplier: 2 };
+          const tmp25 = closure_6(type(tmp2[23]).IconButton, obj3);
+          cResult[15] = tmp14;
+          cResult[16] = tmp16;
+          cResult[17] = tmp20;
+          cResult[18] = tmp25;
+          tmp23 = tmp25;
+        }
+        const obj4 = { type, showRedDot: tmp15 };
+        const tmp19 = closure_6(closure_10, obj4);
+        cResult[10] = tmp15;
+        cResult[11] = type;
+        cResult[12] = tmp19;
+        tmp16 = tmp19;
+      }
+    }
+  }
+  const fn3 = function v() {
+    onOpen();
+    if (0 === stateFromStores1) {
+      const tmp2 = hasForLaterAccess;
+      if (!tmp2) {
+        const tmp5 = openPremiumUpsellActionSheetDefault;
+        const SAVED_MESSAGES = EntitlementFeatureNames.EntitlementFeatureNames.SAVED_MESSAGES;
+        const items = [AnalyticsLocationDefault.FOR_LATER_ROADBLOCK];
+        tmp5(SAVED_MESSAGES, undefined, items);
+      }
+    }
+    const obj = showForLaterModal;
+    obj.showForLaterModal(type);
+  };
+  cResult[5] = hasForLaterAccess;
+  cResult[6] = onOpen;
+  cResult[7] = stateFromStores1;
+  cResult[8] = type;
+  cResult[9] = fn3;
+  tmp14 = fn3;
+}) : ((type, ref) => {
+  let IconButton;
+  let aUXxzT;
+  let obj6;
+  let string;
+  let tmp10;
   type = type.type;
   const onOpen = type.onOpen;
   let stateFromStores1;
+  let tmp2 = stateFromStores1;
+  let obj = type(stateFromStores1[16]);
   let items = [SavedMessagesStore];
-  const stateFromStores = type(stateFromStores1[14]).useStateFromStores(items, () => SavedMessagesStore.hasOverdueReminder(), []);
-  const obj = type(stateFromStores1[14]);
+  const stateFromStores = obj.useStateFromStores(items, () => SavedMessagesStore.hasOverdueReminder(), []);
   const items1 = [SavedMessagesStore];
-  stateFromStores1 = type(stateFromStores1[14]).useStateFromStores(items1, () => SavedMessagesStore.getSavedMessageCount());
-  const obj2 = type(stateFromStores1[14]);
-  const hasForLaterAccess = type(stateFromStores1[15]).useHasForLaterAccess("ForLaterOpenActionButton");
+  const obj2 = type(stateFromStores1[16]);
+  stateFromStores1 = obj2.useStateFromStores(items1, () => SavedMessagesStore.getSavedMessageCount());
+  const obj3 = type(stateFromStores1[17]);
+  const hasForLaterAccess = obj3.useHasForLaterAccess("ForLaterOpenActionButton");
   const items2 = [hasForLaterAccess, onOpen, stateFromStores1, type];
-  const obj4 = { ref, children: null };
+  const obj4 = { ref, children: closure_6(IconButton, obj6) };
   const callback = hasForLaterAccess.useCallback(() => {
     onOpen();
     if (0 === stateFromStores1) {
-      if (!hasForLaterAccess) {
+      const tmp2 = hasForLaterAccess;
+      if (!tmp2) {
+        const tmp5 = openPremiumUpsellActionSheetDefault;
+        const SAVED_MESSAGES = EntitlementFeatureNames.EntitlementFeatureNames.SAVED_MESSAGES;
         const items = [AnalyticsLocationDefault.FOR_LATER_ROADBLOCK];
-        openPremiumUpsellActionSheetDefault(EntitlementFeatureNames.EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
+        tmp5(SAVED_MESSAGES, undefined, items);
       }
     }
-    showForLaterModal.showForLaterModal(type);
+    const obj = showForLaterModal;
+    obj.showForLaterModal(type);
   }, items2);
-  const obj5 = { type, showRedDot: null };
-  const obj3 = type(stateFromStores1[15]);
+  const obj5 = { type, showRedDot: tmp10 };
+  IconButton = type(stateFromStores1[23]).IconButton;
+  tmp10 = type === type(stateFromStores1[13]).SavedMessageSortTypes.REMINDER && stateFromStores;
+  obj6 = { variant: "tertiary", size: "sm", icon: closure_6(closure_10, obj5), onPress: callback, accessibilityLabel: string(aUXxzT), maxFontSizeMultiplier: 2 };
+  const intl = tmp(tmp2[22]).intl;
+  string = intl.string;
   const tmp8 = View;
-  const tmp9 = BadgedIcon;
-  const obj6 = { variant: "tertiary", size: "sm", icon: closure_6(tmp9, obj5), onPress: callback, accessibilityLabel: null, maxFontSizeMultiplier: 2 };
-  obj5.showRedDot = type === type(stateFromStores1[11]).SavedMessageSortTypes.REMINDER && stateFromStores;
-  const intl = tmp(tmp2[21]).intl;
-  if (type === type(stateFromStores1[11]).SavedMessageSortTypes.REMINDER) {
-    let aUXxzT = tmp(tmp2[21]).t.aUXxzT;
+  if (type === type(tmp2[13]).SavedMessageSortTypes.REMINDER) {
+    aUXxzT = tmp(tmp2[22]).t.aUXxzT;
   } else {
-    aUXxzT = tmp(tmp2[21]).t["2pAkDA"];
+    aUXxzT = tmp(tmp2[22]).t["2pAkDA"];
   }
-  obj6.accessibilityLabel = intl.string(aUXxzT);
-  obj4.children = closure_6(type(stateFromStores1[20]).IconButton, obj6);
   return closure_6(tmp8, obj4);
-});
+}));
+size = size_mod;
+const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterOpenActionButton.tsx");
+
+export default forwardRefResult;

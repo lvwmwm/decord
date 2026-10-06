@@ -1,15 +1,16 @@
-// Module ID: 8378
-// Function ID: 8379
+// Module ID: 7538
+// Function ID: 7539
 // Name: MarkupEligibilityUtils
 // Dependencies: [11, 2]
 // Exports: isMessageNewerThanImprovedMarkdownEpoch
 
-// Module 8378 (MarkupEligibilityUtils)
+// Module 7538 (MarkupEligibilityUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/MarkupEligibilityUtils.tsx");
 
 export const isMessageNewerThanImprovedMarkdownEpoch = function isMessageNewerThanImprovedMarkdownEpoch(arg0) {
-  return arg0 >= SnowflakeUtilsDefault.extractTimestamp("1088216706570268682");
+  const obj = SnowflakeUtilsDefault;
+  return arg0 >= obj.extractTimestamp("1088216706570268682");
 };

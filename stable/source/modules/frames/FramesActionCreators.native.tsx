@@ -1,35 +1,84 @@
-// Module ID: 9603
-// Function ID: 9604
+// Module ID: 8755
+// Function ID: 8756
 // Name: FramesActionCreators
-// Dependencies: [5, 4807, 9604, 9605, 2]
+// Dependencies: [5, 4856, 8756, 8757, 2]
 
-// Module 9603 (FramesActionCreators)
-import _launchFrameAll from "_launchFrame" /* 9605 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+// Module 8755 (FramesActionCreators)
+import launchFrameAll from "launchFrame" /* 8757 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import size from "module_2" /* 2 */;
 
-let closure_5 = async function _launchFrameOnNative() {
-  closure_129_0 = await _launchFrameAll.launchFrame(closure_0);
-  (function closeVoicePanel() {
-    if (currentClientInVoiceChannel.isCurrentClientInVoiceChannel()) {
-      closure_1_0(closure_1_2[2])();
-    }
-  })();
-  return closure_129_0;
+let c1;
+
+let obj = function _launchFrameOnNative() {
+  obj = _asyncToGenerator(async (value) => {
+    let c2 = 0;
+    let c3 = 0;
+    return (async (arg0, value) => {
+      let currentClientInVoiceChannel;
+      let obj3;
+      function closeVoicePanel() {
+        if (currentClientInVoiceChannel.isCurrentClientInVoiceChannel()) {
+          closure_1_0(closure_1_2[2])();
+        }
+      }
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              return { value, done: true };
+            } else {
+              c1 = 0;
+              value = undefined;
+              c2 = 1;
+              c3 = 1;
+              const obj5 = { value: obj3.launchFrame(value), done: false };
+              obj3 = launchFrameAll;
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            return { value, done: true };
+          } else {
+            closeVoicePanel();
+            c3 = 3;
+            return { value, done: true };
+          }
+        } catch (tmp9) {
+          c3 = 3;
+          throw tmp9;
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
 };
-const obj = {};
-const _launchFrame = Object.assign(_launchFrameAll);
-obj.launchFrame = function launchFrameOnNative() {
-  const self = this;
-  const apply = closure_5.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
+obj = {
+  launchFrame: function launchFrameOnNative() {
+    return obj(...arguments);
   }
-  return applyArgumentsResult;
 };
-const size = fn(2);
+const launchFrame = Object.assign(launchFrameAll);
 const result = size.fileFinishedImporting("modules/frames/FramesActionCreators.native.tsx");
 
 export default obj;

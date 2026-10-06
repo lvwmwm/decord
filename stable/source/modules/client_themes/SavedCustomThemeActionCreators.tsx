@@ -1,48 +1,45 @@
-// Module ID: 15539
-// Function ID: 15540
+// Module ID: 14799
+// Function ID: 14800
 // Name: SavedCustomThemeActionCreators
-// Dependencies: [4720, 1074, 573, 1271, 2]
+// Dependencies: [4767, 1086, 585, 1283, 2]
 // Exports: fetchUserCustomThemes
 
-// Module 15539 (SavedCustomThemeActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4720 */;
+// Module 14799 (SavedCustomThemeActionCreators)
+import DispatcherDefault from "Dispatcher" /* 585 */;
+import Constants from "Constants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4767 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Endpoints = fn(1074).Endpoints;
-const size = fn(2);
+let body;
+
+const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/client_themes/SavedCustomThemeActionCreators.tsx");
 
 export const fetchUserCustomThemes = function fetchUserCustomThemes() {
   if (!SavedCustomThemeStore.isFetching()) {
-    DispatcherDefault.dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_START" });
+    let obj = DispatcherDefault;
+    obj.dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_START" });
     const HTTP = HTTPUtils.HTTP;
-    const obj2 = { url: Endpoints.USERS_ME_CUSTOM_THEMES, oldFormErrors: true, rejectWithError: true };
-    value = HTTP.get(obj2);
-    value.then((body) => {
-      body = body.body;
-      let custom_themes;
-      if (body != null) {
-        custom_themes = body.custom_themes;
-      }
-      if (custom_themes == null) {
-        custom_themes = [];
-      }
-      DispatcherDefault.dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_SUCCESS", themes: custom_themes });
-    }).catch((error) => {
-      DispatcherDefault.dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_FAILURE", error });
-    });
+    let obj2 = { url: Endpoints.USERS_ME_CUSTOM_THEMES, oldFormErrors: true, rejectWithError: true };
+    const value = HTTP.get(obj2);
     const nextPromise = value.then((body) => {
       body = body.body;
       let custom_themes;
+      const dispatch = DispatcherDefault.dispatch;
+      DispatcherDefault;
       if (body != null) {
         custom_themes = body.custom_themes;
       }
       if (custom_themes == null) {
         custom_themes = [];
       }
-      DispatcherDefault.dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_SUCCESS", themes: custom_themes });
+      dispatch({ type: "SAVED_CUSTOM_THEMES_FETCH_SUCCESS", themes: custom_themes });
+    });
+    nextPromise.catch((error) => {
+      const obj = DispatcherDefault;
+      const obj2 = { type: "SAVED_CUSTOM_THEMES_FETCH_FAILURE", error };
+      obj.dispatch(obj2);
     });
   }
 };

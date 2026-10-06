@@ -1,21 +1,25 @@
-// Module ID: 8135
-// Function ID: 8136
+// Module ID: 7288
+// Function ID: 7289
 // Name: showForLaterModal
-// Dependencies: [8136, 8137, 4991, 8138, 1980, 2]
+// Dependencies: [7289, 7290, 5040, 7291, 1987, 2]
 // Exports: showForLaterModal
 
-// Module 8135 (showForLaterModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 8136 */;
+// Module 7288 (showForLaterModal)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7289 */;
+import MessageRemindersSeenStorage from "MessageRemindersSeenStorage" /* 7290 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/saved_messages/native/showForLaterModal.tsx");
 
 export const showForLaterModal = function showForLaterModal(BOOKMARK) {
+  const tmp2 = dependencyMap;
   if (BOOKMARK === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    tmp(8137).markRemindersSeen();
-    const tmpResult = tmp(8137);
+    const tmpResult = MessageRemindersSeenStorage;
+    tmpResult.markRemindersSeen();
   }
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(8138, dependencyMap.paths), { type: BOOKMARK }, "for-later-modal", { presentation: "modal" });
+  const obj = { type: BOOKMARK };
+  const obj2 = ModalActionCreatorsDefault;
+  obj2.pushLazy(asyncRequire(7291, tmp2.paths), obj, "for-later-modal", { presentation: "modal" });
 };

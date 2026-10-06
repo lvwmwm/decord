@@ -1,13 +1,13 @@
-// Module ID: 2089
-// Function ID: 2090
-// Name: NativeAppDatabaseModule
+// Module ID: 2096
+// Function ID: 2097
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 2089 (NativeAppDatabaseModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 2096 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAppDatabaseModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAppDatabaseModule.tsx");
 

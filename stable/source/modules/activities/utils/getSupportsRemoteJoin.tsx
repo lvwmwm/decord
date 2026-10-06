@@ -1,21 +1,18 @@
-// Module ID: 12044
-// Function ID: 12045
+// Module ID: 11136
+// Function ID: 11137
 // Name: getSupportsRemoteJoin
-// Dependencies: [1074, 7587, 2]
+// Dependencies: [1086, 6732, 2]
 // Exports: getSupportsRemoteJoin
 
-// Module 12044 (getSupportsRemoteJoin)
-import Constants from "Constants" /* 1074 */;
-import hasFlagDefault from "hasFlag" /* 7587 */;
+// Module 11136 (getSupportsRemoteJoin)
+import Constants from "Constants" /* 1086 */;
+import hasFlagDefault from "hasFlag" /* 6732 */;
 import size from "module_2" /* 2 */;
 
 const ActivityFlags = Constants.ActivityFlags;
 const result = size.fileFinishedImporting("modules/activities/utils/getSupportsRemoteJoin.tsx");
 
 export const getSupportsRemoteJoin = function getSupportsRemoteJoin(applicationActivity) {
-  let tmp = null != applicationActivity;
-  if (tmp) {
-    tmp = hasFlagDefault(applicationActivity, ActivityFlags.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN);
-  }
+  const tmp = null != applicationActivity && hasFlagDefault(applicationActivity, ActivityFlags.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN);
   return tmp;
 };

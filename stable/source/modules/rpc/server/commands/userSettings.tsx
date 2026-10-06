@@ -1,19 +1,23 @@
-// Module ID: 14817
-// Function ID: 14818
+// Module ID: 14069
+// Function ID: 14070
 // Name: userSettings
-// Dependencies: [2109, 1074, 8642, 2]
+// Dependencies: [2115, 1086, 7791, 2]
 
-// Module 14817 (userSettings)
-import LocaleStore from "LocaleStore" /* 2109 */;
+// Module 14069 (userSettings)
+import Constants from "Constants" /* 1086 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
+import LocaleStore from "LocaleStore" /* 2115 */;
+import size from "module_2" /* 2 */;
 
 const obj = {};
-obj[fn(1074).RPCCommands.USER_SETTINGS_GET_LOCALE] = {
-  scope: fn(8642).OAuth2Scopes.IDENTIFY,
+const obj2 = {
+  scope: OAuth2Scopes.OAuth2Scopes.IDENTIFY,
   handler() {
     return { locale: LocaleStore.locale };
   }
 };
-const size = fn(2);
+const USER_SETTINGS_GET_LOCALE = Constants.RPCCommands.USER_SETTINGS_GET_LOCALE;
+obj[USER_SETTINGS_GET_LOCALE] = obj2;
 const result = size.fileFinishedImporting("modules/rpc/server/commands/userSettings.tsx");
 
 export default obj;

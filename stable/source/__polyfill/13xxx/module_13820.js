@@ -1,9 +1,17 @@
 // Module ID: 13820
 // Function ID: 13821
-// Dependencies: [1121]
+// Dependencies: [13801, 13821]
 
 // Module 13820
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13801 from "module_13801" /* 13801 */;
 
+let tmp2;
+const _mod13821 = tmp2(13821);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 20, height: 20, scales: [2, 3], hash: "fb3286cfe401333b68936fe15653c8b9", name: "role", type: "png" });
+export default (arg0, arg1) => {
+  let tmp4;
+  if (!_mod13801(arg0[arg1])) {
+    tmp4 = _mod13821(tmp);
+  }
+  return tmp4;
+};

@@ -1,60 +1,114 @@
-// Module ID: 11227
-// Function ID: 11228
+// Module ID: 10437
+// Function ID: 10438
 // Name: useShowUnlinkChannelAlert
-// Dependencies: [5, 19, 8935, 5141, 1115, 5237, 2]
+// Dependencies: [5, 19, 9833, 5205, 1127, 5301, 2]
 // Exports: default
 
-// Module 11227 (useShowUnlinkChannelAlert)
-import util from "util" /* 1115 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+// Module 10437 (useShowUnlinkChannelAlert)
+import intl5 from "intl" /* 1127 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import AlertDefault from "Alert" /* 5301 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let c4;
+
 const result = size.fileFinishedImporting("modules/integration_settings/native/useShowUnlinkChannelAlert.tsx");
 
 export default function useShowUnlinkChannelAlert(arg0, applicationName, arg2) {
-  closure_0 = arg0;
-  closure_2 = arg2;
+  let onConfirm;
+  let closure_0 = arg0;
+  let closure_2 = arg2;
   const items = [arg0, arg2];
-  onConfirm = noop.useCallback(onConfirm(function*() {
-    yield v2(tmp23[2]).removeLinkedLobby(tmp3);
-    if (1 === tmp7) {
-      c3 = 0;
-      const obj7 = { title: null, body: null };
-      const intl = tmp3(tmp23[4]).intl;
-      obj7.title = intl.string(tmp3(tmp23[4]).t.vFzPFj);
-      const intl2 = tmp3(tmp23[4]).intl;
-      obj7.body = intl2.string(tmp3(tmp23[4]).t["6D5WVg"]);
-      v2(tmp23[3]).show(obj7);
+  onConfirm = react.useCallback(onConfirm(function*(arg0, value) {
+    let intl;
+    let intl2;
+    let v1;
+    if (c4 === 2) {
       c4 = 3;
-      v2(tmp23[3]);
-    } else if (arg0 === 1) {
-      c4 = 3;
-      throw arg1;
-    } else if (arg0 !== 2) {
-      if (closure_128_2 != null) {
-        closure_128_2();
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
       }
-      c3 = 0;
+    } else {
+      let c3;
+      try {
+        c4 = 2;
+        if (0 === applicationName) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            c3 = 1;
+            const obj3 = applicationName(closure_2[2]);
+            applicationName = 2;
+            c4 = 1;
+            const obj5 = { value: obj3.removeLinkedLobby(tmp), done: false };
+            return obj5;
+          }
+        } else {
+          if (1 === tmp4) {
+            c3 = 0;
+            const obj6 = { title: intl.string(tmp(closure_2[4]).t.vFzPFj), body: intl2.string(tmp(closure_2[4]).t["6D5WVg"]) };
+            const show = applicationName(closure_2[3]).show;
+            const tmp11 = applicationName(closure_2[3]);
+            intl = tmp(closure_2[4]).intl;
+            intl2 = tmp(closure_2[4]).intl;
+            show(obj6);
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c4 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            if (closure_128_2 != null) {
+              closure_128_2();
+            }
+            c3 = 0;
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp21) {
+        closure_2 = tmp21;
+        if (0 === c3) {
+          c4 = 3;
+          throw tmp21;
+        } else {
+          applicationName = 1;
+        }
+      }
     }
-    return arg1;
   }), items);
   const items1 = [applicationName, onConfirm];
-  return noop.useCallback(() => {
-    const obj2 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, confirmColor: null };
-    const intl = util.intl;
-    obj2.title = intl.string(util.t.JmUENg);
-    const intl2 = util.intl;
-    obj2.body = intl2.format(util.t["6l2osp"], { applicationName });
-    const intl3 = util.intl;
-    obj2.cancelText = intl3.string(util.t["ETE/oC"]);
-    const intl4 = util.intl;
-    obj2.confirmText = intl4.string(util.t["cY+Oob"]);
-    obj2.onConfirm = onConfirm;
-    obj2.confirmColor = common_AlertDefault.Colors.RED;
-    actions_AlertActionCreatorsDefault.show(obj2);
+  return react.useCallback(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let obj2;
+    const obj = { title: intl.string(intl5.t.JmUENg), body: intl2.format(intl5.t["6l2osp"], obj2), cancelText: intl3.string(intl5.t["ETE/oC"]), confirmText: intl4.string(intl5.t["cY+Oob"]), onConfirm, confirmColor: AlertDefault.Colors.RED };
+    const show = actions_AlertActionCreatorsDefault.show;
+    actions_AlertActionCreatorsDefault;
+    intl = intl5.intl;
+    intl2 = intl5.intl;
+    obj2 = { applicationName };
+    intl3 = intl5.intl;
+    intl4 = intl5.intl;
+    show(obj);
   }, items1);
 };

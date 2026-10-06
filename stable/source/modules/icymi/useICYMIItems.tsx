@@ -1,112 +1,87 @@
-// Module ID: 16829
-// Function ID: 16830
+// Module ID: 16127
+// Function ID: 16128
 // Name: useICYMIItems
-// Dependencies: [19, 8638, 8651, 504, 8654, 2]
+// Dependencies: [19, 7787, 7800, 504, 7803, 2]
 // Exports: default
 
-// Module 16829 (useICYMIItems)
-import ICYMITypes from "ICYMITypes" /* 8651 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8654 */;
-import noop from "module_19" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8638 */;
+// Module 16127 (useICYMIItems)
+import ICYMITypes from "ICYMITypes" /* 7800 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7803 */;
+import react from "react" /* 19 */;
+import ICYMIStore from "ICYMIStore" /* 7787 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function createItem(id, type, unread) {
+  let obj3;
+  let obj5;
   type = type.type;
   if (ICYMITypes.ICYMIItemTypes.MESSAGE === type) {
     if (type.message.id === type.message.channel_id) {
+      let obj4;
       if (null != type.threadChannel) {
-        const obj2 = { id: id.id, timestamp: null, channelType: null, data: null, score: null, debugScore: null, unread: null };
         const _Date5 = Date;
-        obj2.timestamp = Date.now();
-        obj2.channelType = id.data.channel_type;
+        const obj2 = { id: id.id, timestamp: Date.now(), channelType: id.data.channel_type, data: obj3, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
+        obj3 = { kind: "forumThread", message: null, threadChannel: null };
         ({ message: obj9.message, threadChannel: obj9.threadChannel } = type);
-        obj2.data = { kind: "forumThread", message: null, threadChannel: null };
-        obj2.score = id.score;
         const _JSON5 = JSON;
-        obj2.debugScore = JSON.stringify(id.score_components);
-        obj2.unread = unread;
-        let obj4 = obj2;
-        const obj3 = { kind: "forumThread", message: null, threadChannel: null };
+        obj4 = obj2;
       }
       return obj4;
     }
-    obj4 = { id: id.id, timestamp: null, channelType: null, data: null, score: null, debugScore: null, unread: null };
+    obj4 = { id: id.id, timestamp: Date.now(), channelType: id.data.channel_type, data: obj5, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
     const _Date4 = Date;
-    obj4.timestamp = Date.now();
-    obj4.channelType = id.data.channel_type;
-    const obj5 = { kind: "message", message: type.message, mentioned: id.data.has_mention, messageContext: id.data.message_context };
-    obj4.data = obj5;
-    obj4.score = id.score;
     const _JSON4 = JSON;
-    obj4.debugScore = JSON.stringify(id.score_components);
-    obj4.unread = unread;
+    obj5 = { kind: "message", message: type.message, mentioned: id.data.has_mention, messageContext: id.data.message_context };
   } else {
-    if (tmp(8651).ICYMIItemTypes.ACTIVITY !== type) {
-      if (tmp(8651).ICYMIItemTypes.CUSTOM_STATUS !== type) {
-        if (tmp(8651).ICYMIItemTypes.GUILD_EVENT === type) {
-          const obj6 = { id: id.id, timestamp: null, data: null, score: null, debugScore: null, unread: null };
+    if (ICYMITypes.ICYMIItemTypes.ACTIVITY !== type) {
+      if (ICYMITypes.ICYMIItemTypes.CUSTOM_STATUS !== type) {
+        if (ICYMITypes.ICYMIItemTypes.GUILD_EVENT === type) {
           const _Date2 = Date;
-          obj6.timestamp = Date.now();
-          const obj7 = { kind: "guildEvent", eventId: type.event_id };
-          obj6.data = obj7;
-          obj6.score = id.score;
+          const obj6 = { id: id.id, timestamp: Date.now(), data: obj7, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
           const _JSON2 = JSON;
-          obj6.debugScore = JSON.stringify(id.score_components);
-          obj6.unread = unread;
           return obj6;
-        } else if (tmp(8651).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
-          const obj = { id: id.id, timestamp: null, data: null, score: null, debugScore: null, unread: null };
+        } else if (ICYMITypes.ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
           const _Date = Date;
-          obj.timestamp = Date.now();
-          obj.data = { kind: "recommendedGuilds" };
-          obj.score = id.score;
           const _JSON = JSON;
-          obj.debugScore = JSON.stringify(id.score_components);
-          obj.unread = unread;
+          const obj = { id: id.id, timestamp: Date.now(), data: { kind: "recommendedGuilds" }, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
           return obj;
         } else {
           return null;
         }
       }
     }
-    const obj8 = { id: id.id, timestamp: null, data: null, score: null, debugScore: null, unread: null };
     const _Date3 = Date;
-    obj8.timestamp = Date.now();
-    const obj17 = { kind: "contentInventory", content: type.activity };
-    obj8.data = obj17;
-    obj8.score = id.score;
+    const obj8 = { id: id.id, timestamp: Date.now(), data: obj17, score: id.score, debugScore: JSON.stringify(id.score_components), unread };
     const _JSON3 = JSON;
-    obj8.debugScore = JSON.stringify(id.score_components);
-    obj8.unread = unread;
     return obj8;
   }
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/icymi/useICYMIItems.tsx");
 
 export default function useICYMIItems() {
-  const items = [ICYMIStore];
-  const stateFromStores = stateFromStores1(504).useStateFromStores(items, () => ICYMIStore.getUnreadDisplayItems());
+  let stateFromStores1;
   let obj = stateFromStores1(504);
+  const items = [ICYMIStore];
+  const stateFromStores = obj.useStateFromStores(items, () => ICYMIStore.getUnreadDisplayItems());
   const items1 = [ICYMIStore];
-  stateFromStores1 = stateFromStores1(504).useStateFromStores(items1, () => ICYMIStore.getReadDisplayItems());
   const obj2 = stateFromStores1(504);
+  stateFromStores1 = obj2.useStateFromStores(items1, () => ICYMIStore.getReadDisplayItems());
   const items2 = [ICYMIStore];
-  const stateFromStores2 = stateFromStores1(504).useStateFromStores(items2, () => ICYMIStore.getNextIndexToHydrate());
   const obj3 = stateFromStores1(504);
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => ICYMIStore.getNextIndexToHydrate());
   const items3 = [ICYMIStore];
-  const stateFromStoresObject = stateFromStores1(504).useStateFromStoresObject(items3, () => ICYMIStore.getHydratedItems());
   const obj4 = stateFromStores1(504);
+  const stateFromStoresObject = obj4.useStateFromStoresObject(items3, () => ICYMIStore.getHydratedItems());
   const items4 = [ICYMIStore];
-  const stateFromStores3 = stateFromStores1(504).useStateFromStores(items4, () => ICYMIStore.getMissingItems());
+  const obj5 = stateFromStores1(504);
+  const stateFromStores3 = obj5.useStateFromStores(items4, () => ICYMIStore.getMissingItems());
   const items5 = [stateFromStores1];
-  const effect = noop.useEffect(() => {
-    closure_0 = Date.now() + stateFromStores1.length;
-    ICYMIActionCreatorsDefault.ackGravityItems(stateFromStores1.map((id) => {
-      const obj = { id: id.id, timestamp: null };
+  const effect = react.useEffect(() => {
+    let closure_0 = Date.now() + stateFromStores1.length;
+    let obj = ICYMIActionCreatorsDefault;
+    obj.ackGravityItems(stateFromStores1.map((id) => {
+      const obj = { id: id.id, timestamp: +closure_0 };
       closure_0 = tmp - 1;
-      obj.timestamp = +closure_0;
       return obj;
     }, true));
   }, items5);
@@ -123,7 +98,7 @@ export default function useICYMIItems() {
           let tmp9 = stateFromStoresObject[tmp6.id];
           let tmp10 = null == tmp9;
           if (tmp10) {
-            tmp10 = tmp6.type === stateFromStores1(8651).ICYMIItemTypes.MESSAGE;
+            tmp10 = tmp6.type === stateFromStores1(7800).ICYMIItemTypes.MESSAGE;
           }
           if (tmp10) {
             let message_context = tmp6.data.message_context;
@@ -169,7 +144,7 @@ export default function useICYMIItems() {
           let tmp22 = stateFromStoresObject[tmp19.id];
           let tmp23 = null == tmp22;
           if (tmp23) {
-            tmp23 = tmp19.type === stateFromStores1(8651).ICYMIItemTypes.MESSAGE;
+            tmp23 = tmp19.type === stateFromStores1(7800).ICYMIItemTypes.MESSAGE;
           }
           if (tmp23) {
             let message_context2 = tmp19.data.message_context;
