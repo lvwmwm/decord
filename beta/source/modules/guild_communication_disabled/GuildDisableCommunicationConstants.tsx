@@ -1,32 +1,32 @@
-// Module ID: 2113
-// Function ID: 2114
+// Module ID: 2114
+// Function ID: 2115
 // Name: GuildDisableCommunicationConstants
-// Dependencies: [1086, 1127, 2114, 2]
+// Dependencies: [1085, 1126, 2115, 2]
 // Exports: getDisableCommunicationDurationOptions
 
-// Module 2113 (GuildDisableCommunicationConstants)
-import Constants from "Constants" /* 1086 */;
-import intl7 from "intl" /* 1127 */;
-import HelpdeskUtils from "HelpdeskUtils" /* 2114 */;
+// Module 2114 (GuildDisableCommunicationConstants)
+import Constants from "Constants" /* 1085 */;
+import intl7 from "intl" /* 1126 */;
+import HelpdeskUtils from "HelpdeskUtils" /* 2115 */;
 import size from "module_2" /* 2 */;
 
-function getFriendlyDurationString(arg0) {
-  if (obj.DURATION_60_SEC === arg0) {
+function getFriendlyDurationString(timeout_seconds) {
+  if (obj.DURATION_60_SEC === timeout_seconds) {
     const intl6 = intl7.intl;
     return intl6.formatToPlainString(intl7.t["4zv/jq"], { secs: 60 });
-  } else if (obj.DURATION_5_MIN === arg0) {
+  } else if (obj.DURATION_5_MIN === timeout_seconds) {
     const intl5 = intl7.intl;
     return intl5.formatToPlainString(intl7.t.opVZ9q, { mins: 5 });
-  } else if (obj.DURATION_10_MIN === arg0) {
+  } else if (obj.DURATION_10_MIN === timeout_seconds) {
     const intl4 = intl7.intl;
     return intl4.formatToPlainString(intl7.t.opVZ9q, { mins: 10 });
-  } else if (obj.DURATION_1_HOUR === arg0) {
+  } else if (obj.DURATION_1_HOUR === timeout_seconds) {
     const intl3 = intl7.intl;
     return intl3.formatToPlainString(intl7.t.xCjYxK, { hours: 1 });
-  } else if (obj.DURATION_1_DAY === arg0) {
+  } else if (obj.DURATION_1_DAY === timeout_seconds) {
     const intl2 = intl7.intl;
     return intl2.formatToPlainString(intl7.t["k2UNz+"], { days: 1 });
-  } else if (obj.DURATION_1_WEEK === arg0) {
+  } else if (obj.DURATION_1_WEEK === timeout_seconds) {
     const intl = intl7.intl;
     return intl.formatToPlainString(intl7.t.EmoBD2, { weeks: 1 });
   }

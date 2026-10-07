@@ -1,0 +1,318 @@
+// Module ID: 1080
+// Function ID: 1081
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 1073, 877, 1074, 1075, 1077, 1078, 1079]
+// Exports: getCapturedScreenshot
+
+// Module 1080
+import PULL_DOWN_CLOSE_THRESHOLD from "PULL_DOWN_CLOSE_THRESHOLD" /* 1073 */;
+import lazyLoadFeedbackIntegration from "lazyLoadFeedbackIntegration" /* 1074 */;
+import _mod1075 from "module_1075" /* 1075 */;
+import defaultConfiguration from "defaultConfiguration" /* 1077 */;
+import defaultButtonStyles from "defaultButtonStyles" /* 1078 */;
+import feedbackIcon from "feedbackIcon" /* 1079 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3_mod from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+
+let c0, c11, c2;
+
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let c3 = c3_mod;
+({ Appearance: metroRequire, Image: metroImportDefault, Text: metroImportAll, TouchableOpacity: c9 } = react_native);
+let closure_12 = this && this.__awaiter || ((arg0, arg1, arg2, arg3) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let _Promise = arg2;
+  const Promise = arg2;
+  let closure_3 = arg3;
+  if (!arg2) {
+    let tmp = globalThis;
+    _Promise = Promise;
+  }
+  const _Promise1 = new _Promise(function(fn, arg1) {
+    closure_0 = fn;
+    closure_1 = arg1;
+    function fulfilled(result) {
+      try {
+        step(iter.next(result));
+      } catch (tmp5) {
+        closure_1(tmp5);
+      }
+    }
+    function rejected(arg0) {
+      try {
+        step(iter.throw(arg0));
+      } catch (tmp5) {
+        closure_1(tmp5);
+      }
+    }
+    let iter = rejected;
+    function step(done) {
+      if (done.done) {
+        fn(done.value);
+      } else {
+        let tmp1 = done.value;
+        const value = tmp1;
+        if (!(tmp1 instanceof Promise)) {
+          const self = this;
+          const self2 = this;
+          tmp1 = new tmp((fn) => {
+            fn(value);
+          });
+        }
+        tmp1.then(fulfilled, iter);
+      }
+    }
+    let items = closure_1;
+    const tmp = iter;
+    const apply = iter.apply;
+    const tmp2 = closure_0;
+    if (!closure_1) {
+      items = [];
+    }
+    iter = apply(tmp2, items);
+    const iter2 = iter.next();
+    let value = iter2.value;
+    if (iter2.done) {
+      const tmp5 = fn(value);
+    } else {
+      let tmp32 = value;
+      if (!(value instanceof fulfilled)) {
+        let self = this;
+        let self2 = this;
+        tmp32 = new tmp3((fn) => {
+          fn(value);
+        });
+      }
+      tmp32.then(fulfilled, rejected);
+    }
+  });
+  return _Promise1;
+});
+function takeScreenshot() {
+  return closure_12(undefined, undefined, undefined, function*(arg0, value) {
+    if (c0 === 2) {
+      c0 = 3;
+      const str = "Generator functions may not be called on executing generators";
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c0 = 2;
+        if (arg0 === 1) {
+          c0 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c0 = 3;
+          let obj3 = { value, done: true };
+          return obj3;
+        } else {
+          const tmp4 = dependencyMap;
+          let obj = PULL_DOWN_CLOSE_THRESHOLD;
+          obj.hideScreenshotButton();
+          const tmp6 = globalThis;
+          const _setTimeout = setTimeout;
+          const timerId = setTimeout(() => closure_1_12(undefined, undefined, undefined, function*(arg0, value) {
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp4 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj2 = { value, done: true };
+                return obj2;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                let length;
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj3 = { value, done: true };
+                    return obj3;
+                  } else {
+                    let closure_1 = tmp;
+                    length = undefined;
+                    const NATIVE = closure_2_0(closure_2_1[8]).NATIVE;
+                    c2 = 1;
+                    c3 = 1;
+                    const obj4 = { value: NATIVE.captureScreenshot(), done: false };
+                    return obj4;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj5 = { value, done: true };
+                  return obj5;
+                } else {
+                  length = value;
+                  let str2 = "ErrorCapturingScreenshot";
+                  if (length) {
+                    str2 = "ErrorCapturingScreenshot";
+                  }
+                  const obj = closure_129_0(closure_129_1[7]);
+                  obj.showFeedbackWidget();
+                  c3 = 3;
+                  return { value: "IconComponent", done: null };
+                }
+              } catch (tmp17) {
+                c3 = 3;
+                throw tmp17;
+              }
+            }
+          }), 100);
+          c0 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp8) {
+        c0 = 3;
+        throw tmp8;
+      }
+    }
+  });
+}
+class ScreenshotButton {
+  constructor(arg0) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ScreenshotButton);
+    const items = [arg0];
+    const obj = _getPrototypeOf(ScreenshotButton);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    const obj2 = lazyLoadFeedbackIntegration;
+    const result = obj2.lazyLoadFeedbackIntegration();
+    return tmp3Result;
+  }
+}
+_inherits(ScreenshotButton, react.Component);
+const entry = {
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    const self = this;
+    this._themeListener = metroRequire.addChangeListener(() => {
+      self.forceUpdate();
+    });
+  }
+};
+let items = [
+  entry,
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this._themeListener) {
+        const _themeListener = this._themeListener;
+        _themeListener.remove();
+      }
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      let assign5Result;
+      let createElement;
+      let createElement2;
+      let obj6;
+      const self = this;
+      const obj = _mod1075;
+      const theme = obj.getTheme();
+      const merged = Object.assign(Object.assign({}, defaultConfiguration.defaultScreenshotButtonConfiguration), this.props);
+      const _Object = Object;
+      const assign2 = Object.assign;
+      const styles = this.props.styles;
+      let triggerButton;
+      const obj2 = defaultButtonStyles;
+      const assign2Result = assign2({}, obj2.defaultScreenshotButtonStyles(theme).triggerButton);
+      if (null !== styles) {
+        if (undefined !== styles) {
+          triggerButton = styles.triggerButton;
+        }
+      }
+      const _Object2 = Object;
+      const assign3 = Object.assign;
+      const assign4 = Object.assign;
+      const styles2 = self.props.styles;
+      let triggerText;
+      const obj3 = assign(assign2Result, triggerButton);
+      const tmpResult = defaultButtonStyles;
+      const assign4Result = assign4({}, tmpResult.defaultScreenshotButtonStyles(theme).triggerText);
+      if (null !== styles2) {
+        if (undefined !== styles2) {
+          triggerText = styles2.triggerText;
+        }
+      }
+      const style = assign3(assign4Result, triggerText);
+      const _Object3 = Object;
+      const assign5 = Object.assign;
+      const assign6 = Object.assign;
+      const styles3 = self.props.styles;
+      let triggerIcon;
+      const tmpResult2 = defaultButtonStyles;
+      const assign6Result = assign6({}, tmpResult2.defaultScreenshotButtonStyles(theme).triggerIcon);
+      if (null !== styles3) {
+        if (undefined !== styles3) {
+          triggerIcon = styles3.triggerIcon;
+        }
+      }
+      const obj5 = { source: obj6, style: assign5Result };
+      ({ createElement, createElement: createElement2 } = react);
+      obj6 = { uri: feedbackIcon.screenshotIcon };
+      assign5Result = assign5(assign6Result, triggerIcon);
+      const element2 = createElement2(metroImportDefault, obj5);
+      return <React4 style={obj3} onPress={takeScreenshot} accessibilityLabel={merged.triggerAriaLabel}>{element2}<metroImportAll style={style} testID="sentry-feedback-screenshot-button">{merged.triggerLabel}</metroImportAll></React4>;
+    }
+  }
+];
+const ScreenshotButton_export = _createClass(ScreenshotButton, items);
+
+export const getCapturedScreenshot = () => {
+  c11 = undefined;
+  return c11;
+};
+export { ScreenshotButton_export as ScreenshotButton };

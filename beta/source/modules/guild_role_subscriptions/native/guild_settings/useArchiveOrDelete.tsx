@@ -1,12 +1,12 @@
-// Module ID: 17567
-// Function ID: 17568
+// Module ID: 17932
+// Function ID: 17933
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 558, 576, 14745, 14760, 1127, 5205, 1189, 38, 4530, 2]
+// Dependencies: [5, 32, 19, 558, 576, 15030, 15045, 1126, 5708, 1188, 38, 4567, 2]
 
-// Module 17567 (useArchiveOrDelete)
-import intl13 from "intl" /* 1127 */;
-import ToastUtilsAll from "ToastUtils" /* 4530 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14760 */;
+// Module 17932 (useArchiveOrDelete)
+import intl13 from "intl" /* 1126 */;
+import ToastUtilsAll from "ToastUtils" /* 4567 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15045 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -335,7 +335,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
       }
     }
     const obj10 = { tierName: first };
-    const formatToPlainStringResult = obj7.formatToPlainString(tmp(1127).t.x2qwWL, obj10);
+    const formatToPlainStringResult = obj7.formatToPlainString(tmp(1126).t.x2qwWL, obj10);
     cResult[9] = first;
     cResult[10] = formatToPlainStringResult;
   } else {
@@ -373,7 +373,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
         }
       }
     }
-    const stringResult = obj9.string(tmp(1127).t.GMtG6p);
+    const stringResult = obj9.string(tmp(1126).t.GMtG6p);
     cResult[11] = stringResult;
   } else {
     class F {
@@ -411,7 +411,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
       }
     }
     const string = tmp28.string;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     if (undefined === subscriptionListing) {
       class F {
         constructor() {
@@ -467,12 +467,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
       }
     }
   }
-  let intl = tmp(1127).intl;
-  stringResult1 = intl.string(tmp(1127).t["4H6RLl"]);
-  const intl2 = tmp(1127).intl;
-  stringResult2 = intl2.string(tmp(1127).t.uG6b1w);
-  const intl3 = tmp(1127).intl;
-  stringResult3 = intl3.string(tmp(1127).t.JoCdPC);
+  let intl = tmp(1126).intl;
+  stringResult1 = intl.string(tmp(1126).t["4H6RLl"]);
+  const intl2 = tmp(1126).intl;
+  stringResult2 = intl2.string(tmp(1126).t.uG6b1w);
+  const intl3 = tmp(1126).intl;
+  stringResult3 = intl3.string(tmp(1126).t.JoCdPC);
 }) : ((arg0, arg1, guildId, arg3) => {
   let closure_0;
   let closure_3;
@@ -618,19 +618,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
     let stringResult1;
     let closure_6;
     if (!tmp9) {
-      let intl = tmp(1127).intl;
+      let intl = tmp(1126).intl;
       let obj6 = { tierName: first };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t.OuuIOY, obj6);
-      const intl2 = tmp(1127).intl;
-      stringResult = intl2.string(tmp(1127).t.RL0wjm);
-      const intl3 = tmp(1127).intl;
-      stringResult1 = intl3.string(tmp(1127).t["5/Jeg2"]);
-      const intl4 = tmp(1127).intl;
-      let closure_4 = intl4.string(tmp(1127).t.N5AIuE);
-      const intl5 = tmp(1127).intl;
-      _slicedToArray = intl5.string(tmp(1127).t.TEKiiP);
-      const intl6 = tmp(1127).intl;
-      closure_6 = intl6.string(tmp(1127).t["170XOL"]);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.OuuIOY, obj6);
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t.RL0wjm);
+      const intl3 = tmp(1126).intl;
+      stringResult1 = intl3.string(tmp(1126).t["5/Jeg2"]);
+      const intl4 = tmp(1126).intl;
+      let closure_4 = intl4.string(tmp(1126).t.N5AIuE);
+      const intl5 = tmp(1126).intl;
+      _slicedToArray = intl5.string(tmp(1126).t.TEKiiP);
+      const intl6 = tmp(1126).intl;
+      closure_6 = intl6.string(tmp(1126).t["170XOL"]);
     }
     const items = [error];
     closure_6(() => {
@@ -659,24 +659,24 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
     };
     return obj7;
   }
-  const intl7 = tmp(1127).intl;
-  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1127).t.x2qwWL, { tierName: first });
-  const intl8 = tmp(1127).intl;
-  const stringResult2 = intl8.string(tmp(1127).t.GMtG6p);
-  const intl9 = tmp(1127).intl;
+  const intl7 = tmp(1126).intl;
+  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1126).t.x2qwWL, { tierName: first });
+  const intl8 = tmp(1126).intl;
+  const stringResult2 = intl8.string(tmp(1126).t.GMtG6p);
+  const intl9 = tmp(1126).intl;
   const string = intl9.string;
-  const t = tmp(1127).t;
+  const t = tmp(1126).t;
   if (tmp9) {
     stringResult3 = string(t.DHWKJS);
   } else {
     stringResult3 = string(t.Y4KjUN);
   }
-  const intl10 = tmp(1127).intl;
-  closure_4 = intl10.string(tmp(1127).t["4H6RLl"]);
-  const intl11 = tmp(1127).intl;
-  _slicedToArray = intl11.string(tmp(1127).t.uG6b1w);
-  const intl12 = tmp(1127).intl;
-  closure_6 = intl12.string(tmp(1127).t.JoCdPC);
+  const intl10 = tmp(1126).intl;
+  closure_4 = intl10.string(tmp(1126).t["4H6RLl"]);
+  const intl11 = tmp(1126).intl;
+  _slicedToArray = intl11.string(tmp(1126).t.uG6b1w);
+  const intl12 = tmp(1126).intl;
+  closure_6 = intl12.string(tmp(1126).t.JoCdPC);
   stringResult1 = stringResult3;
   stringResult = stringResult2;
   formatToPlainStringResult = formatToPlainStringResult1;

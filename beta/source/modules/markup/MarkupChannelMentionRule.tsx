@@ -1,27 +1,27 @@
-// Module ID: 5314
-// Function ID: 5315
+// Module ID: 5796
+// Function ID: 5797
 // Name: MarkupChannelMentionRule
-// Dependencies: [2103, 2051, 2073, 4472, 4482, 1378, 1086, 2017, 1403, 1127, 5315, 4982, 4990, 5316, 4991, 5313, 1936, 2]
+// Dependencies: [2104, 2051, 2074, 4509, 4519, 1377, 1085, 2018, 1402, 1126, 5797, 5035, 5043, 5798, 5044, 5795, 1936, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5314 (MarkupChannelMentionRule)
-import intl3 from "intl" /* 1127 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+// Module 5796 (MarkupChannelMentionRule)
+import intl3 from "intl" /* 1126 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import _modDef1936 from "module_1936" /* 1936 */;
-import StringUtils from "StringUtils" /* 2017 */;
-import ChannelUtils from "ChannelUtils" /* 4982 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import LinkUtils from "LinkUtils" /* 4991 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5313 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5315 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 5316 */;
-import GatedChannelStore from "GatedChannelStore" /* 2103 */;
+import StringUtils from "StringUtils" /* 2018 */;
+import ChannelUtils from "ChannelUtils" /* 5035 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import LinkUtils from "LinkUtils" /* 5044 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5795 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5797 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 5798 */;
+import GatedChannelStore from "GatedChannelStore" /* 2104 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c10;

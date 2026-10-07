@@ -1,26 +1,26 @@
-// Module ID: 16222
-// Function ID: 16223
+// Module ID: 16525
+// Function ID: 16526
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [109, 32, 19, 17, 2073, 4472, 1378, 21, 4837, 588, 558, 576, 15846, 504, 6684, 1127, 16223, 16224, 16230, 4660, 1491, 7366, 16225, 6796, 9068, 9060, 12021, 12023, 2]
+// Dependencies: [109, 32, 19, 17, 2074, 4509, 1377, 21, 4890, 587, 558, 576, 16140, 504, 6768, 1126, 16526, 16527, 16534, 4702, 1490, 7579, 16529, 6880, 9290, 9282, 12282, 10974, 2]
 
-// Module 16222 (GuildSettingsModalMembersWithTabs)
+// Module 16525 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6684 */;
-import ContextMenu2 from "ContextMenu" /* 7366 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16223 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16224 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16230 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6768 */;
+import ContextMenu2 from "ContextMenu" /* 7579 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16526 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16527 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16534 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import UserStore from "UserStore" /* 1378 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const showMembersManagementActionSheet = tmp2(16225);
+const showMembersManagementActionSheet = tmp2(16529);
 let closure_3 = ["ref"];
 const View = react_native.View;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -462,12 +462,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId
     items[1] = obj3;
     tmp4Result = GuildSettingsModalMemberApplicationsDefault;
     const obj5 = { label: intl3.string(intl5.t.bSZkla), id: MemberSafetyPageTypes.MemberSafetyPageTab.REJECTED, page: unpackModuleId(tmp4Result3, obj6) };
-    intl3 = tmp(1127).intl;
+    intl3 = tmp(1126).intl;
     obj6 = { guildId, applicationStatus: MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED };
     items[2] = obj5;
     tmp4Result3 = GuildSettingsModalMemberApplicationsDefault;
     const obj7 = { label: intl4.string(intl5.t.aURgY2), id: MemberSafetyPageTypes.MemberSafetyPageTab.APPROVED, page: unpackModuleId(tmp4Result4, obj8) };
-    intl4 = tmp(1127).intl;
+    intl4 = tmp(1126).intl;
     obj8 = { guildId, applicationStatus: MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED };
     items[3] = obj7;
     tmp4Result4 = GuildSettingsModalMemberApplicationsDefault;

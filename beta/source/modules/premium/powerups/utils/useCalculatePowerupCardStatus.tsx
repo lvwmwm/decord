@@ -1,13 +1,13 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 12176
+// Function ID: 12177
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [19, 4726, 558, 576, 1127, 2522, 2]
+// Dependencies: [19, 4768, 558, 576, 1126, 2525, 2]
 
-// Module 11923 (useCalculatePowerupCardStatus)
+// Module 12176 (useCalculatePowerupCardStatus)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import _modDef2522 from "module_2522" /* 2522 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4726 */;
+import intl4 from "intl" /* 1126 */;
+import _modDef2525 from "module_2525" /* 2525 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,8 +44,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((storeRemovalDate, 
         let tmp16;
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { type: "active", statusText: intl3.string(_modDef2522.FFLkmx) };
-          intl3 = tmp(1127).intl;
+          const obj3 = { type: "active", statusText: intl3.string(_modDef2525.FFLkmx) };
+          intl3 = tmp(1126).intl;
           cResult[8] = obj3;
           tmp16 = obj3;
         } else {
@@ -63,17 +63,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((storeRemovalDate, 
         title = sourcePowerup3.title;
       }
       if (tmp19 !== title) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const formatToPlainString = intl.formatToPlainString;
         const sourcePowerup = sourceEntitlement.sourcePowerup;
         let title1;
-        const WRRYUT = _modDef2522.WRRYUT;
+        const WRRYUT = _modDef2525.WRRYUT;
         if (sourcePowerup != null) {
           title1 = sourcePowerup.title;
         }
         if (title1 == null) {
-          const intl2 = tmp(1127).intl;
-          title1 = intl2.string(tmp(1127).t.BfF6ED);
+          const intl2 = tmp(1126).intl;
+          title1 = intl2.string(tmp(1126).t.BfF6ED);
         }
         const obj4 = { perkName: title1 };
         const formatToPlainStringResult = formatToPlainString(WRRYUT, obj4);
@@ -137,19 +137,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((storeRemovalDate, 
         const formatToPlainString = intl2.formatToPlainString;
         const sourcePowerup = tmp.sourcePowerup;
         let title;
-        const WRRYUT = _modDef2522.WRRYUT;
+        const WRRYUT = _modDef2525.WRRYUT;
         if (sourcePowerup != null) {
           title = sourcePowerup.title;
         }
         if (title == null) {
-          const intl3 = tmp9(1127).intl;
-          title = intl3.string(tmp9(1127).t.BfF6ED);
+          const intl3 = tmp9(1126).intl;
+          title = intl3.string(tmp9(1126).t.BfF6ED);
         }
         const obj4 = { type: "active", statusText: formatToPlainString(WRRYUT, obj5) };
         tmp5 = obj4;
         obj5 = { perkName: title };
       } else if (sourceEntitlement.type !== tmp4.INACTIVE) {
-        const obj = { type: "active", statusText: intl.string(_modDef2522.FFLkmx) };
+        const obj = { type: "active", statusText: intl.string(_modDef2525.FFLkmx) };
         intl = intl4.intl;
         tmp5 = obj;
       }

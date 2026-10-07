@@ -1,20 +1,20 @@
-// Module ID: 11593
-// Function ID: 11594
+// Module ID: 11848
+// Function ID: 11849
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 4837, 588, 558, 576, 11594, 1127, 4833, 10140, 11583, 10455, 2]
+// Dependencies: [17, 21, 4890, 587, 558, 576, 11849, 1126, 4886, 10369, 11838, 10689, 2]
 
-// Module 11593 (ScheduledMessagesIntro)
+// Module 11848 (ScheduledMessagesIntro)
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl6 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AttachmentIcon from "AttachmentIcon" /* 10140 */;
-import PlusLargeIcon2 from "PlusLargeIcon" /* 10455 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11583 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11594 */;
+import nativeDefault from "native" /* 587 */;
+import intl6 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AttachmentIcon from "AttachmentIcon" /* 10369 */;
+import PlusLargeIcon2 from "PlusLargeIcon" /* 10689 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11838 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11849 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   ({ textContainer, text } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl6.t["C/j9NE"]);
     cResult[2] = stringResult;
     tmp10 = stringResult;
@@ -102,7 +102,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const text2 = tmp4.text;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const formatResult = intl2.format(intl6.t.PqmI8J, {});
     cResult[5] = formatResult;
     tmp15 = formatResult;
@@ -130,7 +130,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const _Symbol = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { icon: AttachmentIcon.AttachmentIcon, label: intl3.string(intl6.t["8Hvr3+"]), highlighted: false };
-        intl3 = tmp(1127).intl;
+        intl3 = tmp(1126).intl;
         const tmp25 = metroRequire(closure_9, obj5);
         cResult[12] = tmp25;
         tmp22 = tmp25;
@@ -149,7 +149,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj7 = { icon: CalendarPlusIcon.CalendarPlusIcon, label: intl4.string(intl6.t["3+ii4F"]), highlighted: true };
-        intl4 = tmp(1127).intl;
+        intl4 = tmp(1126).intl;
         const tmp33 = metroRequire(closure_9, obj7);
         cResult[15] = tmp33;
         tmp30 = tmp33;
@@ -167,7 +167,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const _Symbol3 = Symbol;
         if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
           const obj8 = { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT };
-          const PlusLargeIcon = tmp(10455).PlusLargeIcon;
+          const PlusLargeIcon = tmp(10689).PlusLargeIcon;
           const tmp41 = metroRequire(PlusLargeIcon, obj8);
           cResult[19] = tmp41;
           tmp38 = tmp41;
@@ -186,8 +186,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const _Symbol4 = Symbol;
         if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
           const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl5.string(intl6.t.fxxYiB) };
-          const Text = tmp(4833).Text;
-          intl5 = tmp(1127).intl;
+          const Text = tmp(4886).Text;
+          intl5 = tmp(1126).intl;
           const tmp48 = metroRequire(Text, obj10);
           cResult[22] = tmp48;
           tmp46 = tmp48;

@@ -1,27 +1,27 @@
-// Module ID: 10952
-// Function ID: 10953
+// Module ID: 11211
+// Function ID: 11212
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 2051, 4472, 4482, 1378, 10368, 1086, 21, 4837, 558, 576, 573, 8993, 6471, 10953, 10962, 10963, 1127, 9487, 9488, 4656, 2035, 10965, 10970, 6799, 10971, 1882, 9253, 8059, 2]
+// Dependencies: [32, 19, 17, 2051, 4509, 4519, 1377, 10599, 1085, 21, 4890, 558, 576, 573, 9215, 6546, 11212, 11221, 11222, 1126, 9715, 9716, 4698, 2036, 11224, 11229, 6883, 11230, 1881, 9481, 8897, 2]
 
-// Module 10952 (useMemberListAction)
+// Module 11211 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10368 */;
-import openGroupDMAddMembers from "openGroupDMAddMembers" /* 10953 */;
-import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 10965 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10971 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10599 */;
+import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11212 */;
+import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11224 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11230 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import RelationshipStore_mod from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
-import createStyles from "createStyles" /* 4837 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import RelationshipStore_mod from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let RelationshipStore = RelationshipStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = Constants);
 const jsx = Fragment.jsx;
-let closure_14 = { listActionRenderer: "diversity", listActionHeight: "a" };
+let closure_14 = { listActionRenderer: "Symbol", listActionHeight: "cursor" };
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_15 = createStyles.createStyles(obj);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
@@ -143,7 +143,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (channel != null) {
       id = channel.id;
     }
-    id(6471)();
+    id(6546)();
     [r10095, dependencyMap] = react.useState(undefined);
     const _Symbol = Symbol;
     _slicedToArray(react.useState(undefined), 2);

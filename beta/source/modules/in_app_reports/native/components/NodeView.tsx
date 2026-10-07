@@ -1,33 +1,33 @@
-// Module ID: 8093
-// Function ID: 8094
+// Module ID: 8286
+// Function ID: 8287
 // Name: NodeView
-// Dependencies: [32, 109, 19, 17, 4836, 2051, 4472, 8094, 8092, 1086, 1097, 21, 4837, 588, 558, 576, 5302, 5907, 4833, 4685, 4788, 504, 8095, 5436, 1491, 5267, 5276, 8089, 8087, 5017, 8097, 8101, 8102, 6546, 8105, 8106, 8107, 8108, 8113, 8114, 12459, 12460, 12461, 12462, 12463, 12464, 12465, 12467, 12469, 12470, 12471, 12472, 12473, 12474, 12475, 12478, 2]
+// Dependencies: [32, 109, 19, 17, 4889, 2051, 4509, 8287, 8285, 1085, 1096, 21, 4890, 587, 558, 576, 5784, 5984, 4886, 4727, 4812, 504, 8288, 5909, 1490, 5770, 5779, 8282, 8280, 5070, 8290, 8294, 8295, 6619, 8299, 8300, 8301, 8302, 8307, 8308, 12706, 12707, 12708, 12709, 12710, 12711, 12712, 12714, 12716, 12717, 12718, 12719, 12720, 12721, 12722, 12725, 2]
 // Exports: default
 
-// Module 8093 (NodeView)
+// Module 8286 (NodeView)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants2 from "Constants" /* 1097 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4788 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import CustomMarkupAll from "CustomMarkup" /* 5302 */;
-import useInitialValueDefault from "useInitialValue" /* 5907 */;
-import MenuTypes from "MenuTypes" /* 8087 */;
-import InAppReportsConstants from "InAppReportsConstants" /* 8092 */;
-import MenuConstants from "MenuConstants" /* 8094 */;
-import ArrowDefault from "Arrow" /* 8095 */;
+import nativeDefault from "native" /* 587 */;
+import Constants2 from "Constants" /* 1096 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import CustomMarkupAll from "CustomMarkup" /* 5784 */;
+import useInitialValueDefault from "useInitialValue" /* 5984 */;
+import MenuTypes from "MenuTypes" /* 8280 */;
+import InAppReportsConstants from "InAppReportsConstants" /* 8285 */;
+import MenuConstants from "MenuConstants" /* 8287 */;
+import ArrowDefault from "Arrow" /* 8288 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 4836 */;
+import DevSettingsStore from "DevSettingsStore" /* 4889 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import Constants from "Constants" /* 1086 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -130,7 +130,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp16 = null;
             if (description.length > 0) {
               const obj3 = { style: tmp4.description, variant: "text-xs/medium", color: "text-default", children: description };
-              tmp16 = authStore4(tmp(4833).Text, obj3);
+              tmp16 = authStore4(tmp(4886).Text, obj3);
             }
           }
           cResult[9] = description;
@@ -144,7 +144,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp12 = null;
         if (subheader.length > 0) {
           const obj4 = { style: tmp4.subheader, variant: "text-md/medium", color: "text-default", children: tmp6(subheader) };
-          const Text = tmp(4833).Text;
+          const Text = tmp(4886).Text;
           tmp12 = authStore4(Text, obj4);
         }
       }
@@ -158,7 +158,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp8 = null != header && "" !== header;
   if (tmp8) {
     const obj5 = { ref: headerRef, style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: header };
-    tmp8 = authStore4(tmp(4833).Text, obj5);
+    tmp8 = authStore4(tmp(4886).Text, obj5);
   }
   cResult[1] = header;
   cResult[2] = headerRef;
@@ -532,16 +532,16 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((child) => {
   const obj2 = { style: tmp.childButton, accessibilityRole: "button", onPress: first, children: closure_19(closure_8, obj3) };
   obj3 = { style: tmp.childContainer, children: items2 };
   const obj4 = { style: tmp.childContent, children: items1 };
-  const PressableHighlight = tmp6(5436).PressableHighlight;
+  const PressableHighlight = tmp6(5909).PressableHighlight;
   items1 = [, ];
   const obj5 = { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 };
-  items1[0] = closure_18(child(4833).Text, obj5);
+  items1[0] = closure_18(child(4886).Text, obj5);
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
   if (stateFromStores) {
     const obj6 = { style: tmp.debugText, variant: "text-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = tmp10(tmp6(4833).Text, obj6);
+    stateFromStores = tmp10(tmp6(4886).Text, obj6);
   }
   items1[1] = stateFromStores;
   items2 = [closure_19(closure_8, obj4), closure_18(ArrowDefault, {})];
@@ -886,7 +886,7 @@ export default function NodeView(node) {
     userIsTeen = null != elements5.find((type) => type.type === skip_str);
   }
   const rect = { style: tmp.container, bottom: true, top: true, children: items10 };
-  const obj4 = { style: tmp.scrollView, children: items8 };
+  let obj4 = { style: tmp.scrollView, children: items8 };
   const SafeAreaPaddingView = tmp2(tmp3[33]).SafeAreaPaddingView;
   const obj5 = { element: elements6.find((type) => type.type === skip_str) };
   elements6 = node.elements;

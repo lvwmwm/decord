@@ -1,29 +1,29 @@
-// Module ID: 16862
-// Function ID: 16863
+// Module ID: 17222
+// Function ID: 17223
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 4853, 16863, 6950, 2051, 2057, 21, 558, 576, 4769, 11647, 16830, 8938, 573, 8947, 8941, 9048, 4801, 8952, 16864, 9050, 8059, 9053, 1127, 5940, 16857, 9488, 16865, 6808, 7719, 4656, 6351, 2035, 16866, 11932, 7247, 2]
+// Dependencies: [32, 19, 17, 4906, 17223, 7037, 2051, 2057, 21, 558, 576, 4791, 11901, 17190, 9160, 573, 9169, 9163, 9270, 4854, 9174, 17224, 9272, 8897, 9275, 1126, 6017, 17217, 9716, 17225, 6892, 7941, 4698, 4800, 2036, 17226, 12185, 7452, 2]
 
-// Module 16862 (VoicePanelFloatingCTAUtils)
+// Module 17222 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import XSmallIcon from "XSmallIcon" /* 5940 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7719 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8952 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11647 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 16830 */;
-import GuildScheduledEventsNoticesActionCreators from "GuildScheduledEventsNoticesActionCreators" /* 16864 */;
-import useChannelFloatingCTAContentDefault from "useChannelFloatingCTAContent" /* 16865 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 16866 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import XSmallIcon from "XSmallIcon" /* 6017 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7941 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9174 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17190 */;
+import GuildScheduledEventsNoticesActionCreators from "GuildScheduledEventsNoticesActionCreators" /* 17224 */;
+import useChannelFloatingCTAContentDefault from "useChannelFloatingCTAContent" /* 17225 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17226 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
-import EventBannerStore from "EventBannerStore" /* 16863 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import EventBannerStore from "EventBannerStore" /* 17223 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,9 +32,9 @@ const require = globalThis.__r;
 let _require, dependencyMap, id;
 
 let tmp;
-const intl4 = tmp(1127);
-const getDeviceSpecificString2 = tmp(7247);
-const SoundboardIcon = tmp(11932);
+const intl4 = tmp(1126);
+const getDeviceSpecificString2 = tmp(7452);
+const SoundboardIcon = tmp(12185);
 function getBadConnectionCTAProps(arg0) {
   let closure_0;
   let intl;
@@ -129,11 +129,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const tmp = imminentUpcomingGuildEvents;
   let obj = imminentUpcomingGuildEvents(576);
   const cResult = obj.c(28);
-  stateFromStores(4769)();
+  stateFromStores(4791)();
   id = undefined;
-  const tmp6 = stateFromStores(16830)(react.useContext(stateFromStores(11647)).channelId);
-  const useImminentUpcomingGuildEvents = imminentUpcomingGuildEvents(8938).useImminentUpcomingGuildEvents;
-  imminentUpcomingGuildEvents(8938);
+  const tmp6 = stateFromStores(17190)(react.useContext(stateFromStores(11901)).channelId);
+  const useImminentUpcomingGuildEvents = imminentUpcomingGuildEvents(9160).useImminentUpcomingGuildEvents;
+  imminentUpcomingGuildEvents(9160);
   const tmp4 = stateFromStores;
   if (id != null) {
     id = id.id;
@@ -168,13 +168,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const tmpResult = tmp(573);
   stateFromStores = tmpResult.useStateFromStores(first, tmp12, tmp13);
   let tmp16 = null != stateFromStores;
-  const tmpResult3 = tmp(8947);
+  const tmpResult3 = tmp(9169);
   tmpResult3.useManageResourcePermissions(id).canManageGuildEvent(stateFromStores);
   if (tmp16) {
     tmp16 = closure_8(stateFromStores);
   }
   if (cResult[4] !== stateFromStores) {
-    const tmpResult4 = tmp(8941);
+    const tmpResult4 = tmp(9163);
     const nextRecurrenceIdInEvent = tmpResult4.getNextRecurrenceIdInEvent(stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = nextRecurrenceIdInEvent;
@@ -184,7 +184,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   dependencyMap = tmp18;
   let guild_id;
-  const tmp4Result = tmp4(9048);
+  const tmp4Result = tmp4(9270);
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
@@ -362,7 +362,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   id = undefined;
-  const useInviteMembersCallback = tmp(16857).useInviteMembersCallback;
+  const useInviteMembersCallback = tmp(17217).useInviteMembersCallback;
   if (id != null) {
     id = id.id;
   }
@@ -380,14 +380,16 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   let tmp13;
   if (null != id) {
-    if (tmp4) {
-      if (stateFromStores) {
-        const obj2 = { label: intl.string(tmp(1127).t.N4nebq), subLabel: intl2.string(tmp(1127).t.o2XPr2), icon: null, onPress: inviteMembersCallback };
-        intl = tmp(1127).intl;
-        intl2 = tmp(1127).intl;
-        ({ IconComponent: tmp(9488).GroupPlusIcon, variant: "translucent" });
-        const Icon = tmp(8059).RowButton.Icon;
-        tmp13 = obj2;
+    if (!id.isDM()) {
+      if (tmp4) {
+        if (stateFromStores) {
+          const obj2 = { label: intl.string(tmp(1126).t.N4nebq), subLabel: intl2.string(tmp(1126).t.o2XPr2), icon: null, onPress: inviteMembersCallback };
+          intl = tmp(1126).intl;
+          intl2 = tmp(1126).intl;
+          ({ IconComponent: tmp(9716).GroupPlusIcon, variant: "translucent" });
+          const Icon = tmp(8897).RowButton.Icon;
+          tmp13 = obj2;
+        }
       }
     }
   }
@@ -420,14 +422,16 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   let tmp7;
   if (null != id) {
-    if (tmp2) {
-      if (stateFromStores) {
-        const obj2 = { label: intl.string(tmp3(1127).t.N4nebq), subLabel: intl2.string(tmp3(1127).t.o2XPr2), icon: null, onPress: tmp6 };
-        intl = tmp3(1127).intl;
-        intl2 = tmp3(1127).intl;
-        ({ IconComponent: tmp3(9488).GroupPlusIcon, variant: "translucent" });
-        const Icon = tmp3(8059).RowButton.Icon;
-        tmp7 = obj2;
+    if (!id.isDM()) {
+      if (tmp2) {
+        if (stateFromStores) {
+          const obj2 = { label: intl.string(tmp3(1126).t.N4nebq), subLabel: intl2.string(tmp3(1126).t.o2XPr2), icon: null, onPress: tmp6 };
+          intl = tmp3(1126).intl;
+          intl2 = tmp3(1126).intl;
+          ({ IconComponent: tmp3(9716).GroupPlusIcon, variant: "translucent" });
+          const Icon = tmp3(8897).RowButton.Icon;
+          tmp7 = obj2;
+        }
       }
     }
   }
@@ -543,7 +547,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((arg0) => {
   let setShowFloatingCTA;
   let closure_0 = arg0;
-  setShowFloatingCTA = react.useContext(setShowFloatingCTA(11647)).setShowFloatingCTA;
+  setShowFloatingCTA = react.useContext(setShowFloatingCTA(11901)).setShowFloatingCTA;
   const items = [setShowFloatingCTA, arg0];
   return react.useMemo(() => {
     let tmp = null;
@@ -560,7 +564,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.cpT0Cq);
     cResult[0] = stringResult;
     first = stringResult;

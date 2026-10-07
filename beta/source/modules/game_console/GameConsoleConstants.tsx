@@ -1,12 +1,12 @@
-// Module ID: 8542
-// Function ID: 8543
+// Module ID: 8749
+// Function ID: 8750
 // Name: GameConsoleConstants
-// Dependencies: [1086, 7791, 2]
+// Dependencies: [1085, 8015, 2]
 // Exports: XBOX_HANDOFF_SEARCH_PARAMS
 
-// Module 8542 (GameConsoleConstants)
-import Constants from "Constants" /* 1086 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
+// Module 8749 (GameConsoleConstants)
+import Constants from "Constants" /* 1085 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
 import size from "module_2" /* 2 */;
 
 const ActivityGamePlatforms = Constants.ActivityGamePlatforms;

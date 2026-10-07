@@ -1,9 +1,9 @@
-// Module ID: 1393
-// Function ID: 1394
+// Module ID: 1392
+// Function ID: 1393
 // Name: Record
 // Dependencies: [2]
 
-// Module 1393 (Record)
+// Module 1392 (Record)
 import size from "module_2" /* 2 */;
 
 class Record {

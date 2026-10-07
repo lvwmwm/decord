@@ -3,34 +3,19 @@
 // Dependencies: []
 
 // Module 1344
-let hasOwnProperty;
+function shim(obj) {
+  const items = [];
+  for (const key10003 in obj) {
+    let arr = items.push(key10003);
+    continue;
+  }
+  return items;
+}
+let keys = shim;
+if (typeof Object.keys === "function") {
+  const _Object = Object;
+  keys = Object.keys;
+}
+keys.shim = shim;
 
-function supported(arg0) {
-  return "[object Arguments]" == toString.call(arg0);
-}
-function unsupported(obj) {
-  let flag = obj && typeof obj === "object" && typeof obj.length === "number";
-  if (flag) {
-    const _Object = Object;
-    hasOwnProperty = Object.prototype.hasOwnProperty;
-    flag = hasOwnProperty.call(obj, "callee");
-  }
-  if (flag) {
-    const _Object2 = Object;
-    flag = !propertyIsEnumerable.call(obj, "callee");
-  }
-  if (!flag) {
-    flag = false;
-  }
-  return flag;
-}
-let tmp = unsupported;
-if ("[object Arguments]" == (function() {
-  return toString.call(arguments);
-})()) {
-  tmp = supported;
-}
-tmp.supported = supported;
-tmp.unsupported = unsupported;
-
-export default tmp;
+export default keys;

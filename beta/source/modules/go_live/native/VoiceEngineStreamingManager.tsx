@@ -1,28 +1,28 @@
-// Module ID: 4978
-// Function ID: 4979
+// Module ID: 5031
+// Function ID: 5032
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 4859, 2051, 2102, 1086, 2011, 3, 2046, 2027, 585, 1283, 1989, 2001, 38, 4979, 5038, 4889, 1485, 9404, 8741, 1127, 2]
+// Dependencies: [5, 17, 4912, 2051, 2103, 1085, 2011, 3, 2046, 2028, 584, 1282, 1989, 2001, 38, 5032, 5091, 4942, 1484, 9631, 8966, 1126, 2]
 
-// Module 4978 (VoiceEngineStreamingManager)
+// Module 5031 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import intl2 from "intl" /* 1127 */;
-import useWindowDimensions from "useWindowDimensions" /* 1485 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import intl2 from "intl" /* 1126 */;
+import useWindowDimensions from "useWindowDimensions" /* 1484 */;
 import inject from "inject" /* 2001 */;
 import Constants2 from "Constants" /* 2011 */;
-import UserSettings from "UserSettings" /* 2027 */;
+import UserSettings from "UserSettings" /* 2028 */;
 import Timers from "Timers" /* 2046 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4889 */;
-import StreamActionCreators from "StreamActionCreators" /* 4979 */;
-import PushNotificationDefault from "PushNotification" /* 8741 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 9404 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
+import StreamActionCreators from "StreamActionCreators" /* 5032 */;
+import PushNotificationDefault from "PushNotification" /* 8966 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 9631 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import Constants from "Constants" /* 1086 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import Constants from "Constants" /* 1085 */;
 import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size_mod from "module_2" /* 2 */;
 

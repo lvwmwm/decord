@@ -1,18 +1,18 @@
-// Module ID: 8259
-// Function ID: 8260
+// Module ID: 8455
+// Function ID: 8456
 // Name: ProfileEffectSampleV2
-// Dependencies: [17, 8258, 21, 4837, 588, 558, 576, 8260, 5896, 8261, 2]
+// Dependencies: [17, 8454, 21, 4890, 587, 558, 576, 8456, 5974, 8457, 2]
 
-// Module 8259 (ProfileEffectSampleV2)
+// Module 8455 (ProfileEffectSampleV2)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8258 */;
-import _modDef8260 from "module_8260" /* 8260 */;
-import ProfileEffectDefault from "ProfileEffect" /* 8261 */;
+import nativeDefault from "native" /* 587 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8454 */;
+import _modDef8456 from "module_8456" /* 8456 */;
+import ProfileEffectDefault from "ProfileEffect" /* 8457 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef8260 };
+      const obj2 = { uri: _modDef8456 };
       cResult[5] = obj2;
       tmp9 = obj2;
     } else {
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = profileBackground;
   const obj2 = { style: items1, source: obj3, accessible: false, resizeMode: "cover" };
   items1 = [tmp.sampleProfileImage];
-  obj3 = { uri: _modDef8260 };
+  obj3 = { uri: _modDef8456 };
   const tmp7 = FastImageDefault;
   items2 = [React3(tmp7, obj2), , ];
   let tmp4Result = !flag;

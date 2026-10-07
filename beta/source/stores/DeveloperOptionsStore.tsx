@@ -1,17 +1,17 @@
-// Module ID: 1358
-// Function ID: 1359
+// Module ID: 1357
+// Function ID: 1358
 // Name: DeveloperOptionsStore
-// Dependencies: [1086, 569, 1103, 1283, 1112, 1359, 510, 1243, 504, 585, 2]
+// Dependencies: [1085, 569, 1102, 1282, 1111, 1358, 510, 1242, 504, 584, 2]
 
-// Module 1358 (DeveloperOptionsStore)
+// Module 1357 (DeveloperOptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import TokenManagerAll from "TokenManager" /* 1112 */;
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import TokenManagerAll from "TokenManager" /* 1111 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import Backoff from "Backoff" /* 569 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let closure_5 = {
   }
 };
 const DeveloperOptionsStore_str = "DeveloperOptionsStore";
-let obj = { trace: false, canary: false, logGatewayEvents: false, logOverlayEvents: false, logAnalyticsEvents: false, sourceMapsEnabled: false, axeEnabled: false, cssDebuggingEnabled: false, layoutDebuggingEnabled: false, bugReporterEnabled: true, idleStatusIndicatorEnabled: false, onlyShowPreviewAppCollections: false, disableAppCollectionsCache: false, isStreamInfoOverlayEnabled: false, preventPopoutClose: false, logKeyboardMismatches: false, alertStartupMetrics: false, logQuestEvents: false };
+let obj = { trace: false, canary: false, logGatewayEvents: false, logOverlayEvents: false, logAnalyticsEvents: false, logInteractionTTIAnalytics: false, sourceMapsEnabled: false, axeEnabled: false, cssDebuggingEnabled: false, layoutDebuggingEnabled: false, bugReporterEnabled: true, idleStatusIndicatorEnabled: false, onlyShowPreviewAppCollections: false, disableAppCollectionsCache: false, isStreamInfoOverlayEnabled: false, preventPopoutClose: false, logKeyboardMismatches: false, alertStartupMetrics: false, logQuestEvents: false };
 let obj2 = {};
 let merged = Object.assign(obj);
 obj = obj2;
@@ -139,6 +139,12 @@ Object.defineProperty(prototype, "isLoggingOverlayEvents", {
 Object.defineProperty(prototype, "isLoggingAnalyticsEvents", {
   get: function isLoggingAnalyticsEvents() {
     return obj.logAnalyticsEvents;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isLoggingInteractionTTIAnalytics", {
+  get: function isLoggingInteractionTTIAnalytics() {
+    return obj.logInteractionTTIAnalytics;
   },
   set: undefined
 });

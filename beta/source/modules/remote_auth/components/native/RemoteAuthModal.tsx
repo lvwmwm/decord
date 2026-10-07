@@ -1,30 +1,30 @@
-// Module ID: 13410
-// Function ID: 13411
+// Module ID: 13676
+// Function ID: 13677
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1086, 21, 4837, 588, 558, 576, 1619, 13409, 13411, 6401, 1283, 5040, 12, 13412, 4833, 1127, 1189, 5282, 5746, 13413, 5890, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 558, 576, 1618, 13675, 13677, 6473, 1282, 5093, 12, 13678, 4886, 1126, 1188, 5594, 5592, 13679, 5968, 2]
 
-// Module 13410 (RemoteAuthModal)
+// Module 13676 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl5 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import ButtonGroup2 from "ButtonGroup" /* 5746 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6401 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13409 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13411 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13413 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import ButtonGroup2 from "ButtonGroup" /* 5592 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6473 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13675 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13677 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13679 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,8 +40,8 @@ let obj3;
 let tmp;
 let tmp7;
 let unpackModuleId;
-const ActivityIndicator_ActivityIndicator = tmp(5890);
-const AssetRegistryDefault3 = tmp7(13412);
+const ActivityIndicator_ActivityIndicator = tmp(5968);
+const AssetRegistryDefault3 = tmp7(13678);
 let _slicedToArray = _slicedToArray_mod;
 ({ ImageBackground: hasOwnProperty, Image: metroRequire, View: metroImportDefault } = react_native);
 const Endpoints = Constants.Endpoints;
@@ -425,7 +425,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
       tmp13 = cResult[6];
     }
     if (cResult[7] !== tmp4.mainImage) {
-      const obj4 = { source: setAuthStep(13412), style: tmp4.mainImage };
+      const obj4 = { source: setAuthStep(13678), style: tmp4.mainImage };
       const tmp20 = closure_9(closure_6, obj4);
       cResult[7] = tmp4.mainImage;
       cResult[8] = tmp20;
@@ -435,9 +435,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
     }
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { variant: "heading-md/extrabold", children: intl.string(tmp(1127).t.jD2pqF) };
-      const Heading = tmp(4833).Heading;
-      intl = tmp(1127).intl;
+      const obj5 = { variant: "heading-md/extrabold", children: intl.string(tmp(1126).t.jD2pqF) };
+      const Heading = tmp(4886).Heading;
+      intl = tmp(1126).intl;
       const tmp23 = closure_9(Heading, obj5);
       cResult[9] = tmp23;
       tmp21 = tmp23;
@@ -447,8 +447,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
     const _Symbol2 = Symbol;
     const warningCaption = tmp4.warningCaption;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
-      const stringResult = intl2.string(tmp(1127).t["hcd/kh"]);
+      const intl2 = tmp(1126).intl;
+      const stringResult = intl2.string(tmp(1126).t["hcd/kh"]);
       cResult[10] = stringResult;
       tmp24 = stringResult;
     } else {
@@ -456,7 +456,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
     }
     if (cResult[11] !== tmp4.warningCaption) {
       const obj6 = { style: warningCaption, children: tmp24 };
-      const tmp28 = closure_9(tmp(1189).LegacyText, obj6);
+      const tmp28 = closure_9(tmp(1188).LegacyText, obj6);
       cResult[11] = tmp4.warningCaption;
       cResult[12] = tmp28;
       tmp26 = tmp28;
@@ -468,8 +468,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
     const combined = "" + tmp15;
     const _Symbol3 = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1127).intl;
-      const stringResult1 = intl3.string(tmp(1127).t.N3qV8e);
+      const intl3 = tmp(1126).intl;
+      const stringResult1 = intl3.string(tmp(1126).t.N3qV8e);
       cResult[13] = stringResult1;
       tmp30 = stringResult1;
     } else {
@@ -485,8 +485,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
         }
         const _Symbol4 = Symbol;
         if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl4 = tmp(1127).intl;
-          const stringResult2 = intl4.string(tmp(1127).t["ETE/oC"]);
+          const intl4 = tmp(1126).intl;
+          const stringResult2 = intl4.string(tmp(1126).t["ETE/oC"]);
           cResult[18] = stringResult2;
           tmp35 = stringResult2;
         } else {
@@ -494,7 +494,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
         }
         if (cResult[19] !== tmp12) {
           const obj7 = { variant: "secondary", text: tmp35, onPress: tmp12 };
-          const tmp39 = closure_9(tmp(5282).Button, obj7);
+          const tmp39 = closure_9(tmp(5594).Button, obj7);
           cResult[19] = tmp12;
           cResult[20] = tmp39;
           tmp37 = tmp39;
@@ -528,7 +528,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
         }
         const obj9 = { style: buttonGroup, children: items2 };
         items2 = [tmp32, tmp37];
-        const tmp42 = closure_10(tmp(5746).ButtonGroup, obj9);
+        const tmp42 = closure_10(tmp(5592).ButtonGroup, obj9);
         cResult[21] = tmp4.buttonGroup;
         cResult[22] = tmp32;
         cResult[23] = tmp37;
@@ -537,7 +537,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
       }
     }
     const obj10 = { text: tmp30, onPress: tmp13, disabled: !tmp6 && !first };
-    const tmp34 = closure_9(tmp(5282).Button, obj10, combined);
+    const tmp34 = closure_9(tmp(5594).Button, obj10, combined);
     cResult[14] = tmp13;
     cResult[15] = !tmp6 && !first;
     cResult[16] = combined;
@@ -673,8 +673,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-xl/extrabold", children: intl.string(intl5.t.HbwTOZ) };
-    const Heading = tmp(4833).Heading;
-    intl = tmp(1127).intl;
+    const Heading = tmp(4886).Heading;
+    intl = tmp(1126).intl;
     const tmp12 = React4(Heading, obj3);
     cResult[2] = tmp12;
     tmp10 = tmp12;
@@ -683,7 +683,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const caption = tmp4.caption;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult = intl2.string(intl5.t.wKknJ0);
     cResult[3] = stringResult;
     tmp13 = stringResult;
@@ -701,8 +701,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { text: intl3.string(intl5.t.pYWLA0), onPress: ModalActionCreatorsDefault.pop };
-    const Button = tmp(5282).Button;
-    intl3 = tmp(1127).intl;
+    const Button = tmp(5594).Button;
+    intl3 = tmp(1126).intl;
     const tmp21 = React4(Button, obj5);
     cResult[6] = tmp21;
     tmp18 = tmp21;
@@ -778,8 +778,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_12();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-xl/extrabold", children: intl.string(intl5.t.NShI3Q) };
-    const Heading = tmp(4833).Heading;
-    intl = tmp(1127).intl;
+    const Heading = tmp(4886).Heading;
+    intl = tmp(1126).intl;
     const tmp7 = React4(Heading, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -788,7 +788,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const caption = tmp4.caption;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult = intl2.string(intl5.t.Ygezov);
     cResult[1] = stringResult;
     tmp8 = stringResult;
@@ -806,8 +806,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { text: intl3.string(intl5.t["ETE/oC"]), onPress: ModalActionCreatorsDefault.pop };
-    const Button = tmp(5282).Button;
-    intl3 = tmp(1127).intl;
+    const Button = tmp(5594).Button;
+    intl3 = tmp(1126).intl;
     const tmp16 = React4(Button, obj4);
     cResult[4] = tmp16;
     tmp13 = tmp16;

@@ -1,11 +1,11 @@
-// Module ID: 6890
-// Function ID: 6891
+// Module ID: 6975
+// Function ID: 6976
 // Name: ClickstreamExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1440, 2]
 // Exports: clickstreamExperimentEnabled
 
-// Module 6890 (ClickstreamExperiment)
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+// Module 6975 (ClickstreamExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

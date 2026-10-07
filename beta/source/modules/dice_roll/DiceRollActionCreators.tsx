@@ -1,11 +1,11 @@
-// Module ID: 6667
-// Function ID: 6668
+// Module ID: 6751
+// Function ID: 6752
 // Name: DiceRollActionCreators
-// Dependencies: [585, 2]
+// Dependencies: [584, 2]
 // Exports: startDiceRoll
 
-// Module 6667 (DiceRollActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
+// Module 6751 (DiceRollActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dice_roll/DiceRollActionCreators.tsx");

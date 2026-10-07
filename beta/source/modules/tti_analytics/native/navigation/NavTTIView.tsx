@@ -1,18 +1,18 @@
-// Module ID: 16177
-// Function ID: 16178
+// Module ID: 16479
+// Function ID: 16480
 // Name: NavTTIView
-// Dependencies: [109, 19, 17, 4836, 21, 558, 576, 16178, 16184, 16185, 504, 16173, 2]
+// Dependencies: [109, 19, 17, 4889, 21, 558, 576, 16480, 16487, 16488, 504, 16474, 2]
 
-// Module 16177 (NavTTIView)
+// Module 16479 (NavTTIView)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 16173 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16184 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16185 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 16474 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16487 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16488 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4836 */;
+import DevSettingsStore from "DevSettingsStore" /* 4889 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 let closure_14;
 let closure_15;
 let tmp;
-const useComponentRenderSpan = tmp(16178);
+const useComponentRenderSpan = tmp(16480);
 let closure_2 = ["measurementProps", "onLayout", "children"];
 let closure_3 = ["name"];
 let closure_4 = ["tracking", "descendantTracking", "name"];
@@ -39,12 +39,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   let tmp3;
   let tmp4;
   let tmp5;
-  const obj = react2;
+  let obj = react2;
   const cResult = obj.c(12);
   if (cResult[0] !== children) {
     ({ measurementProps, onLayout } = children);
     let closure_0 = onLayout;
     children = children.children;
+    let tmp6 = _objectWithoutProperties;
     const tmp8 = _objectWithoutProperties(children, closure_2);
     cResult[0] = children;
     cResult[1] = children;
@@ -61,7 +62,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     closure_0 = cResult[3];
     tmp5 = cResult[4];
   }
-  const onLayout2 = tmp3.onLayout;
+  let onLayout2 = tmp3.onLayout;
   if (cResult[5] === onLayout2) {
     let tmp9;
     if (cResult[6] === tmp4) {
@@ -79,7 +80,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
         return tmp11;
       }
     }
-    const obj2 = { onLayout: tmp4, children: tmp2 };
+    let obj2 = { onLayout: tmp4, children: tmp2 };
     const merged = Object.assign(tmp5);
     const tmp17 = authStore2(View, obj2);
     cResult[8] = tmp2;

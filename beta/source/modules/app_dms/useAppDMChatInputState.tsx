@@ -1,19 +1,19 @@
-// Module ID: 12840
-// Function ID: 12841
+// Module ID: 13102
+// Function ID: 13103
 // Name: useAppDMChatInputState
-// Dependencies: [19, 8588, 5064, 7039, 2009, 1378, 1086, 1985, 558, 576, 504, 7636, 585, 6590, 2]
+// Dependencies: [19, 8795, 5118, 7111, 2009, 1377, 1085, 1985, 558, 576, 504, 7858, 584, 6663, 2]
 
-// Module 12840 (useAppDMChatInputState)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
+// Module 13102 (useAppDMChatInputState)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
 import Server from "Server" /* 1985 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7636 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8795 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
-import UserProfileStore from "UserProfileStore" /* 7039 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import UserProfileStore from "UserProfileStore" /* 7111 */;
 import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -518,8 +518,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
               }
             }
           }
-          const useGetOrFetchApplication = tmp(6590).useGetOrFetchApplication;
-          tmp(6590);
+          const useGetOrFetchApplication = tmp(6663).useGetOrFetchApplication;
+          tmp(6663);
           if (null == tmp43) {
             class U {
               constructor() {

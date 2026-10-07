@@ -1,21 +1,21 @@
-// Module ID: 8066
-// Function ID: 8067
+// Module ID: 8902
+// Function ID: 8903
 // Name: FormSection
-// Dependencies: [19, 17, 1193, 21, 4837, 588, 558, 576, 5996, 6560, 8063, 5997, 8067, 1370, 2]
+// Dependencies: [19, 17, 1192, 21, 4890, 587, 558, 576, 6073, 6633, 8899, 6074, 8903, 1369, 2]
 
-// Module 8066 (FormSection)
+// Module 8902 (FormSection)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import FormConstants from "FormConstants" /* 1193 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import RedesignCompat from "RedesignCompat" /* 5996 */;
-import FormRowDefault from "FormRow" /* 6560 */;
-import FormDividerDefault from "FormDivider" /* 8063 */;
-import FormTitleDefault from "FormTitle" /* 8067 */;
+import nativeDefault from "native" /* 587 */;
+import FormConstants from "FormConstants" /* 1192 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import RedesignCompat from "RedesignCompat" /* 6073 */;
+import FormRowDefault from "FormRow" /* 6633 */;
+import FormDividerDefault from "FormDivider" /* 8899 */;
+import FormTitleDefault from "FormTitle" /* 8903 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -279,7 +279,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const TableRowGroup = tmp(5997).TableRowGroup;
+    const TableRowGroup = tmp(6074).TableRowGroup;
     if (hasIcons == null) {
       class X {
         constructor(arg0) {
@@ -579,7 +579,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { style: { marginBottom: 24 }, children: items };
     const obj3 = { style: { paddingHorizontal: 12 }, children: metroRequire(TableRowGroup, obj4) };
     obj4 = { title, hasIcons, hasTrailingText: flag, children: found };
-    TableRowGroup = tmp3(5997).TableRowGroup;
+    TableRowGroup = tmp3(6074).TableRowGroup;
     const tmp18 = metroImportDefault;
     if (hasIcons == null) {
       hasIcons = tmp17;

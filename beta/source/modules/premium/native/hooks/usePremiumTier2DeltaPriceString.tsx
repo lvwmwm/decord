@@ -1,18 +1,18 @@
-// Module ID: 13093
-// Function ID: 13094
+// Module ID: 13357
+// Function ID: 13358
 // Name: usePremiumTier2DeltaPriceString
-// Dependencies: [19, 6845, 6659, 1380, 6830, 6662, 1370, 6656, 558, 576, 4506, 504, 2]
+// Dependencies: [19, 6930, 6739, 1379, 6915, 6742, 1369, 6736, 558, 576, 4543, 504, 2]
 
-// Module 13093 (usePremiumTier2DeltaPriceString)
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import BillingUtils from "BillingUtils" /* 4506 */;
-import PriceUtils from "PriceUtils" /* 6656 */;
-import ProductIds from "ProductIds" /* 6662 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 6830 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 6845 */;
+// Module 13357 (usePremiumTier2DeltaPriceString)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import BillingUtils from "BillingUtils" /* 4543 */;
+import PriceUtils from "PriceUtils" /* 6736 */;
+import ProductIds from "ProductIds" /* 6742 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 6915 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 6930 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6659 */;
+import IAPStore from "IAPStore" /* 6739 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ function computeAcomDeltaResult(productId, checkoutContext, cResult) {
         if (addOnPrice.majorUnits > 0) {
           let tmp = null;
           if (null != cResult) {
-            tmp = tmp10(6662).AppStorePremiumProductIdsToPremiumBundledItems[cResult];
+            tmp = tmp10(6742).AppStorePremiumProductIdsToPremiumBundledItems[cResult];
           }
           if (null != cResult) {
             if (null != tmp) {
@@ -343,7 +343,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumTier, subscri
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11);
   if (cResult[6] !== orderRequired) {
-    const tmpResult2 = tmp(1370);
+    const tmpResult2 = tmp(1369);
     const tmp14 = tmpResult2.isIOS() && orderRequired;
     cResult[6] = orderRequired;
     cResult[7] = tmp14;
@@ -381,7 +381,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumTier, subscri
         const tmp18 = getViewerProductId(subscription);
         let tmp20 = null;
         if (null != tmp18) {
-          tmp20 = tmp(6662).AppStorePremiumProductIdsToPremiumBundledItems[tmp18];
+          tmp20 = tmp(6742).AppStorePremiumProductIdsToPremiumBundledItems[tmp18];
         }
         flag = null != tmp20 && tmp20.basePlanId === premiumTier.basePlanId && tmp20.numPremiumGuild < premiumTier.numPremiumGuild;
       }
@@ -442,7 +442,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumTier, subscri
         const tmp2Result = tmp2(subscription);
         let tmp11 = null;
         if (null != tmp2Result) {
-          tmp11 = tmp4(6662).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
+          tmp11 = tmp4(6742).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
         }
         flag = null != tmp11 && tmp11.basePlanId === premiumTier.basePlanId && tmp11.numPremiumGuild < premiumTier.numPremiumGuild;
       }

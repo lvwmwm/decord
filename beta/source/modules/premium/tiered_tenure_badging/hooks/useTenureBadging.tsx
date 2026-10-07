@@ -1,19 +1,19 @@
-// Module ID: 10635
-// Function ID: 10636
+// Module ID: 10875
+// Function ID: 10876
 // Name: useTenureBadging
-// Dependencies: [7039, 1378, 4497, 1380, 558, 576, 504, 10636, 1976, 7052, 10637, 2]
+// Dependencies: [7111, 1377, 4534, 1379, 558, 576, 504, 10876, 1976, 7119, 10877, 2]
 
-// Module 10635 (useTenureBadging)
+// Module 10875 (useTenureBadging)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7052 */;
-import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 10636 */;
-import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 10637 */;
-import UserProfileStore from "UserProfileStore" /* 7039 */;
-import UserStore from "UserStore" /* 1378 */;
-import SubscriptionStore from "SubscriptionStore" /* 4497 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7119 */;
+import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 10876 */;
+import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 10877 */;
+import UserProfileStore from "UserProfileStore" /* 7111 */;
+import UserStore from "UserStore" /* 1377 */;
+import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -316,7 +316,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = PremiumTypeUtils;
   if (obj3.isPremiumExactly(stateFromStores, hasOwnProperty.TIER_2)) {
     let premiumSince;
-    const getEarnedTenureBadge = tmp(7052).getEarnedTenureBadge;
+    const getEarnedTenureBadge = tmp(7119).getEarnedTenureBadge;
     TieredTenureBadgeUtils;
     if (stateFromStores1 != null) {
       premiumSince = stateFromStores1.premiumSince;

@@ -1,11 +1,11 @@
 // Module ID: 1891
 // Function ID: 1892
 // Name: i18n
-// Dependencies: [1892, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 580, 1933, 1934, 1349, 2]
+// Dependencies: [1892, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 580, 1933, 1934, 1348, 2]
 
 // Module 1891 (i18n)
 import _mod580 from "module_580" /* 580 */;
-import react_native from "react-native" /* 1349 */;
+import react_native from "react-native" /* 1348 */;
 import _modDef1892 from "module_1892" /* 1892 */;
 import _default2 from "_default2" /* 1929 */;
 import _mod1933 from "module_1933" /* 1933 */;
@@ -172,15 +172,15 @@ class I18N extends EventEmitter {
     let getLanguages;
     let getMessages;
     let tmp12;
-    const f84196 = (resolveLanguageLoaded) => {
+    const f85259 = (resolveLanguageLoaded) => {
       obj.resolveLanguageLoaded = resolveLanguageLoaded;
     };
     initialLocale = initialLocale.initialLocale;
     ({ getMessages, getLanguages } = initialLocale);
     const obj = new I18N(tmp5, tmp4, tmp3, tmp2, new.target, this, tmp);
     _instance_members_initializer_I18N_();
-    obj.initialLanguageLoad = new Promise(f84196);
-    new Promise(f84196);
+    obj.initialLanguageLoad = new Promise(f85259);
+    new Promise(f85259);
     if (Intl.__addLocaleData) {
       const _Intl = Intl;
       Intl.__addLocaleData(_mod1933);

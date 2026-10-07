@@ -1,24 +1,24 @@
-// Module ID: 11102
-// Function ID: 11103
+// Module ID: 11360
+// Function ID: 11361
 // Name: EmojiRow
-// Dependencies: [19, 17, 6573, 21, 4837, 4801, 4802, 7187, 4484, 6880, 9652, 558, 576, 4535, 588, 11103, 11104, 9629, 11105, 6604, 2]
+// Dependencies: [19, 17, 6646, 21, 4890, 4854, 4855, 7260, 4521, 6965, 9878, 558, 576, 4580, 587, 11361, 11362, 9855, 11363, 6681, 2]
 
-// Module 11102 (EmojiRow)
+// Module 11360 (EmojiRow)
 import react_native from "react-native" /* 17 */;
-import ReactionUtils from "ReactionUtils" /* 4484 */;
-import useToken from "useToken" /* 4535 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6573 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 7187 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9629 */;
-import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9652 */;
-import useEmojisForReactionRow from "useEmojisForReactionRow" /* 11103 */;
-import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 11104 */;
-import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 11105 */;
+import ReactionUtils from "ReactionUtils" /* 4521 */;
+import useToken from "useToken" /* 4580 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 7260 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9855 */;
+import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9878 */;
+import useEmojisForReactionRow from "useEmojisForReactionRow" /* 11361 */;
+import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 11362 */;
+import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 11363 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let dependencyMap, message;
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const MessageActionCreatorsDefault = tmp3(6880);
+const MessageActionCreatorsDefault = tmp3(6965);
 const View = react_native.View;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -205,15 +205,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let items1;
   ({ message: require, channel } = arg0);
   let obj = useToken;
-  dependencyMap = obj.useToken(channel(588).modules.mobile.EMOJI_ROW_EMOJI_SIZE);
+  dependencyMap = obj.useToken(channel(587).modules.mobile.EMOJI_ROW_EMOJI_SIZE);
   let obj2 = useToken;
-  const emojiFontSize = obj2.useToken(channel(588).modules.mobile.EMOJI_ROW_EMOJI_FONT_SIZE);
+  const emojiFontSize = obj2.useToken(channel(587).modules.mobile.EMOJI_ROW_EMOJI_FONT_SIZE);
   let obj3 = useToken;
-  const emojiLineHeight = obj3.useToken(channel(588).modules.mobile.EMOJI_ROW_EMOJI_LINE_HEIGHT);
+  const emojiLineHeight = obj3.useToken(channel(587).modules.mobile.EMOJI_ROW_EMOJI_LINE_HEIGHT);
   let obj4 = useToken;
-  const token = obj4.useToken(channel(588).modules.mobile.EMOJI_ROW_EMOJI_CONTAINER_SIZE);
+  const token = obj4.useToken(channel(587).modules.mobile.EMOJI_ROW_EMOJI_CONTAINER_SIZE);
   const obj5 = useToken;
-  const token1 = obj5.useToken(channel(588).modules.mobile.EMOJI_ROW_EMOJI_MIN_SPACING);
+  const token1 = obj5.useToken(channel(587).modules.mobile.EMOJI_ROW_EMOJI_MIN_SPACING);
   let obj6 = useEmojisForReactionRow;
   const emojisForReactionRow = obj6.useEmojisForReactionRow(channel, emojiLineHeight, token + token1);
   let tmp3 = closure_7();
@@ -265,7 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   };
   items[1] = token(EmojiReactionRowButton2.EmojiPickerRowButton, obj9);
   items1 = [closure_6(emojiFontSize, obj8), ];
-  const obj10 = { location: channel(6604).MESSAGE_LONG_PRESS_MENU };
+  const obj10 = { location: channel(6681).MESSAGE_LONG_PRESS_MENU };
   const DoubleTapEmojiEditNudge = DoubleTapEmojiEditNudge2.DoubleTapEmojiEditNudge;
   items1[1] = token(DoubleTapEmojiEditNudge, obj10);
   return closure_6(emojiFontSize, obj7);

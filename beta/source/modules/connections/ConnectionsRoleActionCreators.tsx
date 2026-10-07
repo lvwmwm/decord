@@ -1,12 +1,12 @@
-// Module ID: 10936
-// Function ID: 10937
+// Module ID: 11190
+// Function ID: 11191
 // Name: ConnectionsRoleActionCreators
-// Dependencies: [5, 1086, 1283, 585, 6551, 2]
+// Dependencies: [5, 1085, 1282, 584, 6624, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 10936 (ConnectionsRoleActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
+// Module 11190 (ConnectionsRoleActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

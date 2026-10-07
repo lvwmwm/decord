@@ -1,14 +1,14 @@
-// Module ID: 5388
-// Function ID: 5389
+// Module ID: 5857
+// Function ID: 5858
 // Name: ThreadIcon
-// Dependencies: [109, 19, 21, 558, 576, 588, 5338, 4534, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 5814, 4579, 2]
 
-// Module 5388 (ThreadIcon)
+// Module 5857 (ThreadIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import BaseIconImage2 from "BaseIconImage" /* 4534 */;
-import AssetRegistry from "AssetRegistry" /* 5338 */;
+import nativeDefault from "native" /* 587 */;
+import BaseIconImage2 from "BaseIconImage" /* 4579 */;
+import AssetRegistry from "AssetRegistry" /* 5814 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4534).BaseIconImage;
+  const BaseIconImage = tmp(4579).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

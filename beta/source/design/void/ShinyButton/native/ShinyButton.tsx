@@ -1,18 +1,18 @@
-// Module ID: 13629
-// Function ID: 13630
+// Module ID: 13900
+// Function ID: 13901
 // Name: ShinyButton/ShinyButton
-// Dependencies: [32, 109, 19, 17, 4826, 21, 4837, 558, 576, 504, 4570, 4838, 1192, 2]
+// Dependencies: [32, 109, 19, 17, 4879, 21, 4890, 558, 576, 504, 4612, 4891, 1191, 2]
 
-// Module 13629 (ShinyButton/ShinyButton)
+// Module 13900 (ShinyButton/ShinyButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4826 */;
-import createStyles from "createStyles" /* 4837 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4879 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -139,8 +139,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((shineInnerStyle) => 
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
     class B {
       constructor() {
-        closure_0 = closure_7.addEventListener("change", () => { /* body not rendered: F141870 */ });
-        return () => { /* body not rendered: F141871 */ };
+        closure_0 = closure_7.addEventListener("change", () => { /* body not rendered: F143521 */ });
+        return () => { /* body not rendered: F143522 */ };
       }
     }
     let items2 = [];
@@ -155,14 +155,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((shineInnerStyle) => 
   } else {
     class B {
       constructor() {
-        closure_0 = closure_7.addEventListener("change", () => { /* body not rendered: F141870 */ });
-        return () => { /* body not rendered: F141871 */ };
+        closure_0 = closure_7.addEventListener("change", () => { /* body not rendered: F143521 */ });
+        return () => { /* body not rendered: F143522 */ };
       }
     }
     tmp28 = cResult[12];
   }
   const effect = obj2.useEffect(tmp27, tmp28);
-  const tmpResult2 = tmp(4570);
+  const tmpResult2 = tmp(4612);
   class H {
     constructor() {
       if (null == closure_3) {
@@ -201,7 +201,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((shineInnerStyle) => 
       return obj1;
     }
   }
-  let obj3 = { width, OFFSCREEN_OFFSET, withRepeat: tmp(4570).withRepeat, withSequence: tmp(4570).withSequence, withTiming: tmp(4838).withTiming, withDelay: tmp(4570).withDelay, INITIAL_ANIMATION_DELAY, ANIMATION_DURATION: v2000 };
+  let obj3 = { width, OFFSCREEN_OFFSET, withRepeat: tmp(4612).withRepeat, withSequence: tmp(4612).withSequence, withTiming: tmp(4891).withTiming, withDelay: tmp(4612).withDelay, INITIAL_ANIMATION_DELAY, ANIMATION_DURATION: v2000 };
   H.__closure = obj3;
   H.__workletHash = 3002595774498;
   H.__initData = __initData;

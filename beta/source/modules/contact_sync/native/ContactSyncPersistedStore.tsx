@@ -1,20 +1,20 @@
-// Module ID: 12069
-// Function ID: 12070
+// Module ID: 12328
+// Function ID: 12329
 // Name: ContactSyncPersistedStore
-// Dependencies: [510, 1260, 585, 570, 2]
+// Dependencies: [510, 1259, 584, 570, 2]
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate, setStoredContacts
 
-// Module 12069 (ContactSyncPersistedStore)
+// Module 12328 (ContactSyncPersistedStore)
 import Storage4 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import react_native from "react-native" /* 1260 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import react_native from "react-native" /* 1259 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f110221 = () => {
+const f111404 = () => {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === closure_0 };
   return obj.dispatch(obj2);
@@ -40,7 +40,7 @@ Storage.asyncGet("V2_DCD_CONTACTS_STORAGE_KEY", async (arg0) => {
     });
   });
   let obj2 = DispatcherDefault;
-  obj2.wait(f110221);
+  obj2.wait(f111404);
 });
 const useContactSyncStore = module_570.create(() => ({ loadedPolicyNotice: false, storedContacts: "", upsellCTADismissed: false, policyUpdateNoticeDismissed: false, dmListCTADismissed: false }));
 let Storage2 = Storage4.Storage;
@@ -57,7 +57,7 @@ Storage2.asyncGet("ContactSyncDMListCTADismissed", async (arg0) => {
   if (Date.now() - timestamp > 5184000000) {
     _require = true;
   }
-  const tmpResult = tmp(1260);
+  const tmpResult = tmp(1259);
   tmpResult.batchUpdates(() => {
     const obj = { dmListCTADismissed };
     return obj.setState(obj);
@@ -90,7 +90,7 @@ export const setStoredContacts = function setStoredContacts(arg0) {
     });
   });
   const obj2 = DispatcherDefault;
-  obj2.wait(f110221);
+  obj2.wait(f111404);
 };
 export const deleteStoredContacts = function deleteStoredContacts() {
   let state;

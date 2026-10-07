@@ -1,11 +1,11 @@
-// Module ID: 13257
-// Function ID: 13258
+// Module ID: 13523
+// Function ID: 13524
 // Name: DataHarvestStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 13257 (DataHarvestStore)
+// Module 13523 (DataHarvestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let c0 = false;

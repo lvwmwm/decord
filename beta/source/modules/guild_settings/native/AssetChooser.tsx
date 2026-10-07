@@ -1,21 +1,21 @@
-// Module ID: 17303
-// Function ID: 17304
+// Module ID: 17670
+// Function ID: 17671
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1086, 21, 4837, 588, 4544, 5451, 5436, 1127, 17304, 17305, 1189, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 4890, 587, 4589, 7274, 5909, 1126, 17671, 17672, 1188, 2]
 
-// Module 17303 (AssetChooser)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 4544 */;
-import Pressables from "Pressables" /* 5436 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17304 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17305 */;
+// Module 17670 (AssetChooser)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 4589 */;
+import Pressables from "Pressables" /* 5909 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17671 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17672 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
@@ -175,8 +175,8 @@ class AssetChooser extends PureComponent {
       if (!disabled) {
         const obj5 = { accessibilityRole: "button", onPress: this.handleRemoveAsset, children: React4(LegacyText, obj6) };
         obj6 = { style: tmp.remove, children: intl2.string(intl3.t.N86XcP) };
-        LegacyText = tmp6(1189).LegacyText;
-        intl2 = tmp6(1127).intl;
+        LegacyText = tmp6(1188).LegacyText;
+        intl2 = tmp6(1126).intl;
         tmp5Result2 = tmp5(metroImportDefault, obj5);
       }
     }

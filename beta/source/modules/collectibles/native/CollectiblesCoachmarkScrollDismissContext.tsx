@@ -1,13 +1,13 @@
-// Module ID: 15420
-// Function ID: 15421
+// Module ID: 15716
+// Function ID: 15717
 // Name: CollectiblesCoachmarkScrollDismissContext
-// Dependencies: [19, 1097, 21, 558, 576, 2]
+// Dependencies: [19, 1096, 21, 558, 576, 2]
 // Exports: useCollectiblesCoachmarkScrollDismissContext
 
-// Module 15420 (CollectiblesCoachmarkScrollDismissContext)
+// Module 15716 (CollectiblesCoachmarkScrollDismissContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1097 */;
+import Constants from "Constants" /* 1096 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let obj = {
   registerDismiss() {
     return NOOP;
   },
-  handleDismissCoachmarkOnScroll: "r"
+  handleDismissCoachmarkOnScroll: "Array"
 };
 const redux = react.createContext(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;

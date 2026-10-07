@@ -1,20 +1,20 @@
-// Module ID: 9058
-// Function ID: 9059
+// Module ID: 9280
+// Function ID: 9281
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 2073, 6950, 2057, 21, 4837, 588, 1127, 558, 576, 6584, 6604, 504, 9048, 9059, 9049, 8960, 1619, 9060, 9039, 9061, 6038, 9063, 9069, 6572, 2]
+// Dependencies: [32, 19, 17, 2074, 7037, 2057, 21, 4890, 587, 1126, 558, 576, 6657, 6681, 504, 9270, 9281, 9271, 9182, 1618, 9282, 9261, 9283, 6112, 9285, 9291, 6645, 2]
 
-// Module 9058 (GuildScheduledEventDetailsActionSheet)
+// Module 9280 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9049 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9271 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -336,7 +336,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f99024 = () => {
+  const f100115 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -421,9 +421,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f99024), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f100115), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[18])(f99024), 2);
+  tmp5(tmp2(tmp3[18])(f100115), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

@@ -1,14 +1,14 @@
-// Module ID: 11637
-// Function ID: 11638
+// Module ID: 11892
+// Function ID: 11893
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 558, 576, 5267, 1370, 1127, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5770, 1369, 1126, 2]
 
-// Module 11637 (ChatInputAccessibilityDivider)
+// Module 11892 (ChatInputAccessibilityDivider)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
+import intl2 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5770 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,7 +33,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp8;
       const _Symbol = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const stringResult = intl.string(intl2.t["uKZtC/"]);
         cResult[0] = stringResult;
         first = stringResult;
@@ -60,7 +60,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = null;
     const tmpResult = PlatformUtils;
     if (!tmpResult.isAndroid()) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const items = [React2.absoluteFill, { height: 1 }];
       tmp3 = <_false nativeID={c5} accessible accessibilityLabel={intl.string(intl2.t["uKZtC/"])} accessibilityRole="header" style={items} />;
     }

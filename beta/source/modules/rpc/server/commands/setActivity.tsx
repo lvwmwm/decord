@@ -1,16 +1,16 @@
-// Module ID: 14056
-// Function ID: 14057
+// Module ID: 14333
+// Function ID: 14334
 // Name: setActivity
-// Dependencies: [5064, 4741, 1086, 7791, 8768, 10391, 14025, 8765, 585, 8816, 8778, 12, 1103, 7599, 1253, 2]
+// Dependencies: [5118, 5316, 1085, 8015, 9029, 10623, 14302, 9026, 584, 11123, 8994, 12, 1102, 7821, 1252, 2]
 
-// Module 14056 (setActivity)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8768 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10391 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
-import Constants_mod from "Constants" /* 4741 */;
-import Constants_mod2 from "Constants" /* 1086 */;
+// Module 14333 (setActivity)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10623 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import Constants_mod from "Constants" /* 5316 */;
+import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let RPC_EMBEDDED_APP_SCOPE;
@@ -236,17 +236,17 @@ let obj2 = {
         if (party2 != null) {
           delete party2["privacy"];
         }
-        let canLaunchFrameResult = null != application;
+        let result = null != application;
         const computeActivityFlags = tmp(tmp3[9]).computeActivityFlags;
         const tmpResult = tmp(tmp3[9]);
-        if (canLaunchFrameResult) {
+        if (result) {
           const tmpResult2 = tmp(tmp3[10]);
-          canLaunchFrameResult = tmpResult2.canLaunchFrame(application);
+          result = tmpResult2.canLaunchContextlessFrame(application);
         }
-        if (canLaunchFrameResult) {
-          canLaunchFrameResult = tmp22;
+        if (result) {
+          result = tmp22;
         }
-        const activityFlags = computeActivityFlags(activity, flag, tmp22, canLaunchFrameResult, privacy);
+        const activityFlags = computeActivityFlags(activity, flag, tmp22, result, privacy);
         if (activityFlags > 0) {
           activity.flags = activityFlags;
         }
@@ -404,7 +404,7 @@ let obj2 = {
               obj4.party_max = tmp17;
               obj4.party_id = party.id;
             }
-            const tmp5Result = tmp5(1253);
+            const tmp5Result = tmp5(1252);
             tmp5Result.track(constants.ACTIVITY_UPDATED, obj4);
             return activity;
           }
@@ -431,6 +431,6 @@ const ANY = RPC_SCOPE_CONFIG.ANY;
 let items = [OAuth2Scopes.OAuth2Scopes.RPC, OAuth2Scopes.OAuth2Scopes.RPC_ACTIVITIES_WRITE, RPC_LOCAL_SCOPE, RPC_EMBEDDED_APP_SCOPE];
 obj3[ANY] = items;
 obj[SET_ACTIVITY] = obj2;
-const result = size.fileFinishedImporting("modules/rpc/server/commands/setActivity.tsx");
+let result = size.fileFinishedImporting("modules/rpc/server/commands/setActivity.tsx");
 
 export default obj;

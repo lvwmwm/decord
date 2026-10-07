@@ -1,12 +1,12 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17588
+// Function ID: 17589
 // Name: RedesignSkipAvatarUploadAlertModal
-// Dependencies: [19, 21, 558, 576, 1127, 5210, 5210, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5713, 5713, 2]
 
-// Module 17221 (RedesignSkipAvatarUploadAlertModal)
+// Module 17588 (RedesignSkipAvatarUploadAlertModal)
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1127 */;
-import AlertModal2 from "AlertModal" /* 5210 */;
+import intl5 from "intl" /* 1126 */;
+import AlertModal2 from "AlertModal" /* 5713 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -31,9 +31,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   const cResult = obj.c(8);
   onConfirm = onConfirm.onConfirm;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl5.t.DnKHuV);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl5.t["1EPySE"]);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -43,7 +43,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(intl5.t.nhJ8OC);
     cResult[2] = stringResult2;
     tmp8 = stringResult2;
@@ -61,8 +61,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "secondary", text: intl4.string(intl5.t["7eZ3ji"]) };
-    const AlertActionButton = tmp(5210).AlertActionButton;
-    intl4 = tmp(1127).intl;
+    const AlertActionButton = tmp(5713).AlertActionButton;
+    intl4 = tmp(1126).intl;
     const tmp15 = React2(AlertActionButton, obj3, "add-profile-picture");
     cResult[5] = tmp15;
     tmp13 = tmp15;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[6] !== tmp10) {
     const obj4 = { title: tmp4, content: tmp5, actions: _false(AlertModal2.AlertActions, obj5) };
-    const AlertModal = tmp(5210).AlertModal;
+    const AlertModal = tmp(5713).AlertModal;
     obj5 = { children: items };
     items = [tmp10, tmp13];
     const tmp19 = React2(AlertModal, obj4);

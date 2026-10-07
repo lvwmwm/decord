@@ -1,15 +1,15 @@
-// Module ID: 13615
-// Function ID: 13616
+// Module ID: 13885
+// Function ID: 13886
 // Name: queryAudioEffects
-// Dependencies: [5, 1086, 4, 1371, 13559, 4453, 585, 1253, 2]
+// Dependencies: [5, 1085, 4, 1370, 13829, 4490, 584, 1252, 2]
 // Exports: default
 
-// Module 13615 (queryAudioEffects)
+// Module 13885 (queryAudioEffects)
 import logger_Logger from "logger/Logger" /* 4 */;
-import Constants from "Constants" /* 1086 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
-import DiscordNativeDefault from "DiscordNative" /* 4453 */;
-import _modDef13559 from "module_13559" /* 13559 */;
+import Constants from "Constants" /* 1085 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
+import DiscordNativeDefault from "DiscordNative" /* 4490 */;
+import _modDef13829 from "module_13829" /* 13829 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _queryAudioEffects() {
         const error1 = new Error("Audio effects querying not supported on non-Windows platforms");
         return reject(error1);
       }
-      const obj5 = _modDef13559;
+      const obj5 = _modDef13829;
       if (!obj5.satisfies(DiscordNativeDefault.os.release, ">=10.0.22000")) {
         const _Error2 = Error;
         const self3 = this;

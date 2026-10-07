@@ -1,14 +1,14 @@
-// Module ID: 7728
-// Function ID: 7729
+// Module ID: 7950
+// Function ID: 7951
 // Name: PauseIcon
-// Dependencies: [109, 19, 21, 558, 576, 588, 7729, 4534, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7951, 4579, 2]
 
-// Module 7728 (PauseIcon)
+// Module 7950 (PauseIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import BaseIconImage2 from "BaseIconImage" /* 4534 */;
-import AssetRegistry from "AssetRegistry" /* 7729 */;
+import nativeDefault from "native" /* 587 */;
+import BaseIconImage2 from "BaseIconImage" /* 4579 */;
+import AssetRegistry from "AssetRegistry" /* 7951 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4534).BaseIconImage;
+  const BaseIconImage = tmp(4579).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

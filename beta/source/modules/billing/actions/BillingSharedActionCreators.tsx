@@ -1,19 +1,19 @@
-// Module ID: 5176
-// Function ID: 5177
+// Module ID: 5405
+// Function ID: 5406
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 4495, 5177, 1086, 1283, 4513, 585, 1127, 1253, 4737, 4506, 5178, 2]
+// Dependencies: [5, 4532, 5406, 1085, 1282, 4550, 584, 1126, 1252, 5312, 4543, 5407, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 5176 (BillingSharedActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import intl2 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4737 */;
-import Constants2 from "Constants" /* 5177 */;
+// Module 5405 (BillingSharedActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import intl2 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5312 */;
+import Constants2 from "Constants" /* 5406 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4495 */;
-import Constants from "Constants" /* 1086 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 4532 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_7;
@@ -189,7 +189,7 @@ obj = function _createPaymentSource() {
               billingError = undefined;
               c9 = 1;
               c10 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c9) {
             if (arg0 === 1) {
@@ -359,8 +359,8 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
   const _Error21 = new _Error2(message);
   if (flag2) {
     const obj12 = { extra: obj13 };
-    const captureBillingException = tmp13(4506).captureBillingException;
-    tmp13(4506);
+    const captureBillingException = tmp13(4543).captureBillingException;
+    tmp13(4543);
     const merged1 = Object.assign(obj);
     obj13 = {};
     const merged2 = Object.assign(tmp10);

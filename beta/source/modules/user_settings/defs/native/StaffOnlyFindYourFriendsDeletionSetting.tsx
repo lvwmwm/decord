@@ -1,25 +1,25 @@
-// Module ID: 14365
-// Function ID: 14366
+// Module ID: 14649
+// Function ID: 14650
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 7421, 21, 1255, 1260, 558, 576, 4455, 12070, 1337, 4531, 10874, 14366, 2]
+// Dependencies: [5, 17, 7634, 21, 1254, 1259, 558, 576, 4492, 12329, 1336, 4568, 11129, 14650, 2]
 
-// Module 14365 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 14649 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14366 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1255 from "module_1255" /* 1255 */;
+import module_1254 from "module_1254" /* 1254 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
 let tmp;
-const _slicedToArray = tmp(4455);
+const _slicedToArray = tmp(4492);
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -126,7 +126,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
 const ActivityIndicator = react_native.ActivityIndicator;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-let closure_6 = module_1255.createWithEqualityFn(() => ({ isLoading: false }));
+let closure_6 = module_1254.createWithEqualityFn(() => ({ isLoading: false }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let first;

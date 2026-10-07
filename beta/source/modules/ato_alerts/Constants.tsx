@@ -1,11 +1,11 @@
-// Module ID: 9570
-// Function ID: 9571
+// Module ID: 9797
+// Function ID: 9798
 // Name: Constants
-// Dependencies: [1127, 2]
+// Dependencies: [1126, 2]
 // Exports: getLikelyAtoMoreTips
 
-// Module 9570 (Constants)
-import intl7 from "intl" /* 1127 */;
+// Module 9797 (Constants)
+import intl7 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ato_alerts/Constants.tsx");

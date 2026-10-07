@@ -1,16 +1,16 @@
-// Module ID: 8716
-// Function ID: 8717
+// Module ID: 8941
+// Function ID: 8942
 // Name: ApplicationInstallUtils
-// Dependencies: [8588, 5306, 8502, 2]
+// Dependencies: [8795, 5788, 8708, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 8716 (ApplicationInstallUtils)
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8502 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
+// Module 8941 (ApplicationInstallUtils)
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8708 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8795 */;
 import size from "module_2" /* 2 */;
 
-const f97764 = (oauth2_install_params) => {
+const f98864 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -36,7 +36,7 @@ export const canInstallApplication = function canInstallApplication(installAppPr
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f97764);
+      someResult = values.some(f98864);
     }
     tmp = someResult;
   }
@@ -50,7 +50,7 @@ export const isAppUserInstallable = function isAppUserInstallable(integrationTyp
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f97764);
+      someResult = values.some(f98864);
     }
     tmp = someResult;
   }

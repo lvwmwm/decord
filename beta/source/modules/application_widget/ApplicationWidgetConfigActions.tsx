@@ -1,18 +1,18 @@
-// Module ID: 8488
-// Function ID: 8489
+// Module ID: 8695
+// Function ID: 8696
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 8487, 1086, 8489, 569, 1103, 585, 1283, 1243, 2]
+// Dependencies: [5, 8694, 1085, 8696, 569, 1102, 584, 1282, 1242, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 8488 (ApplicationWidgetConfigActions)
-import Constants from "Constants" /* 1086 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 8487 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 8489 */;
+// Module 8695 (ApplicationWidgetConfigActions)
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 8694 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 8696 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Backoff from "Backoff" /* 569 */;
-import Dispatcher from "Dispatcher" /* 585 */;
+import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationWidgetConfigStore = ApplicationWidgetConfigStore2;

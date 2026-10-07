@@ -1,15 +1,15 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11297
+// Function ID: 11298
 // Name: LongPressMessageChatItemPreview
-// Dependencies: [21, 4837, 588, 7378, 558, 576, 8109, 2]
+// Dependencies: [21, 4890, 587, 7591, 558, 576, 8303, 2]
 
-// Module 11039 (LongPressMessageChatItemPreview)
+// Module 11297 (LongPressMessageChatItemPreview)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import RowGeneratorDefault from "RowGenerator" /* 7378 */;
-import ChatItemDefault from "ChatItem" /* 8109 */;
-import createStyles from "createStyles" /* 4837 */;
+import nativeDefault from "native" /* 587 */;
+import RowGeneratorDefault from "RowGenerator" /* 7591 */;
+import ChatItemDefault from "ChatItem" /* 8303 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

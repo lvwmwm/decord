@@ -1,21 +1,20 @@
-// Module ID: 15513
-// Function ID: 15514
+// Module ID: 15817
+// Function ID: 15818
 // Name: ActivityPrivacyDefaultSharingSetting
-// Dependencies: [19, 7421, 558, 576, 1198, 1127, 2027, 15514, 14375, 4801, 15515, 1987, 10874, 2]
+// Dependencies: [19, 7634, 558, 576, 1197, 1126, 2028, 14659, 4854, 15818, 1987, 11129, 2]
 
-// Module 15513 (ActivityPrivacyDefaultSharingSetting)
+// Module 15817 (ActivityPrivacyDefaultSharingSetting)
 import react2 from "react" /* 576 */;
-import intl6 from "intl" /* 1127 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
+import intl6 from "intl" /* 1126 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14375 */;
-import ActivityPrivacyMatchingExperiment from "ActivityPrivacyMatchingExperiment" /* 15514 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14659 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -33,8 +32,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF, label: intl.string(intl6.t.FzgQna), subLabel: intl2.string(intl6.t.SQxoyc) };
-    intl = tmp(1127).intl;
-    intl2 = tmp(1127).intl;
+    intl = tmp(1126).intl;
+    intl2 = tmp(1126).intl;
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -42,8 +41,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS, label: intl3.string(intl6.t["1hvuGH"]), subLabel: intl4.string(intl6.t.odUCPE) };
-    intl3 = tmp(1127).intl;
-    intl4 = tmp(1127).intl;
+    intl3 = tmp(1126).intl;
+    intl4 = tmp(1126).intl;
     cResult[1] = obj3;
     tmp5 = obj3;
   } else {
@@ -52,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first, tmp5, ];
     const obj4 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON, label: intl5.string(intl6.t.fQc5la) };
-    intl5 = tmp(1127).intl;
+    intl5 = tmp(1126).intl;
     items[2] = obj4;
     cResult[2] = items;
     tmp6 = items;
@@ -87,10 +86,6 @@ let obj = {
     return intl.string(intl6.t.vpgck1);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  usePredicate() {
-    const obj = ActivityPrivacyMatchingExperiment;
-    return obj.useIsInActivityPrivacyCopyExperiment("ActivityPrivacyDefaultSharingSetting");
-  },
   useOptions: tmp2,
   useValue: () => {
     const DefaultGuildsActivityRestrictedV2 = UserSettings.DefaultGuildsActivityRestrictedV2;
@@ -102,19 +97,16 @@ let obj = {
     const setting = DefaultGuildsActivityRestrictedV2.getSetting();
     const DefaultGuildsActivityRestrictedV22 = UserSettings.DefaultGuildsActivityRestrictedV2;
     DefaultGuildsActivityRestrictedV22.updateSetting(NumberResult);
-    const obj = ActivityPrivacyMatchingExperiment;
+    const obj = ActivityPrivacyUpsellUtils;
+    const affectedGuilds = obj.computeAffectedGuilds(setting, NumberResult);
     const tmp3 = dependencyMap;
-    if (obj.getIsInActivityPrivacyUpsellExperiment("ActivityPrivacyDefaultSharingSetting")) {
+    if (null != affectedGuilds) {
       const tmp2Result = ActivityPrivacyUpsellUtils;
-      const affectedGuilds = tmp2Result.computeAffectedGuilds(setting, NumberResult);
-      if (null != affectedGuilds) {
-        const tmp2Result2 = ActivityPrivacyUpsellUtils;
-        const activityRestrictionSettingName = tmp2Result2.getActivityRestrictionSettingName(NumberResult);
-        const obj2 = { direction: null, affectedGuildIds: null, settingName: activityRestrictionSettingName };
-        ({ direction: obj5.direction, affectedGuildIds: obj5.affectedGuildIds } = affectedGuilds);
-        const obj4 = ActionSheetActionCreatorsDefault;
-        obj4.openLazy(asyncRequire(15515, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
-      }
+      const activityRestrictionSettingName = tmp2Result.getActivityRestrictionSettingName(NumberResult);
+      const obj2 = { direction: null, affectedGuildIds: null, settingName: activityRestrictionSettingName };
+      ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds } = affectedGuilds);
+      const obj3 = ActionSheetActionCreatorsDefault;
+      obj3.openLazy(asyncRequire(15818, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
     }
   }
 };

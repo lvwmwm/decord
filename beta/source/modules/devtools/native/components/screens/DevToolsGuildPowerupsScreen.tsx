@@ -1,29 +1,29 @@
-// Module ID: 15291
-// Function ID: 15292
+// Module ID: 15581
+// Function ID: 15582
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1232, 11968, 2073, 4657, 15292, 1086, 21, 4837, 588, 1283, 4424, 4734, 11892, 558, 576, 15160, 6621, 11898, 2032, 2035, 1619, 504, 4833, 5916, 5997, 2]
+// Dependencies: [5, 19, 17, 1231, 12221, 2074, 4699, 15582, 1085, 21, 4890, 587, 1282, 4461, 7668, 12147, 558, 576, 15446, 6698, 12153, 2033, 2036, 1618, 504, 4886, 5993, 6074, 2]
 
-// Module 15291 (DevToolsGuildPowerupsScreen)
+// Module 15581 (DevToolsGuildPowerupsScreen)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2032 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 11898 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15160 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 12153 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15446 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 11968 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 15292 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12221 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 15582 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,9 +32,8 @@ let c1, c2, c5, c6, dc, dependencyMap, importDefault;
 let closure_12;
 let closure_14;
 let closure_15;
-let closure_16;
+let closure_17;
 let closure_18;
-let closure_19;
 let hasOwnProperty;
 let map1;
 let metroRequire;
@@ -43,7 +42,7 @@ let obj3;
 let obj4;
 let tmp;
 let unpackModuleId;
-const TableSwitchRow2 = tmp(6621);
+const TableSwitchRow2 = tmp(6698);
 function setWarningBoosts() {
   return obj(...arguments);
 }
@@ -86,7 +85,7 @@ let obj = function _setWarningBoosts() {
             const patch = HTTP.patch;
             addResult = null;
             if (!closure_2) {
-              const obj4 = _modDef4424();
+              const obj4 = _modDef4461();
               addResult = obj4.add(1, "day");
             }
             c5 = 1;
@@ -175,18 +174,18 @@ obj = function _sendPowerupsSystemMessage() {
   return obj(...arguments);
 };
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
-({ GUILD_DCS: unpackModuleId, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: map1, VANITY_URL_POWERUP_EDUCATIONAL_DCS: closure_14, getGuildDCString: closure_15, getUserDCString: closure_16 } = DevToolsGuildPowerupsConstants);
+({ GUILD_DCS: unpackModuleId, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: map1, getGuildDCString: closure_14, getUserDCString: closure_15 } = DevToolsGuildPowerupsConstants);
 const Endpoints = Constants.Endpoints;
-({ jsx: closure_18, jsxs: closure_19 } = Fragment);
+({ jsx: closure_17, jsxs: closure_18 } = Fragment);
 let createStyles = createStyles_mod;
 obj = { container: obj2, scrollContainer: obj3, noGuildContainer: obj4 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
 obj4 = { flex: 1, justifyContent: "center", alignItems: "center", padding: nativeDefault.space.PX_32 };
-let closure_20 = createStyles(obj);
+let closure_19 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
   let handleToggleDismissState;
   let isDismissed;
   let tmp4;
@@ -204,7 +203,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
   }
   ({ isDismissed, handleToggleDismissState } = tmp4);
   if (cResult[2] !== dc) {
-    const tmp9 = authStore3(dc);
+    const tmp9 = closure_15(dc);
     cResult[2] = dc;
     cResult[3] = tmp9;
     tmp7 = tmp9;
@@ -220,7 +219,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
       return tmp10;
     }
   }
-  const tmp11 = authStore4(TableSwitchRow2.TableSwitchRow, { label: tmp7, value: isDismissed, onValueChange: handleToggleDismissState });
+  const tmp11 = closure_17(TableSwitchRow2.TableSwitchRow, { label: tmp7, value: isDismissed, onValueChange: handleToggleDismissState });
   cResult[4] = handleToggleDismissState;
   cResult[5] = isDismissed;
   cResult[6] = tmp7;
@@ -231,13 +230,13 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
   let isDismissed;
   dc = dc.dc;
   ({ isDismissed, handleToggleDismissState } = toggleDismissibleContentDismissStateDefault(dc));
-  obj = { label: authStore3(dc), value: isDismissed, onValueChange: handleToggleDismissState };
+  obj = { label: closure_15(dc), value: isDismissed, onValueChange: handleToggleDismissState };
   toggleDismissibleContentDismissStateDefault(dc);
   const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
-  return authStore4(TableSwitchRow, obj);
+  return closure_17(TableSwitchRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
   obj = dc(576);
   const cResult = obj.c(9);
   const tmp = dc;
@@ -251,7 +250,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
       tmp4 = cResult[2];
     }
     if (cResult[3] !== dc) {
-      const tmp7 = closure_15(dc);
+      const tmp7 = closure_14(dc);
       cResult[3] = dc;
       cResult[4] = tmp7;
       tmp5 = tmp7;
@@ -268,7 +267,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
       }
     }
     let obj2 = { label: tmp5, value: isDismissed, onValueChange: tmp4 };
-    const tmp10 = closure_18(tmp(6621).TableSwitchRow, obj2);
+    const tmp10 = closure_17(tmp(6698).TableSwitchRow, obj2);
     cResult[5] = tmp4;
     cResult[6] = isDismissed;
     cResult[7] = tmp5;
@@ -308,16 +307,16 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((dc) => {
       const result2 = obj2.unmarkContentAsDismissed(dc, guildId);
     }
   }, items);
-  obj = { label: closure_15(dc), value: isDismissed, onValueChange: callback };
-  const TableSwitchRow = dc(6621).TableSwitchRow;
-  return closure_18(TableSwitchRow, obj);
+  obj = { label: closure_14(dc), value: isDismissed, onValueChange: callback };
+  const TableSwitchRow = dc(6698).TableSwitchRow;
+  return closure_17(TableSwitchRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let guildId;
   let items5;
   let items6;
-  let obj9;
+  let obj8;
   let stateFromStores;
   let stateFromStoresArray;
   let stateFromStoresArray1;
@@ -332,8 +331,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = stateFromStores;
   let tmp2 = stateFromStoresArray1;
   obj = stateFromStores(stateFromStoresArray1[17]);
-  const cResult = obj.c(56);
-  const tmp4 = closure_20();
+  const cResult = obj.c(55);
+  const tmp4 = closure_19();
   const tmp5 = stateFromStoresArray;
   const tmp6 = stateFromStoresArray(stateFromStoresArray1[23])();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -358,7 +357,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[2];
   }
   if (cResult[3] !== stateFromStores) {
-    class T {
+    class G {
       constructor() {
         let tmp2 = null;
         if (null != stateFromStores) {
@@ -373,10 +372,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     cResult[3] = stateFromStores;
-    cResult[4] = T;
-    tmp13 = T;
+    cResult[4] = G;
+    tmp13 = G;
   } else {
-    class T {
+    class G {
       constructor() {
         let tmp2 = null;
         if (null != stateFromStores) {
@@ -394,7 +393,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult4 = tmp(tmp2[24]);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp11, tmp13);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
+    class G {
       constructor() {
         let tmp2 = null;
         if (null != stateFromStores) {
@@ -412,7 +411,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[5] = items2;
     tmp15 = items2;
   } else {
-    class T {
+    class G {
       constructor() {
         let tmp2 = null;
         if (null != stateFromStores) {
@@ -428,7 +427,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   if (cResult[6] !== stateFromStores) {
-    class A {
+    class E {
       constructor() {
         items = [...SERVER_TAG_GUILD_DCS];
         return items.filter((item) => {
@@ -442,10 +441,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     cResult[6] = stateFromStores;
-    cResult[7] = A;
-    tmp16 = A;
+    cResult[7] = E;
+    tmp16 = E;
   } else {
-    class A {
+    class E {
       constructor() {
         items = [...SERVER_TAG_GUILD_DCS];
         return items.filter((item) => {
@@ -462,7 +461,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult5 = tmp(tmp2[24]);
   stateFromStoresArray = tmpResult5.useStateFromStoresArray(tmp15, tmp16);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
+    class E {
       constructor() {
         items = [...SERVER_TAG_GUILD_DCS];
         return items.filter((item) => {
@@ -479,7 +478,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[8] = items3;
     tmp18 = items3;
   } else {
-    class A {
+    class E {
       constructor() {
         items = [...SERVER_TAG_GUILD_DCS];
         return items.filter((item) => {
@@ -494,7 +493,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   if (cResult[9] !== stateFromStores) {
-    class W {
+    class M {
       constructor() {
         let items;
         if (null != stateFromStores) {
@@ -510,10 +509,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     cResult[9] = stateFromStores;
-    cResult[10] = W;
-    tmp19 = W;
+    cResult[10] = M;
+    tmp19 = M;
   } else {
-    class W {
+    class M {
       constructor() {
         let items;
         if (null != stateFromStores) {
@@ -532,7 +531,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult6 = tmp(tmp2[24]);
   stateFromStoresArray1 = tmpResult6.useStateFromStoresArray(tmp18, tmp19);
   if (null == stateFromStores) {
-    class W {
+    class M {
       constructor() {
         let items;
         if (null != stateFromStores) {
@@ -553,7 +552,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[12] = tmp4.noGuildContainer;
     cResult[13] = items4;
   } else {
-    class W {
+    class M {
       constructor() {
         let items;
         if (null != stateFromStores) {
@@ -570,7 +569,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const sum = tmp6.bottom + tmp5(tmp2[11]).space.PX_16;
     if (cResult[17] !== sum) {
-      class W {
+      class M {
         constructor() {
           let items;
           if (null != stateFromStores) {
@@ -589,7 +588,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       cResult[17] = sum;
       cResult[18] = tmp22;
     } else {
-      class W {
+      class M {
         constructor() {
           let items;
           if (null != stateFromStores) {
@@ -607,7 +606,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[19] === tmp4.scrollContainer) {
       let tmp26;
-      class W {
+      class M {
         constructor() {
           let items;
           if (null != stateFromStores) {
@@ -624,7 +623,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const tmp24 = stateFromStores1;
       if (stateFromStores1 == null) {
-        class W {
+        class M {
           constructor() {
             let items;
             if (null != stateFromStores) {
@@ -644,7 +643,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const combined = "Current Guild: " + tmp24;
       const _Symbol = Symbol;
       if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-        class W {
+        class M {
           constructor() {
             let items;
             if (null != stateFromStores) {
@@ -666,11 +665,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   return obj.guildPowerupsResetNotifications();
                 }
         };
-        const tmp27 = closure_18(tmp(tmp2[26]).TableRow, obj2);
+        const tmp27 = closure_17(tmp(tmp2[26]).TableRow, obj2);
         cResult[22] = tmp27;
         tmp26 = tmp27;
       } else {
-        class W {
+        class M {
           constructor() {
             let items;
             if (null != stateFromStores) {
@@ -687,7 +686,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (cResult[23] !== combined) {
-        class W {
+        class M {
           constructor() {
             let items;
             if (null != stateFromStores) {
@@ -704,10 +703,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         const obj3 = { title: combined, hasIcons: false, children: tmp26 };
         cResult[23] = combined;
-        cResult[24] = closure_18(tmp(tmp2[27]).TableRowGroup, obj3);
-        const tmp29 = closure_18(tmp(tmp2[27]).TableRowGroup, obj3);
+        cResult[24] = closure_17(tmp(tmp2[27]).TableRowGroup, obj3);
+        const tmp29 = closure_17(tmp(tmp2[27]).TableRowGroup, obj3);
       } else {
-        class W {
+        class M {
           constructor() {
             let items;
             if (null != stateFromStores) {
@@ -724,7 +723,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (cResult[25] === stateFromStoresArray1) {
-        class W {
+        class M {
           constructor() {
             let items;
             if (null != stateFromStores) {
@@ -740,7 +739,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
         if (cResult[28] === stateFromStoresArray1) {
-          class W {
+          class M {
             constructor() {
               let items;
               if (null != stateFromStores) {
@@ -757,7 +756,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           if (cResult[31] === tmp30) {
             let tmp39;
-            class W {
+            class M {
               constructor() {
                 let items;
                 if (null != stateFromStores) {
@@ -774,7 +773,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const _Symbol2 = Symbol;
             if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-              class W {
+              class M {
                 constructor() {
                   let items;
                   if (null != stateFromStores) {
@@ -794,15 +793,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 hasIcons: false,
                 children: closure_13.map((dc) => {
                               obj = { dc };
-                              return closure_1_18(closure_1_25, obj, dc);
+                              return closure_1_17(closure_1_24, obj, dc);
                             })
               };
               const TableRowGroup = tmp(tmp2[27]).TableRowGroup;
-              const tmp41 = closure_18(TableRowGroup, obj4);
+              const tmp41 = closure_17(TableRowGroup, obj4);
               cResult[34] = tmp41;
               tmp39 = tmp41;
             } else {
-              class W {
+              class M {
                 constructor() {
                   let items;
                   if (null != stateFromStores) {
@@ -819,7 +818,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
             }
             if (cResult[35] === stateFromStores) {
-              class W {
+              class M {
                 constructor() {
                   let items;
                   if (null != stateFromStores) {
@@ -835,7 +834,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
               if (cResult[38] !== tmp42) {
-                class W {
+                class M {
                   constructor() {
                     let items;
                     if (null != stateFromStores) {
@@ -852,10 +851,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
                 const obj5 = { title: "Guild Level DCs", hasIcons: false, children: tmp42 };
                 cResult[38] = tmp42;
-                cResult[39] = closure_18(tmp(tmp2[27]).TableRowGroup, obj5);
-                const tmp46 = closure_18(tmp(tmp2[27]).TableRowGroup, obj5);
+                cResult[39] = closure_17(tmp(tmp2[27]).TableRowGroup, obj5);
+                const tmp46 = closure_17(tmp(tmp2[27]).TableRowGroup, obj5);
               } else {
-                class W {
+                class M {
                   constructor() {
                     let items;
                     if (null != stateFromStores) {
@@ -872,8 +871,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
               if (cResult[40] === stateFromStores) {
-                let tmp52;
-                class W {
+                class M {
                   constructor() {
                     let items;
                     if (null != stateFromStores) {
@@ -889,7 +887,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                 }
                 if (cResult[43] !== tmp47) {
-                  class W {
+                  class M {
                     constructor() {
                       let items;
                       if (null != stateFromStores) {
@@ -906,10 +904,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                   const obj6 = { title: "Server Tag Guild Level DCs", hasIcons: false, children: tmp47 };
                   cResult[43] = tmp47;
-                  cResult[44] = closure_18(tmp(tmp2[27]).TableRowGroup, obj6);
-                  const tmp51 = closure_18(tmp(tmp2[27]).TableRowGroup, obj6);
+                  cResult[44] = closure_17(tmp(tmp2[27]).TableRowGroup, obj6);
+                  const tmp51 = closure_17(tmp(tmp2[27]).TableRowGroup, obj6);
                 } else {
-                  class W {
+                  class M {
                     constructor() {
                       let items;
                       if (null != stateFromStores) {
@@ -925,9 +923,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                   }
                 }
-                const _Symbol3 = Symbol;
-                if (cResult[45] === Symbol.for("react.memo_cache_sentinel")) {
-                  class W {
+                if (cResult[45] !== stateFromStores) {
+                  class M {
                     constructor() {
                       let items;
                       if (null != stateFromStores) {
@@ -942,64 +939,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       return items;
                     }
                   }
-                  const obj7 = {
-                    title: "Vanity URL Powerup DCs",
-                    hasIcons: false,
-                    children: closure_14.map((dc) => {
-                                      obj = { dc };
-                                      return closure_1_18(closure_1_25, obj, dc);
-                                    })
-                  };
+                  const obj7 = { title: "System Messages", hasIcons: false, children: closure_17(tmp(tmp2[26]).TableRow, obj8) };
                   const TableRowGroup2 = tmp(tmp2[27]).TableRowGroup;
-                  const tmp54 = closure_18(TableRowGroup2, obj7);
-                  cResult[45] = tmp54;
-                  tmp52 = tmp54;
-                } else {
-                  class W {
-                    constructor() {
-                      let items;
-                      if (null != stateFromStores) {
-                        let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
-                        if (appliedGuildBoostsForGuild == null) {
-                          appliedGuildBoostsForGuild = [];
-                        }
-                        items = appliedGuildBoostsForGuild;
-                      } else {
-                        items = [];
-                      }
-                      return items;
-                    }
-                  }
-                }
-                if (cResult[46] !== stateFromStores) {
-                  class W {
-                    constructor() {
-                      let items;
-                      if (null != stateFromStores) {
-                        let appliedGuildBoostsForGuild = AppliedGuildBoostStore.getAppliedGuildBoostsForGuild(tmp);
-                        if (appliedGuildBoostsForGuild == null) {
-                          appliedGuildBoostsForGuild = [];
-                        }
-                        items = appliedGuildBoostsForGuild;
-                      } else {
-                        items = [];
-                      }
-                      return items;
-                    }
-                  }
-                  const obj8 = { title: "System Messages", hasIcons: false, children: closure_18(tmp(tmp2[26]).TableRow, obj9) };
-                  const TableRowGroup3 = tmp(tmp2[27]).TableRowGroup;
-                  obj9 = {
+                  obj8 = {
                     label: "Send Powerups System Message",
                     onPress() {
                                       return sendPowerupsSystemMessage(stateFromStores);
                                     }
                   };
-                  cResult[46] = stateFromStores;
-                  cResult[47] = closure_18(TableRowGroup3, obj8);
-                  const tmp56 = closure_18(TableRowGroup3, obj8);
+                  cResult[45] = stateFromStores;
+                  cResult[46] = closure_17(TableRowGroup2, obj7);
+                  const tmp53 = closure_17(TableRowGroup2, obj7);
                 } else {
-                  class W {
+                  class M {
                     constructor() {
                       let items;
                       if (null != stateFromStores) {
@@ -1015,8 +967,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                   }
                 }
-                if (cResult[48] === tmp4.container) {
-                  class W {
+                if (cResult[47] === tmp4.container) {
+                  class M {
                     constructor() {
                       let items;
                       if (null != stateFromStores) {
@@ -1032,21 +984,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                   }
                 }
-                const obj10 = { style: tmp62, contentContainerStyle: tmp23, children: items5 };
-                items5 = [tmp28, tmp36, tmp39, tmp45, tmp50, tmp52, tmp55];
-                cResult[48] = tmp4.container;
-                cResult[49] = tmp23;
-                cResult[50] = tmp28;
-                cResult[51] = tmp36;
-                cResult[52] = tmp45;
-                cResult[53] = tmp50;
-                cResult[54] = tmp55;
-                cResult[55] = closure_19(closure_5, obj10);
-                const tmp60 = closure_19(closure_5, obj10);
+                const obj9 = { style: tmp59, contentContainerStyle: tmp23, children: items5 };
+                items5 = [tmp28, tmp36, tmp39, tmp45, tmp50, tmp52];
+                cResult[47] = tmp4.container;
+                cResult[48] = tmp23;
+                cResult[49] = tmp28;
+                cResult[50] = tmp36;
+                cResult[51] = tmp45;
+                cResult[52] = tmp50;
+                cResult[53] = tmp52;
+                cResult[54] = closure_18(closure_5, obj9);
+                const tmp57 = closure_18(closure_5, obj9);
               }
               const mapped = closure_12.map((dc) => {
                 obj = { dc, guildId: stateFromStores, isDismissed: stateFromStoresArray.includes(dc) };
-                return authStore4(closure_26, obj, dc);
+                return closure_17(closure_25, obj, dc);
               });
               cResult[40] = stateFromStores;
               cResult[41] = stateFromStoresArray;
@@ -1054,20 +1006,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const mapped1 = closure_11.map((dc) => {
               obj = { dc, guildId: stateFromStores, isDismissed: stateFromStoresArray.includes(dc) };
-              return authStore4(closure_26, obj, dc);
+              return closure_17(closure_25, obj, dc);
             });
             cResult[35] = stateFromStores;
             cResult[36] = stateFromStoresArray;
             cResult[37] = mapped1;
           }
-          const obj11 = { title: "Warning State", hasIcons: false, children: items6 };
+          const obj10 = { title: "Warning State", hasIcons: false, children: items6 };
           items6 = [tmp30, tmp33];
           cResult[31] = tmp30;
           cResult[32] = tmp33;
-          cResult[33] = closure_19(tmp(tmp2[27]).TableRowGroup, obj11);
-          const tmp38 = closure_19(tmp(tmp2[27]).TableRowGroup, obj11);
+          cResult[33] = closure_18(tmp(tmp2[27]).TableRowGroup, obj10);
+          const tmp38 = closure_18(tmp(tmp2[27]).TableRowGroup, obj10);
         }
-        const obj12 = {
+        const obj11 = {
           label: "Reset End Date",
           onPress() {
                   return setWarningBoosts(stateFromStores, stateFromStoresArray1, true);
@@ -1075,10 +1027,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         };
         cResult[28] = stateFromStoresArray1;
         cResult[29] = stateFromStores;
-        cResult[30] = closure_18(tmp(tmp2[26]).TableRow, obj12);
-        const tmp35 = closure_18(tmp(tmp2[26]).TableRow, obj12);
+        cResult[30] = closure_17(tmp(tmp2[26]).TableRow, obj11);
+        const tmp35 = closure_17(tmp(tmp2[26]).TableRow, obj11);
       }
-      const obj13 = {
+      const obj12 = {
         label: "Set Half Boosts expiring in 1 day",
         onPress() {
               return setWarningBoosts(stateFromStores, stateFromStoresArray1.slice(Math.floor(stateFromStoresArray1.length / 2)), false);
@@ -1086,8 +1038,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       };
       cResult[25] = stateFromStoresArray1;
       cResult[26] = stateFromStores;
-      cResult[27] = closure_18(tmp(tmp2[26]).TableRow, obj13);
-      const tmp32 = closure_18(tmp(tmp2[26]).TableRow, obj13);
+      cResult[27] = closure_17(tmp(tmp2[26]).TableRow, obj12);
+      const tmp32 = closure_17(tmp(tmp2[26]).TableRow, obj12);
     }
     const items7 = [tmp4.scrollContainer, tmp21];
     cResult[19] = tmp4.scrollContainer;
@@ -1102,11 +1054,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let items5;
   let items6;
   let items7;
-  let obj18;
+  let obj17;
   let obj9;
   let stateFromStores;
-  let tmp16Result;
-  const tmp = closure_20();
+  let tmp15Result;
+  const tmp = closure_19();
   let tmp2 = importDefault;
   const tmp4 = useSafeAreaInsetsDefault();
   obj = stateFromStores(504);
@@ -1155,23 +1107,23 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return items;
   });
   if (null == stateFromStores) {
-    const obj5 = { style: items4, children: closure_18(stateFromStores(4833).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" }) };
+    const obj5 = { style: items4, children: closure_17(stateFromStores(4886).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" }) };
     items4 = [, ];
     ({ container: arr7[0], noGuildContainer: arr7[1] } = tmp);
-    tmp16Result = closure_18(closure_6, obj5);
+    tmp15Result = closure_17(closure_6, obj5);
   } else {
     const obj6 = { style: tmp.container, contentContainerStyle: items5, children: items6 };
     items5 = [tmp.scrollContainer, ];
     items5[1] = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
     let str = stateFromStores1;
     const obj7 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-    const TableRowGroup7 = tmp5(5997).TableRowGroup;
-    const tmp17 = closure_5;
+    const TableRowGroup6 = tmp5(6074).TableRowGroup;
+    const tmp16 = closure_5;
     if (stateFromStores1 == null) {
       str = "Unknown";
     }
     const _HermesInternal = HermesInternal;
-    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_18(stateFromStores(5916).TableRow, obj9) };
+    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_17(stateFromStores(5993).TableRow, obj9) };
     obj9 = {
       label: "Reset Notification Indicators",
       onPress() {
@@ -1179,76 +1131,66 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return obj.guildPowerupsResetNotifications();
         }
     };
-    items6 = [closure_18(TableRowGroup7, obj8), , , , , , ];
+    items6 = [closure_17(TableRowGroup6, obj8), , , , , ];
     const obj10 = { title: "Warning State", hasIcons: false, children: items7 };
-    const TableRowGroup = tmp5(5997).TableRowGroup;
+    const TableRowGroup = tmp5(6074).TableRowGroup;
     const obj11 = {
       label: "Set Half Boosts expiring in 1 day",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2.slice(Math.floor(closure_2.length / 2)), false);
         }
     };
-    items7 = [closure_18(tmp5(5916).TableRow, obj11), ];
+    items7 = [closure_17(tmp5(5993).TableRow, obj11), ];
     const obj12 = {
       label: "Reset End Date",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2, true);
         }
     };
-    items7[1] = closure_18(stateFromStores(5916).TableRow, obj12);
-    items6[1] = closure_19(TableRowGroup, obj10);
+    items7[1] = closure_17(stateFromStores(5993).TableRow, obj12);
+    items6[1] = closure_18(TableRowGroup, obj10);
     const obj13 = {
       title: "User Level DCs",
       hasIcons: false,
       children: closure_13.map((dc) => {
           obj = { dc };
-          return closure_1_18(closure_1_25, obj, dc);
+          return closure_1_17(closure_1_24, obj, dc);
         })
     };
-    const TableRowGroup2 = tmp5(5997).TableRowGroup;
-    items6[2] = closure_18(TableRowGroup2, obj13);
+    const TableRowGroup2 = tmp5(6074).TableRowGroup;
+    items6[2] = closure_17(TableRowGroup2, obj13);
     const obj14 = {
       title: "Guild Level DCs",
       hasIcons: false,
       children: closure_11.map((dc) => {
           obj = { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) };
-          return authStore4(closure_26, obj, dc);
+          return closure_17(closure_25, obj, dc);
         })
     };
-    const TableRowGroup3 = tmp5(5997).TableRowGroup;
-    items6[3] = closure_18(TableRowGroup3, obj14);
+    const TableRowGroup3 = tmp5(6074).TableRowGroup;
+    items6[3] = closure_17(TableRowGroup3, obj14);
     const obj15 = {
       title: "Server Tag Guild Level DCs",
       hasIcons: false,
       children: closure_12.map((dc) => {
           obj = { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) };
-          return authStore4(closure_26, obj, dc);
+          return closure_17(closure_25, obj, dc);
         })
     };
-    const TableRowGroup4 = tmp5(5997).TableRowGroup;
-    items6[4] = closure_18(TableRowGroup4, obj15);
-    const obj16 = {
-      title: "Vanity URL Powerup DCs",
-      hasIcons: false,
-      children: closure_14.map((dc) => {
-          obj = { dc };
-          return closure_1_18(closure_1_25, obj, dc);
-        })
-    };
-    const TableRowGroup5 = tmp5(5997).TableRowGroup;
-    items6[5] = closure_18(TableRowGroup5, obj16);
-    const obj17 = { title: "System Messages", hasIcons: false, children: closure_18(stateFromStores(5916).TableRow, obj18) };
-    const TableRowGroup6 = tmp5(5997).TableRowGroup;
-    obj18 = {
+    const TableRowGroup4 = tmp5(6074).TableRowGroup;
+    items6[4] = closure_17(TableRowGroup4, obj15);
+    const obj16 = { title: "System Messages", hasIcons: false, children: closure_17(stateFromStores(5993).TableRow, obj17) };
+    const TableRowGroup5 = tmp5(6074).TableRowGroup;
+    obj17 = {
       label: "Send Powerups System Message",
       onPress() {
           return sendPowerupsSystemMessage(stateFromStores);
         }
     };
-    items6[6] = closure_18(TableRowGroup6, obj17);
-    tmp16Result = tmp16(tmp17, obj6);
+    items6[5] = closure_17(TableRowGroup5, obj16);
+    tmp15Result = tmp15(tmp16, obj6);
   }
-  return tmp16Result;
+  return tmp15Result;
 });
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildPowerupsScreen.tsx");
 

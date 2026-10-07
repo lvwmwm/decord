@@ -1,15 +1,15 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 12039
+// Function ID: 12040
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 2111, 21, 4837, 588, 558, 576, 504, 11605, 1127, 5896, 4833, 2]
+// Dependencies: [19, 17, 2112, 21, 4890, 587, 558, 576, 504, 11860, 1126, 5974, 4886, 2]
 
-// Module 11783 (ApplicationSectionHeader)
+// Module 12039 (ApplicationSectionHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -69,9 +69,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       }
       const applicationHeaderWrapper = tmp4.applicationHeaderWrapper;
       if (cResult[7] !== name) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const obj2 = { applicationName: name };
-        const formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t["Ocw/sM"], obj2);
+        const formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t["Ocw/sM"], obj2);
         cResult[7] = name;
         cResult[8] = formatToPlainStringResult;
         tmp13 = formatToPlainStringResult;
@@ -86,7 +86,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
         }
         if (cResult[12] !== name) {
           const obj3 = { variant: "eyebrow", color: "interactive-text-default", children: name };
-          const tmp21 = closure_5(tmp(4833).Text, obj3);
+          const tmp21 = closure_5(tmp(4886).Text, obj3);
           cResult[12] = name;
           cResult[13] = tmp21;
           tmp19 = tmp21;
@@ -117,14 +117,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       let tmp16 = null != tmp9;
       if (tmp16) {
         const obj5 = { style: tmp4.applicationIcon, source: tmp9 };
-        tmp16 = closure_5(guildId(5896), obj5);
+        tmp16 = closure_5(guildId(5974), obj5);
       }
       cResult[9] = tmp9;
       cResult[10] = tmp4.applicationIcon;
       cResult[11] = tmp16;
       tmp15 = tmp16;
     }
-    const tmpResult2 = tmp(11605);
+    const tmpResult2 = tmp(11860);
     const applicationCommandsIconSource = tmpResult2.getApplicationCommandsIconSource(section, stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = section;
@@ -167,7 +167,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       }
     }
   });
-  const obj2 = section(11605);
+  const obj2 = section(11860);
   const applicationCommandsIconSource = obj2.getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
@@ -178,16 +178,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
   } else if (section != null) {
     name = section.name;
   }
-  const obj3 = { style: tmp.applicationHeaderWrapper, accessibilityLabel: intl.formatToPlainString(tmp2(1127).t["Ocw/sM"], { applicationName: name }), children: items1 };
-  intl = tmp2(1127).intl;
+  const obj3 = { style: tmp.applicationHeaderWrapper, accessibilityLabel: intl.formatToPlainString(tmp2(1126).t["Ocw/sM"], { applicationName: name }), children: items1 };
+  intl = tmp2(1126).intl;
   let tmp9 = null != applicationCommandsIconSource;
   const tmp7 = closure_6;
   const tmp8 = View;
   if (tmp9) {
     const obj4 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp9 = closure_5(guildId(5896), obj4);
+    tmp9 = closure_5(guildId(5974), obj4);
   }
-  items1 = [tmp9, closure_5(tmp2(4833).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
+  items1 = [tmp9, closure_5(tmp2(4886).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
   return tmp7(tmp8, obj3);
 });
 size = size_mod;

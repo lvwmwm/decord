@@ -1,32 +1,32 @@
-// Module ID: 8894
-// Function ID: 8895
+// Module ID: 9120
+// Function ID: 9121
 // Name: UserTile
-// Dependencies: [32, 19, 17, 8895, 502, 2051, 1999, 1086, 4858, 4862, 21, 4837, 588, 4685, 558, 576, 504, 8896, 1189, 8899, 4833, 1127, 7698, 8879, 8878, 8056, 8900, 8901, 8902, 8802, 8893, 8903, 8861, 8864, 6066, 8904, 2]
+// Dependencies: [32, 19, 17, 9121, 502, 2051, 1999, 1085, 4911, 4915, 21, 4890, 587, 4727, 558, 576, 504, 9122, 1188, 4808, 4886, 1126, 7920, 9105, 9104, 9125, 9126, 4819, 9127, 9018, 9119, 9128, 9087, 9090, 6140, 9129, 2]
 
-// Module 8894 (UserTile)
+// Module 9120 (UserTile)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import CallConstants from "CallConstants" /* 4858 */;
-import Constants2 from "Constants" /* 4862 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8056 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 8895 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8899 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8900 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 8901 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 8902 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 8903 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4808 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 4819 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import CallConstants from "CallConstants" /* 4911 */;
+import Constants2 from "Constants" /* 4915 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 9121 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9125 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9126 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9127 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 9128 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import ColorUtils_mod from "ColorUtils" /* 4685 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ColorUtils_mod from "ColorUtils" /* 4727 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -231,7 +231,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) 
             obj2 = { style: items, children: items1 };
             items = [, ];
             ({ autoDisabledVideo: arr[0], autoDisabledVideoTextWrapper: arr[1] } = closure_1);
-            const obj3 = { source: AssetRegistryDefault2, size: native.Icon.Sizes.SMALL, disableColor: true };
+            const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, disableColor: true };
             const Icon = native.Icon;
             items1 = [authStore2(Icon, obj3), ];
             const obj4 = { variant: "text-sm/normal", color: "text-default", style: closure_1.labelText, children: intl.string(intl2.t.m2Hyj0) };
@@ -349,7 +349,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) 
         obj2 = { style: items, children: items1 };
         items = [, ];
         ({ autoDisabledVideo: arr[0], autoDisabledVideoTextWrapper: arr[1] } = closure_1);
-        const obj3 = { source: AssetRegistryDefault2, size: native.Icon.Sizes.SMALL, disableColor: true };
+        const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, disableColor: true };
         const Icon = native.Icon;
         items1 = [authStore2(Icon, obj3), ];
         const obj4 = { variant: "text-sm/normal", color: "text-default", style: closure_1.labelText, children: intl.string(intl2.t.m2Hyj0) };
@@ -415,11 +415,11 @@ let closure_19 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) 
   let tmp10 = tmp9[1];
   const tmp11 = tmp9[2];
   if (tmp9[0]) {
-    tmp12 = AssetRegistryDefault;
-  } else if (deafened) {
     tmp12 = AssetRegistryDefault3;
-  } else if (muted) {
+  } else if (deafened) {
     tmp12 = AssetRegistryDefault4;
+  } else if (muted) {
+    tmp12 = AssetRegistryDefault2;
   }
   if (tmp10) {
     tmp10 = !tmp11;
@@ -465,8 +465,8 @@ let closure_19 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) 
           }
           items3[2] = obj3;
           const obj4 = { style: items3, children: closure_14(Icon2, obj5) };
-          obj5 = { source: tmp12, size: userId(1189).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp12 === AssetRegistryDefault };
-          Icon2 = tmp(1189).Icon;
+          obj5 = { source: tmp12, size: userId(1188).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp12 === AssetRegistryDefault3 };
+          Icon2 = tmp(1188).Icon;
           tmp25Result = tmp25(tmp26, obj4);
         }
         cResult[8] = tmp12;
@@ -481,8 +481,8 @@ let closure_19 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) 
     if (tmp10) {
       const obj6 = { style: items4, children: closure_14(Icon, obj7) };
       items4 = [tmp4.statusWrapper, style];
-      obj7 = { source: AssetRegistryDefault5, size: userId(1189).Icon.Sizes.SMALL, disableColor: true };
-      Icon = tmp(1189).Icon;
+      obj7 = { source: AssetRegistryDefault5, size: userId(1188).Icon.Sizes.SMALL, disableColor: true };
+      Icon = tmp(1188).Icon;
       tmp18 = closure_14(View, obj6);
     }
     cResult[4] = tmp10;
@@ -518,11 +518,11 @@ let closure_19 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) 
   let tmp5 = tmp4[1];
   const tmp6 = tmp4[2];
   if (tmp4[0]) {
-    tmp7 = AssetRegistryDefault;
-  } else if (deafened) {
     tmp7 = AssetRegistryDefault3;
-  } else if (muted) {
+  } else if (deafened) {
     tmp7 = AssetRegistryDefault4;
+  } else if (muted) {
+    tmp7 = AssetRegistryDefault2;
   }
   if (tmp5) {
     tmp5 = !tmp6;
@@ -534,8 +534,8 @@ let closure_19 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) 
     if (tmp5) {
       const obj2 = { style: items2, children: closure_14(Icon, obj3) };
       items2 = [tmp.statusWrapper, style];
-      obj3 = { source: AssetRegistryDefault5, size: userId(1189).Icon.Sizes.SMALL, disableColor: true };
-      Icon = tmp2(1189).Icon;
+      obj3 = { source: AssetRegistryDefault5, size: userId(1188).Icon.Sizes.SMALL, disableColor: true };
+      Icon = tmp2(1188).Icon;
       tmp15 = closure_14(View, obj2);
     }
     const items3 = [tmp15, ];
@@ -549,8 +549,8 @@ let closure_19 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) 
       }
       items4[2] = obj4;
       const obj5 = { style: items4, children: closure_14(Icon2, obj6) };
-      obj6 = { source: tmp7, size: userId(1189).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp7 === AssetRegistryDefault };
-      Icon2 = tmp2(1189).Icon;
+      obj6 = { source: tmp7, size: userId(1188).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp7 === AssetRegistryDefault3 };
+      Icon2 = tmp2(1188).Icon;
       tmp20Result = tmp20(tmp21, obj5);
     }
     const obj7 = { children: items3 };

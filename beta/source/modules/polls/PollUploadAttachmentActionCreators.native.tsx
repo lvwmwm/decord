@@ -1,15 +1,15 @@
-// Module ID: 11578
-// Function ID: 11579
+// Module ID: 11833
+// Function ID: 11834
 // Name: PollUploadAttachmentActionCreators
-// Dependencies: [5, 5201, 7252, 11579, 7654, 5451, 5441, 8605, 2]
+// Dependencies: [5, 7031, 7457, 11834, 7876, 7274, 7269, 7247, 8812, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 11578 (PollUploadAttachmentActionCreators)
-import DraftStore from "DraftStore" /* 5201 */;
-import PollsConstants from "PollsConstants" /* 7252 */;
-import FileManagerUtils from "FileManagerUtils" /* 7654 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8605 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 11579 */;
+// Module 11833 (PollUploadAttachmentActionCreators)
+import DraftStore from "DraftStore" /* 7031 */;
+import PollsConstants from "PollsConstants" /* 7457 */;
+import FileManagerUtils from "FileManagerUtils" /* 7876 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8812 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 11834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -125,7 +125,7 @@ let obj = function _handlePollGifAttachmentAdd() {
             return { value, done: true };
           } else {
             styles = value;
-            writeFileResult = { id, origin: closure_132_0(closure_132_2[6]).UploadOrigin.IMAGE_PICKER, uri: tmp36, originalUri: tmp36, filename, mimeType: "image/gif", width, height, platform: closure_132_0(closure_132_2[6]).UploadPlatform.REACT_NATIVE };
+            writeFileResult = { id, origin: closure_132_0(closure_132_2[6]).UploadOrigin.IMAGE_PICKER, uri: tmp36, originalUri: tmp36, filename, mimeType: "image/gif", width, height, platform: closure_132_0(closure_132_2[7]).UploadPlatform.REACT_NATIVE };
             width = undefined;
             if (styles != null) {
               width = styles.width;
@@ -136,7 +136,7 @@ let obj = function _handlePollGifAttachmentAdd() {
             }
             file = writeFileResult;
             const obj13 = { file, channelId, draftType: closure_132_4.Poll };
-            obj = closure_132_1(closure_132_2[7]);
+            obj = closure_132_1(closure_132_2[8]);
             obj.addFile(obj13);
             writeFileResult = tmp36;
             c6 = 0;

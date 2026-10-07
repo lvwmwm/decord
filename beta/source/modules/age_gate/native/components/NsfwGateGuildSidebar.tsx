@@ -1,21 +1,21 @@
-// Module ID: 15915
-// Function ID: 15916
+// Module ID: 16219
+// Function ID: 16220
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 2111, 2073, 1378, 9199, 1086, 21, 4837, 588, 558, 576, 504, 1253, 8594, 15766, 5837, 1127, 2114, 1189, 15916, 2]
+// Dependencies: [19, 17, 2112, 2074, 1377, 9423, 1085, 21, 4890, 587, 558, 576, 504, 1252, 8801, 16061, 5915, 1126, 2115, 1188, 2]
 
-// Module 15915 (NsfwGateGuildSidebar)
+// Module 16219 (NsfwGateGuildSidebar)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 8594 */;
-import Constants2 from "Constants" /* 9199 */;
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 8801 */;
+import Constants2 from "Constants" /* 9423 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const View = react_native.View;
 const NsfwGateSource = Constants2.NsfwGateSource;
 ({ AnalyticEvents: c9, HelpdeskArticles: c10, Fonts: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let obj = { container: obj2, emptyStateContainer: { flex: 1 }, emptyStateImageContainer: { marginBottom: 16 } };
+let obj = { container: obj2, emptyStateContainer: { flex: 1 } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.PANEL_BG };
 let closure_14 = createStyles.createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -55,16 +55,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    class D {
+    class L {
       constructor() {
         return closure_6.getGuild(guildId);
       }
     }
     cResult[1] = guildId;
-    cResult[2] = D;
-    tmp7 = D;
+    cResult[2] = L;
+    tmp7 = L;
   } else {
-    class D {
+    class L {
       constructor() {
         return closure_6.getGuild(guildId);
       }
@@ -73,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(tmp2[12]);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
+    class L {
       constructor() {
         return closure_6.getGuild(guildId);
       }
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     currentUser = UserStore.getCurrentUser();
     cResult[3] = currentUser;
   } else {
-    class D {
+    class L {
       constructor() {
         return closure_6.getGuild(guildId);
       }
@@ -89,20 +89,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   currentUser = tmp9;
   if (cResult[4] === guildId) {
-    class D {
+    class L {
       constructor() {
         return closure_6.getGuild(guildId);
       }
     }
-    const effect = react.useEffect(C, items2);
+    const effect = react.useEffect(N, items2);
     if (null == stateFromStores) {
-      class D {
+      class L {
         constructor() {
           return closure_6.getGuild(guildId);
         }
       }
     } else {
-      class D {
+      class L {
         constructor() {
           return closure_6.getGuild(guildId);
         }
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[10] = items1;
     }
   }
-  class C {
+  class N {
     constructor() {
       tmp = closure_2;
       tmp2 = null != closure_2;
@@ -151,7 +151,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items2 = [guildId, stateFromStores, tmp9];
   cResult[4] = guildId;
   cResult[5] = stateFromStores;
-  cResult[6] = C;
+  cResult[6] = N;
   cResult[7] = items2;
 }) : ((guildId) => {
   let NQuXf0;
@@ -193,7 +193,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items2 = [tmp.container, style];
     const obj3 = { guild: stateFromStores, showExtraButtons: false };
     items3 = [closure_12(stateFromStores(tmp3[15]), obj3), ];
-    const obj4 = { imageStyle: tmp.emptyStateImageContainer, titleStyle: stateFromStores(currentUser[16])(constants3.DISPLAY_EXTRABOLD, undefined, 16), containerStyle: tmp.emptyStateContainer, source: stateFromStores(currentUser[20]), title: intl.string(tmp2(currentUser[17]).t.bAVpRR), body: format(NQuXf0, obj5) };
+    const obj4 = { titleStyle: stateFromStores(currentUser[16])(constants3.DISPLAY_SEMIBOLD, undefined, 20), bodyStyle: stateFromStores(currentUser[16])(constants3.PRIMARY_NORMAL, undefined, 14), containerStyle: tmp.emptyStateContainer, title: intl.string(tmp2(currentUser[17]).t.bAVpRR), body: format(NQuXf0, obj5) };
     const RefreshEmptyState = tmp2(tmp3[19]).RefreshEmptyState;
     intl = tmp2(tmp3[17]).intl;
     const intl2 = tmp2(tmp3[17]).intl;

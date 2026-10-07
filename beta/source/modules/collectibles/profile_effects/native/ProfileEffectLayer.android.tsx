@@ -1,13 +1,13 @@
-// Module ID: 8267
-// Function ID: 8268
+// Module ID: 8463
+// Function ID: 8464
 // Name: ProfileEffectLayer
-// Dependencies: [19, 17, 21, 558, 576, 8268, 8264, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8464, 8460, 2]
 
-// Module 8267 (ProfileEffectLayer)
+// Module 8463 (ProfileEffectLayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import APNGPlayer2 from "APNGPlayer" /* 8268 */;
+import APNGPlayer2 from "APNGPlayer" /* 8464 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size_mod from "module_2" /* 2 */;
 let paused;
 
 let tmp;
-const ProfileEffectUtils = tmp(8264);
+const ProfileEffectUtils = tmp(8460);
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
 const memo = react.memo;

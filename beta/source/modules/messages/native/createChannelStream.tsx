@@ -1,19 +1,19 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11562
+// Function ID: 11563
 // Name: createChannelStream
-// Dependencies: [10840, 7098, 7261, 7379, 1086, 11, 11307, 11309, 11310, 1127, 4515, 7422, 11120, 6688, 2]
+// Dependencies: [11087, 7165, 7466, 7592, 1085, 11, 11563, 11565, 11566, 1126, 4552, 7635, 11378, 6772, 2]
 // Exports: default
 
-// Module 11306 (createChannelStream)
+// Module 11562 (createChannelStream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Constants from "Constants" /* 1086 */;
-import createConversationHeader from "createConversationHeader" /* 11307 */;
-import isNewMessageGroupDefault from "isNewMessageGroup" /* 11309 */;
-import tryInjectMessage from "tryInjectMessage" /* 11310 */;
-import PushFeedbackStore_mod from "PushFeedbackStore" /* 10840 */;
-import EditMessageStore from "EditMessageStore" /* 7098 */;
-import UploadStore from "UploadStore" /* 7261 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
+import Constants from "Constants" /* 1085 */;
+import createConversationHeader from "createConversationHeader" /* 11563 */;
+import isNewMessageGroupDefault from "isNewMessageGroup" /* 11565 */;
+import tryInjectMessage from "tryInjectMessage" /* 11566 */;
+import PushFeedbackStore_mod from "PushFeedbackStore" /* 11087 */;
+import EditMessageStore from "EditMessageStore" /* 7165 */;
+import UploadStore from "UploadStore" /* 7466 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7592 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -81,14 +81,14 @@ export default function createChannelStream(forceRender) {
         tmp = tmp15;
       }
       if (!tmp) {
-        const obj2 = createConversationHeader;
-        if (!obj2.isConversationStartMessage(closure_7, message.id)) {
-          if (isNewMessageGroupDefault(require, first[first.length - 1], message)) {
-            items = [message];
-            items1.unshift(items);
-          } else {
-            first.unshift(message);
-          }
+        if (null != closure_7) {
+          createConversationHeader;
+        }
+        if (isNewMessageGroupDefault(require, first[first.length - 1], message)) {
+          items = [message];
+          items1.unshift(items);
+        } else {
+          first.unshift(message);
         }
       }
     }
@@ -153,10 +153,10 @@ export default function createChannelStream(forceRender) {
     let intl6;
     let isForumPostResult;
     let isSystemDMResult;
-    let obj21;
+    let obj23;
     let pushType;
     let str2;
-    let tmp155;
+    let tmp164;
     let tmp8;
     let tmp85;
     let tmp96;
@@ -234,8 +234,8 @@ export default function createChannelStream(forceRender) {
     let tmp30 = items[items.length - 1];
     if (message.hasFlag(forceRender.HIDDEN_SUSPENDED_USER)) {
       if (null == tmp30) {
-        const obj10 = { rowType: closure_8.SUSPENDED_USER_GROUP, changeType: tmp155, canUncollapse: false };
-        tmp155 = determineChangeType(message);
+        const obj10 = { rowType: closure_8.SUSPENDED_USER_GROUP, changeType: tmp164, canUncollapse: false };
+        tmp164 = determineChangeType(message);
         const merged = Object.assign(obj5);
         arr.push(obj10);
         tmp30 = obj10;
@@ -245,7 +245,7 @@ export default function createChannelStream(forceRender) {
       const obj11 = { count: tmp30.content.length };
       tmp30.text = intl4.formatToPlainString(require("intl").t.rHRovo, obj11);
     } else if (message.blocked) {
-      let tmp136;
+      let tmp145;
       if (null == tmp30) {
         let INSERT2 = determineChangeType(message);
         const blocked = INSERT2 === constants.NOOP && closure_8.getBlocked(message);
@@ -255,33 +255,33 @@ export default function createChannelStream(forceRender) {
         const obj12 = { rowType: closure_8.BLOCKED_GROUP, changeType: INSERT2 };
         const merged1 = Object.assign(obj5);
         arr.push(obj12);
-        tmp136 = obj12;
+        tmp145 = obj12;
       } else {
-        tmp136 = tmp30;
+        tmp145 = tmp30;
       }
-      const result1 = processHiddenMessageRow(tmp136);
+      const result1 = processHiddenMessageRow(tmp145);
       const intl3 = require("intl").intl;
-      const obj14 = { count: tmp136.content.length };
-      tmp136.text = intl3.formatToPlainString(require("intl").t["+FcYM/"], obj14);
+      const obj15 = { count: tmp145.content.length };
+      tmp145.text = intl3.formatToPlainString(require("intl").t["+FcYM/"], obj15);
     } else if (message.ignored) {
-      let tmp118;
+      let tmp127;
       if (null == tmp30) {
         let INSERT = determineChangeType(message);
         const ignored = INSERT === constants.NOOP && closure_8.getIgnored(message);
         if (ignored) {
           INSERT = constants.INSERT;
         }
-        const obj15 = { rowType: closure_8.IGNORED_GROUP, changeType: INSERT };
+        const obj16 = { rowType: closure_8.IGNORED_GROUP, changeType: INSERT };
         const merged2 = Object.assign(obj5);
-        arr.push(obj15);
-        tmp118 = obj15;
+        arr.push(obj16);
+        tmp127 = obj16;
       } else {
-        tmp118 = tmp30;
+        tmp127 = tmp30;
       }
-      const result2 = processHiddenMessageRow(tmp118);
+      const result2 = processHiddenMessageRow(tmp127);
       const intl2 = require("intl").intl;
-      const obj16 = { count: tmp118.content.length };
-      tmp118.text = intl2.formatToPlainString(require("intl").t["VFWjc+"], obj16);
+      const obj17 = { count: tmp127.content.length };
+      tmp127.text = intl2.formatToPlainString(require("intl").t["VFWjc+"], obj17);
     } else {
       let iter = item[Symbol.iterator]();
       let nextResult = iter.next();
@@ -319,14 +319,14 @@ export default function createChannelStream(forceRender) {
           tmp65 = tmp64.count > 1;
         }
         if (tmp65) {
-          let obj17 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle, summary: tmp64, isBeforeContent: false };
+          let obj18 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle, summary: tmp64, isBeforeContent: false };
           let push2 = items.push;
-          let push2Result = push2(obj17);
+          let push2Result = push2(obj18);
         }
         let arr2 = items;
-        let obj18 = { roleStyle, message: obj6, isSystemDM: isSystemDMResult, isFirst: obj6 === message, isEditing: tmp41, separatorBefore: tmp85, canAddNewReactions, alwaysShowAddReaction: isForumPostResult, renderContentOnly, pushFeedbackType: pushType, canReply: !tmp96 && canReplyToMessageResult, canEdit: !tmp96 && tmp52, rowType: closure_8.MESSAGE, changeType: result3, showContentInventoryEntryFallbackEmbed: hasItem, conversationHeader: tmp49(id[6])(constants2, obj6.id) };
-        let push3 = items.push;
+        let obj19 = { roleStyle, message: obj6, isSystemDM: isSystemDMResult, isFirst: obj6 === message, isEditing: tmp41, separatorBefore: tmp85, canAddNewReactions, alwaysShowAddReaction: isForumPostResult, renderContentOnly, pushFeedbackType: pushType, canReply: !tmp96 && canReplyToMessageResult, canEdit: !tmp96 && tmp52, rowType: closure_8.MESSAGE, changeType: result3, showContentInventoryEntryFallbackEmbed: hasItem };
         let tmp77 = roleStyle;
+        let push3 = items.push;
         isSystemDMResult = obj7.isSystemDM();
         if (isSystemDMResult) {
           isSystemDMResult = obj6.isSystemDM();
@@ -355,52 +355,63 @@ export default function createChannelStream(forceRender) {
         if (closure_13 != null) {
           hasItem = obj13.has(obj6.id);
         }
-        let push3Result = push3(obj18);
-        let tmp109 = null != tmp64;
-        if (tmp109) {
-          tmp109 = tmp64.startId === obj6.id;
+        let push3Result = push3(obj19);
+        let tmp106 = constants2;
+        let result4 = null != constants2;
+        if (result4) {
+          let obj14 = require("createConversationHeader");
+          result4 = obj14.isConversationStartMessage(tmp106, obj6.id);
         }
-        if (tmp109) {
-          tmp109 = tmp64.count > 1;
-        }
-        if (tmp109) {
-          let obj19 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle: tmp77, summary: tmp64, isBeforeContent: true };
+        if (result4) {
+          let obj20 = { rowType: roleStyle.CONVERSATION, changeType: determineChangeType(obj6), roleStyle: tmp77, conversationHeader: tmp49(id[6])(tmp106) };
           let push4 = arr2.push;
-          let push4Result = push4(obj19);
+          let push4Result = push4(obj20);
+        }
+        let tmp118 = null != tmp64;
+        if (tmp118) {
+          tmp118 = tmp64.startId === obj6.id;
+        }
+        if (tmp118) {
+          tmp118 = tmp64.count > 1;
+        }
+        if (tmp118) {
+          let obj21 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle: tmp77, summary: tmp64, isBeforeContent: true };
+          let push5 = arr2.push;
+          let push5Result = push5(obj21);
         }
         continue;
       }
     }
     if (flag) {
-      const tmp168 = renderContentOnly;
-      if (!tmp168) {
+      const tmp177 = renderContentOnly;
+      if (!tmp177) {
         let NOOP = determineChangeType(message);
         if (NOOP === constants.UPDATE) {
           NOOP = constants.NOOP;
         }
-        const obj20 = { rowType: roleStyle.DAY, changeType: NOOP, roleStyle, text: obj21.dateFormat(message.timestamp, "LL") };
-        obj21 = require("DateUtils");
-        items.push(obj20);
+        const obj22 = { rowType: roleStyle.DAY, changeType: NOOP, roleStyle, text: obj23.dateFormat(message.timestamp, "LL") };
+        obj23 = require("DateUtils");
+        items.push(obj22);
       }
     }
     if (tmp20) {
       tmp20 = !renderContentOnly;
     }
     if (tmp20) {
-      const push5 = items.push;
-      const obj22 = { rowType: roleStyle.UNREAD, changeType: determineChangeType(message), roleStyle, text: str2.toUpperCase() };
+      const push6 = items.push;
+      const obj24 = { rowType: roleStyle.UNREAD, changeType: determineChangeType(message), roleStyle, text: str2.toUpperCase() };
       const intl5 = require("intl").intl;
       str2 = intl5.string(require("intl").t.q7hm3m);
-      push5(obj22);
+      push6(obj24);
     }
     if (tmp19) {
       tmp19 = !renderContentOnly;
     }
     if (tmp19) {
-      const push6 = items.push;
-      const obj23 = { rowType: constants2.LOAD_BEFORE, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: message.loadingMore, text: intl6.string(require("intl").t.XBlaiC) };
+      const push7 = items.push;
+      const obj25 = { rowType: constants2.LOAD_BEFORE, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: message.loadingMore, text: intl6.string(require("intl").t.XBlaiC) };
       intl6 = require("intl").intl;
-      push6(obj23);
+      push7(obj25);
     }
   });
   let tmp12 = 0 === items1.length && !messages.loadingMore;

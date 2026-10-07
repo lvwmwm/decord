@@ -1,27 +1,27 @@
-// Module ID: 9847
-// Function ID: 9848
+// Module ID: 10076
+// Function ID: 10077
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 6692, 21, 4837, 588, 558, 576, 7314, 1619, 9848, 1370, 9849, 4801, 6546, 5283, 1127, 4663, 4991, 9833, 5436, 4833, 9829, 7859, 5390, 4824, 6038, 6572, 9847, 1987, 2]
+// Dependencies: [32, 19, 17, 6776, 21, 4890, 587, 558, 576, 7528, 1618, 10077, 1369, 10078, 4854, 6619, 5595, 1126, 4705, 5044, 10062, 5909, 4886, 10058, 4877, 6112, 6645, 10076, 1987, 2]
 // Exports: openForumGuidelinesActionSheet
 
-// Module 9847 (ForumGuidelinesActionSheet)
+// Module 10076 (ForumGuidelinesActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+import nativeDefault from "native" /* 587 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import LinkUtils from "LinkUtils" /* 4991 */;
-import ForumConstants from "ForumConstants" /* 6692 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9833 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 9849 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import LinkUtils from "LinkUtils" /* 5044 */;
+import ForumConstants from "ForumConstants" /* 6776 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10062 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10078 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, channel, hideActionSheetResult, tmpResult;
+let BottomSheet, channel, hideActionSheetResult, markAsSeenResult, tmpResult;
 
 let c9;
 let metroImportAll;
@@ -51,7 +51,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let ref;
   const tmp = channel;
   let obj = channel(first[8]);
-  const cResult = obj.c(69);
+  const cResult = obj.c(68);
   channel = channel.channel;
   const onPress = channel.onPress;
   const tmp4 = closure_10();
@@ -95,28 +95,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     if (cResult[5] !== channel.id) {
-      class R {
-        constructor(arg0, arg1) {
-          if (arg1 !== closure_2) {
-            tmp = closure_3;
-            tmp2 = closure_3(arg1);
-          }
+      class E {
+        constructor() {
+          obj = closure_1(closure_2[13]);
+          markAsSeenResult = obj.markAsSeen(channel.id);
           return;
         }
       }
       const items = [channel.id];
       cResult[5] = channel.id;
-      cResult[6] = tmp17;
+      cResult[6] = E;
       cResult[7] = items;
       tmp16 = items;
-      tmp15 = tmp17;
+      tmp15 = E;
     } else {
-      class R {
-        constructor(arg0, arg1) {
-          if (arg1 !== closure_2) {
-            tmp = closure_3;
-            tmp2 = closure_3(arg1);
-          }
+      class E {
+        constructor() {
+          obj = closure_1(closure_2[13]);
+          markAsSeenResult = obj.markAsSeen(channel.id);
           return;
         }
       }
@@ -124,7 +120,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const effect = obj3.useEffect(tmp15, tmp16);
     if (cResult[8] !== onPress) {
-      class L {
+      class F {
         constructor() {
           if (onPress != null) {
             tmpResult = tmp();
@@ -135,9 +131,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
       cResult[8] = onPress;
-      cResult[9] = L;
+      cResult[9] = F;
     } else {
-      class L {
+      class F {
         constructor() {
           if (onPress != null) {
             tmpResult = tmp();
@@ -149,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     if (cResult[10] === tmp8 < num3) {
-      class L {
+      class F {
         constructor() {
           if (onPress != null) {
             tmpResult = tmp();
@@ -160,9 +156,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
     }
-    let tmp21 = !tmp12;
-    if (tmp21) {
-      class L {
+    let tmp20 = !tmp12;
+    if (tmp20) {
+      class F {
         constructor() {
           if (onPress != null) {
             tmpResult = tmp();
@@ -174,22 +170,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       const obj5 = { bottom: true, style: tmp4.footer, children: closure_7(BaseTextButton, obj8) };
       const SafeAreaPaddingView = tmp(tmp2[15]).SafeAreaPaddingView;
-      obj8 = { grow: true, text: intl.string(tmp(first[17]).t["NX+WJN"]), onPress: tmp19, style: null, pillStyle: null };
+      obj8 = { grow: true, text: intl.string(tmp(first[17]).t["NX+WJN"]), onPress: tmp18, style: null, pillStyle: null };
       BaseTextButton = tmp(tmp2[16]).BaseTextButton;
       intl = tmp(tmp2[17]).intl;
       ({ buttonWrapper: obj6.style, buttonPill: obj6.pillStyle } = tmp4);
-      tmp21 = closure_7(SafeAreaPaddingView, obj5);
+      tmp20 = closure_7(SafeAreaPaddingView, obj5);
     }
     cResult[10] = tmp8 < num3;
-    cResult[11] = tmp19;
+    cResult[11] = tmp18;
     cResult[12] = tmp4.buttonPill;
     cResult[13] = tmp4.buttonWrapper;
     cResult[14] = tmp4.footer;
-    cResult[15] = tmp21;
+    cResult[15] = tmp20;
   }
   let sum;
   if (null != first) {
-    class L {
+    class F {
       constructor() {
         if (onPress != null) {
           tmpResult = tmp();
@@ -200,7 +196,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     if (obj4.isAndroid()) {
-      class L {
+      class F {
         constructor() {
           if (onPress != null) {
             tmpResult = tmp();
@@ -231,11 +227,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let items6;
   let items7;
   let items8;
+  let obj14;
   let obj15;
-  let obj16;
   let obj5;
   let obj7;
-  let tmp5Result2;
+  let tmp5Result;
   channel = channel.channel;
   const onPress = channel.onPress;
   let bottom;
@@ -269,6 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     return sum;
   }, items);
   let num = memo;
+  const tmp5 = onPress;
   if (memo == null) {
     num = 0;
   }
@@ -340,11 +337,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     obj2.open(channel.id);
   }, items5);
   const obj6 = { scrollable: true, contentHeight: tmp11, footer: tmp14, onDismiss: onClose, children: closure_8(BottomSheetScrollView, obj7) };
-  BottomSheet = tmp2(tmp3[28]).BottomSheet;
+  BottomSheet = tmp2(tmp3[26]).BottomSheet;
   let tmp19Result = canManageChannel;
   obj7 = { style: tmp.scrollContainer, scrollIndicatorInsets: { bottom }, contentContainerStyle: { paddingBottom: memo1 }, onContentSizeChange: callback, children: items8 };
   const obj8 = { style: tmp.header, children: items7 };
-  BottomSheetScrollView = tmp2(tmp3[27]).BottomSheetScrollView;
+  BottomSheetScrollView = tmp2(tmp3[25]).BottomSheetScrollView;
   const tmp20 = closure_9;
   if (canManageChannel) {
     const obj9 = { accessibilityLabel: intl2.string(channel(tmp3[17]).t.bt75uw), accessibilityRole: "button", style: tmp.editButton, onPress: callback1, children: items6 };
@@ -358,30 +355,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     items6[1] = ref(channel(tmp3[23]).PencilIcon, obj11);
     tmp19Result = tmp19(PressableOpacity, obj9);
   }
-  items7 = [tmp19Result, , ];
-  const obj12 = { IconComponent: channel(tmp3[25]).BookCheckIcon };
-  const tmp5Result = onPress(tmp3[24]);
-  items7[1] = ref(tmp5Result, obj12);
-  const obj13 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl4.string(channel(tmp3[17]).t["4d4T4l"]) };
+  items7 = [tmp19Result, ];
+  const obj12 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl4.string(channel(tmp3[17]).t["4d4T4l"]) };
   const Text2 = tmp2(tmp3[22]).Text;
   intl4 = tmp2(tmp3[17]).intl;
-  items7[2] = ref(Text2, obj13);
+  items7[1] = ref(Text2, obj12);
   items8 = [closure_8(closure_5, obj8), ];
-  const obj14 = { style: tmp.guidelinesContainer, children: ref(Text3, obj15) };
-  obj15 = { variant: "text-md/medium", color: "text-default", children: tmp5Result2.parseForumPostGuidelines(channel.topic, true, obj16) };
+  const obj13 = { style: tmp.guidelinesContainer, children: ref(Text3, obj14) };
+  obj14 = { variant: "text-md/medium", color: "text-default", children: tmp5Result.parseForumPostGuidelines(channel.topic, true, obj15) };
   Text3 = tmp2(tmp3[22]).Text;
-  obj16 = { channelId: channel.id, allowHeading: true, allowList: true, allowLinks: true };
-  tmp5Result2 = onPress(tmp3[26]);
-  items8[1] = ref(closure_5, obj14);
+  obj15 = { channelId: channel.id, allowHeading: true, allowList: true, allowLinks: true };
+  tmp5Result = tmp5(tmp3[24]);
+  items8[1] = ref(closure_5, obj13);
   const children = [ref(BottomSheet, obj6), ];
   if (tmp21Result) {
-    const obj17 = { grow: true, style: items10, pillStyle: tmp.buttonPill, text: intl5.string(channel(tmp3[17]).t["NX+WJN"]), onPress: handlePress };
+    const obj16 = { grow: true, style: items10, pillStyle: tmp.buttonPill, text: intl5.string(channel(tmp3[17]).t["NX+WJN"]), onPress: handlePress };
     items10 = [tmp.floatingButtonContainer, ];
-    const obj18 = { bottom: bottom + 16 };
-    items10[1] = obj18;
+    const obj17 = { bottom: bottom + 16 };
+    items10[1] = obj17;
     const BaseTextButton2 = tmp2(tmp3[16]).BaseTextButton;
     intl5 = tmp2(tmp3[17]).intl;
-    tmp21Result = tmp21(BaseTextButton2, obj17);
+    tmp21Result = tmp21(BaseTextButton2, obj16);
   }
   children[1] = tmp21Result;
   return closure_8(tmp20, { children });
@@ -393,7 +387,7 @@ export const openForumGuidelinesActionSheet = function openForumGuidelinesAction
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = {};
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(9847, dependencyMap.paths);
+  const tmp2 = asyncRequire(10076, dependencyMap.paths);
   const merged = Object.assign(arg0);
   openLazy(tmp2, closure_6, obj);
 };

@@ -1,13 +1,13 @@
-// Module ID: 6812
-// Function ID: 6813
+// Module ID: 6896
+// Function ID: 6897
 // Name: LaptopSpotIllustration
-// Dependencies: [21, 558, 576, 6813, 5896, 2]
+// Dependencies: [21, 558, 576, 6897, 5974, 2]
 
-// Module 6812 (LaptopSpotIllustration)
+// Module 6896 (LaptopSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef6813 from "module_6813" /* 6813 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef6897 from "module_6897" /* 6897 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6813 };
+    const obj2 = { uri: _modDef6897 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef6813 };
+  const obj2 = { uri: _modDef6897 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

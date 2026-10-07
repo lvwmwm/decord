@@ -1,17 +1,17 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15798
+// Function ID: 15799
 // Name: InGameDMsSetting
-// Dependencies: [19, 7421, 558, 2027, 1198, 576, 1127, 10874, 2]
+// Dependencies: [19, 7634, 558, 2028, 1197, 576, 1126, 11129, 2]
 
-// Module 15494 (InGameDMsSetting)
+// Module 15798 (InGameDMsSetting)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
+import intl4 from "intl" /* 1126 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -43,7 +43,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL, label: intl.string(intl4.t.JIFnN9) };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME, label: intl2.string(intl4.t.rRdsk1) };
-    intl2 = tmp(1127).intl;
+    intl2 = tmp(1126).intl;
     cResult[1] = obj3;
     tmp5 = obj3;
   } else {
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first, tmp5, ];
     const obj4 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE, label: intl3.string(intl4.t.AolKwN) };
-    intl3 = tmp(1127).intl;
+    intl3 = tmp(1126).intl;
     items[2] = obj4;
     cResult[2] = items;
     tmp6 = items;

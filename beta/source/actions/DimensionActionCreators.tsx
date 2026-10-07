@@ -1,10 +1,10 @@
-// Module ID: 10483
-// Function ID: 10484
+// Module ID: 10717
+// Function ID: 10718
 // Name: DimensionActionCreators
-// Dependencies: [585, 2]
+// Dependencies: [584, 2]
 
-// Module 10483 (DimensionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
+// Module 10717 (DimensionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

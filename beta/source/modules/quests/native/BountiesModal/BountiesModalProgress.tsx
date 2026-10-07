@@ -1,16 +1,16 @@
-// Module ID: 14556
-// Function ID: 14557
+// Module ID: 14840
+// Function ID: 14841
 // Name: BountiesModalProgress
-// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 4570, 4838, 4841, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4612, 4891, 4894, 2]
 
-// Module 14556 (BountiesModalProgress)
-import nativeDefault from "native" /* 588 */;
-import timing from "timing" /* 4838 */;
+// Module 14840 (BountiesModalProgress)
+import nativeDefault from "native" /* 587 */;
+import timing from "timing" /* 4891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const timingPresets = tmp(4841);
+const timingPresets = tmp(4894);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles(() => {

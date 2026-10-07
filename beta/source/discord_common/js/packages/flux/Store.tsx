@@ -20,7 +20,7 @@ const promise = new Promise((arg0) => {
     c3 = null;
   }
 });
-let result = size.fileFinishedImporting("../discord_common/js/packages/flux/Store.tsx");
+const result = size.fileFinishedImporting("../discord_common/js/packages/flux/Store.tsx");
 class Store {
   constructor(_dispatcher, arg1, arg2) {
     let obj = arg1;
@@ -67,12 +67,12 @@ class Store {
     obj2.removeReactChangeListener = obj2._reactChangeCallbacks.remove;
     obj2._dispatcher = _dispatcher;
     _dispatcher = obj2._dispatcher;
-    obj2._dispatchToken = _dispatcher.createToken();
-    const registerActionHandlers = obj2.registerActionHandlers;
+    const register = _dispatcher.register;
+    const name = obj2.getName();
     if (arg1 == null) {
       obj = {};
     }
-    const result = registerActionHandlers(obj, arg2);
+    obj2._dispatchToken = register(name, obj, obj2.doEmitChanges, arg2);
     closure_4.push(obj2);
     const tmp5 = c5;
     if (tmp5) {
@@ -105,10 +105,6 @@ class Store {
       _changeCallbacks = _changeCallbacks._changeCallbacks;
       _changeCallbacks.removeAllConditional();
     });
-  }
-  registerActionHandlers(arg0, arg1) {
-    const _dispatcher = this._dispatcher;
-    _dispatcher.register(this.getName(), arg0, this.doEmitChanges, arg1, this._dispatchToken);
   }
   getName() {
     let name = this.constructor.displayName;

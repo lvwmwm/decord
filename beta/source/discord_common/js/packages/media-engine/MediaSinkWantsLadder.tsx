@@ -1,10 +1,10 @@
-// Module ID: 4906
-// Function ID: 4907
+// Module ID: 4960
+// Function ID: 4961
 // Name: MediaSinkWantsLadder
-// Dependencies: [4862, 2]
+// Dependencies: [4915, 2]
 
-// Module 4906 (MediaSinkWantsLadder)
-import Constants from "Constants" /* 4862 */;
+// Module 4960 (MediaSinkWantsLadder)
+import Constants from "Constants" /* 4915 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -72,11 +72,11 @@ class MediaSinkWantsLadder {
       }
     }
   }
-  getResolution(localWant) {
+  getResolution(arg0) {
     let tmp2 = null;
     const orderedLadder = this.orderedLadder;
     for (const item10010 of orderedLadder) {
-      if (localWant >= item10010.wantValue) {
+      if (arg0 >= item10010.wantValue) {
         tmp2 = item10010;
         continue;
       } else {

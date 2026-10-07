@@ -1,62 +1,62 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 10911
+// Function ID: 10912
 // Name: hooks/QuestHooks
-// Dependencies: [5, 32, 19, 7117, 2115, 2051, 5594, 1378, 7119, 7121, 7120, 5757, 1086, 1380, 558, 576, 504, 10671, 9765, 1370, 9786, 7116, 1103, 7139, 7141, 7144, 9776, 12, 1252, 10672, 10673, 9779, 10675, 2114, 10683, 5765, 10699, 7145, 6590, 8808, 9781, 10540, 5764, 10702, 1127, 1888, 5022, 5760, 7135, 4769, 4687, 9771, 4491, 10703, 1253, 1376, 10707, 10708, 2027, 5035, 5027, 2]
+// Dependencies: [5, 32, 19, 7184, 2116, 2051, 5440, 1377, 7186, 7188, 7187, 5623, 1085, 1379, 558, 576, 504, 10912, 9994, 1369, 10015, 7183, 1102, 7206, 7208, 7211, 10005, 12, 1251, 10913, 10914, 10008, 10916, 2115, 10918, 5631, 10940, 7212, 6663, 9041, 10010, 10778, 5630, 10943, 1126, 1888, 5075, 5626, 7202, 4791, 4729, 10000, 4528, 10944, 1252, 1375, 10948, 10949, 2028, 5088, 5080, 2]
 // Exports: useFetchQuestHomeBounties, useManuallyStartConsoleQuest, useQuestForMemberListSocialEntryPoint, useShouldShowPreviewToolTab
 
-// Module 10670 (hooks/QuestHooks)
+// Module 10911 (hooks/QuestHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import intl7 from "intl" /* 1127 */;
-import _modDef1252 from "module_1252" /* 1252 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import intl7 from "intl" /* 1126 */;
+import _modDef1251 from "module_1251" /* 1251 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import NumberUtils from "NumberUtils" /* 1888 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import PremiumUtils from "PremiumUtils" /* 4491 */;
-import shared from "shared" /* 4687 */;
-import merged5 from "merged5" /* 5022 */;
-import QualtricsActionCreators from "QualtricsActionCreators" /* 5027 */;
-import SurveyActionTypes2 from "SurveyActionTypes" /* 5035 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5765 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6590 */;
-import QuestDataUtils from "QuestDataUtils" /* 7116 */;
-import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7121 */;
-import AnalyticsActions from "AnalyticsActions" /* 7135 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7139 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
-import QuestType from "QuestType" /* 7144 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 8808 */;
-import QuestActionCreators from "QuestActionCreators" /* 9765 */;
-import AssetUtils from "AssetUtils" /* 9771 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9776 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9779 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9781 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 9786 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10540 */;
-import RenewableEndDateSortExperimentDefault from "RenewableEndDateSortExperiment" /* 10672 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10683 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10699 */;
-import QuestConsoleStartError from "QuestConsoleStartError" /* 10702 */;
-import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 10703 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import PremiumUtils from "PremiumUtils" /* 4528 */;
+import shared from "shared" /* 4729 */;
+import merged5 from "merged5" /* 5075 */;
+import QualtricsActionCreators from "QualtricsActionCreators" /* 5080 */;
+import SurveyActionTypes2 from "SurveyActionTypes" /* 5088 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5631 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6663 */;
+import QuestDataUtils from "QuestDataUtils" /* 7183 */;
+import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7188 */;
+import AnalyticsActions from "AnalyticsActions" /* 7202 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7206 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7208 */;
+import QuestType from "QuestType" /* 7211 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 9041 */;
+import QuestActionCreators from "QuestActionCreators" /* 9994 */;
+import AssetUtils from "AssetUtils" /* 10000 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10005 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10008 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 10010 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 10015 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10778 */;
+import RenewableEndDateSortExperimentDefault from "RenewableEndDateSortExperiment" /* 10913 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10918 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10940 */;
+import QuestConsoleStartError from "QuestConsoleStartError" /* 10943 */;
+import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 10944 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AdDeliveryStore_mod from "AdDeliveryStore" /* 7117 */;
-import LocaleStore_mod from "LocaleStore" /* 2115 */;
+import AdDeliveryStore_mod from "AdDeliveryStore" /* 7184 */;
+import LocaleStore_mod from "LocaleStore" /* 2116 */;
 import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
-import UserStore from "UserStore" /* 1378 */;
-import BountyStore from "BountyStore" /* 7119 */;
-import QuestStore from "QuestStore" /* 7120 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
-import Constants from "Constants" /* 1086 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
+import UserStore from "UserStore" /* 1377 */;
+import BountyStore from "BountyStore" /* 7186 */;
+import QuestStore from "QuestStore" /* 7187 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -438,7 +438,7 @@ function doesQuestPassRewardFilter(config, arg1) {
     let hasInGameQuestRewardResult = obj.hasInGameQuestReward(config.config);
     const tmp2 = require;
     if (!hasInGameQuestRewardResult) {
-      const tmp2Result = tmp2(9776);
+      const tmp2Result = tmp2(10005);
       hasInGameQuestRewardResult = tmp2Result.hasQuestRewardCode(config.config);
     }
     return hasInGameQuestRewardResult;
@@ -543,7 +543,7 @@ function sortQuests(arr, arg1, arg2) {
   });
 }
 function seededQuestSortKey(arg0, arg1) {
-  const obj = _modDef1252;
+  const obj = _modDef1251;
   return obj.v3("" + arg0 + ":" + arg1) >>> 0;
 }
 function useAllQuests(quests, sortMethod) {
@@ -901,7 +901,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStoresObject = obj4.useStateFromStoresObject(items2, () => ({ isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests }));
   const isFetchingCurrentQuests = stateFromStoresObject.isFetchingCurrentQuests;
   lastFetchedCurrentQuests = stateFromStoresObject.lastFetchedCurrentQuests;
-  const obj5 = obj(10671);
+  const obj5 = obj(10912);
   isEligibleForQuests = obj5.getIsEligibleForQuests();
   const items3 = [obj.fetchPolicy, isEligibleForQuests, hasFetched, isFetchingCurrentQuests, lastFetchedCurrentQuests, obj.callerSource];
   const effect = isEligibleForQuests.useEffect(() => {
@@ -1007,7 +1007,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     tmp14 = cResult[5];
   }
-  const MobileQuestHomeSortPriorityExperiment = tmp(10673).MobileQuestHomeSortPriorityExperiment;
+  const MobileQuestHomeSortPriorityExperiment = tmp(10914).MobileQuestHomeSortPriorityExperiment;
   const enabled2 = MobileQuestHomeSortPriorityExperiment.useConfig(tmp14).enabled;
   if (cResult[6] === stateFromStores1) {
     if (cResult[7] === enabled2) {
@@ -1332,7 +1332,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((config, arg1) => {
     tmp7 = cResult[3];
   }
   let tmp9 = !tmp4;
-  const INELIGIBLE = tmp(9779).QuestOrbMultiplierEligibilityType.INELIGIBLE;
+  const INELIGIBLE = tmp(10008).QuestOrbMultiplierEligibilityType.INELIGIBLE;
   if (!tmp4) {
     tmp9 = tmp5;
   }
@@ -1684,7 +1684,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channelId, ar
             claimedAt = userStatus.claimedAt;
           }
           let tmp8 = null != claimedAt;
-          const tmpResult = tmp(7139);
+          const tmpResult = tmp(7206);
           if (tmp8) {
             tmp8 = !tmpResult.isStreamingAndCanWatch(arg1, stateFromStores);
           }
@@ -2227,7 +2227,7 @@ let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   quest = quest.quest;
   ({ questContent: importDefault, sourceQuestContent: dependencyMap } = quest);
   let closure_3 = closure_56({ quest });
-  let obj = quest(10675);
+  let obj = quest(10916);
   let closure_4 = obj.useGetQuestImpressionId();
   return () => {
     const tmp = QuestPlatformUtils;
@@ -2622,13 +2622,13 @@ const tmp27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const articleURL = obj2.getArticleURL(constants7.QUEST_HOW_TO_PLAYSTATION);
     const obj3 = HelpdeskUtilsDefault;
     const articleURL1 = obj3.getArticleURL(constants7.QUEST_HOW_TO_XBOX);
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj4 = { psHelpdeskArticle: articleURL, xboxHelpdeskArticle: articleURL1 };
     const formatResult = intl.format(intl7.t.beN4DG, obj4);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const format = intl2.format;
     let tmp16 = articleURL1;
-    const HVS7nh = tmp(1127).t.HVS7nh;
+    const HVS7nh = tmp(1126).t.HVS7nh;
     if (tmp4.playstationAccounts.length > 0) {
       tmp16 = articleURL;
     }
@@ -2959,7 +2959,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   [tmp5, r10016] = _slicedToArray(closure_58(id.id), 2);
   const tmp4 = _slicedToArray(closure_58(id.id), 2);
   if (cResult[0] !== id) {
-    const tmpResult = tmp(10683);
+    const tmpResult = tmp(10918);
     const result = tmpResult.supportedTaskPlatforms(id);
     cResult[0] = id;
     cResult[1] = result;
@@ -3136,33 +3136,33 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
         }
       }
     }
-    const str2 = tmp(5022);
+    const str2 = tmp(5075);
     const match = str2.match(arg1);
-    const obj3 = { taskType: tmp(5765).FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
+    const obj3 = { taskType: tmp(5631).FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
     const _with = match.with({ percentComplete: 0 }, tmp17).with;
     match.with({ percentComplete: 0 }, tmp17);
-    const obj4 = { taskType: tmp(5765).FirstPartyQuestTaskTypes.PLAY_ACTIVITY };
+    const obj4 = { taskType: tmp(5631).FirstPartyQuestTaskTypes.PLAY_ACTIVITY };
     const _with2 = _with(obj3, tmp18).with;
     _with(obj3, tmp18);
-    const obj5 = { taskType: tmp(5765).FirstPartyQuestTaskTypes.WATCH_VIDEO };
+    const obj5 = { taskType: tmp(5631).FirstPartyQuestTaskTypes.WATCH_VIDEO };
     const _with3 = _with2(obj4, tmp19).with;
     _with2(obj4, tmp19);
-    const obj6 = { taskType: tmp(5765).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE };
+    const obj6 = { taskType: tmp(5631).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE };
     const _with4 = _with3(obj5, tmp20).with;
     _with3(obj5, tmp20);
-    const obj7 = { taskType: tmp(5765).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+    const obj7 = { taskType: tmp(5631).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
     const _with5 = _with4(obj6, tmp22).with;
     _with4(obj6, tmp22);
-    const obj8 = { taskType: tmp(5765).FirstPartyQuestTaskTypes.PLAY_ON_XBOX };
+    const obj8 = { taskType: tmp(5631).FirstPartyQuestTaskTypes.PLAY_ON_XBOX };
     const _with6 = _with5(obj7, tmp24).with;
     _with5(obj7, tmp24);
-    const obj9 = { taskType: tmp(5765).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION };
+    const obj9 = { taskType: tmp(5631).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION };
     const _with7 = _with6(obj8, tmp25).with;
     _with6(obj8, tmp25);
-    const obj10 = { taskType: tmp(5765).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME };
+    const obj10 = { taskType: tmp(5631).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME };
     const _with8 = _with7(obj9, tmp26).with;
     _with7(obj9, tmp26);
-    const obj11 = { taskType: tmp(5765).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY };
+    const obj11 = { taskType: tmp(5631).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY };
     const _with9 = _with8(obj10, tmp28).with;
     _with8(obj10, tmp28);
     const _with9Result = _with9(obj11, tmp29);
@@ -3302,7 +3302,7 @@ const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
       }
     }
     const obj12 = { lastPlatformProgress: tmp15, currentProgressingPlatform: CONSOLE, selectedPlatform: tmp5 };
-    const str3 = tmp(5022);
+    const str3 = tmp(5075);
     const match1 = str3.match(obj12);
     const obj13 = { currentProgressingPlatform: constants.CONSOLE };
     const obj14 = { currentProgressingPlatform: constants.DESKTOP };
@@ -3492,7 +3492,7 @@ const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
           let tmp20;
           const _Symbol = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1127).intl;
+            const intl = tmp(1126).intl;
             const stringResult = intl.string(intl7.t.MFGxFM);
             cResult[12] = stringResult;
             tmp20 = stringResult;
@@ -3505,7 +3505,7 @@ const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
           let tmp24;
           const _Symbol2 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl2 = tmp(1127).intl;
+            const intl2 = tmp(1126).intl;
             const stringResult1 = intl2.string(intl7.t.BV6xDm);
             cResult[13] = stringResult1;
             tmp24 = stringResult1;
@@ -3520,7 +3520,7 @@ const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
         tmp18 = items;
       }
       const tmpResult = PlatformUtils;
-      const isMacResult = tmpResult.isMac() && tmp5.taskType === tmp(5765).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp9;
+      const isMacResult = tmpResult.isMac() && tmp5.taskType === tmp(5631).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp9;
       cResult[6] = tmp9;
       cResult[7] = tmp5.taskType;
       cResult[8] = isMacResult;
@@ -3537,7 +3537,7 @@ const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
     cResult[5] = tmp15;
     tmp14 = tmp15;
   }
-  const DESKTOP = tmp(5765).FirstPartyQuestTaskTypesSets.DESKTOP;
+  const DESKTOP = tmp(5631).FirstPartyQuestTaskTypesSets.DESKTOP;
   const hasItem = DESKTOP.has(tmp5.taskType) && tmp5.percentComplete > 0;
   ({ percentComplete: tmp3[0], taskType: tmp3[1] } = tmp5);
   cResult[2] = hasItem;
@@ -3586,15 +3586,15 @@ const tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
   }
   const tmp9Result4 = PlatformUtils;
   const items = [];
-  const isMacResult = tmp9Result4.isMac() && tmp2.taskType === tmp9(5765).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp6;
+  const isMacResult = tmp9Result4.isMac() && tmp2.taskType === tmp9(5631).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp6;
   if (isMacResult) {
     const push = items.push;
-    const intl = tmp9(1127).intl;
+    const intl = tmp9(1126).intl;
     push(intl.string(intl7.t.MFGxFM));
   }
   if (tmp13) {
     const push2 = items.push;
-    const intl2 = tmp9(1127).intl;
+    const intl2 = tmp9(1126).intl;
     push2(intl2.string(intl7.t.BV6xDm));
   }
   return items;
@@ -3976,7 +3976,7 @@ const tmp36 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, DARK) => {
       tmp10 = tmp13;
     }
     const tmpResult4 = require("AssetUtils");
-    const questAsset = tmpResult4.getQuestAsset(stateFromStores, tmp(9771).QuestAssetType.COSPONSOR_LOGO_TYPE, tmp11);
+    const questAsset = tmpResult4.getQuestAsset(stateFromStores, tmp(10000).QuestAssetType.COSPONSOR_LOGO_TYPE, tmp11);
     cResult[4] = stateFromStores;
     cResult[5] = tmp11;
     cResult[6] = questAsset;
@@ -4059,18 +4059,18 @@ const tmp37 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
   const tmpResult12 = PremiumUtils;
   const isPremiumResult = tmpResult12.isPremium(stateFromStores, PremiumTypes.TIER_2);
   if (null != collectibleQuestRewardDuration) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     obj2 = { rewardName: defaultRewardName };
     const formatToPlainStringResult = intl2.formatToPlainString(intl7.t.o97tNn, obj2);
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const obj3 = { rewardName: defaultRewardName, expirationDate: collectibleQuestRewardExtendableExpirationDate };
     const formatToPlainStringResult1 = intl3.formatToPlainString(intl7.t.PkyRZo, obj3);
-    const intl4 = tmp(1127).intl;
+    const intl4 = tmp(1126).intl;
     const obj4 = { rewardName: defaultRewardName, duration: collectibleQuestRewardDuration };
-    let formatToPlainStringResult2 = intl4.formatToPlainString(tmp(1127).t.ie4YK0, obj4);
-    const intl5 = tmp(1127).intl;
+    let formatToPlainStringResult2 = intl4.formatToPlainString(tmp(1126).t.ie4YK0, obj4);
+    const intl5 = tmp(1126).intl;
     const obj5 = { duration: collectibleQuestRewardDuration, rewardName: defaultRewardName };
-    let formatToPlainStringResult3 = intl5.formatToPlainString(tmp(1127).t.yCpc0U, obj5);
+    let formatToPlainStringResult3 = intl5.formatToPlainString(tmp(1126).t.yCpc0U, obj5);
     if (result1) {
       if (result) {
         if (isPremiumResult) {
@@ -4081,15 +4081,15 @@ const tmp37 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
         formatToPlainStringResult3 = formatToPlainStringResult1;
       }
     } else {
-      const intl6 = tmp(1127).intl;
+      const intl6 = tmp(1126).intl;
       const obj6 = { duration: collectibleQuestRewardDuration, decorationName: defaultRewardName };
-      intl6.formatToPlainString(tmp(1127).t.tTlItm, obj6);
+      intl6.formatToPlainString(tmp(1126).t.tTlItm, obj6);
     }
     formatToPlainStringResult5 = forResult;
   } else {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj7 = { decorationName: defaultRewardName };
-    formatToPlainStringResult5 = intl.formatToPlainString(tmp(1127).t.l9uXL8, obj7);
+    formatToPlainStringResult5 = intl.formatToPlainString(tmp(1126).t.l9uXL8, obj7);
   }
   cResult[2] = stateFromStores;
   cResult[3] = config;
@@ -4115,23 +4115,23 @@ const tmp37 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
   const obj7 = PremiumUtils;
   const isPremiumResult = obj7.isPremium(stateFromStores, PremiumTypes.TIER_2);
   if (null == collectibleQuestRewardDuration) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const obj8 = { decorationName: defaultRewardName };
     return intl2.formatToPlainString(intl7.t.l9uXL8, obj8);
   } else {
     let formatToPlainStringResult4;
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const obj9 = { rewardName: defaultRewardName };
     const formatToPlainStringResult = intl3.formatToPlainString(intl7.t.o97tNn, obj9);
-    const intl4 = tmp(1127).intl;
+    const intl4 = tmp(1126).intl;
     const obj10 = { rewardName: defaultRewardName, expirationDate: collectibleQuestRewardExtendableExpirationDate };
     const formatToPlainStringResult1 = intl4.formatToPlainString(intl7.t.PkyRZo, obj10);
-    const intl5 = tmp(1127).intl;
+    const intl5 = tmp(1126).intl;
     const obj11 = { rewardName: defaultRewardName, duration: collectibleQuestRewardDuration };
-    let formatToPlainStringResult2 = intl5.formatToPlainString(tmp(1127).t.ie4YK0, obj11);
-    const intl6 = tmp(1127).intl;
+    let formatToPlainStringResult2 = intl5.formatToPlainString(tmp(1126).t.ie4YK0, obj11);
+    const intl6 = tmp(1126).intl;
     const obj12 = { duration: collectibleQuestRewardDuration, rewardName: defaultRewardName };
-    let formatToPlainStringResult3 = intl6.formatToPlainString(tmp(1127).t.yCpc0U, obj12);
+    let formatToPlainStringResult3 = intl6.formatToPlainString(tmp(1126).t.yCpc0U, obj12);
     if (result1) {
       if (result) {
         if (isPremiumResult) {
@@ -4143,9 +4143,9 @@ const tmp37 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
       }
       formatToPlainStringResult4 = formatToPlainStringResult3;
     } else {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const obj13 = { duration: collectibleQuestRewardDuration, decorationName: defaultRewardName };
-      formatToPlainStringResult4 = intl.formatToPlainString(tmp(1127).t.tTlItm, obj13);
+      formatToPlainStringResult4 = intl.formatToPlainString(tmp(1126).t.tTlItm, obj13);
     }
     return formatToPlainStringResult4;
   }
@@ -4263,7 +4263,7 @@ let tmp41 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
     let isDismissedResult = null != userStatus1;
     if (isDismissedResult) {
       const tmpResult = QuestDataUtils;
-      isDismissedResult = tmpResult.isDismissed(userStatus.userStatus, tmp(5760).QuestContent.ACTIVITY_PANEL);
+      isDismissedResult = tmpResult.isDismissed(userStatus.userStatus, tmp(5626).QuestContent.ACTIVITY_PANEL);
     }
     cResult[0] = userStatus;
     cResult[1] = isDismissedResult;
@@ -4688,7 +4688,7 @@ let tmp47 = ReactCompilerGating.isReactCompilerEnabled() ? ((questIds) => {
       }
     }
     const mapped = questIds.map(tmp11);
-    const found = mapped.filter(tmp(1376).isNotNullish);
+    const found = mapped.filter(tmp(1375).isNotNullish);
     const found1 = found.filter(tmp12);
     cResult[3] = questIds;
     cResult[4] = stateFromStores;

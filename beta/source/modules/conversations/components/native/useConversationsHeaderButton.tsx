@@ -1,17 +1,17 @@
-// Module ID: 7334
-// Function ID: 7335
+// Module ID: 7547
+// Function ID: 7548
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 7022, 7019, 7335, 1107, 7336, 7337, 504, 7340, 7339, 7342, 1127, 2]
+// Dependencies: [5, 19, 7103, 7105, 7548, 1106, 7549, 7550, 504, 7553, 7552, 7555, 1126, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 7334 (useConversationsHeaderButton)
-import intl2 from "intl" /* 1127 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 7337 */;
-import PaperIcon from "PaperIcon" /* 7340 */;
+// Module 7547 (useConversationsHeaderButton)
+import intl2 from "intl" /* 1126 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 7550 */;
+import PaperIcon from "PaperIcon" /* 7553 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7022 */;
-import ConversationConstants from "ConversationConstants" /* 7019 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7103 */;
+import ConversationConstants from "ConversationConstants" /* 7105 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -121,10 +121,10 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
   const effect = callback.useEffect(() => {
     let hasChannelDataResult = !isTopicalNavEnabled;
     if (isTopicalNavEnabled) {
-      hasChannelDataResult = ConversationsStore.hasChannelData(channel.id);
+      hasChannelDataResult = ChannelConversationsStore.hasChannelData(channel.id);
     }
     if (!hasChannelDataResult) {
-      hasChannelDataResult = ConversationsStore.isPendingFetch(channel.id);
+      hasChannelDataResult = ChannelConversationsStore.isPendingFetch(channel.id);
     }
     if (!hasChannelDataResult) {
       callback();
@@ -133,7 +133,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
   const items3 = [stateFromStores];
   const items4 = [channel.id];
   const tmpResult3 = tmp(tmp2[8]);
-  stateFromStores = tmpResult3.useStateFromStores(items3, () => ConversationsStore.getEdgeMarker(channel.id, "after"), items4);
+  stateFromStores = tmpResult3.useStateFromStores(items3, () => ChannelConversationsStore.getEdgeMarker(channel.id, "after"), items4);
   const items5 = [stateFromStores, isTopicalNavEnabled, callback];
   const effect1 = callback.useEffect(() => {
     const tmp = isTopicalNavEnabled;
@@ -156,7 +156,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
   const items7 = [channel.id];
   const tmpResult4 = tmp(tmp2[8]);
   const stateFromStores1 = tmpResult4.useStateFromStores(items6, () => {
-    const channelConversations = ConversationsStore.getChannelConversations(channel.id);
+    const channelConversations = ChannelConversationsStore.getChannelConversations(channel.id);
     let num;
     if (channelConversations != null) {
       num = channelConversations.length;

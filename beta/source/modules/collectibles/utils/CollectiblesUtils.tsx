@@ -1,20 +1,20 @@
-// Module ID: 7011
-// Function ID: 7012
+// Module ID: 7097
+// Function ID: 7098
 // Name: utils/CollectiblesUtils
-// Dependencies: [4884, 4892, 7012, 558, 576, 6814, 4515, 2]
+// Dependencies: [4937, 4945, 7098, 558, 576, 6898, 4552, 2]
 // Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl
 
-// Module 7011 (utils/CollectiblesUtils)
+// Module 7097 (utils/CollectiblesUtils)
 import react from "react" /* 576 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4884 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4892 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 6814 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7012 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4937 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4945 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 6898 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7098 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DateUtils = tmp(4515);
+const DateUtils = tmp(4552);
 const ApplicationStreamPresets = StreamSettingsConstants.ApplicationStreamPresets;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let first;
@@ -104,7 +104,7 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     }
     const tmp2 = require;
     if (noCache.variantsReturnStyle === ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = tmp2(7012).ShopVariantsReturnStyle.VARIANTS_GROUP;
+      obj.variants_return_style = tmp2(7098).ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;

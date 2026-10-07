@@ -1,23 +1,23 @@
-// Module ID: 16643
-// Function ID: 16644
+// Module ID: 16998
+// Function ID: 16999
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 9834, 2051, 1086, 21, 4837, 588, 558, 576, 1619, 504, 9833, 10435, 1189, 10453, 10454, 1127, 6460, 16644, 6477, 2]
+// Dependencies: [32, 19, 17, 10063, 2051, 1085, 21, 4890, 587, 558, 576, 1618, 504, 10062, 10669, 1188, 10687, 10688, 1126, 6535, 16999, 6552, 2]
 
-// Module 16643 (ChannelSettingsInstantInvites)
+// Module 16998 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import FastestListDefault from "FastestList" /* 6477 */;
-import InstantInvite from "InstantInvite" /* 10435 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10453 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10454 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import FastestListDefault from "FastestList" /* 6552 */;
+import InstantInvite from "InstantInvite" /* 10669 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10687 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10688 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 9834 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 10063 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -682,9 +682,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (!loading) {
     if (0 === memo1.length) {
       const obj4 = { lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: intl.string(require("intl").t["+nLJkZ"]), body: intl2.string(require("intl").t.F53CAc) };
-      const EmptyState = tmp7(1189).EmptyState;
-      intl = tmp7(1127).intl;
-      intl2 = tmp7(1127).intl;
+      const EmptyState = tmp7(1188).EmptyState;
+      intl = tmp7(1126).intl;
+      intl2 = tmp7(1126).intl;
       tmp21 = closure_9(EmptyState, obj4);
     }
     return tmp21;
@@ -699,14 +699,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp21 = tmp17Result;
   }
   const obj7 = { style: tmp.content, children: items8 };
-  items8 = [closure_9(tmp7(6460).SceneLoadingIndicator, {}), ];
+  items8 = [closure_9(tmp7(6535).SceneLoadingIndicator, {}), ];
   let tmp19Result = null;
   const tmp17 = closure_10;
   const tmp18 = stateFromStoresArray;
   const tmp19 = closure_9;
   if (memo1.length > 0) {
     const obj8 = { item: memo1[0], onMeasured: callback };
-    tmp19Result = tmp19(tmp2(16644), obj8);
+    tmp19Result = tmp19(tmp2(16999), obj8);
   }
   items8[1] = tmp19Result;
   tmp17Result = tmp17(tmp18, obj7);

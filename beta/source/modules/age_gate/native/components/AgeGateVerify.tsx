@@ -1,21 +1,21 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17450
+// Function ID: 17451
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 5047, 7863, 7865, 4833, 5282, 6546, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 5100, 8084, 8086, 4886, 5594, 6619, 2]
 
-// Module 17093 (AgeGateVerify)
+// Module 17450 (AgeGateVerify)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AgeGateUtils from "AgeGateUtils" /* 5047 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AgeGateUtils from "AgeGateUtils" /* 5100 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

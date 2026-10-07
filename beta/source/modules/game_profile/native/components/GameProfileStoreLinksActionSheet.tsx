@@ -1,23 +1,23 @@
-// Module ID: 8160
-// Function ID: 8161
+// Module ID: 8354
+// Function ID: 8355
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 8134, 4528, 1619, 1127, 4833, 5282, 4801, 6624, 6038, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8328, 4565, 1618, 1126, 4886, 5594, 4854, 6701, 6112, 2]
 
-// Module 8160 (GameProfileStoreLinksActionSheet)
+// Module 8354 (GameProfileStoreLinksActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import BottomSheetModal from "BottomSheetModal" /* 6038 */;
-import ActionSheet2 from "ActionSheet" /* 6624 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8134 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import BottomSheetModal from "BottomSheetModal" /* 6112 */;
+import ActionSheet2 from "ActionSheet" /* 6701 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8328 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,8 +68,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   ({ header, headerText } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(trackAction(1127).t["/4gj6r"]);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(trackAction(1126).t["/4gj6r"]);
     cResult[2] = stringResult;
     tmp9 = stringResult;
   } else {
@@ -77,7 +77,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[3] !== tmp4.headerText) {
     const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp9 };
-    const tmp13 = closure_4(trackAction(4833).Text, obj3);
+    const tmp13 = closure_4(trackAction(4886).Text, obj3);
     cResult[3] = tmp4.headerText;
     cResult[4] = tmp13;
     tmp11 = tmp13;
@@ -86,9 +86,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const headerText2 = tmp4.headerText;
   if (cResult[5] !== gameName) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const obj4 = { gameName };
-    const formatResult = intl2.format(trackAction(1127).t["0acM2Y"], obj4);
+    const formatResult = intl2.format(trackAction(1126).t["0acM2Y"], obj4);
     cResult[5] = gameName;
     cResult[6] = formatResult;
     tmp14 = formatResult;
@@ -126,8 +126,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   return tmp30;
                 }
               }
-              const obj5 = { children: closure_5(trackAction(6038).BottomSheetScrollView, obj6) };
-              const ActionSheet = tmp(6624).ActionSheet;
+              const obj5 = { children: closure_5(trackAction(6112).BottomSheetScrollView, obj6) };
+              const ActionSheet = tmp(6701).ActionSheet;
               obj6 = { contentContainerStyle: tmp8, children: items };
               items = [tmp18, tmp26];
               const tmp33 = closure_4(ActionSheet, obj5);
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[13] = tmp21;
     tmp18 = tmp21;
   }
-  const tmp17 = closure_4(trackAction(4833).Text, { variant: "text-md/medium", color: "text-subtle", style: headerText2, children: tmp14 });
+  const tmp17 = closure_4(trackAction(4886).Text, { variant: "text-md/medium", color: "text-subtle", style: headerText2, children: tmp14 });
   cResult[7] = tmp4.headerText;
   cResult[8] = tmp14;
   cResult[9] = tmp17;

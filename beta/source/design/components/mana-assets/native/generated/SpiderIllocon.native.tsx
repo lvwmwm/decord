@@ -1,13 +1,13 @@
-// Module ID: 16371
-// Function ID: 16372
+// Module ID: 16692
+// Function ID: 16693
 // Name: SpiderIllocon
-// Dependencies: [21, 558, 576, 16372, 5896, 2]
+// Dependencies: [21, 558, 576, 16693, 5974, 2]
 
-// Module 16371 (SpiderIllocon)
+// Module 16692 (SpiderIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef16372 from "module_16372" /* 16372 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef16693 from "module_16693" /* 16693 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16372 };
+    const obj2 = { uri: _modDef16693 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef16372 };
+  const obj2 = { uri: _modDef16693 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

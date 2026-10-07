@@ -1,12 +1,12 @@
-// Module ID: 14188
-// Function ID: 14189
+// Module ID: 14472
+// Function ID: 14473
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 558, 576, 2027, 1127, 6405, 7613, 14163, 2]
+// Dependencies: [19, 21, 558, 576, 2028, 1126, 6477, 7835, 14445, 2]
 
-// Module 14188 (UserProfileLegacyUsernameSwitch)
+// Module 14472 (UserProfileLegacyUsernameSwitch)
 import Fragment from "Fragment" /* 21 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6405 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7613 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6477 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7835 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,15 +21,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = setting(576);
   const cResult = obj.c(11);
   ({ legacyUsername, pendingLegacyUsernameDisabled } = arg0);
-  const LegacyUsernameDisabled = setting(2027).LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = setting(2028).LegacyUsernameDisabled;
   setting = LegacyUsernameDisabled.useSetting();
   let tmp5 = setting;
   if (undefined !== pendingLegacyUsernameDisabled) {
     tmp5 = pendingLegacyUsernameDisabled;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(setting(1127).t["3cWDuO"]);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(setting(1126).t["3cWDuO"]);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -44,8 +44,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1127).intl;
-      const stringResult1 = intl3.string(setting(1127).t["3cWDuO"]);
+      const intl3 = tmp(1126).intl;
+      const stringResult1 = intl3.string(setting(1126).t["3cWDuO"]);
       cResult[4] = stringResult1;
       tmp11 = stringResult1;
     } else {
@@ -77,19 +77,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp14;
       }
     }
-    const tmp16 = jsx(setting(14163).UserProfileEditFormSwitch, { value: !tmp5, label: first, subLabel: tmp9, accessibilityLabel: tmp11, onValueChange: tmp13 });
+    const tmp16 = jsx(setting(14445).UserProfileEditFormSwitch, { value: !tmp5, label: first, subLabel: tmp9, accessibilityLabel: tmp11, onValueChange: tmp13 });
     cResult[7] = !tmp5;
     cResult[8] = tmp9;
     cResult[9] = tmp13;
     cResult[10] = tmp16;
     tmp14 = tmp16;
   }
-  const intl2 = tmp(1127).intl;
+  const intl2 = tmp(1126).intl;
   if (tmp5) {
-    stringResult2 = intl2.string(tmp(1127).t.eD6Yq0);
+    stringResult2 = intl2.string(tmp(1126).t.eD6Yq0);
   } else {
     let obj3 = { username: legacyUsername };
-    stringResult2 = intl2.formatToPlainString(tmp(1127).t.aYhclf, obj3);
+    stringResult2 = intl2.formatToPlainString(tmp(1126).t.aYhclf, obj3);
   }
   cResult[1] = tmp5;
   cResult[2] = legacyUsername;
@@ -102,7 +102,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   pendingLegacyUsernameDisabled = pendingLegacyUsernameDisabled.pendingLegacyUsernameDisabled;
   let setting;
   const legacyUsername = pendingLegacyUsernameDisabled.legacyUsername;
-  const LegacyUsernameDisabled = setting(2027).LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = setting(2028).LegacyUsernameDisabled;
   setting = LegacyUsernameDisabled.useSetting();
   let tmp4 = setting;
   if (undefined !== pendingLegacyUsernameDisabled) {
@@ -110,9 +110,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let obj = {
     value: !tmp4,
-    label: intl.string(tmp(1127).t["3cWDuO"]),
+    label: intl.string(tmp(1126).t["3cWDuO"]),
     subLabel: stringResult,
-    accessibilityLabel: intl3.string(tmp(1127).t["3cWDuO"]),
+    accessibilityLabel: intl3.string(tmp(1126).t["3cWDuO"]),
     onValueChange(arg0) {
       if (!arg0 === setting) {
         const obj3 = UserSettingsAccountActionCreators;
@@ -124,17 +124,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   };
-  const UserProfileEditFormSwitch = tmp(14163).UserProfileEditFormSwitch;
-  intl = tmp(1127).intl;
-  const intl2 = tmp(1127).intl;
+  const UserProfileEditFormSwitch = tmp(14445).UserProfileEditFormSwitch;
+  intl = tmp(1126).intl;
+  const intl2 = tmp(1126).intl;
   const tmp5 = jsx;
   if (tmp4) {
-    stringResult = intl2.string(tmp(1127).t.eD6Yq0);
+    stringResult = intl2.string(tmp(1126).t.eD6Yq0);
   } else {
     let obj2 = { username: legacyUsername };
-    stringResult = intl2.formatToPlainString(tmp(1127).t.aYhclf, obj2);
+    stringResult = intl2.formatToPlainString(tmp(1126).t.aYhclf, obj2);
   }
-  intl3 = tmp(1127).intl;
+  intl3 = tmp(1126).intl;
   return tmp5(UserProfileEditFormSwitch, obj);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileLegacyUsernameSwitch.tsx");

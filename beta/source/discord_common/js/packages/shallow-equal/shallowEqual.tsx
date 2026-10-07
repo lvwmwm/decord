@@ -51,7 +51,7 @@ export default function shallowEqual(arg0, arg1, arr) {
     return arg0 === arg1;
   }
 };
-export const areArraysShallowEqual = function areArraysShallowEqual(memo, current) {
+export const areArraysShallowEqual = function areArraysShallowEqual(colors, current) {
   let logCallback;
   let shouldWarnLargeObjects;
   closure_0 = current;
@@ -60,6 +60,6 @@ export const areArraysShallowEqual = function areArraysShallowEqual(memo, curren
     tmp = closure_0;
   }
   ({ logCallback, shouldWarnLargeObjects } = tmp);
-  const tmp2 = null != current && memo.length === current.length && memo.every((item, index) => closure_0[index] === item);
+  const tmp2 = null != current && colors.length === current.length && colors.every((item, index) => closure_0[index] === item);
   return tmp2;
 };

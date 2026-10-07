@@ -1,23 +1,23 @@
-// Module ID: 16217
-// Function ID: 16218
+// Module ID: 16520
+// Function ID: 16521
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 2051, 4470, 5057, 4472, 1086, 21, 4837, 588, 558, 576, 504, 7327, 11367, 16218, 6880, 11660, 1403, 4833, 4824, 5436, 16211, 1113, 1127, 16219, 5282, 2]
+// Dependencies: [19, 17, 2051, 4507, 5110, 4509, 1085, 21, 4890, 587, 558, 576, 504, 7540, 11623, 16521, 6965, 7521, 1402, 4886, 4877, 5909, 16514, 1112, 1126, 16522, 5594, 2]
 
-// Module 16217 (GuildHomeResources)
-import nativeDefault from "native" /* 588 */;
-import router_utils from "router_utils" /* 1113 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6880 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 11660 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16211 */;
+// Module 16520 (GuildHomeResources)
+import nativeDefault from "native" /* 587 */;
+import router_utils from "router_utils" /* 1112 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 7521 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16514 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import MessageStore from "MessageStore" /* 5057 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import Constants from "Constants" /* 1086 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let map1;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const AssetRegistryDefault = tmp5(16219);
+const AssetRegistryDefault = tmp5(16522);
 ({ View: closure_4, Image: hasOwnProperty } = react_native);
 ({ Permissions: c10, Routes: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
@@ -167,9 +167,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       }
     }
   }
-  const tmpResult8 = tmp(7327);
+  const tmpResult8 = tmp(7540);
   const forumPostMediaProperties = tmpResult8.useForumPostMediaProperties(tmp14, false);
-  const tmpResult9 = tmp(7327);
+  const tmpResult9 = tmp(7540);
   const firstMediaIsEmbed = tmpResult9.useFirstMediaIsEmbed(tmp14, false);
   if (forumPostMediaProperties != null) {
     class R {
@@ -191,9 +191,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
         return MessageStore.getMessages(channelId);
       }
     }
-    const tmpResult10 = tmp(11367);
+    const tmpResult10 = tmp(11623);
     const shouldObscure = tmpResult10.useSharedMediaProps(obj2).shouldObscure;
-    stateFromStores(16218)(tmp14);
+    stateFromStores(16521)(tmp14);
     if (cResult[14] === stateFromStores) {
       class R {
         constructor() {
@@ -294,10 +294,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   const obj3 = channelId(504);
   const stateFromStores2 = obj3.useStateFromStores(items2, () => MessageStore.getMessages(channelId));
   const firstResult = stateFromStores2.first();
-  const obj5 = channelId(7327);
+  const obj5 = channelId(7540);
   const forumPostMediaProperties = obj5.useForumPostMediaProperties(firstResult, false);
   let length;
-  const obj6 = channelId(7327);
+  const obj6 = channelId(7540);
   const firstMediaIsEmbed = obj6.useFirstMediaIsEmbed(firstResult, false);
   if (forumPostMediaProperties != null) {
     length = forumPostMediaProperties.length;
@@ -306,9 +306,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  const tmp2Result = channelId(11367);
+  const tmp2Result = channelId(11623);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(16218)(firstResult);
+  const tmp11 = stateFromStores(16521)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
@@ -324,31 +324,31 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   if (null != stateFromStores) {
     if (stateFromStores1) {
       const obj4 = { channelId: stateFromStores.id, icon };
-      const tmp10Result = stateFromStores(1403);
+      const tmp10Result = stateFromStores(1402);
       const resourceChannelIconURL = tmp10Result.getResourceChannelIconURL(obj4);
       const obj7 = { onPress: tmp14, style: tmp.channelContainer, children: items5 };
       const obj8 = { style: tmp.textContent, children: items4 };
-      const PressableOpacity = tmp2(5436).PressableOpacity;
+      const PressableOpacity = tmp2(5909).PressableOpacity;
       const obj9 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: title };
-      items4 = [closure_12(tmp2(4833).Text, obj9), , ];
+      items4 = [closure_12(tmp2(4886).Text, obj9), , ];
       let tmp19Result = tmp16 && null != tmp11;
       const tmp18 = closure_4;
       if (tmp19Result) {
         const obj10 = { variant: "text-sm/normal", color: "text-default", style: tmp.messageContent, lineClamp: 3, ellipsizeMode: "tail", children: tmp10Result3.parse(tmp11, true, obj11) };
-        const Text = tmp2(4833).Text;
+        const Text = tmp2(4886).Text;
         obj11 = { guildId: null, channelId: null };
         ({ guild_id: obj15.guildId, id: obj15.channelId } = stateFromStores);
-        tmp10Result3 = stateFromStores(4824);
+        tmp10Result3 = stateFromStores(4877);
         tmp19Result = tmp19(Text, obj10);
       }
       items4[1] = tmp19Result;
       let tmp19Result4 = !tmp16;
       if (tmp19Result4) {
         const obj12 = { variant: "text-sm/normal", color: "text-default", style: tmp.messageContent, lineClamp: 3, ellipsizeMode: "tail", children: tmp10Result4.parse(description, true, obj13) };
-        const Text2 = tmp2(4833).Text;
+        const Text2 = tmp2(4886).Text;
         obj13 = { guildId: null, channelId: null };
         ({ guild_id: obj18.guildId, id: obj18.channelId } = stateFromStores);
-        tmp10Result4 = stateFromStores(4824);
+        tmp10Result4 = stateFromStores(4877);
         tmp19Result4 = tmp19(Text2, obj12);
       }
       items4[2] = tmp19Result4;
@@ -376,9 +376,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
             tmp19Result6 = null;
             if (null != first) {
               const obj17 = { channel: stateFromStores, media: first, isEmbed: firstMediaIsEmbed, embedLeftBorderColor: getEmbedColor(firstResult, flag), firstMessageId: id, containerStyle: tmp.thumbnail };
-              const ForumPostMediaThumbnail = tmp2(11367).ForumPostMediaThumbnail;
-              getEmbedColor = tmp2(7327).getEmbedColor;
-              channelId(7327);
+              const ForumPostMediaThumbnail = tmp2(11623).ForumPostMediaThumbnail;
+              getEmbedColor = tmp2(7540).getEmbedColor;
+              channelId(7540);
               if (flag == null) {
                 flag = false;
               }
@@ -432,9 +432,9 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const _Symbol2 = Symbol;
     const emptyStateContainer = tmp4.emptyStateContainer;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(tmp(1127).t.owvC9U) };
-      const Text = tmp(4833).Text;
-      intl = tmp(1127).intl;
+      const obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(tmp(1126).t.owvC9U) };
+      const Text = tmp(4886).Text;
+      intl = tmp(1126).intl;
       const tmp18 = closure_12(Text, obj2);
       cResult[2] = tmp18;
       tmp16 = tmp18;
@@ -452,8 +452,8 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const _Symbol3 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
-      const stringResult = intl2.string(tmp(1127).t["3iCBUn"]);
+      const intl2 = tmp(1126).intl;
+      const stringResult = intl2.string(tmp(1126).t["3iCBUn"]);
       cResult[5] = stringResult;
       tmp23 = stringResult;
     } else {
@@ -461,7 +461,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[6] !== tmp6) {
       const obj4 = { onPress: tmp6, text: tmp23 };
-      const tmp27 = closure_12(tmp(5282).Button, obj4);
+      const tmp27 = closure_12(tmp(5594).Button, obj4);
       cResult[6] = tmp6;
       cResult[7] = tmp27;
       tmp25 = tmp27;
@@ -544,9 +544,9 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const arr = useResourceChannelsDefault(guildId);
   if (0 === arr.length) {
     const obj2 = { style: tmp.emptyStateContainer, children: items };
-    const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(guildId(1127).t.owvC9U) };
-    const Text = guildId(4833).Text;
-    intl = guildId(1127).intl;
+    const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(guildId(1126).t.owvC9U) };
+    const Text = guildId(4886).Text;
+    intl = guildId(1126).intl;
     items = [closure_12(Text, obj3), , ];
     const obj4 = { style: tmp.emptyStateImage, source: AssetRegistryDefault };
     items[1] = closure_12(closure_5, obj4);
@@ -559,10 +559,10 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             obj.transitionTo(unpackModuleId.CHANNEL(tmp, defaultChannel.id));
           }
         },
-      text: intl2.string(guildId(1127).t["3iCBUn"])
+      text: intl2.string(guildId(1126).t["3iCBUn"])
     };
-    const Button = guildId(5282).Button;
-    intl2 = guildId(1127).intl;
+    const Button = guildId(5594).Button;
+    intl2 = guildId(1126).intl;
     items[2] = closure_12(Button, obj5);
     tmp6 = closure_13(closure_4, obj2);
   } else {

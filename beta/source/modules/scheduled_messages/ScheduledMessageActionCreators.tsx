@@ -1,16 +1,16 @@
-// Module ID: 7268
-// Function ID: 7269
+// Module ID: 7474
+// Function ID: 7475
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1086, 2048, 585, 1283, 7269, 4656, 2035, 1391, 2]
+// Dependencies: [32, 5, 1085, 2048, 584, 1282, 7475, 4698, 2036, 1390, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 7268 (ScheduledMessageActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
+// Module 7474 (ScheduledMessageActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3, closure_4, content, content2, flags, scheduledMessageId;
@@ -63,7 +63,7 @@ let obj = function _createScheduledMessage() {
             errorMsg = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -195,7 +195,7 @@ obj = function _updateScheduledMessage() {
               errorMsg = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

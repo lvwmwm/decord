@@ -1,13 +1,13 @@
-// Module ID: 10299
-// Function ID: 10300
+// Module ID: 10530
+// Function ID: 10531
 // Name: WishlistBannerUtils
-// Dependencies: [19, 1127, 8235, 6648, 558, 576, 2]
+// Dependencies: [19, 1126, 8430, 6727, 558, 576, 2]
 // Exports: getBannerMode
 
-// Module 10299 (WishlistBannerUtils)
+// Module 10530 (WishlistBannerUtils)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1127 */;
+import intl5 from "intl" /* 1126 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((wishlistInDmLength) 
     let tmp13;
     let tmp15;
     if (cResult[0] !== recipientName) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const obj2 = { username: recipientName };
       const formatToPlainStringResult = intl3.formatToPlainString(intl5.t["YcL/Vr"], obj2);
       cResult[0] = recipientName;
@@ -127,7 +127,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((wishlistInDmLength) 
     let tmp10;
     let tmp12;
     if (cResult[4] !== recipientName) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const obj4 = { username: recipientName };
       const formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t.dIDKgi, obj4);
       cResult[4] = recipientName;
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((wishlistInDmLength) 
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { title: intl.string(intl5.t.BCi1gT), showIcons: false };
-      intl = tmp(1127).intl;
+      intl = tmp(1126).intl;
       cResult[8] = obj6;
       tmp9 = obj6;
     } else {

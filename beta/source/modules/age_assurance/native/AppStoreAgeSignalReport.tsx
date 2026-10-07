@@ -1,19 +1,24 @@
-// Module ID: 17231
-// Function ID: 17232
+// Module ID: 17598
+// Function ID: 17599
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1378, 1086, 8032, 7894, 1243, 1370, 8028, 8029, 1253, 5736, 4866, 2]
-// Exports: beginAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
+// Dependencies: [32, 5, 1377, 1986, 1085, 8255, 8115, 1242, 1369, 8251, 8252, 1252, 5580, 4919, 2]
+// Exports: beginAppStoreAgeSignalReport, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 17231 (AppStoreAgeSignalReport)
-import Constants from "Constants" /* 1086 */;
+// Module 17598 (AppStoreAgeSignalReport)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8115 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c5, c6, closure_9, dependencyMap, importDefault;
+let _require, c0, c1, c5, c6, closure_12, dependencyMap, importDefault;
 
+let metroImportAll;
+let metroImportDefault;
 function collectAgeSignal() {
   return obj(...arguments);
 }
@@ -60,10 +65,10 @@ let obj = function _collectAgeSignal() {
           c3 = 0;
           closure_0 = closure_2;
           const obj8 = { tags: { source: "parental_consent_manager", step: "collect_age_signal" } };
-          const obj3 = closure_129_1(closure_129_2[6]);
+          const obj3 = closure_129_1(closure_129_2[7]);
           obj3.captureException(closure_0, obj8);
           let str = "android";
-          const obj5 = closure_129_0(closure_129_2[7]);
+          const obj5 = closure_129_0(closure_129_2[8]);
           if (obj5.isIOS()) {
             str = "ios";
           }
@@ -157,7 +162,7 @@ obj = function _performAgeCheck() {
             c4 = 0;
             let closure_7 = closure_3;
             const obj8 = { tags: { source: "parental_consent_manager", step: "perform_age_check" } };
-            const obj13 = closure_130_1(closure_130_2[6]);
+            const obj13 = closure_130_1(closure_130_2[7]);
             obj13.captureException(closure_7, obj8);
           } else if (2 === c5) {
             if (arg0 === 1) {
@@ -176,7 +181,7 @@ obj = function _performAgeCheck() {
               c5 = 3;
               c6 = 1;
               const obj11 = { value: obj10.getAgeSignalIntegrityToken(closure_4, closure_3), done: false };
-              obj10 = closure_130_0(closure_130_2[8]);
+              obj10 = closure_130_0(closure_130_2[9]);
               return obj11;
             }
           } else if (3 === c5) {
@@ -193,7 +198,7 @@ obj = function _performAgeCheck() {
               c5 = 4;
               c6 = 1;
               const obj14 = { value: obj7.getAppStoreAgeSignalAssertion(closure_3, closure_0), done: false };
-              obj7 = closure_130_0(closure_130_2[8]);
+              obj7 = closure_130_0(closure_130_2[9]);
               return obj14;
             }
           } else if (4 === c5) {
@@ -207,7 +212,7 @@ obj = function _performAgeCheck() {
               return obj15;
             } else {
               closure_6 = value;
-              const obj4 = closure_130_0(closure_130_2[9]);
+              const obj4 = closure_130_0(closure_130_2[10]);
               c5 = 5;
               c6 = 1;
               const obj16 = { value: obj4.submitAgeSignal(closure_3, closure_5, closure_0, "app_start", closure_6), done: false };
@@ -223,10 +228,10 @@ obj = function _performAgeCheck() {
             return obj17;
           } else {
             obj = { platform: obj2.getNativePlatform() };
-            const track = closure_130_1(closure_130_2[10]).track;
-            const PARENTAL_CONSENT_CHECKED = closure_130_6.PARENTAL_CONSENT_CHECKED;
-            const tmp8 = closure_130_1(closure_130_2[10]);
-            obj2 = closure_130_0(closure_130_2[7]);
+            const track = closure_130_1(closure_130_2[11]).track;
+            const PARENTAL_CONSENT_CHECKED = closure_130_7.PARENTAL_CONSENT_CHECKED;
+            const tmp8 = closure_130_1(closure_130_2[11]);
+            obj2 = closure_130_0(closure_130_2[8]);
             track(PARENTAL_CONSENT_CHECKED, obj);
             c4 = 0;
           }
@@ -246,6 +251,11 @@ obj = function _performAgeCheck() {
   });
   return obj(...arguments);
 };
+function mustWaitForForeground() {
+  obj = PlatformUtils;
+  const isAndroidResult = obj.isAndroid() && AppStateStore.getState() !== metroImportAll.ACTIVE;
+  return isAndroidResult;
+}
 obj = function _settleAppStoreAgeSignalReport() {
   obj = _asyncToGenerator(async (arg0, value) => {
     if (c0 === 2) {
@@ -271,7 +281,7 @@ obj = function _settleAppStoreAgeSignalReport() {
             c0 = 3;
             const obj4 = { value, done: true };
             return obj4;
-          } else if (null != closure_2_8) {
+          } else if (null != closure_2_10) {
             const items = [tmp11, ];
             const obj2 = require("TimeUtils");
             items[1] = obj2.sleep(15000);
@@ -298,142 +308,300 @@ obj = function _settleAppStoreAgeSignalReport() {
   });
   return obj(...arguments);
 };
-const AnalyticEvents = Constants.AnalyticEvents;
-let c7 = false;
-let c8 = null;
-let c9 = null;
-let c10 = 0;
+({ AnalyticEvents: metroImportDefault, AppStates: metroImportAll } = Constants);
+let c9 = false;
+let c10 = null;
+let c11 = null;
+let c12 = null;
+let c13 = 0;
 let result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAgeSignalReport.tsx");
 
 export const beginAppStoreAgeSignalReport = function beginAppStoreAgeSignalReport() {
-  function run() {
-    return obj(...arguments);
-  }
-  c7 = true;
-  const sum = c10 + 1;
-  c10 = sum;
-  let closure_8 = null;
-  const tmp = c7;
-  let result = null != UserStore.getCurrentUser();
-  if (result) {
+  let closure_0;
+  let closure_2;
+  let obj2;
+  c9 = true;
+  const sum = c13 + 1;
+  c13 = sum;
+  let closure_10 = null;
+  let tmp3 = null != UserStore.getCurrentUser();
+  if (tmp3) {
     obj = require("AppStoreAgeSignalSupport");
-    result = obj.isAppStoreAgeSignalSupported();
+    let result = obj.isAppStoreAgeSignalSupported();
+    const tmp4 = _require;
+    if (result) {
+      const tmp4Result = tmp4(5580);
+      result = tmp4Result.shouldCollectAppStoreSignal();
+    }
+    tmp3 = result;
   }
-  if (result) {
-    let obj2 = require("RegionalFeatureConfigUtils");
-    result = obj2.shouldCollectAppStoreSignal();
-  }
-  if (result) {
-    _require = !tmp;
-    importDefault = sum;
-    obj = function _run() {
-      obj = _asyncToGenerator(async (arg0, value) => {
-        function performAgeCheck() {
-          return closure_1_13(...arguments);
-        }
-        if (c5 === 2) {
-          c5 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: null };
+  if (tmp3) {
+    const obj3 = require("PlatformUtils");
+    const isAndroidResult = obj3.isAndroid() && AppStateStore.getState() !== constants.ACTIVE;
+    if (!isAndroidResult) {
+      _require = tmp12;
+      importDefault = sum;
+      function _run() {
+        obj = _asyncToGenerator(async (arg0, value) => {
+          function performAgeCheck() {
+            return closure_1_16(...arguments);
           }
-        } else {
-          let c3;
-          try {
-            c5 = 2;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                let closure_1 = tmp;
-                closure_0 = tmp;
-                c3 = 1;
-                if (null != closure_2_2) {
-                  c4 = 3;
-                  c5 = 1;
-                  const obj4 = { value: tmp22, done: false };
-                  return obj4;
+          if (c5 === 2) {
+            c5 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj2 = { value, done: true };
+              return obj2;
+            } else {
+              return { value: "IconComponent", done: null };
+            }
+          } else {
+            let c3;
+            try {
+              c5 = 2;
+              if (0 === c4) {
+                if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 3;
+                  const obj3 = { value, done: true };
+                  return obj3;
+                } else {
+                  let closure_1 = tmp;
+                  let closure_0 = tmp;
+                  c3 = 1;
+                  if (null != closure_2_2) {
+                    c4 = 2;
+                    c5 = 1;
+                    const obj4 = { value: tmp27, done: false };
+                    return obj4;
+                  }
                 }
-              }
-            } else if (1 === c4) {
-              c3 = 0;
-              const tmp18 = closure_2;
-              if (c9 === closure_129_4) {
-                c9 = null;
-              }
-              throw tmp18;
-            } else if (2 === c4) {
-              if (arg0 === 1) {
+              } else if (1 === c4) {
+                c3 = 0;
+                const tmp23 = closure_2;
+                if (c12 === closure_129_4) {
+                  c12 = null;
+                }
+                throw tmp23;
+              } else if (2 === c4) {
+                if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 0;
+                  if (c12 === closure_129_4) {
+                    c12 = null;
+                  }
+                  c5 = 3;
+                  const obj5 = { value, done: true };
+                  return obj5;
+                } else if (closure_129_1 !== closure_1_13) {
+                  c3 = 0;
+                  if (c12 === closure_129_4) {
+                    c12 = null;
+                  }
+                  c5 = 3;
+                  return { value: "IconComponent", done: null };
+                } else if (closure_1_17()) {
+                  const obj6 = { isColdLaunch: closure_129_0, connection: closure_129_1 };
+                  c3 = 0;
+                  if (c12 === closure_129_4) {
+                    c12 = null;
+                  }
+                  c5 = 3;
+                  const obj7 = { value: undefined, done: true };
+                  return obj7;
+                }
+              } else if (arg0 === 1) {
                 c5 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c3 = 0;
-                if (c9 === closure_129_4) {
-                  c9 = null;
+                if (c12 === closure_129_4) {
+                  c12 = null;
                 }
                 c5 = 3;
-                const obj5 = { value, done: true };
-                return obj5;
+                obj = { value, done: true };
+                return obj;
               } else {
                 c3 = 0;
-                if (c9 === closure_129_4) {
-                  c9 = null;
+                if (c12 === closure_129_4) {
+                  c12 = null;
                 }
                 c5 = 3;
                 return { value: "IconComponent", done: null };
               }
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              if (c9 === closure_129_4) {
-                c9 = null;
+              c4 = 3;
+              c5 = 1;
+              const obj8 = { value: performAgeCheck(closure_129_0), done: false };
+              return obj8;
+            } catch (tmp31) {
+              closure_2 = tmp31;
+              if (0 === c3) {
+                c5 = 3;
+                throw tmp31;
+              } else {
+                c4 = 1;
               }
-              c5 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else if (closure_129_1 !== closure_1_10) {
-              c3 = 0;
-              if (c9 === closure_129_4) {
-                c9 = null;
-              }
-              c5 = 3;
-              return { value: "IconComponent", done: null };
-            }
-            c4 = 2;
-            c5 = 1;
-            const obj6 = { value: performAgeCheck(closure_129_0), done: false };
-            return obj6;
-          } catch (tmp26) {
-            closure_2 = tmp26;
-            if (0 === c3) {
-              c5 = 3;
-              throw tmp26;
-            } else {
-              c4 = 1;
             }
           }
-        }
-      });
-      return obj(...arguments);
-    };
-    dependencyMap = closure_9;
-    const tmp9 = run();
-    let closure_4 = tmp9;
-    closure_9 = tmp9;
-    closure_8 = tmp9;
+        });
+        return obj(...arguments);
+      }
+      dependencyMap = closure_12;
+      const tmp14 = (function run() {
+        return obj(...arguments);
+      })();
+      let closure_4 = tmp14;
+      closure_12 = tmp14;
+      closure_10 = tmp14;
+    }
+  }
+};
+export const resumeAppStoreAgeSignalReport = function resumeAppStoreAgeSignalReport() {
+  let require;
+  const tmp = c11;
+  if (null != c11) {
+    c11 = null;
+    let tmp5 = null != UserStore.getCurrentUser();
+    if (tmp5) {
+      const tmp3 = dependencyMap;
+      obj = AppStoreAgeSignalSupport;
+      let result = obj.isAppStoreAgeSignalSupported();
+      const tmp2 = require;
+      if (result) {
+        const tmp2Result = tmp2(5580);
+        result = tmp2Result.shouldCollectAppStoreSignal();
+      }
+      tmp5 = result;
+    }
+    if (tmp5) {
+      ({ isColdLaunch: require, connection: importDefault } = tmp);
+      obj = function _run() {
+        obj = _asyncToGenerator(async (arg0, value) => {
+          function performAgeCheck() {
+            return closure_1_16(...arguments);
+          }
+          if (c5 === 2) {
+            c5 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj2 = { value, done: true };
+              return obj2;
+            } else {
+              return { value: "IconComponent", done: null };
+            }
+          } else {
+            let c3;
+            try {
+              c5 = 2;
+              if (0 === c4) {
+                if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 3;
+                  const obj3 = { value, done: true };
+                  return obj3;
+                } else {
+                  let closure_1 = tmp;
+                  let closure_0 = tmp;
+                  c3 = 1;
+                  if (null != closure_2_2) {
+                    c4 = 2;
+                    c5 = 1;
+                    const obj4 = { value: tmp27, done: false };
+                    return obj4;
+                  }
+                }
+              } else if (1 === c4) {
+                c3 = 0;
+                const tmp23 = closure_2;
+                if (c12 === closure_129_4) {
+                  c12 = null;
+                }
+                throw tmp23;
+              } else if (2 === c4) {
+                if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 0;
+                  if (c12 === closure_129_4) {
+                    c12 = null;
+                  }
+                  c5 = 3;
+                  const obj5 = { value, done: true };
+                  return obj5;
+                } else if (closure_129_1 !== closure_1_13) {
+                  c3 = 0;
+                  if (c12 === closure_129_4) {
+                    c12 = null;
+                  }
+                  c5 = 3;
+                  return { value: "IconComponent", done: null };
+                } else if (closure_1_17()) {
+                  const obj6 = { isColdLaunch: closure_129_0, connection: closure_129_1 };
+                  c3 = 0;
+                  if (c12 === closure_129_4) {
+                    c12 = null;
+                  }
+                  c5 = 3;
+                  const obj7 = { value: undefined, done: true };
+                  return obj7;
+                }
+              } else if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 0;
+                if (c12 === closure_129_4) {
+                  c12 = null;
+                }
+                c5 = 3;
+                obj = { value, done: true };
+                return obj;
+              } else {
+                c3 = 0;
+                if (c12 === closure_129_4) {
+                  c12 = null;
+                }
+                c5 = 3;
+                return { value: "IconComponent", done: null };
+              }
+              c4 = 3;
+              c5 = 1;
+              const obj8 = { value: performAgeCheck(closure_129_0), done: false };
+              return obj8;
+            } catch (tmp31) {
+              closure_2 = tmp31;
+              if (0 === c3) {
+                c5 = 3;
+                throw tmp31;
+              } else {
+                c4 = 1;
+              }
+            }
+          }
+        });
+        return obj(...arguments);
+      };
+      dependencyMap = closure_12;
+      const tmp7 = (function run() {
+        return obj(...arguments);
+      })();
+      let closure_4 = tmp7;
+      closure_12 = tmp7;
+      let closure_10 = tmp7;
+    }
   }
 };
 export const settleAppStoreAgeSignalReport = function settleAppStoreAgeSignalReport() {

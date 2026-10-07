@@ -1,22 +1,22 @@
-// Module ID: 8714
-// Function ID: 8715
+// Module ID: 8939
+// Function ID: 8940
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 2073, 8588, 5306, 1086, 6945, 8596, 558, 576, 504, 8598, 1376, 1985, 8593, 8703, 6947, 2]
+// Dependencies: [32, 19, 2074, 8795, 5788, 1085, 7030, 8803, 558, 576, 504, 8805, 1375, 1985, 8800, 8928, 7034, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useCommand
 
-// Module 8714 (ApplicationCommandQueryApi)
+// Module 8939 (ApplicationCommandQueryApi)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
+import Constants from "Constants" /* 1085 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
 import Server from "Server" /* 1985 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6945 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 8703 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7030 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7034 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 8928 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 8588 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 8795 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp2;
-const ApplicationCommandQueryTypes = tmp(8596);
-const ApplicationCommandBuiltIns = tmp2(8598);
+const ApplicationCommandQueryTypes = tmp(8803);
+const ApplicationCommandBuiltIns = tmp2(8805);
 function findCommandInSection(found, commandId) {
   let str;
   let closure_0 = commandId;
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 return section.section.id === first1;
               }
             }
-            const tmp49 = guild_id(8598).BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN];
+            const tmp49 = guild_id(8805).BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN];
             const _Symbol2 = Symbol;
             if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
               class G {
@@ -795,7 +795,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arr) => 
     }
   }
   const mapped1 = arr.map((item) => closure_0[item]);
-  const found = mapped1.filter(tmp(1376).isNotNullish);
+  const found = mapped1.filter(tmp(1375).isNotNullish);
   cResult[0] = arr;
   let commands2;
   if (tmp10 != null) {
@@ -1082,7 +1082,7 @@ let result = size.fileFinishedImporting("modules/application_commands/Applicatio
 export const getCachedCommand = function getCachedCommand(type, commandId, applicationId) {
   let closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "Array", command: "apply", section: "ty" };
+    return { application: "Array", command: "apply", section: "ip" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -1133,7 +1133,7 @@ export const getCachedCommand = function getCachedCommand(type, commandId, appli
         }
       }
     }
-    return { application: "Array", command: "apply", section: "ty" };
+    return { application: "Array", command: "apply", section: "ip" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -1281,7 +1281,7 @@ export const useCommand = function useCommand(cResult, commandId) {
         }
       }
     }
-    return { command: "diversity", application: "a" };
+    return { command: "Symbol", application: "cursor" };
   }, items);
 };
 export const useCommandsForApplication = tmp6;

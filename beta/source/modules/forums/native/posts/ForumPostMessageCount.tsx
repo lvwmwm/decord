@@ -1,20 +1,20 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11632
+// Function ID: 11633
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 4837, 588, 1370, 558, 576, 7314, 1127, 5386, 4833, 10825, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 1369, 558, 576, 7528, 1126, 5855, 4886, 11070, 2]
 
-// Module 11376 (ForumPostMessageCount)
+// Module 11632 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import ChatIcon2 from "ChatIcon" /* 5386 */;
-import ForumHooks from "ForumHooks" /* 7314 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 10825 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import ChatIcon2 from "ChatIcon" /* 5855 */;
+import ForumHooks from "ForumHooks" /* 7528 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11070 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
       tmp6 = cResult[2];
     }
     if (cResult[3] !== messageCountText) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const obj3 = { count: messageCountText };
       const formatToPlainStringResult = intl.formatToPlainString(intl3.t["8M0DrB"], obj3);
       cResult[3] = messageCountText;
@@ -128,8 +128,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
             let tmp19 = null != unreadCount;
             if (tmp19) {
               const obj5 = { variant: "text-sm/semibold", color: "text-brand", style: tmp4.messageUnreadCount, children: items1 };
-              const Text = tmp(4833).Text;
-              const intl2 = tmp(1127).intl;
+              const Text = tmp(4886).Text;
+              const intl2 = tmp(1126).intl;
               const obj6 = { count: unreadCount };
               items1 = ["(", intl2.format(intl3.t.z3PEth, obj6), ")"];
               tmp19 = hasOwnProperty(Text, obj5);
@@ -143,7 +143,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
       }
       if (isMaxMessageCount) {
         const obj7 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-        tmp14Result = tmp14(tmp(4833).Text, obj7);
+        tmp14Result = tmp14(tmp(4886).Text, obj7);
       } else {
         const obj8 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
         tmp14Result = tmp14(AnimatedCounterDefault, obj8);
@@ -193,10 +193,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   }
   const obj2 = { style: items, accessibilityLabel: intl.formatToPlainString(intl3.t["8M0DrB"], { count: messageCountText }), children: items1 };
   items = [tmp.container, containerStyle];
-  intl = tmp2(1127).intl;
+  intl = tmp2(1126).intl;
   const obj3 = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead, color: str2 };
   str2 = "icon-muted";
-  const ChatIcon = tmp2(5386).ChatIcon;
+  const ChatIcon = tmp2(5855).ChatIcon;
   const tmp6 = View;
   if (hasUnreads) {
     str2 = "interactive-text-default";
@@ -204,7 +204,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   items1 = [React3(ChatIcon, obj3), , ];
   if (isMaxMessageCount) {
     const obj4 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-    tmp7Result = tmp7(tmp2(4833).Text, obj4);
+    tmp7Result = tmp7(tmp2(4886).Text, obj4);
   } else {
     const obj5 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
     tmp7Result = tmp7(AnimatedCounterDefault, obj5);
@@ -213,8 +213,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   let tmp5Result = null != unreadCount;
   if (tmp5Result) {
     const obj6 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.messageUnreadCount, children: items2 };
-    const Text = tmp2(4833).Text;
-    const intl2 = tmp2(1127).intl;
+    const Text = tmp2(4886).Text;
+    const intl2 = tmp2(1126).intl;
     const obj7 = { count: unreadCount };
     items2 = ["(", intl2.format(intl3.t.z3PEth, obj7), ")"];
     tmp5Result = tmp5(Text, obj6);

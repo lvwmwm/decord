@@ -1,16 +1,16 @@
-// Module ID: 14054
-// Function ID: 14055
+// Module ID: 14331
+// Function ID: 14332
 // Name: providers
-// Dependencies: [5, 5594, 4741, 1086, 2011, 1097, 8768, 8770, 5596, 8765, 585, 1122, 8525, 5719, 2]
+// Dependencies: [5, 5440, 5316, 1085, 2011, 1096, 9029, 9031, 5442, 9026, 584, 1121, 8732, 6677, 2]
 
-// Module 14054 (providers)
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8768 */;
+// Module 14331 (providers)
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
-import Constants_mod from "Constants" /* 4741 */;
-import Constants_mod2 from "Constants" /* 1086 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
+import Constants_mod from "Constants" /* 5316 */;
+import Constants_mod2 from "Constants" /* 1085 */;
 import Constants_mod3 from "Constants" /* 2011 */;
-import Constants_mod4 from "Constants" /* 1097 */;
+import Constants_mod4 from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,6 +80,7 @@ obj2 = {
       const self5 = this;
       let str2 = "Command not available for this application";
       const self6 = this;
+      let tmp15 = obj5;
       const tmp16 = new tmp4(tmp[9])(obj5, "Command not available for this application");
       throw tmp16;
     } else if (set.has(validateApplicationResult)) {
@@ -204,22 +205,22 @@ obj2 = {
                 self = this;
                 const self2 = this;
                 const str = "Refreshing access token did not return a new access token";
-                const tmp13 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
-                throw tmp13;
+                const tmp15 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
+                throw tmp15;
               } else {
                 self = closure_0;
                 let obj = { access_token };
-                closure_0(obj);
+                const tmp9 = closure_0(obj);
                 c5 = 0;
               }
             }
             c7 = 3;
             return { value: "IconComponent", done: null };
-          } catch (tmp36) {
-            closure_4 = tmp36;
+          } catch (tmp38) {
+            closure_4 = tmp38;
             if (0 === c5) {
               c7 = 3;
-              throw tmp36;
+              throw tmp38;
             } else {
               c6 = 1;
             }
@@ -306,7 +307,7 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
           access_token = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "Reflect", done: true };
+          return { value: "Reflect", done: null };
         }
       } else if (1 === c3) {
         if (arg0 === 1) {

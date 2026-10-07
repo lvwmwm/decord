@@ -1,27 +1,26 @@
-// Module ID: 12668
-// Function ID: 12669
+// Module ID: 12931
+// Function ID: 12932
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1086, 2048, 21, 4837, 588, 1198, 1127, 558, 576, 12669, 8101, 2027, 2035, 6807, 4833, 6801, 4788, 5940, 5436, 2]
+// Dependencies: [32, 19, 17, 1085, 2048, 21, 4890, 587, 1197, 1126, 558, 576, 8294, 2028, 2036, 6891, 4886, 6885, 4812, 6017, 5909, 2]
 
-// Module 12668 (UserProfilePrivacyNotice)
+// Module 12931 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4788 */;
-import XSmallIcon from "XSmallIcon" /* 5940 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6807 */;
-import useUserIsTeen from "useUserIsTeen" /* 8101 */;
-import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 12669 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
+import XSmallIcon from "XSmallIcon" /* 6017 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
+import useUserIsTeen from "useUserIsTeen" /* 8294 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,64 +39,55 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, borderW
 let closure_9 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let tmp7;
+  let tmp6;
   const obj = react2;
   const cResult = obj.c(2);
-  const obj2 = PrivateProfilesExperiment;
-  const isInPrivateProfilesExperiment = obj2.useIsInPrivateProfilesExperiment("UserProfilePrivacyNotice");
-  const obj3 = useUserIsTeen;
-  const userIsTeen = obj3.useUserIsTeen();
+  const obj2 = useUserIsTeen;
+  const userIsTeen = obj2.useUserIsTeen();
   const ProfileVisibility = UserSettings.ProfileVisibility;
-  if (isInPrivateProfilesExperiment) {
-    if (userIsTeen) {
-      if (tmp6 !== preloaded_user_settings.ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
-        let first;
-        const _Symbol = Symbol;
-        if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const items = [dismissible_content.DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
-          cResult[0] = items;
-          first = items;
-        } else {
-          first = cResult[0];
-        }
-        tmp7 = first;
+  if (userIsTeen) {
+    if (tmp5 !== preloaded_user_settings.ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
+      let first;
+      const _Symbol = Symbol;
+      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+        const items = [dismissible_content.DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
+        cResult[0] = items;
+        first = items;
+      } else {
+        first = cResult[0];
       }
-      return tmp7;
+      tmp6 = first;
     }
+    return tmp6;
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [];
     cResult[1] = items1;
-    tmp7 = items1;
+    tmp6 = items1;
   } else {
-    tmp7 = cResult[1];
+    tmp6 = cResult[1];
   }
 }) : (() => {
-  let isInPrivateProfilesExperiment;
+  let setting;
   let userIsTeen;
-  const obj = isInPrivateProfilesExperiment(userIsTeen[12]);
-  isInPrivateProfilesExperiment = obj.useIsInPrivateProfilesExperiment("UserProfilePrivacyNotice");
-  const obj2 = isInPrivateProfilesExperiment(userIsTeen[13]);
-  userIsTeen = obj2.useUserIsTeen();
-  const ProfileVisibility = isInPrivateProfilesExperiment(userIsTeen[14]).ProfileVisibility;
-  const setting = ProfileVisibility.useSetting();
-  let items = [isInPrivateProfilesExperiment, userIsTeen, setting];
+  const obj = userIsTeen(setting[12]);
+  userIsTeen = obj.useUserIsTeen();
+  const ProfileVisibility = userIsTeen(setting[13]).ProfileVisibility;
+  setting = ProfileVisibility.useSetting();
+  let items = [userIsTeen, setting];
   return react.useMemo(() => {
-    const tmp = isInPrivateProfilesExperiment;
+    const tmp = userIsTeen;
     if (tmp) {
-      const tmp2 = userIsTeen;
-      if (tmp2) {
-        const tmp4 = require;
-        if (setting !== preloaded_user_settings.ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
-          const items = [tmp4(2035).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
-        }
-        return [];
+      const tmp3 = require;
+      if (setting !== preloaded_user_settings.ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
+        const items = [tmp3(2036).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
       }
+      return [];
     }
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = closure_10();
   const obj = useSelectedDismissibleContent;
   return _slicedToArray(obj.useSelectedDismissibleContent(tmp), 1)[0] === dismissible_content.DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE;
@@ -127,13 +117,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         variant: "text-sm/normal",
         color: "text-link",
         onPress() {
-          const obj = closure_1_0(closure_1_1[18]);
+          const obj = closure_1_0(closure_1_1[17]);
           const obj2 = { screen: constants.DATA_AND_PRIVACY };
           return obj.openUserSettings(obj2);
         },
         children
       };
-      return closure_1_7(closure_0(dependencyMap[17]).Text, obj, arg1);
+      return closure_1_7(closure_0(dependencyMap[16]).Text, obj, arg1);
     };
     cResult[0] = fn;
     first1 = fn;
@@ -143,7 +133,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (first !== require("dismissible_content").DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE) {
     return null;
   } else {
-    let tmp19;
+    let dqQ7AN;
+    let tmp18;
+    let tmp21;
     if (cResult[1] === setting) {
       if (cResult[2] === tmp4.container) {
         if (cResult[3] === tmp4.icon) {
@@ -169,150 +161,122 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             if (cResult[17] === tmp13) {
               if (cResult[18] === str) {
                 if (cResult[19] === str2) {
-                  let tmp24;
-                  let tmp27;
+                  let tmp25;
+                  let tmp28;
                   let tmp30;
+                  let tmp31;
                   if (cResult[20] === tmp14) {
-                    tmp24 = cResult[21];
+                    tmp25 = cResult[21];
                   }
                   const _Symbol2 = Symbol;
                   if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl2 = tmp(1127).intl;
+                    const intl2 = tmp(1126).intl;
                     const stringResult = intl2.string(require("intl").t.WAI6xu);
                     cResult[22] = stringResult;
-                    tmp27 = stringResult;
+                    tmp28 = stringResult;
                   } else {
-                    tmp27 = cResult[22];
+                    tmp28 = cResult[22];
                   }
                   if (cResult[23] !== tmp6[1]) {
-                    class V {
-                      constructor() {
-                        return closure_0(ContentDismissActionType.USER_DISMISS);
-                      }
-                    }
+                    const fn2 = function p() {
+                      return closure_0(ContentDismissActionType.USER_DISMISS);
+                    };
                     cResult[23] = tmp6[1];
-                    cResult[24] = V;
+                    cResult[24] = fn2;
+                    tmp30 = fn2;
                   } else {
-                    class V {
-                      constructor() {
-                        return closure_0(ContentDismissActionType.USER_DISMISS);
-                      }
-                    }
+                    tmp30 = cResult[24];
                   }
                   const _Symbol3 = Symbol;
                   if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                    class V {
-                      constructor() {
-                        return closure_0(ContentDismissActionType.USER_DISMISS);
-                      }
-                    }
-                    const tmp31 = closure_7(require("XSmallIcon").XSmallIcon, { size: "xs", color: "icon-feedback-info" });
-                    cResult[25] = tmp31;
-                    tmp30 = tmp31;
+                    const tmp33 = closure_7(require("XSmallIcon").XSmallIcon, { size: "xs", color: "icon-feedback-info" });
+                    cResult[25] = tmp33;
+                    tmp31 = tmp33;
                   } else {
-                    class V {
-                      constructor() {
-                        return closure_0(ContentDismissActionType.USER_DISMISS);
-                      }
-                    }
+                    tmp31 = cResult[25];
                   }
                   if (cResult[26] === tmp4.closeButton) {
-                    class V {
-                      constructor() {
-                        return closure_0(ContentDismissActionType.USER_DISMISS);
-                      }
+                    let tmp34;
+                    if (cResult[27] === tmp30) {
+                      tmp34 = cResult[28];
                     }
                     if (cResult[29] === tmp12) {
-                      class V {
-                        constructor() {
-                          return closure_0(ContentDismissActionType.USER_DISMISS);
+                      if (cResult[30] === tmp34) {
+                        if (cResult[31] === tmp15) {
+                          if (cResult[32] === tmp16) {
+                            let tmp37;
+                            if (cResult[33] === tmp25) {
+                              tmp37 = cResult[34];
+                            }
+                            return tmp37;
+                          }
                         }
                       }
                     }
                     const obj3 = { style: tmp15, children: items };
-                    items = [tmp16, tmp24, tmp32];
+                    items = [tmp16, tmp25, tmp34];
+                    const tmp39 = closure_8(tmp12, obj3);
                     cResult[29] = tmp12;
-                    cResult[30] = tmp32;
+                    cResult[30] = tmp34;
                     cResult[31] = tmp15;
                     cResult[32] = tmp16;
-                    cResult[33] = tmp24;
-                    cResult[34] = closure_8(tmp12, obj3);
-                    const tmp37 = closure_8(tmp12, obj3);
+                    cResult[33] = tmp25;
+                    cResult[34] = tmp39;
+                    tmp37 = tmp39;
                   }
-                  const obj4 = { accessibilityRole: "button", accessibilityLabel: tmp27, onPress: tmp29, style: tmp4.closeButton, children: tmp30 };
+                  const obj4 = { accessibilityRole: "button", accessibilityLabel: tmp28, onPress: tmp30, style: tmp4.closeButton, children: tmp31 };
+                  const tmp36 = closure_7(require("Pressables").PressableOpacity, obj4);
                   cResult[26] = tmp4.closeButton;
-                  cResult[27] = tmp29;
-                  cResult[28] = closure_7(require("Pressables").PressableOpacity, obj4);
-                  const tmp34 = closure_7(require("Pressables").PressableOpacity, obj4);
+                  cResult[27] = tmp30;
+                  cResult[28] = tmp36;
+                  tmp34 = tmp36;
                 }
               }
             }
           }
           const obj5 = { style: tmp13, variant: str, color: str2, children: tmp14 };
-          const tmp26 = closure_7(tmp11, obj5);
+          const tmp27 = closure_7(tmp11, obj5);
           cResult[16] = tmp11;
           cResult[17] = tmp13;
           cResult[18] = str;
           cResult[19] = str2;
           cResult[20] = tmp14;
-          cResult[21] = tmp26;
-          tmp24 = tmp26;
+          cResult[21] = tmp27;
+          tmp25 = tmp27;
         }
       }
     }
     if (require("preloaded_user_settings").ProfileVisibility.FRIENDS_ONLY === setting) {
-      class V {
-        constructor() {
-          return closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
+      dqQ7AN = tmp(1126).t["0UBDvq"];
+    } else if (require("preloaded_user_settings").ProfileVisibility.FRIENDS_AND_SMALL_GUILDS === setting) {
+      dqQ7AN = tmp(1126).t["9AvQO/"];
     } else {
-      class V {
-        constructor() {
-          return closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
+      const FRIENDS_AND_ALL_GUILDS = tmp(1197).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+      dqQ7AN = tmp(1126).t.dqQ7AN;
     }
     const container = tmp4.container;
     const _Symbol = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      class V {
-        constructor() {
-          return closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
       const tmp20 = closure_7(require("CircleInformationIcon").CircleInformationIcon, { size: "xs", color: "icon-feedback-info" });
       cResult[13] = tmp20;
-      tmp19 = tmp20;
+      tmp18 = tmp20;
     } else {
-      class V {
-        constructor() {
-          return closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
+      tmp18 = cResult[13];
     }
     if (cResult[14] !== tmp4.icon) {
-      class V {
-        constructor() {
-          return closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      const obj6 = { style: tmp4.icon, children: tmp19 };
+      const obj6 = { style: tmp4.icon, children: tmp18 };
+      const tmp23 = closure_7(View, obj6);
       cResult[14] = tmp4.icon;
-      cResult[15] = closure_7(View, obj6);
-      const tmp22 = closure_7(View, obj6);
+      cResult[15] = tmp23;
+      tmp21 = tmp23;
     } else {
-      class V {
-        constructor() {
-          return closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
+      tmp21 = cResult[15];
     }
-    const Text = tmp(4833).Text;
+    const Text = tmp(4886).Text;
     const text = tmp4.text;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj7 = { privacySettingsLink: first1 };
-    const formatResult = intl.format(tmp17, obj7);
+    const formatResult = intl.format(dqQ7AN, obj7);
     cResult[1] = setting;
     cResult[2] = tmp4.container;
     cResult[3] = tmp4.icon;
@@ -331,7 +295,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str2 = "text-default";
     str = "text-sm/normal";
     tmp13 = text;
-    tmp12 = tmp18;
+    tmp12 = tmp17;
     tmp11 = Text;
   }
 }) : (() => {
@@ -353,7 +317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       variant: "text-sm/normal",
       color: "text-link",
       onPress() {
-        const obj = closure_1_0(closure_1_1[18]);
+        const obj = closure_1_0(closure_1_1[17]);
         const obj2 = { screen: constants.DATA_AND_PRIVACY };
         return obj.openUserSettings(obj2);
       },
@@ -366,19 +330,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     let dqQ7AN;
     if (preloaded_user_settings.ProfileVisibility.FRIENDS_ONLY === setting) {
-      dqQ7AN = tmp3(1127).t["0UBDvq"];
+      dqQ7AN = tmp3(1126).t["0UBDvq"];
     } else if (preloaded_user_settings.ProfileVisibility.FRIENDS_AND_SMALL_GUILDS === setting) {
-      dqQ7AN = tmp3(1127).t["9AvQO/"];
+      dqQ7AN = tmp3(1126).t["9AvQO/"];
     } else {
-      const FRIENDS_AND_ALL_GUILDS = tmp3(1198).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
-      dqQ7AN = tmp3(1127).t.dqQ7AN;
+      const FRIENDS_AND_ALL_GUILDS = tmp3(1197).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+      dqQ7AN = tmp3(1126).t.dqQ7AN;
     }
     let obj2 = { style: tmp.container, children: items };
     const obj3 = { style: tmp.icon, children: closure_7(CircleInformationIcon.CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
     items = [closure_7(View, obj3), , ];
     const obj4 = { style: tmp.text, variant: "text-sm/normal", color: "text-default", children: intl.format(dqQ7AN, obj5) };
-    const Text = tmp3(4833).Text;
-    intl = tmp3(1127).intl;
+    const Text = tmp3(4886).Text;
+    intl = tmp3(1126).intl;
     obj5 = { privacySettingsLink: callback };
     items[1] = closure_7(Text, obj4);
     const obj6 = {
@@ -390,8 +354,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       style: tmp.closeButton,
       children: closure_7(XSmallIcon.XSmallIcon, { size: "xs", color: "icon-feedback-info" })
     };
-    const PressableOpacity = tmp3(5436).PressableOpacity;
-    intl2 = tmp3(1127).intl;
+    const PressableOpacity = tmp3(5909).PressableOpacity;
+    intl2 = tmp3(1126).intl;
     items[2] = closure_7(PressableOpacity, obj6);
     return closure_8(View, obj2);
   }

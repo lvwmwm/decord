@@ -1,17 +1,17 @@
-// Module ID: 11694
-// Function ID: 11695
+// Module ID: 11946
+// Function ID: 11947
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 2073, 4472, 5751, 11688, 1086, 558, 576, 504, 11692, 5297, 2]
+// Dependencies: [5, 32, 19, 2074, 4509, 5616, 11940, 1085, 558, 576, 504, 11944, 5590, 2]
 
-// Module 11694 (useAvailableAndAddedGuilds)
-import Constants from "Constants" /* 1086 */;
+// Module 11946 (useAvailableAndAddedGuilds)
+import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import SortedGuildStore from "SortedGuildStore" /* 5751 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 11688 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 11940 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -202,7 +202,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   class R {
     constructor() {
-      tmp = closure_4(function() { /* body not rendered: F140373 */ })();
+      tmp = closure_4(function() { /* body not rendered: F141994 */ })();
       return;
     }
   }

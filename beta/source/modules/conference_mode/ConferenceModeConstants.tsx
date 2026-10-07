@@ -1,9 +1,9 @@
-// Module ID: 1093
-// Function ID: 1094
+// Module ID: 1092
+// Function ID: 1093
 // Name: ConferenceModeConstants
 // Dependencies: [2]
 
-// Module 1093 (ConferenceModeConstants)
+// Module 1092 (ConferenceModeConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conference_mode/ConferenceModeConstants.tsx");

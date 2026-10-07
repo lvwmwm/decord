@@ -1,28 +1,28 @@
-// Module ID: 9069
-// Function ID: 9070
+// Module ID: 9291
+// Function ID: 9292
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 4877, 1378, 1097, 21, 4837, 588, 5837, 558, 576, 7859, 9070, 1127, 4833, 5896, 8057, 6584, 504, 1189, 4680, 9071, 7628, 9072, 6038, 5890, 2]
+// Dependencies: [19, 17, 4930, 1377, 1096, 21, 4890, 587, 5915, 558, 576, 9292, 9295, 1126, 4886, 5974, 8895, 6657, 504, 1188, 4722, 9296, 7850, 9297, 6112, 5968, 2]
 
-// Module 9069 (EventDetailRsvpSheet)
+// Module 9291 (EventDetailRsvpSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import BottomSheetModal from "BottomSheetModal" /* 6038 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import StageSparkleDefault from "StageSparkle" /* 7859 */;
-import Form from "Form" /* 8057 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9070 */;
-import EventDetailTypes from "EventDetailTypes" /* 9072 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import BottomSheetModal from "BottomSheetModal" /* 6112 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import Form from "Form" /* 8895 */;
+import StageSparkleDefault from "StageSparkle" /* 9292 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9295 */;
+import EventDetailTypes from "EventDetailTypes" /* 9297 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import UserStore from "UserStore" /* 1378 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles from "TextStyles" /* 5915 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -126,7 +126,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const tmp4 = closure_9();
   const emptyDisplayTitle = tmp4.emptyDisplayTitle;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.obChXk);
     cResult[0] = stringResult;
     first = stringResult;
@@ -174,7 +174,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const tmp4 = closure_9();
   const emptyDisplayTitle = tmp4.emptyDisplayTitle;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.hW0mBR);
     cResult[0] = stringResult;
     first = stringResult;
@@ -237,7 +237,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((remainingUsers
       tmp10 = cResult[4];
     }
     if (cResult[5] !== remainingUsersGroup.count) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const obj3 = { userRemainCount: remainingUsersGroup.count };
       const formatToPlainStringResult = intl.formatToPlainString(intl2.t.BdQTfR, obj3);
       cResult[5] = remainingUsersGroup.count;
@@ -339,7 +339,7 @@ class EventDetailRsvpSheet {
     }, items);
     if (loading) {
       if (0 === userListItems.length) {
-        let obj2 = { children: closure_7(guildId(5890).ActivityIndicator, obj3) };
+        let obj2 = { children: closure_7(guildId(5968).ActivityIndicator, obj3) };
         obj3 = { style: items1 };
         items1 = [, ];
         class StaticMessageContainer {
@@ -403,7 +403,7 @@ class EventDetailRsvpSheet {
       }
       tmp8 = closure_7(StaticMessageContainer, obj6);
     } else {
-      let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8057).FormDivider, keyExtractor };
+      let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8895).FormDivider, keyExtractor };
       items4 = [tmp.userList, ];
       class StaticMessageContainer {
         constructor(children) {
@@ -422,7 +422,7 @@ class EventDetailRsvpSheet {
       }
       tmp6[0] = safeBottomPadding;
       items4[1] = tmp6;
-      const BottomSheetFlatList = guildId(6038).BottomSheetFlatList;
+      const BottomSheetFlatList = guildId(6112).BottomSheetFlatList;
       tmp8 = closure_7(BottomSheetFlatList, obj);
     }
   }
@@ -442,7 +442,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((eventUs
   eventUser = eventUser.eventUser;
   const guildId = eventUser.guildId;
   closure_9();
-  analyticsLocations = analyticsLocations(6584)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
     cResult[0] = items;
@@ -510,8 +510,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((eventUs
         return obj;
       }
     }
-    const obj2 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1189).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
-    const Avatar = tmp(1189).Avatar;
+    const obj2 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1188).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
+    const Avatar = tmp(1188).Avatar;
     tmp14 = closure_7(Avatar, obj2);
   }
   cResult[7] = guildId;
@@ -532,7 +532,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((eventUs
   let analyticsLocations;
   const guildId = eventUser.guildId;
   const tmp = closure_9();
-  analyticsLocations = analyticsLocations(6584)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
   let obj = eventUser(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(eventUser.user_id));
@@ -554,21 +554,21 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((eventUs
     }
   };
   tmp7Result = null;
-  const FormRow = eventUser(8057).FormRow;
+  const FormRow = eventUser(8895).FormRow;
   if (null != stateFromStores) {
-    const obj4 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1189).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
-    const Avatar = tmp4(1189).Avatar;
+    const obj4 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1188).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
+    const Avatar = tmp4(1188).Avatar;
     tmp7Result = tmp7(Avatar, obj4);
   }
   const member = eventUser.member;
   obj6 = { user: stateFromStores, nick, usernameStyle: null, nicknameStyle: null };
   nick = undefined;
-  tmp2Result = analyticsLocations(9071);
+  tmp2Result = analyticsLocations(9296);
   if (member != null) {
     nick = member.nick;
   }
   if (nick == null) {
-    const tmp2Result2 = analyticsLocations(4680);
+    const tmp2Result2 = analyticsLocations(4722);
     nick = tmp2Result2.getName(eventUser.user);
   }
   ({ userName: obj5.usernameStyle, userName: obj5.nicknameStyle } = tmp);

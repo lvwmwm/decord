@@ -1,17 +1,17 @@
-// Module ID: 8947
-// Function ID: 8948
+// Module ID: 9169
+// Function ID: 9170
 // Name: useManageResourcePermissions
-// Dependencies: [32, 19, 4472, 1378, 8948, 1097, 1098, 558, 576, 2065, 504, 2]
+// Dependencies: [32, 19, 4509, 1377, 9170, 1096, 1097, 558, 576, 2066, 504, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions
 
-// Module 8947 (useManageResourcePermissions)
-import Constants from "Constants" /* 1097 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+// Module 9169 (useManageResourcePermissions)
+import Constants from "Constants" /* 1096 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import UserStore_mod from "UserStore" /* 1378 */;
-import PermissionsConstants from "PermissionsConstants" /* 8948 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import UserStore_mod from "UserStore" /* 1377 */;
+import PermissionsConstants from "PermissionsConstants" /* 9170 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,9 +105,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildStageVoice) =
         tmp6 = closure_9;
       }
       items2 = [, ];
-      const obj3 = first(1098);
+      const obj3 = first(1097);
       items2[0] = obj3.combine(tmp6, Permissions.CREATE_EVENTS);
-      const obj4 = first(1098);
+      const obj4 = first(1097);
       items2[1] = obj4.combine(tmp6, Permissions.MANAGE_EVENTS);
     }
     cResult[0] = isGuildStageVoice;

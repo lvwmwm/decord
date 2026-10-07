@@ -1,18 +1,18 @@
-// Module ID: 15838
-// Function ID: 15839
+// Module ID: 16132
+// Function ID: 16133
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 1086, 2058, 11441, 21, 4837, 588, 558, 576, 1113, 11761, 1127, 13388, 2]
+// Dependencies: [19, 1085, 2058, 11697, 21, 4890, 587, 558, 576, 1112, 12016, 1126, 13654, 2]
 
-// Module 15838 (GuildHomeChannelRow)
+// Module 16132 (GuildHomeChannelRow)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import router_utils from "router_utils" /* 1113 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import router_utils from "router_utils" /* 1112 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11441 */;
-import BaseChannelItemDefault from "BaseChannelItem" /* 11761 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
+import BaseChannelItemDefault from "BaseChannelItem" /* 12016 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,12 +51,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   } else {
     tmp5 = cResult[1];
   }
-  const ChannelModes = tmp(11761).ChannelModes;
+  const ChannelModes = tmp(12016).ChannelModes;
   const tmp6 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
   const container = tmp4.container;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(id(1127).t.VbpLyU);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(id(1126).t.VbpLyU);
     cResult[2] = stringResult;
     tmp7 = stringResult;
   } else {
@@ -71,17 +71,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
     tmp9 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(id(1127).t.VbpLyU);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(id(1126).t.VbpLyU);
     cResult[5] = stringResult1;
     tmp10 = stringResult1;
   } else {
     tmp10 = cResult[5];
   }
   if (cResult[6] !== tmp6) {
-    const tmp15 = jsx(id(11761).BaseChannelName, { name: tmp10, mode: tmp6 });
-    const BaseChannelIcon = tmp(11761).BaseChannelIcon;
-    const tmp16 = <BaseChannelIcon mode={tmp6} IconComponent={id(13388).SignPostIcon} />;
+    const tmp15 = jsx(id(12016).BaseChannelName, { name: tmp10, mode: tmp6 });
+    const BaseChannelIcon = tmp(12016).BaseChannelIcon;
+    const tmp16 = <BaseChannelIcon mode={tmp6} IconComponent={id(13654).SignPostIcon} />;
     cResult[6] = tmp6;
     cResult[7] = tmp15;
     cResult[8] = tmp16;
@@ -127,7 +127,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
     const obj = router_utils;
     obj.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.GUILD_HOME));
   }, items);
-  const ChannelModes = id(11761).ChannelModes;
+  const ChannelModes = id(12016).ChannelModes;
   if (selected) {
     DEFAULT = ChannelModes.SELECTED;
     tmp5 = tmp3;
@@ -136,13 +136,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
     tmp5 = tmp3;
   }
   BaseChannelItemDefault;
-  const intl = tmp5(1127).intl;
-  ({ name: intl2.string(tmp5(1127).t.VbpLyU), mode: DEFAULT });
-  const BaseChannelName = tmp5(11761).BaseChannelName;
-  intl2 = tmp5(1127).intl;
-  ({ mode: DEFAULT, IconComponent: tmp5(13388).SignPostIcon });
-  const BaseChannelIcon = tmp5(11761).BaseChannelIcon;
-  return <tmp7 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(tmp5(1127).t.VbpLyU)} accessibilityState={{ selected }} mode={DEFAULT} name={null} icon={null} />;
+  const intl = tmp5(1126).intl;
+  ({ name: intl2.string(tmp5(1126).t.VbpLyU), mode: DEFAULT });
+  const BaseChannelName = tmp5(12016).BaseChannelName;
+  intl2 = tmp5(1126).intl;
+  ({ mode: DEFAULT, IconComponent: tmp5(13654).SignPostIcon });
+  const BaseChannelIcon = tmp5(12016).BaseChannelIcon;
+  return <tmp7 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(tmp5(1126).t.VbpLyU)} accessibilityState={{ selected }} mode={DEFAULT} name={null} icon={null} />;
 });
 const result = size.fileFinishedImporting("modules/guild_home/native/components/guild_sidebar/GuildHomeChannelRow.tsx");
 

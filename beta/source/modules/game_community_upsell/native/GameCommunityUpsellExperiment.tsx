@@ -1,10 +1,10 @@
-// Module ID: 13261
-// Function ID: 13262
+// Module ID: 13527
+// Function ID: 13528
 // Name: GameCommunityUpsellExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1440, 2]
 
-// Module 13261 (GameCommunityUpsellExperiment)
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+// Module 13527 (GameCommunityUpsellExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

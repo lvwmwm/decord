@@ -1,10 +1,10 @@
-// Module ID: 2022
-// Function ID: 2023
+// Module ID: 2023
+// Function ID: 2024
 // Name: UrlHostUtils
 // Dependencies: [2]
 // Exports: getHostWithoutPort, isLocalhost
 
-// Module 2022 (UrlHostUtils)
+// Module 2023 (UrlHostUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/core/UrlHostUtils.tsx");

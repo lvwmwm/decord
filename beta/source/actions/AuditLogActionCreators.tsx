@@ -1,19 +1,19 @@
-// Module ID: 17349
-// Function ID: 17350
+// Module ID: 17718
+// Function ID: 17719
 // Name: AuditLogActionCreators
-// Dependencies: [17344, 1086, 1283, 585, 2]
+// Dependencies: [17713, 1085, 1282, 584, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 17349 (AuditLogActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17344 */;
-import Constants from "Constants" /* 1086 */;
+// Module 17718 (AuditLogActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17713 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-const f130145 = (body) => {
+const f131767 = (body) => {
   let application_commands;
   let audit_log_entries;
   let auto_moderation_rules;
@@ -25,7 +25,7 @@ const f130145 = (body) => {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
 };
-const f130146 = () => {
+const f131768 = () => {
   const obj = DispatcherDefault;
   return obj.dispatch({ type: "AUDIT_LOG_FETCH_FAIL" });
 };
@@ -72,7 +72,7 @@ export const fetchLogs = function fetchLogs(guildId, userId, targetId, action) {
       obj.dispatch({ type: "AUDIT_LOG_FETCH_START" });
       const obj2 = { userId, action, targetId };
       const promise = makeRequest(guildId, obj2);
-      return promise.then(f130145, f130146);
+      return promise.then(f131767, f131768);
     }
   }
 };
@@ -126,11 +126,11 @@ export const filterByAction = function filterByAction(action, guildId) {
       const tmp5 = GuildSettingsAuditLogStore.isLoading || GuildSettingsAuditLogStore.isLoadingNextPage;
       if (!tmp5) {
         if (null != guildId) {
-          const tmp10Result = tmp10(585);
+          const tmp10Result = tmp10(584);
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
           const obj2 = { userId: null, action, targetId: null };
           const promise = makeRequest(guildId, obj2);
-          nextPromise = promise.then(f130145, f130146);
+          nextPromise = promise.then(f131767, f131768);
         }
       }
       return nextPromise;
@@ -149,11 +149,11 @@ export const filterByUserId = function filterByUserId(id, guildId) {
       const tmp5 = GuildSettingsAuditLogStore.isLoading || GuildSettingsAuditLogStore.isLoadingNextPage;
       if (!tmp5) {
         if (null != guildId) {
-          const tmp10Result = tmp10(585);
+          const tmp10Result = tmp10(584);
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          const obj2 = { userId: id, action: "Array", targetId: "applicationId" };
+          const obj2 = { userId: id, action: "Array", targetId: "toCharArray$esjava$1" };
           const promise = makeRequest(guildId, obj2);
-          nextPromise = promise.then(f130145, f130146);
+          nextPromise = promise.then(f131767, f131768);
         }
       }
       return nextPromise;
@@ -172,11 +172,11 @@ export const filterByTargetId = function filterByTargetId(targetId, arg1) {
       const tmp5 = GuildSettingsAuditLogStore.isLoading || GuildSettingsAuditLogStore.isLoadingNextPage;
       if (!tmp5) {
         if (null != arg1) {
-          const tmp10Result = tmp10(585);
+          const tmp10Result = tmp10(584);
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
           const obj2 = { userId: null, action: "Array", targetId };
           const promise = makeRequest(arg1, obj2);
-          nextPromise = promise.then(f130145, f130146);
+          nextPromise = promise.then(f131767, f131768);
         }
       }
       return nextPromise;

@@ -1,21 +1,21 @@
-// Module ID: 10538
-// Function ID: 10539
+// Module ID: 10776
+// Function ID: 10777
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 1619, 1127, 4833, 10539, 5282, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 1618, 1126, 4886, 10777, 5594, 2]
 
-// Module 10538 (GiftingSKUSelectScreen)
+// Module 10776 (GiftingSKUSelectScreen)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 10539 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 10777 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

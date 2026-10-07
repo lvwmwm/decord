@@ -1,16 +1,16 @@
-// Module ID: 6583
-// Function ID: 6584
+// Module ID: 6656
+// Function ID: 6657
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 5064, 1086, 21, 558, 576, 504, 6584, 6585, 1127, 6587, 6594, 1253, 5017, 6599, 2]
+// Dependencies: [19, 5118, 1085, 21, 558, 576, 504, 6657, 6658, 1126, 6660, 6667, 1252, 5070, 6672, 2]
 
-// Module 6583 (ApplicationConnectionCard)
+// Module 6656 (ApplicationConnectionCard)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6585 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6658 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

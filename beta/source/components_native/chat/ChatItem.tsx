@@ -1,29 +1,29 @@
-// Module ID: 8109
-// Function ID: 8110
+// Module ID: 8303
+// Function ID: 8304
 // Name: ChatItem
-// Dependencies: [32, 109, 19, 17, 4826, 1086, 7379, 21, 588, 558, 576, 8110, 1102, 8111, 6689, 8112, 4837, 1370, 7587, 4535, 684, 5292, 2]
+// Dependencies: [32, 109, 19, 17, 4879, 1085, 7592, 21, 587, 558, 576, 8304, 1101, 8305, 6773, 8306, 4890, 1369, 7809, 4580, 683, 5605, 2]
 // Exports: default
 
-// Module 8109 (ChatItem)
+// Module 8303 (ChatItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import Constants from "Constants" /* 1086 */;
-import MessageTypes2 from "MessageTypes" /* 1102 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6689 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 8110 */;
-import MessageViewNativeComponent from "MessageViewNativeComponent" /* 8111 */;
-import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 8112 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import Constants from "Constants" /* 1085 */;
+import MessageTypes2 from "MessageTypes" /* 1101 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6773 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 8304 */;
+import MessageViewNativeComponent from "MessageViewNativeComponent" /* 8305 */;
+import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 8306 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4826 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4879 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7592 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -31,7 +31,7 @@ let closure_12;
 let map1;
 let tmp;
 let unpackModuleId;
-const RowGeneratorTypes = tmp(7587);
+const RowGeneratorTypes = tmp(7809);
 let closure_3 = ["message"];
 let react = react_mod;
 const View = react_native.View;
@@ -73,7 +73,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     }
     tmp10 = tmp28;
   } else {
-    const AUTOMOD_INCIDENT_ACTIONS = tmp(1102).MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
+    const AUTOMOD_INCIDENT_ACTIONS = tmp(1101).MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
     if (AUTOMOD_INCIDENT_ACTIONS.has(tmp4.type)) {
       let tmp22;
       if (cResult[5] !== tmp5) {
@@ -279,7 +279,7 @@ export default function _default(rowGenerator) {
     let tmp = gradientColors;
     if (gradientColors == null) {
       const items = [, ];
-      const obj = _modDef684(token);
+      const obj = _modDef683(token);
       const alphaResult = obj.alpha(0);
       items[0] = alphaResult.hex();
       items[1] = token;

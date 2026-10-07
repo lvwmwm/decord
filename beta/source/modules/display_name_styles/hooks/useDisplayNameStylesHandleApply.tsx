@@ -1,130 +1,160 @@
-// Module ID: 14871
-// Function ID: 14872
+// Module ID: 15156
+// Function ID: 15157
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [19, 1086, 558, 576, 1397, 7616, 7613, 1253, 1398, 2]
+// Dependencies: [5, 19, 1085, 1396, 6477, 7838, 7835, 1252, 1397, 2]
+// Exports: useDisplayNameStylesHandleApply
 
-// Module 14871 (useDisplayNameStylesHandleApply)
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
-import DisplayNameFont from "DisplayNameFont" /* 1398 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7613 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 7616 */;
+// Module 15156 (useDisplayNameStylesHandleApply)
+import Constants from "Constants" /* 1085 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let hasChanges;
+let c4;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasChanges) => {
-  let selectedEffectId;
-  let obj = hasChanges(selectedEffectId[3]);
-  const cResult = obj.c(9);
+let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
+
+export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
   hasChanges = hasChanges.hasChanges;
   const selectedFontId = hasChanges.selectedFontId;
-  selectedEffectId = hasChanges.selectedEffectId;
+  let selectedEffectId = hasChanges.selectedEffectId;
   const selectedColors = hasChanges.selectedColors;
   const defaultColor = hasChanges.defaultColor;
-  const guildId = hasChanges.guildId;
+  let guildId = hasChanges.guildId;
   const isTryItOut = hasChanges.isTryItOut;
   const onClose = hasChanges.onClose;
-  if (cResult[0] === defaultColor) {
-    if (cResult[1] === guildId) {
-      if (cResult[2] === hasChanges) {
-        if (cResult[3] === isTryItOut) {
-          if (cResult[4] === onClose) {
-            if (cResult[5] === selectedColors) {
-              if (cResult[6] === selectedEffectId) {
-                let tmp2;
-                if (cResult[7] === selectedFontId) {
-                  tmp2 = cResult[8];
+  let flag = hasChanges.shouldSaveWithoutPendingChanges;
+  if (flag === undefined) {
+    flag = false;
+  }
+  const onSaveError = hasChanges.onSaveError;
+  let closure_10 = defaultColor.useRef(false);
+  let items = [hasChanges, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut, flag, onSaveError];
+  return defaultColor.useCallback(selectedColors(function*(arg0, value) {
+    let closure_0;
+    let closure_1;
+    let closure_2;
+    let obj9;
+    if (guildId === 2) {
+      guildId = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c3;
+      try {
+        guildId = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            guildId = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            guildId = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            hasChanges = undefined;
+            const tmp65 = hasChanges;
+            if (tmp65) {
+              if (!ref.current) {
+                let items = selectedColors;
+                const tmp28 = selectedEffectId === hasChanges(selectedEffectId[3]).DisplayNameEffect.SOLID && selectedColors.length > 0 && selectedColors[0] === defaultColor;
+                if (tmp28) {
+                  items = [];
                 }
-                return tmp2;
+                const obj4 = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
+                if (true) {
+                  ref.current = true;
+                  c3 = 2;
+                  const obj5 = { displayNameStyles: obj4 };
+                  c4 = 3;
+                  guildId = 1;
+                  const obj6 = { value: obj9.saveProfileAndAccountChanges(obj5), done: false };
+                  obj9 = hasChanges(selectedEffectId[4]);
+                  return obj6;
+                } else if (isTryItOut) {
+                  const tmp36Result = hasChanges(selectedEffectId[5]);
+                  const result = tmp36Result.setTryItOutDisplayNameStyles(obj4);
+                } else {
+                  const obj7 = { guildId, displayNameStyles: obj4 };
+                  const tmp36Result2 = hasChanges(selectedEffectId[6]);
+                  tmp36Result2.setPendingChanges(obj7);
+                }
               }
             }
+            guildId = 3;
+            return { value: "IconComponent", done: null };
           }
+        } else if (1 === c4) {
+          c3 = 0;
+          closure_129_10.current = false;
+          throw selectedEffectId;
+        } else if (2 === c4) {
+          c3 = 1;
+          if (closure_129_9 != null) {
+            closure_129_9();
+          }
+          c3 = 0;
+          closure_129_10.current = false;
+          guildId = 3;
+          const obj8 = { value: undefined, done: true };
+          return obj8;
+        } else if (arg0 === 1) {
+          guildId = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          closure_129_10.current = false;
+          guildId = 3;
+          const obj10 = { value, done: true };
+          return obj10;
+        } else {
+          hasChanges = value;
+          let ok;
+          if (hasChanges != null) {
+            ok = hasChanges.ok;
+          }
+          if (true !== ok) {
+            if (closure_129_9 != null) {
+              closure_129_9();
+            }
+            c3 = 0;
+            closure_129_10.current = false;
+            guildId = 3;
+            const obj = { value: undefined, done: true };
+            return obj;
+          } else {
+            c3 = 0;
+            closure_129_10.current = false;
+          }
+        }
+        const obj11 = { font_name: hasChanges(selectedEffectId[8]).DisplayNameFont[closure_129_1], effect_name: hasChanges(selectedEffectId[3]).DisplayNameEffect[closure_129_2], colors: closure_129_3 };
+        const track = tmp(selectedEffectId[7]).track;
+        const DISPLAY_NAME_STYLES_APPLIED = guildId.DISPLAY_NAME_STYLES_APPLIED;
+        const tmp44 = tmp(selectedEffectId[7]);
+        track(DISPLAY_NAME_STYLES_APPLIED, obj11);
+        if (closure_129_7 != null) {
+          closure_129_7();
+        }
+      } catch (tmp58) {
+        selectedEffectId = tmp58;
+        if (0 === c3) {
+          guildId = 3;
+          throw tmp58;
+        } else if (1 === tmp60) {
+          c4 = 1;
+        } else {
+          c4 = 2;
         }
       }
     }
-  }
-  const fn = function l() {
-    const tmp = hasChanges;
-    if (tmp) {
-      let items = arr;
-      const tmp5 = selectedEffectId === DisplayNameEffect.DisplayNameEffect.SOLID && arr.length > 0 && arr[0] === defaultColor;
-      if (tmp5) {
-        items = [];
-      }
-      const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
-      const tmp7 = selectedFontId;
-      if (isTryItOut) {
-        const tmp3Result = UserProfileActionCreators;
-        const result = tmp3Result.setTryItOutDisplayNameStyles(obj);
-      } else {
-        const obj2 = { guildId, displayNameStyles: obj };
-        const tmp3Result2 = UserProfileSettingsActionCreators;
-        tmp3Result2.setPendingChanges(obj2);
-      }
-      const obj3 = { font_name: DisplayNameFont.DisplayNameFont[tmp7], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
-      const track = AnalyticsUtilsDefault.track;
-      const DISPLAY_NAME_STYLES_APPLIED = AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED;
-      AnalyticsUtilsDefault;
-      track(DISPLAY_NAME_STYLES_APPLIED, obj3);
-      if (onClose != null) {
-        onClose();
-      }
-    }
-  };
-  cResult[0] = defaultColor;
-  cResult[1] = guildId;
-  cResult[2] = hasChanges;
-  cResult[3] = isTryItOut;
-  cResult[4] = onClose;
-  cResult[5] = selectedColors;
-  cResult[6] = selectedEffectId;
-  cResult[7] = selectedFontId;
-  cResult[8] = fn;
-  tmp2 = fn;
-}) : ((hasChanges) => {
-  hasChanges = hasChanges.hasChanges;
-  const selectedFontId = hasChanges.selectedFontId;
-  const selectedEffectId = hasChanges.selectedEffectId;
-  const selectedColors = hasChanges.selectedColors;
-  const defaultColor = hasChanges.defaultColor;
-  const guildId = hasChanges.guildId;
-  const isTryItOut = hasChanges.isTryItOut;
-  const onClose = hasChanges.onClose;
-  let items = [hasChanges, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut];
-  return selectedColors.useCallback(() => {
-    const tmp = hasChanges;
-    if (tmp) {
-      let items = arr;
-      const tmp5 = selectedEffectId === DisplayNameEffect.DisplayNameEffect.SOLID && arr.length > 0 && arr[0] === defaultColor;
-      if (tmp5) {
-        items = [];
-      }
-      const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
-      const tmp7 = selectedFontId;
-      if (isTryItOut) {
-        const tmp3Result = UserProfileActionCreators;
-        const result = tmp3Result.setTryItOutDisplayNameStyles(obj);
-      } else {
-        const obj2 = { guildId, displayNameStyles: obj };
-        const tmp3Result2 = UserProfileSettingsActionCreators;
-        tmp3Result2.setPendingChanges(obj2);
-      }
-      const obj3 = { font_name: DisplayNameFont.DisplayNameFont[tmp7], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
-      const track = AnalyticsUtilsDefault.track;
-      const DISPLAY_NAME_STYLES_APPLIED = AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED;
-      AnalyticsUtilsDefault;
-      track(DISPLAY_NAME_STYLES_APPLIED, obj3);
-      if (onClose != null) {
-        onClose();
-      }
-    }
-  }, items);
-});
-let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
-
-export const useDisplayNameStylesHandleApply = tmp2;
+  }), items);
+};

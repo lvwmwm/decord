@@ -1,10 +1,10 @@
-// Module ID: 4467
-// Function ID: 4468
+// Module ID: 4504
+// Function ID: 4505
 // Name: SecondaryIndexMap
-// Dependencies: [32, 4468, 2]
+// Dependencies: [32, 4505, 2]
 
-// Module 4467 (SecondaryIndexMap)
-import sortedIndexByDefault from "sortedIndexBy" /* 4468 */;
+// Module 4504 (SecondaryIndexMap)
+import sortedIndexByDefault from "sortedIndexBy" /* 4505 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -201,11 +201,11 @@ class SecondaryIndexMap {
   delete(arg0) {
     return this.set(arg0, null);
   }
-  getIndex(item) {
-    let tmp2 = this.valueIndexes[item];
+  getIndex(arg0) {
+    let tmp2 = this.valueIndexes[arg0];
     if (null == tmp2) {
       const items = [];
-      tmp.valueIndexes[item] = items;
+      tmp.valueIndexes[arg0] = items;
       tmp2 = items;
     }
     return tmp2;

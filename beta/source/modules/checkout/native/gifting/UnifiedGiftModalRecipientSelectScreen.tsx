@@ -1,16 +1,16 @@
-// Module ID: 10360
-// Function ID: 10361
+// Module ID: 10591
+// Function ID: 10592
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 10361, 21, 4837, 588, 558, 576, 1491, 10362, 10328, 2]
+// Dependencies: [19, 17, 10592, 21, 4890, 587, 558, 576, 1490, 10593, 10559, 2]
 
-// Module 10360 (UnifiedGiftModalRecipientSelectScreen)
+// Module 10591 (UnifiedGiftModalRecipientSelectScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10328 */;
-import UserRowConstants from "UserRowConstants" /* 10361 */;
+import nativeDefault from "native" /* 587 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10559 */;
+import UserRowConstants from "UserRowConstants" /* 10592 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((setRecipientUser) 
   const obj = setRecipientUser(576);
   const cResult = obj.c(6);
   setRecipientUser = setRecipientUser.setRecipientUser;
-  const obj2 = setRecipientUser(1491);
+  const obj2 = setRecipientUser(1490);
   navigation = obj2.useNavigation();
   const tmp4 = closure_6();
   if (cResult[0] === navigation) {
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((setRecipientUser) 
     cResult[5] = tmp10;
     tmp7 = tmp10;
   }
-  const tmp6 = jsx(navigation(10362), {
+  const tmp6 = jsx(navigation(10593), {
     onSelectUser(arg0) {
       setRecipientUser(arg0);
       navigation.navigate(UnifiedGiftModalTypes.UnifiedGiftModalScreens.GIFT_DETAIL, undefined, { pop: true });
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((setRecipientUser) 
   tmp5 = tmp6;
 }) : ((setRecipientUser) => {
   setRecipientUser = setRecipientUser.setRecipientUser;
-  const obj = setRecipientUser(1491);
+  const obj = setRecipientUser(1490);
   importDefault = obj.useNavigation();
   return <View style={closure_6().container}>{null}</View>;
 });

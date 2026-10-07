@@ -1,11 +1,11 @@
-// Module ID: 14660
-// Function ID: 14661
+// Module ID: 14945
+// Function ID: 14946
 // Name: MobileMuxWrapper
-// Dependencies: [4, 14661, 2]
+// Dependencies: [4, 14946, 2]
 
-// Module 14660 (MobileMuxWrapper)
+// Module 14945 (MobileMuxWrapper)
 import logger_Logger from "logger/Logger" /* 4 */;
-import MobileCustomMuxIntegration from "MobileCustomMuxIntegration" /* 14661 */;
+import MobileCustomMuxIntegration from "MobileCustomMuxIntegration" /* 14946 */;
 import size_mod from "module_2" /* 2 */;
 
 const logger = new logger_Logger.Logger("MobileMuxWrapper");
@@ -13,7 +13,7 @@ let size = size_mod;
 let result = size.fileFinishedImporting("modules/video-qoe/MobileMuxWrapper.tsx");
 class MobileMuxWrapper {
   constructor(config) {
-    const merged = Object.assign({ muxIntegration: null, seekingEmitted: false, seekTimeout: null });
+    const merged = Object.assign({ muxIntegration: null, seekingEmitted: false, seeking: false, seekCompleted: false, rebufferStartedAt: null, seekTimeout: null });
     merged.config = config;
     return merged;
   }
@@ -81,6 +81,7 @@ class MobileMuxWrapper {
     }
   }
   onPause() {
+    this.endRebuffer();
     const muxIntegration = this.muxIntegration;
     if (muxIntegration != null) {
       muxIntegration.emitPause();
@@ -98,14 +99,31 @@ class MobileMuxWrapper {
       muxIntegration.emitCanPlay();
     }
   }
-  onSeek() {
+  onSeekStart() {
     const self = this;
     if (null != this.muxIntegration) {
+      self.rebufferStartedAt = null;
+      self.seeking = true;
+      self.seekCompleted = false;
       if (!self.seekingEmitted) {
-        let muxIntegration = self.muxIntegration;
+        const muxIntegration = self.muxIntegration;
         muxIntegration.emitSeeking();
         self.seekingEmitted = true;
       }
+      if (null != self.seekTimeout) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(self.seekTimeout);
+        self.seekTimeout = null;
+      }
+    }
+  }
+  onSeek() {
+    const self = this;
+    if (null != this.muxIntegration) {
+      if (!self.seeking) {
+        self.onSeekStart();
+      }
+      self.seekCompleted = true;
       if (null != self.seekTimeout) {
         const _clearTimeout = clearTimeout;
         clearTimeout(self.seekTimeout);
@@ -122,6 +140,7 @@ class MobileMuxWrapper {
     }
   }
   onEnd() {
+    this.endRebuffer();
     const muxIntegration = this.muxIntegration;
     if (muxIntegration != null) {
       muxIntegration.emitEnded();
@@ -131,13 +150,15 @@ class MobileMuxWrapper {
       muxIntegration2.destroy();
     }
   }
-  onError(arg0) {
+  onError(error) {
+    this.endRebuffer();
     const muxIntegration = this.muxIntegration;
     if (muxIntegration != null) {
-      muxIntegration.emitError(arg0);
+      muxIntegration.emitError(error);
     }
   }
   onProgress(arg0) {
+    const result = this.finishSeekIfRecovered();
     this.updatePlayheadTime(arg0);
     const muxIntegration = this.muxIntegration;
     if (muxIntegration != null) {
@@ -145,10 +166,25 @@ class MobileMuxWrapper {
     }
   }
   onBuffer(nativeEvent) {
+    const self = this;
     const tmp = nativeEvent;
-    if (!tmp) {
-      const self = this;
-      const muxIntegration = this.muxIntegration;
+    if (tmp) {
+      let tmp7 = !self.seeking && null == self.rebufferStartedAt;
+      if (tmp7) {
+        const muxIntegration4 = self.muxIntegration;
+        let isPlayingResult;
+        if (muxIntegration4 != null) {
+          isPlayingResult = muxIntegration4.isPlaying();
+        }
+        tmp7 = isPlayingResult;
+      }
+      if (tmp7) {
+        const _Date = Date;
+        self.rebufferStartedAt = Date.now();
+      }
+    } else {
+      self.endRebuffer();
+      const muxIntegration = self.muxIntegration;
       if (muxIntegration != null) {
         muxIntegration.emitCanPlay();
       }
@@ -159,14 +195,36 @@ class MobileMuxWrapper {
       }
       if (hasPlayStartedResult) {
         const muxIntegration3 = self.muxIntegration;
-        if (muxIntegration3 != null) {
-          muxIntegration3.emitPlaying();
-        }
+        muxIntegration3.emitPlaying();
       }
+    }
+  }
+  endRebuffer() {
+    const self = this;
+    const rebufferStartedAt = this.rebufferStartedAt;
+    if (null != rebufferStartedAt) {
+      self.rebufferStartedAt = null;
+      const muxIntegration = self.muxIntegration;
+      if (muxIntegration != null) {
+        muxIntegration.emitRebufferStart(rebufferStartedAt);
+      }
+      const muxIntegration2 = self.muxIntegration;
+      if (muxIntegration2 != null) {
+        const _Date = Date;
+        muxIntegration2.emitRebufferEnd(Date.now());
+      }
+    }
+  }
+  finishSeekIfRecovered() {
+    const self = this;
+    const tmp = this.seeking && self.seekCompleted;
+    if (tmp) {
+      self.seeking = false;
     }
   }
   onReadyForDisplay() {
     const self = this;
+    const result = this.finishSeekIfRecovered();
     const muxIntegration = this.muxIntegration;
     if (muxIntegration != null) {
       muxIntegration.emitPlayerReady();
@@ -197,6 +255,7 @@ class MobileMuxWrapper {
   destroy() {
     try {
       const self = this;
+      this.endRebuffer();
       if (null != this.seekTimeout) {
         const _clearTimeout = clearTimeout;
         clearTimeout(self.seekTimeout);
@@ -207,8 +266,8 @@ class MobileMuxWrapper {
         muxIntegration.destroy();
       }
       self.muxIntegration = null;
-    } catch (tmp5) {
-      logger.error("Error destroying MobileMuxWrapper", tmp5);
+    } catch (tmp6) {
+      logger.error("Error destroying MobileMuxWrapper", tmp6);
     }
   }
   getSessionId() {

@@ -1,17 +1,17 @@
-// Module ID: 10494
-// Function ID: 10495
+// Module ID: 10728
+// Function ID: 10729
 // Name: ModalFloatingAction
-// Dependencies: [109, 19, 17, 21, 4837, 558, 576, 4570, 4554, 1619, 5281, 5285, 684, 5292, 10495, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 558, 576, 4612, 4596, 1618, 5597, 5598, 683, 5605, 10729, 2]
 
-// Module 10494 (ModalFloatingAction)
+// Module 10728 (ModalFloatingAction)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import spring from "spring" /* 5281 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import spring from "spring" /* 5597 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const springPresets = tmp2(5285);
+const springPresets = tmp2(5598);
 let closure_3 = ["isVisible", "floatingBackgroundColor"];
 ({ StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -124,7 +124,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
           str = "auto";
         }
         if (cResult[14] !== tmp5) {
-          const obj5 = require("module_684")(tmp5);
+          const obj5 = require("module_683")(tmp5);
           const alphaResult = obj5.alpha(0);
           const hexResult = alphaResult.hex();
           cResult[14] = tmp5;

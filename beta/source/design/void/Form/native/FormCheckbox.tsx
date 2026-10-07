@@ -1,20 +1,20 @@
-// Module ID: 6559
-// Function ID: 6560
+// Module ID: 6632
+// Function ID: 6633
 // Name: Form/FormCheckbox
-// Dependencies: [19, 21, 4837, 558, 576, 1189, 2]
+// Dependencies: [19, 21, 4890, 558, 576, 1188, 2]
 
-// Module 6559 (Form/FormCheckbox)
+// Module 6632 (Form/FormCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let selected;
 
 let tmp;
-const native = tmp(1189);
+const native = tmp(1188);
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ checkbox: { width: 22, height: 22 } });
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {

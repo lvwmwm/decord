@@ -1,25 +1,25 @@
-// Module ID: 15495
-// Function ID: 15496
+// Module ID: 15799
+// Function ID: 15800
 // Name: DoubleTapEmojiSetting
-// Dependencies: [5, 19, 7421, 1086, 1381, 21, 4837, 588, 558, 576, 2027, 7414, 1403, 6552, 9640, 1253, 6604, 9653, 10874, 1127, 2]
+// Dependencies: [5, 19, 7634, 1085, 1380, 21, 4890, 587, 558, 576, 2028, 7627, 1402, 6625, 9866, 1252, 6681, 9879, 11129, 1126, 2]
 
-// Module 15495 (DoubleTapEmojiSetting)
+// Module 15799 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import EmojiDefault from "Emoji" /* 6552 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7414 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import EmojiDefault from "Emoji" /* 6625 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7627 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

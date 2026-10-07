@@ -1,18 +1,18 @@
-// Module ID: 14775
-// Function ID: 14776
+// Module ID: 15060
+// Function ID: 15061
 // Name: GuildRoleSubscriptionBenefitRow
-// Dependencies: [19, 17, 2051, 21, 4837, 4486, 558, 576, 14773, 1189, 4833, 504, 4990, 1127, 5336, 2]
+// Dependencies: [19, 17, 2051, 21, 4890, 4523, 558, 576, 15058, 1188, 4886, 504, 5043, 1126, 5812, 2]
 
-// Module 14775 (GuildRoleSubscriptionBenefitRow)
+// Module 15060 (GuildRoleSubscriptionBenefitRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1189 */;
-import useChannelNameDefault from "useChannelName" /* 4990 */;
-import EmojiIconDefault from "EmojiIcon" /* 14773 */;
+import native from "native" /* 1188 */;
+import useChannelNameDefault from "useChannelName" /* 5043 */;
+import EmojiIconDefault from "EmojiIcon" /* 15058 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ let hasOwnProperty;
 let metroRequire;
 let tmp10;
 let tmp6;
-const UnicodeEmojisDefault = tmp10(4486);
-const Text_Text = tmp6(4833);
+const UnicodeEmojisDefault = tmp10(4523);
+const Text_Text = tmp6(4886);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flexDirection: "row", justifyContent: "flex-start" }, textContainer: { flex: 1, justifyContent: "center" }, description: { marginTop: 2 }, channelTitle: { flexDirection: "row", alignItems: "center" }, channelIcon: { width: 16, height: 16, marginEnd: 8 } });
@@ -93,7 +93,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp12 = null;
     if (null != description) {
       const obj4 = { style: tmp4.description, variant: "text-sm/normal", color: "interactive-text-default", children: description };
-      tmp12 = hasOwnProperty(tmp(4833).Text, obj4);
+      tmp12 = hasOwnProperty(tmp(4886).Text, obj4);
     }
     cResult[4] = description;
     cResult[5] = tmp4.description;
@@ -169,9 +169,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((benefit) => {
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
   const tmp11 = useChannelNameDefault(stateFromStores);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(benefit(1127).t.bz1PZX) + "]" };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(benefit(1126).t.bz1PZX) + "]" };
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const _HermesInternal = HermesInternal;
     const tmp14 = closure_5(Text, obj2);
     cResult[4] = tmp14;
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((benefit) => {
     let tmp15;
     ({ channelTitle, channelIcon } = tmp4);
     if (cResult[5] !== stateFromStores) {
-      const tmpResult2 = benefit(5336);
+      const tmpResult2 = benefit(5812);
       const channelIcon1 = tmpResult2.getChannelIcon(stateFromStores);
       cResult[5] = stateFromStores;
       cResult[6] = channelIcon1;
@@ -199,7 +199,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((benefit) => {
       }
       if (cResult[10] !== tmp11) {
         const obj3 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp11 };
-        const tmp22 = closure_5(benefit(4833).Text, obj3);
+        const tmp22 = closure_5(benefit(4886).Text, obj3);
         cResult[10] = tmp11;
         cResult[11] = tmp22;
         tmp20 = tmp22;
@@ -224,8 +224,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((benefit) => {
       cResult[15] = tmp26;
       tmp23 = tmp26;
     }
-    const obj5 = { style: channelIcon, size: benefit(1189).Icon.Sizes.CUSTOM, source: tmp15 };
-    const Icon = tmp(1189).Icon;
+    const obj5 = { style: channelIcon, size: benefit(1188).Icon.Sizes.CUSTOM, source: tmp15 };
+    const Icon = tmp(1188).Icon;
     const tmp19 = closure_5(Icon, obj5);
     cResult[7] = tmp4.channelIcon;
     cResult[8] = tmp15;
@@ -280,19 +280,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((benefit) => {
   const items1 = [benefit.ref_id];
   const obj = benefit(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(benefit.ref_id), items1);
-  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(benefit(1127).t.bz1PZX) + "]" };
+  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(benefit(1126).t.bz1PZX) + "]" };
   const tmp6 = useChannelNameDefault(stateFromStores);
-  const Text = benefit(4833).Text;
-  intl = benefit(1127).intl;
+  const Text = benefit(4886).Text;
+  intl = benefit(1126).intl;
   let tmp8 = closure_5(Text, obj2);
   if (null != stateFromStores) {
     const obj3 = { style: tmp.channelTitle, children: items2 };
-    const obj4 = { style: tmp.channelIcon, size: benefit(1189).Icon.Sizes.CUSTOM, source: tmp2Result.getChannelIcon(stateFromStores) };
-    const Icon = tmp2(1189).Icon;
-    tmp2Result = benefit(5336);
+    const obj4 = { style: tmp.channelIcon, size: benefit(1188).Icon.Sizes.CUSTOM, source: tmp2Result.getChannelIcon(stateFromStores) };
+    const Icon = tmp2(1188).Icon;
+    tmp2Result = benefit(5812);
     items2 = [closure_5(Icon, obj4), ];
     const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp6 };
-    items2[1] = closure_5(benefit(4833).Text, obj5);
+    items2[1] = closure_5(benefit(4886).Text, obj5);
     tmp8 = closure_6(View, obj3);
   }
   const tmp9 = closure_8;

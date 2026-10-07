@@ -1,32 +1,32 @@
-// Module ID: 15000
-// Function ID: 15001
+// Module ID: 15285
+// Function ID: 15286
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1378, 4497, 1195, 1196, 1086, 21, 4837, 588, 1253, 2027, 8656, 558, 576, 4535, 504, 4491, 1491, 6411, 5997, 1127, 6621, 1189, 9895, 4833, 5995, 5994, 8057, 5280, 2]
+// Dependencies: [19, 17, 1377, 4534, 1194, 1195, 1085, 21, 4890, 587, 1252, 2028, 8863, 558, 576, 4580, 504, 4528, 1490, 6487, 6074, 1126, 6698, 1188, 10124, 4886, 6072, 6071, 8895, 5593, 2]
 // Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15000 (UserSettingsText)
+// Module 15285 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl23 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1196 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import TableRadioRow4 from "TableRadioRow" /* 5994 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 5995 */;
-import TableRowGroup7 from "TableRowGroup" /* 5997 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
-import TableSwitchRow8 from "TableSwitchRow" /* 6621 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8656 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9895 */;
+import nativeDefault from "native" /* 587 */;
+import intl23 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1195 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import TableRadioRow4 from "TableRadioRow" /* 6071 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6072 */;
+import TableRowGroup7 from "TableRowGroup" /* 6074 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6487 */;
+import TableSwitchRow8 from "TableSwitchRow" /* 6698 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8863 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10124 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
-import SubscriptionStore from "SubscriptionStore" /* 4497 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1195 */;
-import Constants from "Constants" /* 1086 */;
+import UserStore from "UserStore" /* 1377 */;
+import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

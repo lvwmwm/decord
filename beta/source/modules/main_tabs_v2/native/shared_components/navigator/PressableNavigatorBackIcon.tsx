@@ -1,22 +1,22 @@
-// Module ID: 7294
-// Function ID: 7295
+// Module ID: 7500
+// Function ID: 7501
 // Name: PressableNavigatorBackIcon
-// Dependencies: [109, 19, 17, 2051, 7054, 2102, 21, 4837, 1189, 588, 558, 576, 504, 4535, 4654, 1127, 7295, 7296, 7298, 5436, 2]
+// Dependencies: [109, 19, 17, 2051, 7121, 2103, 21, 4890, 1188, 587, 558, 576, 504, 4580, 4696, 1126, 7501, 7502, 7504, 5909, 2]
 
-// Module 7294 (PressableNavigatorBackIcon)
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7295 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 7296 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7298 */;
+// Module 7500 (PressableNavigatorBackIcon)
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7501 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 7502 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7504 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7054 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -111,7 +111,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       let tmp20;
       const _Symbol2 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { minWidth: tmp(1189).BADGE_SIZE + 8 };
+        const obj2 = { minWidth: tmp(1188).BADGE_SIZE + 8 };
         cResult[7] = obj2;
         tmp20 = obj2;
       } else {
@@ -122,7 +122,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       let tmp19;
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { minWidth: tmp(1189).BADGE_SIZE + 12 };
+        const obj3 = { minWidth: tmp(1188).BADGE_SIZE + 12 };
         cResult[8] = obj3;
         tmp19 = obj3;
       } else {
@@ -131,12 +131,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       tmp18 = tmp19;
     }
   }
-  const tmpResult3 = tmp(4535);
+  const tmpResult3 = tmp(4580);
   let backgroundColor = tmpResult3.useToken(tmp4);
-  const useGradientValue = tmp(4654).useGradientValue;
-  tmp(4654);
+  const useGradientValue = tmp(4696).useGradientValue;
+  tmp(4696);
   if (backgroundColor == null) {
-    backgroundColor = useGradientValue(tmp(4654).GradientPercentage.START);
+    backgroundColor = useGradientValue(tmp(4696).GradientPercentage.START);
   }
   if (backgroundColor == null) {
     backgroundColor = tmp11.maskStroke.backgroundColor;
@@ -151,12 +151,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     if (cResult[12] !== stateFromStores) {
       let formatToPlainStringResult;
       if (stateFromStores > 0) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const obj4 = { mentionCount: stateFromStores };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t.vxFYaM, obj4);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.vxFYaM, obj4);
       } else {
-        const intl = tmp(1127).intl;
-        formatToPlainStringResult = intl.string(tmp(1127).t["13/7kX"]);
+        const intl = tmp(1126).intl;
+        formatToPlainStringResult = intl.string(tmp(1126).t["13/7kX"]);
       }
       cResult[12] = stateFromStores;
       cResult[13] = formatToPlainStringResult;
@@ -204,7 +204,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             const obj7 = { children: closure_11(PressableOpacity, obj8) };
             obj8 = { ref, accessibilityRole: "button", accessibilityLabel: tmp23, onPress: tmp22, style: tmp11.actionButtonPressable, children: tmp35 };
             const tmp43 = PressableNavigatorButtonWrapperDefault;
-            PressableOpacity = tmp(5436).PressableOpacity;
+            PressableOpacity = tmp(5909).PressableOpacity;
             const merged = Object.assign(tmp7);
             const tmp47 = closure_11(tmp43, obj7);
             cResult[24] = tmp22;

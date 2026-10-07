@@ -1,12 +1,12 @@
-// Module ID: 8880
-// Function ID: 8881
+// Module ID: 9106
+// Function ID: 9107
 // Name: SurfaceDirectRendererExperiment
-// Dependencies: [502, 1441, 558, 576, 504, 2]
+// Dependencies: [502, 1440, 558, 576, 504, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled
 
-// Module 8880 (SurfaceDirectRendererExperiment)
+// Module 9106 (SurfaceDirectRendererExperiment)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

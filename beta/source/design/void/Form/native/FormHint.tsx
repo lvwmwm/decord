@@ -1,18 +1,18 @@
-// Module ID: 8064
-// Function ID: 8065
+// Module ID: 8900
+// Function ID: 8901
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 5996, 4833, 1189, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6073, 4886, 1188, 2]
 
-// Module 8064 (FormHint)
+// Module 8900 (FormHint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import RedesignCompat from "RedesignCompat" /* 5996 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import RedesignCompat from "RedesignCompat" /* 6073 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp = closure_4();
   if (react.useContext(RedesignCompat.RedesignCompatContext)) {
     let redesignHorizontalPadding = !flag;
-    const Text = tmp2(4833).Text;
+    const Text = tmp2(4886).Text;
     if (!flag) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;
     }
@@ -113,7 +113,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     const items1 = [tmp.formHintText, , ];
     let horizonatalPadding = !flag;
-    const LegacyText = tmp2(1189).LegacyText;
+    const LegacyText = tmp2(1188).LegacyText;
     if (!flag) {
       horizonatalPadding = tmp.horizonatalPadding;
     }

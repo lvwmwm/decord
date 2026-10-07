@@ -1,29 +1,29 @@
-// Module ID: 12729
-// Function ID: 12730
+// Module ID: 12989
+// Function ID: 12990
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1086, 1097, 21, 558, 576, 12730, 10540, 12731, 5280, 9766, 10308, 1253, 12732, 5040, 7874, 7875, 11280, 38, 1267, 1127, 5933, 10733, 2]
+// Dependencies: [19, 1085, 1096, 21, 558, 576, 12990, 10778, 12991, 5593, 12992, 9995, 10539, 1252, 5093, 8095, 8096, 11536, 38, 1266, 1126, 6010, 10976, 2]
 // Exports: default
 
-// Module 12729 (OrbCheckoutModal)
+// Module 12989 (OrbCheckoutModal)
 import react2 from "react" /* 576 */;
-import Constants2 from "Constants" /* 1097 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import Stack_Stack from "Stack/Stack" /* 5280 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9766 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10308 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10540 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 12730 */;
-import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 12731 */;
+import Constants2 from "Constants" /* 1096 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9995 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10539 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10778 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 12990 */;
+import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 12991 */;
 import "react";
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, flag, importDefault, obj1, obj10, obj11, obj12, obj8, obj9, onPress, orbBalance, tmp11, tmp18, tmp19, tmp22, tmp23, tmp24, tmp25, tmp26, tmp29, tmp3, tmp30, tmp31, tmp32, tmp33, tmp36, tmp37, tmp38, tmp39, tmp4, tmp40, tmp42, track2Result, track3Result, track4Result, trackResult;
+let _require, onPress, orbBalance;
 
 let c9;
 let closure_12;
@@ -58,7 +58,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbBalance) =>
     let tmp8 = null != orbRedemptionError;
     if (tmp8) {
       const obj4 = { error: orbRedemptionError.message };
-      tmp8 = unpackModuleId(tmp(12731).OrbCheckoutErrorCard, obj4);
+      tmp8 = unpackModuleId(tmp(12991).OrbCheckoutErrorCard, obj4);
     }
     cResult[0] = orbRedemptionError;
     cResult[1] = tmp8;
@@ -118,10 +118,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbBalance) =>
   const tmp5 = closure_12;
   if (tmp6) {
     const obj3 = { error: orbRedemptionError.message };
-    tmp6 = unpackModuleId(tmp(12731).OrbCheckoutErrorCard, obj3);
+    tmp6 = unpackModuleId(tmp(12991).OrbCheckoutErrorCard, obj3);
   }
   const items = [tmp6, , ];
-  const OrbCheckoutOrderSummary = tmp(12731).OrbCheckoutOrderSummary;
+  const OrbCheckoutOrderSummary = tmp(12991).OrbCheckoutOrderSummary;
   if (product == null) {
     product = null;
   }
@@ -148,7 +148,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   if (cResult[1] !== onPress) {
     const obj2 = { children: items };
     items = [first, ];
-    const Stack = tmp(5280).Stack;
+    const Stack = tmp(5593).Stack;
     const obj3 = { onPress };
     items[1] = unpackModuleId(OrbCheckoutModalComponents.OrbCheckoutPurchaseButton, obj3);
     const tmp10 = closure_12(Stack, obj2);
@@ -171,249 +171,137 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let analyticsLocations;
   let closure_0;
-  let closure_1;
   let loadId;
   let orbPriceAmount2;
   let orbProductContext;
   let skuId;
-  let tmp5;
-  let tmp7;
+  let tmp6;
+  let tmp8;
   _require = arg0;
   const tmp2 = dependencyMap;
   let obj = require("react");
-  const cResult = obj.c(15);
+  const cResult = obj.c(16);
   let obj2 = require("OrbCheckoutModalContext");
   const orbCheckoutModalContext = obj2.useOrbCheckoutModalContext();
   ({ skuId, loadId, analyticsLocations, orbProductContext } = orbCheckoutModalContext);
+  const obj3 = require("useVirtualCurrencyBalance");
+  const virtualCurrencyBalance = obj3.useVirtualCurrencyBalance();
   const tmp = _require;
   if (cResult[0] !== skuId) {
-    const tmpResult = tmp(9766);
+    const tmpResult = tmp(9995);
     let result = tmpResult.get1PShopApplicationIdForSKU(skuId);
     cResult[0] = skuId;
     cResult[1] = result;
-    tmp5 = result;
+    tmp6 = result;
   } else {
-    tmp5 = cResult[1];
+    tmp6 = cResult[1];
   }
   if (cResult[2] !== orbProductContext) {
-    let tmp9 = null != orbProductContext;
-    if (tmp9) {
+    let tmp10 = null != orbProductContext;
+    if (tmp10) {
       const orbPriceAmount = orbProductContext.orbPriceAmount;
-      const obj3 = { price: orbPriceAmount, regular_price: orbPriceAmount2 };
+      let obj4 = { price: orbPriceAmount, regular_price: orbPriceAmount2 };
       orbPriceAmount2 = orbProductContext.orbPriceAmount;
-      tmp9 = obj3;
+      tmp10 = obj4;
     }
     cResult[2] = orbProductContext;
-    cResult[3] = tmp9;
-    tmp7 = tmp9;
+    cResult[3] = tmp10;
+    tmp8 = tmp10;
   } else {
-    tmp7 = cResult[3];
+    tmp8 = cResult[3];
   }
   if (cResult[4] === analyticsLocations) {
     if (cResult[5] === loadId) {
       if (cResult[6] === skuId) {
-        if (cResult[7] === tmp5) {
-          let tmp10;
-          if (cResult[8] === tmp7) {
-            tmp10 = cResult[9];
-          }
-          importDefault = tmp10;
-          if (cResult[10] === tmp10) {
-            let tmp12;
-            let tmp13;
-            if (cResult[11] === arg0) {
-              tmp12 = cResult[12];
+        if (cResult[7] === tmp6) {
+          if (cResult[8] === tmp8) {
+            let tmp11;
+            if (cResult[9] === virtualCurrencyBalance) {
+              tmp11 = cResult[10];
             }
-            if (cResult[13] !== tmp12) {
-              let obj4 = { emitOrbCheckoutPaymentFlowEvent: tmp12 };
-              class A {
-                constructor(arg0, arg1) {
-                  diff = Date.now() - closure_0;
-                  tmp2 = AnalyticEvents;
-                  if (arg0 === AnalyticEvents.PAYMENT_FLOW_STARTED) {
-                    tmp36 = closure_0;
-                    tmp37 = closure_2;
-                    tmp38 = closure_0(closure_2[11]);
-                    obj1 = {};
-                    tmp39 = closure_1;
-                    tmp40 = obj1;
-                    trackPaymentFlowStartedAnalyticsAndCTP = tmp38.trackPaymentFlowStartedAnalyticsAndCTP;
-                    merged = Object.assign(closure_1);
-                    flag = false;
-                    obj1.has_saved_payment_source = false;
-                    tmp42 = null;
-                    obj1.continue_session_initial_step = null;
-                    result = trackPaymentFlowStartedAnalyticsAndCTP(obj1);
-                  } else if (arg0 === tmp2.PAYMENT_FLOW_COMPLETED) {
-                    tmp29 = closure_1;
-                    tmp30 = closure_2;
-                    tmp31 = closure_1(closure_2[12]);
-                    obj8 = {};
-                    tmp32 = closure_1;
-                    tmp33 = obj8;
-                    track4 = tmp31.track;
-                    PAYMENT_FLOW_COMPLETED = tmp2.PAYMENT_FLOW_COMPLETED;
-                    merged1 = Object.assign(closure_1);
-                    obj8.duration_ms = diff;
-                    track4Result = track4(PAYMENT_FLOW_COMPLETED, obj8);
-                  } else if (arg0 === tmp2.PAYMENT_FLOW_SUCCEEDED) {
-                    tmp22 = closure_1;
-                    tmp23 = closure_2;
-                    tmp24 = closure_1(closure_2[12]);
-                    obj9 = {};
-                    tmp25 = closure_1;
-                    tmp26 = obj9;
-                    track3 = tmp24.track;
-                    PAYMENT_FLOW_SUCCEEDED = tmp2.PAYMENT_FLOW_SUCCEEDED;
-                    merged2 = Object.assign(closure_1);
-                    obj9.duration_ms = diff;
-                    track3Result = track3(PAYMENT_FLOW_SUCCEEDED, obj9);
-                  } else if (arg0 === tmp2.PAYMENT_FLOW_CANCELED) {
-                    tmp15 = closure_1;
-                    tmp16 = closure_2;
-                    tmp17 = closure_1(closure_2[12]);
-                    obj10 = {};
-                    tmp18 = closure_1;
-                    tmp19 = obj10;
-                    track2 = tmp17.track;
-                    PAYMENT_FLOW_CANCELED = tmp2.PAYMENT_FLOW_CANCELED;
-                    merged3 = Object.assign(closure_1);
-                    obj10.duration_ms = diff;
-                    track2Result = track2(PAYMENT_FLOW_CANCELED, obj10);
-                  } else {
-                    tmp3 = arg1;
-                    tmp4 = closure_1;
-                    tmp5 = closure_2;
-                    tmp6 = closure_1(closure_2[12]);
-                    obj = {};
-                    tmp7 = closure_1;
-                    tmp8 = obj;
-                    track = tmp6.track;
-                    PAYMENT_FLOW_FAILED = tmp2.PAYMENT_FLOW_FAILED;
-                    merged4 = Object.assign(closure_1);
-                    obj.duration_ms = diff;
-                    tmp10 = null;
-                    if (null != arg1) {
-                      obj11 = { payment_error_code: null, error_message: null };
-                      ({ code: obj3.payment_error_code, message: obj3.error_message } = arg1);
-                      obj12 = obj11;
-                    } else {
-                      obj12 = {};
-                    }
-                    tmp11 = obj;
-                    tmp12 = obj12;
-                    merged5 = Object.assign(obj12);
-                    trackResult = track(PAYMENT_FLOW_FAILED, obj);
-                  }
-                  return;
-                }
+            let closure_1 = tmp11;
+            if (cResult[11] === tmp11) {
+              let tmp13;
+              let tmp14;
+              if (cResult[12] === arg0) {
+                tmp13 = cResult[13];
               }
-              cResult[14] = obj4;
-              tmp13 = obj4;
-            } else {
-              tmp13 = cResult[14];
-            }
-            return tmp13;
-          }
-          class A {
-            constructor(arg0, arg1) {
-              diff = Date.now() - closure_0;
-              tmp2 = AnalyticEvents;
-              if (arg0 === AnalyticEvents.PAYMENT_FLOW_STARTED) {
-                tmp36 = closure_0;
-                tmp37 = closure_2;
-                tmp38 = closure_0(closure_2[11]);
-                obj1 = {};
-                tmp39 = closure_1;
-                tmp40 = obj1;
-                trackPaymentFlowStartedAnalyticsAndCTP = tmp38.trackPaymentFlowStartedAnalyticsAndCTP;
-                merged = Object.assign(closure_1);
-                flag = false;
-                obj1.has_saved_payment_source = false;
-                tmp42 = null;
-                obj1.continue_session_initial_step = null;
-                result = trackPaymentFlowStartedAnalyticsAndCTP(obj1);
-              } else if (arg0 === tmp2.PAYMENT_FLOW_COMPLETED) {
-                tmp29 = closure_1;
-                tmp30 = closure_2;
-                tmp31 = closure_1(closure_2[12]);
-                obj8 = {};
-                tmp32 = closure_1;
-                tmp33 = obj8;
-                track4 = tmp31.track;
-                PAYMENT_FLOW_COMPLETED = tmp2.PAYMENT_FLOW_COMPLETED;
-                merged1 = Object.assign(closure_1);
-                obj8.duration_ms = diff;
-                track4Result = track4(PAYMENT_FLOW_COMPLETED, obj8);
-              } else if (arg0 === tmp2.PAYMENT_FLOW_SUCCEEDED) {
-                tmp22 = closure_1;
-                tmp23 = closure_2;
-                tmp24 = closure_1(closure_2[12]);
-                obj9 = {};
-                tmp25 = closure_1;
-                tmp26 = obj9;
-                track3 = tmp24.track;
-                PAYMENT_FLOW_SUCCEEDED = tmp2.PAYMENT_FLOW_SUCCEEDED;
-                merged2 = Object.assign(closure_1);
-                obj9.duration_ms = diff;
-                track3Result = track3(PAYMENT_FLOW_SUCCEEDED, obj9);
-              } else if (arg0 === tmp2.PAYMENT_FLOW_CANCELED) {
-                tmp15 = closure_1;
-                tmp16 = closure_2;
-                tmp17 = closure_1(closure_2[12]);
-                obj10 = {};
-                tmp18 = closure_1;
-                tmp19 = obj10;
-                track2 = tmp17.track;
-                PAYMENT_FLOW_CANCELED = tmp2.PAYMENT_FLOW_CANCELED;
-                merged3 = Object.assign(closure_1);
-                obj10.duration_ms = diff;
-                track2Result = track2(PAYMENT_FLOW_CANCELED, obj10);
+              if (cResult[14] !== tmp13) {
+                let obj5 = { emitOrbCheckoutPaymentFlowEvent: tmp13 };
+                cResult[14] = tmp13;
+                cResult[15] = obj5;
+                tmp14 = obj5;
               } else {
-                tmp3 = arg1;
-                tmp4 = closure_1;
-                tmp5 = closure_2;
-                tmp6 = closure_1(closure_2[12]);
-                obj = {};
-                tmp7 = closure_1;
-                tmp8 = obj;
-                track = tmp6.track;
-                PAYMENT_FLOW_FAILED = tmp2.PAYMENT_FLOW_FAILED;
-                merged4 = Object.assign(closure_1);
-                obj.duration_ms = diff;
-                tmp10 = null;
-                if (null != arg1) {
-                  obj11 = { payment_error_code: null, error_message: null };
-                  ({ code: obj3.payment_error_code, message: obj3.error_message } = arg1);
-                  obj12 = obj11;
-                } else {
-                  obj12 = {};
-                }
-                tmp11 = obj;
-                tmp12 = obj12;
-                merged5 = Object.assign(obj12);
-                trackResult = track(PAYMENT_FLOW_FAILED, obj);
+                tmp14 = cResult[15];
               }
-              return;
+              return tmp14;
             }
+            const fn = function b(arg0, arg1) {
+              const diff = Date.now() - closure_0;
+              if (arg0 === metroImportAll.PAYMENT_FLOW_STARTED) {
+                const obj2 = { has_saved_payment_source: false, continue_session_initial_step: null };
+                const trackPaymentFlowStartedAnalyticsAndCTP = PaymentFlowStartedTriggerPoint.trackPaymentFlowStartedAnalyticsAndCTP;
+                PaymentFlowStartedTriggerPoint;
+                const merged = Object.assign(closure_1);
+                const result = trackPaymentFlowStartedAnalyticsAndCTP(obj2);
+              } else if (arg0 === metroImportAll.PAYMENT_FLOW_COMPLETED) {
+                const obj4 = { duration_ms: diff };
+                const track4 = AnalyticsUtilsDefault.track;
+                const PAYMENT_FLOW_COMPLETED = tmp2.PAYMENT_FLOW_COMPLETED;
+                AnalyticsUtilsDefault;
+                const merged1 = Object.assign(closure_1);
+                track4(PAYMENT_FLOW_COMPLETED, obj4);
+              } else if (arg0 === metroImportAll.PAYMENT_FLOW_SUCCEEDED) {
+                const obj5 = { duration_ms: diff };
+                const track3 = AnalyticsUtilsDefault.track;
+                const PAYMENT_FLOW_SUCCEEDED = tmp2.PAYMENT_FLOW_SUCCEEDED;
+                AnalyticsUtilsDefault;
+                const merged2 = Object.assign(closure_1);
+                track3(PAYMENT_FLOW_SUCCEEDED, obj5);
+              } else if (arg0 === metroImportAll.PAYMENT_FLOW_CANCELED) {
+                const obj6 = { duration_ms: diff };
+                const track2 = AnalyticsUtilsDefault.track;
+                const PAYMENT_FLOW_CANCELED = tmp2.PAYMENT_FLOW_CANCELED;
+                AnalyticsUtilsDefault;
+                const merged3 = Object.assign(closure_1);
+                track2(PAYMENT_FLOW_CANCELED, obj6);
+              } else {
+                let obj13;
+                const obj = { duration_ms: diff };
+                const track = AnalyticsUtilsDefault.track;
+                const PAYMENT_FLOW_FAILED = tmp2.PAYMENT_FLOW_FAILED;
+                AnalyticsUtilsDefault;
+                const merged4 = Object.assign(closure_1);
+                if (null != arg1) {
+                  const obj7 = { payment_error_code: null, error_message: null };
+                  ({ code: obj3.payment_error_code, message: obj3.error_message } = arg1);
+                  obj13 = obj7;
+                } else {
+                  obj13 = {};
+                }
+                const merged5 = Object.assign(obj13);
+                track(PAYMENT_FLOW_FAILED, obj);
+              }
+            };
+            cResult[11] = tmp11;
+            cResult[12] = arg0;
+            cResult[13] = fn;
+            tmp13 = fn;
           }
-          cResult[10] = tmp10;
-          cResult[11] = arg0;
-          cResult[12] = A;
-          tmp12 = A;
         }
       }
     }
   }
-  let obj5 = { load_id: loadId, application_id: tmp5, location_stack: analyticsLocations, sku_id: skuId, currency: constants2.DISCORD_ORB, payment_gateway: InternalPaymentGateways.VIRTUAL_CURRENCY };
-  let merged = Object.assign(tmp7);
+  let obj6 = { load_id: loadId, application_id: tmp6, location_stack: analyticsLocations, sku_id: skuId, currency: constants2.DISCORD_ORB, payment_gateway: InternalPaymentGateways.VIRTUAL_CURRENCY, virtual_currency_balance: virtualCurrencyBalance };
+  let merged = Object.assign(tmp8);
   cResult[4] = analyticsLocations;
   cResult[5] = loadId;
   cResult[6] = skuId;
-  cResult[7] = tmp5;
-  cResult[8] = tmp7;
-  cResult[9] = obj5;
-  tmp10 = obj5;
+  cResult[7] = tmp6;
+  cResult[8] = tmp8;
+  cResult[9] = virtualCurrencyBalance;
+  cResult[10] = obj6;
+  tmp11 = obj6;
 }) : ((arg0) => {
   let closure_0;
   let items1;
@@ -425,11 +313,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   loadId = orbCheckoutModalContext.loadId;
   const analyticsLocations = orbCheckoutModalContext.analyticsLocations;
   const orbProductContext = orbCheckoutModalContext.orbProductContext;
-  const items = [loadId, skuId, analyticsLocations, orbProductContext];
-  let tmp2 = closure_7(() => {
+  let obj2 = require("useVirtualCurrencyBalance");
+  const virtualCurrencyBalance = obj2.useVirtualCurrencyBalance();
+  const items = [loadId, skuId, analyticsLocations, orbProductContext, virtualCurrencyBalance];
+  const tmp3 = closure_7(() => {
     let obj2;
     let orbPriceAmount2;
-    const obj = { load_id: loadId, application_id: obj2.get1PShopApplicationIdForSKU(skuId), location_stack: analyticsLocations, sku_id: skuId, currency: constants.DISCORD_ORB, payment_gateway: InternalPaymentGateways.VIRTUAL_CURRENCY };
+    const obj = { load_id: loadId, application_id: obj2.get1PShopApplicationIdForSKU(skuId), location_stack: analyticsLocations, sku_id: skuId, currency: constants.DISCORD_ORB, payment_gateway: InternalPaymentGateways.VIRTUAL_CURRENCY, virtual_currency_balance: virtualCurrencyBalance };
     let tmp2 = null != orbProductContext;
     obj2 = VirtualCurrencyUtils;
     if (tmp2) {
@@ -441,36 +331,36 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const merged = Object.assign(tmp2);
     return obj;
   }, items);
-  let closure_5 = tmp2;
-  let obj2 = {
+  let closure_6 = tmp3;
+  let obj3 = {
     emitOrbCheckoutPaymentFlowEvent: closure_6((arg0, arg1) => {
       const diff = Date.now() - closure_0;
       if (arg0 === metroImportAll.PAYMENT_FLOW_STARTED) {
         const obj2 = { has_saved_payment_source: false, continue_session_initial_step: null };
         const trackPaymentFlowStartedAnalyticsAndCTP = PaymentFlowStartedTriggerPoint.trackPaymentFlowStartedAnalyticsAndCTP;
         PaymentFlowStartedTriggerPoint;
-        const merged = Object.assign(closure_5);
+        const merged = Object.assign(closure_6);
         const result = trackPaymentFlowStartedAnalyticsAndCTP(obj2);
       } else if (arg0 === metroImportAll.PAYMENT_FLOW_COMPLETED) {
         const obj4 = { duration_ms: diff };
         const track4 = AnalyticsUtilsDefault.track;
         const PAYMENT_FLOW_COMPLETED = tmp2.PAYMENT_FLOW_COMPLETED;
         AnalyticsUtilsDefault;
-        const merged1 = Object.assign(closure_5);
+        const merged1 = Object.assign(closure_6);
         track4(PAYMENT_FLOW_COMPLETED, obj4);
       } else if (arg0 === metroImportAll.PAYMENT_FLOW_SUCCEEDED) {
         const obj5 = { duration_ms: diff };
         const track3 = AnalyticsUtilsDefault.track;
         const PAYMENT_FLOW_SUCCEEDED = tmp2.PAYMENT_FLOW_SUCCEEDED;
         AnalyticsUtilsDefault;
-        const merged2 = Object.assign(closure_5);
+        const merged2 = Object.assign(closure_6);
         track3(PAYMENT_FLOW_SUCCEEDED, obj5);
       } else if (arg0 === metroImportAll.PAYMENT_FLOW_CANCELED) {
         const obj6 = { duration_ms: diff };
         const track2 = AnalyticsUtilsDefault.track;
         const PAYMENT_FLOW_CANCELED = tmp2.PAYMENT_FLOW_CANCELED;
         AnalyticsUtilsDefault;
-        const merged3 = Object.assign(closure_5);
+        const merged3 = Object.assign(closure_6);
         track2(PAYMENT_FLOW_CANCELED, obj6);
       } else {
         let obj13;
@@ -478,7 +368,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const track = AnalyticsUtilsDefault.track;
         const PAYMENT_FLOW_FAILED = tmp2.PAYMENT_FLOW_FAILED;
         AnalyticsUtilsDefault;
-        const merged4 = Object.assign(closure_5);
+        const merged4 = Object.assign(closure_6);
         if (null != arg1) {
           const obj7 = { payment_error_code: null, error_message: null };
           ({ code: obj3.payment_error_code, message: obj3.error_message } = arg1);
@@ -491,8 +381,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }, items1)
   };
-  items1 = [arg0, tmp2];
-  return obj2;
+  items1 = [arg0, tmp3];
+  return obj3;
 });
 function OrbCheckoutModalScreen(startTime) {
   let items3;
@@ -507,7 +397,7 @@ function OrbCheckoutModalScreen(startTime) {
   onRedeemVirtualCurrency = orbCheckoutModalContext.onRedeemVirtualCurrency;
   const orbRedemptionError = orbCheckoutModalContext.orbRedemptionError;
   emitOrbCheckoutPaymentFlowEvent = closure_16(startTime).emitOrbCheckoutPaymentFlowEvent;
-  const obj2 = onRedeemVirtualCurrency(emitOrbCheckoutPaymentFlowEvent[13]);
+  const obj2 = onRedeemVirtualCurrency(emitOrbCheckoutPaymentFlowEvent[10]);
   const virtualCurrencyBalance = obj2.useVirtualCurrencyBalance();
   const tmp5 = ref(virtualCurrencyBalance);
   ref = tmp5;
@@ -568,15 +458,17 @@ export default function _default(skuId) {
   let obj = skuId(analyticsLocations[19]);
   current = useRef(obj.v4()).current;
   const current2 = current.useRef(Date.now()).current;
+  let obj2 = skuId(analyticsLocations[10]);
+  const virtualCurrencyBalance = obj2.useVirtualCurrencyBalance();
   const items = [analyticsLocations, skuId];
   const effect = current.useEffect(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type: "Orb Checkout Modal", location_stack: analyticsLocations, sku_id: skuId };
     obj.track(metroImportAll.OPEN_MODAL, obj2);
   }, items);
-  const items1 = [skuId, current, analyticsLocations, current2];
-  let obj2 = {};
-  const obj3 = {
+  const items1 = [skuId, current, analyticsLocations, current2, virtualCurrencyBalance];
+  const obj3 = {};
+  const obj4 = {
     title: intl.string(skuId(analyticsLocations[20]).t.q9EGps),
     headerShown: true,
     headerLeft: getHeaderTextButton(intl2.string(skuId(analyticsLocations[20]).t["ETE/oC"]), callback),
@@ -591,7 +483,7 @@ export default function _default(skuId) {
   callback = current.useCallback(() => {
     let obj2;
     const timestamp = Date.now();
-    const obj = { load_id: current, application_id: obj2.get1PShopApplicationIdForSKU(skuId), location_stack: analyticsLocations, payment_gateway: InternalPaymentGateways.VIRTUAL_CURRENCY, sku_id: skuId, currency: constants.DISCORD_ORB, duration_ms: timestamp - current2 };
+    const obj = { load_id: current, application_id: obj2.get1PShopApplicationIdForSKU(skuId), location_stack: analyticsLocations, payment_gateway: InternalPaymentGateways.VIRTUAL_CURRENCY, sku_id: skuId, currency: constants.DISCORD_ORB, duration_ms: timestamp - current2, virtual_currency_balance: virtualCurrencyBalance };
     const track = AnalyticsUtilsDefault.track;
     const PAYMENT_FLOW_CANCELED = metroImportAll.PAYMENT_FLOW_CANCELED;
     AnalyticsUtilsDefault;
@@ -605,7 +497,7 @@ export default function _default(skuId) {
   getHeaderTextButton = skuId(analyticsLocations[21]).getHeaderTextButton;
   skuId(analyticsLocations[21]);
   intl2 = skuId(analyticsLocations[20]).intl;
-  obj2[MAIN] = obj3;
-  const obj4 = { screens: obj2, initialRouteName: constants3.MAIN, headerTitleAlign: "center" };
-  return closure_11(skuId(analyticsLocations[22]).Modal, obj4);
+  obj3[MAIN] = obj4;
+  const obj5 = { screens: obj3, initialRouteName: constants3.MAIN, headerTitleAlign: "center" };
+  return closure_11(skuId(analyticsLocations[22]).Modal, obj5);
 };

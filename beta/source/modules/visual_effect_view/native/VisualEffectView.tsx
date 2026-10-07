@@ -1,22 +1,22 @@
-// Module ID: 5270
-// Function ID: 5271
+// Module ID: 5773
+// Function ID: 5774
 // Name: VisualEffectView
-// Dependencies: [109, 19, 17, 5271, 1086, 21, 1370, 5272, 558, 576, 4535, 588, 5275, 2]
+// Dependencies: [109, 19, 17, 5774, 1085, 21, 1369, 5775, 558, 576, 4580, 587, 5778, 2]
 // Exports: isBlurDisabled, isBlurThemeLight, normalizeBlurTheme
 
-// Module 5270 (VisualEffectView)
+// Module 5773 (VisualEffectView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import useToken from "useToken" /* 4535 */;
-import VEVOOStore from "VEVOOStore" /* 5271 */;
-import VisualEffectViewIOS from "VisualEffectViewIOS" /* 5272 */;
-import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5275 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import useToken from "useToken" /* 4580 */;
+import VEVOOStore from "VEVOOStore" /* 5774 */;
+import VisualEffectViewIOS from "VisualEffectViewIOS" /* 5775 */;
+import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5778 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

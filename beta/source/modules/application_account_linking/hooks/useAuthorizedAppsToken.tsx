@@ -1,13 +1,13 @@
-// Module ID: 6591
-// Function ID: 6592
+// Module ID: 6664
+// Function ID: 6665
 // Name: useAuthorizedAppsToken
-// Dependencies: [19, 6529, 558, 576, 1376, 504, 6592, 2]
+// Dependencies: [19, 6602, 558, 576, 1375, 504, 6665, 2]
 
-// Module 6591 (useAuthorizedAppsToken)
+// Module 6664 (useAuthorizedAppsToken)
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6529 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6592 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6602 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6665 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

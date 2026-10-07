@@ -1,20 +1,20 @@
-// Module ID: 15452
-// Function ID: 15453
+// Module ID: 15756
+// Function ID: 15757
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [19, 17, 21, 4837, 558, 576, 1491, 13001, 1127, 7292, 7295, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 1490, 13265, 1126, 7498, 7501, 2]
 // Exports: default
 
-// Module 15452 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 15756 (CollectiblesShopViewAllCategoryItemsHeader)
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1127 */;
-import useNavigation from "useNavigation" /* 1491 */;
-import HeaderShared from "HeaderShared" /* 7292 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7295 */;
-import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 13001 */;
+import intl5 from "intl" /* 1126 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import HeaderShared from "HeaderShared" /* 7498 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7501 */;
+import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 13265 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
       const _Symbol = Symbol;
       const backButton = tmp20.backButton;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp15(1127).intl;
+        const intl3 = tmp15(1126).intl;
         const stringResult = intl3.string(intl5.t["13/7kX"]);
         cResult[3] = stringResult;
         tmp26 = stringResult;
@@ -105,7 +105,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
             tmp37 = cResult[13];
           }
           if (cResult[14] !== categoryName2) {
-            const intl4 = tmp15(1127).intl;
+            const intl4 = tmp15(1126).intl;
             const obj4 = { category: categoryName2 };
             const formatToPlainStringResult = intl4.formatToPlainString(intl5.t.FNtLb3, obj4);
             cResult[14] = categoryName2;
@@ -168,7 +168,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
         tmp33 = tmp36;
       }
       const obj9 = { source: AssetRegistryDefault, color: buttonColor2, accessibilityLabel: tmp26, onPress: tmp28 };
-      const HeaderIconButton2 = tmp15(7292).HeaderIconButton;
+      const HeaderIconButton2 = tmp15(7498).HeaderIconButton;
       const tmp32 = hasOwnProperty(HeaderIconButton2, obj9);
       cResult[6] = buttonColor2;
       cResult[7] = tmp28;

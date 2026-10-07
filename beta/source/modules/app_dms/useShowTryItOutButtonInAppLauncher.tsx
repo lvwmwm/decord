@@ -1,13 +1,13 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11768
+// Function ID: 11769
 // Name: useShowTryItOutButtonInAppLauncher
-// Dependencies: [558, 576, 8785, 11513, 8778, 2]
+// Dependencies: [558, 576, 9001, 11769, 8994, 2]
 
-// Module 11512 (useShowTryItOutButtonInAppLauncher)
+// Module 11768 (useShowTryItOutButtonInAppLauncher)
 import react from "react" /* 576 */;
-import canLaunchFrame from "canLaunchFrame" /* 8778 */;
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 8785 */;
-import useIsAppDMDefault from "useIsAppDM" /* 11513 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 8994 */;
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 9001 */;
+import useIsAppDMDefault from "useIsAppDM" /* 11769 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,9 +32,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         channel = context.channel;
       }
       const tmp7Result = tmp7(channel);
-      const tmpResult2 = canLaunchFrame;
-      let tmp11 = !tmpResult2.canLaunchFrame(application);
-      tmpResult2.canLaunchFrame(application);
+      const tmpResult2 = canLaunchContextlessFrame;
+      const result = tmpResult2.canLaunchContextlessFrame(application);
+      let tmp11 = !result;
       if (tmp11) {
         if (isPrimaryAppCommandUsableInAppDM) {
           isPrimaryAppCommandUsableInAppDM = null != botUserId;
@@ -67,9 +67,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     channel = context.channel;
   }
   const tmp4Result = tmp4(channel);
-  const tmpResult = canLaunchFrame;
-  let tmp8 = !tmpResult.canLaunchFrame(application);
-  tmpResult.canLaunchFrame(application);
+  const tmpResult = canLaunchContextlessFrame;
+  const result = tmpResult.canLaunchContextlessFrame(application);
+  let tmp8 = !result;
   if (tmp8) {
     if (isPrimaryAppCommandUsableInAppDM) {
       isPrimaryAppCommandUsableInAppDM = null != botUserId;
@@ -81,6 +81,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return tmp8;
 });
-const result = size.fileFinishedImporting("modules/app_dms/useShowTryItOutButtonInAppLauncher.tsx");
+let result = size.fileFinishedImporting("modules/app_dms/useShowTryItOutButtonInAppLauncher.tsx");
 
 export default tmp2;

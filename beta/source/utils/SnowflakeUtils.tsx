@@ -19,6 +19,14 @@ let obj = {
     const obj = utils_SnowflakeUtilsAll;
     return obj.extractTimestamp(arg0);
   },
+  getNonTimestampBits(arg0) {
+    const obj = utils_SnowflakeUtilsAll;
+    return obj.getNonTimestampBits(arg0);
+  },
+  setNonTimestampBits(arg0, arg1) {
+    const obj = utils_SnowflakeUtilsAll;
+    return obj.setNonTimestampBits(arg0, arg1);
+  },
   compare(arg0, arg1) {
     const obj = utils_SnowflakeUtilsAll;
     return obj.compare(arg0, arg1);

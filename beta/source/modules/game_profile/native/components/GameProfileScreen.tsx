@@ -1,25 +1,25 @@
-// Module ID: 8132
-// Function ID: 8133
+// Module ID: 8326
+// Function ID: 8327
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 8133, 21, 4837, 588, 558, 576, 1127, 5282, 7619, 8134, 4528, 8125, 6728, 5424, 4570, 8137, 4838, 8138, 8143, 4801, 8160, 6038, 8161, 8163, 8366, 6576, 6572, 2]
+// Dependencies: [32, 19, 17, 8327, 21, 4890, 587, 558, 576, 1126, 5594, 7841, 8328, 4565, 8319, 6812, 5896, 4612, 8331, 4891, 8332, 8337, 4854, 8354, 6112, 8355, 8357, 8566, 6649, 6645, 2]
 
-// Module 8132 (GameProfileScreen)
+// Module 8326 (GameProfileScreen)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4801 */;
-import timing from "timing" /* 4838 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8125 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8143 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8160 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
+import timing from "timing" /* 4891 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8319 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8337 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8354 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 8133 */;
+import GameProfileStore from "GameProfileStore" /* 8327 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   const cResult = obj.c(4);
   onPress = onPress.onPress;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.l8JeHg);
     cResult[0] = stringResult;
     first = stringResult;
@@ -59,7 +59,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl3.t.Vsxqmz);
     cResult[1] = stringResult1;
     tmp6 = stringResult1;

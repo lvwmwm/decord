@@ -1,17 +1,17 @@
-// Module ID: 8047
-// Function ID: 8048
+// Module ID: 8269
+// Function ID: 8270
 // Name: AgeVerificationMethodsContainer
-// Dependencies: [19, 7864, 7872, 21, 4837, 588, 558, 576, 7871, 5180, 5185, 1189, 1127, 5280, 4833, 3042, 5746, 5282, 7870, 5916, 5997, 7863, 2]
+// Dependencies: [19, 8085, 8093, 21, 4890, 587, 558, 576, 8092, 5409, 5414, 1188, 1126, 5593, 4886, 3045, 5592, 5594, 8091, 5993, 6074, 8084, 2]
 
-// Module 8047 (AgeVerificationMethodsContainer)
-import nativeDefault from "native" /* 588 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
-import MetricEvents from "MetricEvents" /* 5185 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 7864 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7872 */;
+// Module 8269 (AgeVerificationMethodsContainer)
+import nativeDefault from "native" /* 587 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 8085 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
   prop = ageVerificationMethods.ageVerificationMethods;
   const modalSessionId = ageVerificationMethods.modalSessionId;
   const tmp4 = closure_8();
-  let obj2 = prop(7871);
+  let obj2 = prop(8092);
   const isSuspendedUser = obj2.useIsSuspendedUser();
   if (cResult[0] !== prop) {
     const fn = function p() {
@@ -79,9 +79,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
   }
   const effect = react.useEffect(tmp6, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { messageType: prop(1189).HelpMessageTypes.INFO, textColor: "text-feedback-info", textVariant: "text-sm/medium", children: intl.string(prop(1127).t.El4aXl) };
-    const HelpMessage = tmp(1189).HelpMessage;
-    intl = tmp(1127).intl;
+    const obj3 = { messageType: prop(1188).HelpMessageTypes.INFO, textColor: "text-feedback-info", textVariant: "text-sm/medium", children: intl.string(prop(1126).t.El4aXl) };
+    const HelpMessage = tmp(1188).HelpMessage;
+    intl = tmp(1126).intl;
     const tmp11 = closure_6(HelpMessage, obj3);
     cResult[3] = tmp11;
     tmp9 = tmp11;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
           }
           if (cResult[10] !== tmp12) {
             const obj4 = { hasIcons: false, children: tmp12 };
-            const tmp16 = closure_6(prop(5997).TableRowGroup, obj4);
+            const tmp16 = closure_6(prop(6074).TableRowGroup, obj4);
             cResult[10] = tmp12;
             cResult[11] = tmp16;
             tmp14 = tmp16;
@@ -114,9 +114,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
             if (cResult[15] !== isSuspendedUser) {
               let tmp21 = isSuspendedUser;
               if (tmp21) {
-                const obj5 = { variant: "text-xs/medium", children: intl4.format(modalSessionId(3042).htWh1G, obj6) };
-                const Text2 = tmp(4833).Text;
-                intl4 = tmp(1127).intl;
+                const obj5 = { variant: "text-xs/medium", children: intl4.format(modalSessionId(3045).htWh1G, obj6) };
+                const Text2 = tmp(4886).Text;
+                intl4 = tmp(1126).intl;
                 obj6 = {
                   handleOnHelpUrlHook() {
                                   const obj = modalSessionId(dependencyMap[21]);
@@ -140,7 +140,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
             }
             const obj7 = { spacing: 8, align: "center", children: items1 };
             items1 = [tmp17, tmp20];
-            const tmp26 = closure_7(prop(5280).Stack, obj7);
+            const tmp26 = closure_7(prop(5593).Stack, obj7);
             cResult[17] = tmp17;
             cResult[18] = tmp20;
             cResult[19] = tmp26;
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
           }
           const obj8 = { spacing: 16, style: tmp4.content, children: items2 };
           items2 = [tmp9, tmp14];
-          const tmp19 = closure_7(prop(5280).Stack, obj8);
+          const tmp19 = closure_7(prop(5593).Stack, obj8);
           cResult[12] = tmp4.content;
           cResult[13] = tmp14;
           cResult[14] = tmp19;
@@ -181,16 +181,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
     tmp12 = mapped;
   }
   const obj9 = { direction: "vertical", align: "center", spacing: 16, style: tmp4.errorContainer, children: items3 };
-  const Stack = tmp(5280).Stack;
-  const obj10 = { variant: "text-sm/medium", color: "text-subtle", style: tmp4.noMethodsText, children: intl2.string(modalSessionId(3042).cR6336) };
-  const Text = tmp(4833).Text;
-  intl2 = tmp(1127).intl;
+  const Stack = tmp(5593).Stack;
+  const obj10 = { variant: "text-sm/medium", color: "text-subtle", style: tmp4.noMethodsText, children: intl2.string(modalSessionId(3045).cR6336) };
+  const Text = tmp(4886).Text;
+  intl2 = tmp(1126).intl;
   items3 = [closure_6(Text, obj10), ];
   const obj11 = { style: tmp4.buttonGroup, children: closure_6(Button, obj12) };
-  const ButtonGroup = tmp(5746).ButtonGroup;
-  obj12 = { variant: "primary", size: "lg", text: intl3.string(modalSessionId(3042).hDvmYP), onPress: prop(7870).getAgeVerificationMethods };
-  Button = tmp(5282).Button;
-  intl3 = tmp(1127).intl;
+  const ButtonGroup = tmp(5592).ButtonGroup;
+  obj12 = { variant: "primary", size: "lg", text: intl3.string(modalSessionId(3045).hDvmYP), onPress: prop(8091).getAgeVerificationMethods };
+  Button = tmp(5594).Button;
+  intl3 = tmp(1126).intl;
   items3[1] = closure_6(ButtonGroup, obj11);
   mapped = closure_7(Stack, obj9);
 }) : ((ageVerificationMethods) => {
@@ -205,7 +205,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
   const prop = ageVerificationMethods.ageVerificationMethods;
   const modalSessionId = ageVerificationMethods.modalSessionId;
   const tmp = closure_8();
-  let obj = prop(7871);
+  let obj = prop(8092);
   const isSuspendedUser = obj.useIsSuspendedUser();
   const items = [prop];
   const effect = react.useEffect(() => {
@@ -221,12 +221,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
       increment(obj2);
     }
   }, items);
-  const Stack = prop(5280).Stack;
+  const Stack = prop(5593).Stack;
   let obj2 = { spacing: 16, style: tmp.content, children: null };
-  const Stack2 = prop(5280).Stack;
-  const obj3 = { messageType: prop(1189).HelpMessageTypes.INFO, textColor: "text-feedback-info", textVariant: "text-sm/medium", children: intl.string(prop(1127).t.El4aXl) };
-  const HelpMessage = prop(1189).HelpMessage;
-  intl = prop(1127).intl;
+  const Stack2 = prop(5593).Stack;
+  const obj3 = { messageType: prop(1188).HelpMessageTypes.INFO, textColor: "text-feedback-info", textVariant: "text-sm/medium", children: intl.string(prop(1126).t.El4aXl) };
+  const HelpMessage = prop(1188).HelpMessage;
+  intl = prop(1126).intl;
   const items1 = [closure_6(HelpMessage, obj3), ];
   if (null != prop) {
     let mapped;
@@ -249,9 +249,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
     const items2 = [closure_7(Stack2, obj2), ];
     let tmp7Result = isSuspendedUser;
     if (tmp7Result) {
-      const obj5 = { variant: "text-xs/medium", children: intl4.format(modalSessionId(3042).htWh1G, obj6) };
-      const Text2 = tmp2(4833).Text;
-      intl4 = tmp2(1127).intl;
+      const obj5 = { variant: "text-xs/medium", children: intl4.format(modalSessionId(3045).htWh1G, obj6) };
+      const Text2 = tmp2(4886).Text;
+      intl4 = tmp2(1126).intl;
       obj6 = {
         handleOnHelpUrlHook() {
               const obj = modalSessionId(dependencyMap[21]);
@@ -265,16 +265,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageVerificationMetho
     return closure_7(Stack, obj7);
   }
   const obj8 = { direction: "vertical", align: "center", spacing: 16, style: tmp.errorContainer, children: items3 };
-  const Stack3 = tmp2(5280).Stack;
-  const obj9 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.noMethodsText, children: intl2.string(modalSessionId(3042).cR6336) };
-  const Text = tmp2(4833).Text;
-  intl2 = tmp2(1127).intl;
+  const Stack3 = tmp2(5593).Stack;
+  const obj9 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.noMethodsText, children: intl2.string(modalSessionId(3045).cR6336) };
+  const Text = tmp2(4886).Text;
+  intl2 = tmp2(1126).intl;
   items3 = [closure_6(Text, obj9), ];
   const obj10 = { style: tmp.buttonGroup, children: closure_6(Button, obj11) };
-  const ButtonGroup = tmp2(5746).ButtonGroup;
-  obj11 = { variant: "primary", size: "lg", text: intl3.string(modalSessionId(3042).hDvmYP), onPress: prop(7870).getAgeVerificationMethods };
-  Button = tmp2(5282).Button;
-  intl3 = tmp2(1127).intl;
+  const ButtonGroup = tmp2(5592).ButtonGroup;
+  obj11 = { variant: "primary", size: "lg", text: intl3.string(modalSessionId(3045).hDvmYP), onPress: prop(8091).getAgeVerificationMethods };
+  Button = tmp2(5594).Button;
+  intl3 = tmp2(1126).intl;
   items3[1] = closure_6(ButtonGroup, obj10);
   mapped = tmp6(Stack3, obj8);
 });

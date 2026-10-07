@@ -1,11 +1,11 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11785
+// Function ID: 11786
 // Name: useOptionAnimations
-// Dependencies: [32, 19, 4838, 558, 576, 4570, 2]
+// Dependencies: [32, 19, 4891, 558, 576, 4612, 2]
 
-// Module 11529 (useOptionAnimations)
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
+// Module 11785 (useOptionAnimations)
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp6;
   let obj = sharedValue(576);
   const cResult = obj.c(10);
-  let obj2 = sharedValue(4570);
+  let obj2 = sharedValue(4612);
   sharedValue = obj2.useSharedValue(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [];
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       constructor() {
         result = closure_0.set(true);
         current = closure_1.current;
-        item = current.forEach(() => { /* body not rendered: F140155 */ });
+        item = current.forEach(() => { /* body not rendered: F141779 */ });
         current1 = closure_1.current;
         spliceResult = current1.splice(0, closure_1.current.length);
         return;
@@ -112,7 +112,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       constructor() {
         result = closure_0.set(true);
         current = closure_1.current;
-        item = current.forEach(() => { /* body not rendered: F140155 */ });
+        item = current.forEach(() => { /* body not rendered: F141779 */ });
         current1 = closure_1.current;
         spliceResult = current1.splice(0, closure_1.current.length);
         return;
@@ -123,7 +123,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[5] !== tmp5) {
     class I {
       constructor() {
-        fn = function n() { /* body not rendered: F140156 */ };
+        fn = function n() { /* body not rendered: F141780 */ };
         obj = { withTiming: closure_0(closure_1[2]).withTiming, Easing: closure_0(closure_1[5]).Easing, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: c4, withDelay: closure_0(closure_1[5]).withDelay, runOnJS: closure_0(closure_1[5]).runOnJS, handleMountAnimationComplete: closure_2 };
         fn.__closure = obj;
         fn.__workletHash = 1048348699475;
@@ -137,7 +137,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     class I {
       constructor() {
-        fn = function n() { /* body not rendered: F140156 */ };
+        fn = function n() { /* body not rendered: F141780 */ };
         obj = { withTiming: closure_0(closure_1[2]).withTiming, Easing: closure_0(closure_1[5]).Easing, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: c4, withDelay: closure_0(closure_1[5]).withDelay, runOnJS: closure_0(closure_1[5]).runOnJS, handleMountAnimationComplete: closure_2 };
         fn.__closure = obj;
         fn.__workletHash = 1048348699475;
@@ -150,7 +150,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[7] === first1) {
     class I {
       constructor() {
-        fn = function n() { /* body not rendered: F140156 */ };
+        fn = function n() { /* body not rendered: F141780 */ };
         obj = { withTiming: closure_0(closure_1[2]).withTiming, Easing: closure_0(closure_1[5]).Easing, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: c4, withDelay: closure_0(closure_1[5]).withDelay, runOnJS: closure_0(closure_1[5]).runOnJS, handleMountAnimationComplete: closure_2 };
         fn.__closure = obj;
         fn.__workletHash = 1048348699475;
@@ -167,7 +167,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   let closure_1;
   let sharedValue;
-  let obj = sharedValue(4570);
+  let obj = sharedValue(4612);
   sharedValue = obj.useSharedValue(false);
   dependencyMap = react.useRef([]);
   let items = [sharedValue];

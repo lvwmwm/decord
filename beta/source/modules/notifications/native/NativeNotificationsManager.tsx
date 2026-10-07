@@ -1,18 +1,18 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 18001
+// Function ID: 18002
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 7054, 4852, 1086, 3, 17637, 8741, 11, 6540, 1370, 7654, 1253, 2]
+// Dependencies: [5, 17, 7121, 4905, 1085, 3, 18002, 8966, 11, 6613, 1369, 7876, 1252, 2]
 
-// Module 17636 (NativeNotificationsManager)
+// Module 18001 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 17637 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 18002 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7054 */;
-import ReadStateStore from "ReadStateStore" /* 4852 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c4, c5, closure_12, closure_3, constants, logger, map;
@@ -211,7 +211,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
     };
     require = applyArgumentsResult;
     applyArgumentsResult.handlePostConnectionOpen = _asyncToGenerator(async function(arg0, value) {
-      let background;
+      let background_str;
       let closure_5;
       let str1;
       if (logger === 2) {
@@ -257,7 +257,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
               closure_6 = undefined;
               PUSH_NOTIFICATION_RECEIVED = undefined;
               logger = undefined;
-              const obj15 = applyArgumentsResult(background[10]);
+              const obj15 = applyArgumentsResult(background_str[10]);
               if (obj15.isIOS()) {
                 updateAndClearStaleNotifications();
               } else {
@@ -378,7 +378,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                   return rounded;
                 }
               };
-              let obj11 = applyArgumentsResult(background[10]);
+              let obj11 = applyArgumentsResult(background_str[10]);
               str3 = "cache";
               if (obj11.isIOS()) {
                 str3 = "shared";
@@ -417,7 +417,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                     const self = this;
                     const self2 = this;
                     map = new Map();
-                    PUSH_NOTIFICATION_RECEIVED = applyArgumentsResult(background[10]);
+                    PUSH_NOTIFICATION_RECEIVED = applyArgumentsResult(background_str[10]);
                     if (PUSH_NOTIFICATION_RECEIVED.isIOS()) {
                       PUSH_NOTIFICATION_RECEIVED = moveAndReadData("notification_states_to_track", processing_notification_states);
                       constants = 3;
@@ -464,10 +464,10 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                     let obj10 = { value, done: true };
                     return obj10;
                   } else {
-                    PUSH_NOTIFICATION_RECEIVED = applyArgumentsResult(background[10]);
+                    PUSH_NOTIFICATION_RECEIVED = applyArgumentsResult(background_str[10]);
                     if (PUSH_NOTIFICATION_RECEIVED.isIOS()) {
                       let tmp5 = PUSH_NOTIFICATION_RECEIVED;
-                      let obj2 = applyArgumentsResult(background[11]);
+                      let obj2 = applyArgumentsResult(background_str[11]);
                       PUSH_NOTIFICATION_RECEIVED = obj2.removeFile(str3, processing_notification_states);
                       constants = 6;
                       logger = 1;
@@ -495,7 +495,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                 c6 = 2;
                 let _JSON = JSON;
                 logger = JSON.parse(PUSH_NOTIFICATION_RECEIVED);
-                PUSH_NOTIFICATION_RECEIVED = applyArgumentsResult(background[10]);
+                PUSH_NOTIFICATION_RECEIVED = applyArgumentsResult(background_str[10]);
                 let isIOSResult = PUSH_NOTIFICATION_RECEIVED.isIOS();
                 if (isIOSResult) {
                   isIOSResult = undefined !== logger._local_uuid;
@@ -504,13 +504,13 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                   PUSH_NOTIFICATION_RECEIVED = logger;
                   let tmp24 = logger;
                   value = map.get(logger._local_uuid);
-                  background = value;
+                  background_str = value;
                   if (value == null) {
-                    background = "background";
+                    background_str = "background";
                   }
-                  PUSH_NOTIFICATION_RECEIVED.app_state = background;
+                  PUSH_NOTIFICATION_RECEIVED.app_state = background_str;
                 }
-                let tmp31 = closure_1(background[12]);
+                let tmp31 = closure_1(background_str[12]);
                 PUSH_NOTIFICATION_RECEIVED = constants.PUSH_NOTIFICATION_RECEIVED;
                 let obj13 = { notification_received_timestamp: normalizeTimestampToMs(logger.timestamp), push_action_type: logger.push_action_type, notif_instance_id: logger.notif_instance_id, notif_type_id: logger.notif_type_id, join_id: logger.join_id, notif_user_id: logger.notif_user_id, receiving_user_id: logger.receiving_user_id, message_id: logger.message_id, message_type: logger.message_type, guild_id: logger.guild_id, channel_id: logger.channel_id, channel_type: str1, rel_type: logger.rel_type, mention_type: logger.mention_type, app_state: logger.app_state, os_enabled: logger.os_enabled };
                 let track = tmp31.track;
@@ -523,7 +523,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                 c6 = 1;
                 continue;
               }
-              let obj7 = applyArgumentsResult(background[11]);
+              let obj7 = applyArgumentsResult(background_str[11]);
               PUSH_NOTIFICATION_RECEIVED = obj7.removeFile(str3, processing_notifications);
               constants = 5;
               logger = 1;

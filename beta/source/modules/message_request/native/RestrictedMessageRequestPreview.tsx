@@ -1,18 +1,18 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 17075
+// Function ID: 17076
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2051, 5057, 1378, 21, 4837, 588, 558, 576, 1619, 504, 16721, 16723, 11826, 2]
+// Dependencies: [32, 19, 17, 2051, 5110, 1377, 21, 4890, 587, 558, 576, 1618, 504, 17076, 17078, 12082, 2]
 
-// Module 16720 (RestrictedMessageRequestPreview)
-import nativeDefault from "native" /* 588 */;
+// Module 17075 (RestrictedMessageRequestPreview)
+import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5057 */;
-import UserStore from "UserStore" /* 1378 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const cResult = obj.c(47);
   channelId = channelId.channelId;
   let tmp4 = closure_12();
-  const bottom = ref(1619)().bottom;
+  const bottom = ref(1618)().bottom;
   ref = react.useRef(null);
   dependencyMap = react.useRef(false);
   const tmp6 = first(react.useState(false), 2);
@@ -191,8 +191,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F146180 */ }, 1000);
-          return () => { /* body not rendered: F146181 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F147936 */ }, 1000);
+          return () => { /* body not rendered: F147937 */ };
         }
       }
     }
@@ -211,8 +211,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F146180 */ }, 1000);
-          return () => { /* body not rendered: F146181 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F147936 */ }, 1000);
+          return () => { /* body not rendered: F147937 */ };
         }
       }
     }
@@ -228,8 +228,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F146180 */ }, 1000);
-          return () => { /* body not rendered: F146181 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F147936 */ }, 1000);
+          return () => { /* body not rendered: F147937 */ };
         }
       }
     }
@@ -247,7 +247,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let first;
   react = undefined;
   const tmp = closure_12();
-  const bottom = ref(1619)().bottom;
+  const bottom = ref(1618)().bottom;
   ref = react.useRef(null);
   dependencyMap = react.useRef(false);
   const tmp5 = first(react.useState(false), 2);
@@ -324,15 +324,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
       items7[1] = hidden;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items8 = [closure_10(tmp2(16721), obj6), ];
+      items8 = [closure_10(tmp2(17076), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(ref(16723), obj7);
+      items8[1] = closure_10(ref(17078), obj7);
       items9 = [closure_11(tmp15, obj5), ];
-      const obj8 = { style: items10, children: closure_10(ref(11826), obj10) };
+      const obj8 = { style: items10, children: closure_10(ref(12082), obj10) };
       items10 = [tmp.footer, ];
-      items10[1] = { paddingBottom: ref(588).space.PX_8 + bottom };
+      items10[1] = { paddingBottom: ref(587).space.PX_8 + bottom };
       obj10 = { channel: stateFromStores };
-      const obj9 = { paddingBottom: ref(588).space.PX_8 + bottom };
+      const obj9 = { paddingBottom: ref(587).space.PX_8 + bottom };
       items9[1] = closure_10(first1, obj8);
       tmp13Result = tmp13(tmp14, obj4);
     }

@@ -1,26 +1,26 @@
-// Module ID: 11338
-// Function ID: 11339
+// Module ID: 11594
+// Function ID: 11595
 // Name: CustomTypingIndicatorDisplay
-// Dependencies: [19, 21, 4837, 558, 576, 1127, 11331, 11339, 4833, 5280, 5436, 588, 2]
+// Dependencies: [19, 21, 4890, 558, 576, 1126, 11587, 11595, 4886, 5593, 5909, 587, 2]
 
-// Module 11338 (CustomTypingIndicatorDisplay)
+// Module 11594 (CustomTypingIndicatorDisplay)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Stack_Stack from "Stack/Stack" /* 5280 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11331 */;
-import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 11339 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11587 */;
+import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 11595 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp3;
-const Pressables = tmp3(5436);
+const Pressables = tmp3(5909);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles(() => ({ text: { flexShrink: 1 }, pressable: { flex: 1 } }));
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -80,7 +80,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                   }
                   const obj2 = { style: tmp7.pressable, hitSlop: nativeDefault.space.PX_8, onPress, accessibilityRole: "button", children: tmp18 };
-                  const PressableOpacity = tmp(5436).PressableOpacity;
+                  const PressableOpacity = tmp(5909).PressableOpacity;
                   const tmp26 = _false(PressableOpacity, obj2);
                   cResult[15] = tmp18;
                   cResult[16] = onPress;
@@ -123,7 +123,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined === showName || showName) {
     let formatResult;
     if (null != username) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const format = intl2.format;
       const obj6 = { name: username };
       const tmpResult = CustomTypingIndicatorUtils;
@@ -135,7 +135,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[3] = formatResult;
     tmp8 = formatResult;
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   const string = intl.string;
   const tmpResult2 = CustomTypingIndicatorUtils;
   formatResult = string(tmpResult2.getCustomTypingIndicatorSuggestionMessage(config.typingSuggestion));

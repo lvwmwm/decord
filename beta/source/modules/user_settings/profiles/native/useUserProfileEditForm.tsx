@@ -1,16 +1,16 @@
-// Module ID: 14149
-// Function ID: 14150
+// Module ID: 14430
+// Function ID: 14431
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 7609, 7039, 1378, 1086, 558, 576, 504, 585, 6405, 10583, 6409, 6412, 14150, 7616, 4737, 14151, 7630, 7646, 12660, 2027, 13461, 1127, 2]
+// Dependencies: [109, 5, 19, 7831, 7111, 1377, 1085, 558, 576, 504, 584, 6477, 10822, 6485, 6488, 14431, 7838, 5312, 14432, 7852, 7868, 12923, 2028, 13727, 1126, 2]
 
-// Module 14149 (useUserProfileEditForm)
-import Constants from "Constants" /* 1086 */;
+// Module 14430 (useUserProfileEditForm)
+import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7609 */;
-import UserProfileStore from "UserProfileStore" /* 7039 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
+import UserProfileStore from "UserProfileStore" /* 7111 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
       }
-      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6405).resetAllPending };
+      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6477).resetAllPending };
       class S {
         constructor() {
           isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING || isSubmitting.isSubmitting;
@@ -1154,7 +1154,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }), items3),
-    resetPending: pendingChanges(6405).resetAllPending
+    resetPending: pendingChanges(6477).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

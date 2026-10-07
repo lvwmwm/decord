@@ -1,19 +1,19 @@
-// Module ID: 9143
-// Function ID: 9144
+// Module ID: 9367
+// Function ID: 9368
 // Name: SecureFramesActionCreators
-// Dependencies: [5, 502, 2051, 4856, 9142, 1086, 585, 9140, 4737, 5204, 1127, 9144, 5724, 2]
+// Dependencies: [5, 502, 2051, 4909, 9366, 1085, 584, 9364, 5312, 5707, 1126, 9368, 5568, 2]
 
-// Module 9143 (SecureFramesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9140 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9142 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9144 */;
+// Module 9367 (SecureFramesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9364 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9366 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9368 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
 import size from "module_2" /* 2 */;
 
 let body, c0, c1, c2, closure_4, closure_5, dispatchResult, getChannel, id, persistentCodesEnabled, voiceStateForUser;

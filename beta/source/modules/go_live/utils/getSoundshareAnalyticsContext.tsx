@@ -1,10 +1,10 @@
-// Module ID: 4972
-// Function ID: 4973
+// Module ID: 5025
+// Function ID: 5026
 // Name: getSoundshareAnalyticsContext
 // Dependencies: [2006, 2]
 // Exports: default
 
-// Module 4972 (getSoundshareAnalyticsContext)
+// Module 5025 (getSoundshareAnalyticsContext)
 import RunningGameStore from "RunningGameStore" /* 2006 */;
 import size from "module_2" /* 2 */;
 

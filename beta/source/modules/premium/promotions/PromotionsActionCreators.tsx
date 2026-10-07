@@ -1,20 +1,20 @@
-// Module ID: 12962
-// Function ID: 12963
+// Module ID: 13226
+// Function ID: 13227
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2115, 1378, 10167, 1380, 1086, 585, 12963, 1283, 6821, 2032, 1229, 12964, 2]
+// Dependencies: [5, 2116, 1377, 10396, 1379, 1085, 584, 13227, 1282, 6905, 2033, 1228, 13228, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 12962 (PromotionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import wrappers from "wrappers" /* 1229 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 12963 */;
+// Module 13226 (PromotionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import wrappers from "wrappers" /* 1228 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 13227 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import UserStore from "UserStore" /* 1378 */;
-import PromotionsStore from "PromotionsStore" /* 10167 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import UserStore from "UserStore" /* 1377 */;
+import PromotionsStore from "PromotionsStore" /* 10396 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, c6;
@@ -146,12 +146,12 @@ function dismissOutboundPromotionNotice() {
   obj.dispatch({ type: "OUTBOUND_PROMOTION_NOTICE_DISMISS" });
   const lastDismissedOutboundPromotionStartDate = PromotionsStore.lastDismissedOutboundPromotionStartDate;
   if (null != lastDismissedOutboundPromotionStartDate) {
-    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(2032).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(2033).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("userContent", async (arg0) => {
       const StringValue = wrappers.StringValue;
       obj = { value: lastDismissedOutboundPromotionStartDate };
       arg0.lastDismissedOutboundPromotionStartDate = StringValue.create(obj);
-    }, lastDismissedOutboundPromotionStartDate(2032).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, lastDismissedOutboundPromotionStartDate(2033).UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function fetchClaimedOutboundPromotionCodes() {
@@ -201,29 +201,29 @@ obj = function _fetchClaimedOutboundPromotionCodes() {
             const obj6 = { value: get(request), done: false };
             return obj6;
           }
-        } else {
-          if (1 === c3) {
-            c2 = 0;
-            const obj4 = closure_129_1(closure_129_2[6]);
-            obj4.dispatch({ type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_FAIL" });
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c2 = 0;
-            c4 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            const body = value.body;
-            claimedOutboundPromotionCodes = body.map(closure_129_0(closure_129_2[12]).claimedOutboundPromotionCodeFromServer);
-            const obj8 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes };
-            obj = closure_129_1(closure_129_2[6]);
-            obj.dispatch(obj8);
-            c2 = 0;
-          }
+        } else if (1 === c3) {
+          c2 = 0;
+          const obj4 = closure_129_1(closure_129_2[6]);
+          obj4.dispatch({ type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_FAIL" });
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: false, done: true };
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c2 = 0;
+          c4 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
+        } else {
+          const body = value.body;
+          claimedOutboundPromotionCodes = body.map(closure_129_0(closure_129_2[12]).claimedOutboundPromotionCodeFromServer);
+          const obj8 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes };
+          obj = closure_129_1(closure_129_2[6]);
+          obj.dispatch(obj8);
+          c2 = 0;
+          c4 = 3;
+          return { value: true, done: true };
         }
       } catch (tmp17) {
         if (0 === c2) {

@@ -1,17 +1,17 @@
-// Module ID: 15750
-// Function ID: 15751
+// Module ID: 16045
+// Function ID: 16046
 // Name: VoiceUser
-// Dependencies: [19, 2050, 4859, 502, 1999, 4855, 4856, 21, 558, 576, 504, 15751, 2]
+// Dependencies: [19, 2050, 4912, 502, 1999, 4908, 4909, 21, 558, 576, 504, 16046, 2]
 
-// Module 15750 (VoiceUser)
+// Module 16045 (VoiceUser)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import SessionsStore from "SessionsStore" /* 4855 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import SessionsStore from "SessionsStore" /* 4908 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

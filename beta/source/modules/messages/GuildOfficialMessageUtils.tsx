@@ -1,22 +1,22 @@
-// Module ID: 6686
-// Function ID: 6687
+// Module ID: 6770
+// Function ID: 6771
 // Name: GuildOfficialMessageUtils
-// Dependencies: [2073, 4472, 4830, 1086, 1104, 684, 4685, 4687, 6687, 558, 576, 504, 6688, 6689, 2]
+// Dependencies: [2074, 4509, 4883, 1085, 1103, 683, 4727, 4729, 6771, 558, 576, 504, 6772, 6773, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor
 
-// Module 6686 (GuildOfficialMessageUtils)
+// Module 6770 (GuildOfficialMessageUtils)
 import react from "react" /* 576 */;
-import _modDef684 from "module_684" /* 684 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import shared from "shared" /* 4687 */;
-import MessageConstants from "MessageConstants" /* 4830 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6687 */;
-import ThreadHooks from "ThreadHooks" /* 6688 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6689 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import Constants from "Constants" /* 1086 */;
+import _modDef683 from "module_683" /* 683 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import shared from "shared" /* 4729 */;
+import MessageConstants from "MessageConstants" /* 4883 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6771 */;
+import ThreadHooks from "ThreadHooks" /* 6772 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6773 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -291,13 +291,13 @@ export const getAccessibleGuildOfficialTextColor = function getAccessibleGuildOf
   }
   const obj = utils_ColorUtils;
   const int2hexResult = obj.int2hex(selectedColor);
-  let tmp5 = _modDef684(semanticColor);
-  const tmp6 = _modDef684(int2hexResult);
-  const obj2 = _modDef684;
+  let tmp5 = _modDef683(semanticColor);
+  const tmp6 = _modDef683(int2hexResult);
+  const obj2 = _modDef683;
   const mixResult = obj2.mix(tmp5, int2hexResult, tmp, "rgb");
-  const obj3 = _modDef684;
+  const obj3 = _modDef683;
   const contrastResult = obj3.contrast(tmp6, mixResult);
-  const obj4 = _modDef684;
+  const obj4 = _modDef683;
   if (contrastResult < obj4.contrast(tmp6, tmp5)) {
     tmp5 = mixResult;
   }

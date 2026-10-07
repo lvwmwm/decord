@@ -1,28 +1,30 @@
-// Module ID: 8587
-// Function ID: 8588
+// Module ID: 8794
+// Function ID: 8795
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 8588, 2009, 8706, 1086, 5306, 4830, 1127, 8318, 8708, 1370, 1985, 6947, 8709, 7099, 6880, 5204, 1403, 8707, 8715, 6945, 8716, 2]
-// Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
+// Dependencies: [109, 5, 8795, 2009, 8931, 1085, 5788, 4883, 1126, 2016, 8514, 8726, 8933, 1369, 1985, 7034, 8934, 7166, 6965, 5707, 1402, 8932, 8940, 7030, 8941, 2]
+// Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 8587 (AppLauncherUtils)
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+// Module 8794 (AppLauncherUtils)
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import Server from "Server" /* 1985 */;
-import MessageConstants from "MessageConstants" /* 4830 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6945 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8707 */;
-import getPlatformDefault from "getPlatform" /* 8708 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 8715 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 8716 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2016 */;
+import MessageConstants from "MessageConstants" /* 4883 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7030 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8514 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8726 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8932 */;
+import getPlatformDefault from "getPlatform" /* 8933 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 8940 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 8941 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8795 */;
 import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import AppLauncherStore from "AppLauncherStore" /* 8706 */;
+import AppLauncherStore from "AppLauncherStore" /* 8931 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,42 +33,42 @@ let maxSizeCallback, sectionName;
 function getShelfBadgeTypeIfActive(application) {
   let tmp2 = null;
   if (application.id !== BuiltInSectionId.BUILT_IN) {
-    let hasApplicationFlagResult = application.id !== tmp.BUILT_IN;
-    if (hasApplicationFlagResult) {
-      const obj = ApplicationFlagUtils;
-      hasApplicationFlagResult = obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+    let result = application.id !== tmp.BUILT_IN;
+    if (result) {
+      const obj = EmbeddedSurfaceUtils;
+      result = obj.supportsEmbeddedSurface(application, EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN);
     }
     tmp2 = null;
-    if (hasApplicationFlagResult) {
+    if (result) {
       tmp2 = application instanceof ApplicationRecord ? application.embeddedActivityConfig : application.embedded_activity_config;
     }
   }
-  let tmp8;
+  let tmp7;
   if (tmp2 != null) {
     const client_platform_config = tmp2.client_platform_config;
-    const tmp11 = getPlatformDefault;
+    const tmp10 = getPlatformDefault;
     const obj2 = PlatformUtils;
-    tmp8 = client_platform_config[tmp11(undefined, obj2.getOS(obj2))];
+    tmp7 = client_platform_config[tmp10(undefined, obj2.getOS(obj2))];
   }
   const timestamp = Date.now();
   let label_until;
-  if (tmp8 != null) {
-    label_until = tmp8.label_until;
+  if (tmp7 != null) {
+    label_until = tmp7.label_until;
   }
   if (null != label_until) {
     const _Date = Date;
-    if (timestamp < Date.parse(tmp8.label_until)) {
+    if (timestamp < Date.parse(tmp7.label_until)) {
       let label_from;
-      if (tmp8 != null) {
-        label_from = tmp8.label_from;
+      if (tmp7 != null) {
+        label_from = tmp7.label_from;
       }
       if (null != label_from) {
         let NONE;
         const _Date2 = Date;
-        if (timestamp > Date.parse(tmp8.label_from)) {
+        if (timestamp > Date.parse(tmp7.label_from)) {
           let label_type;
-          if (tmp8 != null) {
-            label_type = tmp8.label_type;
+          if (tmp7 != null) {
+            label_type = tmp7.label_type;
           }
           if (label_type == null) {
             label_type = Server.EmbeddedActivityLabelTypes.NONE;
@@ -110,13 +112,13 @@ export const getSectionDescription = function getSectionDescription(application)
   }
   return description;
 };
-export const isEmbeddedApp = function isEmbeddedApp(application) {
-  let hasApplicationFlagResult = application.id !== BuiltInSectionId.BUILT_IN;
-  if (hasApplicationFlagResult) {
-    const obj = ApplicationFlagUtils;
-    hasApplicationFlagResult = obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+export const isActivityApp = function isActivityApp(application) {
+  let result = application.id !== BuiltInSectionId.BUILT_IN;
+  if (result) {
+    const obj = EmbeddedSurfaceUtils;
+    result = obj.supportsEmbeddedSurface(application, EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN);
   }
-  return hasApplicationFlagResult;
+  return result;
 };
 export const isPartnerApplication = function isPartnerApplication(application) {
   let hasApplicationFlagResult = application.id !== BuiltInSectionId.BUILT_IN;
@@ -148,13 +150,13 @@ export const getShelfBadgeNameIfActive = function getShelfBadgeNameIfActive(appl
 export const getEmbeddedActivityConfig = function getEmbeddedActivityConfig(id) {
   let tmp2 = null;
   if (id.id !== BuiltInSectionId.BUILT_IN) {
-    let hasApplicationFlagResult = id.id !== tmp.BUILT_IN;
-    if (hasApplicationFlagResult) {
-      const obj = ApplicationFlagUtils;
-      hasApplicationFlagResult = obj.hasApplicationFlag(id, ApplicationFlags.EMBEDDED);
+    let result = id.id !== tmp.BUILT_IN;
+    if (result) {
+      const obj = EmbeddedSurfaceUtils;
+      result = obj.supportsEmbeddedSurface(id, EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN);
     }
     tmp2 = null;
-    if (hasApplicationFlagResult) {
+    if (result) {
       tmp2 = id instanceof ApplicationRecord ? id.embeddedActivityConfig : id.embedded_activity_config;
     }
   }
@@ -241,7 +243,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
           return obj7;
         } else {
           _false = value;
-          if (_false.inputType === _false(context[13]).ApplicationCommandInputType.BUILT_IN_TEXT) {
+          if (_false.inputType === _false(context[15]).ApplicationCommandInputType.BUILT_IN_TEXT) {
             if (null != _false) {
               if (null != context.channel) {
                 const obj8 = require("MessageParser");
@@ -316,13 +318,13 @@ export const isApplicationMonetizedWithIAP = function isApplicationMonetizedWith
 export const isApplicationAdSupported = function isApplicationAdSupported(application) {
   let tmp2 = null;
   if (application.id !== BuiltInSectionId.BUILT_IN) {
-    let hasApplicationFlagResult = application.id !== tmp.BUILT_IN;
-    if (hasApplicationFlagResult) {
-      const obj = ApplicationFlagUtils;
-      hasApplicationFlagResult = obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+    let result = application.id !== tmp.BUILT_IN;
+    if (result) {
+      const obj = EmbeddedSurfaceUtils;
+      result = obj.supportsEmbeddedSurface(application, EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN);
     }
     tmp2 = null;
-    if (hasApplicationFlagResult) {
+    if (result) {
       tmp2 = application instanceof ApplicationRecord ? application.embeddedActivityConfig : application.embedded_activity_config;
     }
   }
@@ -342,7 +344,6 @@ export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPoi
   return str;
 };
 export const ensureRecommendationSectionsOnlyContainActivities = function ensureRecommendationSectionsOnlyContainActivities(stateFromStores) {
-  let constants2;
   let tmp3;
   const items = [];
   const iter = stateFromStores[Symbol.iterator]();
@@ -352,16 +353,14 @@ export const ensureRecommendationSectionsOnlyContainActivities = function ensure
     let tmp2 = nextResult;
     let found = prop.filter((type) => {
       let tmp3 = type.type === ApplicationDirectoryCollectionItemType.ApplicationDirectoryCollectionItemType.APPLICATION;
-      const tmp = require;
-      const tmp2 = dependencyMap;
       if (tmp3) {
         const application = type.application;
-        let hasApplicationFlagResult = application.id !== constants2.BUILT_IN;
-        if (hasApplicationFlagResult) {
-          const tmpResult = tmp(tmp2[9]);
-          hasApplicationFlagResult = tmpResult.hasApplicationFlag(application, constants.EMBEDDED);
+        let result = application.id !== constants.BUILT_IN;
+        if (result) {
+          const tmpResult = EmbeddedSurfaceUtils;
+          result = tmpResult.supportsEmbeddedSurface(application, tmp(tmp2[10]).EmbeddedSurfaceType.MAIN);
         }
-        tmp3 = hasApplicationFlagResult;
+        tmp3 = result;
       }
       return tmp3;
     });

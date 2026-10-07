@@ -1,12 +1,12 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 16267
+// Function ID: 16268
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 15962, 5336, 5395, 1127, 4833, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16265, 5812, 5864, 1126, 4886, 2]
 
-// Module 15964 (UnreadSubtitle)
+// Module 16267 (UnreadSubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = subtitleStyles(576);
   const cResult = obj.c(16);
   ({ guild, channel, channelName, count } = arg0);
-  const obj2 = subtitleStyles(15962);
+  const obj2 = subtitleStyles(16265);
   subtitleStyles = obj2.useSubtitleStyles();
   if (cResult[0] === channel) {
     let tmp5;
@@ -66,7 +66,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const obj4 = {
         channelName,
         count: diff,
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return jsx(subtitleStyles(closure_1[9]).Text, { variant: "text-xs/medium", color: "text-muted", children }, arg1);
             }
       };
-      const formatResult = intl2.format(subtitleStyles(1127).t.OqlmU6, obj4);
+      const formatResult = intl2.format(subtitleStyles(1126).t.OqlmU6, obj4);
       cResult[6] = tmp5;
       cResult[7] = channelName;
       cResult[8] = subtitleStyles.subtitleText;
@@ -92,9 +92,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[11] = formatResult;
       tmp11 = formatResult;
     }
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj5 = { channelName, count: diff };
-    const formatToPlainStringResult = intl.formatToPlainString(subtitleStyles(1127).t.gxD5I6, obj5);
+    const formatToPlainStringResult = intl.formatToPlainString(subtitleStyles(1126).t.gxD5I6, obj5);
     cResult[3] = channelName;
     cResult[4] = diff;
     cResult[5] = formatToPlainStringResult;
@@ -102,11 +102,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let channelIconComponentWithGuild;
   if (null != channel) {
-    const tmpResult = subtitleStyles(5336);
+    const tmpResult = subtitleStyles(5812);
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5395).TextIcon;
+    channelIconComponentWithGuild = tmp(5864).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;

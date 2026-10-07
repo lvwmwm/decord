@@ -1,11 +1,11 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16649
+// Function ID: 16650
 // Name: getInAppReportsFeedbackOptions
-// Dependencies: [1127, 2]
+// Dependencies: [1126, 2]
 // Exports: default
 
-// Module 16332 (getInAppReportsFeedbackOptions)
-import intl4 from "intl" /* 1127 */;
+// Module 16649 (getInAppReportsFeedbackOptions)
+import intl4 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const InAppReportsFeedbackReasonOption = { COULD_NOT_FIND: "I couldn't find what I was looking for", CONFUSING_LANGUAGE: "I found the language confusing", OTHER: "Other" };

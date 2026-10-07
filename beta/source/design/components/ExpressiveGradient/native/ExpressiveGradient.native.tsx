@@ -1,14 +1,14 @@
-// Module ID: 9666
-// Function ID: 9667
+// Module ID: 9892
+// Function ID: 9893
 // Name: ExpressiveGradient
-// Dependencies: [19, 17, 21, 588, 558, 576, 4535, 684, 5292, 2]
+// Dependencies: [19, 17, 21, 587, 558, 576, 4580, 683, 5605, 2]
 
-// Module 9666 (ExpressiveGradient)
+// Module 9892 (ExpressiveGradient)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import useToken from "useToken" /* 4535 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import useToken from "useToken" /* 4580 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -76,7 +76,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) =
   const tmpResult4 = useToken;
   const token2 = tmpResult4.useToken(backgroundColor);
   if (cResult[0] !== token2) {
-    const obj5 = _modDef684(token2);
+    const obj5 = _modDef683(token2);
     const alphaResult = obj5.alpha(0);
     const cssResult = alphaResult.css();
     cResult[0] = token2;
@@ -230,7 +230,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) =
   items = [React3.absoluteFill, style];
   const items1 = [React3.absoluteFill, ];
   let tmp13;
-  const obj4 = _modDef684(token2);
+  const obj4 = _modDef683(token2);
   const alphaResult = obj4.alpha(0);
   const cssResult = alphaResult.css();
   if (num > 0) {

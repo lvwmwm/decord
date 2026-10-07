@@ -1,13 +1,14 @@
-// Module ID: 8810
-// Function ID: 8811
+// Module ID: 11117
+// Function ID: 11118
 // Name: FirstPartyRichPresenceStore
-// Dependencies: [8811, 1343, 504, 585, 2]
+// Dependencies: [11118, 11119, 1342, 504, 584, 2]
 
-// Module 8810 (FirstPartyRichPresenceStore)
+// Module 11117 (FirstPartyRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import _modDef1343 from "module_1343" /* 1343 */;
-import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 8811 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import _modDef1342 from "module_1342" /* 1342 */;
+import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 11119 */;
+import ConjureRichPresenceStore from "ConjureRichPresenceStore" /* 11118 */;
 import size from "module_2" /* 2 */;
 
 function updateActivities() {
@@ -21,14 +22,14 @@ function updateActivities() {
     }
     continue;
   }
-  let flag = !_modDef1343(items, items);
-  _modDef1343(items, items);
+  let flag = !_modDef1342(items, items);
+  _modDef1342(items, items);
   if (flag) {
     flag = true;
   }
   return flag;
 }
-let items = [StageChannelSelfRichPresenceStoreDefault];
+let items = [StageChannelSelfRichPresenceStoreDefault, ConjureRichPresenceStore];
 items = [];
 const Store = get_initializedDefault.Store;
 class FirstPartyRichPresenceStore extends Store {

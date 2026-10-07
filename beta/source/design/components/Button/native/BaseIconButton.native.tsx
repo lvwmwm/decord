@@ -1,18 +1,18 @@
-// Module ID: 7363
-// Function ID: 7364
+// Module ID: 7576
+// Function ID: 7577
 // Name: BaseIconButton
-// Dependencies: [19, 21, 4837, 5287, 4570, 5284, 558, 576, 5288, 5290, 5299, 2]
+// Dependencies: [19, 21, 4890, 5600, 4612, 5596, 558, 576, 5601, 5603, 5610, 2]
 
-// Module 7363 (BaseIconButton)
+// Module 7576 (BaseIconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
-import IconDefault from "Icon" /* 5284 */;
-import ButtonConstants from "ButtonConstants" /* 5287 */;
-import ButtonHooks from "ButtonHooks" /* 5288 */;
-import ButtonPill2 from "ButtonPill" /* 5290 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
+import IconDefault from "Icon" /* 5596 */;
+import ButtonConstants from "ButtonConstants" /* 5600 */;
+import ButtonHooks from "ButtonHooks" /* 5601 */;
+import ButtonPill2 from "ButtonPill" /* 5603 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     str = variant;
   }
   if (undefined === size) {
-    size = tmp(5287).DEFAULT_BUTTON_SIZE;
+    size = tmp(5600).DEFAULT_BUTTON_SIZE;
   }
   let num = 4;
   if (undefined !== scaleAmountInPx) {
@@ -73,14 +73,14 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const tmpResult4 = ButtonHooks;
   const iconSizeStyles = tmpResult4.useIconSizeStyles(size, true, maxFontSizeMultiplier);
   if (cResult[0] !== size) {
-    let MEDIUM_BUTTON_HEIGHT = tmp(5287).LARGE_BUTTON_HEIGHT;
+    let MEDIUM_BUTTON_HEIGHT = tmp(5600).LARGE_BUTTON_HEIGHT;
     if ("sm" === size) {
-      MEDIUM_BUTTON_HEIGHT = tmp(5287).SMALL_BUTTON_HEIGHT;
+      MEDIUM_BUTTON_HEIGHT = tmp(5600).SMALL_BUTTON_HEIGHT;
     } else if ("md" === size) {
-      MEDIUM_BUTTON_HEIGHT = tmp(5287).MEDIUM_BUTTON_HEIGHT;
+      MEDIUM_BUTTON_HEIGHT = tmp(5600).MEDIUM_BUTTON_HEIGHT;
     }
     const _Math = Math;
-    const bound = Math.max((tmp(5287).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+    const bound = Math.max((tmp(5600).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
     cResult[0] = size;
     cResult[1] = bound;
     tmp8 = bound;
@@ -134,7 +134,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                           }
                         }
                       }
-                      const BaseButton = tmp(5299).BaseButton;
+                      const BaseButton = tmp(5610).BaseButton;
                       const merged = Object.assign(maxFontSizeMultiplier);
                       const tmp27 = <BaseButton ref={arg1} style={tmp11} pressed={sharedValue} scaleAmountInPx={num} hitSlop={tmp8}>{tmp18}</BaseButton>;
                       cResult[20] = tmp8;
@@ -219,17 +219,17 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const iconSizeStyles = obj3.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
   let MEDIUM_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(5287).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(5600).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(5287).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(5600).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp4(5287).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
-  const BaseButton = tmp4(5299).BaseButton;
+  const bound = Math.max((tmp4(5600).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const BaseButton = tmp4(5610).BaseButton;
   const merged = Object.assign(variant);
   const items = [tmp3.button, style];
   const items1 = [tmp3.pill, pillStyle];
   let str3 = "xs";
-  const ButtonPill = tmp4(5290).ButtonPill;
+  const ButtonPill = tmp4(5603).ButtonPill;
   if ("lg" === DEFAULT_BUTTON_SIZE) {
     str3 = "sm";
   }

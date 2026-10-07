@@ -1,15 +1,15 @@
-// Module ID: 11258
-// Function ID: 11259
+// Module ID: 11516
+// Function ID: 11517
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 4886, 2]
 
-// Module 11258 (AppealIngestionBreadcrumbs)
+// Module 11516 (AppealIngestionBreadcrumbs)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((reasons) => {
     const _Symbol = Symbol;
     ({ container, title } = tmp4);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(require("intl").t.eQg0Ck);
       cResult[0] = stringResult;
       first = stringResult;

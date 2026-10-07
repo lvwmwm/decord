@@ -1,18 +1,18 @@
-// Module ID: 14754
-// Function ID: 14755
+// Module ID: 15039
+// Function ID: 15040
 // Name: NavigateForwardButton
-// Dependencies: [19, 21, 4837, 588, 558, 576, 4833, 1189, 14755, 5436, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 4886, 1188, 15040, 5909, 2]
 
-// Module 14754 (NavigateForwardButton)
+// Module 15039 (NavigateForwardButton)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14755 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15040 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { source: AssetRegistryDefault };
-      const Icon = tmp(1189).Icon;
+      const Icon = tmp(1188).Icon;
       const tmp11 = _false(Icon, obj2);
       cResult[3] = tmp11;
       tmp8 = tmp11;

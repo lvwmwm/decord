@@ -1,9 +1,9 @@
-// Module ID: 1102
-// Function ID: 1103
+// Module ID: 1101
+// Function ID: 1102
 // Name: MessageTypes
 // Dependencies: [2]
 
-// Module 1102 (MessageTypes)
+// Module 1101 (MessageTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { UNDELETABLE: new Set([1, 2, 3, 4, 5, 21, 35, 56, 57, 64, 68]), GUILD_DISCOVERY_STATUS: new Set([14, 15, 16, 17]), USER_MESSAGE: new Set([0, 19, 20, 23, 26, 41, 45, 47, 68]), NOTIFIABLE_SYSTEM_MESSAGE: new Set([7, 22, 35, 46, 64]), REPLYABLE: new Set([0, 7, 19, 20, 23, 24, 25, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 45, 46]), FORWARDABLE: new Set([0, 19, 20, 23, 35]), REFERENCED_MESSAGE_AVAILABLE: new Set([19, 21, 23]), AVAILABLE_IN_GUILD_FEED: new Set([0, 19]), DEADCHAT_PROMPTS: new Set([40, 42]), NON_COLLAPSIBLE: new Set([24]), NON_PARSED: new Set([4, 12, 18, 27, 28, 31]), NON_REPORTABLE: new Set([67]), AUTOMOD_INCIDENT_ACTIONS: new Set([36, 37, 38, 39]), SELF_MENTIONABLE_SYSTEM: new Set([46]), SCHEDULABLE: new Set([0, 19]), SILENTLY_CREATABLE: new Set([67]) };

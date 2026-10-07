@@ -1,21 +1,21 @@
-// Module ID: 10847
-// Function ID: 10848
+// Module ID: 11094
+// Function ID: 11095
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 4769, 1127, 1189, 2114, 4687, 10848, 10849, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 4791, 1126, 1188, 2115, 4729, 11095, 11096, 2]
 
-// Module 10847 (BlockedPaymentsCountryDisplay)
+// Module 11094 (BlockedPaymentsCountryDisplay)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import shared from "shared" /* 4687 */;
-import useThemeDefault from "useTheme" /* 4769 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import shared from "shared" /* 4729 */;
+import useThemeDefault from "useTheme" /* 4791 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   ({ container, header } = tmp4);
   const tmp6 = useThemeDefault();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.vwMEHS);
     cResult[0] = stringResult;
     first = stringResult;
@@ -66,11 +66,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: format(IHxEJU, obj4) };
-    const LegacyText = tmp(1189).LegacyText;
-    const intl2 = tmp(1127).intl;
+    const LegacyText = tmp(1188).LegacyText;
+    const intl2 = tmp(1126).intl;
     format = intl2.format;
     obj4 = { helpdeskArticle: tmp5Result.getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS) };
-    IHxEJU = tmp(1127).t.IHxEJU;
+    IHxEJU = tmp(1126).t.IHxEJU;
     tmp5Result = HelpdeskUtilsDefault;
     const tmp15 = metroRequire(LegacyText, obj3);
     cResult[3] = tmp15;
@@ -80,9 +80,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = shared;
   if (tmpResult.isThemeDark(tmp6)) {
-    tmp5Result2 = tmp5(10848);
+    tmp5Result2 = tmp5(11095);
   } else {
-    tmp5Result2 = tmp5(10849);
+    tmp5Result2 = tmp5(11096);
   }
   if (cResult[4] === tmp4.image) {
     let tmp17;
@@ -143,9 +143,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp7 = metroRequire;
   const tmp8 = React3;
   if (obj7.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(10848);
+    tmp2Result = tmp2(11095);
   } else {
-    tmp2Result = tmp2(10849);
+    tmp2Result = tmp2(11096);
   }
   items[2] = tmp7(tmp8, obj6);
   return tmp5(tmp6, obj);

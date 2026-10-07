@@ -1,12 +1,12 @@
-// Module ID: 4504
-// Function ID: 4505
+// Module ID: 4541
+// Function ID: 4542
 // Name: BillingPlatformUtils
-// Dependencies: [1616, 1370, 2]
+// Dependencies: [1615, 1369, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported, isSocialLayerStorefrontPurchaseSupported
 
-// Module 4504 (BillingPlatformUtils)
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1616 */;
+// Module 4541 (BillingPlatformUtils)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/device/BillingPlatformUtils.tsx");

@@ -1,24 +1,21 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12704
+// Function ID: 12705
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7051, 7048, 7041, 558, 576, 12457, 12458, 2]
+// Dependencies: [19, 7115, 7116, 7113, 558, 576, 12705, 2]
 
-// Module 12456 (useDisplayableBoardWidgets)
+// Module 12704 (useDisplayableBoardWidgets)
 import react2 from "react" /* 576 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7041 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7051 */;
-import UserProfileMobileGameCollectionExperiment from "UserProfileMobileGameCollectionExperiment" /* 12457 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 12458 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7113 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7115 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 12705 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
-
 function isNonEmptyBoardWidget(games) {
   let tmp3 = games instanceof UserProfileApplicationWidgetTypes.ApplicationWidget;
   if (!tmp3) {
-    let tmp4 = games instanceof tmp(7048).UserProfilePersonalWidget;
+    let tmp4 = games instanceof tmp(7116).UserProfilePersonalWidget;
     if (!tmp4) {
       const tmpResult = UserProfileGameWidgetTypes;
       tmp4 = tmpResult.isGameWidget(games) && games.games.length > 0;
@@ -29,46 +26,24 @@ function isNonEmptyBoardWidget(games) {
   return tmp3;
 }
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let found;
+  let tmp2;
   const obj = react2;
-  const cResult = obj.c(3);
-  const obj2 = UserProfileMobileGameCollectionExperiment;
-  const isMobileGameCollectionExperimentEnabled = obj2.useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
+  const cResult = obj.c(2);
   const arr = useUserProfileWidgetsDefault(arg0);
-  if (cResult[0] === isMobileGameCollectionExperimentEnabled) {
-    let tmp3;
-    if (cResult[1] === arr) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  if (isMobileGameCollectionExperimentEnabled) {
-    found = arr.filter(isNonEmptyBoardWidget);
+  if (cResult[0] !== arr) {
+    const found = arr.filter(isNonEmptyBoardWidget);
+    cResult[0] = arr;
+    cResult[1] = found;
+    tmp2 = found;
   } else {
-    found = [];
+    tmp2 = cResult[1];
   }
-  cResult[0] = isMobileGameCollectionExperimentEnabled;
-  cResult[1] = arr;
-  cResult[2] = found;
-  tmp3 = found;
+  return tmp2;
 }) : ((arg0) => {
-  let closure_1;
-  let isMobileGameCollectionExperimentEnabled;
-  const obj = isMobileGameCollectionExperimentEnabled(12457);
-  isMobileGameCollectionExperimentEnabled = obj.useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
-  const tmp2 = useUserProfileWidgetsDefault(arg0);
-  importDefault = tmp2;
-  const items = [isMobileGameCollectionExperimentEnabled, tmp2];
-  return react.useMemo(() => {
-    let found;
-    const tmp = isMobileGameCollectionExperimentEnabled;
-    if (tmp) {
-      found = closure_1.filter(isNonEmptyBoardWidget);
-    } else {
-      found = [];
-    }
-    return found;
-  }, items);
+  const tmp = useUserProfileWidgetsDefault(arg0);
+  let closure_0 = tmp;
+  const items = [tmp];
+  return react.useMemo(() => closure_0.filter(isNonEmptyBoardWidget), items);
 });
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useDisplayableBoardWidgets.tsx");
 

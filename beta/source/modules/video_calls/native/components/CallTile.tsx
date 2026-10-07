@@ -1,33 +1,33 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9741
+// Function ID: 9742
 // Name: CallTile
-// Dependencies: [19, 17, 4859, 1378, 8824, 4858, 21, 4837, 4685, 588, 558, 576, 6584, 1619, 504, 5038, 7628, 8866, 9480, 8894, 8905, 9514, 9519, 9520, 8547, 9237, 9521, 1189, 8832, 4570, 4838, 9522, 2]
+// Dependencies: [19, 17, 4912, 1377, 9050, 4911, 21, 4890, 4727, 587, 558, 576, 6657, 1618, 504, 5091, 7850, 9092, 9708, 9120, 9130, 9742, 9747, 9748, 8754, 9464, 9749, 1188, 9058, 4612, 4891, 9750, 2]
 
-// Module 9513 (CallTile)
+// Module 9741 (CallTile)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5038 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8547 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9237 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 9514 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9519 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9520 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9521 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 9522 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8754 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9464 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 9742 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9747 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9748 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9749 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 9750 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
-import UserStore from "UserStore" /* 1378 */;
-import ChannelCallStore from "ChannelCallStore" /* 8824 */;
-import CallConstants from "CallConstants" /* 4858 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import UserStore from "UserStore" /* 1377 */;
+import ChannelCallStore from "ChannelCallStore" /* 9050 */;
+import CallConstants from "CallConstants" /* 4911 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import ColorUtils_mod from "ColorUtils" /* 4685 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ColorUtils_mod from "ColorUtils" /* 4727 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -515,7 +515,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { aspectRatio: "done", borderRadius: false };
+      const obj2 = { aspectRatio: "duration", borderRadius: false };
       cResult[3] = obj2;
       tmp6 = obj2;
     } else {
@@ -572,7 +572,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2 = {
     guildId: participant.stream.guildId,
     userId: participant.user.id,
-    style: { aspectRatio: "done", borderRadius: false },
+    style: { aspectRatio: "duration", borderRadius: false },
     disableTransition: true,
     onPress() {
       return closure_1_8();
@@ -612,7 +612,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
       tmp12 = tmp13;
     }
     const obj2 = { source: tmp6, size: native.Icon.Sizes.REFRESH_SMALL_16, color: nativeDefault.unsafe_rawColors.WHITE, style: tmp4.titleIcon };
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const tmp16 = map1(Icon, obj2);
     cResult[0] = tmp6;
     cResult[1] = tmp4.titleIcon;
@@ -672,8 +672,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = closure_16();
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
-  reveal = react.useContext(reveal(8832).RevealContext).reveal;
-  let obj2 = reveal(4570);
+  reveal = react.useContext(reveal(9058).RevealContext).reveal;
+  let obj2 = reveal(4612);
   const fn = function l() {
     let obj2;
     let num = 0;
@@ -686,10 +686,10 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj2 = { easing: native.STANDARD_EASING, duration: 250 };
     return obj;
   };
-  fn.__closure = { withTiming: reveal(4838).withTiming, reveal, STANDARD_EASING: reveal(1189).STANDARD_EASING };
+  fn.__closure = { withTiming: reveal(4891).withTiming, reveal, STANDARD_EASING: reveal(1188).STANDARD_EASING };
   fn.__workletHash = 15640123774063;
   fn.__initData = __initData;
-  ({ withTiming: reveal(4838).withTiming, reveal, STANDARD_EASING: reveal(1189).STANDARD_EASING });
+  ({ withTiming: reveal(4891).withTiming, reveal, STANDARD_EASING: reveal(1188).STANDARD_EASING });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   let num = 0;
   if (hasBottomSafeArea) {
@@ -794,7 +794,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           let tmp12 = isActiveStream;
           if (tmp12) {
-            const obj9 = { style: tmp4.liveContainer, children: closure_13(tmp(1189).LiveTag, {}) };
+            const obj9 = { style: tmp4.liveContainer, children: closure_13(tmp(1188).LiveTag, {}) };
             tmp12 = closure_13(closure_5, obj9);
           }
           cResult[8] = isActiveStream;
@@ -843,8 +843,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
   const tmp5 = reveal;
-  reveal = react.useContext(reveal(8832).RevealContext).reveal;
-  let obj = reveal(4570);
+  reveal = react.useContext(reveal(9058).RevealContext).reveal;
+  let obj = reveal(4612);
   class A {
     constructor() {
       tmp = closure_0;
@@ -861,7 +861,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return obj;
     }
   }
-  let obj2 = { withTiming: reveal(4838).withTiming, reveal, STANDARD_EASING: reveal(1189).STANDARD_EASING };
+  let obj2 = { withTiming: reveal(4891).withTiming, reveal, STANDARD_EASING: reveal(1188).STANDARD_EASING };
   A.__closure = obj2;
   A.__workletHash = 1463196379948;
   A.__initData = __initData2;
@@ -885,15 +885,15 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj3 = { pointerEvents: "none", style: items, children: items1 };
   items = [closure_4.absoluteFill, rect, animatedStyle];
-  const View = tmp2(4570).View;
+  const View = tmp2(4612).View;
   if (isActiveStream) {
-    const obj4 = { style: tmp.liveContainer, children: closure_13(tmp5(1189).LiveTag, {}) };
+    const obj4 = { style: tmp.liveContainer, children: closure_13(tmp5(1188).LiveTag, {}) };
     isActiveStream = closure_13(closure_5, obj4);
   }
   items1 = [isActiveStream, ];
   const obj5 = { style: tmp.usernamePosition, children: closure_15(closure_5, obj6) };
   obj6 = { style: tmp.usernameContainer, children: items2 };
-  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(9522), { channel, participant })];
+  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(9750), { channel, participant })];
   items1[1] = closure_13(closure_5, obj5);
   return closure_15(View, obj3);
 });

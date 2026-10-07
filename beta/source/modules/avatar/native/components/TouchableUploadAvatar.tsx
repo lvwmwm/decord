@@ -1,21 +1,21 @@
-// Module ID: 17216
-// Function ID: 17217
+// Module ID: 17580
+// Function ID: 17581
 // Name: TouchableUploadAvatar
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 13409, 1127, 5896, 1189, 12186, 5436, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 13675, 1126, 5974, 1188, 12442, 5909, 2]
 
-// Module 17216 (TouchableUploadAvatar)
+// Module 17580 (TouchableUploadAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Pressables from "Pressables" /* 5436 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12186 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13409 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Pressables from "Pressables" /* 5909 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12442 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13675 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     const avatarContainer = tmp5.avatarContainer;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t["70lEQe"]);
       cResult[0] = stringResult;
       first = stringResult;
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[4] !== tmp5.uploadAvatarIcon) {
         const obj2 = { size: native.Icon.Sizes.MEDIUM, source: AssetRegistryDefault, style: tmp5.uploadAvatarIcon };
-        const Icon = tmp(1189).Icon;
+        const Icon = tmp(1188).Icon;
         const tmp20 = React3(Icon, obj2);
         cResult[4] = tmp5.uploadAvatarIcon;
         cResult[5] = tmp20;

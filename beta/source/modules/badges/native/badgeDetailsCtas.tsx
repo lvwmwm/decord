@@ -1,26 +1,32 @@
-// Module ID: 10666
-// Function ID: 10667
+// Module ID: 10907
+// Function ID: 10908
 // Name: badgeDetailsCtas
-// Dependencies: [1086, 1088, 7633, 1127, 4522, 6801, 6965, 6604, 10667, 5762, 10163, 2]
+// Dependencies: [1085, 1087, 7855, 1126, 4559, 6885, 7052, 6681, 10908, 5628, 10912, 10392, 2]
 // Exports: getBadgeDetailsCta
 
-// Module 10666 (badgeDetailsCtas)
-import Constants from "Constants" /* 1086 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
-import intl2 from "intl" /* 1127 */;
-import openURLDefault from "openURL" /* 4522 */;
-import QuestContent from "QuestContent" /* 5762 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import openUserSettings from "openUserSettings" /* 6801 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6965 */;
-import BadgeId from "BadgeId" /* 7633 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10163 */;
-import QuestUtils from "QuestUtils" /* 10667 */;
+// Module 10907 (badgeDetailsCtas)
+import Constants from "Constants" /* 1085 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import intl2 from "intl" /* 1126 */;
+import openURLDefault from "openURL" /* 4559 */;
+import QuestContent from "QuestContent" /* 5628 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import openUserSettings from "openUserSettings" /* 6885 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7052 */;
+import BadgeId from "BadgeId" /* 7855 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10392 */;
+import QuestUtils from "QuestUtils" /* 10908 */;
+import QuestsEligibility from "QuestsEligibility" /* 10912 */;
 import size from "module_2" /* 2 */;
 
+let obj2;
+let obj3;
+let obj4;
+let obj5;
 const UserSettingsSections = Constants.UserSettingsSections;
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
-let obj = {
+let obj = { [BadgeId.BadgeId.STAFF]: obj2, [BadgeId.BadgeId.PREMIUM_TENURE]: obj3, [BadgeId.BadgeId.GUILD_BOOSTER]: obj4, [BadgeId.BadgeId.ORB_PROFILE]: obj5 };
+obj2 = {
   ctaLabel() {
     const intl = intl2.intl;
     return intl.string(intl2.t.q7A8hP);
@@ -29,7 +35,7 @@ let obj = {
     return openURLDefault("https://discord.com/careers");
   }
 };
-let obj2 = {
+obj3 = {
   ctaLabel(arg0) {
     let isViewerOnUpgradeableNitro;
     let owned;
@@ -48,12 +54,12 @@ let obj2 = {
     return stringResult;
   },
   ctaAction() {
-    const obj = openUserSettings;
+    obj = openUserSettings;
     const obj2 = { screen: UserSettingsSections.PREMIUM };
-    return obj.openUserSettings(obj2);
+    return obj.openUserSettings(obj2, undefined, { pop: false });
   }
 };
-const obj3 = {
+obj4 = {
   ctaLabel(owned) {
     let stringResult;
     owned = owned.owned;
@@ -68,19 +74,19 @@ const obj3 = {
     return stringResult;
   },
   ctaAction() {
-    const obj = openUserSettings;
+    obj = openUserSettings;
     const obj2 = { screen: UserSettingsSections.GUILD_BOOSTING };
-    return obj.openUserSettings(obj2);
+    return obj.openUserSettings(obj2, undefined, { pop: false });
   }
 };
-const obj4 = {
+obj5 = {
   ctaLabel() {
     const intl = intl2.intl;
     return intl.string(intl2.t.EBYkzk);
   },
   ctaAction() {
     let items;
-    const obj = { screen: constants.ORBS, analyticsLocations: items, analyticsSource: AnalyticsLocationDefault.BADGE };
+    obj = { screen: constants.ORBS, analyticsLocations: items, analyticsSource: AnalyticsLocationDefault.BADGE };
     const openCollectiblesShopMobile = CollectiblesActionCreators.openCollectiblesShopMobile;
     items = [];
     CollectiblesActionCreators;
@@ -88,25 +94,28 @@ const obj4 = {
     return openCollectiblesShopMobile(obj);
   }
 };
-const obj5 = {
+const obj6 = {
   ctaLabel() {
     const intl = intl2.intl;
     return intl.string(intl2.t.swICIT);
   },
   ctaAction() {
-    const obj = QuestUtils;
-    const obj2 = { fromContent: QuestContent.QuestContent.QUEST_BADGE };
+    obj = QuestUtils;
+    const obj2 = { fromContent: QuestContent.QuestContent.QUEST_BADGE, pop: false };
     return obj.openQuestHome(obj2);
-  }
+  },
+  isAvailable: QuestsEligibility.getIsEligibleForQuests
 };
-const obj6 = {
+const QUEST_COMPLETED = BadgeId.BadgeId.QUEST_COMPLETED;
+obj[QUEST_COMPLETED] = obj6;
+obj[BadgeId.BadgeId.GIFTING] = {
   ctaLabel() {
     const intl = intl2.intl;
     return intl.string(intl2.t["nUA/JW"]);
   },
   ctaAction() {
     let items;
-    const obj = { analyticsLocations: items };
+    obj = { analyticsLocations: items };
     const openGiftModal = utils_openGiftModal.openGiftModal;
     items = [];
     utils_openGiftModal;
@@ -114,9 +123,12 @@ const obj6 = {
     return openGiftModal(obj);
   }
 };
-let closure_5 = { [BadgeId.BadgeId.STAFF]: obj, [BadgeId.BadgeId.PREMIUM_TENURE]: obj2, [BadgeId.BadgeId.GUILD_BOOSTER]: obj3, [BadgeId.BadgeId.ORB_PROFILE]: obj4, [BadgeId.BadgeId.QUEST_COMPLETED]: obj5, [BadgeId.BadgeId.GIFTING]: obj6 };
 const result = size.fileFinishedImporting("modules/badges/native/badgeDetailsCtas.tsx");
 
 export const getBadgeDetailsCta = function getBadgeDetailsCta(badge_id) {
-  return closure_5[badge_id];
+  let isAvailable;
+  if (obj[badge_id] != null) {
+    isAvailable = obj.isAvailable;
+  }
+  return obj[badge_id];
 };

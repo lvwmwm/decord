@@ -1,12 +1,12 @@
-// Module ID: 13458
-// Function ID: 13459
+// Module ID: 13724
+// Function ID: 13725
 // Name: useIsServerThemeAvailableForGuild
-// Dependencies: [558, 4763, 4721, 2]
+// Dependencies: [558, 4773, 4763, 2]
 // Exports: default
 
-// Module 13458 (useIsServerThemeAvailableForGuild)
-import GuildThemeResolver from "GuildThemeResolver" /* 4721 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 4763 */;
+// Module 13724 (useIsServerThemeAvailableForGuild)
+import GuildThemeResolver from "GuildThemeResolver" /* 4763 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 4773 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

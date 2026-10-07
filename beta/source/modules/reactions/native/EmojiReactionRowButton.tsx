@@ -1,23 +1,23 @@
-// Module ID: 11104
-// Function ID: 11105
+// Module ID: 11362
+// Function ID: 11363
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1381, 21, 4837, 588, 558, 576, 4687, 1127, 8216, 5436, 6552, 1403, 4489, 2]
+// Dependencies: [19, 17, 1380, 21, 4890, 587, 558, 576, 4729, 1126, 8411, 5909, 6625, 1402, 4526, 2]
 // Exports: getEmojiKey
 
-// Module 11104 (EmojiReactionRowButton)
+// Module 11362 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import EmojiTypes from "EmojiTypes" /* 4489 */;
-import shared from "shared" /* 4687 */;
-import Pressables from "Pressables" /* 5436 */;
-import EmojiDefault from "Emoji" /* 6552 */;
-import ReactionIcon2 from "ReactionIcon" /* 8216 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import EmojiTypes from "EmojiTypes" /* 4526 */;
+import shared from "shared" /* 4729 */;
+import Pressables from "Pressables" /* 5909 */;
+import EmojiDefault from "Emoji" /* 6625 */;
+import ReactionIcon2 from "ReactionIcon" /* 8411 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize) 
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp6 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.lfIHs4);
     cResult[0] = stringResult;
     first = stringResult;
@@ -112,10 +112,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize) 
   const isThemeLightResult = obj2.isThemeLight(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp5 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
-  const PressableOpacity = tmp2(5436).PressableOpacity;
-  const intl = tmp2(1127).intl;
+  const PressableOpacity = tmp2(5909).PressableOpacity;
+  const intl = tmp2(1126).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(8216).ReactionIcon;
+  const ReactionIcon = tmp2(8411).ReactionIcon;
   if (str == null) {
     str = "md";
   }
@@ -152,10 +152,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize
     name = emoji.name;
   }
   if (tmp7 !== name) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     let name1;
-    const prop = tmp(1127).t["/iYSo6"];
+    const prop = tmp(1126).t["/iYSo6"];
     if (emoji != null) {
       name1 = emoji.name;
     }
@@ -217,7 +217,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize
       if (null != emoji.id) {
         const obj12 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
         ({ id: obj6.id, animated: obj6.animated } = emoji);
-        const tmp19Result = tmp19(1403);
+        const tmp19Result = tmp19(1402);
         url = tmp19Result.getEmojiURL(obj12);
       } else {
         url = emoji.url;
@@ -269,7 +269,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize
     if (null != emoji.id) {
       const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
       ({ id: obj4.id, animated: obj4.animated } = emoji);
-      const tmp9Result = tmp9(1403);
+      const tmp9Result = tmp9(1402);
       url = tmp9Result.getEmojiURL(obj6);
     } else {
       url = emoji.url;

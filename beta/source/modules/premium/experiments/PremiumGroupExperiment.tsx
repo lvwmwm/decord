@@ -1,11 +1,11 @@
-// Module ID: 8333
-// Function ID: 8334
+// Module ID: 8533
+// Function ID: 8534
 // Name: PremiumGroupExperiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1440, 558, 576, 2]
 
-// Module 8333 (PremiumGroupExperiment)
+// Module 8533 (PremiumGroupExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,37 +1,37 @@
-// Module ID: 12673
-// Function ID: 12674
+// Module ID: 12933
+// Function ID: 12934
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2115, 4681, 6630, 1086, 5721, 21, 1189, 4837, 588, 10938, 558, 576, 4535, 4687, 10943, 10944, 7639, 5720, 5596, 1403, 7822, 5017, 4528, 4802, 6611, 4530, 1127, 4833, 4534, 8041, 5916, 4544, 504, 12674, 5997, 6629, 12677, 2]
+// Dependencies: [19, 17, 2116, 4723, 6707, 1085, 6679, 21, 1188, 4890, 587, 11192, 558, 576, 4580, 4729, 11197, 11198, 7861, 6678, 5442, 1402, 8047, 5070, 4565, 4855, 6688, 4567, 1126, 4886, 4579, 8263, 5993, 4589, 504, 12934, 6074, 6706, 12937, 2]
 
-// Module 12673 (UserProfileConnections)
+// Module 12933 (UserProfileConnections)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import useToken from "useToken" /* 4535 */;
-import shared from "shared" /* 4687 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Constants2 from "Constants" /* 5721 */;
-import TableRow2 from "TableRow" /* 5916 */;
-import TableRowGroup from "TableRowGroup" /* 5997 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7822 */;
-import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 10938 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10943 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10944 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12677 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import useToken from "useToken" /* 4580 */;
+import shared from "shared" /* 4729 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import TableRow2 from "TableRow" /* 5993 */;
+import TableRowGroup from "TableRowGroup" /* 6074 */;
+import Constants2 from "Constants" /* 6679 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8047 */;
+import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11192 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11197 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11198 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12937 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import StreamerModeStore from "StreamerModeStore" /* 4681 */;
-import Constants_mod from "Constants" /* 6630 */;
-import Constants_mod2 from "Constants" /* 1086 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import StreamerModeStore from "StreamerModeStore" /* 4723 */;
+import Constants_mod from "Constants" /* 6707 */;
+import Constants_mod2 from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import native_mod from "native" /* 1189 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import native_mod from "native" /* 1188 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp5;
-const UserProfileCardDefault = tmp5(6629);
+const UserProfileCardDefault = tmp5(6706);
 function generateMetadataForPlatform(arg0) {
   let accountType;
   let metadata;
@@ -127,13 +127,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = useToken;
   let PLATFORM_TWITTER = tmpResult.useToken(nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, theme);
   if (undefined !== isTwitterVerifiedAccount && isTwitterVerifiedAccount) {
-    PLATFORM_TWITTER = tmp8(588).unsafe_rawColors.PLATFORM_TWITTER;
+    PLATFORM_TWITTER = tmp8(587).unsafe_rawColors.PLATFORM_TWITTER;
   }
   const tmpResult2 = shared;
   if (!tmpResult2.isThemeLight(theme)) {
     let WHITE;
     if (!(undefined !== isTwitterVerifiedAccount && isTwitterVerifiedAccount)) {
-      WHITE = tmp8(588).unsafe_rawColors.BLACK;
+      WHITE = tmp8(587).unsafe_rawColors.BLACK;
     }
     if (cResult[2] === PLATFORM_TWITTER) {
       let tmp9;
@@ -164,7 +164,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp21 = tmp24;
       }
       const obj4 = { source: AssetRegistryDefault2, color: WHITE };
-      const Icon2 = tmp(1189).Icon;
+      const Icon2 = tmp(1188).Icon;
       const merged = Object.assign(tmp6);
       const tmp20 = closure_12(Icon2, obj4);
       cResult[5] = WHITE;
@@ -173,7 +173,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp15 = tmp20;
     }
     const obj5 = { source: AssetRegistryDefault, color: PLATFORM_TWITTER };
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const merged1 = Object.assign(tmp6);
     const tmp14 = closure_12(Icon, obj5);
     cResult[2] = PLATFORM_TWITTER;
@@ -181,7 +181,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[4] = tmp14;
     tmp9 = tmp14;
   }
-  WHITE = tmp8(588).unsafe_rawColors.WHITE;
+  WHITE = tmp8(587).unsafe_rawColors.WHITE;
 }) : ((arg0) => {
   let isTwitterVerifiedAccount;
   let items;
@@ -195,26 +195,26 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = useToken;
   let PLATFORM_TWITTER = obj2.useToken(nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, theme);
   if (isTwitterVerifiedAccount) {
-    PLATFORM_TWITTER = tmp4(588).unsafe_rawColors.PLATFORM_TWITTER;
+    PLATFORM_TWITTER = tmp4(587).unsafe_rawColors.PLATFORM_TWITTER;
   }
   const tmp2Result = shared;
   if (!tmp2Result.isThemeLight(theme)) {
     let WHITE;
     if (!isTwitterVerifiedAccount) {
-      WHITE = tmp4(588).unsafe_rawColors.BLACK;
+      WHITE = tmp4(587).unsafe_rawColors.BLACK;
     }
     const obj3 = { style: tmp.verifiedIconContainer, children: items };
     const obj4 = { source: AssetRegistryDefault, color: PLATFORM_TWITTER };
-    const Icon = tmp2(1189).Icon;
+    const Icon = tmp2(1188).Icon;
     const merged = Object.assign(obj);
     items = [closure_12(Icon, obj4), ];
     const obj5 = { source: AssetRegistryDefault2, color: WHITE };
-    const Icon2 = tmp2(1189).Icon;
+    const Icon2 = tmp2(1188).Icon;
     const merged1 = Object.assign(obj);
     items[1] = closure_12(Icon2, obj5);
     return map1(View, obj3);
   }
-  WHITE = tmp4(588).unsafe_rawColors.WHITE;
+  WHITE = tmp4(587).unsafe_rawColors.WHITE;
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -297,7 +297,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                               tmp6 = account;
                               tmp7 = PlatformTypes;
                               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                              obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                               handleClickResult = obj.handleClick(obj1);
                             }
                             return;
@@ -354,7 +354,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                                 tmp6 = account;
                                 tmp7 = PlatformTypes;
                                 obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                                obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                                obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                                 handleClickResult = obj.handleClick(obj1);
                               }
                               return;
@@ -469,7 +469,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                           tmp6 = account;
                           tmp7 = PlatformTypes;
                           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                          obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                          obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                           handleClickResult = obj.handleClick(obj1);
                         }
                         return;
@@ -509,7 +509,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                               tmp6 = account;
                               tmp7 = PlatformTypes;
                               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                              obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                               handleClickResult = obj.handleClick(obj1);
                             }
                             return;
@@ -558,7 +558,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                         tmp6 = account;
                         tmp7 = PlatformTypes;
                         obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                        obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                        obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                         handleClickResult = obj.handleClick(obj1);
                       }
                       return;
@@ -581,7 +581,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                   tmp6 = account;
                   tmp7 = PlatformTypes;
                   obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                  obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+                  obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                   handleClickResult = obj.handleClick(obj1);
                 }
                 return;
@@ -669,7 +669,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
           tmp6 = account;
           tmp7 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F141375 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -902,7 +902,7 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((applicat
   application = application.application;
   const identity = application.identity;
   const tmp4 = closure_16();
-  let obj2 = trackUserProfileAction(7639);
+  let obj2 = trackUserProfileAction(7861);
   trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (cResult[0] !== application) {
     const iconSource = application.getIconSource(closure_7);
@@ -933,9 +933,9 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((applicat
       }
       const joined = obj3.join(", ");
       if (cResult[8] !== application.name) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const obj4 = { name: application.name };
-        const formatToPlainStringResult = intl.formatToPlainString(trackUserProfileAction(1127).t.OKzaN3, obj4);
+        const formatToPlainStringResult = intl.formatToPlainString(trackUserProfileAction(1126).t.OKzaN3, obj4);
         cResult[8] = application.name;
         cResult[9] = formatToPlainStringResult;
         tmp12 = formatToPlainStringResult;
@@ -966,7 +966,7 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((applicat
         cResult[15] = tmp8;
         cResult[16] = str;
         cResult[17] = tmp14;
-        const tmp20 = closure_12(trackUserProfileAction(5916).TableRow, obj5);
+        const tmp20 = closure_12(trackUserProfileAction(5993).TableRow, obj5);
         class C {
           constructor() {
             tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
@@ -984,7 +984,7 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((applicat
       let tmp15;
       if (null != tmp5) {
         const obj6 = { size, source: tmp5, style: tmp4.applicationIcon };
-        tmp15 = closure_12(tmp(4534).BaseIconImage, obj6);
+        tmp15 = closure_12(tmp(4579).BaseIconImage, obj6);
       }
       cResult[10] = tmp5;
       cResult[11] = tmp4;
@@ -1101,7 +1101,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((appli
         }
         const poweredByContainer = tmp4.poweredByContainer;
         if (cResult[11] !== applicationRoleConnection.application.name) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const obj2 = {
             applicationHook() {
                       return applicationRoleConnection.application.name;
@@ -1144,7 +1144,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((appli
               }
               if (cResult[22] !== tmp6) {
                 const obj5 = { size: native.Icon.Sizes.MEDIUM, source: tmp6, disableColor: true };
-                const Icon = tmp(1189).Icon;
+                const Icon = tmp(1188).Icon;
                 const tmp33 = closure_12(Icon, obj5);
                 cResult[22] = tmp6;
                 cResult[23] = tmp33;
@@ -1204,7 +1204,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((appli
       tmp10 = null;
       if (null != applicationRoleConnection.platform_username) {
         const obj10 = { variant: "text-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
-        tmp10 = closure_12(tmp(4833).Text, obj10);
+        tmp10 = closure_12(tmp(4886).Text, obj10);
       }
     }
     cResult[5] = applicationRoleConnection.platform_name;
@@ -1240,7 +1240,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((appli
     tmp7 = null;
     if (null != applicationRoleConnection.platform_username) {
       const obj4 = { variant: "text-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
-      tmp7 = closure_12(tmp2(4833).Text, obj4);
+      tmp7 = closure_12(tmp2(4886).Text, obj4);
     }
   }
   const items = [tmp7, , ];
@@ -1256,8 +1256,8 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((appli
   items[1] = tmp9;
   const obj7 = { style: tmp.poweredByContainer, children: closure_12(Text, obj8) };
   obj8 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl3.t.zIT9YA, obj9) };
-  Text = tmp2(4833).Text;
-  intl = tmp2(1127).intl;
+  Text = tmp2(4886).Text;
+  intl = tmp2(1126).intl;
   obj9 = {
     applicationHook() {
       return applicationRoleConnection.application.name;
@@ -1266,7 +1266,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((appli
   items[2] = closure_12(View, obj7);
   let name = applicationRoleConnection.platform_name;
   const tmp5Result = tmp5(tmp6, obj6);
-  const TableRow = tmp2(5916).TableRow;
+  const TableRow = tmp2(5993).TableRow;
   if (name == null) {
     name = applicationRoleConnection.platform_username;
   }
@@ -1275,7 +1275,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((appli
   }
   const obj10 = { label: name, subLabel: tmp5Result, icon: closure_12(Icon, obj11) };
   obj11 = { size: native.Icon.Sizes.MEDIUM, source: applicationIconSource, disableColor: true };
-  Icon = tmp2(1189).Icon;
+  Icon = tmp2(1188).Icon;
   return closure_12(TableRow, obj10);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1416,7 +1416,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   userId = userId.userId;
   const style = userId.style;
   const tmp2 = closure_16();
-  let obj = userId(4544);
+  let obj = userId(4589);
   const theme = obj.useThemeContext().theme;
   const items = [LocaleStore];
   const obj2 = userId(504);
@@ -1424,8 +1424,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const items1 = [StreamerModeStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-  ({ connections, appIdentities } = theme(12674)(userId));
-  theme(12674)(userId);
+  ({ connections, appIdentities } = theme(12934)(userId));
+  theme(12934)(userId);
   const tmp6 = theme;
   if (!stateFromStores) {
     const items2 = [];
@@ -1438,10 +1438,10 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       const obj = { identity, application: application.application };
       return closure_1_12(closure_1_20, obj, "" + identity.application_id + "-" + identity.provider_issued_user_id);
     }), arraySpreadResult);
-    const obj4 = { style: items3, title: intl.string(userId(1127).t["3fe7U5"]), titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(5997).TableRowGroup, obj5) };
+    const obj4 = { style: items3, title: intl.string(userId(1126).t["3fe7U5"]), titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(6074).TableRowGroup, obj5) };
     items3 = [tmp2.cardContainer, style];
-    const tmp6Result = tmp6(6629);
-    intl = tmp3(1127).intl;
+    const tmp6Result = tmp6(6706);
+    intl = tmp3(1126).intl;
     obj5 = { hasIcons: true, children: items2 };
     return closure_12(tmp6Result, obj4);
   }
@@ -1502,7 +1502,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const stringResult = intl.string(intl3.t.PHjkRE);
           cResult[8] = stringResult;
           tmp13 = stringResult;
@@ -1563,7 +1563,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
       const obj2 = { style: items1, title: intl.string(intl3.t.PHjkRE), titleStyle: tmp.refreshCardTitle, children: closure_12(TableRowGroup.TableRowGroup, obj3) };
       items1 = [tmp.cardContainer, style];
       const tmp2Result = UserProfileCardDefault;
-      intl = tmp4(1127).intl;
+      intl = tmp4(1126).intl;
       obj3 = { hasIcons: true, children: mapped };
       return closure_12(tmp2Result, obj2);
     }

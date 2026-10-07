@@ -1,20 +1,20 @@
-// Module ID: 15719
-// Function ID: 15720
+// Module ID: 16014
+// Function ID: 16015
 // Name: HappeningNowCardUser
-// Dependencies: [19, 17, 4877, 1378, 14829, 1086, 21, 1189, 4837, 6584, 504, 1253, 7628, 1987, 4680, 9038, 14830, 7709, 2]
+// Dependencies: [19, 17, 4930, 1377, 15114, 1085, 21, 1188, 4890, 6657, 504, 1252, 7850, 1987, 4722, 9260, 15115, 7931, 2]
 
-// Module 15719 (HappeningNowCardUser)
+// Module 16014 (HappeningNowCardUser)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import native from "native" /* 1189 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Constants from "Constants" /* 1085 */;
+import native from "native" /* 1188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 14829 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import UserStore from "UserStore" /* 1378 */;
-import createStyles from "createStyles" /* 4837 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import UserStore from "UserStore" /* 1377 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let index;
@@ -56,7 +56,7 @@ const memoResult = react.memo((index) => {
     obj.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
     const tmp = dependencyMap;
     if (null != stateFromStores) {
-      const promise = asyncRequire(7628, tmp.paths);
+      const promise = asyncRequire(7850, tmp.paths);
       promise.then((result) => {
         const obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);

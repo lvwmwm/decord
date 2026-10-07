@@ -1,22 +1,22 @@
-// Module ID: 9852
-// Function ID: 9853
+// Module ID: 10081
+// Function ID: 10082
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 2051, 6573, 9853, 21, 558, 576, 4570, 4705, 1617, 504, 9854, 4801, 1485, 1619, 5991, 1370, 9667, 9855, 6572, 2]
+// Dependencies: [19, 2051, 6646, 10082, 21, 558, 576, 4612, 4747, 1616, 504, 10083, 4854, 1484, 1618, 6068, 1369, 9893, 10084, 6645, 2]
 
-// Module 9852 (ExpressionPickerActionSheet)
+// Module 10081 (ExpressionPickerActionSheet)
 import get_initialized from "get initialized" /* 504 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
-import KeyboardTypes from "KeyboardTypes" /* 1617 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import useKeyboardType from "useKeyboardType" /* 4705 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import NavigatorConstants from "NavigatorConstants" /* 5991 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6573 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9853 */;
-import react_native from "react-native" /* 9854 */;
-import ExpressionPickerDefault from "ExpressionPicker" /* 9855 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import useKeyboardType from "useKeyboardType" /* 4747 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10082 */;
+import react_native from "react-native" /* 10083 */;
+import ExpressionPickerDefault from "ExpressionPicker" /* 10084 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
@@ -38,9 +38,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let onDismiss;
   let onPressEmoji;
   let onPressSticker;
+  let tmp10;
   let tmp11;
-  let tmp12;
-  let tmp9;
+  let tmp8;
   let visibleTabs;
   let obj = channelId(onPressSticker[6]);
   const cResult = obj.c(33);
@@ -53,7 +53,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let obj2 = channelId(onPressSticker[7]);
   const sharedValue = obj2.useSharedValue(-1);
   const obj3 = channelId(onPressSticker[8]);
-  const keyboardContextForType = obj3.useKeyboardContextForType(channelId(onPressSticker[9]).KeyboardTypes.EXPRESSION);
+  const type = obj3.useKeyboardContextForType(channelId(onPressSticker[9]).KeyboardTypes.EXPRESSION).type;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [R];
     cResult[0] = items;
@@ -67,12 +67,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     };
     cResult[1] = channelId;
     cResult[2] = fn;
-    tmp9 = fn;
+    tmp8 = fn;
   } else {
-    tmp9 = cResult[2];
+    tmp8 = cResult[2];
   }
   const tmpResult = channelId(onPressSticker[10]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class R {
       constructor() {
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
     }
     cResult[3] = R;
-    tmp11 = R;
+    tmp10 = R;
   } else {
     class R {
       constructor() {
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
     }
   }
-  R = tmp11;
+  R = tmp10;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     class R {
       constructor() {
@@ -104,8 +104,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         obj2.hideActionSheet();
       }
     }
-    cResult[4] = tmp13;
-    tmp12 = tmp13;
+    cResult[4] = tmp12;
+    tmp11 = tmp12;
   } else {
     class R {
       constructor() {
@@ -116,9 +116,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
     }
   }
-  const height = onPressEmoji(tmp2[13])(tmp12).height;
+  const height = onPressEmoji(tmp2[13])(tmp11).height;
   const diff = height - tmp(tmp2[15]).NAV_BAR_HEIGHT_MULTILINE - onPressEmoji(tmp2[14])().top;
-  const tmp14 = onPressEmoji;
+  const tmp13 = onPressEmoji;
   if (undefined !== stateFromStores) {
     class R {
       constructor() {
@@ -153,7 +153,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         }
       }
       cResult[9] = onPressGIF;
-      cResult[10] = tmp18;
+      cResult[10] = tmp17;
     } else {
       class O {
         constructor(arg0) {
@@ -187,19 +187,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         }
       }
     }
-    const obj4 = { bottomSheetRef: ref, bottomSheetIndex: sharedValue, channel: stateFromStores, expressionType: keyboardContextForType, hideGifFavorites, onPressEmoji: tmp16, onPressGIF: tmp17, onPressSticker: tmp19, visibleTabs, initialGifQuery, stickerFormats: STICKER_FORMATS, height: diff };
+    const obj4 = { bottomSheetRef: ref, bottomSheetIndex: sharedValue, channel: stateFromStores, expressionType: type, hideGifFavorites, onPressEmoji: tmp15, onPressGIF: tmp16, onPressSticker: tmp18, visibleTabs, initialGifQuery, stickerFormats: STICKER_FORMATS, height: diff };
     cResult[13] = sharedValue;
     cResult[14] = stateFromStores;
-    cResult[15] = keyboardContextForType;
+    cResult[15] = type;
     cResult[16] = hideGifFavorites;
     cResult[17] = initialGifQuery;
     cResult[18] = diff;
-    cResult[19] = tmp16;
-    cResult[20] = tmp17;
-    cResult[21] = tmp19;
+    cResult[19] = tmp15;
+    cResult[20] = tmp16;
+    cResult[21] = tmp18;
     cResult[22] = visibleTabs;
-    cResult[23] = closure_7(tmp14(onPressSticker[18]), obj4);
-    const tmp23 = closure_7(tmp14(onPressSticker[18]), obj4);
+    cResult[23] = closure_7(tmp13(onPressSticker[18]), obj4);
+    const tmp22 = closure_7(tmp13(onPressSticker[18]), obj4);
   }
   return null;
 }) : ((arg0) => {
@@ -215,31 +215,31 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let obj = ReanimatedRexport;
   const sharedValue = obj.useSharedValue(-1);
   let obj2 = useKeyboardType;
-  const keyboardContextForType = obj2.useKeyboardContextForType(KeyboardTypes.KeyboardTypes.EXPRESSION);
+  const type = obj2.useKeyboardContextForType(KeyboardTypes.KeyboardTypes.EXPRESSION).type;
   const items = [ChannelStore];
   const obj3 = get_initialized;
   const stateFromStores = obj3.useStateFromStores(items, () => ChannelStore.getChannel(require));
   const height = useWindowDimensionsDefault({ ignoreKeyboard: true }).height;
   const diff = height - NavigatorConstants.NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
-  let tmp15Result = null;
+  let tmp14Result = null;
   if (undefined !== stateFromStores) {
     const tmp2Result = PlatformUtils;
     let isIOSResult = tmp2Result.isIOS();
-    const tmp15 = closure_9;
-    const tmp16 = closure_8;
+    const tmp14 = closure_9;
+    const tmp15 = closure_8;
     if (isIOSResult) {
       const obj4 = { animatedSheetIndex: sharedValue, followSystemKeyboard: true };
-      isIOSResult = closure_7(tmp7(9667), obj4);
+      isIOSResult = closure_7(tmp6(9893), obj4);
     }
     const obj5 = { children: items1 };
     items1 = [isIOSResult, ];
     const obj6 = { scrollable: true, animatedIndex: sharedValue, startHeight: height * closure_5, containerHeight: diff, onDismiss, children: closure_7(ExpressionPickerDefault, obj7) };
-    BottomSheet = tmp2(6572).BottomSheet;
+    BottomSheet = tmp2(6645).BottomSheet;
     obj7 = {
       bottomSheetRef: ref,
       bottomSheetIndex: sharedValue,
       channel: stateFromStores,
-      expressionType: keyboardContextForType,
+      expressionType: type,
       hideGifFavorites,
       onPressEmoji(arg0) {
           importDefault(arg0);
@@ -268,9 +268,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       height: diff
     };
     items1[1] = closure_7(BottomSheet, obj6);
-    tmp15Result = tmp15(tmp16, obj5);
+    tmp14Result = tmp14(tmp15, obj5);
   }
-  return tmp15Result;
+  return tmp14Result;
 });
 const result = size.fileFinishedImporting("modules/expression_picker/native/ExpressionPickerActionSheet.tsx");
 

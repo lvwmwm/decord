@@ -1,19 +1,19 @@
-// Module ID: 16494
-// Function ID: 16495
+// Module ID: 16845
+// Function ID: 16846
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1189, 16495, 1127, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 16846, 1126, 4886, 2]
 
-// Module 16494 (PollBadge)
+// Module 16845 (PollBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16495 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16846 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: native.IconSizes.EXTRA_SMALL_10, source: AssetRegistryDefault };
-      const Icon = tmp(1189).Icon;
+      const Icon = tmp(1188).Icon;
       const tmp10 = React3(Icon, obj2);
       cResult[3] = tmp10;
       tmp7 = tmp10;
@@ -54,7 +54,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     const _Symbol2 = Symbol;
     const text = tmp4.text;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t.RgIi2B);
       cResult[4] = stringResult;
       tmp11 = stringResult;

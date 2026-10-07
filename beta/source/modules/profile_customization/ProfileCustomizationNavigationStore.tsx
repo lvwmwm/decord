@@ -1,16 +1,16 @@
-// Module ID: 9193
-// Function ID: 9194
+// Module ID: 9417
+// Function ID: 9418
 // Name: ProfileCustomizationNavigationStore
-// Dependencies: [4707, 1096, 2]
+// Dependencies: [4749, 1095, 2]
 
-// Module 9193 (ProfileCustomizationNavigationStore)
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
-import ZustandStore from "ZustandStore" /* 4707 */;
+// Module 9417 (ProfileCustomizationNavigationStore)
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import ZustandStore from "ZustandStore" /* 4749 */;
 import size from "module_2" /* 2 */;
 
 const createZustandStore = ZustandStore.createZustandStore;
 const constants = UserSettingsConstants.ProfileCustomizationSubsection;
-const zustandStore = createZustandStore(() => ({ subsection: constants.USER_PROFILE, scrollPosition: null }));
+const zustandStore = createZustandStore(() => ({ subsection: constants.USER_PROFILE, scrollPosition: null, pendingCustomizeBadgesSheet: false }));
 const result = size.fileFinishedImporting("modules/profile_customization/ProfileCustomizationNavigationStore.tsx");
 
 export default zustandStore;

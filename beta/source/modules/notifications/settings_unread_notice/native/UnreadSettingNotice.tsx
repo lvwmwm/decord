@@ -1,17 +1,17 @@
-// Module ID: 10829
-// Function ID: 10830
+// Module ID: 11074
+// Function ID: 11075
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1096, 21, 4837, 588, 558, 576, 10830, 4833, 1127, 10831, 5436, 2]
+// Dependencies: [19, 17, 1095, 21, 4890, 587, 558, 576, 11075, 4886, 1126, 11076, 5909, 2]
 
-// Module 10829 (UnreadSettingNotice)
+// Module 11074 (UnreadSettingNotice)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 10830 */;
-import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 10831 */;
+import nativeDefault from "native" /* 587 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11075 */;
+import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11076 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,8 +54,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/semibold", children: intl.string(require("intl").t.i4xQ5o) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp11 = closure_5(Text, obj3);
     cResult[2] = tmp11;
     tmp9 = tmp11;
@@ -84,8 +84,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "text-xs/medium", color: "text-link", children: intl2.string(require("intl").t.KyUKhT) };
-    const Text2 = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    const Text2 = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     const tmp19 = closure_5(Text2, obj5);
     cResult[7] = tmp19;
     tmp17 = tmp19;

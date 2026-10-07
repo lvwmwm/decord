@@ -1,14 +1,14 @@
-// Module ID: 11814
-// Function ID: 11815
+// Module ID: 12069
+// Function ID: 12070
 // Name: useEmojiSuggestions
-// Dependencies: [32, 19, 5772, 5307, 1381, 558, 576, 504, 5755, 2]
+// Dependencies: [32, 19, 5638, 5789, 1380, 558, 576, 504, 5621, 2]
 
-// Module 11814 (useEmojiSuggestions)
+// Module 12069 (useEmojiSuggestions)
 import react2 from "react" /* 576 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5307 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5755 */;
-import EmojiStore2 from "EmojiStore" /* 5772 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5621 */;
+import EmojiStore2 from "EmojiStore" /* 5638 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -228,8 +228,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           sum = num + 500;
                           num3 = 0;
                           _setTimeout = setTimeout;
-                          closure_0 = setTimeout(() => { /* body not rendered: F140568 */ }, Math.max(0, sum - Date.now()));
-                          return () => { /* body not rendered: F140569 */ };
+                          closure_0 = setTimeout(() => { /* body not rendered: F142194 */ }, Math.max(0, sum - Date.now()));
+                          return () => { /* body not rendered: F142195 */ };
                         }
                       }
                       return;
@@ -311,7 +311,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj2 = { query: null, channel, intention: EmojiIntention.CHAT, maxCount };
-        const obj3 = enabled(5755);
+        const obj3 = enabled(5621);
         class E {
           constructor() {
             return closure_5.loadState;
@@ -391,8 +391,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               sum = num + 500;
               num3 = 0;
               _setTimeout = setTimeout;
-              closure_0 = setTimeout(() => { /* body not rendered: F140568 */ }, Math.max(0, sum - Date.now()));
-              return () => { /* body not rendered: F140569 */ };
+              closure_0 = setTimeout(() => { /* body not rendered: F142194 */ }, Math.max(0, sum - Date.now()));
+              return () => { /* body not rendered: F142195 */ };
             }
           }
           return;

@@ -1,23 +1,23 @@
-// Module ID: 12256
-// Function ID: 12257
+// Module ID: 12510
+// Function ID: 12511
 // Name: NotificationSettingsMessageUnread
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 12250, 1127, 4833, 12257, 5436, 12248, 4801, 12258, 1987, 9624, 12260, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12504, 1126, 4886, 12511, 5909, 12502, 4854, 12512, 1987, 9851, 12514, 2]
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 12256 (NotificationSettingsMessageUnread)
+// Module 12510 (NotificationSettingsMessageUnread)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 12250 */;
-import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 12257 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 12504 */;
+import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 12511 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
   const style = setting.style;
   ({ header, headerTitle } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.Tqd1Af);
     cResult[2] = stringResult;
     tmp7 = stringResult;
@@ -79,8 +79,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-xs/semibold", color: "text-default", children: intl2.string(intl4.t.RpQgm5) };
-    const Text = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     const tmp14 = React3(Text, obj3);
     cResult[5] = tmp14;
     tmp12 = tmp14;
@@ -122,7 +122,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
       const onCustomize2 = setting.onCustomize;
       const cta = tmp4.cta;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1127).intl;
+        const intl3 = tmp(1126).intl;
         const stringResult1 = intl3.string(intl4.t.yxiV9W);
         cResult[14] = stringResult1;
         tmp25 = stringResult1;
@@ -258,10 +258,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
   }
   items2[1] = React3(Text3, obj9);
   const obj10 = { onPress: onPress.onCustomize, children: hasOwnProperty(Text4, obj11) };
-  const PressableOpacity2 = tmp2(5436).PressableOpacity;
+  const PressableOpacity2 = tmp2(5909).PressableOpacity;
   obj11 = { variant: "text-sm/semibold", style: tmp.cta, color: "text-brand", children: items3 };
-  Text4 = tmp2(4833).Text;
-  const intl3 = tmp2(1127).intl;
+  Text4 = tmp2(4886).Text;
+  const intl3 = tmp2(1126).intl;
   items3 = [intl3.string(intl4.t.yxiV9W), " "];
   items2[2] = React3(PressableOpacity2, obj10);
   items1[1] = React3(PressableOpacity, obj6);
@@ -278,7 +278,7 @@ export const NotificationSettingsGuildMessageUnread = function NotificationSetti
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId: style.guildId };
-      obj.openLazy(asyncRequire(12258, dependencyMap.paths), "MessageUnreadActionSheet", obj2);
+      obj.openLazy(asyncRequire(12512, dependencyMap.paths), "MessageUnreadActionSheet", obj2);
     }
   };
   obj2 = require("notificationSettingsGuildFlagUtils");
@@ -293,7 +293,7 @@ export const NotificationSettingsChannelMessageUnread = function NotificationSet
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel: style.channel };
-      obj.openLazy(asyncRequire(12260, dependencyMap.paths), "MessageUnreadActionSheet", obj2);
+      obj.openLazy(asyncRequire(12514, dependencyMap.paths), "MessageUnreadActionSheet", obj2);
     }
   };
   obj2 = require("notficationSettingsChannelFlagUtils");

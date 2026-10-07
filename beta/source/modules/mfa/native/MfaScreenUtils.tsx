@@ -1,12 +1,12 @@
-// Module ID: 15219
-// Function ID: 15220
+// Module ID: 15505
+// Function ID: 15506
 // Name: MfaScreenUtils
-// Dependencies: [4837, 5991, 588, 2]
+// Dependencies: [4890, 6068, 587, 2]
 
-// Module 15219 (MfaScreenUtils)
-import nativeDefault from "native" /* 588 */;
-import NavigatorConstants from "NavigatorConstants" /* 5991 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+// Module 15505 (MfaScreenUtils)
+import nativeDefault from "native" /* 587 */;
+import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let createStyles;
@@ -34,21 +34,21 @@ let obj = {
       PX_16 = space.PX_16;
       tmp6 = tmp5;
     }
-    space2 = tmp6(588).space;
-    space3 = tmp6(588).space;
+    space2 = tmp6(587).space;
+    space3 = tmp6(587).space;
     let num = 0;
-    const obj2 = { contentContainer: obj, mfaContainerHeader: { flexDirection: "column", alignItems: "center", paddingBottom: tmp6(588).space.PX_24 }, mfaContainerHeaderText: obj4, inputContainer: { flexDirection: "column", alignSelf: "stretch" }, smsContainer: { flexDirection: "column", alignSelf: "stretch" }, smsInput: { flexDirection: "row", alignSelf: "stretch" }, radioItem: { backgroundColor: tmp6(588).colors.BACKGROUND_SURFACE_HIGH, borderRadius: tmp6(588).radii.md }, submit: { paddingTop: tmp6(588).space.PX_24 } };
-    ({ flexDirection: "column", alignItems: "center", paddingBottom: tmp6(588).space.PX_24 });
+    const obj2 = { contentContainer: obj, mfaContainerHeader: { flexDirection: "column", alignItems: "center", paddingBottom: tmp6(587).space.PX_24 }, mfaContainerHeaderText: obj4, inputContainer: { flexDirection: "column", alignSelf: "stretch" }, smsContainer: { flexDirection: "column", alignSelf: "stretch" }, smsInput: { flexDirection: "row", alignSelf: "stretch" }, radioItem: { backgroundColor: tmp6(587).colors.BACKGROUND_SURFACE_HIGH, borderRadius: tmp6(587).radii.md }, submit: { paddingTop: tmp6(587).space.PX_24 } };
+    ({ flexDirection: "column", alignItems: "center", paddingBottom: tmp6(587).space.PX_24 });
     if (!arg0) {
-      num = tmp6(588).space.PX_32;
+      num = tmp6(587).space.PX_32;
     }
     obj4 = { marginHorizontal: num, marginTop: num2, textAlign: "center" };
     num2 = 0;
     if (!arg0) {
-      num2 = tmp6(588).space.PX_12;
+      num2 = tmp6(587).space.PX_12;
     }
-    ({ backgroundColor: tmp6(588).colors.BACKGROUND_SURFACE_HIGH, borderRadius: tmp6(588).radii.md });
-    ({ paddingTop: tmp6(588).space.PX_24 });
+    ({ backgroundColor: tmp6(587).colors.BACKGROUND_SURFACE_HIGH, borderRadius: tmp6(587).radii.md });
+    ({ paddingTop: tmp6(587).space.PX_24 });
     return obj2;
   })
 };

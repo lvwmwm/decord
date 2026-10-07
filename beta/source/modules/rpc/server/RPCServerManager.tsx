@@ -1,37 +1,37 @@
-// Module ID: 14021
-// Function ID: 14022
+// Module ID: 14298
+// Function ID: 14299
 // Name: RPCServerManager
-// Dependencies: [32, 8496, 7120, 2051, 2111, 2073, 1999, 4877, 4860, 4482, 2102, 1378, 4856, 4741, 1086, 2011, 8497, 4862, 1370, 585, 1253, 14022, 504, 1376, 8770, 8776, 14027, 8771, 7141, 2]
+// Dependencies: [32, 8703, 7187, 2051, 2112, 2074, 1999, 4930, 4913, 4519, 2103, 1377, 4909, 5316, 1085, 2011, 8704, 4915, 1369, 584, 1252, 14299, 504, 1375, 9031, 8992, 14304, 9032, 7208, 2]
 
-// Module 14021 (RPCServerManager)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
+// Module 14298 (RPCServerManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
 import Constants2 from "Constants" /* 2011 */;
-import Constants3 from "Constants" /* 4741 */;
-import Constants4 from "Constants" /* 4862 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
-import FramesConstants from "FramesConstants" /* 8497 */;
-import RPCHelpers from "RPCHelpers" /* 8770 */;
-import transformUserDefault from "transformUser" /* 8771 */;
-import useThermalState from "useThermalState" /* 8776 */;
-import VibegrationsVoiceSessionCoordinatorDefault from "VibegrationsVoiceSessionCoordinator" /* 14022 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14027 */;
+import Constants3 from "Constants" /* 4915 */;
+import Constants4 from "Constants" /* 5316 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7208 */;
+import FramesConstants from "FramesConstants" /* 8704 */;
+import useThermalState from "useThermalState" /* 8992 */;
+import RPCHelpers from "RPCHelpers" /* 9031 */;
+import transformUserDefault from "transformUser" /* 9032 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14299 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14304 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FramesStore from "FramesStore" /* 8496 */;
-import QuestStore from "QuestStore" /* 7120 */;
+import FramesStore from "FramesStore" /* 8703 */;
+import QuestStore from "QuestStore" /* 7187 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import UserStore from "UserStore" /* 1378 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
-import Constants from "Constants" /* 1086 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import UserStore from "UserStore" /* 1377 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let frameByIframeId, set;
@@ -41,11 +41,11 @@ let closure_18;
 let closure_19;
 let closure_20;
 let closure_21;
-const TransportTypes = Constants3.TransportTypes;
+const TransportTypes = Constants4.TransportTypes;
 ({ ActivityActionTypes: closure_17, RelationshipTypes: closure_18, AnalyticEvents: closure_19, RPCEvents: closure_20, RPCCloseCodes: closure_21 } = Constants);
 const ActivityLayoutMode = Constants2.ActivityLayoutMode;
 const FrameLayoutModes = FramesConstants.FrameLayoutModes;
-const MediaEngineContextTypes = Constants4.MediaEngineContextTypes;
+const MediaEngineContextTypes = Constants3.MediaEngineContextTypes;
 let result = size.fileFinishedImporting("modules/rpc/server/RPCServerManager.tsx");
 class RPCServerManager {
   constructor(arg0) {
@@ -116,7 +116,7 @@ class RPCServerManager {
                 const obj3 = { channel_id: voiceState.channelId, user_id: speakingFlags.userId };
                 const result = rpcServer2.dispatchToSubscriptions(SPEAKING_STOP, obj2, obj3);
                 if (null != voiceState.channelId) {
-                  obj = VibegrationsVoiceSessionCoordinatorDefault;
+                  obj = ConjureVoiceSessionCoordinatorDefault;
                   let activeSessionIdsForChannel = obj.getActiveSessionIdsForChannel(voiceState.channelId);
                 } else {
                   activeSessionIdsForChannel = [];
@@ -142,7 +142,7 @@ class RPCServerManager {
     obj.handleVoiceChannelSelect = function handleVoiceChannelSelect(channelId) {
       channelId = channelId.channelId;
       const guildId = channelId.guildId;
-      obj = VibegrationsVoiceSessionCoordinatorDefault;
+      obj = ConjureVoiceSessionCoordinatorDefault;
       obj.releaseUnlessChannel(channelId);
       if (0 !== obj.rpcServer.subscriptions.length) {
         const rpcServer = obj.rpcServer;
@@ -163,7 +163,7 @@ class RPCServerManager {
         obj3 = RPCHelpers;
         const tmp8 = require;
         if (null != icon) {
-          const tmp8Result = tmp8(8770);
+          const tmp8Result = tmp8(9031);
           remoteIconURL = tmp8Result.getRemoteIconURL(icon);
         }
         const result = dispatchToSubscriptions(NOTIFICATION_CREATE, {}, obj);
@@ -253,11 +253,12 @@ class RPCServerManager {
         }
       }
     };
-    obj.handleScreenOrientationUpdate = function handleScreenOrientationUpdate(arg0) {
+    obj.handleScreenOrientationUpdate = function handleScreenOrientationUpdate(applicationId) {
+      applicationId = applicationId.applicationId;
       if (0 !== obj.rpcServer.subscriptions.length) {
         const rpcServer = obj.rpcServer;
         obj = { screen_orientation: tmp };
-        const result = rpcServer.dispatchToSubscriptions(constants3.ORIENTATION_UPDATE, {}, obj);
+        const result = rpcServer.dispatchToSubscriptions(constants3.ORIENTATION_UPDATE, null == applicationId ? {} : ((socket) => socket.socket.application.id === applicationId), obj);
       }
     };
     obj.handleEmbeddedActivityUpdate = function handleEmbeddedActivityUpdate() {
@@ -357,7 +358,7 @@ class RPCServerManager {
       }
     };
     obj.handleLogout = function handleLogout() {
-      obj = VibegrationsVoiceSessionCoordinatorDefault;
+      obj = ConjureVoiceSessionCoordinatorDefault;
       obj.release();
       const sockets = obj.rpcServer.sockets;
       const item = sockets.forEach((close) => close.close(constants.CLOSE_NORMAL, "User logout"));
@@ -587,7 +588,7 @@ class RPCServerManager {
       obj3.track(constants.AUTHORIZED_APP_CONNECTED, obj4);
     };
     this.rpcServer.onDisconnect = (id, reason) => {
-      const obj = VibegrationsVoiceSessionCoordinatorDefault;
+      const obj = ConjureVoiceSessionCoordinatorDefault;
       obj.releaseSocket(id.id);
       const obj2 = DispatcherDefault;
       const obj3 = { type: "RPC_APP_DISCONNECTED", socketId: id.id, application: id.application, source: id.source, reason };
@@ -595,7 +596,7 @@ class RPCServerManager {
     };
     const items = [ChannelStore, GuildMemberStore, PresenceStore, VoiceStateStore, MediaEngineStore, RTCConnectionStore];
     const batchedStoreListener = new self(504).BatchedStoreListener(items.concat(this.stores), () => {
-      const obj = VibegrationsVoiceSessionCoordinatorDefault;
+      const obj = ConjureVoiceSessionCoordinatorDefault;
       const result = obj.reconcileParticipants();
       const rpcServer = self.rpcServer;
       rpcServer.updateSubscriptions();

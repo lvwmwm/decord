@@ -1,16 +1,16 @@
-// Module ID: 13521
-// Function ID: 13522
+// Module ID: 13790
+// Function ID: 13791
 // Name: GuildActionSheetProgress
-// Dependencies: [19, 21, 4837, 588, 558, 576, 11875, 13522, 5918, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 12130, 13791, 5995, 2]
 
-// Module 13521 (GuildActionSheetProgress)
+// Module 13790 (GuildActionSheetProgress)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 11875 */;
-import GuildProgressOverviewDefault from "GuildProgressOverview" /* 13522 */;
+import nativeDefault from "native" /* 587 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12130 */;
+import GuildProgressOverviewDefault from "GuildProgressOverview" /* 13791 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let guild;
 
 let obj2;
 let tmp;
-const Card_Card = tmp(5918);
+const Card_Card = tmp(5995);
 const jsx = Fragment.jsx;
 let obj = { title: obj2, cardStyle: { padding: 0 } };
 obj2 = { color: nativeDefault.colors.TEXT_DEFAULT };

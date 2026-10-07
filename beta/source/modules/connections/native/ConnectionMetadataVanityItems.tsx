@@ -1,25 +1,25 @@
-// Module ID: 10938
-// Function ID: 10939
+// Module ID: 11192
+// Function ID: 11193
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 5721, 21, 4837, 588, 1127, 10939, 10940, 558, 576, 12, 1888, 4833, 1189, 5720, 2]
+// Dependencies: [19, 17, 6679, 21, 4890, 587, 1126, 11193, 11194, 558, 576, 12, 1888, 4886, 1188, 6678, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 10938 (ConnectionMetadataVanityItems)
+// Module 11192 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
 import NumberUtils from "NumberUtils" /* 1888 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5720 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10939 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10940 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 6678 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11193 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11194 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 5721 */;
+import Constants from "Constants" /* 6679 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl5.t.IhXLyx);
       cResult[3] = stringResult;
       tmp7 = stringResult;
@@ -119,7 +119,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       tmp7 = tmp9;
     }
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const obj3 = { name: label, value: sum };
     const formatResult = intl2.format(intl5.t.HLoinF, obj3);
     cResult[0] = label;
@@ -132,7 +132,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp7 = cResult[5];
       }
     }
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj4 = { value: sum };
     const formatResult1 = intl.format(label, obj4);
     cResult[3] = label;
@@ -181,11 +181,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const sum = result + str;
   if (typeof label === "string") {
-    const intl = tmp2(1127).intl;
+    const intl = tmp2(1126).intl;
     const obj2 = { name: label, value: sum };
-    formatResult = intl.format(tmp2(1127).t.HLoinF, obj2);
+    formatResult = intl.format(tmp2(1126).t.HLoinF, obj2);
   } else {
-    const intl2 = tmp2(1127).intl;
+    const intl2 = tmp2(1126).intl;
     const obj3 = { value: sum };
     formatResult = intl2.format(label, obj3);
   }
@@ -383,10 +383,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp8 = tmp10;
       }
     }
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const format = intl.format;
     const obj3 = { value: tmpResult.getCreatedAtDate(date, locale), name: label };
-    const HLoinF = tmp(1127).t.HLoinF;
+    const HLoinF = tmp(1126).t.HLoinF;
     tmpResult = ConnectionsUtils;
     const formatResult = format(HLoinF, obj3);
     cResult[3] = date;

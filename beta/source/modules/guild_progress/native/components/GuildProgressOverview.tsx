@@ -1,25 +1,25 @@
-// Module ID: 13522
-// Function ID: 13523
+// Module ID: 13791
+// Function ID: 13792
 // Name: GuildProgressOverview
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 11875, 11878, 6616, 1127, 1189, 4833, 9374, 13523, 5436, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 12130, 12133, 6693, 1126, 1188, 4886, 9602, 13792, 5909, 2]
 
-// Module 13522 (GuildProgressOverview)
+// Module 13791 (GuildProgressOverview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6616 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9374 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 11875 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 11878 */;
-import GuildProgressBarDefault from "GuildProgressBar" /* 13523 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6693 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9602 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12130 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12133 */;
+import GuildProgressBarDefault from "GuildProgressBar" /* 13792 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -289,7 +289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
             const obj2 = { source: AssetRegistryDefault };
-            const Icon = tmp(1189).Icon;
+            const Icon = tmp(1188).Icon;
             const tmp20 = hasOwnProperty(Icon, obj2);
             cResult[12] = tmp20;
             tmp17 = tmp20;

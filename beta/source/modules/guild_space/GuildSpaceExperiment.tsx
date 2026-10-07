@@ -1,13 +1,13 @@
-// Module ID: 6647
-// Function ID: 6648
+// Module ID: 6726
+// Function ID: 6727
 // Name: GuildSpaceExperiment
-// Dependencies: [1086, 1441, 558, 576, 2]
+// Dependencies: [1085, 1440, 558, 576, 2]
 // Exports: getGuildSpaceExperimentEnabled
 
-// Module 6647 (GuildSpaceExperiment)
+// Module 6726 (GuildSpaceExperiment)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import Constants from "Constants" /* 1085 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 14247
-// Function ID: 14248
+// Module ID: 14511
+// Function ID: 14512
 // Name: SettingsSearchEmptyState
-// Dependencies: [19, 17, 21, 4837, 558, 576, 4545, 1127, 9018, 4833, 5280, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 4590, 1126, 9240, 4886, 5593, 2]
 
-// Module 14247 (SettingsSearchEmptyState)
+// Module 14511 (SettingsSearchEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Stack_Stack from "Stack/Stack" /* 5280 */;
-import NoResultsAlt from "NoResultsAlt" /* 9018 */;
+import intl3 from "intl" /* 1126 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import NoResultsAlt from "NoResultsAlt" /* 9240 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,8 +61,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.zihbmv) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp13 = React3(Text, obj2);
     cResult[3] = tmp13;
     tmp11 = tmp13;
@@ -71,8 +71,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: intl2.string(intl3.t.XclvsB) };
-    const Text2 = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    const Text2 = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     const tmp16 = React3(Text2, obj3);
     cResult[4] = tmp16;
     tmp14 = tmp16;

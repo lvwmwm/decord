@@ -1,16 +1,16 @@
-// Module ID: 17010
-// Function ID: 17011
+// Module ID: 17369
+// Function ID: 17370
 // Name: calculatePIPState
-// Dependencies: [4853, 4859, 11648, 4858, 4889, 16845, 2]
+// Dependencies: [4906, 4912, 11902, 4911, 4942, 17205, 2]
 // Exports: default
 
-// Module 17010 (calculatePIPState)
-import CallConstants from "CallConstants" /* 4858 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4889 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 16845 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+// Module 17369 (calculatePIPState)
+import CallConstants from "CallConstants" /* 4911 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17205 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -76,7 +76,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   }
   let SquarePIPReferenceDimensions = getTargetDimensions(id1);
   if (SquarePIPReferenceDimensions == null) {
-    SquarePIPReferenceDimensions = tmp13(16845).SquarePIPReferenceDimensions;
+    SquarePIPReferenceDimensions = tmp13(17205).SquarePIPReferenceDimensions;
   }
   if (tmp10) {
     tmp10 = tmp;

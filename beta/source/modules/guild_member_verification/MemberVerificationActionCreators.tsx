@@ -1,20 +1,20 @@
-// Module ID: 5860
-// Function ID: 5861
+// Module ID: 5937
+// Function ID: 5938
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 2104, 2111, 4818, 1378, 1086, 1283, 4819, 585, 5861, 5865, 4660, 5866, 5204, 1127, 4737, 1253, 2]
+// Dependencies: [5, 2105, 2112, 4871, 1377, 1085, 1282, 4872, 584, 5938, 5942, 4702, 5943, 5707, 1126, 5312, 1252, 2]
 // Exports: showCoachmark
 
-// Module 5860 (MemberVerificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4819 */;
+// Module 5937 (MemberVerificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2104 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import InviteStore from "InviteStore" /* 4818 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import ImpersonateStore from "ImpersonateStore" /* 2105 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import InviteStore from "InviteStore" /* 4871 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_6, currentUser, isMember, message, status;
@@ -328,7 +328,7 @@ obj = function _submitVerificationForm() {
               body = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {

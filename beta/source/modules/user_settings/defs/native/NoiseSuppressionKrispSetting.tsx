@@ -1,17 +1,17 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 15073
+// Function ID: 15074
 // Name: NoiseSuppressionKrispSetting
-// Dependencies: [1999, 7421, 9445, 558, 576, 9446, 1127, 504, 10874, 2]
+// Dependencies: [1999, 7634, 9673, 558, 576, 9674, 1126, 504, 11129, 2]
 
-// Module 14788 (NoiseSuppressionKrispSetting)
+// Module 15073 (NoiseSuppressionKrispSetting)
 import react from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9445 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 9446 */;
+import intl4 from "intl" /* 1126 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9673 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 9674 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = NoiseCancellationUtils;
   const noiseCancellationDeferredToSystem = obj2.useNoiseCancellationDeferredToSystem();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.rdoNzt);
     cResult[0] = stringResult;
     first = stringResult;
@@ -46,7 +46,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl4.t.qXeYHw);
     cResult[3] = stringResult1;
     tmp8 = stringResult1;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(intl4.t.wkYAlz);
     cResult[6] = stringResult2;
     tmp11 = stringResult2;

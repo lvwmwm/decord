@@ -1,23 +1,23 @@
-// Module ID: 9171
-// Function ID: 9172
+// Module ID: 9395
+// Function ID: 9396
 // Name: GuildTag
-// Dependencies: [19, 17, 1378, 7390, 21, 4837, 588, 1370, 558, 576, 1127, 4833, 5436, 504, 7614, 4801, 9172, 1987, 2]
+// Dependencies: [19, 17, 1377, 7603, 21, 4890, 587, 1369, 558, 576, 1126, 4886, 5909, 504, 7836, 4854, 9396, 1987, 2]
 
-// Module 9171 (GuildTag)
+// Module 9395 (GuildTag)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import GuildTagConstants from "GuildTagConstants" /* 7390 */;
-import GuildTagUtils from "GuildTagUtils" /* 7614 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import GuildTagConstants from "GuildTagConstants" /* 7603 */;
+import GuildTagUtils from "GuildTagUtils" /* 7836 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     let tmp9;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t.HHYPgJ);
       cResult[0] = stringResult;
       first = stringResult;

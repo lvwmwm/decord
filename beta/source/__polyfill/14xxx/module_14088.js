@@ -1,0 +1,21 @@
+// Module ID: 14088
+// Function ID: 14089
+// Dependencies: [14079, 14089, 14087, 14090]
+
+// Module 14088
+import _mod14079 from "module_14079" /* 14079 */;
+import _mod14087 from "module_14087" /* 14087 */;
+import _mod14089 from "module_14089" /* 14089 */;
+
+let tmp;
+const _mod14090 = tmp(14090);
+
+export default _mod14079 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
+  const tmp3 = _mod14089("Symbol");
+  let tmpResultResult = _mod14087(tmp3);
+  if (tmpResultResult) {
+    const tmpResult = _mod14090;
+    tmpResultResult = tmpResult(tmp3.prototype, Object(arg0));
+  }
+  return tmpResultResult;
+});

@@ -1,15 +1,15 @@
-// Module ID: 7387
-// Function ID: 7388
+// Module ID: 7600
+// Function ID: 7601
 // Name: InteractionStore
-// Dependencies: [32, 502, 2051, 1103, 5066, 1985, 6880, 504, 585, 2]
+// Dependencies: [32, 502, 2051, 1102, 5120, 1985, 6965, 504, 584, 2]
 
-// Module 7387 (InteractionStore)
+// Module 7600 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
 import Server from "Server" /* 1985 */;
-import InteractionTypes from "InteractionTypes" /* 5066 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6880 */;
+import InteractionTypes from "InteractionTypes" /* 5120 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -143,7 +143,7 @@ let obj = {
       if (null != closure_8[nonce]) {
         const tmp4 = require;
         if (closure_8[nonce].state === InteractionTypes.InteractionState.QUEUED) {
-          closure_8[nonce].state = tmp4(5066).InteractionState.CREATED;
+          closure_8[nonce].state = tmp4(5120).InteractionState.CREATED;
           const onCreate = tmp3.onCreate;
           if (onCreate != null) {
             onCreate(tmp);
@@ -209,7 +209,7 @@ let obj = {
           delete closure_13[nonce];
         }
       } else {
-        const obj = { state: tmp7(5066).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
+        const obj = { state: tmp7(5120).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
         const merged = Object.assign(tmp21);
         closure_8[nonce] = obj;
       }

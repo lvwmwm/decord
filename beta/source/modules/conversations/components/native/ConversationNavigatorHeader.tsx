@@ -1,23 +1,23 @@
-// Module ID: 7356
-// Function ID: 7357
+// Module ID: 7569
+// Function ID: 7570
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 2051, 21, 4837, 588, 558, 576, 504, 4990, 7292, 4535, 1371, 1127, 7357, 2]
+// Dependencies: [19, 17, 2051, 21, 4890, 587, 558, 576, 504, 5043, 7498, 4580, 1370, 1126, 7570, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
-// Module 7356 (ConversationNavigatorHeader)
+// Module 7569 (ConversationNavigatorHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
-import useToken from "useToken" /* 4535 */;
-import useChannelNameDefault from "useChannelName" /* 4990 */;
-import HeaderShared from "HeaderShared" /* 7292 */;
-import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 7357 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
+import useToken from "useToken" /* 4580 */;
+import useChannelNameDefault from "useChannelName" /* 5043 */;
+import HeaderShared from "HeaderShared" /* 7498 */;
+import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 7570 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     cResult[9] = tmp18;
     tmp15 = tmp18;
   }
-  const tmp14 = jsx(channelId(7292).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  const tmp14 = jsx(channelId(7498).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   cResult[4] = tmp12;
   cResult[5] = title;
   cResult[6] = tmp14;
@@ -112,7 +112,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const tmp3 = useChannelNameDefault(stateFromStores, true);
-  const GenericHeaderTitle = channelId(7292).GenericHeaderTitle;
+  const GenericHeaderTitle = channelId(7498).GenericHeaderTitle;
   return <tmp5 style={tmp.container}>{null}</tmp5>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;

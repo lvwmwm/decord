@@ -1,31 +1,31 @@
-// Module ID: 7432
-// Function ID: 7433
+// Module ID: 7645
+// Function ID: 7646
 // Name: SystemMessageUtils
-// Dependencies: [32, 4483, 502, 2051, 2073, 4482, 1378, 1086, 1127, 11, 7433, 7437, 4989, 4990, 7438, 7440, 5084, 5059, 7441, 7442, 6940, 4460, 7443, 2]
+// Dependencies: [32, 4520, 502, 2051, 2074, 4519, 1377, 1085, 1126, 11, 7646, 7650, 5042, 5043, 7651, 7653, 5304, 5112, 7654, 7655, 7025, 4497, 7656, 2]
 
-// Module 7432 (SystemMessageUtils)
+// Module 7645 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl20 from "intl" /* 1127 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4460 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5059 */;
-import useMessageAuthor from "useMessageAuthor" /* 5084 */;
-import MarkupParser from "MarkupParser" /* 7433 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7437 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7438 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 7440 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 7441 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 7442 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7443 */;
+import intl20 from "intl" /* 1126 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4497 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
+import useMessageAuthor from "useMessageAuthor" /* 5304 */;
+import MarkupParser from "MarkupParser" /* 7646 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7650 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7651 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 7653 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 7654 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 7655 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4483 */;
+import MessageRecord from "MessageRecord" /* 4520 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -285,21 +285,21 @@ let obj = {
                     if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === value) {
                       const astToString5 = MarkupParser.astToString;
                       MarkupParser;
-                      const intl6 = tmp49(1127).intl;
+                      const intl6 = tmp49(1126).intl;
                       const obj23 = { guildName: guild.name };
-                      astToString5Result = astToString5(intl6.formatToParts(tmp49(1127).t.wt3ZUM, obj23));
+                      astToString5Result = astToString5(intl6.formatToParts(tmp49(1126).t.wt3ZUM, obj23));
                     } else if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
                       const astToString4 = MarkupParser.astToString;
                       MarkupParser;
-                      const intl5 = tmp49(1127).intl;
+                      const intl5 = tmp49(1126).intl;
                       const obj24 = { guildName: guild.name };
-                      astToString5Result = astToString4(intl5.formatToParts(tmp49(1127).t.AkqI0g, obj24));
+                      astToString5Result = astToString4(intl5.formatToParts(tmp49(1126).t.AkqI0g, obj24));
                     } else {
                       const astToString3 = MarkupParser.astToString;
                       MarkupParser;
-                      const intl4 = tmp49(1127).intl;
+                      const intl4 = tmp49(1126).intl;
                       const obj26 = { guildName: guild.name };
-                      astToString5Result = astToString3(intl4.formatToParts(tmp49(1127).t["a+lJKl"], obj26));
+                      astToString5Result = astToString3(intl4.formatToParts(tmp49(1126).t["a+lJKl"], obj26));
                     }
                   }
                 }
@@ -328,7 +328,7 @@ let obj = {
                     const self = this;
                     const self2 = this;
                     const date = new Date(content2);
-                    str2 = date.toLocaleString(tmp37(1127).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+                    str2 = date.toLocaleString(tmp37(1126).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
                   }
                   astToString2Result = astToString2(formatToParts(iOuWPk, obj27));
                 }
@@ -377,13 +377,13 @@ let obj = {
               if (result != null) {
                 userId = result.userId;
               }
-              let previousUserId;
+              let secondaryUserId;
               const user2 = getUser(userId);
               const getUser2 = tmp17.getUser;
               if (result != null) {
-                previousUserId = result.previousUserId;
+                secondaryUserId = result.secondaryUserId;
               }
-              const guildSpaceLeaderboardMessage = resolveGuildSpaceLeaderboardMessage(result, user2, getUser2(previousUserId));
+              const guildSpaceLeaderboardMessage = resolveGuildSpaceLeaderboardMessage(result, user2, getUser2(secondaryUserId));
               if (null == guildSpaceLeaderboardMessage) {
                 return mentions.content;
               } else {
@@ -403,7 +403,7 @@ let obj = {
                 if (null == leaderboardSystemMessage) {
                   content = mentions.content;
                 } else {
-                  const intl = tmp11(1127).intl;
+                  const intl = tmp11(1126).intl;
                   const formatToPlainString = intl.formatToPlainString;
                   const message = leaderboardSystemMessage.message;
                   const obj30 = {

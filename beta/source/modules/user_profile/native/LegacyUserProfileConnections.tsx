@@ -1,29 +1,29 @@
-// Module ID: 10937
-// Function ID: 10938
+// Module ID: 11191
+// Function ID: 11192
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 2115, 1392, 4681, 7039, 1086, 1193, 5721, 21, 4837, 588, 558, 576, 5720, 10938, 5596, 1403, 4687, 1189, 10941, 10942, 4535, 10943, 10944, 4802, 6611, 4530, 1127, 7822, 5017, 4528, 5436, 4833, 4544, 504, 6927, 10945, 2]
+// Dependencies: [19, 17, 2116, 1391, 4723, 7111, 1085, 1192, 6679, 21, 4890, 587, 558, 576, 6678, 11192, 5442, 1402, 4729, 1188, 11195, 11196, 4580, 11197, 11198, 4855, 6688, 4567, 1126, 8047, 5070, 4565, 5909, 4886, 4589, 504, 7012, 11199, 2]
 
-// Module 10937 (LegacyUserProfileConnections)
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import FormConstants from "FormConstants" /* 1193 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import PlatformsDefault from "Platforms" /* 5596 */;
-import Constants2 from "Constants" /* 5721 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7822 */;
+// Module 11191 (LegacyUserProfileConnections)
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import FormConstants from "FormConstants" /* 1192 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import PlatformsDefault from "Platforms" /* 5442 */;
+import Constants2 from "Constants" /* 6679 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8047 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import UserRecord from "UserRecord" /* 1392 */;
-import StreamerModeStore from "StreamerModeStore" /* 4681 */;
-import UserProfileStore from "UserProfileStore" /* 7039 */;
-import Constants from "Constants" /* 1086 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import UserRecord from "UserRecord" /* 1391 */;
+import StreamerModeStore from "StreamerModeStore" /* 4723 */;
+import UserProfileStore from "UserProfileStore" /* 7111 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -89,42 +89,42 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
     metadata = {};
   }
   if (showMetadata) {
-    const tmpResult = tmp(5720);
+    const tmpResult = tmp(6678);
     const createdAtDate = tmpResult.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], locale);
   }
   if (showMetadata) {
     const type = account.type;
     if (constants.REDDIT === type) {
-      const tmpResult11 = tmp(10938);
+      const tmpResult11 = tmp(11192);
       let redditMetadataItems = tmpResult11.generateRedditMetadataItems(metadata, tmp4.metadataItem);
     } else if (constants.STEAM === type) {
-      const tmpResult12 = tmp(10938);
+      const tmpResult12 = tmp(11192);
       redditMetadataItems = tmpResult12.generateSteamMetadataItems(metadata, tmp4.metadataItem);
     } else {
       if (constants.BLUESKY !== type) {
         if (constants.MASTODON !== type) {
           if (constants.TWITTER !== type) {
             if (constants.PAYPAL === type) {
-              const tmpResult13 = tmp(10938);
+              const tmpResult13 = tmp(11192);
               redditMetadataItems = tmpResult13.generatePaypalMetadataItems(metadata, tmp4.metadataItem);
             } else if (constants.EBAY === type) {
-              const tmpResult14 = tmp(10938);
+              const tmpResult14 = tmp(11192);
               redditMetadataItems = tmpResult14.generateEbayMetadataItems(metadata, tmp4.metadataItem);
             } else if (constants.TIKTOK === type) {
-              const tmpResult15 = tmp(10938);
+              const tmpResult15 = tmp(11192);
               redditMetadataItems = tmpResult15.generateTikTokMetadataItems(metadata, tmp4.metadataItem);
             }
           }
         }
       }
-      const tmpResult16 = tmp(10938);
+      const tmpResult16 = tmp(11192);
       const twitterMetadataItems = tmpResult16.generateTwitterMetadataItems(metadata, tmp4.metadataItem);
       redditMetadataItems = twitterMetadataItems;
       if ("1" === metadata[MetadataFields.TWITTER_VERIFIED]) {
         let first;
         const _Symbol = Symbol;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj7 = userId(5596);
+          const obj7 = userId(5442);
           const value = obj7.get(tmp8.TWITTER);
           cResult[0] = value;
           first = value;
@@ -147,24 +147,24 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
     if (null != showInvisibleIcon) {
       if (showInvisibleIcon) {
         if (cResult[6] !== tmp4.connectedAccountOpenHide) {
-          let obj2 = { style: tmp4.connectedAccountOpenHide, source: userId(10941) };
-          const Icon = tmp(1189).Icon;
+          let obj2 = { style: tmp4.connectedAccountOpenHide, source: userId(11195) };
+          const Icon = tmp(1188).Icon;
           const tmp28 = closure_14(Icon, obj2);
           cResult[6] = tmp4.connectedAccountOpenHide;
           cResult[7] = tmp28;
         }
       }
-      const tmpResult17 = tmp(4535);
-      let token = tmpResult17.useToken(userId(588).colors.BACKGROUND_MOD_MUTED, theme);
-      const useToken = tmp(4535).useToken;
-      tmp(4535);
-      const INTERACTIVE_TEXT_ACTIVE = userId(588).colors.INTERACTIVE_TEXT_ACTIVE;
+      const tmpResult17 = tmp(4580);
+      let token = tmpResult17.useToken(userId(587).colors.BACKGROUND_MOD_MUTED, theme);
+      const useToken = tmp(4580).useToken;
+      tmp(4580);
+      const INTERACTIVE_TEXT_ACTIVE = userId(587).colors.INTERACTIVE_TEXT_ACTIVE;
       if (null != color) {
         theme = constants2.DARK;
       }
       let WHITE = useToken(INTERACTIVE_TEXT_ACTIVE, theme);
       if (null != color) {
-        WHITE = tmp29(588).unsafe_rawColors.WHITE;
+        WHITE = tmp29(587).unsafe_rawColors.WHITE;
         token = color;
       }
       if (cResult[10] === account.verified) {
@@ -249,7 +249,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F139545 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -284,7 +284,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F139545 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -314,13 +314,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F139545 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
                   }
                 }
-                const OKzaN3 = tmp(1127).t.OKzaN3;
+                const OKzaN3 = tmp(1126).t.OKzaN3;
                 if (tmp14 != null) {
                   class H {
                     constructor() {
@@ -394,18 +394,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
               tmp4 = account;
               tmp5 = PlatformTypes;
               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-              obj1.onConfirm = function onConfirm() { /* body not rendered: F139545 */ };
+              obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
               handleClickResult = obj.handleClick(obj1);
             }
             return;
           }
         }
         tmp36[0] = tmp4.verifiedCheckContainer;
-        const obj4 = { style: tmp4.verifiedCheck, size: tmp(1189).Icon.Sizes.REFRESH_SMALL_16, source: userId(10943), color: token };
-        const Icon2 = tmp(1189).Icon;
+        const obj4 = { style: tmp4.verifiedCheck, size: tmp(1188).Icon.Sizes.REFRESH_SMALL_16, source: userId(11197), color: token };
+        const Icon2 = tmp(1188).Icon;
         const items = [closure_14(Icon2, obj4), ];
-        const obj5 = { style: tmp4.verifiedCheck, size: tmp(1189).Icon.Sizes.REFRESH_SMALL_16, source: userId(10944), color: WHITE };
-        const Icon3 = tmp(1189).Icon;
+        const obj5 = { style: tmp4.verifiedCheck, size: tmp(1188).Icon.Sizes.REFRESH_SMALL_16, source: userId(11198), color: WHITE };
+        const Icon3 = tmp(1188).Icon;
         items[1] = closure_14(Icon3, obj5);
         tmp36[1] = items;
         tmp34 = closure_15(closure_5, tmp36);
@@ -431,11 +431,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
       }
     }
   }
-  const obj10 = userId(5596);
+  const obj10 = userId(5442);
   const value2 = obj10.get(account.type);
-  const makeSource = tmp(1403).makeSource;
-  tmp(1403);
-  const tmpResult20 = tmp(4687);
+  const makeSource = tmp(1402).makeSource;
+  tmp(1402);
+  const tmpResult20 = tmp(4729);
   if (tmpResult20.isThemeDark(theme)) {
     class H {
       constructor() {
@@ -472,7 +472,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
           tmp4 = account;
           tmp5 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F139545 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -528,7 +528,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
           tmp4 = account;
           tmp5 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F139545 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -579,51 +579,51 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
   }
   let createdAtDate = null;
   if (showMetadata) {
-    let obj2 = account(5720);
+    let obj2 = account(6678);
     createdAtDate = obj2.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], locale);
   }
   if (showMetadata) {
     const type = account.type;
     if (constants.REDDIT === type) {
-      const obj8 = account(10938);
+      const obj8 = account(11192);
       redditMetadataItems = obj8.generateRedditMetadataItems(metadata, tmp.metadataItem);
     } else if (constants.STEAM === type) {
-      const obj7 = account(10938);
+      const obj7 = account(11192);
       redditMetadataItems = obj7.generateSteamMetadataItems(metadata, tmp.metadataItem);
     } else {
       if (constants.BLUESKY !== type) {
         if (constants.MASTODON !== type) {
           if (constants.TWITTER !== type) {
             if (constants.PAYPAL === type) {
-              const obj4 = account(10938);
+              const obj4 = account(11192);
               redditMetadataItems = obj4.generatePaypalMetadataItems(metadata, tmp.metadataItem);
             } else if (constants.EBAY === type) {
-              let obj3 = account(10938);
+              let obj3 = account(11192);
               redditMetadataItems = obj3.generateEbayMetadataItems(metadata, tmp.metadataItem);
             } else if (constants.TIKTOK === type) {
-              const obj28 = account(10938);
+              const obj28 = account(11192);
               redditMetadataItems = obj28.generateTikTokMetadataItems(metadata, tmp.metadataItem);
             }
           }
         }
       }
-      const obj5 = account(10938);
+      const obj5 = account(11192);
       const twitterMetadataItems = obj5.generateTwitterMetadataItems(metadata, tmp.metadataItem);
       let str = "1";
       redditMetadataItems = twitterMetadataItems;
       if ("1" === metadata[MetadataFields.TWITTER_VERIFIED]) {
-        const obj6 = userId(5596);
+        const obj6 = userId(5442);
         color = obj6.get(tmp6.TWITTER).color;
         redditMetadataItems = twitterMetadataItems;
       }
     }
   }
-  const obj9 = userId(5596);
+  const obj9 = userId(5442);
   const value = obj9.get(account.type);
   dependencyMap = value;
-  const makeSource = account(1403).makeSource;
-  account(1403);
-  const obj10 = account(4687);
+  const makeSource = account(1402).makeSource;
+  account(1402);
+  const obj10 = account(4729);
   if (obj10.isThemeDark(theme)) {
     let darkPNG;
     if (value != null) {
@@ -644,32 +644,32 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
   if (null != showInvisibleIcon) {
     let PressableOpacity;
     if (showInvisibleIcon) {
-      let obj = { style: tmp.connectedAccountOpenHide, source: userId(10941) };
-      const Icon2 = tmp23(1189).Icon;
+      let obj = { style: tmp.connectedAccountOpenHide, source: userId(11195) };
+      const Icon2 = tmp23(1188).Icon;
       tmp29 = closure_14(Icon2, obj);
     }
-    const tmp23Result = account(4535);
-    const token = tmp23Result.useToken(tmp20(588).colors.BACKGROUND_MOD_MUTED, theme);
-    const useToken = account(4535).useToken;
-    account(4535);
-    const INTERACTIVE_TEXT_ACTIVE = tmp20(588).colors.INTERACTIVE_TEXT_ACTIVE;
+    const tmp23Result = account(4580);
+    const token = tmp23Result.useToken(tmp20(587).colors.BACKGROUND_MOD_MUTED, theme);
+    const useToken = account(4580).useToken;
+    account(4580);
+    const INTERACTIVE_TEXT_ACTIVE = tmp20(587).colors.INTERACTIVE_TEXT_ACTIVE;
     if (null != color) {
       theme = constants2.DARK;
     }
     let WHITE = useToken(INTERACTIVE_TEXT_ACTIVE, theme);
     let tmp35 = token;
     if (null != color) {
-      WHITE = tmp20(588).unsafe_rawColors.WHITE;
+      WHITE = tmp20(587).unsafe_rawColors.WHITE;
       tmp35 = color;
     }
     let tmp36 = null;
     if (account.verified) {
       const obj11 = { style: tmp.verifiedCheckContainer, children: items };
-      const obj12 = { style: tmp.verifiedCheck, size: account(1189).Icon.Sizes.REFRESH_SMALL_16, source: userId(10943), color: tmp35 };
-      const Icon3 = tmp23(1189).Icon;
+      const obj12 = { style: tmp.verifiedCheck, size: account(1188).Icon.Sizes.REFRESH_SMALL_16, source: userId(11197), color: tmp35 };
+      const Icon3 = tmp23(1188).Icon;
       items = [closure_14(Icon3, obj12), ];
-      const obj13 = { style: tmp.verifiedCheck, size: account(1189).Icon.Sizes.REFRESH_SMALL_16, source: userId(10944), color: WHITE };
-      const Icon4 = tmp23(1189).Icon;
+      const obj13 = { style: tmp.verifiedCheck, size: account(1188).Icon.Sizes.REFRESH_SMALL_16, source: userId(11198), color: WHITE };
+      const Icon4 = tmp23(1188).Icon;
       items[1] = closure_14(Icon4, obj13);
       tmp36 = closure_15(closure_5, obj11);
     }
@@ -731,7 +731,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
       }
     }, items3);
     if (null != platformUserUrl) {
-      PressableOpacity = tmp23(5436).PressableOpacity;
+      PressableOpacity = tmp23(5909).PressableOpacity;
     } else {
       PressableOpacity = closure_4;
     }
@@ -743,19 +743,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
     obj15 = { style: items4, children: closure_15(closure_5, obj16) };
     items4 = [tmp.connectedAccountContainer, style];
     obj16 = { style: tmp.connectedAccount, children: items5 };
-    const obj18 = { size: account(1189).Icon.Sizes.MEDIUM, source, disableColor: true };
-    const Icon5 = tmp23(1189).Icon;
+    const obj18 = { size: account(1188).Icon.Sizes.MEDIUM, source, disableColor: true };
+    const Icon5 = tmp23(1188).Icon;
     items5 = [closure_14(Icon5, obj18), , ];
     const obj19 = { style: tmp.connectedAccountNameContainer, children: items7 };
     const obj20 = { style: tmp.connectedAccountName, children: items6 };
     const obj21 = { variant: "text-md/semibold", style: tmp.connectedAccountNameText, children: account.name };
-    items6 = [closure_14(account(4833).Text, obj21), tmp36];
+    items6 = [closure_14(account(4886).Text, obj21), tmp36];
     items7 = [closure_15(closure_5, obj20), , ];
     let tmp44Result = null;
     if (null != createdAtDate) {
-      const obj22 = { variant: "heading-deprecated-12/medium", style: tmp.connectedAccountNameCreatedAtText, children: intl.format(account(1127).t["9rfonh"], obj23) };
-      const Text = tmp23(4833).Text;
-      intl = tmp23(1127).intl;
+      const obj22 = { variant: "heading-deprecated-12/medium", style: tmp.connectedAccountNameCreatedAtText, children: intl.format(account(1126).t["9rfonh"], obj23) };
+      const Text = tmp23(4886).Text;
+      intl = tmp23(1126).intl;
       obj23 = { date: createdAtDate };
       tmp44Result = tmp44(Text, obj22);
     }
@@ -775,8 +775,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
   }
   tmp29 = null;
   if (null != platformUserUrl) {
-    const obj25 = { style: tmp.connectedAccountOpenLink, source: userId(10942) };
-    const Icon = tmp23(1189).Icon;
+    const obj25 = { style: tmp.connectedAccountOpenLink, source: userId(11196) };
+    const Icon = tmp23(1188).Icon;
     tmp29 = closure_14(Icon, obj25);
   }
 });
@@ -794,7 +794,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
   const tmp4 = closure_17();
   let closure_1 = tmp4;
   if (cResult[0] !== applicationRoleConnection) {
-    const tmpResult = tmp(10938);
+    const tmpResult = tmp(11192);
     const roleConnectionMetadataItems = tmpResult.generateRoleConnectionMetadataItems(applicationRoleConnection);
     cResult[0] = applicationRoleConnection;
     cResult[1] = roleConnectionMetadataItems;
@@ -813,7 +813,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
       let tmp8 = null;
       if (null != applicationRoleConnection.platform_name) {
         let obj2 = { variant: "eyebrow", color: "interactive-text-default", children: applicationRoleConnection.platform_name };
-        tmp8 = closure_14(tmp(4833).Text, obj2);
+        tmp8 = closure_14(tmp(4886).Text, obj2);
       }
       cResult[5] = applicationRoleConnection.platform_name;
       cResult[6] = tmp8;
@@ -825,7 +825,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
       let tmp11 = null;
       if (null != applicationRoleConnection.platform_username) {
         let obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: applicationRoleConnection.platform_username };
-        tmp11 = closure_14(tmp(4833).Text, obj3);
+        tmp11 = closure_14(tmp(4886).Text, obj3);
       }
       cResult[7] = applicationRoleConnection.platform_username;
       cResult[8] = tmp11;
@@ -861,7 +861,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
             }
             if (cResult[20] !== tmp25) {
               const obj5 = { variant: "text-xs/normal", color: "text-muted", children: tmp25 };
-              const tmp29 = closure_14(tmp(4833).Text, obj5);
+              const tmp29 = closure_14(tmp(4886).Text, obj5);
               cResult[20] = tmp25;
               cResult[21] = tmp29;
               tmp27 = tmp29;
@@ -926,7 +926,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
             tmp30 = tmp33;
           }
         }
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const obj10 = {
           applicationHook() {
                   let items;
@@ -938,7 +938,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
                   if (null != applicationRoleConnection.application.bot) {
                     const self = this;
                     const self2 = this;
-                    const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "Array" };
+                    const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "a" };
                     const Avatar = native.Avatar;
                     tmp10 = new UserRecord(applicationRoleConnection.application.bot);
                     tmp5 = authStore2(Avatar, obj2);
@@ -949,7 +949,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
                   return tmp(tmp2, obj);
                 }
         };
-        const formatResult = intl.format(tmp(1127).t.zIT9YA, obj10);
+        const formatResult = intl.format(tmp(1126).t.zIT9YA, obj10);
         cResult[16] = applicationRoleConnection.application;
         cResult[17] = tmp4.connectedAccountPoweredByAvatar;
         cResult[18] = tmp4.connectedAccountPoweredByText;
@@ -996,7 +996,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
   let closure_1 = tmp;
   let tmp2 = applicationRoleConnection;
   const tmp3 = dependencyMap;
-  let obj = applicationRoleConnection(10938);
+  let obj = applicationRoleConnection(11192);
   const roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
   let tmp5 = closure_5;
   let obj2 = { style: items, children: items1 };
@@ -1004,14 +1004,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
   let tmp6 = null;
   if (null != applicationRoleConnection.platform_name) {
     let obj3 = { variant: "eyebrow", color: "interactive-text-default", children: applicationRoleConnection.platform_name };
-    tmp6 = closure_14(tmp2(4833).Text, obj3);
+    tmp6 = closure_14(tmp2(4886).Text, obj3);
   }
   items1 = [tmp6, , , ];
   const obj4 = { style: tmp.appConnectionNameContainer, children: tmp8Result };
   tmp8Result = null;
   if (null != applicationRoleConnection.platform_username) {
     const obj5 = { variant: "text-md/semibold", color: "interactive-text-active", children: applicationRoleConnection.platform_username };
-    tmp8Result = tmp8(tmp2(4833).Text, obj5);
+    tmp8Result = tmp8(tmp2(4886).Text, obj5);
   }
   items1[1] = closure_14(tmp5, obj4);
   let tmp8Result2 = null;
@@ -1025,9 +1025,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
   items1[2] = tmp8Result2;
   const obj7 = { style: { flexDirection: "row" }, children: items2 };
   const obj8 = { style: tmp.connectedAccountPoweredByContainer, children: closure_14(Text, obj9) };
-  obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(tmp2(1127).t.zIT9YA, obj10) };
-  Text = tmp2(4833).Text;
-  intl = tmp2(1127).intl;
+  obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(tmp2(1126).t.zIT9YA, obj10) };
+  Text = tmp2(4886).Text;
+  intl = tmp2(1126).intl;
   obj10 = {
     applicationHook() {
       let items;
@@ -1039,7 +1039,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationRoleConne
       if (null != applicationRoleConnection.application.bot) {
         const self = this;
         const self2 = this;
-        const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "Array" };
+        const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "a" };
         const Avatar = native.Avatar;
         tmp10 = new UserRecord(applicationRoleConnection.application.bot);
         tmp5 = authStore2(Avatar, obj2);
@@ -1367,9 +1367,9 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       if (cResult[9] !== arr4) {
         let tmp21 = null != arr4 && arr4.length > 0;
         if (tmp21) {
-          const obj2 = { title: intl.string(user(1127).t.PHjkRE), showContainer: true, children: arr4 };
-          const tmp24 = stateFromStores(10945);
-          intl = tmp(1127).intl;
+          const obj2 = { title: intl.string(user(1126).t.PHjkRE), showContainer: true, children: arr4 };
+          const tmp24 = stateFromStores(11199);
+          intl = tmp(1126).intl;
           tmp21 = closure_14(tmp24, obj2);
         }
         cResult[9] = arr4;
@@ -1380,8 +1380,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
-        const stringResult = intl2.string(user(1127).t["3fe7U5"]);
+        const intl2 = tmp(1126).intl;
+        const stringResult = intl2.string(user(1126).t["3fe7U5"]);
         cResult[11] = stringResult;
         tmp25 = stringResult;
       } else {
@@ -1389,7 +1389,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
       if (cResult[12] !== tmp18) {
         const obj3 = { title: tmp25, showContainer: true, children: tmp18 };
-        const tmp30 = closure_14(stateFromStores(10945), obj3);
+        const tmp30 = closure_14(stateFromStores(11199), obj3);
         cResult[12] = tmp18;
         cResult[13] = tmp30;
         tmp27 = tmp30;
@@ -1469,16 +1469,16 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         tmp11 = arr6.length > 0;
       }
       if (tmp11) {
-        const obj3 = { title: intl.string(user(1127).t.PHjkRE), showContainer: true, children: arr6 };
-        const tmp14 = stateFromStores(10945);
-        intl = tmp(1127).intl;
+        const obj3 = { title: intl.string(user(1126).t.PHjkRE), showContainer: true, children: arr6 };
+        const tmp14 = stateFromStores(11199);
+        intl = tmp(1126).intl;
         tmp11 = closure_14(tmp14, obj3);
       }
       const obj4 = { children: items4 };
       items4 = [tmp11, ];
-      const obj5 = { title: intl2.string(user(1127).t["3fe7U5"]), showContainer: true, children: tmp9 };
-      const tmp17 = stateFromStores(10945);
-      intl2 = tmp(1127).intl;
+      const obj5 = { title: intl2.string(user(1126).t["3fe7U5"]), showContainer: true, children: tmp9 };
+      const tmp17 = stateFromStores(11199);
+      intl2 = tmp(1126).intl;
       items4[1] = closure_14(tmp17, obj5);
       tmp18Result = tmp18(tmp19, obj4);
     }

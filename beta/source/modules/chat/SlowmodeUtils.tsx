@@ -1,15 +1,15 @@
-// Module ID: 7105
-// Function ID: 7106
+// Module ID: 7172
+// Function ID: 7173
 // Name: SlowmodeUtils
-// Dependencies: [4472, 1086, 558, 576, 504, 1127, 1103, 4424, 2]
+// Dependencies: [4509, 1085, 558, 576, 504, 1126, 1102, 4461, 2]
 // Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText
 
-// Module 7105 (SlowmodeUtils)
-import Constants from "Constants" /* 1086 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import intl4 from "intl" /* 1127 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+// Module 7172 (SlowmodeUtils)
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import intl4 from "intl" /* 1126 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ export const getSlowmodeIndicatorText = function getSlowmodeIndicatorText(stateF
     const intl2 = intl4.intl;
     return intl2.string(intl4.t["8+NidX"]);
   } else if (stateFromStores >= DurationsDefault.Millis.HOUR) {
-    const tmp3Result = _modDef4424;
+    const tmp3Result = _modDef4461;
     const time2 = tmp3Result.duration(stateFromStores);
     const _HermesInternal3 = HermesInternal;
     const combined = "" + time2.minutes();
@@ -78,7 +78,7 @@ export const getSlowmodeIndicatorText = function getSlowmodeIndicatorText(stateF
     const padStartResult1 = combined1.padStart(2, "0");
     return "" + time2.hours() + ":" + padStartResult + ":" + padStartResult1;
   } else if (stateFromStores > 0) {
-    const tmp3Result2 = _modDef4424;
+    const tmp3Result2 = _modDef4461;
     const time = tmp3Result2.duration(stateFromStores);
     const _HermesInternal = HermesInternal;
     const combined2 = "" + time.seconds();
@@ -97,12 +97,12 @@ export const getSlowmodeDescription = function getSlowmodeDescription(rateLimitP
   }
   if (rateLimitPerUser >= DurationsDefault.Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded = Math.floor(rateLimitPerUser / tmp(1103).Seconds.HOUR);
+    const rounded = Math.floor(rateLimitPerUser / tmp(1102).Seconds.HOUR);
     const _Math3 = Math;
-    const diff = rateLimitPerUser - rounded * tmp(1103).Seconds.HOUR;
+    const diff = rateLimitPerUser - rounded * tmp(1102).Seconds.HOUR;
     const floorResult = floor(diff / DurationsDefault.Seconds.MINUTE);
-    const diff1 = rateLimitPerUser - rounded * tmp(1103).Seconds.HOUR;
-    const diff2 = diff1 - floorResult * tmp(1103).Seconds.MINUTE;
+    const diff1 = rateLimitPerUser - rounded * tmp(1102).Seconds.HOUR;
+    const diff2 = diff1 - floorResult * tmp(1102).Seconds.MINUTE;
     const intl3 = intl4.intl;
     const formatToPlainString3 = intl3.formatToPlainString;
     const t3 = intl4.t;

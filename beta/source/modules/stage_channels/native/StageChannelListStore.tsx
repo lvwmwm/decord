@@ -1,19 +1,19 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9729
+// Function ID: 9730
 // Name: StageChannelListStore
-// Dependencies: [32, 19, 1255, 1260, 558, 576, 4455, 2]
+// Dependencies: [32, 19, 1254, 1259, 558, 576, 4492, 2]
 
-// Module 9501 (StageChannelListStore)
+// Module 9729 (StageChannelListStore)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_1255 from "module_1255" /* 1255 */;
+import module_1254 from "module_1254" /* 1254 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const _slicedToArray2 = tmp(4455);
-let closure_4 = module_1255.createWithEqualityFn((arg0) => {
+const _slicedToArray2 = tmp(4492);
+let closure_4 = module_1254.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
     showActiveSpeakerPill: false,

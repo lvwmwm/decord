@@ -1,41 +1,67 @@
 // Module ID: 1787
 // Function ID: 1788
-// Dependencies: [1788, 1792, 1793, 1797, 1798, 1799, 1800, 1794, 1801, 1802, 1791, 1803, 1789, 1806, 1807, 1796, 1808]
+// Dependencies: [1788, 1790]
+// Exports: useAnimatedGestureHandler
 
 // Module 1787
-import _mod1788 from "module_1788" /* 1788 */;
-import _mod1789 from "module_1789" /* 1789 */;
-import react from "react" /* 1791 */;
-import _mod1792 from "module_1792" /* 1792 */;
-import _mod1793 from "module_1793" /* 1793 */;
-import _mod1794 from "module_1794" /* 1794 */;
-import _mod1796 from "module_1796" /* 1796 */;
-import _mod1797 from "module_1797" /* 1797 */;
-import _mod1798 from "module_1798" /* 1798 */;
-import _mod1799 from "module_1799" /* 1799 */;
-import _mod1800 from "module_1800" /* 1800 */;
-import _mod1801 from "module_1801" /* 1801 */;
-import _mod1802 from "module_1802" /* 1802 */;
-import react2 from "react" /* 1803 */;
-import _mod1806 from "module_1806" /* 1806 */;
-import _mod1807 from "module_1807" /* 1807 */;
-import react3 from "react" /* 1808 */;
+const require = globalThis.__r;
+let _require;
 
+let closure_2 = { UNDETERMINED: 0, FAILED: 1, BEGAN: 2, CANCELLED: 3, ACTIVE: 4, END: 5 };
+const __initData = { code: "function pnpm_useAnimatedGestureHandlerTs1(e){const{useWeb,EVENT_TYPE,handlers,context}=this.__closure;const event=useWeb?e.nativeEvent:e;if(event.state===EVENT_TYPE.BEGAN&&handlers.onStart){handlers.onStart(event,context);}if(event.state===EVENT_TYPE.ACTIVE&&handlers.onActive){handlers.onActive(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.END&&handlers.onEnd){handlers.onEnd(event,context);}if(event.oldState===EVENT_TYPE.BEGAN&&event.state===EVENT_TYPE.FAILED&&handlers.onFail){handlers.onFail(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.CANCELLED&&handlers.onCancel){handlers.onCancel(event,context);}if((event.oldState===EVENT_TYPE.BEGAN||event.oldState===EVENT_TYPE.ACTIVE)&&event.state!==EVENT_TYPE.BEGAN&&event.state!==EVENT_TYPE.ACTIVE&&handlers.onFinish){handlers.onFinish(event,context,event.state===EVENT_TYPE.CANCELLED||event.state===EVENT_TYPE.FAILED);}}" };
 
-export const useAnimatedGestureHandler = _mod1788.useAnimatedGestureHandler;
-export const useAnimatedKeyboard = _mod1792.useAnimatedKeyboard;
-export const useAnimatedProps = _mod1793.useAnimatedProps;
-export const useAnimatedReaction = _mod1797.useAnimatedReaction;
-export const useAnimatedRef = _mod1798.useAnimatedRef;
-export const useAnimatedScrollHandler = _mod1799.useAnimatedScrollHandler;
-export const useAnimatedSensor = _mod1800.useAnimatedSensor;
-export const useAnimatedStyle = _mod1794.useAnimatedStyle;
-export const useComposedEventHandler = _mod1801.useComposedEventHandler;
-export const useDerivedValue = _mod1802.useDerivedValue;
-export const useEvent = react.useEvent;
-export const useFrameCallback = react2.useFrameCallback;
-export const useHandler = _mod1789.useHandler;
-export const useReducedMotion = _mod1806.useReducedMotion;
-export const useScrollViewOffset = _mod1807.useScrollViewOffset;
-export const useSharedValue = _mod1796.useSharedValue;
-export const useWorkletCallback = react3.useWorkletCallback;
+export const useAnimatedGestureHandler = function useAnimatedGestureHandler(handlers, items10) {
+  let context;
+  _require = handlers;
+  const tmp = _require;
+  const obj = require("module_1788");
+  const handler = obj.useHandler(handlers, items10);
+  const tmp2 = context;
+  context = handler.context;
+  const useWeb = handler.useWeb;
+  const fn = function s(nativeEvent) {
+    if (useWeb) {
+      nativeEvent = nativeEvent.nativeEvent;
+    }
+    const onStart = nativeEvent.state === useWeb.BEGAN && handlers.onStart;
+    if (onStart) {
+      handlers.onStart(nativeEvent, context);
+    }
+    const onActive = nativeEvent.state === tmp.ACTIVE && handlers.onActive;
+    if (onActive) {
+      handlers.onActive(nativeEvent, context);
+    }
+    const onEnd = nativeEvent.oldState === tmp.ACTIVE && nativeEvent.state === tmp.END && handlers.onEnd;
+    if (onEnd) {
+      handlers.onEnd(nativeEvent, context);
+    }
+    const onFail = nativeEvent.oldState === tmp.BEGAN && nativeEvent.state === tmp.FAILED && handlers.onFail;
+    if (onFail) {
+      handlers.onFail(nativeEvent, context);
+    }
+    const onCancel = nativeEvent.oldState === tmp.ACTIVE && nativeEvent.state === tmp.CANCELLED && handlers.onCancel;
+    if (onCancel) {
+      handlers.onCancel(nativeEvent, context);
+    }
+    const tmp22 = nativeEvent.oldState !== tmp.BEGAN && nativeEvent.oldState !== tmp.ACTIVE || nativeEvent.state === tmp.BEGAN || nativeEvent.state === tmp.ACTIVE || !handlers.onFinish;
+    if (!tmp22) {
+      let tmp26 = nativeEvent.state === tmp.CANCELLED;
+      const onFinish = handlers.onFinish;
+      const tmp25 = context;
+      if (!tmp26) {
+        tmp26 = nativeEvent.state === tmp.FAILED;
+      }
+      onFinish(nativeEvent, tmp25, tmp26);
+    }
+  };
+  const obj2 = { useWeb, EVENT_TYPE: useWeb, handlers, context };
+  fn.__closure = obj2;
+  fn.__workletHash = 2401621621985;
+  fn.__initData = __initData;
+  let event = fn;
+  if (!useWeb) {
+    const tmpResult = tmp(tmp2[1]);
+    event = tmpResult.useEvent(fn, ["onGestureHandlerStateChange", "onGestureHandlerEvent"], tmp4);
+  }
+  return event;
+};

@@ -1,24 +1,24 @@
-// Module ID: 4656
-// Function ID: 4657
+// Module ID: 4698
+// Function ID: 4699
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1232, 4657, 1103, 4678, 2036, 2037, 11, 2034, 558, 576, 504, 2032, 2]
+// Dependencies: [5, 1231, 4699, 1102, 4720, 2037, 2038, 11, 2035, 558, 576, 504, 2033, 2]
 // Exports: UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed
 
-// Module 4656 (DismissibleContentUnsafeUtils)
+// Module 4698 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2034 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2036 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4678 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2035 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 2037 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2038 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4720 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c4, closure_5;
+let _require, c4, c5, closure_5;
 
 class UNSAFE_isDismissibleContentDismissed {
   constructor(GDM_INVITE_REMINDER, arg1) {
@@ -115,46 +115,81 @@ class UNSAFE_isDismissibleContentDismissed {
 }
 let obj = function _UNSAFE_markDismissibleContentAsDismissed() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_2;
-    let closure_3;
     let obj4;
-    let obj6;
     let closure_0 = arg0;
     let closure_1 = value;
-    if (1 === c4) {
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c5 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c5 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
-      } else if (!closure_131_6(closure_0, { bypassNewUserCheck: true })) {
-        const obj3 = closure_131_0(closure_131_2[6]);
-        const result = obj3.markDismissibleContentAsDismissedPreProcessing(closure_0, obj6);
-        c4 = 2;
-        c5 = 1;
-        const obj8 = { value: obj4.addDismissedContent(closure_0), done: false };
-        obj4 = closure_131_0(closure_131_2[12]);
-        return obj8;
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
       }
-    } else if (arg0 === 1) {
-      c5 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c5 = 3;
-      const obj9 = { value, done: true };
-      return obj9;
     } else {
-      obj = closure_131_0(closure_131_2[6]);
-      const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, obj6);
+      try {
+        let obj6;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            let closure_3 = tmp4;
+            let closure_2 = tmp;
+            obj6 = closure_1;
+            if (closure_1 === undefined) {
+              obj6 = {};
+            }
+            c4 = 1;
+            c5 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            } else if (!closure_131_6(closure_0, { bypassNewUserCheck: true })) {
+              const obj3 = closure_131_0(closure_131_2[6]);
+              const result = obj3.markDismissibleContentAsDismissedPreProcessing(closure_0, obj6);
+              c4 = 2;
+              c5 = 1;
+              const obj8 = { value: obj4.addDismissedContent(closure_0), done: false };
+              obj4 = closure_131_0(closure_131_2[12]);
+              return obj8;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj9 = { value, done: true };
+            return obj9;
+          } else {
+            obj = closure_131_0(closure_131_2[6]);
+            const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, obj6);
+          }
+          c5 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp23) {
+        c5 = 3;
+        throw tmp23;
+      }
     }
-    await "IconComponent";
-    obj6 = closure_1;
-    if (closure_1 === undefined) {
-      obj6 = {};
-    }
-    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -197,7 +232,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
             }
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

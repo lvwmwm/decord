@@ -1,15 +1,15 @@
-// Module ID: 7279
-// Function ID: 7280
+// Module ID: 7485
+// Function ID: 7486
 // Name: ForLaterExperiment
-// Dependencies: [7276, 1441, 38, 558, 576, 7280, 2]
+// Dependencies: [7482, 1440, 38, 558, 576, 7486, 2]
 // Exports: getForLaterLimit, hasForLaterAccess, isForLaterExperimentOn, isForLaterFreemiumExperimentOn, isForLaterLimitUpgradable
 
-// Module 7279 (ForLaterExperiment)
+// Module 7485 (ForLaterExperiment)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 576 */;
-import hasForLaterPremiumTypeDefault from "hasForLaterPremiumType" /* 7280 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 7276 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1441 */;
+import hasForLaterPremiumTypeDefault from "hasForLaterPremiumType" /* 7486 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 7482 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let merged;
 let obj2;
 let obj4;
 let tmp;
-const hasForLaterPremiumType2 = tmp(7280);
+const hasForLaterPremiumType2 = tmp(7486);
 ({ SAVED_BOOKMARKS_MAX: c3, SAVED_REMINDERS_MAX: closure_4 } = SavedMessagesConstants);
 let ApexExperiment = ApexExperiment_mod;
 let obj = { name: "2026-03-message-bookmarks", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };

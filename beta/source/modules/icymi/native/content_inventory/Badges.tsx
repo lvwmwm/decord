@@ -1,30 +1,30 @@
-// Module ID: 12584
-// Function ID: 12585
+// Module ID: 12831
+// Function ID: 12832
 // Name: Badges
-// Dependencies: [19, 17, 2115, 21, 588, 4837, 558, 576, 12582, 7596, 4833, 504, 8532, 10968, 12585, 1127, 12587, 12589, 9183, 11106, 1103, 8170, 2]
+// Dependencies: [19, 17, 2116, 21, 587, 4890, 558, 576, 12829, 7818, 4886, 504, 8739, 11227, 12832, 1126, 12834, 12836, 9407, 11364, 1102, 8364, 2]
 
-// Module 12584 (Badges)
+// Module 12831 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import utils from "utils" /* 7596 */;
-import TrophyIcon from "TrophyIcon" /* 8170 */;
-import GameControllerIcon from "GameControllerIcon" /* 8532 */;
-import FireIcon from "FireIcon" /* 9183 */;
-import TimerIcon2 from "TimerIcon" /* 10968 */;
-import RetryIcon from "RetryIcon" /* 11106 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 12582 */;
-import NewUserIcon from "NewUserIcon" /* 12585 */;
-import FlashIcon2 from "FlashIcon" /* 12587 */;
-import TrendingType from "TrendingType" /* 12589 */;
+import nativeDefault from "native" /* 587 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import utils from "utils" /* 7818 */;
+import TrophyIcon from "TrophyIcon" /* 8364 */;
+import GameControllerIcon from "GameControllerIcon" /* 8739 */;
+import FireIcon from "FireIcon" /* 9407 */;
+import TimerIcon2 from "TimerIcon" /* 11227 */;
+import RetryIcon from "RetryIcon" /* 11364 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 12829 */;
+import NewUserIcon from "NewUserIcon" /* 12832 */;
+import FlashIcon2 from "FlashIcon" /* 12834 */;
+import TrendingType from "TrendingType" /* 12836 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,12 +53,12 @@ let closure_10 = createStyles.createStyles((arg0) => {
 const redux = react.createContext("overlay");
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f61752 = () => {
+const f62279 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f61753 = () => {
+const f62280 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -137,14 +137,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((entry) => {
   entry = entry.entry;
   const style = entry.style;
-  obj = entry(12582);
+  obj = entry(12829);
   const now = obj.useTimestampTickedNow().now;
   const items = [entry, now];
   const children = react.useMemo(() => {
     obj = utils;
     return obj.formatActiveTimestamp(entry, now);
   }, items);
-  return closure_6(entry(4833).Text, { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
+  return closure_6(entry(4886).Text, { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
 });
 let closure_14 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -155,8 +155,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(10);
   entry = entry.entry;
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp8 = tmp4[react.useContext(react, redux)];
       const _Symbol = Symbol;
       const tmpResult = utils;
@@ -224,8 +224,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   let locale;
   let tmp6Result;
   entry = entry.entry;
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       let tmp12Result;
       const tmp5 = tmp[react.useContext(react, redux)];
       obj = utils;
@@ -237,7 +237,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         tmp12Result = tmp12(closure_14, obj2);
       } else {
         const obj3 = { variant: "text-sm/medium", color: tmp5.text, children: tmp6Result.formatEndedTimestamp(entry, tmp11) };
-        const Text = tmp6(4833).Text;
+        const Text = tmp6(4886).Text;
         tmp6Result = utils;
         tmp12Result = tmp12(Text, obj3);
       }
@@ -259,10 +259,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj = react2;
   const cResult = obj.c(13);
   ({ Icon, iconColor, text, accessibilityLabel } = arg0);
-  if (typeof f61752 === "function") {
+  if (typeof f62279 === "function") {
     const tmp4Result = tmp4(react.useContext(redux));
     const tmp6 = redux;
-    if (typeof f61753 === "function") {
+    if (typeof f62280 === "function") {
       if (typeof tmp5 === "function") {
         const tmp10 = tmp9[react.useContext(react, tmp6)];
         if (cResult[0] === Icon) {
@@ -327,10 +327,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((accessibilityLabel) => {
   let items;
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
-  if (typeof f61752 === "function") {
+  if (typeof f62279 === "function") {
     const tmp4Result = tmp4(react.useContext(redux));
     const tmp6 = redux;
-    if (typeof f61753 === "function") {
+    if (typeof f62280 === "function") {
       if (typeof tmp5 === "function") {
         const obj2 = { style: tmp4Result.badgeContainer, accessible: null != accessibilityLabel, accessibilityLabel, children: items };
         items = [, ];
@@ -356,10 +356,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(9);
   entry = entry.entry;
-  if (typeof f61752 === "function") {
+  if (typeof f62279 === "function") {
     const tmp4Result = tmp4(react.useContext(redux));
     const tmp6 = redux;
-    if (typeof f61753 === "function") {
+    if (typeof f62280 === "function") {
       if (typeof tmp5 === "function") {
         let icon;
         const tmp10 = tmp9[react.useContext(react, tmp6)];
@@ -420,10 +420,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
 }) : ((entry) => {
   let items;
   entry = entry.entry;
-  if (typeof f61752 === "function") {
+  if (typeof f62279 === "function") {
     const tmpResult = tmp(react.useContext(redux));
     const tmp3 = redux;
-    if (typeof f61753 === "function") {
+    if (typeof f62280 === "function") {
       if (typeof tmp2 === "function") {
         let icon;
         const tmp7 = tmp6[react.useContext(react, tmp3)];
@@ -436,7 +436,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         }
         const obj3 = { style: tmpResult.badgeContainer, children: items };
         const obj4 = { style: tmpResult.icon, color: icon };
-        items = [metroRequire(tmp8(8532).GameControllerIcon, obj4), ];
+        items = [metroRequire(tmp8(8739).GameControllerIcon, obj4), ];
         const obj5 = { entry };
         items[1] = metroRequire(closure_15, obj5);
         return metroImportDefault(View, obj3);
@@ -457,8 +457,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(6);
   entry = entry.entry;
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp8 = tmp4[react.useContext(react, redux)];
       const tmpResult = utils;
       if (tmpResult.isEntryMarathon(entry)) {
@@ -511,8 +511,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 }) : ((entry) => {
   entry = entry.entry;
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp5 = tmp[react.useContext(react, redux)];
       obj = utils;
       if (obj.isEntryMarathon(entry)) {
@@ -555,7 +555,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { Icon: NewUserIcon.NewUserIcon, text: intl.string(intl3.t.keY6mW), iconColor: nativeDefault.colors.STATUS_POSITIVE };
-      intl = tmp(1127).intl;
+      intl = tmp(1126).intl;
       const tmp10 = metroRequire(closure_16, obj3);
       cResult[0] = tmp10;
       first = tmp10;
@@ -572,7 +572,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = utils;
   if (obj.isEntryNew(entry)) {
     const obj2 = { Icon: NewUserIcon.NewUserIcon, text: intl.string(intl3.t.keY6mW), iconColor: nativeDefault.colors.STATUS_POSITIVE };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     tmp3 = metroRequire(closure_16, obj2);
   }
   return tmp3;
@@ -582,8 +582,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(14);
   entry = entry.entry;
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp8 = tmp4[react.useContext(react, redux)];
       if (cResult[0] === tmp8) {
         let tmp9;
@@ -641,14 +641,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         tmp19 = null;
         if (streakCount >= 2) {
           tmp24 = closure_16;
-          FlashIcon = tmp(12587).FlashIcon;
-          const intl = tmp(1127).intl;
+          FlashIcon = tmp(12834).FlashIcon;
+          const intl = tmp(1126).intl;
           const obj3 = { days: streakCount };
-          formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t["Klie/P"], obj3);
+          formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t["Klie/P"], obj3);
           icon = tmp8.icon;
-          const intl2 = tmp(1127).intl;
+          const intl2 = tmp(1126).intl;
           const obj4 = { days: streakCount };
-          formatToPlainStringResult1 = intl2.formatToPlainString(tmp(1127).t.nVLPBf, obj4);
+          formatToPlainStringResult1 = intl2.formatToPlainString(tmp(1126).t.nVLPBf, obj4);
           tmp19 = forResult;
         }
       }
@@ -677,8 +677,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   let intl2;
   let obj3;
   let obj4;
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       const streakCount = obj.getStreakCount(tmp);
@@ -687,9 +687,9 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         tmp11 = null;
         if (streakCount >= 2) {
           const obj2 = { Icon: FlashIcon2.FlashIcon, text: intl.formatToPlainString(intl3.t["Klie/P"], obj3), iconColor: tmp6.icon, accessibilityLabel: intl2.formatToPlainString(intl3.t.nVLPBf, obj4) };
-          intl = tmp7(1127).intl;
+          intl = tmp7(1126).intl;
           obj3 = { days: streakCount };
-          intl2 = tmp7(1127).intl;
+          intl2 = tmp7(1126).intl;
           obj4 = { days: streakCount };
           tmp11 = metroRequire(closure_16, obj2);
         }
@@ -706,8 +706,8 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj = react2;
   const cResult = obj.c(3);
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp9 = tmp5[react.useContext(react, redux)];
       const tmpResult = utils;
       const trendingType = tmpResult.getTrendingType(tmp4);
@@ -719,7 +719,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp15;
           const _Symbol = Symbol;
           if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1127).intl;
+            const intl = tmp(1126).intl;
             const stringResult = intl.string(intl3.t.TsWCdW);
             cResult[0] = stringResult;
             first = stringResult;
@@ -747,8 +747,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 }) : ((arg0) => {
   let intl;
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       const trendingType = obj.getTrendingType(tmp);
@@ -757,7 +757,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp11 = null;
         if (trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED) {
           const obj2 = { Icon: FireIcon.FireIcon, text: intl.string(intl3.t.TsWCdW), iconColor: tmp6.icon };
-          intl = tmp7(1127).intl;
+          intl = tmp7(1126).intl;
           tmp11 = metroRequire(closure_16, obj2);
         }
       }
@@ -773,8 +773,8 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj = react2;
   const cResult = obj.c(3);
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp9 = tmp5[react.useContext(react, redux)];
       let tmp10 = null;
       const tmpResult = utils;
@@ -783,7 +783,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp14;
         const _Symbol = Symbol;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const stringResult = intl.string(intl3.t.adnLsB);
           cResult[0] = stringResult;
           first = stringResult;
@@ -810,14 +810,14 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 }) : ((arg0) => {
   let intl;
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       let tmp9 = null;
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       if (null != obj.getResurrectedEntryLastPlayTime(tmp)) {
         const obj2 = { Icon: RetryIcon.RetryIcon, text: intl.string(intl3.t.adnLsB), iconColor: tmp6.icon };
-        intl = tmp7(1127).intl;
+        intl = tmp7(1126).intl;
         tmp9 = metroRequire(closure_16, obj2);
       }
       return tmp9;
@@ -833,8 +833,8 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items;
   obj = react2;
   const cResult = obj.c(8);
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp9 = tmp5[react.useContext(react, redux)];
       const tmpResult = utils;
       const entryDuration = tmpResult.getEntryDuration(tmp4);
@@ -845,9 +845,9 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp14;
         let tmp17;
         const _Symbol = Symbol;
-        const SDRHgr = tmp(1127).t.SDRHgr;
+        const SDRHgr = tmp(1126).t.SDRHgr;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const stringResult = intl.string(intl3.t["/50eHi"]);
           cResult[0] = stringResult;
           first = stringResult;
@@ -855,7 +855,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           first = cResult[0];
         }
         if (cResult[1] !== entryDuration) {
-          const intl2 = tmp(1127).intl;
+          const intl2 = tmp(1126).intl;
           const _Math = Math;
           const format = intl2.format;
           const obj2 = { hours: Math.round(entryDuration / DurationsDefault.Seconds.HOUR) };
@@ -899,8 +899,8 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((arg0) => {
   let items;
   let obj3;
-  if (typeof f61753 === "function") {
-    if (typeof f61752 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       const entryDuration = obj.getEntryDuration(tmp);
@@ -908,11 +908,11 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return null;
       } else {
         const obj2 = { Icon: TrophyIcon.TrophyIcon, text: metroImportDefault(metroImportAll, obj3), iconColor: tmp6.icon };
-        const SDRHgr = tmp7(1127).t.SDRHgr;
+        const SDRHgr = tmp7(1126).t.SDRHgr;
         obj3 = { children: items };
-        const intl = tmp7(1127).intl;
+        const intl = tmp7(1126).intl;
         items = [intl.string(intl3.t["/50eHi"]), ": ", ];
-        const intl2 = tmp7(1127).intl;
+        const intl2 = tmp7(1126).intl;
         const _Math = Math;
         const format = intl2.format;
         const obj4 = { hours: Math.round(entryDuration / DurationsDefault.Seconds.HOUR) };
@@ -932,7 +932,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(8);
   entry = entry.entry;
-  if (typeof f61752 === "function") {
+  if (typeof f62279 === "function") {
     let tmp8;
     let tmp12;
     const tmp4Result = tmp4(react.useContext(redux));
@@ -977,7 +977,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 }) : ((arg0) => {
   let items;
-  if (typeof f61752 === "function") {
+  if (typeof f62279 === "function") {
     const tmp2Result = tmp2(react.useContext(redux));
     obj = { style: tmp2Result.badgeContainer, children: items };
     const obj2 = { style: tmp2Result.icon, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };

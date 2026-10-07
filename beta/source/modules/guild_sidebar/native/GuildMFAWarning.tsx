@@ -1,24 +1,24 @@
-// Module ID: 15830
-// Function ID: 15831
+// Module ID: 16124
+// Function ID: 16125
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 17, 1086, 21, 4837, 588, 10489, 2114, 1987, 4528, 558, 576, 15831, 1127, 4833, 1189, 5436, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 4890, 587, 10723, 2115, 1987, 4565, 558, 576, 16125, 1126, 4886, 1188, 5909, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 15830 (GuildMFAWarning)
+// Module 16124 (GuildMFAWarning)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10489 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15831 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16125 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -122,7 +122,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.ZIf8Ag);
     cResult[2] = stringResult;
     tmp10 = stringResult;
@@ -131,7 +131,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const MFAWarningLink = tmp4.MFAWarningLink;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl3.t.hvVgAZ);
     cResult[3] = stringResult1;
     tmp12 = stringResult1;
@@ -141,7 +141,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] !== tmp4.MFAWarningLink) {
     const obj3 = { variant: "text-xs/medium", color: "text-default", children: items };
     items = [tmp10, ];
-    const Text = tmp(4833).Text;
+    const Text = tmp(4886).Text;
     const obj4 = { style: MFAWarningLink, children: items1 };
     items1 = [" ", tmp12];
     items[1] = metroImportDefault(native.LegacyText, obj4);

@@ -1,16 +1,16 @@
-// Module ID: 16829
-// Function ID: 16830
+// Module ID: 17189
+// Function ID: 17190
 // Name: LeaveActivityButton
-// Dependencies: [19, 8499, 21, 558, 576, 1127, 5282, 9349, 8760, 2]
+// Dependencies: [19, 8705, 21, 558, 576, 1126, 5594, 9577, 8991, 2]
 
-// Module 16829 (LeaveActivityButton)
+// Module 17189 (LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8499 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8760 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9349 */;
+import intl3 from "intl" /* 1126 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8991 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9577 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,9 +28,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   const cResult = obj.c(4);
   onPress = onPress.onPress;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t["Hi1/aQ"]);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl3.t.k0Aph0);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] !== onPress) {
-    const Button = tmp(5282).Button;
+    const Button = tmp(5594).Button;
     const tmp11 = <Button onPress={onPress} icon={AssetRegistryDefault} text={tmp4} accessibilityLabel={tmp5} variant="destructive" size="sm" maxFontSizeMultiplier={1} />;
     cResult[2] = onPress;
     cResult[3] = tmp11;

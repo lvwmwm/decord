@@ -1,14 +1,14 @@
-// Module ID: 8990
-// Function ID: 8991
+// Module ID: 9212
+// Function ID: 9213
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1086, 1985, 1098, 8991, 4687, 1127, 2]
+// Dependencies: [5, 32, 19, 1085, 1985, 1097, 9213, 4729, 1126, 2]
 // Exports: default
 
-// Module 8990 (useCreateChannelSubmit)
+// Module 9212 (useCreateChannelSubmit)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, bitrate, body, body2, closure_3, closure_4, closure_5, name, permissionOverwrites, type, userLimit;
@@ -82,7 +82,7 @@ export default function useCreateChannelSubmit(arg0) {
               guild_id = undefined;
               c7 = 1;
               applicationId = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

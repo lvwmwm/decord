@@ -1,15 +1,15 @@
-// Module ID: 6546
-// Function ID: 6547
+// Module ID: 6619
+// Function ID: 6620
 // Name: common/SafeAreaView
-// Dependencies: [109, 19, 17, 21, 558, 576, 1619, 5895, 1343, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 1618, 5973, 1342, 2]
 
-// Module 6546 (common/SafeAreaView)
+// Module 6619 (common/SafeAreaView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _modDef1343 from "module_1343" /* 1343 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import useRefValueDefault from "useRefValue" /* 5895 */;
+import _modDef1342 from "module_1342" /* 1342 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import useRefValueDefault from "useRefValue" /* 5973 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -101,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[4] = tmp24;
   importDefault = items;
   const tmp25 = useRefValueDefault(ref);
-  const tmp26 = _modDef1343(items, tmp25);
+  const tmp26 = _modDef1342(items, tmp25);
   let closure_2 = tmp26;
   if (closure_2) {
     importDefault = tmp25;
@@ -201,8 +201,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[4] = tmp12;
   closure_1 = items;
   const tmp13 = useRefValueDefault(ref);
-  closure_2 = _modDef1343(items, tmp13);
-  const tmp14 = _modDef1343(items, tmp13);
+  closure_2 = _modDef1342(items, tmp13);
+  const tmp14 = _modDef1342(items, tmp13);
   if (closure_2) {
     closure_1 = tmp13;
     items = tmp13;

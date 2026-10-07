@@ -1,28 +1,28 @@
-// Module ID: 16898
-// Function ID: 16899
+// Module ID: 17258
+// Function ID: 17259
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 16899, 4854, 9075, 16900, 2051, 4855, 1086, 21, 558, 16901, 576, 16843, 9074, 9238, 9218, 573, 9236, 9217, 16905, 1370, 9104, 9076, 1127, 9101, 9103, 16906, 9219, 4656, 2035, 5898, 16828, 13936, 2]
+// Dependencies: [109, 19, 17, 17259, 4907, 9300, 17260, 2051, 4908, 1085, 21, 558, 17261, 576, 17203, 9299, 9465, 9445, 573, 9463, 9444, 17265, 1369, 9330, 9301, 1126, 9327, 9329, 17266, 9446, 4698, 2036, 5976, 17188, 14208, 2]
 
-// Module 16898 (VoicePanelHeaderSpeaker)
+// Module 17258 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
-import NativeViewDefault from "NativeView" /* 5898 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 9219 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 9236 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 16828 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 16899 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 16901 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
+import NativeViewDefault from "NativeView" /* 5976 */;
+import useOnConnectToConsole from "useOnConnectToConsole" /* 9446 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9463 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17188 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 17259 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17261 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4854 */;
-import AudioRouteStore from "AudioRouteStore" /* 9075 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 16900 */;
+import GameConsoleStore from "GameConsoleStore" /* 4907 */;
+import AudioRouteStore from "AudioRouteStore" /* 9300 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 17260 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import SessionsStore from "SessionsStore" /* 4855 */;
+import SessionsStore from "SessionsStore" /* 4908 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let closure_15;
 let closure_16;
 let closure_17;
 let tmp;
-const showAudioOutputSelector = tmp(9104);
+const showAudioOutputSelector = tmp(9330);
 let closure_3 = ["ref"];
 let closure_4 = ["ref"];
 let react = react_mod;
@@ -446,8 +446,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
             let tmp9;
             let tmp = arg0;
             if (arg0 == null) {
-              tmp = { onPress, ref: "r" };
-              const obj = { onPress, ref: "r" };
+              tmp = { onPress, ref: "Array" };
+              const obj = { onPress, ref: "Array" };
             }
             const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
             tmp9 = queueAudioSwap;
@@ -773,8 +773,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
       let tmp9;
       let tmp = arg0;
       if (arg0 == null) {
-        tmp = { onPress, ref: "r" };
-        const obj = { onPress, ref: "r" };
+        tmp = { onPress, ref: "Array" };
+        const obj = { onPress, ref: "Array" };
       }
       const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
       tmp9 = closure_15;

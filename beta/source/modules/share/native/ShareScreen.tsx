@@ -1,28 +1,28 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13712
+// Function ID: 13713
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2055, 2051, 4472, 1086, 11051, 10361, 21, 4837, 588, 1370, 1127, 13447, 10477, 13448, 13449, 1253, 9394, 4848, 7814, 8607, 11075, 1987, 5206, 13450, 13451, 5942, 7292, 1616, 5933, 10480, 13452, 2]
+// Dependencies: [5, 32, 19, 17, 2055, 2051, 4509, 1085, 11309, 10592, 21, 4890, 587, 1369, 1126, 13713, 10711, 13714, 13715, 1252, 7517, 4901, 8039, 8814, 11333, 1987, 5709, 13716, 13717, 6019, 7498, 1615, 6010, 10714, 13718, 2]
 // Exports: default
 
-// Module 13446 (ShareScreen)
+// Module 13712 (ShareScreen)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import HeaderShared from "HeaderShared" /* 7292 */;
-import UserRowConstants from "UserRowConstants" /* 10361 */;
-import ForwardConstants from "ForwardConstants" /* 11051 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 13450 */;
-import ShareEmbedDefault from "ShareEmbed" /* 13451 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import HeaderShared from "HeaderShared" /* 7498 */;
+import UserRowConstants from "UserRowConstants" /* 10592 */;
+import ForwardConstants from "ForwardConstants" /* 11309 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 13716 */;
+import ShareEmbedDefault from "ShareEmbed" /* 13717 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import Constants from "Constants" /* 1086 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 let attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -304,7 +304,7 @@ export default function ShareScreen(appEntryKey) {
                                         tmp = undefined;
                                         c5 = 1;
                                         c6 = 1;
-                                        return { value: "Reflect", done: true };
+                                        return { value: "Reflect", done: null };
                                       }
                                     } else if (1 === c5) {
                                       if (arg0 === 1) {

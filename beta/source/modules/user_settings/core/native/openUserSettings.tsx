@@ -1,22 +1,30 @@
-// Module ID: 6801
-// Function ID: 6802
+// Module ID: 6885
+// Function ID: 6886
 // Name: openUserSettings
-// Dependencies: [6802, 1086, 4695, 585, 2]
+// Dependencies: [6886, 1085, 4737, 584, 2]
 // Exports: openUserSettings
 
-// Module 6801 (openUserSettings)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import UserSettingsAccountStore from "UserSettingsAccountStore" /* 6802 */;
+// Module 6885 (openUserSettings)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import UserSettingsAccountStore from "UserSettingsAccountStore" /* 6886 */;
 import size from "module_2" /* 2 */;
 
 const UserSettingsSections = Constants.UserSettingsSections;
 const result = size.fileFinishedImporting("modules/user_settings/core/native/openUserSettings.tsx");
 
 export const openUserSettings = (screen, fn) => {
-  const obj = RootNavigationRef;
-  const rootNavigationRef = obj.getRootNavigationRef();
+  let obj = arg2;
+  if (arg2 === undefined) {
+    obj = {};
+  }
+  let flag = obj.pop;
+  if (flag === undefined) {
+    flag = true;
+  }
+  const obj2 = RootNavigationRef;
+  const rootNavigationRef = obj2.getRootNavigationRef();
   const tmp2 = null != rootNavigationRef && rootNavigationRef.isReady();
   if (tmp2) {
     screen = undefined;
@@ -28,9 +36,10 @@ export const openUserSettings = (screen, fn) => {
     if (screen == null) {
       screen = UserSettingsSections.OVERVIEW;
     }
-    const obj2 = { type: "USER_SETTINGS_MODAL_INIT", section: screen };
-    dispatch(obj2);
-    rootNavigationRef.navigate("settings", screen, { pop: true });
+    const obj3 = { type: "USER_SETTINGS_MODAL_INIT", section: screen };
+    dispatch(obj3);
+    const obj4 = { pop: flag };
+    rootNavigationRef.navigate("settings", screen, obj4);
     if (fn != null) {
       fn();
     }

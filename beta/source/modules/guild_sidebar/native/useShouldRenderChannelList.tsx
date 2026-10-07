@@ -1,17 +1,17 @@
-// Module ID: 15895
-// Function ID: 15896
+// Module ID: 16199
+// Function ID: 16200
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 6900, 5590, 1086, 558, 576, 4694, 4695, 1122, 2]
+// Dependencies: [32, 19, 6985, 5436, 1085, 558, 576, 4736, 4737, 1121, 2]
 
-// Module 15895 (useShouldRenderChannelList)
-import Constants from "Constants" /* 1086 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+// Module 16199 (useShouldRenderChannelList)
+import Constants from "Constants" /* 1085 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 6900 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import CacheStore from "CacheStore" /* 6985 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,10 +35,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F143934 */ };
-          handleGatewayChange = function handleGatewayChange() { /* body not rendered: F143935 */ };
-          handleCacheChange = function handleCacheChange() { /* body not rendered: F143936 */ };
-          handleNavigationChange = function handleNavigationChange() { /* body not rendered: F143937 */ };
+          allowRender = function allowRender() { /* body not rendered: F145610 */ };
+          handleGatewayChange = function handleGatewayChange() { /* body not rendered: F145611 */ };
+          handleCacheChange = function handleCacheChange() { /* body not rendered: F145612 */ };
+          handleNavigationChange = function handleNavigationChange() { /* body not rendered: F145613 */ };
           tmp2 = closure_1_5;
           result = closure_1_5.addReactChangeListener(handleGatewayChange);
           tmp4 = closure_1_4;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             str = "state";
             addListenerResult = rootNavigationRef.addListener("state", handleNavigationChange);
           }
-          return () => { /* body not rendered: F143938 */ };
+          return () => { /* body not rendered: F145614 */ };
         }
       }
     }
@@ -72,10 +72,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F143934 */ };
-          handleGatewayChange = function handleGatewayChange() { /* body not rendered: F143935 */ };
-          handleCacheChange = function handleCacheChange() { /* body not rendered: F143936 */ };
-          handleNavigationChange = function handleNavigationChange() { /* body not rendered: F143937 */ };
+          allowRender = function allowRender() { /* body not rendered: F145610 */ };
+          handleGatewayChange = function handleGatewayChange() { /* body not rendered: F145611 */ };
+          handleCacheChange = function handleCacheChange() { /* body not rendered: F145612 */ };
+          handleNavigationChange = function handleNavigationChange() { /* body not rendered: F145613 */ };
           tmp2 = closure_1_5;
           result = closure_1_5.addReactChangeListener(handleGatewayChange);
           tmp4 = closure_1_4;
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             str = "state";
             addListenerResult = rootNavigationRef.addListener("state", handleNavigationChange);
           }
-          return () => { /* body not rendered: F143938 */ };
+          return () => { /* body not rendered: F145614 */ };
         }
       }
     }

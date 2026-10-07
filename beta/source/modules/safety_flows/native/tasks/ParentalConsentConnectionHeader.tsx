@@ -1,22 +1,22 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 18073
+// Function ID: 18074
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1378, 21, 4837, 5991, 588, 558, 576, 1619, 504, 6005, 1127, 2784, 4833, 2]
+// Dependencies: [19, 17, 1377, 21, 4890, 6068, 587, 558, 576, 1618, 504, 6082, 1126, 2787, 4886, 2]
 
-// Module 17708 (ParentalConsentConnectionHeader)
+// Module 18073 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import NavigatorConstants from "NavigatorConstants" /* 5991 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp5;
-const _modDef2784 = tmp5(2784);
+const _modDef2787 = tmp5(2787);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -84,8 +84,8 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj = AuthenticationActionCreatorsDefault;
       return obj.logout("safety_flows_parental_consent_connection");
     };
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(_modDef2784["3HuGuY"]);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(_modDef2787["3HuGuY"]);
     cResult[4] = fn2;
     cResult[5] = stringResult;
     tmp12 = stringResult;
@@ -107,7 +107,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp19 = null != stateFromStores;
     if (tmp19) {
       const obj4 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
-      tmp19 = hasOwnProperty(tmp(4833).Text, obj4);
+      tmp19 = hasOwnProperty(tmp(4886).Text, obj4);
     }
     cResult[8] = stateFromStores;
     cResult[9] = tmp19;
@@ -172,7 +172,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj = AuthenticationActionCreatorsDefault;
       return obj.logout("safety_flows_parental_consent_connection");
     },
-    children: intl.string(_modDef2784["3HuGuY"])
+    children: intl.string(_modDef2787["3HuGuY"])
   };
   const Text = Text_Text.Text;
   intl = intl2.intl;

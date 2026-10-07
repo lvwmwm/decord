@@ -1,19 +1,20 @@
-// Module ID: 11930
-// Function ID: 11931
+// Module ID: 12183
+// Function ID: 12184
 // Name: useGuildPowerupLevelPerks
-// Dependencies: [19, 4726, 558, 576, 1127, 2522, 4730, 1376, 2]
+// Dependencies: [19, 1379, 4768, 558, 576, 1126, 2525, 1375, 2]
 
-// Module 11930 (useGuildPowerupLevelPerks)
+// Module 12183 (useGuildPowerupLevelPerks)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import _modDef2522 from "module_2522" /* 2522 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4726 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4730 */;
+import intl4 from "intl" /* 1126 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import _modDef2525 from "module_2525" /* 2525 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const PerkIcons = PremiumConstants.PerkIcons;
 const GUILD_FEATURE_TO_PERK = GuildPowerupsConstants.GUILD_FEATURE_TO_PERK;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features, arg1) => {
   let includeEmojis;
@@ -67,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features, arg1) =>
         tmp6 = cResult[15];
       }
       if (cResult[16] !== tmp6) {
-        const obj3 = { perkIcon: GuildBoostingUtils.PerkIcons.EMOJI, description: tmp6 };
+        const obj3 = { perkIcon: PerkIcons.EMOJI, description: tmp6 };
         cResult[16] = tmp6;
         cResult[17] = obj3;
         tmp9 = obj3;
@@ -76,9 +77,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features, arg1) =>
       }
       items.push(tmp9);
     }
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj4 = { totalEmojis: features.features.total_emoji_slots, additionalEmojis: features.features.additional_emoji_slots };
-    const formatToPlainStringResult = intl.formatToPlainString(_modDef2522["NXvV0+"], obj4);
+    const formatToPlainStringResult = intl.formatToPlainString(_modDef2525["NXvV0+"], obj4);
     cResult[13] = features.features.additional_emoji_slots;
     cResult[14] = features.features.total_emoji_slots;
     cResult[15] = formatToPlainStringResult;
@@ -86,58 +87,58 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features, arg1) =>
   }
   if (includeStickers) {
     if (cResult[18] === features.features.additional_sticker_slots) {
-      let tmp11;
-      let tmp14;
+      let tmp12;
+      let tmp15;
       if (cResult[19] === features.features.total_sticker_slots) {
-        tmp11 = cResult[20];
+        tmp12 = cResult[20];
       }
-      if (cResult[21] !== tmp11) {
-        const obj5 = { perkIcon: GuildBoostingUtils.PerkIcons.STICKER, description: tmp11 };
-        cResult[21] = tmp11;
+      if (cResult[21] !== tmp12) {
+        const obj5 = { perkIcon: PerkIcons.STICKER, description: tmp12 };
+        cResult[21] = tmp12;
         cResult[22] = obj5;
-        tmp14 = obj5;
+        tmp15 = obj5;
       } else {
-        tmp14 = cResult[22];
+        tmp15 = cResult[22];
       }
-      items.push(tmp14);
+      items.push(tmp15);
     }
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const obj6 = { totalStickers: features.features.total_sticker_slots, additionalStickers: features.features.additional_sticker_slots };
-    const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2522.ZEvvPz, obj6);
+    const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2525.ZEvvPz, obj6);
     cResult[18] = features.features.additional_sticker_slots;
     cResult[19] = features.features.total_sticker_slots;
     cResult[20] = formatToPlainStringResult1;
-    tmp11 = formatToPlainStringResult1;
+    tmp12 = formatToPlainStringResult1;
   }
   if (includeSoundboards) {
     if (cResult[23] === features.features.additional_sound_slots) {
-      let tmp16;
-      let tmp19;
+      let tmp18;
+      let tmp21;
       if (cResult[24] === features.features.total_sound_slots) {
-        tmp16 = cResult[25];
+        tmp18 = cResult[25];
       }
-      if (cResult[26] !== tmp16) {
-        const obj7 = { perkIcon: GuildBoostingUtils.PerkIcons.SOUNDBOARD, description: tmp16 };
-        cResult[26] = tmp16;
+      if (cResult[26] !== tmp18) {
+        const obj7 = { perkIcon: PerkIcons.SOUNDBOARD, description: tmp18 };
+        cResult[26] = tmp18;
         cResult[27] = obj7;
-        tmp19 = obj7;
+        tmp21 = obj7;
       } else {
-        tmp19 = cResult[27];
+        tmp21 = cResult[27];
       }
-      items.push(tmp19);
+      items.push(tmp21);
     }
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const obj8 = { totalSoundboards: features.features.total_sound_slots, additionalSoundboards: features.features.additional_sound_slots };
-    const formatToPlainStringResult2 = intl3.formatToPlainString(_modDef2522["s9u/E7"], obj8);
+    const formatToPlainStringResult2 = intl3.formatToPlainString(_modDef2525["s9u/E7"], obj8);
     cResult[23] = features.features.additional_sound_slots;
     cResult[24] = features.features.total_sound_slots;
     cResult[25] = formatToPlainStringResult2;
-    tmp16 = formatToPlainStringResult2;
+    tmp18 = formatToPlainStringResult2;
   }
   features = features.features.features;
   const concat = items.concat;
   const mapped = features.map((item) => closure_0[item]);
-  const combined = concat(mapped.filter(tmp(1376).isNotNullish));
+  const combined = concat(mapped.filter(tmp(1375).isNotNullish));
   cResult[2] = includeEmojis;
   cResult[3] = includeSoundboards;
   cResult[4] = includeStickers;
@@ -172,23 +173,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((features, arg1) =>
     const tmp = includeEmojis;
     if (tmp) {
       const push = items.push;
-      const obj = { perkIcon: GuildBoostingUtils.PerkIcons.EMOJI, description: intl.formatToPlainString(_modDef2522["NXvV0+"], obj2) };
+      const obj = { perkIcon: PerkIcons.EMOJI, description: intl.formatToPlainString(_modDef2525["NXvV0+"], obj2) };
       intl = intl4.intl;
       obj2 = { totalEmojis: closure_0.features.total_emoji_slots, additionalEmojis: closure_0.features.additional_emoji_slots };
       push(obj);
     }
-    const tmp7 = includeStickers;
-    if (tmp7) {
+    const tmp8 = includeStickers;
+    if (tmp8) {
       const push2 = items.push;
-      const obj3 = { perkIcon: GuildBoostingUtils.PerkIcons.STICKER, description: intl2.formatToPlainString(_modDef2522.ZEvvPz, obj4) };
+      const obj3 = { perkIcon: PerkIcons.STICKER, description: intl2.formatToPlainString(_modDef2525.ZEvvPz, obj4) };
       intl2 = intl4.intl;
       obj4 = { totalStickers: closure_0.features.total_sticker_slots, additionalStickers: closure_0.features.additional_sticker_slots };
       push2(obj3);
     }
-    const tmp13 = includeSoundboards;
-    if (tmp13) {
+    const tmp15 = includeSoundboards;
+    if (tmp15) {
       const push3 = items.push;
-      const obj5 = { perkIcon: GuildBoostingUtils.PerkIcons.SOUNDBOARD, description: intl3.formatToPlainString(_modDef2522["s9u/E7"], obj6) };
+      const obj5 = { perkIcon: PerkIcons.SOUNDBOARD, description: intl3.formatToPlainString(_modDef2525["s9u/E7"], obj6) };
       intl3 = intl4.intl;
       obj6 = { totalSoundboards: closure_0.features.total_sound_slots, additionalSoundboards: closure_0.features.additional_sound_slots };
       push3(obj5);

@@ -1,21 +1,21 @@
-// Module ID: 6508
-// Function ID: 6509
+// Module ID: 6581
+// Function ID: 6582
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6031, 6024, 4537, 1127, 6509, 6034, 6035, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6105, 6101, 4582, 1126, 6582, 6108, 6109, 4886, 2]
 
-// Module 6508 (TextAreaField)
+// Module 6581 (TextAreaField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import native from "native" /* 4537 */;
-import useTextField from "useTextField" /* 6024 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 6031 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 6034 */;
-import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 6509 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import native from "native" /* 4582 */;
+import useTextField from "useTextField" /* 6101 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 6105 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 6108 */;
+import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 6582 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const nodeText = tmpResult9.getNodeText(disabled.label);
   const length = state.value.length;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.c2Jqed);
     cResult[2] = stringResult;
     tmp11 = stringResult;
@@ -82,7 +82,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     const tmpResult10 = useCharacterLimitAnnouncement2;
     const characterLimitAnnouncement = tmpResult10.useCharacterLimitAnnouncement(tmp13);
-    const InputFieldContainer = tmp(6031).InputFieldContainer;
+    const InputFieldContainer = tmp(6105).InputFieldContainer;
     if (cResult[6] === focusProps) {
       let tmp15;
       if (cResult[7] === inputProps) {
@@ -106,7 +106,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                   let str3 = "text-muted";
                   let str = "text-muted";
                   const obj3 = { style: tmp6.maxLengthIndicator, children: _false(Text, obj4) };
-                  Text = tmp(4833).Text;
+                  Text = tmp(4886).Text;
                   const tmp34 = View;
                   if (null != maxLength) {
                     str = str3;
@@ -123,13 +123,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                   }
                   obj4 = { variant: "text-xs/semibold", color: str, accessibilityLabel: formatToPlainStringResult, children: diff };
                   if (null != nodeText) {
-                    const intl3 = tmp(1127).intl;
+                    const intl3 = tmp(1126).intl;
                     const obj5 = { label: nodeText, remainingCharacters: diff };
-                    formatToPlainStringResult = intl3.formatToPlainString(tmp(1127).t["8Q+k1s"], obj5);
+                    formatToPlainStringResult = intl3.formatToPlainString(tmp(1126).t["8Q+k1s"], obj5);
                   } else {
-                    const intl2 = tmp(1127).intl;
+                    const intl2 = tmp(1126).intl;
                     const obj6 = { remainingCharacters: diff };
-                    formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t.fR1cof, obj6);
+                    formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.fR1cof, obj6);
                   }
                   tmp33Result = tmp33(tmp34, obj3);
                 }
@@ -161,7 +161,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             }
           }
           const obj8 = { ref: innerRef, style: tmp18, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-          const NativeTextInput = tmp(6035).NativeTextInput;
+          const NativeTextInput = tmp(6109).NativeTextInput;
           const merged1 = Object.assign(tmp15);
           const tmp24 = _false(NativeTextInput, obj8);
           cResult[13] = innerRef;
@@ -227,13 +227,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const obj5 = { currentLength: state.value.length, maxLength, message: intl.string(intl4.t.c2Jqed) };
   const useCharacterLimitAnnouncement = useCharacterLimitAnnouncement2.useCharacterLimitAnnouncement;
   useCharacterLimitAnnouncement2;
-  intl = tmp(1127).intl;
+  intl = tmp(1126).intl;
   const characterLimitAnnouncement = useCharacterLimitAnnouncement(obj5);
   const obj6 = { isFocused, children: items1 };
-  const InputFieldContainer = tmp(6031).InputFieldContainer;
+  const InputFieldContainer = tmp(6105).InputFieldContainer;
   const merged = Object.assign(disabled);
   const obj7 = { ref: innerRef, style: items, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-  const NativeTextInput = tmp(6035).NativeTextInput;
+  const NativeTextInput = tmp(6109).NativeTextInput;
   const propsForNativeTextInput = _objectWithoutProperties.propsForNativeTextInput;
   _objectWithoutProperties;
   const tmpResult6 = native;
@@ -248,7 +248,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     let str3 = "text-muted";
     let str = "text-muted";
     const obj8 = { style: tmp4.maxLengthIndicator, children: _false(Text, obj9) };
-    Text = tmp(4833).Text;
+    Text = tmp(4886).Text;
     const tmp18 = View;
     if (null != maxLength) {
       str = str3;
@@ -265,13 +265,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     obj9 = { variant: "text-xs/semibold", color: str, accessibilityLabel: formatToPlainStringResult, children: diff };
     if (null != nodeText) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const obj10 = { label: nodeText, remainingCharacters: diff };
-      formatToPlainStringResult = intl3.formatToPlainString(tmp(1127).t["8Q+k1s"], obj10);
+      formatToPlainStringResult = intl3.formatToPlainString(tmp(1126).t["8Q+k1s"], obj10);
     } else {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const obj11 = { remainingCharacters: diff };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t.fR1cof, obj11);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.fR1cof, obj11);
     }
     tmp13Result = tmp13(tmp18, obj8);
   }
@@ -280,4 +280,5 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
 }));
 let result = size.fileFinishedImporting("design/components/TextField/native/TextAreaField.native.tsx");
 
+export const TEXT_AREA_HEIGHT = 128;
 export const TextAreaField = forwardRefResult;

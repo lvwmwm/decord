@@ -1,24 +1,24 @@
-// Module ID: 11437
-// Function ID: 11438
+// Module ID: 11693
+// Function ID: 11694
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1490, 1086, 21, 7343, 4837, 588, 558, 576, 6584, 6604, 4705, 1617, 6421, 5017, 11438, 11495, 11521, 11565, 1492, 10749, 2]
+// Dependencies: [109, 19, 1489, 1085, 21, 7556, 4890, 587, 558, 576, 6657, 6681, 4747, 1616, 6496, 5070, 11694, 11751, 11777, 11821, 1491, 10994, 2]
 
-// Module 11437 (AppLauncherNavigator)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6584 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11438 */;
-import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 11495 */;
-import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 11521 */;
-import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 11565 */;
+// Module 11693 (AppLauncherNavigator)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11694 */;
+import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 11751 */;
+import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 11777 */;
+import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 11821 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7343 */;
-import createStyles from "createStyles" /* 4837 */;
+import NativeStackView from "NativeStackView" /* 7556 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,12 +63,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const tmp5 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp5(AnalyticsLocationDefault.APP_LAUNCHER).analyticsLocations;
   const tmp6 = closure_12();
-  const useKeyboardContextForType = entrypoint(4705).useKeyboardContextForType;
-  entrypoint(4705);
+  const useKeyboardContextForType = entrypoint(4747).useKeyboardContextForType;
+  entrypoint(4747);
   if (overrideParams == null) {
-    overrideParams = useKeyboardContextForType(entrypoint(1617).KeyboardTypes.APP_LAUNCHER);
+    overrideParams = useKeyboardContextForType(entrypoint(1616).KeyboardTypes.APP_LAUNCHER);
   }
-  const tmpResult = tmp(6421);
+  const tmpResult = tmp(6496);
   const accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   if (cResult[0] !== overrideParams) {
     const initialRouteName = overrideParams.initialRouteName;
@@ -238,12 +238,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.APP_LAUNCHER).analyticsLocations;
   const tmp4 = closure_12();
-  const useKeyboardContextForType = entrypoint(4705).useKeyboardContextForType;
-  entrypoint(4705);
+  const useKeyboardContextForType = entrypoint(4747).useKeyboardContextForType;
+  entrypoint(4747);
   if (overrideParams == null) {
-    overrideParams = useKeyboardContextForType(entrypoint(1617).KeyboardTypes.APP_LAUNCHER);
+    overrideParams = useKeyboardContextForType(entrypoint(1616).KeyboardTypes.APP_LAUNCHER);
   }
-  const tmp5Result = entrypoint(6421);
+  const tmp5Result = entrypoint(6496);
   const accessibilityNativeStackOptions = tmp5Result.useAccessibilityNativeStackOptions();
   const initialRouteName = overrideParams.initialRouteName;
   let obj14 = _objectWithoutProperties(overrideParams, closure_4);
@@ -253,13 +253,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const obj2 = { location: "app_launcher", source: entrypoint };
     obj.trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_TOP_OF_FUNNEL, obj2);
   }, items);
-  const NavigationIndependentTree = tmp5(1492).NavigationIndependentTree;
-  const NavigationContainer = tmp5(1492).NavigationContainer;
+  const NavigationIndependentTree = tmp5(1491).NavigationIndependentTree;
+  const NavigationContainer = tmp5(1491).NavigationContainer;
   let obj = { value: analyticsLocations, children: tmp10(Navigator, obj2) };
   obj2 = { initialRouteName, screenOptions: obj3, children: items2 };
   obj3 = { contentStyle: items1, headerShown: false, fullScreenGestureEnabled: true };
   items1 = [tmp4.navigator, contentStyle];
-  const AnalyticsLocationProvider = tmp5(6584).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp5(6657).AnalyticsLocationProvider;
   Navigator = closure_11.Navigator;
   const merged = Object.assign(accessibilityNativeStackOptions);
   const Screen = closure_11.Screen;
@@ -315,7 +315,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp21 = obj17;
   }
   const obj19 = { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams: tmp21, keyboardCloseReasonRef, onActivityItemSelected, width }, children: tmp9Result };
-  return closure_9(entrypoint(10749).AppLauncherContext.Provider, obj19);
+  return closure_9(entrypoint(10994).AppLauncherContext.Provider, obj19);
 }));
 const result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherNavigator.tsx");
 

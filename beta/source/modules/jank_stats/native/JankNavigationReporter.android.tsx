@@ -1,20 +1,20 @@
-// Module ID: 17179
-// Function ID: 17180
+// Module ID: 17539
+// Function ID: 17540
 // Name: JankNavigationReporter
-// Dependencies: [4695, 15643, 15639, 15644, 4697, 2]
+// Dependencies: [4737, 15938, 15934, 15939, 4739, 2]
 
-// Module 17179 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import getJankScreenName from "getJankScreenName" /* 15639 */;
-import react_nativeDefault from "react-native" /* 15643 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 15644 */;
+// Module 17539 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import getJankScreenName from "getJankScreenName" /* 15934 */;
+import react_nativeDefault from "react-native" /* 15938 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 15939 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "r" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "a" });
   }
   attach() {
     const self = this;
@@ -92,7 +92,7 @@ class JankNavigationReporter {
       let isChatLockedOpen = name === getJankScreenName.CHAT_PANEL_ROUTE;
       const tmp4 = require;
       if (isChatLockedOpen) {
-        const tmp4Result = tmp4(4697);
+        const tmp4Result = tmp4(4739);
         isChatLockedOpen = tmp4Result.getChatLayout().isChatLockedOpen;
       }
       tmp2 = isChatLockedOpen;
@@ -104,4 +104,4 @@ const prototype = JankNavigationReporter.prototype;
 const prototype2 = JankNavigationReporter.prototype;
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "r" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "a" });

@@ -1,17 +1,17 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 13910
+// Function ID: 13911
 // Name: RadioGroup
-// Dependencies: [19, 17, 1097, 21, 4837, 588, 558, 576, 4552, 6560, 13640, 2]
+// Dependencies: [19, 17, 1096, 21, 4890, 587, 558, 576, 4594, 6633, 13911, 2]
 
-// Module 13639 (RadioGroup)
+// Module 13910 (RadioGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
-import FormRowDefault from "FormRow" /* 6560 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
+import FormRowDefault from "FormRow" /* 6633 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroRequire;
 let obj3;
 let obj4;
 let tmp;
-const react_native2 = tmp(4552);
+const react_native2 = tmp(4594);
 const View = react_native.View;
 const NOOP = Constants.NOOP;
 let Fragment = Fragment_mod;
@@ -725,7 +725,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       items[0] = style;
       tmp = jsxs;
       Fragment = closure_3.Fragment;
-      tmp3 = f65229;
+      tmp3 = f65843;
       arr2 = closure_1;
       if (arg1 === closure_1.length - 1) {
         obj1 = { marginBottom: 0 };

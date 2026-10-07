@@ -1,17 +1,17 @@
-// Module ID: 15430
-// Function ID: 15431
+// Module ID: 15734
+// Function ID: 15735
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 6966, 21, 4837, 8223, 558, 576, 8226, 15429, 12, 2]
+// Dependencies: [19, 17, 7053, 21, 4890, 8418, 558, 576, 8421, 15733, 12, 2]
 
-// Module 15430 (CollectiblesShopCardsGrid)
+// Module 15734 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8223 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8418 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6966 */;
-import createStyles from "createStyles" /* 4837 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const CollectiblesAnalyticsContext = tmp(8226);
+const CollectiblesAnalyticsContext = tmp(8421);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
 let obj = { rowContainer: obj2 };
@@ -160,7 +160,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
                       class O {
                         constructor(arg0, arg1) {
                           closure_0 = arg1;
-                          obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F143392 */ }) };
+                          obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F145073 */ }) };
                           return closure_1_7(closure_4, obj, arg1);
                         }
                       }
@@ -193,7 +193,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
                     class O {
                       constructor(arg0, arg1) {
                         closure_0 = arg1;
-                        obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F143392 */ }) };
+                        obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F145073 */ }) };
                         return closure_1_7(closure_4, obj, arg1);
                       }
                     }
@@ -215,7 +215,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
         class O {
           constructor(arg0, arg1) {
             closure_0 = arg1;
-            obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F143392 */ }) };
+            obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F145073 */ }) };
             return closure_1_7(closure_4, obj, arg1);
           }
         }
@@ -261,7 +261,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom } = products);
   const rowContainer = closure_8();
-  let obj = products(15429);
+  let obj = products(15733);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;
@@ -277,7 +277,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
     scrollEnabled,
     showsVerticalScrollIndicator: false,
     onScroll,
-    contentContainerStyle: { gap: products(8223).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" },
+    contentContainerStyle: { gap: products(8418).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" },
     children: memo.map((arr, index) => {
       let closure_0 = index;
       let obj = {
@@ -301,7 +301,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
       return cardWidth(muteBundleStaticBackground, obj, index);
     })
   };
-  ({ gap: products(8223).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
+  ({ gap: products(8418).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
   return cardWidth(rowContainer, obj2);
 });
 const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardsGrid.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 9453
-// Function ID: 9454
+// Module ID: 9681
+// Function ID: 9682
 // Name: VideoBackgroundOptions
-// Dependencies: [19, 17, 6408, 21, 4837, 588, 558, 576, 9093, 1127, 5922, 7375, 9454, 2]
+// Dependencies: [19, 17, 6484, 21, 4890, 587, 558, 576, 9318, 1126, 5999, 7588, 9682, 2]
 // Exports: fromVideoBackgroundRadioValue, parseVideoBackgroundRadioValue, toVideoBackgroundRadioValue
 
-// Module 9453 (VideoBackgroundOptions)
+// Module 9681 (VideoBackgroundOptions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6408 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9093 */;
+import nativeDefault from "native" /* 587 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6484 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9318 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -49,9 +49,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { value: none, label: intl.string(require("intl").t.fUdMeO), icon: null };
-    intl = tmp2(1127).intl;
+    intl = tmp2(1126).intl;
     ({ IconComponent: require("DenyIcon").DenyIcon });
-    const TableRowIcon = tmp2(5922).TableRowIcon;
+    const TableRowIcon = tmp2(5999).TableRowIcon;
     cResult[1] = obj2;
     tmp8 = obj2;
   } else {
@@ -59,9 +59,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { value: BLUR_BACKGROUND_OPTION, label: intl2.string(require("intl").t.LhSyL8), icon: null };
-    intl2 = tmp2(1127).intl;
+    intl2 = tmp2(1126).intl;
     ({ IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
-    const TableRowIcon2 = tmp2(5922).TableRowIcon;
+    const TableRowIcon2 = tmp2(5999).TableRowIcon;
     cResult[2] = obj4;
     tmp11 = obj4;
   } else {

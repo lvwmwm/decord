@@ -1,51 +1,94 @@
 // Module ID: 1664
 // Function ID: 1665
-// Dependencies: [41, 42, 90, 91, 1665, 1666, 1655]
-// Exports: createNativeWorkletsModule
+// Dependencies: []
+// Exports: getValueUnpackerCode
 
 // Module 1664
-import _classPrivateFieldKeyDefault from "_classPrivateFieldKey" /* 91 */;
-import ReanimatedError from "ReanimatedError" /* 1655 */;
-import _mod1665 from "module_1665" /* 1665 */;
-import react_native from "react-native" /* 1666 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _classPrivateFieldBase from "_classPrivateFieldBase" /* 90 */;
+let __initData, map;
 
-let closure_5 = _classPrivateFieldKeyDefault("workletsModuleProxy");
-class NativeWorklets {
-  constructor() {
-    _classCallCheck(this, NativeWorklets);
-    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
-    if (undefined === global.__workletsModuleProxy) {
-      const obj = _mod1665;
-      const valueUnpackerCode = obj.getValueUnpackerCode();
-      const WorkletsTurboModule = react_native.WorkletsTurboModule;
-      if (WorkletsTurboModule != null) {
-        WorkletsTurboModule.installTurboModule(valueUnpackerCode);
+function valueUnpacker(__workletHash, arg1, arg2) {
+  let __handleCache;
+  let __workletsCache;
+  let closure_0 = arg2;
+  ({ __workletsCache, __handleCache } = global);
+  if (undefined === __workletsCache) {
+    const tmp = globalThis;
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    map = new Map();
+    global.__workletsCache = map;
+    const _WeakMap = WeakMap;
+    const self3 = this;
+    const self4 = this;
+    const weakMap = new WeakMap();
+    global.__handleCache = weakMap;
+    __handleCache = weakMap;
+    __workletsCache = map;
+  }
+  __workletHash = __workletHash.__workletHash;
+  if (undefined !== __workletHash) {
+    let value = __workletsCache.get(__workletHash);
+    if (undefined === value) {
+      let evalWithSourceMapResult;
+      __initData = __workletHash.__initData;
+      if (global.evalWithSourceMap) {
+        evalWithSourceMapResult = obj.evalWithSourceMap(`(${__initData.code}
+  )`, __initData.location, __initData.sourceMap);
+      } else if (global.evalWithSourceUrl) {
+        const _HermesInternal2 = HermesInternal;
+        const text = `(${__initData.code}`;
+        evalWithSourceMapResult = obj.evalWithSourceUrl(`${`(${__initData.code}`}
+  )`, "worklet_" + __workletHash);
+      } else {
+        const text1 = `${"(" + __initData.code}
+  )`;
+        evalWithSourceMapResult = globalThis.eval === Date.UTC ? eval() : globalThis.eval(`${"(" + __initData.code}
+  )`);
       }
+      const result = __workletsCache.set(__workletHash, evalWithSourceMapResult);
+      value = evalWithSourceMapResult;
     }
-    if (undefined === global.__workletsModuleProxy) {
-      const self = this;
-      const self2 = this;
-      const reanimatedError = new ReanimatedError.ReanimatedError("Native part of Reanimated doesn't seem to be initialized (Worklets).\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#native-part-of-reanimated-doesnt-seem-to-be-initialized for more details.");
-      throw reanimatedError;
+    const bindResult = value.bind(__workletHash);
+    __workletHash._recur = bindResult;
+    return bindResult;
+  } else if (undefined !== __workletHash.__init) {
+    let value2 = __handleCache.get(__workletHash);
+    if (undefined === value2) {
+      const __initResult = __workletHash.__init();
+      const result1 = __handleCache.set(__workletHash, __initResult);
+      value2 = __initResult;
+    }
+    return value2;
+  } else {
+    let str = "RemoteFunction";
+    if ("RemoteFunction" === arg1) {
+      function fun() {
+        let str = "anonymous function";
+        const _Error = Error;
+        if (closure_0) {
+          const _HermesInternal = HermesInternal;
+          str = "function `" + tmp + "`";
+        }
+        const _Error1 = new _Error("[Reanimated] Tried to synchronously call a non-worklet " + str + " on the UI thread.\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#tried-to-synchronously-call-a-non-worklet-function-on-the-ui-thread for more details.");
+        throw _Error1;
+      }
+      fun.__remoteFunction = __workletHash;
+      return fun;
     } else {
-      _classPrivateFieldBase(this, closure_5)[closure_5] = global.__workletsModuleProxy;
+      let _Error = Error;
+      let _HermesInternal = HermesInternal;
+      const self5 = this;
+      const self6 = this;
+      const error = new Error("[Reanimated] Data type in category \"" + arg1 + "\" not recognized by value unpacker: \"" + globalThis._toString(__workletHash) + "\".");
+      throw error;
     }
   }
 }
-const entry = {
-  key: "makeShareableClone",
-  value: function makeShareableClone(arg0, arg1, arg2) {
-    const obj = _classPrivateFieldBase(this, closure_5)[closure_5];
-    return obj.makeShareableClone(arg0, arg1, arg2);
-  }
-};
-const items = [entry];
-let closure_6 = _createClass(NativeWorklets, items);
+valueUnpacker.__closure = {};
+valueUnpacker.__workletHash = 7175751357828;
+valueUnpacker.__initData = { code: "function valueUnpacker_Pnpm_valueUnpackerTs1(objectToUnpack,category,remoteFunctionName){let workletsCache=global.__workletsCache;let handleCache=global.__handleCache;if(workletsCache===undefined){workletsCache=global.__workletsCache=new Map();handleCache=global.__handleCache=new WeakMap();}const workletHash=objectToUnpack.__workletHash;if(workletHash!==undefined){let workletFun=workletsCache.get(workletHash);if(workletFun===undefined){const initData=objectToUnpack.__initData;if(global.evalWithSourceMap){workletFun=global.evalWithSourceMap('('+initData.code+'\\n)',initData.location,initData.sourceMap);}else if(global.evalWithSourceUrl){workletFun=global.evalWithSourceUrl('('+initData.code+'\\n)',\"worklet_\"+workletHash);}else{workletFun=eval('('+initData.code+'\\n)');}workletsCache.set(workletHash,workletFun);}const functionInstance=workletFun.bind(objectToUnpack);objectToUnpack._recur=functionInstance;return functionInstance;}else if(objectToUnpack.__init!==undefined){let value=handleCache.get(objectToUnpack);if(value===undefined){value=objectToUnpack.__init();handleCache.set(objectToUnpack,value);}return value;}else if(category==='RemoteFunction'){const fun=function(){const label=remoteFunctionName?\"function `\"+remoteFunctionName+\"`\":'anonymous function';throw new Error(\"[Reanimated] Tried to synchronously call a non-worklet \"+label+\" on the UI thread.\\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#tried-to-synchronously-call-a-non-worklet-function-on-the-ui-thread for more details.\");};fun.__remoteFunction=objectToUnpack;return fun;}else{throw new Error(\"[Reanimated] Data type in category \\\"\"+category+\"\\\" not recognized by value unpacker: \\\"\"+_toString(objectToUnpack)+\"\\\".\");}}" };
 
-export const createNativeWorkletsModule = function createNativeWorkletsModule() {
-  const tmp = new closure_6();
-  return tmp;
+export const getValueUnpackerCode = function getValueUnpackerCode() {
+  return valueUnpacker.__initData.code;
 };

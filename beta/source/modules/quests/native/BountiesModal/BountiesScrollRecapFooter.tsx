@@ -1,23 +1,23 @@
-// Module ID: 14572
-// Function ID: 14573
+// Module ID: 14856
+// Function ID: 14857
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 4826, 21, 4837, 588, 1370, 558, 576, 6397, 1127, 4833, 8295, 504, 4620, 2]
+// Dependencies: [19, 17, 4879, 21, 4890, 587, 1369, 558, 576, 6469, 1126, 4886, 8491, 504, 4662, 2]
 
-// Module 14572 (BountiesScrollRecapFooter)
+// Module 14856 (BountiesScrollRecapFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 4620 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6397 */;
-import OrbsIcon from "OrbsIcon" /* 8295 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 4662 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6469 */;
+import OrbsIcon from "OrbsIcon" /* 8491 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
   const obj2 = useTypeConsolidationTextTransform;
   const typeConsolidationEyebrow = obj2.useTypeConsolidationEyebrow("BountiesScrollRecapFooter", "text-xs/bold");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.d6Rrn6);
     cResult[0] = stringResult;
     first = stringResult;

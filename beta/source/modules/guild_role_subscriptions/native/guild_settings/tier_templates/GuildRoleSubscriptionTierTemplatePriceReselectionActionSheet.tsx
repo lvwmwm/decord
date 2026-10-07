@@ -1,24 +1,24 @@
-// Module ID: 17618
-// Function ID: 17619
+// Module ID: 17983
+// Function ID: 17984
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1380, 1097, 21, 4837, 588, 558, 576, 4552, 17522, 16215, 5896, 1127, 6656, 14764, 4833, 9215, 1619, 1189, 5283, 4801, 6038, 6572, 2]
+// Dependencies: [32, 19, 17, 1379, 1096, 21, 4890, 587, 558, 576, 4594, 17889, 16518, 5974, 1126, 6736, 15049, 4886, 9442, 1618, 1188, 5595, 4854, 6112, 6645, 2]
 
-// Module 17618 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 17983 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import react_native from "react-native" /* 4552 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import PriceUtils from "PriceUtils" /* 6656 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9215 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 14764 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import react_native from "react-native" /* 4594 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import PriceUtils from "PriceUtils" /* 6736 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15049 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[3] === containerSelected) {
       tmp8 = cResult[4];
     }
-    const tmp9Result = importDefault(selected ? 17522 : 16215);
+    const tmp9Result = importDefault(selected ? 17889 : 16518);
     if (cResult[5] === tmp4.rowStatusIcon) {
       let tmp11;
       let tmp14;
@@ -92,10 +92,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp11 = cResult[7];
       }
       if (cResult[8] !== price) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const format = intl.format;
         const obj3 = { price: tmpResult3.formatPrice(price, CurrencyCodes.USD), interval: tmpResult4.formatPlanInterval(obj4) };
-        const CgmBaG = tmp(1127).t.CgmBaG;
+        const CgmBaG = tmp(1126).t.CgmBaG;
         obj4 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
         tmpResult3 = PriceUtils;
         tmpResult4 = GuildRoleSubscriptionTypeUtils;
@@ -181,15 +181,15 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj2 = { style: items, accessibilityRole, accessibilityState, onPress, children: items1 };
   items[1] = containerSelected;
-  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 17522 : 16215) };
+  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 17889 : 16518) };
   const tmp6Result = FastImageDefault;
   items1 = [React4(tmp6Result, obj3), ];
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: format(CgmBaG, obj5) };
-  const Text = tmp2(4833).Text;
-  const intl = tmp2(1127).intl;
+  const Text = tmp2(4886).Text;
+  const intl = tmp2(1126).intl;
   format = intl.format;
   obj5 = { price: tmp2Result.formatPrice(price, CurrencyCodes.USD), interval: tmp2Result2.formatPlanInterval(obj6) };
-  CgmBaG = tmp2(1127).t.CgmBaG;
+  CgmBaG = tmp2(1126).t.CgmBaG;
   obj6 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
   tmp2Result = PriceUtils;
   tmp2Result2 = GuildRoleSubscriptionTypeUtils;

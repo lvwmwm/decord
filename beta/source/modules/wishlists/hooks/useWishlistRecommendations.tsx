@@ -1,24 +1,24 @@
-// Module ID: 10295
-// Function ID: 10296
+// Module ID: 10526
+// Function ID: 10527
 // Name: useWishlistRecommendations
-// Dependencies: [32, 19, 7039, 502, 10296, 6649, 1103, 558, 576, 504, 8235, 1376, 8242, 12, 8243, 7636, 10297, 10298, 2]
+// Dependencies: [32, 19, 7111, 502, 10527, 6728, 1102, 558, 576, 504, 8430, 1375, 8438, 8437, 12, 8439, 7858, 10528, 10529, 2]
 
-// Module 10295 (useWishlistRecommendations)
+// Module 10526 (useWishlistRecommendations)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import WishlistRecommendationRecord2 from "WishlistRecommendationRecord" /* 6649 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7636 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8242 */;
-import useGetOrFetchStorefrontPrices from "useGetOrFetchStorefrontPrices" /* 8243 */;
-import useWishlistApplicationIds from "useWishlistApplicationIds" /* 10297 */;
-import useWishlistSkuFilter from "useWishlistSkuFilter" /* 10298 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import WishlistRecommendationRecord2 from "WishlistRecommendationRecord" /* 6728 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8438 */;
+import useGetOrFetchStorefrontPrices from "useGetOrFetchStorefrontPrices" /* 8439 */;
+import useWishlistApplicationIds from "useWishlistApplicationIds" /* 10528 */;
+import useWishlistSkuFilter from "useWishlistSkuFilter" /* 10529 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7039 */;
+import UserProfileStore from "UserProfileStore" /* 7111 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 10296 */;
+import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 10527 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let _require, dependencyMap, firstWishlistId;
 
 let obj2;
 let tmp2;
-const useWishlistHooks = tmp2(8235);
+const WishlistFetchSource = tmp2(8437);
 const constants = WishlistRecommendationRecord2.WishlistRecommendationReason;
 let closure_9 = 30 * DurationsDefault.Millis.MINUTE;
 let combinedSkusToUserAndReason = { state: "success", data: new WishlistRecommendationRecord(obj2), fetchedAt: 0 };
@@ -69,7 +69,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[3] === userIdsAndWishlistIds) {
       tmp8 = cResult[4];
     }
-    const tmpResult2 = tmp(8235);
+    const tmpResult2 = tmp(8430);
     const fetchWishlists = tmpResult2.useFetchWishlists(tmp8);
     ({ wishlists, isFetching, errors } = fetchWishlists);
     if (cResult[5] === applicationIdsFilter) {
@@ -225,7 +225,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const _Object = Object;
-      const found = wishlists.filter(applicationIdsFilter(1376).isNotNullish);
+      const found = wishlists.filter(applicationIdsFilter(1375).isNotNullish);
       const flatMapResult = found.flatMap(tmp30);
       const found1 = flatMapResult.filter(tmp32);
       const fromEntriesResult = fromEntries(found1.map(tmp34));
@@ -234,7 +234,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[10] = fromEntriesResult;
       tmp29 = fromEntriesResult;
     }
-    const found2 = wishlists.filter(tmp(1376).isNotNullish);
+    const found2 = wishlists.filter(tmp(1375).isNotNullish);
     const obj3 = {};
     const iter = found2[Symbol.iterator]();
     const nextResult = iter.next();
@@ -559,7 +559,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(43);
   ({ userIdsAndWishlistIds, numItems, applicationIds, source, filterByApplicationIds } = arg0);
   if (undefined === source) {
-    source = useWishlistHooks.WishlistFetchSource.USER_PROFILE;
+    source = WishlistFetchSource.WishlistFetchSource.USER_PROFILE;
   }
   const tmp5 = undefined !== filterByApplicationIds && filterByApplicationIds;
   if (cResult[0] !== userIdsAndWishlistIds) {
@@ -858,7 +858,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const numItems = userIdsAndWishlistIds.numItems;
   if (source === undefined) {
     const tmp = userIdsAndWishlistIds;
-    source = userIdsAndWishlistIds(sortedWishlistSkus[10]).WishlistFetchSource.USER_PROFILE;
+    source = userIdsAndWishlistIds(sortedWishlistSkus[13]).WishlistFetchSource.USER_PROFILE;
   }
   let flag = userIdsAndWishlistIds.filterByApplicationIds;
   if (flag === undefined) {
@@ -955,7 +955,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = _mod12;
     return obj.uniq(items);
   }, items4);
-  const obj4 = userIdsAndWishlistIds(sortedWishlistSkus[14]);
+  const obj4 = userIdsAndWishlistIds(sortedWishlistSkus[15]);
   const getOrFetchStorefrontPricesForSkuIds = obj4.useGetOrFetchStorefrontPricesForSkuIds({ skuIds: memo3 });
   return { recommendations, wishlistAndRecommendations, skusToUserAndReason, status };
 });
@@ -1068,7 +1068,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   if (cResult[0] !== arr) {
     const fn = function o() {
       const item = arr.forEach((item) => {
-        stateFromStoresArray(closure_1_2[15])(item);
+        stateFromStoresArray(closure_1_2[16])(item);
       });
     };
     const items = [arr];
@@ -1135,7 +1135,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const items = [arg0];
   const effect = react.useEffect(() => {
     const item = closure_0.forEach((item) => {
-      stateFromStoresArray(closure_1_2[15])(item);
+      stateFromStoresArray(closure_1_2[16])(item);
     });
   }, items);
   const items1 = [UserProfileStore];
@@ -1166,7 +1166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(16);
   ({ userId, numItems, source } = arg0);
   if (undefined === source) {
-    source = tmp(8235).WishlistFetchSource.USER_PROFILE;
+    source = tmp(8437).WishlistFetchSource.USER_PROFILE;
   }
   ({ userIdsAndWishlistIds, defaultWishlistId } = closure_14(userId));
   closure_14(userId);
@@ -1243,7 +1243,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let wishlistAndRecommendations;
   ({ userId, numItems, source } = arg0);
   if (source === undefined) {
-    source = useWishlistHooks.WishlistFetchSource.USER_PROFILE;
+    source = WishlistFetchSource.WishlistFetchSource.USER_PROFILE;
   }
   ({ userIdsAndWishlistIds, defaultWishlistId } = closure_14(userId));
   closure_14(userId);
@@ -1269,7 +1269,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(14);
   ({ applicationIds, userIds, numItems, source } = arg0);
   if (undefined === source) {
-    source = useWishlistHooks.WishlistFetchSource.USER_PROFILE;
+    source = WishlistFetchSource.WishlistFetchSource.USER_PROFILE;
   }
   if (cResult[0] !== userIds) {
     let substr;
@@ -1337,7 +1337,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let USER_PROFILE = userIds.source;
   const applicationIds = userIds.applicationIds;
   if (USER_PROFILE === undefined) {
-    USER_PROFILE = useWishlistHooks.WishlistFetchSource.USER_PROFILE;
+    USER_PROFILE = WishlistFetchSource.WishlistFetchSource.USER_PROFILE;
   }
   const items = [userIds];
   const obj = {
@@ -1373,7 +1373,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(12);
   ({ userId, numItems, source } = arg0);
   if (undefined === source) {
-    source = tmp(8235).WishlistFetchSource.USER_PROFILE;
+    source = tmp(8437).WishlistFetchSource.USER_PROFILE;
   }
   const userIdsAndWishlistIds = closure_14(userId).userIdsAndWishlistIds;
   const tmpResult = useWishlistApplicationIds;
@@ -1432,7 +1432,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ userId, numItems } = source);
   let USER_PROFILE = source.source;
   if (USER_PROFILE === undefined) {
-    USER_PROFILE = useWishlistHooks.WishlistFetchSource.USER_PROFILE;
+    USER_PROFILE = WishlistFetchSource.WishlistFetchSource.USER_PROFILE;
   }
   const userIdsAndWishlistIds = closure_14(userId).userIdsAndWishlistIds;
   const obj = useWishlistApplicationIds;

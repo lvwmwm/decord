@@ -1,48 +1,34 @@
-// Module ID: 5180
-// Function ID: 5181
+// Module ID: 5409
+// Function ID: 5410
 // Name: MonitoringAgent
-// Dependencies: [1086, 1370, 5181, 5182, 17, 5183, 5184, 1283, 2]
+// Dependencies: [1085, 1369, 5410, 5411, 17, 5412, 5413, 1282, 2]
 
-// Module 5180 (MonitoringAgent)
-import Constants from "Constants" /* 1086 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import react_native from "react-native" /* 5183 */;
-import MonitoringAgentUtils from "MonitoringAgentUtils" /* 5184 */;
-import react_native2 from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+// Module 5409 (MonitoringAgent)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import react_native2 from "react-native" /* 5412 */;
+import MonitoringAgentUtils from "MonitoringAgentUtils" /* 5413 */;
 import size from "module_2" /* 2 */;
 
 let obj;
 
-let MetricMonitor;
-let NativeEventEmitter;
-let NativeModules;
 const Endpoints = Constants.Endpoints;
 const set = new Set(["darwin", "linux", "win32", "ios", "android"]);
 const MetricType = { COUNT: "count", DISTRIBUTION: "distribution" };
 class MonitoringAgent {
   constructor() {
-    let MetricMonitor;
-    let NativeEventEmitter;
-    let NativeModules;
-    const obj2 = Object.create(new.target.prototype);
-    obj2._metrics = [];
-    obj2._intervalId = setInterval(() => {
-      obj2._flush();
+    obj = Object.create(new.target.prototype);
+    obj._metrics = [];
+    obj._intervalId = setInterval(() => {
+      obj._flush();
     }, 120000);
-    ({ NativeModules, NativeEventEmitter } = react_native2);
-    react_native2;
-    obj = PlatformUtils;
-    if (obj.isAndroid()) {
-      MetricMonitor = react_native.default;
-    } else {
-      MetricMonitor = NativeModules.MetricMonitor;
-    }
-    const nativeEventEmitter = new NativeEventEmitter(MetricMonitor);
+    const nativeEventEmitter = new react_native.NativeEventEmitter(react_native2.default);
     nativeEventEmitter.addListener("logMetric", (arg0) => {
-      obj2.increment(arg0, false);
+      obj.increment(arg0, false);
     });
-    return obj2;
+    return obj;
   }
   _getMetricWithDefaults(name, COUNT) {
     let obj2;
@@ -71,10 +57,10 @@ class MonitoringAgent {
       const _HermesInternal = HermesInternal;
       tags1.push("platform:" + str);
     }
-    const CurrentReleaseChannel = tmp(5181).CurrentReleaseChannel;
+    const CurrentReleaseChannel = tmp(5410).CurrentReleaseChannel;
     let tmp9 = null;
     if (null != CurrentReleaseChannel) {
-      const ALL = tmp(5182).ReleaseChannelsSets.ALL;
+      const ALL = tmp(5411).ReleaseChannelsSets.ALL;
       tmp9 = null;
       if (ALL.has(CurrentReleaseChannel)) {
         tmp9 = CurrentReleaseChannel;
@@ -127,7 +113,7 @@ class MonitoringAgent {
       HermesBuiltin.arraySpread(items, self._metrics, 0);
       const HTTP = HTTPUtils.HTTP;
       const request = { url: Endpoints.METRICS_V2, body, retries: 1, rejectWithError: true };
-      body = { metrics: items, client_info: { built_at: "1790921994205", build_number: "6558" } };
+      body = { metrics: items, client_info: { built_at: "1791267556010", build_number: "34910700000000" } };
       const postResult = HTTP.post(request);
       postResult.catch(() => {
         if (self._metrics.length + items.length < 100) {
@@ -144,17 +130,11 @@ const prototype = MonitoringAgent.prototype;
 let obj2 = Object.create(MonitoringAgent.prototype);
 obj2._metrics = [];
 obj2._intervalId = setInterval(() => {
-  obj2._flush();
+  obj._flush();
 }, 120000);
-({ NativeModules, NativeEventEmitter } = react_native2);
-if (PlatformUtils.isAndroid()) {
-  MetricMonitor = react_native.default;
-} else {
-  MetricMonitor = NativeModules.MetricMonitor;
-}
-let nativeEventEmitter = new NativeEventEmitter(MetricMonitor);
+let nativeEventEmitter = new react_native.NativeEventEmitter(react_native2.default);
 nativeEventEmitter.addListener("logMetric", (arg0) => {
-  obj2.increment(arg0, false);
+  obj.increment(arg0, false);
 });
 const result = size.fileFinishedImporting("modules/monitoring/MonitoringAgent.tsx");
 

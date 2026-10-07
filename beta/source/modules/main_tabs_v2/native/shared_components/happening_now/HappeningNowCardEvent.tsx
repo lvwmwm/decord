@@ -1,23 +1,23 @@
-// Module ID: 15717
-// Function ID: 15718
+// Module ID: 16012
+// Function ID: 16013
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2115, 1378, 14829, 1086, 21, 4837, 588, 1189, 8273, 558, 576, 504, 6730, 8941, 9048, 1253, 9057, 1403, 9047, 5404, 4833, 1888, 14830, 1127, 2]
+// Dependencies: [19, 17, 2116, 1377, 15114, 1085, 21, 4890, 587, 1188, 8469, 558, 576, 504, 6814, 9163, 9270, 1252, 9279, 1402, 9269, 5873, 4886, 1888, 15115, 1126, 2]
 
-// Module 15717 (HappeningNowCardEvent)
+// Module 16012 (HappeningNowCardEvent)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import native from "native" /* 1189 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ClipView from "ClipView" /* 8273 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9057 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import native from "native" /* 1188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ClipView from "ClipView" /* 8469 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9279 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import UserStore from "UserStore" /* 1378 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 14829 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import UserStore from "UserStore" /* 1377 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

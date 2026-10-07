@@ -1,24 +1,24 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16306
+// Function ID: 16307
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1086, 2048, 21, 4837, 558, 576, 16004, 1198, 1127, 8101, 2027, 2035, 6801, 2]
+// Dependencies: [19, 17, 1085, 2048, 21, 4890, 558, 576, 16307, 1197, 1126, 8294, 2028, 2036, 6885, 2]
 
-// Module 16003 (usePrivateProfileCoachmarkProps)
+// Module 16306 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import openUserSettings from "openUserSettings" /* 6801 */;
+import openUserSettings from "openUserSettings" /* 6885 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PrivateProfileAbstractUI = tmp(16004);
+const PrivateProfileAbstractUI = tmp(16307);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -55,12 +55,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   const cResult = obj.c(15);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visibleContent = markAsDismissed.visibleContent;
-  let obj2 = markAsDismissed(8101);
+  let obj2 = markAsDismissed(8294);
   let userIsTeen = obj2.useUserIsTeen();
-  const ProfileVisibility = markAsDismissed(2027).ProfileVisibility;
+  const ProfileVisibility = markAsDismissed(2028).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
   if (userIsTeen) {
-    userIsTeen = setting !== tmp(1198).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+    userIsTeen = setting !== tmp(1197).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
   }
   if (cResult[0] === userIsTeen) {
     let tmp6;
@@ -73,14 +73,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(markAsDismissed(1127).t.Ve4nS1);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(markAsDismissed(1126).t.Ve4nS1);
       cResult[3] = stringResult;
       tmp10 = stringResult;
     } else {
       tmp10 = cResult[3];
     }
-    const PRIVATE_PROFILE_COACHMARK = tmp(2035).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
+    const PRIVATE_PROFILE_COACHMARK = tmp(2036).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
     if (cResult[4] !== markAsDismissed) {
       const fn = function f() {
         return markAsDismissed(ContentDismissActionType.USER_DISMISS);
@@ -96,8 +96,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
       const fn2 = function p() {
         return <closure_1_8 />;
       };
-      const intl2 = tmp(1127).intl;
-      const stringResult1 = intl2.string(markAsDismissed(1127).t.eOoTMX);
+      const intl2 = tmp(1126).intl;
+      const stringResult1 = intl2.string(markAsDismissed(1126).t.eOoTMX);
       cResult[6] = fn2;
       cResult[7] = stringResult1;
       tmp14 = stringResult1;
@@ -163,7 +163,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
         obj.openUserSettings(obj2);
       }
     }
-    stringResult2 = obj3.string(tmp(1127).t.bnNxW1);
+    stringResult2 = obj3.string(tmp(1126).t.bnNxW1);
   }
   cResult[0] = userIsTeen;
   cResult[1] = setting;

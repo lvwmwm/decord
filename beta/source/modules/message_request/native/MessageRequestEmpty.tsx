@@ -1,13 +1,13 @@
-// Module ID: 16711
-// Function ID: 16712
+// Module ID: 17066
+// Function ID: 17067
 // Name: MessageRequestEmpty
-// Dependencies: [19, 21, 558, 576, 1189, 16712, 2]
+// Dependencies: [19, 21, 558, 576, 1188, 17067, 2]
 
-// Module 16711 (MessageRequestEmpty)
+// Module 17066 (MessageRequestEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1189 */;
-import Pending from "Pending" /* 16712 */;
+import native from "native" /* 1188 */;
+import Pending from "Pending" /* 17067 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((bodyText) => {
   const cResult = obj.c(2);
   bodyText = bodyText.bodyText;
   if (cResult[0] !== bodyText) {
-    const EmptyState = tmp(1189).EmptyState;
+    const EmptyState = tmp(1188).EmptyState;
     const tmp6 = <EmptyState Illustration={Pending.Pending} body={bodyText} />;
     cResult[0] = bodyText;
     cResult[1] = tmp6;

@@ -1,16 +1,16 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 16127
+// Function ID: 16128
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2041, 1086, 2048, 570, 558, 576, 9807, 2035, 6807, 2]
+// Dependencies: [32, 19, 2042, 1085, 2048, 570, 558, 576, 10036, 2036, 6891, 2]
 // Exports: setFavoritesGuildSuggestions
 
-// Module 15833 (FavoritesGuildSuggestionsStore)
+// Module 16127 (FavoritesGuildSuggestionsStore)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2041 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2042 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -136,11 +136,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp9 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp7), 2);
   _require = tmp11;
   const first = tmp9[0];
-  const FAVORITES_GUILD_SUGGESTIONS = tmp(2035).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  const FAVORITES_GUILD_SUGGESTIONS = tmp(2036).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
   if (cResult[3] !== tmp9[1]) {
     class I {
       constructor() {
-        obj = { dismiss() { /* body not rendered: F143898 */ } };
+        obj = { dismiss() { /* body not rendered: F145569 */ } };
         setStateResult = closure_8.setState(obj);
         return;
       }
@@ -154,7 +154,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     class I {
       constructor() {
-        obj = { dismiss() { /* body not rendered: F143898 */ } };
+        obj = { dismiss() { /* body not rendered: F145569 */ } };
         setStateResult = closure_8.setState(obj);
         return;
       }
@@ -166,7 +166,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class O {
       constructor() {
-        return () => { /* body not rendered: F143899 */ };
+        return () => { /* body not rendered: F145570 */ };
       }
     }
     const items1 = [];
@@ -177,7 +177,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     class O {
       constructor() {
-        return () => { /* body not rendered: F143899 */ };
+        return () => { /* body not rendered: F145570 */ };
       }
     }
     tmp16 = cResult[7];
@@ -186,7 +186,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[8] === hasAccess) {
     class O {
       constructor() {
-        return () => { /* body not rendered: F143899 */ };
+        return () => { /* body not rendered: F145570 */ };
       }
     }
     return obj3;
@@ -210,10 +210,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (hasAccess) {
     hasAccess = tmp4;
   }
-  const useSelectedDismissibleContent = tmp(6807).useSelectedDismissibleContent;
+  const useSelectedDismissibleContent = tmp(6891).useSelectedDismissibleContent;
   require("useSelectedDismissibleContent");
   if (hasAccess) {
-    items = [tmp(2035).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
+    items = [tmp(2036).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
     items1 = items;
   } else {
     items1 = [];
@@ -222,7 +222,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp8;
   const first = tmp6[0];
   const items2 = [tmp6[1]];
-  const FAVORITES_GUILD_SUGGESTIONS = tmp(2035).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  const FAVORITES_GUILD_SUGGESTIONS = tmp(2036).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
   const layoutEffect = react.useLayoutEffect(() => {
     let obj = {
       dismiss() {

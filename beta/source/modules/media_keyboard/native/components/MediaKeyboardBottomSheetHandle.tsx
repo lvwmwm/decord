@@ -1,14 +1,14 @@
-// Module ID: 10143
-// Function ID: 10144
+// Module ID: 10372
+// Function ID: 10373
 // Name: MediaKeyboardBottomSheetHandle
-// Dependencies: [19, 21, 558, 576, 7719, 1127, 8367, 2]
+// Dependencies: [19, 21, 558, 576, 7941, 1126, 8567, 2]
 
-// Module 10143 (MediaKeyboardBottomSheetHandle)
+// Module 10372 (MediaKeyboardBottomSheetHandle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 7719 */;
-import native from "native" /* 8367 */;
+import intl2 from "intl" /* 1126 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 7941 */;
+import native from "native" /* 8567 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,9 +36,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   const derivedStateFromSharedValue = tmpResult.useDerivedStateFromSharedValue(animatedIndex, first);
   if (cResult[1] !== derivedStateFromSharedValue) {
     let stringResult;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     if (derivedStateFromSharedValue) {
       stringResult = string(t.iTcuma);
     } else {

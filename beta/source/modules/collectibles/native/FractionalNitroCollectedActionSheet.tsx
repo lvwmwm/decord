@@ -1,31 +1,31 @@
-// Module ID: 12734
-// Function ID: 12735
+// Module ID: 12994
+// Function ID: 12995
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1086, 1380, 21, 4837, 588, 8304, 558, 576, 5896, 12735, 4769, 7011, 4687, 10226, 10227, 4833, 1127, 2114, 4528, 6852, 10770, 5436, 5282, 4801, 6576, 6572, 2]
+// Dependencies: [19, 17, 1085, 1379, 21, 4890, 587, 8500, 558, 576, 5974, 12995, 4791, 7097, 4729, 10455, 10456, 4886, 1126, 2115, 4565, 6937, 11015, 5909, 5594, 4854, 6649, 6645, 2]
 
-// Module 12734 (FractionalNitroCollectedActionSheet)
+// Module 12994 (FractionalNitroCollectedActionSheet)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl7 from "intl" /* 1127 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import shared from "shared" /* 4687 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6576 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7011 */;
-import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 8304 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12735 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl7 from "intl" /* 1126 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import shared from "shared" /* 4729 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6649 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7097 */;
+import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 8500 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12995 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   }
   if (cResult[1] !== skuId) {
     size = { skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET };
-    const FractionalNitroCoinIllustration = tmp(8304).FractionalNitroCoinIllustration;
+    const FractionalNitroCoinIllustration = tmp(8500).FractionalNitroCoinIllustration;
     const tmp12 = React4(FractionalNitroCoinIllustration, size);
     cResult[1] = skuId;
     cResult[2] = tmp12;
@@ -163,9 +163,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp13;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(10226);
+      tmp5Result = tmp5(10455);
     } else {
-      tmp5Result = tmp5(10227);
+      tmp5Result = tmp5(10456);
     }
     if (cResult[0] !== tmp5Result) {
       const obj3 = { source: tmp5Result };
@@ -181,8 +181,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(intl7.t.g5W1g8) };
-      const Text = tmp(4833).Text;
-      intl = tmp(1127).intl;
+      const Text = tmp(4886).Text;
+      intl = tmp(1126).intl;
       const tmp11 = React4(Text, obj4);
       cResult[2] = tmp11;
       tmp9 = tmp11;
@@ -221,7 +221,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (cResult[16] !== tmp4.questionIcon) {
               const obj5 = { style: tmp4.questionIcon, color: nativeDefault.colors.WHITE };
-              const CircleQuestionIcon = tmp(10770).CircleQuestionIcon;
+              const CircleQuestionIcon = tmp(11015).CircleQuestionIcon;
               const tmp33 = React4(CircleQuestionIcon, obj5);
               cResult[16] = tmp4.questionIcon;
               cResult[17] = tmp33;
@@ -301,10 +301,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   items1 = [tmp9, tmp16, ];
                   const obj10 = { size: "lg", text: null, onPress: null };
                   const obj9 = { style: tmp4.buttonContainer, children: items2 };
-                  const Button = tmp(5282).Button;
-                  const intl5 = tmp(1127).intl;
+                  const Button = tmp(5594).Button;
+                  const intl5 = tmp(1126).intl;
                   const string = intl5.string;
-                  const t = tmp(1127).t;
+                  const t = tmp(1126).t;
                   if (consumed) {
                     obj10.text = string(t.ERKK6v);
                     obj10.onPress = onPressExplorePerks;
@@ -324,8 +324,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                       return obj.hideActionSheet();
                                     }
                   };
-                  const Button2 = tmp(5282).Button;
-                  intl6 = tmp(1127).intl;
+                  const Button2 = tmp(5594).Button;
+                  intl6 = tmp(1126).intl;
                   items2[1] = React4(Button2, obj11);
                   items1[2] = authStore(hasOwnProperty, obj9);
                   tmp42Result = tmp42(tmp43, obj8);
@@ -358,7 +358,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (consumed) {
             const obj14 = { premiumType: metroImportAll.TIER_2 };
-            tmp27Result = tmp27(tmp5(6852), obj14);
+            tmp27Result = tmp27(tmp5(6937), obj14);
           } else {
             const obj15 = { skuId };
             tmp27Result = tmp27(closure_13, obj15);
@@ -378,22 +378,22 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num4 == null) {
     num4 = 3;
   }
-  const intl2 = tmp(1127).intl;
+  const intl2 = tmp(1126).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(intl7.t.Cz1G97, { days: num4 });
   if (consumed) {
     const obj16 = { variant: "text-md/normal", color: "text-default", style: tmp4.description, children: intl4.format(intl7.t["93PGOI"], obj17) };
-    const Text2 = tmp(4833).Text;
-    intl4 = tmp(1127).intl;
+    const Text2 = tmp(4886).Text;
+    intl4 = tmp(1126).intl;
     obj17 = { duration: formatToPlainStringResult, expirationDate: expiresAt };
     tmp20 = React4(Text2, obj16);
   } else {
     let stringResult;
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     if (isFractionalPremiumActive) {
-      stringResult = intl3.string(tmp(1127).t.fBmhE9);
+      stringResult = intl3.string(tmp(1126).t.fBmhE9);
     } else {
       const obj18 = { duration: formatToPlainStringResult };
-      stringResult = intl3.format(tmp(1127).t["8fyBPf"], obj18);
+      stringResult = intl3.format(tmp(1126).t["8fyBPf"], obj18);
     }
     if (cResult[9] === tmp4.description) {
       if (cResult[10] === stringResult) {
@@ -434,10 +434,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp = closure_12();
   dependencyMap = tmp;
   const tmp2 = consumed;
-  const tmp4 = consumed(4769)();
+  const tmp4 = consumed(4791)();
   react = tmp4;
   let tmp5 = skuId;
-  let obj = skuId(7011);
+  let obj = skuId(7097);
   const fetchFractionalPremiumInfo = obj.useFetchFractionalPremiumInfo();
   const isFractionalPremiumActive = fetchFractionalPremiumInfo.isFractionalPremiumActive;
   const expiresAt = fetchFractionalPremiumInfo.expiresAt;
@@ -452,9 +452,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmp11 = FastImageDefault;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_3)) {
-        tmp9Result = tmp9(10226);
+        tmp9Result = tmp9(10455);
       } else {
-        tmp9Result = tmp9(10227);
+        tmp9Result = tmp9(10456);
       }
       const obj3 = { source: tmp9Result };
       tmpResult = tmp(tmp11, obj3);
@@ -481,18 +481,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const Text = Text_Text.Text;
     const tmp5 = React4;
     if (consumed) {
-      const intl3 = tmp2(1127).intl;
+      const intl3 = tmp2(1126).intl;
       const obj2 = { duration: formatToPlainStringResult, expirationDate: expiresAt };
       obj.children = intl3.format(intl7.t["93PGOI"], obj2);
       tmp8 = obj;
     } else {
       let stringResult;
-      const intl2 = tmp2(1127).intl;
+      const intl2 = tmp2(1126).intl;
       if (isFractionalPremiumActive) {
-        stringResult = intl2.string(tmp2(1127).t.fBmhE9);
+        stringResult = intl2.string(tmp2(1126).t.fBmhE9);
       } else {
         const obj3 = { duration: formatToPlainStringResult };
-        stringResult = intl2.format(tmp2(1127).t["8fyBPf"], obj3);
+        stringResult = intl2.format(tmp2(1126).t["8fyBPf"], obj3);
       }
       obj.children = stringResult;
       tmp8 = obj;
@@ -505,11 +505,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = consumed(description[20]);
     obj2.openURL(articleURL);
   }, []);
-  BottomSheet = skuId(6572).BottomSheet;
+  BottomSheet = skuId(6645).BottomSheet;
   let tmp11 = closure_11;
   if (consumed) {
     let obj2 = { premiumType: TIER_2.TIER_2 };
-    tmp12Result = tmp12(tmp2(6852), obj2);
+    tmp12Result = tmp12(tmp2(6937), obj2);
     tmp15 = tmp12;
   } else {
     let obj3 = { skuId };
@@ -519,9 +519,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj4 = { children: items2 };
   items2 = [tmp12Result, ];
   const obj5 = { style: tmp.questionIconContainer, onPress: callback, children: tmp15(CircleQuestionIcon, obj6) };
-  const PressableOpacity = tmp5(5436).PressableOpacity;
-  obj6 = { style: tmp.questionIcon, color: tmp2(588).colors.WHITE };
-  CircleQuestionIcon = tmp5(10770).CircleQuestionIcon;
+  const PressableOpacity = tmp5(5909).PressableOpacity;
+  obj6 = { style: tmp.questionIcon, color: tmp2(587).colors.WHITE };
+  CircleQuestionIcon = tmp5(11015).CircleQuestionIcon;
   items2[1] = tmp15(PressableOpacity, obj5);
   const items3 = [tmp10(tmp11, obj4), , ];
   const obj7 = { style: tmp.body, children: tmp10Result };
@@ -533,10 +533,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items4 = [memo, memo1, ];
     const obj10 = { size: "lg", text: null, onPress: null };
     const obj9 = { style: tmp.buttonContainer, children: items5 };
-    const Button = tmp5(5282).Button;
-    let intl = tmp5(1127).intl;
+    const Button = tmp5(5594).Button;
+    let intl = tmp5(1126).intl;
     const string = intl.string;
-    const t = tmp5(1127).t;
+    const t = tmp5(1126).t;
     if (consumed) {
       obj10.text = string(t.ERKK6v);
       obj10.onPress = onPressExplorePerks;
@@ -550,21 +550,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj11 = {
       size: "lg",
       variant: "secondary",
-      text: intl2.string(tmp5(1127).t.TkTvBz),
+      text: intl2.string(tmp5(1126).t.TkTvBz),
       onPress() {
           const obj = consumed(description[25]);
           return obj.hideActionSheet();
         }
     };
-    const Button2 = tmp5(5282).Button;
-    intl2 = tmp5(1127).intl;
+    const Button2 = tmp5(5594).Button;
+    intl2 = tmp5(1126).intl;
     items5[1] = tmp15(Button2, obj11);
     items4[2] = closure_10(expiresAt, obj9);
     tmp10Result = tmp10(tmp17, obj8);
   }
   const obj12 = { handleDisabled: true, children: items3 };
   items3[1] = tmp15(expiresAt, obj7);
-  items3[2] = tmp15(tmp5(6576).ActionSheetHeaderBar, { variant: "floating" });
+  items3[2] = tmp15(tmp5(6649).ActionSheetHeaderBar, { variant: "floating" });
   return closure_10(BottomSheet, obj12);
 });
 size = size_mod;

@@ -1,17 +1,17 @@
-// Module ID: 12464
-// Function ID: 12465
+// Module ID: 12711
+// Function ID: 12712
 // Name: InAppReportsRemediationsElement
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 5997, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 6074, 2]
 
-// Module 12464 (InAppReportsRemediationsElement)
+// Module 12711 (InAppReportsRemediationsElement)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import TableRowGroup2 from "TableRowGroup" /* 5997 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import TableRowGroup2 from "TableRowGroup" /* 6074 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const tmp4 = closure_4();
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t["k+QA9N"]);
     cResult[0] = stringResult;
     first = stringResult;

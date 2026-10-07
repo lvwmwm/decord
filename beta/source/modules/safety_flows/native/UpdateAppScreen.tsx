@@ -1,18 +1,18 @@
-// Module ID: 17706
-// Function ID: 17707
+// Module ID: 18071
+// Function ID: 18072
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4837, 588, 558, 576, 4833, 1127, 2784, 5282, 2]
+// Dependencies: [17, 21, 4890, 587, 558, 576, 4886, 1126, 2787, 5594, 2]
 
-// Module 17706 (UpdateAppScreen)
+// Module 18071 (UpdateAppScreen)
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import _modDef2784 from "module_2784" /* 2784 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import _modDef2787 from "module_2787" /* 2787 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,9 +56,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2784.yxqMCD) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2787.yxqMCD) };
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp9 = hasOwnProperty(Text, obj2);
     cResult[1] = tmp9;
     tmp6 = tmp9;
@@ -66,9 +66,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2784.VBZJJg) };
-    const Text2 = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2787.VBZJJg) };
+    const Text2 = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     const tmp13 = hasOwnProperty(Text2, obj3);
     cResult[2] = tmp13;
     tmp10 = tmp13;
@@ -76,9 +76,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { onPress: first, text: intl3.string(_modDef2784.o4D6fm), variant: "primary", size: "md" };
-    const Button = tmp(5282).Button;
-    intl3 = tmp(1127).intl;
+    const obj4 = { onPress: first, text: intl3.string(_modDef2787.o4D6fm), variant: "primary", size: "md" };
+    const Button = tmp(5594).Button;
+    intl3 = tmp(1126).intl;
     const tmp17 = hasOwnProperty(Button, obj4);
     cResult[3] = tmp17;
     tmp14 = tmp17;
@@ -117,11 +117,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj5;
   const tmp = closure_7();
   const obj = { style: tmp.container, children: items };
-  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2784.yxqMCD) };
+  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2787.yxqMCD) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [hasOwnProperty(Text, obj2), , ];
-  const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2784.VBZJJg) };
+  const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2787.VBZJJg) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = hasOwnProperty(Text2, obj3);
@@ -131,7 +131,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
       BundleUpdaterManager.reload();
     },
-    text: intl3.string(_modDef2784.o4D6fm),
+    text: intl3.string(_modDef2787.o4D6fm),
     variant: "primary",
     size: "md"
   };

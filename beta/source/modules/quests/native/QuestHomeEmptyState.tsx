@@ -1,24 +1,24 @@
-// Module ID: 14582
-// Function ID: 14583
+// Module ID: 14866
+// Function ID: 14867
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 1127, 4535, 4697, 1370, 4833, 14583, 5292, 6546, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1126, 4580, 4739, 1369, 4886, 14867, 5605, 6619, 2]
 
-// Module 14582 (QuestHomeEmptyState)
+// Module 14866 (QuestHomeEmptyState)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import useToken from "useToken" /* 4535 */;
-import useChatLayoutDefault from "useChatLayout" /* 4697 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14583 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useToken from "useToken" /* 4580 */;
+import useChatLayoutDefault from "useChatLayout" /* 4739 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14867 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== title) {
     let stringResult = title;
     if (undefined === title) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.SdlRnK);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.SdlRnK);
     }
     cResult[0] = title;
     cResult[1] = stringResult;
@@ -63,8 +63,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[2] !== subtitle) {
     let stringResult1 = subtitle;
     if (undefined === subtitle) {
-      const intl2 = tmp(1127).intl;
-      stringResult1 = intl2.string(tmp(1127).t["R7mv+G"]);
+      const intl2 = tmp(1126).intl;
+      stringResult1 = intl2.string(tmp(1126).t["R7mv+G"]);
     }
     cResult[2] = subtitle;
     cResult[3] = stringResult1;

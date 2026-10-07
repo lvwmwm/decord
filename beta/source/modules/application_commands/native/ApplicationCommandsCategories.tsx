@@ -1,20 +1,20 @@
-// Module ID: 11787
-// Function ID: 11788
+// Module ID: 12043
+// Function ID: 12044
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 2111, 11782, 21, 4837, 588, 558, 576, 504, 11605, 5896, 1127, 5436, 4802, 4803, 2]
+// Dependencies: [19, 17, 2112, 12038, 21, 4890, 587, 558, 576, 504, 11860, 5974, 1126, 5909, 4855, 4856, 2]
 
-// Module 11787 (ApplicationCommandsCategories)
+// Module 12043 (ApplicationCommandsCategories)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11605 */;
+import nativeDefault from "native" /* 587 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4856 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11860 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 11782 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12038 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -184,10 +184,10 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((section) 
     return obj.getApplicationCommandsIconSource(section, stateFromStores);
   }, items1);
   null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  const PressableOpacity = tmp2(5436).PressableOpacity;
-  const intl = tmp2(1127).intl;
+  const PressableOpacity = tmp2(5909).PressableOpacity;
+  const intl = tmp2(1126).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = tmp2(1127).t;
+  const t = tmp2(1126).t;
   if (active) {
     const obj4 = { applicationName: section.name };
     formatToPlainStringResult = formatToPlainString(t.yl24Gd, obj4);

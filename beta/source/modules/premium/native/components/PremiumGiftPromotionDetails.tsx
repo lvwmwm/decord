@@ -1,22 +1,22 @@
-// Module ID: 10257
-// Function ID: 10258
+// Module ID: 10488
+// Function ID: 10489
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [109, 32, 19, 17, 4826, 21, 588, 4837, 558, 576, 4833, 504, 8268, 1371, 10258, 5896, 1980, 8231, 2]
+// Dependencies: [109, 32, 19, 17, 4879, 21, 587, 4890, 558, 576, 4886, 504, 8464, 1370, 10489, 5974, 1980, 8426, 2]
 
-// Module 10257 (PremiumGiftPromotionDetails)
+// Module 10488 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import nativeDefault from "native" /* 587 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import SKUPreview from "SKUPreview" /* 8231 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import SKUPreview from "SKUPreview" /* 8426 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,9 +33,9 @@ const View = react_native.View;
 const PX_40 = nativeDefault.space.PX_40;
 let createStyles = createStyles_mod;
 let closure_13 = createStyles.createStyles(() => {
-  const obj = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 }, image: size, textContainer: { flex: 1 } };
-  ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 });
-  size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs };
+  const obj = { container: { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_12 }, image: size, textContainer: { flex: 1, alignSelf: "center" } };
+  ({ flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_12 });
+  size = { width: 64, height: 64, borderRadius: nativeDefault.radii.xs };
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -50,9 +50,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let title;
   let titleColor;
   let titleVariant;
+  let topContent;
   const obj = react2;
-  const cResult = obj.c(19);
-  ({ style, graphic, title, titleVariant, titleColor, subtitle, subtitleVariant, subtitleColor } = arg0);
+  const cResult = obj.c(20);
+  ({ style, graphic, topContent, title, titleVariant, titleColor, subtitle, subtitleVariant, subtitleColor } = arg0);
   const tmp4 = closure_13();
   if (cResult[0] === style) {
     let tmp5;
@@ -85,36 +86,39 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (cResult[11] === tmp4.textContainer) {
               if (cResult[12] === tmp7) {
-                let tmp13;
                 if (cResult[13] === tmp10) {
-                  tmp13 = cResult[14];
-                }
-                if (cResult[15] === graphic) {
-                  if (cResult[16] === tmp5) {
-                    let tmp17;
-                    if (cResult[17] === tmp13) {
-                      tmp17 = cResult[18];
-                    }
-                    return tmp17;
+                  let tmp13;
+                  if (cResult[14] === topContent) {
+                    tmp13 = cResult[15];
                   }
+                  if (cResult[16] === graphic) {
+                    if (cResult[17] === tmp5) {
+                      let tmp17;
+                      if (cResult[18] === tmp13) {
+                        tmp17 = cResult[19];
+                      }
+                      return tmp17;
+                    }
+                  }
+                  const obj2 = { style: tmp5, children: items };
+                  items = [graphic, tmp13];
+                  const tmp20 = unpackModuleId(View, obj2);
+                  cResult[16] = graphic;
+                  cResult[17] = tmp5;
+                  cResult[18] = tmp13;
+                  cResult[19] = tmp20;
+                  tmp17 = tmp20;
                 }
-                const obj2 = { style: tmp5, children: items };
-                items = [graphic, tmp13];
-                const tmp20 = unpackModuleId(View, obj2);
-                cResult[15] = graphic;
-                cResult[16] = tmp5;
-                cResult[17] = tmp13;
-                cResult[18] = tmp20;
-                tmp17 = tmp20;
               }
             }
             const obj3 = { style: tmp4.textContainer, children: items1 };
-            items1 = [tmp7, tmp10];
+            items1 = [topContent, tmp7, tmp10];
             const tmp16 = unpackModuleId(View, obj3);
             cResult[11] = tmp4.textContainer;
             cResult[12] = tmp7;
             cResult[13] = tmp10;
-            cResult[14] = tmp16;
+            cResult[14] = topContent;
+            cResult[15] = tmp16;
             tmp13 = tmp16;
           }
         }
@@ -152,13 +156,15 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let title;
   let titleColor;
   let titleVariant;
+  let topContent;
   ({ titleVariant, titleColor, subtitleVariant, subtitleColor } = arg0);
-  ({ style, graphic, title, subtitle } = arg0);
+  ({ style, graphic, topContent, title, subtitle } = arg0);
   const tmp = closure_13();
   const obj = { style: items, children: items1 };
   items = [tmp.container, style];
   items1 = [graphic, ];
   const obj2 = { style: tmp.textContainer, children: items2 };
+  items2 = [topContent, , ];
   const Text = Text_Text.Text;
   if (titleVariant == null) {
     titleVariant = "text-md/semibold";
@@ -167,7 +173,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (titleColor == null) {
     titleColor = "text-default";
   }
-  items2 = [authStore(Text, obj3), ];
+  items2[1] = authStore(Text, obj3);
   const Text2 = Text_Text.Text;
   if (subtitleVariant == null) {
     subtitleVariant = "text-sm/medium";
@@ -176,7 +182,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (subtitleColor == null) {
     subtitleColor = "text-subtle";
   }
-  items2[1] = authStore(Text2, obj4);
+  items2[2] = authStore(Text2, obj4);
   items1[1] = unpackModuleId(View, obj2);
   return unpackModuleId(View, obj);
 });
@@ -233,7 +239,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         let num6 = null;
         const tmp17 = stateFromStores;
-        class C {
+        class A {
           constructor() {
             const tmp = first;
             if (tmp) {
@@ -254,7 +260,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj2 = { ref: null, url: imageUrl, autoplay: false, style };
-            class C {
+            class A {
               constructor() {
                 const tmp = first;
                 if (tmp) {
@@ -272,7 +278,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[13] !== imageUrl) {
           const obj4 = { uri: imageUrl };
-          class C {
+          class A {
             constructor() {
               const tmp = first;
               if (tmp) {
@@ -299,7 +305,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[17] = tmp26;
         tmp24 = tmp26;
       }
-      class C {
+      class A {
         constructor() {
           const tmp = first;
           if (tmp) {
@@ -309,11 +315,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       cResult[7] = aPNGPlayerControls;
       cResult[8] = first;
-      cResult[9] = C;
-      tmp16 = C;
+      cResult[9] = A;
+      tmp16 = A;
     }
   }
-  const fn2 = function f() {
+  const fn2 = function b() {
     const obj = utils_PlatformUtils;
     const isAndroidResult = obj.isAndroid() && !stateFromStores;
     if (isAndroidResult) {
@@ -549,7 +555,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   if (tmp15Result) {
     const obj6 = { style: tmp9.preview, children: authStore(CollectiblesPreview, obj11) };
     obj11 = { collectiblesItemData: tmp10, size: rounded };
-    CollectiblesPreview = tmp(8231).CollectiblesPreview;
+    CollectiblesPreview = tmp(8426).CollectiblesPreview;
     const tmp16 = View;
     if ("bundle" === tmp10.type) {
       const _Math2 = Math;

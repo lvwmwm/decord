@@ -1,14 +1,19 @@
 // Module ID: 6061
 // Function ID: 6062
 // Dependencies: []
-// Exports: isFabricInstalled
+// Exports: getLabel
 
 // Module 6061
 
-export const isFabricInstalled = function isFabricInstalled() {
-  let prop;
-  if (global != null) {
-    prop = global.nativeFabricUIManager;
+export const getLabel = function getLabel(label, arg1) {
+  let title;
+  if (undefined !== label.label) {
+    title = label.label;
+  } else {
+    title = arg1;
+    if (undefined !== label.title) {
+      title = label.title;
+    }
   }
-  return null != prop;
+  return title;
 };

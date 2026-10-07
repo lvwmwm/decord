@@ -1,41 +1,41 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 12023
+// Function ID: 12024
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 7203, 5772, 5590, 5815, 1086, 5306, 9843, 5307, 9924, 1381, 21, 5422, 6459, 9925, 4837, 1370, 588, 11769, 558, 576, 1485, 6399, 5991, 504, 4535, 10489, 11775, 11776, 2027, 5996, 9923, 11777, 6753, 9842, 5829, 9641, 11778, 6945, 11349, 1985, 7100, 1617, 5017, 11779, 11780, 8611, 5331, 11605, 4570, 11781, 6947, 11788, 4833, 1127, 8063, 11789, 11790, 2]
+// Dependencies: [32, 19, 17, 7408, 5638, 5436, 5687, 1085, 5788, 10072, 5789, 10153, 1380, 21, 5894, 6534, 10154, 4890, 1369, 587, 12024, 558, 576, 1484, 6471, 6068, 504, 4580, 10723, 12031, 12032, 2028, 6073, 10152, 12033, 6837, 10071, 5701, 9867, 12034, 7030, 11605, 1985, 7167, 1616, 5070, 12035, 12036, 8818, 5807, 11860, 4612, 12037, 7034, 12044, 4886, 1126, 8899, 12045, 12046, 2]
 
-// Module 11768 (AutocompleteWrapper)
+// Module 12023 (AutocompleteWrapper)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
-import KeyboardTypes from "KeyboardTypes" /* 1617 */;
+import nativeDefault from "native" /* 587 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
 import Server from "Server" /* 1985 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5422 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 5829 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6459 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8611 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9842 */;
-import AutocompleteOptions from "AutocompleteOptions" /* 9923 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9924 */;
-import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 9925 */;
-import Autocomplete from "Autocomplete" /* 11769 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 11779 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 5701 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5894 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6534 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7034 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8818 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10071 */;
+import AutocompleteOptions from "AutocompleteOptions" /* 10152 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10153 */;
+import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10154 */;
+import Autocomplete from "Autocomplete" /* 12024 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12035 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7203 */;
-import EmojiStore from "EmojiStore" /* 5772 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
-import StickersStore from "StickersStore" /* 5815 */;
-import Constants from "Constants" /* 1086 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9843 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5307 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7408 */;
+import EmojiStore from "EmojiStore" /* 5638 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import StickersStore from "StickersStore" /* 5687 */;
+import Constants from "Constants" /* 1085 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10072 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,9 +61,9 @@ let metroRequire;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const NavigatorConstants = tmp(5991);
-const useSafeAreaInsetsKeyboardAwareDefault = tmp5(6399);
-const application_commands_ApplicationCommandUtils = tmp(11605);
+const NavigatorConstants = tmp(6068);
+const useSafeAreaInsetsKeyboardAwareDefault = tmp5(6471);
+const application_commands_ApplicationCommandUtils = tmp(11860);
 function getStickersItemLayout(arg0, index) {
   let diff;
   let result;
@@ -990,7 +990,7 @@ const forwardRefResult = react.forwardRef((analyticsLocations, ref) => {
         tmp18 = autocompleteResultText;
         tmp19 = tmp13;
         if (null != applicationCommandManager) {
-          const tmp8Result = tmp8(5331);
+          const tmp8Result = tmp8(5807);
           const result = tmp8Result.formatTimestampMention(type.mention);
           tmp18 = autocompleteResultText;
           tmp19 = tmp13;

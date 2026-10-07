@@ -1,11 +1,11 @@
-// Module ID: 1491
-// Function ID: 1492
+// Module ID: 1490
+// Function ID: 1491
 // Name: useNavigation
-// Dependencies: [558, 1492, 2]
+// Dependencies: [558, 1491, 2]
 // Exports: useNativeStackNavigation, useNavigation, useStackNavigation, useTabNavigation
 
-// Module 1491 (useNavigation)
-import Link from "Link" /* 1492 */;
+// Module 1490 (useNavigation)
+import Link from "Link" /* 1491 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

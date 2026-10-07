@@ -1,12 +1,12 @@
-// Module ID: 12741
-// Function ID: 12742
+// Module ID: 13001
+// Function ID: 13002
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1086, 3, 10512, 6965, 4801, 10574, 1616, 6736, 4506, 4531, 1127, 2]
+// Dependencies: [5, 32, 19, 1085, 3, 10750, 7052, 4854, 10813, 1615, 6820, 4543, 4568, 1126, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 12741 (useHandleBuyNow)
+// Module 13001 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -106,7 +106,7 @@ function useHandleBuyNow(product) {
     },
     orderId
   };
-  const tmp3 = onBuySettled(10512)(obj);
+  const tmp3 = onBuySettled(10750)(obj);
   react = tmp3;
   let obj2 = {
     handleBuyNow: react.useCallback(isBuying(function*(arg0, value) {
@@ -114,8 +114,8 @@ function useHandleBuyNow(product) {
       let closure_1;
       let intl;
       let obj10;
-      let obj12;
       let obj14;
+      let obj9;
       let tmp;
       if (c5 === 2) {
         c5 = 3;
@@ -150,20 +150,20 @@ function useHandleBuyNow(product) {
                 const combined = "" + constants.COLLECTIBLES_SHOP + "#itemSkuId=" + require.skuId;
                 c4 = 3;
                 c5 = 1;
-                const obj6 = { value: obj12.redirectWithHandoffToken(combined, { forceExternalBrowser: true }), done: false };
-                obj12 = tmp(closure_2[10]);
+                const obj6 = { value: obj9.redirectWithHandoffToken(combined, { forceExternalBrowser: true }), done: false };
+                obj9 = tmp(closure_2[10]);
                 return obj6;
               } else {
                 c3 = 2;
-                const tmp47 = first;
-                if (tmp47) {
+                const tmp43 = first;
+                if (tmp43) {
                   c3 = 0;
                 } else {
                   v2(true);
                   c4 = 4;
                   c5 = 1;
-                  const obj8 = { value: v3(), done: false };
-                  return obj8;
+                  const obj7 = { value: v3(), done: false };
+                  return obj7;
                 }
               }
             }
@@ -173,13 +173,13 @@ function useHandleBuyNow(product) {
             const _JSON2 = JSON;
             const _HermesInternal2 = HermesInternal;
             logger.error("Error performing web handoff: " + JSON.stringify(product));
-            const obj9 = { tags: obj10 };
+            const obj8 = { tags: obj10 };
             obj10 = { source: "useHandleBuyNow", skuId: closure_129_0.skuId };
-            const obj7 = product(closure_2[11]);
-            const result = obj7.captureBillingException(product, obj9);
+            const obj4 = product(closure_2[11]);
+            const result = obj4.captureBillingException(product, obj8);
             const obj11 = { key: "SHOP_ITEM_HANDOFF_ERROR", content: intl.string(product(closure_2[13]).t["rTU7/z"]) };
             const open = tmp(closure_2[12]).open;
-            const tmp41 = tmp(closure_2[12]);
+            const tmp37 = tmp(closure_2[12]);
             intl = product(closure_2[13]).intl;
             open(obj11);
             if (closure_129_1 != null) {
@@ -195,10 +195,16 @@ function useHandleBuyNow(product) {
             const _JSON = JSON;
             const _HermesInternal = HermesInternal;
             logger.error("Error running purchase: " + JSON.stringify(tmp));
-            const obj13 = { tags: obj14 };
-            obj14 = { source: "useHandleBuyNow", skuId: closure_129_0.skuId };
-            const obj4 = product(closure_2[11]);
-            const result1 = obj4.captureBillingException(tmp, obj13);
+            let message;
+            if (tmp != null) {
+              message = tmp.message;
+            }
+            if ("Not ready to purchase" !== message) {
+              const obj12 = { tags: obj14 };
+              obj14 = { source: "useHandleBuyNow", skuId: closure_129_0.skuId };
+              const obj13 = product(closure_2[11]);
+              const result1 = obj13.captureBillingException(tmp, obj12);
+            }
           } else if (3 === c4) {
             if (arg0 === 1) {
               c5 = 3;
@@ -227,12 +233,12 @@ function useHandleBuyNow(product) {
           }
           c5 = 3;
           return { value: "IconComponent", done: null };
-        } catch (tmp56) {
-          closure_2 = tmp56;
+        } catch (tmp52) {
+          closure_2 = tmp52;
           if (0 === c3) {
             c5 = 3;
-            throw tmp56;
-          } else if (1 === tmp58) {
+            throw tmp52;
+          } else if (1 === tmp54) {
             c4 = 1;
           } else {
             c4 = 2;

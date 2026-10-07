@@ -1,19 +1,19 @@
-// Module ID: 15685
-// Function ID: 15686
+// Module ID: 15980
+// Function ID: 15981
 // Name: MessagesLegendList
-// Dependencies: [19, 21, 558, 576, 15686, 15662, 15725, 15726, 15674, 15672, 15677, 15687, 15724, 15727, 15729, 2]
+// Dependencies: [19, 21, 558, 576, 15981, 15957, 16020, 16021, 15969, 15967, 15972, 15982, 16019, 16022, 16024, 2]
 
-// Module 15685 (MessagesLegendList)
+// Module 15980 (MessagesLegendList)
 import Fragment from "Fragment" /* 21 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 15662 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15672 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 15674 */;
-import useMessagesData from "useMessagesData" /* 15677 */;
-import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 15687 */;
-import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 15724 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 15725 */;
-import MessagesItemSuggestedFriendsHeader from "MessagesItemSuggestedFriendsHeader" /* 15726 */;
-import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 15727 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 15957 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15967 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 15969 */;
+import useMessagesData from "useMessagesData" /* 15972 */;
+import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 15982 */;
+import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 16019 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 16020 */;
+import MessagesItemSuggestedFriendsHeader from "MessagesItemSuggestedFriendsHeader" /* 16021 */;
+import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 16022 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -70,7 +70,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   if (cResult[2] !== listHeaderHeight) {
     class L {
       constructor() {
-        obj = { scrollToTop() { /* body not rendered: F143722 */ } };
+        obj = { scrollToTop() { /* body not rendered: F145395 */ } };
         return obj;
       }
     }
@@ -83,7 +83,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   } else {
     class L {
       constructor() {
-        obj = { scrollToTop() { /* body not rendered: F143722 */ } };
+        obj = { scrollToTop() { /* body not rendered: F145395 */ } };
         return obj;
       }
     }
@@ -93,7 +93,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   if (cResult[5] === friendSuggestions) {
     class L {
       constructor() {
-        obj = { scrollToTop() { /* body not rendered: F143722 */ } };
+        obj = { scrollToTop() { /* body not rendered: F145395 */ } };
         return obj;
       }
     }

@@ -1,19 +1,19 @@
-// Module ID: 10330
-// Function ID: 10331
+// Module ID: 10561
+// Function ID: 10562
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 4570, 4837, 588, 558, 576, 1485, 4838, 1189, 10331, 10201, 2]
+// Dependencies: [32, 19, 17, 21, 4612, 4890, 587, 558, 576, 1484, 4891, 1188, 10562, 10430, 2]
 
-// Module 10330 (PremiumGiftBackgroundSelect)
+// Module 10561 (PremiumGiftBackgroundSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import timing from "timing" /* 4838 */;
-import NativeGiftContext from "NativeGiftContext" /* 10201 */;
+import nativeDefault from "native" /* 587 */;
+import timing from "timing" /* 4891 */;
+import NativeGiftContext from "NativeGiftContext" /* 10430 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import createStyles from "createStyles" /* 4837 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const native = tmp(1189);
+const native = tmp(1188);
 const ScrollView = react_native.ScrollView;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = ReanimatedRexport.createAnimatedComponent(ScrollView);

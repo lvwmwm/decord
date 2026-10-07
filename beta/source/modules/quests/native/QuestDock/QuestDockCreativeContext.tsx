@@ -1,13 +1,12 @@
-// Module ID: 14619
-// Function ID: 14620
+// Module ID: 14925
+// Function ID: 14926
 // Name: QuestDockCreativeContext
-// Dependencies: [19, 21, 5764, 558, 576, 2]
-// Exports: getCreativeAnalyticsParams, getDeliveredAdCreativeId, getDeliveredQuest
+// Dependencies: [19, 21, 558, 576, 5630, 2]
 
-// Module 14619 (QuestDockCreativeContext)
+// Module 14925 (QuestDockCreativeContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -188,33 +187,6 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
 });
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockCreativeContext.tsx");
 
-export const getCreativeAnalyticsParams = function getCreativeAnalyticsParams(creative) {
-  const type = creative.type;
-  if (AdCreativeType.AdCreativeType.QUEST === type) {
-    const obj2 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: creative.quest.id };
-    return obj2;
-  } else if (AdCreativeType.AdCreativeType.BOUNTY === type) {
-    const obj = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, adCreativeId: creative.bounty.id };
-    return obj;
-  }
-};
-export const getDeliveredQuest = function getDeliveredQuest(type) {
-  let quest = null;
-  if (type.type === AdCreativeType.AdCreativeType.QUEST) {
-    quest = type.quest;
-  }
-  return quest;
-};
-export const getDeliveredAdCreativeId = function getDeliveredAdCreativeId(type) {
-  type = type.type;
-  if (AdCreativeType.AdCreativeType.QUEST === type) {
-    return type.quest.id;
-  } else if (AdCreativeType.AdCreativeType.BOUNTY === type) {
-    return type.bounty.id;
-  } else if (AdCreativeType.AdCreativeType.NO_FILL === type) {
-    return null;
-  }
-};
 export const QuestDockQuestProvider = tmp2;
 export const QuestDockBountyProvider = tmp3;
 export const useQuestDockQuest = tmp4;

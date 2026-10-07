@@ -1,24 +1,24 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 12055
+// Function ID: 12056
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 11800, 502, 1086, 11801, 6008, 3, 1112, 1283, 1243, 11804, 510, 5030, 1370, 1261, 1376, 585, 2]
+// Dependencies: [5, 12056, 502, 1085, 12057, 6085, 3, 1111, 1282, 1242, 12059, 510, 5083, 1369, 1260, 1375, 584, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 11799 (PushNotificationActionCreators)
+// Module 12055 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import TokenManagerAll from "TokenManager" /* 1112 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
-import Constants2 from "Constants" /* 11801 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import TokenManagerAll from "TokenManager" /* 1111 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
+import Constants2 from "Constants" /* 12057 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 11800 */;
+import MultiAccountStore from "MultiAccountStore" /* 12056 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1086 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6008 */;
+import Constants from "Constants" /* 1085 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6085 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;

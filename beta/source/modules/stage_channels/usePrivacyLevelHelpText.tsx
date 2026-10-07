@@ -1,16 +1,16 @@
-// Module ID: 9248
-// Function ID: 9249
+// Module ID: 9476
+// Function ID: 9477
 // Name: usePrivacyLevelHelpText
-// Dependencies: [4472, 1086, 2057, 1097, 558, 576, 504, 4477, 1098, 1127, 2114, 2]
+// Dependencies: [4509, 1085, 2057, 1096, 558, 576, 504, 4514, 1097, 1126, 2115, 2]
 
-// Module 9248 (usePrivacyLevelHelpText)
-import Constants from "Constants" /* 1086 */;
-import Constants2 from "Constants" /* 1097 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+// Module 9476 (usePrivacyLevelHelpText)
+import Constants from "Constants" /* 1085 */;
+import Constants2 from "Constants" /* 1096 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,29 +103,29 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, privacy_l
     privacy_level2 = privacy_level.privacy_level;
   }
   if (privacy_level2 === constants.PUBLIC) {
-    const intl4 = tmp(1127).intl;
-    stringResult = intl4.string(tmp(1127).t.GFq5Rg);
+    const intl4 = tmp(1126).intl;
+    stringResult = intl4.string(tmp(1126).t.GFq5Rg);
   } else if (stateFromStores) {
     let stringResult1;
     if (tmp8) {
       let formatResult = null;
       if (arg2 === tmp18.PUBLIC) {
-        const intl3 = tmp(1127).intl;
+        const intl3 = tmp(1126).intl;
         const format = intl3.format;
         const obj4 = { articleURL: obj5.getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
-        const prop = tmp(1127).t["ew/Jq4"];
+        const prop = tmp(1126).t["ew/Jq4"];
         obj5 = HelpdeskUtilsDefault;
         formatResult = format(prop, obj4);
       }
       stringResult1 = formatResult;
     } else {
-      const intl2 = tmp(1127).intl;
-      stringResult1 = intl2.string(tmp(1127).t.E5T7a3);
+      const intl2 = tmp(1126).intl;
+      stringResult1 = intl2.string(tmp(1126).t.E5T7a3);
     }
     stringResult = stringResult1;
   } else {
-    const intl = tmp(1127).intl;
-    stringResult = intl.string(tmp(1127).t.BOjr7t);
+    const intl = tmp(1126).intl;
+    stringResult = intl.string(tmp(1126).t.BOjr7t);
   }
   cResult[5] = tmp8;
   cResult[6] = stateFromStores;
@@ -155,29 +155,29 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, privacy_l
     privacy_level = privacy_level.privacy_level;
   }
   if (privacy_level === constants.PUBLIC) {
-    const intl4 = tmp(1127).intl;
-    stringResult = intl4.string(tmp(1127).t.GFq5Rg);
+    const intl4 = tmp(1126).intl;
+    stringResult = intl4.string(tmp(1126).t.GFq5Rg);
   } else if (stateFromStores) {
     let stringResult1;
     if (canEveryoneRoleResult) {
       let formatResult = null;
       if (arg2 === constants.PUBLIC) {
-        const intl3 = tmp(1127).intl;
+        const intl3 = tmp(1126).intl;
         const format = intl3.format;
         const obj3 = { articleURL: obj4.getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
-        const prop = tmp(1127).t["ew/Jq4"];
+        const prop = tmp(1126).t["ew/Jq4"];
         obj4 = HelpdeskUtilsDefault;
         formatResult = format(prop, obj3);
       }
       stringResult1 = formatResult;
     } else {
-      const intl2 = tmp(1127).intl;
-      stringResult1 = intl2.string(tmp(1127).t.E5T7a3);
+      const intl2 = tmp(1126).intl;
+      stringResult1 = intl2.string(tmp(1126).t.E5T7a3);
     }
     stringResult = stringResult1;
   } else {
-    const intl = tmp(1127).intl;
-    stringResult = intl.string(tmp(1127).t.BOjr7t);
+    const intl = tmp(1126).intl;
+    stringResult = intl.string(tmp(1126).t.BOjr7t);
   }
   const obj5 = { helpText: stringResult, guildOnlyDisabled: privacy_level1 === constants.PUBLIC, publicDisabled: tmp16 };
   privacy_level1 = undefined;

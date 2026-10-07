@@ -1,26 +1,26 @@
-// Module ID: 14797
-// Function ID: 14798
+// Module ID: 15082
+// Function ID: 15083
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4655, 1195, 1194, 14798, 7421, 1086, 21, 558, 576, 1491, 1370, 7292, 1127, 10490, 1260, 3364, 2114, 14799, 5297, 573, 10874, 14235, 2]
+// Dependencies: [19, 4697, 1194, 1193, 15083, 7634, 1085, 21, 558, 576, 1490, 1369, 7498, 1126, 10724, 1259, 3367, 2115, 15084, 5590, 573, 11129, 14499, 2]
 
-// Module 14797 (SettingsAppearanceScreen)
+// Module 15082 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl6 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import _modDef3364 from "module_3364" /* 3364 */;
-import useMountEffectDefault from "useMountEffect" /* 5297 */;
-import HeaderShared from "HeaderShared" /* 7292 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import Constants from "Constants" /* 1085 */;
+import intl6 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import _modDef3367 from "module_3367" /* 3367 */;
+import useMountEffectDefault from "useMountEffect" /* 5590 */;
+import HeaderShared from "HeaderShared" /* 7498 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4655 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1195 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
-import FontScaleStore from "FontScaleStore" /* 14798 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import FontScaleStore from "FontScaleStore" /* 15083 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(14235);
+const SettingLayoutDefault = tmp5(14499);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;
@@ -73,7 +73,7 @@ function getAppearanceSettings() {
   const intl3 = intl6.intl;
   format = intl3.format;
   obj7 = { helpCenterLink: obj8.getArticleURL(HelpdeskArticles.FAVORITES_GUILD) };
-  GR2KOG = _modDef3364.GR2KOG;
+  GR2KOG = _modDef3367.GR2KOG;
   items1[5] = obj6;
   obj8 = HelpdeskUtilsDefault;
   const obj9 = { label: intl4.string(intl6.t.lEde7i), settings: items7 };
@@ -146,7 +146,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "call" });
+          nativeStackNavigation.setOptions({ headerRight: "r" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -158,7 +158,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       };
       getRenderHeaderTextButton = HeaderShared.getRenderHeaderTextButton;
       HeaderShared;
-      intl = tmp(1127).intl;
+      intl = tmp(1126).intl;
       setOptions(obj2);
     }
   };
@@ -188,7 +188,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "call" });
+          nativeStackNavigation.setOptions({ headerRight: "r" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -200,7 +200,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       };
       getRenderHeaderTextButton = HeaderShared.getRenderHeaderTextButton;
       HeaderShared;
-      intl = tmp(1127).intl;
+      intl = tmp(1126).intl;
       setOptions(obj2);
     }
   }, items);
@@ -264,7 +264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   closure_12();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAppearanceSettings() };
-    const createList = tmp(10874).createList;
+    const createList = tmp(11129).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[3] = list;

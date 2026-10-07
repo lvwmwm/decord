@@ -1,19 +1,19 @@
-// Module ID: 6388
-// Function ID: 6389
+// Module ID: 6460
+// Function ID: 6461
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6360, 6389, 6390, 6391, 6394, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6432, 6461, 6462, 6463, 6466, 2]
 
-// Module 6388 (AuthFormView)
+// Module 6460 (AuthFormView)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6360 */;
-import react3 from "react" /* 6389 */;
-import BackgroundImageDefault from "BackgroundImage" /* 6391 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 6394 */;
+import nativeDefault from "native" /* 587 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6432 */;
+import react3 from "react" /* 6461 */;
+import BackgroundImageDefault from "BackgroundImage" /* 6463 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 6466 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp37 = null;
         if (null != headerText) {
           const obj3 = { children: headerText };
-          tmp37 = metroRequire(tmp3(6390), obj3);
+          tmp37 = metroRequire(tmp3(6462), obj3);
         }
         cResult[6] = headerText;
         cResult[7] = tmp37;
@@ -197,7 +197,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               let tmp18 = null;
               if (null != headerText) {
                 const obj7 = { children: headerText };
-                tmp18 = metroRequire(tmp3(6390), obj7);
+                tmp18 = metroRequire(tmp3(6462), obj7);
               }
               cResult[30] = headerText;
               cResult[31] = tmp18;
@@ -321,7 +321,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp13 = hasOwnProperty;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp15 = metroRequire(tmp(6390), obj3);
+      tmp15 = metroRequire(tmp(6462), obj3);
     }
     items1 = [tmp15, , ];
     let tmp17 = null;
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp8 = hasOwnProperty;
     if (null != headerText) {
       const obj7 = { children: headerText };
-      tmp7Result = tmp7(tmp(6390), obj7);
+      tmp7Result = tmp7(tmp(6462), obj7);
     }
     items5 = [tmp7Result, , ];
     let tmp7Result2 = null;

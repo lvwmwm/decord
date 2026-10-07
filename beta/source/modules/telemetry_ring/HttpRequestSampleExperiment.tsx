@@ -1,11 +1,11 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 17423
+// Function ID: 17424
 // Name: HttpRequestSampleExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1440, 2]
 // Exports: getHttpRequestSampleRate
 
-// Module 17064 (HttpRequestSampleExperiment)
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+// Module 17423 (HttpRequestSampleExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

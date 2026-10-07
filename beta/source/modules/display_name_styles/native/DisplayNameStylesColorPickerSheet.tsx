@@ -1,24 +1,24 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 15174
+// Function ID: 15175
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1396, 1086, 21, 1104, 14886, 4837, 588, 558, 576, 7619, 10404, 1395, 4802, 4801, 14140, 1253, 1127, 2880, 14878, 5282, 4784, 12, 14887, 6572, 2]
+// Dependencies: [32, 19, 17, 1395, 1085, 21, 1103, 15171, 4890, 587, 558, 576, 7841, 10637, 1394, 4855, 4854, 14421, 1252, 1126, 2883, 15163, 5594, 4577, 12, 15172, 6645, 2]
 
-// Module 14889 (DisplayNameStylesColorPickerSheet)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1395 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1396 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14140 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 14886 */;
+// Module 15174 (DisplayNameStylesColorPickerSheet)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14421 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 15171 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -325,7 +325,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColor) => {
           if (tmp) {
             const obj4 = { style: presetColor.checkmarkOverlay, pointerEvents: "none", children: React4(CheckmarkLargeIcon, obj5) };
             obj5 = { size: "custom", style: presetColor.checkmark, color: str };
-            CheckmarkLargeIcon = tmp5(4784).CheckmarkLargeIcon;
+            CheckmarkLargeIcon = tmp5(4577).CheckmarkLargeIcon;
             const tmp5Result2 = utils_ColorUtils;
             const darkness = tmp5Result2.getDarkness(item);
             str = "black";

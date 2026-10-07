@@ -1,20 +1,20 @@
-// Module ID: 14685
-// Function ID: 14686
+// Module ID: 14970
+// Function ID: 14971
 // Name: QuestEnrollmentBlockedBottomSheet
-// Dependencies: [19, 17, 7120, 21, 4837, 588, 558, 576, 504, 10717, 5760, 6863, 4833, 1127, 6572, 2]
+// Dependencies: [19, 17, 7187, 21, 4890, 587, 558, 576, 504, 10958, 5626, 6948, 4886, 1126, 6645, 2]
 
-// Module 14685 (QuestEnrollmentBlockedBottomSheet)
+// Module 14970 (QuestEnrollmentBlockedBottomSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
-import useCountdownDefault from "useCountdown" /* 6863 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import useCountdownDefault from "useCountdown" /* 6948 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7120 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import QuestStore from "QuestStore" /* 7187 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -177,8 +177,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(questEn
     let tmp26;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const Text = tmp(4833).Text;
-      const intl = tmp(1127).intl;
+      const Text = tmp(4886).Text;
+      const intl = tmp(1126).intl;
       const tmp19 = <Text variant="heading-xl/bold">{intl.string(intl3.t["XEHDT/"])}</Text>;
       cResult[8] = tmp19;
       tmp17 = tmp19;
@@ -195,7 +195,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(questEn
     }
     const container = tmp4.container;
     if (cResult[11] !== combined) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const obj4 = { countdownString: combined };
       const formatToPlainStringResult = intl2.formatToPlainString(intl3.t["+5XVH+"], obj4);
       cResult[11] = combined;

@@ -1,13 +1,13 @@
-// Module ID: 16656
-// Function ID: 16657
+// Module ID: 17011
+// Function ID: 17012
 // Name: HangoutWindowExperiment
-// Dependencies: [4753, 4750, 558, 576, 2]
+// Dependencies: [4777, 4774, 558, 576, 2]
 // Exports: getHangoutWindowExperiment
 
-// Module 16656 (HangoutWindowExperiment)
+// Module 17011 (HangoutWindowExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 4753 */;
-import createExperiment from "module_4750" /* 4750 */;
+import ExperimentConstants from "ExperimentConstants" /* 4777 */;
+import createExperiment from "module_4774" /* 4774 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 9821
-// Function ID: 9822
+// Module ID: 10050
+// Function ID: 10051
 // Name: FavoritesDismissibleContent
-// Dependencies: [32, 19, 2048, 2035, 558, 6808, 576, 9809, 9807, 9820, 6807, 9819, 2]
+// Dependencies: [32, 19, 2048, 2036, 558, 6892, 576, 10038, 10036, 10049, 6891, 10048, 2]
 
-// Module 9821 (FavoritesDismissibleContent)
+// Module 10050 (FavoritesDismissibleContent)
 import react2 from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6807 */;
-import useGetDismissibleContent from "useGetDismissibleContent" /* 6808 */;
-import FavoritesHooks from "FavoritesHooks" /* 9807 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 9809 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 9820 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
+import useGetDismissibleContent from "useGetDismissibleContent" /* 6892 */;
+import FavoritesHooks from "FavoritesHooks" /* 10036 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10038 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesGuildIntroPopover = tmp(9819);
+const FavoritesGuildIntroPopover = tmp(10048);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let items = [dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO, dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, dismissible_content.DismissibleContent.FAVORITES_GUILD_NEW_BADGE, dismissible_content.DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
 let items1 = [dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO, dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
@@ -208,16 +208,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(9809);
+  const tmpResult = tmp(10038);
   const isFreemium = tmpResult.useFavoritesGuildConfig(first).isFreemium;
   if (cResult[1] === arg0) {
     if (cResult[2] === isFreemium) {
       tmp5 = cResult[3];
     }
-    const tmpResult2 = tmp(6807);
+    const tmpResult2 = tmp(6891);
     const tmp7 = _slicedToArray(tmpResult2.useSelectedDismissibleContent(tmp5), 2);
     _require = tmp8;
-    const tmp9 = tmp7[0] === tmp(2035).DismissibleContent.FAVORITES_GUILD_NEW_BADGE;
+    const tmp9 = tmp7[0] === tmp(2036).DismissibleContent.FAVORITES_GUILD_NEW_BADGE;
     let closure_1 = tmp9;
     if (cResult[4] === tmp7[1]) {
       let tmp10;
@@ -265,7 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (isFreemium) {
     if (arg0) {
-      const items = [tmp(2035).DismissibleContent.FAVORITES_GUILD_NEW_BADGE];
+      const items = [tmp(2036).DismissibleContent.FAVORITES_GUILD_NEW_BADGE];
       items1 = items;
     }
     cResult[1] = arg0;

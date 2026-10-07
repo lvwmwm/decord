@@ -1,32 +1,32 @@
-// Module ID: 17056
-// Function ID: 17057
+// Module ID: 17415
+// Function ID: 17416
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 17057, 17059, 17, 17081, 2116, 2102, 1986, 6884, 17082, 1086, 9, 3, 17723, 6916, 17724, 11143, 504, 1260, 1245, 17726, 1990, 1370, 10, 17727, 8747, 585, 17728, 6899, 1243, 17729, 17730, 8741, 510, 1253, 13183, 2094, 8591, 2127, 1166, 17731, 1987, 7784, 17733, 13883, 7091, 17750, 17751, 17752, 9394, 6912, 6900, 4696, 1194, 4826, 14001, 16790, 16791, 1112, 13684, 6883, 14006, 14020, 7054, 17753, 6066, 6885, 6900, 2]
+// Dependencies: [32, 5, 17416, 17418, 17, 17439, 2117, 2103, 1986, 6969, 17440, 1085, 9, 3, 18089, 7001, 18090, 11401, 504, 1259, 1244, 18092, 1990, 1369, 10, 18093, 8979, 584, 18094, 6984, 1242, 18095, 18096, 8966, 510, 1252, 13448, 2095, 8798, 2128, 1165, 18097, 1987, 8008, 18099, 14154, 7158, 18116, 18117, 18118, 7517, 6997, 6985, 4738, 1193, 4879, 14278, 17143, 17144, 1111, 13955, 6968, 14283, 14297, 7121, 18119, 6140, 6970, 6985, 2]
 // Exports: init, initHeadlessTask
 
-// Module 17056 (NativeAppStartup)
+// Module 17415 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Storage4 from "Storage" /* 510 */;
-import TokenManagerAll from "TokenManager" /* 1112 */;
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2094 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2116 */;
-import timeRequireDefault from "timeRequire" /* 6916 */;
-import Future from "Future" /* 8591 */;
-import react_nativeDefault from "react-native" /* 13183 */;
+import TokenManagerAll from "TokenManager" /* 1111 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2095 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2117 */;
+import timeRequireDefault from "timeRequire" /* 7001 */;
+import Future from "Future" /* 8798 */;
+import react_nativeDefault from "react-native" /* 13448 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_17057 from "module_17057" /* 17057 */;
-import superagentPatch from "superagentPatch" /* 17059 */;
+import module_17416 from "module_17416" /* 17416 */;
+import superagentPatch from "superagentPatch" /* 17418 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 17081 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 17439 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6884 */;
-import ManagerRegistry from "ManagerRegistry" /* 17082 */;
-import Constants from "Constants" /* 1086 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6969 */;
+import ManagerRegistry from "ManagerRegistry" /* 17440 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -123,11 +123,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f146802 = () => _true(handleNotification[31]);
+  const f148563 = () => _true(handleNotification[31]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f146802).default(arg0, false);
+      timeRequireDefault("receiveNotification", f148563).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -269,7 +269,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f146802).default(arg0, false);
+        timeRequireDefault("receiveNotification", f148563).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -464,12 +464,13 @@ function initializeIntl() {
 }
 obj = function _initializeIntl() {
   obj = _asyncToGenerator(async (arg0) => {
+    let closure_1;
     let log = arg0;
     let c3 = 0;
     let c4 = 0;
     const iter = (async (arg0, value) => {
-      let obj10;
-      let obj7;
+      let obj5;
+      let obj8;
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -483,6 +484,7 @@ obj = function _initializeIntl() {
         }
       } else {
         try {
+          let tmp;
           c4 = 2;
           if (0 === c3) {
             if (arg0 === 1) {
@@ -492,13 +494,13 @@ obj = function _initializeIntl() {
               c4 = 3;
               return { value, done: true };
             } else {
-              closure_2 = tmp;
+              closure_2 = tmp4;
               log = undefined;
               log = log.log;
-              closure_1 = undefined;
+              tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -510,9 +512,9 @@ obj = function _initializeIntl() {
             } else {
               c3 = 2;
               c4 = 1;
-              const obj6 = { value: obj10.preloadAllIntlMessageFiles(), done: false };
-              obj10 = closure_130_0(closure_130_3[39]);
-              return obj6;
+              const obj7 = { value: obj8.preloadAllIntlMessageFiles(), done: false };
+              obj8 = closure_130_0(closure_130_3[39]);
+              return obj7;
             }
           } else if (2 === c3) {
             if (arg0 === 1) {
@@ -524,9 +526,9 @@ obj = function _initializeIntl() {
             } else {
               c3 = 3;
               c4 = 1;
-              const obj9 = { value: obj7.waitForAllDefaultIntlMessagesLoaded(), done: false };
-              obj7 = closure_130_0(closure_130_3[40]);
-              return obj9;
+              const obj10 = { value: obj5.waitForAllDefaultIntlMessagesLoaded(), done: false };
+              obj5 = closure_130_0(closure_130_3[40]);
+              return obj10;
             }
           } else if (3 === c3) {
             if (arg0 === 1) {
@@ -538,27 +540,13 @@ obj = function _initializeIntl() {
             } else {
               const tmp33 = log;
               if (tmp33) {
-                const obj4 = closure_130_1(closure_130_3[24]);
-                obj4.markAndLog(closure_130_20, "\u{1F30E}", "i18n loaded");
+                const obj2 = closure_130_1(closure_130_3[24]);
+                obj2.markAndLog(closure_130_20, "\u{1F30E}", "i18n loaded");
               }
               c3 = 4;
               c4 = 1;
               const obj12 = { value: closure_130_0(closure_130_3[42])(closure_130_3[41], closure_130_3.paths), done: false };
               return obj12;
-            }
-          } else if (4 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_1 = value.default;
-              c3 = 5;
-              c4 = 1;
-              const obj14 = { value: closure_1(), done: false };
-              return obj14;
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -567,6 +555,8 @@ obj = function _initializeIntl() {
             c4 = 3;
             return { value, done: true };
           } else {
+            tmp = value.default;
+            tmp();
             closure_130_11(() => closure_1_1());
             c4 = 3;
             return { value: "IconComponent", done: null };

@@ -1,14 +1,14 @@
-// Module ID: 5374
-// Function ID: 5375
+// Module ID: 5846
+// Function ID: 5847
 // Name: isRoleRequired
-// Dependencies: [2055, 1097, 4477, 1098, 2]
+// Dependencies: [2055, 1096, 4514, 1097, 2]
 // Exports: default
 
-// Module 5374 (isRoleRequired)
-import Constants from "Constants" /* 1097 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+// Module 5846 (isRoleRequired)
+import Constants from "Constants" /* 1096 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
 import size from "module_2" /* 2 */;
 
 const set = ChannelRecord.GUILD_NON_CATEGORY_CHANNEL_TYPES;

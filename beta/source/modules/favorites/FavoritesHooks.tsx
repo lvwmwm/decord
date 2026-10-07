@@ -1,21 +1,21 @@
-// Module ID: 9807
-// Function ID: 9808
+// Module ID: 10036
+// Function ID: 10037
 // Name: FavoritesHooks
-// Dependencies: [4657, 1378, 2054, 2064, 1380, 9808, 558, 576, 9809, 504, 1976, 11, 1198, 2076, 2]
+// Dependencies: [4699, 1377, 2054, 2065, 1379, 10037, 558, 576, 10038, 504, 1976, 11, 1197, 2077, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories
 
-// Module 9807 (FavoritesHooks)
+// Module 10036 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1976 */;
-import FavoritesConstants from "FavoritesConstants" /* 2064 */;
-import FavoritesUtils from "FavoritesUtils" /* 2076 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 9809 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import UserStore from "UserStore" /* 1378 */;
+import FavoritesConstants from "FavoritesConstants" /* 2065 */;
+import FavoritesUtils from "FavoritesUtils" /* 2077 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10038 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import UserStore from "UserStore" /* 1377 */;
 import FavoriteStore from "FavoriteStore" /* 2054 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesLimits = tmp(9808);
+const FavoritesLimits = tmp(10037);
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       num6 = 0;
       if (isFreemium) {
-        num6 = tmp(9808).FREE_FAVORITE_LIMIT;
+        num6 = tmp(10037).FREE_FAVORITE_LIMIT;
       }
     }
     num5 = num6;

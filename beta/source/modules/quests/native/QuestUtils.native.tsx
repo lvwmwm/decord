@@ -1,31 +1,31 @@
-// Module ID: 10667
-// Function ID: 10668
+// Module ID: 10908
+// Function ID: 10909
 // Name: QuestUtils
-// Dependencies: [5, 19, 10668, 5757, 1086, 21, 4801, 10669, 1987, 10711, 9776, 10718, 10726, 7126, 9765, 5760, 4531, 1127, 5906, 5930, 10671, 7139, 8756, 4695, 6801, 1370, 4528, 588, 10727, 8532, 5206, 5210, 1492, 2]
+// Dependencies: [5, 19, 10909, 5623, 1085, 21, 4854, 10910, 1987, 10952, 10005, 10960, 10968, 7193, 9994, 5626, 4568, 1126, 4807, 6007, 10912, 7206, 8987, 4737, 6885, 1369, 4565, 587, 10969, 8739, 5709, 5713, 4736, 1491, 2]
 // Exports: dismissOverlayScreens, getPrimaryCtaIcon, handleRewardClaimThenView, isHeroVideoSupported, openDiscordQuestsFAQ, openQuestHome, openRewardDetailsBottomSheet, showQuestUnavailableAlert
 
-// Module 10667 (QuestUtils)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl5 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+// Module 10908 (QuestUtils)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import useAlertStore from "useAlertStore" /* 5206 */;
-import AlertModal2 from "AlertModal" /* 5210 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import getQuestLogger from "getQuestLogger" /* 7126 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7139 */;
-import QuestActionCreators from "QuestActionCreators" /* 9765 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9776 */;
-import QuestOrbsRewardModal from "QuestOrbsRewardModal" /* 10718 */;
-import openQuestCollectibleRewardModal from "openQuestCollectibleRewardModal" /* 10726 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import useAlertStore from "useAlertStore" /* 5709 */;
+import AlertModal2 from "AlertModal" /* 5713 */;
+import getQuestLogger from "getQuestLogger" /* 7193 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7206 */;
+import QuestActionCreators from "QuestActionCreators" /* 9994 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10005 */;
+import QuestOrbsRewardModal from "QuestOrbsRewardModal" /* 10960 */;
+import openQuestCollectibleRewardModal from "openQuestCollectibleRewardModal" /* 10968 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10668 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10909 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -39,8 +39,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const Link = tmp(1492);
-const openUserSettings = tmp(6801);
+const Link = tmp(1491);
+const NavigationRouteUtils = tmp(4736);
+const openUserSettings = tmp(6885);
 function openRewardClaimBottomSheet(arg0) {
   let questContent;
   let questContentPosition;
@@ -48,7 +49,7 @@ function openRewardClaimBottomSheet(arg0) {
   let sourceQuestContent;
   ({ questId, questContent, questContentPosition, sourceQuestContent } = arg0);
   obj = ActionSheetActionCreatorsDefault;
-  return obj.openLazy(asyncRequire(10711, dependencyMap.paths), metroRequire, { questId, questContent, questContentPosition, sourceQuestContent });
+  return obj.openLazy(asyncRequire(10952, dependencyMap.paths), metroRequire, { questId, questContent, questContentPosition, sourceQuestContent });
 }
 function viewReward(quest) {
   let onSuccess;
@@ -64,7 +65,7 @@ function viewReward(quest) {
     const id = quest.id;
     const obj2 = { questId: id, questContent, questContentPosition, sourceQuestContent };
     const obj7 = ActionSheetActionCreatorsDefault;
-    obj7.openLazy(asyncRequire(10711, tmp2.paths), metroRequire, obj2);
+    obj7.openLazy(asyncRequire(10952, tmp2.paths), metroRequire, obj2);
   } else {
     const tmpResult = QuestRewardUtils;
     if (tmpResult.hasVirtualCurrencyReward(quest.config)) {
@@ -212,7 +213,7 @@ obj = function _handleRewardClaimThenView() {
               value = undefined;
               product = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === product) {
             if (arg0 === 1) {
@@ -292,13 +293,15 @@ let result = size.fileFinishedImporting("modules/quests/native/QuestUtils.native
 export const openRewardDetailsBottomSheet = function openRewardDetailsBottomSheet(questId) {
   questId = questId.questId;
   obj = ActionSheetActionCreatorsDefault;
-  return obj.openLazy(asyncRequire(10669, dependencyMap.paths), metroImportDefault, { questId });
+  return obj.openLazy(asyncRequire(10910, dependencyMap.paths), metroImportDefault, { questId });
 };
 export { viewReward };
 export const handleRewardClaimThenView = function handleRewardClaimThenView() {
   return obj(...arguments);
 };
 export const openQuestHome = function openQuestHome(scrollToQuestId) {
+  let fromContent;
+  let pop;
   scrollToQuestId = scrollToQuestId.scrollToQuestId;
   let flag = scrollToQuestId.mergeExistingRoutes;
   if (flag === undefined) {
@@ -312,7 +315,10 @@ export const openQuestHome = function openQuestHome(scrollToQuestId) {
   if (filter === undefined) {
     filter = null;
   }
-  const fromContent = scrollToQuestId.fromContent;
+  ({ pop, fromContent } = scrollToQuestId);
+  if (pop === undefined) {
+    pop = true;
+  }
   obj = scrollToQuestId(sort[20]);
   if (obj.getIsEligibleForQuests()) {
     const setQuestHomeUtmContext = tmp3(tmp4[21]).setQuestHomeUtmContext;
@@ -340,8 +346,9 @@ export const openQuestHome = function openQuestHome(scrollToQuestId) {
           if (tmp8) {
             rootNavigationRef.navigate("settings", obj3, { pop: true });
           } else {
+            const obj4 = { pop };
             const tmpResult = openUserSettings;
-            tmpResult.openUserSettings(obj3);
+            tmpResult.openUserSettings(obj3, undefined, obj4);
           }
         }
       }
@@ -381,11 +388,11 @@ export const getPrimaryCtaIcon = function getPrimaryCtaIcon(quest, arg1) {
       const features2 = quest.config.features;
       if (features2.includes(tmp3.CLOUD_GAMING_ACTIVITY)) {
         const obj3 = { size: "sm", style: obj2, color: nativeDefault.colors.WHITE };
-        const CloudIcon = tmp(10727).CloudIcon;
+        const CloudIcon = tmp(10969).CloudIcon;
         tmp5Result = tmp5(CloudIcon, obj3);
       } else {
         const obj4 = { size: "sm", style: obj2, color: nativeDefault.colors.WHITE };
-        const GameControllerIcon = tmp(8532).GameControllerIcon;
+        const GameControllerIcon = tmp(8739).GameControllerIcon;
         tmp5Result = tmp5(GameControllerIcon, obj4);
       }
       return tmp5Result;
@@ -422,13 +429,13 @@ export const dismissOverlayScreens = function dismissOverlayScreens() {
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const rootState = rootNavigationRef.getRootState();
-      const routes = rootState.routes;
-      const found = routes.filter((name) => "you" !== name.name && "settings" !== name.name);
-      if (found.length < rootState.routes.length) {
+      const tmpResult = NavigationRouteUtils;
+      const result = tmpResult.routesBelowFirstRemoved(rootState.routes, (name) => "you" === name.name || "settings" === name.name);
+      if (null != result) {
         const dispatch = rootNavigationRef.dispatch;
         const CommonActions = Link.CommonActions;
         const reset = CommonActions.reset;
-        const obj2 = { routes: found, index: found.length - 1 };
+        const obj2 = { routes: result, index: result.length - 1 };
         const merged = Object.assign(rootState);
         dispatch(reset(obj2));
       }

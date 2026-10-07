@@ -1,13 +1,13 @@
-// Module ID: 7654
-// Function ID: 7655
+// Module ID: 7876
+// Function ID: 7877
 // Name: FileManagerUtils
-// Dependencies: [5, 3, 1163, 1370, 2]
+// Dependencies: [5, 3, 1162, 1369, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 7654 (FileManagerUtils)
+// Module 7876 (FileManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 1163 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+import react_nativeDefault from "react-native" /* 1162 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -148,9 +148,9 @@ let tmp2 = new LoggerDefault("FileManagerUtils");
 let closure_4 = tmp2;
 const result = size.fileFinishedImporting("utils/FileManagerUtils.native.tsx");
 
-export const writeFile = function writeFile(cache, combined, value, utf8) {
+export const writeFile = function writeFile(cache, combined2, value, utf8) {
   obj = react_nativeDefault;
-  const writeFileResult = obj.writeFile(cache, combined, value, utf8);
+  const writeFileResult = obj.writeFile(cache, combined2, value, utf8);
   return writeFileResult.then((result) => {
     let combined = result;
     obj = PlatformUtils;
@@ -169,9 +169,9 @@ export const removeFile = function removeFile(cache, filePathForGif) {
   obj = react_nativeDefault;
   return obj.removeFile(cache, filePathForGif);
 };
-export const clearFolder = function clearFolder(cache, arg1) {
+export const clearFolder = function clearFolder(cache, c5) {
   obj = react_nativeDefault;
-  return obj.clearFolder(cache, arg1);
+  return obj.clearFolder(cache, c5);
 };
 export const readFile = function readFile() {
   return obj(...arguments);

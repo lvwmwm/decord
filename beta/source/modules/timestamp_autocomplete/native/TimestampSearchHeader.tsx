@@ -1,22 +1,22 @@
-// Module ID: 11776
-// Function ID: 11777
+// Module ID: 12032
+// Function ID: 12033
 // Name: TimestampSearchHeader
-// Dependencies: [19, 17, 21, 558, 10489, 4837, 588, 576, 4796, 4833, 1127, 8057, 2]
+// Dependencies: [19, 17, 21, 558, 10723, 4890, 587, 576, 4849, 4886, 1126, 8895, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 11776 (TimestampSearchHeader)
+// Module 12032 (TimestampSearchHeader)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import ClockIcon from "ClockIcon" /* 4796 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Form from "Form" /* 8057 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10489 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import ClockIcon from "ClockIcon" /* 4849 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Form from "Form" /* 8895 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -81,7 +81,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     const _Symbol = Symbol;
     const description = tmp4.description;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t.V6L3TV);
       cResult[6] = stringResult;
       tmp14 = stringResult;

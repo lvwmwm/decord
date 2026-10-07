@@ -1,12 +1,12 @@
-// Module ID: 12238
-// Function ID: 12239
+// Module ID: 12492
+// Function ID: 12493
 // Name: usePreviewableMediaText
-// Dependencies: [19, 558, 576, 12235, 1127, 2]
+// Dependencies: [19, 558, 576, 12489, 1126, 2]
 
-// Module 12238 (usePreviewableMediaText)
+// Module 12492 (usePreviewableMediaText)
 import react2 from "react" /* 576 */;
-import intl21 from "intl" /* 1127 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 12235 */;
+import intl21 from "intl" /* 1126 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 12489 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp60;
           let tmp62;
           if (cResult[1] !== author.nick) {
-            const intl20 = tmp(1127).intl;
+            const intl20 = tmp(1126).intl;
             const obj2 = { username: author.nick };
             const formatToPlainStringResult = intl20.formatToPlainString(intl21.t.pTiyNB, obj2);
             cResult[1] = author.nick;
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol7 = Symbol;
           if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { text: intl19.string(intl21.t.tCcq5p), secondaryText: null };
-            intl19 = tmp(1127).intl;
+            intl19 = tmp(1126).intl;
             cResult[5] = obj4;
             tmp59 = obj4;
           } else {
@@ -69,7 +69,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp54;
           let tmp56;
           if (cResult[6] !== author.nick) {
-            const intl18 = tmp(1127).intl;
+            const intl18 = tmp(1126).intl;
             const obj5 = { username: author.nick };
             const formatToPlainStringResult1 = intl18.formatToPlainString(intl21.t.zqhHWH, obj5);
             cResult[6] = author.nick;
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol6 = Symbol;
           if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
             const obj7 = { text: intl17.string(intl21.t.KxO2Yl), secondaryText: null };
-            intl17 = tmp(1127).intl;
+            intl17 = tmp(1126).intl;
             cResult[10] = obj7;
             tmp53 = obj7;
           } else {
@@ -104,7 +104,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null != author) {
           let tmp48;
           if (cResult[11] !== author.nick) {
-            const intl16 = tmp(1127).intl;
+            const intl16 = tmp(1126).intl;
             const obj8 = { username: author.nick };
             const formatToPlainStringResult2 = intl16.formatToPlainString(intl21.t.HADQ6n, obj8);
             cResult[11] = author.nick;
@@ -130,7 +130,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp47;
           const _Symbol9 = Symbol;
           if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl15 = tmp(1127).intl;
+            const intl15 = tmp(1126).intl;
             const stringResult = intl15.string(intl21.t.FWqQt5);
             cResult[16] = stringResult;
             tmp45 = stringResult;
@@ -151,7 +151,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null != author) {
           let tmp41;
           if (cResult[19] !== author.nick) {
-            const intl14 = tmp(1127).intl;
+            const intl14 = tmp(1126).intl;
             const obj11 = { username: author.nick };
             const formatToPlainStringResult3 = intl14.formatToPlainString(intl21.t["ifW/ef"], obj11);
             cResult[19] = author.nick;
@@ -177,7 +177,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp40;
           const _Symbol8 = Symbol;
           if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl13 = tmp(1127).intl;
+            const intl13 = tmp(1126).intl;
             const stringResult1 = intl13.string(intl21.t.mX8M6i);
             cResult[24] = stringResult1;
             tmp38 = stringResult1;
@@ -199,7 +199,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp34;
           let tmp36;
           if (cResult[27] !== author.nick) {
-            const intl12 = tmp(1127).intl;
+            const intl12 = tmp(1126).intl;
             const obj14 = { username: author.nick };
             const formatToPlainStringResult4 = intl12.formatToPlainString(intl21.t["3iI/fs"], obj14);
             cResult[27] = author.nick;
@@ -222,7 +222,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol5 = Symbol;
           if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
             const obj16 = { text: intl11.string(intl21.t.dyquw8), secondaryText: null };
-            intl11 = tmp(1127).intl;
+            intl11 = tmp(1126).intl;
             cResult[31] = obj16;
             tmp33 = obj16;
           } else {
@@ -235,7 +235,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp28;
           let tmp30;
           if (cResult[32] !== author.nick) {
-            const intl10 = tmp(1127).intl;
+            const intl10 = tmp(1126).intl;
             const obj17 = { username: author.nick };
             const formatToPlainStringResult5 = intl10.formatToPlainString(intl21.t.Y7wlOj, obj17);
             cResult[32] = author.nick;
@@ -258,7 +258,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol4 = Symbol;
           if (cResult[36] === Symbol.for("react.memo_cache_sentinel")) {
             const obj19 = { text: intl9.string(intl21.t.slFYgi), secondaryText: null };
-            intl9 = tmp(1127).intl;
+            intl9 = tmp(1126).intl;
             cResult[36] = obj19;
             tmp27 = obj19;
           } else {
@@ -271,7 +271,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp22;
           let tmp24;
           if (cResult[37] !== author.nick) {
-            const intl8 = tmp(1127).intl;
+            const intl8 = tmp(1126).intl;
             const obj20 = { username: author.nick };
             const formatToPlainStringResult6 = intl8.formatToPlainString(intl21.t.mikhon, obj20);
             cResult[37] = author.nick;
@@ -294,7 +294,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol3 = Symbol;
           if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
             const obj22 = { text: intl7.string(intl21.t.p0oZmy), secondaryText: null };
-            intl7 = tmp(1127).intl;
+            intl7 = tmp(1126).intl;
             cResult[41] = obj22;
             tmp21 = obj22;
           } else {
@@ -306,7 +306,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp16;
         let tmp18;
         if (cResult[42] !== author.nick) {
-          const intl6 = tmp(1127).intl;
+          const intl6 = tmp(1126).intl;
           const obj23 = { username: author.nick };
           const formatToPlainStringResult7 = intl6.formatToPlainString(intl21.t["7FJeVi"], obj23);
           cResult[42] = author.nick;
@@ -329,7 +329,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol2 = Symbol;
         if (cResult[46] === Symbol.for("react.memo_cache_sentinel")) {
           const obj25 = { text: intl5.string(intl21.t.sDqZHL), secondaryText: null };
-          intl5 = tmp(1127).intl;
+          intl5 = tmp(1126).intl;
           cResult[46] = obj25;
           tmp15 = obj25;
         } else {
@@ -365,13 +365,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           first1 = tmp12;
         }
         if (null != author) {
-          const intl4 = tmp(1127).intl;
+          const intl4 = tmp(1126).intl;
           const obj27 = { count: previewableMedia.length, username: author.nick };
-          formatResult = intl4.format(tmp(1127).t["1OSGGk"], obj27);
+          formatResult = intl4.format(tmp(1126).t["1OSGGk"], obj27);
         } else {
-          const intl3 = tmp(1127).intl;
+          const intl3 = tmp(1126).intl;
           const obj28 = { count: previewableMedia.length };
-          formatResult = intl3.formatToPlainString(tmp(1127).t["8/qgDd"], obj28);
+          formatResult = intl3.formatToPlainString(tmp(1126).t["8/qgDd"], obj28);
         }
         cResult[50] = author;
         cResult[51] = previewableMedia.length;
@@ -379,13 +379,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp9 = formatResult;
       }
       if (null != author) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const obj29 = { count: previewableMedia.length, username: author.nick };
-        formatResult1 = intl2.format(tmp(1127).t["319zWs"], obj29);
+        formatResult1 = intl2.format(tmp(1126).t["319zWs"], obj29);
       } else {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const obj30 = { count: previewableMedia.length };
-        formatResult1 = intl.formatToPlainString(tmp(1127).t.y0gZht, obj30);
+        formatResult1 = intl.formatToPlainString(tmp(1126).t.y0gZht, obj30);
       }
       cResult[47] = author;
       cResult[48] = previewableMedia.length;

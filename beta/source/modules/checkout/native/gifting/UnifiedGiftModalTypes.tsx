@@ -1,9 +1,9 @@
-// Module ID: 10328
-// Function ID: 10329
+// Module ID: 10559
+// Function ID: 10560
 // Name: UnifiedGiftModalTypes
 // Dependencies: [2]
 
-// Module 10328 (UnifiedGiftModalTypes)
+// Module 10559 (UnifiedGiftModalTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalTypes.tsx");

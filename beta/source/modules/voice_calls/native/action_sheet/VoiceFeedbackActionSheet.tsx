@@ -1,22 +1,22 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16646
+// Function ID: 16647
 // Name: VoiceFeedbackActionSheet
-// Dependencies: [19, 1086, 10991, 21, 1253, 1127, 2752, 10994, 16322, 16330, 16324, 4801, 16325, 1987, 4530, 2]
+// Dependencies: [19, 1085, 11249, 21, 1252, 1126, 2755, 11252, 16639, 16647, 16641, 4854, 16642, 1987, 4567, 2]
 // Exports: default
 
-// Module 16329 (VoiceFeedbackActionSheet)
+// Module 16646 (VoiceFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants2 from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Constants2 from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import _modDef2752 from "module_2752" /* 2752 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import FeedbackUtils from "FeedbackUtils" /* 10994 */;
-import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 16322 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 16324 */;
-import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 16330 */;
+import _modDef2755 from "module_2755" /* 2755 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import FeedbackUtils from "FeedbackUtils" /* 11252 */;
+import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 16639 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 16641 */;
+import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 16647 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 10991 */;
+import Constants from "Constants" /* 11249 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -56,38 +56,38 @@ export default function VoiceFeedbackActionSheet(analyticsData) {
   let obj8;
   let obj9;
   analyticsData = analyticsData.analyticsData;
-  const intl = analyticsData(1127).intl;
-  const stringResult = intl.string(analyticsData(1127).t.Ss6tlb);
-  const intl2 = analyticsData(1127).intl;
-  let obj = { value: constants3.CONNECTION, label: intl3.string(_modDef2752.FVhMw6), problemsHeader: intl4.string(analyticsData(1127).t.FJmoxF), problemOptions: obj2.getConnectionFeedbackOptions(), freeformConfig: obj3 };
-  const stringResult1 = intl2.string(analyticsData(1127).t.tLi4cR);
-  intl3 = analyticsData(1127).intl;
-  intl4 = analyticsData(1127).intl;
-  obj2 = analyticsData(10994);
-  obj3 = { value: constants2.FREEFORM, label: intl5.string(analyticsData(1127).t.emlT91) };
-  intl5 = analyticsData(1127).intl;
-  let obj4 = { value: constants3.AUDIO, label: intl6.string(_modDef2752.PL2l6A), problemsHeader: intl7.string(analyticsData(1127).t.FJmoxF), problemOptions: obj5.getAudioFeedbackOptions({ isMobile: true }), freeformConfig: obj6 };
-  intl6 = analyticsData(1127).intl;
-  intl7 = analyticsData(1127).intl;
-  obj5 = analyticsData(10994);
-  obj6 = { value: constants.FREEFORM, label: intl8.string(analyticsData(1127).t.emlT91) };
-  intl8 = analyticsData(1127).intl;
-  let obj7 = { value: constants3.VIDEO, label: intl9.string(_modDef2752["0WFzPh"]), problemsHeader: intl10.string(analyticsData(1127).t.FJmoxF), problemOptions: obj8.getVideoFeedbackOptions(), freeformConfig: obj9 };
-  intl9 = analyticsData(1127).intl;
-  intl10 = analyticsData(1127).intl;
-  obj8 = analyticsData(10994);
-  obj9 = { value: constants6.FREEFORM, label: intl11.string(analyticsData(1127).t.emlT91) };
-  intl11 = analyticsData(1127).intl;
-  const obj10 = { value: constants3.PEOPLE, label: intl12.string(_modDef2752.Moa3W9), problemsHeader: intl13.string(analyticsData(1127).t.FJmoxF), problemOptions: obj11.getPeopleFeedbackOptions(), freeformConfig: obj12 };
-  intl12 = analyticsData(1127).intl;
-  intl13 = analyticsData(1127).intl;
-  obj11 = analyticsData(10994);
-  obj12 = { value: constants5.FREEFORM, label: intl14.string(analyticsData(1127).t.emlT91) };
-  intl14 = analyticsData(1127).intl;
+  const intl = analyticsData(1126).intl;
+  const stringResult = intl.string(analyticsData(1126).t.Ss6tlb);
+  const intl2 = analyticsData(1126).intl;
+  let obj = { value: constants3.CONNECTION, label: intl3.string(_modDef2755.FVhMw6), problemsHeader: intl4.string(analyticsData(1126).t.FJmoxF), problemOptions: obj2.getConnectionFeedbackOptions(), freeformConfig: obj3 };
+  const stringResult1 = intl2.string(analyticsData(1126).t.tLi4cR);
+  intl3 = analyticsData(1126).intl;
+  intl4 = analyticsData(1126).intl;
+  obj2 = analyticsData(11252);
+  obj3 = { value: constants2.FREEFORM, label: intl5.string(analyticsData(1126).t.emlT91) };
+  intl5 = analyticsData(1126).intl;
+  let obj4 = { value: constants3.AUDIO, label: intl6.string(_modDef2755.PL2l6A), problemsHeader: intl7.string(analyticsData(1126).t.FJmoxF), problemOptions: obj5.getAudioFeedbackOptions({ isMobile: true }), freeformConfig: obj6 };
+  intl6 = analyticsData(1126).intl;
+  intl7 = analyticsData(1126).intl;
+  obj5 = analyticsData(11252);
+  obj6 = { value: constants.FREEFORM, label: intl8.string(analyticsData(1126).t.emlT91) };
+  intl8 = analyticsData(1126).intl;
+  let obj7 = { value: constants3.VIDEO, label: intl9.string(_modDef2755["0WFzPh"]), problemsHeader: intl10.string(analyticsData(1126).t.FJmoxF), problemOptions: obj8.getVideoFeedbackOptions(), freeformConfig: obj9 };
+  intl9 = analyticsData(1126).intl;
+  intl10 = analyticsData(1126).intl;
+  obj8 = analyticsData(11252);
+  obj9 = { value: constants6.FREEFORM, label: intl11.string(analyticsData(1126).t.emlT91) };
+  intl11 = analyticsData(1126).intl;
+  const obj10 = { value: constants3.PEOPLE, label: intl12.string(_modDef2755.Moa3W9), problemsHeader: intl13.string(analyticsData(1126).t.FJmoxF), problemOptions: obj11.getPeopleFeedbackOptions(), freeformConfig: obj12 };
+  intl12 = analyticsData(1126).intl;
+  intl13 = analyticsData(1126).intl;
+  obj11 = analyticsData(11252);
+  obj12 = { value: constants5.FREEFORM, label: intl14.string(analyticsData(1126).t.emlT91) };
+  intl14 = analyticsData(1126).intl;
   FeedbackActionSheetV2Default;
-  const intl15 = analyticsData(1127).intl;
+  const intl15 = analyticsData(1126).intl;
   const items = [obj, obj4, obj7, obj10];
-  return <tmp3 headerLabel={stringResult} showHeaderCloseButton ratingBody={stringResult1} categoriesHeader={intl15.string(_modDef2752.tq8598)} optionsTree={items} trackOpen={trackOpen} trackReport={function trackReport(dontShowAgain) {
+  return <tmp3 headerLabel={stringResult} showHeaderCloseButton ratingBody={stringResult1} categoriesHeader={intl15.string(_modDef2755.tq8598)} optionsTree={items} trackOpen={trackOpen} trackReport={function trackReport(dontShowAgain) {
     let category;
     let feedback;
     let rating;
@@ -129,8 +129,8 @@ export default function VoiceFeedbackActionSheet(analyticsData) {
         if (obj3.shouldShowLogUploadForCategory(rating, category, reason)) {
           const obj7 = { mediaSessionId: null, rtcConnectionId: null };
           ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp7);
-          const tmp20Result = tmp20(4801);
-          tmp20Result.openLazy(asyncRequire(16325, dependencyMap.paths), "UploadLogs", obj7);
+          const tmp20Result = tmp20(4854);
+          tmp20Result.openLazy(asyncRequire(16642, dependencyMap.paths), "UploadLogs", obj7);
         }
       }
       const obj4 = ToastUtils;

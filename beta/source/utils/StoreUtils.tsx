@@ -1,270 +1,214 @@
-// Module ID: 5093
-// Function ID: 5094
+// Module ID: 5322
+// Function ID: 5323
 // Name: StoreUtils
-// Dependencies: [5, 502, 4493, 4494, 4497, 1086, 5094, 5092, 5173, 1438, 5175, 1283, 1370, 1127, 2]
+// Dependencies: [5, 502, 4530, 4531, 4534, 1085, 5323, 5321, 5402, 1437, 5404, 1282, 1369, 1126, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 5093 (StoreUtils)
-import intl4 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5092 */;
-import BrowserUtils from "BrowserUtils" /* 5173 */;
+// Module 5322 (StoreUtils)
+import intl4 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5321 */;
+import BrowserUtils from "BrowserUtils" /* 5402 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 4493 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4494 */;
-import SubscriptionStore from "SubscriptionStore" /* 4497 */;
-import Constants from "Constants" /* 1086 */;
-import allSettled_mod from "allSettled" /* 5094 */;
+import BillingInfoStore from "BillingInfoStore" /* 4530 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4531 */;
+import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import Constants from "Constants" /* 1085 */;
+import allSettled_mod from "allSettled" /* 5323 */;
 import size from "module_2" /* 2 */;
 
-let c3, c7, c8;
+const require = globalThis.__r;
+let _require, c6;
 
 let metroImportAll;
 let metroImportDefault;
-let obj = function _httpGetWithCountryCodeQuery() {
-  obj = _asyncToGenerator(async function(arg0, value) {
-    let closure_6;
-    let tmp3;
-    function waitForSubscriptionsToBeFetched() {
-      closure_0 = closure_2(function*(arg0, value) {
-        let obj2;
-        closure_0 = arg0;
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp2 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            c3 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                let c1 = 0;
-                const tmp16 = closure_0;
-                if (closure_1_6.hasFetchedSubscriptions()) {
-                  tmp16();
-                } else if (closure_1_4.isSubscriptionFetching) {
-                  function wait() {
-                    if (closure_2_4.isSubscriptionFetching) {
-                      const _setTimeout = setTimeout;
-                      const timerId = setTimeout(wait, 50);
-                    } else {
-                      closure_0();
-                    }
-                  }
-                  wait();
-                } else {
-                  c2 = 1;
-                  c3 = 1;
-                  const obj5 = { value: obj2.fetchSubscriptions(), done: false };
-                  obj2 = closure_0(c1[10]);
-                  return obj5;
-                }
-              }
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else {
-              closure_0();
-            }
-            c3 = 3;
-            return { value: "IconComponent", done: null };
-          } catch (tmp12) {
-            c3 = 3;
-            throw tmp12;
-          }
-        }
-      });
-      const promise = new Promise(function() {
-        return closure_0(...arguments);
-      });
-      return promise;
+function fetchCountryCodeQueryDependencies() {
+  const items = [];
+  if (!PaymentSourceStore.hasFetchedPaymentSources) {
+    let paymentSourcesFetchRequest = BillingInfoStore.paymentSourcesFetchRequest;
+    const tmp2 = null;
+    const push = items.push;
+    if (paymentSourcesFetchRequest == null) {
+      let tmp3 = _require;
+      let tmp4 = dependencyMap;
+      obj = require("actions/BillingActionCreators");
+      paymentSourcesFetchRequest = obj.fetchPaymentSources();
     }
-    let closure_0 = arg0;
-    let closure_1 = value;
-    if (c8 === 2) {
-      c8 = 3;
+    push(paymentSourcesFetchRequest);
+  }
+  if (!BillingInfoStore.ipCountryCodeLoaded) {
+    const push2 = items.push;
+    let obj2 = require("actions/BillingActionCreators");
+    push2(obj2.fetchIpCountryCode());
+  }
+  const push3 = items.push;
+  _require = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    closure_0 = arg0;
+    if (c3 === 2) {
+      c3 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
         return { value: "IconComponent", done: null };
       }
     } else {
       try {
-        let premiumTypeSubscription;
-        let obj8;
-        let flag;
-        let closure_2;
-        let closure_3;
-        let country_code;
-        let paymentSourceId;
-        let closure_7;
-        let num = 2;
-        c8 = 2;
-        let tmp4 = c7;
-        if (0 === c7) {
+        c3 = 2;
+        if (0 === c2) {
           if (arg0 === 1) {
-            c8 = 3;
+            c3 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c8 = 3;
-            let obj5 = { value, done: true };
-            return obj5;
+            c3 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
-            premiumTypeSubscription = tmp4;
-            let closure_5 = tmp;
-            obj8 = closure_0;
-            flag = closure_1;
-            if (closure_1 === undefined) {
-              flag = true;
-            }
-            closure_2 = undefined;
-            closure_3 = undefined;
-            country_code = undefined;
-            paymentSourceId = undefined;
-            premiumTypeSubscription = undefined;
-            closure_7 = undefined;
-            c7 = 1;
-            c8 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else {
-          if (1 === tmp4) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
-            } else {
-              closure_2 = closure_134_3.isAuthenticated();
-              const tmp89 = flag;
-              if (tmp89) {
-                const tmp6 = closure_2;
-                if (tmp6) {
-                  closure_3 = [];
-                  if (!closure_134_5.hasFetchedPaymentSources) {
-                    const paymentSourcesFetchRequest = closure_134_4.paymentSourcesFetchRequest;
-                    closure_3 = paymentSourcesFetchRequest;
-                    const push = closure_3.push;
-                    if (paymentSourcesFetchRequest == null) {
-                      let obj3 = closure_134_0(closure_134_1[10]);
-                      closure_3 = obj3.fetchPaymentSources();
-                    }
-                    push(closure_3);
-                  }
-                  if (!closure_134_4.ipCountryCodeLoaded) {
-                    const push2 = closure_3.push;
-                    let obj4 = closure_134_0(closure_134_1[10]);
-                    push2(obj4.fetchIpCountryCode());
-                  }
-                  closure_3.push(waitForSubscriptionsToBeFetched());
-                  const items = [Promise.allSettled(closure_3), ];
-                  const self3 = this;
-                  const self4 = this;
-                  let promise = new Promise((arg0) => setTimeout(arg0, 10000));
-                  items[1] = promise;
-                  c7 = 2;
-                  c8 = 1;
-                  const obj7 = { value: race(items), done: false };
-                  return obj7;
+            let c1 = 0;
+            const tmp16 = closure_0;
+            if (SubscriptionStore.hasFetchedSubscriptions()) {
+              tmp16();
+            } else if (BillingInfoStore.isSubscriptionFetching) {
+              function wait() {
+                if (closure_2_4.isSubscriptionFetching) {
+                  const _setTimeout = setTimeout;
+                  const timerId = setTimeout(wait, 50);
+                } else {
+                  closure_0();
                 }
               }
-            }
-          } else if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c8 = 3;
-            obj = { value, done: true };
-            return obj;
-          }
-          country_code = closure_134_5.getDefaultBillingCountryCode();
-          const defaultPaymentSource = closure_134_5.defaultPaymentSource;
-          let id;
-          if (defaultPaymentSource != null) {
-            id = defaultPaymentSource.id;
-          }
-          let c2 = id;
-          if (id == null) {
-            c2 = null;
-          }
-          paymentSourceId = c2;
-          let tmp16 = closure_134_6;
-          premiumTypeSubscription = closure_134_6.getPremiumTypeSubscription();
-          const tmp18 = null != premiumTypeSubscription && null != premiumTypeSubscription.paymentSourceId;
-          if (tmp18) {
-            paymentSourceId = premiumTypeSubscription.paymentSourceId;
-          }
-          if (null === country_code) {
-            const ipCountryCode = closure_134_4.ipCountryCode;
-            let c4 = ipCountryCode;
-            if (ipCountryCode == null) {
-              c4 = null;
-            }
-            country_code = c4;
-          }
-          closure_7 = {};
-          if (null != country_code) {
-            closure_7.country_code = country_code;
-          }
-          if (null != paymentSourceId) {
-            closure_7.payment_source_id = paymentSourceId;
-          }
-          if (null != country_code) {
-            if (typeof obj8 === "string") {
-              obj8 = { url: obj8, oldFormErrors: true, rejectWithError: false };
-            }
-            if (typeof obj8.query === "string") {
-              const _Error = Error;
-              const self = this;
-              const str = "string query not supported";
-              const self2 = this;
-              const error = new Error("string query not supported");
-              throw error;
+              wait();
             } else {
-              const obj9 = {};
-              const merged = Object.assign(closure_7);
-              const merged1 = Object.assign(obj8.query);
-              obj8.query = obj9;
+              c2 = 1;
+              c3 = 1;
+              const obj5 = { value: obj2.fetchSubscriptions(), done: false };
+              obj2 = closure_0(c1[10]);
+              return obj5;
             }
           }
-          const HTTP = closure_134_0(closure_134_1[11]).HTTP;
-          c8 = 3;
-          const obj10 = { value: HTTP.get(obj8), done: true };
-          return obj10;
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          obj = { value, done: true };
+          return obj;
+        } else {
+          closure_0();
         }
-      } catch (tmp82) {
-        c8 = 3;
-        throw tmp82;
+        c3 = 3;
+        return { value: "IconComponent", done: null };
+      } catch (tmp12) {
+        c3 = 3;
+        throw tmp12;
       }
     }
+  });
+  const promise = new Promise(function() {
+    return closure_0(...arguments);
+  });
+  push3(promise);
+  return Promise.allSettled(items);
+}
+let obj = function _httpGetWithCountryCodeQuery() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let closure_4;
+    let id;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_5 = tmp4;
+    let obj6 = closure_0;
+    let flag = closure_1;
+    if (closure_1 === undefined) {
+      flag = true;
+    }
+    await "Reflect";
+    if (1 === c6) {
+      if (arg0 === 1) {
+        let c7 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c7 = 3;
+        const obj4 = { value, done: true };
+        return obj4;
+      } else {
+        const isAuthenticatedResult = flag && closure_133_3.isAuthenticated();
+        if (isAuthenticatedResult) {
+          const items = [closure_133_10(), ];
+          const self3 = this;
+          const self4 = this;
+          const promise = new Promise((arg0) => setTimeout(arg0, 10000));
+          items[1] = promise;
+          c6 = 2;
+          c7 = 1;
+          const obj5 = { value: race(items), done: false };
+          return obj5;
+        }
+      }
+    } else if (arg0 === 1) {
+      c7 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c7 = 3;
+      obj = { value, done: true };
+      return obj;
+    }
+    let country_code = closure_133_5.getDefaultBillingCountryCode();
+    const defaultPaymentSource = closure_133_5.defaultPaymentSource;
+    if (defaultPaymentSource != null) {
+      id = defaultPaymentSource.id;
+    }
+    let c2 = id;
+    if (id == null) {
+      c2 = null;
+    }
+    let paymentSourceId = c2;
+    const tmp = closure_133_6.getPremiumTypeSubscription();
+    const tmp18 = null != tmp && null != tmp.paymentSourceId;
+    if (tmp18) {
+      paymentSourceId = tmp.paymentSourceId;
+    }
+    if (null === country_code) {
+      const ipCountryCode = closure_133_4.ipCountryCode;
+      let c3 = ipCountryCode;
+      if (ipCountryCode == null) {
+        c3 = null;
+      }
+      country_code = c3;
+    }
+    closure_5 = {};
+    if (null != country_code) {
+      closure_5.country_code = country_code;
+    }
+    if (null != paymentSourceId) {
+      closure_5.payment_source_id = paymentSourceId;
+    }
+    if (null != country_code) {
+      if (typeof obj6 === "string") {
+        obj6 = { url: obj6, oldFormErrors: true, rejectWithError: false };
+      }
+      if (typeof obj6.query === "string") {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("string query not supported");
+        throw error;
+      } else {
+        const obj7 = {};
+        const merged = Object.assign(closure_5);
+        const merged1 = Object.assign(obj6.query);
+        obj6.query = obj7;
+      }
+    }
+    const HTTP = closure_133_0(closure_133_1[11]).HTTP;
+    return HTTP.get(obj6);
   });
   return obj(...arguments);
 };
@@ -319,6 +263,7 @@ export const getAssetURL = function getAssetURL(arg0, mimeType, arg2, mp4) {
   }
   return sum;
 };
+export { fetchCountryCodeQueryDependencies };
 export const httpGetWithCountryCodeQuery = function httpGetWithCountryCodeQuery() {
   return obj(...arguments);
 };

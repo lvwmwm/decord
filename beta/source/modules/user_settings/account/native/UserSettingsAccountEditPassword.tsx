@@ -1,31 +1,31 @@
-// Module ID: 14299
-// Function ID: 14300
+// Module ID: 14562
+// Function ID: 14563
 // Name: UserSettingsAccountEditPassword
-// Dependencies: [19, 17, 2042, 6802, 1378, 1086, 21, 4837, 588, 4544, 6405, 6412, 12, 1253, 6411, 6419, 14300, 4833, 1127, 5280, 6021, 5282, 558, 576, 6415, 38, 504, 1491, 2]
+// Dependencies: [19, 17, 2043, 6886, 1377, 1085, 21, 4890, 587, 4589, 6477, 6488, 12, 1252, 6487, 6494, 14563, 4886, 1126, 5593, 6098, 5594, 558, 576, 6490, 38, 504, 1490, 2]
 
-// Module 14299 (UserSettingsAccountEditPassword)
+// Module 14562 (UserSettingsAccountEditPassword)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 588 */;
-import intl6 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import native from "native" /* 4544 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Stack_Stack from "Stack/Stack" /* 5280 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6021 */;
-import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 6405 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
-import showInvalidUsernameToastNative from "showInvalidUsernameToastNative" /* 6412 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14300 */;
+import nativeDefault from "native" /* 587 */;
+import intl6 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import native from "native" /* 4589 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6098 */;
+import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 6477 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6487 */;
+import showInvalidUsernameToastNative from "showInvalidUsernameToastNative" /* 6488 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6494 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14563 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2042 */;
-import UserSettingsAccountStore from "UserSettingsAccountStore" /* 6802 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2043 */;
+import UserSettingsAccountStore from "UserSettingsAccountStore" /* 6886 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let unpackModuleId;
 ({ Image: closure_4, View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 ({ AnalyticEvents: c10, LoginRequiredActions: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-const authStore2 = { newPassword: "unicodeVersion", password: 17076801 };
+const authStore2 = { newPassword: "unicodeVersion", password: 17082945 };
 let obj = { onePass: { width: 20, height: 20 }, unverifiedWrapper: obj2, container: { padding: 16 }, header: { marginBottom: 20 }, requiredActionsSubtitle: { textAlign: "center", marginTop: 8 }, requiredActionsTitle: { flex: 1, textAlign: "center" }, image: { marginTop: 12, marginBottom: 16, alignSelf: "center" } };
 obj2 = { overflow: "hidden", borderRadius: nativeDefault.radii.xs, marginVertical: 16 };
 let closure_15 = createStyles.createLegacyClassComponentStyles(obj);
@@ -215,15 +215,15 @@ class EditPassword extends Component {
     const TextInput = TextInput_TextInput.TextInput;
     const items3 = [closure_12(TextInput, obj10), , ];
     const obj11 = { label: newPasswordLabel, ref: self.handleSetNewPasswordRef, secureTextEntry: true, errorMessage: self.getError("new_password"), onChange: self.handleNewPasswordChange, value: newPassword, returnKeyType: "done", autoComplete: "new-password", onSubmitEditing: handleSubmit, required: true };
-    const TextInput2 = tmp16(6021).TextInput;
+    const TextInput2 = tmp16(6098).TextInput;
     handleSubmit = undefined;
     if (self.canSubmit()) {
       handleSubmit = self.handleSubmit;
     }
     items3[1] = closure_12(TextInput2, obj11);
     const obj12 = { text: intl5.string(intl6.t["FRep5/"]), onPress: self.handleSubmit, loading: submitting, disabled: submitting };
-    const Button = tmp16(5282).Button;
-    intl5 = tmp16(1127).intl;
+    const Button = tmp16(5594).Button;
+    intl5 = tmp16(1126).intl;
     if (!submitting) {
       submitting = null == password;
     }
@@ -246,7 +246,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp2 = dependencyMap;
   let obj = flag(576);
   const cResult = obj.c(6);
-  let obj2 = flag(6415);
+  let obj2 = flag(6490);
   const params = obj2.useSettingNavigationRoute().params;
   flag = undefined;
   if (params != null) {
@@ -292,8 +292,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (flag == null) {
         flag = false;
       }
-      intl = tmp2(1127).intl;
-      intl2 = tmp2(1127).intl;
+      intl = tmp2(1126).intl;
+      intl2 = tmp2(1126).intl;
       if (result) {
         result = tmp8;
       }
@@ -307,7 +307,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = flag(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
-  const tmpResult2 = flag(1491);
+  const tmpResult2 = flag(1490);
   navigation = tmpResult2.useNavigation();
   if (cResult[3] === navigation) {
     let tmp11;
@@ -326,7 +326,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   let flag;
   const tmp2 = dependencyMap;
-  let obj = flag(6415);
+  let obj = flag(6490);
   const params = obj.useSettingNavigationRoute().params;
   flag = undefined;
   if (params != null) {
@@ -366,14 +366,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (flag == null) {
       flag = false;
     }
-    intl = tmp2(1127).intl;
-    intl2 = tmp2(1127).intl;
+    intl = tmp2(1126).intl;
+    intl2 = tmp2(1126).intl;
     if (result) {
       result = tmp8;
     }
     return obj2;
   });
-  const tmpResult2 = flag(1491);
+  const tmpResult2 = flag(1490);
   let obj2 = { navigation: tmpResult2.useNavigation() };
   const merged = Object.assign(stateFromStoresObject);
   return closure_12(EditPassword, obj2);

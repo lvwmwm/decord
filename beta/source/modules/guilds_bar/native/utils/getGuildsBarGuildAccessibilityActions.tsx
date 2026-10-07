@@ -1,23 +1,23 @@
-// Module ID: 15976
-// Function ID: 15977
+// Module ID: 16279
+// Function ID: 16280
 // Name: getGuildsBarGuildAccessibilityActions
-// Dependencies: [2073, 5751, 1127, 8656, 4687, 15977, 5833, 2]
+// Dependencies: [2074, 1126, 16280, 16281, 4729, 5705, 2]
 // Exports: default
 
-// Module 15976 (getGuildsBarGuildAccessibilityActions)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8656 */;
-import getGuildBarNeighborsDefault from "getGuildBarNeighbors" /* 15977 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import SortedGuildStore from "SortedGuildStore" /* 5751 */;
+// Module 16279 (getGuildsBarGuildAccessibilityActions)
+import shared from "shared" /* 4729 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
+import getGuildBarNeighborsDefault from "getGuildBarNeighbors" /* 16280 */;
+import moveGuildNode from "moveGuildNode" /* 16281 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
-let tmp4;
-const shared = tmp4(4687);
-const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildAccessibilityActions.tsx");
+let tmp3;
+const moveGuildNodeDefault = tmp3(16281);
+let result = size.fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildAccessibilityActions.tsx");
 
 export default function getGuildsBarGuildAccessibilityActions(arg0) {
   let above;
@@ -71,17 +71,14 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
               const items = [closure_0];
               const obj = GuildActionCreatorsDefault;
               const guildFolderLocal = obj.createGuildFolderLocal(items, "");
-              const obj2 = UserSettingsActionCreators;
-              obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
-              const tmp3 = closure_1;
-              if (null != closure_1) {
-                const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
-                AccessibilityAnnouncer.announce(tmp3);
-              }
+              const obj2 = moveGuildNode;
+              const result = obj2.persistGuildsBarOrder();
+              const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
+              AccessibilityAnnouncer.announce(closure_1);
             }
       };
       const push = items.push;
-      intl = tmp16(1127).intl;
+      intl = tmp16(1126).intl;
       push(obj);
     }
     if (null != above) {
@@ -108,20 +105,16 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                           }
                         }
                         if (null != node) {
-                          const tmp3Result = GuildActionCreatorsDefault;
-                          tmp3Result.moveById(closure_0, node.id, true, true);
-                          const obj2 = UserSettingsActionCreators;
-                          obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
-                          const tmp10 = require;
+                          moveGuildNodeDefault(closure_0, node.id, true, true);
                           if (null != closure_1) {
-                            const AccessibilityAnnouncer = tmp10(4687).AccessibilityAnnouncer;
+                            const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
                             AccessibilityAnnouncer.announce(closure_1);
                           }
                         }
                       }
                     }
           };
-          intl4 = tmp16(1127).intl;
+          intl4 = tmp16(1126).intl;
           obj5 = { folderName: name };
           push3(obj4);
           const _HermesInternal2 = HermesInternal;
@@ -140,20 +133,17 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                           }
                         }
                         if (null != node) {
-                          const tmp2Result = GuildActionCreatorsDefault;
-                          tmp2Result.moveById(closure_0, node.id, false, false);
-                          const obj2 = UserSettingsActionCreators;
-                          obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+                          moveGuildNodeDefault(closure_0, node.id, false, false);
                         }
                       }
                     }
           };
-          intl5 = tmp16(1127).intl;
+          intl5 = tmp16(1126).intl;
           obj7 = { folderName: name };
           push4(obj6);
         }
-        const intl3 = tmp16(1127).intl;
-        name = intl3.string(tmp16(1127).t.ebAnWE);
+        const intl3 = tmp16(1126).intl;
+        name = intl3.string(tmp16(1126).t.ebAnWE);
       } else {
         const push2 = items.push;
         const obj8 = {
@@ -170,15 +160,12 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                       }
                     }
                     if (null != node) {
-                      const tmp2Result = GuildActionCreatorsDefault;
-                      tmp2Result.moveById(closure_0, node.id, false, false);
-                      const obj2 = UserSettingsActionCreators;
-                      obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+                      moveGuildNodeDefault(closure_0, node.id, false, false);
                     }
                   }
                 }
         };
-        intl2 = tmp16(1127).intl;
+        intl2 = tmp16(1126).intl;
         push2(obj8);
       }
     }
@@ -190,7 +177,6 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
           if ("" !== node2.name) {
             name2 = node2.name;
           }
-          let tmp10 = globalThis;
           const _HermesInternal3 = HermesInternal;
           const push6 = items.push;
           const obj9 = {
@@ -207,20 +193,16 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                           }
                         }
                         if (null != node) {
-                          const tmp3Result = GuildActionCreatorsDefault;
-                          tmp3Result.moveById(closure_0, node.id, true, true);
-                          const obj2 = UserSettingsActionCreators;
-                          obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
-                          const tmp10 = require;
+                          moveGuildNodeDefault(closure_0, node.id, true, true);
                           if (null != closure_1) {
-                            const AccessibilityAnnouncer = tmp10(4687).AccessibilityAnnouncer;
+                            const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
                             AccessibilityAnnouncer.announce(closure_1);
                           }
                         }
                       }
                     }
           };
-          intl8 = tmp16(1127).intl;
+          intl8 = tmp16(1126).intl;
           obj10 = { folderName: name2 };
           push6(obj9);
           const _HermesInternal4 = HermesInternal;
@@ -239,20 +221,17 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                           }
                         }
                         if (null != node) {
-                          const tmp2Result = GuildActionCreatorsDefault;
-                          tmp2Result.moveById(closure_0, node.id, true, false);
-                          const obj2 = UserSettingsActionCreators;
-                          obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+                          moveGuildNodeDefault(closure_0, node.id, true, false);
                         }
                       }
                     }
           };
-          intl9 = tmp16(1127).intl;
+          intl9 = tmp16(1126).intl;
           obj12 = { folderName: name2 };
           push7(obj11);
         }
-        const intl7 = tmp16(1127).intl;
-        name2 = intl7.string(tmp16(1127).t.ebAnWE);
+        const intl7 = tmp16(1126).intl;
+        name2 = intl7.string(tmp16(1126).t.ebAnWE);
       } else {
         const push5 = items.push;
         const obj13 = {
@@ -269,15 +248,12 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                       }
                     }
                     if (null != node) {
-                      const tmp2Result = GuildActionCreatorsDefault;
-                      tmp2Result.moveById(closure_0, node.id, true, false);
-                      const obj2 = UserSettingsActionCreators;
-                      obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+                      moveGuildNodeDefault(closure_0, node.id, true, false);
                     }
                   }
                 }
         };
-        intl6 = tmp16(1127).intl;
+        intl6 = tmp16(1126).intl;
         push5(obj13);
       }
     }
@@ -298,20 +274,16 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                   if (null != tmp5) {
                     const containingFolder = tmp5.containingFolder;
                     if (null != containingFolder) {
-                      const tmp3Result = GuildActionCreatorsDefault;
-                      tmp3Result.moveById(closure_0, containingFolder.id, false, false);
-                      const obj2 = UserSettingsActionCreators;
-                      obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
-                      const tmp9 = require;
+                      moveGuildNodeDefault(closure_0, containingFolder.id, false, false);
                       if (null != closure_2) {
-                        const AccessibilityAnnouncer = tmp9(4687).AccessibilityAnnouncer;
+                        const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
                         AccessibilityAnnouncer.announce(closure_2);
                       }
                     }
                   }
                 }
         };
-        intl11 = tmp16(1127).intl;
+        intl11 = tmp16(1126).intl;
         obj15 = { folderName: name3 };
         push8(obj14);
         const _HermesInternal6 = HermesInternal;
@@ -324,25 +296,21 @@ export default function getGuildsBarGuildAccessibilityActions(arg0) {
                   if (null != tmp5) {
                     const containingFolder = tmp5.containingFolder;
                     if (null != containingFolder) {
-                      const tmp3Result = GuildActionCreatorsDefault;
-                      tmp3Result.moveById(closure_0, containingFolder.id, true, false);
-                      const obj2 = UserSettingsActionCreators;
-                      obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
-                      const tmp9 = require;
+                      moveGuildNodeDefault(closure_0, containingFolder.id, true, false);
                       if (null != closure_2) {
-                        const AccessibilityAnnouncer = tmp9(4687).AccessibilityAnnouncer;
+                        const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
                         AccessibilityAnnouncer.announce(closure_2);
                       }
                     }
                   }
                 }
         };
-        intl12 = tmp16(1127).intl;
+        intl12 = tmp16(1126).intl;
         obj17 = { folderName: name3 };
         push9(obj16);
       }
-      const intl10 = tmp16(1127).intl;
-      name3 = intl10.string(tmp16(1127).t.ebAnWE);
+      const intl10 = tmp16(1126).intl;
+      name3 = intl10.string(tmp16(1126).t.ebAnWE);
     }
     return items;
   }

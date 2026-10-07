@@ -1,17 +1,17 @@
-// Module ID: 13645
-// Function ID: 13646
+// Module ID: 13916
+// Function ID: 13917
 // Name: Tooltip/Tooltip
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 1376, 4833, 1189, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1375, 4886, 1188, 2]
 
-// Module 13645 (Tooltip/Tooltip)
+// Module 13916 (Tooltip/Tooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -218,7 +218,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 if (null != label) {
                   const obj9 = { style: items3, children: label };
                   items3 = [tmp6.label, labelStyle];
-                  tmp23 = React3(tmp(1189).LegacyText, obj9);
+                  tmp23 = React3(tmp(1188).LegacyText, obj9);
                 }
                 cResult[18] = label;
                 cResult[19] = labelStyle;
@@ -229,7 +229,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               let tmp20 = null;
               if (null != title) {
                 const obj10 = { style: tmp6.title, variant: "text-md/semibold", color: "text-overlay-light", children: title };
-                tmp20 = React3(tmp(4833).Heading, obj10);
+                tmp20 = React3(tmp(4886).Heading, obj10);
               }
               cResult[15] = tmp6.title;
               cResult[16] = title;

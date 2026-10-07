@@ -1,19 +1,19 @@
-// Module ID: 6576
-// Function ID: 6577
+// Module ID: 6649
+// Function ID: 6650
 // Name: ActionSheetHeaderBar
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 1485, 4535, 5267, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 1484, 4580, 5770, 2]
 
-// Module 6576 (ActionSheetHeaderBar)
+// Module 6649 (ActionSheetHeaderBar)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
-import useToken from "useToken" /* 4535 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import useToken from "useToken" /* 4580 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5770 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_10 = createStyles.createStyles((arg0, height, marginBottom) => {
     const obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
   } else if ("overlay" === arg0) {
     const obj5 = { backgroundColor: nativeDefault.unsafe_rawColors.WHITE };
-    const merged1 = Object.assign(tmp2(588).shadows.SHADOW_LOW);
+    const merged1 = Object.assign(tmp2(587).shadows.SHADOW_LOW);
     tmp4 = obj5;
   }
   const merged2 = Object.assign(tmp4);
@@ -68,8 +68,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== accessibilityLabel) {
     let stringResult = accessibilityLabel;
     if (undefined === accessibilityLabel) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.WAI6xu);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.WAI6xu);
     }
     cResult[0] = accessibilityLabel;
     cResult[1] = stringResult;

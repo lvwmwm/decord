@@ -1,14 +1,14 @@
-// Module ID: 10673
-// Function ID: 10674
+// Module ID: 10914
+// Function ID: 10915
 // Name: apexExperiment
-// Dependencies: [1441, 558, 576, 9778, 9779, 10674, 2]
+// Dependencies: [1440, 558, 576, 10007, 10008, 10915, 2]
 
-// Module 10673 (apexExperiment)
+// Module 10914 (apexExperiment)
 import react from "react" /* 576 */;
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9778 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9779 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 10674 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1441 */;
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 10007 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10008 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 10915 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -110,6 +110,9 @@ const obj22 = { name: "2026-09-quest-mobile-bar-secondary-cta", kind: "user", de
 obj23 = { 1: null };
 obj23[1] = { enabled: true };
 const apexExperiment11 = ApexExperiment.createApexExperiment(obj22);
+ApexExperiment = ApexExperiment_mod;
+const obj24 = { name: "2026-09-new-orb-reward-visuals", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment12 = ApexExperiment.createApexExperiment(obj24);
 const result = size.fileFinishedImporting("modules/quests/experiments/index.tsx");
 
 export const VideoEndCardV2Experiment = apexExperiment;
@@ -127,3 +130,4 @@ export const MobileQuestHomeSortPriorityExperiment = apexExperiment9;
 export const QuestHomeLayoutVisualTweakVariant = obj19;
 export const QuestHomeLayoutVisualTweaksExperiment = apexExperiment10;
 export const QuestMobileBarSecondaryCtaExperiment = apexExperiment11;
+export const QuestOrbTierExperiment = apexExperiment12;

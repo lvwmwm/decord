@@ -1,11 +1,11 @@
-// Module ID: 14359
-// Function ID: 14360
+// Module ID: 14643
+// Function ID: 14644
 // Name: updateDmSafetyAlertsSetting
-// Dependencies: [2032, 1229, 2]
+// Dependencies: [2033, 1228, 2]
 // Exports: updateDmSafetyAlertsSetting
 
-// Module 14359 (updateDmSafetyAlertsSetting)
-import wrappers from "wrappers" /* 1229 */;
+// Module 14643 (updateDmSafetyAlertsSetting)
+import wrappers from "wrappers" /* 1228 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

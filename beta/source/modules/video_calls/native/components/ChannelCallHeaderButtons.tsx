@@ -1,19 +1,19 @@
-// Module ID: 9490
-// Function ID: 9491
+// Module ID: 9718
+// Function ID: 9719
 // Name: ChannelCallHeaderButtons
-// Dependencies: [19, 1999, 21, 558, 576, 504, 9081, 9359, 1127, 9491, 8826, 8827, 9492, 5038, 2]
+// Dependencies: [19, 1999, 21, 558, 576, 504, 9306, 9587, 1126, 9719, 9052, 9053, 9720, 5091, 2]
 
-// Module 9490 (ChannelCallHeaderButtons)
+// Module 9718 (ChannelCallHeaderButtons)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1127 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5038 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 8826 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 8827 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9359 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9491 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9492 */;
+import intl2 from "intl" /* 1126 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 9052 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 9053 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9587 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9719 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9720 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -61,9 +61,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     let tmp10 = null;
     if (isVideoEnabled) {
-      videoDevices(9359);
-      const intl = tmp(1127).intl;
-      tmp10 = <tmp13 accessibilityLabel={intl.string(videoDeviceId(1127).t["t9eQ/g"])} source={videoDevices(9491)} onPress={tmp8} disableBackground />;
+      videoDevices(9587);
+      const intl = tmp(1126).intl;
+      tmp10 = <tmp13 accessibilityLabel={intl.string(videoDeviceId(1126).t["t9eQ/g"])} source={videoDevices(9719)} onPress={tmp8} disableBackground />;
     }
     cResult[5] = tmp8;
     cResult[6] = isVideoEnabled;
@@ -93,7 +93,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4 = null;
   if (stateFromStoresObject.isVideoEnabled) {
     ChannelCallNavigatorIconDefault;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     tmp4 = <tmp7 accessibilityLabel={intl.string(intl2.t["t9eQ/g"])} source={AssetRegistryDefault} onPress={function onPress() {
       const keys = Object.keys(importDefault);
       const found = keys.find((item) => item !== closure_1_0);
@@ -126,8 +126,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp8 = null;
     if (!tmp5) {
       ChannelCallNavigatorIconDefault;
-      const intl = tmp(1127).intl;
-      tmp8 = <tmp4Result accessibilityLabel={intl.string(channel(1127).t.HK4JIu)} source={AssetRegistryDefault2} onPress={function onPress() {
+      const intl = tmp(1126).intl;
+      tmp8 = <tmp4Result accessibilityLabel={intl.string(channel(1126).t.HK4JIu)} source={AssetRegistryDefault2} onPress={function onPress() {
         const obj = ChannelRTCActionCreatorsDefault;
         return obj.selectParticipant(channel.id, null);
       }} disableBackground />;
@@ -146,8 +146,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp4 = null;
     if (!tmp3) {
       ChannelCallNavigatorIconDefault;
-      const intl = channel(1127).intl;
-      tmp4 = <tmpResult accessibilityLabel={intl.string(channel(1127).t.HK4JIu)} source={AssetRegistryDefault2} onPress={function onPress() {
+      const intl = channel(1126).intl;
+      tmp4 = <tmpResult accessibilityLabel={intl.string(channel(1126).t.HK4JIu)} source={AssetRegistryDefault2} onPress={function onPress() {
         const obj = ChannelRTCActionCreatorsDefault;
         return obj.selectParticipant(channel.id, null);
       }} disableBackground />;

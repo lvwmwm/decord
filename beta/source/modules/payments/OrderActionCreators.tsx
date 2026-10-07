@@ -1,15 +1,15 @@
-// Module ID: 6665
-// Function ID: 6666
+// Module ID: 6745
+// Function ID: 6746
 // Name: OrderActionCreators
-// Dependencies: [5, 1086, 3, 4513, 1283, 4506, 2]
+// Dependencies: [5, 1085, 3, 4550, 1282, 4543, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 6665 (OrderActionCreators)
+// Module 6745 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1086 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingError_mod from "BillingError" /* 4513 */;
+import BillingError_mod from "BillingError" /* 4550 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12;
@@ -19,8 +19,8 @@ let obj = function _signOrder() {
     let c0;
     let c1;
     let c2;
-    let closure_3;
-    let tmp39;
+    let c3;
+    let tmp44;
     function isOrderShape(body) {
       return null != body && typeof body === "object" && "id" in body && "status" in body;
     }
@@ -39,11 +39,11 @@ let obj = function _signOrder() {
         return { value: "IconComponent", done: null };
       }
     } else {
-      let tmp44;
       let c4;
       try {
         let expected_revision;
         let load_id;
+        let purchase_token;
         let body;
         c6 = 2;
         if (0 === c5) {
@@ -60,12 +60,13 @@ let obj = function _signOrder() {
             c0 = undefined;
             expected_revision = undefined;
             load_id = undefined;
-            ({ orderId: c0, expectedRevision: c1, loadId: c2 } = closure_0);
-            tmp44 = undefined;
+            purchase_token = undefined;
+            ({ orderId: c0, expectedRevision: c1, loadId: c2, purchaseToken: c3 } = closure_0);
+            closure_4 = undefined;
             body = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -80,15 +81,18 @@ let obj = function _signOrder() {
             if (null != expected_revision) {
               body.expected_revision = expected_revision;
             }
+            if (null != purchase_token) {
+              body.purchase_token = purchase_token;
+            }
             c4 = 1;
             const HTTP = closure_130_0(closure_130_1[4]).HTTP;
-            const request = { url: closure_130_3.ORDER_SIGN(c0), body, context: tmp39, rejectWithError: true };
+            const request = { url: closure_130_3.ORDER_SIGN(c0), body, context: tmp44, rejectWithError: true };
             const post = HTTP.post;
-            tmp39 = undefined;
+            tmp44 = undefined;
             if (null != load_id) {
               if ("" !== load_id) {
                 const obj5 = { load_id };
-                tmp39 = obj5;
+                tmp44 = obj5;
               }
             }
             c5 = 3;
@@ -98,16 +102,16 @@ let obj = function _signOrder() {
           }
         } else if (2 === c5) {
           c4 = 0;
-          let closure_5 = tmp44;
-          if (closure_5 instanceof closure_130_0(closure_130_1[4]).HTTPResponseError) {
-            if (400 === closure_5.status) {
-              if (isOrderShape(closure_5.body)) {
+          let closure_6 = closure_3;
+          if (closure_6 instanceof closure_130_0(closure_130_1[4]).HTTPResponseError) {
+            if (400 === closure_6.status) {
+              if (isOrderShape(closure_6.body)) {
                 const self3 = this;
-                throw new closure_130_5(closure_5.body);
+                throw new closure_130_5(closure_6.body);
               }
             }
           }
-          throw closure_5;
+          throw closure_6;
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -117,9 +121,9 @@ let obj = function _signOrder() {
           const obj7 = { value, done: true };
           return obj7;
         } else {
-          tmp44 = value;
+          closure_4 = value;
           c4 = 0;
-          if (null == tmp44.body) {
+          if (null == closure_4.body) {
             const _Error = Error;
             const self = this;
             const self2 = this;
@@ -128,14 +132,15 @@ let obj = function _signOrder() {
             throw error;
           } else {
             c6 = 3;
-            obj = { value: tmp44.body, done: true };
+            obj = { value: closure_4.body, done: true };
             return obj;
           }
         }
-      } catch (tmp44) {
+      } catch (tmp49) {
+        closure_3 = tmp49;
         if (0 === c4) {
           c6 = 3;
-          throw tmp44;
+          throw tmp49;
         } else {
           c5 = 2;
         }

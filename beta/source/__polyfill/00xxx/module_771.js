@@ -1,37 +1,40 @@
 // Module ID: 771
 // Function ID: 772
-// Dependencies: [714, 741]
-// Exports: createCheckInEnvelope
+// Dependencies: [699, 700, 724]
+// Exports: initAndBind, setCurrentClient
 
 // Module 771
-import _mod714 from "module_714" /* 714 */;
-import _mod741 from "module_741" /* 741 */;
+import _mod699 from "module_699" /* 699 */;
+import CONSOLE_LEVELS from "CONSOLE_LEVELS" /* 700 */;
+import _mod724 from "module_724" /* 724 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const createCheckInEnvelope = function createCheckInEnvelope(arg0, trace, sdk, arg3, arg4) {
-  let date;
-  const obj = { sent_at: date.toISOString() };
-  sdk = undefined;
-  date = new Date();
-  if (sdk != null) {
-    sdk = sdk.sdk;
+export const initAndBind = function initAndBind(arg0, debug) {
+  if (true === debug.debug) {
+    const DEBUG_BUILD = _mod699.DEBUG_BUILD;
+    const obj = CONSOLE_LEVELS;
+    if (DEBUG_BUILD) {
+      debug = obj.debug;
+      debug.enable();
+    } else {
+      obj.consoleSandbox(() => {
+        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
+      });
+    }
   }
-  if (sdk) {
-    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
-    obj.sdk = obj2;
-  }
-  const tmp2 = arg3 && arg4;
-  if (tmp2) {
-    const obj4 = _mod714;
-    obj.dsn = obj4.dsnToString(arg4);
-  }
-  const tmp5 = trace;
-  if (tmp5) {
-    obj.trace = trace;
-  }
-  const items = [{ type: "check_in" }, arg0];
-  const items1 = [items];
-  const obj5 = _mod741;
-  return obj5.createEnvelope(obj, items1);
+  const obj2 = _mod724;
+  const currentScope = obj2.getCurrentScope();
+  currentScope.update(debug.initialScope);
+  const obj4 = new arg0(debug);
+  const obj5 = _mod724;
+  const currentScope1 = obj5.getCurrentScope();
+  currentScope1.setClient(obj4);
+  obj4.init();
+  return obj4;
+};
+export const setCurrentClient = function setCurrentClient(arg0) {
+  const obj = _mod724;
+  const currentScope = obj.getCurrentScope();
+  currentScope.setClient(arg0);
 };

@@ -1,14 +1,14 @@
-// Module ID: 11054
-// Function ID: 11055
+// Module ID: 11312
+// Function ID: 11313
 // Name: isStaffToNonStaffForward
-// Dependencies: [2051, 2073, 1378, 1086, 2]
+// Dependencies: [2051, 2074, 1377, 1085, 2]
 // Exports: default
 
-// Module 11054 (isStaffToNonStaffForward)
-import Constants from "Constants" /* 1086 */;
+// Module 11312 (isStaffToNonStaffForward)
+import Constants from "Constants" /* 1085 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import UserStore from "UserStore" /* 1378 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let user;
@@ -17,12 +17,12 @@ const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/forwarding/isStaffToNonStaffForward.tsx");
 
 export default function isStaffToNonStaffForward(channel_id, arr) {
-  const f106108 = (item) => {
+  const f107340 = (item) => {
     user = user.getUser(item);
     const tmp = null != user && user.isStaff();
     return tmp;
   };
-  const f106109 = (item) => {
+  const f107341 = (item) => {
     channel = channel.getChannel(item);
     let tmp = null != channel;
     if (tmp) {
@@ -32,7 +32,7 @@ export default function isStaffToNonStaffForward(channel_id, arr) {
         let everyResult;
         if (channel.isPrivate()) {
           const recipients = channel.recipients;
-          everyResult = recipients.every(f106108);
+          everyResult = recipients.every(f107340);
         } else {
           guild = guild.getGuild(channel.guild_id);
           everyResult = null != guild;
@@ -60,7 +60,7 @@ export default function isStaffToNonStaffForward(channel_id, arr) {
       let everyResult;
       if (channel.isPrivate()) {
         let recipients = channel.recipients;
-        everyResult = recipients.every(f106108);
+        everyResult = recipients.every(f107340);
       } else {
         let guild = GuildStore.getGuild(channel.guild_id);
         everyResult = null != guild;
@@ -69,8 +69,8 @@ export default function isStaffToNonStaffForward(channel_id, arr) {
           everyResult = features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
         }
       }
-      tmp4 = everyResult && arr.some(f106109);
-      const someResult = everyResult && arr.some(f106109);
+      tmp4 = everyResult && arr.some(f107341);
+      const someResult = everyResult && arr.some(f107341);
     }
     return tmp4;
   } else {

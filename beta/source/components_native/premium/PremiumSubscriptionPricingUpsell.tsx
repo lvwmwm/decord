@@ -1,25 +1,25 @@
-// Module ID: 13078
-// Function ID: 13079
+// Module ID: 13342
+// Function ID: 13343
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2115, 1378, 4496, 4497, 6659, 1086, 1380, 21, 4837, 558, 576, 504, 4491, 12941, 585, 6840, 6662, 4833, 1370, 6657, 6656, 1127, 1888, 2]
+// Dependencies: [32, 19, 17, 2116, 1377, 4533, 4534, 6739, 1085, 1379, 21, 4890, 558, 576, 504, 4528, 13205, 584, 6925, 6742, 4886, 1369, 6737, 6736, 1126, 1888, 2]
 
-// Module 13078 (PremiumSubscriptionPricingUpsell)
+// Module 13342 (PremiumSubscriptionPricingUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl6 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 12941 */;
+import Constants from "Constants" /* 1085 */;
+import intl6 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13205 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import UserStore from "UserStore" /* 1378 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4496 */;
-import SubscriptionStore from "SubscriptionStore" /* 4497 */;
-import IAPStore from "IAPStore" /* 6659 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import UserStore from "UserStore" /* 1377 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4533 */;
+import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import IAPStore from "IAPStore" /* 6739 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] !== stateFromStores) {
-    const obj3 = stateFromStores2(4491);
+    const obj3 = stateFromStores2(4528);
     const hasBoostDiscountResult = obj3.hasBoostDiscount(stateFromStores);
     class T {
       constructor() {
@@ -110,7 +110,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult6 = tmp(504);
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp12, tmp13);
-  const tmpResult7 = tmp(12941);
+  const tmpResult7 = tmp(13205);
   const subscriptionPlansLoaded = tmpResult7.useSubscriptionPlansLoaded();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [SubscriptionStore];
@@ -181,7 +181,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp = closure_1;
           tmp2 = closure_2;
           obj = closure_1(closure_2[17]);
-          waitResult = obj.wait(() => { /* body not rendered: F141585 */ });
+          waitResult = obj.wait(() => { /* body not rendered: F143228 */ });
         }
         return;
       }
@@ -202,7 +202,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp = closure_1;
           tmp2 = closure_2;
           obj = closure_1(closure_2[17]);
-          waitResult = obj.wait(() => { /* body not rendered: F141585 */ });
+          waitResult = obj.wait(() => { /* body not rendered: F143228 */ });
         }
         return;
       }
@@ -217,7 +217,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp = closure_1;
           tmp2 = closure_2;
           obj = closure_1(closure_2[17]);
-          waitResult = obj.wait(() => { /* body not rendered: F141585 */ });
+          waitResult = obj.wait(() => { /* body not rendered: F143228 */ });
         }
         return;
       }
@@ -244,7 +244,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp = closure_1;
           tmp2 = closure_2;
           obj = closure_1(closure_2[17]);
-          waitResult = obj.wait(() => { /* body not rendered: F141585 */ });
+          waitResult = obj.wait(() => { /* body not rendered: F143228 */ });
         }
         return;
       }
@@ -261,7 +261,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp = closure_1;
           tmp2 = closure_2;
           obj = closure_1(closure_2[17]);
-          waitResult = obj.wait(() => { /* body not rendered: F141585 */ });
+          waitResult = obj.wait(() => { /* body not rendered: F143228 */ });
         }
         return;
       }
@@ -276,7 +276,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp = closure_1;
           tmp2 = closure_2;
           obj = closure_1(closure_2[17]);
-          waitResult = obj.wait(() => { /* body not rendered: F141585 */ });
+          waitResult = obj.wait(() => { /* body not rendered: F143228 */ });
         }
         return;
       }
@@ -288,7 +288,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             tmp = closure_1;
             tmp2 = closure_2;
             obj = closure_1(closure_2[17]);
-            waitResult = obj.wait(() => { /* body not rendered: F141585 */ });
+            waitResult = obj.wait(() => { /* body not rendered: F143228 */ });
           }
           return;
         }
@@ -302,7 +302,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp = closure_1;
           tmp2 = closure_2;
           obj = closure_1(closure_2[17]);
-          waitResult = obj.wait(() => { /* body not rendered: F141585 */ });
+          waitResult = obj.wait(() => { /* body not rendered: F143228 */ });
         }
         return;
       }
@@ -328,7 +328,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp = closure_1;
           tmp2 = closure_2;
           obj = closure_1(closure_2[17]);
-          waitResult = obj.wait(() => { /* body not rendered: F141585 */ });
+          waitResult = obj.wait(() => { /* body not rendered: F143228 */ });
         }
         return;
       }
@@ -366,7 +366,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f113294 = () => {
+  const f114494 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[19]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[19]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[19]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[19]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[19]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -405,8 +405,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f113294), 5);
-  str2(obj7.useStateFromStoresArray(items4, f113294), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f114494), 5);
+  str2(obj7.useStateFromStoresArray(items4, f114494), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];
@@ -571,7 +571,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const subscriptionPlansLoaded = obj2.useSubscriptionPlansLoaded();
   ({ pricingSection, title } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl6.t["3x1PFE"]);
     cResult[0] = stringResult;
     first = stringResult;

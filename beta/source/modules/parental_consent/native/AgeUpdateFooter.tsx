@@ -1,18 +1,18 @@
-// Module ID: 17711
-// Function ID: 17712
+// Module ID: 18076
+// Function ID: 18077
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 4837, 558, 576, 1127, 2784, 7863, 7865, 4833, 2]
+// Dependencies: [19, 21, 4890, 558, 576, 1126, 2787, 8084, 8086, 4886, 2]
 
-// Module 17711 (AgeUpdateFooter)
+// Module 18076 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import _modDef2784 from "module_2784" /* 2784 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
+import intl2 from "intl" /* 1126 */;
+import _modDef2787 from "module_2787" /* 2787 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_4();
   const text = tmp4.text;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     let obj2 = {
       handleAgeVerifyHook() {
           const obj = AgeVerificationActionCreatorsDefault;
@@ -34,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return obj.showAgeVerificationGetStartedModal(obj2);
         }
     };
-    const formatResult = intl.format(_modDef2784.ifObbX, obj2);
+    const formatResult = intl.format(_modDef2787.ifObbX, obj2);
     cResult[0] = formatResult;
     first = formatResult;
   } else {
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return obj.showAgeVerificationGetStartedModal(obj2);
     }
   };
-  return <Text variant="text-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2784.ifObbX, obj2)}</Text>;
+  return <Text variant="text-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2787.ifObbX, obj2)}</Text>;
 });
 const result = size.fileFinishedImporting("modules/parental_consent/native/AgeUpdateFooter.tsx");
 

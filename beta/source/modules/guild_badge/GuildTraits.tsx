@@ -1,12 +1,12 @@
-// Module ID: 8202
-// Function ID: 8203
+// Module ID: 8397
+// Function ID: 8398
 // Name: GuildTraits
-// Dependencies: [1086, 2065, 2]
+// Dependencies: [1085, 2066, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 8202 (GuildTraits)
-import GuildRecordUtils from "GuildRecordUtils" /* 2065 */;
-import Constants from "Constants" /* 1086 */;
+// Module 8397 (GuildTraits)
+import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let set;

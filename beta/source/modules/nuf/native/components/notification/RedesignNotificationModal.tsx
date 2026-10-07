@@ -1,23 +1,23 @@
-// Module ID: 15626
-// Function ID: 15627
+// Module ID: 15921
+// Function ID: 15922
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 11796, 11797, 1086, 21, 4837, 588, 558, 576, 11798, 1253, 11799, 15627, 1127, 12078, 2]
+// Dependencies: [19, 17, 12052, 12053, 1085, 21, 4890, 587, 558, 576, 12054, 1252, 12055, 15922, 1126, 12337, 2]
 
-// Module 15626 (RedesignNotificationModal)
+// Module 15921 (RedesignNotificationModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11796 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11798 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 11799 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12078 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15627 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12052 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12054 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12055 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12337 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15922 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 11797 */;
-import createStyles from "createStyles" /* 4837 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12053 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,10 +90,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
     tmp7 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(tmp(1127).t["3nx0b5"]);
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(tmp(1127).t.Gf7U1T);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(tmp(1126).t["3nx0b5"]);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(tmp(1126).t.Gf7U1T);
     cResult[6] = stringResult;
     cResult[7] = stringResult1;
     tmp13 = stringResult1;
@@ -155,11 +155,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
       tmp4(true);
     }
   }, items1);
-  let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, title: intl.string(onComplete(1127).t["3nx0b5"]), subtitle: intl2.string(onComplete(1127).t.Gf7U1T) };
+  let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, title: intl.string(onComplete(1126).t["3nx0b5"]), subtitle: intl2.string(onComplete(1126).t.Gf7U1T) };
   let obj3 = { resizeMode: "contain", style: tmp.notificationHeaderImage, source: AssetRegistryDefault };
   const tmp4 = NewUserPermissionsOnboardingDefault;
-  intl = onComplete(1127).intl;
-  intl2 = onComplete(1127).intl;
+  intl = onComplete(1126).intl;
+  intl2 = onComplete(1126).intl;
   return <closure_5 style={tmp.container}>{null}</closure_5>;
 });
 let closure_12 = tmp4;

@@ -1,21 +1,21 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 11815
+// Function ID: 11816
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 10956, 21, 4837, 588, 558, 576, 4801, 1127, 4833, 5282, 6572, 2]
+// Dependencies: [19, 17, 11215, 21, 4890, 587, 558, 576, 4854, 1126, 4886, 5594, 6645, 2]
 
-// Module 11559 (GroupDMNitroCapInfoActionSheet)
+// Module 11815 (GroupDMNitroCapInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
-import GroupDMConstants from "GroupDMConstants" /* 10956 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import GroupDMConstants from "GroupDMConstants" /* 11215 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   ({ container, title } = tmp4);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.u1ilug);
     cResult[1] = stringResult;
     tmp6 = stringResult;
@@ -84,7 +84,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const body = tmp4.body;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const obj3 = { number };
     const formatToPlainStringResult = intl2.formatToPlainString(intl4.t["mr27w/"], obj3);
     cResult[4] = formatToPlainStringResult;
@@ -103,8 +103,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { text: intl3.string(intl4.t.cpT0Cq), variant: "secondary", onPress: first, grow: true };
-    const Button = tmp(5282).Button;
-    intl3 = tmp(1127).intl;
+    const Button = tmp(5594).Button;
+    intl3 = tmp(1126).intl;
     const tmp19 = metroRequire(Button, obj5);
     cResult[7] = tmp19;
     tmp17 = tmp19;
@@ -134,7 +134,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj7 = { showGradient: true, children: metroImportDefault(View, obj8) };
   obj8 = { style: container, children: items };
   items = [tmp8, tmp14, tmp20];
-  BottomSheet = tmp(6572).BottomSheet;
+  BottomSheet = tmp(6645).BottomSheet;
   const tmp25 = metroRequire(BottomSheet, obj7);
   cResult[10] = tmp4.container;
   cResult[11] = tmp8;

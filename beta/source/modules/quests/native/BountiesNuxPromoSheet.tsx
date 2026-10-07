@@ -1,21 +1,21 @@
-// Module ID: 14586
-// Function ID: 14587
+// Module ID: 14870
+// Function ID: 14871
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4801, 14585, 1127, 14587, 5282, 9816, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4854, 14869, 1126, 14871, 5594, 10045, 2]
 
-// Module 14586 (BountiesNuxPromoSheet)
+// Module 14870 (BountiesNuxPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import PromoSheet2 from "PromoSheet" /* 9816 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 14585 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 14587 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import PromoSheet2 from "PromoSheet" /* 10045 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 14869 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 14871 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,9 +47,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.DDpHZG);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl4.t.aC3Dwj);
     cResult[1] = stringResult;
     cResult[2] = stringResult1;
@@ -75,8 +75,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const Button = tmp(5282).Button;
-    const intl3 = tmp(1127).intl;
+    const Button = tmp(5594).Button;
+    const intl3 = tmp(1126).intl;
     const tmp19 = <Button grow size="lg" variant="primary" text={intl3.string(intl4.t.cpT0Cq)} onPress={first} />;
     cResult[6] = tmp19;
     tmp17 = tmp19;

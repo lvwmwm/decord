@@ -1,27 +1,27 @@
-// Module ID: 14760
-// Function ID: 14761
+// Module ID: 15045
+// Function ID: 15046
 // Name: GuildRoleSubscriptionListingEditStateUtils
-// Dependencies: [5, 32, 19, 5772, 4465, 14761, 14738, 1086, 1380, 558, 576, 504, 5907, 5093, 14762, 14763, 1104, 4463, 14764, 14745, 14765, 1260, 38, 5833, 6674, 12, 9712, 14766, 1267, 2]
+// Dependencies: [5, 32, 19, 5638, 4502, 15046, 15023, 1085, 1379, 558, 576, 504, 5984, 5322, 15047, 15048, 1103, 4500, 15049, 15030, 15050, 1259, 38, 5705, 6758, 12, 9939, 15051, 1266, 2]
 // Exports: useCreateOrUpdateListingFromEditState
 
-// Module 14760 (GuildRoleSubscriptionListingEditStateUtils)
+// Module 15045 (GuildRoleSubscriptionListingEditStateUtils)
 import react2 from "react" /* 576 */;
-import v1 from "v1" /* 1267 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4463 */;
-import StoreUtils from "StoreUtils" /* 5093 */;
-import useInitialValueDefault from "useInitialValue" /* 5907 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14738 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14745 */;
-import useSubscriptionRoleDefault from "useSubscriptionRole" /* 14762 */;
-import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 14765 */;
+import v1 from "v1" /* 1266 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4500 */;
+import StoreUtils from "StoreUtils" /* 5322 */;
+import useInitialValueDefault from "useInitialValue" /* 5984 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15030 */;
+import useSubscriptionRoleDefault from "useSubscriptionRole" /* 15047 */;
+import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 15050 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5772 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4465 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 14761 */;
-import Constants from "Constants" /* 1086 */;
+import EmojiStore from "EmojiStore" /* 5638 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4502 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15046 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,10 +33,10 @@ let c9;
 let closure_12;
 let map1;
 let tmp;
-const utils_ColorUtils = tmp(1104);
-const Contants = tmp(14763);
-const f118217 = (id) => id.id;
-const f142863 = () => {
+const utils_ColorUtils = tmp(1103);
+const Contants = tmp(15048);
+const f119490 = (id) => id.id;
+const f144533 = () => {
   state.setState((listings) => {
     let obj2;
     obj = { listings: obj2 };
@@ -58,14 +58,14 @@ function getRoleEmojis(arr, arg1) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(found.map(f118217));
+    set = new Set(found.map(f119490));
     return set;
   }
 }
 function clearEditState(NEW_LISTING_EDIT_STATE_ID) {
   _require = NEW_LISTING_EDIT_STATE_ID;
   obj = require("react-native");
-  obj.batchUpdates(f142863);
+  obj.batchUpdates(f144533);
 }
 let obj = function _updateListingPeripheralsFromEditState() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -134,7 +134,7 @@ let obj = function _updateListingPeripheralsFromEditState() {
             closure_16 = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else {
           if (1 === tmp5) {
@@ -352,7 +352,7 @@ obj = function _createListingFromEditState() {
               analyticsContext = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             if (1 === c6) {
@@ -590,7 +590,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return () => {
         closure_0 = closure_1_0;
         obj = closure_0(dependencyMap[21]);
-        obj.batchUpdates(f142863);
+        obj.batchUpdates(f144533);
       };
     };
     const items = [arg0];
@@ -611,7 +611,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let state;
     closure_0 = closure_1_0;
     obj = closure_0(dependencyMap[21]);
-    obj.batchUpdates(f142863);
+    obj.batchUpdates(f144533);
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1194,7 +1194,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(found.map(f118217));
+      set = new Set(found.map(f119490));
     }
     cResult[4] = stateFromStoresArray;
     cResult[5] = tmp4.id;
@@ -1227,7 +1227,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg
         const _Set = Set;
         const self = this;
         const self2 = this;
-        set = new Set(found.map(f118217));
+        set = new Set(found.map(f119490));
       }
     }
     return set;
@@ -1525,7 +1525,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2)
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(14745);
+  const tmpResult = tmp(15030);
   const subscriptionListingsForGroup = tmpResult.useSubscriptionListingsForGroup(arg0, tmp4);
   if (cResult[2] !== arg1) {
     const fn = function s(arg0) {
@@ -1934,7 +1934,7 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
               id = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {

@@ -1,9 +1,9 @@
-// Module ID: 10856
-// Function ID: 10857
+// Module ID: 11103
+// Function ID: 11104
 // Name: PauseDuration
 // Dependencies: [2]
 
-// Module 10856 (PauseDuration)
+// Module 11103 (PauseDuration)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/PauseDuration.tsx");

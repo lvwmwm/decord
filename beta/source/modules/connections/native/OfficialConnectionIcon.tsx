@@ -1,22 +1,22 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 11183
+// Function ID: 11184
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 1086, 21, 4837, 558, 576, 6608, 6627, 588, 1104, 1189, 10930, 10931, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 558, 576, 6685, 6704, 587, 1103, 1188, 11184, 11185, 2]
 
-// Module 10929 (OfficialConnectionIcon)
+// Module 11183 (OfficialConnectionIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import native from "native" /* 1189 */;
-import useRoleIconProps2 from "useRoleIconProps" /* 6608 */;
-import RoleIconDefault from "RoleIcon" /* 6627 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10930 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10931 */;
+import nativeDefault from "native" /* 587 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import native from "native" /* 1188 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 6685 */;
+import RoleIconDefault from "RoleIcon" /* 6704 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11184 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11185 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -122,7 +122,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayRoleIcon) => 
       const hex2intResult = tmpResult3.hex2int(roleColor);
       const tmpResult4 = utils_ColorUtils;
       if (tmpResult4.getDarkness(hex2intResult) < 0.3) {
-        PRIMARY_630 = tmp10(588).unsafe_rawColors.PRIMARY_630;
+        PRIMARY_630 = tmp10(587).unsafe_rawColors.PRIMARY_630;
       }
       if (cResult[14] === tmp5) {
         let tmp13;
@@ -168,7 +168,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayRoleIcon) => 
                 tmp22 = tmp25;
               }
               const obj5 = { style: tmp18, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, color: PRIMARY_630 };
-              const Icon2 = tmp(1189).Icon;
+              const Icon2 = tmp(1188).Icon;
               const tmp21 = metroRequire(Icon2, obj5);
               cResult[26] = PRIMARY_630;
               cResult[27] = tmp18;
@@ -182,7 +182,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayRoleIcon) => 
             tmp18 = items2;
           }
           const obj6 = { style: tmp14, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault, color: roleColor };
-          const Icon = tmp(1189).Icon;
+          const Icon = tmp(1188).Icon;
           const tmp17 = metroRequire(Icon, obj6);
           cResult[20] = roleColor;
           cResult[21] = tmp14;
@@ -265,17 +265,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayRoleIcon) => 
   const hex2intResult = tmp2Result.hex2int(roleColor);
   const tmp2Result2 = utils_ColorUtils;
   if (tmp2Result2.getDarkness(hex2intResult) < 0.3) {
-    PRIMARY_630 = tmp8(588).unsafe_rawColors.PRIMARY_630;
+    PRIMARY_630 = tmp8(587).unsafe_rawColors.PRIMARY_630;
   }
   const obj4 = { style: items1, children: items3 };
   items1 = [style, size1];
   const obj5 = { style: items2, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault, color: roleColor };
   items2 = [tmp.verifiedCheck, size1];
-  const Icon = tmp2(1189).Icon;
+  const Icon = tmp2(1188).Icon;
   items3 = [metroRequire(Icon, obj5), ];
   const obj6 = { style: items4, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, color: PRIMARY_630 };
   items4 = [tmp.verifiedCheck, size1];
-  const Icon2 = tmp2(1189).Icon;
+  const Icon2 = tmp2(1188).Icon;
   items3[1] = metroRequire(Icon2, obj6);
   return metroImportDefault(View, obj4);
 });

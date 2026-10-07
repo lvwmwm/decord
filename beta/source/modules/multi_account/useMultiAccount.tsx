@@ -1,14 +1,14 @@
-// Module ID: 15577
-// Function ID: 15578
+// Module ID: 15872
+// Function ID: 15873
 // Name: useMultiAccount
-// Dependencies: [19, 1378, 11800, 558, 576, 504, 585, 11804, 2]
+// Dependencies: [19, 1377, 12056, 558, 576, 504, 584, 12059, 2]
 
-// Module 15577 (useMultiAccount)
+// Module 15872 (useMultiAccount)
 import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 11800 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 12056 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

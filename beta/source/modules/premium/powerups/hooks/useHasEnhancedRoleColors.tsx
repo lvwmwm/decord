@@ -1,12 +1,12 @@
-// Module ID: 5311
-// Function ID: 5312
+// Module ID: 5793
+// Function ID: 5794
 // Name: useHasEnhancedRoleColors
-// Dependencies: [2073, 1086, 558, 576, 504, 2]
+// Dependencies: [2074, 1085, 558, 576, 504, 2]
 // Exports: getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole
 
-// Module 5311 (useHasEnhancedRoleColors)
-import Constants from "Constants" /* 1086 */;
-import GuildStore from "GuildStore" /* 2073 */;
+// Module 5793 (useHasEnhancedRoleColors)
+import Constants from "Constants" /* 1085 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

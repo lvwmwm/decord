@@ -1,15 +1,17 @@
-// Module ID: 13005
-// Function ID: 13006
+// Module ID: 13269
+// Function ID: 13270
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 4837, 588, 558, 576, 4531, 1127, 4788, 4833, 2]
+// Dependencies: [17, 21, 4890, 587, 558, 576, 4574, 4568, 1126, 4812, 4886, 2]
 
-// Module 13005 (LargeCountDownPill)
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
+// Module 13269 (LargeCountDownPill)
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 4812 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,20 +47,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
   if (cResult[0] !== tmp4.iconStyle) {
     const fn = function l() {
       let intl;
-      let obj = {
-        key: "LARGE_COUNTDOWN_PILL_TOAST",
-        content: intl.string(intl2.t["Mv4E/M"]),
-        icon() {
-          const obj = { style: closure_1_0.iconStyle, color: nativeDefault.colors.STATUS_WARNING };
-          const CircleInformationIcon = closure_0(dependencyMap[8]).CircleInformationIcon;
-          return closure_2_5(CircleInformationIcon, obj);
-        },
-        iconColor: nativeDefault.colors.STATUS_WARNING
-      };
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      intl = intl2.intl;
-      open(obj);
+      let intl2;
+      let obj = DesignSystemsNotificationComponentsExperiment;
+      const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("LargeCountDownPill");
+      const tmp5 = ToastActionCreatorsDefault;
+      if (designSystemsNotificationComponents) {
+        const openMana = tmp5.openMana;
+        const obj2 = { text: intl2.string(intl3.t["Mv4E/M"]), icon: CircleInformationIcon2.CircleInformationIcon, iconColor: nativeDefault.colors.STATUS_WARNING };
+        intl2 = tmp(1126).intl;
+        openMana("LARGE_COUNTDOWN_PILL_TOAST", obj2);
+      } else {
+        const open = tmp5.open;
+        const obj3 = {
+          key: "LARGE_COUNTDOWN_PILL_TOAST",
+          content: intl.string(intl3.t["Mv4E/M"]),
+          icon() {
+              const obj = { style: closure_1_0.iconStyle, color: nativeDefault.colors.STATUS_WARNING };
+              const CircleInformationIcon = closure_0(dependencyMap[9]).CircleInformationIcon;
+              return closure_2_5(CircleInformationIcon, obj);
+            },
+          iconColor: nativeDefault.colors.STATUS_WARNING
+        };
+        intl = tmp(1126).intl;
+        open(obj3);
+      }
     };
     cResult[0] = tmp4.iconStyle;
     cResult[1] = fn;
@@ -82,8 +94,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
       tmp8 = cResult[6];
     }
     if (cResult[7] !== tmp4.iconStyle) {
-      const obj2 = { style: tmp4.iconStyle, color: nativeDefault.colors.TEXT_STATUS_IDLE };
-      let CircleInformationIcon = tmp(4788).CircleInformationIcon;
+      let obj2 = { style: tmp4.iconStyle, color: nativeDefault.colors.TEXT_STATUS_IDLE };
+      let CircleInformationIcon = tmp(4812).CircleInformationIcon;
       const tmp13 = closure_5(CircleInformationIcon, obj2);
       cResult[7] = tmp4.iconStyle;
       cResult[8] = tmp13;
@@ -104,7 +116,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
           }
           return tmp18;
         }
-        const obj3 = { onPress: tmp5, children: tmp14 };
+        let obj3 = { onPress: tmp5, children: tmp14 };
         const tmp21 = closure_5(closure_3, obj3);
         cResult[13] = tmp5;
         cResult[14] = tmp14;
@@ -121,7 +133,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
     cResult[12] = tmp17;
     tmp14 = tmp17;
   }
-  const tmp9 = closure_5(tmp(4833).Text, { variant: "text-xs/bold", style: largeCountdownPillText, children: tmp6 });
+  const tmp9 = closure_5(tmp(4886).Text, { variant: "text-xs/bold", style: largeCountdownPillText, children: tmp6 });
   cResult[4] = tmp4.largeCountdownPillText;
   cResult[5] = tmp6;
   cResult[6] = tmp9;
@@ -136,25 +148,35 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
   let obj = {
     onPress() {
       let intl;
-      let obj = {
-        key: "LARGE_COUNTDOWN_PILL_TOAST",
-        content: intl.string(intl2.t["Mv4E/M"]),
-        icon() {
-          const obj = { style: closure_1_0.iconStyle, color: nativeDefault.colors.STATUS_WARNING };
-          const CircleInformationIcon = closure_0(dependencyMap[8]).CircleInformationIcon;
-          return closure_2_5(CircleInformationIcon, obj);
-        },
-        iconColor: nativeDefault.colors.STATUS_WARNING
-      };
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      intl = intl2.intl;
-      open(obj);
+      let intl2;
+      let obj = DesignSystemsNotificationComponentsExperiment;
+      const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("LargeCountDownPill");
+      const tmp5 = ToastActionCreatorsDefault;
+      if (designSystemsNotificationComponents) {
+        const openMana = tmp5.openMana;
+        const obj2 = { text: intl2.string(intl3.t["Mv4E/M"]), icon: CircleInformationIcon2.CircleInformationIcon, iconColor: nativeDefault.colors.STATUS_WARNING };
+        intl2 = tmp(1126).intl;
+        openMana("LARGE_COUNTDOWN_PILL_TOAST", obj2);
+      } else {
+        const open = tmp5.open;
+        const obj3 = {
+          key: "LARGE_COUNTDOWN_PILL_TOAST",
+          content: intl.string(intl3.t["Mv4E/M"]),
+          icon() {
+              const obj = { style: closure_1_0.iconStyle, color: nativeDefault.colors.STATUS_WARNING };
+              const CircleInformationIcon = closure_0(dependencyMap[9]).CircleInformationIcon;
+              return closure_2_5(CircleInformationIcon, obj);
+            },
+          iconColor: nativeDefault.colors.STATUS_WARNING
+        };
+        intl = tmp(1126).intl;
+        open(obj3);
+      }
     },
     children: closure_6(closure_4, obj2)
   };
   obj2 = { style: tmp.largeCountdownPill, children: items };
-  const obj3 = { variant: "text-xs/bold", style: tmp.largeCountdownPillText, children: str.toUpperCase() };
+  let obj3 = { variant: "text-xs/bold", style: tmp.largeCountdownPillText, children: str.toUpperCase() };
   const Text = require("Text/Text").Text;
   items = [closure_5(Text, obj3), ];
   const obj4 = { style: tmp.iconStyle, color: nativeDefault.colors.TEXT_STATUS_IDLE };

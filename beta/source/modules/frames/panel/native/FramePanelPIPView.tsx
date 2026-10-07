@@ -1,19 +1,20 @@
-// Module ID: 16836
-// Function ID: 16837
+// Module ID: 17196
+// Function ID: 17197
 // Name: FramePanelPIPView
-// Dependencies: [19, 8496, 8497, 16811, 21, 558, 576, 504, 16810, 16281, 16834, 2]
+// Dependencies: [19, 8703, 8704, 17171, 21, 558, 576, 504, 17170, 16594, 16598, 17194, 2]
 
-// Module 16836 (FramePanelPIPView)
+// Module 17196 (FramePanelPIPView)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import FrameViewDefault from "FrameView" /* 16281 */;
-import ActivityPanelPIPView from "ActivityPanelPIPView" /* 16810 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 16811 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 16834 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 16594 */;
+import FrameStackLevel from "FrameStackLevel" /* 16598 */;
+import ActivityPanelPIPView from "ActivityPanelPIPView" /* 17170 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17171 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17194 */;
 import react_mod from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 8496 */;
-import FramesConstants from "FramesConstants" /* 8497 */;
+import FramesStore from "FramesStore" /* 8703 */;
+import FramesConstants from "FramesConstants" /* 8704 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,14 +28,13 @@ const jsx = Fragment.jsx;
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let mainFrame;
-  let tmp12;
   let tmp4;
   let tmp5;
   let tmp8;
   let transitionCleanUp;
   let transitionState;
   const obj = react2;
-  const cResult = obj.c(12);
+  const cResult = obj.c(13);
   ({ transitionState, transitionCleanUp } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FramesStore];
@@ -60,36 +60,44 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   const tmpResult2 = ActivityPanelPIPView;
   const landscapeSafeAreasConfig = tmpResult2.useBaseActivityPanelPIPView().landscapeSafeAreasConfig;
-  if (cResult[4] !== landscapeSafeAreasConfig) {
-    const tmp17 = jsx(FrameViewDefault, { layoutMode: metroRequire.PIP, portraitSafeAreasConfig, landscapeSafeAreasConfig });
-    cResult[4] = landscapeSafeAreasConfig;
-    cResult[5] = tmp17;
-    tmp12 = tmp17;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] === tmp8) {
-    if (cResult[7] === null != stateFromStores) {
-      if (cResult[8] === tmp12) {
-        if (cResult[9] === transitionCleanUp) {
-          let tmp18;
-          if (cResult[10] === transitionState) {
-            tmp18 = cResult[11];
+  if (cResult[4] === landscapeSafeAreasConfig) {
+    let tmp12;
+    if (cResult[5] === stateFromStores) {
+      tmp12 = cResult[6];
+    }
+    if (cResult[7] === tmp8) {
+      if (cResult[8] === null != stateFromStores) {
+        if (cResult[9] === tmp12) {
+          if (cResult[10] === transitionCleanUp) {
+            let tmp19;
+            if (cResult[11] === transitionState) {
+              tmp19 = cResult[12];
+            }
+            return tmp19;
           }
-          return tmp18;
         }
       }
     }
+    const BaseActivityPanelPIPView = tmp(17170).BaseActivityPanelPIPView;
+    const tmp22 = <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={tmp8} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault}>{tmp12}</BaseActivityPanelPIPView>;
+    cResult[7] = tmp8;
+    cResult[8] = null != stateFromStores;
+    cResult[9] = tmp12;
+    cResult[10] = transitionCleanUp;
+    cResult[11] = transitionState;
+    cResult[12] = tmp22;
+    tmp19 = tmp22;
   }
-  const BaseActivityPanelPIPView = tmp(16810).BaseActivityPanelPIPView;
-  const tmp19 = <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={tmp8} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault}>{tmp12}</BaseActivityPanelPIPView>;
-  cResult[6] = tmp8;
-  cResult[7] = null != stateFromStores;
-  cResult[8] = tmp12;
-  cResult[9] = transitionCleanUp;
-  cResult[10] = transitionState;
-  cResult[11] = tmp19;
-  tmp18 = tmp19;
+  let tmp13 = null;
+  if (null != stateFromStores) {
+    FrameRenderTargetDefault;
+    const obj4 = { layoutMode: metroRequire.PIP, portraitSafeAreasConfig, landscapeSafeAreasConfig };
+    tmp13 = <tmp16 frameId={stateFromStores.id} level={FrameStackLevel.FrameStackLevel.AboveAppContent} presentation={obj4} />;
+  }
+  cResult[4] = landscapeSafeAreasConfig;
+  cResult[5] = stateFromStores;
+  cResult[6] = tmp13;
+  tmp12 = tmp13;
 }) : ((transitionState) => {
   let pipOrientationLockState;
   transitionState = transitionState.transitionState;
@@ -99,14 +107,23 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   const items = [landscapeSafeAreasConfig];
   const obj = transitionState(stateFromStores[7]);
   stateFromStores = obj.useStateFromStores(items, () => closure_1_5(landscapeSafeAreasConfig.getMainFrame()));
-  const tmp2 = closure_7(stateFromStores);
+  let tmp2 = closure_7(stateFromStores);
   react = tmp2;
-  const obj2 = transitionState(stateFromStores[8]);
+  let obj2 = transitionState(stateFromStores[8]);
   landscapeSafeAreasConfig = obj2.useBaseActivityPanelPIPView().landscapeSafeAreasConfig;
   const items1 = [stateFromStores, landscapeSafeAreasConfig, tmp2, transitionCleanUp, transitionState];
   return react.useMemo(() => {
+    let obj3;
+    let tmpResult = null;
     const BaseActivityPanelPIPView = ActivityPanelPIPView.BaseActivityPanelPIPView;
-    return <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={pipOrientationLockState} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault}>{null}</BaseActivityPanelPIPView>;
+    const tmp4 = stateFromStores;
+    if (null != stateFromStores) {
+      const obj2 = { frameId: tmp4.id, level: FrameStackLevel.FrameStackLevel.AboveAppContent, presentation: obj3 };
+      obj3 = { layoutMode: metroRequire.PIP, portraitSafeAreasConfig, landscapeSafeAreasConfig };
+      const tmp6Result = FrameRenderTargetDefault;
+      tmpResult = tmp(tmp6Result, obj2);
+    }
+    return <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={pipOrientationLockState} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault}>{tmpResult}</BaseActivityPanelPIPView>;
   }, items1);
 }));
 const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelPIPView.tsx");

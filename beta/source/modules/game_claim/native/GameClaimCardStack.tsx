@@ -1,16 +1,16 @@
-// Module ID: 15822
-// Function ID: 15823
+// Module ID: 16116
+// Function ID: 16117
 // Name: GameClaimCardStack
-// Dependencies: [19, 17, 21, 588, 684, 4837, 558, 576, 8329, 2]
+// Dependencies: [19, 17, 21, 587, 683, 4890, 558, 576, 8529, 2]
 
-// Module 15822 (GameClaimCardStack)
+// Module 16116 (GameClaimCardStack)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import module_684_mod from "module_684" /* 684 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import module_683_mod from "module_683" /* 683 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ let size;
 let size1;
 let size2;
 let tmp;
-const PlusSmallIcon = tmp(8329);
+const PlusSmallIcon = tmp(8529);
 ({ Image: c2, View: c3 } = react_native);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const sum = nativeDefault.space.PX_12 + nativeDefault.space.PX_8 + 96;
 const sum1 = sum + 4 + nativeDefault.space.PX_16;
-let module_684 = module_684_mod;
-const importDefaultResultResult = module_684(nativeDefault.unsafe_rawColors.BRAND_500);
+let module_683 = module_683_mod;
+const importDefaultResultResult = module_683(nativeDefault.unsafe_rawColors.BRAND_500);
 const alphaResult = importDefaultResultResult.alpha(0.5);
 const hexResult = alphaResult.hex();
-module_684 = module_684_mod;
-const importDefaultResult1Result = module_684(nativeDefault.unsafe_rawColors.BRAND_500);
+module_683 = module_683_mod;
+const importDefaultResult1Result = module_683(nativeDefault.unsafe_rawColors.BRAND_500);
 const alphaResult1 = importDefaultResult1Result.alpha(0.25);
 const hexResult1 = alphaResult1.hex();
-module_684 = module_684_mod;
-const importDefaultResult2Result = module_684(nativeDefault.unsafe_rawColors.BRAND_500);
+module_683 = module_683_mod;
+const importDefaultResult2Result = module_683(nativeDefault.unsafe_rawColors.BRAND_500);
 const alphaResult2 = importDefaultResult2Result.alpha(0.35);
 const hexResult2 = alphaResult2.hex();
 let createStyles = createStyles_mod;

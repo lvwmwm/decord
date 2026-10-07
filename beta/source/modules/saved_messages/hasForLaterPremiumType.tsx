@@ -1,14 +1,14 @@
-// Module ID: 7280
-// Function ID: 7281
+// Module ID: 7486
+// Function ID: 7487
 // Name: hasForLaterPremiumType
-// Dependencies: [1378, 1380, 1976, 558, 576, 504, 2]
+// Dependencies: [1377, 1379, 1976, 558, 576, 504, 2]
 // Exports: default
 
-// Module 7280 (hasForLaterPremiumType)
+// Module 7486 (hasForLaterPremiumType)
 import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

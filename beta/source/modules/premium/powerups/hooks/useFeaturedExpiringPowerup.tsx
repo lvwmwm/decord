@@ -1,13 +1,13 @@
-// Module ID: 11910
-// Function ID: 11911
+// Module ID: 12165
+// Function ID: 12166
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 4746, 4725, 558, 576, 504, 11911, 6978, 2]
+// Dependencies: [19, 7672, 4767, 558, 576, 504, 12166, 7065, 2]
 
-// Module 11910 (useFeaturedExpiringPowerup)
-import CollectiblesUtils from "CollectiblesUtils" /* 6978 */;
+// Module 12165 (useFeaturedExpiringPowerup)
+import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4746 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4725 */;
+import GameServerStore from "GameServerStore" /* 7672 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4767 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

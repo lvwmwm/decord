@@ -1,12 +1,12 @@
-// Module ID: 17120
-// Function ID: 17121
+// Module ID: 17479
+// Function ID: 17480
 // Name: VoiceChannelHoistingExperiment
-// Dependencies: [4753, 4750, 558, 576, 2]
+// Dependencies: [4777, 4774, 558, 576, 2]
 
-// Module 17120 (VoiceChannelHoistingExperiment)
+// Module 17479 (VoiceChannelHoistingExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 4753 */;
-import createExperiment from "module_4750" /* 4750 */;
+import ExperimentConstants from "ExperimentConstants" /* 4777 */;
+import createExperiment from "module_4774" /* 4774 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

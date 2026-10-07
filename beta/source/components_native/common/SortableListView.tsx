@@ -1,11 +1,11 @@
-// Module ID: 16016
-// Function ID: 16017
+// Module ID: 16319
+// Function ID: 16320
 // Name: SortableListView
-// Dependencies: [19, 17, 21, 558, 576, 6401, 2]
+// Dependencies: [19, 17, 21, 558, 576, 6473, 2]
 
-// Module 16016 (SortableListView)
+// Module 16319 (SortableListView)
 import react2 from "react" /* 576 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6401 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6473 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

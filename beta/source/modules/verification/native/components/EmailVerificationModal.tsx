@@ -1,31 +1,31 @@
-// Module ID: 5931
-// Function ID: 5932
+// Module ID: 6008
+// Function ID: 6009
 // Name: EmailVerificationModal
-// Dependencies: [32, 19, 1378, 5932, 1086, 21, 5930, 1261, 5933, 5992, 6000, 6003, 6015, 6018, 6403, 6414, 6420, 558, 576, 504, 5907, 1127, 6421, 2]
+// Dependencies: [32, 19, 1377, 6009, 1085, 21, 6007, 1260, 6010, 6069, 6077, 6080, 6092, 6095, 6475, 6489, 6495, 558, 576, 504, 5984, 1126, 6496, 2]
 
-// Module 5931 (EmailVerificationModal)
+// Module 6008 (EmailVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import useInitialValueDefault from "useInitialValue" /* 5907 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5930 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 5932 */;
-import NavigatorHeader from "NavigatorHeader" /* 5933 */;
-import ChangeEmailCollectReasonsDefault from "ChangeEmailCollectReasons" /* 5992 */;
-import ChangeEmailWarningDefault from "ChangeEmailWarning" /* 6000 */;
-import ResendEmailDefault from "ResendEmail" /* 6003 */;
-import ConfirmEmailChangeStartDefault from "ConfirmEmailChangeStart" /* 6015 */;
-import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 6018 */;
-import EnterEmailDefault from "EnterEmail" /* 6403 */;
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6414 */;
-import ChangeEmailCompleteDefault from "ChangeEmailComplete" /* 6420 */;
-import Navigator2 from "Navigator" /* 6421 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import useInitialValueDefault from "useInitialValue" /* 5984 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6007 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6009 */;
+import NavigatorHeader from "NavigatorHeader" /* 6010 */;
+import ChangeEmailCollectReasonsDefault from "ChangeEmailCollectReasons" /* 6069 */;
+import ChangeEmailWarningDefault from "ChangeEmailWarning" /* 6077 */;
+import ResendEmailDefault from "ResendEmail" /* 6080 */;
+import ConfirmEmailChangeStartDefault from "ConfirmEmailChangeStart" /* 6092 */;
+import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 6095 */;
+import EnterEmailDefault from "EnterEmail" /* 6475 */;
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6489 */;
+import ChangeEmailCompleteDefault from "ChangeEmailComplete" /* 6495 */;
+import Navigator2 from "Navigator" /* 6496 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -236,7 +236,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => 
           }
         }
         if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const stringResult = intl.string(intl2.t["13/7kX"]);
           class N {
             constructor() {

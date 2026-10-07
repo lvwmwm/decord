@@ -1,17 +1,17 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11600
+// Function ID: 11601
 // Name: ScheduledMessageDraftCoachmarkHooks
-// Dependencies: [32, 19, 5590, 5201, 2048, 2035, 558, 576, 4656, 504, 2037, 2]
+// Dependencies: [32, 19, 5436, 7031, 2048, 2036, 558, 576, 4698, 504, 2038, 2]
 
-// Module 11344 (ScheduledMessageDraftCoachmarkHooks)
-import dismissible_content from "dismissible_content" /* 2035 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
+// Module 11600 (ScheduledMessageDraftCoachmarkHooks)
+import dismissible_content from "dismissible_content" /* 2036 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2038 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
-import DraftStore from "DraftStore" /* 5201 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import DraftStore from "DraftStore" /* 7031 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const cResult = obj.c(25);
   channel = channel.channel;
   ({ draftText, isEligible } = channel);
-  let obj2 = channel(4656);
+  let obj2 = channel(4698);
   let result = obj2.useIsDismissibleContentDismissed_UNSAFE(closure_7);
   dependencyMap = result;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -132,7 +132,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let first;
   let connected;
   let isCoachmarkVisible;
-  let obj = channel(4656);
+  let obj = channel(4698);
   let result = obj.useIsDismissibleContentDismissed_UNSAFE(closure_7);
   dependencyMap = result;
   let obj2 = channel(504);

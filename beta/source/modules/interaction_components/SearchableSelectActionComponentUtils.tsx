@@ -1,22 +1,22 @@
-// Module ID: 7581
-// Function ID: 7582
+// Module ID: 7803
+// Function ID: 7804
 // Name: SearchableSelectActionComponentUtils
-// Dependencies: [2051, 2111, 2105, 2073, 4482, 1378, 7574, 1985, 5755, 4989, 5068, 4990, 7582, 1376, 2]
+// Dependencies: [2051, 2112, 2106, 2074, 4519, 1377, 7796, 1985, 5621, 5042, 5122, 5043, 7804, 1375, 2]
 // Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 7581 (SearchableSelectActionComponentUtils)
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5068 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5755 */;
-import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 7582 */;
+// Module 7803 (SearchableSelectActionComponentUtils)
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5122 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5621 */;
+import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 7804 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7574 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7796 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ export const queryMentionables = function queryMentionables(type, query, channel
   } else {
     const tmp3 = type === require("Server").ComponentType.USER_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
     const tmp4 = type === require("Server").ComponentType.ROLE_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
-    let obj = channel(5755);
+    let obj = channel(5621);
     let obj2 = { query, channel, canMentionEveryone: false, canMentionHere: false, canMentionUsers: tmp3, canMentionRoles: tmp4, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
     ({ users, roles } = obj.queryMentionResults(obj2));
     const items = [];
@@ -150,7 +150,7 @@ export const getInitialSnowflakeSelectOptions = function getInitialSnowflakeSele
         }
       }
     });
-    found = mapped.filter(tmp2(1376).isNotNullish);
+    found = mapped.filter(tmp2(1375).isNotNullish);
   }
   let type;
   if (interactionComponentState != null) {
@@ -245,6 +245,6 @@ export const getSnowflakeSelectDefaultValues = function getSnowflakeSelectDefaul
         }
       }
     });
-    return mapped.filter(items(1376).isNotNullish);
+    return mapped.filter(items(1375).isNotNullish);
   }
 };

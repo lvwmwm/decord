@@ -1,10 +1,10 @@
-// Module ID: 8032
-// Function ID: 8033
+// Module ID: 8255
+// Function ID: 8256
 // Name: AppStoreAgeAssurance
-// Dependencies: [5, 8033, 2]
+// Dependencies: [5, 8256, 2]
 
-// Module 8032 (AppStoreAgeAssurance)
-import PlayAgeSignals from "PlayAgeSignals" /* 8033 */;
+// Module 8255 (AppStoreAgeAssurance)
+import PlayAgeSignals from "PlayAgeSignals" /* 8256 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

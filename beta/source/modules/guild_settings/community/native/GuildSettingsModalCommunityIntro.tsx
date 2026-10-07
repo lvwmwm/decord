@@ -1,27 +1,27 @@
-// Module ID: 17463
-// Function ID: 17464
+// Module ID: 17830
+// Function ID: 17831
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2073, 4472, 9026, 1086, 21, 4837, 588, 9879, 1127, 4833, 16059, 4788, 558, 576, 1491, 504, 585, 9025, 17464, 17468, 4530, 2114, 5282, 6461, 2]
+// Dependencies: [19, 17, 2074, 4509, 9248, 1085, 21, 4890, 587, 10108, 1126, 4886, 9957, 4812, 558, 576, 1490, 504, 584, 9247, 17831, 17835, 4567, 2115, 5594, 6536, 2]
 
-// Module 17463 (GuildSettingsModalCommunityIntro)
+// Module 17830 (GuildSettingsModalCommunityIntro)
 import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import nativeDefault from "native" /* 588 */;
-import intl7 from "intl" /* 1127 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 4788 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AnalyticsIcon2 from "AnalyticsIcon" /* 9879 */;
-import LightbulbIcon2 from "LightbulbIcon" /* 16059 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17468 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import nativeDefault from "native" /* 587 */;
+import intl7 from "intl" /* 1126 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 4812 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LightbulbIcon2 from "LightbulbIcon" /* 9957 */;
+import AnalyticsIcon2 from "AnalyticsIcon" /* 10108 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17835 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -398,7 +398,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         tmp5 = closure_1;
         tmp6 = closure_2;
         obj = closure_1(closure_2[18]);
-        waitResult = obj.wait(() => { /* body not rendered: F147434 */ });
+        waitResult = obj.wait(() => { /* body not rendered: F149218 */ });
         tmp8 = closure_2;
         tmp9 = GuildSettingsSections;
         obj1 = { onClose: null };

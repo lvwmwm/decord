@@ -1,23 +1,23 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17591
+// Function ID: 17592
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1619, 5991, 1127, 4833, 5896, 12161, 12070, 5282, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 6068, 1126, 4886, 5974, 12419, 12329, 5594, 2]
 
-// Module 17224 (RedesignDiscoverabilityLanding)
+// Module 17591 (RedesignDiscoverabilityLanding)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl6 from "intl" /* 1127 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import NavigatorConstants from "NavigatorConstants" /* 5991 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12070 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12161 */;
+import nativeDefault from "native" /* 587 */;
+import intl6 from "intl" /* 1126 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12419 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   const title = tmp4.title;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl6.t.n8nw6j);
     cResult[4] = stringResult;
     tmp12 = stringResult;
@@ -102,7 +102,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   const subtitle = tmp4.subtitle;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl6.t.KMW0kP);
     cResult[7] = stringResult1;
     tmp17 = stringResult1;
@@ -130,7 +130,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   const info = tmp4.info;
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(intl6.t.ci12MJ);
     cResult[12] = stringResult2;
     tmp26 = stringResult2;
@@ -138,7 +138,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
     tmp26 = cResult[12];
   }
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1127).intl;
+    const intl4 = tmp(1126).intl;
     const obj7 = {
       learnMoreHook(children, arg1) {
           const obj = { onPress: ContactSyncUtils.handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
@@ -172,7 +172,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
     tmp33 = cResult[17];
   }
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl5 = tmp(1127).intl;
+    const intl5 = tmp(1126).intl;
     const stringResult3 = intl5.string(intl6.t.gHPk3I);
     cResult[18] = stringResult3;
     tmp37 = stringResult3;

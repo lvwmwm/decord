@@ -1,22 +1,22 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8283
+// Function ID: 8284
 // Name: in_app_reports/ReportUtils
-// Dependencies: [5, 19, 4836, 1086, 7851, 1283, 8089, 7856, 585, 8087, 38, 5017, 558, 576, 2]
+// Dependencies: [5, 19, 4889, 1085, 8075, 1282, 8282, 8080, 584, 8280, 38, 5070, 558, 576, 2]
 // Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getModeratorReportEndpointSafely, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, verifyUnauthenticatedReport
 
-// Module 8090 (in_app_reports/ReportUtils)
+// Module 8283 (in_app_reports/ReportUtils)
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import Constants2 from "Constants" /* 7851 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7856 */;
-import MenuTypes from "MenuTypes" /* 8087 */;
-import ReportMenuType from "ReportMenuType" /* 8089 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import Constants2 from "Constants" /* 8075 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8080 */;
+import MenuTypes from "MenuTypes" /* 8280 */;
+import ReportMenuType from "ReportMenuType" /* 8282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4836 */;
-import Constants from "Constants" /* 1086 */;
+import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -340,7 +340,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "Array", message_id: "unicodeVersion", stage_instance_id: "items", guild_id: "window", guild_scheduled_event_id: "duration", user_id: "to", email_token: "toCharArray$esjava$1", application_id: "toCharArray$esjava$1", entrypoint: "toCharArray$esjava$1", widget_id: "guild" };
+  let obj2 = { channel_id: "Array", message_id: "unicodeVersion", stage_instance_id: "filter", guild_id: "value", guild_scheduled_event_id: "IconComponent", user_id: "emoji", email_token: "o", application_id: "toCharArray$esjava$1", entrypoint: "toCharArray$esjava$1", widget_id: "toCharArray$esjava$1" };
   const tmp = require;
   let tmp2 = dependencyMap;
   if (name.name !== MenuTypes.ReportNames.MESSAGE) {
@@ -512,7 +512,7 @@ export const submitReport = function submitReport(language, name, arr) {
     let tmp = language;
     let tmp2 = name;
     const tmp4 = obj4;
-    const REPORT_TO_MOD = obj4(8089).ReportMenuTypeSets.REPORT_TO_MOD;
+    const REPORT_TO_MOD = obj4(8282).ReportMenuTypeSets.REPORT_TO_MOD;
     if (REPORT_TO_MOD.has(name.name)) {
       let str2 = language.language;
       obj = {
@@ -554,8 +554,8 @@ export const submitReport = function submitReport(language, name, arr) {
         str2 = "en";
       }
       let tmp15 = null;
-      if (name.name === tmp4(8087).ModeratorReportNames.MESSAGE) {
-        let obj2 = { channel_id: "Array", message_id: "apply", guild_id: "ty" };
+      if (name.name === tmp4(8280).ModeratorReportNames.MESSAGE) {
+        let obj2 = { channel_id: "Array", message_id: "apply", guild_id: "ip" };
         obj4 = { name: name.name, channel_id, message_id: id };
         ({ channel_id, id } = name.record);
         let merged = Object.assign(obj);
@@ -563,14 +563,14 @@ export const submitReport = function submitReport(language, name, arr) {
         tmp15 = obj4;
       }
       obj4 = tmp15;
-      const HTTP2 = tmp4(1283).HTTP;
+      const HTTP2 = tmp4(1282).HTTP;
       const post2 = HTTP2.post;
       const tmp23 = _modDef38;
-      const REPORT_TO_MOD2 = tmp4(8089).ReportMenuTypeSets.REPORT_TO_MOD;
+      const REPORT_TO_MOD2 = tmp4(8282).ReportMenuTypeSets.REPORT_TO_MOD;
       const _HermesInternal2 = HermesInternal;
       const hasItem = REPORT_TO_MOD2.has(name.name);
       tmp23(hasItem, "Invalid report type " + name.name);
-      if (name.name === tmp4(8087).ModeratorReportNames.MESSAGE) {
+      if (name.name === tmp4(8280).ModeratorReportNames.MESSAGE) {
         const request = { url: closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id), body: tmp15, rejectWithError: false };
         const post2Result = post2(request);
         resolved = post2Result.then((result) => {
@@ -605,7 +605,7 @@ export const submitReport = function submitReport(language, name, arr) {
         throw error;
       }
     } else {
-      const HTTP = tmp4(1283).HTTP;
+      const HTTP = tmp4(1282).HTTP;
       const request1 = { url: SUBMIT_REPORT_MENU(name), body: genSubmitData(language, name, arr), rejectWithError: false };
       let tmp6 = closure_7;
       name = name.name;
@@ -613,7 +613,7 @@ export const submitReport = function submitReport(language, name, arr) {
       SUBMIT_REPORT_MENU = closure_7.SUBMIT_REPORT_MENU;
       let _Object = Object;
       const tmp8 = _modDef38;
-      const values = Object.values(tmp4(8087).ReportNames);
+      const values = Object.values(tmp4(8280).ReportNames);
       const _HermesInternal = HermesInternal;
       const hasItem1 = values.includes(name);
       tmp8(hasItem1, "Invalid report type " + name.name);

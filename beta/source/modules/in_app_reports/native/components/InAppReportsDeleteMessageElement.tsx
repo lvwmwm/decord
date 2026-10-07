@@ -1,16 +1,16 @@
-// Module ID: 12471
-// Function ID: 12472
+// Module ID: 12718
+// Function ID: 12719
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 5057, 1086, 21, 558, 576, 504, 5017, 6880, 1127, 4791, 12466, 2]
+// Dependencies: [32, 19, 5110, 1085, 21, 558, 576, 504, 5070, 6965, 1126, 4847, 12713, 2]
 
-// Module 12471 (InAppReportsDeleteMessageElement)
+// Module 12718 (InAppReportsDeleteMessageElement)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6880 */;
+import Constants from "Constants" /* 1085 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5057 */;
+import MessageStore from "MessageStore" /* 5110 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,12 +82,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     }
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(message(1127).t.c9BHL9);
-      const intl2 = tmp(1127).intl;
-      const stringResult1 = intl2.string(message(1127).t.AT2KSd);
-      const intl3 = tmp(1127).intl;
-      const stringResult2 = intl3.string(message(1127).t.dK8S0w);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(message(1126).t.c9BHL9);
+      const intl2 = tmp(1126).intl;
+      const stringResult1 = intl2.string(message(1126).t.AT2KSd);
+      const intl3 = tmp(1126).intl;
+      const stringResult2 = intl3.string(message(1126).t.dK8S0w);
       cResult[10] = stringResult;
       cResult[11] = stringResult1;
       cResult[12] = stringResult2;
@@ -101,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp23 = jsx(message(4791).TrashIcon, { color: "text-feedback-critical" });
+      const tmp23 = jsx(message(4847).TrashIcon, { color: "text-feedback-critical" });
       cResult[13] = tmp23;
       tmp21 = tmp23;
     } else {
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       }
       return tmp24;
     }
-    const tmp27 = jsx(reportId(12466), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
+    const tmp27 = jsx(reportId(12713), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
     cResult[14] = tmp14;
     cResult[15] = tmp5;
     cResult[16] = tmp27;
@@ -159,11 +159,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     const obj3 = MessageActionCreatorsDefault;
     obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  reportId(12466);
-  const intl = message(1127).intl;
-  const intl2 = message(1127).intl;
-  const intl3 = message(1127).intl;
-  return <tmp6 title={intl.string(message(1127).t.c9BHL9)} disabledTitle={intl2.string(message(1127).t.AT2KSd)} description={intl3.string(message(1127).t.dK8S0w)} disabled={first} variant="danger" onPress={callback} icon={null} />;
+  reportId(12713);
+  const intl = message(1126).intl;
+  const intl2 = message(1126).intl;
+  const intl3 = message(1126).intl;
+  return <tmp6 title={intl.string(message(1126).t.c9BHL9)} disabledTitle={intl2.string(message(1126).t.AT2KSd)} description={intl3.string(message(1126).t.dK8S0w)} disabled={first} variant="danger" onPress={callback} icon={null} />;
 });
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsDeleteMessageElement.tsx");
 

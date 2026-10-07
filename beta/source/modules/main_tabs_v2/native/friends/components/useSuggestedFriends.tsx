@@ -1,16 +1,16 @@
-// Module ID: 15678
-// Function ID: 15679
+// Module ID: 15973
+// Function ID: 15974
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 7079, 12089, 558, 576, 573, 4680, 12, 2]
+// Dependencies: [32, 19, 7146, 12348, 558, 576, 573, 4722, 12, 2]
 
-// Module 15678 (useSuggestedFriends)
+// Module 15973 (useSuggestedFriends)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 12089 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 12348 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7079 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7146 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

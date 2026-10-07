@@ -1,15 +1,15 @@
-// Module ID: 11624
-// Function ID: 11625
+// Module ID: 11879
+// Function ID: 11880
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4826, 21, 4837, 588, 558, 576, 4535, 504, 1370, 4570, 5843, 5436, 2]
+// Dependencies: [19, 4879, 21, 4890, 587, 558, 576, 4580, 504, 1369, 4612, 5920, 5909, 2]
 
-// Module 11624 (PremiumAnimatedGiftButton)
+// Module 11879 (PremiumAnimatedGiftButton)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import createStyles from "createStyles" /* 4837 */;
+import nativeDefault from "native" /* 587 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,11 +46,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(30);
   ({ active, style, disabled, accessibilityState, channelId, animationDataUrl, onAnimationFinished, loop, activeStyle } = arg0);
   const obj2 = require("useToken");
-  const token = obj2.useToken(stateFromStores(588).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const token = obj2.useToken(stateFromStores(587).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
   const obj3 = require("useToken");
-  const token1 = obj3.useToken(stateFromStores(588).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const token1 = obj3.useToken(stateFromStores(587).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   const obj4 = require("useToken");
-  const token2 = obj4.useToken(stateFromStores(588).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token2 = obj4.useToken(stateFromStores(587).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp7 = closure_7(token, token1);
   const bound = Math.max(0, (token2 - token) / 2);
   _require = useRef(null);
@@ -314,11 +314,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp = _require;
   ({ style, activeStyle, channelId, animationDataUrl, onAnimationFinished, loop } = arg0);
   let obj = require("useToken");
-  const token = obj.useToken(stateFromStores(588).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const token = obj.useToken(stateFromStores(587).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
   const obj2 = require("useToken");
-  const token1 = obj2.useToken(stateFromStores(588).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const token1 = obj2.useToken(stateFromStores(587).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   const obj3 = require("useToken");
-  const token2 = obj3.useToken(stateFromStores(588).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token2 = obj3.useToken(stateFromStores(587).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp7 = closure_7(token, token1);
   const bound = Math.max(0, (token2 - token) / 2);
   const tmp9 = useRef(null);
@@ -349,19 +349,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }, items1);
   let FadeOut;
-  const View = stateFromStores(4570).View;
+  const View = stateFromStores(4612).View;
   if (!stateFromStores) {
-    FadeOut = tmp(4570).FadeOut;
+    FadeOut = tmp(4612).FadeOut;
   }
   const items2 = [tmp7.containerRefresh, style, ];
-  const PressableOpacity = tmp(5436).PressableOpacity;
+  const PressableOpacity = tmp(5909).PressableOpacity;
   if (active) {
     active = !disabled;
   }
   if (active) {
     active = activeStyle;
   }
-  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5843), obj8) });
+  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5920), obj8) });
   items2[2] = active;
   tmp14 = undefined;
   if (bound > 0) {

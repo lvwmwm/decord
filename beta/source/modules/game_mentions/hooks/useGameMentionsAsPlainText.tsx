@@ -1,14 +1,14 @@
-// Module ID: 10382
-// Function ID: 10383
+// Module ID: 10613
+// Function ID: 10614
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2007, 1378, 5307, 558, 576, 6728, 2017, 5424, 1127, 504, 2]
+// Dependencies: [19, 2007, 1377, 5789, 558, 576, 6812, 2018, 5896, 1126, 504, 2]
 
-// Module 10382 (useGameMentionsAsPlainText)
-import StringUtils from "StringUtils" /* 2017 */;
+// Module 10613 (useGameMentionsAsPlainText)
+import StringUtils from "StringUtils" /* 2018 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2007 */;
-import UserStore from "UserStore" /* 1378 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5307 */;
+import UserStore from "UserStore" /* 1377 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             nsfwAllowed = currentUser.nsfwAllowed;
           }
           tmp6 = closure_6;
-          return str.replace(closure_6, () => { /* body not rendered: F138983 */ });
+          return str.replace(closure_6, () => { /* body not rendered: F140587 */ });
         }
       }
       return str;

@@ -1,13 +1,13 @@
-// Module ID: 12113
-// Function ID: 12114
+// Module ID: 12372
+// Function ID: 12373
 // Name: LeafIllocon
-// Dependencies: [21, 558, 576, 12114, 5896, 2]
+// Dependencies: [21, 558, 576, 12373, 5974, 2]
 
-// Module 12113 (LeafIllocon)
+// Module 12372 (LeafIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef12114 from "module_12114" /* 12114 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef12373 from "module_12373" /* 12373 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12114 };
+    const obj2 = { uri: _modDef12373 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef12114 };
+  const obj2 = { uri: _modDef12373 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

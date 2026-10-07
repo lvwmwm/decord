@@ -1,11 +1,11 @@
-// Module ID: 5036
-// Function ID: 5037
+// Module ID: 5089
+// Function ID: 5090
 // Name: GuildRoomErrorUtils
-// Dependencies: [1086, 2]
+// Dependencies: [1085, 2]
 // Exports: handleGuildRoomError
 
-// Module 5036 (GuildRoomErrorUtils)
-import Constants from "Constants" /* 1086 */;
+// Module 5089 (GuildRoomErrorUtils)
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const NOOP_NULL = Constants.NOOP_NULL;

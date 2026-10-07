@@ -1,26 +1,26 @@
-// Module ID: 10990
-// Function ID: 10991
+// Module ID: 11248
+// Function ID: 11249
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 2073, 5018, 1086, 10991, 21, 4837, 588, 558, 576, 5893, 4833, 10992, 573, 1127, 10993, 1619, 2114, 4570, 5918, 8057, 6541, 6536, 4801, 6038, 6572, 2]
+// Dependencies: [32, 19, 17, 2074, 5071, 1085, 11249, 21, 4890, 587, 558, 576, 5971, 4886, 11250, 573, 1126, 11251, 1618, 2115, 5995, 8895, 6614, 6609, 4854, 6112, 6645, 2]
 
-// Module 10990 (GuildHighlightsNotificationsActionSheet)
+// Module 11248 (GuildHighlightsNotificationsActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import GuildIcon from "GuildIcon" /* 5893 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6536 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
-import Constants2 from "Constants" /* 10991 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 10992 */;
+import nativeDefault from "native" /* 587 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import GuildIcon from "GuildIcon" /* 5971 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
+import Constants2 from "Constants" /* 11249 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 11250 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2073 */;
-import UserGuildSettingsStore_mod from "UserGuildSettingsStore" /* 5018 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore_mod from "GuildStore" /* 2074 */;
+import UserGuildSettingsStore_mod from "UserGuildSettingsStore" /* 5071 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -495,7 +495,6 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let tmp29;
   let tmp30;
   let tmp31;
-  let tmp32;
   guildId = guildId.guildId;
   const feedbackSettings = guildId.feedbackSettings;
   let first;
@@ -616,6 +615,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   let num = 0;
   const bottom = feedbackSettings(tmp13[18])().bottom;
+  const tmp22 = feedbackSettings;
   if (null != reasons) {
     let num2 = 148;
     if (first1) {
@@ -641,13 +641,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   const obj6 = { scrollable: true, ref, contentHeight: tmp29, startHeight: sum, children: closure_11(BottomSheetScrollView, obj7) };
   tmp29 = undefined;
-  BottomSheet = tmp12(tmp13[27]).BottomSheet;
+  BottomSheet = tmp12(tmp13[26]).BottomSheet;
   if (tmp24) {
     tmp29 = sum;
   }
-  obj7 = { contentContainerStyle: tmp.contentContainer, onLayout: tmp30, children: tmp31(tmp32, obj15) };
+  obj7 = { contentContainerStyle: tmp.contentContainer, onLayout: tmp30, children: tmp31(first1, obj15) };
   tmp30 = undefined;
-  BottomSheetScrollView = tmp12(tmp13[26]).BottomSheetScrollView;
+  BottomSheetScrollView = tmp12(tmp13[25]).BottomSheetScrollView;
   if (first2) {
     tmp30 = callback2;
   }
@@ -663,15 +663,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   format = intl5.format;
   obj11 = { helpUrl: tmp22Result.getArticleURL(callback.HIGHLIGHTS_NOTIFICATIONS) };
   enfuur = tmp12(tmp13[16]).t.enfuur;
-  tmp22Result = feedbackSettings(ref[19]);
+  tmp22Result = tmp22(ref[19]);
   items6[2] = closure_11(Text3, obj10);
   const items7 = [closure_12(first1, obj8), , , ];
   let tmp28Result = null != tmp17;
   tmp31 = closure_12;
-  tmp32 = first1;
   if (tmp28Result) {
     const obj12 = { style: tmp.feedback, children: tmp17 };
-    tmp28Result = tmp28(tmp22(tmp13[20]).View, obj12);
+    tmp28Result = tmp28(tmp32, obj12);
   }
   items7[1] = tmp28Result;
   if (first == null) {
@@ -680,7 +679,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let tmp28Result2 = first.rating !== FeedbackRating.GOOD;
   if (tmp28Result2) {
     const obj13 = { style: tmp.settings, shadow: "low", border: "subtle", children: closure_11(FormSwitchRow, obj14) };
-    const Card = tmp12(tmp13[21]).Card;
+    const Card = tmp12(tmp13[20]).Card;
     obj14 = {
       disabled: muted,
       label: intl6.string(guildId(ref[16]).t.MVi7LQ),
@@ -693,7 +692,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.highlights(!arg0));
         }
     };
-    FormSwitchRow = tmp12(tmp13[22]).FormSwitchRow;
+    FormSwitchRow = tmp12(tmp13[21]).FormSwitchRow;
     intl6 = tmp12(tmp13[16]).intl;
     if (!muted) {
       muted = notifyHighlights === constants.DISABLED;

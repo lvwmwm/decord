@@ -1,17 +1,17 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 16997
+// Function ID: 16998
 // Name: MessagePreview
-// Dependencies: [19, 7812, 1086, 21, 558, 576, 504, 1127, 16462, 12827, 2]
+// Dependencies: [19, 8037, 1085, 21, 558, 576, 504, 1126, 16814, 13093, 2]
 
-// Module 16642 (MessagePreview)
+// Module 16997 (MessagePreview)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import ChatPreview from "ChatPreview" /* 12827 */;
+import intl2 from "intl" /* 1126 */;
+import ChatPreview from "ChatPreview" /* 13093 */;
 import react from "react" /* 19 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 7812 */;
-import Constants from "Constants" /* 1086 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8037 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
   ({ messages, jumpTargetId } = stateFromStoresObject);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t["+TSRGD"]);
     cResult[2] = stringResult;
     tmp8 = stringResult;
@@ -128,7 +128,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = jumpTargetId(closure_1_2[8]);
     obj.clearMessages();
   }, []);
-  return jsx(onBeforeJumpToMessage(12827).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
+  return jsx(onBeforeJumpToMessage(13093).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
 });
 const result = size.fileFinishedImporting("components_native/common/MessagePreview.tsx");
 

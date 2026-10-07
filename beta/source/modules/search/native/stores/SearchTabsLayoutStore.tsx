@@ -1,22 +1,21 @@
-// Module ID: 11738
-// Function ID: 11739
+// Module ID: 11986
+// Function ID: 11987
 // Name: SearchTabsLayoutStore
-// Dependencies: [11739, 2051, 6700, 11743, 11744, 11745, 11715, 7307, 568, 11716, 11742, 11741, 504, 585, 2]
+// Dependencies: [11987, 2051, 6784, 11990, 11991, 11992, 11967, 7513, 568, 11968, 11997, 11989, 504, 584, 2]
 
-// Module 11738 (SearchTabsLayoutStore)
+// Module 11986 (SearchTabsLayoutStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import SearchUtils from "SearchUtils" /* 11716 */;
-import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11741 */;
-import IntelligenceSearchUtils from "IntelligenceSearchUtils" /* 11742 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11739 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import SearchUtils from "SearchUtils" /* 11968 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 11997 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 11987 */;
 import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import SearchMessageStore from "SearchMessageStore" /* 6700 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11743 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 11744 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 11745 */;
-import SearchQueryStore from "SearchQueryStore" /* 11715 */;
-import SearchConstants from "SearchConstants" /* 7307 */;
+import SearchMessageStore from "SearchMessageStore" /* 6784 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11990 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 11991 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 11992 */;
+import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchConstants from "SearchConstants" /* 7513 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -118,8 +117,8 @@ function computeLayoutForState(value) {
         const tmp11 = searchResultsQuery;
         const tmp8 = require;
         if (null != totalCount2) {
-          const tmp8Result = tmp8(11742);
-          sum = totalCount2 + tmp8Result.getIntelligenceSearchCitationsCount(tmp10, tmp11, totalCount2 > 0);
+          const tmp8Result = tmp8(11997);
+          sum = totalCount2 + tmp8Result.getSmartSearchCitationsCount(tmp10, tmp11, totalCount2 > 0);
         }
         acc[item] = sum;
       } else {
@@ -146,19 +145,23 @@ function computeLayoutForState(value) {
         visibleTabCounts = null;
       } else if (found.every((item) => null != reduced[item])) {
         const found1 = found.filter((item) => {
-          let tmp4;
           if (item === constants.MESSAGES) {
-            let tmp5 = 0 !== tmp3[constants.MESSAGES];
-            if (!tmp5) {
-              const obj = IntelligenceSearchUtils;
-              const intelligenceSearchStatus = obj.getIntelligenceSearchStatus(tmp, tmp2);
-              tmp5 = intelligenceSearchStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADING;
+            flag = true;
+            if (0 === reduced[constants.MESSAGES]) {
+              const obj = SmartSearchUtils;
+              const smartSearchQuery = obj.getSmartSearchQuery(tmp, tmp2);
+              let tmp8 = null != smartSearchQuery;
+              if (tmp8) {
+                const tmp4Result = SmartSearchUtils;
+                const smartSearchStatus = tmp4Result.getSmartSearchStatus(smartSearchQuery);
+                tmp8 = smartSearchStatus === tmp4(11989).SmartSearchStatus.LOADING;
+              }
+              flag = tmp8;
             }
-            tmp4 = tmp5;
           } else {
-            tmp4 = 0 !== tmp3[item];
+            flag = 0 !== tmp3[item];
           }
-          return tmp4;
+          return flag;
         });
         flag2 = false;
         visibleTabCounts = reduced;
@@ -225,8 +228,8 @@ const map = new Map();
 const Store = get_initializedDefault.Store;
 class SearchTabsLayoutStore extends Store {
   initialize() {
-    this.waitFor(SearchQueryStore, SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, ChannelStore, IntelligenceSearchStore);
-    const items = [SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, IntelligenceSearchStore];
+    this.waitFor(SearchQueryStore, SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, ChannelStore, SmartSearchResultsStore);
+    const items = [SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, SmartSearchResultsStore];
     this.syncWith(items, computeLayoutForAll);
   }
   getCandidateTabs(searchContext) {

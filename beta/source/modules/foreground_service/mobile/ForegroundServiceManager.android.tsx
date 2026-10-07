@@ -1,12 +1,12 @@
-// Module ID: 7179
-// Function ID: 7180
+// Module ID: 7252
+// Function ID: 7253
 // Name: ForegroundServiceManager
-// Dependencies: [17, 7180, 1343, 1989, 2]
+// Dependencies: [17, 7253, 1342, 1989, 2]
 
-// Module 7179 (ForegroundServiceManager)
+// Module 7252 (ForegroundServiceManager)
 import react_native from "react-native" /* 17 */;
-import _modDef1343 from "module_1343" /* 1343 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7180 */;
+import _modDef1342 from "module_1342" /* 1342 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7253 */;
 import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ class ForegroundServiceManager {
       }
     } else {
       const serviceNotifications4 = self.serviceNotifications;
-      const tmp16 = _modDef1343;
+      const tmp16 = _modDef1342;
       if (!tmp16(serviceNotifications4.get(arg0), usesGateway)) {
         usesGateway = usesGateway.usesGateway;
         obj = RequestGatewaySocketAll;

@@ -1,10 +1,10 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8817
+// Function ID: 8818
 // Name: getUploaderFileSizeMetrics
 // Dependencies: [2]
 // Exports: getUploaderChannelId, getUploaderFileSizeMetrics
 
-// Module 8610 (getUploaderFileSizeMetrics)
+// Module 8817 (getUploaderFileSizeMetrics)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/getUploaderFileSizeMetrics.tsx");
@@ -24,24 +24,24 @@ export const getUploaderChannelId = function getUploaderChannelId(file) {
   return channelId;
 };
 export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(totalPreCompressionSize) {
-  const f97608 = (acc, item) => acc + item;
+  const f98680 = (acc, item) => acc + item;
   let items = totalPreCompressionSize.items;
   if (items == null) {
     items = [];
   }
   const mapped = items.map((preCompressionSize) => preCompressionSize.preCompressionSize);
   const mapped1 = items.map((postCompressionSize) => {
-    let preCompressionSize = postCompressionSize.postCompressionSize;
-    if (preCompressionSize == null) {
-      preCompressionSize = postCompressionSize.preCompressionSize;
+    let currentSize = postCompressionSize.postCompressionSize;
+    if (currentSize == null) {
+      currentSize = postCompressionSize.currentSize;
     }
-    return preCompressionSize;
+    return currentSize;
   });
   const obj = { preCompressionFileSizes: mapped, postCompressionFileSizes: mapped1, preCompressionAggregateSize: totalPreCompressionSize, postCompressionAggregateSize: null, numAttachments: null };
   if (totalPreCompressionSize.totalPreCompressionSize > 0) {
     totalPreCompressionSize = totalPreCompressionSize.totalPreCompressionSize;
   } else {
-    totalPreCompressionSize = mapped.reduce(f97608, 0);
+    totalPreCompressionSize = mapped.reduce(f98680, 0);
   }
   if (null != totalPreCompressionSize.totalPostCompressionSize) {
     let totalPostCompressionSize;
@@ -52,5 +52,5 @@ export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(to
     obj.numAttachments = totalPreCompressionSize.attachmentsCount > 0 ? totalPreCompressionSize.attachmentsCount : items.length;
     return obj;
   }
-  totalPostCompressionSize = mapped1.reduce(f97608, 0);
+  totalPostCompressionSize = mapped1.reduce(f98680, 0);
 };

@@ -1,23 +1,23 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 12238
+// Function ID: 12239
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 4826, 21, 4837, 588, 558, 576, 6398, 11986, 4515, 504, 7407, 8675, 11988, 11990, 1189, 4833, 11992, 1127, 2]
+// Dependencies: [17, 4879, 21, 4890, 587, 558, 576, 6470, 12239, 4552, 504, 7620, 4826, 12241, 12243, 1188, 4886, 12245, 1126, 2]
 
-// Module 11985 (GuildPowerupsRecentActivitySection)
+// Module 12238 (GuildPowerupsRecentActivitySection)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import DateUtils from "DateUtils" /* 4515 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6398 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7407 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 11986 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 11992 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import DateUtils from "DateUtils" /* 4552 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7620 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12239 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12245 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,11 +102,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
     }
     const isRoleStyleAndRoleColorsEligibleForERC = obj8.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp(8675).BoostGemIcon;
+      BoostGemSlashIcon = tmp(4826).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(11988).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12241).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(11990).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12243).BoostGemSlashIcon;
     }
     if (cResult[7] === BoostGemSlashIcon) {
       if (cResult[10] === roleColor) {
@@ -160,7 +160,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
             return closure_1_4.roleStyle;
           }
         }
-        tmp31 = hasOwnProperty(tmp(1189).RoleDot, obj5);
+        tmp31 = hasOwnProperty(tmp(1188).RoleDot, obj5);
       }
       cResult[10] = roleColor;
       cResult[11] = roleColorStrings;
@@ -235,11 +235,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
     const tmpResult2 = enhanced_role_colors_EnhancedRoleColorUtils;
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult2.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp(8675).BoostGemIcon;
+      BoostGemSlashIcon = tmp(4826).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(11988).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12241).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(11990).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12243).BoostGemSlashIcon;
     }
     const obj5 = { style: tmp4.boostRowContainer, children: items1 };
     if ("gave" === phase) {
@@ -253,24 +253,24 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(row) {
     const obj8 = { style: tmp4.boostMessage, children: items2 };
     if (tmp20Result) {
       const obj9 = { size: "small", color: roleColor, colors: roleColorStrings };
-      tmp20Result = tmp20(tmp(1189).RoleDot, obj9);
+      tmp20Result = tmp20(tmp(1188).RoleDot, obj9);
     }
     items2 = [tmp20Result, , , ];
     const obj10 = { variant: "text-md/medium", color: "interactive-text-active", lineClamp: 1, style: items3, gradientColors: tmp24, children: username };
     items3 = [tmp4.username, {}];
     tmp24 = undefined;
-    const Text = tmp(4833).Text;
+    const Text = tmp(4886).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp24 = processColorStringsArray;
     }
     items2[1] = hasOwnProperty(Text, obj10);
     items2[2] = hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj11 = { variant: "text-md/medium", lineClamp: 1, style: tmp4.messageText, children: getBoostRowMessageTextDefault(row) };
-    const Text2 = tmp(4833).Text;
+    const Text2 = tmp(4886).Text;
     items2[3] = hasOwnProperty(Text2, obj11);
     items1[1] = metroRequire(View, obj8);
     let str4 = "text-xs/semibold";
-    const Text3 = tmp(4833).Text;
+    const Text3 = tmp(4886).Text;
     if (manaTypeConsolidationExperiment) {
       str4 = "text-xs/medium";
     }
@@ -306,7 +306,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t.yM9Krm);
       cResult[0] = stringResult;
       first = stringResult;
@@ -385,13 +385,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (0 !== arr.length) {
     let str = "text-subtle";
     const obj2 = { style: tmp4.sectionContainer, children: items };
-    const Text = tmp(4833).Text;
+    const Text = tmp(4886).Text;
     const tmp6 = metroRequire;
     if (manaTypeConsolidationExperiment) {
       str = "text-strong";
     }
     const obj3 = { variant: "heading-lg/semibold", color: str, children: intl.string(intl2.t.yM9Krm) };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     items = [hasOwnProperty(Text, obj3), ];
     const obj4 = {
       style: tmp4.boostContainer,

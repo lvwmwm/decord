@@ -1,23 +1,23 @@
-// Module ID: 12265
-// Function ID: 12266
+// Module ID: 12519
+// Function ID: 12520
 // Name: NotificationProgress
-// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 4570, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4612, 2]
 
-// Module 12265 (NotificationProgress)
+// Module 12519 (NotificationProgress)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const ReanimatedRexport = tmp(4570);
+const ReanimatedRexport = tmp(4612);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { progress: obj2, progressContainerBottom: { width: "100%", position: "absolute", bottom: -1 } };

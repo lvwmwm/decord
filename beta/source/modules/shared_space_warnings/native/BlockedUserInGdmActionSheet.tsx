@@ -1,29 +1,29 @@
-// Module ID: 13282
-// Function ID: 13283
+// Module ID: 13547
+// Function ID: 13548
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2051, 1378, 13283, 1086, 21, 4837, 588, 4833, 4989, 1127, 558, 576, 504, 1376, 1189, 11177, 10414, 4793, 4788, 1253, 4801, 13284, 4850, 6624, 9577, 5997, 5916, 5282, 2]
+// Dependencies: [19, 17, 2051, 1377, 13548, 1085, 21, 4890, 587, 4886, 5042, 1126, 558, 576, 504, 1375, 1188, 11435, 10648, 4792, 4812, 1252, 4854, 13549, 4903, 6701, 9804, 6074, 5993, 5594, 2]
 
-// Module 13282 (BlockedUserInGdmActionSheet)
+// Module 13547 (BlockedUserInGdmActionSheet)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl7 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4788 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4793 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import TableRow2 from "TableRow" /* 5916 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13284 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl7 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import TableRow2 from "TableRow" /* 5993 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13549 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1378 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13283 */;
+import UserStore from "UserStore" /* 1377 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13548 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -250,7 +250,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   const tmpResult = userIds(504);
   const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp6, tmp7);
   if (cResult[4] !== stateFromStoresArray) {
-    const found = stateFromStoresArray.filter(tmp(1376).isNotNullish);
+    const found = stateFromStoresArray.filter(tmp(1375).isNotNullish);
     cResult[4] = stateFromStoresArray;
     cResult[5] = found;
     tmp8 = found;
@@ -278,11 +278,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
       }
     }
     if (null != tmp13) {
-      const obj2 = { user: tmp8[0], guildId, size: userIds(1189).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
-      const Avatar = tmp(1189).Avatar;
+      const obj2 = { user: tmp8[0], guildId, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
+      const Avatar = tmp(1188).Avatar;
       tmp19 = closure_11(Avatar, obj2);
     } else {
-      tmp19 = closure_11(tmp(11177).UserIcon, {});
+      tmp19 = closure_11(tmp(11435).UserIcon, {});
     }
     cResult[8] = guildId;
     cResult[9] = tmp13;
@@ -292,8 +292,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   } else {
     let tmp10;
     if (cResult[12] !== tmp8) {
-      const obj3 = { users: tmp8, size: userIds(1189).AvatarSizes.REFRESH_MEDIUM_32 };
-      const FacepileGroupDMAvatar = tmp(10414).FacepileGroupDMAvatar;
+      const obj3 = { users: tmp8, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32 };
+      const FacepileGroupDMAvatar = tmp(10648).FacepileGroupDMAvatar;
       const tmp12 = closure_11(FacepileGroupDMAvatar, obj3);
       cResult[12] = tmp8;
       cResult[13] = tmp12;
@@ -314,21 +314,21 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     let user;
     return userIds.map((item) => user.getUser(item));
   }, items1);
-  const found = stateFromStoresArray.filter(userIds(1376).isNotNullish);
+  const found = stateFromStoresArray.filter(userIds(1375).isNotNullish);
   const obj2 = UserStore;
   if (1 === userIds.length) {
     let tmp8;
     if (null != obj2.getUser(userIds[0])) {
-      const obj3 = { user: found[0], guildId, size: userIds(1189).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
-      const Avatar = tmp(1189).Avatar;
+      const obj3 = { user: found[0], guildId, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
+      const Avatar = tmp(1188).Avatar;
       tmp8 = closure_11(Avatar, obj3);
     } else {
-      tmp8 = closure_11(tmp(11177).UserIcon, {});
+      tmp8 = closure_11(tmp(11435).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
-    const obj4 = { users: found, size: userIds(1189).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10414).FacepileGroupDMAvatar;
+    const obj4 = { users: found, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32 };
+    const FacepileGroupDMAvatar = tmp(10648).FacepileGroupDMAvatar;
     tmp5 = closure_11(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;
@@ -350,7 +350,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp28;
       const _Symbol3 = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl5 = tmp(1127).intl;
+        const intl5 = tmp(1126).intl;
         const stringResult = intl5.string(intl7.t.xbRNI3);
         cResult[0] = stringResult;
         first = stringResult;
@@ -361,7 +361,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { children: items };
         items = [first, "\n", ];
-        const intl6 = tmp(1127).intl;
+        const intl6 = tmp(1126).intl;
         items[2] = intl6.string(intl7.t["Bp2/ni"]);
         const tmp31 = map1(closure_12, obj2);
         cResult[1] = tmp31;
@@ -378,7 +378,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp19;
     let tmp21;
     if (cResult[2] !== numOfBlockedUsers) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const obj3 = { n: numOfBlockedUsers };
       const formatResult = intl3.format(intl7.t.iKtixW, obj3);
       cResult[2] = numOfBlockedUsers;
@@ -389,7 +389,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1127).intl;
+      const intl4 = tmp(1126).intl;
       const stringResult1 = intl4.string(intl7.t.SN1hrl);
       cResult[4] = stringResult1;
       tmp19 = stringResult1;
@@ -414,7 +414,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp10;
       let tmp12;
       if (cResult[7] !== numOfIgnoredUsers) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const obj5 = { n: numOfIgnoredUsers };
         const formatResult1 = intl.format(intl7.t["6IRwua"], obj5);
         cResult[7] = numOfIgnoredUsers;
@@ -425,7 +425,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const stringResult2 = intl2.string(intl7.t["6AKLRt"]);
         cResult[9] = stringResult2;
         tmp10 = stringResult2;

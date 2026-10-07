@@ -1,17 +1,17 @@
-// Module ID: 8749
-// Function ID: 8750
+// Module ID: 8980
+// Function ID: 8981
 // Name: FramesManager
-// Dependencies: [8496, 1086, 4741, 6540, 8750, 8498, 1253, 585, 2]
+// Dependencies: [8703, 1085, 5316, 6613, 8981, 8514, 1252, 584, 2]
 
-// Module 8749 (FramesManager)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import Constants2 from "Constants" /* 4741 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8498 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 8750 */;
-import FramesStore from "FramesStore" /* 8496 */;
-import Constants from "Constants" /* 1086 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+// Module 8980 (FramesManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Constants2 from "Constants" /* 5316 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8514 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 8981 */;
+import FramesStore from "FramesStore" /* 8703 */;
+import Constants from "Constants" /* 1085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -54,6 +54,23 @@ class FramesManager extends AutomaticLifecycleManager {
         for (const item10010 of framesForChannel) {
           let leaveFrameResult = require.leaveFrame(item10010.id);
           continue;
+        }
+      },
+      GUILD_DELETE(guild) {
+        guild = guild.guild;
+        if (!("unavailable" in guild)) {
+          const allFrames = FramesStore.getAllFrames();
+          for (const item10014 of allFrames) {
+            let tmp5 = item10014;
+            let tmp8 = item10014.surface.type !== EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN;
+            if (tmp8) {
+              tmp8 = tmp5.surface.guildId === guild.id;
+            }
+            if (tmp8) {
+              let leaveFrameResult = require.leaveFrame(tmp5.id);
+            }
+            continue;
+          }
         }
       },
       CHANNEL_UPDATES(channels) {

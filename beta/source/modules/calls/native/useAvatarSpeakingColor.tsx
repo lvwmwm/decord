@@ -1,19 +1,19 @@
-// Module ID: 8896
-// Function ID: 8897
+// Module ID: 9122
+// Function ID: 9123
 // Name: useAvatarSpeakingColor
-// Dependencies: [19, 4826, 8897, 558, 576, 504, 8898, 4535, 588, 4685, 684, 2]
+// Dependencies: [19, 4879, 9123, 558, 576, 504, 9124, 4580, 587, 4727, 683, 2]
 
-// Module 8896 (useAvatarSpeakingColor)
+// Module 9122 (useAvatarSpeakingColor)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import useToken from "useToken" /* 4535 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import VadColorConstants from "VadColorConstants" /* 8897 */;
-import useVadColorsDefault from "useVadColors" /* 8898 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import useToken from "useToken" /* 4580 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import VadColorConstants from "VadColorConstants" /* 9123 */;
+import useVadColorsDefault from "useVadColors" /* 9124 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           token1 = tmp15;
         }
       }
-      const obj2 = { foreground: _modDef684(first), background: _modDef684(token), ratio, saturationFactor: stateFromStores };
+      const obj2 = { foreground: _modDef683(first), background: _modDef683(token), ratio, saturationFactor: stateFromStores };
       const getAccessibleForegroundColor = ColorUtils.getAccessibleForegroundColor;
       ColorUtils;
       const accessibleForegroundColor = getAccessibleForegroundColor(obj2);
@@ -123,7 +123,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null == first) {
       hexResult = token1;
     } else {
-      const obj = { foreground: _modDef684(first), background: _modDef684(token), ratio, saturationFactor: stateFromStores };
+      const obj = { foreground: _modDef683(first), background: _modDef683(token), ratio, saturationFactor: stateFromStores };
       const getAccessibleForegroundColor = ColorUtils.getAccessibleForegroundColor;
       ColorUtils;
       const accessibleForegroundColor = getAccessibleForegroundColor(obj);

@@ -1,18 +1,18 @@
-// Module ID: 8291
-// Function ID: 8292
+// Module ID: 8487
+// Function ID: 8488
 // Name: PremiumFeaturesBackground
-// Dependencies: [109, 19, 6853, 1380, 21, 4837, 588, 558, 576, 684, 5292, 1106, 2]
+// Dependencies: [109, 19, 6938, 1379, 21, 4890, 587, 558, 576, 683, 5605, 1105, 2]
 
-// Module 8291 (PremiumFeaturesBackground)
+// Module 8487 (PremiumFeaturesBackground)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import ColorConstants from "ColorConstants" /* 6853 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import ColorConstants from "ColorConstants" /* 6938 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       LinearGradientDefault;
       const merged = Object.assign(tmp6);
-      const tmp25 = <tmp21 style={tmp17} colors={tmp15} start={num7(1106).HorizontalGradient.START} end={num7(1106).HorizontalGradient.END}>{tmp4}</tmp21>;
+      const tmp25 = <tmp21 style={tmp17} colors={tmp15} start={num7(1105).HorizontalGradient.START} end={num7(1105).HorizontalGradient.END}>{tmp4}</tmp21>;
       cResult[12] = tmp4;
       cResult[13] = tmp15;
       cResult[14] = tmp6;
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let mapped = PREMIUM_TIER_0;
   if (num7 < 1) {
     mapped = PREMIUM_TIER_0.map((item) => {
-      const obj = _modDef684(item);
+      const obj = _modDef683(item);
       const alphaResult = obj.alpha(num7);
       return alphaResult.hex();
     });
@@ -138,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let mapped = PREMIUM_TIER_0;
   if (num < 1) {
     mapped = PREMIUM_TIER_0.map((item) => {
-      const obj = _modDef684(item);
+      const obj = _modDef683(item);
       const alphaResult = obj.alpha(num);
       return alphaResult.hex();
     });
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [tmp2.cardContainer, style];
   LinearGradientDefault;
   const merged1 = Object.assign(merged);
-  return <tmp6 style={items} colors={mapped} start={num(1106).HorizontalGradient.START} end={num(1106).HorizontalGradient.END}>{children}</tmp6>;
+  return <tmp6 style={items} colors={mapped} start={num(1105).HorizontalGradient.START} end={num(1105).HorizontalGradient.END}>{children}</tmp6>;
 });
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesBackground.tsx");
 

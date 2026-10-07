@@ -1,33 +1,33 @@
-// Module ID: 17729
-// Function ID: 17730
+// Module ID: 18095
+// Function ID: 18096
 // Name: receiveNotification
-// Dependencies: [5, 5871, 6950, 502, 2051, 1378, 6008, 1086, 4879, 2057, 11801, 3, 4531, 1127, 9628, 4695, 1122, 7845, 4848, 6761, 9057, 4694, 16055, 7058, 7628, 6604, 4850, 9206, 1253, 5017, 1370, 12441, 11, 16053, 6899, 10, 6900, 5590, 13175, 11804, 504, 12296, 9394, 4814, 1106, 10992, 7803, 7800, 585, 5040, 1113, 5039, 13397, 2]
+// Dependencies: [5, 5948, 7037, 502, 2051, 1377, 6085, 1085, 4932, 2057, 12057, 3, 4568, 1126, 4811, 4737, 1121, 8069, 4901, 6845, 9279, 4736, 16358, 7125, 7850, 6681, 4903, 9433, 1252, 5070, 1369, 12695, 11, 16356, 6984, 10, 6985, 5436, 13440, 12059, 504, 12550, 7517, 4867, 1105, 11250, 8029, 8024, 584, 5093, 1112, 5092, 13663, 2]
 // Exports: default
 
-// Module 17729 (receiveNotification)
+// Module 18095 (receiveNotification)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import router_utils from "router_utils" /* 1113 */;
-import intl2 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import router_utils from "router_utils" /* 1112 */;
+import intl2 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import parseURLDefault from "parseURL" /* 4814 */;
-import Constants2 from "Constants" /* 4879 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5871 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6008 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7803 */;
-import MessageManagerDefault from "MessageManager" /* 9394 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9628 */;
-import Constants3 from "Constants" /* 11801 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4811 */;
+import parseURLDefault from "parseURL" /* 4867 */;
+import Constants2 from "Constants" /* 4932 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5948 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6085 */;
+import MessageManagerDefault from "MessageManager" /* 7517 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
+import Constants3 from "Constants" /* 12057 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f131531 = (arg0) => {
+const f133152 = (arg0) => {
   addPostConnectionCallback(arg0);
 };
 function onStageConnectionError() {
@@ -49,7 +49,7 @@ function onStageConnectionError() {
   open(obj);
 }
 function waitForConnection() {
-  const promise = new Promise(f131531);
+  const promise = new Promise(f133152);
   return promise;
 }
 function waitForDataOrConnection() {
@@ -974,7 +974,7 @@ function receiveNotification_(data) {
   const maybeAckNotificationCenter2 = function maybeAckNotificationCenter() {
     return obj(...arguments);
   };
-  const f147719 = () => {
+  const f149503 = () => {
     obj = router_utils;
     obj.transitionTo(authStore2.CHANNEL(data.guild_id, data.channel_id), { navigationReplace: true, openChannel: true });
   };
@@ -1173,13 +1173,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -1190,10 +1190,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -1223,7 +1223,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1244,10 +1244,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -1347,13 +1347,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -1364,10 +1364,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -1397,7 +1397,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1418,10 +1418,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -1521,13 +1521,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -1538,10 +1538,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -1571,7 +1571,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1592,10 +1592,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -1695,13 +1695,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -1712,10 +1712,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -1745,7 +1745,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1766,10 +1766,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -1869,13 +1869,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -1886,10 +1886,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -1919,7 +1919,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1940,10 +1940,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2043,13 +2043,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -2060,10 +2060,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -2093,7 +2093,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2114,10 +2114,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2217,13 +2217,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -2234,10 +2234,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -2267,7 +2267,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2288,10 +2288,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2391,13 +2391,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -2408,10 +2408,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -2441,7 +2441,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2462,10 +2462,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2565,13 +2565,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -2582,10 +2582,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -2615,7 +2615,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2636,10 +2636,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2739,13 +2739,13 @@ function receiveNotification_(data) {
           let guild_id;
           let message_id;
           if (null != data.message) {
-            tmp19Result = tmp19(585);
+            tmp19Result = tmp19(584);
             obj13 = { type: "MESSAGE_CREATE", channelId: data.message.channel_id, message: data.message, optimistic: true, isPushNotification: true };
             tmp19Result.dispatch(obj13);
           }
-          tmp19Result5 = tmp19(5040);
+          tmp19Result5 = tmp19(5093);
           tmp19Result5.popAll();
-          tmpResult2 = tmp(1113);
+          tmpResult2 = tmp(1112);
           transitionTo = tmpResult2.transitionTo;
           ({ guild_id, channel_id, message_id } = data);
           CHANNELResult = closure_14.CHANNEL(guild_id, channel_id, message_id);
@@ -2756,10 +2756,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f131531;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f147719;
+          fn2 = f149503;
           promise.then(fn2);
           break;
         }
@@ -2789,7 +2789,7 @@ function receiveNotification_(data) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(5039);
+          tmp19Result6 = tmp19(5092);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2810,10 +2810,10 @@ function receiveNotification_(data) {
         {
           if (null != data.deeplink) {
             if ("" !== data.deeplink) {
-              tmp19Result7 = tmp19(4814);
+              tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13397);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2844,7 +2844,7 @@ export default function receiveNotification(getData, arg1) {
   if (null == getData.getData) {
     return false;
   } else {
-    const obj3 = data(6899);
+    const obj3 = data(6984);
     obj3.trackAppOpened("notification");
     data = getData.getData();
     const _HermesInternal = HermesInternal;
@@ -2856,10 +2856,10 @@ export default function receiveNotification(getData, arg1) {
       if (null != AuthenticationStore.getId()) {
         let flag;
         if (data.receiving_user_id !== obj.getId()) {
-          data(6900);
-          data(5590);
-          data(13175);
-          const tmp7Result6 = data(11804);
+          data(6985);
+          data(5436);
+          data(13440);
+          const tmp7Result6 = data(12059);
           const switchAccountResult = tmp7Result6.switchAccount(data.receiving_user_id, false, arg1 ? constants.PUSH_NOTIFICATION_INITIAL : constants.PUSH_NOTIFICATION);
           switchAccountResult.then(() => {
             const Emitter = get_initializedDefault.Emitter;

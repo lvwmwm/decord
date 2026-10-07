@@ -1,21 +1,21 @@
-// Module ID: 5335
-// Function ID: 5336
+// Module ID: 5811
+// Function ID: 5812
 // Name: PlatformMarkupRules
-// Dependencies: [17, 5336, 5420, 2016, 1127, 4486, 1936, 5435, 5313, 1403, 5314, 5317, 2]
+// Dependencies: [17, 5812, 5891, 2017, 1126, 4523, 1936, 5908, 5795, 1402, 5796, 5799, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
-// Module 5335 (PlatformMarkupRules)
+// Module 5811 (PlatformMarkupRules)
 import react_native from "react-native" /* 17 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import _modDef1936 from "module_1936" /* 1936 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2016 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4486 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5313 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5314 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5317 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5336 */;
-import useGameMentionData from "useGameMentionData" /* 5420 */;
-import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5435 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2017 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5795 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5796 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5799 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
+import useGameMentionData from "useGameMentionData" /* 5891 */;
+import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5908 */;
 import size from "module_2" /* 2 */;
 
 let resolveAssetSource;
@@ -23,7 +23,7 @@ let resolveAssetSource;
 let obj2;
 let obj3;
 let obj4;
-const f89494 = (type) => {
+const f90917 = (type) => {
   let uri;
   let tmp = type;
   if ("channel" === type.type) {
@@ -114,7 +114,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f89494);
+          mapped = arr2.map(f90917);
         }
       }
       const inContent = parsed.inContent;
@@ -128,7 +128,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f89494);
+          mapped1 = arr4.map(f90917);
         }
       }
       return obj;
@@ -150,8 +150,8 @@ let obj = {
         gameName = gameMentionData.gameName;
       }
       if (gameName == null) {
-        const intl = tmp2(1127).intl;
-        gameName = intl.string(tmp2(1127).t["11pdXZ"]);
+        const intl = tmp2(1126).intl;
+        gameName = intl.string(tmp2(1126).t["11pdXZ"]);
       }
       return obj2;
     }
@@ -175,7 +175,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f89494);
+          mapped = arr2.map(f90917);
         }
       }
       const inContent = parsed.inContent;
@@ -189,7 +189,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f89494);
+          mapped1 = arr4.map(f90917);
         }
       }
       return obj;
@@ -214,7 +214,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f89494);
+          mapped = arr2.map(f90917);
         }
       }
       const inContent = parsed.inContent;
@@ -228,7 +228,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f89494);
+          mapped1 = arr4.map(f90917);
         }
       }
       return obj;
@@ -306,7 +306,7 @@ export const decorateWithIcon = function decorateWithIcon(content) {
         const items = [content];
         arr2 = items;
       }
-      mapped = arr2.map(f89494);
+      mapped = arr2.map(f90917);
     }
   }
   return mapped;
@@ -326,8 +326,8 @@ export const hydrateGameMention = function hydrateGameMention(gameId, channelId)
     gameName = gameMentionData.gameName;
   }
   if (gameName == null) {
-    const intl = tmp(1127).intl;
-    gameName = intl.string(tmp(1127).t["11pdXZ"]);
+    const intl = tmp(1126).intl;
+    gameName = intl.string(tmp(1126).t["11pdXZ"]);
   }
   return obj2;
 };

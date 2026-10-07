@@ -1,26 +1,26 @@
-// Module ID: 14644
-// Function ID: 14645
+// Module ID: 14929
+// Function ID: 14930
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 14612, 1086, 21, 4837, 588, 558, 576, 14645, 10722, 7135, 14613, 7719, 4570, 5281, 1619, 6495, 14646, 14649, 14676, 6546, 10667, 10670, 10717, 5760, 10733, 2]
+// Dependencies: [32, 19, 17, 14896, 1085, 21, 4890, 587, 558, 576, 14930, 10964, 7202, 14897, 7941, 4612, 5597, 1618, 6570, 14931, 14934, 14961, 6619, 10908, 10911, 10958, 5626, 10976, 2]
 
-// Module 14644 (VideoQuestModal)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import spring from "spring" /* 5281 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import AnalyticsActions from "AnalyticsActions" /* 7135 */;
-import QuestUtils from "QuestUtils" /* 10667 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 10717 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 10722 */;
-import QuestDockConstants from "QuestDockConstants" /* 14612 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 14613 */;
-import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 14645 */;
+// Module 14929 (VideoQuestModal)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import spring from "spring" /* 5597 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import AnalyticsActions from "AnalyticsActions" /* 7202 */;
+import QuestUtils from "QuestUtils" /* 10908 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 10958 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 10964 */;
+import QuestDockConstants from "QuestDockConstants" /* 14896 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 14897 */;
+import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 14930 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

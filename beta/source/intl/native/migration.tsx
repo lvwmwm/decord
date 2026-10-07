@@ -1,15 +1,15 @@
-// Module ID: 13677
-// Function ID: 13678
+// Module ID: 13948
+// Function ID: 13949
 // Name: migration
-// Dependencies: [19, 21, 4837, 588, 558, 576, 4554, 4528, 1936, 1189, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 4596, 4565, 1936, 1188, 2]
 
-// Module 13677 (migration)
+// Module 13948 (migration)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import _modDef1936 from "module_1936" /* 1936 */;
-import LinkingDefault from "Linking" /* 4528 */;
+import LinkingDefault from "Linking" /* 4565 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
   const cResult = obj.c(7);
   target = target.target;
   const children = target.children;
-  const tmp4 = closure_5(react.useContext(target(4554).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp4 = closure_5(react.useContext(target(4596).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     let tmp6;
     if (cResult[0] !== target) {
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
       }
     }
   }
-  const tmp8 = jsx(tmp(1189).LegacyText, { accessible: true, accessibilityRole: str, onPress: tmp5, style: tmp4.link, children });
+  const tmp8 = jsx(tmp(1188).LegacyText, { accessible: true, accessibilityRole: str, onPress: tmp5, style: tmp4.link, children });
   cResult[2] = str;
   cResult[3] = children;
   cResult[4] = tmp5;
@@ -96,7 +96,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(4554).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(4596).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     fn = function k() {
       const openURL = LinkingDefault.openURL;
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
       }
     }
   }
-  return jsx(tmp(1189).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
+  return jsx(tmp(1188).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
 });
 const result = size.fileFinishedImporting("intl/native/migration.tsx");
 

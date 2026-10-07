@@ -1,40 +1,40 @@
-// Module ID: 7829
-// Function ID: 7830
+// Module ID: 8053
+// Function ID: 8054
 // Name: getOnClick
-// Dependencies: [32, 5, 5064, 6950, 6650, 502, 2111, 2073, 4818, 5057, 2102, 4657, 5751, 1086, 1088, 6651, 585, 4819, 7830, 8956, 1987, 5833, 6666, 9057, 4817, 4822, 7108, 4522, 1253, 8759, 11298, 12498, 8777, 4850, 10705, 12502, 10894, 10300, 10671, 1372, 10667, 5762, 12503, 6965, 5017, 4991, 7588, 12504, 2]
+// Dependencies: [32, 5, 5118, 7037, 6729, 502, 2112, 2074, 4871, 5110, 2103, 4699, 5616, 1085, 1087, 6730, 584, 4872, 8054, 9178, 1987, 5705, 6750, 9279, 4870, 4875, 7175, 4559, 1252, 8990, 11554, 12743, 8993, 4903, 10946, 12747, 11149, 10531, 10912, 1371, 10908, 5628, 12748, 7052, 5070, 5044, 7810, 11206, 2]
 // Exports: default
 
-// Module 7829 (getOnClick)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import URLUtilsDefault from "URLUtils" /* 1372 */;
+// Module 8053 (getOnClick)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import URLUtilsDefault from "URLUtils" /* 1371 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import openURLDefault from "openURL" /* 4522 */;
-import CodedLink from "CodedLink" /* 4822 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6651 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 6666 */;
-import _slicedToArray2 from "_slicedToArray" /* 7108 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7830 */;
-import getEmbeddedActivitiesManagerDefault from "getEmbeddedActivitiesManager" /* 8759 */;
-import QuestUtils from "QuestUtils" /* 10667 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 10894 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 12504 */;
+import openURLDefault from "openURL" /* 4559 */;
+import CodedLink from "CodedLink" /* 4875 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6730 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 6750 */;
+import _slicedToArray2 from "_slicedToArray" /* 7175 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8054 */;
+import getEmbeddedActivitiesManagerDefault from "getEmbeddedActivitiesManager" /* 8990 */;
+import QuestUtils from "QuestUtils" /* 10908 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11149 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6650 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6729 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import InviteStore from "InviteStore" /* 4818 */;
-import MessageStore from "MessageStore" /* 5057 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import SortedGuildStore from "SortedGuildStore" /* 5751 */;
-import Constants from "Constants" /* 1086 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import InviteStore from "InviteStore" /* 4871 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+import Constants from "Constants" /* 1085 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,8 +50,8 @@ let closure_15;
 let map1;
 let tmp;
 let tmp11;
-const QuestContent = tmp11(5762);
-const SocialLayerStorefrontNativeActionCreators = tmp(10300);
+const QuestContent = tmp11(5628);
+const SocialLayerStorefrontNativeActionCreators = tmp(10531);
 function openInviteModal() {
   return obj(...arguments);
 }
@@ -320,7 +320,7 @@ export default function getOnClick(url) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "diversity", skuId: "a" };
+            result = { applicationId: "Symbol", skuId: "cursor" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -335,11 +335,11 @@ export default function getOnClick(url) {
         openURLDefault(url);
         return true;
       }
-      result = { applicationId: code, skuId: "r" };
+      result = { applicationId: code, skuId: "Array" };
     };
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4822).CodedLinkType.ACTIVITY_BOOKMARK) {
+    if (findCodedLinkResult.type === tmp2(4875).CodedLinkType.ACTIVITY_BOOKMARK) {
       return (preventDefault) => {
         let closure_3;
         let isCurrentlyInInstance;
@@ -403,7 +403,7 @@ export default function getOnClick(url) {
                         customId = applicationId.customId;
                         embeddedActivitiesManager = 1;
                         channelId = 1;
-                        return { value: "Reflect", done: true };
+                        return { value: "Reflect", done: null };
                       }
                     } else if (1 === embeddedActivitiesManager) {
                       if (arg0 === 1) {
@@ -536,7 +536,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4822).CodedLinkType.GUILD_PRODUCT) {
+    if (findCodedLinkResult.type === tmp2(4875).CodedLinkType.GUILD_PRODUCT) {
       return (preventDefault) => {
         let closure_129_0;
         let closure_129_1;
@@ -545,7 +545,7 @@ export default function getOnClick(url) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(12502, dependencyMap.paths);
+        const promise = asyncRequire(12747, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });
@@ -554,7 +554,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4822).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+    if (findCodedLinkResult.type === tmp2(4875).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
       return (preventDefault) => {
         obj = storefrontCodedLink;
         const result = obj.parseStorefrontCodedLink(_undefined.code);
@@ -577,7 +577,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4822).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (findCodedLinkResult.type === tmp2(4875).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       return (preventDefault) => {
         obj = storefrontCodedLink;
         const result = obj.parseStorefrontCodedLink(_undefined.code);
@@ -600,8 +600,8 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4822).CodedLinkType.QUESTS_EMBED) {
-      const tmp2Result = tmp2(10671);
+    if (findCodedLinkResult.type === tmp2(4875).CodedLinkType.QUESTS_EMBED) {
+      const tmp2Result = tmp2(10912);
       if (tmp2Result.getIsEligibleForQuests()) {
         return function(preventDefault) {
           if (preventDefault != null) {
@@ -641,7 +641,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4822).CodedLinkType.COLLECTIBLES_SHOP) {
+    if (findCodedLinkResult.type === tmp2(4875).CodedLinkType.COLLECTIBLES_SHOP) {
       return (preventDefault) => {
         let code;
         if (preventDefault != null) {
@@ -736,7 +736,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4822).CodedLinkType.APP_OAUTH2_LINK) {
+    if (findCodedLinkResult.type === tmp2(4875).CodedLinkType.APP_OAUTH2_LINK) {
       fn = (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -750,10 +750,10 @@ export default function getOnClick(url) {
     }
     return fn;
   }
-  const tmp2Result3 = tmp2(4991);
+  const tmp2Result3 = tmp2(5044);
   let result = tmp2Result3.tryParseEventDetailsPath(pathname);
   if (!skipExtensionCheck) {
-    const tmp2Result4 = tmp2(7588);
+    const tmp2Result4 = tmp2(7810);
     if (null != tmp2Result4.isSuspiciousDownload(url)) {
       fn = (preventDefault) => {
         if (preventDefault != null) {

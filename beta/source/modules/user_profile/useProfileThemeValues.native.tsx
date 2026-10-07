@@ -1,15 +1,15 @@
-// Module ID: 6606
-// Function ID: 6607
+// Module ID: 6683
+// Function ID: 6684
 // Name: useProfileThemeValues
-// Dependencies: [19, 4826, 558, 576, 573, 588, 587, 2]
+// Dependencies: [19, 4879, 558, 576, 573, 587, 586, 2]
 
-// Module 6606 (useProfileThemeValues)
+// Module 6683 (useProfileThemeValues)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import shims from "shims" /* 587 */;
-import nativeDefault from "native" /* 588 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import shims from "shims" /* 586 */;
+import nativeDefault from "native" /* 587 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,18 +82,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
     const semanticColor1 = internal2.resolveSemanticColor(theme, nativeDefault.colors.PROFILE_GRADIENT_OVERLAY, obj3);
     const tmpResult3 = shims;
     if (theme === tmpResult3.getThemes().LIGHT) {
-      OPACITY_WHITE_24 = tmp14(588).unsafe_rawColors.OPACITY_WHITE_24;
+      OPACITY_WHITE_24 = tmp14(587).unsafe_rawColors.OPACITY_WHITE_24;
     } else {
-      const internal3 = tmp14(588).internal;
-      OPACITY_WHITE_24 = internal3.resolveSemanticColor(theme, tmp14(588).colors.BACKGROUND_MOD_SUBTLE, obj3);
+      const internal3 = tmp14(587).internal;
+      OPACITY_WHITE_24 = internal3.resolveSemanticColor(theme, tmp14(587).colors.BACKGROUND_MOD_SUBTLE, obj3);
     }
     let num3 = 0.12;
     const tmpResult4 = shims;
     if (theme === tmpResult4.getThemes().DARK) {
       num3 = 0.24;
     }
-    const internal4 = tmp14(588).internal;
-    const semanticColor2 = internal4.resolveSemanticColor(theme, tmp14(588).colors.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND, obj3);
+    const internal4 = tmp14(587).internal;
+    const semanticColor2 = internal4.resolveSemanticColor(theme, tmp14(587).colors.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND, obj3);
     cResult[2] = theme;
     cResult[3] = stateFromStores;
     cResult[4] = semanticColor;
@@ -131,17 +131,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
       const obj4 = shims;
       const tmp5 = require;
       if (theme === obj4.getThemes().LIGHT) {
-        OPACITY_WHITE_24 = tmp3(588).unsafe_rawColors.OPACITY_WHITE_24;
+        OPACITY_WHITE_24 = tmp3(587).unsafe_rawColors.OPACITY_WHITE_24;
       } else {
-        const internal = tmp3(588).internal;
-        OPACITY_WHITE_24 = internal.resolveSemanticColor(tmp, tmp3(588).colors.BACKGROUND_MOD_SUBTLE, obj);
+        const internal = tmp3(587).internal;
+        OPACITY_WHITE_24 = internal.resolveSemanticColor(tmp, tmp3(587).colors.BACKGROUND_MOD_SUBTLE, obj);
       }
       num = 0.12;
-      const tmp5Result = tmp5(587);
+      const tmp5Result = tmp5(586);
       if (theme === tmp5Result.getThemes().DARK) {
         num = 0.24;
       }
-      internal2 = tmp3(588).internal;
+      internal2 = tmp3(587).internal;
       return obj2;
     }
   }, items1);

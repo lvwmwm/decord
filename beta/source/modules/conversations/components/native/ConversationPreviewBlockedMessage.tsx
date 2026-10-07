@@ -1,13 +1,13 @@
-// Module ID: 7374
-// Function ID: 7375
+// Module ID: 7587
+// Function ID: 7588
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 558, 576, 7375, 588, 6384, 1127, 4833, 5280, 2]
+// Dependencies: [19, 21, 558, 576, 7588, 587, 6456, 1126, 4886, 5593, 2]
 
-// Module 7374 (ConversationPreviewBlockedMessage)
+// Module 7587 (ConversationPreviewBlockedMessage)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Stack_Stack from "Stack/Stack" /* 5280 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -30,9 +30,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
     let EyeSlashIcon;
     const tmp5 = _false;
     if ("blocked" === reason) {
-      EyeSlashIcon = tmp(7375).DenyIcon;
+      EyeSlashIcon = tmp(7588).DenyIcon;
     } else {
-      EyeSlashIcon = tmp(6384).EyeSlashIcon;
+      EyeSlashIcon = tmp(6456).EyeSlashIcon;
     }
     const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };
     const tmp5Result = tmp5(EyeSlashIcon, obj2);
@@ -44,12 +44,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   }
   if (cResult[2] !== reason) {
     let uxrh1O;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
     if ("blocked" === reason) {
-      uxrh1O = tmp(1127).t["WPe+xL"];
+      uxrh1O = tmp(1126).t["WPe+xL"];
     } else {
-      uxrh1O = tmp(1127).t.uxrh1O;
+      uxrh1O = tmp(1126).t.uxrh1O;
     }
     const stringResult = string(uxrh1O);
     cResult[2] = reason;
@@ -75,7 +75,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
     return tmp13;
   }
   const obj4 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, align: "center", children: items };
-  const Stack = tmp(5280).Stack;
+  const Stack = tmp(5593).Stack;
   items = [tmp4, tmp10];
   const tmp14 = React3(Stack, obj4);
   cResult[6] = tmp4;
@@ -90,17 +90,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   const Stack = Stack_Stack.Stack;
   const tmp = React3;
   if ("blocked" === reason) {
-    EyeSlashIcon = tmp2(7375).DenyIcon;
+    EyeSlashIcon = tmp2(7588).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(6384).EyeSlashIcon;
+    EyeSlashIcon = tmp2(6456).EyeSlashIcon;
   }
   items = [, ];
   const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };
   items[0] = _false(EyeSlashIcon, obj2);
-  const Text = tmp2(4833).Text;
-  const intl = tmp2(1127).intl;
+  const Text = tmp2(4886).Text;
+  const intl = tmp2(1126).intl;
   const string = intl.string;
-  const t = tmp2(1127).t;
+  const t = tmp2(1126).t;
   const obj3 = { variant: "text-md/normal", color: "text-muted", children: string("blocked" === reason ? t["WPe+xL"] : t.uxrh1O) };
   items[1] = _false(Text, obj3);
   return tmp(Stack, obj);

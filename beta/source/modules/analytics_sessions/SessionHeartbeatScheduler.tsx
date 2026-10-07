@@ -1,31 +1,31 @@
-// Module ID: 6885
-// Function ID: 6886
+// Module ID: 6970
+// Function ID: 6971
 // Name: SessionHeartbeatScheduler
-// Dependencies: [5, 5590, 502, 5723, 4860, 1086, 1103, 3, 6886, 6887, 6888, 1243, 6889, 6892, 1253, 6893, 510, 6895, 1351, 585, 504, 1267, 2]
+// Dependencies: [5, 5436, 502, 5567, 4913, 1085, 1102, 3, 6971, 6972, 6973, 1242, 6974, 6977, 1252, 6978, 510, 6980, 1350, 584, 504, 1266, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
 
-// Module 6885 (SessionHeartbeatScheduler)
+// Module 6970 (SessionHeartbeatScheduler)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import MonotonicClock from "MonotonicClock" /* 6888 */;
-import Clickstream from "Clickstream" /* 6889 */;
-import SkippedClientHeartbeatUtil from "SkippedClientHeartbeatUtil" /* 6893 */;
-import SessionUtils from "SessionUtils" /* 6895 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import MonotonicClock from "MonotonicClock" /* 6973 */;
+import Clickstream from "Clickstream" /* 6974 */;
+import SkippedClientHeartbeatUtil from "SkippedClientHeartbeatUtil" /* 6978 */;
+import SessionUtils from "SessionUtils" /* 6980 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IdleStore from "IdleStore" /* 5723 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import Constants from "Constants" /* 1086 */;
-import react_native from "react-native" /* 6886 */;
-import SessionRouteUtils from "SessionRouteUtils" /* 6887 */;
+import IdleStore from "IdleStore" /* 5567 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import Constants from "Constants" /* 1085 */;
+import react_native from "react-native" /* 6971 */;
+import SessionRouteUtils from "SessionRouteUtils" /* 6972 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c3, c6, c7, closure_21, closure_5, monotonicNowMsResult;
+let c3, closure_21, monotonicNowMsResult;
 
 let c10;
 let c9;
@@ -145,7 +145,7 @@ function isActive() {
   return items.length > 0;
 }
 function scheduleHeartbeatTracking() {
-  const f136393 = () => {
+  const f137895 = () => {
     trackHeartbeat();
     obj = {
       type: "interval",
@@ -181,8 +181,8 @@ function scheduleHeartbeatTracking() {
       SentryUtilsDefault;
       addBreadcrumb(obj3);
       const _setTimeout = setTimeout;
-      user = { type: "timeout", id: setTimeout(f136393, num) };
-      const obj4 = { type: "timeout", id: setTimeout(f136393, num) };
+      user = { type: "timeout", id: setTimeout(f137895, num) };
+      const obj4 = { type: "timeout", id: setTimeout(f137895, num) };
     }
   } else {
     let flag = false;
@@ -236,7 +236,7 @@ function validateClientSession(version) {
     const tmp2 = require;
     if (version.version !== SessionUtils.CLIENT_SESSION_STORAGE_VERSION) {
       const _HermesInternal = HermesInternal;
-      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(6895).CLIENT_SESSION_STORAGE_VERSION);
+      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(6980).CLIENT_SESSION_STORAGE_VERSION);
       tmp4 = null;
     }
     tmp = tmp4;
@@ -335,7 +335,7 @@ function handleAuthenticationChange() {
       const obj2 = { category: user, message: "Stopping Analytics Heartbeat" };
       obj = SentryUtilsDefault;
       obj.addBreadcrumb(obj2);
-      const tmp15Result = tmp15(6889);
+      const tmp15Result = tmp15(6974);
       tmp15Result.drainClickstream();
     }
     c19 = 0;
@@ -385,10 +385,12 @@ obj = function _getSession() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_1;
     let createdAtTimestamp;
+    let lastUsedTimestamp;
     let obj11;
     let socket;
     let tmp;
     let uuid;
+    let uuid1;
     function maybeFlushSessionToStorage(c2) {
       obj = closure_1_0(uuid[10]);
       monotonicNowMsResult = obj.monotonicNowMs();
@@ -404,149 +406,97 @@ obj = function _getSession() {
       }
     }
     let closure_0 = arg0;
-    if (c7 === 2) {
-      c7 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    let closure_3 = tmp;
+    let flag = closure_0;
+    if (closure_0 === undefined) {
+      flag = true;
+    }
+    await "Reflect";
+    if (1 === tmp4) {
       if (arg0 === 1) {
+        let c7 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj5 = { value, done: true };
-        return obj5;
+        c7 = 3;
+        const obj8 = { value, done: true };
+        return obj8;
       } else {
-        return { value: "IconComponent", done: null };
+        uuid = null;
+        let tmp18 = null;
+        if ("loaded" === obj11.state) {
+          const session = obj11.session;
+          uuid1 = undefined;
+          if (session != null) {
+            uuid1 = session.uuid;
+          }
+          tmp18 = uuid1;
+        }
+        uuid1 = tmp18;
+        let c4 = 1;
+        if ("uninitialized" === obj11.state) {
+          lastUsedTimestamp = closure_131_29;
+          let Storage = closure_131_0(closure_131_2[16]).Storage;
+          let c6 = 3;
+          c7 = 1;
+          const obj9 = { value: Storage.getAfterRefresh(closure_131_13), done: false };
+          return obj9;
+        } else {
+          uuid = obj11.session;
+          c4 = 0;
+        }
       }
+    } else if (2 === tmp4) {
+      c4 = 0;
+      let closure_4 = closure_5;
+      let obj2 = closure_131_1(closure_131_2[11]);
+      const captureExceptionResult = obj2.captureException(closure_4);
+    } else if (arg0 === 1) {
+      c7 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 0;
+      c7 = 3;
+      obj = { value, done: true };
+      return obj;
     } else {
-      let c4;
-      try {
-        let closure_2;
-        let flag;
-        let lastUsedTimestamp;
-        let uuid1;
-        c7 = 2;
-        const tmp4 = c6;
-        if (0 === c6) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            let closure_3 = tmp;
-            closure_2 = tmp4;
-            flag = closure_0;
-            if (closure_0 === undefined) {
-              flag = true;
-            }
-            lastUsedTimestamp = undefined;
-            uuid = undefined;
-            uuid1 = undefined;
-            c6 = 1;
-            c7 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else {
-          if (1 === tmp4) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              const obj8 = { value, done: true };
-              return obj8;
-            } else {
-              uuid = null;
-              let tmp18 = null;
-              if ("loaded" === obj11.state) {
-                const session = obj11.session;
-                uuid1 = undefined;
-                if (session != null) {
-                  uuid1 = session.uuid;
-                }
-                tmp18 = uuid1;
-              }
-              uuid1 = tmp18;
-              c4 = 1;
-              if ("uninitialized" === obj11.state) {
-                lastUsedTimestamp = closure_131_29;
-                let Storage = closure_131_0(closure_131_2[16]).Storage;
-                c6 = 3;
-                c7 = 1;
-                const obj9 = { value: Storage.getAfterRefresh(closure_131_13), done: false };
-                return obj9;
-              } else {
-                uuid = obj11.session;
-                c4 = 0;
-              }
-            }
-          } else if (2 === tmp4) {
-            const tmp7 = closure_2;
-            c4 = 0;
-            let closure_4 = closure_5;
-            let obj2 = closure_131_1(closure_131_2[11]);
-            const captureExceptionResult = obj2.captureException(closure_4);
-          } else if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 0;
-            c7 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else {
-            lastUsedTimestamp(value);
-          }
-          const _Date = Date;
-          lastUsedTimestamp = Date.now();
-          if (closure_131_27()) {
-            let isSessionExpiredResult = null == tmp27;
-            if (!isSessionExpiredResult) {
-              const obj4 = closure_131_0(closure_131_2[17]);
-              isSessionExpiredResult = obj4.isSessionExpired(uuid);
-            }
-            if (isSessionExpiredResult) {
-              const obj10 = { uuid: obj6.v4(), createdAtTimestamp: lastUsedTimestamp, lastUsedTimestamp, version: closure_131_0(closure_131_2[17]).CLIENT_SESSION_STORAGE_VERSION };
-              obj6 = closure_131_0(closure_131_2[21]);
-              uuid = obj10;
-              c18 = 0;
-            }
-            uuid.lastUsedTimestamp = lastUsedTimestamp;
-            maybeFlushSessionToStorage(uuid);
-          } else {
-            let isSessionExpiredResult1 = null != tmp27;
-            if (isSessionExpiredResult1) {
-              const obj3 = closure_131_0(closure_131_2[17]);
-              isSessionExpiredResult1 = obj3.isSessionExpired(uuid);
-            }
-            if (isSessionExpiredResult1) {
-              uuid = null;
-            }
-          }
-          obj11 = { state: "loaded", session: uuid };
-          const tmp58 = null != uuid && uuid1 !== uuid.uuid && flag;
-          if (tmp58) {
-            socket = socket.getSocket();
-            if (socket != null) {
-              ({ createdAtTimestamp, uuid } = uuid);
-              let result = socket.handleUpdateTimeSpentSessionId(createdAtTimestamp, uuid, closure_131_0(closure_131_2[18]).clientLaunchId);
-            }
-          }
-          c7 = 3;
-          const obj12 = { value: uuid, done: true };
-          return obj12;
-        }
-      } catch (tmp78) {
-        closure_5 = tmp78;
-        if (0 === c4) {
-          c7 = 3;
-          throw tmp78;
-        } else {
-          c6 = 2;
-        }
+      lastUsedTimestamp(value);
+    }
+    const _Date = Date;
+    lastUsedTimestamp = Date.now();
+    if (closure_131_27()) {
+      let isSessionExpiredResult = null == tmp27;
+      if (!isSessionExpiredResult) {
+        const obj4 = closure_131_0(closure_131_2[17]);
+        isSessionExpiredResult = obj4.isSessionExpired(uuid);
+      }
+      if (isSessionExpiredResult) {
+        const obj10 = { uuid: obj6.v4(), createdAtTimestamp: lastUsedTimestamp, lastUsedTimestamp, version: closure_131_0(closure_131_2[17]).CLIENT_SESSION_STORAGE_VERSION };
+        obj6 = closure_131_0(closure_131_2[21]);
+        uuid = obj10;
+        c18 = 0;
+      }
+      uuid.lastUsedTimestamp = lastUsedTimestamp;
+      maybeFlushSessionToStorage(uuid);
+    } else {
+      let isSessionExpiredResult1 = null != tmp27;
+      if (isSessionExpiredResult1) {
+        const obj3 = closure_131_0(closure_131_2[17]);
+        isSessionExpiredResult1 = obj3.isSessionExpired(uuid);
+      }
+      if (isSessionExpiredResult1) {
+        uuid = null;
       }
     }
+    obj11 = { state: "loaded", session: uuid };
+    const tmp58 = null != uuid && uuid1 !== uuid.uuid && flag;
+    if (tmp58) {
+      socket = socket.getSocket();
+      if (socket != null) {
+        ({ createdAtTimestamp, uuid } = uuid);
+        let result = socket.handleUpdateTimeSpentSessionId(createdAtTimestamp, uuid, closure_131_0(closure_131_2[18]).clientLaunchId);
+      }
+    }
+    return uuid;
   });
   return obj(...arguments);
 };

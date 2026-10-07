@@ -1,16 +1,16 @@
-// Module ID: 9038
-// Function ID: 9039
+// Module ID: 9260
+// Function ID: 9261
 // Name: getChannelA11yLabel
-// Dependencies: [4482, 1378, 1086, 1127, 4990, 5374, 4680, 7596, 2]
+// Dependencies: [4519, 1377, 1085, 1126, 5043, 5846, 4722, 7818, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 9038 (getChannelA11yLabel)
-import UserUtils from "UserUtils" /* 4680 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5374 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+// Module 9260 (getChannelA11yLabel)
+import UserUtils from "UserUtils" /* 4722 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5846 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let nick;
@@ -18,8 +18,8 @@ let nick;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const intl18 = tmp(1127);
-const utils = tmp(7596);
+const intl18 = tmp(1126);
+const utils = tmp(7818);
 ({ ChannelTypes: hasOwnProperty, StatusTypes: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/channel/getChannelA11yLabel.tsx");
 
@@ -97,12 +97,12 @@ export default function getChannelA11yLabel(mentionCount) {
       const t7 = intl18.t;
       Lo0dCa = unread ? t7["fxxUo/"] : t7.lts3Ld;
     }
-    const intl10 = intl18.intl;
-    const obj2 = { channelName, mentionCount: num };
-    const items = [intl10.formatToPlainString(Lo0dCa, obj2), ];
     const intl11 = intl18.intl;
+    const obj2 = { channelName, mentionCount: num };
+    const items = [intl11.formatToPlainString(Lo0dCa, obj2), ];
+    const intl12 = intl18.intl;
     const obj3 = { members: channel.recipients.length + 1 };
-    items[1] = intl11.formatToPlainString(intl18.t.CxSA5N, obj3);
+    items[1] = intl12.formatToPlainString(intl18.t.CxSA5N, obj3);
     joined = items.join(", ");
   } else if (hasOwnProperty.GUILD_STORE === type) {
     g8ONM0 = intl18.t.Bo4msg;
@@ -189,24 +189,24 @@ export default function getChannelA11yLabel(mentionCount) {
       }
     }
     if (null != voiceChannelStartTime) {
-      const push9 = items1.push;
-      const intl17 = intl18.intl;
-      const formatToPlainString2 = intl17.formatToPlainString;
+      const push5 = items1.push;
+      const intl9 = intl18.intl;
+      const formatToPlainString = intl9.formatToPlainString;
       const obj8 = { duration: tmpResult.formatActiveA11yTimestamp(obj9, Date.now()) };
       const JQtsGh = intl18.t.JQtsGh;
       const _Date = Date;
       obj9 = { start: voiceChannelStartTime };
       tmpResult = utils;
-      push9(formatToPlainString2(JQtsGh, obj8));
+      push5(formatToPlainString(JQtsGh, obj8));
     }
-    const tmp15 = null != activityNames && activityNames.length > 0;
-    if (tmp15) {
-      const push5 = items1.push;
-      const intl9 = intl18.intl;
-      const formatToPlainString = intl9.formatToPlainString;
+    const tmp17 = null != activityNames && activityNames.length > 0;
+    if (tmp17) {
+      const push6 = items1.push;
+      const intl10 = intl18.intl;
+      const formatToPlainString2 = intl10.formatToPlainString;
       const obj10 = { activeActivities: activityNames.join(", ") };
       const LmYuHT = intl18.t.LmYuHT;
-      push5(formatToPlainString(LmYuHT, obj10));
+      push6(formatToPlainString2(LmYuHT, obj10));
     }
     joined = items1.join(", ");
   } else if (hasOwnProperty.GUILD_STAGE_VOICE === type) {
@@ -246,9 +246,9 @@ export default function getChannelA11yLabel(mentionCount) {
     const items2 = [joined];
     items4 = items2;
   } else if (null != g8ONM0) {
-    const intl12 = intl18.intl;
+    const intl13 = intl18.intl;
     const obj11 = { channelName, mentionCount: num };
-    const items3 = [intl12.formatToPlainString(g8ONM0, obj11)];
+    const items3 = [intl13.formatToPlainString(g8ONM0, obj11)];
     items4 = items3;
   } else {
     items4 = [];
@@ -257,36 +257,36 @@ export default function getChannelA11yLabel(mentionCount) {
     items4.unshift(stringResult1);
   }
   if (isIncomingCall) {
-    const push7 = items4.push;
-    const intl14 = intl18.intl;
-    push7(intl14.string(intl18.t["fk1/bX"]));
-  } else if (flag) {
-    const push6 = items4.push;
-    const intl13 = intl18.intl;
-    push6(intl13.string(intl18.t["NGg/fm"]));
-  }
-  const tmp20 = null != embeddedActivitiesCount && embeddedActivitiesCount > 0;
-  if (tmp20) {
     const push8 = items4.push;
     const intl15 = intl18.intl;
-    const obj12 = { activitiesCount: embeddedActivitiesCount };
-    push8(intl15.formatToPlainString(intl18.t.O6PLYd, obj12));
+    push8(intl15.string(intl18.t["fk1/bX"]));
+  } else if (flag) {
+    const push7 = items4.push;
+    const intl14 = intl18.intl;
+    push7(intl14.string(intl18.t["NGg/fm"]));
   }
-  let tmp22;
+  const tmp22 = null != embeddedActivitiesCount && embeddedActivitiesCount > 0;
+  if (tmp22) {
+    const push9 = items4.push;
+    const intl16 = intl18.intl;
+    const obj12 = { activitiesCount: embeddedActivitiesCount };
+    push9(intl16.formatToPlainString(intl18.t.O6PLYd, obj12));
+  }
+  let tmp24;
   if (isSubscriptionGated) {
     let stringResult2;
-    const intl16 = intl18.intl;
-    const string = intl16.string;
+    const intl17 = intl18.intl;
+    const string = intl17.string;
     const t9 = intl18.t;
     if (needSubscriptionToAccess) {
       stringResult2 = string(t9["oj+HOs"]);
     } else {
       stringResult2 = string(t9.xI3TQQ);
     }
-    tmp22 = stringResult2;
+    tmp24 = stringResult2;
   }
-  if (null != tmp22) {
-    items4.push(tmp22);
+  if (null != tmp24) {
+    items4.push(tmp24);
   }
   if (null != stringResult) {
     items4.push(stringResult);

@@ -1,21 +1,21 @@
-// Module ID: 15825
-// Function ID: 15826
+// Module ID: 16119
+// Function ID: 16120
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1378, 2048, 21, 588, 6594, 10489, 5287, 4837, 558, 576, 573, 6584, 6604, 5940, 5436, 1189, 1127, 4833, 8194, 5282, 5918, 2]
+// Dependencies: [19, 17, 1377, 2048, 21, 587, 6667, 10723, 5600, 4890, 558, 576, 573, 6657, 6681, 6017, 5909, 1188, 1126, 4886, 8389, 5594, 5995, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 15825 (AccountLinkBanner)
+// Module 16119 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ButtonConstants from "ButtonConstants" /* 5287 */;
-import GameIcon from "GameIcon" /* 6594 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10489 */;
+import ButtonConstants from "ButtonConstants" /* 5600 */;
+import GameIcon from "GameIcon" /* 6667 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

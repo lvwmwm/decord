@@ -1,19 +1,19 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 17133
+// Function ID: 17134
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1086, 2048, 21, 4837, 588, 558, 576, 5297, 6801, 9418, 16776, 1127, 2590, 5282, 9816, 2]
+// Dependencies: [19, 17, 1085, 2048, 21, 4890, 587, 558, 576, 5590, 6885, 9645, 17131, 1126, 2593, 5594, 10045, 2]
 
-// Module 16778 (NitroFileUploadUpsellPromoSheet)
+// Module 17133 (NitroFileUploadUpsellPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef2590 from "module_2590" /* 2590 */;
-import openUserSettings from "openUserSettings" /* 6801 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9418 */;
+import _modDef2593 from "module_2593" /* 2593 */;
+import openUserSettings from "openUserSettings" /* 6885 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9645 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
-import createStyles from "createStyles" /* 4837 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
       }
     }
   }
-  const tmpResult = tmp(5297);
+  const tmpResult = tmp(5590);
   const unmountEffect = tmpResult.useUnmountEffect(tmp6);
   if (cResult[4] !== tmp5) {
     class P {
@@ -144,7 +144,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
         closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const tmp14 = jsx(tmp(16776).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    const tmp14 = jsx(tmp(17131).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
     cResult[10] = tmp14;
     tmp13 = tmp14;
   } else {
@@ -176,9 +176,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
         closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const stringResult = obj5.string(_modDef2590["Uty2/X"]);
-    const intl = tmp(1127).intl;
-    const stringResult1 = intl.string(_modDef2590.VAgI8Q);
+    const stringResult = obj5.string(_modDef2593["Uty2/X"]);
+    const intl = tmp(1126).intl;
+    const stringResult1 = intl.string(_modDef2593.VAgI8Q);
     cResult[13] = stringResult;
     cResult[14] = stringResult1;
     tmp19 = stringResult1;
@@ -197,7 +197,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
         closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const stringResult2 = obj6.string(_modDef2590.mRy6sO);
+    const stringResult2 = obj6.string(_modDef2593.mRy6sO);
     cResult[15] = stringResult2;
     tmp22 = stringResult2;
   } else {
@@ -230,13 +230,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     cResult[19] = tmp12;
     cResult[20] = tmp25;
     cResult[21] = tmp15;
-    cResult[22] = jsx(tmp(9816).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
-    const tmp29 = jsx(tmp(9816).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
+    cResult[22] = jsx(tmp(10045).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
+    const tmp29 = jsx(tmp(10045).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
   }
   cResult[16] = loading;
   cResult[17] = null;
-  cResult[18] = jsx(tmp(5282).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
-  const tmp26 = jsx(tmp(5282).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
+  cResult[18] = jsx(tmp(5594).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
+  const tmp26 = jsx(tmp(5594).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
 }) : ((markAsDismissed) => {
   let intl3;
   let loading;
@@ -282,14 +282,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   const PromoSheet = markAsDismissed(callback[16]).PromoSheet;
   const intl = markAsDismissed(callback[13]).intl;
   const intl2 = markAsDismissed(callback[13]).intl;
-  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2590").mRy6sO), onPress: tmp9 });
+  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2593").mRy6sO), onPress: tmp9 });
   const Button = markAsDismissed(callback[15]).Button;
   intl3 = markAsDismissed(callback[13]).intl;
   tmp9 = null;
   if (!loading) {
     tmp9 = callback2;
   }
-  return <PromoSheet illustration={null} title={intl.string(require("module_2590")["Uty2/X"])} description={intl2.string(require("module_2590").VAgI8Q)} onDismiss={callback3} actions={null} />;
+  return <PromoSheet illustration={null} title={intl.string(require("module_2593")["Uty2/X"])} description={intl2.string(require("module_2593").VAgI8Q)} onDismiss={callback3} actions={null} />;
 });
 const result = size.fileFinishedImporting("modules/premium/file_upload/native/NitroFileUploadUpsellPromoSheet.tsx");
 

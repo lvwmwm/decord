@@ -1,22 +1,21 @@
-// Module ID: 6708
-// Function ID: 6709
+// Module ID: 6792
+// Function ID: 6793
 // Name: ReportUtils
-// Dependencies: [2051, 4756, 4472, 1378, 1086, 2]
+// Dependencies: [2051, 4509, 1377, 1085, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 6708 (ReportUtils)
+// Module 6792 (ReportUtils)
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4756 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let c3;
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
-({ ChannelTypes: closure_4, Permissions: hasOwnProperty, MessageTypesSets: metroRequire } = Constants);
-const result = size.fileFinishedImporting("utils/ReportUtils.tsx");
+({ ChannelTypes: c3, Permissions: closure_4, MessageTypesSets: hasOwnProperty } = Constants);
+let result = size.fileFinishedImporting("utils/ReportUtils.tsx");
 
 export const canReportUser = function canReportUser(user) {
   if (null == user) {
@@ -35,7 +34,7 @@ export const canReportUser = function canReportUser(user) {
 export const canReportMessage = function canReportMessage(message) {
   let tmp = null != message;
   if (tmp) {
-    const NON_REPORTABLE = metroRequire.NON_REPORTABLE;
+    const NON_REPORTABLE = hasOwnProperty.NON_REPORTABLE;
     tmp = !NON_REPORTABLE.has(message.type);
   }
   if (tmp) {
@@ -57,29 +56,23 @@ export const canReportMessage = function canReportMessage(message) {
 };
 export const canReportAndDeleteInChannel = function canReportAndDeleteInChannel(channelId) {
   const channel = ChannelStore.getChannel(channelId);
-  if (null == channel) {
-    return false;
-  } else {
-    if (channel.type !== constants.DM) {
-      if (channel.type !== tmp6.GROUP_DM) {
-        const obj = { channelId };
-        if (PermissionStore.canWithPartialContext(hasOwnProperty.MANAGE_MESSAGES, obj)) {
-          const memberCount = GuildMemberCountStore.getMemberCount(channel.getGuildId());
-          return null != memberCount && memberCount >= 50;
-        } else {
-          return false;
-        }
-      }
+  let tmp2 = null != channel;
+  if (tmp2) {
+    let result = channel.type === constants.DM || channel.type === tmp3.GROUP_DM;
+    if (!result) {
+      const obj = { channelId };
+      result = PermissionStore.canWithPartialContext(constants2.MANAGE_MESSAGES, obj);
     }
-    return true;
+    tmp2 = result;
   }
+  return tmp2;
 };
 export const canDeleteAndReportMessage = function canDeleteAndReportMessage(type) {
   let tmp = null != type;
   if (tmp) {
     let tmp2 = null != type;
     if (tmp2) {
-      const NON_REPORTABLE = metroRequire.NON_REPORTABLE;
+      const NON_REPORTABLE = hasOwnProperty.NON_REPORTABLE;
       tmp2 = !NON_REPORTABLE.has(type.type);
     }
     if (tmp2) {
@@ -102,23 +95,16 @@ export const canDeleteAndReportMessage = function canDeleteAndReportMessage(type
   if (tmp) {
     const channelId = type.getChannelId();
     const channel = ChannelStore.getChannel(channelId);
-    let flag3 = false;
-    if (null != channel) {
-      flag3 = true;
-      if (channel.type !== constants.DM) {
-        flag3 = true;
-        if (channel.type !== tmp10.GROUP_DM) {
-          flag3 = false;
-          const obj = { channelId };
-          if (PermissionStore.canWithPartialContext(hasOwnProperty.MANAGE_MESSAGES, obj)) {
-            const memberCount = GuildMemberCountStore.getMemberCount(channel.getGuildId());
-            flag3 = null != memberCount && memberCount >= 50;
-            const tmp15 = null != memberCount && memberCount >= 50;
-          }
-        }
+    let tmp11 = null != channel;
+    if (tmp11) {
+      let result = channel.type === constants.DM || channel.type === tmp12.GROUP_DM;
+      if (!result) {
+        const obj = { channelId };
+        result = PermissionStore.canWithPartialContext(constants2.MANAGE_MESSAGES, obj);
       }
+      tmp11 = result;
     }
-    tmp = flag3;
+    tmp = tmp11;
   }
   return tmp;
 };

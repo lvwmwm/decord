@@ -1,15 +1,15 @@
-// Module ID: 12233
-// Function ID: 12234
+// Module ID: 12487
+// Function ID: 12488
 // Name: useTruncatedGradientColors
-// Dependencies: [19, 4837, 558, 576, 4535, 588, 684, 2]
+// Dependencies: [19, 4890, 558, 576, 4580, 587, 683, 2]
 
-// Module 12233 (useTruncatedGradientColors)
+// Module 12487 (useTruncatedGradientColors)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import useToken from "useToken" /* 4535 */;
-import createStyles from "createStyles" /* 4837 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import useToken from "useToken" /* 4580 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = useToken;
   const token = obj2.useToken(nativeDefault.colors.MOBILE_ALERT_BACKGROUND_DEFAULT);
   if (cResult[0] !== token) {
-    const obj3 = _modDef684(token);
+    const obj3 = _modDef683(token);
     const alphaResult = obj3.alpha(0);
     const hexResult = alphaResult.hex();
     cResult[0] = token;
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   if (cResult[2] !== token) {
-    const obj5 = _modDef684(token);
+    const obj5 = _modDef683(token);
     const alphaResult1 = obj5.alpha(0.72);
     const hexResult1 = alphaResult1.hex();
     cResult[2] = token;
@@ -70,15 +70,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let items;
   let token;
   const tmp = closure_4();
-  let obj = token(4535);
+  let obj = token(4580);
   token = obj.useToken(nativeDefault.colors.MOBILE_ALERT_BACKGROUND_DEFAULT);
   const obj2 = {
     gradientColors: useMemo(() => {
       const items = [, ];
-      const obj = _modDef684(token);
+      const obj = _modDef683(token);
       const alphaResult = obj.alpha(0);
       items[0] = alphaResult.hex();
-      const obj3 = _modDef684(token);
+      const obj3 = _modDef683(token);
       const alphaResult1 = obj3.alpha(0.72);
       items[1] = alphaResult1.hex();
       return items;

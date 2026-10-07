@@ -1,10 +1,10 @@
-// Module ID: 1250
-// Function ID: 1251
+// Module ID: 1249
+// Function ID: 1250
 // Name: ApexTypes
-// Dependencies: [1251, 2]
+// Dependencies: [1250, 2]
 
-// Module 1250 (ApexTypes)
-import ExperimentsConstants from "ExperimentsConstants" /* 1251 */;
+// Module 1249 (ApexTypes)
+import ExperimentsConstants from "ExperimentsConstants" /* 1250 */;
 import size from "module_2" /* 2 */;
 
 const obj = { User: 1, [1]: "User", Installation: 2, [2]: "Installation", Guild: 3, [3]: "Guild" };

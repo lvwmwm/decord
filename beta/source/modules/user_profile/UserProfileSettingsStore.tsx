@@ -1,16 +1,16 @@
-// Module ID: 7609
-// Function ID: 7610
+// Module ID: 7831
+// Function ID: 7832
 // Name: UserProfileSettingsStore
-// Dependencies: [1086, 2064, 7610, 1087, 504, 7611, 585, 2]
+// Dependencies: [1085, 2065, 7832, 1086, 504, 7833, 584, 2]
 
-// Module 7609 (UserProfileSettingsStore)
+// Module 7831 (UserProfileSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import RouteConstants from "RouteConstants" /* 1087 */;
-import FavoritesConstants from "FavoritesConstants" /* 2064 */;
-import NotificationsInboxConstants from "NotificationsInboxConstants" /* 7610 */;
-import BioMaxLengthExperiment from "BioMaxLengthExperiment" /* 7611 */;
-import Constants from "Constants" /* 1086 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import RouteConstants from "RouteConstants" /* 1086 */;
+import FavoritesConstants from "FavoritesConstants" /* 2065 */;
+import NotificationsInboxConstants from "NotificationsInboxConstants" /* 7832 */;
+import BioMaxLengthExperiment from "BioMaxLengthExperiment" /* 7833 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c3;

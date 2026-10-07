@@ -1,26 +1,26 @@
-// Module ID: 17398
-// Function ID: 17399
+// Module ID: 17767
+// Function ID: 17768
 // Name: GuildSettingsModalIntegrationSettings
-// Dependencies: [19, 17, 2105, 9026, 21, 17399, 1127, 4837, 588, 558, 576, 5994, 5916, 17400, 5436, 5997, 6621, 4544, 4833, 5596, 1403, 4687, 8057, 5280, 4424, 5995, 17401, 6461, 9025, 504, 4769, 17363, 2]
+// Dependencies: [19, 17, 2106, 9248, 21, 17768, 1126, 4890, 587, 558, 576, 6071, 5993, 17769, 5909, 6074, 6698, 4589, 4886, 5442, 1402, 4729, 8895, 5593, 4461, 6072, 17770, 6536, 9247, 504, 4791, 17732, 2]
 
-// Module 17398 (GuildSettingsModalIntegrationSettings)
+// Module 17767 (GuildSettingsModalIntegrationSettings)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl10 from "intl" /* 1127 */;
-import native from "native" /* 4544 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import Pressables from "Pressables" /* 5436 */;
-import TableRow4 from "TableRow" /* 5916 */;
-import TableRowGroup4 from "TableRowGroup" /* 5997 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6621 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17400 */;
+import nativeDefault from "native" /* 587 */;
+import intl10 from "intl" /* 1126 */;
+import native from "native" /* 4589 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import Pressables from "Pressables" /* 5909 */;
+import TableRow4 from "TableRow" /* 5993 */;
+import TableRowGroup4 from "TableRowGroup" /* 6074 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6698 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17769 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const TableRadioRow3 = tmp(5994);
+const TableRadioRow3 = tmp(6071);
 ({ Image: c3, ActivityIndicator: closure_4 } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 let obj = { integrationLabel: { fontSize: 24 }, integrationIcon: { width: 48, height: 48, marginRight: 16 }, forceSyncIcon: { marginLeft: 10 }, value: { textAlign: "right" }, stackPadding: obj2 };
@@ -113,7 +113,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     let tmp7;
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl10.t["+Josox"]);
       cResult[1] = stringResult;
       tmp5 = stringResult;
@@ -123,7 +123,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { source: AssetRegistryDefault };
-      const Icon = tmp(5916).TableRow.Icon;
+      const Icon = tmp(5993).TableRow.Icon;
       const tmp10 = metroImportDefault(Icon, obj2);
       cResult[2] = tmp10;
       tmp7 = tmp10;
@@ -169,7 +169,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(6);
   ({ integration, onPress } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl10.t["7r4OKg"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -177,7 +177,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl10.t.bZBLBs);
     cResult[1] = stringResult1;
     tmp6 = stringResult1;
@@ -195,7 +195,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj2 = { helperText: first, hasIcons: false, children: metroImportDefault(TableSwitchRow2.TableSwitchRow, obj3) };
-  const TableRowGroup = tmp(5997).TableRowGroup;
+  const TableRowGroup = tmp(6074).TableRowGroup;
   obj3 = { label: tmp6, value: BooleanResult, onValueChange: onPress, disabled: integration.syncing };
   const tmp10 = metroImportDefault(TableRowGroup, obj2);
   cResult[2] = integration.syncing;
@@ -292,9 +292,9 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
     }
     let tmp2;
     if (null != tmp) {
-      let obj = { label: intl.string(integration(1127).t.eBtNBa), trailing: closure_7(integration(4833).Text, obj2) };
-      const TableRow = integration(5916).TableRow;
-      intl = integration(1127).intl;
+      let obj = { label: intl.string(integration(1126).t.eBtNBa), trailing: closure_7(integration(4886).Text, obj2) };
+      const TableRow = integration(5993).TableRow;
+      intl = integration(1126).intl;
       obj2 = { style: iter.value, variant: "text-md/medium", color: "text-muted", children: tmp.name };
       tmp2 = closure_7(TableRow, obj);
     }
@@ -304,35 +304,35 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
       if (account != null) {
         name = account.name;
       }
-      const intl2 = integration(1127).intl;
-      stringResult = intl2.string(integration(1127).t.A5MiqO);
-      RdUTrl = integration(1127).t["7lNtce"];
+      const intl2 = integration(1126).intl;
+      stringResult = intl2.string(integration(1126).t.A5MiqO);
+      RdUTrl = integration(1126).t["7lNtce"];
       combined = name;
       tmp12 = integration;
       tmp15 = integration;
     } else {
       const _HermesInternal = HermesInternal;
       combined = "twitch.tv/" + integration.name;
-      const intl9 = integration(1127).intl;
-      stringResult = intl9.string(integration(1127).t["S/WCrG"]);
-      RdUTrl = integration(1127).t.RdUTrl;
+      const intl9 = integration(1126).intl;
+      stringResult = intl9.string(integration(1126).t["S/WCrG"]);
+      RdUTrl = integration(1126).t.RdUTrl;
       tmp12 = integration;
       tmp15 = integration;
       const obj4 = { integration, onPress: self.handleToggleEmotes };
       tmp13 = closure_7(closure_13, obj4);
     }
-    const obj3 = self(5596);
+    const obj3 = self(5442);
     const value = obj3.get(integration.type);
     let tmp19Result = null;
     if (null != value) {
-      const makeSource = tmp15(1403).makeSource;
-      tmp15(1403);
+      const makeSource = tmp15(1402).makeSource;
+      tmp15(1402);
       const icon = value.icon;
       const obj5 = { source: makeSource(tmp15Result2.isThemeDark(theme) ? icon.darkPNG : icon.lightPNG), style: iter.integrationIcon };
-      tmp15Result2 = tmp15(4687);
+      tmp15Result2 = tmp15(4729);
       tmp19Result = closure_7(closure_3, obj5);
     }
-    const values = Object.values(tmp12(17399).IntegrationExpireGracePeriodTypes);
+    const values = Object.values(tmp12(17768).IntegrationExpireGracePeriodTypes);
     const found = values.filter((item) => Number.isInteger(item));
     const mapped = found.map((value) => {
       let intl;
@@ -342,12 +342,12 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
     });
     const obj6 = { style: { flex: 1 }, contentContainerStyle: items, children: closure_8(Stack, obj7) };
     items = [{ paddingTop: 16 }, self.props.contentContainerStyle];
-    const Form = tmp15(8057).Form;
-    obj7 = { style: iter.stackPadding, spacing: self(588).space.PX_24, children: items1 };
-    Stack = tmp15(5280).Stack;
-    const TableRowGroup = tmp15(5997).TableRowGroup;
+    const Form = tmp15(8895).Form;
+    obj7 = { style: iter.stackPadding, spacing: self(587).space.PX_24, children: items1 };
+    Stack = tmp15(5593).Stack;
+    const TableRowGroup = tmp15(6074).TableRowGroup;
     let str1;
-    const TableRow2 = tmp15(5916).TableRow;
+    const TableRow2 = tmp15(5993).TableRow;
     const tmp23 = closure_9;
     if (integration.user != null) {
       str1 = str.toString();
@@ -355,23 +355,23 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
     items1 = [, , , , ];
     const obj8 = { hasIcons: true, children: closure_7(TableRow2, { label: str1, subLabel: combined, icon: tmp19Result }) };
     items1[0] = closure_7(TableRowGroup, obj8);
-    const obj9 = { title: intl3.string(tmp15(1127).t.i17qFc), hasIcons: false, children: items2 };
-    const TableRowGroup2 = tmp15(5997).TableRowGroup;
-    intl3 = tmp15(1127).intl;
-    const TableRow3 = tmp15(5916).TableRow;
-    const intl4 = tmp15(1127).intl;
+    const obj9 = { title: intl3.string(tmp15(1126).t.i17qFc), hasIcons: false, children: items2 };
+    const TableRowGroup2 = tmp15(6074).TableRowGroup;
+    intl3 = tmp15(1126).intl;
+    const TableRow3 = tmp15(5993).TableRow;
+    const intl4 = tmp15(1126).intl;
     let str2 = integration.subscriber_count;
     const format = intl4.format;
     if (str2 == null) {
       str2 = "";
     }
     const obj10 = { label: format(RdUTrl, { subscribers: str2 }), subLabel: formatToPlainString(prop, obj11), trailing: closure_7(tmp27, obj14) };
-    const intl5 = tmp15(1127).intl;
+    const intl5 = tmp15(1126).intl;
     formatToPlainString = intl5.formatToPlainString;
     obj11 = { datetime: obj12.calendar() };
-    prop = tmp15(1127).t["+42M+u"];
+    prop = tmp15(1126).t["+42M+u"];
     let flag = integration.syncing;
-    obj12 = self(4424)(integration.synced_at);
+    obj12 = self(4461)(integration.synced_at);
     tmp27 = closure_12;
     if (flag == null) {
       flag = false;
@@ -381,29 +381,29 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
     items2 = [closure_7(TableRow3, obj10), tmp2];
     items1[1] = closure_8(TableRowGroup2, obj9);
     const obj15 = { title: stringResult, value: integration.expire_behavior, onChange: self.handleExpireBehaviorChange, hasIcons: false, children: items3 };
-    const TableRadioGroup = tmp15(5995).TableRadioGroup;
-    const obj16 = { value: tmp15(17401).IntegrationExpireBehaviorTypes.REMOVE_ROLE, label: intl6.string(tmp15(1127).t["6kpw4i"]) };
-    const TableRadioRow = tmp15(5994).TableRadioRow;
-    intl6 = tmp15(1127).intl;
+    const TableRadioGroup = tmp15(6072).TableRadioGroup;
+    const obj16 = { value: tmp15(17770).IntegrationExpireBehaviorTypes.REMOVE_ROLE, label: intl6.string(tmp15(1126).t["6kpw4i"]) };
+    const TableRadioRow = tmp15(6071).TableRadioRow;
+    intl6 = tmp15(1126).intl;
     items3 = [closure_7(TableRadioRow, obj16), ];
-    const obj17 = { value: tmp15(17401).IntegrationExpireBehaviorTypes.KICK, label: intl7.string(tmp15(1127).t.fQUQIJ) };
-    const TableRadioRow2 = tmp15(5994).TableRadioRow;
-    intl7 = tmp15(1127).intl;
+    const obj17 = { value: tmp15(17770).IntegrationExpireBehaviorTypes.KICK, label: intl7.string(tmp15(1126).t.fQUQIJ) };
+    const TableRadioRow2 = tmp15(6071).TableRadioRow;
+    intl7 = tmp15(1126).intl;
     items3[1] = closure_7(TableRadioRow2, obj17);
     items1[2] = closure_8(TableRadioGroup, obj15);
     const obj18 = {
-      title: intl8.string(tmp15(1127).t.uiXMow),
+      title: intl8.string(tmp15(1126).t.uiXMow),
       hasIcons: false,
       children: mapped.map((option, index) => {
         const obj = { integration, option, onPress: self.handleExpireGracePeriodChange };
         return metroImportDefault(closure_11, obj, index);
       })
     };
-    const TableRowGroup3 = tmp15(5997).TableRowGroup;
-    intl8 = tmp15(1127).intl;
+    const TableRowGroup3 = tmp15(6074).TableRowGroup;
+    intl8 = tmp15(1126).intl;
     items1[3] = closure_7(TableRowGroup3, obj18);
     items1[4] = tmp13;
-    items4 = [closure_7(Form, obj6), closure_7(tmp15(6461).NavScrim, {})];
+    items4 = [closure_7(Form, obj6), closure_7(tmp15(6536).NavScrim, {})];
     return closure_8(tmp23, obj13);
   }
 }

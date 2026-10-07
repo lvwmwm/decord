@@ -1,12 +1,12 @@
-// Module ID: 11142
-// Function ID: 11143
+// Module ID: 11400
+// Function ID: 11401
 // Name: ApplyBuildOverrideUtils
-// Dependencies: [5, 502, 11143, 1283, 1367, 2]
+// Dependencies: [5, 502, 11401, 1282, 1366, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 11142 (ApplyBuildOverrideUtils)
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1367 */;
+// Module 11400 (ApplyBuildOverrideUtils)
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1366 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -268,7 +268,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
     }
   }
 });
-const f106320 = function() {
+const f107554 = function() {
   return closure_0(...arguments);
 };
 const result = size.fileFinishedImporting("modules/build_overrides/ApplyBuildOverrideUtils.tsx");

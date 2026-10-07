@@ -1,8 +1,8 @@
-// Module ID: 9096
-// Function ID: 9097
+// Module ID: 9321
+// Function ID: 9322
 // Dependencies: [2]
 
-// Module 9096
+// Module 9321
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/video-backgrounds/backgrounds/tropical.png.js");

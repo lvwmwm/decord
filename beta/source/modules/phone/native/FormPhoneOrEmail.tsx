@@ -1,21 +1,21 @@
-// Module ID: 6468
-// Function ID: 6469
+// Module ID: 6543
+// Function ID: 6544
 // Name: FormPhoneOrEmail
-// Dependencies: [109, 19, 17, 21, 4837, 588, 558, 576, 1127, 4833, 5436, 6379, 6354, 6355, 6357, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 1126, 4886, 5909, 6451, 6425, 6426, 6428, 2]
 
-// Module 6468 (FormPhoneOrEmail)
+// Module 6543 (FormPhoneOrEmail)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 6354 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6379 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 6425 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6451 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t.GwAW3k);
       cResult[1] = stringResult;
       tmp7 = stringResult;
@@ -376,7 +376,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             class G {
               constructor() {
                 obj = { show: closure_5, alpha2: closure_0, countryCode: closure_1, onPress: closure_4 };
-                return jsx(f38521, obj);
+                return jsx(f38117, obj);
               }
             }
             class M {
@@ -410,7 +410,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             class G {
               constructor() {
                 obj = { show: closure_5, alpha2: closure_0, countryCode: closure_1, onPress: closure_4 };
-                return jsx(f38521, obj);
+                return jsx(f38117, obj);
               }
             }
             class M {
@@ -472,7 +472,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     cResult[19] = M;
     tmp22 = M;
   }
-  const tmpResult = tmp(6379);
+  const tmpResult = tmp(6451);
   const result = tmpResult.shouldShowCountryCodeSelector(tmp7, tmp15);
   cResult[13] = tmp7;
   cResult[14] = tmp15;

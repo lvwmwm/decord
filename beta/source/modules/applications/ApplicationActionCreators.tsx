@@ -1,14 +1,14 @@
-// Module ID: 6585
-// Function ID: 6586
+// Module ID: 6658
+// Function ID: 6659
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6586, 2009, 5064, 1086, 585, 1283, 504, 558, 576, 2]
+// Dependencies: [5, 6659, 2009, 5118, 1085, 584, 1282, 504, 558, 576, 2]
 
-// Module 6585 (ApplicationActionCreators)
+// Module 6658 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6586 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6659 */;
 import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
-import Constants from "Constants" /* 1086 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import Constants from "Constants" /* 1085 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -63,7 +63,7 @@ let obj = function _fetchApplication() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

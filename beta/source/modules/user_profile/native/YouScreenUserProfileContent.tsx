@@ -1,39 +1,48 @@
-// Module ID: 16621
-// Function ID: 16622
+// Module ID: 16971
+// Function ID: 16972
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 2041, 5592, 7039, 7632, 6630, 2048, 10647, 21, 558, 576, 16609, 16007, 1370, 7706, 7691, 12640, 12641, 8124, 12652, 7639, 9166, 10642, 16622, 11325, 2035, 6807, 9829, 588, 1127, 5282, 12572, 16623, 16626, 16618, 1492, 7635, 8814, 7692, 504, 7677, 7688, 12503, 16627, 12456, 12457, 12642, 12662, 12663, 12664, 10591, 16628, 12667, 15285, 12574, 10741, 8063, 12673, 16630, 12627, 12678, 12683, 9060, 10587, 9038, 10603, 12021, 12023, 4570, 6578, 2]
+// Dependencies: [32, 19, 17, 2042, 5438, 7111, 7854, 6707, 2048, 14414, 21, 558, 576, 16957, 16310, 1369, 7928, 7913, 12900, 12901, 8318, 12915, 4580, 587, 7861, 2036, 10058, 5968, 1126, 5594, 12815, 16972, 16975, 16968, 9390, 10883, 16976, 12885, 11581, 6891, 12888, 10843, 12889, 1491, 7857, 10826, 7914, 504, 7899, 7910, 12748, 16977, 12704, 12902, 12925, 12926, 12927, 10831, 16978, 12930, 15575, 12817, 10986, 8899, 12933, 16980, 12872, 12938, 12943, 9282, 10827, 9260, 12282, 10974, 4612, 6651, 2]
 
-// Module 16621 (YouScreenUserProfileContent)
+// Module 16971 (YouScreenUserProfileContent)
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1127 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2041 */;
+import intl5 from "intl" /* 1126 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2042 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import Constants from "Constants" /* 6630 */;
-import Constants2 from "Constants" /* 7632 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7691 */;
-import UserProfileAvatarDefault from "UserProfileAvatar" /* 7706 */;
-import FormDividerDefault from "FormDivider" /* 8063 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 8124 */;
-import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 10591 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 10647 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10741 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 12574 */;
-import UserProfileNoteDefault from "UserProfileNote" /* 12627 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 12640 */;
-import VibegrationsCustomWidgetAddOptionDefault from "VibegrationsCustomWidgetAddOption" /* 12641 */;
-import UserProfileConnections from "UserProfileConnections" /* 12673 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12678 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12683 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15285 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16007 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 16609 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 16628 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 16630 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import Constants from "Constants" /* 6707 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
+import Constants2 from "Constants" /* 7854 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7913 */;
+import UserProfileAvatarDefault from "UserProfileAvatar" /* 7928 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 8318 */;
+import FormDividerDefault from "FormDivider" /* 8899 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 9390 */;
+import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 10831 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 10843 */;
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10883 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10986 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11581 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 12817 */;
+import UserProfileNoteDefault from "UserProfileNote" /* 12872 */;
+import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 12885 */;
+import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 12888 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 12900 */;
+import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 12901 */;
+import UserProfileConnections from "UserProfileConnections" /* 12933 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12938 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12943 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 14414 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15575 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16310 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 16957 */;
+import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 16976 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 16978 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 16980 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
-import UserProfileStore from "UserProfileStore" /* 7039 */;
+import SelfPresenceStore_mod from "SelfPresenceStore" /* 5438 */;
+import UserProfileStore from "UserProfileStore" /* 7111 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -49,13 +58,14 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 let tmp3;
-const PlatformUtils = tmp(1370);
-const UserProfileActivityTabDefault = tmp3(12652);
-let _slicedToArray = _slicedToArray_mod;
+const PlatformUtils = tmp(1369);
+const UserProfileActivityTabDefault = tmp3(12915);
+let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const useIsContentShown = DismissibleContentShownStateStore.useIsContentShown;
+let SelfPresenceStore = SelfPresenceStore_mod;
 let UserProfileSections = Constants2.UserProfileSections;
-const UserProfileThemeTypes = Constants.UserProfileThemeTypes;
+let UserProfileThemeTypes = Constants.UserProfileThemeTypes;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const constants = UserProfileEditConstants.UserProfileEditAutoFocusElement;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
@@ -163,7 +173,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const tmp5 = closure_18(containerBackground, containerBorderColor);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp9 = authStore2(UserProfileWidgetsBoardEditNoticeDefault, {});
-    const tmp10 = authStore2(VibegrationsCustomWidgetAddOptionDefault, {});
+    const tmp10 = authStore2(ConjureCustomWidgetAddOptionDefault, {});
     cResult[0] = tmp9;
     cResult[1] = tmp10;
     tmp6 = tmp9;
@@ -211,7 +221,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   items = [, , ];
   const tmp2 = closure_18(containerBackground, containerBorderColor);
   items[0] = authStore2(UserProfileWidgetsBoardEditNoticeDefault, {});
-  items[1] = authStore2(VibegrationsCustomWidgetAddOptionDefault, {});
+  items[1] = authStore2(ConjureCustomWidgetAddOptionDefault, {});
   const obj2 = { userId, isVisible: activeSection === WIDGETS, cardStyle: tmp2 };
   items[2] = authStore2(UserProfileWidgetsBoardDefault, obj2);
   return closure_15(metroRequire, obj);
@@ -279,410 +289,502 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToProfileCustomization) => {
-  let canSet;
-  let closure_3;
-  let entryPoint;
-  let first;
-  let first1;
+  let closure_4;
+  let isProfileLoaded;
+  let markAsDismissed;
   let trackUserProfileAction;
-  let obj = navigateToProfileCustomization(first1[12]);
-  const cResult = obj.c(38);
+  let visibleContent;
+  let obj = navigateToProfileCustomization(trackUserProfileAction[12]);
+  const cResult = obj.c(37);
   navigateToProfileCustomization = navigateToProfileCustomization.navigateToProfileCustomization;
-  const isProfileLoaded = navigateToProfileCustomization.isProfileLoaded;
-  const tmp5 = trackUserProfileAction(first1[17])();
-  const obj2 = navigateToProfileCustomization(first1[22]);
+  ({ isProfileLoaded, visibleContent, markAsDismissed } = navigateToProfileCustomization);
+  let tmp4 = markAsDismissed(trackUserProfileAction[17])();
+  const obj2 = navigateToProfileCustomization(trackUserProfileAction[22]);
+  const token = obj2.useToken(markAsDismissed(trackUserProfileAction[23]).colors.WHITE);
+  const obj3 = navigateToProfileCustomization(trackUserProfileAction[24]);
+  trackUserProfileAction = obj3.useUserProfileAnalyticsContext().trackUserProfileAction;
+  const ref = react.useRef(null);
+  const tmp7 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK;
+  let closure_3 = tmp7;
+  const tmp8 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK;
+  react = tmp8;
+  const tmp9 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK;
+  let closure_5 = tmp9;
+  if (cResult[0] === markAsDismissed) {
+    if (cResult[1] === navigateToProfileCustomization) {
+      if (cResult[2] === tmp8) {
+        if (cResult[3] === tmp9) {
+          if (cResult[4] === tmp7) {
+            let tmp10;
+            let tmp13Result;
+            if (cResult[5] === trackUserProfileAction) {
+              tmp10 = cResult[6];
+            }
+            if (cResult[7] !== navigateToProfileCustomization) {
+              class A {
+                constructor() {
+                  navigateToProfileCustomization(constants.BADGES);
+                }
+              }
+              cResult[7] = navigateToProfileCustomization;
+              cResult[8] = A;
+            } else {
+              class A {
+                constructor() {
+                  navigateToProfileCustomization(constants.BADGES);
+                }
+              }
+            }
+            if (cResult[9] === token) {
+              let tmp18;
+              class A {
+                constructor() {
+                  navigateToProfileCustomization(constants.BADGES);
+                }
+              }
+              const _Symbol = Symbol;
+              if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+                class A {
+                  constructor() {
+                    navigateToProfileCustomization(constants.BADGES);
+                  }
+                }
+                const stringResult = obj4.string(navigateToProfileCustomization(trackUserProfileAction[28]).t.AAjhgi);
+                cResult[12] = stringResult;
+                tmp18 = stringResult;
+              } else {
+                class A {
+                  constructor() {
+                    navigateToProfileCustomization(constants.BADGES);
+                  }
+                }
+              }
+              if (cResult[13] !== isProfileLoaded) {
+                class A {
+                  constructor() {
+                    navigateToProfileCustomization(constants.BADGES);
+                  }
+                }
+                if (!isProfileLoaded) {
+                  class A {
+                    constructor() {
+                      navigateToProfileCustomization(constants.BADGES);
+                    }
+                  }
+                  const intl = tmp(tmp2[28]).intl;
+                  tmp22[0] = intl.string(navigateToProfileCustomization(trackUserProfileAction[28]).t.ZTNur7);
+                }
+                cResult[13] = isProfileLoaded;
+                cResult[14] = tmp21;
+              } else {
+                class A {
+                  constructor() {
+                    navigateToProfileCustomization(constants.BADGES);
+                  }
+                }
+              }
+              if (cResult[15] === tmp10) {
+                class A {
+                  constructor() {
+                    navigateToProfileCustomization(constants.BADGES);
+                  }
+                }
+              }
+              const obj5 = { ref, variant: "primary", icon: tmp12, text: tmp18, onPress: tmp10, accessibilityValue: tmp20, grow: true };
+              cResult[15] = tmp10;
+              cResult[16] = tmp12;
+              cResult[17] = tmp20;
+              cResult[18] = closure_14(navigateToProfileCustomization(trackUserProfileAction[29]).Button, obj5);
+              const tmp25 = closure_14(navigateToProfileCustomization(trackUserProfileAction[29]).Button, obj5);
+            }
+            if (isProfileLoaded) {
+              class A {
+                constructor() {
+                  navigateToProfileCustomization(constants.BADGES);
+                }
+              }
+              tmp16[1] = token;
+              tmp13Result = tmp13(tmp(tmp2[26]).PencilIcon, tmp16);
+            } else {
+              class A {
+                constructor() {
+                  navigateToProfileCustomization(constants.BADGES);
+                }
+              }
+              tmp14[1] = token;
+              tmp13Result = tmp13(tmp(tmp2[27]).ActivityIndicator, tmp14);
+            }
+            cResult[9] = token;
+            cResult[10] = isProfileLoaded;
+            cResult[11] = tmp13Result;
+          }
+        }
+      }
+    }
+  }
+  const fn = function o() {
+    trackUserProfileAction({ action: "EDIT_PROFILE" });
+    const obj = you_tracking_Tracking;
+    const result = obj.trackYouTabEditProfilePress();
+    navigateToProfileCustomization();
+    const tmp4 = closure_3 || closure_4 || closure_5;
+    if (tmp4) {
+      markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+    }
+  };
+  cResult[0] = markAsDismissed;
+  cResult[1] = navigateToProfileCustomization;
+  cResult[2] = tmp8;
+  cResult[3] = tmp9;
+  cResult[4] = tmp7;
+  cResult[5] = trackUserProfileAction;
+  cResult[6] = fn;
+  tmp10 = fn;
+}) : ((navigateToProfileCustomization) => {
+  let Button;
+  let closure_4;
+  let intl;
+  let intl2;
+  let isProfileLoaded;
+  let items2;
+  let markAsDismissed;
+  let obj4;
+  let tmp14Result;
+  let tmp17;
+  let visibleContent;
+  navigateToProfileCustomization = navigateToProfileCustomization.navigateToProfileCustomization;
+  ({ isProfileLoaded, visibleContent, markAsDismissed } = navigateToProfileCustomization);
+  let trackUserProfileAction;
+  react = undefined;
+  let tmp4 = navigateToProfileCustomization;
+  const tmp3 = markAsDismissed(trackUserProfileAction[17])();
+  let obj = navigateToProfileCustomization(trackUserProfileAction[22]);
+  const token = obj.useToken(markAsDismissed(trackUserProfileAction[23]).colors.WHITE);
+  const obj2 = navigateToProfileCustomization(trackUserProfileAction[24]);
   trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   const ref = react.useRef(null);
-  const obj3 = navigateToProfileCustomization(first1[23]);
-  const isDisplayNameStylesFlywheelSettersEnabled = obj3.useIsDisplayNameStylesFlywheelSettersEnabled("YouScreenUserProfileContent");
+  const tmp7 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK;
+  let closure_3 = tmp7;
+  const tmp8 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK;
+  react = tmp8;
+  const tmp9 = visibleContent === navigateToProfileCustomization(trackUserProfileAction[25]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK;
+  let closure_5 = tmp9;
+  const items = [navigateToProfileCustomization, trackUserProfileAction, tmp7, tmp8, tmp9, markAsDismissed];
+  const items1 = [navigateToProfileCustomization];
+  const callback = react.useCallback(() => {
+    trackUserProfileAction({ action: "EDIT_PROFILE" });
+    const obj = you_tracking_Tracking;
+    const result = obj.trackYouTabEditProfilePress();
+    navigateToProfileCustomization();
+    const tmp4 = closure_3 || closure_4 || closure_5;
+    if (tmp4) {
+      markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+    }
+  }, items);
+  const callback1 = react.useCallback(() => {
+    navigateToProfileCustomization(constants.BADGES);
+  }, items1);
+  const obj3 = { style: tmp3.primaryButtons, secondaryButton: closure_14(Button, obj4) };
+  obj4 = { ref, variant: "primary", icon: tmp14Result, text: intl.string(tmp4(trackUserProfileAction[28]).t.AAjhgi), onPress: callback, accessibilityValue: tmp17, grow: true };
+  const tmp15 = markAsDismissed(trackUserProfileAction[30]);
+  Button = navigateToProfileCustomization(trackUserProfileAction[29]).Button;
+  const tmp12 = closure_15;
+  const tmp13 = closure_16;
+  if (isProfileLoaded) {
+    const obj5 = { size: "sm", color: token };
+    tmp14Result = tmp14(tmp4(tmp2[26]).PencilIcon, obj5);
+  } else {
+    const obj6 = { size: "small", color: token, accessible: false };
+    tmp14Result = tmp14(tmp4(tmp2[27]).ActivityIndicator, obj6);
+  }
+  intl = tmp4(tmp2[28]).intl;
+  tmp17 = undefined;
+  if (!isProfileLoaded) {
+    const obj7 = { text: intl2.string(tmp4(trackUserProfileAction[28]).t.ZTNur7) };
+    intl2 = tmp4(tmp2[28]).intl;
+    tmp17 = obj7;
+  }
+  const obj8 = { children: items2 };
+  items2 = [closure_14(tmp15, obj3), closure_14(tmp(trackUserProfileAction[31]), { targetRef: ref, visible: tmp7, markAsDismissed }), closure_14(tmp(trackUserProfileAction[32]), { targetRef: ref, visible: tmp8, markAsDismissed, onTryItOut: callback1 }), closure_14(tmp(trackUserProfileAction[33]), { targetRef: ref, visible: tmp9, markAsDismissed })];
+  return tmp12(tmp13, obj8);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let canSet;
+  let entryPoint;
+  let entryPointRef;
+  let first;
+  let isProfileLoaded;
+  let items;
+  let navigateToProfileCustomization;
+  let onOpenBadgeDirectory;
+  let primaryInfoProps;
+  let tmp10;
+  let tmp26;
+  let tmp27;
+  const obj = react2;
+  const cResult = obj.c(36);
+  ({ isProfileLoaded, navigateToProfileCustomization, primaryInfoProps } = arg0);
+  const tmp5 = UserProfileSharedStylesDefault();
+  const id = primaryInfoProps.user.id;
+  const obj2 = DisplayNameStylesFlywheelExperiment;
+  const isDisplayNameStylesFlywheelSettersEnabled = obj2.useIsDisplayNameStylesFlywheelSettersEnabled("YouScreenUserProfileContent");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { location: "YouScreenUserProfileContent" };
-    cResult[0] = obj4;
-    first = obj4;
+    const obj3 = { location: "YouScreenUserProfileContent" };
+    cResult[0] = obj3;
+    first = obj3;
   } else {
     first = cResult[0];
   }
-  const tmpResult = navigateToProfileCustomization(first1[24]);
+  const tmpResult = BadgeManagementExperiment;
   const isBadgeManagementEnabled = tmpResult.useIsBadgeManagementEnabled(first);
-  const tmp10 = trackUserProfileAction(first1[25])();
-  const tmpResult3 = navigateToProfileCustomization(first1[26]);
-  const customTypingIndicatorConfig = tmpResult3.useCustomTypingIndicatorConfig("YouScreenUserProfileContent");
+  const tmp9 = useOwnsAnyBadgeDefault();
+  if (cResult[1] !== id) {
+    const obj4 = { userId: id, enabled: true, location: "YouScreenUserProfileContent" };
+    cResult[1] = id;
+    cResult[2] = obj4;
+    tmp10 = obj4;
+  } else {
+    tmp10 = cResult[2];
+  }
+  const tmpResult5 = useBadgeDirectoryNuxCoachmarkVariant;
+  const badgeDirectoryNuxCoachmarkVariant = tmpResult5.useBadgeDirectoryNuxCoachmarkVariant(tmp10);
+  const tmpResult6 = CustomTypingIndicatorExperiment;
+  const customTypingIndicatorConfig = tmpResult6.useCustomTypingIndicatorConfig("YouScreenUserProfileContent");
   ({ canSet, entryPoint } = customTypingIndicatorConfig);
-  const tmp12 = useIsContentShown(navigateToProfileCustomization(first1[27]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS);
-  if (cResult[1] === entryPoint) {
-    if (cResult[2] === tmp12) {
-      if (cResult[3] === isBadgeManagementEnabled) {
-        if (cResult[4] === canSet) {
-          if (cResult[5] === isDisplayNameStylesFlywheelSettersEnabled) {
-            if (cResult[6] === isProfileLoaded) {
-              let tmp13;
-              if (cResult[7] === tmp10) {
-                tmp13 = cResult[8];
-              }
-              const tmpResult4 = navigateToProfileCustomization(first1[28]);
-              const tmp24 = _slicedToArray(tmpResult4.useSelectedDismissibleContent(tmp13), 2);
-              first1 = tmp24[0];
-              _slicedToArray = tmp26;
-              const DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK = tmp(tmp2[27]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK;
-              const BADGE_CUSTOMIZATION_COACHMARK = tmp(tmp2[27]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK;
-              if (cResult[9] === tmp24[1]) {
-                if (cResult[10] === navigateToProfileCustomization) {
-                  if (cResult[11] === trackUserProfileAction) {
-                    let tmp27;
-                    let tmp29;
+  const tmp13 = useIsContentShown(dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS);
+  if (cResult[3] === badgeDirectoryNuxCoachmarkVariant.isPending) {
+    if (cResult[4] === badgeDirectoryNuxCoachmarkVariant.variantProps) {
+      if (cResult[5] === entryPoint) {
+        if (cResult[6] === tmp13) {
+          if (cResult[7] === isBadgeManagementEnabled) {
+            if (cResult[8] === canSet) {
+              if (cResult[9] === isDisplayNameStylesFlywheelSettersEnabled) {
+                if (cResult[10] === isProfileLoaded) {
+                  let tmp14;
+                  if (cResult[11] === tmp9) {
+                    tmp14 = cResult[12];
+                  }
+                  const tmpResult7 = useSelectedDismissibleContent;
+                  [tmp26, tmp27] = tmpResult7.useSelectedDismissibleContent(tmp14);
+                  _slicedToArray(tmpResult7.useSelectedDismissibleContent(tmp14), 2);
+                  const tmp28 = tmp26 === dismissible_content.DismissibleContent.BADGE_DIRECTORY_NUX_POPOVER;
+                  const tmpResult8 = useBadgeDirectoryNuxEntryPoint;
+                  const badgeDirectoryNuxEntryPoint = tmpResult8.useBadgeDirectoryNuxEntryPoint(tmp28, tmp27);
+                  ({ entryPointRef, onOpenBadgeDirectory } = badgeDirectoryNuxEntryPoint);
+                  if (cResult[13] === tmp5.primaryInfo) {
                     let tmp30;
-                    if (cResult[12] === first1) {
-                      tmp27 = cResult[13];
+                    if (cResult[14] === tmp5.profileContent) {
+                      tmp30 = cResult[15];
                     }
-                    if (cResult[14] !== navigateToProfileCustomization) {
-                      class Y {
-                        constructor() {
-                          tmp = closure_0(closure_13.BADGES);
-                          return;
+                    if (cResult[16] === entryPointRef) {
+                      if (cResult[17] === onOpenBadgeDirectory) {
+                        let tmp31;
+                        if (cResult[18] === primaryInfoProps) {
+                          tmp31 = cResult[19];
                         }
-                      }
-                      cResult[14] = navigateToProfileCustomization;
-                      cResult[15] = Y;
-                    } else {
-                      class Y {
-                        constructor() {
-                          tmp = closure_0(closure_13.BADGES);
-                          return;
-                        }
-                      }
-                    }
-                    const _Symbol = Symbol;
-                    const primaryButtons = tmp5.primaryButtons;
-                    if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                      class Y {
-                        constructor() {
-                          tmp = closure_0(closure_13.BADGES);
-                          return;
-                        }
-                      }
-                      const obj5 = { size: "sm", color: trackUserProfileAction(first1[30]).colors.WHITE };
-                      const PencilIcon = tmp(tmp2[29]).PencilIcon;
-                      const tmp31 = closure_14(PencilIcon, obj5);
-                      const intl = tmp(tmp2[31]).intl;
-                      cResult[16] = tmp31;
-                      cResult[17] = intl.string(navigateToProfileCustomization(first1[31]).t.AAjhgi);
-                      intl.string(navigateToProfileCustomization(first1[31]).t.AAjhgi);
-                      class L {
-                        constructor() {
-                          tmp = trackUserProfileAction({ action: "EDIT_PROFILE" });
-                          obj = closure_0(closure_2[13]);
-                          result = obj.trackYouTabEditProfilePress();
-                          tmp3 = closure_0();
-                          if (null != closure_2) {
-                            tmp4 = closure_3;
-                            tmp5 = ContentDismissActionType;
-                            tmp6 = closure_3(ContentDismissActionType.TAKE_ACTION);
-                          }
-                          return;
-                        }
-                      }
-                      tmp29 = tmp31;
-                    } else {
-                      class Y {
-                        constructor() {
-                          tmp = closure_0(closure_13.BADGES);
-                          return;
-                        }
-                      }
-                      tmp30 = cResult[17];
-                    }
-                    if (cResult[18] !== tmp27) {
-                      class Y {
-                        constructor() {
-                          tmp = closure_0(closure_13.BADGES);
-                          return;
-                        }
-                      }
-                      const obj6 = { ref, variant: "primary", icon: tmp29, text: tmp30, onPress: tmp27, grow: true };
-                      cResult[18] = tmp27;
-                      cResult[19] = closure_14(navigateToProfileCustomization(first1[32]).Button, obj6);
-                      const tmp34 = closure_14(navigateToProfileCustomization(first1[32]).Button, obj6);
-                    } else {
-                      class Y {
-                        constructor() {
-                          tmp = closure_0(closure_13.BADGES);
-                          return;
-                        }
-                      }
-                    }
-                    if (cResult[20] === tmp5.primaryButtons) {
-                      class Y {
-                        constructor() {
-                          tmp = closure_0(closure_13.BADGES);
-                          return;
-                        }
-                      }
-                      const tmp38 = first1 === DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK;
-                      if (cResult[23] === tmp24[1]) {
-                        class Y {
-                          constructor() {
-                            tmp = closure_0(closure_13.BADGES);
-                            return;
-                          }
-                        }
-                        if (cResult[26] === tmp24[1]) {
-                          class Y {
-                            constructor() {
-                              tmp = closure_0(closure_13.BADGES);
-                              return;
+                        if (cResult[20] === badgeDirectoryNuxCoachmarkVariant.variantProps) {
+                          if (cResult[21] === entryPointRef) {
+                            if (cResult[22] === tmp28) {
+                              if (cResult[23] === tmp27) {
+                                let tmp38;
+                                if (cResult[24] === id) {
+                                  tmp38 = cResult[25];
+                                }
+                                if (cResult[26] === isProfileLoaded) {
+                                  if (cResult[27] === tmp27) {
+                                    if (cResult[28] === navigateToProfileCustomization) {
+                                      let tmp42;
+                                      if (cResult[29] === tmp26) {
+                                        tmp42 = cResult[30];
+                                      }
+                                      if (cResult[31] === tmp30) {
+                                        if (cResult[32] === tmp31) {
+                                          if (cResult[33] === tmp38) {
+                                            let tmp46;
+                                            if (cResult[34] === tmp42) {
+                                              tmp46 = cResult[35];
+                                            }
+                                            return tmp46;
+                                          }
+                                        }
+                                      }
+                                      const obj5 = { style: tmp30, children: items };
+                                      items = [tmp31, tmp38, tmp42];
+                                      const tmp49 = closure_15(metroRequire, obj5);
+                                      cResult[31] = tmp30;
+                                      cResult[32] = tmp31;
+                                      cResult[33] = tmp38;
+                                      cResult[34] = tmp42;
+                                      cResult[35] = tmp49;
+                                      tmp46 = tmp49;
+                                    }
+                                  }
+                                }
+                                const obj6 = { navigateToProfileCustomization, isProfileLoaded, visibleContent: tmp26, markAsDismissed: tmp27 };
+                                const tmp45 = authStore2(closure_21, obj6);
+                                cResult[26] = isProfileLoaded;
+                                cResult[27] = tmp27;
+                                cResult[28] = navigateToProfileCustomization;
+                                cResult[29] = tmp26;
+                                cResult[30] = tmp45;
+                                tmp42 = tmp45;
+                              }
                             }
                           }
                         }
-                        const obj7 = { targetRef: ref, visible: first1 === BADGE_CUSTOMIZATION_COACHMARK, markAsDismissed: tmp24[1], onTryItOut: tmp28 };
-                        cResult[26] = tmp24[1];
-                        const tmp45 = closure_14(trackUserProfileAction(first1[35]), obj7);
-                        class L {
-                          constructor() {
-                            tmp = trackUserProfileAction({ action: "EDIT_PROFILE" });
-                            obj = closure_0(closure_2[13]);
-                            result = obj.trackYouTabEditProfilePress();
-                            tmp3 = closure_0();
-                            if (null != closure_2) {
-                              tmp4 = closure_3;
-                              tmp5 = ContentDismissActionType;
-                              tmp6 = closure_3(ContentDismissActionType.TAKE_ACTION);
-                            }
-                            return;
-                          }
+                        let tmp40 = null != badgeDirectoryNuxCoachmarkVariant.variantProps;
+                        if (tmp40) {
+                          const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp28, markAsDismissed: tmp27 };
+                          tmp40 = authStore2(tmp4(12889), obj7);
                         }
-                        cResult[27] = tmp28;
-                        cResult[28] = first1 === BADGE_CUSTOMIZATION_COACHMARK;
-                        cResult[29] = tmp45;
-                      }
-                      const obj8 = { targetRef: ref, visible: tmp38, markAsDismissed: tmp24[1] };
-                      cResult[23] = tmp24[1];
-                      const tmp41 = closure_14(trackUserProfileAction(first1[34]), obj8);
-                      class L {
-                        constructor() {
-                          tmp = trackUserProfileAction({ action: "EDIT_PROFILE" });
-                          obj = closure_0(closure_2[13]);
-                          result = obj.trackYouTabEditProfilePress();
-                          tmp3 = closure_0();
-                          if (null != closure_2) {
-                            tmp4 = closure_3;
-                            tmp5 = ContentDismissActionType;
-                            tmp6 = closure_3(ContentDismissActionType.TAKE_ACTION);
-                          }
-                          return;
-                        }
-                      }
-                      cResult[25] = tmp41;
-                    }
-                    class L {
-                      constructor() {
-                        tmp = trackUserProfileAction({ action: "EDIT_PROFILE" });
-                        obj = closure_0(closure_2[13]);
-                        result = obj.trackYouTabEditProfilePress();
-                        tmp3 = closure_0();
-                        if (null != closure_2) {
-                          tmp4 = closure_3;
-                          tmp5 = ContentDismissActionType;
-                          tmp6 = closure_3(ContentDismissActionType.TAKE_ACTION);
-                        }
-                        return;
+                        cResult[20] = badgeDirectoryNuxCoachmarkVariant.variantProps;
+                        cResult[21] = entryPointRef;
+                        cResult[22] = tmp28;
+                        cResult[23] = tmp27;
+                        cResult[24] = id;
+                        cResult[25] = tmp40;
+                        tmp38 = tmp40;
                       }
                     }
-                    cResult[20] = tmp5.primaryButtons;
-                    cResult[21] = tmp33;
-                    cResult[22] = tmp37;
+                    const obj8 = { badgeDirectoryEntryPointRef: entryPointRef, onOpenBadgeDirectory };
+                    const tmp4Result = UserProfilePrimaryInfoDefault;
+                    const merged = Object.assign(primaryInfoProps);
+                    const tmp37 = authStore2(tmp4Result, obj8);
+                    cResult[16] = entryPointRef;
+                    cResult[17] = onOpenBadgeDirectory;
+                    cResult[18] = primaryInfoProps;
+                    cResult[19] = tmp37;
+                    tmp31 = tmp37;
                   }
+                  const items1 = [, ];
+                  ({ primaryInfo: arr2[0], profileContent: arr2[1] } = tmp5);
+                  cResult[13] = tmp5.primaryInfo;
+                  cResult[14] = tmp5.profileContent;
+                  cResult[15] = items1;
+                  tmp30 = items1;
                 }
               }
-              class L {
-                constructor() {
-                  tmp = trackUserProfileAction({ action: "EDIT_PROFILE" });
-                  obj = closure_0(closure_2[13]);
-                  result = obj.trackYouTabEditProfilePress();
-                  tmp3 = closure_0();
-                  if (null != closure_2) {
-                    tmp4 = closure_3;
-                    tmp5 = ContentDismissActionType;
-                    tmp6 = closure_3(ContentDismissActionType.TAKE_ACTION);
-                  }
-                  return;
-                }
-              }
-              cResult[9] = tmp24[1];
-              cResult[10] = navigateToProfileCustomization;
-              cResult[11] = trackUserProfileAction;
-              cResult[12] = first1;
-              cResult[13] = L;
-              tmp27 = L;
             }
           }
         }
       }
     }
   }
-  const items = [];
-  const tmp14 = isProfileLoaded && isDisplayNameStylesFlywheelSettersEnabled && !tmp12;
-  if (tmp14) {
-    class Y {
-      constructor() {
-        tmp = closure_0(closure_13.BADGES);
-        return;
-      }
-    }
-    tmp15(navigateToProfileCustomization(first1[27]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK);
+  const items2 = [];
+  const tmp15 = isProfileLoaded && isDisplayNameStylesFlywheelSettersEnabled && !tmp13;
+  if (tmp15) {
+    items2.push(dismissible_content.DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK);
   }
-  const tmp17 = isProfileLoaded && isBadgeManagementEnabled && tmp10;
+  const tmp17 = isProfileLoaded && null != badgeDirectoryNuxCoachmarkVariant.variantProps;
   if (tmp17) {
-    class Y {
-      constructor() {
-        tmp = closure_0(closure_13.BADGES);
-        return;
-      }
-    }
-    tmp18(navigateToProfileCustomization(first1[27]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK);
+    items2.push(dismissible_content.DismissibleContent.BADGE_DIRECTORY_NUX_POPOVER);
   }
-  let tmp20 = isProfileLoaded && canSet;
+  const tmp20 = isProfileLoaded && isBadgeManagementEnabled && tmp9 && !badgeDirectoryNuxCoachmarkVariant.isPending;
   if (tmp20) {
-    class Y {
-      constructor() {
-        tmp = closure_0(closure_13.BADGES);
-        return;
-      }
-    }
-    tmp20 = "profile" === entryPoint;
+    items2.push(dismissible_content.DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK);
   }
-  if (tmp20) {
-    class Y {
-      constructor() {
-        tmp = closure_0(closure_13.BADGES);
-        return;
-      }
-    }
+  const tmp22 = isProfileLoaded && canSet && "profile" === entryPoint && !tmp13 && !badgeDirectoryNuxCoachmarkVariant.isPending;
+  if (tmp22) {
+    items2.push(dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK);
   }
-  if (tmp20) {
-    class Y {
-      constructor() {
-        tmp = closure_0(closure_13.BADGES);
-        return;
-      }
-    }
-    tmp21(navigateToProfileCustomization(first1[27]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK);
-  }
-  cResult[1] = entryPoint;
-  cResult[2] = tmp12;
-  cResult[3] = isBadgeManagementEnabled;
-  cResult[4] = canSet;
-  cResult[5] = isDisplayNameStylesFlywheelSettersEnabled;
-  cResult[6] = isProfileLoaded;
-  cResult[7] = tmp10;
-  cResult[8] = items;
-  tmp13 = items;
+  cResult[3] = badgeDirectoryNuxCoachmarkVariant.isPending;
+  cResult[4] = badgeDirectoryNuxCoachmarkVariant.variantProps;
+  cResult[5] = entryPoint;
+  cResult[6] = tmp13;
+  cResult[7] = isBadgeManagementEnabled;
+  cResult[8] = canSet;
+  cResult[9] = isDisplayNameStylesFlywheelSettersEnabled;
+  cResult[10] = isProfileLoaded;
+  cResult[11] = tmp9;
+  cResult[12] = items2;
+  tmp14 = items2;
 }) : ((navigateToProfileCustomization) => {
-  let Button;
-  let PencilIcon;
   let canSet;
-  let closure_3;
   let entryPoint;
-  let intl;
-  let items3;
-  let obj8;
-  let obj9;
+  let isProfileLoaded;
+  let items1;
+  let items2;
+  let primaryInfoProps;
+  let tmp21;
+  let tmp22;
+  ({ isProfileLoaded, primaryInfoProps } = navigateToProfileCustomization);
   navigateToProfileCustomization = navigateToProfileCustomization.navigateToProfileCustomization;
-  let isProfileLoaded = navigateToProfileCustomization.isProfileLoaded;
-  let trackUserProfileAction;
-  let first;
-  _slicedToArray = undefined;
-  const tmp3 = trackUserProfileAction(first[17])();
-  let obj = navigateToProfileCustomization(first[22]);
-  trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  const ref = react.useRef(null);
-  const obj3 = navigateToProfileCustomization(first[23]);
-  const isDisplayNameStylesFlywheelSettersEnabled = obj3.useIsDisplayNameStylesFlywheelSettersEnabled("YouScreenUserProfileContent");
-  const obj4 = navigateToProfileCustomization(first[24]);
-  const isBadgeManagementEnabled = obj4.useIsBadgeManagementEnabled({ location: "YouScreenUserProfileContent" });
-  const tmp8 = trackUserProfileAction(first[25])();
-  const obj5 = navigateToProfileCustomization(first[26]);
-  const customTypingIndicatorConfig = obj5.useCustomTypingIndicatorConfig("YouScreenUserProfileContent");
+  const id = primaryInfoProps.user.id;
+  const tmp3 = UserProfileSharedStylesDefault();
+  const obj = DisplayNameStylesFlywheelExperiment;
+  const isDisplayNameStylesFlywheelSettersEnabled = obj.useIsDisplayNameStylesFlywheelSettersEnabled("YouScreenUserProfileContent");
+  const obj2 = BadgeManagementExperiment;
+  const isBadgeManagementEnabled = obj2.useIsBadgeManagementEnabled({ location: "YouScreenUserProfileContent" });
+  const tmp7 = useOwnsAnyBadgeDefault();
+  const obj3 = useBadgeDirectoryNuxCoachmarkVariant;
+  const badgeDirectoryNuxCoachmarkVariant = obj3.useBadgeDirectoryNuxCoachmarkVariant({ userId: id, enabled: true, location: "YouScreenUserProfileContent" });
+  const obj4 = CustomTypingIndicatorExperiment;
+  const customTypingIndicatorConfig = obj4.useCustomTypingIndicatorConfig("YouScreenUserProfileContent");
   ({ canSet, entryPoint } = customTypingIndicatorConfig);
-  const tmp10 = useIsContentShown(navigateToProfileCustomization(first[27]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS);
+  const tmp10 = useIsContentShown(dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS);
   const items = [];
   const tmp11 = isProfileLoaded && isDisplayNameStylesFlywheelSettersEnabled && !tmp10;
   if (tmp11) {
-    items.push(navigateToProfileCustomization(first[27]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK);
+    items.push(dismissible_content.DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK);
   }
-  const tmp13 = isProfileLoaded && isBadgeManagementEnabled && tmp8;
+  const tmp13 = isProfileLoaded && null != badgeDirectoryNuxCoachmarkVariant.variantProps;
   if (tmp13) {
-    items.push(navigateToProfileCustomization(first[27]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK);
+    items.push(dismissible_content.DismissibleContent.BADGE_DIRECTORY_NUX_POPOVER);
   }
-  if (isProfileLoaded) {
-    isProfileLoaded = canSet;
+  const tmp16 = isProfileLoaded && isBadgeManagementEnabled && tmp7 && !badgeDirectoryNuxCoachmarkVariant.isPending;
+  if (tmp16) {
+    items.push(dismissible_content.DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK);
   }
-  if (isProfileLoaded) {
-    isProfileLoaded = "profile" === entryPoint;
+  const tmp18 = isProfileLoaded && canSet && "profile" === entryPoint && !tmp10 && !badgeDirectoryNuxCoachmarkVariant.isPending;
+  if (tmp18) {
+    items.push(dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK);
   }
-  if (isProfileLoaded) {
-    isProfileLoaded = !tmp10;
+  const tmp4Result = useSelectedDismissibleContent;
+  [tmp21, tmp22] = tmp4Result.useSelectedDismissibleContent(items);
+  _slicedToArray(tmp4Result.useSelectedDismissibleContent(items), 2);
+  const tmp23 = tmp21 === dismissible_content.DismissibleContent.BADGE_DIRECTORY_NUX_POPOVER;
+  const tmp4Result2 = useBadgeDirectoryNuxEntryPoint;
+  const badgeDirectoryNuxEntryPoint = tmp4Result2.useBadgeDirectoryNuxEntryPoint(tmp23, tmp22);
+  const entryPointRef = badgeDirectoryNuxEntryPoint.entryPointRef;
+  const obj5 = { style: items1, children: items2 };
+  items1 = [, ];
+  ({ primaryInfo: arr2[0], profileContent: arr2[1] } = tmp3);
+  const onOpenBadgeDirectory = badgeDirectoryNuxEntryPoint.onOpenBadgeDirectory;
+  const obj6 = { badgeDirectoryEntryPointRef: entryPointRef, onOpenBadgeDirectory };
+  const tmpResult = UserProfilePrimaryInfoDefault;
+  const merged = Object.assign(primaryInfoProps);
+  items2 = [authStore2(tmpResult, obj6), , ];
+  let tmp27Result = null != badgeDirectoryNuxCoachmarkVariant.variantProps;
+  const tmp25 = closure_15;
+  const tmp26 = metroRequire;
+  if (tmp27Result) {
+    const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp23, markAsDismissed: tmp22 };
+    tmp27Result = tmp27(tmp(12889), obj7);
   }
-  if (isProfileLoaded) {
-    items.push(navigateToProfileCustomization(first[27]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK);
-  }
-  const tmp4Result = navigateToProfileCustomization(first[28]);
-  const tmp16 = _slicedToArray(tmp4Result.useSelectedDismissibleContent(items), 2);
-  first = tmp16[0];
-  _slicedToArray = tmp18;
-  const DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK = tmp4(tmp2[27]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK;
-  const BADGE_CUSTOMIZATION_COACHMARK = tmp4(tmp2[27]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK;
-  const items1 = [navigateToProfileCustomization, trackUserProfileAction, first, tmp16[1]];
-  const CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK = tmp4(tmp2[27]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK;
-  const items2 = [navigateToProfileCustomization];
-  const callback = obj2.useCallback(() => {
-    trackUserProfileAction({ action: "EDIT_PROFILE" });
-    const obj = you_tracking_Tracking;
-    const result = obj.trackYouTabEditProfilePress();
-    navigateToProfileCustomization();
-    if (null != first) {
-      closure_3(ContentDismissActionType.TAKE_ACTION);
-    }
-  }, items1);
-  const obj6 = { children: items3 };
-  const callback1 = obj2.useCallback(() => {
-    navigateToProfileCustomization(constants.BADGES);
-  }, items2);
-  const obj7 = { style: tmp3.primaryButtons, secondaryButton: closure_14(Button, obj8) };
-  obj8 = { ref, variant: "primary", icon: closure_14(PencilIcon, obj9), text: intl.string(navigateToProfileCustomization(first[31]).t.AAjhgi), onPress: callback, grow: true };
-  const tmpResult = trackUserProfileAction(first[33]);
-  Button = tmp4(tmp2[32]).Button;
-  obj9 = { size: "sm", color: trackUserProfileAction(first[30]).colors.WHITE };
-  PencilIcon = tmp4(tmp2[29]).PencilIcon;
-  intl = tmp4(tmp2[31]).intl;
-  items3 = [closure_14(tmpResult, obj7), , , ];
-  const obj10 = { targetRef: ref, visible: first === DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK, markAsDismissed: tmp16[1] };
-  items3[1] = closure_14(trackUserProfileAction(first[34]), obj10);
-  const obj11 = { targetRef: ref, visible: first === BADGE_CUSTOMIZATION_COACHMARK, markAsDismissed: tmp16[1], onTryItOut: callback1 };
-  items3[2] = closure_14(trackUserProfileAction(first[35]), obj11);
-  const obj12 = { targetRef: ref, visible: first === CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK, markAsDismissed: tmp16[1] };
-  items3[3] = closure_14(trackUserProfileAction(first[36]), obj12);
-  return closure_15(closure_16, obj6);
+  items2[1] = tmp27Result;
+  items2[2] = authStore2(closure_21, { navigateToProfileCustomization, isProfileLoaded, visibleContent: tmp21, markAsDismissed: tmp22 });
+  return tmp25(tmp26, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let avatarBackground;
+  let backgroundColor;
   let closure_14;
+  let displayProfile;
+  let hasCustomProfileTheme;
   let isVisible;
   let navigateToFriends;
   let navigateToPremium;
   let navigateToProfileCustomization;
-  let primaryColor;
-  let secondaryColor;
-  let setActiveIndex;
   let statusBackground;
   let style;
-  let theme;
   let tmp11;
   let tmp12;
   let tmp = user;
   let tmp2 = navigateToPremium;
   let obj = user(navigateToPremium[12]);
-  const cResult = obj.c(190);
+  const cResult = obj.c(182);
   user = user.user;
   ({ style, navigateToProfileCustomization, navigateToFriends } = user);
   navigateToPremium = user.navigateToPremium;
@@ -692,55 +794,68 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let tmp4 = undefined === animateAvatar || animateAvatar;
   let tmp6 = navigateToFriends(tmp2[17])();
   let closure_5 = tmp6;
-  const tmpResult = tmp(tmp2[37]);
+  const tmpResult = tmp(tmp2[43]);
   navigation = tmpResult.useNavigation();
-  const tmpResult14 = tmp(tmp2[22]);
-  const trackUserProfileAction = tmpResult14.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let tmp8 = navigateToFriends(tmp2[38])(user.id);
-  const displayProfile = tmp8;
-  const tmpResult15 = tmp(tmp2[39]);
-  const customStatusActivity = tmpResult15.useCustomStatusActivity();
-  const tmp10 = navigateToFriends(tmp2[40])(tmp8);
+  const tmpResult13 = tmp(tmp2[24]);
+  const trackUserProfileAction = tmpResult13.useUserProfileAnalyticsContext().trackUserProfileAction;
+  let tmp8 = navigateToFriends(tmp2[44])(user.id);
+  SelfPresenceStore = tmp8;
+  const tmpResult14 = tmp(tmp2[45]);
+  const customStatusActivity = tmpResult14.useCustomStatusActivity();
+  const tmp10 = navigateToFriends(tmp2[46])(tmp8);
+  const tmp5 = navigateToFriends;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [displayProfile];
-    const fn = function f() {
-      return displayProfile.getStatus();
-    };
-    let num = 0;
+    let items = [SelfPresenceStore];
+    class S {
+      constructor() {
+        return displayProfile.getStatus();
+      }
+    }
     cResult[0] = items;
-    cResult[1] = fn;
+    cResult[1] = S;
     tmp11 = items;
-    tmp12 = fn;
+    tmp12 = S;
   } else {
     [tmp11, tmp12] = cResult;
   }
-  const tmpResult16 = tmp(tmp2[41]);
-  const stateFromStores = tmpResult16.useStateFromStores(tmp11, tmp12);
+  const tmpResult15 = tmp(tmp2[47]);
+  const stateFromStores = tmpResult15.useStateFromStores(tmp11, tmp12);
   if (cResult[2] === tmp8) {
     let tmp15;
     if (cResult[3] === user) {
       tmp15 = cResult[4];
     }
-    ({ theme, primaryColor, secondaryColor } = navigateToFriends(tmp2[42])(tmp15));
-    const hasCustomProfileTheme = null != primaryColor;
-    navigateToFriends(tmp2[42])(tmp15);
-    if (cResult[5] === primaryColor) {
+    const tmp16 = tmp5(tmp2[48])(tmp15);
+    const theme = tmp16.theme;
+    class S {
+      constructor() {
+        return displayProfile.getStatus();
+      }
+    }
+    const secondaryColor = tmp16.secondaryColor;
+    UserProfileSections = null != tmp17;
+    if (cResult[5] === tmp17) {
       if (cResult[6] === secondaryColor) {
-        let tmp18;
-        let tmp25;
-        let tmp26;
+        let tmp19;
+        let tmp27;
+        let tmp28;
         if (cResult[7] === theme) {
-          tmp18 = cResult[8];
+          tmp19 = cResult[8];
         }
-        const tmpResult17 = tmp(tmp2[43]);
-        const userProfileColors = tmpResult17.useUserProfileColors(tmp18);
-        const containerBackground = userProfileColors.containerBackground;
+        const tmpResult16 = tmp(tmp2[49]);
+        const userProfileColors = tmpResult16.useUserProfileColors(tmp19);
+        class S {
+          constructor() {
+            return displayProfile.getStatus();
+          }
+        }
+        UserProfileThemeTypes = tmp21;
         const containerBorderColor = userProfileColors.containerBorderColor;
         ({ avatarBackground, statusBackground } = userProfileColors);
         let obj9 = initialTab;
-        const ref = initialTab.useRef(null);
+        initialTab.useRef(null);
         if (cResult[9] !== trackUserProfileAction) {
-          class X {
+          class Z {
             constructor() {
               trackUserProfileAction({ action: "PRESS_SET_STATUS" });
               const obj = showYouAccountActionSheet;
@@ -748,9 +863,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
           }
           cResult[9] = trackUserProfileAction;
-          cResult[10] = X;
+          class S {
+            constructor() {
+              return displayProfile.getStatus();
+            }
+          }
+          cResult[10] = Z;
         } else {
-          class X {
+          class Z {
             constructor() {
               trackUserProfileAction({ action: "PRESS_SET_STATUS" });
               const obj = showYouAccountActionSheet;
@@ -758,16 +878,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
           }
         }
-        const tmpResult18 = tmp(tmp2[44]);
-        const enabled = tmpResult18.useVirtualCurrencyMobileEnabled().enabled;
+        const tmpResult17 = tmp(tmp2[50]);
+        const enabled = tmpResult17.useVirtualCurrencyMobileEnabled().enabled;
         [r10110, closure_14] = navigateToShop(obj9.useState(null), 2);
         navigateToShop(obj9.useState(null), 2);
-        const tmpResult19 = tmp(tmp2[45]);
-        const shouldShowExpiringTrialOfferCard = tmpResult19.useShouldShowExpiringTrialOfferCard();
+        const tmpResult18 = tmp(tmp2[51]);
+        const shouldShowExpiringTrialOfferCard = tmpResult18.useShouldShowExpiringTrialOfferCard();
         const _Symbol = Symbol;
-        const tmp22 = navigateToShop;
+        const tmp24 = navigateToShop;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          class X {
+          class Z {
             constructor() {
               trackUserProfileAction({ action: "PRESS_SET_STATUS" });
               const obj = showYouAccountActionSheet;
@@ -775,10 +895,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
           }
           let items1 = [customStatusActivity];
+          class S {
+            constructor() {
+              return displayProfile.getStatus();
+            }
+          }
           cResult[11] = items1;
-          tmp25 = items1;
+          tmp27 = items1;
         } else {
-          class X {
+          class Z {
             constructor() {
               trackUserProfileAction({ action: "PRESS_SET_STATUS" });
               const obj = showYouAccountActionSheet;
@@ -787,7 +912,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           }
         }
         if (cResult[12] !== user.id) {
-          class X {
+          class Z {
             constructor() {
               trackUserProfileAction({ action: "PRESS_SET_STATUS" });
               const obj = showYouAccountActionSheet;
@@ -795,10 +920,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
           }
           cResult[12] = user.id;
-          cResult[13] = tmp27;
-          tmp26 = tmp27;
+          class S {
+            constructor() {
+              return displayProfile.getStatus();
+            }
+          }
+          cResult[13] = tmp29;
+          tmp28 = tmp29;
         } else {
-          class X {
+          class Z {
             constructor() {
               trackUserProfileAction({ action: "PRESS_SET_STATUS" });
               const obj = showYouAccountActionSheet;
@@ -806,27 +936,52 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
           }
         }
-        const tmpResult20 = tmp(tmp2[41]);
-        const stateFromStores1 = tmpResult20.useStateFromStores(tmp25, tmp26);
-        const tmpResult21 = tmp(tmp2[46]);
-        const displayableBoardWidgets = tmpResult21.useDisplayableBoardWidgets(user.id);
-        const tmpResult22 = tmp(tmp2[47]);
-        const isMobileGameCollectionExperimentEnabled = tmpResult22.useIsMobileGameCollectionExperimentEnabled("YouScreenUserProfileContent");
-        const tmpResult23 = tmp(tmp2[48]);
-        const tmp30 = displayableBoardWidgets.length > 0 || tmpResult23.useCanConjureVibegrationsCustomWidget("YouScreenUserProfileContent", isMobileGameCollectionExperimentEnabled);
-        const tmpResult24 = tmp(tmp2[49]);
-        const isRecentActivityMobileEnabled = tmpResult24.useIsRecentActivityMobileEnabled("YouScreenUserProfileContent");
-        const tmpResult25 = tmp(tmp2[50]);
-        const profileTabIndices = tmpResult25.useProfileTabIndices(tmp30, isRecentActivityMobileEnabled, true);
+        const tmpResult19 = tmp(tmp2[47]);
+        const stateFromStores1 = tmpResult19.useStateFromStores(tmp27, tmp28);
+        const tmpResult20 = tmp(tmp2[52]);
+        const displayableBoardWidgets = tmpResult20.useDisplayableBoardWidgets(user.id);
+        const tmpResult21 = tmp(tmp2[53]);
+        const tmp31 = displayableBoardWidgets.length > 0 || tmpResult21.useCanConjureCustomWidget("YouScreenUserProfileContent");
+        const tmpResult22 = tmp(tmp2[54]);
+        const isRecentActivityMobileEnabled = tmpResult22.useIsRecentActivityMobileEnabled("YouScreenUserProfileContent");
+        const tmpResult23 = tmp(tmp2[55]);
+        const profileTabIndices = tmpResult23.useProfileTabIndices(tmp31, isRecentActivityMobileEnabled, true);
         const boardTabIndex = profileTabIndices.boardTabIndex;
         const activityTabIndex = profileTabIndices.activityTabIndex;
         const wishlistTabIndex = profileTabIndices.wishlistTabIndex;
-        const tmp22Result = tmp22(obj9.useState(0), 2);
-        closure_20 = tmp22Result[0];
-        closure_21 = tmp22Result[1];
+        let MAIN = initialTab;
+        if (null != initialTab) {
+          class Z {
+            constructor() {
+              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              const obj = showYouAccountActionSheet;
+              const result = obj.showYouAccountActionSheet();
+            }
+          }
+          let obj2 = { wishlistTabIndex, boardTabIndex: null, activityTabIndex };
+          class S {
+            constructor() {
+              return displayProfile.getStatus();
+            }
+          }
+          MAIN = initialTab;
+          if (obj17.getProfileTabSectionIndex(initialTab, obj2) < 0) {
+            class Z {
+              constructor() {
+                trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+                const obj = showYouAccountActionSheet;
+                const result = obj.showYouAccountActionSheet();
+              }
+            }
+            MAIN = UserProfileSections.MAIN;
+          }
+        }
+        const tmp24Result = tmp24(obj9.useState(0), 2);
+        closure_21 = tmp24Result[0];
+        closure_22 = tmp24Result[1];
         const _Symbol2 = Symbol;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          class X {
+          class Z {
             constructor() {
               trackUserProfileAction({ action: "PRESS_SET_STATUS" });
               const obj = showYouAccountActionSheet;
@@ -834,8 +989,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
           }
           cResult[14] = tmp36;
+          class S {
+            constructor() {
+              return displayProfile.getStatus();
+            }
+          }
         } else {
-          class X {
+          class Z {
             constructor() {
               trackUserProfileAction({ action: "PRESS_SET_STATUS" });
               const obj = showYouAccountActionSheet;
@@ -843,50 +1003,38 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
           }
         }
-        const tmpResult26 = tmp(tmp2[51]);
-        const pageHeights1 = tmpResult26.usePageHeights();
-        const handlePageContentSize = pageHeights1.handlePageContentSize;
-        const pageHeights = pageHeights1.pageHeights;
-        if (cResult[15] !== trackUserProfileAction) {
-          class Ee {
-            constructor(section) {
-              const obj = { action: "PRESS_SECTION", section };
-              trackUserProfileAction(obj);
-            }
-          }
-          cResult[15] = trackUserProfileAction;
-          cResult[16] = Ee;
-        } else {
-          class Ee {
-            constructor(section) {
-              const obj = { action: "PRESS_SECTION", section };
-              trackUserProfileAction(obj);
+        const tmpResult24 = tmp(tmp2[56]);
+        const pageHeights = tmpResult24.usePageHeights();
+        const handlePageContentSize = pageHeights.handlePageContentSize;
+        if (cResult[15] === initialTab) {
+          class Z {
+            constructor() {
+              trackUserProfileAction({ action: "PRESS_SET_STATUS" });
+              const obj = showYouAccountActionSheet;
+              const result = obj.showYouAccountActionSheet();
             }
           }
         }
-        if (cResult[17] === activityTabIndex) {
-          class Ee {
-            constructor(section) {
-              const obj = { action: "PRESS_SECTION", section };
-              trackUserProfileAction(obj);
-            }
+        function _e(section) {
+          const obj = { action: "PRESS_SECTION", section };
+          trackUserProfileAction(obj);
+          if (section !== initialTab) {
+            const obj2 = { initialTab: section };
+            navigation.setParams(obj2);
           }
         }
-        let obj2 = { initialUserProfileSection: initialTab, wishlistTabIndex, boardTabIndex, activityTabIndex, onTabChange: tmp38 };
-        cResult[17] = activityTabIndex;
-        cResult[18] = boardTabIndex;
-        cResult[19] = initialTab;
-        cResult[20] = tmp38;
-        cResult[21] = wishlistTabIndex;
-        cResult[22] = obj2;
+        cResult[15] = initialTab;
+        cResult[16] = navigation;
+        cResult[17] = trackUserProfileAction;
+        cResult[18] = _e;
       }
     }
-    let obj3 = { theme, primaryColor, secondaryColor };
-    cResult[5] = primaryColor;
+    let obj3 = { theme, primaryColor: tmp17, secondaryColor };
+    cResult[5] = tmp17;
     cResult[6] = secondaryColor;
     cResult[7] = theme;
     cResult[8] = obj3;
-    tmp18 = obj3;
+    tmp19 = obj3;
   }
   let obj4 = { user, displayProfile: tmp8 };
   cResult[2] = tmp8;
@@ -903,16 +1051,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let handleTabChange;
   let hasCustomProfileTheme;
   let intl2;
+  let items11;
   let items12;
   let items13;
   let items14;
-  let items15;
-  let items16;
-  let items17;
   let measureFill;
   let navigateToProfileCustomization;
+  let obj20;
+  let obj24;
   let obj25;
-  let obj26;
   let obj8;
   let pagerRef;
   let pronouns;
@@ -923,7 +1070,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let style;
   let theme;
   let tmp17;
-  let tmp4Result16;
+  let tmp4Result18;
   user = user.user;
   const navigateToFriends = user.navigateToFriends;
   const navigateToPremium = user.navigateToPremium;
@@ -934,32 +1081,39 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   if (flag === undefined) {
     flag = true;
   }
+  let pageWidth;
+  let closure_24;
+  let handlePageContentSize;
+  let activeProfileTabSection;
+  let setActiveProfileTabSection;
+  let restoreActiveIndex;
+  let isVisible;
+  let callback3;
   let callback4;
   let callback5;
   let segmentedControlState;
-  let closure_33;
   let tmp = navigateToFriends;
   let tmp2 = navigateToPremium;
   const tmp3 = navigateToFriends(navigateToPremium[17])();
   let closure_5 = tmp3;
   let tmp4 = user;
-  let obj = user(navigateToPremium[37]);
+  let obj = user(navigateToPremium[43]);
   navigation = obj.useNavigation();
-  let obj2 = user(navigateToPremium[22]);
+  let obj2 = user(navigateToPremium[24]);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let tmp6 = navigateToFriends(navigateToPremium[38])(user.id);
+  let tmp6 = navigateToFriends(navigateToPremium[44])(user.id);
   const displayProfile = tmp6;
-  let obj3 = user(navigateToPremium[39]);
+  let obj3 = user(navigateToPremium[45]);
   const customStatusActivity = obj3.useCustomStatusActivity();
-  let tmp8 = navigateToFriends(navigateToPremium[40])(tmp6);
-  let obj4 = user(navigateToPremium[41]);
+  let tmp8 = navigateToFriends(navigateToPremium[46])(tmp6);
+  let obj4 = user(navigateToPremium[47]);
   let items = [displayProfile];
   const stateFromStores = obj4.useStateFromStores(items, () => displayProfile.getStatus());
-  const tmp10 = navigateToFriends(navigateToPremium[42])({ user, displayProfile: tmp6 });
+  const tmp10 = navigateToFriends(navigateToPremium[48])({ user, displayProfile: tmp6 });
   const primaryColor = tmp10.primaryColor;
   UserProfileSections = tmp11;
   ({ theme, secondaryColor } = tmp10);
-  let obj5 = user(navigateToPremium[43]);
+  let obj5 = user(navigateToPremium[49]);
   const userProfileColors = obj5.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const containerBackground = userProfileColors.containerBackground;
   const containerBorderColor = userProfileColors.containerBorderColor;
@@ -972,55 +1126,66 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const obj = showYouAccountActionSheet;
     const result = obj.showYouAccountActionSheet();
   }, items1);
-  let obj7 = user(navigateToPremium[44]);
+  let obj7 = user(navigateToPremium[50]);
   const enabled = obj7.useVirtualCurrencyMobileEnabled().enabled;
   let tmp15 = navigateToShop;
   [obj8, tmp17] = navigateToShop(initialTab.useState(null), 2);
   let c14 = tmp17;
   const tmp16 = navigateToShop(initialTab.useState(null), 2);
-  let obj9 = user(navigateToPremium[45]);
+  let obj9 = user(navigateToPremium[51]);
   const shouldShowExpiringTrialOfferCard = obj9.useShouldShowExpiringTrialOfferCard();
-  let obj10 = user(navigateToPremium[41]);
+  let obj10 = user(navigateToPremium[47]);
   let items2 = [customStatusActivity];
   const stateFromStores1 = obj10.useStateFromStores(items2, () => UserProfileStore.getFirstWishlistId(user.id));
-  const obj11 = user(navigateToPremium[46]);
+  const obj11 = user(navigateToPremium[52]);
   const displayableBoardWidgets = obj11.useDisplayableBoardWidgets(user.id);
-  const obj12 = user(navigateToPremium[47]);
-  const isMobileGameCollectionExperimentEnabled = obj12.useIsMobileGameCollectionExperimentEnabled("YouScreenUserProfileContent");
-  const obj13 = user(navigateToPremium[48]);
-  const tmp21 = displayableBoardWidgets.length > 0 || obj13.useCanConjureVibegrationsCustomWidget("YouScreenUserProfileContent", isMobileGameCollectionExperimentEnabled);
-  closure_17 = tmp21;
-  let tmp4Result = tmp4(tmp2[49]);
+  const obj12 = user(navigateToPremium[53]);
+  const tmp20 = displayableBoardWidgets.length > 0 || obj12.useCanConjureCustomWidget("YouScreenUserProfileContent");
+  closure_17 = tmp20;
+  let tmp4Result = tmp4(tmp2[54]);
   const isRecentActivityMobileEnabled = tmp4Result.useIsRecentActivityMobileEnabled("YouScreenUserProfileContent");
-  const tmp4Result9 = tmp4(tmp2[50]);
-  const profileTabIndices = tmp4Result9.useProfileTabIndices(tmp21, isRecentActivityMobileEnabled, true);
+  const tmp4Result10 = tmp4(tmp2[55]);
+  const profileTabIndices = tmp4Result10.useProfileTabIndices(tmp20, isRecentActivityMobileEnabled, true);
   const boardTabIndex = profileTabIndices.boardTabIndex;
   const activityTabIndex = profileTabIndices.activityTabIndex;
   const wishlistTabIndex = profileTabIndices.wishlistTabIndex;
+  let MAIN = initialTab;
+  if (null != initialTab) {
+    MAIN = initialTab;
+    const obj13 = { wishlistTabIndex, boardTabIndex, activityTabIndex };
+    const tmp4Result11 = tmp4(tmp2[55]);
+    if (tmp4Result11.getProfileTabSectionIndex(initialTab, obj13) < 0) {
+      MAIN = UserProfileSections.MAIN;
+    }
+  }
   const tmp15Result = tmp15(obj6.useState(0), 2);
-  const pageWidth = tmp15Result[0];
-  let closure_23 = tmp15Result[1];
+  pageWidth = tmp15Result[0];
+  closure_24 = tmp15Result[1];
   const callback1 = obj6.useCallback((nativeEvent) => {
-    closure_23(nativeEvent.nativeEvent.layout.width);
+    closure_24(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const tmp4Result10 = tmp4(tmp2[51]);
-  const pageHeights1 = tmp4Result10.usePageHeights();
-  const handlePageContentSize = pageHeights1.handlePageContentSize;
-  const items3 = [trackUserProfileAction];
+  const tmp4Result12 = tmp4(tmp2[56]);
+  const pageHeights1 = tmp4Result12.usePageHeights();
+  handlePageContentSize = pageHeights1.handlePageContentSize;
+  const items3 = [trackUserProfileAction, navigation, initialTab];
   const pageHeights = pageHeights1.pageHeights;
   const callback2 = obj6.useCallback((section) => {
     const obj = { action: "PRESS_SECTION", section };
     trackUserProfileAction(obj);
+    if (section !== initialTab) {
+      const obj2 = { initialTab: section };
+      navigation.setParams(obj2);
+    }
   }, items3);
-  const tmp4Result11 = tmp4(tmp2[50]);
-  const profileSectionTabs = tmp4Result11.useProfileSectionTabs({ initialUserProfileSection: initialTab, wishlistTabIndex, boardTabIndex, activityTabIndex, onTabChange: callback2 });
-  const activeProfileTabSection = profileSectionTabs.activeProfileTabSection;
-  const setActiveProfileTabSection = profileSectionTabs.setActiveProfileTabSection;
-  const restoreActiveIndex = profileSectionTabs.restoreActiveIndex;
-  const isVisible = tmp30;
+  const tmp4Result13 = tmp4(tmp2[55]);
+  const profileSectionTabs = tmp4Result13.useProfileSectionTabs({ initialUserProfileSection: MAIN, wishlistTabIndex, boardTabIndex, activityTabIndex, onTabChange: callback2 });
+  activeProfileTabSection = profileSectionTabs.activeProfileTabSection;
+  setActiveProfileTabSection = profileSectionTabs.setActiveProfileTabSection;
+  restoreActiveIndex = profileSectionTabs.restoreActiveIndex;
+  isVisible = tmp30;
   const items4 = [customStatusActivity, tmp17];
   ({ handleTabChange, activeProfileTabSectionIndex } = profileSectionTabs);
-  const callback3 = obj6.useCallback(() => {
+  callback3 = obj6.useCallback(() => {
     let tmp2 = null;
     const tmp = c14;
     if (null == customStatusActivity) {
@@ -1057,7 +1222,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const tmp6 = navigateToPremium;
     if (tmp3Result) {
       const obj4 = { navigateToPremium: tmp6, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(12667), obj4);
+      tmp3Result = tmp3(tmp4(12930), obj4);
     }
     items2[1] = tmp3Result;
     items2[2] = enabled && authStore2(BalanceWidgetMenuDefault, {});
@@ -1110,7 +1275,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     items[1] = tmp4(tmp14, obj3);
     return tmp(tmp2, obj);
   }, items7);
-  const items8 = [callback4, callback5, handlePageContentSize, tmp21, isRecentActivityMobileEnabled, boardTabIndex, activityTabIndex, wishlistTabIndex, user, activeProfileTabSection, containerBackground, containerBorderColor];
+  const items8 = [callback4, callback5, handlePageContentSize, tmp20, isRecentActivityMobileEnabled, boardTabIndex, activityTabIndex, wishlistTabIndex, user, activeProfileTabSection, containerBackground, containerBorderColor];
   const memo = obj6.useMemo(() => {
     let intl;
     let intl2;
@@ -1136,7 +1301,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     if (tmp5) {
       const push = items.push;
       const obj3 = { id: "board", label: intl2.string(intl5.t.laViwx), page: authStore2(hasOwnProperty, obj4, boardTabIndex) };
-      intl2 = tmp(1127).intl;
+      intl2 = tmp(1126).intl;
       obj4 = {
         scrollEnabled: false,
         onContentSizeChange(arg0, arg1) {
@@ -1151,7 +1316,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     if (tmp13) {
       const push2 = items.push;
       const obj6 = { id: "activity", label: intl3.string(intl5.t.chq59f), page: authStore2(hasOwnProperty, obj7, activityTabIndex) };
-      intl3 = tmp(1127).intl;
+      intl3 = tmp(1126).intl;
       obj7 = {
         scrollEnabled: false,
         onContentSizeChange(arg0, arg1) {
@@ -1164,7 +1329,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     }
     const push3 = items.push;
     const obj9 = { id: "wishlist", label: intl4.string(intl5.t["7lZ31J"]), page: authStore2(hasOwnProperty, obj10, wishlistTabIndex) };
-    intl4 = tmp(1127).intl;
+    intl4 = tmp(1126).intl;
     obj10 = {
       scrollEnabled: false,
       onContentSizeChange(arg0, arg1) {
@@ -1175,38 +1340,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     push3(obj9);
     return items;
   }, items8);
-  const tmp4Result12 = tmp4(tmp2[64]);
-  const obj14 = { pageWidth, defaultIndex: activeProfileTabSectionIndex, itemSpacing: tmp(tmp2[30]).space.PX_24, items: memo, onPageChange: handleTabChange };
-  segmentedControlState = tmp4Result12.useSegmentedControlState(obj14);
-  const tmp4Result13 = tmp4(tmp2[51]);
-  const pagerFillHeight = tmp4Result13.usePagerFillHeight(scrollPosition);
+  const tmp4Result14 = tmp4(tmp2[69]);
+  const obj14 = { pageWidth, defaultIndex: activeProfileTabSectionIndex, itemSpacing: tmp(tmp2[23]).space.PX_24, items: memo, onPageChange: handleTabChange };
+  segmentedControlState = tmp4Result14.useSegmentedControlState(obj14);
+  const tmp4Result15 = tmp4(tmp2[56]);
+  const pagerFillHeight = tmp4Result15.usePagerFillHeight(scrollPosition);
   const items9 = [segmentedControlState, restoreActiveIndex];
   ({ pagerRef, fillHeight, measureFill } = pagerFillHeight);
   const layoutEffect = obj6.useLayoutEffect(() => {
     restoreActiveIndex(segmentedControlState);
   }, items9);
-  const tmp4Result14 = tmp4(tmp2[51]);
-  const pagesHeightStyle = tmp4Result14.usePagesHeightStyle(segmentedControlState, pageHeights, fillHeight);
-  closure_33 = obj6.useRef(segmentedControlState.setActiveIndex);
-  const items10 = [segmentedControlState];
-  const effect1 = obj6.useEffect(() => {
-    closure_33.current = segmentedControlState.setActiveIndex;
-  }, items10);
-  const items11 = [initialTab, navigation, wishlistTabIndex, setActiveProfileTabSection];
-  const tmp4Result15 = tmp4(tmp2[37]);
-  const focusEffect = tmp4Result15.useFocusEffect(obj6.useCallback(() => {
+  const tmp4Result16 = tmp4(tmp2[56]);
+  const pagesHeightStyle = tmp4Result16.usePagesHeightStyle(segmentedControlState, pageHeights, fillHeight);
+  const items10 = [MAIN, activeProfileTabSection, navigation, setActiveProfileTabSection];
+  const tmp4Result17 = tmp4(tmp2[43]);
+  const focusEffect = tmp4Result17.useFocusEffect(obj6.useCallback(() => {
     let closure_0;
-    let ref;
-    if (undefined !== initialTab) {
-      let num = 0;
-      if (tmp === hasCustomProfileTheme.WISHLIST) {
-        num = wishlistTabIndex;
-      }
+    const tmp2 = undefined !== MAIN && tmp !== activeProfileTabSection;
+    if (tmp2) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        setActiveProfileTabSection(initialTab === UserProfileSections.WISHLIST ? UserProfileSections.WISHLIST : UserProfileSections.MAIN);
-        ref.current(num, false, true);
-        navigation.setParams({ initialTab: "call" });
+        setActiveProfileTabSection(MAIN);
       }, 80);
     }
     return () => {
@@ -1226,52 +1380,51 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         }
       }
     };
-  }, items11));
-  const obj15 = { style, children: c14(LayerScope, obj26) };
-  const View = tmp(tmp2[70]).View;
-  const obj16 = { style: items12, children: items13 };
-  items12 = [tmp3.profileContentWrapper, { paddingTop: 0 }];
+  }, items10));
+  const obj15 = { style, children: c14(LayerScope, obj25) };
+  const View = tmp(tmp2[74]).View;
+  const obj16 = { style: items11, children: items12 };
+  items11 = [tmp3.profileContentWrapper, { paddingTop: 0 }];
   const obj17 = { user, backgroundColor: avatarBackground, statusStyle: { backgroundColor: statusBackground }, animate: flag };
-  LayerScope = tmp4(tmp2[71]).LayerScope;
-  items13 = [c14(closure_17, obj17), , , ];
-  const obj18 = { ref, customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: items14, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true, placeholderText: labelResult, prompt: obj8 };
-  items14 = [, ];
-  ({ customStatusBubble: arr16[0], customStatusBubbleInset: arr16[1] } = tmp3);
-  items13[1] = c14(tmp(tmp2[65]), obj18);
-  const obj19 = { style: items15, children: items16 };
-  items15 = [, ];
-  ({ primaryInfo: arr17[0], profileContent: arr17[1] } = tmp3);
-  const obj20 = { user, pronouns, badges: tmp8, badgeContainerBackground: containerBackground, onPressDisplayName: callback, displayNameAccessibilityHint: "" + formatToPlainStringResult + ", " + intl2.string(tmp4(tmp2[31]).t.C6COaT), themeType: containerBackground.YOU_SCREEN, showChevron: true, canOpenBadgeDirectory: true };
+  LayerScope = tmp4(tmp2[75]).LayerScope;
+  items12 = [c14(closure_17, obj17), , , ];
+  const obj18 = { ref, customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: items13, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true, placeholderText: labelResult, prompt: obj8 };
+  items13 = [, ];
+  ({ customStatusBubble: arr15[0], customStatusBubbleInset: arr15[1] } = tmp3);
+  items12[1] = c14(tmp(tmp2[70]), obj18);
+  let isLoaded;
+  const tmp45 = MAIN;
+  if (tmp6 != null) {
+    isLoaded = tmp6.isLoaded;
+  }
+  const obj19 = { isProfileLoaded: true === isLoaded, navigateToProfileCustomization, primaryInfoProps: obj20 };
+  obj20 = { user, pronouns, badges: tmp8, badgeContainerBackground: containerBackground, onPressDisplayName: callback, displayNameAccessibilityHint: "" + formatToPlainStringResult + ", " + intl2.string(tmp4(tmp2[28]).t.C6COaT), themeType: containerBackground.YOU_SCREEN, showChevron: true, canOpenBadgeDirectory: true };
   pronouns = undefined;
-  const tmpResult = tmp(tmp2[67]);
   if (tmp6 != null) {
     pronouns = tmp6.pronouns;
   }
-  let intl = tmp4(tmp2[31]).intl;
+  let intl = tmp4(tmp2[28]).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const obj21 = { status: tmp4Result16.getStatusLabel(stateFromStores) };
-  const prop = tmp4(tmp2[31]).t["er+FRD"];
-  tmp4Result16 = tmp4(tmp2[66]);
+  const obj21 = { status: tmp4Result18.getStatusLabel(stateFromStores) };
+  const prop = tmp4(tmp2[28]).t["er+FRD"];
+  tmp4Result18 = tmp4(tmp2[71]);
   formatToPlainStringResult = formatToPlainString(prop, obj21);
-  intl2 = tmp4(tmp2[31]).intl;
-  items16 = [c14(tmpResult, obj20), ];
-  const obj22 = { navigateToProfileCustomization, isProfileLoaded: null != tmp6 };
-  items16[1] = c14(wishlistTabIndex, obj22);
-  items13[2] = shouldShowExpiringTrialOfferCard(navigation, obj19);
-  const obj23 = { style: { flex: 1 }, onLayout: callback1, children: items17 };
-  const obj24 = { style: tmp3.profileTablist, children: c14(Tabs, obj25) };
-  obj25 = { state: segmentedControlState, variant: str };
+  intl2 = tmp4(tmp2[28]).intl;
+  items12[2] = c14(tmp45, obj19);
+  const obj22 = { style: { flex: 1 }, onLayout: callback1, children: items14 };
+  const obj23 = { style: tmp3.profileTablist, children: c14(Tabs, obj24) };
+  obj24 = { state: segmentedControlState, variant: str };
   str = undefined;
-  Tabs = tmp4(tmp2[68]).Tabs;
+  Tabs = tmp4(tmp2[72]).Tabs;
   if (null != primaryColor) {
     str = "overlay";
   }
-  obj26 = { zIndex: 1, children: shouldShowExpiringTrialOfferCard(navigation, obj16) };
-  items17 = [c14(navigation, obj24), ];
-  const obj27 = { ref: pagerRef, onLayout: measureFill, style: pagesHeightStyle, children: c14(tmp4(tmp2[69]).SegmentedControlPages, { state: segmentedControlState }) };
-  const View2 = tmp(tmp2[70]).View;
-  items17[1] = c14(View2, obj27);
-  items13[3] = shouldShowExpiringTrialOfferCard(navigation, obj23);
+  obj25 = { zIndex: 1, children: shouldShowExpiringTrialOfferCard(navigation, obj16) };
+  items14 = [c14(navigation, obj23), ];
+  const obj26 = { ref: pagerRef, onLayout: measureFill, style: pagesHeightStyle, children: c14(tmp4(tmp2[73]).SegmentedControlPages, { state: segmentedControlState }) };
+  const View2 = tmp(tmp2[74]).View;
+  items14[1] = c14(View2, obj26);
+  items12[3] = shouldShowExpiringTrialOfferCard(navigation, obj22);
   return c14(View, obj15);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/YouScreenUserProfileContent.tsx");

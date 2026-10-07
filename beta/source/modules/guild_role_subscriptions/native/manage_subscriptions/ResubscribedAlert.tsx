@@ -1,20 +1,20 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 15036
+// Function ID: 15037
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 14752, 1189, 4833, 5301, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 15037, 1188, 4886, 5783, 2]
 
-// Module 14751 (ResubscribedAlert)
+// Module 15036 (ResubscribedAlert)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AlertDefault from "Alert" /* 5301 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14752 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AlertDefault from "Alert" /* 5783 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15037 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   onClose = onClose.onClose;
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t["NX+WJN"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -73,7 +73,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   const centerText = tmp4.centerText;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl4.t.oPV2cy);
     cResult[4] = stringResult1;
     tmp15 = stringResult1;
@@ -98,7 +98,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   const centerText2 = tmp4.centerText;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(intl4.t.DdRizV);
     cResult[8] = stringResult2;
     tmp23 = stringResult2;

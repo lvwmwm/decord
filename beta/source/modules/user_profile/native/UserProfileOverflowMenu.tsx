@@ -1,64 +1,61 @@
-// Module ID: 12546
-// Function ID: 12547
+// Module ID: 12789
+// Function ID: 12790
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 4853, 2051, 4482, 2102, 6630, 1086, 4858, 9589, 21, 504, 12547, 12553, 12554, 7639, 6584, 6604, 7635, 7663, 7664, 12555, 12556, 12557, 9164, 6610, 7628, 1127, 4850, 4801, 5040, 12563, 1987, 9207, 9591, 1261, 7856, 9590, 12564, 12564, 8086, 1370, 12027, 1253, 9206, 2027, 6611, 4680, 4530, 8318, 8587, 11500, 6617, 12565, 4570, 7366, 12561, 7362, 7364, 588, 12566, 2]
+// Dependencies: [32, 19, 17, 4906, 2051, 4519, 2103, 6707, 1085, 4911, 9816, 21, 504, 12790, 12796, 12797, 7861, 6657, 6681, 7857, 7885, 7886, 12798, 12799, 12800, 9388, 6687, 7850, 1126, 4903, 4854, 5093, 12806, 1987, 9434, 9818, 1260, 8080, 9817, 12807, 12807, 8279, 1369, 12286, 1252, 9433, 2028, 6688, 4722, 4567, 2016, 8514, 8794, 11756, 6694, 12808, 4612, 7579, 12804, 7575, 7577, 587, 12809, 2]
 // Exports: default
 
-// Module 12546 (UserProfileOverflowMenu)
+// Module 12789 (UserProfileOverflowMenu)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
-import CallConstants from "CallConstants" /* 4858 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import Constants2 from "Constants" /* 6630 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7856 */;
-import ReportModals from "ReportModals" /* 8086 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 9206 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9207 */;
-import getApplicationInstallURL2 from "getApplicationInstallURL" /* 11500 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12027 */;
-import GuildInviteUtils from "GuildInviteUtils" /* 12547 */;
-import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 12557 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12561 */;
-import BotReportChooser from "BotReportChooser" /* 12564 */;
-import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 12565 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import CallConstants from "CallConstants" /* 4911 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import Constants2 from "Constants" /* 6707 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8080 */;
+import ReportModals from "ReportModals" /* 8279 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 9433 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
+import getApplicationInstallURL2 from "getApplicationInstallURL" /* 11756 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12286 */;
+import GuildInviteUtils from "GuildInviteUtils" /* 12790 */;
+import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 12800 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12804 */;
+import BotReportChooser from "BotReportChooser" /* 12807 */;
+import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 12808 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import Constants from "Constants" /* 1086 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 9589 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import Constants from "Constants" /* 1085 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 9816 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
-
-let constants2;
 
 let closure_12;
 let closure_14;
 let closure_15;
-let closure_16;
+let closure_17;
 let closure_18;
 let closure_19;
 let closure_20;
-let closure_21;
 let map1;
 let tmp3;
 let unpackModuleId;
-const discord_common_AnalyticsUtils = tmp3(1261);
+const discord_common_AnalyticsUtils = tmp3(1260);
 let View = react_native.View;
 const UserProfileThemeTypes = Constants2.UserProfileThemeTypes;
-({ AnalyticEvents: unpackModuleId, ApplicationFlags: closure_12, AVATAR_MAX_SIZE: map1, ChannelTypesSets: closure_14, NOOP: closure_15, RelationshipTypes: closure_16 } = Constants);
+({ AnalyticEvents: unpackModuleId, AVATAR_MAX_SIZE: closure_12, ChannelTypesSets: map1, NOOP: closure_14, RelationshipTypes: closure_15 } = Constants);
 const ParticipantTypes = CallConstants.ParticipantTypes;
-({ BLOCK_CONFIRMATION_ACTION_SHEET_KEY: closure_18, IGNORE_CONFIRMATION_ACTION_SHEET_KEY: closure_19 } = RestrictionConfirmationConstants);
-({ jsx: closure_20, jsxs: closure_21 } = Fragment);
+({ BLOCK_CONFIRMATION_ACTION_SHEET_KEY: closure_17, IGNORE_CONFIRMATION_ACTION_SHEET_KEY: closure_18 } = RestrictionConfirmationConstants);
+({ jsx: closure_19, jsxs: closure_20 } = Fragment);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileOverflowMenu.tsx");
 
 export default function UserProfileOverflowMenu(user) {
@@ -86,7 +83,6 @@ export default function UserProfileOverflowMenu(user) {
   let obj23;
   let obj24;
   let relationshipType;
-  let showUserProfile;
   let tmp62;
   user = user.user;
   const currentUser = user.currentUser;
@@ -99,7 +95,7 @@ export default function UserProfileOverflowMenu(user) {
   let guildId;
   let canRing;
   let userIsInCall;
-  constants2 = undefined;
+  let showUserProfile;
   let id2;
   let guildId1;
   let closure_17;
@@ -191,7 +187,7 @@ export default function UserProfileOverflowMenu(user) {
   items4[1] = id1;
   items4[2] = context;
   items4[3] = analyticsLocations;
-  constants2 = useCallback((showGuildProfile) => {
+  showUserProfile = useCallback((showGuildProfile) => {
     let id;
     const obj = { showGuildProfile, userId: user.id, channelId: id, sourceAnalyticsLocations: analyticsLocations, ignoreBlockedSpeedBump: true };
     const tmp = showUserProfileActionSheetDefault;
@@ -209,8 +205,8 @@ export default function UserProfileOverflowMenu(user) {
     guildId1 = channel.getGuildId();
   }
   let tmp28 = isShopThisLookMobileEnabled;
-  const BLOCKED = guildId1.BLOCKED;
-  const tmp27 = guildId1;
+  const BLOCKED = id2.BLOCKED;
+  const tmp27 = id2;
   if (isShopThisLookMobileEnabled) {
     tmp28 = equippedCollectibleSkuIds.length > 0;
   }
@@ -302,7 +298,7 @@ export default function UserProfileOverflowMenu(user) {
               trackUserProfileAction(obj);
               const obj2 = ModalActionCreatorsDefault;
               const obj3 = { userId: id2, showUserProfile };
-              obj2.pushLazy(asyncRequire(12563, dependencyMap.paths), obj3);
+              obj2.pushLazy(asyncRequire(12806, dependencyMap.paths), obj3);
               const obj4 = ActionSheetActionCreatorsDefault;
               obj4.hideActionSheet();
             }
@@ -391,8 +387,8 @@ export default function UserProfileOverflowMenu(user) {
                     impressionName: discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION
                   };
                   id = undefined;
-                  const tmp4 = asyncRequire(9590, dependencyMap.paths);
-                  const tmp5 = authStore4;
+                  const tmp4 = asyncRequire(9817, dependencyMap.paths);
+                  const tmp5 = closure_17;
                   if (channel != null) {
                     id = channel.id;
                   }
@@ -416,7 +412,7 @@ export default function UserProfileOverflowMenu(user) {
                       trackUserProfileAction(obj);
                       if (user.bot) {
                         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-                        const tmp19 = asyncRequire(12564, dependencyMap.paths);
+                        const tmp19 = asyncRequire(12807, dependencyMap.paths);
                         const BOT_REPORT_CHOOSER_KEY = BotReportChooser.BOT_REPORT_CHOOSER_KEY;
                         const obj4 = { user, entrypoint: "UserProfileOverflowMenu", contextualGuildId: tmp3, contextualChannelId: id };
                         id = undefined;
@@ -494,8 +490,8 @@ export default function UserProfileOverflowMenu(user) {
                 impressionName: discord_common_AnalyticsUtils.ImpressionNames.IGNORE_USER_CONFIRMATION
               };
               id = undefined;
-              const tmp4 = asyncRequire(9591, dependencyMap.paths);
-              const tmp5 = closure_19;
+              const tmp4 = asyncRequire(9818, dependencyMap.paths);
+              const tmp5 = authStore4;
               if (channel != null) {
                 id = channel.id;
               }
@@ -570,8 +566,8 @@ export default function UserProfileOverflowMenu(user) {
   if (user.bot) {
     if (null != application) {
       const tmpResult17 = tmp(tmp2[50]);
-      closure_18 = tmpResult17.hasApplicationFlag(application, canRing.EMBEDDED);
-      const tmpResult18 = tmp(tmp2[51]);
+      closure_18 = tmpResult17.supportsEmbeddedSurface(application, tmp(tmp2[51]).EmbeddedSurfaceType.MAIN);
+      const tmpResult18 = tmp(tmp2[52]);
       installAppPropsFromProfileApplication = tmpResult18.getInstallAppPropsFromProfileApplication(application);
       const push16 = items5.push;
       const obj18 = {
@@ -669,7 +665,7 @@ export default function UserProfileOverflowMenu(user) {
                 if (guildId != null) {
                   guildId = guildId.guildId;
                 }
-                const avatarURL = getAvatarURL(guildId, userIsInCall, true);
+                const avatarURL = getAvatarURL(guildId, canRing, true);
                 if (null != avatarURL) {
                   const obj2 = user(application[47]);
                   obj2.copy(avatarURL);
@@ -684,7 +680,7 @@ export default function UserProfileOverflowMenu(user) {
         }
         const obj4 = displayProfile;
         if (null != displayProfile) {
-          const obj5 = { canAnimate: true, size: userIsInCall };
+          const obj5 = { canAnimate: true, size: canRing };
           bannerURL = obj4.getBannerURL(obj5);
           if (null != bannerURL) {
             const push4 = items.push;
@@ -705,8 +701,8 @@ export default function UserProfileOverflowMenu(user) {
         }
         const obj7 = { options: items, key: "copy-info", header: obj8, stackingBehavior: "stack", hasIcons: false };
         obj8 = { title: intl5.string(user(tmp2[28]).t.QvQeLv) };
-        const showSimpleActionSheet = tmp(tmp2[53]).showSimpleActionSheet;
-        user(tmp2[53]);
+        const showSimpleActionSheet = tmp(tmp2[54]).showSimpleActionSheet;
+        user(tmp2[54]);
         intl5 = tmp(tmp2[28]).intl;
         let result = showSimpleActionSheet(obj7);
       };
@@ -726,7 +722,7 @@ export default function UserProfileOverflowMenu(user) {
   }
   let hasItem1 = null != channel && null != selectedChannel;
   if (hasItem1) {
-    const TEXTUAL = constants2.TEXTUAL;
+    const TEXTUAL = userIsInCall.TEXTUAL;
     hasItem1 = TEXTUAL.has(selectedChannel.type);
   }
   if (hasItem1) {
@@ -743,10 +739,10 @@ export default function UserProfileOverflowMenu(user) {
   }
   if (0 !== items5.length) {
     const obj21 = { value: analyticsLocations, children: items8 };
-    const obj22 = { ref, children: closure_20(View, obj23) };
+    const obj22 = { ref, children: installAppPropsFromProfileApplication(View, obj23) };
     const AnalyticsLocationProvider = tmp(tmp2[17]).AnalyticsLocationProvider;
-    obj23 = { style: tmp20, children: closure_20(tmp(tmp2[56]).ContextMenu, obj24) };
-    View = tmp7(tmp2[55]).View;
+    obj23 = { style: tmp20, children: installAppPropsFromProfileApplication(tmp(tmp2[57]).ContextMenu, obj24) };
+    View = tmp7(tmp2[56]).View;
     obj24 = {
       items: items7,
       onOpen() {
@@ -762,20 +758,20 @@ export default function UserProfileOverflowMenu(user) {
           let obj2;
           ref = ref.ref;
           const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-          const obj = { ref, size: "sm", variant: "secondary-overlay", accessibilityLabel: intl.string(user(application[28]).t["+zofAD"]), icon: closure_1_20(MoreHorizontalIcon, obj2) };
-          const IconButton = user(application[58]).IconButton;
+          const obj = { ref, size: "sm", variant: "secondary-overlay", accessibilityLabel: intl.string(user(application[28]).t["+zofAD"]), icon: closure_19(MoreHorizontalIcon, obj2) };
+          const IconButton = user(application[59]).IconButton;
           const merged1 = Object.assign(merged);
           intl = user(application[28]).intl;
-          obj2 = { size: "sm", color: currentUser(application[60]).colors.WHITE };
-          MoreHorizontalIcon = user(application[59]).MoreHorizontalIcon;
-          return closure_1_20(IconButton, obj);
+          obj2 = { size: "sm", color: currentUser(application[61]).colors.WHITE };
+          MoreHorizontalIcon = user(application[60]).MoreHorizontalIcon;
+          return closure_19(IconButton, obj);
         }
     };
     items7 = [items5, items6];
-    items8 = [closure_20(selectedChannel, obj22), ];
+    items8 = [installAppPropsFromProfileApplication(selectedChannel, obj22), ];
     const obj25 = { targetRef: ref, visible: isVisible, onDismiss: markAsDismissed, onPress: callback };
-    items8[1] = closure_20(currentUser(tmp2[61]), obj25);
-    tmp62 = closure_21(AnalyticsLocationProvider, obj21);
+    items8[1] = installAppPropsFromProfileApplication(currentUser(tmp2[62]), obj25);
+    tmp62 = closure_20(AnalyticsLocationProvider, obj21);
   } else {
     tmp62 = null;
   }

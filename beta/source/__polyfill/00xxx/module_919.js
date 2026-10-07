@@ -1,22 +1,32 @@
 // Module ID: 919
 // Function ID: 920
-// Dependencies: [920]
-// Exports: getActivationStart
+// Dependencies: [915]
+// Exports: getNavigationEntry
 
 // Module 919
-import _mod920 from "module_920" /* 920 */;
+import _mod915 from "module_915" /* 915 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getActivationStart = () => {
-  const obj = _mod920;
-  const navigationEntry = obj.getNavigationEntry();
-  let num;
-  if (navigationEntry != null) {
-    num = navigationEntry.activationStart;
+export const getNavigationEntry = () => {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
   }
-  if (num == null) {
-    num = 0;
+  const _performance = _mod915.WINDOW.performance;
+  let first;
+  if (_performance != null) {
+    const getEntriesByType = _performance.getEntriesByType;
+    if (getEntriesByType != null) {
+      first = getEntriesByType("navigation")[0];
+    }
   }
-  return num;
+  if (flag) {
+    if (first) {
+      if (first.responseStart > 0) {
+        const _performance2 = performance;
+      }
+    }
+  }
+  return first;
 };

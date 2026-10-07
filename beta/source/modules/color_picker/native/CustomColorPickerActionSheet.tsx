@@ -1,21 +1,21 @@
-// Module ID: 14141
-// Function ID: 14142
+// Module ID: 14422
+// Function ID: 14423
 // Name: CustomColorPickerActionSheet
-// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 14142, 1104, 4570, 14143, 4685, 684, 4801, 6572, 1127, 6571, 5282, 6021, 12, 14144, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 14423, 1103, 4612, 14424, 4727, 683, 4854, 6645, 1126, 6644, 5594, 6098, 12, 14425, 2]
 
-// Module 14141 (CustomColorPickerActionSheet)
+// Module 14422 (CustomColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14143 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 14424 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp4 = closure_9();
   if (cResult[0] !== color) {
-    const tmpResult = tmp(1104);
+    const tmpResult = tmp(1103);
     const int2hexResult = tmpResult.int2hex(color);
     cResult[0] = color;
     cResult[1] = int2hexResult;
@@ -191,7 +191,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult9 = tmp(1104);
+  const tmpResult9 = tmp(1103);
   let int2hsvResult = tmpResult9.int2hsv(color);
   ({ h, s, v } = int2hsvResult);
   [value, dependencyMap] = sharedValue.useState(tmp5);
@@ -199,7 +199,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     try {
       let tmp15;
       if (cResult[3] !== value) {
-        const tmpResult10 = tmp(1104);
+        const tmpResult10 = tmp(1103);
         const hex2intResult = tmpResult10.hex2int(value);
         tmp15 = hex2intResult;
         cResult[3] = value;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp18;
       const _Symbol2 = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult11 = tmp(1104);
+        const tmpResult11 = tmp(1103);
         const hex2intResult1 = tmpResult11.hex2int(closure_8);
         cResult[5] = hex2intResult1;
         tmp18 = hex2intResult1;
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp11;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmpResult12 = tmp(1104);
+      const tmpResult12 = tmp(1103);
       const hex2intResult2 = tmpResult12.hex2int(closure_8);
       cResult[2] = hex2intResult2;
       tmp11 = hex2intResult2;
@@ -235,11 +235,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp14 = tmp11;
   }
   _slicedToArray = tmp14;
-  const tmpResult13 = tmp(4570);
+  const tmpResult13 = tmp(4612);
   sharedValue = tmpResult13.useSharedValue(h);
-  const tmpResult14 = tmp(4570);
+  const tmpResult14 = tmp(4612);
   const sharedValue1 = tmpResult14.useSharedValue(s);
-  const tmpResult15 = tmp(4570);
+  const tmpResult15 = tmp(4612);
   const sharedValue2 = tmpResult15.useSharedValue(v);
   if (cResult[6] === str) {
     if (cResult[7] === color) {
@@ -333,7 +333,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     }
                                   }
                                   const obj4 = { hue: sharedValue, saturation: sharedValue1, value: sharedValue2, onPanFinalize: tmp24 };
-                                  const tmp65 = sharedValue2(value(14144), obj4);
+                                  const tmp65 = sharedValue2(value(14425), obj4);
                                   cResult[69] = sharedValue;
                                   cResult[70] = tmp24;
                                   cResult[71] = sharedValue1;
@@ -357,8 +357,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     let hsv2intResult = tmp14;
                     if (null == value) {
-                      const hsv2int = tmp(1104).hsv2int;
-                      tmp(1104);
+                      const hsv2int = tmp(1103).hsv2int;
+                      tmp(1103);
                       value = sharedValue.get();
                       let value2 = sharedValue1.get();
                       hsv2intResult = hsv2int(value, value2, sharedValue2.get());
@@ -442,11 +442,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         if (cResult[47] === sharedValue2) {
                           tmp37 = cResult[48];
                         }
-                        BottomSheet = tmp(6572).BottomSheet;
+                        BottomSheet = tmp(6645).BottomSheet;
                         const _Symbol3 = Symbol;
                         if (cResult[49] === Symbol.for("react.memo_cache_sentinel")) {
-                          const intl = tmp(1127).intl;
-                          const stringResult = intl.string(tmp(1127).t.WTqQ5e);
+                          const intl = tmp(1126).intl;
+                          const stringResult = intl.string(tmp(1126).t.WTqQ5e);
                           cResult[49] = stringResult;
                           tmp38 = stringResult;
                         } else {
@@ -454,8 +454,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const _Symbol4 = Symbol;
                         if (cResult[50] === Symbol.for("react.memo_cache_sentinel")) {
-                          const intl2 = tmp(1127).intl;
-                          const stringResult1 = intl2.string(tmp(1127).t.XqMe3N);
+                          const intl2 = tmp(1126).intl;
+                          const stringResult1 = intl2.string(tmp(1126).t.XqMe3N);
                           cResult[50] = stringResult1;
                           tmp40 = stringResult1;
                         } else {
@@ -470,8 +470,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           const container = tmp4.container;
                           const _Symbol5 = Symbol;
                           if (cResult[54] === Symbol.for("react.memo_cache_sentinel")) {
-                            const intl3 = tmp(1127).intl;
-                            const stringResult2 = intl3.string(tmp(1127).t["ozfa/h"]);
+                            const intl3 = tmp(1126).intl;
+                            const stringResult2 = intl3.string(tmp(1126).t["ozfa/h"]);
                             cResult[54] = stringResult2;
                             tmp46 = stringResult2;
                           } else {
@@ -518,14 +518,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             tmp21 = closure_10;
                           }
                           const obj6 = { accessibilityLabel: tmp46, value, onChange: tmp36, maxLength: 7 };
-                          const tmp50 = sharedValue2(tmp(6021).TextInput, obj6);
+                          const tmp50 = sharedValue2(tmp(6098).TextInput, obj6);
                           cResult[55] = value;
                           cResult[56] = tmp36;
                           cResult[57] = tmp50;
                           tmp48 = tmp50;
                         }
-                        const obj7 = { title: tmp38, trailing: sharedValue2(tmp(5282).Button, obj8) };
-                        const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+                        const obj7 = { title: tmp38, trailing: sharedValue2(tmp(5594).Button, obj8) };
+                        const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
                         obj8 = { variant: str, size: "sm", text: tmp40, onPress: tmp35 };
                         const tmp44 = sharedValue2(BottomSheetTitleHeader, obj7);
                         cResult[51] = str;
@@ -585,8 +585,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             onSelect(closure_3);
           }
         }
-        const hsv = _modDef684.hsv;
-        _modDef684;
+        const hsv = _modDef683.hsv;
+        _modDef683;
         value = sharedValue.get();
         const value2 = sharedValue1.get();
         const hsvResult = hsv(value, value2, sharedValue2.get());
@@ -649,9 +649,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     closure_2(obj2.rgbToHex(hsvToRgbWorkletResult[0], hsvToRgbWorkletResult[1], hsvToRgbWorkletResult[2]));
   }
   let tmp = closure_9();
-  let obj = onSelect(1104);
+  let obj = onSelect(1103);
   const int2hexResult = obj.int2hex(color);
-  let obj2 = onSelect(1104);
+  let obj2 = onSelect(1103);
   let int2hsvResult = obj2.int2hsv(color);
   let obj3 = sharedValue;
   ({ h, s, v } = int2hsvResult);
@@ -673,11 +673,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }, items);
-  const obj4 = onSelect(4570);
+  const obj4 = onSelect(4612);
   sharedValue = obj4.useSharedValue(h);
-  const obj6 = onSelect(4570);
+  const obj6 = onSelect(4612);
   const sharedValue1 = obj6.useSharedValue(s);
-  const obj8 = onSelect(4570);
+  const obj8 = onSelect(4612);
   const sharedValue2 = obj8.useSharedValue(v);
   let combined;
   if (suggestedColors != null) {
@@ -695,8 +695,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         onSelect(memo);
       }
     }
-    const hsv = _modDef684.hsv;
-    _modDef684;
+    const hsv = _modDef683.hsv;
+    _modDef683;
     value = sharedValue.get();
     const value2 = sharedValue1.get();
     const hsvResult = hsv(value, value2, sharedValue2.get());
@@ -709,16 +709,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj.hideActionSheet();
   }, items2);
   const obj5 = { onDismiss, startExpanded: true, header: sharedValue2(BottomSheetTitleHeader, obj7), children: tmp13(tmp14, obj10) };
-  BottomSheet = tmp2(6572).BottomSheet;
-  obj7 = { title: intl.string(onSelect(1127).t.WTqQ5e), trailing: sharedValue2(Button, obj9) };
-  BottomSheetTitleHeader = tmp2(6571).BottomSheetTitleHeader;
-  intl = tmp2(1127).intl;
-  obj9 = { variant: actionButtonVariant, size: "sm", text: intl2.string(onSelect(1127).t.XqMe3N), onPress: callback1 };
-  Button = tmp2(5282).Button;
-  intl2 = tmp2(1127).intl;
+  BottomSheet = tmp2(6645).BottomSheet;
+  obj7 = { title: intl.string(onSelect(1126).t.WTqQ5e), trailing: sharedValue2(Button, obj9) };
+  BottomSheetTitleHeader = tmp2(6644).BottomSheetTitleHeader;
+  intl = tmp2(1126).intl;
+  obj9 = { variant: actionButtonVariant, size: "sm", text: intl2.string(onSelect(1126).t.XqMe3N), onPress: callback1 };
+  Button = tmp2(5594).Button;
+  intl2 = tmp2(1126).intl;
   obj10 = { style: tmp.container, children: items3 };
   const obj11 = {
-    accessibilityLabel: intl3.string(onSelect(1127).t["ozfa/h"]),
+    accessibilityLabel: intl3.string(onSelect(1126).t["ozfa/h"]),
     value,
     onChange(combined) {
       let text = combined;
@@ -737,8 +737,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     },
     maxLength: 7
   };
-  const TextInput = tmp2(6021).TextInput;
-  intl3 = tmp2(1127).intl;
+  const TextInput = tmp2(6098).TextInput;
+  intl3 = tmp2(1126).intl;
   items3 = [sharedValue2(TextInput, obj11), , ];
   const obj12 = {
     suggestedColors: obj17.uniq(combined),
@@ -762,8 +762,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp15 = closure_10;
   const tmp16 = value;
   if (null == value) {
-    const hsv2int = tmp2(1104).hsv2int;
-    onSelect(1104);
+    const hsv2int = tmp2(1103).hsv2int;
+    onSelect(1103);
     value = sharedValue.get();
     let value2 = sharedValue1.get();
     memo = hsv2int(value, value2, sharedValue2.get());
@@ -780,7 +780,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       runOnJSResult(obj2);
     }
   };
-  items3[2] = sharedValue2(tmp16(14144), obj13);
+  items3[2] = sharedValue2(tmp16(14425), obj13);
   return sharedValue2(BottomSheet, obj5);
 });
 let result = size.fileFinishedImporting("modules/color_picker/native/CustomColorPickerActionSheet.tsx");

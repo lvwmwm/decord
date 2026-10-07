@@ -1,11 +1,11 @@
-// Module ID: 12988
-// Function ID: 12989
+// Module ID: 13252
+// Function ID: 13253
 // Dependencies: [2]
 
-// Module 12988
+// Module 13252
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FistBumpSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/d163032dc5a78c43be43464cfcd46aff3a9ec459fbc4dfcc93f84008eda4c902.png";
-export const metadata = { fileBytes: 82753 };
+export default "https://cdn.discordapp.com/assets/content/fc52d89c5f4d79c60776e335eb7688442f9d87aefe685a34572c597dcf9471b7.png";
+export const metadata = { fileBytes: 82750 };

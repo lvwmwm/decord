@@ -1,22 +1,22 @@
-// Module ID: 7372
-// Function ID: 7373
+// Module ID: 7585
+// Function ID: 7586
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7022, 7019, 1086, 21, 4837, 588, 558, 576, 1491, 504, 7337, 7355, 7339, 4833, 1127, 5292, 7373, 7374, 7377, 5975, 5918, 2]
+// Dependencies: [19, 17, 7103, 7105, 1085, 21, 4890, 587, 558, 576, 1490, 504, 7550, 7568, 7552, 4886, 1126, 5605, 7586, 7587, 7590, 6052, 5995, 2]
 
-// Module 7372 (ConversationListItem)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import ConversationConstants from "ConversationConstants" /* 7019 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 7337 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7339 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7355 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 7374 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 7377 */;
+// Module 7585 (ConversationListItem)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import ConversationConstants from "ConversationConstants" /* 7105 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 7550 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7552 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7568 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 7587 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 7590 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConversationsStore from "ConversationsStore" /* 7022 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7103 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,11 +59,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
   const cResult = obj.c(50);
   conversation = conversation.conversation;
   const tmp4 = closure_12();
-  let obj2 = conversation(1491);
+  let obj2 = conversation(1490);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp7 = ConversationsStore;
-    const items = [ConversationsStore];
+    let tmp7 = ChannelConversationsStore;
+    const items = [ChannelConversationsStore];
     cResult[0] = items;
     first = items;
   } else {
@@ -109,9 +109,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
               }
               const timestamp = tmp4.timestamp;
               if (cResult[16] !== conversation.messageCount) {
-                const intl = tmp(1127).intl;
+                const intl = tmp(1126).intl;
                 let obj3 = { count: conversation.messageCount };
-                const formatToPlainStringResult = intl.formatToPlainString(conversation(1127).t.poZZGL, obj3);
+                const formatToPlainStringResult = intl.formatToPlainString(conversation(1126).t.poZZGL, obj3);
                 cResult[16] = conversation.messageCount;
                 cResult[17] = formatToPlainStringResult;
                 tmp20 = formatToPlainStringResult;
@@ -133,7 +133,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                     }
                     if (cResult[25] !== tmp4.maskOpaque) {
                       const obj4 = { colors, style: tmp4.maskOpaque };
-                      const tmp33 = closure_8(navigation(5292), obj4);
+                      const tmp33 = closure_8(navigation(5605), obj4);
                       cResult[25] = tmp4.maskOpaque;
                       cResult[26] = tmp33;
                       tmp29 = tmp33;
@@ -143,7 +143,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                     if (cResult[27] !== tmp4.maskFade) {
                       const obj5 = { colors: colors2, start: null, end: null, style: tmp4.maskFade };
                       ({ START: obj9.start, END: obj9.end } = VerticalGradient);
-                      const tmp39 = closure_8(navigation(5292), obj5);
+                      const tmp39 = closure_8(navigation(5605), obj5);
                       cResult[27] = tmp4.maskFade;
                       cResult[28] = tmp39;
                       tmp34 = tmp39;
@@ -189,7 +189,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                                   }
                                   const obj6 = { style: tmp14, onPress: tmp13, accessibilityLabel: tmp15, children: items1 };
                                   items1 = [tmp25, tmp53];
-                                  const tmp59 = closure_9(conversation(5918).Card, obj6);
+                                  const tmp59 = closure_9(conversation(5995).Card, obj6);
                                   cResult[44] = conversation.title;
                                   cResult[45] = tmp13;
                                   cResult[46] = tmp4.card;
@@ -200,7 +200,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                                 }
                               }
                               const obj7 = { style: tmp4.previewsMask, maskElement: tmp40, children: tmp49 };
-                              const tmp56 = closure_8(navigation(5975), obj7);
+                              const tmp56 = closure_8(navigation(6052), obj7);
                               cResult[40] = tmp4.previewsMask;
                               cResult[41] = tmp40;
                               cResult[42] = tmp49;
@@ -216,7 +216,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                           }
                         }
                         if (null == arr4) {
-                          mapped = closure_8(navigation(7373), {});
+                          mapped = closure_8(navigation(7586), {});
                         } else {
                           mapped = arr4.map((blocked) => {
                             if (!blocked.blocked) {
@@ -264,14 +264,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                 tmp25 = tmp28;
               }
               const obj12 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: timestamp, children: tmp20 };
-              const tmp24 = closure_8(conversation(4833).Text, obj12);
+              const tmp24 = closure_8(conversation(4886).Text, obj12);
               cResult[18] = tmp4.timestamp;
               cResult[19] = tmp20;
               cResult[20] = tmp24;
               tmp22 = tmp24;
             }
             const obj13 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp4.title, children: conversation.title };
-            const tmp19 = closure_8(conversation(4833).Text, obj13);
+            const tmp19 = closure_8(conversation(4886).Text, obj13);
             cResult[13] = conversation.title;
             cResult[14] = tmp4.title;
             cResult[15] = tmp19;
@@ -298,7 +298,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
     tmp13 = fn2;
   }
   const fn = function l() {
-    return ConversationsStore.getHydratedMessages(conversation.channelId, conversation.id);
+    return ChannelConversationsStore.getHydratedMessages(conversation.channelId, conversation.id);
   };
   const items4 = [, ];
   ({ channelId: arr2[0], id: arr2[1] } = conversation);
@@ -323,11 +323,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
   let obj = conversation(stateFromStores[10]);
   navigation = obj.useNavigation();
   let obj2 = conversation(stateFromStores[11]);
-  const items = [ConversationsStore];
+  const items = [ChannelConversationsStore];
   const items1 = [, ];
   ({ channelId: arr2[0], id: arr2[1] } = conversation);
   const tmp2 = stateFromStores;
-  stateFromStores = obj2.useStateFromStores(items, () => ConversationsStore.getHydratedMessages(conversation.channelId, conversation.id), items1);
+  stateFromStores = obj2.useStateFromStores(items, () => ChannelConversationsStore.getHydratedMessages(conversation.channelId, conversation.id), items1);
   const items2 = [stateFromStores];
   const memo = react.useMemo(() => {
     let substr;
@@ -409,7 +409,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   channelId = channelId.channelId;
   const conversationId = channelId.conversationId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConversationsStore];
+    const items = [ChannelConversationsStore];
     cResult[0] = items;
     first = items;
   } else {
@@ -440,7 +440,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     return tmp9;
   }
   const fn = function l() {
-    const conversationMetadata = ConversationsStore.getConversationMetadata(channelId, conversationId);
+    const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, conversationId);
     let conversation;
     if (conversationMetadata != null) {
       conversation = conversationMetadata.conversation;
@@ -457,11 +457,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
 }) : ((channelId) => {
   channelId = channelId.channelId;
   const conversationId = channelId.conversationId;
-  const items = [ConversationsStore];
+  const items = [ChannelConversationsStore];
   const items1 = [channelId, conversationId];
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const conversationMetadata = ConversationsStore.getConversationMetadata(channelId, conversationId);
+    const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, conversationId);
     let conversation;
     if (conversationMetadata != null) {
       conversation = conversationMetadata.conversation;

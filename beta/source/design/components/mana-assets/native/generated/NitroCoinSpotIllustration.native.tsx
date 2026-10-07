@@ -1,13 +1,13 @@
-// Module ID: 8305
-// Function ID: 8306
+// Module ID: 8501
+// Function ID: 8502
 // Name: NitroCoinSpotIllustration
-// Dependencies: [21, 558, 576, 8306, 5896, 2]
+// Dependencies: [21, 558, 576, 8502, 5974, 2]
 
-// Module 8305 (NitroCoinSpotIllustration)
+// Module 8501 (NitroCoinSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef8306 from "module_8306" /* 8306 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef8502 from "module_8502" /* 8502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef8306 };
+    const obj2 = { uri: _modDef8502 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef8306 };
+  const obj2 = { uri: _modDef8502 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

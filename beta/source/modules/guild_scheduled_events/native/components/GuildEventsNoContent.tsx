@@ -1,19 +1,19 @@
-// Module ID: 9240
-// Function ID: 9241
+// Module ID: 9468
+// Function ID: 9469
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4472, 1086, 1097, 21, 4837, 5837, 588, 558, 576, 504, 7859, 9051, 9053, 1127, 4833, 9025, 2]
+// Dependencies: [19, 17, 4509, 1085, 1096, 21, 4890, 5915, 587, 558, 576, 504, 9292, 9273, 9275, 1126, 4886, 9247, 2]
 
-// Module 9240 (GuildEventsNoContent)
+// Module 9468 (GuildEventsNoContent)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants2 from "Constants" /* 1086 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
+import nativeDefault from "native" /* 587 */;
+import Constants2 from "Constants" /* 1085 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import Constants from "Constants" /* 1097 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import Constants from "Constants" /* 1096 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles from "TextStyles" /* 5915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,8 +77,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
   const container = tmp4.container;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { icon: onClose(9051), IconComponent: guild(9053).CalendarIcon };
-    const tmp13 = onClose(7859);
+    const obj2 = { icon: onClose(9273), IconComponent: guild(9275).CalendarIcon };
+    const tmp13 = onClose(9292);
     const tmp14 = closure_7(tmp13, obj2);
     cResult[4] = tmp14;
     tmp10 = tmp14;
@@ -87,8 +87,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   const title = tmp4.title;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(guild(1127).t["WgZ+3D"]);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(guild(1126).t["WgZ+3D"]);
     cResult[5] = stringResult;
     tmp15 = stringResult;
   } else {
@@ -96,7 +96,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   if (cResult[6] !== tmp4.title) {
     const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = closure_7(guild(4833).Text, obj3);
+    const tmp19 = closure_7(guild(4886).Text, obj3);
     cResult[6] = tmp4.title;
     cResult[7] = tmp19;
     tmp17 = tmp19;
@@ -105,8 +105,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   const subtitle = tmp4.subtitle;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(guild(1127).t["v/S/PG"]);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(guild(1126).t["v/S/PG"]);
     cResult[8] = stringResult1;
     tmp20 = stringResult1;
   } else {
@@ -114,7 +114,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   if (cResult[9] !== tmp4.subtitle) {
     const obj4 = { style: subtitle, variant: "text-sm/normal", color: "text-default", children: tmp20 };
-    const tmp24 = closure_7(guild(4833).Text, obj4);
+    const tmp24 = closure_7(guild(4886).Text, obj4);
     cResult[9] = tmp4.subtitle;
     cResult[10] = tmp24;
     tmp22 = tmp24;
@@ -153,9 +153,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   let tmp26 = stateFromStores;
   if (tmp26) {
-    const obj6 = { style: tmp4.subtitle, variant: "text-sm/normal", color: "text-default", children: intl3.format(guild(1127).t["K+DH2o"], obj7) };
-    const Text = tmp(4833).Text;
-    intl3 = tmp(1127).intl;
+    const obj6 = { style: tmp4.subtitle, variant: "text-sm/normal", color: "text-default", children: intl3.format(guild(1126).t["K+DH2o"], obj7) };
+    const Text = tmp(4886).Text;
+    intl3 = tmp(1126).intl;
     obj7 = {
       onClick() {
           onClose();
@@ -185,24 +185,24 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const items1 = [guild];
   let stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(metroRequire.MANAGE_ROLES, guild), items1);
   const obj2 = { style: tmp.container, children: items2 };
-  const obj3 = { icon: onClose(9051), IconComponent: guild(9053).CalendarIcon };
-  const tmp8 = onClose(7859);
+  const obj3 = { icon: onClose(9273), IconComponent: guild(9275).CalendarIcon };
+  const tmp8 = onClose(9292);
   items2 = [closure_7(tmp8, obj3), , , ];
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(guild(1127).t["WgZ+3D"]) };
-  const Text = guild(4833).Text;
-  intl = guild(1127).intl;
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(guild(1126).t["WgZ+3D"]) };
+  const Text = guild(4886).Text;
+  intl = guild(1126).intl;
   items2[1] = closure_7(Text, obj4);
-  const obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl2.string(guild(1127).t["v/S/PG"]) };
-  const Text2 = guild(4833).Text;
-  intl2 = guild(1127).intl;
+  const obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl2.string(guild(1126).t["v/S/PG"]) };
+  const Text2 = guild(4886).Text;
+  intl2 = guild(1126).intl;
   items2[2] = closure_7(Text2, obj5);
   const tmp5 = closure_8;
   const tmp6 = View;
   const tmp7 = closure_7;
   if (stateFromStores) {
-    const obj6 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl3.format(guild(1127).t["K+DH2o"], obj7) };
-    const Text3 = tmp2(4833).Text;
-    intl3 = tmp2(1127).intl;
+    const obj6 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl3.format(guild(1126).t["K+DH2o"], obj7) };
+    const Text3 = tmp2(4886).Text;
+    intl3 = tmp2(1126).intl;
     obj7 = {
       onClick() {
           onClose();

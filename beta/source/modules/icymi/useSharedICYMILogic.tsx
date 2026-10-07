@@ -1,17 +1,18 @@
-// Module ID: 16126
-// Function ID: 16127
+// Module ID: 16429
+// Function ID: 16430
 // Name: useSharedICYMILogic
-// Dependencies: [32, 19, 7787, 16092, 558, 576, 16127, 504, 7811, 7809, 9066, 7803, 7802, 7800, 16128, 2]
+// Dependencies: [32, 19, 8011, 16393, 558, 576, 16430, 504, 14165, 16398, 9288, 8029, 16397, 8024, 8028, 16431, 2]
 
-// Module 16126 (useSharedICYMILogic)
-import ICYMITypes from "ICYMITypes" /* 7800 */;
-import ICYMIUtils from "ICYMIUtils" /* 7802 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7803 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 7811 */;
-import ICYMIConstants from "ICYMIConstants" /* 16092 */;
+// Module 16429 (useSharedICYMILogic)
+import ICYMITypes from "ICYMITypes" /* 8024 */;
+import ICYMIUtils from "ICYMIUtils" /* 8028 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 14165 */;
+import ICYMIConstants from "ICYMIConstants" /* 16393 */;
+import ICYMIStoreUtils from "ICYMIStoreUtils" /* 16397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 7787 */;
+import ICYMIStore from "ICYMIStore" /* 8011 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -456,7 +457,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (0 !== viewableItems.length) {
       _undefined(viewableItems);
       const items = [];
-      const obj4 = ICYMIUtils;
+      const obj4 = ICYMIStoreUtils;
       const viewableFeedItemsArray = obj4.getViewableFeedItemsArray(viewableItems);
       const _Date = Date;
       let timestamp = Date.now();
@@ -494,7 +495,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const callback1 = allUnreadItemsHydrated.useCallback((viewableItems) => {
     viewableItems = viewableItems.viewableItems;
     if (0 !== viewableItems.length) {
-      let obj = ICYMIUtils;
+      let obj = ICYMIStoreUtils;
       const viewableFeedItemsArray = obj.getViewableFeedItemsArray(viewableItems);
       const ICYMIAnalytics = ICYMIAnalytics2.ICYMIAnalytics;
       const result = ICYMIAnalytics.trackItemLongImpression(viewableItems, viewableFeedItemsArray.map((id) => {
@@ -519,7 +520,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj = { itemId: item.id, itemType: obj2.itemToType(item), triggerType: "list", itemFeedIndex: index, itemScore: score, itemChannelType: channelType, isInitiallyVisible: false };
         index = item.index;
         score = item.score;
-        obj2 = notificationItem(unreadItems[12]);
+        obj2 = notificationItem(unreadItems[14]);
         if (score == null) {
           score = null;
         }
@@ -549,7 +550,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj = { itemId: item.id, itemType: obj2.itemToType(item), triggerType: "list", itemFeedIndex: index, itemScore: score, itemChannelType: channelType, isInitiallyVisible: false };
       index = item.index;
       score = item.score;
-      obj2 = notificationItem(unreadItems[12]);
+      obj2 = notificationItem(unreadItems[14]);
       if (score == null) {
         score = null;
       }
@@ -575,7 +576,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = closure_1(unreadItems[11]);
     obj.openICYMITab();
   }, []);
-  let obj6 = notificationItem(unreadItems[14]);
+  let obj6 = notificationItem(unreadItems[15]);
   const items10 = [stateFromStores1, notificationItem, unreadItems, allUnreadItemsHydrated, readItems, stateFromStores3];
   const iCYMIReloadHandler = obj6.useICYMIReloadHandler(showDot);
   const memo1 = allUnreadItemsHydrated.useMemo(() => {
@@ -602,7 +603,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       data.push(obj4);
     } else {
       const item = unreadItems.forEach((item) => {
-        const obj = notificationItem(unreadItems[12]);
+        const obj = notificationItem(unreadItems[14]);
         if (!obj.isItemNSFW(item)) {
           data.push(item);
         }
@@ -615,7 +616,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const arr2 = readItems;
       if (readItems.length > 0) {
         const item1 = arr2.forEach((item) => {
-          const obj = notificationItem(unreadItems[12]);
+          const obj = notificationItem(unreadItems[14]);
           if (!obj.isItemNSFW(item)) {
             data.push(item);
           }

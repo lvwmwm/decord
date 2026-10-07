@@ -1,19 +1,19 @@
-// Module ID: 17092
-// Function ID: 17093
+// Module ID: 17449
+// Function ID: 17450
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 1086, 21, 4837, 558, 576, 1491, 1127, 4833, 2114, 5282, 6546, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 4890, 558, 576, 1490, 1126, 4886, 2115, 5594, 6619, 2]
 
-// Module 17092 (ExistingUserAgeGateConfirm)
+// Module 17449 (ExistingUserAgeGateConfirm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import useNavigation from "useNavigation" /* 1491 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
+import Constants from "Constants" /* 1085 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,10 +22,10 @@ let c1, c4, dependencyMap, importDefault, navigation;
 let c9;
 let metroImportAll;
 let tmp;
-const intl4 = tmp(1127);
-const Text_Text = tmp(4833);
-const components_Button_Button = tmp(5282);
-const common_SafeAreaView = tmp(6546);
+const intl4 = tmp(1126);
+const Text_Text = tmp(4886);
+const components_Button_Button = tmp(5594);
+const common_SafeAreaView = tmp(6619);
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -319,36 +319,36 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   };
   const age = onConfirm.age;
   const tmp = closure_10();
-  obj = onConfirm(1491);
+  obj = onConfirm(1490);
   importDefault = obj.useNavigation();
   [tmp3, c2] = _slicedToArray(react.useState(false), 2);
   let obj2 = { top: true, style: tmp.container, children: items };
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  const SafeAreaPaddingView = onConfirm(6546).SafeAreaPaddingView;
-  let obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.format(onConfirm(1127).t.wumolR, { age }) };
-  const Text = onConfirm(4833).Text;
-  intl = onConfirm(1127).intl;
+  const SafeAreaPaddingView = onConfirm(6619).SafeAreaPaddingView;
+  let obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.format(onConfirm(1126).t.wumolR, { age }) };
+  const Text = onConfirm(4886).Text;
+  intl = onConfirm(1126).intl;
   items = [closure_8(Text, obj3), , ];
   let obj4 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: format(n3QjDE, obj5) };
-  const Text2 = onConfirm(4833).Text;
-  const intl2 = onConfirm(1127).intl;
+  const Text2 = onConfirm(4886).Text;
+  const intl2 = onConfirm(1126).intl;
   format = intl2.format;
   obj5 = { helpURL: obj6.getArticleURL(HelpdeskArticles.AGE_GATE) };
-  n3QjDE = onConfirm(1127).t.n3QjDE;
+  n3QjDE = onConfirm(1126).t.n3QjDE;
   obj6 = HelpdeskUtilsDefault;
   items[1] = closure_8(Text2, obj4);
   const obj7 = { style: tmp.buttonWrapper, children: closure_8(Button, obj8) };
   obj8 = {
     loading: tmp3,
     disabled: tmp3,
-    text: intl3.string(onConfirm(1127).t["6tahin"]),
+    text: intl3.string(onConfirm(1126).t["6tahin"]),
     onPress: function handleConfirm() {
       return obj(...arguments);
     },
     grow: true
   };
-  Button = onConfirm(5282).Button;
-  intl3 = onConfirm(1127).intl;
+  Button = onConfirm(5594).Button;
+  intl3 = onConfirm(1126).intl;
   items[2] = closure_8(View, obj7);
   return closure_9(SafeAreaPaddingView, obj2);
 });

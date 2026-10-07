@@ -1,13 +1,13 @@
-// Module ID: 16088
-// Function ID: 16089
+// Module ID: 16389
+// Function ID: 16390
 // Name: MailboxSpotIllustration
-// Dependencies: [21, 558, 576, 16089, 5896, 2]
+// Dependencies: [21, 558, 576, 16390, 5974, 2]
 
-// Module 16088 (MailboxSpotIllustration)
+// Module 16389 (MailboxSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef16089 from "module_16089" /* 16089 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef16390 from "module_16390" /* 16390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16089 };
+    const obj2 = { uri: _modDef16390 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef16089 };
+  const obj2 = { uri: _modDef16390 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,9 +1,9 @@
-// Module ID: 5298
-// Function ID: 5299
+// Module ID: 5591
+// Function ID: 5592
 // Name: hooks/useMountEffect
 // Dependencies: [19, 558, 576, 2]
 
-// Module 5298 (hooks/useMountEffect)
+// Module 5591 (hooks/useMountEffect)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

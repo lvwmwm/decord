@@ -1,13 +1,13 @@
-// Module ID: 5442
-// Function ID: 5443
+// Module ID: 7243
+// Function ID: 7244
 // Name: UploadUtils
-// Dependencies: [5443, 5444, 5441, 2]
+// Dependencies: [7244, 7245, 7247, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData, getMaxTotalAttachmentSize
 
-// Module 5442 (UploadUtils)
-import Upload from "Upload" /* 5441 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5443 */;
-import clipPayloadUtils from "clipPayloadUtils" /* 5444 */;
+// Module 7243 (UploadUtils)
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7244 */;
+import clipPayloadUtils from "clipPayloadUtils" /* 7245 */;
+import UploadPlatform from "UploadPlatform" /* 7247 */;
 import size from "module_2" /* 2 */;
 
 let reName;
@@ -176,7 +176,7 @@ export const getAttachmentPayload = function getAttachmentPayload(id, index, nam
     const obj5 = clipPayloadUtils;
     obj.clip_sync_timestamp = obj5.getClipSyncTimestamp(id.clip);
   }
-  const tmp9 = "item" in id && null != id.item && id.item.platform === Upload.UploadPlatform.WEB && "mimeType" in id && null != id.mimeType;
+  const tmp9 = "item" in id && null != id.item && id.item.platform === UploadPlatform.UploadPlatform.WEB && "mimeType" in id && null != id.mimeType;
   if (tmp9) {
     obj.original_content_type = id.mimeType;
   }

@@ -1,21 +1,21 @@
-// Module ID: 15609
-// Function ID: 15610
+// Module ID: 15904
+// Function ID: 15905
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6006, 15572, 1086, 21, 4837, 558, 576, 1127, 4833, 4552, 5914, 8057, 15610, 2]
+// Dependencies: [19, 17, 6083, 15867, 1085, 21, 4890, 558, 576, 1126, 4886, 4594, 5991, 8895, 15905, 2]
 
-// Module 15609 (PrivacyHint)
+// Module 15904 (PrivacyHint)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import react_native from "react-native" /* 4552 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6006 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15572 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15610 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import react_native from "react-native" /* 4594 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6083 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15905 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const cResult = obj.c(3);
   style = style.style;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj3 = { termsURL: null, privacyURL: null };
     ({ TERMS: obj2.termsURL, PRIVACY: obj2.privacyURL } = MarketingURLs);
     const formatResult = intl.format(intl3.t["KI+BSb"], obj3);
@@ -96,7 +96,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const tmp8 = undefined !== asCheckbox && asCheckbox ? tmp5.checkbox : tmp5.radio;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.Y7Kgvf);
     cResult[2] = stringResult;
     tmp9 = stringResult;
@@ -120,7 +120,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     const checkboxLabel = tmp5.checkboxLabel;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const obj3 = { termsURL: null, privacyURL: null };
       ({ TERMS: obj7.termsURL, PRIVACY: obj7.privacyURL } = MarketingURLs);
       const formatResult = intl2.format(intl3.t.qMDAP0, obj3);
@@ -167,10 +167,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (undefined !== asCheckbox && asCheckbox) {
     const obj6 = { checked: consent };
-    tmp13Result = tmp13(tmp(5914).FormCheckbox, obj6);
+    tmp13Result = tmp13(tmp(5991).FormCheckbox, obj6);
   } else {
     const obj8 = { selected: consent };
-    tmp13Result = tmp13(tmp(8057).FormRow.Radio, obj8);
+    tmp13Result = tmp13(tmp(8895).FormRow.Radio, obj8);
   }
   cResult[4] = undefined !== asCheckbox && asCheckbox;
   cResult[5] = consent;
@@ -194,22 +194,22 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react_native;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: consent });
   const obj2 = { style: asCheckbox ? tmp.checkbox : tmp.radio, accessibilityState: checkboxA11yNative.accessibilityState, accessibilityRole: checkboxA11yNative.accessibilityRole, accessibilityLabel: intl.string(intl3.t.Y7Kgvf), onPress: onToggleConsent, hitSlop: { top: 11, bottom: 11, left: 11 }, children: items };
-  intl = tmp2(1127).intl;
+  intl = tmp2(1126).intl;
   const tmp5 = React4;
   const tmp6 = React3;
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    tmp7Result = tmp7(tmp2(5914).FormCheckbox, obj3);
+    tmp7Result = tmp7(tmp2(5991).FormCheckbox, obj3);
     tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8057).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8895).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   items = [tmp7Result, ];
   const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: intl2.format(intl3.t.qMDAP0, obj6) };
-  const Text = tmp2(4833).Text;
-  intl2 = tmp2(1127).intl;
+  const Text = tmp2(4886).Text;
+  intl2 = tmp2(1126).intl;
   obj6 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   items[1] = tmp9(Text, obj5);
   return tmp5(tmp6, obj2);

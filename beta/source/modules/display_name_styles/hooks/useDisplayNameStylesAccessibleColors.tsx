@@ -1,14 +1,14 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 10635
+// Function ID: 10636
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4826, 558, 576, 504, 1397, 10403, 4685, 684, 2]
+// Dependencies: [19, 4879, 558, 576, 504, 1396, 10636, 4727, 683, 2]
 
-// Module 10402 (useDisplayNameStylesAccessibleColors)
-import _modDef684 from "module_684" /* 684 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
+// Module 10635 (useDisplayNameStylesAccessibleColors)
+import _modDef683 from "module_683" /* 683 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,11 +88,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp5;
       const tmp2 = ColorUtils;
       const getAccessibleForegroundColor = tmp2.getAccessibleForegroundColor;
-      const obj = { foreground: _modDef684(arg0), background: tmp5, ratio: displayNameStylesEffectConfig.minContrastRatio, saturationFactor: stateFromStores };
+      const obj = { foreground: _modDef683(arg0), background: tmp5, ratio: displayNameStylesEffectConfig.minContrastRatio, saturationFactor: stateFromStores };
       if (effectId === DisplayNameEffect.DisplayNameEffect.TOON) {
-        tmp5 = tmp3(684)("#333");
+        tmp5 = tmp3(683)("#333");
       } else {
-        tmp5 = tmp3(684)(backgroundColor);
+        tmp5 = tmp3(683)(backgroundColor);
       }
       const accessibleForegroundColor = getAccessibleForegroundColor(obj);
       return accessibleForegroundColor.hex();

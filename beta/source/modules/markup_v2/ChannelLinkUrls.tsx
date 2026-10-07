@@ -1,11 +1,11 @@
-// Module ID: 7565
-// Function ID: 7566
+// Module ID: 7787
+// Function ID: 7788
 // Name: ChannelLinkUrls
-// Dependencies: [32, 4991, 2]
+// Dependencies: [32, 5044, 2]
 // Exports: parseChannelLinkUrl
 
-// Module 7565 (ChannelLinkUrls)
-import LinkUtils from "LinkUtils" /* 4991 */;
+// Module 7787 (ChannelLinkUrls)
+import LinkUtils from "LinkUtils" /* 5044 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ export const parseChannelLinkUrl = function parseChannelLinkUrl(url) {
         const obj = /\D/;
         if (!obj.test(tmp9[2])) {
           if (null == tmp9[3]) {
-            tmp4 = { guildId: tmp10, channelId: tmp9[2], messageId: tmp9[3], parentChannelId: "Array" };
-            const obj4 = { guildId: tmp10, channelId: tmp9[2], messageId: tmp9[3], parentChannelId: "Array" };
+            tmp4 = { guildId: tmp10, channelId: tmp9[2], messageId: tmp9[3], parentChannelId: "a" };
+            const obj4 = { guildId: tmp10, channelId: tmp9[2], messageId: tmp9[3], parentChannelId: "a" };
           } else {
             tmp4 = null;
           }

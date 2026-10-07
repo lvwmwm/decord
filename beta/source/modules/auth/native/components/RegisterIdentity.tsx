@@ -1,19 +1,19 @@
-// Module ID: 15581
-// Function ID: 15582
+// Module ID: 15876
+// Function ID: 15877
 // Name: RegisterIdentity
-// Dependencies: [5, 32, 19, 17, 15572, 15573, 21, 4837, 5289, 6360, 1491, 15582, 1106, 15569, 15587, 15588, 15571, 5297, 6379, 6388, 15589, 5282, 1127, 6357, 6462, 558, 576, 15590, 15591, 9060, 9061, 2]
+// Dependencies: [5, 32, 19, 17, 15867, 15868, 21, 4890, 5602, 6432, 1490, 15877, 1105, 15864, 15882, 15883, 15866, 5590, 6451, 6460, 15884, 5594, 1126, 6428, 6537, 558, 576, 15885, 15886, 9282, 9283, 2]
 
-// Module 15581 (RegisterIdentity)
-import intl3 from "intl" /* 1127 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6379 */;
+// Module 15876 (RegisterIdentity)
+import intl3 from "intl" /* 1126 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6451 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15572 */;
-import RegistrationConstants from "RegistrationConstants" /* 15573 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
+import RegistrationConstants from "RegistrationConstants" /* 15868 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ function RegisterIdentityBase(inputMode) {
               const tmp39 = constants;
               const tmp40 = constants2;
               if (inputMode === tmp(closure_2[18]).PhoneOrEmailSelectorForceMode.EMAIL) {
-                const obj5 = { email, phoneToken: "r" };
+                const obj5 = { email, phoneToken: "Array" };
                 closure_1_10(obj5);
                 const tmp23 = _undefined2();
                 if (null != tmp23) {
@@ -160,23 +160,23 @@ function RegisterIdentityBase(inputMode) {
   };
   const tmp = dependencyMap;
   ({ headerText, controlComponent, subheader } = inputMode);
-  obj = inputMode(5289);
+  obj = inputMode(5602);
   const tmp2 = closure_16(45 * min(2, obj.useFontScale()));
   const tmp3 = setInputMode;
-  const tmp4 = setInputMode(6360)();
-  let obj2 = inputMode(1491);
+  const tmp4 = setInputMode(6432)();
+  let obj2 = inputMode(1490);
   dependencyMap = obj2.useNavigation();
   const tmp5 = closure_11((errors) => errors.errors);
   let message = tmp5;
-  let obj3 = inputMode(15582);
-  const identityRegistrationStep = obj3.useIdentityRegistrationStep(inputMode(1106).AuthStates.REGISTER_IDENTITY, inputMode);
+  let obj3 = inputMode(15877);
+  const identityRegistrationStep = obj3.useIdentityRegistrationStep(inputMode(1105).AuthStates.REGISTER_IDENTITY, inputMode);
   const loginEmail = identityRegistrationStep.loginEmail;
   const identityErrorMessage = identityRegistrationStep.identityErrorMessage;
   ({ registerAndVerifyPhone: c6, validateEmail: c7 } = identityRegistrationStep);
   ({ setLoginEmail, loginPhone, updateLoginPhone, preventSubmitIdentity, identityError } = identityRegistrationStep);
   [tmp8, c8] = loginEmail(identityErrorMessage.useState(false), 2);
   const tmp7 = loginEmail(identityErrorMessage.useState(false), 2);
-  let closure_9 = identityErrorMessage.useContext(inputMode(15569).TrackRegistrationContext);
+  let closure_9 = identityErrorMessage.useContext(inputMode(15864).TrackRegistrationContext);
   const items = [tmp5.message, identityErrorMessage];
   const memo = identityErrorMessage.useMemo(() => {
     message = identityErrorMessage;
@@ -185,24 +185,24 @@ function RegisterIdentityBase(inputMode) {
     }
     return message;
   }, items);
-  const tmp10 = setInputMode(15587);
-  tmp10(inputMode(1106).AuthStates.REGISTER_IDENTITY);
-  const tmp12 = setInputMode(15588);
-  let obj4 = inputMode(15571);
-  tmp12(obj4.getPreviousRegistrationTransitionStep(inputMode(1106).AuthStates.REGISTER_IDENTITY));
-  setInputMode(5297)(() => {
+  const tmp10 = setInputMode(15882);
+  tmp10(inputMode(1105).AuthStates.REGISTER_IDENTITY);
+  const tmp12 = setInputMode(15883);
+  let obj4 = inputMode(15866);
+  tmp12(obj4.getPreviousRegistrationTransitionStep(inputMode(1105).AuthStates.REGISTER_IDENTITY));
+  setInputMode(5590)(() => {
     obj = { step: constants.ACCOUNT_IDENTITY, actionType: map1.VIEWED };
     closure_9(obj);
   });
   let obj5 = { headerText, subHeader: subheader, children: tmp17(tmp18, obj6) };
   obj6 = { style: tmp2.container, contentContainerStyle: tmp2.scrollContent, keyboardShouldPersistTaps: "handled", children: items1 };
   items1 = [controlComponent, , , ];
-  const tmp16 = setInputMode(6388);
-  items1[1] = closure_14(inputMode(15589).RegisterPhoneOrEmailInput, { loginPhone, loginEmail, setLoginPhone: updateLoginPhone, setLoginEmail, inputMode, onSubmit: handleSubmit, inputError: identityError, autoFocus: true });
+  const tmp16 = setInputMode(6460);
+  items1[1] = closure_14(inputMode(15884).RegisterPhoneOrEmailInput, { loginPhone, loginEmail, setLoginPhone: updateLoginPhone, setLoginEmail, inputMode, onSubmit: handleSubmit, inputError: identityError, autoFocus: true });
   let obj7 = { style: tmp2.button, children: closure_14(Button, obj8) };
-  obj8 = { loading: tmp8, size: "lg", text: intl.string(inputMode(1127).t.PDTjLN), onPress: handleSubmit, disabled: preventSubmitIdentity };
-  Button = inputMode(5282).Button;
-  intl = inputMode(1127).intl;
+  obj8 = { loading: tmp8, size: "lg", text: intl.string(inputMode(1126).t.PDTjLN), onPress: handleSubmit, disabled: preventSubmitIdentity };
+  Button = inputMode(5594).Button;
+  intl = inputMode(1126).intl;
   items1[2] = closure_14(c6, obj7);
   let tmp15Result = null;
   tmp17 = closure_15;
@@ -211,7 +211,7 @@ function RegisterIdentityBase(inputMode) {
     tmp15Result = null;
     if ("" !== memo) {
       let obj9 = { style: tmp2.errors, children: memo };
-      tmp15Result = tmp15(tmp3(6357), obj9);
+      tmp15Result = tmp15(tmp3(6428), obj9);
     }
   }
   items1[3] = tmp15Result;
@@ -219,7 +219,7 @@ function RegisterIdentityBase(inputMode) {
   let tmp15Result4 = tmp15Result3;
   if (!tmp4) {
     const obj10 = { style: tmp2.page, children: tmp15Result3 };
-    tmp15Result4 = tmp15(tmp3(6462), obj10);
+    tmp15Result4 = tmp15(tmp3(6537), obj10);
   }
   return tmp15Result4;
 }
@@ -416,13 +416,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let intl;
   let obj5;
   let tmp8;
-  let obj = hasItem(5289);
+  let obj = hasItem(5602);
   const tmp3 = closure_16(45 * min(2, obj.useFontScale()));
-  let obj2 = hasItem(15590);
+  let obj2 = hasItem(15885);
   const deviceCountry = obj2.getDeviceCountry();
   hasItem = null != deviceCountry;
   if (hasItem) {
-    const EMAIL_FIRST_COUNTRIES = tmp(15591).EMAIL_FIRST_COUNTRIES;
+    const EMAIL_FIRST_COUNTRIES = tmp(15886).EMAIL_FIRST_COUNTRIES;
     hasItem = EMAIL_FIRST_COUNTRIES.has(deviceCountry);
   }
   let items = [hasItem];
@@ -453,7 +453,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     metroImportAll();
     closure_2(memo[arg0].mode);
   }, items1);
-  const tmpResult = hasItem(9060);
+  const tmpResult = hasItem(9282);
   let obj3 = {
     pageWidth: 0,
     defaultIndex: 0,
@@ -480,10 +480,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }, items2),
     controlComponent: closure_14(closure_6, obj5),
-    headerText: intl.string(hasItem(1127).t.WEdDgv)
+    headerText: intl.string(hasItem(1126).t.WEdDgv)
   };
-  obj5 = { style: tmp3.segmentedControl, children: closure_14(hasItem(9061).SegmentedControl, { state: segmentedControlState, keyboardShouldPersistTaps: "handled" }) };
-  intl = tmp(1127).intl;
+  obj5 = { style: tmp3.segmentedControl, children: closure_14(hasItem(9283).SegmentedControl, { state: segmentedControlState, keyboardShouldPersistTaps: "handled" }) };
+  intl = tmp(1126).intl;
   return closure_14(RegisterIdentityBase, obj4);
 });
 let result = size.fileFinishedImporting("modules/auth/native/components/RegisterIdentity.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 9249
-// Function ID: 9250
+// Module ID: 9477
+// Function ID: 9478
 // Name: FormHeader
-// Dependencies: [109, 19, 1097, 21, 4837, 5837, 588, 558, 576, 1189, 2]
+// Dependencies: [109, 19, 1096, 21, 4890, 5915, 587, 558, 576, 1188, 2]
 
-// Module 9249 (FormHeader)
+// Module 9477 (FormHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles from "TextStyles" /* 5915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let children;
 
 let obj2;
 let tmp;
-const native = tmp(1189);
+const native = tmp(1188);
 let closure_2 = ["children"];
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;

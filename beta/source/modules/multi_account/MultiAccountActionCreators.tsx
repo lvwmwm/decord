@@ -1,21 +1,21 @@
-// Module ID: 11804
-// Function ID: 11805
+// Module ID: 12059
+// Function ID: 12060
 // Name: MultiAccountActionCreators
-// Dependencies: [5, 502, 11800, 1086, 3, 1112, 585, 1283, 1253, 6005, 2]
+// Dependencies: [5, 502, 12056, 1085, 3, 1111, 584, 1282, 1252, 6082, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 11804 (MultiAccountActionCreators)
+// Module 12059 (MultiAccountActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import TokenManagerAll from "TokenManager" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import TokenManagerAll from "TokenManager" /* 1111 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MultiAccountStore from "MultiAccountStore" /* 11800 */;
-import Constants from "Constants" /* 1086 */;
+import MultiAccountStore from "MultiAccountStore" /* 12056 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let c6, closure_0;
+let c6, c7, closure_0;
 
 let metroImportAll;
 let metroImportDefault;
@@ -29,115 +29,163 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
   const users = MultiAccountStore.getUsers();
   const forEach = users.forEach;
   let id = _asyncToGenerator(async (arg0, value) => {
-    let actual_user_id;
-    let id;
     let obj10;
     closure_0 = arg0;
-    if (1 === c6) {
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c7 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c7 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        const obj23 = TokenManagerAll;
-        const authorization = obj23.getToken(id);
-        if (null != authorization) {
-          if ("" !== authorization) {
-            const obj8 = { type: "MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST", userId: id };
-            const obj15 = DispatcherDefault;
-            obj15.dispatch(obj8);
-            let c5 = 1;
-            const HTTP = closure_0(dependencyMap[7]).HTTP;
-            const obj9 = { url: constants2.ME, headers: obj10, retries: 3, rejectWithError: false };
-            obj10 = { authorization };
-            c6 = 3;
-            c7 = 1;
-            const obj11 = { value: HTTP.get(obj9), done: false };
-            return obj11;
-          }
-        }
-        const obj12 = { type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE", userId: id };
-        const obj13 = DispatcherDefault;
-        obj13.dispatch(obj12);
+        return { value: "IconComponent", done: null };
       }
-    } else if (2 === c6) {
-      c5 = 0;
-      let closure_6 = actual_user_id;
-      let status;
-      if (closure_6 != null) {
-        status = closure_6.status;
-      }
-      let tmp45 = 401 === status;
-      if (!tmp45) {
-        let status1;
-        if (closure_6 != null) {
-          status1 = closure_6.status;
-        }
-        tmp45 = 403 === status1;
-      }
-      let closure_3 = tmp45;
-      let str = "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS";
-      const dispatch = DispatcherDefault.dispatch;
-      if (closure_3) {
-        str = "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE";
-      }
-      const obj14 = { type: str, userId: id };
-      dispatch(obj14);
-      c7 = 3;
-      const obj16 = { value: undefined, done: true };
-      return obj16;
-    } else if (arg0 === 1) {
-      c7 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c5 = 0;
-      c7 = 3;
-      const obj17 = { value, done: true };
-      return obj17;
     } else {
-      let closure_2 = value;
-      c5 = 0;
-      const body = closure_2.body;
-      id = undefined;
-      if (body != null) {
-        id = body.id;
-      }
-      let c1 = id;
-      if (id == null) {
-        c1 = null;
-      }
-      actual_user_id = c1;
-      if (null != actual_user_id) {
-        if (actual_user_id !== id) {
-          const obj18 = { expected_user_id: id, actual_user_id };
-          logger.log("Found per-user token authentication mismatch", obj18);
-          const obj6 = AnalyticsUtilsDefault;
-          obj6.track(constants.MULTI_ACCOUNT_VALIDATE_TOKEN_USER_MISMATCH, obj18);
-          const obj19 = { type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE", userId: id };
-          const obj7 = DispatcherDefault;
-          obj7.dispatch(obj19);
+      let c5;
+      let actual_user_id;
+      try {
+        let id;
+        let authorization;
+        let closure_2;
+        let closure_3;
+        let obj18;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            id = closure_0.id;
+            authorization = undefined;
+            closure_2 = undefined;
+            closure_3 = undefined;
+            actual_user_id = undefined;
+            obj18 = undefined;
+            c6 = 1;
+            c7 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else {
+              const obj23 = TokenManagerAll;
+              authorization = obj23.getToken(id);
+              if (null != authorization) {
+                if ("" !== authorization) {
+                  const obj8 = { type: "MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST", userId: id };
+                  const obj15 = DispatcherDefault;
+                  obj15.dispatch(obj8);
+                  c5 = 1;
+                  const HTTP = closure_0(dependencyMap[7]).HTTP;
+                  const obj9 = { url: constants2.ME, headers: obj10, retries: 3, rejectWithError: false };
+                  obj10 = { authorization };
+                  c6 = 3;
+                  c7 = 1;
+                  const obj11 = { value: HTTP.get(obj9), done: false };
+                  return obj11;
+                }
+              }
+              const obj12 = { type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE", userId: id };
+              const obj13 = DispatcherDefault;
+              obj13.dispatch(obj12);
+            }
+          } else if (2 === c6) {
+            c5 = 0;
+            let closure_6 = actual_user_id;
+            let status;
+            if (closure_6 != null) {
+              status = closure_6.status;
+            }
+            let tmp45 = 401 === status;
+            if (!tmp45) {
+              let status1;
+              if (closure_6 != null) {
+                status1 = closure_6.status;
+              }
+              tmp45 = 403 === status1;
+            }
+            closure_3 = tmp45;
+            let str = "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS";
+            const dispatch = DispatcherDefault.dispatch;
+            if (closure_3) {
+              str = "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE";
+            }
+            const obj14 = { type: str, userId: id };
+            dispatch(obj14);
+            c7 = 3;
+            const obj16 = { value: undefined, done: true };
+            return obj16;
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c7 = 3;
+            const obj17 = { value, done: true };
+            return obj17;
+          } else {
+            closure_2 = value;
+            c5 = 0;
+            const body = closure_2.body;
+            id = undefined;
+            if (body != null) {
+              id = body.id;
+            }
+            let c1 = id;
+            if (id == null) {
+              c1 = null;
+            }
+            actual_user_id = c1;
+            if (null != actual_user_id) {
+              if (actual_user_id !== id) {
+                obj18 = { expected_user_id: id, actual_user_id };
+                logger.log("Found per-user token authentication mismatch", obj18);
+                const obj6 = AnalyticsUtilsDefault;
+                obj6.track(constants.MULTI_ACCOUNT_VALIDATE_TOKEN_USER_MISMATCH, obj18);
+                const obj19 = { type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE", userId: id };
+                const obj7 = DispatcherDefault;
+                obj7.dispatch(obj19);
+                c7 = 3;
+                const obj20 = { value: undefined, done: true };
+                return obj20;
+              }
+            }
+            if (closure_0 !== id) {
+              const obj21 = { type: "USER_UPDATE", user: closure_2.body };
+              const obj = DispatcherDefault;
+              obj.dispatch(obj21);
+            }
+            const obj22 = { type: "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS", userId: id };
+            const obj3 = DispatcherDefault;
+            obj3.dispatch(obj22);
+          }
           c7 = 3;
-          const obj20 = { value: undefined, done: true };
-          return obj20;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp77) {
+        actual_user_id = tmp77;
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp77;
+        } else {
+          c6 = 2;
         }
       }
-      if (closure_0 !== id) {
-        const obj21 = { type: "USER_UPDATE", user: closure_2.body };
-        const obj = DispatcherDefault;
-        obj.dispatch(obj21);
-      }
-      const obj22 = { type: "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS", userId: id };
-      const obj3 = DispatcherDefault;
-      obj3.dispatch(obj22);
     }
-    await "IconComponent";
-    closure_3 = tmp;
-    closure_2 = tmp4;
-    id = closure_0.id;
-    return "Reflect";
   });
   const item = forEach(function() {
     return closure_0(...arguments);
@@ -166,7 +214,7 @@ export const switchAccount = function switchAccount(id, switchSynchronously, CHO
       tmp4 = null;
     }
     dispatch(obj5);
-    const tmp5Result = tmp5(6005);
+    const tmp5Result = tmp5(6082);
     resolved = tmp5Result.switchAccountToken(token, switchSynchronously);
   }
   return resolved;

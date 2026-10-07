@@ -1,12 +1,12 @@
-// Module ID: 15451
-// Function ID: 15452
+// Module ID: 15755
+// Function ID: 15756
 // Name: CollectiblesProgressiveImage
-// Dependencies: [109, 19, 17, 21, 558, 576, 4570, 4838, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 4612, 4891, 2]
 
-// Module 15451 (CollectiblesProgressiveImage)
+// Module 15755 (CollectiblesProgressiveImage)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = cResult[2];
     tmp6 = cResult[3];
   }
-  const tmpResult = tmp(4570);
+  const tmpResult = tmp(4612);
   sharedValue = tmpResult.useSharedValue(0);
   if (cResult[4] !== sharedValue) {
     const fn = function h() {
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ source, style } = arg0);
   let sharedValue;
   const merged = Object.assign(arg0, Object.assign({ source: 0, style: 0 }));
-  let obj = sharedValue(4570);
+  let obj = sharedValue(4612);
   sharedValue = obj.useSharedValue(0);
   const Image = ReanimatedRexportDefault.Image;
   const merged1 = Object.assign(merged);

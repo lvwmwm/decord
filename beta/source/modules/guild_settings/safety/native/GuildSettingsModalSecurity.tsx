@@ -1,20 +1,20 @@
-// Module ID: 17404
-// Function ID: 17405
+// Module ID: 17773
+// Function ID: 17774
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 2069, 2073, 1378, 9026, 1086, 21, 4837, 588, 558, 576, 504, 9025, 1127, 4833, 5282, 14314, 6461, 2]
+// Dependencies: [19, 17, 2070, 2074, 1377, 9248, 1085, 21, 4890, 587, 558, 576, 504, 9247, 1126, 4886, 5594, 14578, 6536, 2]
 
-// Module 17404 (GuildSettingsModalSecurity)
-import nativeDefault from "native" /* 588 */;
-import GuildRecord from "GuildRecord" /* 2069 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
+// Module 17773 (GuildSettingsModalSecurity)
+import nativeDefault from "native" /* 587 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import UserStore from "UserStore" /* 1378 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,7 +129,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
         if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-          const string = tmp(1127).intl.string;
+          const string = tmp(1126).intl.string;
           class M {
             constructor() {
               if (null != stateFromStores) {
@@ -162,7 +162,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               return props.getProps().mfaLevel;
             }
           }
-          const tmp30 = closure_12(tmp(4833).Text, obj2);
+          const tmp30 = closure_12(tmp(4886).Text, obj2);
           cResult[16] = tmp4.label;
           cResult[17] = tmp30;
           tmp28 = tmp30;
@@ -170,7 +170,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           tmp28 = cResult[17];
         }
         if (cResult[18] !== tmp13) {
-          const string2 = tmp(1127).intl.string;
+          const string2 = tmp(1126).intl.string;
           class M {
             constructor() {
               if (null != stateFromStores) {
@@ -288,7 +288,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                             return props.getProps().mfaLevel;
                           }
                         }
-                        tmp52[0] = stateFromStores(14314);
+                        tmp52[0] = stateFromStores(14578);
                         tmp52[1] = tmp4.image;
                         const tmp53 = closure_12(closure_5, tmp52);
                         cResult[35] = tmp4.image;
@@ -312,7 +312,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                         }
                       }
                       if (tmp54 === Symbol.for("react.memo_cache_sentinel")) {
-                        const obj3 = { variant: "text-sm/medium", color: "text-muted", children: obj9.format(tmp(1127).t["FK0+iX"], {}) };
+                        const obj3 = { variant: "text-sm/medium", color: "text-muted", children: obj9.format(tmp(1126).t["FK0+iX"], {}) };
                         class M {
                           constructor() {
                             if (null != stateFromStores) {
@@ -481,7 +481,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
         const obj8 = { text: tmp31, disabled: !tmp18, variant: str, onPress: tmp22, shrink: true };
-        const tmp36 = closure_12(tmp(5282).Button, obj8);
+        const tmp36 = closure_12(tmp(5594).Button, obj8);
         cResult[20] = tmp22;
         cResult[21] = tmp31;
         cResult[22] = !tmp18;
@@ -614,15 +614,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       obj.updateMFALevel(obj2);
     }
   }, items2);
-  const obj5 = { style: tmp.label, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl.string(guildId(1127).t.Wi9LEV) };
-  const Text = tmp2(4833).Text;
-  intl = tmp2(1127).intl;
+  const obj5 = { style: tmp.label, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl.string(guildId(1126).t.Wi9LEV) };
+  const Text = tmp2(4886).Text;
+  intl = tmp2(1126).intl;
   items4 = [closure_12(Text, obj5), , ];
   const obj6 = { style: tmp.button, children: closure_12(Button, obj7) };
-  Button = tmp2(5282).Button;
-  const intl2 = tmp2(1127).intl;
+  Button = tmp2(5594).Button;
+  const intl2 = tmp2(1126).intl;
   const string = intl2.string;
-  const t = tmp2(1127).t;
+  const t = tmp2(1126).t;
   const tmp15 = closure_14;
   if (stateFromStores1 === constants2.ELEVATED) {
     stringResult = string(t["MP0Ho+"]);
@@ -642,9 +642,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   let tmp17Result = null;
   if (hasItem) {
-    const obj8 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(guildId(1127).t["KG1V/E"]) };
-    const Text2 = tmp2(4833).Text;
-    intl3 = tmp2(1127).intl;
+    const obj8 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(guildId(1126).t["KG1V/E"]) };
+    const Text2 = tmp2(4886).Text;
+    intl3 = tmp2(1126).intl;
     tmp17Result = tmp17(Text2, obj8);
   }
   const obj9 = { children: items7 };
@@ -652,15 +652,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   items5 = [closure_13(closure_4, obj4), ];
   const obj10 = { style: tmp.center, children: items6 };
   items6 = [, ];
-  const obj11 = { source: stateFromStores(14314), style: tmp.image, resizeMode: "contain" };
+  const obj11 = { source: stateFromStores(14578), style: tmp.image, resizeMode: "contain" };
   items6[0] = closure_12(closure_5, obj11);
   const obj12 = { style: tmp.infoWrapper, children: closure_12(Text3, obj13) };
-  obj13 = { variant: "text-sm/medium", color: "text-muted", children: intl4.format(guildId(1127).t["FK0+iX"], {}) };
-  Text3 = tmp2(4833).Text;
-  intl4 = tmp2(1127).intl;
+  obj13 = { variant: "text-sm/medium", color: "text-muted", children: intl4.format(guildId(1126).t["FK0+iX"], {}) };
+  Text3 = tmp2(4886).Text;
+  intl4 = tmp2(1126).intl;
   items6[1] = closure_12(closure_4, obj12);
   items5[1] = closure_13(closure_4, obj10);
-  items7 = [closure_13(closure_4, obj3), closure_12(tmp2(6461).NavScrim, {})];
+  items7 = [closure_13(closure_4, obj3), closure_12(tmp2(6536).NavScrim, {})];
   return closure_13(tmp15, obj9);
 });
 const result = size.fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalSecurity.tsx");

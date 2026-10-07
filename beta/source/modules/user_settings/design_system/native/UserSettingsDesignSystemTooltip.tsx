@@ -1,22 +1,22 @@
-// Module ID: 15378
-// Function ID: 15379
+// Module ID: 15670
+// Function ID: 15671
 // Name: UserSettingsDesignSystemTooltip
-// Dependencies: [32, 19, 17, 21, 4837, 558, 576, 7784, 9657, 5282, 6621, 4833, 6578, 6546, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 558, 576, 8008, 9883, 5594, 6698, 4886, 6651, 6619, 2]
 
-// Module 15378 (UserSettingsDesignSystemTooltip)
+// Module 15670 (UserSettingsDesignSystemTooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
-import LayerScope2 from "LayerScope" /* 6578 */;
-import TableSwitchRow from "TableSwitchRow" /* 6621 */;
-import DeviceOrientation from "DeviceOrientation" /* 7784 */;
-import useTooltip from "useTooltip" /* 9657 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import LayerScope2 from "LayerScope" /* 6651 */;
+import TableSwitchRow from "TableSwitchRow" /* 6698 */;
+import DeviceOrientation from "DeviceOrientation" /* 8008 */;
+import useTooltip from "useTooltip" /* 9883 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -313,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/normal", style: first, children: items };
-    const Text = tmp(4833).Text;
+    const Text = tmp(4886).Text;
     items = ["Note: If your tooltip is not displaying or it is not in the right position/zIndex, consider adding or moving an existing", hasOwnProperty(Text_Text.Text, { variant: "text-sm/bold", children: " <LayerScope/>" }), " on the surface you expect to see the tooltip."];
     const tmp8 = metroImportDefault(Text, obj3);
     cResult[1] = tmp8;
@@ -339,7 +339,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: hasOwnProperty(closure_10, {}) };
-    const LayerScope = tmp(6578).LayerScope;
+    const LayerScope = tmp(6651).LayerScope;
     const tmp8 = hasOwnProperty(LayerScope, obj2);
     cResult[0] = tmp8;
     first = tmp8;

@@ -1,23 +1,23 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9805
+// Function ID: 9806
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 9559, 1086, 21, 4837, 588, 558, 576, 9579, 1127, 4833, 9582, 6796, 5040, 6413, 1189, 1619, 573, 9571, 5180, 5185, 6421, 2]
+// Dependencies: [19, 17, 9786, 1085, 21, 4890, 587, 558, 576, 9806, 1126, 4886, 9809, 6880, 5093, 4809, 1188, 1618, 573, 9798, 5409, 5414, 6496, 2]
 
-// Module 9578 (MoreTipsModal)
+// Module 9805 (MoreTipsModal)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9571 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 9579 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 9582 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 9798 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 9806 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 9809 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9559 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9786 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const MetricEvents = tmp(5185);
+const MetricEvents = tmp(5414);
 function headerTitle() {
   return null;
 }
@@ -85,7 +85,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol = Symbol;
           const header = tmp4.header;
           if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1127).intl;
+            const intl = tmp(1126).intl;
             const stringResult = intl.string(intl2.t.K5FKtc);
             cResult[10] = stringResult;
             tmp18 = stringResult;

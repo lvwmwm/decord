@@ -1,195 +1,64 @@
 // Module ID: 4609
 // Function ID: 4610
-// Dependencies: [19, 4598, 4602, 4590]
-// Exports: useViewModelInstance
+// Dependencies: [4610, 4619, 4620, 4621, 4622, 4623, 4624, 4615, 4625, 4626, 4627, 4628]
 
 // Module 4609
-import ArtboardByIndex from "ArtboardByIndex" /* 4598 */;
-import react from "react" /* 19 */;
+import installedNitro1 from "installedNitro1" /* 4615 */;
+import _mod4619 from "module_4619" /* 4619 */;
+import _mod4620 from "module_4620" /* 4620 */;
+import _mod4621 from "module_4621" /* 4621 */;
+import _mod4622 from "module_4622" /* 4622 */;
+import _mod4623 from "module_4623" /* 4623 */;
+import _mod4624 from "module_4624" /* 4624 */;
+import _mod4625 from "module_4625" /* 4625 */;
+import _mod4626 from "module_4626" /* 4626 */;
+import _mod4627 from "module_4627" /* 4627 */;
+import react_native from "react-native" /* 4628 */;
+import installWorkletsSupport_mod from "installWorkletsSupport" /* 4610 */;
 
-const require = globalThis.__r;
-let _require;
-
-let c2;
-let c3;
-({ useMemo: c2, useRef: c3 } = react);
-
-export const useViewModelInstance = function useViewModelInstance(arg0, instanceName) {
-  let closure_0;
-  let name;
-  let obj3;
-  _require = arg0;
-  instanceName = undefined;
-  if (instanceName != null) {
-    instanceName = instanceName.instanceName;
-  }
-  if (instanceName != null) {
-    name = instanceName.name;
-  }
-  if (instanceName == null) {
-    instanceName = name;
-  }
-  let artboardName;
-  if (instanceName != null) {
-    artboardName = instanceName.artboardName;
-  }
-  let viewModelName;
-  if (instanceName != null) {
-    viewModelName = instanceName.viewModelName;
-  }
-  let flag;
-  if (instanceName != null) {
-    flag = instanceName.useNew;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  let flag2;
-  if (instanceName != null) {
-    flag2 = instanceName.required;
-  }
-  if (flag2 == null) {
-    flag2 = false;
-  }
-  let onInit;
-  if (instanceName != null) {
-    onInit = instanceName.onInit;
-  }
-  const tmp5 = viewModelName(onInit);
-  const ref = tmp5;
-  tmp5.current = onInit;
-  let obj = require("react");
-  const items = [arg0, instanceName, artboardName, viewModelName, flag];
-  const disposableMemo = obj.useDisposableMemo(() => {
-    let obj11;
-    if (closure_0) {
-      const tmp6 = null != obj && "getViewModelInstance" in obj;
-      if (tmp6) {
-        let viewModelInstance = obj.getViewModelInstance();
-        if (viewModelInstance == null) {
-          viewModelInstance = null;
-        }
-        obj11 = { instance: viewModelInstance, needsDispose: false };
-        const obj2 = { instance: viewModelInstance, needsDispose: false };
-      } else {
-        const tmp7 = null != obj && "defaultArtboardViewModel" in obj;
-        if (tmp7) {
-          let viewModelByNameResult;
-          let instanceByName;
-          if (viewModelName) {
-            viewModelByNameResult = obj.viewModelByName(tmp3);
-            if (!viewModelByNameResult) {
-              const _HermesInternal3 = HermesInternal;
-              obj11 = { instance: null, needsDispose: false, error: "ViewModel '" + viewModelName + "' not found" };
-              const obj3 = { instance: null, needsDispose: false, error: "ViewModel '" + viewModelName + "' not found" };
-            }
-          } else {
-            let ArtboardByNameResult;
-            const defaultArtboardViewModel = obj.defaultArtboardViewModel;
-            if (artboardName) {
-              const obj5 = ArtboardByIndex;
-              ArtboardByNameResult = obj5.ArtboardByName(tmp2);
-            }
-            viewModelByNameResult = defaultArtboardViewModel(ArtboardByNameResult);
-            if (!viewModelByNameResult) {
-              let obj6;
-              if (artboardName) {
-                const _HermesInternal2 = HermesInternal;
-                obj6 = { instance: null, needsDispose: false, error: "Artboard '" + artboardName + "' not found or has no ViewModel" };
-                const obj4 = { instance: null, needsDispose: false, error: "Artboard '" + artboardName + "' not found or has no ViewModel" };
-              } else {
-                obj6 = { instance: null, needsDispose: false };
-              }
-              obj11 = obj6;
-            }
-          }
-          if (instanceName) {
-            instanceByName = viewModelByNameResult.createInstanceByName(tmp);
-          } else {
-            instanceByName = viewModelByNameResult.createDefaultInstance();
-          }
-          if (!instanceByName) {
-            let obj7;
-            if (instanceName) {
-              obj7 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
-              const _HermesInternal4 = HermesInternal;
-            }
-            obj11 = obj7;
-          }
-          if (instanceByName == null) {
-            instanceByName = null;
-          }
-          obj7 = { instance: instanceByName, needsDispose: true };
-          const obj8 = { instance: instanceByName, needsDispose: true };
-        } else {
-          let instanceByName1;
-          if (instanceName) {
-            instanceByName1 = obj.createInstanceByName(tmp);
-            if (!instanceByName1) {
-              const _HermesInternal = HermesInternal;
-              obj11 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
-              const obj9 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
-            }
-          } else if (tmp4) {
-            instanceByName1 = obj.createInstance();
-          } else {
-            instanceByName1 = obj.createDefaultInstance();
-          }
-          if (instanceByName1 == null) {
-            instanceByName1 = null;
-          }
-          obj11 = { instance: instanceByName1, needsDispose: true };
-          const obj10 = { instance: instanceByName1, needsDispose: true };
-        }
-      }
-    } else {
-      obj11 = { instance: "Reflect", needsDispose: true };
-    }
-    const current = obj11.instance && ref.current;
-    if (current) {
-      ref.current(obj11.instance);
-    }
-    return obj11;
-  }, (needsDispose) => {
-    const tmp = needsDispose.needsDispose && needsDispose.instance;
-    if (tmp) {
-      const obj = closure_0(instanceName[3]);
-      obj.callDispose(needsDispose.instance);
-    }
-  }, items);
-  const items1 = [disposableMemo.error];
-  let tmp7 = artboardName(function() {
-    let error = null;
-    if (disposableMemo.error) {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      error = new Error(tmp.error);
-    }
-    return error;
-  }, items1);
-  if (flag2) {
-    if (null === disposableMemo.instance) {
-      let str = "useViewModelInstance: Failed to get ViewModelInstance. Ensure the source has a valid ViewModel and instance available.";
-      let _Error = Error;
-      if (disposableMemo.error) {
-        let _HermesInternal = HermesInternal;
-        str = "useViewModelInstance: " + disposableMemo.error;
-      }
-      let self = this;
-      let self2 = this;
-      const _Error1 = new _Error(str);
-      throw _Error1;
-    }
-  }
-  const instance = disposableMemo.instance;
-  if (instance) {
-    let obj2 = { instance, error: null };
-    obj3 = obj2;
-  } else if (undefined === instance) {
-    obj3 = { instance: "Array", error: 0 };
-  } else {
-    obj3 = { instance: null, error: tmp7 };
-  }
-  return obj3;
-};
+let installWorkletsSupport = installWorkletsSupport_mod;
+installWorkletsSupport = installWorkletsSupport.installWorkletsSupport();
+for (const key10017 in _mod4619) {
+  exports[key10017] = _mod4619[key10017];
+  continue;
+}
+for (const key10021 in _mod4620) {
+  exports[key10021] = _mod4620[key10021];
+  continue;
+}
+for (const key10025 in _mod4621) {
+  exports[key10025] = _mod4621[key10025];
+  continue;
+}
+for (const key10029 in _mod4622) {
+  exports[key10029] = _mod4622[key10029];
+  continue;
+}
+for (const key10033 in _mod4623) {
+  exports[key10033] = _mod4623[key10033];
+  continue;
+}
+for (const key10037 in _mod4624) {
+  exports[key10037] = _mod4624[key10037];
+  continue;
+}
+for (const key10041 in installedNitro1) {
+  exports[key10041] = installedNitro1[key10041];
+  continue;
+}
+for (const key10045 in _mod4625) {
+  exports[key10045] = _mod4625[key10045];
+  continue;
+}
+for (const key10049 in _mod4626) {
+  exports[key10049] = _mod4626[key10049];
+  continue;
+}
+for (const key10053 in _mod4627) {
+  exports[key10053] = _mod4627[key10053];
+  continue;
+}
+for (const key10057 in react_native) {
+  exports[key10057] = react_native[key10057];
+  continue;
+}

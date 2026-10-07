@@ -1,10 +1,10 @@
-// Module ID: 7205
-// Function ID: 7206
+// Module ID: 7410
+// Function ID: 7411
 // Name: convertServerThreadMember
 // Dependencies: [2]
 // Exports: default
 
-// Module 7205 (convertServerThreadMember)
+// Module 7410 (convertServerThreadMember)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/threads/convertServerThreadMember.tsx");

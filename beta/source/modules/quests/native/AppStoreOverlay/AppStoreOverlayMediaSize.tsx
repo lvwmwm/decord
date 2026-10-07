@@ -1,13 +1,13 @@
-// Module ID: 10694
-// Function ID: 10695
+// Module ID: 10929
+// Function ID: 10930
 // Name: AppStoreOverlayMediaSize
-// Dependencies: [32, 19, 17, 2021, 1403, 558, 576, 2]
+// Dependencies: [32, 19, 17, 2022, 1402, 558, 576, 2]
 // Exports: getAppStoreOverlayCarouselImageUrl, getMediaSizeFromLoadEvent, getMediaTileSize
 
-// Module 10694 (AppStoreOverlayMediaSize)
+// Module 10929 (AppStoreOverlayMediaSize)
 import react_native from "react-native" /* 17 */;
-import AvatarUtils from "AvatarUtils" /* 1403 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2021 */;
+import AvatarUtils from "AvatarUtils" /* 1402 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2022 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,7 +33,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = react;
   const tmp3 = _slicedToArray(react.useState(map), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h(arg0, arg1) {
+    const fn = function o(arg0, arg1) {
       let closure_0 = arg0;
       dependencyMap = arg1;
       let tmp = dependencyMap(function(get) {
@@ -228,37 +228,28 @@ export const getAppStoreOverlayCarouselImageUrl = function getAppStoreOverlayCar
   return getSizedImageAssetURL(url, { size: 289, keepAspectRatio: true, format });
 };
 export const getMediaSizeFromLoadEvent = function getMediaSizeFromLoadEvent(nativeEvent) {
-  nativeEvent = nativeEvent.nativeEvent;
-  const source = nativeEvent.source;
-  let width;
-  if (source != null) {
-    width = source.width;
-  }
-  if (width == null) {
-    width = nativeEvent.width;
-  }
-  const source2 = nativeEvent.source;
   let height;
-  if (source2 != null) {
-    height = source2.height;
+  let width;
+  nativeEvent = nativeEvent.nativeEvent;
+  let source = nativeEvent;
+  if ("source" in nativeEvent) {
+    source = nativeEvent.source;
   }
-  if (height == null) {
-    height = nativeEvent.height;
-  }
-  let tmp3 = null;
+  ({ width, height } = source);
+  let tmp = null;
   if (null != width) {
-    tmp3 = null;
+    tmp = null;
     if (null != height) {
-      tmp3 = null;
+      tmp = null;
       if (width > 0) {
-        tmp3 = null;
+        tmp = null;
         if (height > 0) {
           size = { width, height };
-          tmp3 = size;
+          tmp = size;
         }
       }
     }
   }
-  return tmp3;
+  return tmp;
 };
 export const useAppStoreOverlayMediaSizes = tmp3;

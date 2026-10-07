@@ -1,22 +1,22 @@
-// Module ID: 11631
-// Function ID: 11632
+// Module ID: 11886
+// Function ID: 11887
 // Name: VoiceMessageUtils
-// Dependencies: [5, 1999, 11318, 11319, 1086, 3, 11632, 206, 12, 4892, 1253, 4802, 1370, 2]
+// Dependencies: [5, 1999, 11574, 11575, 1085, 3, 11887, 206, 12, 4945, 1252, 4855, 1369, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 11631 (VoiceMessageUtils)
+// Module 11886 (VoiceMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import byteLengthDefault from "byteLength" /* 206 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4892 */;
-import downsampleWaveformDefault from "downsampleWaveform" /* 11632 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4945 */;
+import downsampleWaveformDefault from "downsampleWaveform" /* 11887 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11318 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 11319 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11574 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 11575 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f108362 = (item) => Math.min(item, closure_1_13);
+const f109597 = (item) => Math.min(item, closure_1_13);
 let obj = function _startAudioRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -159,7 +159,7 @@ function stopAndGetAudioRecording() {
   if (mapped.length > closure_16) {
     arr3 = downsampleWaveformDefault(mapped, tmp5);
   }
-  const mapped1 = arr3.map(f108362);
+  const mapped1 = arr3.map(f109597);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped1);
@@ -327,7 +327,7 @@ export const generateBase64EncodedWaveform = function generateBase64EncodedWavef
   if (arg0.length > authStore3) {
     arr = downsampleWaveformDefault(arg0, tmp);
   }
-  const mapped = arr.map(f108362);
+  const mapped = arr.map(f109597);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped);

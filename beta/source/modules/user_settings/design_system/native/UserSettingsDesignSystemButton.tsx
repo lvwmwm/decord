@@ -1,34 +1,34 @@
-// Module ID: 15347
-// Function ID: 15348
+// Module ID: 15638
+// Function ID: 15639
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1086, 1241, 21, 558, 576, 15348, 15349, 5282, 7362, 6800, 9323, 13977, 7395, 13979, 9587, 9118, 13978, 4837, 588, 1491, 4801, 15350, 1987, 5280, 4833, 10154, 9313, 9319, 9321, 9320, 9318, 9317, 5746, 4544, 1104, 5292, 5918, 5438, 8374, 2]
+// Dependencies: [32, 19, 17, 1085, 1240, 21, 558, 576, 15639, 15640, 5594, 7575, 6884, 9550, 14249, 7608, 14251, 9814, 4821, 14250, 4890, 587, 1490, 4854, 15641, 1987, 5593, 4886, 10383, 9541, 9546, 9548, 9547, 9545, 9544, 5592, 4589, 1103, 5605, 5995, 5911, 8574, 2]
 // Exports: default
 
-// Module 15347 (UserSettingsDesignSystemButton)
+// Module 15638 (UserSettingsDesignSystemButton)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6800 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7395 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9118 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9313 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9317 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9318 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9319 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9320 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 9321 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 9587 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 10154 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 13978 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 15348 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4821 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6884 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7608 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9541 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9544 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9545 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 9546 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 9547 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 9548 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 9814 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 10383 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 14250 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 15639 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1241 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,12 +46,12 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const components_Button_Button = tmp(5282);
-const IconButton4 = tmp(7362);
-const ImageButton2 = tmp(9323);
-const ToggleButton2 = tmp(13977);
-const ToggleIconButton2 = tmp(13979);
-const AssetRegistryDefault12 = tmp(15349);
+const components_Button_Button = tmp(5594);
+const IconButton4 = tmp(7575);
+const ImageButton2 = tmp(9550);
+const ToggleButton2 = tmp(14249);
+const ToggleIconButton2 = tmp(14251);
+const AssetRegistryDefault12 = tmp(15640);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
@@ -320,7 +320,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const obj2 = { disabled: showDisabled, onPress: tmp15, label: variant, grow: true, loading: tmp8, variant, icon: AssetRegistryDefault };
+    const obj2 = { disabled: showDisabled, onPress: tmp15, label: variant, grow: true, loading: tmp8, variant, icon: AssetRegistryDefault2 };
     const IconButton2 = IconButton4.IconButton;
     cResult[4] = tmp8;
     cResult[5] = showDisabled;
@@ -349,7 +349,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const obj3 = { disabled: showDisabled, onPress: tmp10, accessibilityLabel: variant, loading: tmp8, variant, size: buttonSize, icon: AssetRegistryDefault };
+    const obj3 = { disabled: showDisabled, onPress: tmp10, accessibilityLabel: variant, loading: tmp8, variant, size: buttonSize, icon: AssetRegistryDefault2 };
     const IconButton = IconButton4.IconButton;
     cResult[12] = tmp8;
     cResult[13] = buttonSize;
@@ -408,7 +408,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       grow: true,
       loading: tmp5,
       variant,
-      icon: AssetRegistryDefault
+      icon: AssetRegistryDefault2
     };
     str2 = variant;
     if (variant == null) {
@@ -425,7 +425,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       loading: tmp5,
       variant,
       size: buttonSize,
-      icon: AssetRegistryDefault
+      icon: AssetRegistryDefault2
     };
     str = variant;
     if (variant == null) {
@@ -615,7 +615,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp7;
   }
-  const obj2 = { text: "Notifications", icon: AssetRegistryDefault2, pressed: first, onPress: tmp6, size: "md" };
+  const obj2 = { text: "Notifications", icon: AssetRegistryDefault3, pressed: first, onPress: tmp6, size: "md" };
   const ToggleButton = ToggleButton2.ToggleButton;
   const tmp8 = authStore(ToggleButton, obj2);
   cResult[2] = first;
@@ -628,7 +628,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   [first, closure_1] = react.useState(false);
   const obj = {
     text: "Notifications",
-    icon: AssetRegistryDefault2,
+    icon: AssetRegistryDefault3,
     pressed: first,
     onPress() {
       return closure_1(!first);
@@ -669,7 +669,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
       }
     }
   }
-  const obj2 = { accessibilityLabel: combined, icon: AssetRegistryDefault2, selectedIcon: AssetRegistryDefault10, pressed: first, onPress: tmp7, variant, size: "md" };
+  const obj2 = { accessibilityLabel: combined, icon: AssetRegistryDefault3, selectedIcon: AssetRegistryDefault10, pressed: first, onPress: tmp7, variant, size: "md" };
   const ToggleIconButton = ToggleIconButton2.ToggleIconButton;
   const tmp9 = authStore(ToggleIconButton, obj2);
   cResult[2] = first;
@@ -687,7 +687,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   [first, closure_1] = react.useState(false);
   const obj = {
     accessibilityLabel: "" + variant + " notifications",
-    icon: AssetRegistryDefault2,
+    icon: AssetRegistryDefault3,
     selectedIcon: AssetRegistryDefault10,
     pressed: first,
     onPress() {
@@ -712,10 +712,10 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   [first, closure_1] = react.useState(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { on: obj3, off: obj4 };
-    obj3 = { variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 };
+    obj3 = { variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault };
     cResult[0] = obj2;
     first1 = obj2;
-    obj4 = { variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 };
+    obj4 = { variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault };
   } else {
     first1 = cResult[0];
   }
@@ -739,7 +739,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp10;
   }
   const obj5 = { onPress: tmp9, size: "md" };
-  const IconButton = tmp(7362).IconButton;
+  const IconButton = tmp(7575).IconButton;
   const merged = Object.assign(toggleIconButtonProps);
   const tmp12 = authStore(IconButton, obj5);
   cResult[3] = tmp9;
@@ -750,10 +750,10 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let closure_1;
   let first;
   [first, closure_1] = react.useState(false);
-  const obj = { on: { variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 }, off: { variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 } };
+  const obj = { on: { variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault }, off: { variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault } };
   const useToggleIconButtonProps = useToggleButtonProps.useToggleIconButtonProps;
-  ({ variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 });
-  ({ variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 });
+  ({ variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault });
+  ({ variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault });
   const toggleIconButtonProps = useToggleIconButtonProps(obj, first);
   const obj4 = {
     onPress() {
@@ -896,7 +896,7 @@ export default function UserSettingsDesignSystemButton() {
   }, []);
   let obj2 = {
     headerRight() {
-      const obj = { onPress, icon: AssetRegistryDefault, size: "sm", variant: "secondary", accessibilityLabel: "Settings" };
+      const obj = { onPress, icon: AssetRegistryDefault2, size: "sm", variant: "secondary", accessibilityLabel: "Settings" };
       const IconButton = IconButton4.IconButton;
       return authStore(IconButton, obj);
     }
@@ -1187,7 +1187,7 @@ export default function UserSettingsDesignSystemButton() {
   Stack29 = require("Stack/Stack").Stack;
   const obj71 = {
     variant: "secondary",
-    icon: AssetRegistryDefault,
+    icon: AssetRegistryDefault2,
     label: "Supercalifragilisticexpialidocious",
     grow: true,
     onPress() {
@@ -1198,7 +1198,7 @@ export default function UserSettingsDesignSystemButton() {
   items29 = [closure_10(IconButton, obj71), , ];
   const obj72 = {
     variant: "secondary",
-    icon: AssetRegistryDefault,
+    icon: AssetRegistryDefault2,
     label: "Supercalifragilisticexpialidocious",
     grow: true,
     onPress() {
@@ -1209,7 +1209,7 @@ export default function UserSettingsDesignSystemButton() {
   items29[1] = closure_10(IconButton2, obj72);
   const obj73 = {
     variant: "secondary",
-    icon: AssetRegistryDefault,
+    icon: AssetRegistryDefault2,
     label: "Supercalifragilisticexpialidocious",
     grow: true,
     onPress() {
@@ -1383,7 +1383,7 @@ export default function UserSettingsDesignSystemButton() {
   items1[19] = closure_11(Stack48, obj125);
   items51 = [closure_10(closure_6, obj4), ];
   const obj127 = {
-    icon: AssetRegistryDefault,
+    icon: AssetRegistryDefault2,
     onPress() {
 
     },

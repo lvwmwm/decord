@@ -1,26 +1,26 @@
-// Module ID: 5440
-// Function ID: 5441
+// Module ID: 7268
+// Function ID: 7269
 // Name: CloudUpload
-// Dependencies: [109, 5, 32, 4836, 1196, 4886, 1086, 3, 1283, 5441, 5449, 1103, 569, 5483, 12, 1469, 5451, 5485, 5486, 5487, 5470, 5488, 5489, 5493, 1243, 5450, 5442, 5494, 5495, 1987, 5580, 1253, 2]
+// Dependencies: [109, 5, 32, 4889, 1195, 4939, 1085, 3, 1282, 7269, 7247, 7272, 1102, 569, 6478, 12, 1468, 7274, 7303, 7304, 7305, 6479, 7306, 7307, 7311, 1242, 7273, 7243, 7312, 7313, 1987, 7398, 1252, 2]
 
-// Module 5440 (CloudUpload)
+// Module 7268 (CloudUpload)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 569 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import Upload2 from "Upload" /* 5441 */;
-import InlineUploaderDefault from "InlineUploader" /* 5483 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import InlineUploaderDefault from "InlineUploader" /* 6478 */;
+import UploadPlatform from "UploadPlatform" /* 7247 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevSettingsStore from "DevSettingsStore" /* 4836 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1196 */;
-import NetworkStore from "NetworkStore" /* 4886 */;
-import Constants from "Constants" /* 1086 */;
+import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import NetworkStore from "NetworkStore" /* 4939 */;
+import Constants from "Constants" /* 1085 */;
+import Upload from "Upload" /* 7269 */;
 import size_mod from "module_2" /* 2 */;
 
-const Upload = Upload2;
 let c0, c5, c8;
 
 let c10;
@@ -212,12 +212,12 @@ class CloudUpload extends Upload {
       if (null != allowOptimization) {
         obj.allowOptimization = allowOptimization;
       }
-      const tmp13 = file.platform === Upload2.UploadPlatform.WEB && null != file.compressionMetadata;
+      const tmp13 = file.platform === UploadPlatform.UploadPlatform.WEB && null != file.compressionMetadata;
       if (tmp13) {
         obj.mimeType = file.compressionMetadata.originalContentType;
         obj.preCompressionSize = file.compressionMetadata.preCompressionSize;
       }
-      const tmp14 = file.platform === Upload2.UploadPlatform.WEB && null != file.originalMd5;
+      const tmp14 = file.platform === UploadPlatform.UploadPlatform.WEB && null != file.originalMd5;
       if (tmp14) {
         obj._originalMd5 = file.originalMd5;
       }
@@ -233,13 +233,13 @@ class CloudUpload extends Upload {
         if (typeof obj.origin === "string") {
           origin = obj.origin;
         } else {
-          origin = tmp11(5441).UploadOrigin[obj.origin];
+          origin = tmp11(7269).UploadOrigin[obj.origin];
         }
         uploadAnalytics.origin = origin;
       }
       const self3 = this;
       const self4 = this;
-      const defaultHttpClient = new tmp11(5449).DefaultHttpClient();
+      const defaultHttpClient = new tmp11(7272).DefaultHttpClient();
       obj._uploadHttpClient = defaultHttpClient;
       obj._libdiscoreEnabled = false;
       return obj;
@@ -280,7 +280,7 @@ class CloudUpload extends Upload {
     let obj;
     let tmp3;
     let tmp62;
-    if (this.item.platform === Upload2.UploadPlatform.REACT_NATIVE) {
+    if (this.item.platform === UploadPlatform.UploadPlatform.REACT_NATIVE) {
       const obj2 = { timeout: DurationsDefault.Millis.HOUR, backoff: tmp62, retries: 12 };
       const tmp6 = BackoffDefault;
       const result = 0.5 * DurationsDefault.Millis.SECOND;
@@ -301,7 +301,7 @@ class CloudUpload extends Upload {
     let retryOptsResult;
     let tmp42;
     const self = this;
-    if (this.item.platform === Upload2.UploadPlatform.REACT_NATIVE) {
+    if (this.item.platform === UploadPlatform.UploadPlatform.REACT_NATIVE) {
       const obj = { timeout: obj2, backoff: tmp42, retries: 8 };
       obj2 = { response: 30 * DurationsDefault.Millis.SECOND, deadline: 30 * DurationsDefault.Millis.MINUTE };
       const tmp4 = BackoffDefault;
@@ -320,7 +320,7 @@ class CloudUpload extends Upload {
     return obj.buildHeadersForMd5(this._originalMd5);
   }
   supportsResume() {
-    const _libdiscoreEnabled = this._libdiscoreEnabled || this.item.platform !== Upload2.UploadPlatform.REACT_NATIVE;
+    const _libdiscoreEnabled = this._libdiscoreEnabled || this.item.platform !== UploadPlatform.UploadPlatform.REACT_NATIVE;
     return _libdiscoreEnabled;
   }
   uploadFileToCloud() {
@@ -345,7 +345,7 @@ class CloudUpload extends Upload {
       const obj9 = log;
       log = log.log;
       const combined = "Uploading " + obj8.id;
-      if (self.item.platform === _self(dependencyMap[9]).UploadPlatform.REACT_NATIVE) {
+      if (self.item.platform === _self(dependencyMap[10]).UploadPlatform.REACT_NATIVE) {
         const _HermesInternal2 = HermesInternal;
         combined1 = "filename=" + obj8.item.filename + ", uri=" + obj8.item.uri;
       } else {
@@ -353,7 +353,7 @@ class CloudUpload extends Upload {
         combined1 = "filename=" + obj8.item.file.name;
       }
       log(combined, combined1);
-      if (self.item.platform === _self(dependencyMap[9]).UploadPlatform.REACT_NATIVE) {
+      if (self.item.platform === _self(dependencyMap[10]).UploadPlatform.REACT_NATIVE) {
         const obj4 = { type: self.item.mimeType, uri: self.item.uri, name: self.item.filename };
         let str6 = "application/octet-stream";
         if (null != obj4.type) {
@@ -368,11 +368,11 @@ class CloudUpload extends Upload {
         file = obj8.item.file;
         str4 = "application/octet-stream";
       }
-      const tmp19Result = _self(dependencyMap[10]);
+      const tmp19Result = _self(dependencyMap[11]);
       if (tmp19Result.canUploadNatively(self.item)) {
         self = this;
         const self2 = this;
-        const libdiscoreHttpClient = new tmp19(tmp20[10]).LibdiscoreHttpClient();
+        const libdiscoreHttpClient = new tmp19(tmp20[11]).LibdiscoreHttpClient();
         self._uploadHttpClient = libdiscoreHttpClient;
         self._libdiscoreEnabled = true;
         obj9.log("Using libdiscore client for file upload");
@@ -415,7 +415,7 @@ class CloudUpload extends Upload {
               return obj3;
             } else {
               const obj4 = { url, headers: { "Content-Range": "bytes */*" }, rejectWithError: true, retries: 0, timeout: obj5, signal: self._abortController.signal };
-              obj5 = { deadline: 30 * _self(dependencyMap[11]).Millis.SECOND };
+              obj5 = { deadline: 30 * _self(dependencyMap[12]).Millis.SECOND };
               const _uploadHttpClient = self._uploadHttpClient;
               const doUploadResult = _uploadHttpClient.doUpload(obj4);
               _self = 1;
@@ -533,7 +533,7 @@ class CloudUpload extends Upload {
                   tmp16 = tmp14;
                 }
               }
-              const obj5 = tmp(closure_2[14]);
+              const obj5 = tmp(closure_2[15]);
               tmp16.onRequestProgress = obj5.throttle(self.createResumeAwareProgressFn(2), 50);
               const _uploadHttpClient = obj11._uploadHttpClient;
               const obj6 = { fileByteRange: obj7 };
@@ -634,7 +634,7 @@ class CloudUpload extends Upload {
                 let request = { url, body, headers: obj4, signal: self._abortController.signal, onRequestProgress: obj8.throttle(self.createResumeAwareProgressFn(0), 50), retries: 0, rejectWithError: true, timeout };
                 obj4 = { "Content-Type": next };
                 timeout = retryOptsResult.timeout;
-                obj8 = iter4(next[14]);
+                obj8 = iter4(next[15]);
                 let c4 = 0;
                 function* _loop(arg0, value) {
                   let c3;
@@ -687,7 +687,7 @@ class CloudUpload extends Upload {
                               const str = "Error uploading ";
                               logger.warn("Error uploading " + request.id + ": " + request.message + ", attempting resumption");
                               request.uploadAnalytics.uploadResumptionReason = request.messageShort;
-                              const obj10 = uploadResumptionPosition(retries[15]);
+                              const obj10 = uploadResumptionPosition(retries[16]);
                               num7 = obj10.awaitOnline();
                               c5 = 5;
                               c6 = 1;
@@ -936,8 +936,8 @@ class CloudUpload extends Upload {
       let fileSize;
       let value;
       const uri = self.item.uri;
-      const getFileSize = value(c2[16]).getFileSize;
-      const tmp9 = value(c2[16]);
+      const getFileSize = value(c2[17]).getFileSize;
+      const tmp9 = value(c2[17]);
       if (getFileSize != null) {
         fileSize = getFileSize(uri);
       }
@@ -1103,16 +1103,16 @@ class CloudUpload extends Upload {
                       let tmp145 = null;
                       if (closure_133_0.allowOptimization) {
                         tmp145 = null;
-                        if (closure_133_0.item.platform === v0(closure_2[9]).UploadPlatform.WEB) {
+                        if (closure_133_0.item.platform === v0(closure_2[10]).UploadPlatform.WEB) {
                           tmp145 = null;
                           if (true !== closure_133_0.item.imageConversionEvaluated) {
                             tmp145 = null;
                             if (null != closure_133_0.item.file) {
                               str = "heic";
-                              const obj15 = v0(closure_2[17]);
+                              const obj15 = v0(closure_2[18]);
                               if (!obj15.isHeicFile(closure_133_0.item.file)) {
                                 let str2 = null;
-                                const obj16 = v0(closure_2[17]);
+                                const obj16 = v0(closure_2[18]);
                                 if (obj16.isJxrFile(closure_133_0.item.file)) {
                                   str2 = "jxr";
                                 }
@@ -1125,26 +1125,26 @@ class CloudUpload extends Upload {
                       }
                       str = tmp145;
                       if (null != str) {
-                        if (closure_133_0.item.platform === v0(closure_2[9]).UploadPlatform.WEB) {
+                        if (closure_133_0.item.platform === v0(closure_2[10]).UploadPlatform.WEB) {
                           if (null != closure_133_0.item.file) {
                             const tmp162 = null != closure_133_0.mimeType && "" !== closure_133_0.mimeType;
                             if (!tmp162) {
                               let heicMimeTypeResult;
                               const tmp165 = closure_133_0;
                               if ("heic" === str) {
-                                const obj18 = v0(closure_2[17]);
+                                const obj18 = v0(closure_2[18]);
                                 heicMimeTypeResult = obj18.heicMimeType(closure_133_0.item.file);
                               } else {
-                                const obj17 = v0(closure_2[17]);
+                                const obj17 = v0(closure_2[18]);
                                 heicMimeTypeResult = obj17.jxrMimeType(closure_133_0.item.file);
                               }
                               tmp165.mimeType = heicMimeTypeResult;
                             }
                             if ("heic" === str) {
-                              const HeicUploadConversionExperiment = v0(closure_2[18]).HeicUploadConversionExperiment;
+                              const HeicUploadConversionExperiment = v0(closure_2[19]).HeicUploadConversionExperiment;
                               config = HeicUploadConversionExperiment.getConfig({ location: "CloudUpload.tryConvertToJpeg.heic" });
                             } else {
-                              const JxrUploadConversionExperiment = v0(closure_2[19]).JxrUploadConversionExperiment;
+                              const JxrUploadConversionExperiment = v0(closure_2[20]).JxrUploadConversionExperiment;
                               config = JxrUploadConversionExperiment.getConfig({ location: "CloudUpload.tryConvertToJpeg.jxr" });
                             }
                             if (config.enabled) {
@@ -1171,7 +1171,7 @@ class CloudUpload extends Upload {
                         closure_133_0.handleComplete(closure_133_0.id);
                       } else {
                         if (closure_133_0.allowOptimization) {
-                          if (closure_133_0.item.platform === v0(closure_2[9]).UploadPlatform.WEB) {
+                          if (closure_133_0.item.platform === v0(closure_2[10]).UploadPlatform.WEB) {
                             const tmp295 = v0;
                             if (!tmp295) {
                               if (true !== closure_133_0.item.imageConversionEvaluated) {
@@ -1186,7 +1186,7 @@ class CloudUpload extends Upload {
                         c8 = 6;
                         c9 = 1;
                         const obj9 = { value: _default.getUploadPayload(closure_133_0), done: false };
-                        _default = v0(closure_2[21]).default;
+                        _default = v0(closure_2[22]).default;
                         return obj9;
                       }
                     }
@@ -1239,7 +1239,7 @@ class CloudUpload extends Upload {
                       const tmp113 = null == closure_133_0._originalMd5 && null != file;
                       if (tmp113) {
                         closure_3 = closure_133_0;
-                        const obj10 = status(closure_2[20]);
+                        const obj10 = status(closure_2[21]);
                         c8 = 4;
                         c9 = 1;
                         const obj14 = { value: fromBlobResult.catch(() => null), done: false };
@@ -1311,7 +1311,7 @@ class CloudUpload extends Upload {
                   return obj22;
                 } else {
                   closure_6 = value;
-                  const obj28 = v0(closure_2[22]);
+                  const obj28 = v0(closure_2[23]);
                   createAttachmentURL = obj28.getUploadTarget(closure_133_0.item.target);
                   if (null != closure_6.filename) {
                     if ("" !== closure_6.filename) {
@@ -1398,7 +1398,7 @@ class CloudUpload extends Upload {
                   }
                   const _HermesInternal2 = HermesInternal;
                   error("Requesting upload url failed with code " + closure_2 + " for " + closure_133_0.id);
-                  const obj3 = status(closure_2[24]);
+                  const obj3 = status(closure_2[25]);
                   obj3.captureException(closure_11);
                 }
                 closure_133_0.handleError(closure_10);
@@ -1497,7 +1497,7 @@ class CloudUpload extends Upload {
       }
       let c2 = 0;
       let closure_1 = tmp;
-      const obj16 = size(c2[22]);
+      const obj16 = size(c2[23]);
       if (!obj16.getUploadTarget(self.item.target).shouldReactNativeCompressUploads) {
         self.uploadAnalytics.compressAndExtractDisabled = true;
         logger.log("reactNativeCompressAndExtractData() disabled by upload target");
@@ -1515,7 +1515,7 @@ class CloudUpload extends Upload {
         let c1;
         let v0;
         const reactNativeFileIndex = v0.reactNativeFileIndex;
-        const tmp6 = v0(name[25]);
+        const tmp6 = v0(name[26]);
         v0 = reactNativeFileIndex;
         const getAttachmentFile = tmp6.getAttachmentFile;
         const tmp7 = v0;
@@ -1599,7 +1599,7 @@ class CloudUpload extends Upload {
                     const fileSize = size.fileSize;
                     size = fileSize;
                     if (fileSize == null) {
-                      const obj3 = size(c2[26]);
+                      const obj3 = size(c2[27]);
                       let c3 = 2;
                       c4 = 1;
                       const obj9 = { value: obj3.getFileData(uri), done: false };
@@ -1675,7 +1675,7 @@ class CloudUpload extends Upload {
       let sizeBefore;
       let unknown_error;
       let conversionFailureReason = tmp;
-      const obj9 = unknown_error(hashTimeMs[27]);
+      const obj9 = unknown_error(hashTimeMs[28]);
       const imageAttachmentMezzanineV2Config = obj9.getImageAttachmentMezzanineV2Config({ location: "CloudUpload.maybeConvertToWebP" });
       const tmp87 = unknown_error;
       if (!imageAttachmentMezzanineV2Config.enabled) {
@@ -1704,7 +1704,7 @@ class CloudUpload extends Upload {
       const _performance2 = performance;
       closure_2 = performance.now();
       value = { compressTimeMs: 0 };
-      await tmp87(hashTimeMs[29])(hashTimeMs[28], hashTimeMs.paths);
+      await tmp87(hashTimeMs[30])(hashTimeMs[29], hashTimeMs.paths);
       if (1 === c8) {
         let c7 = 0;
         let closure_7 = closure_6;
@@ -1843,7 +1843,7 @@ class CloudUpload extends Upload {
                   c3 = 1;
                   c4 = 2;
                   c5 = 1;
-                  const obj4 = { value: require("asyncRequire")(paths[30], paths.paths), done: false };
+                  const obj4 = { value: require("asyncRequire")(paths[31], paths.paths), done: false };
                   return obj4;
                 }
               }
@@ -1970,7 +1970,7 @@ class CloudUpload extends Upload {
   applyItemConversionAnalytics() {
     const self = this;
     const item = this.item;
-    const tmp = item.platform === Upload2.UploadPlatform.WEB && null != item.imageConversionAnalytics;
+    const tmp = item.platform === UploadPlatform.UploadPlatform.WEB && null != item.imageConversionAnalytics;
     if (tmp) {
       const result = self.applyConversionAnalytics(item.imageConversionAnalytics);
     }
@@ -2028,7 +2028,7 @@ class CloudUpload extends Upload {
               const obj4 = { value, done: true };
               return obj4;
             } else if (null != self.uploadedFilename) {
-              const obj2 = _self(c2[22]);
+              const obj2 = _self(c2[23]);
               const uploadTarget = obj2.getUploadTarget(tmp13.item.target);
               c2 = 1;
               const deleteUploadURL = uploadTarget.getDeleteUploadURL(tmp13.uploadedFilename);
@@ -2118,7 +2118,7 @@ class CloudUpload extends Upload {
                 c4 = 1;
                 c5 = 1;
                 const obj4 = { value: _default.getUploadPayload(self), done: false };
-                _default = response(url[21]).default;
+                _default = response(url[22]).default;
                 return obj4;
               }
             }
@@ -2132,7 +2132,7 @@ class CloudUpload extends Upload {
               return obj5;
             } else {
               closure_1 = value;
-              const obj9 = response(url[22]);
+              const obj9 = response(url[23]);
               const uploadTarget = obj9.getUploadTarget(closure_129_0.item.target);
               url = uploadTarget.getCreateAttachmentURL(closure_129_0.channelId);
               c3 = 1;

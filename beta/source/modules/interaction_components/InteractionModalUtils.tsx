@@ -1,30 +1,30 @@
-// Module ID: 17160
-// Function ID: 17161
+// Module ID: 17520
+// Function ID: 17521
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 2051, 5201, 2111, 4657, 5200, 13891, 7574, 1086, 558, 7573, 1985, 576, 1403, 8500, 6673, 504, 5907, 11, 585, 8605, 1127, 38, 5061, 7266, 7578, 5442, 1283, 1103, 2]
+// Dependencies: [5, 32, 19, 502, 2051, 7031, 2112, 4699, 7267, 14162, 7796, 1085, 558, 7795, 1985, 576, 1402, 8706, 6757, 504, 5984, 11, 584, 8812, 1126, 38, 5114, 7472, 7800, 7243, 1282, 1102, 2]
 
-// Module 17160 (InteractionModalUtils)
+// Module 17520 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import Server from "Server" /* 1985 */;
-import DraftStore from "DraftStore" /* 5201 */;
-import ComponentStateContext from "ComponentStateContext" /* 7573 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 8500 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8605 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 13891 */;
+import DraftStore from "DraftStore" /* 7031 */;
+import ComponentStateContext from "ComponentStateContext" /* 7795 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 8706 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8812 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 14162 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5200 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7574 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7267 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7796 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function validate(arr) {
   return c0;
 }
 function getData(arg0, arr, arg2) {
-  const f129364 = (type) => {
+  const f130973 = (type) => {
     let components;
     let items;
     let mapped;
@@ -54,7 +54,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f129364) };
+      const obj4 = { type: type.type, components: components.map(f130973) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -115,7 +115,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f129364)[0] };
+                const obj21 = { type: type.type, component: items.map(f130973)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -177,7 +177,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f129364);
+  return arr.map(f130973);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;

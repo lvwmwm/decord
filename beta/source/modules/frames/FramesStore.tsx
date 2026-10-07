@@ -1,15 +1,15 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 8703
+// Function ID: 8704
 // Name: FramesStore
-// Dependencies: [8497, 8499, 1097, 8500, 504, 585, 2]
+// Dependencies: [8704, 8705, 1096, 8706, 504, 584, 2]
 
-// Module 8496 (FramesStore)
+// Module 8703 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1097 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8499 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 8500 */;
-import FramesConstants from "FramesConstants" /* 8497 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1096 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 8706 */;
+import FramesConstants from "FramesConstants" /* 8704 */;
 import size from "module_2" /* 2 */;
 
 let set;

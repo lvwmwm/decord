@@ -1,9 +1,9 @@
-// Module ID: 4534
-// Function ID: 4535
+// Module ID: 4579
+// Function ID: 4580
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 558, 576, 4535, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4580, 2]
 
-// Module 4534 (BaseIconImage)
+// Module 4579 (BaseIconImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,10 +12,10 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useToken = tmp(4535);
+const useToken = tmp(4580);
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "diversity", height: "a" }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Symbol", height: "cursor" }, refresh_sm: { width: 18, height: 18 } };
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let accessibilityLabel;
   let accessible;

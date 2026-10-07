@@ -1,10 +1,10 @@
-// Module ID: 11825
-// Function ID: 11826
+// Module ID: 12081
+// Function ID: 12082
 // Name: useChangelogIdFromChannel
-// Dependencies: [5057, 558, 576, 504, 2]
+// Dependencies: [5110, 558, 576, 504, 2]
 
-// Module 11825 (useChangelogIdFromChannel)
-import MessageStore from "MessageStore" /* 5057 */;
+// Module 12081 (useChangelogIdFromChannel)
+import MessageStore from "MessageStore" /* 5110 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

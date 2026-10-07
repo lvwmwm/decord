@@ -1,26 +1,26 @@
-// Module ID: 4570
-// Function ID: 4571
+// Module ID: 4612
+// Function ID: 4613
 // Name: ReanimatedRexport
-// Dependencies: [1371, 1644, 4571, 2]
+// Dependencies: [1370, 1643, 4613, 2]
 
-// Module 4570 (ReanimatedRexport)
-import _mod1644 from "module_1644" /* 1644 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4571 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+// Module 4612 (ReanimatedRexport)
+import _mod1643 from "module_1643" /* 1643 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4613 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1644 = _mod1644;
+const _modDef1643 = _mod1643;
 
 if (PlatformUtils.isAndroid()) {
   const _Object = Object;
   const obj = { View: REAWorkaroundViewDefault };
-  const importDefaultResult = _modDef1644;
+  const importDefaultResult = _modDef1643;
   assign(importDefaultResult, obj);
 }
 const result = size.fileFinishedImporting("modules/reanimated/ReanimatedRexport.tsx");
-for (const key10033 in _mod1644) {
-  exports[key10033] = _mod1644[key10033];
+for (const key10033 in _mod1643) {
+  exports[key10033] = _mod1643[key10033];
   continue;
 }
 
-export default _modDef1644;
+export default _modDef1643;

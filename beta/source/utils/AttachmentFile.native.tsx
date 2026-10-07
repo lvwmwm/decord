@@ -1,14 +1,14 @@
-// Module ID: 5450
-// Function ID: 5451
+// Module ID: 7273
+// Function ID: 7274
 // Name: AttachmentFile
-// Dependencies: [5, 3, 38, 5441, 5451, 5442, 2]
+// Dependencies: [5, 3, 38, 7247, 7274, 7243, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 5450 (AttachmentFile)
+// Module 7273 (AttachmentFile)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import Upload from "Upload" /* 5441 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5451 */;
+import UploadPlatform from "UploadPlatform" /* 7247 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7274 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj = function _getAttachmentFile() {
               file = undefined;
               filename = undefined;
               const tmp45 = _modDef38;
-              tmp45(item.item.platform === Upload.UploadPlatform.REACT_NATIVE, "Upload must be in the React Native format");
+              tmp45(item.item.platform === UploadPlatform.UploadPlatform.REACT_NATIVE, "Upload must be in the React Native format");
               c6 = 1;
               c7 = 2;
               c8 = 1;
@@ -193,7 +193,7 @@ export const fileIsInAppDir = function fileIsInAppDir(uri) {
     const tmp2 = require;
     if (startsWithResult) {
       const startsWith = replaced.startsWith;
-      const tmp2Result = tmp2(5451);
+      const tmp2Result = tmp2(7274);
       startsWithResult = startsWith(tmp2Result.getAppDir());
     }
     return startsWithResult;

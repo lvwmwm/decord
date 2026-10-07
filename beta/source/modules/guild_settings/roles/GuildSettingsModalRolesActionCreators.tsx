@@ -1,11 +1,11 @@
-// Module ID: 17419
-// Function ID: 17420
+// Module ID: 17788
+// Function ID: 17789
 // Name: GuildSettingsModalRolesActionCreators
-// Dependencies: [5, 1086, 1283, 6742, 585, 2]
+// Dependencies: [5, 1085, 1282, 6826, 584, 2]
 
-// Module 17419 (GuildSettingsModalRolesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
+// Module 17788 (GuildSettingsModalRolesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ function updateGuildRole() {
   return obj(...arguments);
 }
 let obj = function _updateGuildRole() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
     let c0;
     let c1;
     let c2;
@@ -21,93 +21,24 @@ let obj = function _updateGuildRole() {
     let c4;
     let c5;
     let c6;
-    let hoist;
+    let color;
     let obj4;
     let obj6;
     let closure_0 = arg0;
-    if (hoist === 2) {
-      hoist = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let color;
-        let name;
-        let permissions;
-        let mentionable;
-        hoist = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            hoist = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            hoist = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_3 = tmp4;
-            let closure_2 = tmp;
-            c0 = undefined;
-            color = undefined;
-            name = undefined;
-            permissions = undefined;
-            mentionable = undefined;
-            ({ guildId: c0, roleId: c1, name: c2, permissions: c3, color: c4, hoist: c5, mentionable: c6 } = closure_0);
-            value = undefined;
-            c4 = 1;
-            hoist = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c4) {
-          if (arg0 === 1) {
-            hoist = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            hoist = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            const HTTP = closure_131_0(closure_131_2[2]).HTTP;
-            const request = { url: closure_131_4.GUILD_ROLE(c0, color), body: obj6, oldFormErrors: true, rejectWithError: obj4.rejectWithMigratedError() };
-            const patch = HTTP.patch;
-            obj6 = { name, permissions, color, hoist, mentionable };
-            color = c4;
-            if (c4 == null) {
-              color = 0;
-            }
-            obj4 = closure_131_0(closure_131_2[2]);
-            c4 = 2;
-            hoist = 1;
-            const obj7 = { value: patch(request), done: false };
-            return obj7;
-          }
-        } else if (arg0 === 1) {
-          hoist = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          hoist = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          obj = closure_131_1(closure_131_2[3]);
-          const result = obj.checkGuildTemplateDirty(c0);
-          hoist = 3;
-          const obj9 = { value, done: true };
-          return obj9;
-        }
-      } catch (tmp18) {
-        hoist = 3;
-        throw tmp18;
-      }
+    ({ guildId: c0, roleId: c1, name: c2, permissions: c3, color: c4, hoist: c5, mentionable: c6 } = closure_0);
+    await "Reflect";
+    const HTTP = closure_131_0(closure_131_2[2]).HTTP;
+    const request = { url: closure_131_4.GUILD_ROLE(c0, color), body: obj6, oldFormErrors: true, rejectWithError: obj4.rejectWithMigratedError() };
+    const patch = HTTP.patch;
+    obj6 = { name, permissions, color, hoist, mentionable };
+    if (c4 == null) {
+      color = 0;
     }
+    obj4 = closure_131_0(closure_131_2[2]);
+    const value = await patch(request);
+    obj = closure_131_1(closure_131_2[3]);
+    const result = obj.checkGuildTemplateDirty(c0);
+    return value;
   });
   return obj(...arguments);
 };

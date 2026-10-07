@@ -1,21 +1,21 @@
-// Module ID: 5723
-// Function ID: 5724
+// Module ID: 5567
+// Function ID: 5568
 // Name: IdleStore
-// Dependencies: [502, 1086, 4862, 1370, 2027, 1103, 585, 4453, 5724, 551, 504, 2]
+// Dependencies: [502, 1085, 4915, 1369, 2028, 1102, 584, 4490, 5568, 551, 504, 2]
 
-// Module 5723 (IdleStore)
+// Module 5567 (IdleStore)
 import _mod2 from "module_2" /* 2 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import DiscordNativeDefault from "DiscordNative" /* 4453 */;
-import Constants2 from "Constants" /* 4862 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import DiscordNativeDefault from "DiscordNative" /* 4490 */;
+import Constants2 from "Constants" /* 4915 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 
 let c3;
 
@@ -49,14 +49,14 @@ function checkIdleAFK() {
         if (diff <= Math.min(setting * DurationsDefault.Millis.SECOND, tmp)) {
           let tmp18 = c11 || c12;
           if (!tmp18) {
-            const tmp15Result = tmp15(1370);
+            const tmp15Result = tmp15(1369);
             tmp18 = tmp15Result.isAndroid() && closure_13;
             tmp15Result.isAndroid() && closure_13;
           }
           if (!tmp18) {
             const tmp20 = afk;
             if (tmp20) {
-              const tmp29Result = tmp29(585);
+              const tmp29Result = tmp29(584);
               tmp29Result.dispatch({ type: "AFK", afk: false });
             }
           }
@@ -103,7 +103,7 @@ if (PlatformUtils.isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(4453).powerMonitor;
+        const powerMonitor2 = tmp(4490).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(result) {
@@ -128,7 +128,7 @@ if (PlatformUtils.isPlatformEmbedded) {
           }
           checkIdleAFK();
           const _setTimeout = setTimeout;
-          let timerId = setTimeout(checkNativeIdle, 10 * tmp(1103).Millis.SECOND);
+          let timerId = setTimeout(checkNativeIdle, 10 * tmp(1102).Millis.SECOND);
         }
       }
     }

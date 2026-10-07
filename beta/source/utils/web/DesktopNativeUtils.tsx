@@ -1,17 +1,17 @@
-// Module ID: 5878
-// Function ID: 5879
+// Module ID: 5955
+// Function ID: 5956
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1086, 38, 4765, 1370, 510, 5879, 2026, 4, 5880, 5881, 1372, 1283, 4863, 2]
+// Dependencies: [32, 5, 1085, 38, 4787, 1369, 510, 5956, 5957, 4, 5958, 5959, 1371, 1282, 4916, 2]
 
-// Module 5878 (DesktopNativeUtils)
+// Module 5955 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1086 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2026 */;
-import flow_Client from "flow/Client" /* 4765 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4863 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 5879 */;
-import IPCEvents from "IPCEvents" /* 5880 */;
+import Constants from "Constants" /* 1085 */;
+import flow_Client from "flow/Client" /* 4787 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4916 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 5956 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 5957 */;
+import IPCEvents from "IPCEvents" /* 5958 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(5881);
+const FileExtensionUtils = tmp2(5959);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -511,7 +511,7 @@ let obj2 = {
   },
   clearObserverDebugCallback() {
     const discordUtils = this.getDiscordUtils();
-    const result = discordUtils.setObserverDebugCallback(null, GameDetectionTypes.GameDetectionDebugLevel.NONE, 0);
+    const result = discordUtils.setObserverDebugCallback(null, GameDetectionDebugLevel.GameDetectionDebugLevel.NONE, 0);
   },
   shouldDisplayNotifications() {
     const discordUtils = this.getDiscordUtils();
@@ -713,10 +713,56 @@ let obj2 = {
     }
   },
   copy(arg0) {
-    if (require("PlatformUtils").isPlatformEmbedded) {
-      const clipboard = DiscordNative.clipboard;
-      clipboard.copy(arg0);
-    }
+    let closure_0 = arg0;
+    return (async (arg0, value) => {
+      let clipboard;
+      let v3;
+      if (c0 === 2) {
+        c0 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c0 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c0 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c0 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else if (c0(dependencyMap[5]).isPlatformEmbedded) {
+              clipboard = clipboard.clipboard;
+              c1 = 1;
+              c0 = 1;
+              const obj4 = { value: clipboard.copy(closure_0), done: false };
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            obj = { value, done: true };
+            return obj;
+          }
+          c0 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp8) {
+          c0 = 3;
+          throw tmp8;
+        }
+      }
+    })();
   },
   copyImage(arg0, combined) {
     let closure_0 = arg0;
@@ -756,8 +802,8 @@ let obj2 = {
               closure_0 = undefined;
               tmp = undefined;
               combined = undefined;
-              const tmp55 = tmp(closure_2[3]);
-              tmp55(closure_0(closure_2[5]).isPlatformEmbedded, "Copy image method called outside native app");
+              const tmp53 = tmp(closure_2[3]);
+              tmp53(closure_0(closure_2[5]).isPlatformEmbedded, "Copy image method called outside native app");
               tmp(closure_2[3])(typeof DiscordNative.clipboard.copyImage === "function", "Copy image not supported");
               c3 = 1;
               c4 = 1;
@@ -774,19 +820,19 @@ let obj2 = {
               return obj5;
             } else {
               closure_0 = value;
-              const obj8 = closure_0(closure_2[11]);
-              tmp = obj8.decideFileExtension(closure_130_0, closure_130_1);
+              const obj12 = closure_0(closure_2[11]);
+              tmp = obj12.decideFileExtension(closure_130_0, closure_130_1);
               if (null != tmp) {
                 if (set2.has(tmp)) {
                   closure_0 = closure_130_1;
-                  const tmp35 = closure_0;
+                  const tmp33 = closure_0;
                   if (closure_130_1 == null) {
                     const _HermesInternal2 = HermesInternal;
                     closure_0 = "image/" + tmp;
                   }
                   c3 = 2;
                   c4 = 1;
-                  const obj6 = { value: transcodeImageToPng(tmp35, closure_0), done: false };
+                  const obj6 = { value: transcodeImageToPng(tmp33, closure_0), done: false };
                   return obj6;
                 }
               }
@@ -797,31 +843,57 @@ let obj2 = {
                 }
                 const clipboard2 = DiscordNative.clipboard;
                 const _Buffer2 = Buffer;
-                clipboard2.copyImage(Buffer.from(closure_0), combined);
-                c4 = 3;
-                return { value: "IconComponent", done: null };
+                c3 = 4;
+                c4 = 1;
+                const obj7 = { value: clipboard2.copyImage(Buffer.from(closure_0), combined), done: false };
+                return obj7;
               }
               combined = closure_130_0;
+            }
+          } else if (2 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj8 = { value, done: true };
+              return obj8;
+            } else {
+              closure_0 = value;
+              const clipboard = DiscordNative.clipboard;
+              const _Buffer = Buffer;
+              c3 = 3;
+              c4 = 1;
+              const obj9 = { value: clipboard.copyImage(Buffer.from(closure_0), "image.png"), done: false };
+              return obj9;
+            }
+          } else if (3 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj10 = { value, done: true };
+              return obj10;
+            } else {
+              c4 = 3;
+              const obj11 = { value: undefined, done: true };
+              return obj11;
             }
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            closure_0 = value;
-            const clipboard = DiscordNative.clipboard;
-            const _Buffer = Buffer;
-            clipboard.copyImage(Buffer.from(closure_0), "image.png");
-            c4 = 3;
-            obj = { value: undefined, done: true };
+            obj = { value, done: true };
             return obj;
+          } else {
+            c4 = 3;
+            return { value: "IconComponent", done: null };
           }
-        } catch (tmp41) {
+        } catch (tmp39) {
           c4 = 3;
-          throw tmp41;
+          throw tmp39;
         }
       }
     })();
@@ -863,6 +935,23 @@ let obj2 = {
               const obj4 = { value: tmp.arrayBuffer(), done: false };
               return obj4;
             }
+          } else if (1 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else {
+              tmp = value;
+              clipboard = clipboard.clipboard;
+              const _Buffer = Buffer;
+              c2 = 2;
+              c3 = 1;
+              const obj6 = { value: clipboard.copyImage(Buffer.from(tmp), closure_129_1), done: false };
+              return obj6;
+            }
           } else if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -871,16 +960,12 @@ let obj2 = {
             obj = { value, done: true };
             return obj;
           } else {
-            tmp = value;
-            clipboard = clipboard.clipboard;
-            const _Buffer = Buffer;
-            clipboard.copyImage(Buffer.from(tmp), closure_129_1);
             c3 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp13) {
+        } catch (tmp12) {
           c3 = 3;
-          throw tmp13;
+          throw tmp12;
         }
       }
     })();
@@ -889,7 +974,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(5881);
+        const tmpResult = tmp(5959);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;

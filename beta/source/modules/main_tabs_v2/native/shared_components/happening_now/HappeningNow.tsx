@@ -1,36 +1,36 @@
-// Module ID: 15688
-// Function ID: 15689
+// Module ID: 15983
+// Function ID: 15984
 // Name: HappeningNow
-// Dependencies: [32, 19, 17, 14829, 1086, 21, 6496, 4837, 588, 6066, 558, 576, 15689, 6380, 1253, 5297, 1492, 15690, 6584, 6604, 15697, 15698, 4570, 9547, 12, 1127, 8176, 15699, 15700, 15717, 15718, 15719, 15703, 15716, 15720, 15715, 15702, 1376, 2]
+// Dependencies: [32, 19, 17, 15114, 1085, 21, 6571, 4890, 587, 6140, 558, 576, 15984, 6452, 1252, 5590, 1491, 15985, 6657, 6681, 15992, 15993, 4612, 9774, 12, 1126, 8371, 15994, 15995, 16012, 16013, 16014, 15998, 16011, 16015, 16010, 15997, 1375, 2]
 
-// Module 15688 (HappeningNow)
+// Module 15983 (HappeningNow)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 9547 */;
-import HappeningNowAnalytics from "HappeningNowAnalytics" /* 15689 */;
-import happeningNowRankingUtils from "happeningNowRankingUtils" /* 15697 */;
-import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 15699 */;
-import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 15700 */;
-import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 15702 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 15703 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15715 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 15716 */;
-import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 15717 */;
-import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 15718 */;
-import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 15719 */;
-import HappeningNowActions from "HappeningNowActions" /* 15720 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 9774 */;
+import HappeningNowAnalytics from "HappeningNowAnalytics" /* 15984 */;
+import happeningNowRankingUtils from "happeningNowRankingUtils" /* 15992 */;
+import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 15994 */;
+import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 15995 */;
+import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 15997 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 15998 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16010 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16011 */;
+import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 16012 */;
+import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 16013 */;
+import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 16014 */;
+import HappeningNowActions from "HappeningNowActions" /* 16015 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 14829 */;
-import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 6496 */;
-import createStyles from "createStyles" /* 4837 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
+import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 6571 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-const f71677 = (arg0, ref) => {
+const f72392 = (arg0, ref) => {
   const obj = react2;
   const cResult = obj.c(3);
   if (cResult[0] === arg0) {
@@ -62,7 +62,7 @@ const f71677 = (arg0, ref) => {
   cResult[2] = tmp6;
   tmp4 = tmp6;
 };
-const f71678 = (arg0, ref) => {
+const f72393 = (arg0, ref) => {
   const GestureDetector = LegacyBaseButton.GestureDetector;
   const merged = Object.assign(arg0);
   return <GestureDetector gesture={gesture}>{null}</GestureDetector>;
@@ -279,8 +279,8 @@ const gesture = NativeResult.disallowInterruption(true);
 const maintainVisibleContentPosition = { disabled: true };
 const forwardRef = react.forwardRef;
 let ReactCompilerGating = ReactCompilerGating_mod;
-forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? f71677 : f71678).displayName = "HappeningNowScrollView";
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? f71677 : f71678);
+forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? f72392 : f72393).displayName = "HappeningNowScrollView";
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? f72392 : f72393);
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused, arg1) => {
   let closure_4;
@@ -424,21 +424,21 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
   listRef = listRef.listRef;
   const cards = listRef.cards;
   const tmp4 = closure_13();
-  const obj2 = listRef(1492);
+  const obj2 = listRef(1491);
   const isFocused = obj2.useIsFocused();
   if (cResult[0] !== isFocused) {
-    const obj3 = { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: 286.5, isFocused };
+    const obj3 = { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "bina", isFocused };
     cResult[0] = isFocused;
     cResult[1] = obj3;
     tmp6 = obj3;
   } else {
     tmp6 = cResult[1];
   }
-  [arr, tmp10] = ref(isFocused(15690)(cards, tmp6), 2);
+  [arr, tmp10] = ref(isFocused(15985)(cards, tmp6), 2);
   dependencyMap = tmp10;
-  ref(isFocused(15690)(cards, tmp6), 2);
-  const tmp11 = isFocused(6584);
-  const analyticsLocations = tmp11(isFocused(6604).ACTIVITIES_HAPPENING_NOW).analyticsLocations;
+  ref(isFocused(15985)(cards, tmp6), 2);
+  const tmp11 = isFocused(6657);
+  const analyticsLocations = tmp11(isFocused(6681).ACTIVITIES_HAPPENING_NOW).analyticsLocations;
   ref = react.useRef(0);
   const obj4 = react;
   if (cResult[2] === arr) {
@@ -511,8 +511,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
               return obj.cardSize(listRef) === closure_1_8;
             }
           }
-          const first = tmp8(tmp7(15698)(num8, tmp22), 2)[0];
-          ref(isFocused(15698)(num8, tmp22), 2);
+          const first = tmp8(tmp7(15993)(num8, tmp22), 2)[0];
+          ref(isFocused(15993)(num8, tmp22), 2);
           class S {
             constructor() {
               tmp = closure_1;
@@ -538,7 +538,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
               }
             }
             let result = obj6.filterHappeningNowCards(arr);
-            const tmpResult = tmp(15697);
+            const tmpResult = tmp(15992);
             const result1 = tmpResult.sortHappeningNowCards(result);
             class S {
               constructor() {
@@ -567,7 +567,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
               }
             }
           }
-          const tmpResult3 = tmp(15698);
+          const tmpResult3 = tmp(15993);
           const happeningNowScrollSnapping = tmpResult3.useHappeningNowScrollSnapping(listRef);
           if (cResult[16] !== tmp10) {
             class Y {
@@ -602,14 +602,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
               }
             }
           }
-          const tmpResult4 = tmp(4570);
+          const tmpResult4 = tmp(4612);
           const sharedValue = tmpResult4.useSharedValue([]);
           if (cResult[18] !== sharedValue) {
             class X {
               constructor(arg0) {
                 viewableItems = listRef.viewableItems;
                 obj = closure_0(closure_2[23]);
-                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F143728 */ }));
+                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F145401 */ }));
                 return;
               }
             }
@@ -636,7 +636,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
               constructor(arg0) {
                 viewableItems = listRef.viewableItems;
                 obj = closure_0(closure_2[23]);
-                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F143728 */ }));
+                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F145401 */ }));
                 return;
               }
             }
@@ -663,7 +663,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
               constructor(arg0) {
                 viewableItems = listRef.viewableItems;
                 obj = closure_0(closure_2[23]);
-                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F143728 */ }));
+                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F145401 */ }));
                 return;
               }
             }
@@ -673,7 +673,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
               constructor(arg0) {
                 viewableItems = listRef.viewableItems;
                 obj = closure_0(closure_2[23]);
-                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F143728 */ }));
+                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F145401 */ }));
                 return;
               }
             }
@@ -706,7 +706,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
               constructor(arg0) {
                 viewableItems = listRef.viewableItems;
                 obj = closure_0(closure_2[23]);
-                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F143728 */ }));
+                result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F145401 */ }));
                 return;
               }
             }
@@ -715,11 +715,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
                 constructor(arg0) {
                   viewableItems = listRef.viewableItems;
                   obj = closure_0(closure_2[23]);
-                  result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F143728 */ }));
+                  result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F145401 */ }));
                   return;
                 }
               }
-              const stringResult = obj10.string(tmp(1127).t["1+boPi"]);
+              const stringResult = obj10.string(tmp(1126).t["1+boPi"]);
               class S {
                 constructor() {
                   tmp = closure_1;
@@ -743,7 +743,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
                 constructor(arg0) {
                   viewableItems = listRef.viewableItems;
                   obj = closure_0(closure_2[23]);
-                  result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F143728 */ }));
+                  result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F145401 */ }));
                   return;
                 }
               }
@@ -753,7 +753,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
                 constructor(arg0) {
                   viewableItems = listRef.viewableItems;
                   obj = closure_0(closure_2[23]);
-                  result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F143728 */ }));
+                  result = obj.updateSharedValueArrayIfChanged(closure_6, viewableItems.map(() => { /* body not rendered: F145401 */ }));
                   return;
                 }
               }
@@ -800,8 +800,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
             cResult[36] = tmp30;
             cResult[37] = tmp25;
             cResult[38] = tmp4.containerInner;
-            cResult[39] = jsx(tmp(8176).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: tmp34, contentContainerStyle: tmp4.containerInner, data: tmp26, renderItem: tmp30, onViewableItemsChanged: tmp33, keyExtractor, getItemType });
-            const tmp41 = jsx(tmp(8176).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: tmp34, contentContainerStyle: tmp4.containerInner, data: tmp26, renderItem: tmp30, onViewableItemsChanged: tmp33, keyExtractor, getItemType });
+            cResult[39] = jsx(tmp(8371).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: tmp34, contentContainerStyle: tmp4.containerInner, data: tmp26, renderItem: tmp30, onViewableItemsChanged: tmp33, keyExtractor, getItemType });
+            const tmp41 = jsx(tmp(8371).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: tmp34, contentContainerStyle: tmp4.containerInner, data: tmp26, renderItem: tmp30, onViewableItemsChanged: tmp33, keyExtractor, getItemType });
           }
         }
         class D {
@@ -872,7 +872,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRef
   const tmp2 = listRef;
   let obj = listRef(data[16]);
   const isFocused = obj.useIsFocused();
-  let obj2 = { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: 286.5, isFocused };
+  let obj2 = { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "bina", isFocused };
   const tmp7 = ref(isFocused(data[17])(cards, obj2), 2);
   data = tmp7[0];
   const tmp6 = ref;

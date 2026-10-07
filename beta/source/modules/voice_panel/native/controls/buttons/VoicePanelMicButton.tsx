@@ -1,35 +1,35 @@
-// Module ID: 16966
-// Function ID: 16967
+// Module ID: 17326
+// Function ID: 17327
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 4854, 2104, 502, 2051, 1999, 4472, 1378, 4856, 21, 3, 4837, 558, 576, 6764, 9459, 504, 9474, 11647, 4570, 16843, 4802, 9392, 6066, 16967, 16968, 1127, 9461, 4833, 9115, 9460, 2]
+// Dependencies: [32, 19, 4907, 2105, 502, 2051, 1999, 4509, 1377, 4909, 21, 3, 4890, 558, 576, 6848, 9687, 504, 9702, 11901, 4612, 17203, 4855, 9620, 6140, 17327, 17328, 1126, 9689, 4886, 9341, 9688, 2]
 // Exports: PTTButton
 
-// Module 16966 (VoicePanelMicButton)
+// Module 17326 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import useMuteStates from "useMuteStates" /* 6764 */;
-import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9115 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 9392 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 9459 */;
-import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 9460 */;
-import useDeafStates from "useDeafStates" /* 9474 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11647 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 16967 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+import useMuteStates from "useMuteStates" /* 6848 */;
+import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9341 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 9620 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 9687 */;
+import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 9688 */;
+import useDeafStates from "useDeafStates" /* 9702 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17327 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4854 */;
-import ImpersonateStore from "ImpersonateStore" /* 2104 */;
+import GameConsoleStore from "GameConsoleStore" /* 4907 */;
+import ImpersonateStore from "ImpersonateStore" /* 2105 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import UserStore from "UserStore" /* 1378 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import UserStore from "UserStore" /* 1377 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let closure_14;
 let closure_15;
 let map1;
 let tmp4;
-const VoicePanelAnimatedButtonWrapperDefault = tmp4(16968);
+const VoicePanelAnimatedButtonWrapperDefault = tmp4(17328);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
@@ -361,9 +361,9 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   }
   if (cResult[5] !== mute) {
     let stringResult;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     if (mute) {
       stringResult = string(t.YqAjXy);
     } else {
@@ -415,10 +415,10 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     let tmp3Result;
     if (dominantMuteState === VoiceActionUtils.DominantMuteState.SERVER_MUTE) {
       const obj2 = { color: voicePanelButtonStyles.iconFillRed.color };
-      tmp3Result = map1(tmp(9115).MicrophoneDenyIcon, obj2);
+      tmp3Result = map1(tmp(9341).MicrophoneDenyIcon, obj2);
     } else {
       let color;
-      const VoicePanelRiveMicButton = tmp(9460).VoicePanelRiveMicButton;
+      const VoicePanelRiveMicButton = tmp(9688).VoicePanelRiveMicButton;
       const tmp3 = map1;
       if (mute) {
         color = tmp5.iconFillRed.color;

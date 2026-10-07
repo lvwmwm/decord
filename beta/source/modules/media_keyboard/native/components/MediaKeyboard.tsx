@@ -1,34 +1,34 @@
-// Module ID: 16296
-// Function ID: 16297
+// Module ID: 16607
+// Function ID: 16608
 // Name: MediaKeyboard
-// Dependencies: [19, 5201, 5200, 1615, 1086, 1490, 11394, 21, 558, 576, 1253, 4570, 4705, 1617, 16297, 4535, 588, 8784, 16298, 11526, 10135, 5451, 4703, 5441, 1370, 5440, 10133, 11571, 1127, 5375, 5388, 10138, 10140, 5402, 10142, 16299, 16300, 10144, 10145, 16301, 2]
+// Dependencies: [19, 7031, 7267, 1614, 1085, 1489, 11650, 21, 558, 576, 1252, 4612, 4747, 1616, 16608, 4580, 587, 9000, 16609, 11782, 10364, 7274, 4745, 7269, 1369, 7268, 10362, 11827, 1126, 5890, 5857, 10367, 10369, 5871, 10371, 16610, 16611, 10373, 10374, 16612, 2]
 
-// Module 16296 (MediaKeyboard)
-import intl6 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
-import KeyboardTypes from "KeyboardTypes" /* 1617 */;
-import ChatInputUtils from "ChatInputUtils" /* 4703 */;
-import DraftStore from "DraftStore" /* 5201 */;
-import AppsIcon from "AppsIcon" /* 5375 */;
-import ThreadIcon from "ThreadIcon" /* 5388 */;
-import ImageIcon from "ImageIcon" /* 5402 */;
-import Upload from "Upload" /* 5441 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5451 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10135 */;
-import PollsIcon from "PollsIcon" /* 10138 */;
-import AttachmentIcon from "AttachmentIcon" /* 10140 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10142 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10144 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11394 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11571 */;
-import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 16299 */;
-import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 16300 */;
+// Module 16607 (MediaKeyboard)
+import intl6 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
+import ChatInputUtils from "ChatInputUtils" /* 4745 */;
+import ThreadIcon from "ThreadIcon" /* 5857 */;
+import ImageIcon from "ImageIcon" /* 5871 */;
+import AppsIcon from "AppsIcon" /* 5890 */;
+import DraftStore from "DraftStore" /* 7031 */;
+import Upload from "Upload" /* 7269 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7274 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10364 */;
+import PollsIcon from "PollsIcon" /* 10367 */;
+import AttachmentIcon from "AttachmentIcon" /* 10369 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10371 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10373 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11650 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11827 */;
+import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 16610 */;
+import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 16611 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5200 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1615 */;
-import Constants from "Constants" /* 1086 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7267 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -180,7 +180,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                                               }
                                             }
                                             const tmp19Result2 = MediaKeyboardUtils;
-                                            const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(5441).UploadOrigin.IMAGE_PICKER);
+                                            const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7269).UploadOrigin.IMAGE_PICKER);
                                           }
                                         }
                                       }
@@ -236,7 +236,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                                             }
                                           }
                                           const tmp19Result2 = MediaKeyboardUtils;
-                                          const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(5441).UploadOrigin.IMAGE_PICKER);
+                                          const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7269).UploadOrigin.IMAGE_PICKER);
                                         }
                                       }
                                     }
@@ -285,7 +285,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                                                 }
                                               }
                                               const tmp19Result2 = MediaKeyboardUtils;
-                                              const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(5441).UploadOrigin.IMAGE_PICKER);
+                                              const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7269).UploadOrigin.IMAGE_PICKER);
                                             }
                                           }
                                         }
@@ -352,7 +352,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                                                 }
                                               }
                                               const tmp19Result2 = MediaKeyboardUtils;
-                                              const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(5441).UploadOrigin.IMAGE_PICKER);
+                                              const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7269).UploadOrigin.IMAGE_PICKER);
                                             }
                                           }
                                         }
@@ -408,7 +408,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                                               }
                                             }
                                             const tmp19Result2 = MediaKeyboardUtils;
-                                            const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(5441).UploadOrigin.IMAGE_PICKER);
+                                            const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7269).UploadOrigin.IMAGE_PICKER);
                                           }
                                         }
                                       }
@@ -529,7 +529,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                                     }
                                   }
                                   const tmp19Result2 = MediaKeyboardUtils;
-                                  const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(5441).UploadOrigin.IMAGE_PICKER);
+                                  const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7269).UploadOrigin.IMAGE_PICKER);
                                 }
                               }
                             }

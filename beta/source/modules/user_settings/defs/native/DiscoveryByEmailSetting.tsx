@@ -1,21 +1,21 @@
-// Module ID: 14372
-// Function ID: 14373
+// Module ID: 14656
+// Function ID: 14657
 // Name: DiscoveryByEmailSetting
-// Dependencies: [7421, 1086, 1127, 558, 576, 2027, 1391, 12074, 10874, 2]
+// Dependencies: [7634, 1085, 1126, 558, 576, 2028, 1390, 12333, 11129, 2]
 
-// Module 14372 (DiscoveryByEmailSetting)
+// Module 14656 (DiscoveryByEmailSetting)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12074 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12333 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const FlagUtils = tmp(1391);
+const FlagUtils = tmp(1390);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendDiscoveryFlags = Constants.FriendDiscoveryFlags;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

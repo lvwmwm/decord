@@ -1,15 +1,16 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12538
+// Function ID: 12539
 // Name: BugReportManager
-// Dependencies: [5, 17, 1358, 1086, 5046, 1370, 12221, 12223, 1267, 6540, 12285, 2]
+// Dependencies: [5, 17, 1357, 1085, 5099, 1369, 12477, 12479, 1266, 6613, 7282, 12539, 2]
 
-// Module 12284 (BugReportManager)
-import Constants from "Constants" /* 1086 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5046 */;
+// Module 12538 (BugReportManager)
+import Constants from "Constants" /* 1085 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
+import react_nativeDefault from "react-native" /* 7282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1358 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_3, duration;
@@ -198,6 +199,7 @@ class BugReportManager extends AutomaticLifecycleManager {
   }
   initBugReporter() {
     return (async (arg0, value) => {
+      let obj2;
       function addScreenshotEvent() {
         if (null == closure_3) {
           closure_3 = closure_1_9.addListener("screenshotTaken", closure_1_10);
@@ -211,8 +213,8 @@ class BugReportManager extends AutomaticLifecycleManager {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+          const obj3 = { value, done: true };
+          return obj3;
         } else {
           return { value: "IconComponent", done: null };
         }
@@ -228,18 +230,18 @@ class BugReportManager extends AutomaticLifecycleManager {
               throw value;
             } else if (arg0 === 2) {
               c3 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
+              const obj4 = { value, done: true };
+              return obj4;
             } else {
               let c1 = 0;
               closure_0 = undefined;
               isBugReporterEnabled = undefined;
               hasBugReporterAccess = undefined;
-              const NativePermissionManager = NativeModules.NativePermissionManager;
               c2 = 1;
               c3 = 1;
-              const obj4 = { value: NativePermissionManager.hasPhotoAuthorization(), done: false };
-              return obj4;
+              const obj5 = { value: obj2.hasPhotoAuthorization(), done: false };
+              obj2 = react_nativeDefault;
+              return obj5;
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -251,10 +253,10 @@ class BugReportManager extends AutomaticLifecycleManager {
           } else {
             closure_0 = value === closure_129_8.AUTHORIZED;
             isBugReporterEnabled = closure_129_6.isBugReporterEnabled;
-            const obj5 = closure_129_1(closure_129_2[10]);
-            hasBugReporterAccess = obj5.getConfig({ location: "native-BugReportManager" }).hasBugReporterAccess;
-            const obj6 = closure_129_0(closure_129_2[5]);
-            const isIOSResult = obj6.isIOS() || closure_0;
+            const obj6 = closure_129_1(closure_129_2[11]);
+            hasBugReporterAccess = obj6.getConfig({ location: "native-BugReportManager" }).hasBugReporterAccess;
+            const obj7 = closure_129_0(closure_129_2[5]);
+            const isIOSResult = obj7.isIOS() || closure_0;
             c3 = isIOSResult;
             const tmp8 = hasBugReporterAccess && isBugReporterEnabled && c3;
             if (tmp8) {
@@ -263,9 +265,9 @@ class BugReportManager extends AutomaticLifecycleManager {
             c3 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp11) {
+        } catch (tmp12) {
           c3 = 3;
-          throw tmp11;
+          throw tmp12;
         }
       }
     })();

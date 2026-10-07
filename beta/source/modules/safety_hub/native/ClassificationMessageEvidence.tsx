@@ -1,23 +1,23 @@
-// Module ID: 11245
-// Function ID: 11246
+// Module ID: 11503
+// Function ID: 11504
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1194, 1378, 7885, 7872, 1086, 21, 7378, 4837, 558, 576, 504, 4687, 11246, 11247, 7871, 4987, 7711, 7760, 11248, 5059, 11, 8109, 2]
+// Dependencies: [32, 19, 17, 1193, 1377, 8106, 8093, 1085, 21, 7591, 4890, 558, 576, 504, 4729, 11504, 11505, 8092, 5040, 7933, 7984, 11506, 5112, 11, 8303, 2]
 
-// Module 11245 (ClassificationMessageEvidence)
-import Constants from "Constants" /* 1086 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4987 */;
-import RowGeneratorDefault from "RowGenerator" /* 7378 */;
-import openMediaModal from "openMediaModal" /* 7711 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7871 */;
+// Module 11503 (ClassificationMessageEvidence)
+import Constants from "Constants" /* 1085 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5040 */;
+import RowGeneratorDefault from "RowGenerator" /* 7591 */;
+import openMediaModal from "openMediaModal" /* 7933 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8092 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
-import UserStore_mod from "UserStore" /* 1378 */;
-import SafetyHubStore from "SafetyHubStore" /* 7885 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7872 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import UserStore_mod from "UserStore" /* 1377 */;
+import SafetyHubStore from "SafetyHubStore" /* 8106 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f106845 = (arg0, arg1) => {
+const f108079 = (arg0, arg1) => {
   url = arg0;
   return size.getSize(url.url, (width, height) => {
     size = { width, height };
@@ -208,7 +208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                   });
                   const mapped = found.map((item) => {
                     let closure_0 = item;
-                    const promise = new Promise(f106845);
+                    const promise = new Promise(f108079);
                     const nextPromise = promise.then((result) => {
                       id = result;
                       return closure_1_4((arg0) => {
@@ -374,7 +374,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                       return username.getUsername();
                     }
                   }
-                  const tmp45 = closure_18(reactTag(11248), obj6);
+                  const tmp45 = closure_18(reactTag(11506), obj6);
                   cResult[38] = tmp34;
                   cResult[39] = tmp45;
                   tmp42 = tmp45;
@@ -420,7 +420,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                           }
                         }
                         const obj9 = { rowGenerator, message: tmp46, modifyRow: tmp36, pointerEvents: "none" };
-                        const tmp58 = closure_18(reactTag(8109), obj9);
+                        const tmp58 = closure_18(reactTag(8303), obj9);
                         cResult[46] = tmp36;
                         cResult[47] = tmp46;
                         cResult[48] = tmp58;
@@ -429,7 +429,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                     }
                   }
                 }
-                const tmpResult6 = tmp(5059);
+                const tmpResult6 = tmp(5112);
                 class J {
                   constructor() {
                     return username.getUsername();
@@ -587,10 +587,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
     const obj = ref(closure_2[14]);
     return obj.isThemeLight(id.theme);
   })) {
-    assetSource = resolveAssetSource(tmp12(11246));
+    assetSource = resolveAssetSource(tmp12(11504));
     tmp14 = tmp12;
   } else {
-    assetSource = resolveAssetSource(tmp12(11247));
+    assetSource = resolveAssetSource(tmp12(11505));
     tmp14 = tmp12;
   }
   const first2 = flaggedContent[0];
@@ -710,7 +710,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
     });
     const mapped = found.map((item) => {
       let closure_0 = item;
-      const promise = new Promise(f106845);
+      const promise = new Promise(f108079);
       const nextPromise = promise.then((result) => {
         id = result;
         return closure_1_4((arg0) => {
@@ -769,13 +769,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
       obj10 = obj4;
     } else {
       const obj6 = { ref, onTapImage: callback, inverted: false };
-      const items9 = [closure_18(tmp14(11248), obj6), ];
+      const items9 = [closure_18(tmp14(11506), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
-      const tmp14Result = tmp14(8109);
+      const tmp14Result = tmp14(8303);
       const _Date = Date;
       obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id, type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
-      createMessageRecord = tmp2(5059).createMessageRecord;
-      tmp2(5059);
+      createMessageRecord = tmp2(5112).createMessageRecord;
+      tmp2(5112);
       const self = this;
       const self2 = this;
       const tmp14Result2 = tmp14(11);

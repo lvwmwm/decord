@@ -1,24 +1,24 @@
-// Module ID: 2041
-// Function ID: 2042
+// Module ID: 2042
+// Function ID: 2043
 // Name: DismissibleContentShownStateStore
-// Dependencies: [5, 2042, 2043, 2044, 1086, 569, 1255, 2040, 2045, 1283, 2046, 1260, 558, 576, 504, 2047, 585, 2]
+// Dependencies: [5, 2043, 2044, 2045, 1085, 569, 1254, 2041, 1282, 2046, 1259, 558, 576, 504, 2047, 584, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown
 
-// Module 2041 (DismissibleContentShownStateStore)
+// Module 2042 (DismissibleContentShownStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import react from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import react_native from "react-native" /* 1260 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2040 */;
-import DismissibleContentServerArbitrationConstants from "DismissibleContentServerArbitrationConstants" /* 2044 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import react_native from "react-native" /* 1259 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2041 */;
+import DismissibleContentServerArbitrationConstants from "DismissibleContentServerArbitrationConstants" /* 2045 */;
 import Timers from "Timers" /* 2046 */;
 import isActionRequiredDefault from "isActionRequired" /* 2047 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2042 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2043 */;
-import Constants from "Constants" /* 1086 */;
-import module_1255 from "module_1255" /* 1255 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2043 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
+import Constants from "Constants" /* 1085 */;
+import module_1254 from "module_1254" /* 1254 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,14 +27,14 @@ let body, closure_3, closure_4, context, dependencyMap;
 
 let metroImportDefault;
 let metroRequire;
-const f84616 = (item) => {
+const f85679 = (item) => {
   content = undefined;
   if (content != null) {
     content = content.content;
   }
   return item !== content;
 };
-const f84619 = () => {
+const f85681 = () => {
   state.setState(() => {
     obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: true };
     new Map();
@@ -87,9 +87,6 @@ function withContent(currentlyShown, content) {
     return currentlyShown;
   }
 }
-function addWeightsToClientCandidates(arr) {
-  return arr.map((content) => ({ content, weight: 1 }));
-}
 let obj = function _arbitrateCandidates() {
   let pending;
   obj = _asyncToGenerator(async (context, arg1) => {
@@ -100,9 +97,8 @@ let obj = function _arbitrateCandidates() {
     return (async (arg0, value) => {
       let items;
       let obj8;
-      function isServerArbitrationEnabled() {
-        const DismissibleContentServerArbitrationExperiment = context(candidates[8]).DismissibleContentServerArbitrationExperiment;
-        return DismissibleContentServerArbitrationExperiment.getConfig({ location: "DismissibleContentShownStateStore" }).enabled;
+      function addWeightsToClientCandidates(arr) {
+        return arr.map((content) => ({ content, weight: 1 }));
       }
       function validateArbitrationResponseCandidates(found, candidates) {
         const mapped = candidates.map((content) => content.content);
@@ -151,34 +147,26 @@ let obj = function _arbitrateCandidates() {
               c5 = 3;
               return { value, done: true };
             } else {
-              found = undefined;
               body = undefined;
-              candidates = undefined;
-              if (isServerArbitrationEnabled()) {
-                found = arr3.filter((item) => set.has(item));
-                const tmp10 = addWeightsToClientCandidates(context.filter((item) => !set.has(item)));
-                candidates = tmp10;
-                if (0 === found.length) {
-                  c5 = 3;
-                  return { value: { context, candidates: tmp10, outcome: "client-only" }, done: true };
-                } else if (pending.pending) {
-                  c5 = 3;
-                  return { value: { context, candidates: tmp10, outcome: "server-backoff" }, done: true };
-                } else {
-                  c4 = 1;
-                  const HTTP = require("HTTPUtils").HTTP;
-                  const request = { url: constants.DISMISSIBLE_CONTENT_ARBITRATE, body: obj8, oldFormErrors: true, rejectWithError: true };
-                  const post = HTTP.post;
-                  c3 = 2;
-                  c5 = 1;
-                  obj8 = { candidates: found.map((content) => ({ content })) };
-                  const obj9 = { value: post(request), done: false };
-                  return obj9;
-                }
-              } else {
+              found = context.filter((item) => set.has(item));
+              const tmp28 = addWeightsToClientCandidates(context.filter((item) => !set.has(item)));
+              candidates = tmp28;
+              if (0 === found.length) {
                 c5 = 3;
-                const obj11 = { value: { context, candidates: addWeightsToClientCandidates(context), outcome: "client-only" }, done: true };
-                return obj11;
+                return { value: { context, candidates: tmp28, outcome: "client-only" }, done: true };
+              } else if (pending.pending) {
+                c5 = 3;
+                return { value: { context, candidates: tmp28, outcome: "server-backoff" }, done: true };
+              } else {
+                c4 = 1;
+                const HTTP = require("HTTPUtils").HTTP;
+                const request = { url: constants.DISMISSIBLE_CONTENT_ARBITRATE, body: obj8, oldFormErrors: true, rejectWithError: true };
+                const post = HTTP.post;
+                c3 = 2;
+                c5 = 1;
+                obj8 = { candidates: found.map((content) => ({ content })) };
+                const obj9 = { value: post(request), done: false };
+                return obj9;
               }
             }
           } else if (1 === tmp4) {
@@ -196,17 +184,17 @@ let obj = function _arbitrateCandidates() {
             body = value;
             candidates = body.body.candidates;
             validateArbitrationResponseCandidates(found, candidates);
-            const obj15 = { context, candidates: items, outcome: "server-success" };
+            const obj13 = { context, candidates: items, outcome: "server-success" };
             items = [];
             HermesBuiltin.arraySpread(items, candidates, HermesBuiltin.arraySpread(items, candidates, 0));
             c4 = 0;
             c5 = 3;
-            return { value: obj15, done: true };
+            return { value: obj13, done: true };
           }
-        } catch (tmp14) {
+        } catch (tmp11) {
           if (0 === c4) {
             c5 = 3;
-            throw tmp14;
+            throw tmp11;
           } else {
             c3 = 1;
           }
@@ -264,7 +252,7 @@ function withUpdateWinner(candidates, arg1) {
           const items1 = [];
           HermesBuiltin.arraySpread(items1, candidates3.keys(), 0);
           const shownFatigableCandidate = candidates.shownFatigableCandidate;
-          const found = items1.filter(f84616);
+          const found = items1.filter(f85679);
           const tmp9 = withContent;
           if (null != shownFatigableCandidate) {
             if (null != shownFatigableCandidate.content) {
@@ -381,7 +369,7 @@ let tmp5 = new BackoffDefault(1000, 60000);
 let closure_9 = tmp5;
 let closure_10 = {};
 let c11 = null;
-let closure_12 = module_1255.createWithEqualityFn(function initState() {
+let closure_12 = module_1254.createWithEqualityFn(function initState() {
   obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: false };
   new Map();
   new Set();
@@ -394,7 +382,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
   let tmp;
   let tmp4;
   function arbitrateCandidates() {
-    return closure_1_16(...arguments);
+    return closure_1_15(...arguments);
   }
   function applyArbitrateCandidatesResult(outcome) {
     const tmp = "client-only" !== outcome.outcome && "server-success" !== outcome.outcome;
@@ -503,7 +491,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
           let tmp10 = applyArbitrateCandidatesResult(closure_0);
           c1 = false;
           let tmp11 = closure_0;
-          obj = closure_0(closure_2[11]);
+          obj = closure_0(closure_2[10]);
           obj.batchUpdates(() => {
             state.setState((candidates) => {
               function nextFatigableContent(prevFatigableCandidate, candidates) {
@@ -565,7 +553,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
                 const items = [];
                 HermesBuiltin.arraySpread(items, candidates.keys(), 0);
                 const shownFatigableCandidate = obj.shownFatigableCandidate;
-                let found = items.filter(f84616);
+                let found = items.filter(f85679);
                 const tmp11 = closure_2_14;
                 if (null != shownFatigableCandidate) {
                   if (null != shownFatigableCandidate.content) {
@@ -671,7 +659,7 @@ function isStateInCooldown(shownFatigableCandidate) {
 }
 function reset() {
   obj = react_native;
-  obj.batchUpdates(f84619);
+  obj.batchUpdates(f85681);
   closure_10 = {};
   c11 = null;
   closure_9.succeed();
@@ -694,7 +682,7 @@ DismissibleContentShownStateStore.displayName = "DismissibleContentShownStateSto
 obj = {
   CONNECTION_OPEN() {
     obj = react_native;
-    obj.batchUpdates(f84619);
+    obj.batchUpdates(f85681);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();
@@ -703,7 +691,7 @@ obj = {
   LOGOUT() {
     let state;
     obj = react_native;
-    obj.batchUpdates(f84619);
+    obj.batchUpdates(f85681);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();

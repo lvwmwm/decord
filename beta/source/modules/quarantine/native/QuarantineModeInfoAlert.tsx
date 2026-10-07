@@ -1,20 +1,20 @@
-// Module ID: 5836
-// Function ID: 5837
+// Module ID: 5914
+// Function ID: 5915
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 1086, 21, 4837, 5837, 588, 558, 576, 1127, 1189, 4833, 5301, 2]
+// Dependencies: [19, 1085, 21, 4890, 5915, 587, 558, 576, 1126, 1188, 4886, 5783, 2]
 
-// Module 5836 (QuarantineModeInfoAlert)
+// Module 5914 (QuarantineModeInfoAlert)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AlertDefault from "Alert" /* 5301 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AlertDefault from "Alert" /* 5783 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles from "TextStyles" /* 5915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const tmp4 = closure_5();
   const header = tmp4.header;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.EouHwv);
     cResult[0] = stringResult;
     first = stringResult;
@@ -61,7 +61,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   const text = tmp4.text;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl3.t.zNPBMA);
     cResult[3] = stringResult1;
     tmp10 = stringResult1;

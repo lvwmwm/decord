@@ -1,11 +1,11 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 12475
+// Function ID: 12476
 // Name: StatusUtils
-// Dependencies: [1127, 2]
+// Dependencies: [1126, 2]
 // Exports: getStatusExpiryParts
 
-// Module 12219 (StatusUtils)
-import intl from "intl" /* 1127 */;
+// Module 12475 (StatusUtils)
+import intl from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/multi_account/StatusUtils.tsx");
@@ -43,15 +43,15 @@ export const getStatusExpiryParts = function getStatusExpiryParts(arg0) {
   const formatTimeResult = data.formatTime(date, { format: "short" });
   if (tmp2) {
     const obj = { kind: "today", dateString: data4.formatRelativeTime(0, "day", { numeric: "auto" }), timeString: formatTimeResult };
-    data4 = tmp10(1127).intl.data;
+    data4 = tmp10(1126).intl.data;
     obj3 = obj;
   } else if (tmp7) {
     const obj2 = { kind: "tomorrow", dateString: data3.formatRelativeTime(1, "day", { numeric: "auto" }), timeString: formatTimeResult };
-    data3 = tmp10(1127).intl.data;
+    data3 = tmp10(1126).intl.data;
     obj3 = obj2;
   } else {
     obj3 = { kind: "date", dateString: data2.formatDate(date, { dateStyle: "short" }), timeString: formatTimeResult };
-    data2 = tmp10(1127).intl.data;
+    data2 = tmp10(1126).intl.data;
   }
   return obj3;
 };

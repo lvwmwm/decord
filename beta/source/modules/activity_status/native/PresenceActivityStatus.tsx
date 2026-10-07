@@ -1,18 +1,16 @@
-// Module ID: 10389
-// Function ID: 10390
+// Module ID: 10620
+// Function ID: 10621
 // Name: PresenceActivityStatus
-// Dependencies: [19, 1086, 21, 7162, 8532, 5375, 9344, 10385, 558, 576, 10390, 10384, 10387, 2]
+// Dependencies: [19, 1085, 21, 7229, 10621, 8739, 5890, 9571, 10616, 558, 576, 10622, 10615, 10618, 2]
 
-// Module 10389 (PresenceActivityStatus)
+// Module 10620 (PresenceActivityStatus)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7162 */;
-import GameControllerIcon2 from "GameControllerIcon" /* 8532 */;
-import MusicIcon from "MusicIcon" /* 9344 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10384 */;
-import TvIcon from "TvIcon" /* 10385 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10387 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10390 */;
+import Constants from "Constants" /* 1085 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7229 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10615 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10618 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10621 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10622 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -22,31 +20,36 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 function getActivityStatusIcon(activity) {
-  let GameControllerIcon;
-  if (isEmbeddedActivityDefault(activity)) {
-    let AppsIcon;
-    if (false) {
-      AppsIcon = tmp8(8532).GameControllerIcon;
-    } else {
-      AppsIcon = tmp8(5375).AppsIcon;
-    }
-    GameControllerIcon = AppsIcon;
-  } else if (activity.type === ActivityTypes.PLAYING) {
-    GameControllerIcon = GameControllerIcon2.GameControllerIcon;
-  } else if (activity.type === ActivityTypes.LISTENING) {
-    GameControllerIcon = MusicIcon.MusicIcon;
-  } else {
-    if (activity.type !== ActivityTypes.WATCHING) {
-      if (activity.type !== ActivityTypes.STREAMING) {
-        GameControllerIcon = null;
-        if (activity.type === ActivityTypes.COMPETING) {
-          GameControllerIcon = GameControllerIcon2.GameControllerIcon;
+  let AppsIcon;
+  const flag = false;
+  if (!isEmbeddedActivityDefault(activity)) {
+    let GameControllerIcon;
+    const obj = conjurePresenceActivity;
+    if (!obj.isConjurePresenceActivity(activity)) {
+      if (activity.type === ActivityTypes.PLAYING) {
+        GameControllerIcon = tmp2(8739).GameControllerIcon;
+      } else if (activity.type === ActivityTypes.LISTENING) {
+        GameControllerIcon = tmp2(9571).MusicIcon;
+      } else {
+        if (activity.type !== ActivityTypes.WATCHING) {
+          if (activity.type !== ActivityTypes.STREAMING) {
+            GameControllerIcon = null;
+            if (activity.type === ActivityTypes.COMPETING) {
+              GameControllerIcon = tmp2(8739).GameControllerIcon;
+            }
+          }
         }
+        GameControllerIcon = tmp2(10616).TvIcon;
       }
     }
-    GameControllerIcon = TvIcon.TvIcon;
+    return GameControllerIcon;
   }
-  return GameControllerIcon;
+  if (flag) {
+    AppsIcon = tmp5(8739).GameControllerIcon;
+  } else {
+    AppsIcon = tmp5(5890).AppsIcon;
+  }
+  GameControllerIcon = AppsIcon;
 }
 const ActivityTypes = Constants.ActivityTypes;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -168,13 +171,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (tmp6) {
     const obj = { icon: tmp3, style: iconStyle };
-    tmp6 = React3(tmp(10384), obj);
+    tmp6 = React3(tmp(10615), obj);
   }
   const children = [tmp6, ];
   let tmp9 = !flag;
   if (tmp9) {
     const obj2 = { style: textStyle, maxFontSizeMultiplier, children: text };
-    tmp9 = React3(tmp(10387), obj2);
+    tmp9 = React3(tmp(10618), obj2);
   }
   children[1] = tmp9;
   return tmp4(tmp5, { children });

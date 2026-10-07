@@ -1,32 +1,55 @@
 // Module ID: 920
 // Function ID: 921
-// Dependencies: [916]
-// Exports: getNavigationEntry
+// Dependencies: [919, 915, 918, 921]
+// Exports: initMetric
 
 // Module 920
-import _mod916 from "module_916" /* 916 */;
+import _mod918 from "module_918" /* 918 */;
+import _mod919 from "module_919" /* 919 */;
+import generateUniqueID from "generateUniqueID" /* 921 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getNavigationEntry = () => {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
+export const initMetric = (name) => {
+  let tmpResult2;
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = -1;
   }
-  const _performance = _mod916.WINDOW.performance;
-  let first;
-  if (_performance != null) {
-    const getEntriesByType = _performance.getEntriesByType;
-    if (getEntriesByType != null) {
-      first = getEntriesByType("navigation")[0];
+  const obj = _mod919;
+  const navigationEntry = obj.getNavigationEntry();
+  let str = "navigate";
+  let str2 = "navigate";
+  if (navigationEntry) {
+    const _document = tmp(915).WINDOW.document;
+    let prerendering;
+    if (_document != null) {
+      prerendering = _document.prerendering;
     }
-  }
-  if (flag) {
-    if (first) {
-      if (first.responseStart > 0) {
-        const _performance2 = performance;
+    let str4 = "prerender";
+    if (!prerendering) {
+      str4 = "prerender";
+      const tmpResult = _mod918;
+      if (tmpResult.getActivationStart() <= 0) {
+        const _document2 = tmp(915).WINDOW.document;
+        let wasDiscarded;
+        if (_document2 != null) {
+          wasDiscarded = _document2.wasDiscarded;
+        }
+        let str5 = "restore";
+        if (!wasDiscarded) {
+          if (navigationEntry.type) {
+            const str6 = navigationEntry.type;
+            str = str6.replace(/_/g, "-");
+          }
+          str5 = str;
+        }
+        str4 = str5;
       }
     }
+    str2 = str4;
   }
-  return first;
+  const obj2 = { name, value: num, rating: "good", delta: 0, entries: [], id: tmpResult2.generateUniqueID(), navigationType: str2 };
+  tmpResult2 = generateUniqueID;
+  return obj2;
 };

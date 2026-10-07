@@ -1,0 +1,98 @@
+// Module ID: 4576
+// Function ID: 4577
+// Name: toastIconSubstitutions
+// Dependencies: [4577, 4792, 4795, 4797, 4800, 4803, 4805, 4806, 4807, 4808, 4809, 4810, 4811, 4812, 4815, 4816, 4817, 4819, 4820, 4822, 4823, 4825, 4826, 4828, 4829, 2]
+
+// Module 4576 (toastIconSubstitutions)
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4577 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
+import XLargeIcon from "XLargeIcon" /* 4795 */;
+import CircleXIcon from "CircleXIcon" /* 4797 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
+import WarningIcon from "WarningIcon" /* 4803 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4805 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 4806 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 4807 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 4808 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 4809 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 4810 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 4811 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 4815 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 4816 */;
+import EnvelopeIcon from "EnvelopeIcon" /* 4817 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 4819 */;
+import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 4820 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 4822 */;
+import VideoSlashIcon from "VideoSlashIcon" /* 4823 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 4825 */;
+import BoostGemIcon from "BoostGemIcon" /* 4826 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 4828 */;
+import ArrowsLeftRightIcon from "ArrowsLeftRightIcon" /* 4829 */;
+import size from "module_2" /* 2 */;
+
+const items = [CheckmarkLargeIcon.CheckmarkLargeIcon, "success"];
+const items1 = [items, , , , , ];
+const items2 = [CircleCheckIcon.CircleCheckIcon, "success"];
+items1[1] = items2;
+const items3 = [XLargeIcon.XLargeIcon, "critical"];
+items1[2] = items3;
+const items4 = [CircleXIcon.CircleXIcon, "critical"];
+items1[3] = items4;
+const items5 = [CircleErrorIcon.CircleErrorIcon, "critical"];
+items1[4] = items5;
+const items6 = [WarningIcon.WarningIcon, "critical"];
+items1[5] = items6;
+const items7 = [, ];
+const map = new Map(items1);
+items7[0] = AssetRegistryDefault;
+items7[1] = { variant: "success" };
+const items8 = [items7, , , , , , , , , , , , ];
+const items9 = [AssetRegistryDefault2, { variant: "success" }];
+items8[1] = items9;
+const items10 = [AssetRegistryDefault3, { variant: "critical" }];
+items8[2] = items10;
+const items11 = [AssetRegistryDefault4, { variant: "critical" }];
+items8[3] = items11;
+const items12 = [AssetRegistryDefault5, { variant: "critical" }];
+items8[4] = items12;
+const items13 = [AssetRegistryDefault6, { variant: "critical" }];
+items8[5] = items13;
+const items14 = [AssetRegistryDefault7, { icon: CircleInformationIcon.CircleInformationIcon }];
+items8[6] = items14;
+const items15 = [, ];
+({ icon: CircleInformationIcon.CircleInformationIcon });
+items15[0] = AssetRegistryDefault8;
+items15[1] = { icon: CircleInformationIcon.CircleInformationIcon };
+items8[7] = items15;
+const items16 = [, ];
+({ icon: CircleInformationIcon.CircleInformationIcon });
+items16[0] = AssetRegistryDefault9;
+items16[1] = { icon: EnvelopeIcon.EnvelopeIcon };
+items8[8] = items16;
+const items17 = [, ];
+({ icon: EnvelopeIcon.EnvelopeIcon });
+items17[0] = AssetRegistryDefault10;
+items17[1] = { icon: MicrophoneSlashIcon.MicrophoneSlashIcon };
+items8[9] = items17;
+const items18 = [, ];
+({ icon: MicrophoneSlashIcon.MicrophoneSlashIcon });
+items18[0] = AssetRegistryDefault11;
+items18[1] = { icon: VideoSlashIcon.VideoSlashIcon };
+items8[10] = items18;
+const items19 = [, ];
+({ icon: VideoSlashIcon.VideoSlashIcon });
+items19[0] = AssetRegistryDefault12;
+items19[1] = { icon: BoostGemIcon.BoostGemIcon };
+items8[11] = items19;
+const items20 = [, ];
+({ icon: BoostGemIcon.BoostGemIcon });
+items20[0] = AssetRegistryDefault13;
+items20[1] = { icon: ArrowsLeftRightIcon.ArrowsLeftRightIcon };
+items8[12] = items20;
+({ icon: ArrowsLeftRightIcon.ArrowsLeftRightIcon });
+const map1 = new Map(items8);
+const result = size.fileFinishedImporting("modules/toast/native/toastIconSubstitutions.tsx");
+
+export const TOAST_STATUS_ICONS = map;
+export const TOAST_PNG_SUBSTITUTIONS = map1;

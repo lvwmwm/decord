@@ -1,23 +1,23 @@
-// Module ID: 17031
-// Function ID: 17032
+// Module ID: 17390
+// Function ID: 17391
 // Name: LaunchPadUnreadServers
-// Dependencies: [19, 17, 2051, 4852, 1378, 1086, 21, 4837, 588, 558, 576, 6761, 17032, 504, 1189, 10414, 12606, 5896, 4850, 4848, 7296, 15737, 1485, 17037, 1127, 6494, 2]
+// Dependencies: [19, 17, 2051, 4905, 1377, 1085, 21, 4890, 587, 558, 576, 6845, 17391, 504, 1188, 10648, 12853, 5974, 4903, 4901, 7502, 16032, 1484, 17396, 1126, 6569, 2]
 
-// Module 17031 (LaunchPadUnreadServers)
+// Module 17390 (LaunchPadUnreadServers)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import transitionToChannel from "transitionToChannel" /* 4848 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
-import transitionToGuild from "transitionToGuild" /* 6761 */;
-import isGuildSelectableDefault from "isGuildSelectable" /* 17037 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import transitionToChannel from "transitionToChannel" /* 4901 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import transitionToGuild from "transitionToGuild" /* 6845 */;
+import isGuildSelectableDefault from "isGuildSelectable" /* 17396 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import ReadStateStore from "ReadStateStore" /* 4852 */;
-import UserStore from "UserStore" /* 1378 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
       }
     }
     const obj3 = { size: 48, borderRadius: 16, guildId, selected, onPress: tmp4, onLongPress: tmp5, backgroundColor: tmp3.maskStrokeStyle.backgroundColor };
-    const tmp9 = closure_10(onGuildSelect(17032), obj3);
+    const tmp9 = closure_10(onGuildSelect(17391), obj3);
     cResult[5] = guildId;
     cResult[6] = tmp5;
     cResult[7] = tmp4;
@@ -119,7 +119,7 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
   const callback = react.useCallback(() => {
     onGuildSelect(guildId);
   }, items);
-  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(17032), obj2) };
+  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(17391), obj2) };
   const callback1 = react.useCallback(() => {
     const obj = transitionToGuild;
     obj.transitionToGuild(guildId);
@@ -349,11 +349,11 @@ let closure_14 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((cha
     tmp22 = tmp25;
   }
 }) : ((channelId) => {
+  let channelIconSource;
   let items4;
   let items5;
   let obj7;
-  let tmp2Result;
-  let tmp8;
+  let tmp9Result;
   channelId = channelId.channelId;
   let stateFromStores1;
   const tmp = closure_12();
@@ -391,26 +391,26 @@ let closure_14 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((cha
     if (null != stateFromStores1) {
       let obj2 = { style: tmp.privateChannelIcon, user: stateFromStores1, guildId: "Array", size: tmp2(tmp3[14]).AvatarSizes.LARGE_48 };
       const Avatar = tmp2(tmp3[14]).Avatar;
-      tmp8 = closure_10(Avatar, obj2);
+      tmp9Result = closure_10(Avatar, obj2);
     }
     const items3 = [stateFromStores1, stateFromStores];
-    let tmp19Result = null;
+    let tmp20Result = null;
     if (null != stateFromStores) {
-      const obj5 = { onPress: tmp17, style: tmp.privateChannelWrapper, accessibilityRole: "button", accessible: true, children: items4 };
-      items4 = [tmp8, ];
+      const obj5 = { onPress: tmp18, style: tmp.privateChannelWrapper, accessibilityRole: "button", accessible: true, children: items4 };
+      items4 = [tmp9Result, ];
       let num = 0;
-      let tmp21 = stateFromStores2 > 0;
-      const tmp19 = closure_11;
-      const tmp20 = closure_4;
-      if (tmp21) {
+      let tmp22 = stateFromStores2 > 0;
+      const tmp20 = closure_11;
+      const tmp21 = closure_4;
+      if (tmp22) {
         const obj6 = { style: tmp.badgeWrapper, children: closure_10(stateFromStores(stateFromStores1[20]), obj7) };
         obj7 = { value: stateFromStores2, unread: true, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
-        tmp21 = closure_10(closure_5, obj6);
+        tmp22 = closure_10(closure_5, obj6);
       }
-      items4[1] = tmp21;
-      tmp19Result = tmp19(tmp20, obj5);
+      items4[1] = tmp22;
+      tmp20Result = tmp20(tmp21, obj5);
     }
-    return tmp19Result;
+    return tmp20Result;
   }
   let isGroupDMResult;
   if (stateFromStores != null) {
@@ -418,14 +418,15 @@ let closure_14 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((cha
   }
   if (isGroupDMResult) {
     const obj8 = { channel: stateFromStores, size: tmp2(stateFromStores1[14]).AvatarSizes.LARGE_48 };
-    const tmp14 = stateFromStores(stateFromStores1[15]);
-    tmp8 = closure_10(tmp14, obj8);
+    const tmp15 = stateFromStores(stateFromStores1[15]);
+    tmp9Result = closure_10(tmp15, obj8);
   } else if (null != stateFromStores) {
-    const obj9 = { style: items5, source: tmp2Result.getChannelIconSource(stateFromStores) };
+    const obj9 = { style: items5, source: channelIconSource };
     items5 = [tmp.privateChannelIcon];
     const tmp11 = stateFromStores(stateFromStores1[17]);
-    tmp2Result = tmp2(stateFromStores1[16]);
-    tmp8 = closure_10(tmp11, obj9);
+    const tmp2Result = tmp2(stateFromStores1[16]);
+    channelIconSource = tmp2Result.getChannelIconSource(stateFromStores);
+    tmp9Result = closure_10(tmp11, obj9);
   }
 }));
 ReactCompilerGating = ReactCompilerGating_mod;

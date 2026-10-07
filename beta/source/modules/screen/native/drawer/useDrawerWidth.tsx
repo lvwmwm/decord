@@ -1,14 +1,14 @@
-// Module ID: 10889
-// Function ID: 10890
+// Module ID: 11144
+// Function ID: 11145
 // Name: useDrawerWidth
-// Dependencies: [1086, 4699, 4697, 558, 576, 2]
+// Dependencies: [1085, 4741, 4739, 558, 576, 2]
 // Exports: getDrawerWidth
 
-// Module 10889 (useDrawerWidth)
+// Module 11144 (useDrawerWidth)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import useChatLayout from "useChatLayout" /* 4697 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4699 */;
+import Constants from "Constants" /* 1085 */;
+import useChatLayout from "useChatLayout" /* 4739 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4741 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

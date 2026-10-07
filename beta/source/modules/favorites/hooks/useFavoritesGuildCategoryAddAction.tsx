@@ -1,12 +1,12 @@
-// Module ID: 10471
-// Function ID: 10472
+// Module ID: 10705
+// Function ID: 10706
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 1086, 558, 576, 10472, 2076, 1127, 3364, 2]
+// Dependencies: [19, 1085, 558, 576, 10706, 2077, 1126, 3367, 2]
 
-// Module 10471 (useFavoritesGuildCategoryAddAction)
-import Constants from "Constants" /* 1086 */;
-import _modDef3364 from "module_3364" /* 3364 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 10472 */;
+// Module 10705 (useFavoritesGuildCategoryAddAction)
+import Constants from "Constants" /* 1085 */;
+import _modDef3367 from "module_3367" /* 3367 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 10706 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -40,8 +40,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       let tmp10;
       const _Symbol = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
-        const stringResult = intl.string(_modDef3364["1QJmIL"]);
+        const intl = tmp(1126).intl;
+        const stringResult = intl.string(_modDef3367["1QJmIL"]);
         cResult[2] = stringResult;
         tmp7 = stringResult;
       } else {
@@ -73,8 +73,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   if (obj.isFavoritesGuildId(id.getGuildId())) {
     tmp4 = null;
     if (id.type === ChannelTypes.GUILD_CATEGORY) {
-      const obj2 = { label: intl.string(_modDef3364["1QJmIL"]), perform: callback };
-      intl = tmp2(1127).intl;
+      const obj2 = { label: intl.string(_modDef3367["1QJmIL"]), perform: callback };
+      intl = tmp2(1126).intl;
       tmp4 = obj2;
     }
   }

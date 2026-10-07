@@ -1,14 +1,14 @@
-// Module ID: 17510
-// Function ID: 17511
+// Module ID: 17877
+// Function ID: 17878
 // Name: Placeholder
-// Dependencies: [19, 17, 21, 4837, 558, 576, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 2]
 
-// Module 17510 (Placeholder)
+// Module 17877 (Placeholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

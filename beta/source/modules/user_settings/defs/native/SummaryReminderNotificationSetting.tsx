@@ -1,18 +1,22 @@
-// Module ID: 15053
-// Function ID: 15054
+// Module ID: 15338
+// Function ID: 15339
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [7421, 10874, 1127, 2027, 15054, 2]
+// Dependencies: [7634, 558, 15339, 11129, 1126, 2028, 15340, 2]
 
-// Module 15053 (SummaryReminderNotificationSetting)
-import intl2 from "intl" /* 1127 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15054 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+// Module 15338 (SummaryReminderNotificationSetting)
+import intl2 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 15339 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15340 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const obj = {
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.xEqC6q);
@@ -24,11 +28,12 @@ const obj = {
   parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableSummaryReminderNotifications.useSetting,
   onValueChange: SummaryReminderNotificationUtils.onSummaryReminderNotificationSettingsChanged,
-  usePredicate() {
-    return false;
+  usePredicate: () => {
+    const obj = SummaryReminderNotificationExperiment;
+    return obj.useSummaryReminderNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/SummaryReminderNotificationSetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/SummaryReminderNotificationSetting.tsx");
 
 export default toggle;

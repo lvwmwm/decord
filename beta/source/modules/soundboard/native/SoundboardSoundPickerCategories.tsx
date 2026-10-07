@@ -1,30 +1,30 @@
-// Module ID: 16886
-// Function ID: 16887
+// Module ID: 17246
+// Function ID: 17247
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 16868, 1378, 1086, 21, 4837, 588, 558, 576, 5329, 5893, 1127, 9887, 4796, 16884, 8170, 1189, 5410, 5436, 4802, 4803, 4491, 504, 9417, 1619, 6066, 7695, 4710, 2]
+// Dependencies: [19, 17, 17228, 1377, 1085, 21, 4890, 587, 558, 576, 5805, 5971, 1126, 10116, 4849, 17244, 8364, 1188, 5879, 5909, 4855, 4856, 4528, 504, 9644, 1618, 6140, 7917, 4752, 2]
 
-// Module 16886 (SoundboardSoundPickerCategories)
+// Module 17246 (SoundboardSoundPickerCategories)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl6 from "intl" /* 1127 */;
-import ClockIcon from "ClockIcon" /* 4796 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
-import SoundboardTypes from "SoundboardTypes" /* 5329 */;
-import LockIcon from "LockIcon" /* 5410 */;
-import Pressables from "Pressables" /* 5436 */;
-import GuildIconDefault from "GuildIcon" /* 5893 */;
-import TrophyIcon from "TrophyIcon" /* 8170 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9417 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9887 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 16868 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16884 */;
+import nativeDefault from "native" /* 587 */;
+import intl6 from "intl" /* 1126 */;
+import ClockIcon from "ClockIcon" /* 4849 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4856 */;
+import SoundboardTypes from "SoundboardTypes" /* 5805 */;
+import LockIcon from "LockIcon" /* 5879 */;
+import Pressables from "Pressables" /* 5909 */;
+import GuildIconDefault from "GuildIcon" /* 5971 */;
+import TrophyIcon from "TrophyIcon" /* 8364 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9644 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10116 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 17228 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17244 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     let tmp30;
     const _Symbol4 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl5 = tmp(1127).intl;
+      const intl5 = tmp(1126).intl;
       const stringResult = intl5.string(intl6.t.y3LQCG);
       cResult[3] = stringResult;
       tmp30 = stringResult;
@@ -119,7 +119,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     let tmp26;
     const _Symbol3 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1127).intl;
+      const intl4 = tmp(1126).intl;
       const stringResult1 = intl4.string(intl6.t["+cGVV6"]);
       cResult[4] = stringResult1;
       tmp24 = stringResult1;
@@ -143,7 +143,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     let tmp20;
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const stringResult2 = intl3.string(intl6.t.Rtvk9X);
       cResult[7] = stringResult2;
       tmp20 = stringResult2;
@@ -158,7 +158,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     let tmp16;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const stringResult3 = intl2.string(intl6.t.sKt3xS);
       cResult[8] = stringResult3;
       tmp16 = stringResult3;
@@ -178,7 +178,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       let tmp6;
       let tmp8;
       if (cResult[9] !== category.categoryInfo.guild.name) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const obj4 = { guildName: category.categoryInfo.guild.name };
         const formatToPlainStringResult = intl.formatToPlainString(intl6.t.GXs41w, obj4);
         cResult[9] = category.categoryInfo.guild.name;
@@ -279,7 +279,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       }
       if (tmp42 == null) {
         const obj10 = { style: tmp5.keyboardItem, source: tmp12 };
-        tmp42 = authStore(tmp(1189).Icon, obj10);
+        tmp42 = authStore(tmp(1188).Icon, obj10);
       }
       cResult[19] = tmp11;
       cResult[20] = tmp13;
@@ -330,27 +330,27 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     tmp6 = null;
     tmp7 = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.FAVORITES === type) {
-    const intl4 = tmp2(1127).intl;
-    name = intl4.string(tmp2(1127).t.y3LQCG);
+    const intl4 = tmp2(1126).intl;
+    name = intl4.string(tmp2(1126).t.y3LQCG);
     tmp6 = AssetRegistryDefault;
     tmp7 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
-    const intl3 = tmp2(1127).intl;
-    name = intl3.string(tmp2(1127).t["+cGVV6"]);
+    const intl3 = tmp2(1126).intl;
+    name = intl3.string(tmp2(1126).t["+cGVV6"]);
     const obj = { style: tmp.keyboardItem };
-    tmp7 = authStore(tmp2(4796).ClockIcon, obj);
+    tmp7 = authStore(tmp2(4849).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {
-    const intl2 = tmp2(1127).intl;
-    name = intl2.string(tmp2(1127).t.Rtvk9X);
+    const intl2 = tmp2(1126).intl;
+    name = intl2.string(tmp2(1126).t.Rtvk9X);
     tmp6 = AssetRegistryDefault2;
     tmp7 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.SEARCH === type) {
-    const intl = tmp2(1127).intl;
-    name = intl.string(tmp2(1127).t.sKt3xS);
+    const intl = tmp2(1126).intl;
+    name = intl.string(tmp2(1126).t.sKt3xS);
     tmp6 = AssetRegistryDefault2;
     tmp7 = null;
     tmp14Result = null;
@@ -360,11 +360,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     tmp14Result = null;
     name = null;
     if (SoundboardTypes.SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
-      const intl5 = tmp2(1127).intl;
+      const intl5 = tmp2(1126).intl;
       const obj3 = { guildName: category.categoryInfo.guild.name };
-      name = intl5.formatToPlainString(tmp2(1127).t.GXs41w, obj3);
+      name = intl5.formatToPlainString(tmp2(1126).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = authStore(tmp2(8170).TrophyIcon, obj4);
+      tmp7 = authStore(tmp2(8364).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -379,14 +379,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   };
   obj6 = { style: items, children: items1 };
   items = [tmp.item, style];
-  const PressableOpacity = tmp2(5436).PressableOpacity;
+  const PressableOpacity = tmp2(5909).PressableOpacity;
   tmp15 = unpackModuleId;
   if (tmp14Result == null) {
     tmp14Result = tmp7;
   }
   if (tmp14Result == null) {
     const obj7 = { style: tmp.keyboardItem, source: tmp6 };
-    tmp14Result = tmp14(tmp2(1189).Icon, obj7);
+    tmp14Result = tmp14(tmp2(1188).Icon, obj7);
   }
   items1 = [tmp14Result, ];
   if (locked) {

@@ -1,15 +1,15 @@
-// Module ID: 14037
-// Function ID: 14038
+// Module ID: 14314
+// Function ID: 14315
 // Name: guilds
-// Dependencies: [2069, 2073, 1086, 7791, 8768, 8765, 2]
+// Dependencies: [2070, 2074, 1085, 8015, 9029, 9026, 2]
 
-// Module 14037 (guilds)
-import GuildRecord from "GuildRecord" /* 2069 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
-import RPCErrorDefault from "RPCError" /* 8765 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8768 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import Constants from "Constants" /* 1086 */;
+// Module 14314 (guilds)
+import GuildRecord from "GuildRecord" /* 2070 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
+import RPCErrorDefault from "RPCError" /* 9026 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

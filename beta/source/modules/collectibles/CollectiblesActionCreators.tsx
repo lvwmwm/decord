@@ -1,38 +1,38 @@
-// Module ID: 6965
-// Function ID: 6966
+// Module ID: 7052
+// Function ID: 7053
 // Name: CollectiblesActionCreators
-// Dependencies: [5, 4836, 2115, 6966, 6980, 6981, 6982, 6983, 6987, 6968, 6993, 6994, 1088, 1086, 7008, 7009, 4695, 585, 7010, 7011, 7013, 1283, 4737, 6758, 7012, 6978, 7014, 7015, 2]
-// Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
+// Dependencies: [5, 4889, 2116, 7053, 7067, 7068, 7069, 7070, 7074, 7055, 7080, 7081, 1087, 1085, 7094, 7095, 4737, 584, 7096, 7097, 7099, 1282, 5312, 6842, 7098, 7065, 7100, 7101, 2]
+// Exports: areRequestOptionsEqual, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 6965 (CollectiblesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6978 */;
-import CollectiblesDebugStore from "CollectiblesDebugStore" /* 6980 */;
-import CollectiblesCategoriesRecord from "CollectiblesCategoriesRecord" /* 6983 */;
-import CollectiblesMarketingRecord from "CollectiblesMarketingRecord" /* 6987 */;
-import CollectiblesShopHomeRecord from "CollectiblesShopHomeRecord" /* 6994 */;
-import LayerActionCreators from "LayerActionCreators" /* 7010 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7011 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7012 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7013 */;
-import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType" /* 7014 */;
+// Module 7052 (CollectiblesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
+import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7067 */;
+import CollectiblesCategoriesRecord from "CollectiblesCategoriesRecord" /* 7070 */;
+import CollectiblesMarketingRecord from "CollectiblesMarketingRecord" /* 7074 */;
+import CollectiblesShopHomeRecord from "CollectiblesShopHomeRecord" /* 7081 */;
+import LayerActionCreators from "LayerActionCreators" /* 7096 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7097 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7098 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7099 */;
+import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType" /* 7100 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 4836 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6966 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6981 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 6982 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 6968 */;
-import CollectiblesPurchaseRecord from "CollectiblesPurchaseRecord" /* 6993 */;
-import Constants from "Constants" /* 1086 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7008 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7009 */;
+import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 7069 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7055 */;
+import CollectiblesPurchaseRecord from "CollectiblesPurchaseRecord" /* 7080 */;
+import Constants from "Constants" /* 1085 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7094 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7095 */;
 import size from "module_2" /* 2 */;
 
-let c2, closure_4, closure_6, options, recipient_id;
+let c2, closure_4, closure_6, options, recipient_id, signal;
 
 let Routes;
 let closure_16;
@@ -828,52 +828,104 @@ obj = function _validateCollectiblesRecipientsBatch() {
 };
 obj = function _fetchCollectiblesMarketings() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_1;
-    let closure_3;
     const release = arg0;
     let c5 = 0;
     let c6 = 0;
     let c4 = 0;
     const iter = (async function(arg0, value) {
-      let PROD;
-      const obj9 = closure_130_1(closure_130_2[17]);
-      obj9.dispatch({ type: "COLLECTIBLES_MARKETING_FETCH" });
-      const obj6 = { platform: closure_130_0(closure_130_2[27]).CollectiblesMarketingPlatform.MOBILE };
-      if (PROD !== closure_130_0(closure_130_2[26]).CollectiblesMarketingReleaseType.PROD) {
-        obj6.release = PROD;
-      }
-      const HTTP = closure_130_0(closure_130_2[21]).HTTP;
-      const request = { url: closure_130_16.COLLECTIBLES_MARKETING, query: obj6, rejectWithError: true };
-      await HTTP.get(request);
-      if (2 === c5) {
-        c4 = 0;
-        const captureOrIgnoreApiError = closure_130_0(closure_130_2[23]).captureOrIgnoreApiError;
-        const self = this;
-        const self2 = this;
-        closure_130_0(closure_130_2[23]);
-        const aPIError = new closure_130_0(closure_130_2[22]).APIError(closure_3);
-        const result = captureOrIgnoreApiError(aPIError);
-        const obj3 = closure_130_1(closure_130_2[17]);
-        obj3.dispatch({ type: "COLLECTIBLES_MARKETING_FETCH_FAILURE" });
-      } else if (arg0 === 1) {
+      if (c6 === 2) {
         c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        return { value, done: true };
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
       } else {
-        body = value;
-        obj = { type: "COLLECTIBLES_MARKETING_FETCH_SUCCESS", marketings: closure_130_11.fromServer(body.body) };
-        const dispatch = closure_130_1(closure_130_2[17]).dispatch;
-        closure_130_1(closure_130_2[17]);
-        dispatch(obj);
-        c4 = 0;
+        try {
+          let PROD;
+          let obj6;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_1 = tmp4;
+              PROD = release.release ?? CollectiblesMarketingReleaseType.CollectiblesMarketingReleaseType.PROD;
+              obj6 = undefined;
+              body = undefined;
+              c5 = 1;
+              c6 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              const obj9 = closure_130_1(closure_130_2[17]);
+              obj9.dispatch({ type: "COLLECTIBLES_MARKETING_FETCH" });
+              obj6 = { platform: closure_130_0(closure_130_2[27]).CollectiblesMarketingPlatform.MOBILE };
+              if (PROD !== closure_130_0(closure_130_2[26]).CollectiblesMarketingReleaseType.PROD) {
+                obj6.release = PROD;
+              }
+              c4 = 1;
+              const HTTP = closure_130_0(closure_130_2[21]).HTTP;
+              const request = { url: closure_130_16.COLLECTIBLES_MARKETING, query: obj6, rejectWithError: true };
+              c5 = 3;
+              c6 = 1;
+              const obj7 = { value: HTTP.get(request), done: false };
+              return obj7;
+            }
+          } else {
+            if (2 === c5) {
+              c4 = 0;
+              const captureOrIgnoreApiError = closure_130_0(closure_130_2[23]).captureOrIgnoreApiError;
+              const self = this;
+              const self2 = this;
+              closure_130_0(closure_130_2[23]);
+              const aPIError = new closure_130_0(closure_130_2[22]).APIError(closure_3);
+              const result = captureOrIgnoreApiError(aPIError);
+              const obj3 = closure_130_1(closure_130_2[17]);
+              obj3.dispatch({ type: "COLLECTIBLES_MARKETING_FETCH_FAILURE" });
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              body = value;
+              obj = { type: "COLLECTIBLES_MARKETING_FETCH_SUCCESS", marketings: closure_130_11.fromServer(body.body) };
+              const dispatch = closure_130_1(closure_130_2[17]).dispatch;
+              closure_130_1(closure_130_2[17]);
+              dispatch(obj);
+              c4 = 0;
+            }
+            c6 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp41) {
+          closure_3 = tmp41;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp41;
+          } else {
+            c5 = 2;
+          }
+        }
       }
-      await "IconComponent";
-      body = tmp;
-      PROD = release.release ?? CollectiblesMarketingReleaseType.CollectiblesMarketingReleaseType.PROD;
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -1035,17 +1087,17 @@ obj = function _fetchCollectiblesShopHome() {
   });
   return obj(...arguments);
 };
-obj = function _claimCollectiblesCategoryReward() {
-  obj = _asyncToGenerator(async (arg0, skuId) => {
-    let closure_0 = arg0;
-    let c6 = 0;
-    let c7 = 0;
+obj = function _maybeFetchCollectiblesShopTabLayout() {
+  obj = _asyncToGenerator(async (tab) => {
+    let closure_2;
     let c5 = 0;
-    return (async function(arg0, value) {
-      let mapped;
-      let obj6;
-      if (c7 === 2) {
-        c7 = 3;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (async function(arg0, value) {
+      let c0;
+      let c1;
+      if (c6 === 2) {
+        c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -1057,148 +1109,99 @@ obj = function _claimCollectiblesCategoryReward() {
         }
       } else {
         try {
+          let tmp;
           let aPIError;
-          c7 = 2;
-          if (0 === c6) {
+          c6 = 2;
+          if (0 === c5) {
             if (arg0 === 1) {
-              c7 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c7 = 3;
+              c6 = 3;
               return { value, done: true };
             } else {
-              closure_3 = tmp;
-              closure_2 = tmp4;
-              skuId = undefined;
+              let closure_1 = tmp4;
+              tab = undefined;
+              signal = undefined;
+              ({ tab: c0, abortSignal: c1 } = closure_0);
+              tmp = undefined;
+              body = undefined;
               aPIError = undefined;
-              const obj5 = { type: "COLLECTIBLES_CLAIM", skuId };
-              const obj8 = DispatcherDefault;
-              obj8.dispatch(obj5);
               c5 = 1;
-              const HTTP = HTTPUtils.HTTP;
-              const request = { url: constants.COLLECTIBLES_CLAIM_CATEGORY_REWARD, body: obj6, rejectWithError: true };
-              c6 = 2;
-              c7 = 1;
-              obj6 = { category_id: skuId };
-              const obj7 = { value: HTTP.put(request), done: false };
-              return obj7;
+              c6 = 1;
+              return { value: "Reflect", done: null };
             }
-          } else if (1 === c6) {
-            c5 = 0;
-            closure_3 = closure_4;
-            const self = this;
-            const self2 = this;
-            aPIError = new closure_131_0(closure_131_2[22]).APIError(closure_3);
-            const obj9 = { type: "COLLECTIBLES_CLAIM_FAILURE", skuId, error: aPIError };
-            const obj2 = closure_131_1(closure_131_2[17]);
-            obj2.dispatch(obj9);
-            throw aPIError;
-          } else if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            c7 = 3;
-            return { value, done: true };
           } else {
-            skuId = value;
-            const body = skuId.body;
-            const obj10 = { type: "COLLECTIBLES_CLAIM_SUCCESS", skuId, purchases: mapped };
-            mapped = undefined;
-            const dispatch = closure_131_1(closure_131_2[17]).dispatch;
-            closure_131_1(closure_131_2[17]);
-            if (body != null) {
-              mapped = body.map(closure_131_13.fromServer);
+            if (1 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else if (!closure_130_9.isFetchingLayout(tab)) {
+                tmp = closure_130_9.getLayoutFetchError(tab);
+                let status;
+                if (tmp != null) {
+                  status = tmp.status;
+                }
+                if (404 !== status) {
+                  let status1;
+                  if (tmp != null) {
+                    status1 = tmp.status;
+                  }
+                  if (429 !== status1) {
+                    c4 = 1;
+                    const obj6 = { type: "COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH", tab };
+                    const obj10 = closure_130_1(closure_130_2[17]);
+                    obj10.dispatch(obj6);
+                    const HTTP = closure_130_0(closure_130_2[21]).HTTP;
+                    const get = HTTP.get;
+                    c5 = 3;
+                    c6 = 1;
+                    const obj7 = { url: closure_130_16.COLLECTIBLES_SHOP_TAB_LAYOUT(tab), rejectWithError: true, signal };
+                    const obj8 = { value: get(obj7), done: false };
+                    return obj8;
+                  }
+                }
+              }
+            } else if (2 === c5) {
+              c4 = 0;
+              let closure_5 = body;
+              const self = this;
+              const self2 = this;
+              aPIError = new closure_130_0(closure_130_2[22]).APIError(closure_5);
+              const obj9 = { type: "COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH_FAILURE", tab, apiError: aPIError };
+              const obj4 = closure_130_1(closure_130_2[17]);
+              obj4.dispatch(obj9);
+              throw aPIError;
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              body = value;
+              const obj12 = { type: "COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH_SUCCESS", tab, layoutId: body.body.layout_id };
+              obj = closure_130_1(closure_130_2[17]);
+              obj.dispatch(obj12);
+              c4 = 0;
             }
-            dispatch(obj10);
-            c5 = 0;
-            c7 = 3;
+            c6 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp24) {
-          closure_4 = tmp24;
-          if (0 === c5) {
-            c7 = 3;
-            throw tmp24;
+        } catch (tmp34) {
+          body = tmp34;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp34;
           } else {
-            c6 = 1;
+            c5 = 2;
           }
         }
       }
-    })();
-  });
-  return obj(...arguments);
-};
-obj = function _maybeFetchCollectiblesShopTabLayout() {
-  obj = _asyncToGenerator(async (tab) => {
-    let closure_2;
-    let signal;
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
-    const iter = (async function(arg0, value) {
-      let c0;
-      let c1;
-      if (1 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          return { value, done: true };
-        } else if (!closure_130_9.isFetchingLayout(tab)) {
-          const tmp = closure_130_9.getLayoutFetchError(tab);
-          let status;
-          if (tmp != null) {
-            status = tmp.status;
-          }
-          if (404 !== status) {
-            let status1;
-            if (tmp != null) {
-              status1 = tmp.status;
-            }
-            if (429 !== status1) {
-              c4 = 1;
-              const obj6 = { type: "COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH", tab };
-              const obj10 = closure_130_1(closure_130_2[17]);
-              obj10.dispatch(obj6);
-              const HTTP = closure_130_0(closure_130_2[21]).HTTP;
-              const get = HTTP.get;
-              c5 = 3;
-              c6 = 1;
-              const obj7 = { url: closure_130_16.COLLECTIBLES_SHOP_TAB_LAYOUT(tab), rejectWithError: true, signal };
-              const obj8 = { value: get(obj7), done: false };
-              return obj8;
-            }
-          }
-        }
-      } else if (2 === c5) {
-        c4 = 0;
-        let closure_5 = body;
-        const self = this;
-        const self2 = this;
-        const aPIError = new closure_130_0(closure_130_2[22]).APIError(closure_5);
-        const obj9 = { type: "COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH_FAILURE", tab, apiError: aPIError };
-        const obj4 = closure_130_1(closure_130_2[17]);
-        obj4.dispatch(obj9);
-        throw aPIError;
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        return { value, done: true };
-      } else {
-        body = value;
-        const obj12 = { type: "COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH_SUCCESS", tab, layoutId: body.body.layout_id };
-        obj = closure_130_1(closure_130_2[17]);
-        obj.dispatch(obj12);
-        c4 = 0;
-      }
-      await "IconComponent";
-      ({ tab: c0, abortSignal: c1 } = closure_0);
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -1218,7 +1221,7 @@ export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
   let isCollectiblesShopRoute;
-  obj = isCollectiblesShopRoute(4695);
+  obj = isCollectiblesShopRoute(4737);
   const rootNavigationRef = obj.getRootNavigationRef();
   let tmp2 = !(null == rootNavigationRef || !rootNavigationRef.isReady());
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
@@ -1442,9 +1445,6 @@ export const setSkipNumCategories = function setSkipNumCategories(skipNumCategor
   obj = DispatcherDefault;
   const obj2 = { type: "COLLECTIBLES_SKIP_NUM_CATEGORIES", skipNumCategories };
   obj.dispatch(obj2);
-};
-export const claimCollectiblesCategoryReward = function claimCollectiblesCategoryReward() {
-  return obj(...arguments);
 };
 export const maybeFetchCollectiblesShopTabLayout = function maybeFetchCollectiblesShopTabLayout() {
   return obj(...arguments);

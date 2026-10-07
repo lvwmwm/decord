@@ -1,19 +1,19 @@
-// Module ID: 15445
-// Function ID: 15446
+// Module ID: 15749
+// Function ID: 15750
 // Name: ShopFlashList
-// Dependencies: [19, 21, 4837, 588, 558, 576, 15416, 8176, 1189, 7682, 1127, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 15712, 8371, 1188, 7904, 1126, 2]
 
-// Module 15445 (ShopFlashList)
+// Module 15749 (ShopFlashList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import generated_NoResults from "generated/NoResults" /* 7682 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 8176 */;
-import useScrollToInitialIndexOnce2 from "useScrollToInitialIndexOnce" /* 15416 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import generated_NoResults from "generated/NoResults" /* 7904 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 8371 */;
+import useScrollToInitialIndexOnce2 from "useScrollToInitialIndexOnce" /* 15712 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,8 +99,8 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const EmptyState = tmp(1189).EmptyState;
-    const intl = tmp(1127).intl;
+    const EmptyState = tmp(1188).EmptyState;
+    const intl = tmp(1126).intl;
     const tmp7 = <EmptyState style={first} Illustration={generated_NoResults.NoResults} body={intl.string(intl2.t.eAn6z2)} />;
     cResult[1] = tmp7;
     tmp5 = tmp7;

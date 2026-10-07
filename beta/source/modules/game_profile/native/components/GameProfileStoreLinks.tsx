@@ -1,19 +1,19 @@
-// Module ID: 8178
-// Function ID: 8179
+// Module ID: 8373
+// Function ID: 8374
 // Name: GameProfileStoreLinks
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 8134, 4528, 5282, 1127, 4801, 8160, 8125, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8328, 4565, 5594, 1126, 4854, 8354, 8319, 2]
 
-// Module 8178 (GameProfileStoreLinks)
+// Module 8373 (GameProfileStoreLinks)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4801 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8134 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8160 */;
+import nativeDefault from "native" /* 587 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8328 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8354 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const components_Button_Button = tmp(5282);
+const components_Button_Button = tmp(5594);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2 };

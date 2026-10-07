@@ -1,28 +1,28 @@
-// Module ID: 9350
-// Function ID: 9351
+// Module ID: 9578
+// Function ID: 9579
 // Name: RequestToSpeakActionSheet
-// Dependencies: [32, 19, 17, 502, 2051, 5727, 21, 4837, 588, 558, 576, 9351, 1127, 6621, 504, 4984, 5735, 7863, 7865, 4801, 7850, 9352, 9354, 1189, 9356, 5916, 4535, 6604, 6584, 5744, 5738, 5997, 4833, 5280, 9357, 6038, 6572, 2]
+// Dependencies: [32, 19, 17, 502, 2051, 5571, 21, 4890, 587, 558, 576, 9579, 1126, 6698, 504, 5037, 5579, 8084, 8086, 4854, 8074, 9580, 9582, 1188, 9584, 5993, 4580, 6681, 6657, 5588, 5582, 6074, 4886, 5593, 9585, 6112, 6645, 2]
 
-// Module 9350 (RequestToSpeakActionSheet)
+// Module 9578 (RequestToSpeakActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4984 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5727 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5735 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6621 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7850 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
-import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 9351 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 5037 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5579 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6698 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8074 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
+import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 9579 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let c10;
 let c9;
 let obj2;
 let tmp8;
-const AssetRegistryDefault = tmp8(9356);
+const AssetRegistryDefault = tmp8(9584);
 let react = react_mod;
 const View = react_native.View;
 let closure_8 = StageChannelsConstants.REQUEST_TO_SPEAK_SHEET_KEY;
@@ -55,7 +55,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let closure_0 = tmp6;
   _slicedToArray(obj2.useRequestToSpeakPermission(channel.id), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.TYZgzW);
     cResult[0] = stringResult;
     first = stringResult;
@@ -64,9 +64,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   if (cResult[1] !== tmp5) {
     let stringResult1;
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const string = intl2.string;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     if (tmp5) {
       stringResult1 = string(t["JcFI/U"]);
     } else {
@@ -163,7 +163,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     id = channel.id;
   }
   const tmp9Result = tmp9(stateFromStores, id);
-  const tmp12 = tmp9Result === tmp(4984).RequestToSpeakStates.ON_STAGE;
+  const tmp12 = tmp9Result === tmp(5037).RequestToSpeakStates.ON_STAGE;
   importDefault = tmp12;
   if (cResult[2] === channel) {
     let tmp13;
@@ -176,9 +176,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     if (cResult[5] !== tmp12) {
       let stringResult;
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const string = intl.string;
-      const t = tmp(1127).t;
+      const t = tmp(1126).t;
       if (tmp12) {
         stringResult = string(t.ezLpY6);
       } else {
@@ -191,9 +191,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp14 = cResult[6];
     }
     if (tmp12) {
-      MicrophoneArrowRightIcon = tmp(9352).GroupArrowDownIcon;
+      MicrophoneArrowRightIcon = tmp(9580).GroupArrowDownIcon;
     } else {
-      MicrophoneArrowRightIcon = tmp(9354).MicrophoneArrowRightIcon;
+      MicrophoneArrowRightIcon = tmp(9582).MicrophoneArrowRightIcon;
     }
     if (cResult[7] !== MicrophoneArrowRightIcon) {
       const tmp18 = closure_9(MicrophoneArrowRightIcon, {});
@@ -206,7 +206,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { source: AssetRegistryDefault };
-      const Icon = tmp(1189).Icon;
+      const Icon = tmp(1188).Icon;
       const tmp21 = closure_9(Icon, obj2);
       cResult[9] = tmp21;
       tmp19 = tmp21;
@@ -223,7 +223,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     let obj3 = { onPress: tmp13, icon: tmp16, label: tmp14, trailing: tmp19 };
-    const tmp24 = closure_9(tmp(5916).TableRow, obj3);
+    const tmp24 = closure_9(tmp(5993).TableRow, obj3);
     cResult[10] = tmp14;
     cResult[11] = tmp13;
     cResult[12] = tmp16;
@@ -271,20 +271,20 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     id = channel.id;
   }
   const tmp5Result = tmp5(stateFromStores, id);
-  const tmp8 = tmp5Result === tmp(4984).RequestToSpeakStates.ON_STAGE;
+  const tmp8 = tmp5Result === tmp(5037).RequestToSpeakStates.ON_STAGE;
   importDefault = tmp8;
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   const string = intl.string;
-  const t = tmp(1127).t;
+  const t = tmp(1126).t;
   if (tmp8) {
     stringResult = string(t.ezLpY6);
   } else {
     stringResult = string(t["8Joh+p"]);
   }
   if (tmp8) {
-    MicrophoneArrowRightIcon = tmp(9352).GroupArrowDownIcon;
+    MicrophoneArrowRightIcon = tmp(9580).GroupArrowDownIcon;
   } else {
-    MicrophoneArrowRightIcon = tmp(9354).MicrophoneArrowRightIcon;
+    MicrophoneArrowRightIcon = tmp(9582).MicrophoneArrowRightIcon;
   }
   let obj2 = {
     onPress() {
@@ -308,9 +308,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     label: stringResult,
     trailing: closure_9(Icon, obj3)
   };
-  const TableRow = tmp(5916).TableRow;
+  const TableRow = tmp(5993).TableRow;
   obj3 = { source: AssetRegistryDefault };
-  Icon = tmp(1189).Icon;
+  Icon = tmp(1188).Icon;
   return closure_9(TableRow, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -328,20 +328,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const cResult = obj.c(40);
   channelId = channelId.channelId;
   const analyticsLocations = channelId.analyticsLocations;
-  const obj2 = channelId(4535);
-  const token = obj2.useToken(first(588).modules.mobile.TABLE_ROW_PADDING);
+  const obj2 = channelId(4580);
+  const token = obj2.useToken(first(587).modules.mobile.TABLE_ROW_PADDING);
   closure_11();
   if (cResult[0] !== analyticsLocations) {
     const items = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(items, analyticsLocations, 0);
-    items[arraySpreadResult] = first(6604).REQUEST_TO_SPEAK;
+    items[arraySpreadResult] = first(6681).REQUEST_TO_SPEAK;
     cResult[0] = analyticsLocations;
     cResult[1] = items;
     tmp8 = items;
   } else {
     tmp8 = cResult[1];
   }
-  const analyticsLocations2 = tmp5(6584)(tmp8).analyticsLocations;
+  const analyticsLocations2 = tmp5(6657)(tmp8).analyticsLocations;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ChannelStore];
     cResult[2] = items1;
@@ -361,8 +361,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   const tmp2Result = channelId(504);
   const stateFromStores = tmp2Result.useStateFromStores(tmp12, tmp14);
-  const tmp2Result2 = channelId(5744);
-  const stageParticipantsCount = tmp2Result2.useStageParticipantsCount(channelId, tmp2(5738).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
+  const tmp2Result2 = channelId(5588);
+  const stageParticipantsCount = tmp2Result2.useStageParticipantsCount(channelId, tmp2(5582).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
   const tmp17 = first1(react.useState(0), 2);
   first = tmp17[0];
   dependencyMap = tmp17[1];
@@ -447,7 +447,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
       const obj3 = { hasIcons: true, children: items2 };
       const obj4 = { channel: stateFromStores };
-      const TableRowGroup = tmp2(5997).TableRowGroup;
+      const TableRowGroup = tmp2(6074).TableRowGroup;
       items2 = [closure_9(closure_12, obj4), ];
       const obj5 = { channel: stateFromStores };
       items2[1] = closure_9(closure_13, obj5);
@@ -502,7 +502,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       const format = tmp31.format;
       const _HermesInternal = HermesInternal;
       const obj6 = { numHands: "" + stageParticipantsCount };
-      const v5z7q5a = tmp2(1127).t["5z7q5a"];
+      const v5z7q5a = tmp2(1126).t["5z7q5a"];
       cResult[13] = stageParticipantsCount;
       cResult[14] = format(v5z7q5a, obj6);
       const formatResult = format(v5z7q5a, obj6);
@@ -529,8 +529,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
       const obj7 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: tmp30 };
       cResult[15] = tmp30;
-      cResult[16] = closure_9(channelId(4833).Text, obj7);
-      const tmp35 = closure_9(channelId(4833).Text, obj7);
+      cResult[16] = closure_9(channelId(4886).Text, obj7);
+      const tmp35 = closure_9(channelId(4886).Text, obj7);
     } else {
       class U {
         constructor(nativeEvent) {
@@ -568,8 +568,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       cResult[20] = tmp21;
       cResult[21] = tmp36;
       cResult[22] = tmp23;
-      cResult[23] = closure_10(channelId(5280).Stack, obj8);
-      const tmp42 = closure_10(channelId(5280).Stack, obj8);
+      cResult[23] = closure_10(channelId(5593).Stack, obj8);
+      const tmp42 = closure_10(channelId(5593).Stack, obj8);
     }
     const obj9 = { style: tmp28, children: tmp34 };
     cResult[17] = tmp34;
@@ -599,19 +599,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let first1;
   react = undefined;
   const analyticsLocations = channelId.analyticsLocations;
-  const obj = channelId(4535);
-  const token = obj.useToken(first(588).modules.mobile.TABLE_ROW_PADDING);
+  const obj = channelId(4580);
+  const token = obj.useToken(first(587).modules.mobile.TABLE_ROW_PADDING);
   const items = [];
   const tmp6 = closure_11();
-  const tmp7 = first(6584);
+  const tmp7 = first(6657);
   const arraySpreadResult = HermesBuiltin.arraySpread(items, analyticsLocations, 0);
-  items[arraySpreadResult] = first(6604).REQUEST_TO_SPEAK;
+  items[arraySpreadResult] = first(6681).REQUEST_TO_SPEAK;
   const analyticsLocations2 = tmp7(items).analyticsLocations;
   const items1 = [ChannelStore];
   const obj2 = channelId(504);
   const stateFromStores = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
-  const obj3 = channelId(5744);
-  const stageParticipantsCount = obj3.useStageParticipantsCount(channelId, channelId(5738).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
+  const obj3 = channelId(5588);
+  const stageParticipantsCount = obj3.useStageParticipantsCount(channelId, channelId(5582).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
   const tmp11 = first1(react.useState(0), 2);
   const tmp4 = first;
   first = tmp11[0];
@@ -622,9 +622,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let tmp15 = null;
   if (null != stateFromStores) {
     const obj4 = { value: analyticsLocations2, children: closure_9(BottomSheet, obj5) };
-    const AnalyticsLocationProvider = tmp2(6584).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp2(6657).AnalyticsLocationProvider;
     obj5 = { scrollable: true, startExpanded: stageParticipantsCount >= 5, children: closure_9(BottomSheetScrollView, obj6) };
-    BottomSheet = tmp2(6572).BottomSheet;
+    BottomSheet = tmp2(6645).BottomSheet;
     obj6 = {
       style: tmp6.container,
       onLayout(nativeEvent) {
@@ -636,9 +636,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         },
       children: closure_10(Stack, obj7)
     };
-    BottomSheetScrollView = tmp2(6038).BottomSheetScrollView;
+    BottomSheetScrollView = tmp2(6112).BottomSheetScrollView;
     obj7 = { spacing: 8, children: items4 };
-    Stack = tmp2(5280).Stack;
+    Stack = tmp2(5593).Stack;
     const obj8 = {
       spacing: 8,
       onLayout(nativeEvent) {
@@ -650,10 +650,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         },
       children: items3
     };
-    const Stack2 = tmp2(5280).Stack;
+    const Stack2 = tmp2(5593).Stack;
     const obj10 = { channel: stateFromStores };
     const obj9 = { hasIcons: true, children: items2 };
-    const TableRowGroup = tmp2(5997).TableRowGroup;
+    const TableRowGroup = tmp2(6074).TableRowGroup;
     items2 = [closure_9(closure_12, obj10), ];
     const obj11 = { channel: stateFromStores };
     items2[1] = closure_9(closure_13, obj11);
@@ -661,17 +661,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const obj12 = { style: obj13, children: closure_9(Text, obj14) };
     obj13 = { paddingHorizontal: token };
     obj14 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: format(v5z7q5a, obj15) };
-    Text = tmp2(4833).Text;
-    const intl = tmp2(1127).intl;
+    Text = tmp2(4886).Text;
+    const intl = tmp2(1126).intl;
     format = intl.format;
     const _HermesInternal = HermesInternal;
     obj15 = { numHands: "" + stageParticipantsCount };
-    v5z7q5a = tmp2(1127).t["5z7q5a"];
+    v5z7q5a = tmp2(1126).t["5z7q5a"];
     items3[1] = closure_9(View, obj12);
     items4 = [closure_10(Stack2, obj8), ];
     const _Math = Math;
     const obj16 = { channel: stateFromStores, height: Math.max(first1 - first - 8, 0) };
-    const tmp4Result = tmp4(9357);
+    const tmp4Result = tmp4(9585);
     items4[1] = closure_9(tmp4Result, obj16);
     tmp15 = closure_9(AnalyticsLocationProvider, obj4);
   }

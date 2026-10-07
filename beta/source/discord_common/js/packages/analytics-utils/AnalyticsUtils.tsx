@@ -1,18 +1,18 @@
-// Module ID: 1261
-// Function ID: 1262
+// Module ID: 1260
+// Function ID: 1261
 // Name: discord_common/AnalyticsUtils
-// Dependencies: [1262, 1341, 1342, 1343, 38, 2, 1346, 1347, 1348]
+// Dependencies: [1261, 1340, 1341, 1342, 38, 2, 1345, 1346, 1347]
 // Exports: isThrottled, trackMaker
 
-// Module 1261 (discord_common/AnalyticsUtils)
+// Module 1260 (discord_common/AnalyticsUtils)
 import _modDef38 from "module_38" /* 38 */;
-import AnalyticsTrackingStore from "AnalyticsTrackingStore" /* 1262 */;
-import StandardAnalyticsConstants from "StandardAnalyticsConstants" /* 1341 */;
-import AnalyticsTrackingActionCreators from "AnalyticsTrackingActionCreators" /* 1342 */;
-import _modDef1343 from "module_1343" /* 1343 */;
-import encodeProperties from "encodeProperties" /* 1346 */;
-import AnalyticsSchema from "AnalyticsSchema" /* 1347 */;
-import getSuperProperties from "getSuperProperties" /* 1348 */;
+import AnalyticsTrackingStore from "AnalyticsTrackingStore" /* 1261 */;
+import StandardAnalyticsConstants from "StandardAnalyticsConstants" /* 1340 */;
+import AnalyticsTrackingActionCreators from "AnalyticsTrackingActionCreators" /* 1341 */;
+import _modDef1342 from "module_1342" /* 1342 */;
+import encodeProperties from "encodeProperties" /* 1345 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1346 */;
+import getSuperProperties from "getSuperProperties" /* 1347 */;
 import size from "module_2" /* 2 */;
 
 const analyticsTrackingStoreMaker = AnalyticsTrackingStore.analyticsTrackingStoreMaker;
@@ -32,6 +32,7 @@ export { ImpressionTypes };
 export { ImpressionGroups };
 export const ImpressionNames = AnalyticsSchema.ImpressionNames;
 export const NetworkActionNames = AnalyticsSchema.NetworkActionNames;
+export const SpanComponentNames = AnalyticsSchema.SpanComponentNames;
 export const SpanTtiNames = AnalyticsSchema.SpanTtiNames;
 export { getSuperProperties_export as getSuperProperties };
 export const getSuperPropertiesBase64 = getSuperProperties.getSuperPropertiesBase64;
@@ -97,7 +98,7 @@ export const trackMaker = (arg0) => {
           }
           if (obj3.deduplicate) {
             const tmp16 = closure_5;
-            if (_modDef1343(closure_5[joined], obj2)) {
+            if (_modDef1342(closure_5[joined], obj2)) {
               return Promise.resolve();
             } else {
               tmp16[joined] = obj2;

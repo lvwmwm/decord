@@ -1,13 +1,13 @@
-// Module ID: 6584
-// Function ID: 6585
+// Module ID: 6657
+// Function ID: 6658
 // Name: useAnalyticsLocations
-// Dependencies: [32, 19, 21, 558, 576, 12, 1343, 2]
+// Dependencies: [32, 19, 21, 558, 576, 12, 1342, 2]
 
-// Module 6584 (useAnalyticsLocations)
+// Module 6657 (useAnalyticsLocations)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _modDef1343 from "module_1343" /* 1343 */;
+import _modDef1342 from "module_1342" /* 1342 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -89,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const fn = function x() {
         const tmp = items;
-        if (!_modDef1343(items, first)) {
+        if (!_modDef1342(items, first)) {
           closure_2(tmp);
         }
       };
@@ -162,7 +162,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items3 = [items, first];
   const effect = react.useEffect(() => {
     const tmp = items;
-    if (!_modDef1343(items, first)) {
+    if (!_modDef1342(items, first)) {
       closure_2(tmp);
     }
   }, items3);

@@ -1,18 +1,18 @@
-// Module ID: 14446
-// Function ID: 14447
+// Module ID: 14730
+// Function ID: 14731
 // Name: FamilyCenterAvatarPair
-// Dependencies: [19, 17, 1378, 21, 4837, 588, 558, 576, 573, 1189, 2]
+// Dependencies: [19, 17, 1377, 21, 4890, 587, 558, 576, 573, 1188, 2]
 
-// Module 14446 (FamilyCenterAvatarPair)
+// Module 14730 (FamilyCenterAvatarPair)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp10;
       if (cResult[2] !== stateFromStores) {
         const obj2 = { size: native.AvatarSizes.LARGE_48, user: stateFromStores, guildId: "Array", avatarDecoration: stateFromStores.avatarDecoration };
-        const Avatar = tmp(1189).Avatar;
+        const Avatar = tmp(1188).Avatar;
         const tmp12 = React3(Avatar, obj2);
         cResult[2] = stateFromStores;
         cResult[3] = tmp12;
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[10] !== otherUser) {
             const obj3 = { size: native.AvatarSizes.LARGE_48, user: otherUser, guildId: "Array", avatarDecoration: otherUser.avatarDecoration };
-            const Avatar2 = tmp(1189).Avatar;
+            const Avatar2 = tmp(1188).Avatar;
             const tmp19 = React3(Avatar2, obj3);
             cResult[10] = otherUser;
             cResult[11] = tmp19;
@@ -108,7 +108,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp20 = tmp23;
         }
         const obj5 = { style: tmp13, size: native.Icon.Sizes.EXTRA_SMALL, source: iconSrc };
-        const Icon = tmp(1189).Icon;
+        const Icon = tmp(1188).Icon;
         const tmp16 = React3(Icon, obj5);
         cResult[7] = iconSrc;
         cResult[8] = tmp13;
@@ -141,14 +141,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (undefined !== otherUser) {
       const obj2 = { style: tmp.avatars, children: items1 };
       const obj3 = { size: native.AvatarSizes.LARGE_48, user: stateFromStores, guildId: "Array", avatarDecoration: stateFromStores.avatarDecoration };
-      const Avatar = tmp2(1189).Avatar;
+      const Avatar = tmp2(1188).Avatar;
       items1 = [React3(Avatar, obj3), , ];
       const obj4 = { style: items2, size: native.Icon.Sizes.EXTRA_SMALL, source: iconSrc };
       items2 = [tmp.icon, iconStyles];
-      const Icon = tmp2(1189).Icon;
+      const Icon = tmp2(1188).Icon;
       items1[1] = React3(Icon, obj4);
       const obj5 = { size: native.AvatarSizes.LARGE_48, user: otherUser, guildId: "Array", avatarDecoration: otherUser.avatarDecoration };
-      const Avatar2 = tmp2(1189).Avatar;
+      const Avatar2 = tmp2(1188).Avatar;
       items1[2] = React3(Avatar2, obj5);
       tmp5 = hasOwnProperty(View, obj2);
     }

@@ -1,12 +1,11 @@
-// Module ID: 12500
-// Function ID: 12501
+// Module ID: 12745
+// Function ID: 12746
 // Name: CustomActivityLinkRecord
-// Dependencies: [12501, 7599, 12498, 2]
+// Dependencies: [12746, 7821, 2]
 
-// Module 12500 (CustomActivityLinkRecord)
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7599 */;
-import CustomActivityLinkUtils from "CustomActivityLinkUtils" /* 12498 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 12501 */;
+// Module 12745 (CustomActivityLinkRecord)
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7821 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 12746 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/activities/records/CustomActivityLinkRecord.tsx");
@@ -45,8 +44,15 @@ class CustomActivityLinkRecord {
       const tmpResult = ApplicationAssetUtils;
       assetImage = tmpResult.getAssetImage(self.applicationId, self.assetId, 512);
     } else if (self.type === utils_CustomActivityLinkUtils.CustomLinkType.QUICK) {
-      const tmpResult2 = CustomActivityLinkUtils;
-      assetImage = tmpResult2.getQuickLinkImage(self.assetPath);
+      const assetPath = self.assetPath;
+      let combined;
+      if (null != assetPath) {
+        const _location = location;
+        const _window = window;
+        const _HermesInternal = HermesInternal;
+        combined = "" + location.protocol + "//" + window.GLOBAL_ENV.CDN_HOST + "/attachments-quick-links/" + assetPath;
+      }
+      assetImage = combined;
     }
     return assetImage;
   }

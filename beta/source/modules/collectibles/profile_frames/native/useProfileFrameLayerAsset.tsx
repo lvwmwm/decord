@@ -1,12 +1,12 @@
-// Module ID: 7672
-// Function ID: 7673
+// Module ID: 7894
+// Function ID: 7895
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 6630, 1974, 558, 576, 5896, 7673, 7674, 2]
+// Dependencies: [5, 32, 19, 17, 6707, 1974, 558, 576, 1886, 7895, 7896, 2]
 // Exports: isProfileFrameLayerShown
 
-// Module 7672 (useProfileFrameLayerAsset)
+// Module 7894 (useProfileFrameLayerAsset)
 import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1974 */;
-import Constants from "Constants" /* 6630 */;
+import Constants from "Constants" /* 6707 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -19,7 +19,7 @@ let _Promise, _require, c4, c5, frame, nextPromise, num2;
 
 let metroImportDefault;
 let metroRequire;
-const f94793 = (arg0) => {
+const f95861 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -46,7 +46,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f94793);
+      const promise = new Promise(f95861);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -81,7 +81,7 @@ let obj = function _preloadLayer() {
     } else {
       try {
         let closure_2;
-        let closure_3;
+        let uri;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -93,7 +93,7 @@ let obj = function _preloadLayer() {
             return obj4;
           } else {
             closure_2 = undefined;
-            closure_3 = undefined;
+            uri = undefined;
             c4 = 1;
             c5 = 1;
             const obj5 = { value: measureProfileFrameLayer(closure_0), done: false };
@@ -111,12 +111,13 @@ let obj = function _preloadLayer() {
             } else {
               closure_2 = value;
               if (null != closure_2) {
-                closure_3 = closure_131_14(closure_0, closure_2, closure_1);
+                uri = closure_131_14(closure_0, closure_2, closure_1);
+                const obj7 = { uri, timeoutMs: 30000 };
                 c4 = 2;
                 c5 = 1;
-                const obj7 = { value: obj2.preload(closure_3, 30000), done: false };
+                const obj8 = { value: obj2.preload(obj7), done: false };
                 obj2 = closure_131_1(closure_131_2[8]);
-                return obj7;
+                return obj8;
               }
             }
           } else if (arg0 === 1) {
@@ -127,7 +128,7 @@ let obj = function _preloadLayer() {
             obj = { value, done: true };
             return obj;
           } else {
-            closure_131_11.add(closure_3);
+            closure_131_11.add(uri);
           }
           c5 = 3;
           return { value: "IconComponent", done: null };
@@ -283,7 +284,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (null == resolved) {
             const self = this;
             const self2 = this;
-            const promise = new Promise(f94793);
+            const promise = new Promise(f95861);
             const cleanupPromise = promise.finally(() => set.delete(closure_0));
             const result = obj.set(tmp, cleanupPromise);
             resolved = cleanupPromise;
@@ -333,7 +334,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null == resolved) {
           const self = this;
           const self2 = this;
-          const promise = new Promise(f94793);
+          const promise = new Promise(f95861);
           const cleanupPromise = promise.finally(() => set.delete(closure_0));
           let result = obj.set(tmp, cleanupPromise);
           resolved = cleanupPromise;

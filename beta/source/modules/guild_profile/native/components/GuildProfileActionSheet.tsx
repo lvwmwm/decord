@@ -1,19 +1,19 @@
-// Module ID: 9172
-// Function ID: 9173
+// Module ID: 9396
+// Function ID: 9397
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 9005, 9173, 1086, 21, 4837, 588, 558, 576, 4769, 9006, 504, 4535, 7619, 6584, 6604, 9007, 9174, 1127, 5282, 9188, 9175, 9189, 684, 5292, 6038, 6576, 6572, 2]
+// Dependencies: [19, 17, 9227, 9397, 1085, 21, 4890, 587, 558, 576, 4791, 9228, 504, 4580, 7841, 6657, 6681, 9229, 9398, 1126, 5594, 9412, 9399, 9413, 683, 5605, 6112, 6649, 6645, 2]
 
-// Module 9172 (GuildProfileActionSheet)
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import Constants from "Constants" /* 1086 */;
-import GuildProfileStore2 from "GuildProfileStore" /* 9005 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9007 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 9173 */;
+// Module 9396 (GuildProfileActionSheet)
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import Constants from "Constants" /* 1085 */;
+import GuildProfileStore2 from "GuildProfileStore" /* 9227 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9229 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 9397 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -343,7 +343,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const items4 = [token1];
     const memo = obj6.useMemo(() => {
       const items = [, ];
-      const obj = _modDef684(token1);
+      const obj = _modDef683(token1);
       const alphaResult = obj.alpha(0);
       items[0] = alphaResult.hex();
       items[1] = token1;

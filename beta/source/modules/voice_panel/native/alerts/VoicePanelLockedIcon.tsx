@@ -1,17 +1,17 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 17331
+// Function ID: 17332
 // Name: VoicePanelLockedIcon
-// Dependencies: [19, 21, 4837, 588, 558, 576, 1189, 16972, 5898, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 1188, 17332, 5976, 2]
 
-// Module 16971 (VoicePanelLockedIcon)
+// Module 17331 (VoicePanelLockedIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import NativeViewDefault from "NativeView" /* 5898 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16972 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import NativeViewDefault from "NativeView" /* 5976 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17332 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(5);
   const tmp4 = closure_4();
   if (cResult[0] !== tmp4.icon) {
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const tmp8 = <Icon style={tmp4.icon} source={AssetRegistryDefault} size={native.IconSizes.LARGE} />;
     cResult[0] = tmp4.icon;
     cResult[1] = tmp8;

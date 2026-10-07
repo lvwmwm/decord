@@ -1,33 +1,33 @@
-// Module ID: 8309
-// Function ID: 8310
+// Module ID: 8505
+// Function ID: 8506
 // Name: CollectiblesShopCardCardDetailsV2
-// Dependencies: [19, 17, 6659, 1086, 21, 4837, 588, 558, 576, 8224, 6977, 8310, 6978, 8312, 8323, 1127, 4833, 8295, 1370, 8324, 8119, 7627, 4491, 4535, 4685, 8326, 504, 8327, 5292, 2]
+// Dependencies: [19, 17, 6739, 1085, 21, 4890, 587, 558, 576, 8419, 7064, 8506, 7065, 8508, 8523, 1126, 4886, 8491, 1369, 8524, 8313, 7849, 4528, 4580, 4727, 8526, 504, 8527, 5605, 2]
 
-// Module 8309 (CollectiblesShopCardCardDetailsV2)
+// Module 8505 (CollectiblesShopCardCardDetailsV2)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl7 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
-import useToken from "useToken" /* 4535 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6977 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6978 */;
-import useCurrentUser from "useCurrentUser" /* 7627 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8224 */;
-import OrbsIcon from "OrbsIcon" /* 8295 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8310 */;
-import _mod8312 from "module_8312" /* 8312 */;
-import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 8323 */;
-import getProductName from "getProductName" /* 8326 */;
+import nativeDefault from "native" /* 587 */;
+import intl7 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
+import useToken from "useToken" /* 4580 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
+import useCurrentUser from "useCurrentUser" /* 7849 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8419 */;
+import OrbsIcon from "OrbsIcon" /* 8491 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8506 */;
+import _mod8508 from "module_8508" /* 8508 */;
+import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 8523 */;
+import getProductName from "getProductName" /* 8526 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6659 */;
-import Constants from "Constants" /* 1086 */;
+import IAPStore from "IAPStore" /* 6739 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let obj2;
 let size;
 let tmp11;
 let tmp4;
-const LinearGradientDefault = tmp11(5292);
-const CollectiblesShopCardVariantsDefault = tmp4(8327);
+const LinearGradientDefault = tmp11(5605);
+const CollectiblesShopCardVariantsDefault = tmp4(8527);
 const View = react_native.View;
 ({ CurrencyCodes: metroRequire, VerticalGradient: metroImportDefault } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -103,7 +103,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               tmp13 = cResult[13];
             }
             const discountPercentage2 = tmp13.discountPercentage;
-            const tmpResult = _mod8312;
+            const tmpResult = _mod8508;
             const balance = tmpResult.useFetchVirtualCurrencyBalance().balance;
             let tmp17 = null;
             if (null != tmp9) {
@@ -132,7 +132,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol5 = Symbol;
               ({ priceDescription: priceDescription5, text: text5 } = styles);
               if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl6 = tmp(1127).intl;
+                const intl6 = tmp(1126).intl;
                 const stringResult = intl6.string(intl7.t.BEjTij);
                 cResult[15] = stringResult;
                 tmp101 = stringResult;
@@ -167,7 +167,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol4 = Symbol;
               ({ priceDescription: priceDescription4, text: text4 } = styles);
               if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl5 = tmp(1127).intl;
+                const intl5 = tmp(1126).intl;
                 const stringResult1 = intl5.string(intl7.t["6cfuDj"]);
                 cResult[21] = stringResult1;
                 tmp91 = stringResult1;
@@ -202,7 +202,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol3 = Symbol;
               ({ priceDescription: priceDescription3, text: text3 } = styles);
               if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl4 = tmp(1127).intl;
+                const intl4 = tmp(1126).intl;
                 const stringResult2 = intl4.string(intl7.t.sEAnVH);
                 cResult[27] = stringResult2;
                 tmp81 = stringResult2;
@@ -237,7 +237,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol2 = Symbol;
               ({ priceDescription: priceDescription2, text: text2 } = styles);
               if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl3 = tmp(1127).intl;
+                const intl3 = tmp(1126).intl;
                 const stringResult3 = intl3.string(intl7.t.rt69oo);
                 cResult[33] = stringResult3;
                 tmp71 = stringResult3;
@@ -272,7 +272,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol = Symbol;
               ({ priceDescription, text } = styles);
               if (cResult[39] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl2 = tmp(1127).intl;
+                const intl2 = tmp(1126).intl;
                 const stringResult4 = intl2.string(intl7.t.wu4gyV);
                 cResult[39] = stringResult4;
                 tmp61 = stringResult4;
@@ -335,7 +335,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                       tmp40 = cResult[51];
                     }
                     if (cResult[52] !== tmp9.amount) {
-                      const intl = tmp(1127).intl;
+                      const intl = tmp(1126).intl;
                       const obj15 = { orbAmount: tmp9.amount };
                       const formatToPlainStringResult = intl.formatToPlainString(intl7.t.W4DfeF, obj15);
                       cResult[52] = tmp9.amount;
@@ -394,11 +394,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                               }
                             }
                           }
-                          let tmp53Result = discountPercentage2 >= tmp(6978).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                          let tmp53Result = discountPercentage2 >= tmp(7065).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                           if (tmp53Result) {
                             const items1 = [, , ];
                             ({ discountPercentage: arr6[0], text: arr6[1] } = styles);
-                            const Text2 = tmp(4833).Text;
+                            const Text2 = tmp(4886).Text;
                             let androidTextPadding;
                             const tmp53 = metroImportAll;
                             const tmpResult11 = PlatformUtils;
@@ -495,11 +495,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                           }
                         }
                       }
-                      let tmp31Result = discountPercentage >= tmp(6978).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                      let tmp31Result = discountPercentage >= tmp(7065).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                       if (tmp31Result) {
                         const items5 = [, , ];
                         ({ discountPercentage: arr2[0], text: arr2[1] } = styles);
-                        const Text = tmp(4833).Text;
+                        const Text = tmp(4886).Text;
                         let androidTextPadding1;
                         const tmp31 = metroImportAll;
                         const tmpResult13 = PlatformUtils;
@@ -537,10 +537,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                 let tmp21;
                 if (discountSource === CollectiblesUtils.ShopDiscountSource.THIRDPARTY) {
                   const obj22 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(8324).TagIcon, obj22);
+                  tmp21 = metroImportAll(tmp(8524).TagIcon, obj22);
                 } else {
                   const obj23 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(8119).NitroWheelIcon, obj23);
+                  tmp21 = metroImportAll(tmp(8313).NitroWheelIcon, obj23);
                 }
                 tmp19 = tmp21;
               }

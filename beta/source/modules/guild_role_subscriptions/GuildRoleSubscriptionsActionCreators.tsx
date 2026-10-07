@@ -1,13 +1,13 @@
-// Module ID: 6674
-// Function ID: 6675
+// Module ID: 6758
+// Function ID: 6759
 // Name: GuildRoleSubscriptionsActionCreators
-// Dependencies: [32, 5, 1086, 6675, 585, 5175, 6676, 1253, 5017, 4866, 1103, 2]
+// Dependencies: [32, 5, 1085, 6759, 584, 5404, 6760, 1252, 5070, 4919, 1102, 2]
 // Exports: archiveSubscriptionListing, createSubscriptionGroupListing, createSubscriptionListing, deleteSubscriptionGroupListing, deleteSubscriptionListing, fetchAllSubscriptionListingsDataForGuild, fetchMonetizationRestrictions, fetchSubscriptionListingForPlan, fetchSubscriptionsSettings, updateSubscriptionGroupListing, updateSubscriptionListing, updateSubscriptionTrial, updateSubscriptionsSettings
 
-// Module 6674 (GuildRoleSubscriptionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6675 */;
+// Module 6758 (GuildRoleSubscriptionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6759 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -193,7 +193,7 @@ obj = function _fetchAllSubscriptionListingsDataForGuild() {
               benefitChannels = undefined;
               c11 = 1;
               c12 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -816,7 +816,7 @@ obj = function _fetchGuildRoleSubscriptionGroupListing() {
             tmp = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -901,7 +901,7 @@ obj = function _createSubscriptionListing() {
             id = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -967,96 +967,24 @@ obj = function _createSubscriptionListing() {
   return obj(...arguments);
 };
 obj = function _updateSubscriptionListing() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
     let c0;
     let c1;
     let c2;
     let c3;
+    let c4;
+    let closure_1;
+    let closure_2;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let closure_2 = tmp4;
-            let closure_1 = tmp;
-            c0 = undefined;
-            c1 = undefined;
-            c2 = undefined;
-            ({ guildId: c0, listingId: c1, groupListingId: c2, data: c3 } = closure_0);
-            value = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            const obj7 = closure_130_2(closure_130_3[3]);
-            c3 = 2;
-            c4 = 1;
-            const obj6 = { value: obj7.updateGuildRoleSubscriptionListing(c0, c2, c1, c3), done: false };
-            return obj6;
-          }
-        } else if (2 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
-          } else {
-            const obj9 = { type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: value };
-            const obj3 = closure_130_1(closure_130_3[4]);
-            obj3.dispatch(obj9);
-            c3 = 3;
-            c4 = 1;
-            const obj10 = { value: closure_130_17(c0, c2, { includeArchivedListings: true }), done: false };
-            return obj10;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj11 = { value, done: true };
-          return obj11;
-        } else {
-          c4 = 3;
-          obj = { value, done: true };
-          return obj;
-        }
-      } catch (tmp25) {
-        c4 = 3;
-        throw tmp25;
-      }
-    }
+    ({ guildId: c0, listingId: c1, groupListingId: c2, data: c3 } = closure_0);
+    await "Reflect";
+    const obj7 = closure_130_2(closure_130_3[3]);
+    const value = await obj7.updateGuildRoleSubscriptionListing(c0, c2, c1, c3);
+    const obj9 = { type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: value };
+    const obj3 = closure_130_1(closure_130_3[4]);
+    obj3.dispatch(obj9);
+    await closure_130_17(c0, c2, { includeArchivedListings: true });
+    return value;
   });
   return obj(...arguments);
 };
@@ -1106,7 +1034,7 @@ obj = function _fetchMonetizationRestrictions() {
               restrictions = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             if (1 === c7) {

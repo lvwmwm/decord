@@ -1,18 +1,18 @@
-// Module ID: 4746
-// Function ID: 4747
+// Module ID: 7672
+// Function ID: 7673
 // Name: GameServerStore
-// Dependencies: [4747, 4748, 504, 585, 2]
+// Dependencies: [7673, 7674, 504, 584, 2]
 
-// Module 4746 (GameServerStore)
+// Module 7672 (GameServerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import getPowerupEntitlementPriceDefault from "getPowerupEntitlementPrice" /* 4747 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4748 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import getPowerupEntitlementPriceDefault from "getPowerupEntitlementPrice" /* 7673 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 7674 */;
 import size from "module_2" /* 2 */;
 
 let sku;
 
-const f88230 = (acc, item) => {
+const f95388 = (acc, item) => {
   let num = getPowerupEntitlementPriceDefault(item);
   if (num == null) {
     num = 0;
@@ -234,7 +234,7 @@ obj = {
     ({ guildId, unlockedGameServers } = arg0);
     const values = Object.values(unlockedGameServers);
     obj = {};
-    const reduced = values.reduce(f88230, 0);
+    const reduced = values.reduce(f95388, 0);
     const merged = Object.assign(obj2);
     if (null == obj2[guildId]) {
       obj2 = { catalog: {}, instances: {}, instructions: {}, entitlements: {} };
@@ -291,7 +291,7 @@ obj = {
     });
     const values = Object.values(tmp2.entitlements);
     obj2 = {};
-    const reduced = values.reduce(f88230, 0);
+    const reduced = values.reduce(f95388, 0);
     const merged = Object.assign(obj2);
     const obj3 = { appliedBoosts: reduced };
     const merged1 = Object.assign(tmp2);
@@ -312,7 +312,7 @@ obj = {
     });
     const values = Object.values(tmp2.entitlements);
     obj2 = {};
-    const reduced = values.reduce(f88230, 0);
+    const reduced = values.reduce(f95388, 0);
     const merged = Object.assign(obj2);
     const obj3 = { appliedBoosts: reduced };
     const merged1 = Object.assign(tmp2);

@@ -1,25 +1,25 @@
-// Module ID: 8982
-// Function ID: 8983
+// Module ID: 9204
+// Function ID: 9205
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 2051, 4472, 6950, 2057, 1086, 21, 4837, 1127, 8958, 558, 576, 504, 1491, 1882, 8957, 4545, 4424, 8983, 8964, 4833, 5282, 9023, 9024, 9025, 8962, 2]
+// Dependencies: [32, 19, 2051, 4509, 7037, 2057, 1085, 21, 4890, 1126, 9180, 558, 576, 504, 1490, 1881, 9179, 4590, 4461, 9205, 9186, 4886, 5594, 9245, 9246, 9247, 9184, 2]
 
-// Module 8982 (EditGuildEventWhere)
-import intl5 from "intl" /* 1127 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1882 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8957 */;
-import EntityUtils from "EntityUtils" /* 8958 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
+// Module 9204 (EditGuildEventWhere)
+import intl5 from "intl" /* 1126 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1881 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9179 */;
+import EntityUtils from "EntityUtils" /* 9180 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,10 +46,10 @@ function assertGuildEventWhereIsValid(guildEvent) {
       const obj = EntityUtils;
       if (null == obj.getLocationFromEventData(guildEvent)) {
         const _Error2 = Error;
-        const intl2 = tmp3(1127).intl;
+        const intl2 = tmp3(1126).intl;
         const self3 = this;
         const self4 = this;
-        const error1 = new Error(intl2.string(tmp3(1127).t.q91szp));
+        const error1 = new Error(intl2.string(tmp3(1126).t.q91szp));
         throw error1;
       }
     }
@@ -198,7 +198,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       class Y {
         constructor(arg0) {
           tmp = closure_4(null);
-          obj = { entityType: guild, scheduledEndTime: "r" };
+          obj = { entityType: guild, scheduledEndTime: "Array" };
           if (guild === closure_10.EXTERNAL) {
             tmp2 = closure_1;
             tmp3 = closure_3;
@@ -241,7 +241,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       class Y {
         constructor(arg0) {
           tmp = closure_4(null);
-          obj = { entityType: guild, scheduledEndTime: "r" };
+          obj = { entityType: guild, scheduledEndTime: "Array" };
           if (guild === closure_10.EXTERNAL) {
             tmp2 = closure_1;
             tmp3 = closure_3;
@@ -298,7 +298,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         class Y {
           constructor(arg0) {
             tmp = closure_4(null);
-            obj = { entityType: guild, scheduledEndTime: "r" };
+            obj = { entityType: guild, scheduledEndTime: "Array" };
             if (guild === closure_10.EXTERNAL) {
               tmp2 = closure_1;
               tmp3 = closure_3;
@@ -344,7 +344,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       class Y {
         constructor(arg0) {
           tmp = closure_4(null);
-          obj = { entityType: guild, scheduledEndTime: "r" };
+          obj = { entityType: guild, scheduledEndTime: "Array" };
           if (guild === closure_10.EXTERNAL) {
             tmp2 = closure_1;
             tmp3 = closure_3;
@@ -375,7 +375,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     class Y {
       constructor(arg0) {
         tmp = closure_4(null);
-        obj = { entityType: guild, scheduledEndTime: "r" };
+        obj = { entityType: guild, scheduledEndTime: "Array" };
         if (guild === closure_10.EXTERNAL) {
           tmp2 = closure_1;
           tmp3 = closure_3;
@@ -550,12 +550,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     entityType: guildEvent.entityType,
     onChange(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "r" };
+      const obj = { entityType, scheduledEndTime: "Array" };
       if (entityType === constants.EXTERNAL) {
-        let obj2 = _modDef4424(guildEvent.scheduledStartTime);
+        let obj2 = _modDef4461(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;
         if (obj2 == null) {
-          obj2 = tmp2(4424)();
+          obj2 = tmp2(4461)();
         }
         const addResult = obj2.add(1, "hour");
         obj.scheduledEndTime = addResult.toISOString();

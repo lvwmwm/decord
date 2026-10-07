@@ -1,13 +1,13 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 15137
+// Function ID: 15138
 // Name: useMessagePreviews
-// Dependencies: [1232, 4852, 2027, 558, 576, 504, 7313, 7308, 14853, 2]
+// Dependencies: [1231, 4905, 2028, 558, 576, 504, 7527, 7514, 15138, 2]
 
-// Module 14852 (useMessagePreviews)
-import UserSettings from "UserSettings" /* 2027 */;
-import useIsNsfwGatedDefault from "useIsNsfwGated" /* 7313 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import ReadStateStore from "ReadStateStore" /* 4852 */;
+// Module 15137 (useMessagePreviews)
+import UserSettings from "UserSettings" /* 2028 */;
+import useIsNsfwGatedDefault from "useIsNsfwGated" /* 7527 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp9;
-const useLatestChannelMessageDefault = tmp9(14853);
+const useLatestChannelMessageDefault = tmp9(15138);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
@@ -137,10 +137,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) =>
     disabled = useIsNsfwGatedDefault(guild_id);
   }
   if (!disabled) {
-    disabled = tmp4 === tmp(7308).MessagePreviewTypes.NONE;
+    disabled = tmp4 === tmp(7514).MessagePreviewTypes.NONE;
   }
   if (!disabled) {
-    let tmp10 = tmp4 === tmp(7308).MessagePreviewTypes.UNREADS;
+    let tmp10 = tmp4 === tmp(7514).MessagePreviewTypes.UNREADS;
     if (tmp10) {
       if (unread == null) {
         unread = stateFromStores;
@@ -166,10 +166,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) =>
     disabled = useIsNsfwGatedDefault(guild_id);
   }
   if (!disabled) {
-    disabled = tmp === tmp2(7308).MessagePreviewTypes.NONE;
+    disabled = tmp === tmp2(7514).MessagePreviewTypes.NONE;
   }
   if (!disabled) {
-    let tmp6 = tmp === tmp2(7308).MessagePreviewTypes.UNREADS;
+    let tmp6 = tmp === tmp2(7514).MessagePreviewTypes.UNREADS;
     if (tmp6) {
       if (unread == null) {
         unread = stateFromStores;

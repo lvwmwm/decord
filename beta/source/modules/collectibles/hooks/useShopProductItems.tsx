@@ -1,12 +1,12 @@
-// Module ID: 7620
-// Function ID: 7621
+// Module ID: 7842
+// Function ID: 7843
 // Name: useShopProductItems
-// Dependencies: [19, 1980, 558, 576, 1127, 2]
+// Dependencies: [19, 1980, 558, 576, 1126, 2]
 // Exports: getBundleItemNames, getProductItems, getPurchasedItem
 
-// Module 7620 (useShopProductItems)
+// Module 7842 (useShopProductItems)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
+import intl4 from "intl" /* 1126 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

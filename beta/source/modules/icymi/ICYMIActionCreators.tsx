@@ -1,12 +1,12 @@
-// Module ID: 7803
-// Function ID: 7804
+// Module ID: 8029
+// Function ID: 8030
 // Name: ICYMIActionCreators
-// Dependencies: [5, 1086, 1283, 585, 1243, 7802, 2027, 2]
+// Dependencies: [5, 1085, 1282, 584, 1242, 8030, 8034, 2028, 2]
 
-// Module 7803 (ICYMIActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import ICYMIUtils from "ICYMIUtils" /* 7802 */;
+// Module 8029 (ICYMIActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8030 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -373,7 +373,7 @@ let obj = {
     })();
   },
   fetchForStatusNotification(customStatusItem) {
-    const obj = ICYMIUtils;
+    const obj = ICYMIExperiment;
     if (obj.icymiEnabled("fetchInitialStatus")) {
       const obj3 = { type: "LOAD_ICYMI_FROM_NOTIFICATION", customStatusItem };
       const obj2 = DispatcherDefault;
@@ -449,7 +449,7 @@ let obj = {
             let closure_4 = tmp30;
             const obj2 = endingIndex(tmp30[4]);
             obj2.captureException(closure_4);
-            const obj3 = startingIndex(tmp30[5]);
+            const obj3 = startingIndex(tmp30[6]);
             hydrationId = obj3.generateHydrationId(closure_129_0, closure_129_1);
             const obj11 = { type: "LOAD_ICYMI_HYDRATED_FAILED", hydrationId };
             const obj4 = endingIndex(tmp30[3]);
@@ -513,7 +513,7 @@ let obj = {
             } else {
               closure_1 = tmp;
               body = undefined;
-              const obj9 = ICYMIUtils;
+              const obj9 = ICYMIExperiment;
               const tmp27 = require;
               if (obj9.icymiEnabled("guildChannelScores")) {
                 c3 = 1;
@@ -590,7 +590,7 @@ let obj = {
             } else {
               closure_1 = tmp;
               body = undefined;
-              const obj9 = ICYMIUtils;
+              const obj9 = ICYMIExperiment;
               const tmp27 = require;
               if (obj9.icymiEnabled("recommendedGuilds")) {
                 c3 = 1;
@@ -668,9 +668,9 @@ let obj = {
             } else {
               setting = undefined;
               body = undefined;
-              const obj7 = ICYMIUtils;
+              const obj7 = ICYMIExperiment;
               if (obj7.icymiEnabled("mediaForCurrentStatus")) {
-                const CustomStatusSetting = tmp32(dependencyMap[6]).CustomStatusSetting;
+                const CustomStatusSetting = tmp32(dependencyMap[7]).CustomStatusSetting;
                 setting = CustomStatusSetting.getSetting();
                 if (null != setting) {
                   if (null != setting.createdAtMs) {

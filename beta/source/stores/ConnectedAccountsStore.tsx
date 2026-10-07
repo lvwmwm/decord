@@ -1,20 +1,21 @@
-// Module ID: 5594
-// Function ID: 5595
+// Module ID: 5440
+// Function ID: 5441
 // Name: ConnectedAccountsStore
-// Dependencies: [5595, 1086, 5596, 2065, 5719, 504, 585, 2]
+// Dependencies: [5441, 1085, 5442, 2066, 5565, 5566, 504, 584, 2]
 
-// Module 5594 (ConnectedAccountsStore)
+// Module 5440 (ConnectedAccountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import PlatformsDefault from "Platforms" /* 5596 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5719 */;
-import ConnectedAccountRecord from "ConnectedAccountRecord" /* 5595 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformsDefault from "Platforms" /* 5442 */;
+import fetchConnectedAccounts from "fetchConnectedAccounts" /* 5565 */;
+import postConnectionCallback from "postConnectionCallback" /* 5566 */;
+import ConnectedAccountRecord from "ConnectedAccountRecord" /* 5441 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, closure_7, integrations;
 
-const f89802 = (type) => {
+const f90435 = (type) => {
   const hasItem = set.has(type.type);
   let isSupportedResult = !hasItem;
   if (isSupportedResult) {
@@ -23,7 +24,7 @@ const f89802 = (type) => {
   }
   return isSupportedResult;
 };
-const f89803 = (type) => set.has(type.type);
+const f90436 = (type) => set.has(type.type);
 const items = [Constants.PlatformTypes.CONTACTS];
 const set = new Set(items);
 let c5 = true;
@@ -81,8 +82,8 @@ let obj = {
       const tmp = new ConnectedAccountRecord(item);
       return tmp;
     });
-    closure_6 = mapped.filter(f89802);
-    closure_7 = mapped.filter(f89803);
+    closure_6 = mapped.filter(f90435);
+    closure_7 = mapped.filter(f90436);
     c5 = false;
   },
   USER_CONNECTIONS_UPDATE: function handleConnectionsUpdate(local) {
@@ -108,13 +109,13 @@ let obj = {
           const tmp2 = new ConnectedAccountRecord(obj);
           return tmp2;
         });
-        closure_6 = mapped.filter(f89802);
-        closure_7 = mapped.filter(f89803);
+        closure_6 = mapped.filter(f90435);
+        closure_7 = mapped.filter(f90436);
         c5 = false;
       }
     }
-    let obj = ConnectedAccountsActionCreatorsDefault;
-    const response = obj.fetch();
+    let obj = fetchConnectedAccounts;
+    const connectedAccounts = obj.fetchConnectedAccounts();
   },
   USER_CONNECTIONS_INTEGRATION_JOINING: function handleJoining(integrationId) {
     closure_8[integrationId.integrationId] = integrationId.joining;
@@ -124,7 +125,8 @@ let obj = {
     let closure_129_0;
     let closure_129_1;
     let revoked;
-    ({ platformType: closure_129_0, id: closure_129_1, revoked, accessToken } = arg0);
+    let showActivity;
+    ({ platformType: closure_129_0, id: closure_129_1, revoked, accessToken, showActivity } = arg0);
     const found = closure_6.find((id) => id.id === closure_1_1 && id.type === closure_1_0);
     if (null == found) {
       return false;
@@ -134,6 +136,9 @@ let obj = {
       }
       if (null != accessToken) {
         found.accessToken = accessToken;
+      }
+      if (null != showActivity) {
+        found.showActivity = showActivity;
       }
     }
   },
@@ -152,11 +157,11 @@ let obj = {
     let provider;
     let state;
     ({ code, state, openid_params, provider } = arg0);
-    const obj = ConnectedAccountsActionCreatorsDefault;
-    obj.callback(provider, { code, state, openid_params });
+    const obj = postConnectionCallback;
+    const result = obj.postConnectionCallback(provider, { code, state, openid_params });
   }
 };
 const connectedAccountsStore = new ConnectedAccountsStore(DispatcherDefault, obj);
-const result = size.fileFinishedImporting("stores/ConnectedAccountsStore.tsx");
+let result = size.fileFinishedImporting("stores/ConnectedAccountsStore.tsx");
 
 export default connectedAccountsStore;

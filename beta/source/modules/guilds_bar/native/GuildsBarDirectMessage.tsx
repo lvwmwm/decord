@@ -1,24 +1,24 @@
-// Module ID: 15979
-// Function ID: 15980
+// Module ID: 16283
+// Function ID: 16284
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 5591, 2051, 7054, 4482, 1378, 1086, 21, 4837, 588, 558, 576, 15931, 504, 9038, 1127, 15934, 4848, 10417, 15980, 10414, 1189, 5896, 2]
+// Dependencies: [19, 502, 5437, 2051, 7121, 4519, 1377, 1085, 21, 4890, 587, 558, 576, 16234, 504, 9260, 1126, 16237, 4901, 10651, 16284, 10648, 1188, 5974, 2]
 
-// Module 15979 (GuildsBarDirectMessage)
+// Module 16283 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import transitionToChannel from "transitionToChannel" /* 4848 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9038 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10417 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import transitionToChannel from "transitionToChannel" /* 4901 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9260 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5591 */;
+import CallStore from "CallStore" /* 5437 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7054 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import createStyles from "createStyles" /* 4837 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

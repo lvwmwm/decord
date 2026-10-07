@@ -1,18 +1,18 @@
-// Module ID: 14185
-// Function ID: 14186
+// Module ID: 14469
+// Function ID: 14470
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2073, 7390, 21, 4837, 588, 504, 14186, 7614, 7613, 1127, 1370, 4833, 14163, 4801, 14187, 1987, 5893, 9171, 2]
+// Dependencies: [19, 2074, 7603, 21, 4890, 587, 504, 14470, 7836, 7835, 1126, 1369, 4886, 14445, 4854, 14471, 1987, 5971, 9395, 2]
 // Exports: default
 
-// Module 14185 (UserProfilePrimaryGuildEditButton)
+// Module 14469 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import GuildTagConstants from "GuildTagConstants" /* 7390 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import GuildTagConstants from "GuildTagConstants" /* 7603 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import createStyles from "createStyles" /* 4837 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -140,7 +140,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[10]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(14187, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(14471, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

@@ -1,16 +1,16 @@
-// Module ID: 17651
-// Function ID: 17652
+// Module ID: 18016
+// Function ID: 18017
 // Name: SocialRpcNetworkConfigManager
-// Dependencies: [17, 2115, 502, 1253, 1283, 6540, 1370, 2]
+// Dependencies: [17, 2116, 502, 1252, 1282, 6613, 1369, 2]
 
-// Module 17651 (SocialRpcNetworkConfigManager)
+// Module 18016 (SocialRpcNetworkConfigManager)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 function updateSocialRpcNetworkConfig() {

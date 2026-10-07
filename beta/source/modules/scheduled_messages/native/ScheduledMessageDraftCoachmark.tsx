@@ -1,23 +1,23 @@
-// Module ID: 11819
-// Function ID: 11820
+// Module ID: 12075
+// Function ID: 12076
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [109, 19, 17, 2048, 21, 4837, 558, 576, 1127, 11594, 9656, 2]
+// Dependencies: [109, 19, 17, 2048, 21, 4890, 558, 576, 1126, 11849, 9882, 2]
 
-// Module 11819 (ScheduledMessageDraftCoachmark)
+// Module 12075 (ScheduledMessageDraftCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
+import intl3 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11594 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11849 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useCoachmark = tmp(9656);
+const useCoachmark = tmp(9882);
 let closure_3 = ["buttonRef"];
 const Image = react_native.Image;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -38,10 +38,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = closure_9();
   const image = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(onDismiss(1127).t.Pu7sCU);
-    const intl2 = tmp(1127).intl;
-    const formatResult = intl2.format(onDismiss(1127).t.Juk17F, {});
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(onDismiss(1126).t.Pu7sCU);
+    const intl2 = tmp(1126).intl;
+    const formatResult = intl2.format(onDismiss(1126).t.Juk17F, {});
     cResult[0] = stringResult;
     cResult[1] = formatResult;
     tmp5 = stringResult;

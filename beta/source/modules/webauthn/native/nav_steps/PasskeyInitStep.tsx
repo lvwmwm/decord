@@ -1,24 +1,24 @@
-// Module ID: 14214
-// Function ID: 14215
+// Module ID: 14587
+// Function ID: 14588
 // Name: PasskeyInitStep
-// Dependencies: [32, 19, 17, 14202, 14203, 21, 4837, 588, 504, 14215, 4833, 1127, 5746, 7362, 4791, 4801, 14217, 1987, 9829, 5997, 5916, 14218, 558, 576, 1491, 6009, 6367, 6796, 8057, 2]
+// Dependencies: [32, 19, 17, 14492, 1085, 21, 4890, 587, 504, 14588, 4886, 1126, 5592, 7575, 4847, 4854, 14590, 1987, 10058, 6074, 5993, 14591, 558, 576, 1490, 6086, 6439, 6880, 8895, 2]
 
-// Module 14214 (PasskeyInitStep)
+// Module 14587 (PasskeyInitStep)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6009 */;
-import WebAuthnConstants from "WebAuthnConstants" /* 14203 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6086 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14202 */;
+import WebAuthnStore from "WebAuthnStore" /* 14492 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let dependencyMap, setOptionsResult;
 
 let c9;
 let metroImportAll;
@@ -50,15 +50,15 @@ function CredentialList(navigation) {
   _slicedToArray(react.useState(false), 2);
   if (0 === credentials.length) {
     let obj2 = { style: tmp3.upsellContainer, children: items1 };
-    items1 = [closure_8(tmp(14215).PasskeysSpotIllustration, { scale: 0.6 }), ];
-    let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1127).t.FSNwFW) };
-    const Text = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    items1 = [closure_8(tmp(14588).PasskeysSpotIllustration, { scale: 0.6 }), ];
+    let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1126).t.FSNwFW) };
+    const Text = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     items1[1] = closure_8(Text, obj3);
     return closure_9(View, obj2);
   } else {
     let obj4 = {
-      title: intl.string(tmp(1127).t["4RIqrQ"]),
+      title: intl.string(tmp(1126).t["4RIqrQ"]),
       hasIcons: false,
       children: credentials.map((label) => {
           let ButtonGroup;
@@ -87,7 +87,7 @@ function CredentialList(navigation) {
             onPress() {
               const obj = ActionSheetActionCreatorsDefault;
               const obj2 = { credential, deleting, setDeleting };
-              return obj.openLazy(asyncRequire(14217, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj2);
+              return obj.openLazy(asyncRequire(14590, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj2);
             }
           };
           const IconButton = navigation(loading[13]).IconButton;
@@ -104,7 +104,7 @@ function CredentialList(navigation) {
             loading,
             onPress() {
               const obj = { credential };
-              navigation.push(WebAuthnScreens.EDIT, obj);
+              navigation.push(UserSettingsSections.WEBAUTHN_EDIT, obj);
             }
           };
           const IconButton2 = navigation(loading[13]).IconButton;
@@ -123,14 +123,14 @@ function CredentialList(navigation) {
           return tmp(TableRow, obj, label.id);
         })
     };
-    const TableRowGroup = tmp(5997).TableRowGroup;
-    intl = tmp(1127).intl;
+    const TableRowGroup = tmp(6074).TableRowGroup;
+    intl = tmp(1126).intl;
     return closure_8(TableRowGroup, obj4);
   }
 }
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
-const WebAuthnScreens = WebAuthnConstants.WebAuthnScreens;
+const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, upsellContainer: obj3, upsellText: obj4, iconButtonGroup: obj5, headerAddButton: { alignSelf: "center" } };
@@ -142,7 +142,6 @@ obj5 = { flexDirection: "row", paddingVertical: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
 let closure_11 = { top: 12, bottom: 12, left: 12, right: 12 };
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let fn2;
   let hasFetchedCredentials;
   let hitSlop;
   let items2;
@@ -215,7 +214,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    const layoutEffect = obj4.useLayoutEffect(fn2, items2);
+    const layoutEffect = obj4.useLayoutEffect(S, items2);
     if (cResult[9] !== navigation) {
       class T {
         constructor() {
@@ -262,7 +261,52 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[13] = tmp19;
     tmp16 = tmp19;
   }
-  fn2 = function y() {
+  class S {
+    constructor() {
+      obj = {
+        headerRight() {
+              let intl;
+              if (navigation(hasFetchedCredentials[26]).hasWebAuthn) {
+                const obj = { text: intl.string(navigation(hasFetchedCredentials[11]).t.OYkgVk), style: headerAddButton.headerAddButton, hitSlop, onPress() { /* body not rendered: F153002 */ }, foregroundRipple: true };
+                const HeaderActionButton = tmp(tmp2[27]).HeaderActionButton;
+                intl = tmp(tmp2[11]).intl;
+                return closure_2_8(HeaderActionButton, obj);
+              }
+            }
+      };
+      setOptionsResult = closure_0.setOptions(obj);
+      return;
+    }
+  }
+  items2 = [navigation, tmp5.headerAddButton];
+  cResult[5] = navigation;
+  cResult[6] = tmp5.headerAddButton;
+  cResult[7] = S;
+  cResult[8] = items2;
+}) : (() => {
+  let hasFetchedCredentials;
+  let hitSlop;
+  let obj4;
+  let obj = navigation(hasFetchedCredentials[24]);
+  navigation = obj.useNavigation();
+  const tmp2 = closure_10();
+  let closure_1 = tmp2;
+  const items = [WebAuthnStore];
+  const obj2 = navigation(hasFetchedCredentials[8]);
+  hasFetchedCredentials = obj2.useStateFromStoresObject(items, () => {
+    const obj = { hasFetchedCredentials: WebAuthnStore.hasFetchedCredentials() };
+    return obj;
+  }).hasFetchedCredentials;
+  const items1 = [hasFetchedCredentials];
+  const effect = react.useEffect(() => {
+    const tmp = hasFetchedCredentials;
+    if (!tmp) {
+      const obj = WebAuthnActionCreators;
+      const webAuthnCredentials = obj.fetchWebAuthnCredentials();
+    }
+  }, items1);
+  const items2 = [navigation, tmp2.headerAddButton];
+  const layoutEffect = react.useLayoutEffect(() => {
     let headerAddButton;
     let obj = {
       headerRight() {
@@ -273,7 +317,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             style: headerAddButton.headerAddButton,
             hitSlop,
             onPress() {
-                closure_1_0.push(constants.REGISTER);
+                closure_1_0.push(constants.WEBAUTHN_REGISTER);
               },
             foregroundRipple: true
           };
@@ -284,71 +328,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     };
     navigation.setOptions(obj);
-  };
-  items2 = [navigation, tmp5.headerAddButton];
-  cResult[5] = navigation;
-  cResult[6] = tmp5.headerAddButton;
-  cResult[7] = fn2;
-  cResult[8] = items2;
-}) : ((arg0) => {
-  let hitSlop;
-  let obj4;
-  let obj5;
-  if (arg0 == null) {
-    throw new TypeError("Cannot destructure 'undefined' or 'null'.");
-  } else {
-    navigation = undefined;
-    let hasFetchedCredentials;
-    let tmp = navigation;
-    const tmp2 = hasFetchedCredentials;
-    let obj = navigation(hasFetchedCredentials[24]);
-    navigation = obj.useNavigation();
-    const tmp5 = closure_10();
-    let closure_1 = tmp5;
-    const items = [WebAuthnStore];
-    const obj2 = navigation(hasFetchedCredentials[8]);
-    hasFetchedCredentials = obj2.useStateFromStoresObject(items, () => {
-      const obj = { hasFetchedCredentials: WebAuthnStore.hasFetchedCredentials() };
-      return obj;
-    }).hasFetchedCredentials;
-    const items1 = [hasFetchedCredentials];
-    const effect = react.useEffect(() => {
-      const tmp = hasFetchedCredentials;
-      if (!tmp) {
-        const obj = WebAuthnActionCreators;
-        const webAuthnCredentials = obj.fetchWebAuthnCredentials();
-      }
-    }, items1);
-    const items2 = [navigation, tmp5.headerAddButton];
-    const layoutEffect = react.useLayoutEffect(() => {
-      let headerAddButton;
-      let obj = {
-        headerRight() {
-          let intl;
-          if (navigation(hasFetchedCredentials[26]).hasWebAuthn) {
-            const obj = {
-              text: intl.string(navigation(hasFetchedCredentials[11]).t.OYkgVk),
-              style: headerAddButton.headerAddButton,
-              hitSlop,
-              onPress() {
-                  closure_1_0.push(constants.REGISTER);
-                },
-              foregroundRipple: true
-            };
-            const HeaderActionButton = tmp(tmp2[27]).HeaderActionButton;
-            intl = tmp(tmp2[11]).intl;
-            return closure_2_8(HeaderActionButton, obj);
-          }
-        }
-      };
-      navigation.setOptions(obj);
-    }, items2);
-    const obj3 = { children: closure_8(View, obj4) };
-    obj4 = { style: tmp5.container, children: closure_8(CredentialList, obj5) };
-    obj5 = { navigation };
-    const Form = navigation(hasFetchedCredentials[28]).Form;
-    return closure_8(Form, obj3);
-  }
+  }, items2);
+  const obj3 = { children: closure_8(View, obj4) };
+  obj4 = { style: tmp2.container, children: closure_8(CredentialList, { navigation }) };
+  const Form = navigation(hasFetchedCredentials[28]).Form;
+  return closure_8(Form, obj3);
 });
 const result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/PasskeyInitStep.tsx");
 

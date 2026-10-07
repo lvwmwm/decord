@@ -1,15 +1,15 @@
-// Module ID: 10736
-// Function ID: 10737
+// Module ID: 10981
+// Function ID: 10982
 // Name: formatClearAfterOption
-// Dependencies: [10590, 4515, 1127, 1103, 1376, 2]
+// Dependencies: [10830, 4552, 1126, 1102, 1375, 2]
 // Exports: default
 
-// Module 10736 (formatClearAfterOption)
-import DurationsDefault from "Durations" /* 1103 */;
-import intl10 from "intl" /* 1127 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import DateUtils from "DateUtils" /* 4515 */;
-import Constants from "Constants" /* 10590 */;
+// Module 10981 (formatClearAfterOption)
+import DurationsDefault from "Durations" /* 1102 */;
+import intl10 from "intl" /* 1126 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import DateUtils from "DateUtils" /* 4552 */;
+import Constants from "Constants" /* 10830 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;
@@ -44,8 +44,8 @@ export default function formatClearAfterOption(arg0) {
     } else {
       const formatToPlainString4 = intl9.formatToPlainString;
       const obj2 = { time: data7.formatTime(sum, { format: "short" }) };
-      const DN91Jz4 = tmp57(1127).t.DN91Jz;
-      data7 = tmp57(1127).intl.data;
+      const DN91Jz4 = tmp57(1126).t.DN91Jz;
+      data7 = tmp57(1126).intl.data;
       formatTimeResult = formatToPlainString4(DN91Jz4, obj2);
     }
     const _HermesInternal4 = HermesInternal;
@@ -75,8 +75,8 @@ export default function formatClearAfterOption(arg0) {
     } else {
       const formatToPlainString3 = intl7.formatToPlainString;
       const obj3 = { time: data5.formatTime(sum1, { format: "short" }) };
-      const DN91Jz3 = tmp40(1127).t.DN91Jz;
-      data5 = tmp40(1127).intl.data;
+      const DN91Jz3 = tmp40(1126).t.DN91Jz;
+      data5 = tmp40(1126).intl.data;
       formatTimeResult1 = formatToPlainString3(DN91Jz3, obj3);
     }
     const _HermesInternal3 = HermesInternal;
@@ -105,8 +105,8 @@ export default function formatClearAfterOption(arg0) {
     } else {
       const formatToPlainString2 = intl5.formatToPlainString;
       const obj4 = { time: data3.formatTime(sum2, { format: "short" }) };
-      const DN91Jz2 = tmp24(1127).t.DN91Jz;
-      data3 = tmp24(1127).intl.data;
+      const DN91Jz2 = tmp24(1126).t.DN91Jz;
+      data3 = tmp24(1126).intl.data;
       formatTimeResult2 = formatToPlainString2(DN91Jz2, obj4);
     }
     const _HermesInternal2 = HermesInternal;
@@ -136,8 +136,8 @@ export default function formatClearAfterOption(arg0) {
     } else {
       const formatToPlainString = intl3.formatToPlainString;
       const obj5 = { time: data.formatTime(sum3, { format: "short" }) };
-      const DN91Jz = tmp7(1127).t.DN91Jz;
-      data = tmp7(1127).intl.data;
+      const DN91Jz = tmp7(1126).t.DN91Jz;
+      data = tmp7(1126).intl.data;
       formatTimeResult3 = formatToPlainString(DN91Jz, obj5);
     }
     const _HermesInternal = HermesInternal;

@@ -1,31 +1,33 @@
-// Module ID: 6517
-// Function ID: 6518
+// Module ID: 6590
+// Function ID: 6591
 // Name: doGuildOnboarding
-// Dependencies: [5, 17, 4657, 6518, 6519, 1086, 6520, 4801, 5040, 5833, 6521, 1403, 1886, 6525, 6526, 6527, 6543, 1987, 1113, 2]
+// Dependencies: [32, 5, 17, 4699, 6591, 6592, 1085, 6593, 4854, 5093, 5705, 6594, 1402, 1885, 1886, 6598, 6599, 6600, 6616, 1987, 1112, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 6517 (doGuildOnboarding)
+// Module 6590 (doGuildOnboarding)
 import react_native from "react-native" /* 17 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import react_nativeDefault from "react-native" /* 1886 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import react_nativeDefault from "react-native" /* 1885 */;
+import react_nativeDefault2 from "react-native" /* 1886 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6519 */;
-import _mod6520 from "module_6520" /* 6520 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6527 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6592 */;
+import _mod6593 from "module_6593" /* 6593 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6600 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 6518 */;
-import Constants from "Constants" /* 1086 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6591 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let ImageManager, _require, c4, closure_3, closure_4;
+let _require, c4;
 
+let c10;
 let c9;
-let metroImportAll;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(_mod6520));
+  return JSON.parse(JSON.stringify(_mod6593));
 }
 let obj = function _doGuildOnboarding() {
   obj = _asyncToGenerator(async (arg0) => {
@@ -36,7 +38,7 @@ let obj = function _doGuildOnboarding() {
       let obj11;
       let obj6;
       function fetchLandingAsset() {
-        return closure_1_14(...arguments);
+        return closure_1_15(...arguments);
       }
       if (c6 === 2) {
         c6 = 3;
@@ -67,7 +69,7 @@ let obj = function _doGuildOnboarding() {
               closure_1 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -77,14 +79,14 @@ let obj = function _doGuildOnboarding() {
               c6 = 3;
               return { value, done: true };
             } else {
-              const obj9 = closure_131_1(closure_131_2[7]);
+              const obj9 = closure_131_1(closure_131_2[8]);
               obj9.hideActionSheet();
-              const obj10 = closure_131_1(closure_131_2[8]);
+              const obj10 = closure_131_1(closure_131_2[9]);
               obj10.popAll();
               c5 = 2;
               c6 = 1;
               const obj5 = { value: obj11.waitForGuild(guildId), done: false };
-              obj11 = closure_131_0(closure_131_2[9]);
+              obj11 = closure_131_0(closure_131_2[10]);
               return obj5;
             }
           } else {
@@ -98,16 +100,16 @@ let obj = function _doGuildOnboarding() {
               } else {
                 closure_1 = value;
                 const features2 = closure_1.features;
-                let hasItem = features2.has(closure_131_8.GUILD_ONBOARDING);
+                let hasItem = features2.has(closure_131_9.GUILD_ONBOARDING);
                 if (hasItem) {
                   const features = closure_1.features;
-                  hasItem = features.has(closure_131_8.COMMUNITY);
+                  hasItem = features.has(closure_131_9.COMMUNITY);
                 }
                 if (hasItem) {
                   c5 = 3;
                   c6 = 1;
                   const obj8 = { value: obj6.maybeFetchOnboardingPrompts(guildId), done: false };
-                  obj6 = closure_131_0(closure_131_2[10]);
+                  obj6 = closure_131_0(closure_131_2[11]);
                   return obj8;
                 }
               }
@@ -118,8 +120,8 @@ let obj = function _doGuildOnboarding() {
               } else if (arg0 === 2) {
                 c6 = 3;
                 return { value, done: true };
-              } else if (closure_131_6.shouldShowOnboarding(guildId)) {
-                closure_2 = closure_131_12;
+              } else if (closure_131_7.shouldShowOnboarding(guildId)) {
+                closure_2 = closure_131_13;
                 closure_1 = guildId;
                 c5 = 4;
                 c6 = 1;
@@ -137,7 +139,7 @@ let obj = function _doGuildOnboarding() {
                 closure_2[closure_1] = value;
                 c5 = 5;
                 c6 = 1;
-                const obj15 = { value: closure_131_15(closure_1.id), done: false };
+                const obj15 = { value: closure_131_16(closure_1.id), done: false };
                 return obj15;
               }
             } else if (arg0 === 1) {
@@ -163,7 +165,9 @@ let obj = function _doGuildOnboarding() {
 };
 obj = function _fetchLandingAsset() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let tmp11;
+    let obj11;
+    let obj3;
+    let tmp29;
     let closure_0 = arg0;
     if (c5 === 2) {
       c5 = 3;
@@ -182,7 +186,11 @@ obj = function _fetchLandingAsset() {
       try {
         let closure_1;
         let closure_2;
-        let guildIconSource;
+        let closure_3;
+        let closure_4;
+        let closure_5;
+        let closure_6;
+        let assetSource;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -190,27 +198,31 @@ obj = function _fetchLandingAsset() {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
             closure_1 = undefined;
             closure_2 = undefined;
-            const obj4 = { id: null, icon: null, canAnimate: false, size: 96 / react_nativeDefault() };
-            ({ id: obj9.id, icon: obj9.icon } = closure_0);
+            closure_3 = undefined;
+            closure_4 = undefined;
+            closure_5 = undefined;
+            closure_6 = undefined;
+            const obj5 = { id: null, icon: null, canAnimate: false, size: 96 / react_nativeDefault() };
+            ({ id: obj10.id, icon: obj10.icon } = closure_0);
             const getGuildIconSource = AvatarUtilsDefault.getGuildIconSource;
-            guildIconSource = getGuildIconSource(obj4);
             c3 = 1;
-            const ImageManager2 = ImageManager.ImageManager;
+            assetSource = Image.resolveAssetSource(getGuildIconSource(obj5));
             c4 = 2;
             c5 = 1;
-            const obj5 = { value: ImageManager2.getAvatarBase64(guildIconSource), done: false };
-            return obj5;
+            const obj6 = { value: obj11.getAvatarBase64(assetSource), done: false };
+            obj11 = react_nativeDefault2;
+            return obj6;
           }
         } else if (1 === c4) {
           c3 = 0;
           c5 = 3;
-          const obj6 = { value: closure_130_10(), done: true };
-          return obj6;
+          const obj7 = { value: closure_130_11(), done: true };
+          return obj7;
         } else if (2 === c4) {
           if (arg0 === 1) {
             c5 = 3;
@@ -218,15 +230,15 @@ obj = function _fetchLandingAsset() {
           } else if (arg0 === 2) {
             c3 = 0;
             c5 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
+            const obj8 = { value, done: true };
+            return obj8;
           } else {
             closure_1 = value;
-            ImageManager = closure_130_4.ImageManager;
             c4 = 3;
             c5 = 1;
-            const obj8 = { value: ImageManager.getDominantColors(guildIconSource), done: false };
-            return obj8;
+            const obj9 = { value: obj3.getDominantColors(assetSource), done: false };
+            obj3 = closure_130_1(closure_130_2[14]);
+            return obj9;
           }
         } else if (arg0 === 1) {
           c5 = 3;
@@ -234,22 +246,27 @@ obj = function _fetchLandingAsset() {
         } else if (arg0 === 2) {
           c3 = 0;
           c5 = 3;
-          const obj17 = { value, done: true };
-          return obj17;
+          const obj19 = { value, done: true };
+          return obj19;
         } else {
           closure_2 = value;
+          closure_3 = closure_130_3(closure_2[0], 3);
+          closure_4 = closure_3[0];
+          closure_5 = closure_3[1];
+          closure_6 = closure_3[2];
           const _HermesInternal = HermesInternal;
-          const tmp9 = closure_130_1(closure_130_2[13]);
+          const tmp27 = closure_130_1(closure_130_2[15]);
+          const items = [closure_4, closure_5, closure_6];
           c3 = 0;
           c5 = 3;
-          obj = { value: tmp9(tmp11, "data:image/png;base64," + closure_1, closure_2[0]), done: true };
-          tmp11 = closure_130_10();
+          obj = { value: tmp27(tmp29, "data:image/png;base64," + closure_1, items), done: true };
+          tmp29 = closure_130_11();
           return obj;
         }
-      } catch (tmp20) {
+      } catch (tmp12) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp20;
+          throw tmp12;
         } else {
           c4 = 1;
         }
@@ -263,16 +280,16 @@ function openAndWaitForOnboarding(guildId) {
   obj = require("doGuildOnboardingHelpers");
   const result = obj.waitForOnboardingCompletion(guildId);
   result.then(() => {
-    const tmp = closure_2_11;
-    if (null != closure_2_11[closure_0]) {
-      closure_2_11[closure_0]();
+    const tmp = closure_2_12;
+    if (null != closure_2_12[closure_0]) {
+      closure_2_12[closure_0]();
     }
     delete tmp[closure_0];
     obj = GuildOnboardingActionCreatorsDefault;
     obj.finishOnboarding(closure_0);
   });
   const promise = new Promise((arg0) => {
-    if (null == closure_11[guildId]) {
+    if (null == closure_12[guildId]) {
       tmp[guildId] = arg0;
     }
     obj = ModalActionCreatorsDefault;
@@ -282,24 +299,24 @@ function openAndWaitForOnboarding(guildId) {
       onFinish() {
 
       },
-      landingAnimation: closure_12[guildId],
+      landingAnimation: closure_13[guildId],
       isFirstOpen: true
     };
-    const pushLazyResult = obj.pushLazy(asyncRequire(6543, dependencyMap.paths), obj2, closure_7);
+    const pushLazyResult = obj.pushLazy(asyncRequire(6616, dependencyMap.paths), obj2, closure_8);
     pushLazyResult.then(() => {
       if (guildId.getGuildId() !== closure_1_0) {
-        obj = closure_0(dependencyMap[18]);
-        obj.transitionTo(closure_2_9.CHANNEL(tmp));
+        obj = closure_0(dependencyMap[20]);
+        obj.transitionTo(closure_2_10.CHANNEL(tmp));
       }
     });
   });
   return promise;
 }
-const NativeModules = react_native.NativeModules;
-let closure_7 = GuildOnboardingConstants.GUILD_ONBOARDING_MODAL_KEY;
-({ GuildFeatures: metroImportAll, Routes: c9 } = Constants);
-let closure_11 = {};
+const Image = react_native.Image;
+let closure_8 = GuildOnboardingConstants.GUILD_ONBOARDING_MODAL_KEY;
+({ GuildFeatures: c9, Routes: c10 } = Constants);
 let closure_12 = {};
+let closure_13 = {};
 let result = size.fileFinishedImporting("modules/guild_onboarding/doGuildOnboarding.native.tsx");
 
 export default function doGuildOnboarding() {
@@ -307,8 +324,8 @@ export default function doGuildOnboarding() {
 };
 export { openAndWaitForOnboarding };
 export const discardOnboardingPromise = function discardOnboardingPromise(id) {
-  delete closure_11[id];
+  delete closure_12[id];
 };
 export const isOnboardingActiveForGuild = function isOnboardingActiveForGuild(arg0) {
-  return null != closure_11[arg0];
+  return null != closure_12[arg0];
 };

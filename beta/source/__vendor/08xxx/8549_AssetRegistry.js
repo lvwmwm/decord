@@ -1,10 +1,10 @@
 // Module ID: 8549
 // Function ID: 8550
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 8549 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 16, height: 16, scales: [2, 3], hash: "d082de3975b39d41cd3c34c609bd917a", name: "ic_launch", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3460a8c2a85f7dbc9f38e8345c6f5a9e", name: "NintendoSwitchNeutralIcon", type: "png" });

@@ -1,21 +1,21 @@
-// Module ID: 16593
-// Function ID: 16594
+// Module ID: 16942
+// Function ID: 16943
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 12066, 12083, 1127, 4833, 12070, 5282, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12325, 12342, 1126, 4886, 12329, 5594, 2]
 
-// Module 16593 (AddFriendsContactSyncEmptyState)
+// Module 16942 (AddFriendsContactSyncEmptyState)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12066 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12070 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12083 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12325 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12342 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const title = tmp4.title;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t["/G+nci"]);
     cResult[3] = stringResult;
     tmp11 = stringResult;
@@ -93,10 +93,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   ({ subtitle, subtitleText } = tmp4);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const format = intl2.format;
     const obj4 = { learnMoreHook: ContactSyncUtils.handleOpenLearnMoreLink };
-    const OXdOPf = tmp(1127).t.OXdOPf;
+    const OXdOPf = tmp(1126).t.OXdOPf;
     const formatResult = format(OXdOPf, obj4);
     cResult[6] = formatResult;
     tmp16 = formatResult;
@@ -122,8 +122,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { variant: "primary", size: "lg", text: intl3.string(intl4.t.QUXSpo), onPress: first };
-      const Button = tmp(5282).Button;
-      intl3 = tmp(1127).intl;
+      const Button = tmp(5594).Button;
+      intl3 = tmp(1126).intl;
       const tmp25 = hasOwnProperty(Button, obj6);
       cResult[12] = tmp25;
       tmp23 = tmp25;

@@ -1,22 +1,22 @@
-// Module ID: 11419
-// Function ID: 11420
+// Module ID: 11675
+// Function ID: 11676
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 4826, 21, 588, 4837, 11408, 558, 576, 4570, 1485, 4685, 504, 5281, 5292, 11420, 5843, 4833, 2]
+// Dependencies: [32, 19, 17, 4879, 21, 587, 4890, 11664, 558, 576, 4612, 1484, 4727, 504, 5597, 5605, 11676, 5920, 4886, 2]
 
-// Module 11419 (BannerBase)
+// Module 11675 (BannerBase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import spring from "spring" /* 5281 */;
-import ApplicationsImage from "ApplicationsImage" /* 11408 */;
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import spring from "spring" /* 5597 */;
+import ApplicationsImage from "ApplicationsImage" /* 11664 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = _slicedToArray(react.useState(0), 2);
   let obj2 = ReanimatedRexport;
   const sharedValue = obj2.useSharedValue(false);
-  const diff = sharedValue(1485)().width - 2 * sharedValue(588).space.PX_16;
+  const diff = sharedValue(1484)().width - 2 * sharedValue(587).space.PX_16;
   const backgroundColor = tmp4.bannerGradientColor.backgroundColor;
   if (cResult[0] !== backgroundColor) {
     let num = 0.2;
@@ -153,7 +153,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return obj3;
       }
     }
-    let obj3 = { bannerMeasured: sharedValue, withDelay: tmp(4570).withDelay, withSpring: tmp(5281).withSpring, SPRING_CONFIG };
+    let obj3 = { bannerMeasured: sharedValue, withDelay: tmp(4612).withDelay, withSpring: tmp(5597).withSpring, SPRING_CONFIG };
     const useAnimatedStyle = tmpResult6.useAnimatedStyle;
     M.__closure = obj3;
     M.__workletHash = 5314641176204;
@@ -260,7 +260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp2 = _slicedToArray(react.useState(0), 2);
   let obj = require("ReanimatedRexport");
   const sharedValue = obj.useSharedValue(false);
-  const diff = sharedValue(1485)().width - 2 * sharedValue(588).space.PX_16;
+  const diff = sharedValue(1484)().width - 2 * sharedValue(587).space.PX_16;
   const backgroundColor = tmp.bannerGradientColor.backgroundColor;
   let obj2 = require("ColorUtils");
   let items = [obj2.hexOpacityToRgba(backgroundColor, 0.2), ];
@@ -297,7 +297,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ bannerMeasured: sharedValue, withDelay: require("ReanimatedRexport").withDelay, withSpring: require("spring").withSpring, SPRING_CONFIG });
   const animatedStyle = obj5.useAnimatedStyle(fn);
   const items2 = [tmp.banner, , ];
-  View = sharedValue(4570).View;
+  View = sharedValue(4612).View;
   if (tmp3 > 0) {
     num = 1;
   }
@@ -320,10 +320,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items2[2] = animatedStyle;
   const obj8 = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items3 };
   items3 = [tmp.bannerBackgroundGradient, { height: tmp3, width: diff }];
-  items4 = [closure_7(tmp7(5292), obj8), , ];
+  items4 = [closure_7(tmp7(5605), obj8), , ];
   const obj9 = { style: tmp.imageContainer, children: items5 };
-  const obj10 = { style: tmp.trinketsLottie, source: require("module_11420"), autoPlay: !stateFromStores };
-  const tmp7Result = sharedValue(5843);
+  const obj10 = { style: tmp.trinketsLottie, source: require("module_11676"), autoPlay: !stateFromStores };
+  const tmp7Result = sharedValue(5920);
   items5 = [closure_7(tmp7Result, obj10), image];
   items4[1] = closure_8(View, obj9);
   const obj11 = { style: tmp.bannerTextContainer, children: closure_7(require("Text/Text").Text, obj12) };

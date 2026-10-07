@@ -1,26 +1,26 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9434
+// Function ID: 9435
 // Name: RelationshipActionCreators
-// Dependencies: [32, 1378, 1086, 9208, 5866, 5204, 5835, 1127, 9209, 9210, 9211, 1283, 4680, 4687, 585, 9212, 7856, 2]
+// Dependencies: [32, 1377, 1085, 9435, 5943, 5707, 5913, 1126, 9436, 9437, 9438, 1282, 4722, 4729, 584, 9439, 8080, 2]
 
-// Module 9207 (RelationshipActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import intl10 from "intl" /* 1127 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import shared from "shared" /* 4687 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 5835 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 5866 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7856 */;
-import RelationshipConstants from "RelationshipConstants" /* 9208 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 9209 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 9210 */;
-import FriendsUtils from "FriendsUtils" /* 9211 */;
-import ClearAllIncomingRequestsConfirmationModalDefault from "ClearAllIncomingRequestsConfirmationModal" /* 9212 */;
+// Module 9434 (RelationshipActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import intl10 from "intl" /* 1126 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import shared from "shared" /* 4729 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 5913 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 5943 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8080 */;
+import RelationshipConstants from "RelationshipConstants" /* 9435 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 9436 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 9437 */;
+import FriendsUtils from "FriendsUtils" /* 9438 */;
+import ClearAllIncomingRequestsConfirmationModalDefault from "ClearAllIncomingRequestsConfirmationModal" /* 9439 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -92,12 +92,12 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
               }
               humanizeAbortCodeResult = humanizeAbortCode(num, userTag);
             } else {
-              const intl = tmp19(1127).intl;
-              humanizeAbortCodeResult = intl.string(tmp19(1127).t.paDJBM);
+              const intl = tmp19(1126).intl;
+              humanizeAbortCodeResult = intl.string(tmp19(1126).t.paDJBM);
             }
             obj = { title: intl2.string(intl10.t["6moJ8s"]), body: humanizeAbortCodeResult, confirmText: intl3.string(intl10.t.BddRzS) };
-            intl2 = tmp19(1127).intl;
-            intl3 = tmp19(1127).intl;
+            intl2 = tmp19(1126).intl;
+            intl3 = tmp19(1126).intl;
             const tmp19Result2 = ContextMenuActionCreators;
             tmp19Result2.closeContextMenu();
             const obj3 = AlertActionCreatorsDefault;
@@ -130,12 +130,12 @@ let obj2 = {
     }
     [tmp3, tmp4] = str.split("#");
     _slicedToArray(str.split("#"), 2);
-    const HTTP = str(1283).HTTP;
+    const HTTP = str(1282).HTTP;
     const request = { url: closure_6.USER_RELATIONSHIPS(), body, context, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     body = { username: tmp3, discriminator: parseInt(tmp4), note };
     const merged = Object.assign(captchaPayload);
-    obj3 = str(1283);
+    obj3 = str(1282);
     const postResult = post(request);
     return postResult.catch((error) => {
       handleRelationshipAddError(error, errorUxConfig, str);

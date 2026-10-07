@@ -1,25 +1,25 @@
-// Module ID: 8261
-// Function ID: 8262
+// Module ID: 8457
+// Function ID: 8458
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 4826, 1986, 21, 4837, 558, 576, 1485, 8262, 8263, 8264, 8266, 504, 1106, 8267, 8265, 5896, 7676, 2]
+// Dependencies: [32, 19, 17, 4879, 1986, 21, 4890, 558, 576, 1484, 8458, 8459, 8460, 8462, 504, 1105, 8463, 8461, 5974, 7898, 2]
 
-// Module 8261 (ProfileEffect)
+// Module 8457 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1106 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
-import useProfileEffectDefault from "useProfileEffect" /* 7676 */;
-import utils from "utils" /* 8262 */;
-import profile_effects_constants from "profile_effects/constants" /* 8263 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 8264 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 8267 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import useProfileEffectDefault from "useProfileEffect" /* 7898 */;
+import utils from "utils" /* 8458 */;
+import profile_effects_constants from "profile_effects/constants" /* 8459 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 8460 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 8463 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
   }
   const effect = obj2.useEffect(tmp8, tmp9);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function s(arg0) {
+    const fn3 = function l(arg0) {
       if (!ref.current) {
         current = ref.current;
         current.delete(arg0);
@@ -400,7 +400,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((thumbnailUrlOv
                     }
                   }
                 }
-                const tmp17 = jsx(reducedMotionSrc(tmp[18]), { resizeMode: "cover", resizeMethod: "resize", enableAnimation: true, source: tmp10, alt: accessibilityLabel, height: tmp6, width, style: tmp13 });
+                const tmp17 = jsx(reducedMotionSrc(tmp[18]), { resizeMode: "cover", resizeMethod: "resize", enableAnimation: true, source: tmp10, accessibilityLabel, height: tmp6, width, style: tmp13 });
                 cResult[18] = accessibilityLabel;
                 cResult[19] = tmp6;
                 cResult[20] = width;
@@ -492,7 +492,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((thumbnailUrlOv
     if (useThumbnail) {
       reducedMotionSrc = thumbnailUrlOverride;
     }
-    size = { resizeMode: "cover", resizeMethod: "resize", enableAnimation: true, source: obj4, alt: accessibilityLabel, height: tmp4, width, style: items1 };
+    size = { resizeMode: "cover", resizeMethod: "resize", enableAnimation: true, source: obj4, accessibilityLabel, height: tmp4, width, style: items1 };
     items1 = [tmp.effect, ];
     const size1 = { width, height: tmp4, top: 0 - bannerAdjustment };
     obj4 = { uri: reducedMotionSrc };

@@ -1,21 +1,21 @@
-// Module ID: 14652
-// Function ID: 14653
+// Module ID: 14937
+// Function ID: 14938
 // Name: VideoQuestPlayer
-// Dependencies: [32, 19, 7122, 5757, 21, 558, 576, 14645, 10670, 9771, 4455, 14539, 14653, 7141, 14655, 1369, 10699, 9765, 14663, 14557, 2]
+// Dependencies: [32, 19, 7189, 5623, 21, 558, 576, 14930, 10911, 10000, 4492, 14823, 14938, 7208, 14940, 1368, 10940, 9994, 14948, 14841, 2]
 
-// Module 14652 (VideoQuestPlayer)
+// Module 14937 (VideoQuestPlayer)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 1369 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
-import QuestActionCreators from "QuestActionCreators" /* 9765 */;
-import AssetUtils from "AssetUtils" /* 9771 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10699 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14539 */;
-import SimpleMuxWrapper from "SimpleMuxWrapper" /* 14655 */;
-import VideoQuestCaptions2 from "VideoQuestCaptions" /* 14663 */;
+import react_native from "react-native" /* 1368 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import QuestActionCreators from "QuestActionCreators" /* 9994 */;
+import AssetUtils from "AssetUtils" /* 10000 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10940 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 14823 */;
+import SimpleMuxWrapper from "SimpleMuxWrapper" /* 14940 */;
+import VideoQuestCaptions2 from "VideoQuestCaptions" /* 14948 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VideoQuestUIStore_mod from "VideoQuestUIStore" /* 7122 */;
+import VideoQuestUIStore_mod from "VideoQuestUIStore" /* 7189 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
   let tmp = onLoad;
   let tmp2 = onToggleFullscreen;
   let obj = onLoad(onToggleFullscreen[6]);
-  const cResult = obj.c(103);
+  const cResult = obj.c(104);
   ({ style, onLoad } = onEnd);
   onEnd = onEnd.onEnd;
   onToggleFullscreen = onEnd.onToggleFullscreen;
@@ -334,7 +334,6 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
       current.onReadyForDisplay();
     }
   }, items3);
-  const items5 = [duration, handleSeekAnalytics, quest.id, tmp12];
   const callback2 = obj3.useCallback((arg0) => {
     let naturalSize;
     let trackId;
@@ -363,7 +362,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
       onLoad(arg0);
     }
   }, items4);
-  const callback3 = obj3.useCallback((currentTime) => {
+  const items5 = [duration, handleSeekAnalytics, quest.id, tmp12];
+  const callback3 = obj3.useCallback(() => {
+    const current = closure_29.current;
+    if (current != null) {
+      current.onSeekStart();
+    }
+  }, []);
+  const callback4 = obj3.useCallback((currentTime) => {
     closure_17.current = currentTime.currentTime;
     const fromTimeSec = currentTime.fromTimeSec;
     if (first > 0) {
@@ -384,7 +390,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
   ref2 = obj3.useRef(0);
   const items6 = [quest, questTaskDetails.taskType, handleEngagedViewProgress, handleProgressAnalytics, tmp12, duration, first1];
   const items7 = [duration, quest, handleEndAnalytics, onEnd];
-  const callback4 = obj3.useCallback((currentTime) => {
+  const callback5 = obj3.useCallback((currentTime) => {
     let seekableDuration;
     closure_17.current = currentTime.currentTime;
     const obj = { positionSeconds: currentTime.currentTime, durationSeconds: seekableDuration, isPlaying: first1 === AdsVideoTypes.PlayerState.PLAYING };
@@ -414,7 +420,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
     }
   }, items6);
   const items8 = [handleLoadStartAnalytics];
-  const callback5 = obj3.useCallback(() => {
+  const callback6 = obj3.useCallback(() => {
     const obj = VideoQuestUtils;
     obj.sendVideoProgress(quest, first);
     handleEndAnalytics();
@@ -433,7 +439,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
     }
   }, items7);
   const items9 = [handleErrorAnalytics];
-  const callback6 = obj3.useCallback(() => {
+  const callback7 = obj3.useCallback(() => {
     handleLoadStartAnalytics();
     const current = closure_29.current;
     const tmp2 = closure_29;
@@ -445,14 +451,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
       current2.onPlay();
     }
   }, items8);
-  const callback7 = obj3.useCallback((arg0) => {
+  const callback8 = obj3.useCallback((arg0) => {
     handleErrorAnalytics(arg0);
     const current = closure_29.current;
     if (current != null) {
       current.onError(arg0);
     }
   }, items9);
-  const callback8 = obj3.useCallback((arg0) => {
+  const callback9 = obj3.useCallback((arg0) => {
     let selectedVideoTrackId;
     let videoTracks;
     ({ videoTracks, selectedVideoTrackId } = arg0);
@@ -465,7 +471,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
     }
   }, []);
   const items10 = [handleResumePlaybackAnalytics];
-  const callback9 = obj3.useCallback((nativeEvent) => {
+  const callback10 = obj3.useCallback((nativeEvent) => {
     let height;
     let width;
     let layout;
@@ -487,7 +493,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
     }
   }, []);
   const items11 = [handlePausePlaybackAnalytics];
-  const callback10 = obj3.useCallback(() => {
+  const callback11 = obj3.useCallback(() => {
     handleResumePlaybackAnalytics();
     const current = closure_29.current;
     if (current != null) {
@@ -495,7 +501,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
     }
   }, items10);
   const items12 = [handleBufferAnalytics];
-  const callback11 = obj3.useCallback(() => {
+  const callback12 = obj3.useCallback(() => {
     handlePausePlaybackAnalytics();
     const current = closure_29.current;
     if (current != null) {
@@ -503,7 +509,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
     }
   }, items11);
   const items13 = [quest, flag, contentInsets];
-  const callback12 = obj3.useCallback((nativeEvent) => {
+  const callback13 = obj3.useCallback((nativeEvent) => {
     handleBufferAnalytics(nativeEvent);
     const current = closure_29.current;
     if (current != null) {
@@ -511,7 +517,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
     }
   }, items12);
   const items14 = [memo1, memo];
-  const callback13 = obj3.useCallback((currentTime) => {
+  const callback14 = obj3.useCallback((currentTime) => {
     let num2;
     let num3;
     let num4;
@@ -570,14 +576,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
   if (null == memo2) {
     return null;
   } else {
-    let obj5 = { source: memo2, initialProgress: tmp13, contentDuration: targetSeconds, allowUnrestrictedSeeking: tmp6, disableResumeOnLoad: tmp6, style, isFullscreen, externallyPaused, contentInsets, renderCaptions: callback13, onLoadStart: callback6, onLoad: callback2, onReadyForDisplay: callback1, onSeek: callback3, onBuffer: callback12, onError: callback7, onEnd: callback5, onPlayerStateChange: callback, onResumePlayback: callback10, onPausePlayback: callback11, onProgress: callback4, onVideoTracks: callback8, onVideoLayout: callback9, videoRef: ref, bufferingSpinnerPlacement: str2, captionsEnabled: flag, showCaptionsButton: "landscape" === orientation && hasCaptionAsset, showTranscriptButton: "landscape" === orientation && flag2, showFullscreenButton: "landscape" === orientation, showProgress: "landscape" === orientation, onToggleCaptions: handleToggleCaptions, onOpenTranscript: handleOpenTranscript, onToggleFullscreen: tmp39 };
+    let obj5 = { source: memo2, initialProgress: tmp13, contentDuration: targetSeconds, allowUnrestrictedSeeking: tmp6, disableResumeOnLoad: tmp6, style, isFullscreen, externallyPaused, contentInsets, renderCaptions: callback14, onLoadStart: callback7, onLoad: callback2, onReadyForDisplay: callback1, onSeekStart: callback3, onSeek: callback4, onBuffer: callback13, onError: callback8, onEnd: callback6, onPlayerStateChange: callback, onResumePlayback: callback11, onPausePlayback: callback12, onProgress: callback5, onVideoTracks: callback9, onVideoLayout: callback10, videoRef: ref, bufferingSpinnerPlacement: str2, captionsEnabled: flag, showCaptionsButton: "landscape" === orientation && hasCaptionAsset, showTranscriptButton: "landscape" === orientation && flag2, showFullscreenButton: "landscape" === orientation, showProgress: "landscape" === orientation, onToggleCaptions: handleToggleCaptions, onOpenTranscript: handleOpenTranscript, onToggleFullscreen: tmp40 };
     str2 = "top-left";
     const AdVideoPlayer = tmp(tmp2[19]).AdVideoPlayer;
-    const tmp41 = questTaskDetails;
+    const tmp42 = questTaskDetails;
     if ("landscape" === orientation) {
       str2 = "center";
     }
-    return tmp41(AdVideoPlayer, obj5);
+    return tmp42(AdVideoPlayer, obj5);
   }
 }));
 let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 10935
-// Function ID: 10936
+// Module ID: 11189
+// Function ID: 11190
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 4837, 558, 576, 4833, 1127, 5282, 6572, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 4886, 1126, 5594, 6645, 2]
 
-// Module 10935 (LeaveConnectionRoleActionSheet)
+// Module 11189 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import intl4 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) 
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.vytvJF) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp7 = _false(Text, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) 
   }
   const marginTop = tmp4.marginTop;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult = intl2.string(intl4.t.caJwb5);
     cResult[1] = stringResult;
     tmp8 = stringResult;
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) 
   }
   const button = tmp4.button;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult1 = intl3.string(intl4.t["+Oi4XF"]);
     cResult[4] = stringResult1;
     tmp13 = stringResult1;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) 
     const obj5 = { children: React3(View, obj6) };
     obj6 = { style: container, children: items };
     items = [first, tmp10, tmp18];
-    BottomSheet = tmp(6572).BottomSheet;
+    BottomSheet = tmp(6645).BottomSheet;
     const tmp24 = _false(BottomSheet, obj5);
     cResult[10] = tmp4.container;
     cResult[11] = tmp10;

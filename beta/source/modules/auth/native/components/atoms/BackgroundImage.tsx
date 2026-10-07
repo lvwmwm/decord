@@ -1,12 +1,12 @@
-// Module ID: 6391
-// Function ID: 6392
+// Module ID: 6463
+// Function ID: 6464
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 558, 576, 4769, 4687, 6392, 6393, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4791, 4729, 6464, 6465, 2]
 
-// Module 6391 (BackgroundImage)
+// Module 6463 (BackgroundImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useThemeDefault from "useTheme" /* 4769 */;
+import useThemeDefault from "useTheme" /* 4791 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const shared = tmp(4687);
+const shared = tmp(4729);
 ({ Image: closure_4, View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5Result;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(6392);
+      tmp5Result = tmp5(6464);
     } else {
-      tmp5Result = tmp5(6393);
+      tmp5Result = tmp5(6465);
     }
     backgroundImageSource = tmp5Result;
   }
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (flag === undefined) {
     flag = false;
   }
-  let tmp = flag(4769)();
+  let tmp = flag(4791)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
   let obj2 = {};
@@ -90,9 +90,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp5Result;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp5Result = tmp5(6392);
+        tmp5Result = tmp5(6464);
       } else {
-        tmp5Result = tmp5(6393);
+        tmp5Result = tmp5(6465);
       }
       tmp = tmp5Result;
     }

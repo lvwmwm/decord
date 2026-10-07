@@ -4,4 +4,4 @@
 
 // Module 1319
 
-export default Math.floor;
+export default Math.max;

@@ -1,19 +1,19 @@
-// Module ID: 13009
-// Function ID: 13010
+// Module ID: 13273
+// Function ID: 13274
 // Name: Header
-// Dependencies: [19, 17, 21, 4837, 558, 576, 4769, 1127, 4687, 13010, 13011, 5896, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 4791, 1126, 4729, 13274, 13275, 5974, 4886, 2]
 
-// Module 13009 (Header)
+// Module 13273 (Header)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import shared from "shared" /* 4687 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import FastImageDefault from "FastImage" /* 5896 */;
+import intl3 from "intl" /* 1126 */;
+import shared from "shared" /* 4729 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import FastImageDefault from "FastImage" /* 5974 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl3.t.lpNrPu);
       cResult[3] = stringResult;
       tmp9 = stringResult;
@@ -51,9 +51,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(13010);
+      tmp5Result = tmp5(13274);
     } else {
-      tmp5Result = tmp5(13011);
+      tmp5Result = tmp5(13275);
     }
     if (cResult[4] !== tmp5Result) {
       const obj2 = { accessible: true, accessibilityLabel: tmp9, accessibilityRole: "header", source: tmp5Result };
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     const _Symbol2 = Symbol;
     const headerText = tmp4.headerText;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const stringResult1 = intl2.string(intl3.t.SD5MJW);
       cResult[6] = stringResult1;
       tmp15 = stringResult1;
@@ -124,14 +124,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const tmp5 = hasOwnProperty;
   const tmp6 = View;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(13010);
+    tmp2Result = tmp2(13274);
   } else {
-    tmp2Result = tmp2(13011);
+    tmp2Result = tmp2(13275);
   }
   items1 = [React3(tmp8, obj2), ];
   const obj4 = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.SD5MJW) };
-  const Text = tmp9(4833).Text;
-  intl2 = tmp9(1127).intl;
+  const Text = tmp9(4886).Text;
+  intl2 = tmp9(1126).intl;
   items1[1] = React3(Text, obj4);
   return tmp5(tmp6, obj);
 });

@@ -1,21 +1,21 @@
-// Module ID: 16737
-// Function ID: 16738
+// Module ID: 17093
+// Function ID: 17094
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 2048, 21, 4837, 588, 7207, 558, 576, 4802, 4803, 585, 4570, 4838, 2035, 10125, 1189, 7249, 4833, 1127, 4544, 2]
+// Dependencies: [32, 19, 17, 2048, 21, 4890, 587, 7412, 558, 576, 4855, 4856, 584, 4612, 4891, 2036, 10354, 1188, 7454, 4886, 1126, 4589, 2]
 
-// Module 16737 (BurstReactionAnimationContainer)
+// Module 17093 (BurstReactionAnimationContainer)
 import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import nativeDefault from "native" /* 588 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7207 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7412 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native = tmp(4544);
+const native = tmp(4589);
 let react = react_mod;
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -118,7 +118,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[2];
   }
   let closure_7 = tmp12;
-  let tmpResult = tmp(4570);
+  let tmpResult = tmp(4612);
   const fn3 = function x() {
     let obj2;
     if (null == first) {
@@ -150,7 +150,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return obj2;
   };
-  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(4838).withTiming, runOnJS: tmp(4570).runOnJS, handleComponentFinish };
+  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(4891).withTiming, runOnJS: tmp(4612).runOnJS, handleComponentFinish };
   fn3.__closure = obj3;
   fn3.__workletHash = 3096942457868;
   fn3.__initData = __initData;
@@ -160,7 +160,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp15;
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      let items1 = [tmp(2035).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+      let items1 = [tmp(2036).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
       cResult[3] = items1;
       tmp15 = items1;
     } else {
@@ -252,7 +252,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return tmp(OverlayView, obj);
         }
     };
-    const tmp19 = animatedStyle(animationData(10125), obj4);
+    const tmp19 = animatedStyle(animationData(10354), obj4);
     cResult[4] = animatedStyle;
     cResult[5] = animationData;
     cResult[6] = first1;
@@ -414,8 +414,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return tmp(OverlayView, obj);
         }
     };
-    let tmp11 = animationData(10125);
-    items = [tmp6(2035).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+    let tmp11 = animationData(10354);
+    items = [tmp6(2036).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
     tmp8 = closure_8(tmp11, obj3);
   }
   return tmp8;

@@ -1,21 +1,21 @@
-// Module ID: 11460
-// Function ID: 11461
+// Module ID: 11716
+// Function ID: 11717
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1392, 1086, 21, 4837, 558, 576, 10749, 11452, 8927, 5896, 7635, 7696, 1403, 7593, 2]
+// Dependencies: [19, 17, 1391, 1085, 21, 4890, 558, 576, 10994, 11708, 9149, 5974, 7857, 7918, 1402, 7815, 2]
 
-// Module 11460 (RecommendationsBanner)
+// Module 11716 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import useAvatarColorDefault from "useAvatarColor" /* 7593 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 7635 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 8927 */;
-import AppLauncherContext from "AppLauncherContext" /* 10749 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import useAvatarColorDefault from "useAvatarColor" /* 7815 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 7857 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9149 */;
+import AppLauncherContext from "AppLauncherContext" /* 10994 */;
 import react from "react" /* 19 */;
-import UserRecord from "UserRecord" /* 1392 */;
-import Constants from "Constants" /* 1086 */;
-import createStyles from "createStyles" /* 4837 */;
+import UserRecord from "UserRecord" /* 1391 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,9 +25,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp3;
-const FastImageDefault = tmp3(5896);
-const UserProfileBannerDefault = tmp3(7696);
-const HeroMedia = tmp(11452);
+const FastImageDefault = tmp3(5974);
+const UserProfileBannerDefault = tmp3(7918);
+const HeroMedia = tmp(11708);
 const View = react_native.View;
 ({ BANNER_HEIGHT: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
@@ -113,7 +113,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applicati
             return tmp17;
           }
           if (null != imageSource) {
-            tmp21 = jsx(tmp7(5896), { style: imageStyle, source: imageSource, resizeMode: "cover" });
+            tmp21 = jsx(tmp7(5974), { style: imageStyle, source: imageSource, resizeMode: "cover" });
           } else {
             tmp21 = <View style={imageStyle} />;
           }
@@ -151,9 +151,9 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applicati
   importDefault = undefined;
   applicationId = applicationId.applicationId;
   const tmp = dependencyMap;
-  let obj = heroMediaDimensions(10749);
+  let obj = heroMediaDimensions(10994);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = heroMediaDimensions(11452);
+  let obj2 = heroMediaDimensions(11708);
   heroMediaDimensions = obj2.useHeroMediaDimensions({ width });
   let obj3 = { applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj3);
@@ -235,15 +235,15 @@ let closure_11 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function(
   return <tmpResult displayProfile={tmp3(id)} user={new UserRecord(applicationBot)} />;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applicationEmbedded) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isActivity) => {
   let applicationBot;
   let applicationIcon;
   let applicationId;
   let overrideImageUrl;
   const obj = react2;
   const cResult = obj.c(18);
-  ({ applicationId, applicationIcon, applicationBot, overrideImageUrl } = applicationEmbedded);
-  applicationEmbedded = applicationEmbedded.applicationEmbedded;
+  ({ applicationId, applicationIcon, applicationBot, overrideImageUrl } = isActivity);
+  isActivity = isActivity.isActivity;
   const tmp3 = closure_9();
   if (cResult[0] === applicationBot) {
     if (cResult[1] === applicationIcon) {
@@ -291,12 +291,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           cResult[11] = tmp31;
           tmp28 = tmp31;
         }
-        const tmp27 = jsx(tmp6(5896), { style: tmp3.image, source: tmp24, resizeMode: "cover" });
+        const tmp27 = jsx(tmp6(5974), { style: tmp3.image, source: tmp24, resizeMode: "cover" });
         cResult[6] = tmp3.image;
         cResult[7] = tmp24;
         cResult[8] = tmp27;
         tmp25 = tmp27;
-      } else if (applicationEmbedded) {
+      } else if (isActivity) {
         let tmp20;
         if (cResult[12] !== applicationId) {
           const tmp23 = <closure_10 applicationId={applicationId} />;
@@ -338,13 +338,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   tmp4 = applicationIconSource;
 }) : ((arg0) => {
   let applicationBot;
-  let applicationEmbedded;
   let applicationIcon;
   let applicationId;
+  let isActivity;
   let overrideImageUrl;
   let tmp11;
   ({ applicationId, applicationBot, overrideImageUrl } = arg0);
-  ({ applicationEmbedded, applicationIcon } = arg0);
+  ({ isActivity, applicationIcon } = arg0);
   const tmp = closure_9();
   const obj = AvatarUtilsDefault;
   const applicationIconSource = obj.getApplicationIconSource({ id: applicationId, icon: applicationIcon, bot: applicationBot, botIconFirst: true });
@@ -358,7 +358,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (null != overrideImageUrl) {
     tmp11 = <View style={tmp.imageContainer}>{null}</View>;
     const obj4 = { uri: overrideImageUrl };
-  } else if (applicationEmbedded) {
+  } else if (isActivity) {
     tmp11 = <closure_10 applicationId={applicationId} />;
   } else if (null != applicationBot) {
     tmp11 = <closure_11 applicationBot={applicationBot} />;

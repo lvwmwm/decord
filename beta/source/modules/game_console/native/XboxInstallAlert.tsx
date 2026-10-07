@@ -1,18 +1,18 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 9462
+// Function ID: 9463
 // Name: XboxInstallAlert
-// Dependencies: [19, 8542, 21, 4837, 588, 558, 576, 1127, 1189, 8549, 1370, 4528, 5301, 2]
+// Dependencies: [19, 8749, 21, 4890, 587, 558, 576, 1126, 1188, 8756, 1369, 4565, 5783, 2]
 
-// Module 9235 (XboxInstallAlert)
+// Module 9462 (XboxInstallAlert)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import AlertDefault from "Alert" /* 5301 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8549 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import AlertDefault from "Alert" /* 5783 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8756 */;
 import react from "react" /* 19 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 8542 */;
-import createStyles from "createStyles" /* 4837 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8749 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,13 +40,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = closure_6();
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t["12Kx2v"]);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(require("intl").t.msZW3j);
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(require("intl").t["n+VrqG"]);
-    const intl4 = tmp(1127).intl;
+    const intl4 = tmp(1126).intl;
     const stringResult3 = intl4.string(require("intl").t.kYaBOg);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;

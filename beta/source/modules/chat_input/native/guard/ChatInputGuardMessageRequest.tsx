@@ -1,14 +1,14 @@
-// Module ID: 11826
-// Function ID: 11827
+// Module ID: 12082
+// Function ID: 12083
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1378, 21, 558, 576, 1491, 11827, 504, 4531, 1127, 5906, 11829, 4848, 11835, 2]
+// Dependencies: [5, 19, 1377, 21, 558, 576, 1490, 12083, 504, 4568, 1126, 4807, 12084, 4901, 12090, 2]
 
-// Module 11826 (ChatInputGuardMessageRequest)
+// Module 12082 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 11835 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   let obj2 = channel(acceptMessageRequest[6]);
   navigation = obj2.useNavigation();
   let obj3 = channel(acceptMessageRequest[7]);
-  const isMessageRequestRestrictedViewer = obj3.useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
+  const isMessageRequestRestrictedViewer = obj3.useIsMessageRequestRestrictedViewer();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
     cResult[0] = items;
@@ -466,14 +466,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   };
   const tmp = channel;
   const tmp2 = dependencyMap;
-  obj = channel(1491);
+  obj = channel(1490);
   importDefault = obj.useNavigation();
-  let obj2 = channel(11827);
-  const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
+  let obj2 = channel(12083);
+  const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(11829);
+  let obj4 = channel(12084);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {
@@ -492,9 +492,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   const obj6 = {
     type: "button-action",
-    message: intl.string(tmp(1127).t["e/eQVB"]),
+    message: intl.string(tmp(1126).t["e/eQVB"]),
     subtext: string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI),
-    buttonPrimaryText: intl3.string(tmp(1127).t.Kz8Pwr),
+    buttonPrimaryText: intl3.string(tmp(1126).t.Kz8Pwr),
     buttonPrimaryOnPress: function onAcceptClick(arg0) {
       return obj(...arguments);
     },
@@ -508,11 +508,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     buttonSecondaryLoading: isRejectLoading
   };
   const tmp8 = ChatInputGuardDefault;
-  intl = tmp(1127).intl;
-  const intl2 = tmp(1127).intl;
+  intl = tmp(1126).intl;
+  const intl2 = tmp(1126).intl;
   string = intl2.string;
-  t = tmp(1127).t;
-  intl3 = tmp(1127).intl;
+  t = tmp(1126).t;
+  intl3 = tmp(1126).intl;
   const tmp7 = obj;
   if (!isAcceptLoading) {
     isAcceptLoading = isUserProfileLoading;
@@ -520,9 +520,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   if (!isAcceptLoading) {
     isAcceptLoading = isOptimisticAccepted;
   }
-  const intl4 = tmp(1127).intl;
+  const intl4 = tmp(1126).intl;
   string2 = intl4.string;
-  t2 = tmp(1127).t;
+  t2 = tmp(1126).t;
   if (!isRejectLoading) {
     isRejectLoading = isOptimisticRejected;
   }

@@ -1,14 +1,14 @@
-// Module ID: 8893
-// Function ID: 8894
+// Module ID: 9119
+// Function ID: 9120
 // Name: participantHasVideo
-// Dependencies: [502, 1999, 4858, 4862, 558, 576, 504, 2]
+// Dependencies: [502, 1999, 4911, 4915, 558, 576, 504, 2]
 // Exports: default
 
-// Module 8893 (participantHasVideo)
-import Constants from "Constants" /* 4862 */;
+// Module 9119 (participantHasVideo)
+import Constants from "Constants" /* 4915 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import CallConstants from "CallConstants" /* 4858 */;
+import CallConstants from "CallConstants" /* 4911 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

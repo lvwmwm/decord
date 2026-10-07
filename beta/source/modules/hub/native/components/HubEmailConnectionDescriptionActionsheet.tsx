@@ -1,17 +1,17 @@
-// Module ID: 12144
-// Function ID: 12145
+// Module ID: 12402
+// Function ID: 12403
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 4837, 558, 576, 6571, 1127, 4833, 6572, 2]
+// Dependencies: [19, 21, 4890, 558, 576, 6644, 1126, 4886, 6645, 2]
 
-// Module 12144 (HubEmailConnectionDescriptionActionsheet)
+// Module 12402 (HubEmailConnectionDescriptionActionsheet)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import intl4 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_4();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t["48kg+O"]) };
-    const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
-    intl = tmp(1127).intl;
+    const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+    intl = tmp(1126).intl;
     const tmp7 = React2(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -44,7 +44,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const description = tmp4.description;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult = intl2.string(intl4.t.O1k9XX);
     cResult[1] = stringResult;
     tmp8 = stringResult;
@@ -62,7 +62,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const description2 = tmp4.description;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult1 = intl3.string(intl4.t.FV5dvh);
     cResult[4] = stringResult1;
     tmp13 = stringResult1;

@@ -1,19 +1,19 @@
-// Module ID: 11766
-// Function ID: 11767
+// Module ID: 12021
+// Function ID: 12022
 // Name: DiceRollBar
-// Dependencies: [19, 17, 4826, 11317, 21, 4837, 588, 558, 576, 504, 4570, 4838, 1189, 11767, 8292, 4833, 2]
+// Dependencies: [19, 17, 4879, 11573, 21, 4890, 587, 558, 576, 504, 4612, 4891, 1188, 12022, 8488, 4886, 2]
 
-// Module 11766 (DiceRollBar)
+// Module 12021 (DiceRollBar)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
-import DiceRollStore from "DiceRollStore" /* 11317 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
+import DiceRollStore from "DiceRollStore" /* 11573 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

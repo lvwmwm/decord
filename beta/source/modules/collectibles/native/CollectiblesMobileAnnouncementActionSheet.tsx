@@ -1,26 +1,26 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 17125
+// Function ID: 17126
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1088, 6573, 2048, 21, 4837, 588, 558, 576, 1485, 6038, 1619, 4570, 16771, 4833, 6965, 6604, 16772, 1127, 12111, 12105, 16773, 5282, 6572, 2]
+// Dependencies: [19, 17, 1087, 6646, 2048, 21, 4890, 587, 558, 576, 1484, 6112, 1618, 4612, 17126, 4886, 7052, 6681, 17127, 1126, 12370, 12364, 17128, 5594, 6645, 2]
 
-// Module 16770 (CollectiblesMobileAnnouncementActionSheet)
+// Module 17125 (CollectiblesMobileAnnouncementActionSheet)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import nativeDefault from "native" /* 587 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import BottomSheetModal from "BottomSheetModal" /* 6038 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6573 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6965 */;
-import _modDef16771 from "module_16771" /* 16771 */;
-import _modDef16772 from "module_16772" /* 16772 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import BottomSheetModal from "BottomSheetModal" /* 6112 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7052 */;
+import _modDef17126 from "module_17126" /* 17126 */;
+import _modDef17127 from "module_17127" /* 17127 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 ({ Image: closure_4, StyleSheet, View: hasOwnProperty } = react_native);
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
@@ -113,7 +113,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const _Symbol = Symbol;
             if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj4 = { uri: _modDef16771 };
+              const obj4 = { uri: _modDef17126 };
               cResult[13] = obj4;
               tmp15 = obj4;
             } else {
@@ -208,7 +208,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const rect = { top: -138 * result1, left: -56 * result1, right: -56 * result1 };
   items1[1] = rect;
   obj5 = { source: obj6, style: tmp.mascotImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj6 = { uri: _modDef16771 };
+  obj6 = { uri: _modDef17126 };
   const View = ReanimatedRexportDefault.View;
   return React4(View, obj3);
 });
@@ -392,7 +392,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    tmp17[0] = _modDef16772;
+    tmp17[0] = _modDef17127;
     cResult[10] = tmp17;
     tmp16 = tmp17;
   } else {
@@ -430,7 +430,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const stringResult = obj4.string(markAsDismissed(1127).t.vRCvqo);
+    const stringResult = obj4.string(markAsDismissed(1126).t.vRCvqo);
     cResult[13] = stringResult;
     tmp22 = stringResult;
   } else {
@@ -450,8 +450,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     }
     const obj5 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: headerText, children: tmp22 };
     cResult[14] = tmp4.headerText;
-    cResult[15] = closure_9(markAsDismissed(4833).Text, obj5);
-    const tmp25 = closure_9(markAsDismissed(4833).Text, obj5);
+    cResult[15] = closure_9(markAsDismissed(4886).Text, obj5);
+    const tmp25 = closure_9(markAsDismissed(4886).Text, obj5);
   } else {
     class P {
       constructor() {
@@ -467,9 +467,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const obj6 = { icon: closure_9(markAsDismissed(12111).PaintIllocon, obj7), text: intl.string(markAsDismissed(1127).t["6ZWB0C"]) };
+    const obj6 = { icon: closure_9(markAsDismissed(12370).PaintIllocon, obj7), text: intl.string(markAsDismissed(1126).t["6ZWB0C"]) };
     obj7 = { size };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     const tmp29 = closure_9(closure_16, obj6);
     cResult[16] = tmp29;
     tmp26 = tmp29;
@@ -488,9 +488,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const obj8 = { icon: closure_9(markAsDismissed(12105).HeartIllocon, obj9), text: intl2.string(markAsDismissed(1127).t.MkVbBY) };
+    const obj8 = { icon: closure_9(markAsDismissed(12364).HeartIllocon, obj9), text: intl2.string(markAsDismissed(1126).t.MkVbBY) };
     obj9 = { size };
-    intl2 = tmp(1127).intl;
+    intl2 = tmp(1126).intl;
     const tmp33 = closure_9(closure_16, obj8);
     cResult[17] = tmp33;
     tmp30 = tmp33;
@@ -509,9 +509,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const obj10 = { icon: closure_9(markAsDismissed(16773).ShopIllocon, obj11), text: intl3.string(markAsDismissed(1127).t["/4bQuG"]) };
+    const obj10 = { icon: closure_9(markAsDismissed(17128).ShopIllocon, obj11), text: intl3.string(markAsDismissed(1126).t["/4bQuG"]) };
     obj11 = { size };
-    intl3 = tmp(1127).intl;
+    intl3 = tmp(1126).intl;
     const tmp37 = closure_9(closure_16, obj10);
     cResult[18] = tmp37;
     tmp34 = tmp37;
@@ -550,7 +550,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const stringResult1 = obj13.string(markAsDismissed(1127).t.S9hXPI);
+    const stringResult1 = obj13.string(markAsDismissed(1126).t.S9hXPI);
     cResult[21] = stringResult1;
     tmp41 = stringResult1;
   } else {
@@ -570,8 +570,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     }
     const obj14 = { size: "lg", text: tmp41, onPress: tmp11 };
     cResult[22] = tmp11;
-    cResult[23] = closure_9(markAsDismissed(5282).Button, obj14);
-    const tmp44 = closure_9(markAsDismissed(5282).Button, obj14);
+    cResult[23] = closure_9(markAsDismissed(5594).Button, obj14);
+    const tmp44 = closure_9(markAsDismissed(5594).Button, obj14);
   } else {
     class P {
       constructor() {
@@ -647,30 +647,30 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   let obj = { onDismiss: callback1, backdropChildren: memo, children: closure_10(closure_5, obj2) };
   obj2 = { style: tmp.container, children: items3 };
   const obj3 = { source: obj4, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj4 = { uri: _modDef16772 };
-  BottomSheet = markAsDismissed(6572).BottomSheet;
+  obj4 = { uri: _modDef17127 };
+  BottomSheet = markAsDismissed(6645).BottomSheet;
   items3 = [closure_9(closure_4, obj3), , , ];
-  const obj5 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: tmp.headerText, children: intl.string(markAsDismissed(1127).t.vRCvqo) };
-  const Text = markAsDismissed(4833).Text;
-  intl = markAsDismissed(1127).intl;
+  const obj5 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: tmp.headerText, children: intl.string(markAsDismissed(1126).t.vRCvqo) };
+  const Text = markAsDismissed(4886).Text;
+  intl = markAsDismissed(1126).intl;
   items3[1] = closure_9(Text, obj5);
   const obj6 = { style: tmp.featureRows, children: items4 };
-  const obj7 = { icon: closure_9(markAsDismissed(12111).PaintIllocon, obj8), text: intl2.string(markAsDismissed(1127).t["6ZWB0C"]) };
+  const obj7 = { icon: closure_9(markAsDismissed(12370).PaintIllocon, obj8), text: intl2.string(markAsDismissed(1126).t["6ZWB0C"]) };
   obj8 = { size };
-  intl2 = markAsDismissed(1127).intl;
+  intl2 = markAsDismissed(1126).intl;
   items4 = [closure_9(closure_16, obj7), , ];
-  const obj9 = { icon: closure_9(markAsDismissed(12105).HeartIllocon, obj10), text: intl3.string(markAsDismissed(1127).t.MkVbBY) };
+  const obj9 = { icon: closure_9(markAsDismissed(12364).HeartIllocon, obj10), text: intl3.string(markAsDismissed(1126).t.MkVbBY) };
   obj10 = { size };
-  intl3 = markAsDismissed(1127).intl;
+  intl3 = markAsDismissed(1126).intl;
   items4[1] = closure_9(closure_16, obj9);
-  const obj11 = { icon: closure_9(markAsDismissed(16773).ShopIllocon, obj12), text: intl4.string(markAsDismissed(1127).t["/4bQuG"]) };
+  const obj11 = { icon: closure_9(markAsDismissed(17128).ShopIllocon, obj12), text: intl4.string(markAsDismissed(1126).t["/4bQuG"]) };
   obj12 = { size };
-  intl4 = markAsDismissed(1127).intl;
+  intl4 = markAsDismissed(1126).intl;
   items4[2] = closure_9(closure_16, obj11);
   items3[2] = closure_10(closure_5, obj6);
-  const obj13 = { size: "lg", text: intl5.string(markAsDismissed(1127).t.S9hXPI), onPress: callback };
-  const Button = markAsDismissed(5282).Button;
-  intl5 = markAsDismissed(1127).intl;
+  const obj13 = { size: "lg", text: intl5.string(markAsDismissed(1126).t.S9hXPI), onPress: callback };
+  const Button = markAsDismissed(5594).Button;
+  intl5 = markAsDismissed(1126).intl;
   items3[3] = closure_9(Button, obj13);
   return closure_9(BottomSheet, obj);
 });

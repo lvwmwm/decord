@@ -1,15 +1,15 @@
-// Module ID: 7864
-// Function ID: 7865
+// Module ID: 8085
+// Function ID: 8086
 // Name: AgeVerificationConstants
-// Dependencies: [1086, 7865, 1127, 7863, 2114, 3042, 2]
+// Dependencies: [1085, 8086, 1126, 8084, 2115, 3045, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 7864 (AgeVerificationConstants)
-import Constants from "Constants" /* 1086 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import _modDef3042 from "module_3042" /* 3042 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
+// Module 8085 (AgeVerificationConstants)
+import Constants from "Constants" /* 1085 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import _modDef3045 from "module_3045" /* 3045 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,12 +20,12 @@ let items = [AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.NSFW_G
 let obj = { FACIAL_AGE_ESTIMATION: 1, [1]: "FACIAL_AGE_ESTIMATION", ID_VERIFICATION: 2, [2]: "ID_VERIFICATION", MODULAR: 3, [3]: "MODULAR", GOOGLE_WALLET: 9, [9]: "GOOGLE_WALLET" };
 let obj2 = {};
 const set = new Set(items);
-let obj3 = { title: _modDef3042["2yLvkS"], description: _modDef3042.eJmat5 };
+let obj3 = { title: _modDef3045["2yLvkS"], description: _modDef3045.eJmat5 };
 obj2[obj.FACIAL_AGE_ESTIMATION] = obj3;
-let obj4 = { title: _modDef3042.dwkwo0, description: _modDef3042.ZdmRwW };
+let obj4 = { title: _modDef3045.dwkwo0, description: _modDef3045.ZdmRwW };
 obj2[obj.ID_VERIFICATION] = obj4;
-obj2[obj.GOOGLE_WALLET] = { title: _modDef3042.Y9sLpR, description: _modDef3042.dah4bF };
-({ title: _modDef3042.Y9sLpR, description: _modDef3042.dah4bF });
+obj2[obj.GOOGLE_WALLET] = { title: _modDef3045.Y9sLpR, description: _modDef3045.dah4bF };
+({ title: _modDef3045.Y9sLpR, description: _modDef3045.dah4bF });
 let result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationConstants.tsx");
 
 export const FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS = set;

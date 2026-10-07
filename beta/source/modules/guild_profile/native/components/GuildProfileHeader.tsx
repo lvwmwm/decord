@@ -1,24 +1,24 @@
-// Module ID: 9178
-// Function ID: 9179
+// Module ID: 9402
+// Function ID: 9403
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2115, 502, 2111, 9179, 21, 4837, 588, 558, 576, 504, 7160, 11, 2065, 8202, 8201, 4531, 4801, 6761, 5893, 4833, 8199, 5436, 1127, 2]
+// Dependencies: [19, 17, 2116, 502, 2112, 9403, 21, 4890, 587, 558, 576, 504, 7227, 11, 2066, 8397, 8396, 4568, 4854, 6845, 5971, 4886, 8394, 5909, 1126, 2]
 
-// Module 9178 (GuildProfileHeader)
+// Module 9402 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2065 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import transitionToGuild from "transitionToGuild" /* 6761 */;
-import BadgeCategory from "BadgeCategory" /* 8201 */;
-import GuildTraits from "GuildTraits" /* 8202 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9179 */;
+import nativeDefault from "native" /* 587 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import transitionToGuild from "transitionToGuild" /* 6845 */;
+import BadgeCategory from "BadgeCategory" /* 8396 */;
+import GuildTraits from "GuildTraits" /* 8397 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 9403 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

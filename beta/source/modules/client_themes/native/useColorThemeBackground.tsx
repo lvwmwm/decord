@@ -1,19 +1,19 @@
-// Module ID: 4690
-// Function ID: 4691
+// Module ID: 4732
+// Function ID: 4733
 // Name: useColorThemeBackground
-// Dependencies: [19, 1194, 4655, 1127, 1242, 4691, 558, 576, 4693, 573, 4766, 2]
+// Dependencies: [19, 1193, 4697, 1126, 1241, 4733, 558, 576, 4735, 573, 4788, 2]
 
-// Module 4690 (useColorThemeBackground)
+// Module 4732 (useColorThemeBackground)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1242 */;
-import GuildThemePresets from "GuildThemePresets" /* 4691 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4693 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 4766 */;
+import intl2 from "intl" /* 1126 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
+import GuildThemePresets from "GuildThemePresets" /* 4733 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4735 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 4788 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4655 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ function getGuildThemeBackground(type, stateFromStores) {
     }
     GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
     if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-      GUILD_THEME_DEFAULT_BASE_MIX = tmp3(4691).GUILD_THEME_DEFAULT_BASE_MIX;
+      GUILD_THEME_DEFAULT_BASE_MIX = tmp3(4733).GUILD_THEME_DEFAULT_BASE_MIX;
     }
     return obj;
   } else {
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let gradientPreset;
   let stateFromStores;
   let theme;
-  const tmp = stateFromStores(4693)();
+  const tmp = stateFromStores(4735)();
   _require = tmp;
   const items = [ThemeStore];
   const obj = require("useStateFromStores");

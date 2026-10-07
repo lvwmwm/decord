@@ -1,15 +1,15 @@
-// Module ID: 8537
-// Function ID: 8538
+// Module ID: 8744
+// Function ID: 8745
 // Name: XboxLinkPreConnect
-// Dependencies: [19, 8528, 1086, 21, 4837, 558, 576, 1491, 8538, 1127, 8539, 2]
+// Dependencies: [19, 8735, 1085, 21, 4890, 558, 576, 1490, 8745, 1126, 8746, 2]
 
-// Module 8537 (XboxLinkPreConnect)
+// Module 8744 (XboxLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 8528 */;
-import _modDef8538 from "module_8538" /* 8538 */;
+import Constants from "Constants" /* 1085 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 8735 */;
+import _modDef8745 from "module_8745" /* 8745 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = navigation(576);
   const cResult = obj.c(11);
   const tmp4 = closure_7();
-  const obj2 = navigation(1491);
+  const obj2 = navigation(1490);
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
     const fn = function t(arg0) {
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { uri: _modDef8538 };
+    const obj3 = { uri: _modDef8745 };
     cResult[4] = obj3;
     tmp8 = obj3;
   } else {
@@ -59,10 +59,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const image = tmp4.image;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(navigation(1127).t["e/z3na"]);
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(navigation(1127).t["7tXu0i"]);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(navigation(1126).t["e/z3na"]);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(navigation(1126).t["7tXu0i"]);
     cResult[5] = stringResult;
     cResult[6] = stringResult1;
     tmp11 = stringResult1;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return tmp14;
     }
   }
-  const tmp15 = jsx(navigation(8539).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp10, body: tmp11 });
+  const tmp15 = jsx(navigation(8746).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp10, body: tmp11 });
   cResult[7] = tmp7;
   cResult[8] = tmp6;
   cResult[9] = tmp4.image;
@@ -88,7 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp14 = tmp15;
 }) : (() => {
   const tmp = closure_7();
-  let obj = navigation(1491);
+  let obj = navigation(1490);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -99,13 +99,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef8538 };
+    const obj = { uri: _modDef8745 };
     return obj;
   }, []);
-  const TwoWayLinkPreConnect = navigation(8539).TwoWayLinkPreConnect;
-  const intl = navigation(1127).intl;
-  const intl2 = navigation(1127).intl;
-  return <TwoWayLinkPreConnect platformType={PlatformTypes.XBOX} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1127).t["e/z3na"])} body={intl2.string(navigation(1127).t["7tXu0i"])} />;
+  const TwoWayLinkPreConnect = navigation(8746).TwoWayLinkPreConnect;
+  const intl = navigation(1126).intl;
+  const intl2 = navigation(1126).intl;
+  return <TwoWayLinkPreConnect platformType={PlatformTypes.XBOX} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1126).t["e/z3na"])} body={intl2.string(navigation(1126).t["7tXu0i"])} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkPreConnect.tsx");
 

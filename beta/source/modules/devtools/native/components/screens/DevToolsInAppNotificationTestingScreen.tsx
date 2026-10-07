@@ -1,30 +1,31 @@
-// Module ID: 15317
-// Function ID: 15318
+// Module ID: 15608
+// Function ID: 15609
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 5815, 2055, 4483, 2051, 2073, 2102, 1378, 1086, 21, 4837, 588, 4531, 8052, 12221, 12223, 5582, 11, 558, 576, 1619, 1189, 5997, 5916, 15127, 5923, 2]
+// Dependencies: [19, 17, 5687, 2055, 4520, 2051, 2074, 2103, 1377, 1085, 21, 4890, 587, 4574, 4568, 4803, 12477, 12479, 5429, 11, 558, 576, 1618, 1188, 6074, 5993, 15413, 6000, 2]
 
-// Module 15317 (DevToolsInAppNotificationTestingScreen)
+// Module 15608 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import StickersTypes from "StickersTypes" /* 5582 */;
-import TableRowGroup2 from "TableRowGroup" /* 5997 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12221 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12223 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
+import StickersTypes from "StickersTypes" /* 5429 */;
+import TableRowGroup2 from "TableRowGroup" /* 6074 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12477 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12479 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5815 */;
-import MessageRecord from "MessageRecord" /* 4483 */;
+import StickersStore from "StickersStore" /* 5687 */;
+import MessageRecord from "MessageRecord" /* 4520 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -44,51 +45,14 @@ function onDismiss() {
   const obj = InAppNotificationActionCreatorsDefault;
   return obj.clearNotification();
 }
-function getSelectedGuildChannel() {
-  let guild;
-  let obj;
-  const channelId = SelectedChannelStore.getChannelId();
-  let channel;
-  if (null != channelId) {
-    channel = ChannelStore.getChannel(channelId);
-  }
-  if (null == channel) {
-    const obj3 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a channel first", toastDurationMs: 4000 };
-    const obj2 = ToastActionCreatorsDefault;
-    obj2.open(obj3);
-    obj = null;
-  } else {
-    const guildId = channel.getGuildId();
-    obj = { channel, guild };
-    guild = undefined;
-    if (null != guildId) {
-      guild = GuildStore.getGuild(guildId);
-    }
-  }
-  let tmp10 = null;
-  if (null != obj) {
-    let obj9;
-    if (null == obj.guild) {
-      const obj6 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a guild channel first", toastDurationMs: 4000 };
-      const obj5 = ToastActionCreatorsDefault;
-      obj5.open(obj6);
-      obj9 = null;
-    } else {
-      obj9 = { channel: null, guild: null };
-      ({ channel: obj4.channel, guild: obj4.guild } = obj);
-    }
-    tmp10 = obj9;
-  }
-  return tmp10;
-}
 function buildTestMessageData(arg0, items) {
   let cast;
   let date;
   let guild;
   let items2;
   let obj;
-  let obj14;
-  let obj8;
+  let obj10;
+  let obj16;
   if (items === undefined) {
     items = [];
   }
@@ -98,10 +62,17 @@ function buildTestMessageData(arg0, items) {
     channel1 = ChannelStore.getChannel(channelId);
   }
   if (null == channel1) {
-    const obj3 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a channel first", toastDurationMs: 4000 };
-    const obj2 = ToastActionCreatorsDefault;
-    obj2.open(obj3);
-    obj = null;
+    const obj2 = DesignSystemsNotificationComponentsExperiment;
+    const designSystemsNotificationComponents = obj2.getDesignSystemsNotificationComponents("DevToolsInAppNotificationTestingScreen");
+    const obj3 = ToastActionCreatorsDefault;
+    if (designSystemsNotificationComponents) {
+      obj3.openMana("DEV_IN_APP_NOTIF_TEST_ERROR", { text: "Select a channel first", variant: "critical" });
+      obj = null;
+    } else {
+      const obj4 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a channel first", toastDurationMs: 4000 };
+      obj3.open(obj4);
+      obj = null;
+    }
   } else {
     const guildId = channel1.getGuildId();
     obj = { channel: channel1, guild };
@@ -112,69 +83,76 @@ function buildTestMessageData(arg0, items) {
   }
   let currentUser = UserStore.getCurrentUser();
   if (null == currentUser) {
-    const obj5 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Current user is null", toastDurationMs: 4000 };
-    const obj4 = ToastActionCreatorsDefault;
-    obj4.open(obj5);
-    currentUser = null;
+    const obj5 = DesignSystemsNotificationComponentsExperiment;
+    const designSystemsNotificationComponents1 = obj5.getDesignSystemsNotificationComponents("DevToolsInAppNotificationTestingScreen");
+    const obj6 = ToastActionCreatorsDefault;
+    if (designSystemsNotificationComponents1) {
+      obj6.openMana("DEV_IN_APP_NOTIF_TEST_ERROR", { text: "Current user is null", variant: "critical" });
+      currentUser = null;
+    } else {
+      const obj7 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Current user is null", toastDurationMs: 4000 };
+      obj6.open(obj7);
+      currentUser = null;
+    }
   }
   if (null != obj) {
     if (null != currentUser) {
-      let tmp14;
+      let tmp20;
       if ("media-only" === arg0) {
-        let obj9;
-        const obj6 = { content: "", attachments: [], stickerItems: items1 };
+        let obj11;
+        const obj8 = { content: "", attachments: [], stickerItems: items1 };
         const stickerById = StickersStore.getStickerById(c17);
-        const tmp21 = c17;
+        const tmp27 = c17;
         if (null != stickerById) {
-          const obj7 = { id: null, format_type: null, name: null };
-          ({ id: obj11.id, format_type: obj11.format_type, name: obj11.name } = stickerById);
-          obj9 = obj7;
+          const obj9 = { id: null, format_type: null, name: null };
+          ({ id: obj13.id, format_type: obj13.format_type, name: obj13.name } = stickerById);
+          obj11 = obj9;
         } else {
-          obj9 = { id: tmp21, format_type: StickersTypes.StickerFormat.APNG, name: "Cheer" };
+          obj11 = { id: tmp27, format_type: StickersTypes.StickerFormat.APNG, name: "Cheer" };
         }
-        items1 = [obj9];
-        tmp14 = obj6;
+        items1 = [obj11];
+        tmp20 = obj8;
       } else if ("text-and-media" === arg0) {
-        const obj10 = { content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..", attachments: items2, stickerItems: [] };
-        size = { id: cast(obj8.fromTimestamp(Date.now())), url: httpscdndiscordappcomassetsog_img_discord_homepng, proxy_url: httpscdndiscordappcomassetsog_img_discord_homepng, filename: "og_img_discord_home.png", size: 54697, width: 1200, height: 630, content_type: "image/png" };
+        const obj12 = { content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..", attachments: items2, stickerItems: [] };
+        size = { id: cast(obj10.fromTimestamp(Date.now())), url: httpscdndiscordappcomassetsog_img_discord_homepng, proxy_url: httpscdndiscordappcomassetsog_img_discord_homepng, filename: "og_img_discord_home.png", size: 54697, width: 1200, height: 630, content_type: "image/png" };
         cast = SnowflakeUtilsDefault.cast;
         SnowflakeUtilsDefault;
         const _Date = Date;
         items2 = [size];
-        tmp14 = obj10;
-        obj8 = SnowflakeUtilsDefault;
+        tmp20 = obj12;
+        obj10 = SnowflakeUtilsDefault;
       } else if ("text-only" === arg0) {
-        tmp14 = { content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", attachments: [], stickerItems: [] };
-        const obj13 = { content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", attachments: [], stickerItems: [] };
+        tmp20 = { content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", attachments: [], stickerItems: [] };
+        const obj15 = { content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", attachments: [], stickerItems: [] };
       }
-      const obj16 = { attachments: null, stickerItems: null, reactions: items };
-      ({ attachments: obj12.attachments, stickerItems: obj12.stickerItems } = tmp14);
-      let attachments = obj16.attachments;
-      const content = tmp14.content;
+      const obj18 = { attachments: null, stickerItems: null, reactions: items };
+      ({ attachments: obj14.attachments, stickerItems: obj14.stickerItems } = tmp20);
+      let attachments = obj18.attachments;
+      const content = tmp20.content;
       const channel = obj.channel;
       if (undefined === attachments) {
         attachments = [];
       }
-      let stickerItems = obj16.stickerItems;
+      let stickerItems = obj18.stickerItems;
       if (undefined === stickerItems) {
         stickerItems = [];
       }
-      let reactions = obj16.reactions;
+      let reactions = obj18.reactions;
       if (undefined === reactions) {
         reactions = [];
       }
       const _Date2 = Date;
-      const obj26 = { id: obj14.fromTimestamp(Date.now()), channel_id: channel.id, author: currentUser, content, attachments, sticker_items: stickerItems, reactions, timestamp: date };
+      const obj28 = { id: obj16.fromTimestamp(Date.now()), channel_id: channel.id, author: currentUser, content, attachments, sticker_items: stickerItems, reactions, timestamp: date };
       const _Date3 = Date;
       const self = this;
       const self2 = this;
-      obj14 = SnowflakeUtilsDefault;
+      obj16 = SnowflakeUtilsDefault;
       const self3 = this;
       const self4 = this;
       date = new Date();
-      ({ channel: obj15.channel, guild: obj15.guild } = obj);
-      const obj27 = { channel: null, guild: null, user: currentUser, message: new MessageRecord(obj26) };
-      return obj27;
+      ({ channel: obj17.channel, guild: obj17.guild } = obj);
+      const obj29 = { channel: null, guild: null, user: currentUser, message: new MessageRecord(obj28) };
+      return obj29;
     }
   }
   return null;
@@ -301,7 +279,7 @@ let items2 = [
     }
   }
 ];
-let closure_25 = items2.map((label) => {
+let closure_24 = items2.map((label) => {
   let closure_129_0;
   let closure_129_1;
   ({ type: closure_129_0, build: closure_129_1 } = label);
@@ -328,18 +306,25 @@ let obj5 = {
     let MESSAGE_FAILED_TO_SEND;
     let guild;
     let obj;
-    let obj7;
     let obj8;
+    let obj9;
     const channelId = SelectedChannelStore.getChannelId();
     let channel;
     if (null != channelId) {
       channel = ChannelStore.getChannel(channelId);
     }
     if (null == channel) {
-      const obj3 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a channel first", toastDurationMs: 4000 };
-      const obj2 = ToastActionCreatorsDefault;
-      obj2.open(obj3);
-      obj = null;
+      const obj2 = DesignSystemsNotificationComponentsExperiment;
+      const designSystemsNotificationComponents = obj2.getDesignSystemsNotificationComponents("DevToolsInAppNotificationTestingScreen");
+      const obj3 = ToastActionCreatorsDefault;
+      if (designSystemsNotificationComponents) {
+        obj3.openMana("DEV_IN_APP_NOTIF_TEST_ERROR", { text: "Select a channel first", variant: "critical" });
+        obj = null;
+      } else {
+        const obj4 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a channel first", toastDurationMs: 4000 };
+        obj3.open(obj4);
+        obj = null;
+      }
     } else {
       const guildId = channel.getGuildId();
       obj = { channel, guild };
@@ -354,15 +339,15 @@ let obj5 = {
       const cast = SnowflakeUtilsDefault.cast;
       SnowflakeUtilsDefault;
       const _Date = Date;
-      const obj4 = SnowflakeUtilsDefault;
-      const castResult = cast(obj4.fromTimestamp(Date.now()));
-      const obj5 = { type: InAppNotificationTypes.MESSAGE_FAILED_TO_SEND, channelId: obj.channel.id, messageId: castResult };
-      const obj6 = { key: castResult, duration: obj7.getNotificationDuration(MESSAGE_FAILED_TO_SEND), onDismiss, inAppNotificationId: obj8.generateInAppNotificationId() };
+      const obj5 = SnowflakeUtilsDefault;
+      const castResult = cast(obj5.fromTimestamp(Date.now()));
+      const obj6 = { type: InAppNotificationTypes.MESSAGE_FAILED_TO_SEND, channelId: obj.channel.id, messageId: castResult };
+      const obj7 = { key: castResult, duration: obj8.getNotificationDuration(MESSAGE_FAILED_TO_SEND), onDismiss, inAppNotificationId: obj9.generateInAppNotificationId() };
       MESSAGE_FAILED_TO_SEND = InAppNotificationTypes.MESSAGE_FAILED_TO_SEND;
-      obj7 = InAppNotificationUtils;
       obj8 = InAppNotificationUtils;
-      const merged = Object.assign(obj6);
-      return obj5;
+      obj9 = InAppNotificationUtils;
+      const merged = Object.assign(obj7);
+      return obj6;
     }
   }
 };
@@ -376,37 +361,91 @@ const items3 = [
       let FORUM_THREAD_CREATED;
       let cast;
       let guild;
-      let obj4;
-      let obj7;
-      let obj8;
-      let tmp6;
-      const tmp = getSelectedGuildChannel();
+      let guild1;
+      let obj;
+      let obj13;
+      let obj16;
+      let obj17;
+      let tmp27;
+      const channelId = SelectedChannelStore.getChannelId();
+      let channel1;
+      if (null != channelId) {
+        channel1 = ChannelStore.getChannel(channelId);
+      }
+      if (null == channel1) {
+        const obj2 = DesignSystemsNotificationComponentsExperiment;
+        const designSystemsNotificationComponents = obj2.getDesignSystemsNotificationComponents("DevToolsInAppNotificationTestingScreen");
+        const obj3 = ToastActionCreatorsDefault;
+        if (designSystemsNotificationComponents) {
+          obj3.openMana("DEV_IN_APP_NOTIF_TEST_ERROR", { text: "Select a channel first", variant: "critical" });
+          obj = null;
+        } else {
+          const obj4 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a channel first", toastDurationMs: 4000 };
+          obj3.open(obj4);
+          obj = null;
+        }
+      } else {
+        const guildId = channel1.getGuildId();
+        obj = { channel: channel1, guild: guild1 };
+        guild1 = undefined;
+        if (null != guildId) {
+          guild1 = GuildStore.getGuild(guildId);
+        }
+      }
+      let tmp13 = null;
+      if (null != obj) {
+        let obj11;
+        if (null == obj.guild) {
+          const obj6 = DesignSystemsNotificationComponentsExperiment;
+          const designSystemsNotificationComponents1 = obj6.getDesignSystemsNotificationComponents("DevToolsInAppNotificationTestingScreen");
+          const obj7 = ToastActionCreatorsDefault;
+          if (designSystemsNotificationComponents1) {
+            obj7.openMana("DEV_IN_APP_NOTIF_TEST_ERROR", { text: "Select a guild channel first", variant: "critical" });
+            obj11 = null;
+          } else {
+            const obj8 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a guild channel first", toastDurationMs: 4000 };
+            obj7.open(obj8);
+            obj11 = null;
+          }
+        } else {
+          obj11 = { channel: null, guild: null };
+          ({ channel: obj5.channel, guild: obj5.guild } = obj);
+        }
+        tmp13 = obj11;
+      }
       let currentUser = UserStore.getCurrentUser();
       if (null == currentUser) {
-        const obj2 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Current user is null", toastDurationMs: 4000 };
-        const obj = ToastActionCreatorsDefault;
-        obj.open(obj2);
-        currentUser = null;
+        const obj9 = DesignSystemsNotificationComponentsExperiment;
+        const designSystemsNotificationComponents2 = obj9.getDesignSystemsNotificationComponents("DevToolsInAppNotificationTestingScreen");
+        const obj10 = ToastActionCreatorsDefault;
+        if (designSystemsNotificationComponents2) {
+          obj10.openMana("DEV_IN_APP_NOTIF_TEST_ERROR", { text: "Current user is null", variant: "critical" });
+          currentUser = null;
+        } else {
+          const obj12 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Current user is null", toastDurationMs: 4000 };
+          obj10.open(obj12);
+          currentUser = null;
+        }
       }
-      if (null != tmp) {
+      if (null != tmp13) {
         if (null != currentUser) {
-          const channel = tmp.channel;
-          const obj3 = { id: cast(obj4.fromTimestamp(Date.now())), type: tmp6, name: "Test Thread", guild_id: guild.id, parent_id: channel.id, ownerId: currentUser.id };
-          guild = tmp.guild;
-          tmp6 = channel.type === constants.GUILD_MEDIA ? constants.MEDIA_THREAD : constants.PUBLIC_THREAD;
+          const channel = tmp13.channel;
+          const obj15 = { id: cast(obj13.fromTimestamp(Date.now())), type: tmp27, name: "Test Thread", guild_id: guild.id, parent_id: channel.id, ownerId: currentUser.id };
+          guild = tmp13.guild;
+          tmp27 = channel.type === constants.GUILD_MEDIA ? constants.MEDIA_THREAD : constants.PUBLIC_THREAD;
           cast = SnowflakeUtilsDefault.cast;
           SnowflakeUtilsDefault;
           const _Date = Date;
-          obj4 = SnowflakeUtilsDefault;
-          const tmp12 = createChannelRecord(obj3);
-          const obj6 = { type: InAppNotificationTypes.FORUM_THREAD_CREATED, thread: tmp12, threadCreator: currentUser, parentChannel: null, guild: null };
-          ({ channel: obj5.parentChannel, guild: obj5.guild } = tmp);
-          const obj12 = { key: tmp12.id, duration: obj7.getNotificationDuration(FORUM_THREAD_CREATED), onDismiss, inAppNotificationId: obj8.generateInAppNotificationId() };
+          obj13 = SnowflakeUtilsDefault;
+          const tmp33 = createChannelRecord(obj15);
+          const obj24 = { type: InAppNotificationTypes.FORUM_THREAD_CREATED, thread: tmp33, threadCreator: currentUser, parentChannel: null, guild: null };
+          ({ channel: obj14.parentChannel, guild: obj14.guild } = tmp13);
+          const obj25 = { key: tmp33.id, duration: obj16.getNotificationDuration(FORUM_THREAD_CREATED), onDismiss, inAppNotificationId: obj17.generateInAppNotificationId() };
           FORUM_THREAD_CREATED = InAppNotificationTypes.FORUM_THREAD_CREATED;
-          obj7 = InAppNotificationUtils;
-          obj8 = InAppNotificationUtils;
-          const merged = Object.assign(obj12);
-          return obj6;
+          obj16 = InAppNotificationUtils;
+          obj17 = InAppNotificationUtils;
+          const merged = Object.assign(obj25);
+          return obj24;
         }
       }
       return null;
@@ -435,21 +474,68 @@ const items3 = [
     subLabel: "Enqueues notification using the currently selected server channel.",
     build: function buildAlertNotification() {
       let ALERT;
-      let obj3;
-      let obj4;
-      const tmp = getSelectedGuildChannel();
-      let tmp2 = null;
-      if (null != tmp) {
-        const obj = { type: InAppNotificationTypes.ALERT, channel: null, guild: null };
-        ({ channel: obj.channel, guild: obj.guild } = tmp);
-        const obj2 = { key: tmp.guild.id, duration: obj3.getNotificationDuration(ALERT), onDismiss, inAppNotificationId: obj4.generateInAppNotificationId() };
-        ALERT = InAppNotificationTypes.ALERT;
-        obj3 = InAppNotificationUtils;
-        obj4 = InAppNotificationUtils;
-        const merged = Object.assign(obj2);
-        tmp2 = obj;
+      let guild;
+      let obj;
+      let obj11;
+      let obj12;
+      const channelId = SelectedChannelStore.getChannelId();
+      let channel;
+      if (null != channelId) {
+        channel = ChannelStore.getChannel(channelId);
       }
-      return tmp2;
+      if (null == channel) {
+        const obj2 = DesignSystemsNotificationComponentsExperiment;
+        const designSystemsNotificationComponents = obj2.getDesignSystemsNotificationComponents("DevToolsInAppNotificationTestingScreen");
+        const obj3 = ToastActionCreatorsDefault;
+        if (designSystemsNotificationComponents) {
+          obj3.openMana("DEV_IN_APP_NOTIF_TEST_ERROR", { text: "Select a channel first", variant: "critical" });
+          obj = null;
+        } else {
+          const obj4 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a channel first", toastDurationMs: 4000 };
+          obj3.open(obj4);
+          obj = null;
+        }
+      } else {
+        const guildId = channel.getGuildId();
+        obj = { channel, guild };
+        guild = undefined;
+        if (null != guildId) {
+          guild = GuildStore.getGuild(guildId);
+        }
+      }
+      let tmp13 = null;
+      if (null != obj) {
+        let obj10;
+        if (null == obj.guild) {
+          const obj6 = DesignSystemsNotificationComponentsExperiment;
+          const designSystemsNotificationComponents1 = obj6.getDesignSystemsNotificationComponents("DevToolsInAppNotificationTestingScreen");
+          const obj7 = ToastActionCreatorsDefault;
+          if (designSystemsNotificationComponents1) {
+            obj7.openMana("DEV_IN_APP_NOTIF_TEST_ERROR", { text: "Select a guild channel first", variant: "critical" });
+            obj10 = null;
+          } else {
+            const obj8 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Select a guild channel first", toastDurationMs: 4000 };
+            obj7.open(obj8);
+            obj10 = null;
+          }
+        } else {
+          obj10 = { channel: null, guild: null };
+          ({ channel: obj5.channel, guild: obj5.guild } = obj);
+        }
+        tmp13 = obj10;
+      }
+      let tmp20 = null;
+      if (null != tmp13) {
+        const obj17 = { type: InAppNotificationTypes.ALERT, channel: null, guild: null };
+        ({ channel: obj9.channel, guild: obj9.guild } = tmp13);
+        const obj18 = { key: tmp13.guild.id, duration: obj11.getNotificationDuration(ALERT), onDismiss, inAppNotificationId: obj12.generateInAppNotificationId() };
+        ALERT = InAppNotificationTypes.ALERT;
+        obj11 = InAppNotificationUtils;
+        obj12 = InAppNotificationUtils;
+        const merged = Object.assign(obj18);
+        tmp20 = obj17;
+      }
+      return tmp20;
     }
   },
   {
@@ -457,27 +543,34 @@ const items3 = [
     label: "Message Request",
     subLabel: "Enqueues notification using the current user as the requester.",
     build: function buildMessageRequestNotification() {
-      let obj5;
       let obj6;
+      let obj7;
       let currentUser = UserStore.getCurrentUser();
       if (null == currentUser) {
-        const obj2 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Current user is null", toastDurationMs: 4000 };
-        const obj = ToastActionCreatorsDefault;
-        obj.open(obj2);
-        currentUser = null;
+        const obj = DesignSystemsNotificationComponentsExperiment;
+        const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("DevToolsInAppNotificationTestingScreen");
+        const obj2 = ToastActionCreatorsDefault;
+        if (designSystemsNotificationComponents) {
+          obj2.openMana("DEV_IN_APP_NOTIF_TEST_ERROR", { text: "Current user is null", variant: "critical" });
+          currentUser = null;
+        } else {
+          const obj3 = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon, content: "Current user is null", toastDurationMs: 4000 };
+          obj2.open(obj3);
+          currentUser = null;
+        }
       }
-      let tmp5 = null;
+      let tmp8 = null;
       if (null != currentUser) {
         const _HermesInternal = HermesInternal;
         const MESSAGE_REQUEST = InAppNotificationTypes.MESSAGE_REQUEST;
-        const obj3 = { type: InAppNotificationTypes.MESSAGE_REQUEST, author: currentUser, numMutualGuilds: 3 };
-        const obj4 = { key: "dev-tools-message-request-" + currentUser.id, duration: obj5.getNotificationDuration(MESSAGE_REQUEST), onDismiss, inAppNotificationId: obj6.generateInAppNotificationId() };
-        obj5 = InAppNotificationUtils;
+        const obj4 = { type: InAppNotificationTypes.MESSAGE_REQUEST, author: currentUser, numMutualGuilds: 3 };
+        const obj5 = { key: "dev-tools-message-request-" + currentUser.id, duration: obj6.getNotificationDuration(MESSAGE_REQUEST), onDismiss, inAppNotificationId: obj7.generateInAppNotificationId() };
         obj6 = InAppNotificationUtils;
-        const merged = Object.assign(obj4);
-        tmp5 = obj3;
+        obj7 = InAppNotificationUtils;
+        const merged = Object.assign(obj5);
+        tmp8 = obj4;
       }
-      return tmp5;
+      return tmp8;
     }
   },
   {
@@ -556,9 +649,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       let obj3 = { size: nativeDefault.space.PX_16 };
-      let Spacer = tmp(1189).Spacer;
+      let Spacer = tmp(1188).Spacer;
       const tmp14 = closure_14(Spacer, obj3);
-      const mapped = closure_25.map((title) => {
+      const mapped = closure_24.map((title) => {
         let options;
         let obj = { children: items };
         const Fragment = react.Fragment;
@@ -571,13 +664,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj = {
               label: label.label,
               subLabel: label.subLabel,
-              icon: closure_1_14(first(closure_1_2[25]).BeakerIcon, {}),
+              icon: closure_1_14(first(closure_1_2[26]).BeakerIcon, {}),
               onPress() {
                 return first(label);
               },
-              trailing: closure_1_14(first(closure_1_2[26]).TableRowArrow, {})
+              trailing: closure_1_14(first(closure_1_2[27]).TableRowArrow, {})
             };
-            const TableRow = first(closure_1_2[24]).TableRow;
+            const TableRow = first(closure_1_2[25]).TableRow;
             return closure_1_14(TableRow, obj, label.label);
           })
         };
@@ -607,17 +700,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj = {
                 label: label.label,
                 subLabel: label.subLabel,
-                icon: closure_1_14(first(dependencyMap[25]).BeakerIcon, {}),
+                icon: closure_1_14(first(dependencyMap[26]).BeakerIcon, {}),
                 onPress() {
                   return first(label);
                 },
-                trailing: closure_1_14(first(dependencyMap[26]).TableRowArrow, {})
+                trailing: closure_1_14(first(dependencyMap[27]).TableRowArrow, {})
               };
-              const TableRow = first(dependencyMap[24]).TableRow;
+              const TableRow = first(dependencyMap[25]).TableRow;
               return closure_1_14(TableRow, obj, label.label);
             })
       };
-      let TableRowGroup = tmp(5997).TableRowGroup;
+      let TableRowGroup = tmp(6074).TableRowGroup;
       const tmp20 = closure_14(TableRowGroup, obj4);
       cResult[8] = tmp20;
       tmp17 = tmp20;
@@ -660,7 +753,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let Spacer = require("native").Spacer;
   items1 = [
     closure_14(Spacer, obj2),
-    closure_25.map((title) => {
+    closure_24.map((title) => {
       let options;
       let obj = { children: items };
       const Fragment = react.Fragment;
@@ -673,13 +766,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj = {
             label: label.label,
             subLabel: label.subLabel,
-            icon: closure_1_14(closure_1_0(closure_1_2[25]).BeakerIcon, {}),
+            icon: closure_1_14(closure_1_0(closure_1_2[26]).BeakerIcon, {}),
             onPress() {
               return closure_2_0(label);
             },
-            trailing: closure_1_14(closure_1_0(closure_1_2[26]).TableRowArrow, {})
+            trailing: closure_1_14(closure_1_0(closure_1_2[27]).TableRowArrow, {})
           };
-          const TableRow = closure_1_0(closure_1_2[24]).TableRow;
+          const TableRow = closure_1_0(closure_1_2[25]).TableRow;
           return closure_1_14(TableRow, obj, label.label);
         })
       };
@@ -700,13 +793,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj = {
         label: label.label,
         subLabel: label.subLabel,
-        icon: closure_1_14(label(dependencyMap[25]).BeakerIcon, {}),
+        icon: closure_1_14(label(dependencyMap[26]).BeakerIcon, {}),
         onPress() {
           return label(label);
         },
-        trailing: closure_1_14(label(dependencyMap[26]).TableRowArrow, {})
+        trailing: closure_1_14(label(dependencyMap[27]).TableRowArrow, {})
       };
-      const TableRow = label(dependencyMap[24]).TableRow;
+      const TableRow = label(dependencyMap[25]).TableRow;
       return closure_1_14(TableRow, obj, label.label);
     })
   };

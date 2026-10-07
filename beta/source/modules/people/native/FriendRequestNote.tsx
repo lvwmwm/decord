@@ -1,18 +1,18 @@
-// Module ID: 12692
-// Function ID: 12693
+// Module ID: 12952
+// Function ID: 12953
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4482, 1086, 21, 4837, 588, 558, 576, 12693, 504, 12694, 4833, 5282, 6386, 1127, 2]
+// Dependencies: [32, 19, 17, 4519, 1085, 21, 4890, 587, 558, 576, 12953, 504, 12954, 4886, 5594, 6458, 1126, 2]
 
-// Module 12692 (FriendRequestNote)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import PeopleListTracking from "PeopleListTracking" /* 12694 */;
+// Module 12952 (FriendRequestNote)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import PeopleListTracking from "PeopleListTracking" /* 12954 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 12874
-// Function ID: 12875
+// Module ID: 13136
+// Function ID: 13137
 // Name: ForLaterNitroUpsellBar
-// Dependencies: [19, 1380, 7276, 21, 558, 576, 6584, 11078, 11595, 4491, 1127, 2]
+// Dependencies: [19, 1379, 7482, 21, 558, 576, 6657, 11336, 11850, 4528, 1126, 2]
 
-// Module 12874 (ForLaterNitroUpsellBar)
+// Module 13136 (ForLaterNitroUpsellBar)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1127 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import PremiumUtils from "PremiumUtils" /* 4491 */;
-import openForLaterLimitUpsellDefault from "openForLaterLimitUpsell" /* 11078 */;
+import intl2 from "intl" /* 1126 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumUtils from "PremiumUtils" /* 4528 */;
+import openForLaterLimitUpsellDefault from "openForLaterLimitUpsell" /* 11336 */;
 import react from "react" /* 19 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 7276 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 7482 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => {
   isReminder = isReminder.isReminder;
   const isAtLimit = isReminder.isAtLimit;
   const tmp3 = analyticsLocations;
-  analyticsLocations = analyticsLocations(6584)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     let tmp4;
     if (cResult[1] === isReminder) {
@@ -63,7 +63,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => {
           return tmp8;
         }
       }
-      const tmp10 = jsx(tmp3(11595), { text: tmp5, isAtLimit, onPress: tmp4 });
+      const tmp10 = jsx(tmp3(11850), { text: tmp5, isAtLimit, onPress: tmp4 });
       cResult[6] = isAtLimit;
       cResult[7] = tmp4;
       cResult[8] = tmp5;
@@ -87,10 +87,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => {
   isReminder = isReminder.isReminder;
   const isAtLimit = isReminder.isAtLimit;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(6584)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
   const items = [isReminder, analyticsLocations];
   const callback = react.useCallback(() => openForLaterLimitUpsellDefault(isReminder, analyticsLocations), items);
-  analyticsLocations(11595);
+  analyticsLocations(11850);
   return <tmp2 text={formatUpsellText(isReminder, isAtLimit)} isAtLimit={isAtLimit} onPress={callback} />;
 });
 const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterNitroUpsellBar.tsx");

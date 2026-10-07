@@ -1,16 +1,16 @@
-// Module ID: 5934
-// Function ID: 5935
+// Module ID: 6011
+// Function ID: 6012
 // Name: HeaderDebugOverlay
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 5935, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6012, 4886, 2]
 
-// Module 5934 (HeaderDebugOverlay)
+// Module 6011 (HeaderDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useDesignToggleDefault from "useDesignToggle" /* 5935 */;
+import nativeDefault from "native" /* 587 */;
+import useDesignToggleDefault from "useDesignToggle" /* 6012 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 const View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = { "os-drawn": "OS-Drawn", "custom-drawn": "Custom-Drawn", "js-stack": "JS Stack", sheet: "Sheet", bespoke: "Bespoke" };

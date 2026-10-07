@@ -1,18 +1,18 @@
-// Module ID: 10883
-// Function ID: 10884
+// Module ID: 11138
+// Function ID: 11139
 // Name: useCodedLinksExperimentEmbeds
-// Dependencies: [32, 19, 1378, 4752, 1247, 558, 576, 504, 10884, 10885, 2]
+// Dependencies: [32, 19, 1377, 4776, 1246, 558, 576, 504, 11139, 11140, 2]
 // Exports: canSeeExperimentEmbeds
 
-// Module 10883 (useCodedLinksExperimentEmbeds)
+// Module 11138 (useCodedLinksExperimentEmbeds)
 import react2 from "react" /* 576 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 10884 */;
-import useApexExperiments from "useApexExperiments" /* 10885 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11139 */;
+import useApexExperiments from "useApexExperiments" /* 11140 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
-import ExperimentStore from "ExperimentStore" /* 4752 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import UserStore from "UserStore" /* 1377 */;
+import ExperimentStore from "ExperimentStore" /* 4776 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -404,13 +404,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return experimentsMetadata;
       }
     }
-    const tmpResult13 = tmp(10884);
+    const tmpResult13 = tmp(11139);
     tmp25[0] = tmpResult13.parseRegisteredExperiments(stateFromStoresObject);
-    const tmpResult14 = tmp(10884);
+    const tmpResult14 = tmp(11139);
     tmp25[1] = tmpResult14.getLegacyOverridesInfo(stateFromStoresObject1);
-    const tmpResult15 = tmp(10885);
+    const tmpResult15 = tmp(11140);
     tmp25[2] = tmpResult15.mergeApexExperiments(stateFromStores, stateFromStores1);
-    const tmpResult16 = tmp(10885);
+    const tmpResult16 = tmp(11140);
     tmp25[3] = tmpResult16.getApexExperimentOverridesInfo(stateFromStores2);
     tmp24 = tmp25;
   } else {

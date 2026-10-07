@@ -1,15 +1,15 @@
-// Module ID: 14957
-// Function ID: 14958
+// Module ID: 15242
+// Function ID: 15243
 // Name: LanguageSetting
-// Dependencies: [2115, 1086, 558, 576, 504, 1127, 10874, 14958, 14960, 2]
+// Dependencies: [2116, 1085, 558, 576, 504, 1126, 11129, 15243, 15245, 2]
 
-// Module 14957 (LanguageSetting)
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import LanguageIcon from "LanguageIcon" /* 14958 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
+// Module 15242 (LanguageSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import LanguageIcon from "LanguageIcon" /* 15243 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,12 +39,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] !== stateFromStores) {
-    const tmpResult2 = stateFromStores(1127);
+    const tmpResult2 = stateFromStores(1126);
     const availableLocales = tmpResult2.getAvailableLocales();
     const found = availableLocales.find((value) => value.value === stateFromStores);
     let stringResult = null;
     if (null != found) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       stringResult = intl.string(found.localizedName);
     }
     cResult[2] = stateFromStores;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const found = availableLocales.find((value) => value.value === closure_0);
   let stringResult = null;
   if (null != found) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     stringResult = intl.string(found.localizedName);
   }
   return stringResult;

@@ -1,9 +1,9 @@
-// Module ID: 682
-// Function ID: 683
+// Module ID: 681
+// Function ID: 682
 // Name: Radius
 // Dependencies: [2]
 
-// Module 682 (Radius)
+// Module 681 (Radius)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/tokens/radii/generated/generated-definitions.tsx");

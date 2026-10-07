@@ -1,13 +1,13 @@
-// Module ID: 13977
-// Function ID: 13978
+// Module ID: 14249
+// Function ID: 14250
 // Name: ToggleButton
-// Dependencies: [109, 19, 21, 558, 576, 13978, 5283, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14250, 5595, 2]
 
-// Module 13977 (ToggleButton)
+// Module 14249 (ToggleButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseTextButton2 from "BaseTextButton" /* 5283 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 13978 */;
+import BaseTextButton2 from "BaseTextButton" /* 5595 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 14250 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -60,7 +60,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       return tmp11;
     }
   }
-  const BaseTextButton = tmp(5283).BaseTextButton;
+  const BaseTextButton = tmp(5595).BaseTextButton;
   const merged = Object.assign(toggleButtonProps);
   const tmp13 = <BaseTextButton ref={arg1} variant={str} />;
   cResult[5] = ref;

@@ -1,10 +1,10 @@
-// Module ID: 4901
-// Function ID: 4902
+// Module ID: 4955
+// Function ID: 4956
 // Name: pollConnectionStats
-// Dependencies: [5, 4892, 4902, 2]
+// Dependencies: [5, 4954, 4956, 2]
 // Exports: default
 
-// Module 4901 (pollConnectionStats)
+// Module 4955 (pollConnectionStats)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ export default function pollConnectionStats(on) {
     return obj(...arguments);
   };
   dependencyMap = false;
-  on.on(require("BaseConnectionEvent").MediaEngineEvent.Destroy, () => {
+  on.on(require("MediaEngineEvent").MediaEngineEvent.Destroy, () => {
     c1 = true;
     return true;
   });

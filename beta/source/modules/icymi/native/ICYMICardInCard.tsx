@@ -1,28 +1,28 @@
-// Module ID: 16139
-// Function ID: 16140
+// Module ID: 16442
+// Function ID: 16443
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 2051, 2111, 2073, 1086, 21, 16093, 588, 558, 576, 8273, 5893, 1189, 5289, 504, 5085, 9165, 4989, 4833, 4990, 16140, 1127, 5395, 16133, 5436, 7059, 7364, 2]
+// Dependencies: [19, 17, 2051, 2112, 2074, 1085, 21, 16394, 587, 558, 576, 8469, 5971, 1188, 5602, 504, 5305, 9389, 5042, 4886, 5043, 16443, 1126, 5864, 16436, 5909, 7126, 7577, 2]
 // Exports: default
 
-// Module 16139 (ICYMICardInCard)
+// Module 16442 (ICYMICardInCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import TextIcon2 from "TextIcon" /* 5395 */;
-import GuildIcon from "GuildIcon" /* 5893 */;
-import ClipView from "ClipView" /* 8273 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 16133 */;
-import getIconForChannel from "getIconForChannel" /* 16140 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import TextIcon2 from "TextIcon" /* 5864 */;
+import GuildIcon from "GuildIcon" /* 5971 */;
+import ClipView from "ClipView" /* 8469 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 16436 */;
+import getIconForChannel from "getIconForChannel" /* 16443 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16093 */;
+import createICYMIStyles from "createICYMIStyles" /* 16394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj5 = { animate: true, style: tmp4.authorAvatar, guildId: guild.id, user: author, size: native.AvatarSizes.XSMALL_20 };
-  const Avatar = tmp(1189).Avatar;
+  const Avatar = tmp(1188).Avatar;
   const tmp14 = React4(Avatar, obj5);
   cResult[4] = author;
   cResult[5] = guild.id;

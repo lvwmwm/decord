@@ -1,13 +1,13 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12777
+// Function ID: 12778
 // Name: MediaModalYoutube
-// Dependencies: [32, 109, 19, 1086, 21, 558, 576, 7749, 7724, 7713, 7717, 12535, 1370, 2]
+// Dependencies: [32, 109, 19, 1085, 21, 558, 576, 7972, 7946, 7935, 7939, 12778, 1369, 2]
 
-// Module 12534 (MediaModalYoutube)
+// Module 12777 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7713 */;
-import MediaModalWebView from "MediaModalWebView" /* 7749 */;
+import Constants from "Constants" /* 1085 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7935 */;
+import MediaModalWebView from "MediaModalWebView" /* 7972 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -66,13 +66,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
     _require = cResult[4];
   }
   let obj2 = ref;
-  [playerState, dependencyMap] = ref.useState(tmp(7749).PlayerState.UNREADY);
+  [playerState, dependencyMap] = ref.useState(tmp(7972).PlayerState.UNREADY);
   [tmp14, closure_3] = _slicedToArray(ref.useState(undefined), 2);
   let tmp15 = playerState;
   const tmp13 = _slicedToArray(ref.useState(undefined), 2);
-  const tmp16 = playerState(7724)(playerState);
+  const tmp16 = playerState(7946)(playerState);
   _slicedToArray = tmp16;
-  let tmp17 = playerState(7724)(tmp7);
+  let tmp17 = playerState(7946)(tmp7);
   _objectWithoutProperties = tmp17;
   ref = ref.useRef(null);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -229,10 +229,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
         }
         const _Symbol = Symbol;
         const forResult = Symbol.for("react.early_return_sentinel");
-        const tmpResult = tmp(7717);
+        const tmpResult = tmp(7939);
         let youtubeVideoIdFromURI = tmpResult.getYoutubeVideoIdFromURI(tmp5.uri);
         if (youtubeVideoIdFromURI == null) {
-          const tmpResult3 = tmp(7717);
+          const tmpResult3 = tmp(7939);
           youtubeVideoIdFromURI = tmpResult3.getYoutubeClipVideoIdFromURI(tmp5.uri);
         }
         let tmp35;
@@ -244,14 +244,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
         let tmp41;
         if (null != youtubeVideoIdFromURI) {
           let tmp43;
-          if (playerState === tmp(7749).PlayerState.ERRORED) {
+          if (playerState === tmp(7972).PlayerState.ERRORED) {
             if ("embed_not_allowed" === tmp14) {
-              tmp39 = jsx(tmp15(12535), { videoId: youtubeVideoIdFromURI.videoId });
+              tmp39 = jsx(tmp15(12778), { videoId: youtubeVideoIdFromURI.videoId });
             }
           }
           const _Symbol2 = Symbol;
           if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmpResult4 = tmp(1370);
+            const tmpResult4 = tmp(1369);
             const tmp44 = tmpResult4.isAndroid() ? { nestedScrollEnabled: true, overScrollMode: "never", domStorageEnabled: true, mixedContentMode: "compatibility" } : {};
             cResult[25] = tmp44;
             tmp43 = tmp44;
@@ -261,7 +261,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
           let str3 = "";
           let str4 = "";
           const videoId = youtubeVideoIdFromURI.videoId;
-          const tmp15Result = tmp15(7749);
+          const tmp15Result = tmp15(7972);
           if (null != youtubeVideoIdFromURI.start) {
             const _HermesInternal = HermesInternal;
             let str6 = "'start': ";
@@ -374,11 +374,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
   closure_3 = undefined;
   let ref;
   let tmp2 = visible;
-  [playerState, dependencyMap] = ref.useState(visible(7749).PlayerState.UNREADY);
+  [playerState, dependencyMap] = ref.useState(visible(7972).PlayerState.UNREADY);
   [first1, closure_3] = ref.useState(undefined);
-  const tmp9 = playerState(7724)(playerState);
+  const tmp9 = playerState(7946)(playerState);
   _slicedToArray = tmp9;
-  const tmp10 = playerState(7724)(visible);
+  const tmp10 = playerState(7946)(visible);
   let closure_5 = tmp10;
   ref = ref.useRef(null);
   const effect = ref.useEffect(() => {
@@ -460,28 +460,28 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((visible
       }
     }
   }, items);
-  let obj = visible(7717);
+  let obj = visible(7939);
   let youtubeVideoIdFromURI = obj.getYoutubeVideoIdFromURI(source.uri);
   if (youtubeVideoIdFromURI == null) {
-    const tmp2Result = tmp2(7717);
+    const tmp2Result = tmp2(7939);
     youtubeVideoIdFromURI = tmp2Result.getYoutubeClipVideoIdFromURI(source.uri);
   }
   if (null == youtubeVideoIdFromURI) {
     return null;
   } else {
-    if (playerState === tmp2(7749).PlayerState.ERRORED) {
+    if (playerState === tmp2(7972).PlayerState.ERRORED) {
       if ("embed_not_allowed" === first1) {
         const tmp35 = jsx;
-        return jsx(playerState(12535), { videoId: youtubeVideoIdFromURI.videoId });
+        return jsx(playerState(12778), { videoId: youtubeVideoIdFromURI.videoId });
       }
     }
-    const tmp2Result2 = tmp2(1370);
+    const tmp2Result2 = tmp2(1369);
     const tmp16 = tmp2Result2.isAndroid() ? { nestedScrollEnabled: true, overScrollMode: "never", domStorageEnabled: true, mixedContentMode: "compatibility" } : {};
     let tmp17 = jsx;
     const obj3 = { ref, style, source: obj4, baseURL, playerState, onDataReceived: callback, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true };
     let str2 = "";
     let str3 = "";
-    const tmp8Result = playerState(7749);
+    const tmp8Result = playerState(7972);
     if (null != youtubeVideoIdFromURI.start) {
       const _HermesInternal = HermesInternal;
       str3 = "'start': " + youtubeVideoIdFromURI.start + ",";

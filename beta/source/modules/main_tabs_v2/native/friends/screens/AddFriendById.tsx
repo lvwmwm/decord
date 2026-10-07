@@ -1,24 +1,24 @@
-// Module ID: 13402
-// Function ID: 13403
+// Module ID: 13668
+// Function ID: 13669
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1086, 21, 4837, 588, 1127, 558, 576, 4833, 6023, 13403, 9211, 9207, 4530, 1253, 4545, 6507, 5282, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 1126, 558, 576, 4886, 6100, 13669, 9438, 9434, 4567, 1252, 4590, 6580, 5594, 2]
 
-// Module 13402 (AddFriendById)
+// Module 13668 (AddFriendById)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
-import TextField2 from "TextField" /* 6023 */;
-import FriendsUtils from "FriendsUtils" /* 9211 */;
-import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 13403 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
+import TextField2 from "TextField" /* 6100 */;
+import FriendsUtils from "FriendsUtils" /* 9438 */;
+import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 13669 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj8;
 let obj9;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 let react = react_mod;
 ({ View: hasOwnProperty, Keyboard: metroRequire } = react_native);
 ({ PLACEHOLDER_TAG: metroImportDefault, AnalyticEvents: metroImportAll } = Constants);
@@ -148,7 +148,7 @@ let closure_16 = react.forwardRef((headerTextStyle, ref) => {
   if (validationState.status === tmp4.ERROR) {
     a11yMessage = validationState.a11yMessage;
   }
-  intl3 = tmp10(1127).intl;
+  intl3 = tmp10(1126).intl;
   str2 = undefined;
   if (null != message) {
     str2 = "error";
@@ -888,16 +888,16 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (enabled) {
     let obj5 = { style: tmp.friendMessageContainer, children: null };
     const tmp18 = sourcePage;
-    const obj6 = { style: items6, variant: "text-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1127).t.Yi6Mpu) };
+    const obj6 = { style: items6, variant: "text-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1126).t.Yi6Mpu) };
     items6 = [, , ];
     ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
     items6[2] = headerTextStyle;
-    const Text = sourcePage(4833).Text;
-    intl = sourcePage(1127).intl;
+    const Text = sourcePage(4886).Text;
+    intl = sourcePage(1126).intl;
     const items7 = [tmp17(Text, obj6), , ];
     const obj7 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
     str2 = undefined;
-    const TextArea = sourcePage(6507).TextArea;
+    const TextArea = sourcePage(6580).TextArea;
     const tmp19 = constants2;
     if (first1.field === constants2.MESSAGE) {
       if (first1.status === tmp4.ERROR) {
@@ -915,9 +915,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       obj5.children = items7;
       enabled = tmp14(tmp16, obj5);
     }
-    const obj9 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp18(1127).t.UtfQNw) };
-    const Text2 = tmp18(4833).Text;
-    intl2 = tmp18(1127).intl;
+    const obj9 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp18(1126).t.UtfQNw) };
+    const Text2 = tmp18(4886).Text;
+    intl2 = tmp18(1126).intl;
     tmp17Result = tmp17(Text2, obj9);
   }
   const obj10 = { children: items8 };
@@ -925,9 +925,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   items8 = [tmp14(tmp16, obj3), , ];
   const obj11 = { style: tmp.redesignGrow };
   items8[1] = closure_9(tmp16, obj11);
-  const obj12 = { size: "lg", text: intl3.string(sourcePage(1127).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
-  const Button = sourcePage(5282).Button;
-  intl3 = sourcePage(1127).intl;
+  const obj12 = { size: "lg", text: intl3.string(sourcePage(1126).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
+  const Button = sourcePage(5594).Button;
+  intl3 = sourcePage(1126).intl;
   items8[2] = closure_9(Button, obj12);
   return tmp14(tmp15, obj10);
 }));

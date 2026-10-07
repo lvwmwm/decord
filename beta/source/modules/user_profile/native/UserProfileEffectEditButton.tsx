@@ -1,20 +1,20 @@
-// Module ID: 14171
-// Function ID: 14172
+// Module ID: 14455
+// Function ID: 14456
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 6630, 8258, 1097, 21, 4837, 588, 7615, 10540, 4801, 14172, 1987, 1127, 14163, 5890, 5896, 10509, 8261, 1189, 12747, 2]
+// Dependencies: [19, 17, 6707, 8454, 1096, 21, 4890, 587, 7837, 10778, 4854, 14456, 1987, 1126, 14445, 5968, 5974, 10747, 8457, 1188, 13011, 2]
 // Exports: default
 
-// Module 14171 (UserProfileEffectEditButton)
+// Module 14455 (UserProfileEffectEditButton)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Constants2 from "Constants" /* 6630 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8258 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Constants2 from "Constants" /* 6707 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8454 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -93,7 +93,7 @@ export default function UserProfileEffectEditButton(isTryItOut) {
   const callback = userProfileEffect.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { user, currentProfileEffect: userProfileEffect, guildId, isTryItOut };
-    obj.openLazy(asyncRequire(14172, dependencyMap.paths), "Profile Effect", obj2);
+    obj.openLazy(asyncRequire(14456, dependencyMap.paths), "Profile Effect", obj2);
   }, items);
   if (product != null) {
     name = product.name;

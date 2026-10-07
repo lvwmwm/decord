@@ -1,11 +1,11 @@
-// Module ID: 5483
-// Function ID: 5484
+// Module ID: 6478
+// Function ID: 6479
 // Name: InlineUploader
-// Dependencies: [5, 5470, 5484, 2]
+// Dependencies: [5, 6479, 6481, 2]
 
-// Module 5483 (InlineUploader)
-import DiscordMd5Default from "DiscordMd5" /* 5470 */;
-import originalMd5Header from "originalMd5Header" /* 5484 */;
+// Module 6478 (InlineUploader)
+import DiscordMd5Default from "DiscordMd5" /* 6479 */;
+import originalMd5Header from "originalMd5Header" /* 6481 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,42 +1,42 @@
-// Module ID: 5059
-// Function ID: 5060
+// Module ID: 5112
+// Function ID: 5113
 // Name: MessageRecordUtils
-// Dependencies: [5060, 4483, 1392, 502, 4482, 1378, 1086, 5061, 4817, 5084, 11, 5089, 5090, 5196, 4424, 5197, 5199, 2]
+// Dependencies: [5113, 4520, 1391, 502, 4519, 1377, 1085, 5114, 4870, 5304, 11, 5309, 5310, 5425, 4461, 5426, 5428, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 5059 (MessageRecordUtils)
+// Module 5112 (MessageRecordUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import findCodedLinksDefault from "findCodedLinks" /* 4817 */;
-import useMessageAuthor from "useMessageAuthor" /* 5084 */;
-import isMessageMentioned from "isMessageMentioned" /* 5089 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5090 */;
-import transformMessagPollDefault from "transformMessagPoll" /* 5196 */;
-import EmbedUtils from "EmbedUtils" /* 5197 */;
-import StickersUtils from "StickersUtils" /* 5199 */;
-import InteractionRecord from "InteractionRecord" /* 5060 */;
-import MessageRecord_mod from "MessageRecord" /* 4483 */;
-import UserRecord from "UserRecord" /* 1392 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import findCodedLinksDefault from "findCodedLinks" /* 4870 */;
+import useMessageAuthor from "useMessageAuthor" /* 5304 */;
+import isMessageMentioned from "isMessageMentioned" /* 5309 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5310 */;
+import transformMessagPollDefault from "transformMessagPoll" /* 5425 */;
+import EmbedUtils from "EmbedUtils" /* 5426 */;
+import StickersUtils from "StickersUtils" /* 5428 */;
+import InteractionRecord from "InteractionRecord" /* 5113 */;
+import MessageRecord_mod from "MessageRecord" /* 4520 */;
+import UserRecord from "UserRecord" /* 1391 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const isMessageMentionedDefault = isMessageMentioned;
-let _require, set, set2, set3;
+let _require, set, set2, set3, set4, set5;
 
 let closure_12;
 let closure_4;
 let hasOwnProperty;
 let map1;
 let unpackModuleId;
-const f89121 = (item) => {
+const f90186 = (item) => {
   const obj = EmbedUtils;
   return obj.sanitizeEmbed(message2.channel_id, message2.id, item);
 };
-const f89123 = (item) => {
+const f90188 = (item) => {
   const obj = {};
   const merged = Object.assign(item);
   if (null != obj.count_details) {
@@ -59,7 +59,7 @@ const f89123 = (item) => {
   }
   return obj;
 };
-const f89124 = (message) => {
+const f90189 = (message) => {
   const obj = { message: createMinimalMessageRecord(message.message), moderator_report: message.moderator_report };
   const tmp = new closure_1_4(obj);
   return tmp;
@@ -91,7 +91,7 @@ function createMinimalMessageRecord(timestamp) {
     items = [];
   } else {
     const embeds = timestamp.embeds;
-    const mapped = embeds.map(f89121);
+    const mapped = embeds.map(f90186);
     const obj2 = require("EmbedUtils");
     items = obj2.mergeEmbedsOnURL(mapped);
   }
@@ -245,13 +245,13 @@ function createMessageRecord(message, arg1) {
       const _Date = Date;
       const self4 = this;
       self2 = this;
-      const tmp36 = _modDef4424;
+      const tmp36 = _modDef4461;
       const date = new Date(call.ended_timestamp);
       tmp36Result = tmp36(date);
     }
     let durationResult = null;
     if (null != tmp36Result) {
-      const obj11 = _modDef4424;
+      const obj11 = _modDef4461;
       durationResult = obj11.duration(tmp36Result.diff(tmp32));
     }
     tmp33 = { participants: call.participants, endedTimestamp: tmp36Result, duration: durationResult };
@@ -261,7 +261,7 @@ function createMessageRecord(message, arg1) {
     items = [];
   } else {
     const message_snapshots = message.message_snapshots;
-    items = message_snapshots.map(f89124);
+    items = message_snapshots.map(f90189);
   }
   if (reactions == null) {
     reactions = message.reactions;
@@ -322,7 +322,7 @@ function createMessageRecord(message, arg1) {
     mapped1 = [];
   }
   HermesBuiltin.arraySpread(items2, mapped1, tmp43);
-  items1 = items2.map(f89123);
+  items1 = items2.map(f90188);
 }
 let MessageRecord = MessageRecord_mod;
 ({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: hasOwnProperty } = MessageRecord);
@@ -363,13 +363,13 @@ export const updateMessageRecord = function updateMessageRecord(message, message
           const _Date = Date;
           const self = this;
           let self2 = this;
-          const tmp4 = _modDef4424;
+          const tmp4 = _modDef4461;
           const date = new Date(call.ended_timestamp);
           tmp = tmp4(date);
         }
         let durationResult = null;
         if (null != tmp) {
-          let obj = _modDef4424;
+          let obj = _modDef4461;
           durationResult = obj.duration(tmp.diff(tmp43));
         }
         tmp11 = { participants: call.participants, endedTimestamp: tmp, duration: durationResult };
@@ -403,7 +403,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         items = [];
       } else {
         const embeds = message2.embeds;
-        const mapped = embeds.map(f89121);
+        const mapped = embeds.map(f90186);
         const obj7 = require("EmbedUtils");
         items = obj7.mergeEmbedsOnURL(mapped);
       }
@@ -417,7 +417,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         items1 = [];
       } else {
         const message_snapshots = message2.message_snapshots;
-        items1 = message_snapshots.map(f89124);
+        items1 = message_snapshots.map(f90189);
       }
       set2Result = set2("messageSnapshots", items1);
     }
@@ -441,7 +441,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
     }
     let set4Result = result6;
     if (null != message2.components) {
-      const set4 = result6.set;
+      set4 = result6.set;
       const obj11 = require("InteractionComponentUtils");
       set4Result = set4("components", obj11.transformComponents(message2.components));
     }
@@ -453,7 +453,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
     if (null != message2.reactions) {
       let items2;
       let reactions = message.reactions;
-      const set5 = result7.set;
+      set5 = result7.set;
       if (reactions == null) {
         reactions = message2.reactions;
       }
@@ -467,7 +467,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         let num = 0;
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, reactions, 0);
         HermesBuiltin.arraySpread(items3, [], arraySpreadResult);
-        items2 = items3.map(f89123);
+        items2 = items3.map(f90188);
       }
       set5Result = set5("reactions", items2);
     }

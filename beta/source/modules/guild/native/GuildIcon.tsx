@@ -1,17 +1,17 @@
-// Module ID: 5893
-// Function ID: 5894
+// Module ID: 5971
+// Function ID: 5972
 // Name: GuildIcon
-// Dependencies: [32, 19, 5894, 2069, 1086, 21, 4837, 588, 2017, 5895, 5896, 5898, 299, 2]
+// Dependencies: [32, 19, 5972, 2070, 1085, 21, 4890, 587, 2018, 5973, 1886, 5974, 5976, 299, 2]
 
-// Module 5893 (GuildIcon)
+// Module 5971 (GuildIcon)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5894 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5972 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRecord from "GuildRecord" /* 2069 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -199,8 +199,9 @@ const memoResult = react.memo(function GuildIconInner(guild) {
             const tmp16 = preloadAnimation;
             if (tmp16) {
               if (typeof tmp11 === "string") {
+                obj2 = { uri: tmp11 };
                 const obj3 = icon(flag[10]);
-                const preloadResult = obj3.preload(tmp11);
+                const preloadResult = obj3.preload(obj2);
                 preloadResult.then(() => {
                   let current;
                   const timerId = setTimeout(() => {
@@ -222,7 +223,7 @@ const memoResult = react.memo(function GuildIconInner(guild) {
       tmp4 = null;
       if (null != icon) {
         tmp4 = { uri: icon };
-        obj2 = { uri: icon };
+        const obj4 = { uri: icon };
       }
     }, items);
     if (!tmp25) {
@@ -300,14 +301,14 @@ const memoResult = react.memo(function GuildIconInner(guild) {
     }, items1);
     const wrapperStyle = memo.wrapperStyle;
     if (null == tmp16) {
-      const obj4 = { shouldRasterizeIOS: true, style: wrapperStyle, collapsable: false, children: guildIcon(guild(tmp15[12]).NativeText, obj5) };
+      let obj4 = { shouldRasterizeIOS: true, style: wrapperStyle, collapsable: false, children: guildIcon(guild(tmp15[13]).NativeText, obj5) };
       obj5 = { numberOfLines: 1, ellipsizeMode: "tail", accessible: false, accessibilityRole: "none", accessibilityElementsHidden: true, experimental_useNativeText: true, style: tmp40, children: acronym };
-      const tmp14Result = tmp14(tmp15[11]);
+      const tmp14Result = tmp14(tmp15[12]);
       tmp41Result = tmp41(tmp14Result, obj4);
     } else {
       const obj6 = { style: wrapperStyle, source: tmp16, onLoadEnd: tmp43, progressiveRenderingEnabled: true, fade: false };
       tmp43 = undefined;
-      const tmp14Result2 = tmp14(tmp15[10]);
+      const tmp14Result2 = tmp14(tmp15[11]);
       if (null != loadingStyle) {
         tmp43 = tmp39;
       }

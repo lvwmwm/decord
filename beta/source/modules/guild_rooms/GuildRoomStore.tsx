@@ -1,16 +1,16 @@
-// Module ID: 4995
-// Function ID: 4996
+// Module ID: 5048
+// Function ID: 5049
 // Name: GuildRoomStore
-// Dependencies: [109, 502, 4860, 2102, 4996, 504, 585, 2]
+// Dependencies: [109, 502, 4913, 2103, 5049, 504, 584, 2]
 
-// Module 4995 (GuildRoomStore)
+// Module 5048 (GuildRoomStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 4996 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 5049 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import size from "module_2" /* 2 */;
 
 let set;

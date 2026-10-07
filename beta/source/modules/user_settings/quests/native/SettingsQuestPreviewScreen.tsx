@@ -1,22 +1,22 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14973
+// Function ID: 14974
 // Name: SettingsQuestPreviewScreen
-// Dependencies: [32, 19, 17, 7120, 1194, 21, 588, 4837, 558, 576, 1492, 504, 14689, 14691, 1127, 9060, 9765, 585, 14692, 9061, 12023, 14698, 2]
+// Dependencies: [32, 19, 17, 7187, 1193, 21, 587, 4890, 558, 576, 1491, 504, 14974, 14976, 1126, 9282, 9994, 584, 14977, 9283, 10974, 14983, 2]
 
-// Module 14688 (SettingsQuestPreviewScreen)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import QuestActionCreators from "QuestActionCreators" /* 9765 */;
-import QuestCardPreview from "QuestCardPreview" /* 14689 */;
-import QuestEmbedPreview from "QuestEmbedPreview" /* 14691 */;
+// Module 14973 (SettingsQuestPreviewScreen)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import QuestActionCreators from "QuestActionCreators" /* 9994 */;
+import QuestCardPreview from "QuestCardPreview" /* 14974 */;
+import QuestEmbedPreview from "QuestEmbedPreview" /* 14976 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 7120 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
+import QuestStore from "QuestStore" /* 7187 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2 = dependencyMap;
   let obj = params(576);
   const cResult = obj.c(88);
-  const obj2 = params(1492);
+  const obj2 = params(1491);
   params = obj2.useRoute().params;
   closure_13();
   let questId;
@@ -368,13 +368,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const items1 = [obj, , , ];
     const obj3 = { id: "bar", label: intl2.string(intl5.t.uL4oBf), page: callback2() };
-    intl2 = tmp(1127).intl;
+    intl2 = tmp(1126).intl;
     items1[1] = obj3;
     const obj4 = { id: "card", label: intl3.string(intl5.t.MAvIf1), page: callback() };
-    intl3 = tmp(1127).intl;
+    intl3 = tmp(1126).intl;
     items1[2] = obj4;
     const obj5 = { id: "embed", label: intl4.string(intl5.t.AswoU2), page: callback1() };
-    intl4 = tmp(1127).intl;
+    intl4 = tmp(1126).intl;
     items1[3] = obj5;
     return items1;
   }, items5);

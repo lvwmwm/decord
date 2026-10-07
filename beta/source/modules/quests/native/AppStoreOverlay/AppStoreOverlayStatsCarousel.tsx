@@ -1,22 +1,22 @@
-// Module ID: 10690
-// Function ID: 10691
+// Module ID: 10925
+// Function ID: 10926
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 588, 4837, 10691, 1127, 10692, 558, 576, 4833, 1370, 6066, 7135, 7145, 2]
+// Dependencies: [19, 17, 21, 587, 4890, 10926, 1126, 10927, 558, 576, 4886, 1369, 6140, 7202, 7212, 2]
 
-// Module 10690 (AppStoreOverlayStatsCarousel)
+// Module 10925 (AppStoreOverlayStatsCarousel)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import AnalyticsActions from "AnalyticsActions" /* 7135 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 10691 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 10692 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+import AnalyticsActions from "AnalyticsActions" /* 7202 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 10926 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 10927 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,15 +46,15 @@ function getStatCardContent(stat) {
     let result1;
     if (null != stat.ratingCount) {
       const tmp11Result = AppStoreOverlayStatCardUtils;
-      result1 = tmp11Result.formatAppStoreRatingCount(stat.ratingCount, tmp11(1127).intl.currentLocale);
+      result1 = tmp11Result.formatAppStoreRatingCount(stat.ratingCount, tmp11(1126).intl.currentLocale);
     }
     const tmp11Result2 = AppStoreOverlayStatCardUtils;
     const appStoreStarFillAmounts = tmp11Result2.getAppStoreStarFillAmounts(stat.rating, num);
-    const intl = tmp11(1127).intl;
+    const intl = tmp11(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { label: stat.label, rating: result, maxRating: num, ratingCount: num2 };
     num2 = stat.ratingCount;
-    const prop = tmp11(1127).t["/0p2sz"];
+    const prop = tmp11(1126).t["/0p2sz"];
     if (num2 == null) {
       num2 = 0;
     }
@@ -168,8 +168,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   let stringResult;
                   const tmpResult = PlatformUtils;
                   if (tmpResult.isIOS()) {
-                    const intl = tmp(1127).intl;
-                    stringResult = intl.string(tmp(1127).t.quJD0Y);
+                    const intl = tmp(1126).intl;
+                    stringResult = intl.string(tmp(1126).t.quJD0Y);
                   }
                   cResult[18] = stringResult;
                   tmp33 = stringResult;
@@ -231,7 +231,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const tmp22 = metroRequire;
         if (null == secondaryContent) {
           const obj7 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-          tmp21Result = tmp21(tmp(4833).Text, obj7);
+          tmp21Result = tmp21(tmp(4886).Text, obj7);
         }
         tmp21Result2 = tmp21(tmp22, obj6);
       }
@@ -297,7 +297,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp12 = metroRequire;
     if (null == secondaryContent) {
       const obj2 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp10(tmp7(4833).Text, obj2);
+      secondaryContent = tmp10(tmp7(4886).Text, obj2);
     }
     tmp10Result = tmp10(tmp12, obj);
   }
@@ -309,8 +309,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp16 = React3;
     const tmp7Result = PlatformUtils;
     if (tmp7Result.isIOS()) {
-      const intl = tmp7(1127).intl;
-      stringResult = intl.string(tmp7(1127).t.quJD0Y);
+      const intl = tmp7(1126).intl;
+      stringResult = intl.string(tmp7(1126).t.quJD0Y);
     }
     tmp10Result2 = tmp10(tmp16, obj3);
   } else {
@@ -345,7 +345,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(6066);
+  const tmpResult = tmp(6140);
   const nativeGesture = tmpResult.useNativeGesture(first);
   const tmp7 = stats.length <= 2;
   dependencyMap = length.useRef(0);
@@ -559,7 +559,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
               obj = { stat: onCarouselScroll, onRatingPress: null };
               tmp3 = undefined;
               tmp = jsx;
-              tmp2 = f55827;
+              tmp2 = f56309;
               if ("rating" === onCarouselScroll.type) {
                 tmp3 = onRatingPress;
               }
@@ -576,7 +576,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
               obj = { stat: onCarouselScroll, onRatingPress: null };
               tmp3 = undefined;
               tmp = jsx;
-              tmp2 = f55827;
+              tmp2 = f56309;
               if ("rating" === onCarouselScroll.type) {
                 tmp3 = onRatingPress;
               }
@@ -669,9 +669,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7145).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7212).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7145).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7212).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

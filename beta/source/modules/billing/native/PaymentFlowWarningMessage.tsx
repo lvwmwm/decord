@@ -1,18 +1,18 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 13144
+// Function ID: 13145
 // Name: PaymentFlowWarningMessage
-// Dependencies: [19, 17, 21, 4837, 588, 5754, 558, 576, 1189, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 5620, 558, 576, 1188, 4886, 2]
 
-// Module 12880 (PaymentFlowWarningMessage)
+// Module 13144 (PaymentFlowWarningMessage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const tmp4 = closure_6();
   if (cResult[0] !== tmp4.icon) {
     size = { style: tmp4.icon, color: nativeDefault.unsafe_rawColors.YELLOW_300, width: 16, height: 16 };
-    const WarningCircle = tmp(1189).WarningCircle;
+    const WarningCircle = tmp(1188).WarningCircle;
     const tmp8 = React3(WarningCircle, size);
     cResult[0] = tmp4.icon;
     cResult[1] = tmp8;

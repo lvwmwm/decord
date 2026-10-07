@@ -1,18 +1,18 @@
-// Module ID: 17572
-// Function ID: 17573
+// Module ID: 17937
+// Function ID: 17938
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 17559, 14738, 21, 558, 576, 1127, 17553, 17563, 2]
+// Dependencies: [32, 19, 17926, 15023, 21, 558, 576, 1126, 17920, 17928, 2]
 
-// Module 17572 (GuildRoleSubscriptionGroupGatingModal)
+// Module 17937 (GuildRoleSubscriptionGroupGatingModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14738 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 17553 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17563 */;
+import intl3 from "intl" /* 1126 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 17920 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17928 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17559 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 17926 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,9 +28,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   [tmp5, tmp6] = RoleTierEditStore.useGroupIsFullGateState();
   _slicedToArray(RoleTierEditStore.useGroupIsFullGateState(), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.N38nNP);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl3.t.csJWVI);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;

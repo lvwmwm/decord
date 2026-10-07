@@ -1,20 +1,20 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7459
+// Function ID: 7460
 // Name: PoggermodeStore
-// Dependencies: [502, 2102, 7095, 7096, 1086, 4467, 2046, 7255, 1122, 504, 585, 2]
+// Dependencies: [502, 2103, 7162, 7163, 1085, 4504, 2046, 7460, 1121, 504, 584, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 7254 (PoggermodeStore)
+// Module 7459 (PoggermodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4467 */;
-import PoggermodeUtils from "PoggermodeUtils" /* 7255 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4504 */;
+import PoggermodeUtils from "PoggermodeUtils" /* 7460 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7095 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7096 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7162 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7163 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

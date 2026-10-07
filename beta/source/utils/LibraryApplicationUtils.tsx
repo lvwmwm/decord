@@ -1,15 +1,15 @@
-// Module ID: 6820
-// Function ID: 6821
+// Module ID: 6904
+// Function ID: 6905
 // Name: LibraryApplicationUtils
-// Dependencies: [32, 1378, 5823, 1086, 2027, 2]
+// Dependencies: [32, 1377, 5695, 1085, 2028, 2]
 // Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 6820 (LibraryApplicationUtils)
-import UserSettings from "UserSettings" /* 2027 */;
+// Module 6904 (LibraryApplicationUtils)
+import UserSettings from "UserSettings" /* 2028 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1378 */;
-import SKUStore from "SKUStore" /* 5823 */;
-import Constants from "Constants" /* 1086 */;
+import UserStore from "UserStore" /* 1377 */;
+import SKUStore from "SKUStore" /* 5695 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

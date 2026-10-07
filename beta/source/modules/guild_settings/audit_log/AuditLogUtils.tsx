@@ -1,40 +1,40 @@
-// Module ID: 17346
-// Function ID: 17347
+// Module ID: 17715
+// Function ID: 17716
 // Name: AuditLogUtils
-// Dependencies: [5772, 6522, 5024, 2056, 5815, 17345, 2051, 2105, 4482, 1378, 17344, 1086, 2058, 11216, 6523, 2057, 3, 4866, 1127, 7844, 11, 17347, 1098, 1391, 4990, 1985, 4680, 14, 1104, 9255, 17311, 4515, 4424, 2]
+// Dependencies: [5638, 6595, 5077, 2056, 5687, 17714, 2051, 2106, 4519, 1377, 17713, 1085, 2058, 11474, 6596, 2057, 3, 4919, 1126, 8068, 11, 17716, 1097, 1390, 5043, 1985, 4722, 14, 1103, 9483, 17678, 4552, 4461, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 17346 (AuditLogUtils)
+// Module 17715 (AuditLogUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef14 from "module_14" /* 14 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import intl69 from "intl" /* 1127 */;
-import FlagUtilsAll from "FlagUtils" /* 1391 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import intl71 from "intl" /* 1126 */;
+import FlagUtilsAll from "FlagUtils" /* 1390 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import DateUtils from "DateUtils" /* 4515 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import TimeUtils from "TimeUtils" /* 4866 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6523 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9255 */;
-import Constants2 from "Constants" /* 11216 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17311 */;
-import AuditLogRecord from "AuditLogRecord" /* 17345 */;
-import GuildFeedItemTypes from "GuildFeedItemTypes" /* 17347 */;
-import EmojiStore from "EmojiStore" /* 5772 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6522 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5024 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import DateUtils from "DateUtils" /* 4552 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import TimeUtils from "TimeUtils" /* 4919 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6596 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9483 */;
+import Constants2 from "Constants" /* 11474 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17678 */;
+import AuditLogRecord from "AuditLogRecord" /* 17714 */;
+import GuildFeedItemTypes from "GuildFeedItemTypes" /* 17716 */;
+import EmojiStore from "EmojiStore" /* 5638 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6595 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5077 */;
 import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import StickersStore from "StickersStore" /* 5815 */;
+import StickersStore from "StickersStore" /* 5687 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17344 */;
-import Constants from "Constants" /* 1086 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17713 */;
+import Constants from "Constants" /* 1085 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ function getPermissionChanges(oldValue, newValue) {
     if (obj3.has(removeResult, tmp14)) {
       let arr = added.push(tmp14);
     }
-    let tmp15Result = tmp15(1098);
+    let tmp15Result = tmp15(1097);
     if (!tmp15Result.has(tmp9, tmp14)) {
       continue;
     } else {
@@ -361,244 +361,252 @@ class ACTION_FILTER_ITEMS {
     let intl66;
     let intl67;
     let intl68;
+    let intl69;
     let intl7;
+    let intl70;
     let intl8;
     let intl9;
-    obj = { value: constants.ALL, label: intl.string(intl69.t.QxEVcv), valueLabel: intl2.string(intl69.t.an9Ry3) };
-    intl = intl69.intl;
-    intl2 = intl69.intl;
-    items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-    const obj2 = { value: constants.GUILD_UPDATE, label: intl3.string(intl69.t["5INZa3"]) };
-    intl3 = intl69.intl;
+    obj = { value: constants.ALL, label: intl.string(intl71.t.QxEVcv), valueLabel: intl2.string(intl71.t.an9Ry3) };
+    intl = intl71.intl;
+    intl2 = intl71.intl;
+    items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+    const obj2 = { value: constants.GUILD_UPDATE, label: intl3.string(intl71.t["5INZa3"]) };
+    intl3 = intl71.intl;
     items[1] = obj2;
-    const obj3 = { value: constants.CHANNEL_CREATE, label: intl4.string(intl69.t["2uh4vJ"]) };
-    intl4 = intl69.intl;
+    const obj3 = { value: constants.CHANNEL_CREATE, label: intl4.string(intl71.t["2uh4vJ"]) };
+    intl4 = intl71.intl;
     items[2] = obj3;
-    const obj4 = { value: constants.CHANNEL_UPDATE, label: intl5.string(intl69.t.mGsBLV) };
-    intl5 = intl69.intl;
+    const obj4 = { value: constants.CHANNEL_UPDATE, label: intl5.string(intl71.t.mGsBLV) };
+    intl5 = intl71.intl;
     items[3] = obj4;
-    const obj5 = { value: constants.CHANNEL_DELETE, label: intl6.string(intl69.t.hCHzAr) };
-    intl6 = intl69.intl;
+    const obj5 = { value: constants.CHANNEL_DELETE, label: intl6.string(intl71.t.hCHzAr) };
+    intl6 = intl71.intl;
     items[4] = obj5;
-    const obj6 = { value: constants.CHANNEL_OVERWRITE_CREATE, label: intl7.string(intl69.t["8TnAMP"]) };
-    intl7 = intl69.intl;
+    const obj6 = { value: constants.CHANNEL_OVERWRITE_CREATE, label: intl7.string(intl71.t["8TnAMP"]) };
+    intl7 = intl71.intl;
     items[5] = obj6;
-    const obj7 = { value: constants.CHANNEL_OVERWRITE_UPDATE, label: intl8.string(intl69.t.Jqx0Bi) };
-    intl8 = intl69.intl;
+    const obj7 = { value: constants.CHANNEL_OVERWRITE_UPDATE, label: intl8.string(intl71.t.Jqx0Bi) };
+    intl8 = intl71.intl;
     items[6] = obj7;
-    const obj8 = { value: constants.CHANNEL_OVERWRITE_DELETE, label: intl9.string(intl69.t.gBXOr4) };
-    intl9 = intl69.intl;
+    const obj8 = { value: constants.CHANNEL_OVERWRITE_DELETE, label: intl9.string(intl71.t.gBXOr4) };
+    intl9 = intl71.intl;
     items[7] = obj8;
-    const obj9 = { value: constants.MEMBER_KICK, label: intl10.string(intl69.t["Q1/hN8"]) };
-    intl10 = intl69.intl;
+    const obj9 = { value: constants.CHANNEL_POSITION_UPDATE, label: intl10.string(intl71.t.hKfSwp) };
+    intl10 = intl71.intl;
     items[8] = obj9;
-    const obj10 = { value: constants.MEMBER_PRUNE, label: intl11.string(intl69.t.tOTTja) };
-    intl11 = intl69.intl;
+    const obj10 = { value: constants.MEMBER_KICK, label: intl11.string(intl71.t["Q1/hN8"]) };
+    intl11 = intl71.intl;
     items[9] = obj10;
-    const obj11 = { value: constants.MEMBER_BAN_ADD, label: intl12.string(intl69.t["NfPn+e"]) };
-    intl12 = intl69.intl;
+    const obj11 = { value: constants.MEMBER_PRUNE, label: intl12.string(intl71.t.tOTTja) };
+    intl12 = intl71.intl;
     items[10] = obj11;
-    const obj12 = { value: constants.MEMBER_BAN_REMOVE, label: intl13.string(intl69.t.XCsGfI) };
-    intl13 = intl69.intl;
+    const obj12 = { value: constants.MEMBER_BAN_ADD, label: intl13.string(intl71.t["NfPn+e"]) };
+    intl13 = intl71.intl;
     items[11] = obj12;
-    const obj13 = { value: constants.MEMBER_UPDATE, label: intl14.string(intl69.t["F/jmNJ"]) };
-    intl14 = intl69.intl;
+    const obj13 = { value: constants.MEMBER_BAN_REMOVE, label: intl14.string(intl71.t.XCsGfI) };
+    intl14 = intl71.intl;
     items[12] = obj13;
-    const obj14 = { value: constants.MEMBER_ROLE_UPDATE, label: intl15.string(intl69.t.zAveSI) };
-    intl15 = intl69.intl;
+    const obj14 = { value: constants.MEMBER_UPDATE, label: intl15.string(intl71.t["F/jmNJ"]) };
+    intl15 = intl71.intl;
     items[13] = obj14;
-    const obj15 = { value: constants.MEMBER_MOVE, label: intl16.string(intl69.t.QshteR) };
-    intl16 = intl69.intl;
+    const obj15 = { value: constants.MEMBER_ROLE_UPDATE, label: intl16.string(intl71.t.zAveSI) };
+    intl16 = intl71.intl;
     items[14] = obj15;
-    const obj16 = { value: constants.MEMBER_DISCONNECT, label: intl17.string(intl69.t.Z45os7) };
-    intl17 = intl69.intl;
+    const obj16 = { value: constants.MEMBER_MOVE, label: intl17.string(intl71.t.QshteR) };
+    intl17 = intl71.intl;
     items[15] = obj16;
-    const obj17 = { value: constants.BOT_ADD, label: intl18.string(intl69.t.vuH24Z) };
-    intl18 = intl69.intl;
+    const obj17 = { value: constants.MEMBER_DISCONNECT, label: intl18.string(intl71.t.Z45os7) };
+    intl18 = intl71.intl;
     items[16] = obj17;
-    const obj18 = { value: constants.THREAD_CREATE, label: intl19.string(intl69.t["+zl0DG"]) };
-    intl19 = intl69.intl;
+    const obj18 = { value: constants.BOT_ADD, label: intl19.string(intl71.t.vuH24Z) };
+    intl19 = intl71.intl;
     items[17] = obj18;
-    const obj19 = { value: constants.THREAD_UPDATE, label: intl20.string(intl69.t.rbIry3) };
-    intl20 = intl69.intl;
+    const obj19 = { value: constants.THREAD_CREATE, label: intl20.string(intl71.t["+zl0DG"]) };
+    intl20 = intl71.intl;
     items[18] = obj19;
-    const obj20 = { value: constants.THREAD_DELETE, label: intl21.string(intl69.t.hFjNEA) };
-    intl21 = intl69.intl;
+    const obj20 = { value: constants.THREAD_UPDATE, label: intl21.string(intl71.t.rbIry3) };
+    intl21 = intl71.intl;
     items[19] = obj20;
-    const obj21 = { value: constants.ROLE_CREATE, label: intl22.string(intl69.t.AbxKtv) };
-    intl22 = intl69.intl;
+    const obj21 = { value: constants.THREAD_DELETE, label: intl22.string(intl71.t.hFjNEA) };
+    intl22 = intl71.intl;
     items[20] = obj21;
-    const obj22 = { value: constants.ROLE_UPDATE, label: intl23.string(intl69.t.t3Z6sU) };
-    intl23 = intl69.intl;
+    const obj22 = { value: constants.ROLE_CREATE, label: intl23.string(intl71.t.AbxKtv) };
+    intl23 = intl71.intl;
     items[21] = obj22;
-    const obj23 = { value: constants.ROLE_DELETE, label: intl24.string(intl69.t.YsFpa4) };
-    intl24 = intl69.intl;
+    const obj23 = { value: constants.ROLE_UPDATE, label: intl24.string(intl71.t.t3Z6sU) };
+    intl24 = intl71.intl;
     items[22] = obj23;
-    const obj24 = { value: constants.ONBOARDING_PROMPT_CREATE, label: intl25.string(intl69.t.ZV9tqc) };
-    intl25 = intl69.intl;
+    const obj24 = { value: constants.ROLE_DELETE, label: intl25.string(intl71.t.YsFpa4) };
+    intl25 = intl71.intl;
     items[23] = obj24;
-    const obj25 = { value: constants.ONBOARDING_PROMPT_UPDATE, label: intl26.string(intl69.t.PcOdvX) };
-    intl26 = intl69.intl;
+    const obj25 = { value: constants.ROLE_POSITION_UPDATE, label: intl26.string(intl71.t["g+lLUV"]) };
+    intl26 = intl71.intl;
     items[24] = obj25;
-    const obj26 = { value: constants.ONBOARDING_PROMPT_DELETE, label: intl27.string(intl69.t["+r33Na"]) };
-    intl27 = intl69.intl;
+    const obj26 = { value: constants.ONBOARDING_PROMPT_CREATE, label: intl27.string(intl71.t.ZV9tqc) };
+    intl27 = intl71.intl;
     items[25] = obj26;
-    const obj27 = { value: constants.ONBOARDING_CREATE, label: intl28.string(intl69.t.uDADde) };
-    intl28 = intl69.intl;
+    const obj27 = { value: constants.ONBOARDING_PROMPT_UPDATE, label: intl28.string(intl71.t.PcOdvX) };
+    intl28 = intl71.intl;
     items[26] = obj27;
-    const obj28 = { value: constants.ONBOARDING_UPDATE, label: intl29.string(intl69.t.J1H1wg) };
-    intl29 = intl69.intl;
+    const obj28 = { value: constants.ONBOARDING_PROMPT_DELETE, label: intl29.string(intl71.t["+r33Na"]) };
+    intl29 = intl71.intl;
     items[27] = obj28;
-    const obj29 = { value: constants.HOME_SETTINGS_CREATE, label: intl30.string(intl69.t.Di4cvI) };
-    intl30 = intl69.intl;
+    const obj29 = { value: constants.ONBOARDING_CREATE, label: intl30.string(intl71.t.uDADde) };
+    intl30 = intl71.intl;
     items[28] = obj29;
-    const obj30 = { value: constants.HOME_SETTINGS_UPDATE, label: intl31.string(intl69.t.tzyrJH) };
-    intl31 = intl69.intl;
+    const obj30 = { value: constants.ONBOARDING_UPDATE, label: intl31.string(intl71.t.J1H1wg) };
+    intl31 = intl71.intl;
     items[29] = obj30;
-    const obj31 = { value: constants.INVITE_CREATE, label: intl32.string(intl69.t["0BNJdX"]) };
-    intl32 = intl69.intl;
+    const obj31 = { value: constants.HOME_SETTINGS_CREATE, label: intl32.string(intl71.t.Di4cvI) };
+    intl32 = intl71.intl;
     items[30] = obj31;
-    const obj32 = { value: constants.INVITE_UPDATE, label: intl33.string(intl69.t["o++obV"]) };
-    intl33 = intl69.intl;
+    const obj32 = { value: constants.HOME_SETTINGS_UPDATE, label: intl33.string(intl71.t.tzyrJH) };
+    intl33 = intl71.intl;
     items[31] = obj32;
-    const obj33 = { value: constants.INVITE_DELETE, label: intl34.string(intl69.t.iP40Az) };
-    intl34 = intl69.intl;
+    const obj33 = { value: constants.INVITE_CREATE, label: intl34.string(intl71.t["0BNJdX"]) };
+    intl34 = intl71.intl;
     items[32] = obj33;
-    const obj34 = { value: constants.WEBHOOK_CREATE, label: intl35.string(intl69.t["tBF4+S"]) };
-    intl35 = intl69.intl;
+    const obj34 = { value: constants.INVITE_UPDATE, label: intl35.string(intl71.t["o++obV"]) };
+    intl35 = intl71.intl;
     items[33] = obj34;
-    const obj35 = { value: constants.WEBHOOK_UPDATE, label: intl36.string(intl69.t.eV3McO) };
-    intl36 = intl69.intl;
+    const obj35 = { value: constants.INVITE_DELETE, label: intl36.string(intl71.t.iP40Az) };
+    intl36 = intl71.intl;
     items[34] = obj35;
-    const obj36 = { value: constants.WEBHOOK_DELETE, label: intl37.string(intl69.t.AAL3K1) };
-    intl37 = intl69.intl;
+    const obj36 = { value: constants.WEBHOOK_CREATE, label: intl37.string(intl71.t["tBF4+S"]) };
+    intl37 = intl71.intl;
     items[35] = obj36;
-    const obj37 = { value: constants.EMOJI_CREATE, label: intl38.string(intl69.t.RuWm0V) };
-    intl38 = intl69.intl;
+    const obj37 = { value: constants.WEBHOOK_UPDATE, label: intl38.string(intl71.t.eV3McO) };
+    intl38 = intl71.intl;
     items[36] = obj37;
-    const obj38 = { value: constants.EMOJI_UPDATE, label: intl39.string(intl69.t.WzdUY7) };
-    intl39 = intl69.intl;
+    const obj38 = { value: constants.WEBHOOK_DELETE, label: intl39.string(intl71.t.AAL3K1) };
+    intl39 = intl71.intl;
     items[37] = obj38;
-    const obj39 = { value: constants.EMOJI_DELETE, label: intl40.string(intl69.t.c3dK2L) };
-    intl40 = intl69.intl;
+    const obj39 = { value: constants.EMOJI_CREATE, label: intl40.string(intl71.t.RuWm0V) };
+    intl40 = intl71.intl;
     items[38] = obj39;
-    const obj40 = { value: constants.MESSAGE_DELETE, label: intl41.string(intl69.t.daTfXh) };
-    intl41 = intl69.intl;
+    const obj40 = { value: constants.EMOJI_UPDATE, label: intl41.string(intl71.t.WzdUY7) };
+    intl41 = intl71.intl;
     items[39] = obj40;
-    const obj41 = { value: constants.MESSAGE_BULK_DELETE, label: intl42.string(intl69.t.nrBxeh) };
-    intl42 = intl69.intl;
+    const obj41 = { value: constants.EMOJI_DELETE, label: intl42.string(intl71.t.c3dK2L) };
+    intl42 = intl71.intl;
     items[40] = obj41;
-    const obj42 = { value: constants.MESSAGE_PIN, label: intl43.string(intl69.t.MUldyN) };
-    intl43 = intl69.intl;
+    const obj42 = { value: constants.MESSAGE_DELETE, label: intl43.string(intl71.t.daTfXh) };
+    intl43 = intl71.intl;
     items[41] = obj42;
-    const obj43 = { value: constants.MESSAGE_UNPIN, label: intl44.string(intl69.t.n4zKhA) };
-    intl44 = intl69.intl;
+    const obj43 = { value: constants.MESSAGE_BULK_DELETE, label: intl44.string(intl71.t.nrBxeh) };
+    intl44 = intl71.intl;
     items[42] = obj43;
-    const obj44 = { value: constants.INTEGRATION_CREATE, label: intl45.string(intl69.t.deNm8x) };
-    intl45 = intl69.intl;
+    const obj44 = { value: constants.MESSAGE_PIN, label: intl45.string(intl71.t.MUldyN) };
+    intl45 = intl71.intl;
     items[43] = obj44;
-    const obj45 = { value: constants.INTEGRATION_UPDATE, label: intl46.string(intl69.t.HT7Sfg) };
-    intl46 = intl69.intl;
+    const obj45 = { value: constants.MESSAGE_UNPIN, label: intl46.string(intl71.t.n4zKhA) };
+    intl46 = intl71.intl;
     items[44] = obj45;
-    const obj46 = { value: constants.INTEGRATION_DELETE, label: intl47.string(intl69.t["+kJ09q"]) };
-    intl47 = intl69.intl;
+    const obj46 = { value: constants.INTEGRATION_CREATE, label: intl47.string(intl71.t.deNm8x) };
+    intl47 = intl71.intl;
     items[45] = obj46;
-    const obj47 = { value: constants.STICKER_CREATE, label: intl48.string(intl69.t["3DzNjU"]) };
-    intl48 = intl69.intl;
+    const obj47 = { value: constants.INTEGRATION_UPDATE, label: intl48.string(intl71.t.HT7Sfg) };
+    intl48 = intl71.intl;
     items[46] = obj47;
-    const obj48 = { value: constants.STICKER_UPDATE, label: intl49.string(intl69.t.tdhW5b) };
-    intl49 = intl69.intl;
+    const obj48 = { value: constants.INTEGRATION_DELETE, label: intl49.string(intl71.t["+kJ09q"]) };
+    intl49 = intl71.intl;
     items[47] = obj48;
-    const obj49 = { value: constants.STICKER_DELETE, label: intl50.string(intl69.t["+ZhGOk"]) };
-    intl50 = intl69.intl;
+    const obj49 = { value: constants.STICKER_CREATE, label: intl50.string(intl71.t["3DzNjU"]) };
+    intl50 = intl71.intl;
     items[48] = obj49;
-    const obj50 = { value: constants.STAGE_INSTANCE_CREATE, label: intl51.string(intl69.t.sPbjA6) };
-    intl51 = intl69.intl;
+    const obj50 = { value: constants.STICKER_UPDATE, label: intl51.string(intl71.t.tdhW5b) };
+    intl51 = intl71.intl;
     items[49] = obj50;
-    const obj51 = { value: constants.STAGE_INSTANCE_UPDATE, label: intl52.string(intl69.t.cW9LfJ) };
-    intl52 = intl69.intl;
+    const obj51 = { value: constants.STICKER_DELETE, label: intl52.string(intl71.t["+ZhGOk"]) };
+    intl52 = intl71.intl;
     items[50] = obj51;
-    const obj52 = { value: constants.STAGE_INSTANCE_DELETE, label: intl53.string(intl69.t["U1r+yD"]) };
-    intl53 = intl69.intl;
+    const obj52 = { value: constants.STAGE_INSTANCE_CREATE, label: intl53.string(intl71.t.sPbjA6) };
+    intl53 = intl71.intl;
     items[51] = obj52;
-    const obj53 = { value: constants.GUILD_SCHEDULED_EVENT_CREATE, label: intl54.string(intl69.t.H81Zyy) };
-    intl54 = intl69.intl;
+    const obj53 = { value: constants.STAGE_INSTANCE_UPDATE, label: intl54.string(intl71.t.cW9LfJ) };
+    intl54 = intl71.intl;
     items[52] = obj53;
-    const obj54 = { value: constants.GUILD_SCHEDULED_EVENT_UPDATE, label: intl55.string(intl69.t["FM69l+"]) };
-    intl55 = intl69.intl;
+    const obj54 = { value: constants.STAGE_INSTANCE_DELETE, label: intl55.string(intl71.t["U1r+yD"]) };
+    intl55 = intl71.intl;
     items[53] = obj54;
-    const obj55 = { value: constants.GUILD_SCHEDULED_EVENT_DELETE, label: intl56.string(intl69.t.Rq28Bh) };
-    intl56 = intl69.intl;
+    const obj55 = { value: constants.GUILD_SCHEDULED_EVENT_CREATE, label: intl56.string(intl71.t.H81Zyy) };
+    intl56 = intl71.intl;
     items[54] = obj55;
-    const obj56 = { value: constants.APPLICATION_COMMAND_PERMISSION_UPDATE, label: intl57.string(intl69.t.iPdFOt) };
-    intl57 = intl69.intl;
+    const obj56 = { value: constants.GUILD_SCHEDULED_EVENT_UPDATE, label: intl57.string(intl71.t["FM69l+"]) };
+    intl57 = intl71.intl;
     items[55] = obj56;
-    const obj57 = { value: constants.AUTO_MODERATION_BLOCK_MESSAGE, label: intl58.string(intl69.t.gNq5z6) };
-    intl58 = intl69.intl;
+    const obj57 = { value: constants.GUILD_SCHEDULED_EVENT_DELETE, label: intl58.string(intl71.t.Rq28Bh) };
+    intl58 = intl71.intl;
     items[56] = obj57;
-    const obj58 = { value: constants.AUTO_MODERATION_RULE_CREATE, label: intl59.string(intl69.t.f72Zqb) };
-    intl59 = intl69.intl;
+    const obj58 = { value: constants.APPLICATION_COMMAND_PERMISSION_UPDATE, label: intl59.string(intl71.t.iPdFOt) };
+    intl59 = intl71.intl;
     items[57] = obj58;
-    const obj59 = { value: constants.AUTO_MODERATION_RULE_UPDATE, label: intl60.string(intl69.t.XeqIiv) };
-    intl60 = intl69.intl;
+    const obj59 = { value: constants.AUTO_MODERATION_BLOCK_MESSAGE, label: intl60.string(intl71.t.gNq5z6) };
+    intl60 = intl71.intl;
     items[58] = obj59;
-    const obj60 = { value: constants.AUTO_MODERATION_RULE_DELETE, label: intl61.string(intl69.t.syAApU) };
-    intl61 = intl69.intl;
+    const obj60 = { value: constants.AUTO_MODERATION_RULE_CREATE, label: intl61.string(intl71.t.f72Zqb) };
+    intl61 = intl71.intl;
     items[59] = obj60;
-    const obj61 = { value: constants.GUILD_HOME_FEATURE_ITEM, label: intl62.string(intl69.t.lhG5KN) };
-    intl62 = intl69.intl;
+    const obj61 = { value: constants.AUTO_MODERATION_RULE_UPDATE, label: intl62.string(intl71.t.XeqIiv) };
+    intl62 = intl71.intl;
     items[60] = obj61;
-    const obj62 = { value: constants.GUILD_HOME_REMOVE_ITEM, label: intl63.string(intl69.t.lRPRwS) };
-    intl63 = intl69.intl;
+    const obj62 = { value: constants.AUTO_MODERATION_RULE_DELETE, label: intl63.string(intl71.t.syAApU) };
+    intl63 = intl71.intl;
     items[61] = obj62;
-    const obj63 = { value: constants.SOUNDBOARD_SOUND_CREATE, label: intl64.string(intl69.t.yoRi5r) };
-    intl64 = intl69.intl;
+    const obj63 = { value: constants.GUILD_HOME_FEATURE_ITEM, label: intl64.string(intl71.t.lhG5KN) };
+    intl64 = intl71.intl;
     items[62] = obj63;
-    const obj64 = { value: constants.SOUNDBOARD_SOUND_UPDATE, label: intl65.string(intl69.t.uKlG0Z) };
-    intl65 = intl69.intl;
+    const obj64 = { value: constants.GUILD_HOME_REMOVE_ITEM, label: intl65.string(intl71.t.lRPRwS) };
+    intl65 = intl71.intl;
     items[63] = obj64;
-    const obj65 = { value: constants.SOUNDBOARD_SOUND_DELETE, label: intl66.string(intl69.t.gq0iCT) };
-    intl66 = intl69.intl;
+    const obj65 = { value: constants.SOUNDBOARD_SOUND_CREATE, label: intl66.string(intl71.t.yoRi5r) };
+    intl66 = intl71.intl;
     items[64] = obj65;
-    const obj66 = { value: constants.VOICE_CHANNEL_STATUS_CREATE, label: intl67.string(intl69.t.rGr0YM) };
-    intl67 = intl69.intl;
+    const obj66 = { value: constants.SOUNDBOARD_SOUND_UPDATE, label: intl67.string(intl71.t.uKlG0Z) };
+    intl67 = intl71.intl;
     items[65] = obj66;
-    const obj67 = { value: constants.VOICE_CHANNEL_STATUS_DELETE, label: intl68.string(intl69.t.V9PEQ4) };
-    intl68 = intl69.intl;
+    const obj67 = { value: constants.SOUNDBOARD_SOUND_DELETE, label: intl68.string(intl71.t.gq0iCT) };
+    intl68 = intl71.intl;
     items[66] = obj67;
+    const obj68 = { value: constants.VOICE_CHANNEL_STATUS_CREATE, label: intl69.string(intl71.t.rGr0YM) };
+    intl69 = intl71.intl;
+    items[67] = obj68;
+    const obj69 = { value: constants.VOICE_CHANNEL_STATUS_DELETE, label: intl70.string(intl71.t.V9PEQ4) };
+    intl70 = intl71.intl;
+    items[68] = obj69;
     return items;
   }
 }
 let obj = {
   [TimeUtils.TimeUnits.SECONDS]: (seconds) => {
-    const intl = intl69.intl;
+    const intl = intl71.intl;
     obj = { seconds };
-    return intl.formatToPlainString(intl69.t.geSp4K, obj);
+    return intl.formatToPlainString(intl71.t.geSp4K, obj);
   },
   [TimeUtils.TimeUnits.MINUTES]: (minutes) => {
-    const intl = intl69.intl;
+    const intl = intl71.intl;
     obj = { minutes };
-    return intl.formatToPlainString(intl69.t.iXLF9W, obj);
+    return intl.formatToPlainString(intl71.t.iXLF9W, obj);
   },
   [TimeUtils.TimeUnits.HOURS]: (hours) => {
-    const intl = intl69.intl;
+    const intl = intl71.intl;
     obj = { hours };
-    return intl.formatToPlainString(intl69.t.xCjYxK, obj);
+    return intl.formatToPlainString(intl71.t.xCjYxK, obj);
   },
   [TimeUtils.TimeUnits.DAYS]: (days) => {
-    const intl = intl69.intl;
+    const intl = intl71.intl;
     obj = { days };
-    return intl.formatToPlainString(intl69.t["k2UNz+"], obj);
+    return intl.formatToPlainString(intl71.t["k2UNz+"], obj);
   }
 };
 let result = size.fileFinishedImporting("modules/guild_settings/audit_log/AuditLogUtils.tsx");
 
 export const getChangeStrings = function getChangeStrings(targetType) {
   let obj45;
-  const f130108 = () => obj45(dependencyMap[18]).t["2IW3C5"];
-  const f130117 = (oldValue) => null == oldValue.oldValue ? nYz2mg : oczvRI;
-  const f130118 = (newValue) => null == newValue.newValue ? Zplsov : u6cArh;
-  const f130119 = (newValue) => {
+  const f131730 = () => obj45(dependencyMap[18]).t["2IW3C5"];
+  const f131739 = (oldValue) => null == oldValue.oldValue ? nYz2mg : oczvRI;
+  const f131740 = (newValue) => null == newValue.newValue ? Zplsov : u6cArh;
+  const f131741 = (newValue) => {
     let tmp;
     if (null != newValue.newValue) {
       if (null != newValue.oldValue) {
@@ -612,9 +620,9 @@ export const getChangeStrings = function getChangeStrings(targetType) {
       tmp = lj_A4u;
     }
   };
-  const f130120 = (newValue) => newValue.newValue ? rBT0sn : gc_te5;
-  const f130121 = (arg0) => obj6[arg0.newValue];
-  const f130122 = (arg0) => {
+  const f131742 = (newValue) => newValue.newValue ? rBT0sn : gc_te5;
+  const f131743 = (arg0) => obj6[arg0.newValue];
+  const f131744 = (arg0) => {
     let tmp = obj11[arg0.newValue];
     if (tmp == null) {
       tmp = _2FQFiw;
@@ -627,82 +635,82 @@ export const getChangeStrings = function getChangeStrings(targetType) {
     const obj2 = {};
     obj2[AuditLogChangeKeys.NAME] = () => obj45(dependencyMap[18]).t.CkDiNH;
     const DESCRIPTION4 = AuditLogChangeKeys.DESCRIPTION;
-    const RP3Ey3 = obj45(1127).t.RP3Ey3;
-    const QAVj1Y = obj45(1127).t.QAVj1Y;
-    obj2[DESCRIPTION4] = f130118;
+    const RP3Ey3 = obj45(1126).t.RP3Ey3;
+    const QAVj1Y = obj45(1126).t.QAVj1Y;
+    obj2[DESCRIPTION4] = f131740;
     obj2[AuditLogChangeKeys.ICON_HASH] = () => obj45(dependencyMap[18]).t.iLZ8Q9;
     obj2[AuditLogChangeKeys.SPLASH_HASH] = () => obj45(dependencyMap[18]).t["4VV6dn"];
     obj2[AuditLogChangeKeys.DISCOVERY_SPLASH_HASH] = () => obj45(dependencyMap[18]).t["2pds6p"];
     const BANNER_HASH = AuditLogChangeKeys.BANNER_HASH;
-    const Cxq4zO = obj45(1127).t.Cxq4zO;
-    H7eE_9 = obj45(1127).t["H7eE/9"];
-    obj2[BANNER_HASH] = f130118;
+    const Cxq4zO = obj45(1126).t.Cxq4zO;
+    H7eE_9 = obj45(1126).t["H7eE/9"];
+    obj2[BANNER_HASH] = f131740;
     obj2[AuditLogChangeKeys.OWNER_ID] = () => obj45(dependencyMap[18]).t["8ltsLT"];
     obj2[AuditLogChangeKeys.REGION] = () => obj45(dependencyMap[18]).t.X9r5Kf;
     obj2[AuditLogChangeKeys.PREFERRED_LOCALE] = () => obj45(dependencyMap[18]).t.UnXuDS;
     const AFK_CHANNEL_ID = AuditLogChangeKeys.AFK_CHANNEL_ID;
-    const ClBuA4 = obj45(1127).t.ClBuA4;
-    ms_xtL = obj45(1127).t["ms+xtL"];
-    obj2[AFK_CHANNEL_ID] = f130118;
+    const ClBuA4 = obj45(1126).t.ClBuA4;
+    ms_xtL = obj45(1126).t["ms+xtL"];
+    obj2[AFK_CHANNEL_ID] = f131740;
     obj2[AuditLogChangeKeys.AFK_TIMEOUT] = () => obj45(dependencyMap[18]).t.q21fHa;
     const SYSTEM_CHANNEL_ID = AuditLogChangeKeys.SYSTEM_CHANNEL_ID;
-    const H1VXaa = obj45(1127).t.H1VXaa;
-    const XhtmxJ = obj45(1127).t.XhtmxJ;
-    obj2[SYSTEM_CHANNEL_ID] = f130118;
+    const H1VXaa = obj45(1126).t.H1VXaa;
+    const XhtmxJ = obj45(1126).t.XhtmxJ;
+    obj2[SYSTEM_CHANNEL_ID] = f131740;
     const RULES_CHANNEL_ID = AuditLogChangeKeys.RULES_CHANNEL_ID;
-    const OI6MG2 = obj45(1127).t.OI6MG2;
-    const lik3tI = obj45(1127).t.lik3tI;
-    obj2[RULES_CHANNEL_ID] = f130118;
+    const OI6MG2 = obj45(1126).t.OI6MG2;
+    const lik3tI = obj45(1126).t.lik3tI;
+    obj2[RULES_CHANNEL_ID] = f131740;
     const PUBLIC_UPDATES_CHANNEL_ID = AuditLogChangeKeys.PUBLIC_UPDATES_CHANNEL_ID;
-    const YxBKrY = obj45(1127).t.YxBKrY;
-    const Ehsnij = obj45(1127).t.Ehsnij;
-    obj2[PUBLIC_UPDATES_CHANNEL_ID] = f130118;
+    const YxBKrY = obj45(1126).t.YxBKrY;
+    const Ehsnij = obj45(1126).t.Ehsnij;
+    obj2[PUBLIC_UPDATES_CHANNEL_ID] = f131740;
     const obj3 = {};
     const MFA_LEVEL = AuditLogChangeKeys.MFA_LEVEL;
-    obj3[constants2.NONE] = obj45(1127).t.voaCCQ;
-    obj3[constants2.ELEVATED] = obj45(1127).t.pRNVwz;
-    obj2[MFA_LEVEL] = f130121;
+    obj3[constants2.NONE] = obj45(1126).t.voaCCQ;
+    obj3[constants2.ELEVATED] = obj45(1126).t.pRNVwz;
+    obj2[MFA_LEVEL] = f131743;
     const WIDGET_ENABLED = AuditLogChangeKeys.WIDGET_ENABLED;
-    const ADIty8 = obj45(1127).t.ADIty8;
-    const nf58VY = obj45(1127).t.nf58VY;
-    obj2[WIDGET_ENABLED] = f130120;
+    const ADIty8 = obj45(1126).t.ADIty8;
+    const nf58VY = obj45(1126).t.nf58VY;
+    obj2[WIDGET_ENABLED] = f131742;
     const WIDGET_CHANNEL_ID = AuditLogChangeKeys.WIDGET_CHANNEL_ID;
-    const deQ5wO = obj45(1127).t.deQ5wO;
-    obj2[WIDGET_CHANNEL_ID] = f130118;
+    const deQ5wO = obj45(1126).t.deQ5wO;
+    obj2[WIDGET_CHANNEL_ID] = f131740;
     const obj4 = {};
     const VERIFICATION_LEVEL = AuditLogChangeKeys.VERIFICATION_LEVEL;
-    obj4[constants3.NONE] = obj45(1127).t.W27rsc;
-    obj4[constants3.LOW] = obj45(1127).t["V8P+Pw"];
-    obj4[constants3.MEDIUM] = obj45(1127).t.ERQFau;
-    obj4[constants3.HIGH] = obj45(1127).t["83fN0j"];
-    obj4[constants3.VERY_HIGH] = obj45(1127).t.PnkQJE;
-    obj2[VERIFICATION_LEVEL] = f130121;
+    obj4[constants3.NONE] = obj45(1126).t.W27rsc;
+    obj4[constants3.LOW] = obj45(1126).t["V8P+Pw"];
+    obj4[constants3.MEDIUM] = obj45(1126).t.ERQFau;
+    obj4[constants3.HIGH] = obj45(1126).t["83fN0j"];
+    obj4[constants3.VERY_HIGH] = obj45(1126).t.PnkQJE;
+    obj2[VERIFICATION_LEVEL] = f131743;
     const obj5 = {};
     const DEFAULT_MESSAGE_NOTIFICATIONS = AuditLogChangeKeys.DEFAULT_MESSAGE_NOTIFICATIONS;
-    obj5[constants4.ALL_MESSAGES] = obj45(1127).t.LDi76A;
-    obj5[constants4.ONLY_MENTIONS] = obj45(1127).t["6K83ba"];
-    obj2[DEFAULT_MESSAGE_NOTIFICATIONS] = f130121;
+    obj5[constants4.ALL_MESSAGES] = obj45(1126).t.LDi76A;
+    obj5[constants4.ONLY_MENTIONS] = obj45(1126).t["6K83ba"];
+    obj2[DEFAULT_MESSAGE_NOTIFICATIONS] = f131743;
     const VANITY_URL_CODE = AuditLogChangeKeys.VANITY_URL_CODE;
-    const Zplsov = obj45(1127).t.Zplsov;
-    const u6cArh = obj45(1127).t.u6cArh;
-    obj2[VANITY_URL_CODE] = f130118;
+    const Zplsov = obj45(1126).t.Zplsov;
+    const u6cArh = obj45(1126).t.u6cArh;
+    obj2[VANITY_URL_CODE] = f131740;
     const obj6 = {};
     const EXPLICIT_CONTENT_FILTER = AuditLogChangeKeys.EXPLICIT_CONTENT_FILTER;
-    obj6[constants5.DISABLED] = obj45(1127).t.fmOeL3;
-    obj6[constants5.MEMBERS_WITHOUT_ROLES] = obj45(1127).t["4FghYw"];
-    obj6[constants5.ALL_MEMBERS] = obj45(1127).t.olyrSm;
-    obj2[EXPLICIT_CONTENT_FILTER] = f130121;
+    obj6[constants5.DISABLED] = obj45(1126).t.fmOeL3;
+    obj6[constants5.MEMBERS_WITHOUT_ROLES] = obj45(1126).t["4FghYw"];
+    obj6[constants5.ALL_MEMBERS] = obj45(1126).t.olyrSm;
+    obj2[EXPLICIT_CONTENT_FILTER] = f131743;
     const PREMIUM_PROGRESS_BAR_ENABLED = AuditLogChangeKeys.PREMIUM_PROGRESS_BAR_ENABLED;
-    const rBT0sn = obj45(1127).t.rBT0sn;
-    gc_te5 = obj45(1127).t["gc+te5"];
-    obj2[PREMIUM_PROGRESS_BAR_ENABLED] = f130120;
+    const rBT0sn = obj45(1126).t.rBT0sn;
+    gc_te5 = obj45(1126).t["gc+te5"];
+    obj2[PREMIUM_PROGRESS_BAR_ENABLED] = f131742;
     obj2[AuditLogChangeKeys.AUTO_MODERATION_TRIGGERED_RULE_NAME] = () => obj45(dependencyMap[18]).t.YbouFH;
     obj2[AuditLogChangeKeys.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS] = () => obj45(dependencyMap[18]).t.g3DMjB;
     obj2[AuditLogChangeKeys.SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS] = () => obj45(dependencyMap[18]).t["+fQAel"];
     obj2[AuditLogChangeKeys.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS] = () => obj45(dependencyMap[18]).t.E1fc4v;
     obj2[AuditLogChangeKeys.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES] = () => obj45(dependencyMap[18]).t.XbwtSA;
     const obj7 = {};
-    obj7[AuditLogChangeKeys.REASON] = f130108;
+    obj7[AuditLogChangeKeys.REASON] = f131730;
     const merged = Object.assign(obj7);
     return obj2;
   } else {
@@ -711,50 +719,50 @@ export const getChangeStrings = function getChangeStrings(targetType) {
         if (tmp.USER === targetType) {
           const obj8 = {};
           const NICK = AuditLogChangeKeys.NICK;
-          const qXDsHv = obj45(1127).t.qXDsHv;
-          m_qury = obj45(1127).t["m+qury"];
-          const DvLvjF = obj45(1127).t.DvLvjF;
-          obj8[NICK] = f130119;
+          const qXDsHv = obj45(1126).t.qXDsHv;
+          m_qury = obj45(1126).t["m+qury"];
+          const DvLvjF = obj45(1126).t.DvLvjF;
+          obj8[NICK] = f131741;
           const DEAF = AuditLogChangeKeys.DEAF;
-          const mArLlW = obj45(1127).t.mArLlW;
-          const ddvVYG = obj45(1127).t.ddvVYG;
-          obj8[DEAF] = f130120;
+          const mArLlW = obj45(1126).t.mArLlW;
+          const ddvVYG = obj45(1126).t.ddvVYG;
+          obj8[DEAF] = f131742;
           const MUTE = AuditLogChangeKeys.MUTE;
-          bxs_lS = obj45(1127).t["bxs/lS"];
-          const FjecQM = obj45(1127).t.FjecQM;
-          obj8[MUTE] = f130120;
+          bxs_lS = obj45(1126).t["bxs/lS"];
+          const FjecQM = obj45(1126).t.FjecQM;
+          obj8[MUTE] = f131742;
           obj8[AuditLogChangeKeys.ROLES_REMOVE] = () => obj45(dependencyMap[18]).t["+2SDWV"];
           obj8[AuditLogChangeKeys.ROLES_ADD] = () => obj45(dependencyMap[18]).t["B3/3IJ"];
           obj8[AuditLogChangeKeys.PRUNE_DELETE_DAYS] = () => obj45(dependencyMap[18]).t["+Cvc+D"];
           const COMMUNICATION_DISABLED_UNTIL = AuditLogChangeKeys.COMMUNICATION_DISABLED_UNTIL;
-          const LXTQr5 = obj45(1127).t.LXTQr5;
-          const LXTQr52 = obj45(1127).t.LXTQr5;
-          const ULSdnE = obj45(1127).t.ULSdnE;
-          obj8[COMMUNICATION_DISABLED_UNTIL] = f130119;
+          const LXTQr5 = obj45(1126).t.LXTQr5;
+          const LXTQr52 = obj45(1126).t.LXTQr5;
+          const ULSdnE = obj45(1126).t.ULSdnE;
+          obj8[COMMUNICATION_DISABLED_UNTIL] = f131741;
           const BYPASSES_VERIFICATION = AuditLogChangeKeys.BYPASSES_VERIFICATION;
-          const NBPBui = obj45(1127).t.NBPBui;
-          const zATost = obj45(1127).t.zATost;
-          obj8[BYPASSES_VERIFICATION] = f130120;
+          const NBPBui = obj45(1126).t.NBPBui;
+          const zATost = obj45(1126).t.zATost;
+          obj8[BYPASSES_VERIFICATION] = f131742;
           obj8[AuditLogChangeKeys.AUTO_MODERATION_TRIGGERED_RULE_NAME] = () => obj45(dependencyMap[18]).t.YbouFH;
           const obj9 = {};
-          obj9[AuditLogChangeKeys.REASON] = f130108;
+          obj9[AuditLogChangeKeys.REASON] = f131730;
           const merged1 = Object.assign(obj9);
           return obj8;
         } else if (tmp.ROLE === targetType) {
           const obj10 = {};
           const NAME6 = AuditLogChangeKeys.NAME;
-          const QBmlaD = obj45(1127).t.QBmlaD;
-          Lfs4r_ = obj45(1127).t["Lfs4r+"];
-          obj10[NAME6] = f130117;
+          const QBmlaD = obj45(1126).t.QBmlaD;
+          Lfs4r_ = obj45(1126).t["Lfs4r+"];
+          obj10[NAME6] = f131739;
           const DESCRIPTION3 = AuditLogChangeKeys.DESCRIPTION;
-          let XeYKWJ = obj45(1127).t.XeYKWJ;
-          let PSfeIj = obj45(1127).t.PSfeIj;
-          obj10[DESCRIPTION3] = f130117;
+          let XeYKWJ = obj45(1126).t.XeYKWJ;
+          let PSfeIj = obj45(1126).t.PSfeIj;
+          obj10[DESCRIPTION3] = f131739;
           obj10[AuditLogChangeKeys.PERMISSIONS_GRANTED] = () => obj45(dependencyMap[18]).t["9i/DvE"];
           obj10[AuditLogChangeKeys.PERMISSIONS_DENIED] = () => obj45(dependencyMap[18]).t.pa1ZVh;
-          const obj11 = { "#000000": obj45(1127).t.TK6E1H };
+          const obj11 = { "#000000": obj45(1126).t.TK6E1H };
           const COLOR = AuditLogChangeKeys.COLOR;
-          obj10[COLOR] = f130122;
+          obj10[COLOR] = f131744;
           obj10[AuditLogChangeKeys.COLORS] = (newValue) => {
             let U44ttm;
             if (null == newValue.newValue.secondary_color) {
@@ -765,66 +773,66 @@ export const getChangeStrings = function getChangeStrings(targetType) {
             return U44ttm;
           };
           const HOIST = AuditLogChangeKeys.HOIST;
-          const gWfe24 = obj45(1127).t.gWfe24;
-          _tb8kN = obj45(1127).t["+tb8kN"];
-          obj10[HOIST] = f130120;
+          const gWfe24 = obj45(1126).t.gWfe24;
+          _tb8kN = obj45(1126).t["+tb8kN"];
+          obj10[HOIST] = f131742;
           const MENTIONABLE = AuditLogChangeKeys.MENTIONABLE;
-          const LL8VFF = obj45(1127).t.LL8VFF;
-          const Z7xzmC = obj45(1127).t.Z7xzmC;
-          obj10[MENTIONABLE] = f130120;
+          const LL8VFF = obj45(1126).t.LL8VFF;
+          const Z7xzmC = obj45(1126).t.Z7xzmC;
+          obj10[MENTIONABLE] = f131742;
           obj10[AuditLogChangeKeys.ICON_HASH] = () => obj45(dependencyMap[18]).t["iEE79/"];
           obj10[AuditLogChangeKeys.UNICODE_EMOJI] = () => obj45(dependencyMap[18]).t.KiLMM0;
           const obj12 = {};
-          obj12[AuditLogChangeKeys.REASON] = f130108;
+          obj12[AuditLogChangeKeys.REASON] = f131730;
           const merged2 = Object.assign(obj12);
           return obj10;
         } else if (tmp.ONBOARDING_PROMPT === targetType) {
           const obj13 = {};
           const obj14 = {};
-          obj14[AuditLogChangeKeys.REASON] = f130108;
+          obj14[AuditLogChangeKeys.REASON] = f131730;
           const merged3 = Object.assign(obj14);
           const TITLE = AuditLogChangeKeys.TITLE;
-          sNpuy_ = obj45(1127).t["sNpuy/"];
-          obj13[TITLE] = f130117;
+          sNpuy_ = obj45(1126).t["sNpuy/"];
+          obj13[TITLE] = f131739;
           const DESCRIPTION2 = AuditLogChangeKeys.DESCRIPTION;
-          const PP1q0x = obj45(1127).t.PP1q0x;
-          const z7pYLg = obj45(1127).t.z7pYLg;
-          obj13[DESCRIPTION2] = f130117;
+          const PP1q0x = obj45(1126).t.PP1q0x;
+          const z7pYLg = obj45(1126).t.z7pYLg;
+          obj13[DESCRIPTION2] = f131739;
           obj13[AuditLogChangeKeys.OPTIONS] = () => obj45(dependencyMap[18]).t["3G5C9+"];
           const SINGLE_SELECT = AuditLogChangeKeys.SINGLE_SELECT;
-          const v4WnR3 = obj45(1127).t.v4WnR3;
-          obj13[SINGLE_SELECT] = f130120;
+          const v4WnR3 = obj45(1126).t.v4WnR3;
+          obj13[SINGLE_SELECT] = f131742;
           const REQUIRED = AuditLogChangeKeys.REQUIRED;
-          const pwsXir = obj45(1127).t.pwsXir;
-          obj13[REQUIRED] = f130120;
+          const pwsXir = obj45(1126).t.pwsXir;
+          obj13[REQUIRED] = f131742;
           return obj13;
         } else if (tmp.GUILD_ONBOARDING === targetType) {
           const obj15 = {};
           const obj16 = {};
-          obj16[AuditLogChangeKeys.REASON] = f130108;
+          obj16[AuditLogChangeKeys.REASON] = f131730;
           const merged4 = Object.assign(obj16);
           obj15[AuditLogChangeKeys.DEFAULT_CHANNEL_IDS] = () => obj45(dependencyMap[18]).t["8M+D2s"];
           const ENABLE_DEFAULT_CHANNELS = AuditLogChangeKeys.ENABLE_DEFAULT_CHANNELS;
-          EYd_ls = obj45(1127).t["EYd/ls"];
-          obj15[ENABLE_DEFAULT_CHANNELS] = f130120;
+          EYd_ls = obj45(1126).t["EYd/ls"];
+          obj15[ENABLE_DEFAULT_CHANNELS] = f131742;
           const ENABLE_ONBOARDING_PROMPTS = AuditLogChangeKeys.ENABLE_ONBOARDING_PROMPTS;
-          const V3u8PV = obj45(1127).t.V3u8PV;
-          r66lc_ = obj45(1127).t["r66lc/"];
-          obj15[ENABLE_ONBOARDING_PROMPTS] = f130120;
+          const V3u8PV = obj45(1126).t.V3u8PV;
+          r66lc_ = obj45(1126).t["r66lc/"];
+          obj15[ENABLE_ONBOARDING_PROMPTS] = f131742;
           const ENABLED = AuditLogChangeKeys.ENABLED;
-          const SODVIs = obj45(1127).t.SODVIs;
-          const u8HY5U = obj45(1127).t.u8HY5U;
-          obj15[ENABLED] = f130120;
+          const SODVIs = obj45(1126).t.SODVIs;
+          const u8HY5U = obj45(1126).t.u8HY5U;
+          obj15[ENABLED] = f131742;
           const obj17 = {};
           const MODE = AuditLogChangeKeys.MODE;
-          obj17[GuildOnboardingMode.ONBOARDING_ADVANCED] = obj45(1127).t.JbzVsh;
-          obj17[GuildOnboardingMode.ONBOARDING_DEFAULT] = obj45(1127).t.aCgU0S;
-          obj15[MODE] = f130121;
+          obj17[GuildOnboardingMode.ONBOARDING_ADVANCED] = obj45(1126).t.JbzVsh;
+          obj17[GuildOnboardingMode.ONBOARDING_DEFAULT] = obj45(1126).t.aCgU0S;
+          obj15[MODE] = f131743;
           return obj15;
         } else if (tmp.HOME_SETTINGS === targetType) {
           const obj18 = {};
           const obj19 = {};
-          obj19[AuditLogChangeKeys.REASON] = f130108;
+          obj19[AuditLogChangeKeys.REASON] = f131730;
           const merged5 = Object.assign(obj19);
           obj18[AuditLogChangeKeys.WELCOME_MESSAGE] = () => obj45(dependencyMap[18]).t.dKQ1xd;
           obj18[AuditLogChangeKeys.NEW_MEMBER_ACTIONS] = () => obj45(dependencyMap[18]).t.jDUIno;
@@ -836,98 +844,98 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           obj20[AuditLogChangeKeys.CHANNEL_ID] = () => obj45(dependencyMap[18]).t.Q1vd5q;
           const MAX_USES = AuditLogChangeKeys.MAX_USES;
           const obj21 = { 0: null };
-          obj21[0] = obj45(1127).t.Yx8LNm;
-          obj20[MAX_USES] = f130122;
+          obj21[0] = obj45(1126).t.Yx8LNm;
+          obj20[MAX_USES] = f131744;
           const MAX_AGE = AuditLogChangeKeys.MAX_AGE;
           const obj22 = {};
-          const intl = obj45(1127).intl;
-          const stringResult = intl.string(obj45(1127).t.PqEzn8);
-          obj22[stringResult] = obj45(1127).t.uWrLvw;
-          Q_5kcO = obj45(1127).t["Q+5kcO"];
-          obj20[MAX_AGE] = f130122;
+          const intl = obj45(1126).intl;
+          const stringResult = intl.string(obj45(1126).t.PqEzn8);
+          obj22[stringResult] = obj45(1126).t.uWrLvw;
+          Q_5kcO = obj45(1126).t["Q+5kcO"];
+          obj20[MAX_AGE] = f131744;
           const TEMPORARY = AuditLogChangeKeys.TEMPORARY;
-          const MWp6H7 = obj45(1127).t.MWp6H7;
-          const omiqTH = obj45(1127).t.omiqTH;
-          obj20[TEMPORARY] = f130120;
+          const MWp6H7 = obj45(1126).t.MWp6H7;
+          const omiqTH = obj45(1126).t.omiqTH;
+          obj20[TEMPORARY] = f131742;
           const FLAGS = AuditLogChangeKeys.FLAGS;
           const obj23 = {};
-          obj23[obj45(7844).GuildInviteFlags.IS_GUEST_INVITE] = obj45(1127).t.XYZMbL;
-          obj20[FLAGS] = f130121;
+          obj23[obj45(8068).GuildInviteFlags.IS_GUEST_INVITE] = obj45(1126).t.XYZMbL;
+          obj20[FLAGS] = f131743;
           obj20[AuditLogChangeKeys.ROLE_IDS] = () => obj45(dependencyMap[18]).t.gb1Owj;
           const obj24 = {};
-          obj24[AuditLogChangeKeys.REASON] = f130108;
+          obj24[AuditLogChangeKeys.REASON] = f131730;
           const merged6 = Object.assign(obj24);
           return obj20;
         } else if (tmp.WEBHOOK === targetType) {
           const obj25 = {};
           const CHANNEL_ID2 = AuditLogChangeKeys.CHANNEL_ID;
-          const jhPprR = obj45(1127).t.jhPprR;
-          const ar4qYO = obj45(1127).t.ar4qYO;
-          obj25[CHANNEL_ID2] = f130117;
+          const jhPprR = obj45(1126).t.jhPprR;
+          const ar4qYO = obj45(1126).t.ar4qYO;
+          obj25[CHANNEL_ID2] = f131739;
           const NAME5 = AuditLogChangeKeys.NAME;
-          const ZVGrzU = obj45(1127).t.ZVGrzU;
-          const tywdZR = obj45(1127).t.tywdZR;
-          obj25[NAME5] = f130117;
+          const ZVGrzU = obj45(1126).t.ZVGrzU;
+          const tywdZR = obj45(1126).t.tywdZR;
+          obj25[NAME5] = f131739;
           obj25[AuditLogChangeKeys.AVATAR_HASH] = () => obj45(dependencyMap[18]).t.KB52Uj;
           obj25[AuditLogChangeKeys.REASON] = () => obj45(dependencyMap[18]).t["2IW3C5"];
           return obj25;
         } else if (tmp.EMOJI === targetType) {
           const obj26 = {};
           const NAME4 = AuditLogChangeKeys.NAME;
-          const ahU1o5 = obj45(1127).t.ahU1o5;
-          wxs_vZ = obj45(1127).t["wxs+vZ"];
-          obj26[NAME4] = f130117;
+          const ahU1o5 = obj45(1126).t.ahU1o5;
+          wxs_vZ = obj45(1126).t["wxs+vZ"];
+          obj26[NAME4] = f131739;
           const obj27 = {};
-          obj27[AuditLogChangeKeys.REASON] = f130108;
+          obj27[AuditLogChangeKeys.REASON] = f131730;
           const merged7 = Object.assign(obj27);
           return obj26;
         } else if (tmp.STICKER === targetType) {
           const obj28 = {};
           const NAME3 = AuditLogChangeKeys.NAME;
-          const cdl0Yo = obj45(1127).t.cdl0Yo;
-          const o3W2ly = obj45(1127).t.o3W2ly;
-          obj28[NAME3] = f130117;
+          const cdl0Yo = obj45(1126).t.cdl0Yo;
+          const o3W2ly = obj45(1126).t.o3W2ly;
+          obj28[NAME3] = f131739;
           const TAGS = AuditLogChangeKeys.TAGS;
-          zwL_S2 = obj45(1127).t["zwL+S2"];
-          VYfKA_ = obj45(1127).t["VYfKA+"];
-          obj28[TAGS] = f130117;
+          zwL_S2 = obj45(1126).t["zwL+S2"];
+          VYfKA_ = obj45(1126).t["VYfKA+"];
+          obj28[TAGS] = f131739;
           const DESCRIPTION = AuditLogChangeKeys.DESCRIPTION;
-          XeYKWJ = obj45(1127).t.XeYKWJ;
-          PSfeIj = obj45(1127).t.PSfeIj;
-          obj28[DESCRIPTION] = f130117;
+          XeYKWJ = obj45(1126).t.XeYKWJ;
+          PSfeIj = obj45(1126).t.PSfeIj;
+          obj28[DESCRIPTION] = f131739;
           const obj29 = {};
-          obj29[AuditLogChangeKeys.REASON] = f130108;
+          obj29[AuditLogChangeKeys.REASON] = f131730;
           const merged8 = Object.assign(obj29);
           return obj28;
         } else if (tmp.INTEGRATION === targetType) {
           const obj30 = {};
           const ENABLE_EMOTICONS = AuditLogChangeKeys.ENABLE_EMOTICONS;
-          const FI0m5x = obj45(1127).t.FI0m5x;
-          const olpKC6 = obj45(1127).t.olpKC6;
-          obj30[ENABLE_EMOTICONS] = f130120;
+          const FI0m5x = obj45(1126).t.FI0m5x;
+          const olpKC6 = obj45(1126).t.olpKC6;
+          obj30[ENABLE_EMOTICONS] = f131742;
           const obj31 = { 0: null, 1: null };
           const EXPIRE_BEHAVIOR = AuditLogChangeKeys.EXPIRE_BEHAVIOR;
-          obj31[0] = obj45(1127).t["1Bb1+u"];
-          obj31[1] = obj45(1127).t.vjlW6m;
-          obj30[EXPIRE_BEHAVIOR] = f130121;
+          obj31[0] = obj45(1126).t["1Bb1+u"];
+          obj31[1] = obj45(1126).t.vjlW6m;
+          obj30[EXPIRE_BEHAVIOR] = f131743;
           obj30[AuditLogChangeKeys.EXPIRE_GRACE_PERIOD] = () => obj45(dependencyMap[18]).t.iovXMa;
           const obj32 = {};
-          obj32[AuditLogChangeKeys.REASON] = f130108;
+          obj32[AuditLogChangeKeys.REASON] = f131730;
           const merged9 = Object.assign(obj32);
           return obj30;
         } else if (tmp.STAGE_INSTANCE === targetType) {
           const obj33 = {};
           const TOPIC = AuditLogChangeKeys.TOPIC;
-          m_veAn = obj45(1127).t["m+veAn"];
-          let esQcxn = obj45(1127).t.esQcxn;
-          obj33[TOPIC] = f130117;
+          m_veAn = obj45(1126).t["m+veAn"];
+          let esQcxn = obj45(1126).t.esQcxn;
+          obj33[TOPIC] = f131739;
           const obj34 = {};
           const PRIVACY_LEVEL2 = AuditLogChangeKeys.PRIVACY_LEVEL;
-          obj34[constants13.GUILD_ONLY] = obj45(1127).t["EC+CDt"];
-          obj34[constants13.PUBLIC] = obj45(1127).t["pK/WG0"];
-          obj33[PRIVACY_LEVEL2] = f130121;
+          obj34[constants13.GUILD_ONLY] = obj45(1126).t["EC+CDt"];
+          obj34[constants13.PUBLIC] = obj45(1126).t["pK/WG0"];
+          obj33[PRIVACY_LEVEL2] = f131743;
           const obj35 = {};
-          obj35[AuditLogChangeKeys.REASON] = f130108;
+          obj35[AuditLogChangeKeys.REASON] = f131730;
           const merged10 = Object.assign(obj35);
           return obj33;
         } else if (tmp.GUILD_SCHEDULED_EVENT === targetType) {
@@ -936,49 +944,49 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           obj36[AuditLogChangeKeys.DESCRIPTION] = () => obj45(dependencyMap[18]).t.Vm1ofw;
           const obj37 = {};
           const PRIVACY_LEVEL = AuditLogChangeKeys.PRIVACY_LEVEL;
-          obj37[constants13.GUILD_ONLY] = obj45(1127).t["EC+CDt"];
-          obj37[constants13.PUBLIC] = obj45(1127).t["pK/WG0"];
-          obj36[PRIVACY_LEVEL] = f130121;
+          obj37[constants13.GUILD_ONLY] = obj45(1126).t["EC+CDt"];
+          obj37[constants13.PUBLIC] = obj45(1126).t["pK/WG0"];
+          obj36[PRIVACY_LEVEL] = f131743;
           const obj38 = {};
           const STATUS = AuditLogChangeKeys.STATUS;
-          obj38[constants12.SCHEDULED] = obj45(1127).t.hXKDgq;
-          obj38[constants12.ACTIVE] = obj45(1127).t.lRX1nz;
-          obj38[constants12.COMPLETED] = obj45(1127).t["/eFIhq"];
-          obj38[constants12.CANCELED] = obj45(1127).t.NWIYhj;
-          obj36[STATUS] = f130121;
+          obj38[constants12.SCHEDULED] = obj45(1126).t.hXKDgq;
+          obj38[constants12.ACTIVE] = obj45(1126).t.lRX1nz;
+          obj38[constants12.COMPLETED] = obj45(1126).t["/eFIhq"];
+          obj38[constants12.CANCELED] = obj45(1126).t.NWIYhj;
+          obj36[STATUS] = f131743;
           const obj39 = {};
           const ENTITY_TYPE = AuditLogChangeKeys.ENTITY_TYPE;
-          obj39[constants11.NONE] = obj45(1127).t["6sO3Ss"];
-          obj39[constants11.STAGE_INSTANCE] = obj45(1127).t["Wo+s1y"];
-          obj39[constants11.VOICE] = obj45(1127).t.XCVaIL;
-          obj39[constants11.EXTERNAL] = obj45(1127).t.IvhAj2;
-          obj36[ENTITY_TYPE] = f130121;
+          obj39[constants11.NONE] = obj45(1126).t["6sO3Ss"];
+          obj39[constants11.STAGE_INSTANCE] = obj45(1126).t["Wo+s1y"];
+          obj39[constants11.VOICE] = obj45(1126).t.XCVaIL;
+          obj39[constants11.EXTERNAL] = obj45(1126).t.IvhAj2;
+          obj36[ENTITY_TYPE] = f131743;
           const CHANNEL_ID = AuditLogChangeKeys.CHANNEL_ID;
-          const yJBIcX = obj45(1127).t.yJBIcX;
-          _PqSsi = obj45(1127).t["+PqSsi"];
-          obj36[CHANNEL_ID] = f130118;
+          const yJBIcX = obj45(1126).t.yJBIcX;
+          _PqSsi = obj45(1126).t["+PqSsi"];
+          obj36[CHANNEL_ID] = f131740;
           const LOCATION = AuditLogChangeKeys.LOCATION;
-          const GaMBHy = obj45(1127).t.GaMBHy;
-          const PsICk0 = obj45(1127).t.PsICk0;
-          obj36[LOCATION] = f130118;
+          const GaMBHy = obj45(1126).t.GaMBHy;
+          const PsICk0 = obj45(1126).t.PsICk0;
+          obj36[LOCATION] = f131740;
           const IMAGE_HASH = AuditLogChangeKeys.IMAGE_HASH;
-          const S3vcRK = obj45(1127).t.S3vcRK;
-          const KQu47I = obj45(1127).t.KQu47I;
-          obj36[IMAGE_HASH] = f130118;
+          const S3vcRK = obj45(1126).t.S3vcRK;
+          const KQu47I = obj45(1126).t.KQu47I;
+          obj36[IMAGE_HASH] = f131740;
           const obj40 = {};
-          obj40[AuditLogChangeKeys.REASON] = f130108;
+          obj40[AuditLogChangeKeys.REASON] = f131730;
           const merged11 = Object.assign(obj40);
           return obj36;
         } else if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION === targetType) {
           const obj41 = {};
           const SCHEDULED_START_TIME = AuditLogChangeKeys.SCHEDULED_START_TIME;
-          const zMIYVg = obj45(1127).t.zMIYVg;
-          const fzF8Gd = obj45(1127).t.fzF8Gd;
-          obj41[SCHEDULED_START_TIME] = f130118;
+          const zMIYVg = obj45(1126).t.zMIYVg;
+          const fzF8Gd = obj45(1126).t.fzF8Gd;
+          obj41[SCHEDULED_START_TIME] = f131740;
           const SCHEDULED_END_TIME = AuditLogChangeKeys.SCHEDULED_END_TIME;
-          const vONSQA = obj45(1127).t.vONSQA;
-          const IlIti3 = obj45(1127).t.IlIti3;
-          obj41[SCHEDULED_END_TIME] = f130118;
+          const vONSQA = obj45(1126).t.vONSQA;
+          const IlIti3 = obj45(1126).t.IlIti3;
+          obj41[SCHEDULED_END_TIME] = f131740;
           obj41[AuditLogChangeKeys.IS_CANCELED] = (oldValue) => {
             if (null != oldValue.oldValue) {
               if (!oldValue.oldValue) {
@@ -994,45 +1002,45 @@ export const getChangeStrings = function getChangeStrings(targetType) {
             }
           };
           const obj42 = {};
-          obj42[AuditLogChangeKeys.REASON] = f130108;
+          obj42[AuditLogChangeKeys.REASON] = f131730;
           const merged12 = Object.assign(obj42);
           return obj41;
         } else if (tmp.THREAD === targetType) {
           const obj43 = {};
           const NAME2 = AuditLogChangeKeys.NAME;
-          const tUKRzX = obj45(1127).t.tUKRzX;
-          const kPCHON = obj45(1127).t.kPCHON;
-          obj43[NAME2] = f130117;
+          const tUKRzX = obj45(1126).t.tUKRzX;
+          const kPCHON = obj45(1126).t.kPCHON;
+          obj43[NAME2] = f131739;
           const ARCHIVED = AuditLogChangeKeys.ARCHIVED;
-          const jDi9FK = obj45(1127).t.jDi9FK;
-          const F6dvbT = obj45(1127).t.F6dvbT;
-          obj43[ARCHIVED] = f130120;
+          const jDi9FK = obj45(1126).t.jDi9FK;
+          const F6dvbT = obj45(1126).t.F6dvbT;
+          obj43[ARCHIVED] = f131742;
           const LOCKED = AuditLogChangeKeys.LOCKED;
-          const JSy1QW = obj45(1127).t.JSy1QW;
-          const C7Jgo8 = obj45(1127).t.C7Jgo8;
-          obj43[LOCKED] = f130120;
+          const JSy1QW = obj45(1126).t.JSy1QW;
+          const C7Jgo8 = obj45(1126).t.C7Jgo8;
+          obj43[LOCKED] = f131742;
           const INVITABLE = AuditLogChangeKeys.INVITABLE;
-          const dxNUs9 = obj45(1127).t.dxNUs9;
-          const biJvYG = obj45(1127).t.biJvYG;
-          obj43[INVITABLE] = f130120;
+          const dxNUs9 = obj45(1126).t.dxNUs9;
+          const biJvYG = obj45(1126).t.biJvYG;
+          obj43[INVITABLE] = f131742;
           const AUTO_ARCHIVE_DURATION = AuditLogChangeKeys.AUTO_ARCHIVE_DURATION;
-          const LuaG3y = obj45(1127).t.LuaG3y;
-          obj43[AUTO_ARCHIVE_DURATION] = f130117;
+          const LuaG3y = obj45(1126).t.LuaG3y;
+          obj43[AUTO_ARCHIVE_DURATION] = f131739;
           const RATE_LIMIT_PER_USER = AuditLogChangeKeys.RATE_LIMIT_PER_USER;
-          let j4CCJR = obj45(1127).t.j4CCJR;
-          obj43[RATE_LIMIT_PER_USER] = f130117;
+          let j4CCJR = obj45(1126).t.j4CCJR;
+          obj43[RATE_LIMIT_PER_USER] = f131739;
           obj43[AuditLogChangeKeys.FLAGS] = () => obj45(dependencyMap[18]).t.sSAQtj;
           obj43[AuditLogChangeKeys.AVAILABLE_TAG_ADD] = () => obj45(dependencyMap[18]).t.H86QQU;
           obj43[AuditLogChangeKeys.AVAILABLE_TAG_DELETE] = () => obj45(dependencyMap[18]).t["8QOseg"];
           const obj44 = {};
-          obj44[AuditLogChangeKeys.REASON] = f130108;
+          obj44[AuditLogChangeKeys.REASON] = f131730;
           const merged13 = Object.assign(obj44);
           return obj43;
         } else if (tmp.APPLICATION_COMMAND === targetType) {
           const changes = targetType.changes;
           obj45 = {};
           const obj46 = {};
-          obj46[AuditLogChangeKeys.REASON] = f130108;
+          obj46[AuditLogChangeKeys.REASON] = f131730;
           const merged14 = Object.assign(obj46);
           if (changes != null) {
             const item = changes.forEach((newValue) => {
@@ -1077,36 +1085,36 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           obj47[AuditLogChangeKeys.AUTO_MODERATION_ADD_ALLOW_LIST] = () => obj45(dependencyMap[18]).t["FvvR+K"];
           obj47[AuditLogChangeKeys.AUTO_MODERATION_REMOVE_ALLOW_LIST] = () => obj45(dependencyMap[18]).t.p5nSvy;
           const obj48 = {};
-          obj48[AuditLogChangeKeys.REASON] = f130108;
+          obj48[AuditLogChangeKeys.REASON] = f131730;
           const merged15 = Object.assign(obj48);
           return obj47;
         } else if (tmp.GUILD_SOUNDBOARD === targetType) {
           const obj49 = {};
           const NAME = AuditLogChangeKeys.NAME;
-          const VOtRSO = obj45(1127).t.VOtRSO;
-          const OK7B8E = obj45(1127).t.OK7B8E;
-          obj49[NAME] = f130117;
+          const VOtRSO = obj45(1126).t.VOtRSO;
+          const OK7B8E = obj45(1126).t.OK7B8E;
+          obj49[NAME] = f131739;
           const VOLUME = AuditLogChangeKeys.VOLUME;
-          const igrDB9 = obj45(1127).t.igrDB9;
-          const L5lDFJ = obj45(1127).t.L5lDFJ;
-          obj49[VOLUME] = f130117;
+          const igrDB9 = obj45(1126).t.igrDB9;
+          const L5lDFJ = obj45(1126).t.L5lDFJ;
+          obj49[VOLUME] = f131739;
           const EMOJI_NAME = AuditLogChangeKeys.EMOJI_NAME;
-          const IIanaY = obj45(1127).t.IIanaY;
-          z4w4U_ = obj45(1127).t["z4w4U/"];
-          const V8TfyU = obj45(1127).t.V8TfyU;
-          obj49[EMOJI_NAME] = f130119;
+          const IIanaY = obj45(1126).t.IIanaY;
+          z4w4U_ = obj45(1126).t["z4w4U/"];
+          const V8TfyU = obj45(1126).t.V8TfyU;
+          obj49[EMOJI_NAME] = f131741;
           const EMOJI_ID = AuditLogChangeKeys.EMOJI_ID;
-          const ainxMB = obj45(1127).t.ainxMB;
-          obj49[EMOJI_ID] = f130119;
+          const ainxMB = obj45(1126).t.ainxMB;
+          obj49[EMOJI_ID] = f131741;
           const obj50 = {};
-          obj50[AuditLogChangeKeys.REASON] = f130108;
+          obj50[AuditLogChangeKeys.REASON] = f131730;
           const merged16 = Object.assign(obj50);
           return obj49;
         } else if (tmp.VOICE_CHANNEL_STATUS === targetType) {
           const obj51 = {};
           obj51[AuditLogChangeKeys.STATUS] = () => obj45(dependencyMap[18]).t.HyCSnI;
           const obj52 = {};
-          obj52[AuditLogChangeKeys.REASON] = f130108;
+          obj52[AuditLogChangeKeys.REASON] = f131730;
           const merged17 = Object.assign(obj52);
           return obj51;
         } else if (tmp.GUILD_MEMBER_VERIFICATION === targetType) {
@@ -1130,7 +1138,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
             return WxyOtj;
           };
           const obj54 = {};
-          obj54[AuditLogChangeKeys.REASON] = f130108;
+          obj54[AuditLogChangeKeys.REASON] = f131730;
           const merged18 = Object.assign(obj54);
           return obj53;
         } else if (tmp.GUILD_PROFILE === targetType) {
@@ -1142,81 +1150,81 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           obj55[AuditLogChangeKeys.GAME_APPLICATION_IDS] = () => obj45(dependencyMap[18]).t["8BOT3x"];
           obj55[AuditLogChangeKeys.VISIBILITY] = () => obj45(dependencyMap[18]).t.bCl1Ep;
           const SERVER_TAG = AuditLogChangeKeys.SERVER_TAG;
-          const ix1dnX = obj45(1127).t.ix1dnX;
-          obj55[SERVER_TAG] = f130118;
+          const ix1dnX = obj45(1126).t.ix1dnX;
+          obj55[SERVER_TAG] = f131740;
           return obj55;
         } else {
           obj = {};
-          obj[AuditLogChangeKeys.REASON] = f130108;
+          obj[AuditLogChangeKeys.REASON] = f131730;
           return obj;
         }
       }
     }
     const obj56 = {};
     const NAME7 = AuditLogChangeKeys.NAME;
-    const f8Rh0U = obj45(1127).t.f8Rh0U;
-    const ebD4Qp = obj45(1127).t.ebD4Qp;
-    obj56[NAME7] = f130117;
+    const f8Rh0U = obj45(1126).t.f8Rh0U;
+    const ebD4Qp = obj45(1126).t.ebD4Qp;
+    obj56[NAME7] = f131739;
     const POSITION = AuditLogChangeKeys.POSITION;
-    const isS8te = obj45(1127).t.isS8te;
-    const t5uBis = obj45(1127).t.t5uBis;
-    obj56[POSITION] = f130117;
+    const isS8te = obj45(1126).t.isS8te;
+    const t5uBis = obj45(1126).t.t5uBis;
+    obj56[POSITION] = f131739;
     const TOPIC2 = AuditLogChangeKeys.TOPIC;
-    esQcxn = obj45(1127).t.esQcxn;
-    m_veAn = obj45(1127).t["m+veAn"];
-    ws_1FA = obj45(1127).t["ws/1FA"];
-    obj56[TOPIC2] = f130119;
+    esQcxn = obj45(1126).t.esQcxn;
+    m_veAn = obj45(1126).t["m+veAn"];
+    ws_1FA = obj45(1126).t["ws/1FA"];
+    obj56[TOPIC2] = f131741;
     const BITRATE = AuditLogChangeKeys.BITRATE;
-    const fw81ak = obj45(1127).t.fw81ak;
-    const MFNlgZ = obj45(1127).t.MFNlgZ;
-    obj56[BITRATE] = f130117;
+    const fw81ak = obj45(1126).t.fw81ak;
+    const MFNlgZ = obj45(1126).t.MFNlgZ;
+    obj56[BITRATE] = f131739;
     const RTC_REGION_OVERRIDE = AuditLogChangeKeys.RTC_REGION_OVERRIDE;
-    const v6kajxx = obj45(1127).t["6kajxx"];
-    const eGOlmU = obj45(1127).t.eGOlmU;
-    obj56[RTC_REGION_OVERRIDE] = f130119;
+    const v6kajxx = obj45(1126).t["6kajxx"];
+    const eGOlmU = obj45(1126).t.eGOlmU;
+    obj56[RTC_REGION_OVERRIDE] = f131741;
     const USER_LIMIT = AuditLogChangeKeys.USER_LIMIT;
-    const wk5t7p = obj45(1127).t.wk5t7p;
-    const XgjCEh = obj45(1127).t.XgjCEh;
-    obj56[USER_LIMIT] = f130117;
+    const wk5t7p = obj45(1126).t.wk5t7p;
+    const XgjCEh = obj45(1126).t.XgjCEh;
+    obj56[USER_LIMIT] = f131739;
     const RATE_LIMIT_PER_USER2 = AuditLogChangeKeys.RATE_LIMIT_PER_USER;
-    j4CCJR = obj45(1127).t.j4CCJR;
-    obj56[RATE_LIMIT_PER_USER2] = f130117;
+    j4CCJR = obj45(1126).t.j4CCJR;
+    obj56[RATE_LIMIT_PER_USER2] = f131739;
     const APPLICATION_ID = AuditLogChangeKeys.APPLICATION_ID;
-    const fnhin8 = obj45(1127).t.fnhin8;
-    const mcNs5B = obj45(1127).t.mcNs5B;
-    obj56[APPLICATION_ID] = f130117;
+    const fnhin8 = obj45(1126).t.fnhin8;
+    const mcNs5B = obj45(1126).t.mcNs5B;
+    obj56[APPLICATION_ID] = f131739;
     obj56[AuditLogChangeKeys.PERMISSIONS_RESET] = () => obj45(dependencyMap[18]).t["+vSBFY"];
     obj56[AuditLogChangeKeys.PERMISSIONS_GRANTED] = () => obj45(dependencyMap[18]).t.EKLJv8;
     obj56[AuditLogChangeKeys.PERMISSIONS_DENIED] = () => obj45(dependencyMap[18]).t.U3rO5X;
     obj56[AuditLogChangeKeys.REASON] = () => obj45(dependencyMap[18]).t["2IW3C5"];
     const NSFW = AuditLogChangeKeys.NSFW;
-    const H8Ri2Y = obj45(1127).t.H8Ri2Y;
-    const WW6cJw = obj45(1127).t.WW6cJw;
-    obj56[NSFW] = f130120;
+    const H8Ri2Y = obj45(1126).t.H8Ri2Y;
+    const WW6cJw = obj45(1126).t.WW6cJw;
+    obj56[NSFW] = f131742;
     const TYPE = AuditLogChangeKeys.TYPE;
-    const Vn5zn2 = obj45(1127).t.Vn5zn2;
-    const aq4uWI = obj45(1127).t.aq4uWI;
-    obj56[TYPE] = f130117;
+    const Vn5zn2 = obj45(1126).t.Vn5zn2;
+    const aq4uWI = obj45(1126).t.aq4uWI;
+    obj56[TYPE] = f131739;
     const VIDEO_QUALITY_MODE = AuditLogChangeKeys.VIDEO_QUALITY_MODE;
-    const e68fAU = obj45(1127).t.e68fAU;
-    const djbES0 = obj45(1127).t.djbES0;
-    obj56[VIDEO_QUALITY_MODE] = f130117;
+    const e68fAU = obj45(1126).t.e68fAU;
+    const djbES0 = obj45(1126).t.djbES0;
+    obj56[VIDEO_QUALITY_MODE] = f131739;
     const DEFAULT_AUTO_ARCHIVE_DURATION = AuditLogChangeKeys.DEFAULT_AUTO_ARCHIVE_DURATION;
-    const nYz2mg = obj45(1127).t.nYz2mg;
-    const oczvRI = obj45(1127).t.oczvRI;
-    obj56[DEFAULT_AUTO_ARCHIVE_DURATION] = f130117;
+    const nYz2mg = obj45(1126).t.nYz2mg;
+    const oczvRI = obj45(1126).t.oczvRI;
+    obj56[DEFAULT_AUTO_ARCHIVE_DURATION] = f131739;
     const DEFAULT_THREAD_RATE_LIMIT_PER_USER = AuditLogChangeKeys.DEFAULT_THREAD_RATE_LIMIT_PER_USER;
-    const tOJ8h7 = obj45(1127).t.tOJ8h7;
-    const WaSgzk = obj45(1127).t.WaSgzk;
-    lj_A4u = obj45(1127).t["lj+A4u"];
-    obj56[DEFAULT_THREAD_RATE_LIMIT_PER_USER] = f130119;
+    const tOJ8h7 = obj45(1126).t.tOJ8h7;
+    const WaSgzk = obj45(1126).t.WaSgzk;
+    lj_A4u = obj45(1126).t["lj+A4u"];
+    obj56[DEFAULT_THREAD_RATE_LIMIT_PER_USER] = f131741;
     obj56[AuditLogChangeKeys.FLAGS] = () => obj45(dependencyMap[18]).t.ImCQko;
     obj56[AuditLogChangeKeys.AVAILABLE_TAG_ADD] = () => obj45(dependencyMap[18]).t.H86QQU;
     obj56[AuditLogChangeKeys.AVAILABLE_TAG_EDIT] = () => obj45(dependencyMap[18]).t.YtUzls;
     obj56[AuditLogChangeKeys.AVAILABLE_TAG_DELETE] = () => obj45(dependencyMap[18]).t["8QOseg"];
     const LINKED_LOBBY = AuditLogChangeKeys.LINKED_LOBBY;
-    __3TkD = obj45(1127).t["+/3TkD"];
-    obj56[LINKED_LOBBY] = f130118;
+    __3TkD = obj45(1126).t["+/3TkD"];
+    obj56[LINKED_LOBBY] = f131740;
     return obj56;
   }
 };
@@ -1271,8 +1279,8 @@ export const getSimpleAuditLogTitleFromChange = function getSimpleAuditLogTitleF
     found1 = changes.find((key) => key.key === closure_0);
   }
   if (null != found1) {
-    const intl = intl69.intl;
-    stringResult = intl.string(intl69.t.z3wbj8);
+    const intl = intl71.intl;
+    stringResult = intl.string(intl71.t.z3wbj8);
   } else {
     stringResult = undefined;
     if (found != null) {
@@ -1338,7 +1346,7 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
           if (timeAndUnit.unit in obj) {
             let time;
             ({ unit, unit: unit2 } = timeAndUnit);
-            if (unit2 === tmp23(4866).TimeUnits.SECONDS) {
+            if (unit2 === tmp23(4919).TimeUnits.SECONDS) {
               const _Math2 = Math;
               time = Math.round(diff / 1000);
             } else {
@@ -1355,8 +1363,8 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
         oldValue = found.oldValue;
       }
       if (null != oldValue) {
-        const intl4 = intl69.intl;
-        return intl4.string(intl69.t.MA1ltr);
+        const intl4 = intl71.intl;
+        return intl4.string(intl71.t.MA1ltr);
       }
     }
     return null;
@@ -1364,19 +1372,19 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
     let stringResult;
     if (found1.length > 0) {
       if (found2.length > 0) {
-        const intl3 = intl69.intl;
-        stringResult = intl3.string(intl69.t.RdMMew);
+        const intl3 = intl71.intl;
+        stringResult = intl3.string(intl71.t.RdMMew);
       }
       return stringResult;
     }
     if (found1.length > 0) {
-      const intl2 = intl69.intl;
-      stringResult = intl2.string(intl69.t["4GQqs8"]);
+      const intl2 = intl71.intl;
+      stringResult = intl2.string(intl71.t["4GQqs8"]);
     } else {
       stringResult = null;
       if (found2.length > 0) {
-        const intl = intl69.intl;
-        stringResult = intl.string(intl69.t["8mQ6x0"]);
+        const intl = intl71.intl;
+        stringResult = intl.string(intl71.t["8mQ6x0"]);
       }
     }
   }
@@ -1428,22 +1436,22 @@ export const getSimpleAuditLogChangeDetails = function getSimpleAuditLogChangeDe
   }
   if (found.length > 0) {
     if (found1.length > 0) {
-      const intl3 = intl69.intl;
+      const intl3 = intl71.intl;
       obj = { roleNamesAdded: joined, roleNamesRemoved: joined1 };
-      formatToPlainStringResult = intl3.formatToPlainString(intl69.t.tZw1EW, obj);
+      formatToPlainStringResult = intl3.formatToPlainString(intl71.t.tZw1EW, obj);
     }
     return formatToPlainStringResult;
   }
   if (found.length > 0) {
-    const intl2 = intl69.intl;
+    const intl2 = intl71.intl;
     const obj2 = { roleNames: joined };
-    formatToPlainStringResult = intl2.formatToPlainString(intl69.t["/mTqt5"], obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(intl71.t["/mTqt5"], obj2);
   } else {
     formatToPlainStringResult = null;
     if (found1.length > 0) {
-      const intl = intl69.intl;
+      const intl = intl71.intl;
       const obj3 = { roleNames: joined1 };
-      formatToPlainStringResult = intl.formatToPlainString(intl69.t.Wk4pAJ, obj3);
+      formatToPlainStringResult = intl.formatToPlainString(intl71.t.Wk4pAJ, obj3);
     }
   }
 };
@@ -1451,7 +1459,7 @@ export const getChangeTitle = function getChangeTitle(log) {
   const action = log.action;
   const tmp = constants;
   if (constants.GUILD_UPDATE === action) {
-    return intl69.t.LjZO31;
+    return intl71.t.LjZO31;
   } else if (tmp.CHANNEL_CREATE === action) {
     let found = null;
     if (null != log.changes) {
@@ -1467,116 +1475,120 @@ export const getChangeTitle = function getChangeTitle(log) {
     } else {
       const newValue3 = found.newValue;
       if (constants6.GUILD_STAGE_VOICE === newValue3) {
-        return intl69.t["OKp4+o"];
+        return intl71.t["OKp4+o"];
       } else if (constants6.GUILD_VOICE === newValue3) {
-        return intl69.t.NPOy4G;
+        return intl71.t.NPOy4G;
       } else if (constants6.GUILD_CATEGORY === newValue3) {
-        return intl69.t.T3KIjz;
+        return intl71.t.T3KIjz;
       } else if (constants6.GUILD_FORUM === newValue3) {
-        return intl69.t.VvNgHX;
+        return intl71.t.VvNgHX;
       } else if (constants6.GUILD_MEDIA === newValue3) {
-        return intl69.t["4NWSxa"];
+        return intl71.t["4NWSxa"];
       } else if (constants6.GUILD_ANNOUNCEMENT === newValue3) {
-        return intl69.t.eYP6UV;
+        return intl71.t.eYP6UV;
       } else {
-        return intl69.t.wrYNG2;
+        return intl71.t.wrYNG2;
       }
     }
   } else if (tmp.CHANNEL_UPDATE === action) {
-    return intl69.t.nTYk6B;
+    return intl71.t.nTYk6B;
   } else if (tmp.CHANNEL_DELETE === action) {
-    return intl69.t.ynfvkm;
+    return intl71.t.ynfvkm;
   } else if (tmp.CHANNEL_OVERWRITE_CREATE === action) {
-    return intl69.t.l5Cu1a;
+    return intl71.t.l5Cu1a;
   } else if (tmp.CHANNEL_OVERWRITE_UPDATE === action) {
-    return intl69.t.uhtbNU;
+    return intl71.t.uhtbNU;
   } else if (tmp.CHANNEL_OVERWRITE_DELETE === action) {
-    return intl69.t["HASt/3"];
+    return intl71.t["HASt/3"];
+  } else if (tmp.CHANNEL_POSITION_UPDATE === action) {
+    return intl71.t.d3aX5b;
   } else if (tmp.MEMBER_KICK === action) {
-    return intl69.t.B5hDZX;
+    return intl71.t.B5hDZX;
   } else if (tmp.MEMBER_PRUNE === action) {
-    return intl69.t.qKOZTP;
+    return intl71.t.qKOZTP;
   } else if (tmp.MEMBER_BAN_ADD === action) {
-    return intl69.t["XklUm/"];
+    return intl71.t["XklUm/"];
   } else if (tmp.MEMBER_BAN_REMOVE === action) {
-    return intl69.t.o3Y6HD;
+    return intl71.t.o3Y6HD;
   } else if (tmp.MEMBER_UPDATE === action) {
-    return intl69.t.pznhLN;
+    return intl71.t.pznhLN;
   } else if (tmp.MEMBER_ROLE_UPDATE === action) {
-    return intl69.t.Vngfia;
+    return intl71.t.Vngfia;
   } else if (tmp.MEMBER_MOVE === action) {
-    return intl69.t.Yt6NkU;
+    return intl71.t.Yt6NkU;
   } else if (tmp.MEMBER_DISCONNECT === action) {
-    return intl69.t.K4eCZw;
+    return intl71.t.K4eCZw;
   } else if (tmp.BOT_ADD === action) {
-    return intl69.t.fWvX0G;
+    return intl71.t.fWvX0G;
   } else if (tmp.ROLE_CREATE === action) {
-    return intl69.t.UTLTx6;
+    return intl71.t.UTLTx6;
   } else if (tmp.ROLE_UPDATE === action) {
-    return intl69.t.NRbN18;
+    return intl71.t.NRbN18;
   } else if (tmp.ROLE_DELETE === action) {
-    return intl69.t["4s63tb"];
+    return intl71.t["4s63tb"];
+  } else if (tmp.ROLE_POSITION_UPDATE === action) {
+    return intl71.t.jZeaoW;
   } else if (tmp.INVITE_CREATE === action) {
-    return intl69.t.YHOXWy;
+    return intl71.t.YHOXWy;
   } else if (tmp.INVITE_UPDATE === action) {
-    return intl69.t.ja3kGS;
+    return intl71.t.ja3kGS;
   } else if (tmp.INVITE_DELETE === action) {
-    return intl69.t["3n/iWk"];
+    return intl71.t["3n/iWk"];
   } else if (tmp.WEBHOOK_CREATE === action) {
-    return intl69.t.MhYhil;
+    return intl71.t.MhYhil;
   } else if (tmp.WEBHOOK_UPDATE === action) {
-    return intl69.t["6GTlWB"];
+    return intl71.t["6GTlWB"];
   } else if (tmp.WEBHOOK_DELETE === action) {
-    return intl69.t.in0VjZ;
+    return intl71.t.in0VjZ;
   } else if (tmp.EMOJI_CREATE === action) {
-    return intl69.t["7vekRO"];
+    return intl71.t["7vekRO"];
   } else if (tmp.EMOJI_UPDATE === action) {
-    return intl69.t.IsCKfh;
+    return intl71.t.IsCKfh;
   } else if (tmp.EMOJI_DELETE === action) {
-    return intl69.t.JnUaVG;
+    return intl71.t.JnUaVG;
   } else if (tmp.STICKER_CREATE === action) {
-    return intl69.t.DRZifq;
+    return intl71.t.DRZifq;
   } else if (tmp.STICKER_UPDATE === action) {
-    return intl69.t.bhujGc;
+    return intl71.t.bhujGc;
   } else if (tmp.STICKER_DELETE === action) {
-    return intl69.t.rGEP9U;
+    return intl71.t.rGEP9U;
   } else if (tmp.MESSAGE_DELETE === action) {
-    return intl69.t["HPkD+M"];
+    return intl71.t["HPkD+M"];
   } else if (tmp.MESSAGE_BULK_DELETE === action) {
-    return intl69.t["3RIvLE"];
+    return intl71.t["3RIvLE"];
   } else if (tmp.MESSAGE_PIN === action) {
-    return intl69.t.Yna7E7;
+    return intl71.t.Yna7E7;
   } else if (tmp.MESSAGE_UNPIN === action) {
-    return intl69.t.NCxXUW;
+    return intl71.t.NCxXUW;
   } else if (tmp.INTEGRATION_CREATE === action) {
-    return intl69.t.HYvCb3;
+    return intl71.t.HYvCb3;
   } else if (tmp.INTEGRATION_UPDATE === action) {
-    return intl69.t.ibCCOS;
+    return intl71.t.ibCCOS;
   } else if (tmp.INTEGRATION_DELETE === action) {
-    return intl69.t["8zScWY"];
+    return intl71.t["8zScWY"];
   } else if (tmp.STAGE_INSTANCE_CREATE === action) {
-    return intl69.t["n7x/DF"];
+    return intl71.t["n7x/DF"];
   } else if (tmp.STAGE_INSTANCE_UPDATE === action) {
-    return intl69.t["0hQYU4"];
+    return intl71.t["0hQYU4"];
   } else if (tmp.STAGE_INSTANCE_DELETE === action) {
     let prop;
     if (null != log.userId) {
-      prop = intl69.t["Oi/in9"];
+      prop = intl71.t["Oi/in9"];
     } else {
-      prop = intl69.t["7ZIFm9"];
+      prop = intl71.t["7ZIFm9"];
     }
     return prop;
   } else if (tmp.GUILD_SCHEDULED_EVENT_CREATE === action) {
-    return intl69.t.S7k52p;
+    return intl71.t.S7k52p;
   } else if (tmp.GUILD_SCHEDULED_EVENT_UPDATE === action) {
-    return intl69.t.ebTK11;
+    return intl71.t.ebTK11;
   } else if (tmp.GUILD_SCHEDULED_EVENT_DELETE === action) {
-    return intl69.t["/ARPKQ"];
+    return intl71.t["/ARPKQ"];
   } else {
     if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE !== action) {
       if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE !== action) {
         if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE === action) {
-          return intl69.t.zYb2da;
+          return intl71.t.zYb2da;
         } else if (tmp.THREAD_CREATE === action) {
           let found1 = null;
           if (null != log.changes) {
@@ -1592,21 +1604,21 @@ export const getChangeTitle = function getChangeTitle(log) {
           } else {
             const newValue2 = found1.newValue;
             if (constants6.PRIVATE_THREAD === newValue2) {
-              return intl69.t.Br0y5w;
-            } else if (tmp196.ANNOUNCEMENT_THREAD === newValue2) {
-              return intl69.t["6uaMmO"];
+              return intl71.t.Br0y5w;
+            } else if (tmp200.ANNOUNCEMENT_THREAD === newValue2) {
+              return intl71.t["6uaMmO"];
             } else {
-              return intl69.t["2cxQ7G"];
+              return intl71.t["2cxQ7G"];
             }
           }
         } else if (tmp.THREAD_UPDATE === action) {
-          return intl69.t.PSsy4t;
+          return intl71.t.PSsy4t;
         } else if (tmp.THREAD_DELETE === action) {
-          return intl69.t.s3Khn8;
+          return intl71.t.s3Khn8;
         } else if (tmp.APPLICATION_COMMAND_PERMISSION_UPDATE === action) {
-          return intl69.t.uzCqBm;
+          return intl71.t.uzCqBm;
         } else if (tmp.AUTO_MODERATION_BLOCK_MESSAGE === action) {
-          return intl69.t.NqWv2K;
+          return intl71.t.NqWv2K;
         } else if (tmp.AUTO_MODERATION_FLAG_TO_CHANNEL === action) {
           let SD0PwJ;
           const options = log.options;
@@ -1616,39 +1628,39 @@ export const getChangeTitle = function getChangeTitle(log) {
           }
           const str = AutomodTriggerType.USER_PROFILE;
           if (prop1 === str.toString()) {
-            SD0PwJ = intl69.t.YQsjej;
+            SD0PwJ = intl71.t.YQsjej;
           } else {
-            SD0PwJ = intl69.t.SD0PwJ;
+            SD0PwJ = intl71.t.SD0PwJ;
           }
           return SD0PwJ;
         } else if (tmp.AUTO_MODERATION_USER_COMMUNICATION_DISABLED === action) {
-          return intl69.t.Vk4TwX;
+          return intl71.t.Vk4TwX;
         } else if (tmp.AUTO_MODERATION_QUARANTINE_USER === action) {
-          return intl69.t["/W5u5o"];
+          return intl71.t["/W5u5o"];
         } else if (tmp.CREATOR_MONETIZATION_REQUEST_CREATED === action) {
-          return intl69.t.ONvWyr;
+          return intl71.t.ONvWyr;
         } else if (tmp.CREATOR_MONETIZATION_TERMS_ACCEPTED === action) {
-          return intl69.t["ryGLk+"];
+          return intl71.t["ryGLk+"];
         } else if (tmp.AUTO_MODERATION_RULE_CREATE === action) {
-          return intl69.t["NKljj+"];
+          return intl71.t["NKljj+"];
         } else if (tmp.AUTO_MODERATION_RULE_UPDATE === action) {
-          return intl69.t["3wEA9u"];
+          return intl71.t["3wEA9u"];
         } else if (tmp.AUTO_MODERATION_RULE_DELETE === action) {
-          return intl69.t.umua3n;
+          return intl71.t.umua3n;
         } else if (tmp.ONBOARDING_PROMPT_CREATE === action) {
-          return intl69.t["/8A1g2"];
+          return intl71.t["/8A1g2"];
         } else if (tmp.ONBOARDING_PROMPT_UPDATE === action) {
-          return intl69.t.ArIrWI;
+          return intl71.t.ArIrWI;
         } else if (tmp.ONBOARDING_PROMPT_DELETE === action) {
-          return intl69.t.IuBTao;
+          return intl71.t.IuBTao;
         } else if (tmp.ONBOARDING_CREATE === action) {
-          return intl69.t["wDaq3/"];
+          return intl71.t["wDaq3/"];
         } else if (tmp.ONBOARDING_UPDATE === action) {
-          return intl69.t["yONu/l"];
+          return intl71.t["yONu/l"];
         } else if (tmp.HOME_SETTINGS_CREATE === action) {
-          return intl69.t.dSdCjG;
+          return intl71.t.dSdCjG;
         } else if (tmp.HOME_SETTINGS_UPDATE === action) {
-          return intl69.t.XHE8qv;
+          return intl71.t.XHE8qv;
         } else if (tmp.GUILD_HOME_FEATURE_ITEM === action) {
           let found2 = null;
           if (null != log.changes) {
@@ -1656,69 +1668,69 @@ export const getChangeTitle = function getChangeTitle(log) {
             found2 = changes2.find((key) => key.key === constants.ENTITY_TYPE);
           }
           if (null == found2) {
-            return intl69.t["UZ+U3A"];
+            return intl71.t["UZ+U3A"];
           } else {
             const newValue = found2.newValue;
             if (GuildFeedItemTypes.GuildFeedItemTypes.MESSAGE === newValue) {
-              return intl69.t["PyEa+J"];
+              return intl71.t["PyEa+J"];
             } else if (GuildFeedItemTypes.GuildFeedItemTypes.FORUM_POST === newValue) {
-              return intl69.t.hCuAb1;
+              return intl71.t.hCuAb1;
             } else {
-              return intl69.t["UZ+U3A"];
+              return intl71.t["UZ+U3A"];
             }
           }
         } else if (tmp.GUILD_HOME_REMOVE_ITEM === action) {
-          return intl69.t.kPReun;
+          return intl71.t.kPReun;
         } else if (tmp.SOUNDBOARD_SOUND_CREATE === action) {
-          return intl69.t["0PD83V"];
+          return intl71.t["0PD83V"];
         } else if (tmp.SOUNDBOARD_SOUND_UPDATE === action) {
-          return intl69.t.CM8n1w;
+          return intl71.t.CM8n1w;
         } else if (tmp.SOUNDBOARD_SOUND_DELETE === action) {
-          return intl69.t["kVz4/0"];
+          return intl71.t["kVz4/0"];
         } else if (tmp.VOICE_CHANNEL_STATUS_CREATE === action) {
-          return intl69.t.MWjnU7;
+          return intl71.t.MWjnU7;
         } else if (tmp.VOICE_CHANNEL_STATUS_DELETE === action) {
-          return intl69.t.aS8Krq;
+          return intl71.t.aS8Krq;
         } else if (tmp.GUILD_MEMBER_VERIFICATION_UPDATE === action) {
-          return intl69.t["NUKUb+"];
+          return intl71.t["NUKUb+"];
         } else if (tmp.GUILD_PROFILE_UPDATE === action) {
-          return intl69.t.Ed6hF1;
+          return intl71.t.Ed6hF1;
         } else if (tmp.GUILD_MIGRATE_PIN_PERMISSION === action) {
-          return intl69.t["3Ne7MA"];
+          return intl71.t["3Ne7MA"];
         } else if (tmp.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION === action) {
-          return intl69.t["naflH+"];
+          return intl71.t["naflH+"];
         } else {
           return null;
         }
       }
     }
-    return intl69.t["8qCI36"];
+    return intl71.t["8qCI36"];
   }
 };
 export const getStringForAddedChannelFlag = function getStringForAddedChannelFlag(arg0) {
   if (ChannelFlags.GUILD_FEED_REMOVED === arg0) {
-    const intl3 = intl69.intl;
-    return intl3.string(intl69.t["5G8ZD4"]);
+    const intl3 = intl71.intl;
+    return intl3.string(intl71.t["5G8ZD4"]);
   } else if (ChannelFlags.ACTIVE_CHANNELS_REMOVED === arg0) {
-    const intl2 = intl69.intl;
-    return intl2.string(intl69.t["4YLtzC"]);
+    const intl2 = intl71.intl;
+    return intl2.string(intl71.t["4YLtzC"]);
   } else if (ChannelFlags.PINNED === arg0) {
-    const intl = intl69.intl;
-    return intl.string(intl69.t["1QLRYb"]);
+    const intl = intl71.intl;
+    return intl.string(intl71.t["1QLRYb"]);
   } else {
     return null;
   }
 };
 export const getStringForRemovedChannelFlag = function getStringForRemovedChannelFlag(arg0) {
   if (ChannelFlags.GUILD_FEED_REMOVED === arg0) {
-    const intl3 = intl69.intl;
-    return intl3.string(intl69.t.S5kuWQ);
+    const intl3 = intl71.intl;
+    return intl3.string(intl71.t.S5kuWQ);
   } else if (ChannelFlags.ACTIVE_CHANNELS_REMOVED === arg0) {
-    const intl2 = intl69.intl;
-    return intl2.string(intl69.t["8qpgcz"]);
+    const intl2 = intl71.intl;
+    return intl2.string(intl71.t["8qpgcz"]);
   } else if (ChannelFlags.PINNED === arg0) {
-    const intl = intl69.intl;
-    return intl.string(intl69.t.CMweGA);
+    const intl = intl71.intl;
+    return intl.string(intl71.t.CMweGA);
   } else {
     return null;
   }
@@ -1726,180 +1738,180 @@ export const getStringForRemovedChannelFlag = function getStringForRemovedChanne
 export const getStringForPermission = function getStringForPermission(item, log) {
   const tmp = constants7;
   if (constants7.CREATE_INSTANT_INVITE === item) {
-    const intl55 = intl69.intl;
-    return intl55.string(intl69.t.zJrgTG);
+    const intl55 = intl71.intl;
+    return intl55.string(intl71.t.zJrgTG);
   } else if (tmp.KICK_MEMBERS === item) {
-    const intl54 = intl69.intl;
-    return intl54.string(intl69.t.pBNv6i);
+    const intl54 = intl71.intl;
+    return intl54.string(intl71.t.pBNv6i);
   } else if (tmp.BAN_MEMBERS === item) {
-    const intl53 = intl69.intl;
-    return intl53.string(intl69.t.oTBA7N);
+    const intl53 = intl71.intl;
+    return intl53.string(intl71.t.oTBA7N);
   } else if (tmp.ADMINISTRATOR === item) {
-    const intl52 = intl69.intl;
-    return intl52.string(intl69.t.PGvZqX);
+    const intl52 = intl71.intl;
+    return intl52.string(intl71.t.PGvZqX);
   } else if (tmp.MANAGE_CHANNELS === item) {
     if (log.targetType !== AuditLogTargetTypes.CHANNEL) {
       let stringResult;
       if (log.targetType !== tmp103.CHANNEL_OVERWRITE) {
-        const intl50 = intl69.intl;
-        stringResult = intl50.string(intl69.t["9qLtWs"]);
+        const intl50 = intl71.intl;
+        stringResult = intl50.string(intl71.t["9qLtWs"]);
       }
       return stringResult;
     }
-    const intl51 = intl69.intl;
-    stringResult = intl51.string(intl69.t.nAw15L);
+    const intl51 = intl71.intl;
+    stringResult = intl51.string(intl71.t.nAw15L);
   } else if (tmp.MANAGE_GUILD === item) {
-    const intl49 = intl69.intl;
-    return intl49.string(intl69.t.QZRcfO);
+    const intl49 = intl71.intl;
+    return intl49.string(intl71.t.QZRcfO);
   } else if (tmp.VIEW_GUILD_ANALYTICS === item) {
-    const intl48 = intl69.intl;
-    return intl48.string(intl69.t["rQJBE/"]);
+    const intl48 = intl71.intl;
+    return intl48.string(intl71.t["rQJBE/"]);
   } else if (tmp.VIEW_CREATOR_MONETIZATION_ANALYTICS === item) {
-    const intl47 = intl69.intl;
-    return intl47.string(intl69.t["0lTLTv"]);
+    const intl47 = intl71.intl;
+    return intl47.string(intl71.t["0lTLTv"]);
   } else if (tmp.CHANGE_NICKNAME === item) {
-    const intl46 = intl69.intl;
-    return intl46.string(intl69.t.dilOF6);
+    const intl46 = intl71.intl;
+    return intl46.string(intl71.t.dilOF6);
   } else if (tmp.MANAGE_NICKNAMES === item) {
-    const intl45 = intl69.intl;
-    return intl45.string(intl69.t["t+Ct5x"]);
+    const intl45 = intl71.intl;
+    return intl45.string(intl71.t["t+Ct5x"]);
   } else if (tmp.MANAGE_ROLES === item) {
-    const intl44 = intl69.intl;
-    return intl44.string(intl69.t["C8d+oG"]);
+    const intl44 = intl71.intl;
+    return intl44.string(intl71.t["C8d+oG"]);
   } else if (tmp.MANAGE_WEBHOOKS === item) {
-    const intl43 = intl69.intl;
-    return intl43.string(intl69.t["/ADKmM"]);
+    const intl43 = intl71.intl;
+    return intl43.string(intl71.t["/ADKmM"]);
   } else if (tmp.CREATE_GUILD_EXPRESSIONS === item) {
-    const intl42 = intl69.intl;
-    return intl42.string(intl69.t.HarVuP);
+    const intl42 = intl71.intl;
+    return intl42.string(intl71.t.HarVuP);
   } else if (tmp.MANAGE_GUILD_EXPRESSIONS === item) {
-    const intl41 = intl69.intl;
-    return intl41.string(intl69.t.bbuXIn);
+    const intl41 = intl71.intl;
+    return intl41.string(intl71.t.bbuXIn);
   } else if (tmp.VIEW_AUDIT_LOG === item) {
-    const intl40 = intl69.intl;
-    return intl40.string(intl69.t.fZgLpA);
+    const intl40 = intl71.intl;
+    return intl40.string(intl71.t.fZgLpA);
   } else if (tmp.VIEW_CHANNEL === item) {
     if (log.targetType !== AuditLogTargetTypes.CHANNEL) {
       let stringResult1;
       if (log.targetType !== tmp77.CHANNEL_OVERWRITE) {
-        const intl38 = intl69.intl;
-        stringResult1 = intl38.string(intl69.t.uV83yi);
+        const intl38 = intl71.intl;
+        stringResult1 = intl38.string(intl71.t.uV83yi);
       }
       return stringResult1;
     }
-    const intl39 = intl69.intl;
-    stringResult1 = intl39.string(intl69.t["W/A4Qp"]);
+    const intl39 = intl71.intl;
+    stringResult1 = intl39.string(intl71.t["W/A4Qp"]);
   } else if (tmp.SEND_MESSAGES === item) {
-    const intl37 = intl69.intl;
-    return intl37.string(intl69.t.T32rkC);
+    const intl37 = intl71.intl;
+    return intl37.string(intl71.t.T32rkC);
   } else if (tmp.SEND_TTS_MESSAGES === item) {
-    const intl36 = intl69.intl;
-    return intl36.string(intl69.t.Mg7bku);
+    const intl36 = intl71.intl;
+    return intl36.string(intl71.t.Mg7bku);
   } else if (tmp.USE_APPLICATION_COMMANDS === item) {
-    const intl35 = intl69.intl;
-    return intl35.string(intl69.t.shbR1a);
+    const intl35 = intl71.intl;
+    return intl35.string(intl71.t.shbR1a);
   } else if (tmp.MANAGE_MESSAGES === item) {
-    const intl34 = intl69.intl;
-    return intl34.string(intl69.t["6lU9xM"]);
+    const intl34 = intl71.intl;
+    return intl34.string(intl71.t["6lU9xM"]);
   } else if (tmp.EMBED_LINKS === item) {
-    const intl33 = intl69.intl;
-    return intl33.string(intl69.t["969dEL"]);
+    const intl33 = intl71.intl;
+    return intl33.string(intl71.t["969dEL"]);
   } else if (tmp.ATTACH_FILES === item) {
-    const intl32 = intl69.intl;
-    return intl32.string(intl69.t["3AS4UM"]);
+    const intl32 = intl71.intl;
+    return intl32.string(intl71.t["3AS4UM"]);
   } else if (tmp.READ_MESSAGE_HISTORY === item) {
-    const intl31 = intl69.intl;
-    return intl31.string(intl69.t.l9ufaR);
+    const intl31 = intl71.intl;
+    return intl31.string(intl71.t.l9ufaR);
   } else if (tmp.MENTION_EVERYONE === item) {
-    const intl30 = intl69.intl;
-    return intl30.string(intl69.t.Y78KGC);
+    const intl30 = intl71.intl;
+    return intl30.string(intl71.t.Y78KGC);
   } else if (tmp.USE_EXTERNAL_EMOJIS === item) {
-    const intl29 = intl69.intl;
-    return intl29.string(intl69.t.BpBGZU);
+    const intl29 = intl71.intl;
+    return intl29.string(intl71.t.BpBGZU);
   } else if (tmp.USE_EXTERNAL_STICKERS === item) {
-    const intl28 = intl69.intl;
-    return intl28.string(intl69.t["UeRs+b"]);
+    const intl28 = intl71.intl;
+    return intl28.string(intl71.t["UeRs+b"]);
   } else if (tmp.ADD_REACTIONS === item) {
-    const intl27 = intl69.intl;
-    return intl27.string(intl69.t.yEoJAr);
+    const intl27 = intl71.intl;
+    return intl27.string(intl71.t.yEoJAr);
   } else if (tmp.CONNECT === item) {
-    const intl26 = intl69.intl;
-    return intl26.string(intl69.t.S0W8Z5);
+    const intl26 = intl71.intl;
+    return intl26.string(intl71.t.S0W8Z5);
   } else if (tmp.SPEAK === item) {
-    const intl25 = intl69.intl;
-    return intl25.string(intl69.t["8w1tIR"]);
+    const intl25 = intl71.intl;
+    return intl25.string(intl71.t["8w1tIR"]);
   } else if (tmp.MUTE_MEMBERS === item) {
-    const intl24 = intl69.intl;
-    return intl24.string(intl69.t["8EI30/"]);
+    const intl24 = intl71.intl;
+    return intl24.string(intl71.t["8EI30/"]);
   } else if (tmp.DEAFEN_MEMBERS === item) {
-    const intl23 = intl69.intl;
-    return intl23.string(intl69.t["9L47Fr"]);
+    const intl23 = intl71.intl;
+    return intl23.string(intl71.t["9L47Fr"]);
   } else if (tmp.MOVE_MEMBERS === item) {
-    const intl22 = intl69.intl;
-    return intl22.string(intl69.t.YtjJPQ);
+    const intl22 = intl71.intl;
+    return intl22.string(intl71.t.YtjJPQ);
   } else if (tmp.USE_VAD === item) {
-    const intl21 = intl69.intl;
-    return intl21.string(intl69.t["08zAV7"]);
+    const intl21 = intl71.intl;
+    return intl21.string(intl71.t["08zAV7"]);
   } else if (tmp.PRIORITY_SPEAKER === item) {
-    const intl20 = intl69.intl;
-    return intl20.string(intl69.t.BVK71i);
+    const intl20 = intl71.intl;
+    return intl20.string(intl71.t.BVK71i);
   } else if (tmp.STREAM === item) {
-    const intl19 = intl69.intl;
-    return intl19.string(intl69.t.FlNoSV);
+    const intl19 = intl71.intl;
+    return intl19.string(intl71.t.FlNoSV);
   } else if (tmp.USE_SOUNDBOARD === item) {
-    const intl18 = intl69.intl;
-    return intl18.string(intl69.t.Bco7NG);
+    const intl18 = intl71.intl;
+    return intl18.string(intl71.t.Bco7NG);
   } else if (tmp.USE_EXTERNAL_SOUNDS === item) {
-    const intl17 = intl69.intl;
-    return intl17.string(intl69.t.pwaVJ6);
+    const intl17 = intl71.intl;
+    return intl17.string(intl71.t.pwaVJ6);
   } else if (tmp.REQUEST_TO_SPEAK === item) {
-    const intl16 = intl69.intl;
-    return intl16.string(intl69.t["5kicT2"]);
+    const intl16 = intl71.intl;
+    return intl16.string(intl71.t["5kicT2"]);
   } else if (tmp.USE_EMBEDDED_ACTIVITIES === item) {
-    const intl15 = intl69.intl;
-    return intl15.string(intl69.t.rLSGeh);
+    const intl15 = intl71.intl;
+    return intl15.string(intl71.t.rLSGeh);
   } else if (tmp.CREATE_EVENTS === item) {
-    const intl14 = intl69.intl;
-    return intl14.string(intl69.t.qyjZua);
+    const intl14 = intl71.intl;
+    return intl14.string(intl71.t.qyjZua);
   } else if (tmp.MANAGE_EVENTS === item) {
-    const intl13 = intl69.intl;
-    return intl13.string(intl69.t.HIgA5a);
+    const intl13 = intl71.intl;
+    return intl13.string(intl71.t.HIgA5a);
   } else if (tmp.CREATE_PUBLIC_THREADS === item) {
-    const intl12 = intl69.intl;
-    return intl12.string(intl69.t["25rKnX"]);
+    const intl12 = intl71.intl;
+    return intl12.string(intl71.t["25rKnX"]);
   } else if (tmp.CREATE_PRIVATE_THREADS === item) {
-    const intl11 = intl69.intl;
-    return intl11.string(intl69.t.QwbTSa);
+    const intl11 = intl71.intl;
+    return intl11.string(intl71.t.QwbTSa);
   } else if (tmp.SEND_MESSAGES_IN_THREADS === item) {
-    const intl10 = intl69.intl;
-    return intl10.string(intl69.t.fTE74g);
+    const intl10 = intl71.intl;
+    return intl10.string(intl71.t.fTE74g);
   } else if (tmp.MANAGE_THREADS === item) {
-    const intl9 = intl69.intl;
-    return intl9.string(intl69.t.kEqgr7);
+    const intl9 = intl71.intl;
+    return intl9.string(intl71.t.kEqgr7);
   } else if (tmp.MODERATE_MEMBERS === item) {
-    const intl8 = intl69.intl;
-    return intl8.string(intl69.t["+RL6pz"]);
+    const intl8 = intl71.intl;
+    return intl8.string(intl71.t["+RL6pz"]);
   } else if (tmp.SET_VOICE_CHANNEL_STATUS === item) {
-    const intl7 = intl69.intl;
-    return intl7.string(intl69.t.VBwkUf);
+    const intl7 = intl71.intl;
+    return intl7.string(intl71.t.VBwkUf);
   } else if (tmp.SEND_POLLS === item) {
-    const intl6 = intl69.intl;
-    return intl6.string(intl69.t.UMQ7Ww);
+    const intl6 = intl71.intl;
+    return intl6.string(intl71.t.UMQ7Ww);
   } else if (tmp.SEND_VOICE_MESSAGES === item) {
-    const intl5 = intl69.intl;
-    return intl5.string(intl69.t.WlWSBT);
+    const intl5 = intl71.intl;
+    return intl5.string(intl71.t.WlWSBT);
   } else if (tmp.USE_EXTERNAL_APPS === item) {
-    const intl4 = intl69.intl;
-    return intl4.string(intl69.t.TtA5rK);
+    const intl4 = intl71.intl;
+    return intl4.string(intl71.t.TtA5rK);
   } else if (tmp.PIN_MESSAGES === item) {
-    const intl3 = intl69.intl;
-    return intl3.string(intl69.t.Y5BI39);
+    const intl3 = intl71.intl;
+    return intl3.string(intl71.t.Y5BI39);
   } else if (tmp.BYPASS_SLOWMODE === item) {
-    const intl2 = intl69.intl;
-    return intl2.string(intl69.t.kqcjeV);
+    const intl2 = intl71.intl;
+    return intl2.string(intl71.t.kqcjeV);
   } else if (tmp.MANAGE_OFFICIAL_MESSAGES === item) {
-    const intl = intl69.intl;
-    return intl.string(intl69.t.Aj9ruN);
+    const intl = intl71.intl;
+    return intl.string(intl71.t.Aj9ruN);
   } else {
     return null;
   }
@@ -1914,7 +1926,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
     let stageInstancesByGuild;
     let stickerById;
     let tmp216;
-    const f130116 = (key) => key.key === c0;
+    const f131738 = (key) => key.key === c0;
     let result3 = targetType;
     const tmp = result3;
     let id = targetType;
@@ -1952,7 +1964,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                   tmp201 = tmp197;
                   if (null != targetType.changes) {
                     const changes = targetType.changes;
-                    let found = changes.find(f130116);
+                    let found = changes.find(f131738);
                     tmp201 = tmp197;
                     if (null != found) {
                       tmp201 = found.newValue || found.oldValue;
@@ -1986,7 +1998,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                   tmp188 = tmp184;
                   if (null != targetType.changes) {
                     const changes1 = targetType.changes;
-                    let found1 = changes1.find(f130116);
+                    let found1 = changes1.find(f131738);
                     tmp188 = tmp184;
                     if (null != found1) {
                       tmp188 = found1.newValue || found1.oldValue;
@@ -2021,7 +2033,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                   stringResult = tmp169;
                   if (null != targetType.changes) {
                     const changes2 = targetType.changes;
-                    let found2 = changes2.find(f130116);
+                    let found2 = changes2.find(f131738);
                     stringResult = tmp169;
                     if (null != found2) {
                       stringResult = found2.newValue || found2.oldValue;
@@ -2066,7 +2078,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp161 = tmp157;
                         if (null != targetType.changes) {
                           const changes3 = targetType.changes;
-                          let found3 = changes3.find(f130116);
+                          let found3 = changes3.find(f131738);
                           tmp161 = tmp157;
                           if (null != found3) {
                             tmp161 = found3.newValue || found3.oldValue;
@@ -2104,7 +2116,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp148 = tmp144;
                         if (null != targetType.changes) {
                           const changes4 = targetType.changes;
-                          let found4 = changes4.find(f130116);
+                          let found4 = changes4.find(f131738);
                           tmp148 = tmp144;
                           if (null != found4) {
                             tmp148 = found4.newValue || found4.oldValue;
@@ -2142,7 +2154,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp136 = tmp132;
                         if (null != targetType.changes) {
                           const changes5 = targetType.changes;
-                          let found5 = changes5.find(f130116);
+                          let found5 = changes5.find(f131738);
                           tmp136 = tmp132;
                           if (null != found5) {
                             tmp136 = found5.newValue || found5.oldValue;
@@ -2179,7 +2191,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp124 = tmp120;
                         if (null != targetType.changes) {
                           const changes6 = targetType.changes;
-                          let found6 = changes6.find(f130116);
+                          let found6 = changes6.find(f131738);
                           tmp124 = tmp120;
                           if (null != found6) {
                             tmp124 = found6.newValue || found6.oldValue;
@@ -2214,7 +2226,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp112 = tmp108;
                         if (null != targetType.changes) {
                           const changes7 = targetType.changes;
-                          let found7 = changes7.find(f130116);
+                          let found7 = changes7.find(f131738);
                           tmp112 = tmp108;
                           if (null != found7) {
                             tmp112 = found7.newValue || found7.oldValue;
@@ -2257,7 +2269,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp100 = tmp96;
                         if (null != targetType.changes) {
                           const changes8 = targetType.changes;
-                          const found8 = changes8.find(f130116);
+                          const found8 = changes8.find(f131738);
                           tmp100 = tmp96;
                           if (null != found8) {
                             tmp100 = found8.newValue || found8.oldValue;
@@ -2298,7 +2310,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp76 = tmp72;
                               if (null != targetType.changes) {
                                 const changes9 = targetType.changes;
-                                const found9 = changes9.find(f130116);
+                                const found9 = changes9.find(f131738);
                                 tmp76 = tmp72;
                                 if (null != found9) {
                                   tmp76 = found9.newValue || found9.oldValue;
@@ -2363,7 +2375,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                 tmp61 = tmp57;
                                 if (null != targetType.changes) {
                                   const changes10 = targetType.changes;
-                                  const found11 = changes10.find(f130116);
+                                  const found11 = changes10.find(f131738);
                                   tmp61 = tmp57;
                                   if (null != found11) {
                                     tmp61 = found11.newValue || found11.oldValue;
@@ -2402,7 +2414,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp52 = tmp48;
                               if (null != targetType.changes) {
                                 const changes11 = targetType.changes;
-                                const found12 = changes11.find(f130116);
+                                const found12 = changes11.find(f131738);
                                 tmp52 = tmp48;
                                 if (null != found12) {
                                   tmp52 = found12.newValue || found12.oldValue;
@@ -2437,7 +2449,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp40 = tmp36;
                               if (null != targetType.changes) {
                                 const changes12 = targetType.changes;
-                                const found13 = changes12.find(f130116);
+                                const found13 = changes12.find(f131738);
                                 tmp40 = tmp36;
                                 if (null != found13) {
                                   tmp40 = found13.newValue || found13.oldValue;
@@ -2479,7 +2491,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp27 = tmp23;
                               if (null != targetType.changes) {
                                 const changes13 = targetType.changes;
-                                const found14 = changes13.find(f130116);
+                                const found14 = changes13.find(f131738);
                                 tmp27 = tmp23;
                                 if (null != found14) {
                                   tmp27 = found14.newValue || found14.oldValue;
@@ -2517,7 +2529,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp15 = tmp11;
                               if (null != targetType.changes) {
                                 const changes14 = targetType.changes;
-                                const found15 = changes14.find(f130116);
+                                const found15 = changes14.find(f131738);
                                 tmp15 = tmp11;
                                 if (null != found15) {
                                   let tmp17 = found15.newValue || found15.oldValue;
@@ -2561,7 +2573,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp88 = tmp84;
                         if (null != targetType.changes) {
                           const changes15 = targetType.changes;
-                          const found16 = changes15.find(f130116);
+                          const found16 = changes15.find(f131738);
                           tmp88 = tmp84;
                           if (null != found16) {
                             tmp88 = found16.newValue || found16.oldValue;
@@ -2605,7 +2617,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
             tmp213 = tmp209;
             if (null != targetType.changes) {
               const changes16 = targetType.changes;
-              const found17 = changes16.find(f130116);
+              const found17 = changes16.find(f131738);
               tmp213 = tmp209;
               if (null != found17) {
                 tmp213 = found17.newValue || found17.oldValue;
@@ -2674,7 +2686,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
             tmp236 = tmp232;
             if (null != result1.changes) {
               const changes17 = result1.changes;
-              const found18 = changes17.find(f130116);
+              const found18 = changes17.find(f131738);
               tmp236 = tmp232;
               if (null != found18) {
                 tmp236 = found18.newValue || found18.oldValue;
@@ -2769,21 +2781,21 @@ export const transformLogs = function transformLogs(arr, arg1) {
           let removed;
           let removed2;
           let tmp2462;
-          const f153724 = (value) => value.value === oldValue;
-          const f153726 = (type) => type.type;
-          const f153727 = (item) => "'" + item + "'";
-          const f153728 = (item) => "'" + item + "'";
-          const f153729 = (item) => null != item;
-          const f153730 = (item) => {
+          const f155557 = (value) => value.value === oldValue;
+          const f155559 = (type) => type.type;
+          const f155560 = (item) => "'" + item + "'";
+          const f155561 = (item) => "'" + item + "'";
+          const f155562 = (item) => null != item;
+          const f155563 = (item) => {
             obj = result3(closure_1_3[24]);
             return obj.computeChannelName(item, user, closure_1_12, true);
           };
-          const f153731 = (item) => role.getRole(user.id, item);
-          const f153732 = (item) => null != item;
-          const f153733 = (name) => name.name;
-          const f153734 = (item) => role.getRole(user.id, item);
-          const f153735 = (item) => null != item;
-          const f153736 = (id) => ({ id: id.id, name: id.name });
+          const f155564 = (item) => role.getRole(user.id, item);
+          const f155565 = (item) => null != item;
+          const f155566 = (name) => name.name;
+          const f155567 = (item) => role.getRole(user.id, item);
+          const f155568 = (item) => null != item;
+          const f155569 = (id) => ({ id: id.id, name: id.name });
           if (result3.action === constants.APPLICATION_COMMAND_PERMISSION_UPDATE) {
             const type = tmp250.type;
             if (constants3.ROLE === type) {
@@ -2812,8 +2824,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
                 const obj27 = _modDef14(id.id);
                 const str23 = obj27.subtract(1);
                 if (id3 === str23.toString()) {
-                  const intl11 = intl69.intl;
-                  newValue.subtarget = intl11.string(intl69.t.MSYhgh);
+                  const intl11 = intl71.intl;
+                  newValue.subtarget = intl11.string(intl71.t.MSYhgh);
                   tmp2462 = newValue;
                 } else {
                   id = tmp250.id;
@@ -3017,7 +3029,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                 if (obj26.hasFlag(removeFlagResult, tmp294)) {
                                   let arr3 = items1.push(tmp294);
                                 }
-                                let tmp295Result = tmp295(1391);
+                                let tmp295Result = tmp295(1390);
                                 if (!tmp295Result.hasFlag(tmp151, tmp294)) {
                                   continue;
                                 } else {
@@ -3045,9 +3057,9 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               ({ newValue: newValue12, oldValue: oldValue12 } = newValue);
                               if (null != newValue.newValue) {
                                 newValue = newValue.newValue;
-                                const obj10 = intl69;
+                                const obj10 = intl71;
                                 const availableLocales = obj10.getAvailableLocales();
-                                const found = availableLocales.find(f153724);
+                                const found = availableLocales.find(f155557);
                                 let name1 = null;
                                 if (null != found) {
                                   name1 = found.name;
@@ -3056,9 +3068,9 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               }
                               if (null != newValue.oldValue) {
                                 oldValue = newValue.oldValue;
-                                const obj11 = intl69;
+                                const obj11 = intl71;
                                 const availableLocales1 = obj11.getAvailableLocales();
-                                const found1 = availableLocales1.find(f153724);
+                                const found1 = availableLocales1.find(f155557);
                                 let name2 = null;
                                 if (null != found1) {
                                   name2 = found1.name;
@@ -3080,22 +3092,22 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               if (null != newValue.newValue) {
                                 let stringResult;
                                 if (newValue.newValue === constants2.FULL) {
-                                  const intl8 = intl69.intl;
-                                  stringResult = intl8.string(intl69.t["7jOoJE"]);
+                                  const intl8 = intl71.intl;
+                                  stringResult = intl8.string(intl71.t["7jOoJE"]);
                                 } else {
-                                  const intl7 = intl69.intl;
-                                  stringResult = intl7.string(intl69.t.jjKYpu);
+                                  const intl7 = intl71.intl;
+                                  stringResult = intl7.string(intl71.t.jjKYpu);
                                 }
                                 newValue11 = stringResult;
                               }
                               if (null != newValue.oldValue) {
                                 let stringResult1;
                                 if (newValue.oldValue === constants2.FULL) {
-                                  const intl10 = intl69.intl;
-                                  stringResult1 = intl10.string(intl69.t["7jOoJE"]);
+                                  const intl10 = intl71.intl;
+                                  stringResult1 = intl10.string(intl71.t["7jOoJE"]);
                                 } else {
-                                  const intl9 = intl69.intl;
-                                  stringResult1 = intl9.string(intl69.t.jjKYpu);
+                                  const intl9 = intl71.intl;
+                                  stringResult1 = intl9.string(intl71.t.jjKYpu);
                                 }
                                 oldValue11 = stringResult1;
                               }
@@ -3115,7 +3127,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               ({ SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS: obj9[closure_3_28.SUPPRESS_JOIN_NOTIFICATIONS], SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS: obj9[closure_3_28.SUPPRESS_PREMIUM_SUBSCRIPTIONS], SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS: obj9[closure_3_28.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS], SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES: obj9[closure_3_28.SUPPRESS_JOIN_NOTIFICATION_REPLIES] } = AuditLogChangeKeys);
                               const items4 = [];
                               const _Object = Object;
-                              const values = Object.values(map2);
+                              const values = Object.values(closure_28);
                               const item = values.forEach(function(item) {
                                 if ((closure_0.oldValue & item) === item !== (closure_0.newValue & item) === item) {
                                   const self = this;
@@ -3131,7 +3143,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                 ({ newValue: newValue10, oldValue: oldValue10 } = newValue);
                                 if (null != newValue.newValue) {
                                   const newValue1 = newValue.newValue;
-                                  const mapped = newValue1.map(f153726);
+                                  const mapped = newValue1.map(f155559);
                                   let joined = mapped;
                                   if (null != mapped) {
                                     const mapped1 = mapped.map(AutomodRuleUtils.actionTypeToName);
@@ -3141,7 +3153,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                 }
                                 if (null != newValue.oldValue) {
                                   const oldValue1 = newValue.oldValue;
-                                  const mapped2 = oldValue1.map(f153726);
+                                  const mapped2 = oldValue1.map(f155559);
                                   let joined1 = mapped2;
                                   if (null != mapped2) {
                                     const mapped3 = mapped2.map(AutomodRuleUtils.actionTypeToName);
@@ -3221,12 +3233,12 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                         let result;
                                         const _Array3 = Array;
                                         if (Array.isArray(newValue23.keyword_filter)) {
-                                          const intl5 = intl69.intl;
+                                          const intl5 = intl71.intl;
                                           const formatToMarkdownString = intl5.formatToMarkdownString;
                                           const keyword_filter = newValue23.keyword_filter;
                                           const obj2 = { newValue: mapped4.join(", ") };
-                                          const y91UXV = intl69.t.y91UXV;
-                                          mapped4 = keyword_filter.map(f153727);
+                                          const y91UXV = intl71.t.y91UXV;
+                                          mapped4 = keyword_filter.map(f155560);
                                           result = formatToMarkdownString(y91UXV, obj2);
                                         }
                                         tmp81 = result;
@@ -3247,12 +3259,12 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                         let result1;
                                         const _Array4 = Array;
                                         if (Array.isArray(oldValue23.keyword_filter)) {
-                                          const intl6 = intl69.intl;
+                                          const intl6 = intl71.intl;
                                           const formatToMarkdownString2 = intl6.formatToMarkdownString;
                                           const keyword_filter1 = oldValue23.keyword_filter;
                                           const obj3 = { newValue: mapped5.join(", ") };
-                                          const y91UXV2 = intl69.t.y91UXV;
-                                          mapped5 = keyword_filter1.map(f153727);
+                                          const y91UXV2 = intl71.t.y91UXV;
+                                          mapped5 = keyword_filter1.map(f155560);
                                           result1 = formatToMarkdownString2(y91UXV2, obj3);
                                         }
                                         tmp87 = result1;
@@ -3289,8 +3301,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               if (null != newValue.newValue) {
                                                 const newValue24 = newValue.newValue;
                                                 const mapped6 = newValue24.map(ChannelStore.getChannel);
-                                                const found2 = mapped6.filter(f153729);
-                                                const mapped7 = found2.map(f153730);
+                                                const found2 = mapped6.filter(f155562);
+                                                const mapped7 = found2.map(f155563);
                                                 let tmp53 = mapped7;
                                                 if (null != mapped7) {
                                                   if (null != mapped7) {
@@ -3300,16 +3312,16 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                                     }
                                                     tmp53 = joined2;
                                                   }
-                                                  const intl3 = intl69.intl;
-                                                  joined2 = intl3.string(intl69.t["K/EdV8"]);
+                                                  const intl3 = intl71.intl;
+                                                  joined2 = intl3.string(intl71.t["K/EdV8"]);
                                                 }
                                                 newValue5 = tmp53;
                                               }
                                               if (null != newValue.oldValue) {
                                                 const oldValue24 = newValue.oldValue;
                                                 const mapped8 = oldValue24.map(ChannelStore.getChannel);
-                                                const found3 = mapped8.filter(f153729);
-                                                const mapped9 = found3.map(f153730);
+                                                const found3 = mapped8.filter(f155562);
+                                                const mapped9 = found3.map(f155563);
                                                 let tmp57 = mapped9;
                                                 if (null != mapped9) {
                                                   if (null != mapped9) {
@@ -3319,8 +3331,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                                     }
                                                     tmp57 = joined3;
                                                   }
-                                                  const intl4 = intl69.intl;
-                                                  joined3 = intl4.string(intl69.t["K/EdV8"]);
+                                                  const intl4 = intl71.intl;
+                                                  joined3 = intl4.string(intl71.t["K/EdV8"]);
                                                 }
                                                 oldValue5 = tmp57;
                                               }
@@ -3342,9 +3354,9 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               ({ newValue: newValue4, oldValue: oldValue4 } = newValue);
                                               if (null != newValue.newValue) {
                                                 const newValue25 = newValue.newValue;
-                                                const mapped10 = newValue25.map(f153731);
-                                                const found4 = mapped10.filter(f153732);
-                                                const mapped11 = found4.map(f153733);
+                                                const mapped10 = newValue25.map(f155564);
+                                                const found4 = mapped10.filter(f155565);
+                                                const mapped11 = found4.map(f155566);
                                                 let tmp39 = mapped11;
                                                 if (null != mapped11) {
                                                   if (null != mapped11) {
@@ -3354,16 +3366,16 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                                     }
                                                     tmp39 = joined4;
                                                   }
-                                                  const intl = intl69.intl;
-                                                  joined4 = intl.string(intl69.t["K/EdV8"]);
+                                                  const intl = intl71.intl;
+                                                  joined4 = intl.string(intl71.t["K/EdV8"]);
                                                 }
                                                 newValue4 = tmp39;
                                               }
                                               if (null != newValue.oldValue) {
                                                 const oldValue25 = newValue.oldValue;
-                                                const mapped12 = oldValue25.map(f153731);
-                                                const found5 = mapped12.filter(f153732);
-                                                const mapped13 = found5.map(f153733);
+                                                const mapped12 = oldValue25.map(f155564);
+                                                const found5 = mapped12.filter(f155565);
+                                                const mapped13 = found5.map(f155566);
                                                 let tmp43 = mapped13;
                                                 if (null != mapped13) {
                                                   if (null != mapped13) {
@@ -3373,8 +3385,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                                     }
                                                     tmp43 = joined5;
                                                   }
-                                                  const intl2 = intl69.intl;
-                                                  joined5 = intl2.string(intl69.t["K/EdV8"]);
+                                                  const intl2 = intl71.intl;
+                                                  joined5 = intl2.string(intl71.t["K/EdV8"]);
                                                 }
                                                 oldValue4 = tmp43;
                                               }
@@ -3396,15 +3408,15 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               ({ newValue: newValue3, oldValue: oldValue3 } = newValue);
                                               if (null != newValue.newValue) {
                                                 const newValue26 = newValue.newValue;
-                                                const mapped14 = newValue26.map(f153734);
-                                                const found6 = mapped14.filter(f153735);
-                                                newValue3 = found6.map(f153736);
+                                                const mapped14 = newValue26.map(f155567);
+                                                const found6 = mapped14.filter(f155568);
+                                                newValue3 = found6.map(f155569);
                                               }
                                               if (null != newValue.oldValue) {
                                                 const oldValue26 = newValue.oldValue;
-                                                const mapped15 = oldValue26.map(f153734);
-                                                const found7 = mapped15.filter(f153735);
-                                                oldValue3 = found7.map(f153736);
+                                                const mapped15 = oldValue26.map(f155567);
+                                                const found7 = mapped15.filter(f155568);
+                                                oldValue3 = found7.map(f155569);
                                               }
                                               const tmp30 = AuditLogChange;
                                               if (!oldValue3) {
@@ -3431,7 +3443,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               const _Date = Date;
                                               let self = this;
                                               let self2 = this;
-                                              const tmp8 = _modDef4424;
+                                              const tmp8 = _modDef4461;
                                               const date = new Date(newValue2);
                                               newValue = dateFormat(tmp8(date), "LLLL");
                                             }
@@ -3442,7 +3454,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               const self3 = this;
                                               const self4 = this;
                                               DateUtils;
-                                              const tmp17 = _modDef4424;
+                                              const tmp17 = _modDef4461;
                                               const date1 = new Date(oldValue2);
                                               oldValue = dateFormat2(tmp17(date1), "LLLL");
                                             }
@@ -3474,7 +3486,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                     let joined6;
                                     const _Array = Array;
                                     if (Array.isArray(newValue27)) {
-                                      const mapped16 = newValue27.map(f153728);
+                                      const mapped16 = newValue27.map(f155561);
                                       joined6 = mapped16.join(", ");
                                     }
                                     newValue6 = joined6;
@@ -3488,7 +3500,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                     let joined7;
                                     const _Array2 = Array;
                                     if (Array.isArray(oldValue27)) {
-                                      const mapped17 = oldValue27.map(f153728);
+                                      const mapped17 = oldValue27.map(f155561);
                                       joined7 = mapped17.join(", ");
                                     }
                                     oldValue6 = joined7;
@@ -3575,8 +3587,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
       }
       const arr = items.push(tmp250);
     } else {
-      let items1 = [, , , , ];
-      ({ MEMBER_PRUNE: arr19[0], MEMBER_DISCONNECT: arr19[1], MEMBER_MOVE: arr19[2], CREATOR_MONETIZATION_REQUEST_CREATED: arr19[3], CREATOR_MONETIZATION_TERMS_ACCEPTED: arr19[4] } = closure_1_15);
+      let items1 = [, , , , , , ];
+      ({ MEMBER_PRUNE: arr19[0], MEMBER_DISCONNECT: arr19[1], MEMBER_MOVE: arr19[2], CHANNEL_POSITION_UPDATE: arr19[3], ROLE_POSITION_UPDATE: arr19[4], CREATOR_MONETIZATION_REQUEST_CREATED: arr19[5], CREATOR_MONETIZATION_TERMS_ACCEPTED: arr19[6] } = closure_1_15);
     }
   });
   return items;

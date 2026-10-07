@@ -1,16 +1,16 @@
-// Module ID: 14878
-// Function ID: 14879
+// Module ID: 15163
+// Function ID: 15164
 // Name: DisplayNameStylesSheetHeader
-// Dependencies: [109, 19, 17, 21, 4837, 588, 558, 576, 6571, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 6644, 2]
 
-// Module 14878 (DisplayNameStylesSheetHeader)
+// Module 15163 (DisplayNameStylesSheetHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
+import nativeDefault from "native" /* 587 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp23 = tmp26;
         }
       }
-      const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
       const merged = Object.assign(tmp5);
       const tmp22 = <BottomSheetTitleHeader leading={tmp13} trailing={tmp15} />;
       cResult[12] = tmp5;

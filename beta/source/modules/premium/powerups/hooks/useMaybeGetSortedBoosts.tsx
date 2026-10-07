@@ -1,19 +1,19 @@
-// Module ID: 11986
-// Function ID: 11987
+// Module ID: 12239
+// Function ID: 12240
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [32, 19, 11968, 5739, 2111, 2073, 558, 576, 504, 11987, 4734, 11, 1127, 2]
+// Dependencies: [32, 19, 12221, 5583, 2112, 2074, 558, 576, 504, 12240, 7668, 11, 1126, 2]
 
-// Module 11986 (useMaybeGetSortedBoosts)
+// Module 12239 (useMaybeGetSortedBoosts)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl2 from "intl" /* 1127 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 4734 */;
-import getBoostLifecyclePhase from "getBoostLifecyclePhase" /* 11987 */;
+import intl2 from "intl" /* 1126 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 7668 */;
+import getBoostLifecyclePhase from "getBoostLifecyclePhase" /* 12240 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 11968 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5739 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12221 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5583 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -280,7 +280,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
             constructor() {
               const tmp = stateFromStores === length && stateFromStores1;
               if (!tmp) {
-                const obj = BoostingActionCreators;
+                const obj = actions_BoostingActionCreators;
                 const appliedGuildBoostsForGuild = obj.fetchAppliedGuildBoostsForGuild(closure_0, { includeEnded: true });
               }
             }
@@ -473,7 +473,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const effect1 = memo.useEffect(() => {
     const tmp = stateFromStores === memo1 && stateFromStores1;
     if (!tmp) {
-      const obj = BoostingActionCreators;
+      const obj = actions_BoostingActionCreators;
       const appliedGuildBoostsForGuild = obj.fetchAppliedGuildBoostsForGuild(closure_0, { includeEnded: true });
     }
   }, items10);

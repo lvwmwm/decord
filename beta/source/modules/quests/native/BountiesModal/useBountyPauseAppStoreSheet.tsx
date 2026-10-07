@@ -1,16 +1,16 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14828
+// Function ID: 14829
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 5757, 1086, 9769, 558, 576, 10675, 14542, 1122, 5762, 7145, 10683, 7135, 5764, 14539, 2]
+// Dependencies: [19, 5623, 1085, 9998, 558, 576, 10916, 14826, 1121, 5628, 7212, 10918, 7202, 5630, 14823, 2]
 
-// Module 14544 (useBountyPauseAppStoreSheet)
-import Constants from "Constants" /* 1086 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import AnalyticsActions from "AnalyticsActions" /* 7135 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14539 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 14542 */;
+// Module 14828 (useBountyPauseAppStoreSheet)
+import Constants from "Constants" /* 1085 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import AnalyticsActions from "AnalyticsActions" /* 7202 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 14823 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 14826 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -390,7 +390,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(9769).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9998).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

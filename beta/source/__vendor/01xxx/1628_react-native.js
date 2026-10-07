@@ -1,28 +1,11 @@
 // Module ID: 1628
 // Function ID: 1629
 // Name: react-native
-// Dependencies: [1629]
+// Dependencies: [17]
 
 // Module 1628 (react-native)
-import react_native from "react-native" /* 1629 */;
+import react_native from "react-native" /* 17 */;
 
-let initialWindowMetrics;
-if (react_native != null) {
-  const getConstants = react_native.getConstants;
-  if (getConstants != null) {
-    const constants = getConstants();
-    if (constants != null) {
-      initialWindowMetrics = constants.initialWindowMetrics;
-    }
-  }
-}
-if (initialWindowMetrics == null) {
-  initialWindowMetrics = null;
-}
-let insets;
-if (initialWindowMetrics != null) {
-  insets = initialWindowMetrics.insets;
-}
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 
-export { initialWindowMetrics };
-export const initialWindowSafeAreaInsets = insets;
+export default TurboModuleRegistry.get("RNCSafeAreaContext");

@@ -1,17 +1,17 @@
-// Module ID: 9092
-// Function ID: 9093
+// Module ID: 9317
+// Function ID: 9318
 // Name: VideoBackgroundUtils
-// Dependencies: [2051, 4860, 6408, 1086, 1403, 5017, 1253, 2]
+// Dependencies: [2051, 4913, 6484, 1085, 1402, 5070, 1252, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9092 (VideoBackgroundUtils)
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AvatarUtils from "AvatarUtils" /* 1403 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
+// Module 9317 (VideoBackgroundUtils)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AvatarUtils from "AvatarUtils" /* 1402 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6408 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6484 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -41,7 +41,7 @@ function isAnimatedBackgroundOption(type) {
       let isAnimatedIconHashResult = obj.isAnimatedIconHash(type.asset);
       const tmp6 = require;
       if (!isAnimatedIconHashResult) {
-        const tmp6Result = tmp6(1403);
+        const tmp6Result = tmp6(1402);
         isAnimatedIconHashResult = tmp6Result.isVideoAssetHash(type.asset);
       }
       hasItem = isAnimatedIconHashResult;
@@ -166,7 +166,7 @@ export const getVideoBackgroundProtoFromOption = function getVideoBackgroundProt
   let obj;
   let obj3;
   if (null == type) {
-    obj = { oneofKind: "call" };
+    obj = { oneofKind: "r" };
   } else {
     let tmp = null != type && typeof type === "object" && "id" in type;
     if (tmp) {

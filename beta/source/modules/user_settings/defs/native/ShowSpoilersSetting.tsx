@@ -1,17 +1,17 @@
-// Module ID: 15008
-// Function ID: 15009
+// Module ID: 15293
+// Function ID: 15294
 // Name: ShowSpoilersSetting
-// Dependencies: [19, 7421, 1086, 2027, 558, 576, 1127, 10874, 2]
+// Dependencies: [19, 7634, 1085, 2028, 558, 576, 1126, 11129, 2]
 
-// Module 15008 (ShowSpoilersSetting)
+// Module 15293 (ShowSpoilersSetting)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -25,13 +25,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: intl.string(intl4.t["KFH/me"]), value: SpoilerRenderSetting.ON_CLICK };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     const items = [obj2, , ];
     const obj3 = { label: intl2.string(intl4.t.Pe1RbL), value: SpoilerRenderSetting.ALWAYS };
-    intl2 = tmp(1127).intl;
+    intl2 = tmp(1126).intl;
     items[1] = obj3;
     const obj4 = { label: intl3.string(intl4.t.K5VTBE), value: SpoilerRenderSetting.IF_MODERATOR };
-    intl3 = tmp(1127).intl;
+    intl3 = tmp(1126).intl;
     items[2] = obj4;
     cResult[0] = items;
     first = items;

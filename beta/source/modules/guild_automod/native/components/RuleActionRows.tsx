@@ -1,24 +1,24 @@
-// Module ID: 17336
-// Function ID: 17337
+// Module ID: 17705
+// Function ID: 17706
 // Name: RuleActionRows
-// Dependencies: [19, 2051, 4470, 11216, 21, 4837, 588, 17313, 11847, 1127, 4801, 17337, 1987, 17338, 558, 576, 17316, 5916, 4833, 5280, 5914, 17312, 5997, 2]
+// Dependencies: [19, 2051, 4507, 11474, 21, 4890, 587, 17682, 12102, 1126, 4854, 17706, 1987, 17707, 558, 576, 17685, 5993, 4886, 5593, 5991, 17679, 6074, 2]
 
-// Module 17336 (RuleActionRows)
+// Module 17705 (RuleActionRows)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import FormCheckbox from "FormCheckbox" /* 5914 */;
-import TableRow2 from "TableRow" /* 5916 */;
-import Constants from "Constants" /* 11216 */;
-import AutomodActionUtils from "AutomodActionUtils" /* 17313 */;
-import getActionInfo from "getActionInfo" /* 17316 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import FormCheckbox from "FormCheckbox" /* 5991 */;
+import TableRow2 from "TableRow" /* 5993 */;
+import Constants from "Constants" /* 11474 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 17682 */;
+import getActionInfo from "getActionInfo" /* 17685 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ function openAlertChannelPicker(rule) {
   const onChangeRule = rule.onChangeRule;
   const actions = rule.actions;
   let tmp2 = dependencyMap;
-  const found = actions.find(rule(17313).isActionFlagToChannel);
+  const found = actions.find(rule(17682).isActionFlagToChannel);
   let channelId;
   if (found != null) {
     channelId = found.metadata.channelId;
@@ -49,7 +49,7 @@ function openAlertChannelPicker(rule) {
       const tmp2 = !isGuildVocalResult && !channel.isThread() && !channel.isForumLikeChannel();
       return tmp2;
     },
-    noChannelOptionLabel: intl.string(tmp(1127).t.PoWNfe),
+    noChannelOptionLabel: intl.string(tmp(1126).t.PoWNfe),
     onSelect(id) {
       let obj5;
       if (null != id) {
@@ -71,14 +71,14 @@ function openAlertChannelPicker(rule) {
     }
   };
   channel = null;
-  const tmp5 = onChangeRule(11847);
+  const tmp5 = onChangeRule(12102);
   if (null != channelId) {
     channel = ChannelStore.getChannel(channelId);
   }
   if (channel == null) {
     channel = null;
   }
-  intl = tmp(1127).intl;
+  intl = tmp(1126).intl;
   tmp5(obj);
 }
 const channelType = GuildChannelStore.GUILD_SELECTABLE_CHANNELS_KEY;
@@ -128,7 +128,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
           if (tmp15) {
             const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: items };
             items = [" ", tmp6.helperText];
-            tmp15 = metroImportDefault(tmp(4833).Text, obj3);
+            tmp15 = metroImportDefault(tmp(4886).Text, obj3);
           }
           cResult[9] = tmp6.helperText;
           cResult[10] = tmp15;
@@ -160,12 +160,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
             }
             if (cResult[19] !== tmp5) {
               let Yl1D84;
-              const intl = tmp(1127).intl;
+              const intl = tmp(1126).intl;
               const string = intl.string;
               if (null != tmp5) {
-                Yl1D84 = tmp(1127).t.G00RI5;
+                Yl1D84 = tmp(1126).t.G00RI5;
               } else {
-                Yl1D84 = tmp(1127).t.Yl1D84;
+                Yl1D84 = tmp(1126).t.Yl1D84;
               }
               const stringResult = string(Yl1D84);
               cResult[19] = tmp5;
@@ -212,7 +212,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
             tmp32 = tmp34;
           }
           const obj7 = { spacing: nativeDefault.space.PX_4, style: tmp4.subLabel, children: tmp17 };
-          const Stack = tmp(5280).Stack;
+          const Stack = tmp(5593).Stack;
           const tmp23 = metroRequire(Stack, obj7);
           cResult[14] = tmp4.subLabel;
           cResult[15] = tmp17;
@@ -274,27 +274,27 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     let Yl1D84;
     const icon = actionInfo.icon;
     const obj2 = { icon: metroRequire(TableRow2.TableRow.Icon, obj3), label: actionInfo.headerText, subLabel: metroRequire(Stack, obj4), trailing: metroRequire(FormCheckbox.FormCheckbox, obj7), accessibilityValue: obj8, disabled: !actionInfo.isEditable, onPress, arrow: true };
-    const TableRow = tmp3(5916).TableRow;
+    const TableRow = tmp3(5993).TableRow;
     obj3 = { IconComponent: icon };
     obj4 = { spacing: nativeDefault.space.PX_4, style: tmp.subLabel, children: metroImportDefault(Text, obj6) };
-    Stack = tmp3(5280).Stack;
+    Stack = tmp3(5593).Stack;
     const items = [actionInfo.descriptionText, ];
     let tmp9Result = null != actionInfo.helperText;
-    Text = tmp3(4833).Text;
+    Text = tmp3(4886).Text;
     if (tmp9Result) {
       const obj5 = { variant: "text-xs/medium", color: "text-subtle", children: items1 };
       items1 = [" ", actionInfo.helperText];
-      tmp9Result = tmp9(tmp3(4833).Text, obj5);
+      tmp9Result = tmp9(tmp3(4886).Text, obj5);
     }
     obj6 = { variant: "text-xs/medium", color: "text-subtle", children: items };
     items[1] = tmp9Result;
     obj7 = { checked: null != found };
-    const intl = tmp3(1127).intl;
+    const intl = tmp3(1126).intl;
     const string = intl.string;
     if (null != found) {
-      Yl1D84 = tmp3(1127).t.G00RI5;
+      Yl1D84 = tmp3(1126).t.G00RI5;
     } else {
-      Yl1D84 = tmp3(1127).t.Yl1D84;
+      Yl1D84 = tmp3(1126).t.Yl1D84;
     }
     obj8 = { text: string(Yl1D84) };
     return metroRequire(TableRow, obj2);
@@ -355,7 +355,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
     }
     const _Symbol = Symbol;
     const forResult = Symbol.for("react.early_return_sentinel");
-    const tmpResult = tmp(17312);
+    const tmpResult = tmp(17679);
     const availableActionTypes = tmpResult.getAvailableActionTypes(rule.triggerType);
     let tmp12 = null;
     let mapped;
@@ -365,10 +365,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
     if (0 !== availableActionTypes.length) {
       let tmp16;
       const _Symbol3 = Symbol;
-      const TableRowGroup = tmp(5997).TableRowGroup;
+      const TableRowGroup = tmp(6074).TableRowGroup;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
-        const stringResult = intl.string(tmp(1127).t["18TOiQ"]);
+        const intl = tmp(1126).intl;
+        const stringResult = intl.string(tmp(1126).t["18TOiQ"]);
         cResult[11] = stringResult;
         tmp16 = stringResult;
       } else {
@@ -439,7 +439,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
       };
       ({ triggerType: obj2.triggerType, actions: actions2 } = rule);
       ActionSheetActionCreatorsDefault;
-      const tmp16 = asyncRequire(17338, dependencyMap.paths);
+      const tmp16 = asyncRequire(17707, dependencyMap.paths);
       openLazy2(tmp16, "AutomodBlockMessage", obj5);
     } else if (AutomodActionType.USER_COMMUNICATION_DISABLED === arg0) {
       closure_0 = rule;
@@ -462,7 +462,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
       };
       ({ triggerType: obj.triggerType, actions } = rule);
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(17337, dependencyMap.paths);
+      const tmp8 = asyncRequire(17706, dependencyMap.paths);
       openLazy(tmp8, "AutomodTimeoutDuration", obj);
     } else {
       const QUARANTINE_USER = tmp.QUARANTINE_USER;
@@ -478,13 +478,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
   const onChangeRule = rule.onChangeRule;
   let tmp = rule;
   let tmp2 = dependencyMap;
-  let obj = rule(17312);
+  let obj = rule(17679);
   const availableActionTypes = obj.getAvailableActionTypes(rule.triggerType);
   let tmp3 = null;
   if (0 !== availableActionTypes.length) {
     let tmp4 = closure_6;
     let obj2 = {
-      title: intl.string(tmp(1127).t["18TOiQ"]),
+      title: intl.string(tmp(1126).t["18TOiQ"]),
       hasIcons: true,
       children: availableActionTypes.map((actionType) => {
           rule = actionType;
@@ -528,7 +528,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
                 };
                 ({ triggerType: obj2.triggerType, actions: actions2 } = rule);
                 ActionSheetActionCreatorsDefault;
-                const tmp17 = asyncRequire(17338, dependencyMap.paths);
+                const tmp17 = asyncRequire(17707, dependencyMap.paths);
                 openLazy2(tmp17, "AutomodBlockMessage", obj5);
               } else if (tmp2.USER_COMMUNICATION_DISABLED === tmp) {
                 let tmp3 = rule;
@@ -553,7 +553,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
                 };
                 ({ triggerType: obj.triggerType, actions } = rule);
                 ActionSheetActionCreatorsDefault;
-                const tmp9 = asyncRequire(17337, dependencyMap.paths);
+                const tmp9 = asyncRequire(17706, dependencyMap.paths);
                 openLazy(tmp9, "AutomodTimeoutDuration", obj);
               } else {
                 const QUARANTINE_USER = tmp2.QUARANTINE_USER;
@@ -563,8 +563,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
           return closure_1_6(closure_1_10, obj, actionType);
         })
     };
-    const TableRowGroup = tmp(5997).TableRowGroup;
-    intl = tmp(1127).intl;
+    const TableRowGroup = tmp(6074).TableRowGroup;
+    intl = tmp(1126).intl;
     tmp3 = closure_6(TableRowGroup, obj2);
   }
   return tmp3;

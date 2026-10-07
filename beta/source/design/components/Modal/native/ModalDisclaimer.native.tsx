@@ -1,21 +1,21 @@
-// Module ID: 13997
-// Function ID: 13998
+// Module ID: 14274
+// Function ID: 14275
 // Name: ModalDisclaimer
-// Dependencies: [19, 17, 21, 4837, 558, 576, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 4886, 2]
 
-// Module 13997 (ModalDisclaimer)
+// Module 14274 (ModalDisclaimer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let children;
 
 let tmp;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flexDirection: "column", alignItems: "center" }, disclaimer: { marginBottom: 12 } });

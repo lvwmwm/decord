@@ -1,13 +1,13 @@
-// Module ID: 4887
-// Function ID: 4888
+// Module ID: 4940
+// Function ID: 4941
 // Name: RTCRegionStore
-// Dependencies: [1103, 504, 12, 585, 2]
+// Dependencies: [1102, 504, 12, 584, 2]
 
-// Module 4887 (RTCRegionStore)
+// Module 4940 (RTCRegionStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

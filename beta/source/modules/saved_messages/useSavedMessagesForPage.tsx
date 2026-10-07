@@ -1,21 +1,21 @@
-// Module ID: 12862
-// Function ID: 12863
+// Module ID: 13124
+// Function ID: 13125
 // Name: useSavedMessagesForPage
-// Dependencies: [32, 19, 11025, 7289, 558, 576, 12863, 1376, 504, 2]
+// Dependencies: [32, 19, 11283, 7495, 558, 576, 13125, 1375, 504, 2]
 
-// Module 12862 (useSavedMessagesForPage)
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7289 */;
-import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 12863 */;
+// Module 13124 (useSavedMessagesForPage)
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
+import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 13125 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11025 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let addChangeListenerResult, closure_0, dependencyMap, importDefault, map;
 
-const f112874 = (saveData) => saveData.saveData;
+const f114073 = (saveData) => saveData.saveData;
 function getSavedMessagesForType(arg0) {
   if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === arg0) {
     return SavedMessagesStore.getMessageBookmarks();
@@ -42,7 +42,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = ALL(576);
   const cResult = obj.c(9);
   if (undefined === arg0) {
-    ALL = tmp(7289).SavedMessageSortTypes.ALL;
+    ALL = tmp(7495).SavedMessageSortTypes.ALL;
   }
   if (cResult[0] !== ALL) {
     const fn = function u() {
@@ -55,7 +55,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else {
         messageBookmarks = SavedMessagesStore.getSavedMessages();
       }
-      return messageBookmarks.map(f112874);
+      return messageBookmarks.map(f114073);
     };
     cResult[0] = ALL;
     cResult[1] = fn;
@@ -89,15 +89,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const tmp4 = require;
                 if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
                   messageBookmarks = obj.getMessageBookmarks();
-                } else if (tmp4(7289).SavedMessageSortTypes.REMINDER === tmp3) {
+                } else if (tmp4(7495).SavedMessageSortTypes.REMINDER === tmp3) {
                   messageBookmarks = obj.getMessageReminders();
                 } else {
                   messageBookmarks = obj.getSavedMessages();
                 }
-                tmp2(messageBookmarks.map(f112874));
+                tmp2(messageBookmarks.map(f114073));
               }
             }
-            closure_2(() => { /* body not rendered: F150976 */ });
+            closure_2(() => { /* body not rendered: F152777 */ });
           }
         };
         addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
@@ -129,15 +129,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const tmp4 = require;
                 if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
                   messageBookmarks = obj.getMessageBookmarks();
-                } else if (tmp4(7289).SavedMessageSortTypes.REMINDER === tmp3) {
+                } else if (tmp4(7495).SavedMessageSortTypes.REMINDER === tmp3) {
                   messageBookmarks = obj.getMessageReminders();
                 } else {
                   messageBookmarks = obj.getSavedMessages();
                 }
-                tmp2(messageBookmarks.map(f112874));
+                tmp2(messageBookmarks.map(f114073));
               }
             }
-            closure_2(() => { /* body not rendered: F150976 */ });
+            closure_2(() => { /* body not rendered: F152777 */ });
           }
         };
         addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = cResult[5];
   }
   const effect = obj2.useEffect(tmp10, tmp11);
-  first(12863)();
+  first(13125)();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class M {
       constructor() {
@@ -167,15 +167,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const tmp4 = require;
                 if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
                   messageBookmarks = obj.getMessageBookmarks();
-                } else if (tmp4(7289).SavedMessageSortTypes.REMINDER === tmp3) {
+                } else if (tmp4(7495).SavedMessageSortTypes.REMINDER === tmp3) {
                   messageBookmarks = obj.getMessageReminders();
                 } else {
                   messageBookmarks = obj.getSavedMessages();
                 }
-                tmp2(messageBookmarks.map(f112874));
+                tmp2(messageBookmarks.map(f114073));
               }
             }
-            closure_2(() => { /* body not rendered: F150976 */ });
+            closure_2(() => { /* body not rendered: F152777 */ });
           }
         };
         addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
@@ -204,15 +204,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const tmp4 = require;
                 if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
                   messageBookmarks = obj.getMessageBookmarks();
-                } else if (tmp4(7289).SavedMessageSortTypes.REMINDER === tmp3) {
+                } else if (tmp4(7495).SavedMessageSortTypes.REMINDER === tmp3) {
                   messageBookmarks = obj.getMessageReminders();
                 } else {
                   messageBookmarks = obj.getSavedMessages();
                 }
-                tmp2(messageBookmarks.map(f112874));
+                tmp2(messageBookmarks.map(f114073));
               }
             }
-            closure_2(() => { /* body not rendered: F150976 */ });
+            closure_2(() => { /* body not rendered: F152777 */ });
           }
         };
         addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
@@ -251,7 +251,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (arg0 === undefined) {
     let tmp = ALL;
     let tmp2 = dependencyMap;
-    ALL = ALL(7289).SavedMessageSortTypes.ALL;
+    ALL = ALL(7495).SavedMessageSortTypes.ALL;
   }
   importDefault = undefined;
   dependencyMap = undefined;
@@ -266,7 +266,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       messageBookmarks = SavedMessagesStore.getSavedMessages();
     }
-    return messageBookmarks.map(f112874);
+    return messageBookmarks.map(f114073);
   }), 2);
   [c1, c2] = tmp3;
   _slicedToArray = react.useRef(SavedMessagesStore.getIsStale());
@@ -286,12 +286,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const tmp4 = require;
             if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
               messageBookmarks = obj.getMessageBookmarks();
-            } else if (tmp4(7289).SavedMessageSortTypes.REMINDER === tmp3) {
+            } else if (tmp4(7495).SavedMessageSortTypes.REMINDER === tmp3) {
               messageBookmarks = obj.getMessageReminders();
             } else {
               messageBookmarks = obj.getSavedMessages();
             }
-            tmp2(messageBookmarks.map(f112874));
+            tmp2(messageBookmarks.map(f114073));
           }
         }
         c2((arg0) => {

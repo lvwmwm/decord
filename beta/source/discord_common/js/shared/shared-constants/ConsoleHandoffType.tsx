@@ -1,9 +1,9 @@
-// Module ID: 9222
-// Function ID: 9223
+// Module ID: 9449
+// Function ID: 9450
 // Name: ConsoleHandoffType
 // Dependencies: [2]
 
-// Module 9222 (ConsoleHandoffType)
+// Module 9449 (ConsoleHandoffType)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set(["CREATE_NEW_CALL", "TRANSFER_EXISTING_CALL"]) };

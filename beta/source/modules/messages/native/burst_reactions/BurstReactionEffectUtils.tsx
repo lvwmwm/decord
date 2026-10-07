@@ -1,42 +1,37 @@
-// Module ID: 7207
-// Function ID: 7208
+// Module ID: 7412
+// Function ID: 7413
 // Name: burst_reactions/BurstReactionEffectUtils
-// Dependencies: [5, 32, 19, 17, 558, 576, 4490, 7208, 1403, 1370, 7245, 2]
+// Dependencies: [5, 32, 19, 17, 558, 576, 4527, 7413, 1886, 1369, 7450, 2]
 
-// Module 7207 (burst_reactions/BurstReactionEffectUtils)
-import EmojiUtils from "EmojiUtils" /* 4490 */;
-import getBurstAnimation from "getBurstAnimation" /* 7208 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+// Module 7412 (burst_reactions/BurstReactionEffectUtils)
 import react_native from "react-native" /* 17 */;
+import EmojiUtils from "EmojiUtils" /* 4527 */;
+import getBurstAnimation from "getBurstAnimation" /* 7413 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, channelId;
+let c2, c3, channelId, stringify;
 
-let hasOwnProperty;
-let metroRequire;
 function generateAnimationSource(arg0, arg1, arg2, arg3) {
   return obj(...arguments);
 }
 let obj = function _generateAnimationSource() {
-  obj = _asyncToGenerator(async (arg0, arg1, arg2, arg3) => {
+  obj = _asyncToGenerator(async (arg0, arg1, uri, arg3) => {
     let closure_10;
     let closure_11;
-    let closure_5;
-    let closure_6;
     let closure_9;
     let user = arg0;
     let closure_1 = arg1;
-    let closure_2 = arg2;
     let closure_3 = arg3;
-    let c9 = 0;
     let c10 = 0;
-    let c8 = 0;
+    let c11 = 0;
+    let c9 = 0;
     return (async (arg0, value, arg2, arg3) => {
-      if (c10 === 2) {
-        c10 = 3;
+      if (c11 === 2) {
+        c11 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -47,159 +42,164 @@ let obj = function _generateAnimationSource() {
           return { value: "IconComponent", done: null };
         }
       } else {
+        let c9;
         try {
+          let obj13;
           let closure_4;
-          let p;
-          let tmp;
-          let closure_8;
+          let _var;
           let r;
           let g;
           let b;
-          let ImageManager;
-          c10 = 2;
-          if (0 === c9) {
+          c11 = 2;
+          if (0 === c10) {
             if (arg0 === 1) {
-              c10 = 3;
+              c11 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c10 = 3;
+              c11 = 3;
               return { value, done: true };
             } else {
-              user = closure_2;
-              closure_1 = undefined;
-              closure_2 = undefined;
+              user = uri;
+              obj13 = undefined;
+              uri = undefined;
               closure_3 = undefined;
               closure_4 = undefined;
-              p = undefined;
-              tmp = undefined;
+              _var = undefined;
+              stringify = undefined;
               closure_7 = undefined;
               closure_8 = undefined;
               r = undefined;
               g = undefined;
               b = undefined;
-              c8 = 1;
-              const obj6 = { animated: false };
+              c9 = 1;
+              const obj4 = { animated: false };
               const getEmojiUrl = EmojiUtils.getEmojiUrl;
               EmojiUtils;
-              const merged = Object.assign(closure_2);
-              const emojiUrl = getEmojiUrl(obj6, 128);
+              const merged = Object.assign(uri);
+              const emojiUrl = getEmojiUrl(obj4, 128);
               c4 = emojiUrl;
-              const tmp70 = closure_2;
+              const tmp69 = uri;
               if (emojiUrl == null) {
                 c4 = "";
               }
-              closure_2 = c4;
-              ImageManager = getBurstAnimation;
-              c9 = 2;
-              c10 = 1;
-              const obj7 = { value: ImageManager.getBurstAnimation(user, closure_1, tmp70.name, closure_3), done: false };
-              return obj7;
+              uri = c4;
+              stringify = getBurstAnimation;
+              c10 = 2;
+              c11 = 1;
+              const obj6 = { value: stringify.getBurstAnimation(user, closure_1, tmp69.name, closure_3), done: false };
+              return obj6;
             }
-          } else if (1 === c9) {
-            c8 = 0;
-            c10 = 3;
+          } else if (1 === c10) {
+            c9 = 0;
+            c11 = 3;
             return { value: null, done: true };
-          } else if (2 === c9) {
+          } else if (2 === c10) {
             if (arg0 === 1) {
-              c10 = 3;
+              c11 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c8 = 0;
-              c10 = 3;
+              c9 = 0;
+              c11 = 3;
               return { value, done: true };
             } else {
               closure_3 = value;
-              if ("" !== closure_2) {
-                const obj9 = closure_134_0(closure_134_1[8]);
-                closure_1 = obj9.makeSource(closure_2);
-                ImageManager = closure_134_5.ImageManager;
-                c9 = 3;
-                c10 = 1;
-                const obj10 = { value: ImageManager.getAvatarBase64(closure_1), done: false };
-                return obj10;
+              if ("" !== uri) {
+                obj13 = { uri };
+                const obj8 = { uri };
+                stringify = closure_135_1(closure_135_2[8]);
+                c10 = 3;
+                c11 = 1;
+                const obj9 = { value: stringify.getAvatarBase64(obj13), done: false };
+                return obj9;
               } else {
-                const ImageManager2 = closure_134_5.ImageManager;
-                ImageManager = ImageManager2.getEmojiBase64(user.name, 128);
-                c9 = 4;
-                c10 = 1;
-                return { value: ImageManager, done: false };
+                stringify = closure_135_1(closure_135_2[8]).getEmojiBase64;
+                const name = user.name;
+                let c5 = name;
+                closure_135_1(closure_135_2[8]);
+                if (name == null) {
+                  c5 = "";
+                }
+                stringify = stringify(c5, 128);
+                c10 = 4;
+                c11 = 1;
+                return { value: stringify, done: false };
               }
             }
           } else {
-            if (3 === c9) {
+            if (3 === c10) {
               if (arg0 === 1) {
-                c10 = 3;
+                c11 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c8 = 0;
-                c10 = 3;
+                c9 = 0;
+                c11 = 3;
                 return { value, done: true };
               } else {
                 closure_4 = value;
-                ImageManager = closure_4;
+                stringify = closure_4;
                 const _HermesInternal2 = HermesInternal;
                 closure_3.assets[0].p = "data:image/png;base64," + closure_4;
               }
-            } else if (4 === c9) {
+            } else if (4 === c10) {
               if (arg0 === 1) {
-                c10 = 3;
+                c11 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c8 = 0;
-                c10 = 3;
+                c9 = 0;
+                c11 = 3;
                 return { value, done: true };
               } else {
                 const _HermesInternal = HermesInternal;
-                p = "data:image/png;base64," + value;
-                closure_3.assets[0].p = p;
-                const obj3 = closure_134_0(closure_134_1[8]);
-                closure_1 = obj3.makeSource(p);
+                _var = "data:image/png;base64," + value;
+                closure_3.assets[0].p = _var;
+                obj13 = { uri: _var };
+                stringify = _var;
               }
             } else if (arg0 === 1) {
-              c10 = 3;
+              c11 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c8 = 0;
-              c10 = 3;
+              c9 = 0;
+              c11 = 3;
               return { value, done: true };
             } else {
               closure_7 = value;
-              closure_8 = closure_134_3(closure_7[0], 3);
+              closure_8 = closure_135_4(closure_7[0], 3);
               r = closure_8[0];
               g = closure_8[1];
               b = closure_8[2];
               const obj16 = { r, g, b };
-              const obj15 = closure_134_0(closure_134_1[10]);
-              tmp = obj15.replaceAnimationColors(tmp, obj16);
+              const obj15 = closure_135_0(closure_135_2[10]);
+              stringify = obj15.replaceAnimationColors(stringify, obj16);
               const _JSON2 = JSON;
-              c8 = 0;
-              c10 = 3;
-              obj = { value: JSON.parse(tmp), done: true };
+              c9 = 0;
+              c11 = 3;
+              obj = { value: JSON.parse(stringify), done: true };
               return obj;
             }
             const _JSON = JSON;
-            ImageManager = JSON.stringify;
-            tmp = ImageManager(closure_3);
+            stringify = JSON.stringify;
+            stringify = stringify(closure_3);
             if (null == user.id) {
-              tmp = tmp.replace(/"a":{"a":0,"k":\[64,64/, "\"a\":{\"a\":0,\"k\":[36,36");
-              const obj5 = closure_134_0(closure_134_1[9]);
+              stringify = stringify.replace(/"a":{"a":0,"k":\[64,64/, "\"a\":{\"a\":0,\"k\":[36,36");
+              const obj5 = closure_135_0(closure_135_2[9]);
               if (obj5.isAndroid()) {
-                tmp = tmp.replace(/"w":128,"h":128/, "\"w\":72,\"h\":72");
+                stringify = stringify.replace(/"w":128,"h":128/, "\"w\":72,\"h\":72");
               }
             }
-            ImageManager = closure_134_5.ImageManager;
-            c9 = 5;
-            c10 = 1;
-            const obj17 = { value: ImageManager.getDominantColors(closure_1), done: false };
+            stringify = closure_135_1(closure_135_2[8]);
+            c10 = 5;
+            c11 = 1;
+            const obj17 = { value: stringify.getDominantColors(obj13), done: false };
             return obj17;
           }
-        } catch (tmp42) {
-          closure_7 = tmp42;
-          if (0 === c8) {
-            c10 = 3;
-            throw tmp42;
+        } catch (tmp41) {
+          closure_8 = tmp41;
+          if (0 === c9) {
+            c11 = 3;
+            throw tmp41;
           } else {
-            c9 = 1;
+            c10 = 1;
           }
         }
       }
@@ -212,7 +212,7 @@ function generateAnimationSourceFromLocalImage(arg0) {
 }
 obj = function _generateAnimationSourceFromLocalImage() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_10;
+    let closure_7;
     let closure_8;
     let closure_9;
     let assets = arg0;
@@ -222,6 +222,8 @@ obj = function _generateAnimationSourceFromLocalImage() {
     const iter = (async (arg0, value) => {
       let c0;
       let c1;
+      let obj12;
+      let obj5;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -235,11 +237,9 @@ obj = function _generateAnimationSourceFromLocalImage() {
         }
       } else {
         try {
-          let uri;
           let closure_4;
           let closure_5;
           let closure_6;
-          let closure_7;
           let r;
           let g;
           let b;
@@ -252,23 +252,21 @@ obj = function _generateAnimationSourceFromLocalImage() {
               c6 = 3;
               return { value, done: true };
             } else {
-              closure_2 = tmp;
               closure_1 = tmp4;
               assets = undefined;
               c1 = undefined;
               ({ animationSource: c0, localImageSource: c1 } = closure_0);
-              uri = undefined;
+              closure_2 = undefined;
               closure_3 = undefined;
               closure_4 = undefined;
               closure_5 = undefined;
               closure_6 = undefined;
-              closure_7 = undefined;
               r = undefined;
               g = undefined;
               b = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -278,15 +276,21 @@ obj = function _generateAnimationSourceFromLocalImage() {
               c6 = 3;
               return { value, done: true };
             } else {
+              let first;
               c4 = 1;
-              uri = closure_130_6.resolveAssetSource(c1).uri;
-              const obj11 = closure_130_0(closure_130_1[8]);
-              closure_3 = obj11.makeSource(uri);
-              const ImageManager2 = closure_130_5.ImageManager;
+              const _Array = Array;
+              const resolveAssetSource = closure_130_6.resolveAssetSource;
+              if (Array.isArray(c1)) {
+                first = tmp47[0];
+              } else {
+                first = tmp47;
+              }
+              closure_2 = resolveAssetSource(first);
               c5 = 3;
               c6 = 1;
-              const obj5 = { value: ImageManager2.getAvatarBase64(closure_3), done: false };
-              return obj5;
+              const obj6 = { value: obj5.getAvatarBase64(closure_2), done: false };
+              obj5 = closure_130_1(closure_130_2[8]);
+              return obj6;
             }
           } else if (2 === c5) {
             c4 = 0;
@@ -301,16 +305,16 @@ obj = function _generateAnimationSourceFromLocalImage() {
               c6 = 3;
               return { value, done: true };
             } else {
-              closure_4 = value;
+              closure_3 = value;
               const _HermesInternal = HermesInternal;
-              assets.assets[0].p = "data:image/png;base64," + closure_4;
+              assets.assets[0].p = "data:image/png;base64," + closure_3;
               const _JSON2 = JSON;
-              closure_5 = JSON.stringify(assets);
-              const ImageManager = closure_130_5.ImageManager;
+              closure_4 = JSON.stringify(assets);
               c5 = 4;
               c6 = 1;
-              const obj7 = { value: ImageManager.getDominantColors(closure_3), done: false };
-              return obj7;
+              const obj8 = { value: obj12.getDominantColors(closure_2), done: false };
+              obj12 = closure_130_1(closure_130_2[8]);
+              return obj8;
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -320,25 +324,25 @@ obj = function _generateAnimationSourceFromLocalImage() {
             c6 = 3;
             return { value, done: true };
           } else {
-            closure_6 = value;
-            closure_7 = closure_130_3(closure_6[0], 3);
-            r = closure_7[0];
-            g = closure_7[1];
-            b = closure_7[2];
-            const obj10 = { r, g, b };
-            const obj9 = closure_130_0(closure_130_1[10]);
-            closure_5 = obj9.replaceAnimationColors(closure_5, obj10);
+            closure_5 = value;
+            closure_6 = closure_130_4(closure_5[0], 3);
+            r = closure_6[0];
+            g = closure_6[1];
+            b = closure_6[2];
+            const obj11 = { r, g, b };
+            const obj10 = closure_130_0(closure_130_2[10]);
+            closure_4 = obj10.replaceAnimationColors(closure_4, obj11);
             const _JSON = JSON;
             c4 = 0;
             c6 = 3;
-            obj = { value: JSON.parse(closure_5), done: true };
+            obj = { value: JSON.parse(closure_4), done: true };
             return obj;
           }
-        } catch (tmp7) {
-          closure_3 = tmp7;
+        } catch (tmp13) {
+          closure_3 = tmp13;
           if (0 === c4) {
             c6 = 3;
-            throw tmp7;
+            throw tmp13;
           } else {
             c5 = 2;
           }
@@ -350,21 +354,20 @@ obj = function _generateAnimationSourceFromLocalImage() {
   });
   return obj(...arguments);
 };
-let react = react_mod;
-({ NativeModules: hasOwnProperty, Image: metroRequire } = react_native);
+let _slicedToArray = _slicedToArray_mod;
+const Image = react_native.Image;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let closure_4;
-  let messageId;
-  obj = channelId(messageId[5]);
+  let emoji;
+  obj = channelId(emoji[5]);
   const cResult = obj.c(6);
   channelId = channelId.channelId;
-  messageId = channelId.messageId;
-  const emoji = channelId.emoji;
+  const messageId = channelId.messageId;
+  emoji = channelId.emoji;
   const isFullscreen = channelId.isFullscreen;
   let obj2 = react;
-  const tmp2 = isFullscreen(react.useState(null), 2);
-  react = tmp2[1];
+  [, _slicedToArray] = react.useState(null);
   if (cResult[0] === channelId) {
     if (cResult[1] === emoji) {
       if (cResult[2] === isFullscreen) {
@@ -383,7 +386,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     function getSource() {
       return closure_0(...arguments);
     }
-    let closure_0 = emoji(function*(arg0, value) {
+    let closure_0 = isFullscreen(function*(arg0, value) {
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -449,15 +452,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   tmp4 = fn;
 }) : ((channelId) => {
   let closure_4;
+  let first;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   const emoji = channelId.emoji;
   const isFullscreen = channelId.isFullscreen;
-  react = undefined;
-  let tmp = isFullscreen(react.useState(null), 2);
-  react = tmp[1];
+  _slicedToArray = undefined;
+  [first, _slicedToArray] = react.useState(null);
   const items = [channelId, messageId, emoji, isFullscreen];
-  const first = tmp[0];
   const effect = react.useEffect(() => {
     function getSource() {
       return obj(...arguments);
@@ -524,15 +526,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperReactionAnimationSourceFromLocalImage(animationSource) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperReactionAnimationSourceFromLocalImage(animationSource) {
   let closure_2;
-  let localImageSource;
-  obj = animationSource(localImageSource[5]);
+  obj = animationSource(576);
   const cResult = obj.c(4);
   animationSource = animationSource.animationSource;
-  localImageSource = animationSource.localImageSource;
+  let localImageSource = animationSource.localImageSource;
   let obj2 = react;
-  [, closure_2] = react.useState(null);
+  [, dependencyMap] = react.useState(null);
   if (cResult[0] === animationSource) {
     let tmp4;
     let tmp5;
@@ -547,7 +548,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperReac
     function getSource() {
       return closure_0(...arguments);
     }
-    let closure_0 = closure_2(function*(arg0, value) {
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
       let v1;
       if (c3 === 2) {
         c3 = 3;
@@ -683,7 +684,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperReac
 });
 const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionEffectUtils.tsx");
 
-export const useBurstReactionAnimationSource = tmp3;
-export const useSuperReactionAnimationSourceFromLocalImage = tmp4;
+export const useBurstReactionAnimationSource = tmp2;
+export const useSuperReactionAnimationSourceFromLocalImage = tmp3;
 export const EMOJI_IN_ANIMATION_SIZE = 128;
 export const BACKDROP_OPACITY = 0.8;

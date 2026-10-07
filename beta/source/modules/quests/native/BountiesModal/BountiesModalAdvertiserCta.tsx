@@ -1,24 +1,24 @@
-// Module ID: 14570
-// Function ID: 14571
+// Module ID: 14854
+// Function ID: 14855
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [109, 19, 17, 4826, 5757, 21, 4570, 4837, 588, 4838, 4841, 558, 576, 14553, 9771, 5288, 10675, 10683, 5764, 7145, 5762, 5896, 4833, 5282, 8060, 14533, 504, 14534, 9420, 2]
+// Dependencies: [109, 19, 17, 4879, 5623, 21, 4612, 4890, 587, 4891, 4894, 558, 576, 14837, 10000, 5601, 10916, 10918, 5630, 7212, 5628, 5974, 4886, 5594, 8576, 14817, 504, 14818, 9647, 2]
 
-// Module 14570 (BountiesModalAdvertiserCta)
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
-import timingPresets from "timingPresets" /* 4841 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
-import QuestContent from "QuestContent" /* 5762 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10683 */;
+// Module 14854 (BountiesModalAdvertiserCta)
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
+import timingPresets from "timingPresets" /* 4894 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import QuestContent from "QuestContent" /* 5628 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10918 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -43,11 +43,11 @@ let closure_16 = createStyles.createStyles(() => {
   let obj2;
   let obj4;
   let rect;
-  const obj = { outerContainer: rect, ctaPressable: obj2, cta: { flexDirection: "row", alignItems: "center", paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 }, ctaLogoContainer: size, ctaLogo: obj4, ctaInfo: { flex: 1, justifyContent: "center" } };
+  const obj = { outerContainer: rect, ctaPressable: obj2, cta: { flexDirection: "row", alignItems: "center", paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.lg, overflow: "hidden" }, ctaLogoContainer: size, ctaLogo: obj4, ctaInfo: { flex: 1, justifyContent: "center" } };
   rect = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, alignItems: "center" };
-  obj2 = { alignSelf: "stretch", borderWidth: 1, borderColor: "transparent", borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+  obj2 = { alignSelf: "stretch", borderRadius: nativeDefault.radii.lg };
   const merged = Object.assign(nativeDefault.shadows.SHADOW_TOP_HIGH);
-  ({ flexDirection: "row", alignItems: "center", paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 });
+  ({ flexDirection: "row", alignItems: "center", paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.lg, overflow: "hidden" });
   size = { width: v40, height: v40, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md, overflow: "hidden" };
   obj4 = {};
   const merged1 = Object.assign(metroImportAll.absoluteFillObject);

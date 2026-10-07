@@ -1,27 +1,27 @@
-// Module ID: 9642
-// Function ID: 9643
+// Module ID: 9868
+// Function ID: 9869
 // Name: EmojiPickerActionSheet
-// Dependencies: [32, 19, 17, 1378, 9643, 1086, 1381, 21, 4837, 588, 7186, 4570, 9644, 6399, 1619, 1370, 6584, 6604, 9651, 4801, 9640, 9652, 4833, 1127, 6472, 9654, 4491, 9630, 1987, 4802, 4803, 9667, 6572, 4710, 9668, 9705, 9727, 2]
+// Dependencies: [32, 19, 17, 1377, 9869, 1085, 1380, 21, 4890, 587, 7259, 4612, 9870, 6471, 1618, 1369, 6657, 6681, 9877, 4854, 9866, 9878, 4886, 1126, 6547, 9880, 4528, 9856, 1987, 4855, 4856, 9893, 6645, 4752, 9894, 9932, 9954, 2]
 // Exports: default
 
-// Module 9642 (EmojiPickerActionSheet)
+// Module 9868 (EmojiPickerActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import SearchField2 from "SearchField" /* 6472 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9640 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9643 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 9644 */;
-import BurstReactionToggleDefault from "BurstReactionToggle" /* 9654 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import SearchField2 from "SearchField" /* 6547 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9866 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9869 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 9870 */;
+import BurstReactionToggleDefault from "BurstReactionToggle" /* 9880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -35,7 +35,7 @@ let obj6;
 let obj7;
 let tmp5;
 let unpackModuleId;
-const DoubleTapReminderToast = tmp5(9652);
+const DoubleTapReminderToast = tmp5(9878);
 let react = react_mod;
 const View = react_native.View;
 const EmojiPickerSource = EmojiPickerListConstants.EmojiPickerSource;
@@ -101,7 +101,7 @@ export default function EmojiPickerActionSheet(onClose) {
   let obj2 = onClose(pickerIntention[11]);
   const sharedValue = obj2.useSharedValue(0);
   let obj3 = onClose(pickerIntention[12]);
-  const emojiCategories = obj3.useEmojiCategories(pickerIntention, channel, guildId, false, bypassPremiumEmojiEntitlement);
+  const emojiCategories = obj3.useEmojiCategories(pickerIntention, channel, { guildId, bypassPremiumEmojiEntitlement });
   let bottom = onPressEmoji(pickerIntention[13])().insets.bottom;
   const bottom2 = onPressEmoji(pickerIntention[14])().bottom;
   let obj4 = onClose(pickerIntention[15]);
@@ -123,9 +123,9 @@ export default function EmojiPickerActionSheet(onClose) {
     }
   }, items);
   let items2 = [tmp6, bottom2];
-  const callback1 = obj.useCallback((emoji) => {
+  const callback1 = obj.useCallback((name) => {
     if (onPressEmoji != null) {
-      tmp(emoji, closure_6);
+      tmp(name, closure_6);
     }
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet(openEmojiPickerActionSheet.EMOJI_PICKER_ACTION_SHEET_KEY);
@@ -138,7 +138,7 @@ export default function EmojiPickerActionSheet(onClose) {
     }
     if (!tmp7) {
       const tmp5Result = DoubleTapReminderToast;
-      const result = tmp5Result.maybeShowDoubleTapReminderToast(emoji);
+      const result = tmp5Result.maybeShowDoubleTapReminderToast(name);
     }
   }, items1);
   const memo = obj.useMemo(() => {

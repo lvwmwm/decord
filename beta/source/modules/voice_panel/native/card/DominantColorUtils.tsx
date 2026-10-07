@@ -1,30 +1,28 @@
-// Module ID: 8286
-// Function ID: 8287
+// Module ID: 8482
+// Function ID: 8483
 // Name: DominantColorUtils
-// Dependencies: [32, 19, 17, 1445, 558, 576, 4685, 588, 568, 2]
+// Dependencies: [32, 19, 17, 1444, 558, 576, 4727, 587, 568, 1886, 2]
 // Exports: getCachedSourceFromURI
 
-// Module 8286 (DominantColorUtils)
-import nativeDefault from "native" /* 588 */;
-import LRUCacheDefault from "LRUCache" /* 1445 */;
+// Module 8482 (DominantColorUtils)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import LRUCacheDefault from "LRUCache" /* 1444 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault, uri;
 
-let hasOwnProperty;
-let metroRequire;
-({ NativeModules: hasOwnProperty, Image: metroRequire } = react_native);
+const Image = react_native.Image;
+let tmp2 = new LRUCacheDefault({ max: 1000 });
+let closure_6 = tmp2;
 let tmp3 = new LRUCacheDefault({ max: 1000 });
 let closure_7 = tmp3;
-let tmp4 = new LRUCacheDefault({ max: 1000 });
-let closure_8 = tmp4;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
   let closure_1;
   let tmp13;
   let tmp14;
@@ -39,7 +37,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
   let obj2 = react;
   importDefault = react.useRef(true);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
+    const fn = function l() {
       return () => {
         closure_1_1.current = false;
       };
@@ -56,10 +54,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
   if (cResult[2] !== uri) {
     let hexToRgbResult;
     if (null != uri) {
-      hexToRgbResult = closure_7.get(uri);
+      hexToRgbResult = closure_6.get(uri);
     }
     if (hexToRgbResult == null) {
-      const tmpResult = tmp(4685);
+      const tmpResult = tmp(4727);
       hexToRgbResult = tmpResult.hexToRgb(nativeDefault.unsafe_rawColors.PRIMARY_800);
     }
     cResult[2] = uri;
@@ -68,138 +66,75 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
   } else {
     tmp7 = cResult[3];
   }
-  [tmp13, dependencyMap] = obj2.useState(tmp7);
-  _slicedToArray(obj2.useState(tmp7), 2);
+  [tmp13, dependencyMap] = _slicedToArray(obj2.useState(tmp7), 2);
+  const tmp12 = _slicedToArray(obj2.useState(tmp7), 2);
   if (cResult[4] !== uri) {
-    class R {
-      constructor() {
-        let ref;
-        let value;
-        if (null != uri) {
-          value = closure_1_7.get(str);
-        }
-        uri = value;
-        if (null != uri) {
-          if (null == value) {
-            let obj = closure_1_8;
-            let value2 = closure_1_8.get(str);
-            if (value2 == null) {
-              let tmp6 = str;
-              if (typeof uri !== "number") {
-                let tmp7 = null;
-                if (null != uri) {
-                  tmp7 = null;
-                  if ("" !== uri.trim()) {
-                    tmp7 = { uri };
-                    const obj2 = { uri };
-                  }
+    const fn2 = function v() {
+      let value;
+      if (null != uri) {
+        value = closure_1_6.get(str);
+      }
+      uri = value;
+      if (null != uri) {
+        if (null == value) {
+          let obj = closure_1_7;
+          let value2 = closure_1_7.get(str);
+          if (value2 == null) {
+            let tmp6 = str;
+            if (typeof uri !== "number") {
+              let tmp7 = null;
+              if (null != uri) {
+                tmp7 = null;
+                if ("" !== uri.trim()) {
+                  tmp7 = { uri };
+                  const obj2 = { uri };
                 }
-                tmp6 = tmp7;
               }
-              value2 = tmp6;
+              tmp6 = tmp7;
             }
-            let result = obj.set(str, value2);
-            if (null != value2) {
-              let dominantColorsLocalAsset;
-              if (typeof value2 === "number") {
-                const ImageManager = closure_1_5.ImageManager;
-                dominantColorsLocalAsset = ImageManager.getDominantColorsLocalAsset(closure_1_6.resolveAssetSource(value2));
-              } else {
-                const ImageManager2 = closure_1_5.ImageManager;
-                dominantColorsLocalAsset = ImageManager2.getDominantColors(closure_1_6.resolveAssetSource(value2));
+            value2 = tmp6;
+          }
+          let result = obj.set(str, value2);
+          if (null != value2) {
+            let dominantColorsLocalAsset;
+            if (typeof value2 === "number") {
+              const obj3 = ref(dependencyMap[9]);
+              dominantColorsLocalAsset = obj3.getDominantColorsLocalAsset(Image.resolveAssetSource(value2));
+            } else {
+              const obj4 = ref(dependencyMap[9]);
+              dominantColorsLocalAsset = obj4.getDominantColors(Image.resolveAssetSource(value2));
+            }
+            const nextPromise = dominantColorsLocalAsset.then((result) => {
+              const tmp = _slicedToArray(result[0], 3);
+              const obj = { r: tmp[0], g: tmp[1], b: tmp[2] };
+              result = closure_2_6.set(closure_0, obj);
+              if (ref.current) {
+                closure_1_2(obj);
               }
-              const nextPromise = dominantColorsLocalAsset.then((result) => {
-                const tmp = _slicedToArray(result[0], 3);
-                const obj = { r: tmp[0], g: tmp[1], b: tmp[2] };
-                result = closure_2_7.set(closure_0, obj);
-                if (ref.current) {
-                  closure_1_2(obj);
-                }
-              });
-              nextPromise.catch(() => {
+            });
+            nextPromise.catch(() => {
 
-              });
-            }
-          } else {
-            closure_2((arg0) => {
-              let tmp = closure_0;
-              if (closure_0 === arg0) {
-                tmp = arg0;
-              }
-              return tmp;
             });
           }
+        } else {
+          dependencyMap((arg0) => {
+            let tmp = closure_0;
+            if (closure_0 === arg0) {
+              tmp = arg0;
+            }
+            return tmp;
+          });
         }
       }
-    }
+    };
     const items1 = [uri];
     cResult[4] = uri;
-    cResult[5] = R;
+    cResult[5] = fn2;
     cResult[6] = items1;
     tmp15 = items1;
-    tmp14 = R;
+    tmp14 = fn2;
   } else {
-    class R {
-      constructor() {
-        let ref;
-        let value;
-        if (null != uri) {
-          value = closure_1_7.get(str);
-        }
-        uri = value;
-        if (null != uri) {
-          if (null == value) {
-            let obj = closure_1_8;
-            let value2 = closure_1_8.get(str);
-            if (value2 == null) {
-              let tmp6 = str;
-              if (typeof uri !== "number") {
-                let tmp7 = null;
-                if (null != uri) {
-                  tmp7 = null;
-                  if ("" !== uri.trim()) {
-                    tmp7 = { uri };
-                    const obj2 = { uri };
-                  }
-                }
-                tmp6 = tmp7;
-              }
-              value2 = tmp6;
-            }
-            let result = obj.set(str, value2);
-            if (null != value2) {
-              let dominantColorsLocalAsset;
-              if (typeof value2 === "number") {
-                const ImageManager = closure_1_5.ImageManager;
-                dominantColorsLocalAsset = ImageManager.getDominantColorsLocalAsset(closure_1_6.resolveAssetSource(value2));
-              } else {
-                const ImageManager2 = closure_1_5.ImageManager;
-                dominantColorsLocalAsset = ImageManager2.getDominantColors(closure_1_6.resolveAssetSource(value2));
-              }
-              const nextPromise = dominantColorsLocalAsset.then((result) => {
-                const tmp = _slicedToArray(result[0], 3);
-                const obj = { r: tmp[0], g: tmp[1], b: tmp[2] };
-                result = closure_2_7.set(closure_0, obj);
-                if (ref.current) {
-                  closure_1_2(obj);
-                }
-              });
-              nextPromise.catch(() => {
-
-              });
-            }
-          } else {
-            closure_2((arg0) => {
-              let tmp = closure_0;
-              if (closure_0 === arg0) {
-                tmp = arg0;
-              }
-              return tmp;
-            });
-          }
-        }
-      }
-    }
+    tmp14 = cResult[5];
     tmp15 = cResult[6];
   }
   const effect1 = obj2.useEffect(tmp14, tmp15);
@@ -217,7 +152,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
   let hexToRgbResult;
   const useState = react.useState;
   if (null != uri) {
-    hexToRgbResult = closure_7.get(uri);
+    hexToRgbResult = closure_6.get(uri);
   }
   if (hexToRgbResult == null) {
     let obj2 = require("ColorUtils");
@@ -227,16 +162,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
   [first, dependencyMap] = useState(hexToRgbResult);
   const items = [uri];
   const effect1 = obj.useEffect(() => {
-    let ref;
     let value;
     if (null != uri) {
-      value = closure_1_7.get(str);
+      value = closure_1_6.get(str);
     }
     uri = value;
     if (null != uri) {
       if (null == value) {
-        let obj = closure_1_8;
-        let value2 = closure_1_8.get(str);
+        let obj = closure_1_7;
+        let value2 = closure_1_7.get(str);
         if (value2 == null) {
           let tmp6 = str;
           if (typeof uri !== "number") {
@@ -256,16 +190,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
         if (null != value2) {
           let dominantColorsLocalAsset;
           if (typeof value2 === "number") {
-            const ImageManager = closure_1_5.ImageManager;
-            dominantColorsLocalAsset = ImageManager.getDominantColorsLocalAsset(closure_1_6.resolveAssetSource(value2));
+            const obj3 = ref(closure_2[9]);
+            dominantColorsLocalAsset = obj3.getDominantColorsLocalAsset(Image.resolveAssetSource(value2));
           } else {
-            const ImageManager2 = closure_1_5.ImageManager;
-            dominantColorsLocalAsset = ImageManager2.getDominantColors(closure_1_6.resolveAssetSource(value2));
+            const obj4 = ref(closure_2[9]);
+            dominantColorsLocalAsset = obj4.getDominantColors(Image.resolveAssetSource(value2));
           }
           const nextPromise = dominantColorsLocalAsset.then((result) => {
             const tmp = _slicedToArray(result[0], 3);
             const obj = { r: tmp[0], g: tmp[1], b: tmp[2] };
-            result = closure_2_7.set(closure_0, obj);
+            result = closure_2_6.set(closure_0, obj);
             if (ref.current) {
               closure_1_2(obj);
             }
@@ -287,18 +221,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((uri) => {
   }, items);
   return first;
 });
-let closure_9 = tmp5;
+let closure_8 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const tmp = closure_9(arg0);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const tmp = closure_8(arg0);
   return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
 }) : ((arg0) => {
-  const tmp = closure_9(arg0);
+  const tmp = closure_8(arg0);
   return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
 });
 function getCachedSourceFromURI(avatarURI) {
-  let value = closure_8.get(avatarURI);
-  const obj = closure_8;
+  let value = closure_7.get(avatarURI);
+  const obj = closure_7;
   if (value == null) {
     let tmp2 = avatarURI;
     if (typeof avatarURI !== "number") {
@@ -320,5 +254,5 @@ function getCachedSourceFromURI(avatarURI) {
 let result = size.fileFinishedImporting("modules/voice_panel/native/card/DominantColorUtils.tsx");
 
 export { getCachedSourceFromURI };
-export const useDominantRGBFromImage = tmp5;
-export const useDominantColorFromImage = tmp6;
+export const useDominantRGBFromImage = tmp4;
+export const useDominantColorFromImage = tmp5;

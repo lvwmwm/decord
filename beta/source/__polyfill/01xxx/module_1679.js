@@ -1,1145 +1,280 @@
 // Module ID: 1679
 // Function ID: 1680
-// Dependencies: [41, 42, 93, 95, 98, 1680, 19, 17, 21, 1647, 1698, 38, 1739, 1740, 1748, 1750, 1688, 1669, 1751, 1753, 1747, 1731, 1684, 1673, 1655, 1757, 1672, 1741, 1743, 1758, 1759, 1760, 1782, 1783]
-// Exports: createAnimatedComponent
+// Dependencies: [1646, 1668, 1680, 1682, 1650]
 
 // Module 1679
-import Fragment from "Fragment" /* 21 */;
-import _modDef38 from "module_38" /* 38 */;
-import LayoutAnimationType from "LayoutAnimationType" /* 1669 */;
-import startWebLayoutAnimation from "startWebLayoutAnimation" /* 1698 */;
-import _modDef1739 from "module_1739" /* 1739 */;
-import _mod1740 from "module_1740" /* 1740 */;
-import PropsFilter from "PropsFilter" /* 1748 */;
-import setAndForwardRefDefault from "setAndForwardRef" /* 1750 */;
-import NativeEventsManager from "NativeEventsManager" /* 1751 */;
-import _mod1758 from "module_1758" /* 1758 */;
-import maybeBuild2 from "maybeBuild" /* 1759 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import hasOwnProperty from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import module_1680 from "module_1680" /* 1680 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import module_1647_mod from "module_1647" /* 1647 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1668 */;
+import _mod1680 from "module_1680" /* 1680 */;
+import _mod1682 from "module_1682" /* 1682 */;
+import module_1646_mod from "module_1646" /* 1646 */;
+import setupMicrotasks from "setupMicrotasks" /* 1650 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, disableReactSync, importDefault, set;
+let _require, dependencyMap, map, map1;
 
-let Platform;
-let c10;
-let c9;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-({ Platform, processColor: c9, StyleSheet: c10 } = react_native);
-const jsx = Fragment.jsx;
-let module_1647 = module_1647_mod;
-module_1647.isWeb();
-module_1647 = module_1647_mod;
-let closure_14 = module_1647.isJest();
-module_1647 = module_1647_mod;
-let closure_15 = module_1647.isReact19();
-module_1647 = module_1647_mod;
-let closure_16 = module_1647.shouldBeUseWeb();
-if (module_1647) {
-  const _module6 = startWebLayoutAnimation;
-  let result = _module6.configureWebLayoutAnimations();
-}
-let closure_17 = 0;
-
-export const createAnimatedComponent = function createAnimatedComponent(name, arg1) {
+let module_1646 = module_1646_mod;
+module_1646 = module_1646.isAndroid();
+function startObservingProgress(arg0, addListener, arg2) {
   let closure_2;
-  _require = name;
-  importDefault = arg1;
-  let tmp = closure_15;
-  if (!tmp) {
-    let tmp2 = importDefault;
-    let tmp3 = dependencyMap;
-    let tmp5 = typeof name !== "function";
-    let tmp4 = _modDef38;
-    if (typeof name === "function") {
-      const tmp6 = name.prototype && name.prototype.isReactComponent;
-      tmp5 = tmp6;
-    }
-    let tmp7 = globalThis;
-    class AnimatedComponent {
-      constructor(arg0) {
-        let constructResult;
-        const self = this;
-        let tmp = _classCallCheck(this, AnimatedComponent);
-        const items = [arg0];
-        let tmp2 = _getPrototypeOf;
-        const obj = _getPrototypeOf(AnimatedComponent);
-        const tmp3 = hasOwnProperty;
-        if (_isNativeReflectConstruct()) {
-          const _Reflect = Reflect;
-          constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-        } else {
-          constructResult = obj.apply(self, items);
-        }
-        const tmp3Result = tmp3(self, constructResult);
-        let closure_0 = tmp3Result;
-        tmp3Result._styles = null;
-        tmp3Result._isFirstRender = true;
-        tmp3Result.jestAnimatedStyle = { value: {} };
-        tmp3Result.jestAnimatedProps = { value: {} };
-        tmp3Result._componentRef = null;
-        tmp3Result._componentDOMRef = null;
-        tmp3Result._sharedElementTransition = null;
-        tmp3Result._jsPropsUpdater = new _modDef1739();
-        const tmp7 = new _modDef1739();
-        const inlinePropManager = new _mod1740.InlinePropManager();
-        tmp3Result._InlinePropManager = inlinePropManager;
-        const propsFilter = new PropsFilter.PropsFilter();
-        tmp3Result._PropsFilter = propsFilter;
-        closure_17 = tmp11 + 1;
-        tmp3Result.reanimatedID = +closure_17;
-        tmp3Result._willUnmount = false;
-        tmp3Result._resolveComponentRef = (getAnimatableRef) => {
-          let animatableRef;
-          const tmp = getAnimatableRef;
-          if (tmp) {
-            if (getAnimatableRef.getAnimatableRef) {
-              animatableRef = getAnimatableRef.getAnimatableRef();
-            }
-            return animatableRef;
-          }
-          animatableRef = getAnimatableRef;
-          if (closure_2_16) {
-            if (getAnimatableRef) {
-              if (getAnimatableRef.elementRef) {
-                closure_0._componentDOMRef = getAnimatableRef.elementRef.current;
-                animatableRef = getAnimatableRef;
-              }
-            }
-            closure_0._componentDOMRef = getAnimatableRef;
-            animatableRef = getAnimatableRef;
-          }
-        };
-        let obj2 = {
-          getForwardedRef() {
-            return closure_0.props.forwardedRef;
-          },
-          setLocalRef(arg0) {
-            let entering;
-            let sharedTransitionTag;
-            const tmp = arg0;
-            if (tmp) {
-              let current;
-              if (arg0 !== closure_0._componentRef) {
-                closure_0._componentRef = closure_0._resolveComponentRef(arg0);
-                closure_0._viewInfo = undefined;
-              }
-              const props = obj.props;
-              ({ entering, sharedTransitionTag } = props);
-              const tmp2 = closure_2_16;
-              if (!tmp2) {
-                const obj2 = AnimatedComponent(closure_2_2[16]);
-                const result = obj2.enableLayoutAnimations(true, false);
-              }
-              if (sharedTransitionTag) {
-                const result1 = obj._configureSharedTransition();
-              }
-              const context = obj.context;
-              if (context != null) {
-                current = context.current;
-              }
-              let isFabricResult = !entering;
-              if (entering) {
-                const obj3 = AnimatedComponent(closure_2_2[9]);
-                isFabricResult = obj3.isFabric();
-              }
-              if (!isFabricResult) {
-                isFabricResult = current;
-              }
-              if (!isFabricResult) {
-                isFabricResult = closure_2_13;
-              }
-              if (!isFabricResult) {
-                const result2 = obj._configureLayoutAnimation(AnimatedComponent(closure_2_2[17]).LayoutAnimationType.ENTERING, obj.props.entering);
-              }
-            }
-          }
-        };
-        tmp3Result._setComponentRef = setAndForwardRefDefault(obj2);
-        const tmp12 = closure_14;
-        if (tmp12) {
-          let obj3 = { value: {} };
-          tmp3Result.jestAnimatedStyle = obj3;
-          const obj4 = { value: {} };
-          tmp3Result.jestAnimatedProps = obj4;
-        }
-        tmp3Result.state = { settledProps: {}, reanimatedProps: {} };
-        let context = tmp3Result.context;
-        let current;
-        if (context != null) {
-          current = context.current;
-        }
-        const tmp8Result = module_1647;
-        const tmp14 = tmp8Result.isFabric() && !current;
-        if (tmp14) {
-          let result = tmp3Result._configureLayoutAnimation(tmp8(1669).LayoutAnimationType.ENTERING, tmp3Result.props.entering);
-        }
-        return tmp3Result;
-      }
-    }
-    const str = "` to `createAnimatedComponent` function which supports only class components. Please wrap your function component with `React.forwardRef()` or use a class component instead.";
-    let tmp4Result = tmp4(tmp5, "Looks like you're passing a function component `" + name.name + "` to `createAnimatedComponent` function which supports only class components. Please wrap your function component with `React.forwardRef()` or use a class component instead.");
+  let closure_0 = arg0;
+  _require = addListener;
+  dependencyMap = arg2 === require("LayoutAnimationType").LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
+  addListener.addListener(arg0 + 1000000000, () => {
+    closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
+  });
+}
+let obj = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, TAG_OFFSET: 1000000000 };
+startObservingProgress.__closure = obj;
+startObservingProgress.__workletHash = 15816248532180;
+startObservingProgress.__initData = { code: "function startObservingProgress_Pnpm_animationsManagerTs1(tag,sharedValue,animationType){const{LayoutAnimationType,TAG_OFFSET}=this.__closure;const isSharedTransition=animationType===LayoutAnimationType.SHARED_ELEMENT_TRANSITION;sharedValue.addListener(tag+TAG_OFFSET,function(){global._notifyAboutProgress(tag,sharedValue.value,isSharedTransition);});}" };
+function stopObservingProgress(arg0, removeListener) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
   }
-  class AnimatedComponent {
-    constructor(arg0) {
-      let constructResult;
-      const self = this;
-      let tmp = _classCallCheck(this, AnimatedComponent);
-      const items = [arg0];
-      let tmp2 = _getPrototypeOf;
-      const obj = _getPrototypeOf(AnimatedComponent);
-      const tmp3 = hasOwnProperty;
-      if (_isNativeReflectConstruct()) {
-        const _Reflect = Reflect;
-        constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+  removeListener.removeListener(arg0 + 1000000000);
+  global._notifyAboutEnd(arg0, flag);
+}
+stopObservingProgress.__closure = { TAG_OFFSET: 1000000000 };
+stopObservingProgress.__workletHash = 8517596296348;
+stopObservingProgress.__initData = { code: "function stopObservingProgress_Pnpm_animationsManagerTs2(tag,sharedValue,removeView=false){const{TAG_OFFSET}=this.__closure;sharedValue.removeListener(tag+TAG_OFFSET);global._notifyAboutEnd(tag,removeView);}" };
+function createLayoutAnimationManager() {
+  map = new Map();
+  map1 = new Map();
+  function startActually(arg0, arg1, arg2, fn) {
+    let closure_0;
+    let closure_1;
+    map = arg0;
+    map1 = arg1;
+    let tmp = map1;
+    if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
+      const tmp6 = fn(arg2);
+      let closure_2 = tmp6;
+      let animations = tmp6.animations;
+      let obj = map;
+      const value = map.get(arg0);
+      if (value) {
+        const obj2 = {};
+        const merged = Object.assign(value);
+        let tmp11 = obj2;
+        const merged1 = Object.assign(tmp6.animations);
+        animations = obj2;
+      }
+      const result = obj.set(arg0, animations);
+      let value2 = map1.get(arg0);
+      let mutableUI = value2;
+      const obj3 = map1;
+      if (undefined === value2) {
+        const tmpResult = tmp(startActually[2]);
+        mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
+        const result1 = obj3.set(arg0, mutableUI);
+        value2 = mutableUI;
       } else {
-        constructResult = obj.apply(self, items);
+        let tmp15 = stopObservingProgress;
+        if (typeof stopObservingProgress === "function") {
+          value2.removeListener(arg0 + 1000000000);
+          map._notifyAboutEnd(arg0, false);
+          value2._value = tmp6.initialValues;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
       }
-      const tmp3Result = tmp3(self, constructResult);
-      let closure_0 = tmp3Result;
-      tmp3Result._styles = null;
-      tmp3Result._isFirstRender = true;
-      tmp3Result.jestAnimatedStyle = { value: {} };
-      tmp3Result.jestAnimatedProps = { value: {} };
-      tmp3Result._componentRef = null;
-      tmp3Result._componentDOMRef = null;
-      tmp3Result._sharedElementTransition = null;
-      tmp3Result._jsPropsUpdater = new _modDef1739();
-      const tmp7 = new _modDef1739();
-      const inlinePropManager = new _mod1740.InlinePropManager();
-      tmp3Result._InlinePropManager = inlinePropManager;
-      const propsFilter = new PropsFilter.PropsFilter();
-      tmp3Result._PropsFilter = propsFilter;
-      closure_17 = tmp11 + 1;
-      tmp3Result.reanimatedID = +closure_17;
-      tmp3Result._willUnmount = false;
-      tmp3Result._resolveComponentRef = (getAnimatableRef) => {
-        let animatableRef;
-        const tmp = getAnimatableRef;
+      const tmpResult2 = tmp(startActually[3]);
+      const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
+      withStyleAnimationResult.callback = (arg0) => {
+        const tmp = arg0;
         if (tmp) {
-          if (getAnimatableRef.getAnimatableRef) {
-            animatableRef = getAnimatableRef.getAnimatableRef();
+          map.delete(closure_0);
+          map1.delete(closure_0);
+          const obj = mutableUI;
+          const tmp7 = closure_1;
+          if (typeof stopObservingProgress === "function") {
+            const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
+            obj.removeListener(closure_0 + 1000000000);
+            global._notifyAboutEnd(closure_0, tmp11);
+          } else {
+            throw new TypeError("Trying to call a non-function");
           }
-          return animatableRef;
         }
-        animatableRef = getAnimatableRef;
-        if (closure_2_16) {
-          if (getAnimatableRef) {
-            if (getAnimatableRef.elementRef) {
-              closure_0._componentDOMRef = getAnimatableRef.elementRef.current;
-              animatableRef = getAnimatableRef;
-            }
+        const tmp15 = closure_2;
+        if (closure_2.callback) {
+          let tmp16 = undefined !== arg0;
+          const callback = tmp15.callback;
+          if (tmp16) {
+            tmp16 = arg0;
           }
-          closure_0._componentDOMRef = getAnimatableRef;
-          animatableRef = getAnimatableRef;
-        }
-      };
-      let obj2 = {
-        getForwardedRef() {
-          return closure_0.props.forwardedRef;
-        },
-        setLocalRef(arg0) {
-          let entering;
-          let sharedTransitionTag;
-          const tmp = arg0;
-          if (tmp) {
-            let current;
-            if (arg0 !== closure_0._componentRef) {
-              closure_0._componentRef = closure_0._resolveComponentRef(arg0);
-              closure_0._viewInfo = undefined;
-            }
-            const props = obj.props;
-            ({ entering, sharedTransitionTag } = props);
-            const tmp2 = closure_2_16;
-            if (!tmp2) {
-              const obj2 = AnimatedComponent(closure_2_2[16]);
-              const result = obj2.enableLayoutAnimations(true, false);
-            }
-            if (sharedTransitionTag) {
-              const result1 = obj._configureSharedTransition();
-            }
-            const context = obj.context;
-            if (context != null) {
-              current = context.current;
-            }
-            let isFabricResult = !entering;
-            if (entering) {
-              const obj3 = AnimatedComponent(closure_2_2[9]);
-              isFabricResult = obj3.isFabric();
-            }
-            if (!isFabricResult) {
-              isFabricResult = current;
-            }
-            if (!isFabricResult) {
-              isFabricResult = closure_2_13;
-            }
-            if (!isFabricResult) {
-              const result2 = obj._configureLayoutAnimation(AnimatedComponent(closure_2_2[17]).LayoutAnimationType.ENTERING, obj.props.entering);
-            }
-          }
+          callback(tmp16);
         }
       };
-      tmp3Result._setComponentRef = setAndForwardRefDefault(obj2);
-      const tmp12 = closure_14;
-      if (tmp12) {
-        let obj3 = { value: {} };
-        tmp3Result.jestAnimatedStyle = obj3;
-        const obj4 = { value: {} };
-        tmp3Result.jestAnimatedProps = obj4;
+      if (typeof startObservingProgress === "function") {
+        map = arg0;
+        closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
+        value2.addListener(arg0 + 1000000000, () => {
+          closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
+        });
+        value2.value = withStyleAnimationResult;
+      } else {
+        throw new TypeError("Trying to call a non-function");
       }
-      tmp3Result.state = { settledProps: {}, reanimatedProps: {} };
-      let context = tmp3Result.context;
-      let current;
-      if (context != null) {
-        current = context.current;
-      }
-      const tmp8Result = module_1647;
-      const tmp14 = tmp8Result.isFabric() && !current;
-      if (tmp14) {
-        let result = tmp3Result._configureLayoutAnimation(tmp8(1669).LayoutAnimationType.ENTERING, tmp3Result.props.entering);
-      }
-      return tmp3Result;
+    } else {
+      const ProgressTransitionRegister = map.ProgressTransitionRegister;
+      ProgressTransitionRegister.onTransitionStart(arg0, arg2);
     }
   }
-  _inherits(AnimatedComponent, react.Component);
-  const entry = {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      let firstChild1;
-      const self = this;
-      if (!module_1647) {
-        const self2 = this;
-        const self3 = this;
-        const nativeEventsManager = new NativeEventsManager.NativeEventsManager(self, disableReactSync);
-        self._NativeEventsManager = nativeEventsManager;
-      }
-      const _NativeEventsManager = self._NativeEventsManager;
-      if (_NativeEventsManager != null) {
-        _NativeEventsManager.attachEvents();
-      }
-      const _jsPropsUpdater = self._jsPropsUpdater;
-      const result = _jsPropsUpdater.addOnJSPropsChangeListener(self);
-      const result1 = self._attachAnimatedStyles();
-      const _InlinePropManager = self._InlinePropManager;
-      _InlinePropManager.attachInlineProps(self, self._getViewInfo());
-      const componentViewTag = self.getComponentViewTag();
-      const obj = module_1647;
-      const isFabricResult = obj.isFabric() && -1 !== componentViewTag;
-      if (isFabricResult) {
-        const PropsRegistryGarbageCollector = tmp13(1753).PropsRegistryGarbageCollector;
-        PropsRegistryGarbageCollector.registerView(componentViewTag, self);
-      }
-      if (-1 !== componentViewTag) {
-        const ComponentRegistry = tmp13(1747).ComponentRegistry;
-        ComponentRegistry.register(componentViewTag, self);
-      }
-      const result2 = self._configureLayoutAnimation(tmp13(1669).LayoutAnimationType.LAYOUT, self.props.layout);
-      const result3 = self._configureLayoutAnimation(tmp13(1669).LayoutAnimationType.EXITING, self.props.exiting);
-      let tmp21 = tmp13;
-      if (module_1647) {
-        tmp21 = tmp13;
-        if (self._componentDOMRef) {
-          const _componentDOMRef = self._componentDOMRef;
-          const dummyClone = _componentDOMRef.dummyClone;
-          let firstChild;
-          if (dummyClone != null) {
-            firstChild = dummyClone.firstChild;
-          }
-          if (firstChild) {
-            do {
-              let appendChildResult = _componentDOMRef.appendChild(dummyClone.firstChild);
-              firstChild1 = undefined;
-              if (dummyClone != null) {
-                firstChild1 = dummyClone.firstChild;
-              }
-            } while (firstChild1);
-          }
-          delete _componentDOMRef["dummyClone"];
-          if (self.props.exiting) {
-            const obj2 = startWebLayoutAnimation;
-            obj2.saveSnapshot(_componentDOMRef);
-          }
-          if (self.props.entering) {
-            const obj3 = startWebLayoutAnimation;
-            if (obj3.getReducedMotionFromConfig(self.props.entering)) {
-              self._isFirstRender = false;
-              const entering = self.props.entering;
-              const callbackV = entering.callbackV;
-              if (callbackV != null) {
-                callbackV(true);
-              }
-            } else {
-              const context = self.context;
-              let current;
-              if (context != null) {
-                current = context.current;
-              }
-              if (current) {
-                tmp21 = tmp28;
-                if (_componentDOMRef.style) {
-                  _componentDOMRef.style.visibility = "initial";
-                  tmp21 = tmp28;
-                }
-              } else {
-                const tmp28Result = startWebLayoutAnimation;
-                const result4 = tmp28Result.startWebLayoutAnimation(self.props, _componentDOMRef, tmp28(1669).LayoutAnimationType.ENTERING);
-                tmp21 = tmp28;
-              }
-            }
-          } else {
-            self._isFirstRender = false;
-          }
+  const tmp3 = module_1646;
+  if (tmp3) {
+    startActually = (arg0, arg1, arg2, arg3) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let closure_2 = arg2;
+      let closure_3 = arg3;
+      return requestAnimationFrame(() => {
+        startActually(closure_0, closure_1, closure_2, closure_3);
+      });
+    };
+  }
+  let obj = {
+    start: startActually,
+    stop(arg0) {
+      const value = map1.get(arg0);
+      if (value) {
+        if (typeof stopObservingProgress === "function") {
+          value.removeListener(arg0 + 1000000000);
+          global._notifyAboutEnd(arg0, false);
+        } else {
+          throw new TypeError("Trying to call a non-function");
         }
       }
-      let _willUnmount = !closure_16;
-      if (_willUnmount) {
-        const tmp21Result = tmp21(1647);
-        _willUnmount = tmp21Result.isFabric();
-      }
-      if (_willUnmount) {
-        _willUnmount = self._willUnmount;
-      }
-      if (_willUnmount) {
-        _willUnmount = typeof componentViewTag === "number";
-      }
-      if (_willUnmount) {
-        const tmp21Result2 = tmp21(1688);
-        const result5 = tmp21Result2.unmarkNodeAsRemovable(componentViewTag);
-      }
-      self._isFirstRender = false;
     }
   };
-  let items = [
-    entry,
-    {
-      key: "componentWillUnmount",
-      value: function componentWillUnmount() {
-        let _componentDOMRef;
-        let props;
-        const self = this;
-        const _NativeEventsManager = this._NativeEventsManager;
-        if (_NativeEventsManager != null) {
-          _NativeEventsManager.detachEvents();
+  return obj;
+}
+let obj2 = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, makeMutableUI: _mod1680.makeMutableUI, stopObservingProgress, withStyleAnimation: _mod1682.withStyleAnimation, startObservingProgress, IS_ANDROID: module_1646 };
+createLayoutAnimationManager.__closure = obj2;
+createLayoutAnimationManager.__workletHash = 8526874600063;
+createLayoutAnimationManager.__initData = { code: "function createLayoutAnimationManager_Pnpm_animationsManagerTs3(){const{LayoutAnimationType,makeMutableUI,stopObservingProgress,withStyleAnimation,startObservingProgress,IS_ANDROID}=this.__closure;const currentAnimationForTag=new Map();const mutableValuesForTag=new Map();const startActually=function(tag,type,yogaValues,config){if(type===LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS){global.ProgressTransitionRegister.onTransitionStart(tag,yogaValues);return;}const style=config(yogaValues);let currentAnimation=style.animations;const previousAnimation=currentAnimationForTag.get(tag);if(previousAnimation){currentAnimation={...previousAnimation,...style.animations};}currentAnimationForTag.set(tag,currentAnimation);let value=mutableValuesForTag.get(tag);if(value===undefined){value=makeMutableUI(style.initialValues);mutableValuesForTag.set(tag,value);}else{stopObservingProgress(tag,value);value._value=style.initialValues;}const animation=withStyleAnimation(currentAnimation);animation.callback=function(finished){if(finished){currentAnimationForTag.delete(tag);mutableValuesForTag.delete(tag);const shouldRemoveView=type===LayoutAnimationType.EXITING;stopObservingProgress(tag,value,shouldRemoveView);}style.callback&&style.callback(finished===undefined?false:finished);};startObservingProgress(tag,value,type);value.value=animation;};let start;if(IS_ANDROID){start=function(tag,type,yogaValues,config){return requestAnimationFrame(function(){startActually(tag,type,yogaValues,config);});};}else{start=startActually;}return{start:start,stop:function(tag){const value=mutableValuesForTag.get(tag);if(!value){return;}stopObservingProgress(tag,value);}};}" };
+const fn = function t() {
+  if (typeof createLayoutAnimationManager === "function") {
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    new Map();
+    const _Map2 = Map;
+    const self3 = this;
+    const self4 = this;
+    new Map();
+    function startActually(arg0, arg1, arg2, fn) {
+      let closure_0;
+      let closure_1;
+      map = arg0;
+      map1 = arg1;
+      let tmp = map1;
+      if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
+        const tmp6 = fn(arg2);
+        let closure_2 = tmp6;
+        let animations = tmp6.animations;
+        let obj = map;
+        const value = map.get(arg0);
+        if (value) {
+          const obj2 = {};
+          const merged = Object.assign(value);
+          let tmp11 = obj2;
+          const merged1 = Object.assign(tmp6.animations);
+          animations = obj2;
         }
-        const _jsPropsUpdater = self._jsPropsUpdater;
-        const result = _jsPropsUpdater.removeOnJSPropsChangeListener(self);
-        const componentViewTag = self.getComponentViewTag();
-        const obj = name(closure_2[9]);
-        const isFabricResult = obj.isFabric() && -1 !== componentViewTag;
-        if (isFabricResult) {
-          const PropsRegistryGarbageCollector = tmp4(tmp5[19]).PropsRegistryGarbageCollector;
-          PropsRegistryGarbageCollector.unregisterView(componentViewTag);
-        }
-        self._detachStyles();
-        const _InlinePropManager = self._InlinePropManager;
-        _InlinePropManager.detachInlineProps();
-        if (self.props.sharedTransitionTag) {
-          const result1 = self._configureSharedTransition(true);
-        }
-        const _sharedElementTransition = self._sharedElementTransition;
-        if (_sharedElementTransition != null) {
-          _sharedElementTransition.unregisterTransition(self.getComponentViewTag(), true);
-        }
-        const exiting = self.props.exiting;
-        if (-1 !== componentViewTag) {
-          const ComponentRegistry = tmp4(tmp5[20]).ComponentRegistry;
-          ComponentRegistry.unregister(componentViewTag);
-        }
-        if (module_1647) {
-          if (self._componentDOMRef) {
-            if (exiting) {
-              const tmp4Result = name(closure_2[10]);
-              if (tmp4Result.getReducedMotionFromConfig(exiting)) {
-                const callbackV = exiting.callbackV;
-                if (callbackV != null) {
-                  callbackV(true);
-                }
-              } else {
-                const tmp4Result8 = name(closure_2[21]);
-                const result2 = tmp4Result8.addHTMLMutationObserver();
-                ({ props, _componentDOMRef } = self);
-                const tmp4Result9 = name(closure_2[10]);
-                const result3 = tmp4Result9.startWebLayoutAnimation(props, _componentDOMRef, tmp4(tmp5[17]).LayoutAnimationType.EXITING);
-              }
-            }
-            const _viewInfo = self._viewInfo;
-            let isFabricResult1 = !closure_1_16;
-            if (isFabricResult1) {
-              const tmp4Result10 = name(closure_2[9]);
-              isFabricResult1 = tmp4Result10.isFabric();
-            }
-            if (isFabricResult1) {
-              isFabricResult1 = shadowNodeWrapper;
-            }
-            if (isFabricResult1) {
-              const tmp4Result11 = name(closure_2[16]);
-              tmp4Result11.markNodeAsRemovable(shadowNodeWrapper);
-            }
-            self._willUnmount = true;
-          }
-        }
-        if (exiting) {
-          if (!module_1647) {
-            const tmp4Result12 = name(closure_2[9]);
-            if (!tmp4Result12.isFabric()) {
-              if ("getReduceMotion" in exiting) {
-                let reduceMotionFromConfig;
-                if (typeof exiting.getReduceMotion === "function") {
-                  const tmp4Result13 = name(closure_2[22]);
-                  reduceMotionFromConfig = tmp4Result13.getReduceMotionFromConfig(exiting.getReduceMotion());
-                }
-                if (!reduceMotionFromConfig) {
-                  const result4 = self._configureLayoutAnimation(tmp4(tmp5[17]).LayoutAnimationType.EXITING, exiting);
-                }
-              }
-              const tmp4Result14 = name(closure_2[22]);
-              reduceMotionFromConfig = tmp4Result14.getReduceMotionFromConfig();
-            }
-          }
-        }
-      }
-    },
-    {
-      key: "_syncStylePropsBackToReact",
-      value: function _syncStylePropsBackToReact(arg0) {
-        let closure_0 = arg0;
-        this.setState((settledProps) => {
-          let obj2;
-          const obj = { settledProps: obj2 };
-          obj2 = {};
-          const merged = Object.assign(settledProps.settledProps);
-          const merged1 = Object.assign(closure_0);
-          return obj;
-        });
-      }
-    },
-    {
-      key: "getComponentViewTag",
-      value: function getComponentViewTag() {
-        return this._getViewInfo().viewTag;
-      }
-    },
-    {
-      key: "_detachStyles",
-      value: function _detachStyles() {
-        const self = this;
-        const componentViewTag = this.getComponentViewTag();
-        if (-1 !== componentViewTag) {
-          if (null !== self._styles) {
-            const _styles = self._styles;
-            for (const item10009 of _styles) {
-              let viewDescriptors = item10009.viewDescriptors;
-              let removeResult = viewDescriptors.remove(componentViewTag);
-              continue;
-            }
-            const animatedProps = self.props.animatedProps;
-            let viewDescriptors1;
-            if (animatedProps != null) {
-              viewDescriptors1 = animatedProps.viewDescriptors;
-            }
-            if (viewDescriptors1) {
-              const viewDescriptors2 = self.props.animatedProps.viewDescriptors;
-              viewDescriptors2.remove(componentViewTag);
-            }
-          }
-        }
-      }
-    },
-    {
-      key: "_updateFromNative",
-      value: function _updateFromNative(props) {
-        let setNativeProps1;
-        if (disableReactSync != null) {
-          setNativeProps1 = obj.setNativeProps;
-        }
-        const self = this;
-        if (setNativeProps1) {
-          disableReactSync.setNativeProps(self._componentRef, props);
+        const result = obj.set(arg0, animations);
+        let value2 = map1.get(arg0);
+        let mutableUI = value2;
+        const obj3 = map1;
+        if (undefined === value2) {
+          const tmpResult = tmp(startActually[2]);
+          mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
+          const result1 = obj3.set(arg0, mutableUI);
+          value2 = mutableUI;
         } else {
-          const _componentRef = self._componentRef;
-          if (_componentRef != null) {
-            const setNativeProps = _componentRef.setNativeProps;
-            if (setNativeProps != null) {
-              setNativeProps(props);
-            }
-          }
-        }
-      }
-    },
-    {
-      key: "_updateReanimatedProps",
-      value: function _updateReanimatedProps(obj) {
-        disableReactSync = undefined;
-        if (disableReactSync != null) {
-          disableReactSync = disableReactSync.disableReactSync;
-        }
-        if (!disableReactSync) {
-          obj = {};
-          for (const key10015 in obj) {
-            let tmp4;
-            let tmp8 = obj[key10015];
-            if ("color" === key10015) {
-              if (tmp8) {
-                if (typeof tmp8 === "string") {
-                  tmp4 = React4(tmp8);
-                  obj[key10015] = tmp4;
-                  continue;
-                }
-              }
-            }
-            if ("top" != key10015) {
-              if ("bottom" != key10015) {
-                if (!key10015.startsWith("margin")) {
-                  tmp4 = tmp8;
-                }
-              }
-            }
-          }
-          const self = this;
-          this.setState((reanimatedProps) => {
-            let obj2;
-            obj = { reanimatedProps: obj2 };
-            obj2 = {};
-            const merged = Object.assign(reanimatedProps.reanimatedProps);
-            const merged1 = Object.assign(obj);
-            return obj;
-          });
-        }
-      }
-    },
-    {
-      key: "_getViewInfo",
-      value: function _getViewInfo() {
-        let _componentDOMRef;
-        let viewConfig;
-        let viewName;
-        let viewTag;
-        const self = this;
-        if (undefined !== this._viewInfo) {
-          return self._viewInfo;
-        } else {
-          let shadowNodeWrapperFromRef;
-          const tmp8 = closure_1_16;
-          if (tmp8) {
-            ({ _componentRef: viewTag, _componentDOMRef } = self);
-            shadowNodeWrapperFromRef = null;
-            viewConfig = null;
-            viewName = null;
+          let tmp15 = stopObservingProgress;
+          if (typeof stopObservingProgress === "function") {
+            value2.removeListener(arg0 + 1000000000);
+            map._notifyAboutEnd(arg0, false);
+            value2._value = tmp6.initialValues;
           } else {
-            const obj = name(closure_2[23]);
-            const findHostInstanceResult = obj.findHostInstance(self);
-            if (findHostInstanceResult) {
-              const tmpResult = name(closure_2[25]);
-              const viewInfo = tmpResult.getViewInfo(findHostInstanceResult);
-              ({ viewTag, viewName, viewConfig } = viewInfo);
-              shadowNodeWrapperFromRef = null;
-              const tmpResult3 = name(closure_2[9]);
-              if (tmpResult3.isFabric()) {
-                const tmpResult4 = name(closure_2[26]);
-                shadowNodeWrapperFromRef = tmpResult4.getShadowNodeWrapperFromRef(self, findHostInstanceResult);
-              }
-              _componentDOMRef = null;
-            } else {
-              const self2 = this;
-              const self3 = this;
-              const reanimatedError = new tmp(tmp2[24]).ReanimatedError("Cannot find host instance for this component. Maybe it renders nothing?");
-              throw reanimatedError;
-            }
+            throw new TypeError("Trying to call a non-function");
           }
-          const obj2 = { viewTag, viewName, shadowNodeWrapper: shadowNodeWrapperFromRef, viewConfig };
-          self._viewInfo = obj2;
-          if (_componentDOMRef) {
-            self._viewInfo.DOMElement = _componentDOMRef;
-          }
-          return self._viewInfo;
         }
-      }
-    },
-    {
-      key: "_attachAnimatedStyles",
-      value: function _attachAnimatedStyles() {
-        let _styles;
-        let isStyleAttached;
-        let items;
-        function onlyAnimatedStyles(arr) {
-          return arr.filter((viewDescriptors) => {
-            viewDescriptors = undefined;
-            if (viewDescriptors != null) {
-              viewDescriptors = viewDescriptors.viewDescriptors;
-            }
-            return viewDescriptors;
-          });
-        }
-        const self = this;
-        if (this.props.style) {
-          let tmp = isStyleAttached;
-          let tmp2 = _styles;
-          let obj = isStyleAttached(_styles[27]);
-          items = onlyAnimatedStyles(obj.flattenArray(self.props.style));
-        } else {
-          items = [];
-        }
-        const animatedProps = self.props.animatedProps;
-        _styles = self._styles;
-        self._styles = items;
-        const _animatedProps = self._animatedProps;
-        self._animatedProps = animatedProps;
-        const _getViewInfoResult = self._getViewInfo();
-        const viewTag = _getViewInfoResult.viewTag;
-        const viewName = _getViewInfoResult.viewName;
-        const shadowNodeWrapper = _getViewInfoResult.shadowNodeWrapper;
-        const viewConfig = _getViewInfoResult.viewConfig;
-        const animatedProps2 = self.props.animatedProps;
-        let viewDescriptors1;
-        if (animatedProps2 != null) {
-          viewDescriptors1 = animatedProps2.viewDescriptors;
-        }
-        if (!viewDescriptors1) {
-          viewDescriptors1 = items.length;
-        }
-        if (viewDescriptors1) {
-          viewDescriptors1 = viewConfig;
-        }
-        if (viewDescriptors1) {
-          let obj2 = isStyleAttached(_styles[28]);
-          obj2.adaptViewConfig(viewConfig);
-        }
-        isStyleAttached = function isStyleAttached(_styles) {
-
-        };
-        set = new Set(items);
-        const tmp8 = null != _styles && items.length === _styles.length && items.every((viewDescriptors, index) => {
-          let hasItem = viewDescriptors === _styles[index];
-          if (hasItem) {
-            if (typeof isStyleAttached === "function") {
-              viewDescriptors = viewDescriptors.viewDescriptors;
-              hasItem = viewDescriptors.has(viewTag);
+        const tmpResult2 = tmp(startActually[3]);
+        const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
+        withStyleAnimationResult.callback = (arg0) => {
+          const tmp = arg0;
+          if (tmp) {
+            map.delete(closure_0);
+            map1.delete(closure_0);
+            const obj = mutableUI;
+            const tmp7 = closure_1;
+            if (typeof stopObservingProgress === "function") {
+              const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
+              obj.removeListener(closure_0 + 1000000000);
+              global._notifyAboutEnd(closure_0, tmp11);
             } else {
               throw new TypeError("Trying to call a non-function");
             }
           }
-          return hasItem;
-        });
-        const animatedProps3 = self.props.animatedProps;
-        let viewDescriptors4;
-        if (animatedProps3 != null) {
-          viewDescriptors4 = animatedProps3.viewDescriptors;
-        }
-        let tmp10 = !viewDescriptors4;
-        if (viewDescriptors4) {
-          let hasItem = _animatedProps === self.props.animatedProps;
-          if (hasItem) {
-            let viewDescriptors = self.props.animatedProps.viewDescriptors;
-            hasItem = viewDescriptors.has(viewTag);
-          }
-          tmp10 = hasItem;
-        }
-        if (!tmp8) {
-          if (_styles) {
-            function _loop(iter) {
-              let closure_0 = iter;
-              if (!items.some((viewDescriptors) => {
-                let tmp = viewDescriptors !== iter;
-                if (!tmp) {
-                  if (typeof isStyleAttached === "function") {
-                    viewDescriptors = viewDescriptors.viewDescriptors;
-                    tmp = !viewDescriptors.has(viewTag);
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                }
-                return !tmp;
-              })) {
-                let viewDescriptors = iter.viewDescriptors;
-                let tmp = viewTag;
-                viewDescriptors.remove(viewTag);
-              }
-            }
-            const iter = _styles[Symbol.iterator]();
-            while (iter !== undefined) {
-              let _loopResult = _loop(iter.next());
-              continue;
-            }
-          }
-          const tmp16 = animatedProps && closure_14;
-          if (tmp16) {
-            const jestAnimatedProps = self.jestAnimatedProps;
-            const obj3 = {};
-            let merged = Object.assign(self.jestAnimatedProps.value);
-            let value;
-            if (animatedProps != null) {
-              if (animatedProps.initial != null) {
-                value = iter2.value;
-              }
-            }
-            let merged1 = Object.assign(value);
-            jestAnimatedProps.value = obj3;
-            let jestAnimatedValues;
-            if (animatedProps != null) {
-              jestAnimatedValues = animatedProps.jestAnimatedValues;
-            }
-            if (jestAnimatedValues) {
-              animatedProps.jestAnimatedValues.current = self.jestAnimatedProps;
-            }
-          }
-          if (!tmp8) {
-            const item = set.forEach((viewDescriptors) => {
-              viewDescriptors = viewDescriptors.viewDescriptors;
-              const obj = { tag: viewTag, name: viewName, shadowNodeWrapper };
-              viewDescriptors.add(obj, viewDescriptors.styleUpdaterContainer);
-              const tmp2 = closure_2_14;
-              if (tmp2) {
-                const jestAnimatedStyle = self.jestAnimatedStyle;
-                const obj2 = {};
-                const merged = Object.assign(self.jestAnimatedStyle.value);
-                const merged1 = Object.assign(viewDescriptors.initial.value);
-                jestAnimatedStyle.value = obj2;
-                viewDescriptors.jestAnimatedValues.current = self.jestAnimatedStyle;
-              }
-            });
-          }
-          const tmp26 = _animatedProps && _animatedProps !== self.props.animatedProps;
-          if (tmp26) {
-            const viewDescriptors2 = _animatedProps.viewDescriptors;
-            viewDescriptors2.remove(viewTag);
-          }
-          let tmp28 = !tmp10;
-          if (tmp28) {
-            const animatedProps4 = self.props.animatedProps;
-            let viewDescriptors5;
-            if (animatedProps4 != null) {
-              viewDescriptors5 = animatedProps4.viewDescriptors;
-            }
-            tmp28 = viewDescriptors5;
-          }
-          if (tmp28) {
-            const viewDescriptors3 = self.props.animatedProps.viewDescriptors;
-            const obj4 = { tag: viewTag, name: viewName, shadowNodeWrapper };
-            viewDescriptors3.add(obj4, self.props.animatedProps.styleUpdaterContainer);
-          }
-        }
-      }
-    },
-    {
-      key: "componentDidUpdate",
-      value: function componentDidUpdate(layout, arg1, arg2) {
-        const self = this;
-        const result = this._configureLayoutAnimation(name(closure_2[17]).LayoutAnimationType.LAYOUT, this.props.layout, layout.layout);
-        const result1 = this._configureLayoutAnimation(name(closure_2[17]).LayoutAnimationType.EXITING, this.props.exiting, layout.exiting);
-        const tmp5 = undefined === this.props.sharedTransitionTag && undefined === layout.sharedTransitionTag;
-        if (!tmp5) {
-          const result2 = self._configureSharedTransition();
-        }
-        const _NativeEventsManager = self._NativeEventsManager;
-        if (_NativeEventsManager != null) {
-          _NativeEventsManager.updateEvents(layout);
-        }
-        const result3 = self._attachAnimatedStyles();
-        const _InlinePropManager = self._InlinePropManager;
-        _InlinePropManager.attachInlineProps(self, self._getViewInfo());
-        const _componentDOMRef = module_1647 && self.props.exiting && self._componentDOMRef;
-        if (_componentDOMRef) {
-          const tmpResult = name(closure_2[10]);
-          tmpResult.saveSnapshot(self._componentDOMRef);
-        }
-        if (module_1647) {
-          const tmp12 = arg2;
-          if (tmp12) {
-            if (self.props.layout) {
-              const tmpResult3 = name(closure_2[10]);
-              if (tmpResult3.getReducedMotionFromConfig(self.props.layout)) {
-                layout = self.props.layout;
-                const callbackV = layout.callbackV;
-                if (callbackV != null) {
-                  callbackV(true);
-                }
-              } else {
-                const tmpResult4 = name(closure_2[10]);
-                const result4 = tmpResult4.tryActivateLayoutTransition(self.props, self._componentDOMRef, arg2);
-              }
-            }
-          }
-        }
-      }
-    },
-    {
-      key: "_configureLayoutAnimation",
-      value: function _configureLayoutAnimation(EXITING, exiting, exiting2) {
-        const tmp = module_1647;
-        if (!tmp) {
-          if (exiting !== exiting2) {
-            const self = this;
-            const updateLayoutAnimations = _mod1758.updateLayoutAnimations;
-            _mod1758;
-            const obj = module_1647;
-            if (obj.isFabric()) {
-              let reanimatedID;
-              if (EXITING === LayoutAnimationType.LayoutAnimationType.ENTERING) {
-                reanimatedID = self.reanimatedID;
-              }
-              let maybeBuildResult = tmp4;
-              if (maybeBuildResult) {
-                const maybeBuild = maybeBuild2.maybeBuild;
-                let tmp11;
-                maybeBuild2;
-                if (EXITING !== LayoutAnimationType.LayoutAnimationType.LAYOUT) {
-                  const props = self.props;
-                  let style;
-                  if (props != null) {
-                    style = props.style;
-                  }
-                  tmp11 = style;
-                }
-                maybeBuildResult = maybeBuild(tmp4, tmp11, AnimatedComponent.displayName);
-              }
-              const result = updateLayoutAnimations(reanimatedID, EXITING, maybeBuildResult);
-            }
-            reanimatedID = self.getComponentViewTag();
-          }
-        }
-      }
-    },
-    {
-      key: "_configureSharedTransition",
-      value: function _configureSharedTransition(flag) {
-        if (flag === undefined) {
-          flag = false;
-        }
-        const tmp = module_1647;
-        if (!tmp) {
-          const self = this;
-          const sharedTransitionTag = this.props.sharedTransitionTag;
-          if (sharedTransitionTag) {
-            let _sharedElementTransition2 = self.props.sharedTransitionStyle;
-            if (_sharedElementTransition2 == null) {
-              _sharedElementTransition2 = self._sharedElementTransition;
-            }
-            if (_sharedElementTransition2 == null) {
-              const self2 = this;
-              const self3 = this;
-              _sharedElementTransition2 = new name(closure_2[31]).SharedTransition();
-            }
-            _sharedElementTransition2.registerTransition(self.getComponentViewTag(), sharedTransitionTag, flag);
-            self._sharedElementTransition = _sharedElementTransition2;
-          } else {
-            const _sharedElementTransition = self._sharedElementTransition;
-            if (_sharedElementTransition != null) {
-              _sharedElementTransition.unregisterTransition(self.getComponentViewTag(), flag);
-            }
-            self._sharedElementTransition = null;
-          }
-        }
-      }
-    },
-    {
-      key: "_isReducedMotion",
-      value: function _isReducedMotion(getReduceMotion) {
-        const tmp = getReduceMotion;
-        if (tmp) {
-          if ("getReduceMotion" in getReduceMotion) {
-            let reduceMotionFromConfig;
-            if (typeof getReduceMotion.getReduceMotion === "function") {
-              const obj2 = name(closure_2[22]);
-              reduceMotionFromConfig = obj2.getReduceMotionFromConfig(getReduceMotion.getReduceMotion());
-            }
-            return reduceMotionFromConfig;
-          }
-        }
-        const obj = name(closure_2[22]);
-        reduceMotionFromConfig = obj.getReduceMotionFromConfig();
-      }
-    },
-    {
-      key: "getSnapshotBeforeUpdate",
-      value: function getSnapshotBeforeUpdate() {
-        let boundingClientRect = null;
-        if (module_1647) {
-          const self = this;
-          boundingClientRect = null;
-          if (this.props.layout) {
-            const _componentDOMRef = self._componentDOMRef;
-            let prop;
-            if (_componentDOMRef != null) {
-              prop = _componentDOMRef.getBoundingClientRect;
-            }
-            boundingClientRect = null;
-            if (prop) {
-              const _componentDOMRef2 = self._componentDOMRef;
-              boundingClientRect = _componentDOMRef2.getBoundingClientRect();
-            }
-          }
-        }
-        return boundingClientRect;
-      }
-    },
-    {
-      key: "render",
-      value: function render() {
-        let combined1;
-        let obj5;
-        const f83429 = (item) => !(item && "viewDescriptors" in item);
-        const f83430 = (viewDescriptors) => {
-          let tmp = viewDescriptors;
-          if (Array.isArray(viewDescriptors)) {
-            let tmp2 = viewDescriptors;
-            if (tmp2) {
-              let mapped;
-              const _Array = Array;
-              if (Array.isArray(viewDescriptors)) {
-                const found = viewDescriptors.filter(f83429);
-                mapped = found.map(f83430);
-              } else {
-                viewDescriptors = undefined;
-                if (viewDescriptors != null) {
-                  viewDescriptors = viewDescriptors.viewDescriptors;
-                }
-                mapped = viewDescriptors;
-                if (viewDescriptors) {
-                  mapped = {};
-                }
-              }
-              tmp2 = mapped;
-            }
-            tmp = tmp2;
-          }
-          return tmp;
-        };
-        const self = this;
-        const _PropsFilter = this._PropsFilter;
-        const result = _PropsFilter.filterNonAnimatedProps(this);
-        let tmp2 = closure_14;
-        if (tmp2) {
-          ({ jestAnimatedStyle: tmp.jestAnimatedStyle, jestAnimatedProps: tmp.jestAnimatedProps } = self);
-        }
-        let tmp3 = self._isFirstRender && module_1647 && result.entering;
-        if (tmp3) {
-          const obj = startWebLayoutAnimation;
-          tmp3 = !obj.getReducedMotionFromConfig(result.entering);
-        }
-        if (tmp3) {
-          let combined;
-          let _Array = Array;
-          const style = result.style;
-          if (Array.isArray(result.style)) {
-            const items = [{ visibility: "hidden" }];
-            combined = style.concat(items);
-          } else {
-            let obj2 = style;
-            if (style == null) {
-              obj2 = {};
-            }
-            combined = { visibility: "hidden" };
-            const merged = Object.assign(obj2);
-          }
-          result.style = combined;
-        }
-        const context = self.context;
-        let current;
-        if (context != null) {
-          current = context.current;
-        }
-        if (!current) {
-          const obj4 = module_1647;
-          if (obj4.isFabric()) {
-            const _HermesInternal = HermesInternal;
-            combined1 = "" + self.reanimatedID;
-          }
-        }
-        if (tmp2) {
-          let style2 = self.props.style;
-          if (style2) {
-            const style1 = self.props.style;
-            let tmp16 = style1;
+          const tmp15 = closure_2;
+          if (closure_2.callback) {
+            let tmp16 = undefined !== arg0;
+            const callback = tmp15.callback;
             if (tmp16) {
-              let mapped;
-              const _Array2 = Array;
-              if (Array.isArray(style1)) {
-                let found = style1.filter(f83429);
-                mapped = found.map(f83430);
-              } else {
-                let viewDescriptors;
-                if (style1 != null) {
-                  viewDescriptors = style1.viewDescriptors;
-                }
-                mapped = style1;
-                if (viewDescriptors) {
-                  mapped = {};
-                }
-              }
-              tmp16 = mapped;
+              tmp16 = arg0;
             }
-            style2 = tmp16;
+            callback(tmp16);
           }
-          const obj3 = { jestInlineStyle: style2, jestAnimatedStyle: null, jestAnimatedProps: null };
-          ({ jestAnimatedStyle: obj7.jestAnimatedStyle, jestAnimatedProps: obj7.jestAnimatedProps } = self);
-          obj5 = obj3;
+        };
+        if (typeof startObservingProgress === "function") {
+          map = arg0;
+          closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
+          value2.addListener(arg0 + 1000000000, () => {
+            closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
+          });
+          value2.value = withStyleAnimationResult;
         } else {
-          obj5 = {};
+          throw new TypeError("Trying to call a non-function");
         }
-        const obj6 = { collapsable: false };
-        const obj9 = module_1647;
-        if (obj9.isFabric()) {
-          const obj8 = {};
-          const merged1 = Object.assign(authStore.flatten(result.style));
-          const merged2 = Object.assign(self.state.settledProps);
-          const merged3 = Object.assign(result);
-          const merged4 = Object.assign(obj5);
-          const merged5 = Object.assign(self.state.settledProps);
-          const merged6 = Object.assign(self.state.reanimatedProps);
-          const merged7 = Object.assign(obj6);
-          return <name nativeID={combined1} style={obj8} ref={self._setComponentRef} />;
-        } else {
-          const merged8 = Object.assign(result);
-          const merged9 = Object.assign(obj5);
-          const merged10 = Object.assign(self.state.reanimatedProps);
-          const merged11 = Object.assign(obj6);
-          return <name nativeID={combined1} ref={self._setComponentRef} />;
-        }
+      } else {
+        const ProgressTransitionRegister = map.ProgressTransitionRegister;
+        ProgressTransitionRegister.onTransitionStart(arg0, arg2);
       }
     }
-  ];
-  let tmp10 = _createClass(AnimatedComponent, items);
-  dependencyMap = tmp10;
-  let tmp11 = _require;
-  let tmp12 = dependencyMap;
-  tmp10.contextType = require("module_1782").SkipEnteringContext;
-  const tmp13 = name.displayName || name.name || "Component";
-  tmp10.displayName = "AnimatedComponent(" + tmp13 + ")";
-  const tmp11Result = tmp11(1783);
-  const componentWithRefResult = tmp11Result.componentWithRef((arg0, forwardedRef) => {
-    const obj = {};
-    const merged = Object.assign(arg0);
-    let tmp4 = null;
-    const tmp = jsx;
-    const tmp2 = closure_2;
-    if (null !== forwardedRef) {
-      tmp4 = { forwardedRef };
-      const obj2 = { forwardedRef };
+    const tmp7 = module_1646;
+    if (tmp7) {
+      startActually = (arg0, arg1, arg2, arg3) => {
+        let closure_0 = arg0;
+        let closure_1 = arg1;
+        let closure_2 = arg2;
+        let closure_3 = arg3;
+        return requestAnimationFrame(() => {
+          startActually(closure_0, closure_1, closure_2, closure_3);
+        });
+      };
     }
-    const merged1 = Object.assign(tmp4);
-    return tmp(tmp2, obj);
-  });
-  componentWithRefResult.displayName = name.displayName || name.name || "Component";
-  return componentWithRefResult;
+    const obj = {
+      start: startActually,
+      stop(arg0) {
+          const value = map1.get(arg0);
+          if (value) {
+            if (typeof stopObservingProgress === "function") {
+              value.removeListener(arg0 + 1000000000);
+              global._notifyAboutEnd(arg0, false);
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          }
+        }
+    };
+    tmp.LayoutAnimationsManager = obj;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
 };
+fn.__closure = { createLayoutAnimationManager };
+fn.__workletHash = 11408639565737;
+fn.__initData = { code: "function pnpm_animationsManagerTs4(){const{createLayoutAnimationManager}=this.__closure;global.LayoutAnimationsManager=createLayoutAnimationManager();}" };
+const tmp2 = setupMicrotasks.runOnUIImmediately(fn)();

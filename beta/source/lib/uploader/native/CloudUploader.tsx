@@ -1,19 +1,19 @@
-// Module ID: 7262
-// Function ID: 7263
+// Module ID: 7467
+// Function ID: 7468
 // Name: CloudUploader
-// Dependencies: [5, 1086, 4830, 3, 7263, 7178, 1127, 7264, 5489, 7265, 7266, 5440, 5441, 1433, 12, 2]
+// Dependencies: [5, 1085, 4883, 3, 7468, 7251, 1126, 7469, 7470, 7307, 7471, 7472, 7268, 7247, 1432, 12, 2]
 
-// Module 7262 (CloudUploader)
+// Module 7467 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import MessageConstants from "MessageConstants" /* 4830 */;
-import Upload from "Upload" /* 5441 */;
+import MessageConstants from "MessageConstants" /* 4883 */;
+import UploadPlatform from "UploadPlatform" /* 7247 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1086 */;
-import UploaderBase from "UploaderBase" /* 7263 */;
+import Constants from "Constants" /* 1085 */;
+import UploaderBase from "UploaderBase" /* 7468 */;
 import size from "module_2" /* 2 */;
 
-let _self, c2, c4, closure_0, constants, logger, set, uri;
+let _self, c2, c4, closure_0, constants, logger, preCompressionSize, set, uri;
 
 let closure_4;
 let hasOwnProperty;
@@ -36,11 +36,10 @@ class CloudUploader extends UploaderBase {
     const _superprop_getUpload = () => super.upload;
     let self = this;
     return self(function*(arg0, value) {
-      let c6;
+      let c7;
       let closure_3;
-      let closure_4;
       let files;
-      let obj10;
+      let obj13;
       let obj7;
       let obj9;
       if (logger === 2) {
@@ -57,17 +56,15 @@ class CloudUploader extends UploaderBase {
           return { value: "IconComponent", done: null };
         }
       } else {
-        let tmp57;
         let c5;
         try {
           let closure_2;
           let tmp;
-          let preCompressionSize;
           let uploadTarget;
           let promise;
           logger = 2;
-          const tmp4 = constants;
-          if (0 === constants) {
+          const tmp4 = preCompressionSize;
+          if (0 === preCompressionSize) {
             if (arg0 === 1) {
               logger = 3;
               throw value;
@@ -78,10 +75,9 @@ class CloudUploader extends UploaderBase {
             } else {
               closure_2 = tmp4;
               tmp = undefined;
-              tmp57 = undefined;
               preCompressionSize = undefined;
               uploadTarget = undefined;
-              files(closure_2[5]).backgroundTaskIdentifierInvalid;
+              _self = files(closure_2[5]).backgroundTaskIdentifierInvalid;
               const onceResult = self.once("start", tmp(function*(arg0, value) {
                 let intl;
                 let intl2;
@@ -171,27 +167,29 @@ class CloudUploader extends UploaderBase {
               });
               c5 = 1;
               self.files = files;
-              const obj16 = _superprop_getUpload();
-              obj16.call(self, files);
+              const obj17 = _superprop_getUpload();
+              obj17.call(self, files);
               self._file.attachmentsCount = files.length;
               self._handleStart(undefined);
-              tmp = 0;
+              const obj8 = _self(closure_2[7]);
+              tmp = obj8.shouldCheckUploadSizeOnlyAfterCompression();
+              constants = 0;
               files = self.files;
               _self = files[Symbol.iterator]();
             }
           } else if (1 === tmp4) {
             c5 = 0;
-            closure_7 = tmp57;
+            closure_8 = constants;
             const _HermesInternal = HermesInternal;
-            logger.log("" + closure_131_0.id + " failed in CloudUploader uploadFiles " + closure_7);
-            closure_131_0._handleException(closure_7);
+            logger.log("" + closure_131_0.id + " failed in CloudUploader uploadFiles " + closure_8);
+            closure_131_0._handleException(closure_8);
             logger = 3;
             let obj4 = { value: promise, done: true };
             return obj4;
           } else if (2 === tmp4) {
             c5 = 1;
             _self.return();
-            throw tmp57;
+            throw constants;
           } else if (arg0 === 1) {
             logger = 3;
             throw value;
@@ -205,65 +203,67 @@ class CloudUploader extends UploaderBase {
             preCompressionSize = value;
             const prop = closure_131_0.preCompressionFileSizes;
             prop.push(preCompressionSize);
-            tmp57.preCompressionSize = preCompressionSize;
-            tmp = tmp + preCompressionSize;
-            closure_131_0._file.totalPreCompressionSize = tmp;
-            closure_131_0._file.currentSize = tmp;
-            const obj15 = _self(closure_2[8]);
-            uploadTarget = obj15.getUploadTarget(tmp57.item.target);
-            if (preCompressionSize > uploadTarget.getMaxFileSize(tmp57.channelId)) {
-              let obj6 = { code: tmp57.ENTITY_TOO_LARGE, reason: obj7 };
-              obj7 = { type: constants.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE };
-              closure_131_0._handleError(obj6);
-              const tmp19 = promise;
-              _self.return();
-              c5 = 0;
-              logger = 3;
-              const obj8 = { value: tmp19, done: true };
-              return obj8;
-            } else if (tmp > uploadTarget.getMaxTotalAttachmentSize()) {
-              let obj = { code: tmp57.ENTITY_TOO_LARGE, reason: obj10 };
-              obj10 = { type: constants.PRECOMPRESSION_SUM_TOO_LARGE };
-              closure_131_0._handleError(obj);
-              const tmp12 = _self;
-              _self.return();
-              c5 = 0;
-              logger = 3;
-              const obj12 = { value: promise, done: true };
-              return obj12;
-            } else {
-              c5 = 1;
+            c5.preCompressionSize = preCompressionSize;
+            constants = constants + preCompressionSize;
+            closure_131_0._file.totalPreCompressionSize = constants;
+            closure_131_0._file.currentSize = constants;
+            const tmp79 = tmp;
+            if (!tmp79) {
+              let obj = _self(closure_2[9]);
+              uploadTarget = obj.getUploadTarget(c5.item.target);
+              const tmp12 = c5;
+              if (preCompressionSize > uploadTarget.getMaxFileSize(c5.channelId)) {
+                let obj6 = { code: constants.ENTITY_TOO_LARGE, reason: obj7 };
+                obj7 = { type: preCompressionSize.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE };
+                closure_131_0._handleError(obj6);
+                const tmp19 = promise;
+                _self.return();
+                c5 = 0;
+                logger = 3;
+                const obj10 = { value: tmp19, done: true };
+                return obj10;
+              } else if (constants > uploadTarget.getMaxTotalAttachmentSize()) {
+                const obj12 = { code: constants.ENTITY_TOO_LARGE, reason: obj13 };
+                obj13 = { type: preCompressionSize.PRECOMPRESSION_SUM_TOO_LARGE };
+                closure_131_0._handleError(obj12);
+                _self.return();
+                c5 = 0;
+                logger = 3;
+                const obj14 = { value: promise, done: true };
+                return obj14;
+              }
             }
+            c5 = 1;
           }
           if (_self === undefined) {
             const _HermesInternal2 = HermesInternal;
             logger.log("" + closure_131_0.id + " queued");
-            const obj11 = files(closure_2[9]);
+            const obj11 = files(closure_2[10]);
             obj11.enqueue(() => {
               closure_1_0.startUpload();
               return closure_1_0;
             });
             c5 = 0;
             logger = 3;
-            const obj13 = { value: promise, done: true };
-            return obj13;
+            const obj15 = { value: promise, done: true };
+            return obj15;
           } else {
-            c5 = 2;
-            tmp57 = tmp43;
-            constants = 3;
+            c5 = tmp45;
+            preCompressionSize = 3;
             logger = 1;
-            const obj14 = { value: obj9.getPreCompressionFileSize(tmp57.item), done: false };
-            obj9 = _self(closure_2[7]);
-            return obj14;
+            const obj16 = { value: obj9.getPreCompressionFileSize(c5.item), done: false };
+            obj9 = _self(closure_2[8]);
+            return obj16;
           }
-        } catch (tmp57) {
+        } catch (tmp59) {
+          constants = tmp59;
           if (0 === c5) {
             logger = 3;
-            throw tmp57;
-          } else if (1 === tmp59) {
-            constants = 1;
+            throw tmp59;
+          } else if (1 === tmp61) {
+            preCompressionSize = 1;
           } else {
-            constants = 2;
+            preCompressionSize = 2;
           }
         }
       }
@@ -344,7 +344,7 @@ class CloudUploader extends UploaderBase {
                 return obj6;
               } else {
                 result = closure_129_0.files;
-                if (result.every((status) => status.status === closure_1_0(closure_1_2[11]).CloudUploadStatus.COMPLETED)) {
+                if (result.every((status) => status.status === closure_1_0(closure_1_2[12]).CloudUploadStatus.COMPLETED)) {
                   result = closure_129_0._file.items;
                   if (result != null) {
                     const item = result.forEach((item) => {
@@ -382,7 +382,7 @@ class CloudUploader extends UploaderBase {
               _self();
               if (value) {
                 const result1 = closure_129_0.setUploadingTextForUI();
-                result = tmp(closure_2[10]);
+                result = tmp(closure_2[11]);
                 const _recomputeProgress = closure_129_0._recomputeProgress;
                 c4 = 3;
                 c5 = 1;
@@ -428,7 +428,7 @@ class CloudUploader extends UploaderBase {
     }
     let item = files.forEach((item) => {
       item = item.item;
-      if (item.platform === Upload.UploadPlatform.REACT_NATIVE) {
+      if (item.platform === UploadPlatform.UploadPlatform.REACT_NATIVE) {
         item.compressionProgress = 0;
         const uploadItems = self.uploadItems;
         const result = uploadItems.set(item.uri, item);
@@ -437,7 +437,7 @@ class CloudUploader extends UploaderBase {
     let mediaEventSubscriptions = this.mediaEventSubscriptions;
     const id = this._file.id;
     set = mediaEventSubscriptions.set;
-    const obj = self(1433);
+    const obj = self(1432);
     let result = set(id, obj.onCompressionProgress((uri) => {
       uri = uri.uri;
       const uploadItems = self.uploadItems;

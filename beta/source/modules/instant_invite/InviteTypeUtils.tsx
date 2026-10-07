@@ -1,14 +1,14 @@
-// Module ID: 7158
-// Function ID: 7159
+// Module ID: 7225
+// Function ID: 7226
 // Name: InviteTypeUtils
-// Dependencies: [6950, 2055, 7159, 7160, 2]
+// Dependencies: [7037, 2055, 7226, 7227, 2]
 // Exports: getGuildInviteExtendedType, getInviteType, isEmbeddedApplicationInvite, isFriendInvite, isGroupDMInvite, isGuildScheduledEventInviteEmbed, isRoleSubscriptionInvite, isStreamInvite, isVoiceChannelInvite
 
-// Module 7158 (InviteTypeUtils)
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
-import GuildProfileUtils from "GuildProfileUtils" /* 7160 */;
+// Module 7225 (InviteTypeUtils)
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
+import GuildProfileUtils from "GuildProfileUtils" /* 7227 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import Constants from "Constants" /* 7159 */;
+import Constants from "Constants" /* 7226 */;
 import size from "module_2" /* 2 */;
 
 let c3;

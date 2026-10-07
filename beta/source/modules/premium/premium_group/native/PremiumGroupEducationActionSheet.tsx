@@ -1,20 +1,20 @@
-// Module ID: 13057
-// Function ID: 13058
+// Module ID: 13321
+// Function ID: 13322
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 4505, 21, 4837, 588, 558, 576, 6351, 4833, 1127, 3202, 6572, 2]
+// Dependencies: [17, 4542, 21, 4890, 587, 558, 576, 4800, 4886, 1126, 3205, 6645, 2]
 
-// Module 13057 (PremiumGroupEducationActionSheet)
+// Module 13321 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import _modDef3202 from "module_3202" /* 3202 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4505 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6351 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import _modDef3205 from "module_3205" /* 3205 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4542 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,9 +74,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         const _Symbol = Symbol;
         const helpdeskText = tmp4.helpdeskText;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const obj4 = { helpCenterLink: HELP_CENTER_LINK };
-          const formatResult = intl.format(_modDef3202.ah1Ecm, obj4);
+          const formatResult = intl.format(_modDef3205.ah1Ecm, obj4);
           cResult[11] = formatResult;
           tmp18 = formatResult;
         } else {
@@ -103,7 +103,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         const obj6 = { children: metroRequire(View, obj7) };
         obj7 = { style: container, children: items };
         items = [tmp13, tmp22];
-        BottomSheet = tmp(6572).BottomSheet;
+        BottomSheet = tmp(6645).BottomSheet;
         const tmp29 = hasOwnProperty(BottomSheet, obj6);
         cResult[14] = tmp4.container;
         cResult[15] = tmp13;
@@ -145,7 +145,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
   const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText }) };
   items[1] = hasOwnProperty(View, obj5);
   items1 = [metroRequire(View, obj3), ];
-  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3202.ah1Ecm, obj7) };
+  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3205.ah1Ecm, obj7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   obj7 = { helpCenterLink: HELP_CENTER_LINK };

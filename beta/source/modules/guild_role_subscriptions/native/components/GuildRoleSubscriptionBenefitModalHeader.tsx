@@ -1,24 +1,24 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 17951
+// Function ID: 17952
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 1086, 21, 4837, 588, 5837, 558, 576, 14760, 1127, 4833, 9215, 1189, 6546, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 5915, 558, 576, 15045, 1126, 4886, 9442, 1188, 6619, 2]
 
-// Module 17586 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 17951 (GuildRoleSubscriptionBenefitModalHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9215 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14760 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15045 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles_mod from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles_mod from "TextStyles" /* 5915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
     const _Symbol = Symbol;
     const headerButton = tmp4.headerButton;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl3.t["ETE/oC"]);
       cResult[3] = stringResult;
       tmp9 = stringResult;
@@ -121,7 +121,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
                     }
                     const _Symbol2 = Symbol;
                     if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-                      const intl2 = tmp(1127).intl;
+                      const intl2 = tmp(1126).intl;
                       const stringResult1 = intl2.string(intl3.t["R3BPH+"]);
                       cResult[26] = stringResult1;
                       tmp32 = stringResult1;
@@ -277,7 +277,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   }
   items4[1] = disabledButton;
   obj9 = { style: items4, children: intl2.string(intl3.t["R3BPH+"]) };
-  intl2 = tmp5(1127).intl;
+  intl2 = tmp5(1126).intl;
   items1[2] = metroRequire(tmp8, obj8);
   return tmp4(SafeAreaPaddingView, obj2);
 });

@@ -1,13 +1,13 @@
-// Module ID: 6964
-// Function ID: 6965
+// Module ID: 7051
+// Function ID: 7052
 // Name: FamilyCenterControlledSettingsStore
-// Dependencies: [1234, 1198, 504, 585, 2]
+// Dependencies: [1233, 1197, 504, 584, 2]
 
-// Module 6964 (FamilyCenterControlledSettingsStore)
+// Module 7051 (FamilyCenterControlledSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1234 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4;

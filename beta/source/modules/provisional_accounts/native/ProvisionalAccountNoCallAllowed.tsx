@@ -1,18 +1,18 @@
-// Module ID: 13346
-// Function ID: 13347
+// Module ID: 13611
+// Function ID: 13612
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 1086, 21, 4837, 558, 576, 6351, 1127, 2114, 5210, 5210, 2]
+// Dependencies: [19, 1085, 21, 4890, 558, 576, 4800, 1126, 2115, 5713, 5713, 2]
 
-// Module 13346 (ProvisionalAccountNoCallAllowed)
+// Module 13611 (ProvisionalAccountNoCallAllowed)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import AlertModal2 from "AlertModal" /* 5210 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6351 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
+import AlertModal2 from "AlertModal" /* 5713 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,12 +39,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t["vh+Zpq"]);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const format = intl2.format;
     const obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS) };
-    const prop = tmp(1127).t["tx08s+"];
+    const prop = tmp(1126).t["tx08s+"];
     obj4 = HelpdeskUtilsDefault;
     const formatResult = format(prop, obj3);
     cResult[2] = stringResult;
@@ -56,10 +56,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertActions = tmp(5210).AlertActions;
+    const AlertActions = tmp(5713).AlertActions;
     ({ variant: "secondary", text: intl3.string(intl4.t["NX+WJN"]) });
-    const AlertActionButton = tmp(5210).AlertActionButton;
-    intl3 = tmp(1127).intl;
+    const AlertActionButton = tmp(5713).AlertActionButton;
+    intl3 = tmp(1126).intl;
     const tmp17 = <AlertActions>{null}</AlertActions>;
     cResult[4] = tmp17;
     tmp15 = tmp17;

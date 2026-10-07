@@ -1,15 +1,15 @@
-// Module ID: 7383
-// Function ID: 7384
+// Module ID: 7596
+// Function ID: 7597
 // Name: MessageWithContent
-// Dependencies: [7384, 7379, 7386, 1127, 7569, 2]
+// Dependencies: [7597, 7592, 7599, 1126, 7791, 2]
 // Exports: generateMessageRowData
 
-// Module 7383 (MessageWithContent)
-import intl6 from "intl" /* 1127 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
-import createMessageContentDefault from "createMessageContent" /* 7386 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7569 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7384 */;
+// Module 7596 (MessageWithContent)
+import intl6 from "intl" /* 1126 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7592 */;
+import createMessageContentDefault from "createMessageContent" /* 7599 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7791 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7597 */;
 import size from "module_2" /* 2 */;
 
 const RowType = RowGeneratorConstants.RowType;
@@ -20,7 +20,6 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
   let canAddNewReactions;
   let canReply;
   let changeType;
-  let conversationHeader;
   let createSwipeActions;
   let forcedTheme;
   let intl;
@@ -38,7 +37,6 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
   let renderContentOnly;
   let roleStyle;
   let separatorBefore;
-  let showContentInventoryEntryFallbackEmbed;
   let tmp11;
   let truncation;
   ({ message, isEditing, isSystemDM } = canShowImages);
@@ -56,9 +54,8 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
     tmp3 = alwaysShowAddReaction;
   }
   let overrideBackgroundHighlight = canShowImages.overrideBackgroundHighlight;
-  const obj = { type: RowType.MESSAGE, message: createMessageContentDefault(obj2), canAddNewReactions, addNewReactionAccessibilityLabel: intl.string(intl6.t.lfIHs4), reactionsTheme, highlightLabel: intl2.string(intl6.t["IOS/dU"]), renderContentOnly, separatorBefore, changeType, truncation, alwaysShowAddReaction: tmp3, backgroundHighlight: overrideBackgroundHighlight, conversationHeader, swipeActions: createSwipeActions(canReply, tmp11), replyAccessibilityLabel: intl3.string(intl6.t["5IEsGx"]), forwardAccessibilityLabel: intl4.string(intl6.t.I3ltXO), threadAccessibilityLabel: intl5.string(intl6.t.rBIGBL), forcedTheme };
-  ({ showContentInventoryEntryFallbackEmbed, conversationHeader } = canShowImages);
-  obj2 = { options, message, roleStyle, isFirst, isEditing, canShowImages: tmp2, isSystemDM: tmp, isInlineReplyPreview: false, pushFeedbackType, renderContentOnly, showContentInventoryEntryFallbackEmbed };
+  const obj = { type: RowType.MESSAGE, message: createMessageContentDefault(obj2), canAddNewReactions, addNewReactionAccessibilityLabel: intl.string(intl6.t.lfIHs4), reactionsTheme, highlightLabel: intl2.string(intl6.t["IOS/dU"]), renderContentOnly, separatorBefore, changeType, truncation, alwaysShowAddReaction: tmp3, backgroundHighlight: overrideBackgroundHighlight, swipeActions: createSwipeActions(canReply, tmp11), replyAccessibilityLabel: intl3.string(intl6.t["5IEsGx"]), forwardAccessibilityLabel: intl4.string(intl6.t.I3ltXO), threadAccessibilityLabel: intl5.string(intl6.t.rBIGBL), forcedTheme };
+  obj2 = { options, message, roleStyle, isFirst, isEditing, canShowImages: tmp2, isSystemDM: tmp, isInlineReplyPreview: false, pushFeedbackType, renderContentOnly, showContentInventoryEntryFallbackEmbed: canShowImages.showContentInventoryEntryFallbackEmbed };
   intl = intl6.intl;
   intl2 = intl6.intl;
   if (overrideBackgroundHighlight == null) {
@@ -74,9 +71,9 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
     canReply = canShowImages.canReply;
   }
   tmp11 = options.enableSwipeActions && canShowImages.canEdit;
-  intl3 = tmp6(1127).intl;
-  intl4 = tmp6(1127).intl;
-  intl5 = tmp6(1127).intl;
+  intl3 = tmp6(1126).intl;
+  intl4 = tmp6(1126).intl;
+  intl5 = tmp6(1126).intl;
   forcedTheme = options.forcedTheme;
   return obj;
 };

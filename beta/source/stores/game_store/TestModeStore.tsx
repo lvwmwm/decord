@@ -1,15 +1,15 @@
-// Module ID: 8319
-// Function ID: 8320
+// Module ID: 8515
+// Function ID: 8516
 // Name: TestModeStore
-// Dependencies: [1195, 1232, 6818, 504, 2027, 585, 2]
+// Dependencies: [1194, 1231, 6902, 504, 2028, 584, 2]
 
-// Module 8319 (TestModeStore)
+// Module 8515 (TestModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1195 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 6818 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 6902 */;
 import size from "module_2" /* 2 */;
 
 let originURL;

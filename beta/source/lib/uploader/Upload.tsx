@@ -1,58 +1,57 @@
-// Module ID: 5441
-// Function ID: 5442
+// Module ID: 7269
+// Function ID: 7270
 // Name: Upload
-// Dependencies: [580, 5442, 12, 5447, 1267, 2]
+// Dependencies: [580, 7247, 7243, 12, 7270, 1266, 2]
 // Exports: isResolvedUpload
 
-// Module 5441 (Upload)
+// Module 7269 (Upload)
 import _modDef12 from "module_12" /* 12 */;
 import _mod580 from "module_580" /* 580 */;
-import v1 from "v1" /* 1267 */;
-import UploadUtils from "UploadUtils" /* 5442 */;
-import FileUtilsAll from "FileUtils" /* 5447 */;
+import v1 from "v1" /* 1266 */;
+import UploadUtils from "UploadUtils" /* 7243 */;
+import UploadPlatform from "UploadPlatform" /* 7247 */;
+import FileUtilsAll from "FileUtils" /* 7270 */;
 import size from "module_2" /* 2 */;
 
-const UploadPlatform = { REACT_NATIVE: 0, [0]: "REACT_NATIVE", WEB: 1, [1]: "WEB" };
 const EventEmitter = _mod580.EventEmitter;
 class Upload extends EventEmitter {
   constructor(item) {
-    let obj;
-    const tmp5 = new Upload(tmp4, tmp3, tmp2, tmp);
-    tmp5.allowOptimization = true;
-    tmp5.item = item;
-    if (item.platform === obj.REACT_NATIVE) {
+    const tmp4 = new Upload(tmp3, tmp2, tmp);
+    tmp4.allowOptimization = true;
+    tmp4.item = item;
+    if (item.platform === UploadPlatform.UploadPlatform.REACT_NATIVE) {
       let uri = item.id;
       if (uri == null) {
         uri = item.uri;
       }
-      tmp5.id = uri;
-      const obj6 = { uri: null, overrideFilename: null, overrideType: null };
+      tmp4.id = uri;
+      const obj3 = { uri: null, overrideFilename: null, overrideType: null };
       ({ uri: obj4.uri, filename: obj4.overrideFilename, mimeType: obj4.overrideType } = item);
-      const obj3 = UploadUtils;
-      const file = obj3.getFile(obj6);
-      ({ filename: tmp5.filename, isImage: tmp5.isImage, isVideo: tmp5.isVideo, type: tmp5.mimeType } = file);
-      ({ origin: tmp5.origin, durationSecs: tmp5.durationSecs, waveform: tmp5.waveform } = item);
+      const tmp5Result = UploadUtils;
+      const file = tmp5Result.getFile(obj3);
+      ({ filename: tmp4.filename, isImage: tmp4.isImage, isVideo: tmp4.isVideo, type: tmp4.mimeType } = file);
+      ({ origin: tmp4.origin, durationSecs: tmp4.durationSecs, waveform: tmp4.waveform } = item);
     } else {
       let id = item.id;
       if (id == null) {
-        obj = _modDef12;
+        const obj = _modDef12;
         id = obj.uniqueId("upload");
       }
-      tmp5.id = id;
+      tmp4.id = id;
       const obj2 = FileUtilsAll;
-      tmp5.classification = obj2.classifyFile(item.file);
-      tmp5.isImage = "image" === tmp5.classification;
-      tmp5.isVideo = "video" === tmp5.classification;
-      tmp5.filename = item.file.name;
-      tmp5.mimeType = item.file.type;
-      tmp5.origin = item.origin;
+      tmp4.classification = obj2.classifyFile(item.file);
+      tmp4.isImage = "image" === tmp4.classification;
+      tmp4.isVideo = "video" === tmp4.classification;
+      tmp4.filename = item.file.name;
+      tmp4.mimeType = item.file.type;
+      tmp4.origin = item.origin;
     }
-    ({ isThumbnail: tmp5.isThumbnail, clip: tmp5.clip } = item);
-    const obj5 = v1;
-    tmp5.uniqueId = obj5.v4();
-    tmp5.spoiler = false;
-    tmp5.description = null;
-    return tmp5;
+    ({ isThumbnail: tmp4.isThumbnail, clip: tmp4.clip } = item);
+    const tmp5Result2 = v1;
+    tmp4.uniqueId = tmp5Result2.v4();
+    tmp4.spoiler = false;
+    tmp4.description = null;
+    return tmp4;
   }
   cancel() {
 
@@ -65,7 +64,6 @@ const prototype = Upload.prototype;
 const result = size.fileFinishedImporting("lib/uploader/Upload.tsx");
 
 export default Upload;
-export { UploadPlatform };
 export const isResolvedUpload = function isResolvedUpload(file) {
   return undefined !== file.isVideo && undefined !== file.isImage;
 };

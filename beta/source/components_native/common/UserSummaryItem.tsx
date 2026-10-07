@@ -1,17 +1,17 @@
-// Module ID: 9510
-// Function ID: 9511
+// Module ID: 9738
+// Function ID: 9739
 // Name: UserSummaryItem
-// Dependencies: [19, 17, 2111, 21, 4837, 588, 1189, 558, 576, 504, 1403, 4989, 1127, 4833, 2]
+// Dependencies: [19, 17, 2112, 21, 4890, 587, 1188, 558, 576, 504, 1402, 5042, 1126, 4886, 2]
 
-// Module 9510 (UserSummaryItem)
+// Module 9738 (UserSummaryItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 15881
-// Function ID: 15882
+// Module ID: 16178
+// Function ID: 16179
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 4826, 1086, 2048, 21, 4837, 588, 558, 576, 9025, 5439, 573, 1127, 7759, 4833, 5282, 4801, 6572, 2]
+// Dependencies: [32, 19, 17, 4879, 1085, 2048, 21, 4890, 587, 558, 576, 9247, 5912, 573, 1126, 7983, 4886, 5594, 4854, 6645, 2]
 
-// Module 15881 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 16178 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
-import nativeDefault from "native" /* 588 */;
-import intl6 from "intl" /* 1127 */;
+import nativeDefault from "native" /* 587 */;
+import intl6 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5439 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5912 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import Constants from "Constants" /* 1086 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     let tmp21;
     [tmp8, dependencyMap] = isScreenLandscape(P.useState(0), 2);
     isScreenLandscape(P.useState(0), 2);
-    const tmpResult = guildId(5439);
+    const tmpResult = guildId(5912);
     isScreenLandscape = tmpResult.useIsScreenLandscape();
     const _Symbol = Symbol;
     const obj2 = P;
@@ -182,7 +182,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           return P(nativeEvent.nativeEvent.layout.width);
         }
       }
-      const stringResult = obj5.string(guildId(1127).t.gCgirr);
+      const stringResult = obj5.string(guildId(1126).t.gCgirr);
       class E {
         constructor() {
           return useReducedMotion.useReducedMotion;
@@ -205,7 +205,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
     }
-    const obj3 = { accessibilityRole: "image", accessibilityLabel: tmp21, children: closure_10(markAsDismissed(7759), size) };
+    const obj3 = { accessibilityRole: "image", accessibilityLabel: tmp21, children: closure_10(markAsDismissed(7983), size) };
     size = { style: tmp4.videoContainer, src, width: tmp8, height: result, muted: true, paused: stateFromStores, ariaHidden: true };
     cResult[13] = tmp4.videoContainer;
     cResult[14] = result;
@@ -270,7 +270,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     },
     children: items2
   };
-  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(7759), size) };
+  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(7983), size) };
   BottomSheet = Sheet_BottomSheet.BottomSheet;
   intl = intl6.intl;
   size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / c12, muted: true, paused: stateFromStores, ariaHidden: true };

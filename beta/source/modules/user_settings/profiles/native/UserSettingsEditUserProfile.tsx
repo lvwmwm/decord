@@ -1,20 +1,20 @@
-// Module ID: 14133
-// Function ID: 14134
+// Module ID: 14412
+// Function ID: 14413
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1378, 21, 558, 576, 6584, 6604, 504, 7636, 14134, 2]
+// Dependencies: [19, 1377, 21, 558, 576, 6657, 6681, 504, 7858, 14413, 2]
 
-// Module 14133 (UserSettingsEditUserProfile)
+// Module 14412 (UserSettingsEditUserProfile)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6584 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7636 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const UserProfileEditFormDefault = tmp4(14134);
+const UserProfileEditFormDefault = tmp4(14413);
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let currentUser;
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         tmp13 = tmp21;
       }
-      const tmp23 = jsx(stateFromStores(6584).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp14 });
+      const tmp23 = jsx(stateFromStores(6657).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp14 });
       cResult[8] = analyticsLocations;
       cResult[9] = tmp14;
       cResult[10] = tmp23;
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
   let tmp7 = null;
   if (null != stateFromStores) {
-    const AnalyticsLocationProvider = tmp4(6584).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp4(6657).AnalyticsLocationProvider;
     UserProfileEditFormDefault;
     const merged = Object.assign(arg0);
     tmp7 = <AnalyticsLocationProvider value={analyticsLocations}>{null}</AnalyticsLocationProvider>;

@@ -1,23 +1,23 @@
-// Module ID: 8244
-// Function ID: 8245
+// Module ID: 8440
+// Function ID: 8441
 // Name: StorefrontActionCreators
-// Dependencies: [5, 4493, 6654, 8245, 8246, 8247, 1086, 1103, 585, 1283, 4738, 6653, 2]
+// Dependencies: [5, 4530, 6733, 8441, 8442, 8443, 1085, 1102, 584, 1282, 5313, 6732, 2]
 // Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8244 (StorefrontActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
+// Module 8440 (StorefrontActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingInfoStore from "BillingInfoStore" /* 4493 */;
-import SKUPricesStore from "SKUPricesStore" /* 6654 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8245 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8246 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8247 */;
+import BillingInfoStore from "BillingInfoStore" /* 4530 */;
+import SKUPricesStore from "SKUPricesStore" /* 6733 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8441 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8442 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8443 */;
 import size from "module_2" /* 2 */;
 
-let apiError, c1, closure_3, closure_4, promotions;
+let apiError, c1, closure_2, closure_4, promotions;
 
 function shouldFetchStorefrontPromotions(arg0) {
   const fetchState = StorefrontPromotionStore.getFetchState(arg0);
@@ -212,11 +212,11 @@ obj = function _claimStorefrontPromotion() {
               c7 = 3;
               return { value, done: true };
             } else {
-              closure_3 = tmp;
+              body = undefined;
               apiError = undefined;
               const obj4 = { type: "STOREFRONT_PROMOTION_CLAIM_START", promotionId };
-              const obj11 = DispatcherDefault;
-              obj11.dispatch(obj4);
+              const obj12 = DispatcherDefault;
+              obj12.dispatch(obj4);
               c5 = 1;
               const HTTP = HTTPUtils.HTTP;
               const request = { url: Endpoints.STOREFRONT_PROMOTION_CLAIM(promotionId), body: {}, rejectWithError: true };
@@ -228,14 +228,13 @@ obj = function _claimStorefrontPromotion() {
             }
           } else if (1 === c6) {
             c5 = 0;
-            closure_3 = closure_4;
             const self = this;
             const self2 = this;
-            apiError = new closure_131_1(closure_131_2[10])(closure_3);
-            const obj7 = { type: "STOREFRONT_PROMOTION_CLAIM_FAIL", promotionId, apiError };
-            const tmp20 = new closure_131_1(closure_131_2[10])(closure_3);
-            const obj6 = closure_131_1(closure_131_2[8]);
-            obj6.dispatch(obj7);
+            apiError = new closure_131_1(closure_131_2[10])(closure_4);
+            const obj6 = { type: "STOREFRONT_PROMOTION_CLAIM_FAIL", promotionId, apiError };
+            const tmp22 = new closure_131_1(closure_131_2[10])(closure_4);
+            const obj7 = closure_131_1(closure_131_2[8]);
+            obj7.dispatch(obj6);
             throw apiError;
           } else if (2 === c6) {
             if (arg0 === 1) {
@@ -246,7 +245,7 @@ obj = function _claimStorefrontPromotion() {
               return { value, done: true };
             } else {
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: body.body, done: true };
             }
           } else if (arg0 === 1) {
             c7 = 3;
@@ -256,21 +255,22 @@ obj = function _claimStorefrontPromotion() {
             c7 = 3;
             return { value, done: true };
           } else {
+            body = value;
             c5 = 0;
-            const obj10 = { type: "STOREFRONT_PROMOTION_CLAIM_SUCCESS", promotionId };
+            const obj11 = { type: "STOREFRONT_PROMOTION_CLAIM_SUCCESS", promotionId };
             obj = closure_131_1(closure_131_2[8]);
-            obj.dispatch(obj10);
+            obj.dispatch(obj11);
             const items = [closure_1];
             c6 = 2;
             c7 = 1;
-            const obj12 = { value: closure_131_13(items), done: false };
-            return obj12;
+            const obj13 = { value: closure_131_13(items), done: false };
+            return obj13;
           }
-        } catch (tmp28) {
-          closure_4 = tmp28;
+        } catch (tmp30) {
+          closure_4 = tmp30;
           if (0 === c5) {
             c7 = 3;
-            throw tmp28;
+            throw tmp30;
           } else {
             c6 = 1;
           }
@@ -282,17 +282,69 @@ obj = function _claimStorefrontPromotion() {
 };
 obj = function _fetchStorefrontPricesForApplicationId() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_1;
-    let closure_2;
     let applicationId = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0) => {
-      const obj5 = { type: "application", applicationId };
-      await closure_130_18(obj5);
-      await "IconComponent";
-      applicationId = applicationId.applicationId;
-      return "Reflect";
+    const iter = (async (arg0, value) => {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp4;
+              closure_1 = tmp;
+              applicationId = undefined;
+              applicationId = applicationId.applicationId;
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { type: "application", applicationId };
+              const obj6 = { value: closure_130_18(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            c4 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp10) {
+          c4 = 3;
+          throw tmp10;
+        }
+      }
     })();
     iter.next();
     return iter;
@@ -301,17 +353,69 @@ obj = function _fetchStorefrontPricesForApplicationId() {
 };
 obj = function _fetchStorefrontPricesForSkuIds() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_1;
-    let closure_2;
     let skuIds = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0) => {
-      const obj5 = { type: "skus", skuIds };
-      await closure_130_18(obj5);
-      await "IconComponent";
-      skuIds = skuIds.skuIds;
-      return "Reflect";
+    const iter = (async (arg0, value) => {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp4;
+              closure_1 = tmp;
+              skuIds = undefined;
+              skuIds = skuIds.skuIds;
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { type: "skus", skuIds };
+              const obj6 = { value: closure_130_18(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            c4 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp10) {
+          c4 = 3;
+          throw tmp10;
+        }
+      }
     })();
     iter.next();
     return iter;

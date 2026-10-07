@@ -1,17 +1,17 @@
 // Module ID: 2009
 // Function ID: 2010
 // Name: ApplicationRecord
-// Dependencies: [1393, 2010, 1392, 2011, 1361, 1098, 2013, 1403, 2015, 11, 2]
+// Dependencies: [1392, 2010, 1391, 2011, 1360, 1097, 2013, 1402, 2015, 11, 2016, 2]
 
 // Module 2009 (ApplicationRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
-import ApplicationConstants from "ApplicationConstants" /* 1361 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import ApplicationConstants from "ApplicationConstants" /* 1360 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2015 */;
-import Record from "Record" /* 1393 */;
+import Record from "Record" /* 1392 */;
 import CompanyRecord from "CompanyRecord" /* 2010 */;
-import UserRecord from "UserRecord" /* 1392 */;
+import UserRecord from "UserRecord" /* 1391 */;
 import Constants from "Constants" /* 2011 */;
 import size from "module_2" /* 2 */;
 
@@ -239,6 +239,11 @@ class ApplicationRecord extends BasicApplicationRecord {
       embedded_activity_config = nextResult.embeddedActivityConfig;
     }
     tmp2.embeddedActivityConfig = embedded_activity_config;
+    let embeddedSurfaces = nextResult.embedded_surfaces;
+    if (embeddedSurfaces == null) {
+      embeddedSurfaces = nextResult.embeddedSurfaces;
+    }
+    tmp2.embeddedSurfaces = embeddedSurfaces;
     ({ team: tmp2.team, integrationTypesConfig: tmp2.integrationTypesConfig, storefront_available: tmp2.storefront_available, termsOfServiceUrl: tmp2.termsOfServiceUrl, privacyPolicyUrl: tmp2.privacyPolicyUrl, is_discoverable } = nextResult);
     if (is_discoverable == null) {
       is_discoverable = nextResult.isDiscoverable;
@@ -346,7 +351,7 @@ class ApplicationRecord extends BasicApplicationRecord {
     if (num == null) {
       num = 0;
     }
-    ({ max_participants: obj.maxParticipants, tags: obj.tags, embedded_activity_config: obj.embeddedActivityConfig } = bot);
+    ({ max_participants: obj.maxParticipants, tags: obj.tags, embedded_activity_config: obj.embeddedActivityConfig, embedded_surfaces: obj.embeddedSurfaces } = bot);
     fromEntriesResult = undefined;
     if (null != bot.integration_types_config) {
       const _Object = Object;
@@ -423,6 +428,7 @@ class ApplicationRecord extends BasicApplicationRecord {
     let developers;
     let directoryEntry;
     let embeddedActivityConfig;
+    let embeddedSurfaces;
     let eulaId;
     let executables;
     let flags;
@@ -464,7 +470,7 @@ class ApplicationRecord extends BasicApplicationRecord {
     if (id == null) {
       id = self.id;
     }
-    let obj = { id, name, icon, splash, overlay, overlayWarn, overlayCompatibilityHook, overlayMethods, hook, aliases, publishers, developers, primarySkuId, storeListingSkuId, thirdPartySkus, guildId, guild, executables, hashes, description, eulaId, slug, coverImage, bot, flags, maxParticipants, tags, embeddedActivityConfig, type, team, roleConnectionsVerificationUrl, _connectionEntrypointUrl, integrationTypesConfig, isMonetized, storefront_available, termsOfServiceUrl, privacyPolicyUrl, isVerified, customInstallUrl, installParams, isDiscoverable, directoryEntry, categories, linkedGames: tmp5, deepLinkUri, applicationAccountLinkBenefitConfig, vibegrationsProjectId, contentClassification, parentId };
+    let obj = { id, name, icon, splash, overlay, overlayWarn, overlayCompatibilityHook, overlayMethods, hook, aliases, publishers, developers, primarySkuId, storeListingSkuId, thirdPartySkus, guildId, guild, executables, hashes, description, eulaId, slug, coverImage, bot, flags, maxParticipants, tags, embeddedActivityConfig, embeddedSurfaces, type, team, roleConnectionsVerificationUrl, _connectionEntrypointUrl, integrationTypesConfig, isMonetized, storefront_available, termsOfServiceUrl, privacyPolicyUrl, isVerified, customInstallUrl, installParams, isDiscoverable, directoryEntry, categories, linkedGames: tmp5, deepLinkUri, applicationAccountLinkBenefitConfig, vibegrationsProjectId, contentClassification, parentId };
     name = id.name;
     if (name == null) {
       name = self.name;
@@ -578,6 +584,10 @@ class ApplicationRecord extends BasicApplicationRecord {
         tmp2 = obj2;
       }
       embeddedActivityConfig = tmp2;
+    }
+    embeddedSurfaces = id.embeddedSurfaces;
+    if (embeddedSurfaces == null) {
+      embeddedSurfaces = self.embeddedSurfaces;
     }
     type = id.type;
     if (type == null) {
@@ -699,6 +709,10 @@ class ApplicationRecord extends BasicApplicationRecord {
     }
     return num;
   }
+  supportsEmbeddedSurface(arg0) {
+    const obj = require("EmbeddedSurfaceUtils");
+    return obj.supportsEmbeddedSurface(this, arg0);
+  }
   supportsIntegrationTypes() {
     const items = [...arguments];
     const integrationTypesConfig = this.integrationTypesConfig;
@@ -711,6 +725,13 @@ class ApplicationRecord extends BasicApplicationRecord {
   }
 }
 const prototype = ApplicationRecord.prototype;
+Object.defineProperty(prototype, "isEmbedded", {
+  get: function isEmbedded() {
+    const obj = require("EmbeddedSurfaceUtils");
+    return obj.isEmbeddedApplication(this);
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "destinationSkuId", {
   get: function destinationSkuId() {
     const self = this;

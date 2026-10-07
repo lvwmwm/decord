@@ -1,12 +1,12 @@
-// Module ID: 11369
-// Function ID: 11370
+// Module ID: 11625
+// Function ID: 11626
 // Name: MediaPostGridThumbnail
-// Dependencies: [19, 17, 21, 558, 576, 11367, 5896, 1370, 2]
+// Dependencies: [19, 17, 21, 558, 576, 11623, 5974, 1369, 2]
 
-// Module 11369 (MediaPostGridThumbnail)
+// Module 11625 (MediaPostGridThumbnail)
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import ForumPostMedia from "ForumPostMedia" /* 11367 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import ForumPostMedia from "ForumPostMedia" /* 11623 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1370);
+const PlatformUtils = tmp(1369);
 ({ ImageBackground: c3, StyleSheet: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;

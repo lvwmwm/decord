@@ -1,0 +1,31 @@
+// Module ID: 7357
+// Function ID: 7358
+// Dependencies: [7354]
+
+// Module 7357
+import _mod7354 from "module_7354" /* 7354 */;
+
+
+export default {
+  isAvifFile(getUint32) {
+    if (getUint32) {
+      try {
+        const obj = _mod7354;
+        let parseBoxResult = obj.parseBox(getUint32, 0);
+        const tmp4 = parseBoxResult;
+        if (tmp4) {
+          parseBoxResult = "avif" === parseBoxResult.majorBrand;
+        }
+        return parseBoxResult;
+      } catch (err) {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  },
+  findAvifOffsets(byteLength) {
+    const obj = _mod7354;
+    return obj.findOffsets(byteLength);
+  }
+};

@@ -1,9 +1,9 @@
-// Module ID: 13420
-// Function ID: 13421
+// Module ID: 13686
+// Function ID: 13687
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 13419, 6796, 6413, 1127, 13421, 558, 576, 6421, 2]
+// Dependencies: [19, 21, 13685, 6880, 4809, 1126, 13687, 558, 576, 6496, 2]
 
-// Module 13420 (ActivateDeviceModal)
+// Module 13686 (ActivateDeviceModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -56,15 +56,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userCode) => {
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(userCode(1127).t["13/7kX"]);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(userCode(1126).t["13/7kX"]);
     cResult[2] = stringResult;
     tmp6 = stringResult;
   } else {
     tmp6 = cResult[2];
   }
   if (cResult[3] !== tmp4) {
-    const tmp11 = jsx(userCode(6421).Navigator, { screens: tmp4, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: tmp6 });
+    const tmp11 = jsx(userCode(6496).Navigator, { screens: tmp4, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: tmp6 });
     cResult[3] = tmp4;
     cResult[4] = tmp11;
     tmp8 = tmp11;
@@ -98,9 +98,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userCode) => {
     };
     return { [closure_2_5.ACTIVATE_DEVICE]: obj };
   }, items);
-  const Navigator = userCode(6421).Navigator;
-  let intl = userCode(1127).intl;
-  return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1127).t["13/7kX"])} />;
+  const Navigator = userCode(6496).Navigator;
+  let intl = userCode(1126).intl;
+  return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1126).t["13/7kX"])} />;
 });
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
 

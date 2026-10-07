@@ -1,29 +1,29 @@
-// Module ID: 16084
-// Function ID: 16085
+// Module ID: 16385
+// Function ID: 16386
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1086, 12089, 21, 4837, 11442, 588, 1370, 558, 576, 1491, 1253, 1189, 5289, 13998, 1127, 4833, 6565, 16080, 5436, 16079, 2]
+// Dependencies: [19, 17, 1085, 12348, 21, 4890, 11698, 587, 1369, 558, 576, 1490, 1252, 1188, 5602, 14275, 1126, 4886, 6638, 16381, 5909, 16380, 2]
 
-// Module 16084 (ForYouShowAllRow)
+// Module 16385 (ForYouShowAllRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useFontScale from "useFontScale" /* 5289 */;
-import Pressables from "Pressables" /* 5436 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6565 */;
-import ChannelListLayout from "ChannelListLayout" /* 11442 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 12089 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 13998 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 16079 */;
-import ChannelWrapper from "ChannelWrapper" /* 16080 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useFontScale from "useFontScale" /* 5602 */;
+import Pressables from "Pressables" /* 5909 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6638 */;
+import ChannelListLayout from "ChannelListLayout" /* 11698 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 12348 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 14275 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 16380 */;
+import ChannelWrapper from "ChannelWrapper" /* 16381 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_10 = createStyles.createStyles((layout) => {
   }
   obj7 = { position: "relative", borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0, marginRight: layoutStyles.icon.margin.marginRight + 4 };
   const merged = Object.assign(sizeStyle);
-  size = { width: 8, height: 32, paddingRight: tmp4(588).space.PX_24 };
+  size = { width: 8, height: 32, paddingRight: tmp4(587).space.PX_24 };
   ({ color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
   return obj3;
 });
@@ -227,7 +227,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const tmpResult8 = ChannelListLayout;
     const isLayoutCompactResult = tmpResult8.isLayoutCompact(messagesTabLayout);
-    const AvatarSizes = tmp(1189).AvatarSizes;
+    const AvatarSizes = tmp(1188).AvatarSizes;
     const tmp13 = isLayoutCompactResult ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL;
     if (cResult[7] === children) {
       let tmp14;
@@ -244,7 +244,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const variant = tmp7.channelName.text.variant;
         const nameText = tmp6.nameText;
         if (cResult[13] !== count) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const obj3 = { count };
           const formatResult = intl.format(intl2.t.NrzztX, obj3);
           cResult[13] = count;
@@ -341,7 +341,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp34 = tmp37;
               }
               const obj8 = { style: tmp6.icon, color: tmp6.iconColor.color, source: AssetRegistryDefault, size: native.IconSizes.CUSTOM };
-              const Icon = tmp(1189).Icon;
+              const Icon = tmp(1188).Icon;
               const tmp33 = metroImportDefault(Icon, obj8);
               cResult[22] = tmp6.icon;
               cResult[23] = tmp6.iconColor.color;
@@ -423,11 +423,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1 = [metroImportDefault(View, obj5), , ];
   const obj9 = { style: tmp4.textContainer, children: metroImportDefault(Text, obj10) };
   obj10 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: intl.format(intl2.t.NrzztX, { count }) };
-  Text = tmp(4833).Text;
-  intl = tmp(1127).intl;
+  Text = tmp(4886).Text;
+  intl = tmp(1126).intl;
   items1[1] = metroImportDefault(View, obj9);
   const obj11 = { style: tmp4.icon, color: tmp4.iconColor.color, source: AssetRegistryDefault, size: native.IconSizes.CUSTOM };
-  const Icon = tmp(1189).Icon;
+  const Icon = tmp(1188).Icon;
   items1[2] = metroImportDefault(Icon, obj11);
   return renderChannelPressableWrapper(metroImportDefault(PressableHighlight, obj4), { layout, panelVariant });
 });

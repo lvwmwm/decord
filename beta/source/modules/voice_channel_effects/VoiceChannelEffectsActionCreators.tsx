@@ -1,16 +1,16 @@
-// Module ID: 6765
-// Function ID: 6766
+// Module ID: 6849
+// Function ID: 6850
 // Name: VoiceChannelEffectsActionCreators
-// Dependencies: [5772, 2102, 6766, 6767, 1086, 5322, 12, 6768, 1283, 6791, 6604, 5329, 2]
-// Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEffect
+// Dependencies: [5638, 2103, 6850, 6851, 1085, 5682, 12, 6852, 1282, 6875, 6681, 5805, 2]
+// Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEcho, sendVoiceChannelSoundboardEffect
 
-// Module 6765 (VoiceChannelEffectsActionCreators)
-import SoundboardConstants from "SoundboardConstants" /* 5322 */;
-import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 6767 */;
-import EmojiStore from "EmojiStore" /* 5772 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import VoiceChannelEffectsPersistedStore from "VoiceChannelEffectsPersistedStore" /* 6766 */;
-import Constants from "Constants" /* 1086 */;
+// Module 6849 (VoiceChannelEffectsActionCreators)
+import SoundboardConstants from "SoundboardConstants" /* 5682 */;
+import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 6851 */;
+import EmojiStore from "EmojiStore" /* 5638 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import VoiceChannelEffectsPersistedStore from "VoiceChannelEffectsPersistedStore" /* 6850 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,15 +40,15 @@ export const sendVoiceChannelCustomCallSoundEffect = function sendVoiceChannelCu
   }
   const obj2 = { animation_type: BASIC, animation_id: tmp2Result.sampleAnimationId(BASIC, require("VoiceChannelEffectsUtils").CUSTOM_CALL_SOUND_ANIMATION_RANGE) };
   tmp2Result = require("VoiceChannelEffectsUtils");
-  const HTTP = tmp2(1283).HTTP;
+  const HTTP = tmp2(1282).HTTP;
   const request = { url: closure_7.CUSTOM_CALL_SOUNDS(id), body: obj2, signal: abortController.signal, onRequestProgress: throttleResult, rejectWithError: true };
   const postResult = HTTP.post(request);
   postResult.then(closure_8, () => {
 
   });
   const items = [];
-  const tmp7 = abortController(6791);
-  items[0] = abortController(6604).CHANNEL_CALL;
+  const tmp7 = abortController(6875);
+  items[0] = abortController(6681).CHANNEL_CALL;
   tmp7(items, arg2, sound, require("SoundboardTypes").AnalyticsSoundType.ENTRY);
 };
 export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundboardEffect(arg0, emojiId, arg2, arg3, arg4) {
@@ -79,15 +79,40 @@ export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundbo
     obj2.source_guild_id = emojiId.guildId;
   }
   let items = arg3;
-  const HTTP = tmp4(1283).HTTP;
+  const HTTP = tmp4(1282).HTTP;
   const request = { url: closure_7.SEND_SOUNDBOARD_SOUND(arg0), body: obj2, signal: abortController.signal, onRequestProgress: throttleResult, rejectWithError: true };
   const postResult = HTTP.post(request);
   postResult.then(closure_8, () => {
 
   });
-  const tmp9 = abortController(6791);
+  const tmp9 = abortController(6875);
   if (arg3 == null) {
     items = [];
   }
   tmp9(items, arg2, emojiId, require("SoundboardTypes").AnalyticsSoundType.DEFAULT, arg4);
+};
+export const sendVoiceChannelSoundboardEcho = function sendVoiceChannelSoundboardEcho(arg0, soundId, arg2, arg3) {
+  let closure_0;
+  let items = arg3;
+  _require = arg0;
+  const abortController = new AbortController();
+  const obj = require("module_12");
+  const obj2 = { sound_id: soundId.soundId, source_guild_id: soundId.guildId };
+  const throttleResult = obj.throttle(() => {
+    if (SelectedChannelStore.getVoiceChannelId() !== closure_0) {
+      abortController.abort();
+    }
+  }, 1000);
+  const HTTP = require("HTTPUtils").HTTP;
+  const request = { url: closure_7.SEND_SOUNDBOARD_ECHO(arg0), body: obj2, signal: abortController.signal, onRequestProgress: throttleResult, rejectWithError: true };
+  const postResult = HTTP.post(request);
+  postResult.then(closure_8, () => {
+
+  });
+  const tmp2 = _require;
+  const tmp6 = abortController(6875);
+  if (arg3 == null) {
+    items = [];
+  }
+  tmp6(items, arg2, soundId, tmp2(5805).AnalyticsSoundType.ECHO);
 };

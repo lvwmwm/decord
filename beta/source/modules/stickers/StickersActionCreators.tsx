@@ -1,23 +1,23 @@
-// Module ID: 9883
-// Function ID: 9884
+// Module ID: 10112
+// Function ID: 10113
 // Name: StickersActionCreators
-// Dependencies: [5, 5590, 2115, 5202, 1378, 5815, 1086, 1096, 5093, 1283, 585, 5199, 5483, 2032, 12, 5204, 1127, 2]
+// Dependencies: [5, 5436, 2116, 5618, 1377, 5687, 1085, 1095, 5322, 1282, 584, 5428, 6478, 2033, 12, 5707, 1126, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 9883 (StickersActionCreators)
+// Module 10112 (StickersActionCreators)
 import _modDef12 from "module_12" /* 12 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
-import InlineUploaderDefault from "InlineUploader" /* 5483 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import InlineUploaderDefault from "InlineUploader" /* 6478 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5202 */;
-import UserStore from "UserStore" /* 1378 */;
-import StickersStore from "StickersStore" /* 5815 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5618 */;
+import UserStore from "UserStore" /* 1377 */;
+import StickersStore from "StickersStore" /* 5687 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ let _require, c1, c2, locale, stickerIds;
 
 let c10;
 let unpackModuleId;
-const f101680 = (item) => null != stickerById.getStickerById(item);
+const f102767 = (item) => null != stickerById.getStickerById(item);
 let obj = function _fetchStickerPack() {
   obj = _asyncToGenerator(async (packId, ingestStickers) => {
     let closure_2;
@@ -50,57 +50,95 @@ let obj = function _fetchStickerPack() {
 };
 obj = function _fetchStickerPacks() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_1;
-    let closure_2;
     let obj7;
     let obj8;
     let closure_0 = arg0;
-    if (1 === tmp5) {
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
       if (arg0 === 1) {
-        let c4 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c4 = 3;
-        const obj6 = { value, done: true };
-        return obj6;
-      } else if (!closure_130_8.isFetchingStickerPacks) {
-        if (!closure_130_8.hasLoadedStickerPacks) {
-          const obj4 = closure_130_1(closure_130_2[10]);
-          obj4.wait(() => {
-            obj = closure_1_1(closure_1_2[10]);
-            obj.dispatch({ type: "STICKER_PACKS_FETCH_START" });
-          });
-          const HTTP = closure_130_0(closure_130_2[9]).HTTP;
-          const request = { url: closure_130_9.STICKER_PACKS, query: obj8, rejectWithError: obj7.rejectWithMigratedError() };
-          obj8 = { locale };
-          const get = HTTP.get;
-          obj7 = closure_130_0(closure_130_2[9]);
-          let c3 = 2;
-          c4 = 1;
-          const obj9 = { value: get(request), done: false };
-          return obj9;
-        }
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
       }
-    } else if (arg0 === 1) {
-      c4 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c4 = 3;
-      const obj10 = { value, done: true };
-      return obj10;
     } else {
-      const sticker_packs = value.body.sticker_packs;
-      obj = closure_130_1(closure_130_2[10]);
-      const obj11 = { type: "STICKER_PACKS_FETCH_SUCCESS", packs: sticker_packs };
-      const dispatchResult = obj.dispatch(obj11);
+      try {
+        let sticker_packs;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_2 = tmp2;
+            let closure_1 = tmp;
+            locale = undefined;
+            let obj5 = closure_0;
+            if (closure_0 === undefined) {
+              obj5 = {};
+            }
+            locale = obj5.locale ?? locale.locale;
+            sticker_packs = undefined;
+            c3 = 1;
+            c4 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else if (!closure_130_8.isFetchingStickerPacks) {
+              if (!closure_130_8.hasLoadedStickerPacks) {
+                const obj4 = closure_130_1(closure_130_2[10]);
+                obj4.wait(() => {
+                  obj = closure_1_1(closure_1_2[10]);
+                  obj.dispatch({ type: "STICKER_PACKS_FETCH_START" });
+                });
+                const HTTP = closure_130_0(closure_130_2[9]).HTTP;
+                const request = { url: closure_130_9.STICKER_PACKS, query: obj8, rejectWithError: obj7.rejectWithMigratedError() };
+                obj8 = { locale };
+                const get = HTTP.get;
+                obj7 = closure_130_0(closure_130_2[9]);
+                c3 = 2;
+                c4 = 1;
+                const obj9 = { value: get(request), done: false };
+                return obj9;
+              }
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj10 = { value, done: true };
+            return obj10;
+          } else {
+            sticker_packs = value.body.sticker_packs;
+            obj = closure_130_1(closure_130_2[10]);
+            const obj11 = { type: "STICKER_PACKS_FETCH_SUCCESS", packs: sticker_packs };
+            const dispatchResult = obj.dispatch(obj11);
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp25) {
+        c4 = 3;
+        throw tmp25;
+      }
     }
-    await "IconComponent";
-    let obj5 = closure_0;
-    if (closure_0 === undefined) {
-      obj5 = {};
-    }
-    locale = obj5.locale ?? locale.locale;
-    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -441,7 +479,7 @@ export const favoriteSticker = function favoriteSticker(arg0) {
     if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
       let found = stickerIds1;
       if (GatewayConnectionStore.isConnected()) {
-        found = stickerIds1.filter(f101680);
+        found = stickerIds1.filter(f102767);
       }
       tmp = found;
     }
@@ -449,7 +487,7 @@ export const favoriteSticker = function favoriteSticker(arg0) {
     obj = _modDef12;
     if (obj.size(stickerIds.stickerIds) >= authStore) {
       const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
-      const show = tmp4(5204).show;
+      const show = tmp4(5707).show;
       AlertActionCreatorsDefault;
       intl = intl3.intl;
       intl2 = intl3.intl;
@@ -482,7 +520,7 @@ export const unfavoriteSticker = function unfavoriteSticker(arg0) {
     if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
       let found = stickerIds1;
       if (GatewayConnectionStore.isConnected()) {
-        found = stickerIds1.filter(f101680);
+        found = stickerIds1.filter(f102767);
       }
       tmp = found;
     }

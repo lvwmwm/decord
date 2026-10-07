@@ -1,32 +1,32 @@
-// Module ID: 16064
-// Function ID: 16065
+// Module ID: 16365
+// Function ID: 16366
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2069, 2073, 1378, 16065, 21, 4837, 588, 7058, 9314, 16066, 16067, 16068, 16069, 5896, 16070, 1189, 16071, 16072, 558, 576, 6584, 504, 7628, 7697, 5436, 16073, 4833, 2]
+// Dependencies: [19, 17, 2070, 2074, 1377, 16366, 21, 4890, 587, 7125, 9542, 16367, 16368, 16369, 16370, 5974, 16371, 1188, 16372, 16373, 558, 576, 6657, 504, 7850, 7919, 5909, 16374, 4886, 2]
 
-// Module 16064 (ForYouItemImage)
+// Module 16365 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import GuildRecord from "GuildRecord" /* 2069 */;
-import Pressables from "Pressables" /* 5436 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7058 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7697 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9314 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16066 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 16067 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 16068 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 16069 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 16070 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 16071 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 16072 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import Pressables from "Pressables" /* 5909 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7125 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7919 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9542 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16367 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16368 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16369 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 16370 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 16371 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 16372 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 16373 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 16065 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 16366 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -76,12 +76,12 @@ function getLifecycleIcon(item_enum) {
           FastImageDefault;
           tmp5 = <tmp8 source={AssetRegistryDefault8} style={{ width: "105%" }} />;
         } else {
-          const Icon = tmp(1189).Icon;
+          const Icon = tmp(1188).Icon;
           tmp5 = <Icon source={AssetRegistryDefault5} />;
         }
       }
     }
-    const Icon2 = tmp(1189).Icon;
+    const Icon2 = tmp(1188).Icon;
     tmp5 = <Icon2 source={AssetRegistryDefault7} size={native.IconSizes.SMALL_20} color={nativeDefault.unsafe_rawColors.WHITE} />;
   }
   return tmp5;

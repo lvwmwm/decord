@@ -1,19 +1,19 @@
-// Module ID: 1112
-// Function ID: 1113
+// Module ID: 1111
+// Function ID: 1112
 // Name: TokenManager
-// Dependencies: [1097, 510, 2]
+// Dependencies: [1096, 510, 2]
 // Exports: getAnalyticsToken, getToken, hideToken, init, removeAnalyticsToken, setAnalyticsToken, setToken, showToken
 
-// Module 1112 (TokenManager)
+// Module 1111 (TokenManager)
 import Storage6 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1097 */;
+import Constants from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 let c7, closure_8;
 
 let c2;
 let c3;
-const f82022 = (acc, item) => {
+const f83083 = (acc, item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -145,7 +145,7 @@ function encryptAndStoreTokens() {
         items[1] = combined;
         return items;
       }), 0);
-      closure_11 = items.reduce(f82022, {});
+      closure_11 = items.reduce(f83083, {});
       c9 = true;
     } else {
       closure_8 = tmp8;
@@ -263,7 +263,7 @@ export const init = function init() {
         [, tmp] = item;
         return null != tmp;
       }), 0);
-      closure_10 = items.reduce(f82022, {});
+      closure_10 = items.reduce(f83083, {});
       c13 = true;
     }
     obj3 = { decryptedToken: null, wasEncrypted: false };

@@ -1,21 +1,21 @@
-// Module ID: 13048
-// Function ID: 13049
+// Module ID: 13312
+// Function ID: 13313
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 13049, 13053, 13054, 13055, 558, 576, 4745, 4730, 4833, 11998, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 13313, 13317, 13318, 13319, 558, 576, 7671, 7666, 4886, 12251, 2]
 
-// Module 13048 (BoostedGuildTierProgressCircle)
+// Module 13312 (BoostedGuildTierProgressCircle)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4730 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4745 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ProgressCircleDefault from "ProgressCircle" /* 11998 */;
-import Tier048Px from "Tier048Px" /* 13049 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 7666 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 7671 */;
+import ProgressCircleDefault from "ProgressCircle" /* 12251 */;
+import Tier048Px from "Tier048Px" /* 13313 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -173,11 +173,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (guild.premiumTier !== metroRequire.NONE) {
         const premiumTier = guild.premiumTier;
         if (metroRequire.TIER_1 === premiumTier) {
-          tier048PxSource1 = tmp5(13053);
+          tier048PxSource1 = tmp5(13317);
         } else if (metroRequire.TIER_2 === premiumTier) {
-          tier048PxSource1 = tmp5(13054);
+          tier048PxSource1 = tmp5(13318);
         } else if (metroRequire.TIER_3 === premiumTier) {
-          tier048PxSource1 = tmp5(13055);
+          tier048PxSource1 = tmp5(13319);
         }
       }
       cResult[8] = guild;
@@ -226,17 +226,17 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (guild.premiumTier !== metroRequire.NONE) {
         const premiumTier = guild.premiumTier;
         if (metroRequire.TIER_1 === premiumTier) {
-          tier048PxSource = tmp2(13053);
+          tier048PxSource = tmp2(13317);
         } else if (metroRequire.TIER_2 === premiumTier) {
-          tier048PxSource = tmp2(13054);
+          tier048PxSource = tmp2(13318);
         } else if (metroRequire.TIER_3 === premiumTier) {
-          tier048PxSource = tmp2(13055);
+          tier048PxSource = tmp2(13319);
         }
       }
       const obj5 = { source: tier048PxSource, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };
       const items = [metroImportDefault(tmp12, obj5), ];
       const obj6 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active", children: tmp19Result.getTierName(guild.premiumTier) };
-      const Text = tmp19(4833).Text;
+      const Text = tmp19(4886).Text;
       tmp19Result = GuildBoostingUtils;
       items[1] = metroImportDefault(Text, obj6);
       obj4.children = items;

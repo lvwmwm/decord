@@ -1,15 +1,15 @@
-// Module ID: 17596
-// Function ID: 17597
+// Module ID: 17961
+// Function ID: 17962
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [19, 21, 4837, 558, 576, 1127, 9676, 2]
+// Dependencies: [19, 21, 4890, 558, 576, 1126, 9902, 2]
 
-// Module 17596 (GuildPremiumRoleSubscribeButton)
+// Module 17961 (GuildPremiumRoleSubscribeButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9676 */;
+import intl2 from "intl" /* 1126 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9902 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   onPress = onPress.onPress;
   const tmp4 = closure_3();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.BEeXib);
     cResult[0] = stringResult;
     first = stringResult;

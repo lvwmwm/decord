@@ -1,20 +1,20 @@
-// Module ID: 14824
-// Function ID: 14825
+// Module ID: 15109
+// Function ID: 15110
 // Name: SettingsAppearanceChannelList
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 14825, 14826, 14827, 1127, 14833, 8176, 14836, 4570, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 15110, 15111, 15112, 1126, 15118, 8371, 15121, 4612, 2]
 
-// Module 14824 (SettingsAppearanceChannelList)
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
-import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 14825 */;
-import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 14826 */;
-import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 14827 */;
-import SettingsAppearanceGradientBackgroundDefault from "SettingsAppearanceGradientBackground" /* 14833 */;
-import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 14836 */;
+// Module 15109 (SettingsAppearanceChannelList)
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 15110 */;
+import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 15111 */;
+import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 15112 */;
+import SettingsAppearanceGradientBackgroundDefault from "SettingsAppearanceGradientBackground" /* 15118 */;
+import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 15121 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,8 +88,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
-        const stringResult = intl.string(animatedStyles(1127).t.iGxm3x);
+        const intl = tmp(1126).intl;
+        const stringResult = intl.string(animatedStyles(1126).t.iGxm3x);
         cResult[6] = stringResult;
         tmp9 = stringResult;
       } else {
@@ -163,7 +163,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               cResult[19] = tmp26;
             }
             const obj5 = { contentContainerStyle: tmp16, data, renderItem: tmp5, keyExtractor: tmp18, showsVerticalScrollIndicator: false, importantForAccessibility: "no-hide-descendants" };
-            let tmp21 = closure_5(tmp(8176).FlashList, obj5);
+            let tmp21 = closure_5(tmp(8371).FlashList, obj5);
             cResult[14] = data;
             cResult[15] = tmp5;
             cResult[16] = tmp21;
@@ -243,14 +243,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (!useGradientBackground) {
     bgSurfaceHigh = animatedStyles.bgSurfaceHigh;
   }
-  let obj = { style: items1, accessible: true, accessibilityRole: "image", accessibilityLabel: intl.string(animatedStyles(1127).t.iGxm3x), children: items2 };
+  let obj = { style: items1, accessible: true, accessibilityRole: "image", accessibilityLabel: intl.string(animatedStyles(1126).t.iGxm3x), children: items2 };
   items1[2] = bgSurfaceHigh;
-  intl = animatedStyles(1127).intl;
+  intl = animatedStyles(1126).intl;
   let tmp7 = null;
   const tmp6 = animatedStyles;
   if (useGradientBackground) {
     let obj2 = { style: tmp.channelPreviewGradient, children: closure_5(tmp4Result, obj3) };
-    obj3 = { themes, themeIndex, isDimmed: false, backgroundToken: tmp4(588).colors.BACKGROUND_BASE_LOW };
+    obj3 = { themes, themeIndex, isDimmed: false, backgroundToken: tmp4(587).colors.BACKGROUND_BASE_LOW };
     tmp4Result = SettingsAppearanceGradientBackgroundDefault;
     tmp7 = closure_5(closure_4, obj2);
   }
@@ -266,7 +266,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     importantForAccessibility: "no-hide-descendants"
   };
   obj5 = { paddingVertical: nativeDefault.space.PX_16 };
-  const FlashList = tmp6(8176).FlashList;
+  const FlashList = tmp6(8371).FlashList;
   items2[1] = closure_5(FlashList, obj4);
   const obj6 = { visible: isNitroLocked, theme: themes[themeIndex] };
   items2[2] = closure_5(SettingsAppearanceChannelListPreviewNitroUpsellDefault, obj6);

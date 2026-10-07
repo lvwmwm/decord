@@ -1,25 +1,25 @@
-// Module ID: 15663
-// Function ID: 15664
+// Module ID: 15958
+// Function ID: 15959
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 4877, 4852, 4482, 2102, 5018, 1378, 1086, 21, 4837, 588, 558, 576, 504, 15664, 7666, 1370, 4850, 4848, 10417, 9038, 8278, 15665, 7308, 7709, 15666, 8274, 15667, 5436, 2]
+// Dependencies: [19, 17, 4930, 4905, 4519, 2103, 5071, 1377, 1085, 21, 4890, 587, 558, 576, 504, 15959, 7888, 1369, 4903, 4901, 10651, 9260, 8474, 15960, 7514, 7931, 15961, 8470, 15962, 5909, 2]
 
-// Module 15663 (MessagesItemChannelBase)
+// Module 15958 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import transitionToChannel from "transitionToChannel" /* 4848 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10417 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import transitionToChannel from "transitionToChannel" /* 4901 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import ReadStateStore from "ReadStateStore" /* 4852 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
-import UserStore from "UserStore" /* 1378 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -128,7 +128,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "diversity", activities: "a" };
+            obj3 = { status: "Symbol", activities: "cursor" };
           }
           return obj3;
         }
@@ -148,7 +148,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "diversity", activities: "a" };
+            obj3 = { status: "Symbol", activities: "cursor" };
           }
           return obj3;
         }
@@ -170,7 +170,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "diversity", activities: "a" };
+            obj3 = { status: "Symbol", activities: "cursor" };
           }
           return obj3;
         }
@@ -190,7 +190,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "diversity", activities: "a" };
+            obj3 = { status: "Symbol", activities: "cursor" };
           }
           return obj3;
         }
@@ -231,9 +231,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     const tmpResult9 = channel(504);
     const stateFromStoresObject1 = tmpResult9.useStateFromStoresObject(tmp16, tmp17);
     ({ mentionCount, hasUnreadMessages } = stateFromStoresObject1);
-    ({ isIncomingCall, isOngoingCall } = setIsPressed(15664)(channel.id));
+    ({ isIncomingCall, isOngoingCall } = setIsPressed(15959)(channel.id));
     const _Symbol3 = Symbol;
-    setIsPressed(15664)(channel.id);
+    setIsPressed(15959)(channel.id);
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       class B {
         constructor() {
@@ -401,7 +401,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
       }
     }
-    const tmpResult13 = channel(7666);
+    const tmpResult13 = channel(7888);
     const nameplate = tmpResult13.useNameplate(tmp31);
     let tmp35 = null != nameplate;
     if (tmp35) {
@@ -415,7 +415,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       tmp35 = tmp36;
     }
-    const tmpResult14 = channel(1370);
+    const tmpResult14 = channel(1369);
     if (tmpResult14.isIOS()) {
       class Z {
         constructor() {
@@ -522,7 +522,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "diversity", activities: "a" };
+      obj3 = { status: "Symbol", activities: "cursor" };
     }
     return obj3;
   });

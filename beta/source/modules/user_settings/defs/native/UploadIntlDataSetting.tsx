@@ -1,22 +1,22 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15364
+// Function ID: 15365
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1086, 21, 570, 1260, 558, 576, 1369, 1131, 1165, 1127, 1370, 1283, 4531, 4788, 10874, 15079, 14366, 2]
+// Dependencies: [5, 17, 1085, 21, 570, 1259, 558, 576, 1368, 1130, 1164, 1126, 1369, 1282, 4568, 4812, 11129, 15365, 14650, 2]
 
-// Module 15078 (UploadIntlDataSetting)
+// Module 15364 (UploadIntlDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import AssetJsonUtils from "AssetJsonUtils" /* 1131 */;
-import AssetRegistry from "AssetRegistry" /* 1165 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14366 */;
-import FileUpIcon from "FileUpIcon" /* 15079 */;
+import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
+import AssetRegistry from "AssetRegistry" /* 1164 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
+import FileUpIcon from "FileUpIcon" /* 15365 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -285,7 +285,7 @@ const jsx = Fragment.jsx;
 let closure_9 = module_570.create(() => ({ isDisabled: false, isUploading: false }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f69727 = () => {
+const f70408 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -295,7 +295,7 @@ const fn = () => closure_9().isDisabled;
 const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj = react;
   const cResult = obj.c(2);
-  if (typeof f69727 === "function") {
+  if (typeof f70408 === "function") {
     let tmp3;
     const isUploading = closure_9().isUploading;
     if (cResult[0] !== isUploading) {
@@ -314,7 +314,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : (() => {
-  if (typeof f69727 === "function") {
+  if (typeof f70408 === "function") {
     let tmp2 = null;
     if (closure_9().isUploading) {
       tmp2 = <ActivityIndicator />;

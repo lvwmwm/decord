@@ -1,12 +1,12 @@
-// Module ID: 11055
-// Function ID: 11056
+// Module ID: 11313
+// Function ID: 11314
 // Name: ForwardStaffToNonStaffWarningModal
-// Dependencies: [21, 558, 576, 1127, 5210, 2]
+// Dependencies: [21, 558, 576, 1126, 5713, 2]
 
-// Module 11055 (ForwardStaffToNonStaffWarningModal)
+// Module 11313 (ForwardStaffToNonStaffWarningModal)
 import react from "react" /* 576 */;
-import intl5 from "intl" /* 1127 */;
-import AlertModal2 from "AlertModal" /* 5210 */;
+import intl5 from "intl" /* 1126 */;
+import AlertModal2 from "AlertModal" /* 5713 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,9 +30,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(11);
   ({ onConfirm, onBack } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl5.t.YrV3I9);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl5.t.MXSMtl);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -42,7 +42,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(intl5.t.X7eUJq);
     cResult[2] = stringResult2;
     tmp8 = stringResult2;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1127).intl;
+    const intl4 = tmp(1126).intl;
     const stringResult3 = intl4.string(intl5.t["13/7kX"]);
     cResult[5] = stringResult3;
     tmp13 = stringResult3;
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj4 = { title: tmp4, content: tmp5, actions: React3(_false, obj5) };
   obj5 = { children: items };
   items = [tmp10, tmp15];
-  const AlertModal = tmp(5210).AlertModal;
+  const AlertModal = tmp(5713).AlertModal;
   const tmp19 = React2(AlertModal, obj4);
   cResult[8] = tmp10;
   cResult[9] = tmp15;

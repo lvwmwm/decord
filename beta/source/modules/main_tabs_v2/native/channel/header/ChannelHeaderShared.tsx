@@ -1,32 +1,32 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 13111
+// Function ID: 13112
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4482, 1378, 21, 4837, 588, 558, 576, 1370, 5436, 10400, 4833, 1189, 12850, 10414, 4535, 5336, 6398, 12851, 1127, 4990, 2]
+// Dependencies: [32, 19, 17, 4519, 1377, 21, 4890, 587, 558, 576, 1369, 5909, 10633, 4886, 1188, 13112, 10648, 4580, 5812, 6470, 13113, 1126, 5043, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12849 (ChannelHeaderShared)
+// Module 13111 (ChannelHeaderShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import useToken from "useToken" /* 4535 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5336 */;
-import Pressables from "Pressables" /* 5436 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6398 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10400 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10414 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12850 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 12851 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useToken from "useToken" /* 4580 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
+import Pressables from "Pressables" /* 5909 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10633 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10648 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13112 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13113 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -254,7 +254,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             let tmp13 = !tmp4;
             if (tmp13) {
               const obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp5.arrowIcon };
-              const Icon = tmp(1189).Icon;
+              const Icon = tmp(1188).Icon;
               tmp13 = metroImportAll(Icon, obj6);
             }
             cResult[7] = undefined !== disableArrow && disableArrow;
@@ -272,7 +272,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = metroImportAll(UsernameWithEffectsDefault, obj7);
   } else {
     const obj13 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp9 = metroImportAll(tmp(4833).Text, obj13);
+    tmp9 = metroImportAll(tmp(4886).Text, obj13);
   }
   cResult[0] = accessibleTitle;
   cResult[1] = guildId;
@@ -385,7 +385,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
     }
   }
   const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp5, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: null };
-  const Avatar = tmp(1189).Avatar;
+  const Avatar = tmp(1188).Avatar;
   const tmp7 = metroImportAll(Avatar, obj2);
   cResult[0] = isMobileOnline;
   cResult[1] = isVROnline;
@@ -439,7 +439,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = metroImportAll(IconComponent, obj3);
   } else {
     const obj4 = { size: native.Icon.Sizes.SMALL_20, source: icon, color: tmp5.guildChannelIcon.tintColor };
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     tmp8 = metroImportAll(Icon, obj4);
   }
   cResult[0] = IconComponent;
@@ -459,7 +459,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = metroImportAll(IconComponent, obj2);
   } else {
     const obj3 = { size: native.Icon.Sizes.SMALL_20, source: icon, color: tmp4.guildChannelIcon.tintColor };
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     tmp6 = metroImportAll(Icon, obj3);
   }
   return tmp6;
@@ -519,7 +519,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp8 = null;
         if (withSeparator) {
           const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-          tmp8 = metroImportAll(tmp(4833).Text, obj3);
+          tmp8 = metroImportAll(tmp(4886).Text, obj3);
         }
         cResult[5] = str2;
         cResult[6] = withSeparator;
@@ -580,10 +580,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   const tmp4 = closure_11();
   if (cResult[0] !== channel) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { channelName: tmpResult.computeChannelName(channel, UserStore, RelationshipStore) };
-    const BjYvHO = tmp(1127).t.BjYvHO;
+    const BjYvHO = tmp(1126).t.BjYvHO;
     tmpResult = useChannelName;
     const formatToPlainStringResult = formatToPlainString(BjYvHO, obj2);
     cResult[0] = channel;

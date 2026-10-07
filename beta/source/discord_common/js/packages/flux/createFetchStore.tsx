@@ -19,17 +19,17 @@ let error, isLoading, map;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-function areStatesEqual(memo, current) {
-  if (Array.isArray(memo)) {
+function areStatesEqual(colors, current) {
+  if (Array.isArray(colors)) {
     let result;
     const _Array = Array;
     if (Array.isArray(current)) {
       const obj = shallowEqual;
-      result = obj.areArraysShallowEqual(memo, current);
+      result = obj.areArraysShallowEqual(colors, current);
     }
     return result;
   }
-  result = Object.is(memo, current);
+  result = Object.is(colors, current);
 }
 function defaultRetryableErrors(status) {
   let tmp = status instanceof HTTPResponseError;
@@ -61,30 +61,30 @@ class HTTPResponseError extends Error {
   }
 }
 const prototype = HTTPResponseError.prototype;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((memo) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
   let first;
   let tmp3;
-  [first, tmp3] = metroImportDefault(memo);
-  let result = memo === first;
+  [first, tmp3] = metroImportDefault(colors);
+  let result = colors === first;
   if (!result) {
     const obj = shallowEqual;
-    result = obj.areArraysShallowEqual(memo, first);
+    result = obj.areArraysShallowEqual(colors, first);
   }
   if (!result) {
-    tmp3(memo);
+    tmp3(colors);
   }
   return first;
-}) : ((memo) => {
+}) : ((colors) => {
   let first;
   let tmp3;
-  [first, tmp3] = metroImportDefault(memo);
-  let result = memo === first;
+  [first, tmp3] = metroImportDefault(colors);
+  let result = colors === first;
   if (!result) {
     const obj = shallowEqual;
-    result = obj.areArraysShallowEqual(memo, first);
+    result = obj.areArraysShallowEqual(colors, first);
   }
   if (!result) {
-    tmp3(memo);
+    tmp3(colors);
   }
   return first;
 });
@@ -101,7 +101,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
   let getUseStoreState;
   let loader;
   let retryConfig;
-  const f132413 = () => {
+  const f134035 = () => {
     obj = { isLoading: false, error: null, backoff: closure_1_7(), lastSuccessAt: null, failureLockedUntil: null };
     return obj;
   };
@@ -130,7 +130,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       obj = map;
       if (null == value) {
         const obj2 = module_570;
-        const obj3 = obj2.create(f132413);
+        const obj3 = obj2.create(f134035);
         const result = obj.set(arg0, obj3);
         value = obj3;
       }
@@ -154,7 +154,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
         let c1;
         let fail;
         let refetch;
-        let useStoreState;
+        let tmp3;
         function isCachedDataStale(useStoreState, arg1) {
           if (null == arg1) {
             return false;
@@ -226,144 +226,196 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
             return error;
           }
         }
-        if (1 === tmp4) {
+        if (c7 === 2) {
+          c7 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
-            c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c7 = 3;
-            return { value, done: true };
+            let obj2 = { value, done: true };
+            return obj2;
           } else {
-            backoff = useStoreState.getState().backoff;
-            let applyResult;
-            if (closure_131_4 != null) {
-              const items = [];
-              HermesBuiltin.arraySpread(items, c1, 0);
-              applyResult = HermesBuiltin.apply(tmp86, items, undefined);
-            }
-            isLoading = applyResult;
-            if (applyResult == null) {
-              isLoading = useStoreState.getState().isLoading;
-            }
-            let closure_5 = isLoading;
-            if (null != queryId) {
-              const tmp88 = closure_5;
-              if (!tmp88) {
-                const tmp40 = refetch;
-                if (!tmp40) {
-                  const items1 = [];
-                  HermesBuiltin.arraySpread(items1, c1, 0);
-                  let closure_6 = HermesBuiltin.apply(closure_131_2, items1, undefined);
-                  if (closure_6 === closure_1_8) {
-                    c7 = 3;
-                    return { value: "IconComponent", done: null };
-                  } else {
-                    if (null != closure_6) {
-                      if (!isCachedDataStale(useStoreState, closure_131_9)) {
-                        c7 = 3;
-                        return { value: "IconComponent", done: null };
-                      }
-                    }
-                    const failureLockedUntil = useStoreState.getState().failureLockedUntil;
-                    if (null != failureLockedUntil) {
-                      const _Date2 = Date;
-                      if (Date.now() < failureLockedUntil) {
-                        c7 = 3;
-                        return { value: "IconComponent", done: null };
-                      }
-                    }
-                  }
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            let useStoreState;
+            let closure_5;
+            let closure_6;
+            let failureLockedUntil;
+            c7 = 2;
+            if (0 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                let obj3 = { value, done: true };
+                return obj3;
+              } else {
+                queryId = undefined;
+                c1 = undefined;
+                refetch = undefined;
+                useStoreState = undefined;
+                queryId = queryId.queryId;
+                ({ args: c1, refetch } = queryId);
+                const tmp91 = queryId;
+                if (refetch === undefined) {
+                  refetch = false;
                 }
-                c5 = 1;
-                useStoreState.setState({ isLoading: true });
-                const items2 = [];
-                HermesBuiltin.arraySpread(items2, c1, 0);
-                c6 = 3;
+                useStoreState = tmp91.useStoreState ?? getUseStoreState(queryId);
+                backoff = undefined;
+                closure_5 = undefined;
+                closure_6 = undefined;
+                failureLockedUntil = undefined;
+                error = undefined;
+                c6 = 1;
                 c7 = 1;
-                const obj5 = { value: HermesBuiltin.apply(closure_131_3, items2, undefined), done: false };
-                return obj5;
+                return { value: "Reflect", done: null };
               }
-            }
-          }
-        } else if (2 === tmp4) {
-          c5 = 0;
-          error = makeError(fail);
-          const obj6 = { error, isLoading: false };
-          useStoreState.setState(obj6);
-          if (closure_131_8(error)) {
-            if (closure_131_6 > backoff.fails) {
-              let self = this;
-              let self2 = this;
-              let promise = new Promise((arg0, arg1) => {
-                let closure_0 = arg0;
-                let closure_1 = arg1;
-                retryAfter = retryAfter.retryAfter;
-                let tmp2;
-                fail = fail.fail;
-                if (typeof retryAfter === "number") {
-                  const _Number = Number;
-                  if (Number.isFinite(retryAfter)) {
-                    if (retryAfter > 0) {
-                      tmp2 = retryAfter;
+            } else {
+              if (1 === c6) {
+                if (arg0 === 1) {
+                  c7 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c7 = 3;
+                  return { value, done: true };
+                } else {
+                  backoff = useStoreState.getState().backoff;
+                  let applyResult;
+                  if (closure_131_4 != null) {
+                    const items = [];
+                    HermesBuiltin.arraySpread(items, c1, 0);
+                    applyResult = HermesBuiltin.apply(tmp86, items, undefined);
+                  }
+                  isLoading = applyResult;
+                  if (applyResult == null) {
+                    isLoading = useStoreState.getState().isLoading;
+                  }
+                  closure_5 = isLoading;
+                  if (null != queryId) {
+                    const tmp88 = closure_5;
+                    if (!tmp88) {
+                      const tmp40 = refetch;
+                      if (!tmp40) {
+                        const items1 = [];
+                        HermesBuiltin.arraySpread(items1, c1, 0);
+                        closure_6 = HermesBuiltin.apply(closure_131_2, items1, undefined);
+                        if (closure_6 === closure_1_8) {
+                          c7 = 3;
+                          return { value: "IconComponent", done: null };
+                        } else {
+                          if (null != closure_6) {
+                            if (!isCachedDataStale(useStoreState, closure_131_9)) {
+                              c7 = 3;
+                              return { value: "IconComponent", done: null };
+                            }
+                          }
+                          failureLockedUntil = useStoreState.getState().failureLockedUntil;
+                          if (null != failureLockedUntil) {
+                            const _Date2 = Date;
+                            if (Date.now() < failureLockedUntil) {
+                              c7 = 3;
+                              return { value: "IconComponent", done: null };
+                            }
+                          }
+                        }
+                      }
+                      c5 = 1;
+                      useStoreState.setState({ isLoading: true });
+                      const items2 = [];
+                      HermesBuiltin.arraySpread(items2, c1, 0);
+                      c6 = 3;
+                      c7 = 1;
+                      const obj5 = { value: HermesBuiltin.apply(closure_131_3, items2, undefined), done: false };
+                      return obj5;
                     }
                   }
                 }
-                let num2 = 0;
-                if (null != tmp2) {
-                  num2 = 1000 * tmp2;
+              } else if (2 === c6) {
+                c5 = 0;
+                error = makeError(fail);
+                const obj6 = { error, isLoading: false };
+                useStoreState.setState(obj6);
+                if (closure_131_8(error)) {
+                  if (closure_131_6 > backoff.fails) {
+                    let self = this;
+                    let self2 = this;
+                    let promise = new Promise((arg0, arg1) => {
+                      let closure_0 = arg0;
+                      let closure_1 = arg1;
+                      retryAfter = retryAfter.retryAfter;
+                      let tmp2;
+                      fail = fail.fail;
+                      if (typeof retryAfter === "number") {
+                        const _Number = Number;
+                        if (Number.isFinite(retryAfter)) {
+                          if (retryAfter > 0) {
+                            tmp2 = retryAfter;
+                          }
+                        }
+                      }
+                      let num2 = 0;
+                      if (null != tmp2) {
+                        num2 = 1000 * tmp2;
+                      }
+                      fail(() => {
+                        obj = { queryId, args, useStoreState, refetch };
+                        const promise = closure_3_13(obj);
+                        promise.then(closure_0, closure_1);
+                      }, num2);
+                    });
+                    c6 = 4;
+                    c7 = 1;
+                    return { value: promise, done: false };
+                  }
                 }
-                fail(() => {
-                  obj = { queryId, args, useStoreState, refetch };
-                  const promise = closure_3_13(obj);
-                  promise.then(closure_0, closure_1);
-                }, num2);
-              });
-              c6 = 4;
-              c7 = 1;
-              return { value: promise, done: false };
+                if (null != closure_131_10) {
+                  const _Date3 = Date;
+                  const setState2 = useStoreState.setState;
+                  const obj8 = { failureLockedUntil: Date.now() + 1000 * closure_131_10 };
+                  setState2(obj8);
+                }
+              } else if (3 === c6) {
+                if (arg0 === 1) {
+                  c7 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 0;
+                  c7 = 3;
+                  return { value, done: true };
+                } else {
+                  backoff.succeed();
+                  let _Date = Date;
+                  const setState = useStoreState.setState;
+                  const obj10 = { error: null, isLoading: false, lastSuccessAt: Date.now(), failureLockedUntil: null };
+                  setState(obj10);
+                  c5 = 0;
+                }
+              } else if (arg0 === 1) {
+                let num2 = 3;
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                obj = { value, done: true };
+                return obj;
+              }
+              c7 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp70) {
+            fail = tmp70;
+            if (0 === c5) {
+              c7 = 3;
+              throw tmp70;
+            } else {
+              c6 = 2;
             }
           }
-          if (null != closure_131_10) {
-            const _Date3 = Date;
-            const setState2 = useStoreState.setState;
-            const obj8 = { failureLockedUntil: Date.now() + 1000 * closure_131_10 };
-            setState2(obj8);
-          }
-        } else if (3 === tmp4) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            c7 = 3;
-            return { value, done: true };
-          } else {
-            backoff.succeed();
-            let _Date = Date;
-            const setState = useStoreState.setState;
-            const obj10 = { error: null, isLoading: false, lastSuccessAt: Date.now(), failureLockedUntil: null };
-            setState(obj10);
-            c5 = 0;
-          }
-        } else if (arg0 === 1) {
-          let num2 = 3;
-          c7 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c7 = 3;
-          obj = { value, done: true };
-          return obj;
         }
-        await "IconComponent";
-        useStoreState = tmp;
-        queryId = queryId.queryId;
-        ({ args: c1, refetch } = queryId);
-        const tmp91 = queryId;
-        if (refetch === undefined) {
-          refetch = false;
-        }
-        useStoreState = tmp91.useStoreState ?? getUseStoreState(queryId);
-        return "Reflect";
       })();
       iter.next();
       return iter;
@@ -393,7 +445,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       value = map.get(tmp4);
       if (null == value) {
         const obj2 = ApplicationStore(dependencyMap[6]);
-        const obj6 = obj2.create(f132413);
+        const obj6 = obj2.create(f134035);
         const result = obj.set(tmp4, obj6);
         value = obj6;
       }
@@ -463,84 +515,253 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
     const args = [...arguments];
     let c3 = 0;
     let c4 = 0;
-    const iter = (async () => {
-      const items = [];
-      HermesBuiltin.arraySpread(items, args, 0);
-      queryId = HermesBuiltin.apply(closure_130_1, items, undefined);
-      useStoreState = closure_130_12(queryId);
-      backoff = useStoreState.getState().backoff;
-      backoff.succeed();
-      useStoreState.setState({ failureLockedUntil: null });
-      const obj5 = { queryId, args, useStoreState, refetch: true };
-      await closure_130_13(obj5);
-      await "IconComponent";
-      useStoreState = tmp5;
-      queryId = tmp;
-      return "Reflect";
+    const iter = (async (arg0, value) => {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              queryId = undefined;
+              useStoreState = undefined;
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              const items = [];
+              HermesBuiltin.arraySpread(items, args, 0);
+              queryId = HermesBuiltin.apply(closure_130_1, items, undefined);
+              useStoreState = closure_130_12(queryId);
+              backoff = useStoreState.getState().backoff;
+              backoff.succeed();
+              useStoreState.setState({ failureLockedUntil: null });
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { queryId, args, useStoreState, refetch: true };
+              const obj6 = { value: closure_130_13(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            c4 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp7) {
+          c4 = 3;
+          throw tmp7;
+        }
+      }
     })();
     iter.next();
     return iter;
   });
   useCfsHook.fetchMany = _asyncToGenerator(async () => {
-    let closure_1;
     let closure_0 = [...arguments];
     let c2 = 0;
     let c3 = 0;
-    const iter = (async () => {
-      await Promise.all(closure_0.map((args) => {
-        let value;
-        const tmp = closure_1_1(...args);
-        obj = { queryId: tmp, args, useStoreState: value };
-        const tmp2 = closure_1_13;
-        if (null == tmp) {
-          value = closure_2_14;
+    const iter = (async (arg0, value) => {
+      let tmp;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          let obj2 = { value, done: true };
+          return obj2;
         } else {
-          value = closure_1_11.get(tmp);
-          const obj2 = closure_1_11;
-          if (null == value) {
-            const obj3 = closure_0(c2[6]);
-            const obj4 = obj3.create(f132413);
-            const result = obj2.set(tmp, obj4);
-            value = obj4;
-          }
+          return { value: "IconComponent", done: null };
         }
-        return tmp2(obj);
-      }));
-      await "IconComponent";
-      return "Reflect";
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              let obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_1 = tmp;
+              c2 = 1;
+              c3 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === tmp4) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              let obj4 = { value, done: true };
+              return obj4;
+            } else {
+              c2 = 2;
+              c3 = 1;
+              const obj5 = {
+                value: Promise.all(closure_0.map((args) => {
+                          let value;
+                          const tmp = closure_1_1(...args);
+                          obj = { queryId: tmp, args, useStoreState: value };
+                          const tmp2 = closure_1_13;
+                          if (null == tmp) {
+                            value = closure_2_14;
+                          } else {
+                            value = closure_1_11.get(tmp);
+                            const obj2 = closure_1_11;
+                            if (null == value) {
+                              const obj3 = closure_0(c2[6]);
+                              const obj4 = obj3.create(f134035);
+                              const result = obj2.set(tmp, obj4);
+                              value = obj4;
+                            }
+                          }
+                          return tmp2(obj);
+                        })),
+                done: false
+              };
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            c3 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp9) {
+          c3 = 3;
+          throw tmp9;
+        }
+      }
     })();
     iter.next();
     return iter;
   });
   useCfsHook.refetchMany = _asyncToGenerator(async () => {
-    let closure_1;
     let closure_0 = [...arguments];
     let c2 = 0;
     let c3 = 0;
-    const iter = (async () => {
-      await Promise.all(closure_0.map((args) => {
-        let value;
-        const tmp = closure_1_1(...args);
-        if (null == tmp) {
-          value = closure_2_14;
+    const iter = (async (arg0, value) => {
+      let tmp;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          let obj2 = { value, done: true };
+          return obj2;
         } else {
-          obj = closure_1_11;
-          value = closure_1_11.get(tmp);
-          if (null == value) {
-            const obj3 = closure_0(c2[6]);
-            const obj2 = obj3.create(f132413);
-            const result = obj.set(tmp, obj2);
-            value = obj2;
-          }
+          return { value: "IconComponent", done: null };
         }
-        backoff = value.getState().backoff;
-        backoff.succeed();
-        value.setState({ failureLockedUntil: null });
-        const obj4 = { queryId: tmp, args, useStoreState: value, refetch: true };
-        return closure_1_13(obj4);
-      }));
-      await "IconComponent";
-      return "Reflect";
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              let obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_1 = tmp;
+              c2 = 1;
+              c3 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === tmp4) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              let obj4 = { value, done: true };
+              return obj4;
+            } else {
+              c2 = 2;
+              c3 = 1;
+              const obj5 = {
+                value: Promise.all(closure_0.map((args) => {
+                          let value;
+                          const tmp = closure_1_1(...args);
+                          if (null == tmp) {
+                            value = closure_2_14;
+                          } else {
+                            obj = closure_1_11;
+                            value = closure_1_11.get(tmp);
+                            if (null == value) {
+                              const obj3 = closure_0(c2[6]);
+                              const obj2 = obj3.create(f134035);
+                              const result = obj.set(tmp, obj2);
+                              value = obj2;
+                            }
+                          }
+                          backoff = value.getState().backoff;
+                          backoff.succeed();
+                          value.setState({ failureLockedUntil: null });
+                          const obj4 = { queryId: tmp, args, useStoreState: value, refetch: true };
+                          return closure_1_13(obj4);
+                        })),
+                done: false
+              };
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            c3 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp9) {
+          c3 = 3;
+          throw tmp9;
+        }
+      }
     })();
     iter.next();
     return iter;

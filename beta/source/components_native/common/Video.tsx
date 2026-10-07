@@ -1,20 +1,20 @@
-// Module ID: 7759
-// Function ID: 7760
+// Module ID: 7983
+// Function ID: 7984
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 7760, 4544, 7711, 6459, 1127, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 7984, 4589, 7933, 6534, 1126, 2]
 // Exports: createVideoControls
 
-// Module 7759 (common/Video)
+// Module 7983 (common/Video)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 4544 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6459 */;
-import openMediaModal2 from "openMediaModal" /* 7711 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 4589 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6534 */;
+import openMediaModal2 from "openMediaModal" /* 7933 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,6 +45,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let onError;
   let onLoad;
   let onLoadStart;
+  let onReadyForDisplay;
   let pauseWhileAppInactive;
   let paused;
   let playInBackground;
@@ -58,8 +59,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp13;
   let tmp = _require;
   const obj = require("react");
-  const cResult = obj.c(24);
-  ({ style, source, poster, onLoadStart, onLoad, onError, onEnd, paused, muted, posterResizeMode, resizeMode, disableFocus, controls, ariaHidden, mixWithOthers, importantForAccessibility, pauseWhileAppInactive, playInBackground, preventsDisplaySleepDuringVideoPlayback, httpEngine } = arg0);
+  const cResult = obj.c(25);
+  ({ style, source, poster, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd, paused, muted, posterResizeMode, resizeMode, disableFocus, controls, ariaHidden, mixWithOthers, importantForAccessibility, pauseWhileAppInactive, playInBackground, preventsDisplaySleepDuringVideoPlayback, httpEngine } = arg0);
   let tmp4 = undefined !== paused && paused;
   let str = "contain";
   let str2 = "contain";
@@ -71,24 +72,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   _require = tmp6;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(7760);
+    const tmpResult = tmp(7984);
     cResult[0] = tmpResult;
     let first = tmpResult;
   } else {
     first = cResult[0];
   }
-  [r10057, dependencyMap] = react.useState("active" === closure_7.currentState);
+  [r10058, dependencyMap] = react.useState("active" === closure_7.currentState);
   _slicedToArray(react.useState("active" === closure_7.currentState), 2);
   const obj2 = react;
   if (cResult[1] !== (undefined === pauseWhileAppInactive || pauseWhileAppInactive)) {
-    class H {
+    class N {
       constructor() {
         tmp = closure_0;
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
-          return () => { /* body not rendered: F136893 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
+          return () => { /* body not rendered: F138493 */ };
         } else {
           return;
         }
@@ -97,18 +98,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [undefined === pauseWhileAppInactive || pauseWhileAppInactive];
     cResult[1] = undefined === pauseWhileAppInactive || pauseWhileAppInactive;
     cResult[2] = items;
-    cResult[3] = H;
-    tmp13 = H;
+    cResult[3] = N;
+    tmp13 = N;
     tmp12 = items;
   } else {
-    class H {
+    class N {
       constructor() {
         tmp = closure_0;
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
-          return () => { /* body not rendered: F136893 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
+          return () => { /* body not rendered: F138493 */ };
         } else {
           return;
         }
@@ -118,14 +119,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = obj2.useEffect(tmp13, tmp12);
   if (!tmp4) {
-    class H {
+    class N {
       constructor() {
         tmp = closure_0;
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
-          return () => { /* body not rendered: F136893 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
+          return () => { /* body not rendered: F138493 */ };
         } else {
           return;
         }
@@ -134,14 +135,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = tmp6;
   }
   if (controls != null) {
-    class H {
+    class N {
       constructor() {
         tmp = closure_0;
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
-          return () => { /* body not rendered: F136893 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
+          return () => { /* body not rendered: F138493 */ };
         } else {
           return;
         }
@@ -149,14 +150,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[4] === ariaHidden) {
-    class H {
+    class N {
       constructor() {
         tmp = closure_0;
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F136892 */ });
-          return () => { /* body not rendered: F136893 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
+          return () => { /* body not rendered: F138493 */ };
         } else {
           return;
         }
@@ -174,16 +175,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = onError;
   cResult[12] = onLoad;
   cResult[13] = onLoadStart;
-  cResult[14] = undefined !== playInBackground && playInBackground;
-  cResult[15] = poster;
-  cResult[16] = str2;
-  cResult[17] = undefined === preventsDisplaySleepDuringVideoPlayback || preventsDisplaySleepDuringVideoPlayback;
-  cResult[18] = str;
-  cResult[19] = source;
-  cResult[20] = style;
-  cResult[21] = tmp4;
-  cResult[22] = undefined;
-  cResult[23] = <_default style={style} source={source} importantForAccessibility={importantForAccessibility} poster={poster} muted={undefined === muted || muted} paused={tmp4} posterResizeMode={str2} resizeMode={str} repeat playInBackground={undefined !== playInBackground && playInBackground} pictureInPicture={false} playWhenInactive={false} onLoadStart={onLoadStart} onLoad={onLoad} onError={onError} onEnd={onEnd} disableFocus={disableFocus} aria-hidden={ariaHidden} mixWithOthers={mixWithOthers} preventsDisplaySleepDuringVideoPlayback={undefined === preventsDisplaySleepDuringVideoPlayback || preventsDisplaySleepDuringVideoPlayback} httpEngine={httpEngine} />;
+  cResult[14] = onReadyForDisplay;
+  cResult[15] = undefined !== playInBackground && playInBackground;
+  cResult[16] = poster;
+  cResult[17] = str2;
+  cResult[18] = undefined === preventsDisplaySleepDuringVideoPlayback || preventsDisplaySleepDuringVideoPlayback;
+  cResult[19] = str;
+  cResult[20] = source;
+  cResult[21] = style;
+  cResult[22] = tmp4;
+  cResult[23] = undefined;
+  cResult[24] = <_default style={style} source={source} importantForAccessibility={importantForAccessibility} poster={poster} muted={undefined === muted || muted} paused={tmp4} posterResizeMode={str2} resizeMode={str} repeat playInBackground={undefined !== playInBackground && playInBackground} pictureInPicture={false} playWhenInactive={false} onLoadStart={onLoadStart} onLoad={onLoad} onReadyForDisplay={onReadyForDisplay} onError={onError} onEnd={onEnd} disableFocus={disableFocus} aria-hidden={ariaHidden} mixWithOthers={mixWithOthers} preventsDisplaySleepDuringVideoPlayback={undefined === preventsDisplaySleepDuringVideoPlayback || preventsDisplaySleepDuringVideoPlayback} httpEngine={httpEngine} />;
 }) : ((paused) => {
   let ariaHidden;
   let closure_1;
@@ -196,12 +198,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let onError;
   let onLoad;
   let onLoadStart;
+  let onReadyForDisplay;
   let pauseWhileAppInactive;
   let poster;
   let source;
   let style;
   let flag = paused.paused;
-  ({ style, source, poster, onLoadStart, onLoad, onError, onEnd } = paused);
+  ({ style, source, poster, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd } = paused);
   if (flag === undefined) {
     flag = false;
   }
@@ -231,7 +234,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   dependencyMap = undefined;
   const httpEngine = paused.httpEngine;
-  const _default = pauseWhileAppInactive(7760).default;
+  const _default = pauseWhileAppInactive(7984).default;
   [first, dependencyMap] = react.useState("active" === closure_7.currentState);
   const items = [pauseWhileAppInactive];
   const effect = react.useEffect(() => {
@@ -245,7 +248,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       };
     }
   }, items);
-  const obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: flag, posterResizeMode: str, resizeMode: str2, repeat: true, playInBackground: flag3, pictureInPicture: false, playWhenInactive: false, onLoadStart, onLoad, onError, onEnd, disableFocus, "aria-hidden": ariaHidden, mixWithOthers, preventsDisplaySleepDuringVideoPlayback: flag4, httpEngine };
+  const obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: flag, posterResizeMode: str, resizeMode: str2, repeat: true, playInBackground: flag3, pictureInPicture: false, playWhenInactive: false, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd, disableFocus, "aria-hidden": ariaHidden, mixWithOthers, preventsDisplaySleepDuringVideoPlayback: flag4, httpEngine };
   const tmp4 = jsx;
   if (!flag) {
     if (pauseWhileAppInactive) {

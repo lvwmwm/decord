@@ -1,10 +1,10 @@
-// Module ID: 5323
-// Function ID: 5324
+// Module ID: 5683
+// Function ID: 5684
 // Name: PerceptualVolumeUtils
-// Dependencies: [2, 5324]
+// Dependencies: [2, 5684]
 
-// Module 5323 (PerceptualVolumeUtils)
-import perceptual_volume_PerceptualVolumeUtils from "perceptual_volume/PerceptualVolumeUtils" /* 5324 */;
+// Module 5683 (PerceptualVolumeUtils)
+import perceptual_volume_PerceptualVolumeUtils from "perceptual_volume/PerceptualVolumeUtils" /* 5684 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/PerceptualVolumeUtils.tsx");

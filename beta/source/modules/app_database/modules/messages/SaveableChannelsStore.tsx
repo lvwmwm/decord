@@ -1,19 +1,19 @@
-// Module ID: 6902
-// Function ID: 6903
+// Module ID: 6987
+// Function ID: 6988
 // Name: SaveableChannelsStore
-// Dependencies: [2051, 4756, 1085, 2102, 6903, 6904, 6905, 6907, 6908, 6909, 6910, 2]
+// Dependencies: [2051, 4780, 1084, 2103, 6988, 6989, 6990, 6992, 6993, 6994, 6995, 2]
 
-// Module 6902 (SaveableChannelsStore)
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 6904 */;
-import Lru from "Lru" /* 6905 */;
-import isPrivateChannel from "isPrivateChannel" /* 6907 */;
-import isReadableChannel from "isReadableChannel" /* 6908 */;
-import withFallbacks from "withFallbacks" /* 6910 */;
+// Module 6987 (SaveableChannelsStore)
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 6989 */;
+import Lru from "Lru" /* 6990 */;
+import isPrivateChannel from "isPrivateChannel" /* 6992 */;
+import isReadableChannel from "isReadableChannel" /* 6993 */;
+import withFallbacks from "withFallbacks" /* 6995 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4756 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1085 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import FileSystemStore from "FileSystemStore" /* 6903 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import FileSystemStore from "FileSystemStore" /* 6988 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -215,7 +215,7 @@ class SaveableChannelsStore extends MobileCacheSnapshotStore {
         const obj = { guildId: guild_id, channelId: id, channelType: basicChannel.type };
         lastChannel = obj;
         extendedMemoryLru.put(id, obj);
-        const tmp8Result = tmp8(6909);
+        const tmp8Result = tmp8(6994);
         if (tmp8Result.isLimitedChannel(basicChannel)) {
           if (null != lru.put(id, null)) {
             extendedMemoryLru.delete(id);

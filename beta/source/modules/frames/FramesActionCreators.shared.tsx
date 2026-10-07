@@ -1,18 +1,18 @@
-// Module ID: 8757
-// Function ID: 8758
+// Module ID: 8988
+// Function ID: 8989
 // Name: launchFrame
-// Dependencies: [5, 8496, 8497, 8499, 8758, 585, 8777, 8759, 8806, 8807, 2]
+// Dependencies: [5, 8703, 8704, 8705, 8989, 584, 8993, 8990, 9038, 9040, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 8757 (launchFrame)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8499 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 8758 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8777 */;
-import getFramesManagerDefault from "getFramesManager" /* 8807 */;
+// Module 8988 (launchFrame)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 8989 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
+import getFramesManagerDefault from "getFramesManager" /* 9040 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 8496 */;
-import FramesConstants from "FramesConstants" /* 8497 */;
+import FramesStore from "FramesStore" /* 8703 */;
+import FramesConstants from "FramesConstants" /* 8704 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, customId, dispatchResult1, error, hostWindowKey, intent, message, proxyTicket, referrerId;
@@ -74,7 +74,7 @@ let obj = function _launchFrame() {
               message = undefined;
               hostWindowKey = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === hostWindowKey) {
             if (arg0 === 1) {
@@ -402,9 +402,9 @@ export const resetFrameLayoutModes = function resetFrameLayoutModes(frameId) {
   const obj4 = { type: "FRAME_SET_PANEL_MODE", frameId, activityPanelMode: PANEL };
   obj3.dispatch(obj4);
 };
-export const attachFrameIframe = function attachFrameIframe(frameId, iframeId) {
+export const attachFrameIframe = function attachFrameIframe(id, first1) {
   obj = DispatcherDefault;
-  const obj2 = { type: "FRAME_IFRAME_MOUNT", frameId, iframeId };
+  const obj2 = { type: "FRAME_IFRAME_MOUNT", frameId: id, iframeId: first1 };
   obj.dispatch(obj2);
 };
 export const detachFrameIframe = function detachFrameIframe(frameId, iframeId) {

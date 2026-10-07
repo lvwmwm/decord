@@ -1,18 +1,12 @@
 // Module ID: 13842
 // Function ID: 13843
-// Dependencies: [13815]
+// Dependencies: [13831]
 
 // Module 13842
-import _mod13815 from "module_13815" /* 13815 */;
+import _mod13831 from "module_13831" /* 13831 */;
 
 
-export default function(arg0) {
-  if (_mod13815(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
-  }
+export default (arg0, arg1) => {
+  const tmp = new _mod13831(arg0, arg1);
+  return tmp.minor;
 };

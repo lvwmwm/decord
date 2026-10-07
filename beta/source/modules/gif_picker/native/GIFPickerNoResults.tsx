@@ -1,20 +1,20 @@
-// Module ID: 9872
-// Function ID: 9873
+// Module ID: 10101
+// Function ID: 10102
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 9857, 9694, 1127, 9698, 6038, 1189, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 10086, 9921, 1126, 9925, 6112, 1188, 2]
 
-// Module 9872 (GIFPickerNoResults)
+// Module 10101 (GIFPickerNoResults)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import native from "native" /* 1189 */;
-import SearchEmpty from "SearchEmpty" /* 9694 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9698 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 9857 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import native from "native" /* 1188 */;
+import SearchEmpty from "SearchEmpty" /* 9921 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9925 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10086 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,11 +61,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (cResult[3] !== categoryType) {
     let stringResult;
     if (categoryType === GIFPickerResultTypes.FAVORITES) {
-      const intl2 = tmp(1127).intl;
-      stringResult = intl2.string(tmp(1127).t.ZH4o6l);
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t.ZH4o6l);
     } else {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t["5dX4UM"]);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t["5dX4UM"]);
     }
     cResult[3] = categoryType;
     cResult[4] = stringResult;
@@ -76,7 +76,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const tmpResult2 = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = tmpResult2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    BottomSheetScrollView = tmp(6038).BottomSheetScrollView;
+    BottomSheetScrollView = tmp(6112).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -128,16 +128,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const obj = SearchEmpty;
   const searchEmptySource = obj.useSearchEmptySource();
   if (categoryType === GIFPickerResultTypes.FAVORITES) {
-    const intl2 = tmp4(1127).intl;
-    let stringResult = intl2.string(tmp4(1127).t.ZH4o6l);
+    const intl2 = tmp4(1126).intl;
+    let stringResult = intl2.string(tmp4(1126).t.ZH4o6l);
   } else {
-    const intl = tmp4(1127).intl;
-    stringResult = intl.string(tmp4(1127).t["5dX4UM"]);
+    const intl = tmp4(1126).intl;
+    stringResult = intl.string(tmp4(1126).t["5dX4UM"]);
   }
   const tmp4Result = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = tmp4Result.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(6038).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(6112).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

@@ -1,11 +1,11 @@
-// Module ID: 5886
-// Function ID: 5887
+// Module ID: 5964
+// Function ID: 5965
 // Name: MemberVerificationFormConstants
-// Dependencies: [558, 576, 1485, 2]
+// Dependencies: [558, 576, 1484, 2]
 
-// Module 5886 (MemberVerificationFormConstants)
+// Module 5964 (MemberVerificationFormConstants)
 import react from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 1254
-// Function ID: 1255
+// Module ID: 1253
+// Function ID: 1254
 // Name: ImpressionStore
-// Dependencies: [1255, 1260, 1261, 2]
+// Dependencies: [1254, 1259, 1260, 2]
 // Exports: cleanupImpression, getImpressionStack, getLocation, setCurrentImpression, setDebugTrackedData
 
-// Module 1254 (ImpressionStore)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import module_1255 from "module_1255" /* 1255 */;
+// Module 1253 (ImpressionStore)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
 let closure_2 = Object.freeze({ debugTrackedData: null, impressions: [] });
-const withEqualityFn = module_1255.createWithEqualityFn(() => closure_2);
+const withEqualityFn = module_1254.createWithEqualityFn(() => closure_2);
 const result = size.fileFinishedImporting("modules/app_analytics/ImpressionStore.tsx");
 
 export const setCurrentImpression = function setCurrentImpression(arg0) {

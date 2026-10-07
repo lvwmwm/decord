@@ -1,32 +1,32 @@
-// Module ID: 12964
-// Function ID: 12965
+// Module ID: 13228
+// Function ID: 13229
 // Name: PromotionUtils
-// Dependencies: [5, 1232, 10168, 10167, 1380, 1086, 2011, 4687, 1283, 1370, 1253, 1391, 2035, 11, 2037, 10199, 2]
+// Dependencies: [5, 1231, 10397, 10396, 1379, 1085, 2011, 4729, 1282, 1369, 1252, 1390, 2036, 11, 2038, 10428, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 12964 (PromotionUtils)
+// Module 13228 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import FlagUtils from "FlagUtils" /* 1391 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
 import Constants2 from "Constants" /* 2011 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
-import shared from "shared" /* 4687 */;
-import promotions_constants from "promotions/constants" /* 10199 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2038 */;
+import shared from "shared" /* 4729 */;
+import promotions_constants from "promotions/constants" /* 10428 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import PromotionRecord from "PromotionRecord" /* 10168 */;
-import PromotionsStore from "PromotionsStore" /* 10167 */;
-import Constants from "Constants" /* 1086 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import PromotionRecord from "PromotionRecord" /* 10397 */;
+import PromotionsStore from "PromotionsStore" /* 10396 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let closure_4, location_stack, name, partner, promotion_id, set;
+let closure_4, name, partner, set;
 
 let c10;
 let c9;
 let metroImportAll;
-const f113043 = (startDate, startDate2) => {
+const f114242 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -41,103 +41,42 @@ function claimedOutboundPromotionCodeFromServer(code) {
 }
 let obj = function _claimOutboundPromotion() {
   obj = _asyncToGenerator(async (promotion_id) => {
+    let location_stack;
     let c5 = 0;
     let c6 = 0;
-    const iter = (async (arg0, value) => {
+    const iter = (async (arg0) => {
+      let ANDROID;
       let c0;
       let c1;
       let c2;
       let c3;
       let obj10;
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
+      ({ promotionId: c0, promotionTitle: c1, partnerId: c2, analyticsLocations: c3 } = closure_0);
+      await "Reflect";
+      const HTTP = closure_132_0(closure_132_2[8]).HTTP;
+      const post = HTTP.post;
+      const obj5 = { url: closure_132_9.CLAIM_OUTBOUND_PROMOTION_CODE(promotion_id), rejectWithError: obj10.rejectWithMigratedError() };
+      obj10 = closure_132_0(closure_132_2[8]);
+      closure_4 = await post(obj5);
+      const body = closure_4.body;
+      const obj8 = closure_132_0(closure_132_2[9]);
+      if (obj8.isIOS()) {
+        ANDROID = tmp37.IOS;
       } else {
-        try {
-          let body;
-          let ANDROID;
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              let closure_3 = tmp;
-              promotion_id = undefined;
-              name = undefined;
-              partner = undefined;
-              location_stack = undefined;
-              ({ promotionId: c0, promotionTitle: c1, partnerId: c2, analyticsLocations: c3 } = closure_0);
-              closure_4 = undefined;
-              body = undefined;
-              ANDROID = undefined;
-              c5 = 1;
-              c6 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              const HTTP = closure_132_0(closure_132_2[8]).HTTP;
-              const post = HTTP.post;
-              const obj5 = { url: closure_132_9.CLAIM_OUTBOUND_PROMOTION_CODE(promotion_id), rejectWithError: obj10.rejectWithMigratedError() };
-              c5 = 2;
-              c6 = 1;
-              obj10 = closure_132_0(closure_132_2[8]);
-              const obj6 = { value: post(obj5), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            closure_4 = value;
-            body = closure_4.body;
-            const obj8 = closure_132_0(closure_132_2[9]);
-            if (obj8.isIOS()) {
-              ANDROID = tmp37.IOS;
-            } else {
-              ANDROID = tmp37.ANDROID;
-            }
-            obj = { platform: ANDROID, status: closure_4.status, location_stack, promotion_id, name, partner };
-            const track = closure_132_1(closure_132_2[10]).track;
-            const OUTBOUND_PROMOTION_CLAIMED = closure_132_8.OUTBOUND_PROMOTION_CLAIMED;
-            closure_132_1(closure_132_2[10]);
-            if (name == null) {
-              name = null;
-            }
-            if (partner == null) {
-              partner = null;
-            }
-            track(OUTBOUND_PROMOTION_CLAIMED, obj);
-            c6 = 3;
-            const obj9 = { value: closure_132_11(body), done: true };
-            return obj9;
-          }
-        } catch (tmp27) {
-          c6 = 3;
-          throw tmp27;
-        }
+        ANDROID = tmp37.ANDROID;
       }
+      obj = { platform: ANDROID, status: closure_4.status, location_stack, promotion_id, name, partner };
+      const track = closure_132_1(closure_132_2[10]).track;
+      const OUTBOUND_PROMOTION_CLAIMED = closure_132_8.OUTBOUND_PROMOTION_CLAIMED;
+      closure_132_1(closure_132_2[10]);
+      if (name == null) {
+        name = null;
+      }
+      if (partner == null) {
+        partner = null;
+      }
+      track(OUTBOUND_PROMOTION_CLAIMED, obj);
+      return closure_132_11(body);
     })();
     iter.next();
     return iter;
@@ -223,7 +162,7 @@ export const getNextUnseenOutboundPromotionId = function getNextUnseenOutboundPr
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f113043)[0].id;
+    id = found1.sort(f114242)[0].id;
   }
   return id;
 };
@@ -264,7 +203,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f113043)[0].id;
+    id = found1.sort(f114242)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

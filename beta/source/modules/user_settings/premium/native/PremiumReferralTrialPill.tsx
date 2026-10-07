@@ -1,16 +1,16 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 13203
+// Function ID: 13204
 // Name: PremiumReferralTrialPill
-// Dependencies: [17, 21, 4837, 588, 558, 576, 1127, 4833, 2]
+// Dependencies: [17, 21, 4890, 587, 558, 576, 1126, 4886, 2]
 
-// Module 12939 (PremiumReferralTrialPill)
+// Module 13203 (PremiumReferralTrialPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import createStyles from "createStyles" /* 4837 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasExtraMargin) =>
   const tmp5 = hasExtraMargin ? tmp4.pillParentExtraMargin : tmp4.pillParent;
   ({ pillContainer, text } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const str = intl.string(intl2.t.Y1q7js);
     const formatted = str.toUpperCase();
     cResult[0] = formatted;

@@ -1,9 +1,9 @@
-// Module ID: 9840
-// Function ID: 9841
+// Module ID: 10069
+// Function ID: 10070
 // Name: ExpressionPickerHandlers
 // Dependencies: [19, 558, 576, 2]
 
-// Module 9840 (ExpressionPickerHandlers)
+// Module 10069 (ExpressionPickerHandlers)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

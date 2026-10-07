@@ -1,15 +1,18 @@
-// Module ID: 7041
-// Function ID: 7042
+// Module ID: 7113
+// Function ID: 7114
 // Name: UserProfileGameWidgetTypes
-// Dependencies: [7040, 5423, 7042, 2]
+// Dependencies: [7114, 7112, 5895, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 7041 (UserProfileGameWidgetTypes)
-import GameWidgetLimits from "GameWidgetLimits" /* 5423 */;
-import WidgetType from "WidgetType" /* 7040 */;
-import WidgetUtils from "WidgetUtils" /* 7042 */;
+// Module 7113 (UserProfileGameWidgetTypes)
+import GameWidgetLimits from "GameWidgetLimits" /* 5895 */;
+import WidgetType from "WidgetType" /* 7112 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7114 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
+({ widgetSupportsComment: c2, widgetSupportsTags: c3 } = UserProfileWidgetConstants);
 const items = [WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES, WidgetType.WidgetType.PLAYED_GAMES];
 class BaseGameWidget {
   constructor(arg0) {
@@ -43,15 +46,87 @@ class BaseGameWidget {
     return tmp;
   }
   isEqual(type) {
+    const f137979 = (gameId, index) => {
+      let c0;
+      let flag = false;
+      if (gameId.gameId === games1[index].gameId) {
+        if (!React2(type)) {
+          flag = true;
+          if (_false(type)) {
+            const tags = gameId.tags;
+            let tmp10 = null;
+            if (null != tags) {
+              tmp10 = null;
+              if ("" !== tags) {
+                const _Array3 = Array;
+                if (!Array.isArray(tags)) {
+                  tmp10 = tags;
+                } else {
+                  tmp10 = null;
+                }
+              }
+            }
+            const tags1 = tmp.tags;
+            let tmp12 = null;
+            if (null != tags1) {
+              tmp12 = null;
+              if ("" !== tags1) {
+                const _Array4 = Array;
+                if (!Array.isArray(tags1)) {
+                  tmp12 = tags1;
+                } else {
+                  tmp12 = null;
+                }
+              }
+            }
+            c0 = tmp12;
+            flag = false;
+            if (null === tmp10 === null === tmp12) {
+              flag = true;
+              if (null !== tmp10) {
+                flag = true;
+                if (null !== tmp12) {
+                  flag = false;
+                  if (tmp10.length === tmp12.length) {
+                    flag = true;
+                    if (!tmp10.every((item, index) => item === _null[index])) {
+                      flag = false;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        } else {
+          const comment = gameId.comment;
+          if (null != comment) {
+            if ("" !== comment) {
+              const _Array = Array;
+            }
+          }
+          const comment1 = tmp.comment;
+          if (null != comment1) {
+            if ("" !== comment1) {
+              const _Array2 = Array;
+            }
+          }
+          flag = false;
+        }
+      }
+      return flag;
+    };
     let tmp = type instanceof BaseGameWidget;
     if (tmp) {
       const self = this;
-      let areWidgetGamesEqualResult = type.type === this.type;
-      if (areWidgetGamesEqualResult) {
-        const obj = WidgetUtils;
-        areWidgetGamesEqualResult = obj.areWidgetGamesEqual(self.games, type.games, self.type);
+      let tmp2 = type.type === this.type;
+      if (tmp2) {
+        const games = self.games;
+        const games1 = type.games;
+        type = self.type;
+        tmp2 = games.length === games1.length && games.every(f137979);
+        const tmp3 = games.length === games1.length && games.every(f137979);
       }
-      tmp = areWidgetGamesEqualResult;
+      tmp = tmp2;
     }
     return tmp;
   }

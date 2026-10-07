@@ -1,26 +1,26 @@
-// Module ID: 13100
-// Function ID: 13101
+// Module ID: 13364
+// Function ID: 13365
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1086, 21, 4837, 588, 5754, 558, 576, 6571, 1127, 4824, 6572, 4833, 4769, 12964, 13101, 5205, 13102, 1987, 12962, 5282, 4801, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 5620, 558, 576, 6644, 1126, 4877, 6645, 4886, 4791, 13228, 13365, 5708, 13366, 1987, 13226, 5594, 4854, 2]
 // Exports: default
 
-// Module 13100 (OutboundPromotionCard)
+// Module 13364 (OutboundPromotionCard)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4824 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4877 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,8 +52,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((termsAndCondit
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t.PdKWVT) };
-    const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
-    intl = tmp(1127).intl;
+    const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+    intl = tmp(1126).intl;
     const tmp7 = metroImportDefault(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -78,7 +78,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((termsAndCondit
     return tmp11;
   }
   const obj4 = { header: first, children: metroImportDefault(Text_Text.Text, { style: termsAndConditionsText, variant: "text-sm/medium", children: tmp8 }) };
-  BottomSheet = tmp(6572).BottomSheet;
+  BottomSheet = tmp(6645).BottomSheet;
   const tmp12 = metroImportDefault(BottomSheet, obj4);
   cResult[3] = tmp4.termsAndConditionsText;
   cResult[4] = tmp8;

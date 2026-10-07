@@ -1,13 +1,13 @@
-// Module ID: 8523
-// Function ID: 8524
+// Module ID: 8730
+// Function ID: 8731
 // Name: permissions
-// Dependencies: [1086, 1098, 1127, 2]
+// Dependencies: [1085, 1097, 1126, 2]
 // Exports: containsDisallowedPermission, getPermissionName
 
-// Module 8523 (permissions)
-import Constants from "Constants" /* 1086 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
-import intl2 from "intl" /* 1127 */;
+// Module 8730 (permissions)
+import Constants from "Constants" /* 1085 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import intl2 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 let ADD_REACTIONS;

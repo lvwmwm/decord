@@ -1,20 +1,20 @@
-// Module ID: 6512
-// Function ID: 6513
+// Module ID: 6585
+// Function ID: 6586
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 1086, 21, 4837, 558, 576, 1127, 4528, 6513, 4833, 5301, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 558, 576, 1126, 4565, 6586, 4886, 5783, 2]
 
-// Module 6512 (MemberVerificationAlertUpdate)
+// Module 6585 (MemberVerificationAlertUpdate)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl5 from "intl" /* 1127 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AlertDefault from "Alert" /* 5301 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6513 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AlertDefault from "Alert" /* 5783 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6586 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,9 +40,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const cResult = obj.c(16);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl5.t.b8siyY);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl5.t["ETE/oC"]);
     const fn = function u() {
       const obj = LinkingDefault;
@@ -69,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   const header = tmp4.header;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(intl5.t.kkjNHU);
     cResult[5] = stringResult2;
     tmp15 = stringResult2;
@@ -87,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   const text = tmp4.text;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1127).intl;
+    const intl4 = tmp(1126).intl;
     const stringResult3 = intl4.string(intl5.t.gnkqzQ);
     cResult[8] = stringResult3;
     tmp20 = stringResult3;

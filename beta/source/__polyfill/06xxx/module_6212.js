@@ -1,105 +1,135 @@
 // Module ID: 6212
 // Function ID: 6213
-// Dependencies: [19, 17, 1644, 6039]
-// Exports: useKeyboard
+// Dependencies: [19, 17, 21]
+// Exports: default, isKeyboardDismissingTap, updateResponderEventValue
 
 // Module 6212
-import react from "react" /* 19 */;
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6039 */;
+import Fragment from "Fragment" /* 21 */;
+import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 
-let Platform;
-let c3;
-const useEffect = react.useEffect;
-({ Keyboard: c3, Platform } = react_native);
-const keyboardDidShow = "keyboardDidShow";
-const keyboardDidHide = "keyboardDidHide";
-let closure_6 = { code: "function pnpm_useKeyboardTs1(state,height,duration,easing,bottomOffset){const{KEYBOARD_STATE,shouldHandleKeyboardEvents,temporaryCachedKeyboardEvent,keyboardHeight,includeBottomOffset,keyboardAnimationDuration,keyboardAnimationEasing,keyboardState}=this.__closure;if(state===KEYBOARD_STATE.SHOWN&&!shouldHandleKeyboardEvents.value){temporaryCachedKeyboardEvent.value=[state,height,duration,easing];return;}keyboardHeight.value=state===KEYBOARD_STATE.SHOWN?height:keyboardHeight.value;if(bottomOffset&&includeBottomOffset){keyboardHeight.value=keyboardHeight.value+bottomOffset;}keyboardAnimationDuration.value=duration;keyboardAnimationEasing.value=easing;keyboardState.value=state;temporaryCachedKeyboardEvent.value=[];}" };
-let closure_7 = { code: "function pnpm_useKeyboardTs2(){const{shouldHandleKeyboardEvents}=this.__closure;return shouldHandleKeyboardEvents.value;}" };
-const __initData = { code: "function pnpm_useKeyboardTs3(result){const{temporaryCachedKeyboardEvent,handleKeyboardEvent}=this.__closure;const params=temporaryCachedKeyboardEvent.value;if(result&&params.length>0){handleKeyboardEvent(params[0],params[1],params[2],params[3]);}}" };
+let closure_9, diff, sum;
 
-export const useKeyboard = (includeBottomOffset) => {
-  includeBottomOffset = includeBottomOffset.includeBottomOffset;
-  let shouldHandleKeyboardEvents;
-  let obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  shouldHandleKeyboardEvents = obj.useSharedValue(false);
-  const obj2 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const state = obj2.useSharedValue(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.UNDETERMINED);
-  const obj3 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const height = obj3.useSharedValue(0);
-  const obj4 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const animationEasing = obj4.useSharedValue("keyboard");
-  const obj5 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const animationDuration = obj5.useSharedValue(500);
-  const obj6 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const sharedValue5 = obj6.useSharedValue([]);
-  const fn = function v(value, arg1, value2, value3, arg4) {
-    value = arg1;
-    if (value === GESTURE_SOURCE.KEYBOARD_STATE.SHOWN) {
-      if (!shouldHandleKeyboardEvents.value) {
-        const items = [value, value, value2, value3];
-        sharedValue5.value = items;
+let StyleSheet;
+let _window;
+let c2;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let map;
+let react = react_mod;
+({ useCallback: _window, useEffect: map, useMemo: c2, useRef: c3 } = react);
+react = react_mod;
+({ Keyboard: closure_4, StyleSheet, View: hasOwnProperty } = react_native);
+const jsx = Fragment.jsx;
+let c7 = 0;
+let closure_8 = [];
+let c9 = false;
+const context = react.createContext(null);
+const logicalResponder = StyleSheet.create({ logicalResponder: { display: "contents" } });
+
+export default function _default(keyboardShouldPersistTaps) {
+  keyboardShouldPersistTaps = keyboardShouldPersistTaps.keyboardShouldPersistTaps;
+  const children = keyboardShouldPersistTaps.children;
+  const tmp = closure_3(false);
+  const isRNGHResponderEvent = tmp;
+  let items = [tmp, keyboardShouldPersistTaps];
+  let tmp2 = closure_2(() => ({ isRNGHResponderEvent, keyboardShouldPersistTaps }), items);
+  isRNGHResponderEvent(() => {
+    sum = sum + 1;
+    if (1 >= sum) {
+      let addListener;
+      if (closure_1_4 != null) {
+        addListener = obj.addListener;
+      }
+      if (null != addListener) {
+        const metrics = obj.metrics;
+        let height;
+        if (metrics != null) {
+          const metricsResult = metrics();
+          if (metricsResult != null) {
+            height = metricsResult.height;
+          }
+        }
+        let tmp5 = null != height;
+        if (tmp5) {
+          tmp5 = height > 0;
+        }
+        function setVisible(endCoordinates) {
+          endCoordinates = endCoordinates.endCoordinates;
+          let height;
+          if (endCoordinates != null) {
+            height = endCoordinates.height;
+          }
+          c9 = null != height && height > 0;
+          const tmp2 = null != height && height > 0;
+        }
+        closure_9 = tmp5;
+        items = [
+          closure_1_4.addListener("keyboardDidShow", setVisible),
+          closure_1_4.addListener("keyboardWillShow", setVisible),
+          closure_1_4.addListener("keyboardDidHide", () => {
+                c9 = false;
+              })
+        ];
       }
     }
-    if (value !== GESTURE_SOURCE.KEYBOARD_STATE.SHOWN) {
-      value = iter.value;
-    }
-    height.value = value;
-    const tmp5 = arg4 && includeBottomOffset;
-    if (tmp5) {
-      height.value = height.value + arg4;
-    }
-    animationDuration.value = value2;
-    animationEasing.value = value3;
-    state.value = value;
-    sharedValue5.value = [];
-  };
-  const obj7 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  fn.__closure = { KEYBOARD_STATE: includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE, shouldHandleKeyboardEvents, temporaryCachedKeyboardEvent: sharedValue5, keyboardHeight: height, includeBottomOffset, keyboardAnimationDuration: animationDuration, keyboardAnimationEasing: animationEasing, keyboardState: state };
-  fn.__workletHash = 7905199978020;
-  fn.__initData = sharedValue5;
-  ({ KEYBOARD_STATE: includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE, shouldHandleKeyboardEvents, temporaryCachedKeyboardEvent: sharedValue5, keyboardHeight: height, includeBottomOffset, keyboardAnimationDuration: animationDuration, keyboardAnimationEasing: animationEasing, keyboardState: state });
-  const workletCallback = obj7.useWorkletCallback(fn, []);
-  let items = [workletCallback];
-  state(() => {
-    let closure_0 = height.addListener(animationEasing, (endCoordinates) => {
-      let duration;
-      let easing;
-      ({ duration, easing } = endCoordinates);
-      const obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-      const runOnUIResult = obj.runOnUI(workletCallback);
-      runOnUIResult(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.SHOWN, endCoordinates.endCoordinates.height, duration, easing, includeBottomOffset(shouldHandleKeyboardEvents[3]).SCREEN_HEIGHT - endCoordinates.endCoordinates.height - endCoordinates.endCoordinates.screenY);
-    });
-    let closure_1 = height.addListener(animationDuration, (endCoordinates) => {
-      const obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-      const runOnUIResult = obj.runOnUI(workletCallback);
-      runOnUIResult(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.HIDDEN, endCoordinates.endCoordinates.height, endCoordinates.duration, endCoordinates.easing);
-    });
     return () => {
-      closure_0.remove();
-      closure_1.remove();
+      function unsubscribeFromKeyboardVisibility() {
+        diff = diff - 1;
+        if (0 >= diff) {
+          for (const item10008 of closure_8) {
+            let removeResult = item10008.remove();
+            continue;
+          }
+          closure_8 = [];
+          c9 = false;
+        }
+      }
+      unsubscribeFromKeyboardVisibility();
     };
-  }, items);
-  const fn2 = function b() {
-    return shouldHandleKeyboardEvents.value;
-  };
-  fn2.__closure = { shouldHandleKeyboardEvents };
-  fn2.__workletHash = 11615500623565;
-  fn2.__initData = workletCallback;
-  const fn3 = function y(arg0) {
-    let tmp = arg0;
-    const value = sharedValue5.value;
-    if (arg0) {
-      tmp = value.length > 0;
+  }, []);
+  const items1 = [keyboardShouldPersistTaps];
+  const tmp4 = keyboardShouldPersistTaps(() => {
+    isRNGHResponderEvent.current = false;
+    return false;
+  }, []);
+  ({
+    collapsable: false,
+    onStartShouldSetResponderCapture: tmp4,
+    onStartShouldSetResponder: keyboardShouldPersistTaps(() => {
+      const current = "handled" === keyboardShouldPersistTaps && isRNGHResponderEvent.current;
+      isRNGHResponderEvent.current = false;
+      return current;
+    }, items1),
+    pointerEvents: "box-none",
+    style: logicalResponder.logicalResponder,
+    children
+  });
+  return <context value={tmp2}>{null}</context>;
+};
+export const JSResponderContext = context;
+export const updateResponderEventValue = function updateResponderEventValue(isRNGHResponderEvent, current) {
+  isRNGHResponderEvent = undefined;
+  if (isRNGHResponderEvent != null) {
+    isRNGHResponderEvent = isRNGHResponderEvent.isRNGHResponderEvent;
+  }
+  if (isRNGHResponderEvent) {
+    isRNGHResponderEvent.current = current;
+  }
+};
+export const isKeyboardDismissingTap = function isKeyboardDismissingTap(keyboardShouldPersistTaps) {
+  if (null == keyboardShouldPersistTaps) {
+    return false;
+  } else {
+    keyboardShouldPersistTaps = keyboardShouldPersistTaps.keyboardShouldPersistTaps;
+    let tmp = !keyboardShouldPersistTaps;
+    if (keyboardShouldPersistTaps) {
+      tmp = "never" === keyboardShouldPersistTaps;
     }
     if (tmp) {
-      workletCallback(value[0], value[1], value[2], value[3]);
+      tmp = c9;
     }
-  };
-  fn3.__closure = { temporaryCachedKeyboardEvent: sharedValue5, handleKeyboardEvent: workletCallback };
-  fn3.__workletHash = 16636741173520;
-  fn3.__initData = __initData;
-  const obj9 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const animatedReaction = obj9.useAnimatedReaction(fn2, fn3, []);
-  return { state, height, animationEasing, animationDuration, shouldHandleKeyboardEvents };
+    return tmp;
+  }
 };

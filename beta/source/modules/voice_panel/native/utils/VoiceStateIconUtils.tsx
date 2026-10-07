@@ -1,12 +1,12 @@
-// Module ID: 9110
-// Function ID: 9111
+// Module ID: 9336
+// Function ID: 9337
 // Name: VoiceStateIconUtils
-// Dependencies: [1999, 4856, 568, 558, 576, 504, 2]
+// Dependencies: [1999, 4909, 568, 558, 576, 504, 2]
 
-// Module 9110 (VoiceStateIconUtils)
+// Module 9336 (VoiceStateIconUtils)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

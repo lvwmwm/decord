@@ -1,17 +1,17 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17563
+// Function ID: 17564
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: [19, 17, 21, 4837, 558, 576, 1127, 5890, 1106, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 1126, 5968, 1105, 2]
 
-// Module 17198 (AccountSwitchingSpinnerModal)
+// Module 17563 (AccountSwitchingSpinnerModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1106 */;
-import intl2 from "intl" /* 1127 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5890 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import intl2 from "intl" /* 1126 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5968 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_4();
   const switchingSpinnerContainer = tmp4.switchingSpinnerContainer;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.n8qMH0);
     const tmp9 = jsx(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
     cResult[0] = stringResult;

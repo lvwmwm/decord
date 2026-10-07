@@ -1,20 +1,20 @@
-// Module ID: 7431
-// Function ID: 7432
+// Module ID: 7644
+// Function ID: 7645
 // Name: UserJoinSystemMessage
-// Dependencies: [2051, 2073, 1086, 7406, 7432, 7444, 7445, 7448, 1127, 7408, 7410, 2]
+// Dependencies: [2051, 2074, 1085, 7619, 7645, 7657, 7658, 7661, 1126, 7621, 7623, 2]
 // Exports: createUserJoinSystemMessage
 
-// Module 7431 (UserJoinSystemMessage)
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7406 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7408 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7432 */;
-import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 7444 */;
-import transformSticker2 from "transformSticker" /* 7445 */;
-import WelcomeCTAUtils from "WelcomeCTAUtils" /* 7448 */;
+// Module 7644 (UserJoinSystemMessage)
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7645 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 7657 */;
+import transformSticker2 from "transformSticker" /* 7658 */;
+import WelcomeCTAUtils from "WelcomeCTAUtils" /* 7661 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import size from "module_2" /* 2 */;
 
 const SystemChannelFlags = Constants.SystemChannelFlags;
@@ -50,10 +50,10 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
     }
   }
   const obj2 = { content: formatToParts(systemMessageUserJoinMobile, obj4), sticker: transformStickerResult, stickerLabel: intl2.string(intl3.t["7Tj6HT"]) };
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   formatToParts = intl.formatToParts;
   obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
-  intl2 = tmp(1127).intl;
-  const merged = Object.assign(tmp4(7410)(message));
+  intl2 = tmp(1126).intl;
+  const merged = Object.assign(tmp4(7623)(message));
   return obj2;
 };

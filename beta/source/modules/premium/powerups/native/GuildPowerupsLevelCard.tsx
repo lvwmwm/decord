@@ -1,26 +1,24 @@
-// Module ID: 11970
-// Function ID: 11971
+// Module ID: 12223
+// Function ID: 12224
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 4726, 1086, 11971, 21, 4837, 588, 558, 576, 5292, 8675, 6398, 11954, 11931, 4833, 1127, 2522, 11904, 11923, 11972, 11928, 11973, 2]
+// Dependencies: [19, 17, 4768, 1085, 12224, 21, 4890, 587, 558, 576, 5605, 4826, 6470, 12207, 12184, 4886, 1126, 2525, 12159, 12176, 12225, 12181, 12226, 2]
 
-// Module 11970 (GuildPowerupsLevelCard)
+// Module 12223 (GuildPowerupsLevelCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6398 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11904 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 11923 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 11928 */;
-import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 11931 */;
-import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 11971 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 11972 */;
+import nativeDefault from "native" /* 587 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12159 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12176 */;
+import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 12184 */;
+import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 12224 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12225 */;
 import react from "react" /* 19 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4726 */;
-import Constants from "Constants" /* 1086 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -47,8 +45,10 @@ let size1;
 let tmp;
 let tmp6;
 let unpackModuleId;
-const BoostGemIcon2 = tmp(8675);
-const GuildPowerupsCardDefault = tmp6(11973);
+const BoostGemIcon2 = tmp(4826);
+const Text_Text = tmp(4886);
+const GuildPowerupsCardFooter = tmp(12181);
+const GuildPowerupsCardDefault = tmp6(12226);
 const View = react_native.View;
 ({ LevelCardPosition: hasOwnProperty, PowerupActiveStatusType: metroRequire } = GuildPowerupsConstants);
 ({ BoostedGuildTiers: metroImportDefault, HorizontalGradient: metroImportAll } = Constants);
@@ -261,7 +261,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items4[1] = tmp10;
     const obj5 = { style: items4, children: authStore(BoostGemIcon, obj9) };
     BoostGemIcon = BoostGemIcon2.BoostGemIcon;
-    const colors = tmp5(588).colors;
+    const colors = tmp5(587).colors;
     obj9 = { size: "xs", color: active ? colors.WHITE : colors.TEXT_MUTED };
     items2[2] = authStore(View, obj5);
     return tmp2(View, obj);
@@ -511,15 +511,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items1;
   let nextPowerup;
   let powerup;
-  const obj = react2;
+  const tmp = require;
+  let obj = react2;
   const cResult = obj.c(32);
   ({ guildId, powerup, nextPowerup, index, isScrollingRef } = arg0);
   const tmp4 = closure_12();
-  const obj2 = ManaTypeConsolidationExperiment;
+  let obj2 = ManaTypeConsolidationExperiment;
   const manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("GuildPowerupsLevelCard");
   const tmp7 = usePowerupActiveStatusDefault(guildId, powerup);
   const tmp8 = usePowerupActiveStatusDefault(guildId, nextPowerup);
-  const obj3 = useCalculatePowerupCardStatus;
+  let obj3 = useCalculatePowerupCardStatus;
   const calculatePowerupCardStatus = obj3.useCalculatePowerupCardStatus(powerup, tmp7, false);
   const type = tmp7.type;
   const INACTIVE = metroRequire.INACTIVE;
@@ -600,7 +601,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             }
                           }
                         }
-                        const obj4 = { containerStyle: null, style: null, onPress: tmp15, status: calculatePowerupCardStatus, children: items };
+                        let obj4 = { containerStyle: null, style: null, onPress: tmp15, status: calculatePowerupCardStatus, children: items };
                         ({ cardContainer: obj10.containerStyle, card: obj10.style } = tmp4);
                         items = [tmp19, tmp37];
                         const tmp43 = unpackModuleId(GuildPowerupsCardDefault, obj4);
@@ -615,7 +616,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                     }
                   }
-                  const obj5 = { style: tmp4.contentContainer, children: items1 };
+                  let obj5 = { style: tmp4.contentContainer, children: items1 };
                   items1 = [tmp23, tmp26, tmp33];
                   const tmp40 = unpackModuleId(View, obj5);
                   cResult[20] = tmp4.contentContainer;
@@ -625,21 +626,21 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   cResult[24] = tmp40;
                   tmp37 = tmp40;
                 }
-                const obj6 = { style: tmp4.footerContainer, children: tmp30 };
+                let obj6 = { style: tmp4.footerContainer, children: tmp30 };
                 const tmp36 = authStore(View, obj6);
                 cResult[17] = tmp4.footerContainer;
                 cResult[18] = tmp30;
                 cResult[19] = tmp36;
                 tmp33 = tmp36;
               }
-              const obj7 = { cost: powerup.cost, status: calculatePowerupCardStatus };
+              let obj7 = { cost: powerup.cost, status: calculatePowerupCardStatus };
               const tmp32 = authStore(GuildPowerupsCardFooter.GuildPowerupsCardFooter, obj7);
               cResult[14] = powerup.cost;
               cResult[15] = calculatePowerupCardStatus;
               cResult[16] = tmp32;
               tmp30 = tmp32;
             }
-            const obj8 = { isActive: type !== INACTIVE, index };
+            let obj8 = { isActive: tmp18, index };
             const tmp29 = authStore(closure_14, obj8);
             cResult[11] = index;
             cResult[12] = type !== INACTIVE;
@@ -647,7 +648,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp26 = tmp29;
           }
         }
-        const obj9 = { color: str, variant: str2, children: powerup.title };
+        let obj9 = { color: str, variant: str2, children: powerup.title };
         const tmp25 = authStore(Text_Text.Text, obj9);
         cResult[7] = powerup.title;
         cResult[8] = str;
@@ -687,12 +688,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp20;
   ({ guildId, powerup, nextPowerup, index, isScrollingRef } = arg0);
   const tmp = closure_12();
-  const tmp3 = dependencyMap;
-  let obj = ManaTypeConsolidationExperiment;
+  const obj = ManaTypeConsolidationExperiment;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsLevelCard");
   const tmp6 = usePowerupActiveStatusDefault(guildId, powerup);
   const tmp7 = usePowerupActiveStatusDefault(guildId, nextPowerup);
-  let obj2 = useCalculatePowerupCardStatus;
+  const obj2 = useCalculatePowerupCardStatus;
   const calculatePowerupCardStatus = obj2.useCalculatePowerupCardStatus(powerup, tmp6, false);
   const type = tmp6.type;
   const INACTIVE = metroRequire.INACTIVE;
@@ -713,28 +713,28 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       closure_1();
     }
   }, items);
-  let obj3 = { containerStyle: tmp.cardContainer, style: tmp.card, onPress: callback, status: calculatePowerupCardStatus, children: items1 };
-  let obj4 = { position: MIDDLE, active: tmp14, nextActive: tmp20 };
+  const obj4 = { position: MIDDLE, active: type !== INACTIVE, nextActive: tmp20 };
   tmp20 = undefined;
+  const obj3 = { containerStyle: tmp.cardContainer, style: tmp.card, onPress: callback, status: calculatePowerupCardStatus, children: items1 };
   const tmp19 = closure_13;
   const tmp5Result = GuildPowerupsCardDefault;
   if (null != nextPowerup) {
     tmp20 = type2 !== INACTIVE2;
   }
-  items1 = [tmp18(tmp19, obj4), ];
-  let obj5 = { style: tmp.contentContainer, children: items2 };
+  items1 = [authStore(tmp19, obj4), ];
   let str;
-  const Text = tmp2(4833).Text;
+  const obj5 = { style: tmp.contentContainer, children: items2 };
+  const Text = tmp2(4886).Text;
   if (manaTypeConsolidationExperiment) {
     str = "text-strong";
   }
-  let obj6 = { color: str, variant: str2, children: powerup.title };
+  const obj6 = { color: str, variant: str2, children: powerup.title };
   str2 = "heading-lg/semibold";
   if (manaTypeConsolidationExperiment) {
     str2 = "experimental/heading-md/semibold";
   }
-  items2 = [tmp18(Text, obj6), tmp18(closure_14, { isActive: type !== INACTIVE, index }), ];
-  let obj7 = { style: tmp.footerContainer, children: tmp18(tmp2(11928).GuildPowerupsCardFooter, obj8) };
+  items2 = [authStore(Text, obj6), authStore(closure_14, { isActive: type !== INACTIVE, index }), ];
+  const obj7 = { style: tmp.footerContainer, children: authStore(GuildPowerupsCardFooter.GuildPowerupsCardFooter, obj8) };
   obj8 = { cost: powerup.cost, status: calculatePowerupCardStatus };
   items2[2] = authStore(View, obj7);
   items1[1] = unpackModuleId(View, obj5);

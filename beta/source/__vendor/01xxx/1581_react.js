@@ -1,21 +1,35 @@
 // Module ID: 1581
 // Function ID: 1582
 // Name: react
-// Dependencies: [19, 1540]
-// Exports: useCurrentRender
+// Dependencies: [19, 21]
+// Exports: useComponent
 
 // Module 1581 (react)
-import react2 from "react" /* 1540 */;
+import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 
+const jsx = Fragment.jsx;
+function NavigationContent(render) {
+  return render.render(render.children);
+}
 
-export const useCurrentRender = function useCurrentRender(descriptors) {
-  let state;
-  ({ state, navigation } = descriptors);
-  descriptors = descriptors.descriptors;
-  const context = react.useContext(react2.CurrentRenderContext);
-  const tmp2 = context && navigation.isFocused();
-  if (tmp2) {
-    context.options = descriptors[state.routes[state.index].key].options;
-  }
+export const useComponent = function useComponent(current) {
+  let ref;
+  ref = ref.useRef(current);
+  ref.current = current;
+  const effect = ref.useEffect(() => {
+    ref.current = null;
+  });
+  return ref.useRef(function(arg0) {
+    const current = ref.current;
+    if (null === current) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("The returned component must be rendered in the same render phase as the hook.");
+      throw error;
+    } else {
+      return <NavigationContent render={current}>{tmp}</NavigationContent>;
+    }
+  }).current;
 };

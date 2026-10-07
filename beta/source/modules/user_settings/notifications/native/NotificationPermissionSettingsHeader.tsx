@@ -1,17 +1,17 @@
-// Module ID: 15023
-// Function ID: 15024
+// Module ID: 15308
+// Function ID: 15309
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 1086, 11797, 21, 4837, 588, 558, 576, 11798, 1253, 9586, 4833, 1127, 5282, 5918, 2]
+// Dependencies: [19, 17, 1085, 12053, 21, 4890, 587, 558, 576, 12054, 1252, 9813, 4886, 1126, 5594, 5995, 2]
 
-// Module 15023 (NotificationPermissionSettingsHeader)
+// Module 15308 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 11797 */;
+import Constants from "Constants" /* 1085 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12053 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = canSeePushNotificationNudge(576);
   const cResult = obj.c(20);
   const tmp4 = closure_13();
-  let obj2 = canSeePushNotificationNudge(11798);
+  let obj2 = canSeePushNotificationNudge(12054);
   canSeePushNotificationNudge = obj2.useCanSeePushNotificationNudge();
   if (cResult[0] !== canSeePushNotificationNudge) {
     const fn = function o() {
@@ -126,7 +126,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       let obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-      const BellSlashIcon = tmp(9586).BellSlashIcon;
+      const BellSlashIcon = tmp(9813).BellSlashIcon;
       const tmp12 = closure_11(BellSlashIcon, obj3);
       cResult[4] = tmp12;
       tmp10 = tmp12;
@@ -177,9 +177,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
         }
       }
-      const obj5 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(tmp(1127).t.MUwOvc) };
-      const Text = tmp(4833).Text;
-      intl = tmp(1127).intl;
+      const obj5 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(tmp(1126).t.MUwOvc) };
+      const Text = tmp(4886).Text;
+      intl = tmp(1126).intl;
       const tmp17 = closure_11(Text, obj5);
       cResult[7] = tmp17;
       tmp16 = tmp17;
@@ -206,7 +206,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
         }
       }
-      const stringResult = obj6.string(tmp(1127).t.G4uKoe);
+      const stringResult = obj6.string(tmp(1126).t.G4uKoe);
       cResult[8] = stringResult;
       tmp18 = stringResult;
     } else {
@@ -232,8 +232,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const obj7 = { variant: "text-sm/medium", style: body, color: "text-muted", children: tmp18 };
       cResult[9] = tmp4.body;
-      cResult[10] = closure_11(tmp(4833).Text, obj7);
-      const tmp21 = closure_11(tmp(4833).Text, obj7);
+      cResult[10] = closure_11(tmp(4886).Text, obj7);
+      const tmp21 = closure_11(tmp(4886).Text, obj7);
     } else {
       class E {
         constructor() {
@@ -281,9 +281,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj8 = { style: tmp22, children: closure_11(Button, obj9) };
-      obj9 = { variant: "primary", text: intl2.string(tmp(1127).t["5xWOXv"]), onPress: tmp9 };
-      Button = tmp(5282).Button;
-      intl2 = tmp(1127).intl;
+      obj9 = { variant: "primary", text: intl2.string(tmp(1126).t["5xWOXv"]), onPress: tmp9 };
+      Button = tmp(5594).Button;
+      intl2 = tmp(1126).intl;
       const tmp26 = closure_11(View, obj8);
       cResult[12] = tmp26;
       tmp24 = tmp26;
@@ -312,7 +312,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj10 = { border: "none", shadow: "none", children: closure_12(View, obj11) };
     obj11 = { style: cardContent, children: items1 };
     items1 = [tmp13, tmp16, tmp20, tmp24];
-    const Card = tmp(5918).Card;
+    const Card = tmp(5995).Card;
     cResult[13] = tmp4.cardContent;
     cResult[14] = tmp20;
     cResult[15] = tmp13;
@@ -344,7 +344,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj4;
   let obj6;
   let tmp = closure_13();
-  let obj = canSeePushNotificationNudge(11798);
+  let obj = canSeePushNotificationNudge(12054);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = react.useEffect(() => {
@@ -361,22 +361,22 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj3 = { border: "none", shadow: "none", children: closure_12(View, obj4) };
     obj4 = { style: tmp.cardContent, children: items1 };
     const obj5 = { style: tmp.iconCircle, children: closure_11(BellSlashIcon, obj6) };
-    Card = tmp2(5918).Card;
+    Card = tmp2(5995).Card;
     obj6 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-    BellSlashIcon = tmp2(9586).BellSlashIcon;
+    BellSlashIcon = tmp2(9813).BellSlashIcon;
     items1 = [closure_11(View, obj5), , , ];
-    const obj7 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(canSeePushNotificationNudge(1127).t.MUwOvc) };
-    const Text = tmp2(4833).Text;
-    intl = tmp2(1127).intl;
+    const obj7 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(canSeePushNotificationNudge(1126).t.MUwOvc) };
+    const Text = tmp2(4886).Text;
+    intl = tmp2(1126).intl;
     items1[1] = closure_11(Text, obj7);
-    const obj8 = { variant: "text-sm/medium", style: tmp.body, color: "text-muted", children: intl2.string(canSeePushNotificationNudge(1127).t.G4uKoe) };
-    const Text2 = tmp2(4833).Text;
-    intl2 = tmp2(1127).intl;
+    const obj8 = { variant: "text-sm/medium", style: tmp.body, color: "text-muted", children: intl2.string(canSeePushNotificationNudge(1126).t.G4uKoe) };
+    const Text2 = tmp2(4886).Text;
+    intl2 = tmp2(1126).intl;
     items1[2] = closure_11(Text2, obj8);
     const obj9 = { style: { alignSelf: "stretch" }, children: closure_11(Button, obj10) };
-    obj10 = { variant: "primary", text: intl3.string(canSeePushNotificationNudge(1127).t["5xWOXv"]), onPress: tmp6 };
-    Button = tmp2(5282).Button;
-    intl3 = tmp2(1127).intl;
+    obj10 = { variant: "primary", text: intl3.string(canSeePushNotificationNudge(1126).t["5xWOXv"]), onPress: tmp6 };
+    Button = tmp2(5594).Button;
+    intl3 = tmp2(1126).intl;
     items1[3] = closure_11(View, obj9);
     tmp7 = closure_11(View, obj2);
   }

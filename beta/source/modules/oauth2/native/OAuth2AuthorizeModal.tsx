@@ -1,15 +1,15 @@
-// Module ID: 8510
-// Function ID: 8511
+// Module ID: 8716
+// Function ID: 8717
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 8511, 1619, 4570, 5281, 1127, 8738, 5940, 5436, 4833, 8740, 6546, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8717, 1618, 4612, 5597, 1126, 8963, 6017, 5909, 4886, 8965, 6619, 2]
 
-// Module 8510 (OAuth2AuthorizeModal)
+// Module 8716 (OAuth2AuthorizeModal)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import spring from "spring" /* 5281 */;
+import nativeDefault from "native" /* 587 */;
+import spring from "spring" /* 5597 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,9 +39,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = require("react");
   const cResult = obj.c(38);
   const tmp4 = closure_8();
-  const tmp6 = sharedValue(8511)(arg0);
+  const tmp6 = sharedValue(8717)(arg0);
   _require = tmp6;
-  const top = sharedValue(1619)().top;
+  const top = sharedValue(1618)().top;
   const obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
   const fn = function o() {
@@ -85,11 +85,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[7] !== tmp6.backStep) {
       let stringResult;
       if (null != tmp6.backStep) {
-        const intl2 = tmp(1127).intl;
-        stringResult = intl2.string(tmp(1127).t["13/7kX"]);
+        const intl2 = tmp(1126).intl;
+        stringResult = intl2.string(tmp(1126).t["13/7kX"]);
       } else {
-        const intl = tmp(1127).intl;
-        stringResult = intl.string(tmp(1127).t.cpT0Cq);
+        const intl = tmp(1126).intl;
+        stringResult = intl.string(tmp(1126).t.cpT0Cq);
       }
       cResult[7] = tmp6.backStep;
       cResult[8] = stringResult;
@@ -145,8 +145,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return goBackOrCancelResult;
           }
         }
-        const obj5 = { color: sharedValue(588).colors.INTERACTIVE_TEXT_DEFAULT };
-        const ArrowSmallLeftIcon = tmp(8738).ArrowSmallLeftIcon;
+        const obj5 = { color: sharedValue(587).colors.INTERACTIVE_TEXT_DEFAULT };
+        const ArrowSmallLeftIcon = tmp(8963).ArrowSmallLeftIcon;
         tmp18 = closure_5(ArrowSmallLeftIcon, obj5);
       } else {
         class A {
@@ -159,8 +159,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return goBackOrCancelResult;
           }
         }
-        const obj6 = { color: sharedValue(588).colors.INTERACTIVE_TEXT_DEFAULT };
-        const XSmallIcon = tmp(5940).XSmallIcon;
+        const obj6 = { color: sharedValue(587).colors.INTERACTIVE_TEXT_DEFAULT };
+        const XSmallIcon = tmp(6017).XSmallIcon;
         tmp18 = closure_5(XSmallIcon, obj6);
       }
       cResult[11] = tmp6.backStep;
@@ -215,9 +215,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp2Result;
   const tmp = closure_8();
   const tmp2 = sharedValue;
-  const tmp4 = sharedValue(8511)(arg0);
+  const tmp4 = sharedValue(8717)(arg0);
   _require = tmp4;
-  const top = sharedValue(1619)().top;
+  const top = sharedValue(1618)().top;
   const obj = require("ReanimatedRexport");
   sharedValue = obj.useSharedValue(0);
   const fn = function u() {
@@ -250,11 +250,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
   const PressableOpacity = require("Pressables").PressableOpacity;
   if (null != tmp4.backStep) {
-    const intl2 = tmp5(1127).intl;
-    stringResult = intl2.string(tmp5(1127).t["13/7kX"]);
+    const intl2 = tmp5(1126).intl;
+    stringResult = intl2.string(tmp5(1126).t["13/7kX"]);
   } else {
-    const intl = tmp5(1127).intl;
-    stringResult = intl.string(tmp5(1127).t.cpT0Cq);
+    const intl = tmp5(1126).intl;
+    stringResult = intl.string(tmp5(1126).t.cpT0Cq);
   }
   const obj6 = {
     accessibilityRole: "button",
@@ -270,28 +270,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     children: tmp11Result
   };
   if (null != tmp4.backStep) {
-    const obj7 = { color: tmp2(588).colors.INTERACTIVE_TEXT_DEFAULT };
-    const ArrowSmallLeftIcon = tmp5(8738).ArrowSmallLeftIcon;
+    const obj7 = { color: tmp2(587).colors.INTERACTIVE_TEXT_DEFAULT };
+    const ArrowSmallLeftIcon = tmp5(8963).ArrowSmallLeftIcon;
     tmp11Result = tmp11(ArrowSmallLeftIcon, obj7);
   } else {
-    const obj8 = { color: tmp2(588).colors.INTERACTIVE_TEXT_DEFAULT };
-    const XSmallIcon = tmp5(5940).XSmallIcon;
+    const obj8 = { color: tmp2(587).colors.INTERACTIVE_TEXT_DEFAULT };
+    const XSmallIcon = tmp5(6017).XSmallIcon;
     tmp11Result = tmp11(XSmallIcon, obj8);
   }
   items2 = [closure_5(PressableOpacity, obj6), , ];
   const obj9 = { style: tmp.title, children: closure_5(Text, obj10) };
   obj10 = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: intl3.string(require("intl").t["y+/PE9"]) };
-  Text = tmp5(4833).Text;
-  intl3 = tmp5(1127).intl;
+  Text = tmp5(4886).Text;
+  intl3 = tmp5(1126).intl;
   items2[1] = closure_5(View, obj9);
   const obj11 = { style: items3 };
   items3 = [tmp.titleContainerBorder, animatedStyle];
-  items2[2] = closure_5(tmp2(4570).View, obj11);
+  items2[2] = closure_5(tmp2(4612).View, obj11);
   items4 = [closure_6(View, obj4), ];
   const obj12 = { bottom: true, style: tmp.contentContainer, children: closure_5(tmp2Result, obj13) };
-  const SafeAreaPaddingView = tmp5(6546).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp5(6619).SafeAreaPaddingView;
   obj13 = { onScroll: callback, centerContent: true };
-  tmp2Result = tmp2(8740);
+  tmp2Result = tmp2(8965);
   const merged = Object.assign(tmp4);
   items4[1] = closure_5(SafeAreaPaddingView, obj12);
   return closure_6(View, obj3);

@@ -1,0 +1,175 @@
+// Module ID: 16563
+// Function ID: 16564
+// Name: ConjureTemplateWizard
+// Dependencies: [1126, 3723, 6746, 2]
+// Exports: canLeaveConjureWizardQuestion, conjureTemplateStartMessage, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardNeedsServerStep, conjureWizardQuestions, conjureWizardServerCopy, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake
+
+// Module 16563 (ConjureTemplateWizard)
+import intl3 from "intl" /* 1126 */;
+import _modDef3723 from "module_3723" /* 3723 */;
+import ConjureUtils from "ConjureUtils" /* 6746 */;
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("modules/conjure/templates/ConjureTemplateWizard.tsx");
+
+export const conjureWizardNeedsServerStep = function conjureWizardNeedsServerStep(guildId, stateFromStores) {
+  let closure_0 = guildId;
+  return !stateFromStores.some((id) => id.id === guildId);
+};
+export const conjureTemplateWizardSteps = function conjureTemplateWizardSteps(result1, first1) {
+  let items1;
+  const obj = { length: Math.max(1, result1.length) };
+  const arr = Array.from(obj, (arg0, index) => ({ kind: "question", index }));
+  const tmp3 = first1;
+  if (tmp3) {
+    const items = ["about", "server"];
+    HermesBuiltin.arraySpread(items, arr, 2);
+    items1 = items;
+  } else {
+    items1 = ["about"];
+    HermesBuiltin.arraySpread(items1, arr, 1);
+  }
+  return items1;
+};
+export const canLeaveConjureWizardQuestion = function canLeaveConjureWizardQuestion(result1, arg1) {
+  let tmp = null != result1;
+  if (tmp) {
+    let tmp2 = true === result1.optional;
+    if (!tmp2) {
+      let str = arg1;
+      if (arg1 == null) {
+        str = "";
+      }
+      tmp2 = "" !== str.trim();
+    }
+    tmp = tmp2;
+  }
+  return tmp;
+};
+export const conjureTemplateStartMessage = function conjureTemplateStartMessage(name) {
+  const intl = intl3.intl;
+  const formatToPlainString = intl.formatToPlainString;
+  const obj = { templateName: name, locale: intl3.intl.currentLocale };
+  const prop = _modDef3723["/qSx7+"];
+  return formatToPlainString(prop, obj);
+};
+export const conjureTemplateWizardGuilds = function conjureTemplateWizardGuilds(guildsArray, VibegrationsTemplateWizardSheet) {
+  let closure_0 = VibegrationsTemplateWizardSheet;
+  const found = guildsArray.filter((item) => {
+    const obj = ConjureUtils;
+    return obj.canStartConjureProject(item, VibegrationsTemplateWizardSheet);
+  });
+  return found.sort((name, name2) => {
+    name = name.name;
+    return name.localeCompare(name2.name);
+  });
+};
+export const latestConjureIntake = function latestConjureIntake(messages) {
+  let tmp2;
+  let diff = messages.length - 1;
+  if (0 <= diff) {
+    while (true) {
+      tmp2 = messages[diff];
+      if ("assistant" === tmp2.role) {
+        if (null != tmp2.intake) {
+          break;
+        }
+      }
+      diff = diff - 1;
+    }
+    return tmp2.intake;
+  }
+  return null;
+};
+export const conjureWizardIntro = function conjureWizardIntro(stateFromStores1) {
+  let points;
+  let tmp = null;
+  if (null != stateFromStores1) {
+    let obj = {
+      lead: stateFromStores1.intro.lead,
+      points: points.map((title) => {
+          let obj3;
+          let str;
+          const obj = { title: title.title, icon: str };
+          if (null != title.subtext) {
+            obj3 = { subtext: title.subtext };
+            const obj2 = { subtext: title.subtext };
+          } else {
+            obj3 = {};
+          }
+          const merged = Object.assign(obj3);
+          str = title.icon;
+          if (str == null) {
+            str = "shield";
+          }
+          return obj;
+        })
+    };
+    points = stateFromStores1.intro.points;
+    tmp = obj;
+  }
+  return tmp;
+};
+export const conjureWizardServerCopy = function conjureWizardServerCopy(stateFromStores1) {
+  let intl;
+  let intl2;
+  let server;
+  if (stateFromStores1 != null) {
+    server = stateFromStores1.server;
+  }
+  if (server == null) {
+    const obj = { title: intl.string(_modDef3723.vcxYIA), hint: intl2.string(_modDef3723.auUHPZ) };
+    intl = intl3.intl;
+    intl2 = intl3.intl;
+    server = obj;
+  }
+  return server;
+};
+export const conjureWizardQuestions = function conjureWizardQuestions(stateFromStores1) {
+  let questions;
+  if (stateFromStores1 != null) {
+    questions = stateFromStores1.questions;
+  }
+  if (questions == null) {
+    questions = [];
+  }
+  return questions;
+};
+export const isConjureWizardComplete = function isConjureWizardComplete(result1, first3) {
+  let tmp = result1.length > 0 && result1.every((optional, index) => {
+    let tmp = true === optional.optional;
+    if (!tmp) {
+      let str = first3[index];
+      if (str == null) {
+        str = "";
+      }
+      tmp = "" !== str.trim();
+    }
+    return tmp;
+  });
+  return tmp;
+};
+export const formatConjureWizardAnswers = function formatConjureWizardAnswers(arr, arg1) {
+  let closure_0 = arg1;
+  const items = [];
+  const item = arr.forEach((optional, index) => {
+    let str = closure_0[index];
+    if (str == null) {
+      str = "";
+    }
+    const trimmed = str.trim();
+    const tmp = "" === trimmed && true === optional.optional;
+    if (!tmp) {
+      const push = items.push;
+      const sum = index + 1;
+      const title = optional.title;
+      const _HermesInternal = HermesInternal;
+      if (trimmed.includes("\n")) {
+        push(concat(sum, ". ", title, " \u2192"), "\"\"\"", trimmed, "\"\"\"");
+      } else {
+        push(concat(sum, ". ", title, " \u2192 ", trimmed));
+      }
+    }
+  });
+  return items.join("\n");
+};

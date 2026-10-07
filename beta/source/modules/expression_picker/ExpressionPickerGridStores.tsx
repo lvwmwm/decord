@@ -1,21 +1,21 @@
-// Module ID: 9645
-// Function ID: 9646
+// Module ID: 9871
+// Function ID: 9872
 // Name: ExpressionPickerGridStores
-// Dependencies: [1255, 4708, 1260, 2]
+// Dependencies: [1254, 4750, 1259, 2]
 // Exports: default
 
-// Module 9645 (ExpressionPickerGridStores)
-import react_native from "react-native" /* 1260 */;
-import module_1255_mod from "module_1255" /* 1255 */;
-import combine_mod from "combine" /* 4708 */;
+// Module 9871 (ExpressionPickerGridStores)
+import react_native from "react-native" /* 1259 */;
+import module_1254_mod from "module_1254" /* 1254 */;
+import combine_mod from "combine" /* 4750 */;
 import size from "module_2" /* 2 */;
 
-const f100864 = () => closure_1_2;
+const f101950 = () => closure_1_2;
 let closure_2 = Object.freeze({ inspectedExpressionPosition: { rowIndex: 0, columnIndex: 0 }, hasInteracted: false, activeCategoryIndex: 0, searchPlaceholder: null, bottomPosition: null, analyticsId: null });
-let module_1255 = module_1255_mod;
-module_1255 = module_1255.createWithEqualityFn();
+let module_1254 = module_1254_mod;
+module_1254 = module_1254.createWithEqualityFn();
 let combine = combine_mod;
-let withEqualityFnResult = module_1255(combine.subscribeWithSelector(f100864));
+let withEqualityFnResult = module_1254(combine.subscribeWithSelector(f101950));
 let store = {
   useStore: withEqualityFnResult,
   getState() {
@@ -71,10 +71,10 @@ let store = {
     return require.getState().analyticsId;
   }
 };
-module_1255 = module_1255_mod;
-module_1255 = module_1255.createWithEqualityFn();
+module_1254 = module_1254_mod;
+module_1254 = module_1254.createWithEqualityFn();
 combine = combine_mod;
-const withEqualityFn1Result = module_1255(combine.subscribeWithSelector(f100864));
+const withEqualityFn1Result = module_1254(combine.subscribeWithSelector(f101950));
 const store1 = {
   useStore: withEqualityFn1Result,
   getState() {
@@ -130,10 +130,10 @@ const store1 = {
     return require.getState().analyticsId;
   }
 };
-module_1255 = module_1255_mod;
-module_1255 = module_1255.createWithEqualityFn();
+module_1254 = module_1254_mod;
+module_1254 = module_1254.createWithEqualityFn();
 combine = combine_mod;
-const withEqualityFn2Result = module_1255(combine.subscribeWithSelector(f100864));
+const withEqualityFn2Result = module_1254(combine.subscribeWithSelector(f101950));
 const store2 = {
   useStore: withEqualityFn2Result,
   getState() {
@@ -189,10 +189,10 @@ const store2 = {
     return require.getState().analyticsId;
   }
 };
-module_1255 = module_1255_mod;
-module_1255 = module_1255.createWithEqualityFn();
+module_1254 = module_1254_mod;
+module_1254 = module_1254.createWithEqualityFn();
 combine = combine_mod;
-const withEqualityFn3Result = module_1255(combine.subscribeWithSelector(f100864));
+const withEqualityFn3Result = module_1254(combine.subscribeWithSelector(f101950));
 let c0 = withEqualityFn3Result;
 const store3 = {
   useStore: withEqualityFn3Result,
@@ -252,10 +252,10 @@ const store3 = {
 const result = size.fileFinishedImporting("modules/expression_picker/ExpressionPickerGridStores.tsx");
 
 export default function createStore() {
-  let obj = module_1255;
+  let obj = module_1254;
   const withEqualityFn = obj.createWithEqualityFn();
   let obj2 = combine;
-  const withEqualityFnResult = withEqualityFn(obj2.subscribeWithSelector(f100864));
+  const withEqualityFnResult = withEqualityFn(obj2.subscribeWithSelector(f101950));
   require = withEqualityFnResult;
   const store = {
     useStore: withEqualityFnResult,

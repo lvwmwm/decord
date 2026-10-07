@@ -1,33 +1,33 @@
-// Module ID: 4876
-// Function ID: 4877
+// Module ID: 4929
+// Function ID: 4930
 // Name: StreamRTCConnectionStore
-// Dependencies: [2006, 502, 1999, 4877, 4860, 1086, 4879, 38, 4881, 12, 4889, 7161, 585, 4892, 1370, 504, 13347, 2]
+// Dependencies: [2006, 502, 1999, 4930, 4913, 1085, 4932, 38, 4934, 12, 4942, 7228, 584, 4945, 1369, 504, 13612, 2]
 
-// Module 4876 (StreamRTCConnectionStore)
+// Module 4929 (StreamRTCConnectionStore)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import Constants2 from "Constants" /* 4879 */;
-import StreamRTCConnectionDefault from "StreamRTCConnection" /* 4881 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4889 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7161 */;
-import canSpectateDefault from "canSpectate" /* 13347 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import Constants2 from "Constants" /* 4932 */;
+import StreamRTCConnectionDefault from "StreamRTCConnection" /* 4934 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7228 */;
+import canSpectateDefault from "canSpectate" /* 13612 */;
 import RunningGameStore from "RunningGameStore" /* 2006 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import Constants from "Constants" /* 1086 */;
-import Dispatcher from "Dispatcher" /* 585 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import Constants from "Constants" /* 1085 */;
+import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let StreamLayouts;
 let c9;
 let obj2;
 let tmp;
-const BaseConnectionEvent = tmp(4892);
-const f88648 = (destroy, arg1) => {
+const BaseConnectionEvent = tmp(4945);
+const f89714 = (destroy, arg1) => {
   let str = "receiver-disconnect";
   destroy = destroy.destroy;
   if (destroy.isOwner) {
@@ -204,12 +204,12 @@ if (MediaEngineStore.isSupported()) {
     CONNECTION_OPEN: function handleConnectionOpen(sessionId) {
         sessionId = sessionId.sessionId;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f88648);
+        const item = arr.forEach(closure_18, f89714);
       },
     CONNECTION_CLOSED: function handleConnectionClosed() {
         let c3 = null;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f88648);
+        const item = arr.forEach(closure_18, f89714);
       },
     RTC_CONNECTION_STATE: handleRtcAction,
     RTC_CONNECTION_PING: handleRtcAction,
@@ -312,7 +312,7 @@ if (MediaEngineStore.isSupported()) {
     STREAM_STOP: function handleStreamStop(appContext) {
         appContext = appContext.appContext;
         const streamKey = appContext.streamKey;
-        closure_11[streamKey] = { appContext, analyticsLocations: "r" };
+        closure_11[streamKey] = { appContext, analyticsLocations: "Array" };
         const arr = _modDef12;
         const item = arr.forEach(closure_18, (analyticsContext) => {
           analyticsContext = analyticsContext.analyticsContext;
@@ -357,7 +357,7 @@ if (MediaEngineStore.isSupported()) {
           }
           const obj3 = { streamRegion: region, streamApplication: closure_12[streamKey], streamSourceType: str2, actionContext: appContext, numViewers: num, goLiveModalDurationMs: closure_15[streamKey], analyticsLocations };
           str2 = "unknown";
-          const StreamRTCAnalyticsContext = tmp2(4881).StreamRTCAnalyticsContext;
+          const StreamRTCAnalyticsContext = tmp2(4934).StreamRTCAnalyticsContext;
           if (null != closure_14[streamKey]) {
             if (!PlatformUtils.isPlatformEmbedded) {
               let name;

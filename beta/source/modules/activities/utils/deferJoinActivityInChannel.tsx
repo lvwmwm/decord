@@ -1,11 +1,11 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12733
+// Function ID: 12734
 // Name: deferJoinActivityInChannel
-// Dependencies: [585, 2]
+// Dependencies: [584, 2]
 // Exports: default
 
-// Module 12488 (deferJoinActivityInChannel)
-import DispatcherDefault from "Dispatcher" /* 585 */;
+// Module 12733 (deferJoinActivityInChannel)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/deferJoinActivityInChannel.tsx");

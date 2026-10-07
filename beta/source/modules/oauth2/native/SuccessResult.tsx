@@ -1,23 +1,23 @@
-// Module ID: 8508
-// Function ID: 8509
-// Dependencies: [19, 17, 2051, 4472, 2102, 1086, 1490, 21, 4837, 588, 558, 576, 7784, 1127, 5040, 6761, 1253, 504, 4801, 4703, 1617, 8509, 4833, 5282, 6546, 2]
+// Module ID: 8714
+// Function ID: 8715
+// Dependencies: [19, 17, 2051, 4509, 2103, 1085, 1489, 21, 4890, 587, 558, 576, 8008, 1126, 5093, 6845, 1252, 504, 4854, 4745, 1616, 8715, 4886, 5594, 6619, 2]
 
-// Module 8508
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import transitionToGuild2 from "transitionToGuild" /* 6761 */;
+// Module 8714
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import transitionToGuild2 from "transitionToGuild" /* 6845 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import Constants from "Constants" /* 1086 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -426,7 +426,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             }
             transitionToGuild(id1);
             let id2;
-            const track = tmp10(1253).track;
+            const track = tmp10(1252).track;
             const OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED = authStore.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED;
             AnalyticsUtilsDefault;
             if (application != null) {
@@ -685,7 +685,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           }
           transitionToGuild(id1);
           let id2;
-          const track = tmp10(1253).track;
+          const track = tmp10(1252).track;
           const OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED = authStore.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED;
           AnalyticsUtilsDefault;
           if (application != null) {
@@ -734,7 +734,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
         transitionToGuild(id1);
         let id2;
-        const track = tmp10(1253).track;
+        const track = tmp10(1252).track;
         const OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED = authStore.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED;
         AnalyticsUtilsDefault;
         if (application != null) {
@@ -834,7 +834,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       transitionToGuild(id1);
       let id2;
-      const track = tmp10(1253).track;
+      const track = tmp10(1252).track;
       const OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED = authStore.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED;
       AnalyticsUtilsDefault;
       if (application != null) {

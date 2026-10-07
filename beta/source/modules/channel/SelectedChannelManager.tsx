@@ -1,18 +1,18 @@
-// Module ID: 17255
-// Function ID: 17256
+// Module ID: 17622
+// Function ID: 17623
 // Name: SelectedChannelManager
-// Dependencies: [1999, 2102, 4657, 1086, 6540, 6761, 5724, 1113, 585, 2]
+// Dependencies: [1999, 2103, 4699, 1085, 6613, 6845, 5568, 1112, 584, 2]
 
-// Module 17255 (SelectedChannelManager)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import router_utils from "router_utils" /* 1113 */;
-import SelectedChannelStore2 from "SelectedChannelStore" /* 2102 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
-import transitionToGuild from "transitionToGuild" /* 6761 */;
+// Module 17622 (SelectedChannelManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import router_utils from "router_utils" /* 1112 */;
+import SelectedChannelStore2 from "SelectedChannelStore" /* 2103 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
+import transitionToGuild from "transitionToGuild" /* 6845 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import Constants from "Constants" /* 1086 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import Constants from "Constants" /* 1085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 const SelectedChannelStore = SelectedChannelStore2;

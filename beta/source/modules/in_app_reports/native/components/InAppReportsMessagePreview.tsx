@@ -1,20 +1,20 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8302
+// Function ID: 8303
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 4837, 588, 7378, 558, 576, 4685, 1127, 4833, 8109, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 7591, 558, 576, 4727, 1126, 4886, 8303, 2]
 
-// Module 8108 (InAppReportsMessagePreview)
+// Module 8302 (InAppReportsMessagePreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import RowGeneratorDefault from "RowGenerator" /* 7378 */;
-import ChatItemDefault from "ChatItem" /* 8109 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import RowGeneratorDefault from "RowGenerator" /* 7591 */;
+import ChatItemDefault from "ChatItem" /* 8303 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }
   ({ container, title } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.iouM3a);
     cResult[2] = stringResult;
     tmp7 = stringResult;

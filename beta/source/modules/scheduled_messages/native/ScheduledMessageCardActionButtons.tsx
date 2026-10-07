@@ -1,19 +1,19 @@
-// Module ID: 11591
-// Function ID: 11592
+// Module ID: 11846
+// Function ID: 11847
 // Name: ScheduledMessageCardActionButtons
-// Dependencies: [109, 21, 558, 576, 1127, 4778, 11585, 9829, 4796, 6026, 7362, 7365, 7366, 2]
+// Dependencies: [109, 21, 558, 576, 1126, 4841, 11840, 10058, 4849, 4797, 7575, 7578, 7579, 2]
 
-// Module 11591 (ScheduledMessageCardActionButtons)
+// Module 11846 (ScheduledMessageCardActionButtons)
 import Fragment from "Fragment" /* 21 */;
-import intl5 from "intl" /* 1127 */;
-import SendMessageIcon from "SendMessageIcon" /* 4778 */;
-import ClockIcon from "ClockIcon" /* 4796 */;
-import CircleXIcon from "CircleXIcon" /* 6026 */;
-import IconButton2 from "IconButton" /* 7362 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7365 */;
-import ContextMenu from "ContextMenu" /* 7366 */;
-import PencilIcon from "PencilIcon" /* 9829 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 11585 */;
+import intl5 from "intl" /* 1126 */;
+import CircleXIcon from "CircleXIcon" /* 4797 */;
+import SendMessageIcon from "SendMessageIcon" /* 4841 */;
+import ClockIcon from "ClockIcon" /* 4849 */;
+import IconButton2 from "IconButton" /* 7575 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7578 */;
+import ContextMenu from "ContextMenu" /* 7579 */;
+import PencilIcon from "PencilIcon" /* 10058 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 11840 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,8 +37,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
   scheduledMessage = scheduledMessage.scheduledMessage;
   const isPendingRemoval = scheduledMessage.isPendingRemoval;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1127).intl;
-    const stringResult = intl.string(tmp(1127).t.JLba51);
+    let intl = tmp(1126).intl;
+    const stringResult = intl.string(tmp(1126).t.JLba51);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
   if (cResult[1] !== scheduledMessage) {
     const obj2 = {
       label: first,
-      IconComponent: tmp(4778).SendMessageIcon,
+      IconComponent: tmp(4841).SendMessageIcon,
       action() {
           const obj = ScheduledMessagesUtils;
           return obj.sendScheduledMessageNow(scheduledMessage.scheduledMessageId);
@@ -60,8 +60,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
     tmp6 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(tmp(1127).t.ZXE1s4);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(tmp(1126).t.ZXE1s4);
     cResult[3] = stringResult1;
     tmp7 = stringResult1;
   } else {
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
   if (cResult[4] !== scheduledMessage) {
     const obj3 = {
       label: tmp7,
-      IconComponent: tmp(9829).PencilIcon,
+      IconComponent: tmp(10058).PencilIcon,
       action() {
           const obj = ScheduledMessagesUtils;
           return obj.openScheduledMessageEditContentModal(scheduledMessage);
@@ -83,8 +83,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
     tmp9 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
-    const stringResult2 = intl3.string(tmp(1127).t.SBcdAN);
+    const intl3 = tmp(1126).intl;
+    const stringResult2 = intl3.string(tmp(1126).t.SBcdAN);
     cResult[6] = stringResult2;
     tmp10 = stringResult2;
   } else {
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
   if (cResult[7] !== scheduledMessage) {
     const obj4 = {
       label: tmp10,
-      IconComponent: tmp(4796).ClockIcon,
+      IconComponent: tmp(4849).ClockIcon,
       action() {
           const obj = ScheduledMessagesUtils;
           return obj.openRescheduleMessageActionSheet(scheduledMessage.scheduledMessageId, scheduledMessage.sendAtTimestamp, scheduledMessage.createArgs.channelId);
@@ -106,8 +106,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
     tmp12 = cResult[8];
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1127).intl;
-    const stringResult3 = intl4.string(tmp(1127).t.O3sL8F);
+    const intl4 = tmp(1126).intl;
+    const stringResult3 = intl4.string(tmp(1126).t.O3sL8F);
     cResult[9] = stringResult3;
     tmp13 = stringResult3;
   } else {
@@ -116,7 +116,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
   if (cResult[10] !== scheduledMessage) {
     const obj5 = {
       label: tmp13,
-      IconComponent: tmp(6026).CircleXIcon,
+      IconComponent: tmp(4797).CircleXIcon,
       action() {
           const obj = ScheduledMessagesUtils;
           return obj.cancelScheduledMessage(scheduledMessage.scheduledMessageId);
@@ -159,7 +159,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
           }
           return tmp18;
         }
-        const tmp20 = jsx(tmp(7366).ContextMenu, { items: tmp16, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: tmp17 });
+        const tmp20 = jsx(tmp(7579).ContextMenu, { items: tmp16, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: tmp17 });
         cResult[19] = tmp16;
         cResult[20] = tmp17;
         cResult[21] = tmp20;

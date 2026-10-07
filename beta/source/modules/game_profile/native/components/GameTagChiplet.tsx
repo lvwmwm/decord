@@ -1,17 +1,17 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 17299
+// Function ID: 17300
 // Name: GameTagChiplet
-// Dependencies: [19, 17, 21, 4837, 558, 576, 8125, 8126, 9171, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 8319, 8320, 9395, 2]
 
-// Module 16939 (GameTagChiplet)
+// Module 17299 (GameTagChiplet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8125 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8126 */;
-import GuildTag from "GuildTag" /* 9171 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8319 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8320 */;
+import GuildTag from "GuildTag" /* 9395 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

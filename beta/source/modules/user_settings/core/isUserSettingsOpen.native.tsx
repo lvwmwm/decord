@@ -1,10 +1,10 @@
-// Module ID: 13305
-// Function ID: 13306
+// Module ID: 13571
+// Function ID: 13572
 // Name: isUserSettingsOpen
-// Dependencies: [32, 19, 4695, 558, 576, 2]
+// Dependencies: [32, 19, 4737, 558, 576, 2]
 
-// Module 13305 (isUserSettingsOpen)
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
+// Module 13571 (isUserSettingsOpen)
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f113828 = (name) => {
+const f115028 = (name) => {
   let tmp = "settings" === name.name;
   if (!tmp) {
     const state = name.state;
@@ -23,7 +23,7 @@ const f113828 = (name) => {
     let someResult = null != routes1;
     if (someResult) {
       const routes = state.routes;
-      someResult = routes.some(f113828);
+      someResult = routes.some(f115028);
     }
     tmp = someResult;
   }
@@ -43,7 +43,7 @@ function isUserSettingsOpen() {
     let someResult = null != routes1;
     if (someResult) {
       const routes = rootState.routes;
-      someResult = routes.some(f113828);
+      someResult = routes.some(f115028);
     }
     tmp2 = someResult;
   }
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             let someResult = null != routes1;
             if (someResult) {
               const routes = rootState.routes;
-              someResult = routes.some(f113828);
+              someResult = routes.some(f115028);
             }
             rootNavigationRef(someResult);
           }
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let someResult = null != routes1;
         if (someResult) {
           let routes = rootState.routes;
-          someResult = routes.some(f113828);
+          someResult = routes.some(f115028);
         }
         _require(someResult);
       }

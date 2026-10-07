@@ -1,18 +1,18 @@
-// Module ID: 11340
-// Function ID: 11341
+// Module ID: 11596
+// Function ID: 11597
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 1986, 1086, 21, 4837, 558, 576, 4554, 2027, 4570, 504, 1386, 4838, 1403, 6552, 2]
+// Dependencies: [32, 19, 1986, 1085, 21, 4890, 558, 576, 4596, 2028, 4612, 504, 1385, 4891, 1402, 6625, 2]
 
-// Module 11340 (CustomTypingIndicatorAnimatedEmoji)
+// Module 11596 (CustomTypingIndicatorAnimatedEmoji)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import user from "user" /* 1386 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
+import Constants from "Constants" /* 1085 */;
+import user from "user" /* 1385 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -197,7 +197,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
               num6 = -1;
               set3Result = set3(withDelay3(result3, withRepeat3(withSequence2(withTimingResult2, withTimingResult3, tmp9Result14.withTiming(0, obj18)), -1)));
             }
-            return () => { /* body not rendered: F139892 */ };
+            return () => { /* body not rendered: F141516 */ };
           }
         }
       }

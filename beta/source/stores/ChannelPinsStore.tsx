@@ -1,21 +1,21 @@
-// Module ID: 11041
-// Function ID: 11042
+// Module ID: 11299
+// Function ID: 11300
 // Name: ChannelPinsStore
-// Dependencies: [2115, 2051, 2111, 2073, 5057, 4482, 1378, 5059, 12, 7024, 504, 585, 2]
+// Dependencies: [2116, 2051, 2112, 2074, 5110, 4519, 1377, 5112, 12, 7109, 504, 584, 2]
 
-// Module 11041 (ChannelPinsStore)
+// Module 11299 (ChannelPinsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5059 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7024 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7109 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import MessageStore from "MessageStore" /* 5057 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 function handleChannelDelete(arg0) {

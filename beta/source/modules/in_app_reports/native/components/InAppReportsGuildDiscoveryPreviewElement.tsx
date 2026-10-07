@@ -1,23 +1,23 @@
-// Module ID: 12462
-// Function ID: 12463
+// Module ID: 12709
+// Function ID: 12710
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4826, 21, 4837, 588, 558, 576, 6397, 504, 4685, 1127, 4833, 2065, 5893, 2]
+// Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 6469, 504, 4727, 1126, 4886, 2066, 5971, 2]
 
-// Module 12462 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 12709 (InAppReportsGuildDiscoveryPreviewElement)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2065 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import GuildIconDefault from "GuildIcon" /* 5893 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6397 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import GuildIconDefault from "GuildIcon" /* 5971 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6469 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const _Symbol = Symbol;
     const variant = typeConsolidationEyebrow.variant;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t.nTe4HC);
       cResult[7] = stringResult;
       tmp14 = stringResult;

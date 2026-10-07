@@ -1,29 +1,29 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 16274
+// Function ID: 16275
 // Name: GuildsBarActivityIndicator
-// Dependencies: [19, 21, 4837, 588, 558, 576, 4535, 1189, 5898, 9053, 9051, 5412, 8971, 8344, 15972, 10976, 15973, 5416, 15974, 5375, 5341, 15967, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 4580, 1188, 5976, 9275, 9273, 5881, 9193, 8544, 16275, 11234, 16276, 5885, 16277, 5890, 5817, 16270, 2]
 
-// Module 15971 (GuildsBarActivityIndicator)
+// Module 16274 (GuildsBarActivityIndicator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useToken from "useToken" /* 4535 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5341 */;
-import AppsIcon from "AppsIcon" /* 5375 */;
-import StageIcon from "StageIcon" /* 5412 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5416 */;
-import NativeViewDefault from "NativeView" /* 5898 */;
-import ScreenIcon from "ScreenIcon" /* 8344 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8971 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9051 */;
-import CalendarIcon from "CalendarIcon" /* 9053 */;
-import VideoIcon from "VideoIcon" /* 10976 */;
-import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 15967 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15972 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15973 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15974 */;
+import nativeDefault from "native" /* 587 */;
+import useToken from "useToken" /* 4580 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5817 */;
+import StageIcon from "StageIcon" /* 5881 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5885 */;
+import AppsIcon from "AppsIcon" /* 5890 */;
+import NativeViewDefault from "NativeView" /* 5976 */;
+import ScreenIcon from "ScreenIcon" /* 8544 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9193 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9273 */;
+import CalendarIcon from "CalendarIcon" /* 9275 */;
+import VideoIcon from "VideoIcon" /* 11234 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 16270 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16275 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 16276 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 16277 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let size;
 let size1;
 let size2;
 let tmp;
-const native = tmp(1189);
+const native = tmp(1188);
 function getMediaIcon(activeEvent) {
   let tmp6;
   if (activeEvent.activeEvent) {
@@ -133,7 +133,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
         }
       }
       if (null != IconComponent) {
-        const colors = tmp5(588).colors;
+        const colors = tmp5(587).colors;
         tmp12Result = <IconComponent color={isCurrentUserConnected ? colors.WHITE : colors.ICON_DEFAULT} size="xxs" style={tmp4.activityIcon} />;
       } else {
         const obj6 = { source, color: WHITE, style: tmp4.activityIcon };
@@ -141,7 +141,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
         const Icon = native.Icon;
         const tmp12 = jsx;
         if (isCurrentUserConnected) {
-          WHITE = tmp5(588).unsafe_rawColors.WHITE;
+          WHITE = tmp5(587).unsafe_rawColors.WHITE;
         }
         tmp12Result = tmp12(Icon, obj6);
       }
@@ -184,14 +184,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   items1[1] = prop;
   if (null != IconComponent) {
-    const colors = tmp4(588).colors;
+    const colors = tmp4(587).colors;
     const obj4 = { color: isCurrentUserConnected ? colors.WHITE : colors.ICON_DEFAULT, size: "xxs", style: tmp.activityIcon };
     let tmp5Result = tmp5(IconComponent, obj4);
   } else {
     const obj5 = { source, color: WHITE, style: tmp.activityIcon };
     const Icon = native.Icon;
     if (isCurrentUserConnected) {
-      WHITE = tmp4(588).unsafe_rawColors.WHITE;
+      WHITE = tmp4(587).unsafe_rawColors.WHITE;
     }
     tmp5Result = tmp5(Icon, obj5);
   }

@@ -1,11 +1,11 @@
-// Module ID: 6550
-// Function ID: 6551
+// Module ID: 6623
+// Function ID: 6624
 // Name: GuildRoleMemberCountStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 6550 (GuildRoleMemberCountStore)
+// Module 6623 (GuildRoleMemberCountStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const React = {};

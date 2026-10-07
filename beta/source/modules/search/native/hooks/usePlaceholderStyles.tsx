@@ -1,16 +1,16 @@
-// Module ID: 16464
-// Function ID: 16465
+// Module ID: 16816
+// Function ID: 16817
 // Name: usePlaceholderStyles
-// Dependencies: [4826, 7307, 558, 576, 1485, 504, 4570, 4838, 1189, 2]
+// Dependencies: [4879, 7513, 558, 576, 1484, 504, 4612, 4891, 1188, 2]
 
-// Module 16464 (usePlaceholderStyles)
+// Module 16816 (usePlaceholderStyles)
 import react from "react" /* 576 */;
-import native from "native" /* 1189 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
-import SearchConstants from "SearchConstants" /* 7307 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import native from "native" /* 1188 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
+import SearchConstants from "SearchConstants" /* 7513 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     return tmp5;
   };
   const tmpResult2 = require("ReanimatedRexport");
-  let obj2 = { useReducedMotion: stateFromStores, visible, withRepeat: tmp(4570).withRepeat, withSequence: tmp(4570).withSequence, withTiming: tmp(4838).withTiming, STANDARD_EASING: tmp(1189).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION };
+  let obj2 = { useReducedMotion: stateFromStores, visible, withRepeat: tmp(4612).withRepeat, withSequence: tmp(4612).withSequence, withTiming: tmp(4891).withTiming, STANDARD_EASING: tmp(1188).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION };
   fn2.__closure = obj2;
   fn2.__workletHash = 9750536800906;
   fn2.__initData = __initData;

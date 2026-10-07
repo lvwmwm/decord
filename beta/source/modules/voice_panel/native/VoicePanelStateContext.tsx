@@ -1,18 +1,18 @@
-// Module ID: 11647
-// Function ID: 11648
+// Module ID: 11901
+// Function ID: 11902
 // Name: VoicePanelStateContext
-// Dependencies: [19, 11648, 11646, 11649, 6496, 11650, 1621, 11654, 2]
+// Dependencies: [19, 11902, 11900, 11903, 6571, 11904, 1620, 11908, 2]
 
-// Module 11647 (VoicePanelStateContext)
-import SafeAreaConstants from "SafeAreaConstants" /* 1621 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11649 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11650 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11654 */;
+// Module 11901 (VoicePanelStateContext)
+import SafeAreaConstants from "SafeAreaConstants" /* 1620 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11903 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11904 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11908 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11646 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6496 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6571 */;
 import size from "module_2" /* 2 */;
 
 let CONTROLS_HEIGHT;
@@ -33,7 +33,7 @@ const obj = {
     const error = new Error("VoicePanelContextType.Provider.dismissDrawer: not called within a context provider");
     throw error;
   },
-  dismissToPIPGestureRef: { current: "call" },
+  dismissToPIPGestureRef: { current: "r" },
   dragScrolling: ReanimatedHelperTypes.createFakeSharedValue(false),
   focused: ReanimatedHelperTypes.createFakeSharedValue(null),
   generateStateLocker() {

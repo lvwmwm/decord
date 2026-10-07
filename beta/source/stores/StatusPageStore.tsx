@@ -1,12 +1,12 @@
-// Module ID: 13302
-// Function ID: 13303
+// Module ID: 13567
+// Function ID: 13568
 // Name: StatusPageStore
-// Dependencies: [510, 504, 585, 2]
+// Dependencies: [510, 504, 584, 2]
 
-// Module 13302 (StatusPageStore)
+// Module 13567 (StatusPageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const MaintenanceStore_str = "MaintenanceStore";

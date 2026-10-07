@@ -1,13 +1,13 @@
-// Module ID: 1384
-// Function ID: 1385
+// Module ID: 1383
+// Function ID: 1384
 // Name: PerksStateUtils
-// Dependencies: [32, 1385, 1098, 1386, 2]
+// Dependencies: [32, 1384, 1097, 1385, 2]
 // Exports: getPerkConfig, hasPerk, parseServerPerks
 
-// Module 1384 (PerksStateUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
-import types from "types" /* 1385 */;
-import user from "user" /* 1386 */;
+// Module 1383 (PerksStateUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import types from "types" /* 1384 */;
+import user from "user" /* 1385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

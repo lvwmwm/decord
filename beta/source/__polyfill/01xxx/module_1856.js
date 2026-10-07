@@ -1,51 +1,153 @@
 // Module ID: 1856
 // Function ID: 1857
-// Dependencies: []
-// Exports: debounce, scrollDistanceWithRespectToSnapPoints
+// Dependencies: [17, 1643, 1837]
+// Exports: useSmoothKeyboardHandler
 
 // Module 1856
-let __initData = { code: "function pnpm_utilsTs2(...args){const{value,wait,worklet}=this.__closure;const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);}" };
-let fn = function t(worklet) {
-  __initData = worklet;
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
-  }
-  const obj = { time: 0 };
-  const fn = function o() {
-    const items = [...arguments];
-    const timestamp = Date.now();
-    if (timestamp - obj.time < num) {
-      obj.time = timestamp;
-    } else {
-      obj.time = timestamp;
-      const items1 = [];
-      HermesBuiltin.arraySpread(items1, items, 0);
-      return HermesBuiltin.apply(closure_0, items1, undefined);
+import react_native from "react-native" /* 17 */;
+import _mod1643 from "module_1643" /* 1643 */;
+
+const require = globalThis.__r;
+let _require;
+
+let Easing;
+let tmp2 = react_native.Platform.Version >= 30 || false;
+const value = tmp2;
+let obj = { duration: 250, easing: Easing.bezier(0.19919472913616398, 0.010644531250000006, 0.27920937042459737, 0.91025390625) };
+Easing = _mod1643.Easing;
+let closure_4 = { code: "function pnpm_useSmoothKeyboardHandlerTs1(){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,persistedHeight,TELEGRAM_ANDROID_TIMING_CONFIG,target,animatedKeyboardHeight}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){return;}if(persistedHeight.value===0){return;}const event={duration:TELEGRAM_ANDROID_TIMING_CONFIG.duration,target:target.value,height:animatedKeyboardHeight.value,progress:animatedKeyboardHeight.value/persistedHeight.value};return event;}" };
+const __initData = { code: "function pnpm_useSmoothKeyboardHandlerTs2(evt){const{handler,height,persistedHeight}=this.__closure;var _handler$onMove,_handler;if(!evt){return;}(_handler$onMove=(_handler=handler).onMove)===null||_handler$onMove===void 0||_handler$onMove.call(_handler,evt);if(evt.height===height.value){var _handler$onEnd,_handler2;(_handler$onEnd=(_handler2=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler2,evt);persistedHeight.value=height.value;}}" };
+const __initData2 = { code: "function pnpm_useSmoothKeyboardHandlerTs3(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,persistedHeight,handler,target,height,animatedKeyboardHeight,withTiming,TELEGRAM_ANDROID_TIMING_CONFIG}=this.__closure;var _handler$onStart2,_handler3;if(!IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS&&e.height===persistedHeight.value){var _handler$onStart,_handler,_handler$onEnd,_handler2;(_handler$onStart=(_handler=handler).onStart)===null||_handler$onStart===void 0||_handler$onStart.call(_handler,e);(_handler$onEnd=(_handler2=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler2,e);return;}target.value=e.target;height.value=e.height;if(e.height>0){persistedHeight.value=e.height;}if(!IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){animatedKeyboardHeight.value=withTiming(e.height,TELEGRAM_ANDROID_TIMING_CONFIG);}(_handler$onStart2=(_handler3=handler).onStart)===null||_handler$onStart2===void 0||_handler$onStart2.call(_handler3,{...e,duration:IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS?e.duration:TELEGRAM_ANDROID_TIMING_CONFIG.duration});}" };
+const __initData3 = { code: "function pnpm_useSmoothKeyboardHandlerTs4(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,handler}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){var _handler$onMove,_handler;(_handler$onMove=(_handler=handler).onMove)===null||_handler$onMove===void 0||_handler$onMove.call(_handler,e);}}" };
+const __initData4 = { code: "function pnpm_useSmoothKeyboardHandlerTs5(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,handler}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){var _handler$onEnd,_handler;(_handler$onEnd=(_handler=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler,e);}}" };
+
+export const useSmoothKeyboardHandler = (handler, items) => {
+  let fn2;
+  let sharedValue;
+  _require = handler;
+  let tmp2 = _require;
+  let tmp3 = sharedValue;
+  obj = require("module_1643");
+  sharedValue = obj.useSharedValue(-1);
+  let obj2 = require("module_1643");
+  const sharedValue1 = obj2.useSharedValue(0);
+  const obj3 = require("module_1643");
+  const sharedValue2 = obj3.useSharedValue(0);
+  const obj4 = require("module_1643");
+  const sharedValue3 = obj4.useSharedValue(0);
+  const fn = function s() {
+    const tmp = React2;
+    if (!tmp) {
+      if (0 !== sharedValue2.value) {
+        obj = { duration: obj.duration, target: sharedValue.value, height: sharedValue3.value, progress: sharedValue3.value / iter.value };
+        return obj;
+      }
     }
   };
-  fn.__closure = { value: obj, wait: num, worklet };
-  fn.__workletHash = 8768898864142;
-  fn.__initData = __initData;
-  return fn;
-};
-fn.__closure = {};
-fn.__workletHash = 1678132827161;
-fn.__initData = { code: "function pnpm_utilsTs1(worklet,wait=0){const value={time:0};return function(...args){\"worklet\";const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);};}" };
-const fn2 = function n(arg0, arr) {
-  let closure_0 = arg0;
-  let found;
-  if (arr) {
-    found = arr.find((item) => item >= closure_0);
+  const obj5 = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, persistedHeight: sharedValue2, TELEGRAM_ANDROID_TIMING_CONFIG: sharedValue2, target: sharedValue, animatedKeyboardHeight: sharedValue3 };
+  fn.__closure = obj5;
+  fn.__workletHash = 4217597553195;
+  fn.__initData = sharedValue3;
+  const tmp8 = require("module_1643");
+  class I {
+    constructor(height) {
+      const tmp = height;
+      if (tmp) {
+        const onMove = handler.onMove;
+        const tmp2 = handler;
+        if (onMove != null) {
+          onMove(height);
+        }
+        if (height.height === sharedValue1.value) {
+          const onEnd = tmp2.onEnd;
+          if (onEnd != null) {
+            onEnd(height);
+          }
+          sharedValue2.value = iter.value;
+        }
+      }
+    }
   }
-  if (found == null) {
-    found = arg0;
+  I.__closure = { handler, height: sharedValue1, persistedHeight: sharedValue2 };
+  I.__workletHash = 1186520959152;
+  I.__initData = __initData;
+  let tmp11 = items;
+  const useAnimatedReaction = tmp8.useAnimatedReaction;
+  if (items) {
+    items = [];
+    HermesBuiltin.arraySpread(items, items, 0);
+    tmp11 = items;
   }
-  return found;
+  const animatedReaction = useAnimatedReaction(fn, I, tmp11);
+  const obj6 = { onStart: fn2, onMove: R, onEnd: O };
+  fn2 = function v(height) {
+    let duration;
+    if (!React2) {
+      if (height.height === sharedValue2.value) {
+        const onStart = handler.onStart;
+        const tmp3 = handler;
+        if (onStart != null) {
+          onStart(height);
+        }
+        const onEnd = tmp3.onEnd;
+        if (onEnd != null) {
+          onEnd(height);
+        }
+      }
+    }
+    sharedValue.value = height.target;
+    sharedValue1.value = height.height;
+    if (height.height > 0) {
+      sharedValue2.value = height.height;
+    }
+    if (!React2) {
+      obj = _mod1643;
+      sharedValue3.value = obj.withTiming(height.height, obj);
+    }
+    const onStart2 = handler.onStart;
+    if (onStart2 != null) {
+      const obj2 = { duration };
+      const merged = Object.assign(height);
+      if (React2) {
+        duration = height.duration;
+      } else {
+        duration = obj.duration;
+      }
+      onStart2(obj2);
+    }
+  };
+  const useKeyboardHandler = tmp2(tmp3[2]).useKeyboardHandler;
+  fn2.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, persistedHeight: sharedValue2, handler, target: sharedValue, height: sharedValue1, animatedKeyboardHeight: sharedValue3, withTiming: tmp2(tmp3[1]).withTiming, TELEGRAM_ANDROID_TIMING_CONFIG: sharedValue2 };
+  fn2.__workletHash = 2049629670138;
+  fn2.__initData = __initData2;
+  ({ IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, persistedHeight: sharedValue2, handler, target: sharedValue, height: sharedValue1, animatedKeyboardHeight: sharedValue3, withTiming: tmp2(tmp3[1]).withTiming, TELEGRAM_ANDROID_TIMING_CONFIG: sharedValue2 });
+  class R {
+    constructor(arg0) {
+      const tmp = React2;
+      if (tmp) {
+        const onMove = handler.onMove;
+        if (onMove != null) {
+          onMove(arg0);
+        }
+      }
+    }
+  }
+  R.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, handler };
+  R.__workletHash = 16381726355375;
+  R.__initData = __initData3;
+  class O {
+    constructor(arg0) {
+      const tmp = React2;
+      if (tmp) {
+        const onEnd = handler.onEnd;
+        if (onEnd != null) {
+          onEnd(arg0);
+        }
+      }
+    }
+  }
+  O.__closure = { IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS: sharedValue1, handler };
+  O.__workletHash = 9348108811600;
+  O.__initData = __initData4;
+  useKeyboardHandler(obj6, items);
 };
-fn2.__closure = {};
-fn2.__workletHash = 10680474034033;
-fn2.__initData = { code: "function pnpm_utilsTs3(defaultScrollValue,snapPoints){let snapPoint;if(snapPoints){snapPoint=snapPoints.find(function(offset){return offset>=defaultScrollValue;});}return snapPoint!==null&&snapPoint!==void 0?snapPoint:defaultScrollValue;}" };
-
-export const debounce = fn;
-export const scrollDistanceWithRespectToSnapPoints = fn2;

@@ -1,26 +1,26 @@
-// Module ID: 9109
-// Function ID: 9110
+// Module ID: 9335
+// Function ID: 9336
 // Name: VoiceStateIcons
-// Dependencies: [109, 19, 17, 21, 4837, 588, 558, 576, 9110, 9111, 9113, 9115, 9117, 1376, 1189, 7913, 9119, 9120, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 9336, 9337, 9339, 9341, 4820, 1375, 1188, 8136, 9343, 9344, 2]
 
-// Module 9109 (VoiceStateIcons)
+// Module 9335 (VoiceStateIcons)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import inlineStyles from "inlineStyles" /* 7913 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9110 */;
-import HeadphonesDenyIcon2 from "HeadphonesDenyIcon" /* 9111 */;
-import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9113 */;
-import MicrophoneDenyIcon2 from "MicrophoneDenyIcon" /* 9115 */;
-import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9117 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9119 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9120 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 4820 */;
+import inlineStyles from "inlineStyles" /* 8136 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9336 */;
+import HeadphonesDenyIcon2 from "HeadphonesDenyIcon" /* 9337 */;
+import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9339 */;
+import MicrophoneDenyIcon2 from "MicrophoneDenyIcon" /* 9341 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9343 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9344 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let closure_4 = ["state"];
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "call" } };
+let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "r" } };
 obj2 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
 createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
@@ -151,7 +151,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED_SERVER === state) {
     const items = [style, ];
     let redTint = null;
-    const HeadphonesDenyIcon = tmp2(9111).HeadphonesDenyIcon;
+    const HeadphonesDenyIcon = tmp2(9337).HeadphonesDenyIcon;
     const tmp10 = metroImportDefault;
     if (!alwaysWhite) {
       redTint = tmp.redTint;
@@ -166,7 +166,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED_SERVER === state) {
     const items2 = [style, ];
     let redTint1 = null;
-    const MicrophoneDenyIcon = tmp2(9115).MicrophoneDenyIcon;
+    const MicrophoneDenyIcon = tmp2(9341).MicrophoneDenyIcon;
     const tmp7 = metroImportDefault;
     if (!alwaysWhite) {
       redTint1 = tmp.redTint;
@@ -214,7 +214,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     MEDIUM = cResult[3];
   }
   if (undefined === MEDIUM) {
-    MEDIUM = tmp(1189).IconSizes.MEDIUM;
+    MEDIUM = tmp(1188).IconSizes.MEDIUM;
   }
   const tmp9 = closure_9();
   if (cResult[4] !== MEDIUM) {
@@ -366,7 +366,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((state
         return tmp26;
       }
       const obj2 = { source: AssetRegistryDefault, style: tmp25 };
-      const Icon2 = tmp(1189).Icon;
+      const Icon2 = tmp(1188).Icon;
       const merged = Object.assign(tmp4);
       const tmp32 = metroImportDefault(Icon2, obj2);
       cResult[6] = tmp4;
@@ -396,7 +396,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((state
     let tmp11;
     if (cResult[11] !== tmp4) {
       const obj4 = { source: AssetRegistryDefault2 };
-      const Icon = tmp(1189).Icon;
+      const Icon = tmp(1188).Icon;
       const merged2 = Object.assign(tmp4);
       const tmp17 = metroImportDefault(Icon, obj4);
       cResult[11] = tmp4;
@@ -417,7 +417,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((state
   const tmp2 = closure_9();
   if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
     const obj = { source: AssetRegistryDefault, style: items };
-    const Icon2 = tmp3(1189).Icon;
+    const Icon2 = tmp3(1188).Icon;
     const merged1 = Object.assign(merged);
     items = [merged.style, tmp2.noTint];
     return metroImportDefault(Icon2, obj);
@@ -427,7 +427,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((state
     return metroImportDefault(closure_10, obj2);
   } else if (VoiceStateIconUtils.VideoIconState.VIDEO_ACTIVE === state) {
     const obj3 = { source: AssetRegistryDefault2 };
-    const Icon = tmp3(1189).Icon;
+    const Icon = tmp3(1188).Icon;
     const merged3 = Object.assign(merged);
     return metroImportDefault(Icon, obj3);
   } else {

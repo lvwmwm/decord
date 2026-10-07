@@ -1,75 +1,31 @@
 // Module ID: 4432
 // Function ID: 4433
-// Dependencies: [4424]
+// Dependencies: []
 
 // Module 4432
-import _mod4424 from "module_4424" /* 4424 */;
-
-const fn = function s(moment) {
-  const tmp = /(janv\.?|févr\.?|mars|avr\.?|mai|juin|juil\.?|août|sept\.?|oct\.?|nov\.?|déc\.?|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)/i;
-  const items = [/^janv/i, /^févr/i, /^mars/i, /^avr/i, /^mai/i, /^juin/i, /^juil/i, /^août/i, /^sept/i, /^oct/i, /^nov/i, /^déc/i];
-  const obj = {
-    months: "janvier_f\u00E9vrier_mars_avril_mai_juin_juillet_ao\u00FBt_septembre_octobre_novembre_d\u00E9cembre".split("_"),
-    monthsShort: "janv._f\u00E9vr._mars_avr._mai_juin_juil._ao\u00FBt_sept._oct._nov._d\u00E9c.".split("_"),
-    monthsRegex: tmp,
-    monthsShortRegex: tmp,
-    monthsStrictRegex: /^(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)/i,
-    monthsShortStrictRegex: /(janv\.?|févr\.?|mars|avr\.?|mai|juin|juil\.?|août|sept\.?|oct\.?|nov\.?|déc\.?)/i,
-    monthsParse: items,
-    longMonthsParse: items,
-    shortMonthsParse: items,
-    weekdays: "dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi".split("_"),
-    weekdaysShort: "dim._lun._mar._mer._jeu._ven._sam.".split("_"),
-    weekdaysMin: "di_lu_ma_me_je_ve_sa".split("_"),
-    weekdaysParseExact: true,
-    longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD/MM/YYYY", LL: "D MMMM YYYY", LLL: "D MMMM YYYY HH:mm", LLLL: "dddd D MMMM YYYY HH:mm" },
-    calendar: { sameDay: "[Aujourd\u2019hui \u00E0] LT", nextDay: "[Demain \u00E0] LT", nextWeek: "dddd [\u00E0] LT", lastDay: "[Hier \u00E0] LT", lastWeek: "dddd [dernier \u00E0] LT", sameElse: "L" },
-    relativeTime: { future: "dans %s", past: "il y a %s", s: "quelques secondes", ss: "%d secondes", m: "une minute", mm: "%d minutes", h: "une heure", hh: "%d heures", d: "un jour", dd: "%d jours", w: "une semaine", ww: "%d semaines", M: "un mois", MM: "%d mois", y: "un an", yy: "%d ans" },
-    dayOfMonthOrdinalParse: /\d{1,2}(er|)/,
-    ordinal(arg0, arg1) {
-      if ("D" === arg1) {
-        let str9 = "";
-        if (1 === arg0) {
-          str9 = "er";
-        }
-        return arg0 + str9;
-      } else {
-        if ("M" !== arg1) {
-          if ("Q" !== arg1) {
-            if ("DDD" !== arg1) {
-              if ("d" !== arg1) {
-                let str7 = "e";
-                if (1 === arg0) {
-                  str7 = "re";
-                }
-                return arg0 + str7;
-              }
-            }
-          }
-        }
-        let str8 = "e";
-        if (1 === arg0) {
-          str8 = "er";
-        }
-        return arg0 + str8;
-      }
-    },
-    week: { dow: 1, doy: 4 }
-  };
-  return moment.defineLocale("fr", obj);
-};
-if (typeof exports === "object") {
-  if (undefined !== module) {
-    let tmp = require;
-    if (typeof require === "function") {
-      fn(_mod4424);
-    }
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+if (Intl.ListFormat) {
+  const _Intl = Intl;
+  if (typeof Intl.ListFormat.__addLocaleData === "function") {
+    const _Intl2 = Intl;
+    const obj2 = { data: obj3, locale: "de" };
+    obj3 = { conjunction: obj4, disjunction: obj5, unit: obj6 };
+    obj4 = { long: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" }, narrow: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" }, short: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" } };
+    obj5 = { long: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" }, narrow: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" }, short: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" } };
+    obj6 = { long: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
+    ListFormat.__addLocaleData(obj2);
   }
 }
-if (typeof globalThis.define === "function") {
-  const define2 = globalThis.define;
-  if (globalThis.define.amd) {
-    globalThis.define(["../moment"], fn);
-  }
+let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
+const _globalThis = globalThis;
+if (!prop) {
+  prop = [];
 }
-fn(this.moment);
+_globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
+const obj = { data: obj7, locale: "de" };
+obj7 = { conjunction: { long: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" }, narrow: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" }, short: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" }, narrow: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" }, short: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } };
+prop.push(obj);

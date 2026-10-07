@@ -1,11 +1,11 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 16049
+// Function ID: 16050
 // Name: useShallowArrayMemo
-// Dependencies: [558, 576, 15755, 568, 2]
+// Dependencies: [558, 576, 16050, 568, 2]
 
-// Module 15754 (useShallowArrayMemo)
+// Module 16049 (useShallowArrayMemo)
 import react from "react" /* 576 */;
-import useMemoWithEqualityFunctionDefault from "useMemoWithEqualityFunction" /* 15755 */;
+import useMemoWithEqualityFunctionDefault from "useMemoWithEqualityFunction" /* 16050 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

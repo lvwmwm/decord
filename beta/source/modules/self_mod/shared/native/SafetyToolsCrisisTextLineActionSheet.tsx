@@ -1,18 +1,18 @@
-// Module ID: 9607
-// Function ID: 9608
+// Module ID: 9834
+// Function ID: 9835
 // Name: SafetyToolsCrisisTextLineActionSheet
-// Dependencies: [19, 17, 9557, 21, 4837, 588, 558, 576, 1127, 4833, 5282, 4528, 9571, 9608, 2]
+// Dependencies: [19, 17, 9784, 21, 4890, 587, 558, 576, 1126, 4886, 5594, 4565, 9798, 9835, 2]
 
-// Module 9607 (SafetyToolsCrisisTextLineActionSheet)
+// Module 9834 (SafetyToolsCrisisTextLineActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9571 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 9608 */;
+import nativeDefault from "native" /* 587 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 9798 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 9835 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 9557 */;
+import Constants from "Constants" /* 9784 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,8 +53,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ channelId, recipientId, warningId, warningType, onClose, trackAnalyticsEvent } = arg0);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(trackAnalyticsEvent(1127).t.NUMAsF);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(trackAnalyticsEvent(1126).t.NUMAsF);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -62,8 +62,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   ({ container, description } = tmp4);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(trackAnalyticsEvent(1127).t.uicS5l);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(trackAnalyticsEvent(1126).t.uicS5l);
     cResult[1] = stringResult1;
     tmp7 = stringResult1;
   } else {
@@ -71,7 +71,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] !== tmp4.description) {
     const obj2 = { variant: "text-md/medium", color: "text-default", style: description, children: tmp7 };
-    const tmp11 = closure_6(trackAnalyticsEvent(4833).Text, obj2);
+    const tmp11 = closure_6(trackAnalyticsEvent(4886).Text, obj2);
     cResult[2] = tmp4.description;
     cResult[3] = tmp11;
     tmp9 = tmp11;
@@ -79,8 +79,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
-    const stringResult2 = intl3.string(trackAnalyticsEvent(1127).t.lkUb4S);
+    const intl3 = tmp(1126).intl;
+    const stringResult2 = intl3.string(trackAnalyticsEvent(1126).t.lkUb4S);
     cResult[4] = stringResult2;
     tmp12 = stringResult2;
   } else {
@@ -98,7 +98,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_SMS);
         }
     };
-    const tmp16 = closure_6(trackAnalyticsEvent(5282).Button, obj3);
+    const tmp16 = closure_6(trackAnalyticsEvent(5594).Button, obj3);
     cResult[5] = trackAnalyticsEvent;
     cResult[6] = tmp16;
     tmp14 = tmp16;
@@ -106,8 +106,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp14 = cResult[6];
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1127).intl;
-    const stringResult3 = intl4.string(trackAnalyticsEvent(1127).t.ogLlvy);
+    const intl4 = tmp(1126).intl;
+    const stringResult3 = intl4.string(trackAnalyticsEvent(1126).t.ogLlvy);
     cResult[7] = stringResult3;
     tmp17 = stringResult3;
   } else {
@@ -125,7 +125,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_WEB);
         }
     };
-    const tmp21 = closure_6(trackAnalyticsEvent(5282).Button, obj4);
+    const tmp21 = closure_6(trackAnalyticsEvent(5594).Button, obj4);
     cResult[8] = trackAnalyticsEvent;
     cResult[9] = tmp21;
     tmp19 = tmp21;
@@ -191,18 +191,18 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   ({ channelId, recipientId, warningId, warningType, onClose } = trackAnalyticsEvent);
   const tmp = closure_8();
-  let obj = { hasHeaderBack: true, recipientId, warningId, warningType, headerTitle: intl.string(trackAnalyticsEvent(1127).t.NUMAsF), channelId, onClose, children: closure_7(View, obj2) };
+  let obj = { hasHeaderBack: true, recipientId, warningId, warningType, headerTitle: intl.string(trackAnalyticsEvent(1126).t.NUMAsF), channelId, onClose, children: closure_7(View, obj2) };
   const tmp2 = SafetyToolsActionSheetWrapperDefault;
-  intl = trackAnalyticsEvent(1127).intl;
+  intl = trackAnalyticsEvent(1126).intl;
   obj2 = { style: tmp.container, children: items };
-  const obj3 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: intl2.string(trackAnalyticsEvent(1127).t.uicS5l) };
-  const Text = trackAnalyticsEvent(4833).Text;
-  intl2 = trackAnalyticsEvent(1127).intl;
+  const obj3 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: intl2.string(trackAnalyticsEvent(1126).t.uicS5l) };
+  const Text = trackAnalyticsEvent(4886).Text;
+  intl2 = trackAnalyticsEvent(1126).intl;
   items = [closure_6(Text, obj3), , ];
   const obj4 = {
     variant: "secondary",
     size: "lg",
-    text: intl3.string(trackAnalyticsEvent(1127).t.lkUb4S),
+    text: intl3.string(trackAnalyticsEvent(1126).t.lkUb4S),
     grow: true,
     onPress() {
       const obj = LinkingDefault;
@@ -210,13 +210,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_SMS);
     }
   };
-  const Button = trackAnalyticsEvent(5282).Button;
-  intl3 = trackAnalyticsEvent(1127).intl;
+  const Button = trackAnalyticsEvent(5594).Button;
+  intl3 = trackAnalyticsEvent(1126).intl;
   items[1] = closure_6(Button, obj4);
   const obj5 = {
     variant: "secondary",
     size: "lg",
-    text: intl4.string(trackAnalyticsEvent(1127).t.ogLlvy),
+    text: intl4.string(trackAnalyticsEvent(1126).t.ogLlvy),
     grow: true,
     onPress() {
       const obj = LinkingDefault;
@@ -224,8 +224,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_WEB);
     }
   };
-  const Button2 = trackAnalyticsEvent(5282).Button;
-  intl4 = trackAnalyticsEvent(1127).intl;
+  const Button2 = trackAnalyticsEvent(5594).Button;
+  intl4 = trackAnalyticsEvent(1126).intl;
   items[2] = closure_6(Button2, obj5);
   return closure_6(tmp2, obj);
 });

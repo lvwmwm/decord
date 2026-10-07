@@ -1,26 +1,27 @@
-// Module ID: 5320
-// Function ID: 5321
+// Module ID: 5680
+// Function ID: 5681
 // Name: SoundboardStore
-// Dependencies: [32, 1232, 4860, 1378, 5321, 5322, 1086, 1096, 4874, 4424, 12, 1253, 5323, 2027, 11, 504, 5325, 585, 2]
+// Dependencies: [32, 1231, 4913, 1377, 5681, 5682, 1085, 1095, 4927, 4461, 12, 2028, 1252, 5683, 11, 504, 5685, 584, 2]
 
-// Module 5320 (SoundboardStore)
+// Module 5680 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import FrecencyDefault from "Frecency" /* 4874 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5323 */;
-import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5325 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import FrecencyDefault from "Frecency" /* 4927 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5683 */;
+import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5685 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import UserStore from "UserStore" /* 1378 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5321 */;
-import SoundboardConstants from "SoundboardConstants" /* 5322 */;
-import module_12 from "module_12" /* 12 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import UserStore from "UserStore" /* 1377 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5681 */;
+import SoundboardConstants from "SoundboardConstants" /* 5682 */;
+import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
 let recentUses;
@@ -28,8 +29,6 @@ let recentUses;
 let FETCHED;
 let c9;
 let metroImportAll;
-let tmp3;
-const UserSettings = tmp3(2027);
 function handleSoundCreateOrUpdate(sound) {
   let findIndexResult;
   sound = sound.sound;
@@ -112,7 +111,7 @@ let obj2 = {
     return 100;
   },
   computeWeight(arg0) {
-    const obj = _modDef4424();
+    const obj = _modDef4461();
     if (arg0 > obj.diff(closure_22, "days")) {
       return 0;
     } else {
@@ -147,11 +146,18 @@ let closure_24 = [];
 let c25 = false;
 let closure_26 = false;
 const tmp10 = new FrecencyDefault(obj2);
-let closure_27 = module_12.debounce((volume, location_stack) => {
+let module_12 = module_12_mod;
+let closure_27 = module_12.debounce((volume) => {
+  const SoundboardSettings = UserSettings.SoundboardSettings;
+  const obj = { volume };
+  SoundboardSettings.updateSetting(obj);
+}, 1000);
+module_12 = module_12_mod;
+let closure_28 = module_12.debounce((USER, location_stack) => {
   let guildId;
   let obj2;
   let round;
-  const obj = { volume: round(obj2.amplitudeToPerceptual(volume)), location_stack, voice_guild_id: guildId };
+  const obj = { volume: round(obj2.amplitudeToPerceptual(USER)), location_stack, voice_guild_id: guildId };
   const track = AnalyticsUtilsDefault.track;
   const UPDATE_SOUNDBOARD_SETTINGS = AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS;
   round = Math.round;
@@ -162,9 +168,6 @@ let closure_27 = module_12.debounce((volume, location_stack) => {
     guildId = null;
   }
   track(UPDATE_SOUNDBOARD_SETTINGS, obj);
-  const SoundboardSettings = UserSettings.SoundboardSettings;
-  const obj3 = { volume };
-  SoundboardSettings.updateSetting(obj3);
 }, 1000);
 const Store = get_initializedDefault.Store;
 class SoundboardStore extends Store {
@@ -286,7 +289,7 @@ Object.defineProperty(SoundboardStore.prototype, "playedSoundFrecencyWithoutFetc
   set: undefined
 });
 SoundboardStore.displayName = "SoundboardStore";
-let obj3 = {
+const obj3 = {
   LOGOUT: function handleReset() {
     map.clear();
     map1.clear();
@@ -379,7 +382,9 @@ let obj3 = {
   USER_SOUNDBOARD_SET_VOLUME: function handleSetLocalVolume(volume) {
     volume = volume.volume;
     closure_26 = 0 === volume;
-    closure_27(volume, volume.location);
+    const _location = volume.location;
+    closure_27(volume);
+    closure_28(volume, _location);
     const obj = closure_27;
     if (closure_26 !== closure_26) {
       obj.flush();
@@ -505,7 +510,7 @@ let obj3 = {
     const guildId = topSoundsMetadata.guildId;
     const obj = { soundIds: topSoundsMetadata.map((soundId) => soundId.soundId), topSoundsTTL: addResult.valueOf() };
     set = map1.set;
-    const obj2 = _modDef4424();
+    const obj2 = _modDef4461();
     addResult = obj2.add(1, "days");
     const result = set(guildId, obj);
   }

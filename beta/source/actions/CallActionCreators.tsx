@@ -1,20 +1,20 @@
-// Module ID: 9206
-// Function ID: 9207
+// Module ID: 9433
+// Function ID: 9434
 // Name: CallActionCreators
-// Dependencies: [2051, 4482, 1378, 1086, 5724, 1283, 1253, 5204, 1127, 9207, 9164, 585, 2]
+// Dependencies: [2051, 4519, 1377, 1085, 5568, 1282, 1252, 5707, 1126, 9434, 9388, 584, 2]
 
-// Module 9206 (CallActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import intl5 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
-import useCanRing from "useCanRing" /* 9164 */;
+// Module 9433 (CallActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import intl5 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import useCanRing from "useCanRing" /* 9388 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore_mod from "RelationshipStore" /* 4482 */;
-import UserStore_mod from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import RelationshipStore_mod from "RelationshipStore" /* 4519 */;
+import UserStore_mod from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -84,8 +84,8 @@ let obj = {
           if (null != user) {
             str = user.username;
           }
-          intl3 = tmp4(1127).intl;
-          intl4 = tmp4(1127).intl;
+          intl3 = tmp4(1126).intl;
+          intl4 = tmp4(1126).intl;
           show(obj2);
         });
       }
@@ -109,7 +109,7 @@ let obj = {
       const result = obj5.canRingUsersInChannel(channel);
       const tmp8 = require;
       if (result) {
-        const HTTP = tmp8(1283).HTTP;
+        const HTTP = tmp8(1282).HTTP;
         const request = { url: metroRequire.CALL_RING(channelId), body: obj2, oldFormErrors: true, rejectWithError: true };
         const post = HTTP.post;
         obj2 = { recipients: items, analytics_location: voice_panel_floating_cta };

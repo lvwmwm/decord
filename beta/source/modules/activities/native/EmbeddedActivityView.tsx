@@ -1,36 +1,37 @@
-// Module ID: 8909
-// Function ID: 8910
+// Module ID: 9134
+// Function ID: 9135
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 2050, 2011, 1361, 21, 4837, 558, 576, 8908, 1485, 585, 8910, 8911, 8913, 8906, 504, 8915, 8760, 8916, 8917, 2]
+// Dependencies: [109, 32, 19, 17, 2050, 2011, 1360, 21, 4890, 558, 576, 9133, 1484, 584, 9135, 9136, 8991, 9138, 9131, 504, 9144, 9145, 5091, 9147, 2]
 
-// Module 8909 (EmbeddedActivityView)
+// Module 9134 (EmbeddedActivityView)
 import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import ApplicationConstants from "ApplicationConstants" /* 1361 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8760 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 8910 */;
-import DiscordEnvironment from "DiscordEnvironment" /* 8911 */;
-import WakeLockDefault from "WakeLock" /* 8913 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import ApplicationConstants from "ApplicationConstants" /* 1360 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8991 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9135 */;
+import DiscordEnvironment from "DiscordEnvironment" /* 9136 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import Constants from "Constants" /* 2011 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, dispatchResult, leaveActivityResult, obj1, orientationLockState, portraitSafeAreasConfig, tmp3;
+let dispatchResult, leaveActivityResult, obj1, orientationLockState;
 
-let c10;
+let c9;
+let closure_12;
 let closure_14;
 let closure_15;
-let map1;
 let metroImportAll;
-let metroImportDefault;
+let tmp;
 let unpackModuleId;
+const BaseEmbeddedAppWebView2 = tmp(9138);
 function useQueryParams(arg0) {
   let channel;
   let currentEmbeddedActivity;
@@ -43,7 +44,7 @@ function useQueryParams(arg0) {
     const discordEnvQueryParams = obj2.getDiscordEnvQueryParams();
     const ui_density = discordEnvQueryParams.ui_density;
     let launchId = currentEmbeddedActivity.compositeInstanceId;
-    const tmp15 = _objectWithoutProperties(discordEnvQueryParams, closure_3);
+    const tmp15 = _objectWithoutProperties(discordEnvQueryParams, user);
     if (launchId == null) {
       launchId = currentEmbeddedActivity.launchId;
     }
@@ -83,18 +84,20 @@ function useQueryParams(arg0) {
     return obj;
   }
 }
-let closure_3 = ["ui_density"];
-let react = react_mod;
-({ ActivityIndicator: metroImportDefault, View: metroImportAll } = react_native);
-({ ActivityLayoutMode: c10, ActivityScreenOrientation: unpackModuleId } = Constants);
+let user = ["ui_density"];
+let closure_4 = ["deepLinkQueryParams", "applicationId"];
+let _slicedToArray = _slicedToArray_mod;
+({ ActivityIndicator: metroImportAll, View: c9 } = react_native);
+({ ActivityLayoutMode: unpackModuleId, ActivityScreenOrientation: closure_12 } = Constants);
 const set = ApplicationConstants.OBEY_SILENT_HARDWARE_SWITCH_APP_IDS;
-({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
+({ jsx: closure_14, jsxs: closure_15 } = Fragment);
 let closure_16 = createStyles.createStyles({ loadingContainer: { flex: 1, justifyContent: "center" } });
 const EmbeddedActivities = "EmbeddedActivities";
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((orientationLockState) => {
   let closure_5;
   let closure_6;
+  let first;
   let setShowLoadingStateForLockingOrientation;
   let tmp12;
   let tmp13;
@@ -110,8 +113,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((orientationLockState
   setShowLoadingStateForLockingOrientation = orientationLockState.setShowLoadingStateForLockingOrientation;
   const application = orientationLockState.application;
   const setOrientationLockState = orientationLockState.setOrientationLockState;
+  [closure_5] = first.useState(false);
   const tmp4 = _slicedToArray;
-  [_slicedToArray] = react.useState(false);
   if (cResult[0] !== application) {
     const tmpResult = tmp(tmp2[11]);
     const defaultOrientationLockState = tmpResult.getDefaultOrientationLockState(application);
@@ -121,20 +124,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((orientationLockState
   } else {
     tmp6 = cResult[1];
   }
-  react = tmp6;
+  _slicedToArray = tmp6;
   let id;
   if (application != null) {
     id = application.id;
   }
-  const tmp4Result = tmp4(react.useState(false), 2);
-  const first = tmp4Result[0];
+  const tmp4Result = tmp4(first.useState(false), 2);
+  first = tmp4Result[0];
   let closure_8 = tmp4Result[1];
   size = showLoadingIndicator(tmp2[12])();
   const tmp11 = size.width > size.height;
   let closure_9 = tmp11;
   if (cResult[2] !== tmp11) {
-    const fn = function h() {
-      const tmp2 = closure_9 ? unpackModuleId.LANDSCAPE : unpackModuleId.PORTRAIT;
+    const fn = function _() {
+      const tmp2 = closure_9 ? constants.LANDSCAPE : constants.PORTRAIT;
       const obj = DispatcherDefault;
       obj.dispatch({ type: "ACTIVITY_SCREEN_ORIENTATION_UPDATE", screenOrientation: tmp2 });
     };
@@ -150,22 +153,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((orientationLockState
   }
   const layoutEffect = obj2.useLayoutEffect(tmp12, tmp13);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
+    class E {
       constructor() {
         closure_8(false);
       }
     }
-    cResult[5] = A;
-    tmp15 = A;
+    cResult[5] = E;
+    tmp15 = E;
   } else {
-    class A {
+    class E {
       constructor() {
         closure_8(false);
       }
     }
   }
   if (cResult[6] !== id) {
-    class A {
+    class E {
       constructor() {
         closure_8(false);
       }
@@ -175,7 +178,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((orientationLockState
     cResult[7] = tmp17;
     tmp16 = tmp17;
   } else {
-    class A {
+    class E {
       constructor() {
         closure_8(false);
       }
@@ -183,26 +186,28 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((orientationLockState
   }
   const layoutEffect1 = obj2.useLayoutEffect(tmp15, tmp16);
   if (cResult[8] === tmp6) {
-    class A {
+    class E {
       constructor() {
         closure_8(false);
       }
     }
   }
-  const fn2 = function k() {
-    const tmp = first;
-    if (!tmp) {
-      if (null == orientationLockState) {
-        if (!doesOrientationMatchLockStateDefault(closure_9, closure_6)) {
-          setShowLoadingStateForLockingOrientation(true);
-        }
-        if (null != application) {
-          setOrientationLockState(tmp11, orientationLockState);
+  class P {
+    constructor() {
+      const tmp = first;
+      if (!tmp) {
+        if (null == orientationLockState) {
+          if (!doesOrientationMatchLockStateDefault(closure_9, closure_6)) {
+            setShowLoadingStateForLockingOrientation(true);
+          }
+          if (null != application) {
+            setOrientationLockState(tmp11, orientationLockState);
+          }
         }
       }
+      setShowLoadingStateForLockingOrientation(false);
     }
-    setShowLoadingStateForLockingOrientation(false);
-  };
+  }
   const items1 = [tmp6, application, orientationLockState, tmp11, first, setShowLoadingStateForLockingOrientation, setOrientationLockState];
   cResult[8] = tmp6;
   cResult[9] = application;
@@ -211,7 +216,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((orientationLockState
   cResult[12] = orientationLockState;
   cResult[13] = setOrientationLockState;
   cResult[14] = setShowLoadingStateForLockingOrientation;
-  cResult[15] = fn2;
+  cResult[15] = P;
   cResult[16] = items1;
 }) : ((orientationLockState) => {
   orientationLockState = orientationLockState.orientationLockState;
@@ -219,15 +224,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((orientationLockState
   const setShowLoadingStateForLockingOrientation = orientationLockState.setShowLoadingStateForLockingOrientation;
   const application = orientationLockState.application;
   const setOrientationLockState = orientationLockState.setOrientationLockState;
-  let isResetting;
   let defaultOrientationLockState;
   let first1;
   let closure_8;
   let isLandscape;
-  let obj = defaultOrientationLockState;
-  let tmp = isResetting;
-  let tmp2 = isResetting(defaultOrientationLockState.useState(false), 2);
-  isResetting = tmp2[0];
+  let obj = first1;
+  let tmp = defaultOrientationLockState;
+  let tmp2 = defaultOrientationLockState(first1.useState(false), 2);
+  const isResetting = tmp2[0];
   const setIsResetting = tmp2[1];
   const obj2 = orientationLockState(setShowLoadingStateForLockingOrientation[11]);
   defaultOrientationLockState = obj2.getDefaultOrientationLockState(application);
@@ -243,7 +247,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((orientationLockState
   isLandscape = size.width > size.height;
   const items = [isLandscape];
   const layoutEffect = obj.useLayoutEffect(() => {
-    const tmp2 = isLandscape ? unpackModuleId.LANDSCAPE : unpackModuleId.PORTRAIT;
+    const tmp2 = isLandscape ? constants.LANDSCAPE : constants.PORTRAIT;
     const obj = DispatcherDefault;
     obj.dispatch({ type: "ACTIVITY_SCREEN_ORIENTATION_UPDATE", screenOrientation: tmp2 });
   }, items);
@@ -290,7 +294,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(3);
   const tmp2 = closure_16();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = map1(metroImportDefault, { size: "large" });
+    const tmp6 = authStore2(metroImportAll, { size: "large" });
     cResult[0] = tmp6;
     first = tmp6;
   } else {
@@ -298,7 +302,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp2.loadingContainer) {
     const obj2 = { style: tmp2.loadingContainer, children: first };
-    const tmp10 = map1(metroImportAll, obj2);
+    const tmp10 = authStore2(React4, obj2);
     cResult[1] = tmp2.loadingContainer;
     cResult[2] = tmp10;
     tmp7 = tmp10;
@@ -307,26 +311,22 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return tmp7;
 }) : (() => {
-  const obj = { style: closure_16().loadingContainer, children: map1(metroImportDefault, { size: "large" }) };
-  return map1(metroImportAll, obj);
+  const obj = { style: closure_16().loadingContainer, children: authStore2(metroImportAll, { size: "large" }) };
+  return authStore2(React4, obj);
 });
 let closure_20 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((showLoadingIndicator) => {
-  let children;
-  let items;
   let tmp4;
-  let wakeLockKey;
   const obj = react2;
-  const cResult = obj.c(6);
-  ({ children, wakeLockKey } = showLoadingIndicator);
+  const cResult = obj.c(1);
   if (showLoadingIndicator.showLoadingIndicator) {
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp17 = map1(closure_20, {});
-      cResult[0] = tmp17;
-      first = tmp17;
+      const tmp9 = authStore2(closure_20, {});
+      cResult[0] = tmp9;
+      first = tmp9;
     } else {
       first = cResult[0];
     }
@@ -334,55 +334,101 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((showLoadingIndicator
   } else {
     tmp4 = null;
     if (!tmp3) {
-      let tmp5;
-      if (cResult[1] !== wakeLockKey) {
-        const obj2 = { wakeLockKey };
-        const tmp8 = map1(WakeLockDefault, obj2);
-        cResult[1] = wakeLockKey;
-        cResult[2] = tmp8;
-        tmp5 = tmp8;
-      } else {
-        tmp5 = cResult[2];
-      }
-      if (cResult[3] === tmp5) {
-        let tmp9;
-        if (cResult[4] === children) {
-          tmp9 = cResult[5];
-        }
-        tmp4 = tmp9;
-      }
-      const obj3 = { children: items };
-      items = [tmp5, children];
-      const tmp12 = closure_15(authStore2, obj3);
-      cResult[3] = tmp5;
-      cResult[4] = children;
-      cResult[5] = tmp12;
-      tmp9 = tmp12;
+      tmp4 = tmp2;
     }
   }
   return tmp4;
 }) : ((showLoadingIndicator) => {
-  let items;
-  let tmp4;
+  let tmp3;
   if (showLoadingIndicator.showLoadingIndicator) {
-    tmp4 = map1(closure_20, {});
+    tmp3 = authStore2(closure_20, {});
   } else {
-    tmp4 = null;
-    if (!tmp3) {
-      const obj = { children: items };
-      const obj2 = { wakeLockKey: tmp2 };
-      items = [map1(WakeLockDefault, obj2), tmp];
-      tmp4 = closure_15(authStore2, obj);
+    tmp3 = null;
+    if (!tmp2) {
+      tmp3 = tmp;
     }
   }
-  return tmp4;
+  return tmp3;
 });
 let closure_21 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let channel;
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let applicationId;
+  let deepLinkQueryParams;
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let obj = react2;
+  const cResult = obj.c(10);
+  if (cResult[0] !== arg0) {
+    ({ deepLinkQueryParams, applicationId } = arg0);
+    const tmp9 = _objectWithoutProperties(arg0, closure_4);
+    cResult[0] = arg0;
+    cResult[1] = applicationId;
+    cResult[2] = deepLinkQueryParams;
+    cResult[3] = tmp9;
+    tmp6 = tmp9;
+    tmp5 = deepLinkQueryParams;
+    tmp4 = applicationId;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function y() {
+      const obj = EmbeddedActivitiesNativeManagerDefault;
+      return obj.getOrCreateWebViewController();
+    };
+    cResult[4] = fn;
+    tmp10 = fn;
+  } else {
+    tmp10 = cResult[4];
+  }
+  const first = _slicedToArray(react.useState(tmp10), 1)[0];
+  if (cResult[5] === tmp4) {
+    if (cResult[6] === tmp5) {
+      if (cResult[7] === first) {
+        let tmp12;
+        if (cResult[8] === tmp6) {
+          tmp12 = cResult[9];
+        }
+        return tmp12;
+      }
+    }
+  }
+  const obj2 = { iframeId: first, deepLinkQueryParams: tmp5, applicationId: tmp4 };
+  const BaseEmbeddedAppWebView = BaseEmbeddedAppWebView2.BaseEmbeddedAppWebView;
+  const merged = Object.assign(tmp6);
+  const tmp14 = authStore2(BaseEmbeddedAppWebView, obj2);
+  cResult[5] = tmp4;
+  cResult[6] = tmp5;
+  cResult[7] = first;
+  cResult[8] = tmp6;
+  cResult[9] = tmp14;
+  tmp12 = tmp14;
+}) : ((arg0) => {
+  let applicationId;
+  let deepLinkQueryParams;
+  ({ deepLinkQueryParams, applicationId } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ deepLinkQueryParams: 0, applicationId: 0 }));
+  let obj = {
+    iframeId: _slicedToArray(react.useState(() => {
+      const obj = EmbeddedActivitiesNativeManagerDefault;
+      return obj.getOrCreateWebViewController();
+    }), 1)[0],
+    deepLinkQueryParams,
+    applicationId
+  };
+  const BaseEmbeddedAppWebView = BaseEmbeddedAppWebView2.BaseEmbeddedAppWebView;
+  const merged1 = Object.assign(merged);
+  return authStore2(BaseEmbeddedAppWebView, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let applicationId;
   let first;
-  let layoutMode;
   let tmp11;
   let tmp12;
   let tmp15;
@@ -391,10 +437,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let tmp22;
   let tmp23;
   let tmp9;
-  const tmp = layoutMode;
-  let obj = layoutMode(576);
-  const cResult = obj.c(38);
-  ({ channel, layoutMode } = arg0);
+  const tmp = channel;
+  let obj = channel(first[10]);
+  const cResult = obj.c(45);
+  channel = channel.channel;
+  const layoutMode = channel.layoutMode;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
     cResult[0] = currentEmbeddedActivity;
@@ -402,9 +449,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   } else {
     first = cResult[0];
   }
-  const tmp8 = first(8906)();
-  dependencyMap = tmp8;
-  const tmp7 = first;
+  const tmp8 = layoutMode(first[18])();
+  user = tmp8;
+  const tmp7 = layoutMode;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [EmbeddedActivitiesStore];
     cResult[1] = items;
@@ -416,9 +463,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     class S {
       constructor() {
         orientationLockStateForApp = undefined;
-        if (null != closure_2) {
-          tmp3 = closure_9;
-          orientationLockStateForApp = closure_9.getOrientationLockStateForApp(tmp.id);
+        if (null != closure_3) {
+          tmp3 = closure_10;
+          orientationLockStateForApp = closure_10.getOrientationLockStateForApp(tmp.id);
         }
         return orientationLockStateForApp;
       }
@@ -433,27 +480,27 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     class S {
       constructor() {
         orientationLockStateForApp = undefined;
-        if (null != closure_2) {
-          tmp3 = closure_9;
-          orientationLockStateForApp = closure_9.getOrientationLockStateForApp(tmp.id);
+        if (null != closure_3) {
+          tmp3 = closure_10;
+          orientationLockStateForApp = closure_10.getOrientationLockStateForApp(tmp.id);
         }
         return orientationLockStateForApp;
       }
     }
     tmp12 = cResult[4];
   }
-  const tmpResult = tmp(504);
+  const tmpResult = tmp(first[19]);
   const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11, tmp12);
+  let obj3 = react;
   [r10055, tmp15] = react.useState(true);
   _slicedToArray(react.useState(true), 2);
-  const obj3 = react;
   if (cResult[5] !== channel) {
     class S {
       constructor() {
         orientationLockStateForApp = undefined;
-        if (null != closure_2) {
-          tmp3 = closure_9;
-          orientationLockStateForApp = closure_9.getOrientationLockStateForApp(tmp.id);
+        if (null != closure_3) {
+          tmp3 = closure_10;
+          orientationLockStateForApp = closure_10.getOrientationLockStateForApp(tmp.id);
         }
         return orientationLockStateForApp;
       }
@@ -467,9 +514,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     class S {
       constructor() {
         orientationLockStateForApp = undefined;
-        if (null != closure_2) {
-          tmp3 = closure_9;
-          orientationLockStateForApp = closure_9.getOrientationLockStateForApp(tmp.id);
+        if (null != closure_3) {
+          tmp3 = closure_10;
+          orientationLockStateForApp = closure_10.getOrientationLockStateForApp(tmp.id);
         }
         return orientationLockStateForApp;
       }
@@ -480,9 +527,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     class S {
       constructor() {
         orientationLockStateForApp = undefined;
-        if (null != closure_2) {
-          tmp3 = closure_9;
-          orientationLockStateForApp = closure_9.getOrientationLockStateForApp(tmp.id);
+        if (null != closure_3) {
+          tmp3 = closure_10;
+          orientationLockStateForApp = closure_10.getOrientationLockStateForApp(tmp.id);
         }
         return orientationLockStateForApp;
       }
@@ -494,19 +541,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     class S {
       constructor() {
         orientationLockStateForApp = undefined;
-        if (null != closure_2) {
-          tmp3 = closure_9;
-          orientationLockStateForApp = closure_9.getOrientationLockStateForApp(tmp.id);
+        if (null != closure_3) {
+          tmp3 = closure_10;
+          orientationLockStateForApp = closure_10.getOrientationLockStateForApp(tmp.id);
         }
         return orientationLockStateForApp;
       }
     }
   }
-  tmp7(8915)(tmp19);
+  tmp7(first[20])(tmp19);
   if (cResult[8] !== layoutMode) {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -528,7 +575,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   } else {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -548,7 +595,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (tmp8 != null) {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -565,7 +612,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (tmp25 !== undefined) {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -581,7 +628,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     if (tmp8 != null) {
       class M {
         constructor() {
-          if (null != closure_1) {
+          if (null != closure_2) {
             tmp2 = closure_1;
             tmp3 = closure_2;
             obj = closure_1(closure_2[13]);
@@ -595,18 +642,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         }
       }
     }
-    class F {
+    class N {
       constructor() {
-        tmp = closure_1(closure_2[20]);
+        tmp = closure_1(closure_2[16]);
         _location = undefined;
         leaveActivity = tmp.leaveActivity;
-        if (closure_1 != null) {
-          _location = closure_1.location;
+        if (closure_2 != null) {
+          _location = closure_2.location;
         }
         obj = { location: _location, applicationId: null };
         id = undefined;
-        if (closure_2 != null) {
-          id = closure_2.id;
+        if (closure_3 != null) {
+          id = closure_3.id;
         }
         obj.applicationId = id;
         leaveActivityResult = leaveActivity(obj);
@@ -614,11 +661,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
     }
     cResult[11] = tmp27;
-    cResult[12] = F;
+    cResult[12] = N;
   } else {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -635,7 +682,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (tmp8 != null) {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -649,10 +696,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
     }
   }
+  let c4;
   if (null != first) {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -668,7 +716,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     if (first != null) {
       class M {
         constructor() {
-          if (null != closure_1) {
+          if (null != closure_2) {
             tmp2 = closure_1;
             tmp3 = closure_2;
             obj = closure_1(closure_2[13]);
@@ -682,18 +730,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         }
       }
     }
-    class F {
+    class N {
       constructor() {
-        tmp = closure_1(closure_2[20]);
+        tmp = closure_1(closure_2[16]);
         _location = undefined;
         leaveActivity = tmp.leaveActivity;
-        if (closure_1 != null) {
-          _location = closure_1.location;
+        if (closure_2 != null) {
+          _location = closure_2.location;
         }
         obj = { location: _location, applicationId: null };
         id = undefined;
-        if (closure_2 != null) {
-          id = closure_2.id;
+        if (closure_3 != null) {
+          id = closure_3.id;
         }
         obj.applicationId = id;
         leaveActivityResult = leaveActivity(obj);
@@ -704,7 +752,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (null != first) {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -721,7 +769,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (null != first) {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -738,7 +786,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (null != first) {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -755,7 +803,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (cResult[13] === tmp8) {
     class M {
       constructor() {
-        if (null != closure_1) {
+        if (null != closure_2) {
           tmp2 = closure_1;
           tmp3 = closure_2;
           obj = closure_1(closure_2[13]);
@@ -769,31 +817,27 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
     }
   }
-  let obj2 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp28, setShowLoadingStateForLockingOrientation: tmp15, application: tmp8, setOrientationLockState: tmp(8908).setOrientationLockState };
+  let obj2 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp28, setShowLoadingStateForLockingOrientation: tmp15, application: tmp8, setOrientationLockState: tmp(tmp2[11]).setOrientationLockState };
   cResult[13] = tmp8;
   cResult[14] = stateFromStores;
   cResult[15] = null == first;
   cResult[16] = obj2;
-}) : ((portraitSafeAreasConfig) => {
-  let channel;
+}) : ((channel) => {
   let compositeInstanceId;
   let guild_id;
-  let id;
   let id1;
-  let layoutMode;
-  let obj4;
-  let tmp2Result;
+  let items4;
   let tmp5Result;
   let tmp8;
   let tmp9;
-  ({ channel, layoutMode } = portraitSafeAreasConfig);
-  portraitSafeAreasConfig = portraitSafeAreasConfig.portraitSafeAreasConfig;
+  channel = channel.channel;
+  const layoutMode = channel.layoutMode;
+  let portraitSafeAreasConfig = channel.portraitSafeAreasConfig;
   let setIsResetting;
-  const landscapeSafeAreasConfig = portraitSafeAreasConfig.landscapeSafeAreasConfig;
+  const landscapeSafeAreasConfig = channel.landscapeSafeAreasConfig;
   const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
-  const tmp4 = currentEmbeddedActivity(8906)();
-  dependencyMap = tmp4;
-  let obj = layoutMode(504);
+  const tmp4 = layoutMode(currentEmbeddedActivity[18])();
+  let obj = channel(currentEmbeddedActivity[19]);
   const items = [EmbeddedActivitiesStore];
   const items1 = [tmp4];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -806,7 +850,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   [tmp8, tmp9] = react.useState(true);
   _slicedToArray(react.useState(true), 2);
   const tmp10 = useQueryParams({ currentEmbeddedActivity, channel });
-  currentEmbeddedActivity(8915)({ connectedEmbeddedActivity: currentEmbeddedActivity });
+  layoutMode(currentEmbeddedActivity[20])({ connectedEmbeddedActivity: currentEmbeddedActivity });
   const items2 = [layoutMode, currentEmbeddedActivity];
   const layoutEffect = react.useLayoutEffect(() => {
     if (null != currentEmbeddedActivity) {
@@ -816,6 +860,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
   }, items2);
   const items3 = [tmp4, currentEmbeddedActivity];
+  let id;
   const callback = react.useCallback(() => {
     let _location;
     const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
@@ -830,37 +875,60 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     leaveActivity(obj);
   }, items3);
-  const tmp2 = currentEmbeddedActivity;
+  const tmp2 = layoutMode;
   if (tmp4 != null) {
     id = tmp4.id;
   }
-  let tmp14 = null == currentEmbeddedActivity;
-  if (!tmp14) {
+  let tmp15 = null == currentEmbeddedActivity;
+  if (!tmp15) {
     let launchId;
     if (currentEmbeddedActivity != null) {
       launchId = currentEmbeddedActivity.launchId;
     }
-    tmp14 = null == launchId;
+    tmp15 = null == launchId;
   }
-  if (!tmp14) {
-    tmp14 = tmp8;
+  if (!tmp15) {
+    tmp15 = tmp8;
   }
-  if (!tmp14) {
-    tmp14 = null == id;
+  if (!tmp15) {
+    tmp15 = null == id;
   }
-  if (!tmp14) {
-    tmp14 = null == tmp4;
+  if (!tmp15) {
+    tmp15 = null == tmp4;
   }
-  let obj2 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp14, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: tmp5(8908).setOrientationLockState };
+  let obj2 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp15, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: tmp5(tmp3[11]).setOrientationLockState };
   setIsResetting = closure_18(obj2).setIsResetting;
-  let tmp20Result = null;
   closure_18(obj2);
   if (null != currentEmbeddedActivity) {
-    tmp20Result = null;
     if (null != id) {
-      const obj3 = { wakeLockKey: EmbeddedActivities, showLoadingIndicator: tmp14, isResetting: tmp17, children: closure_13(tmp2Result, obj4) };
-      obj4 = {
+      let obj3 = {};
+      if (null != currentEmbeddedActivity.customId) {
+        obj3.custom_id = currentEmbeddedActivity.customId;
+      }
+      if (null != currentEmbeddedActivity.referrerId) {
+        obj3.referrer_id = currentEmbeddedActivity.referrerId;
+      }
+      const obj4 = { showLoadingIndicator: tmp15, isResetting: tmp18, children: items4 };
+      const obj5 = { wakeLockKey: EmbeddedActivities };
+      items4 = [closure_14(tmp2(tmp3[21]), obj5), ];
+      const obj6 = {
+        deepLinkQueryParams: obj3,
+        onInvalidUrl() {
+              id = undefined;
+              if (channel != null) {
+                id = tmp.id;
+              }
+              if (null != id) {
+                const obj = ChannelRTCActionCreatorsDefault;
+                const participant = obj.selectParticipant(tmp.id, null);
+              }
+              const obj2 = EmbeddedActivitiesNativeManagerDefault;
+              const obj3 = { location: currentEmbeddedActivity.location, applicationId: id, showFeedback: false };
+              obj2.leaveActivity(obj3);
+            },
         onActivityCrash() {
+              const obj = EmbeddedActivitiesNativeManagerDefault;
+              obj.releaseWebView();
               setIsResetting(true);
               const timerId = setTimeout(() => setIsResetting(false), 0);
             },
@@ -868,20 +936,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         channelId: id1,
         guildId: guild_id,
         activityUrl: currentEmbeddedActivity.url,
-        currentEmbeddedActivity,
         activitySessionId: compositeInstanceId,
         queryParams: tmp10,
         onLoadError: callback,
         allowPopups: tmp5Result.allowPopups(tmp4),
         referrerPolicy: "origin",
         isPipOrGridMode: layoutMode === constants.PIP || layoutMode === constants.GRID,
-        webViewKey: layoutMode(8760).EMBEDDED_ACTIVITY_WEB_VIEW_KEY,
         safeAreasConfig: portraitSafeAreasConfig,
         ignoreSilentHardwareSwitch: !set.has(id)
       };
       id1 = undefined;
+      const tmp20 = closure_15;
       const tmp21 = closure_21;
-      tmp2Result = tmp2(8917);
+      const tmp22 = closure_14;
+      const tmp24 = closure_22;
       if (channel != null) {
         id1 = channel.id;
       }
@@ -893,14 +961,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       if (currentEmbeddedActivity != null) {
         compositeInstanceId = currentEmbeddedActivity.compositeInstanceId;
       }
-      tmp5Result = layoutMode(8916);
-      if (tmp18) {
+      tmp5Result = channel(currentEmbeddedActivity[23]);
+      if (tmp19) {
         portraitSafeAreasConfig = landscapeSafeAreasConfig;
       }
-      tmp20Result = tmp20(tmp21, obj3);
+      items4[1] = tmp22(tmp24, obj6);
+      return tmp20(tmp21, obj4);
     }
   }
-  return tmp20Result;
+  return null;
 }));
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/activities/native/EmbeddedActivityView.tsx");

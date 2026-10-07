@@ -1,23 +1,26 @@
-// Module ID: 5200
-// Function ID: 5201
+// Module ID: 7267
+// Function ID: 7268
 // Name: UploadAttachmentStore
-// Dependencies: [5201, 1086, 5204, 1127, 12, 5440, 5449, 504, 585, 2]
+// Dependencies: [7031, 1085, 5707, 1126, 12, 7268, 7272, 1252, 504, 584, 2]
 
-// Module 5200 (UploadAttachmentStore)
+// Module 7267 (UploadAttachmentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import DraftStore from "DraftStore" /* 5201 */;
-import CloudUpload from "CloudUpload" /* 5440 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 5449 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import DraftStore from "DraftStore" /* 7031 */;
+import CloudUpload from "CloudUpload" /* 7268 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 7272 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+let closure_4;
+let hasOwnProperty;
 const DraftType = DraftStore.DraftType;
-const MAX_UPLOAD_COUNT = Constants.MAX_UPLOAD_COUNT;
+({ AnalyticEvents: closure_4, MAX_UPLOAD_COUNT: hasOwnProperty } = Constants);
 let map = new Map();
-let closure_6 = [];
+let closure_7 = [];
 const Store = get_initializedDefault.Store;
 class UploadAttachmentStore extends Store {
   getFirstUpload(arg0, arg1) {
@@ -33,7 +36,7 @@ class UploadAttachmentStore extends Store {
       value2 = map.get(arg1);
     }
     if (value2 == null) {
-      value2 = closure_6;
+      value2 = closure_7;
     }
     let first = null;
     if (value2.length > 0) {
@@ -54,7 +57,7 @@ class UploadAttachmentStore extends Store {
       value2 = map.get(arg1);
     }
     if (value2 == null) {
-      value2 = closure_6;
+      value2 = closure_7;
     }
     let num = value2.length;
     if (num == null) {
@@ -75,7 +78,7 @@ class UploadAttachmentStore extends Store {
       value2 = map.get(ChannelMessage);
     }
     if (value2 == null) {
-      value2 = closure_6;
+      value2 = closure_7;
     }
     return value2;
   }
@@ -92,7 +95,7 @@ class UploadAttachmentStore extends Store {
       value2 = map.get(draftType);
     }
     if (value2 == null) {
-      value2 = closure_6;
+      value2 = closure_7;
     }
     let num = value2.length;
     if (num == null) {
@@ -114,7 +117,7 @@ class UploadAttachmentStore extends Store {
       value2 = map.get(ChannelMessage);
     }
     if (value2 == null) {
-      value2 = closure_6;
+      value2 = closure_7;
     }
     return value2.find((id) => id.id === closure_0);
   }
@@ -131,7 +134,7 @@ class UploadAttachmentStore extends Store {
       value2 = map.get(ChannelMessage);
     }
     if (value2 == null) {
-      value2 = closure_6;
+      value2 = closure_7;
     }
     return value2.find(cResult);
   }
@@ -155,7 +158,7 @@ let obj = {
       value3 = map.get(ChannelMessage);
     }
     if (value3 == null) {
-      value3 = closure_6;
+      value3 = closure_7;
     }
     const items = [...value3];
     items.shift();
@@ -192,10 +195,10 @@ let obj = {
       value3 = map.get(draftType);
     }
     if (value3 == null) {
-      value3 = closure_6;
+      value3 = closure_7;
     }
     items = [...value3];
-    if (items.length + files.length > MAX_UPLOAD_COUNT) {
+    if (items.length + files.length > closure_5) {
       if (draftType !== DraftType.SlashCommand) {
         if (draftType !== DraftType.ApplicationLauncherCommand) {
           const obj2 = { title: intl.string(channelId(items[3]).t.wOr6hB), body: intl2.formatToPlainString(channelId(items[3]).t["qqyp/e"], obj3) };
@@ -225,18 +228,18 @@ let obj = {
   },
   UPLOAD_ATTACHMENT_UPDATE_FILE: function handleUpdateFile(arg0) {
     let channelId;
-    let closure_129_0;
-    let closure_129_1;
-    let closure_129_2;
-    let closure_129_3;
-    let closure_129_4;
+    let closure_4;
     let draftType;
-    ({ channelId, id: closure_129_0, filename: closure_129_1, description: closure_129_2, spoiler: closure_129_3, thumbnail: closure_129_4, draftType } = arg0);
+    let filename;
+    let isThumbnail;
+    ({ channelId, id: require, filename: importDefault, description: dependencyMap, spoiler: DraftType, thumbnail: closure_4, draftType } = arg0);
+    let obj = map;
     map = map.get(channelId);
     if (map == null) {
+      const tmp = globalThis;
       const _Map = Map;
-      const self2 = this;
       const self = this;
+      const self2 = this;
       map = new Map();
     }
     let value3;
@@ -244,28 +247,49 @@ let obj = {
       value3 = map.get(draftType);
     }
     if (value3 == null) {
-      value3 = closure_6;
+      value3 = closure_7;
     }
-    const items = [...value3];
-    const mapped = items.map((id) => {
-      if (id.id === closure_1_0) {
-        if (undefined !== filename) {
-          id.filename = filename;
+    const mapped = value3.map((id) => {
+      let tmp4;
+      if (id.id === require) {
+        let tmp3;
+        if (null != DraftType) {
+          if (DraftType !== id.spoiler) {
+            tmp3 = tmp;
+          }
         }
-        if (undefined !== spoiler) {
-          id.spoiler = spoiler;
+        const obj = { spoilered: tmp3, has_alt_text: tmp4 };
+        tmp4 = undefined;
+        if (null != dependencyMap) {
+          if (dependencyMap !== id.description) {
+            tmp4 = str.trim().length > 0;
+          }
         }
-        if (undefined !== description) {
-          id.description = description;
+        const tmp5 = null == obj.spoilered && null == obj.has_alt_text;
+        if (!tmp5) {
+          const obj2 = AnalyticsUtilsDefault;
+          obj2.track(isThumbnail.MEDIA_DRAFT_EDITED, obj);
         }
-        if (undefined !== isThumbnail) {
+        if (null != importDefault) {
+          id.filename = importDefault;
+        }
+        if (null != DraftType) {
+          id.spoiler = DraftType;
+        }
+        if (null != dependencyMap) {
+          id.description = dependencyMap;
+        }
+        if (null != isThumbnail) {
           id.isThumbnail = isThumbnail;
         }
+        return id;
+      } else {
+        return id;
       }
-      return id;
     });
     let value4 = obj.get(channelId);
     if (value4 == null) {
+      let tmp4 = globalThis;
       const _Map2 = Map;
       const self3 = this;
       const self4 = this;
@@ -291,7 +315,7 @@ let obj = {
       value3 = map.get(draftType);
     }
     if (value3 == null) {
-      value3 = closure_6;
+      value3 = closure_7;
     }
     const items = [...value3];
     const findIndexResult = items.findIndex((item) => {
@@ -331,7 +355,7 @@ let obj = {
       value3 = map.get(draftType);
     }
     if (value3 == null) {
-      value3 = closure_6;
+      value3 = closure_7;
     }
     items = [...value3];
     const item = attachmentIds.forEach((item) => {
@@ -402,7 +426,7 @@ let obj = {
       value3 = map.get(draftType);
     }
     if (value3 == null) {
-      value3 = closure_6;
+      value3 = closure_7;
     }
     const items = [...value3];
     const found = items.filter((id) => id.id !== closure_1_0);

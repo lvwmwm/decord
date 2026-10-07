@@ -1,21 +1,21 @@
-// Module ID: 12870
-// Function ID: 12871
+// Module ID: 13132
+// Function ID: 13133
 // Name: ForLaterIntro
-// Dependencies: [17, 6573, 21, 4837, 588, 558, 576, 7289, 12871, 12872, 1127, 4833, 12873, 11079, 4796, 6631, 2]
+// Dependencies: [17, 6646, 21, 4890, 587, 558, 576, 7495, 13133, 13134, 1126, 4886, 13135, 11337, 4849, 6708, 2]
 
-// Module 12870 (ForLaterIntro)
+// Module 13132 (ForLaterIntro)
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl7 from "intl" /* 1127 */;
-import ClockIcon from "ClockIcon" /* 4796 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6573 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7289 */;
-import BookmarkIcon from "BookmarkIcon" /* 11079 */;
-import _modDef12873 from "module_12873" /* 12873 */;
+import nativeDefault from "native" /* 587 */;
+import intl7 from "intl" /* 1126 */;
+import ClockIcon from "ClockIcon" /* 4849 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
+import BookmarkIcon from "BookmarkIcon" /* 11337 */;
+import _modDef13135 from "module_13135" /* 13135 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let size;
 let size1;
 let size2;
 let tmp8;
-const ChevronSmallRightIcon2 = tmp8(6631);
+const ChevronSmallRightIcon2 = tmp8(6708);
 ({ Image: c3, ScrollView: closure_4, View: hasOwnProperty } = react_native);
 const ACTION_SHEET_BORDER_RADIUS = ActionSheetConstants.ACTION_SHEET_BORDER_RADIUS;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -72,7 +72,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   const tmp4 = closure_8();
   const tmp5 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   ({ scrollView, pageContainer, container } = tmp4);
-  const tmp6 = importDefault(tmp5 ? 12871 : 12872);
+  const tmp6 = importDefault(tmp5 ? 13133 : 13134);
   if (cResult[0] === tmp4.upsellImage) {
     let tmp7;
     let tmp9;
@@ -81,9 +81,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
     }
     ({ textContainer, text } = tmp4);
     if (cResult[3] !== tmp5) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const string = intl.string;
-      const t = tmp(1127).t;
+      const t = tmp(1126).t;
       const stringResult = string(tmp5 ? t["5Iw19e"] : t["93WOd1"]);
       cResult[3] = tmp5;
       cResult[4] = stringResult;
@@ -99,13 +99,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
       }
       const text2 = tmp4.text;
       if (cResult[8] !== tmp5) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const format = intl2.format;
-        const t2 = tmp(1127).t;
+        const t2 = tmp(1126).t;
         const tmp15 = tmp5 ? t2.YI4UjI : t2["5TSj/g"];
-        const intl3 = tmp(1127).intl;
+        const intl3 = tmp(1126).intl;
         const string2 = intl3.string;
-        const t3 = tmp(1127).t;
+        const t3 = tmp(1126).t;
         const obj2 = { itemName: string2(tmp5 ? t3.mJ3P0N : t3.tpxJto) };
         const formatResult = format(tmp15, obj2);
         cResult[8] = tmp5;
@@ -216,24 +216,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroImportDefault(hasOwnProperty, obj2) };
   obj2 = { style: tmp.container, children: items };
   items = [, , ];
-  const obj3 = { source: importDefault(tmp4 ? 12871 : 12872), style: tmp.upsellImage };
+  const obj3 = { source: importDefault(tmp4 ? 13133 : 13134), style: tmp.upsellImage };
   items[0] = metroRequire(_false, obj3);
   const obj4 = { style: tmp.textContainer, children: items1 };
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: string(tmp4 ? t["5Iw19e"] : t["93WOd1"]) };
-  const Heading = tmp2(4833).Heading;
-  const intl = tmp2(1127).intl;
+  const Heading = tmp2(4886).Heading;
+  const intl = tmp2(1126).intl;
   string = intl.string;
-  t = tmp2(1127).t;
+  t = tmp2(1126).t;
   items1 = [metroRequire(Heading, obj5), ];
   const obj6 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: format(tmp10, obj7) };
-  const Text = tmp2(4833).Text;
-  const intl2 = tmp2(1127).intl;
+  const Text = tmp2(4886).Text;
+  const intl2 = tmp2(1126).intl;
   format = intl2.format;
-  const t2 = tmp2(1127).t;
+  const t2 = tmp2(1126).t;
   tmp10 = tmp4 ? t2.YI4UjI : t2["5TSj/g"];
-  const intl3 = tmp2(1127).intl;
+  const intl3 = tmp2(1126).intl;
   const string2 = intl3.string;
-  const t3 = tmp2(1127).t;
+  const t3 = tmp2(1126).t;
   obj7 = { itemName: string2(tmp4 ? t3.mJ3P0N : t3.tpxJto) };
   items1[1] = metroRequire(Text, obj6);
   items[1] = metroImportDefault(hasOwnProperty, obj4);
@@ -263,7 +263,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   const tmp4 = closure_8();
   const demo = tmp4.demo;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12873 };
+    const obj2 = { uri: _modDef13135 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -280,8 +280,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(intl7.t.cqpybK) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp13 = metroRequire(Text, obj4);
     cResult[3] = tmp13;
     tmp11 = tmp13;
@@ -290,8 +290,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "text-sm/normal", color: "text-default", children: intl2.string(intl7.t["h+KPxy"]) };
-    const Text2 = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    const Text2 = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     const tmp16 = metroRequire(Text2, obj5);
     cResult[4] = tmp16;
     tmp14 = tmp16;
@@ -300,8 +300,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { variant: "text-sm/normal", color: "text-default", children: intl3.string(intl7.t["63EVpI"]) };
-    const Text3 = tmp(4833).Text;
-    intl3 = tmp(1127).intl;
+    const Text3 = tmp(4886).Text;
+    intl3 = tmp(1126).intl;
     const tmp19 = metroRequire(Text3, obj6);
     cResult[5] = tmp19;
     tmp17 = tmp19;
@@ -310,8 +310,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = { variant: "text-sm/normal", color: "text-default", children: intl4.string(intl7.t["KT/TDX"]) };
-    const Text4 = tmp(4833).Text;
-    intl4 = tmp(1127).intl;
+    const Text4 = tmp(4886).Text;
+    intl4 = tmp(1126).intl;
     const tmp22 = metroRequire(Text4, obj7);
     cResult[6] = tmp22;
     tmp20 = tmp22;
@@ -351,7 +351,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
       }
       const _Symbol = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl5 = tmp(1127).intl;
+        const intl5 = tmp(1126).intl;
         const stringResult = intl5.string(intl7.t.tpxJto);
         cResult[15] = stringResult;
         tmp33 = stringResult;
@@ -369,7 +369,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
       }
       const _Symbol2 = Symbol;
       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl6 = tmp(1127).intl;
+        const intl6 = tmp(1126).intl;
         const stringResult1 = intl6.string(intl7.t.mJ3P0N);
         cResult[18] = stringResult1;
         tmp40 = stringResult1;
@@ -447,8 +447,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items2 };
   const obj2 = { style: tmp.messages, children: items };
   items = [, ];
-  const obj3 = { source: { uri: _modDef12873 }, style: tmp.avatar };
-  ({ uri: _modDef12873 });
+  const obj3 = { source: { uri: _modDef13135 }, style: tmp.avatar };
+  ({ uri: _modDef13135 });
   items[0] = metroRequire(_false, obj3);
   const obj5 = { style: tmp.messageLines, children: items1 };
   const obj6 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(intl7.t.cqpybK) };
@@ -526,7 +526,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =
         let tmp16 = null;
         if (tmp4) {
           const obj3 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-          const ChevronSmallRightIcon = tmp(6631).ChevronSmallRightIcon;
+          const ChevronSmallRightIcon = tmp(6708).ChevronSmallRightIcon;
           tmp16 = metroRequire(ChevronSmallRightIcon, obj3);
         }
         cResult[8] = tmp4;

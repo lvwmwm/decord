@@ -1,20 +1,20 @@
-// Module ID: 9596
-// Function ID: 9597
+// Module ID: 9823
+// Function ID: 9824
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1378, 9557, 21, 4837, 588, 558, 576, 504, 9597, 4680, 9207, 7856, 8086, 5282, 1127, 4833, 5301, 2]
+// Dependencies: [19, 17, 1377, 9784, 21, 4890, 587, 558, 576, 504, 9824, 4722, 9434, 8080, 8279, 5594, 1126, 4886, 5783, 2]
 
-// Module 9596 (ConfirmBlockUserAlert)
+// Module 9823 (ConfirmBlockUserAlert)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import ReportModals from "ReportModals" /* 8086 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9207 */;
-import Constants from "Constants" /* 9557 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import ReportModals from "ReportModals" /* 8279 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
+import Constants from "Constants" /* 9784 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 7353
-// Function ID: 7354
+// Module ID: 7566
+// Function ID: 7567
 // Name: useSelectedConversation
-// Dependencies: [7018, 7022, 558, 576, 7354, 504, 2]
+// Dependencies: [7103, 7108, 558, 576, 7567, 504, 2]
 
-// Module 7353 (useSelectedConversation)
-import resolveSelectedConversationDefault from "resolveSelectedConversation" /* 7354 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7018 */;
-import ConversationsStore from "ConversationsStore" /* 7022 */;
+// Module 7566 (useSelectedConversation)
+import resolveSelectedConversationDefault from "resolveSelectedConversation" /* 7567 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7103 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7108 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = require("react");
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConversationsStore, ];
+    const items = [ChannelConversationsStore, ];
     items[1] = ConversationPreviewStore;
     cResult[0] = items;
     first = items;
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== arg0) {
     const fn = function u() {
-      const selectedConversationId = ConversationsStore.getSelectedConversationId(closure_0);
+      const selectedConversationId = ChannelConversationsStore.getSelectedConversationId(closure_0);
       let tmp4;
       if (null != selectedConversationId) {
         tmp4 = resolveSelectedConversationDefault(tmp, ConversationPreviewStore, tmp2, selectedConversationId);
@@ -55,11 +55,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((arg0) => {
   let closure_0;
   _require = arg0;
-  const items = [ConversationsStore, ConversationPreviewStore];
+  const items = [ChannelConversationsStore, ConversationPreviewStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => {
-    const selectedConversationId = ConversationsStore.getSelectedConversationId(closure_0);
+    const selectedConversationId = ChannelConversationsStore.getSelectedConversationId(closure_0);
     let tmp4;
     if (null != selectedConversationId) {
       tmp4 = resolveSelectedConversationDefault(tmp, ConversationPreviewStore, tmp2, selectedConversationId);

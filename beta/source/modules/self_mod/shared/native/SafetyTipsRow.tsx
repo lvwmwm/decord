@@ -1,15 +1,15 @@
-// Module ID: 8040
-// Function ID: 8041
+// Module ID: 8262
+// Function ID: 8263
 // Name: SafetyTipsRow
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4833, 5916, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 5993, 2]
 
-// Module 8040 (SafetyTipsRow)
+// Module 8262 (SafetyTipsRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const tmp10 = jsx(tmp(5916).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
+    const tmp10 = jsx(tmp(5993).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
     cResult[5] = description;
     cResult[6] = end;
     cResult[7] = tmp6;

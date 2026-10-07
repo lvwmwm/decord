@@ -1,34 +1,34 @@
-// Module ID: 14680
-// Function ID: 14681
+// Module ID: 14965
+// Function ID: 14966
 // Name: QuestBottomSheetConsoleConnect
-// Dependencies: [109, 19, 17, 1086, 21, 588, 4837, 10670, 10713, 10675, 10683, 4801, 6801, 14639, 1987, 7157, 7146, 7156, 5764, 7145, 5760, 8525, 558, 576, 5916, 1127, 5925, 5997, 8346, 8158, 5918, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 587, 4890, 10911, 10954, 10916, 10918, 4854, 6885, 14923, 1987, 7224, 7213, 7223, 5630, 7212, 5626, 8732, 558, 576, 5993, 1126, 6002, 6074, 8546, 8352, 5995, 2]
 // Exports: default
 
-// Module 14680 (QuestBottomSheetConsoleConnect)
+// Module 14965 (QuestBottomSheetConsoleConnect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import TableRow3 from "TableRow" /* 5916 */;
-import TableRowGroup2 from "TableRowGroup" /* 5997 */;
-import openUserSettings from "openUserSettings" /* 6801 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 7146 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7156 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7157 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 8158 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 8346 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 8525 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10683 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import TableRow3 from "TableRow" /* 5993 */;
+import TableRowGroup2 from "TableRowGroup" /* 6074 */;
+import openUserSettings from "openUserSettings" /* 6885 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 7213 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7223 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7224 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 8352 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 8546 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 8732 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10918 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[5] !== tmp4) {
       const obj2 = { hasIcons: true, children: tmp4 };
-      const tmp9 = closure_8(tmp(5997).TableRowGroup, obj2);
+      const tmp9 = closure_8(tmp(6074).TableRowGroup, obj2);
       cResult[5] = tmp4;
       cResult[6] = tmp9;
       tmp7 = tmp9;
@@ -135,7 +135,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const tmp28 = metroImportAll(PlaystationNeutralIcon.PlaystationNeutralIcon, {});
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const stringResult = intl3.string(intl5.t.JafL6p);
       cResult[3] = tmp28;
       cResult[4] = stringResult;
@@ -148,8 +148,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     if (cResult[5] !== tmp4.account) {
       let stringResult1;
       if (null != tmp4.account) {
-        const intl4 = tmp(1127).intl;
-        stringResult1 = intl4.string(tmp(1127).t["u30/ut"]);
+        const intl4 = tmp(1126).intl;
+        stringResult1 = intl4.string(tmp(1126).t["u30/ut"]);
       }
       cResult[5] = tmp4.account;
       cResult[6] = stringResult1;
@@ -189,7 +189,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     const _Symbol = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
       const tmp15 = metroImportAll(XboxNeutralIcon.XboxNeutralIcon, {});
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult2 = intl.string(intl5.t.Nfvo72);
       cResult[13] = tmp15;
       class E {
@@ -207,8 +207,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     if (cResult[15] !== tmp4.account) {
       let stringResult3;
       if (null != tmp4.account) {
-        const intl2 = tmp(1127).intl;
-        stringResult3 = intl2.string(tmp(1127).t["u30/ut"]);
+        const intl2 = tmp(1126).intl;
+        stringResult3 = intl2.string(tmp(1126).t["u30/ut"]);
       }
       cResult[15] = tmp4.account;
       cResult[16] = stringResult3;
@@ -277,8 +277,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     stringResult = undefined;
     const tmp7 = metroImportAll;
     if (null != merged.account) {
-      const intl4 = tmp8(1127).intl;
-      stringResult = intl4.string(tmp8(1127).t["u30/ut"]);
+      const intl4 = tmp8(1126).intl;
+      stringResult = intl4.string(tmp8(1126).t["u30/ut"]);
     }
     return tmp7(TableRow2, obj2);
   } else if (tmp2.XBOX === type) {
@@ -296,8 +296,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     stringResult1 = undefined;
     const tmp3 = metroImportAll;
     if (null != merged.account) {
-      const intl2 = tmp4(1127).intl;
-      stringResult1 = intl2.string(tmp4(1127).t["u30/ut"]);
+      const intl2 = tmp4(1126).intl;
+      stringResult1 = intl2.string(tmp4(1126).t["u30/ut"]);
     }
     return tmp3(TableRow, obj);
   } else {
@@ -309,7 +309,7 @@ ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result2 = size.fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetConsoleConnect.tsx");
 
 export default function QuestBottomSheetConsoleConnect(quest) {
-  let impressionId;
+  let closure_5;
   let initialStep;
   let sourceQuestContent;
   quest = quest.quest;
@@ -317,14 +317,14 @@ export default function QuestBottomSheetConsoleConnect(quest) {
   function openQuestBottomSheet() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { questId: quest.id, initialStep: importDefault, sourceQuestContent: dependencyMap };
-    obj.openLazy(asyncRequire(14639, dependencyMap.paths), "QuestBottomSheet", obj2);
+    obj.openLazy(asyncRequire(14923, dependencyMap.paths), "QuestBottomSheet", obj2);
   }
-  let obj = quest(10670);
+  let obj = quest(10911);
   const xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  let obj2 = quest(10713);
+  let obj2 = quest(10954);
   let closure_4 = obj2.useTrackQuestContentClickedWithImpression();
-  let obj3 = quest(10675);
-  react = obj3.useQuestImpressionId();
+  let obj3 = quest(10916);
+  react = obj3.useGetQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
   let obj4 = {
     consoles: react.useMemo(() => {
@@ -340,7 +340,7 @@ export default function QuestBottomSheetConsoleConnect(quest) {
       if (null != dependencyMap.account) {
         const obj4 = AdAnalyticsInterfaceExperiment;
         if (obj4.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_console_connect")) {
-          const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: AnalyticsTypes.QuestContentCTA.VIEW_CONSOLE_CONNECTIONS, surfaceId: QuestTypes.QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent: dependencyMap, impressionId };
+          const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: AnalyticsTypes.QuestContentCTA.VIEW_CONSOLE_CONNECTIONS, surfaceId: QuestTypes.QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent: dependencyMap, impressionId: closure_5() };
           const captureAdUserAction2 = captureAdUserAction3.captureAdUserAction;
           captureAdUserAction3;
           captureAdUserAction2(obj2);
@@ -356,7 +356,7 @@ export default function QuestBottomSheetConsoleConnect(quest) {
       } else {
         const obj10 = AdAnalyticsInterfaceExperiment;
         if (obj10.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_console_connect")) {
-          const obj6 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: AnalyticsTypes.QuestContentCTA.CONNECT_CONSOLE, surfaceId: QuestTypes.QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent: dependencyMap, impressionId };
+          const obj6 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: AnalyticsTypes.QuestContentCTA.CONNECT_CONSOLE, surfaceId: QuestTypes.QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent: dependencyMap, impressionId: closure_5() };
           const captureAdUserAction = captureAdUserAction3.captureAdUserAction;
           captureAdUserAction3;
           captureAdUserAction(obj6);

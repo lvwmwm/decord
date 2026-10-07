@@ -1,19 +1,19 @@
-// Module ID: 11226
-// Function ID: 11227
+// Module ID: 11484
+// Function ID: 11485
 // Name: ForumOriginalPoster
-// Dependencies: [19, 17, 21, 4837, 588, 5754, 558, 576, 4833, 1127, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 5620, 558, 576, 4886, 1126, 2]
 // Exports: getForumOriginalPoster
 
-// Module 11226 (ForumOriginalPoster)
+// Module 11484 (ForumOriginalPoster)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,8 +47,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-xs/semibold", color: "text-brand", children: intl.string(intl3.t.fyE8sH) };
-      const Text = tmp(4833).Text;
-      intl = tmp(1127).intl;
+      const Text = tmp(4886).Text;
+      intl = tmp(1126).intl;
       const tmp9 = _false(Text, obj2);
       cResult[3] = tmp9;
       tmp7 = tmp9;
@@ -67,8 +67,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.uN6Emt) };
-      const Text2 = tmp(4833).Text;
-      intl2 = tmp(1127).intl;
+      const Text2 = tmp(4886).Text;
+      intl2 = tmp(1126).intl;
       const tmp16 = _false(Text2, obj4);
       cResult[6] = tmp16;
       tmp14 = tmp16;

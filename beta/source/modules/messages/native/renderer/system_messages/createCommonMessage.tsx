@@ -1,23 +1,23 @@
-// Module ID: 7410
-// Function ID: 7411
+// Module ID: 7623
+// Function ID: 7624
 // Name: createCommonMessage
-// Dependencies: [2051, 4837, 4687, 4685, 588, 4515, 7392, 7411, 7412, 7413, 2]
+// Dependencies: [2051, 4890, 4729, 4727, 587, 4552, 7605, 7624, 7625, 7626, 2]
 // Exports: default
 
-// Module 7410 (createCommonMessage)
-import nativeDefault from "native" /* 588 */;
-import DateUtils from "DateUtils" /* 4515 */;
-import shared from "shared" /* 4687 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7392 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7411 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7412 */;
-import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7413 */;
+// Module 7623 (createCommonMessage)
+import nativeDefault from "native" /* 587 */;
+import DateUtils from "DateUtils" /* 4552 */;
+import shared from "shared" /* 4729 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7624 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7625 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7626 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ColorUtils = tmp(4685);
+const ColorUtils = tmp(4727);
 let createStyles = createStyles_mod;
 const result = createStyles.experimental_createToken((theme) => {
   theme = theme.theme;

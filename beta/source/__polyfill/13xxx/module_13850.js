@@ -1,29 +1,12 @@
 // Module ID: 13850
 // Function ID: 13851
-// Dependencies: [13793, 13813]
+// Dependencies: [13848]
 
 // Module 13850
-import _mod13813 from "module_13813" /* 13813 */;
-import getOwnPropertyDescriptor_mod from "module_13793" /* 13793 */;
+import _mod13848 from "module_13848" /* 13848 */;
 
-let getOwnPropertyDescriptor = getOwnPropertyDescriptor_mod;
-if (getOwnPropertyDescriptor) {
-  const _Object = Object;
-  getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-}
-const tmp = _mod13813(prototype, "name");
-let tmp3 = tmp;
-const tmp2 = tmp && "something" === (function something() {
 
-}).name;
-if (tmp3) {
-  const _module = getOwnPropertyDescriptor;
-  let tmp5 = !_module;
-  if (_module) {
-    tmp5 = getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
-    getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
-  }
-  tmp3 = tmp5;
-}
-
-export default { EXISTS: tmp, PROPER: tmp2, CONFIGURABLE: tmp3 };
+export default (arr, arg1) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => _mod13848(arg1, arg0, closure_0));
+};

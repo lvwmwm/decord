@@ -1,20 +1,20 @@
-// Module ID: 12221
-// Function ID: 12222
+// Module ID: 12477
+// Function ID: 12478
 // Name: InAppNotificationUtils
-// Dependencies: [19, 12222, 1086, 12, 1267, 1371, 1103, 558, 576, 6721, 5017, 2]
+// Dependencies: [19, 12478, 1085, 12, 1266, 1370, 1102, 558, 576, 6805, 5070, 2]
 // Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed
 
-// Module 12221 (InAppNotificationUtils)
+// Module 12477 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import v1 from "v1" /* 1267 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6721 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12222 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import v1 from "v1" /* 1266 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6805 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12478 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f110819 = (type) => type.type === constants.GIFV;
+const f112003 = (type) => type.type === constants.GIFV;
 const REACTION_MILESTONE_COUNTS = InAppNotificationConstants.REACTION_MILESTONE_COUNTS;
 ({ AnalyticEvents: hasOwnProperty, ChannelTypes: metroRequire, InAppNotificationTypes: metroImportDefault, MessageEmbedTypes: metroImportAll, MessageFlags: c9 } = Constants);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
@@ -41,7 +41,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
       let everyResult = hasFlag.embeds.length > 0;
       if (everyResult) {
         let embeds = hasFlag.embeds;
-        everyResult = embeds.every(f110819);
+        everyResult = embeds.every(f112003);
       }
       hasFlagResult = everyResult;
     }
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f110819);
+              everyResult = embeds.every(f112003);
             }
             hasFlagResult = everyResult;
           }
@@ -90,7 +90,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
       let everyResult = tmp.embeds.length > 0;
       if (everyResult) {
         let embeds = tmp.embeds;
-        everyResult = embeds.every(f110819);
+        everyResult = embeds.every(f112003);
       }
       hasFlagResult = everyResult;
     }
@@ -108,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f110819);
+              everyResult = embeds.every(f112003);
             }
             hasFlagResult = everyResult;
           }

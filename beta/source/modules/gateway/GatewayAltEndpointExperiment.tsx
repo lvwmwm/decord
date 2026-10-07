@@ -1,12 +1,12 @@
-// Module ID: 14115
-// Function ID: 14116
+// Module ID: 14394
+// Function ID: 14395
 // Name: GatewayAltEndpointExperiment
-// Dependencies: [1441, 558, 576, 2, 14116]
+// Dependencies: [1440, 558, 576, 2, 14395]
 
-// Module 14115 (GatewayAltEndpointExperiment)
+// Module 14394 (GatewayAltEndpointExperiment)
 import react from "react" /* 576 */;
-import GatewayAltEndpointCache from "GatewayAltEndpointCache" /* 14116 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import GatewayAltEndpointCache from "GatewayAltEndpointCache" /* 14395 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 7053
-// Function ID: 7054
+// Module ID: 7120
+// Function ID: 7121
 // Name: parseUserProfileCollectibles
 // Dependencies: [1980, 2]
 // Exports: default
 
-// Module 7053 (parseUserProfileCollectibles)
+// Module 7120 (parseUserProfileCollectibles)
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export default function parseUserProfileCollectibles(collectibles) {
     collectibles1 = collectibles.collectibles;
   }
   if (null == collectibles1) {
-    return { collectibles: "Array", profileEffect: "apply", profileFrame: "ty" };
+    return { collectibles: "Array", profileEffect: "apply", profileFrame: "ip" };
   } else {
     const items = [];
     collectibles = collectibles.collectibles;

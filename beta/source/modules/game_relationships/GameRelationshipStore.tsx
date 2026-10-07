@@ -1,19 +1,19 @@
-// Module ID: 7075
-// Function ID: 7076
+// Module ID: 7142
+// Function ID: 7143
 // Name: GameRelationshipStore
-// Dependencies: [4482, 1086, 4467, 504, 585, 2]
+// Dependencies: [4519, 1085, 4504, 504, 584, 2]
 
-// Module 7075 (GameRelationshipStore)
+// Module 7142 (GameRelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4467 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4504 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;
 
-const f93574 = (item) => {
+const f94406 = (item) => {
   let id;
   let type;
   ({ type, id } = item);
@@ -35,7 +35,7 @@ function recountRelationshipTypes() {
   let c1 = 0;
   let c2 = 0;
   const values = secondaryIndexMap.values();
-  const item = values.forEach(f93574);
+  const item = values.forEach(f94406);
   let closure_7 = c0;
   let closure_8 = c1;
   let closure_9 = c2;
@@ -162,7 +162,7 @@ let obj = {
     let c1 = 0;
     let c2 = 0;
     const values = secondaryIndexMap.values();
-    const item1 = values.forEach(f93574);
+    const item1 = values.forEach(f94406);
     let closure_7 = c0;
     let closure_8 = c1;
     let closure_9 = c2;
@@ -177,7 +177,7 @@ let obj = {
       let c1 = 0;
       c2 = 0;
       const values = obj.values();
-      const item = values.forEach(f93574);
+      const item = values.forEach(f94406);
       let closure_7 = c0;
       let closure_8 = c1;
       let closure_9 = c2;
@@ -194,7 +194,7 @@ let obj = {
       let closure_1 = 0;
       closure_2 = 0;
       const values = obj.values();
-      const item = values.forEach(f93574);
+      const item = values.forEach(f94406);
       let closure_7 = closure_0;
       let closure_8 = closure_1;
       let closure_9 = closure_2;

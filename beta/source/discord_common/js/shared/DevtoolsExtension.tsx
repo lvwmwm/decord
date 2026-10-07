@@ -1,10 +1,10 @@
-// Module ID: 1123
-// Function ID: 1124
+// Module ID: 1122
+// Function ID: 1123
 // Name: DevtoolsExtension
 // Dependencies: [2]
 // Exports: logFluxAction, notifyStoreChange, notifyStoreCreated, reportEvent
 
-// Module 1123 (DevtoolsExtension)
+// Module 1122 (DevtoolsExtension)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/DevtoolsExtension.tsx");

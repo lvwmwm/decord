@@ -1,19 +1,19 @@
-// Module ID: 10513
-// Function ID: 10514
+// Module ID: 10751
+// Function ID: 10752
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 10514, 10242, 5040, 10525, 1987, 6801, 5301, 4833, 1127, 5283, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 10752, 10471, 5093, 10763, 1987, 6885, 5783, 4886, 1126, 5595, 2]
 // Exports: default
 
-// Module 10513 (UnifiedGiftModalSuccessScreen)
+// Module 10751 (UnifiedGiftModalSuccessScreen)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import openUserSettings from "openUserSettings" /* 6801 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import openUserSettings from "openUserSettings" /* 6885 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -52,7 +52,7 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     if (tmp2) {
       const obj2 = { giftBadgeProgress };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(10525, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
+      obj.pushLazy(asyncRequire(10763, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
     }
   }, items);
   const items1 = [onClose];
@@ -66,26 +66,25 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
   let obj2 = { source: tmp4, style: tmp.image };
   const tmp8 = onClose(enabled[12]);
   const items2 = [closure_6(Image, obj2), , , ];
-  const obj3 = { variant: "heading-lg/bold", style: tmp.title, children: intl.string(giftBadgeProgress(enabled[14]).t.MqZXbv) };
-  const Text = giftBadgeProgress(enabled[13]).Text;
-  intl = giftBadgeProgress(enabled[14]).intl;
+  const obj3 = { variant: "heading-lg/bold", style: tmp.title, children: intl.string(tmp2(enabled[14]).t.MqZXbv) };
+  const Text = tmp2(tmp3[13]).Text;
+  intl = tmp2(tmp3[14]).intl;
   items2[1] = closure_6(Text, obj3);
-  const obj4 = { variant: "text-md/medium", style: tmp.description, children: intl2.format(giftBadgeProgress(enabled[14]).t.YS2J4S, { onClick: callback1 }) };
-  const Text2 = giftBadgeProgress(enabled[13]).Text;
-  intl2 = giftBadgeProgress(enabled[14]).intl;
+  const obj4 = { variant: "text-md/medium", style: tmp.description, children: intl2.format(tmp2(enabled[14]).t.YS2J4S, { onClick: callback1 }) };
+  const Text2 = tmp2(tmp3[13]).Text;
+  intl2 = tmp2(tmp3[14]).intl;
   items2[2] = closure_6(Text2, obj4);
   const obj5 = { onPress: callback, text: null, textVariant: "text-md/semibold", grow: true };
-  const BaseTextButton = giftBadgeProgress(enabled[15]).BaseTextButton;
-  const intl3 = giftBadgeProgress(enabled[14]).intl;
+  const BaseTextButton = tmp2(tmp3[15]).BaseTextButton;
+  const intl3 = tmp2(tmp3[14]).intl;
   const tmp7 = closure_7;
-  const tmp9 = closure_6;
   if (enabled) {
     let cpT0Cq;
     if (null != giftBadgeProgress) {
       cpT0Cq = tmp2(tmp3[14]).t.PDTjLN;
     }
-    obj5.text = tmp10(cpT0Cq);
-    items2[3] = tmp9(BaseTextButton, obj5);
+    obj5.text = tmp11(cpT0Cq);
+    items2[3] = closure_6(BaseTextButton, obj5);
     obj.children = items2;
     return tmp7(tmp8, obj);
   }

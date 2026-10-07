@@ -1,17 +1,18 @@
-// Module ID: 15889
-// Function ID: 15890
+// Module ID: 16189
+// Function ID: 16190
 // Name: useGuildActionRows
-// Dependencies: [32, 5024, 6958, 1086, 558, 576, 11754, 6683, 6669, 6681, 6648, 6644, 573, 5371, 6645, 11664, 6684, 6646, 11917, 15788, 15854, 6686, 4749, 15890, 2035, 6807, 2]
+// Dependencies: [32, 5077, 7045, 1085, 558, 576, 12009, 6767, 6753, 6765, 6727, 6723, 573, 6746, 6724, 11916, 16190, 16193, 6768, 6725, 12170, 16153, 6770, 4786, 16194, 2036, 6891, 2]
 
-// Module 15889 (useGuildActionRows)
-import Constants from "Constants" /* 1086 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 6645 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 6958 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 11754 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 11917 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 15854 */;
+// Module 16189 (useGuildActionRows)
+import Constants from "Constants" /* 1085 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 6724 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7045 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12009 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12170 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16153 */;
+import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 16190 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5024 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5077 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,14 +21,14 @@ let _require;
 
 const ChannelListGuildActionRow = GuildSidebarConstants.ChannelListGuildActionRow;
 const GuildFeatures = Constants.GuildFeatures;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   let features2;
   let features3;
   let first;
   let tmp13;
   let tmp14;
-  let tmp29;
-  let tmp32;
+  let tmp30;
+  let tmp33;
   _require = id;
   const obj = require("react");
   const cResult = obj.c(10);
@@ -65,49 +66,107 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   const tmpResult = require("useStateFromStores");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp13, tmp14);
-  const tmpResult10 = require("VibegrationsUtils");
-  const canAccessVibegrations = tmpResult10.useCanAccessVibegrations(id, "useGuildActionRows");
+  const tmpResult10 = require("ConjureUtils");
+  const canAccessConjure = tmpResult10.useCanAccessConjure(id, "useGuildActionRows");
   const tmp16 = useIsNewMemberDefault(id.id);
   const tmpResult11 = require("MemberActionUtils");
   const allActionsCompleted = tmpResult11.useAllActionsCompleted(id.id);
-  const tmpResult12 = require("MemberSafetyPermissionsUtils");
-  const canAccessMemberSafetyPage = tmpResult12.useCanAccessMemberSafetyPage(id.id);
+  const tmp18 = useIsEligibleForServerOnboardingSetupProgressDefault(id.id);
+  let str = "-DISABLED";
+  const useServerOnboardingSetupProgressExperiment = require("ServerOnboardingSetupProgressExperiment").useServerOnboardingSetupProgressExperiment;
+  require("ServerOnboardingSetupProgressExperiment");
+  if (tmp18) {
+    str = "";
+  }
+  const showSetupProgressRow = useServerOnboardingSetupProgressExperiment(`useGuildActionRows${str}`).showSetupProgressRow;
+  const tmpResult13 = require("MemberSafetyPermissionsUtils");
+  const canAccessMemberSafetyPage = tmpResult13.useCanAccessMemberSafetyPage(id.id);
   const features = id.features;
-  const tmpResult13 = require("canUseGuildSpace");
-  const canUseGuildSpace = tmpResult13.useCanUseGuildSpace(id.id, "useGuildActionRows");
+  const tmpResult14 = require("canUseGuildSpace");
+  const canUseGuildSpace = tmpResult14.useCanUseGuildSpace(id.id, "useGuildActionRows");
   const hasItem = features.has(GuildFeatures.HUB);
   ({ features: features2, features: features3 } = id);
   const hasItem1 = features2.has(GuildFeatures.COMMUNITY);
   const hasItem2 = features3.has(GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY);
-  const tmp24 = useHasAllocateBoostPermissionDefault(id.id);
-  const tmpResult14 = require("MobileBoostProgressBarExperiment");
-  const mobileBoostProgressBarEnabled = tmpResult14.useMobileBoostProgressBarEnabled("useGuildActionRows");
-  const tmp26 = useTotalPossibleBoostCountDefault(id);
+  const tmp26 = useHasAllocateBoostPermissionDefault(id.id);
+  const tmp27 = useTotalPossibleBoostCountDefault(id);
   const tmpResult15 = require("GuildOfficialMessageUtils");
   const isGuildOfficialMessagesEnabled = tmpResult15.useIsGuildOfficialMessagesEnabled(id.id, "useGuildActionRows");
   const tmpResult16 = require("GameServerExperiment");
   const gameServerEnabled = tmpResult16.useGameServerEnabled(id.id, "useGuildActionRows");
   if (cResult[4] !== id.features) {
     const features4 = id.features;
-    const hasItem3 = features4.has(tmp20.GAME_SERVERS);
+    const hasItem3 = features4.has(tmp22.GAME_SERVERS);
     cResult[4] = id.features;
     cResult[5] = hasItem3;
-    tmp29 = hasItem3;
+    tmp30 = hasItem3;
   } else {
-    tmp29 = cResult[5];
+    tmp30 = cResult[5];
   }
   const tmpResult17 = require("GameServerTabAlwaysOnExperiment");
   const isGameServerTabAlwaysOnEnabled = tmpResult17.useIsGameServerTabAlwaysOnEnabled("useGuildActionRows");
   if (cResult[6] === gameServerEnabled) {
-    if (cResult[7] === tmp29) {
+    if (cResult[7] === tmp30) {
       if (cResult[8] === isGameServerTabAlwaysOnEnabled) {
-        tmp32 = cResult[9];
+        tmp33 = cResult[9];
       }
       const items2 = [];
       const tmpResult18 = require("useSelectedDismissibleContent");
-      const first1 = _slicedToArray(tmpResult18.useSelectedDismissibleContent(tmp32, undefined, true), 1)[0];
+      const first1 = _slicedToArray(tmpResult18.useSelectedDismissibleContent(tmp33, undefined, true), 1)[0];
       if (hasItem) {
         items2.push(ChannelListGuildActionRow.GUILD_HUB_HEADER_OPTIONS);
+      }
+      if (tmp18) {
+        if (showSetupProgressRow) {
+          items2.push(ChannelListGuildActionRow.GUILD_ONBOARDING_SETUP_PROGRESS);
+        }
+        const tmp45 = !hasItem && canSeeOnboardingHome;
+        if (tmp45) {
+          items2.push(ChannelListGuildActionRow.GUILD_HOME);
+        }
+        if (canUseGuildSpace) {
+          items2.push(ChannelListGuildActionRow.GUILD_SPACE);
+        }
+        if (tmp5) {
+          items2.push(ChannelListGuildActionRow.GUILD_SCHEDULED_EVENTS);
+        }
+        const tmp52 = !hasItem && hasItem1;
+        if (tmp52) {
+          items2.push(ChannelListGuildActionRow.CHANNELS_AND_ROLES);
+        }
+        if (showRoleSubscriptionsInChannelList) {
+          items2.push(ChannelListGuildActionRow.GUILD_ROLE_SUBSCRIPTIONS);
+        }
+        if (guildShopVisibleInGuild) {
+          items2.push(ChannelListGuildActionRow.GUILD_SHOP);
+        }
+        if (result) {
+          items2.push(ChannelListGuildActionRow.GUILD_GAME_SHOP);
+        }
+        if (canReviewGuildMemberApplications) {
+          const features5 = id.features;
+          canReviewGuildMemberApplications = features5.has(tmp22.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+        }
+        if (canReviewGuildMemberApplications) {
+          items2.push(ChannelListGuildActionRow.GUILD_MOD_DASH_MEMBER_SAFETY);
+        }
+        if (tmp26) {
+          items2.push(ChannelListGuildActionRow.GUILD_BOOSTS);
+        }
+        if (isGuildOfficialMessagesEnabled) {
+          items2.push(ChannelListGuildActionRow.GUILD_OFFICIAL_MESSAGES);
+        }
+        if (gameServerEnabled) {
+          if (tmp30) {
+            items2.push(ChannelListGuildActionRow.GAME_SERVERS);
+          } else if (null != first1) {
+            items2.push(ChannelListGuildActionRow.GAME_SERVERS_EMPTY);
+          }
+        }
+        if (canAccessConjure) {
+          items2.push(ChannelListGuildActionRow.GUILD_CONJURE);
+        }
+        return items2;
       }
       if (!allActionsCompleted) {
         if (canSeeOnboardingHome) {
@@ -116,59 +175,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
               if (stateFromStores.length > 0) {
                 items2.push(ChannelListGuildActionRow.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR);
               }
-              const tmp43 = !hasItem && canSeeOnboardingHome;
-              if (tmp43) {
-                items2.push(ChannelListGuildActionRow.GUILD_HOME);
-              }
-              if (canUseGuildSpace) {
-                items2.push(ChannelListGuildActionRow.GUILD_SPACE);
-              }
-              if (tmp5) {
-                items2.push(ChannelListGuildActionRow.GUILD_SCHEDULED_EVENTS);
-              }
-              const tmp50 = !hasItem && hasItem1;
-              if (tmp50) {
-                items2.push(ChannelListGuildActionRow.CHANNELS_AND_ROLES);
-              }
-              if (showRoleSubscriptionsInChannelList) {
-                items2.push(ChannelListGuildActionRow.GUILD_ROLE_SUBSCRIPTIONS);
-              }
-              if (guildShopVisibleInGuild) {
-                items2.push(ChannelListGuildActionRow.GUILD_SHOP);
-              }
-              if (result) {
-                items2.push(ChannelListGuildActionRow.GUILD_GAME_SHOP);
-              }
-              if (canReviewGuildMemberApplications) {
-                const features5 = id.features;
-                canReviewGuildMemberApplications = features5.has(tmp20.MEMBER_VERIFICATION_MANUAL_APPROVAL);
-              }
-              if (canReviewGuildMemberApplications) {
-                items2.push(ChannelListGuildActionRow.GUILD_MOD_DASH_MEMBER_SAFETY);
-              }
-              if (tmp24) {
-                items2.push(ChannelListGuildActionRow.GUILD_BOOSTS);
-              }
-              if (isGuildOfficialMessagesEnabled) {
-                items2.push(ChannelListGuildActionRow.GUILD_OFFICIAL_MESSAGES);
-              }
-              if (gameServerEnabled) {
-                if (tmp29) {
-                  items2.push(ChannelListGuildActionRow.GAME_SERVERS);
-                } else if (null != first1) {
-                  items2.push(ChannelListGuildActionRow.GAME_SERVERS_EMPTY);
-                }
-              }
-              if (canAccessVibegrations) {
-                items2.push(ChannelListGuildActionRow.GUILD_VIBEGRATIONS);
-              }
-              return items2;
             }
           }
         }
       }
-      const tmp40 = id.premiumProgressBarEnabled && mobileBoostProgressBarEnabled && tmp26 > 0;
-      if (tmp40) {
+      const premiumProgressBarEnabled = id.premiumProgressBarEnabled && tmp27 > 0;
+      if (premiumProgressBarEnabled) {
         items2.push(ChannelListGuildActionRow.GUILD_PREMIUM_PROGRESS_BAR);
       }
     }
@@ -176,14 +188,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   if (gameServerEnabled) {
     if (isGameServerTabAlwaysOnEnabled) {
       let items3;
-      if (!tmp29) {
+      if (!tmp30) {
         items3 = [require("dismissible_content").DismissibleContent.EMPTY_GAME_SERVER_TAB];
       }
       cResult[6] = gameServerEnabled;
-      cResult[7] = tmp29;
+      cResult[7] = tmp30;
       cResult[8] = isGameServerTabAlwaysOnEnabled;
       cResult[9] = items3;
-      tmp32 = items3;
+      tmp33 = items3;
     }
   }
   items3 = [];
@@ -191,7 +203,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   let features2;
   let features3;
   _require = id;
-  const tmp2 = useCanSeeEventsInChannelListDefault(id.id);
+  const tmp3 = useCanSeeEventsInChannelListDefault(id.id);
   const obj = require("canReviewGuildMemberApplications");
   let canReviewGuildMemberApplications = obj.useCanReviewGuildMemberApplications(id.id);
   const obj2 = require("useRoleSubscriptionsVisibleInGuild");
@@ -206,106 +218,116 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const items1 = [id.id];
   const obj6 = require("useStateFromStores");
   const stateFromStores = obj6.useStateFromStores(items, () => GuildOnboardingHomeSettingsStore.getNewMemberActions(id.id), items1);
-  const obj7 = require("VibegrationsUtils");
-  const canAccessVibegrations = obj7.useCanAccessVibegrations(id, "useGuildActionRows");
-  const tmp10 = useIsNewMemberDefault(id.id);
+  const obj7 = require("ConjureUtils");
+  const canAccessConjure = obj7.useCanAccessConjure(id, "useGuildActionRows");
+  const tmp11 = useIsNewMemberDefault(id.id);
   const obj8 = require("MemberActionUtils");
   const allActionsCompleted = obj8.useAllActionsCompleted(id.id);
-  const obj9 = require("MemberSafetyPermissionsUtils");
-  const canAccessMemberSafetyPage = obj9.useCanAccessMemberSafetyPage(id.id);
+  const tmp13 = useIsEligibleForServerOnboardingSetupProgressDefault(id.id);
+  let str = "-DISABLED";
+  const useServerOnboardingSetupProgressExperiment = require("ServerOnboardingSetupProgressExperiment").useServerOnboardingSetupProgressExperiment;
+  require("ServerOnboardingSetupProgressExperiment");
+  if (tmp13) {
+    str = "";
+  }
+  const showSetupProgressRow = useServerOnboardingSetupProgressExperiment(`useGuildActionRows${str}`).showSetupProgressRow;
+  const tmp4Result = require("MemberSafetyPermissionsUtils");
+  const canAccessMemberSafetyPage = tmp4Result.useCanAccessMemberSafetyPage(id.id);
   const features = id.features;
-  const obj10 = require("canUseGuildSpace");
-  const canUseGuildSpace = obj10.useCanUseGuildSpace(id.id, "useGuildActionRows");
+  const tmp4Result6 = require("canUseGuildSpace");
+  const canUseGuildSpace = tmp4Result6.useCanUseGuildSpace(id.id, "useGuildActionRows");
   const hasItem = features.has(GuildFeatures.HUB);
   ({ features: features2, features: features3 } = id);
   const hasItem1 = features2.has(GuildFeatures.COMMUNITY);
   const hasItem2 = features3.has(GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY);
-  const tmp18 = useHasAllocateBoostPermissionDefault(id.id);
-  const obj11 = require("MobileBoostProgressBarExperiment");
-  const mobileBoostProgressBarEnabled = obj11.useMobileBoostProgressBarEnabled("useGuildActionRows");
-  const tmp20 = useTotalPossibleBoostCountDefault(id);
-  const obj12 = require("GuildOfficialMessageUtils");
-  const isGuildOfficialMessagesEnabled = obj12.useIsGuildOfficialMessagesEnabled(id.id, "useGuildActionRows");
-  const obj13 = require("GameServerExperiment");
-  const gameServerEnabled = obj13.useGameServerEnabled(id.id, "useGuildActionRows");
+  const tmp21 = useHasAllocateBoostPermissionDefault(id.id);
+  const tmp22 = useTotalPossibleBoostCountDefault(id);
+  const tmp4Result7 = require("GuildOfficialMessageUtils");
+  const isGuildOfficialMessagesEnabled = tmp4Result7.useIsGuildOfficialMessagesEnabled(id.id, "useGuildActionRows");
+  const tmp4Result8 = require("GameServerExperiment");
+  const gameServerEnabled = tmp4Result8.useGameServerEnabled(id.id, "useGuildActionRows");
   const features4 = id.features;
   const hasItem3 = features4.has(GuildFeatures.GAME_SERVERS);
-  const obj14 = require("GameServerTabAlwaysOnExperiment");
-  const isGameServerTabAlwaysOnEnabled = obj14.useIsGameServerTabAlwaysOnEnabled("useGuildActionRows");
+  const tmp4Result9 = require("GameServerTabAlwaysOnExperiment");
+  const isGameServerTabAlwaysOnEnabled = tmp4Result9.useIsGameServerTabAlwaysOnEnabled("useGuildActionRows");
   require("useSelectedDismissibleContent");
-  const tmp14 = GuildFeatures;
-  const tmp3 = _require;
+  const tmp17 = GuildFeatures;
   if (gameServerEnabled) {
     if (isGameServerTabAlwaysOnEnabled) {
       let items2;
       if (!hasItem3) {
-        items2 = [tmp3(2035).DismissibleContent.EMPTY_GAME_SERVER_TAB];
+        items2 = [require("dismissible_content").DismissibleContent.EMPTY_GAME_SERVER_TAB];
       }
       const items3 = [];
-      const first = _slicedToArray(tmp26(items2, undefined, true), 1)[0];
+      const first = _slicedToArray(tmp28(items2, undefined, true), 1)[0];
       if (hasItem) {
         items3.push(ChannelListGuildActionRow.GUILD_HUB_HEADER_OPTIONS);
       }
+      if (tmp13) {
+        if (showSetupProgressRow) {
+          items3.push(ChannelListGuildActionRow.GUILD_ONBOARDING_SETUP_PROGRESS);
+        }
+        const tmp40 = !hasItem && canSeeOnboardingHome;
+        if (tmp40) {
+          items3.push(ChannelListGuildActionRow.GUILD_HOME);
+        }
+        if (canUseGuildSpace) {
+          items3.push(ChannelListGuildActionRow.GUILD_SPACE);
+        }
+        if (tmp3) {
+          items3.push(ChannelListGuildActionRow.GUILD_SCHEDULED_EVENTS);
+        }
+        const tmp47 = !hasItem && hasItem1;
+        if (tmp47) {
+          items3.push(ChannelListGuildActionRow.CHANNELS_AND_ROLES);
+        }
+        if (showRoleSubscriptionsInChannelList) {
+          items3.push(ChannelListGuildActionRow.GUILD_ROLE_SUBSCRIPTIONS);
+        }
+        if (guildShopVisibleInGuild) {
+          items3.push(ChannelListGuildActionRow.GUILD_SHOP);
+        }
+        if (result) {
+          items3.push(ChannelListGuildActionRow.GUILD_GAME_SHOP);
+        }
+        if (canReviewGuildMemberApplications) {
+          const features5 = id.features;
+          canReviewGuildMemberApplications = features5.has(tmp17.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+        }
+        if (canReviewGuildMemberApplications) {
+          items3.push(ChannelListGuildActionRow.GUILD_MOD_DASH_MEMBER_SAFETY);
+        }
+        if (tmp21) {
+          items3.push(ChannelListGuildActionRow.GUILD_BOOSTS);
+        }
+        if (isGuildOfficialMessagesEnabled) {
+          items3.push(ChannelListGuildActionRow.GUILD_OFFICIAL_MESSAGES);
+        }
+        if (gameServerEnabled) {
+          if (hasItem3) {
+            items3.push(ChannelListGuildActionRow.GAME_SERVERS);
+          } else if (null != first) {
+            items3.push(ChannelListGuildActionRow.GAME_SERVERS_EMPTY);
+          }
+        }
+        if (canAccessConjure) {
+          items3.push(ChannelListGuildActionRow.GUILD_CONJURE);
+        }
+        return items3;
+      }
       if (!allActionsCompleted) {
         if (canSeeOnboardingHome) {
-          if (tmp10) {
+          if (tmp11) {
             if (null != stateFromStores) {
               if (stateFromStores.length > 0) {
                 items3.push(ChannelListGuildActionRow.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR);
               }
-              const tmp37 = !hasItem && canSeeOnboardingHome;
-              if (tmp37) {
-                items3.push(ChannelListGuildActionRow.GUILD_HOME);
-              }
-              if (canUseGuildSpace) {
-                items3.push(ChannelListGuildActionRow.GUILD_SPACE);
-              }
-              if (tmp2) {
-                items3.push(ChannelListGuildActionRow.GUILD_SCHEDULED_EVENTS);
-              }
-              const tmp44 = !hasItem && hasItem1;
-              if (tmp44) {
-                items3.push(ChannelListGuildActionRow.CHANNELS_AND_ROLES);
-              }
-              if (showRoleSubscriptionsInChannelList) {
-                items3.push(ChannelListGuildActionRow.GUILD_ROLE_SUBSCRIPTIONS);
-              }
-              if (guildShopVisibleInGuild) {
-                items3.push(ChannelListGuildActionRow.GUILD_SHOP);
-              }
-              if (result) {
-                items3.push(ChannelListGuildActionRow.GUILD_GAME_SHOP);
-              }
-              if (canReviewGuildMemberApplications) {
-                const features5 = id.features;
-                canReviewGuildMemberApplications = features5.has(tmp14.MEMBER_VERIFICATION_MANUAL_APPROVAL);
-              }
-              if (canReviewGuildMemberApplications) {
-                items3.push(ChannelListGuildActionRow.GUILD_MOD_DASH_MEMBER_SAFETY);
-              }
-              if (tmp18) {
-                items3.push(ChannelListGuildActionRow.GUILD_BOOSTS);
-              }
-              if (isGuildOfficialMessagesEnabled) {
-                items3.push(ChannelListGuildActionRow.GUILD_OFFICIAL_MESSAGES);
-              }
-              if (gameServerEnabled) {
-                if (hasItem3) {
-                  items3.push(ChannelListGuildActionRow.GAME_SERVERS);
-                } else if (null != first) {
-                  items3.push(ChannelListGuildActionRow.GAME_SERVERS_EMPTY);
-                }
-              }
-              if (canAccessVibegrations) {
-                items3.push(ChannelListGuildActionRow.GUILD_VIBEGRATIONS);
-              }
-              return items3;
             }
           }
         }
       }
-      const tmp34 = id.premiumProgressBarEnabled && mobileBoostProgressBarEnabled && tmp20 > 0;
-      if (tmp34) {
+      const premiumProgressBarEnabled = id.premiumProgressBarEnabled && tmp22 > 0;
+      if (premiumProgressBarEnabled) {
         items3.push(ChannelListGuildActionRow.GUILD_PREMIUM_PROGRESS_BAR);
       }
     }

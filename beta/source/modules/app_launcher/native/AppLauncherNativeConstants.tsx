@@ -1,13 +1,13 @@
-// Module ID: 1490
-// Function ID: 1491
+// Module ID: 1489
+// Function ID: 1490
 // Name: AppLauncherNativeConstants
-// Dependencies: [558, 1491, 588, 2, 1614]
+// Dependencies: [558, 1490, 587, 2, 1613]
 // Exports: useAppLauncherNavigation
 
-// Module 1490 (AppLauncherNativeConstants)
-import nativeDefault from "native" /* 588 */;
-import useNavigation from "useNavigation" /* 1491 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1614 */;
+// Module 1489 (AppLauncherNativeConstants)
+import nativeDefault from "native" /* 587 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1613 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

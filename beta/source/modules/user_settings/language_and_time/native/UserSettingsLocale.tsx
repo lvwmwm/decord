@@ -1,20 +1,20 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 15245
+// Function ID: 15246
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2116, 2115, 21, 4837, 588, 8656, 558, 576, 504, 1127, 5994, 14961, 6546, 5995, 2]
+// Dependencies: [5, 19, 17, 2117, 2116, 21, 4890, 587, 8863, 558, 576, 504, 1126, 6071, 15246, 6619, 6072, 2]
 
-// Module 14960 (UserSettingsLocale)
+// Module 15245 (UserSettingsLocale)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2116 */;
-import TableRadioRow2 from "TableRadioRow" /* 5994 */;
-import flags from "flags" /* 14961 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2117 */;
+import TableRadioRow2 from "TableRadioRow" /* 6071 */;
+import flags from "flags" /* 15246 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import createStyles from "createStyles" /* 4837 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -150,7 +150,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     cResult[9] = tmp16;
     tmp13 = tmp16;
   }
-  const SafeAreaPaddingView = tmp(6546).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(6619).SafeAreaPaddingView;
   const tmp12 = <SafeAreaPaddingView bottom>{null}</SafeAreaPaddingView>;
   cResult[4] = stateFromStores;
   cResult[5] = tmp9;

@@ -1,16 +1,18 @@
 // Module ID: 13838
 // Function ID: 13839
-// Dependencies: [13839]
+// Dependencies: [13830]
 
 // Module 13838
-import _mod13839 from "module_13839" /* 13839 */;
+import _mod13830 from "module_13830" /* 13830 */;
 
 
-export default (arg0) => {
-  const tmp = _mod13839(arg0);
-  let num = 0;
-  if (tmp > 0) {
-    num = min(tmp, 9007199254740991);
+export default (str, arg1) => {
+  const tmp = _mod13830;
+  str = str.trim();
+  const tmpResult = tmp(str.replace(/^[=v]+/, ""), arg1);
+  let version = null;
+  if (tmpResult) {
+    version = tmpResult.version;
   }
-  return num;
+  return version;
 };

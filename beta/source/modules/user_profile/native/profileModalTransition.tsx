@@ -1,9 +1,9 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 16954
+// Function ID: 16955
 // Name: profileModalTransition
-// Dependencies: [19, 558, 576, 1491, 2]
+// Dependencies: [19, 558, 576, 1490, 2]
 
-// Module 16605 (profileModalTransition)
+// Module 16954 (profileModalTransition)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 let bound, navigation;
 
-const f126109 = (fn) => fn();
+const f127614 = (fn) => fn();
 let c3 = 0;
 const set = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -20,7 +20,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4;
   const obj = navigation(576);
   const cResult = obj.c(3);
-  const obj2 = navigation(1491);
+  const obj2 = navigation(1490);
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
     const fn = function o() {
@@ -32,7 +32,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Math = Math;
           bound = Math.max(0, bound - 1);
           if (bound !== bound) {
-            const item = closure_2_4.forEach(f126109);
+            const item = closure_2_4.forEach(f127614);
           }
         }
       }
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const _Math = Math;
             bound = Math.max(0, bound + 1);
             if (bound !== bound) {
-              const item = closure_2_4.forEach(f126109);
+              const item = closure_2_4.forEach(f127614);
             }
           }
         }),
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Math = Math;
           bound = Math.max(0, bound - 1);
           if (bound !== bound) {
-            const item1 = closure_2_4.forEach(f126109);
+            const item1 = closure_2_4.forEach(f127614);
           }
         }
       };
@@ -76,7 +76,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = react.useEffect(tmp3, tmp4);
 }) : (function useReportProfileModalTransition() {
-  const obj = navigation(1491);
+  const obj = navigation(1490);
   navigation = obj.useNavigation();
   let items = [navigation];
   const effect = react.useEffect(() => {
@@ -87,7 +87,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item = closure_2_4.forEach(f126109);
+          const item = closure_2_4.forEach(f127614);
         }
       }
     }
@@ -100,7 +100,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Math = Math;
           bound = Math.max(0, bound + 1);
           if (bound !== bound) {
-            const item = closure_2_4.forEach(f126109);
+            const item = closure_2_4.forEach(f127614);
           }
         }
       }),
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item1 = closure_2_4.forEach(f126109);
+          const item1 = closure_2_4.forEach(f127614);
         }
       }
     };

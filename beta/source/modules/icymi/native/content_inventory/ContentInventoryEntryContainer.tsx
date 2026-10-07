@@ -1,18 +1,18 @@
-// Module ID: 16149
-// Function ID: 16150
+// Module ID: 16450
+// Function ID: 16451
 // Name: ContentInventoryEntryContainer
-// Dependencies: [19, 17, 1378, 21, 16093, 588, 1370, 558, 576, 7803, 7628, 504, 1189, 16132, 5436, 2]
+// Dependencies: [19, 17, 1377, 21, 16394, 587, 1369, 558, 576, 8029, 7850, 504, 1188, 16435, 5909, 2]
 
-// Module 16149 (ContentInventoryEntryContainer)
+// Module 16450 (ContentInventoryEntryContainer)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7803 */;
+import nativeDefault from "native" /* 587 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16093 */;
+import createICYMIStyles from "createICYMIStyles" /* 16394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const iCYMIStyles = createICYMIStyles.createICYMIStyles((marginBottom, arg1) => 
   if (!arg1) {
     num = marginBottom.margin;
   }
-  const obj = { pressable: { marginTop: num }, container: obj2, screenshotContainer: { marginBottom: marginBottom.margin }, header: { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, marginBottom: marginBottom.margin }, headerInfo: { flex: 1 }, title: { display: "flex", flexDirection: "row", alignItems: "center", gap: 6, marginBottom: num4, marginTop: 2 }, subTitleContainer: { flexDirection: "row", alignItems: "center", gap: tmp(588).space.PX_8 } };
+  const obj = { pressable: { marginTop: num }, container: obj2, screenshotContainer: { marginBottom: marginBottom.margin }, header: { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, marginBottom: marginBottom.margin }, headerInfo: { flex: 1 }, title: { display: "flex", flexDirection: "row", alignItems: "center", gap: 6, marginBottom: num4, marginTop: 2 }, subTitleContainer: { flexDirection: "row", alignItems: "center", gap: tmp(587).space.PX_8 } };
   obj2 = { marginHorizontal: marginBottom.margin, paddingBottom: num2, paddingTop: num3 };
   num2 = 0;
   if (!arg1) {

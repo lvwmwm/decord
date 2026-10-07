@@ -1,11 +1,11 @@
 // Module ID: 649
 // Function ID: 650
 // Name: getNative
-// Dependencies: [613, 524]
+// Dependencies: [612, 524]
 
 // Module 649 (getNative)
 import _mod524 from "module_524" /* 524 */;
-import getNative from "getNative" /* 613 */;
+import getNative from "getNative" /* 612 */;
 
 
-export default getNative(_mod524, "Set");
+export default getNative(_mod524, "WeakMap");

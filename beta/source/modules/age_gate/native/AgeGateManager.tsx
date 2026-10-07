@@ -1,18 +1,18 @@
-// Module ID: 17086
-// Function ID: 17087
+// Module ID: 17444
+// Function ID: 17445
 // Name: AgeGateManager
-// Dependencies: [5, 2051, 2102, 4657, 1111, 1086, 6540, 5047, 5040, 17087, 1987, 1106, 2]
+// Dependencies: [5, 2051, 2103, 4699, 1110, 1085, 6613, 5100, 5093, 17445, 1987, 1105, 2]
 
-// Module 17086 (AgeGateManager)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import AgeGateUtils from "AgeGateUtils" /* 5047 */;
+// Module 17444 (AgeGateManager)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import AgeGateUtils from "AgeGateUtils" /* 5100 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import AgeGateConstants from "AgeGateConstants" /* 1111 */;
-import Constants from "Constants" /* 1086 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import AgeGateConstants from "AgeGateConstants" /* 1110 */;
+import Constants from "Constants" /* 1085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 let c10;

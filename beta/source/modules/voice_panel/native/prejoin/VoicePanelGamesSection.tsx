@@ -1,24 +1,24 @@
-// Module ID: 16943
-// Function ID: 16944
+// Module ID: 17303
+// Function ID: 17304
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 576, 6728, 8125, 8126, 1127, 9216, 5916, 9167, 16944, 9108, 2]
+// Dependencies: [19, 21, 558, 576, 6812, 8319, 8320, 1126, 9443, 5993, 9391, 17304, 9334, 2]
 
-// Module 16943 (VoicePanelGamesSection)
+// Module 17303 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import useGame from "useGame" /* 6728 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8125 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8126 */;
-import FormComponents from "FormComponents" /* 9108 */;
-import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9167 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 16944 */;
+import intl3 from "intl" /* 1126 */;
+import useGame from "useGame" /* 6812 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8319 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8320 */;
+import FormComponents from "FormComponents" /* 9334 */;
+import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9391 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17304 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const GameActivityIconDefault = tmp5(9216);
+const GameActivityIconDefault = tmp5(9443);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
@@ -63,8 +63,8 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
     if ("" !== data.name) {
       name = data.name;
     } else {
-      const intl = tmp(1127).intl;
-      name = intl.string(tmp(1127).t.GIWFlF);
+      const intl = tmp(1126).intl;
+      name = intl.string(tmp(1126).t.GIWFlF);
     }
     if (cResult[6] !== data) {
       const tmp13 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
@@ -86,13 +86,13 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
       } else {
         tmp17 = cResult[9];
       }
-      const TableRow = tmp(5916).TableRow;
-      const intl2 = tmp(1127).intl;
+      const TableRow = tmp(5993).TableRow;
+      const intl2 = tmp(1126).intl;
       const obj6 = { gameName: name };
       tmp16 = <TableRow icon={tmp11} label={name} arrow onPress={tmp17} accessibilityRole="button" accessibilityLabel={intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)} />;
       tmp15 = forResult;
     } else {
-      tmp15 = jsx(tmp(5916).TableRow, { icon: tmp11, label: name, disabled: true });
+      tmp15 = jsx(tmp(5993).TableRow, { icon: tmp11, label: name, disabled: true });
     }
     cResult[2] = data;
     cResult[3] = tmp6;
@@ -119,11 +119,11 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
     if ("" !== data.name) {
       name = data.name;
     } else {
-      const intl = tmp(1127).intl;
-      name = intl.string(tmp(1127).t.GIWFlF);
+      const intl = tmp(1126).intl;
+      name = intl.string(tmp(1126).t.GIWFlF);
     }
     const tmp7 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
-    const TableRow = tmp(5916).TableRow;
+    const TableRow = tmp(5993).TableRow;
     const tmp6 = jsx;
     if (null == tmp4Result) {
       obj5 = { icon: tmp7, label: name, disabled: true };
@@ -139,7 +139,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
         accessibilityRole: "button",
         accessibilityLabel: intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)
       };
-      intl2 = tmp(1127).intl;
+      intl2 = tmp(1126).intl;
       obj6 = { gameName: name };
     }
     return tmp6(TableRow, obj5);
@@ -161,7 +161,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       let tmp10;
       const _Symbol2 = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const stringResult = intl.string(intl3.t.crRMpG);
         cResult[0] = stringResult;
         first = stringResult;

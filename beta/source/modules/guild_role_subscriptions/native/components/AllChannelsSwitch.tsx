@@ -1,24 +1,24 @@
-// Module ID: 17591
-// Function ID: 17592
+// Module ID: 17956
+// Function ID: 17957
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 14761, 1086, 21, 4837, 588, 5837, 558, 576, 4552, 1189, 9215, 1127, 17592, 17593, 2]
+// Dependencies: [19, 17, 15046, 1085, 21, 4890, 587, 5915, 558, 576, 4594, 1188, 9442, 1126, 17957, 17958, 2]
 
-// Module 17591 (AllChannelsSwitch)
+// Module 17956 (AllChannelsSwitch)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import react_native2 from "react-native" /* 4552 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9215 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 14761 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17592 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17593 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import react_native2 from "react-native" /* 4594 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15046 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17957 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17958 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles_mod from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles_mod from "TextStyles" /* 5915 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     ({ accessibilityRole, accessibilityState } = radioA11yNative);
     if (cResult[3] !== icon) {
       const obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon };
-      const Icon = tmp(1189).Icon;
+      const Icon = tmp(1188).Icon;
       const tmp11 = hasOwnProperty(Icon, obj2);
       cResult[3] = icon;
       cResult[4] = tmp11;
@@ -179,11 +179,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = disabled;
   }
   const obj3 = { size: native.Icon.Sizes.MEDIUM, source: icon };
-  const Icon = tmp2(1189).Icon;
+  const Icon = tmp2(1188).Icon;
   items = [hasOwnProperty(Icon, obj3), , ];
   const items1 = [tmp.rowLabel, ];
   let rowLabelSelected = selected;
-  const LegacyText = tmp2(1189).LegacyText;
+  const LegacyText = tmp2(1188).LegacyText;
   if (selected) {
     rowLabelSelected = tmp.rowLabelSelected;
   }
@@ -223,8 +223,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(setChannelAccessFormat(1127).t["vs2T+B"]);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(setChannelAccessFormat(1126).t["vs2T+B"]);
       cResult[5] = stringResult;
       tmp9 = stringResult;
     } else {
@@ -262,8 +262,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1127).intl;
-          const stringResult1 = intl2.string(setChannelAccessFormat(1127).t.l4Tr7X);
+          const intl2 = tmp(1126).intl;
+          const stringResult1 = intl2.string(setChannelAccessFormat(1126).t.l4Tr7X);
           cResult[14] = stringResult1;
           tmp23 = stringResult1;
         } else {

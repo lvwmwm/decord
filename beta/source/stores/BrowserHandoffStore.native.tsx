@@ -1,11 +1,11 @@
 // Module ID: 503
 // Function ID: 504
 // Name: BrowserHandoffStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
 // Module 503 (BrowserHandoffStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const Store = get_initializedDefault.Store;
@@ -17,14 +17,7 @@ class BrowserHandoffStore extends Store {
     return false;
   }
 }
-const prototype = BrowserHandoffStore.prototype;
-Object.defineProperty(prototype, "user", {
-  get: function user() {
-    return null;
-  },
-  set: undefined
-});
-Object.defineProperty(prototype, "key", {
+Object.defineProperty(BrowserHandoffStore.prototype, "key", {
   get: function key() {
     return null;
   },

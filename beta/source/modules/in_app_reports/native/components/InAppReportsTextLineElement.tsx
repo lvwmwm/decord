@@ -1,19 +1,19 @@
-// Module ID: 8106
-// Function ID: 8107
+// Module ID: 8300
+// Function ID: 8301
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4837, 588, 558, 576, 5302, 5907, 6611, 4530, 1370, 4813, 4528, 4833, 1127, 5282, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4890, 587, 558, 576, 5784, 5984, 6688, 4567, 1369, 4866, 4565, 4886, 1126, 5594, 2]
 
-// Module 8106 (InAppReportsTextLineElement)
-import nativeDefault from "native" /* 588 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import CustomMarkupAll from "CustomMarkup" /* 5302 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
+// Module 8300 (InAppReportsTextLineElement)
+import nativeDefault from "native" /* 587 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import CustomMarkupAll from "CustomMarkup" /* 5784 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
   } else {
     first = cResult[0];
   }
-  const tmp8 = sms_body(5907)(first);
+  const tmp8 = sms_body(5984)(first);
   if (is_localized) {
     let tmp10;
     if (cResult[1] !== sms) {
@@ -186,8 +186,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
                   }
                   let obj2 = { variant: "text-sm/semibold", color: "interactive-text-active", children: sms };
                   cResult[22] = sms;
-                  cResult[23] = closure_9(tmp(4833).Text, obj2);
-                  const tmp27 = closure_9(tmp(4833).Text, obj2);
+                  cResult[23] = closure_9(tmp(4886).Text, obj2);
+                  const tmp27 = closure_9(tmp(4886).Text, obj2);
                 } else {
                   class T {
                     constructor() {
@@ -210,7 +210,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
                     }
                   }
                   const string = tmp29.string;
-                  const t = tmp(1127).t;
+                  const t = tmp(1126).t;
                   if (tmp6) {
                     class T {
                       constructor() {
@@ -293,8 +293,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
                 let obj5 = { text: tmp28, size: "sm", onPress: tmp9, variant: "secondary" };
                 cResult[26] = tmp9;
                 cResult[27] = tmp28;
-                cResult[28] = closure_9(tmp(5282).Button, obj5);
-                const tmp33 = closure_9(tmp(5282).Button, obj5);
+                cResult[28] = closure_9(tmp(5594).Button, obj5);
+                const tmp33 = closure_9(tmp(5594).Button, obj5);
               }
               const items1 = [tmp4.smsNumberContainer, tmp14];
               cResult[19] = tmp14;
@@ -304,8 +304,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
             const obj6 = { style: tmp19, variant: "text-md/medium", children: tmp20 };
             cResult[16] = tmp4.description;
             cResult[17] = tmp20;
-            cResult[18] = closure_9(tmp(4833).Text, obj6);
-            const tmp24 = closure_9(tmp(4833).Text, obj6);
+            cResult[18] = closure_9(tmp(4886).Text, obj6);
+            const tmp24 = closure_9(tmp(4886).Text, obj6);
           }
           cResult[13] = body;
           cResult[14] = tmp8;
@@ -313,7 +313,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
           const tmp8Result = tmp8(body);
         }
         const obj7 = { style: tmp4.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-        const tmp18 = closure_9(tmp(4833).Text, obj7);
+        const tmp18 = closure_9(tmp(4886).Text, obj7);
         cResult[10] = tmp4.header;
         cResult[11] = title;
         cResult[12] = tmp18;

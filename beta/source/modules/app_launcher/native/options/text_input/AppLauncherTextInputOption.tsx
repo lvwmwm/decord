@@ -1,19 +1,19 @@
-// Module ID: 11540
-// Function ID: 11541
+// Module ID: 11796
+// Function ID: 11797
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1381, 21, 4837, 588, 558, 576, 10749, 1985, 9646, 11536, 8707, 1189, 11541, 1370, 11542, 1882, 9640, 2]
+// Dependencies: [32, 19, 17, 1380, 21, 4890, 587, 558, 576, 10994, 1985, 9872, 11792, 8932, 1188, 11797, 1369, 11798, 1881, 9866, 2]
 
-// Module 11540 (AppLauncherTextInputOption)
+// Module 11796 (AppLauncherTextInputOption)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9640 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9646 */;
+import nativeDefault from "native" /* 587 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9866 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
   }), 2);
   value = tmp2[0];
   react = tmp2[1];
-  let obj = onChangeText(10749);
+  let obj = onChangeText(10994);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   react.useRef({ start: 0, end: 0 });
   const ref = react.useRef(null);
@@ -345,17 +345,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
       const result = obj.maybeFetchTopEmojisByGuild(guildId);
     }
   }, items2);
-  let obj2 = onChangeText(11536);
+  let obj2 = onChangeText(11792);
   const animationDelayedAutoFocus = obj2.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (entrypoint === onChangeText(8707).AppLauncherEntrypoint.VOICE) {
-    TextInput = tmp4(1189).TextInput;
+  if (entrypoint === onChangeText(8932).AppLauncherEntrypoint.VOICE) {
+    TextInput = tmp4(1188).TextInput;
   } else {
-    TextInput = guildId(11541);
+    TextInput = guildId(11797);
   }
   const items3 = [tmp.container, , ];
   const tmp12 = onChangeText;
@@ -391,7 +391,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
   }
   if (option.type === onChangeText(1985).ApplicationCommandOptionType.INTEGER) {
     let str2 = "numbers-and-punctuation";
-    const tmp4Result = onChangeText(1370);
+    const tmp4Result = onChangeText(1369);
     if (tmp4Result.isAndroid()) {
       str2 = "numeric";
     }
@@ -411,7 +411,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((autoFocus) => {
           const result1 = obj2.openEmojiPickerActionSheet(obj3);
         }
     };
-    tmp14Result = tmp14(guildId(11542), obj5);
+    tmp14Result = tmp14(guildId(11798), obj5);
   }
   items4[1] = tmp14Result;
   return tmp12(tmp13, obj3);

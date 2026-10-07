@@ -1,12 +1,12 @@
-// Module ID: 6743
-// Function ID: 6744
+// Module ID: 6827
+// Function ID: 6828
 // Name: GuildTemplateActionCreators
-// Dependencies: [1086, 585, 1283, 1253, 6744, 2]
+// Dependencies: [1085, 584, 1282, 1252, 6828, 2]
 
-// Module 6743 (GuildTemplateActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import Constants from "Constants" /* 1086 */;
+// Module 6827 (GuildTemplateActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,12 +18,12 @@ let closure_4;
 const map = new Map();
 let obj = {
   resolveGuildTemplate(code) {
-    const f92502 = () => {
+    const f93382 = () => {
       let nextPromise;
       let obj = DispatcherDefault;
       if (obj.isDispatching()) {
         const resolved = Promise.resolve();
-        nextPromise = resolved.then(f92502);
+        nextPromise = resolved.then(f93382);
       } else {
         let obj2 = map;
         nextPromise = map.get(tmp);
@@ -35,15 +35,15 @@ let obj = {
           let obj4 = { url: _false.UNRESOLVED_GUILD_TEMPLATE(code), oldFormErrors: true, rejectWithError: true };
           const get = HTTP.get;
           const value = get(obj4);
-          const nextPromise1 = value.then(f92503, f92504);
-          const cleanupPromise = nextPromise1.finally(f92505);
+          const nextPromise1 = value.then(f93383, f93384);
+          const cleanupPromise = nextPromise1.finally(f93385);
           const result = obj2.set(tmp, cleanupPromise);
           nextPromise = cleanupPromise;
         }
       }
       return nextPromise;
     };
-    const f92503 = (body) => {
+    const f93383 = (body) => {
       body = body.body;
       const obj = closure_2_1(closure_2_2[3]);
       const obj2 = { resolved: true, guild_template_code: code, guild_template_name: body.name, guild_template_description: body.description, guild_template_guild_id: body.source_guild_id };
@@ -54,7 +54,7 @@ let obj = {
       const obj5 = { guildTemplate: closure_2_1(closure_2_2[4])(body), code };
       return obj5;
     };
-    const f92504 = () => {
+    const f93384 = () => {
       const obj = closure_2_1(closure_2_2[3]);
       const obj2 = { resolved: false, guild_template_code: code };
       obj.track(constants.GUILD_TEMPLATE_RESOLVED, obj2);
@@ -63,7 +63,7 @@ let obj = {
       obj3.dispatch(obj4);
       return { guildTemplate: null, code };
     };
-    const f92505 = () => {
+    const f93385 = () => {
       set.delete(closure_0);
     };
     _require = code;
@@ -72,7 +72,7 @@ let obj = {
     let obj = DispatcherDefault;
     if (obj.isDispatching()) {
       let resolved = Promise.resolve();
-      return resolved.then(f92502);
+      return resolved.then(f93382);
     } else {
       let obj2 = map;
       let value = map.get(code);
@@ -86,8 +86,8 @@ let obj = {
         let obj4 = { url: closure_3.UNRESOLVED_GUILD_TEMPLATE(code), oldFormErrors: true, rejectWithError: true };
         let get = HTTP.get;
         const value2 = get(obj4);
-        let nextPromise = value2.then(f92503, f92504);
-        let cleanupPromise = nextPromise.finally(f92505);
+        let nextPromise = value2.then(f93383, f93384);
+        let cleanupPromise = nextPromise.finally(f93385);
         let result = obj2.set(code, cleanupPromise);
         return cleanupPromise;
       }

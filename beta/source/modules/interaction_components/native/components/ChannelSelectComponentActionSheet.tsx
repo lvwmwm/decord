@@ -1,15 +1,15 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 11437
+// Function ID: 11438
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 2051, 2073, 21, 558, 576, 7581, 11176, 7583, 1189, 9038, 11174, 2]
+// Dependencies: [19, 2051, 2074, 21, 558, 576, 7803, 11434, 7805, 1188, 9260, 11432, 2]
 
-// Module 11179 (ChannelSelectComponentActionSheet)
+// Module 11437 (ChannelSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 7581 */;
-import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 7583 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 7803 */;
+import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 7805 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                     let tmp8 = null != channelIconData;
                     const tmp5 = require;
                     if (tmp8) {
-                      tmp8 = jsx(tmp5(1189).Icon, { source: channelIconData });
+                      tmp8 = jsx(tmp5(1188).Icon, { source: channelIconData });
                     }
                     return tmp8;
                   }
@@ -88,7 +88,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                     let tmp8 = null != channelIconData;
                     const tmp5 = require;
                     if (tmp8) {
-                      tmp8 = jsx(tmp5(1189).Icon, { source: channelIconData });
+                      tmp8 = jsx(tmp5(1188).Icon, { source: channelIconData });
                     }
                     return tmp8;
                   }
@@ -110,7 +110,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                     let tmp8 = null != channelIconData;
                     const tmp5 = require;
                     if (tmp8) {
-                      tmp8 = jsx(tmp5(1189).Icon, { source: channelIconData });
+                      tmp8 = jsx(tmp5(1188).Icon, { source: channelIconData });
                     }
                     return tmp8;
                   }
@@ -131,7 +131,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                     let tmp8 = null != channelIconData;
                     const tmp5 = require;
                     if (tmp8) {
-                      tmp8 = jsx(tmp5(1189).Icon, { source: channelIconData });
+                      tmp8 = jsx(tmp5(1188).Icon, { source: channelIconData });
                     }
                     return tmp8;
                   }
@@ -234,7 +234,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         let tmp8 = null != channelIconData;
         const tmp5 = require;
         if (tmp8) {
-          tmp8 = jsx(tmp5(1189).Icon, { source: channelIconData });
+          tmp8 = jsx(tmp5(1188).Icon, { source: channelIconData });
         }
         return tmp8;
       }

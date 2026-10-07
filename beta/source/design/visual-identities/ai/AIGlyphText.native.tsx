@@ -1,17 +1,17 @@
-// Module ID: 13939
-// Function ID: 13940
+// Module ID: 14211
+// Function ID: 14212
 // Name: AIGlyphText
-// Dependencies: [19, 17, 21, 4570, 4837, 13940, 558, 576, 4535, 2]
+// Dependencies: [19, 17, 21, 4612, 4890, 14212, 558, 576, 4580, 2]
 
-// Module 13939 (AIGlyphText)
+// Module 14211 (AIGlyphText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useToken2 from "useToken" /* 4535 */;
-import AIGlyphFont from "AIGlyphFont" /* 13940 */;
+import useToken2 from "useToken" /* 4580 */;
+import AIGlyphFont from "AIGlyphFont" /* 14212 */;
 import react from "react" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import createStyles from "createStyles" /* 4837 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
   }
   let tmp6;
   const tmp4 = undefined !== animated && animated;
-  const useToken = tmp(4535).useToken;
+  const useToken = tmp(4580).useToken;
   useToken2;
   if ("none" !== str) {
     tmp6 = str;

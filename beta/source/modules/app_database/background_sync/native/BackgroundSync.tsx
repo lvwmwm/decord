@@ -1,32 +1,32 @@
-// Module ID: 17106
-// Function ID: 17107
+// Module ID: 17465
+// Function ID: 17466
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 2055, 2051, 4852, 1986, 6903, 1086, 5815, 5772, 2073, 3, 1103, 510, 7178, 1370, 585, 1243, 1253, 2077, 1283, 11, 12, 7070, 7073, 7071, 13214, 15114, 6901, 1376, 6911, 2]
+// Dependencies: [32, 5, 2055, 2051, 4905, 1986, 6988, 1085, 5687, 5638, 2074, 3, 1102, 510, 7251, 1369, 584, 1242, 1252, 2078, 1282, 11, 12, 7137, 7140, 7138, 13479, 15400, 6986, 1375, 6996, 2]
 // Exports: backgroundSync
 
-// Module 17106 (background_sync/BackgroundSync)
+// Module 17465 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2077 */;
-import modules_Messages from "modules/Messages" /* 6901 */;
-import GuildVersionsDefault from "GuildVersions" /* 7070 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7071 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7073 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
+import modules_Messages from "modules/Messages" /* 6986 */;
+import GuildVersionsDefault from "GuildVersions" /* 7137 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7138 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7140 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 4852 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
-import FileSystemStore from "FileSystemStore" /* 6903 */;
-import Constants from "Constants" /* 1086 */;
-import StickersStore from "StickersStore" /* 5815 */;
+import FileSystemStore from "FileSystemStore" /* 6988 */;
+import Constants from "Constants" /* 1085 */;
+import StickersStore from "StickersStore" /* 5687 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import EmojiStore from "EmojiStore" /* 5772 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import EmojiStore from "EmojiStore" /* 5638 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, c1, c11, c21, c22, closure_13, config, readStatesByChannel;
@@ -38,164 +38,226 @@ let metroRequire;
 let unpackModuleId;
 let obj = function _backgroundSync() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_2;
     const force = arg0;
     let c6 = 0;
     let c7 = 0;
     let c5 = 0;
     const iter = (async (arg0, value) => {
-      let closure_5;
-      let closure_6;
-      let closure_7;
       let obj18;
-      closure_131_14.verbose("Starting Background Sync");
-      const tmp184 = flag;
-      if (!tmp184) {
-        const Storage = closure_131_0(closure_131_2[13]).Storage;
-        value = Storage.get(closure_131_16);
-        c1 = value;
-        if (value == null) {
-          c1 = 0;
-        }
-        closure_3 = c1;
-        const _Date2 = Date;
-        if (closure_3 > Date.now()) {
-          closure_131_14.log("Skipping Background Sync because of clock skew");
-          const Storage2 = closure_131_0(closure_131_2[13]).Storage;
-          const _Date4 = Date;
-          const result = Storage2.set(closure_131_16, Date.now());
-          c7 = 3;
-          return { value: undefined, done: true };
-        } else {
-          const _Date3 = Date;
-          if (Date.now() - closure_3 < closure_131_15) {
-            closure_131_14.log("Skipping Background Sync because it has been too soon");
-            c7 = 3;
-            return { value: undefined, done: true };
-          }
-        }
-      }
-      const Storage3 = closure_131_0(closure_131_2[13]).Storage;
-      const _Date5 = Date;
-      const result1 = Storage3.set(closure_131_16, Date.now());
-      await closure_131_10.refresh();
-      if (2 === c6) {
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c7 = 3;
           return { value, done: true };
-        } else if (closure_131_10.isLowDisk) {
-          closure_131_14.log("Skipping Background Sync because disk is low");
         } else {
-          closure_4 = {};
-          const _Date = Date;
-          closure_5 = Date.now();
-          const _String2 = String;
-          closure_6 = String(closure_5);
-          closure_7 = -1;
-          c5 = 2;
-          c6 = 5;
-          c7 = 1;
-          const obj21 = { value: obj18.startBackgroundTask(), done: false };
-          obj18 = closure_131_1(closure_131_2[14]);
-          return obj21;
+          return { value: "IconComponent", done: null };
         }
-      } else if (3 === c6) {
-        c5 = 0;
-        const obj16 = closure_131_1(closure_131_2[18]);
-        obj16.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
-        closure_131_14.verbose("Finished Background Sync", closure_4);
-        const obj17 = closure_131_1(closure_131_2[14]);
-        obj17.endBackgroundTask(closure_7);
-        throw closure_4;
       } else {
-        if (4 === c6) {
-          c5 = 1;
-          config = closure_4;
-          if (429 === config.status) {
-            closure_131_14.verbose("Background sync was rate limited");
-          } else {
-            closure_131_14.error("Background sync encountered error", config);
-          }
-          if (!config.timeout) {
-            const obj13 = closure_131_1(closure_131_2[17]);
-            obj13.captureException(config);
-          }
-          const _String = String;
-          closure_4.error = String(config.message);
-        } else if (5 === c6) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            const obj10 = closure_131_1(closure_131_2[18]);
-            obj10.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
-            closure_131_14.verbose("Finished Background Sync", closure_4);
-            const obj11 = closure_131_1(closure_131_2[14]);
-            obj11.endBackgroundTask(closure_7);
-            c7 = 3;
-            return { value, done: true };
-          } else {
-            let resolved;
-            closure_7 = value;
-            const obj27 = closure_131_0(closure_131_2[15]);
-            if (obj27.isIOS()) {
-              if (closure_7 === closure_131_1(closure_131_2[14]).backgroundTaskIdentifierInvalid) {
-                closure_131_14.verbose("Background sync skipped because background task could not be started");
-                c5 = 0;
-                const obj7 = closure_131_1(closure_131_2[18]);
-                obj7.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
-                closure_131_14.verbose("Finished Background Sync", closure_4);
-                const obj8 = closure_131_1(closure_131_2[14]);
-                obj8.endBackgroundTask(closure_7);
-                c7 = 3;
-                return { value: undefined, done: true };
-              }
-            }
-            const items = [closure_131_19(closure_6, closure_4, closure_5), closure_131_23(closure_6, closure_4, closure_5, flag3), ];
-            const tmp41 = flag2;
-            if (tmp41) {
-              resolved = Promise.resolve();
+        try {
+          let flag;
+          let flag2;
+          let flag3;
+          let closure_5;
+          let closure_6;
+          let closure_7;
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
             } else {
-              resolved = closure_131_21(closure_4, closure_5, flag);
+              closure_2 = tmp4;
+              flag = force.force ?? false;
+              flag2 = tmp188.messagesOnly ?? false;
+              flag3 = tmp188.checkLastMessageId ?? false;
+              closure_3 = undefined;
+              closure_4 = undefined;
+              closure_5 = undefined;
+              closure_6 = undefined;
+              closure_7 = undefined;
+              c6 = 1;
+              c7 = 1;
+              return { value: "Reflect", done: null };
             }
-            items[2] = resolved;
-            c6 = 6;
-            c7 = 1;
-            const obj24 = { value: all(items), done: false };
-            return obj24;
+          } else if (1 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              closure_131_14.verbose("Starting Background Sync");
+              const tmp184 = flag;
+              if (!tmp184) {
+                const Storage = closure_131_0(closure_131_2[13]).Storage;
+                value = Storage.get(closure_131_16);
+                c1 = value;
+                if (value == null) {
+                  c1 = 0;
+                }
+                closure_3 = c1;
+                const _Date2 = Date;
+                if (closure_3 > Date.now()) {
+                  closure_131_14.log("Skipping Background Sync because of clock skew");
+                  const Storage2 = closure_131_0(closure_131_2[13]).Storage;
+                  const _Date4 = Date;
+                  const result = Storage2.set(closure_131_16, Date.now());
+                  c7 = 3;
+                  return { value: undefined, done: true };
+                } else {
+                  const _Date3 = Date;
+                  if (Date.now() - closure_3 < closure_131_15) {
+                    closure_131_14.log("Skipping Background Sync because it has been too soon");
+                    c7 = 3;
+                    return { value: undefined, done: true };
+                  }
+                }
+              }
+              const Storage3 = closure_131_0(closure_131_2[13]).Storage;
+              const _Date5 = Date;
+              const result1 = Storage3.set(closure_131_16, Date.now());
+              c6 = 2;
+              c7 = 1;
+              const obj19 = { value: closure_131_10.refresh(), done: false };
+              return obj19;
+            }
+          } else {
+            if (2 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                return { value, done: true };
+              } else if (closure_131_10.isLowDisk) {
+                closure_131_14.log("Skipping Background Sync because disk is low");
+              } else {
+                closure_4 = {};
+                const _Date = Date;
+                closure_5 = Date.now();
+                const _String2 = String;
+                closure_6 = String(closure_5);
+                closure_7 = -1;
+                c5 = 2;
+                c6 = 5;
+                c7 = 1;
+                const obj21 = { value: obj18.startBackgroundTask(), done: false };
+                obj18 = closure_131_1(closure_131_2[14]);
+                return obj21;
+              }
+            } else if (3 === c6) {
+              c5 = 0;
+              const obj16 = closure_131_1(closure_131_2[18]);
+              obj16.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
+              closure_131_14.verbose("Finished Background Sync", closure_4);
+              const obj17 = closure_131_1(closure_131_2[14]);
+              obj17.endBackgroundTask(closure_7);
+              throw closure_4;
+            } else {
+              if (4 === c6) {
+                c5 = 1;
+                config = closure_4;
+                if (429 === config.status) {
+                  closure_131_14.verbose("Background sync was rate limited");
+                } else {
+                  closure_131_14.error("Background sync encountered error", config);
+                }
+                if (!config.timeout) {
+                  const obj13 = closure_131_1(closure_131_2[17]);
+                  obj13.captureException(config);
+                }
+                const _String = String;
+                closure_4.error = String(config.message);
+              } else if (5 === c6) {
+                if (arg0 === 1) {
+                  c7 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 0;
+                  const obj10 = closure_131_1(closure_131_2[18]);
+                  obj10.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
+                  closure_131_14.verbose("Finished Background Sync", closure_4);
+                  const obj11 = closure_131_1(closure_131_2[14]);
+                  obj11.endBackgroundTask(closure_7);
+                  c7 = 3;
+                  return { value, done: true };
+                } else {
+                  let resolved;
+                  closure_7 = value;
+                  const obj27 = closure_131_0(closure_131_2[15]);
+                  if (obj27.isIOS()) {
+                    if (closure_7 === closure_131_1(closure_131_2[14]).backgroundTaskIdentifierInvalid) {
+                      closure_131_14.verbose("Background sync skipped because background task could not be started");
+                      c5 = 0;
+                      const obj7 = closure_131_1(closure_131_2[18]);
+                      obj7.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
+                      closure_131_14.verbose("Finished Background Sync", closure_4);
+                      const obj8 = closure_131_1(closure_131_2[14]);
+                      obj8.endBackgroundTask(closure_7);
+                      c7 = 3;
+                      return { value: undefined, done: true };
+                    }
+                  }
+                  const items = [closure_131_19(closure_6, closure_4, closure_5), closure_131_23(closure_6, closure_4, closure_5, flag3), ];
+                  const tmp41 = flag2;
+                  if (tmp41) {
+                    resolved = Promise.resolve();
+                  } else {
+                    resolved = closure_131_21(closure_4, closure_5, flag);
+                  }
+                  items[2] = resolved;
+                  c6 = 6;
+                  c7 = 1;
+                  const obj24 = { value: all(items), done: false };
+                  return obj24;
+                }
+              } else if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 0;
+                const obj3 = closure_131_1(closure_131_2[18]);
+                obj3.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
+                closure_131_14.verbose("Finished Background Sync", closure_4);
+                const obj4 = closure_131_1(closure_131_2[14]);
+                obj4.endBackgroundTask(closure_7);
+                c7 = 3;
+                return { value, done: true };
+              } else {
+                const obj26 = { type: "BACKGROUND_SYNC_FINISHED", messagesOnly: flag2 };
+                obj = closure_131_1(closure_131_2[16]);
+                obj.dispatch(obj26);
+                c5 = 1;
+              }
+              c5 = 0;
+              const obj14 = closure_131_1(closure_131_2[18]);
+              obj14.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
+              closure_131_14.verbose("Finished Background Sync", closure_4);
+              const obj15 = closure_131_1(closure_131_2[14]);
+              obj15.endBackgroundTask(closure_7);
+            }
+            c7 = 3;
+            return { value: "IconComponent", done: null };
           }
-        } else if (arg0 === 1) {
-          c7 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 0;
-          const obj3 = closure_131_1(closure_131_2[18]);
-          obj3.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
-          closure_131_14.verbose("Finished Background Sync", closure_4);
-          const obj4 = closure_131_1(closure_131_2[14]);
-          obj4.endBackgroundTask(closure_7);
-          c7 = 3;
-          return { value, done: true };
-        } else {
-          const obj26 = { type: "BACKGROUND_SYNC_FINISHED", messagesOnly: flag2 };
-          obj = closure_131_1(closure_131_2[16]);
-          obj.dispatch(obj26);
-          c5 = 1;
+        } catch (tmp166) {
+          closure_4 = tmp166;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp166;
+          } else if (1 === tmp168) {
+            c6 = 3;
+          } else {
+            c6 = 4;
+          }
         }
-        c5 = 0;
-        const obj14 = closure_131_1(closure_131_2[18]);
-        obj14.track(closure_131_11.BACKGROUND_SYNC_COMPLETED, closure_4);
-        closure_131_14.verbose("Finished Background Sync", closure_4);
-        const obj15 = closure_131_1(closure_131_2[14]);
-        obj15.endBackgroundTask(closure_7);
       }
-      await "IconComponent";
-      closure_3 = tmp;
-      return "Reflect";
     })();
     iter.next();
     return iter;

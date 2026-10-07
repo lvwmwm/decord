@@ -1,74 +1,31 @@
 // Module ID: 1841
 // Function ID: 1842
-// Dependencies: [32, 19, 1836, 1634]
-// Exports: useKeyboardState
+// Dependencies: [1842, 1843, 1844, 1845, 1846]
 
 // Module 1841
-import KeyboardController3 from "KeyboardController" /* 1836 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import _mod1842 from "module_1842" /* 1842 */;
+import _mod1843 from "module_1843" /* 1843 */;
+import _mod1844 from "module_1844" /* 1844 */;
+import _mod1845 from "module_1845" /* 1845 */;
+import _mod1846 from "module_1846" /* 1846 */;
 
-let c3;
-let closure_4;
-({ useEffect: c3, useState: closure_4 } = react);
-let closure_5 = ["keyboardWillShow", "keyboardDidHide"];
-function getLatestState() {
-
+for (const key10013 in _mod1842) {
+  exports[key10013] = _mod1842[key10013];
+  continue;
 }
-function defaultSelector(arg0) {
-  return arg0;
+for (const key10017 in _mod1843) {
+  exports[key10017] = _mod1843[key10017];
+  continue;
 }
-
-export const useKeyboardState = function useKeyboardState(O) {
-  let closure_1;
-  let first;
-  let tmp = O;
-  if (O === undefined) {
-    tmp = defaultSelector;
-  }
-  let closure_0 = tmp;
-  closure_1 = undefined;
-  [first, closure_1] = closure_4(() => {
-    let KeyboardController2;
-    if (typeof getLatestState === "function") {
-      const obj = { isVisible: KeyboardController2.isVisible() };
-      const KeyboardController = KeyboardController3.KeyboardController;
-      const merged = Object.assign(KeyboardController.state());
-      KeyboardController2 = KeyboardController3.KeyboardController;
-      return tmp(obj);
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  });
-  const tmp4 = closure_3(() => {
-    let KeyboardController2;
-    closure_0 = closure_1_5.map((item) => {
-      const KeyboardEvents = closure_0(closure_1[3]).KeyboardEvents;
-      return KeyboardEvents.addListener(item, () => {
-        let KeyboardController2;
-        if (typeof closure_2_6 === "function") {
-          const obj = { isVisible: KeyboardController2.isVisible() };
-          const KeyboardController = closure_0(closure_2_1[2]).KeyboardController;
-          const merged = Object.assign(KeyboardController.state());
-          KeyboardController2 = closure_0(closure_2_1[2]).KeyboardController;
-          return tmp(tmp2(obj));
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      });
-    });
-    if (typeof getLatestState === "function") {
-      let obj = { isVisible: KeyboardController2.isVisible() };
-      let KeyboardController = closure_0(closure_1[2]).KeyboardController;
-      let merged = Object.assign(KeyboardController.state());
-      KeyboardController2 = closure_0(closure_1[2]).KeyboardController;
-      tmp(tmp2(obj));
-      return () => {
-        const item = closure_0.forEach((remove) => remove.remove());
-      };
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  }, []);
-  return first;
-};
+for (const key10021 in _mod1844) {
+  exports[key10021] = _mod1844[key10021];
+  continue;
+}
+for (const key10025 in _mod1845) {
+  exports[key10025] = _mod1845[key10025];
+  continue;
+}
+for (const key10029 in _mod1846) {
+  exports[key10029] = _mod1846[key10029];
+  continue;
+}

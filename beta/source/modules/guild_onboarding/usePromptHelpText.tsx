@@ -1,15 +1,15 @@
-// Module ID: 6547
-// Function ID: 6548
+// Module ID: 6620
+// Function ID: 6621
 // Name: usePromptHelpText
-// Dependencies: [2051, 2105, 4472, 4482, 1378, 1086, 1127, 558, 576, 504, 4990, 2]
+// Dependencies: [2051, 2106, 4509, 4519, 1377, 1085, 1126, 558, 576, 504, 5043, 2]
 
-// Module 6547 (usePromptHelpText)
-import Constants from "Constants" /* 1086 */;
+// Module 6620 (usePromptHelpText)
+import Constants from "Constants" /* 1085 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -282,18 +282,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedChannelIds
   }
   let str = "";
   if (!singleSelect) {
-    const intl = tmp2(1127).intl;
-    str = intl.string(tmp2(1127).t.JshhEl);
+    const intl = tmp2(1126).intl;
+    str = intl.string(tmp2(1126).t.JshhEl);
   }
   if (0 === stateFromStoresArray1.length) {
     if (mapped.length > 0) {
       let str6 = "";
       if (0 !== mapped.length) {
-        const intl4 = tmp2(1127).intl;
+        const intl4 = tmp2(1126).intl;
         const format3 = intl4.format;
         const _Math3 = Math;
         const obj3 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
-        const Kj5GIT = tmp2(1127).t.Kj5GIT;
+        const Kj5GIT = tmp2(1126).t.Kj5GIT;
         [obj6.role1, obj6.role2] = mapped;
         str6 = format3(Kj5GIT, obj3);
       }
@@ -306,11 +306,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedChannelIds
   if (stateFromStoresArray1.length > 0) {
     let str3 = "";
     if (0 !== stateFromStoresArray1.length) {
-      const intl2 = tmp2(1127).intl;
+      const intl2 = tmp2(1126).intl;
       const format = intl2.format;
       const _Math = Math;
       const obj11 = { count: stateFromStoresArray1.length, extraCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook };
-      const Rj841R = tmp2(1127).t.Rj841R;
+      const Rj841R = tmp2(1126).t.Rj841R;
       [obj4.channel1, obj4.channel2] = stateFromStoresArray1;
       str3 = format(Rj841R, obj11);
     }
@@ -318,11 +318,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedChannelIds
     if (mapped.length > 0) {
       let str5 = "";
       if (0 !== mapped.length) {
-        const intl3 = tmp2(1127).intl;
+        const intl3 = tmp2(1126).intl;
         const format2 = intl3.format;
         const _Math2 = Math;
         const obj12 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
-        const cJZxWf = tmp2(1127).t.cJZxWf;
+        const cJZxWf = tmp2(1126).t.cJZxWf;
         [obj5.role1, obj5.role2] = mapped;
         str5 = format2(cJZxWf, obj12);
       }
@@ -588,16 +588,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedChannelIds
   }
   let str = "";
   if (!singleSelect) {
-    const intl = tmp2(1127).intl;
-    str = intl.string(tmp2(1127).t.JshhEl);
+    const intl = tmp2(1126).intl;
+    str = intl.string(tmp2(1126).t.JshhEl);
   }
   if (0 === stateFromStoresArray1.length) {
     if (mapped.length > 0) {
-      const intl4 = tmp2(1127).intl;
+      const intl4 = tmp2(1126).intl;
       const format3 = intl4.format;
       const _Math4 = Math;
       const obj6 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
-      const vdtNYa = tmp2(1127).t.vdtNYa;
+      const vdtNYa = tmp2(1126).t.vdtNYa;
       [obj5.role1, obj5.role2] = mapped;
       str = format3(vdtNYa, obj6);
     }
@@ -605,22 +605,22 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedChannelIds
   }
   if (stateFromStoresArray1.length > 0) {
     if (0 === mapped.length) {
-      const intl3 = tmp2(1127).intl;
+      const intl3 = tmp2(1126).intl;
       const format2 = intl3.format;
       const _Math3 = Math;
       const obj11 = { count: stateFromStoresArray1.length, extraCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook };
-      const ZKywGU = tmp2(1127).t.ZKywGU;
+      const ZKywGU = tmp2(1126).t.ZKywGU;
       [obj4.channel1, obj4.channel2] = stateFromStoresArray1;
       str = format2(ZKywGU, obj11);
     }
   }
   const tmp5 = stateFromStoresArray1.length > 0 && mapped.length > 0;
   if (tmp5) {
-    const intl2 = tmp2(1127).intl;
+    const intl2 = tmp2(1126).intl;
     const format = intl2.format;
     const _Math = Math;
     const obj12 = { channelCount: stateFromStoresArray1.length, extraChannelCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook, roleCount: mapped.length, extraRoleCount: Math.max(mapped.length - 2, 0), role1: null, role2: null };
-    const WewRHM = tmp2(1127).t.WewRHM;
+    const WewRHM = tmp2(1126).t.WewRHM;
     [obj3.channel1, obj3.channel2] = stateFromStoresArray1;
     const _Math2 = Math;
     [obj3.role1, obj3.role2] = mapped;

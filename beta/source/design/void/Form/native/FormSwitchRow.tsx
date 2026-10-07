@@ -1,19 +1,19 @@
-// Module ID: 8071
-// Function ID: 8072
+// Module ID: 8907
+// Function ID: 8908
 // Name: FormSwitchRow
-// Dependencies: [32, 109, 19, 17, 21, 4837, 558, 576, 1370, 6562, 8069, 6560, 5996, 6621, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4890, 558, 576, 1369, 6635, 8905, 6633, 6073, 6698, 2]
 
-// Module 8071 (FormSwitchRow)
+// Module 8907 (FormSwitchRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import RedesignCompat from "RedesignCompat" /* 5996 */;
-import FormRowDefault from "FormRow" /* 6560 */;
-import FormLabelDefault from "FormLabel" /* 6562 */;
+import RedesignCompat from "RedesignCompat" /* 6073 */;
+import FormRowDefault from "FormRow" /* 6633 */;
+import FormLabelDefault from "FormLabel" /* 6635 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,9 +23,9 @@ let c9;
 let metroImportAll;
 let tmp;
 let tmp13;
-const PlatformUtils = tmp(1370);
-const TableSwitchRow2 = tmp(6621);
-const Form_FormSwitchDefault = tmp13(8069);
+const PlatformUtils = tmp(1369);
+const TableSwitchRow2 = tmp(6698);
+const Form_FormSwitchDefault = tmp13(8905);
 let closure_3 = ["onValueChange", "value", "disabled", "label", "subLabel", "accessibilityHint", "trailing", "numberOfLines", "switchProps"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -48,7 +48,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
   let trailing;
   let tmp2 = dependencyMap;
   let tmp = require;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(48);
   if (cResult[0] !== onValueChange) {
     onValueChange = onValueChange.onValueChange;
@@ -82,18 +82,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
     cResult[10] = value;
     tmp12 = trailing;
     tmp11 = switchProps;
-    let tmp10 = disabled;
     tmp9 = subLabel;
     tmp6 = numberOfLines;
     tmp5 = label;
-    let tmp4 = accessibilityHint;
   } else {
-    tmp4 = cResult[1];
     tmp5 = cResult[2];
     tmp6 = cResult[3];
     closure_0 = cResult[4];
     tmp9 = cResult[6];
-    tmp10 = cResult[7];
     tmp11 = cResult[8];
     tmp12 = cResult[9];
     closure_1 = cResult[10];
@@ -111,8 +107,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
   if (cResult[13] === tmp7) {
     let tmp25;
     let tmp24;
-    let obj3 = react;
     [first, closure_3] = react.useState(tmp13);
+    const obj3 = react;
     if (cResult[16] !== tmp13) {
       class O {
         constructor() {
@@ -171,7 +167,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange)
             }
           }
         }
-        let obj4 = { style: tmp18.trailing, children: items1 };
+        const obj4 = { style: tmp18.trailing, children: items1 };
         items1 = [tmp32, null != tmp12 && tmp12];
         cResult[25] = tmp18.trailing;
         const tmp40 = React4(View, obj4);
@@ -395,6 +391,6 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((DEPRECATED_style) 
   }
   return tmp3Result;
 });
-let result = size.fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
+const result = size.fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
 
 export default tmp3;

@@ -1,20 +1,20 @@
-// Module ID: 12460
-// Function ID: 12461
+// Module ID: 12707
+// Function ID: 12708
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6397, 4685, 1127, 4833, 5893, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6469, 4727, 1126, 4886, 5971, 2]
 
-// Module 12460 (InAppReportsGuildPreviewElement)
+// Module 12707 (InAppReportsGuildPreviewElement)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import GuildIcon from "GuildIcon" /* 5893 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6397 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import GuildIcon from "GuildIcon" /* 5971 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6469 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,10 +62,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     if (cResult[5] !== typeConsolidationEyebrow.style) {
       let stringResult;
       if (null != typeConsolidationEyebrow.style) {
-        const intl2 = tmp(1127).intl;
-        stringResult = intl2.string(tmp(1127).t["0ox7Hq"]);
+        const intl2 = tmp(1126).intl;
+        stringResult = intl2.string(tmp(1126).t["0ox7Hq"]);
       } else {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const str = intl.string(intl3.t["0ox7Hq"]);
         stringResult = str.toUpperCase();
       }
@@ -199,10 +199,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   const obj4 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: stringResult };
   if (null != typeConsolidationEyebrow.style) {
-    const intl2 = tmp2(1127).intl;
-    stringResult = intl2.string(tmp2(1127).t["0ox7Hq"]);
+    const intl2 = tmp2(1126).intl;
+    stringResult = intl2.string(tmp2(1126).t["0ox7Hq"]);
   } else {
-    const intl = tmp2(1127).intl;
+    const intl = tmp2(1126).intl;
     const str = intl.string(intl3.t["0ox7Hq"]);
     stringResult = str.toUpperCase();
   }

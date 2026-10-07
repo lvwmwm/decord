@@ -1,19 +1,19 @@
-// Module ID: 9706
-// Function ID: 9707
+// Module ID: 9933
+// Function ID: 9934
 // Name: MessageEmojiActionSheet
-// Dependencies: [19, 17, 1086, 21, 4837, 1370, 558, 576, 1267, 1253, 9707, 6572, 9713, 9714, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 1369, 558, 576, 1266, 1252, 9934, 6645, 9940, 9941, 2]
 
-// Module 9706 (MessageEmojiActionSheet)
+// Module 9933 (MessageEmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import StandardEmojiContentDefault from "StandardEmojiContent" /* 9707 */;
-import CustomEmojiContentDefault from "CustomEmojiContent" /* 9714 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import StandardEmojiContentDefault from "StandardEmojiContent" /* 9934 */;
+import CustomEmojiContentDefault from "CustomEmojiContent" /* 9941 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
   emojiNode = emojiNode.emojiNode;
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = nonce(1267);
+    const tmpResult = nonce(1266);
     const v4Result = tmpResult.v4();
     cResult[0] = v4Result;
     nonce = v4Result;
@@ -101,7 +101,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
     }
     return tmp11;
   }
-  BottomSheet = tmp(6572).BottomSheet;
+  BottomSheet = tmp(6645).BottomSheet;
   tmp11 = <BottomSheet startExpanded onDismiss={tmp7}>{null}</BottomSheet>;
   cResult[4] = tmp4.contentWrapper;
   cResult[5] = tmp8;
@@ -187,7 +187,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
                 }
                 return tmp15;
               }
-              BottomSheet = tmp(6572).BottomSheet;
+              BottomSheet = tmp(6645).BottomSheet;
               const tmp18 = <BottomSheet startExpanded onDismiss={tmp10}>{null}</BottomSheet>;
               cResult[11] = tmp4.contentWrapper;
               cResult[12] = tmp11;
@@ -221,7 +221,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
     const tmp2Result = require("v1");
     const v4Result = tmp2Result.v4();
     _require = v4Result;
-    BottomSheet = tmp2(6572).BottomSheet;
+    BottomSheet = tmp2(6645).BottomSheet;
     return <BottomSheet startExpanded onDismiss={function onDismiss() {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { nonce };

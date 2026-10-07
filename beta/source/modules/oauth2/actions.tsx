@@ -1,20 +1,18 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 8727
+// Function ID: 8728
 // Name: oauth2/actions
-// Dependencies: [5, 2051, 2102, 1086, 1283, 6005, 1095, 2]
+// Dependencies: [5, 2051, 2103, 1085, 1282, 6082, 1094, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 8520 (oauth2/actions)
-import utils_PathUtils from "utils/PathUtils" /* 1095 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+// Module 8727 (oauth2/actions)
+import utils_PathUtils from "utils/PathUtils" /* 1094 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import Constants from "Constants" /* 1086 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
-
-let client_id, code_challenge, code_challenge_method, connected_account_provider, guild_id, integration_type, nonce, permissions, signal;
 
 let metroImportDefault;
 let metroRequire;
@@ -48,6 +46,18 @@ function getLocationContextServer() {
 }
 let obj = function _authorize() {
   obj = _asyncToGenerator(async (authorize) => {
+    let client_id;
+    let closure_2;
+    let code_challenge;
+    let code_challenge_method;
+    let connected_account_provider;
+    let guild_id;
+    let integration_type;
+    let nonce;
+    let permissions;
+    let redirect_uri;
+    let response_type;
+    let state;
     let c3 = 0;
     let c4 = 0;
     const iter = (async (arg0, value) => {
@@ -70,93 +80,26 @@ let obj = function _authorize() {
       let obj7;
       let tmp11;
       let tmp7;
-      if (redirect_uri === 2) {
-        redirect_uri = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          redirect_uri = 2;
-          if (0 === response_type) {
-            if (arg0 === 1) {
-              redirect_uri = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              redirect_uri = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = tmp4;
-              let closure_1 = tmp;
-              authorize = undefined;
-              client_id = undefined;
-              c2 = undefined;
-              code_challenge = undefined;
-              code_challenge_method = undefined;
-              state = undefined;
-              permissions = undefined;
-              guild_id = undefined;
-              c10 = undefined;
-              integration_type = undefined;
-              connected_account_provider = undefined;
-              nonce = undefined;
-              ({ authorize: c0, clientId: c1, scopes: c2, responseType: c3, redirectUri: c4, codeChallenge: c5, codeChallengeMethod: c6, state: c7, permissions: c8, guildId: c9, channelId: c10, integrationType: c11, connectedAccountProvider: c12, nonce: c13 } = closure_0);
-              response_type = 1;
-              redirect_uri = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === response_type) {
-            if (arg0 === 1) {
-              redirect_uri = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              redirect_uri = 3;
-              return { value, done: true };
-            } else {
-              const HTTP = closure_130_0(closure_130_2[4]).HTTP;
-              const request = { url: closure_130_7.OAUTH2_AUTHORIZE, query: obj6, body: obj7, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
-              const post = HTTP.post;
-              obj6 = { client_id, response_type, redirect_uri, code_challenge, code_challenge_method, scope: c2.join(" "), state, nonce };
-              obj7 = { guild_id, webhook_channel_id: tmp7, channel_id: tmp11, permissions, authorize, integration_type, connected_account_provider, location_context: closure_130_8() };
-              tmp7 = undefined;
-              if (null != guild_id) {
-                if (null != c10) {
-                  tmp7 = c10;
-                }
-              }
-              tmp11 = undefined;
-              if (null == guild_id) {
-                if (null != c10) {
-                  tmp11 = c10;
-                }
-              }
-              response_type = 2;
-              redirect_uri = 1;
-              obj3 = closure_130_0(closure_130_2[4]);
-              const obj8 = { value: post(request), done: false };
-              return obj8;
-            }
-          } else if (arg0 === 1) {
-            redirect_uri = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            redirect_uri = 3;
-            return { value, done: true };
-          } else {
-            redirect_uri = 3;
-            return { value: value.body, done: true };
-          }
-        } catch (tmp24) {
-          redirect_uri = 3;
-          throw tmp24;
+      ({ authorize: c0, clientId: c1, scopes: c2, responseType: c3, redirectUri: c4, codeChallenge: c5, codeChallengeMethod: c6, state: c7, permissions: c8, guildId: c9, channelId: c10, integrationType: c11, connectedAccountProvider: c12, nonce: c13 } = closure_0);
+      await "Reflect";
+      const HTTP = closure_130_0(closure_130_2[4]).HTTP;
+      const request = { url: closure_130_7.OAUTH2_AUTHORIZE, query: obj6, body: obj7, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+      const post = HTTP.post;
+      obj6 = { client_id, response_type, redirect_uri, code_challenge, code_challenge_method, scope: c2.join(" "), state, nonce };
+      obj7 = { guild_id, webhook_channel_id: tmp7, channel_id: tmp11, permissions, authorize, integration_type, connected_account_provider, location_context: closure_130_8() };
+      if (null != guild_id) {
+        if (null != c10) {
+          tmp7 = c10;
         }
       }
+      if (null == guild_id) {
+        if (null != c10) {
+          tmp11 = c10;
+        }
+      }
+      obj3 = closure_130_0(closure_130_2[4]);
+      await post(request);
+      return value.body;
     })();
     iter.next();
     return iter;
@@ -165,6 +108,15 @@ let obj = function _authorize() {
 };
 obj = function _fetchAuthorization() {
   obj = _asyncToGenerator(async (client_id) => {
+    let code_challenge;
+    let code_challenge_method;
+    let connected_account_provider;
+    let integration_type;
+    let nonce;
+    let redirect_uri;
+    let response_type;
+    let signal;
+    let state;
     let c3 = 0;
     let c4 = 0;
     const iter = (async (arg0, value) => {
@@ -181,76 +133,16 @@ obj = function _fetchAuthorization() {
       let c9;
       let obj5;
       let obj9;
-      if (code_challenge === 2) {
-        code_challenge = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          code_challenge = 2;
-          if (0 === redirect_uri) {
-            if (arg0 === 1) {
-              code_challenge = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              code_challenge = 3;
-              return { value, done: true };
-            } else {
-              let closure_2 = tmp4;
-              closure_1 = tmp;
-              client_id = undefined;
-              response_type = undefined;
-              code_challenge_method = undefined;
-              state = undefined;
-              integration_type = undefined;
-              connected_account_provider = undefined;
-              nonce = undefined;
-              signal = undefined;
-              ({ clientId: c0, scopes: c1, responseType: c2, redirectUri: c3, codeChallenge: c4, codeChallengeMethod: c5, state: c6, integrationType: c7, connectedAccountProvider: c8, nonce: c9, signal: c10 } = closure_0);
-              redirect_uri = 1;
-              code_challenge = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === redirect_uri) {
-            if (arg0 === 1) {
-              code_challenge = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              code_challenge = 3;
-              return { value, done: true };
-            } else {
-              const HTTP = closure_130_0(closure_130_2[4]).HTTP;
-              const request = { url: closure_130_7.OAUTH2_AUTHORIZE, query: obj5, signal, retries: 3, oldFormErrors: true, rejectWithError: obj9.rejectWithMigratedError() };
-              const get = HTTP.get;
-              obj5 = { client_id, response_type, redirect_uri, code_challenge, code_challenge_method, scope: tmp.join(" "), state, integration_type, connected_account_provider, nonce };
-              redirect_uri = 2;
-              code_challenge = 1;
-              obj9 = closure_130_0(closure_130_2[4]);
-              const obj6 = { value: get(request), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            code_challenge = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            code_challenge = 3;
-            return { value, done: true };
-          } else {
-            code_challenge = 3;
-            return { value: value.body, done: true };
-          }
-        } catch (tmp5) {
-          code_challenge = 3;
-          throw tmp5;
-        }
-      }
+      closure_1 = tmp;
+      ({ clientId: c0, scopes: c1, responseType: c2, redirectUri: c3, codeChallenge: c4, codeChallengeMethod: c5, state: c6, integrationType: c7, connectedAccountProvider: c8, nonce: c9, signal: c10 } = closure_0);
+      await "Reflect";
+      const HTTP = closure_130_0(closure_130_2[4]).HTTP;
+      const request = { url: closure_130_7.OAUTH2_AUTHORIZE, query: obj5, signal, retries: 3, oldFormErrors: true, rejectWithError: obj9.rejectWithMigratedError() };
+      const get = HTTP.get;
+      obj5 = { client_id, response_type, redirect_uri, code_challenge, code_challenge_method, scope: tmp.join(" "), state, integration_type, connected_account_provider, nonce };
+      obj9 = closure_130_0(closure_130_2[4]);
+      await get(request);
+      return value.body;
     })();
     iter.next();
     return iter;

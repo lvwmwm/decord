@@ -1,36 +1,36 @@
-// Module ID: 9765
-// Function ID: 9766
+// Module ID: 9994
+// Function ID: 9995
 // Name: QuestActionCreators
-// Dependencies: [5, 7117, 7149, 5752, 4886, 5751, 7120, 7122, 5757, 1086, 5760, 1283, 585, 4738, 1127, 7127, 1243, 5030, 1261, 5178, 7157, 7146, 7156, 5764, 7135, 9766, 7116, 5027, 5035, 9767, 6885, 7138, 9768, 4675, 9769, 9770, 9785, 1253, 7094, 9787, 9771, 1103, 9788, 2]
+// Dependencies: [5, 7184, 7216, 5617, 4939, 5616, 7187, 7189, 5623, 1085, 5626, 1282, 584, 5313, 1126, 7194, 1242, 5083, 1260, 5407, 7224, 7213, 7223, 5630, 7202, 9995, 7183, 5080, 5088, 9996, 6970, 7205, 9997, 4717, 9998, 9999, 10014, 1252, 7161, 10016, 10000, 1102, 10017, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 9765 (QuestActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6885 */;
-import QuestDataUtils from "QuestDataUtils" /* 7116 */;
-import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7122 */;
-import AnalyticsActions from "AnalyticsActions" /* 7135 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 7146 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 7149 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7156 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7157 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9766 */;
-import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9767 */;
-import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9787 */;
+// Module 9994 (QuestActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6970 */;
+import QuestDataUtils from "QuestDataUtils" /* 7183 */;
+import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7189 */;
+import AnalyticsActions from "AnalyticsActions" /* 7202 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 7213 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 7216 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7223 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7224 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9995 */;
+import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9996 */;
+import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 10016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7117 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5752 */;
-import NetworkStore from "NetworkStore" /* 4886 */;
-import SortedGuildStore from "SortedGuildStore" /* 5751 */;
-import QuestStore from "QuestStore" /* 7120 */;
-import Constants from "Constants" /* 1086 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7184 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5617 */;
+import NetworkStore from "NetworkStore" /* 4939 */;
+import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+import QuestStore from "QuestStore" /* 7187 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let _null, bounty, closure_5, content, enabled, map, quest, stack_trace, text, userStatus;
@@ -86,7 +86,7 @@ let obj = function _manuallyStartConsoleQuest() {
             message = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -440,14 +440,11 @@ obj = function _fetchCurrentQuests() {
 };
 obj = function _sendHeartbeat() {
   obj = _asyncToGenerator(async function(arg0, value) {
-    let _var;
     let c0;
     let c1;
     let c2;
     let c4;
     let c5;
-    let closure_3;
-    let executable_fingerprint;
     let obj2;
     let obj6;
     let obj7;
@@ -455,57 +452,126 @@ obj = function _sendHeartbeat() {
     let terminal;
     let tmp26;
     let closure_0 = arg0;
-    const request = { url: closure_131_14.QUESTS_HEARTBEAT(questId), body: obj6, trackedActionData: obj7, rejectWithError: false };
-    const post = closure_131_1(closure_131_2[17]).post;
-    const tmp44 = closure_131_1(closure_131_2[17]);
-    obj6 = { stream_key: _var, application_id, terminal, executable_path, executable_fingerprint };
-    obj7 = { event: closure_131_0(closure_131_2[18]).NetworkActionNames.QUEST_HEARTBEAT, properties: obj8 };
-    obj8 = { quest_id: questId, application_id, terminal, is_overlay: false, stack_trace: _var, is_playtime_eligible: true };
-    const _Error = Error;
-    const self3 = this;
-    const self4 = this;
-    const error = new Error();
-    const stack = error.stack;
-    _var = stack;
-    if (stack == null) {
-      _var = "";
-    }
-    await post(request);
-    if (2 === c6) {
-      executable_fingerprint = 0;
-      let closure_7 = closure_4;
-      const obj10 = { type: "QUESTS_SEND_HEARTBEAT_FAILURE", error: tmp26, questId, streamKey: _var };
-      const dispatch2 = closure_131_1(closure_131_2[12]).dispatch;
-      const self = this;
-      const self2 = this;
-      const tmp22 = closure_131_1(closure_131_2[12]);
-      tmp26 = new closure_131_1(closure_131_2[13])(closure_7);
-      dispatch2(obj10);
-    } else if (arg0 === 1) {
-      let c7 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      executable_fingerprint = 0;
+    if (c7 === 2) {
       c7 = 3;
-      const obj11 = { value, done: true };
-      return obj11;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      const body = value;
-      obj = { type: "QUESTS_SEND_HEARTBEAT_SUCCESS", userStatus: obj2.questUserStatusFromServer(body.body), questId, streamKey: _var };
-      const dispatch = closure_131_1(closure_131_2[12]).dispatch;
-      const tmp9 = closure_131_1(closure_131_2[12]);
-      obj2 = closure_131_0(closure_131_2[15]);
-      dispatch(obj);
-      executable_fingerprint = 0;
+      let executable_fingerprint;
+      try {
+        let questId;
+        let _var;
+        let application_id;
+        let executable_path;
+        let body;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_3 = tmp;
+            let closure_2 = tmp4;
+            questId = undefined;
+            _var = undefined;
+            application_id = undefined;
+            terminal = undefined;
+            executable_path = undefined;
+            executable_fingerprint = undefined;
+            ({ questId: c0, streamKey: c1, applicationId: c2, terminal } = closure_0);
+            const tmp59 = closure_0;
+            if (terminal === undefined) {
+              terminal = false;
+            }
+            ({ executablePath: c4, executableFingerprint: c5 } = tmp59);
+            body = undefined;
+            c6 = 1;
+            c7 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else if (1 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            executable_fingerprint = 1;
+            const request = { url: closure_131_14.QUESTS_HEARTBEAT(questId), body: obj6, trackedActionData: obj7, rejectWithError: false };
+            const post = closure_131_1(closure_131_2[17]).post;
+            const tmp44 = closure_131_1(closure_131_2[17]);
+            obj6 = { stream_key: _var, application_id, terminal, executable_path, executable_fingerprint };
+            obj7 = { event: closure_131_0(closure_131_2[18]).NetworkActionNames.QUEST_HEARTBEAT, properties: obj8 };
+            obj8 = { quest_id: questId, application_id, terminal, is_overlay: false, stack_trace: _var, is_playtime_eligible: true };
+            const _Error = Error;
+            const self3 = this;
+            const self4 = this;
+            const error = new Error();
+            const stack = error.stack;
+            _var = stack;
+            if (stack == null) {
+              _var = "";
+            }
+            c6 = 3;
+            c7 = 1;
+            const obj9 = { value: post(request), done: false };
+            return obj9;
+          }
+        } else {
+          if (2 === c6) {
+            executable_fingerprint = 0;
+            let closure_7 = closure_4;
+            const obj10 = { type: "QUESTS_SEND_HEARTBEAT_FAILURE", error: tmp26, questId, streamKey: _var };
+            const dispatch2 = closure_131_1(closure_131_2[12]).dispatch;
+            const self = this;
+            const self2 = this;
+            const tmp22 = closure_131_1(closure_131_2[12]);
+            tmp26 = new closure_131_1(closure_131_2[13])(closure_7);
+            dispatch2(obj10);
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            executable_fingerprint = 0;
+            c7 = 3;
+            const obj11 = { value, done: true };
+            return obj11;
+          } else {
+            body = value;
+            obj = { type: "QUESTS_SEND_HEARTBEAT_SUCCESS", userStatus: obj2.questUserStatusFromServer(body.body), questId, streamKey: _var };
+            const dispatch = closure_131_1(closure_131_2[12]).dispatch;
+            const tmp9 = closure_131_1(closure_131_2[12]);
+            obj2 = closure_131_0(closure_131_2[15]);
+            dispatch(obj);
+            executable_fingerprint = 0;
+          }
+          c7 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp32) {
+        closure_4 = tmp32;
+        if (0 === executable_fingerprint) {
+          c7 = 3;
+          throw tmp32;
+        } else {
+          c6 = 2;
+        }
+      }
     }
-    await "IconComponent";
-    ({ questId: c0, streamKey: c1, applicationId: c2, terminal } = closure_0);
-    const tmp59 = closure_0;
-    if (terminal === undefined) {
-      terminal = false;
-    }
-    ({ executablePath: c4, executableFingerprint: c5 } = tmp59);
-    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -1013,55 +1079,106 @@ obj = function _dismissQuestContent() {
 };
 obj = function _completeQuestPreview() {
   obj = _asyncToGenerator(async (questId) => {
-    let closure_4;
     let closure_1 = arg1;
     let c6 = 0;
     let c7 = 0;
     let c5 = 0;
     const iter = (async function(arg0, value) {
-      let num7;
       let obj2;
       let obj6;
       let tmp24;
-      const HTTP = closure_131_0(closure_131_2[11]).HTTP;
-      const request = { url: closure_131_14.QUESTS_PREVIEW_COMPLETE(questId), body: obj6, rejectWithError: false };
-      const post = HTTP.post;
-      obj6 = { percent: num7 };
-      await post(request);
-      if (2 === c6) {
-        c5 = 0;
-        closure_3 = closure_4;
-        const obj8 = { type: "QUESTS_PREVIEW_UPDATE_FAILURE", error: tmp24, questId };
-        const dispatch2 = closure_131_1(closure_131_2[12]).dispatch;
-        const self = this;
-        const self2 = this;
-        closure_131_1(closure_131_2[12]);
-        tmp24 = new closure_131_1(closure_131_2[13])(closure_3);
-        dispatch2(obj8);
-      } else if (arg0 === 1) {
+      if (c7 === 2) {
         c7 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 0;
-        c7 = 3;
-        return { value, done: true };
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
       } else {
-        body = value;
-        obj = { type: "QUESTS_PREVIEW_UPDATE_SUCCESS", previewQuestUserStatus: obj2.questUserStatusFromServer(body.body) };
-        const dispatch = closure_131_1(closure_131_2[12]).dispatch;
-        closure_131_1(closure_131_2[12]);
-        obj2 = closure_131_0(closure_131_2[15]);
-        dispatch(obj);
-        c5 = 0;
+        try {
+          let num7;
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp;
+              body = tmp4;
+              num7 = closure_1;
+              if (closure_1 === undefined) {
+                num7 = 1;
+              }
+              body = undefined;
+              c6 = 1;
+              c7 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              c5 = 1;
+              const HTTP = closure_131_0(closure_131_2[11]).HTTP;
+              const request = { url: closure_131_14.QUESTS_PREVIEW_COMPLETE(questId), body: obj6, rejectWithError: false };
+              const post = HTTP.post;
+              c6 = 3;
+              c7 = 1;
+              obj6 = { percent: num7 };
+              const obj7 = { value: post(request), done: false };
+              return obj7;
+            }
+          } else {
+            if (2 === c6) {
+              c5 = 0;
+              closure_3 = closure_4;
+              const obj8 = { type: "QUESTS_PREVIEW_UPDATE_FAILURE", error: tmp24, questId };
+              const dispatch2 = closure_131_1(closure_131_2[12]).dispatch;
+              const self = this;
+              const self2 = this;
+              closure_131_1(closure_131_2[12]);
+              tmp24 = new closure_131_1(closure_131_2[13])(closure_3);
+              dispatch2(obj8);
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              body = value;
+              obj = { type: "QUESTS_PREVIEW_UPDATE_SUCCESS", previewQuestUserStatus: obj2.questUserStatusFromServer(body.body) };
+              const dispatch = closure_131_1(closure_131_2[12]).dispatch;
+              closure_131_1(closure_131_2[12]);
+              obj2 = closure_131_0(closure_131_2[15]);
+              dispatch(obj);
+              c5 = 0;
+            }
+            c7 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp29) {
+          closure_4 = tmp29;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp29;
+          } else {
+            c6 = 2;
+          }
+        }
       }
-      await "IconComponent";
-      closure_3 = tmp;
-      body = tmp4;
-      num7 = closure_1;
-      if (closure_1 === undefined) {
-        num7 = 1;
-      }
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -1890,69 +2007,108 @@ obj = function _updateVideoProgress() {
 obj = function _fetchVideoTranscript() {
   obj = _asyncToGenerator(async (arg0) => {
     let closure_2;
-    let closure_4;
     const user = arg0;
     let closure_1 = arg1;
     let c6 = 0;
     let c7 = 0;
     let c5 = 0;
     const iter = (async (arg0, value) => {
-      let flag;
-      let questAsset;
-      if (1 === c6) {
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c7 = 3;
           return { value, done: true };
         } else {
-          const obj15 = closure_131_0(closure_131_2[40]);
-          questAsset = obj15.getQuestAsset(user, closure_131_0(closure_131_2[40]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, flag);
-          if (null != questAsset) {
-            const state = closure_131_10.getState();
-            const obj4 = { questId: user.id, fetchStatus: closure_131_11.FETCHING };
-            state.setTranscriptAsset(obj4);
-            c5 = 1;
-            const HTTP = closure_131_0(closure_131_2[11]).HTTP;
-            c6 = 3;
-            c7 = 1;
-            const obj5 = { url: questAsset.url, rejectWithError: true };
-            const obj6 = { value: HTTP.get(obj5), done: false };
-            return obj6;
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let questAsset;
+          let flag;
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              text = tmp;
+              questAsset = tmp4;
+              flag = closure_1;
+              if (closure_1 === undefined) {
+                flag = false;
+              }
+              questAsset = undefined;
+              text = undefined;
+              c6 = 1;
+              c7 = 1;
+              return { value: "Reflect", done: null };
+            }
           } else {
-            const state1 = closure_131_10.getState();
-            const obj7 = { questId: user.id, fetchStatus: closure_131_11.FAILURE };
-            state1.setTranscriptAsset(obj7);
+            if (1 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                return { value, done: true };
+              } else {
+                const obj15 = closure_131_0(closure_131_2[40]);
+                questAsset = obj15.getQuestAsset(user, closure_131_0(closure_131_2[40]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, flag);
+                if (null != questAsset) {
+                  const state = closure_131_10.getState();
+                  const obj4 = { questId: user.id, fetchStatus: closure_131_11.FETCHING };
+                  state.setTranscriptAsset(obj4);
+                  c5 = 1;
+                  const HTTP = closure_131_0(closure_131_2[11]).HTTP;
+                  c6 = 3;
+                  c7 = 1;
+                  const obj5 = { url: questAsset.url, rejectWithError: true };
+                  const obj6 = { value: HTTP.get(obj5), done: false };
+                  return obj6;
+                } else {
+                  const state1 = closure_131_10.getState();
+                  const obj7 = { questId: user.id, fetchStatus: closure_131_11.FAILURE };
+                  state1.setTranscriptAsset(obj7);
+                }
+              }
+            } else if (2 === c6) {
+              c5 = 0;
+              const state2 = closure_131_10.getState();
+              const obj8 = { questId: user.id, fetchStatus: closure_131_11.FAILURE };
+              state2.setTranscriptAsset(obj8);
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              text = value;
+              const state3 = closure_131_10.getState();
+              const obj10 = { questId: user.id, fetchStatus: closure_131_11.SUCCESS, text: text.text, url: questAsset.url };
+              state3.setTranscriptAsset(obj10);
+              c5 = 0;
+            }
+            c7 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp38) {
+          closure_4 = tmp38;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp38;
+          } else {
+            c6 = 2;
           }
         }
-      } else if (2 === c6) {
-        c5 = 0;
-        const state2 = closure_131_10.getState();
-        const obj8 = { questId: user.id, fetchStatus: closure_131_11.FAILURE };
-        state2.setTranscriptAsset(obj8);
-      } else if (arg0 === 1) {
-        c7 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 0;
-        c7 = 3;
-        return { value, done: true };
-      } else {
-        text = value;
-        const state3 = closure_131_10.getState();
-        const obj10 = { questId: user.id, fetchStatus: closure_131_11.SUCCESS, text: text.text, url: questAsset.url };
-        state3.setTranscriptAsset(obj10);
-        c5 = 0;
       }
-      await "IconComponent";
-      text = tmp;
-      questAsset = tmp4;
-      flag = closure_1;
-      if (closure_1 === undefined) {
-        flag = false;
-      }
-      return "Reflect";
     })();
     iter.next();
     return iter;

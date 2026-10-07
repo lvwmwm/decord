@@ -1,18 +1,10 @@
 // Module ID: 1278
 // Function ID: 1279
-// Dependencies: []
+// Dependencies: [1273, 1279]
 
 // Module 1278
-let randomUUID = typeof crypto !== "undefined";
-if (typeof crypto !== "undefined") {
-  const _crypto3 = crypto;
-  randomUUID = crypto.randomUUID;
-}
-if (randomUUID) {
-  const _crypto = crypto;
-  const randomUUID2 = crypto.randomUUID;
-  const _crypto2 = crypto;
-  randomUUID = randomUUID2.bind(crypto);
-}
+import sha1Default from "sha1" /* 1279 */;
+import v35 from "v35" /* 1273 */;
 
-export default { randomUUID };
+
+export default v35("v5", 80, sha1Default);

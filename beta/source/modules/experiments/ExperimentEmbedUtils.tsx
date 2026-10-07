@@ -1,13 +1,13 @@
-// Module ID: 7320
-// Function ID: 7321
+// Module ID: 7534
+// Function ID: 7535
 // Name: ExperimentEmbedUtils
-// Dependencies: [4757, 7321, 7322, 2]
+// Dependencies: [4781, 7535, 7536, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 7320 (ExperimentEmbedUtils)
-import ExperimentManager from "ExperimentManager" /* 4757 */;
-import ExperimentUtilsDefault from "ExperimentUtils" /* 7321 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 7322 */;
+// Module 7534 (ExperimentEmbedUtils)
+import ExperimentManager from "ExperimentManager" /* 4781 */;
+import ExperimentUtilsDefault from "ExperimentUtils" /* 7535 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 7536 */;
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
@@ -59,7 +59,7 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
       if (ExperimentManager.ExperimentSystem.LEGACY === system2) {
         const obj = ExperimentUtilsDefault;
         return obj.getExperimentBucketName(experimentServerAssignment.bucket);
-      } else if (tmp4(4757).ExperimentSystem.APEX === system2) {
+      } else if (tmp4(4781).ExperimentSystem.APEX === system2) {
         const _HermesInternal = HermesInternal;
         return "Variant " + experimentServerAssignment.variantId;
       } else {

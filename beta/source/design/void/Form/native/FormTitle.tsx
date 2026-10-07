@@ -1,17 +1,17 @@
-// Module ID: 8067
-// Function ID: 8068
+// Module ID: 8903
+// Function ID: 8904
 // Name: FormTitle
-// Dependencies: [19, 17, 1086, 21, 1370, 4837, 588, 558, 576, 1189, 2]
+// Dependencies: [19, 17, 1085, 21, 1369, 4890, 587, 558, 576, 1188, 2]
 
-// Module 8067 (FormTitle)
+// Module 8903 (FormTitle)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp;
-const native = tmp(1189);
+const native = tmp(1188);
 ({ View: c2, Platform } = react_native);
 const Fonts = Constants.Fonts;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);

@@ -1,12 +1,12 @@
-// Module ID: 6004
-// Function ID: 6005
+// Module ID: 6081
+// Function ID: 6082
 // Name: VerificationUtils
-// Dependencies: [1086, 1127, 12, 2]
+// Dependencies: [1085, 1126, 12, 2]
 
-// Module 6004 (VerificationUtils)
+// Module 6081 (VerificationUtils)
 import _modDef12 from "module_12" /* 12 */;
-import intl6 from "intl" /* 1127 */;
-import Constants from "Constants" /* 1086 */;
+import intl6 from "intl" /* 1126 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let EMAIL;
@@ -37,11 +37,11 @@ let obj = {
   isEmailReverification(stateFromStores1) {
     return stateFromStores1 === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL || stateFromStores1 === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || stateFromStores1 === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE;
   },
-  isFullScreenVerification(action) {
-    let result = action === UserRequiredActions.REQUIRE_CAPTCHA || action === tmp.REQUIRE_VERIFIED_EMAIL || action === tmp.REQUIRE_VERIFIED_PHONE || action === tmp.REQUIRE_REVERIFIED_PHONE || action === tmp.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || action === tmp.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE;
+  isFullScreenVerification(requiredAction) {
+    let result = requiredAction === UserRequiredActions.REQUIRE_CAPTCHA || requiredAction === tmp.REQUIRE_VERIFIED_EMAIL || requiredAction === tmp.REQUIRE_VERIFIED_PHONE || requiredAction === tmp.REQUIRE_REVERIFIED_PHONE || requiredAction === tmp.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || requiredAction === tmp.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE;
     if (!result) {
       const self = this;
-      result = this.isEmailReverification(action);
+      result = this.isEmailReverification(requiredAction);
     }
     return result;
   },

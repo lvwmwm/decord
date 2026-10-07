@@ -1,15 +1,15 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16895
+// Function ID: 16896
 // Name: MessagesScreen
-// Dependencies: [19, 11715, 7307, 21, 16527, 504, 16460, 16529, 16506, 16528, 16544, 16533, 16520, 16467, 2]
+// Dependencies: [19, 11967, 7513, 21, 16879, 504, 16812, 16881, 16857, 16880, 16896, 16885, 16872, 16819, 2]
 
-// Module 16543 (MessagesScreen)
+// Module 16895 (MessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16506 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 16529 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16857 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 16881 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 11715 */;
-import SearchConstants from "SearchConstants" /* 7307 */;
+import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchConstants from "SearchConstants" /* 7513 */;
 import size from "module_2" /* 2 */;
 
 let Pins;
@@ -71,17 +71,17 @@ const memoResult = react.memo(function MessagesScreen(searchContext) {
   if (searchMessages != null) {
     length = searchMessages.length;
   }
-  const obj6 = { searchContext, hasKeywordResults: num > 0, isKeywordFirstPageLoading: isFirstPageLoading };
+  const obj6 = { searchContext, searchQueryString: stateFromStores, hasKeywordResults: num > 0, isKeywordFirstPageLoading: isFirstPageLoading };
   num = length;
-  const useIntelligenceSearchMessages = tmp(tmp2[10]).useIntelligenceSearchMessages;
+  const useSmartSearchMessages = tmp(tmp2[10]).useSmartSearchMessages;
   tmp(stateFromStores[10]);
   if (length == null) {
     num = 0;
   }
-  const intelligenceSearchMessages = useIntelligenceSearchMessages(obj6);
-  item = intelligenceSearchMessages.item;
+  const smartSearchMessages = useSmartSearchMessages(obj6);
+  item = smartSearchMessages.item;
   const items4 = [callback, item, tmp6, searchMessages, memo, placeholderCount];
-  const status = intelligenceSearchMessages.status;
+  const status = smartSearchMessages.status;
   const memo1 = obj4.useMemo(() => {
     let lineClamp;
     let messageSizeCacheRef;
@@ -116,7 +116,7 @@ const memoResult = react.memo(function MessagesScreen(searchContext) {
   const tmpResult4 = tmp(stateFromStores[12]);
   const contentContainerStyles = tmpResult4.useContentContainerStyles();
   searchMessages(stateFromStores[7]);
-  return <tmp14 data={memo1} searchContext={searchContext} tab={tab} isFocused={isFocused} contentContainerStyle={contentContainerStyles.messagesContentContainer} ItemSeparatorComponent={tmp(stateFromStores[13]).MessageVerticalSeparator} isFirstPageLoading={isFirstPageLoading} isNextPageLoading={isNextPageLoading} keywordResultCount={length} intelligenceStatus={status} />;
+  return <tmp14 data={memo1} searchContext={searchContext} tab={tab} isFocused={isFocused} contentContainerStyle={contentContainerStyles.messagesContentContainer} ItemSeparatorComponent={tmp(stateFromStores[13]).MessageVerticalSeparator} isFirstPageLoading={isFirstPageLoading} isNextPageLoading={isNextPageLoading} keywordResultCount={length} smartSearchStatus={status} />;
 });
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/MessagesScreen.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 11708
-// Function ID: 11709
+// Module ID: 11960
+// Function ID: 11961
 // Name: ListSelectionItem
-// Dependencies: [19, 21, 558, 576, 5916, 2]
+// Dependencies: [19, 21, 558, 576, 5993, 2]
 
-// Module 11708 (ListSelectionItem)
+// Module 11960 (ListSelectionItem)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TableRow2 = tmp(5916);
+const TableRow2 = tmp(5993);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let Icon;

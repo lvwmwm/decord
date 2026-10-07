@@ -1,12 +1,12 @@
-// Module ID: 15220
-// Function ID: 15221
+// Module ID: 15506
+// Function ID: 15507
 // Name: BackButton
-// Dependencies: [21, 558, 576, 1491, 1127, 15217, 15214, 2]
+// Dependencies: [21, 558, 576, 1490, 1126, 15503, 15500, 2]
 
-// Module 15220 (BackButton)
+// Module 15506 (BackButton)
 import Fragment from "Fragment" /* 21 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 15214 */;
-import buttonDefault from "button" /* 15217 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 15500 */;
+import buttonDefault from "button" /* 15503 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,11 +18,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   const obj = props(576);
   const cResult = obj.c(4);
   props = props.props;
-  const obj2 = props(1491);
+  const obj2 = props(1490);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(props(1127).t.Tot4EC);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(props(1126).t.Tot4EC);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     }
     return tmp7;
   }
-  const tmp8 = jsx(navigation(15217), {
+  const tmp8 = jsx(navigation(15503), {
     variant: "secondary",
     text: first,
     onPress() {
@@ -49,11 +49,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
 }) : ((props) => {
   let closure_1;
   props = props.props;
-  const obj = props(1491);
+  const obj = props(1490);
   importDefault = obj.useNavigation();
   buttonDefault;
-  const intl = props(1127).intl;
-  return <tmp variant="secondary" text={intl.string(props(1127).t.Tot4EC)} onPress={function onPress() {
+  const intl = props(1126).intl;
+  return <tmp variant="secondary" text={intl.string(props(1126).t.Tot4EC)} onPress={function onPress() {
     closure_1.push(MfaStepsTypes.MfaScreens.SELECT, props);
   }} />;
 });

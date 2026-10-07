@@ -1,19 +1,19 @@
-// Module ID: 4685
-// Function ID: 4686
+// Module ID: 4727
+// Function ID: 4728
 // Name: ColorUtils
-// Dependencies: [32, 684, 1127, 3, 4686, 2]
+// Dependencies: [32, 683, 1126, 3, 4728, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgb, hexToRgbArray, hexToRgba, hexToRgbaString, hexWithOpacity, hslToString, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 4685 (ColorUtils)
+// Module 4727 (ColorUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import _modDef684 from "module_684" /* 684 */;
-import intl2 from "intl" /* 1127 */;
-import utils_ColorDefault from "utils/Color" /* 4686 */;
+import _modDef683 from "module_683" /* 683 */;
+import intl2 from "intl" /* 1126 */;
+import utils_ColorDefault from "utils/Color" /* 4728 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 function hexToRgba(PRIMARY_760) {
-  obj = _modDef684(PRIMARY_760);
+  obj = _modDef683(PRIMARY_760);
   const tmp = _slicedToArray(obj.rgba(), 4);
   return { r: tmp[0], g: tmp[1], b: tmp[2], a: tmp[3] };
 }
@@ -322,7 +322,7 @@ function hexToRgbaString(tmpResult13, opacity) {
   let tmp4;
   let tmp5;
   let tmp = opacity;
-  obj = _modDef684(tmpResult13);
+  obj = _modDef683(tmpResult13);
   const tmp2 = _slicedToArray(obj.rgba(), 4);
   [tmp3, tmp4, tmp5] = tmp2;
   if (opacity == null) {
@@ -430,12 +430,12 @@ let result = size.fileFinishedImporting("utils/ColorUtils.tsx");
 
 export { hexWithOpacity };
 export const hexToRgb = function hexToRgb(PRIMARY_800) {
-  obj = _modDef684(PRIMARY_800);
+  obj = _modDef683(PRIMARY_800);
   const tmp = _slicedToArray(obj.rgb(), 3);
   return { r: tmp[0], g: tmp[1], b: tmp[2] };
 };
 export const hexToRgbArray = function hexToRgbArray(arg0) {
-  obj = _modDef684(arg0);
+  obj = _modDef683(arg0);
   const items = [, , ];
   [arr[0], arr[1], arr[2]] = obj.rgb();
   _slicedToArray(obj.rgb(), 3);
@@ -444,7 +444,7 @@ export const hexToRgbArray = function hexToRgbArray(arg0) {
 export { hexToRgba };
 export { hexToRgbaString };
 export const hexOpacityToRgba = function hexOpacityToRgba(backgroundColor, dividerOpacity) {
-  obj = _modDef684(backgroundColor);
+  obj = _modDef683(backgroundColor);
   const tmp = _slicedToArray(obj.rgb(), 3);
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + dividerOpacity + ")";
 };
@@ -540,7 +540,7 @@ export const getComplimentaryPaletteForColor = function getComplimentaryPaletteF
         sum2 = diff1 + 360;
       }
       let tmp8 = hslToHex(sum2, sum, sum1);
-      obj = _modDef684(tmp8);
+      obj = _modDef683(tmp8);
       let tmp12 = _slicedToArray(obj.rgb(), 3);
       let items1 = [, , ];
       [arr2[0], arr2[1], arr2[2]] = tmp12;
@@ -596,7 +596,7 @@ export const getAccessibleForegroundColor = function getAccessibleForegroundColo
   let num2 = 0;
   let obj4 = result;
   const tmp2 = result1.luminance() <= 0.5;
-  const obj2 = _modDef684;
+  const obj2 = _modDef683;
   if (obj2.contrast(result, result1) < ratio) {
     while (true) {
       let result2;

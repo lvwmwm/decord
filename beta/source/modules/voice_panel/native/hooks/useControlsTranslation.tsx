@@ -1,12 +1,12 @@
-// Module ID: 16963
-// Function ID: 16964
+// Module ID: 17323
+// Function ID: 17324
 // Name: useControlsTranslation
-// Dependencies: [19, 11648, 11651, 558, 11647, 4570, 5281, 2]
+// Dependencies: [19, 11902, 11905, 558, 11901, 4612, 5597, 2]
 
-// Module 16963 (useControlsTranslation)
-import spring from "spring" /* 5281 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11651 */;
+// Module 17323 (useControlsTranslation)
+import spring from "spring" /* 5597 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

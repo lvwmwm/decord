@@ -1,22 +1,22 @@
-// Module ID: 14304
-// Function ID: 14305
+// Module ID: 14567
+// Function ID: 14568
 // Name: TwoFASetupModal
-// Dependencies: [19, 17, 14305, 21, 4837, 588, 558, 576, 1491, 1492, 14303, 6546, 5282, 1127, 14306, 5933, 14307, 14310, 14311, 14313, 6367, 5907, 6421, 2]
+// Dependencies: [19, 17, 14568, 21, 4890, 587, 558, 576, 1490, 1491, 14566, 6619, 5594, 1126, 14569, 6010, 14570, 14573, 14574, 14577, 6439, 5984, 6496, 2]
 
-// Module 14304 (TwoFASetupModal)
+// Module 14567 (TwoFASetupModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import useInitialValueDefault from "useInitialValue" /* 5907 */;
-import Navigator2 from "Navigator" /* 6421 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14303 */;
-import TwoFAConstants from "TwoFAConstants" /* 14305 */;
-import TwoFASetupScanDefault from "TwoFASetupScan" /* 14310 */;
-import TwoFASetupEnterCodeDefault from "TwoFASetupEnterCode" /* 14311 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import useInitialValueDefault from "useInitialValue" /* 5984 */;
+import Navigator2 from "Navigator" /* 6496 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14566 */;
+import TwoFAConstants from "TwoFAConstants" /* 14568 */;
+import TwoFASetupScanDefault from "TwoFASetupScan" /* 14573 */;
+import TwoFASetupEnterCodeDefault from "TwoFASetupEnterCode" /* 14574 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,9 +51,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const cResult = obj.c(12);
   children = children.children;
   const tmp4 = closure_8();
-  const obj2 = navigation(1491);
+  const obj2 = navigation(1490);
   navigation = obj2.useNavigation();
-  const obj3 = navigation(1492);
+  const obj3 = navigation(1491);
   const name = obj3.useRoute().name;
   if (cResult[0] === navigation) {
     let tmp8;
@@ -90,15 +90,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     let tmp12Result = tmp9;
     if (tmp12Result) {
       const obj5 = { bottom: true, style: tmp4.floatingButton, children: closure_6(Button, obj6) };
-      const SafeAreaPaddingView = tmp(6546).SafeAreaPaddingView;
+      const SafeAreaPaddingView = tmp(6619).SafeAreaPaddingView;
       obj6 = { onPress: tmp8, text: stringResult };
-      Button = tmp(5282).Button;
+      Button = tmp(5594).Button;
       if (name === tmp6.SUCCESS) {
-        const intl2 = tmp(1127).intl;
-        stringResult = intl2.string(tmp(1127).t.i4jeWR);
+        const intl2 = tmp(1126).intl;
+        stringResult = intl2.string(tmp(1126).t.i4jeWR);
       } else {
-        const intl = tmp(1127).intl;
-        stringResult = intl.string(tmp(1127).t.XiOHRX);
+        const intl = tmp(1126).intl;
+        stringResult = intl.string(tmp(1126).t.XiOHRX);
       }
       tmp12Result = tmp12(SafeAreaPaddingView, obj5);
     }
@@ -133,9 +133,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   navigation = undefined;
   children = children.children;
   const tmp = closure_8();
-  let obj = navigation(1491);
+  let obj = navigation(1490);
   navigation = obj.useNavigation();
-  const obj2 = navigation(1492);
+  const obj2 = navigation(1491);
   const name = obj2.useRoute().name;
   let tmp10Result = name !== TwoFAModalSetupSections.ENTER_CODE;
   const items = [navigation, name];
@@ -146,15 +146,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const tmp9 = View;
   if (tmp10Result) {
     const obj4 = { bottom: true, style: tmp.floatingButton, children: closure_6(Button, obj5) };
-    const SafeAreaPaddingView = tmp2(6546).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp2(6619).SafeAreaPaddingView;
     obj5 = { onPress: tmp7, text: stringResult };
-    Button = tmp2(5282).Button;
+    Button = tmp2(5594).Button;
     if (name === tmp5.SUCCESS) {
-      const intl2 = tmp2(1127).intl;
-      stringResult = intl2.string(tmp2(1127).t.i4jeWR);
+      const intl2 = tmp2(1126).intl;
+      stringResult = intl2.string(tmp2(1126).t.i4jeWR);
     } else {
-      const intl = tmp2(1127).intl;
-      stringResult = intl.string(tmp2(1127).t.XiOHRX);
+      const intl = tmp2(1126).intl;
+      stringResult = intl.string(tmp2(1126).t.XiOHRX);
     }
     tmp10Result = tmp10(SafeAreaPaddingView, obj4);
   }
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRouteName) =>
   }
   const tmp6 = useInitialValueDefault(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t["13/7kX"]);
     cResult[1] = stringResult;
     tmp7 = stringResult;
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRouteName) =>
   tmp9 = tmp10;
 }) : ((initialRouteName) => {
   let intl;
-  const f116120 = () => {
+  const f117322 = () => {
     let obj4;
     let obj6;
     let totpSecret;
@@ -297,8 +297,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRouteName) =>
   if (LANDING === undefined) {
     LANDING = TwoFAModalSetupSections.LANDING;
   }
-  let obj = { initialRouteName: LANDING, screens: useInitialValueDefault(f116120), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
-  useInitialValueDefault(f116120);
+  let obj = { initialRouteName: LANDING, screens: useInitialValueDefault(f117322), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
+  useInitialValueDefault(f117322);
   const Navigator = Navigator2.Navigator;
   intl = intl3.intl;
   return metroRequire(Navigator, obj);

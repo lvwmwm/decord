@@ -1,20 +1,20 @@
-// Module ID: 8656
-// Function ID: 8657
+// Module ID: 8863
+// Function ID: 8864
 // Name: UserSettingsActionCreators
-// Dependencies: [5, 4655, 1195, 1194, 1086, 1197, 2032, 1198, 1229, 585, 4684, 2027, 2]
+// Dependencies: [5, 4697, 1194, 1193, 1085, 1196, 2033, 1197, 1228, 584, 4726, 2028, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 8656 (UserSettingsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import wrappers from "wrappers" /* 1229 */;
-import UserSettings from "UserSettings" /* 2027 */;
+// Module 8863 (UserSettingsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import wrappers from "wrappers" /* 1228 */;
+import UserSettings from "UserSettings" /* 2028 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4655 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1195 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
-import ThemeConstants from "ThemeConstants" /* 1197 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeConstants from "ThemeConstants" /* 1196 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -357,7 +357,7 @@ export const saveClientTheme = function saveClientTheme(backgroundGradientPreset
       arg0.theme = DARK;
       let obj2;
       if (null != backgroundGradientPresetId) {
-        const UInt32Value = tmp3(1229).UInt32Value;
+        const UInt32Value = tmp3(1228).UInt32Value;
         const obj = { value: tmp13 };
         obj2 = UInt32Value.create(obj);
       }

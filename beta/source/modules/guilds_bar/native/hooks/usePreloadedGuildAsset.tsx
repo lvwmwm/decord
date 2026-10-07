@@ -1,11 +1,11 @@
-// Module ID: 15975
-// Function ID: 15976
+// Module ID: 16278
+// Function ID: 16279
 // Name: usePreloadedGuildAsset
-// Dependencies: [32, 19, 558, 576, 5895, 5896, 2]
+// Dependencies: [32, 19, 558, 576, 5973, 1886, 2]
 
-// Module 15975 (usePreloadedGuildAsset)
-import useRefValueDefault from "useRefValue" /* 5895 */;
-import FastImageDefault from "FastImage" /* 5896 */;
+// Module 16278 (usePreloadedGuildAsset)
+import react_nativeDefault from "react-native" /* 1886 */;
+import useRefValueDefault from "useRefValue" /* 5973 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, icon, asset
   let obj = require("react");
   const cResult = obj.c(12);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = {};
+    let obj2 = {};
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -81,11 +81,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, icon, asset
         const tmp = guildId;
         if (guildId === ref.current.guildId) {
           if (null != icon) {
-            const tmp5 = icon !== tmp2.current.icon && icon !== tmp2.current.preloading;
-            if (tmp5) {
+            const tmp3 = icon !== tmp2.current.icon && icon !== tmp2.current.preloading;
+            if (tmp3) {
               tmp2.current.preloading = icon;
-              const obj = FastImageDefault;
-              const preloadResult = obj.preload(icon);
+              const obj2 = { uri: icon };
+              const obj = react_nativeDefault;
+              const preloadResult = obj.preload(obj2);
               preloadResult.then(() => {
                 const tmp2 = ref.current.guildId === guildId && tmp.current.preloading === icon;
                 if (tmp2) {
@@ -124,12 +125,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, icon, asset
   dependencyMap = asset;
   let obj = ref;
   _slicedToArray = _slicedToArray(ref.useState({}), 2)[1];
-  const obj2 = { guildId, asset, icon, preloading: icon };
+  let obj2 = { guildId, asset, icon, preloading: icon };
   ref = ref.useRef(obj2);
   const effect = ref.useEffect(() => () => {
     ref.current.guildId = undefined;
   }, []);
-  const tmp3 = useRefValueDefault(ref);
+  let tmp3 = useRefValueDefault(ref);
   if (guildId === tmp3.guildId) {
     asset = tmp3.asset;
   }
@@ -138,11 +139,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, icon, asset
     const tmp = guildId;
     if (guildId === ref.current.guildId) {
       if (null != icon) {
-        const tmp5 = icon !== tmp2.current.icon && icon !== tmp2.current.preloading;
-        if (tmp5) {
+        const tmp3 = icon !== tmp2.current.icon && icon !== tmp2.current.preloading;
+        if (tmp3) {
           tmp2.current.preloading = icon;
-          const obj = FastImageDefault;
-          const preloadResult = obj.preload(icon);
+          const obj2 = { uri: icon };
+          const obj = react_nativeDefault;
+          const preloadResult = obj.preload(obj2);
           preloadResult.then(() => {
             const tmp2 = ref.current.guildId === guildId && tmp.current.preloading === icon;
             if (tmp2) {

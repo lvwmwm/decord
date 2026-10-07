@@ -1,22 +1,22 @@
-// Module ID: 11487
-// Function ID: 11488
+// Module ID: 11743
+// Function ID: 11744
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 6529, 1378, 11488, 2011, 5306, 1985, 558, 576, 8714, 504, 6592, 7791, 11489, 8704, 8587, 8785, 2]
+// Dependencies: [19, 6602, 1377, 11744, 2011, 5788, 1985, 558, 576, 8939, 504, 6665, 8015, 11745, 8929, 8794, 9001, 2]
 
-// Module 11487 (useAppLauncherFrecents)
+// Module 11743 (useAppLauncherFrecents)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 1985 */;
 import Constants from "Constants" /* 2011 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6529 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6592 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8587 */;
-import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 8704 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 8714 */;
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 8785 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6602 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6665 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8794 */;
+import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 8929 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 8939 */;
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 9001 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
-import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 11488 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
+import UserStore from "UserStore" /* 1377 */;
+import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 11744 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -395,7 +395,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
     let tmp16;
     let tmp22;
     let tmp21;
-    let tmp26;
+    let tmp25;
     if (cResult[3] === includeAuthorizedAppsAndFetch) {
       tmp8 = cResult[4];
       tmp9 = cResult[5];
@@ -419,13 +419,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
       tmp12 = cResult[6];
     }
     if (cResult[7] !== includeAuthorizedAppsAndFetch) {
-      class E {
+      class D {
         constructor() {
           tmp = closure_1;
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F140085 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F141709 */ });
           } else {
             found = [];
           }
@@ -438,16 +438,16 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
           return closure_1_5.getFetchState();
         }
       }
-      cResult[8] = E;
-      tmp14 = E;
+      cResult[8] = D;
+      tmp14 = D;
     } else {
-      class E {
+      class D {
         constructor() {
           tmp = closure_1;
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F140085 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F141709 */ });
           } else {
             found = [];
           }
@@ -458,13 +458,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
     const tmpResult4 = tmp(arr4[10]);
     const stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp12, tmp14);
     if (cResult[9] !== sectionDescriptors) {
-      class E {
+      class D {
         constructor() {
           tmp = closure_1;
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F140085 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F141709 */ });
           } else {
             found = [];
           }
@@ -550,14 +550,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
         }
       }
       const items2 = [UserStore];
-      class A {
+      class M {
         constructor() {
-          return closure_1_5.getFetchState();
+          currentUser = closure_1_7.getCurrentUser();
+          nsfwAllowed = undefined;
+          if (currentUser != null) {
+            nsfwAllowed = currentUser.nsfwAllowed;
+          }
+          return nsfwAllowed;
         }
       }
       cResult[14] = items2;
-      cResult[15] = tmp23;
-      tmp22 = tmp23;
+      cResult[15] = M;
+      tmp22 = M;
       tmp21 = items2;
     } else {
       class T {
@@ -588,7 +593,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
       }
     }
     if (onlyActivityApps) {
-      let tmp33;
+      let tmp32;
       class T {
         constructor(arg0) {
           tmp2 = includeAuthorizedAppsAndFetch.id !== closure_1_10.FRECENCY && includeAuthorizedAppsAndFetch.id !== tmp.BUILT_IN;
@@ -598,195 +603,220 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
       if (cResult[29] !== context) {
         class H {
           constructor(arg0) {
-            isEmbeddedAppResult = null != includeAuthorizedAppsAndFetch.application;
-            if (isEmbeddedAppResult) {
+            isActivityAppResult = null != includeAuthorizedAppsAndFetch.application;
+            if (isActivityAppResult) {
               tmp2 = closure_0;
               tmp3 = closure_3;
               obj = closure_0(closure_3[15]);
-              isEmbeddedAppResult = obj.isEmbeddedApp(includeAuthorizedAppsAndFetch.application);
+              isActivityAppResult = obj.isActivityApp(includeAuthorizedAppsAndFetch.application);
             }
-            if (isEmbeddedAppResult) {
+            if (isActivityAppResult) {
               tmp4 = closure_0;
               tmp5 = closure_3;
               obj2 = closure_0(closure_3[16]);
               tmp6 = context;
-              isEmbeddedAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
+              isActivityAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
             }
-            return isEmbeddedAppResult;
+            return isActivityAppResult;
           }
         }
         cResult[29] = context;
-        class A {
+        class M {
           constructor() {
-            return closure_1_5.getFetchState();
+            currentUser = closure_1_7.getCurrentUser();
+            nsfwAllowed = undefined;
+            if (currentUser != null) {
+              nsfwAllowed = currentUser.nsfwAllowed;
+            }
+            return nsfwAllowed;
           }
         }
         cResult[30] = H;
       } else {
         class H {
           constructor(arg0) {
-            isEmbeddedAppResult = null != includeAuthorizedAppsAndFetch.application;
-            if (isEmbeddedAppResult) {
+            isActivityAppResult = null != includeAuthorizedAppsAndFetch.application;
+            if (isActivityAppResult) {
               tmp2 = closure_0;
               tmp3 = closure_3;
               obj = closure_0(closure_3[15]);
-              isEmbeddedAppResult = obj.isEmbeddedApp(includeAuthorizedAppsAndFetch.application);
+              isActivityAppResult = obj.isActivityApp(includeAuthorizedAppsAndFetch.application);
             }
-            if (isEmbeddedAppResult) {
+            if (isActivityAppResult) {
               tmp4 = closure_0;
               tmp5 = closure_3;
               obj2 = closure_0(closure_3[16]);
               tmp6 = context;
-              isEmbeddedAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
+              isActivityAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
             }
-            return isEmbeddedAppResult;
+            return isActivityAppResult;
           }
         }
       }
       if (cResult[31] !== tmp19) {
         class H {
           constructor(arg0) {
-            isEmbeddedAppResult = null != includeAuthorizedAppsAndFetch.application;
-            if (isEmbeddedAppResult) {
+            isActivityAppResult = null != includeAuthorizedAppsAndFetch.application;
+            if (isActivityAppResult) {
               tmp2 = closure_0;
               tmp3 = closure_3;
               obj = closure_0(closure_3[15]);
-              isEmbeddedAppResult = obj.isEmbeddedApp(includeAuthorizedAppsAndFetch.application);
+              isActivityAppResult = obj.isActivityApp(includeAuthorizedAppsAndFetch.application);
             }
-            if (isEmbeddedAppResult) {
+            if (isActivityAppResult) {
               tmp4 = closure_0;
               tmp5 = closure_3;
               obj2 = closure_0(closure_3[16]);
               tmp6 = context;
-              isEmbeddedAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
+              isActivityAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
             }
-            return isEmbeddedAppResult;
+            return isActivityAppResult;
           }
         }
         cResult[31] = tmp19;
-        class A {
+        class M {
           constructor() {
-            return closure_1_5.getFetchState();
+            currentUser = closure_1_7.getCurrentUser();
+            nsfwAllowed = undefined;
+            if (currentUser != null) {
+              nsfwAllowed = currentUser.nsfwAllowed;
+            }
+            return nsfwAllowed;
           }
         }
-        cResult[32] = tmp34;
-        tmp33 = tmp34;
+        cResult[32] = tmp33;
+        tmp32 = tmp33;
       } else {
         class H {
           constructor(arg0) {
-            isEmbeddedAppResult = null != includeAuthorizedAppsAndFetch.application;
-            if (isEmbeddedAppResult) {
+            isActivityAppResult = null != includeAuthorizedAppsAndFetch.application;
+            if (isActivityAppResult) {
               tmp2 = closure_0;
               tmp3 = closure_3;
               obj = closure_0(closure_3[15]);
-              isEmbeddedAppResult = obj.isEmbeddedApp(includeAuthorizedAppsAndFetch.application);
+              isActivityAppResult = obj.isActivityApp(includeAuthorizedAppsAndFetch.application);
             }
-            if (isEmbeddedAppResult) {
+            if (isActivityAppResult) {
               tmp4 = closure_0;
               tmp5 = closure_3;
               obj2 = closure_0(closure_3[16]);
               tmp6 = context;
-              isEmbeddedAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
+              isActivityAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
             }
-            return isEmbeddedAppResult;
+            return isActivityAppResult;
           }
         }
       }
-      class A {
+      class M {
         constructor() {
-          return closure_1_5.getFetchState();
+          currentUser = closure_1_7.getCurrentUser();
+          nsfwAllowed = undefined;
+          if (currentUser != null) {
+            nsfwAllowed = currentUser.nsfwAllowed;
+          }
+          return nsfwAllowed;
         }
       }
-      let found = arr7.filter(tmp33);
-      const found1 = found.filter(tmp25);
+      let found = arr7.filter(tmp32);
+      const found1 = found.filter(tmp24);
       cResult[24] = context;
       cResult[25] = tmp19;
       cResult[26] = sortApplicationsViaFrecency;
-      cResult[27] = tmp25;
+      cResult[27] = tmp24;
       cResult[28] = found1;
     } else {
-      let tmp27;
+      let tmp26;
       class H {
         constructor(arg0) {
-          isEmbeddedAppResult = null != includeAuthorizedAppsAndFetch.application;
-          if (isEmbeddedAppResult) {
+          isActivityAppResult = null != includeAuthorizedAppsAndFetch.application;
+          if (isActivityAppResult) {
             tmp2 = closure_0;
             tmp3 = closure_3;
             obj = closure_0(closure_3[15]);
-            isEmbeddedAppResult = obj.isEmbeddedApp(includeAuthorizedAppsAndFetch.application);
+            isActivityAppResult = obj.isActivityApp(includeAuthorizedAppsAndFetch.application);
           }
-          if (isEmbeddedAppResult) {
+          if (isActivityAppResult) {
             tmp4 = closure_0;
             tmp5 = closure_3;
             obj2 = closure_0(closure_3[16]);
             tmp6 = context;
-            isEmbeddedAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
+            isActivityAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
           }
-          return isEmbeddedAppResult;
+          return isActivityAppResult;
         }
       }
       if (cResult[22] !== tmp19) {
         class H {
           constructor(arg0) {
-            isEmbeddedAppResult = null != includeAuthorizedAppsAndFetch.application;
-            if (isEmbeddedAppResult) {
+            isActivityAppResult = null != includeAuthorizedAppsAndFetch.application;
+            if (isActivityAppResult) {
               tmp2 = closure_0;
               tmp3 = closure_3;
               obj = closure_0(closure_3[15]);
-              isEmbeddedAppResult = obj.isEmbeddedApp(includeAuthorizedAppsAndFetch.application);
+              isActivityAppResult = obj.isActivityApp(includeAuthorizedAppsAndFetch.application);
             }
-            if (isEmbeddedAppResult) {
+            if (isActivityAppResult) {
               tmp4 = closure_0;
               tmp5 = closure_3;
               obj2 = closure_0(closure_3[16]);
               tmp6 = context;
-              isEmbeddedAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
+              isActivityAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
             }
-            return isEmbeddedAppResult;
+            return isActivityAppResult;
           }
         }
         cResult[22] = tmp19;
-        class A {
+        class M {
           constructor() {
-            return closure_1_5.getFetchState();
+            currentUser = closure_1_7.getCurrentUser();
+            nsfwAllowed = undefined;
+            if (currentUser != null) {
+              nsfwAllowed = currentUser.nsfwAllowed;
+            }
+            return nsfwAllowed;
           }
         }
-        cResult[23] = tmp28;
-        tmp27 = tmp28;
+        cResult[23] = tmp27;
+        tmp26 = tmp27;
       } else {
         class H {
           constructor(arg0) {
-            isEmbeddedAppResult = null != includeAuthorizedAppsAndFetch.application;
-            if (isEmbeddedAppResult) {
+            isActivityAppResult = null != includeAuthorizedAppsAndFetch.application;
+            if (isActivityAppResult) {
               tmp2 = closure_0;
               tmp3 = closure_3;
               obj = closure_0(closure_3[15]);
-              isEmbeddedAppResult = obj.isEmbeddedApp(includeAuthorizedAppsAndFetch.application);
+              isActivityAppResult = obj.isActivityApp(includeAuthorizedAppsAndFetch.application);
             }
-            if (isEmbeddedAppResult) {
+            if (isActivityAppResult) {
               tmp4 = closure_0;
               tmp5 = closure_3;
               obj2 = closure_0(closure_3[16]);
               tmp6 = context;
-              isEmbeddedAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
+              isActivityAppResult = null != obj2.queryForPrimaryAppCommand(context, includeAuthorizedAppsAndFetch.id);
             }
-            return isEmbeddedAppResult;
+            return isActivityAppResult;
           }
         }
       }
-      const found2 = sortApplicationsViaFrecency.filter(tmp27);
-      class A {
+      const found2 = sortApplicationsViaFrecency.filter(tmp26);
+      class M {
         constructor() {
-          return closure_1_5.getFetchState();
+          currentUser = closure_1_7.getCurrentUser();
+          nsfwAllowed = undefined;
+          if (currentUser != null) {
+            nsfwAllowed = currentUser.nsfwAllowed;
+          }
+          return nsfwAllowed;
         }
       }
       cResult[18] = tmp19;
       cResult[19] = sortApplicationsViaFrecency;
-      cResult[20] = tmp25;
-      cResult[21] = tmp30;
-      tmp26 = tmp30;
+      cResult[20] = tmp24;
+      cResult[21] = tmp29;
+      tmp25 = tmp29;
     }
-    return tmp26;
+    return tmp25;
   }
   class F {
     constructor() {
@@ -884,16 +914,16 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((includeAuthori
     const filter = sortApplicationsViaFrecency.filter;
     if (onlyActivityApps) {
       const found = filter((application) => {
-        let isEmbeddedAppResult = null != application.application;
-        if (isEmbeddedAppResult) {
+        let isActivityAppResult = null != application.application;
+        if (isActivityAppResult) {
           const obj = context(stateFromStores[15]);
-          isEmbeddedAppResult = obj.isEmbeddedApp(application.application);
+          isActivityAppResult = obj.isActivityApp(application.application);
         }
-        if (isEmbeddedAppResult) {
+        if (isActivityAppResult) {
           const obj2 = context(stateFromStores[16]);
-          isEmbeddedAppResult = null != obj2.queryForPrimaryAppCommand(closure_1_0, application.id);
+          isActivityAppResult = null != obj2.queryForPrimaryAppCommand(closure_1_0, application.id);
         }
-        return isEmbeddedAppResult;
+        return isActivityAppResult;
       });
       const found1 = found.filter((id) => !memo.includes(id.id));
       found2 = found1.filter(hideAgeRestricted);

@@ -1,12 +1,12 @@
-// Module ID: 8869
-// Function ID: 8870
+// Module ID: 9095
+// Function ID: 9096
 // Name: AVError
-// Dependencies: [109, 3, 585, 2]
+// Dependencies: [109, 3, 584, 2]
 
-// Module 8869 (AVError)
+// Module 9095 (AVError)
 import _mod2 from "module_2" /* 2 */;
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 let obj10;

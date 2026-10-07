@@ -1,10 +1,10 @@
-// Module ID: 1191
-// Function ID: 1192
+// Module ID: 1190
+// Function ID: 1191
 // Name: BadgeConstants
-// Dependencies: [588, 2]
+// Dependencies: [587, 2]
 
-// Module 1191 (BadgeConstants)
-import nativeDefault from "native" /* 588 */;
+// Module 1190 (BadgeConstants)
+import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 
 const PX_16 = nativeDefault.space.PX_16;

@@ -1,19 +1,19 @@
-// Module ID: 11191
-// Function ID: 11192
+// Module ID: 11449
+// Function ID: 11450
 // Name: RoleName
-// Dependencies: [19, 17, 4826, 21, 4837, 588, 558, 576, 504, 7407, 1189, 4833, 2]
+// Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 504, 7620, 1188, 4886, 2]
 
-// Module 11191 (RoleName)
+// Module 11449 (RoleName)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7407 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7620 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -148,7 +148,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp15 = "dot" === stateFromStores && null != colorString;
   if (tmp15) {
     const obj5 = { color: colorString, colors: colorStrings, guildId, background: undefined !== dotBackground && dotBackground };
-    tmp15 = React3(tmp(1189).RoleDot, obj5);
+    tmp15 = React3(tmp(1188).RoleDot, obj5);
   }
   cResult[2] = colorString;
   cResult[3] = colorStrings;
@@ -194,13 +194,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (tmp9) {
     const obj5 = { color: colorString, colors: colorStrings, guildId, background: flag };
-    tmp9 = React3(tmp2(1189).RoleDot, obj5);
+    tmp9 = React3(tmp2(1188).RoleDot, obj5);
   }
   items1 = [tmp9, ];
   const obj6 = { variant: textVariant, style: items2, lineClamp: 1, gradientColors: tmp15, children };
   items2 = [tmp.name, ];
   let tmp13;
-  const Text = tmp2(4833).Text;
+  const Text = tmp2(4886).Text;
   const tmp12 = React3;
   if ("username" === stateFromStores) {
     if (null != colorString) {

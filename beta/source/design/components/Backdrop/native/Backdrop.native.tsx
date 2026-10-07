@@ -1,20 +1,20 @@
-// Module ID: 5268
-// Function ID: 5269
+// Module ID: 5771
+// Function ID: 5772
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 4544, 1619, 5269, 4570, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 4589, 1618, 5772, 4612, 2]
 
-// Module 5268 (Backdrop)
+// Module 5771 (Backdrop)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import native from "native" /* 4544 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5269 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import native from "native" /* 4589 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5772 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,8 +62,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== accessibilityLabel) {
     let stringResult = accessibilityLabel;
     if (undefined === accessibilityLabel) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.WAI6xu);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.WAI6xu);
     }
     cResult[0] = accessibilityLabel;
     cResult[1] = stringResult;

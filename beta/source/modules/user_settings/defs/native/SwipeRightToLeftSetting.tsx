@@ -1,17 +1,17 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 15297
+// Function ID: 15298
 // Name: SwipeRightToLeftSetting
-// Dependencies: [7421, 1086, 558, 576, 2027, 1198, 1127, 10874, 15013, 2]
+// Dependencies: [7634, 1085, 558, 576, 2028, 1197, 1126, 11129, 15298, 2]
 
-// Module 15012 (SwipeRightToLeftSetting)
+// Module 15297 (SwipeRightToLeftSetting)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let first;
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const stringResult = intl2.string(intl3.t["3tYNDS"]);
       cResult[0] = stringResult;
       first = stringResult;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp6;
       const _Symbol = Symbol;
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const stringResult1 = intl.string(intl3.t["6eXLcJ"]);
         cResult[1] = stringResult1;
         tmp6 = stringResult1;
@@ -58,13 +58,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
   const setting = SwipeRightToLeftModeSetting.useSetting();
   if (setting === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY) {
-    const intl2 = tmp(1127).intl;
-    stringResult = intl2.string(tmp(1127).t["3tYNDS"]);
+    const intl2 = tmp(1126).intl;
+    stringResult = intl2.string(tmp(1126).t["3tYNDS"]);
   } else {
     stringResult = null;
     if (setting === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t["6eXLcJ"]);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t["6eXLcJ"]);
     }
   }
   return stringResult;

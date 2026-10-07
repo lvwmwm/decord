@@ -1,14 +1,14 @@
-// Module ID: 7104
-// Function ID: 7105
+// Module ID: 7171
+// Function ID: 7172
 // Name: SlowmodeStore
-// Dependencies: [2051, 4472, 7105, 2046, 585, 1103, 504, 2]
+// Dependencies: [2051, 4509, 7172, 2046, 584, 1102, 504, 2]
 
-// Module 7104 (SlowmodeStore)
+// Module 7171 (SlowmodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -61,10 +61,10 @@ class SlowmodeStore extends Store {
   initialize() {
     this.waitFor(ChannelStore, PermissionStore);
   }
-  getSlowmodeCooldownGuess(id, slowmodeType) {
-    let SendMessage = slowmodeType;
+  getSlowmodeCooldownGuess(id, CreateThread) {
+    let SendMessage = CreateThread;
     const tmp = closure_6;
-    if (slowmodeType == null) {
+    if (CreateThread == null) {
       SendMessage = obj.SendMessage;
     }
     let num = 0;
@@ -73,8 +73,8 @@ class SlowmodeStore extends Store {
     }
     return num;
   }
-  isChannelOnCooldown(channel, slowmodeType) {
-    const tmp = this.getSlowmodeCooldownGuess(channel.id, slowmodeType) > 0 && channel.rateLimitPerUser > 0;
+  isChannelOnCooldown(channel, CreateThread) {
+    const tmp = this.getSlowmodeCooldownGuess(channel.id, CreateThread) > 0 && channel.rateLimitPerUser > 0;
     return tmp;
   }
 }

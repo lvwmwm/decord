@@ -1,28 +1,28 @@
-// Module ID: 16861
-// Function ID: 16862
+// Module ID: 17221
+// Function ID: 17222
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 4860, 4856, 4858, 21, 558, 576, 11647, 9110, 573, 9473, 4892, 9433, 15868, 16862, 4531, 6351, 588, 1127, 2]
+// Dependencies: [19, 4913, 4909, 4911, 21, 558, 576, 11901, 9336, 573, 9701, 4945, 9660, 16164, 17222, 4574, 4568, 1126, 4800, 587, 2]
 
-// Module 16861 (useVoicePanelCardUserStateIcons)
+// Module 17221 (useVoicePanelCardUserStateIcons)
 import Fragment from "Fragment" /* 21 */;
-import intl6 from "intl" /* 1127 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import CallConstants from "CallConstants" /* 4858 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9110 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11647 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 16862 */;
+import intl6 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import CallConstants from "CallConstants" /* 4911 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9336 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17222 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let _require, dependencyMap, importDefault, obj1, openManaResult, openResult, str;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(9433);
-const useMuteAwareLocalVolumeDefault = tmp2(9473);
+const MobileAudioOutputExperimentDefault = tmp2(9660);
+const useMuteAwareLocalVolumeDefault = tmp2(9701);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const jsx = Fragment.jsx;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON" };
@@ -45,7 +45,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
     tmp4 = arg3;
   }
   importDefault = tmp4;
-  const tmp5 = importDefault;
+  let tmp5 = importDefault;
   setShowFloatingCTA = muteDeafenIconState.useContext(require("VoicePanelStateContext")).setShowFloatingCTA;
   let tmp8;
   const useMuteDeafenIconState = tmp(tmp2[8]).useMuteDeafenIconState;
@@ -150,63 +150,195 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
     }
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class V {
+      class P {
         constructor() {
-          tmp = setShowFloatingCTA(closure_0(closure_2[14]).OverrideFloatingCTA.BAD_CONNECTION);
+          tmp = closure_0;
+          tmp2 = setShowFloatingCTA;
+          obj = closure_0(setShowFloatingCTA[15]);
+          designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("useVoicePanelCardUserStateIcons");
+          tmp4 = closure_1;
+          tmp5 = closure_1(setShowFloatingCTA[16]);
+          if (designSystemsNotificationComponents) {
+            obj1 = { text: null, icon: null, iconColor: null };
+            openMana = tmp5.openMana;
+            intl2 = tmp(tmp2[17]).intl;
+            obj1.text = intl2.string(tmp(tmp2[17]).t.HFwRpk);
+            obj1.icon = tmp(tmp2[18]).CircleErrorIcon;
+            obj1.iconColor = tmp4(tmp2[19]).colors.ICON_FEEDBACK_WARNING;
+            str = "user-disconnected-indicator";
+            openManaResult = openMana("user-disconnected-indicator", obj1);
+          } else {
+            obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
+            obj4.icon = function icon() { /* body not rendered: F148168 */ };
+            open = tmp5.open;
+            intl = tmp(tmp2[17]).intl;
+            obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
+            openResult = open(obj4);
+          }
           return;
         }
       }
-      cResult[10] = tmp27;
+      cResult[10] = P;
       class C {
         constructor() {
           return closure_1_4.isConnected();
         }
       }
     } else {
-      class V {
+      class P {
         constructor() {
-          tmp = setShowFloatingCTA(closure_0(closure_2[14]).OverrideFloatingCTA.BAD_CONNECTION);
+          tmp = closure_0;
+          tmp2 = setShowFloatingCTA;
+          obj = closure_0(setShowFloatingCTA[15]);
+          designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("useVoicePanelCardUserStateIcons");
+          tmp4 = closure_1;
+          tmp5 = closure_1(setShowFloatingCTA[16]);
+          if (designSystemsNotificationComponents) {
+            obj1 = { text: null, icon: null, iconColor: null };
+            openMana = tmp5.openMana;
+            intl2 = tmp(tmp2[17]).intl;
+            obj1.text = intl2.string(tmp(tmp2[17]).t.HFwRpk);
+            obj1.icon = tmp(tmp2[18]).CircleErrorIcon;
+            obj1.iconColor = tmp4(tmp2[19]).colors.ICON_FEEDBACK_WARNING;
+            str = "user-disconnected-indicator";
+            openManaResult = openMana("user-disconnected-indicator", obj1);
+          } else {
+            obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
+            obj4.icon = function icon() { /* body not rendered: F148168 */ };
+            open = tmp5.open;
+            intl = tmp(tmp2[17]).intl;
+            obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
+            openResult = open(obj4);
+          }
           return;
         }
       }
     }
     if (stateFromStores) {
-      class V {
+      class P {
         constructor() {
-          tmp = setShowFloatingCTA(closure_0(closure_2[14]).OverrideFloatingCTA.BAD_CONNECTION);
+          tmp = closure_0;
+          tmp2 = setShowFloatingCTA;
+          obj = closure_0(setShowFloatingCTA[15]);
+          designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("useVoicePanelCardUserStateIcons");
+          tmp4 = closure_1;
+          tmp5 = closure_1(setShowFloatingCTA[16]);
+          if (designSystemsNotificationComponents) {
+            obj1 = { text: null, icon: null, iconColor: null };
+            openMana = tmp5.openMana;
+            intl2 = tmp(tmp2[17]).intl;
+            obj1.text = intl2.string(tmp(tmp2[17]).t.HFwRpk);
+            obj1.icon = tmp(tmp2[18]).CircleErrorIcon;
+            obj1.iconColor = tmp4(tmp2[19]).colors.ICON_FEEDBACK_WARNING;
+            str = "user-disconnected-indicator";
+            openManaResult = openMana("user-disconnected-indicator", obj1);
+          } else {
+            obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
+            obj4.icon = function icon() { /* body not rendered: F148168 */ };
+            open = tmp5.open;
+            intl = tmp(tmp2[17]).intl;
+            obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
+            openResult = open(obj4);
+          }
           return;
         }
       }
     } else {
-      class V {
+      class P {
         constructor() {
-          tmp = setShowFloatingCTA(closure_0(closure_2[14]).OverrideFloatingCTA.BAD_CONNECTION);
+          tmp = closure_0;
+          tmp2 = setShowFloatingCTA;
+          obj = closure_0(setShowFloatingCTA[15]);
+          designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("useVoicePanelCardUserStateIcons");
+          tmp4 = closure_1;
+          tmp5 = closure_1(setShowFloatingCTA[16]);
+          if (designSystemsNotificationComponents) {
+            obj1 = { text: null, icon: null, iconColor: null };
+            openMana = tmp5.openMana;
+            intl2 = tmp(tmp2[17]).intl;
+            obj1.text = intl2.string(tmp(tmp2[17]).t.HFwRpk);
+            obj1.icon = tmp(tmp2[18]).CircleErrorIcon;
+            obj1.iconColor = tmp4(tmp2[19]).colors.ICON_FEEDBACK_WARNING;
+            str = "user-disconnected-indicator";
+            openManaResult = openMana("user-disconnected-indicator", obj1);
+          } else {
+            obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
+            obj4.icon = function icon() { /* body not rendered: F148168 */ };
+            open = tmp5.open;
+            intl = tmp(tmp2[17]).intl;
+            obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
+            openResult = open(obj4);
+          }
           return;
         }
       }
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class V {
+        class P {
           constructor() {
-            tmp = setShowFloatingCTA(closure_0(closure_2[14]).OverrideFloatingCTA.BAD_CONNECTION);
+            tmp = closure_0;
+            tmp2 = setShowFloatingCTA;
+            obj = closure_0(setShowFloatingCTA[15]);
+            designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("useVoicePanelCardUserStateIcons");
+            tmp4 = closure_1;
+            tmp5 = closure_1(setShowFloatingCTA[16]);
+            if (designSystemsNotificationComponents) {
+              obj1 = { text: null, icon: null, iconColor: null };
+              openMana = tmp5.openMana;
+              intl2 = tmp(tmp2[17]).intl;
+              obj1.text = intl2.string(tmp(tmp2[17]).t.HFwRpk);
+              obj1.icon = tmp(tmp2[18]).CircleErrorIcon;
+              obj1.iconColor = tmp4(tmp2[19]).colors.ICON_FEEDBACK_WARNING;
+              str = "user-disconnected-indicator";
+              openManaResult = openMana("user-disconnected-indicator", obj1);
+            } else {
+              obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
+              obj4.icon = function icon() { /* body not rendered: F148168 */ };
+              open = tmp5.open;
+              intl = tmp(tmp2[17]).intl;
+              obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
+              openResult = open(obj4);
+            }
             return;
           }
         }
-        cResult[11] = tmp29;
+        cResult[11] = tmp28;
         class C {
           constructor() {
             return closure_1_4.isConnected();
           }
         }
       } else {
-        class V {
+        class P {
           constructor() {
-            tmp = setShowFloatingCTA(closure_0(closure_2[14]).OverrideFloatingCTA.BAD_CONNECTION);
+            tmp = closure_0;
+            tmp2 = setShowFloatingCTA;
+            obj = closure_0(setShowFloatingCTA[15]);
+            designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("useVoicePanelCardUserStateIcons");
+            tmp4 = closure_1;
+            tmp5 = closure_1(setShowFloatingCTA[16]);
+            if (designSystemsNotificationComponents) {
+              obj1 = { text: null, icon: null, iconColor: null };
+              openMana = tmp5.openMana;
+              intl2 = tmp(tmp2[17]).intl;
+              obj1.text = intl2.string(tmp(tmp2[17]).t.HFwRpk);
+              obj1.icon = tmp(tmp2[18]).CircleErrorIcon;
+              obj1.iconColor = tmp4(tmp2[19]).colors.ICON_FEEDBACK_WARNING;
+              str = "user-disconnected-indicator";
+              openManaResult = openMana("user-disconnected-indicator", obj1);
+            } else {
+              obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
+              obj4.icon = function icon() { /* body not rendered: F148168 */ };
+              open = tmp5.open;
+              intl = tmp(tmp2[17]).intl;
+              obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
+              openResult = open(obj4);
+            }
             return;
           }
         }
       }
     }
-    return tmp28;
+    return tmp27;
   }
   class A {
     constructor() {
@@ -252,7 +384,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   const tmp2 = importDefault;
   const tmp3 = dependencyMap;
   setShowFloatingCTA = setShowFloatingCTA.useContext(VoicePanelStateContextDefault).setShowFloatingCTA;
-  const tmp4 = _require;
+  let tmp4 = _require;
   let tmp5 = require("VoiceStateIconUtils");
   let tmp7;
   const useMuteDeafenIconState = tmp5.useMuteDeafenIconState;
@@ -261,8 +393,8 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   }
   muteDeafenIconState = useMuteDeafenIconState(tmp7, arg2);
   let tmp10;
-  const useVideoIconState = tmp4(9110).useVideoIconState;
-  tmp4(9110);
+  const useVideoIconState = tmp4(9336).useVideoIconState;
+  tmp4(9336);
   if (arg0 === stateFromStores.USER) {
     tmp10 = arg1;
   }
@@ -288,7 +420,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   if (arg0 === stateFromStores.STREAM) {
     tmp15 = arg1;
   }
-  const effectiveVolume = tmp2Result(tmp15, tmp4(4892).MediaEngineContextTypes.STREAM).effectiveVolume;
+  const effectiveVolume = tmp2Result(tmp15, tmp4(4945).MediaEngineContextTypes.STREAM).effectiveVolume;
   const tmp2Result2 = MobileAudioOutputExperimentDefault;
   showTileVolumeIndicator = tmp2Result2.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
@@ -297,7 +429,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(15868);
+  const tmp4Result6 = tmp4(16164);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, arg1);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {
@@ -305,19 +437,30 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   }, items3);
   callback1 = obj.useCallback(() => {
     let intl;
-    let obj = {
-      key: "user-disconnected-indicator",
-      icon() {
-        const obj = { size: "xs", color: closure_1_1(_null[17]).colors.STATUS_WARNING };
-        const CircleErrorIcon = closure_1_0(_null[16]).CircleErrorIcon;
-        return stateFromStores1(CircleErrorIcon, obj);
-      },
-      content: intl.string(closure_0(_null[18]).t.HFwRpk)
-    };
-    const open = closure_1(_null[15]).open;
-    closure_1(_null[15]);
-    intl = closure_0(_null[18]).intl;
-    open(obj);
+    let intl2;
+    let obj = closure_0(_null[15]);
+    const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("useVoicePanelCardUserStateIcons");
+    const tmp5 = closure_1(_null[16]);
+    const tmp4 = closure_1;
+    if (designSystemsNotificationComponents) {
+      const openMana = tmp5.openMana;
+      const obj2 = { text: intl2.string(closure_0(_null[17]).t.HFwRpk), icon: closure_0(_null[18]).CircleErrorIcon, iconColor: tmp4(_null[19]).colors.ICON_FEEDBACK_WARNING };
+      intl2 = tmp(tmp2[17]).intl;
+      openMana("user-disconnected-indicator", obj2);
+    } else {
+      const open = tmp5.open;
+      const obj3 = {
+        key: "user-disconnected-indicator",
+        icon() {
+            const obj = { size: "xs", color: closure_1_1(_null[19]).colors.STATUS_WARNING };
+            const CircleErrorIcon = closure_1_0(_null[18]).CircleErrorIcon;
+            return stateFromStores1(CircleErrorIcon, obj);
+          },
+        content: intl.string(closure_0(_null[17]).t.HFwRpk)
+      };
+      intl = tmp(tmp2[17]).intl;
+      open(obj3);
+    }
   }, []);
   const items4 = [stateFromStores, arg0, videoIconState, muteDeafenIconState, isRTCDisconnectedUIVisible, stateFromStores1, callback, arg1, callback1, showTileVolumeIndicator];
   return obj.useMemo(() => {
@@ -333,10 +476,10 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             type: obj.SPEAKER_MUTE_ICON,
             onPress() {
                     let intl;
-                    const tmp = closure_1(c2[15]);
+                    const tmp = closure_1(c2[16]);
                     const open = tmp.open;
-                    const obj = { key: "" + closure_1_1 + "-stream-status", content: intl.string(closure_0(c2[18]).t.Q8Uzof) };
-                    intl = closure_0(c2[18]).intl;
+                    const obj = { key: "" + closure_1_1 + "-stream-status", content: intl.string(closure_0(c2[17]).t.Q8Uzof) };
+                    intl = closure_0(c2[17]).intl;
                     open(obj);
                   }
           };
@@ -380,38 +523,38 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
                     let intl5;
                     if (closure_0(c2[8]).MuteDeafenIconState.DEAFENED_SERVER === muteDeafenIconState) {
                       const _HermesInternal4 = HermesInternal;
-                      const obj2 = { key: "" + closure_1_1 + "-status", content: intl4.string(closure_0(c2[18]).t.btxSdB) };
-                      const open4 = closure_1(c2[15]).open;
-                      closure_1(c2[15]);
-                      intl4 = tmp2(tmp3[18]).intl;
+                      const obj2 = { key: "" + closure_1_1 + "-status", content: intl4.string(closure_0(c2[17]).t.btxSdB) };
+                      const open4 = closure_1(c2[16]).open;
+                      closure_1(c2[16]);
+                      intl4 = tmp2(tmp3[17]).intl;
                       open4(obj2);
                     } else if (closure_0(c2[8]).MuteDeafenIconState.DEAFENED === muteDeafenIconState) {
                       const _HermesInternal3 = HermesInternal;
-                      const obj3 = { key: "" + closure_1_1 + "-status", content: intl3.string(closure_0(c2[18]).t.NjmiOL) };
-                      const open3 = closure_1(c2[15]).open;
-                      closure_1(c2[15]);
-                      intl3 = tmp2(tmp3[18]).intl;
+                      const obj3 = { key: "" + closure_1_1 + "-status", content: intl3.string(closure_0(c2[17]).t.NjmiOL) };
+                      const open3 = closure_1(c2[16]).open;
+                      closure_1(c2[16]);
+                      intl3 = tmp2(tmp3[17]).intl;
                       open3(obj3);
                     } else if (closure_0(c2[8]).MuteDeafenIconState.MUTED_SERVER === muteDeafenIconState) {
                       const _HermesInternal2 = HermesInternal;
-                      const obj4 = { key: "" + closure_1_1 + "-status", content: intl2.string(closure_0(c2[18]).t.uLddbQ) };
-                      const open2 = closure_1(c2[15]).open;
-                      closure_1(c2[15]);
-                      intl2 = tmp2(tmp3[18]).intl;
+                      const obj4 = { key: "" + closure_1_1 + "-status", content: intl2.string(closure_0(c2[17]).t.uLddbQ) };
+                      const open2 = closure_1(c2[16]).open;
+                      closure_1(c2[16]);
+                      intl2 = tmp2(tmp3[17]).intl;
                       open2(obj4);
                     } else if (closure_0(c2[8]).MuteDeafenIconState.MUTED_LOCAL === muteDeafenIconState) {
                       const _HermesInternal = HermesInternal;
-                      const obj = { key: "" + closure_1_1 + "-status", content: intl.string(closure_0(c2[18]).t.Q8Uzof) };
-                      const open = closure_1(c2[15]).open;
-                      closure_1(c2[15]);
-                      intl = tmp2(tmp3[18]).intl;
+                      const obj = { key: "" + closure_1_1 + "-status", content: intl.string(closure_0(c2[17]).t.Q8Uzof) };
+                      const open = closure_1(c2[16]).open;
+                      closure_1(c2[16]);
+                      intl = tmp2(tmp3[17]).intl;
                       open(obj);
                     } else if (closure_0(c2[8]).MuteDeafenIconState.MUTED === muteDeafenIconState) {
                       const _HermesInternal5 = HermesInternal;
-                      const obj5 = { key: "" + closure_1_1 + "-status", content: intl5.string(closure_0(c2[18]).t.tjtv3P) };
-                      const open5 = closure_1(c2[15]).open;
-                      closure_1(c2[15]);
-                      intl5 = tmp2(tmp3[18]).intl;
+                      const obj5 = { key: "" + closure_1_1 + "-status", content: intl5.string(closure_0(c2[17]).t.tjtv3P) };
+                      const open5 = closure_1(c2[16]).open;
+                      closure_1(c2[16]);
+                      intl5 = tmp2(tmp3[17]).intl;
                       open5(obj5);
                     }
                   }

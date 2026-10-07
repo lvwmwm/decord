@@ -1,12 +1,12 @@
-// Module ID: 9086
-// Function ID: 9087
+// Module ID: 9311
+// Function ID: 9312
 // Name: trackVoiceAndVideoSettingsUpdate
-// Dependencies: [1086, 1253, 2]
+// Dependencies: [1085, 1252, 2]
 // Exports: default
 
-// Module 9086 (trackVoiceAndVideoSettingsUpdate)
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+// Module 9311 (trackVoiceAndVideoSettingsUpdate)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

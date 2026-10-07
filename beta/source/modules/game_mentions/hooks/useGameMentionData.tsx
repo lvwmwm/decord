@@ -1,15 +1,15 @@
-// Module ID: 5420
-// Function ID: 5421
+// Module ID: 5891
+// Function ID: 5892
 // Name: useGameMentionData
-// Dependencies: [2007, 5421, 1378, 5424, 558, 576, 504, 568, 2]
+// Dependencies: [2007, 5892, 1377, 5896, 558, 576, 504, 568, 2]
 // Exports: getGameMentionData
 
-// Module 5420 (useGameMentionData)
+// Module 5891 (useGameMentionData)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5424 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5896 */;
 import GameStore from "GameStore" /* 2007 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5421 */;
-import UserStore from "UserStore" /* 1378 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5892 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

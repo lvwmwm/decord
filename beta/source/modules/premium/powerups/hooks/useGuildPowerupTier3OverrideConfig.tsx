@@ -1,12 +1,12 @@
-// Module ID: 11962
-// Function ID: 11963
+// Module ID: 12215
+// Function ID: 12216
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [2073, 1086, 558, 576, 504, 1127, 2522, 2]
+// Dependencies: [2074, 1085, 558, 576, 504, 1126, 2525, 2]
 
-// Module 11962 (useGuildPowerupTier3OverrideConfig)
-import Constants from "Constants" /* 1086 */;
-import _modDef2522 from "module_2522" /* 2522 */;
-import GuildStore from "GuildStore" /* 2073 */;
+// Module 12215 (useGuildPowerupTier3OverrideConfig)
+import Constants from "Constants" /* 1085 */;
+import _modDef2525 from "module_2525" /* 2525 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp8;
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { shouldShow: true, text: intl.string(_modDef2522.l9n4QZ) };
-      intl = tmp(1127).intl;
+      const obj2 = { shouldShow: true, text: intl.string(_modDef2525.l9n4QZ) };
+      intl = tmp(1126).intl;
       cResult[4] = obj2;
       tmp8 = obj2;
     } else {
@@ -87,8 +87,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return true === hasItem;
   })) {
-    const obj2 = { shouldShow: true, text: intl.string(_modDef2522.l9n4QZ) };
-    intl = tmp(1127).intl;
+    const obj2 = { shouldShow: true, text: intl.string(_modDef2525.l9n4QZ) };
+    intl = tmp(1126).intl;
     obj3 = obj2;
   } else {
     obj3 = { shouldShow: false, text: "" };

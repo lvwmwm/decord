@@ -1,11 +1,9 @@
 // Module ID: 7954
 // Function ID: 7955
-// Dependencies: [65]
+// Dependencies: [7955]
 
 // Module 7954
-import module_65 from "module_65" /* 65 */;
+import _mod7955 from "module_7955" /* 7955 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGFeColorMatrix", validAttributes: { x: true, y: true, width: true, height: true, result: true, in1: true, type: true, values: true } };
 
-export default module_65.get("RNSVGFeColorMatrix", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default _mod7955.default;

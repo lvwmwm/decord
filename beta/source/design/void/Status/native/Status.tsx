@@ -1,29 +1,29 @@
-// Module ID: 13649
-// Function ID: 13650
+// Module ID: 13920
+// Function ID: 13921
 // Name: Status
-// Dependencies: [32, 19, 17, 1190, 1086, 12605, 21, 4837, 13647, 588, 13650, 13651, 13652, 13653, 13654, 13655, 13656, 558, 576, 13648, 13657, 4570, 5281, 13634, 2]
+// Dependencies: [32, 19, 17, 1189, 1085, 12852, 21, 4890, 13918, 587, 13921, 13922, 13923, 13924, 13925, 13926, 13927, 558, 576, 13919, 13928, 4612, 5597, 13905, 2]
 
-// Module 13649 (Status)
+// Module 13920 (Status)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import StatusConstants from "StatusConstants" /* 1190 */;
-import spring from "spring" /* 5281 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 13647 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13648 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13650 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13651 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13652 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13653 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13654 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13655 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 13656 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import StatusConstants from "StatusConstants" /* 1189 */;
+import spring from "spring" /* 5597 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 13918 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13919 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13921 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13922 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13923 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13924 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13925 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13926 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 13927 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 12605 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 12852 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ let closure_14 = createStyles.createStyles((statusSizeOverride, arg1) => {
     tmp5 = importDefault;
   }
   const obj2 = { ellipsis: { backgroundColor: PRIMARY_400, borderRadius: height, height, width, paddingStart: 4, paddingEnd: 2, marginRight: 0 }, ellipsisDot: size };
-  size = { width: dotSize, height: dotSize, backgroundColor: tmp5(588).colors.WHITE };
+  size = { width: dotSize, height: dotSize, backgroundColor: tmp5(587).colors.WHITE };
   return obj2;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -209,23 +209,23 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp3 = hasOwnProperty;
   tmp6 = React3;
   if (streaming) {
-    tmp4Result = tmp4(13650);
+    tmp4Result = tmp4(13921);
   } else if (flag2) {
-    tmp4Result = tmp4(13651);
+    tmp4Result = tmp4(13922);
   } else if (flag) {
-    tmp4Result = tmp4(13652);
+    tmp4Result = tmp4(13923);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(13653);
+    tmp4Result = tmp4(13924);
   } else if (StatusTypes.DND === status) {
-    tmp4Result = tmp4(13654);
+    tmp4Result = tmp4(13925);
   } else {
     if (StatusTypes.OFFLINE !== status) {
       if (StatusTypes.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(13656);
+        tmp4Result = tmp4(13927);
       }
     }
-    tmp4Result = tmp4(13655);
+    tmp4Result = tmp4(13926);
   }
   return unpackModuleId(tmp3, obj);
 });

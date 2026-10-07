@@ -1,24 +1,24 @@
-// Module ID: 6607
-// Function ID: 6608
+// Module ID: 6684
+// Function ID: 6685
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 2111, 2105, 1086, 21, 4837, 588, 558, 576, 6608, 2027, 6610, 6611, 4530, 1127, 6609, 6616, 6625, 4833, 6627, 5436, 6628, 504, 6629, 2]
+// Dependencies: [19, 17, 2112, 2106, 1085, 21, 4890, 587, 558, 576, 6685, 2028, 6687, 6688, 4567, 1126, 6686, 6693, 6702, 4886, 6704, 5909, 6705, 504, 6706, 2]
 
-// Module 6607 (UserProfileRolesCard)
+// Module 6684 (UserProfileRolesCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 6625 */;
-import RoleIconDefault from "RoleIcon" /* 6627 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 6628 */;
+import nativeDefault from "native" /* 587 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 6702 */;
+import RoleIconDefault from "RoleIcon" /* 6704 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 6705 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import Constants from "Constants" /* 1086 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
     if (cResult[3] === role.id) {
       tmp8 = cResult[4];
     }
-    let tmpResult = tmp(6608);
+    let tmpResult = tmp(6685);
     const roleIconProps = tmpResult.useRoleIconProps(tmp8);
     const tags = role.tags;
     let guild_connections;
@@ -129,7 +129,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
     }
     let tmp11 = undefined !== guild_connections;
     let closure_5 = tmp11;
-    const DeveloperMode = tmp(2027).DeveloperMode;
+    const DeveloperMode = tmp(2028).DeveloperMode;
     const setting = DeveloperMode.useSetting();
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -138,7 +138,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       cResult[5] = obj2;
       cResult[6] = obj3;
     }
-    const tmp17 = guildId(6610);
+    const tmp17 = guildId(6687);
     if (cResult[7] === tmp5) {
       if (cResult[10] === tmp5) {
         if (cResult[11] === role) {
@@ -152,7 +152,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
               tmp2 = closure_2;
               intl = role(closure_2[15]).intl;
               obj.label = intl.string(role(closure_2[15]).t.sMsaLg);
-              obj.onPress = function onPress() { /* body not rendered: F136137 */ };
+              obj.onPress = function onPress() { /* body not rendered: F137639 */ };
               items = [];
               items[0] = obj;
               if (null != closure_4) {
@@ -168,7 +168,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
                   push = items.push;
                   intl2 = tmp(tmp2[15]).intl;
                   obj1.label = intl2.string(tmp(tmp2[15]).t["8xHmxo"]);
-                  obj1.onPress = function onPress() { /* body not rendered: F136138 */ };
+                  obj1.onPress = function onPress() { /* body not rendered: F137640 */ };
                   arr1 = push(obj1);
                 }
               }
@@ -203,7 +203,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
               } else {
                 tmp5 = colorString;
                 tmp6 = null;
-                tmp4 = f39102;
+                tmp4 = f38717;
                 obj = { color: null };
                 obj.color = tmp5;
                 tmp3Result = tmp3(tmp4, obj);
@@ -254,7 +254,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
           tmp2 = closure_2;
           intl = role(closure_2[15]).intl;
           obj.label = intl.string(role(closure_2[15]).t.sMsaLg);
-          obj.onPress = function onPress() { /* body not rendered: F136137 */ };
+          obj.onPress = function onPress() { /* body not rendered: F137639 */ };
           items = [];
           items[0] = obj;
           if (null != closure_4) {
@@ -270,7 +270,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
               push = items.push;
               intl2 = tmp(tmp2[15]).intl;
               obj1.label = intl2.string(tmp(tmp2[15]).t["8xHmxo"]);
-              obj1.onPress = function onPress() { /* body not rendered: F136138 */ };
+              obj1.onPress = function onPress() { /* body not rendered: F137640 */ };
               arr1 = push(obj1);
             }
           }
@@ -561,8 +561,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       let tmp14;
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
-        const stringResult = intl.string(userId(1127).t["LPJmL/"]);
+        const intl = tmp(1126).intl;
+        const stringResult = intl.string(userId(1126).t["LPJmL/"]);
         cResult[7] = stringResult;
         tmp14 = stringResult;
       } else {
@@ -581,7 +581,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
           tmp13 = tmp20;
         }
         const obj2 = { title: tmp14, style, children: tmp16 };
-        const tmp23 = closure_9(guildId(6629), obj2);
+        const tmp23 = closure_9(guildId(6706), obj2);
         cResult[11] = style;
         cResult[12] = tmp16;
         cResult[13] = tmp23;
@@ -625,9 +625,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   }
   let tmp4 = null;
   if (0 !== roles.length) {
-    const obj2 = { title: intl.string(userId(1127).t["LPJmL/"]), style, children: closure_9(closure_16, obj3) };
-    const tmp7 = guildId(6629);
-    intl = tmp(1127).intl;
+    const obj2 = { title: intl.string(userId(1126).t["LPJmL/"]), style, children: closure_9(closure_16, obj3) };
+    const tmp7 = guildId(6706);
+    intl = tmp(1126).intl;
     obj3 = { guildId, guildMemberRoleIds: roles };
     tmp4 = closure_9(tmp7, obj2);
   }

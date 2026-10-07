@@ -1,10 +1,10 @@
-// Module ID: 5589
-// Function ID: 5590
+// Module ID: 5435
+// Function ID: 5436
 // Name: requireSortedDescending
 // Dependencies: [38, 11, 2]
 // Exports: requireSortedDescending
 
-// Module 5589 (requireSortedDescending)
+// Module 5435 (requireSortedDescending)
 import _modDef38 from "module_38" /* 38 */;
 import size from "module_2" /* 2 */;
 

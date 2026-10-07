@@ -1,38 +1,38 @@
-// Module ID: 8770
-// Function ID: 8771
+// Module ID: 9031
+// Function ID: 9032
 // Name: RPCHelpers
-// Dependencies: [5, 5064, 2009, 2055, 1392, 2051, 2073, 1999, 5057, 4877, 1378, 4856, 4741, 1086, 1372, 4821, 1103, 12, 6880, 4824, 5084, 8771, 4989, 1374, 7791, 1283, 8765, 8500, 8772, 2]
+// Dependencies: [5, 5118, 2009, 2055, 1391, 2051, 2074, 1999, 5110, 4930, 1377, 4909, 5316, 1085, 1371, 4874, 1102, 12, 6965, 4877, 5304, 9032, 5042, 1373, 8015, 1282, 9026, 8706, 9033, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getRemoteIconURL, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 8770 (RPCHelpers)
+// Module 9031 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import urlParseDefault from "urlParse" /* 1374 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import urlParseDefault from "urlParse" /* 1373 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4824 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import useMessageAuthor from "useMessageAuthor" /* 5084 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6880 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 8500 */;
-import RPCErrorDefault from "RPCError" /* 8765 */;
-import LeakyBucketDefault from "LeakyBucket" /* 8772 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4877 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import useMessageAuthor from "useMessageAuthor" /* 5304 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 8706 */;
+import RPCErrorDefault from "RPCError" /* 9026 */;
+import LeakyBucketDefault from "LeakyBucket" /* 9033 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
 import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import UserRecord from "UserRecord" /* 1392 */;
+import UserRecord from "UserRecord" /* 1391 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import MessageStore from "MessageStore" /* 5057 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import UserStore from "UserStore" /* 1378 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
-import Constants_mod from "Constants" /* 4741 */;
-import Constants_mod2 from "Constants" /* 1086 */;
-import URLUtils from "URLUtils" /* 1372 */;
-import RegexUtils_mod from "RegexUtils" /* 4821 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import UserStore from "UserStore" /* 1377 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import Constants_mod from "Constants" /* 5316 */;
+import Constants_mod2 from "Constants" /* 1085 */;
+import URLUtils from "URLUtils" /* 1371 */;
+import RegexUtils_mod from "RegexUtils" /* 4874 */;
 import size from "module_2" /* 2 */;
 
 let c4, c7, c8;
@@ -47,7 +47,7 @@ let closure_21;
 let closure_22;
 let closure_23;
 let tmp;
-const transformUserDefault = tmp(8771);
+const transformUserDefault = tmp(9032);
 function recurseReplaceContentTree(type) {
   if ("customEmoji" === type.type) {
     type.type = "emoji";
@@ -163,6 +163,7 @@ let obj = function _validateSocketApplication() {
         let coverImage;
         let flags;
         let parentId;
+        let embeddedSurfaces;
         let application2;
         c8 = 2;
         if (0 === c7) {
@@ -183,10 +184,11 @@ let obj = function _validateSocketApplication() {
             coverImage = undefined;
             flags = undefined;
             parentId = undefined;
+            embeddedSurfaces = undefined;
             application2 = application.getApplication(closure_1);
-            const tmp60 = closure_0;
+            const tmp62 = closure_0;
             if (typeof closure_2 === "string") {
-              if (tmp60.transport === constants.POST_MESSAGE) {
+              if (tmp62.transport === constants.POST_MESSAGE) {
                 const tmp18 = getURLForApplicationDefault(closure_1);
                 if (null != tmp18) {
                   const items = [tmp18];
@@ -194,8 +196,8 @@ let obj = function _validateSocketApplication() {
                 const obj4 = { closeCode: constants2.INVALID_ORIGIN };
                 const self3 = this;
                 const self4 = this;
-                const tmp47 = new RPCErrorDefault(obj4, "Invalid Origin");
-                throw tmp47;
+                const tmp49 = new RPCErrorDefault(obj4, "Invalid Origin");
+                throw tmp49;
               } else {
                 c7 = 1;
                 c8 = 1;
@@ -241,7 +243,8 @@ let obj = function _validateSocketApplication() {
           coverImage = user.coverImage;
           flags = user.flags;
           parentId = user.parentId;
-          const obj8 = { id, parentId, name, icon, coverImage, flags };
+          embeddedSurfaces = user.embeddedSurfaces;
+          const obj8 = { id, parentId, name, icon, coverImage, flags, embeddedSurfaces };
           closure_0.application = obj8;
           c8 = 3;
           return { value: "IconComponent", done: null };
@@ -254,9 +257,9 @@ let obj = function _validateSocketApplication() {
           const obj9 = { value: closure_133_30(closure_1), done: false };
           return obj9;
         }
-      } catch (tmp49) {
+      } catch (tmp51) {
         c8 = 3;
-        throw tmp49;
+        throw tmp51;
       }
     }
   });
@@ -609,18 +612,18 @@ export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoic
   let sorted;
   let sorted1;
   let tmp2;
-  const f137804 = (index, index2) => index.index - index2.index;
-  const f137805 = (id) => ({ id: id.id, name: id.name });
+  const f139440 = (index, index2) => index.index - index2.index;
+  const f139441 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f137805), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f139441), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f137804);
+  sorted = values.sort(f139440);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f137805), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f139441), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f137804);
+  sorted1 = values2.sort(f139440);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;

@@ -1,17 +1,17 @@
-// Module ID: 5739
-// Function ID: 5740
+// Module ID: 5583
+// Function ID: 5584
 // Name: GuildMemberRequesterStore
-// Dependencies: [2051, 2111, 5740, 585, 504, 2]
+// Dependencies: [2051, 2112, 5584, 584, 504, 2]
 
-// Module 5739 (GuildMemberRequesterStore)
+// Module 5583 (GuildMemberRequesterStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5740 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5584 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import size from "module_2" /* 2 */;
 
-const f36463 = (arg0, userIds) => {
+const f35430 = (arg0, userIds) => {
   let items;
   const obj2 = { type: "GUILD_MEMBERS_REQUEST", guildIds: items, userIds };
   items = [arg0];
@@ -79,8 +79,8 @@ function handleLoadSearchResults(arg0) {
     return false;
   }
 }
-const React3 = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f36463);
-new GuildMemberRequesterDefault(GuildMemberStore.isMember, f36463);
+const React3 = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f35430);
+new GuildMemberRequesterDefault(GuildMemberStore.isMember, f35430);
 const Store = get_initializedDefault.Store;
 class GuildMemberRequesterStore extends Store {
   initialize() {
@@ -121,7 +121,7 @@ let obj = {
     return false;
   },
   SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
-  INTELLIGENCE_SEARCH_FETCH_SUCCESS: function handleIntelligenceSearchFetchSuccess(arg0) {
+  SMART_SEARCH_FETCH_SUCCESS: function handleSmartSearchFetchSuccess(arg0) {
     let messages;
     ({ messages, guildId: importDefault } = arg0);
     const item = messages.forEach((item) => {
@@ -170,7 +170,7 @@ let obj = {
     }
     return flag;
   },
-  CONVERSATION_FETCH_SUCCESS: function handleConversationFetchSuccess(messages) {
+  CONVERSATION_MESSAGES_FETCH_SUCCESS: function handleConversationMessagesFetchSuccess(messages) {
     messages = messages.messages;
     const messageReferences = messages.messageReferences;
     const channel = ChannelStore.getChannel(messages.channelId);
@@ -196,7 +196,7 @@ let obj = {
     }
     return flag;
   },
-  CONVERSATIONS_FETCH_SUCCESS: function handleConversationsFetchSuccess(rawConversations) {
+  CHANNEL_CONVERSATIONS_FETCH_SUCCESS: function handleChannelConversationsFetchSuccess(rawConversations) {
     rawConversations = rawConversations.rawConversations;
     const channel = ChannelStore.getChannel(rawConversations.channelId);
     if (null != channel) {

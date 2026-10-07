@@ -1,26 +1,26 @@
-// Module ID: 4817
-// Function ID: 4818
+// Module ID: 4870
+// Function ID: 4871
 // Name: findCodedLinks
-// Dependencies: [4818, 1086, 1088, 4821, 1374, 4822, 4823, 1367, 7320, 4819, 7158, 8513, 7791, 7108, 5769, 10894, 5309, 2]
+// Dependencies: [4871, 1085, 1087, 4874, 1373, 4875, 4876, 1366, 7534, 4872, 7225, 8719, 8015, 7175, 5635, 11149, 5791, 2]
 // Exports: containsCodedLink, default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, parseUserProfileEmbedCode, remainingPathFromDiscordHostMatch
 
-// Module 4817 (findCodedLinks)
-import Constants from "Constants" /* 1086 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1367 */;
-import urlParse from "urlParse" /* 1374 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4819 */;
-import CodedLink from "CodedLink" /* 4822 */;
-import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 4823 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5309 */;
-import _mod5769 from "module_5769" /* 5769 */;
-import _slicedToArray from "_slicedToArray" /* 7108 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7158 */;
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 7320 */;
-import Authorize from "Authorize" /* 8513 */;
-import storefrontCodedLink2 from "storefrontCodedLink" /* 10894 */;
-import InviteStore from "InviteStore" /* 4818 */;
-import RegexUtils_mod from "RegexUtils" /* 4821 */;
+// Module 4870 (findCodedLinks)
+import Constants from "Constants" /* 1085 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1366 */;
+import urlParse from "urlParse" /* 1373 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4872 */;
+import CodedLink from "CodedLink" /* 4875 */;
+import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 4876 */;
+import _mod5635 from "module_5635" /* 5635 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5791 */;
+import _slicedToArray from "_slicedToArray" /* 7175 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7225 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 7534 */;
+import Authorize from "Authorize" /* 8719 */;
+import storefrontCodedLink2 from "storefrontCodedLink" /* 11149 */;
+import InviteStore from "InviteStore" /* 4871 */;
+import RegexUtils_mod from "RegexUtils" /* 4874 */;
 import size from "module_2" /* 2 */;
 
 let WEBAPP_ENDPOINT, invite, set;
@@ -30,7 +30,7 @@ let obj17;
 let obj20;
 let obj4;
 let obj7;
-const f88301 = (arg0, arg1, arg2, arg3) => {
+const f89366 = (arg0, arg1, arg2, arg3) => {
   let combined = arg0;
   if (null == arg2) {
     const _HermesInternal = HermesInternal;
@@ -53,7 +53,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
         let primaryHostRemainingPath;
         let templateHostRemainingPath;
         let url;
-        const f88303 = (item) => {
+        const f89368 = (item) => {
           let parts;
           if (typeof item === "string") {
             parts = item.split(",");
@@ -231,7 +231,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
             }
             let match5;
             if (primaryHostRemainingPath != null) {
-              match5 = primaryHostRemainingPath.match(closure_2_19);
+              match5 = primaryHostRemainingPath.match(closure_2_20);
             }
             if (null != match5) {
               if (null != query) {
@@ -278,7 +278,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
             if (null != match7) {
               if (null != match7[3]) {
                 const tmp4Result22 = _slicedToArray;
-                const storefrontSKUCodedLink = tmp4Result22.makeStorefrontSKUCodedLink(tmp150, tmp151);
+                const storefrontSKUCodedLink = tmp4Result22.makeStorefrontSKUCodedLink(tmp156, tmp157);
                 const APP_DIRECTORY_STOREFRONT_SKU = tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU;
                 const obj35 = set;
                 if (!set.has(storefrontSKUCodedLink)) {
@@ -349,7 +349,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
               }
               let parsed = null;
               if (null != query) {
-                const tmp4Result23 = _mod5769;
+                const tmp4Result23 = _mod5635;
                 parsed = tmp4Result23.parse(query);
               }
               if (typeof match11[3] === "string") {
@@ -368,7 +368,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
                   const _Array = Array;
                   if (Array.isArray(skuIds)) {
                     const tmp4Result26 = storefrontCodedLink2;
-                    result1 = tmp4Result26.normalizeStorefrontSkuIds(skuIds.flatMap(f88303));
+                    result1 = tmp4Result26.normalizeStorefrontSkuIds(skuIds.flatMap(f89368));
                   } else {
                     result1 = [];
                   }
@@ -409,7 +409,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
             }
             let match13;
             if (primaryHostRemainingPath != null) {
-              match13 = primaryHostRemainingPath.match(closure_2_17);
+              match13 = primaryHostRemainingPath.match(closure_2_18);
             }
             if (null != match13) {
               const GAME_PROFILE = tmp4(tmp5[5]).CodedLinkType.GAME_PROFILE;
@@ -435,22 +435,35 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
             }
             let match15;
             if (primaryHostRemainingPath != null) {
-              match15 = primaryHostRemainingPath.match(closure_2_18);
+              match15 = primaryHostRemainingPath.match(closure_2_17);
             }
             if (null != match15) {
-              const USER_PROFILE = tmp4(tmp5[5]).CodedLinkType.USER_PROFILE;
+              const GAME_ORGANIZATION_INVITE = tmp4(tmp5[5]).CodedLinkType.GAME_ORGANIZATION_INVITE;
               const obj56 = set;
               if (!set.has(match15[1])) {
                 obj56.add(match15[1]);
-                const obj40 = { type: USER_PROFILE, code: match15[1], url: iter };
+                const obj40 = { type: GAME_ORGANIZATION_INVITE, code: match15[1], url: iter };
                 items.push(obj40);
+              }
+            }
+            let match16;
+            if (primaryHostRemainingPath != null) {
+              match16 = primaryHostRemainingPath.match(closure_2_19);
+            }
+            if (null != match16) {
+              const USER_PROFILE = tmp4(tmp5[5]).CodedLinkType.USER_PROFILE;
+              const obj58 = set;
+              if (!set.has(match16[1])) {
+                obj58.add(match16[1]);
+                const obj42 = { type: USER_PROFILE, code: match16[1], url: iter };
+                items.push(obj42);
               }
             }
             if ("/shop" === primaryHostRemainingPath) {
               let applicationId;
               let parsed1 = null;
               if (null != query) {
-                const tmp4Result28 = _mod5769;
+                const tmp4Result28 = _mod5635;
                 parsed1 = tmp4Result28.parse(query);
               }
               let str14;
@@ -484,7 +497,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
                       const _Array2 = Array;
                       if (Array.isArray(skuIds1)) {
                         const tmp4Result31 = storefrontCodedLink2;
-                        result2 = tmp4Result31.normalizeStorefrontSkuIds(skuIds1.flatMap(f88303));
+                        result2 = tmp4Result31.normalizeStorefrontSkuIds(skuIds1.flatMap(f89368));
                       } else {
                         result2 = [];
                       }
@@ -497,36 +510,36 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
                     const SOCIAL_LAYER_STOREFRONT_APP = tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP;
                     const tmp4Result32 = storefrontCodedLink2;
                     const storefrontCodedLink1 = tmp4Result32.makeStorefrontCodedLink(items2, applicationId);
-                    const obj65 = set;
+                    const obj67 = set;
                     if (!set.has(storefrontCodedLink1)) {
-                      obj65.add(storefrontCodedLink1);
-                      const obj42 = { type: SOCIAL_LAYER_STOREFRONT_APP, code: storefrontCodedLink1, url: iter };
-                      items.push(obj42);
+                      obj67.add(storefrontCodedLink1);
+                      const obj43 = { type: SOCIAL_LAYER_STOREFRONT_APP, code: storefrontCodedLink1, url: iter };
+                      items.push(obj43);
                     }
                   }
                 }
-                let match16;
+                let match17;
                 if (url.hash != null) {
-                  match16 = str16.match(closure_2_20);
+                  match17 = str16.match(closure_2_21);
                 }
                 const COLLECTIBLES_SHOP = tmp4(tmp5[5]).CodedLinkType.COLLECTIBLES_SHOP;
                 if (str14 == null) {
                   str14 = "";
                 }
                 let str17;
-                if (match16 != null) {
-                  str17 = match16[1];
+                if (match17 != null) {
+                  str17 = match17[1];
                 }
                 if (str17 == null) {
                   str17 = "";
                 }
                 const _HermesInternal3 = HermesInternal;
                 const combined2 = "" + str14 + "-" + str17;
-                const obj62 = set;
+                const obj64 = set;
                 if (!set.has(combined2)) {
-                  obj62.add(combined2);
-                  const obj43 = { type: COLLECTIBLES_SHOP, code: combined2, url: iter };
-                  items.push(obj43);
+                  obj64.add(combined2);
+                  const obj44 = { type: COLLECTIBLES_SHOP, code: combined2, url: iter };
+                  items.push(obj44);
                 }
               }
               items2 = [];
@@ -761,12 +774,13 @@ const re13 = /^(?:\/game-shop\/([0-9]+)|\/channels\/([0-9]+)\/game-shop\/(?:[0-9
 const re14 = /^\/channels\/([0-9]+)\/shop$/;
 const re15 = /^\/quests\/([0-9-]+)\/?$/;
 const re16 = /^\/game-servers\/share\/([A-Za-z0-9_-]+)$/;
-const re17 = /^\/games\/([0-9]+)(?:\/[A-Za-z0-9-]*)?\/?$/;
-const re18 = /^\/users\/([0-9]+)\/?$/;
-const re19 = /^\/oauth2\/authorize/;
-const re20 = /^#itemSkuId=([0-9]+)$/;
+const re17 = /^\/game-organizations\/invite\/([A-Za-z0-9_-]+)\/?$/;
+const re18 = /^\/games\/([0-9]+)(?:\/[A-Za-z0-9-]*)?\/?$/;
+const re19 = /^\/users\/([0-9]+)\/?$/;
+const re20 = /^\/oauth2\/authorize/;
+const re21 = /^#itemSkuId=([0-9]+)$/;
 let tmp3 = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i;
-const re21 = tmp3;
+const re22 = tmp3;
 if (null == INVITE_HOST) {
   obj = { host: null, pathPrefix: null };
 } else {
@@ -902,9 +916,9 @@ function findCodedLinks(str) {
   if (null == str) {
     return [];
   } else {
-    str = str.replace(regExp1, f88301);
+    str = str.replace(regExp1, f89366);
     const tmp4 = findCodedLinkUrlsDefault(str);
-    let match = str.match(re21);
+    let match = str.match(re22);
     const concat = tmp4.concat;
     if (match == null) {
       match = [];
@@ -1115,7 +1129,7 @@ export const parseUserProfileEmbedCode = function parseUserProfileEmbedCode(targ
   const str = getPathsFromURL(target).primaryHostRemainingPath;
   let match;
   if (str != null) {
-    match = str.match(re18);
+    match = str.match(re19);
   }
   let tmp3;
   if (match != null) {
@@ -1147,9 +1161,9 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
   if (null == sanitizeUrlResult) {
     items = [];
   } else {
-    const str = sanitizeUrlResult.replace(regExp1, f88301);
+    const str = sanitizeUrlResult.replace(regExp1, f89366);
     const tmp4 = findCodedLinkUrlsDefault(str);
-    let match = str.match(re21);
+    let match = str.match(re22);
     const concat = tmp4.concat;
     if (match == null) {
       match = [];
@@ -1170,10 +1184,10 @@ export const containsCodedLink = function containsCodedLink(sanitizeWhitespaceRe
       items = [];
     } else {
       let tmp4 = regExp1;
-      const str2 = str.replace(regExp1, f88301);
+      const str2 = str.replace(regExp1, f89366);
       let tmp5 = importDefault;
       const tmp6 = findCodedLinkUrlsDefault(str2);
-      let match = str2.match(re21);
+      let match = str2.match(re22);
       const concat = tmp6.concat;
       if (match == null) {
         match = [];

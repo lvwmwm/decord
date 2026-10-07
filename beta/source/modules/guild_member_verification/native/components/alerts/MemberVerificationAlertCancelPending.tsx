@@ -1,11 +1,11 @@
-// Module ID: 5853
-// Function ID: 5854
+// Module ID: 5930
+// Function ID: 5931
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [109, 19, 21, 558, 576, 5854, 1127, 5282, 5850, 2]
+// Dependencies: [109, 19, 21, 558, 576, 5931, 1126, 5594, 5927, 2]
 
-// Module 5853 (MemberVerificationAlertCancelPending)
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 5850 */;
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5854 */;
+// Module 5930 (MemberVerificationAlertCancelPending)
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 5927 */;
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5931 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -65,8 +65,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(tmp(1127).t.KYiN1Q);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(tmp(1126).t.KYiN1Q);
       cResult[9] = stringResult;
       tmp14 = stringResult;
     } else {
@@ -75,8 +75,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (cResult[10] !== tmp8) {
       let stringResult1 = tmp8;
       if (tmp8 == null) {
-        const intl2 = tmp(1127).intl;
-        stringResult1 = intl2.string(tmp(1127).t.nQHxqm);
+        const intl2 = tmp(1126).intl;
+        stringResult1 = intl2.string(tmp(1126).t.nQHxqm);
       }
       cResult[10] = tmp8;
       cResult[11] = stringResult1;
@@ -87,8 +87,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (cResult[12] !== tmp4) {
       let stringResult2 = tmp4;
       if (tmp4 == null) {
-        const intl3 = tmp(1127).intl;
-        stringResult2 = intl3.string(tmp(1127).t.OzHPde);
+        const intl3 = tmp(1126).intl;
+        stringResult2 = intl3.string(tmp(1126).t.OzHPde);
       }
       cResult[12] = tmp4;
       cResult[13] = stringResult2;
@@ -105,8 +105,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1127).intl;
-        const stringResult3 = intl4.string(tmp(1127).t.bANR0R);
+        const intl4 = tmp(1126).intl;
+        const stringResult3 = intl4.string(tmp(1126).t.bANR0R);
         cResult[17] = stringResult3;
         tmp25 = stringResult3;
       } else {
@@ -114,7 +114,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       if (cResult[18] !== tmp6) {
         const obj2 = { text: tmp25, variant: "secondary", onPress: tmp6 };
-        const tmp29 = closure_6(tmp(5282).Button, obj2);
+        const tmp29 = closure_6(tmp(5594).Button, obj2);
         cResult[18] = tmp6;
         cResult[19] = tmp29;
         tmp27 = tmp29;
@@ -154,7 +154,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp30 = tmp33;
     }
     const obj5 = { variant: "destructive", text: tmp19, onPress: tmp12 };
-    const tmp24 = closure_6(tmp(5282).Button, obj5);
+    const tmp24 = closure_6(tmp(5594).Button, obj5);
     cResult[14] = tmp12;
     cResult[15] = tmp19;
     cResult[16] = tmp24;
@@ -192,26 +192,26 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj = GuildJoinRequestActionCreatorsDefault;
     const result = obj.removeGuildJoinRequest(guildId);
   }, items);
-  let obj = { header: intl.string(guildId(1127).t.KYiN1Q), subtitle: subtitleText, buttons: tmp8(tmp9, obj2) };
-  const tmp5 = onClose(5850);
+  let obj = { header: intl.string(guildId(1126).t.KYiN1Q), subtitle: subtitleText, buttons: tmp8(tmp9, obj2) };
+  const tmp5 = onClose(5927);
   const merged1 = Object.assign(merged);
-  intl = guildId(1127).intl;
+  intl = guildId(1126).intl;
   if (subtitleText == null) {
-    const intl2 = tmp7(1127).intl;
-    subtitleText = intl2.string(tmp7(1127).t.nQHxqm);
+    const intl2 = tmp7(1126).intl;
+    subtitleText = intl2.string(tmp7(1126).t.nQHxqm);
   }
-  const Button = tmp7(5282).Button;
+  const Button = tmp7(5594).Button;
   tmp8 = closure_8;
   tmp9 = closure_7;
   if (confirmText == null) {
-    const intl3 = tmp7(1127).intl;
-    confirmText = intl3.string(tmp7(1127).t.OzHPde);
+    const intl3 = tmp7(1126).intl;
+    confirmText = intl3.string(tmp7(1126).t.OzHPde);
   }
   obj2 = { children: items1 };
   items1 = [closure_6(Button, { variant: "destructive", text: confirmText, onPress: callback }), ];
-  const obj3 = { text: intl4.string(guildId(1127).t.bANR0R), variant: "secondary", onPress: onClose };
-  const Button2 = tmp7(5282).Button;
-  intl4 = tmp7(1127).intl;
+  const obj3 = { text: intl4.string(guildId(1126).t.bANR0R), variant: "secondary", onPress: onClose };
+  const Button2 = tmp7(5594).Button;
+  intl4 = tmp7(1126).intl;
   items1[1] = closure_6(Button2, obj3);
   return closure_6(tmp5, obj);
 });

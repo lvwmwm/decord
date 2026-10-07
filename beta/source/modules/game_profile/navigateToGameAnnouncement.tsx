@@ -1,13 +1,13 @@
-// Module ID: 8221
-// Function ID: 8222
+// Module ID: 8416
+// Function ID: 8417
 // Name: navigateToGameAnnouncement
-// Dependencies: [5, 2073, 1086, 38, 6760, 7830, 1113, 2]
+// Dependencies: [5, 2074, 1085, 38, 6844, 8054, 1112, 2]
 // Exports: default
 
-// Module 8221 (navigateToGameAnnouncement)
+// Module 8416 (navigateToGameAnnouncement)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -64,7 +64,7 @@ let obj = function _navigateToGameAnnouncement() {
             joinedAt = undefined;
             messageId = 1;
             sourceLocationStack = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else {
           if (1 === messageId) {

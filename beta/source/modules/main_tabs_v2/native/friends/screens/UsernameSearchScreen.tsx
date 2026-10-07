@@ -1,15 +1,15 @@
-// Module ID: 16594
-// Function ID: 16595
+// Module ID: 16943
+// Function ID: 16944
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 1253, 6399, 5267, 7301, 1370, 5438, 1127, 13402, 6462, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1252, 6471, 5770, 7507, 1369, 5911, 1126, 13668, 6537, 2]
 
-// Module 16594 (UsernameSearchScreen)
-import nativeDefault from "native" /* 588 */;
+// Module 16943 (UsernameSearchScreen)
+import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   }
   let obj2 = react;
   const effect = react.useEffect(tmp5, tmp6);
-  const insets = ref(6399)().insets;
+  const insets = ref(6471)().insets;
   ref = react.useRef(null);
   if (cResult[2] !== navigation) {
     class S {
@@ -112,7 +112,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     tmp10 = cResult[4];
   }
   const effect1 = obj2.useEffect(tmp9, tmp10);
-  const tmpResult = navigation(7301);
+  const tmpResult = navigation(7507);
   const clientThemesOverride = tmpResult.useClientThemesOverride();
   if (cResult[5] === insets.top) {
     class S {
@@ -134,7 +134,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     }
   }
   let tmp13 = null;
-  const tmpResult2 = navigation(1370);
+  const tmpResult2 = navigation(1369);
   if (tmpResult2.isIOS()) {
     class S {
       constructor() {
@@ -215,7 +215,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     const obj2 = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj2);
   }, []);
-  const insets = ref(6399)().insets;
+  const insets = ref(6471)().insets;
   ref = react.useRef(null);
   const items = [navigation];
   const effect1 = react.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -231,9 +231,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
       }
     }
   }), items);
-  let obj = navigation(7301);
+  let obj = navigation(7507);
   const clientThemesOverride = obj.useClientThemesOverride();
-  let obj2 = navigation(1370);
+  let obj2 = navigation(1369);
   let prop = null;
   if (obj2.isIOS()) {
     prop = null;
@@ -248,14 +248,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.content, clientThemesOverride];
   items2 = [, ];
-  tmp3Result = ref(6462);
-  items2[0] = closure_8(ref(5438), { absolute: true });
+  tmp3Result = ref(6537);
+  items2[0] = closure_8(ref(5911), { absolute: true });
   const obj5 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: items3, children: closure_8(tmp3Result2, obj7) };
-  items3 = [tmp.container, prop, { paddingBottom: insets.bottom + tmp3(588).space.PX_16 }];
-  obj7 = { style: tmp.inputContainer, autoFocusInput: false, headerText: intl.string(navigation(1127).t.YEOwDM), headerTextStyle: tmp.headerText, ref };
-  ({ paddingBottom: insets.bottom + ref(588).space.PX_16 });
-  tmp3Result2 = ref(13402);
-  intl = tmp7(1127).intl;
+  items3 = [tmp.container, prop, { paddingBottom: insets.bottom + tmp3(587).space.PX_16 }];
+  obj7 = { style: tmp.inputContainer, autoFocusInput: false, headerText: intl.string(navigation(1126).t.YEOwDM), headerTextStyle: tmp.headerText, ref };
+  ({ paddingBottom: insets.bottom + ref(587).space.PX_16 });
+  tmp3Result2 = ref(13668);
+  intl = tmp7(1126).intl;
   items2[1] = closure_8(closure_4, obj5);
   return closure_8(closure_5, obj3);
 });

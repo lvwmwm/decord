@@ -1,28 +1,28 @@
-// Module ID: 15569
-// Function ID: 15570
+// Module ID: 15864
+// Function ID: 15865
 // Name: Auth
-// Dependencies: [32, 19, 17, 11800, 1086, 21, 15570, 15571, 5933, 15580, 6423, 6367, 4837, 588, 558, 576, 15622, 6360, 1633, 6391, 15623, 6389, 6421, 1371, 1127, 15624, 6899, 15628, 2]
+// Dependencies: [32, 19, 17, 12056, 1085, 21, 15865, 15866, 6010, 15875, 6498, 6439, 4890, 587, 558, 576, 15917, 6432, 1632, 6463, 15918, 6461, 6496, 1370, 1126, 15919, 6984, 15923, 2]
 
-// Module 15569 (Auth)
+// Module 15864 (Auth)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6360 */;
-import MFAUtils from "MFAUtils" /* 6367 */;
-import BackgroundImageDefault from "BackgroundImage" /* 6391 */;
-import _mod6423 from "module_6423" /* 6423 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 15570 */;
-import RegistrationUtils from "RegistrationUtils" /* 15580 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 15622 */;
-import AuthManagerDefault from "AuthManager" /* 15624 */;
-import useOrientationLockDefault from "useOrientationLock" /* 15628 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6432 */;
+import MFAUtils from "MFAUtils" /* 6439 */;
+import BackgroundImageDefault from "BackgroundImage" /* 6463 */;
+import _mod6498 from "module_6498" /* 6498 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 15865 */;
+import RegistrationUtils from "RegistrationUtils" /* 15875 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 15917 */;
+import AuthManagerDefault from "AuthManager" /* 15919 */;
+import useOrientationLockDefault from "useOrientationLock" /* 15923 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MultiAccountStore from "MultiAccountStore" /* 11800 */;
+import MultiAccountStore from "MultiAccountStore" /* 12056 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 15571 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 15866 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,12 +38,12 @@ let obj4;
 let size;
 let tmp;
 let unpackModuleId;
-const intl2 = tmp(1127);
-const utils_PlatformUtils = tmp(1371);
-const KeyboardChatScrollView = tmp(1633);
-const react3 = tmp(6389);
-const Navigator3 = tmp(6421);
-const AssetRegistry = tmp(15623);
+const intl2 = tmp(1126);
+const utils_PlatformUtils = tmp(1370);
+const KeyboardChatScrollView = tmp(1632);
+const react3 = tmp(6461);
+const Navigator3 = tmp(6496);
+const AssetRegistry = tmp(15918);
 function getInitialAuthRouteStack() {
   let items1;
   obj = RegistrationHandoff;
@@ -110,8 +110,8 @@ const screens = fromEntries(RegistrationStepsUtils.map((item) => {
   let tmp8 = null;
   set = new Set(items1);
   if (set.has(tmp)) {
-    tmp8 = { cardStyleInterpolator: _mod6423.CardStyleInterpolators.forFadeFromCenter };
-    const obj4 = { cardStyleInterpolator: _mod6423.CardStyleInterpolators.forFadeFromCenter };
+    tmp8 = { cardStyleInterpolator: _mod6498.CardStyleInterpolators.forFadeFromCenter };
+    const obj4 = { cardStyleInterpolator: _mod6498.CardStyleInterpolators.forFadeFromCenter };
   }
   const merged3 = Object.assign(tmp8);
   items[1] = obj;
@@ -416,7 +416,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let num2 = 20;
     const tmpResult = utils_PlatformUtils;
     if (tmpResult.isAndroid()) {
-      num2 = tmp4(588).space.PX_12;
+      num2 = tmp4(587).space.PX_12;
     }
     obj12 = { paddingLeft: num2, paddingTop: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_16 };
     tmp18Result = tmp18(Provider, obj5);

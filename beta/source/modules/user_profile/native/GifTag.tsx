@@ -1,17 +1,17 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 7927
+// Function ID: 7928
 // Name: GifTag
-// Dependencies: [17, 21, 4837, 588, 684, 558, 576, 1127, 4833, 2]
+// Dependencies: [17, 21, 4890, 587, 683, 558, 576, 1126, 4886, 2]
 
-// Module 7705 (GifTag)
+// Module 7927 (GifTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import module_684 from "module_684" /* 684 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let createStyles = createStyles_mod;
 let obj = { gifTag: obj2, gifTagText: obj3 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: 2, borderRadius: nativeDefault.radii.xs, backgroundColor: alphaResult.css() };
 createStyles = createStyles.createStyles;
-const importDefaultResultResult = module_684(nativeDefault.unsafe_rawColors.WHITE);
+const importDefaultResultResult = module_683(nativeDefault.unsafe_rawColors.WHITE);
 alphaResult = importDefaultResultResult.alpha(0.9);
 obj3 = { color: nativeDefault.unsafe_rawColors.PRIMARY_800 };
 let closure_4 = createStyles(obj);
@@ -45,7 +45,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     const _Symbol = Symbol;
     const gifTagText = tmp4.gifTagText;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t.I5gL2H);
       cResult[3] = stringResult;
       tmp7 = stringResult;

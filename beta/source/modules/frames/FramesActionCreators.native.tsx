@@ -1,12 +1,12 @@
-// Module ID: 8755
-// Function ID: 8756
+// Module ID: 8986
+// Function ID: 8987
 // Name: FramesActionCreators
-// Dependencies: [5, 4856, 8756, 8757, 2]
+// Dependencies: [5, 4909, 8987, 8988, 2]
 
-// Module 8755 (FramesActionCreators)
-import launchFrameAll from "launchFrame" /* 8757 */;
+// Module 8986 (FramesActionCreators)
+import launchFrameAll from "launchFrame" /* 8988 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
 import size from "module_2" /* 2 */;
 
 let c1;

@@ -1,27 +1,27 @@
-// Module ID: 13658
-// Function ID: 13659
+// Module ID: 13929
+// Function ID: 13930
 // Name: Avatar
-// Dependencies: [19, 17, 1086, 1190, 21, 4837, 588, 12604, 13647, 13648, 8273, 7606, 558, 576, 8272, 13649, 5284, 8900, 8901, 13659, 2]
+// Dependencies: [19, 17, 1085, 1189, 21, 4890, 587, 12851, 13918, 13919, 8469, 7828, 558, 576, 8468, 13920, 5596, 9126, 4819, 13930, 2]
 
-// Module 13658 (Avatar)
+// Module 13929 (Avatar)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import IconDefault from "Icon" /* 5284 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7606 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8272 */;
-import ClipView from "ClipView" /* 8273 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8900 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8901 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12604 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 13647 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13648 */;
-import Status from "Status" /* 13649 */;
-import SpeakerPulseDefault from "SpeakerPulse" /* 13659 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4819 */;
+import IconDefault from "Icon" /* 5596 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7828 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8468 */;
+import ClipView from "ClipView" /* 8469 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9126 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12851 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 13918 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13919 */;
+import Status from "Status" /* 13920 */;
+import SpeakerPulseDefault from "SpeakerPulse" /* 13930 */;
 import react from "react" /* 19 */;
-import StatusConstants from "StatusConstants" /* 1190 */;
+import StatusConstants from "StatusConstants" /* 1189 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -292,14 +292,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                                                                                     const obj2 = { style: items, children: metroImportAll(tmp23, obj3) };
                                                                                     items = [, ];
                                                                                     ({ status: arr2[0], voiceStatus: arr2[1] } = closure_21);
-                                                                                    obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                                    obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
                                                                                     tmp23 = IconDefault;
                                                                                     tmp3 = metroImportAll(View, obj2);
                                                                                   } else if (mute) {
                                                                                     const obj = { style: items1, children: metroImportAll(tmp10, obj4) };
                                                                                     items1 = [, ];
                                                                                     ({ status: arr[0], voiceStatus: arr[1] } = closure_21);
-                                                                                    obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                                    obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
                                                                                     tmp10 = IconDefault;
                                                                                     tmp3 = metroImportAll(View, obj);
                                                                                   }
@@ -330,14 +330,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                                                                           const obj2 = { style: items, children: metroImportAll(tmp23, obj3) };
                                                                           items = [, ];
                                                                           ({ status: arr2[0], voiceStatus: arr2[1] } = closure_21);
-                                                                          obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                          obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
                                                                           tmp23 = IconDefault;
                                                                           tmp3 = metroImportAll(View, obj2);
                                                                         } else if (mute) {
                                                                           const obj = { style: items1, children: metroImportAll(tmp10, obj4) };
                                                                           items1 = [, ];
                                                                           ({ status: arr[0], voiceStatus: arr[1] } = closure_21);
-                                                                          obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                          obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
                                                                           tmp10 = IconDefault;
                                                                           tmp3 = metroImportAll(View, obj);
                                                                         }
@@ -368,14 +368,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                                                                     const obj2 = { style: items, children: metroImportAll(tmp23, obj3) };
                                                                     items = [, ];
                                                                     ({ status: arr2[0], voiceStatus: arr2[1] } = closure_21);
-                                                                    obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                    obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
                                                                     tmp23 = IconDefault;
                                                                     tmp3 = metroImportAll(View, obj2);
                                                                   } else if (mute) {
                                                                     const obj = { style: items1, children: metroImportAll(tmp10, obj4) };
                                                                     items1 = [, ];
                                                                     ({ status: arr[0], voiceStatus: arr[1] } = closure_21);
-                                                                    obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                    obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
                                                                     tmp10 = IconDefault;
                                                                     tmp3 = metroImportAll(View, obj);
                                                                   }
@@ -502,14 +502,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
           const obj2 = { style: items, children: metroImportAll(tmp23, obj3) };
           items = [, ];
           ({ status: arr2[0], voiceStatus: arr2[1] } = closure_21);
-          obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
+          obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
           tmp23 = IconDefault;
           tmp3 = metroImportAll(View, obj2);
         } else if (mute) {
           const obj = { style: items1, children: metroImportAll(tmp10, obj4) };
           items1 = [, ];
           ({ status: arr[0], voiceStatus: arr[1] } = closure_21);
-          obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: nativeDefault.unsafe_rawColors.WHITE };
+          obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.WHITE };
           tmp10 = IconDefault;
           tmp3 = metroImportAll(View, obj);
         }

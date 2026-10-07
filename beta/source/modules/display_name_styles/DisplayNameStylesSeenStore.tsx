@@ -1,11 +1,11 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 15160
+// Function ID: 15161
 // Name: DisplayNameStylesSeenStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 14875 (DisplayNameStylesSeenStore)
+// Module 15160 (DisplayNameStylesSeenStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let set;

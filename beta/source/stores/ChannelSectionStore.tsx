@@ -1,29 +1,29 @@
-// Module ID: 6699
-// Function ID: 6700
+// Module ID: 6783
+// Function ID: 6784
 // Name: ChannelSectionStore
-// Dependencies: [4752, 6700, 2055, 2051, 2073, 4472, 2102, 4657, 1378, 1086, 2058, 1097, 6701, 6702, 1122, 11, 5092, 504, 1441, 585, 2]
+// Dependencies: [4776, 6784, 2055, 2051, 2074, 4509, 2103, 4699, 1377, 1085, 2058, 1096, 6785, 6786, 1121, 11, 5321, 504, 1440, 584, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6699 (ChannelSectionStore)
+// Module 6783 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants2 from "Constants" /* 1097 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants2 from "Constants" /* 1096 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5092 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6701 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6702 */;
-import ExperimentStore from "ExperimentStore" /* 4752 */;
-import SearchMessageStore from "SearchMessageStore" /* 6700 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5321 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6785 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6786 */;
+import ExperimentStore from "ExperimentStore" /* 4776 */;
+import SearchMessageStore from "SearchMessageStore" /* 6784 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
 import size from "module_2" /* 2 */;
 

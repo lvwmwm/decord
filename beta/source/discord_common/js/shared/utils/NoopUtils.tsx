@@ -1,10 +1,10 @@
-// Module ID: 1100
-// Function ID: 1101
+// Module ID: 1099
+// Function ID: 1100
 // Name: NoopUtils
 // Dependencies: [2]
 // Exports: NOOP, NOOP_NULL, NOOP_PROMISE, NOOP_TRUE
 
-// Module 1100 (NoopUtils)
+// Module 1099 (NoopUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/NoopUtils.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13669
+// Function ID: 13670
 // Name: FriendRequestMessageExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1440, 2]
 
-// Module 13403 (FriendRequestMessageExperiment)
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+// Module 13669 (FriendRequestMessageExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,10 +1,10 @@
 // Module ID: 2585
 // Function ID: 2586
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 2585 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "cba91ea35e2dcd2e1d0f4315c186fdb5", name: "PremiumGifting.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2dpZnRpbmc=", scales: [1], hash: "767c2f8b54216f777c40f5a97523e655", name: "vi.messages.767c2f8b54216f777c40f5a97523e655.compiled.messages", type: "jsona" });

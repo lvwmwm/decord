@@ -1,18 +1,18 @@
-// Module ID: 9444
-// Function ID: 9445
+// Module ID: 9672
+// Function ID: 9673
 // Name: UserSettingsVoiceProcessing
-// Dependencies: [19, 17, 1999, 21, 4837, 588, 558, 576, 504, 9445, 9446, 9081, 1127, 5994, 5995, 4833, 9449, 9430, 6621, 2]
+// Dependencies: [19, 17, 1999, 21, 4890, 587, 558, 576, 504, 9673, 9674, 9306, 1126, 6071, 6072, 4886, 9677, 9657, 6698, 2]
 
-// Module 9444 (UserSettingsVoiceProcessing)
+// Module 9672 (UserSettingsVoiceProcessing)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
-import KrispLogoDefault from "KrispLogo" /* 9449 */;
+import nativeDefault from "native" /* 587 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
+import KrispLogoDefault from "KrispLogo" /* 9677 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,14 +24,14 @@ let metroRequire;
 let obj2;
 let tmp;
 const get_initialized = tmp(504);
-const intl8 = tmp(1127);
-const Text_Text = tmp(4833);
-const TableRadioRow4 = tmp(5994);
-const TableRadioGroup2 = tmp(5995);
-const TableSwitchRow4 = tmp(6621);
-const UserSettingsVoice = tmp(9430);
-const UserSettingsVoiceUtils = tmp(9445);
-const NoiseCancellationUtils = tmp(9446);
+const intl8 = tmp(1126);
+const Text_Text = tmp(4886);
+const TableRadioRow4 = tmp(6071);
+const TableRadioGroup2 = tmp(6072);
+const TableSwitchRow4 = tmp(6698);
+const UserSettingsVoice = tmp(9657);
+const UserSettingsVoiceUtils = tmp(9673);
+const NoiseCancellationUtils = tmp(9674);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 let obj = { optionsParentContainer: { marginTop: 12 }, optionsDescriptionContainer: obj2, krisp: { marginStart: -20 } };
@@ -366,24 +366,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       hasIcons: false,
       children: items1
     };
-    const TableRadioGroup = tmp2(5995).TableRadioGroup;
-    intl3 = tmp2(1127).intl;
+    const TableRadioGroup = tmp2(6072).TableRadioGroup;
+    intl3 = tmp2(1126).intl;
     const obj6 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.KRISP, label: intl4.string(intl8.t.rdoNzt), disabled: noiseCancellationDeferredToSystem };
-    const TableRadioRow = tmp2(5994).TableRadioRow;
-    intl4 = tmp2(1127).intl;
+    const TableRadioRow = tmp2(6071).TableRadioRow;
+    intl4 = tmp2(1126).intl;
     items1 = [hasOwnProperty(TableRadioRow, obj6), , ];
     const obj7 = { disabled: noiseCancellationDeferredToSystem, value: UserSettingsVoiceUtils.NoiseSuppressionOpt.STANDARD, label: intl5.string(intl8.t.qXeYHw) };
-    const TableRadioRow2 = tmp2(5994).TableRadioRow;
-    intl5 = tmp2(1127).intl;
+    const TableRadioRow2 = tmp2(6071).TableRadioRow;
+    intl5 = tmp2(1126).intl;
     items1[1] = hasOwnProperty(TableRadioRow2, obj7);
     const obj8 = { disabled: noiseCancellationDeferredToSystem, value: UserSettingsVoiceUtils.NoiseSuppressionOpt.NONE, label: intl6.string(intl8.t.wkYAlz) };
-    const TableRadioRow3 = tmp2(5994).TableRadioRow;
-    intl6 = tmp2(1127).intl;
+    const TableRadioRow3 = tmp2(6071).TableRadioRow;
+    intl6 = tmp2(1126).intl;
     items1[2] = hasOwnProperty(TableRadioRow3, obj8);
     items2 = [metroRequire(TableRadioGroup, obj5), ];
     const obj9 = { style: tmp.optionsDescriptionContainer, children: items3 };
-    const Text = tmp2(4833).Text;
-    const intl7 = tmp2(1127).intl;
+    const Text = tmp2(4886).Text;
+    const intl7 = tmp2(1126).intl;
     if (noiseCancellationDeferredToSystem) {
       const obj10 = {
         onSettingsClick() {
@@ -391,9 +391,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const result = mediaEngine.showSystemCaptureConfigurationUI("microphone_modes");
             }
       };
-      formatResult = intl7.format(tmp2(1127).t.EUNgko, obj10);
+      formatResult = intl7.format(tmp2(1126).t.EUNgko, obj10);
     } else {
-      formatResult = intl7.string(tmp2(1127).t.k6h1F4);
+      formatResult = intl7.string(tmp2(1126).t.k6h1F4);
     }
     const obj11 = { variant: "text-xs/medium", color: "text-muted", children: formatResult };
     items3 = [hasOwnProperty(Text, obj11), ];
@@ -403,7 +403,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9Result = tmp9(tmp10, obj4);
   } else {
     const obj13 = { hasIcons: false, children: hasOwnProperty(TableSwitchRow, obj14) };
-    const UserSettingsTableRowGroup = tmp2(9430).UserSettingsTableRowGroup;
+    const UserSettingsTableRowGroup = tmp2(9657).UserSettingsTableRowGroup;
     obj14 = {
       label: intl.string(intl8.t.t8Qhib),
       subLabel: intl2.string(intl8.t.najZCV),
@@ -415,9 +415,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
         }
     };
-    TableSwitchRow = tmp2(6621).TableSwitchRow;
-    intl = tmp2(1127).intl;
-    intl2 = tmp2(1127).intl;
+    TableSwitchRow = tmp2(6698).TableSwitchRow;
+    intl = tmp2(1126).intl;
+    intl2 = tmp2(1126).intl;
     tmp9Result = hasOwnProperty(UserSettingsTableRowGroup, obj13);
   }
   return tmp9Result;
@@ -464,16 +464,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   ({ echoCancellation, advancedVoiceActivitySupported, automaticGainControl, inputMode } = stateFromStoresObject);
   const vadUseKrisp = stateFromStoresObject.vadUseKrisp;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(inputMode(1127).t["6I6GUv"]);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(inputMode(1126).t["6I6GUv"]);
     cResult[2] = stringResult;
     tmp8 = stringResult;
   } else {
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(inputMode(1127).t.iWTwu6);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(inputMode(1126).t.iWTwu6);
     cResult[3] = stringResult1;
     tmp10 = stringResult1;
   } else {
@@ -481,9 +481,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== echoCancellation) {
     let obj2 = { title: tmp8, hasIcons: false, children: closure_5(TableSwitchRow, obj3) };
-    const UserSettingsTableRowGroup = tmp(9430).UserSettingsTableRowGroup;
-    obj3 = { label: tmp10, value: echoCancellation, onValueChange: inputMode(9445).handleEchoCancellationChange };
-    TableSwitchRow = tmp(6621).TableSwitchRow;
+    const UserSettingsTableRowGroup = tmp(9657).UserSettingsTableRowGroup;
+    obj3 = { label: tmp10, value: echoCancellation, onValueChange: inputMode(9673).handleEchoCancellationChange };
+    TableSwitchRow = tmp(6698).TableSwitchRow;
     const tmp14 = closure_5(UserSettingsTableRowGroup, obj2);
     cResult[4] = echoCancellation;
     cResult[5] = tmp14;
@@ -499,10 +499,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp15 = cResult[6];
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
-    const stringResult2 = intl3.string(inputMode(1127).t.cUMdH0);
-    const intl4 = tmp(1127).intl;
-    const stringResult3 = intl4.string(inputMode(1127).t["6EjbvA"]);
+    const intl3 = tmp(1126).intl;
+    const stringResult2 = intl3.string(inputMode(1126).t.cUMdH0);
+    const intl4 = tmp(1126).intl;
+    const stringResult3 = intl4.string(inputMode(1126).t["6EjbvA"]);
     cResult[7] = stringResult2;
     cResult[8] = stringResult3;
     tmp20 = stringResult3;
@@ -512,8 +512,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp20 = cResult[8];
   }
   if (cResult[9] !== automaticGainControl) {
-    const obj4 = { label: tmp19, subLabel: tmp20, value: automaticGainControl, onValueChange: inputMode(9445).handleAutomaticGainControlChange };
-    const TableSwitchRow2 = tmp(6621).TableSwitchRow;
+    const obj4 = { label: tmp19, subLabel: tmp20, value: automaticGainControl, onValueChange: inputMode(9673).handleAutomaticGainControlChange };
+    const TableSwitchRow2 = tmp(6698).TableSwitchRow;
     const tmp25 = closure_5(TableSwitchRow2, obj4);
     cResult[9] = automaticGainControl;
     cResult[10] = tmp25;
@@ -549,7 +549,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const obj6 = { hasIcons: false, children: items2 };
       items2 = [tmp23, tmp26];
-      const tmp31 = closure_6(inputMode(9430).UserSettingsTableRowGroup, obj6);
+      const tmp31 = closure_6(inputMode(9657).UserSettingsTableRowGroup, obj6);
       cResult[15] = tmp23;
       cResult[16] = tmp26;
       cResult[17] = tmp31;
@@ -559,8 +559,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp27 = advancedVoiceActivitySupported;
   if (tmp27) {
     const obj7 = {
-      label: intl5.string(inputMode(1127).t.BbESsg),
-      subLabel: intl6.string(inputMode(1127).t.LoOB1F),
+      label: intl5.string(inputMode(1126).t.BbESsg),
+      subLabel: intl6.string(inputMode(1126).t.LoOB1F),
       value: vadUseKrisp,
       onValueChange(vadUseKrisp) {
           const obj = AudioActionCreatorsDefault;
@@ -568,9 +568,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return obj.setMode(inputMode, obj2);
         }
     };
-    const TableSwitchRow3 = tmp(6621).TableSwitchRow;
-    intl5 = tmp(1127).intl;
-    intl6 = tmp(1127).intl;
+    const TableSwitchRow3 = tmp(6698).TableSwitchRow;
+    intl5 = tmp(1126).intl;
+    intl6 = tmp(1126).intl;
     tmp27 = closure_5(TableSwitchRow3, obj7);
   }
   cResult[11] = advancedVoiceActivitySupported;
@@ -626,9 +626,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return obj.setMode(_require, obj2);
         }
     };
-    const TableSwitchRow3 = tmp(6621).TableSwitchRow;
-    intl5 = tmp(1127).intl;
-    intl6 = tmp(1127).intl;
+    const TableSwitchRow3 = tmp(6698).TableSwitchRow;
+    intl5 = tmp(1126).intl;
+    intl6 = tmp(1126).intl;
     advancedVoiceActivitySupported = tmp6(TableSwitchRow3, obj5);
   }
   const obj6 = { children: items1 };

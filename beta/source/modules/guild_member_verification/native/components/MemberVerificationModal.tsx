@@ -1,21 +1,21 @@
-// Module ID: 5884
-// Function ID: 5885
+// Module ID: 5962
+// Function ID: 5963
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 2111, 5885, 5886, 21, 4570, 1189, 4837, 588, 558, 576, 1619, 4769, 4687, 5887, 5889, 504, 4660, 585, 5840, 5890, 5891, 5904, 5905, 1127, 6511, 5436, 6462, 2]
+// Dependencies: [19, 17, 2112, 5963, 5964, 21, 4612, 1188, 4890, 587, 558, 576, 1618, 4791, 4729, 5965, 5967, 504, 4702, 584, 5917, 5968, 5969, 5982, 5983, 1126, 6584, 5909, 6537, 2]
 
-// Module 5884 (MemberVerificationModal)
+// Module 5962 (MemberVerificationModal)
 import react_native from "react-native" /* 17 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5885 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 5886 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5963 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 5964 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp3;
-const MemberVerificationAlertActionCreators = tmp3(5840);
+const MemberVerificationAlertActionCreators = tmp3(5917);
 let View = react_native.View;
 ({ SCROLL_EVENT_TIMER_MS: metroImportDefault, useBannerHeight: metroImportAll } = MemberVerificationFormConstants);
 ({ jsx: c9, jsxs: c10 } = Fragment);

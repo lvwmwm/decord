@@ -1,12 +1,12 @@
-// Module ID: 4559
-// Function ID: 4560
+// Module ID: 4601
+// Function ID: 4602
 // Name: ThemeContextProvider
-// Dependencies: [19, 21, 558, 576, 4551, 2]
+// Dependencies: [19, 21, 558, 576, 4593, 2]
 
-// Module 4559 (ThemeContextProvider)
+// Module 4601 (ThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ThemeContext from "ThemeContext" /* 4551 */;
+import ThemeContext from "ThemeContext" /* 4593 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

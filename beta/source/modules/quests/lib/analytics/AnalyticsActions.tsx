@@ -1,31 +1,31 @@
-// Module ID: 7135
-// Function ID: 7136
+// Module ID: 7202
+// Function ID: 7203
 // Name: AnalyticsActions
-// Dependencies: [5, 7136, 1358, 7120, 1086, 6885, 7138, 7116, 7139, 7141, 7145, 5764, 5017, 1253, 7146, 7156, 7157, 5760, 7151, 7094, 1370, 1267, 7147, 2]
+// Dependencies: [5, 7203, 1357, 7187, 1085, 6970, 7205, 7183, 7206, 7208, 7212, 5630, 5070, 1252, 7213, 7223, 7224, 5626, 7218, 7161, 1369, 1266, 7214, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackAppStoreOverlaySurfaceClickedForAdContent, trackAppStoreOverlaySurfaceClickedForQuest, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 7135 (AnalyticsActions)
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6885 */;
-import QuestDataUtils from "QuestDataUtils" /* 7116 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7138 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7139 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
-import captureAdUserAction4 from "captureAdUserAction" /* 7146 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7156 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7157 */;
+// Module 7202 (AnalyticsActions)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6970 */;
+import QuestDataUtils from "QuestDataUtils" /* 7183 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7205 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7206 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7208 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
+import captureAdUserAction4 from "captureAdUserAction" /* 7213 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7223 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7224 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7136 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1358 */;
-import QuestStore from "QuestStore" /* 7120 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7203 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
+import QuestStore from "QuestStore" /* 7187 */;
 import size from "module_2" /* 2 */;
 
-let _null, _null2, _null3;
+let _null, _null2, _null3, clickId, impressionId, questContentCTA, questContentPosition;
 
 function trackQuestEvent(questId) {
   let allApplicationIds;
@@ -54,7 +54,7 @@ function trackQuestEvent(questId) {
     }
     const id = value.id;
     tmp24Result = AnalyticsTypes;
-    const QUEST = tmp24(5764).AdCreativeType.QUEST;
+    const QUEST = tmp24(5630).AdCreativeType.QUEST;
     const tmp24Result5 = SessionAdGenerator;
     let uuid = tmp24Result5.getOrRefreshAdSession(shouldExtendSession).uuid;
     const tmp24Result6 = QuestDataUtils;
@@ -267,7 +267,7 @@ let obj = function _getCommonClickEventProperties() {
             closure_6 = undefined;
             impression_id = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === impression_id) {
           if (arg0 === 1) {
@@ -337,10 +337,7 @@ function trackQuestContentClicked() {
 }
 obj = function _trackQuestContentClicked() {
   obj = _asyncToGenerator(async (questId) => {
-    let clickId;
     let closure_4;
-    let impressionId;
-    let trackGuildAndChannelMetadata;
     let c9 = 0;
     let c10 = 0;
     const iter = (async (arg0, value) => {
@@ -353,41 +350,115 @@ obj = function _trackQuestContentClicked() {
       let c6;
       let c7;
       let c8;
-      let obj2;
-      let properties;
-      let uuid;
-      const obj9 = closure_134_0(closure_134_2[7]);
-      const adTrafficMetadataSealed = obj9.getAdTrafficMetadataSealed(sourceQuestContent, questId);
-      sourceQuestContent = closure_134_9;
-      const obj6 = { questId, event: closure_134_7.QUEST_CONTENT_CLICKED, properties, trackGuildAndChannelMetadata, shouldExtendSession: obj2.isBillableQuestContent(_null), sourceQuestContent };
-      properties = { metadata_sealed: _null, traffic_metadata_sealed: _null2, search_session_id: _null3 };
-      const obj7 = { questContent: _null, questContentPosition: _null3, questContentRowIndex, questContentCTA: _null2, impressionId, clickId };
-      await closure_134_13(obj7);
-      const merged = Object.assign(value);
-      const obj8 = closure_134_0(closure_134_2[7]);
-      const adMetadataSealed = obj8.getAdMetadataSealed(sourceQuestContent);
-      _null = adMetadataSealed;
-      if (adMetadataSealed == null) {
-        _null = null;
+      if (c10 === 2) {
+        c10 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let questContentRowIndex;
+          let adTrafficMetadataSealed;
+          c10 = 2;
+          if (0 === c9) {
+            if (arg0 === 1) {
+              c10 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c10 = 3;
+              return { value, done: true };
+            } else {
+              let closure_6 = tmp4;
+              let closure_7 = tmp;
+              questId = undefined;
+              _null = undefined;
+              _null2 = undefined;
+              _null3 = undefined;
+              questContentRowIndex = undefined;
+              impressionId = undefined;
+              clickId = undefined;
+              trackGuildAndChannelMetadata = undefined;
+              sourceQuestContent = undefined;
+              ({ questId: c0, questContent: c1, questContentCTA: c2, questContentPosition: c3, questContentRowIndex: c4, impressionId: c5, clickId: c6, trackGuildAndChannelMetadata: c7, sourceQuestContent: c8 } = closure_0);
+              adTrafficMetadataSealed = undefined;
+              c9 = 1;
+              c10 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else {
+            let obj6;
+            let properties;
+            if (1 === c9) {
+              if (arg0 === 1) {
+                c10 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c10 = 3;
+                return { value, done: true };
+              } else {
+                const obj9 = closure_134_0(closure_134_2[7]);
+                adTrafficMetadataSealed = obj9.getAdTrafficMetadataSealed(sourceQuestContent, questId);
+                sourceQuestContent = closure_134_9;
+                obj6 = { questId, event: closure_134_7.QUEST_CONTENT_CLICKED };
+                properties = {};
+                c9 = 2;
+                c10 = 1;
+                const obj7 = { questContent: _null, questContentPosition: _null3, questContentRowIndex, questContentCTA: _null2, impressionId, clickId };
+                const obj10 = { value: closure_134_13(obj7), done: false };
+                return obj10;
+              }
+            } else if (arg0 === 1) {
+              c10 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c10 = 3;
+              return { value, done: true };
+            } else {
+              const merged = Object.assign(value);
+              const obj8 = closure_134_0(closure_134_2[7]);
+              const adMetadataSealed = obj8.getAdMetadataSealed(sourceQuestContent);
+              _null = adMetadataSealed;
+              if (adMetadataSealed == null) {
+                _null = null;
+              }
+              properties.metadata_sealed = _null;
+              _null2 = adTrafficMetadataSealed;
+              if (adTrafficMetadataSealed == null) {
+                _null2 = null;
+              }
+              properties.traffic_metadata_sealed = _null2;
+              obj = closure_134_0(closure_134_2[22]);
+              const currentQuestHomeSearchSession = obj.getCurrentQuestHomeSearchSession();
+              let uuid;
+              if (currentQuestHomeSearchSession != null) {
+                uuid = currentQuestHomeSearchSession.uuid;
+              }
+              _null3 = uuid;
+              if (uuid == null) {
+                _null3 = null;
+              }
+              properties.search_session_id = _null3;
+              obj6.properties = properties;
+              obj6.trackGuildAndChannelMetadata = trackGuildAndChannelMetadata;
+              const obj2 = closure_134_0(closure_134_2[7]);
+              obj6.shouldExtendSession = obj2.isBillableQuestContent(_null);
+              obj6.sourceQuestContent = sourceQuestContent;
+              sourceQuestContent(obj6);
+              c10 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          }
+        } catch (tmp28) {
+          c10 = 3;
+          throw tmp28;
+        }
       }
-      _null2 = adTrafficMetadataSealed;
-      if (adTrafficMetadataSealed == null) {
-        _null2 = null;
-      }
-      obj = closure_134_0(closure_134_2[22]);
-      const currentQuestHomeSearchSession = obj.getCurrentQuestHomeSearchSession();
-      if (currentQuestHomeSearchSession != null) {
-        uuid = currentQuestHomeSearchSession.uuid;
-      }
-      _null3 = uuid;
-      if (uuid == null) {
-        _null3 = null;
-      }
-      obj2 = closure_134_0(closure_134_2[7]);
-      sourceQuestContent(obj6);
-      await "IconComponent";
-      ({ questId: c0, questContent: c1, questContentCTA: c2, questContentPosition: c3, questContentRowIndex: c4, impressionId: c5, clickId: c6, trackGuildAndChannelMetadata: c7, sourceQuestContent: c8 } = closure_0);
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -399,17 +470,9 @@ function trackAdContentClicked() {
 }
 obj = function _trackAdContentClicked() {
   obj = _asyncToGenerator(async (adContentId) => {
-    let impressionId;
-    let questContent;
-    let questContentCTA;
-    let questContentPosition;
-    let questContentRowIndex;
-    let relatedQuestId;
-    let sourceQuestContent;
-    let trackGuildAndChannelMetadata;
     let c5 = 0;
     let c6 = 0;
-    const iter = (async (arg0) => {
+    const iter = (async (arg0, value) => {
       let c0;
       let c1;
       let c2;
@@ -420,15 +483,83 @@ obj = function _trackAdContentClicked() {
       let c7;
       let c8;
       let c9;
-      let obj6;
-      adCreativeType = closure_131_12;
-      const obj5 = { adContentId, relatedQuestId, adCreativeType, event: closure_131_7.QUEST_CONTENT_CLICKED, properties: await closure_131_13(obj6), trackGuildAndChannelMetadata, shouldExtendSession: obj.isBillableQuestContent(questContent), sourceQuestContent };
-      obj6 = { questContent, questContentPosition, questContentRowIndex, questContentCTA, impressionId };
-      obj = closure_131_0(closure_131_2[7]);
-      adCreativeType(obj5);
-      await "IconComponent";
-      ({ adContentId: c0, relatedQuestId: c1, adCreativeType: c2, questContent: c3, questContentCTA: c4, questContentPosition: c5, questContentRowIndex: c6, impressionId: c7, trackGuildAndChannelMetadata: c8, sourceQuestContent: c9 } = closure_0);
-      return "Reflect";
+      if (questContentRowIndex === 2) {
+        questContentRowIndex = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          questContentRowIndex = 2;
+          if (0 === questContentPosition) {
+            if (arg0 === 1) {
+              questContentRowIndex = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              questContentRowIndex = 3;
+              return { value, done: true };
+            } else {
+              let closure_3 = tmp4;
+              let closure_4 = tmp;
+              adContentId = undefined;
+              relatedQuestId = undefined;
+              adCreativeType = undefined;
+              questContent = undefined;
+              questContentCTA = undefined;
+              impressionId = undefined;
+              trackGuildAndChannelMetadata = undefined;
+              sourceQuestContent = undefined;
+              ({ adContentId: c0, relatedQuestId: c1, adCreativeType: c2, questContent: c3, questContentCTA: c4, questContentPosition: c5, questContentRowIndex: c6, impressionId: c7, trackGuildAndChannelMetadata: c8, sourceQuestContent: c9 } = closure_0);
+              questContentPosition = 1;
+              questContentRowIndex = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else {
+            let obj5;
+            if (1 === questContentPosition) {
+              if (arg0 === 1) {
+                questContentRowIndex = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                questContentRowIndex = 3;
+                return { value, done: true };
+              } else {
+                adCreativeType = closure_131_12;
+                obj5 = { adContentId, relatedQuestId, adCreativeType, event: closure_131_7.QUEST_CONTENT_CLICKED };
+                const obj6 = { questContent, questContentPosition, questContentRowIndex, questContentCTA, impressionId };
+                questContentPosition = 2;
+                questContentRowIndex = 1;
+                const obj7 = { value: closure_131_13(obj6), done: false };
+                return obj7;
+              }
+            } else if (arg0 === 1) {
+              questContentRowIndex = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              questContentRowIndex = 3;
+              return { value, done: true };
+            } else {
+              obj5.properties = value;
+              obj5.trackGuildAndChannelMetadata = trackGuildAndChannelMetadata;
+              obj = closure_131_0(closure_131_2[7]);
+              obj5.shouldExtendSession = obj.isBillableQuestContent(questContent);
+              obj5.sourceQuestContent = sourceQuestContent;
+              adCreativeType(obj5);
+              questContentRowIndex = 3;
+              return { value: "IconComponent", done: null };
+            }
+          }
+        } catch (tmp15) {
+          questContentRowIndex = 3;
+          throw tmp15;
+        }
+      }
     })();
     iter.next();
     return iter;

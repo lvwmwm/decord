@@ -1,43 +1,43 @@
-// Module ID: 13129
-// Function ID: 13130
+// Module ID: 13393
+// Function ID: 13394
 // Name: GuildBoostingMarketingTierCards
-// Dependencies: [32, 19, 17, 1086, 1380, 21, 8216, 1127, 11937, 11936, 5416, 5412, 9876, 13130, 8671, 4776, 13132, 4837, 588, 13124, 5754, 558, 576, 4570, 4838, 4833, 4769, 4687, 4730, 13133, 13135, 5436, 5292, 4685, 1189, 13137, 13138, 6401, 11974, 2]
+// Dependencies: [32, 19, 17, 1085, 1379, 21, 8411, 1126, 12190, 12189, 5885, 5881, 10105, 13394, 8878, 4839, 13396, 4890, 587, 13388, 5620, 558, 576, 4612, 4891, 4886, 4791, 4729, 7666, 13397, 13399, 5909, 5605, 4727, 1188, 13401, 13402, 6473, 12227, 2]
 
-// Module 13129 (GuildBoostingMarketingTierCards)
+// Module 13393 (GuildBoostingMarketingTierCards)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import shared from "shared" /* 4687 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4730 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import LinkIcon from "LinkIcon" /* 4776 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import timing from "timing" /* 4838 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import StageIcon from "StageIcon" /* 5412 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5416 */;
-import Pressables from "Pressables" /* 5436 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6401 */;
-import ReactionIcon from "ReactionIcon" /* 8216 */;
-import UploadIcon from "UploadIcon" /* 8671 */;
-import GifIcon from "GifIcon" /* 9876 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 11936 */;
-import StickerIcon from "StickerIcon" /* 11937 */;
-import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 13124 */;
-import ServerGridIcon from "ServerGridIcon" /* 13130 */;
-import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 13132 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13137 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13138 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import shared from "shared" /* 4729 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import LinkIcon from "LinkIcon" /* 4839 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import timing from "timing" /* 4891 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
+import StageIcon from "StageIcon" /* 5881 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5885 */;
+import Pressables from "Pressables" /* 5909 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6473 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 7666 */;
+import ReactionIcon from "ReactionIcon" /* 8411 */;
+import UploadIcon from "UploadIcon" /* 8878 */;
+import GifIcon from "GifIcon" /* 10105 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 12189 */;
+import StickerIcon from "StickerIcon" /* 12190 */;
+import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 13388 */;
+import ServerGridIcon from "ServerGridIcon" /* 13394 */;
+import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 13396 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13401 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13402 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -439,7 +439,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     }
     const obj = { opacity: withDelay(num, withTiming(num2, obj2)) };
     obj2 = { duration, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(4570).Easing;
+    Easing = tmp(4612).Easing;
     return obj;
   };
   let obj3 = { withDelay: require("ReanimatedRexport").withDelay, isVisible, TIER_FEATURE_ANIMATION_DURATION_MS, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
@@ -583,7 +583,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     }
     const obj = { opacity: withDelay(num, withTiming(num2, obj2)) };
     obj2 = { duration, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(4570).Easing;
+    Easing = tmp(4612).Easing;
     return obj;
   };
   let obj2 = { withDelay: require("ReanimatedRexport").withDelay, isVisible, TIER_FEATURE_ANIMATION_DURATION_MS, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
@@ -724,13 +724,13 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   const sum = guild.premiumTier + 1;
   const tmpResult = shared;
   const isThemeDarkResult = tmpResult.isThemeDark(tmp6);
-  const unsafe_rawColors = tmp5(588).unsafe_rawColors;
+  const unsafe_rawColors = tmp5(587).unsafe_rawColors;
   const tmp14 = isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.GUILD_BOOSTING_PINK;
   if (cResult[4] !== isExpanded) {
     let stringResult;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     if (isExpanded) {
       stringResult = string(t.DFwxsR);
     } else {
@@ -785,7 +785,7 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     }
     const cardTierBoostcount = tmp4.cardTierBoostcount;
     if (cResult[16] !== tier) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const obj3 = { numSubscriptions: metroRequire[tier] };
       const formatResult = intl2.format(intl4.t.gDsyB9, obj3);
       cResult[16] = tier;
@@ -948,22 +948,22 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                                                   ({ gradientHighlight: arr12[0], gradientHighlightBottom: arr12[1] } = tmp4);
                                                   items5[1] = React4(tmp5Result3, obj8);
                                                   const obj9 = { source: AssetRegistryDefault, style: items8 };
-                                                  const Icon = tmp(1189).Icon;
+                                                  const Icon = tmp(1188).Icon;
                                                   items8 = [, , ];
                                                   ({ sparkleStar: arr13[0], sparkleStarPointed: arr13[1], sparkleStarPointed1: arr13[2] } = tmp4);
                                                   items5[2] = React4(Icon, obj9);
                                                   const obj10 = { source: AssetRegistryDefault, style: items9 };
-                                                  const Icon2 = tmp(1189).Icon;
+                                                  const Icon2 = tmp(1188).Icon;
                                                   items9 = [, , ];
                                                   ({ sparkleStar: arr14[0], sparkleStarPointed: arr14[1], sparkleStarPointed2: arr14[2] } = tmp4);
                                                   items5[3] = React4(Icon2, obj10);
                                                   const obj11 = { source: AssetRegistryDefault, style: items10 };
-                                                  const Icon3 = tmp(1189).Icon;
+                                                  const Icon3 = tmp(1188).Icon;
                                                   items10 = [, , ];
                                                   ({ sparkleStar: arr15[0], sparkleStarPointed: arr15[1], sparkleStarPointed3: arr15[2] } = tmp4);
                                                   items5[4] = React4(Icon3, obj11);
                                                   const obj12 = { source: AssetRegistryDefault2, style: items11 };
-                                                  const Icon4 = tmp(1189).Icon;
+                                                  const Icon4 = tmp(1188).Icon;
                                                   items11 = [, , ];
                                                   ({ sparkleStar: arr16[0], sparkleStarElongated: arr16[1], sparkleStarElongated1: arr16[2] } = tmp4);
                                                   items5[5] = React4(Icon4, obj12);
@@ -999,10 +999,10 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                                           items12[0] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE;
                                           items12[1] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE;
                                           obj14 = { color: "text-overlay-light", style: tmp4.cardTierBadgeCopy, variant: "text-xs/bold", children: string2Result };
-                                          Text = tmp(4833).Text;
-                                          const intl3 = tmp(1127).intl;
+                                          Text = tmp(4886).Text;
+                                          const intl3 = tmp(1126).intl;
                                           const string2 = intl3.string;
-                                          const t2 = tmp(1127).t;
+                                          const t2 = tmp(1126).t;
                                           if (tier === sum) {
                                             string2Result = string2(t2["9NBo7c"]);
                                           } else {
@@ -1062,9 +1062,9 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                   }
                   const tmp52 = React4;
                   if (isExpanded) {
-                    ChevronLargeDownIcon = tmp(13133).ChevronLargeUpIcon;
+                    ChevronLargeDownIcon = tmp(13397).ChevronLargeUpIcon;
                   } else {
-                    ChevronLargeDownIcon = tmp(13135).ChevronLargeDownIcon;
+                    ChevronLargeDownIcon = tmp(13399).ChevronLargeDownIcon;
                   }
                   const obj19 = { color: nativeDefault.colors.WHITE, style: tmp4.cardFooterIcon };
                   const tmp52Result = tmp52(ChevronLargeDownIcon, obj19);
@@ -1182,9 +1182,9 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   const isThemeDarkResult = obj.isThemeDark(tmp4);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp9 = isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.GUILD_BOOSTING_PINK;
-  const intl = tmp7(1127).intl;
+  const intl = tmp7(1126).intl;
   const string = intl.string;
-  const t = tmp7(1127).t;
+  const t = tmp7(1126).t;
   if (isExpanded) {
     stringResult = string(t.DFwxsR);
   } else {
@@ -1199,14 +1199,14 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   obj4 = { style: tmp.pressableWrapper, children: authStore(PressableHighlight, obj5) };
   obj5 = { onPress: onCardPress, style: tmp.cardContent, accessibilityRole: "button", accessibilityState: { expanded: isExpanded }, accessibilityLabel: stringResult, children: items3 };
   const obj6 = { style: tmp.cardHeading, children: items2 };
-  PressableHighlight = tmp7(5436).PressableHighlight;
+  PressableHighlight = tmp7(5909).PressableHighlight;
   const obj7 = { color: "text-overlay-light", style: tmp.cardTierName, variant: "heading-xxl/extrabold", children: tmp7Result.getTierName(tier, { useLevels: false }) };
-  const Text = tmp7(4833).Text;
+  const Text = tmp7(4886).Text;
   tmp7Result = GuildBoostingUtils;
   items2 = [React4(Text, obj7), ];
   const obj8 = { color: "text-overlay-light", style: tmp.cardTierBoostcount, variant: "text-md/medium", children: intl2.format(intl4.t.gDsyB9, obj9) };
-  const Text2 = tmp7(4833).Text;
-  intl2 = tmp7(1127).intl;
+  const Text2 = tmp7(4886).Text;
+  intl2 = tmp7(1126).intl;
   obj9 = { numSubscriptions: metroRequire[tier] };
   items2[1] = React4(Text2, obj8);
   items3 = [authStore(View, obj6), , ];
@@ -1219,9 +1219,9 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   const obj12 = { style: tmp.cardFooter, children: items5 };
   items5 = [React4(Text_Text.Text, { color: "text-overlay-light", variant: "text-md/semibold", children: stringResult }), ];
   if (isExpanded) {
-    ChevronLargeDownIcon = tmp7(13133).ChevronLargeUpIcon;
+    ChevronLargeDownIcon = tmp7(13397).ChevronLargeUpIcon;
   } else {
-    ChevronLargeDownIcon = tmp7(13135).ChevronLargeDownIcon;
+    ChevronLargeDownIcon = tmp7(13399).ChevronLargeDownIcon;
   }
   const obj13 = { color: nativeDefault.colors.WHITE, style: tmp.cardFooterIcon };
   items5[1] = React4(ChevronLargeDownIcon, obj13);
@@ -1239,10 +1239,10 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     items7[0] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE;
     items7[1] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE;
     obj15 = { color: "text-overlay-light", style: tmp.cardTierBadgeCopy, variant: "text-xs/bold", children: string2Result };
-    Text3 = tmp7(4833).Text;
-    const intl3 = tmp7(1127).intl;
+    Text3 = tmp7(4886).Text;
+    const intl3 = tmp7(1126).intl;
     const string2 = intl3.string;
-    const t2 = tmp7(1127).t;
+    const t2 = tmp7(1126).t;
     if (tier === sum) {
       string2Result = string2(t2["9NBo7c"]);
     } else {
@@ -1280,22 +1280,22 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     ({ gradientHighlight: arr13[0], gradientHighlightBottom: arr13[1] } = tmp);
     items10[1] = React4(tmp2Result6, obj18);
     const obj19 = { source: AssetRegistryDefault, style: items13 };
-    const Icon = tmp7(1189).Icon;
+    const Icon = tmp7(1188).Icon;
     items13 = [, , ];
     ({ sparkleStar: arr14[0], sparkleStarPointed: arr14[1], sparkleStarPointed1: arr14[2] } = tmp);
     items10[2] = React4(Icon, obj19);
     const obj20 = { source: AssetRegistryDefault, style: items14 };
-    const Icon2 = tmp7(1189).Icon;
+    const Icon2 = tmp7(1188).Icon;
     items14 = [, , ];
     ({ sparkleStar: arr15[0], sparkleStarPointed: arr15[1], sparkleStarPointed2: arr15[2] } = tmp);
     items10[3] = React4(Icon2, obj20);
     const obj21 = { source: AssetRegistryDefault, style: items15 };
-    const Icon3 = tmp7(1189).Icon;
+    const Icon3 = tmp7(1188).Icon;
     items15 = [, , ];
     ({ sparkleStar: arr16[0], sparkleStarPointed: arr16[1], sparkleStarPointed3: arr16[2] } = tmp);
     items10[4] = React4(Icon3, obj21);
     const obj22 = { source: AssetRegistryDefault2, style: items16 };
-    const Icon4 = tmp7(1189).Icon;
+    const Icon4 = tmp7(1188).Icon;
     items16 = [, , ];
     ({ sparkleStar: arr17[0], sparkleStarElongated: arr17[1], sparkleStarElongated1: arr17[2] } = tmp);
     items10[5] = React4(Icon4, obj22);
@@ -1467,7 +1467,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       return React4(closure_18, obj, tier);
     })
   };
-  const MarketingCardsScroller = guild(11974).MarketingCardsScroller;
+  const MarketingCardsScroller = guild(12227).MarketingCardsScroller;
   let closure_0 = Math.min(BoostedGuildTiers.TIER_3, guild.premiumTier + 1);
   let findIndexResult = items1.findIndex((tier) => tier.tier === closure_0);
   num = 0;

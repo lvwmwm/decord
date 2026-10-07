@@ -1,21 +1,21 @@
-// Module ID: 14705
-// Function ID: 14706
+// Module ID: 14990
+// Function ID: 14991
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 5757, 14612, 21, 558, 576, 14619, 14609, 14613, 9546, 14616, 14699, 4570, 14617, 14614, 6066, 14611, 4802, 2]
+// Dependencies: [19, 5623, 14896, 21, 558, 576, 14925, 14893, 14897, 9773, 14900, 14984, 4612, 14901, 14898, 6140, 14895, 4855, 2]
 
-// Module 14705 (QuestDockGestureDetector)
+// Module 14990 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
-import QuestDockUtils from "QuestDockUtils" /* 14611 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import QuestDockUtils from "QuestDockUtils" /* 14895 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 14612 */;
+import QuestDockConstants from "QuestDockConstants" /* 14896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let flag, flag2, num4, num5, num6, obj1, set, set2, set2Result, set3, set3Result, set4Result, set5Result, set6Result, tmp12, tmp14, tmp20, tmp22, tmp23, tmp24Result, tmp26, tmp28, tmp30, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp41, tmp42, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp53, tmp55, tmp58, tmp59, tmp61, tmp62, tmp63, tmp64, tmp65, tmp66, tmp68, tmp69, tmp71, tmp72, tmp73, tmp74, tmp76, tmp77, tmp78, tmp81, tmp82;
+let flag, flag2, num4, num5, num6, obj1, set, set2, set2Result, set3, set3Result, set4, set4Result, set5, set5Result, set6Result, tmp12, tmp14, tmp20, tmp22, tmp23, tmp24Result, tmp26, tmp28, tmp30, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp41, tmp42, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp53, tmp55, tmp58, tmp59, tmp61, tmp62, tmp63, tmp64, tmp65, tmp66, tmp68, tmp69, tmp71, tmp72, tmp73, tmp74, tmp76, tmp77, tmp78, tmp81, tmp82;
 
 let c10;
 let c9;
@@ -30,7 +30,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const LegacyBaseButton = tmp(6066);
+const LegacyBaseButton = tmp(6140);
 const QuestDockMode = QuestConstants.QuestDockMode;
 ({ QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM: metroImportAll, QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM: c9, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: c10, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY: closure_12, QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD: map1, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: closure_14, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: closure_15, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: closure_16 } = QuestDockConstants);
 const jsx = Fragment.jsx;
@@ -992,7 +992,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           set3(obj3);
         }
         const obj6 = { x: 0, y: num3, width: getQuestDockExpandedWidth(width3, height.get().left, height.get().right), height: Math.min(sum, windowDimensions.get().height), prevDeltaY: diff };
-        const set4 = questDockWrapperSpecs.set;
+        set4 = questDockWrapperSpecs.set;
         const merged1 = Object.assign(questDockWrapperSpecs.get());
         num3 = 0;
         if (youBarTotalHeight > 0) {
@@ -1030,7 +1030,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       } else {
         const result3 = -1 * (sum - height) * (1 - sum / sharedValue / youBarHorizontalMargin);
         let num = 0;
-        const set5 = set.set;
+        set5 = set.set;
         if (youBarTotalHeight > 0) {
           const _Math2 = Math;
           num = -Math.min(result3, 0);

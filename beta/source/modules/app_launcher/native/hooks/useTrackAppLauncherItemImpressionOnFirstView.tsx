@@ -1,11 +1,11 @@
-// Module ID: 11469
-// Function ID: 11470
+// Module ID: 11725
+// Function ID: 11726
 // Name: useTrackAppLauncherItemImpressionOnFirstView
-// Dependencies: [19, 558, 576, 10749, 1492, 8227, 1261, 2]
+// Dependencies: [19, 558, 576, 10994, 1491, 8422, 1260, 2]
 
-// Module 11469 (useTrackAppLauncherItemImpressionOnFirstView)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import useTrackImpression from "useTrackImpression" /* 8227 */;
+// Module 11725 (useTrackAppLauncherItemImpressionOnFirstView)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import useTrackImpression from "useTrackImpression" /* 8422 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   let tmp = entrypoint;
   let obj = entrypoint(576);
   const cResult = obj.c(6);
-  let obj2 = entrypoint(10749);
+  let obj2 = entrypoint(10994);
   entrypoint = obj2.useAppLauncherContext().entrypoint;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const _Set = Set;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     tmp7 = cResult[1];
   }
-  const tmpResult = tmp(1492);
+  const tmpResult = tmp(1491);
   const focusEffect = tmpResult.useFocusEffect(tmp7);
   if (cResult[2] !== entrypoint) {
     const fn2 = function p(itemKey) {
@@ -89,12 +89,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   let entrypoint;
   let items;
   let ref;
-  let obj = entrypoint(10749);
+  let obj = entrypoint(10994);
   entrypoint = obj.useAppLauncherContext().entrypoint;
   const useRef = react.useRef;
   set = new Set();
   dependencyMap = useRef(set);
-  let obj2 = entrypoint(1492);
+  let obj2 = entrypoint(1491);
   const focusEffect = obj2.useFocusEffect(react.useCallback(() => {
     const current = ref.current;
     current.clear();

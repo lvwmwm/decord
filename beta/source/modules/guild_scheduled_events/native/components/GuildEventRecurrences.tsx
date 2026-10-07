@@ -1,17 +1,17 @@
-// Module ID: 9064
-// Function ID: 9065
+// Module ID: 9286
+// Function ID: 9287
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 9065, 4833, 1127, 11, 9067, 5282, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 9287, 4886, 1126, 11, 9289, 5594, 2]
 
-// Module 9064 (GuildEventRecurrences)
+// Module 9286 (GuildEventRecurrences)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import nativeDefault from "native" /* 588 */;
-import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9065 */;
-import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9067 */;
+import nativeDefault from "native" /* 587 */;
+import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9287 */;
+import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9289 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -185,10 +185,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEventId) => {
   const tmp2 = closure_8();
   ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: c4 } = useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule));
   let obj = { style: tmp2.container, children: items };
-  let obj2 = { variant: "heading-md/semibold", children: intl.string(guildEventId(1127).t["D/jjoa"]) };
+  let obj2 = { variant: "heading-md/semibold", children: intl.string(guildEventId(1126).t["D/jjoa"]) };
   useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
-  const Text = guildEventId(4833).Text;
-  intl = guildEventId(1127).intl;
+  const Text = guildEventId(4886).Text;
+  intl = guildEventId(1126).intl;
   items = [closure_6(Text, obj2), , ];
   const obj3 = {
     style: tmp2.scrollView,
@@ -209,7 +209,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEventId) => {
   }
   if (canViewMoreRecurrences) {
     const obj4 = {
-      text: intl2.string(guildEventId(1127).t["8O7Hpy"]),
+      text: intl2.string(guildEventId(1126).t["8O7Hpy"]),
       onPress(stopPropagation) {
           stopPropagation.stopPropagation();
           _undefined();
@@ -220,8 +220,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEventId) => {
         },
       size: "sm"
     };
-    const Button = tmp8(5282).Button;
-    intl2 = tmp8(1127).intl;
+    const Button = tmp8(5594).Button;
+    intl2 = tmp8(1126).intl;
     canViewMoreRecurrences = tmp7(Button, obj4);
   }
   items[2] = canViewMoreRecurrences;

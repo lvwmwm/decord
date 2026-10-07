@@ -1,13 +1,13 @@
-// Module ID: 10433
-// Function ID: 10434
+// Module ID: 10667
+// Function ID: 10668
 // Name: CountDown
-// Dependencies: [19, 21, 1127, 1103, 4833, 2]
+// Dependencies: [19, 21, 1126, 1102, 4886, 2]
 
-// Module 10433 (CountDown)
+// Module 10667 (CountDown)
 import Fragment from "Fragment" /* 21 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import intl6 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import intl6 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

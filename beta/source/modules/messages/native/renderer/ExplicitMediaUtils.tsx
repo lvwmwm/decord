@@ -1,16 +1,16 @@
-// Module ID: 7586
-// Function ID: 7587
+// Module ID: 7808
+// Function ID: 7809
 // Name: ExplicitMediaUtils
-// Dependencies: [1086, 1391, 6711, 6716, 5049, 1127, 2]
+// Dependencies: [1085, 1390, 6795, 6800, 5102, 1126, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 7586 (ExplicitMediaUtils)
-import Constants from "Constants" /* 1086 */;
-import intl6 from "intl" /* 1127 */;
-import FlagUtils from "FlagUtils" /* 1391 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5049 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6711 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6716 */;
+// Module 7808 (ExplicitMediaUtils)
+import Constants from "Constants" /* 1085 */;
+import intl6 from "intl" /* 1126 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6795 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6800 */;
 import size from "module_2" /* 2 */;
 
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
@@ -63,14 +63,14 @@ export const getAttachmentObscurityProps = function getAttachmentObscurityProps(
   if (shouldObscureSpoiler) {
     str2 = str;
     if (hasFlagResult) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const str3 = intl.string(intl6.t["F+x38C"]);
       str2 = str3.toUpperCase();
     }
   }
   if (mediaObscuredReasonFromBitmask.length > 0) {
-    const intl2 = tmp(1127).intl;
-    str = intl2.string(tmp(1127).t.SpxcUR);
+    const intl2 = tmp(1126).intl;
+    str = intl2.string(tmp(1126).t.SpxcUR);
   }
   return obj4;
 };
@@ -109,24 +109,24 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
   if (isSpoilered) {
     let stringResult;
     if ("image" === type) {
-      const intl3 = tmp(1127).intl;
-      stringResult = intl3.string(tmp(1127).t.sb2W2J);
+      const intl3 = tmp(1126).intl;
+      stringResult = intl3.string(tmp(1126).t.sb2W2J);
     } else if ("video" === type) {
-      const intl2 = tmp(1127).intl;
-      stringResult = intl2.string(tmp(1127).t.ehBaMc);
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t.ehBaMc);
     } else if ("file" === type) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t["3Gc2XP"]);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t["3Gc2XP"]);
     } else if ("generic" === type) {
-      const intl5 = tmp(1127).intl;
-      stringResult = intl5.string(tmp(1127).t.G71b77);
+      const intl5 = tmp(1126).intl;
+      stringResult = intl5.string(tmp(1126).t.G71b77);
     }
     tmp7 = stringResult;
   }
   stringResult1 = null;
   if (mediaObscuredReasonFromBitmask.length > 0) {
-    const intl4 = tmp(1127).intl;
-    stringResult1 = intl4.string(tmp(1127).t.SpxcUR);
+    const intl4 = tmp(1126).intl;
+    stringResult1 = intl4.string(tmp(1126).t.SpxcUR);
   }
   return obj4;
 };

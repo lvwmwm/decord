@@ -1,27 +1,27 @@
-// Module ID: 10506
-// Function ID: 10507
+// Module ID: 10744
+// Function ID: 10745
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 6966, 1086, 1097, 21, 558, 576, 8663, 1370, 4504, 10507, 10505, 10508, 10511, 10327, 10320, 10307, 10242, 7646, 7633, 504, 6604, 6584, 2017, 6965, 1127, 10323, 2]
+// Dependencies: [19, 7053, 1085, 1096, 21, 558, 576, 8870, 1369, 4541, 10745, 10743, 10746, 10749, 10558, 10551, 10538, 10471, 7868, 7855, 504, 6681, 6657, 2018, 7052, 1126, 10554, 2]
 
-// Module 10506 (CollectiblesShopGiftModal)
+// Module 10744 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import Constants2 from "Constants" /* 1097 */;
-import StringUtils from "StringUtils" /* 2017 */;
-import BadgeId from "BadgeId" /* 7633 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7646 */;
-import openGiftModal from "openGiftModal" /* 10505 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 10508 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 10511 */;
+import Constants from "Constants" /* 1085 */;
+import Constants2 from "Constants" /* 1096 */;
+import StringUtils from "StringUtils" /* 2018 */;
+import BadgeId from "BadgeId" /* 7855 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7868 */;
+import openGiftModal from "openGiftModal" /* 10743 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 10746 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 10749 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6966 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let product, skuId;
 
 let tmp;
-const CollectiblesActionCreators = tmp(6965);
+const CollectiblesActionCreators = tmp(7052);
 const application_id = Constants.COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = Constants2.PaymentGateways;
 const jsx = Fragment.jsx;

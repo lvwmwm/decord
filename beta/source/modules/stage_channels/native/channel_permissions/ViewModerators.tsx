@@ -1,21 +1,21 @@
-// Module ID: 16647
-// Function ID: 16648
+// Module ID: 17002
+// Function ID: 17003
 // Name: ViewModerators
-// Dependencies: [5, 19, 2111, 2105, 2073, 1086, 7853, 21, 1253, 4801, 16648, 1987, 558, 576, 1491, 504, 5728, 8993, 2059, 1985, 5205, 1127, 4850, 8994, 4530, 1189, 9009, 5280, 5997, 5916, 10738, 2]
+// Dependencies: [5, 19, 2112, 2106, 2074, 1085, 8077, 21, 1252, 4854, 17003, 1987, 558, 576, 1490, 504, 5572, 9215, 2060, 1985, 5708, 1126, 4903, 9216, 4567, 1188, 9231, 5593, 6074, 5993, 10983, 2]
 // Exports: openAddModeratorsActionSheet
 
-// Module 16647 (ViewModerators)
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+// Module 17002 (ViewModerators)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7853 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9009 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8077 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9231 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let obj = channel(576);
   const cResult = obj.c(21);
   channel = channel.channel;
-  let obj2 = channel(1491);
+  let obj2 = channel(1490);
   navigation = obj2.useNavigation();
   let obj3 = {
     headerRight() {
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmpResult = tmp(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp7, tmp10, tmp11);
   ({ guild, sortedGuildRoles } = stateFromStoresObject);
-  const tmpResult2 = tmp(5728);
+  const tmpResult2 = tmp(5572);
   const canUpdateStageChannelModerators = tmpResult2.useCanUpdateStageChannelModerators(channel.id);
   if (null != guild) {
     class S {
@@ -302,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                     const _HermesInternal = HermesInternal;
                     ActionSheetActionCreatorsDefault;
                     const obj2 = { channel, canSkip: false };
-                    const tmp8 = asyncRequire(16648, dependencyMap.paths);
+                    const tmp8 = asyncRequire(17003, dependencyMap.paths);
                     openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                   }
                 },
@@ -351,7 +351,7 @@ function openAddModeratorsActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channel, canSkip: flag };
-  const tmp3 = asyncRequire(16648, dependencyMap.paths);
+  const tmp3 = asyncRequire(17003, dependencyMap.paths);
   openLazy(tmp3, "channel-add-moderators-" + channel.id, obj2);
 }
 let result = size.fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");

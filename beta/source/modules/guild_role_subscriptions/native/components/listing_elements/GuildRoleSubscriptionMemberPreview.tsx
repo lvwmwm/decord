@@ -1,26 +1,26 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 15056
+// Function ID: 15057
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1378, 21, 4837, 588, 558, 576, 1127, 504, 4989, 1403, 6609, 5896, 1104, 4833, 1189, 6627, 2]
+// Dependencies: [19, 17, 1377, 21, 4890, 587, 558, 576, 1126, 504, 5042, 1402, 6686, 5974, 1103, 4886, 1188, 6704, 2]
 
-// Module 14771 (GuildRoleSubscriptionMemberPreview)
+// Module 15056 (GuildRoleSubscriptionMemberPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import utils_ColorUtilsAll from "utils/ColorUtils" /* 1104 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import RoleIconUtils from "RoleIconUtils" /* 6609 */;
-import RoleIconDefault from "RoleIcon" /* 6627 */;
+import nativeDefault from "native" /* 587 */;
+import utils_ColorUtilsAll from "utils/ColorUtils" /* 1103 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import RoleIconUtils from "RoleIconUtils" /* 6686 */;
+import RoleIconDefault from "RoleIcon" /* 6704 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,8 +55,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== content) {
     let stringResult = content;
     if (undefined === content) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t["6OSasb"]);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t["6OSasb"]);
     }
     cResult[0] = content;
     cResult[1] = stringResult;
@@ -317,7 +317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj5 = { style: tmp3.contextRow, children: items3 };
     const obj6 = { variant: "text-md/semibold", color: "interactive-text-active", style: obj7, children: tmp8 };
     obj7 = { color: obj11.int2hex(color) };
-    const Text = tmp4(4833).Text;
+    const Text = tmp4(4886).Text;
     obj11 = utils_ColorUtilsAll;
     items3 = [metroRequire(Text, obj6), , , ];
     let tmp12Result = null;

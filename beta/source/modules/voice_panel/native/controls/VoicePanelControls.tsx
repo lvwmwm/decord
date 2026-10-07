@@ -1,46 +1,46 @@
-// Module ID: 16952
-// Function ID: 16953
+// Module ID: 17312
+// Function ID: 17313
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 4853, 11648, 11651, 11646, 1086, 21, 4837, 588, 1616, 558, 576, 16953, 8367, 11647, 4570, 16843, 4535, 6066, 16954, 11652, 11655, 4802, 5267, 11391, 8848, 16955, 16862, 16956, 4544, 16960, 16962, 5895, 16965, 5281, 6495, 16830, 16877, 1260, 16989, 1122, 1619, 1485, 10491, 16961, 16990, 16964, 16991, 16851, 11471, 2]
+// Dependencies: [32, 19, 17, 4906, 11902, 11905, 11900, 1085, 21, 4890, 587, 1615, 558, 576, 17313, 8567, 11901, 4612, 17203, 4580, 6140, 17314, 11906, 11909, 4855, 5770, 11647, 9074, 17315, 17222, 17316, 4589, 17320, 17322, 5973, 17325, 5597, 6570, 17190, 17237, 1259, 17349, 1121, 1618, 1484, 10725, 17321, 17350, 17324, 17351, 17211, 11727, 2]
 
-// Module 16952 (VoicePanelControls)
+// Module 17312 (VoicePanelControls)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import native from "native" /* 4544 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import spring from "spring" /* 5281 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 8848 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10491 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11647 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11652 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 11655 */;
-import useControlsLockDefault from "useControlsLock" /* 16843 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 16862 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 16953 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 16954 */;
-import VoicePanelControlUtils from "VoicePanelControlUtils" /* 16955 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 16956 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 16960 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 16962 */;
+import nativeDefault from "native" /* 587 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import native from "native" /* 4589 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import spring from "spring" /* 5597 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9074 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11906 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 11909 */;
+import useControlsLockDefault from "useControlsLock" /* 17203 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17222 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 17313 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17314 */;
+import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17315 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 17316 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 17320 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17322 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore_mod from "ChannelRTCStore" /* 4853 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11651 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11646 */;
-import Constants from "Constants" /* 1086 */;
+import ChannelRTCStore_mod from "ChannelRTCStore" /* 4906 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1616 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, addChangeListenerResult, batchUpdatesResult, controlsProps, dependencyMap, importDefault, lockResult, obj1, set, set2, set3, unlockResult;
+let _require, addChangeListenerResult, batchUpdatesResult, controlsProps, dependencyMap, importDefault, lockResult, obj1, set, set2, set3, set4, set5, unlockResult;
 
 let StyleSheet;
 let c10;
@@ -62,7 +62,7 @@ let rect;
 let rect1;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(8367);
+const native2 = tmp(8567);
 function useControlsGesture(tab, sharedValue, sharedValue1, G) {
   let controlsSpecs;
   let sharedTab;
@@ -196,7 +196,7 @@ function useControlsGesture(tab, sharedValue, sharedValue1, G) {
         const obj5 = { x: 0, y: 0, width: getControlsDrawerOpenWidth(width2, safeArea.get().left, safeArea.get().right), height: Math.min(diff1, wrapperDimensions.get().drawerHeight - height), drawerMode: true };
         const tmp27 = sharedTab(closure_2[22]);
         height = tmp27(safeArea.get(), token).height;
-        const set4 = closure_1_2.set;
+        set4 = closure_1_2.set;
         const merged1 = Object.assign(closure_1_2.get());
         getControlsDrawerOpenWidth = tab(closure_2[23]).getControlsDrawerOpenWidth;
         tab(closure_2[23]);
@@ -433,16 +433,16 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) 
   } else {
     first = cResult[0];
   }
-  const tmp6 = isScreenReaderEnabled(11391)(first);
+  const tmp6 = isScreenReaderEnabled(11647)(first);
   dependencyMap = tmp6;
-  const context = windowDimensions.useContext(isScreenReaderEnabled(11647));
+  const context = windowDimensions.useContext(isScreenReaderEnabled(11901));
   const controlsSpecs = context.controlsSpecs;
   windowDimensions = context.windowDimensions;
   const mode = context.mode;
   const setControlsMode = context.setControlsMode;
   const safeArea = context.safeArea;
   const connected = context.connected;
-  let tmpResult = tmp(4570);
+  let tmpResult = tmp(4612);
   const fn = function h() {
     const obj = { connected: connected.get(), currentControlsMode: controlsSpecs.get().mode, mode: mode.get(), windowWidth: windowDimensions.get().width, windowHeight: windowDimensions.get().height, windowHeightIgnoringKeyboard: closure_2.get().height, controlsHeightValue: controlsSpecs.get().height, safeArea: safeArea.get() };
     return obj;
@@ -480,7 +480,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) 
           } else if (constants.HIDDEN === currentControlsMode) {
             if (isScreenReaderEnabled) {
               const obj2 = { hidden: false };
-              const set4 = wrapperSpecs.set;
+              set4 = wrapperSpecs.set;
               const merged = Object.assign(obj6.get());
               set4(obj2);
             } else if (!wrapperSpecs.get().hidden) {
@@ -514,13 +514,13 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) 
       }
       if (!wrapperSpecs.get().hidden) {
         const obj4 = { hidden: true };
-        const set5 = wrapperSpecs.set;
+        set5 = wrapperSpecs.set;
         const merged2 = Object.assign(obj11.get());
         set5(obj4);
       }
     }
   };
-  let obj4 = { cheapWorkletShallowEqual: tmp(8848).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(4570).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(11655).getControlsDefaultWidth, getDrawerSpec: tmp(16955).getDrawerSpec, getControlsDrawerOpenWidth: tmp(11655).getControlsDrawerOpenWidth };
+  let obj4 = { cheapWorkletShallowEqual: tmp(9074).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(4612).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(11909).getControlsDefaultWidth, getDrawerSpec: tmp(17315).getDrawerSpec, getControlsDrawerOpenWidth: tmp(11909).getControlsDrawerOpenWidth };
   fn2.__closure = obj4;
   fn2.__workletHash = 12616753127721;
   fn2.__initData = __initData4;
@@ -531,9 +531,9 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) 
   _require = wrapperSpecs;
   let obj = require("useIsScreenReaderEnabled");
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
-  const tmp2 = isScreenReaderEnabled(11391)({ ignoreKeyboard: true });
+  const tmp2 = isScreenReaderEnabled(11647)({ ignoreKeyboard: true });
   dependencyMap = tmp2;
-  const context = windowDimensions.useContext(isScreenReaderEnabled(11647));
+  const context = windowDimensions.useContext(isScreenReaderEnabled(11901));
   const controlsSpecs = context.controlsSpecs;
   windowDimensions = context.windowDimensions;
   const mode = context.mode;
@@ -578,7 +578,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) 
           } else if (constants.HIDDEN === currentControlsMode) {
             if (isScreenReaderEnabled) {
               const obj2 = { hidden: false };
-              const set4 = wrapperSpecs.set;
+              set4 = wrapperSpecs.set;
               const merged = Object.assign(obj6.get());
               set4(obj2);
             } else if (!wrapperSpecs.get().hidden) {
@@ -612,7 +612,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) 
       }
       if (!wrapperSpecs.get().hidden) {
         const obj4 = { hidden: true };
-        const set5 = wrapperSpecs.set;
+        set5 = wrapperSpecs.set;
         const merged2 = Object.assign(obj11.get());
         set5(obj4);
       }
@@ -680,7 +680,7 @@ let closure_41 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
                 return;
               }
             }
-            const TransitionItem = tmp(4544).TransitionItem;
+            const TransitionItem = tmp(4589).TransitionItem;
             const tmp15 = authStore4(TransitionItem, obj3);
             cResult[9] = tmp12;
             cResult[10] = tmp15;
@@ -705,7 +705,7 @@ let closure_41 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
                 return;
               }
             }
-            const TransitionItem2 = tmp(4544).TransitionItem;
+            const TransitionItem2 = tmp(4589).TransitionItem;
             const tmp19 = authStore4(TransitionItem2, obj4);
             cResult[11] = tmp16;
             cResult[12] = tmp19;
@@ -789,7 +789,7 @@ let closure_41 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   const obj2 = { item: tmp11, renderItem: VoicePanelFloatingCTAContainer.renderVoicePanelFloatingCTA };
   items2[0] = authStore4(TransitionItem, obj2);
   let tmp12;
-  const TransitionItem2 = tmp(4544).TransitionItem;
+  const TransitionItem2 = tmp(4589).TransitionItem;
   if (isConnectingOrConnectedToConsole) {
     tmp12 = memo;
   }
@@ -1196,7 +1196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                         let closure_0 = false;
                         const mode = closure_3.get().mode;
                         const DRAWER = constants.DRAWER;
-                        chatOpen(function() { /* body not rendered: F151837 */ });
+                        chatOpen(function() { /* body not rendered: F153664 */ });
                         const tmp = constants;
                         const tmp3 = closure_3;
                         if (!tmp3) {
@@ -1275,7 +1275,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                       let closure_0 = false;
                       const mode = closure_3.get().mode;
                       const DRAWER = constants.DRAWER;
-                      chatOpen(function() { /* body not rendered: F151837 */ });
+                      chatOpen(function() { /* body not rendered: F153664 */ });
                       const tmp = constants;
                       const tmp3 = closure_3;
                       if (!tmp3) {
@@ -1545,7 +1545,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                         let closure_0 = false;
                         const mode = closure_3.get().mode;
                         const DRAWER = constants.DRAWER;
-                        chatOpen(function() { /* body not rendered: F151837 */ });
+                        chatOpen(function() { /* body not rendered: F153664 */ });
                         const tmp = constants;
                         const tmp3 = closure_3;
                         if (!tmp3) {
@@ -1646,7 +1646,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                 let closure_0 = false;
                 const mode = closure_3.get().mode;
                 const DRAWER = constants.DRAWER;
-                chatOpen(function() { /* body not rendered: F151837 */ });
+                chatOpen(function() { /* body not rendered: F153664 */ });
                 const tmp = constants;
                 const tmp3 = closure_3;
                 if (!tmp3) {
@@ -1709,7 +1709,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
               let closure_0 = false;
               const mode = closure_3.get().mode;
               const DRAWER = constants.DRAWER;
-              chatOpen(function() { /* body not rendered: F151837 */ });
+              chatOpen(function() { /* body not rendered: F153664 */ });
               const tmp = constants;
               const tmp3 = closure_3;
               if (!tmp3) {
@@ -1739,7 +1739,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
           let closure_0 = false;
           const mode = closure_3.get().mode;
           const DRAWER = constants.DRAWER;
-          chatOpen(function() { /* body not rendered: F151837 */ });
+          chatOpen(function() { /* body not rendered: F153664 */ });
           const tmp = constants;
           const tmp3 = closure_3;
           if (!tmp3) {

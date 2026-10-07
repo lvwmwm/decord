@@ -1,27 +1,27 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12388
+// Function ID: 12389
 // Name: InviteError
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 4687, 4769, 12131, 12132, 12133, 1127, 5282, 4833, 1403, 1189, 12134, 5893, 2114, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 4729, 4791, 12389, 12390, 12391, 1126, 5594, 4886, 1402, 1188, 12392, 5971, 2115, 2]
 
-// Module 12130 (InviteError)
+// Module 12388 (InviteError)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import shared from "shared" /* 4687 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import GuildIcon from "GuildIcon" /* 5893 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 12133 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12134 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import shared from "shared" /* 4729 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import GuildIcon from "GuildIcon" /* 5971 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 12391 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12392 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -72,14 +72,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
     tmp5 = cResult[1];
   }
   importDefault = tmp5;
-  const tmpResult = onPressClose(4687);
-  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12131 : 12132);
+  const tmpResult = onPressClose(4729);
+  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12389 : 12390);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
   if (cResult[2] !== code) {
-    const tmpResult2 = onPressClose(12133);
+    const tmpResult2 = onPressClose(12391);
     const descriptiveInviteError = tmpResult2.getDescriptiveInviteError(code);
     cResult[2] = code;
     cResult[3] = descriptiveInviteError;
@@ -129,8 +129,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
           title1 = tmp9.title;
         }
         if (title1 == null) {
-          const intl3 = tmp(1127).intl;
-          title1 = intl3.string(tmp(1127).t.u9zxnX);
+          const intl3 = tmp(1126).intl;
+          title1 = intl3.string(tmp(1126).t.u9zxnX);
         }
         let title2;
         if (tmp9 != null) {
@@ -183,14 +183,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
           tmp34 = tmp37;
         }
         const obj3 = { style: tmp4.expiredBody, variant: "text-sm/medium", color: "text-default", children: tmp13 };
-        const tmp31 = closure_8(onPressClose(4833).Text, obj3);
+        const tmp31 = closure_8(onPressClose(4886).Text, obj3);
         cResult[17] = tmp13;
         cResult[18] = tmp4.expiredBody;
         cResult[19] = tmp31;
         tmp29 = tmp31;
       }
       const obj4 = { style: tmp4.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp23 };
-      const tmp28 = closure_8(onPressClose(4833).Text, obj4);
+      const tmp28 = closure_8(onPressClose(4886).Text, obj4);
       cResult[14] = tmp4.expiredTitle;
       cResult[15] = tmp23;
       cResult[16] = tmp28;
@@ -204,16 +204,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
     tmp17 = tmp20;
   }
   if (invite.state === constants3.BANNED) {
-    const intl2 = tmp(1127).intl;
-    stringResult = intl2.string(tmp(1127).t["GzD/aa"]);
+    const intl2 = tmp(1126).intl;
+    stringResult = intl2.string(tmp(1126).t["GzD/aa"]);
   } else {
     stringResult = undefined;
     if (tmp9 != null) {
       stringResult = tmp9.description;
     }
     if (stringResult == null) {
-      let intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.FWkU6P);
+      let intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.FWkU6P);
     }
   }
   let description1;
@@ -235,7 +235,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   const tmp = closure_11();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12131 : 12132);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12389 : 12390);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
@@ -243,16 +243,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   }
   const descriptiveInviteError = getDescriptiveInviteError(code);
   if (invite.state === metroImportDefault.BANNED) {
-    const intl2 = tmp2(1127).intl;
-    stringResult = intl2.string(tmp2(1127).t["GzD/aa"]);
+    const intl2 = tmp2(1126).intl;
+    stringResult = intl2.string(tmp2(1126).t["GzD/aa"]);
   } else {
     stringResult = undefined;
     if (descriptiveInviteError != null) {
       stringResult = descriptiveInviteError.description;
     }
     if (stringResult == null) {
-      const intl = tmp2(1127).intl;
-      stringResult = intl.string(tmp2(1127).t.FWkU6P);
+      const intl = tmp2(1126).intl;
+      stringResult = intl.string(tmp2(1126).t.FWkU6P);
     }
   }
   const items = [, , , ];
@@ -260,15 +260,15 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   items[0] = metroImportAll(_false, obj2);
   const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(4833).Text;
+  const Text = tmp2(4886).Text;
   const tmp10 = authStore;
   const tmp11 = React4;
   if (descriptiveInviteError != null) {
     title = descriptiveInviteError.title;
   }
   if (title == null) {
-    const intl3 = tmp2(1127).intl;
-    title = intl3.string(tmp2(1127).t.u9zxnX);
+    const intl3 = tmp2(1126).intl;
+    title = intl3.string(tmp2(1126).t.u9zxnX);
   }
   function handlePressClose() {
     closure_1_0();
@@ -278,8 +278,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   const obj5 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
   items[2] = metroImportAll(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5282).Button;
-  intl4 = tmp2(1127).intl;
+  const Button = tmp2(5594).Button;
+  intl4 = tmp2(1126).intl;
   items[3] = metroImportAll(Button, obj6);
   return tmp10(tmp11, obj4);
 });
@@ -347,7 +347,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
           }
         }
         const obj4 = { style: tmp4.disabledPauseIcon, source: AssetRegistryDefault };
-        const Icon = tmp(1189).Icon;
+        const Icon = tmp(1188).Icon;
         cResult[7] = tmp4.disabledPauseIcon;
         cResult[8] = closure_8(Icon, obj4);
         const tmp12 = closure_8(Icon, obj4);
@@ -391,7 +391,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
         cResult[15] = closure_10(closure_4, obj5);
         const tmp21 = closure_10(closure_4, obj5);
       }
-      const obj6 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(5893).GuildIconSizes.XLARGE };
+      const obj6 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(5971).GuildIconSizes.XLARGE };
       const tmp16 = GuildIconDefault;
       cResult[9] = tmp6;
       cResult[10] = tmp4.guildIcon;

@@ -1,12 +1,12 @@
-// Module ID: 4964
-// Function ID: 4965
+// Module ID: 5018
+// Function ID: 5019
 // Name: MediaEngineDummy
-// Dependencies: [4862, 4895, 4892, 2]
+// Dependencies: [4915, 4948, 4954, 2]
 
-// Module 4964 (MediaEngineDummy)
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4892 */;
-import Constants from "Constants" /* 4862 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4895 */;
+// Module 5018 (MediaEngineDummy)
+import MediaEngineEvent from "MediaEngineEvent" /* 4954 */;
+import Constants from "Constants" /* 4915 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4948 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -28,7 +28,7 @@ class MediaEngineDummy extends TypedEventEmitter {
     return applyArgumentsResult;
   }
   destroy() {
-    this.emit(BaseConnectionEvent.MediaEngineEvent.Destroy);
+    this.emit(MediaEngineEvent.MediaEngineEvent.Destroy);
     this.removeAllListeners();
   }
   interact() {

@@ -1,13 +1,13 @@
-// Module ID: 8606
-// Function ID: 8607
+// Module ID: 8813
+// Function ID: 8814
 // Name: imagePreConvert
-// Dependencies: [32, 5, 5441, 5485, 5580, 1987, 5486, 5487, 5470, 2]
+// Dependencies: [32, 5, 7247, 7303, 7398, 1987, 7304, 7305, 6479, 2]
 // Exports: itemNeedsImagePreConversion, maybePreConvertImageItem
 
-// Module 8606 (imagePreConvert)
+// Module 8813 (imagePreConvert)
 import asyncRequire from "asyncRequire" /* 1987 */;
-import Upload from "Upload" /* 5441 */;
-import imageFilename from "imageFilename" /* 5485 */;
+import UploadPlatform from "UploadPlatform" /* 7247 */;
+import imageFilename from "imageFilename" /* 7303 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let c2, closure_4, experiment, experiment2, originalContentType1, originalMd5;
 
 function preConversionFormat(platform) {
   let tmp3 = null;
-  if (platform.platform === Upload.UploadPlatform.WEB) {
+  if (platform.platform === UploadPlatform.UploadPlatform.WEB) {
     tmp3 = null;
     if (true !== platform.imageConversionEvaluated) {
       tmp3 = null;
@@ -94,7 +94,7 @@ let value = function _maybePreConvertImageItem() {
               const tmp86 = preConversionFormat(value);
               closure_1 = tmp86;
               if (null != tmp86) {
-                if (value.platform === Upload.UploadPlatform.WEB) {
+                if (value.platform === UploadPlatform.UploadPlatform.WEB) {
                   c5 = 1;
                   const items = [asyncRequire(dependencyMap[4], dependencyMap.paths), asyncRequire(dependencyMap[6], dependencyMap.paths), asyncRequire(dependencyMap[7], dependencyMap.paths), asyncRequire(dependencyMap[8], dependencyMap.paths)];
                   c6 = 2;
@@ -242,7 +242,7 @@ const result = size.fileFinishedImporting("lib/uploader/imagePreConvert.tsx");
 
 export const itemNeedsImagePreConversion = function itemNeedsImagePreConversion(file) {
   let tmp3 = null;
-  if (file.platform === Upload.UploadPlatform.WEB) {
+  if (file.platform === UploadPlatform.UploadPlatform.WEB) {
     tmp3 = null;
     if (true !== file.imageConversionEvaluated) {
       tmp3 = null;

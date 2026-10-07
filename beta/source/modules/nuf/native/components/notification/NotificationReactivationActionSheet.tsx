@@ -1,20 +1,20 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 17595
+// Function ID: 17596
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 11797, 1086, 21, 4837, 588, 1253, 558, 576, 11798, 4801, 17229, 1127, 4833, 5282, 5746, 6572, 2]
+// Dependencies: [19, 17, 12053, 1085, 21, 4890, 587, 1252, 558, 576, 12054, 4854, 17596, 1126, 4886, 5594, 5592, 6645, 2]
 
-// Module 17228 (NotificationReactivationActionSheet)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 11797 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11798 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17229 */;
+// Module 17595 (NotificationReactivationActionSheet)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12053 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12054 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17596 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,8 +101,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   const title = tmp4.title;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(_location(1127).t.a4bgO0);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(_location(1126).t.a4bgO0);
     cResult[6] = stringResult;
     tmp12 = stringResult;
   } else {
@@ -110,7 +110,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   if (cResult[7] !== tmp4.title) {
     let obj3 = { style: title, variant: "heading-xl/bold", accessibilityRole: "header", children: tmp12 };
-    const tmp16 = closure_8(_location(4833).Text, obj3);
+    const tmp16 = closure_8(_location(4886).Text, obj3);
     cResult[7] = tmp4.title;
     cResult[8] = tmp16;
     tmp14 = tmp16;
@@ -119,8 +119,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   const subtitle = tmp4.subtitle;
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(_location(1127).t["rW5gw/"]);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(_location(1126).t["rW5gw/"]);
     cResult[9] = stringResult1;
     tmp17 = stringResult1;
   } else {
@@ -128,7 +128,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   if (cResult[10] !== tmp4.subtitle) {
     const obj4 = { style: subtitle, variant: "text-sm/medium", color: "text-default", children: tmp17 };
-    const tmp21 = closure_8(_location(4833).Text, obj4);
+    const tmp21 = closure_8(_location(4886).Text, obj4);
     cResult[10] = tmp4.subtitle;
     cResult[11] = tmp21;
     tmp19 = tmp21;
@@ -137,8 +137,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   const buttons = tmp4.buttons;
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
-    const stringResult2 = intl3.string(_location(1127).t.a4bgO0);
+    const intl3 = tmp(1126).intl;
+    const stringResult2 = intl3.string(_location(1126).t.a4bgO0);
     cResult[12] = stringResult2;
     tmp22 = stringResult2;
   } else {
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   if (cResult[13] !== tmp5) {
     const obj5 = { text: tmp22, onPress: tmp5 };
-    const tmp26 = closure_8(_location(5282).Button, obj5);
+    const tmp26 = closure_8(_location(5594).Button, obj5);
     cResult[13] = tmp5;
     cResult[14] = tmp26;
     tmp24 = tmp26;
@@ -154,8 +154,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp24 = cResult[14];
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1127).intl;
-    const stringResult3 = intl4.string(_location(1127).t["/L3kom"]);
+    const intl4 = tmp(1126).intl;
+    const stringResult3 = intl4.string(_location(1126).t["/L3kom"]);
     cResult[15] = stringResult3;
     tmp27 = stringResult3;
   } else {
@@ -163,7 +163,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   if (cResult[16] !== tmp6) {
     const obj6 = { text: tmp27, onPress: tmp6, variant: "secondary" };
-    const tmp31 = closure_8(_location(5282).Button, obj6);
+    const tmp31 = closure_8(_location(5594).Button, obj6);
     cResult[16] = tmp6;
     cResult[17] = tmp31;
     tmp29 = tmp31;
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
       const obj7 = { children: closure_9(closure_4, obj8) };
       obj8 = { style: container, children: items };
       items = [tmp7, tmp14, tmp19, tmp32];
-      BottomSheet = tmp(6572).BottomSheet;
+      BottomSheet = tmp(6645).BottomSheet;
       const tmp38 = closure_8(BottomSheet, obj7);
       cResult[22] = tmp4.container;
       cResult[23] = tmp19;
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }
   const obj9 = { style: buttons, children: items1 };
   items1 = [tmp24, tmp29];
-  const tmp33 = closure_9(_location(5746).ButtonGroup, obj9);
+  const tmp33 = closure_9(_location(5592).ButtonGroup, obj9);
   cResult[18] = tmp4.buttons;
   cResult[19] = tmp24;
   cResult[20] = tmp29;
@@ -241,25 +241,25 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   let obj = { children: closure_9(closure_4, obj2) };
   obj2 = { style: tmp.container, children: items2 };
   let obj3 = { style: tmp.image, source: AssetRegistryDefault, resizeMode: "contain" };
-  BottomSheet = _location(6572).BottomSheet;
+  BottomSheet = _location(6645).BottomSheet;
   items2 = [closure_8(closure_5, obj3), , , ];
-  const obj4 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: intl.string(_location(1127).t.a4bgO0) };
-  const Text = _location(4833).Text;
-  intl = _location(1127).intl;
+  const obj4 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: intl.string(_location(1126).t.a4bgO0) };
+  const Text = _location(4886).Text;
+  intl = _location(1126).intl;
   items2[1] = closure_8(Text, obj4);
-  const obj5 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(_location(1127).t["rW5gw/"]) };
-  const Text2 = _location(4833).Text;
-  intl2 = _location(1127).intl;
+  const obj5 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(_location(1126).t["rW5gw/"]) };
+  const Text2 = _location(4886).Text;
+  intl2 = _location(1126).intl;
   items2[2] = closure_8(Text2, obj5);
   const obj6 = { style: tmp.buttons, children: items3 };
-  const ButtonGroup = _location(5746).ButtonGroup;
-  const obj7 = { text: intl3.string(_location(1127).t.a4bgO0), onPress: callback };
-  const Button = _location(5282).Button;
-  intl3 = _location(1127).intl;
+  const ButtonGroup = _location(5592).ButtonGroup;
+  const obj7 = { text: intl3.string(_location(1126).t.a4bgO0), onPress: callback };
+  const Button = _location(5594).Button;
+  intl3 = _location(1126).intl;
   items3 = [closure_8(Button, obj7), ];
-  const obj8 = { text: intl4.string(_location(1127).t["/L3kom"]), onPress: callback1, variant: "secondary" };
-  const Button2 = _location(5282).Button;
-  intl4 = _location(1127).intl;
+  const obj8 = { text: intl4.string(_location(1126).t["/L3kom"]), onPress: callback1, variant: "secondary" };
+  const Button2 = _location(5594).Button;
+  intl4 = _location(1126).intl;
   items3[1] = closure_8(Button2, obj8);
   items2[3] = closure_9(ButtonGroup, obj6);
   return closure_8(BottomSheet, obj);

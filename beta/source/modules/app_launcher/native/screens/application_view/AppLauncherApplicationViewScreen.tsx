@@ -1,23 +1,23 @@
-// Module ID: 11495
-// Function ID: 11496
+// Module ID: 11751
+// Function ID: 11752
 // Name: AppLauncherApplicationViewScreen
-// Dependencies: [19, 17, 8588, 1490, 5306, 21, 4837, 558, 576, 10749, 11496, 8587, 1617, 11497, 6590, 4570, 11498, 2]
+// Dependencies: [19, 17, 8795, 1489, 5788, 21, 4890, 558, 576, 10994, 11752, 8794, 1616, 11753, 6663, 4612, 11754, 2]
 
-// Module 11495 (AppLauncherApplicationViewScreen)
+// Module 11751 (AppLauncherApplicationViewScreen)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1617 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
-import AppLauncherContext from "AppLauncherContext" /* 10749 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
+import AppLauncherContext from "AppLauncherContext" /* 10994 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8588 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
-import createStyles from "createStyles" /* 4837 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8795 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let navigation, obj1, openCustomKeyboardResult, tmp3;
+let navigation;
 
 let SCREEN_BACKGROUND_COLOR;
 let closure_4;
@@ -69,30 +69,20 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecu
       if (cResult[6] === bottomSheetExpandReasonRef) {
         if (cResult[7] === expandBottomSheet) {
           if (cResult[8] === tmp7) {
-            class O {
-              constructor() {
-                tmp = closure_5 && closure_4;
-                if (tmp) {
-                  tmp2 = closure_2;
-                  tmp3 = closure_0;
-                  tmp4 = closure_2;
-                  closure_2.current = closure_0(closure_2[9]).AppLauncherBottomSheetExpandReason.APP_VIEW;
-                  tmp5 = null;
-                  if (expandBottomSheet != null) {
-                    tmp6 = expandBottomSheet();
-                  }
-                }
-                return;
-              }
+            let tmp10;
+            let tmp11;
+            if (cResult[9] === tmp6) {
+              tmp10 = cResult[10];
+              tmp11 = cResult[11];
             }
+            const effect = chatInputRef.useEffect(tmp10, tmp11);
             class P {
               constructor() {
-                current = chatInputRef.current;
-                obj = { type: closure_0(closure_2[12]).KeyboardTypes.APP_LAUNCHER, context: null };
-                obj1 = { initialRouteName: AppLauncherRouteName.APPLICATION_VIEW, application };
-                obj.context = obj1;
-                openCustomKeyboardResult = current.openCustomKeyboard(obj);
-                return;
+                let obj2;
+                const current = chatInputRef.current;
+                const obj = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj2 };
+                obj2 = { initialRouteName: metroImportDefault.APPLICATION_VIEW, application };
+                current.openCustomKeyboard(obj);
               }
             }
             cResult[12] = application;
@@ -106,34 +96,26 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecu
             cResult[20] = onPressBack;
             cResult[21] = sectionName;
             cResult[22] = jsx(tmp5(bottomSheetExpandReasonRef[13]), { application, context, lockableScrollableContentOffsetY, installOnDemand, sectionName, onPressBack, onActivityItemSelected, entrypoint, onCommandExecuted, onAauth2Cancel: tmp9 });
-            const tmp16 = jsx(tmp5(bottomSheetExpandReasonRef[13]), { application, context, lockableScrollableContentOffsetY, installOnDemand, sectionName, onPressBack, onActivityItemSelected, entrypoint, onCommandExecuted, onAauth2Cancel: tmp9 });
+            const tmp17 = jsx(tmp5(bottomSheetExpandReasonRef[13]), { application, context, lockableScrollableContentOffsetY, installOnDemand, sectionName, onPressBack, onActivityItemSelected, entrypoint, onCommandExecuted, onAauth2Cancel: tmp9 });
           }
         }
       }
-      class O {
-        constructor() {
-          tmp = closure_5 && closure_4;
-          if (tmp) {
-            tmp2 = closure_2;
-            tmp3 = closure_0;
-            tmp4 = closure_2;
-            closure_2.current = closure_0(closure_2[9]).AppLauncherBottomSheetExpandReason.APP_VIEW;
-            tmp5 = null;
-            if (expandBottomSheet != null) {
-              tmp6 = expandBottomSheet();
-            }
+      const fn = function v() {
+        const tmp = closure_5 && closure_4;
+        if (tmp) {
+          bottomSheetExpandReasonRef.current = AppLauncherContext.AppLauncherBottomSheetExpandReason.APP_VIEW;
+          if (expandBottomSheet != null) {
+            expandBottomSheet();
           }
-          return;
         }
-      }
+      };
       class P {
         constructor() {
-          current = chatInputRef.current;
-          obj = { type: closure_0(closure_2[12]).KeyboardTypes.APP_LAUNCHER, context: null };
-          obj1 = { initialRouteName: AppLauncherRouteName.APPLICATION_VIEW, application };
-          obj.context = obj1;
-          openCustomKeyboardResult = current.openCustomKeyboard(obj);
-          return;
+          let obj2;
+          const current = chatInputRef.current;
+          const obj = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj2 };
+          obj2 = { initialRouteName: metroImportDefault.APPLICATION_VIEW, application };
+          current.openCustomKeyboard(obj);
         }
       }
       tmp12[0] = tmp6;
@@ -144,17 +126,18 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecu
       cResult[7] = expandBottomSheet;
       cResult[8] = tmp7;
       cResult[9] = tmp6;
-      cResult[10] = O;
+      cResult[10] = fn;
       cResult[11] = tmp12;
+      tmp11 = tmp12;
+      tmp10 = fn;
     }
     class P {
       constructor() {
-        current = chatInputRef.current;
-        obj = { type: closure_0(closure_2[12]).KeyboardTypes.APP_LAUNCHER, context: null };
-        obj1 = { initialRouteName: AppLauncherRouteName.APPLICATION_VIEW, application };
-        obj.context = obj1;
-        openCustomKeyboardResult = current.openCustomKeyboard(obj);
-        return;
+        let obj2;
+        const current = chatInputRef.current;
+        const obj = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj2 };
+        obj2 = { initialRouteName: metroImportDefault.APPLICATION_VIEW, application };
+        current.openCustomKeyboard(obj);
       }
     }
     cResult[3] = application;
@@ -162,15 +145,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecu
     cResult[5] = P;
     tmp9 = P;
   }
-  let isEmbeddedAppResult = initiallyExpanded;
+  let isActivityAppResult = initiallyExpanded;
   if (initiallyExpanded == null) {
     const tmpResult = tmp(bottomSheetExpandReasonRef[11]);
-    isEmbeddedAppResult = tmpResult.isEmbeddedApp(application);
+    isActivityAppResult = tmpResult.isActivityApp(application);
   }
   cResult[0] = application;
   cResult[1] = initiallyExpanded;
-  cResult[2] = isEmbeddedAppResult;
-  tmp7 = isEmbeddedAppResult;
+  cResult[2] = isActivityAppResult;
+  tmp7 = isActivityAppResult;
 }) : ((application) => {
   let context;
   let entrypoint;
@@ -197,7 +180,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCommandExecu
   const tmp4 = expandBottomSheet;
   if (initiallyExpanded == null) {
     const tmpResult = tmp(bottomSheetExpandReasonRef[11]);
-    initiallyExpanded = tmpResult.isEmbeddedApp(application);
+    initiallyExpanded = tmpResult.isActivityApp(application);
   }
   const items = [application, chatInputRef];
   const items1 = [tmp5, initiallyExpanded, expandBottomSheet, bottomSheetExpandReasonRef];

@@ -1,19 +1,19 @@
-// Module ID: 16029
-// Function ID: 16030
+// Module ID: 16332
+// Function ID: 16333
 // Name: YouBarICYMIButton
-// Dependencies: [19, 14615, 21, 4837, 588, 558, 576, 16030, 12587, 4695, 1127, 16031, 2]
+// Dependencies: [19, 14899, 21, 4890, 587, 558, 576, 16333, 12834, 4737, 1126, 16334, 2]
 
-// Module 16029 (YouBarICYMIButton)
+// Module 16332 (YouBarICYMIButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import FlashIcon2 from "FlashIcon" /* 12587 */;
-import YouBarConstants from "YouBarConstants" /* 14615 */;
-import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16030 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import FlashIcon2 from "FlashIcon" /* 12834 */;
+import YouBarConstants from "YouBarConstants" /* 14899 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16333 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let hasNameplate;
 
 let obj2;
 let tmp5;
-const YouBarButtonDefault = tmp5(16031);
+const YouBarButtonDefault = tmp5(16334);
 const YOU_BAR_BUTTON_ICON_SIZE = YouBarConstants.YOU_BAR_BUTTON_ICON_SIZE;
 const jsx = Fragment.jsx;
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, badge: obj2 };
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((h
           rootNavigationRef.navigate("icymi", obj2);
         }
       };
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t["jnXV/V"]);
       cResult[3] = fn;
       cResult[4] = stringResult;
@@ -101,7 +101,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((h
   if (hasNameplate) {
     str = "white";
   }
-  const intl = tmp5(1127).intl;
+  const intl = tmp5(1126).intl;
   return <tmp4 hasNameplate={hasNameplate} icon={null} hasBadge={showDot} badgeStyle={tmp.badge} onPress={function onPress() {
     const obj = RootNavigationRef;
     const rootNavigationRef = obj.getRootNavigationRef();

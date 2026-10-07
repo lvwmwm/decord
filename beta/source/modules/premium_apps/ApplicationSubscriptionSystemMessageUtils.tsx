@@ -1,11 +1,11 @@
-// Module ID: 7441
-// Function ID: 7442
+// Module ID: 7654
+// Function ID: 7655
 // Name: ApplicationSubscriptionSystemMessageUtils
-// Dependencies: [1127, 2]
+// Dependencies: [1126, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 7441 (ApplicationSubscriptionSystemMessageUtils)
-import intl3 from "intl" /* 1127 */;
+// Module 7654 (ApplicationSubscriptionSystemMessageUtils)
+import intl3 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");

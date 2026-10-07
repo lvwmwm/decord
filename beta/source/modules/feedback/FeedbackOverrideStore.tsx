@@ -1,12 +1,12 @@
-// Module ID: 16319
-// Function ID: 16320
+// Module ID: 16635
+// Function ID: 16636
 // Name: FeedbackOverrideStore
-// Dependencies: [16318, 504, 585, 2]
+// Dependencies: [16636, 504, 584, 2]
 
-// Module 16319 (FeedbackOverrideStore)
+// Module 16635 (FeedbackOverrideStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import feedback_FeedbackManager from "feedback/FeedbackManager" /* 16318 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import FeedbackConfig from "FeedbackConfig" /* 16636 */;
 import size from "module_2" /* 2 */;
 
 const React2 = {};
@@ -29,7 +29,7 @@ let obj = {
     feedbackType = feedbackType.feedbackType;
     const obj = { cooldown, chance };
     ({ cooldown, chance } = feedbackType);
-    const merged = Object.assign(feedback_FeedbackManager.FeedbackConfig[feedbackType]);
+    const merged = Object.assign(FeedbackConfig.FeedbackConfig[feedbackType]);
     closure_2[feedbackType] = obj;
   },
   FEEDBACK_OVERRIDE_CLEAR: function handleClearFeedbackOverride(arg0) {

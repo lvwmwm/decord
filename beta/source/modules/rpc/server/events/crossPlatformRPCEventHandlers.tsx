@@ -1,34 +1,34 @@
-// Module ID: 14083
-// Function ID: 14084
+// Module ID: 14362
+// Function ID: 14363
 // Name: crossPlatformRPCEventHandlers
-// Dependencies: [5064, 2006, 2069, 4859, 2051, 2111, 2073, 1999, 4860, 1378, 4856, 4741, 1086, 8768, 8770, 8765, 5047, 14022, 7791, 12, 14027, 1098, 568, 8771, 14084, 14085, 2]
+// Dependencies: [5118, 2006, 2070, 4912, 2051, 2112, 2074, 1999, 4913, 1377, 4909, 5316, 1085, 9029, 9031, 9026, 5100, 14299, 8015, 12, 14304, 1097, 568, 9032, 14363, 14364, 2]
 
-// Module 14083 (crossPlatformRPCEventHandlers)
+// Module 14362 (crossPlatformRPCEventHandlers)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
-import GuildRecord from "GuildRecord" /* 2069 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7791 */;
-import RPCErrorDefault from "RPCError" /* 8765 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8768 */;
-import RPCHelpers from "RPCHelpers" /* 8770 */;
-import transformUserDefault from "transformUser" /* 8771 */;
-import VibegrationsVoiceSessionCoordinatorDefault from "VibegrationsVoiceSessionCoordinator" /* 14022 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14027 */;
-import transformGuildMemberDefault from "transformGuildMember" /* 14084 */;
-import transformApplicationDefault from "transformApplication" /* 14085 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
+import RPCErrorDefault from "RPCError" /* 9026 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
+import RPCHelpers from "RPCHelpers" /* 9031 */;
+import transformUserDefault from "transformUser" /* 9032 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14299 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14304 */;
+import transformGuildMemberDefault from "transformGuildMember" /* 14363 */;
+import transformApplicationDefault from "transformApplication" /* 14364 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
 import RunningGameStore from "RunningGameStore" /* 2006 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import UserStore from "UserStore" /* 1378 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
-import Constants_mod from "Constants" /* 4741 */;
-import Constants_mod2 from "Constants" /* 1086 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import UserStore from "UserStore" /* 1377 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import Constants_mod from "Constants" /* 5316 */;
+import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let application, gameForPID, streamerActiveStreamMetadata;
@@ -108,7 +108,7 @@ function messageEvents(args) {
     const obj4 = RPCHelpers;
     const tmp11 = require;
     if (obj4.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes)) {
-      const tmp11Result = tmp11(5047);
+      const tmp11Result = tmp11(5100);
       if (tmp11Result.userCannotSeeNSFWContent(channel)) {
         const _HermesInternal = HermesInternal;
         const self = this;
@@ -159,7 +159,7 @@ function voiceSessionEventValidation(string) {
 function voiceSessionEvent(args) {
   const session_id = args.args.session_id;
   const socket = args.socket;
-  const obj = VibegrationsVoiceSessionCoordinatorDefault;
+  const obj = ConjureVoiceSessionCoordinatorDefault;
   const result = obj.validateEventSubscription(socket, session_id);
 }
 const getGuildIconURL = GuildRecord.getGuildIconURL;
@@ -422,12 +422,12 @@ obj2[RPCEvents.VOICE_SESSION_PARTICIPANTS_UPDATE] = {
   handler(args) {
     const session_id = args.args.session_id;
     const socket = args.socket;
-    let obj = socket(14022);
+    let obj = socket(14299);
     const result = obj.validateEventSubscription(socket, session_id);
     return (prevState) => {
       prevState = prevState.prevState;
       const dispatch = prevState.dispatch;
-      const obj = VibegrationsVoiceSessionCoordinatorDefault;
+      const obj = ConjureVoiceSessionCoordinatorDefault;
       const participantsForEventSubscription = obj.getParticipantsForEventSubscription(socket, session_id);
       let tmp5 = prevState;
       const tmp3 = session_id;

@@ -1,11 +1,11 @@
-// Module ID: 7307
-// Function ID: 7308
+// Module ID: 7513
+// Function ID: 7514
 // Name: SearchConstants
-// Dependencies: [1086, 7308, 2]
+// Dependencies: [1085, 7514, 2]
 
-// Module 7307 (SearchConstants)
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7308 */;
-import Constants from "Constants" /* 1086 */;
+// Module 7513 (SearchConstants)
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7514 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let MessageEmbedTypes;
@@ -68,7 +68,7 @@ export const SEARCH_FILTERS_BY_TAB = obj3;
 export const SEARCH_TYPE_TO_SEARCH_INITIAL_TABS = { [SearchTypes.THREAD]: items11, [SearchTypes.CHANNEL]: items7, [SearchTypes.GUILD_CHANNEL]: items9, [SearchTypes.GUILD]: items5, [SearchTypes.DMS]: items3 };
 export const SEARCH_TYPE_TO_SEARCH_RESULT_TABS = { [SearchTypes.THREAD]: items12, [SearchTypes.CHANNEL]: items8, [SearchTypes.GUILD_CHANNEL]: items10, [SearchTypes.GUILD]: items6, [SearchTypes.DMS]: items4 };
 export const SearchHistoryItemTypes = { GUILD_TEXT_CHANNEL: "guild_text_channel", GUILD_VOICE_CHANNEL: "guild_voice_channel", GROUP_DM: "group_dm", DM: "dm", TEXT: "text" };
-export const SearchListItemTypes = { DM: "dm", GENERIC: "generic", GROUP_DM: "group_dm", GUILD_TEXT_CHANNEL: "guild_text_channel", GUILD_VOICE_CHANNEL: "guild_voice_channel", SEARCH_HISTORY_ITEM: "search_history_item", MEDIA: "media", MEDIA_PLACEHOLDER: "media_placeholder", MEDIA_GRID: "media_grid", MESSAGE: "message", MESSAGE_PLACEHOLDER: "message_placeholder", FILE: "file", LINK: "link", FILE_OR_LINK_PLACEHOLDER: "file_or_link_placeholder", SECTION: "section", GUILD_CHANNEL_MEMBER_PLACEHOLDER: "guild_channel_member_placeholder", GUILD_CHANNEL_MEMBER: "guild_channel_member", INTELLIGENCE_SMART_SEARCH: "intelligence_smart_search" };
+export const SearchListItemTypes = { DM: "dm", GENERIC: "generic", GROUP_DM: "group_dm", GUILD_TEXT_CHANNEL: "guild_text_channel", GUILD_VOICE_CHANNEL: "guild_voice_channel", SEARCH_HISTORY_ITEM: "search_history_item", MEDIA: "media", MEDIA_PLACEHOLDER: "media_placeholder", MEDIA_GRID: "media_grid", MESSAGE: "message", MESSAGE_PLACEHOLDER: "message_placeholder", FILE: "file", LINK: "link", FILE_OR_LINK_PLACEHOLDER: "file_or_link_placeholder", SECTION: "section", GUILD_CHANNEL_MEMBER_PLACEHOLDER: "guild_channel_member_placeholder", GUILD_CHANNEL_MEMBER: "guild_channel_member", SMART_SEARCH: "smart_search", SUGGESTED_SEARCH: "suggested_search", SUGGESTED_SEARCH_PLACEHOLDER: "suggested_search_skeleton" };
 export const SEARCH_LIST_SECTION_TOP_PADDING = 16;
 export const SEARCH_LIST_HORIZONTAL_PADDING = 16;
 export const FILES_OR_LINKS_GAP_WIDTH = 8;

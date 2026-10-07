@@ -1,12 +1,12 @@
-// Module ID: 11509
-// Function ID: 11510
+// Module ID: 11765
+// Function ID: 11766
 // Name: useLaunchingActivityButtonState
-// Dependencies: [19, 2050, 8496, 558, 576, 6590, 504, 8778, 7724, 2]
+// Dependencies: [19, 2050, 8703, 558, 576, 6663, 504, 8994, 7946, 2]
 
-// Module 11509 (useLaunchingActivityButtonState)
+// Module 11765 (useLaunchingActivityButtonState)
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import FramesStore from "FramesStore" /* 8496 */;
+import FramesStore from "FramesStore" /* 8703 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
       tmp17 = fn3;
     }
   }
-  const fn = function l() {
+  const fn = function u() {
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
     const tmp2 = applicationId;

@@ -1,13 +1,13 @@
-// Module ID: 11343
-// Function ID: 11344
+// Module ID: 11599
+// Function ID: 11600
 // Name: RefreshChatInputCoachmark
-// Dependencies: [109, 32, 19, 2048, 558, 576, 2035, 6807, 1127, 4642, 9656, 2]
+// Dependencies: [109, 32, 19, 2048, 558, 576, 2036, 6891, 1126, 4684, 9882, 2]
 
-// Module 11343 (RefreshChatInputCoachmark)
+// Module 11599 (RefreshChatInputCoachmark)
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
+import intl3 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 4642 */;
+import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 4684 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require, buttonRef, dependencyMap, disabled;
 
 let tmp;
-const useCoachmark = tmp(9656);
+const useCoachmark = tmp(9882);
 let closure_2 = ["buttonRef"];
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     if (disabled) {
       items = [];
     } else {
-      items = [tmp(2035).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
+      items = [tmp(2036).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
     }
     cResult[0] = disabled;
     cResult[1] = items;
@@ -48,11 +48,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp4), 2);
   _require = tmp7;
   const first = tmp5[0];
-  const MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK = tmp(2035).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
+  const MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK = tmp(2036).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t.eqI1WA);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(require("intl").t.nxO3NK);
     cResult[2] = stringResult;
     cResult[3] = stringResult1;
@@ -130,7 +130,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   if (disabled) {
     items = [];
   } else {
-    items = [tmp(2035).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
+    items = [tmp(2036).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
   }
   const tmp4 = _slicedToArray(useSelectedDismissibleContent(items), 2);
   _require = tmp5;

@@ -1,14 +1,14 @@
-// Module ID: 17657
-// Function ID: 17658
+// Module ID: 18022
+// Function ID: 18023
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 13251, 9027, 1086, 6540, 17658, 585, 1283, 1479, 17659, 6760, 2]
+// Dependencies: [5, 13517, 9249, 1085, 6613, 18023, 584, 1282, 1478, 18024, 6844, 2]
 
-// Module 17657 (GlobalDiscoveryServersFeaturedSearchManager)
-import Constants from "Constants" /* 1086 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9027 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13251 */;
+// Module 18022 (GlobalDiscoveryServersFeaturedSearchManager)
+import Constants from "Constants" /* 1085 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9249 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13517 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 let categoryId, closure_1, closure_4, constants;
@@ -167,72 +167,117 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
         let obj11;
         let obj12;
         let obj13;
-        let tmp;
-        if (1 === guilds) {
+        if (c6 === 2) {
+          c6 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
-            let c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c6 = 3;
             return { value, done: true };
-          } else if (closure_130_1.isFetchEnabled) {
-            const obj9 = { categoryId };
-            tmp = guilds.getLastFetchTimestamp(obj9);
-            const tmp23 = forceRefresh;
-            if (!tmp23) {
-              categoryId(tmp46[5]);
-            }
-            const obj10 = { type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START", categoryId, reset: true };
-            const obj8 = closure_1(tmp46[6]);
-            obj8.dispatch(obj10);
-            c4 = 1;
-            const HTTP = categoryId(tmp46[7]).HTTP;
-            const request = { url: constants.GUILD_DISCOVERY, query: obj11.stringify(obj12), oldFormErrors: true, rejectWithError: obj13.rejectWithMigratedError() };
-            const get = HTTP.get;
-            obj12 = { categories: items };
-            items = [categoryId];
-            guilds = 3;
-            c6 = 1;
-            obj11 = closure_1(tmp46[8]);
-            obj13 = categoryId(tmp46[7]);
-            const obj14 = { value: get(request), done: false };
-            return obj14;
           } else {
-            const queue = closure_130_1.queue;
-            queue.add(categoryId);
+            return { value: "IconComponent", done: null };
           }
-        } else if (2 === guilds) {
-          c4 = 0;
-          error = tmp46;
-          const obj15 = { type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE", categoryId, error };
-          const obj2 = closure_1(tmp46[6]);
-          obj2.dispatch(obj15);
-          const obj16 = { categoryId };
-          const obj4 = tmp(tmp46[10]);
-          const result = obj4.trackGuildDiscoveryGetFeaturedGuildsFailed(obj16);
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          return { value, done: true };
         } else {
-          const total = tmp46.body.total;
-          guilds = tmp46.body.guilds;
-          guilds = guilds.map(categoryId(tmp46[5]).fromDiscoverableGuildServer);
-          const obj17 = { type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS", categoryId, guilds, total };
-          const obj18 = closure_1(value[6]);
-          obj18.dispatch(obj17);
-          c4 = 0;
+          let tmp46;
+          try {
+            let tmp;
+            let total;
+            c6 = 2;
+            if (0 === guilds) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                closure_1 = tmp4;
+                categoryId = undefined;
+                forceRefresh = undefined;
+                ({ categoryId: c0, forceRefresh } = categoryId);
+                if (forceRefresh === undefined) {
+                  forceRefresh = false;
+                }
+                tmp = undefined;
+                tmp46 = undefined;
+                total = undefined;
+                guilds = 1;
+                c6 = 1;
+                return { value: "Reflect", done: null };
+              }
+            } else {
+              if (1 === guilds) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  return { value, done: true };
+                } else if (closure_130_1.isFetchEnabled) {
+                  const obj9 = { categoryId };
+                  tmp = guilds.getLastFetchTimestamp(obj9);
+                  const tmp23 = forceRefresh;
+                  if (!tmp23) {
+                    categoryId(tmp46[5]);
+                  }
+                  const obj10 = { type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START", categoryId, reset: true };
+                  const obj8 = closure_1(tmp46[6]);
+                  obj8.dispatch(obj10);
+                  c4 = 1;
+                  const HTTP = categoryId(tmp46[7]).HTTP;
+                  const request = { url: constants.GUILD_DISCOVERY, query: obj11.stringify(obj12), oldFormErrors: true, rejectWithError: obj13.rejectWithMigratedError() };
+                  const get = HTTP.get;
+                  obj12 = { categories: items };
+                  items = [categoryId];
+                  obj11 = closure_1(tmp46[8]);
+                  guilds = 3;
+                  c6 = 1;
+                  obj13 = categoryId(tmp46[7]);
+                  const obj14 = { value: get(request), done: false };
+                  return obj14;
+                } else {
+                  const queue = closure_130_1.queue;
+                  queue.add(categoryId);
+                }
+              } else if (2 === guilds) {
+                c4 = 0;
+                error = tmp46;
+                const obj15 = { type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE", categoryId, error };
+                const obj2 = closure_1(tmp46[6]);
+                obj2.dispatch(obj15);
+                const obj16 = { categoryId };
+                const obj4 = tmp(tmp46[10]);
+                const result = obj4.trackGuildDiscoveryGetFeaturedGuildsFailed(obj16);
+              } else if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                tmp46 = value;
+                total = tmp46.body.total;
+                guilds = tmp46.body.guilds;
+                guilds = guilds.map(categoryId(tmp46[5]).fromDiscoverableGuildServer);
+                const obj17 = { type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS", categoryId, guilds, total };
+                const obj18 = closure_1(tmp46[6]);
+                obj18.dispatch(obj17);
+                c4 = 0;
+              }
+              c6 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp46) {
+            if (0 === c4) {
+              c6 = 3;
+              throw tmp46;
+            } else {
+              guilds = 2;
+            }
+          }
         }
-        await "IconComponent";
-        closure_1 = tmp4;
-        ({ categoryId: c0, forceRefresh } = categoryId);
-        if (forceRefresh === undefined) {
-          forceRefresh = false;
-        }
-        return "Reflect";
       })();
       iter.next();
       return iter;

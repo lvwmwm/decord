@@ -1,14 +1,14 @@
-// Module ID: 5453
-// Function ID: 5454
+// Module ID: 7276
+// Function ID: 7277
 // Name: NativePermissionManager
-// Dependencies: [5046, 1086, 1989, 1370, 5454, 585, 5452, 2]
+// Dependencies: [5099, 1085, 1989, 1369, 6714, 584, 7275, 2]
 
-// Module 5453 (NativePermissionManager)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5046 */;
-import NativePermissionUtils from "NativePermissionUtils" /* 5452 */;
+// Module 7276 (NativePermissionManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
+import NativePermissionUtils from "NativePermissionUtils" /* 7275 */;
 import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ class NativePermissionManager extends LifecycleManager {
       isDesktopResult = tmpResult.isMac();
     }
     if (isDesktopResult) {
-      const ProcessArgs = tmp(5454).ProcessArgs;
+      const ProcessArgs = tmp(6714).ProcessArgs;
       isDesktopResult = !ProcessArgs.isDiscordTestSet();
     }
     return isDesktopResult;

@@ -1,22 +1,22 @@
-// Module ID: 15352
-// Function ID: 15353
+// Module ID: 15643
+// Function ID: 15644
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [32, 19, 17, 21, 1189, 558, 576, 4833, 5282, 4837, 588, 5280, 8057, 2]
+// Dependencies: [32, 19, 17, 21, 1188, 558, 576, 4886, 5594, 4890, 587, 5593, 8895, 2]
 
-// Module 15352 (UserSettingsDesignSystemLegacyButton)
+// Module 15643 (UserSettingsDesignSystemLegacyButton)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Stack_Stack from "Stack/Stack" /* 5280 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import Form from "Form" /* 8057 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import Form from "Form" /* 8895 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let combo, entry;
@@ -307,7 +307,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
           }
           ({ look: obj4.look, color: obj4.color } = entry);
           const obj9 = { look: null, color: null, size: native.ButtonSizes.MEDIUM, shrink: true, text: combined, textStyle: darkText, onPress: tmp22 };
-          const Button = tmp(1189).Button;
+          const Button = tmp(1188).Button;
           const tmp25 = metroRequire(Button, obj9);
           cResult[14] = entry.color;
           cResult[15] = entry.look;
@@ -363,7 +363,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const tmp9 = hasItem && tmp.darkBg;
   items[1] = tmp9;
   let str = "text-muted";
-  const Text = tmp4(4833).Text;
+  const Text = tmp4(4886).Text;
   if (hasItem) {
     str = "text-default";
   }
@@ -389,7 +389,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
 
     }
   };
-  const Button = tmp4(1189).Button;
+  const Button = tmp4(1188).Button;
   darkText = null;
   if (hasItem) {
     darkText = null;
@@ -576,7 +576,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((combo) => {
     }
   };
   darkText = null;
-  const Button = tmp6(1189).Button;
+  const Button = tmp6(1188).Button;
   const tmp8 = metroRequire;
   if (hasItem) {
     darkText = null;

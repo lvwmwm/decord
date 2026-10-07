@@ -1,17 +1,17 @@
-// Module ID: 14017
-// Function ID: 14018
+// Module ID: 14294
+// Function ID: 14295
 // Name: UserSettingsProtoManager
-// Dependencies: [1232, 1096, 1236, 14018, 14019, 585, 12, 2032, 2]
+// Dependencies: [1231, 1095, 1235, 14295, 14296, 584, 12, 2033, 2]
 
-// Module 14017 (UserSettingsProtoManager)
+// Module 14294 (UserSettingsProtoManager)
 import _modDef12 from "module_12" /* 12 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
-import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1236 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2032 */;
-import PreloadedUserSettingsMigrationsDefault from "PreloadedUserSettingsMigrations" /* 14018 */;
-import FrecencySettingsMigrationsDefault from "FrecencySettingsMigrations" /* 14019 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1235 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
+import PreloadedUserSettingsMigrationsDefault from "PreloadedUserSettingsMigrations" /* 14295 */;
+import FrecencySettingsMigrationsDefault from "FrecencySettingsMigrations" /* 14296 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionOpen() {

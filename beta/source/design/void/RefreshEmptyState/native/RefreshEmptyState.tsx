@@ -1,20 +1,20 @@
-// Module ID: 13676
-// Function ID: 13677
+// Module ID: 13947
+// Function ID: 13948
 // Name: RefreshEmptyState
-// Dependencies: [109, 19, 17, 1086, 21, 4837, 5837, 588, 558, 576, 8076, 5282, 4687, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 4890, 5915, 587, 558, 576, 8912, 5594, 4729, 2]
 
-// Module 13676 (RefreshEmptyState)
+// Module 13947 (RefreshEmptyState)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import shared from "shared" /* 4687 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8076 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import shared from "shared" /* 4729 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8912 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles_mod from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles_mod from "TextStyles" /* 5915 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const components_Button_Button = tmp(5282);
+const components_Button_Button = tmp(5594);
 let closure_3 = ["lightSource", "darkSource"];
 ({ View: hasOwnProperty, Image: metroRequire } = react_native);
 const Fonts = Constants.Fonts;

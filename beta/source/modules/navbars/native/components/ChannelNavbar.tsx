@@ -1,37 +1,37 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 12456
+// Function ID: 12457
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 5590, 2055, 2051, 2073, 4877, 4482, 1378, 1086, 2058, 2048, 21, 4837, 5837, 588, 558, 576, 504, 1127, 5336, 4990, 10378, 12201, 12202, 1189, 12203, 12204, 5896, 12205, 9673, 5436, 4833, 4680, 7709, 9215, 4656, 2035, 10125, 12206, 2]
+// Dependencies: [19, 17, 5436, 2055, 2051, 2074, 4930, 4519, 1377, 1085, 2058, 2048, 21, 4890, 5915, 587, 558, 576, 504, 1126, 5812, 5043, 10609, 12457, 12458, 1188, 12459, 12460, 5974, 12461, 9899, 5909, 4886, 4722, 7931, 9442, 4698, 2036, 10354, 12462, 2]
 
-// Module 12200 (ChannelNavbar)
+// Module 12456 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl10 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
+import nativeDefault from "native" /* 587 */;
+import intl10 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4656 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5336 */;
-import isStreamingDefault from "isStreaming" /* 7709 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10378 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
+import isStreamingDefault from "isStreaming" /* 7931 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10609 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles from "TextStyles" /* 5915 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const Pressables = tmp(5436);
+const Pressables = tmp(5909);
 const View = react_native.View;
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 ({ ChannelTypes: closure_12, Fonts } = Constants);
@@ -117,8 +117,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult4 = channelId(504);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp8, tmp9);
   if (cResult[5] !== stateFromStores1) {
-    const string = tmp(1127).intl.string;
-    const t = tmp(1127).t;
+    const string = tmp(1126).intl.string;
+    const t = tmp(1126).t;
     class C {
       constructor() {
         return connected.isConnected();
@@ -133,7 +133,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[7] !== stateFromStores) {
     let channelIcon = null;
     if (null != stateFromStores) {
-      const tmpResult5 = channelId(5336);
+      const tmpResult5 = channelId(5812);
       channelIcon = tmpResult5.getChannelIcon(stateFromStores);
     }
     class C {
@@ -148,7 +148,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[9] !== stateFromStores) {
     if (null != stateFromStores) {
-      channelId(4990);
+      channelId(5043);
       class C {
         constructor() {
           return connected.isConnected();
@@ -1090,7 +1090,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp8 = icon;
     if (!react.isValidElement(icon)) {
       const obj2 = { size: native.Icon.Sizes.CUSTOM, source: icon, style: tmp4.channelIcon, color: tmp4.channelIconColor.color };
-      const Icon = tmp(1189).Icon;
+      const Icon = tmp(1188).Icon;
       tmp8 = authStore3(Icon, obj2);
     }
     cResult[0] = icon;
@@ -1219,10 +1219,10 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel)
   const tmp4 = closure_18();
   const navbarTitleSecondaryText = tmp4.navbarTitleSecondaryText;
   if (cResult[0] !== parentChannel) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { channelName: tmpResult.computeChannelName(parentChannel, UserStore, RelationshipStore) };
-    const BjYvHO = tmp(1127).t.BjYvHO;
+    const BjYvHO = tmp(1126).t.BjYvHO;
     tmpResult = useChannelName;
     const formatToPlainStringResult = formatToPlainString(BjYvHO, obj2);
     cResult[0] = parentChannel;
@@ -1315,9 +1315,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
   if (cResult[4] !== stateFromStores) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj2 = { channelName: stateFromStores };
-    const formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t.fYqXVY, obj2);
+    const formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.fYqXVY, obj2);
     cResult[4] = stateFromStores;
     cResult[5] = formatToPlainStringResult;
     tmp10 = formatToPlainStringResult;
@@ -1333,7 +1333,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       return tmp12;
     }
   }
-  const tmp13 = closure_16(tmp(1189).LegacyText, { numberOfLines: 1, style, accessibilityLabel: tmp10, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: stateFromStores });
+  const tmp13 = closure_16(tmp(1188).LegacyText, { numberOfLines: 1, style, accessibilityLabel: tmp10, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: stateFromStores });
   cResult[6] = stateFromStores;
   cResult[7] = style;
   cResult[8] = tmp10;
@@ -1357,9 +1357,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     }
     return str;
   }, items1);
-  const obj2 = { numberOfLines: 1, style, accessibilityLabel: intl.formatToPlainString(userId(1127).t.fYqXVY, { channelName: stateFromStores }), maxFontSizeMultiplier: 1, accessibilityRole: "header", children: stateFromStores };
-  const LegacyText = userId(1189).LegacyText;
-  intl = userId(1127).intl;
+  const obj2 = { numberOfLines: 1, style, accessibilityLabel: intl.formatToPlainString(userId(1126).t.fYqXVY, { channelName: stateFromStores }), maxFontSizeMultiplier: 1, accessibilityRole: "header", children: stateFromStores };
+  const LegacyText = userId(1188).LegacyText;
+  intl = userId(1126).intl;
   return closure_16(LegacyText, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1412,8 +1412,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const obj2 = { isMobileOnline, isVROnline, status, streaming, size: tmp(1189).StatusSizes.SMALL, style };
-  const Status = tmp(1189).Status;
+  const obj2 = { isMobileOnline, isVROnline, status, streaming, size: tmp(1188).StatusSizes.SMALL, style };
+  const Status = tmp(1188).Status;
   const tmp9 = closure_16(Status, obj2);
   cResult[3] = isMobileOnline;
   cResult[4] = isVROnline;
@@ -1438,8 +1438,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return obj;
   });
   ({ status, isMobileOnline, isVROnline, streaming } = stateFromStoresObject);
-  const obj2 = { isMobileOnline, isVROnline, status, streaming, size: userId(1189).StatusSizes.SMALL, style };
-  const Status = userId(1189).Status;
+  const obj2 = { isMobileOnline, isVROnline, status, streaming, size: userId(1188).StatusSizes.SMALL, style };
+  const Status = userId(1188).Status;
   return closure_16(Status, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

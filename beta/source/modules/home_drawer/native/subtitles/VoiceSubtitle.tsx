@@ -1,13 +1,13 @@
-// Module ID: 15960
-// Function ID: 15961
+// Module ID: 16263
+// Function ID: 16264
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 558, 576, 4989, 1127, 4833, 2]
+// Dependencies: [19, 21, 558, 576, 5042, 1126, 4886, 2]
 
-// Module 15960 (VoiceSubtitle)
+// Module 16263 (VoiceSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp4 = cResult[2];
     }
     if (cResult[5] !== tmp4) {
-      const tmp9 = jsx(guildId(4833).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
+      const tmp9 = jsx(guildId(4886).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
       cResult[5] = tmp4;
       cResult[6] = tmp9;
       tmp7 = tmp9;
@@ -49,10 +49,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp5 = cResult[4];
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   const format = intl.format;
   const obj3 = { users: mapped.join(", "), overflowCount: Math.max(voiceUsers.length - 2, 0) };
-  const r1Vkoc = tmp(1127).t.r1Vkoc;
+  const r1Vkoc = tmp(1126).t.r1Vkoc;
   const substr = voiceUsers.slice(0, 2);
   mapped = substr.map(tmp5);
   const formatResult = format(r1Vkoc, obj3);

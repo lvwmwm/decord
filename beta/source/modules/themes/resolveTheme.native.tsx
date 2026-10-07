@@ -1,18 +1,18 @@
-// Module ID: 1238
-// Function ID: 1239
+// Module ID: 1237
+// Function ID: 1238
 // Name: resolveTheme
-// Dependencies: [1239, 1195, 1196, 1232, 1197, 7085, 1240, 1198, 2]
+// Dependencies: [1238, 1194, 1195, 1231, 1196, 7152, 1239, 1197, 2]
 // Exports: default
 
-// Module 1238 (resolveTheme)
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1240 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7085 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1239 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1195 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1196 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import ThemeConstants from "ThemeConstants" /* 1197 */;
+// Module 1237 (resolveTheme)
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7152 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import ThemeConstants from "ThemeConstants" /* 1196 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -64,7 +64,7 @@ export default function resolveTheme(arg0, arg1) {
         theme1 = appearance.theme;
       }
       if (theme1 == null) {
-        theme1 = tmp17(1198).Theme.UNSET;
+        theme1 = tmp17(1197).Theme.UNSET;
       }
       if (theme1 === preloaded_user_settings.Theme.UNSET) {
         let themeWithCustomSettings;

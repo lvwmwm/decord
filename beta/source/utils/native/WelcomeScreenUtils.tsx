@@ -1,17 +1,17 @@
-// Module ID: 12192
-// Function ID: 12193
+// Module ID: 12448
+// Function ID: 12449
 // Name: WelcomeScreenUtils
-// Dependencies: [19, 12193, 4470, 2073, 558, 576, 4668, 12194, 504, 12195, 4801, 12196, 1987, 2]
+// Dependencies: [19, 12449, 4507, 2074, 558, 576, 4710, 12450, 504, 12451, 4854, 12452, 1987, 2]
 // Exports: openWelcomeActionSheet
 
-// Module 12192 (WelcomeScreenUtils)
+// Module 12448 (WelcomeScreenUtils)
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12193 */;
-import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 12195 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12449 */;
+import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 12451 */;
 import react_mod from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _require, importDefault;
 
 let react = react_mod;
 const NO_WELCOME_SCREEN = WelcomeScreenStore2.NO_WELCOME_SCREEN;
-let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "r" };
+let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "a" };
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   let closure_0;
   let closure_1;
@@ -32,14 +32,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   _require = arg0;
   importDefault = arg1;
   let tmp = _require;
+  const tmp2 = welcomeModalChannelId;
   let obj = require("react");
   const cResult = obj.c(9);
-  const obj2 = require("MemoryRouter");
-  const tmp2 = welcomeModalChannelId;
+  let obj2 = require("MemoryRouter");
   welcomeModalChannelId = obj2.useLocation().welcomeModalChannelId;
   const tmp4 = require("useWelcomeScreenEnabled")(arg1, arg0);
   react = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp6 = GuildStore;
     const items = [GuildStore, , ];
     items[1] = shouldFetchGuildId;
     items[2] = GuildChannelStore;
@@ -96,29 +97,37 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     let id;
     const tmp = closure_3;
     if (tmp) {
-      const guild = GuildStore.getGuild(closure_0);
-      const selectableChannelIds = GuildChannelStore.getSelectableChannelIds(closure_0);
-      const value = WelcomeScreenStore.get(closure_0);
-      const hasSeenResult = WelcomeScreenStore.hasSeen(closure_0);
-      let tmp12 = !hasSeenResult;
-      const hasErrorResult = WelcomeScreenStore.hasError();
-      const isFetchingResult = WelcomeScreenStore.isFetching();
-      if (!hasSeenResult) {
-        tmp12 = welcomeModalChannelId === closure_1;
-      }
-      const obj = { welcomeScreenModalVisible: tmp12 && null != value && value !== NO_WELCOME_SCREEN && !isFetchingResult && !hasErrorResult && selectableChannelIds.length > 0, shouldFetchGuildId: id };
-      id = undefined;
-      if (tmp12) {
-        if (null == value) {
-          if (null != guild) {
-            id = guild.id;
+      if (!WelcomeScreenStore.hasSeen(closure_0)) {
+        if (welcomeModalChannelId === closure_1) {
+          const guild = GuildStore.getGuild(tmp2);
+          const value = obj.get(tmp2);
+          let tmp6 = null != value;
+          const hasErrorResult = WelcomeScreenStore.hasError();
+          const isFetchingResult = WelcomeScreenStore.isFetching();
+          if (tmp6) {
+            tmp6 = value !== NO_WELCOME_SCREEN;
           }
+          if (tmp6) {
+            tmp6 = !isFetchingResult;
+          }
+          if (tmp6) {
+            tmp6 = !hasErrorResult;
+          }
+          if (tmp6) {
+            tmp6 = GuildChannelStore.getSelectableChannelIds(tmp2).length > 0;
+          }
+          const obj2 = { welcomeScreenModalVisible: tmp6, shouldFetchGuildId: id };
+          id = undefined;
+          if (null == value) {
+            if (null != guild) {
+              id = guild.id;
+            }
+          }
+          return obj2;
         }
       }
-      return obj;
-    } else {
-      return closure_8;
     }
+    return closure_8;
   };
   cResult[1] = arg1;
   cResult[2] = arg0;
@@ -137,35 +146,43 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   let obj = require("MemoryRouter");
   welcomeModalChannelId = obj.useLocation().welcomeModalChannelId;
   react = require("useWelcomeScreenEnabled")(arg1, arg0);
+  let obj2 = require("get initialized");
   const items = [GuildStore, shouldFetchGuildId, GuildChannelStore];
-  const obj2 = require("get initialized");
   const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
     let id;
     const tmp = closure_3;
     if (tmp) {
-      const guild = GuildStore.getGuild(closure_0);
-      const selectableChannelIds = GuildChannelStore.getSelectableChannelIds(closure_0);
-      const value = WelcomeScreenStore.get(closure_0);
-      const hasSeenResult = WelcomeScreenStore.hasSeen(closure_0);
-      let tmp12 = !hasSeenResult;
-      const hasErrorResult = WelcomeScreenStore.hasError();
-      const isFetchingResult = WelcomeScreenStore.isFetching();
-      if (!hasSeenResult) {
-        tmp12 = welcomeModalChannelId === closure_1;
-      }
-      const obj = { welcomeScreenModalVisible: tmp12 && null != value && value !== NO_WELCOME_SCREEN && !isFetchingResult && !hasErrorResult && selectableChannelIds.length > 0, shouldFetchGuildId: id };
-      id = undefined;
-      if (tmp12) {
-        if (null == value) {
-          if (null != guild) {
-            id = guild.id;
+      if (!WelcomeScreenStore.hasSeen(closure_0)) {
+        if (welcomeModalChannelId === closure_1) {
+          const guild = GuildStore.getGuild(tmp2);
+          const value = obj.get(tmp2);
+          let tmp6 = null != value;
+          const hasErrorResult = WelcomeScreenStore.hasError();
+          const isFetchingResult = WelcomeScreenStore.isFetching();
+          if (tmp6) {
+            tmp6 = value !== NO_WELCOME_SCREEN;
           }
+          if (tmp6) {
+            tmp6 = !isFetchingResult;
+          }
+          if (tmp6) {
+            tmp6 = !hasErrorResult;
+          }
+          if (tmp6) {
+            tmp6 = GuildChannelStore.getSelectableChannelIds(tmp2).length > 0;
+          }
+          const obj2 = { welcomeScreenModalVisible: tmp6, shouldFetchGuildId: id };
+          id = undefined;
+          if (null == value) {
+            if (null != guild) {
+              id = guild.id;
+            }
+          }
+          return obj2;
         }
       }
-      return obj;
-    } else {
-      return closure_8;
     }
+    return closure_8;
   });
   shouldFetchGuildId = stateFromStoresObject.shouldFetchGuildId;
   const items1 = [shouldFetchGuildId];
@@ -186,6 +203,6 @@ export const openWelcomeActionSheet = function openWelcomeActionSheet(guildId) {
   const onHide = guildId.onHide;
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(12196, dependencyMap.paths);
+  const tmp2 = asyncRequire(12452, dependencyMap.paths);
   openLazy(tmp2, "GuildWelcomeActionSheet" + guildId, { guildId, onHide });
 };

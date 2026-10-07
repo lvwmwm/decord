@@ -1,12 +1,12 @@
-// Module ID: 5752
-// Function ID: 5753
+// Module ID: 5617
+// Function ID: 5618
 // Name: ExpandedGuildFolderStore
-// Dependencies: [1232, 504, 585, 2]
+// Dependencies: [1231, 504, 584, 2]
 
-// Module 5752 (ExpandedGuildFolderStore)
+// Module 5617 (ExpandedGuildFolderStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 let c1;

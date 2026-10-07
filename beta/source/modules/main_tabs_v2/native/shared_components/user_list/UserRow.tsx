@@ -1,43 +1,43 @@
-// Module ID: 10371
-// Function ID: 10372
+// Module ID: 10602
+// Function ID: 10603
 // Name: UserRow
-// Dependencies: [19, 17, 4826, 5064, 7079, 2051, 4877, 4482, 10361, 1086, 21, 4837, 588, 4850, 38, 10372, 10373, 4530, 10374, 9207, 7080, 558, 576, 504, 1189, 4833, 4680, 10378, 6584, 7665, 1127, 10397, 4786, 4784, 5282, 2018, 7309, 5386, 7628, 1987, 7666, 10398, 8675, 5311, 7407, 5085, 9165, 10400, 8736, 10408, 9171, 10409, 5913, 10412, 5916, 2]
+// Dependencies: [19, 17, 4879, 5118, 7146, 2051, 4930, 4519, 10592, 1085, 21, 4890, 587, 4903, 38, 10603, 10604, 4567, 10605, 9434, 7147, 558, 576, 504, 1188, 4886, 4722, 10609, 6657, 7887, 1126, 10630, 4795, 4577, 5594, 2019, 7523, 5855, 7850, 1987, 7888, 10631, 4826, 5793, 7620, 5305, 9389, 10633, 8961, 10641, 9395, 10642, 5990, 10646, 5993, 2]
 
-// Module 10371 (UserRow)
+// Module 10602 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 588 */;
-import intl14 from "intl" /* 1127 */;
+import nativeDefault from "native" /* 587 */;
+import intl14 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import utils_StringUtils from "utils/StringUtils" /* 2018 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import UserUtils from "UserUtils" /* 4680 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4784 */;
-import XLargeIcon from "XLargeIcon" /* 4786 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import ChatIcon from "ChatIcon" /* 5386 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7080 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 7309 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 8675 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9207 */;
-import UserRowConstants from "UserRowConstants" /* 10361 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10373 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10374 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10378 */;
-import ActionButtonDefault from "ActionButton" /* 10397 */;
-import CrownIcon2 from "CrownIcon" /* 10398 */;
+import utils_StringUtils from "utils/StringUtils" /* 2019 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4577 */;
+import UserUtils from "UserUtils" /* 4722 */;
+import XLargeIcon from "XLargeIcon" /* 4795 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 4826 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import ChatIcon from "ChatIcon" /* 5855 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7147 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 7523 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
+import UserRowConstants from "UserRowConstants" /* 10592 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10604 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10605 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10609 */;
+import ActionButtonDefault from "ActionButton" /* 10630 */;
+import CrownIcon2 from "CrownIcon" /* 10631 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7079 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7146 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import Constants from "Constants" /* 1086 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let map1;
 let obj2;
 let obj3;
 let tmp2;
-const native = tmp2(1189);
+const native = tmp2(1188);
 const View = react_native.View;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ RelationshipTypes: closure_12, StatusTypes: map1 } = Constants);
@@ -171,7 +171,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
           }
           if (cResult[13] !== stateFromStores.name) {
             const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: stateFromStores.name };
-            const tmp26 = closure_14(applicationId(4833).Text, obj5);
+            const tmp26 = closure_14(applicationId(4886).Text, obj5);
             cResult[13] = stateFromStores.name;
             cResult[14] = tmp26;
             tmp24 = tmp26;
@@ -196,7 +196,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
         }
       }
       const obj7 = { style: tmp4.gameIcon, resizeMode: "contain", source: tmp20, disableColor: true };
-      const tmp23 = closure_14(applicationId(1189).Icon, obj7, stateFromStores.id);
+      const tmp23 = closure_14(applicationId(1188).Icon, obj7, stateFromStores.id);
       cResult[9] = stateFromStores.id;
       cResult[10] = tmp4.gameIcon;
       cResult[11] = tmp20;
@@ -207,7 +207,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
   } else {
     let tmp13;
     if (cResult[19] !== user) {
-      const tmpResult2 = applicationId(4680);
+      const tmpResult2 = applicationId(4722);
       const userTag = tmpResult2.getUserTag(user);
       cResult[19] = user;
       cResult[20] = userTag;
@@ -217,7 +217,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
     }
     if (cResult[21] !== tmp13) {
       const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp13 };
-      const tmp17 = closure_14(applicationId(4833).Text, obj8);
+      const tmp17 = closure_14(applicationId(4886).Text, obj8);
       cResult[21] = tmp13;
       cResult[22] = tmp17;
       tmp15 = tmp17;
@@ -260,7 +260,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
     } else {
       const obj4 = { style: tmp.gameContainer, children: items1 };
       const obj5 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
-      const Icon = tmp2(1189).Icon;
+      const Icon = tmp2(1188).Icon;
       let str = stateFromStores.getIconURL(16);
       const tmp14 = closure_15;
       const tmp15 = View;
@@ -276,7 +276,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(4833).Text;
+    const Text = tmp2(4886).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -448,7 +448,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "r" };
+      let obj2 = { accessibilityActions: items, actions: "Array" };
       return obj2;
     } else {
       let tmp9;
@@ -572,14 +572,14 @@ const memoResult = react.memo(function UserRow(type) {
         tmp9 = authStore2(View, obj17);
       } else if (trailing.SUGGESTION === type) {
         let obj = { name: closure_17.ACCEPT_SUGGESTION, label: intl.string(intl14.t["ed99+i"]) };
-        const tmp = closure_17;
+        let tmp = closure_17;
+        let tmp2 = require;
+        let tmp3 = dependencyMap;
         const push = items.push;
         intl = intl14.intl;
         const obj21 = { name: closure_17.IGNORE_SUGGESTION, label: intl2.string(intl14.t["Tw3a/R"]) };
         intl2 = intl14.intl;
         push(obj, obj21);
-        let tmp5 = authStore2;
-        let tmp6 = View;
         const obj23 = { style: closure_17.actions, children: authStore2(View, obj24) };
         obj24 = { style: closure_17.buttonWrapper, children: authStore2(Button, obj26) };
         obj26 = {
@@ -629,17 +629,17 @@ const memoResult = react.memo(function UserRow(type) {
                 ensurePrivateChannelResult.then((result) => {
                   channel = channel.getChannel(result);
                   if (null != channel) {
-                    const tmp6 = closure_2_1(closure_2_2[14]);
-                    tmp6(channel.isPrivate(), "must be a DM");
-                    const obj4 = closure_2_1(closure_2_2[15])(channel, false);
-                    const tmp4 = closure_2_1;
-                    const tmp5 = closure_2_2;
-                    if (!obj4.inCall) {
-                      obj4.onPress();
+                    const tmp3 = closure_2_1(closure_2_2[14]);
+                    tmp3(channel.isPrivate(), "must be a DM");
+                    const obj2 = closure_2_1(closure_2_2[15])(channel, false);
+                    const tmp = closure_2_1;
+                    const tmp2 = closure_2_2;
+                    if (!obj2.inCall) {
+                      obj2.onPress();
                     }
                     const obj = { recipientIds: current.id };
-                    const tmp4Result = tmp4(tmp5[13]);
-                    tmp4Result.openPrivateChannel(obj);
+                    const tmpResult = tmp(tmp2[13]);
+                    tmpResult.openPrivateChannel(obj);
                   }
                 });
               },
@@ -691,17 +691,17 @@ const memoResult = react.memo(function UserRow(type) {
       ensurePrivateChannelResult.then((result) => {
         channel = channel.getChannel(result);
         if (null != channel) {
-          const tmp6 = closure_2_1(closure_2_2[14]);
-          tmp6(channel.isPrivate(), "must be a DM");
-          const obj4 = closure_2_1(closure_2_2[15])(channel, false);
-          const tmp4 = closure_2_1;
-          const tmp5 = closure_2_2;
-          if (!obj4.inCall) {
-            obj4.onPress();
+          const tmp3 = closure_2_1(closure_2_2[14]);
+          tmp3(channel.isPrivate(), "must be a DM");
+          const obj2 = closure_2_1(closure_2_2[15])(channel, false);
+          const tmp = closure_2_1;
+          const tmp2 = closure_2_2;
+          if (!obj2.inCall) {
+            obj2.onPress();
           }
           const obj = { recipientIds: current.id };
-          const tmp4Result = tmp4(tmp5[13]);
-          tmp4Result.openPrivateChannel(obj);
+          const tmpResult = tmp(tmp2[13]);
+          tmpResult.openPrivateChannel(obj);
         }
       });
     } else if (closure_17.MESSAGE === actionName) {
@@ -763,7 +763,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(7628, dependencyMap.paths);
+      const promise = asyncRequire(7850, dependencyMap.paths);
       promise.then((result) => {
         const obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);
@@ -909,7 +909,7 @@ const memoResult = react.memo(function UserRow(type) {
       if (null == guildId) {
         let obj12 = { userId: user.id, userName: memo3, style: items15, defaultColor: "mobile-text-heading-primary", accessibilityLabel: formatToPlainStringResult };
         items15 = [tmp3.usernameLabel, memo1];
-        let tmp4Result = tmp4(tmp5[47]);
+        const tmp4Result = tmp4(tmp5[47]);
         const merged1 = Object.assign(obj10);
         tmp32Result6 = label(tmp4Result, obj12);
         tmp32 = label;

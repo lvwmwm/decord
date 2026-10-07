@@ -1,20 +1,20 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14948
+// Function ID: 14949
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4837, 588, 684, 558, 576, 14664, 14666, 4833, 5270, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 683, 558, 576, 14949, 14951, 4886, 5773, 2]
 
-// Module 14663 (VideoQuestCaptions)
+// Module 14948 (VideoQuestCaptions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5270 */;
-import useVideoQuestCaptions from "useVideoQuestCaptions" /* 14664 */;
-import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 14666 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5773 */;
+import useVideoQuestCaptions from "useVideoQuestCaptions" /* 14949 */;
+import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 14951 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import module_684 from "module_684" /* 684 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = { container: rect, captionBox: obj2, captionText: obj3 };
 rect = { position: "absolute", bottom: nativeDefault.space.PX_32, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, alignItems: "center", justifyContent: "flex-end" };
 createStyles = createStyles.createStyles;
 obj2 = { backgroundColor: alphaResult.hex(), padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-const importDefaultResultResult = module_684(nativeDefault.unsafe_rawColors.BLACK);
+const importDefaultResultResult = module_683(nativeDefault.unsafe_rawColors.BLACK);
 alphaResult = importDefaultResultResult.alpha(0.35);
 obj3 = { color: nativeDefault.colors.WHITE, textAlign: "center" };
 let closure_6 = createStyles(obj);

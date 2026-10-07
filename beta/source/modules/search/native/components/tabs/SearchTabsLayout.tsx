@@ -1,29 +1,29 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16801
+// Function ID: 16802
 // Name: SearchTabsLayout
-// Dependencies: [19, 17, 6700, 11715, 11738, 7307, 1086, 21, 4837, 12, 11734, 558, 576, 16454, 11742, 16455, 16456, 1127, 11716, 16457, 11735, 11714, 16546, 16437, 6066, 4570, 11737, 11723, 11724, 1122, 16547, 16548, 12023, 504, 16549, 16550, 16551, 16552, 2]
+// Dependencies: [19, 17, 6784, 11967, 11986, 7513, 1085, 21, 4890, 12, 11982, 558, 576, 504, 11997, 16802, 16803, 16808, 1126, 11968, 16809, 11983, 11966, 16898, 16785, 6140, 4612, 11985, 11998, 11999, 1121, 16899, 16900, 10974, 16901, 16902, 16903, 16904, 2]
 
-// Module 16453 (SearchTabsLayout)
+// Module 16801 (SearchTabsLayout)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import SearchUtils from "SearchUtils" /* 11716 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 11723 */;
-import SearchTabsFetchManagerDefault from "SearchTabsFetchManager" /* 11724 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11734 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 11735 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11737 */;
-import IntelligenceSearchEmptyScreenDefault from "IntelligenceSearchEmptyScreen" /* 16455 */;
-import ErrorScreenDefault from "ErrorScreen" /* 16456 */;
-import SearchTabsPageDefault from "SearchTabsPage" /* 16457 */;
+import Constants from "Constants" /* 1085 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+import SearchUtils from "SearchUtils" /* 11968 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 11983 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11985 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 11997 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 11998 */;
+import SearchTabsFetchManagerDefault from "SearchTabsFetchManager" /* 11999 */;
+import ErrorScreenDefault from "ErrorScreen" /* 16808 */;
+import SearchTabsPageDefault from "SearchTabsPage" /* 16809 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6700 */;
-import SearchQueryStore from "SearchQueryStore" /* 11715 */;
-import SearchTabsLayoutStore from "SearchTabsLayoutStore" /* 11738 */;
-import SearchConstants from "SearchConstants" /* 7307 */;
+import SearchMessageStore from "SearchMessageStore" /* 6784 */;
+import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchTabsLayoutStore from "SearchTabsLayoutStore" /* 11986 */;
+import SearchConstants from "SearchConstants" /* 7513 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ let closure_14;
 let map1;
 let metroImportAll;
 let tmp;
-const SearchPlatformUtilsDefault = tmp(11714);
+const SearchPlatformUtilsDefault = tmp(11966);
 const View = react_native.View;
 ({ MESSAGE_SEARCH_RESULT_TABS_SET: metroImportAll, SEARCH_MESSAGE_TAB_SENTINEL: c9, SearchTabs: c10 } = SearchConstants);
 const ComponentActions = Constants.ComponentActions;
@@ -119,80 +119,155 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchTabs) =>
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+  let first;
   let intl;
-  let tmp4;
-  let tmp5;
-  let tmp8;
+  let tmp6;
+  let tmp7;
   let obj = searchContext(576);
-  const cResult = obj.c(5);
+  const cResult = obj.c(13);
   searchContext = searchContext.searchContext;
-  let obj2 = searchContext(16454);
-  const status = obj2.useIntelligenceSearchStatus(searchContext).status;
-  if (cResult[0] !== searchContext) {
-    const fn = function n() {
-      const obj = search_tracking_TrackingDefault;
-      const obj2 = { searchContext };
-      const result = obj.trackSearchEmptyResult(obj2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SearchQueryStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== searchContext) {
+    const fn = function o() {
+      return SearchQueryStore.getSearchResultsQuery(searchContext);
     };
-    const items = [searchContext];
-    cResult[0] = searchContext;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp5 = items;
-    tmp4 = fn;
+    const items1 = [searchContext];
+    cResult[1] = searchContext;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
   } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
   }
-  const effect = react.useEffect(tmp4, tmp5);
-  const tmpResult = searchContext(11742);
-  if (tmpResult.isIntelligenceSearchEmptyOrErrored(status)) {
-    let tmp14;
-    const _Symbol2 = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp17 = closure_12(IntelligenceSearchEmptyScreenDefault, {});
-      cResult[3] = tmp17;
-      tmp14 = tmp17;
-    } else {
-      tmp14 = cResult[3];
+  const tmpResult = searchContext(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  if (cResult[4] === searchContext) {
+    let tmp9;
+    let tmp13;
+    let tmp12;
+    let tmp17;
+    if (cResult[5] === stateFromStores) {
+      tmp9 = cResult[6];
     }
-    tmp8 = tmp14;
-  } else {
+    const tmpResult3 = searchContext(16802);
+    const smartSearchStatus = tmpResult3.useSmartSearchStatus(tmp9);
+    if (cResult[7] !== searchContext) {
+      class S {
+        constructor() {
+          const obj = search_tracking_TrackingDefault;
+          const obj2 = { searchContext };
+          const result = obj.trackSearchEmptyResult(obj2);
+        }
+      }
+      const items2 = [searchContext];
+      cResult[7] = searchContext;
+      cResult[8] = S;
+      cResult[9] = items2;
+      tmp13 = items2;
+      tmp12 = S;
+    } else {
+      class S {
+        constructor() {
+          const obj = search_tracking_TrackingDefault;
+          const obj2 = { searchContext };
+          const result = obj.trackSearchEmptyResult(obj2);
+        }
+      }
+      tmp13 = cResult[9];
+    }
+    const effect = react.useEffect(tmp12, tmp13);
+    if (null != tmp9) {
+      class S {
+        constructor() {
+          const obj = search_tracking_TrackingDefault;
+          const obj2 = { searchContext };
+          const result = obj.trackSearchEmptyResult(obj2);
+        }
+      }
+      if (obj5.isSmartSearchEmptyOrErrored(smartSearchStatus)) {
+        class S {
+          constructor() {
+            const obj = search_tracking_TrackingDefault;
+            const obj2 = { searchContext };
+            const result = obj.trackSearchEmptyResult(obj2);
+          }
+        }
+        tmp17 = tmp21;
+      }
+      return tmp17;
+    }
     const _Symbol = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { text: intl.string(searchContext(1127).t.V6nAfF) };
-      const tmp11 = ErrorScreenDefault;
-      intl = tmp(1127).intl;
-      const tmp12 = closure_12(tmp11, obj3);
-      cResult[4] = tmp12;
-      tmp8 = tmp12;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor() {
+          const obj = search_tracking_TrackingDefault;
+          const obj2 = { searchContext };
+          const result = obj.trackSearchEmptyResult(obj2);
+        }
+      }
+      let obj2 = { text: intl.string(searchContext(1126).t.V6nAfF) };
+      const tmp19 = ErrorScreenDefault;
+      intl = tmp(1126).intl;
+      const tmp20 = closure_12(tmp19, obj2);
+      cResult[12] = tmp20;
+      tmp17 = tmp20;
     } else {
-      tmp8 = cResult[4];
+      class S {
+        constructor() {
+          const obj = search_tracking_TrackingDefault;
+          const obj2 = { searchContext };
+          const result = obj.trackSearchEmptyResult(obj2);
+        }
+      }
     }
   }
-  return tmp8;
+  const tmpResult4 = searchContext(11997);
+  const smartSearchQuery = tmpResult4.getSmartSearchQuery(searchContext, stateFromStores);
+  cResult[4] = searchContext;
+  cResult[5] = stateFromStores;
+  cResult[6] = smartSearchQuery;
+  tmp9 = smartSearchQuery;
 }) : ((searchContext) => {
   let intl;
-  let tmp4Result;
   searchContext = searchContext.searchContext;
-  let obj = searchContext(16454);
-  const items = [searchContext];
-  const status = obj.useIntelligenceSearchStatus(searchContext).status;
+  let obj = searchContext(504);
+  const items = [SearchQueryStore];
+  const items1 = [searchContext];
+  const stateFromStores = obj.useStateFromStores(items, () => SearchQueryStore.getSearchResultsQuery(searchContext), items1);
+  const items2 = [searchContext, stateFromStores];
+  const memo = react.useMemo(() => {
+    const obj = SmartSearchUtils;
+    return obj.getSmartSearchQuery(searchContext, stateFromStores);
+  }, items2);
+  let obj2 = searchContext(16802);
+  const items3 = [searchContext];
+  const smartSearchStatus = obj2.useSmartSearchStatus(memo);
   const effect = react.useEffect(() => {
     const obj = search_tracking_TrackingDefault;
     const obj2 = { searchContext };
     const result = obj.trackSearchEmptyResult(obj2);
-  }, items);
-  let obj2 = searchContext(11742);
-  if (obj2.isIntelligenceSearchEmptyOrErrored(status)) {
-    tmp4Result = tmp4(tmp5(16455), {});
-  } else {
-    const obj3 = { text: intl.string(searchContext(1127).t.V6nAfF) };
-    const tmp5Result = ErrorScreenDefault;
-    intl = tmp(1127).intl;
-    tmp4Result = tmp4(tmp5Result, obj3);
+  }, items3);
+  if (null != memo) {
+    let tmp8;
+    const tmpResult = searchContext(11997);
+    if (tmpResult.isSmartSearchEmptyOrErrored(smartSearchStatus)) {
+      const obj3 = { smartSearchQuery: memo };
+      tmp8 = closure_12(stateFromStores(16803), obj3);
+    }
+    return tmp8;
   }
-  return tmp4Result;
+  const obj4 = { text: intl.string(searchContext(1126).t.V6nAfF) };
+  const tmp7 = stateFromStores(16808);
+  intl = tmp(1126).intl;
+  tmp8 = closure_12(tmp7, obj4);
 });
 const __initData = { code: "function SearchTabsLayoutTsx1(t8){const{isDragging,disallowMemberListGesture}=this.__closure;var _disallowMemberListGe;const{contentOffset:contentOffset}=t8;isDragging.set(true);(_disallowMemberListGe=disallowMemberListGesture)===null||_disallowMemberListGe===void 0||_disallowMemberListGe.set(contentOffset.x>0);}" };
 const __initData2 = { code: "function SearchTabsLayoutTsx2(){const{isDragging,disallowMemberListGesture}=this.__closure;var _disallowMemberListGe;isDragging.set(false);(_disallowMemberListGe=disallowMemberListGesture)===null||_disallowMemberListGe===void 0||_disallowMemberListGe.set(false);}" };
@@ -264,7 +339,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
               if (cResult[10] === width) {
                 tmp8 = cResult[11];
               }
-              let tmpResult = tmp(tmp2[22]);
+              let tmpResult = tmp(tmp2[23]);
               const searchSegmentedControlState = tmpResult.useSearchSegmentedControlState(tmp8);
               ({ segmentedControlState, selectedTab } = searchSegmentedControlState);
               const setActiveIndex = segmentedControlState.setActiveIndex;
@@ -281,7 +356,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                   if (cResult[16] === selectedTab) {
                     tmp13 = cResult[17];
                   }
-                  const context = width.useContext(tmp(tmp2[23]).SwipeForMemberListContext);
+                  const context = width.useContext(tmp(tmp2[24]).SwipeForMemberListContext);
                   if (cResult[18] !== context) {
                     let obj2 = context;
                     if (context == null) {
@@ -298,14 +373,14 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                   const screenIndex = tmp15.screenIndex;
                   if (null != gesture) {
                     if (cResult[20] !== gesture) {
-                      const Gesture = tmp(tmp2[24]).Gesture;
+                      const Gesture = tmp(tmp2[25]).Gesture;
                       const NativeResult = Gesture.Native();
                       let result = NativeResult.simultaneousWithExternalGesture(gesture);
                       cResult[20] = gesture;
                       cResult[21] = result;
                     }
                   }
-                  const tmpResult2 = tmp(tmp2[25]);
+                  const tmpResult2 = tmp(tmp2[26]);
                   const sharedValue = tmpResult2.useSharedValue(false);
                   if (cResult[22] === disallowGesture) {
                     let tmp22;
@@ -379,9 +454,9 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                                     let tmp35;
                                     if (cResult[46] !== segmentedControlState) {
                                       let obj4 = { state: segmentedControlState };
-                                      const tmp39 = closure_12(searchContext(tmp2[30]), obj4);
+                                      const tmp39 = closure_12(searchContext(tmp2[31]), obj4);
                                       let obj5 = { state: segmentedControlState };
-                                      const tmp40 = closure_12(searchContext(tmp2[31]), obj5);
+                                      const tmp40 = closure_12(searchContext(tmp2[32]), obj5);
                                       cResult[46] = segmentedControlState;
                                       cResult[47] = tmp39;
                                       cResult[48] = tmp40;
@@ -451,7 +526,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                                                     tmp55 = tmp58;
                                                   }
                                                   const obj9 = { value: tmp13, children: tmp49 };
-                                                  const tmp54 = closure_12(tmp(tmp2[19]).SearchTabsPageContext.Provider, obj9);
+                                                  const tmp54 = closure_12(tmp(tmp2[20]).SearchTabsPageContext.Provider, obj9);
                                                   cResult[60] = tmp13;
                                                   cResult[61] = tmp49;
                                                   cResult[62] = tmp54;
@@ -462,7 +537,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                                           }
                                         }
                                         const obj10 = { state: segmentedControlState, bounces: null == context, nativeGesture: tmp18, onBeginDragWorklet: tmp46, onEndDragWorklet: tmp47, onScrollWorklet: tmp48 };
-                                        const tmp51 = closure_12(tmp(tmp2[32]).SegmentedControlPages, obj10);
+                                        const tmp51 = closure_12(tmp(tmp2[33]).SegmentedControlPages, obj10);
                                         cResult[53] = tmp18;
                                         cResult[54] = segmentedControlState;
                                         cResult[55] = null == context;
@@ -497,7 +572,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                               }
                               const tmp = items4;
                               let tmp2 = visibleTabCounts;
-                              let ComponentDispatch = items4(visibleTabCounts[29]).ComponentDispatch;
+                              let ComponentDispatch = items4(visibleTabCounts[30]).ComponentDispatch;
                               const subscription = ComponentDispatch.subscribe(constants.CHANNEL_DETAILS_HIDDEN, handleChannelDetailsHidden);
                               return () => {
                                 const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -545,7 +620,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                       cResult[30] = le;
                       tmp26 = le;
                     }
-                    function ie() {
+                    function re() {
                       const result = sharedValue.set(false);
                       const obj = disallowGesture;
                       if (disallowGesture != null) {
@@ -553,13 +628,13 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                       }
                     }
                     const obj13 = { isDragging: sharedValue, disallowMemberListGesture: disallowGesture };
-                    ie.__closure = obj13;
-                    ie.__workletHash = 5683301645106;
-                    ie.__initData = __initData2;
+                    re.__closure = obj13;
+                    re.__workletHash = 5683301645106;
+                    re.__initData = __initData2;
                     cResult[25] = disallowGesture;
                     cResult[26] = sharedValue;
-                    cResult[27] = ie;
-                    tmp24 = ie;
+                    cResult[27] = re;
+                    tmp24 = re;
                   }
                   function ee(contentOffset) {
                     contentOffset = contentOffset.contentOffset;
@@ -690,7 +765,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
       const initialMessagesDebounced = tmpResult.fetchInitialMessagesDebounced(tmp3);
     }
   }, items1);
-  let obj2 = searchContext(visibleTabCounts[22]);
+  let obj2 = searchContext(visibleTabCounts[23]);
   const searchSegmentedControlState = obj2.useSearchSegmentedControlState({ items: memo, visibleTabs, onSelectedTabChange: callback, width });
   ({ segmentedControlState, selectedTab } = searchSegmentedControlState);
   const setActiveIndex = segmentedControlState.setActiveIndex;
@@ -698,7 +773,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
   const selectMediaTab = tmp7;
   const items2 = [tmp7, selectedTab];
   const memo1 = width.useMemo(() => ({ selectedTab, selectMediaTab }), items2);
-  const context = width.useContext(searchContext(visibleTabCounts[23]).SwipeForMemberListContext);
+  const context = width.useContext(searchContext(visibleTabCounts[24]).SwipeForMemberListContext);
   let obj3 = context;
   if (context == null) {
     obj3 = {};
@@ -715,7 +790,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
       return NativeResult.simultaneousWithExternalGesture(tmp);
     }
   }, items3);
-  const tmp4Result = searchContext(visibleTabCounts[25]);
+  const tmp4Result = searchContext(visibleTabCounts[26]);
   sharedValue = tmp4Result.useSharedValue(false);
   const fn = function x(contentOffset) {
     contentOffset = contentOffset.contentOffset;
@@ -787,7 +862,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
     if (null != context) {
       const tmp = searchContext;
       let tmp2 = visibleTabCounts;
-      let ComponentDispatch = searchContext(visibleTabCounts[29]).ComponentDispatch;
+      let ComponentDispatch = searchContext(visibleTabCounts[30]).ComponentDispatch;
       const subscription = ComponentDispatch.subscribe(screenIndex.CHANNEL_DETAILS_HIDDEN, handleChannelDetailsHidden);
       return () => {
         const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -801,16 +876,16 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
   } else {
     let obj5 = { style: tmp.controls, children: items10 };
     const obj6 = { state: segmentedControlState };
-    items10 = [sharedValue(visibleTabs(tmp5[30]), obj6), ];
+    items10 = [sharedValue(visibleTabs(tmp5[31]), obj6), ];
     const obj7 = { state: segmentedControlState };
-    items10[1] = sharedValue(visibleTabs(visibleTabCounts[31]), obj7);
+    items10[1] = sharedValue(visibleTabs(visibleTabCounts[32]), obj7);
     const items11 = [callback4(selectedTab, obj5), ];
     const obj8 = { style: tmp.pages, children: sharedValue(Provider, obj9) };
     obj9 = { value: memo1, children: sharedValue(SegmentedControlPages, obj10) };
-    Provider = tmp4(tmp5[19]).SearchTabsPageContext.Provider;
+    Provider = tmp4(tmp5[20]).SearchTabsPageContext.Provider;
     obj10 = { state: segmentedControlState, bounces: null == context, nativeGesture: memo2, onBeginDragWorklet: tmp18, onEndDragWorklet: tmp19, onScrollWorklet: tmp20 };
     tmp18 = undefined;
-    SegmentedControlPages = tmp4(tmp5[32]).SegmentedControlPages;
+    SegmentedControlPages = tmp4(tmp5[33]).SegmentedControlPages;
     const tmp24 = callback4;
     const tmp25 = closure_14;
     const tmp26 = selectedTab;
@@ -832,7 +907,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
   return tmp24Result;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(searchContext) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(searchContext) {
   let candidateTabs;
   let first;
   let obj3;
@@ -880,11 +955,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(searchContex
   } else {
     obj3 = cResult[5];
   }
-  const tmpResult5 = searchContext(16549);
+  const tmpResult5 = searchContext(16901);
   const autoSearchGuildChannelTab = tmpResult5.useAutoSearchGuildChannelTab(searchContext, !obj3.has(constants.GUILD_CHANNELS));
-  const tmpResult6 = searchContext(16550);
+  const tmpResult6 = searchContext(16902);
   const autoSearchMembersTab = tmpResult6.useAutoSearchMembersTab(searchContext, !obj3.has(constants.MEMBERS));
-  const tmpResult7 = searchContext(16551);
+  const tmpResult7 = searchContext(16903);
   const autoSearchPeopleTab = tmpResult7.useAutoSearchPeopleTab(searchContext, !obj3.has(constants.PEOPLE));
   if (cResult[6] === searchContext) {
     if (cResult[7] === visibleTabCounts) {
@@ -892,7 +967,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(searchContex
       if (cResult[8] === visibleTabs) {
         tmp15 = cResult[9];
       }
-      const tmpResult8 = searchContext(16552);
+      const tmpResult8 = searchContext(16904);
       const autoTrackSearchTabCountsViewedAnalytics = tmpResult8.useAutoTrackSearchTabCountsViewedAnalytics(tmp15);
       if (cResult[10] === searchContext) {
         if (cResult[11] === visibleTabCounts) {
@@ -941,13 +1016,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(searchContex
     set = new Set(candidateTabs);
     return set;
   }, items2);
-  const obj3 = searchContext(16549);
+  const obj3 = searchContext(16901);
   const autoSearchGuildChannelTab = obj3.useAutoSearchGuildChannelTab(searchContext, !memo.has(constants.GUILD_CHANNELS));
-  const obj4 = searchContext(16550);
+  const obj4 = searchContext(16902);
   const autoSearchMembersTab = obj4.useAutoSearchMembersTab(searchContext, !memo.has(constants.MEMBERS));
-  const obj5 = searchContext(16551);
+  const obj5 = searchContext(16903);
   const autoSearchPeopleTab = obj5.useAutoSearchPeopleTab(searchContext, !memo.has(constants.PEOPLE));
-  const obj6 = searchContext(16552);
+  const obj6 = searchContext(16904);
   const autoTrackSearchTabCountsViewedAnalytics = obj6.useAutoTrackSearchTabCountsViewedAnalytics({ searchContext, visibleTabCounts, visibleTabs });
   return closure_12(closure_25, { searchContext, visibleTabs, visibleTabCounts, width });
 });

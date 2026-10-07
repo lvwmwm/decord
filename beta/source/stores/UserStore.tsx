@@ -1,27 +1,27 @@
-// Module ID: 1378
-// Function ID: 1379
+// Module ID: 1377
+// Function ID: 1378
 // Name: UserStore
-// Dependencies: [1379, 1392, 502, 1085, 1086, 1380, 1394, 1389, 1972, 1973, 1395, 1399, 1400, 1401, 1391, 12, 1984, 1985, 1376, 2]
+// Dependencies: [1378, 1391, 502, 1084, 1085, 1379, 1393, 1388, 1972, 1973, 1394, 1398, 1399, 1400, 1390, 12, 1984, 1985, 1375, 2]
 
-// Module 1378 (UserStore)
+// Module 1377 (UserStore)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import UserStoreUtils from "UserStoreUtils" /* 1389 */;
-import FlagUtilsAll from "FlagUtils" /* 1391 */;
-import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1394 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1395 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1399 */;
-import PremiumStateUtils from "PremiumStateUtils" /* 1400 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import UserStoreUtils from "UserStoreUtils" /* 1388 */;
+import FlagUtilsAll from "FlagUtils" /* 1390 */;
+import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1393 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1398 */;
+import PremiumStateUtils from "PremiumStateUtils" /* 1399 */;
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1972 */;
 import mappers from "mappers" /* 1973 */;
 import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1984 */;
 import Server from "Server" /* 1985 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1379 */;
-import UserRecord from "UserRecord" /* 1392 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1378 */;
+import UserRecord from "UserRecord" /* 1391 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1085 */;
-import Constants from "Constants" /* 1086 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let clip_participants, message_preview, moderator_report, set;
@@ -56,7 +56,7 @@ function mergeUserPrimaryGuild(id, primary_guild) {
     if (tmp8) {
       let flag = null == tmp2.primaryGuild || null != primary_guild.primary_guild;
       if (flag) {
-        const tmp5Result = tmp5(1394);
+        const tmp5Result = tmp5(1393);
         obj[id].primaryGuild = tmp5Result.ensureUserPrimaryGuild(primary_guild.primary_guild);
         tmp[obj[id].id] = obj[id];
         closure_12 = closure_12 + 1;
@@ -155,7 +155,7 @@ function transformUser(mfa_enabled) {
   }
   const restricted_schedule = mfa_enabled.restricted_schedule;
   if (undefined !== restricted_schedule) {
-    const RestrictedScheduleRecord = tmp2(1401).RestrictedScheduleRecord;
+    const RestrictedScheduleRecord = tmp2(1400).RestrictedScheduleRecord;
     let fromServerResult = RestrictedScheduleRecord.fromServer(restricted_schedule);
     if (fromServerResult == null) {
       fromServerResult = null;
@@ -265,7 +265,7 @@ function mergeUser(user, arg1) {
           const obj5 = PrimaryGuildUtils;
           const tmp18 = require;
           if (obj5.isUserPrimaryGuildEqual(obj[user.id].primaryGuild, user.primary_guild) !== true) {
-            const tmp18Result = tmp18(1394);
+            const tmp18Result = tmp18(1393);
             user.primary_guild = tmp18Result.ensureUserPrimaryGuild(user.primary_guild);
           }
         }
@@ -585,7 +585,7 @@ function handleLoadMessages(messages) {
   });
   return false;
 }
-function handleConversationFetchSuccess(messages) {
+function handleConversationMessagesFetchSuccess(messages) {
   messages = messages.messages;
   const combined = messages.concat(messages.messageReferences);
   const item = combined.forEach((item) => {
@@ -593,7 +593,7 @@ function handleConversationFetchSuccess(messages) {
   });
   return false;
 }
-function handleConversationsFetchSuccess(rawConversations) {
+function handleChannelConversationsFetchSuccess(rawConversations) {
   rawConversations = rawConversations.rawConversations;
   let item = rawConversations.forEach((messages) => {
     messages = messages.messages;
@@ -649,7 +649,7 @@ function handleLoadSearchResults(data) {
   });
   return false;
 }
-function handleIntelligenceSearchFetchSuccess(messages) {
+function handleSmartSearchFetchSuccess(messages) {
   messages = messages.messages;
   const item = messages.forEach((item) => {
     mergeUsersFromMessage(item, true);
@@ -755,7 +755,7 @@ function handleIncomingMessage(message) {
       if (flag) {
         id = obj2.getId();
         set = tmp6.set;
-        const tmp2Result = tmp2(1391);
+        const tmp2Result = tmp2(1390);
         tmp5[id] = set("flags", tmp2Result.setFlag(tmp6.flags, metroImportDefault.HAS_UNREAD_URGENT_MESSAGES, true));
         flag = true;
       }
@@ -1232,13 +1232,13 @@ class UserStore extends MobileCacheSnapshotStore {
       CURRENT_USER_UPDATE: handleCurrentUserUpdate,
       PRESENCE_UPDATES: handlePresenceUpdates,
       SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
-      INTELLIGENCE_SEARCH_FETCH_SUCCESS: handleIntelligenceSearchFetchSuccess,
+      SMART_SEARCH_FETCH_SUCCESS: handleSmartSearchFetchSuccess,
       MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
       LOAD_MESSAGES_SUCCESS: handleLoadMessages,
       LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
       LOAD_RECENT_MENTIONS_SUCCESS: handleLoadMessages,
-      CONVERSATION_FETCH_SUCCESS: handleConversationFetchSuccess,
-      CONVERSATIONS_FETCH_SUCCESS: handleConversationsFetchSuccess,
+      CONVERSATION_MESSAGES_FETCH_SUCCESS: handleConversationMessagesFetchSuccess,
+      CHANNEL_CONVERSATIONS_FETCH_SUCCESS: handleChannelConversationsFetchSuccess,
       LOAD_PINNED_MESSAGES_SUCCESS: handleLoadPinnedMessages,
       THREAD_LIST_SYNC: handleThreadListSync,
       MESSAGE_CREATE: handleIncomingMessage,
@@ -1291,7 +1291,7 @@ class UserStore extends MobileCacheSnapshotStore {
       CLOSE_AGE_VERIFICATION_MODAL: handleCloseAgeVerificationModal,
       INTERACTION_MODAL_CREATE: handleInteractionModalCreate
     };
-    const tmp2 = new tmp(obj, handleIntelligenceSearchFetchSuccess, handleCloseAgeVerificationModal, new.target);
+    const tmp2 = new tmp(obj, handleSmartSearchFetchSuccess, handleCloseAgeVerificationModal, new.target);
     let closure_0 = tmp2;
     return tmp2;
   }

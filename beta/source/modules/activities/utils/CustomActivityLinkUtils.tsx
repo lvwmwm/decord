@@ -1,14 +1,14 @@
-// Module ID: 12498
-// Function ID: 12499
+// Module ID: 12743
+// Function ID: 12744
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 12499, 1086, 12501, 1283, 585, 2]
-// Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
+// Dependencies: [5, 12744, 1085, 12746, 1282, 584, 2]
+// Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 12498 (CustomActivityLinkUtils)
-import Constants from "Constants" /* 1086 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 12501 */;
+// Module 12743 (CustomActivityLinkUtils)
+import Constants from "Constants" /* 1085 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 12746 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 12499 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 12744 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -169,7 +169,7 @@ obj = function _getCustomActivityLinkParams() {
           } else if (1 === tmp3) {
             c6 = 0;
             c7 = 3;
-            return { value: { customId: "call" }, done: true };
+            return { value: { customId: "r" }, done: true };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -180,7 +180,7 @@ obj = function _getCustomActivityLinkParams() {
           } else {
             custom_id = value;
             if (null == custom_id) {
-              obj = { customId: "call" };
+              obj = { customId: "r" };
             } else {
               obj = { customId: custom_id.custom_id };
             }
@@ -239,14 +239,6 @@ let result = size.fileFinishedImporting("modules/activities/utils/CustomActivity
 export { fetchCustomActivityLink };
 export const getCustomActivityLinkParams = function getCustomActivityLinkParams() {
   return obj(...arguments);
-};
-export const getQuickLinkImage = function getQuickLinkImage(assetPath) {
-  if (null != assetPath) {
-    const _location = location;
-    const _window = window;
-    const _HermesInternal = HermesInternal;
-    return "" + location.protocol + "//" + window.GLOBAL_ENV.CDN_HOST + "/attachments-quick-links/" + assetPath;
-  }
 };
 export { loadCustomActivityLink };
 export const getOrFetchCustomActivityLink = function getOrFetchCustomActivityLink(id, linkId) {

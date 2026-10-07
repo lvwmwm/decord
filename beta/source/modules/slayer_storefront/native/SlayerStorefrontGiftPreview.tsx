@@ -1,19 +1,19 @@
-// Module ID: 10857
-// Function ID: 10858
+// Module ID: 11104
+// Function ID: 11105
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 4837, 558, 576, 8285, 1127, 4833, 3588, 9232, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 8481, 1126, 4886, 3593, 9459, 2]
 
-// Module 10857 (SlayerStorefrontGiftPreview)
+// Module 11104 (SlayerStorefrontGiftPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import _modDef3588 from "module_3588" /* 3588 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8285 */;
-import InfoBox from "InfoBox" /* 9232 */;
+import intl4 from "intl" /* 1126 */;
+import _modDef3593 from "module_3593" /* 3593 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8481 */;
+import InfoBox from "InfoBox" /* 9459 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -119,11 +119,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp17 = tmp19;
       }
     }
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj6 = { sender, skuName: sku.name, applicationName: name1 };
     name1 = undefined;
-    const v2tBYtA = tmp(1127).t["2tBYtA"];
+    const v2tBYtA = tmp(1126).t["2tBYtA"];
     if (application != null) {
       name1 = application.name;
     }
@@ -205,10 +205,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         name = application.name;
       }
       if (first !== name) {
-        const intl3 = tmp(1127).intl;
+        const intl3 = tmp(1126).intl;
         const formatToPlainString2 = intl3.formatToPlainString;
         let name1;
-        const BMMo2K = _modDef3588.BMMo2K;
+        const BMMo2K = _modDef3593.BMMo2K;
         if (application != null) {
           name1 = application.name;
         }
@@ -264,11 +264,11 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[14] = tmp25;
         tmp21 = tmp25;
       }
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const obj5 = { skuName: sku.name, applicationName: name4 };
       name4 = undefined;
-      const prop = tmp(1127).t["EgCl+Q"];
+      const prop = tmp(1126).t["EgCl+Q"];
       if (application != null) {
         name4 = application.name;
       }
@@ -285,7 +285,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp6;
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const formatResult = intl.format(intl4.t["3T0cpx"], {});
         cResult[5] = formatResult;
         tmp6 = formatResult;
@@ -327,7 +327,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (mobileAccountLinkingDisabled) {
       const formatToPlainString2 = intl.formatToPlainString;
       let name;
-      const BMMo2K = tmp4(3588).BMMo2K;
+      const BMMo2K = tmp4(3593).BMMo2K;
       if (application != null) {
         name = application.name;
       }
@@ -338,7 +338,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const formatToPlainString = intl.formatToPlainString;
       const obj3 = { skuName: sku.name, applicationName: name1 };
       name1 = undefined;
-      const prop = tmp7(1127).t["EgCl+Q"];
+      const prop = tmp7(1126).t["EgCl+Q"];
       if (application != null) {
         name1 = application.name;
       }

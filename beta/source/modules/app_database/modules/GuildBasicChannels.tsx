@@ -1,22 +1,22 @@
-// Module ID: 7065
-// Function ID: 7066
+// Module ID: 7132
+// Function ID: 7133
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5590, 2055, 502, 2051, 2105, 2073, 4472, 2052, 3, 2077, 7066, 1098, 4481, 2]
+// Dependencies: [32, 5, 5436, 2055, 502, 2051, 2106, 2074, 4509, 2052, 3, 2078, 7133, 1097, 4518, 2]
 
-// Module 7065 (GuildBasicChannels)
+// Module 7132 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import ChannelStore2 from "ChannelStore" /* 2051 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2077 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4481 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4518 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2052 */;
 import size from "module_2" /* 2 */;
 
@@ -325,7 +325,7 @@ class GuildBasicChannels {
                               closure_1 = closure_3;
                               closure_2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                               c6 = 3;
-                              return { value: { v: "call" }, done: true };
+                              return { value: { v: "r" }, done: true };
                             } else if (2 === c5) {
                               if (arg0 === 1) {
                                 c6 = 3;

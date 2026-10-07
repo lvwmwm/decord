@@ -1,24 +1,24 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7584
+// Function ID: 7585
 // Name: ConversationListScreen
-// Dependencies: [5, 32, 19, 17, 7022, 7019, 21, 4837, 588, 7372, 558, 576, 4833, 1127, 1494, 1619, 7336, 504, 11, 7337, 7339, 8176, 2]
+// Dependencies: [5, 32, 19, 17, 7103, 7105, 21, 4890, 587, 7585, 558, 576, 4886, 1126, 1493, 1618, 7549, 504, 11, 7550, 7552, 8371, 2]
 // Exports: default
 
-// Module 7371 (ConversationListScreen)
+// Module 7584 (ConversationListScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7339 */;
-import ConversationListItemDefault from "ConversationListItem" /* 7372 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7552 */;
+import ConversationListItemDefault from "ConversationListItem" /* 7585 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConversationsStore from "ConversationsStore" /* 7022 */;
-import ConversationConstants from "ConversationConstants" /* 7019 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7103 */;
+import ConversationConstants from "ConversationConstants" /* 7105 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,8 +63,8 @@ const ListEmptyComponent = memo(ReactCompilerGating.isReactCompilerEnabled() ? (
   const cResult = obj.c(3);
   const tmp4 = closure_15();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(4833).Text;
-    const intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    const intl = tmp(1126).intl;
     const tmp7 = <Text variant="text-md/normal" color="text-muted">{intl.string(intl2.t.LJuFRG)}</Text>;
     cResult[0] = tmp7;
     first = tmp7;
@@ -100,14 +100,14 @@ export default function ConversationListScreen() {
   let stateFromStores1;
   let tmp16;
   const tmp = channelId;
-  let obj = channelId(1494);
+  let obj = channelId(1493);
   const params = obj.useRoute().params;
   channelId = params.channelId;
   let guildId = params.guildId;
-  const bottom = guildId(1619)().bottom;
+  const bottom = guildId(1618)().bottom;
   let tmp3 = closure_14(bottom);
   dependencyMap = tmp3;
-  let obj2 = channelId(7336);
+  let obj2 = channelId(7549);
   const conversationBackoffRef = obj2.useConversationBackoffRef();
   let obj3 = react;
   const tmp5 = first(react.useState(false), 2);
@@ -117,7 +117,7 @@ export default function ConversationListScreen() {
   const items = [stateFromStores1];
   const items1 = [channelId];
   const stateFromStoresArray = obj4.useStateFromStoresArray(items, () => {
-    let channelConversations = ConversationsStore.getChannelConversations(channelId);
+    let channelConversations = ChannelConversationsStore.getChannelConversations(channelId);
     if (channelConversations == null) {
       channelConversations = [];
     }
@@ -135,11 +135,11 @@ export default function ConversationListScreen() {
   let obj5 = channelId(504);
   const items3 = [stateFromStores1];
   const items4 = [channelId];
-  let stateFromStores = obj5.useStateFromStores(items3, () => null == ConversationsStore.getEdgeMarker(channelId, "before"), items4);
+  let stateFromStores = obj5.useStateFromStores(items3, () => null == ChannelConversationsStore.getEdgeMarker(channelId, "before"), items4);
   let obj6 = channelId(504);
   const items5 = [stateFromStores1];
   const items6 = [channelId];
-  stateFromStores1 = obj6.useStateFromStores(items5, () => ConversationsStore.isPendingFetch(channelId), items6);
+  stateFromStores1 = obj6.useStateFromStores(items5, () => ChannelConversationsStore.isPendingFetch(channelId), items6);
   function _handleEndReached() {
     return closure_0(...arguments);
   }
@@ -287,7 +287,7 @@ export default function ConversationListScreen() {
   }, items9);
   obj8 = { data: memo, renderItem, keyExtractor, contentContainerStyle: tmp3.content, scrollIndicatorInsets: { bottom }, onEndReached: tmp16, ListEmptyComponent, ListFooterComponent: memo1, onViewableItemsChanged: callback1, viewabilityConfig };
   tmp16 = undefined;
-  FlashList = tmp(8176).FlashList;
+  FlashList = tmp(8371).FlashList;
   const tmp15 = memo;
   if (stateFromStores) {
     tmp16 = callback;

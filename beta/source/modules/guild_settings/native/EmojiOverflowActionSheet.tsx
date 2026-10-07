@@ -1,15 +1,15 @@
-// Module ID: 17369
-// Function ID: 17370
+// Module ID: 17738
+// Function ID: 17739
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 4837, 558, 576, 1403, 4833, 4791, 1127, 5916, 9712, 9829, 4737, 4530, 5940, 5997, 6624, 2]
+// Dependencies: [5, 19, 17, 21, 4890, 558, 576, 1402, 4886, 4847, 1126, 5993, 9939, 10058, 5312, 4567, 6017, 6074, 6701, 2]
 
-// Module 17369 (EmojiOverflowActionSheet)
-import EmojiActionCreators from "EmojiActionCreators" /* 9712 */;
+// Module 17738 (EmojiOverflowActionSheet)
+import EmojiActionCreators from "EmojiActionCreators" /* 9939 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

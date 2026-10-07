@@ -1,25 +1,25 @@
-// Module ID: 6358
-// Function ID: 6359
+// Module ID: 6429
+// Function ID: 6430
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 6359, 502, 1086, 21, 4837, 558, 576, 4833, 5436, 5205, 1127, 1370, 5461, 6360, 1491, 504, 1494, 6005, 6362, 5206, 6363, 6364, 6365, 4737, 6366, 6370, 6371, 6373, 6367, 5282, 6374, 1616, 6376, 6378, 6021, 6384, 6386, 6388, 5280, 6395, 6357, 2]
+// Dependencies: [5, 32, 19, 17, 6430, 502, 1085, 21, 4890, 558, 576, 4886, 5909, 5708, 1126, 1369, 6431, 6432, 1490, 504, 1493, 6082, 6434, 5709, 6435, 6436, 6437, 5312, 6438, 6442, 6443, 6445, 6439, 5594, 6446, 1615, 6448, 6450, 6098, 6456, 6458, 6460, 5593, 6467, 6428, 2]
 // Exports: default
 
-// Module 6358 (Login)
+// Module 6429 (Login)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl11 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
-import Pressables from "Pressables" /* 5436 */;
+import Constants from "Constants" /* 1085 */;
+import intl11 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
+import Pressables from "Pressables" /* 5909 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6359 */;
+import PhoneStore from "PhoneStore" /* 6430 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -399,7 +399,7 @@ export default function Login(isMultiAccount) {
               authenticationErrorsFromV6OrEarlierAPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

@@ -1,17 +1,17 @@
-// Module ID: 12702
-// Function ID: 12703
+// Module ID: 12962
+// Function ID: 12963
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 2048, 21, 4837, 558, 576, 12703, 1127, 9656, 2]
+// Dependencies: [19, 17, 2048, 21, 4890, 558, 576, 12963, 1126, 9882, 2]
 
-// Module 12702 (WishlistViewerCoachmark)
+// Module 12962 (WishlistViewerCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
+import intl4 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef12703 from "module_12703" /* 12703 */;
+import _modDef12963 from "module_12963" /* 12963 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(6);
   const tmp3 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12703 };
+    const obj2 = { uri: _modDef12963 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -57,8 +57,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp10 = tmp11;
 }) : (() => {
   const tmp = closure_8();
-  ({ source: { uri: _modDef12703 }, style: tmp.image });
-  ({ uri: _modDef12703 });
+  ({ source: { uri: _modDef12963 }, style: tmp.image });
+  ({ uri: _modDef12963 });
   return <React3 style={tmp.imageContainer}>{null}</React3>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -87,10 +87,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(markAsDismissed(1127).t["+b6iUl"]);
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(markAsDismissed(1127).t.Howsng);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(markAsDismissed(1126).t["+b6iUl"]);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(markAsDismissed(1126).t.Howsng);
     cResult[2] = stringResult;
     cResult[3] = stringResult1;
     tmp6 = stringResult1;
@@ -113,8 +113,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
     const fn3 = function _() {
       return <closure_1_9 />;
     };
-    const intl3 = tmp(1127).intl;
-    const stringResult2 = intl3.string(markAsDismissed(1127).t.TxBQzD);
+    const intl3 = tmp(1126).intl;
+    const stringResult2 = intl3.string(markAsDismissed(1126).t.TxBQzD);
     cResult[6] = fn3;
     cResult[7] = stringResult2;
     tmp11 = stringResult2;
@@ -129,7 +129,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
       if (cResult[10] === tmp9) {
         tmp13 = cResult[11];
       }
-      const tmpResult = markAsDismissed(9656);
+      const tmpResult = markAsDismissed(9882);
       const coachmark = tmpResult.useCoachmark(anchorRef, tmp13);
       return null;
     }

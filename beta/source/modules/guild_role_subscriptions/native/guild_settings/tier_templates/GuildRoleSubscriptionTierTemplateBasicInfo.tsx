@@ -1,24 +1,24 @@
-// Module ID: 17615
-// Function ID: 17616
+// Module ID: 17980
+// Function ID: 17981
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 1380, 1097, 21, 4837, 588, 558, 576, 5896, 1189, 4833, 1127, 6656, 14764, 5283, 2]
+// Dependencies: [19, 17, 1379, 1096, 21, 4890, 587, 558, 576, 5974, 1188, 4886, 1126, 6736, 15049, 5595, 2]
 
-// Module 17615 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 17980 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import BaseTextButton2 from "BaseTextButton" /* 5283 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import PriceUtils from "PriceUtils" /* 6656 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 14764 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import BaseTextButton2 from "BaseTextButton" /* 5595 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import PriceUtils from "PriceUtils" /* 6736 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15049 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -125,10 +125,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
       tmp17 = cResult[10];
     }
     if (cResult[11] !== price_tier) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const format = intl.format;
       const obj6 = { price: tmpResult.formatPrice(price_tier, CurrencyCodes.USD), interval: tmpResult2.formatPlanInterval(obj7) };
-      const CgmBaG = tmp(1127).t.CgmBaG;
+      const CgmBaG = tmp(1126).t.CgmBaG;
       obj7 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
       tmpResult = PriceUtils;
       tmpResult2 = GuildRoleSubscriptionTypeUtils;
@@ -164,7 +164,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
                 }
                 const _Symbol5 = Symbol;
                 if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl2 = tmp(1127).intl;
+                  const intl2 = tmp(1126).intl;
                   const stringResult = intl2.string(intl3.t["1W7mCt"]);
                   cResult[27] = stringResult;
                   tmp41 = stringResult;
@@ -222,7 +222,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
               }
             }
             const obj10 = { variant: "text-sm/normal", style: descriptionTextStyle, children: description };
-            const Text = tmp(4833).Text;
+            const Text = tmp(4886).Text;
             const merged = Object.assign(descriptionTextProps);
             const tmp40 = metroRequire(Text, obj10);
             cResult[23] = description;

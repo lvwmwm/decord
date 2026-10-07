@@ -1,13 +1,13 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13710
+// Function ID: 13711
 // Name: FormStyles
-// Dependencies: [1086, 4837, 5837, 588, 2]
+// Dependencies: [1085, 4890, 5915, 587, 2]
 
-// Module 13444 (FormStyles)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles_mod from "TextStyles" /* 5837 */;
+// Module 13710 (FormStyles)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles_mod from "TextStyles" /* 5915 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

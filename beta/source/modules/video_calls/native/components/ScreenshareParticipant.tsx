@@ -1,17 +1,17 @@
-// Module ID: 9480
-// Function ID: 9481
+// Module ID: 9708
+// Function ID: 9709
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 8864, 8865, 1127, 4833, 5282, 9404, 6066, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 9090, 9091, 1126, 4886, 5594, 9631, 6140, 2]
 
-// Module 9480 (ScreenshareParticipant)
+// Module 9708 (ScreenshareParticipant)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 8864 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8865 */;
+import nativeDefault from "native" /* 587 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9090 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9091 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,11 +23,11 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const intl4 = tmp(1127);
-const Text_Text = tmp(4833);
-const components_Button_Button = tmp(5282);
-const LegacyBaseButton = tmp(6066);
-const useScreenshareUtils = tmp(9404);
+const intl4 = tmp(1126);
+const Text_Text = tmp(4886);
+const components_Button_Button = tmp(5594);
+const LegacyBaseButton = tmp(6140);
+const useScreenshareUtils = tmp(9631);
 ({ View: closure_4, Image: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { container: obj2, image: { marginBottom: 12 }, title: { textAlign: "center", marginBottom: 8 }, description: { lineHeight: 18, textAlign: "center", marginBottom: 16 } };
@@ -73,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
             tmp11 = cResult[11];
           }
           if (cResult[12] !== tmp10.image) {
-            const obj2 = { source: tmp7(8865), style: tmp10.image };
+            const obj2 = { source: tmp7(9091), style: tmp10.image };
             const tmp15 = metroRequire(hasOwnProperty, obj2);
             cResult[12] = tmp10.image;
             cResult[13] = tmp15;

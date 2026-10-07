@@ -1,16 +1,16 @@
-// Module ID: 11998
-// Function ID: 11999
+// Module ID: 12251
+// Function ID: 12252
 // Name: ProgressCircle
-// Dependencies: [19, 17, 21, 4837, 4544, 588, 7913, 2]
+// Dependencies: [19, 17, 21, 4890, 4589, 587, 8136, 2]
 
-// Module 11998 (ProgressCircle)
+// Module 12251 (ProgressCircle)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 4544 */;
-import inlineStyles from "inlineStyles" /* 7913 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 4589 */;
+import inlineStyles from "inlineStyles" /* 8136 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;

@@ -1,16 +1,16 @@
-// Module ID: 12292
-// Function ID: 12293
+// Module ID: 12546
+// Function ID: 12547
 // Name: MessageRequestNotification
-// Dependencies: [19, 21, 558, 576, 1127, 12223, 4695, 1189, 12232, 12262, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 12479, 4737, 1188, 12486, 12516, 2]
 
-// Module 12292 (MessageRequestNotification)
+// Module 12546 (MessageRequestNotification)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12223 */;
-import Notification from "Notification" /* 12262 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12479 */;
+import Notification from "Notification" /* 12516 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
       tmp8 = cResult[5];
     }
     if (cResult[6] !== author) {
-      const Avatar = tmp(1189).Avatar;
+      const Avatar = tmp(1188).Avatar;
       const tmp11 = <Avatar user={author} size={native.AvatarSizes.NORMAL} guildId="Array" />;
       cResult[6] = author;
       cResult[7] = tmp11;
@@ -69,8 +69,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const SystemMessageText = tmp(12232).SystemMessageText;
-      const intl2 = tmp(1127).intl;
+      const SystemMessageText = tmp(12486).SystemMessageText;
+      const intl2 = tmp(1126).intl;
       const tmp14 = <SystemMessageText text={intl2.string(intl3.t["Bx4/Lf"])} />;
       cResult[8] = tmp14;
       tmp12 = tmp14;
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
     cResult[12] = tmp17;
     tmp15 = tmp17;
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   const obj6 = { name: author.username, count: numMutualGuilds };
   const formatToPlainStringResult = intl.formatToPlainString(intl3.t.LeYU4d, obj6);
   cResult[0] = author.username;
@@ -121,12 +121,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
-  const NotificationPressable = author(12262).NotificationPressable;
-  let obj2 = { user: author, size: author(1189).AvatarSizes.NORMAL, guildId: "Array" };
-  const Avatar = author(1189).Avatar;
-  ({ text: intl.string(author(1127).t["Bx4/Lf"]) });
-  const SystemMessageText = author(12232).SystemMessageText;
-  intl = author(1127).intl;
+  const NotificationPressable = author(12516).NotificationPressable;
+  let obj2 = { user: author, size: author(1188).AvatarSizes.NORMAL, guildId: "Array" };
+  const Avatar = author(1188).Avatar;
+  ({ text: intl.string(author(1126).t["Bx4/Lf"]) });
+  const SystemMessageText = author(12486).SystemMessageText;
+  intl = author(1126).intl;
   return <NotificationPressable icon={null} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 });
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageRequestNotification.tsx");

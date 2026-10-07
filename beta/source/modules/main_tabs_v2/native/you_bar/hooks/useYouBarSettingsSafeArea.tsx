@@ -1,17 +1,17 @@
-// Module ID: 13001
-// Function ID: 13002
+// Module ID: 13265
+// Function ID: 13266
 // Name: useYouBarSettingsSafeArea
-// Dependencies: [558, 1619, 576, 6361, 1371, 2]
+// Dependencies: [558, 1618, 576, 6433, 1370, 2]
 
-// Module 13001 (useYouBarSettingsSafeArea)
+// Module 13265 (useYouBarSettingsSafeArea)
 import react from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6361 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6433 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const utils_PlatformUtils = tmp(1371);
+const utils_PlatformUtils = tmp(1370);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const top = useSafeAreaInsetsDefault().top;

@@ -1,10 +1,10 @@
 // Module ID: 10862
 // Function ID: 10863
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 10862 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 380, height: 242, scales: [1], hash: "20a937ca7af234a5d3bd2269cf0e9463", name: "confetti", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 66.66666666666667, height: 59, scales: [3], hash: "ebeff25c9c1d6559128af4dec63d3c8d", name: "asset_diamond_badge_small", type: "png" });

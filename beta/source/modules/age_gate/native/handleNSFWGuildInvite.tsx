@@ -1,23 +1,22 @@
-// Module ID: 9196
-// Function ID: 9197
+// Module ID: 9420
+// Function ID: 9421
 // Name: handleNSFWGuildInvite
-// Dependencies: [2073, 1086, 9197, 1370, 5040, 9198, 1987, 5736, 9201, 9202, 2]
+// Dependencies: [2074, 1085, 9421, 1369, 9422, 5580, 9424, 9425, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 9196 (handleNSFWGuildInvite)
-import Constants from "Constants" /* 1086 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5736 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 9197 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9201 */;
-import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 9202 */;
-import GuildStore from "GuildStore" /* 2073 */;
+// Module 9420 (handleNSFWGuildInvite)
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 9421 */;
+import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 9422 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9424 */;
+import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 9425 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import size from "module_2" /* 2 */;
 
 const GuildNSFWContentLevel = Constants.GuildNSFWContentLevel;
-let closure_5 = TinyBroncoConstants.TINY_BRONCO_NSFW_SERVER_LOCATION;
+let closure_4 = TinyBroncoConstants.TINY_BRONCO_NSFW_SERVER_LOCATION;
 const items = [, ];
 ({ EXPLICIT: arr[0], AGE_RESTRICTED: arr[1] } = GuildNSFWContentLevel);
 const set = new Set(items);
@@ -63,23 +62,21 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
   }
   if (has(nsfw_level)) {
     if (null == GuildStore.getGuild(id)) {
-      const obj7 = PlatformUtils;
-      const tmp11 = dependencyMap;
-      if (obj7.isIOS()) {
-        const obj = { guildId: id };
-        const obj5 = ModalActionCreatorsDefault;
-        obj5.pushLazy(asyncRequire(9198, tmp11.paths), obj);
+      const obj6 = PlatformUtils;
+      if (obj6.isIOS()) {
+        const tmp9Result = NsfwGateGuildAlert;
+        const result = tmp9Result.showNsfwGateGuildAlert(id);
         if (onCancel != null) {
           onCancel();
         }
         return true;
       } else {
-        const tmp10Result = RegionalFeatureConfigUtils;
-        if (tmp10Result.hasAgeGatedFeatures()) {
-          const tmp10Result3 = TinyBroncoExperiment;
-          if (tmp10Result3.isTinyBroncoEnabled(closure_5)) {
+        const tmp9Result4 = RegionalFeatureConfigUtils;
+        if (tmp9Result4.hasAgeGatedFeatures()) {
+          const tmp9Result5 = TinyBroncoExperiment;
+          if (tmp9Result5.isTinyBroncoEnabled(closure_4)) {
             c2 = false;
-            const obj2 = {
+            const obj = {
               onConfirm() {
                           c2 = true;
                           closure_1_0();
@@ -93,8 +90,8 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
                           }
                         }
             };
-            const tmp10Result4 = NsfwServerInviteWarningAlert;
-            const result = tmp10Result4.showNsfwServerInviteWarningAlert(obj2);
+            const tmp9Result6 = NsfwServerInviteWarningAlert;
+            const result1 = tmp9Result6.showNsfwServerInviteWarningAlert(obj);
             return true;
           } else {
             return false;

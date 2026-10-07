@@ -1,22 +1,22 @@
-// Module ID: 5028
-// Function ID: 5029
+// Module ID: 5081
+// Function ID: 5082
 // Name: SurveyStore
-// Dependencies: [4756, 2073, 4472, 4657, 1378, 1086, 1103, 5029, 1098, 510, 4424, 504, 585, 2]
+// Dependencies: [4780, 2074, 4509, 4699, 1377, 1085, 1102, 5082, 1097, 510, 4461, 504, 584, 2]
 
-// Module 5028 (SurveyStore)
+// Module 5081 (SurveyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import SurveyActionCreators from "SurveyActionCreators" /* 5029 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4756 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import surveyFetch from "surveyFetch" /* 5082 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_13, currentUser, guildId, guildsArray, memberCount;
@@ -37,7 +37,7 @@ function fetchSurveyIfNeeded() {
   }
   if (!tmp) {
     c18 = true;
-    obj = SurveyActionCreators;
+    obj = surveyFetch;
     obj.surveyFetch(closure_13.surveyOverride, true);
   }
 }
@@ -181,7 +181,7 @@ function setSurvey(survey) {
   const value = Storage.get(unpackModuleId);
   let tmp9 = null == value;
   if (!tmp9) {
-    obj = _modDef4424();
+    obj = _modDef4461();
     tmp9 = obj.diff(value, "day") < 7;
   }
   let tmp11 = null;
@@ -581,7 +581,7 @@ const obj3 = {
       if (null != id) {
         delete closure_13.hiddenSurveys[id];
       }
-      obj = SurveyActionCreators;
+      obj = surveyFetch;
       obj.surveyFetch(closure_13.surveyOverride, true);
     }
   },

@@ -1,113 +1,53 @@
 // Module ID: 6232
 // Function ID: 6233
-// Dependencies: [19, 21, 6043, 6066, 6050, 1644]
+// Dependencies: [6208, 6223, 6199]
+// Exports: useHoverGesture
 
 // Module 6232
-import Fragment from "Fragment" /* 21 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import react_mod from "react" /* 19 */;
+import ComposedGestureName from "ComposedGestureName" /* 6199 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6208 */;
+import _mod6223 from "module_6223" /* 6223 */;
 
-let nativeGestureRef;
+function transformHoverProps(arg0) {
+  const obj = maybeExtractNativeEvent;
+  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
+  arg0.fillInDefaultValues = fillInDefaultValues;
+  return arg0;
+}
+function diffCalculator(arg0, arg1) {
+  let num2;
+  let num = 0;
+  if (arg1) {
+    num = arg0.x - arg1.x;
+  }
+  const obj = { changeX: num, changeY: num2 };
+  num2 = 0;
+  if (arg1) {
+    num2 = arg0.y - arg1.y;
+  }
+  return obj;
+}
+diffCalculator.__closure = {};
+diffCalculator.__workletHash = 622993324586;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useHoverGestureTs1(current,previous){return{changeX:previous?current.x-previous.x:0,changeY:previous?current.y-previous.y:0};}" };
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__closure = {};
+fillInDefaultValues.__workletHash = 11545520927040;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useHoverGestureTs2(event){event.changeX=0;event.changeY=0;}" };
+const items = [["effect", "hoverEffect"]];
+const map = new Map(items);
+let closure_6 = {};
 
-let c3;
-let memo;
-let react = react_mod;
-({ useMemo: c3, memo } = react);
-react = react_mod;
-const jsx = Fragment.jsx;
-const memoResult = memo((nativeGestureRef) => {
-  let Provider;
-  let View;
-  let children;
-  let obj4;
-  let obj5;
-  let style;
-  nativeGestureRef = nativeGestureRef.nativeGestureRef;
-  const refreshControlGestureRef = nativeGestureRef.refreshControlGestureRef;
-  ({ style, children } = nativeGestureRef);
-  const merged = Object.assign(nativeGestureRef, Object.assign({ nativeGestureRef: 0, refreshControlGestureRef: 0, style: 0, children: 0 }));
-  let enableContentPanningGesture;
-  const obj = nativeGestureRef(enableContentPanningGesture[2]);
-  const bottomSheetInternal = obj.useBottomSheetInternal();
-  enableContentPanningGesture = bottomSheetInternal.enableContentPanningGesture;
-  const simultaneousHandlers = bottomSheetInternal.simultaneousHandlers;
-  const waitFor = bottomSheetInternal.waitFor;
-  const activeOffsetX = bottomSheetInternal.activeOffsetX;
-  const activeOffsetY = bottomSheetInternal.activeOffsetY;
-  const failOffsetX = bottomSheetInternal.failOffsetX;
-  const failOffsetY = bottomSheetInternal.failOffsetY;
-  const obj2 = nativeGestureRef(enableContentPanningGesture[2]);
-  const contentPanGestureHandler = obj2.useBottomSheetGestureHandlers().contentPanGestureHandler;
-  let items = [simultaneousHandlers, nativeGestureRef, refreshControlGestureRef];
-  const tmp3 = simultaneousHandlers(() => {
-    const items = [];
-    if (nativeGestureRef) {
-      items.push(tmp2);
-    }
-    if (refreshControlGestureRef) {
-      items.push(tmp4);
-    }
-    if (simultaneousHandlers) {
-      const _Array = Array;
-      const push = items.push;
-      if (Array.isArray(simultaneousHandlers)) {
-        const items1 = [];
-        HermesBuiltin.arraySpread(items1, simultaneousHandlers, 0);
-        HermesBuiltin.apply(push, items1, items);
-      } else {
-        push(simultaneousHandlers);
-      }
-    }
-    return items;
-  }, items);
-  let closure_10 = tmp3;
-  let items1 = [activeOffsetX, activeOffsetY, enableContentPanningGesture, failOffsetX, failOffsetY, tmp3, waitFor, , , , ];
-  ({ handleOnChange: arr2[7], handleOnEnd: arr2[8], handleOnFinalize: arr2[9], handleOnStart: arr2[10] } = contentPanGestureHandler);
-  const tmp4 = simultaneousHandlers(() => {
-    const Gesture = LegacyBaseButton.Gesture;
-    const PanResult = Gesture.Pan();
-    const enabledResult = PanResult.enabled(enableContentPanningGesture);
-    const result = enabledResult.shouldCancelWhenOutside(false);
-    const runOnJSResult = result.runOnJS(false);
-    const onStartResult = runOnJSResult.onStart(contentPanGestureHandler.handleOnStart);
-    const onChangeResult = onStartResult.onChange(contentPanGestureHandler.handleOnChange);
-    const onEndResult = onChangeResult.onEnd(contentPanGestureHandler.handleOnEnd);
-    const onFinalizeResult = onEndResult.onFinalize(contentPanGestureHandler.handleOnFinalize);
-    let result1 = onFinalizeResult;
-    if (waitFor) {
-      result1 = onFinalizeResult.requireExternalGestureToFail(tmp);
-    }
-    let result2 = result1;
-    if (closure_10) {
-      result2 = result1.simultaneousWithExternalGesture(tmp2);
-    }
-    let activeOffsetXResult = result2;
-    if (activeOffsetX) {
-      activeOffsetXResult = result2.activeOffsetX(tmp3);
-    }
-    let activeOffsetYResult = activeOffsetXResult;
-    if (activeOffsetY) {
-      activeOffsetYResult = activeOffsetXResult.activeOffsetY(tmp4);
-    }
-    let failOffsetXResult = activeOffsetYResult;
-    if (failOffsetX) {
-      failOffsetXResult = activeOffsetYResult.failOffsetX(tmp5);
-    }
-    let failOffsetYResult = failOffsetXResult;
-    if (failOffsetY) {
-      failOffsetYResult = failOffsetXResult.failOffsetY(tmp6);
-    }
-    return failOffsetYResult;
-  }, items1);
-  const obj3 = { gesture: tmp4, children: waitFor(Provider, obj4) };
-  const GestureDetector = nativeGestureRef(enableContentPanningGesture[3]).GestureDetector;
-  obj4 = { value: tmp4, children: waitFor(View, obj5) };
-  Provider = nativeGestureRef(enableContentPanningGesture[4]).BottomSheetDraggableContext.Provider;
-  obj5 = { style, children };
-  View = refreshControlGestureRef(enableContentPanningGesture[5]).View;
-  const merged1 = Object.assign(merged);
-  return waitFor(GestureDetector, obj3);
-});
-memoResult.displayName = "BottomSheetDraggableView";
-
-export default memoResult;
+export const useHoverGesture = function useHoverGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_6;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformHoverProps);
+  const obj2 = _mod6223;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Hover, clonedAndRemappedConfig);
+};

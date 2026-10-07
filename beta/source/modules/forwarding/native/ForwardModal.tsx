@@ -1,37 +1,37 @@
-// Module ID: 11050
-// Function ID: 11051
+// Module ID: 11308
+// Function ID: 11309
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7018, 7022, 7787, 2051, 5057, 7812, 11051, 10361, 21, 4837, 588, 558, 576, 1485, 10477, 504, 11049, 11048, 5939, 11052, 4531, 1127, 1376, 11054, 5206, 11055, 9394, 4848, 11056, 11057, 4982, 4802, 4803, 4530, 6611, 6796, 4776, 1370, 10479, 5438, 10480, 11060, 10494, 2]
+// Dependencies: [5, 32, 19, 17, 7103, 7108, 8011, 2051, 5110, 8037, 11309, 10592, 21, 4890, 587, 558, 576, 1484, 10711, 504, 11307, 11306, 6016, 11310, 4568, 1126, 1375, 11312, 5709, 11313, 7517, 4901, 11314, 11315, 5035, 4855, 4856, 4567, 6688, 6880, 4839, 1369, 10713, 5911, 10714, 11318, 10728, 2]
 
-// Module 11050 (ForwardModal)
+// Module 11308 (ForwardModal)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl7 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import LinkIcon from "LinkIcon" /* 4776 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
-import ChannelUtils from "ChannelUtils" /* 4982 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6796 */;
-import UserRowConstants from "UserRowConstants" /* 10361 */;
-import formatResults from "formatResults" /* 10477 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11048 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11049 */;
-import ForwardConstants from "ForwardConstants" /* 11051 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11052 */;
+import nativeDefault from "native" /* 587 */;
+import intl7 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import LinkIcon from "LinkIcon" /* 4839 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4856 */;
+import ChannelUtils from "ChannelUtils" /* 5035 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 6880 */;
+import UserRowConstants from "UserRowConstants" /* 10592 */;
+import formatResults from "formatResults" /* 10711 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11306 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11307 */;
+import ForwardConstants from "ForwardConstants" /* 11309 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11310 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7018 */;
-import ConversationsStore from "ConversationsStore" /* 7022 */;
-import ICYMIStore_mod from "ICYMIStore" /* 7787 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7103 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7108 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8011 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5057 */;
-import MessagePreviewStore_mod from "MessagePreviewStore" /* 7812 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import MessagePreviewStore_mod from "MessagePreviewStore" /* 8037 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   channel_id(id.useState(false), 2);
   const tmp9 = channel_id;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [trackForwardEditSearchOnce, ICYMIStore, MessagePreviewStore, stateFromStores1, stateFromStores];
+    const items1 = [trackForwardEditSearchOnce, ICYMIStore, MessagePreviewStore, stateFromStores, stateFromStores1];
     cResult[5] = items1;
     tmp11 = items1;
   } else {
@@ -204,7 +204,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
           message = ICYMIStore.getMessage(tmp3);
         }
         if (message == null) {
-          message = ConversationsStore.getMessage(tmp2, tmp3);
+          message = ChannelConversationsStore.getMessage(tmp2, tmp3);
         }
         if (message == null) {
           message = ConversationPreviewStore.getMessage(tmp3);
@@ -271,7 +271,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   [tmp7, c7] = height(channel_id.useState(false), 2);
   const tmp6 = height(channel_id.useState(false), 2);
   let obj2 = message(source[19]);
-  const items1 = [trackForwardAddRecipientOnce, stateFromStores1, trackForwardEditSearchOnce, stateFromStores, c7];
+  const items1 = [trackForwardAddRecipientOnce, stateFromStores1, trackForwardEditSearchOnce, c7, stateFromStores];
   const items2 = [channel_id, id, source, message];
   stateFromStores = obj2.useStateFromStores(items1, () => {
     if ("checkpoint" !== source) {
@@ -284,7 +284,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         message = ICYMIStore.getMessage(tmp3);
       }
       if (message == null) {
-        message = ConversationsStore.getMessage(tmp2, tmp3);
+        message = ChannelConversationsStore.getMessage(tmp2, tmp3);
       }
       if (message == null) {
         message = ConversationPreviewStore.getMessage(tmp3);

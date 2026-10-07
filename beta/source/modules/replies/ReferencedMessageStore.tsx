@@ -1,20 +1,20 @@
-// Module ID: 7017
-// Function ID: 7018
+// Module ID: 7102
+// Function ID: 7103
 // Name: ReferencedMessageStore
-// Dependencies: [32, 7018, 7022, 2051, 5057, 1086, 1445, 5059, 7024, 504, 585, 2]
+// Dependencies: [32, 7103, 7108, 2051, 5110, 1085, 1444, 5112, 7109, 504, 584, 2]
 
-// Module 7017 (ReferencedMessageStore)
+// Module 7102 (ReferencedMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import LRUCacheDefault from "LRUCache" /* 1445 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5059 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7024 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import LRUCacheDefault from "LRUCache" /* 1444 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7018 */;
-import ConversationsStore from "ConversationsStore" /* 7022 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7103 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7108 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5057 */;
-import Constants from "Constants" /* 1086 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -57,7 +57,7 @@ function processMessage(message) {
       } else {
         message = MessageStore.getMessage(message_reference.channel_id, message_id);
         if (message == null) {
-          message = ConversationsStore.getMessage(message_reference.channel_id, message_id);
+          message = ChannelConversationsStore.getMessage(message_reference.channel_id, message_id);
         }
         if (message == null) {
           message = ConversationPreviewStore.getMessage(message_id);
@@ -285,7 +285,7 @@ merged[0] = map;
 const Store = get_initializedDefault.Store;
 class ReferencedMessageStore extends Store {
   initialize() {
-    this.waitFor(MessageStore, ChannelStore, ConversationsStore, ConversationPreviewStore);
+    this.waitFor(MessageStore, ChannelStore, ChannelConversationsStore, ConversationPreviewStore);
   }
   getMessageByReference(messageReference) {
     let value;
@@ -325,15 +325,15 @@ let obj3 = {
   LOAD_MESSAGES_SUCCESS: handleLoadMessages,
   LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
   SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
-  INTELLIGENCE_SEARCH_FETCH_SUCCESS: function handleIntelligenceSearchFetchSuccess(messages) {
+  SMART_SEARCH_FETCH_SUCCESS: function handleSmartSearchFetchSuccess(messages) {
     return anyChanged(messages.messages, (arg0) => processMessage(arg0));
   },
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
-  CONVERSATION_FETCH_SUCCESS: function handleConversationFetchSuccess(messages) {
+  CONVERSATION_MESSAGES_FETCH_SUCCESS: function handleConversationMessagesFetchSuccess(messages) {
     messages = messages.messages;
     return anyChanged(messages.concat(messages.messageReferences), (arg0) => processMessage(arg0));
   },
-  CONVERSATIONS_FETCH_SUCCESS: function handleConversationsFetchSuccess(rawConversations) {
+  CHANNEL_CONVERSATIONS_FETCH_SUCCESS: function handleChannelConversationsFetchSuccess(rawConversations) {
     return anyChanged(rawConversations.rawConversations, (messages) => {
       messages = messages.messages;
       const tmp = anyChanged;

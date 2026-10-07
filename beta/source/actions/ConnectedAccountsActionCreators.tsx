@@ -1,17 +1,19 @@
-// Module ID: 5719
-// Function ID: 5720
+// Module ID: 6677
+// Function ID: 6678
 // Name: ConnectedAccountsActionCreators
-// Dependencies: [5, 5594, 1086, 3, 1283, 585, 1253, 5720, 5030, 1261, 2]
+// Dependencies: [5, 5440, 1085, 3, 1282, 5565, 1252, 6678, 5566, 5083, 1260, 584, 2]
 
-// Module 5719 (ConnectedAccountsActionCreators)
+// Module 6677 (ConnectedAccountsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
+import fetchConnectedAccounts from "fetchConnectedAccounts" /* 5565 */;
+import postConnectionCallback from "postConnectionCallback" /* 5566 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
-import Constants from "Constants" /* 1086 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,39 +23,12 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-function callback(arg0, arg1) {
-  let obj;
-  let obj3;
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  const HTTP = HTTPUtils.HTTP;
-  const request = { url: metroRequire.CONNECTIONS_CALLBACK(arg0), body: obj, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
-  const post = HTTP.post;
-  obj = { insecure: flag, friend_sync: metroImportDefault.has(arg0) };
-  const merged = Object.assign(arg1);
-  obj3 = HTTPUtils;
-  return post(request);
-}
 let _asyncToGenerator = _asyncToGenerator_mod;
 ({ AbortCodes: hasOwnProperty, Endpoints: metroRequire, FRIEND_SYNC_PLATFORM_TYPES: metroImportDefault, AnalyticEvents: metroImportAll } = Constants);
 let tmp3 = new LoggerDefault("ConnectedAccounts");
 let closure_9 = tmp3;
 let obj = {
-  fetch() {
-    const HTTP = HTTPUtils.HTTP;
-    let obj = { url: metroRequire.CONNECTIONS, oldFormErrors: true, rejectWithError: true };
-    const value = HTTP.get(obj);
-    return value.then((accounts) => {
-      const obj = DispatcherDefault;
-      const obj2 = { type: "USER_CONNECTIONS_UPDATE", local: true, accounts: accounts.body };
-      return obj.dispatch(obj2);
-    }, () => {
-      const obj = DispatcherDefault;
-      return obj.dispatch({ type: "USER_CONNECTIONS_UPDATE", local: true, accounts: [] });
-    });
-  },
+  fetch: fetchConnectedAccounts.fetchConnectedAccounts,
   authorize(arg0) {
     let _location;
     let closure_5;
@@ -116,7 +91,7 @@ let obj = {
       return _var;
     })();
   },
-  callback,
+  callback: postConnectionCallback.postConnectionCallback,
   connect(arg0, arg1, name, location, friend_sync) {
     let obj;
     let obj2;
@@ -166,8 +141,16 @@ let obj = {
     return this.update(type, id, obj);
   },
   setShowActivity(type, id, show_activity) {
-    const obj = { show_activity };
-    return this.update(type, id, obj);
+    const platformType = type;
+    const showActivity = show_activity;
+    let obj = { show_activity };
+    const updateResult = this.update(type, id, obj);
+    return updateResult.then((result) => {
+      const obj = DispatcherDefault;
+      const obj2 = { type: "USER_CONNECTION_UPDATE", platformType, id, showActivity };
+      obj.dispatch(obj2);
+      return result;
+    });
   },
   update(arg0, arg1, body) {
     let obj;
@@ -204,7 +187,7 @@ let obj = {
       if (!ok.ok) {
         const obj3 = { type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR", integrationId: tmp3, error: message };
         message = undefined;
-        const dispatch = tmp(585).dispatch;
+        const dispatch = tmp(584).dispatch;
         DispatcherDefault;
         if (!ok.hasErr) {
           message = ok.body.message;
@@ -266,7 +249,7 @@ let obj = {
             tmp = closure_2;
             if (tmp.body.code === constants.CONNECTION_REVOKED) {
               const obj7 = { type: "USER_CONNECTION_UPDATE", platformType: closure_129_0, id: closure_129_1, revoked: true };
-              const obj5 = tmp(closure_2[5]);
+              const obj5 = tmp(closure_2[11]);
               obj5.dispatch(obj7);
             }
             throw tmp;
@@ -281,7 +264,7 @@ let obj = {
           } else {
             access_token = value.body.access_token;
             const obj9 = { type: "USER_CONNECTION_UPDATE", platformType: closure_129_0, id: closure_129_1, accessToken: access_token };
-            const obj = tmp(closure_2[5]);
+            const obj = tmp(closure_2[11]);
             obj.dispatch(obj9);
             c3 = 0;
             constants = 3;
@@ -318,16 +301,20 @@ let obj = {
     _asyncToGenerator = body;
     let closure_4 = arg4;
     return (async () => {
+      let tmp6Result;
       let v3;
       if (null != closure_1) {
         const obj3 = c0(code[7]);
-        const callbackParamsFromURL = obj3.getCallbackParamsFromURL(tmp22);
+        const callbackParamsFromURL = obj3.getCallbackParamsFromURL(tmp21);
         const error = callbackParamsFromURL.error;
+        const tmp6 = c0;
+        const tmp7 = code;
         if (null == error) {
           const obj5 = { code, state, two_way_link_code: tmp9, token_redirect_uri };
           let c1 = 1;
           c0 = 1;
-          const obj6 = { value: callback(closure_0, obj5), done: false };
+          const obj6 = { value: tmp6Result.postConnectionCallback(closure_0, obj5), done: false };
+          tmp6Result = tmp6(tmp7[8]);
           return obj6;
         } else {
           const obj7 = { error, errorDescription: tmp10 };

@@ -1,21 +1,21 @@
-// Module ID: 7878
-// Function ID: 7879
+// Module ID: 8099
+// Function ID: 8100
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 7864, 7867, 21, 3, 4837, 588, 558, 576, 4694, 5049, 7870, 4528, 1370, 7750, 5890, 2]
+// Dependencies: [32, 19, 17, 8085, 8088, 21, 3, 4890, 587, 558, 576, 4736, 5102, 8091, 4565, 1369, 7973, 5968, 2]
 
-// Module 7878 (AgeVerificationWebViewScreen)
+// Module 8099 (AgeVerificationWebViewScreen)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 7864 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7870 */;
+import nativeDefault from "native" /* 587 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 8085 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7867 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 8088 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const AgeVerificationUtils = tmp(5049);
+const AgeVerificationUtils = tmp(5102);
 let react = react_mod;
 const View = react_native.View;
 let closure_6 = AgeVerificationConstants.AGE_VERIFICATION_MODAL_KEY;

@@ -1,15 +1,15 @@
-// Module ID: 9868
-// Function ID: 9869
+// Module ID: 10097
+// Function ID: 10098
 // Name: GIFPickerSearchSuggestions
-// Dependencies: [19, 17, 9860, 21, 4837, 588, 558, 576, 504, 1127, 4833, 5282, 2]
+// Dependencies: [19, 17, 10089, 21, 4890, 587, 558, 576, 504, 1126, 4886, 5594, 2]
 
-// Module 9868 (GIFPickerSearchSuggestions)
+// Module 10097 (GIFPickerSearchSuggestions)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 9860 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10089 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,8 +63,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     const _Symbol = Symbol;
     ({ footerSuggestionsContainer, footerSuggestionsTitle } = tmp4);
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(onClickSuggestion(1127).t["3JGJo2"]);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(onClickSuggestion(1126).t["3JGJo2"]);
       cResult[2] = stringResult;
       tmp8 = stringResult;
     } else {
@@ -72,7 +72,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     }
     if (cResult[3] !== tmp4.footerSuggestionsTitle) {
       const obj2 = { style: footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: tmp8 };
-      const tmp12 = closure_5(onClickSuggestion(4833).Text, obj2);
+      const tmp12 = closure_5(onClickSuggestion(4886).Text, obj2);
       cResult[3] = tmp4.footerSuggestionsTitle;
       cResult[4] = tmp12;
       tmp10 = tmp12;
@@ -164,9 +164,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
     const obj2 = { style: tmp.footerSuggestionsContainer, children: items1 };
-    const obj3 = { style: tmp.footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: intl.string(onClickSuggestion(1127).t["3JGJo2"]) };
-    const Text = tmp2(4833).Text;
-    intl = tmp2(1127).intl;
+    const obj3 = { style: tmp.footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: intl.string(onClickSuggestion(1126).t["3JGJo2"]) };
+    const Text = tmp2(4886).Text;
+    intl = tmp2(1126).intl;
     items1 = [closure_5(Text, obj3), ];
     const obj4 = {
       style: tmp.suggestionsContainer,

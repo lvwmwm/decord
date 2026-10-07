@@ -1,15 +1,15 @@
-// Module ID: 14667
-// Function ID: 14668
+// Module ID: 14952
+// Function ID: 14953
 // Name: VideoQuestModalCloseButton
-// Dependencies: [21, 558, 576, 588, 1127, 5940, 5436, 2]
+// Dependencies: [21, 558, 576, 587, 1126, 6017, 5909, 2]
 
-// Module 14667 (VideoQuestModalCloseButton)
+// Module 14952 (VideoQuestModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Pressables from "Pressables" /* 5436 */;
-import XSmallIcon from "XSmallIcon" /* 5940 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Pressables from "Pressables" /* 5909 */;
+import XSmallIcon from "XSmallIcon" /* 6017 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     iconColor = nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.cpT0Cq);
     cResult[0] = stringResult;
     first = stringResult;

@@ -1,10 +1,10 @@
-// Module ID: 6496
-// Function ID: 6497
+// Module ID: 6571
+// Function ID: 6572
 // Name: ReanimatedHelperTypes
 // Dependencies: [2]
 // Exports: createFakeSharedValue
 
-// Module 6496 (ReanimatedHelperTypes)
+// Module 6571 (ReanimatedHelperTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/reanimated/ReanimatedHelperTypes.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 7630
-// Function ID: 7631
+// Module ID: 7852
+// Function ID: 7853
 // Name: UserActionCreators
-// Dependencies: [5, 1392, 1378, 1086, 1087, 3, 1283, 585, 5030, 1347, 38, 4737, 2]
+// Dependencies: [5, 1391, 1377, 1085, 1086, 3, 1282, 584, 5083, 1346, 38, 5312, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 7630 (UserActionCreators)
+// Module 7852 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import RouteConstants from "RouteConstants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AnalyticsSchema from "AnalyticsSchema" /* 1347 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import RouteConstants from "RouteConstants" /* 1086 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1346 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1392 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserRecord from "UserRecord" /* 1391 */;
+import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ let obj = function _fetchProfile() {
               closure_12 = undefined;
               join_request_id = 1;
               signal = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === join_request_id) {
             if (arg0 === 1) {

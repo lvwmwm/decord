@@ -1,18 +1,18 @@
-// Module ID: 12751
-// Function ID: 12752
+// Module ID: 13015
+// Function ID: 13016
 // Name: AvatarGrid
-// Dependencies: [19, 17, 4826, 4877, 21, 4837, 588, 558, 576, 504, 7697, 1189, 2]
+// Dependencies: [19, 17, 4879, 4930, 21, 4890, 587, 558, 576, 504, 7919, 1188, 2]
 
-// Module 12751 (AvatarGrid)
+// Module 13015 (AvatarGrid)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -114,7 +114,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   }
                 }
                 tmp29[0] = tmp21;
-                const Avatar2 = tmp(1189).Avatar;
+                const Avatar2 = tmp(1188).Avatar;
                 const merged = Object.assign(tmp14);
                 const tmp33 = closure_5(Avatar2, tmp29);
                 cResult[15] = tmp14;
@@ -124,7 +124,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               }
             }
           }
-          const tmpResult4 = user(7697);
+          const tmpResult4 = user(7919);
           class E {
             constructor() {
               return useReducedMotion.useReducedMotion;
@@ -151,7 +151,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               return useReducedMotion.useReducedMotion;
             }
           }
-          const Avatar = tmp(1189).Avatar;
+          const Avatar = tmp(1188).Avatar;
           const merged1 = Object.assign(tmp14);
           const tmp20 = closure_5(Avatar, obj2);
           cResult[18] = guildId;
@@ -198,11 +198,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   if (showStatus) {
     tmp6 = stateFromStores;
   }
-  const Avatar = tmp2(1189).Avatar;
+  const Avatar = tmp2(1188).Avatar;
   const tmp7 = closure_5;
   if (undefined !== pendingAvatarSrc) {
     const obj4 = { source: tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1) };
-    tmp2Result = user(7697);
+    tmp2Result = user(7919);
     const merged = Object.assign(obj3);
     obj5 = obj4;
   } else {

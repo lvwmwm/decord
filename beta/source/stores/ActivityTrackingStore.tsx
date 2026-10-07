@@ -1,23 +1,23 @@
-// Module ID: 13289
-// Function ID: 13290
+// Module ID: 13554
+// Function ID: 13555
 // Name: ActivityTrackingStore
-// Dependencies: [2006, 1232, 502, 2023, 6818, 4860, 2102, 1086, 1103, 510, 6820, 10878, 2046, 4966, 504, 585, 2]
+// Dependencies: [2006, 1231, 502, 2024, 6902, 4913, 2103, 1085, 1102, 510, 6904, 11133, 2046, 5019, 504, 584, 2]
 
-// Module 13289 (ActivityTrackingStore)
+// Module 13554 (ActivityTrackingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4966 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 10878 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 5019 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11133 */;
 import RunningGameStore from "RunningGameStore" /* 2006 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DetectableGameStore from "DetectableGameStore" /* 2023 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 6818 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import DetectableGameStore from "DetectableGameStore" /* 2024 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 6902 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

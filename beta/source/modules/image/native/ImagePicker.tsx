@@ -1,17 +1,17 @@
-// Module ID: 5463
-// Function ID: 5464
+// Module ID: 7285
+// Function ID: 7286
 // Name: ImagePicker
-// Dependencies: [1194, 1097, 1370, 5464, 5465, 588, 5467, 1127, 2]
+// Dependencies: [1193, 1096, 1369, 7286, 7287, 587, 7289, 1126, 2]
 
-// Module 5463 (ImagePicker)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
-import intl7 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 5464 */;
-import react_native from "react-native" /* 5465 */;
-import react_nativeDefault from "react-native" /* 5467 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
+// Module 7285 (ImagePicker)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
+import intl7 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 7286 */;
+import react_native from "react-native" /* 7287 */;
+import react_nativeDefault from "react-native" /* 7289 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
 import size_mod from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;

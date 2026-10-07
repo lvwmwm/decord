@@ -1,11 +1,11 @@
-// Module ID: 15343
-// Function ID: 15344
+// Module ID: 15634
+// Function ID: 15635
 // Name: useDesignSystemsSettingPredicate
-// Dependencies: [558, 14366, 10484, 2]
+// Dependencies: [558, 14650, 10718, 2]
 
-// Module 15343 (useDesignSystemsSettingPredicate)
-import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 10484 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14366 */;
+// Module 15634 (useDesignSystemsSettingPredicate)
+import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 10718 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

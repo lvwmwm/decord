@@ -1,16 +1,16 @@
-// Module ID: 11948
-// Function ID: 11949
+// Module ID: 12201
+// Function ID: 12202
 // Name: useDeactivateWarningText
-// Dependencies: [19, 4756, 2105, 2073, 558, 576, 504, 6549, 4729, 1127, 2522, 2]
+// Dependencies: [19, 4780, 2106, 2074, 558, 576, 504, 6622, 4771, 1126, 2525, 2]
 
-// Module 11948 (useDeactivateWarningText)
-import _modDef2522 from "module_2522" /* 2522 */;
-import Powerups from "Powerups" /* 4729 */;
-import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 6549 */;
+// Module 12201 (useDeactivateWarningText)
+import _modDef2525 from "module_2525" /* 2525 */;
+import Powerups from "Powerups" /* 4771 */;
+import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 6622 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4756 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => {
           tmp3 = closure_5;
           tmp4 = closure_0;
           sortedRoles = closure_5.getSortedRoles(closure_0);
-          num = sortedRoles.reduce(() => { /* body not rendered: F140719 */ }, 0);
+          num = sortedRoles.reduce(() => { /* body not rendered: F142346 */ }, 0);
         }
       }
       return num;
@@ -224,24 +224,24 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => {
       let formatToPlainStringResult;
       let tmp16;
       if (stateFromStores2 > 0) {
-        const intl5 = tmp2(1127).intl;
+        const intl5 = tmp2(1126).intl;
         const obj2 = { perk: skuId.title, memberCount: tmp15 };
-        formatToPlainStringResult = intl5.formatToPlainString(_modDef2522["4jSvr1"], obj2);
+        formatToPlainStringResult = intl5.formatToPlainString(_modDef2525["4jSvr1"], obj2);
         tmp16 = importDefault;
       } else {
-        const intl4 = tmp2(1127).intl;
+        const intl4 = tmp2(1126).intl;
         tmp16 = importDefault;
         const obj3 = { perk: skuId.title };
-        formatToPlainStringResult = intl4.formatToPlainString(_modDef2522.cavtEo, obj3);
+        formatToPlainStringResult = intl4.formatToPlainString(_modDef2525.cavtEo, obj3);
       }
       tmp8 = tmp16;
       formatToPlainStringResult1 = formatToPlainStringResult;
     } else if (Powerups.VANITY_URL_POWERUP_SKU_ID === skuId) {
       let stringResult;
       let tmp14;
-      const intl3 = tmp2(1127).intl;
+      const intl3 = tmp2(1126).intl;
       const string = intl3.string;
-      const tmp12 = _modDef2522;
+      const tmp12 = _modDef2525;
       if (stateFromStores1) {
         stringResult = string(tmp12.hN75yb);
         tmp14 = tmp11;
@@ -256,11 +256,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => {
         if (Powerups.GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
           if (Powerups.GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
             if (Powerups.GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
-              const intl = tmp2(1127).intl;
+              const intl = tmp2(1126).intl;
               const formatToPlainString = intl.formatToPlainString;
               const obj = { perk: skuId.title, memberCount: num };
               num = stateFromStores;
-              const v4jSvr1 = _modDef2522["4jSvr1"];
+              const v4jSvr1 = _modDef2525["4jSvr1"];
               const tmp4 = importDefault;
               if (stateFromStores == null) {
                 num = 0;
@@ -271,20 +271,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => {
           }
         }
       }
-      const intl2 = tmp2(1127).intl;
-      formatToPlainStringResult1 = intl2.string(_modDef2522.Vf2ZcR);
+      const intl2 = tmp2(1126).intl;
+      formatToPlainStringResult1 = intl2.string(_modDef2525.Vf2ZcR);
       tmp8 = importDefault;
     }
     const items = [{ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID }];
     let tmp19 = stateFromStores1;
     ({ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID });
     if (tmp19) {
-      tmp19 = tmp.skuId === tmp2(4729).GUILD_POWERUP_LEVEL_3_SKU_ID;
+      tmp19 = tmp.skuId === tmp2(4771).GUILD_POWERUP_LEVEL_3_SKU_ID;
     }
     if (tmp19) {
       const push = items.push;
-      const obj5 = { text: intl6.string(tmp8(2522).M4XL5n), critical: true };
-      intl6 = tmp2(1127).intl;
+      const obj5 = { text: intl6.string(tmp8(2525).M4XL5n), critical: true };
+      intl6 = tmp2(1126).intl;
       push(obj5);
     }
     return items;

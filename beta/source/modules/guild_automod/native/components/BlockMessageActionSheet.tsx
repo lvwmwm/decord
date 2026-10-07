@@ -1,13 +1,13 @@
-// Module ID: 17338
-// Function ID: 17339
+// Module ID: 17707
+// Function ID: 17708
 // Name: BlockMessageActionSheet
-// Dependencies: [32, 19, 11216, 21, 558, 576, 17316, 4801, 6571, 4833, 1127, 6507, 5282, 8367, 6624, 2]
+// Dependencies: [32, 19, 11474, 21, 558, 576, 17685, 4854, 6644, 4886, 1126, 6580, 5594, 8567, 6701, 2]
 
-// Module 17338 (BlockMessageActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+// Module 17707 (BlockMessageActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11216 */;
+import Constants from "Constants" /* 11474 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

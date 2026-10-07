@@ -1,16 +1,16 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 7815
+// Function ID: 7816
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 4826, 570, 1260, 1482, 4685, 558, 576, 504, 6976, 2]
+// Dependencies: [32, 5, 19, 4879, 570, 1259, 1481, 4727, 558, 576, 504, 7063, 2]
 // Exports: maybeFetchColors
 
-// Module 7593 (useAvatarColor)
+// Module 7815 (useAvatarColor)
 import react2 from "react" /* 576 */;
-import _modDef6976 from "module_6976" /* 6976 */;
+import _modDef7063 from "module_7063" /* 7063 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

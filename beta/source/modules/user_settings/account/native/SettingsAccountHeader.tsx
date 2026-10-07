@@ -1,25 +1,25 @@
-// Module ID: 14232
-// Function ID: 14233
+// Module ID: 14496
+// Function ID: 14497
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4482, 1378, 1086, 7851, 21, 4837, 588, 558, 576, 6801, 14233, 1127, 504, 6419, 5930, 5916, 5282, 2]
+// Dependencies: [19, 17, 4519, 1377, 1085, 8075, 21, 4890, 587, 558, 576, 6885, 14497, 1126, 504, 6494, 6007, 5993, 5594, 2]
 
-// Module 14232 (SettingsAccountHeader)
+// Module 14496 (SettingsAccountHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5930 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
-import openUserSettings from "openUserSettings" /* 6801 */;
-import Constants2 from "Constants" /* 7851 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14233 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6007 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6494 */;
+import openUserSettings from "openUserSettings" /* 6885 */;
+import Constants2 from "Constants" /* 8075 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14497 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let c10;
 let c9;
 let obj2;
 let tmp;
-const intl = tmp(1127);
+const intl = tmp(1126);
 const View = react_native.View;
 const AnalyticsSections = Constants.AnalyticsSections;
 const SafetySettingsNoticeType = Constants2.SafetySettingsNoticeType;
@@ -164,7 +164,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         ({ title: obj5.label, title: obj5.accessibilityLabel } = tmp9);
         const obj2 = { onPress: tmp15, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj3), start: true, end: true };
-        const TableRow = tmp(5916).TableRow;
+        const TableRow = tmp(5993).TableRow;
         obj3 = { text: null, accessibilityLabel: null, onPress: tmp15 };
         ({ button: obj6.text, button: obj6.accessibilityLabel } = tmp9);
         tmp19 = React4(TableRow, obj2);
@@ -235,7 +235,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (null != bannerText) {
       ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
       const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj10), start: true, end: true };
-      const TableRow = tmp2(5916).TableRow;
+      const TableRow = tmp2(5993).TableRow;
       obj10 = { text: null, accessibilityLabel: null, onPress: callback };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       tmp14 = React4(TableRow, obj9);

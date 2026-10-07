@@ -1,13 +1,13 @@
-// Module ID: 4691
-// Function ID: 4692
+// Module ID: 4733
+// Function ID: 4734
 // Name: GuildThemePresets
-// Dependencies: [1097, 684, 4692, 2]
+// Dependencies: [1096, 683, 4734, 2]
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getGuildThemePresetAppearance, getGuildThemeToneRange, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSaturationPinnedColor, getSingleColorGuildThemeGradientColors, getThemeAdjustedToneColor, getToneAdjustedColor
 
-// Module 4691 (GuildThemePresets)
-import _modDef684 from "module_684" /* 684 */;
-import Constants from "Constants" /* 1097 */;
-import CustomThemesRandomUtils from "CustomThemesRandomUtils" /* 4692 */;
+// Module 4733 (GuildThemePresets)
+import _modDef683 from "module_683" /* 683 */;
+import Constants from "Constants" /* 1096 */;
+import CustomThemesRandomUtils from "CustomThemesRandomUtils" /* 4734 */;
 import size from "module_2" /* 2 */;
 
 let items1;
@@ -128,7 +128,7 @@ export const getGuildThemePreset = function getGuildThemePreset(presetId) {
   return tmp;
 };
 export const getDefaultGuildThemePresetSettings = function getDefaultGuildThemePresetSettings() {
-  return { presetId: mapped[0].id, customUserThemeSettings: "r" };
+  return { presetId: mapped[0].id, customUserThemeSettings: "Array" };
 };
 export const getGuildThemePresetAppearance = function getGuildThemePresetAppearance(preset, stateFromStores) {
   return stateFromStores === ThemeTypes.LIGHT ? preset.lightAppearance : preset.darkAppearance;
@@ -143,10 +143,10 @@ export const getSingleColorGuildThemeGradientColors = function getSingleColorGui
   const tmp2 = cResult === ThemeTypes.LIGHT ? { minTone: 55, maxTone: 75 } : { minTone: 15, maxTone: 35 };
   const minTone = tmp2.minTone;
   const maxTone = tmp2.maxTone;
-  const obj = _modDef684(arg0);
+  const obj = _modDef683(arg0);
   const result = obj.set("hsl.l", (minTone + (Math.max(15, Math.min(75, 100 * obj.get("hsl.l"))) - 15) / 60 * (maxTone - minTone)) / 100);
   const hexResult = result.hex();
-  const obj3 = _modDef684(hexResult);
+  const obj3 = _modDef683(hexResult);
   let num = -0.2;
   const tmp = ThemeTypes;
   if (cResult === tmp.LIGHT) {
@@ -163,22 +163,22 @@ export const getRandomSingleColorGuildTheme = function getRandomSingleColorGuild
   const diff = CustomThemesRandomUtils.COLOR_PALETTE.length - 1;
   const tmp2 = COLOR_PALETTE[Math.floor(Math, Math.random(Math) * (diff + 1))];
   const obj = { color: result1.hex(), baseMix: Math.floor(Math.random() * 11) + 70 };
-  const obj2 = _modDef684(tmp2);
+  const obj2 = _modDef683(tmp2);
   const minResult = min(45, round(100 * obj2.get("hsl.l")));
-  const obj3 = _modDef684(tmp2);
+  const obj3 = _modDef683(tmp2);
   const result = obj3.set("hsl.l", Math.max(0.15, Math.min(0.75, minResult / 100)));
   const hexResult = result.hex();
-  const obj5 = _modDef684(hexResult);
+  const obj5 = _modDef683(hexResult);
   result1 = obj5.set("hsl.s", 0.4);
   return obj;
 };
 export const getSaturationPinnedColor = function getSaturationPinnedColor(arg0) {
-  const obj = _modDef684(arg0);
+  const obj = _modDef683(arg0);
   const result = obj.set("hsl.s", 0.4);
   return result.hex();
 };
 export const getToneAdjustedColor = function getToneAdjustedColor(arg0, arg1) {
-  const obj = _modDef684(arg0);
+  const obj = _modDef683(arg0);
   const result = obj.set("hsl.l", Math.max(0.15, Math.min(0.75, arg1 / 100)));
   return result.hex();
 };
@@ -189,12 +189,12 @@ export const getThemeAdjustedToneColor = function getThemeAdjustedToneColor(arg0
   const tmp = arg1 === ThemeTypes.LIGHT ? { minTone: 55, maxTone: 75 } : { minTone: 15, maxTone: 35 };
   const minTone = tmp.minTone;
   const maxTone = tmp.maxTone;
-  const obj = _modDef684(arg0);
+  const obj = _modDef683(arg0);
   const result = obj.set("hsl.l", (minTone + (Math.max(15, Math.min(75, 100 * obj.get("hsl.l"))) - 15) / 60 * (maxTone - minTone)) / 100);
   return result.hex();
 };
 export const getHueAdjustedColor = function getHueAdjustedColor(arg0, arg1) {
-  const obj = _modDef684(arg0);
+  const obj = _modDef683(arg0);
   const result = obj.set("hsl.h", arg1);
   return result.hex();
 };

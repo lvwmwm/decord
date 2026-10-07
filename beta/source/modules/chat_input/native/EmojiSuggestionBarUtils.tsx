@@ -1,18 +1,18 @@
-// Module ID: 11813
-// Function ID: 11814
+// Module ID: 12068
+// Function ID: 12069
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4826, 1086, 21, 1189, 558, 576, 4570, 5281, 4544, 4838, 504, 11778, 11814, 11815, 8611, 2]
-// Exports: getEmojiEntranceKey, sortEmojisForDisplay
+// Dependencies: [32, 19, 4879, 1085, 21, 1188, 558, 576, 4612, 5597, 4589, 4891, 504, 12034, 12069, 12070, 8818, 2]
+// Exports: getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay
 
-// Module 11813 (EmojiSuggestionBarUtils)
+// Module 12068 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import native from "native" /* 1189 */;
-import native2 from "native" /* 4544 */;
-import spring from "spring" /* 5281 */;
+import Constants from "Constants" /* 1085 */;
+import native from "native" /* 1188 */;
+import native2 from "native" /* 4589 */;
+import spring from "spring" /* 5597 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,13 +20,13 @@ const require = globalThis.__r;
 let dependencyMap, obj, replaceRangeResult, set, set2;
 
 let tmp;
-const ReanimatedRexport = tmp(4570);
-const timing = tmp(4838);
+const ReanimatedRexport = tmp(4612);
+const timing = tmp(4891);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
 const SUGGESTION_BAR_HEIGHT_TIMING = { duration: 250, easing: native.STANDARD_EASING };
-let closure_10 = { duration: 200, dampingRatio: 0.7 };
+let obj2 = { duration: 200, dampingRatio: 0.7 };
 const __initData = { code: "function EmojiSuggestionBarUtilsTsx1(){const{progress}=this.__closure;return{opacity:progress.get(),transform:[{scale:progress.get()}]};}" };
 const __initData2 = { code: "function EmojiSuggestionBarUtilsTsx2(){const{progress}=this.__closure;return{opacity:progress.get(),transform:[{scale:progress.get()}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -41,7 +41,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   index = index.index;
   const reducedMotion = index.reducedMotion;
   const children = index.children;
-  const obj2 = index(sharedValue[8]);
+  obj2 = index(sharedValue[8]);
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] === index) {
     if (cResult[1] === sharedValue) {
@@ -89,7 +89,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     const withDelay = ReanimatedRexport.withDelay;
     ReanimatedRexport;
     obj = spring;
-    const result = set(withDelay(num, obj.withSpring(1, closure_10)));
+    const result = set(withDelay(num, obj.withSpring(1, obj2)));
   };
   let items = [sharedValue, index, reducedMotion];
   cResult[0] = index;
@@ -116,9 +116,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     const withDelay = ReanimatedRexport.withDelay;
     ReanimatedRexport;
     obj = spring;
-    const result = set(withDelay(num, obj.withSpring(1, closure_10)));
+    const result = set(withDelay(num, obj.withSpring(1, obj2)));
   }, items);
-  const obj2 = index(sharedValue[8]);
+  obj2 = index(sharedValue[8]);
   const fn = function u() {
     let items;
     obj = { opacity: sharedValue.get(), transform: items };
@@ -141,7 +141,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
   let closure_3 = arg3;
   obj = require("react");
   const cResult = obj.c(7);
-  const obj2 = require("ReanimatedRexport");
+  obj2 = require("ReanimatedRexport");
   const sharedValue = obj2.useSharedValue(0);
   if (cResult[0] === cleanUp) {
     if (cResult[1] === arg2) {
@@ -265,7 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
   const cResult = obj.c(26);
   ({ channel, chatInputRef } = chatInputStateRef);
   chatInputStateRef = chatInputStateRef.chatInputStateRef;
-  let obj2 = queryStart;
+  obj2 = queryStart;
   const suppressed = chatInputStateRef.suppressed;
   const tmp4 = setDataImmediate(queryStart.useState(closure_8), 2);
   ({ focused, text, selectionStart, selectionEnd } = tmp4[0]);
@@ -334,7 +334,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
                         if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
                           const fn3 = function q(animated) {
                             obj = chatInputStateRef(setData[16]);
-                            const obj2 = { initialUpsellKey: animated.animated ? clear.ANIMATED_EMOJI : clear.GLOBAL_EMOJI };
+                            obj2 = { initialUpsellKey: animated.animated ? clear.ANIMATED_EMOJI : clear.GLOBAL_EMOJI };
                             const result = obj.handleShowUpsellAlert(obj2);
                           };
                           cResult[20] = fn3;
@@ -462,7 +462,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
   let focused = first.focused;
   ({ text, selectionStart, selectionEnd } = first);
   const tmp3 = tmp[1];
-  let obj2 = chatInputRef(setData[12]);
+  obj2 = chatInputRef(setData[12]);
   const items = [queryEnd];
   const stateFromStores = obj2.useStateFromStores(items, () => queryEnd.useReducedMotion);
   const tmp5 = chatInputStateRef(setData[13])(tmp3, 16);
@@ -507,13 +507,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
     }, items2),
     handlePressEmojiUnavailable: obj.useCallback((animated) => {
       obj = chatInputStateRef(setData[16]);
-      const obj2 = { initialUpsellKey: animated.animated ? clear.ANIMATED_EMOJI : clear.GLOBAL_EMOJI };
+      obj2 = { initialUpsellKey: animated.animated ? clear.ANIMATED_EMOJI : clear.GLOBAL_EMOJI };
       const result = obj.handleShowUpsellAlert(obj2);
     }, [])
   };
   items2 = [chatInputRef, chatInputStateRef, queryStart, queryEnd, clear, setDataImmediate];
   return obj4;
 });
+function getEmojiIdentity(id) {
+  let surrogates = id.id;
+  if (surrogates == null) {
+    surrogates = id.surrogates;
+  }
+  return surrogates;
+}
 let result = size.fileFinishedImporting("modules/chat_input/native/EmojiSuggestionBarUtils.tsx");
 
 export const MAX_SUGGESTIONS_LARGE = 12;
@@ -544,6 +551,7 @@ export const sortEmojisForDisplay = function sortEmojisForDisplay(unlockedEmojis
   HermesBuiltin.arraySpread(items, substr1.map((emoji) => ({ emoji, locked: true })), tmp2);
   return items;
 };
+export { getEmojiIdentity };
 export const getEmojiEntranceKey = function getEmojiEntranceKey(displayEmojis, index) {
   const mapped = displayEmojis.map((emoji) => {
     emoji = emoji.emoji;
@@ -561,6 +569,7 @@ export const getEmojiEntranceKey = function getEmojiEntranceKey(displayEmojis, i
   }
   return "" + joined + ":" + surrogates + ":" + index;
 };
+export const ITEM_ENTRANCE_SPRING_CONFIG = obj2;
 export const EmojiEntranceAnimation = tmp2;
 export const useSuggestionBarHeight = tmp3;
 export const useEmojiSuggestionBarState = tmp4;

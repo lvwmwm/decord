@@ -1,29 +1,27 @@
-// Module ID: 16752
-// Function ID: 16753
+// Module ID: 17108
+// Function ID: 17109
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 4826, 10167, 1086, 2048, 21, 4837, 588, 1370, 558, 576, 504, 10256, 10240, 16753, 7724, 4801, 6584, 6604, 10163, 8268, 5896, 4833, 10528, 1127, 5282, 6572, 2]
+// Dependencies: [19, 17, 4879, 10396, 1085, 2048, 21, 4890, 587, 558, 576, 504, 10485, 10469, 10486, 7946, 4854, 6657, 6681, 10392, 1369, 8464, 5974, 10487, 4886, 10766, 1126, 5594, 6645, 2]
 
-// Module 16752 (GiftingPromotionCoachmark)
+// Module 17108 (GiftingPromotionCoachmark)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6584 */;
-import usePreviousDefault from "usePrevious" /* 7724 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10163 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
+import usePreviousDefault from "usePrevious" /* 7946 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10392 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import PromotionsStore from "PromotionsStore" /* 10167 */;
-import Constants from "Constants" /* 1086 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import PromotionsStore from "PromotionsStore" /* 10396 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap, hideActionSheetResult, hideActionSheetResult1, importDefault, obj1, openGiftModalResult, tmp11, tmp3, tmp8, tmp9;
+let BottomSheet, dependencyMap, importDefault;
 
-let PX_4;
 let c9;
 let closure_12;
 let metroImportAll;
@@ -31,34 +29,24 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
-let obj5;
 let size;
-let tmp22;
+let tmp21;
 let unpackModuleId;
-const AnalyticsLocationDefault = tmp22(6604);
+const AnalyticsLocationDefault = tmp21(6681);
 let react = react_mod;
 const View = react_native.View;
 ({ AnalyticsSections: metroImportDefault, AnalyticsObjects: metroImportAll, AnalyticsPages: c9 } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, textContainer: obj3, text: { textAlign: "center" }, countdownBadge: obj4, countdownBadgeText: obj5, imageShared: size, imageWrapperAndroid: { overflow: "hidden" } };
+let obj = { container: obj2, textContainer: obj3, text: { textAlign: "center" }, countdownBadge: obj4, imageShared: size, imageWrapperAndroid: { overflow: "hidden" } };
 obj2 = { alignItems: "center", padding: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_24 };
-obj4 = { flexDirection: "row", alignSelf: "center", borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_24, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-let PlatformUtils = PlatformUtils_mod;
-PlatformUtils = PlatformUtils.isAndroid();
-const space = nativeDefault.space;
-obj5 = { lineHeight: PlatformUtils ? space.PX_12 : space.PX_16, paddingVertical: PX_4 };
-PlatformUtils = PlatformUtils_mod;
-PX_4 = undefined;
-if (PlatformUtils.isAndroid()) {
-  PX_4 = nativeDefault.space.PX_4;
-}
+obj4 = { alignSelf: "center", marginTop: nativeDefault.space.PX_24 };
 size = { height: 188, width: 335, borderRadius: nativeDefault.radii.sm };
 let closure_13 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let analyticsLocations;
   let closure_1;
   let closure_2;
@@ -74,19 +62,17 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp = markAsDismissed;
   let tmp2 = dependencyMap;
   let obj = markAsDismissed(576);
-  const cResult = obj.c(50);
+  const cResult = obj.c(49);
   ({ coachmarkComponent, markAsDismissed } = arg0);
   const tmp4 = closure_13();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [analyticsLocations];
-    class T {
-      constructor() {
-        return analyticsLocations.useReducedMotion;
-      }
-    }
+    const fn = function x() {
+      return analyticsLocations.useReducedMotion;
+    };
     cResult[0] = items;
-    cResult[1] = T;
-    tmp6 = T;
+    cResult[1] = fn;
+    tmp6 = fn;
     tmp5 = items;
   } else {
     [tmp5, tmp6] = cResult;
@@ -94,8 +80,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   let asset;
-  const useThemeAndReducedMotionAwareAssetUrl = tmp(10256).useThemeAndReducedMotionAwareAssetUrl;
-  tmp(10256);
+  const useThemeAndReducedMotionAwareAssetUrl = tmp(10485).useThemeAndReducedMotionAwareAssetUrl;
+  tmp(10485);
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
@@ -103,26 +89,22 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { location: "GiftingPromotionCoachmarkActionSheet" };
     cResult[2] = obj2;
-    class T {
-      constructor() {
-        return analyticsLocations.useReducedMotion;
-      }
-    }
+    tmp12 = obj2;
   } else {
     tmp12 = cResult[2];
   }
-  const GiftPromotionReminderExperiment = tmp(10240).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10469).GiftPromotionReminderExperiment;
   const enabled = GiftPromotionReminderExperiment.useConfig(tmp12).enabled;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [PromotionsStore];
-    class T {
+    class M {
       constructor() {
-        return analyticsLocations.useReducedMotion;
+        return giftPromotion.getGiftPromotion();
       }
     }
     cResult[3] = items1;
-    cResult[4] = tmp16;
-    tmp14 = tmp16;
+    cResult[4] = M;
+    tmp14 = M;
     tmp13 = items1;
   } else {
     tmp13 = cResult[3];
@@ -131,35 +113,35 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult5 = tmp(504);
   const stateFromStores1 = tmpResult5.useStateFromStores(tmp13, tmp14);
   let endDate;
-  const useTickingFormattedLimitedOfferTimeLeft = tmp(16753).useTickingFormattedLimitedOfferTimeLeft;
-  tmp(16753);
+  const useTickingFormattedLimitedOfferTimeLeft = tmp(10486).useTickingFormattedLimitedOfferTimeLeft;
+  tmp(10486);
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
   const tickingFormattedLimitedOfferTimeLeft = useTickingFormattedLimitedOfferTimeLeft(endDate);
-  importDefault = tmp21;
-  const tmp23 = usePreviousDefault(null != stateFromStores1);
-  dependencyMap = tmp23;
-  react = tmp24;
-  const tmp25 = usePreviousDefault(null != tickingFormattedLimitedOfferTimeLeft);
-  let closure_4 = tmp25;
-  if (cResult[5] === tmp23) {
-    if (cResult[6] === tmp25) {
+  importDefault = tmp20;
+  const tmp22 = usePreviousDefault(null != stateFromStores1);
+  dependencyMap = tmp22;
+  react = tmp23;
+  const tmp24 = usePreviousDefault(null != tickingFormattedLimitedOfferTimeLeft);
+  let closure_4 = tmp24;
+  if (cResult[5] === tmp22) {
+    if (cResult[6] === tmp24) {
       if (cResult[7] === null != stateFromStores1) {
         if (cResult[8] === null != tickingFormattedLimitedOfferTimeLeft) {
+          let tmp25;
           let tmp26;
-          let tmp27;
           if (cResult[9] === markAsDismissed) {
-            tmp26 = cResult[10];
-            tmp27 = cResult[11];
+            tmp25 = cResult[10];
+            tmp26 = cResult[11];
           }
-          const effect = react.useEffect(tmp26, tmp27);
-          class T {
+          const effect = react.useEffect(tmp25, tmp26);
+          class M {
             constructor() {
-              return analyticsLocations.useReducedMotion;
+              return giftPromotion.getGiftPromotion();
             }
           }
-          analyticsLocations = tmp30(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
+          analyticsLocations = tmp29(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
           if (cResult[12] === analyticsLocations) {
             if (null == coachmarkComponent) {
               return null;
@@ -171,9 +153,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                 }
                 cResult[15] = markAsDismissed;
-                class T {
+                class M {
                   constructor() {
-                    return analyticsLocations.useReducedMotion;
+                    return giftPromotion.getGiftPromotion();
                   }
                 }
                 cResult[16] = H;
@@ -191,23 +173,22 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                 }
               }
-              class T {
+              class M {
                 constructor() {
-                  return analyticsLocations.useReducedMotion;
+                  return giftPromotion.getGiftPromotion();
                 }
               }
               cResult[17] = themeAndReducedMotionAwareAssetUrl;
-              class F {
+              class D {
                 constructor() {
-                  obj = closure_1(closure_2[17]);
-                  hideActionSheetResult = obj.hideActionSheet();
-                  tmp2 = markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-                  obj2 = closure_0(closure_2[20]);
-                  obj1 = { analyticsLocation: null, analyticsLocations };
-                  obj5 = { page: AnalyticsPages.PREMUIM_UPSELL_GIFTING_PROMOTION, section: AnalyticsSections.FOOTER, object: AnalyticsObjects.BUTTON_CTA };
-                  obj1.analyticsLocation = obj5;
-                  openGiftModalResult = obj2.openGiftModal(obj1);
-                  return;
+                  let obj4;
+                  const obj = ActionSheetActionCreatorsDefault;
+                  obj.hideActionSheet();
+                  markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+                  const obj3 = { analyticsLocation: obj4, analyticsLocations };
+                  obj4 = { page: constants.PREMUIM_UPSELL_GIFTING_PROMOTION, section: metroImportDefault.FOOTER, object: metroImportAll.BUTTON_CTA };
+                  const obj2 = utils_openGiftModal;
+                  obj2.openGiftModal(obj3);
                 }
               }
               cResult[19] = tmp4.imageWrapperAndroid;
@@ -215,69 +196,55 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               cResult[21] = null != themeAndReducedMotionAwareAssetUrl;
             }
           }
-          class F {
+          class D {
             constructor() {
-              obj = closure_1(closure_2[17]);
-              hideActionSheetResult = obj.hideActionSheet();
-              tmp2 = markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-              obj2 = closure_0(closure_2[20]);
-              obj1 = { analyticsLocation: null, analyticsLocations };
-              obj5 = { page: AnalyticsPages.PREMUIM_UPSELL_GIFTING_PROMOTION, section: AnalyticsSections.FOOTER, object: AnalyticsObjects.BUTTON_CTA };
-              obj1.analyticsLocation = obj5;
-              openGiftModalResult = obj2.openGiftModal(obj1);
-              return;
+              let obj4;
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet();
+              markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+              const obj3 = { analyticsLocation: obj4, analyticsLocations };
+              obj4 = { page: constants.PREMUIM_UPSELL_GIFTING_PROMOTION, section: metroImportDefault.FOOTER, object: metroImportAll.BUTTON_CTA };
+              const obj2 = utils_openGiftModal;
+              obj2.openGiftModal(obj3);
             }
           }
           cResult[12] = analyticsLocations;
           cResult[13] = markAsDismissed;
-          cResult[14] = F;
+          cResult[14] = D;
         }
       }
     }
   }
-  class M {
+  class E {
     constructor() {
-      tmp = closure_2;
+      const tmp = closure_2;
       if (tmp) {
-        tmp2 = closure_1;
+        const tmp2 = closure_1;
         if (!tmp2) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          obj = closure_1(closure_2[17]);
-          hideActionSheetResult = obj.hideActionSheet();
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
         }
-        return;
       }
-      tmp6 = closure_4;
+      const tmp6 = closure_4 && !closure_3;
       if (tmp6) {
-        tmp7 = closure_3;
-        tmp6 = !closure_3;
+        const obj2 = ActionSheetActionCreatorsDefault;
+        obj2.hideActionSheet();
+        markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
       }
-      if (tmp6) {
-        tmp8 = closure_1;
-        tmp9 = closure_2;
-        obj2 = closure_1(closure_2[17]);
-        hideActionSheetResult1 = obj2.hideActionSheet();
-        tmp11 = markAsDismissed;
-        tmp12 = ContentDismissActionType;
-        tmp13 = markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
-      }
-      return;
     }
   }
-  const items2 = [tmp25, null != tickingFormattedLimitedOfferTimeLeft, null != stateFromStores1, tmp23, markAsDismissed];
-  cResult[5] = tmp23;
-  cResult[6] = tmp25;
+  const items2 = [tmp24, null != tickingFormattedLimitedOfferTimeLeft, null != stateFromStores1, tmp22, markAsDismissed];
+  cResult[5] = tmp22;
+  cResult[6] = tmp24;
   cResult[7] = null != stateFromStores1;
   cResult[8] = null != tickingFormattedLimitedOfferTimeLeft;
   cResult[9] = markAsDismissed;
-  cResult[10] = M;
+  cResult[10] = E;
   cResult[11] = items2;
-  tmp27 = items2;
-  tmp26 = M;
+  tmp26 = items2;
+  tmp25 = E;
 }) : ((arg0) => {
   let GiftIcon;
-  let Text;
   let closure_1;
   let closure_2;
   let closure_3;
@@ -288,11 +255,10 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items5;
   let items6;
   let markAsDismissed;
-  let obj14;
+  let obj13;
   let obj3;
   let obj5;
   let obj7;
-  let obj9;
   ({ coachmarkComponent, markAsDismissed } = arg0);
   importDefault = undefined;
   dependencyMap = undefined;
@@ -305,31 +271,31 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [analyticsLocations];
   const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
   let asset;
-  const useThemeAndReducedMotionAwareAssetUrl = markAsDismissed(10256).useThemeAndReducedMotionAwareAssetUrl;
-  markAsDismissed(10256);
+  const useThemeAndReducedMotionAwareAssetUrl = markAsDismissed(10485).useThemeAndReducedMotionAwareAssetUrl;
+  markAsDismissed(10485);
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
   const themeAndReducedMotionAwareAssetUrl = useThemeAndReducedMotionAwareAssetUrl(asset);
-  const GiftPromotionReminderExperiment = tmp2(10240).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp2(10469).GiftPromotionReminderExperiment;
   let enabled = GiftPromotionReminderExperiment.useConfig({ location: "GiftingPromotionCoachmarkActionSheet" }).enabled;
   const items1 = [PromotionsStore];
   const tmp2Result = tmp2(504);
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
   let endDate;
-  const useTickingFormattedLimitedOfferTimeLeft = tmp2(16753).useTickingFormattedLimitedOfferTimeLeft;
-  tmp2(16753);
+  const useTickingFormattedLimitedOfferTimeLeft = tmp2(10486).useTickingFormattedLimitedOfferTimeLeft;
+  tmp2(10486);
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
-  const str = useTickingFormattedLimitedOfferTimeLeft(endDate);
-  importDefault = tmp11;
-  const tmp13 = usePreviousDefault(null != stateFromStores1);
-  dependencyMap = tmp13;
-  react = tmp14;
-  const tmp15 = usePreviousDefault(null != str);
-  closure_4 = tmp15;
-  const items2 = [tmp15, null != str, tmp11, tmp13, markAsDismissed];
+  const tickingFormattedLimitedOfferTimeLeft = useTickingFormattedLimitedOfferTimeLeft(endDate);
+  importDefault = tmp12;
+  const tmp14 = usePreviousDefault(null != stateFromStores1);
+  dependencyMap = tmp14;
+  react = tmp15;
+  const tmp16 = usePreviousDefault(null != tickingFormattedLimitedOfferTimeLeft);
+  closure_4 = tmp16;
+  const items2 = [tmp16, null != tickingFormattedLimitedOfferTimeLeft, tmp12, tmp14, markAsDismissed];
   const effect = react.useEffect(() => {
     const tmp = closure_2;
     if (tmp) {
@@ -346,10 +312,10 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
     }
   }, items2);
-  const tmp17 = useAnalyticsLocationsDefault;
-  analyticsLocations = tmp17(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
+  const tmp18 = useAnalyticsLocationsDefault;
+  analyticsLocations = tmp18(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items3 = [analyticsLocations, markAsDismissed];
-  let tmp20Result2 = null;
+  let tmp21Result2 = null;
   if (null != coachmarkComponent) {
     let obj2 = {
       startExpanded: true,
@@ -359,53 +325,51 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       children: closure_12(closure_4, obj3)
     };
     obj3 = { style: tmp.container, children: items5 };
-    let tmp23 = null != themeAndReducedMotionAwareAssetUrl;
-    BottomSheet = tmp2(6572).BottomSheet;
-    if (tmp23) {
-      const tmp2Result4 = tmp2(1370);
+    let tmp24 = null != themeAndReducedMotionAwareAssetUrl;
+    BottomSheet = tmp2(6645).BottomSheet;
+    if (tmp24) {
+      const tmp2Result4 = tmp2(1369);
       if (tmp2Result4.isAndroid()) {
-        let tmp20Result;
+        let tmp21Result;
         if (!stateFromStores) {
-          let obj4 = { style: items4, children: closure_11(tmp2(8268).APNGPlayer, obj5) };
+          let obj4 = { style: items4, children: closure_11(tmp2(8464).APNGPlayer, obj5) };
           items4 = [, ];
           ({ imageShared: arr5[0], imageWrapperAndroid: arr5[1] } = tmp);
           obj5 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared, autoplay: true };
-          tmp20Result = tmp20(tmp22, obj4);
+          tmp21Result = tmp21(tmp23, obj4);
         }
-        tmp23 = tmp20Result;
+        tmp24 = tmp21Result;
       }
       const obj6 = { source: obj7, style: tmp.imageShared };
       obj7 = { uri: themeAndReducedMotionAwareAssetUrl };
-      tmp20Result = tmp20(tmp12(5896), obj6);
+      tmp21Result = tmp21(tmp13(5974), obj6);
     }
-    items5 = [tmp23, , , ];
+    items5 = [tmp24, , , ];
     if (enabled) {
-      enabled = null != str;
+      enabled = null != tickingFormattedLimitedOfferTimeLeft;
     }
     if (enabled) {
-      const obj8 = { style: tmp.countdownBadge, children: closure_11(Text, obj9) };
-      obj9 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.countdownBadgeText, children: str.toUpperCase() };
-      Text = tmp2(4833).Text;
-      enabled = tmp20(tmp22, obj8);
+      const obj8 = { text: tickingFormattedLimitedOfferTimeLeft, style: tmp.countdownBadge };
+      enabled = tmp21(tmp13(10487), obj8);
     }
     items5[1] = enabled;
-    const obj10 = { style: tmp.textContainer, children: items6 };
-    const obj11 = { style: tmp.text, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: coachmarkComponent.header };
-    items6 = [closure_11(tmp2(4833).Heading, obj11), ];
-    const obj12 = { style: tmp.text, variant: "text-md/normal", color: "text-default", children: coachmarkComponent.body };
-    items6[1] = closure_11(tmp2(4833).Text, obj12);
-    items5[2] = closure_12(closure_4, obj10);
-    const obj13 = { grow: true, icon: closure_11(GiftIcon, obj14), text: intl.string(tmp2(1127).t.Ve9Ge6), onPress: tmp18 };
-    const Button = tmp2(5282).Button;
-    obj14 = { size: "sm", color: nativeDefault.colors.WHITE };
-    GiftIcon = tmp2(10528).GiftIcon;
-    intl = tmp2(1127).intl;
-    items5[3] = closure_11(Button, obj13);
-    tmp20Result2 = tmp20(BottomSheet, obj2);
+    const obj10 = { style: tmp.text, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: coachmarkComponent.header };
+    const obj9 = { style: tmp.textContainer, children: items6 };
+    items6 = [closure_11(tmp2(4886).Heading, obj10), ];
+    const obj11 = { style: tmp.text, variant: "text-md/normal", color: "text-default", children: coachmarkComponent.body };
+    items6[1] = closure_11(tmp2(4886).Text, obj11);
+    items5[2] = closure_12(closure_4, obj9);
+    const obj12 = { grow: true, icon: closure_11(GiftIcon, obj13), text: intl.string(tmp2(1126).t.Ve9Ge6), onPress: tmp19 };
+    const Button = tmp2(5594).Button;
+    obj13 = { size: "sm", color: nativeDefault.colors.WHITE };
+    GiftIcon = tmp2(10766).GiftIcon;
+    intl = tmp2(1126).intl;
+    items5[3] = closure_11(Button, obj12);
+    tmp21Result2 = tmp21(BottomSheet, obj2);
   }
-  return tmp20Result2;
+  return tmp21Result2;
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingPromotionCoachmark.tsx");
 
-export default tmp7;
+export default tmp5;

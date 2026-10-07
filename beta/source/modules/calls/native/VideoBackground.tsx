@@ -1,20 +1,21 @@
-// Module ID: 7698
-// Function ID: 7699
+// Module ID: 7920
+// Function ID: 7921
 // Name: VideoBackground
-// Dependencies: [109, 32, 19, 17, 1086, 21, 4837, 12, 7699, 7700, 4685, 588, 558, 576, 7701, 1189, 5292, 2]
+// Dependencies: [109, 32, 19, 17, 1085, 21, 4890, 12, 7921, 7922, 4727, 587, 1886, 558, 576, 7923, 1188, 5605, 2]
 
-// Module 7698 (VideoBackground)
+// Module 7920 (VideoBackground)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import native from "native" /* 1189 */;
-import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 7700 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 7701 */;
+import Constants from "Constants" /* 1085 */;
+import native from "native" /* 1188 */;
+import react_nativeDefault from "react-native" /* 1886 */;
+import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 7922 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 7923 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,13 +23,12 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let c9;
-let closure_12;
+let c10;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
 let unpackModuleId;
-const LinearGradientDefault = tmp5(5292);
+const LinearGradientDefault = tmp5(5605);
 function useDominantRGBFromImage(assetImage, cResult) {
   let closure_2;
   let first1;
@@ -40,18 +40,17 @@ function useDominantRGBFromImage(assetImage, cResult) {
     tmp = first;
   }
   let tmp3 = first;
-  let tmp4 = dependencyMap;
-  const tmp5 = first(7699)();
+  const tmp5 = first(7921)();
   dependencyMap = tmp5;
   let obj = react;
   let hexToRgbResult;
   const useState = react.useState;
   if (null != assetImage) {
-    hexToRgbResult = tmp3(7700).cachedDominantColors[assetImage];
+    hexToRgbResult = tmp3(7922).cachedDominantColors[assetImage];
   }
   if (hexToRgbResult == null) {
     const obj2 = require("ColorUtils");
-    hexToRgbResult = obj2.hexToRgb(tmp3(588).unsafe_rawColors.PRIMARY_800);
+    hexToRgbResult = obj2.hexToRgb(tmp3(587).unsafe_rawColors.PRIMARY_800);
   }
   [first1, closure_3] = useState(hexToRgbResult);
   const items = [tmp, assetImage, tmp5];
@@ -61,15 +60,14 @@ function useDominantRGBFromImage(assetImage, cResult) {
       tmp2 = null != assetImage;
     }
     if (tmp2) {
-      const tmp4 = importDefault;
       if (null == VideoBackgroundManagerDefault.cachedDominantColors[assetImage]) {
         let dominantColorsLocalAsset;
         if (typeof first === "number") {
-          const ImageManager = metroImportAll.ImageManager;
-          dominantColorsLocalAsset = ImageManager.getDominantColorsLocalAsset(React4.resolveAssetSource(tmp));
+          const tmp4Result = react_nativeDefault;
+          dominantColorsLocalAsset = tmp4Result.getDominantColorsLocalAsset(metroImportAll.resolveAssetSource(tmp));
         } else {
-          const ImageManager2 = metroImportAll.ImageManager;
-          dominantColorsLocalAsset = ImageManager2.getDominantColors(React4.resolveAssetSource(tmp));
+          const tmp4Result2 = react_nativeDefault;
+          dominantColorsLocalAsset = tmp4Result2.getDominantColors(metroImportAll.resolveAssetSource(tmp));
         }
         const nextPromise = dominantColorsLocalAsset.then((result) => {
           if (closure_1_2()) {
@@ -82,17 +80,17 @@ function useDominantRGBFromImage(assetImage, cResult) {
         });
         nextPromise.catch(NOOP);
       } else {
-        closure_3(tmp4(7700).cachedDominantColors[tmp6]);
+        closure_3(VideoBackgroundManagerDefault.cachedDominantColors[tmp6]);
       }
     }
   }, items);
   return first1;
 }
 let closure_3 = ["style", "url", "isStageCall", "avatarStyle", "user", "guildId", "renderVideoDetails"];
-({ View: metroImportDefault, NativeModules: metroImportAll, Image: c9 } = react_native);
+({ View: metroImportDefault, Image: metroImportAll } = react_native);
 const NOOP = Constants.NOOP;
-({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
-let closure_13 = createStyles.createStyles({ videoBackground: { alignItems: "center" }, videoDetailsSpacer: { paddingTop: 12 } });
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let closure_12 = createStyles.createStyles({ videoBackground: { alignItems: "center" }, videoDetailsSpacer: { paddingTop: 12 } });
 const memoizeResult = module_12.memoize((uri) => {
   let tmp = null;
   if (null != uri) {
@@ -108,6 +106,7 @@ const memoizeResult = module_12.memoize((uri) => {
   }
   return tmp;
 });
+const map1 = memoizeResult;
 let ReactCompilerGating = ReactCompilerGating_mod;
 tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((assetImage, cResult) => {
   const tmp = useDominantRGBFromImage(assetImage, cResult);
@@ -116,7 +115,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((assetImage, cResult) => 
   const tmp = useDominantRGBFromImage(assetImage, cResult);
   return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
 });
-let closure_16 = tmp5;
+let closure_15 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let avatarStyle;
@@ -169,16 +168,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10 = cResult[7];
     tmp11 = cResult[8];
   }
-  const tmp16 = closure_13();
+  const tmp16 = closure_12();
   if (cResult[9] !== tmp10) {
-    const tmp19 = memoizeResult(tmp10);
+    const tmp19 = map1(tmp10);
     cResult[9] = tmp10;
     cResult[10] = tmp19;
     tmp17 = tmp19;
   } else {
     tmp17 = cResult[10];
   }
-  const tmp20 = closure_16(tmp10, tmp17);
+  const tmp20 = closure_15(tmp10, tmp17);
   let id;
   if (tmp11 != null) {
     id = tmp11.id;
@@ -271,7 +270,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             }
                             const obj2 = { colors: tmp24, start: tmp46, end: tmp47, style: tmp31, children: items };
                             items = [tmp35, tmp26];
-                            const tmp50 = closure_12(tmp23(5292), obj2);
+                            const tmp50 = unpackModuleId(tmp23(5605), obj2);
                             cResult[38] = tmp35;
                             cResult[39] = tmp31;
                             cResult[40] = tmp24;
@@ -288,7 +287,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             }
                             const obj3 = { style: tmp31, children: items1 };
                             items1 = [tmp35, tmp26];
-                            const tmp44 = closure_12(metroImportDefault, obj3);
+                            const tmp44 = unpackModuleId(metroImportDefault, obj3);
                             cResult[43] = tmp35;
                             cResult[44] = tmp31;
                             cResult[45] = tmp26;
@@ -302,7 +301,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     const obj4 = { source: tmp17, avatarStyle: tmp34, isStageCall: undefined !== tmp9 && tmp9 };
                     const Avatar = native.Avatar;
                     const merged = Object.assign(tmp4);
-                    const tmp40 = unpackModuleId(Avatar, obj4);
+                    const tmp40 = authStore(Avatar, obj4);
                     cResult[31] = tmp4;
                     cResult[32] = undefined !== tmp9 && tmp9;
                     cResult[33] = tmp17;
@@ -375,9 +374,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ user, renderVideoDetails } = style);
   ({ avatarStyle, guildId } = style);
   const merged = Object.assign(style, Object.assign({ style: 0, url: 0, isStageCall: 0, avatarStyle: 0, user: 0, guildId: 0, renderVideoDetails: 0 }));
-  const tmp2 = closure_13();
-  const tmp3 = memoizeResult(url);
-  const tmp4 = closure_16(url, tmp3);
+  const tmp2 = closure_12();
+  const tmp3 = map1(url);
+  const tmp4 = closure_15(url, tmp3);
   let id;
   const tmp7 = useProfileTileGradientDefault;
   if (user != null) {
@@ -419,15 +418,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const Avatar = native.Avatar;
     const merged1 = Object.assign(merged);
     items1 = [avatarStyle, tmp14];
-    const tmp20 = unpackModuleId(Avatar, obj3);
+    const tmp20 = authStore(Avatar, obj3);
     if (null != tmp7Result) {
       const obj4 = { colors: tmp7Result, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: items, children: items2 };
       items2 = [tmp20, renderVideoDetailsResult];
-      tmp23 = closure_12(LinearGradientDefault, obj4);
+      tmp23 = unpackModuleId(LinearGradientDefault, obj4);
     } else {
       const obj5 = { style: items, children: items3 };
       items3 = [tmp20, renderVideoDetailsResult];
-      tmp23 = closure_12(metroImportDefault, obj5);
+      tmp23 = unpackModuleId(metroImportDefault, obj5);
     }
     return tmp23;
   }

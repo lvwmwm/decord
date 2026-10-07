@@ -1,37 +1,37 @@
-// Module ID: 14288
-// Function ID: 14289
+// Module ID: 14551
+// Function ID: 14552
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 7885, 7872, 1086, 21, 6005, 11237, 8051, 558, 576, 1189, 5282, 1127, 504, 3106, 4833, 14289, 1386, 14290, 4837, 588, 14291, 11264, 11236, 14285, 5297, 11235, 1253, 5180, 5185, 4801, 14292, 1987, 14293, 14295, 2]
+// Dependencies: [19, 17, 8106, 8093, 1085, 21, 6082, 11495, 8274, 558, 576, 1188, 5594, 1126, 504, 3109, 4886, 14552, 1385, 14553, 4890, 587, 14554, 11522, 11494, 14548, 5590, 11493, 1252, 5409, 5414, 4854, 14555, 1987, 14556, 14558, 2]
 // Exports: default
 
-// Module 14288 (SafetyHubPage)
+// Module 14551 (SafetyHubPage)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl7 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import nativeDefault from "native" /* 587 */;
+import intl7 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import _modDef3106 from "module_3106" /* 3106 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
-import MetricEvents from "MetricEvents" /* 5185 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7872 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8051 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11235 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11237 */;
-import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14289 */;
-import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14290 */;
+import _modDef3109 from "module_3109" /* 3109 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8274 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11493 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11495 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14552 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14553 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubStore from "SafetyHubStore" /* 7885 */;
-import Constants from "Constants" /* 1086 */;
+import SafetyHubStore from "SafetyHubStore" /* 8106 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,11 +73,11 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { messageType: native.HelpMessageTypes.ERROR, button: closure_12(Button, obj3), children: intl2.string(intl7.t.dqbMbn) };
-    const HelpMessage = tmp(1189).HelpMessage;
+    const HelpMessage = tmp(1188).HelpMessage;
     obj3 = { variant: "secondary", size: "sm", text: intl.string(intl7.t.IcA9iD), onPress: handleRetryClick };
-    Button = tmp(5282).Button;
-    intl = tmp(1127).intl;
-    intl2 = tmp(1127).intl;
+    Button = tmp(5594).Button;
+    intl = tmp(1126).intl;
+    intl2 = tmp(1126).intl;
     const tmp7 = closure_12(HelpMessage, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -122,9 +122,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] !== stateFromStores) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     const stringResult = string(stateFromStores ? t.PU8nMu : t["nhhy/R"]);
     cResult[2] = stateFromStores;
     cResult[3] = stringResult;
@@ -134,7 +134,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp8) {
     const obj2 = { messageType: native.HelpMessageTypes.INFO, children: tmp8 };
-    const HelpMessage = tmp(1189).HelpMessage;
+    const HelpMessage = tmp(1188).HelpMessage;
     const tmp12 = closure_12(HelpMessage, obj2);
     cResult[4] = tmp8;
     cResult[5] = tmp12;
@@ -170,8 +170,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "secondary", size: "sm", text: intl.string(require("intl").t.IcA9iD), onPress: handleRetryClick };
-    const Button = tmp(5282).Button;
-    intl = tmp(1127).intl;
+    const Button = tmp(5594).Button;
+    intl = tmp(1126).intl;
     const tmp8 = closure_12(Button, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -179,14 +179,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] !== tmp4) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const obj3 = {
       manualReviewHook(children, arg1) {
           const obj = { onPress: handleManualReviewClick, style: link.link, variant: "text-sm/normal", color: "text-default", children };
           return closure_12(Text_Text.Text, obj, arg1);
         }
     };
-    const formatResult = intl2.format(_modDef3106.vPoM8y, obj3);
+    const formatResult = intl2.format(_modDef3109.vPoM8y, obj3);
     cResult[1] = tmp4;
     cResult[2] = formatResult;
     tmp9 = formatResult;
@@ -195,7 +195,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp9) {
     const obj4 = { messageType: require("native").HelpMessageTypes.ERROR, button: first, children: tmp9 };
-    const HelpMessage = tmp(1189).HelpMessage;
+    const HelpMessage = tmp(1188).HelpMessage;
     const tmp14 = closure_12(HelpMessage, obj4);
     cResult[3] = tmp9;
     cResult[4] = tmp14;
@@ -212,7 +212,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj2;
   let obj3;
   _require = closure_22();
-  let obj = { messageType: require("native").HelpMessageTypes.ERROR, button: closure_12(Button, obj2), children: intl2.format(_modDef3106.vPoM8y, obj3) };
+  let obj = { messageType: require("native").HelpMessageTypes.ERROR, button: closure_12(Button, obj2), children: intl2.format(_modDef3109.vPoM8y, obj3) };
   const HelpMessage = require("native").HelpMessage;
   obj2 = { variant: "secondary", size: "sm", text: intl.string(require("intl").t.IcA9iD), onPress: handleRetryClick };
   Button = require("components/Button/Button").Button;
@@ -279,11 +279,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol3 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { messageType: native.HelpMessageTypes.ERROR, button: closure_12(Button, obj4), children: intl2.string(intl7.t.VTgFYh) };
-      const HelpMessage = tmp(1189).HelpMessage;
+      const HelpMessage = tmp(1188).HelpMessage;
       obj4 = { variant: "secondary", size: "sm", text: intl.string(intl7.t.NkTGsC), onPress: handleManualReviewClick };
-      Button = tmp(5282).Button;
-      intl = tmp(1127).intl;
-      intl2 = tmp(1127).intl;
+      Button = tmp(5594).Button;
+      intl = tmp(1126).intl;
+      intl2 = tmp(1126).intl;
       const tmp20 = closure_12(HelpMessage, obj3);
       cResult[1] = tmp20;
       tmp17 = tmp20;
@@ -315,11 +315,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj2 = { messageType: native.HelpMessageTypes.ERROR, button: closure_12(Button, obj3), children: intl2.string(intl7.t.VTgFYh) };
-    const HelpMessage = tmp(1189).HelpMessage;
+    const HelpMessage = tmp(1188).HelpMessage;
     obj3 = { variant: "secondary", size: "sm", text: intl.string(intl7.t.NkTGsC), onPress: handleManualReviewClick };
-    Button = tmp(5282).Button;
-    intl = tmp(1127).intl;
-    intl2 = tmp(1127).intl;
+    Button = tmp(5594).Button;
+    intl = tmp(1126).intl;
+    intl2 = tmp(1126).intl;
     tmp5Result = closure_12(HelpMessage, obj2);
   }
   return tmp5Result;
@@ -376,8 +376,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol8 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { messageType: native.HelpMessageTypes.SUCCESS, children: intl6.format(intl7.t.hyh4ls, obj3) };
-      const HelpMessage5 = tmp(1189).HelpMessage;
-      intl6 = tmp(1127).intl;
+      const HelpMessage5 = tmp(1188).HelpMessage;
+      intl6 = tmp(1126).intl;
       obj3 = {
         loginHook(children) {
               let obj = {
@@ -404,11 +404,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol7 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { messageType: native.HelpMessageTypes.SUCCESS, button: closure_12(Button, obj5), children: intl5.string(intl7.t["2Qe65J"]) };
-      const HelpMessage4 = tmp(1189).HelpMessage;
+      const HelpMessage4 = tmp(1188).HelpMessage;
       obj5 = { variant: "secondary", size: "sm", text: intl4.string(intl7.t["2jvQ6K"]), onPress: handleLogInClick };
-      Button = tmp(5282).Button;
-      intl4 = tmp(1127).intl;
-      intl5 = tmp(1127).intl;
+      Button = tmp(5594).Button;
+      intl4 = tmp(1126).intl;
+      intl5 = tmp(1126).intl;
       const tmp34 = closure_12(HelpMessage4, obj4);
       cResult[5] = tmp34;
       tmp31 = tmp34;
@@ -421,8 +421,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol6 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { messageType: native.HelpMessageTypes.SUCCESS, children: intl3.string(intl7.t.Ie7p1Q) };
-      const HelpMessage3 = tmp(1189).HelpMessage;
-      intl3 = tmp(1127).intl;
+      const HelpMessage3 = tmp(1188).HelpMessage;
+      intl3 = tmp(1126).intl;
       const tmp30 = closure_12(HelpMessage3, obj6);
       cResult[6] = tmp30;
       tmp28 = tmp30;
@@ -435,8 +435,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol5 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { messageType: native.HelpMessageTypes.ERROR, children: intl2.string(intl7.t["4sILBU"]) };
-      const HelpMessage2 = tmp(1189).HelpMessage;
-      intl2 = tmp(1127).intl;
+      const HelpMessage2 = tmp(1188).HelpMessage;
+      intl2 = tmp(1126).intl;
       const tmp27 = closure_12(HelpMessage2, obj7);
       cResult[7] = tmp27;
       tmp25 = tmp27;
@@ -449,8 +449,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol4 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj8 = { messageType: native.HelpMessageTypes.ERROR, children: intl.string(intl7.t["40R63o"]) };
-      const HelpMessage = tmp(1189).HelpMessage;
-      intl = tmp(1127).intl;
+      const HelpMessage = tmp(1188).HelpMessage;
+      intl = tmp(1126).intl;
       const tmp24 = closure_12(HelpMessage, obj8);
       cResult[8] = tmp24;
       tmp22 = tmp24;
@@ -515,8 +515,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = tmp20;
   } else if (stateFromStores === AgeCheckStatus.SUCCESS) {
     const obj2 = { messageType: native.HelpMessageTypes.SUCCESS, children: intl6.format(intl7.t.hyh4ls, obj3) };
-    const HelpMessage5 = tmp(1189).HelpMessage;
-    intl6 = tmp(1127).intl;
+    const HelpMessage5 = tmp(1188).HelpMessage;
+    intl6 = tmp(1126).intl;
     obj3 = {
       loginHook(children) {
           let obj = {
@@ -534,26 +534,26 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = closure_12(HelpMessage5, obj2);
   } else if (stateFromStores === AgeCheckStatus.VERIFIED) {
     const obj4 = { messageType: native.HelpMessageTypes.SUCCESS, button: closure_12(Button, obj5), children: intl5.string(intl7.t["2Qe65J"]) };
-    const HelpMessage4 = tmp(1189).HelpMessage;
+    const HelpMessage4 = tmp(1188).HelpMessage;
     obj5 = { variant: "secondary", size: "sm", text: intl4.string(intl7.t["2jvQ6K"]), onPress: handleLogInClick };
-    Button = tmp(5282).Button;
-    intl4 = tmp(1127).intl;
-    intl5 = tmp(1127).intl;
+    Button = tmp(5594).Button;
+    intl4 = tmp(1126).intl;
+    intl5 = tmp(1126).intl;
     tmp9 = closure_12(HelpMessage4, obj4);
   } else if (stateFromStores === AgeCheckStatus.VERIFIED_OTHER_VIOLATIONS_REMAIN) {
     const obj6 = { messageType: native.HelpMessageTypes.SUCCESS, children: intl3.string(intl7.t.Ie7p1Q) };
-    const HelpMessage3 = tmp(1189).HelpMessage;
-    intl3 = tmp(1127).intl;
+    const HelpMessage3 = tmp(1188).HelpMessage;
+    intl3 = tmp(1126).intl;
     tmp9 = closure_12(HelpMessage3, obj6);
   } else if (stateFromStores === AgeCheckStatus.ERROR) {
     const obj7 = { messageType: native.HelpMessageTypes.ERROR, children: intl2.string(intl7.t["4sILBU"]) };
-    const HelpMessage2 = tmp(1189).HelpMessage;
-    intl2 = tmp(1127).intl;
+    const HelpMessage2 = tmp(1188).HelpMessage;
+    intl2 = tmp(1126).intl;
     tmp9 = closure_12(HelpMessage2, obj7);
   } else if (stateFromStores === AgeCheckStatus.FAILURE) {
     const obj8 = { messageType: native.HelpMessageTypes.ERROR, children: intl.string(intl7.t["40R63o"]) };
-    const HelpMessage = tmp(1189).HelpMessage;
-    intl = tmp(1127).intl;
+    const HelpMessage = tmp(1188).HelpMessage;
+    intl = tmp(1126).intl;
     tmp9 = closure_12(HelpMessage, obj8);
   } else if (stateFromStores === AgeCheckStatus.UNDERAGE) {
     tmp9 = closure_12(closure_17, {});
@@ -611,7 +611,7 @@ export default function SafetyHubPage(visible) {
     if (tmp) {
       if (null != safetyHubFetchError) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(14292, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        obj2.openLazy(asyncRequire(14555, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     const obj = ActionSheetActionCreatorsDefault;

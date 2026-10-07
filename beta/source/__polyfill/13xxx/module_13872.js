@@ -1,226 +1,88 @@
 // Module ID: 13872
 // Function ID: 13873
-// Dependencies: [41, 42, 13870]
+// Dependencies: [32, 13845, 13862]
 
 // Module 13872
-import _createClass from "_createClass" /* 42 */;
-import _mod13870 from "module_13870" /* 13870 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import _mod13845 from "module_13845" /* 13845 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-class URLSearchParamsImpl {
-  constructor(arg0, arg1, doNotStripQMark) {
-    let flag = doNotStripQMark.doNotStripQMark;
-    if (flag === undefined) {
-      flag = false;
-    }
-    const self = this;
-    _classCallCheck(this, URLSearchParamsImpl);
-    const first = arg1[0];
-    this._list = [];
-    this._url = null;
-    if (!flag) {
-      flag = typeof first !== "string";
-    }
-    if (!flag) {
-      flag = "?" !== first[0];
-    }
-    let substr = first;
-    if (!flag) {
-      substr = first.slice(1);
-    }
-    if (Array.isArray(substr)) {
-      const iter = substr[Symbol.iterator]();
-      const nextResult = iter.next();
-      while (iter !== undefined) {
-        let tmp12 = nextResult;
-        if (2 !== nextResult.length) {
-          let _TypeError = TypeError;
-          let self2 = this;
-          let str2 = "Failed to construct 'URLSearchParams': parameter 1 sequence's element does not contain exactly two elements.";
-          let self3 = this;
-          let typeError = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence's element does not contain exactly two elements.");
-          throw typeError;
-        } else {
-          let _list = self._list;
-          let items = [, ];
-          [arr6[0], arr6[1]] = tmp12;
-          let arr = _list.push(items);
-          continue;
-        }
+const require = globalThis.__r;
+let _require;
+
+
+export default (arr, arg1, arg2) => {
+  let closure_0;
+  let first;
+  let raw;
+  let tmp22;
+  let tmp = arg1;
+  _require = arg2;
+  const items = [];
+  let tmp2 = null;
+  let tmp3 = null;
+  const sorted = arr.sort((arg0, arg1) => _mod13845(arg0, arg1, closure_0));
+  for (const item10017 of sorted) {
+    if (require("module_13862")(item10017, tmp, arg2)) {
+      tmp3 = item10017;
+      let tmp12 = tmp2;
+      if (!tmp12) {
+        tmp2 = item10017;
       }
     } else {
-      if (typeof substr === "object") {
-        const _Object2 = Object;
-        if (null === Object.getPrototypeOf(substr)) {
-          const _Object = Object;
-          const keys = Object.keys(substr);
-          for (const item10033 of keys) {
-            let _list1 = self._list;
-            let items1 = [item10033, substr[item10033]];
-            let arr2 = _list1.push(items1);
-            continue;
-          }
+      let tmp8 = tmp3;
+      if (tmp8) {
+        let items1 = [tmp2, ];
+        items1[1] = tmp3;
+        arr = items.push(items1);
+      }
+      tmp3 = null;
+      tmp2 = null;
+    }
+    continue;
+  }
+  const tmp13 = tmp2;
+  if (tmp13) {
+    const items2 = [tmp2, null];
+    items.push(items2);
+  }
+  const items3 = [];
+  const tmp16 = items[Symbol.iterator]();
+  while (tmp16 !== undefined) {
+    [first, tmp22] = tmp17;
+    let tmp21 = first;
+    let tmp23 = tmp22;
+    if (first === tmp22) {
+      let arr3 = items3.push(tmp21);
+    } else {
+      if (!tmp23) {
+        if (tmp21 === sorted[0]) {
+          let arr4 = items3.push("*");
         }
       }
-      const obj = _mod13870;
-      self._list = obj.parseUrlencoded(substr);
-    }
-  }
-}
-const entry = {
-  key: "_updateSteps",
-  value: function _updateSteps() {
-    const self = this;
-    if (null !== this._url) {
-      const obj = _mod13870;
-      let serializeUrlencodedResult = obj.serializeUrlencoded(self._list);
-      if ("" === serializeUrlencodedResult) {
-        serializeUrlencodedResult = null;
+      if (tmp23) {
+        if (tmp21 === sorted[0]) {
+          let _HermesInternal3 = HermesInternal;
+          let arr5 = items3.push("<=" + tmp23);
+        } else {
+          let _HermesInternal2 = HermesInternal;
+          let arr6 = items3.push("" + tmp21 + " - " + tmp23);
+        }
+      } else {
+        let _HermesInternal = HermesInternal;
+        let arr13 = items3.push(">=" + tmp21);
       }
-      self._url._url.query = serializeUrlencodedResult;
     }
+    continue;
   }
+  const joined = items3.join(" || ");
+  if (typeof tmp.raw === "string") {
+    raw = tmp.raw;
+  } else {
+    const _String = String;
+    raw = String(tmp);
+  }
+  if (joined.length < raw.length) {
+    tmp = joined;
+  }
+  return tmp;
 };
-let items = [
-  entry,
-  {
-    key: "append",
-    value: function append(arg0, arg1) {
-      const _list = this._list;
-      const items = [arg0, arg1];
-      _list.push(items);
-      this._updateSteps();
-    }
-  },
-  {
-    key: "delete",
-    value: function _delete(arg0) {
-      let sum;
-      const self = this;
-      let num = 0;
-      if (0 < this._list.length) {
-        do {
-          if (self._list[num][0] === arg0) {
-            let _list = self._list;
-            let spliceResult = _list.splice(num, 1);
-            sum = num;
-          } else {
-            sum = num + 1;
-          }
-          num = sum;
-        } while (sum < self._list.length);
-      }
-      self._updateSteps();
-    }
-  },
-  {
-    key: "get",
-    value: function get(arg0) {
-      const _list = this._list;
-      for (const item10008 of _list) {
-        if (item10008[0] === arg0) {
-          let tmp2 = item10008[1];
-          obj.return();
-          return tmp2;
-        }
-      }
-      return null;
-    }
-  },
-  {
-    key: "getAll",
-    value: function getAll(arg0) {
-      const items = [];
-      const _list = this._list;
-      for (const item10009 of _list) {
-        if (item10009[0] === arg0) {
-          let arr = items.push(tmp[1]);
-        }
-        continue;
-      }
-      return items;
-    }
-  },
-  {
-    key: "has",
-    value: function has(arg0) {
-      const _list = this._list;
-      for (const item10007 of _list) {
-        if (item10007[0] === arg0) {
-          obj.return();
-          let flag = true;
-          return true;
-        }
-      }
-      return false;
-    }
-  },
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      let sum;
-      const self = this;
-      let num = 0;
-      let flag = false;
-      let flag2 = false;
-      if (0 < this._list.length) {
-        do {
-          let flag3;
-          if (self._list[num][0] === arg0) {
-            let _list = self._list;
-            if (flag) {
-              let spliceResult = _list.splice(num, 1);
-              sum = num;
-              flag3 = flag;
-            } else {
-              _list[num][1] = arg1;
-              sum = num + 1;
-              flag3 = true;
-            }
-          } else {
-            sum = num + 1;
-            flag3 = flag;
-          }
-          num = sum;
-          flag = flag3;
-          flag2 = flag3;
-        } while (sum < self._list.length);
-      }
-      if (!flag2) {
-        const _list1 = self._list;
-        const items = [arg0, arg1];
-        _list1.push(items);
-      }
-      self._updateSteps();
-    }
-  },
-  {
-    key: "sort",
-    value: function sort() {
-      const _list = this._list;
-      const mapped = _list.map((item, index) => ({ item, index }));
-      const sorted = mapped.sort((index, index2) => index.item[0] > index2.item[0] || index.index - index2.index);
-      this._list = sorted.map((item) => item.item);
-      this._updateSteps();
-    }
-  },
-,
-
-];
-const entry1 = {
-  key: Symbol.iterator,
-  value() {
-    const _list = this._list;
-    return _list[Symbol.iterator]();
-  }
-};
-items[8] = entry1;
-items[9] = {
-  key: "toString",
-  value: function toString() {
-    const obj = _mod13870;
-    return obj.serializeUrlencoded(this._list);
-  }
-};
-
-export const implementation = _createClass(URLSearchParamsImpl, items);

@@ -5,15 +5,13 @@
 
 // Module 511 (storage/Storage)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
+import react_nativeDefault from "react-native" /* 512 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import react_native_mod from "react-native" /* 17 */;
-import react_native_mod2 from "react-native" /* 512 */;
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-let c0, c1;
+let c0, c1, dependencyMap, importDefault;
 
-let NativeModules;
-let Platform;
 function parseValue(arg0) {
   let parsed = arg0;
   if (null != arg0) {
@@ -25,10 +23,7 @@ function parseValue(arg0) {
   }
   return parsed;
 }
-let react_native = react_native_mod2;
-({ Platform, NativeModules } = react_native);
-react_native = react_native_mod2;
-const DCDStrongboxManager = NativeModules.DCDStrongboxManager;
+const DCDStrongboxManager = react_native.NativeModules.DCDStrongboxManager;
 class ProxyAsyncStorage {
   constructor() {
     const obj = Object.create(new.target.prototype);
@@ -57,9 +52,9 @@ class ProxyAsyncStorage {
       new Set();
     }
     self.secureKeys = new Set();
-    const items1 = [, ];
     new Set();
-    items1[0] = react_native.refresh(items);
+    let obj = self(512);
+    const items1 = [obj.refresh(items), ];
     let refreshResult;
     const tmp4 = DCDStrongboxManager;
     if (DCDStrongboxManager != null) {
@@ -123,7 +118,8 @@ class ProxyAsyncStorage {
         result.then((result) => {
           const tmp = result;
           if (tmp) {
-            closure_2_3.removeItem(closure_0);
+            const obj = self(closure_2_1[2]);
+            obj.removeItem(closure_0);
           }
         });
       }
@@ -202,13 +198,14 @@ class ProxyAsyncStorage {
     })();
   }
   asyncGet(ContactSyncDMListCTADismissed, arg1, arg2) {
+    let closure_0;
     const self = this;
-    let closure_1 = ContactSyncDMListCTADismissed;
+    dependencyMap = ContactSyncDMListCTADismissed;
     let closure_2 = arg1;
-    let closure_0 = arg2;
+    importDefault = arg2;
     const secureKeys = this.secureKeys;
     if (secureKeys.has(ContactSyncDMListCTADismissed)) {
-      const value = DCDStrongboxManager.getItem(ContactSyncDMListCTADismissed);
+      const value = self.getItem(ContactSyncDMListCTADismissed);
       value.then((result) => {
         if (null != result) {
           const _Date = Date;
@@ -227,8 +224,9 @@ class ProxyAsyncStorage {
         }
       });
     } else {
-      const tmp = self;
-      const value2 = self.getItem(ContactSyncDMListCTADismissed);
+      const tmp = importDefault;
+      let obj = react_nativeDefault;
+      const value2 = obj.getItem(ContactSyncDMListCTADismissed);
       value2.then((result) => {
         if (null != result) {
           const _Date = Date;
@@ -264,9 +262,10 @@ class ProxyAsyncStorage {
       }
       const secureKeys = self.secureKeys;
       if (secureKeys.has(tmp4)) {
-        value = item2.getItem(tmp19);
-      } else {
         value = item.getItem(tmp19);
+      } else {
+        const obj5 = tmp4(closure_1[2]);
+        value = obj5.getItem(tmp19);
       }
       tmp4 = yield value;
       let tmp13 = null;
@@ -315,13 +314,14 @@ class ProxyAsyncStorage {
       throw error1;
     } else {
       const self5 = this;
-      const obj = { parsed: false, rawData };
-      this.storage[str] = obj;
+      const obj2 = { parsed: false, rawData };
+      this.storage[str] = obj2;
       const secureKeys = this.secureKeys;
       if (secureKeys.has(str)) {
         const result = DCDStrongboxManager.setItem(str, rawData);
       } else {
-        const result1 = react_native.setItem(str, rawData);
+        const obj = react_nativeDefault;
+        const result1 = obj.setItem(str, rawData);
       }
     }
   }
@@ -331,12 +331,14 @@ class ProxyAsyncStorage {
     if (secureKeys.has(arg0)) {
       DCDStrongboxManager.removeItem(arg0);
     } else {
-      react_native.removeItem(arg0);
+      const obj = react_nativeDefault;
+      obj.removeItem(arg0);
     }
   }
   clear() {
     this.storage = {};
-    react_native.clear();
+    const obj = react_nativeDefault;
+    obj.clear();
     const tmp3 = DCDStrongboxManager;
     if (DCDStrongboxManager != null) {
       const items = [];

@@ -1,10 +1,10 @@
 // Module ID: 14809
 // Function ID: 14810
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 14809 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16.5, scales: [2, 3], hash: "5854380fa0e0fd8bc925e2e46e9e8246", name: "ic_lock_short_16px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a223df53550492950018c2a994e89fed", name: "FiltersHorizontalIcon", type: "png" });

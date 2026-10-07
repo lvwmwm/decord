@@ -1,11 +1,11 @@
-// Module ID: 587
-// Function ID: 588
+// Module ID: 586
+// Function ID: 587
 // Name: shims
-// Dependencies: [588, 2]
+// Dependencies: [587, 2]
 // Exports: getRadii, getThemes, unsafe_getRawColor, unsafe_getResolvedRawColor
 
-// Module 587 (shims)
-import nativeDefault from "native" /* 588 */;
+// Module 586 (shims)
+import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/tokens/shims.native.tsx");

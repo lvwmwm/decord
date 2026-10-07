@@ -1,20 +1,20 @@
-// Module ID: 4500
-// Function ID: 4501
+// Module ID: 4537
+// Function ID: 4538
 // Name: InvoiceRecord
-// Dependencies: [1393, 4501, 2]
+// Dependencies: [1392, 4538, 2]
 
-// Module 4500 (InvoiceRecord)
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4501 */;
-import Record from "Record" /* 1393 */;
+// Module 4537 (InvoiceRecord)
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4538 */;
+import Record from "Record" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let billing_facet, order_line_items;
 
 class BaseInvoiceRecord extends Record {
-  constructor(arg0) {
+  constructor(currency) {
     let invoiceItems;
-    const tmp = new BaseInvoiceRecord(new.target, this, arg0);
-    ({ total: tmp.total, subtotal: tmp.subtotal, tax: tmp.tax, currency: tmp.currency, invoiceItems } = arg0);
+    const tmp = new BaseInvoiceRecord(new.target, this, currency);
+    ({ id: tmp.id, total: tmp.total, subtotal: tmp.subtotal, tax: tmp.tax, currency: tmp.currency, invoiceItems } = currency);
     if (invoiceItems == null) {
       invoiceItems = [];
     }
@@ -22,18 +22,20 @@ class BaseInvoiceRecord extends Record {
     return tmp;
   }
   static createFromServer(currency) {
+    let id;
     let invoice_items;
     let subtotal;
     let tax;
     let total;
-    ({ total, subtotal, tax, invoice_items } = currency);
+    ({ id, total, subtotal, tax, invoice_items } = currency);
     currency = currency.currency;
     let mapped = invoice_items.map((skuId) => ({ skuId: skuId.sku_id, quantity: skuId.quantity, description: skuId.description }));
     const tmp2 = BaseInvoiceRecord;
     if (typeof BaseInvoiceRecord === "function") {
       const self = this;
       const self2 = this;
-      const tmp4 = new BaseInvoiceRecord(tmp, invoice_items, tmp2, this, total, subtotal, tax);
+      const tmp4 = new BaseInvoiceRecord(tmp, invoice_items, tmp2, this, id, total, subtotal, tax);
+      tmp4.id = id;
       tmp4.total = total;
       tmp4.subtotal = subtotal;
       tmp4.tax = tax;
@@ -49,9 +51,8 @@ class BaseInvoiceRecord extends Record {
   }
   static createInvoiceFromOrder(billing_facet) {
     let currency;
-    let subtotal;
+    let invoiceItems;
     let tax;
-    let total;
     let closure_0 = billing_facet;
     billing_facet = billing_facet.billing_facet;
     let invoice_preview = null;
@@ -75,21 +76,19 @@ class BaseInvoiceRecord extends Record {
         }
         return tmp2;
       });
-      let found = mapped.filter((item) => null != item);
-      ({ total, subtotal, tax, currency } = invoice_preview);
+      let obj = { total: null, subtotal: null, tax, currency, invoiceItems: mapped.filter((item) => null != item) };
+      ({ total: obj.total, subtotal: obj.subtotal, tax } = invoice_preview);
+      currency = invoice_preview.currency;
       const self3 = this;
       if (typeof BaseInvoiceRecord === "function") {
         const self = this;
         const self2 = this;
-        const tmp4 = new BaseInvoiceRecord(tmp, tmp6, this, total, subtotal, tax, currency, found);
-        tmp4.total = total;
-        tmp4.subtotal = subtotal;
-        tmp4.tax = tax;
-        tmp4.currency = currency;
-        if (found == null) {
-          found = [];
+        const tmp4 = new BaseInvoiceRecord(tmp, tax, currency, tmp6);
+        ({ id: tmp4.id, total: tmp4.total, subtotal: tmp4.subtotal, tax: tmp4.tax, currency: tmp4.currency, invoiceItems } = obj);
+        if (invoiceItems == null) {
+          invoiceItems = [];
         }
-        tmp4.invoiceItems = found;
+        tmp4.invoiceItems = invoiceItems;
         return tmp4;
       } else {
         throw new TypeError("Trying to call a non-function");
@@ -127,7 +126,7 @@ class InvoiceRecord extends BaseInvoiceRecord {
       invoiceItems = [];
     }
     tmp.invoiceItems = invoiceItems;
-    ({ taxInclusive: tmp.taxInclusive, subscriptionPeriodStart: tmp.subscriptionPeriodStart, subscriptionPeriodEnd: tmp.subscriptionPeriodEnd, status: tmp.status, orbsReward: tmp.orbsReward, checkoutContext: tmp.checkoutContext } = arg0);
+    ({ taxInclusive: tmp.taxInclusive, subscriptionPeriodStart: tmp.subscriptionPeriodStart, subscriptionPeriodEnd: tmp.subscriptionPeriodEnd, status: tmp.status, orbsReward: tmp.orbsReward, checkoutContext: tmp.checkoutContext, applyWalletBalance: tmp.applyWalletBalance } = arg0);
     return tmp;
   }
   static createInvoiceFromServer(body) {
@@ -157,7 +156,7 @@ class InvoiceRecord extends BaseInvoiceRecord {
         invoiceItems = [];
       }
       tmp9.invoiceItems = invoiceItems;
-      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext } = obj);
+      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext, applyWalletBalance: tmp9.applyWalletBalance } = obj);
       return tmp9;
     } else {
       throw new TypeError("Trying to call a non-function");
@@ -257,7 +256,7 @@ class InvoiceRecord extends BaseInvoiceRecord {
           invoiceItems = [];
         }
         tmp6.invoiceItems = invoiceItems;
-        ({ taxInclusive: tmp6.taxInclusive, subscriptionPeriodStart: tmp6.subscriptionPeriodStart, subscriptionPeriodEnd: tmp6.subscriptionPeriodEnd, status: tmp6.status, orbsReward: tmp6.orbsReward, checkoutContext: tmp6.checkoutContext } = obj);
+        ({ taxInclusive: tmp6.taxInclusive, subscriptionPeriodStart: tmp6.subscriptionPeriodStart, subscriptionPeriodEnd: tmp6.subscriptionPeriodEnd, status: tmp6.status, orbsReward: tmp6.orbsReward, checkoutContext: tmp6.checkoutContext, applyWalletBalance: tmp6.applyWalletBalance } = obj);
         return tmp6;
       } else {
         let str = "Trying to call a non-function";
@@ -266,8 +265,8 @@ class InvoiceRecord extends BaseInvoiceRecord {
     }
   }
   static createFromOTPPreview(invoice_items) {
+    let checkout_context;
     let invoiceItems;
-    let orbs_reward;
     let tmp3;
     invoice_items = invoice_items.invoice_items;
     let mapped;
@@ -275,20 +274,20 @@ class InvoiceRecord extends BaseInvoiceRecord {
       mapped = invoice_items.map(PremiumSubscriptionInvoiceItem.createInvoiceItemFromServer);
       tmp3 = require;
     }
-    const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: new Date(0), subscriptionPeriodEnd: new Date(0), orbsReward: orbs_reward, checkoutContext: invoice_items.checkout_context };
+    const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: new Date(0), subscriptionPeriodEnd: new Date(0), orbsReward: null, checkoutContext: checkout_context, applyWalletBalance: invoice_items.apply_wallet_balance };
     new Date(0);
-    orbs_reward = invoice_items.orbs_reward;
+    ({ orbs_reward: obj.orbsReward, checkout_context } = invoice_items);
     new Date(0);
     if (typeof InvoiceRecord === "function") {
       const self = this;
       const self2 = this;
-      const tmp9 = new InvoiceRecord(obj, tmp3, this, this, orbs_reward, InvoiceRecord);
+      const tmp9 = new InvoiceRecord(obj, tmp3, this, this, checkout_context, InvoiceRecord);
       ({ id: tmp9.id, invoiceItems } = obj);
       if (invoiceItems == null) {
         invoiceItems = [];
       }
       tmp9.invoiceItems = invoiceItems;
-      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext } = obj);
+      ({ taxInclusive: tmp9.taxInclusive, subscriptionPeriodStart: tmp9.subscriptionPeriodStart, subscriptionPeriodEnd: tmp9.subscriptionPeriodEnd, status: tmp9.status, orbsReward: tmp9.orbsReward, checkoutContext: tmp9.checkoutContext, applyWalletBalance: tmp9.applyWalletBalance } = obj);
       return tmp9;
     } else {
       throw new TypeError("Trying to call a non-function");

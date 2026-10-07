@@ -1,27 +1,27 @@
-// Module ID: 15520
-// Function ID: 15521
+// Module ID: 15823
+// Function ID: 15824
 // Name: VideoBackgroundSetting
-// Dependencies: [7421, 1086, 558, 576, 9091, 9453, 9087, 9089, 10874, 1127, 9434, 2]
+// Dependencies: [7634, 1085, 558, 576, 9316, 9681, 9312, 9314, 11129, 1126, 9661, 2]
 
-// Module 15520 (VideoBackgroundSetting)
+// Module 15823 (VideoBackgroundSetting)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 9087 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9089 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9091 */;
-import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 9434 */;
-import VideoBackgroundOptions from "VideoBackgroundOptions" /* 9453 */;
-import Constants from "Constants" /* 1086 */;
+import intl2 from "intl" /* 1126 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 9312 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9314 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9316 */;
+import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 9661 */;
+import VideoBackgroundOptions from "VideoBackgroundOptions" /* 9681 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-let c2;
 let c3;
 let closure_4;
+let hasOwnProperty;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-({ AnalyticsSections: c2, NOOP: c3, AnalyticsPages: closure_4 } = Constants);
+({ AnalyticsSections: c3, NOOP: closure_4, AnalyticsPages: hasOwnProperty } = Constants);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5;
   const obj = react;
@@ -50,7 +50,9 @@ let obj = {
     return intl.string(intl2.t.lZTUPs);
   },
   parent: MobileUserSettings.VOICE,
-  usePredicate: useIsVideoBackgroundSupportedDefault,
+  usePredicate() {
+    return useIsVideoBackgroundEnabledDefault("VideoBackgroundSetting");
+  },
   useValue: tmp3,
   onValueChange: function onVideoBackgroundSettingChange(arg0) {
     let obj4;
@@ -59,13 +61,13 @@ let obj = {
     const obj = VideoBackgroundOptions;
     const result = fromVideoBackgroundRadioValue(obj.parseVideoBackgroundRadioValue(arg0));
     const obj3 = { location: obj4 };
-    obj4 = { page: constants2.USER_SETTINGS, section: constants.SETTINGS_VOICE_AND_VIDEO };
+    obj4 = { page: hasOwnProperty.USER_SETTINGS, section: constants.SETTINGS_VOICE_AND_VIDEO };
     const obj2 = applyBackgroundOption;
     const result1 = obj2.applyBackgroundOptionLive(result, obj3);
-    result1.catch(_false);
+    result1.catch(React3);
     const obj5 = VideoBackgroundActionCreators;
     const result2 = obj5.saveLastUsedBackgroundOption(result);
-    result2.catch(_false);
+    result2.catch(React3);
   },
   useOptions: VideoBackgroundOptions.useVideoBackgroundRadioOptions
 };

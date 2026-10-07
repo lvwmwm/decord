@@ -1,20 +1,20 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14570
+// Function ID: 14571
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4837, 558, 576, 14308, 14309, 4833, 1127, 6546, 14304, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 14571, 14572, 4886, 1126, 6619, 14567, 2]
 
-// Module 14307 (TwoFASetupLanding)
+// Module 14570 (TwoFASetupLanding)
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 14304 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 14308 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14309 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 14567 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 14571 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14572 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9E74Dx"]) };
-    const Heading = tmp(4833).Heading;
-    intl = tmp(1127).intl;
+    const Heading = tmp(4886).Heading;
+    intl = tmp(1126).intl;
     const tmp13 = hasOwnProperty(Heading, obj4);
     cResult[2] = tmp13;
     tmp11 = tmp13;
@@ -67,7 +67,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const formatResult = intl2.format(intl3.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" });
       cResult[6] = formatResult;
       tmp15 = formatResult;
@@ -98,7 +98,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         const obj6 = { children: hasOwnProperty(React3, obj7) };
         obj7 = { style: container, children: tmp20 };
-        const TwoFASetupModalScreen = tmp(14304).TwoFASetupModalScreen;
+        const TwoFASetupModalScreen = tmp(14567).TwoFASetupModalScreen;
         const tmp26 = hasOwnProperty(TwoFASetupModalScreen, obj6);
         cResult[13] = tmp4.container;
         cResult[14] = tmp20;

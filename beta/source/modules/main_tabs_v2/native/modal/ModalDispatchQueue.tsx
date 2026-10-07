@@ -1,9 +1,9 @@
-// Module ID: 5043
-// Function ID: 5044
+// Module ID: 5096
+// Function ID: 5097
 // Name: ModalDispatchQueue
 // Dependencies: [2]
 
-// Module 5043 (ModalDispatchQueue)
+// Module 5096 (ModalDispatchQueue)
 import size from "module_2" /* 2 */;
 
 class ModalDispatchQueue {

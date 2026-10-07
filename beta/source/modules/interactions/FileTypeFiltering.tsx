@@ -1,16 +1,16 @@
-// Module ID: 11526
-// Function ID: 11527
+// Module ID: 11782
+// Function ID: 11783
 // Name: FileTypeFiltering
-// Dependencies: [32, 19, 2115, 1370, 1127, 558, 576, 504, 5204, 2]
+// Dependencies: [32, 19, 2116, 1369, 1126, 558, 576, 504, 5707, 2]
 // Exports: getFileTypeFiltering
 
-// Module 11526 (FileTypeFiltering)
+// Module 11782 (FileTypeFiltering)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
+import intl4 from "intl" /* 1126 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,16 +19,16 @@ let _require, importDefault, set;
 
 let tmp;
 const get_initialized = tmp(504);
-const f107855 = (item) => item.startsWith(".");
-const f107856 = (arr) => arr.slice(1);
-const f107859 = (item) => {
+const f109090 = (item) => item.startsWith(".");
+const f109091 = (arr) => arr.slice(1);
+const f109094 = (item) => {
   closure_0 = item;
   return closure_0.some((item) => {
     const formatted = closure_0.toLowerCase();
     return formatted.endsWith("." + item);
   });
 };
-const f107860 = (item) => {
+const f109095 = (item) => {
   const hasItem = closure_1_6.includes(item) || closure_1_7.includes(item);
   return hasItem;
 };
@@ -129,8 +129,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     if (null != arr) {
       let items3;
       if (0 !== arr.length) {
-        const found = arr.filter(f107855);
-        const mapped = found.map(f107856);
+        const found = arr.filter(f109090);
+        const mapped = found.map(f109091);
         if (arr.includes("image")) {
           const push = mapped.push;
           const items = [];
@@ -188,7 +188,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   if (cResult[2] !== allowedExtensions) {
     const fn = function s(arr) {
       let closure_0 = arr;
-      const everyResult = 0 === arr.length || arr.every(f107859);
+      const everyResult = 0 === arr.length || arr.every(f109094);
       return everyResult;
     };
     cResult[2] = allowedExtensions;
@@ -246,8 +246,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
       }
     }
     cResult[6] = allowedExtensions;
-    cResult[7] = 0 === allowedExtensions.length || allowedExtensions.some(f107860);
-    const tmp29 = 0 === allowedExtensions.length || allowedExtensions.some(f107860);
+    cResult[7] = 0 === allowedExtensions.length || allowedExtensions.some(f109095);
+    const tmp29 = 0 === allowedExtensions.length || allowedExtensions.some(f109095);
   } else {
     class F {
       constructor() {
@@ -293,8 +293,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const memo = react.useMemo(() => {
     if (null != closure_0) {
       if (0 !== closure_0.length) {
-        const found = arr.filter(f107855);
-        const mapped = found.map(f107856);
+        const found = arr.filter(f109090);
+        const mapped = found.map(f109091);
         if (closure_0.includes("image")) {
           const push = mapped.push;
           const items = [];
@@ -356,7 +356,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   let items2 = [tmp2];
   const callback = react.useCallback((arr) => {
     closure_0 = memo;
-    const everyResult = 0 === memo.length || arr.every(f107859);
+    const everyResult = 0 === memo.length || arr.every(f109094);
     return everyResult;
   }, items1);
   const items3 = [memo];
@@ -378,7 +378,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     validateFilenames: callback,
     showInvalidFileTypeAlert: callback1,
     mediaFilesAllowed: react.useMemo(() => {
-      const tmp = 0 === memo.length || memo.some(f107860);
+      const tmp = 0 === memo.length || memo.some(f109095);
       return tmp;
     }, items3)
   };
@@ -391,8 +391,8 @@ export const getFileTypeFiltering = function getFileTypeFiltering(fileTypes) {
   if (null != fileTypes) {
     let items3;
     if (0 !== fileTypes.length) {
-      const found = fileTypes.filter(f107855);
-      const mapped = found.map(f107856);
+      const found = fileTypes.filter(f109090);
+      const mapped = found.map(f109091);
       if (fileTypes.includes("image")) {
         const push = mapped.push;
         const items = [];
@@ -444,7 +444,7 @@ export const getFileTypeFiltering = function getFileTypeFiltering(fileTypes) {
       typesFormattedString: tmp25,
       validateFilenames(items) {
           let closure_0 = items3;
-          const everyResult = 0 === items3.length || items.every(f107859);
+          const everyResult = 0 === items3.length || items.every(f109094);
           return everyResult;
         },
       showInvalidFileTypeAlert() {
@@ -459,9 +459,9 @@ export const getFileTypeFiltering = function getFileTypeFiltering(fileTypes) {
           obj2 = { types };
           show(obj);
         },
-      mediaFilesAllowed: 0 === items3.length || items3.some(f107860)
+      mediaFilesAllowed: 0 === items3.length || items3.some(f109095)
     };
-    0 === items3.length || items3.some(f107860);
+    0 === items3.length || items3.some(f109095);
     return obj;
   }
   items3 = [];

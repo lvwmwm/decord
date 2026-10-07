@@ -1,22 +1,22 @@
-// Module ID: 17437
-// Function ID: 17438
+// Module ID: 17804
+// Function ID: 17805
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 1253, 4801, 4530, 5204, 1127, 6571, 17415, 6624, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1252, 4854, 4567, 5707, 1126, 6644, 17784, 6701, 2]
 
-// Module 17437 (RolePermissionTemplatesActionSheet)
+// Module 17804 (RolePermissionTemplatesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
-import ActionSheet2 from "ActionSheet" /* 6624 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
+import ActionSheet2 from "ActionSheet" /* 6701 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
-import createStyles from "createStyles" /* 4837 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -190,8 +190,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((permissionsEdited) =
         obj.cancelText = intl3.string(permissionsEdited(closure_2[12]).t["ETE/oC"]);
         intl4 = permissionsEdited(closure_2[12]).intl;
         obj.confirmText = intl4.string(permissionsEdited(closure_2[12]).t.p89ACt);
-        obj.onConfirm = function onConfirm() { /* body not rendered: F147371 */ };
-        obj.onCancel = function onCancel() { /* body not rendered: F147372 */ };
+        obj.onConfirm = function onConfirm() { /* body not rendered: F149155 */ };
+        obj.onCancel = function onCancel() { /* body not rendered: F149156 */ };
         showResult = show(obj);
       } else {
         tmp2 = closure_2;

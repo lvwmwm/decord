@@ -1,15 +1,15 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16524
+// Function ID: 16525
 // Name: StandaloneMembersView
-// Dependencies: [19, 21, 558, 576, 1491, 1619, 9025, 5933, 1127, 16222, 11189, 11203, 11205, 6421, 2]
+// Dependencies: [19, 21, 558, 576, 1490, 1618, 9247, 6010, 1126, 16525, 11447, 11461, 11463, 6496, 2]
 
-// Module 16221 (StandaloneMembersView)
+// Module 16524 (StandaloneMembersView)
 import Fragment from "Fragment" /* 21 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 11189 */;
-import KickConfirmDefault from "KickConfirm" /* 11203 */;
-import BanConfirmDefault from "BanConfirm" /* 11205 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 16222 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 11447 */;
+import KickConfirmDefault from "KickConfirm" /* 11461 */;
+import BanConfirmDefault from "BanConfirm" /* 11463 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 16525 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,9 +31,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj = guildId(576);
   const cResult = obj.c(30);
   guildId = guildId.guildId;
-  const obj2 = guildId(1491);
+  const obj2 = guildId(1490);
   navigation = obj2.useNavigation();
-  const bottom = navigation(1619)().bottom;
+  const bottom = navigation(1618)().bottom;
   if (cResult[0] !== guildId) {
     const fn = function u() {
       const obj = GuildSettingsActionCreatorsDefault;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   dependencyMap = tmp9;
   if (cResult[5] !== navigation) {
-    const tmpResult = tmp(5933);
+    const tmpResult = tmp(6010);
     const headerCloseButton = tmpResult.getHeaderCloseButton(() => navigation.goBack());
     cResult[5] = navigation;
     cResult[6] = headerCloseButton;

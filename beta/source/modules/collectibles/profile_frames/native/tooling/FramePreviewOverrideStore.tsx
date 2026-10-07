@@ -1,15 +1,15 @@
-// Module ID: 7652
-// Function ID: 7653
+// Module ID: 7874
+// Function ID: 7875
 // Name: FramePreviewOverrideStore
-// Dependencies: [5, 17, 7653, 3, 7654, 1163, 7655, 7659, 570, 2]
+// Dependencies: [5, 17, 7875, 3, 7876, 1162, 7877, 7881, 570, 2]
 
-// Module 7652 (FramePreviewOverrideStore)
+// Module 7874 (FramePreviewOverrideStore)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 1163 */;
-import FileManagerUtils from "FileManagerUtils" /* 7654 */;
+import react_nativeDefault from "react-native" /* 1162 */;
+import FileManagerUtils from "FileManagerUtils" /* 7876 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FrameOverrideConstants from "FrameOverrideConstants" /* 7653 */;
+import FrameOverrideConstants from "FrameOverrideConstants" /* 7875 */;
 import module_570 from "module_570" /* 570 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 8075
-// Function ID: 8076
+// Module ID: 8911
+// Function ID: 8912
 // Name: CardSection
-// Dependencies: [19, 17, 1086, 21, 4837, 5837, 588, 558, 576, 8076, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 5915, 587, 558, 576, 8912, 2]
 
-// Module 8075 (CardSection)
+// Module 8911 (CardSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8076 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8912 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles_mod from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles_mod from "TextStyles" /* 5915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

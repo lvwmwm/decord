@@ -1,18 +1,18 @@
-// Module ID: 14631
-// Function ID: 14632
+// Module ID: 14915
+// Function ID: 14916
 // Name: QuestDisclosureModal
-// Dependencies: [21, 558, 576, 14630, 6796, 6413, 1127, 5933, 14632, 6421, 2]
+// Dependencies: [21, 558, 576, 14914, 6880, 4809, 1126, 6010, 14916, 6496, 2]
 
-// Module 14631 (QuestDisclosureModal)
+// Module 14915 (QuestDisclosureModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 5933 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6413 */;
-import Navigator2 from "Navigator" /* 6421 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6796 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14630 */;
-import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 14632 */;
+import intl2 from "intl" /* 1126 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4809 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6010 */;
+import Navigator2 from "Navigator" /* 6496 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 6880 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14914 */;
+import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 14916 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,8 +35,8 @@ const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const HeaderActionButton = tmp(6796).HeaderActionButton;
-    const intl = tmp(1127).intl;
+    const HeaderActionButton = tmp(6880).HeaderActionButton;
+    const intl = tmp(1126).intl;
     const tmp8 = <HeaderActionButton source={AssetRegistryDefault} onPress={first} accessibilityLabel={intl.string(intl2.t.cpT0Cq)} />;
     cResult[1] = tmp8;
     tmp5 = tmp8;

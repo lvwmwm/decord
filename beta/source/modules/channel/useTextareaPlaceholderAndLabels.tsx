@@ -1,13 +1,13 @@
-// Module ID: 11342
-// Function ID: 11343
+// Module ID: 11598
+// Function ID: 11599
 // Name: useTextareaPlaceholderAndLabels
-// Dependencies: [1086, 558, 576, 4990, 1127, 2]
+// Dependencies: [1085, 558, 576, 5043, 1126, 2]
 
-// Module 11342 (useTextareaPlaceholderAndLabels)
+// Module 11598 (useTextareaPlaceholderAndLabels)
 import react from "react" /* 576 */;
-import intl15 from "intl" /* 1127 */;
-import useChannelNameDefault from "useChannelName" /* 4990 */;
-import Constants from "Constants" /* 1086 */;
+import intl15 from "intl" /* 1126 */;
+import useChannelNameDefault from "useChannelName" /* 5043 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,8 +40,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol2 = Symbol;
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
           const obj2 = { placeholder: intl11.string(intl15.t.YzpScd), accessibilityLabel: intl12.string(intl15.t.YzpScd) };
-          intl11 = tmp(1127).intl;
-          intl12 = tmp(1127).intl;
+          intl11 = tmp(1126).intl;
+          intl12 = tmp(1126).intl;
           cResult[1] = obj2;
           tmp33 = obj2;
         } else {
@@ -53,8 +53,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol = Symbol;
         if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
           const obj3 = { placeholder: intl9.string(intl15.t["RRvRp/"]), accessibilityLabel: intl10.string(intl15.t["RRvRp/"]) };
-          intl9 = tmp(1127).intl;
-          intl10 = tmp(1127).intl;
+          intl9 = tmp(1126).intl;
+          intl10 = tmp(1126).intl;
           cResult[2] = obj3;
           tmp31 = obj3;
         } else {
@@ -65,7 +65,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp25;
         let tmp27;
         if (cResult[3] !== tmp6) {
-          const intl7 = tmp(1127).intl;
+          const intl7 = tmp(1126).intl;
           const obj4 = { channel: tmp6 };
           const formatToPlainStringResult = intl7.formatToPlainString(intl15.t.Y6qWLc, obj4);
           cResult[3] = tmp6;
@@ -75,7 +75,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp25 = cResult[4];
         }
         if (cResult[5] !== tmp7) {
-          const intl8 = tmp(1127).intl;
+          const intl8 = tmp(1126).intl;
           const obj5 = { channel: tmp7 };
           const formatToPlainStringResult1 = intl8.formatToPlainString(intl15.t.KffKoR, obj5);
           cResult[5] = tmp7;
@@ -102,7 +102,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp20;
           let tmp22;
           if (cResult[10] !== tmp6) {
-            const intl5 = tmp(1127).intl;
+            const intl5 = tmp(1126).intl;
             const obj7 = { channel: tmp6 };
             const formatToPlainStringResult2 = intl5.formatToPlainString(intl15.t["8lzR/R"], obj7);
             cResult[10] = tmp6;
@@ -112,7 +112,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp20 = cResult[11];
           }
           if (cResult[12] !== tmp7) {
-            const intl6 = tmp(1127).intl;
+            const intl6 = tmp(1126).intl;
             const obj8 = { channel: tmp7 };
             const formatToPlainStringResult3 = intl6.formatToPlainString(intl15.t.UZIMWS, obj8);
             cResult[12] = tmp7;
@@ -137,7 +137,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp15;
           let tmp17;
           if (cResult[17] !== tmp6) {
-            const intl3 = tmp(1127).intl;
+            const intl3 = tmp(1126).intl;
             const obj10 = { channel: tmp6 };
             const formatToPlainStringResult4 = intl3.formatToPlainString(intl15.t["4c+CAx"], obj10);
             cResult[17] = tmp6;
@@ -147,7 +147,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp15 = cResult[18];
           }
           if (cResult[19] !== tmp7) {
-            const intl4 = tmp(1127).intl;
+            const intl4 = tmp(1126).intl;
             const obj11 = { channel: tmp7 };
             const formatToPlainStringResult5 = intl4.formatToPlainString(intl15.t.fqOxbV, obj11);
             cResult[19] = tmp7;
@@ -172,7 +172,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp10;
           let tmp12;
           if (cResult[24] !== tmp6) {
-            const intl = tmp(1127).intl;
+            const intl = tmp(1126).intl;
             const obj13 = { channel: tmp6 };
             const formatToPlainStringResult6 = intl.formatToPlainString(intl15.t["8lzR/R"], obj13);
             cResult[24] = tmp6;
@@ -182,7 +182,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp10 = cResult[25];
           }
           if (cResult[26] !== tmp7) {
-            const intl2 = tmp(1127).intl;
+            const intl2 = tmp(1126).intl;
             const obj14 = { channel: tmp7 };
             const formatToPlainStringResult7 = intl2.formatToPlainString(intl15.t.ih7ZSA, obj14);
             cResult[26] = tmp7;
@@ -208,8 +208,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj16 = { placeholder: intl13.string(intl15.t.MKDeyL), accessibilityLabel: intl14.string(intl15.t.MKDeyL) };
-    intl13 = tmp(1127).intl;
-    intl14 = tmp(1127).intl;
+    intl13 = tmp(1126).intl;
+    intl14 = tmp(1126).intl;
     cResult[0] = obj16;
     first = obj16;
   } else {

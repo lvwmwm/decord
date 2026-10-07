@@ -1,13 +1,13 @@
-// Module ID: 6638
-// Function ID: 6639
+// Module ID: 6716
+// Function ID: 6717
 // Name: HotspotActionCreators
-// Dependencies: [1086, 1253, 585, 2]
+// Dependencies: [1085, 1252, 584, 2]
 // Exports: clearHotspotOverride, hideHotspot, setHotspotOverride
 
-// Module 6638 (HotspotActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+// Module 6716 (HotspotActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

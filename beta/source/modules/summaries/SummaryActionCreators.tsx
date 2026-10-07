@@ -1,20 +1,20 @@
-// Module ID: 9537
-// Function ID: 9538
+// Module ID: 9764
+// Function ID: 9765
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 5590, 2051, 9538, 1086, 1103, 585, 1283, 4737, 12, 9540, 558, 576, 573, 2]
+// Dependencies: [5, 19, 5436, 2051, 9765, 1085, 1102, 584, 1282, 5312, 12, 9767, 558, 576, 573, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages
 
-// Module 9537 (SummaryActionCreators)
+// Module 9764 (SummaryActionCreators)
 import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5590 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import SummaryStore from "SummaryStore" /* 9538 */;
+import SummaryStore from "SummaryStore" /* 9765 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -355,96 +355,164 @@ function fetchSummariesBulk() {
 }
 obj = function _fetchSummariesBulk() {
   obj = _asyncToGenerator(async function(arg0, value) {
-    let aPIError;
-    let body;
-    let closure_4;
-    let flag;
-    let flag2;
     let obj13;
     let obj9;
-    let substr;
-    let summaries;
     let closure_0 = arg0;
     let closure_1 = value;
-    let closure_2 = substr;
-    if (substr == null) {
-      closure_2 = [];
-    }
-    substr = closure_2;
-    const _Date2 = Date;
-    let requestedAt = Date.now();
-    const obj6 = { withQuickSwitcher: flag, withChannelAffinities: flag2 };
-    const combined = substr.concat(closure_132_7.defaultChannelIds(obj6));
-    const found = combined.filter((item) => {
-      channel = channel.getChannel(item);
-      obj = closure_1_0(closure_1_2[11]);
-      return obj.canSeeChannelSummaries(channel, false, true);
-    });
-    const found1 = found.filter((item) => {
-      const timestamp = Date.now();
-      const statusResult = closure_1_7.status(item);
-      let fetching;
-      if (statusResult != null) {
-        fetching = statusResult.fetching;
-      }
-      if (fetching) {
-        return false;
-      } else {
-        let lastReceivedAt;
-        if (statusResult != null) {
-          lastReceivedAt = statusResult.lastReceivedAt;
-        }
-        return null == lastReceivedAt || timestamp - lastReceivedAt > closure_1_9;
-      }
-    });
-    substr = found1.slice(0, 50);
-    if (0 === substr.length) {
-      return Promise.resolve(null);
-    }
-    const obj8 = { type: "REQUEST_CHANNEL_SUMMARIES_BULK", channelIds: substr, requestedAt };
-    const obj11 = closure_132_1(closure_132_2[7]);
-    obj11.dispatch(obj8);
-    const HTTP = closure_132_0(closure_132_2[8]).HTTP;
-    const request = { url: closure_132_8.USER_SUMMARIES, body: obj9, rejectWithError: false };
-    obj9 = { channel_ids: substr };
-    await HTTP.post(request);
-    if (2 === c7) {
-      let c6 = 0;
-      let closure_7 = body;
-      const self = this;
-      const self2 = this;
-      aPIError = new closure_132_0(closure_132_2[9]).APIError(closure_7);
-    } else if (arg0 === 1) {
-      let c8 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c6 = 0;
+    if (c8 === 2) {
       c8 = 3;
-      obj = { value, done: true };
-      return obj;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      body = value;
-      c6 = 0;
+      let c6;
+      let body;
+      try {
+        let requestedAt;
+        let flag;
+        let flag2;
+        let substr;
+        let aPIError;
+        let summaries;
+        c8 = 2;
+        if (0 === c7) {
+          if (arg0 === 1) {
+            c8 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c8 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_4 = tmp;
+            requestedAt = tmp4;
+            flag = undefined;
+            flag2 = undefined;
+            substr = closure_0;
+            let obj4 = closure_1;
+            if (closure_1 === undefined) {
+              obj4 = {};
+            }
+            flag = obj4.useQuickSwitcher ?? true;
+            flag2 = obj4.useChannelAffinities ?? true;
+            requestedAt = undefined;
+            aPIError = undefined;
+            body = undefined;
+            summaries = undefined;
+            c7 = 1;
+            c8 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else if (1 === c7) {
+          if (arg0 === 1) {
+            c8 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c8 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            let closure_2 = substr;
+            if (substr == null) {
+              closure_2 = [];
+            }
+            substr = closure_2;
+            const _Date2 = Date;
+            requestedAt = Date.now();
+            const obj6 = { withQuickSwitcher: flag, withChannelAffinities: flag2 };
+            const combined = substr.concat(closure_132_7.defaultChannelIds(obj6));
+            const found = combined.filter((item) => {
+              channel = channel.getChannel(item);
+              obj = closure_1_0(closure_1_2[11]);
+              return obj.canSeeChannelSummaries(channel, false, true);
+            });
+            const found1 = found.filter((item) => {
+              const timestamp = Date.now();
+              const statusResult = closure_1_7.status(item);
+              let fetching;
+              if (statusResult != null) {
+                fetching = statusResult.fetching;
+              }
+              if (fetching) {
+                return false;
+              } else {
+                let lastReceivedAt;
+                if (statusResult != null) {
+                  lastReceivedAt = statusResult.lastReceivedAt;
+                }
+                return null == lastReceivedAt || timestamp - lastReceivedAt > closure_1_9;
+              }
+            });
+            substr = found1.slice(0, 50);
+            if (0 === substr.length) {
+              c8 = 3;
+              const obj7 = { value: Promise.resolve(null), done: true };
+              return obj7;
+            } else {
+              const obj8 = { type: "REQUEST_CHANNEL_SUMMARIES_BULK", channelIds: substr, requestedAt };
+              const obj11 = closure_132_1(closure_132_2[7]);
+              obj11.dispatch(obj8);
+              aPIError = undefined;
+              body = undefined;
+              c6 = 1;
+              const HTTP = closure_132_0(closure_132_2[8]).HTTP;
+              const request = { url: closure_132_8.USER_SUMMARIES, body: obj9, rejectWithError: false };
+              obj9 = { channel_ids: substr };
+              c7 = 3;
+              c8 = 1;
+              const obj10 = { value: HTTP.post(request), done: false };
+              return obj10;
+            }
+          }
+        } else {
+          if (2 === c7) {
+            c6 = 0;
+            let closure_7 = body;
+            const self = this;
+            const self2 = this;
+            aPIError = new closure_132_0(closure_132_2[9]).APIError(closure_7);
+          } else if (arg0 === 1) {
+            c8 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 0;
+            c8 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            body = value;
+            c6 = 0;
+          }
+          summaries = undefined;
+          if (body != null) {
+            summaries = body.body.summaries;
+          }
+          const obj12 = { type: "RECEIVE_CHANNEL_SUMMARIES_BULK", requestedAt, receivedAt: Date.now(), summaries, requestArgs: obj13, error: aPIError };
+          const _Date = Date;
+          const dispatch = closure_132_1(closure_132_2[7]).dispatch;
+          const tmp21 = closure_132_1(closure_132_2[7]);
+          obj13 = { channelIds: substr };
+          dispatch(obj12);
+          c8 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp35) {
+        body = tmp35;
+        if (0 === c6) {
+          c8 = 3;
+          throw tmp35;
+        } else {
+          c7 = 2;
+        }
+      }
     }
-    if (body != null) {
-      summaries = body.body.summaries;
-    }
-    const obj12 = { type: "RECEIVE_CHANNEL_SUMMARIES_BULK", requestedAt, receivedAt: Date.now(), summaries, requestArgs: obj13, error: aPIError };
-    const _Date = Date;
-    const dispatch = closure_132_1(closure_132_2[7]).dispatch;
-    const tmp21 = closure_132_1(closure_132_2[7]);
-    obj13 = { channelIds: substr };
-    dispatch(obj12);
-    await "IconComponent";
-    requestedAt = tmp4;
-    substr = closure_0;
-    let obj4 = closure_1;
-    if (closure_1 === undefined) {
-      obj4 = {};
-    }
-    flag = obj4.useQuickSwitcher ?? true;
-    flag2 = obj4.useChannelAffinities ?? true;
-    return "Reflect";
   });
   return obj(...arguments);
 };

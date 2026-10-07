@@ -1,13 +1,13 @@
-// Module ID: 7891
-// Function ID: 7892
+// Module ID: 8112
+// Function ID: 8113
 // Name: ManualAgeAssuranceFallbackExperiment
-// Dependencies: [7885, 1441, 7871, 2]
+// Dependencies: [8106, 1440, 8092, 2]
 // Exports: isManualAgeAssuranceFallbackEnabled
 
-// Module 7891 (ManualAgeAssuranceFallbackExperiment)
-import SafetyHubUtils from "SafetyHubUtils" /* 7871 */;
-import SafetyHubStore from "SafetyHubStore" /* 7885 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+// Module 8112 (ManualAgeAssuranceFallbackExperiment)
+import SafetyHubUtils from "SafetyHubUtils" /* 8092 */;
+import SafetyHubStore from "SafetyHubStore" /* 8106 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

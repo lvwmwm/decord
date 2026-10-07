@@ -1,17 +1,17 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8314
+// Function ID: 8315
 // Name: UserProfileWidgetReportButton
-// Dependencies: [109, 19, 17, 21, 558, 576, 1127, 8121, 8123, 7364, 588, 7366, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 1126, 8315, 8317, 7577, 587, 7579, 2]
 
-// Module 8120 (UserProfileWidgetReportButton)
+// Module 8314 (UserProfileWidgetReportButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 7364 */;
-import ContextMenu from "ContextMenu" /* 7366 */;
-import FlagIcon from "FlagIcon" /* 8121 */;
-import showReportModalForUserWidget from "showReportModalForUserWidget" /* 8123 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 7577 */;
+import ContextMenu from "ContextMenu" /* 7579 */;
+import FlagIcon from "FlagIcon" /* 8315 */;
+import showReportModalForUserWidget from "showReportModalForUserWidget" /* 8317 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -35,8 +35,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   userId = userId.userId;
   const widget = userId.widget;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1127).intl;
-    const stringResult = intl.string(userId(1127).t.D4GvHE);
+    let intl = tmp(1126).intl;
+    const stringResult = intl.string(userId(1126).t.D4GvHE);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       tmp7 = cResult[4];
     }
     if (cResult[5] !== tmp6) {
-      const tmp10 = jsx(userId(7366).ContextMenu, { items: tmp6, children: tmp7 });
+      const tmp10 = jsx(userId(7579).ContextMenu, { items: tmp6, children: tmp7 });
       cResult[5] = tmp6;
       cResult[6] = tmp10;
       tmp8 = tmp10;
@@ -72,12 +72,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     }
     return tmp8;
   }
-  const items = [{ label: first, variant: "destructive", IconComponent: userId(8121).FlagIcon, action }];
+  const items = [{ label: first, variant: "destructive", IconComponent: userId(8315).FlagIcon, action }];
   cResult[1] = userId;
   cResult[2] = widget;
   cResult[3] = items;
   tmp6 = items;
-  ({ label: first, variant: "destructive", IconComponent: userId(8121).FlagIcon, action });
+  ({ label: first, variant: "destructive", IconComponent: userId(8315).FlagIcon, action });
 }) : ((arg0) => {
   let hitSlop;
   let intl;

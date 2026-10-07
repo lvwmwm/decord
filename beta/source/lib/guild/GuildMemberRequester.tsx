@@ -1,9 +1,9 @@
-// Module ID: 5740
-// Function ID: 5741
+// Module ID: 5584
+// Function ID: 5585
 // Name: GuildMemberRequester
 // Dependencies: [2046, 12, 2]
 
-// Module 5740 (GuildMemberRequester)
+// Module 5584 (GuildMemberRequester)
 import _modDef12 from "module_12" /* 12 */;
 import Timers from "Timers" /* 2046 */;
 import size from "module_2" /* 2 */;

@@ -1,20 +1,20 @@
-// Module ID: 10638
-// Function ID: 10639
+// Module ID: 10878
+// Function ID: 10879
 // Name: OrbsBadgeCoachmark
-// Dependencies: [109, 19, 17, 21, 4837, 558, 576, 10639, 1127, 4695, 9656, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 558, 576, 10879, 1126, 4737, 9882, 2]
 // Exports: default
 
-// Module 10638 (OrbsBadgeCoachmark)
+// Module 10878 (OrbsBadgeCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import useCoachmark from "useCoachmark" /* 9656 */;
-import _modDef10639 from "module_10639" /* 10639 */;
+import intl2 from "intl" /* 1126 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import useCoachmark from "useCoachmark" /* 9882 */;
+import _modDef10879 from "module_10879" /* 10879 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(6);
   const tmp3 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef10639 };
+    const obj2 = { uri: _modDef10879 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -62,8 +62,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp10 = tmp11;
 }) : (() => {
   const tmp = closure_9();
-  ({ source: { uri: _modDef10639 }, style: tmp.coachmarkImage });
-  ({ uri: _modDef10639 });
+  ({ source: { uri: _modDef10879 }, style: tmp.coachmarkImage });
+  ({ uri: _modDef10879 });
   return <metroRequire style={tmp.coachmarkImageContainer}>{null}</metroRequire>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -77,7 +77,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   disabled = disabled.disabled;
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t["4ivm+P"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -98,7 +98,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
       const rootNavigationRef = obj.getRootNavigationRef();
       if (null != rootNavigationRef) {
         if (rootNavigationRef.isReady()) {
-          rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "call" });
+          rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "r" });
         }
       }
       return false;
@@ -177,7 +177,7 @@ export default function OrbsBadgeCoachmark(badgeRef) {
       tmp11 = cResult[1];
       tmp12 = cResult[2];
     }
-    const tmp8Result = tmp8(9656);
+    const tmp8Result = tmp8(9882);
     const coachmark = tmp8Result.useCoachmark(tmp11, tmp12);
   } else {
     badgeRef = badgeRef.badgeRef;

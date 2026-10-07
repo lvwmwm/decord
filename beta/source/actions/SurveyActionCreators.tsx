@@ -1,18 +1,16 @@
-// Module ID: 5029
-// Function ID: 5030
+// Module ID: 15586
+// Function ID: 15587
 // Name: SurveyActionCreators
-// Dependencies: [5028, 1086, 585, 1253, 5030, 1261, 2063, 1283, 2]
-// Exports: overrideSurvey, surveyFetch, surveyHide, surveySeen
+// Dependencies: [5081, 1085, 584, 1252, 5083, 1260, 2064, 1282, 2]
+// Exports: overrideSurvey, surveyHide, surveySeen
 
-// Module 5029 (SurveyActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import TypeUtils from "TypeUtils" /* 2063 */;
-import SurveyStore2 from "SurveyStore" /* 5028 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
-import Constants from "Constants" /* 1086 */;
+// Module 15586 (SurveyActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import TypeUtils from "TypeUtils" /* 2064 */;
+import SurveyStore2 from "SurveyStore" /* 5081 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,61 +42,6 @@ export const surveyHide = function surveyHide(key, dismissed) {
     const obj4 = { notice_type: metroRequire.SURVEY };
     track(hasOwnProperty.APP_NOTICE_PRIMARY_CTA_OPENED, obj4);
   }
-};
-export const surveyFetch = function surveyFetch(surveyOverride, disable_auto_seen) {
-  let obj4;
-  function properties(body) {
-    let survey;
-    if (body != null) {
-      body = body.body;
-      if (body != null) {
-        survey = body.survey;
-      }
-    }
-    let key;
-    const exact = require("TypeUtils").exact;
-    require("TypeUtils");
-    if (survey != null) {
-      key = survey.key;
-    }
-    return exact({ key });
-  }
-  let obj = {};
-  if (null != surveyOverride) {
-    obj.survey_override = surveyOverride;
-  }
-  if (null != disable_auto_seen) {
-    obj.disable_auto_seen = disable_auto_seen;
-  }
-  const tmp = TrackedHTTPUtilsDefault;
-  const request = { url: metroImportDefault.USER_SURVEY, query: obj, trackedActionData: { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_SURVEY_FETCH, properties }, rejectWithError: obj4.rejectWithMigratedError() };
-  const get = tmp.get;
-  ({ event: discord_common_AnalyticsUtils.NetworkActionNames.USER_SURVEY_FETCH, properties });
-  obj4 = HTTPUtils;
-  const value = get(request);
-  return value.then((body) => {
-    let survey;
-    const dispatch = DispatcherDefault.dispatch;
-    DispatcherDefault;
-    if (body != null) {
-      body = body.body;
-      if (body != null) {
-        survey = body.survey;
-      }
-    }
-    dispatch({ type: "SURVEY_FETCHED", survey });
-    let survey1;
-    if (body != null) {
-      const body2 = body.body;
-      if (body2 != null) {
-        survey1 = body2.survey;
-      }
-    }
-    return survey1;
-  }, () => {
-    const obj = DispatcherDefault;
-    obj.dispatch({ type: "SURVEY_FETCHED", survey: null });
-  });
 };
 export const surveySeen = function surveySeen(key) {
   let obj5;

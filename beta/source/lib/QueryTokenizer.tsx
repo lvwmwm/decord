@@ -1,9 +1,9 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11975
+// Function ID: 11976
 // Name: QueryTokenizer
 // Dependencies: [2]
 
-// Module 11722 (QueryTokenizer)
+// Module 11975 (QueryTokenizer)
 import size from "module_2" /* 2 */;
 
 let map;
@@ -12,10 +12,10 @@ function getMatch(str, arg1, index) {
   if (null == arg1) {
     return null;
   } else {
-    let num10 = 0;
+    let num8 = 0;
     if (0 < arg1.length) {
       while (true) {
-        let obj = arg1[num10];
+        let obj = arg1[num8];
         let match = str.match(obj.regex);
         let tmp4 = null;
         if (null != match) {
@@ -49,18 +49,24 @@ function getMatch(str, arg1, index) {
                   obj3._data = tmp10._data;
                 }
               } else if (null != tmp10) {
-                let items2 = [];
-                let arraySpreadResult6 = HermesBuiltin.arraySpread(items2, tmp10, 0);
-                obj3.match = items2;
-                let num3 = 0;
-                if (typeof tmp10 !== "string") {
-                  let num4 = tmp10.index;
-                  if (num4 == null) {
-                    num4 = 0;
-                  }
-                  num3 = num4;
+                let items3;
+                if (typeof tmp10 === "string") {
+                  let items2 = [tmp10];
+                  items3 = items2;
+                } else {
+                  items3 = [];
+                  let arraySpreadResult6 = HermesBuiltin.arraySpread(items3, tmp10, 0);
                 }
-                obj3.start = num3;
+                obj3.match = items3;
+                let num2 = 0;
+                if (typeof tmp10 !== "string") {
+                  let num3 = tmp10.index;
+                  if (num3 == null) {
+                    num3 = 0;
+                  }
+                  num2 = num3;
+                }
+                obj3.start = num2;
                 obj3.type = undefined;
               } else {
                 obj3.match = [];
@@ -77,42 +83,48 @@ function getMatch(str, arg1, index) {
             if (typeof Token === "function") {
               let obj4 = Object.create(Token.prototype);
               if (tmp4 instanceof Token) {
-                let items3 = [];
-                let arraySpreadResult7 = HermesBuiltin.arraySpread(items3, tmp4.match, 0);
-                obj4.match = items3;
-                ({ start: tmp20.start, type: tmp20.type } = tmp4);
+                let items4 = [];
+                let arraySpreadResult7 = HermesBuiltin.arraySpread(items4, tmp4.match, 0);
+                obj4.match = items4;
+                ({ start: tmp17.start, type: tmp17.type } = tmp4);
                 if (null != tmp4._data) {
                   obj4._data = tmp4._data;
                 }
               } else if (null != tmp4) {
-                let items4 = [];
-                let arraySpreadResult8 = HermesBuiltin.arraySpread(items4, tmp4, 0);
-                obj4.match = items4;
-                let num7 = 0;
-                if (typeof tmp4 !== "string") {
-                  let num8 = tmp4.index;
-                  if (num8 == null) {
-                    num8 = 0;
-                  }
-                  num7 = num8;
+                let items6;
+                if (typeof tmp4 === "string") {
+                  let items5 = [tmp4];
+                  items6 = items5;
+                } else {
+                  items6 = [];
+                  let arraySpreadResult8 = HermesBuiltin.arraySpread(items6, tmp4, 0);
                 }
-                obj4.start = num7;
+                obj4.match = items6;
+                let num5 = 0;
+                if (typeof tmp4 !== "string") {
+                  let num6 = tmp4.index;
+                  if (num6 == null) {
+                    num6 = 0;
+                  }
+                  num5 = num6;
+                }
+                obj4.start = num5;
                 obj4.type = type;
               } else {
                 obj4.match = [];
                 obj4.start = 0;
                 obj4.type = type;
               }
-              let tmp27 = null == cache;
-              if (!tmp27) {
+              let tmp21 = null == cache;
+              if (!tmp21) {
                 let hasItem;
                 if (cache != null) {
                   hasItem = cache.has(tmp4[0]);
                 }
-                tmp27 = hasItem;
+                tmp21 = hasItem;
               }
               tmp11 = obj4;
-              if (!tmp27) {
+              if (!tmp21) {
                 let result = cache.set(tmp4[0], obj4);
                 tmp11 = obj4;
               }
@@ -123,14 +135,14 @@ function getMatch(str, arg1, index) {
           }
           return tmp11;
         }
-        num10 = num10 + 1;
+        num8 = num8 + 1;
       }
       throw new TypeError("Trying to call a non-function");
     }
     return null;
   }
 }
-const re0 = /.+/g;
+const re0 = /[\s\S]+/;
 const NON_TOKEN = "NON_TOKEN";
 class QueryTokenizer {
   constructor() {
@@ -210,7 +222,7 @@ class QueryTokenizer {
         let tmp6 = tmp2;
         if (null != _getMatchResult) {
           if ("" !== ``) {
-            let tmp33 = Token;
+            let tmp27 = Token;
             let push = items.push;
             let match = ``.match(re0);
             let tmp11 = null;
@@ -222,10 +234,10 @@ class QueryTokenizer {
             }
             let _nonTokenType = self._nonTokenType;
             let self2 = this;
-            if (typeof tmp33 !== "function") {
+            if (typeof tmp27 !== "function") {
               break;
             } else {
-              let obj = Object.create(tmp33.prototype);
+              let obj = Object.create(tmp27.prototype);
               if (tmp11 instanceof Token) {
                 let items2 = [];
                 let arraySpreadResult6 = HermesBuiltin.arraySpread(items2, tmp11.match, 0);
@@ -235,18 +247,24 @@ class QueryTokenizer {
                   obj._data = tmp11._data;
                 }
               } else if (null != tmp11) {
-                let items3 = [];
-                let arraySpreadResult7 = HermesBuiltin.arraySpread(items3, tmp11, 0);
-                obj.match = items3;
-                let num5 = 0;
-                if (typeof tmp11 !== "string") {
-                  let num6 = tmp11.index;
-                  if (num6 == null) {
-                    num6 = 0;
-                  }
-                  num5 = num6;
+                let items4;
+                if (typeof tmp11 === "string") {
+                  let items3 = [tmp11];
+                  items4 = items3;
+                } else {
+                  items4 = [];
+                  let arraySpreadResult7 = HermesBuiltin.arraySpread(items4, tmp11, 0);
                 }
-                obj.start = num5;
+                obj.match = items4;
+                let num4 = 0;
+                if (typeof tmp11 !== "string") {
+                  let num5 = tmp11.index;
+                  if (num5 == null) {
+                    num5 = 0;
+                  }
+                  num4 = num5;
+                }
+                obj.start = num4;
                 obj.type = _nonTokenType;
               } else {
                 obj.match = [];
@@ -278,38 +296,44 @@ class QueryTokenizer {
     if ("" !== str3) {
       const push2 = items.push;
       const match1 = str3.match(re0);
-      let tmp24 = null;
+      let tmp21 = null;
       if (null != match1) {
-        const items4 = [];
-        HermesBuiltin.arraySpread(items4, match1, 0);
-        items4.index = num2;
-        tmp24 = items4;
+        const items5 = [];
+        HermesBuiltin.arraySpread(items5, match1, 0);
+        items5.index = num2;
+        tmp21 = items5;
       }
       const _nonTokenType2 = self._nonTokenType;
       const self3 = this;
       if (typeof Token === "function") {
         const obj2 = Object.create(Token.prototype);
-        if (tmp24 instanceof Token) {
-          const items5 = [];
-          HermesBuiltin.arraySpread(items5, tmp24.match, 0);
-          obj2.match = items5;
-          ({ start: tmp25.start, type: tmp25.type } = tmp24);
-          if (null != tmp24._data) {
-            obj2._data = tmp24._data;
-          }
-        } else if (null != tmp24) {
+        if (tmp21 instanceof Token) {
           const items6 = [];
-          HermesBuiltin.arraySpread(items6, tmp24, 0);
+          HermesBuiltin.arraySpread(items6, tmp21.match, 0);
           obj2.match = items6;
-          let num10 = 0;
-          if (typeof tmp24 !== "string") {
-            let num11 = tmp24.index;
-            if (num11 == null) {
-              num11 = 0;
-            }
-            num10 = num11;
+          ({ start: tmp22.start, type: tmp22.type } = tmp21);
+          if (null != tmp21._data) {
+            obj2._data = tmp21._data;
           }
-          obj2.start = num10;
+        } else if (null != tmp21) {
+          let items8;
+          if (typeof tmp21 === "string") {
+            const items7 = [tmp21];
+            items8 = items7;
+          } else {
+            items8 = [];
+            HermesBuiltin.arraySpread(items8, tmp21, 0);
+          }
+          obj2.match = items8;
+          let num8 = 0;
+          if (typeof tmp21 !== "string") {
+            let num9 = tmp21.index;
+            if (num9 == null) {
+              num9 = 0;
+            }
+            num8 = num9;
+          }
+          obj2.start = num8;
           obj2.type = _nonTokenType2;
         } else {
           obj2.match = [];
@@ -380,18 +404,24 @@ class Token {
         obj._data = items._data;
       }
     } else if (null != items) {
-      const items1 = [];
-      HermesBuiltin.arraySpread(items1, items, 0);
-      obj.match = items1;
-      let num3 = 0;
-      if (typeof items !== "string") {
-        let num4 = items.index;
-        if (num4 == null) {
-          num4 = 0;
-        }
-        num3 = num4;
+      let items2;
+      if (typeof items === "string") {
+        const items1 = [items];
+        items2 = items1;
+      } else {
+        items2 = [];
+        HermesBuiltin.arraySpread(items2, items, 0);
       }
-      obj.start = num3;
+      obj.match = items2;
+      let num2 = 0;
+      if (typeof items !== "string") {
+        let num3 = items.index;
+        if (num3 == null) {
+          num3 = 0;
+        }
+        num2 = num3;
+      }
+      obj.start = num2;
       obj.type = type;
     } else {
       obj.match = [];
@@ -441,7 +471,15 @@ Object.defineProperty(prototype2, "end", {
 });
 Object.defineProperty(prototype2, "length", {
   get: function length() {
-    return this.match[0].length;
+    const first = this.match[0];
+    let num;
+    if (first != null) {
+      num = first.length;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    return num;
   },
   set: undefined
 });

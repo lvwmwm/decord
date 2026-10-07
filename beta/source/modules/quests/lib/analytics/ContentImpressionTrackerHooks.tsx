@@ -1,16 +1,16 @@
-// Module ID: 10675
-// Function ID: 10676
+// Module ID: 10916
+// Function ID: 10917
 // Name: ContentImpressionTrackerHooks
-// Dependencies: [19, 7120, 558, 576, 5764, 504, 7145, 7724, 10676, 2]
+// Dependencies: [19, 7187, 558, 576, 5630, 504, 7212, 7946, 10917, 2]
 // Exports: useQuestImpressionId
 
-// Module 10675 (ContentImpressionTrackerHooks)
+// Module 10916 (ContentImpressionTrackerHooks)
 import react2 from "react" /* 576 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
-import ContentImpressionTracker from "ContentImpressionTracker" /* 10676 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
+import react3 from "react" /* 10917 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7120 */;
+import QuestStore from "QuestStore" /* 7187 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questOrQuests) => {
   }
   const tmp4Result = tmp4(questOrQuests, adContentId);
   if ("questOrQuests" in questOrQuests) {
-    adCreativeType = tmp(5764).AdCreativeType.QUEST;
+    adCreativeType = tmp(5630).AdCreativeType.QUEST;
   } else {
     adCreativeType = questOrQuests.adCreativeType;
   }
@@ -228,7 +228,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((adContentIds) => {
     if (null != stateFromStores) {
       let tmp10;
       if (cResult[5] !== stateFromStores) {
-        const tmpResult2 = adContentIds(7145);
+        const tmpResult2 = adContentIds(7212);
         const questStatus = tmpResult2.getQuestStatus(stateFromStores);
         cResult[5] = stateFromStores;
         cResult[6] = questStatus;
@@ -238,7 +238,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((adContentIds) => {
       }
       tmp9 = tmp10;
     }
-    return tmp9 !== adCreativeType(7724)(tmp9);
+    return tmp9 !== adCreativeType(7946)(tmp9);
   }
   const fn = function u() {
     let quest = null;
@@ -286,7 +286,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((adContentIds) => {
   return memo !== adCreativeType(stateFromStores[7])(memo);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => react.useContext(ContentImpressionTracker.QuestImpressionContext)) : (() => react.useContext(ContentImpressionTracker.QuestImpressionContext));
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => react.useContext(react3.QuestImpressionContext)) : (() => react.useContext(react3.QuestImpressionContext));
 let closure_6 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
@@ -340,6 +340,44 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return id;
   }, items);
 });
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const context = react.useContext(react3.QuestImpressionContext);
+  if (cResult[0] !== context) {
+    const fn = function n() {
+      let id;
+      if (context != null) {
+        const current = context.current;
+        if (current != null) {
+          id = current.getId();
+        }
+      }
+      return id;
+    };
+    cResult[0] = context;
+    cResult[1] = fn;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : (() => {
+  const context = react.useContext(react3.QuestImpressionContext);
+  const items = [context];
+  return react.useCallback(() => {
+    let id;
+    if (context != null) {
+      const current = context.current;
+      if (current != null) {
+        id = current.getId();
+      }
+    }
+    return id;
+  }, items);
+});
 const fn2 = () => {
   if (typeof fn === "function") {
     const tmp2 = closure_6();
@@ -364,3 +402,4 @@ export const useQuestImpressionRef = tmp4;
 export { useQuestImpression };
 export const useQuestImpressionId = fn2;
 export const useGetQuestImpressionId = tmp7;
+export const useGetOptionalQuestImpressionId = tmp8;

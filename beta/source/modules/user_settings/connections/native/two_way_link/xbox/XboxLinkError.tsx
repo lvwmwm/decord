@@ -1,16 +1,16 @@
-// Module ID: 8552
-// Function ID: 8553
+// Module ID: 8759
+// Function ID: 8760
 // Name: XboxLinkError
-// Dependencies: [19, 8528, 21, 558, 576, 1491, 8553, 1127, 8554, 2]
+// Dependencies: [19, 8735, 21, 558, 576, 1490, 8760, 1126, 8761, 2]
 
-// Module 8552 (XboxLinkError)
+// Module 8759 (XboxLinkError)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import useNavigation from "useNavigation" /* 1491 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 8528 */;
-import useConnectRetry from "useConnectRetry" /* 8553 */;
-import TwoWayLinkError2 from "TwoWayLinkError" /* 8554 */;
+import intl3 from "intl" /* 1126 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 8735 */;
+import useConnectRetry from "useConnectRetry" /* 8760 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 8761 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,9 +30,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const obj3 = useConnectRetry;
   const connectRetry = obj3.useConnectRetry(navigation, XboxLinkModalScenes.PRE_CONNECT);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.INwPCV);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl3.t.GyXRRz);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;

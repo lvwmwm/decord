@@ -1,15 +1,15 @@
-// Module ID: 11382
-// Function ID: 11383
+// Module ID: 11638
+// Function ID: 11639
 // Name: useNativeForumPostContent
-// Dependencies: [1086, 4837, 558, 576, 1127, 6689, 5199, 2]
+// Dependencies: [1085, 4890, 558, 576, 1126, 6773, 5428, 2]
 
-// Module 11382 (useNativeForumPostContent)
+// Module 11638 (useNativeForumPostContent)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl10 from "intl" /* 1127 */;
-import StickersUtils from "StickersUtils" /* 5199 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6689 */;
-import createStyles from "createStyles" /* 4837 */;
+import Constants from "Constants" /* 1085 */;
+import intl10 from "intl" /* 1126 */;
+import StickersUtils from "StickersUtils" /* 5428 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6773 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp46;
     const _Symbol7 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl9 = tmp(1127).intl;
+      const intl9 = tmp(1126).intl;
       const stringResult = intl9.string(intl10.t.U8Rr2l);
       cResult[0] = stringResult;
       first = stringResult;
@@ -101,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 let tmp35;
                 const _Symbol6 = Symbol;
                 if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl6 = tmp(1127).intl;
+                  const intl6 = tmp(1126).intl;
                   const stringResult1 = intl6.string(intl10.t.mE3KJN);
                   cResult[12] = stringResult1;
                   tmp35 = stringResult1;
@@ -115,7 +115,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   let tmp32;
                   const _Symbol5 = Symbol;
                   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl5 = tmp(1127).intl;
+                    const intl5 = tmp(1126).intl;
                     const stringResult2 = intl5.string(intl10.t["7K5Lma"]);
                     cResult[13] = stringResult2;
                     tmp32 = stringResult2;
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       let tmp29;
                       const _Symbol4 = Symbol;
                       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-                        const intl4 = tmp(1127).intl;
+                        const intl4 = tmp(1126).intl;
                         const stringResult3 = intl4.string(intl10.t["2v7kfl"]);
                         cResult[14] = stringResult3;
                         tmp29 = stringResult3;
@@ -144,7 +144,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     let tmp26;
                     const _Symbol3 = Symbol;
                     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                      const intl3 = tmp(1127).intl;
+                      const intl3 = tmp(1126).intl;
                       const stringResult4 = intl3.string(intl10.t["6bhHrc"]);
                       cResult[15] = stringResult4;
                       tmp26 = stringResult4;
@@ -156,7 +156,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     let tmp23;
                     const _Symbol2 = Symbol;
                     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                      const intl2 = tmp(1127).intl;
+                      const intl2 = tmp(1126).intl;
                       const stringResult5 = intl2.string(intl10.t.Xxm5i3);
                       cResult[16] = stringResult5;
                       tmp23 = stringResult5;
@@ -171,7 +171,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       let tmp20;
                       const _Symbol = Symbol;
                       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-                        const intl = tmp(1127).intl;
+                        const intl = tmp(1126).intl;
                         const stringResult6 = intl.string(intl10.t.JAKsM8);
                         cResult[17] = stringResult6;
                         tmp20 = stringResult6;
@@ -222,16 +222,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (!(null != message && message.blocked)) {
       let stringResult7;
       if ("blocked" !== senderModifier) {
-        const intl7 = tmp(1127).intl;
-        stringResult7 = intl7.string(tmp(1127).t.yWK7ZM);
+        const intl7 = tmp(1126).intl;
+        stringResult7 = intl7.string(tmp(1126).t.yWK7ZM);
       }
       cResult[6] = null != message && message.blocked;
       cResult[7] = "blocked" === senderModifier;
       cResult[8] = stringResult7;
       tmp39 = stringResult7;
     }
-    const intl8 = tmp(1127).intl;
-    stringResult7 = intl8.string(tmp(1127).t.Lkp2fB);
+    const intl8 = tmp(1126).intl;
+    stringResult7 = intl8.string(tmp(1126).t.Lkp2fB);
   }
 }) : ((arg0) => {
   let intl9;
@@ -290,28 +290,28 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               } else {
                 const obj5 = StickersUtils;
                 if (obj5.getMessageStickers(message).length > 0) {
-                  const intl5 = tmp27(1127).intl;
-                  stringResult = intl5.string(tmp27(1127).t["7K5Lma"]);
+                  const intl5 = tmp27(1126).intl;
+                  stringResult = intl5.string(tmp27(1126).t["7K5Lma"]);
                 } else {
                   if (null != message.interaction) {
                     if ("" === message.content) {
-                      const intl4 = tmp27(1127).intl;
-                      stringResult = intl4.string(tmp27(1127).t["2v7kfl"]);
+                      const intl4 = tmp27(1126).intl;
+                      stringResult = intl4.string(tmp27(1126).t["2v7kfl"]);
                     }
                   }
                   const tmp14 = MessageFlags;
                   if (message.hasFlag(MessageFlags.IS_VOICE_MESSAGE)) {
-                    const intl3 = tmp27(1127).intl;
-                    stringResult = intl3.string(tmp27(1127).t["6bhHrc"]);
+                    const intl3 = tmp27(1126).intl;
+                    stringResult = intl3.string(tmp27(1126).t["6bhHrc"]);
                   } else if (message.hasFlag(tmp14.IS_COMPONENTS_V2)) {
-                    const intl2 = tmp27(1127).intl;
-                    stringResult = intl2.string(tmp27(1127).t.Xxm5i3);
+                    const intl2 = tmp27(1126).intl;
+                    stringResult = intl2.string(tmp27(1126).t.Xxm5i3);
                   } else {
                     stringResult = null;
                     const tmp15 = message.embeds.length > 0 || message.attachments.length > 0;
                     if (tmp15) {
-                      const intl = tmp27(1127).intl;
-                      stringResult = intl.string(tmp27(1127).t.JAKsM8);
+                      const intl = tmp27(1126).intl;
+                      stringResult = intl.string(tmp27(1126).t.JAKsM8);
                     }
                   }
                 }

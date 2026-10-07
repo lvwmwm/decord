@@ -1,15 +1,15 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 17183
+// Function ID: 17184
 // Name: MinimizeActivityButton
-// Dependencies: [19, 17, 8499, 21, 4837, 558, 576, 1127, 5282, 10605, 7362, 2]
+// Dependencies: [19, 17, 8705, 21, 4890, 558, 576, 1126, 5594, 10845, 7575, 2]
 
-// Module 16823 (MinimizeActivityButton)
+// Module 17183 (MinimizeActivityButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8499 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10605 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10845 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,8 +43,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const _Symbol = Symbol;
       const buttonParent = tmp5.buttonParent;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
-        const stringResult = intl2.string(setMode(1127).t.brPQ5U);
+        const intl2 = tmp(1126).intl;
+        const stringResult = intl2.string(setMode(1126).t.brPQ5U);
         cResult[2] = stringResult;
         tmp13 = stringResult;
       } else {
@@ -68,7 +68,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         cResult[8] = tmp22;
         tmp19 = tmp22;
       }
-      const Button = tmp(5282).Button;
+      const Button = tmp(5594).Button;
       const tmp18 = <Button icon={AssetRegistryDefault} accessibilityLabel={tmp13} onPress={tmp4} text={activityName} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} shrink />;
       cResult[3] = activityName;
       cResult[4] = tmp4;
@@ -77,15 +77,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult1 = intl.string(setMode(1127).t.brPQ5U);
+    const intl = tmp(1126).intl;
+    const stringResult1 = intl.string(setMode(1126).t.brPQ5U);
     cResult[9] = stringResult1;
     tmp6 = stringResult1;
   } else {
     tmp6 = cResult[9];
   }
   if (cResult[10] !== tmp4) {
-    const IconButton = tmp(7362).IconButton;
+    const IconButton = tmp(7575).IconButton;
     const tmp11 = <IconButton icon={AssetRegistryDefault} accessibilityLabel={tmp6} onPress={tmp4} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} />;
     cResult[10] = tmp4;
     cResult[11] = tmp11;
@@ -106,16 +106,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (undefined !== activityName) {
     let tmp3;
     if ("" !== activityName) {
-      ({ icon: AssetRegistryDefault, accessibilityLabel: intl2.string(setMode(1127).t.brPQ5U), onPress: callback, text: activityName, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
-      const Button = setMode(5282).Button;
-      intl2 = setMode(1127).intl;
+      ({ icon: AssetRegistryDefault, accessibilityLabel: intl2.string(setMode(1126).t.brPQ5U), onPress: callback, text: activityName, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
+      const Button = setMode(5594).Button;
+      intl2 = setMode(1126).intl;
       tmp3 = <View style={tmp2.buttonParent}>{null}</View>;
     }
     return tmp3;
   }
-  const IconButton = setMode(7362).IconButton;
-  const intl = setMode(1127).intl;
-  tmp3 = <IconButton icon={AssetRegistryDefault} accessibilityLabel={intl.string(setMode(1127).t.brPQ5U)} onPress={callback} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} />;
+  const IconButton = setMode(7575).IconButton;
+  const intl = setMode(1126).intl;
+  tmp3 = <IconButton icon={AssetRegistryDefault} accessibilityLabel={intl.string(setMode(1126).t.brPQ5U)} onPress={callback} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} />;
 }));
 const result = size.fileFinishedImporting("modules/activities/panel/native/MinimizeActivityButton.tsx");
 

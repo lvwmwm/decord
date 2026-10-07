@@ -1,19 +1,19 @@
-// Module ID: 17508
-// Function ID: 17509
+// Module ID: 17875
+// Function ID: 17876
 // Name: GuildSettingsRoleSubscriptionsEmpty
-// Dependencies: [19, 2073, 1086, 1361, 21, 558, 576, 1491, 17509, 17510, 17511, 504, 2]
+// Dependencies: [19, 2074, 1085, 1360, 21, 558, 576, 1490, 17876, 17877, 17878, 504, 2]
 
-// Module 17508 (GuildSettingsRoleSubscriptionsEmpty)
+// Module 17875 (GuildSettingsRoleSubscriptionsEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ApplicationConstants from "ApplicationConstants" /* 1361 */;
-import useNavigation from "useNavigation" /* 1491 */;
-import useGuildApplicationDefault from "useGuildApplication" /* 17509 */;
-import PlaceholderDefault from "Placeholder" /* 17510 */;
-import GuildSettingsRoleSubscriptionWelcomeViewDefault from "GuildSettingsRoleSubscriptionWelcomeView" /* 17511 */;
+import ApplicationConstants from "ApplicationConstants" /* 1360 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import useGuildApplicationDefault from "useGuildApplication" /* 17876 */;
+import PlaceholderDefault from "Placeholder" /* 17877 */;
+import GuildSettingsRoleSubscriptionWelcomeViewDefault from "GuildSettingsRoleSubscriptionWelcomeView" /* 17878 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,14 +76,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const str = obj.useNavigation();
   const tmp3 = useGuildApplicationDefault(guild.id, ApplicationTypes.GUILD_ROLE_SUBSCRIPTIONS);
   if (tmp3.loading) {
-    tmp7 = jsx(tmp2(17510), {});
+    tmp7 = jsx(tmp2(17877), {});
   } else {
     const features = guild.features;
     const tmp5 = constants;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
       const features2 = guild.features;
       if (!features2.has(tmp5.CREATOR_MONETIZABLE_PROVISIONAL)) {
-        tmp7 = jsx(tmp2(17511), { guild });
+        tmp7 = jsx(tmp2(17878), { guild });
       }
     }
     if (null == tmp4) {

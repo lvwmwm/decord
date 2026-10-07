@@ -1,49 +1,49 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 14600
+// Function ID: 14601
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 14203, 21, 4837, 1491, 6009, 4531, 1127, 10154, 4793, 8057, 1189, 5282, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 4890, 6490, 1490, 6086, 4568, 1126, 10383, 4792, 8895, 1188, 5594, 2]
 // Exports: default
 
-// Module 14226 (WebAuthnNameStep)
+// Module 14600 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
-import useNavigation from "useNavigation" /* 1491 */;
-import WebAuthnConstants from "WebAuthnConstants" /* 14203 */;
+import Constants from "Constants" /* 1085 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6490 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
-let c1, dependencyMap;
+let c1, c4, dependencyMap;
 
 let c9;
 let metroImportAll;
-let _slicedToArray = _slicedToArray_mod;
+let tmp;
+const intl4 = tmp(1126);
+const native = tmp(1188);
+const components_Button_Button = tmp(5594);
+const Form2 = tmp(8895);
 const View = react_native.View;
-const WebAuthnScreens = WebAuthnConstants.WebAuthnScreens;
+const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ margin: { margin: 16 } });
 const result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnNameStep.tsx");
 
-export default function WebAuthnNameStep(arg0) {
+export default function WebAuthnNameStep() {
   let Button;
-  let c4;
   let closure_2;
   let closure_3;
   let first;
+  let first1;
   let intl;
   let intl2;
   let intl3;
   let items;
   let name;
-  let obj5;
+  let obj6;
   let tmp9;
-  ({ ticket: require, credential: importDefault, name } = arg0);
-  dependencyMap = undefined;
-  closure_3 = undefined;
-  _slicedToArray = undefined;
-  let first1;
   let obj = function _onPress() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let body;
@@ -81,7 +81,7 @@ export default function WebAuthnNameStep(arg0) {
               c1 = 3;
               c4 = 1;
               const obj5 = { value: obj3.finishRegisterWebAuthnCredential(first1, require, importDefault), done: false };
-              obj3 = tmp(body[8]);
+              obj3 = tmp(body[9]);
               return obj5;
             }
           } else if (1 === c1) {
@@ -107,12 +107,12 @@ export default function WebAuthnNameStep(arg0) {
           } else {
             c3 = 0;
             closure_128_3(false);
-            const obj7 = { key: "WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", content: intl.string(tmp(body[10]).t.j3d5qI), icon: c1(body[11]), IconComponent: tmp(body[12]).CircleCheckIcon, iconColor: "status-success" };
-            const open = c1(body[9]).open;
-            const tmp40 = c1(body[9]);
-            intl = tmp(body[10]).intl;
+            const obj7 = { key: "WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", content: intl.string(tmp(body[11]).t.j3d5qI), icon: c1(body[12]), IconComponent: tmp(body[13]).CircleCheckIcon, iconColor: "status-success" };
+            const open = c1(body[10]).open;
+            const tmp40 = c1(body[10]);
+            intl = tmp(body[11]).intl;
             open(obj7);
-            closure_128_2.push(constants.SUCCESS, {});
+            const replaced = closure_128_2.replace(constants.WEBAUTHN_SUCCESS);
             c4 = 3;
             return { value: "IconComponent", done: null };
           }
@@ -131,39 +131,41 @@ export default function WebAuthnNameStep(arg0) {
     });
     return obj(...arguments);
   };
-  const tmp = closure_10();
-  const tmp3 = dependencyMap;
-  obj = useNavigation;
-  dependencyMap = obj.useNavigation();
+  const tmp = require;
+  obj = useSettingNavigationRoute;
+  ({ ticket: require, credential: importDefault, name } = obj.useSettingNavigationRoute().params);
+  const tmp3 = closure_10();
+  let obj2 = useNavigation;
+  dependencyMap = obj2.useNavigation();
   [first, closure_3] = first1.useState(false);
-  [tmp9, c4] = _slicedToArray(first1.useState(null), 2);
-  const useState = first1.useState;
   const tmp5 = _slicedToArray;
   const tmp8 = _slicedToArray(first1.useState(null), 2);
+  [tmp9, _slicedToArray] = tmp8;
+  const useState = first1.useState;
   if (name == null) {
     name = "";
   }
   const tmp5Result = tmp5(useState(name), 2);
   first1 = tmp5Result[0];
-  let obj2 = { children: items };
+  let obj3 = { children: items };
   const tmp12 = tmp5Result[1];
-  const Form = tmp2(8057).Form;
-  let obj3 = { showTopContainer: false, value: first1, onChange: tmp12, style: tmp.margin, error: tmp9, title: intl.string(tmp2(1127).t["Jzd+z/"]), placeholder: intl2.string(tmp2(1127).t["I/sJtJ"]), disabled: first, clearButtonVisibility: tmp2(1189).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-  const FormInput = tmp2(8057).FormInput;
-  intl = tmp2(1127).intl;
-  intl2 = tmp2(1127).intl;
-  items = [closure_8(FormInput, obj3), closure_8(tmp2(8057).FormDivider, {}), ];
-  let obj4 = { style: tmp.margin, children: closure_8(Button, obj5) };
-  obj5 = {
+  const Form = Form2.Form;
+  let obj4 = { showTopContainer: false, value: first1, onChange: tmp12, style: tmp3.margin, error: tmp9, title: intl.string(intl4.t["Jzd+z/"]), placeholder: intl2.string(intl4.t["I/sJtJ"]), disabled: first, clearButtonVisibility: native.ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
+  const FormInput = Form2.FormInput;
+  intl = intl4.intl;
+  intl2 = intl4.intl;
+  items = [closure_8(FormInput, obj4), closure_8(Form2.FormDivider, {}), ];
+  let obj5 = { style: tmp3.margin, children: closure_8(Button, obj6) };
+  obj6 = {
     onPress() {
       return obj(...arguments);
     },
-    text: intl3.string(tmp2(1127).t["5dyZ1S"]),
+    text: intl3.string(intl4.t["5dyZ1S"]),
     disabled: "" === first1,
     size: "lg"
   };
-  Button = tmp2(5282).Button;
-  intl3 = tmp2(1127).intl;
-  items[2] = closure_8(obj, obj4);
-  return closure_9(Form, obj2);
+  Button = components_Button_Button.Button;
+  intl3 = intl4.intl;
+  items[2] = closure_8(obj, obj5);
+  return closure_9(Form, obj3);
 };

@@ -1,22 +1,20 @@
-// Module ID: 6405
-// Function ID: 6406
+// Module ID: 6477
+// Function ID: 6478
 // Name: UserSettingsAccountActionCreators
-// Dependencies: [5, 1086, 6008, 585, 1283, 6005, 1113, 1399, 510, 5483, 6406, 6409, 6411, 2]
+// Dependencies: [5, 1085, 6085, 584, 1282, 6082, 1112, 1398, 510, 6478, 6482, 6485, 6487, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 6405 (UserSettingsAccountActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import router_utils from "router_utils" /* 1113 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
-import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 6409 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
+// Module 6477 (UserSettingsAccountActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import router_utils from "router_utils" /* 1112 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
+import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 6485 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6487 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1086 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6008 */;
+import Constants from "Constants" /* 1085 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6085 */;
 import size from "module_2" /* 2 */;
-
-let closure_3;
 
 let c9;
 let closure_4;
@@ -29,108 +27,52 @@ function saveProfileAndAccountRequest() {
 }
 let body = function _saveProfileAndAccountRequest() {
   let obj = _asyncToGenerator(async (body) => {
+    let closure_3;
     let closure_1 = arg1;
     let c4 = 0;
     let c5 = 0;
-    const iter = (async (arg0, value) => {
+    const iter = (async (arg0) => {
       let obj15;
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
+      value = tmp;
+      let obj6 = closure_1;
+      if (closure_1 === undefined) {
+        obj6 = {};
+      }
+      await "Reflect";
+      const HTTP = closure_131_0(closure_131_2[4]).HTTP;
+      const request = { url: closure_131_4.ME, oldFormErrors: true, body, headers: obj6.headers, rejectWithError: obj15.rejectWithMigratedError() };
+      const patch = HTTP.patch;
+      obj15 = closure_131_0(closure_131_2[4]);
+      value = await patch(request);
+      body = value.body;
+      if (body.token) {
+        const token = body.token;
+        delete body["token"];
+        const obj10 = { type: "UPDATE_TOKEN", token, userId: body.id };
+        const obj = closure_131_1(closure_131_2[3]);
+        obj.dispatch(obj10);
+        let password;
+        if (body != null) {
+          password = body.password;
         }
-      } else {
-        try {
-          let obj6;
-          let token;
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            } else {
-              closure_3 = tmp4;
-              value = tmp;
-              obj6 = closure_1;
-              if (closure_1 === undefined) {
-                obj6 = {};
-              }
-              value = undefined;
-              body = undefined;
-              token = undefined;
-              c4 = 1;
-              c5 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            } else {
-              const HTTP = closure_131_0(closure_131_2[4]).HTTP;
-              const request = { url: closure_131_4.ME, oldFormErrors: true, body, headers: obj6.headers, rejectWithError: obj15.rejectWithMigratedError() };
-              const patch = HTTP.patch;
-              c4 = 2;
-              c5 = 1;
-              obj15 = closure_131_0(closure_131_2[4]);
-              const obj8 = { value: patch(request), done: false };
-              return obj8;
-            }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            return { value, done: true };
-          } else {
-            body = value.body;
-            if (body.token) {
-              token = body.token;
-              delete body["token"];
-              const obj10 = { type: "UPDATE_TOKEN", token, userId: body.id };
-              const obj = closure_131_1(closure_131_2[3]);
-              obj.dispatch(obj10);
-              let password;
-              if (body != null) {
-                password = body.password;
-              }
-              let tmp15 = null != password;
-              if (tmp15) {
-                let new_password;
-                if (body != null) {
-                  new_password = body.new_password;
-                }
-                tmp15 = null != new_password;
-              }
-              if (tmp15) {
-                const obj11 = { type: "PASSWORD_UPDATED", userId: body.id };
-                const obj3 = closure_131_1(closure_131_2[3]);
-                obj3.dispatch(obj11);
-              }
-            }
-            const obj12 = { type: "CURRENT_USER_UPDATE", user: body };
-            const obj5 = closure_131_1(closure_131_2[3]);
-            obj5.dispatch(obj12);
-            c5 = 3;
-            return { value, done: true };
+        let tmp15 = null != password;
+        if (tmp15) {
+          let new_password;
+          if (body != null) {
+            new_password = body.new_password;
           }
-        } catch (tmp31) {
-          c5 = 3;
-          throw tmp31;
+          tmp15 = null != new_password;
+        }
+        if (tmp15) {
+          const obj11 = { type: "PASSWORD_UPDATED", userId: body.id };
+          const obj3 = closure_131_1(closure_131_2[3]);
+          obj3.dispatch(obj11);
         }
       }
+      const obj12 = { type: "CURRENT_USER_UPDATE", user: body };
+      const obj5 = closure_131_1(closure_131_2[3]);
+      obj5.dispatch(obj12);
+      return value;
     })();
     iter.next();
     return iter;
@@ -188,7 +130,7 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles, vadColors, typingIndicatorStyle } = accountUpdateForUpdateRequest);
   ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = accountUpdateForUpdateRequest);
   let tmp = avatarId;
-  let obj = avatarId(585);
+  let obj = avatarId(584);
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
   const user = { username, email, email_token: emailToken, password, avatar, avatar_description: avatarDescription, avatar_id: avatarId, discriminator, global_name: globalName, legacy_username: legacyUsername, new_password: newPassword };
   if (undefined !== avatarDecoration) {
@@ -228,7 +170,7 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   if (undefined !== typingIndicatorStyle) {
     let result = null;
     if (null != typingIndicatorStyle) {
-      const obj3 = avatar(1399);
+      const obj3 = avatar(1398);
       result = obj3.serializeTypingIndicatorStyle(typingIndicatorStyle);
     }
     user.typing_indicator_style = result;
@@ -252,8 +194,8 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     user.push_voip_provider = tmp15;
     user.push_voip_token = value2;
   }
-  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(6406).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
-  tmpResult = tmp(5483);
+  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(6482).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
+  tmpResult = tmp(6478);
   const promise = saveProfileAndAccountRequest(user, obj4);
   return promise.then((result) => {
     const obj = DispatcherDefault;

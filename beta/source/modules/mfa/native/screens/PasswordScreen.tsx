@@ -1,14 +1,14 @@
-// Module ID: 15226
-// Function ID: 15227
+// Module ID: 15512
+// Function ID: 15513
 // Name: PasswordScreen
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 6360, 15219, 1127, 6384, 6386, 6021, 15217, 15218, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 6432, 15505, 1126, 6456, 6458, 6098, 15503, 15504, 2]
 
-// Module 15226 (PasswordScreen)
+// Module 15512 (PasswordScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6360 */;
-import MfaScreenUtilsDefault from "MfaScreenUtils" /* 15219 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6432 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 15505 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -19,10 +19,10 @@ const require = globalThis.__r;
 let c6, importDefault;
 
 let tmp;
-const intl5 = tmp(1127);
-const TextInput_TextInput = tmp(6021);
-const EyeSlashIcon = tmp(6384);
-const EyeIcon2 = tmp(6386);
+const intl5 = tmp(1126);
+const TextInput_TextInput = tmp(6098);
+const EyeSlashIcon = tmp(6456);
+const EyeIcon2 = tmp(6458);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
